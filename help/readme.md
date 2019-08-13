@@ -1,3 +1,1 @@
-# Placeholder first page
-
-Initial page for set up
+# Experience Manager Cloud Manager Help
