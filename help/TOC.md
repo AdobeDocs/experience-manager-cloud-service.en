@@ -1,6 +1,8 @@
 ---
-git-repo: https://github.com/AdobeDocs/contributor.en
+git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service
 cloud: experience-cloud
+product: adobe experience manager
+sub-product: experience manager cloud manager
 index: no
 user-guide-title: Adobe Contributor Guide
 user-guide-url: https://www.adobe.com
@@ -11,22 +13,10 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
+
 ---
 
-# Contributor Guide for Adobe documentation{#contributor-guide}
+# Experience Manager Cloud Service Help {#using}
 
 + [Introduction](introduction.md)
-+ Set up with GitHub {#setup}
-  + [Set up GitHub account](setup/sign-up.md)
-  + [Install Git and Markdown authoring tools](setup/install-tools.md)
-  + [Set up a local Git repository](setup/local-repo.md)
-  + [GitHub documentation essentials](setup/git-fundamentals.md)
-  + [GitHub workflow for major changes](setup/full-workflow.md)
-+ Writing essentials {#writing-essentials}
-  + [Using Markdown](writing-essentials/using-markdown.md)
-  + [General writing guidance](writing-essentials/general-writing-guidance.md)
-  + [Linking](writing-essentials/linking.md)
-+ [Git and GitHub learning resources](resources.md)
-+ Conduct and contributions {#conduct-contributions}
-  + [Code of Conduct](conduct/code-of-conduct.md)
-  + [Contributions overview](conduct/contributing.md)
+  
