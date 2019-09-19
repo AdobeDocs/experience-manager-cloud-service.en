@@ -13,7 +13,7 @@ audience: implementer, architect
 kt: 3404
 ---
 
-# Understand an AEM Project's Content Package Structure (DRAFT)
+# Understand an AEM Project's Content Package Structure
  
 AEM application deployments must be comprised of a single AEM content package. This content package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
 
