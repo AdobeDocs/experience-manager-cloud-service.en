@@ -33,7 +33,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`,
 
 ## Recommended Content Package Structure
 
-![Project Content Package Structure](./assets/understand-an-aem-projects-content-package-structure/content-package-organization.png)
+![AEM Project Content Package Structure](./assets/understand-an-aem-projects-content-package-structure/content-package-organization.png)
 
 This diagram provides an overview of the recommended project structure and deployment artifacts.
 
