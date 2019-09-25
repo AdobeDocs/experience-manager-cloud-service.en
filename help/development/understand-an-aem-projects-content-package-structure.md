@@ -1,8 +1,8 @@
 ---
-title: Understand Project Content Package Structure
-description: Learn about how to properly define Application Content Package Structures for deployment to AEM Cloud Service.
+title: Understand Project Package Structure
+description: Learn about how to properly define AEM application package structures for deployment to AEM Cloud Service.
 seo-title: Understand Project Content Package Structure
-seo-description: Learn about how to properly define Application Content Package Structures for deployment to AEM Cloud Service.
+seo-description: Learn about how to properly define AEM application package structures for deployment to AEM Cloud Service.
 sub-product: cloud-manager
 feature: 
 topics: best-practices
@@ -15,15 +15,15 @@ kt: 3404
 
 # Understand an AEM Project's Content Package Structure
  
-AEM application deployments must be comprised of a single AEM content package. This content package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
+AEM application deployments must be comprised of a single AEM package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
 
-AEM requires a separation of content and code, which means a single content package cannot deploy to **both** `/apps` and runtime-writable areas (`/content`, `/conf`, `/home`, etc. - in short, anything not `/apps`) of the repository, instead, the application must separate code and content into discrete content packages for deployment into AEM.
+AEM requires a separation of __content__ and __code__, which means a single content package __cannot__ deploy to **both** `/apps` and runtime-writable areas (`/content`, `/conf`, `/home`, etc. - in short, anything not `/apps`) of the repository, instead, the application must separate code and content into discrete packages for deployment into AEM.
 
-The content package structure outlined in this document is compatible with **both** local development deployments and cloud deployments.
+The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
 
 ## Mutable vs. Immutable Areas of the Repository
 
-`/apps` and `/libs` are considered **immutable** areas of AEM, because they cannot be changed (create, update, delete) after AEM starts (ie. at runtime). If an attempt to change an immutable areas is made at run time, the action will fail.
+`/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after AEM starts (ie. at runtime). If an attempt to change an immutable area is made at run time, the action will fail.
 
 Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at run time.
 
@@ -31,15 +31,15 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`,
 >
 > `/libs` remains off-limits. Only Adobe Experience Manager product code may deploy to `/libs`.
 
-## Recommended Content Package Structure
+## Recommended Package Structure
 
-![AEM Project Content Package Structure](./assets/understand-an-aem-projects-content-package-structure/content-package-organization.png)
+![AEM Project Package Structure](./assets/understand-an-aem-projects-content-package-structure/content-package-organization.png)
 
-This diagram provides an overview of the recommended project structure and deployment artifacts.
+This diagram provides an overview of the recommended project structure and package deployment artifacts.
 
 The recommended application deployment structure is as follows:
 
-+ The `ui.apps` content package contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
++ The `ui.apps` package, or Content Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
   + OSGi bundles
     + `/apps/my-app/install`
   + OSGi configurations
@@ -54,7 +54,7 @@ The recommended application deployment structure is as follows:
     + `/apps/settings`
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
-+ The `ui.content` content package contains all content and configuration. Common elements of the `ui.content` package include, but are not limited to:
++ The `ui.content` package, or Code Package, contains all content and configuration. Common elements of the `ui.content` package include, but are not limited to:
   + Context-aware configurations
     + `/conf`
   + Baseline content structures (Asset folders, Sites root pages)
@@ -71,48 +71,78 @@ The recommended application deployment structure is as follows:
     + `/etc`
   + ACLs (permissions)
     + Any `rep:policy` for any path **not** under `/apps`
-+ The `all` content package is a container package that ONLY includes the `ui.apps` and `ui.content` content packages as embeds under `/etc/packages`. The `all` package should not have *any* content of its own, but rather delegate all deployment to the repository to its sub-packages.
++ The `all` package is a container package that ONLY includes the `ui.apps` and `ui.content` packages as embeds under `/etc/packages`. The `all` package must not have _any_ content of its own, but rather delegate all deployment to the repository to its sub-packages.
 
-  For complex AEM deployments, it may be desirable to create multiple `ui.apps` and `ui.content` projects that represent specific sites or tenants in AEM. If this is done, ensure the split between mutable and immutable content is respected, and the required content packages are added as sub-packages in the `all` container content package.
+  For complex AEM deployments, it may be desirable to create multiple `ui.apps` and `ui.content` projects/packages that represent specific sites or tenants in AEM. If this is done, ensure the split between mutable and immutable content is respected, and the required content packages are added as sub-packages in the `all` container content package.
 
   For example, a complex deployment content package structure may look like this:
 
   + `all` content package embeds the following packages, to create a singular deployment artifact
-    + `ui.apps.common` deploys code required by **both** Site A and Site B
+    + `ui.apps.common` deploys code required by __both__ Site A and Site B
     + `ui.apps.site-a` deploys code required by Site A
     + `ui.content.site-a` deploys content and configuration required by Site A
     + `ui.apps.site-b` deploys code required by Site B
     + `ui.content.site-b` deploys content and configuration required by Site B
 
-## Content Package Types
+## Package Types
 
-Content packages are to be marked with their declared package type.
+Packages are to be marked with their declared package type.
 
-+ Container content packages should not have a `packageType` set.
-+ Code (immutable) content packages should set their `packageType` to `application`.
-+ Content (mutable) content packages should set their `packageType` to `content`.
++ Container packages must not have a `packageType` set.
++ Code (immutable) packages must set their `packageType` to `application`.
++ Content (mutable) packages must set their `packageType` to `content`.
 
-For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType).
+For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
 
-## Content Package Dependency Management
+# Author/Publish-specific Content (Mutable) Packages
 
-In order to ensure proper installation of the content packages, it is recommended that content package dependencies are established.
+>[!NOTE]
+> This section described the __only exception__ in putting an `/apps` folder or file in a Content (mutable) package.
 
-The general rule is content packages containing mutable content (`ui.content`) should depend on the immutable content (`ui.apps`) that supports the rendering and use of the mutable content.
+Mutable Content packages (rather than immutable Code packages) can be targeted for installation on either AEM Author, AEM Publish or Both.
+
+Common use cases for this include:
+
+* ACLs/permissions that differ between AEM Author users and AEM Publish users
+* Configurations that are used to support activities only on AEM Author
+
+To target AEM Author or AEM Publish, add an empty `install` folder under your application's `/apps/<my-app>` folder:
+
+* To __only__ install the Content package on __AEM Author__, create and empty folder at: `/apps/<my-app>/install.author`.
+* To __only__ install the Content package on __AEM Publish__, create and empty folder at: `/apps/<my-app>/install.publish`.
+* To install the Content package on __both AEM Author and Publish__, do NOT create an `install` folder.
+
+Do NOT add this path to the package's `filter.xml`. This folder will NOT be installed as it is only a marker for Adobe Cloud Manager, providing instructions for which AEM Cloud Service tier the package will be installed on.
+
+Only `.../install.author`  and `../install.publish` are supported targets. Other run modes are NOT supported.
+
+For example, a deployment that contains AEM Author and Publish specific Content packages may look like this:
+
+  + `all` content package embeds the following packages, to create a singular deployment artifact
+    + `ui.apps` deploys code
+    + `ui.content.common` deploys content and configuration required by __both__ AEM Author and AEM Publish
+    + `ui.content.author` deploys content and configuration required __ONLY__ by AEM Author, by including an empty folder `/apps/<my-app>/install.author`
+    + `ui.content.pubish` deploys content and configuration required __ONLY__ by AEM Publish, by including an empty folder `/apps/<my-app>/install.publish`
+
+## Package Dependency Management
+
+In order to ensure proper installation of the packages, it is recommended inter-package dependencies are established.
+
+The general rule is packages containing mutable content (`ui.content`) should depend on the immutable content (`ui.apps`) that supports the rendering and use of the mutable content.
 
 The common patterns for content package dependencies are:
 
-### Simple Deployment Content Package Dependencies
+### Simple Deployment Package Dependencies
 
-The simple case sets the `ui.content` mutable content package depends on the  `ui.apps` immutable content package.
+The simple case sets the `ui.content` mutable Content package to depend on the `ui.apps` immutable Code package.
 
 + `all` has no dependencies
   + `ui.apps` has no dependencies
   + `ui.content` depends on `ui.apps`
 
-### Complex Deployment Content Package Dependencies
+### Complex Deployment Package Dependencies
 
-Complex deployments should expand on the simple case, and set dependencies between the corresponding mutable and immutable packages. As required, dependencies can be established between immutable packages as well.
+Complex deployments expand on the simple case, and set dependencies between the corresponding mutable Content and immutable Code packages. As required, dependencies can be established between immutable Code packages as well.
 
 + `all` has no dependencies
   + `ui.apps.common` has no dependencies
@@ -123,23 +153,23 @@ Complex deployments should expand on the simple case, and set dependencies betwe
 
 ## Local Development and Deployment
 
-The project structure and organization outlined in this article is fully compatible local development AEM instances.
+The project structures and organization outlined in this article is fully compatible local development AEM instances.
 
 ## pom.xml Configuration Snippets
 
-The following are pom.xml configuration snippets that can be added to existing Maven projects to achieve sub-packaging and content package dependencies.
+The following are Maven `pom.xml` configuration snippets that can be added to Maven projects to align to the above recommendations.
 
-### Declaring Package Types
+### Declaring Package Types{#declaring-package-types}
 
-Code and content packages, which are deployed as sub-packaged, must declare a package type of __application__ or __content__, depending on what they contain.
+Code and content packages, which are deployed as sub-packages, must declare a package type of __application__ or __content__, depending on what they contain.
 
 #### Container Package Types
 
-The container `all/pom.xml` project does not declare a `<packageType>`.
+The container `all/pom.xml` project does __not__ declare a `<packageType>`.
 
 #### Code (Immutable) Package Types
 
-Code packages must set their __packageType__ to __application__.
+Code packages must set their `packageType` to `application`.
 
 In the `ui.apps/pom.xml`, the `<packageType>application</packageType>` build configuration directives of the `filevault-package-maven-plugin` plugin declaration declares its package type.
 
@@ -163,7 +193,7 @@ In the `ui.apps/pom.xml`, the `<packageType>application</packageType>` build con
 
 #### Content (Mutable) Package Types
 
-Content packages must set their __packageType__ to __application__.
+Content packages must set their `packageType` to `content`.
 
 In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build configuration directive of the `filevault-package-maven-plugin` plugin declaration declares its package type.
 
@@ -185,7 +215,7 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
     ...
 ```
 
-### Adding Sub-packages to the `all` Content Package
+### Adding Sub-packages to the `all` Package
 
 In the `all/pom.xml`, add the following `<subPackage>` directives to the `filevault-package-maven-plugin` plugin declaration.
 
@@ -225,7 +255,7 @@ In the `all/pom.xml`, add the following `<subPackage>` directives to the `fileva
 ...
 ```
 
-### Establishing a Dependency between the `ui.apps` from `ui.content` Content Packages
+### Establishing a Dependency between the `ui.apps` from `ui.content` Packages
 
 In the `ui.content/pom.xml`, add the following `<subPackage>` directives to the `filevault-package-maven-plugin` plugin declaration.
 
