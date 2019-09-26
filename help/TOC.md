@@ -12,8 +12,8 @@ solution-title: Experience Cloud
 
 + Overview {#overview}
   + [Introduction to AEM Cloud Service](overview/intro/intro-to-aem-in-the-cloud.md)
-  + [What's new with AEM Cloud Service](overview/intro/what-is-new-with-aem-in-the-cloud.md)
-  + [Release Notes](overview/intro/release-notes/release-notes.md)
+  + [What's new with AEM Cloud Service](overview/what-is-new/what-is-new-with-aem-in-the-cloud.md)
+  + [Release Notes](overview/release-notes/release-notes.md)
 + Core Concepts of AEM Cloud Service {#core-concepts}
   + [Developing for AEM Cloud Service](sites/developing/introduction/the-basics.md)
   + [Deploying to AEM Cloud Service](sites/deploying/introduction.md)
