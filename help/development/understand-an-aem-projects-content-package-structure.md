@@ -96,7 +96,7 @@ Packages are to be marked with their declared package type.
 
 For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
 
-# Author/Publish-specific Packages
+# Embedding Packages
 
 Content or Code packages can be targeted for installation on either AEM Author, AEM Publish or Both.
 
@@ -108,7 +108,7 @@ Common use-cases include:
 
 To target AEM Author, AEM Publish or Both, the package is embedded in the `all` Container package in a special folder-location, in the following format:
 
-  `/apps/<app-name>/<content|application/install.*`
+  `/apps/<app-name>/(content|application)/install.*`
 
 Breaking this format down:
 
@@ -134,6 +134,17 @@ For example, a deployment that contains AEM Author and Publish specific packages
   + `ui.apps.author` embedded in `/apps/my-app/application/install.author` deploys code to only AEM Author
   + `ui.content` embedded in `/apps/my-app/content/install` deploys content and configuration to both AEM Author and AEM Publish
   + `ui.content.publish` embedded in `/apps/my-app/content/install.publish` deploys content and configuration to only AEM Publish
+
+### Package Filtering
+
+It is __critical__ to ensure the package filters between the Container package and the Code packages do not remove/overwrite each other.
+
++ The Container package's filter should explicitly include ONLY the package install folders it uses.
++ Any Code packages' filters should explicitly __exclude__ any package install folders.
+
+If this split is not respected, cycling package installation can occur.
+
+See below, for example [filter definitions](#filter-definitions).
 
 ## Package Dependency Management
 
@@ -226,6 +237,30 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
     ...
 ```
 
+### Package Filter Definitions
+
+#### Container Package Filter Definition
+
+In the `all` project's `filter.xml`, only and explicitly __include__ the sub-package folders to deploy:
+
+```
+<filter root="/apps">
+    <include pattern="/apps/<my-app>/application/install(/.*)?"/>
+    <include pattern="/apps/<my-app>/content/install(/.*)?"/>
+</filter>
+```
+
+#### Code Packages Filter Definition
+
+In the Code project's `filter.xml`, usually `ui.apps` but you may have multiple, explicitly __exclude__ the nearest the `application` and `content` folder. The exclude pattern must reference the 1st folder level past the filter root to ensure they do not get accidentally removed when the Code package is installed.
+
+```
+<filter root="/apps/<my-app>">
+    <exclude pattern="/apps/<my-app>/application(/.*)?"/>
+    <exclude pattern="/apps/<my-app>/content(/.*)?"/>
+</filter>
+```
+
 ### Embedding Sub-packages to the `all` Package{#embeddeds}
 
 In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-pacakges in `/etc/packages` rather than `/apps/my-app/<application|content>/install.*`.
@@ -247,6 +282,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps</artifactId>
+              <type>zip</type>
               <filter>true</filter>
               <target>/apps/my-app/application/install</target>
           </embedded>
@@ -255,6 +291,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps.author</artifactId>
+              <type>zip</type>
               <filter>true</filter>
               <target>/apps/my-app/application/install.author</target>
           </embedded>
@@ -263,6 +300,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.content</artifactId>
+              <type>zip</type>
               <filter>true</filter>
               <target>/apps/my-app/content/install</target>
           </embedded>
@@ -271,6 +309,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.content.author-only</artifactId>
+              <type>zip</type>
               <filter>true</filter>
               <target>/apps/my-app/content/install.publish</target>
           </embedded>
@@ -280,6 +319,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <groupId>com.adobe.cq</groupId>
               <!-- Not to be confused; WCM Core Components' Code package's artifact is named `.content` -->
               <artifactId>core.wcm.components.content</artifactId>
+              <type>zip</type>
               <filter>true</filter>
               <target>/apps/core-components/application/install</target>
           </embedded>
@@ -288,6 +328,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <groupId>com.adobe.cq</groupId>
               <!-- Not to be confused; WCM Core Components' Content package's artifact is named `.conf` -->
               <artifactId>core.wcm.components.conf</artifactId>
+              <type>zip</type>
               <filter>true</filter>
               <target>/apps/core-components/content/install</target>
           </embedded>
