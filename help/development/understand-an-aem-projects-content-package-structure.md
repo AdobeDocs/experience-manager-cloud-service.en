@@ -23,9 +23,9 @@ The package structure outlined in this document is compatible with **both** loca
 
 ## Mutable vs. Immutable Areas of the Repository
 
-`/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after AEM starts (ie. at runtime). If an attempt to change an immutable area is made at run time, the action will fail.
+`/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after AEM starts (ie. at runtime). Any attempt to change an immutable area at runtime, the action will fail.
 
-Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at run time.
+Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
@@ -71,7 +71,9 @@ The recommended application deployment structure is as follows:
     + `/etc`
   + ACLs (permissions)
     + Any `rep:policy` for any path **not** under `/apps`
-+ The `all` package is a container package that ONLY includes the `ui.apps` and `ui.content` packages as embeds under `/etc/packages`. The `all` package must not have _any_ content of its own, but rather delegate all deployment to the repository to its sub-packages.
++ The `all` package is a container package that ONLY includes the `ui.apps` and `ui.content` packages as embeds. The `all` package must not have _any_ content of its own, but rather delegate all deployment to the repository to its sub-packages.
+
+  Packages are now included using the Maven [File Vault plugin's embeddeds configuration](#embeddeds), rather than the `<subPackages>` configuration.
 
   For complex AEM deployments, it may be desirable to create multiple `ui.apps` and `ui.content` projects/packages that represent specific sites or tenants in AEM. If this is done, ensure the split between mutable and immutable content is respected, and the required content packages are added as sub-packages in the `all` container content package.
 
@@ -84,7 +86,7 @@ The recommended application deployment structure is as follows:
     + `ui.apps.site-b` deploys code required by Site B
     + `ui.content.site-b` deploys content and configuration required by Site B
 
-## Package Types
+## Package Types#{package-types}
 
 Packages are to be marked with their declared package type.
 
@@ -94,35 +96,44 @@ Packages are to be marked with their declared package type.
 
 For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
 
-# Author/Publish-specific Content (Mutable) Packages
+# Author/Publish-specific Packages
 
->[!NOTE]
-> This section described the __only exception__ in putting an `/apps` folder or file in a Content (mutable) package.
+Content or Code packages can be targeted for installation on either AEM Author, AEM Publish or Both.
 
-Mutable Content packages (rather than immutable Code packages) can be targeted for installation on either AEM Author, AEM Publish or Both.
+Common use-cases include:
 
-Common use cases for this include:
++ ACLs/permissions that differ between AEM Author users and AEM Publish users
++ Configurations that are used to support activities only on AEM Author
++ Code such as integrations with back-office systems, only required to run on AEM Author.
 
-* ACLs/permissions that differ between AEM Author users and AEM Publish users
-* Configurations that are used to support activities only on AEM Author
+To target AEM Author, AEM Publish or Both, the package is embedded in the `all` Container package in a special folder-location, in the following format:
 
-To target AEM Author or AEM Publish, add an empty `install` folder under your application's `/apps/<my-app>` folder:
+  `/apps/<app-name>/<content|application/install.*`
 
-* To __only__ install the Content package on __AEM Author__, create and empty folder at: `/apps/<my-app>/install.author`.
-* To __only__ install the Content package on __AEM Publish__, create and empty folder at: `/apps/<my-app>/install.publish`.
-* To install the Content package on __both AEM Author and Publish__, do NOT create an `install` folder.
+Breaking this format down:
 
-Do NOT add this path to the package's `filter.xml`. This folder will NOT be installed as it is only a marker for Adobe Cloud Manager, providing instructions for which AEM Cloud Service tier the package will be installed on.
++ The 1st-level folder __must__ be `/apps`.
++ The 2nd-level folder represents the application. Often there is only a single 2nd-level folder all sub-packages are embedded under, however any number of 2nd-level folders can be created to best represent the application's logical structure:
+  + `/apps/my-app`
+  + `/apps/my-other-app`
+  + `/apps/vendor`
++ The 3rd-level folder must be either `application` or `content`
+  + The `application` folder holds Code packages
+  + The `content` folder golds Content packages
+  This folder name must correspond to the [Package Types](#package-types) of the packages it contains.
++ The 4th-level folder contains the sub-packages, and must be one of:
+  + `install` to install on __both__ AEM Author and AEM Publish
+  + `install.author` to __only__ install on AEM Author
+  + `install.publish` to __only__ install on AEM Publish
+  Note that only `install.author` and `install.publish` are supported targets. Other run modes are __not__ supported.
 
-Only `.../install.author`  and `../install.publish` are supported targets. Other run modes are NOT supported.
+For example, a deployment that contains AEM Author and Publish specific packages may look like:
 
-For example, a deployment that contains AEM Author and Publish specific Content packages may look like this:
-
-  + `all` content package embeds the following packages, to create a singular deployment artifact
-    + `ui.apps` deploys code
-    + `ui.content.common` deploys content and configuration required by __both__ AEM Author and AEM Publish
-    + `ui.content.author` deploys content and configuration required __ONLY__ by AEM Author, by including an empty folder `/apps/<my-app>/install.author`
-    + `ui.content.pubish` deploys content and configuration required __ONLY__ by AEM Publish, by including an empty folder `/apps/<my-app>/install.publish`
++ `all` Container package embeds the following packages, to create a singular deployment artifact
+  + `ui.apps` embedded in `/apps/my-app/application/install` deploys code to both AEM Author and AEM Publish
+  + `ui.apps.author` embedded in `/apps/my-app/application/install.author` deploys code to only AEM Author
+  + `ui.content` embedded in `/apps/my-app/content/install` deploys content and configuration to both AEM Author and AEM Publish
+  + `ui.content.publish` embedded in `/apps/my-app/content/install.publish` deploys content and configuration to only AEM Publish
 
 ## Package Dependency Management
 
@@ -215,9 +226,9 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
     ...
 ```
 
-### Adding Sub-packages to the `all` Package
+### Embedding Sub-packages to the `all` Package{#embeddeds}
 
-In the `all/pom.xml`, add the following `<subPackage>` directives to the `filevault-package-maven-plugin` plugin declaration.
+In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-pacakges in `/etc/packages` rather than `/apps/my-app/<application|content>/install.*`.
 
 ```
 ...
@@ -227,29 +238,60 @@ In the `all/pom.xml`, add the following `<subPackage>` directives to the `fileva
   <extensions>true</extensions>
   <configuration>
       ...
-      <subPackages>
-          
+      <embeddeds>
+                
           <!-- Include the application's ui.apps and ui.content packages -->
           <!-- Ensure the artifactIds are correct -->
-          <subPackage>
+
+          <!-- Code package that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps</artifactId>
               <filter>true</filter>
-          </subPackage>
-          
-          <subPackage>
+              <target>/apps/my-app/application/install</target>
+          </embedded>
+
+          <!-- Code package that deploys ONLY to AEM Author -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.apps.author</artifactId>
+              <filter>true</filter>
+              <target>/apps/my-app/application/install.author</target>
+          </embedded>
+
+          <!-- Content package that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.content</artifactId>
               <filter>true</filter>
-          </subPackage>
+              <target>/apps/my-app/content/install</target>
+          </embedded>
+
+          <!-- Content package that deploys ONLY to AEM Author -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.content.author-only</artifactId>
+              <filter>true</filter>
+              <target>/apps/my-app/content/install.publish</target>
+          </embedded>
 
           <!-- Include any other extra packages such as AEM WCM Core Components -->
-          <subPackage>
+          <embedded>
               <groupId>com.adobe.cq</groupId>
-              <artifactId>core.wcm.components.all</artifactId>
+              <!-- Not to be confused; WCM Core Components' Code package's artifact is named `.content` -->
+              <artifactId>core.wcm.components.content</artifactId>
               <filter>true</filter>
-          </subPackage>
-      <subPackages>
+              <target>/apps/core-components/application/install</target>
+          </embedded>
+
+          <embedded>
+              <groupId>com.adobe.cq</groupId>
+              <!-- Not to be confused; WCM Core Components' Content package's artifact is named `.conf` -->
+              <artifactId>core.wcm.components.conf</artifactId>
+              <filter>true</filter>
+              <target>/apps/core-components/content/install</target>
+          </embedded>
+      <embeddeds>
   </configuration>
 </plugin>
 ...
@@ -257,7 +299,7 @@ In the `all/pom.xml`, add the following `<subPackage>` directives to the `fileva
 
 ### Establishing a Dependency between the `ui.apps` from `ui.content` Packages
 
-In the `ui.content/pom.xml`, add the following `<subPackage>` directives to the `filevault-package-maven-plugin` plugin declaration.
+In the `ui.content/pom.xml`, add the following `<dependencies>` directives to the `filevault-package-maven-plugin` plugin declaration.
 
 ```
 ...
