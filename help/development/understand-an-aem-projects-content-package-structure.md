@@ -98,25 +98,29 @@ For more information see [Apache Jackrabbit FileVault - Package Maven Plugin doc
 
 # Embedding Packages
 
-Content or Code packages can be targeted for installation on either AEM Author, AEM Publish or Both.
+Content or Code packages are placed in a special "side-car" folder and can be targeted for installation on either AEM Author, AEM Publish or Both, using the File Vault Maven plug-in's `<embeddeds>` configuration. Note that the `<subPackages>` configuration should not be used.
 
 Common use-cases include:
 
 + ACLs/permissions that differ between AEM Author users and AEM Publish users
 + Configurations that are used to support activities only on AEM Author
-+ Code such as integrations with back-office systems, only required to run on AEM Author.
++ Code such as integrations with back-office systems, only required to run on AEM Author
+
+![Embedding Packages](./assets/understand-an-aem-projects-content-package-structure/embeddeds.png)
 
 To target AEM Author, AEM Publish or Both, the package is embedded in the `all` Container package in a special folder-location, in the following format:
 
-  `/apps/<app-name>/(content|application)/install.*`
+  `/apps/<app-name>-packages/(content|application)/install.*`
 
-Breaking this format down:
+Breaking this folder structure down:
 
 + The 1st-level folder __must__ be `/apps`.
-+ The 2nd-level folder represents the application. Often there is only a single 2nd-level folder all sub-packages are embedded under, however any number of 2nd-level folders can be created to best represent the application's logical structure:
-  + `/apps/my-app`
-  + `/apps/my-other-app`
-  + `/apps/vendor`
++ The 2nd-level folder represents the application with `-packages` post-fixed to the folder name. Often there is only a single 2nd-level folder all sub-packages are embedded under, however any number of 2nd-level folders can be created to best represent the application's logical structure:
+  + `/apps/my-app-packages`
+  + `/apps/my-other-app-packages`
+  + `/apps/vendor-packages`
+  >![WARNING]
+  > By convention, sub-package embedded folders are named with the post-fix of `-packages`. This ensures that the deployment Code and Content packages are __not__ deployed the target folder(s) of any sub-package `/apps/<app-name>/...`  which results in destructive and cyclic installation behavior.
 + The 3rd-level folder must be either `application` or `content`
   + The `application` folder holds Code packages
   + The `content` folder golds Content packages
@@ -134,17 +138,6 @@ For example, a deployment that contains AEM Author and Publish specific packages
   + `ui.apps.author` embedded in `/apps/my-app/application/install.author` deploys code to only AEM Author
   + `ui.content` embedded in `/apps/my-app/content/install` deploys content and configuration to both AEM Author and AEM Publish
   + `ui.content.publish` embedded in `/apps/my-app/content/install.publish` deploys content and configuration to only AEM Publish
-
-### Package Filtering
-
-It is __critical__ to ensure the package filters between the Container package and the Code packages do not remove/overwrite each other.
-
-+ The Container package's filter should explicitly include ONLY the package install folders it uses.
-+ Any Code packages' filters should explicitly __exclude__ any package install folders.
-
-If this split is not respected, cycling package installation can occur.
-
-See below, for example [filter definitions](#filter-definitions).
 
 ## Package Dependency Management
 
@@ -241,29 +234,17 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
 
 #### Container Package Filter Definition
 
-In the `all` project's `filter.xml`, only and explicitly __include__ the sub-package folders to deploy:
+In the `all` project's `filter.xml`, only and explicitly __include__ any sub-package folders to deploy:
 
 ```
 <filter root="/apps">
-    <include pattern="/apps/<my-app>/application/install(/.*)?"/>
-    <include pattern="/apps/<my-app>/content/install(/.*)?"/>
-</filter>
-```
-
-#### Code Packages Filter Definition
-
-In the Code project's `filter.xml`, usually `ui.apps` but you may have multiple, explicitly __exclude__ the nearest the `application` and `content` folder. The exclude pattern must reference the 1st folder level past the filter root to ensure they do not get accidentally removed when the Code package is installed.
-
-```
-<filter root="/apps/<my-app>">
-    <exclude pattern="/apps/<my-app>/application(/.*)?"/>
-    <exclude pattern="/apps/<my-app>/content(/.*)?"/>
+    <include pattern="/apps/<my-app>-packages(/.*)?"/>
 </filter>
 ```
 
 ### Embedding Sub-packages to the `all` Package{#embeddeds}
 
-In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-pacakges in `/etc/packages` rather than `/apps/my-app/<application|content>/install.*`.
+In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-packages in `/etc/packages` rather than `/apps/my-app/<application|content>/install.*`.
 
 ```
 ...
