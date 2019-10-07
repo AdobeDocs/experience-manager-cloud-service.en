@@ -134,10 +134,10 @@ Breaking this folder structure down:
 For example, a deployment that contains AEM Author and Publish specific packages may look like:
 
 + `all` Container package embeds the following packages, to create a singular deployment artifact
-  + `ui.apps` embedded in `/apps/my-app/application/install` deploys code to both AEM Author and AEM Publish
-  + `ui.apps.author` embedded in `/apps/my-app/application/install.author` deploys code to only AEM Author
-  + `ui.content` embedded in `/apps/my-app/content/install` deploys content and configuration to both AEM Author and AEM Publish
-  + `ui.content.publish` embedded in `/apps/my-app/content/install.publish` deploys content and configuration to only AEM Publish
+  + `ui.apps` embedded in `/apps/my-app-packages/application/install` deploys code to both AEM Author and AEM Publish
+  + `ui.apps.author` embedded in `/apps/my-app-packages/application/install.author` deploys code to only AEM Author
+  + `ui.content` embedded in `/apps/my-app-packages/content/install` deploys content and configuration to both AEM Author and AEM Publish
+  + `ui.content.publish` embedded in `/apps/my-app-packages/content/install.publish` deploys content and configuration to only AEM Publish
 
 ## Package Dependency Management
 
@@ -244,7 +244,7 @@ In the `all` project's `filter.xml`, only and explicitly __include__ any sub-pac
 
 ### Embedding Sub-packages to the `all` Package{#embeddeds}
 
-In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-packages in `/etc/packages` rather than `/apps/my-app/<application|content>/install.*`.
+In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-packages in `/etc/packages` rather than `/apps/my-app-packages/<application|content>/install.*`.
 
 ```
 ...
@@ -265,7 +265,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <artifactId>my-app.ui.apps</artifactId>
               <type>zip</type>
               <filter>true</filter>
-              <target>/apps/my-app/application/install</target>
+              <target>/apps/my-app-packages/application/install</target>
           </embedded>
 
           <!-- Code package that deploys ONLY to AEM Author -->
@@ -274,7 +274,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <artifactId>my-app.ui.apps.author</artifactId>
               <type>zip</type>
               <filter>true</filter>
-              <target>/apps/my-app/application/install.author</target>
+              <target>/apps/my-app-packages/application/install.author</target>
           </embedded>
 
           <!-- Content package that deploys to BOTH AEM Author and AEM Publish -->
@@ -283,7 +283,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <artifactId>my-app.ui.content</artifactId>
               <type>zip</type>
               <filter>true</filter>
-              <target>/apps/my-app/content/install</target>
+              <target>/apps/my-app-packages/content/install</target>
           </embedded>
 
           <!-- Content package that deploys ONLY to AEM Author -->
@@ -292,7 +292,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <artifactId>my-app.ui.content.author-only</artifactId>
               <type>zip</type>
               <filter>true</filter>
-              <target>/apps/my-app/content/install.publish</target>
+              <target>/apps/my-app-packages/content/install.publish</target>
           </embedded>
 
           <!-- Include any other extra packages such as AEM WCM Core Components -->
@@ -302,7 +302,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <artifactId>core.wcm.components.content</artifactId>
               <type>zip</type>
               <filter>true</filter>
-              <target>/apps/core-components/application/install</target>
+              <target>/apps/vendor-packages/application/install</target>
           </embedded>
 
           <embedded>
@@ -311,7 +311,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <artifactId>core.wcm.components.conf</artifactId>
               <type>zip</type>
               <filter>true</filter>
-              <target>/apps/core-components/content/install</target>
+              <target>/apps/vendor-packages/content/install</target>
           </embedded>
       <embeddeds>
   </configuration>
@@ -330,16 +330,12 @@ In the `ui.content/pom.xml`, add the following `<dependencies>` directives to th
   <artifactId>filevault-package-maven-plugin</artifactId>
   <extensions>true</extensions>
   <configuration>
-     <group>my/package/group</group>
-
       ...
       <dependencies>
         <!-- Declare the content package dependency in the ui.content/pom.xml on the ui.apps project -->
         <dependency>
-            <!-- The group refers to the content package group, NOT the maven project groupId -->
-            <group>my/package/group</group>
-            <!-- Ensure the correct package name is listed -->
-            <name>my-app.ui.apps</name>
+            <groupId${project.groupId}</groupId>
+            <artifactId>my-app.ui.apps</artifactId>
             <version>${project.version}</version>
         </dependency>
       </dependencies>
