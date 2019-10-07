@@ -73,7 +73,7 @@ The recommended application deployment structure is as follows:
     + Any `rep:policy` for any path **not** under `/apps`
 + The `all` package is a container package that ONLY includes the `ui.apps` and `ui.content` packages as embeds. The `all` package must not have _any_ content of its own, but rather delegate all deployment to the repository to its sub-packages.
 
-  Packages are now included using the Maven [File Vault plugin's embeddeds configuration](#embeddeds), rather than the `<subPackages>` configuration.
+  Packages are now included using the Maven [File Vault Package Maven plugin's embeddeds configuration](#embeddeds), rather than the `<subPackages>` configuration.
 
   For complex AEM deployments, it may be desirable to create multiple `ui.apps` and `ui.content` projects/packages that represent specific sites or tenants in AEM. If this is done, ensure the split between mutable and immutable content is respected, and the required content packages are added as sub-packages in the `all` container content package.
 
@@ -94,7 +94,17 @@ Packages are to be marked with their declared package type.
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
 
-For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
+For more information see [Apache Jackrabbit File Vault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
+
+## Code Packages and Repository Structure Packages
+
+Code Packages require configuring the File Vault maven plug-in's configuration to reference a special Adobe-provided `<repositoryStructurePackage>` that enforces correctness of structural dependencies (to ensure one code package doesn't install over another).
+
+This is __only__ required for Code packages, meaning any Package marked with `<packageType>application</packageType>`.
+
+The example `<repositoryStructurePackage>` XML snippet is provided in the [Repository Structure Package](#repository-structure-package) section below.
+
+Note that Content packages (`<packageType>content</packageType>`) do __not__ require this Repository Structure Package.
 
 # Embedding Packages
 
@@ -170,6 +180,11 @@ Complex deployments expand on the simple case, and set dependencies between the 
 
 The project structures and organization outlined in this article is fully compatible local development AEM instances.
 
+
+
+
+
+
 ## pom.xml Configuration Snippets
 
 The following are Maven `pom.xml` configuration snippets that can be added to Maven projects to align to the above recommendations.
@@ -229,6 +244,36 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
     </plugin>
     ...
 ```
+
+### Repository Structure Package{#repository-structure-package}
+
+In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`<packageType>application</packageType>`), add the following Adobe-provided Repository Structure Package configuration to the File Vault Maven plug-in.
+
+```
+...
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>filevault-package-maven-plugin</artifactId>
+      <extensions>true</extensions>
+      <configuration>
+        ...
+        <repositoryStructurePackages>
+          <repositoryStructurePackage>
+              <group>com.adobe.cq</group>
+              <name>repository-structure-pkg</name>
+              <groupId>com.adobe.cq</groupId>
+              <artifactId>repository-structure-pkg</artifactId>
+              <version>1.0.2</version>
+          </repositoryStructurePackage>
+        </repositoryStructurePackages>
+      </configuration>
+    </plugin>
+    ...
+```
+
+
 
 ### Package Filter Definitions
 
