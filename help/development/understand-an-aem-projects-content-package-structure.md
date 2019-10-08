@@ -13,27 +13,27 @@ audience: implementer, architect
 kt: 3404
 ---
 
-# Understand an AEM Project's Content Package Structure
- 
-AEM application deployments must be comprised of a single AEM package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
+# Understand an Adobe Experience Manager Project's Content Package Structure
 
-AEM requires a separation of __content__ and __code__, which means a single content package __cannot__ deploy to **both** `/apps` and runtime-writable areas (`/content`, `/conf`, `/home`, etc. - in short, anything not `/apps`) of the repository, instead, the application must separate code and content into discrete packages for deployment into AEM.
+Adobe Experience Manager application deployments must be comprised of a single AEM package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
 
-The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
+ Experience Manager requires a separation of __content__ and __code__, which means a single content package __cannot__ deploy to **both** `/apps` and runtime-writable areas (`/content`, `/conf`, `/home`, etc. - in short, anything not `/apps`) of the repository, instead, the application must separate code and content into discrete packages for deployment into Experience Manager.
+
+The package structure outlined in this document is compatible with **both** local development deployments and Experience Manager as a Cloud Service deployments.
 
 ## Mutable vs. Immutable Areas of the Repository
 
-`/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after AEM starts (ie. at runtime). Any attempt to change an immutable area at runtime, the action will fail.
+`/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after Experience Manager starts (ie. at runtime). Any attempt to change an immutable area at runtime, the action will fail.
 
 Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
-> `/libs` remains off-limits. Only Adobe Experience Manager product code may deploy to `/libs`.
+> `/libs` remains off-limits. Only Experience Manager product code may deploy to `/libs`.
 
 ## Recommended Package Structure
 
-![AEM Project Package Structure](./assets/understand-an-aem-projects-content-package-structure/content-package-organization.png)
+![Experience Manager Project Package Structure](./assets/understand-an-aem-projects-content-package-structure/content-package-organization.png)
 
 This diagram provides an overview of the recommended project structure and package deployment artifacts.
 
@@ -73,7 +73,7 @@ The recommended application deployment structure is as follows:
     + Any `rep:policy` for any path **not** under `/apps`
 + The `all` package is a container package that ONLY includes the `ui.apps` and `ui.content` packages as embeds. The `all` package must not have _any_ content of its own, but rather delegate all deployment to the repository to its sub-packages.
 
-  Packages are now included using the Maven [File Vault Package Maven plugin's embeddeds configuration](#embeddeds), rather than the `<subPackages>` configuration.
+  Packages are now included using the Maven [FileVault Package Maven plugin's embeddeds configuration](#embeddeds), rather than the `<subPackages>` configuration.
 
   For complex AEM deployments, it may be desirable to create multiple `ui.apps` and `ui.content` projects/packages that represent specific sites or tenants in AEM. If this is done, ensure the split between mutable and immutable content is respected, and the required content packages are added as sub-packages in the `all` container content package.
 
@@ -94,21 +94,21 @@ Packages are to be marked with their declared package type.
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
 
-For more information see [Apache Jackrabbit File Vault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
+For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
 
 ## Code Packages and Repository Structure Packages
 
-Code Packages require configuring the File Vault maven plug-in's configuration to reference a special Adobe-provided `<repositoryStructurePackage>` that enforces correctness of structural dependencies (to ensure one code package doesn't install over another).
+Code Packages require configuring the FileVault maven plug-in's configuration to reference a special Adobe-provided `<repositoryStructurePackage>` that enforces correctness of structural dependencies (to ensure one code package doesn't install over another).
 
 This is __only__ required for Code packages, meaning any Package marked with `<packageType>application</packageType>`.
 
-The example `<repositoryStructurePackage>` XML snippet is provided in the [Repository Structure Package](#repository-structure-package) section below.
+To learn how to create a Repository Structure Package for your application, see [Develop a Repository Structure Package](./develop-a-repository-structure-package.md)
 
 Note that Content packages (`<packageType>content</packageType>`) do __not__ require this Repository Structure Package.
 
-# Embedding Packages
+## Embedding Packages
 
-Content or Code packages are placed in a special "side-car" folder and can be targeted for installation on either AEM Author, AEM Publish or Both, using the File Vault Maven plug-in's `<embeddeds>` configuration. Note that the `<subPackages>` configuration should not be used.
+Content or Code packages are placed in a special "side-car" folder and can be targeted for installation on either AEM Author, AEM Publish or Both, using the FileVault Maven plug-in's `<embeddeds>` configuration. Note that the `<subPackages>` configuration should not be used.
 
 Common use-cases include:
 
@@ -120,7 +120,7 @@ Common use-cases include:
 
 To target AEM Author, AEM Publish or Both, the package is embedded in the `all` Container package in a special folder-location, in the following format:
 
-  `/apps/<app-name>-packages/(content|application)/install.*`
+  `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
 Breaking this folder structure down:
 
@@ -180,11 +180,6 @@ Complex deployments expand on the simple case, and set dependencies between the 
 
 The project structures and organization outlined in this article is fully compatible local development AEM instances.
 
-
-
-
-
-
 ## pom.xml Configuration Snippets
 
 The following are Maven `pom.xml` configuration snippets that can be added to Maven projects to align to the above recommendations.
@@ -203,7 +198,7 @@ Code packages must set their `packageType` to `application`.
 
 In the `ui.apps/pom.xml`, the `<packageType>application</packageType>` build configuration directives of the `filevault-package-maven-plugin` plugin declaration declares its package type.
 
-```
+```xml
 ...
 <build>
   <plugins>
@@ -227,7 +222,7 @@ Content packages must set their `packageType` to `content`.
 
 In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build configuration directive of the `filevault-package-maven-plugin` plugin declaration declares its package type.
 
-```
+```xml
 ...
 <build>
   <plugins>
@@ -247,9 +242,9 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
 
 ### Repository Structure Package{#repository-structure-package}
 
-In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`<packageType>application</packageType>`), add the following Adobe-provided Repository Structure Package configuration to the File Vault Maven plug-in.
+In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`<packageType>application</packageType>`), add the following Adobe-provided Repository Structure Package configuration to the FileVault Maven plug-in.
 
-```
+```xml
 ...
 <build>
   <plugins>
@@ -261,11 +256,9 @@ In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`
         ...
         <repositoryStructurePackages>
           <repositoryStructurePackage>
-              <group>com.adobe.cq</group>
-              <name>repository-structure-pkg</name>
-              <groupId>com.adobe.cq</groupId>
+              <groupId>${project.groupId}</groupId>
               <artifactId>repository-structure-pkg</artifactId>
-              <version>1.0.2</version>
+              <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
       </configuration>
@@ -273,25 +266,21 @@ In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`
     ...
 ```
 
-
-
 ### Package Filter Definitions
 
 #### Container Package Filter Definition
 
 In the `all` project's `filter.xml`, only and explicitly __include__ any sub-package folders to deploy:
 
-```
-<filter root="/apps">
-    <include pattern="/apps/<my-app>-packages(/.*)?"/>
-</filter>
+```xml
+<filter root="/apps/<my-app>-packages"/>
 ```
 
 ### Embedding Sub-packages to the `all` Package{#embeddeds}
 
 In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-packages in `/etc/packages` rather than `/apps/my-app-packages/<application|content>/install.*`.
 
-```
+```xml
 ...
 <plugin>
   <groupId>org.apache.jackrabbit</groupId>
@@ -300,7 +289,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
   <configuration>
       ...
       <embeddeds>
-                
+
           <!-- Include the application's ui.apps and ui.content packages -->
           <!-- Ensure the artifactIds are correct -->
 
@@ -368,7 +357,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
 
 In the `ui.content/pom.xml`, add the following `<dependencies>` directives to the `filevault-package-maven-plugin` plugin declaration.
 
-```
+```xml
 ...
 <plugin>
   <groupId>org.apache.jackrabbit</groupId>
@@ -389,3 +378,7 @@ In the `ui.content/pom.xml`, add the following `<dependencies>` directives to th
 </plugin>
 ...
 ```
+
+## Additional Resources
+
++ [FileVault Content Package Maven Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
