@@ -1,10 +1,10 @@
 ---
-title: Understand Project Package Structure
-description: Learn about how to properly define AEM application package structures for deployment to AEM Cloud Service.
-seo-title: Understand Project Content Package Structure
-seo-description: Learn about how to properly define AEM application package structures for deployment to AEM Cloud Service.
+title: Understand a Project's Content Package Structure
+description: Learn about how to properly define package structures for deployment to Adobe Experience Manager as a Cloud Service.
+seo-title: Understand an Adobe Experience Manager as a Cloud Service Project's Content Package Structure
+seo-description: Learn about how to properly define application package structures for deployment to Adobe Experience Manager as a Cloud Service.
 sub-product: cloud-manager
-feature: 
+feature: cloud-manager
 topics: best-practices
 version: 
 doc-type: article
@@ -13,17 +13,27 @@ audience: implementer, architect
 kt: 3404
 ---
 
-# Understand an Adobe Experience Manager Project's Content Package Structure
+# Understand an Adobe Experience Manager as a Cloud Service Project's Content Package Structure
 
-Adobe Experience Manager application deployments must be comprised of a single AEM package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
+>![TIP]
+>
+> Familiarize yourself with basic [Experience Manager Maven Archetype use, and the FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) as this article builds upon these learnings and concepts.
 
- Experience Manager requires a separation of __content__ and __code__, which means a single content package __cannot__ deploy to **both** `/apps` and runtime-writable areas (`/content`, `/conf`, `/home`, etc. - in short, anything not `/apps`) of the repository, instead, the application must separate code and content into discrete packages for deployment into Experience Manager.
+This article outlines the changes required to Experience Manager Maven projects to be Experience Manager as a Cloud Service compatible, ensuring they respect the split of mutable and immutable content, ensuring requisite dependencies are established to create non-conflicting, determinisitic deployments, and ensuring they are packaged in a deployable structure.
+
+Adobe Experience Manager application deployments must be comprised of a single Experience Manager package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
+
+Experience Manager requires a separation of __content__ and __code__, which means a single content package __cannot__ deploy to **both** `/apps` and runtime-writable areas (`/content`, `/conf`, `/home`, etc. - in short, anything not `/apps`) of the repository, instead, the application must separate code and content into discrete packages for deployment into Experience Manager.
 
 The package structure outlined in this document is compatible with **both** local development deployments and Experience Manager as a Cloud Service deployments.
 
-## Mutable vs. Immutable Areas of the Repository
+>![TIP]
+>
+> The configurations outlined in this document are provided by [AEM Project Maven Archetype 21 or later](https://github.com/adobe/aem-project-archetype/releases).
 
-`/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after Experience Manager starts (ie. at runtime). Any attempt to change an immutable area at runtime, the action will fail.
+## Mutable vs. Immutable Areas of the Repository{#mutable-vs-immutable}
+
+`/apps` and `/libs` are considered **immutable** areas of Experience Manager as they cannot be changed (create, update, delete) after Experience Manager starts (ie. at runtime). Any attempt to change an immutable area at runtime, the action will fail.
 
 Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
@@ -75,7 +85,7 @@ The recommended application deployment structure is as follows:
 
   Packages are now included using the Maven [FileVault Package Maven plugin's embeddeds configuration](#embeddeds), rather than the `<subPackages>` configuration.
 
-  For complex AEM deployments, it may be desirable to create multiple `ui.apps` and `ui.content` projects/packages that represent specific sites or tenants in AEM. If this is done, ensure the split between mutable and immutable content is respected, and the required content packages are added as sub-packages in the `all` container content package.
+  For complex Experience Manager deployments, it may be desirable to create multiple `ui.apps` and `ui.content` projects/packages that represent specific sites or tenants in AEM. If this is done, ensure the split between mutable and immutable content is respected, and the required content packages are added as sub-packages in the `all` container content package.
 
   For example, a complex deployment content package structure may look like this:
 
@@ -106,7 +116,7 @@ To learn how to create a Repository Structure Package for your application, see 
 
 Note that Content packages (`<packageType>content</packageType>`) do __not__ require this Repository Structure Package.
 
-## Embedding Packages
+## Embedding Packages{#embedding-packages}
 
 Content or Code packages are placed in a special "side-car" folder and can be targeted for installation on either AEM Author, AEM Publish or Both, using the FileVault Maven plug-in's `<embeddeds>` configuration. Note that the `<subPackages>` configuration should not be used.
 
@@ -148,6 +158,18 @@ For example, a deployment that contains AEM Author and Publish specific packages
   + `ui.apps.author` embedded in `/apps/my-app-packages/application/install.author` deploys code to only AEM Author
   + `ui.content` embedded in `/apps/my-app-packages/content/install` deploys content and configuration to both AEM Author and AEM Publish
   + `ui.content.publish` embedded in `/apps/my-app-packages/content/install.publish` deploys content and configuration to only AEM Publish
+
+## Embedding 3rd-party Packages
+
+All packages must be available via the [Adobe's public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referencable 3rd party Maven artifact repository.
+
+If the 3rd party packages are in __Adobe's public Maven artifact repository__, no further configuration is needed for Adobe Cloud Manager to resolve the artifacts.
+
+If the 3rd party packages are in a __public 3rd party Maven artifact repository__, this repository must be registered in the project's `pom.xml` and embedded following the method [outlined above](#embedding-packages). If the 3rd party application/connector requires both Code and Content packages, each must be embedded into the correct locations in your Container (`all`) package.
+
+[See the XML snippet for embedding a public 3rd party Maven repository](#3rd-party-maven-repositories)
+
+Dependencies follows standard Maven practices, and embedding of 3rd party artifacts (Code and Content packages) are [outlined above](#embedding-packages).
 
 ## Package Dependency Management
 
@@ -270,15 +292,15 @@ In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`
 
 #### Container Package Filter Definition
 
-In the `all` project's `filter.xml`, only and explicitly __include__ any sub-package folders to deploy:
+In the `all` project's `filter.xml`, __include__ any `-packages` folders that contain sub-packages to deploy:
 
 ```xml
 <filter root="/apps/<my-app>-packages"/>
 ```
 
-### Embedding Sub-packages to the `all` Package{#embeddeds}
+### Embedding Sub-packages in the `all` Package{#embeddeds}
 
-In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-packages in `/etc/packages` rather than `/apps/my-app-packages/<application|content>/install.*`.
+In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-packages in `/etc/packages` rather than `/apps/my-app-packages/<application|content>/install(.author|.publish)?`.
 
 ```xml
 ...
@@ -298,7 +320,6 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps</artifactId>
               <type>zip</type>
-              <filter>true</filter>
               <target>/apps/my-app-packages/application/install</target>
           </embedded>
 
@@ -307,7 +328,6 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps.author</artifactId>
               <type>zip</type>
-              <filter>true</filter>
               <target>/apps/my-app-packages/application/install.author</target>
           </embedded>
 
@@ -316,16 +336,14 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.content</artifactId>
               <type>zip</type>
-              <filter>true</filter>
               <target>/apps/my-app-packages/content/install</target>
           </embedded>
 
           <!-- Content package that deploys ONLY to AEM Author -->
           <embedded>
               <groupId>${project.groupId}</groupId>
-              <artifactId>my-app.ui.content.author-only</artifactId>
+              <artifactId>my-app.ui.content.publish-only</artifactId>
               <type>zip</type>
-              <filter>true</filter>
               <target>/apps/my-app-packages/content/install.publish</target>
           </embedded>
 
@@ -335,7 +353,6 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <!-- Not to be confused; WCM Core Components' Code package's artifact is named `.content` -->
               <artifactId>core.wcm.components.content</artifactId>
               <type>zip</type>
-              <filter>true</filter>
               <target>/apps/vendor-packages/application/install</target>
           </embedded>
 
@@ -344,13 +361,36 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <!-- Not to be confused; WCM Core Components' Content package's artifact is named `.conf` -->
               <artifactId>core.wcm.components.conf</artifactId>
               <type>zip</type>
-              <filter>true</filter>
               <target>/apps/vendor-packages/content/install</target>
           </embedded>
       <embeddeds>
   </configuration>
 </plugin>
 ...
+```
+
+### 3rd Party Maven Repositories{#3rd-party-maven-repositories}
+
+In the Reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
+
+```xml
+<repositories>
+  ...
+  <repository>
+      <id>3rd-party-repository</id>
+      <name>Public 3rd Party Repository</name>
+      <url>https://repo.3rdparty.example.com/...</url>
+      <releases>
+          <enabled>true</enabled>
+          <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+          <enabled>false</enabled>
+      </snapshots>
+  </repository>
+  ...
+</repositories>
+
 ```
 
 ### Establishing a Dependency between the `ui.apps` from `ui.content` Packages
@@ -381,4 +421,5 @@ In the `ui.content/pom.xml`, add the following `<dependencies>` directives to th
 
 ## Additional Resources
 
++ [Managing Packages Using Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
 + [FileVault Content Package Maven Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
