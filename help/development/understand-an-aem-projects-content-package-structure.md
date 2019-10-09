@@ -19,7 +19,7 @@ kt: 3404
 >
 > Familiarize yourself with basic [Experience Manager Maven Archetype use, and the FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) as this article builds upon these learnings and concepts.
 
-This article outlines the changes required to Experience Manager Maven projects to be Experience Manager as a Cloud Service compatible, ensuring they respect the split of mutable and immutable content, ensuring requisite dependencies are established to create non-conflicting, determinisitic deployments, and ensuring they are packaged in a deployable structure.
+This article outlines the changes required to Experience Manager Maven projects to be Experience Manager as a Cloud Service compatible, ensuring they respect the split of mutable and immutable content, ensuring requisite dependencies are established to create non-conflicting, deterministic  deployments, and ensuring they are packaged in a deployable structure.
 
 Adobe Experience Manager application deployments must be comprised of a single Experience Manager package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
 
@@ -106,7 +106,15 @@ Packages are to be marked with their declared package type.
 
 For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
 
-## Code Packages and Repository Structure Packages
+> See the [POM XML Snippets](#xml-package-types) section below for a complete snippet.
+
+## Marking Packages for Deployment by Adobe Cloud Manager
+
+By default, Adobe Cloud Manager harvests all Packages produced by the Maven build, however since the Container (`all`) package is the singular deployment artifact that contains all Code and Content packages, we must ensure __only__ the  Container (`all`) package is deployed. To ensure, this other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+
+> See the [POM XML Snippets](#xml-cloud-manager-target) section below for a complete snippet.
+
+## Repository Structure Package
 
 Code Packages require configuring the FileVault maven plug-in's configuration to reference a special Adobe-provided `<repositoryStructurePackage>` that enforces correctness of structural dependencies (to ensure one code package doesn't install over another).
 
@@ -116,7 +124,9 @@ To learn how to create a Repository Structure Package for your application, see 
 
 Note that Content packages (`<packageType>content</packageType>`) do __not__ require this Repository Structure Package.
 
-## Embedding Packages{#embedding-packages}
+> See the [POM XML Snippets](#xml-repository-structure-package) section below for a complete snippet.
+
+## Embedding Sub-packages in the Container Package{#embeddeds}
 
 Content or Code packages are placed in a special "side-car" folder and can be targeted for installation on either AEM Author, AEM Publish or Both, using the FileVault Maven plug-in's `<embeddeds>` configuration. Note that the `<subPackages>` configuration should not be used.
 
@@ -159,6 +169,16 @@ For example, a deployment that contains AEM Author and Publish specific packages
   + `ui.content` embedded in `/apps/my-app-packages/content/install` deploys content and configuration to both AEM Author and AEM Publish
   + `ui.content.publish` embedded in `/apps/my-app-packages/content/install.publish` deploys content and configuration to only AEM Publish
 
+> See the [POM XML Snippets](#xml-embeddeds) section below for a complete snippet.
+
+### Container Package's Filter Definition
+
+Due to the embedding of the Code and Content sub-packages in the Container package, the embedded target paths must be added to the Container project's `filter.xml` to ensure the embedded packages are included in the Container package when built.
+
+Simply add the `<filter root="/apps/<my-app>-packages"/>` entries for any 2nd-level folders that contain sub-packages to deploy.
+
+> See the [POM XML Snippets](#xml-container-package-filters) section below for a complete snippet.
+
 ## Embedding 3rd-party Packages
 
 All packages must be available via the [Adobe's public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referencable 3rd party Maven artifact repository.
@@ -167,15 +187,17 @@ If the 3rd party packages are in __Adobe's public Maven artifact repository__, n
 
 If the 3rd party packages are in a __public 3rd party Maven artifact repository__, this repository must be registered in the project's `pom.xml` and embedded following the method [outlined above](#embedding-packages). If the 3rd party application/connector requires both Code and Content packages, each must be embedded into the correct locations in your Container (`all`) package.
 
-[See the XML snippet for embedding a public 3rd party Maven repository](#3rd-party-maven-repositories)
+Adding Maven dependencies follow standard Maven practices, and embedding of 3rd party artifacts (Code and Content packages) are [outlined above](#embedding-packages).
 
-Dependencies follows standard Maven practices, and embedding of 3rd party artifacts (Code and Content packages) are [outlined above](#embedding-packages).
+> See the [POM XML Snippets](#xml-3rd-party-maven-repositories) section below for a complete snippet.
 
-## Package Dependency Management
+## Package Dependencies between the `ui.apps` from `ui.content` Packages
 
 In order to ensure proper installation of the packages, it is recommended inter-package dependencies are established.
 
 The general rule is packages containing mutable content (`ui.content`) should depend on the immutable content (`ui.apps`) that supports the rendering and use of the mutable content.
+
+> See the [POM XML Snippets](#xml-package-dependencies) section below for a complete snippet.
 
 The common patterns for content package dependencies are:
 
@@ -200,13 +222,13 @@ Complex deployments expand on the simple case, and set dependencies between the 
 
 ## Local Development and Deployment
 
-The project structures and organization outlined in this article is fully compatible local development AEM instances.
+The project structures and organization outlined in this article is __fully compatible__ local development AEM instances.
 
-## pom.xml Configuration Snippets
+## POM XML Snippets
 
 The following are Maven `pom.xml` configuration snippets that can be added to Maven projects to align to the above recommendations.
 
-### Declaring Package Types{#declaring-package-types}
+### Package Types{#xml-package-types}
 
 Code and content packages, which are deployed as sub-packages, must declare a package type of __application__ or __content__, depending on what they contain.
 
@@ -233,6 +255,9 @@ In the `ui.apps/pom.xml`, the `<packageType>application</packageType>` build con
         <name>${my-app.ui.apps}</name>
         <packageType>application</packageType>
         <accessControlHandling>merge</accessControlHandling>
+        <properties>
+          <cloudManagerTarget>none</cloudManagerTarget>>
+        </properties>
       </configuration>
     </plugin>
     ...
@@ -257,12 +282,37 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
         <name>${my-app.ui.content}</name>
         <packageType>content</packageType>
         <accessControlHandling>merge</accessControlHandling>
+        <properties>
+          <cloudManagerTarget>none</cloudManagerTarget>>
+        </properties>
       </configuration>
     </plugin>
     ...
 ```
 
-### Repository Structure Package{#repository-structure-package}
+### Marking Packages for Adobe Cloud Manager Deployment{#cloud-manager-target}
+
+In every project generating a Package, __except__ for the Container (`all`) project, add `<cloudManagerTarget>none</cloudManagerTarget>` to the `<properties>` configuration of the `filevault-package-maven-plugin` plug-in declaration to ensure they are __not__ deployed by Adobe Cloud Manager. THe Container (`all`) package should be the singular Package deployed via Cloud Manager, which in turn embeds all required Code and Content packages.
+
+```xml
+...
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>filevault-package-maven-plugin</artifactId>
+      <extensions>true</extensions>
+      <configuration>
+        ...
+        <properties>
+          <cloudManagerTarget>none</cloudManagerTarget>>
+        </properties>
+      </configuration>
+    </plugin>
+    ...
+```
+
+### Repository Structure Package{#xml-repository-structure-package}
 
 In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`<packageType>application</packageType>`), add the following Adobe-provided Repository Structure Package configuration to the FileVault Maven plug-in.
 
@@ -288,17 +338,7 @@ In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`
     ...
 ```
 
-### Package Filter Definitions
-
-#### Container Package Filter Definition
-
-In the `all` project's `filter.xml`, __include__ any `-packages` folders that contain sub-packages to deploy:
-
-```xml
-<filter root="/apps/<my-app>-packages"/>
-```
-
-### Embedding Sub-packages in the `all` Package{#embeddeds}
+### Embedding Sub-packages in the Container Package{#xml-embeddeds}
 
 In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevault-package-maven-plugin` plugin declaration. Remember, do NOT use the `<subPackages>` configuration, as this will include the sub-packages in `/etc/packages` rather than `/apps/my-app-packages/<application|content>/install(.author|.publish)?`.
 
@@ -369,7 +409,17 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
 ...
 ```
 
-### 3rd Party Maven Repositories{#3rd-party-maven-repositories}
+### Container Package's Filter Definition#{xml-container-package-filters}
+
+In the `all` project's `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), __include__ any `-packages` folders that contain sub-packages to deploy:
+
+```xml
+<filter root="/apps/my-app-packages"/>
+```
+
+If multiple `/apps/*-packages` are used in the embeddeds targets, then they all must be enumerated here.
+
+### 3rd Party Maven Repositories{#xml-3rd-party-maven-repositories}
 
 In the Reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
 
@@ -390,10 +440,9 @@ In the Reactor project's `pom.xml`, add any necessary 3rd party public Maven rep
   </repository>
   ...
 </repositories>
-
 ```
 
-### Establishing a Dependency between the `ui.apps` from `ui.content` Packages
+### Package Dependencies between the `ui.apps` from `ui.content` Packages{#xml-package-dependencies}
 
 In the `ui.content/pom.xml`, add the following `<dependencies>` directives to the `filevault-package-maven-plugin` plugin declaration.
 
@@ -417,6 +466,30 @@ In the `ui.content/pom.xml`, add the following `<dependencies>` directives to th
   </configuration>
 </plugin>
 ...
+```
+
+### Cleaning the Container Project's Target Folder{#xml-clean-container-package}
+
+In the `all/pom.xml` add the `maven-clean-plugin` plug-in which will clean the target directory prior to a Maven builds.
+
+```xml
+<plugins>
+  ...
+  <plugin>
+    <artifactId>maven-clean-plugin</artifactId>
+    <version>2.4.1</version>
+    <executions>
+      <execution>
+        <id>auto-clean</id>
+        <phase>install</phase>
+        <goals>
+          <goal>clean</goal>
+        </goals>
+      </execution>
+    </executions>
+  </plugin>
+  ...
+</plugins>
 ```
 
 ## Additional Resources
