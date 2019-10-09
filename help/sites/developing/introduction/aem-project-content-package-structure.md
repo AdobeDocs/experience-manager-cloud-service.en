@@ -43,7 +43,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`,
 
 ## Recommended Package Structure
 
-![Experience Manager Project Package Structure](./assets/understand-an-aem-projects-content-package-structure/content-package-organization.png)
+![Experience Manager Project Package Structure](./assets/aem-project-content-package-structure/content-package-organization.png)
 
 This diagram provides an overview of the recommended project structure and package deployment artifacts.
 
@@ -96,7 +96,7 @@ The recommended application deployment structure is as follows:
     + `ui.apps.site-b` deploys code required by Site B
     + `ui.content.site-b` deploys content and configuration required by Site B
 
-## Package Types#{package-types}
+## Package Types{#package-types}
 
 Packages are to be marked with their declared package type.
 
@@ -120,7 +120,7 @@ Code Packages require configuring the FileVault maven plug-in's configuration to
 
 This is __only__ required for Code packages, meaning any Package marked with `<packageType>application</packageType>`.
 
-To learn how to create a Repository Structure Package for your application, see [Develop a Repository Structure Package](./develop-a-repository-structure-package.md)
+To learn how to create a Repository Structure Package for your application, see [Develop a Repository Structure Package](./repository-structure-package.md)
 
 Note that Content packages (`<packageType>content</packageType>`) do __not__ require this Repository Structure Package.
 
@@ -136,7 +136,7 @@ Common use-cases include:
 + Configurations that are used to support activities only on AEM Author
 + Code such as integrations with back-office systems, only required to run on AEM Author
 
-![Embedding Packages](./assets/understand-an-aem-projects-content-package-structure/embeddeds.png)
+![Embedding Packages](./assets/aem-project-content-package-structure/embeddeds.png)
 
 To target AEM Author, AEM Publish or Both, the package is embedded in the `all` Container package in a special folder-location, in the following format:
 
@@ -409,7 +409,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
 ...
 ```
 
-### Container Package's Filter Definition#{xml-container-package-filters}
+### Container Package's Filter Definition{#xml-container-package-filters}
 
 In the `all` project's `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), __include__ any `-packages` folders that contain sub-packages to deploy:
 

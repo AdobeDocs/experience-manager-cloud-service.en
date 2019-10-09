@@ -21,7 +21,7 @@ Adobe Experience Manager as a Cloud Service Maven projects requires a Repository
 
 If your Code package deploys into a location not covered __by__ the Code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the Repository Structure Package to establish these dependencies.
 
-![Repository Structure Package](./assets/understand-an-aem-projects-content-package-structure/repository-structure-package.png)
+![Repository Structure Package](./assets/repository-structure-package/repository-structure-package.png)
 
 The Repository Structure Package defines the expected, common state of `/apps` which the Package validator uses to determine areas "safe from potential conflicts" as they are standard roots.
 
