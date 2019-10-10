@@ -16,6 +16,7 @@ solution-title: Experience Cloud
   + [Release Notes](overview/release-notes/release-notes.md)
 + Core Concepts of AEM Cloud Service {#core-concepts}
   + [Developing for AEM Cloud Service](sites/developing/introduction/the-basics.md)
+    + [AEM Project Package Structure](sites/developing/introduction/aem-project-content-package-structure.md)
   + [Deploying to AEM Cloud Service](sites/deploying/introduction.md)
   + [Debugging on AEM Cloud Service](sites/deploying/debugging.md)
   + Operations and Maintenance on AEM Cloud Service {#operations}
