@@ -1,8 +1,8 @@
 ---
 title: Understand a Project's Content Package Structure
-description: Learn about how to properly define package structures for deployment to Adobe Experience Manager as a Cloud Service.
+description: Learn about how to properly define package structures for deployment to Adobe Experience Manager Cloud Service.
 seo-title: Understand an Adobe Experience Manager as a Cloud Service Project's Content Package Structure
-seo-description: Learn about how to properly define application package structures for deployment to Adobe Experience Manager as a Cloud Service.
+seo-description: Learn about how to properly define application package structures for deployment to Adobe Experience Manager Cloud Service.
 sub-product: cloud-manager
 feature: cloud-manager
 topics: best-practices
@@ -13,30 +13,33 @@ audience: implementer, architect
 kt: 3404
 ---
 
-# Understand an Adobe Experience Manager as a Cloud Service Project's Content Package Structure {#understand-cloud-service-package-structure}
+# Understand the Structure of a Project Content Package in Adobe Experience Manager Cloud Service {#understand-cloud-service-package-structure}
 
->![TIP]
->Familiarize yourself with basic [AEM Maven Archetype use, and the FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) as this article builds upon these learnings and concepts.
+>[!TIP]
+>
+>Familiarize yourself with basic [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), and the [FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) as this article builds upon these learnings and concepts.
 
-This article outlines the changes required to Adobe Experience Manager Maven projects to be AEM as a Cloud Service compatible, ensuring they respect the split of mutable and immutable content, ensuring requisite dependencies are established to create non-conflicting, deterministic deployments, and ensuring they are packaged in a deployable structure.
+This article outlines the changes required to Adobe Experience Manager Maven projects to be AEM Cloud Service compatible by ensuring that they respect the split of mutable and immutable content; that requisite dependencies are established to create non-conflicting, deterministic deployments; and that they are packaged in a deployable structure.
 
 AEM application deployments must be comprised of a single AEM package. This package should in turn contain sub-packages that comprise everything required by the application to function, including code, configuration and any supporting baseline content.
 
 AEM requires a separation of **content** and **code**, which means a single content package **cannot** deploy to **both** `/apps` and runtime-writable areas (e.g. `/content`, `/conf`, `/home`, or anything not `/apps`) of the repository. Instead, the application must separate code and content into discrete packages for deployment into AEM.
 
-The package structure outlined in this document is compatible with **both** local development deployments and AEMr as a Cloud Service deployments.
+The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
 
->![TIP]
+>[!TIP]
+>
 >The configurations outlined in this document are provided by [AEM Project Maven Archetype 21 or later](https://github.com/adobe/aem-project-archetype/releases).
 
-## Mutable vs. Immutable Areas of the Repository{#mutable-vs-immutable}
+## Mutable vs. Immutable Areas of the Repository {#mutable-vs-immutable}
 
 `/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after AEM starts (i.e. at runtime). Any attempt to change an immutable area at runtime will fail.
 
 Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
-> As in previous versions of AEM, `/libs` should not be modified. Only Experience Manager product code may deploy to `/libs`.
+>
+> As in previous versions of AEM, `/libs` should not be modified. Only AEM product code may deploy to `/libs`.
 
 ## Recommended Package Structure {#recommended-package-structure}
 
@@ -87,11 +90,11 @@ The recommended application deployment structure is as follows:
   For example, a complex deployment content package structure may look like this:
 
   + `all` content package embeds the following packages, to create a singular deployment artifact
-    + `ui.apps.common` deploys code required by **both** Site A and Site B
-    + `ui.apps.site-a` deploys code required by Site A
-    + `ui.content.site-a` deploys content and configuration required by Site A
-    + `ui.apps.site-b` deploys code required by Site B
-    + `ui.content.site-b` deploys content and configuration required by Site B
+    + `ui.apps.common` deploys code required by **both** site A and site B
+    + `ui.apps.site-a` deploys code required by site A
+    + `ui.content.site-a` deploys content and configuration required by site A
+    + `ui.apps.site-b` deploys code required by site B
+    + `ui.content.site-b` deploys content and configuration required by site B
 
 ## Package Types {#package-types}
 
@@ -101,44 +104,47 @@ Packages are to be marked with their declared package type.
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
 
-For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#declaring-package-types) below.
+For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#marking-packages-for-deployment-by-adoube-cloud-manager) below.
 
 >[!TIP]
+>
 >See the [POM XML Snippets](#xml-package-types) section below for a complete snippet.
 
 ## Marking Packages for Deployment by Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-By default, Adobe Cloud Manager harvests all Packages produced by the Maven build, however since the Container (`all`) package is the singular deployment artifact that contains all Code and Content packages, we must ensure **only** the  Container (`all`) package is deployed. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+By default, Adobe Cloud Manager harvests all packages produced by the Maven build, however since the container (`all`) package is the singular deployment artifact that contains all code and content packages, we must ensure **only** the  container (`all`) package is deployed. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-In configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
 
 >[!TIP]
->See the [POM XML Snippets](#xml-cloud-manager-target) section below for a complete snippet.
+>
+>See the [POM XML Snippets](#pom-xml-snippets) section below for a complete snippet.
 
 ## Repository Structure Package {#repository-structure-package}
 
-Code Packages require configuring the FileVault maven plug-in's configuration to reference a special Adobe-provided `<repositoryStructurePackage>` that enforces correctness of structural dependencies (to ensure one code package doesn't install over another).
+Code Packages require configuring the FileVault Maven plug-in's configuration to reference a `<repositoryStructurePackage>` that enforces correctness of structural dependencies (to ensure one code package doesn't install over another). You can [create your own repository structure package for your project](repository-structure-package.md).
 
 This is **only required** for Code packages, meaning any Package marked with `<packageType>application</packageType>`.
 
-To learn how to create a Repository Structure Package for your application, see Develop a Repository Structure Package.
+To learn how to create a repository structure package for your application, see [Develop a Repository Structure Package](repository-structure-package.md).
 
-Note that Content packages (`<packageType>content</packageType>`) **do not** require this Repository Structure Package.
+Note that content packages (`<packageType>content</packageType>`) **do not** require this repository structure Package.
 
 >[!TIP]
+>
 >See the [POM XML Snippets](#xml-repository-structure-package) section below for a complete snippet.
 
 ## Embedding Sub-packages in the Container Package{#embeddeds}
 
-Content or Code packages are placed in a special "side-car" folder and can be targeted for installation on either AEM Author, AEM Publish or Both, using the FileVault Maven plug-in's `<embeddeds>` configuration. Note that the `<subPackages>` configuration should not be used.
+Content or code packages are placed in a special "side-car" folder and can be targeted for installation on either AEM author, AEM publish, or both, using the FileVault Maven plug-in's `<embeddeds>` configuration. Note that the `<subPackages>` configuration should not be used.
 
 Common use-cases include:
 
-+ ACLs/permissions that differ between AEM Author users and AEM Publish users
-+ Configurations that are used to support activities only on AEM Author
-+ Code such as integrations with back-office systems, only required to run on AEM Author
++ ACLs/permissions that differ between AEM author users and AEM publish users
++ Configurations that are used to support activities only on AEM author
++ Code such as integrations with back-office systems, only required to run on AEM author
 
 ![Embedding Packages](assets/aem-projects-content-package-structure/embeddeds.png)
 
-To target AEM Author, AEM Publish or Both, the package is embedded in the `all` Container package in a special folder-location, in the following format:
+To target AEM author, AEM publish, or both, the package is embedded in the `all` container package in a special folder-location, in the following format:
 
   `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -150,38 +156,41 @@ Breaking this folder structure down:
   + `/apps/my-other-app-packages`
   + `/apps/vendor-packages`
   
-  >![WARNING]
-  >By convention, sub-package embedded folders are named with the post-fix of `-packages`. This ensures that the deployment Code and Content packages are **not** deployed the target folder(s) of any sub-package `/apps/<app-name>/...`  which results in destructive and cyclic installation behavior.
+  >[!WARNING]
+  >
+  >By convention, sub-package embedded folders are named with the suffix of `-packages`. This ensures that the deployment code and content packages are **not** deployed the target folder(s) of any sub-package `/apps/<app-name>/...`  which results in destructive and cyclic installation behavior.
 
 + The 3rd-level folder must be either
 `application` or `content`
-  + The `application` folder holds Code packages
-  + The `content` folder golds Content packages
-  This folder name must correspond to the [Package Types](#package-types) of the packages it contains.
+  + The `application` folder holds code packages
+  + The `content` folder golds content packages
+  This folder name must correspond to the [package types](#package-types) of the packages it contains.
 + The 4th-level folder contains the sub-packages, and must be one of:
-  + `install` to install on **both** AEM Author and AEM Publish
-  + `install.author` to **only** install on AEM Author
-  + `install.publish` to **only** install on AEM Publish
+  + `install` to install on **both** AEM author and AEM publish
+  + `install.author` to **only** install on AEM author
+  + `install.publish` to **only** install on AEM publish
   Note that only `install.author` and `install.publish` are supported targets. Other run modes **are not** supported.
 
-For example, a deployment that contains AEM Author and Publish specific packages may look like the following:
+For example, a deployment that contains AEM author and publish specific packages may look like the following:
 
 + `all` Container package embeds the following packages, to create a singular deployment artifact
-  + `ui.apps` embedded in `/apps/my-app-packages/application/install` deploys code to both AEM Author and AEM Publish
-  + `ui.apps.author` embedded in `/apps/my-app-packages/application/install.author` deploys code to only AEM Author
-  + `ui.content` embedded in `/apps/my-app-packages/content/install` deploys content and configuration to both AEM Author and AEM Publish
-  + `ui.content.publish` embedded in `/apps/my-app-packages/content/install.publish` deploys content and configuration to only AEM Publish
+  + `ui.apps` embedded in `/apps/my-app-packages/application/install` deploys code to both AEM author and AEM publish
+  + `ui.apps.author` embedded in `/apps/my-app-packages/application/install.author` deploys code to only AEM author
+  + `ui.content` embedded in `/apps/my-app-packages/content/install` deploys content and configuration to both AEM author and AEM publish
+  + `ui.content.publish` embedded in `/apps/my-app-packages/content/install.publish` deploys content and configuration to only AEM publish
 
 >[!TIP]
+>
 >See the [POM XML Snippets](#xml-embeddeds) section below for a complete snippet.
 
 ### Container Package's Filter Definition {#container-package-filter-definition}
 
-Due to the embedding of the Code and Content sub-packages in the Container package, the embedded target paths must be added to the Container project's `filter.xml` to ensure the embedded packages are included in the Container package when built.
+Due to the embedding of the code and content sub-packages in the container package, the embedded target paths must be added to the container project's `filter.xml` to ensure the embedded packages are included in the container package when built.
 
 Simply add the `<filter root="/apps/<my-app>-packages"/>` entries for any 2nd-level folders that contain sub-packages to deploy.
 
 >[!TIP]
+>
 >See the [POM XML Snippets](#xml-container-package-filters) section below for a complete snippet.
 
 ## Embedding 3rd-party Packages {#embedding-3rd-party-packages}
@@ -190,11 +199,12 @@ All packages must be available via the [Adobe's public Maven artifact repository
 
 If the 3rd party packages are in **Adobe's public Maven artifact repository**, no further configuration is needed for Adobe Cloud Manager to resolve the artifacts.
 
-If the 3rd party packages are in a **public 3rd party Maven artifact repository**, this repository must be registered in the project's `pom.xml` and embedded following the method [outlined above](#embedding-packages). If the 3rd party application/connector requires both Code and Content packages, each must be embedded into the correct locations in your Container (`all`) package.
+If the 3rd party packages are in a **public 3rd party Maven artifact repository**, this repository must be registered in the project's `pom.xml` and embedded following the method [outlined above](#embeddeds). If the 3rd party application/connector requires both code and content packages, each must be embedded into the correct locations in your container (`all`) package.
 
-Adding Maven dependencies follow standard Maven practices, and embedding of 3rd party artifacts (Code and Content packages) are [outlined above](#embedding-packages).
+Adding Maven dependencies follow standard Maven practices, and embedding of 3rd party artifacts (code and content packages) are [outlined above](#embedding-3rd-party-packages).
 
 >[!TIP]
+>
 >See the [POM XML Snippets](#xml-3rd-party-maven-repositories) section below for a complete snippet.
 
 ## Package Dependencies between the `ui.apps` from `ui.content` Packages {#package-dependencies}
@@ -204,13 +214,14 @@ In order to ensure proper installation of the packages, it is recommended inter-
 The general rule is packages containing mutable content (`ui.content`) should depend on the immutable content (`ui.apps`) that supports the rendering and use of the mutable content.
 
 >[!TIP]
+>
 >See the [POM XML Snippets](#xml-package-dependencies) section below for a complete snippet.
 
 The common patterns for content package dependencies are:
 
 ### Simple Deployment Package Dependencies {#simple-deployment-package-dependencies}
 
-The simple case sets the `ui.content` mutable Content package to depend on the `ui.apps` immutable Code package.
+The simple case sets the `ui.content` mutable content package to depend on the `ui.apps` immutable code package.
 
 + `all` has no dependencies
   + `ui.apps` has no dependencies
@@ -218,7 +229,7 @@ The simple case sets the `ui.content` mutable Content package to depend on the `
 
 ### Complex Deployment Package Dependencies {#complex-deploxment-package-dependencies}
 
-Complex deployments expand on the simple case, and set dependencies between the corresponding mutable Content and immutable Code packages. As required, dependencies can be established between immutable Code packages as well.
+Complex deployments expand on the simple case, and set dependencies between the corresponding mutable content and immutable code packages. As required, dependencies can be established between immutable code packages as well.
 
 + `all` has no dependencies
   + `ui.apps.common` has no dependencies
@@ -299,7 +310,7 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
 
 ### Marking Packages for Adobe Cloud Manager Deployment {#cloud-manager-target}
 
-In every project generating a Package, **except** for the Container (`all`) project, add `<cloudManagerTarget>none</cloudManagerTarget>` to the `<properties>` configuration of the `filevault-package-maven-plugin` plug-in declaration to ensure they **are not** deployed by Adobe Cloud Manager. THe Container (`all`) package should be the singular Package deployed via Cloud Manager, which in turn embeds all required Code and Content packages.
+In every project generating a Package, **except** for the container (`all`) project, add `<cloudManagerTarget>none</cloudManagerTarget>` to the `<properties>` configuration of the `filevault-package-maven-plugin` plug-in declaration to ensure they **are not** deployed by Adobe Cloud Manager. THe container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
 ```xml
 ...
@@ -321,7 +332,7 @@ In every project generating a Package, **except** for the Container (`all`) proj
 
 ### Repository Structure Package {#xml-repository-structure-package}
 
-In the `ui.apps/pom.xml` and any other `pom.xml` that declares a Code package (`<packageType>application</packageType>`), add the following Adobe-provided Repository Structure Package configuration to the FileVault Maven plug-in.
+In the `ui.apps/pom.xml` and any other `pom.xml` that declares a code package (`<packageType>application</packageType>`), add the following repository structure package configuration to the FileVault Maven plug-in. You can [create your own repository structure package for your project](repository-structure-package.md).
 
 ```xml
 ...
@@ -428,7 +439,7 @@ If multiple `/apps/*-packages` are used in the embeddeds targets, then they all 
 
 ### 3rd Party Maven Repositories {#xml-3rd-party-maven-repositories}
 
-In the Reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
+In the reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
 
 ```xml
 <repositories>
