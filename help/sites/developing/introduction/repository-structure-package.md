@@ -74,6 +74,10 @@ Make sure to add this new Maven sub-project to the parent projects `<modules>` l
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
+                <properties>
+                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
                 <configuration>
                     <filters>
 
