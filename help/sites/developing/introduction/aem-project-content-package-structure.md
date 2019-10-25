@@ -301,7 +301,7 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
         <packageType>content</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
-          <cloudManagerTarget>none</cloudManagerTarget>>
+          <cloudManagerTarget>none</cloudManagerTarget>
         </properties>
       </configuration>
     </plugin>
@@ -323,7 +323,7 @@ In every project generating a Package, **except** for the container (`all`) proj
       <configuration>
         ...
         <properties>
-          <cloudManagerTarget>none</cloudManagerTarget>>
+          <cloudManagerTarget>none</cloudManagerTarget>
         </properties>
       </configuration>
     </plugin>
@@ -397,7 +397,7 @@ In the `all/pom.xml`, add the following `<embeddeds>` directives to the `filevau
               <target>/apps/my-app-packages/content/install</target>
           </embedded>
 
-          <!-- Content package that deploys ONLY to AEM Author -->
+          <!-- Content package that deploys ONLY to AEM Publish -->
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.content.publish-only</artifactId>
