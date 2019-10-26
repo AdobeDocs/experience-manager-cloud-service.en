@@ -11,7 +11,6 @@ solution-title: Experience Cloud
 # Experience Manager Cloud Service Help {#using}
 
 + Overview {#overview}
-  + [What's new with AEM Cloud Service](overview/what-is-new/what-is-new-with-aem-in-the-cloud.md)
   + [Release Notes](overview/release-notes/release-notes.md)
 + Core Concepts of AEM Cloud Service {#core-concepts}
   + [Developing for AEM Cloud Service](sites/developing/introduction/the-basics.md)
