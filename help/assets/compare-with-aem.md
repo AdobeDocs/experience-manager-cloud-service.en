@@ -1,6 +1,6 @@
 ---
-title: Compare AEM with Assets as a cloud service solution
-description: Differences with and improvements in the new Assets as a cloud service vs the existing AEM offering.
+title: Compare AEM with Assets as a Cloud Service solution
+description: Differences with and improvements in the new Assets as a Cloud Service vs the existing AEM offering.
 cloud: experience-cloud
 solution-title: Experience Cloud
 product: Adobe Experience Manager Cloud Service
@@ -8,11 +8,11 @@ sub-product: Adobe Experience Manager Cloud Service
 
 ---
 
-# Compare cloud service with AEM {#compare-cloud-service-with-aem}
+# Compare Cloud Service with AEM {#compare-cloud-service-with-aem}
 
-Need an overview from PM with change in philosophy. Link back to AEM as a cloud service introduction. Link back to the marketing content on how and why the SaaS offering is better.
+Need an overview from PM with change in philosophy. Link back to AEM as a Cloud Service introduction. Link back to the marketing content on how and why the SaaS offering is better.
 
-Need an overview from PM with 2-3 major differences in how digital assets are managed in cloud service.
+Need an overview from PM with 2-3 major differences in how digital assets are managed in Cloud Service.
 
 Provide detailed feature parity matrix.
 
