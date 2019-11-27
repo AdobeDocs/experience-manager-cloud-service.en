@@ -19,6 +19,55 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service support
 
 Adobe is providing documentation and procedures (with APIs when available), for the customer privacy administrator or AEM administrator to handle data protection and data privacy requests and help our customers be compliant with these regulations. The procedures documented will allow customers to execute the regulatory requests manually or by calling into APIs, where available, from an external portal or service. 
 
+## Introduction {#introduction}
+
+Instances of Adobe Experience Manager as a Cloud Service, and the applications that run on them, are owned and operated by our customers.
+
+As a consequence, data protection regulations, such as CCPA, GDPR and others, are largely the responsibility of the customers; as explained below.
+
+As a very brief introduction, these regulations include new rules to be followed by:
+
+* Business Entities (CCPA) or Data Controllers (GDPR) 
+
+and 
+
+* Service Providers (CCPA) or Data Processors (GDPR) 
+
+for data privacy and protection.
+
+The main provisions in such data protection regulations are:
+
+1. Expanded definition of personal data to include all unique IDs; as in directly and indirectly identifiable data.
+
+2. Strengthened consent requirements.
+
+3. Increased focus on deletion rights (Data Erasure).
+
+4. Opt-Out of Sale of Data.
+
+For Adobe Experience Manager as a Cloud Service:
+
+* The instances, and applications that run on them, are owned and operated by our customers. 
+
+  * This effectively means that the customer manages the regulatory roles, including Business and Service Provider, Data Controller, and Data Processor, amongst others. 
+
+  * The Adobe privacy service will not be part of the workflow for AEM, as illustrated in the diagram below. 
+
+* AEM provides documentation and procedures for the customer's Privacy Administrator and/or AEM Administrator to execute the Privacy regulation requests; either manually or through APIs, when available.
+
+* No new service or UI has been added.
+
+  * Instead procedures and APIs are documented for use by the customer UIs/portals that handle privacy regulation requests.
+
+* AEM will not include any out-of-the-box tooling to support the privacy requests workflow. 
+
+  * Adobe will provide documentation and procedures for the customer's Privacy Administrator and/or AEM Administrator, enabling them to manually execute requests related to the privacy regulations.
+
+Adobe is providing procedures for handling privacy requests related to Access, Delete and Opt-Out for Adobe Experience Manager as a Cloud Service. In some cases, there are APIs available that can be called from a customer developed portal or scripts to help with automation.
+
+![Data Protection and Privacy](assets/data-protection-and-privacy-01.png)
+
+<!--
 ## General Data Protection Regulation {#general-data-protection-regulation}
 
 The European Union's General Data Protection Regulation on data privacy rights took effect as of May 2018:
@@ -68,13 +117,15 @@ The following diagram illustrates what a CCPA request workflow might look like:
 
 ![ccpa-01](assets/ccpa-01.png)
 
+-->
+
 ## AEM as a Cloud Service and Regulatory Readiness {#aem-as-a-cloud-service-and-regulatory-readiness}
 
 Please see the sections below for regulatory documentation for product areas of AEM as a Cloud Service.
 
-<!--
 ## AEM Foundation {#aem-foundation}
 
+<!--
 See [Handling GDPR Requests for the AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 -->
 
@@ -84,9 +135,9 @@ See [Handling GDPR Requests for the AEM Foundation](/help/sites-administering/ha
 See [Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 -->
 
-<!--
 ## AEM Sites {#aem-sites}
 
+<!--
 See [AEM Sites - GDPR Readiness.](/help/sites-administering/gdpr-compliance-sites.md)
 -->
 
@@ -120,11 +171,12 @@ AEM Communities bestows upon the data subjects right to their data portability, 
 Additionally, AEM Communities offers privacy by design owing to its Bulk Moderation console, which allows privileged members to find and delete the contributions and details of the users. The Members management console enables limiting to the point of banning a contributor. Moreover, it authorizes the data subjects to delete the contributions authored by them.
 -->
 
-<!--
 ## AEM Forms {#aem-forms}
+
 
 AEM Forms includes components and workflows that capture, process, and store data to orchestrate business processes and complete digital transactions. Different components use different data stores and allow integration with custom data stores as well. The following documentation explains procedures and guidelines for accessing and handling user data to support GDPR workflows for a component.
 
+<!--
 * [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
 * [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integration with Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
