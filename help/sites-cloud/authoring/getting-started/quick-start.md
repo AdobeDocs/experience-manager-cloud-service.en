@@ -10,42 +10,40 @@ content-type: reference
 
 # Quick Start Guide to Authoring Pages{#quick-guide-to-authoring-pages}
 
-These procedures are intended as a quick guide (high-level) to the key actions of authoring page content in AEM.
+This document is intended as a high-level quick start guide for the key page authoring actions in AEM. This document:
 
-They:
-
-* Are not intended as comprehensive coverage.
-* Provide links to the detailed documentation.
+* Is not intended as comprehensive coverage.
+* Provides links to the detailed documentation.
 
 For full details about authoring with AEM see:
 
-* [Basic Handling](basic-handling.md)
 * [Concepts of Authoring](concepts.md)
+* [Basic Handling](basic-handling.md)
 
 ## A Few Quick Hints {#a-few-quick-hints}
 
-Before giving the overview of specifics, here is a small collection of general tips and hints that are worth bearing in mind.
+Before beginning the quick start guide, here is a small collection of general tips and hints that you should bear in mind, divided between areas of the authoring system.
 
-### Sites Console {#sites-console}
+### In the Sites Console {#sites-console}
 
-* **Create**
+* Create Button
 
   * This button is available in many consoles - the options presented are context sensitive so can vary according to the scenario.
 
-* Re-ordering pages in a folder
+* Re-ordering Pages
 
   * This can be done in [List View](/help/sites-authoring/basic-handling.md#list-view). The changes will be applied and be visible in other views.
 
-#### Page Authoring {#page-authoring}
+### Page Authoring {#page-authoring}
 
 * Navigating Links
 
-  * ***Links are not available for navigation*** when you are in **Edit** mode. To navigate with links you need to [preview the page](/help/sites-authoring/editing-content.md#previewing-pages) using either:
+  * **Links are not available for navigation** when you are in **Edit** mode. To navigate with links you need to [preview the page](/help/sites-authoring/editing-content.md#previewing-pages) using either:
 
     * [Preview Mode](/help/sites-authoring/editing-content.md#preview-mode)
     * [View as Published](/help/sites-authoring/editing-content.md#view-as-published)
 
-* Versions are not started/created from the page editor; this is now done from the Sites console (via either **Create** or [Timeline](/help/sites-authoring/basic-handling.md#timeline) for a selected resource).
+* Versions are not started/created from the page editor. This is now done from the **Sites** console (via either **Create** or [Timeline](/help/sites-authoring/basic-handling.md#timeline) for a selected resource).
 
 >[!NOTE]
 >
@@ -62,15 +60,15 @@ There are various aspects to finding a page; you can navigate and/or search:
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
-   ![screen_shot_2018-03-21at160214](/help/sites-cloud/authoring/assets/views.png)
+   ![View selection drop-down](/help/sites-cloud/authoring/assets/views.png)
 
 1. Navigate up the tree using [the breadcrumb in the header](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), which allows you to return to the selected location:
 
-   ![qgtap-01](/help/sites-cloud/authoring/assets/breadcrumb.png)
+   ![Breadcrumb dropdown](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
 1. You can also [Search](/help/sites-authoring/search.md) for a page. You can select your page from the results shown.
 
-   ![qgtap-03](/help/sites-cloud/authoring/assets/search.png)
+   ![Search field](/help/sites-cloud/authoring/assets/search.png)
 
 ### Creating a New Page {#creating-a-new-page}
 
@@ -79,7 +77,7 @@ To [create a new page](/help/sites-authoring/managing-pages.md#creating-a-new-pa
 1. [Navigate to the location](#finding-your-page) where you want to create the new page.
 1. Use the **Create** icon and then select **Page** from the list:
 
-   ![qgtap-02](/help/sites-cloud/authoring/assets/create.png)
+   ![Create button](/help/sites-cloud/authoring/assets/create.png)
 
 1. This opens the wizard that will guide you through collecting the information needed when [creating your new page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Follow the on screen instructions.
 
@@ -99,12 +97,12 @@ How to select a page depends on which view you are using in the console:
 
 1. Card View:
 
-    * Enter selection mode by [selecting the required resource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) with:
+    * Enter selection mode by [selecting the required resource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources). How you do this depends on your device:
 
-        * Mobile device: tap-and-hold
-        * Desktop: the [quick action](/help/sites-authoring/basic-handling.md#quick-actions) - tick icon:
+        * On a mobile device: tap-and-hold the card
+        * On a desktop device: use the [quick action](/help/sites-authoring/basic-handling.md#quick-actions) represented by the tick icon:
 
-   ![screen_shot_2018-03-21at160503](/help/sites-cloud/authoring/assets/card.png)
+   ![Example card](/help/sites-cloud/authoring/assets/card.png)
 
     * The card will be overlaid with a tick to show that the page has been selected.
 
@@ -117,9 +115,9 @@ How to select a page depends on which view you are using in the console:
 [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions) are available:
 
 1. [Navigate to the page](#finding-your-page) you want to take action on.
-1. Hover your mouse pointer over the card that represents your required resource; the quick actions will be shown:
+1. Hover your mouse pointer over the card that represents your required resource. The quick actions will be shown:
 
-   ![screen_shot_2018-03-21at160503-1](/help/sites-cloud/authoring/assets/card-actions.png)
+   ![Card actions](/help/sites-cloud/authoring/assets/card-actions.png)
 
 ### Editing Your Page Content {#editing-your-page-content}
 
@@ -128,24 +126,24 @@ To edit your page:
 1. [Navigate to the page](#finding-your-page) you want to edit.
 1. [Open your page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) using the Edit (pencil) icon:
 
-   ![screen_shot_2018-03-21at160607](/help/sites-cloud/authoring/assets/edit.png)
+   ![Edit button](/help/sites-cloud/authoring/assets/edit.png)
 
    This can be accessed from either:
 
-    * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
+    * [Quick Actions (card view/desktop only)](#quick-actions-card-view-desktop-only) for the appropriate resource.
     * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction).
 
 1. When the editor opens you can:
 
-    * [Add a new compenent to your page](/help/sites-authoring/editing-content.md#inserting-a-component) by:
+    * [Add a new component to your page](/help/sites-authoring/editing-content.md#inserting-a-component) by:
 
-        * opening the side panel
-        * selecting the components tab (the [components browser](/help/sites-authoring/author-environment-tools.md#components-browser))
-        * dragging the required component onto your page.
+        * Opening the side panel
+        * Selecting the components tab (the [components browser](/help/sites-authoring/author-environment-tools.md#components-browser))
+        * Dragging the required component onto your page.
 
       The side panel can be opened (and closed) with:
 
-        ![](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+        ![Side panel toggle button](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
     * [Edit the content of an existing component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) on the page:
 
@@ -153,7 +151,7 @@ To edit your page:
         * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions will be shown (for some components, this will be a limited selection).
         * To see all actions available enter full-screen mode using:
 
-        ![](/help/sites-cloud/authoring/assets/full-screen.png)
+        ![Full screen button](/help/sites-cloud/authoring/assets/full-screen.png)
 
     * [Configure the properties of an existing component](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -180,7 +178,7 @@ To edit your page:
 
         * Select the **Annotate** mode (speech bubble icon). Add annotations using the **Add annotation** (plus) icon. Exit annotation mode using the X at top right.
 
-        ![](/help/sites-cloud/authoring/assets/annotations.png)
+        ![Annotations button](/help/sites-cloud/authoring/assets/annotations.png)
 
     * [Preview a page](/help/sites-authoring/editing-content.md#preview-mode) (to see how it will appear in the publish environment)
 
@@ -204,7 +202,7 @@ There are two (main) methods of [editing page properties](/help/sites-authoring/
         * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
         * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction).
 
-        ![](/help/sites-cloud/authoring/assets/properties.png)
+        ![Properties button](/help/sites-cloud/authoring/assets/properties.png)
 
     1. The page properties will be shown. You can make updates as required, then use Save to persist these
 
@@ -213,7 +211,7 @@ There are two (main) methods of [editing page properties](/help/sites-authoring/
     1. Open the **Page Information** menu.
     1. Select **Open Properties** to open the dialog for editing the properties.
 
-        ![](/help/sites-cloud/authoring/assets/page-information.png)
+        ![Page Information button](/help/sites-cloud/authoring/assets/page-information.png)
 
 ### Publishing Your Page (or Unpublishing) {#publishing-your-page-or-unpublishing}
 
@@ -224,21 +222,21 @@ There are two main methods of [publishing your page](/help/sites-authoring/publi
     1. [Navigate to the page](#finding-your-page) you want to publish.
     1. Select the **Quick Publish** icon from either:
 
-        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
+        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the appropriate resource.
         * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction) (also gives access to [Publish Later](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-        ![](/help/sites-cloud/authoring/assets/quick-publish.png)
+        ![Quick Publish button](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 * When [editing your page](#editing-your-page-content):
 
     1. Open the **Page Information** menu.
     1. Select **Publish Page**.
 
-        ![screen_shot_2018-03-21at161026](/help/sites-cloud/authoring/assets/publish-page.png)
+        ![Publish Page option](/help/sites-cloud/authoring/assets/publish-page.png)
 
 * Unpublishing a page from the console can only be done via the **Manage Publication** option, which is only available on the toolbar (not via the quick actions).
 
-    ![](/help/sites-cloud/authoring/assets/manage-publication.png)
+    ![Manage Publication button](/help/sites-cloud/authoring/assets/manage-publication.png)
 
   The **Unpublish Page** option is still available via the **Page Information** menu in the editor.
 
@@ -282,7 +280,7 @@ These actions can all be triggered by:
 
 For example, the lock icon looks like this:
 
-![](/help/sites-cloud/authoring/assets/lock.png)
+![Lock button](/help/sites-cloud/authoring/assets/lock.png)
 
 ### Accessing Page References {#accessing-page-references}
 
@@ -290,11 +288,11 @@ For example, the lock icon looks like this:
 
 1. Select **References** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
-   ![](/help/sites-cloud/authoring/assets/references.png)
+   ![References view option](/help/sites-cloud/authoring/assets/references.png)
 
    A list of reference types is shown:
 
-   ![](/help/sites-cloud/authoring/assets/references-list.png)
+   ![References view](/help/sites-cloud/authoring/assets/references-list.png)
 
 1. Tap/click on the required type of reference to show more details and (when appropriate) take further actions.
 
@@ -304,11 +302,11 @@ To create a [version](/help/sites-authoring/working-with-page-versions.md) of yo
 
 1. To open the Timeline rail, select **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
-   ![](/help/sites-cloud/authoring/assets/timeline.png)
+   ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
 
 1. Tap/click on the up-arrow at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
 
-   ![](/help/sites-cloud/authoring/assets/timeline-view.png)
+   ![Timeline view](/help/sites-cloud/authoring/assets/timeline-view.png)
 
 1. Select **Save as Version**, then **Create**.
 
@@ -318,7 +316,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
 1. Select **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
-   ![](/help/sites-cloud/authoring/assets/timeline.png)
+   ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
 
    If a version of your page has already been saved, this will be listed in the Timeline.
 
