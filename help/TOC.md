@@ -1,48 +1,41 @@
 ---
 git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service
 cloud: experience-cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adove Experience Manager Cloud Service
+product: Adobe Experience Manager as a Cloud Service
+sub-product: Adobe Experience Manager as a Cloud Service
 index: no
 solution-title: Experience Cloud
-
 ---
 
-# Experience Manager Cloud Service Help {#using}
+# Experience Manager as a Cloud Service Help {#using}
 
 + Overview {#overview}
-  + [Release Notes](overview/release-notes/release-notes.md)
-+ Core Concepts of AEM Cloud Service {#core-concepts}
-  + [Developing for AEM Cloud Service](sites/developing/introduction/the-basics.md)
-    + [AEM Project Package Structure](sites/developing/introduction/aem-project-content-package-structure.md)
-    + [Develop a Repository Structure Package](sites/developing/introduction/repository-structure-package.md)
-  + [Deploying to AEM Cloud Service](sites/deploying/introduction.md)
-  + [Debugging on AEM Cloud Service](sites/deploying/debugging.md)
-  + Operations and Maintenance on AEM Cloud Service {#operations}
-    + [Search and Indexing](sites/operations/indexing.md)
-    + [Maintenance Tasks](sites/operations/maintenance.md)
-    + [Backup and Restore](sites/operations/backup.md)
-  + Sites in the Cloud {#cloud-sites}
-    + [Features of AEM Sites in the Cloud](sites/cloud/sites-cloud-changes.md)
-    + [Notable Changes to AEM Sites](sites/cloud/sites-cloud-changes.md)
-    + [WKND Reference Site](sites/cloud/sites-cloud-changes.md)
-    + [Integration Configuration Changes](sites/cloud/sites-cloud-changes.md)
-  + Assets in the Cloud {#cloud-assets}
-    + [Features of AEM Assets in the Cloud](assets/cloud/assets-cloud-changes.md)
-    + [Assets Compute Service](assets/cloud/assets-cloud-changes.md)
-    + [Dynamic Media](assets/cloud/assets-cloud-changes.md)
-    + [Content Migration](assets/cloud/assets-cloud-changes.md)
-  + AEM Forms in the Cloud {#cloud-forms}
-    + [Forms Converstion at Scale](forms/cloud/forms-cloud-changes.md)
+  + [Introduction to AEM as a Cloud Service](overview/introduction.md)
+  + [Terminology - New for the Cloud](overview/terminology.md)
++ Release Notes {#release-notes}
+  + [What's New](release-notes/what-is-new.md)
+  + [Release Notes](release-notes/release-notes.md)
++ Core Concepts of AEM as a Cloud Service {#core-concepts}
+  + [An Introduction to the Architecture of AEM as a Cloud Service](core-concepts/architecture.md)
 + Onboarding {#onboarding}
-  + Requirements {#requirements}
-  + Sequence of Events {#sequence}
-  + What to Expect from Adobe {#adobe}
-  + What Adobe Expects from You {#customer}
-+ Using AEM in the Cloud
-  + Getting Started {#getting-started}
-  + Cloud Manager {#cloud-manager}
-  + AEM Sites {#sites}
-  + AEM Assets {#assets}
-  + AEM Forms {#forms}
-  
+  + [Data Privacy Regulations](onboarding/data-protection-and-privacy.md)
++ AEM Sites in the Cloud {#cloud-sites}
+  + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
++ AEM Assets in the Cloud {#cloud-assets}
+  +
++ Implementing for AEM as a Cloud Service {#implementing}
+  + Developing for AEM as a Cloud Service {#developing}
+    + [AEM Project Package Structure](implementing/developing/introduction/aem-project-content-package-structure.md)
+    + [Develop a Repository Structure Package](implementing/developing/introduction/repository-structure-package.md)
+    + [AEM as a Cloud Service Development Guidelines](implementing/developing/introduction/development-guidelines.md)
+  + Deploying to AEM as a Cloud Service {#deploying}
+    + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
+  + Dispatcher in the Cloud {#dispatcher-cloud}
+    + [Dispatcher in the Cloud](implementing/dispatcher/dispatcher-cloud.md)
++ Implementing Connectors for AEM as a Cloud Service {#connectors}
+  +
++ Operations and Maintenance on AEM as a Cloud Service {#operations}
+  + [Content Replication Service](operations/replication.md)
+  + [Content Search and Indexing](operations/indexing.md)
+  + [Maintenance Tasks](operations/maintenance.md)
+  + [Backup and Restore](operations/backup.md)
