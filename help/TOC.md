@@ -18,7 +18,10 @@ solution-title: Experience Cloud
 + Core Concepts of AEM as a Cloud Service {#core-concepts}
   + [An Introduction to the Architecture of AEM as a Cloud Service](core-concepts/architecture.md)
 + Onboarding {#onboarding}
-  + [Data Privacy Regulations](onboarding/data-protection-and-privacy.md)
+  + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}
+    + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-protection-and-privacy.md)
+    + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](onboarding/data-protection-and-privacy-foundation.md)
+    + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](onboarding/data-protection-and-privacy-sites.md)
 + AEM Sites in the Cloud {#cloud-sites}
   + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
 + AEM Assets in the Cloud {#cloud-assets}

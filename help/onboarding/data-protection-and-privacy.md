@@ -1,6 +1,6 @@
 ---
 title: Data Protection and Data Privacy Regulations - AEM Readiness
-seo-title: AEM Readiness for Data Protection and Data Privacy Regulations - GDPR, CCPA
+seo-title: AEM Readiness for Data Protection and Data Privacy Regulations; such as GDPR, CCPA, etc
 description: Learn about Adobe Experience Manager as a Cloud Service support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 seo-description: Learn about Adobe Experience Manager as a Cloud Service support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 ---
@@ -25,17 +25,13 @@ Instances of Adobe Experience Manager as a Cloud Service, and the applications t
 
 As a consequence, data protection regulations, such as CCPA, GDPR and others, are largely the responsibility of the customers; as explained below.
 
-As a very brief introduction, these regulations include new rules to be followed by:
+As a very brief introduction, the regulations for data privacy and protection include new rules to be followed by the roles of:
 
-* Business Entities (CCPA) or Data Controllers (GDPR) 
+* Business Entities (CCPA) and/or Data Controllers (GDPR) 
 
-and 
+* Service Providers (CCPA) and/or Data Processors (GDPR) 
 
-* Service Providers (CCPA) or Data Processors (GDPR) 
-
-for data privacy and protection.
-
-The main provisions in such data protection regulations are:
+The main provisions in such regulations are:
 
 1. Expanded definition of personal data to include all unique IDs; as in directly and indirectly identifiable data.
 
@@ -125,9 +121,7 @@ Please see the sections below for regulatory documentation for product areas of 
 
 ## AEM Foundation {#aem-foundation}
 
-<!--
-See [Handling GDPR Requests for the AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
--->
+See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-protection-and-privacy-foundation.md).
 
 <!--
 ## AEM Opting Into Aggregate Usage Statistics Collection {#aem-opting-into-aggregate-usage-statistics-collection}
@@ -137,9 +131,7 @@ See [Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggreg
 
 ## AEM Sites {#aem-sites}
 
-<!--
-See [AEM Sites - GDPR Readiness.](/help/sites-administering/gdpr-compliance-sites.md)
--->
+See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-protection-and-privacy-sites.md)
 
 <!--
 ## AEM Commerce {#aem-commerce}
