@@ -27,9 +27,9 @@ As a consequence, data protection regulations, such as CCPA, GDPR and others, ar
 
 As a very brief introduction, the regulations for data privacy and protection include new rules to be followed by the roles of:
 
-  * Business Entities (CCPA) and/or Data Controllers (GDPR) 
+* Business Entities (CCPA) and/or Data Controllers (GDPR) 
 
-  * Service Providers (CCPA) and/or Data Processors (GDPR) 
+* Service Providers (CCPA) and/or Data Processors (GDPR) 
 
 The main provisions in such regulations are:
 
