@@ -17,7 +17,7 @@ user-guide-title: Authoring User Guide
   + [Your Inbox](getting-started/inbox.md)
   + [Keyboard Shortcuts for Consoles](getting-started/keyboard-shortcuts.md)
 + Authoring {#authoring}
-    + [Authoring Environment and Tools](author-environment-tools.md)
+    + [Environment and Tools](fundamentals/environment-tools.md)
     + [Annotations when Editing a Page](annotations.md)
     + [Creating and Organizing Pages](managing-pages.md)
     + [Editing Page Content](editing-content.md)
