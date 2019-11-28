@@ -9,7 +9,7 @@ topic-tags: introduction
 content-type: reference
 ---
 
-# Configuring Your Account Environment{#configuring-your-account-environment}
+# Configuring Your Account Environment {#configuring-your-account-environment}
 
 AEM provides you with the capability to configure your account and certain aspects of the author environment.
 

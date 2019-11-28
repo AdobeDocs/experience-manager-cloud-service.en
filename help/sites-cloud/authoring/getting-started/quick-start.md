@@ -8,7 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 ---
 
-# Quick Start Guide to Authoring Pages{#quick-guide-to-authoring-pages}
+# Quick Start Guide to Authoring Pages {#quick-guide-to-authoring-pages}
 
 This document is intended as a high-level quick start guide for the key page authoring actions in AEM. This document:
 
