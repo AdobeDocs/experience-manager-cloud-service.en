@@ -28,11 +28,7 @@ Immediately after logging in you arrive on the [Navigation panel](#navigation-pa
 
 ![Navigation panel](/help/sites-cloud/authoring/assets/navigation.png)
 
->[!NOTE]
->
->To get a good understanding of the basic use of AEM, this document is based on the **Sites** console.
->
->Click or tap on **Sites** to get started.
+To get a good understanding of the basic use of AEM, this document is based on the **Sites** console. Click or tap on **Sites** to get started.
 
 ## Product Navigation {#product-navigation}
 
@@ -52,13 +48,9 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 ![Navigation panel top bar](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
->[!NOTE]
->
->When you first login you presented with the **Navigation** panel.
-
 Global navigation has two panels, represented by icons at the left-margin of the screen:
 
-* **[Navigation](#navigation-panel)** - Represented by a compass
+* **[Navigation](#navigation-panel)** - Represented by a compass and the default panel when you log in to AEM
 * **[Tools](#tools-panel)** - Represented by a hammer
 
 The options available on these panels are described below.
@@ -129,7 +121,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Rail selector button](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-  The options presented depend on your current console. For example, in **Sites** you can select content only (the default), the timeline, references or filter side panel.
+  The options presented depend on your current console. For example, in **Sites** you can select content only (the default), the timeline, references, or filter side panel.
 
   ![Example of rail selector](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
@@ -137,7 +129,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Breadcrumbs in navigation bar](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-  Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs allow you to navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
+  Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs allow you to navigate within a specific console. In the **Sites** console, you can navigate through the levels of your website.
 
   Simply click on the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click on an entry to jump to that location.
 
@@ -161,7 +153,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Views button](/help/sites-cloud/authoring/assets/views-button.png)
 
-  You can switch between column view, card view, and list view; in the list view it also shows the view settings.
+  You can switch between column view, card view, and list view. In the list view it also shows the view settings.
 
   ![Views](/help/sites-cloud/authoring/assets/view.png)
 
@@ -173,17 +165,19 @@ There are various help resources available:
 
   Depending on your location the **Help** icon will open the appropriate resources:
 
-  ![bh-10](assets/bh-10.png)
+  ![Help icon](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **Navigation**
 
   The first time you navigate the system, [a series of slides introduce AEM navigation](/help/sites-authoring/basic-handling.md#product-navigation).
 
+  ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
+
 * **Page Editor**
 
   The first time you edit a page a series of slides introduce the page editor.
 
-  ![bh-11](assets/bh-11.png)
+  ![Editor tutorial](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
   Navigate this overview as you would the [product navigation overview](/help/sites-authoring/basic-handling.md#product-navigation) when first accessing any console.
 
@@ -193,11 +187,8 @@ There are various help resources available:
 
   From the **Tools** console you can also access the external **Resources**:
 
-    * **Documentation**
-      View the Web Experience Management documentation
-
-    * **Developer Resources**
-      Developer resources and downloads
+  * **Documentation** - View the Web Experience Management documentation
+  * **Developer Resources** - Developer resources and downloads
 
   >[!NOTE]
   >
@@ -205,17 +196,16 @@ There are various help resources available:
   >
   >For an overview of all keyboard shortcuts see the following documentation:
   >
-  >    * [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-  >    * [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
-  >
+  >* [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  >* [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 ## Actions Toolbar {#actions-toolbar}
 
 Whenever a resource is selected (e.g. a page or an asset), various actions are indicated by icons with explanatory text in the toolbar. These actions are dependent on:
 
-* The current console.
-* The current context.
-* Whether you are in [selection mode](#navigatingandselectionmode).
+* The current console
+* The current context
+* Whether you are in [selection mode](#navigatingandselectionmode)
 
 The action available in the toolbar change to reflect the actions you can take on the specific items selected.
 
@@ -223,7 +213,7 @@ How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-
 
 Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
 
-![bh-12](assets/bh-12.png)
+![Additional options](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
 >
@@ -235,7 +225,7 @@ In [Card View](#cardviewquickactions) certain actions are available as quick act
 
 The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
-![bh-13](assets/bh-13.png)
+![Additional options](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 ## Viewing and Selecting Resources {#viewing-and-selecting-resources}
 
@@ -245,7 +235,6 @@ You can view, navigate through, and select (for further action) your resources w
 
 * [Column View](#column-view)
 * [Card View](#card-view)
-
 * [List View](#list-view)
 
 >[!NOTE]
@@ -256,84 +245,40 @@ You can view, navigate through, and select (for further action) your resources w
 
 Selecting a specific resource is dependent on a combination of the view and the device:
 
-<table>
- <tbody>
-  <tr>
-   <td> </td>
-   <td>Select</td>
-   <td>Unselect</td>
-  </tr>
-  <tr>
-   <td>Column View<br /> </td>
-   <td>
-    <ul>
-     <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Card View<br /> </td>
-   <td>
-    <ul>
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
-     <li>Mobile device:<br /> Tap-and-hold the card</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>Desktop:<br /> Click the card</li>
-     <li>Mobile device:<br /> Tap the card</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>List View</td>
-   <td>
-    <ul>
-     <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|View|Select Touch|Select Desktop|Deselect Touch|Deselect Desktop|
+|-|-|-|-|-|
+|Column|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
+|Card|Tap and hold the card|Mouse over then use the check mark quick action|Tap the card|Click the card|
+|List|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
 
 #### Select All {#select-all}
 
 You can select all items in any view by clicking the **Select All** option at the top-right corner of the console.
 
 * In **Card View** all cards are selected.
-* In **List View** all items in the list are seelcted.
+* In **List View** all items in the list are selected.
 * In **Column View** all items in the leftmost column are selected.
 
-![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
+![Select all](/help/sites-cloud/authoring/assets/select-all.png)
 
 #### Deselecting All {#deselecting-all}
 
 In all cases as you select items, the count of the items selected is displayed at the top-right of the toolbar.
 
-You can deselect all items and exit selection mode by either:
+You can deselect all items and exit selection mode by:
 
-* clicking or tapping the **X** next to the count,
+* Clicking or tapping the **X** next to the count
+* Using the **escape** key
 
-* or using **escape**.
+![Deselect all](/help/sites-cloud/authoring/assets/deselect-all.png)
 
-![bh-14](assets/bh-14.png)
-
-In all views, all items can be deslected by tapping escape on the keyboard if you are using a desktop device.
+In all views, all items can be deselected by tapping escape on the keyboard if you are using a desktop device.
 
 #### Selecting Example {#selecting-example}
 
 1. For example in card view:
 
-   ![bh-15](assets/bh-15.png)
+   ![Card view select](/help/sites-cloud/authoring/assets/card-view-select.png)
 
 1. Once you have selected a resource the top header is covered by the [actions toolbar](#actionstoolbar) that provides access to actions currently applicable to the selected resource.
 
@@ -341,7 +286,7 @@ In all views, all items can be deslected by tapping escape on the keyboard if yo
 
 ### Column View {#column-view}
 
-![bh-16](assets/bh-16.png)
+![Column view](/help/sites-cloud/authoring/assets/column-view.png)
 
 The column view allows for a visual navigation of a content tree through a series of cascading columns. This view allows you to visualize and traverse the tree structure of your website.
 
@@ -349,85 +294,82 @@ Selecting a resource in the leftmost column will display the child resources in 
 
 * You can navigate up and down in the tree by tapping or clicking on the resource name or the chevron to the right of the resource name.
 
-    * The resource name and chevron will be highlighted when tapped or clicked.
+  * The resource name and chevron will be highlighted when tapped or clicked.
 
-  ![bh-17](assets/bh-17.png)
+    ![Column view select](/help/sites-cloud/authoring/assets/navigating-tree.png)
 
-    * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-    * If you tap or click on a resource name that has no children, its details will be displayed in the final column.
+  * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
+  * If you tap or click on a resource name that has no children, its details will be displayed in the final column.
 
 * Tapping or clicking on the thumbnail selects the resource.
 
-    * When selected, a checkmark will be overlaid on the thumbnail and the resource name will be highlighted as well.
-    * The details of the selected resource will be shown in the final column.
-    * The action toolbar will become available.
+  * When selected, a check mark will be overlaid on the thumbnail and the resource name will be highlighted as well.
+  * The details of the selected resource will be shown in the final column.
+  * The action toolbar will become available.
 
-  ![bh-18](assets/bh-18.png)
+    ![Selecting in column view](/help/sites-cloud/authoring/assets/selecting-column.png)
 
   When a page is selected in column view, the selected page is displayed in the final colum along with the following details:
 
-    * Page title
-    * Page name (part of the page's URL)
-    * Template the page is based on
-    * Modification details
-    * Page language
-    * Publication details
+  * Page title
+  * Page name (part of the page's URL)
+  * Template the page is based on
+  * Modification details
+  * Page language
+  * Publication details
 
 ### Card View {#card-view}
 
-![bh-15-1](assets/bh-15-1.png)
+![Card view](/help/sites-cloud/authoring/assets/card-view.png)
 
 * Card view displays information cards for each item at the current level. These provide information such as:
 
-    * A visual representation of the page content.
-    * The page title.
-    * Important dates (such as last edited, last published).
-    * If the page is locked, hidden or part of a livecopy.
-    * If appropriate, when you are required to take action as part of a workflow.
-
-        * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-authoring/inbox.md).
+  * A visual representation of the page content
+  * The page title
+  * Important dates (such as last edited, last published)
+  * If the page is locked, hidden or part of a livecopy
+  * If appropriate, when you are required to take action as part of a workflow
+    * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-authoring/inbox.md).
 
 * [Quick actions](#quick-actions) are also available in this view such as selection and common actions such as edit.
 
-  ![bh-13-1](assets/bh-13-1.png)
+  ![Quick actions](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 * You can navigate down the tree by tapping/clicking on cards (taking care to avoid the quick actions) or up again by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).
 
 ### List View {#list-view}
 
-![bh-19](assets/bh-19.png)
+![List view](/help/sites-cloud/authoring/assets/list-view.png)
 
 * The list view lists information for each resource at the current level.
 * You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).
-
 * To easily select all items in the list, use the checkbox at the top-left of the list.
 
-  ![bh-20](assets/bh-20.png)
+  ![List view select all](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
-    * When all items in the list are selected, this checkbox appears checked.
+  * When all items in the list are selected, this checkbox appears checked.
 
-        * Click or tap the checkbox to deselect all.
+    * Click or tap the checkbox to deselect all.
 
-    * When only some items are selected, it appears with a minus sign.
+  * When only some items are selected, it appears with a minus sign.
 
-        * Click or tap the checkbox to select all.
-        * Click or tap the checkbox again to deselect all.
+    * Click or tap the checkbox to select all.
+    * Click or tap the checkbox again to deselect all.
 
-* Select the columns to be shown using **View Settings **option located under the Views button. The following columns are available for display:
+* Select the columns to be shown using **View Settings** option located under the Views button. The following columns are available for display:
 
-    * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
-    * **Modified** - Last modified date and last modified by user
-    * **Published** - Publication status
-    * **Template** - Template on which the page is based
-    * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
+  * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
+  * **Modified** - Last modified date and last modified by user
+  * **Published** - Publication status
+  * **Template** - Template on which the page is based
+  * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
+  * **Page analytics**
+  * **Unique visitors**
+  * **Time on page**
 
-    * **Page analytics**
-    * **Unique visitors**
-    * **Time on page**
+    ![Select columns](/help/sites-cloud/authoring/assets/select-columns.png)
 
-  ![bh-21](assets/bh-21.png)
-
-  By default the **Name** column is shown, which makes up part of the URL for the page. In some cases the author might need to access pages that are in a different language and seeing the name of the page (which usually is unchanging) can be of great help if the author does not know the language of the page.
+  By default the **Name** column is shown, which makes up part of the URL for the page. In some cases the author might need to access pages that are in a different language and seeing the name of the page (which is usually unchanging) can be of great help if the author does not know the language of the page.
 
 * Change the order of items using the dotted vertical bar at the far right of each item in the list.
 
@@ -435,25 +377,25 @@ Selecting a resource in the leftmost column will display the child resources in 
   >
   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
 
-  ![bh-22](assets/bh-22.png)
+  ![Column order](/help/sites-cloud/authoring/assets/column-order.png)
 
   Click or tap on the vertical selection bar and drag the item to a new position in the list.
 
-  ![bh-23](assets/bh-23.png)
+  ![Order list](/help/sites-cloud/authoring/assets/order-list.png)
 
 * You can display Analytics Data by showing the appropriate columns using the **View Settings** dialogue.
 
   You can filter Analytics Data for the past 30, 90, or 365 days using the filter options on the right side of the header.
 
-  ![bh-24](assets/bh-24.png)
+  ![Analytics time selection](/help/sites-cloud/authoring/assets/analytics-time.png)
 
 ## Rail Selector {#rail-selector}
 
 The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
 
-![bh-25](assets/bh-25.png)
+![Rail selector expanded](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-For example, in Sites you can select content only (the default), content tree, the timeline, references, or filter side panel.
+For example, in **Sites** you can select content only (the default), content tree, the timeline, references, or filter side panel.
 
 If content only is selected, then only the rail icon appears. When any other option is selected, the option name appears next to the rail icon.
 
@@ -467,7 +409,7 @@ The content tree can be used to quickly navigate the site hierarchy within the s
 
 Using the content tree side panel in conjunction with a list view or cards view, users can easily see the hierarchical structure of the project and navigate easily across the content structure with the content tree side-panel, as well as view detailed page information in the list view.
 
-![bh-26](assets/bh-26.png)
+![Content tree](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
 >
@@ -477,35 +419,35 @@ Using the content tree side panel in conjunction with a list view or cards view,
 
 ### Timeline {#timeline}
 
-The timeline can be used to view and/or initiate events that have occured on the selected resource. To open the timeline column use the rail selector:
+The timeline can be used to view and/or initiate events that have occurred on the selected resource. To open the timeline column use the rail selector:
+
+![Timeline tree](/help/sites-cloud/authoring/assets/timeline.png)
 
 The timeline column allows you to:
 
 * [View various events](#timelineviewevents) related to a selected item.
 
-    * The event types can be selected from the drop-down list:
+  * The event types can be selected from the drop-down list:
 
-        * [Comments](#timelineaddingandviewingcomments)
-        * Annotations
-        * Activities
-        * [Launches](/help/sites-authoring/launches.md)
-        * [Versions](/help/sites-authoring/working-with-page-versions.md)
-        * [Workflows](/help/sites-authoring/workflows-applying.md)
-
-            * with the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these
-
-        * and Show All
+    * [Comments](#timelineaddingandviewingcomments)
+    * Annotations
+    * Activities
+    * [Launches](/help/sites-authoring/launches.md)
+    * [Versions](/help/sites-authoring/working-with-page-versions.md)
+    * [Workflows](/help/sites-authoring/workflows-applying.md)
+      * With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these
+    * Show All
 
 * [Add/view comments](#timelineaddingandviewingcomments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
 
 * Specific consoles have additional functionality. For example, in the Sites console you can:
 
-    * [Save a version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
-    * [Start a workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+  * [Save a version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui)
+  * [Start a workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail)
 
 These options accessible via the chevron next to the **Comment** field.
 
-![bh-27](assets/bh-27.png)
+![Comment field](/help/sites-cloud/authoring/assets/comments.png)
 
 ### References {#references}
 
@@ -516,14 +458,13 @@ These options accessible via the chevron next to the **Comment** field.
 * [Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Content references:
 
-    * links from other pages to the selected page
-    * content borrowed from and/or lent to the selected page by the Reference component
+  * links from other pages to the selected page
+  * content borrowed from and/or lent to the selected page by the Reference component
 
-![bh-28](assets/bh-28.png)
+![References example](/help/sites-cloud/authoring/assets/references-example.png)
 
 ### Filter {#filter}
 
 This will open a panel similar to [search](/help/sites-authoring/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
 
-![bh-29](assets/bh-29.png)
-
+![Filter example](/help/sites-cloud/authoring/assets/filter.png)
