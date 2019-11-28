@@ -256,11 +256,11 @@ The Page Information (equalizer icon) opens a menu that also provides details ab
 * [Lock Page](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publish Page](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [Unpublish Page](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
-* [Edit Template](/help/sites-authoring/templates.md); when the page is based on an [editable template](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Edit Template](/help/sites-authoring/templates.md)
 * [View as Published](/help/sites-authoring/editing-content.md#view-as-published)
 * [View in Admin](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-authoring/basic-handling.md#accessing-help)
-* [Promote Launch](/help/sites-authoring/launches-promoting.md) if the page is a launch.
+* [Promote Launch](/help/sites-authoring/launches-promoting.md) (only if the page is a launch)
 
 In addition, **Page Information** can provide access to analytics and recommendations, when appropriate.
 
@@ -270,8 +270,6 @@ There are various modes when editing a page allowing for different actions:
 
 * [Edit](/help/sites-authoring/editing-content.md) - the mode to use when editing the page content.
 * [Layout](/help/sites-authoring/responsive-layout.md) - allows you to create and edit your responsive layout dependent on device (if the page is based on a layout container)
-* [Developer](/help/sites-developing/developer-mode.md) - allows you to perform various actions (requires privileges). These include inspecting the technical details of a page and its components.
-* [Design](/help/sites-authoring/default-components-designmode.md) - allows you to enable/disable components for use on a page and to configure the design of the component (if the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates)).
 * [Targeting](/help/sites-authoring/content-targeting-touch.md) - increase content relevance through targeting and measuring across all channels.
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - allows you to view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-authoring/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
