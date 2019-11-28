@@ -23,7 +23,7 @@ Adobe is providing documentation and procedures (with APIs when available), for 
 
 Instances of Adobe Experience Manager as a Cloud Service, and the applications that run on them, are owned and operated by our customers.
 
-As a consequence, data protection regulations, such as CCPA, GDPR and others, are largely the responsibility of the customers; as explained below.
+As a consequence, data protection regulations, such as GDPR, CCPA, and others, are largely the responsibility of the customers.
 
 As a very brief introduction, the regulations for data privacy and protection include new rules to be followed by the roles of:
 
@@ -43,7 +43,7 @@ The main provisions in such regulations are:
 
 For Adobe Experience Manager as a Cloud Service:
 
-* The instances, and applications that run on them, are owned and operated by our customers. 
+* The instances, and applications that run on them, are owned and operated by the customer. 
 
   * This effectively means that the customer manages the regulatory roles, including Business and Service Provider, Data Controller, and Data Processor, amongst others. 
 
@@ -163,12 +163,11 @@ AEM Communities bestows upon the data subjects right to their data portability, 
 Additionally, AEM Communities offers privacy by design owing to its Bulk Moderation console, which allows privileged members to find and delete the contributions and details of the users. The Members management console enables limiting to the point of banning a contributor. Moreover, it authorizes the data subjects to delete the contributions authored by them.
 -->
 
+<!--
 ## AEM Forms {#aem-forms}
-
 
 AEM Forms includes components and workflows that capture, process, and store data to orchestrate business processes and complete digital transactions. Different components use different data stores and allow integration with custom data stores as well. The following documentation explains procedures and guidelines for accessing and handling user data to support GDPR workflows for a component.
 
-<!--
 * [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
 * [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integration with Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
