@@ -25,7 +25,7 @@ At the AEM Foundation level, the Personal Data that is stored is the User Profil
 
 ### Manual Steps {#manual-steps}
 
-1. Open the User Administration console, by browsing to **[!UICONTROL Settings - Security - Users]** or by browsing directly to `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Open the User Administration console, by browsing to **[!UICONTROL Tools - Security - Users]** or by browsing directly to `https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -33,15 +33,11 @@ At the AEM Foundation level, the Personal Data that is stored is the User Profil
 
 1. Then, search for the user in question by typing the name in the search bar at the top of the page:
 
-<!--
-   ![usersearch](assets/usersearch.png)
--->
+   ![usersearch](assets/dpp-foundation-01.png)
 
 1. Finally, open the user profile by clicking it, then check under the **[!UICONTROL Details]** tab.
 
-<!--
-   ![userprofile_small](assets/userprofile_small.png)
--->
+   ![userprofile_small](assets/dpp-foundation-02.png)
 
 ### HTTP API {#http-api}
 
@@ -55,14 +51,14 @@ curl -u user:password http://localhost:4502/libs/granite/security/search/profile
 
 **Sling API**
 
-*Discovering the user home:*
+**Discovering the user home:**
 
 ```xml
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*Retrieving user data*
+**Retrieving user data:**
 
 Using the node path from the home property of the JSON payload returned from the above command:
 
@@ -79,19 +75,15 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disable User {#disable-user}
 
 1. Open the User Administration console and search for the user in question, as described above.
-1. Hover over the user and click the select icon. The profile will turn grey indicating that it is selected.  
+2. Hover over the user and click the select icon. The profile will turn grey indicating that it is selected.  
 
-1. Press the Disable button in the upper menu to disable the user:
+3. Press the Disable button in the upper menu to disable the user:
 
-<!--
-   ![userdisable](assets/userdisable.png)
--->
+   ![userdisable](assets/dpp-foundation-03.png)
 
-1. Fianlly, confirm the action:
+4. Fianlly, confirm the action:
 
-<!--
-   ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
--->
+   ![image2018-2-6_1-40-58](assets/dpp-foundation-04.png)
 
    The user interface will then indicate that the user has been deactivated by greying out and adding a lock to the profile card:
 
@@ -101,24 +93,24 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Delete User Profile Information {#delete-user-profile-information}
 
-1. Log in to CRXDE Lite, then search for the `[!UICONTROL userId]`: 
+>[!NOTE]
+>
+> For AEM as a Cloud Service there is no manual procedure available from the UI for the deletion of a user profile, as CRXDE is not accessible.
 
 <!--
+1. Log in to CRXDE Lite, then search for the `[!UICONTROL userId]`: 
+
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
--->
 
 1. Open the user node which is located under `[!UICONTROL /home/users]` by default:
 
-<!--
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
--->
 
 1. Delete profile nodes and all their children. There are two formats to the profile nodes, depeding on the AEM version:
 
     1. The default private profile under `[!UICONTROL /profile]` 
     1. `[!UICONTROL /profiles]`, for new profiles created using AEM 6.5.
 
-<!--
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 -->
 
@@ -126,14 +118,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 The following procedures use the `curl` command line tool to illustrate how to disable the user with the **[!UICONTROL cavery]** `userId` and delete her profiles available at the default location.
 
-* *Discovering the user home*
+**Discovering the user home:**
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Disabling the user*
+**Disabling the user:**
 
 Using the node path from the home property of the JSON payload returned from the above command:
 
@@ -141,7 +133,8 @@ Using the node path from the home property of the JSON payload returned from the
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-* *Deleting user profile(s)*
+<!--
+* **Deleting user profile(s)**
 
 Using the node path from the home property of the JSON payload returned from the account discovery command and the known out of the box profile node locations:
 
@@ -152,3 +145,4 @@ curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':ope
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
 ```
+-->
