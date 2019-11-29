@@ -1,6 +1,6 @@
 ---
-title: Page Authoring with Content Fragments
-seo-title: Page Authoring with Content Fragments
+title: Content Fragments
+seo-title: Content Fragments
 description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 contentOwner: Chris Bohnert
@@ -9,7 +9,7 @@ topic-tags: page-authoring
 content-type: reference
 ---
 
-# Page Authoring with Content Fragments {#page-authoring-with-content-fragments}
+# Content Fragments {#content-fragments}
 
 Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments.md).
 
