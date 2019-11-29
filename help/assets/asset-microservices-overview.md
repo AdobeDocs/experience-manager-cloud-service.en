@@ -1,5 +1,5 @@
 ---
-title: Know how Assets Microservices can process your digital assets in the cloud
+title: Know how asset microservices can process your digital assets in the cloud
 description: Process your digital assets using a cloud-native and scalable assets processing Cloud Service.
 cloud: experience-cloud
 solution-title: Experience Cloud
@@ -8,9 +8,9 @@ sub-product: Adobe Experience Manager Cloud Service
 
 ---
 
-# Assets Microservices overview to process assets {#assets-microservices-overview}
+# Asset microservices overview {#asset-microservices-overview}
 
-Benefits of the Assets Microservices:
+Benefits of the asset microservices:
 
 * Scalable architecture that allows for resource-intensive asset processing. No more out of memory exceptions.
 * Efficient indexing and text extractions that does not impact the performance.

@@ -17,7 +17,6 @@ All methods to add assets:
 * Desktop app
 * Asset Link
 
-
 >[!MORELIKETHIS]
 >
 >[Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)

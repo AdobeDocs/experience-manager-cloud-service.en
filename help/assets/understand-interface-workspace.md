@@ -8,7 +8,7 @@ sub-product: Adobe Experience Manager Cloud Service
 
 ---
 
-# Know the Adobe Experience Manager Assets as a Cloud Service user interface {#aem-assets-ui}
+# Know the Adobe Experience Manager Assets as a Cloud Service user interface {#assets-cloud-service-ui}
 
 Overview of the home page experience.
 Parts of the UI that lead to different capabilities accessible from here.

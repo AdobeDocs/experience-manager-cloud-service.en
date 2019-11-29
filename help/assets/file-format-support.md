@@ -10,7 +10,7 @@ sub-product: Adobe Experience Manager Cloud Service
 
 # Assets supported file formats {#supported-file-formats}
 
-The following legend describes the level of support AEM Assets offers for a feature: 
+The following legend describes the level of support for a feature:
 |Support level| Description|
 |---|---|
 | ![available icon](assets/do-not-localize/checkmark_icon.png) | Supported |
@@ -19,51 +19,28 @@ The following legend describes the level of support AEM Assets offers for a feat
 
 ## Adobe formats {#adobe-formats}
 
-|File extension|GIF| JPEG | PNG | TXT | TIFF | XMP | HEI | QLT | WID | WID or HEI |
+|Format|GIF| JPEG | PNG | TXT | TIFF | XMP | Height | Quality | Width | Width or Height |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AI | | | | | | | | | | |
-| COLLAGE | | | | | | | | | | |
-| DN | | | | | | | | | | |
-| IDEAS | | | | | | | | | | |
-| INDD | | | | | | | | | | |
-| INDT | | | | | | | | | | |
-| PDF | | | | | | | | | | |
-| PROTO | | | | | | | | | | |
-| PSB | | | | | | | | | | |
-| PSD | | | | | | | | | | |
-| XD | | | | | | | | | | |
+|Adobe | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| AI | Yes | Yes | Yes | | Yes | Yes | Yes| | Yes | Yes |
+| COLLAGE | | | | | | Yes | | | | |
+| DN | Yes| Yes| Yes | |Yes |Yes | Yes| |Yes | Yes|
+| IDEAS | | | | | | Yes | | | | |
+| INDD | Yes| Yes| Yes| |Yes |Yes | Yes| | Yes| Yes|
+| INDT | | | | | |Yes | | | | |
+| PDF |Yes |Yes |Yes |Yes |Yes |Yes |Yes | | Yes| Yes|
+| PROTO | | | | | | Yes| | | | |
+| PSB | Yes| Yes|Yes | |Yes |Yes | Yes| Yes| Yes|Yes |
+| PSD | Yes| Yes|Yes| |Yes |Yes |Yes |Yes |Yes |Yes |
+| XD | Yes|Yes |Yes | |Yes |Yes |Yes | | Yes| Yes|
 
 ## Audio formats {#audio-formats}
 
-|File extension| | | | | |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+Assets as a Cloud Service supports XMP format in these audio formats: AIF, ASF, M4A, MP3, WAV, and WMA.
 
 ## Camera RAW formats {#camera-raw-formats}
 
-|File extension| | | | | | |
-|---|---|---|---|---|---|---|
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
+
 
 ## Document formats {#document-formats}
 
@@ -146,4 +123,4 @@ The following legend describes the level of support AEM Assets offers for a feat
 
 >[!MORELIKETHIS]
 >
->[Asset processing using Microservices](assets-microservices-overview.md)
+>[Asset processing using microservices](asset-microservices-overview.md)
