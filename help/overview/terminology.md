@@ -21,13 +21,14 @@ eg
 |---|---|
 |AEM as a Cloud Service|The cloud-native way of leveraging the AEM applications|
 |AEM Sites as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Sites application.|
-|AEM Assets as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Assets application. See the [overview and what's new](/help/assets/whats-new.md).|
+|AEM Assets as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Assets application.|
 | &nbsp; | &nbsp; |
 |AEM Author Tier|Describes the authoring environment for Sites and Assets.|
 |AEM Publish Tier|Describes the publishing environment for Sites.|
 |Adobe Pipeline|The mechanism for publishing content from author to publish.|
 | &nbsp; | &nbsp; |
 |AEM Image|A deployable artifact that contains the AEM product code together with the customer code.|
+|Asset microservices|Microservices to process digital assets, for example to create renditions.|
 |Cloud Manager Git Repository|Where customers store their code and configuration settings.|
 |Cloud Provider|AEM as a Cloud Service supports both Azure and AWS as cloud providers.|
 |Content Repository|Where the content is persisted.|
