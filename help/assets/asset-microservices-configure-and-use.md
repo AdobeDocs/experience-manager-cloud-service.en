@@ -28,6 +28,10 @@ What exact configurations are required to process specific assets.
 * ImageMagick
 * PIE?
 
+<!--
+If we were to provide Nui API documentation, then use https://git.corp.adobe.com/nui/nui/blob/master/doc/api.md 
+-->
+
 ## Use asset microservices to process assets {#use-asset-microservices}
 
 
