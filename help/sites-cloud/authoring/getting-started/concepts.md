@@ -60,19 +60,7 @@ Additionally, there are administrative tasks that help you manage your content:
 
 When ready, your site's content is published to the **publish environment**. Here the website's pages are made available to the intended audience in accordance with the look-and-feel of the designed interface.
 
->[!NOTE]
->
->Unfortunately there is sometimes an overlap in the terminology used. This can happen with:
->
->* **Publish / Unpublish**
->  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
->
->* **Activate / Deactivate**
->  These terms are synonymous with publish/un-publish, and are avoided in this documentation, but you may still hear them used by experienced AEM users or developers.
->
->* **Replicate / Replication**
->  These are the technical terms used to indicate the movement of data (e.g. page content, files, code, user comments) from one environment to another. I.e. when publishing AEM replicates the data to the publish instance. Such terminology is usually only used by developers.
->
+For more information about publishing and unpublishing pages, see the document [Publishing Pages.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
 ## Dispatcher {#dispatcher}
 
