@@ -20,7 +20,7 @@ user-guide-title: Authoring User Guide
     + [Environment and Tools](fundamentals/environment-tools.md)
     + [Annotations when Editing a Page](fundamentals/annotations.md)
     + [Creating and Organizing Pages](fundamentals/organizing-pages.md)
-    + [Editing Page Content](editing-content.md)
+    + [Editing Page Content](fundamentals/editing-content.md)
     + [Using the Rich Text Editor to Author Content](rich-text-editor.md)
     + [Editing Page Properties](editing-page-properties.md)
     + [Publishing Pages](publishing-pages.md)

@@ -199,7 +199,7 @@ There are two (main) methods of [editing page properties](/help/sites-authoring/
     1. [Navigate to the page](#finding-your-page) you want to publish.
     1. Select the **Properties** icon from either:
 
-        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
+        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the appropriate resource.
         * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction).
 
         ![Properties button](/help/sites-cloud/authoring/assets/properties.png)

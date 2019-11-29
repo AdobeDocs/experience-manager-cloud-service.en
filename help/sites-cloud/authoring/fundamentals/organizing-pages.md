@@ -217,7 +217,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
    The minimum information required to create a new page is the **Title**.
 
-   ![Provding page title](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
+   ![Providing page title](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
 1. Use **Create** to complete the process and create your new page. The confirmation dialog will ask whether you want to **Open** the page immediately or return to the console (**Done**):
 
