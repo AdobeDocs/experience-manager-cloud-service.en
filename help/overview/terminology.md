@@ -28,7 +28,6 @@ eg
 |Adobe Pipeline|The mechanism for publishing content from author to publish.|
 | &nbsp; | &nbsp; |
 |AEM Image|A deployable artifact that contains the AEM product code together with the customer code.|
-|Assets Microservice|Microservice in charge of processing images for the creation of static renditions. See the [overview](/help/assets/assets-microservices-overview.md).|
 |Cloud Manager Git Repository|Where customers store their code and configuration settings.|
 |Cloud Provider|AEM as a Cloud Service supports both Azure and AWS as cloud providers.|
 |Content Repository|Where the content is persisted.|

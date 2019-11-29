@@ -19,6 +19,11 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service support
 
 Adobe is providing documentation and procedures (with APIs when available), for the customer privacy administrator or AEM administrator to handle data protection and data privacy requests and help our customers be compliant with these regulations. The procedures documented will allow customers to execute the regulatory requests manually or by calling into APIs, where available, from an external portal or service. 
 
+<!-- Needs confirmation -->
+>[!CAUTION]
+>
+>The details documented here are restricted to Adobe Experience Manager as a Cloud Service. Data from another Adobe Service will require actions to be taken on that service.
+
 ## Introduction {#introduction}
 
 Instances of Adobe Experience Manager as a Cloud Service, and the applications that run on them, are owned and operated by our customers.
