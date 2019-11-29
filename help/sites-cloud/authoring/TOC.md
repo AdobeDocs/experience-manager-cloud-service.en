@@ -18,8 +18,8 @@ user-guide-title: Authoring User Guide
   + [Keyboard Shortcuts for Consoles](getting-started/keyboard-shortcuts.md)
 + Authoring {#authoring}
     + [Environment and Tools](fundamentals/environment-tools.md)
-    + [Annotations when Editing a Page](annotations.md)
-    + [Creating and Organizing Pages](managing-pages.md)
+    + [Annotations when Editing a Page](fundamentals/annotations.md)
+    + [Creating and Organizing Pages](fundamentals/organizing-pages.md)
     + [Editing Page Content](editing-content.md)
     + [Using the Rich Text Editor to Author Content](rich-text-editor.md)
     + [Editing Page Properties](editing-page-properties.md)
