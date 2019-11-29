@@ -120,11 +120,11 @@ The following diagram illustrates what a CCPA request workflow might look like:
 
 -->
 
-## AEM as a Cloud Service and Regulatory Readiness {#aem-as-a-cloud-service-and-regulatory-readiness}
+### AEM as a Cloud Service and Regulatory Readiness {#aem-as-a-cloud-service-and-regulatory-readiness}
 
 Please see the sections below for regulatory documentation for product areas of AEM as a Cloud Service.
 
-## AEM Foundation {#aem-foundation}
+### AEM Foundation {#aem-foundation}
 
 See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-protection-and-privacy-foundation.md).
 
@@ -134,7 +134,7 @@ See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](
 See [Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 -->
 
-## AEM Sites {#aem-sites}
+### AEM Sites {#aem-sites}
 
 See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-protection-and-privacy-sites.md)
 
