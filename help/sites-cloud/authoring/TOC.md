@@ -23,7 +23,7 @@ user-guide-title: Authoring User Guide
     + [Editing Page Content](fundamentals/editing-content.md)
     + [Using the Rich Text Editor to Author Content](fundamentals/rich-text-editor.md)
     + [Editing Page Properties](fundamentals/page-properties.md)
-    + [Publishing Pages](publishing-pages.md)
+    + [Publishing Pages](fundamentals/publishing-pages.md)
     + [Page Authoring with Content Fragments](content-fragments.md)
     + [Experience Fragments](experience-fragments.md)
     + [Export to CSV](csv-export.md)
