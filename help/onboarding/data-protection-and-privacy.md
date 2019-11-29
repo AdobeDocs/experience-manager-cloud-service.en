@@ -120,7 +120,7 @@ The following diagram illustrates what a CCPA request workflow might look like:
 
 -->
 
-### AEM as a Cloud Service and Regulatory Readiness {#aem-as-a-cloud-service-and-regulatory-readiness}
+## AEM as a Cloud Service and Regulatory Readiness {#aem-as-a-cloud-service-and-regulatory-readiness}
 
 Please see the sections below for regulatory documentation for product areas of AEM as a Cloud Service.
 
@@ -152,7 +152,7 @@ See [AEM Mobile - GDPR Readiness](/help/mobile/aem-mobile-gdpr-compliance.md).
 
 ### AEM Integration with Adobe Target & Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-These AEM integrations are with GDPR ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
+These AEM integrations are with data privacy and protection ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
 
 For further information see:
 
