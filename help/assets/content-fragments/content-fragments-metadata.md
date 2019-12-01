@@ -11,6 +11,7 @@ seo-description: You can view and edit the metadata (properties) for content fra
 
 You can view and edit the metadata (properties) for content fragments:
 
+<!--
 1. In the **Assets** console navigate to the location of the content fragment.
 2. Either:
 
@@ -28,4 +29,4 @@ You can view and edit the metadata (properties) for content fragments:
     * Created (display only)
 
    ![cfm-6420-07](assets/cfm-6420-07.png)
-
+-->

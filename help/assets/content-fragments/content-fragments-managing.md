@@ -17,6 +17,7 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 ### Creating a Content Model {#creating-a-content-model}
 
+<!--
 [Content fragment models](/help/assets/content-fragments-models.md) can be enabled and created, prior to creating content fragments with structured content.
 
 >[!NOTE]
@@ -328,4 +329,4 @@ To delete a fragment:
    >[!CAUTION]
    >
    >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
-
+-->

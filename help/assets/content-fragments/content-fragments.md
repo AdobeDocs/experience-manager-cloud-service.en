@@ -7,6 +7,7 @@ seo-description: Learn how Content Fragments allow you to design, create, curate
 
 # Working with Content Fragments{#working-with-content-fragments}
 
+<!--
 Adobe Experience Manager (AEM) Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-authoring/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.
 
 Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
@@ -280,3 +281,4 @@ A fragment, with its elements and variations, can be used to create coherent con
 A sample fragment can be seen at:
 
 `https://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten`
+-->

@@ -7,6 +7,7 @@ seo-description: Content Fragment Models are used to create content fragments wi
 
 # Content Fragment Models{#content-fragment-models}
 
+<!--
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments.md).
 
 ## Enable Content Fragment Models {#enable-content-fragment-models}
@@ -146,4 +147,4 @@ To publish a content fragment model:
    >[!NOTE]
    >
    >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
-
+-->

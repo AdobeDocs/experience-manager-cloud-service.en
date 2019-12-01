@@ -7,6 +7,7 @@ seo-description: When you are authoring, the content fragment editor uses markdo
 
 # Markdown{#markdown}
 
+<!--
 When you are [authoring](content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
 
 ![markdown editor](/help/assets/assets/cfm-6420-08.png)
@@ -202,3 +203,4 @@ Backslash escapes are available for the following characters:
 &nbsp;&nbsp;&nbsp;&nbsp;`- minus sign (hyphen)`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`. dot`
+-->

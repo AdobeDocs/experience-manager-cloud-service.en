@@ -7,6 +7,7 @@ seo-description: Variations allow you to author content for the fragment, then c
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
+<!--
 [Variations](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
 
 From the **Variations** tab you can:
@@ -367,4 +368,4 @@ When editing a variation you have access to the action for synchronizing the cur
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
-
+-->

@@ -12,7 +12,7 @@ seo-description: Content Fragments - Delete Considerations
 The ability to delete content is powerful, but potentially sensitive, with many industries needing to restrict and control how these privileges are distributed.
 
 With regards to delete permissions, Content Fragments must be considered at two levels:
-
+<!--
 1. **The Content Fragment as a single entity.**
 
     * **Use case**: A user who needs to edit/update a content fragment - **and delete an entire fragment**.
@@ -80,4 +80,4 @@ The `add` and `modify` privileges can also be administered in CRXDE Lite, or usi
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
-
+-->
