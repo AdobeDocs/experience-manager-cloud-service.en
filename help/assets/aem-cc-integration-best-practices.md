@@ -173,7 +173,7 @@ To support asset distribution use cases, other solutions should be considered:
 * [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable, SaaS add-on to AEM Assets to publish assets.
 
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
-* AEM [link share](/help/assets/link-sharing.md) to share assets ad hoc using links.
+* AEM [link share](/help/assets/share-assets-as-links.md) to share assets ad hoc using links.
 * [AEM Assets web interface](/help/assets/manage-digital-assets.md) with areas for external parties secured by AEM Access Control setup and with necessary IT / network configuration adjustments, giving these external users access to AEM.
 
 ## Key concepts and use cases {#key-concepts-and-use-cases}
