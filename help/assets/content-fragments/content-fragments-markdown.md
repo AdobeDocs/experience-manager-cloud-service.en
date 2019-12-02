@@ -7,22 +7,21 @@ seo-description: When you are authoring, the content fragment editor uses markdo
 
 # Markdown{#markdown}
 
-<!--
-When you are [authoring](content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
+When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
 
-![markdown editor](/help/assets/assets/cfm-6420-08.png)
+![markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 You can define:
 
-* [Heading Notation](/help/assets/content-fragments-markdown.md#heading-notation)
-* [Paragraphs and Line Breaks](/help/assets/content-fragments-markdown.md#paragraphs-and-line-breaks)
-* [Links](/help/assets/content-fragments-markdown.md#links)
-* [Images](/help/assets/content-fragments-markdown.md#images)
-* [Block Quotes](/help/assets/content-fragments-markdown.md#block-quotes)
-* [Lists](/help/assets/content-fragments-markdown.md#lists)
-* [Emphasis](/help/assets/content-fragments-markdown.md#emphasis)
-* [Code Blocks](/help/assets/content-fragments-markdown.md#code-blocks)
-* [Backslash escapes](/help/assets/content-fragments-markdown.md#backslash-escapes)
+* [Heading Notation](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
+* [Paragraphs and Line Breaks](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
+* [Links](/help/assets/content-fragments/content-fragments-markdown.md#links)
+* [Images](/help/assets/content-fragments/content-fragments-markdown.md#images)
+* [Block Quotes](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
+* [Lists](/help/assets/content-fragments/content-fragments-markdown.md#lists)
+* [Emphasis](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
+* [Code Blocks](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
+* [Backslash escapes](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Heading Notation {#heading-notation}
 
@@ -203,4 +202,3 @@ Backslash escapes are available for the following characters:
 &nbsp;&nbsp;&nbsp;&nbsp;`- minus sign (hyphen)`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`. dot`
--->
