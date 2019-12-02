@@ -35,7 +35,9 @@ solution-title: Experience Cloud
   + [Know workspace interface](/help/assets/understand-interface-workspace.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
-  + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
+  + Content Fragments {#content-fragments}
+  + Reference Material for Assets {#reference-material-for-assets}
+    + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
 + Implementing for AEM as a Cloud Service {#implementing}
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Package Structure](implementing/developing/introduction/aem-project-content-package-structure.md)
