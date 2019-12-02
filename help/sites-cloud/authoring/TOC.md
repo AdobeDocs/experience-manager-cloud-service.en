@@ -25,7 +25,7 @@ user-guide-title: Authoring User Guide
     + [Editing Page Properties](fundamentals/page-properties.md)
     + [Publishing Pages](fundamentals/publishing-pages.md)
     + [Page Authoring with Content Fragments](fundamentals/content-fragments.md)
-    + [Experience Fragments](experience-fragments.md)
+    + [Experience Fragments](fundamentals/experience-fragments.md)
     + [Export to CSV](csv-export.md)
     + [Components](default-components.md)
     + [Authoring a Page for Mobile Devices](mobile.md)
