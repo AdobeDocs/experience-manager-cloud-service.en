@@ -38,7 +38,7 @@ user-guide-title: Authoring User Guide
     + [Working with Page Versions](features/page-versions.md)
     + [Page Diff](features/page-diff.md)
     + [Components Console](default-components-console.md)
-    + [Responsive Layout](responsive-layout.md)
+    + [Responsive Layout](features/responsive-layout.md)
     + [Content Insight](content-insights.md)
     + [Creating Accessible Content (WCAG 2.0 Conformance)](creating-accessible-content.md)
     + [Scaffolding](scaffolding.md)
