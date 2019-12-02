@@ -129,10 +129,7 @@ Content fragments are:
   * Content fragments (and their variations) can be created and maintained from the **Assets** console.
   * Authored and edited in the Content Fragment Editor.
 
-* Used in the page editor by means of the Content Fragment component (referencing component): 
-<!--
-* Used in the [page editor by means of the Content Fragment component](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (referencing component):
--->
+* Used in the page editor by means of the Content Fragment component (referencing component):  <!-- * Used in the [page editor by means of the Content Fragment component](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (referencing component): -->
 
   * The **Content Fragment** component is available to page authors. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
 
@@ -211,8 +208,7 @@ The content fragment assets are made up of the following parts (either directly 
 
   * Assets (images) inserted into the actual fragment and used as the internal content of a fragment.
   * Are embedded in the paragraph system of the fragment.
-  * Can be formatted when the fragment is used/referenced on a page.
-<!--  * Can be formatted when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). -->
+  * Can be formatted when the fragment is used/referenced on a page. <!--  * Can be formatted when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). -->
   * Can only be added to, deleted from, or moved within, a fragment using the fragment editor. These actions cannot be made in the page editor.
   * Can only be added to, deleted from, or moved within, a fragment using [Rich Text format in the fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
   * Can only be added to multi-line text elements (any fragment type).
@@ -239,15 +235,12 @@ The content fragment assets are made up of the following parts (either directly 
   * The assets are [associated to fragments via collections](/help/assets/content-fragments/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
 
     * Collections can be associated to fragments via templates, as default content, or by authors during fragment authoring.
-    * Assets (DAM) Collections are the basis for the associated content of fragments.
-<!--    * [Assets (DAM) Collections](/help/assets/managing-collections-touch-ui.md) are the basis for the associated content of fragments. -->
-
+    * Assets (DAM) Collections are the basis for the associated content of fragments. <!--    * [Assets (DAM) Collections](/help/assets/managing-collections-touch-ui.md) are the basis for the associated content of fragments. -->
   * Optionally you can also add the fragment itself to a collection to aid tracking.
 
 * **Fragment Metadata**
 
-  * Use the Assets metadata schemas.
-<!--  * Use the [Assets metadata schemas](/help/assets/metadata.md). -->
+  * Use the Assets metadata schemas. <!--  * Use the [Assets metadata schemas](/help/assets/metadata.md). -->
   * Tags can be created when you:
 
     * Create and author the fragment
@@ -285,8 +278,7 @@ The content fragment assets are made up of the following parts (either directly 
 In-between content:
 
 * Is available for use in the Page Editor when working with Content Fragments.
-* Is additional content added within the flow of a fragment once it has been used/referenced on a page.
-<!-- * Is available for use in the [Page Editor when working with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+* Is additional content added within the flow of a fragment once it has been used/referenced on a page. <!-- * Is available for use in the [Page Editor when working with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 * Is [additional content added within the flow of a fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content) once it has been used/referenced on a page. -->
 * In-between content can be added to any fragment, where there is only one element visible.
 * Associated content can be used, as can assets and/or components from the appropriate browser.
@@ -309,16 +301,14 @@ To create, edit and use content fragments you also need:
 * **Fragment Template**
 
   * Required to [create a simple fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-  * Usually developed during project implementation; cannot be created when authoring.
-<!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+  * Usually developed during project implementation; cannot be created when authoring. <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
   * Defines the basics properties of a simple fragment (title, number of text elements, tag definitions).
   * Template definitions require a title and one text element; everything else is optional. The template defines a minimal scope of the fragment and default content if applicable. Authors can later extend a fragment beyond what is defined in the template.
 
 * **Content Fragment Component**
 
   * Instrumental to delivering the fragment in HTML and/or JSON format.
-  * Required to reference the fragment on a page.
-<!--  * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). -->
+  * Required to reference the fragment on a page. <!--  * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). -->
   * Responsible for layout and delivery of a fragment; i.e. channels.
   * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring will automatically associate the required component.
