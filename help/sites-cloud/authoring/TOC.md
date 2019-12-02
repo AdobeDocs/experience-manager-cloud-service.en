@@ -30,7 +30,7 @@ user-guide-title: Authoring User Guide
     + [Components](fundamentals/components.md)
     + [Authoring a Page for Mobile Devices](fundamentals/mobile.md)
     + [Troubleshooting AEM when Authoring](fundamentals/troubleshooting.md)
-    + [Keyboard Shortcuts when Editing Pages](page-authoring-keyboard-shortcuts.md)
+    + [Keyboard Shortcuts for Page Editing](fundamentals/keyboard-shortcuts.md)
     + [Best Practices](best-practices.md)
 + Site and Page Features {#siteandpage}
     + [Using Tags](tags.md)
