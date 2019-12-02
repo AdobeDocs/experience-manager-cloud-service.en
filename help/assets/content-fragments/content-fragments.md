@@ -129,8 +129,7 @@ Content fragments are:
   * Content fragments (and their variations) can be created and maintained from the **Assets** console.
   * Authored and edited in the Content Fragment Editor.
 
-* Used in the [page editor by means of the Content Fragment component](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (referencing component):
-
+* Used in the page editor by means of the Content Fragment component (referencing component): 
 <!--
 * Used in the [page editor by means of the Content Fragment component](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (referencing component):
 -->
