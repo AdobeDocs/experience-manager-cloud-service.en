@@ -12,7 +12,12 @@ sub-product: Adobe Experience Manager Cloud Service
 
 ## Migration tool {#migration-tool}
 
+Link back to info about the tool in the Experience Manager as a Cloud Service docs if the tool works the same for Sites and Assets.
+
+Document the Assets-specific info here.
+
 ## Content migration to new deployment {#content-migration-across-deployments}
+
 
 >[!MORELIKETHIS]
 >

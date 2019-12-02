@@ -19,23 +19,25 @@ solution-title: Experience Cloud
   + [An Introduction to the Architecture of AEM as a Cloud Service](core-concepts/architecture.md)
 + Onboarding {#onboarding}
   + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}
-    + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-protection-and-privacy.md)
-    + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](onboarding/data-protection-and-privacy-foundation.md)
-    + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](onboarding/data-protection-and-privacy-sites.md)
+    + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md)
+    + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
+    + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-sites.md)
 + AEM Sites in the Cloud {#cloud-sites}
   + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
 + AEM Assets in the Cloud {#cloud-assets}
-  + [Overview and what's new](/help/assets/whats-new.md)
+  + [Overview and what's new](/help/release-notes/assets-as-cloud-service.md)
   + [Compare with AEM](/help/assets/compare-with-aem.md)
   + [Architecture](/help/assets/architecture.md)
   + [Move to Cloud Service](/help/assets/move-to-cloud-service.md)
   + [Supported file formats](/help/assets/file-format-support.md)
-  + [Overview of Microservices](/help/assets/assets-microservices-overview.md)
-  + [Configure and use Microservices](/help/assets/assets-microservices-configure-and-use.md)
+  + [Overview of microservices](/help/assets/asset-microservices-overview.md)
+  + [Configure and use microservices](/help/assets/asset-microservices-configure-and-use.md)
   + [Know workspace interface](/help/assets/understand-interface-workspace.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
-  + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
+  + Content Fragments {#content-fragments}
+  + Reference Material for Assets {#reference-material-for-assets}
+    + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
 + Implementing for AEM as a Cloud Service {#implementing}
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Package Structure](implementing/developing/introduction/aem-project-content-package-structure.md)

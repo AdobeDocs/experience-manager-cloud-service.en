@@ -15,9 +15,9 @@ What are the working parts of the solution.
 What all will the license provide.
 
 * SaaS offering/ hosted solution
-* Assets Microservices
+* Asset microservices
 * User interface, console, Assets user interface, and so on.
 * OOTB workflows, migration tools, samples, and so on.
 * List of public APIs
 * Support availability
-* Open-source documentation
+* Documentation on GitHub.com
