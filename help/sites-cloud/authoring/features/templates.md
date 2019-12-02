@@ -140,7 +140,7 @@ A template can have the following properties:
 * Title
   * A title used for identifying the template such as in the **Create Page** wizard.
 * Description
-  * An optional description to provide more information about the template and its use, which can be seein for example in the **Create Page** wizard.
+  * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
 
 To view and/or edit the properties:
 
@@ -227,40 +227,6 @@ As the template is referenced when a page is rendered, the fully configured temp
 
 When creating or editing a template there are various aspects that you can define. Editing templates is similar to page authoring.
 
-The following aspects of a template can be edited:
-
-* [Structure](#editingatemplatestructure)
-
-  Components added here cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
-
-  When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editingatemplateinitialcontent).
-
-  >[!NOTE]
-  >
-  >In structure mode, any components that are the parent of an unlocked component cannot be moved, cut, or deleted.
-
-* [Initial Content](#editingatemplateinitialcontent)
-
-  When a component has been unlocked you can define the initial content that will be copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
-
-  >[!NOTE]
-  >
-  >In **Initial Content** mode as well as on the resultant pages, any unlocked components that have an accessible parent (i.e. components within a layout container) can be deleted.
-
-* [Layout](#editingatemplatelayout)
-
-  Here you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
-
-* [Page Policies](#editingatemplatepagepolicies)
-
-  Under page policies you can connect predefined page policies to the page. These page policies define the various design configurations.
-
-* [Styles](/help/sites-authoring/style-system.md)
-
-  The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
-
-  See the [Style System documentation](/help/sites-authoring/style-system.md) for more information.
-
 The **Mode** selector in the toolbar allows you to select and edit the appropriate aspect of the template:
 
 * [Structure](#editingatemplatestructure)
@@ -277,6 +243,42 @@ While the **Page Policy** option on the **Page Information** menu allows you to 
 >
 >If an author starts to edit a template that has already been enabled a warning will be displayed. This is to inform the user that the template might be referenced, so any changes might affect the pages referencing the template.
 
+### Template Attributes {#template-attributes}
+
+The following attributes of a template can be edited:
+
+#### Structure {#template-structure}
+
+Components added to the [structure](#editingatemplatestructure) cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
+
+When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editingatemplateinitialcontent).
+
+>[!NOTE]
+>
+>In structure mode, any components that are the parent of an unlocked component cannot be moved, cut, or deleted.
+
+#### Initial Content {#template-initial-content}
+
+When a component has been unlocked you can define the [initial content](#editingatemplateinitialcontent) that will be copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
+
+>[!NOTE]
+>
+>In **Initial Content** mode as well as on the resultant pages, any unlocked components that have an accessible parent (i.e. components within a layout container) can be deleted.
+
+#### Layout {#template-layout}
+
+With the [layout](#editingatemplatelayout) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+
+#### Page Policies {#template-page-policies}
+
+[Page policies](#editingatemplatepagepolicies) can connect predefined page policies to the page. These page policies define the various design configurations.
+
+#### Styles {#template-styles}
+
+The [Style System](/help/sites-authoring/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
+
+See the [Style System documentation](/help/sites-authoring/style-system.md) for more information.
+
 ### Editing a Template - Structure - Template Author {#editing-a-template-structure-template-author}
 
 In **Structure** mode you define components and content for your template and define policy for the template and its components.
@@ -288,214 +290,214 @@ In **Structure** mode you define components and content for your template and de
 
 ![Template Editor page structure](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-In **Structure** mode of the template editor:
+There are a number of actions you can take in the **Structure** mode of the template editor and a number of features to assist you:
 
-* **Add components**
+#### Add Components {#add-components}
 
-  There are several mechanisms for adding components to the template:
+There are several mechanisms for adding components to the template:
 
-  * From the **Components** browser in the side panel.
-  * By using the **Insert Component** option (**+** icon) available on the toolbar of components already on the template or the **Drag components here** box.
-  * By dragging an asset (from the **Assets** browser in the side panel) directly onto the template to generate the appropriate component in situ.
+* From the **Components** browser in the side panel.
+* By using the **Insert Component** option (**+** icon) available on the toolbar of components already on the template or the **Drag components here** box.
+* By dragging an asset (from the **Assets** browser in the side panel) directly onto the template to generate the appropriate component in situ.
 
-  Once added, each component is marked with:
+Once added, each component is marked with:
 
-  * A border
-  * A marker to show the component type
-  * A marker to show when the component has been unlocked
+* A border
+* A marker to show the component type
+* A marker to show when the component has been unlocked
 
-  >[!NOTE]
-  >
-  >When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
-  >
-  >If you change this, and add your own text, then this updated text will be used when a page is created from the template.
-  >
-  >If you leave the default text (structure) then the title will default to the name of the subsequent page.
+>[!NOTE]
+>
+>When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
+>
+>If you change this, and add your own text, then this updated text will be used when a page is created from the template.
+>
+>If you leave the default text (structure) then the title will default to the name of the subsequent page.
 
-  >[!NOTE]
-  >
-  >Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-authoring/editing-content.md).
+>[!NOTE]
+>
+>Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-authoring/editing-content.md).
 
-* **Component Actions**
+#### Component Actions {#component-actions}
 
-  Take actions on the components once they have been added to the template. Each individual instance has a toolbar that allows you to access the available actions, the toolbar is dependent on the component type.
+Take actions on the components once they have been added to the template. Each individual instance has a toolbar that allows you to access the available actions, the toolbar is dependent on the component type.
 
-  ![Action toolbar of a template component](/help/sites-cloud/authoring/assets/templates-component-actions.png)
+![Action toolbar of a template component](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
-  It can also be dependent on actions taken such as when a policy has been associated with the component, then the design configuration icon becomes available.
+It can also be dependent on actions taken such as when a policy has been associated with the component, then the design configuration icon becomes available.
 
-* **Edit and Configure**
+#### Edit and Configure {#edit-and-configure}
 
-  With these two actions you can add content to your components.
+With these two actions you can add content to your components.
 
-* **Border to indicate Structure**
+#### Border to Indicate Structure {#border-to-indicate-structure}
 
-  When working in **Structure** mode an orange border indicates the component currently selected. A dotted line also indicates the parent component.
+When working in **Structure** mode an orange border indicates the component currently selected. A dotted line also indicates the parent component.
 
-  For example, in the screenshot below the **Text** component is selected, within a **Layout Container** (responsivegrid).
+For example, in the screenshot below the **Text** component is selected, within a **Layout Container** (responsivegrid).
 
-  ![Selected component example](/help/sites-cloud/authoring/assets/templates-border-outline.png)
+![Selected component example](/help/sites-cloud/authoring/assets/templates-border-outline.png)
 
-* **Policy & Properties (General)**
+#### Policy and Properties (General) {#policy-and-properties-general}
 
-  The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
+The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
 
-  Create a content policy, or select an existing one, for a component. This allows you to define the design details.
+Create a content policy, or select an existing one, for a component. This allows you to define the design details.
 
-  ![Content Policy button](/help/sites-cloud/authoring/assets/templates-content-policy-button.png) 
-  ![Content Policy](/help/sites-cloud/authoring/assets/template-content-policy.png)
+![Content Policy button](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
+![Content Policy](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
-  The configuration window is divided in two.
+The configuration window is divided in two.
 
-  * In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-  * In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+* In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
+* In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
 
-  The properties available are dependent on the selected component. For example, for a text component the properties define the copy and paste options, formatting options, and paragraph style amongst other options.
+The properties available are dependent on the selected component. For example, for a text component the properties define the copy and paste options, formatting options, and paragraph style amongst other options.
 
-  ***Policy***
+##### Policy {#policy}
 
-  The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
+The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
 
-  Under **Policy** you can select an existing policy to apply to the component via the drop-down.
+Under **Policy** you can select an existing policy to apply to the component via the drop-down.
 
-  ![Select policy](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+![Select policy](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  A new policy can be added by selecting the add button next to the **Select policy** dropdown. A new title should then be given in the **Policy Title** field.
+A new policy can be added by selecting the add button next to the **Select policy** dropdown. A new title should then be given in the **Policy Title** field.
 
-  ![Add Policy button](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+![Add Policy button](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
 
-  ![Copy Policy button](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+![Copy Policy button](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-  A description of the policy is optional in the **Policy Description** field.
+A description of the policy is optional in the **Policy Description** field.
 
-  In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
 
-  ![Usage of existing policy](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+![Usage of existing policy](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
-  >[!NOTE]
-  >
-  >If multiple components of the same type are added as initial content, the same policy applies to all the components. This mirrors the same restriction in [**Design Mode** for static templates](/help/sites-authoring/default-components-designmode.md).
+>[!NOTE]
+>
+>If multiple components of the same type are added as initial content, the same policy applies to all the components. This mirrors the same restriction in [**Design Mode** for static templates](/help/sites-authoring/default-components-designmode.md).
 
-  ***Properties***
+##### Properties {#properties}
 
-  Under the **Properties** heading you can define the settings of the component. The heading has two tabs:
+Under the **Properties** heading you can define the settings of the component. The heading has two tabs:
 
-  * Main
-  * Features
+* Main
+* Features
 
-  *Main*
+###### Main {#main}
 
-  On the **Main** tab, the most important settings of the component are defined.
+On the **Main** tab, the most important settings of the component are defined.
 
-  For example for an image component the allowed widths can be defined along with enabling lazy loading.
+For example for an image component the allowed widths can be defined along with enabling lazy loading.
 
-  If a setting allows for multiple configurations, click or tap the **Add** button to add another configuration.
+If a setting allows for multiple configurations, click or tap the **Add** button to add another configuration.
 
-  ![Add button](/help/sites-cloud/authoring/assets/templates-add-button.png)
+![Add button](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-  To remove a configuration, click or tap the **Delete** button located to the right of the configuration.
+To remove a configuration, click or tap the **Delete** button located to the right of the configuration.
 
-  To remove a configuration, click or tap the** Delete** button.
+To remove a configuration, click or tap the** Delete** button.
 
-  ![Delete button](/help/sites-cloud/authoring/assets/templates-delete-button.png)
+![Delete button](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
-  *Features*
+###### Features {#features}
 
-  The **Features** tab allows you to enable or disable additional features of the component.
+The **Features** tab allows you to enable or disable additional features of the component.
 
-  For example for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
+For example for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
 
-  ![Features tab](/help/sites-cloud/authoring/assets/templates-features-tab.png)
+![Features tab](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 
-  >[!CAUTION]
-  >
-  >Note that in AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
+>[!CAUTION]
+>
+>Note that in AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
 
-  >[!NOTE]
-  >
-  >[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+>[!NOTE]
+>
+>[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
-* **Policy & Properties (Layout Container)**
+#### Policy and Properties (Layout Container) {#policy-and-properties-layout-container}
 
-  The policy and properties settings of a layout container are similar to the general usage, but with some differences.
+The policy and properties settings of a layout container are similar to the general usage, but with some differences.
 
-  >[!NOTE]
-  >
-  >Configuring a policy is mandatory for container components as it enables you to define components that will be available in the container.
+>[!NOTE]
+>
+>Configuring a policy is mandatory for container components as it enables you to define components that will be available in the container.
 
-  The configuration window is divided in two, just as in the general usage of the window.
+The configuration window is divided in two, just as in the general usage of the window.
 
-  ***Policy***
+##### Policy {#policy-layout}
 
-  The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
+The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
 
-  Under **Policy** you can select an existing policy to apply to the component via the drop-down. This functions just as it does in the general usage of the window.
+Under **Policy** you can select an existing policy to apply to the component via the drop-down. This functions just as it does in the general usage of the window.
 
-  ***Properties***
+##### Properties {#properties-layout}
 
-  Under the **Properties** heading you can choose which components are available for the layout container and define their settings. The heading has three tabs:
+Under the **Properties** heading you can choose which components are available for the layout container and define their settings. The heading has three tabs:
 
-    * Allowed Components
-    * Default Components
-    * Responsive Settings
+* Allowed Components
+* Default Components
+* Responsive Settings
 
-  *Allowed Components*
+###### Allowed Components {#allowed-components}
 
-  On the **Allowed Components** tab, you define which components are available for the layout container.
+On the **Allowed Components** tab, you define which components are available for the layout container.
 
-    * The components are grouped by their component groups, which can be expanded and collapsed.
-    * An entire group can be selected, by checking the group name and all can be deselected by unchecking.
-    * A minus represents at least one but not all items in a group are selected.
-    * A search is available to filter for a component by name.
-    * The counts listed to the right of the component group name represent the total number of selected components in those groups regardless of the filter.
+* The components are grouped by their component groups, which can be expanded and collapsed.
+* An entire group can be selected, by checking the group name and all can be deselected by unchecking.
+* A minus represents at least one but not all items in a group are selected.
+* A search is available to filter for a component by name.
+* The counts listed to the right of the component group name represent the total number of selected components in those groups regardless of the filter.
 
-  ![Allowed Components tab](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
+![Allowed Components tab](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
 
-  *Default Components*
+###### Default Components {#default-components}
 
-  On the **Default Components** tab, you define which components are automatically associated with given media types so that when an author drags an asset from the asset browser, AEM knows with which component to associate it. Note that only components with drop zones are available for such configuration.
+On the **Default Components** tab, you define which components are automatically associated with given media types so that when an author drags an asset from the asset browser, AEM knows with which component to associate it. Note that only components with drop zones are available for such configuration.
 
-  Click or tap **Add Mapping** to add an entirely new component and MIME type mapping.
+Click or tap **Add Mapping** to add an entirely new component and MIME type mapping.
 
-  Select a component in the list and click or tap **Add type** to add an additional MIME type to an already mapped component. Click the **Delete** icon to remove a MIME type.
+Select a component in the list and click or tap **Add type** to add an additional MIME type to an already mapped component. Click the **Delete** icon to remove a MIME type.
 
-  ![Default Components tab](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
+![Default Components tab](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
-  *Responsive Settings*
+###### Responsive Settings {#responsive-settings}
 
-  On the **Responsive Settings** tab you can configure the number of columns in the resulting grid of the layout container.
+On the **Responsive Settings** tab you can configure the number of columns in the resulting grid of the layout container.
 
-* **Unlock/Lock components**
+#### Unlock and Lock Components {#unlock-and-lock-components}
 
-  You unlock/lock components to define whether the content is available for change in **Initial Content** mode.
+You unlock/lock components to define whether the content is available for change in **Initial Content** mode.
 
-  When a component has been unlocked:
+When a component has been unlocked:
 
-    * An open padlock indicator is shown in the border.
-    * The component toolbar will be adjusted accordingly.
-    * Any content already entered will no longer be shown in **Structure** mode.
-        * Already entered content is considered initial content and is only visible in **Initial Content** mode.
-    * The parents of the unlocked component cannot be moved, cut or deleted.
+* An open padlock indicator is shown in the border.
+* The component toolbar will be adjusted accordingly.
+* Any content already entered will no longer be shown in **Structure** mode.
+  * Already entered content is considered initial content and is only visible in **Initial Content** mode.
+* The parents of the unlocked component cannot be moved, cut or deleted.
 
-  ![Lock component button](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
+![Lock component button](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-  This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. In **Structure Mode**, only the container component itself will be shown with its list of **Allowed Components**.
+This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. In **Structure Mode**, only the container component itself will be shown with its list of **Allowed Components**.
 
-  ![Allowed Components](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
+![Allowed Components](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
   
-  To save space, the layout container does not grow to accommodate the list of allowed components. Rather the container becomes a scrollable list.
+To save space, the layout container does not grow to accommodate the list of allowed components. Rather the container becomes a scrollable list.
 
-  Components that are configurable are shown with a **Policy** icon, which can be tapped or clicked to edit the policy and properties of that component.
+Components that are configurable are shown with a **Policy** icon, which can be tapped or clicked to edit the policy and properties of that component.
 
-  ![Configurable Component icon](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
+![Configurable Component icon](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
-* **Relationship to Existing Pages**
+#### Relationship to Existing Pages {#relationship-to-existing-pages}
 
-  If the structure is updated after creating pages based on the template, then these pages will reflect the changes to the template. A warning is displayed in the toolbar to remind you of this fact along with confirmation dialogues.
+If the structure is updated after creating pages based on the template, then these pages will reflect the changes to the template. A warning is displayed in the toolbar to remind you of this fact along with confirmation dialogues.
 
-  ![Banner warning that template is in use](/help/sites-cloud/authoring/assets/templates-in-use-banner.png)
+![Banner warning that template is in use](/help/sites-cloud/authoring/assets/templates-in-use-banner.png)
 
 ### Editing a Template - Initial Content - Author {#editing-a-template-initial-content-author}
 
