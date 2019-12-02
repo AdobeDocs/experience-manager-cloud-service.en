@@ -133,7 +133,7 @@ There are various main components of this new architecture:
     >
     >For more details see [Replication](/help/operations/replication.md).
 
-  * Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the [Cloud Manager](#cloud-manager). This includes code and configuration deployments using the Cloud Manager's CI/CD pipeline. Anything related to monitoring, maintenance and troubleshooting (for example, log files) is exposed to customers within Cloud Manager.
+  * Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the [Cloud Manager](/help/overview/introduction.md#cloud-manager). This includes code and configuration deployments using the Cloud Manager's CI/CD pipeline. Anything related to monitoring, maintenance and troubleshooting (for example, log files) is exposed to customers within Cloud Manager.
   
   * Accessing the author and publish tiers always happens via a load balancer. This is always up-to-date with the active nodes in each of the tiers.
 

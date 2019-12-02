@@ -9,10 +9,11 @@ seo-description: Content Fragments are stored as Assets, so are primarily manage
 
 Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
+<!--
 >[!NOTE]
 >
 >Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md).
-
+-->
 ## Creating Content Fragments {#creating-content-fragments}
 
 ### Creating a Content Model {#creating-a-content-model}
