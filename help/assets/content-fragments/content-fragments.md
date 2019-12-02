@@ -20,7 +20,7 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 
 This and the following pages cover the tasks for creating, configuring and maintaining your content fragments:
 
-* [Managing Content Fragments](/help/assets/content-fragments/content-fragments/content-fragments-managing.md) - create your content fragments; then edit, publish and reference
+* [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - create your content fragments; then edit, publish and reference
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - enabling, creating and defining your models
 * [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md) - author the fragment content and create variations of the Master
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - using markdown syntax for your fragment
@@ -170,11 +170,7 @@ Assets can be used with a content fragment in several ways; each with its own ad
   * Allow full flexibility for selection of an asset.
   * Allows some flexibility for positioning.
   * Does not provide the concept of being approved for a specific fragment.
-  * See Assets Browser for more information.
-
-<!--
-  * See [Assets Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) for more information.
--->
+  * See Assets Browser for more information. <!--  * See [Assets Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) for more information. -->
 
 ### Constituent Parts of a Content Fragment {#constituent-parts-of-a-content-fragment}
 
@@ -187,11 +183,7 @@ The content fragment assets are made up of the following parts (either directly 
   * For simple fragments:
 
     * The content is held in one (or more) multi-line text field(s), or element(s).
-    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see Content Fragment Templates).
-
-<!--
-    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)).
--->
+    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see Content Fragment Templates). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
 
 * **Fragment Paragraphs**
 
@@ -279,7 +271,7 @@ In-between content:
 
 * Is available for use in the Page Editor when working with Content Fragments.
 * Is additional content added within the flow of a fragment once it has been used/referenced on a page. <!-- Is [additional content added within the flow of a fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content) once it has been used/referenced on a page. -->
-* * Is available for use in the Page Editor when working with Content Fragments. <!-- * Is available for use in the [Page Editor when working with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+* * Is available for use in the Page Editor when working with Content Fragments. <!-- * Is available for use in the [Page Editor when working with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md). -->
 * In-between content can be added to any fragment, where there is only one element visible.
 * Associated content can be used, as can assets and/or components from the appropriate browser.
 
