@@ -1,10 +1,7 @@
 ---
 title: Understand the Experience Manager Assets as a Cloud Service user interface
 description: Get familiar with the Assets as a Cloud Service workspace, interface, and UI elements.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+contentOwner: AG
 
 ---
 
