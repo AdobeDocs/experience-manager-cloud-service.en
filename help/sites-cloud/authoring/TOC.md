@@ -32,8 +32,8 @@ user-guide-title: Authoring User Guide
   + [Troubleshooting AEM when Authoring](fundamentals/troubleshooting.md)
   + [Keyboard Shortcuts for Page Editing](fundamentals/keyboard-shortcuts.md)
 + Authoring Features {#features}
-    + [Using Tags](tags.md)
-    + [Creating Page Templates](templates.md)
+    + [Using Tags](features/tags.md)
+    + [Creating Page Templates](features/templates.md)
     + [Style System](style-system.md)
     + [Working with Page Versions](working-with-page-versions.md)
     + [Page Diff](page-diff.md)
