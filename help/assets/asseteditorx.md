@@ -9,7 +9,7 @@ contentOwner: AG
 
 The Asset Editor is the page that opens when an asset found through the Asset Share is clicked allowing the user to edit such aspects of the asset as metadata, thumbnail, title and tags.
 
-Configuration of the editor using the predefined editing components is covered in [Creating and Configuring an Asset Editor Page](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
+Configuration of the editor using the predefined editing components is covered in [Creating and Configuring an Asset Editor Page](https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-finder-editor.html).
 
 In addition to using pre-existing editor components, Adobe Experience Manager (AEM) developers can also create their own components.
 
@@ -197,7 +197,7 @@ This example describes how to build a component that shows and displays the meta
 
 ## Modifying Metadata Options {#modifying-metadata-options}
 
-You can modify the namespaces available in the [metadata form](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
+You can modify the namespaces available in the [metadata form](https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-finder-editor.html).
 
 Currently available metadata are defined in `/libs/dam/options/metadata`:
 

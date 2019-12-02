@@ -7,15 +7,11 @@ contentOwner: AG
 
 # Applying Workflows to Assets {#applying-workflows-to-assets}
 
-Applying workflows to digital assets is the same as for website pages. For a complete guide on how to create and use workflows in AEM, see [Starting Workflows](/help/sites-authoring/workflows-participating.md).
-
-Use workflows in digital assets to activate the asset or create watermarks. Many of the workflows for assets are automatically turned on. For example, the workflow that automatically creates a rendition after an image is edited is automatically turned on.
-
-If a workflow available in Classic UI is not available in Touch-enabled UI, like Request to Activate and Request to Deactivate, see [Make workflow models available in Touch UI](/help/sites-developing/workflows-models.md#classic2touchui).
+Applying workflows to digital assets is the same as for website pages. Use workflows in digital assets to activate the asset or create watermarks. Many of the workflows for assets are automatically turned on. For example, the workflow that automatically creates a rendition after an image is edited is automatically turned on.
 
 ## Applying a workflow to an AEM asset {#applying-a-workflow-to-an-aem-asset}
 
-For details of applying a workflow to an AEM asset, see [Starting a Workflow on an Asset](/help/assets/managing-assets-touch-ui.md#starting-a-workflow-on-an-asset).
+For details of applying a workflow to an AEM asset, see [Starting a Workflow on an Asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset).
 
 ## Applying a workflow to multiple assets {#applying-a-workflow-to-multiple-assets}
 
@@ -42,4 +38,4 @@ The procedure to apply a workflow to multiple folders is similar to the procedur
 
 ## Applying a workflow to a collection {#applying-a-workflow-to-a-collection}
 
-For details of applying a workflow to a collection, see [Running a workflow on a collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+For details of applying a workflow to a collection, see [Running a workflow on a collection](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).

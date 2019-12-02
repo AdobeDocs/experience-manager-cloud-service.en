@@ -43,7 +43,7 @@ You can choose to upload assets to folders with or without a processing profile 
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column. See [Processing Profiles](/help/assets/processing-profiles.md).
 
-Before uploading an asset, ensure that it is in a [format](/help/assets/assets-formats.md) that AEM Assets supports.
+Before uploading an asset, ensure that it is in a [format](/help/assets/file-format-support.md) that AEM Assets supports.
 
 1. In the Assets user interface, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
@@ -264,7 +264,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
   <tr>
    <td> </td>
    <td>Batch Set Presets<br /> </td>
-   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="/help/assets/managing-assets-touch-ui.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
+   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="/help/assets/manage-digital-assets.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -612,7 +612,7 @@ To preview an asset, follow these steps.
 1. From the Assets user interface, navigate to the location of the asset you want to preview.
 1. Tap the desired asset to open it.
 
-1. In the preview mode, zoom options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
+1. In the preview mode, zoom options are available for [supported Image types](/help/assets/file-format-support.md#supported-raster-image-formats) (with interactive editing).
 
    To zoom into an asset, tap/click `+` (or tap/click the magnifying glass on the asset). To zoom out, tap/click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
 
@@ -1012,7 +1012,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->In the [Collections console](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+>In the [Collections console](/help/assets/manage-collections.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
 
 >[!NOTE]
 >
@@ -1031,7 +1031,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 1. Navigate to the location of the asset to which you want to add annotations.
 1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
 
-    * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
+    * [Quick actions](/help/assets/manage-digital-assets.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
@@ -1105,7 +1105,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 1. Do one of the following:
 
     * To print all the annotations and the review status, skip step 3 and directly go to step 4.
-    * To print specific annotations and review status, open the [timeline](/help/assets/managing-assets-touch-ui.md#timeline) and then go to step 3.
+    * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
 
 1. To print specific annotations, select the annotations from the timeline.
 
@@ -1141,7 +1141,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
    >
    >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -1271,4 +1271,4 @@ A collection is an ordered set of assets. Use collections to share assets betwee
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [Managing Collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.
+See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.

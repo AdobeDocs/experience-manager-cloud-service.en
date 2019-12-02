@@ -11,10 +11,6 @@ Organizations can integrate their Adobe Stock enterprise plan with AEM Assets to
 
 Adobe Stock service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. AEM users are able to quickly find, preview, and license Adobe Stock assets that are saved in AEM, without leaving the AEM workspace.
 
-## Prerequisites {#prerequisites}
-
-The integration requires an [enterprise Adobe Stock plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) and AEM 6.5 or later. For AEM 6.5 service pack details, see these [release notes](/help/release-notes/sp-release-notes.md).
-
 ## Integrate AEM and Adobe Stock {#integrate-aem-and-adobe-stock}
 
 To allow communication between AEM and Adobe Stock, create an IMS configuration and an Adobe Stock configuration in AEM.

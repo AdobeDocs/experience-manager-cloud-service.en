@@ -71,7 +71,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
  </tbody>
 </table>
 
-This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [AEM Assets web UI](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
+This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](share-assets-as-links.md), using [AEM Assets web UI](/help/assets/manage-digital-assets.md) should be reviewed based on specific requirement.
 
 ![Creative Cloud connections for AEM: Deciding which capability to use](assets/creative-connections-aem.png)
 
@@ -109,7 +109,7 @@ Deciding on which capability to use
    <td>Use - open asset</td>
    <td>Yes</td>
    <td>Yes - for any app</td>
-   <td><a href="/help/assets/managing-assets-touch-ui.md#previewing-assets">Open from Web UI</a> or from Finder</td>
+   <td><a href="/help/assets/manage-digital-assets.md#previewing-assets">Open from Web UI</a> or from Finder</td>
   </tr>
   <tr>
    <td>Use - place asset from AEM into a document</td>
@@ -139,13 +139,13 @@ Deciding on which capability to use
    <td>Upload - single file</td>
    <td>Yes - uploads current active document</td>
    <td>Yes</td>
-   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></td>
+   <td><a href="/help/assets/manage-digital-assets.md#uploading-assets">Web UI Upload</a></td>
   </tr>
   <tr>
    <td>Upload - multiple files / hierarchical folder structures</td>
    <td>No</td>
    <td>Yes</td>
-   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p>Custom script / tool </p> </td>
+   <td><a href="/help/assets/manage-digital-assets.md#uploading-assets">Web UI Upload</a></p> <p>Custom script / tool </p> </td>
   </tr>
   <tr>
    <td>Misc - user and login</td>
@@ -174,7 +174,7 @@ To support asset distribution use cases, other solutions should be considered:
 
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
 * AEM [link share](/help/assets/link-sharing.md) to share assets ad hoc using links.
-* [AEM Assets web interface](/help/assets/managing-assets-touch-ui.md) with areas for external parties secured by AEM Access Control setup and with necessary IT / network configuration adjustments, giving these external users access to AEM.
+* [AEM Assets web interface](/help/assets/manage-digital-assets.md) with areas for external parties secured by AEM Access Control setup and with necessary IT / network configuration adjustments, giving these external users access to AEM.
 
 ## Key concepts and use cases {#key-concepts-and-use-cases}
 

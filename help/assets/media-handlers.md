@@ -15,7 +15,7 @@ Media handlers are services inside AEM Assets that perform specific actions on a
 
 >[!NOTE]
 >
->Please refer to the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
+>Please refer to the [Assets supported formats](file-format-support.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
 
 ## Default Media Handlers {#default-media-handlers}
 

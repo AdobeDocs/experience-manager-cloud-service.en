@@ -82,7 +82,7 @@ Search assets using the Omnisearch field at the top of the AEM web interface. Go
 
 Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and metadata. You can filter search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. You can customize the Filters panel and add/remove search predicates using [search facets](/help/assets/search-facets.md).
 
-AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
+AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
 ## Understand search interface {#searchui}
 
@@ -329,7 +329,7 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 ### Search collections {#collections}
 
-AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
+AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
 ## Asset selector {#assetselector}
 
@@ -461,7 +461,7 @@ Use of dash to search for assets not containing an excluded keyword
 
 ### Search index configurations {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [search index](/help/assets/performance-tuning-guidelines.md#search-indexes), [oak queries and indexing](/help/sites-deploying/queries-and-indexing.md), and [best practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See search index best practices, oak queries and indexing, and indexing best practices.
 
 ### Sort on Name column {#sortbyname}
 
@@ -510,7 +510,7 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 
 ### Extract text when uploading assets {#extracttextupload}
 
-You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -629,7 +629,7 @@ A collection is an ordered set of assets that can include assets from different 
 * A static reference list of assets, folders, and other collections.
 * A dynamic list (smart collection) that populates assets in the collection based on a search criteria.
 
-You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/managing-collections-touch-ui.md).
+You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
 
 ## Unexpected search results {#unexpectedresults}
 

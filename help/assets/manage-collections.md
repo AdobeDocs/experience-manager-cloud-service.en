@@ -51,7 +51,7 @@ You can create a collection with static references, for example a collection wit
    >
    >AEM Assets lets you create review tasks for a collection similar to the way you create review tasks for an assets folder.
 
-   To add assets to the collection, navigate to the Assets user interface. For details, see [Adding assets to a collection](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
+   To add assets to the collection, navigate to the Assets user interface. For details, see [Adding assets to a collection](/help/assets/manage-collections.md#adding-assets-to-a-collection).
 
 ### Create collections using Dropzone {#create-collections-using-dropzone}
 
@@ -259,7 +259,7 @@ Saved searches are created when you create a smart collection. Smart collections
 
 ### Editing Saved Searches {#editing-saved-searches}
 
-Editing saved searches is the same as editing smart collections. For details, see [Editing a smart collection](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection).
+Editing saved searches is the same as editing smart collections. For details, see [Editing a smart collection](/help/assets/manage-collections.md#editing-a-smart-collection).
 
 ### Deleting Saved Searches {#deleting-saved-searches}
 
@@ -290,9 +290,7 @@ You can run a workflow for the assets within a collection. If the collection con
 1. Enter a title for the workflow, and tap/click **Start**.
 1. In the dialog, tap/click **Proceed**. The workflow runs on all the assets in the collection.
 
-## See also {#see-also}
-
-* [Configure AEM Assets email notifications](/help/sites-administering/notification.md#assetsconfig)
-* [Edit metadata properties of multiple Collections](/help/assets/managing-multiple-assets.md)
-* [Create a review task for Collections](/help/assets/bulk-approval.md)
-
+>[!MORELIKETHIS]
+>
+>* [Edit metadata properties of multiple Collections](/help/assets/managing-multiple-assets.md)
+>* [Create a review task for Collections](/help/assets/bulk-approval.md)

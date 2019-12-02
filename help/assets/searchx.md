@@ -41,9 +41,7 @@ You can add additional Search tabs by configuring them in the AEM Assets Admin. 
 
 ### Creating Custom Predicates {#creating-custom-predicates}
 
-AEM Assets comes with a set of predefined predicates that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [Creating and Configuring an Asset Share Page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
-
-In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
+AEM Assets comes with a set of predefined predicates that can be used to customize an Asset Share page. In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
 
 Creating custom predicates requires basic knowledge about the [Widgets framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -399,9 +397,3 @@ The following predicates are available as preconfigured ExtJS widgets.
   </tr>
  </tbody>
 </table>
-
-### Customizing Search Results {#customizing-search-results}
-
-The presentation of search results on an Asset Share page is governed by the selected lens. AEM Assets comes with a set of predefined lenses that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [Creating and Configuring an Asset Share Page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
-
-In addition to using pre-existing lenses, AEM developers can also create their own lenses.
