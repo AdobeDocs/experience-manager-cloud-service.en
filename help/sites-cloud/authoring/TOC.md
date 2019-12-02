@@ -36,7 +36,7 @@ user-guide-title: Authoring User Guide
     + [Creating Page Templates](features/templates.md)
     + [Style System](features/style-system.md)
     + [Working with Page Versions](features/page-versions.md)
-    + [Page Diff](page-diff.md)
+    + [Page Diff](features/page-diff.md)
     + [Components Console](default-components-console.md)
     + [Responsive Layout](responsive-layout.md)
     + [Content Insight](content-insights.md)
