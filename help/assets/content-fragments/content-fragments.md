@@ -278,8 +278,8 @@ The content fragment assets are made up of the following parts (either directly 
 In-between content:
 
 * Is available for use in the Page Editor when working with Content Fragments.
-* Is additional content added within the flow of a fragment once it has been used/referenced on a page. <!-- * Is available for use in the [Page Editor when working with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-* Is [additional content added within the flow of a fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content) once it has been used/referenced on a page. -->
+* Is additional content added within the flow of a fragment once it has been used/referenced on a page. <!-- Is [additional content added within the flow of a fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content) once it has been used/referenced on a page. -->
+* * Is available for use in the Page Editor when working with Content Fragments. <!-- * Is available for use in the [Page Editor when working with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 * In-between content can be added to any fragment, where there is only one element visible.
 * Associated content can be used, as can assets and/or components from the appropriate browser.
 
