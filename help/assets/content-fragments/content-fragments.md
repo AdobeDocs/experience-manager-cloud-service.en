@@ -9,7 +9,7 @@ seo-description: Learn how Content Fragments allow you to design, create, curate
 
 Adobe Experience Manager (AEM) Content Fragments allow you to design, create, curate and publish page-independent content. They allow you to prepare content ready for use in multiple locations/over multiple channels.
 
-<!-->
+<!--
 Adobe Experience Manager (AEM) Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.
 -->
 
