@@ -36,6 +36,7 @@ A high-level architecture diagram depicts the key elements of asset ingestion an
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
+![Asset ingestion and processing with asset microservices](assets/asset-microservices-overview.png)
 
 Key steps of the ingestion and processing using asset microservices include:
 
