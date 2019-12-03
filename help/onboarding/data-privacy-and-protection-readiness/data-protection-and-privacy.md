@@ -1,6 +1,6 @@
 ---
 title: Data Protection and Data Privacy Regulations - AEM Readiness
-seo-title: AEM Readiness for Data Protection and Data Privacy Regulations - GDPR, CCPA
+seo-title: AEM Readiness for Data Protection and Data Privacy Regulations; such as GDPR, CCPA, etc
 description: Learn about Adobe Experience Manager as a Cloud Service support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 seo-description: Learn about Adobe Experience Manager as a Cloud Service support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 ---
@@ -19,6 +19,56 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service support
 
 Adobe is providing documentation and procedures (with APIs when available), for the customer privacy administrator or AEM administrator to handle data protection and data privacy requests and help our customers be compliant with these regulations. The procedures documented will allow customers to execute the regulatory requests manually or by calling into APIs, where available, from an external portal or service. 
 
+<!-- Needs confirmation -->
+>[!CAUTION]
+>
+>The details documented here are restricted to Adobe Experience Manager as a Cloud Service. Data from another Adobe Service will require actions to be taken on that service.
+
+## Introduction {#introduction}
+
+Instances of Adobe Experience Manager as a Cloud Service, and the applications that run on them, are owned and operated by our customers.
+
+As a consequence, data protection regulations, such as GDPR, CCPA, and others, are largely the responsibility of the customers.
+
+As a very brief introduction, the regulations for data privacy and protection include new rules to be followed by the roles of:
+
+* Business Entities (CCPA) and/or Data Controllers (GDPR) 
+
+* Service Providers (CCPA) and/or Data Processors (GDPR) 
+
+The main provisions in such regulations are:
+
+1. Expanded definition of personal data to include all unique IDs; as in directly and indirectly identifiable data.
+
+2. Strengthened consent requirements.
+
+3. Increased focus on deletion rights (Data Erasure).
+
+4. Opt-Out of Sale of Data.
+
+For Adobe Experience Manager as a Cloud Service:
+
+* The instances, and applications that run on them, are owned and operated by the customer. 
+
+  * This effectively means that the customer manages the regulatory roles, including Business and Service Provider, Data Controller, and Data Processor, amongst others. 
+
+  * The Adobe privacy service will not be part of the workflow for AEM, as illustrated in the diagram below. 
+
+* AEM provides documentation and procedures for the customer's Privacy Administrator and/or AEM Administrator to execute the Privacy regulation requests; either manually or through APIs, when available.
+
+* No new service or UI has been added.
+
+  * Instead procedures and APIs are documented for use by the customer UIs/portals that handle privacy regulation requests.
+
+* AEM will not include any out-of-the-box tooling to support the privacy requests workflow. 
+
+  * Adobe will provide documentation and procedures for the customer's Privacy Administrator and/or AEM Administrator, enabling them to manually execute requests related to the privacy regulations.
+
+Adobe is providing procedures for handling privacy requests related to Access, Delete and Opt-Out for Adobe Experience Manager as a Cloud Service. In some cases, there are APIs available that can be called from a customer developed portal or scripts to help with automation.
+
+![Data Protection and Privacy](assets/data-protection-and-privacy-01.png)
+
+<!--
 ## General Data Protection Regulation {#general-data-protection-regulation}
 
 The European Union's General Data Protection Regulation on data privacy rights took effect as of May 2018:
@@ -68,15 +118,15 @@ The following diagram illustrates what a CCPA request workflow might look like:
 
 ![ccpa-01](assets/ccpa-01.png)
 
+-->
+
 ## AEM as a Cloud Service and Regulatory Readiness {#aem-as-a-cloud-service-and-regulatory-readiness}
 
 Please see the sections below for regulatory documentation for product areas of AEM as a Cloud Service.
 
-<!--
 ## AEM Foundation {#aem-foundation}
 
-See [Handling GDPR Requests for the AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
--->
+See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md).
 
 <!--
 ## AEM Opting Into Aggregate Usage Statistics Collection {#aem-opting-into-aggregate-usage-statistics-collection}
@@ -84,11 +134,9 @@ See [Handling GDPR Requests for the AEM Foundation](/help/sites-administering/ha
 See [Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 -->
 
-<!--
 ## AEM Sites {#aem-sites}
 
-See [AEM Sites - GDPR Readiness.](/help/sites-administering/gdpr-compliance-sites.md)
--->
+See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-sites.md)
 
 <!--
 ## AEM Commerce {#aem-commerce}
