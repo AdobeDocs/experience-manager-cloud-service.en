@@ -41,11 +41,10 @@ user-guide-title: Authoring User Guide
   + [Components Console](features/components-console.md)
   + [Responsive Layout](features/responsive-layout.md)
 + Projects {#projects}
-    + [Projects](projects/projects.md)
-    + [Managing Projects](touch-ui-managing-projects.md)
-    + [Working with Tasks](task-content.md)
-    + [Creative Project and PIM Integration](managing-product-information.md)
-    + [Working with Project Workflows](projects-with-workflows.md)
+  + [Projects](projects/projects.md)
+  + [Managing Projects](projects/managing-projects.md)
+  + [Working with Tasks](projects/tasks.md)
+  + [Working with Project Workflows](projects/workflows.md)
 + Launches {#launches}
     + [Launches](launches.md)
     + [Creating Launches](launches-creating.md)
