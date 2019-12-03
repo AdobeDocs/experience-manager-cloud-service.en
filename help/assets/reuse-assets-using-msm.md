@@ -13,15 +13,11 @@ Multi Site Manager (MSM) functionality in Adobe Experience Manager (AEM) enables
 * Keep multiple copies in synchronization and update the original master copy once to push the changes to the child copies.
 * Make local changes by temporarily or permanently suspending the linking between parent and child assets.
 
-## Prerequisites {#configprereq}
-
-To use MSM for Assets, install at least Service Pack 1. For more information, see [the release notes](/help/release-notes/sp-release-notes.md).
-
 ## Understand the benefits and the concepts {#concepts}
 
 ### How it works and the benefits {#how-it-works-and-the-benefits}
 
-To understand the usage scenarios for reusing same content (text and assets) across multiple web-locations, see [possible MSM scenarios](/help/sites-administering/msm.md). AEM maintains a link between the original asset and its linked copies, called as live copies (LCs). The maintained linking allows centralized changes to be pushed to many live copies. This allows for faster updates while doing away with the limitations of managing duplicate copies. The propagation of changes is error-free and centralized. The functionality allows room for updates that are limited to selected live copies. Users can detach the linking, that is break inheritance, and make local edits that are not overwritten when next time the master copy is updated and changes are rolled out. The detaching can be done for a few select metadata fields or for an entire asset. It allows for flexibility to locally update assets that are originally inherited from a master copy.
+AEM maintains a link between the original asset and its linked copies, called as live copies (LCs). The maintained linking allows centralized changes to be pushed to many live copies. This allows for faster updates while doing away with the limitations of managing duplicate copies. The propagation of changes is error-free and centralized. The functionality allows room for updates that are limited to selected live copies. Users can detach the linking, that is break inheritance, and make local edits that are not overwritten when next time the master copy is updated and changes are rolled out. The detaching can be done for a few select metadata fields or for an entire asset. It allows for flexibility to locally update assets that are originally inherited from a master copy.
 
 MSM maintains a live relationship between the source asset and its live copies so that:
 

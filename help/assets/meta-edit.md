@@ -35,7 +35,7 @@ Any changes to the metadata of an asset are written back to the original binary 
 
 ## Editing Metadata Schema {#editing-metadata-schema}
 
-For details on how to edit metadata schema, see [Editing metadata schema forms](metadata-schemas.md#editing-metadata-schema-forms).
+For details on how to edit metadata schema, see [Editing metadata schema forms](metadata-schemas.md#edit-metadata-schema-forms).
 
 ## Registering a custom namespace within AEM {#registering-a-custom-namespace-within-aem}
 

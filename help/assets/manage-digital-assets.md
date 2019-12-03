@@ -1192,10 +1192,6 @@ The versioning functionality lets you do the following:
 
    ![select_version](assets/select_version.png)
 
-   >[!NOTE]
-   >
-   >You can also select the asset from the [List view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-
 1. Add a label and comment for the version to revert to the particular version in the Assets UI.
 
    ![save_version](assets/save_version.png)
