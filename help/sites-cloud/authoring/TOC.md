@@ -47,8 +47,8 @@ user-guide-title: Authoring User Guide
   + [Working with Project Workflows](projects/workflows.md)
 + Launches {#launches}
     + [Launches](launches/launches.md)
-    + [Creating Launches](launches-creating.md)
-    + [Editing Launches](launches-editing.md)
+    + [Creating Launches](launches/creating.md)
+    + [Editing Launches](launches/editing.md)
     + [Promoting Launches](launches-promoting.md)
 + Workflows {#workflows}
     + [Working with Workflows](workflows.md)
