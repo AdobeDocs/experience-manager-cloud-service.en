@@ -48,7 +48,9 @@ solution-title: Experience Cloud
   + Dispatcher in the Cloud {#dispatcher-cloud}
     + [Dispatcher in the Cloud](implementing/dispatcher/dispatcher-cloud.md)
 + Implementing Connectors for AEM as a Cloud Service {#connectors}
-  +
+  + [Implementing an AEM Connector](connectors/implement.md)
+  + [Submitting an AEM Connector](connectors/submit.md)
+  + [Maintaining an AEM Connector](connectors/maintain.md)
 + Operations and Maintenance on AEM as a Cloud Service {#operations}
   + [Content Replication Service](operations/replication.md)
   + [Content Search and Indexing](operations/indexing.md)
