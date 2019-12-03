@@ -46,7 +46,7 @@ user-guide-title: Authoring User Guide
   + [Working with Tasks](projects/tasks.md)
   + [Working with Project Workflows](projects/workflows.md)
 + Launches {#launches}
-    + [Launches](launches.md)
+    + [Launches](launches/launches.md)
     + [Creating Launches](launches-creating.md)
     + [Editing Launches](launches-editing.md)
     + [Promoting Launches](launches-promoting.md)
