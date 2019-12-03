@@ -14,16 +14,17 @@ The following terms are used in relation to Adobe Experience Manager (AEM) as a 
 |Product|Description|
 |---|---|
 |AEM as a Cloud Service|The cloud-native way of leveraging the AEM applications|
-|AEM Sites as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Sites application.|
 |AEM Assets as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Assets application.|
+|AEM Sites as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Sites application.|
 
 ## Instances and Pipelines {#instances-and-pipelines}
 
 |Instance|Desription|
 |---|---|
+|Adobe Pipeline|The mechanism for publishing content from author to publish.|
 |AEM Author Tier|Describes the authoring environment for Sites and Assets.|
 |AEM Publish Tier|Describes the publishing environment for Sites.|
-|Adobe Pipeline|The mechanism for publishing content from author to publish.|
+
 
 <!-- This section of the table must be alphabetic -->
 
