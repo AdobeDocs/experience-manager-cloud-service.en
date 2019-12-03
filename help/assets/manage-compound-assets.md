@@ -19,57 +19,40 @@ References are resolved on the basis of path, document ID, and instance ID of th
 
 You can reference existing AEM assets from within an Adobe Illustrator file.
 
-1. Using [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), mount AEM Assets repository as a drive on your local machine. Within the mounted drive, navigate to the location of the asset that you want to reference.
-1. Drag the asset from the mounted drive to the Illustrator file.
-1. Save the Illustrator file to the mounted drive, or [upload](/help/assets/manage-digital-assets.md#uploading-assets) to the AEM repository.
-1. After the worflow completes, go to the asset details page for the asset. The references to existing AEM assets are listed under **Dependencies** in the **References** column.
+To add digital assets either use [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem) or [upload using AEM](/help/assets/manage-digital-assets.md#uploading-assets) user interface.
 
-   ![chlimage_1-84](assets/chlimage_1-84.png)
+After the workflow completes, go to the asset details page for the asset. The references to existing AEM assets are listed under **Dependencies** in the **References** column. The referenced assets that appear under **Dependencies** can also be referenced by files other than the current one. 
 
-1. The referenced assets that appear under **Dependencies** can also be referenced by files other than the current one. To view a list of referencing files for an asset, click the asset in the under **Dependencies**.
-
-   ![chlimage_1-85](assets/chlimage_1-85.png)
-
-1. Click the **View Properties** icon from the toolbar. In the properties page, the list of files that reference the current asset appear under the **References** column in the **Basic** tab.
-
-   ![chlimage_1-86](assets/chlimage_1-86.png)
+To view a list of referencing files for an asset, click the asset in the under **Dependencies**. Click the **View Properties** icon from the toolbar. In the properties page, the list of files that reference the current asset appear under the **References** column in the **Basic** tab.
 
 ## Add AEM assets as references in Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
 
 To reference AEM assets from within an InDesign file, either drag AEM assets to the InDesign file or export the InDesign file as a ZIP file.
 
-Referenced assets already exist in AEM Assets. You can extract subassets by [configuring InDesign server](/help/assets/indesign.md). Embedded assets in an InDesign file are extracted as subassets.
+Referenced assets already exist in AEM Assets. You can extract subassets by configuring Adobe InDesign server. Embedded assets in an InDesign file are extracted as subassets.
 
 >[!NOTE]
 >
 >If the InDesign server is proxied, InDesign files have their preview embedded within their XMP metadata. In this case, thumbnail extraction is not explicitly required. However, if the InDesign server is not proxied, thumbnails must be explicitly extracted for InDesign files.
 
-### Create references By Dragging AEM assets {#create-references-by-dragging-aem-assets}
+### Create references by dragging AEM assets {#create-references-by-dragging-aem-assets}
 
-This procedure is similar to [Adding AEM assets as references in Adobe Illustrator](#refai). [](/help/assets/manage-compound-assets.md#refai)
+The procedure is similar to [Adding AEM assets as references in Adobe Illustrator](#refai).
 
-### Create references to AEM assets by exporting a ZIP file {#create-references-to-aem-assets-by-exporting-a-zip-file}
+### Create references to assets by exporting a ZIP file {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Create a new workflow.
 1. Use the Package feature of Adobe InDesign to export the document.
    Adobe InDesign can export a document and the linked assets as a package. In this case, the exported folder contains a Links folder that contains sub-assets in the InDesign file.
 1. Create a ZIP file and upload it to the AEM repository.
 1. Start the Unarchiver workflow.
-1. When the workflow completes, the references in the Links folder are automatically referenced as subassets. To view a list of referred assets, navigate to the asset details page of the InDesign asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
+1. When the workflow completes, the references in the Links folder are automatically referenced as subassets. To view a list of referred assets, navigate to the asset details page.
 
 ## Add AEM assets as references in Adobe Photoshop {#refps}
 
-1. Using a WebDav client, mount AEM Assets as a drive.
-1. To create references to AEM assets in a Photoshop file, navigate to the corresponding assets in the mounted drive using the Place linked functionality in Photoshop.
+To add digital assets either use [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem) or [upload using AEM](/help/assets/manage-digital-assets.md#uploading-assets) user interface.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
-1. Save in Photoshop file to the mounted drive or or [upload](/help/assets/manage-digital-assets.md#uploading-assets) to the AEM repository.
-1. After the worflow completes, the references to existing AEM assets are listed in the asset details page.
-
-   To view the referenced assets, close the [Rail](/help/sites-authoring/basic-handling.md#therail) in the asset details page.
-
-1. The referenced assets also contain the list of assets they are referenced from. To view a list of referenced assets, navigate to the asset details page and close the [Rail](/help/sites-authoring/basic-handling.md#therail).
+After the workflow completes, the references to existing AEM assets are listed in the asset details page. The referenced assets also contain the list of assets they are referenced from. To view a list of referenced assets, navigate to the asset details page.
 
 >[!NOTE]
 >
@@ -83,33 +66,10 @@ You can browse through individual pages of a file from the asset page. You can u
 
 1. Navigate to the folder in AEM Assets that contains the multi-page file.
 1. Click the asset to view its asset page.
-
-   ![chlimage_1-88](assets/chlimage_1-88.png)
-
 1. Click the Global Nav icon, and then choose **Pages** from the menu.
-
-   ![chlimage_1-89](assets/chlimage_1-89.png)
-
 1. Click the left or right arrows below the image to navigate to individual pages of the file.
-
-   ![chlimage_1-90](assets/chlimage_1-90.png)
-
 1. To annotate a page, click the **Annotate** icon from the toolbar and add a comment.
-
-   ![chlimage_1-91](assets/chlimage_1-91.png)
-
 1. To download the file, click the **Download** icon.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
-
 1. To view all pages of the file simultaneously, click the **Page Overview** icon.
-
-   ![chlimage_1-93](assets/chlimage_1-93.png)
-
-1. To view the activity stream for the file, including annotations and downloads, click the Global Nav ico and then choose **Timeline** from the menu.
-
-   ![chlimage_1-94](assets/chlimage_1-94.png)
-
+1. To view the activity stream for the file, including annotations and downloads, click the AEM icon and then choose **Timeline** from the menu.
 1. To view and edit the metadata properties of the page, click the **View Properties** icon from the toolbar.
-
-   ![chlimage_1-95](assets/chlimage_1-95.png)

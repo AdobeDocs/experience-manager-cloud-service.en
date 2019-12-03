@@ -19,11 +19,9 @@ To edit metadata:
 
     * From the Assets UI, select the asset and click/tap the **[!UICONTROL View Properties]** icon from the toolbar.
     * From the asset thumbnail, select the **[!UICONTROL View Properties]** quick action.
-    * From the asset page, click/tap the **[!UICONTROL View Properties]** icon ![chlimage_1-168](assets/chlimage_1-168.png) from the toolbar.
+    * From the asset page, click/tap **[!UICONTROL View Properties]** from the toolbar.
 
    The asset page displays all of the asset's metadata. This metadata was automatically extracted when it was uploaded (ingested) into AEM Assets.
-
-   ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click/tap **[!UICONTROL Save]** from the toolbar to save your changes. Click/tap **[!UICONTROL Close]** to return to the Assets web interface.
 
@@ -31,9 +29,9 @@ To edit metadata:
    >
    >If a text field is empty, there is no existing metadata set. You can enter a value into the field and save it to add that metadata property.
 
-Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. This is done via AEM's Metadata write-back workflow. Changes made to the existing properties (such as `dc:title`) are overwritten and newly created properties (including custom properties like `cq:tags`) are added together with the schema.
+Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. This is done via AEM's metadata write-back workflow. Changes made to the existing properties (such as `dc:title`) are overwritten and newly created properties (including custom properties like `cq:tags`) are added together with the schema.
 
-XMP write-back is supported and enabled for the platforms and file formats described in [Technical Requirements.](/help/sites-deploying/technical-requirements.md)
+<!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
 ## Editing Metadata Schema {#editing-metadata-schema}
 

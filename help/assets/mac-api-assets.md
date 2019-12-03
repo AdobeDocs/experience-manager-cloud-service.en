@@ -9,7 +9,7 @@ contentOwner: AG
 
 ## Overview {#overview}
 
-The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
+The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/content-fragments/content-fragments.md).
 
 To access the API:
 
@@ -24,13 +24,13 @@ After the [!UICONTROL Off Time], an asset and its renditions are not available e
 
 A [content fragment](/help/assets/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.
 
-For further information see [Content Fragments Support in the AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md).
+For further information see [Content Fragments Support in the AEM Assets HTTP API](/help/assets/content-fragments/content-fragments.md).
 
 ## Data model {#data-model}
 
 The Assets HTTP API exposes two major elements, folders and assets (for standard assets).
 
-Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](/help/assets/assets-api-content-fragments.md#content-fragments) for further information.
+Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](/help/assets/content-fragments/content-fragments.md) for further information.
 
 ### Folders {#folders}
 
@@ -59,7 +59,7 @@ In AEM an assets contains the following elements:
 * Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or InDesign.
 * Optional comments
 
-For information about elements in Content Fragments see [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
+For information about elements in Content Fragments see [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/content-fragments.md).
 
 In AEM a folder has the following components:
 

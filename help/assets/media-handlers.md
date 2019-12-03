@@ -103,9 +103,7 @@ It is possible to view the active media handlers:
 
 1. In your browser, navigate to `http://localhost:4502/system/console/components`.
 1. Click the link `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
-1. A list with all the active media handlers is displayed. For example:
-
-![chlimage_1-437](assets/chlimage_1-437.png)
+1. A list with all the active media handlers is displayed.
 
 ## Using Media Handlers in Workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
@@ -173,6 +171,7 @@ The interface and classes include:
 * `com.day.cq.dam.core.AbstractAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality plus common used functionality for subasset extraction.
 
+<!--
 #### Example: create a specific Text Handler {#example-create-a-specific-text-handler}
 
 In this section, you will create a specific Text Handler that generates thumbnails with a watermark.
@@ -209,121 +208,6 @@ After you perform the following procedure, when you upload a txt file into AEM, 
     1. Click **[!UICONTROL OK]**. In the dialog window, click Yes.
 
 1. Replace the code in the pom.xml file with the following code:
-
-   ```xml
-   <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <!-- ====================================================================== -->
-    <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
-    <!-- ====================================================================== -->
-    <parent>
-     <groupId>com.day.cq.dam</groupId>
-     <artifactId>dam</artifactId>
-     <version>5.2.14</version>
-     <relativePath>../parent</relativePath>
-    </parent>
-    <!-- ====================================================================== -->
-    <!-- P R O J E C T D E S C R I P T I O N -->
-    <!-- ====================================================================== -->
-    <groupId>com.day.cq5.myhandler</groupId>
-    <artifactId>myBundle</artifactId>
-    <name>My CQ5 bundle</name>
-    <version>0.0.1-SNAPSHOT</version>
-    <description>This is my CQ5 bundle</description>
-    <packaging>bundle</packaging>
-    <!-- ====================================================================== -->
-    <!-- B U I L D D E F I N I T I O N -->
-    <!-- ====================================================================== -->
-    <build>
-     <plugins>
-      <plugin>
-       <groupId>org.apache.felix</groupId>
-       <artifactId>maven-scr-plugin</artifactId>
-      </plugin>
-      <plugin>
-       <groupId>org.apache.sling</groupId>
-       <artifactId>maven-sling-plugin</artifactId>
-       <configuration>
-        <slingUrlSuffix>/libs/dam/install/</slingUrlSuffix>
-       </configuration>
-      </plugin>
-      <plugin>
-       <groupId>org.apache.felix</groupId>
-       <artifactId>maven-bundle-plugin</artifactId>
-       <extensions>true</extensions>
-       <configuration>
-        <instructions>
-         <Bundle-Category>cq5</Bundle-Category>
-         <Export-Package> com.day.cq5.myhandler </Export-Package>
-        </instructions>
-       </configuration>
-      </plugin>
-     </plugins>
-    </build>
-    <!-- ====================================================================== -->
-    <!-- D E P E N D E N C I E S -->
-    <!-- ====================================================================== -->
-    <dependencies>
-     <dependency>
-      <groupId>com.day.cq.dam</groupId>
-      <artifactId>cq-dam-api</artifactId>
-      <version>5.2.10</version>
-      <scope>provided</scope>
-     </dependency>
-     <dependency>
-      <groupId>com.day.cq.dam</groupId>
-      <artifactId>cq-dam-core</artifactId>
-      <version>5.2.10</version>
-      <scope>provided</scope>
-     </dependency>
-     <dependency>
-      <groupId>com.day.cq</groupId>
-      <artifactId>cq-commons</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>javax.jcr</groupId>
-      <artifactId>jcr</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>org.apache.felix</groupId>
-      <artifactId>org.osgi.compendium</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>commons-lang</groupId>
-      <artifactId>commons-lang</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>commons-collections</groupId>
-      <artifactId>commons-collections</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>com.day.commons</groupId>
-      <artifactId>day-commons-gfx</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>com.day.commons</groupId>
-      <artifactId>day-commons-text</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>com.day.cq.workflow</groupId>
-      <artifactId>cq-workflow-api</artifactId>
-     </dependency>
-     <dependency>
-      <groupId>com.day.cq.wcm</groupId>
-      <artifactId>cq-wcm-foundation</artifactId>
-      <version>5.2.22</version>
-     </dependency>
-    </dependencies>
-   ```
 
 1. Create the package `com.day.cq5.myhandler` that contains the Java classes under `myBundle/src/main/java`:
 
@@ -484,6 +368,8 @@ After you perform the following procedure, when you upload a txt file into AEM, 
 1. In CRX Explorer, create a new node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
 1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example with WebDAV). The new text handler is now active in AEM.
 1. In your browser, open the Apache Felix Web Management Console. Select the Components tab and disable the default text handler `com.day.cq.dam.core.impl.handler.TextHandler`.
+
+--> 
 
 ## Command Line Based Media Handler {#command-line-based-media-handler}
 

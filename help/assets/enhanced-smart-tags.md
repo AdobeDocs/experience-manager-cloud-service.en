@@ -82,8 +82,6 @@ You can train the Smart Content Service periodically or on requirement basis.
 
 You can enable the Smart Content Service to train periodically on the assets and associated tags within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
 
-![enable_smart_tags](assets/enable_smart_tags.png)
-
 Once this option is selected for a folder, AEM runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
 
 ### On-demand training {#on-demand-training}
@@ -94,8 +92,6 @@ You can train the Smart Content Service whenever required from the Workflow cons
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
 1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
 1. Specify a title for the workflow and a add a comment. Then, tap/click **[!UICONTROL Run]**. The assets and tags are submitted for training.
-
-   ![workflow_dialog](assets/workflow_dialog.png)
 
 >[!NOTE]
 >
@@ -132,7 +128,7 @@ You can run the tagging workflow periodically or whenever required.
 
 You can enable the Smart Content Service to periodically tag assets within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
 
-Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default,thetagging workflow runs every day at 12:00 AM.
+Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default, the tagging workflow runs every day at 12:00 AM.
 
 ### On-demand tagging {#on-demand-tagging}
 
@@ -149,26 +145,18 @@ You can trigger the tagging workflow from the following to instantly tag your as
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
-
-   ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
-
 1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
 1. Specify a title for the workflow and an optional comment. Then, tap/click **[!UICONTROL Run]**.
 
-   ![tagging_dialog](assets/tagging_dialog.png)
-
-   Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](managing-smart-tags.md).
+Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
 
 #### Tagging assets from the timeline {#tagging-assets-from-the-timeline}
 
 1. From the Assets user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
 1. Tap/click the GlobalNav icon and open the timeline.
 1. Tap/click the arrow at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
-
-   ![start_workflow](assets/start_workflow.png)
-
 1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Tap/click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](managing-smart-tags.md).
+1. Tap/click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
 
 >[!NOTE]
 >
@@ -177,4 +165,3 @@ You can trigger the tagging workflow from the following to instantly tag your as
 >However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours.
 >
 >For periodic tagging workflows, unaltered assets are tagged when the gap exceeds 6 months.
-
