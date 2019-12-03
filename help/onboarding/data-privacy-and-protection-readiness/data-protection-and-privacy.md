@@ -126,7 +126,7 @@ Please see the sections below for regulatory documentation for product areas of 
 
 ### AEM Foundation {#aem-foundation}
 
-See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-protection-and-privacy-foundation.md).
+See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md).
 
 <!--
 ## AEM Opting Into Aggregate Usage Statistics Collection {#aem-opting-into-aggregate-usage-statistics-collection}
@@ -136,7 +136,7 @@ See [Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggreg
 
 ### AEM Sites {#aem-sites}
 
-See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-protection-and-privacy-sites.md)
+See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-sites.md)
 
 <!--
 ## AEM Commerce {#aem-commerce}

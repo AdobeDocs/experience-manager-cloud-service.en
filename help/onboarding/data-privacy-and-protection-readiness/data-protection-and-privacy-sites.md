@@ -23,15 +23,15 @@ For further information see the [Adobe Privacy Center](https://www.adobe.com/pri
 
 >[!NOTE]
 >
->See [AEM Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-protection-and-privacy.md) for further details.
+>See [AEM Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md) for further details.
 
 ## AEM Author Tier {#aem-author-tier}
 
-User accounts and UGC content on the author server are covered in the [AEM Foundation documentation](/help/onboarding/data-protection-and-privacy.md).
+User accounts and UGC content on the author server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md).
 
 ## AEM Publish Tier {#aem-publish-tier}
 
-User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [AEM Foundation documentation](/help/onboarding/data-protection-and-privacy.md).
+User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md).
 
 By default AEM Sites components do not store form-data entered by visitors on the  publish  server. It is recommended to forward the data to a third party system, or Adobe Campaign for further processing.
 
