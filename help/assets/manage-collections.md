@@ -203,7 +203,7 @@ Saved searches are created when you create a smart collection. Smart collections
 
 ### Edit saved searches {#edit-saved-searches}
 
-Editing saved searches is the same as editing smart collections. For details, see [Editing a smart collection](/help/assets/manage-collections.md#editing-a-smart-collection).
+Editing saved searches is the same as editing smart collections. For details, see [Edit a smart collection](#edit-a-smart-collection).
 
 ### Delete Saved Searches {#delete-saved-searches}
 

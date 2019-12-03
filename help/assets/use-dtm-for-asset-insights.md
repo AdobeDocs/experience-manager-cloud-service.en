@@ -15,6 +15,7 @@ Although you can customize your tracking code to enable third-party CMS solution
 >
 >Insights are only supported and provided for images.
 
+<!--
 Perform these steps to enable Asset Insights through DTM.
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Insights Configuration]**.
@@ -65,42 +66,6 @@ Perform these steps to enable Asset Insights through DTM.
 
 1. Paste the following code in the window:
 
-   ```
-   var sObj;
-    
-   if (arguments.length > 0) {
-     sObj = arguments[0];
-   } else {
-     sObj = _satellite.getToolsByType('sc')[0].getS();
-   }
-   _satellite.notify('in assetAnalytics customInit');
-   (function initializeAssetAnalytics() {
-     if ((!!window.assetAnalytics) && (!!assetAnalytics.dispatcher)) {
-       _satellite.notify('assetAnalytics ready');
-       /** NOTE:
-           Copy over the call to 'assetAnalytics.dispatcher.init()' from Assets Pagetracker
-           Be mindful about changing the AppMeasurement object as retrieved above.
-       */
-       assetAnalytics.dispatcher.init(
-             "",  /** RSID to send tracking-call to */
-             "",  /** Tracking Server to send tracking-call to */
-             "",  /** Visitor Namespace to send tracking-call to */
-             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, e.g. 'listVar1' */
-             "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
-             "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
-             "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
-             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, please include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
-             );
-       sObj.usePlugins = true;
-       sObj.doPlugins = assetAnalytics.core.updateContextData;
-       assetAnalytics.core.optimizedAssetInsights();
-     }
-     else {
-       _satellite.notify('assetAnalytics not available. Consider updating the Custom Page Code', 4);
-     }
-   })();
-   ```
-
     * The page load rule in DTM only includes the pagetracker.js code. Any `assetAnalytics` fields are considered as overrides for default values. They are not required by default.
     * The code calls `assetAnalytics.dispatcher.init`() after making sure that `_satellite.getToolsByType('sc')[0].getS`() is initialized and `assetAnalytics,dispatcher.init` is available. Therefore, you can skip adding it in step 11.
     
@@ -111,3 +76,5 @@ Perform these steps to enable Asset Insights through DTM.
 
 1. Save and close the Code Editor window, and then save the changes in the Tool configuration.
 1. In the **[!UICONTROL Approvals]** tab, approve both the pending approvals. The DTM tag is ready for insertion in your web page. For details on how to insert DTM tags in web pages, see [Integrating DTM in custom page templates](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
+
+-->

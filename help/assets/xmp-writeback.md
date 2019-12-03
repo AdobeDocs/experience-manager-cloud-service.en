@@ -33,8 +33,6 @@ To enable the metadata changes to be propagated to the renditions of the asset w
 1. Open the **Adobe CQ DAM Rendition Maker** configuration.
 1. Select the **Propagate XMP** option, and then save the changes.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png)
-
 ## Enabling XMP writeback for specific renditions {#enabling-xmp-writeback-for-specific-renditions}
 
 To let the XMP Writeback feature propagate metadata changes to select renditions, specify these renditions to the XMP Writeback Process workflow step of DAM Metadata WriteBack workflow. By default, this step is configured with the original rendition.
@@ -58,11 +56,13 @@ For the XMP Writeback feature to propagate metadata to the rendition thumbnails 
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 
+<!--
 >[!NOTE]
 >
 >For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+-->
 
 ## Filtering XMP metadata {#filtering-xmp-metadata}
 
@@ -79,8 +79,6 @@ Whitelist filtering of XMP metadata resolves this issue by letting you define th
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **Adobe CQ DAM XmpFilter** configuration.
 1. To apply whitelist filtering, select **Apply Whitelist to XMP Properties**, and specify the properties to be imported in the **Whitelisted XML Names for XMP filtering** box.
-
-   ![chlimage_1-136](assets/chlimage_1-136.png)
 
 1. To filter out blacklisted XMP properties after applying whitelist filtering, specify them in the **Blacklisted XML Names for XMP filtering** box.
 

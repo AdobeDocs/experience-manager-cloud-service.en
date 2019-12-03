@@ -19,15 +19,11 @@ AEM assets provide playback support for these renditions on the client side.
 
 To view the renditions of a particular video asset, open its asset page, and tap the Global Navigation icon. Then, choose **[!UICONTROL Renditions]** from the list.
 
-![chlimage_1-478](assets/chlimage_1-478.png)
-
 The list of video renditions are displayed in the **[!UICONTROL Renditions]** panel.
-
-![chlimage_1-479](assets/chlimage_1-479.png)
 
 To configure the proxy server for DM-encoded renditions, configure Dynamic Media Cloud services.
 
-To generate video renditions with desired parameters, [create a corresponding video profile](video-profiles.md).
+<!-- To generate video renditions with desired parameters, [create a corresponding video profile](video-profiles.md). -->
 
 After you configure the proxy server and create video profiles, you can include this video preset in a processing profile and apply the processing profile to a folder.
 

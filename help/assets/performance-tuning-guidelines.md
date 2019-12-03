@@ -177,41 +177,6 @@ Many Sites customers implement an image servlet that resizes and crops images at
 
 An alternative approach is to use Scene7 technology to hand off image manipulation entirely. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the AEM infrastructure, but also the entire publish tier.
 
-#### ImageMagick {#imagemagick}
-
-If you customize the DAM Update Asset workflow to generate renditions using ImageMagick, Adobe recommends you modify the policy.xml file at */etc/ImageMagick/*. By default, ImageMagick uses the entire available disk space on the OS volume, and the available memory. Make the following configuration changes within the `policymap` section of policy.xml to limit these resources.
-
-```xml
-<policymap>
-  <!-- <policy domain="system" name="precision" value="6"/> -->
-  <policy domain="resource" name="temporary-path" value="/ephemeral0/imagemagick_tmp"/>
-  <policy domain="resource" name="memory" value="1000MiB"/>
-  <policy domain="resource" name="map" value="1000MiB"/>
-  <!-- <policy domain="resource" name="area" value="1gb"/> -->
-  <policy domain="resource" name="disk" value="10000MiB"/>
-  <!-- <policy domain="resource" name="file" value="768"/> -->
-  <policy domain="resource" name="thread" value="1"/>
-  <policy domain="resource" name="throttle" value="50"/>
-  <!-- <policy domain="resource" name="time" value="3600"/> -->
-</policymap>
-```
-
-In addition, set the path of ImageMagick's temporary folder in the *configure.xml* file (or by setting the environment variable `MAGIC_TEMPORARY_PATH`) to a disk partition that has sufficient space and IOPS.
-
->[!CAUTION]
->
->A mis-configuration can make your server unstable if ImageMagick uses all the available disk space.
->
->The policy changes required to process large files using ImageMagick may impact the AEM performance. For more information, see [install and configure ImageMagick](/help/assets/best-practices-for-imagemagick.md).
-
->[!NOTE]
->
->The ImageMagick policy.xml and configure.xml files may be found under /usr/lib64/ImageMagick-&#42;/config/ instead of /etc/ImageMagick/. Refer to the [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
-
->[!NOTE]
->
->If you are using AEM on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files.
-
 ### XMP writeback {#xmp-writeback}
 
 XMP writeback updates the original asset whenever metadata is modified in AEM, which results in the following:
@@ -242,7 +207,9 @@ When replicating assets to a large number of publish instances, for example in a
 
 Make sure you implement the latest service packs and performance-related hotfixes as they often include updates to system indexes. See [Performance tuning tips | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations that can be applied, depending on your version of AEM.
 
+<!--
 Create custom indexes for queries that you run often. For details, see [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/help/sites-deploying/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+-->
 
 ### Lucene index configurations {#lucene-index-configurations}
 
@@ -285,6 +252,7 @@ Update index configurations to improve reindexing time:
 
 1. Click "Save All"
 
+<!--
 Disable Lucene Text Extraction:
 
 If your users don't need to be able to search the contents of assets, for example, searching the text contained in PDF documents, then you can improve index performance by disabling this feature.
@@ -293,6 +261,7 @@ If your users don't need to be able to search the contents of assets, for exampl
 1. Upload and install the package below
 
 [Get File](assets/disable_indexingbinarytextextraction-10.zip)
+-->
 
 ### Guess Total {#guess-total}
 

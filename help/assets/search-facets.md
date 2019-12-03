@@ -67,7 +67,7 @@ For full-text searches, add the Fulltext predicate to the form. Use the Property
 
    Preview the search form before submitting the changes
 
-1. To close the preview, tap/click the **[!UICONTROL Close]** ![close](assets/close.png) on the upper-right corner of the preview.
+1. To close the preview, tap/click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
 1. Tap **[!UICONTROL Done]** to save the settings.
 1. Navigate to the Search panel in the Assets user interface. The Property predicate is added to the panel.
 1. Enter a description for the asset to be searched in the text box. For example, enter "Adobe." When you perform a search, assets with description matching "Adobe" are listed in the search results.
@@ -83,8 +83,6 @@ The `jcr:title` property is a user-friendly name for the option that is displaye
 When you select an option, the search is performed based on the `value` property of the option node and its child nodes, if any. The entire tree under the option node is traversed and the `value` property of each child node is combined using an OR operation to form the search query.
 
 For example, if you select "Images" for file types, the search query for the assets is built by combining the `value` property using an OR operation. For example, the search query for images is built by combining the results matched for *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, and *image/tiff* for the property `jcr:content/metadata/dc:format` using an OR operation.
-
-![Value property of a file type, as seen in CRXDE, is used for search queries to work](assets/chlimage_1-418.png)
 
 Value property of a file type, as seen in CRXDE, is used for search queries to work
 
@@ -157,11 +155,6 @@ The Tag predicate allows you to perform tag-based searches for assets. By defaul
 1. In the **[!UICONTROL Description]** field, enter an optional description and then click/tap **[!UICONTROL Done]**.
 1. Navigate to the Search panel. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Specify tags based on which you want to search assets or select from the list of suggestions.
-
-   ![AEM-provided suggestion when typing name of tag](assets/chlimage_1-419.png)
-
-   AEM-provided suggestion when typing name of tag
-
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
 ## Adding other predicates {#adding-other-predicates}
@@ -328,14 +321,12 @@ Similar to the way you add a Property predicate or an Options predicate, you can
 
 By default, a Lock icon appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. The Lock icon disappears if you add search facets to the form indicating that the default form has been modified.
 
-![Lock icon against an option on the Search Forms page indicate that the default settings are intact and are not customized.](assets/locked_admin_rail.png)
-
 Lock icon against an option on the Search Forms page indicate that the default settings are intact and are not customized.
 
 To restore the default search facet, perform these steps:
 
 1. Select **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
-1. Tap **[!UICONTROL Delete]** ![deleteoutline](assets/deleteoutline.png) in the toolbar.
+1. Tap **[!UICONTROL Delete]** ![delete icon](assets/do-not-localize/deleteoutline.png) in the toolbar.
 1. In the confirmation dialog, tap **[!UICONTROL Delete]** to remove the custom changes.
 
    After you delete the custom changes to search facets, the Lock icon reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.

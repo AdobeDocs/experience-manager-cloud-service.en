@@ -291,6 +291,7 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
    Easily update many assets in live copy folders from the Live Copy Overview console
 
+<!--
 ## Extend MSM for Assets {#extendapi}
 
 AEM allows you to extend the functionality using the MSM Java APIs. For Assets, the extending works just the same as it works with MSM for Site. For details, see [Extending the MSM](/help/sites-developing/extending-msm.md) and the following for information about specific tasks:
@@ -307,7 +308,8 @@ AEM allows you to extend the functionality using the MSM Java APIs. For Assets, 
 >* Blueprint in MSM for Site is called Live Copy source in MSM for Assets.
 >* Removing the chapters step in the create site wizard is not supported in MSM for Assets.
 >* Configuring MSM locks on page properties (Touch-enabled UI) is not supported in MSM for Assets.
->
+
+--> 
 
 ## Impact of asset management tasks on live copies {#manageassets}
 

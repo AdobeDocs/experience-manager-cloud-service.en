@@ -1,11 +1,11 @@
 ---
-title: Extending Assets Search
-description: Extend the search capabilities of AEM Assets beyond out-of-the-box searches for assets by strings.
+title: Extend search options and feature in Adobe Experience Manager Assets
+description: Extend the search capabilities of Assets.
 contentOwner: AG
 
 ---
 
-# Extending Assets Search {#extending-assets-search}
+# Extend assets search {#extend-assets-search}
 
 You can extend Adobe Experience Manager (AEM) Assets search capabilities. Out of the box, AEM Assets searches for assets by strings.
 
@@ -13,22 +13,15 @@ Searching is done via the QueryBuilder interface so the search can be customized
 
 You can also add additional tabs to the AEM Assets admin panel.
 
->[!CAUTION]
->
->As of AEM 6.4, Classic UI is deprecated. For announcement, see [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md). You are encouraged to use Touch-enabled UI. For customizations, see [Search Facets](/help/assets/search-facets.md).
-
-## Overlaying {#overlaying}
+## Overlay {#overlay}
 
 To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the searchpanel configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
-![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
-
 >[!NOTE]
 >
->By default, the directory structure under / `apps` does not exist and needs to be created. Ensure that the node types match those under / `libs`.
->
+>By default, the directory structure under `/apps` does not exist and needs to be created. Ensure that the node types match those under `/libs`.
 
-### Adding tabs {#adding-tabs}
+### Add tabs {#add-tabs}
 
 You can add additional Search tabs by configuring them in the AEM Assets Admin. To create additional tabs:
 
@@ -37,11 +30,12 @@ You can add additional Search tabs by configuring them in the AEM Assets Admin. 
 
    >[!NOTE]
    >
-   >When you create a second siteadminsearchpanel, be sure to set an `id` property in order to prevent form conflicts.
+   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property in order to prevent form conflicts.
 
-### Creating Custom Predicates {#creating-custom-predicates}
+### Create custom predicates {#create-custom-predicates}
 
-AEM Assets comes with a set of predefined predicates that can be used to customize an Asset Share page. In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
+AEM Assets comes with a set of predefined predicates that can be used to customize an Asset Share page. 
+<!-- In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md). -->
 
 Creating custom predicates requires basic knowledge about the [Widgets framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 

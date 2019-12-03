@@ -7,7 +7,7 @@ contentOwner: AG
 
 # Manage assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
 
-This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
+This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To manage Content Fragments, see [Content Fragments](content-fragments/content-fragments.md) assets.
 
 ## Create folders {#creating-folders}
 
@@ -41,7 +41,7 @@ You can upload various types of assets (including images, PDF files, RAW files, 
 
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
-For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column. See [Processing Profiles](/help/assets/processing-profiles.md).
+For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column.
 
 Before uploading an asset, ensure that it is in a [format](/help/assets/file-format-support.md) that AEM Assets supports.
 
@@ -91,12 +91,6 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/file-for
 
    If the asset you upload exists in AEM Assets, the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets does not matter.
 
-   >[!NOTE]
-   >
-   >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
-
-   ![chlimage_1-214](assets/chlimage_1-214.png)
-
    To retain the duplicate asset in AEM Assets, tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
    AEM Assets prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, AEM Assets displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
@@ -107,8 +101,6 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/file-for
 
     * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
     * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-
-   ![chlimage_1-215](assets/chlimage_1-215.png)
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -134,7 +126,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 >[!NOTE]
 >
->To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the AEM author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
+>To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the AEM author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account.
 >
 >If you use FTP for uploading assets, the upload settings specified in AEM are ignored. Instead, file processing rules, as defined in Dynamic Media Classic, are used.
 
@@ -264,7 +256,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
   <tr>
    <td> </td>
    <td>Batch Set Presets<br /> </td>
-   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="/help/assets/manage-digital-assets.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
+   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="/help/assets/manage-digital-assets.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -578,7 +570,8 @@ To transcode a video file by choosing from a variety of video presets.
 
 If you want to automatically create an Image Set or Spin Set from uploaded images, click the Active column for the preset you want to use. You can select more than one preset.
 
-See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
+<!-- See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
+-->
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -612,17 +605,11 @@ To preview an asset, follow these steps.
 1. From the Assets user interface, navigate to the location of the asset you want to preview.
 1. Tap the desired asset to open it.
 
-1. In the preview mode, zoom options are available for [supported Image types](/help/assets/file-format-support.md#supported-raster-image-formats) (with interactive editing).
+1. In the preview mode, zoom options are available for [supported Image types](/help/assets/file-format-support.md) (with interactive editing).
 
    To zoom into an asset, tap/click `+` (or tap/click the magnifying glass on the asset). To zoom out, tap/click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
 
-   ![uploadicon](assets/uploadicon.png)
-
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
-
-   ![chlimage_1-216](assets/chlimage_1-216.png)
-
-See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Editing Properties {#editing-properties}
 
@@ -668,7 +655,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-   For more details, see [Asset Insights](/help/assets/touch-ui-asset-insights.md).
+   For more details, see [Asset Insights](assets-insights.md).
 
 1. Tap/click **[!UICONTROL Save & Close]**.
 1. Navigate to the Assets user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
@@ -852,9 +839,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publishing Assets {#publishing-assets}
 
+<!--
 >[!NOTE]
 >
 >For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
+-->
 
 1. Navigate to the location of the asset(s)/folder you want to publish
 
@@ -932,22 +921,6 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 * Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
-### Navigating and Selecting Assets {#navigating-and-selecting-assets}
-
-You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** icon. The **[!UICONTROL Select]** icon appears as a quick action in the Card view.
-
-![select_quick_action](assets/select_quick_action.png)
-
-In List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in the list.
-
-![select_quick_in_listview](assets/select_quick_in_listview.png)
-
-Similar to List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in Column view.
-
-![select_quick_in_columnview](assets/select_quick_in_columnview.png)
-
-For more information, see [Viewing and Selecting your Resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-
 ## Editing Images {#editing-images}
 
 The editing tools in the AEM Assets interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
@@ -997,7 +970,7 @@ The editing tools in the AEM Assets interface let you perform small editing jobs
 >
 >Image editing is supported for BMP, GIF, PNG, and JPEG files formats.
 
-You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md).
+<!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
 
 >[!NOTE]
 >
@@ -1016,7 +989,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->Timeline contains several [options specific to content fragments](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>Timeline contains several [options specific to content fragments](content-fragments/content-fragments.md).
 
 ## Annotating {#annotating}
 
@@ -1026,12 +999,12 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 >[!NOTE]
 >
->For Content Fragments, [annotations are created in the fragment editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
+>For Content Fragments, [annotations are created in the fragment editor](content-fragments/content-fragments.md).
 
 1. Navigate to the location of the asset to which you want to add annotations.
 1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
 
-    * [Quick actions](/help/assets/manage-digital-assets.md#quick-actions)
+    * [Quick actions](#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
@@ -1061,7 +1034,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    >[!NOTE]
    >
-   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](/help/assets/managing-video-assets.md).
+   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
 
 1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
@@ -1237,7 +1210,7 @@ The versioning functionality lets you do the following:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starting a workflow on an asset {#starting-a-workflow-on-an-asset}
+### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
 1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
