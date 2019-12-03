@@ -1,10 +1,7 @@
 ---
 title: Configure and use asset microservices for asset processing
 description: Learn how to configure and use the cloud-native asset microservices to process assets at scale.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+contentOwner: AG
 
 ---
 

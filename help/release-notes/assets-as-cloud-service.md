@@ -1,10 +1,7 @@
 ---
-title: What's new in Assets as a Cloud Service solution and release notes
-description: What's new in Assets as a Cloud Service solution and release notes.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+title: What's new in Assets as a Cloud Service and release notes
+description: What's new in Assets as a Cloud Service and release notes.
+contentOwner: AG
 
 ---
 
@@ -13,13 +10,11 @@ sub-product: Adobe Experience Manager Cloud Service
 What are the new shiny things for the customers.
 Need a quick overview from PM about change in philosophy and offering -- why cloud services are better and how asset processing is cloud will help. Improves TTV for partners/administrators, TCO for organizations, TTM for marketers and business owners, and UX for end-users/consumers.
 
-
 * Link to the advantages of AEM SaaS offering if documented in Sites docs. Otherwise link to the a.com pages created by marketing and GTM teams.
 * A top-level list of all integrations or services that work/are provisioned OOTB? For example, simplified Smart Tagging service configurations and OOTB third-party integrations.
 * Describe asset microservices
 * Any coverage for metadata processing or writeback?
 * If it changes then mention about support contracts or how customers avail support?
-
 
 See also a comparison with AEM offering.
 
@@ -62,7 +57,7 @@ What all will the license provide.
 
 See [AEM terms](/help/overview/terminology.md)
 
-Add any additional terms that are specific to Assets. Some items could be:
+Add any additional terms that are specific to Assets. Some jargon could be related to:
 * File formats
 * Microservices information or workflows
-* Metadata specific terms like writeback, IPTC, XMP, etc.
+* Metadata specific terms like writeback, IPTC, XMP, and so on.

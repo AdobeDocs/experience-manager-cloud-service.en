@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service
+git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service.en
 cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
@@ -24,7 +24,7 @@ solution-title: Experience Cloud
     + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-sites.md)
 + AEM Sites in the Cloud {#cloud-sites}
   + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
-+ AEM Assets in the Cloud {#cloud-assets}
++ AEM Assets in the Cloud {#assets}
   + [Overview and what's new](/help/release-notes/assets-as-cloud-service.md)
   + [Compare with AEM](/help/assets/compare-with-aem.md)
   + [Architecture](/help/assets/architecture.md)

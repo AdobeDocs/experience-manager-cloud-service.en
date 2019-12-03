@@ -1,10 +1,7 @@
 ---
 title: Compare Assets as a Cloud Service solution with Adobe Experience Manager 6.5
 description: Differences with and improvements in the new Assets as a Cloud Service vs Adobe Experience Manager 6.5 offering.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+contentOwner: AG
 
 ---
 
