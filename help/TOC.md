@@ -36,6 +36,8 @@ solution-title: Experience Cloud
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
   + Content Fragments {#content-fragments}
+    + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+    + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
   + Reference Material for Assets {#reference-material-for-assets}
     + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
 + Implementing for AEM as a Cloud Service {#implementing}
