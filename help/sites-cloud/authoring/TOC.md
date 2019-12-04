@@ -52,7 +52,7 @@ user-guide-title: Authoring User Guide
   + [Promoting Launches](launches/promoting.md)
 + Workflows {#workflows}
     + [Working with Workflows](workflows/workflows.md)
-    + [Applying Workflows to Pages](workflows-applying.md)
+    + [Applying Workflows to Pages](workflows/applying.md)
     + [Participating in Workflows](workflows-participating.md)
     + [Working with Project Workflows](projects-with-workflows.md)
 + Page Performance {#page-performance}
