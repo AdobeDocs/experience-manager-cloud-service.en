@@ -51,17 +51,12 @@ user-guide-title: Authoring User Guide
   + [Editing Launches](launches/editing.md)
   + [Promoting Launches](launches/promoting.md)
 + Workflows {#workflows}
-    + [Working with Workflows](workflows/workflows.md)
-    + [Applying Workflows to Pages](workflows/applying.md)
-    + [Participating in Workflows](workflows/participating.md)
-    + [Working with Project Workflows](projects/workflows.md)
-+ Page Performance {#page-performance}
-    + [Content Insight](content-insights.md)
-    + [Analyzing Page Performance](ci-analyze.md)
-    + [Seeing Page Analytics Data](pa-using.md)
-    + [Adding Search&Promote Features To Your Page](search-and-promote.md)
+  + [Working with Workflows](workflows/workflows.md)
+  + [Applying Workflows to Pages](workflows/applying.md)
+  + [Participating in Workflows](workflows/participating.md)
+  + [Working with Project Workflows](projects/workflows.md)
 + Personalization {#personalization}
-    + [Personalization](personalization.md)
+    + [Personalization](personalization/personalization.md)
     + [Previewing Pages Using ContextHub Data](ch-previewing.md)
     + [Authoring Targeted Content Using Targeting Mode](content-targeting-touch.md)
     + [Working with Targeted Content in Multisites](multisite-support-targeted-content.md)
