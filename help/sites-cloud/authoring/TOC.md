@@ -58,9 +58,9 @@ user-guide-title: Authoring User Guide
 + Personalization {#personalization}
     + [Personalization](personalization/personalization.md)
     + [Previewing Pages Using ContextHub Data](personalization/contexthub.md)
-    + [Authoring Targeted Content Using Targeting Mode](content-targeting-touch.md)
-    + [Working with Targeted Content in Multisites](multisite-support-targeted-content.md)
-    + [How Multisite Management for Targeted Content is Structured](technical-multisite-targeted.md)
+    + [Authoring Targeted Content Using Targeting Mode](personalization/targeted-content.md)
+    + [Working with Targeted Content in Multisites](personalization/multisite-targeted-content.md)
+    + [How Multisite Management for Targeted Content is Structured](personalization/multisite-structure.md)
     + [Managing Activities](activitylib.md)
     + [Managing Audiences](managing-audiences.md)
     + [Creating and Managing Offers](offerlib.md)
