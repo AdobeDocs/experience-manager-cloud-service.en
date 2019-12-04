@@ -1,10 +1,7 @@
 ---
 title: Assets APIs for digital asset management in Adobe Experience Manager as a Cloud Service 
 description: Assets APIs allow for basic create-read-update-delete (CRUD) operations to manage assets, including binary, metadata, renditions, comments, and Content Fragments.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+contentOwner: AG
 
 ---
 

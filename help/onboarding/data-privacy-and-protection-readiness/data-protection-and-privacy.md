@@ -22,7 +22,11 @@ Adobe is providing documentation and procedures (with APIs when available), for 
 <!-- Needs confirmation -->
 >[!CAUTION]
 >
->The details documented here are restricted to Adobe Experience Manager as a Cloud Service. Data from another Adobe Service will require actions to be taken on that service.
+>The details documented here are restricted to Adobe Experience Manager as a Cloud Service. 
+>
+>Data from another Adobe Service, together with any related privacy requests, will require actions to be taken on that service.
+>
+>For further information see [Adobe's Privacy Center](https://www.adobe.com/privacy.html).
 
 ## Introduction {#introduction}
 
