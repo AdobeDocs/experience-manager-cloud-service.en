@@ -53,8 +53,8 @@ user-guide-title: Authoring User Guide
 + Workflows {#workflows}
     + [Working with Workflows](workflows/workflows.md)
     + [Applying Workflows to Pages](workflows/applying.md)
-    + [Participating in Workflows](workflows-participating.md)
-    + [Working with Project Workflows](projects-with-workflows.md)
+    + [Participating in Workflows](workflows/participating.md)
+    + [Working with Project Workflows](projects/workflows.md)
 + Page Performance {#page-performance}
     + [Content Insight](content-insights.md)
     + [Analyzing Page Performance](ci-analyze.md)
