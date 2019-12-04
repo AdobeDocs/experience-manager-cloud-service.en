@@ -57,7 +57,7 @@ user-guide-title: Authoring User Guide
   + [Working with Project Workflows](projects/workflows.md)
 + Personalization {#personalization}
     + [Personalization](personalization/personalization.md)
-    + [Previewing Pages Using ContextHub Data](ch-previewing.md)
+    + [Previewing Pages Using ContextHub Data](personalization/contexthub.md)
     + [Authoring Targeted Content Using Targeting Mode](content-targeting-touch.md)
     + [Working with Targeted Content in Multisites](multisite-support-targeted-content.md)
     + [How Multisite Management for Targeted Content is Structured](technical-multisite-targeted.md)
