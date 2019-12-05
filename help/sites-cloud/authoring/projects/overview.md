@@ -26,7 +26,7 @@ As a user, you can do the following:
 
 See the following additional topics:
 
-* [Managing Projects](/help/sites-cloud/authoring/projects/managing-projects.md)
+* [Managing Projects](/help/sites-cloud/authoring/projects/managing.md)
 * [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md)
 * [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md)
 

@@ -27,9 +27,9 @@ You receive these notifications in your own Inbox where you can view them and ta
 >
 >For further information about the item types see also:
 >
->* [Projects](/help/sites-cloud/authoring/projects/projects.md)
+>* [Projects](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projects - working with Tasks](/help/sites-cloud/authoring/projects/tasks.md)
->* [Workflows](/help/sites-cloud/authoring/workflows/workflows.md)
+>* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
 
 ## Inbox in the Header {#inbox-in-the-header}
 
@@ -174,7 +174,7 @@ From the inbox you can create tasks:
 
 ## Creating a Project {#creating-a-project}
 
-For certain tasks you can create a [Project](/help/sites-cloud/authoring/projects/projects.md) based on that task:
+For certain tasks you can create a [Project](/help/sites-cloud/authoring/projects/overview.md) based on that task:
 
 1. Select the appropriate task, by tapping/clicking on the thumbnail.
 
@@ -202,7 +202,7 @@ For certain tasks you can create a [Project](/help/sites-cloud/authoring/project
 
    >[!NOTE]
    >
-   >See [Creating a Project](/help/sites-cloud/authoring/projects/managing-projects.md#creating-a-project) for full information.
+   >See [Creating a Project](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) for full information.
 
 1. Select **Create** to confirm the action.
 

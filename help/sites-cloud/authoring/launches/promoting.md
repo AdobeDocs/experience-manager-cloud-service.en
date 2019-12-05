@@ -37,7 +37,7 @@ You need to promote launch pages to move the content back into the source (produ
 >This covers the manual action of promoting launch pages when there is only one launch level. See:
 >
 >* [Promoting a Nested Launch](#promoting-a-nested-launch) when there is more than one launch in the structure.
->* [Launches - the Order of Events](/help/sites-cloud/authoring/launches/launches.md#launches-the-order-of-events) for further details about automatic promotion and publication.
+>* [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) for further details about automatic promotion and publication.
 >
 
 You can promote launches from either the **Sites** console or the **Launches** console:

@@ -15,7 +15,7 @@ topic-tags: site-features
 
 When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
 
-1. Access the [Launch from References (Sites console)](/help/sites-cloud/authoring/launches/launches.md#launches-in-references-sites-console) to show the available actions.
+1. Access the [Launch from References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions.
 1. Select **Go to the page** to open the page for editing.
 
 ### Editing Launch Pages Subject to a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
@@ -53,9 +53,9 @@ To track the changes you have made, you can view the launch in **References** an
 At any time you can either add or remove pages to/from the range of source pages for a launch:
 
 1. Access and select the launch from either:
-   * The [Launches console](/help/sites-cloud/authoring/launches/launches.md#the-launches-console):
+   * The [Launches console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
      * Select **Edit**.
-   * [References (Sites console)](/help/sites-cloud/authoring/launches/launches.md#launches-in-references-sites-console) to show the available actions:
+   * [References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions:
      * Select **Edit Launch**.
      * The source pages will be shown.
 1. Make your required changes, then confirm with **Save**.
@@ -69,16 +69,16 @@ At any time you can either add or remove pages to/from the range of source pages
 At any time you can edit the properties for a launch:
 
 1. Access and select the launch from either:
-   * the [Launches console](/help/sites-cloud/authoring/launches/launches.md#the-launches-console):
+   * the [Launches console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
      * Select **Properties**.
-   * [References (Sites console)](/help/sites-cloud/authoring/launches/launches.md#launches-in-references-sites-console) to show the available actions:
+   * [References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions:
      * Select **Edit Properties**.
      * The details will be shown.
 1. Make your required changes, then confirm with **Save**.
-   * See [Launches - the Order of Events](/help/sites-cloud/authoring/launches/launches.md#launches-the-order-of-events) for information about the purpose and interaction of the **Launch Date** and **Production Ready** fields.
+   * See [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) for information about the purpose and interaction of the **Launch Date** and **Production Ready** fields.
 
 ## Discovering the Launch Status of a Page {#discovering-the-launch-status-of-a-page}
 
-The status is shown when you select a specific launch from the references tab (see [Launches in References (Sites Console)](/help/sites-cloud/authoring/launches/launches.md#launches-in-references-sites-console)).
+The status is shown when you select a specific launch from the references tab (see [Launches in References (Sites Console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
 ![Discovering launch status](/help/sites-cloud/authoring/assets/launches-status.png)

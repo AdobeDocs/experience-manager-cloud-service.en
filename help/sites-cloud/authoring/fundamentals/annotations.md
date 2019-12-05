@@ -1,6 +1,6 @@
 ---
-title: Annotations when Editing a Page
-seo-title: Annotations when Editing a Page
+title: Adding Page Annotations
+seo-title: Adding Page Annotations
 description: Many components directly related to content allow you to add an annotation
 seo-description: Many components directly related to content allow you to add an annotation
 contentOwner: Chris Bohnert
@@ -9,7 +9,7 @@ topic-tags: page-authoring
 content-type: reference
 ---
 
-# Annotations when Editing a Page {#annotations-when-editing-a-page}
+# Adding Page Annotations {#adding-page-annotations}
 
 Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content (as opposed, for example, to layout) allow you to add an annotation.
 

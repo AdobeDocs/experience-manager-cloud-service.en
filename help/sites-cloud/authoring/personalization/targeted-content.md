@@ -395,7 +395,7 @@ Audiences appear on the left side of the mapping diagram, and experiences appear
 
 Define an audience using a segment. The cloud configuration for the page determines determines the segments that are available to you. When the page is not associated with an Adobe Target cloud configuration, AEM segments are available for defining audiences. When the page is associated with an Adobe Target cloud configuration, you use Target segments.
 
-For information targeting engines, see [Targeting Engine](/help/sites-cloud/authoring/personalization/personalization.md#targeting-engine).
+For information targeting engines, see [Targeting Engine](/help/sites-cloud/authoring/personalization/overview.md#targeting-engine).
 
 An audience must not be used by more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
 

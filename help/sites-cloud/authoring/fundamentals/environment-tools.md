@@ -227,7 +227,7 @@ Select the appropriate reference type for more information. In certain situation
 
 * **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
-* [Launches](/help/sites-cloud/authoring/launches/launches.md), provides access to related launches
+* [Launches](/help/sites-cloud/authoring/launches/overview.md), provides access to related launches
 * Live Copies displays the paths of all live copies that are based on the selected resource. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
 * Blueprint provides details and various actions <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
 * Languages Copies provides details and various actions <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->

@@ -90,7 +90,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
 ### Status Notification {#status-notification}
 
-If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/workflows.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
 
 ![Workflow notification](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
 
@@ -369,7 +369,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 Inheritance is the mechanism where content can be automatically pushed from one component to another. Inherited components can be the product of various scenarios, including:
 
 * Multi site management <!--[Multi site management](/help/sites-administering/msm.md)-->
-* [Launches](/help/sites-cloud/authoring/launches/launches.md) (when based on live copy).
+* [Launches](/help/sites-cloud/authoring/launches/overview.md) (when based on live copy).
 
 You can cancel (then re-enable) the inheritance. Depending on the component, this can be available from the component toolbar, if the component is on a page that is part of a live copy or launch (based on a live copy).
 

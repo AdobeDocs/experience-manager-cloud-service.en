@@ -72,7 +72,7 @@ You can create a launch from either the Sites or Launches console:
     * **with existing content**: the original content will be used to create the launch.
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
     * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.
-    * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-cloud/authoring/launches/launches.md#launches-the-order-of-events)).
+    * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Launch properties](/help/sites-cloud/authoring/assets/launches-properties.png)
 
@@ -80,8 +80,8 @@ You can create a launch from either the Sites or Launches console:
 
    If you return the console (with **Done**) you can see (and access) your launch from either:
 
-    * The [**Launches** console](/help/sites-cloud/authoring/launches/launches.md#the-launches-console)
-    * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/launches.md#launches-in-references-sites-console)
+    * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+    * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Create Launch with New Template {#create-launch-with-new-template}
 
@@ -131,7 +131,7 @@ Creating a nested launch from the **Launches** console is basically the same as 
 
 To create a nested launch from the **Sites** console - based on an existing launch:
 
-1. Access the [Launch from References (Sites console)](/help/sites-cloud/authoring/launches/launches.md#launches-in-references-sites-console) to show the available actions.
+1. Access the [Launch from References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions.
 1. Select **Create launch** to open the wizard (as the source has already been selected it will skip the **Select Source** step).
 1. Enter the **Launch Title** and any other required details (as with a normal launch).
 1. Use **Create** to complete the process and create your new launch. The confirmation dialog will ask whether you want to open the launch immediately.
@@ -140,7 +140,7 @@ If you select **Done**, you are returned to the **References** rail of the **Sit
 
 ### Deleting a Launch {#deleting-a-launch}
 
-You can delete a launch from the [launches console](/help/sites-cloud/authoring/launches/launches.md#the-launches-console):
+You can delete a launch from the [launches console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
 
 * Select the launch, by tapping/clicking on the thumbnail.
 * The toolbar will appear - select Delete.

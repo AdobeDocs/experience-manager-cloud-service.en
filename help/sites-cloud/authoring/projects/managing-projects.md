@@ -28,7 +28,7 @@ Out of the box, AEM provides these templates to choose from when you create a pr
 * Product Photo Shoot Project
 * Translation Project
 
-The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-cloud/authoring/projects/projects.md) and [workflows](/help/sites-cloud/authoring/projects/workflows.md).  To create a new project:
+The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-cloud/authoring/projects/overview.md) and [workflows](/help/sites-cloud/authoring/projects/workflows.md).  To create a new project:
 
 1. In **Projects**, tap/click **Create** to open the **Create Project** wizard:
 1. Select a template and click **Next**.
@@ -43,7 +43,7 @@ The procedure of creating a project is the same from project to project. The dif
 
 ### Associating Resources with your Project {#associating-resources-with-your-project}
 
-As projects enable you to group resources into one entity, you want to associate resources to your project. These resources are called **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-cloud/authoring/projects/projects.md#project-tiles).
+As projects enable you to group resources into one entity, you want to associate resources to your project. These resources are called **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 To associate resources with your project:
 
@@ -54,7 +54,7 @@ To associate resources with your project:
 
    >[!NOTE]
    >
-   >Project tiles that can be associated with a project are described in detail in [Project tiles.](/help/sites-cloud/authoring/projects/projects.md#project-tiles)
+   >Project tiles that can be associated with a project are described in detail in [Project tiles.](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
 
 1. Tap/click **Create**. Your resource is linked to your project and from now on you can access it from your project.
 
@@ -86,7 +86,7 @@ To add items to a Tile:
 
    ![Add item to a tile](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
-1. Add an item to the tile as you would when creating a new tile. Project tiles are described [here](/help/sites-authoring/projects.md#project-tiles). In this example, another workflow was added.
+1. Add an item to the tile as you would when creating a new tile. Project tiles are described [here](/help/sites-authoring/overview.md#project-tiles). In this example, another workflow was added.
 
    ![Another item added to a tile](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 

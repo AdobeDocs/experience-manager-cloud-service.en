@@ -11,7 +11,7 @@ topic-tags: personalization
 
 # Managing Activities {#managing-activities}
 
-The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-cloud/authoring/personalization/personalization.md#activities) of your brands:
+The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-cloud/authoring/personalization/overview.md#activities) of your brands:
 
 * Add brands
 * For each brand, add and configure activities
@@ -72,7 +72,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 Add an activity or edit an existing activity to focus your marketing efforts on specific audiences. When you create/edit an activity, you specify the following information:
 
 * **Name:** The name of the activity.
-* **Targeting Engine:** Either [AEM](/help/sites-cloud/authoring/personalization/personalization.md#aem) or [Adobe Target](/help/sites-cloud/authoring/personalization/personalization.md#adobe-target) as the engine for targeted content.
+* **Targeting Engine:** Either [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) or [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) as the engine for targeted content.
 * **Select a Target Configuration:** (Adobe Target only) The cloud configuration that this activity should use to connect to Adobe Target. This option appears only when Adobe Target is selected for Targeting Engine.
 * **Activity Type**: The activity type - A/B Test or Experience targeting
 * **Objective:** (Optional) A description of the activity.
