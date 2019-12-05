@@ -20,6 +20,8 @@ solution-title: Experience Cloud
 + Onboarding {#onboarding}
   + What is Required {#requirements}
     + [Access Rights Granted](onboarding/what-is-required/access-rights-granted.md)
+    + [Source Code Repository](onboarding/what-is-required/source-code-repository.md)
+    + [Add Users and Roles](onboarding/what-is-required/add-users-roles.md)
   + Getting Access to AEM in the Cloud {#getting-access-aem-in-cloud}
     + [First Time Login](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
   + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}
