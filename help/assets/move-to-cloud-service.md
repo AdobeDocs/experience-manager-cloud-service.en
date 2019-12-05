@@ -1,18 +1,17 @@
 ---
-title: template title
-description: template description
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+title: Migrate to Cloud Service from Adobe Experience Manager 6.x
+description: Migrate to Cloud Service from Adobe Experience Manager 6.x
+contentOwner: AG
 
 ---
 
-# Move from AEM to AEM as a cloud service {#move-from-aem-to-cloud-service}
-
+# Move to Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}
 
 ## Migration tool {#migration-tool}
 
+Link back to info about the tool in the Experience Manager as a Cloud Service docs if the tool works the same for Sites and Assets.
+
+Document the Assets-specific info here.
 
 ## Content migration to new deployment {#content-migration-across-deployments}
 
@@ -20,4 +19,3 @@ sub-product: Adobe Experience Manager Cloud Service
 >[!MORELIKETHIS]
 >
 >
-
