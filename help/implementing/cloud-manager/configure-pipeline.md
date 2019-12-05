@@ -5,4 +5,4 @@ description: Configure CI/CD Pipeline - Cloud Services
 seo-description: Configure CI/CD Pipeline - Cloud Services 
 ---
 
-# Configure CI/CD Pipeline - Cloud Services {#configure-ci-cd-pipeline} 
+# Configure CI-CD Pipeline {#configure-ci-cd-pipeline} 
