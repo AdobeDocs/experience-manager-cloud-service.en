@@ -16,7 +16,7 @@ This document is designed to give an overview of basic handling when using the A
 >[!NOTE]
 >
 >* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality will be covered in more detail on other pages.
->* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-authoring/keyboard-shortcuts.md) and [editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
@@ -65,15 +65,15 @@ From Navigation the consoles available are:
 
 |Console|Purpose|
 |---|---|
-|Projects|The Projects console gives you direct access to your projects. [Projects are virtual dashboards]() that can be used to build a team. You can then give that team access to resources, workflows, and tasks, thus allowing people to work towards a common goal.|
-|Sites|The Sites consoles let you [create, view, and manage sites]() running on your AEM instance. Through this console you can create, edit, copy, move, and delete pages, start workflows, and publish pages.|
-|Experience Fragments|An [Experience Fragment]() is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
-|Assets|The Assets console lets you [import and manage digital assets]() such as images, videos, documents, and audio files. These assets can then be used by any site running on the same AEM instance.|
-|Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.]()|
+|Projects|The Projects console gives you direct access to your projects. [Projects are virtual dashboards](help/sites-cloud/authoring/projects/projects.md) that can be used to build a team. You can then give that team access to resources, workflows, and tasks, thus allowing people to work towards a common goal.|
+|Sites|The Sites consoles let you [create, view, and manage sites](help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. Through this console you can create, edit, copy, move, and delete pages, start workflows, and publish pages.|
+|Experience Fragments|An [Experience Fragment](help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
+|Assets|The Assets console lets you import and manage digital assets such as images, videos, documents, and audio files. These assets can then be used by any site running on the same AEM instance.|<!--add some kind of assets link-->
+|Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](help/sites-cloud/authoring/personalization/personalization.md)|
 
 ## Tools Panel {#tools-panel}
 
-In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.
+In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Tools panel](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -83,41 +83,37 @@ The header is always present at the top of the screen. While most options in the
 
 ![Navigation header](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-* [Global Navigation](#navigatingconsolesandtools)
+* [Global Navigation](#navigating-consoles-and-tools)
 
   Select the **Adobe Experience Manager** link to navigate between consoles.
 
   ![Global navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Search](/help/sites-authoring/search.md)
+* [Search](/help/sites-cloud/authoring/getting-started/search.md)
 
   ![Search button](/help/sites-cloud/authoring/assets/search-button.png)
 
-  You can also use the [shortcut key](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+  You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
 
 * [Solutions](https://www.adobe.com/experience-cloud.html)
 
   ![Solutions button](/help/sites-cloud/authoring/assets/solutions.png)
 
-* [Help](#accessinghelptouchoptimizedui)
+* [Help](#accessing-help)
 
   ![Help button](/help/sites-cloud/authoring/assets/help.png)
 
-* [Notifications](/help/sites-authoring/inbox.md)
+* [Notifications](/help/sites-cloud/authoring/getting-started/inbox.md)
 
   ![Notifications button](/help/sites-cloud/authoring/assets/notifications.png)
 
   This icon will be badged with the number of currently assigned incomplete notifications.
-
-  >[!NOTE]
-  >
-  >AEM comes pre-loaded with administrative tasks assigned to the administrator user group. See [Your Inbox - Out-of-the-Box Administrative Tasks](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) for details.
-
-* [User Properties](/help/sites-authoring/user-properties.md)
+  
+* [User Properties](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
   ![User Properties button](/help/sites-cloud/authoring/assets/user-properties.png)
 
-* [Rail selector](/help/sites-authoring/basic-handling.md#rail-selector)
+* [Rail selector](#rail-selector)
 
   ![Rail selector button](/help/sites-cloud/authoring/assets/rail-selector.png)
 
@@ -147,7 +143,7 @@ The header is always present at the top of the screen. While most options in the
 
   Once clicked, the options displayed are appropriate to the console/context.
 
-* [Views](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
+* [Views](#viewing-and-selecting-your-resources-card-list-column)
 
   The view icon is at the far right of the AEM toolbar. As it also indicates the current view, it changes. For example, in the default view, **Column View** it shows:
 
@@ -169,7 +165,7 @@ There are various help resources available:
 
 * **Navigation**
 
-  The first time you navigate the system, [a series of slides introduce AEM navigation](/help/sites-authoring/basic-handling.md#product-navigation).
+  The first time you navigate the system, [a series of slides introduce AEM navigation](#product-navigation).
 
   ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
@@ -179,9 +175,9 @@ There are various help resources available:
 
   ![Editor tutorial](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-  Navigate this overview as you would the [product navigation overview](/help/sites-authoring/basic-handling.md#product-navigation) when first accessing any console.
+  Navigate this overview as you would the [product navigation overview](#product-navigation) when first accessing any console.
 
-  From the [**Page Information** menu you can select **Help**](/help/sites-authoring/author-environment-tools.md#accessing-help) to show this again at any time.
+  From the [**Page Information** menu you can select **Help**](help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) to show this again at any time.
 
 * **Tools Console**
 
@@ -196,8 +192,8 @@ There are various help resources available:
   >
   >For an overview of all keyboard shortcuts see the following documentation:
   >
-  >* [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-  >* [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
+  >* [Keyboard shortcuts for editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## Actions Toolbar {#actions-toolbar}
 
@@ -205,11 +201,11 @@ Whenever a resource is selected (e.g. a page or an asset), various actions are i
 
 * The current console
 * The current context
-* Whether you are in [selection mode](#navigatingandselectionmode)
+* Whether you are in [selection mode](#navigating-and-selection-mode)
 
 The action available in the toolbar change to reflect the actions you can take on the specific items selected.
 
-How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depends on the view.
+How you [select a resource](#viewing-and-selecting-resources) depends on the view.
 
 Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
 
@@ -221,7 +217,7 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 ## Quick Actions {#quick-actions}
 
-In [Card View](#cardviewquickactions) certain actions are available as quick action icons as well as being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
+In [Card View](#card-view-quick-actions) certain actions are available as quick action icons as well as being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
 
 The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
@@ -280,7 +276,7 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
    ![Card view select](/help/sites-cloud/authoring/assets/card-view-select.png)
 
-1. Once you have selected a resource the top header is covered by the [actions toolbar](#actionstoolbar) that provides access to actions currently applicable to the selected resource.
+1. Once you have selected a resource the top header is covered by the [actions toolbar](#actions-toolbar) that provides access to actions currently applicable to the selected resource.
 
    To exit selection mode select the **X** to the top-right, or use **escape**.
 
@@ -329,20 +325,20 @@ Selecting a resource in the leftmost column will display the child resources in 
   * Important dates (such as last edited, last published)
   * If the page is locked, hidden or part of a livecopy
   * If appropriate, when you are required to take action as part of a workflow
-    * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-authoring/inbox.md).
+    * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * [Quick actions](#quick-actions) are also available in this view such as selection and common actions such as edit.
 
   ![Quick actions](/help/sites-cloud/authoring/assets/quick-actions.png)
 
-* You can navigate down the tree by tapping/clicking on cards (taking care to avoid the quick actions) or up again by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).
+* You can navigate down the tree by tapping/clicking on cards (taking care to avoid the quick actions) or up again by using the [breadcrumbs in the header](#the-header).
 
 ### List View {#list-view}
 
 ![List view](/help/sites-cloud/authoring/assets/list-view.png)
 
 * The list view lists information for each resource at the current level.
-* You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).
+* You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](#the-header).
 * To easily select all items in the list, use the checkbox at the top-left of the list.
 
   ![List view select all](/help/sites-cloud/authoring/assets/list-view-select-all.png)
@@ -401,7 +397,7 @@ If content only is selected, then only the rail icon appears. When any other opt
 
 >[!NOTE]
 >
->[Keyboard shortcuts](/help/sites-authoring/keyboard-shortcuts.md) are available to quickly switch between rail display options.
+>[Keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) are available to quickly switch between rail display options.
 
 ### Content tree {#content-tree}
 
@@ -415,7 +411,7 @@ Using the content tree side panel in conjunction with a list view or cards view,
 >
 >Once an entry in the hierarchy view is selected, arrow keys can be used to quickly navigate the hierarchy.
 >
->Refer to the [keyboard shortcuts](/help/sites-authoring/keyboard-shortcuts.md) for more information.
+>Refer to the [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) for more information.
 
 ### Timeline {#timeline}
 
@@ -425,25 +421,25 @@ The timeline can be used to view and/or initiate events that have occurred on th
 
 The timeline column allows you to:
 
-* [View various events](#timelineviewevents) related to a selected item.
+* [View various events](#timeline-view-events) related to a selected item.
 
   * The event types can be selected from the drop-down list:
 
-    * [Comments](#timelineaddingandviewingcomments)
-    * Annotations
-    * Activities
-    * [Launches](/help/sites-authoring/launches.md)
-    * [Versions](/help/sites-authoring/working-with-page-versions.md)
-    * [Workflows](/help/sites-authoring/workflows-applying.md)
-      * With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these
+    * [Comments](#timeline-adding-and-viewing-comments)
+    * [Annotations](help/sites-cloud/authoring/fundamentals/annotations.md)
+    * [Activities](help/sites-cloud/authoring/personalization/activities.md)
+    * [Launches](/help/sites-cloud/authoring/launches/launches.md)
+    * [Versions](/help/sites-cloud/authoring/features/page-versions.md)
+    * [Workflows](/help/sites-cloud/authoring/workflows/workflows.md)
+      * With the exception of transient workflows as no history information is saved for these <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
     * Show All
 
-* [Add/view comments](#timelineaddingandviewingcomments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
+* [Add/view comments](#timeline-adding-and-viewing-comments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
 
 * Specific consoles have additional functionality. For example, in the Sites console you can:
 
-  * [Save a version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui)
-  * [Start a workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail)
+  * [Save a version](/help/sites-cloud/authoring/features/page-versions.md#creating-a-new-version-)
+  * [Start a workflow](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-rail)
 
 These options accessible via the chevron next to the **Comment** field.
 
@@ -451,20 +447,20 @@ These options accessible via the chevron next to the **Comment** field.
 
 ### References {#references}
 
-**References** shows any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-authoring/author-environment-tools.md#showingpagereferences) for pages shows:
+**References** shows any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#showing-page-references) for pages shows:
 
-* [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
-* [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
-* [Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
+* [Launches](/help/sites-cloud/authoring/launches/launches.md#launches-in-references-sites-console)
+* Live copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
+* Language copies<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
 * Content references:
 
-  * links from other pages to the selected page
-  * content borrowed from and/or lent to the selected page by the Reference component
+  * Links from other pages to the selected page
+  * Content borrowed from and/or lent to the selected page by the Reference component
 
 ![References example](/help/sites-cloud/authoring/assets/references-example.png)
 
 ### Filter {#filter}
 
-This will open a panel similar to [search](/help/sites-authoring/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
+This will open a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
 
 ![Filter example](/help/sites-cloud/authoring/assets/filter.png)

@@ -27,9 +27,9 @@ You receive these notifications in your own Inbox where you can view them and ta
 >
 >For further information about the item types see also:
 >
->* [Projects](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Projects - working with Tasks](/help/sites-authoring/task-content.md)
->* [Workflows](/help/sites-authoring/workflows.md)
+>* [Projects](/help/sites-cloud/authoring/projects/projects.md)
+>* [Projects - working with Tasks](/help/sites-cloud/authoring/projects/tasks.md)
+>* [Workflows](/help/sites-cloud/authoring/workflows/workflows.md)
 
 ## Inbox in the Header {#inbox-in-the-header}
 
@@ -39,7 +39,7 @@ From any of the consoles the current number of items in your inbox is shown in t
 
 >[!NOTE]
 >
->Certain actions will also be shown in the [card view of the appropriate resource](/help/sites-authoring/basic-handling.md#card-view).
+>Certain actions will also be shown in the [card view of the appropriate resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
 ## Opening the Inbox {#opening-the-inbox}
 
@@ -56,7 +56,7 @@ To open the AEM notification inbox:
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>The Inbox operates as a console, so use [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) or [Search](/help/sites-cloud/authoring/getting-started/search.md) to navigate to another location when you are finished.
 
 ### Inbox - List View {#inbox-list-view}
 
@@ -126,7 +126,7 @@ For both views (List and Calendar) you can define settings:
    >
    >For further information see:
    >
-   >* Workflow items - [Participating in Workflows](/help/sites-authoring/workflows-participating.md)
+   >* Workflow items - [Participating in Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 1. Depending on the item selected an action will be started, for example:
 
@@ -174,7 +174,7 @@ From the inbox you can create tasks:
 
 ## Creating a Project {#creating-a-project}
 
-For certain tasks you can create a [Project](/help/sites-authoring/projects.md) based on that task:
+For certain tasks you can create a [Project](/help/sites-cloud/authoring/projects/projects.md) based on that task:
 
 1. Select the appropriate task, by tapping/clicking on the thumbnail.
 
@@ -202,7 +202,7 @@ For certain tasks you can create a [Project](/help/sites-authoring/projects.md) 
 
    >[!NOTE]
    >
-   >See [Creating a Project](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) for full information.
+   >See [Creating a Project](/help/sites-cloud/authoring/projects/managing-projects.md#creating-a-project) for full information.
 
 1. Select **Create** to confirm the action.
 

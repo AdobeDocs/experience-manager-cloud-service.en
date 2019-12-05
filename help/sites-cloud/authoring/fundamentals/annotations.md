@@ -17,11 +17,11 @@ An annotation places a colored sketch or sticky-note on the page. The annotation
 
 >[!NOTE]
 >
->Don't forget that [comments](/help/sites-authoring/basic-handling.md#timeline) are also available for providing feedback on a page.
+>Don't forget that [comments](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) are also available for providing feedback on a page.
 
 ## Annotations {#annotations}
 
-A special [mode](/help/sites-authoring/author-environment-tools.md#page-modes) is used for creating and viewing annotations.
+A special [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) is used for creating and viewing annotations.
 
 >[!CAUTION]
 >
@@ -108,5 +108,9 @@ Annotations do not appear in Edit mode, but the badge at the top right of the to
 
 Besides components, you can annotate a variety of resources:
 
+* Annotating assets
+* Annotating video assets
+<!--
 * [Annotating assets](/help/assets/managing-assets-touch-ui.md#annotating)
 * [Annotating video assets](/help/assets/managing-video-assets.md#annotating-video-assets)
+-->

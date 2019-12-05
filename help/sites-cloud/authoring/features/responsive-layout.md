@@ -13,7 +13,7 @@ content-type: reference
 
 AEM allows you to have a responsive layout for your pages by using the **Layout Container** component.
 
-This provides a paragraph system that allows you to position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), which allows you to create and edit your responsive layout dependent on device.
+This provides a paragraph system that allows you to position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), which allows you to create and edit your responsive layout dependent on device.
 
 The layout container:
 
@@ -28,9 +28,9 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
 
 * [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) component
 
-  This component is available in the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can also be set as the default paragraph system on your page.
+  This component is available in the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can also be set as the default paragraph system on your page.
 
-* [**Layout Mode**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**Layout Mode**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
 
@@ -53,7 +53,7 @@ Depending on your project, the Layout Container might be used as the default par
 
 >[!NOTE]
 >
->Use of the above mechanisms is enabled by configuration on the template. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>Use of the above mechanisms is enabled by configuration on the template. See Configuring Responsive Layout for further information. <!-- Use of the above mechanisms is enabled by configuration on the template. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.-->
 
 ## Layout Definitions, Device Emulation, and Breakpoints {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -123,7 +123,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    ![The fold](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-    * The fold can also be considered the page line break (not to be confused with the [breakpoints](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) for the content. This is displayed for convenience to show what part of the content the user will see on the device before scrolling.
+    * The fold can also be considered the page line break (not to be confused with the [breakpoints](#layout-definitions-device-emulation-and-breakpoints)) for the content. This is displayed for convenience to show what part of the content the user will see on the device before scrolling.
     * The line for the fold will not be shown if the height of the device being emulated is higher than the screen size.
     * The fold is shown for the author's convenience and is not shown on the published page.
 
@@ -137,9 +137,9 @@ A **Layout Container** is a paragraph system that:
 
 >[!NOTE]
 >
->If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md) (for example, by using [**Design** mode](/help/sites-authoring/default-components-designmode.md)).
+>If not already available, the **Layout Container** must be explicitly activated for a paragraph system/page. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser). From here you can drag it to the required location on the page after which you will see the **Drag Components here** placeholder.
+1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). From here you can drag it to the required location on the page after which you will see the **Drag Components here** placeholder.
 1. You can then add components to the layout container. These components will hold the actual content:
 
    ![Layout container](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -184,10 +184,10 @@ To configure the layout of a responsive grid implemented with the Layout Contain
 
 **Layout** mode can be started in two ways.
 
-* By using the [mode menu in the toolbar](/help/sites-authoring/author-environment-tools.md#page-modes) and choosing **Layout** mode
+* By using the [mode menu in the toolbar](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and choosing **Layout** mode
   * Select the **Layout** mode just as you would switch to **Edit** mode or **Targeting** mode.
   * **Layout** mode remains persistent and you do not leave **Layout** mode until you select another mode via the mode selector.
-* When [editing an individual component.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* When [editing an individual component.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
   * By using the **Layout** option in the component's quick action menu, you can switch to **Layout** mode.
   * **Layout** mode persists while editing the component and reverts to **Edit** mode once focus changes to another component.
 

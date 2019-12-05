@@ -17,10 +17,12 @@ WCAG 2.0 consists of a set of technology independent guidelines and success crit
 >
 >See also:
 >
+>* our Quick Guide to WCAG 2.0 for further details
+>* Configuring the Rich Text Editor for producing accessible content
+<!--
 >* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
 >* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
->
-
+-->
 These are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
 
 * **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
@@ -69,7 +71,10 @@ For static graphics, the basic requirement is to provide an equivalent text alte
 
 >[!NOTE]
 >
+>Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
+<!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+-->
 
 AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be nonsensical, the **Image is decorative** option can be checked.
 
@@ -90,7 +95,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 Specific types of non-text content that require text alternatives might include:
 
-* Illustrative photos: These are images of people, objects or places. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of [object]*, but may be dependent on the surrounding text.
+* Illustrative photos: These are images of people, objects or places. Think about the role of the photo in the page; an appropriate text equivalent is likely to be `Photo of [object]`, but may be dependent on the surrounding text.
 * Icons: These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 * Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
 * Maps, diagrams, flowcharts: For graphics providing spatial data (for example. to support describing relationships between objects or a process), ensure that the key message is provided in text format. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
@@ -232,11 +237,11 @@ Exact details of how to create audio-described video are beyond the scope of thi
 
 #### Purpose - Captions (Live) (1.2.4) {#purpose-captions-live}
 
-This success criterion is identical to [Captions (Pre-Recorded)](#captionsprerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
+This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-recorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### How to Meet - Captions (Live) (1.2.4) {#how-to-meet-captions-live}
 
-Follow the guidance provided for [Captions (Pre-Recorded)](#captionsprerecorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
+Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
 
 Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
 
@@ -256,11 +261,11 @@ Detailed instructions are beyond the scope of this document, but the following r
 
 #### Purpose - Audio Description (Pre-Recorded) (1.2.5) {#purpose-audio-description-pre-recorded}
 
-This success criterion is identical to [Audio Description or Media Alternative (Pre-Recorded)](#audiodescriptionormediaalternativeprerecorded), except that authors must provide a much more detailed audio description to conform to Level AA.
+This success criterion is identical to [Audio Description or Media Alternative (Pre-Recorded)](#audio-description-or-media-alternative-pre-recorded), except that authors must provide a much more detailed audio description to conform to Level AA.
 
 #### How to Meet - Audio Description (Pre-Recorded) (1.2.5) {#how-to-meet-audio-description-pre-recorded}
 
-Follow the guidance provided for [Audio Description or Media Alternative (Pre-Recorded)](#audiodescriptionormediaalternativeprerecorded).
+Follow the guidance provided for [Audio Description or Media Alternative (Pre-Recorded)](#audio-description-or-media-alternative-pre-recorded).
 
 #### More Information - Audio Description (Pre-Recorded) (1.2.5) {#more-information-audio-description-pre-recorded}
 
@@ -295,7 +300,7 @@ AEM makes it easy to construct web pages using the appropriate HTML elements. Op
 
 You can make sure your web pages are given the appropriate structure by:
 
-* **Using headings:** As long as you have the accessibility features of the RTE enabled (see [AEM and Accessibility](#adobeexperiencemanagerandaccessibility)), AEM offers 3 levels of page heading. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
+* **Using headings:** As long as you have the accessibility features of the RTE enabled (see [AEM and Accessibility](#adobe-experience-manager-and-accessibility)), AEM offers 3 levels of page heading. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
 * **Emphasized text**: Use the `<strong>` or `<em>` element to indicate emphasis. Do not use headings to highlight text within paragraphs.
   * Highlight the text you want to emphasize;
   * Click on the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
@@ -330,8 +335,10 @@ You can make sure your web pages are given the appropriate structure by:
 
   >[!NOTE]
   >
-  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
-
+  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes).
+<!--
+>By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+-->
   To open the **Table** dialog where you can select the **Table Properties** tab:
   * Define an appropriate **Caption**.
   * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
@@ -711,7 +718,7 @@ In AEM, the default language of your page is set when creating the page, but may
 
 #### Purpose - Language of Parts (3.1.2) {#purpose-language-of-parts}
 
-The purpose of this success criterion is similar to the success criterion [Language of Page](#languageofpage), except that it applies to web pages containing content in multiple languages on a single page (for example, because of quotations or uncommon loan words).
+The purpose of this success criterion is similar to the success criterion [Language of Page](#language-of-page), except that it applies to web pages containing content in multiple languages on a single page (for example, because of quotations or uncommon loan words).
 
 Pages applying this success criterion allow:
 
@@ -743,7 +750,10 @@ Similarly, the browser can render an uncommon loan word or phrase correctly if t
 >
 >It is not necessary to follow this success criterion when including names or cities in different languages, or when using loan words or phrases that have become commonplace in the default language (such as *schadenfreude* in English).
 
+To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see Adding Support for Additional HTML Elements and Attributes).
+<!--
 To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+-->
 
 #### More Information - Language of Parts (3.1.2) {#more-information-language-of-parts}
 
@@ -778,7 +788,10 @@ Where image buttons are used (for example, the **Image Button** component) the *
 
 Where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. When adding a set of radio buttons in AEM, the **Title** field provides this group title, while individual titles are specified as the radio buttons (**Items**) are created.
 
+However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see Adding Support for Additional HTML Elements and Attributes).
+<!--
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+-->
 
 #### Additional Considerations for Forms {#additional-considerations-for-forms}
 

@@ -34,7 +34,10 @@ Depending on which Project template you select, you have certain workflows avail
 
 >[!NOTE]
 >
+>&ast; These workflows are not started from the **Workflow** tile in Projects. See Creating Language Copies for Assets.
+<!--
 >&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
+-->
 
 The steps for starting and completing workflows are the same no matter which workflow you choose. Only the steps change.
 
@@ -42,9 +45,9 @@ You start a workflow directly in Projects (except for DAM Create Language Copy o
 
 For more information on working with workflows in AEM, see the following:
 
-* [Participating in workflows](/help/sites-authoring/workflows-participating.md)
-* [Applying workflows to pages](/help/sites-authoring/workflows-applying.md)
-* [Configuring workflows](/help/sites-administering/workflows.md)
+* [Participating in workflows](/help/sites-cloud/authoring/workflows/participating.md)
+* [Applying workflows to pages](/help/sites-cloud/authoring/workflows/applying.md)
+* Configuring workflows <!--* [Configuring workflows](/help/sites-administering/workflows.md)-->
 
 This section describes the workflows available for Projects.
 
@@ -84,30 +87,6 @@ This workflow lets you request a launch.
    ![Request launch](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
 1. Click **Create**. The workflow starts. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
-
-## Request Landing Page workflow {#request-landing-page-workflow}
-
-This workflow lets you request a landing page.
-
-1. In your Simple project, select the **+** sign in the **Workflows** tile and select Request Landing Page Workflow.
-1. Enter a title for your landing page and the parent path. If applicable, enter a live date or choose a file for your landing page.
-
-   ![Request landing page](/help/sites-cloud/authoring/assets/projects-request-landing-page.png)
-
-1. Click **Create**. The workflow starts. The task appears in the **Tasks** tile.
-
-## Request Email workflow {#request-email-workflow}
-
-This workflow lets you request an email. It is the same workflow that appears in the **Emails** tile.
-
-1. In your Media or Simple project, select the **+** sign in the **Workflows** tile and select **Request Email Workflow**.
-1. Enter an email title, as well as the campaign and template paths. In addition you can provide a name, description, and live date.
-
-   ![Request email](/help/sites-cloud/authoring/assets/projects-request-email.png)
-
-1. Click **Create**. The workflow starts. The task appears in the **Tasks** tile.
-
-   ![Request email added](/help/sites-cloud/authoring/assets/projects-request-email-add.png)
 
 ## Create (and Translate) Language Copy Workflow for Assets {#create-and-translate-language-copy-workflow-for-assets}
 

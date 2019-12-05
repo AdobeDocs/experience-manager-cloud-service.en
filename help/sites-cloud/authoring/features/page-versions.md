@@ -27,7 +27,7 @@ You can create a version of your resource from:
 ### Creating a New Version - Timeline {#creating-a-new-version-timeline}
 
 1. Navigate to show the page for which you want to create a version.
-1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column.
 1. Click/tap on the arrowhead by the comment field to reveal the options:
 
@@ -45,7 +45,7 @@ You can create a version of your resource from:
 ### Creating a New Version - Create with a Selected Resource {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Navigate to show the page for which you want to create a version.
-1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Select the **Create** option from the toolbar.
 1. The dialog will open. You can enter a **Label** and a **Comment** if required:
 
@@ -74,7 +74,7 @@ Once a version has been created you can revert to that version if needed.
 To revert to a previous version:
 
 1. Navigate to show the page you want to revert to a previous version.
-1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
 1. Select the version you want to revert to. The possible options will be shown:
 
@@ -87,7 +87,7 @@ To revert to a previous version:
 You can preview a specific version:
 
 1. Navigate to show the page you want to compare.
-1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to preview:
 
@@ -99,20 +99,20 @@ You can preview a specific version:
    >
    >If a page has been moved, you can no longer perform a preview on any versions made before the move.
    >
-   >If you experience problems with a preview, check the [Timeline](/help/sites-authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.
+   >If you experience problems with a preview, check the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) for the page to see whether the page has been moved.
   
 ## Comparing a Version with Current Page {#comparing-a-version-with-current-page}
 
 To compare a previous version with the current page:
 
 1. Navigate to show the page you want to compare.
-1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to compare:
 
    ![Compare versions](/help/sites-cloud/authoring/assets/versions-compare.png)
 
-1. Select **Compare to Current**. The [page diff](/help/sites-authoring/page-diff.md) will open and display the differences.
+1. Select **Compare to Current**. The [page diff](/help/sites-cloud/authoring/features/page-diff.md) will open and display the differences.
 
 ## Timewarp {#timewarp}
 
@@ -129,7 +129,7 @@ To do this:
 
 ### Using Timewarp {#using-timewarp}
 
-Timewarp is a [mode](/help/sites-authoring/author-environment-tools.md#page-modes) of the page editor. To start it, simply switch it as you would any other mode.
+Timewarp is a [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) of the page editor. To start it, simply switch it as you would any other mode.
 
 1. Start the editor for the page where you wish to start Timewarp and then select **Timewarp** in the mode selection.
 

@@ -26,5 +26,5 @@ Typically:
 
 The following pages cover:
 
-* [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md)
-* [Participating in Workflows](/help/sites-authoring/workflows-participating.md)
+* [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md)
+* [Participating in Workflows](/help/sites-cloud/authoring/workflows/participating.md)

@@ -39,7 +39,7 @@ To view details about a specific component tap/click on the required resource. T
   On the Properties tab you can:
 
   * View the general properties of the component.
-    * View how the [icon or abbreviation has been defined](https://youtu.be/ZZ5LpwO-An4#component-icon-in-touch-ui) for the component.
+    * View how the icon or abbreviation has been defined for the component. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
     * Clicking the source of the icon will take you to that component.
   * View the **Resource Type** and **Resource Super Type** (if defined) for the component.
     * Clicking the Resource Super Type will take you to that component.
@@ -62,6 +62,6 @@ To view details about a specific component tap/click on the required resource. T
 
 * **Documentation**
 
-  If the developer has provided [documentation for the component](https://youtu.be/ZZ5LpwO-An4#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.
+  If the developer has provided documentation for the component, it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
   ![Component documentation](/help/sites-cloud/authoring/assets/components-console-documentation.png)

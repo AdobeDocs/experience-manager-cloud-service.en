@@ -11,14 +11,14 @@ topic-tags: personalization
 
 # Previewing Pages Using ContextHub Data  {#previewing-pages-using-contexthub-data}
 
-The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.
+The ContextHub toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
 
 The toolbar consists of a series of UI modes that contain one or more UI modules.
 
 * UI modes are icons that appear on the left hand side of the toolbar. When you click or tap an icon, the toolbar reveals the UI modules that it contains.
 * UI modules display data from one or more ContextHub stores. Some UI modules also enable you to manipulate store data.
 
-ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.
+ContextHub installs several UI modes and UI modules. Your administrator may have configured ContextHub to display different ones.<!--ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.-->
 
 ## Revealing the ContextHub Toolbar {#revealing-the-contexthub-toolbar}
 

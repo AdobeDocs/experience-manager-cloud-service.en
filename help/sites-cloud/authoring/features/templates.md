@@ -28,7 +28,7 @@ The **Template Editor** allows template authors to:
 
 This document explains how a **template author** can use the template console and editor to create and manage editable templates.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.
+For detailed information about how editable templates work at a technical level, please see the developer document Page Templates - Editable for more information. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
 
 >[!NOTE]
 >
@@ -40,10 +40,7 @@ For detailed information about how editable templates work at a technical level,
 >
 >An administrator must configure a template folder in the **Configurations Browser** and apply proper permissions before a template author can create a template in that folder.
 
-The following points are important to consider before you start:
-
-* Creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task.
-* Depending on how your instance is configured, it might be useful to be aware that AEM now provides [two basic types of template](/help/sites-authoring/templates.md#editable-and-static-templates). This does not impact how you actually [use a template to create a page](#using-a-template-to-create-a-page), but it does impact the type of template you can create and how a page relates to its template.
+Before you start, it is important to consider that creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task. This does not impact how you actually [use a template to create a page](#using-a-template-to-create-a-page), but it does impact how a page relates to its template.
 
 ### Roles {#roles}
 
@@ -75,13 +72,13 @@ When creating a new editable template you:
 * Use the **Template** console. This is available in the **General** section of the **Tools** console.
   * Or directly at: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
-* [Create a new template](#creatinganewtemplateauthor), which will initially be empty [](#templatedefinitions)
+* [Create a new template](#creatinganewtemplateauthor), which will initially be empty
 * [Define additional properties](#definingtemplatepropertiesauthor) for the template if required
-* [Edit the template](#editingtemplates) to define the:
+* [Edit the template](#editing-templates-template-authors) to define the:
   * [Structure](#editingatemplatestructureauthor) - Predefined content that cannot be changed on pages created with the template.
   * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
-  * [Layout](#editingatemplatelayoutauthor) - For a range of devices.
-  * [Styles](/help/sites-authoring/style-system.md) - Define the styles to be used with the template and its components.
+  * [Layout](#editing-a-template-layout-author) - For a range of devices.
+  * [Styles](/help/sites-cloud/authoring/features/style-system.md) - Define the styles to be used with the template and its components.
 * [Enable the template](#enablingatemplateauthor) for use when creating a page
 * [Allow the template](#allowing-a-template-author) for the required page or branch of your website
 * [Publish the template](#publishingatemplateauthor) to make it available on the publish environment
@@ -92,13 +89,13 @@ When creating a new editable template you:
 
 >[!CAUTION]
 >
->Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.
+>Never enter any information that needs to be internationalized into a template. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >For template elements such as headers and footers that must be localized, leverage the [localization features of the core components.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
-A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).
+A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document Page Templates - Editable. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
 
 ### Creating a New Template - Template Author {#creating-a-new-template-template-author}
 
@@ -108,7 +105,7 @@ A template folder should be created for your project to hold your project-specif
    >
    >In a standard AEM instance the **global** folder already exists in the template console. This holds default templates and acts as a fallback if no policies and/or template-types are found in the current folder.
    >
-   >It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).
+   >It is recommended best practice to use a template folder created for your project. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
 
 1. Select **Create**, followed by **Create Template** to open the wizard.
 
@@ -116,7 +113,7 @@ A template folder should be created for your project to hold your project-specif
 
    >[!NOTE]
    >
-   >Template types are predefined template layouts and can be thought of as templates for a template. These are predefined by developers or the system administrator. More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).
+   >Template types are predefined template layouts and can be thought of as templates for a template. These are predefined by developers or the system administrator. More information can be found in the developer document Page Templates - Editable. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
 
 1. Complete the **Template Details**:
 
@@ -134,7 +131,7 @@ A template folder should be created for your project to hold your project-specif
 A template can have the following properties:
 
 * Image
-  * Image to be used as a [thumbnail of the template](/help/sites-authoring/templates.md#template-thumbnail-image) to aid selection such as in the Create Page wizard.
+  * Image to be used as a [thumbnail of the template](#template-thumbnail-image) to aid selection such as in the Create Page wizard.
     * Can be uploaded
     * Can be generated based on the template content
 * Title
@@ -168,8 +165,8 @@ To define the template thumbnail:
 
 To be able to use a template when creating a page you need to:
 
-* [Enable the template](#enablingatemplate) to make it available for use when creating pages.
-* [Allow the template](#allowingatemplate) to specify the content branches where the template can be used.
+* [Enable the template](#enabling-a-template-template-author) to make it available for use when creating pages.
+* [Allow the template](#allowing-a-template-author) to specify the content branches where the template can be used.
 
 #### Enabling a Template - Template Author {#enabling-a-template-template-author}
 
@@ -181,7 +178,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 1. In the **Templates Console**, select the template.
 1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
-1. You can now use your template when [creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editingatemplate) according to your requirements.
+1. You can now use your template when [creating a new page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
 
 >[!NOTE]
 >
@@ -191,7 +188,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 A template can be made available or unavailable for certain page branches.
 
-1. Open the [Page Properties](/help/sites-authoring/editing-page-properties.md) for the root page of the branch where you want the template to be available.
+1. Open the [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) for the root page of the branch where you want the template to be available.
 1. Open the **Advanced** tab.
 1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
 
@@ -206,7 +203,7 @@ A template can be made available or unavailable for certain page branches.
    >If the **Allowed Templates** list is left empty then the tree will be ascended until a value/list is found.
    >
    >
-   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >See Template Availability - the principles for allowed templates remain the same. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
 
 1. Click **Save** to save the changes to the page properties.
 
@@ -229,13 +226,13 @@ When creating or editing a template there are various aspects that you can defin
 
 The **Mode** selector in the toolbar allows you to select and edit the appropriate aspect of the template:
 
-* [Structure](#editingatemplatestructure)
-* [Initial Content](#editingatemplateinitialcontent)
-* [Layout](#editingatemplatelayout)
+* [Structure](#editing-a-template-structure)
+* [Initial Content](#editing-a-template-initial-content)
+* [Layout](#editing-a-template-layout)
 
 ![Template editor mode selector](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-While the **Page Policy** option on the **Page Information** menu allows you to [select the required page policies](#editingatemplatepagepolicies):
+While the **Page Policy** option on the **Page Information** menu allows you to [select the required page policies](#editing-a-template-page-policies):
 
 ![Template Editor Page Information](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -249,9 +246,9 @@ The following attributes of a template can be edited:
 
 #### Structure {#template-structure}
 
-Components added to the [structure](#editingatemplatestructure) cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
+Components added to the [structure](#editing-a-template-structure) cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
 
-When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editingatemplateinitialcontent).
+When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editing-a-template-initial-content).
 
 >[!NOTE]
 >
@@ -259,7 +256,7 @@ When components are locked you can add content, which cannot be edited by page a
 
 #### Initial Content {#template-initial-content}
 
-When a component has been unlocked you can define the [initial content](#editingatemplateinitialcontent) that will be copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
+When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content) that will be copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
 
 >[!NOTE]
 >
@@ -267,17 +264,17 @@ When a component has been unlocked you can define the [initial content](#editing
 
 #### Layout {#template-layout}
 
-With the [layout](#editingatemplatelayout) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+With the [layout](#editing-a-template-layout) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Page Policies {#template-page-policies}
 
-[Page policies](#editingatemplatepagepolicies) can connect predefined page policies to the page. These page policies define the various design configurations.
+[Page policies](#editing-a-template-page-policies) can connect predefined page policies to the page. These page policies define the various design configurations.
 
 #### Styles {#template-styles}
 
-The [Style System](/help/sites-authoring/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
+The [Style System](/help/sites-cloud/authoring/features/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 
-See the [Style System documentation](/help/sites-authoring/style-system.md) for more information.
+See the [Style System documentation](/help/sites-cloud/authoring/features/style-system.md) for more information.
 
 ### Editing a Template - Structure - Template Author {#editing-a-template-structure-template-author}
 
@@ -285,7 +282,7 @@ In **Structure** mode you define components and content for your template and de
 
 * Components defined in the template structure cannot be moved on a resulting page nor deleted from any resulting pages.
 * If you want page authors to be able to add and remove components, add a paragraph system to the template.
-* Components can be unlocked and locked again to allow you to define [initial content](#editingatemplateinitialcontent).
+* Components can be unlocked and locked again to allow you to define [initial content](#editing-a-template-initial-content).
 * The design policies for the components and page are defined.
 
 ![Template Editor page structure](/help/sites-cloud/authoring/assets/templates-page-structure.png)
@@ -297,7 +294,7 @@ There are a number of actions you can take in the **Structure** mode of the temp
 There are several mechanisms for adding components to the template:
 
 * From the **Components** browser in the side panel.
-* By using the **Insert Component** option (**+** icon) available on the toolbar of components already on the template or the **Drag components here** box.
+* By using the **Insert Component** option available on the toolbar of components already on the template or the **Drag components here** box.
 * By dragging an asset (from the **Assets** browser in the side panel) directly onto the template to generate the appropriate component in situ.
 
 Once added, each component is marked with:
@@ -316,7 +313,7 @@ Once added, each component is marked with:
 
 >[!NOTE]
 >
->Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-authoring/editing-content.md).
+>Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 #### Component Actions {#component-actions}
 
@@ -378,7 +375,7 @@ In the **Other templates also using the selected policy** section, you can easil
 
 >[!NOTE]
 >
->If multiple components of the same type are added as initial content, the same policy applies to all the components. This mirrors the same restriction in [**Design Mode** for static templates](/help/sites-authoring/default-components-designmode.md).
+>If multiple components of the same type are added as initial content, the same policy applies to all the components.
 
 ##### Properties {#properties}
 
@@ -417,7 +414,7 @@ For example for an image component you can define the cropping proportions, allo
 
 >[!NOTE]
 >
->[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+>Content policies for components implementing the rich text editor can only be defined for options made available by the RTE through its UI settings. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
 
 #### Policy and Properties (Layout Container) {#policy-and-properties-layout-container}
 
@@ -507,7 +504,7 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 
 >[!NOTE]
 >
->**Initial Content** mode can be thought of edit mode for pages created with that template. Therefore policies are not defined in **Initial Content** mode but rather in [**Structure** mode](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+>**Initial Content** mode can be thought of edit mode for pages created with that template. Therefore policies are not defined in **Initial Content** mode but rather in [**Structure** mode](#editing-a-template-structure-template-author).
 
 * Unlocked components that are available for editing are marked. When selected they have a blue border:
 
@@ -551,8 +548,8 @@ To access the **Page Design** dialog:
 1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
 1. The **Page Design** dialog opens and is divided into two sections:
 
-    * The left half defines the [page policies](/help/sites-authoring/templates.md#page-policies)
-    * The right half defines the [page properties](/help/sites-authoring/templates.md#page-properties)
+    * The left half defines the [page policies](#page-policies)
+    * The right half defines the [page properties](#page-properties)
 
    ![Page design](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
@@ -611,7 +608,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 ### Editing a Template - Initial Page Properties - Author {#editing-a-template-initial-page-properties-author}
 
-Using the **Initial Page Properties** option, you can define the initial [page properties](/help/sites-authoring/editing-page-properties.md) to be used when creating resultant pages.
+Using the **Initial Page Properties** option, you can define the initial [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) to be used when creating resultant pages.
 
 1. From the template editor, select **Page Information** from the toolbar, then **Initial Page Properties** to open the dialog.
 
@@ -660,5 +657,5 @@ When creating templates you should consider:
    >
    >AEM gives explicit warnings when changing the lock status of components on templates that are no longer drafts.
 
-1. [Creating your own folders](#creatingatemplatefolderdeveloper) for your site-specific templates.
-1. [Publish your templates](#publishingatemplateauthor) from the **Templates** console.
+1. [Creating your own folders](#creating-a-template-folder-developer) for your site-specific templates.
+1. [Publish your templates](#publishing-a-template-author) from the **Templates** console.

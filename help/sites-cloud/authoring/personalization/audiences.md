@@ -20,7 +20,7 @@ An Audience, called *segment* in ContextHub, is a class of visitors defined by s
 
 In the Audiences console, audiences are organized by brand.
 
-Audiences are available in Targeting mode for [authoring targeted content](/help/sites-authoring/content-targeting-touch.md), where you can also create audiences (but you need to create Adobe Target audiences in the Audiences console). Audiences that you create in Targeting mode appear in the Audiences console.
+Audiences are available in Targeting mode for [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md), where you can also create audiences (but you need to create Adobe Target audiences in the Audiences console). Audiences that you create in Targeting mode appear in the Audiences console.
 
 Audiences are displayed with a label describing what kind of audience is defined:
 
@@ -44,7 +44,7 @@ To create a ContextHub segment in the Audiences console:
    >
    >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
 
-For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.
+For further detail about creating segments using ContextHub, please see the Configuring Segmentation with ContextHub documentation. <!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
 
 ## Creating an Adobe Target Audience Using the Audience Console {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -99,4 +99,4 @@ You can edit any ContextHub audience from the Audiences console. You can also ed
 
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
 1. Tap or click the icon next to the ContextHub segment you want to edit, and tap or click **Edit**.
-1. Make any edits in the segment editor. See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.
+1. Make any edits in the segment editor. See the ContextHub documentation for more information. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

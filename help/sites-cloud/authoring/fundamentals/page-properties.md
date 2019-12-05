@@ -33,7 +33,7 @@ The properties are distributed across several tabs.
     * The new tag will then be shown with a small star on the right indicating that it is a new tag.
   * With the drop-down functionality you can select from existing tags.
   * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
-  * For more information about tags, see [Using Tags](/help/sites-authoring/tags.md).
+  * For more information about tags, see [Using Tags](/help/sites-cloud/authoring/features/tags.md).
 
 * **Hide in Navigation**
 
@@ -96,10 +96,6 @@ The properties are distributed across several tabs.
 
   * Indicate the page to which this page should automatically redirect.
 
-* **Design**
-
-  * Indicate the [design](/help/sites-developing/designer.md) to be used for this page.
-
 * **Alias**
 
   * Specify an alias to be used with this page.
@@ -110,7 +106,10 @@ The properties are distributed across several tabs.
   >
   >For example: if you define an alias of `latin-lang` for the node `/content/we-retail/spanish` node, then this page can be accessed via `/content/we-retail/latin-language`
   >
+  >For further details see Localized page names under SEO and URL Management Best Practices.
+  <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
+  -->
 
 * **Inherited from &lt;*path*&gt;**
 
@@ -122,7 +121,7 @@ The properties are distributed across several tabs.
 
 * **Allowed Templates**
 
-  * [Define the list of templates that will be available](/help/sites-authoring/templates.md#allowingatemplate) within this sub-branch.
+  * [Define the list of templates that will be available](/help/sites-cloud/authoring/features/templates.md#allowing-a-template) within this sub-branch.
 
 * **Enable** (Authentication Requirement)
 
@@ -130,7 +129,7 @@ The properties are distributed across several tabs.
 
   >[!NOTE]
   >
-  >Closed user groups for the page are defined on the **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
+  >Closed user groups for the page are defined on the **[Permissions](#permissions)** tab.
 
 * **Login Page**
 
@@ -164,7 +163,7 @@ Shows the page thumbnail image. You can:
 
 * **Social Media sharing**
 
-  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
 
   * **Enable user sharing for Facebook**
   * **Enable user sharing for Pinterest**
@@ -175,38 +174,43 @@ Shows the page thumbnail image. You can:
 
 * **Cloud Services**
 
-  * Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  * Define properties for cloud services. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
 ### Personalization {#personalization}
 
 * **ContextHub Configurations**
 
-  * Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  * Select the ContextHub Configuration and Segments Path. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
 
 * **Targeting Configuration**
 
-  * Select a [Brand to specify a scope for Targeting](/help/sites-authoring/target-adobe-campaign.md).
+  * Select a [Brand to specify a scope for Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
 ### Permissions {#permissions}
 
 * **Permissions**
 
+  * Add Permissions
+  * Edit Closed User Group
+  * View the Effective Permissions
+  <!--
   * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
   * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
   * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
+  -->
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-  * Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).
+  * Define properties for a Blueprint page within multi-site management. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
   * Controls the circumstances under which modifications will be propagated to the Live Copy.
 
 ### Live Copy {#live-copy}
 
 * **Livecopy**
 
-  * Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).
+  * Define properties for a Live Copy page within multi-site management. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
   * Controls the circumstances under which modifications will be propagated from the Blueprint.
 
 ### Site Structure {#site-structure}
@@ -216,7 +220,7 @@ Shows the page thumbnail image. You can:
 ## Editing Page Properties {#editing-page-properties-1}
 
 * From the **Sites** console:
-  * [Creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)
+  * [Creating a new page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (a subset of the properties)
   * Clicking or tapping **Properties**
     * For a single page
     * For multiple pages (only a subset of the properties are available for editing en masse)
@@ -229,8 +233,8 @@ Clicking or tapping **Properties** to define the page properties:
 
 1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.
 1. Select the **Properties** option for the required page using either:
-   * [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [Selection mode](/help/sites-authoring/basic-handling.md#selectionmode)
+   * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selection-mode)
    * The page properties will be shown using the appropriate tabs.
 1. Either view or edit the properties as required.
 1. Then use **Save** to save your updates followed by **Close** to return to the console.
@@ -252,9 +256,14 @@ From the **Sites** console you can select several pages then use **View Properti
 
 >[!NOTE]
 >
+>Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See Editing Properties of Multiple Assets for details.
+>
+>There is also the Bulk Editor, which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
+<!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
 >There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
+-->
 
 You can select multiple pages for bulk editing by various methods, including:
 
@@ -296,4 +305,7 @@ Once you have entered Bulk Editing you can:
 
 >[!NOTE]
 >
+>The page component can be configured to specify the fields available for bulk editing. See Configuring your page for bulk editing of page properties.
+<!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
+-->

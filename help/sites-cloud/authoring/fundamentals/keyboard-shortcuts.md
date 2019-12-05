@@ -11,19 +11,19 @@ content-type: reference
 
 # Keyboard Shortcuts for Page Editing {#keyboard-shortcuts-when-editing-pages}
 
-Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the [use of consoles](/help/sites-authoring/keyboard-shortcuts.md).
+Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the [use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->The [modifier keys](/help/sites-authoring/page-authoring-keyboard-shortcuts.md#os-specific-modifier-keys) required for AEM keyboard shortcuts vary depending on operating system.
+>The [modifier keys](#os-specific-modifier-keys) required for AEM keyboard shortcuts vary depending on operating system.
 
 ## Editing Keyboard Shortcuts {#editing-keyboard-shortcuts}
 
 |Location|Shortcut|Description|
 |-|-|-|
-|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)*|
-|**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
-||`Ctrl-y`|[Redo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
+|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)*|
+|**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits)|
+||`Ctrl-y`|[Redo last change](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-Click`|Select multiple paragraphs|
 ||`Ctrl-c`|Copy selected paragraph(s)|
 ||`Ctrl-x`|Cut selected paragraph(s), (cut paragraphs will not disappear in the UI until it is pasted)|
@@ -37,11 +37,11 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 >
 >Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click on the top editor bar or go back to the Edit mode for the shortcut to once again become available.
 
-Various keyboard shortcuts are also available for desktop users when using the [consoles](/help/sites-authoring/keyboard-shortcuts.md).
+Various keyboard shortcuts are also available for desktop users when using the [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Editor keyboard shortcuts are always active regardless if the [console shortcuts have been deactivated](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Editor keyboard shortcuts are always active regardless if the [console shortcuts have been deactivated](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## OS-Specific Modifier Keys {#os-specific-modifier-keys}
 

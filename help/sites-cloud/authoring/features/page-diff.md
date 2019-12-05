@@ -21,16 +21,16 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 >
 >The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
 >
->See [Developing and Page Diff](https://youtu.be/ZZ5LpwO-An4#operation-details) for more technical details on this feature.
+>See Developing and Page Diff for more technical details on this feature. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
 
 ## Use {#use}
 
 The side-by-side diff can compare:
 
 * [Versions](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Earlier version of a page with its current state
-* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint
-* [Launches](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Launch with its Source
-* [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation
+* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [Launches](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Launch with its Source
+* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
 
 See the respective topics on how to start the diff within those contexts.
 
@@ -92,7 +92,7 @@ There are some situations in which the page diff may not detect a difference as 
 * If any changes are made to an image such as modifying the alt, title, or src attributes, it will be highlighted in blue as changed. However in some cases the image has a Base64 representation of the src attribute and even if both images look the same they will be marked by the diff as different because of the differing src attributes.
 * The diff is unable to detect image rotation.
 * If a page is moved, you can no longer perform a diff with any versions made before the move.
-  * If you experience problems with a diff, check the [Timeline](/help/sites-authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.
+  * If you experience problems with a diff, check the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) for the page to see whether the page has been moved.
 
 >[!NOTE]
 >
@@ -100,4 +100,4 @@ There are some situations in which the page diff may not detect a difference as 
 
 >[!NOTE]
 >
->For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.
+>For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the developer documentation of this feature. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->

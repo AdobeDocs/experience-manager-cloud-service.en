@@ -35,7 +35,7 @@ Using the style system generally takes the following form.
 1. The HTML developer is provided with the HTML output of the components and the desired visual variations to implement.
 1. The HTML developer defines the CSS classes that correspond to each visual variation and are to be inserted on the element wrapping the components.
 1. The HTML developer implements the corresponding CSS code (and optionally JS code) for each of the visual variations so that they look as defined.
-1. The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.
+1. The AEM developer places the provided CSS (and optional JS) in a Client Library and deploys it. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
 1. The AEM developer or template author configures the page templates and edits the policy of each styled component, adding the defined CSS classes, giving user-friendly names to each style, and indicating which styles can be combined.
 1. The AEM page author can then choose the designed styles in the page editor via the style menu of the component's toolbar.
 
@@ -49,13 +49,13 @@ The following diagram illustrates the architecture of the style system.
 
 ## Use {#use}
 
-To demonstrate the feature, styles need to be created for a component. The following sections [As a Content Author](/help/sites-authoring/style-system.md#as-a-content-author) and [As a Template Author](/help/sites-authoring/style-system.md#as-a-template-author) describe how to to use the functionality of the style system using the style system assuming your components already have styles configured.
+To demonstrate the feature, styles need to be created for a component. The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to to use the functionality of the style system using the style system assuming your components already have styles configured.
 
 If you wish to use the style system for your own components do the following:
 
-1. Install the CSS as client libraries as discussed in the section [Overview](/help/sites-authoring/style-system.md#overview).
-1. Configure the CSS classes that you wish to make available to your content authors as described in the section [As a Template Author](/help/sites-authoring/style-system.md#as-a-template-author).
-1. Content authors can then use the styles as described in the section [As a Content Author](/help/sites-authoring/style-system.md#as-a-content-author).
+1. Install the CSS as client libraries as discussed in the section [Overview](#overview).
+1. Configure the CSS classes that you wish to make available to your content authors as described in the section [As a Template Author](#as-a-template-author).
+1. Content authors can then use the styles as described in the section [As a Content Author](#as-a-content-author).
 
 ### As a Content Author {#as-a-content-author}
 
@@ -70,7 +70,7 @@ If you wish to use the style system for your own components do the following:
 
    >[!NOTE]
    >
-   >In this example, the **Layout** styles (**Block** and **Grid**) are mutually exclusive, while the **Display** options (**Image** or **Date**) can be combined. This can be [configured in the template as the template author](/help/sites-authoring/style-system.md#as-a-template-author).
+   >In this example, the **Layout** styles (**Block** and **Grid**) are mutually exclusive, while the **Display** options (**Image** or **Date**) can be combined. This can be [configured in the template as the template author](#as-a-template-author).
 
 ### As a Template Author {#as-a-template-author}
 
@@ -95,7 +95,7 @@ If you wish to use the style system for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as Client Libraries in order to work. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## Setup {#setup}
 

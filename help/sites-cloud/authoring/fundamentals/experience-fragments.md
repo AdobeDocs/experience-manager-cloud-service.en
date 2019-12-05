@@ -50,7 +50,7 @@ Experience Fragments should be used:
   * Channel or context-specific variations
   * Experiences that make sense to group (for example a campaign with different experiences across channels)
 * When you use Omnichannel Commerce.
-  * Sharing commerce-related content on [social media](/help/sites-developing/experience-fragments.md#social-variations) channels at scale
+  * Sharing commerce-related content on social media channels at scale <!--Sharing commerce-related content on [social media](/help/sites-developing/experience-fragments.md#social-variations) channels at scale-->
   * Making touchpoints transactional
 
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
@@ -75,7 +75,10 @@ To create an Experience Fragment:
 
    >[!NOTE]
    >
+   >See Templates for Experience Fragments for further details.
+   <!--
    >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
+   -->
 
 1. Enter the **Properties** for your **Experience Fragment**.
 
@@ -96,15 +99,15 @@ The Experience Fragment Editor offers you similar capabilities to the normal pag
 
 >[!NOTE]
 >
->See [Editing Page Content](/help/sites-authoring/editing-content.md) for more information on how to use the page editor.
+>See [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md) for more information on how to use the page editor.
 
 The following example procedure illustrates how to create a teaser for a product:
 
-1. Drag and drop a **Teaser** from the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Drag and drop a **Teaser** from the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
    ![Adding components to an Experience Fragment](/help/sites-cloud/authoring/assets/xf-05.png)
 
-1. Select **[Configure](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** from the component toolbar.
+1. Select **[Configure](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-configure-copy-cut-delete-paste)** from the component toolbar.
 1. Add the **Asset** and define the **Properties** as required.
 1. Confirm the definitions with **Done** (tick icon).
 1. Add more components as required.
@@ -113,7 +116,7 @@ The following example procedure illustrates how to create a teaser for a product
 
 You can create variations of your Experience Fragment, depending on your needs:
 
-1. Open your fragment for [editing](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
+1. Open your fragment for [editing](#editing-your-experience-fragment).
 1. Open the **Variations** tab.
 
    ![Creating an Experience Fragment variation](/help/sites-cloud/authoring/assets/xf-authoring-06.png)
@@ -143,7 +146,7 @@ You can now use your Experience Fragment when authoring your pages:
 
 1. Open any page for editing.
 
-   For example: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   For example: `https://<host>:<port>/editor.html/content/we-retail/language-masters/en/products/men.html`
 
 1. Create an instance of the Experience Fragment component, by dragging the component from the Components browser to the page paragraph system:
 
@@ -202,7 +205,7 @@ You can drag your building block to the paragraph system of any fragment, as wit
 
 Details of your fragment can be seen:
 
-1. Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):
+1. Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an export to Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
 
    ![Experience Fragment details](/help/sites-cloud/authoring/assets/ef-03.png)
 
@@ -216,7 +219,7 @@ Details of your fragment can be seen:
    >
    >These tabs are shown when you open **Properties** from the Experience Fragments console.
    >
-   >If you **Open Properties** when editing an Experience Fragment, the appropriate [Page Properties](/help/sites-authoring/editing-page-properties.md) are shown.
+   >If you **Open Properties** when editing an Experience Fragment, the appropriate [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) are shown.
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/ef-05.png)
 
@@ -244,13 +247,16 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 >[!NOTE]
 >
+>Although this is directly available from the browser, the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL.
+<!--
 >Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+-->
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
-For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.
+For export to Adobe Target, JSON can also be used. See Target Integration with Experience Fragments for full information. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
 
 ## Configuring Allowed Templates {#configuring-allowed-templates}
 
@@ -266,6 +272,9 @@ For export to Adobe Target, JSON can also be used. See [Target Integration with 
 
    >[!NOTE]
    >
+   >See Templates for Experience Fragments for further details.
+   <!--
    >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
+   -->
 
 1. Select **Save**.

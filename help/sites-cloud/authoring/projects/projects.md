@@ -15,7 +15,7 @@ Projects let you group resources into one entity. A common, shared environment m
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and**/home/groups**.
+>For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on `/home/users` and `/home/groups`. The easiest way to implement this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
 
 As a user, you can do the following:
 
@@ -26,11 +26,9 @@ As a user, you can do the following:
 
 See the following additional topics:
 
-* [Managing Projects
-  ](/help/sites-authoring/touch-ui-managing-projects.md)
-* [Working with Tasks](/help/sites-authoring/task-content.md)
-* [Working with Project Workflows](/help/sites-authoring/projects-with-workflows.md)
-* [Creative Project and PIM Integration](/help/sites-authoring/managing-product-information.md)
+* [Managing Projects](/help/sites-cloud/authoring/projects/managing-projects.md)
+* [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md)
+* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## Projects Console {#projects-console}
 
@@ -73,7 +71,7 @@ You upload assets directly in the tile. In addition you can create Image Sets, S
 
 ### Asset Collections {#asset-collections}
 
-Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.
+Similar to assets, you can add asset collections directly to your project. You define collections in Assets. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
 
 ![Asset collection](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -113,7 +111,7 @@ Team members can be assigned and deleted from this tile (or have their roles cha
 
 ### Translation Job {#translation-job}
 
-The Translation Job tile is where you start a translation and also where you see the status of your translations. To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).
+The Translation Job tile is where you start a translation and also where you see the status of your translations. To set up your translation, see Creating Translation Projects. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
 
 ![Translation job](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -131,22 +129,6 @@ You can add and delete team members from the team. In addition, you can edit the
 
 ![Add team from list](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
 
-### Landing Pages {#landing-pages}
-
-The **Landing** Pages tile lets you request a new landing page.
-
-![Landing page](/help/sites-cloud/authoring/assets/projects-landing-page.png)
-
-This workflow is described in [Create a Landing Page workflow](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
-
-### Emails {#emails}
-
-The **Emails** tile helps you manage requests for email. It starts the Request for Email workflow.
-
-![Emails](/help/sites-cloud/authoring/assets/projects-emails.png)
-
-More information is described in the [Request Email workflow.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
-
 ### Workflows {#workflows}
 
 You can assign your project to follow certain workflows. If any workflows are running, their status displays in the **Workflows** tile in Projects.
@@ -155,19 +137,19 @@ You can assign your project to follow certain workflows. If any workflows are ru
 
 You can assign your project to follow certain workflows. Depending on which project you choose you have different workflows available.
 
-These are described in [Working with Project Workflows.](/help/sites-authoring/projects-with-workflows.md)
+These are described in [Working with Project Workflows.](/help/sites-cloud/authoring/projects/workflows.md)
 
 ### Launches {#launches}
 
-The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-authoring/projects-with-workflows.md)
+The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-cloud/authoring/projects/workflows.md)
 
 ![Launches](/help/sites-cloud/authoring/assets/project-launches.png)
 
 ### Tasks {#tasks}
 
-Tasks let you monitor the status of any project-related tasks, including workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
+Tasks let you monitor the status of any project-related tasks, including workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md).
 
-![Tasks](/help/sites-cloud/authoring/assets/projects-tasks.pngg)
+![Tasks](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ## Project Templates {#project-templates}
 
@@ -175,8 +157,7 @@ AEM ships with three different templates out of the box:
 
 * A simple project - A reference sample for any projects that do not fit into other categories (a catch-all). It includes three basic roles (Owners, Editors, and Observers) and four workflows (Project Approval, Request Launch, Request Landing Page and Request Email).
 * A media project - A reference sample project for media-related activities. It includes several media related project roles (Photographers, Editors, Copywriters, Designers, Owners and Observers). It also includes two workflows related to media content - Request Copy (for requesting and reviewing text) and Product Photo Shoot (for managing product related photography)
-* [Product Photo Shoot Project](/help/sites-authoring/managing-product-information.md) - A reference sample for managing eCommerce related product photography. It includes roles for Photographers, Editors, Photo Retouchers, Owners, Creative Directors, Social Media Marketers, Marketing Managers, Reviewers and Observers.
-* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.
+* A translation project - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
 
 Based on the template you select, you have different options available to you particularly around user roles and workflows.
 
@@ -194,8 +175,6 @@ All projects support the following default roles to let you administer security 
 |Observer|A user in this role can view project details, including the project status.|Read-only permissions on a project|`workflow-users` group|
 |Editor|A user in this role can upload and edit the contents of a project.|Read and Write access on a project, associated metadata, and related assets; privileges to upload a shot list, photo shoot, and review and approve assets; write permission on /etc/commerce; modify permission on a specific project|workflow-users group|
 |Owner|A user in this role can initiate a project. An owner can create a project, initiate work in a project, and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group (to be able to create a project) project-administrators group (to be able to move assets)|
-
-For creative projects, additional roles - for example, photographers - are also provided. You can use these roles to derive custom roles for a specific project.
 
 >[!NOTE]
 >

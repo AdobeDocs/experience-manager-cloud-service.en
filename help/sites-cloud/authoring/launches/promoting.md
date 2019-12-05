@@ -37,14 +37,14 @@ You need to promote launch pages to move the content back into the source (produ
 >This covers the manual action of promoting launch pages when there is only one launch level. See:
 >
 >* [Promoting a Nested Launch](#promoting-a-nested-launch) when there is more than one launch in the structure.
->* [Launches - the Order of Events](/help/sites-authoring/launches.md#launches-the-order-of-events) for further details about automatic promotion and publication.
+>* [Launches - the Order of Events](/help/sites-cloud/authoring/launches/launches.md#launches-the-order-of-events) for further details about automatic promotion and publication.
 >
 
 You can promote launches from either the **Sites** console or the **Launches** console:
 
 1. Open:
    * The **Sites** console:
-     1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
+     1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#showing-page-references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
      1. Select **Launches** (e.g. Launches (1)) to show a list of the specific launches.
      1. Select the specific launch to show the actions available.
      1. Select **Promote launch** to open the wizard.
@@ -90,7 +90,7 @@ After creating a nested launch you can promote it back to any of the sources, in
 
 ![A nested launch](/help/sites-cloud/authoring/assets/launches-promoting-nested.png)
 
-1. As with [Creating a Nested Launch](#creatinganestedlaunchlaunchwithinalaunch), navigate to and select the required launch in either the **Launches** console or the **References** rail.
+1. As with Creating a Nested Launch, navigate to and select the required launch in either the **Launches** console or the **References** rail.
 1. Select **Promote launch** to open the wizard.  
 1. Enter the required details:
    * **Target**
@@ -125,7 +125,7 @@ Use workflow models to perform bulk processing of promoted Launches pages:
 1. When authors promote Launch pages, they store them in the workflow package.
 1. Start a workflow model using the package as the payload.
 
-To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.
+To start a workflow automatically when pages are promoted, configure a workflow launcher for the package node. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
 For example, you can automatically generate page activation requests when authors promote Launches pages. Configure a workflow launcher to start the Request Activation workflow when the package node is modified.
 

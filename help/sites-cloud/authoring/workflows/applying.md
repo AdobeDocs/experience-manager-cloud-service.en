@@ -29,13 +29,19 @@ Workflows can be started from:
 >
 >See also:
 >
+>* How to apply workflows to DAM assets.
+>* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
+<!--
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
->* [Working with Project Workflows](/help/sites-authoring/projects-with-workflows.md).
->
+>* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
+-->
 
 >[!NOTE]
 >
+>AEM administrators can start workflows using several other methods.
+<!--
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
+-->
 
 ## Starting a Workflow from the Sites Console {#starting-a-workflow-from-the-sites-console}
 
@@ -64,7 +70,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 From the **Timeline** you can start a workflow to be applied to your selected resource.
 
-1. [Select the resource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) and open [Timeline](/help/sites-authoring/basic-handling.md#timeline) (or open Timeline and then select the resource).
+1. [Select the resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-your-resources) and open [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (or open Timeline and then select the resource).
 1. The arrowhead by the comment field can be used to reveal **Start Workflow**:
 
    ![Create workflow from the timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -98,7 +104,10 @@ You can specify details:
 
    >[!NOTE]
    >
+   >The **Keep workflow package** option is available when the workflow has been configured for Multi Resource Support and multiple resources have been selected.
+   <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
+   -->
 
    When complete, use **Next** to proceed.
 
@@ -106,7 +115,7 @@ You can specify details:
 
 1. In the **Scope** step you can select:
 
-    * **Add Content** to open the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) and select additional resources; when in the browser, click/tap **Select** to add the content to the workflow instance.
+    * **Add Content** to open the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) and select additional resources; when in the browser, click/tap **Select** to add the content to the workflow instance.
 
     * An existing resource to see additional actions:
 

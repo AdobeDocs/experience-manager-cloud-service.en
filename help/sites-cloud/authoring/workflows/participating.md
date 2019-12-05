@@ -24,11 +24,11 @@ Workflows typically include steps that require a person to perform an activity o
 
 When you are assigned a work item (for example, **Approve Content**) various alerts and/or notifications appear:
 
-* Your [notification](/help/sites-authoring/inbox.md) indicator (toolbar) will be incremented:
+* Your [notification](/help/sites-cloud/authoring/getting-started/inbox.md) indicator (toolbar) will be incremented:
 
   ![Notification toolbar](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* The item will be listed in your notification [Inbox](/help/sites-authoring/inbox.md):
+* The item will be listed in your notification [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md):
 
   ![Notifications in inbox](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ You can complete a participant step from either:
 
 Use the following procedure to complete the work item:
 
-1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Complete** from the toolbar.
 1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop down selector and add a **Comment** if required.
@@ -82,7 +82,7 @@ Use the following procedure to complete the work item:
 
 Use the following procedure to complete the work item:
 
-1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Select **Complete** from the status bar at the top.
 1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop down selector and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -131,7 +131,7 @@ You can delegate a participant step from either:
 
 Use the following procedure to delegate a work item:
 
-1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Delegate** from the toolbar.
 1. The dialog will open. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
@@ -141,7 +141,7 @@ Use the following procedure to delegate a work item:
 
 Use the following procedure to delegate a work item:
 
-1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Select **Delegate** from the status bar at the top.
 1. The dialog will open. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -181,7 +181,7 @@ You can perform step back on a participant step from either:
 
 Use the following procedure to step back:
 
-1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Step Back** to open the dialog.
 1. Specify the **Previous Step** and add a **Comment** if required.
@@ -191,7 +191,7 @@ Use the following procedure to step back:
 
 Use the following procedure to step back:
 
-1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Select **Step Back** from the status bar at the top.
 1. Specify the **Previous Step** and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -225,7 +225,7 @@ The workflow details are shown in tabs and appropriate actions are available in 
 
   ![WORKFLOW tab](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-  If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:
+  If Workflow Stages have been configured for the model, you can view the progress according to these: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
   ![Workflow stages](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
@@ -242,7 +242,7 @@ You can open the work item details from either:
 
 To open a workflow item and view the details:
 
-1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Open** to open the information tabs.
 1. If required, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
@@ -252,7 +252,7 @@ To open a workflow item and view the details:
 
 To open a workflow item and view the details:
 
-1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Select **View Details** from the status bar to open the information tabs.
 1. If required, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
 1. Use **Save** or **Cancel** to exit.
@@ -263,7 +263,7 @@ You can view details of the payload associated with the workflow instance. Initi
 
 To view the payload, and resources, of the workflow instance:
 
-1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **View Payload** from the toolbar to open the dialog.
    * As a workflow package is simply a collection of pointers to paths within the repository, you can add/remove/modify the entries here to adjust what is referenced by the workflow package. Use the **Resource Definition** component to add new entries.

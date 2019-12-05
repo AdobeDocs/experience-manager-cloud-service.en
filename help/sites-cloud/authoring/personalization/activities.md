@@ -11,19 +11,19 @@ topic-tags: personalization
 
 # Managing Activities {#managing-activities}
 
-The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-authoring/personalization.md#activities) of your brands:
+The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-cloud/authoring/personalization/personalization.md#activities) of your brands:
 
 * Add brands
 * For each brand, add and configure activities
 * Administer activities
 
->[!NOTE]
+>[!TIP]
 >
 >If you are using Adobe Target as your targeting engine, you can also [view performance data of your activities](#viewing-performance-and-converting-winning-experiences-a-b-test). If you are using A/B testing, you can [convert winners](#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 On the Activities console, activities are organized by brand. You can use brands and folders to structure the organization of your activities. You navigate to the Activities console by tapping/clicking **Personalization** and tapping/clicking **Activities**.
 
-Activities are available in Targeting mode for [authoring targeted content](/help/sites-authoring/content-targeting-touch.md), where you can also create activities. Activities that you create in Targeting mode appear in the Activities console.
+Activities are available in Targeting mode for [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md), where you can also create activities. Activities that you create in Targeting mode appear in the Activities console.
 
 Activities are displayed with a label describing what kind of activity is defined:
 
@@ -47,13 +47,16 @@ Activities are displayed with a label describing what kind of activity is define
 >
 >You must secure the activity settings node `cq:ActivitySettings` on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
 >
+>See Prerequisites for Integrating with Adobe Target for detailed information.
+<!--
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
+-->
 
 ## Creating a Brand Using the Activities Console {#creating-a-brand-using-the-activities-console}
 
 Create a brand for which you want to manage marketing activities.
 
-When you create a brand using the Activities console, it also appears in the [Offers console](/help/sites-authoring/offerlib.md) where you can create offers for the experiences of your activities.
+When you create a brand using the Activities console, it also appears in the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) where you can create offers for the experiences of your activities.
 
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Activities**.
 
@@ -69,7 +72,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 Add an activity or edit an existing activity to focus your marketing efforts on specific audiences. When you create/edit an activity, you specify the following information:
 
 * **Name:** The name of the activity.
-* **Targeting Engine:** Either [AEM](/help/sites-authoring/personalization.md#aem) or [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) as the engine for targeted content.
+* **Targeting Engine:** Either [AEM](/help/sites-cloud/authoring/personalization/personalization.md#aem) or [Adobe Target](/help/sites-cloud/authoring/personalization/personalization.md#adobe-target) as the engine for targeted content.
 * **Select a Target Configuration:** (Adobe Target only) The cloud configuration that this activity should use to connect to Adobe Target. This option appears only when Adobe Target is selected for Targeting Engine.
 * **Activity Type**: The activity type - A/B Test or Experience targeting
 * **Objective:** (Optional) A description of the activity.
@@ -111,7 +114,7 @@ To add an activity:
     * **When Deactivated**: The activity ends when the page that contains the targeted content is deactivated.
     * **Specified Date & Time**: A specific time. When you select this option, click or tap the calendar icon, select a date, and specify the time to end the activity.
 1. To specify a priority for the activity, use the slider to select either **Low**, **Normal**, or **High**.
-1. If you are using Adobe Target as your targeting engine, select what you would like to measure with this activity. See [Configuring the Activity and Setting Goals](/help/sites-authoring/content-targeting-touch.md) for more information on the success metrics available. You must select at least one goal.
+1. If you are using Adobe Target as your targeting engine, select what you would like to measure with this activity. See [Configuring the Activity and Setting Goals](/help/sites-cloud/authoring/personalization/targeted-content.md) for more information on the success metrics available. You must select at least one goal.
 1. Click or tap **Save**.
 
    >[!NOTE]

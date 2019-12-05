@@ -66,8 +66,11 @@ To search and filter your resources:
    >The search criteria can vary:
    >
    >* Depending on the resource type you have selected; for example, the Assets and Communities criteria are understandably specialized.
-   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
-  
+   >* Your instance as the Search Forms can be customized (appropriate to the location within AEM).
+  <!--
+  >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
+  -->
+
    ![Search side panel](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
 1. You can also add additional search terms:

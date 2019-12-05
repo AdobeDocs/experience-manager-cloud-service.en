@@ -11,10 +11,6 @@ content-type: reference
 
 # Keyboard Shortcuts for Consoles {#keyboard-shortcuts-for-consoles}
 
-Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to [page editing](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
-## Keyboard Shortcuts {#keyboard-shortcuts}
-
 The following shortcuts are available for the Sites, Assets, Users, Groups, Projects, and Experience Fragments consoles.
 
 |Location|Shortcut|Description|
@@ -27,8 +23,8 @@ The following shortcuts are available for the Sites, Assets, Users, Groups, Proj
 |Console - Column View|`Shift-Up/Down Arrow`|Move up a list of pages at the same level|
 ||`Esc`|Move up a list of pages at the same level|
 |Consoles|`?`|Keyboard shortcut help|
-||`/`|Invoke [search](/help/sites-authoring/search.md)|
-||`Alt+`&lt;`Number`&gt;|Toggle which [rail selector](/help/sites-authoring/basic-handling.md#rail-selector) option to view|
+||`/`|Invoke [search](/help/sites-cloud/authoring/getting-started/search.md)|
+||`Alt+`&lt;`Number`&gt;|Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view|
 ||&#96;|Hide rail|
 ||`e`|Edit|
 ||`p`|Properties|
@@ -40,11 +36,9 @@ The following shortcuts are available for the Sites, Assets, Users, Groups, Proj
 
 The key combinations are listed with the Windows [modifier keys](#os-specific-modifier-keys).
 
-Various keyboard shortcuts are also available for desktop users when using the [page editor](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) to author pages.
-
 ## OS-Specific Modifier Keys {#os-specific-modifier-keys}
 
-The modfier keys used for the keyboard shortcuts vary depending on the operating system used by the client.
+The modifier keys used for the keyboard shortcuts vary depending on the operating system used by the client.
 
 |Windows/Linux|macOS|
 |-|-|
@@ -67,7 +61,7 @@ In addition keyboard shortcuts are the same for all locales and keyboard layouts
 >
 >AEM keyboard shortcuts could interfere with screen readers, some browser features, and other accessibility tools.
 >
->Adobe recommends [disabling AEM keyboard shortcuts](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) when using a screen reader.
+>Adobe recommends [disabling AEM keyboard shortcuts](#deactivating-keyboard-shortcuts) when using a screen reader.
 
 ## Deactivating Keyboard Shortcuts {#deactivating-keyboard-shortcuts}
 
@@ -77,9 +71,13 @@ For users that do not use keyboard shortcuts or have certain accessibility requi
 
 You can deactivate keyboard shortcuts in two locations:
 
-* [My Preferences](/help/sites-authoring/user-properties.md#my-preferences)
-* The [help menu](/help/sites-authoring/basic-handling.md#accessing-help)
+* [My Preferences](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
+* The [help menu](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >
 >The navigation shortcut keys for the column view and content tree are always active.
+
+## Keyboard Shortcuts for the Page Editor {#keyboard-shortcuts-for-the-page-editor}
+
+Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to [page editing](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).

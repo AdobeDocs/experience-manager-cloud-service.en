@@ -25,7 +25,7 @@ Content can then be specifically targeted to the visitor's needs and interests d
 
 ## Using Segmentation {#using-segmentation}
 
-Segments are defined in [Configuring Segmentation](/help/sites-administering/campaign-segmentation.md). They are used to steer the actual content seen by a specific target audience.
+Segments are defined in Configuring Segmentation. They are used to steer the actual content seen by a specific target audience.<!--Segments are defined in [Configuring Segmentation](/help/sites-administering/campaign-segmentation.md). They are used to steer the actual content seen by a specific target audience.-->
 
 ## Segmentation Terminology {#segmentation-terminology}
 
@@ -54,7 +54,3 @@ When discussing segmentation, the following terminology is used:
 * **Campaign** - A campaign is a collection of teaser pages and e-mail marketing pages, such as newsletters or invitations. Typically a campaign runs for a limited period and is superseded by another campaign.
 * **Teaser Paragraph** - This is a paragraph that pulls content from another page dependent on a selection strategy. This selection strategy can take segments and campaigns into consideration.
 * **List** - A list is extracted from a segment of registered users. For example, the location used to steer the contents of the teaser paragraph.
-
->[!NOTE]
->
->Please see [Segmentation](/help/sites-administering/campaign-segmentation.md) for further information on segments in AEM.

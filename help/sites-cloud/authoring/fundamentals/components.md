@@ -13,7 +13,7 @@ content-type: reference
 
 Components are the fundamental authoring building block of content pages in Adobe Experience Manager (AEM). Components such as images, text, titles, etc. can be easily dragged and dropped to build your content.
 
-AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-authoring/editing-content.md) and are grouped by main functional area (called component group) to aid filtering.
+AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md) and are grouped by main functional area (called component group) to aid filtering.
 
 >[!NOTE]
 >
@@ -23,19 +23,19 @@ AEM comes with a variety of out-of-the-box components that provide comprehensive
 
 ## General Usage {#general-usage}
 
-The components are available on the **Components** tab of the side panel of the page editor when [editing a page](/help/sites-authoring/editing-content.md).
+The components are available on the **Components** tab of the side panel of the page editor when [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 You can select a component and drag it to the required location on your page. You can then edit it using:
 
-* [Configure Properties](/help/sites-authoring/editing-page-properties.md)
-* [Edit Content](/help/sites-authoring/editing-content.md)
-* [Edit Content - Full Screen Mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
+* [Configure Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md)
+* [Edit Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+* [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-For further information about adding components to a page see the article [Editing Page Content](/help/sites-authoring/editing-content.md).
+For further information about adding components to a page see the article [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Overview of All Components {#overview-of-all-components}
 
-The [Components Console](/help/sites-authoring/default-components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. You can view key information about the individual components and their usage.
+The [Components Console](/help/sites-cloud/authoring/features/components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. You can view key information about the individual components and their usage.
 
 ## Core Components {#core-components}
 
@@ -45,4 +45,4 @@ They are build using AEM best practices and are the foundation of the AEM author
 
 ### Configuring Templates {#configuring-templates}
 
-If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-authoring/templates.md) enable/disable these and edit parameters for specific components.
+If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/features/templates.md) enable/disable these and edit parameters for specific components.

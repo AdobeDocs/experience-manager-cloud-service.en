@@ -13,8 +13,8 @@ topic-tags: site-features
 
 Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* See Administering Tags for information about creating and managing tags, as well as to which content tags have been applied. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
+* See Tagging for Developers for information about the tagging framework as well as including and extending tags in custom applications. <!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
 
 ## Ten Reasons to Use Tagging {#ten-reasons-to-use-tagging}
 
@@ -35,7 +35,7 @@ When designing the content structure for a site and the metadata schema for asse
 
 In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. The **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
+To apply pre-defined tags, in the **Page Properties** window use the **Tags** field and the **Select Tags** window. The **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy. <!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
 ![Select multiple tags](/help/sites-cloud/authoring/assets/tags-select.png)
 
@@ -51,7 +51,7 @@ Similar to how you can publish and unpublish pages pages, you can perform the fo
 
 >[!NOTE]
 >
->When you activate a page, a dialog automatically opens and enables you to activate unactivated tags belonging to the page.
+>When you activate a page, a dialog automatically opens and enables you to activate un-activated tags belonging to the page.
 
 ### Deactivate {#deactivate}
 
