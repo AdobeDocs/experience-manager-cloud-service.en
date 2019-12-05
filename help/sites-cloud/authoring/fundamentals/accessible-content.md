@@ -339,19 +339,21 @@ You can make sure your web pages are given the appropriate structure by:
 <!--
 >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
-  To open the **Table** dialog where you can select the **Table Properties** tab:
-  * Define an appropriate **Caption**.
-  * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
+
+To open the **Table** dialog where you can select the **Table Properties** tab:
+
+* Define an appropriate **Caption**.
+* Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
   
-  You can then use the **Cell Properties** to choose whether the cell is a data or header cell:
+You can then use the **Cell Properties** to choose whether the cell is a data or header cell:
 
 * **Complex Data Tables**: In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
 
   >[!NOTE]
   >
   >The id attribute is not available in an out-of-the-box installation. It can be enabled by configuring HTML rules and the serializer in the RTE.
- 
-  ```xml
+
+ ```xml
   <table>
      <tr>
        <th rowspan="2" id="h">Homework</th>
@@ -376,7 +378,7 @@ You can make sure your web pages are given the appropriate structure by:
       <td headers="p pf">15%</td>
      </tr>
     </table>
-  ```
+ ```
 
   To achieve this in AEM you must add the markup directly using the source edit mode.
 
