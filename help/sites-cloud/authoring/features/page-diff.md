@@ -21,13 +21,13 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 >
 >The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
 >
->See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.
+>See [Developing and Page Diff](https://youtu.be/ZZ5LpwO-An4#operation-details) for more technical details on this feature.
 
 ## Use {#use}
 
 The side-by-side diff can compare:
 
-* [Versions](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Earlier version of a page with its current state
+* [Versions](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Earlier version of a page with its current state
 * [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint
 * [Launches](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Launch with its Source
 * [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation
