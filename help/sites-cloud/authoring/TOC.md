@@ -61,7 +61,7 @@ user-guide-title: Authoring User Guide
     + [Authoring Targeted Content Using Targeting Mode](personalization/targeted-content.md)
     + [Working with Targeted Content in Multisites](personalization/multisite-targeted-content.md)
     + [How Multisite Management for Targeted Content is Structured](personalization/multisite-structure.md)
-    + [Managing Activities](activitylib.md)
+    + [Managing Activities](personalization/activities.md)
     + [Managing Audiences](managing-audiences.md)
     + [Creating and Managing Offers](offerlib.md)
     + [Understanding Segmentation](segmentation-overview.md)
