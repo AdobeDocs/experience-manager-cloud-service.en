@@ -141,7 +141,7 @@ Timewarp is a [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.
 
 1. The page is displayed based on the date set. Timewarp mode is indicated via the blue status bar at the top of the window. Use the links in the status bar to select a new target date or exit Timewarp mode.
 
-   ![In Timewarp mode](help/sites-cloud/authoring/assets/versions-timewarp.png)
+   ![In Timewarp mode](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 
 ### Timewarp Limitations {#timewarp-limitations}
 

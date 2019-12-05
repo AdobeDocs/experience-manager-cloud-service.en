@@ -115,7 +115,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 1. Once a specific device has been selected you can:
 
     * See the active marker for the selected device, such as **iPad.**
-    * See the active marker for the appropriate [breakpoint](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) such as **Tablet.**
+    * See the active marker for the appropriate [breakpoint](#layout-definitions-device-emulation-and-breakpoints) such as **Tablet.**
 
    ![Breakpoints](/help/sites-cloud/authoring/assets/responsive-layout-breakpoint.png)
 

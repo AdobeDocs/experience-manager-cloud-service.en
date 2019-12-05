@@ -531,7 +531,7 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 
 ### Editing a Template - Layout - Template Author {#editing-a-template-layout-template-author}
 
-You can define the template layout for a range of devices. [Responsive layout](/help/sites-authoring/responsive-layout.md) for templates operates as it does for page authoring.
+You can define the template layout for a range of devices. [Responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) for templates operates as it does for page authoring.
 
 >[!NOTE]
 >
