@@ -28,7 +28,7 @@ IMS Authentication works using OAuth protocol between AEM and the Adobe IMS endp
 
 The user login flow is shown below, the user will be redirected to IMS and optionally to the customer IDP for SSO and then redirected back to AEM.
 
-! [IMS Architecture](/help/assets/assets/ims1.png)
+![IMS Architecture](/help/assets/assets/ims1.png)
 
 ## How to Set Up {#how-to-set-up}
 
@@ -42,7 +42,7 @@ AEM customers should already have an Org provisioned, and as part of the IMS pro
 
 Once a customer exists as an IMS Org, this is the summary of the configuration workflows: 
 
-! [IMS Onboarding](/help/assets/assets/ims2.png)
+![IMS Onboarding](/help/assets/assets/ims2.png)
 
 1. The designated System Admin  receives an invite to log in to Cloud Manager, after logging into the Cloud manager, they System Admins can choose to provision AEM programs and environments or navigate to Admin Console for Administrative tasks.
 1. The System Admin Claims Domain to confirm the ownership of the domain( e.g acme.com etc.)
@@ -62,13 +62,13 @@ There are three ways to onboard users depending on the size of the customer and 
 
 Users and Groups can be manually created in the Admin Console UI, this method can be used if they do not have a large number of users to manage, e.g. less than 50 AEM users or if the customer is already using this method for administering other Adobe products e.g. Analytics, Target or Creative Cloud applications.
 
-! [User Onboarding](/help/assets/assets/ims3.png)
+![User Onboarding](/help/assets/assets/ims3.png)
 
 **File Upload in Admin Console UI**
 
 For easy handling of user creation, a .csv file can be uploaded for adding users in bulk.
 
-! [File Upload](/help/assets/assets/ims4.png)
+![File Upload](/help/assets/assets/ims4.png)
 
 **User Sync Tool**
 
@@ -80,7 +80,7 @@ The tool allows the system admin to map user groups in the customer’s director
 
 To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [User Management API](https://www.adobe.io/apis/experienceplatform/umapi-new.html).
 
-! [User Sync Tool](/help/assets/assets/ims5.png)
+![User Sync Tool](/help/assets/assets/ims5.png)
 
 User Sync Tool is distributed through the Adobe Github repo [at this location](https://github.com/adobe-apiplatform/user-sync.py/releases/latest).
 
@@ -120,11 +120,11 @@ Here are the key OSGI configurations that can be modified to change properties l
 
 When the customer Product Admin logs in to Admin Console, they will see multiple instances of the AEM Managed Services Product Context as shown below:
 
-! [Instances login](/help/assets/assets/ims6.png)
+![Instances login](/help/assets/assets/ims6.png)
 
 In this example, the org AEM-MS-Onboard has 32 instances spanning different topologies and environments like Stage, Prod etc. 
 
-! [Instances login2](/help/assets/assets/ims7.png)
+![Instances login2](/help/assets/assets/ims7.png)
 
 Under each Product Context instance, there will be associated Product Profiles, these product profiles are used for assigning access to users and groups with the required privilege.
 
@@ -132,7 +132,7 @@ The **Administrator_xxx** profile will be used to grant Administrator privileges
 
 Any users and groups added under this product profile will be able to login to that instance as shown in the example below:
 
-! [Product Profile](/help/assets/assets/ims8.png)
+![Product Profile](/help/assets/assets/ims8.png)
 
 ### Logging into Adobe Experience Manager as a Cloud Service (#logging-in-to-aem)
 
@@ -140,7 +140,7 @@ Any users and groups added under this product profile will be able to login to t
 
 AEM can continue to support local logins for Admin users, the login screen has an option to log in locally:
 
-! [Local Login](/help/assets/assets/ims9.png)
+![Local Login](/help/assets/assets/ims9.png)
 
 <!-- the above image needs to be updated for skyline -->
 
@@ -148,21 +148,21 @@ AEM can continue to support local logins for Admin users, the login screen has a
 
 For other users, the IMS based login can be used once IMS is configured on the instance, the user will first click on the Sign in with Adobe button as shown below:
 
-! [IMS Login](/help/assets/assets/ims10.png)
+![IMS Login](/help/assets/assets/ims10.png)
 
 They will then be redirected to the IMS login screen and enter their credentials:
 
-! [IMS Login2](/help/assets/assets/ims11.png)
+![IMS Login2](/help/assets/assets/ims11.png)
 
-! [IMS Login3](/help/assets/assets/ims12.png)
+![IMS Login3](/help/assets/assets/ims12.png)
 
 If a federated IDP is configured during initial Admin Console setup, then the user will be redirected to the customer IDP for SSO:
 
-! [IMS Login4](/help/assets/assets/ims13.png)
+![IMS Login4](/help/assets/assets/ims13.png)
 
 After authentication is complete, the user will be redirected back to AEM and logged in:
 
-! [IMS Login5](/help/assets/assets/ims14.png)
+![IMS Login5](/help/assets/assets/ims14.png)
 
 ### Managing Permissions and ACLs in Adobe Experience Manager as a Cloud Service {#managing-permissions-in-aem}
 
@@ -172,16 +172,16 @@ In the example below, we are adding synced groups to the local Dam_Users group a
 
 The user is part of the following Groups in IMS:
 
-! [ACL1](/help/assets/assets/ims15.png)
+![ACL1](/help/assets/assets/ims15.png)
 
 When the user logs in, their Group Memberships are synced, as shown below:
 
-! [ACL2](/help/assets/assets/ims16.png)
+![ACL2](/help/assets/assets/ims16.png)
 
 In AEM, the user groups synced from IMS can be added as members to existing local groups, e.g. DAM Users. 
 
-! [ACL3](/help/assets/assets/ims17.png)
+![ACL3](/help/assets/assets/ims17.png)
 
 As shown below the group AEM-GRP_008 inherits the Permissions and Privileges of DAM Users, this is an effective way of managing Permissions for synced groups and is commonly used in LDAP based Authentication method as well.
 
-! [ACL3](/help/assets/assets/ims18.png)
+![ACL3](/help/assets/assets/ims18.png)
