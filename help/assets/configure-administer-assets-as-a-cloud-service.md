@@ -1,10 +1,7 @@
 ---
 title: Configure and administer Assets as a Cloud Service
 description: Know about the configuration and administration tasks required for Assets as a Cloud Service
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+contentOwner: AG
 
 ---
 

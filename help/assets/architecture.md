@@ -1,10 +1,7 @@
 ---
 title: Architecture of Assets as a Cloud Service
 description: Architecture of Assets as a Cloud Service
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+contentOwner: AG
 
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: File formats and MIME types supported by Experience Manager Assets as a Cloud Service
 description: File formats and MIME types supported by Experience Manager Assets as a Cloud Service.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
+contentOwner: AG
 
 ---
 

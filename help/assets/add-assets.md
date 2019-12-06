@@ -1,10 +1,6 @@
 ---
 title: Add your digital assets to the Experience Manager as a Cloud Service
 description: Add your digital assets to the Experience Manager as a Cloud Service
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
 
 ---
 
