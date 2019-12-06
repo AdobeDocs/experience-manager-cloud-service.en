@@ -102,8 +102,8 @@ To add an activity:
 Targeting mode enables you to configure several aspects of an activity. Use the following three-step process for creating targeted content for a brand activity:
 
 1. [Create](#create-authoring-the-experiences): Add or remove experiences, and add offers for each experience.
-1. [Target](#diagram-target-configuring-the-audiences): Specify the audience that each experience targets. You can target a specific audience and if using A/B testing decide what percentage of traffic goes to which experience.
-1. [Goals & Settings](#configuring-the-activity-and-setting-goals): Schedule the activity and set the priority. You can also set success metric goals.
+1. [Target](#target-configuring-the-audiences): Specify the audience that each experience targets. You can target a specific audience and if using A/B testing decide what percentage of traffic goes to which experience.
+1. [Goals & Settings](#goals-settings-configuring-the-activity-and-setting-goals): Schedule the activity and set the priority. You can also set success metric goals.
 
 Use the following procedure to start the content targeting process for an activity.
 

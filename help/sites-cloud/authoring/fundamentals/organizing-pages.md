@@ -67,7 +67,7 @@ The following shows an example from the We.Retail site, where a hiking shorts pa
  /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigating) and perform actions on the pages. You can also create new sites and [new pages](#creating-a-new-page).
+This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and perform actions on the pages. You can also create new sites and [new pages](#creating-a-new-page).
 
 From any point, you can see the upward branch from breadcrumbs in the header bar:
 
@@ -173,7 +173,7 @@ Components are the elements provided by AEM so that you can add specific types o
 * Carousel
 * And many more
 
-Once you have created and opened a page you can [add content using the components](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-new-paragraph), which are available from the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#component-browser).
+Once you have created and opened a page you can [add content using the components](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
 >[!TIP]
 >
@@ -250,7 +250,7 @@ After creating a page, or navigating to an existing page (in the console), you c
 1. Select your page by using either:
 
     * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigating-and-selection-mode) and the toolbar
+    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and the toolbar
 
    And then select the **Edit** icon:
 
@@ -270,7 +270,7 @@ You can copy a page and all of its sub-pages to a new location:
 1. Select your page using either:
 
     * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigating-and-selection-mode) and the toolbar
+    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and the toolbar
 
    And then the **Copy** page icon:
 
@@ -305,7 +305,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 1. Select your page using either:
 
     * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigating-and-selection-mode) and the toolbar
+    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and the toolbar
 
    And then select the **Move** page icon:
 
