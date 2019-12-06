@@ -11,7 +11,7 @@ content-type: reference
 
 # Publishing Pages {#publishing-pages}
 
-Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-cloud/authoring/getting-started/concepts.md#concept-of-authoring-and-publishing) (your publish environment).
+Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-cloud/authoring/getting-started/concepts.md) (your publish environment).
 
 This is referred to as publishing a page. When you want to remove a page from the publish environment is referred to as unpublishing. When publishing and unpublishing the page remains available on the author environment for further changes until you delete it.
 

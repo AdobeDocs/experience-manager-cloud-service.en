@@ -83,7 +83,7 @@ The header is always present at the top of the screen. While most options in the
 
 ![Navigation header](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-* [Global Navigation](#navigating-consoles-and-tools)
+* [Global Navigation](#global-navigation)
 
   Select the **Adobe Experience Manager** link to navigate between consoles.
 
@@ -143,7 +143,7 @@ The header is always present at the top of the screen. While most options in the
 
   Once clicked, the options displayed are appropriate to the console/context.
 
-* [Views](#viewing-and-selecting-your-resources-card-list-column)
+* [Views](#viewing-and-selecting-resources)
 
   The view icon is at the far right of the AEM toolbar. As it also indicates the current view, it changes. For example, in the default view, **Column View** it shows:
 
@@ -201,7 +201,7 @@ Whenever a resource is selected (e.g. a page or an asset), various actions are i
 
 * The current console
 * The current context
-* Whether you are in [selection mode](#navigating-and-selection-mode)
+* Whether you are in [selection mode](#viewing-and-selecting-resources)
 
 The action available in the toolbar change to reflect the actions you can take on the specific items selected.
 
@@ -217,7 +217,7 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 ## Quick Actions {#quick-actions}
 
-In [Card View](#card-view-quick-actions) certain actions are available as quick action icons as well as being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
+In [Card View](#card-view) certain actions are available as quick action icons as well as being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
 
 The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
@@ -421,11 +421,11 @@ The timeline can be used to view and/or initiate events that have occurred on th
 
 The timeline column allows you to:
 
-* [View various events](#timeline-view-events) related to a selected item.
+* View various events related to a selected item.
 
   * The event types can be selected from the drop-down list:
 
-    * [Comments](#timeline-adding-and-viewing-comments)
+    * Comments
     * [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
     * [Activities](/help/sites-cloud/authoring/personalization/activities.md)
     * [Launches](/help/sites-cloud/authoring/launches/overview.md)
@@ -434,12 +434,12 @@ The timeline column allows you to:
       * With the exception of transient workflows as no history information is saved for these <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
     * Show All
 
-* [Add/view comments](#timeline-adding-and-viewing-comments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
+* Add/view comments about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
 
 * Specific consoles have additional functionality. For example, in the Sites console you can:
 
-  * [Save a version](/help/sites-cloud/authoring/features/page-versions.md#creating-a-new-version-)
-  * [Start a workflow](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-rail)
+  * [Save a version](/help/sites-cloud/authoring/features/page-versions.md)
+  * [Start a workflow](/help/sites-cloud/authoring/workflows/applying.md)
 
 These options accessible via the chevron next to the **Comment** field.
 
@@ -447,7 +447,7 @@ These options accessible via the chevron next to the **Comment** field.
 
 ### References {#references}
 
-**References** shows any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#showing-page-references) for pages shows:
+**References** shows any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) for pages shows:
 
 * [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * Live copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->

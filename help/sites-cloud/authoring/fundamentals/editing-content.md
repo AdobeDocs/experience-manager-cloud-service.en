@@ -131,7 +131,7 @@ You can add a new component by using the [component browser](/help/sites-cloud/a
 1. Make sure that your page is in [**Edit** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Open the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Drag the required component to the [required position](#component-placeholder).
-1. [Edit](#edit-move-copy-paste-delete) the component.
+1. [Edit](#edit-content) the component.
 
 >[!NOTE]
 >
@@ -154,7 +154,7 @@ You can add a new component by using the **Drag components here** box of the par
 
       ![Insert New Component dialog](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. The selected component will be added to the bottom of the page. [Edit](#edit-move-copy-paste-delete) the component as required.
+1. The selected component will be added to the bottom of the page. [Edit](#edit-content) the component as required.
 
 ### Inserting a Component using the Assets Browser {#inserting-a-component-using-the-assets-browser}
 
@@ -170,7 +170,7 @@ To create a component by dragging one of the above asset types:
 
    A component, appropriate for the asset type, will be created at the required location - it will contain the selected asset.
 
-1. [Edit](#edit-move-copy-paste-delete) the component if required.
+1. [Edit](#edit-content) the component if required.
 
 >[!NOTE]
 >
@@ -267,11 +267,11 @@ The actual actions available to the user will be shown as appropriate and not al
 There are two methods of adding and/or editing content in components:
 
 * Open the [component dialog for editing](#component-edit-dialog).
-* [Drag and drop an asset](#drag-and-drop-into-component) from the assets browser to directly add content.
+* [Drag and drop an asset](#drag-and-drop-assets-into-component) from the assets browser to directly add content.
 
 ### Component Edit Dialog {#component-edit-dialog}
 
-You can open a component to edit the content using the [Edit (pencil) icon of the component toolbar](#edit-configure-copy-cut-delete-paste).
+You can open a component to edit the content using the [Edit (pencil) icon of the component toolbar](#component-toolbar).
 
 The exact edit options will depend on the component. For some components [all actions will only be available in full screen mode](#edit-content-full-screen-mode). For example:
 
@@ -330,7 +330,7 @@ To move a paragraph component:
 
 >[!TIP]
 >
->You can also use [Cut and Paste](#edit-configure-copy-cut-delete-paste) to move a component.
+>You can also use [Cut and Paste](#component-toolbar) to move a component.
 
 ## Edit Component Layout {#edit-component-layout}
 

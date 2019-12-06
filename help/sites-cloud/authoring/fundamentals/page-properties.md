@@ -121,7 +121,7 @@ The properties are distributed across several tabs.
 
 * **Allowed Templates**
 
-  * [Define the list of templates that will be available](/help/sites-cloud/authoring/features/templates.md#allowing-a-template) within this sub-branch.
+  * [Define the list of templates that will be available](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch.
 
 * **Enable** (Authentication Requirement)
 
@@ -229,7 +229,7 @@ Clicking or tapping **Properties** to define the page properties:
 1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.
 1. Select the **Properties** option for the required page using either:
    * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-   * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selection-mode)
+   * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * The page properties will be shown using the appropriate tabs.
 1. Either view or edit the properties as required.
 1. Then use **Save** to save your updates followed by **Close** to return to the console.

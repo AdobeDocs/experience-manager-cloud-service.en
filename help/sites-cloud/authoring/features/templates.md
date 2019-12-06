@@ -72,8 +72,8 @@ When creating a new editable template you:
 * Use the **Template** console. This is available in the **General** section of the **Tools** console.
   * Or directly at: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
-* [Create a new template](#creating-a-new-template-author), which will initially be empty
-* [Define additional properties](#defining-template-properties-author) for the template if required
+* [Create a new template](#creating-a-new-template-template-author), which will initially be empty
+* [Define additional properties](#defining-template-properties-template-author) for the template if required
 * [Edit the template](#editing-templates-template-authors) to define the:
   * [Structure](#editing-a-template-structure-template-author) - Predefined content that cannot be changed on pages created with the template.
   * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
@@ -81,7 +81,7 @@ When creating a new editable template you:
   * [Styles](/help/sites-cloud/authoring/features/style-system.md) - Define the styles to be used with the template and its components.
 * [Enable the template](#enabling-a-template-template-author) for use when creating a page
 * [Allow the template](#allowing-a-template-author) for the required page or branch of your website
-* [Publish the template](#publishing-a-template-author) to make it available on the publish environment
+* [Publish the template](#publishing-a-template-template-author) to make it available on the publish environment
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ A template folder should be created for your project to hold your project-specif
     * **Template Name**
     * **Description**
 
-1. Select **Create**. A confirmation will be shown, select **Open** to start [editing the template](#editing-a-template) or **Done** to return to the template console.
+1. Select **Create**. A confirmation will be shown, select **Open** to start editing the template or **Done** to return to the template console.
 
    >[!NOTE]
    >
@@ -227,12 +227,12 @@ When creating or editing a template there are various aspects that you can defin
 The **Mode** selector in the toolbar allows you to select and edit the appropriate aspect of the template:
 
 * [Structure](#editing-a-template-structure-template-author)
-* [Initial Content](#editing-a-template-initial-content)
-* [Layout](#editing-a-template-layout)
+* [Initial Content](#editing-a-template-initial-content-author)
+* [Layout](#editing-a-template-layout-template-author)
 
 ![Template editor mode selector](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-While the **Page Policy** option on the **Page Information** menu allows you to [select the required page policies](#editing-a-template-page-policies):
+While the **Page Policy** option on the **Page Information** menu allows you to [select the required page policies](#page-policies):
 
 ![Template Editor Page Information](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -248,7 +248,7 @@ The following attributes of a template can be edited:
 
 Components added to the [structure](#editing-a-template-structure-template-author) cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
 
-When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editing-a-template-initial-content).
+When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editing-a-template-initial-content-author).
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ When components are locked you can add content, which cannot be edited by page a
 
 #### Initial Content {#template-initial-content}
 
-When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content) that will be copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
+When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content-author) that will be copied to the resultant page(s), created from the template. These unlocked components can be edited on the resulting page(s).
 
 >[!NOTE]
 >
@@ -264,11 +264,11 @@ When a component has been unlocked you can define the [initial content](#editing
 
 #### Layout {#template-layout}
 
-With the [layout](#editing-a-template-layout) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Page Policies {#template-page-policies}
 
-[Page policies](#editing-a-template-page-policies) can connect predefined page policies to the page. These page policies define the various design configurations.
+[Page policies](#page-policies) can connect predefined page policies to the page. These page policies define the various design configurations.
 
 #### Styles {#template-styles}
 
@@ -282,7 +282,7 @@ In **Structure** mode you define components and content for your template and de
 
 * Components defined in the template structure cannot be moved on a resulting page nor deleted from any resulting pages.
 * If you want page authors to be able to add and remove components, add a paragraph system to the template.
-* Components can be unlocked and locked again to allow you to define [initial content](#editing-a-template-initial-content).
+* Components can be unlocked and locked again to allow you to define [initial content](#editing-a-template-initial-content-author).
 * The design policies for the components and page are defined.
 
 ![Template Editor page structure](/help/sites-cloud/authoring/assets/templates-page-structure.png)
@@ -657,5 +657,5 @@ When creating templates you should consider:
    >
    >AEM gives explicit warnings when changing the lock status of components on templates that are no longer drafts.
 
-1. [Creating your own folders](#creating-a-template-folder-developer) for your site-specific templates.
-1. [Publish your templates](#publishing-a-template-author) from the **Templates** console.
+1. [Creating your own folders](#creating-a-template-folder-admin) for your site-specific templates.
+1. [Publish your templates](#publishing-a-template-template-author) from the **Templates** console.

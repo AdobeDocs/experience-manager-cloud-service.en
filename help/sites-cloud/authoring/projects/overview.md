@@ -125,7 +125,7 @@ In this tile, you can specify the members of the project team. When editing, you
 
 ![Team tile](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
-You can add and delete team members from the team. In addition, you can edit the [user role](#userroles) assigned to the team member.
+You can add and delete team members from the team. In addition, you can edit the [user role](#user-roles-in-a-project) assigned to the team member.
 
 ![Add team from list](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
 
