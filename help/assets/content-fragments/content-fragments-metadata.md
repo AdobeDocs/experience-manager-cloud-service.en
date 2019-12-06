@@ -11,14 +11,13 @@ seo-description: You can view and edit the metadata (properties) for content fra
 
 You can view and edit the metadata (properties) for content fragments:
 
-<!--
 1. In the **Assets** console navigate to the location of the content fragment.
 2. Either:
 
     * Select [**View Properties** to open the dialogs](/help/assets/manage-digital-assets.md#editing-properties). Once open for viewing you can also edit.
-    * Open the [content fragment for Edit](/help/assets/content-fragments-managing.md#opening-the-fragment-editor), then select **Metadata** from the side panel.
+    * Open the [content fragment for Edit](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), then select **Metadata** from the side panel.
 
-   ![cfm-6420-06](assets/cfm-6420-06.png)
+   ![metadata](assets/cfm-metadata-01.png)
 
 3. The **Basic** tab provides options that you can view or edit:
 
@@ -28,5 +27,4 @@ You can view and edit the metadata (properties) for content fragments:
     * **Tags**
     * Created (display only)
 
-   ![cfm-6420-07](assets/cfm-6420-07.png)
--->
+   ![metadata](assets/cfm-metadata-02.png)

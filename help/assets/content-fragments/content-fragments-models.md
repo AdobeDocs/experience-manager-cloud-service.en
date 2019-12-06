@@ -7,8 +7,7 @@ seo-description: Content Fragment Models are used to create content fragments wi
 
 # Content Fragment Models{#content-fragment-models}
 
-<!--
-Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments.md).
+Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
 ## Enable Content Fragment Models {#enable-content-fragment-models}
 
@@ -32,7 +31,7 @@ To [create a new Content Fragment Model](#creating-a-content-fragment-model) you
     1. Specify a **Title**.
     2. Select **Content Fragment Models** to enable their use.
 
-   ![cfm-6420-09](assets/cfm-6420-09.png)
+   ![configuration](assets/cfm-models-01.png)
 
 4. Select **Create** to save the definition.
 
@@ -54,7 +53,7 @@ To use other configurations (i.e. excluding global) with a comparable Assets fol
 
 1. Specify the **Model Title**. You can also add a **Description** if required.
 
-   ![cfm-6420-10](assets/cfm-6420-10.png)
+   ![title and description](assets/cfm-models-02.png)
 
 1. Use **Create** to save the empty model. A message will indicate the success of the action, you can select **Open** to immediately edit the model, or **Done** to return to the console.
 
@@ -80,26 +79,23 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
 
-   ![cfm-6420-12](assets/cfm-6420-12.png)
+   ![properties](assets/cfm-models-03.png)
 
 1. **To Add a Field**
 
     * Drag a required data type to the required location for a field:
 
-   ![cfm-6420-11](assets/cfm-6420-11.png)
+   ![data type to field](assets/cfm-models-04.png)
 
     * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. For example:
 
-   ![cfm-6420-13](assets/cfm-6420-13.png)
+   ![field properties](assets/cfm-models-05.png)
 
    >[!NOTE]
    >
    >For the data type **Multi line text** it is possible to define the **Default Type** as either:
-   >
    >    * **Rich Text**
-   >
    >    * **Markdown**
-   >
    >    * **Plain Text**
    >
    >If not specified, the default value **Rich Text** is used for this field.
@@ -110,11 +106,11 @@ The content fragment model effectively defines the structure of the resulting co
 
    Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
 
-   ![cf-32](assets/cf-32.png)
+   ![remove](assets/cfm-models-06.png)
 
 1. After adding all required fields, and defining the properties, use **Save** to persist the definition. For example:
 
-   ![cfm-6420-14](assets/cfm-6420-14.png)
+   ![save](assets/cfm-models-07.png)
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
@@ -147,4 +143,3 @@ To publish a content fragment model:
    >[!NOTE]
    >
    >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
--->
