@@ -7,8 +7,7 @@ seo-description: Variations allow you to author content for the fragment, then c
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-<!--
-[Variations](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
 
 From the **Variations** tab you can:
 
@@ -49,19 +48,19 @@ For example:
 
   A simple fragment consists of one multi-line text field (visual assets can be added from the full-screen editor).
 
-  ![cfm-6420-21](assets/cfm-6420-21.png)
+  ![simple fragment](assets/cfm-variations-01.png)
 
 * Editing a fragment with structured content
 
   A structured fragment contains various fields, of various data-types, that were defined in the content model. For any multi-line fields the [full-screen editor](#full-screen-editor) is available.
 
-  ![cfm-6420-16](assets/cfm-6420-16.png)
+  ![full screen editor](assets/cfm-variations-02.png)
 
 ### Full-Screen Editor {#full-screen-editor}
 
 When editing a multi-line text field you can open the full-screen editor:
 
-![cf-fullscreeneditor-icon](assets/cf-fullscreeneditor-icon.png)
+![full screen editor icon](assets/cfm-variations-03.png)
 
 The full-screen editor provides:
 
@@ -79,7 +78,7 @@ The following actions are also available (for all the [formats](#formats)) when 
 * [Upload content](#uploading-content)
 * [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
 * [Summarize Text](#summarizing-text)
-* [Annotate](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) your text
+* [Annotate](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) your text
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -114,7 +113,7 @@ Rich text editing allows you to format:
     * Search
     * Find/Replace
     * Spellchecker
-    * [Annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)
+    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 
 The [actions](#actions) are also accessible from the full-screen editor.
 
@@ -130,7 +129,7 @@ Plain Text allows for rapid entry of content without formatting or markdown info
 
 >[!NOTE]
 >
->For full information see the [Markdown](/help/assets/content-fragments-markdown.md) documentation.
+>For full information see the [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
 
 This allows you to format your text using markdown. You can define:
 
@@ -154,7 +153,7 @@ You can also open the full-screen editor for further [actions](#actions).
 
 When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. For example:
 
-![cfx-6420-22](assets/cfx-6420-22.png)
+![statistics](assets/cfm-variations-04.png)
 
 ### Uploading Content {#uploading-content}
 
@@ -174,7 +173,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 >
 >For example, `en/` as in the following path:
 >
->`/content/dam/my-brand/en/path-down/my-content-fragment`
+>&nbsp;&nbsp;`/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
 >
@@ -193,7 +192,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 
 3. Select **Summarize text** from the toolbar.
 
-   ![cf-17](assets/cf-17.png)
+   ![summarization](assets/cfm-variations-05.png)
 
 4. Specify the target number of words and select **Start**:
 5. The original text is displayed side-by-side with the proposed summarization:
@@ -202,7 +201,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
     * Click on any highlighted sentence to keep it in the summarized content.
     * Click on any non-highlighted sentence to have it eliminated.
 
-   ![cfm-6420-23](assets/cfm-6420-23.png)
+   ![summarization comparison](assets/cfm-variations-06.png)
 
 6. Select **Summarize** to confirm the changes.
 
@@ -214,7 +213,7 @@ To annotate a fragment:
 1. Open the full-screen editor.
 1. Select some text. The **Annotate** icon becomes available.
 
-   ![cfm-6420-24](assets/cfm-6420-24.png)
+   ![annotate](assets/cfm-variations-07.png)
 
 1. A dialog will open. Here you can enter your annotation.
 
@@ -234,51 +233,57 @@ Annotations:
 
 * Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
 
-  ![cfm-6420-25](assets/cfm-6420-25.png)
+  ![annotations](assets/cfm-variations-08.png)
 
-* Can be viewed, and deleted, in [Timeline](https://helpx.adobe.com/experience-manager/6-3/help/assets/content-fragments-managing.html#timeline-for-content-fragments) for the selected fragment.
+* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
 
 ### Inserting Assets into your Fragment {#inserting-assets-into-your-fragment}
 
 To ease the process of authoring content fragments you can add [Assets](/help/assets/manage-digital-assets.md) (images) directly to the fragment.
 
-They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-authoring/content-fragments.md).
+They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the fragment is used/referenced on a page.
+
+<!-- 
+They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+-->
 
 >[!CAUTION]
 >
 >These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
 >
->However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-authoring/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+>However, formatting of the asset (e.g. size) must be done in the page editor. The representation of the asset in the fragment editor is purely for authoring the content flow.
+
+<!--
+>[!CAUTION]
+>
+>These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
+>
+>However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+-->
 
 >[!NOTE]
 >
->There are various methods of adding [images](/help/assets/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. Position the cursor at the position you want to add the image.
-1. Use the **Insert Asset** icon to open the search dialog.
+2. Use the **Insert Asset** icon to open the search dialog.
 
-   ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
+   ![insert asset icon](assets/cfm-variations-09.png)
 
-1. In the dialog you can either:
+3. In the dialog you can either:
 
     * navigate to the required asset in DAM
     * search for the asset in DAM
 
    Once located, select the required asset by clicking on the thumbnail.
 
-1. Use **Select** to add the asset to the paragraph system of your content fragment at the current location.
+4. Use **Select** to add the asset to the paragraph system of your content fragment at the current location.
 
    >[!CAUTION]
    >
    >If, after adding an asset, you change format to:
-   >
-   >
-   >
    >    * **Plain Text**: the asset will be completely lost from the fragment.
    >    * **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
-   >
-   >
-   >
 
 ## Managing Variations {#managing-variations}
 
@@ -305,7 +310,7 @@ You can make changes to the variation content after either:
 * [Creating your variation](#creating-a-variation).
 * Opening an existing fragment, then selecting the required variation from the side panel.
 
-![cfm-6420-26](assets/cfm-6420-26.png)
+![creating a variation](assets/cfm-variations-10.png)
 
 ### Renaming a Variation {#renaming-a-variation}
 
@@ -365,7 +370,6 @@ When editing a variation you have access to the action for synchronizing the cur
     * green indicates content added (to the variation)
     * red indicates content removed (from the variation)
 
-   ![cfm-6420-27](assets/cfm-6420-27.png)
+   ![synchronizing with master](assets/cfm-variations-11.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
--->
