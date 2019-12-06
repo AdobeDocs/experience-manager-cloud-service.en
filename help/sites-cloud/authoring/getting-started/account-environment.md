@@ -13,7 +13,7 @@ content-type: reference
 
 AEM provides you with the capability to configure your account and certain aspects of the author environment.
 
-Using the [User](#user-settings) option in the [header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) and the associated [My Preferences](#user-preferences) dialog, you can modify your user options such as.
+Using the [User](#user-settings) option in the [header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options such as.
 
 Begin by accessing the [User](#user-settings) option in the header.
 

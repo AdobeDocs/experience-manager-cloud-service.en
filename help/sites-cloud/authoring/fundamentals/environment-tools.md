@@ -40,7 +40,7 @@ You can edit a page with the page editor. For example:
 When editing a page, **Help** can be accessed from:
 
 * The [**Page Information**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) selector which shows the introductory slides (as shown the first time you access the editor)
-* The [configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-configure-copy-cut-delete-paste) dialog for specific components (using the ? icon in the dialog toolbar), which shows context sensitive help
+* The [configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) dialog for specific components (using the ? icon in the dialog toolbar), which shows context sensitive help
 
 Further [help-related resources are available from consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
@@ -254,8 +254,8 @@ The Page Information (equalizer icon) opens a menu that also provides details ab
 * Rollout Page <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
 * [Start Workflow](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Lock Page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
-* [Publish Page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#main-pars-title-10)
-* [Unpublish Page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#main-pars-title-5)
+* [Publish Page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
+* [Unpublish Page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Edit Template](/help/sites-cloud/authoring/features/templates.md)
 * [View as Published](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [View in Admin](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)

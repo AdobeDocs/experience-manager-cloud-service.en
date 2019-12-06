@@ -70,7 +70,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 From the **Timeline** you can start a workflow to be applied to your selected resource.
 
-1. [Select the resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-your-resources) and open [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (or open Timeline and then select the resource).
+1. [Select the resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) and open [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (or open Timeline and then select the resource).
 1. The arrowhead by the comment field can be used to reveal **Start Workflow**:
 
    ![Create workflow from the timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
