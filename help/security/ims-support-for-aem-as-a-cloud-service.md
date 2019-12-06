@@ -17,7 +17,7 @@ seo-description: IMS Support for AEM as a Cloud Service
 
 AEM IMS authentication support is only for Author, Admin, Dev users etc. not external end users of customer site like site visitors etc.
 
-* Admin Console will represent customers as IMS Orgs and Author and Publish Instances in an environment as Product Context Instances; this will allow customer System and Product Admins to  manage access to instances.
+* The Admin Console will represent customers as IMS Orgs and Author and Publish Instances in an environment as Product Context Instances; this will allow customer System and Product Admins to  manage access to instances.
 * Product Profiles in Admin Console will determine which Instances a user can access.
 * Customers will be able to use their own SAML 2 compliant IDPs for SSO.
 * Only Enterprise or Federated IDs(for customer SSO) will be supported, no personal Adobe IDs.
