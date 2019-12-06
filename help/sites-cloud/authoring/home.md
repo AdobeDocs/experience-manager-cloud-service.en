@@ -25,7 +25,7 @@ This guide explains the concepts of authoring in AEM.
 | [Assets User Guide](/help/assets/home.md) | Learn how to create, manage, deliver, and optimize digital assets. |
 | [Administering Guide](/help/sites-cloud/administering/home.md) | Understand how to administer AEM |
 | [Authoring Guide](/help/sites-cloud/authoring/home.md) | This guide explains the concepts of authoring in AEM. |
-| [Deploying User Guide](/help/sites-deploying/home.md) | This guide shows you the basics of AEM.  |
+| [Deploying User Guide](/help/implementing/deploying/deploying.md) | This guide shows you the basics of AEM.  |
 | [Developing User Guide](/help/implementing/deploying/deploying.md)| Learn how to build out your AEM instance. |
 | [Operations User Guide](/help/operations/home.md)| This guide describes the back-end operations of AEM such as indexing and maintenance tasks. |
 
