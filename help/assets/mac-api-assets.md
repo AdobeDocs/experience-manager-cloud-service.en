@@ -20,6 +20,10 @@ The API response is a JSON file for some mime types and a response code for all 
 
 After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
+>[!NOTE]
+>
+>All the API calls related to uploading or updating assets or binaries in general (like renditions) is depreated for AEM as a Cloud Service deployment. For uploading binaries, please use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
+
 ## Content Fragments {#content-fragments}
 
 A [content fragment](content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.

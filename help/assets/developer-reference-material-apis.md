@@ -17,7 +17,7 @@ Drill-down into MAC HTTP APIs as required.
 
 ## Asset upload {#asset-upload-technical}
 
-Experience Manager as a cloud service has a new way of uploading assets to the repository - direct binary upload to cloud blob storage. This section provides its technical overview.
+Experience Manager as a cloud service provides a new way of uploading assets to the repository - direct binary upload to binary cloud storage. This section provides its technical overview.
 
 ### Overview of direct binary upload {#overview-binary-upload}
 
@@ -36,6 +36,8 @@ Important differences compared to earlier versions of AEM include:
 
 * Binaries do not go through AEM, which is now simply coordinating the upload process with the binary cloud storage configured for the deployment
 * Binary cloud storage is fronted by a Content Delivery Network (CDN, Edge Network), which brings the upload endpoint closer to the client, thus helping to improve upload performance and user experience, especially for distributed teams uploading assets
+
+This approach should provide more scalable and performant handling of asset uploads.
 
 ### Details of direct binary upload {#details-binary-upload}
 
@@ -122,3 +124,28 @@ Like the initiate process, the complete request data may contain information for
 The process of uploading a binary is not done until the complete URL is invoked for the file. Even if a file's binary is uploaded in its entirety, the asset will not be processed by the instance until its upload process is completed.
 
 If successful, the instance will respond with a 200 status code.
+
+### Open source upload library {#open-source-upload-library}
+
+To learn more about the upload algorithms or to build your own upload scripts and tools, Adobe provides open source libraries and tools as a starting points:
+
+* [aem-upload library](https://github.com/adobe/aem-upload)
+* [commandline tool](https://github.com/adobe/aio-cli-plugin-aem)
+
+### Deprectaed asset upload APIs
+
+<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+
+Please note that for Experience Manager as a Cloud Service only the new upload APIs are supported. Previous upload APIs are deprecated as they depend on uploading binaries to AEM.
+
+Methods related to uploading or updating assets or renditions (any binary upload) are deprecated in the following APIs:
+
+* [AEM Assets HTTP API](mac-api-assets.md)
+* `AssetManager` Java API, like `AssetManager.createAsset(..)`
+
+Please refer to [API documentation](LINK???) for a comprehensive list.
+
+>[!MORELIKETHIS]
+>
+>[Open source aem-upload library](https://github.com/adobe/aem-upload)
+>[Open source commandline tool](https://github.com/adobe/aio-cli-plugin-aem)

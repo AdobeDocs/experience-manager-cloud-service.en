@@ -75,7 +75,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
 > [!NOTE]
 >
-> If you need to upload nested folder hierarchies to AEM, please use [AEM Desktop App upload](LINK)
+> If you need to upload nested folder hierarchies to AEM, please see [Bulk upoad of assets](#bulk-upload)
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 ### Serial uploads {#serialuploads}
@@ -95,7 +95,7 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 >Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### Handling uploads when asset already exists
+### Handling uploads when asset already exists {#handling-upload-existing-file}
 
 If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
@@ -111,7 +111,7 @@ You can choose to replace an existing asset, create another version, or keep bot
 
 To retain the duplicate asset in AEM Assets, tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
-### File name handling and forbidden characters
+### File name handling and forbidden characters {#filename-handling}
 
 AEM Assets prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, AEM Assets displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
@@ -122,7 +122,7 @@ However, the following (space-separated list of) characters are not supported:
 * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
 * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Bulk upload of assets
+## Bulk upload of assets {#bulk-upload}
 
 To upload larger number of files, especially if they exist in a nested folder hierarchy on disk, the following approaches can be used:
 
@@ -139,10 +139,6 @@ In addition to web browser user interface, Experience Manager supports other cli
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from AEM in Adobe Photoshop, Illustrator and InDesign desktop applications. You can upload the currently open document into AEM directly from Adobe Asset Link UI in these creative applications.
 * [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) simplifies work with assets from Experience Manager on desktop, independend on their file type or native application that handles them. It is particularly useful for *uploading files in nested folder hierarchies* from your disk, as browser upload only supports uploading flat file lists.
-
-## Upload or ingest assets using APIs
-
-Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
 
 ## Additional processing {#additional-processing}
 
@@ -166,6 +162,9 @@ Additionaly, if Dynamic Media is enabled in your environment:
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column.
 
+## Upload or ingest assets using APIs {#upload-using-apis}
+
+Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
 
 >[!MORELIKETHIS]
 >
