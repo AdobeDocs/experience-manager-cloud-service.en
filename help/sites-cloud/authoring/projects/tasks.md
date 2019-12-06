@@ -76,6 +76,6 @@ Another way to access tasks is from the Inbox. From the inbox, you can open the 
 
 ![Tasks in the inbox](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-To complete a task, select the task and click **Complete**. Add information to the task and then click **Done**. See [Your Inbox](/help/sites-authoring/inbox.md) for more information.
+To complete a task, select the task and click **Complete**. Add information to the task and then click **Done**. See [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) for more information.
 
 ![Task notifications](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

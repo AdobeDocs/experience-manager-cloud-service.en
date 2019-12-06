@@ -63,5 +63,5 @@ user-guide-title: Authoring User Guide
   + [How Multisite Management for Targeted Content is Structured](personalization/multisite-structure.md)
   + [Managing Activities](personalization/activities.md)
   + [Managing Audiences](personalization/audiences.md)
-  + [Creating and Managing Offers](offerlib.md)
+  + [Creating and Managing Offers](personalization/offers.md)
   + [Understanding Segmentation](personalization/segmentation.md)

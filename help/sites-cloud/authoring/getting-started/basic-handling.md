@@ -65,15 +65,15 @@ From Navigation the consoles available are:
 
 |Console|Purpose|
 |---|---|
-|Projects|The Projects console gives you direct access to your projects. [Projects are virtual dashboards](help/sites-cloud/authoring/projects/overview.md) that can be used to build a team. You can then give that team access to resources, workflows, and tasks, thus allowing people to work towards a common goal.|
-|Sites|The Sites consoles let you [create, view, and manage sites](help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. Through this console you can create, edit, copy, move, and delete pages, start workflows, and publish pages.|
-|Experience Fragments|An [Experience Fragment](help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
+|Projects|The Projects console gives you direct access to your projects. [Projects are virtual dashboards](/help/sites-cloud/authoring/projects/overview.md) that can be used to build a team. You can then give that team access to resources, workflows, and tasks, thus allowing people to work towards a common goal.|
+|Sites|The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. Through this console you can create, edit, copy, move, and delete pages, start workflows, and publish pages.|
+|Experience Fragments|An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
 |Assets|The Assets console lets you import and manage digital assets such as images, videos, documents, and audio files. These assets can then be used by any site running on the same AEM instance.<!--add some kind of assets link-->|
-|Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](help/sites-cloud/authoring/personalization/overview.md)|
+|Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md)|
 
 ## Tools Panel {#tools-panel}
 
-In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Tools panel](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -177,7 +177,7 @@ There are various help resources available:
 
   Navigate this overview as you would the [product navigation overview](#product-navigation) when first accessing any console.
 
-  From the [**Page Information** menu you can select **Help**](help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) to show this again at any time.
+  From the [**Page Information** menu you can select **Help**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) to show this again at any time.
 
 * **Tools Console**
 
@@ -426,8 +426,8 @@ The timeline column allows you to:
   * The event types can be selected from the drop-down list:
 
     * [Comments](#timeline-adding-and-viewing-comments)
-    * [Annotations](help/sites-cloud/authoring/fundamentals/annotations.md)
-    * [Activities](help/sites-cloud/authoring/personalization/activities.md)
+    * [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
+    * [Activities](/help/sites-cloud/authoring/personalization/activities.md)
     * [Launches](/help/sites-cloud/authoring/launches/overview.md)
     * [Versions](/help/sites-cloud/authoring/features/page-versions.md)
     * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)

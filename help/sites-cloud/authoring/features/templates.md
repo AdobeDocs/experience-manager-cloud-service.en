@@ -40,7 +40,7 @@ For detailed information about how editable templates work at a technical level,
 >
 >An administrator must configure a template folder in the **Configurations Browser** and apply proper permissions before a template author can create a template in that folder.
 
-Before you start, it is important to consider that creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task. This does not impact how you actually [use a template to create a page](#using-a-template-to-create-a-page), but it does impact how a page relates to its template.
+Before you start, it is important to consider that creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task. This does not impact how you actually use a template to create a page, but it does impact how a page relates to its template.
 
 ### Roles {#roles}
 
@@ -72,16 +72,16 @@ When creating a new editable template you:
 * Use the **Template** console. This is available in the **General** section of the **Tools** console.
   * Or directly at: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
-* [Create a new template](#creatinganewtemplateauthor), which will initially be empty
-* [Define additional properties](#definingtemplatepropertiesauthor) for the template if required
+* [Create a new template](#creating-a-new-template-author), which will initially be empty
+* [Define additional properties](#defining-template-properties-author) for the template if required
 * [Edit the template](#editing-templates-template-authors) to define the:
-  * [Structure](#editingatemplatestructureauthor) - Predefined content that cannot be changed on pages created with the template.
+  * [Structure](#editing-a-template-structure-template-author) - Predefined content that cannot be changed on pages created with the template.
   * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
-  * [Layout](#editing-a-template-layout-author) - For a range of devices.
+  * [Layout](#editing-a-template-layout-template-author) - For a range of devices.
   * [Styles](/help/sites-cloud/authoring/features/style-system.md) - Define the styles to be used with the template and its components.
-* [Enable the template](#enablingatemplateauthor) for use when creating a page
+* [Enable the template](#enabling-a-template-template-author) for use when creating a page
 * [Allow the template](#allowing-a-template-author) for the required page or branch of your website
-* [Publish the template](#publishingatemplateauthor) to make it available on the publish environment
+* [Publish the template](#publishing-a-template-author) to make it available on the publish environment
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ A template folder should be created for your project to hold your project-specif
     * **Template Name**
     * **Description**
 
-1. Select **Create**. A confirmation will be shown, select **Open** to start [editing the template](#editingatemplate) or **Done** to return to the template console.
+1. Select **Create**. A confirmation will be shown, select **Open** to start [editing the template](#editing-a-template) or **Done** to return to the template console.
 
    >[!NOTE]
    >
@@ -226,7 +226,7 @@ When creating or editing a template there are various aspects that you can defin
 
 The **Mode** selector in the toolbar allows you to select and edit the appropriate aspect of the template:
 
-* [Structure](#editing-a-template-structure)
+* [Structure](#editing-a-template-structure-template-author)
 * [Initial Content](#editing-a-template-initial-content)
 * [Layout](#editing-a-template-layout)
 
@@ -246,7 +246,7 @@ The following attributes of a template can be edited:
 
 #### Structure {#template-structure}
 
-Components added to the [structure](#editing-a-template-structure) cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
+Components added to the [structure](#editing-a-template-structure-template-author) cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
 
 When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editing-a-template-initial-content).
 

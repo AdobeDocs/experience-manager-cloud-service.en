@@ -531,6 +531,4 @@ You can use undo and redo for the following types of page changes:
 >* Special permissions are required to undo and redo changes to files and images.
 >* The history of changes to files and images lasts for a minimum of ten hours. Beyond this time however, the undo of the changes is not guaranteed. Your administrator can change the default time of ten hours.
 >* Your system administrator can configure various aspects of the Undo/Redo features according to the requirements for your instance.
-<!-->* The history of changes to files and images lasts for a minimum of ten hours. Beyond this time however, the undo of the changes is not guaranteed. Your administrator can change the default time of ten hours.
->* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.
--->
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

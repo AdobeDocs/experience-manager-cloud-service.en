@@ -190,7 +190,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   ![Content Tree edit button](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:
+* A page that is part of a livecopy, where components are inherited from another page: <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
 
   `https://<host>:<port>/editor.html/content/we-retail/us/en/equipment.html`
 

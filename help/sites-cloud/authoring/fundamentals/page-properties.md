@@ -190,15 +190,10 @@ Shows the page thumbnail image. You can:
 
 * **Permissions**
 
-  * Add Permissions
-  * Edit Closed User Group
-  * View the Effective Permissions
-  <!--
-  * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
-  * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
-  * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
-  -->
-
+  * Add Permissions <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+  * Edit Closed User Group <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+  * View the Effective Permissions <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+  
 ### Blueprint {#blueprint}
 
 * **Blueprint**

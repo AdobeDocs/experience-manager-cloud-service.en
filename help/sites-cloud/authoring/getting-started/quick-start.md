@@ -17,8 +17,8 @@ This document is intended as a high-level quick start guide for the key page aut
 
 For full details about authoring with AEM see:
 
-* [Concepts of Authoring](help/sites-cloud/authoring/getting-started/concepts.md)
-* [Basic Handling](help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [Concepts of Authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 
 ## A Few Quick Hints {#a-few-quick-hints}
 
