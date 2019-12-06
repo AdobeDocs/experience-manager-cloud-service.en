@@ -107,7 +107,7 @@ The following example procedure illustrates how to create a teaser for a product
 
    ![Adding components to an Experience Fragment](/help/sites-cloud/authoring/assets/xf-05.png)
 
-1. Select **[Configure](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-configure-copy-cut-delete-paste)** from the component toolbar.
+1. Select **[Configure](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)** from the component toolbar.
 1. Add the **Asset** and define the **Properties** as required.
 1. Confirm the definitions with **Done** (tick icon).
 1. Add more components as required.

@@ -62,7 +62,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
    ![View selection drop-down](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header-with-breadcrumbs), which allows you to return to the selected location:
+1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which allows you to return to the selected location:
 
    ![Breadcrumb dropdown](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -97,7 +97,7 @@ How to select a page depends on which view you are using in the console:
 
 1. Card View:
 
-    * Enter selection mode by [selecting the required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-your-resources). How you do this depends on your device:
+    * Enter selection mode by [selecting the required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). How you do this depends on your device:
 
         * On a mobile device: tap-and-hold the card
         * On a desktop device: use the [quick action](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) represented by the tick icon:
@@ -145,7 +145,7 @@ To edit your page:
 
         ![Side panel toggle button](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-    * [Edit the content of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-configure-copy-cut-delete-paste) on the page:
+    * [Edit the content of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) on the page:
 
         * Open the component toolbar with either tap or click. Use the **Edit** (pencil) icon to open the dialog.
         * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions will be shown (for some components, this will be a limited selection).
@@ -162,7 +162,7 @@ To edit your page:
         * Drag the required component to its new location.
         * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
 
-    * [Copy (and Paste)](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-configure-copy-cut-delete-paste) a component:
+    * [Copy (and Paste)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) a component:
 
         * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
 
@@ -170,7 +170,7 @@ To edit your page:
    >
    >You can **Paste** components to either the same page, or a different page. If pasting to a different page that was already open before the cut/copy operation, then that page will need a page refresh.
 
-    * [Delete](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-configure-copy-cut-delete-paste) a component:
+    * [Delete](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) a component:
 
         * Open the component toolbar with either tap or click, then use the **Delete** icon.
 
