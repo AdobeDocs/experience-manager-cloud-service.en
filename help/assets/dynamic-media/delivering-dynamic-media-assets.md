@@ -34,7 +34,7 @@ For more information, see the following topics:
 
 * [Adding Dynamic Media Assets to Web Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md)
-* [Activating hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.html)
+* [Activating hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Linking URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Delivering Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md)

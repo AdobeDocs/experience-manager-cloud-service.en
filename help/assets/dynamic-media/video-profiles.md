@@ -41,7 +41,7 @@ When you are done creating the video profile, you apply it to a folder or mutlip
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dms7.md#configuring-asset-processing).
 
-See also [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+See also [Profiles for Processing Metadata, Images, and Videos](/help/assets/dynamic-media/processing-profiles.md).
 
 ## Adaptive video encoding presets {#adaptive-video-encoding-presets}
 
@@ -369,7 +369,7 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can apply video profiles to specific folders or globally to all assets.
 
-You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 ### Applying a video profile to specific folders {#applying-video-profiles-to-specific-folders}
 
@@ -377,7 +377,7 @@ You can apply a video profile to a folder from within the **[!UICONTROL Tools]**
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 #### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 

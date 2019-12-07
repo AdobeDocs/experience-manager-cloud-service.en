@@ -27,7 +27,7 @@ You can publish digital assets directly from AEM to Dynamic Media Classic and yo
 
 This document describes how to publish digital assets from AEM to Dynamic Media Classic and vice versa. Viewers are also described in detail. For information on configuring AEM for Dynamic Media Classic, see [Integrating Dynamic Media Classic with AEM](/help/sites-cloud/administering/integrating-scene7.md).
 
-See also [Adding Image Maps](image-maps.md).
+See also [Adding Image Maps](/help/assets/image-maps.md).
 
 For more information on using video components with AEM, see [Video](video.md).
 
@@ -165,15 +165,15 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Viewer preset]** &ndash; Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and vice versa.
+**[!UICONTROL Viewer preset]** &ndash; Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and vice versa.
 
 **[!UICONTROL Dynamic Media Classic Configuration]** &ndash; Select the Dynamic Media Classic configuration you want to use to fetch active image presets from SPS.
 
-**[!UICONTROL Image preset]** &ndash; Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you may need to make it visible. See [Managing Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and vice versa.
+**[!UICONTROL Image preset]** &ndash; Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you may need to make it visible. See [Managing Image Presets](/help/assets/dynamic-media/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and vice versa.
 
-**[!UICONTROL Output Format]** &ndash; Select the output format of the image, for example jpeg. Depending on the output format you select, you may have additional configuration options. See [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Output Format]** &ndash; Select the output format of the image, for example jpeg. Depending on the output format you select, you may have additional configuration options. See [Image Preset best practices](/help/assets/dynamic-media/managing-image-presets.md#image-preset-options).
 
-**[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/s7_sharpening_images.pdf).
+**[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/dynamic-media/s7_sharpening_images.pdf).
 
 **[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
 

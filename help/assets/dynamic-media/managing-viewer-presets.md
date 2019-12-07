@@ -108,7 +108,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p>
     <ul>
      <li>An aspect ratio of 2:1.</li>
-     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-authoring/tags.md">Using Tags</a>.</li>
+     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-cloud/authoring/tags.md">Using Tags</a>.</li>
     </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td>
   </tr>
   <tr>
@@ -367,12 +367,12 @@ AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTRO
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the viewer preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   ![chlimage_1-221](/help/assets/assets/chlimage_1-221.png)
 
 1. In the **[!UICONTROL limit]** property, change the **[!UICONTROL Value]**, which is set to 15 by default, to the desired number.
 1. Navigate to the viewer preset datasource at `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist/datasource`
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   ![chlimage_1-222](/help/assets/assets/chlimage_1-222.png)
 
 1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tap **[!UICONTROL Save All]**.

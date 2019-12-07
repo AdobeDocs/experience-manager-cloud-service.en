@@ -45,8 +45,8 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
-        * [Upload your videos](/help/assets/dynamic-media/managing-video-assets.md#uploadingandpreviewingvideoassets).
-        * Learn more about [Supported input file formats](/help/assets/dynamic-media/assets-formats.md#supported-multimedia-formats).
+        * [Upload your videos](/help/assets/manage-video-assets.md#uploadingandpreviewingvideoassets).
+        * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
 
     * Monitor how [video encoding is progressing](#monitoring-video-encoding-and-youtube-publishing-progress) either from the asset or workflow view.
 
@@ -57,14 +57,14 @@ The following step-by-step workflow description is designed to help you get up a
         * [Organizing digital assets](/help/assets/organize-assets.md)
           Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md)
 
-        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/managing-assets-touch-ui.md#searchingassets)
+        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/manage-assets-touch-ui.md#searchingassets)
 
     * Preview and publish video assets
 
         * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/dynamic-media/managing-video-assets.md#uploadingandpreviewingvideoassets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
+          [Previewing videos](/help/assets/manage-video-assets.md#uploadingandpreviewingvideoassets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
           [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/managing-assets-touch-ui.md#managing-renditions)
+          [Managing video renditions](/help/assets/manage-assets-touch-ui.md#managing-renditions)
 
         * [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md)
         * [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
@@ -75,17 +75,17 @@ The following step-by-step workflow description is designed to help you get up a
           [Viewing video rendition properties](/help/assets/video-renditions.md)
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-          [Editing video properties](/help/assets/managing-assets-touch-ui.md#editing-properties)
+          [Editing video properties](/help/assets/manage-assets-touch-ui.md#editing-properties)
 
         * [Managing metadata for digital assets](/help/assets/metadata.md)
         * [Metadata schemas](/help/assets/metadata-schemas.md)
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](/help/assets/managing-video-assets.md#annotatingvideoassets) or [Annotating assets](/help/assets/managing-assets-touch-ui.md#annotating)
+        * [Annotating videos](/help/assets/manage-video-assets.md#annotatingvideoassets) or [Annotating assets](/help/assets/manage-assets-touch-ui.md#annotating)
 
-        * [Creating a version](/help/assets/managing-assets-touch-ui.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+        * [Creating a version](/help/assets/manage-assets-touch-ui.md#asset-versioning)
+        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-assets-touch-ui.md#starting-a-workflow-on-an-asset)
 
         * [Review folder assets](/help/assets/bulk-approval.md)
         * [Projects](/help/sites-authoring/projects.md)
@@ -841,7 +841,7 @@ To monitor progress (including failed encoding/YouTube publish):
 
    This column does not display by default. To enable the column, select **[!UICONTROL View Settings]** from the views drop-down menu, and add the **[!UICONTROL Processing Status]** column and tap or click **[!UICONTROL Update]**.
 
-   ![chlimage_1-431](assets/chlimage_1-431.png)
+   ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
 1. View progress in the asset details. When you tap or click an asset, open the drop-down menu and select **[!UICONTROL Timeline]**. To narrow it down to workflow activities like encoding or YouTube publishing, select **[!UICONTROL Workflows]**.
 
@@ -869,7 +869,7 @@ To monitor progress (including failed encoding/YouTube publish):
 
    Select the instance and tap or click **[!UICONTROL Open History]**.
 
-   ![chlimage_1-434](assets/chlimage_1-434.png)
+   ![chlimage_1-434](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
    From the Workflow Instances area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-administering/workflows-administering.md) for more information.
 
@@ -1157,7 +1157,7 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
    Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
 1. In AEM, upload your WebVTT chapter file.
 
-   See [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   See [Uploading Assets](/help/assets/manage-assets-touch-ui.md#uploading-assets).
 
 1. Do one of the following:
 
@@ -1215,7 +1215,7 @@ T**o add a custom video thumbnail**,
     * Created a folder for your video assets.
     * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#uploadingandpreviewingvideoassets).
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
 1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, tap the video asset.

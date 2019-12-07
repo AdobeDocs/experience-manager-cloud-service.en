@@ -108,5 +108,5 @@ Annotations do not appear in Edit mode, but the badge at the top right of the to
 
 Besides components, you can annotate a variety of resources:
 
-* Annotating assets <!--[Annotating assets](/help/assets/managing-assets-touch-ui.md#annotating)-->
-* Annotating video assets <!--[Annotating video assets](/help/assets/managing-video-assets.md#annotating-video-assets)-->
+* Annotating assets [Annotating assets](/help/assets/manage-assets-touch-ui.md#annotating)
+* Annotating video assets [Annotating video assets](/help/assets/manage-video-assets.md#annotating-video-assets)

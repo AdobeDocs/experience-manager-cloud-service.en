@@ -90,7 +90,7 @@ To get you up and running quickly:
     * [Add a carousel banner to your website in AEM
       ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)If you are an AEM Sites customer you can add the carousel set directly to the page in AEM, using the Interactive Media component.
 
-If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](/help/assets/dynamic-media/managing-assets-touch-ui.md#editingproperties).
+If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](/help/assets/manage-assets-touch-ui.md#editingproperties).
 
 ## Identifying Hotspot and Image Map Variables {#identifying-hotspot-and-image-map-variables}
 
@@ -178,7 +178,7 @@ Consider the following examples of quick view URLs and their resulting hotspot o
 
 If you have already uploaded the images that you want to use, advance to the next step, [Creating Carousel Sets](#creating-carousel-sets). Please note the images used in the carousel must be uploaded after Dynamic Media has been enabled.
 
-To upload image banners, see [Uploading assets](/help/assets/managing-assets-touch-ui.md).
+To upload image banners, see [Uploading assets](/help/assets/manage-assets-touch-ui.md).
 
 ## Creating Carousel Sets {#creating-carousel-sets}
 
@@ -214,7 +214,7 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
    To delete a slide, tap or click the slide and tap or click **[!UICONTROL Delete Slide]** in the toolbar. To move a slide, tap the reoreder icon and hold and move to the desired location.
 
 1. After you have added the images in slides, you can add a hotspot, image map, or both to your image. See [adding hotspots or image maps](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. You can change the visual design and behavior of carousel sets by tapping or clicking the Behavior and Appearance tabs and making adjustments to how your carousel banner looks or how specific components behave. See [managing viewer presets](/help/assets/viewer-presets.md) for more information on how to use the viewer editor.
+1. You can change the visual design and behavior of carousel sets by tapping or clicking the Behavior and Appearance tabs and making adjustments to how your carousel banner looks or how specific components behave. See [managing viewer presets](/help/assets/dynamic-media/viewer-presets.md) for more information on how to use the viewer editor.
 
    >[!NOTE]
    >
@@ -292,7 +292,7 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
             * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the quick view template so that the system knows to associate the tapped hotspot with a particular SKU's quick view.
             * (Optional) If there are other variables within the quick view that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an additional variable. For example, category=Mens is an added variable.
 
-            * See [Working with Selectors](/help/assets/working-with-selectors.md) for more information.
+            * See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md) for more information.
 
     * Tap **[!UICONTROL Hyperlink]**.
 
@@ -305,7 +305,7 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
 
    Be sure you specify whether to open the link in a new browser tab (recommended default) or the same tab.
 
-   See [Working with Selectors](/help/assets/working-with-selectors.md) for more information.
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md) for more information.
 
     * Tap **[!UICONTROL Experience Fragment]**.
 
@@ -326,7 +326,7 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
 1. Tap **[!UICONTROL Save]**.
 1. Publish the carousel set. Publishing creates the embed code or URL that you can use on your website page. If you are an AEM Sites customer, you may add the carousel set directly to your webpage.
 
-   See [Publishing assets](/help/assets/publishing-dynamicmedia-assets.md).
+   See [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    See [Adding a carousel set to your website landing page](#adding-a-carousel-banner-to-your-website-page)
 

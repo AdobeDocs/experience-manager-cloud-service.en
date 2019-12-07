@@ -17,7 +17,7 @@ Managing Dynamic Media assets&ndash;images, video, and interactive assets&ndash;
 
 When previewing, you can also apply image presets (for images only) or viewer presets (for video and images). You cannot apply both to an asset. See [Applying viewer presets](viewer-presets.md) and [Applying image presets](image-presets.md).
 
-General information on managing assets is found in [Managing Assets with the Touch UI](managing-assets-touch-ui.md).
+General information on managing assets is found in [Managing Assets with the Touch UI](/help/assets/manage-assets-touch-ui.md).
 
 The following topics describe what you need to do to manage Dynamic Media assets:
 
