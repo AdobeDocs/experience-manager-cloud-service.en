@@ -43,7 +43,7 @@ Interactive Images steps:
 
 1. **(Optional) Identifying hotspot variables** &ndash; If you use AEM Assets and Dynamic Media standalone, start by identifying dynamic variables used in your existing Quickview implementation so that you can enter hotspot data when creating the interactive image. See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
    However, if you use AEM Sites, or AEM eCommerce, or both, then this step is not necessary.
-   See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
+   <!-- See [eCommerce concepts in AEM Assets](/help/sites-cloud/administering/concepts.md).-->
 
 1. **(Optional) Creating an Interactive Image viewer preset** &ndash; Customize the graphic image that is used to represent hotspots. Creating your own Interactive Image viewer preset is not required if you intend to use the out-of-the-box Interactive Image viewer preset named `Shoppable_Banner` instead.
 See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -68,7 +68,7 @@ See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynami
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your image by triggering to Quickviews.
->* Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
+>* Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 >
 >If your implementation of AEM uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -225,7 +225,7 @@ You can add hotspots to an image banner using the editor on the Hotspot Manageme
 
 When you add hotspots, you can define them as a Quickview pop-up display, as a hyperlink, or an Experience Fragment.
 
-See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
+See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
 >
@@ -292,7 +292,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
     * Tap **[!UICONTROL Experience Fragment]**.
 
         * If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap Select in the upper-right corner of the page to return to the Hotspot management page.
-          See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
+          See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
         * Specify the width and height of the Experience Fragment as it will appear on the banner.
 

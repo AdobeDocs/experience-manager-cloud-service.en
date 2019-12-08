@@ -88,7 +88,7 @@ The following step-by-step workflow description is designed to help you get up a
         * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-assets-touch-ui.md#starting-a-workflow-on-an-asset)
 
         * [Review folder assets](/help/assets/bulk-approval.md)
-        * [Projects](/help/sites-authoring/projects.md)
+        * [Projects](/help/sites-cloud/authoring/projects/overview.md)
 
 1. **Publish your Dynamic Media videos** by doing one of the following:
 
@@ -555,7 +555,7 @@ To create a YouTube channel:
 
 ### Adding tags for publishing {#adding-tags-for-publishing}
 
-To publish to your videos to YouTube, AEM associates tags to one or more YouTube channels. To add tags for publishing, see [Administering Tags](/help/sites-administering/tags.md).
+To publish to your videos to YouTube, AEM associates tags to one or more YouTube channels. To add tags for publishing, see [Administering Tags](/help/sites-cloud/authoring/features/tags.md).
 
 Or, if you intend to use the default tags in AEM, you can skip this task and go to [Enabling the YouTube Publish replication agent](#enabling-the-youtube-publish-replication-agent).
 
@@ -871,7 +871,7 @@ To monitor progress (including failed encoding/YouTube publish):
 
    ![chlimage_1-434](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
-   From the Workflow Instances area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-administering/workflows-administering.md) for more information.
+   From the Workflow Instances area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-cloud/authoring/workflows/overview.md) for more information.
 
 1. For failed jobs, see Workflow Failures available from **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Failures]**. The **[!UICONTROL Workflow Failure]** lists all failed workflow activities.
 
@@ -910,11 +910,11 @@ To monitor progress (including failed encoding/YouTube publish):
 >
 >You may need administrative rights to access the **[!UICONTROL Tools]** menu.
 
-How you configure notification depends on whether you want notifications for encoding jobs or YouTube publishing jobs:
+How you configure notification depends on whether you want notifications for YouTube publishing jobs.
 
-* For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. See [Configuring Email Notification in AEM](/help/sites-administering/notification.md). You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
+<!-- * For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. See [Configuring Email Notification in AEM](/help/sites-administering/notification.md). You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.-->
 
-* For YouTube publishing jobs, do the following:
+For YouTube publishing jobs, do the following:
 
 1. In AEM, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
 1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.

@@ -51,7 +51,7 @@ To get you up and running quickly:
 
    >[!NOTE]
    >
-   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. See information on [setting up eCommerce](/help/sites-administering/generic.md).
+   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. <!--See information on [setting up eCommerce](/help/sites-administering/generic.md).-->
    >
    >
    >If you are an AEM Assets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
@@ -90,7 +90,7 @@ To get you up and running quickly:
     * [Add a carousel banner to your website in AEM
       ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)If you are an AEM Sites customer you can add the carousel set directly to the page in AEM, using the Interactive Media component.
 
-If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](/help/assets/manage-assets-touch-ui.md#editingproperties).
+If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](/help/assets/manage-assets-touch-ui.md#editing-properties).
 
 ## Identifying Hotspot and Image Map Variables {#identifying-hotspot-and-image-map-variables}
 
@@ -100,7 +100,7 @@ When you add hotspots or image maps to a banner image in AEM Assets you need to 
 
 >[!NOTE]
 >
->If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](/help/sites-administering/generic.md). In addition, you can use the Interactive component and add it to your web page.
+>If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. <!-- See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md).--> In addition, you can use the Interactive component and add it to your web page.
 >
 >If you are an AEM Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
 
@@ -240,7 +240,7 @@ You can add hotspots or image maps to a banner using the Carousel Set editor.
 
 When you add hotspots or image maps, you can define them as a Quickview pop-up display, as a hyperlink, or an Experience Fragment.
 
-See [Experience Fragment](/help/sites-authoring/experience-fragments.md).
+See [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
     * Tap **[!UICONTROL Experience Fragment]**.
 
         * If you are an AEM Sites customer, tap the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap Select in the upper-right corner of the page to return to the Hotspot management page.
-          See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
+          See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
         * Specify the width and height of the Experience Fragment as it will appear on the banner.
 
@@ -338,12 +338,12 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
 
 You can perform a variety of editing tasks on Carousel Sets such as the following:
 
-* Add slides to a Carousel Set. See also [Working with Selectors](/help/assets/working-with-selectors.md).
+* Add slides to a Carousel Set. See also [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 * Re-order slides in the Carousel Set.
 * Delete assets in the Carousel Set.
 * Apply a viewer preset.
 * Delete the Carousel Set.
-* Add or edit hotspots and image maps. See also [Working with Selectors](/help/assets/working-with-selectors.md).
+* Add or edit hotspots and image maps. See also [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
 **To edit a Carousel Set**
 
