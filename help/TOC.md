@@ -62,7 +62,6 @@ solution-title: Experience Cloud
     + [Dynamic Media Video Profiles](/help/assets/dynamic-media/video-profiles.md)
     + [Dynamic Media Image Profiles](/help/assets/dynamic-media/image-profiles.md)
     + [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
-    + [Video](/help/assets/dynamic-media/s7-video.md)
     + [HTTP2 delivery of content](/help/assets/dynamic-media/http2.md)
     + [Delivering Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
     + [Activating hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)

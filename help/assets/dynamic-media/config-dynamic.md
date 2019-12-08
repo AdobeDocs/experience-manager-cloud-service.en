@@ -32,12 +32,10 @@ Learn more about working with [video](/help/assets/dynamic-media/video.md) in Dy
 
 >[!NOTE]
 >
->If you are having issues with your Dynamic Media configuration, an important place to look are the log files specific to dynamic media. These are installed automatically when you enable dynamic media:
+>If you are having issues with your Dynamic Media configuration, an important place to look are the log files specific to Dynamic Media. These are installed automatically when you enable Dynamic Media:
 >
 >* `s7access.log`
 >* `ImageServing.log`
->
->They are documented in [Monitoring and Maintaining your AEM instance](/help/sites-deploying/monitoring-and-maintaining.md).
 
 Hybrid publishing and delivery is a core feature of the Dynamic Media addition to Adobe Experience Manager. Hybrid publishing lets you deliver Dynamic Media assets, such as images, sets and video, from the cloud instead of from the AEM publish nodes.
 
@@ -134,8 +132,7 @@ You may choose to implement Dynamic Media only for imaging, only for video, or f
 
 ## Enabling Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) is disabled by default. To take advantage of dynamic media features, you need to enable dynamic media by using the `dynamicmedia` run mode as you would, for example, `publish` run mode. Before enabling, make sure to review the [technical requirements.](/help/sites-deploying/technical-requirements.md#dynamicmediaaddonprerequisites)
-
+[Dynamic media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) is disabled by default. To take advantage of dynamic media features, you need to enable dynamic media by using the `dynamicmedia` run mode as you would, for example, `publish` run mode. 
 >[!NOTE]
 >
 >Enabling dynamic media via the run mode replaces the functionality in AEM 6.1 and AEM 6.0 where you enabled dynamic media by setting the `dynamicMediaEnabled` flag to **[!UICONTROL true]**. This flag has no functionality in AEM 6.2 and later. In addition, you do not need to restart the quickstart to enable dynamic media.
@@ -179,6 +176,7 @@ To enable dynamic media, you must enable the dynamic media runmode either from t
    >
    >These logs are only used when Dynamic Media is enabled. They are not included in the **Download Full** package that is generated from the `system/console/status-Bundlelist` page; when calling Customer Support if you have a Dynamic Media issue, please append both these logs to the issue.
 
+<!-->
 ### If you installed AEM to a different port or context path ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 If you are deploying [AEM to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you need to configure the **self** domain in the externalizer. Otherwise, thumbnail generation for assets will not work properly for dynamic media assets.
@@ -196,7 +194,7 @@ In an AEM QuickStart WAR deployment, the port number and context path cannot be 
 
 >[!NOTE]
 >
->In an [AEM Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self** domain generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you need to configure the **self** domain.
+>In an [AEM Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self** domain generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you need to configure the **self** domain.-->
 
 ## Disabling Dynamic Media  {#disabling-dynamic-media}
 

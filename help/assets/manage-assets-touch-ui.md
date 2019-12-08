@@ -11,7 +11,7 @@ docset: aem65
 
 # Manage assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
 
-This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
+This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-cloud/authoring/getting-started/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) assets.
 
 ## Create folders {#creating-folders}
 
@@ -45,7 +45,7 @@ You can upload various types of assets (including images, PDF files, RAW files, 
 
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
-For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column. See [Processing Profiles](/help/assets/processing-profiles.md).
+For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column. See [Processing Profiles](/help/assets/dynamic-media/processing-profiles.md).
 
 Before uploading an asset, ensure that it is in a [format](/help/assets/assets-formats.md) that AEM Assets supports.
 
@@ -138,7 +138,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 >[!NOTE]
 >
->To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the AEM author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
+>To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the AEM author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Installing feature pack 18912 for bulk asset migration](/help/assets/dynamic-media/bulk-ingest-migrate.md).
 >
 >If you use FTP for uploading assets, the upload settings specified in AEM are ignored. Instead, file processing rules, as defined in Dynamic Media Classic, are used.
 
@@ -268,7 +268,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
   <tr>
    <td> </td>
    <td>Batch Set Presets<br /> </td>
-   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="/help/assets/manage-assets-touch-ui.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
+   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="/help/assets/dynamic-media/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="/help/assets/manage-assets-touch-ui.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -582,7 +582,7 @@ To transcode a video file by choosing from a variety of video presets.
 
 If you want to automatically create an Image Set or Spin Set from uploaded images, click the Active column for the preset you want to use. You can select more than one preset.
 
-See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
+See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/dynamic-media/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -626,7 +626,7 @@ To preview an asset, follow these steps.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
+See also [Preview Dynamic Media Assets.](/help/assets/dynamic-media/previewing-assets.md)
 
 ## Editing Properties {#editing-properties}
 
@@ -950,7 +950,7 @@ Similar to List view, the **[!UICONTROL Select]** icon appears when you hover th
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
-For more information, see [Viewing and Selecting your Resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+For more information, see [Viewing and Selecting your Resources](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
 ## Editing Images {#editing-images}
 
@@ -1016,11 +1016,11 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->In the [Collections console](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+>In the [Collections console](/help/assets/manage-collections-touch-ui.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
 
 >[!NOTE]
 >
->Timeline contains several [options specific to content fragments](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>Timeline contains several [options specific to content fragments](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Annotating {#annotating}
 
@@ -1030,7 +1030,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 >[!NOTE]
 >
->For Content Fragments, [annotations are created in the fragment editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
+>For Content Fragments, [annotations are created in the fragment editor](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigate to the location of the asset to which you want to add annotations.
 1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
@@ -1225,7 +1225,7 @@ The versioning functionality lets you do the following:
 
    >[!NOTE]
    >
-   >You can also select the asset from the [List view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+   >You can also select the asset from the [List view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
 1. Add a label and comment for the version to revert to the particular version in the Assets UI.
 

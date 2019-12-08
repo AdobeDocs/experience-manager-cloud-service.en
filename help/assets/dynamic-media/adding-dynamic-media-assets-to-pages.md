@@ -30,7 +30,7 @@ Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media c
 1. In AEM, open the page where you want to add the Dynamic Media component.
 1. In the left pane, tap the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
 
-   If no Dynamic Media components are available, you need to enable&ndash;or turn on&ndash; the Dynamic Media components. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information.
+   If no Dynamic Media components are available, you need to enable&ndash;or turn on&ndash; the Dynamic Media components. See [Editing Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) for more information.
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -259,7 +259,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 Panoramic Media component is for those assets that are spherical panoramic images. Such images provide a 360° viewing experience of a room, property, location, or landscape. For an image to qualify as a spherical panorama, it must have either one OR both of the following:
 
 * An aspect ratio of 2:1.
-* Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). See [Using Tags](/help/sites-authoring/tags.md).
+* Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). See [Using Tags](/help/sites-cloud/authoring/features/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
 

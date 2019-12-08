@@ -95,9 +95,9 @@ See also [Editing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pre
 
 When you are satisfied with the 360 Video, you can publish it.
 
-See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.html).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.html). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
-See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.html)
+See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
+See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **To preview 360 Videos**
 
@@ -132,6 +132,6 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 You need to publish the 360 Video in order to use it. Publishing a 360 Video activates the URL and Embed Code. It also publishes the 360 Video to the Dynamic Media cloud which is integrated with a CDN for scalable and performant delivery.
 
 See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) for details on how to publish 360 Video.
-See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.html).
-See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.html). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
-See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.html)
+See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
+See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)

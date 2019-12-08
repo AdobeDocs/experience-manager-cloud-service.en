@@ -39,9 +39,11 @@ For more information on using video components with AEM, see [Video](video.md).
 
 You can publish digital assets to Dynamic Media Classic as follows:
 
-* [In the classic user interface from the Assets console](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-the-assets-console)
-* [In the classic user interface from an asset](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-an-asset)
-* [In the classic user interface from outsidetheCQ Target folder](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)
+* [In the classic user interface from the Assets console](/help/assets/dynamic-media/manage-assets-classic-s7.md#publishing-from-the-assets-console)
+* [In the classic user interface from an asset](/help/assets/dynamic-media/manage-assets-classic-s7.md#publishing-from-an-asset)
+* [In the classic user interface from outsidetheCQ Target folder](/help/assets/dynamic-media/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)
+
+<!--The links in the above three were formerly in help/sites-classic-ui-authoring-->
 
 >[!NOTE]
 >
@@ -103,7 +105,7 @@ Adding a Dynamic Media Classic (Scene7) component to a page is the same as addin
 
 Responsive design for your assets means that your assets adapts depending on where it is displayed. With responsive design, the same assets can be effectively displayed on multiple devices.
 
-See also [Responsive Design for Web Pages](/help/sites-developing/responsive.md).
+See also [Responsive Design for Web Pages](/help/sites-cloud/authoring/features/responsive-layout.md).
 
 **To add an interactive viewing experience to a responsive site**
 
@@ -111,7 +113,7 @@ See also [Responsive Design for Web Pages](/help/sites-developing/responsive.md)
 
    >[!NOTE]
    >
-   >If Dynamic Media Classic components are not available, be sure [to enable them by way of Design mode](/help/sites-authoring/default-components-designmode.md).
+   >If Dynamic Media Classic components are not available, be sure [to enable them by way of Design mode](/help/sites-cloud/authoring/features/components-console.md).
 
 1. In a website with the **[!UICONTROL Dynamic Media Classic]** components enabled, drag an **[!UICONTROL Image]** component to the page.
 1. Select the component and tap the configuration icon.
@@ -173,9 +175,9 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 **[!UICONTROL Output Format]** &ndash; Select the output format of the image, for example jpeg. Depending on the output format you select, you may have additional configuration options. See [Image Preset best practices](/help/assets/dynamic-media/managing-image-presets.md#image-preset-options).
 
-**[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/dynamic-media/s7_sharpening_images.pdf).
+**[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/dynamic-media/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
 
-**[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/dynamic-media/managing-image-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
 
 **[!UICONTROL Breakpoints]** &ndash; If your website is responsive, you want to adjust the breakpoints. Breakpoints must be separated by commas ( , ).
 
@@ -238,7 +240,7 @@ The Dynamic Media Classic **[!UICONTROL Video]** component (available from the D
 
 It can be used for adaptive video sets, a single MP4 video, or a single F4V video.
 
-See [Video](s7-video.md) for more information on how videos work with Dynamic Media Classic integration. In addition, see [the Dynamic Media Classic Video component versus the Foundation Video component](s7-video.md).
+See [Video](/help/sites-cloud/administering/manage-assets-classic-s7-video.md) for more information on how videos work with Dynamic Media Classic integration. In addition, see [the Dynamic Media Classic Video component versus the Foundation Video component](/help/sites-cloud/administering/manage-assets-classic-s7-video.md).
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
