@@ -15,6 +15,7 @@ docset: aem65
 
 # Interactive images{#interactive-images}
 
+<!--
 You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can tap or click these hotspots and be linked directly to the product or service, add it to a shopping cart, or be linked to a web page. Direct experiences such as these increase customer engagment and conversion on your web site.
 
 The following is a shoppable banner with a Quickview pop-up. A user activates the Quickview by tapping the circle or "hotspot" on the model.
@@ -515,3 +516,4 @@ The final demo website with the fully integrated interactive image looks like th
 ## Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 
 See [Using Quickviews to create custom pop-ups](/help/assets/dynamic-media/custom-pop-ups.md).
+-->

@@ -10,7 +10,7 @@ docset: aem65
 ---
 
 # Manage assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
-
+<!--
 This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
 ## Create folders {#creating-folders}
@@ -31,12 +31,12 @@ The following (space-separated list of) characters are not supported:
 * An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Upload Assets {#uploading-assets}
-
+-->
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
-
+<!--
 You can upload various types of assets (including images, PDF files, RAW files, and so on) from your local folder or a network drive to AEM Assets.
 
 >[!NOTE]
@@ -1276,3 +1276,4 @@ A collection is an ordered set of assets. Use collections to share assets betwee
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
 See [Managing Collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.
+-->

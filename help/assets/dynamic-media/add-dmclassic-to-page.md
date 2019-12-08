@@ -13,6 +13,7 @@ discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 
 # Adding Dynamic Media Classic Features to your Page {#adding-scene-features-to-your-page}
 
+<!--
 [Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
 You can view AEM assets published in Dynamic Media Classic in various viewers:
@@ -334,4 +335,4 @@ By default, AEM searches the folder selected and all sub-folders.
 **[!UICONTROL Publish Status]** &ndash; You can filter for assets based on publication status: **[!UICONTROL Unpublished]** or **[!UICONTROL Published]**. If you do not select any **[!UICONTROL Publish Status]**, AEM by default searches all publish statuses.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
-
+-->

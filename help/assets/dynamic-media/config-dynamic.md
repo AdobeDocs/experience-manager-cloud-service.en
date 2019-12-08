@@ -15,7 +15,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 ---
 
 # Configuring Dynamic Media - Hybrid mode{#configuring-dynamic-media-hybrid-mode}
-
+<!--
 Dynamic Media-Hybrid needs to be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).
 
 >[!NOTE]
@@ -1327,3 +1327,4 @@ See [Delivering Dynamic Media Assets](/help/assets/dynamic-media/delivering-dyna
 ### WCM Dynamic Media and Interactive Media Components {#wcm-dynamic-media-and-interactive-media-components}
 
 WCM pages that reference Dynamic Media and Interactive Media components reference the delivery service.
+-->

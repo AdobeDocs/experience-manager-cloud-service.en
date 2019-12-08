@@ -14,7 +14,7 @@ docset: aem65
 ---
 
 # Spin Sets{#spin-sets}
-
+<!--
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.
 
 A Spin Set simulates a 360-degree viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can “free-form” zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
@@ -53,7 +53,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    See [Adding and editing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
-1. [Viewing Spin Sets](#viewing-spin-sets).
+- [Spin Sets{#spin-sets}](#spin-setsspin-sets)
 
    You can view and access sets created by way of batch set presets in three different ways. (Sets created using batch set presets, do *not* appear in the user interface.)
 
@@ -215,3 +215,4 @@ See [Previewing Assets](/help/assets/dynamic-media/previewing-assets.md).
 ## Publishing Spin Sets {#publishing-spin-sets}
 
 See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+-->

@@ -15,6 +15,7 @@ docset: aem65
 
 # Adding Scene7 Features to your Page{#adding-scene-features-to-your-page}
 
+<!--
 [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
 You can view AEM assets published in Scene7 in various viewers:
@@ -401,3 +402,4 @@ By default, AEM searches the folder selected and all sub-folders.
 **Publish Status** You can filter for assets based on publication status: Unpublished or Published. If you do not select any Publish Status, AEM by default searches all publish statuses.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
+-->

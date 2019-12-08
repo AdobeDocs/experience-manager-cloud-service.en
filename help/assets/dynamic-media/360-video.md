@@ -13,7 +13,7 @@ docset: aem65
 ---
 
 # 360/VR Video {#vr-video}
-
+<!--
 360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.
 
 Dynamic Media - Scene7 mode includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.
@@ -135,3 +135,4 @@ See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dyna
 See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.html).
 See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.html). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
 See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.html)
+-->

@@ -10,7 +10,7 @@ docset: aem65
 ---
 
 # Assets supported formats {#assets-supported-formats}
-
+<!--
 The article list all the formats that are supported by AEM Assets and the specific features that support each format.
 
 >[!NOTE]
@@ -731,3 +731,4 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   </tr>
  </tbody>
 </table>
+-->

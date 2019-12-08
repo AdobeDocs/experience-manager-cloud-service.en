@@ -12,7 +12,7 @@ discoiquuid: da4157a7-4a24-446f-8136-171add5ca96f
 ---
 
 # Adding Image Maps {#adding-image-maps}
-
+<!--
 Learn how to add hyperlinked image maps to image assets.
 
 Image Maps let you add one or more hyperlinked areas that function like other hyperlinks.
@@ -55,4 +55,4 @@ Image Maps let you add one or more hyperlinked areas that function like other hy
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
    If the Dynamic Media option is enabled, navigate to the Asset editor and tap the **[!UICONTROL Map]** icon to view all the applied image maps.
-
+-->

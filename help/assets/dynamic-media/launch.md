@@ -14,7 +14,7 @@ docset: aem65
 ---
 
 # Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
-
+<!--
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
 The new *Dynamic Media Viewers* extension for Adobe Launch, along with the recent release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Adobe Launch to use events and data specific for the Dynamic Media Viewers in their Adobe Launch configuration.
@@ -846,3 +846,4 @@ It is, however, supported in the AEM publish node. Using the default settings of
 It is possible to work-around this limitation by specifying Development or Staging URL of Adobe Launch library in the Adobe Launch Cloud configuration for AEM publish above. Doing this makes the AEM publish node use the Development or Staging version of Adobe Launch library.
 
 See [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) for more information about setting up Adobe Launch Cloud Configuration.
+-->

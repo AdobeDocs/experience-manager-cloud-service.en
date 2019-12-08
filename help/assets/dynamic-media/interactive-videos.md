@@ -14,7 +14,7 @@ docset: aem65
 ---
 
 # Interactive Videos{#interactive-videos}
-
+<!--
 You can easily create interactive videos&ndash;also know as shoppable videos&ndash;that drive conversion directly from the video. Customer engagement with the video takes place in a panel alongside the video player where related service, information, or product thumbnails are scrolled into view based on what is featured in the video. Customers can tap the thumbnail and be linked directly to the service, or add the item to a shopping cart for immediate purchase, or be linked to a web page for more information.
 
 When the video ends, a visual summary of all offerings is displayed to drive a call to action. Customers have another opportunity to tap the item they want. Actionable and specific experiences such as these increase customer engagment and conversion.
@@ -28,9 +28,9 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 * During playback, as products are used in the video, the identical product appears on the right as a thumbnail image.
 
 * Click the thumbnail to pause the video and open the product's quickview. For example, click the KitchenAid thumbnail image in the video to experience a 360-degree spin view of the mixer, or zoom in to see mixer details.
-
+-->
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
-
+<!--
 ![A frame from an interactive, shoppable video](assets/chlimage_1-126.png) *A video frame capture from an interactive, shoppable video.*
 
 >[!NOTE]
@@ -768,3 +768,4 @@ The final demo website with the fully integrated interactive video looks like th
 ## Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 
 See [Using Quickviews to create custom pop-ups](/help/assets/dynamic-media/custom-pop-ups.md).
+-->

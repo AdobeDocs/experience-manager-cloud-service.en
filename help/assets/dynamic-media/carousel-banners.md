@@ -15,6 +15,7 @@ docset: aem65
 
 # Carousel Banners{#carousel-banners}
 
+<!--
 Carousel banners enable marketers to drive conversion by easily creating interactive rotating promotional content and delivering it to any screen.
 
 Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel Banners enable you to quickly create or modify rotating banners, add interactivity such as hotspots linking to product detail or related resources, and deliver them to any screen&mdash;letting you bring new promotional content to market faster.
@@ -76,7 +77,7 @@ To get you up and running quickly:
 
    See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners) - Optional. If desired, you can view a representation of your carousel set and test its interactivity.
 
-1. [Publish Carousel Banners.](#publishing-carousel-banners)
+- [Carousel Banners{#carousel-banners}](#carousel-bannerscarousel-banners)
 
    You publish a Carousel Set as you would any asset. In Assets, navigate to the Carousel Set and select it and tap **[!UICONTROL Publish]**. Publishing a Carousel Set activates the URL and Embed string.
 
@@ -467,3 +468,4 @@ The last step to trigger the quick view URL and activate the quick view panel mo
 ## Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 
 See [Using Quickviews to create custom pop-ups](/help/assets/dynamic-media/custom-pop-ups.md).
+-->

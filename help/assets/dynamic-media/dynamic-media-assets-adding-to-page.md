@@ -13,6 +13,7 @@ discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 
 # Adding Dynamic Media assets to pages{#adding-dynamic-media-assets-to-pages}
 
+<!--
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Then you can add these components to the page and add assets to the component. The dynamic media and interactive media components are smart - they know whether you are adding an image or a video and the options available change accordingly.
 
 You add dynamic media assets directly to the page if you are using AEM as your WCM.
@@ -156,3 +157,4 @@ You can edit the following **[!UICONTROL Add To Cart** settings by clicking **[!
 **[!UICONTROL Show Product Price]** &ndash; By default, this value is selected. Product price shows the price of the item as defined in the Commerce module. Clear the check mark to not show the product price.
 
 **[!UICONTROL Show Product Form]** &ndash; By default, this value is not selected. The Product Form includes any product variants such as size and color. Clear the check mark to not show the product variants.
+-->

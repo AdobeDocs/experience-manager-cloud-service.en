@@ -15,6 +15,7 @@ docset: aem65
 
 # Panoramic images{#panoramic-images}
 
+<!--
 This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.
 
 See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
@@ -81,3 +82,4 @@ See [Previewing Assets](/help/assets/dynamic-media/previewing-assets.md).
 ## Publishing Panoramic Images {#publishing-panoramic-images}
 
 See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+-->

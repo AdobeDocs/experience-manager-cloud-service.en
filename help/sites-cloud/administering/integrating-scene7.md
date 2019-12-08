@@ -12,7 +12,7 @@ discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 ---
 
 # Integrating with Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
-
+<!--
 [Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
 To use Dynamic Media Classic, you need to configure the cloud configuration so that Dynamic Media Classic and AEM Assets can interact with one another. This document describes how to configure AEM and Dynamic Media Classic.
@@ -610,4 +610,4 @@ If you are having trouble integrating AEM with Dynamic Media Classic, see the fo
 >Importing assets from an existing Dynamic Media Classic company account may take a long time to show in AEM. Ensure that you designate a folder in Dynamic Media Classic that does not have too many assets (for example, the root folder will often have too many assets).
 >
 >If you would like to test drive the integration, you may want to have the root folder point to a subfolder only, instead of the entire company.
-
+-->
