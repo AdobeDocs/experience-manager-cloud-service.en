@@ -30,7 +30,7 @@ Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media c
 1. In AEM, open the page where you want to add the Dynamic Media component.
 1. In the left pane, tap the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
 
-   If no Dynamic Media components are available, you need to enable&ndash;or turn on&ndash; the Dynamic Media components. See [Editing Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) for more information.
+   If no Dynamic Media components are available, you need to enable&ndash;or turn on&ndash; the Dynamic Media components. See [Editing Templates - Template Authors](/help/sites-cloud/authoring/features/templates.md) for more information.
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 

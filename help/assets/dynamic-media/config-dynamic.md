@@ -591,7 +591,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
       If you see the following error message, the report suite is available, but unpopulated. This error is correct--and desired--in a new installation before the system collects any data.
 
-   ![screen_shot_2018-05-23at52254pm](assets/screen_shot_2018-05-23at52254pm.png)
+    ![dm-videoreport](/help/assets/dynamic-media/assets/dm-videoreport.png)
 
    To generate reporting data, upload and publish one video. Use **[!UICONTROL Copy URL]** and run the video at least one time.
 
@@ -992,13 +992,15 @@ Advanced use cases could use a manual configure `icc=` modifier to explicitly se
 
 ### Installing Feature Pack 12445 {#installing-feature-pack}
 
+<!-- THIS TOPIC IS PROBABLY OBSOLETE UNDER SKYLINE>
+
 You must install feature pack 12445 to use the dynamic media color management capabilities.
 
 **To install feature pack 12445**
 
 1. Navigate to [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) and download either `cq-6.3.0-featurepack-12445`.
 
-   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM.
+<!--   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM. -->
 
 1. Install the feature pack.
 

@@ -110,7 +110,7 @@ The command line arguments for Imaging Transcoding Library can include the follo
 
 1. Open the **EPS thumbnails (powered by ImageMagick)** step navigate to the **Arguments** tab. In the **Mime Types** list, add the MIME types you want Imaging Transcoding Library to process. For example, if you skipped the MIME type `image/jpeg` in step 6, add image/jpeg to the **Mime Types** list.
 
-   ![process_arguments](assets/process_arguments.jpg)
+   ![process_arguments](assets/process_arguments.jpeg)
 
 1. Add commands to SwitchEngine Handler using one of the following ways:
 

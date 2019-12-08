@@ -858,7 +858,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 >[!NOTE]
 >
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
+>For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
 1. Navigate to the location of the asset(s)/folder you want to publish
 
@@ -1065,7 +1065,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    >[!NOTE]
    >
-   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](/help/assets/managing-video-assets.md).
+   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](/help/assets/manage-video-assets.md).
 
 1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
@@ -1275,4 +1275,4 @@ A collection is an ordered set of assets. Use collections to share assets betwee
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [Managing Collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.
+See [Managing Collections](/help/assets/manage-collections-touch-ui.md) for details on collection management.

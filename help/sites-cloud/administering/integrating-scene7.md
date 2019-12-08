@@ -17,7 +17,7 @@ discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 
 To use Dynamic Media Classic, you need to configure the cloud configuration so that Dynamic Media Classic and AEM Assets can interact with one another. This document describes how to configure AEM and Dynamic Media Classic.
 
-For information on using all the Dynamic Media Classic components on a page and working with video, see [Using Dynamic Media Classic](/help/assets/dynamic-media/add-dmclassic-to-page.md).
+For information on using all the Dynamic Media Classic components on a page and working with video, see [Using Dynamic Media Classic](/help/sites-cloud/administering/manage-asset-classic-s7.md).
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     <td>Upload NON-product assets to AEM for management and delivery. Upload PRODUCT assets to Dynamic Media Classic and use Dynamic Media Classic content browser in AEM and component to author Product Detail Pages on Sites.</td>
     <td><p>On</p> <p>(See step 3)</p> </td>
     <td><a href="/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md">On</a></td>
-    <td><a href="/help/assets/dynamic-media/add-dmclassic-to-page.md#scene-content-browser">On</a></td>
+    <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md#scene-content-browser">On</a></td>
     <td>Off</td>
     </tr>
     <tr>
@@ -120,7 +120,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     <td>Use Dynamic Media for imaging and video. Author image templates in Dynamic Media Classic and use Dynamic Media Classic content finder to include templates in Sites pages.</td>
     <td><p>On</p> <p>(See step 3)</p> </td>
     <td><a href="/help/assets/dymamic-media/adding-dynamic-media-assets-to-pages.md">On</a></td>
-    <td><a href="/help/assets/dynamic-media/add-dmclassic-to-page.md#scene-content-browser">On</a></td>
+    <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md#scene-content-browser">On</a></td>
     <td>Off</td>
     </tr>
     <tr>
@@ -128,7 +128,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     <td>Upload assets to Dynamic Media Classic and use AEM Dynamic Media Classic content browser to search and author assets on Sites pages</td>
     <td>Off</td>
     <td>Off</td>
-    <td><a href="/help/assets/dynamic-media/add-dmclassic-to-page.md#scene-content-browser">On</a></td>
+    <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md#scene-content-browser">On</a></td>
     <td>Off</td>
     </tr>
     <tr>
@@ -136,7 +136,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     <td>Upload assets to DAM and automatically publish to Dynamic Media Classic for delivery. Use AEM Dynamic Media Classic content browser to search and author assets on Sites pages.</td>
     <td>Off</td>
     <td>Off</td>
-    <td><a href="/help/assets/dynamic-media/add-dmclassic-to-page.md#scene-content-browser">On</a></td>
+    <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md#scene-content-browser">On</a></td>
     <td><p><a href="#configuringautouploadingfromaemassets">On</a></p> <p>(See step 4)</p> </td>
     </tr>
     <tr>

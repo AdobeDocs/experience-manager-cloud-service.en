@@ -310,7 +310,7 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
     * Tap **[!UICONTROL Experience Fragment]**.
 
         * If you are an AEM Sites customer, tap the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap Select in the upper-right corner of the page to return to the Hotspot management page.
-          See [Experience Fragments](help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+          See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
         * Specify the width and height of the Experience Fragment as it will appear on the banner.
 

@@ -225,7 +225,7 @@ You can add hotspots to an image banner using the editor on the Hotspot Manageme
 
 When you add hotspots, you can define them as a Quickview pop-up display, as a hyperlink, or an Experience Fragment.
 
-See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
+See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
 >
