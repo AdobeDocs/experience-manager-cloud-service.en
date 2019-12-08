@@ -81,7 +81,7 @@ The Dynamic Media components that are available include the following:
 
 >[!NOTE]
 >
->These components are not available by default and need to be made available by way of the template editor before using. [After they are made available i](/help/sites-authoring/templates.md#editing-templates-template-authors)n the template editor, you can add the components to your page as you would any other AEM component.
+>These components are not available by default and need to be made available by way of the template editor before using. After they are made available in the template editor, you can add the components to your page as you would any other AEM component.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 

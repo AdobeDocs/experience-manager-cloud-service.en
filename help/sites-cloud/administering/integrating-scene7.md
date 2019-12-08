@@ -95,7 +95,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     <td>New to Sites and Dynamic Media</td>
     <td>Upload assets to AEM and use AEM Dynamic Media component to author assets on Sites pages</td>
     <td><p>On</p> <p>(See step 3)</p> </td>
-    <td><a href="/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md">On</a></td>
+    <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md">On</a></td>
     <td>Off</td>
     <td>Off</td>
     </tr>
@@ -103,7 +103,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     <td>In retail and are new to Sites and Dynamic Media</td>
     <td>Upload NON-product assets to AEM for management and delivery. Upload PRODUCT assets to Dynamic Media Classic and use Dynamic Media Classic content browser in AEM and component to author Product Detail Pages on Sites.</td>
     <td><p>On</p> <p>(See step 3)</p> </td>
-    <td><a href="/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md">On</a></td>
+    <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md#adding-scene-features-to-your-page">On</a></td>
     <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md#scene-content-browser">On</a></td>
     <td>Off</td>
     </tr>
@@ -119,7 +119,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     <td>New to Dynamic Media and Templating</td>
     <td>Use Dynamic Media for imaging and video. Author image templates in Dynamic Media Classic and use Dynamic Media Classic content finder to include templates in Sites pages.</td>
     <td><p>On</p> <p>(See step 3)</p> </td>
-    <td><a href="/help/assets/dymamic-media/adding-dynamic-media-assets-to-pages.md">On</a></td>
+    <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md">On</a></td>
     <td><a href="/help/sites-cloud/administering/manage-asset-classic-s7.md#scene-content-browser">On</a></td>
     <td>Off</td>
     </tr>

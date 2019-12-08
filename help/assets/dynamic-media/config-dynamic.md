@@ -986,13 +986,14 @@ Advanced use cases could use a manual configure `icc=` modifier to explicitly se
 
 * `iccEmbed` &ndash; [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
 
+<!--
 >[!NOTE]
 >
 >The standard set of Adobe color profiles are only available if you have [Feature Pack 12445](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installed. All feature packs and service packs are available via [Package Share](https://www.adobeaemcloud.com/content/packageshare.html). Feature Pack 12445 provides the Adobe color profiles.
 
 ### Installing Feature Pack 12445 {#installing-feature-pack}
 
-<!-- THIS TOPIC IS PROBABLY OBSOLETE UNDER SKYLINE>
+THIS TOPIC IS PROBABLY OBSOLETE UNDER SKYLINE
 
 You must install feature pack 12445 to use the dynamic media color management capabilities.
 
@@ -1000,9 +1001,10 @@ You must install feature pack 12445 to use the dynamic media color management ca
 
 1. Navigate to [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) and download either `cq-6.3.0-featurepack-12445`.
 
-<!--   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM. -->
+See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM. 
 
 1. Install the feature pack.
+-->
 
 ### Configuring the default color profiles {#configuring-the-default-color-profiles}
 

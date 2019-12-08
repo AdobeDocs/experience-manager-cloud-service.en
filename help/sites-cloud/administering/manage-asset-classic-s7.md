@@ -29,19 +29,19 @@ This document describes how to publish digital assets from AEM to Dynamic Media 
 
 See also [Adding Image Maps](/help/assets/image-maps.md).
 
-For more information on using video components with AEM, see [Video](video.md).
+For more information on using video components with Dynamic Media in AEM, see [Video](/help/assets/dynamic-media/video.md).
 
 >[!NOTE]
 >
->If Dynamic Media Classic assets do not display properly, make sure that Dynamic media is [disabled](config-dynamic.md#disabling-dynamic-media) and then refresh the page.
+>If Dynamic Media Classic assets do not display properly, make sure that Dynamic media is [disabled](help/assets/dynamic-media/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
 
 ## Manually publishing to Dynamic Media Classic from assets {#manually-publishing-to-scene-from-assets}
 
 You can publish digital assets to Dynamic Media Classic as follows:
 
-* [In the classic user interface from the Assets console](/help/sites-cloud/administering/manage-assets-classic-s7.md#publishing-from-the-assets-console)
-* [In the classic user interface from an asset](/help/sites-cloud/administering/manage-assets-classic-s7.md#publishing-from-an-asset)
-* [In the classic user interface from outsidetheCQ Target folder](/help/sites-cloud/administering/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)
+* In the classic user interface from the Assets console <!--(/help/sites-cloud/administering/manage-assets-classic-s7.md#publishing-from-the-assets-console)-->
+* In the classic user interface from an asset <!--(/help/sites-cloud/administering/manage-assets-classic-s7.md#publishing-from-an-asset)-->
+* In the classic user interface from outside the CQ Target folder <!--(/help/sites-cloud/administering/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)-->
 
 <!--The links in the above three were formerly in help/sites-classic-ui-authoring-->
 

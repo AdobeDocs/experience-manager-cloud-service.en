@@ -111,9 +111,9 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 >[!NOTE]
 >
->* To use Dynamic Media to generate dynamic renditions for PDF files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](/help/assets/dynamic-media/managing-image-presets.md#adobeillustrator28ai29postscript28eps29andpdffileformats)
->* To use Dynamic Media to preview and generate dynamic renditions for AI files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](/help/assets/dynamic-media/managing-image-presets.md#adobeillustrator28ai29postscript28eps29andpdffileformats)
->* To use Dynamic Media to generate dynamic renditions for INDD files, see [InDesign (INDD) file format](/help/assets/managing-image-presets.md#indesign-indd-file-format [](/help/assets/dynamic-media/managing-image-presets.md#adobeillustrator28ai29postscript28eps29andpdffileformats)
+>* To use Dynamic Media to generate dynamic renditions for PDF files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](/help/assets/dynamic-media/managing-image-presets.md)
+>* To use Dynamic Media to preview and generate dynamic renditions for AI files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](/help/assets/dynamic-media/managing-image-presets.md)
+>* To use Dynamic Media to generate dynamic renditions for INDD files, see [InDesign (INDD) file format](/help/assets/managing-image-presets.md#indesign-indd-file-format [](/help/assets/dynamic-media/managing-image-presets.md)
 >
 
 ## Supported multimedia formats {#supported-multimedia-formats}
