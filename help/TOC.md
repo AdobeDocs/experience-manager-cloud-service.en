@@ -45,12 +45,12 @@ solution-title: Experience Cloud
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
-  + Dynamic Media {#dynamicmedia}
+<!-- >  + Dynamic Media {#dynamicmedia}
     + [Dynamic Media Newsletter by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
     + [Setting up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Working with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
     + [Configuring Dynamic Media - Scene7 mode](/help/assets/dynamic-media/config-dms7.md)
-    + <!-- [Configuring Dynamic Media - Hybrid mode](config-dynamic.md) -->
+    + [Configuring Dynamic Media - Hybrid mode](config-dynamic.md)
     + [Troubleshooting Dynamic Media - Scene7 mode](/help/assets/dynamic-media/troubleshoot-dms7.md)
     + [Managing Dynamic Media assets](/help/assets/dynamic-media/managing-assets.md)
     + [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -89,8 +89,9 @@ solution-title: Experience Cloud
     + [Installing Feature Pack 18912 for bulk asset migration](/help/assets/dynamic-media/bulk-ingest-migrate.md)
     + [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md)
     + [DHTML Viewer End-of-Life FAQs](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-    + <!-- [Flash Viewers End-of-Life Notice](/help/assets/dynamic-media/flash-viewer-eol.md) -->
-    + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/scene7-http2faq.md)
+    + [Flash Viewers End-of-Life Notice](/help/assets/dynamic-media/flash-viewer-eol.md)
+    + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/scene7-http2faq.md) 
+-->
   + Reference Material for Assets {#reference-material-for-assets}
     + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
 + Implementing for AEM as a Cloud Service {#implementing}
