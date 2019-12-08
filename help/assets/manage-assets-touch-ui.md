@@ -10,6 +10,7 @@ docset: aem65
 ---
 
 # Manage assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
+
 <!--
 This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 

@@ -13,6 +13,7 @@ docset: aem65
 ---
 
 # 360/VR Video {#vr-video}
+
 <!--
 360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.
 

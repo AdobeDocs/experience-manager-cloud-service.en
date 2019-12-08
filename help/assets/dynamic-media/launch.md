@@ -14,6 +14,7 @@ docset: aem65
 ---
 
 # Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+
 <!--
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 

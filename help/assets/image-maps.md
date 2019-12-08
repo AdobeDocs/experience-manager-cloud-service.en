@@ -12,6 +12,7 @@ discoiquuid: da4157a7-4a24-446f-8136-171add5ca96f
 ---
 
 # Adding Image Maps {#adding-image-maps}
+
 <!--
 Learn how to add hyperlinked image maps to image assets.
 

@@ -15,6 +15,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 ---
 
 # Configuring Dynamic Media - Hybrid mode{#configuring-dynamic-media-hybrid-mode}
+
 <!--
 Dynamic Media-Hybrid needs to be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).
 
