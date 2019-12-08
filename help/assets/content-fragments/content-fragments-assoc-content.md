@@ -7,11 +7,7 @@ seo-description: Associated content provides the connection so that assets can b
 
 # Associated Content{#associated-content}
 
-<!--
 Associated content provides the connection so that assets (i.e.) can be (optionally) used with the fragment when it is added to a content page. This provides flexibility by [providing a range of assets to access when using the content fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), while also helping to reduce the time required to search for the appropriate asset.
--->
-
-Associated content provides the connection so that assets (i.e.) can be (optionally) used with the fragment when it is added to a content page. This provides flexibility by providing a range of assets to access when using the content fragment on a page, while also helping to reduce the time required to search for the appropriate asset.
 
 ## Adding Associated Content {#adding-associated-content}
 
