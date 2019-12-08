@@ -176,7 +176,7 @@ To enable dynamic media, you must enable the dynamic media runmode either from t
    >
    >These logs are only used when Dynamic Media is enabled. They are not included in the **Download Full** package that is generated from the `system/console/status-Bundlelist` page; when calling Customer Support if you have a Dynamic Media issue, please append both these logs to the issue.
 
-<!-->
+<!--
 ### If you installed AEM to a different port or context path ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 If you are deploying [AEM to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you need to configure the **self** domain in the externalizer. Otherwise, thumbnail generation for assets will not work properly for dynamic media assets.
