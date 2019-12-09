@@ -1,13 +1,13 @@
 ---
-title: AEM Cloud Service Assets Guide
-seo-title: AEM Cloud Service Assets Guide
-description: This guide explains the concepts of assets in AEM.
-seo-description: This guide explains the concepts of assets in AEM.
+title: AEM Cloud Service Forms Guide
+seo-title: AEM Cloud Service Forms Guide
+description: This guide explains the concepts of forms in AEM.
+seo-description: This guide explains the concepts of forms in AEM.
 ---
 
-# AEM Cloud Service Assets Guide {#aem-assets-guide}
+# AEM Cloud Service Forms Guide {#aem-forms-guide}
 
-This guide explains the concepts of Assets in AEM.
+This guide explains the concepts of forms in AEM.
 
 ## Key AEM Articles
 

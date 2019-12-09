@@ -1,13 +1,13 @@
 ---
-title: AEM Cloud Service Assets Guide
-seo-title: AEM Cloud Service Assets Guide
-description: This guide explains the concepts of assets in AEM.
-seo-description: This guide explains the concepts of assets in AEM.
+title: AEM Cloud Service Security Guide
+seo-title: AEM Cloud Service Security Guide
+description: This guide explains the concepts of security in AEM.
+seo-description: This guide explains the concepts of security in AEM.
 ---
 
-# AEM Cloud Service Assets Guide {#aem-assets-guide}
+# AEM Cloud Service Security Guide {#aem-security-guide}
 
-This guide explains the concepts of Assets in AEM.
+This guide explains the concepts of security in AEM.
 
 ## Key AEM Articles
 
