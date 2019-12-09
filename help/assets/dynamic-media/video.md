@@ -915,6 +915,7 @@ How you configure notification depends on whether you want notifications for You
 
 <!-- * For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. See [Configuring Email Notification in AEM](/help/sites-administering/notification.md). You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.-->
 
+<!--
 For YouTube publishing jobs, do the following:
 
 1. In AEM, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
@@ -1128,7 +1129,7 @@ You create a chapter list for your video in much the same way that you create ca
 You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
-
+-->
 
 ```xml
 WEBVTT

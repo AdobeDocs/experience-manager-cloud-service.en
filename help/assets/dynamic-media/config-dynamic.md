@@ -196,6 +196,7 @@ In an AEM QuickStart WAR deployment, the port number and context path cannot be 
 >[!NOTE]
 >
 >In an [AEM Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self** domain generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you need to configure the **self** domain.-->
+<!--
 
 ## Disabling Dynamic Media  {#disabling-dynamic-media}
 
@@ -1006,6 +1007,8 @@ See [How to Work with Packages](/help/sites-administering/package-manager.md) fo
 
 1. Install the feature pack.
 -->
+
+<!--
 
 ### Configuring the default color profiles {#configuring-the-default-color-profiles}
 
