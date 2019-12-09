@@ -15,6 +15,7 @@ docset: aem65
 
 # Video{#video}
 
+<!--
 This section describes working with video in Dynamic Media.
 
 ## Quick Start: Videos {#quick-start-videos}
@@ -914,6 +915,7 @@ How you configure notification depends on whether you want notifications for You
 
 <!-- * For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. See [Configuring Email Notification in AEM](/help/sites-administering/notification.md). You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.-->
 
+<!--
 For YouTube publishing jobs, do the following:
 
 1. In AEM, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
@@ -1127,6 +1129,7 @@ You create a chapter list for your video in much the same way that you create ca
 You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
+-->
 
 ```xml
 WEBVTT
@@ -1146,6 +1149,7 @@ Cost-efficient access to rapidly evolving technology.
 
 In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter’s contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the video’s timeline.
 
+<!--
 Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
 
 See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
@@ -1314,4 +1318,4 @@ T**o add a custom video thumbnail**,
 1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
-
+-->

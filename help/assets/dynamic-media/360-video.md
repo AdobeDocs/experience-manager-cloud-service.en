@@ -14,6 +14,7 @@ docset: aem65
 
 # 360/VR Video {#vr-video}
 
+<!--
 360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.
 
 Dynamic Media - Scene7 mode includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.

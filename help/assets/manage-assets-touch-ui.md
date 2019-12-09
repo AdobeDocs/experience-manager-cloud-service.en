@@ -36,7 +36,7 @@ The following (space-separated list of) characters are not supported:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
-
+<!--
 You can upload various types of assets (including images, PDF files, RAW files, and so on) from your local folder or a network drive to AEM Assets.
 
 >[!NOTE]

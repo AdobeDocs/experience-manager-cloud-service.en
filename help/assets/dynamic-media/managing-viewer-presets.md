@@ -16,6 +16,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 
 # Managing Viewer Presets{#managing-viewer-presets}
 
+<!--
 A Viewer Preset is a collection of settings that determine how users view rich-media assets on their computer screens and mobile devices. If you are an administrator, you can create Viewer Presets. Settings are available for an array of viewer configuration options. For example, you can change the viewer display size or zoom behavior.
 
 For instructions on creating and customizing your own HTML5 viewer presets, see the *Adobe Scene7 HTML5 Viewer SDK*. The SDK is available on the IS publish server embedded in the SDK itself. Each library version has its own SDK documentation included.
@@ -591,3 +592,4 @@ If you have already published both the asset and the selected viewer, the **[!UI
 To get the URLs for Viewer Presets, see [Linking URLs to your Web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). See also [Embedding the Video Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 
 If you are using AEM as your WCM, you can add assets using the viewer presets directly on the page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+-->

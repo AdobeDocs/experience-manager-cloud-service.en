@@ -13,6 +13,7 @@ discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 
 # Working with Selectors {#working-with-selectors}
 
+<!--
 When working with an Interactive Image, Interactive Video, or Carousel Banner, you select assets and you select sites and products for hotspots and image maps to link to. When working with Image Sets, Spin Sets, and Multimedia Sets, you also select assets with the Asset Selector.
 
 This topic covers how to use the Product, Site, and Asset selectors, including the ability to browse, filter, sort within the selectors.
@@ -111,4 +112,4 @@ See also [Asset Picker](/help/assets/search-assets.md#assetselector) for more in
 1. Tap the check mark to select the asset. The asset is displayed.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-
+-->

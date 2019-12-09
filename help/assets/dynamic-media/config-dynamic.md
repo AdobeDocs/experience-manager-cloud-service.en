@@ -16,6 +16,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 
 # Configuring Dynamic Media - Hybrid mode{#configuring-dynamic-media-hybrid-mode}
 
+<!--
 Dynamic Media-Hybrid needs to be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).
 
 >[!NOTE]
@@ -195,6 +196,7 @@ In an AEM QuickStart WAR deployment, the port number and context path cannot be 
 >[!NOTE]
 >
 >In an [AEM Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self** domain generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you need to configure the **self** domain.-->
+<!--
 
 ## Disabling Dynamic Media  {#disabling-dynamic-media}
 
@@ -1006,6 +1008,8 @@ See [How to Work with Packages](/help/sites-administering/package-manager.md) fo
 1. Install the feature pack.
 -->
 
+<!--
+
 ### Configuring the default color profiles {#configuring-the-default-color-profiles}
 
 After you install the feature pack, you need to configure the appropriate default color profiles to enable color correction when requesting RGB or CMYK image data.
@@ -1329,3 +1333,4 @@ See [Delivering Dynamic Media Assets](/help/assets/dynamic-media/delivering-dyna
 ### WCM Dynamic Media and Interactive Media Components {#wcm-dynamic-media-and-interactive-media-components}
 
 WCM pages that reference Dynamic Media and Interactive Media components reference the delivery service.
+-->

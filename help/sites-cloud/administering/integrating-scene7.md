@@ -610,4 +610,4 @@ If you are having trouble integrating AEM with Dynamic Media Classic, see the fo
 >Importing assets from an existing Dynamic Media Classic company account may take a long time to show in AEM. Ensure that you designate a folder in Dynamic Media Classic that does not have too many assets (for example, the root folder will often have too many assets).
 >
 >If you would like to test drive the integration, you may want to have the root folder point to a subfolder only, instead of the entire company.
-
+-->

@@ -15,6 +15,7 @@ docset: aem65
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
+<!--
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You do this by entering Layout mode and enabling the Dynamic Media components. Then you can add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
 You add Dynamic Media assets directly to the page if you are using AEM as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
@@ -312,3 +313,4 @@ See [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md) for complet
 >* [Using Custom Video Thumbnail with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [Understanding Color Management with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
 >* [Using Image Sharpening with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-image-sharpening-feature-video-use.html)
+-->
