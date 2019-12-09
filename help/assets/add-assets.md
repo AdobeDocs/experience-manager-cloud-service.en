@@ -138,8 +138,8 @@ To upload larger number of files, especially if they exist in a nested folder hi
 
 In addition to web browser user interface, Experience Manager supports other clients on desktop. They also provide upload experience without the need to go to the web browser.
 
-* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from AEM in Adobe Photoshop, Illustrator and InDesign desktop applications. You can upload the currently open document into AEM directly from Adobe Asset Link UI in these creative applications.
-* [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, independent on their file type or native application that handles them. It is particularly useful for *uploading files in nested folder hierarchies* from your disk, as browser upload only supports uploading flat file lists.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from AEM in Adobe Photoshop, Adobe Illustrator, and Adobe InDesign desktop applications. You can upload the currently open document into AEM directly from Adobe Asset Link user interface from within these desktop applications.
+* [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, independent on their file type or native application that handles them. It is particularly useful to upload files in nested folder hierarchies from your local file system, as browser upload only supports uploading flat file lists.
 
 ## Additional processing {#additional-processing}
 
@@ -154,14 +154,14 @@ The following profiles are available:
 
 Additionally, if Dynamic Media is enabled in your environment:
 
-* [Image profiles](dynamic/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets
-* [Video profiles](dynamic/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters)
+* [Image profiles](dynamic-media/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets
+* [Video profiles](dynamic-media/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters)
 
 > [!NOTE]
 >
-> Dynamic Media cropping and other operations on assets are non-destructive, i.e., they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
+> Dynamic Media cropping and other operations on assets are non-destructive, that is, they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
 
-For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column.
+For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **[!UICONTROL Processing Profile]** column.
 
 ## Upload or ingest assets using APIs {#upload-using-apis}
 

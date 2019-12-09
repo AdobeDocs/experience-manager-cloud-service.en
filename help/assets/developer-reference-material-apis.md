@@ -148,8 +148,6 @@ Methods related to uploading or updating assets or renditions (any binary upload
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, like `AssetManager.createAsset(..)`
 
-Refer to [API documentation](LINK???) for a comprehensive list.
-
 >[!MORELIKETHIS]
 >
 >* [Open source aem-upload library](https://github.com/adobe/aem-upload)
