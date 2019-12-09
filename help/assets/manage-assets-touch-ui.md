@@ -31,7 +31,7 @@ The following (space-separated list of) characters are not supported:
 * An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Upload Assets {#uploading-assets}
--->
+
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.

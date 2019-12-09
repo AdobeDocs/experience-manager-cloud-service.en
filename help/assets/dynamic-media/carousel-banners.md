@@ -52,7 +52,7 @@ To get you up and running quickly:
 
    >[!NOTE]
    >
-   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. <!--See information on [setting up eCommerce](/help/sites-administering/generic.md).-->
+   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. <!--See information on [setting up eCommerce](/help/sites-administering/generic.md).
    >
    >
    >If you are an AEM Assets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
@@ -98,13 +98,13 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 Start by identifying dynamic variables used by the existing quick view implementation so that you can enter hotspots or image map data properly during the carousel set creation process in AEM Assets.
 
 When you add hotspots or image maps to a banner image in AEM Assets you need to assign a SKU and optional additional variables to each hotspot or image map. Such variables are used later to match hotspots or image maps with quick view content.
-
+-->
 >[!NOTE]
 >
 >If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. <!-- See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md).--> In addition, you can use the Interactive component and add it to your web page.
 >
 >If you are an AEM Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
-
+<!--
 It is important to properly identify the number and type of variables to associate with hotspot or image map data. Each hotspot or image map added to a banner image must carry enough information to unambiguously identify the product in the existing backend system. At the same time, each hotspot or image map should not include more data than is necessary. The reason is because that would make the data entry process overly complex and on-going hotspot or image map management more error-prone.
 
 There are different ways to identify a set of variables to use for hotspot or image map data.
