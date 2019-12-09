@@ -368,12 +368,12 @@ AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTRO
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the viewer preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
-   ![chlimage_1-221](/help/assets/assets/chlimage_1-221.png)
+   ![chlimage_1-221](/help/security/assets/chlimage_1-221.png)
 
 1. In the **[!UICONTROL limit]** property, change the **[!UICONTROL Value]**, which is set to 15 by default, to the desired number.
 1. Navigate to the viewer preset datasource at `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist/datasource`
 
-   ![chlimage_1-222](/help/assets/assets/chlimage_1-222.png)
+   ![chlimage_1-222](/help/security/assets/chlimage_1-222.png)
 
 1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tap **[!UICONTROL Save All]**.
