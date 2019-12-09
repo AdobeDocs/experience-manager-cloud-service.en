@@ -1,14 +1,14 @@
 ---
-title: Add your digital assets to the Experience Manager as a Cloud Service
-description: Add your digital assets to the Experience Manager as a Cloud Service
+title: Add your digital assets to Adobe Experience Manager as a Cloud Service
+description: Add your digital assets to Adobe Experience Manager as a Cloud Service
 
 ---
 
-# Add digital assets to Experience Manager {#add-assets-to-experience-manager}
+# Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Uploading files to Experience Manager turns them into digital assets that enrich the binary content of the file with rich metadata, smart tags, renditions, and other Digital Asset Management services. You can upload various types of files (including images, PDF files, RAW files, and so on) from your local folder or a network drive to Experience Manager Assets.
+Uploading your digital files to Adobe Experience Manager enriches the binary content of the file with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files (including images, PDF files, raw files, and so on) from your local folder or a network drive to Experience Manager Assets.
 
-A number of upload methods is provided. In addition to the most commonly used browser upload, other methods of adding assets to the Experience Manager repository exist, including desktop clients, like Adobe Asset Link or Experience Manager desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as AEM extensions.
+A number of upload methods are provided. In addition to the most commonly used browser upload, other methods of adding assets to the Experience Manager repository exist, including desktop clients, like Adobe Asset Link or Experience Manager desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as AEM extensions.
 
 We will focus on upload methods for end users here, and provide links to articles describing technical aspects of asset upload and ingestion using Experience Manager APIs and SDKs.
 
@@ -19,7 +19,7 @@ You can also choose to have additional processing done on the uploaded assets. A
 > [!NOTE]
 >
 > Experience Manager as a cloud service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
-> 
+>
 > Upload code that is customized or extended by customers technical teams needs to use the new upload APIs and protocols.
 
 ## Upload assets {#upload-assets}
@@ -78,6 +78,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 > If you need to upload nested folder hierarchies to AEM, please see [Bulk upoad of assets](#bulk-upload)
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
+
 ### Serial uploads {#serialuploads}
 
 Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your AEM Assets instance. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests AEM Assets can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, AEM assets may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
@@ -99,7 +100,7 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 
 If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
-You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, croppings, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number 1 appended to its name.
+You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number 1 appended to its name.
 
 ![chlimage_1-213](assets/chlimage_1-213.png)
 
@@ -126,19 +127,19 @@ However, the following (space-separated list of) characters are not supported:
 
 To upload larger number of files, especially if they exist in a nested folder hierarchy on disk, the following approaches can be used:
 
-* Use a custom upload script or tool that leverages [asset upload APIs](developer-reference-material-apis.md#asset-upload-technical). Such a custom tool can add additional handling of assets (e.g., translating metadata or renaming the files) if required as a part of the business process
-* Use [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies
+* Use a custom upload script or tool that leverages [asset upload APIs](developer-reference-material-apis.md#asset-upload-technical). Such a custom tool can add additional handling of assets (for example, translate metadata or rename files), if required.
+* Use [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies.
 
 > [!NOTE]
 >
-> Please note that bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager Cloud Service calls for careful planning, consideration and choice of tooling. Please refer to the overall [deployment guide](help/implementing/deploying/deploying.md) for guidance on content migration approaches.
+> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager as a Cloud Service requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/deploying.md) for guidance on content migration approaches.
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 
-In addition to web browser user interface, Experience Manager supports other clients on desktop. They also provide uplaod experience without the need to go to the web browser.
+In addition to web browser user interface, Experience Manager supports other clients on desktop. They also provide upload experience without the need to go to the web browser.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from AEM in Adobe Photoshop, Illustrator and InDesign desktop applications. You can upload the currently open document into AEM directly from Adobe Asset Link UI in these creative applications.
-* [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) simplifies work with assets from Experience Manager on desktop, independend on their file type or native application that handles them. It is particularly useful for *uploading files in nested folder hierarchies* from your disk, as browser upload only supports uploading flat file lists.
+* [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, independent on their file type or native application that handles them. It is particularly useful for *uploading files in nested folder hierarchies* from your disk, as browser upload only supports uploading flat file lists.
 
 ## Additional processing {#additional-processing}
 
@@ -151,14 +152,14 @@ The following profiles are available:
 * [Metadata profiles](metadata-profiles.md) allow you to apply default metadata properties to assets uploaded into that folder
 * [Processing profiles](asset-microservices-configure-and-use.md#processing-profiles) allow you to apply rendition processing and generate renditions in addition to the default ones
 
-Additionaly, if Dynamic Media is enabled in your environment:
+Additionally, if Dynamic Media is enabled in your environment:
 
 * [Image profiles](dynamic/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets
 * [Video profiles](dynamic/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters)
 
 > [!NOTE]
 >
-> Dynamic Media cropping and other operations on assets are non-destructive, i.e., they do not change the uploaded original, but insted provide parameters for cropping or media transformation to be done when delivering the assets
+> Dynamic Media cropping and other operations on assets are non-destructive, i.e., they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column.
 
@@ -168,7 +169,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 >[!MORELIKETHIS]
 >
->[Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>[Adobe Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
 >[Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >[Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >[Technical reference for asset upload](developer-reference-material-apis.md#asset-upload-technical)
