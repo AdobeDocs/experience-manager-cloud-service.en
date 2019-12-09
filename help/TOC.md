@@ -35,11 +35,11 @@ solution-title: Experience Cloud
   + [Overview and what's new](/help/release-notes/assets-as-cloud-service.md)
   + [Compare with AEM](/help/assets/compare-with-aem.md)
   + [Architecture](/help/assets/architecture.md)
-  + [Move to Cloud Service](/help/assets/move-to-cloud-service.md)
   + [Supported file formats](/help/assets/file-format-support.md)
-  + [Overview of microservices](/help/assets/asset-microservices-overview.md)
+  + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + [Configure and use microservices](/help/assets/asset-microservices-configure-and-use.md)
   + [Know workspace interface](/help/assets/understand-interface-workspace.md)
+  + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
   + Content Fragments {#content-fragments}
@@ -90,8 +90,6 @@ solution-title: Experience Cloud
     + [DHTML Viewer End-of-Life FAQs](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
     + [Flash Viewers End-of-Life Notice](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/scene7-http2faq.md)
-  + Reference Material for Assets {#reference-material-for-assets}
-    + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
 + Implementing for AEM as a Cloud Service {#implementing}
   + Using Cloud Manager {#using-cloud-manager}
     + [Configure your CI/CD Pipeline](implementing/cloud-manager/configure-pipeline.md)
@@ -105,8 +103,6 @@ solution-title: Experience Cloud
     + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
   + Dispatcher in the Cloud {#dispatcher-cloud}
     + [Dispatcher in the Cloud](implementing/dispatcher/dispatcher-cloud.md)
-+ Security for AEM as a Cloud Service {#security}
-    + [IMS Support for AEM as a Cloud Service](security/ims-support-for-aem-as-a-cloud-service.md)
 + Implementing Connectors for AEM as a Cloud Service {#connectors}
   + [Implementing an AEM Connector](connectors/implement.md)
   + [Submitting an AEM Connector](connectors/submit.md)

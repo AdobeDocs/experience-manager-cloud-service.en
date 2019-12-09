@@ -14,7 +14,7 @@ The following terms are used in relation to Adobe Experience Manager (AEM) as a 
 |Product|Description|
 |---|---|
 |AEM as a Cloud Service|The cloud-native way of leveraging the AEM applications|
-|AEM Assets as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Assets application.|
+|AEM Assets as a Cloud Service| Digital Asset Management (DAM) capabilities as cloud-native, scalable solution, to ingest, process, and manage your digital assets, while integrating with the wider Adobe Experience Cloud and Adobe Creative Cloud ecosystem. |
 |AEM Sites as a Cloud Service|An instance of the AEM as a Cloud Service with the AEM Sites application.|
 
 ## Instances and Pipelines {#instances-and-pipelines}
@@ -33,7 +33,7 @@ The following terms are used in relation to Adobe Experience Manager (AEM) as a 
 |Term|Description|
 |---|---|
 |AEM Image|A deployable artifact that contains the AEM product code together with the customer code.|
-|Asset microservices|Microservices to process digital assets, for example to create renditions.|
+| Asset microservices | Cloud-based digital asset processing services that cater to various asset processing use cases, such as rendition generation, PDF processions, subasset handling, text extraction, and so on. See [asset microservices overview](/help/assets/asset-microservices-overview.md), for more information. |
 |Cloud Manager Git Repository|Where customers store their code and configuration settings.|
 |Cloud Provider|AEM as a Cloud Service supports both Azure and AWS as cloud providers.|
 |Content Repository|Where the content is persisted.|

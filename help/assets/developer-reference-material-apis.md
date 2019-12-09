@@ -30,6 +30,7 @@ At a high level, the algorithm for uploading a binary is as follows:
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
+
 ![Overivew of direct binary upload protocol](assets/add-assets-technical.png)
 
 Important differences compared to earlier versions of AEM include:
@@ -52,6 +53,7 @@ This section provides technical details explaining the new direct upload mechani
 The first step is to submit an HTTP POST request to the folder where the asset should be created or updated; include the selector `.initiateUpload.json` to indicate that the request is to begin a binary upload.
 
 Example, assuming the host is `author.acme.com`, and path to the folder where the asset should be created is `/assets/folder`:
+
 ```
 POST https://author.acme.com/content/dam/assets/folder.initiateUpload.json
 ````
@@ -64,6 +66,7 @@ The content type of the request body should be `application/x-www-form-urlencode
 Note that a single request can be used to initiate uploads for multiple binaries, as long as each binary contains the required fields.
 
 If successful, the request will respond with a 201 status code and a body containing JSON data in the following format:
+
 ```
 {
     "completeURI": "(string)",
@@ -129,23 +132,23 @@ If successful, the instance will respond with a 200 status code.
 
 To learn more about the upload algorithms or to build your own upload scripts and tools, Adobe provides open source libraries and tools as a starting points:
 
-* [aem-upload library](https://github.com/adobe/aem-upload)
-* [commandline tool](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open source aem-upload library](https://github.com/adobe/aem-upload)
+* [Open source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
 
-### Deprectaed asset upload APIs
+### Deprecated asset upload APIs {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK please review / update the list of deprecated APIs below -->
 
-Please note that for Experience Manager as a Cloud Service only the new upload APIs are supported. Previous upload APIs are deprecated as they depend on uploading binaries to AEM.
+>[!NOTE]
+>
+>For Experience Manager as a Cloud Service only the new upload APIs are supported. APIs from Experience Manager 6.5 are deprecated as those depend on uploading binaries to AEM.
 
 Methods related to uploading or updating assets or renditions (any binary upload) are deprecated in the following APIs:
 
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, like `AssetManager.createAsset(..)`
 
-Please refer to [API documentation](LINK???) for a comprehensive list.
-
 >[!MORELIKETHIS]
 >
->[Open source aem-upload library](https://github.com/adobe/aem-upload)
->[Open source commandline tool](https://github.com/adobe/aio-cli-plugin-aem)
+>* [Open source aem-upload library](https://github.com/adobe/aem-upload)
+>* [Open source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)

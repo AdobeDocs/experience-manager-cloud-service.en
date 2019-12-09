@@ -29,50 +29,47 @@ Info at https://wiki.corp.adobe.com/pages/viewpage.action?pageId=1608804750
 
 The table below compares the capabilities available in Experience Manager Assets on-premise or as Managed Services with those available in Experience Manager as a Cloud Service.
 
-|Capability | Assets on-premise or as Managed Services | Assets as a Cloud Service|
-|---|---|---|
-|Adobe Creative Cloud folder sharing |Yes | Yes|
-|Desktop app 2.0 | | |
-|Adobe Asset Link | | |
-|Image presets | | |
-|Image processing profile | | |
-|Metadata processing profile | | |
-|Metadata schemas| Yes | Yes |
-|Publish settings | | |
-|Reporting | | |
-|Assets Insights about usage | | |
-|Search facets| | |
-|Users, groups, and permissions | | |
-|Video processing profile (encoding) | | |
-|Viewer presets | | |
-|ZIP extraction on upload | | |
-|DRM | | |
-|File support | | |
-|Rendition upload | | |
-|View all renditions | | |
-|Browse (all views) | | |
-|Collections and Lightbox | | |
-|Download and export | | |
-|Interactive media (video, banners, carousels) | | |
-|Metadata | | |
-|Multilingual assets | | |
-|Smart translation search | | |
-|Organize assets | | |
-|Preview | | |
-|Print Catalog producer| | |
-|Reprocessing | | |
-|Resumable HTTP File Upload| | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| Capability |  Assets as a Cloud Service|
+|---|---|
+|Adobe Creative Cloud folder sharing |Yes |
+|Desktop app 2.0 | |
+|Adobe Asset Link | |
+|Image presets | |
+|Image processing profile | |
+|Metadata processing profile | |
+|Metadata schemas| Yes |
+|Publish settings | |
+|Reporting | |
+|Assets Insights about usage | |
+|Search facets| |
+|Users, groups, and permissions | |
+|Video processing profile (encoding) | |
+|Viewer presets | |
+|ZIP extraction upload | |
+|DRM | |
+|File support | |
+|Rendition upload | |
+|View all renditions | |
+|Browse (all views) | |
+|Collections and Lightbox | |
+|Download and export | |
+|Interactive media (video, banners, carousels) | |
+|Metadata | |
+|Multilingual assets | |
+|Smart translation search | |
+|Organize assets | |
+|Preview | |
+|Print Catalog producer| |
+|Reprocessing | |
+|Resumable HTTP File Upload| |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+|ASD | ASD|
+| | |
 
 ## Features deprecated in Assets as a Cloud Service {#deprecated-features}
 
