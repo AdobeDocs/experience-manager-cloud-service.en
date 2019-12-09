@@ -327,7 +327,7 @@ You can revert to a specific version of your fragment:
 Content Fragments must be published for use in the publish enviroment. They can be published:
 
 * After creation; from the **Assets** console.
-* When you publish a page that uses the fragment; the fragment will be listed in the page references. <!-- When you [publish a page that uses the fragment](/help/sites-authoring/content-fragments.md#publishing); the fragment will be listed in the page references. -->
+* When you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
 >
