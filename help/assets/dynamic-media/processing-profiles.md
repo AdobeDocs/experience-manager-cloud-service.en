@@ -125,7 +125,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
 
-   ![CRXDE Lite](/help/assets/assets/workflow-models9.png)
+   ![CRXDE Lite](/help/security/assets/workflow-models9.png)
 
 1. On the right side of the CRXDE Lite page, in the lower portion, enter the following name, type, and value in its respective field:
     * **[!UICONTROL Name]**: `reprocess-batch-size`
@@ -133,7 +133,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
 1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
 
-    ![Saving the new property](/help/assets/assets/workflow-models10.png)
+    ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
