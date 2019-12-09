@@ -103,8 +103,6 @@ solution-title: Experience Cloud
     + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
   + Dispatcher in the Cloud {#dispatcher-cloud}
     + [Dispatcher in the Cloud](implementing/dispatcher/dispatcher-cloud.md)
-+ Security for AEM as a Cloud Service {#security}
-    + [IMS Support for AEM as a Cloud Service](security/ims-support-for-aem-as-a-cloud-service.md)
 + Implementing Connectors for AEM as a Cloud Service {#connectors}
   + [Implementing an AEM Connector](connectors/implement.md)
   + [Submitting an AEM Connector](connectors/submit.md)
