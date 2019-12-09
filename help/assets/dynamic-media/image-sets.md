@@ -29,7 +29,7 @@ For example, suppose you want to present images of caps with different color bil
 
 >[!NOTE]
 >
->For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-assets-touch-ui.md).
+>For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-digital-assets.md).
 
 ## Quick Start: Image Sets {#quick-start-image-sets}
 
@@ -78,7 +78,7 @@ To get you up and running quickly:
 
    See [Linking an Image Set to a web page](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
 
-To edit Image Sets, see [editing Image Sets.](#editing-image-sets) In addition, you can view and edit [Image Set properties](/help/assets/manage-assets-touch-ui.md#editing-properties).
+To edit Image Sets, see [editing Image Sets.](#editing-image-sets) In addition, you can view and edit [Image Set properties](/help/assets/manage-digital-assets.md#editing-properties).
 
 If you have issues creating sets, see Images and Sets in [Troubleshooting Dynamic Media - Scene7 mode](/help/assets/dynamic-media/troubleshoot-dms7.md#images-and-sets).
 
@@ -86,7 +86,7 @@ If you have issues creating sets, see Images and Sets in [Troubleshooting Dynami
 
 Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
-You can upload images for Image Sets as you would [upload any other asset in Assets](/help/assets/manage-assets-touch-ui.md#uploading-assets).
+You can upload images for Image Sets as you would [upload any other asset in Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ### Preparing Image Set assets for upload {#preparing-image-set-assets-for-upload}
 

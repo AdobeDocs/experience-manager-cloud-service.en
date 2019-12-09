@@ -91,7 +91,7 @@ To get you up and running quickly:
     * [Add a carousel banner to your website in AEM
       ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)If you are an AEM Sites customer you can add the carousel set directly to the page in AEM, using the Interactive Media component.
 
-If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](/help/assets/manage-assets-touch-ui.md#editing-properties).
+If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Identifying Hotspot and Image Map Variables {#identifying-hotspot-and-image-map-variables}
 
@@ -179,7 +179,7 @@ Consider the following examples of quick view URLs and their resulting hotspot o
 
 If you have already uploaded the images that you want to use, advance to the next step, [Creating Carousel Sets](#creating-carousel-sets). Please note the images used in the carousel must be uploaded after Dynamic Media has been enabled.
 
-To upload image banners, see [Uploading assets](/help/assets/manage-assets-touch-ui.md).
+To upload image banners, see [Uploading assets](/help/assets/manage-digital-assets.md).
 
 ## Creating Carousel Sets {#creating-carousel-sets}
 

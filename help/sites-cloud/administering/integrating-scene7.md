@@ -538,7 +538,7 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
 1. Under the Name column, find and tap **[!UICONTROL Adobe CQ Dynamic Media Classic Asset MIME type Service]** to edit the configuration.
 1. In the Mime Type Mapping area, tap any plus sign (+) to add a MIME type.
 
-   See [Supported MIME types](/help/assets/assets-formats.md#supported-mime-types).
+   See [Supported MIME types](/help/assets/file-format-support.md).
 
 1. In the text field, type the new MIME type name.
 

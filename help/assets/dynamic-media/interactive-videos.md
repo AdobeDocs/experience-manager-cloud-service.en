@@ -238,14 +238,14 @@ See [Creating a New Viewer Preset](/help/assets/dynamic-media/managing-viewer-pr
 
 If you have already uploaded your video and thumbnail assets, proceed to [Adding interactivity to your video](#adding-interactivity-to-your-video).
 
-If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/manage-assets-touch-ui.md#deleting-assets).
+If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/manage-digital-assets.md#deleting-assets).
 
 To upload a video and its associated thumbnail assets:
 
 1. Upload the video and associated thumbnail assets to the folder or folders you want.
 
-   See [Uploading assets](/help/assets/manage-assets-touch-ui.md).
-   See [Uploading assets using FTP job scheduling](/help/assets/manage-assets-touch-ui.md).
+   See [Uploading assets](/help/assets/manage-digital-assets.md).
+   See [Uploading assets using FTP job scheduling](/help/assets/manage-digital-assets.md).
 
    Now add interactivity to your video.
 

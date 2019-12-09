@@ -154,7 +154,7 @@ The actual appearance and handling is dependent on the device type you are using
 >
 >A mobile device is detected when the width is less than 1024px; i.e. also on a small desktop window.
 
-If you need to quickly make a change to an asset, you can start the asset editor directly from the asset browser by clicking the edit icon shown next to the asset's name. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-assets-touch-ui.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+If you need to quickly make a change to an asset, you can start the asset editor directly from the asset browser by clicking the edit icon shown next to the asset's name. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
 
 ![Asset edit button](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
