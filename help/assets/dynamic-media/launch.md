@@ -138,7 +138,7 @@ To track Dynamic Media viewers in AEM Sites, all steps listed under the [Configu
 
 Following proper configuration, any Dynamic Media viewer that you add to a Sites page, using a WCM component supported by Dynamic Media, automatically tracks data to Adobe Analytics, or Adobe Analytics for Video, or both.
 
-See [Adding Dynamic Media Assets to Pages using Adobe Sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.html).
+See [Adding Dynamic Media Assets to Pages using Adobe Sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 ### Tracking Dynamic Media viewers using embed code {#tracking-dynamic-media-viewers-using-embed-code}
 
@@ -150,7 +150,7 @@ Following proper configuration, you can add Adobe Launch support to a web page w
 
 See [Add the Launch Embed Code](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) to learn more about how to use Adobe Launch library embed code.
 
-See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
+See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md) to learn more about how to use the embed code feature of AEM Dynamic Media.
 
 **To track Dynamic Media viewers using embed code**:
 
@@ -467,7 +467,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    The following screenshot is an example of a Custom Traffic variable ( **[!UICONTROL prop30]**) for tracking a asset name used by the viewer:
 
-   ![image2019-6-26_23-6-59](assets/image2019-6-26_23-6-59.png)
+   ![image2019-6-26_23-6-59](/help/assets/dynamic-media/assets/image2019-6-26_23-6-59.png)
 
 1. At the bottom of the variables list, click **[!UICONTROL Save]**.
 
@@ -481,7 +481,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    Visiting this report right after **[!UICONTROL Viewer asset (prop 30)]** creation shows no data; that is expected at this point in the integration.
 
-   ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
+   ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
 ## Configuring Adobe Launch for the integration {#configuring-adobe-launch-for-the-integration}
 

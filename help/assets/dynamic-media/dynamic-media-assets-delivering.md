@@ -22,5 +22,5 @@ With Dynamic Media you have several options:
 
 For more information, see the following topics:
 
-* [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/dynamic-media-assets-adding-to-page.md)
+* [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 

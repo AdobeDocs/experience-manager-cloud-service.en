@@ -45,7 +45,8 @@ To get you up and running quickly:
 
    To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets]**. Then, add images and click **[!UICONTROL Save]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). 
+   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+
    >[!IMPORTANT]
    >
    >Batch sets are created by the IPS (Image Production System) as part of asset ingestion and are available only in Dynamic Media - Scene7 mode.
@@ -110,7 +111,7 @@ You can create Image Sets through the user interface or via the API. This sectio
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+>You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >**Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion and are available only in Dynamic Media - Scene7 mode.
 
 When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after they have been added.
@@ -167,7 +168,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 ## Viewing Image Sets {#viewing-image-sets}
 
-You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 >[!IMPORTANT]
 >

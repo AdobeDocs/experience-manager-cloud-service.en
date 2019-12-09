@@ -97,7 +97,7 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dms7.md#configuring-asset-processing).
 
-See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+See [Profiles for Processing Metadata, Images, and Videos](/help/assets/dynamic-media/processing-profiles.md).
 
 See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
