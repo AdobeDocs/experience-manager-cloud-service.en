@@ -145,7 +145,7 @@ For in-between content you can:
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content). 
+If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#in-between-content-when-page-authoring-with-content-fragments). 
 
 >[!NOTE]
 >
@@ -178,5 +178,5 @@ Other changes, such as move, copy, delete must be made in the fragment editor.
 
 Fragments need to be published so they can used used on your published web pages:
 
-* A fragment can be published after [creating the fragment in the Assets console](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment). 
+* A fragment can be published after [creating the fragment in the Assets console](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment). 
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
