@@ -35,13 +35,14 @@ solution-title: Experience Cloud
   + [Overview and what's new](/help/release-notes/assets-as-cloud-service.md)
   + [Compare with AEM](/help/assets/compare-with-aem.md)
   + [Architecture](/help/assets/architecture.md)
-  + [Move to Cloud Service](/help/assets/move-to-cloud-service.md)
   + [Supported file formats](/help/assets/file-format-support.md)
-  + [Overview of microservices](/help/assets/asset-microservices-overview.md)
+  + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + [Configure and use microservices](/help/assets/asset-microservices-configure-and-use.md)
   + [Know workspace interface](/help/assets/understand-interface-workspace.md)
+  + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
+  + [](/help/assets/.md)
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
@@ -90,8 +91,6 @@ solution-title: Experience Cloud
     + [DHTML Viewer End-of-Life FAQs](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
     + [Flash Viewers End-of-Life Notice](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/scene7-http2faq.md)
-  + Reference Material for Assets {#reference-material-for-assets}
-    + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
 + Implementing for AEM as a Cloud Service {#implementing}
   + Using Cloud Manager {#using-cloud-manager}
     + [Configure your CI/CD Pipeline](implementing/cloud-manager/configure-pipeline.md)

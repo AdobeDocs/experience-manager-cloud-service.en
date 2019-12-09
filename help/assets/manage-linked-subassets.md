@@ -25,7 +25,7 @@ You can reference existing AEM assets from within an Adobe Illustrator file.
 
 1. Using [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), mount AEM Assets repository as a drive on your local machine. Within the mounted drive, navigate to the location of the asset that you want to reference.
 1. Drag the asset from the mounted drive to the Illustrator file.
-1. Save the Illustrator file to the mounted drive, or [upload](/help/assets/manage-assets-touch-ui.md#uploading-assets) to the AEM repository.
+1. Save the Illustrator file to the mounted drive, or [upload](/help/assets/manage-digital-assets.md#uploading-assets) to the AEM repository.
 1. After the worflow completes, go to the asset details page for the asset. The references to existing AEM assets are listed under **Dependencies** in the **References** column.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
@@ -68,7 +68,7 @@ This procedure is similar to [Adding AEM assets as references in Adobe Illustrat
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Save in Photoshop file to the mounted drive or or [upload](/help/assets/manage-assets-touch-ui.md#uploading-assets) to the AEM repository.
+1. Save in Photoshop file to the mounted drive or or [upload](/help/assets/manage-digital-assets.md#uploading-assets) to the AEM repository.
 1. After the worflow completes, the references to existing AEM assets are listed in the asset details page.
 
    To view the referenced assets, close the [Rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) in the asset details page.

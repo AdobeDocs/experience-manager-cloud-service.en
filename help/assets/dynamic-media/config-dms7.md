@@ -219,7 +219,7 @@ You can define which asset types should be processed by Dynamic Media and custom
 * Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated Postscript file (.EPS).
 * Note: Video Profiles and Imaging Profiles can be used to define processing of videos and images, respectively.
 
-See [Uploading Assets](/help/assets/manage-assets-touch-ui.md#uploading-assets).
+See [Uploading Assets](/help/assets/add-assets.md).
 
 **To configure asset processing**
 
