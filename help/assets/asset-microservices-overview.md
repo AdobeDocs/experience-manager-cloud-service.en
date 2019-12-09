@@ -30,7 +30,7 @@ Asset microservices provide a scalable and resilient processing of assets using 
 
 Asset microservices help to avoid the need for third-party rendering tools (like ImageMagick) and simplify configuration of the system, while providing out-of-the-box functionality for common file types.
 
-## High-level architecture
+## High-level architecture {#asset-microservices-architecture}
 
 A high-level architecture diagram depicts the key elements of asset ingestion and processing and flow of assets across the system.
 
