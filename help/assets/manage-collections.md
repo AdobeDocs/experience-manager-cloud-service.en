@@ -16,9 +16,9 @@ You can share multiple collections with a user. Each collection contains referen
 
 Collections are of the following types, based on the way they collate assets:
 
-* A collection that contains a static reference list of assets, folders, and other collections
+* A collection that contains a static reference list of assets, folders, and other collections.
 
-* A Smart collection that dynamically includes assets based on a search criteria
+* A Smart collection that dynamically includes assets based on a search criteria.
 
 ## Navigate the collections console {#navigate-the-collections-console}
 

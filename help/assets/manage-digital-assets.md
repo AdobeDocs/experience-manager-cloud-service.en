@@ -28,10 +28,15 @@ The following (space-separated list of) characters are not supported:
 
 ## Upload Assets {#uploading-assets}
 
-<!-- TBD the following:
-Move this section into a new article. CQDOC-14874 ticket is created for this.
+Please refer to [adding digital assets to Experience Manager](add-assets.md).
+
+<!-- Content of this section was moved into a new article - add-assets.md. Content was cleaned up for Skyline there.
+
+@asgupta - feel free to remove this section after sanity check when working on my PR
+
+CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
--->
+
 
 You can upload various types of assets (including images, PDF files, RAW files, and so on) from your local folder or a network drive to AEM Assets.
 
@@ -598,6 +603,8 @@ Some limitations of the feature are:
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
 * When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing the latest service pack.
 
+-->
+
 ## Preview Assets {#previewing-assets}
 
 To preview an asset, follow these steps.
@@ -985,7 +992,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->In the [Collections console](/help/assets/manage-collections.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+>In the [Collections console](/help/assets/manage-collections.md#navigate-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
 
 >[!NOTE]
 >
