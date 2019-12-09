@@ -31,6 +31,8 @@ If we were to provide Nui API documentation, then use https://git.corp.adobe.com
 
 ## Use asset microservices to process assets {#use-asset-microservices}
 
+## Processing profiles {#processing-profiles}
+
 
 >[!MORELIKETHIS]
 >
