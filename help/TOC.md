@@ -42,7 +42,6 @@ solution-title: Experience Cloud
   + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
-  + [](/help/assets/.md)
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)

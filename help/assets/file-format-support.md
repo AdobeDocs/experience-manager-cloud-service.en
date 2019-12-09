@@ -142,6 +142,9 @@ Assets as a Cloud Service supports XMP format in these audio formats: AIF, ASF, 
 |    WMV    |    ![available icon](assets/do-not-localize/checkmark_icon.png)    |    ![available icon](assets/do-not-localize/checkmark_icon.png)    |    ![available icon](assets/do-not-localize/checkmark_icon.png)    |    ![available icon](assets/do-not-localize/checkmark_icon.png)    |    ![available icon](assets/do-not-localize/checkmark_icon.png)    |    ![available icon](assets/do-not-localize/checkmark_icon.png)    |    ![available icon](assets/do-not-localize/checkmark_icon.png)    |
 
 <!-- TBD: Some items from https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedinputvideoformatsforDynamicMediatranscoding may be applicable.
+
+Bring more parity with https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedMIMEtypes.
+https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#Supportedmultimediaformats
 -->
 
 >[!MORELIKETHIS]

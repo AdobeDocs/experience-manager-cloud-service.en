@@ -235,7 +235,7 @@ See [Uploading Assets](/help/assets/add-assets.md).
 
     * double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets will be synched to Dynamic Media for processing. If you wish to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-    * double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/assets-formats.md#supported-mime-types) for a list of permitted processing parameter values you can use for a given mime type.
+    * double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given mime type.
 
 1. Do one of the following:
 

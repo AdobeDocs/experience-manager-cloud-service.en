@@ -47,7 +47,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
         * [Upload your videos](/help/assets/manage-video-assets.md#uploadingandpreviewingvideoassets).
-        * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
+        * Learn more about [Supported input file formats](/help/assets/file-format-support.md#supported-multimedia-formats).
 
     * Monitor how [video encoding is progressing](#monitoring-video-encoding-and-youtube-publishing-progress) either from the asset or workflow view.
 
