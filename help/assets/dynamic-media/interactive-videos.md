@@ -15,7 +15,7 @@ docset: aem65
 
 # Interactive Videos{#interactive-videos}
 
-<!--
+
 You can easily create interactive videos&ndash;also know as shoppable videos&ndash;that drive conversion directly from the video. Customer engagement with the video takes place in a panel alongside the video player where related service, information, or product thumbnails are scrolled into view based on what is featured in the video. Customers can tap the thumbnail and be linked directly to the service, or add the item to a shopping cart for immediate purchase, or be linked to a web page for more information.
 
 When the video ends, a visual summary of all offerings is displayed to drive a call to action. Customers have another opportunity to tap the item they want. Actionable and specific experiences such as these increase customer engagment and conversion.
@@ -24,19 +24,29 @@ See also [Interactive Images](/help/assets/dynamic-media/interactive-images.md).
 
 ## Interactive video in action {#interactive-video-in-action}
 
-To see an interactive, shoppable video in action, click [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scroll to the **[!UICONTROL Shoppable Media]** heading on the page, then click the shoppable video.
+To see an interactive, shoppable video in action, click [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scroll to the **[!UICONTROL Shoppable Media]** heading on the page, then click the shoppable video to begin playback.
 
 * During playback, as products are used in the video, the identical product appears on the right as a thumbnail image.
 
 * Click the thumbnail to pause the video and open the product's quickview. For example, click the KitchenAid thumbnail image in the video to experience a 360-degree spin view of the mixer, or zoom in to see mixer details.
+
+See also [Using Interactive Video with Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+
+<!-- 
+
+There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+
 -->
-<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
-<!--
-![A frame from an interactive, shoppable video](assets/chlimage_1-126.png) *A video frame capture from an interactive, shoppable video.*
+
+<!-- 
+
+[A frame from an interactive, shoppable video](assets/chlimage_1-126.png) *A video frame capture from an interactive, shoppable video.*
+
+-->
 
 >[!NOTE]
 >
->If you create an interactive video to launch a web page when a user clicks a thumbnail image, some devices will block the pop-up web page from opening. In such cases, you must change the pop-up blocker setting on the device. For example, on an Apple iPhone 6, tap **[!UICONTROL Settings** &gt; **Safari** &gt; **Block Pop-ups**, then slide the control to **[!UICONTROL Off**. Now, when you play an interactive video and click a thumbnail, you are prompted if you want to open the pop-up. If you accept, the web page opens.
+>If you create an interactive video to launch a web page when a user clicks a thumbnail image, some devices will block the pop-up web page from opening. In such cases, you must change the pop-up blocker setting on the device. For example, on an Apple iPhone 6, tap **[!UICONTROL Settings &gt; Safari &gt; Block Pop-ups]**, then slide the control to **[!UICONTROL Off]**. Now, when you play an interactive video and click a thumbnail, you are prompted if you want to open the pop-up. If you accept, the web page opens.
 
 ### Watch how interactive videos are created {#watch-how-interactive-videos-are-created}
 
@@ -45,32 +55,26 @@ Watch a 7 minute 30 second walkthrough on [how interactive videos are created](h
 
 ### Adobe Customer Success Webinar {#adobe-customer-success-webinar}
 
-The "Using Interactive Video, Link Sharing, and YouTube sharing in AEM Assets" webinar teaches you how to use interactive video and other features to tie conversion driven events into your video marketing content.
-
->[!NOTE]
->
->[Using Interactive Video, Link Sharing, and YouTube sharing in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+The [Using Interactive Video, Link Sharing, and YouTube sharing in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) webinar teaches you how to use interactive video and other features to tie conversion driven events into your video marketing content.
 
 ## Quick Start: Interactive Videos {#quick-start-interactive-videos}
 
 The following step-by-step workflow description is designed to help you get up and running quickly with interactive videos in Dynamic Media.
 
-Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on this starting demo web page that *does not* have interactivity added to it yet:
-
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on this [starting demo web page that *does not* have interactivity added to it yet](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html).
 
 The **Examples** help to illustrate the steps of integrating interactive videos on your own website.
 
-When you finish the tutorial in the last Example section, the final demo web page with the fully integrated interactive video looks like the following:
+When you finish the tutorial in the last Example section, [this is what your final demo web page with the fully integrated interactive video will look like](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html).
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+
 
 Interactive video steps:
 
 1. **(Optional) Identifying Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identifying Quickview variables](#optional-identifying-quickview-variables).
-   *Note that this step is only required if all the following are true*:
+   **This step is only required if all the following are true**:
    • You want to add interactivity to your video by triggering to quickviews.
-   • Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+   • Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop.
 
 1. **(Optional) Creating an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.
    Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead.
