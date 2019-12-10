@@ -8,7 +8,9 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service Sites s
 # AEM Sites Readiness for Data Protection and Data Privacy Regulations {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
+>
 >THIS PAGE IS FOR INTERNAL DOCUMENTATION ONLY.
+>
 >THE CONTENT OF THIS PAGE IS CURRENTLY SUBJECT TO THE LEGAL REVIEW, AND IS ALSO WAITING FOR CONFIRMATION ON CERTAIN TECHNICAL DETAILS.
 
 >[!WARNING]
