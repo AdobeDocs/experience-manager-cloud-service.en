@@ -15,10 +15,6 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 
 When uploading images, you can automatically crop the image upon upload by applying an image profile to the folder.
 
->[!NOTE]
->
->Smart Crop is available only in Dynamic Media - Scene7 mode.
-
 ## Crop options {#crop-options}
 
 You have two image cropping options to choose from and an option for automating the creation of color and image swatches.
@@ -95,7 +91,7 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dm.md#configuring-asset-processing).
 
 See [Profiles for Processing Metadata, Images, and Videos](/help/assets/dynamic-media/processing-profiles.md).
 
@@ -184,10 +180,6 @@ You can reprocess assets in a folder that already has an existing video profile 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Editing the smart crop or smart swatch of a single image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
-
->[!NOTE]
->
->Smart Crop is available only in Dynamic Media - Scene7 mode.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 

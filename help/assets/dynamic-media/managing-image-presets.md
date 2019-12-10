@@ -49,9 +49,7 @@ You manage your image presets in AEM by tapping or clicking the AEM logo to acce
 >
 >Any image presets you create are also available as dynamic renditions when you preview or deliver assets.
 >
->In *Dynamic Media - Scene7 mode*, you do *not* need to publish image presets as image presets are automatically published.
->
->In *Dynamic Media - Hybrid mode*, you need to manually publish image presets.
+>You do *not* need to publish image presets as image presets are automatically published.
 >
 >See [Publishing Image Presets.](#publishing-image-presets)
 
@@ -268,13 +266,11 @@ Leaving them blank tells AEM that this image preset is responsive. You can adjus
 
 >[!NOTE]
 >
->In order to see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
+>To see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
->In Dynamic Media - Scene7 mode, image presets and image assets are automatically published.
->
->In Dynamic Media - Hybrid mode, you must manually publish image presets and image assets.
+>Note that image presets and image assets are automatically published.
 
 ### Image Preset options {#image-preset-options}
 
@@ -484,22 +480,10 @@ The following are some basic examples of what you can do with image modifiers.
 
 ### Publishing Image Presets {#publishing-image-presets}
 
-If you are running Dynamic Media - Hybrid mode, you must manually publish image presets.
-
-(If you are running Dynamic Media - Scene7 mode, image presets are automatically published for you; you do not need to complete these steps.)
-
-**To manually publish image presets in Dynamic Media - Hybrid mode**
-
-1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
-1. Select the image preset or multiple image presets from the list of image presets and click or tap **[!UICONTROL Publish]**.
-1. After the image preset is published, the status changes from unpublished to published.
-
-   ![chlimage_1-81](assets/chlimage_1-505.png)
+Image presets are automatically published for you.
 
 ### Deleting Image Presets {#deleting-image-presets}
 
-**To delete image presets**
-
-1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
 1. Select a preset, and then click **[!UICONTROL Delete**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.
 -->

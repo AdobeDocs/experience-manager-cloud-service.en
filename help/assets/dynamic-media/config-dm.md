@@ -1,41 +1,39 @@
 ---
-title: Configuring Dynamic Media - Scene7 mode
-seo-title: Configuring Dynamic Media - Scene7 mode
-description: Information on how to configure Dynamic Media - Scene7 mode.
-seo-description: Information on how to configure Dynamic Media - Scene7 mode.
+title: Configuring Dynamic Media Cloud Service
+seo-title: Configuring Dynamic Media Cloud Service
+description: Information on how to configure Dynamic Media in Adobe Experience Manager Cloud Service.
+seo-description: Information on how to configure Dynamic Media in Adobe Experience Manager Cloud Service.
 uuid: ce43c589-d415-4611-9266-b4e8887e4cdc
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
-docset: aem65
+docset: AEM Cloud Service
 
 ---
 
-# Configuring Dynamic Media - Scene7 mode{#configuring-dynamic-media-scene-mode}
+# Configuring Dynamic Media {#configuring-dynamic-media-scene-mode}
 
 If you use Adobe Experience Manager set up for different environments, such as one for development, one for staging, and one for live production, you need to configure Dynamic Media Cloud Services for each one of those environments.
 
-## Architecture diagram of Dynamic Media - Scene7 mode {#architecture-diagram-of-dynamic-media-scene-mode}
+## Architecture diagram of Dynamic Media {#architecture-diagram-of-dynamic-media-scene-mode}
 
-The following architecture diagram describes how Dynamic Media - Scene7 mode works.
+The following architecture diagram describes how Dynamic Media works.
 
 With the new architecture, AEM is responsible for master assets and synchs with Dynamic Media for asset processing and publishing:
 
-1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.)
+1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image.
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
-## Enabling Dynamic Media in Scene7 mode {#enabling-dynamic-media-in-scene-mode}
+## Enabling Dynamic Media {#enabling-dynamic-media-in-scene-mode}
 
 [Dynamic media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) is disabled by default. To take advantage of dynamic media features, you need to enable it.
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 mode is for the AEM Author instance only. As such, you must configure `runmode=dynamicmedia_scene7` on the AEM Author instance, *not* the AEM Publish instance.
+>Dynamic Media is for the AEM Author instance only. As such, you must configure `runmode=dynamicmedia_scene7` on the AEM Author instance, *not* the AEM Publish instance.
 
 To enable dynamic media, you must startup AEM using the `dynamicmedia_scene7` runmode from the command line by entering the folllowing in a terminal window (example port used is 4502):
 
@@ -59,17 +57,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Installing feature pack 18912 for bulk asset migration {#installing-feature-pack-for-bulk-asset-migration}
+## Configuring Dynamic Media Cloud Service {#configuring-dynamic-media-cloud-services}
 
-The installation of feature pack 18912 is *optional*.
-
-Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from either Dynamic Media - Hybrid mode or Dynamic Media Classic into Dynamic Media - Scene7 mode on AEM. It is available from [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
-
-See [Installing feature pack 18912 for bulk asset migration](/help/assets/dynamic-media/bulk-ingest-migrate.md) for more information.
-
-## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
-
-**Before you configure Dynamic Media Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+**Before you configure Dynamic Media Cloud Service**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
 To configure dynamic media cloud services:
 
@@ -93,10 +83,20 @@ To configure dynamic media cloud services:
 
     * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
       Unless you have a special arrangment to use your own company's server or a special server, Adobe Systems recommends that you leave this setting as specified.
+    
+    * **[!UICONTROL Sync all content]** - Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:
+
+    * **[!UICONTROL Dynamic Media sync mode]**
+        * **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusing. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+        * **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
+        To mark a selected folder for sync to Dynamic Media, open the Properties page of your asset folder. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
+            * **[!UICONTROL Inherited]** - No explicit sync value on the folder; insteatd, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tool tip.
+            * **[!UICONTROL Enable for sub-folders]** -  Include everything in this sub-tree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.
+            * **[!UICONTROL Disabled for sub-folders]** - Exclude everything in this sub-tree from syncing to Dynamic Media.  
 
    >[!NOTE]
    >
-   >There is no support for versioning in DMS7. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
+   >There is no support for versioning in Dynamic Media. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
    >
    >
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
@@ -114,19 +114,19 @@ To configure dynamic media cloud services:
     * Select the check box to enable (turn on) the address, and then enter the IP address of the AEM Author instance (not Dispatcher IP).
     * Click **[!UICONTROL Save]**.
 
-You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
+You are now finished with the basic configuration; you are ready to use Dynamic Media.
 
-If you want to further customize your configuration, you can optionally complete any of the tasks under [Configuring Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+If you want to further customize your configuration, you can optionally complete any of the tasks under [Configuring Advanced Settings in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-## (Optional) Configuring Advanced Settings in Dynamic Media - Scene7 mode {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Optional) Configuring Advanced Settings in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following *optional* tasks:
+If you want to further customize the configuration and setup of Dynamic Media, or optimize its performance, you can complete one or more of the following *optional* tasks:
 
-* [Setup and configuration of Dynamic Media - Scene7 mode settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
-* [(Optional) Tuning the performance of Dynamic Media - Scene7 mode](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+* [Setup and configuration of Dynamic Media settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [(Optional) Tuning the performance of Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
 
-### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
+### (Optional) Setup and configuration of Dynamic Media settings {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
 When you are in runmode `dynamicmedia_scene7`, you use the Dynamic Media Classic (Scene7) user interface to make changes to your Dynamic Media settings.
 
@@ -462,9 +462,9 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
    Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set.
 
-### (Optional) Tuning the performance of Dynamic Media - Scene7 mode {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Optional) Tuning the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-To keep Dynamic Media (with `dynamicmedia_scene7` run mode) running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
+To keep Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
 
 * Update the predefined Granite workflow (video assets) queue worker threads.
 * Update the predefined Granite transient workflow (images and non-video assets) queue worker threads.
