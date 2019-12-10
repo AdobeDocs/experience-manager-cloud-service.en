@@ -7,12 +7,17 @@ contentOwner: AG
 
 # Get started using asset microservices {#get-started-using-asset-microservices}
 
+<!--
+TBD: Removing this article for now from TOC.
+Need to write this tutorial/walkthrough content post-GA.
+
+-->
+
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
-* [DO NOT COVER?] Exceptions or limitations or backlink to lack of parity with AEM 6.5
 
 ## Configurations for asset microservices {#configure-asset-microservices}
 

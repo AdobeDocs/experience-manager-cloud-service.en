@@ -10,10 +10,7 @@ contentOwner: AG
 Give a list of and overview of all reference information available.
 * New upload method
 * Javadocs
-* Any other reference material or developer samples
 * Assets HTTP API documented at [https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html](https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html)
-
-Drill-down into MAC HTTP APIs as required.
 
 ## Asset upload {#asset-upload-technical}
 

@@ -13,6 +13,8 @@ contentOwner: AG
 
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
+TBD: Post-GA we will provide detailed info at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all info is added, in short, in this article.
+
 -->
 
 Adobe Experience Manager as a Cloud Service provides a cloud-native way of leveraging Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices.
