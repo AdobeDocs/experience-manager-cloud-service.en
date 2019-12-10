@@ -42,9 +42,14 @@ Dynamic Media-only features include the following:
 
 See also [Setting up Dynamic Media](administering-dynamic-media.md).
 
+<!-- 
+
+OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 >[!NOTE]
 >
 >To understand the differences between using Dynamic Media and integrating Dynamic Media Classic with AEM, see [Dynamic Media Classic integration versus Dynamic Media](/help/sites-cloud/administering/integrating-scene7.md#aem-scene-integration-versus-dynamic-media).
+
+-->
 
 ## Dynamic Media enabled versus Dynamic Media disabled {#dynamic-media-on-versus-dynamic-media-off}
 
