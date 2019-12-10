@@ -150,7 +150,7 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
     </tbody>
     </table>
 
-1. (Optional; see use case table) - Set up the [Dynamic Media cloud configuration](/help/assets/dynamic-media/config-dynamic.md) and [enable the Dynamic Media server](/help/assets/dynamic-media/config-dynamic.md).
+1. (Optional; see use case table) - Set up the [Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) and [enable the Dynamic Media server](/help/assets/dynamic-media/config-dm.md#enabling-dynamic-media-in-scene-mode).
 1. (Optional; see use case table) - If you choose to enable Automatic Upload from Assets to Dynamic Media Classic, then you need to add the following:
 
     1. Set up automatic upload to Dynamic Media Classic.

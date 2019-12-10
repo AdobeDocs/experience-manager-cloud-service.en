@@ -54,7 +54,7 @@ You can tell whether Dynamic Media is enabled (turned on) by the following chara
 * Image sets, spin sets, mixed media sets are available.
 * PTIFF renditions are created.
 
-When you click an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media uses the on-demand HTML5 viewers.
+When you click an image asset, the view of the asset is different with Dynamic Media enabled. Dynamic Media uses the on-demand HTML5 viewers.
 
 ### Dynamic renditions {#dynamic-renditions}
 
