@@ -6,16 +6,14 @@ seo-description: Learn how to work with panoramic images in Dynamic Media.
 uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
 contentOwner: Rick Brough
 topic-tags: dynamic-media
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+products: Skyline Dynamic Media
 content-type: reference
-discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
-docset: aem65
+docset: Skyline
 
 ---
 
 # Panoramic images{#panoramic-images}
 
-<!--
 This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.
 
 See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
@@ -27,14 +25,15 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 For an uploaded asset to qualify as a spherical panorama image that you intend to use with the Panoramic Image viewer, the asset must have either one or both of the following:
 
 * An aspect ratio of 2.
-  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
-  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
-
+<!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
+  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Using Tags](/help/sites-cloud/authoring/features/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
 To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
+
+<!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
 ## Configuring Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
 
@@ -75,6 +74,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 * For a tainted canvas error, setup a Rule Set Definition File Path and Invalidate CTN for the previous requests for the image asset.
 * If image quality becomes very low after an image request with sizing above the supported limit, check that the **[!UICONTROL JPEG Encoding Attributes > Quality]** setting is not empty. A typical setting for the **[!UICONTROL Quality]** field is `95`. You can find the setting on the Image Server Publish page. To access the page, see [Configuring Dynamic Media Classic (Scene7)](/help/assets/dynamic-media/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
 
+-->
+
 ## Previewing Panoramic Images {#previewing-panoramic-images}
 
 See [Previewing Assets](/help/assets/dynamic-media/previewing-assets.md).
@@ -82,4 +83,3 @@ See [Previewing Assets](/help/assets/dynamic-media/previewing-assets.md).
 ## Publishing Panoramic Images {#publishing-panoramic-images}
 
 See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
--->
