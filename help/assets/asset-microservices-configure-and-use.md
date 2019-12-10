@@ -8,15 +8,17 @@ contentOwner: AG
 # Get started using asset microservices {#get-started-using-asset-microservices}
 
 <!--
+
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
-* [DO NOT COVER?] Exceptions or limitations or backlink to lack of parity with AEM 6.5
+* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
+
 -->
 
-Asset microservices provide a scalable and resilient processing of assets using cloud services, which are managed by Adobe for optimal handling of different asset types and processing options. 
+Asset microservices provide a scalable and resilient processing of assets using cloud services, which are managed by Adobe for optimal handling of different asset types and processing options.
 
 Asset processing is carried out based on configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow the administrator to add more specific asset processing configuration. To allow for extensibility and full customization, asset processing allows for an optional configuration of post-processing workflows, which are then created and maintained by the administrator.
 
@@ -31,15 +33,15 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> For customers updating from previous versions of Experience Manager - asset processing described in this section replaces the "DAM  Update Asset" worklfow model used for asset ingestion processing before. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
+> For customers updating from previous versions of Experience Manager - asset processing described in this section replaces the "DAM Update Asset" workflow model used for asset ingestion processing before. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
 
 ## Getting started with asset processing {#getting-started}
 
-Asset processign with asset microservices is preconfigured with a default configuration, ensuring that the default renditions required by the system, as well as metadata extraction and text extraction are available. Users can start uploading / updating assets immediately and processing will take place.
+Asset processing with asset microservices is pre-configured with a default configuration, ensuring that the default renditions required by the system, as well as metadata extraction and text extraction are available. Users can start uploading / updating assets immediately and processing will take place.
 
 If more specific configuration of asset microservices is needed, administrators can create additional **[!UICONTROL Processing Profiles]**, which users will be able to assign to specific folders to get additional processing (e.g., specific renditions). For more details, see [configuring asset microservices](#configure-asset-microservices).
 
-If additional, custom processing of assets is required (e.g., integrations with other systems), post-processing worfklows should be created and configured for the asset processing. For more details, see [post-processing workflows](#post-processing-workflows).
+If additional, custom processing of assets is required (e.g., integrations with other systems), post-processing workflows should be created and configured for the asset processing. For more details, see [post-processing workflows](#post-processing-workflows).
 
 ## Configurations for asset microservices {#configure-asset-microservices}
 
@@ -47,13 +49,13 @@ To configure asset microservices, administrators can use configuration user inte
 
 ### Default configuration
 
-With the default configuration, only the [!UICONTROL standard] processing profile is configured. It is a built-in one, and cannot be modified. It is always executed to ensure that all the processing requried by the application is taking place.
+With the default configuration, only the [!UICONTROL standard] processing profile is configured. It is a built-in one, and cannot be modified. It is always executed to ensure that all the processing required by the application is taking place.
 
 ![processing-profiles-standard](assets/processing-profiles-standard.png)
 
 The standard processing profile provides the following processing configuration:
 
-* Standard thumnnails used by Asset user interface (48, 140 and 319 px)
+* Standard thumbnails used by Asset user interface (48, 140, and 319 px)
 * Large preview (web rendition - 1280 px)
 * Metadata extraction
 * Text extraction
@@ -95,21 +97,21 @@ When a new processing profile is saved, it is added to the list of configured pr
 
 ![processing-profiles-list](assets/processing-profiles-list.png)
 
-#### Rendition width and height
+#### Rendition width and height {#rendition-width-height}
 
-Rendition widht and height specification provides maximum sizes of the generated output image. Asset microservice tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original.
+Rendition width and height specification provides maximum sizes of the generated output image. Asset microservice tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original.
 
 An empty value means that asset processing assumes the pixel dimension of the original.
 
-#### Mime type inclusion rules
+#### MIME type inclusion rules {#mime-type-inclusion-rules}
 
 When an asset with a specific mime type is processed, the mime type is first checked against the excluded mime types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset ("blacklisting").
 
 Otherwise, the mime type is checked against the included mime type, and if it matches the list, the rendition is generated ("whitelisting").
 
-#### Special FPO rendition
+#### Special FPO rendition {#special-fpo-rendition}
 
-Processing profile can include a special "FPO rendition", which is used when [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) is used with InDesign to place direct links to assets from Experience Manager into InDesign documents. 
+Processing profile can include a special "FPO rendition", which is used when [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) is used with Adobe InDesign to place direct links to assets from Experience Manager into InDesign documents.
 
 Please refer to Adobe Asset Link [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile.
 
@@ -119,7 +121,7 @@ Once additional processing profiles are created, they need to be applied to spec
 
 There are two ways to get processing profiles applied to folders:
 
-* Administrators can select a processing profile definition in **[!UICONTROL Tools/Assets/Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. It opens a content browser that allow you to navigate to specific folders, select them and confirm the application of the profile.
+* Administrators can select a processing profile definition in **[!UICONTROL Tools > Assets > Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. It opens a content browser that allow you to navigate to specific folders, select them and confirm the application of the profile.
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the drop-down, select the right processing profile for that folder. The choice will be save upon **[!UICONTROL Save & Close]** action.
 
 >[!NOTE]
@@ -130,35 +132,35 @@ After a processing profile has been applied to a folder, all new files uploaded 
 
 >[!NOTE]
 >
->When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, it goes up in the folder tree until it finds a processing profile applied, and uses it for the asset. That means that a processing profile applied to a folder are applied to the whole subtree, but can be overriden with another one in the subtree.
+>When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, it goes up in the folder tree until it finds a processing profile applied, and uses it for the asset. That means that a processing profile applied to a folder are applied to the whole subtree, but can be overridden with another one in the subtree.
 
-Users can check that the processing actually took place by opening a newly-uploaded asset for wchich processing has finished, opening asset preview, and clicking on the left-hand rail's **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the mime type inclusion rules, should be visible and accessible.
+Users can check that the processing actually took place by opening a newly-uploaded asset for which processing has finished, opening asset preview, and clicking on the left-hand rail's **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the mime type inclusion rules, should be visible and accessible.
 
-![additoinal-renditions](assets/renditions-additional-renditions.png)
-*Example of two additional renditions generated by a processing profile applied to the parent folder*
+![additional-renditions](assets/renditions-additional-renditions.png)
+*Figure: Example of two additional renditions generated by a processing profile applied to the parent folder*
 
 ## Post-processing workflows {#post-processing-workflows}
 
-For situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing worfklows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
+For situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
 
-Post-processing workflows, if configured, are automatically executed by AEM after the micrsoervices processing finishes. There is no need to add worklfow launchers manually to trigger them.
+Post-processing workflows, if configured, are automatically executed by AEM after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them.
 
 Examples include:
 
-* custom worfklow steps for processing assets (e.g., Java code to generate renditions from proprietary file formats)
-* integrations to add metadata or properties to assets from external systems (e.g., product information, process information)
+* custom workflow steps for processing assets, for example, Java code to generate renditions from proprietary file formats.
+* integrations to add metadata or properties to assets from external systems, for example, product or process information.
 * additional processing done by external services
 
 Adding a post-processing workflow configuration to Experience Manager is comprised of the following steps:
 
 * Creating one or more workflow models. We'll call them "post-processing workflow models," but they are regular AEM workflow models.
-* Adding specific workflow steps to these models. These steps will be executeon on the assets based on workflow model configuration.
+* Adding specific workflow steps to these models. These steps will be execution on the assets based on workflow model configuration.
 * The last step of such a model must be the `DAM Update Asset Workflow Completed Process` step. This is required to ensure that AEM knows the processing has ended and the asset can be marked as processed ("New")
 * Creating a configuration for the Custom Workflow Runner Service, which allows for configuring execution of a post-processing workflow model either by path (folder location) or regular expression
 
 ### Creating post-processing workflow models
 
-Post-processing workflow models are regular AEM worfklow models. Please create different ones if you need different processing for different repostiory locations or asset types.
+Post-processing workflow models are regular AEM workflow models. Please create different ones if you need different processing for different repository locations or asset types.
 
 Processing steps should be added based on needs. You can use any supported out-of-the-box steps available, as well as any custom-implemented workflow steps.
 
@@ -179,9 +181,3 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 > OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
 
 For details, on which of the standard workflow steps can be used in the post-processing workflow, please see [Workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
-
-
-
->[!MORELIKETHIS]
->
->
