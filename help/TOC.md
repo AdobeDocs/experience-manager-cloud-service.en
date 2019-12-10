@@ -93,6 +93,7 @@ solution-title: Experience Cloud
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Package Structure](implementing/developing/introduction/aem-project-content-package-structure.md)
     + [Develop a Repository Structure Package](implementing/developing/introduction/repository-structure-package.md)
+    + [Content Search and Indexing](operations/indexing.md)
     + [AEM as a Cloud Service Development Guidelines](implementing/developing/introduction/development-guidelines.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
@@ -103,7 +104,6 @@ solution-title: Experience Cloud
   + [Submitting an AEM Connector](connectors/submit.md)
   + [Maintaining an AEM Connector](connectors/maintain.md)
 + Operations and Maintenance on AEM as a Cloud Service {#operations}
-  + [Content Migration](operations/indexing.md)
   + [Content Replication Service](operations/replication.md)
   + [Maintenance Tasks](operations/maintenance.md)
   + [Backup and Restore](operations/backup.md)
