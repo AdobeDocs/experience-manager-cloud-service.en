@@ -16,25 +16,6 @@ docset: Skyline
 
 The following document describes troubleshooting for Dynamic Media.
 
-<!-->
-
-## Setup and Configuration {#setup-and-configuration}
-
-Ensure that Dynamic Media has been set up properly by doing the following:
-
-* Start up command contains the `-r dynamicmedia_scene7` runmode argument.
-* Any AEM 6.4 cumulative fix packs (CFPs) have been installed first *before* any available Dynamic Media Feature Packs.
-* Optional Feature Pack 18912 is installed.
-
-  This optional feature pack is for FTP support or if you are migrating assets to Dynamic Media from Dynamic Media Classic (Scene7).
-
-* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **[!UICONTROL Available Configurations]**.
-* Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
-
-  This replication agent is found under Agents on Author.
-  
--->
-
 ## General (All Assets) {#general-all-assets}
 
 The following are some general tips and tricks for all assets.
