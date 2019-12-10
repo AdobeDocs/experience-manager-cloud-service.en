@@ -67,7 +67,7 @@ If you need to, you can edit [Mixed Media Sets](#editing-mixed-media-sets). In a
 
 >[!NOTE]
 >
->If you have issues creating sets, see [Troubleshooting Dynamic Media - Scene7 mode](/help/assets/dynamic-media/troubleshoot-dms7.md).
+>If you have issues creating sets, see [Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 ## Uploading Assets {#uploading-assets}
 

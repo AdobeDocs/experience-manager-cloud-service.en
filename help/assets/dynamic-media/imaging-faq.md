@@ -62,7 +62,7 @@ The only change that may be required is to update the **[!UICONTROL Time To Live
 
 * If you are using Dynamic Media Classic, tap **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
 
-* If you are using Dynamic Media, follow the instructions to [Configure Dynamic Media image settings](config-dynamic.md) Set the **[!UICONTROL Expiration]** value to 24 hours or longer.
+* If you are using Dynamic Media, set the **[!UICONTROL Expiration]** value to 24 hours or longer.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ You must initiate the request to use smart imaging; it is not automatically enab
 1. To maximize the performance improvements of smart imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
     1. If you use Dynamic Media Classic, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
-    1. If you use Dynamic Media, follow [these instructions](config-dynamic.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
+    1. If you use Dynamic Media, set the **[!UICONTROL Expiration]** value 24 hours or longer.
 
 ## When can I expect my account to be enabled with smart imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 

@@ -39,7 +39,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 When you are done creating the video profile, you apply it to a folder or mutliple folders. See [Applying a video profile to folders.](#applying-a-video-profile-to-folders)
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
 See also [Profiles for Processing Metadata, Images, and Videos](/help/assets/dynamic-media/processing-profiles.md).
 
@@ -149,7 +149,7 @@ See also [Creating a video encoding profile for progressive streaming](#creating
 
 See also [Best Practices for Video Encoding](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
 **To create a video profile for adaptive streaming**,
 
@@ -193,16 +193,13 @@ You can now apply the profile to folders that contain videos. See [Applying a vi
 
 If you choose not to use the option **[!UICONTROL Encode for adaptive streaming]**, be aware that all encoding presets that you add to the profile are treated as individual video renditions for single-bitrate streaming or progressive video delivery. Also, there is no validation to ensure that all the video renditions have the same aspect ratio.
 
-Depending on which mode you are running, the supported video format codecs are the following:
-
-* Dynamic Media-Scene7 mode: H.264 (.mp4)
-* Dynamic Media-Hybrid mode: H.264 (.mp4), WebM
+The supported video format codecs are H.264 (.mp4) and WebM.
 
 See also [Creating a video encoding profile for adaptive streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 See also [Best Practices for Video Encoding](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
 **To create a video profile for progressive streaming:**
 
@@ -319,7 +316,7 @@ By default, you cannot edit the predefined, out-of-the-box **[!UICONTROL Adaptiv
 
 See also [Best Practices for Video Encoding](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
 **To edit a video profile**:
 

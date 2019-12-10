@@ -1,22 +1,22 @@
 ---
-title: Troubleshooting Dynamic Media - Scene7 mode
-seo-title: Troubleshooting Dynamic Media - Scene7 mode
-description: Troubleshooting Dynamic Media in Scene7 runmode.
-seo-description: Troubleshooting Dynamic Media in Scene7 runmode.
+title: Troubleshooting Dynamic Media
+seo-title: Troubleshooting Dynamic Media
+description: Troubleshooting Dynamic Media.
+seo-description: Troubleshooting Dynamic Media.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
-docset: aem65
+docset: Skyline
 
 ---
 
-# Troubleshooting Dynamic Media - Scene7 mode{#troubleshooting-dynamic-media-scene-mode}
+# Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-The following document describes troubleshooting for Dynamic Media running **dynamicmedia_scene7** run mode.
+The following document describes troubleshooting for Dynamic Media.
 
+<!-->
 ## Setup and Configuration {#setup-and-configuration}
 
 Ensure that Dynamic Media has been set up properly by doing the following:
@@ -31,6 +31,7 @@ Ensure that Dynamic Media has been set up properly by doing the following:
 * Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
 
   This replication agent is found under Agents on Author.
+-->
 
 ## General (All Assets) {#general-all-assets}
 
@@ -65,7 +66,7 @@ When replacing an existing Dynamic Media asset (same name and location), you hav
 
 * Keeping both will create a new asset with a unique name for the published asset URL. For example, `image.jpg` is the original asset and `image1.jpg` is the newly uploaded asset.
 
-* Creating a version is not supported in Dynamic Media - Scene7 mode delivery. The new version will replace the existing asset in delivery.
+* Creating a version is not supported in Dynamic Media. The new version will replace the existing asset in delivery.
 
 ## Images and Sets {#images-and-sets}
 
@@ -156,7 +157,7 @@ If you are having issues with video, see the following troubleshooting guidance.
      <li>Assign a video profile to the folder.</li>
      <li>Edit video profile to include more than one encoding preset.</li>
      <li>Wait for video to finish processing.</li>
-     <li>Be you re-load the video, make sure that the Dynamic Media Encode Video workflow is not running.<br /> </li>
+     <li>Be you re-load the video, make sure that the Dynamic Media Encode Video workflow is not running.<br/> </li>
      <li>Re-upload the video.</li>
     </ol> </td>
   </tr>
@@ -164,13 +165,11 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td>Video is not encoded</td>
    <td>
     <ul>
-     <li>Check that the runmode is <code>dynamicmedia_scene7</code>.</li>
      <li>Check whether Dynamic Media cloud service is configured.</li>
      <li>Check whether a video profile is associated with the upload folder.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Check your AEM instance with <code>-r dynamicmedia_scene7</code></li>
      <li>Check that the Dynamic Media Configuration under Cloud Services is properly setup.</li>
      <li>Check that the folder has a video profile. Also, check the video profile.</li>
     </ol> </td>

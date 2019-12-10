@@ -35,10 +35,6 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 You can upload various types of assets (including images, PDF files, RAW files, and so on) from your local folder or a network drive to AEM Assets.
 
->[!NOTE]
->
->In Dynamic Media - Scene7 mode, you can only upload assets whose file sizes are 2 GB or less.
-
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column.
@@ -122,13 +118,8 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 >[!NOTE]
 >
->In Dynamic Media - Scene7 mode, you can only upload assets whose file sizes are 2 GB or less.
-
->[!NOTE]
->
->To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the AEM author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account.
->
 >If you use FTP for uploading assets, the upload settings specified in AEM are ignored. Instead, file processing rules, as defined in Dynamic Media Classic, are used.
+
 
 **To upload assets using FTP**
 
@@ -570,7 +561,7 @@ To transcode a video file by choosing from a variety of video presets.
 
 If you want to automatically create an Image Set or Spin Set from uploaded images, click the Active column for the preset you want to use. You can select more than one preset.
 
-<!-- See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/dynamic-media/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
+<!-- See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
 -->
 
 ### Streamed uploads {#streamed-uploads}

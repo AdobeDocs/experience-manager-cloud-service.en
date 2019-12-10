@@ -19,13 +19,12 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 >
 >See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
 
-If you are administering dynamic media, the following topics are of interest:
+If you are administering Dynamic Media, the following topics are of interest:
 
-* [Configuring Dynamic Media-Scene7 mode](config-dms7.md) &mdash; Use this configuration if you are a new Dynamic Media customer.
-* [Configuring Dynamic Media-Hybrid mode](config-dynamic.md) &mdash; Use this configuration if you are an existing Dynamic Media customer upgrading AEM.
+* [Configuring Dynamic Media](config-dm.md)
 * [Managing Image Presets](managing-image-presets.md)
 * [Managing Viewer Presets](managing-viewer-presets.md)
-* [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
+* [Troubleshooting Dynamic Media](troubleshoot-dm.md)
 
 See also the following topics:
 

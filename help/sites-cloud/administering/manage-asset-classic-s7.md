@@ -34,7 +34,7 @@ For more information on using video components with Dynamic Media in AEM, see [V
 
 >[!NOTE]
 >
->If Dynamic Media Classic assets do not display properly, make sure that Dynamic media is [disabled](/help/assets/dynamic-media/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
+>If Dynamic Media Classic assets do not display properly, make sure that Dynamic media is [disabled](/help/assets/dynamic-media/config-dm.md#disabling-dynamic-media) and then refresh the page.
 
 ## Manually publishing to Dynamic Media Classic from assets {#manually-publishing-to-scene-from-assets}
 
