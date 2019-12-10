@@ -15,7 +15,6 @@ docset: aem65
 
 # Video{#video}
 
-<!--
 This section describes working with video in Dynamic Media.
 
 ## Quick Start: Videos {#quick-start-videos}
