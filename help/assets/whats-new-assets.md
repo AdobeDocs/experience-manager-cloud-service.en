@@ -1,11 +1,13 @@
 ---
-title: What's new in Assets as a Cloud Service and release notes
-description: What's new in Assets as a Cloud Service and release notes.
+title: What's new in Assets as a Cloud Service
+description: What's new in Assets as a Cloud Service.
 contentOwner: AG
 
 ---
 
 # What's new in Assets as a Cloud Service solution {#whats-new-in-assets-cloud-service}
+
+<!-- Need info from gklebus -->
 
 What are the new shiny things for the customers.
 Need a quick overview from PM about change in philosophy and offering -- why cloud services are better and how asset processing is cloud will help. Improves TTV for partners/administrators, TCO for organizations, TTM for marketers and business owners, and UX for end-users/consumers.
@@ -18,9 +20,11 @@ Need a quick overview from PM about change in philosophy and offering -- why clo
 
 See also a comparison with AEM offering.
 
-## Solution benefits {#solution-benefits}
+<!-- gklebus, do we need the info in the following topics? If yes, then is this what's new a better fit or does this info belong in the RNs at /help/release-notes/release-notes.md
 
-Using the new, cloud-native SaaS solution, businesses can not only perform traditional DAM operations with speed and market impact, but also use next-generation smart capabilities such as AI/ML – all this from a system that is always current, always available, and always learning.
+-->
+
+## Solution benefits {#solution-benefits}
 
 The following summarizes the benefits of Assets as a Cloud Service:
 
@@ -48,7 +52,7 @@ What all will the license provide.
 * SaaS offering/ hosted solution
 * Asset microservices
 * User interface, console, Assets UI, and so on.
-* OOTB workflows, migration tools, samples, and so on.
+* Out-of-the-box workflows, migration tools, samples, and so on.
 * List of public APIs
 * Support availability
 * Open-source documentation
@@ -58,6 +62,7 @@ What all will the license provide.
 See [AEM terms](/help/overview/terminology.md)
 
 Add any additional terms that are specific to Assets. Some jargon could be related to:
+
 * File formats
 * Microservices information or workflows
 * Metadata specific terms like writeback, IPTC, XMP, and so on.

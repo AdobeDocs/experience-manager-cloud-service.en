@@ -13,6 +13,6 @@ To see architecture overview of asset microservices see this [asset microservice
 
 >[!MORELIKETHIS]
 >
->* [Overview and what's new](/help/release-notes/assets-as-cloud-service.md)
+>* [Overview and what's new](/help/assets/whats-new-assets.md)
 >* [Supported file formats and MIME types](file-format-support.md)
 >* [Overview of asset microservices](asset-microservices-overview.md)

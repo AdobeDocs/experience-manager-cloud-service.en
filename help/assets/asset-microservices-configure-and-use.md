@@ -14,6 +14,7 @@ contentOwner: AG
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
+
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
 
 -->

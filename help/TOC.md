@@ -24,7 +24,7 @@ solution-title: Experience Cloud
     + [Add Users and Roles](onboarding/what-is-required/add-users-roles.md)
   + Getting Access to AEM in the Cloud {#getting-access-aem-in-cloud}
     + [First Time Login](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
-    + [Creating a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
+    + [Create a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
   + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md)
     + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
@@ -32,13 +32,10 @@ solution-title: Experience Cloud
 + AEM Sites in the Cloud {#cloud-sites}
   + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
 + AEM Assets in the Cloud {#assets}
-  + [Overview and what's new](/help/release-notes/assets-as-cloud-service.md)
-  + [Compare with AEM](/help/assets/compare-with-aem.md)
-  + [Architecture](/help/assets/architecture.md)
+  + [Overview and what's new](/help/assets/whats-new-assets.md)
   + [Supported file formats](/help/assets/file-format-support.md)
+  + [Architecture](/help/assets/architecture.md)
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
-  + [Configure and use microservices](/help/assets/asset-microservices-configure-and-use.md)
-  + [Know workspace interface](/help/assets/understand-interface-workspace.md)
   + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
