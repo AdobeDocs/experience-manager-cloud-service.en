@@ -103,7 +103,7 @@ solution-title: Experience Cloud
   + [Submitting an AEM Connector](connectors/submit.md)
   + [Maintaining an AEM Connector](connectors/maintain.md)
 + Operations and Maintenance on AEM as a Cloud Service {#operations}
+  + [Content Migration](operations/indexing.md)
   + [Content Replication Service](operations/replication.md)
-  + [Content Search and Indexing](operations/indexing.md)
   + [Maintenance Tasks](operations/maintenance.md)
   + [Backup and Restore](operations/backup.md)
