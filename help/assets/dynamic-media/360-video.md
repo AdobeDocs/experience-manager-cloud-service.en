@@ -14,7 +14,6 @@ docset: aem65
 
 # 360/VR Video {#vr-video}
 
-<!--
 360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.
 
 Dynamic Media includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.
@@ -71,6 +70,8 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 
 1. [Upload your video to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+<!--
+
 ## Overriding the default aspect ratio of 360 videos  {#overriding-the-default-aspect-ratio-of-videos}
 
 For an uploaded asset to qualify as a 360 video that you intend to use with the 360 Video viewer, the asset must have an aspect ratio of 2.
@@ -87,6 +88,8 @@ After you set this property, it takes effect immediately on both existing videos
 The aspect ratio applies to 360 video assets for the asset details page and the [Video 360 Media WCM component](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
 
 Start by uploading 360 Videos.
+
+-->
 
 ## Previewing 360 Video {#previewing-video}
 
