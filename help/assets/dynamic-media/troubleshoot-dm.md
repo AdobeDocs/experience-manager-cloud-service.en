@@ -17,6 +17,7 @@ docset: Skyline
 The following document describes troubleshooting for Dynamic Media.
 
 <!-->
+
 ## Setup and Configuration {#setup-and-configuration}
 
 Ensure that Dynamic Media has been set up properly by doing the following:
@@ -31,6 +32,7 @@ Ensure that Dynamic Media has been set up properly by doing the following:
 * Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
 
   This replication agent is found under Agents on Author.
+  
 -->
 
 ## General (All Assets) {#general-all-assets}

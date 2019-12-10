@@ -102,10 +102,6 @@ This section describes how to create Spin Sets in AEM.
 >
 >See "Creating batch set presets to auto-generate Image Sets and Spin Sets" in [Configuring Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
-<!--
-#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
--->
-
 >[!NOTE]
 >
 >The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360 degree view.
