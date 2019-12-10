@@ -37,10 +37,6 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 ## Reprocessing assets in a folder {#reprocessing-assets}
 
->[!NOTE]
->
->Applies to *Dynamic Media - Scene7 mode* only in AEM 6.4.6.0 or later.
-
 You can reprocess assets in a folder that already has an existing processing profile that you later changed. 
 
 For example, suppose you created an Image profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image profile applied to the assets. However, later you decide to add a new smart crop ratio to the profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow. 
@@ -56,7 +52,9 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 >If you are performing a bulk migration of assets from Dynamic Media Classic to AEM, you must enable the Migration replication agent on the Dynamic Media server. When the migration is complete, make sure you disable the agent.
  The Migration publish agent must be disabled on the Dynamic Media server so the Reprocess workflow works as expected.
 
-<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
+<!-- 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+-->
 
 **To reprocess assets in a folder**:
 1. In AEM, from the Assets page, navigate to a folder of assets that has a processing profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
@@ -119,7 +117,8 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
 1. Close the browser tab that shows the Scene7: Reprocess Assets workflow model.
  
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -137,4 +136,5 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
+-->

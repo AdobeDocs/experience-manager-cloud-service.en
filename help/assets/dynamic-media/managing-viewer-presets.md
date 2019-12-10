@@ -110,7 +110,7 @@ Administrators can add and customize the following rich media types when creatin
     <ul>
      <li>An aspect ratio of 2:1.</li>
      <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-cloud/authoring/features/tags.md">Using Tags</a>.</li>
-    </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td>
+    </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p></td>
   </tr>
   <tr>
    <td><strong>Spin Set</strong></td>
@@ -118,7 +118,7 @@ Administrators can add and customize the following rich media types when creatin
   </tr>
   <tr>
    <td><strong>360 Video</strong></td>
-   <td><p>Use the 360/VR Video viewer to render equirectangular video for an immersive viewing experience of a room, property, location, landscape, or medical procedure.</p> <p>During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.</p> <p>The viewer includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td>
+   <td><p>Use the 360/VR Video viewer to render equirectangular video for an immersive viewing experience of a room, property, location, landscape, or medical procedure.</p> <p>During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.</p> <p>The viewer includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.</p> </td>
   </tr>
   <tr>
    <td><strong>Video</strong></td>

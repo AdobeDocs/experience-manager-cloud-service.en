@@ -35,7 +35,7 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
    >
    >The selected asset *and* the selected image preset or viewer preset must be published to make the **[!UICONTROL URL]** or **[!UICONTROL RESS]** buttons available.
    >
-   >Dynamic Media - Hybrid mode requires you to publish image presets; Dynamic Media - Scene7 mode automatically publishes image presets.
+   >Image presets are automatically published.
 
 1. Tap **[!UICONTROL RESS]**.
 

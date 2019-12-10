@@ -21,5 +21,5 @@ Working with Dynamic Media is not available in the classic UI. See [Working with
 
 >[!NOTE]
 >
->If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if [integrate Dynamic Media Classic into AEM](/help/sites-cloud/administering/integrating-scene7.md). See [enabling Dynamic Media](/help/assets/dynamic-media/config-dynamic.md#enabling-dynamic-media). Dynamic Media is disabled by default.
+>If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if you have [integrated Dynamic Media Classic into AEM](/help/sites-cloud/administering/integrating-scene7.md). Dynamic Media is disabled by default.
 
