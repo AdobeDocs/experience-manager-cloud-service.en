@@ -114,7 +114,12 @@ If you want to further customize the configuration and setup of Dynamic Media, o
 
 * [Setup and configuration of Dynamic Media settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optional) Tuning the performance of Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+
+<!--
+
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
+
+-->
 
 ### (Optional) Setup and configuration of Dynamic Media settings {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
@@ -523,6 +528,8 @@ The Scene7 Upload Connection setting synchronizes AEM assets to Dynamic Media Cl
 
 1. Tap **[!UICONTROL Save]**.
 
+<!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
+
 ### (Optional) Filtering assets for replication {#optional-filtering-assets-for-replication}
 
 In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your AEM author environment to the AEM publish node. This workflow is necessary because the AEM publish servers also deliver the assets.
@@ -621,4 +628,6 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
    If you only wanted to replicate the original, then you would enter `+original`.
+
+   -->
 
