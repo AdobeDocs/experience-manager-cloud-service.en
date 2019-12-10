@@ -24,7 +24,6 @@ See also a comparison with AEM offering.
 
 -->
 
-
 ## Solution benefits {#solution-benefits}
 
 The following summarizes the benefits of Assets as a Cloud Service:

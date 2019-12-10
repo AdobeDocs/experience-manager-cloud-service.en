@@ -32,13 +32,10 @@ solution-title: Experience Cloud
 + AEM Sites in the Cloud {#cloud-sites}
   + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
 + AEM Assets in the Cloud {#assets}
-  + [Overview and what's new](/help/release-notes/assets-as-cloud-service.md)
-  + [Compare with AEM](/help/assets/compare-with-aem.md)
-  + [Architecture](/help/assets/architecture.md)
+  + [Overview and what's new](/help/assets/whats-new-assets.md)
   + [Supported file formats](/help/assets/file-format-support.md)
+  + [Architecture](/help/assets/architecture.md)
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
-  + [Configure and use microservices](/help/assets/asset-microservices-configure-and-use.md)
-  + [Know workspace interface](/help/assets/understand-interface-workspace.md)
   + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
