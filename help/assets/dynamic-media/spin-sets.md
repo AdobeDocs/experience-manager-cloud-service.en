@@ -15,7 +15,6 @@ docset: aem65
 
 # Spin Sets{#spin-sets}
 
-<!--
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.
 
 A Spin Set simulates a 360-degree viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can “free-form” zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
@@ -53,8 +52,6 @@ To get you up and running quickly with Spin Sets, follow these steps:
    See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
 
    See [Adding and editing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
-
-- [Spin Sets{#spin-sets}](#spin-setsspin-sets)
 
    You can view and access sets created by way of batch set presets in three different ways. (Sets created using batch set presets, do *not* appear in the user interface.)
 
@@ -94,11 +91,11 @@ The following are some best practices around spin set images. In general, the mo
 
 ## Creating Spin Sets {#creating-spin-sets}
 
-This section describes how to create Spin Sets in AEM.
+This section describes how to create Spin Sets.
 
 >[!NOTE]
 >
->You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets). **Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+>You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md). **Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 >
 >See "Creating batch set presets to auto-generate Image Sets and Spin Sets" in [Configuring Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
@@ -215,4 +212,3 @@ See [Previewing Assets](/help/assets/dynamic-media/previewing-assets.md).
 ## Publishing Spin Sets {#publishing-spin-sets}
 
 See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
--->
