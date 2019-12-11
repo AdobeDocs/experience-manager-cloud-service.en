@@ -1133,7 +1133,6 @@ You create a chapter list for your video in much the same way that you create ca
 You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
--->
 
 ```xml
 WEBVTT
