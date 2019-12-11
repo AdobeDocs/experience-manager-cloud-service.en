@@ -28,12 +28,11 @@ The Dispatcher SDK can be downloaded from the Software Distribution portal at th
 
 **For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher SDK files underneath the directory you stored it to (where <version> is the version of the dispatcher SDK).
 
-```
+```bash
 $ chmod +x DispatcherSDKv<version>.sh
 $ ./DispatcherSDKv<version>.sh
 Verifying archive integrity...  100%   All good.
 Uncompressing DispatcherSDKv<version>  100% 
-
 ```
 
 **For Windows**, download the zip archive and extract it.
