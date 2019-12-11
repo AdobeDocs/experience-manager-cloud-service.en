@@ -27,14 +27,14 @@ The following table illustrates the maintenance tasks that are available at the 
 | Maintenance Task | Who owns the configuration | How to configure (optional)  |
 |---|---|---|
 | Datastore garbage collection | Adobe | N/A - fully Adobe owned |
-| Version Purge | Adobe | Fully owned by Adobe, but in the future, it will be shared between Adobe and the customer with the customer being able to configure certain parameters in github. |
-| Audit Log Purge  | Adobe | Fully owned by Adobe, but in the future, it will be shared between Adobe and the customer with the customer being able to configure certain parameters in github. |
-| Lucene Binaries Cleanup | Removed | N/A - removed |
-| Ad-hoc Task Purge | Customer | Must be done in github. <br> Override the Maintenance window configuration node under `/libs` and `/apps` with `/conf/global/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (any name is acceptable, but the convention is `granite_TaskPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see the (AEM 6.5 Maintenance Task documentation) (link TBD)|
-| Workflow Purge | Customer |  Must be done in github. <br> Override the Maintenance window configuration node under `/libs` and `/apps` with `/conf/global/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (any name is acceptable, but the convention is `granite_WorkflowPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties (see AEM 6.5 Maintenance Task documentation) (link TBD) |
-| Project Purge | Customer |  Must be done in github. <br> Override the Maintenance window configuration node under `/libs` and `/apps` with `/conf/global/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding a node under the node above (any name is acceptable, but the convention is `granite_ProjectPurgeTask`) with the appropriate properties. <br> Configure OSGI properties (see AEM 6.5 Maintenance Task documentation) (link TBD) |
+| Version Purge | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
+| Audit Log Purge  | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
+| Lucene Binaries Cleanup | Adobe | Unused and therefore disabled by Adobe. |
+| Ad-hoc Task Purge | Customer | Must be done in github. <br> Override the Maintenance window configuration node under `/libs` and `/apps` with `/conf/global/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_TaskPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see the [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)|
+| Workflow Purge | Customer |  Must be done in github. <br> Override the Maintenance window configuration node under `/libs` and `/apps` with `/conf/global/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_WorkflowPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Project Purge | Customer |  Must be done in github. <br> Override the Maintenance window configuration node under `/libs` and `/apps` with `/conf/global/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding a node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. <br> Configure OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
- The table below describes the configuration options of the Maintenance Window node. 
+Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project Purge Maintenance tasks to be executed during the daily, weekly, or monthly maintenance windows. These configurations should edited directly in source control. The table below describes the configuration parameters available for each of the window. 
 
 <table>
   <tr>
@@ -51,12 +51,12 @@ The following table illustrates the maintenance tasks that are available at the 
     <td>JCR Node Definition</td>
     <td><code>/conf/global/settings/granite/operations/maintenance/granite_daily </code> (which overrides the node in <code>/apps</code> and <code>/libs</code>)</td>
     <td>See code sample 1 below</td>
-    <td>
+   <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily (this value should not be changed)</li>
     <li><strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.</li>
     <li><strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.</li>
-    </ul> </td>
+    </ul> </td> 
   </tr>
   <tr>
     <td>Weekly</td>
@@ -64,7 +64,13 @@ The following table illustrates the maintenance tasks that are available at the 
     <td>JCR Node Definition</td>
     <td><code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> (which overrides the node in <code>/apps</code> and <code>/libs</code>)</td>
     <td>See code sample 2 below</td>
-    <td></td>
+     <td>
+    <ul>
+    <li><strong>windowSchedule</strong> = weekly (this value should not be changed)</li>
+    <li><strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the weekly Maintenance Window should begin executing.</li>
+    <li><strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Weekly Maintenance Window should stop executing if they haven't already completed.</li>
+    <li><strong>windowScheduleWeekdays = Array of 2 values from 1-7. e.g. [5,5].</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</li>
+    </ul> </td> 
   </tr>
   <tr>
     <td>Monthly</td>
@@ -72,7 +78,14 @@ The following table illustrates the maintenance tasks that are available at the 
     <td>JCR Node Definition</td>
     <td><code>/conf/global/settings/granite/operations/maintenance/granite_monthly</code> (which overrides the node in <code>/apps</code> and <code>/libs</code>)</td>
     <td>See code sample 3 below</td>
-    <td></td>
+     <td>
+    <ul>
+    <li><strong>windowSchedule</strong> = daily (this value should not be changed)</li>
+    <li><strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should begin executing.</li>
+    <li><strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should stop executing if they haven't already completed.</li>
+    <li><strong>windowScheduleWeekdays = Array of 2 values from 1-7. e.g. [5,5].</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</li>
+    <li><strong>windowFirstLastStartDay - 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs every day as governed by windowScheduleWeekdays every month.</li>
+    </ul> </td> 
   </tr>
 </table>
 
@@ -124,4 +137,3 @@ Code sample 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
-
