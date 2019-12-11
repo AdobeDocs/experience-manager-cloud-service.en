@@ -636,7 +636,7 @@ files.
 
 If you see errors concerning undefined variable `PUBLISH_DOCROOT`, rename it to `DOCROOT`.
 
-For every other error, see the [Troubleshooting](./TroubleShooting.md) section of the
+For every other error, see the Troubleshooting section of the
 validator tool documentation.
 
 ### Test your configuration with a local deployment (requires Docker installation)
