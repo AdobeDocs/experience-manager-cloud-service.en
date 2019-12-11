@@ -25,16 +25,18 @@ Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS s
 
 For detailed information about the new functionality in and the benefits of Assets as a Cloud Service, see [What's new in Assets as a Cloud Service](/help/assets/whats-new-assets.md).
 
-Key benefits and new capabilities for Experience Manager Assets customers include:
+Key benefits and new capabilities for Experience Manager Assets customers are:
 
-* Benefits of a native cloud solution, see [overview of Experience Manager as a Cloud Serivce](help/overview/introduction.md)
-* New, cloud-native asset [upload](help/assets/add-assets.md) and processing using [asset microservices](/help/assets/asset-microservices-overview.md) provides scalable asset ingestion experience
+* Benefits of a native cloud solution, see [overview of Experience Manager as a Cloud Service](/help/overview/introduction.md).
+* New, cloud-native asset [upload](/help/assets/add-assets.md) and processing using [asset microservices](/help/assets/asset-microservices-overview.md) provides scalable asset ingestion experience
   * Rendition generation has now easy configuration screen and does not require 
-  * Asset microservices handle the [common file formats](help/assets/file-format-support.md) out-of-the-box, removing the need for third-party rendering apps (like ImageMagick) and complex workflow engine configurations
-* Common services, including Smart Content Services providing Smart Tagging capabiltiies, are now pre-provisioned and pre-configured, simplifying system configuration and shorteing deployment time
+  * Asset microservices handle the [common file formats](/help/assets/file-format-support.md) out-of-the-box, removing the need for third-party rendering apps (like ImageMagick) and complex workflow engine configurations
+* Common services, including Smart Content Services providing Smart Tagging capabilities, are now pre-provisioned and pre-configured, simplifying system configuration and shortening deployment time
 * Dynamic Media service more scalable and performant, no longer has previous asset size upload limits as it uses direct binary access principles
 
-See the following additional release notes information for Assets:
+See the following additional information for Assets:
 
 * [Known issues](known-issues.md#assets)
 * [Deprecated and removed features](deprecated-removed-features.md)
+* [Major AEM changes that also impacts Assets](aem-cloud-changes.md)
+* Technical specifications and system requirements.
