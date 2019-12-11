@@ -12,7 +12,8 @@ AEM Cloud Service brings many new features and possibilities for managing your A
 >[!NOTE]
 >This document highlights the notable changes to AEM as a whole. For solution-specific changes see:
 >
->* [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Notable changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Notable changes to AEM Assets in AEM Cloud Service](/help/assets/assets-cloud-changes.md)
 
 The main differences are found in the following areas:
 
@@ -51,7 +52,7 @@ The Web Console, used in previous versions of AEM to change OSGi settings, is no
 Direct changes to the publish repository are not allowed on AEM Cloud Service. In prior versions of on-premise AEM or AEM on AMS, code changes could be made directly to the publish repository for example to creates users, update user profile, and create nodes. This is no longer possible and can be mitigated in the following ways:
 
 * For content and content based configuration: make the changes on the author instance and publish them.
-* For code and configuration: make the changes in the GIT repo and run the CI/CD pipeline to roll them out.
+* For code and configuration: make the changes in the GIT repository and run the CI/CD pipeline to roll them out.
 * For user-related data such as form submits or profile data: use the Unified Profile Service from Experience Cloud Platform or other 3rd party session aware store.
 
 ## Custom runmodes are not allowed {#custom-runmodes}
@@ -94,8 +95,8 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 Asset upload, treatment, and download have been optimized in AEM Cloud Service to be more efficient enabling better scaling and faster uploads and downloads. However this may impact some existing custom code.
 
-* The default workflow **DAM Update** in previous versions of AEM is no longer available. Changes made to the default workflow need to be re-configured with the replacement **Custom DAM Workflow Runner**.
+* The default workflow **DAM Asset Update** in previous versions of AEM is no longer available.
 * Web site components that deliver a binary **without transformation** should use direct download.
   * The Sling GET servlet has been changed to do this by default.
-* Web site components that deliver a binary **with transformation** (e.g. resize via servlet) can continue to operate as they have.
-* Assets that come in via Package Manager require manual re-processing using the  **Reprocess Asset** action in the Assets UI.
+* Web site components that deliver a binary **with transformation** (for example, resize via servlet) can continue to operate as they have.
+* Assets that come in via Package Manager require manual re-processing using the **Reprocess Asset** action in the Assets interface.
