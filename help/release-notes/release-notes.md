@@ -13,4 +13,4 @@ seo-description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Ser
 |--- |--- |
 | Version | 2019.12.0 |
 | Type | Continuous Update |
-| Availablity date | Continuous Update |
+| Availability date | Continuous Update |
