@@ -7,6 +7,12 @@ contentOwner: AG
 
 # Know the Adobe Experience Manager Assets as a Cloud Service user interface {#assets-cloud-service-ui}
 
+<!--
+TBD: Removing this article for now from TOC.
+Need to rewrite this getting started content post-GA.
+
+-->
+
 Overview of the home page experience.
 Parts of the UI that lead to different capabilities accessible from here.
 How to reach Assets specific UI and where to look to do DAM specific tasks.

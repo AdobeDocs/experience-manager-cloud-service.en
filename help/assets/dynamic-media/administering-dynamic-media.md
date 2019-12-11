@@ -13,11 +13,15 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) helps you manage assets by delivering rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of master assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
+<!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
+
 >[!NOTE]
 >
 >This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
 >See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+
+-->
 
 If you are administering Dynamic Media, the following topics are of interest:
 

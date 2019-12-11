@@ -54,7 +54,7 @@ To configure a higher file size limit, perform the following steps in the `/apps
 
 ## Publish video assets {#publish-video-assets}
 
-After your video assets are published, they are available to you for including in a web page by way of a URL or embedding on a web page. <!-- See [publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+After your video assets are published, they are available to you for including in a web page by way of a URL or embedding on a web page. See [publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Annotate video assets {#annotate-video-assets}
 

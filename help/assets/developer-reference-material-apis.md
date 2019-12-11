@@ -10,10 +10,7 @@ contentOwner: AG
 Give a list of and overview of all reference information available.
 * New upload method
 * Javadocs
-* Any other reference material or developer samples
 * Assets HTTP API documented at [https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html](https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html)
-
-Drill-down into MAC HTTP APIs as required.
 
 ## Asset upload {#asset-upload-technical}
 
@@ -152,3 +149,69 @@ Methods related to uploading or updating assets or renditions (any binary upload
 >
 >* [Open source aem-upload library](https://github.com/adobe/aem-upload)
 >* [Open source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
+
+## Asset processing and post-processing workflows {#post-processing-workflows}
+
+Most of asset processing is executed based on **[!UICONTROL Processing Profiles]** configuration by [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices), and does not require developer extensions.
+
+For the post-processing worfklow configuration, standard AEM Workflows with extensions (e.g., custom steps can be used). Review the following subsection to understand, which workflow steps can be used in the asset post-processing workflows.
+
+### Workflow steps in post-processing workflow {#post-processing-workflows-steps}
+
+>[!NOTE]
+>
+>This section applies mostly to the customers updating to AEM as a Cloud Service from previous versions of AEM.
+
+Due to a new deployment model introduced with Experience Manager as a Cloud Service, certain workflow steps used in the `DAM Update Asset` workflow before the introduction of asset microservices might not be supported any more for post-processing workflows. Note that most of them are replaced by a much simpler to configure and use asset microservices.
+
+Here is a list of technical workflow models and their level of support in AEM as a Cloud Service:
+
+#### Supported workflow steps
+
+* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
+* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
+* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
+* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
+* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
+* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
+* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+
+#### Replaced by asset microservices processing or unsupported
+
+* `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`       
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`       
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`   
+* `com.day.cq.dam.core.process.GateKeeperProcess`       
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`  
+* `com.day.cq.dam.core.process.MetadataProcessorProcess`
+* `com.day.cq.dam.core.process.XMPWritebackProcess`     
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess` 
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess` 
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`      
+* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`   
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`       
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess` 
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`    
+* `com.day.cq.dam.video.FFMpegThumbnailProcess` 
+* `com.day.cq.dam.core.process.ThumbnailProcess`
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`   
+* `com.day.cq.dam.core.process.CommandLineProcess`      
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`   
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`      
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`  
+* `com.day.cq.dam.core.process.DownloadAssetProcess`    
+* `com.day.cq.dam.word.process.ExtractImagesProcess`    
+* `com.day.cq.dam.word.process.ExtractPlainProcess`     
+* `com.day.cq.dam.video.FFMpegTranscodeProcess` 
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`       
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess` 
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`  
+* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`  
+* `com.day.cq.dam.core.process.ScheduledPublishBPProcess`       
+* `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`     
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`   
+* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
