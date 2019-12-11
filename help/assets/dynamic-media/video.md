@@ -43,8 +43,8 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
-        * [Upload your videos](/help/assets/manage-video-assets.md#uploadingandpreviewingvideoassets).
-        * Learn more about [Supported input file formats](/help/assets/file-format-support.md#supported-multimedia-formats).
+        * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+        * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
 
     * Monitor how [video encoding is progressing](#monitoring-video-encoding-and-youtube-publishing-progress) either from the asset or workflow view.
 
@@ -55,7 +55,7 @@ The following step-by-step workflow description is designed to help you get up a
         * [Organizing digital assets](/help/assets/organize-assets.md)
           Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md)
 
-        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/manage-digital-assets.md#searchingassets)
+        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/manage-digital-assets.md#search-assets)
 
     * Preview and publish video assets
 
@@ -80,7 +80,7 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](/help/assets/manage-video-assets.md#annotatingvideoassets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
+        * [Annotating videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
 
         * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
         * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
