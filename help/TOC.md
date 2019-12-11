@@ -79,7 +79,6 @@ solution-title: Experience Cloud
     + [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
     + [Using Rulesets to transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
     + [Publishing Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    + [Adding Dynamic Media Classic features to your page](/help/sites-cloud/administering/manage-asset-classic-s7.md)
     + [Invalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
     + [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md)
     + [DHTML Viewer End-of-Life FAQs](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
