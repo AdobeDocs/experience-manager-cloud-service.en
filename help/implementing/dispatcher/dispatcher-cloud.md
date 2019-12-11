@@ -42,7 +42,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 The structure of the project's dispatcher subfolder is described below and should be copied into the maven project dispatcher folder:
 
-```
+```bash
 ./
 ├── conf.d
 │   ├── available_vhosts
