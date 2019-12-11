@@ -397,8 +397,6 @@ As described on the reference page above, the Apache and Dispatcher configuratio
 
 The dispatcher configuration structure has differences between Managed Services and Skyline. Below is a a step by step guide on how to migrate from AMS Dispatcher configuration version 2 to AEM as a Cloud Service.
 
-
-
 Customers who are using AMS Dispatcher configuration version 1 should contact customer support to help them migrate from version 1 to version 2 so the instructions above can be followed.
 
 ## Dispatcher and CDN {#dispatcher-cdn}
