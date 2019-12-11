@@ -16,15 +16,15 @@ AEM Cloud Service brings many new features and possibilities for managing your A
 
 The main differences are found in the following areas:
 
-- [Page Bulk Operations](#page-bulk-operations)
-- [Removal of Classic UI](#classic-ui)
+* [Page Bulk Operations](#page-bulk-operations)
+* [Removal of Classic UI](#classic-ui)
 
 ## Page Bulk Operations {#page-bulk-operations}
 
 In AEM Cloud service, operations that traditionally have blocked the UI have been broken down into smaller tasks which run in the background.
 
-- Move pages
-- Roll-out pages
+* Move pages
+* Roll-out pages
 
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 

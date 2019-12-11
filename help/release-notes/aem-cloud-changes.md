@@ -16,59 +16,59 @@ AEM Cloud Service brings many new features and possibilities for managing your A
 
 The main differences are found in the following areas:
 
-- [/apps and /libs are immutable at runtime](#apps-libs-immutable)
-- [OSGi bundles and settings must be repository-based](#osgi)
-- [Changes to publish repository are not allowed](#changes-to-publish-repo)
-- [Custom runmodes are not allowed](#custom-runmodes)
-- [Removal of Replication Agents](#replication-agents)
-- [Removal of Classic UI](#classic-ui)
-- [Publish-Side Delivery](#publish-side-delivery)
-- [Asset Handling and Delivery](#asset-handling)
+* [/apps and /libs are immutable at runtime](#apps-libs-immutable)
+* [OSGi bundles and settings must be repository-based](#osgi)
+* [Changes to publish repository are not allowed](#changes-to-publish-repo)
+* [Custom runmodes are not allowed](#custom-runmodes)
+* [Removal of Replication Agents](#replication-agents)
+* [Removal of Classic UI](#classic-ui)
+* [Publish-Side Delivery](#publish-side-delivery)
+* [Asset Handling and Delivery](#asset-handling)
 
 ## /apps and /libs are immutable at runtime {#apps-libs-immutable}
 
  Any content and sub-folders in `/apps` and `/libs` is read-only. Any feature or custom code that expects to make changes there will fail to do so. An error will be returned that such content is read-only and the write operation wasn't able to complete. This has an impact in a number of areas of AEM:
 
-- No changes in `/libs` are allowed at all.
-  - This is not new rule, however this was not enforced in previous on-premise versions of AEM.
-- Overlays for areas in `/libs` that are allowed to be overlaid are are still permitted within `/apps`.
-  - Such overlays must come from Git via the CI/CD pipeline.
-- Static Template design information that is stored in `/apps` can't be edited via UI.
-  - It is recommended that you leverage Editable Templates instead.
-  - If Static Templates are still required, configuration information must come from Git via the CI/CD pipeline.
-- MSM Blueprint and custom MSM roll-out configurations must be installed from Git via the CI/CD pipeline.
-- I18n translation changes need to come from Git via the CI/CD pipeline.
+* No changes in `/libs` are allowed at all.
+  * This is not new rule, however this was not enforced in previous on-premise versions of AEM.
+* Overlays for areas in `/libs` that are allowed to be overlaid are are still permitted within `/apps`.
+  * Such overlays must come from Git via the CI/CD pipeline.
+* Static Template design information that is stored in `/apps` can't be edited via UI.
+  * It is recommended that you leverage Editable Templates instead.
+  * If Static Templates are still required, configuration information must come from Git via the CI/CD pipeline.
+* MSM Blueprint and custom MSM roll-out configurations must be installed from Git via the CI/CD pipeline.
+* I18n translation changes need to come from Git via the CI/CD pipeline.
 
 ## OSGi bundles and settings must be repository-based {#osgi}
 
 The Web Console, used in previous versions of AEM to change OSGi settings, is not available in AEM Cloud Service. Therefore changes to OSGi must be introduced via the CI/CD pipeline.
 
-- Changes to OSGI settings can only come via Git persistence as JCR-based OSGi settings.
-- New or updated OSGi bundles must be introduced via Git as part of the CI/CD pipeline build process.
+* Changes to OSGi settings can only come via Git persistence as JCR-based OSGi settings.
+* New or updated OSGi bundles must be introduced via Git as part of the CI/CD pipeline build process.
 
 ## Changes to publish repository are not allowed {#changes-to-publish-repo}
 
 Direct changes to the publish repository are not allowed on AEM Cloud Service. In prior versions of on-premise AEM or AEM on AMS, code changes could be made directly to the publish repository for example to creates users, update user profile, and create nodes. This is no longer possible and can be mitigated in the following ways:
 
-- For content and content based configuration: make the changes on the author instance and publish them.
-- For code and configuration: make the changes in the GIT repo and run the CI/CD pipeline to roll them out.
-- For user-related data such as form submits or profile data: use the Unified Profile Service from Experience Cloud Platform or other 3rd party session aware store.
+* For content and content based configuration: make the changes on the author instance and publish them.
+* For code and configuration: make the changes in the GIT repo and run the CI/CD pipeline to roll them out.
+* For user-related data such as form submits or profile data: use the Unified Profile Service from Experience Cloud Platform or other 3rd party session aware store.
 
 ## Custom runmodes are not allowed {#custom-runmodes}
 
 The following runmodes are provided out-of-the-box for AEM Cloud Service:
 
-- `author`
-- `publish`
-- `prod`
-- `author.prod`
-- `publish.prod`
-- `stage`
-- `author.stage`
-- `publish.stage`
-- `dev`
-- `author.dev`
-- `publish.dev`
+* `author`
+* `publish`
+* `prod`
+* `author.prod`
+* `publish.prod`
+* `stage`
+* `author.stage`
+* `publish.stage`
+* `dev`
+* `author.dev`
+* `publish.dev`
 
 Additional or custom run modes are not possible in AEM Cloud Service.
 
@@ -76,9 +76,9 @@ Additional or custom run modes are not possible in AEM Cloud Service.
 
 In AEM Cloud Service, content is published using [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). The replication agents used in previous versions of AEM are no longer used or provided, which might impact the following areas of existing AEM projects:
 
-- Custom workflows that push content to replication agents of preview servers for example.
-- Customization to replication agents to transform content
-- Using Reverse Replication to bring content from publish back to author
+* Custom workflows that push content to replication agents of preview servers for example.
+* Customization to replication agents to transform content
+* Using Reverse Replication to bring content from publish back to author
 
 ## Removal of Classic UI {#classic-ui}
 
@@ -94,8 +94,8 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 Asset upload, treatment, and download have been optimized in AEM Cloud Service to be more efficient enabling better scaling and faster uploads and downloads. However this may impact some existing custom code.
 
-- The default workflow **DAM Update** in previous versions of AEM is no longer available. Changes made to the default workflow need to be re-configured with the replacement **Custom DAM Workflow Runner**.
-- Web site components that deliver a binary **without transformation** should use direct download.
-  - The Sling GET servlet has been changed to do this by default.
-- Web site components that deliver a binary **with transformation** (e.g. resize via servlet) can continue to operate as they have.
-- Assets that come in via Package Manager require manual re-processing using the  **Reprocess Asset** action in the Assets UI.
+* The default workflow **DAM Update** in previous versions of AEM is no longer available. Changes made to the default workflow need to be re-configured with the replacement **Custom DAM Workflow Runner**.
+* Web site components that deliver a binary **without transformation** should use direct download.
+  * The Sling GET servlet has been changed to do this by default.
+* Web site components that deliver a binary **with transformation** (e.g. resize via servlet) can continue to operate as they have.
+* Assets that come in via Package Manager require manual re-processing using the  **Reprocess Asset** action in the Assets UI.
