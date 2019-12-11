@@ -28,16 +28,17 @@ The following (space-separated list of) characters are not supported:
 
 ## Upload Assets {#uploading-assets}
 
-<!-- TBD the following:
-Move this section into a new article. CQDOC-14874 ticket is created for this.
+Please refer to [adding digital assets to Experience Manager](add-assets.md).
+
+<!-- Content of this section was moved into a new article - add-assets.md. Content was cleaned up for Skyline there.
+
+@asgupta - feel free to remove this section after sanity check when working on my PR
+
+CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
--->
+
 
 You can upload various types of assets (including images, PDF files, RAW files, and so on) from your local folder or a network drive to AEM Assets.
-
->[!NOTE]
->
->In Dynamic Media - Scene7 mode, you can only upload assets whose file sizes are 2 GB or less.
 
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
@@ -122,13 +123,8 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 >[!NOTE]
 >
->In Dynamic Media - Scene7 mode, you can only upload assets whose file sizes are 2 GB or less.
-
->[!NOTE]
->
->To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the AEM author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account.
->
 >If you use FTP for uploading assets, the upload settings specified in AEM are ignored. Instead, file processing rules, as defined in Dynamic Media Classic, are used.
+
 
 **To upload assets using FTP**
 
@@ -570,7 +566,7 @@ To transcode a video file by choosing from a variety of video presets.
 
 If you want to automatically create an Image Set or Spin Set from uploaded images, click the Active column for the preset you want to use. You can select more than one preset.
 
-<!-- See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
+<!-- See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.
 -->
 
 ### Streamed uploads {#streamed-uploads}
@@ -597,6 +593,8 @@ Some limitations of the feature are:
 * If you cancel the extraction, the already extracted assets are not deleted.
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
 * When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing the latest service pack.
+
+-->
 
 ## Preview Assets {#previewing-assets}
 
@@ -842,7 +840,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 <!--
 >[!NOTE]
 >
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
+>For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 -->
 
 1. Navigate to the location of the asset(s)/folder you want to publish
@@ -985,7 +983,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->In the [Collections console](/help/assets/manage-collections.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+>In the [Collections console](/help/assets/manage-collections.md#navigate-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
 
 >[!NOTE]
 >

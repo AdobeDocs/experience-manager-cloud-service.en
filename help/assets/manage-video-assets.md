@@ -7,7 +7,7 @@ contentOwner: AG
 
 # Manage video assets {#manage-video-assets}
 
-Learn how to manage and edit the video assets in Adobe Experience Manager (AEM) Assets. <!-- Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/video.md). -->
+Learn how to manage and edit the video assets in Adobe Experience Manager (AEM) Assets. <!-- Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/dynamic-media/video.md). -->
 
 ## Upload and preview video assets {#upload-and-preview-video-assets}
 
@@ -54,7 +54,7 @@ To configure a higher file size limit, perform the following steps in the `/apps
 
 ## Publish video assets {#publish-video-assets}
 
-After your video assets are published, they are available to you for including in a web page by way of a URL or embedding on a web page. <!-- See [publishing assets](/help/assets/publishing-dynamicmedia-assets.md). -->
+After your video assets are published, they are available to you for including in a web page by way of a URL or embedding on a web page. See [publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Annotate video assets {#annotate-video-assets}
 

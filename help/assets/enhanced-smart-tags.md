@@ -19,7 +19,7 @@ For the Smart Content Service to apply the right tags, you must train it to reco
 
 Once a tag is trained and ready, the service can now apply these tags on assets through a tagging workflow.
 
-In the background, the Smart Content Service uses Adobe Sensei's AI framework to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
+In the background, the Smart Content Service uses AI framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
 Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in Adobe Experience Manager (AEM), the system administrator must integrate your AEM instance with Adobe IO.
 
@@ -46,10 +46,6 @@ The Smart Content Service is available for purchase as an add-on to AEM. After y
 The administrator can follow the link to integrate the Smart Content Service with AEM. To integrate the service with AEM Assets, see [Configure Smart Tags](config-smart-tags-feature.md).
 
 The onboarding process is complete when the administrator configures the service and adds users in AEM.
-
->[!NOTE]
->
->The Smart Content Service is supported on AEM 6.4 only. If you are running a previous version of AEM and require automatic tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html).
 
 ## Reviewing assets and tags {#reviewing-assets-and-tags}
 
