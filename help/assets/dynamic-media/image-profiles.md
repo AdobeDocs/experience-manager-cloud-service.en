@@ -132,7 +132,7 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can apply image profiles to specific folders or globally to all assets.
 
-You can reprocess assets in a folder that already has an existing image profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+You can reprocess assets in a folder that already has an existing image profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
 
 ### Applying Dynamic Media image profiles to specific folders {#applying-image-profiles-to-specific-folders}
 
