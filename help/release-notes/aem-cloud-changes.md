@@ -13,6 +13,7 @@ AEM Cloud Service brings many new features and possibilities for managing your A
 >This document highlights the notable changes to AEM as a whole. For solution-specific changes see:
 >
 >* [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Notable Changes to AEM Assets in AEM Cloud Service](/help/asstes/assets-cloud-changes.md)
 
 The main differences are found in the following areas:
 
@@ -94,8 +95,10 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 Asset upload, treatment, and download have been optimized in AEM Cloud Service to be more efficient enabling better scaling and faster uploads and downloads. However this may impact some existing custom code.
 
-* The default workflow **DAM Update** in previous versions of AEM is no longer available. Changes made to the default workflow need to be re-configured with the replacement **Custom DAM Workflow Runner**.
+* The default workflow **DAM Asset Update** in previous versions of AEM is no longer available. See []
 * Web site components that deliver a binary **without transformation** should use direct download.
   * The Sling GET servlet has been changed to do this by default.
 * Web site components that deliver a binary **with transformation** (e.g. resize via servlet) can continue to operate as they have.
 * Assets that come in via Package Manager require manual re-processing using the  **Reprocess Asset** action in the Assets UI.
+
+For more info
