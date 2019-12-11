@@ -16,23 +16,32 @@ This section describes how to structure the AEM as a Cloud Service Apache and Di
 
 ## Dispatcher SDK {#dispatcher-sdk}
 
-The Dispatcher SDK1 provides:
+The Dispatcher SDK provides:
 
 * A vanilla file structure containing the configuration files to include in a maven project for dispatcher;
 * Tooling for customers to validate a dispatcher configuration locally;
 * A Docker image that brings up the dispatcher locally.
 
-For pre-release, the dispatcher SDK will be distributed via the pre-release website.
+## Downloading and extracting the SDK {#extracting-the-sdk}
 
-## Extracting the SDK {#extracting-the-sdk}
+The Dispatcher SDK can be downloaded from the Software Distribution portal at the URL ??? from a folder corresponding to the desired AEM version. Any new configuration available in that new dispatcher SDK version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
 
-Download the shell script to a folder on your machine, make it executable and run it. It will extract the Dispatcher SDK files underneath the directory you stored it in.
+**For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher SDK files underneath the directory you stored it to (where `version` is the version of the dispatcher SDK).
+
+```bash
+$ chmod +x DispatcherSDKv<version>.sh
+$ ./DispatcherSDKv<version>.sh
+Verifying archive integrity...  100%   All good.
+Uncompressing DispatcherSDKv<version>  100% 
+```
+
+**For Windows**, download the zip archive and extract it.
 
 ## File Structure {#file-structure}
 
 The structure of the project's dispatcher subfolder is described below and should be copied into the maven project dispatcher folder:
 
-```
+```bash
 ./
 ├── conf.d
 │   ├── available_vhosts
@@ -83,7 +92,7 @@ You can have one or more of these files. They contain `<VirtualHost>` entries th
 
 * `conf.d/rewrites/rewrite.rules`
 
-This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
+This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`. 
 
 >[!NOTE]
 >
@@ -122,6 +131,7 @@ The above files reference the immutable configuration files listed below. Change
 **Immutable Configuration Files**
 
 These files are part of the base framework and enforce standards and best practices. The files are considered immutable because modifying or deleting them locally will have no impact on your deployment, as they will not get transferred to your Cloud instance.
+It is recommended that the above files reference the unmodifiable files listed below, followed by any additional statements or overrides. When dispatcher configuration is deployed to a cloud environment, the latest version of the unmodifiable files will be used, regardless of what version was used in local development.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -173,11 +183,11 @@ The sections below describe how to validate the configuration locally so it can 
 
 ## Local validation of Dispatcher configuration {#local-validation-of-dispatcher-configuration}
 
-The validation tool is available in the SDK as a Mac OS, Linux, or Windows binary, allowing customers to run the same validation that Cloud Manager will perform while building and deploying a release.
+The validation tool is available in the SDK at `bin/validator` as a Mac OS, Linux, or Windows binary, allowing customers to run the same validation that Cloud Manager will perform while building and deploying a release.
 
-It is invoked as: `validator full [-d folder] [-w whitelist] zip-file`
+It is invoked as: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-The tool validates the Apache and dispatcher configuration contained in the zip file. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only whitelisted directives are used. The directives allowed in Apache configuration files can be listed by running the validator's whitelist command:
+The tool validates the Apache and dispatcher configuration. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only whitelisted directives are used. The directives allowed in Apache configuration files can be listed by running the validator's whitelist command:
 
 ```
 
@@ -190,7 +200,37 @@ Whitelisted directives:
   
   ```
 
-The whitelist contains a list of Apache directives that are expected in the customer configuration. If a directive is not whitelisted, the tool logs an error and returns a non-zero exit code. If no whitelist is given on the command line, the tool uses a default whitelist, which is what Cloud Manager will use for validation before deploying to Cloud environments.
+The table below shows the supported apache modules:
+
+| Maintenance Task | Who owns the configuration |
+|---|---|
+| core | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/core.html) |
+| mod_access_compat | [https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) |
+| mod_alias | [https://httpd.apache.org/docs/2.4/mod/mod_alias.html](https://httpd.apache.org/docs/2.4/mod/mod_alias.html) |
+| mod_allowmethods | [https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html](https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html) |
+| mod_auth_basic | [https://httpd.apache.org/docs/2.4/mod/mod_auth_basic.html](https://httpd.apache.org/docs/2.4/mod/mod_auth_basic.html) |
+| mod_authn_core | [https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html) |
+| mod_authn_file | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html) |
+| mod_authz_core | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html) |
+| mod_authz_groupfile | [https://httpd.apache.org/docs/2.4/mod/mod_authz_groupfile.html](https://httpd.apache.org/docs/2.4/mod/mod_authz_groupfile.html) |
+| mod_deflate | [https://httpd.apache.org/docs/2.4/mod/mod_deflate.html](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html) |
+| mod_dir | [https://httpd.apache.org/docs/2.4/mod/mod_dir.html](https://httpd.apache.org/docs/2.4/mod/mod_dir.html) |
+| mod_env | [https://httpd.apache.org/docs/2.4/mod/mod_env.html](https://httpd.apache.org/docs/2.4/mod/mod_env.html) |
+| mod_filter | [https://httpd.apache.org/docs/2.4/mod/mod_filter.html](https://httpd.apache.org/docs/2.4/mod/mod_filter.html) |
+| mod_headers | [https://httpd.apache.org/docs/2.4/mod/mod_headers.html](https://httpd.apache.org/docs/2.4/mod/mod_headers.html) |
+| mod_mime | [https://httpd.apache.org/docs/2.4/mod/mod_mime.html](https://httpd.apache.org/docs/2.4/mod/mod_mime.html) |
+| mod_remoteip | [https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html](https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html) |
+| mod_reqtimeout | [https://httpd.apache.org/docs/2.4/mod/mod_reqtimeout.html](https://httpd.apache.org/docs/2.4/mod/mod_reqtimeout.html) |
+| mod_rewrite | [https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html) |
+| mod_security | [https://modsecurity.org/](https://modsecurity.org/) |
+| mod_setenvif | [https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html) |
+| mod_substitute | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
+| mod_userdir| [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
+
+
+Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing "validator whitelist" in the SDK, as described in Dispatcher SDK documentation.
+
+The whitelist contains a list of Apache directives that are permitted in a customer configuration. If a directive is not whitelisted,the tool logs an error and returns a non-zero exit code. If no whitelist is given on the command line (which is the way it should be invoked), the tool uses a default whitelist that Cloud Manager will use for validation before deploying to Cloud environments.
 
  Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
 
@@ -269,7 +309,11 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 
 ```
 
-When running the Dispatcher locally, logs are also directly printed to the terminal output.
+When running the Dispatcher locally, logs are also directly printed to the terminal output. Most of the time, these logs should be in DEBUG, which can be accomplished by passing in the Debug level as a parameter when running Docker. For example: 
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+Logs for cloud environments will be exposed through the logging service available in Cloud Manager.
 
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 
@@ -310,6 +354,7 @@ $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ```
 
+The default runmode when not passing in a value for DISP_RUN_MODE is "dev". 
 For a complete list of options and variables available, run the script `docker_run.sh` without arguments.
 
 ## Viewing the Dispatcher configuration in use by your Docker container {#viewing-dispatcher-configuration-in-use-by-docker-container}
@@ -346,6 +391,287 @@ As described on the reference page above, the Apache and Dispatcher configuratio
 * In AEM as a Cloud Service, some Apache directives may not be used (for example `Listen` or `LogLevel`)
 * In AEM as a Cloud Service, only some pieces of the Dispatcher configuration can be put in include files and their naming is important. For example, filter rules that you want to reuse across different hosts must be put in a file called `filters/filters.any`. See the reference page for more information.
 * In AEM as a Cloud Service there is extra validation to disallow filter rules written using `/glob` to prevent security issues. Since `deny *` will be used rather than `allow *` (which cannot be used), customers will benefit from running the Dispatcher locally and doing trial and error, looking at the logs to know exactly what paths the Dispatcher filters are blocking in order for those can be added.
+
+## Guidelines for migrating dispatcher configuration from AMS to AEM as a Cloud Service
+
+The dispatcher configuration structure has differences between Managed Services and AEM as a Cloud Service. Presented below, is a a step by step guide on how to migrate from AMS Dispatcher configuration version 2 to AEM as a Cloud Service.
+
+## How to convert an AMS to an AEM as a Cloud service dispatcher configuration
+
+The following section provides a step by step instructions on how to convert an AMS configuration. It assumes
+that you have an archive with a structure similar to the one described in [Cloud Manager dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+
+### Extract the archive and remove an eventual prefix
+
+Extract the archive to a folder, and make sure the immediate subfolders start with `conf`, `conf.d`,
+ `conf.dispatcher.d` and `conf.modules.d`. If they don't, move them up in the hierarchy.
+
+### Get rid of ununsed subfolders and files
+
+Remove subfolders `conf` and `conf.modules.d`, as well as files matching `conf.d/*.conf`.
+
+### Get rid of all non-publish virtual hosts
+
+Remove any virtual host file in `conf.d/enabled_vhosts` that has `author`, `unhealthy`, `health`,
+`lc` or `flush` in its name. All virtual host files in `conf.d/available_vhosts` that are not
+linked to can be removed as well.
+
+### Remove or comment virtual host sections that do not refer to port 80
+
+If you still have sections in your virtual host files that exclusively refer to other ports than port 80, e.g.
+
+```
+<VirtualHost *:443>
+...
+</VirtualHost>
+```
+
+remove or comment them. Statements in these sections will not get processed, but if you
+keep them around, you might still end up editing them with no effect, which is confusing.
+
+### Check rewrites
+
+Enter directory `conf.d/rewrites`.
+
+Remove any file named `base_rewrite.rules` and `xforwarded_forcessl_rewrite.rules` and remember to
+remove `Include` statements in the virtual host files referring to them.
+
+If `conf.d/rewrites` now contains a single file, it should be renamed to `rewrite.rules` and don't
+forget to adapt the `Include` statements referring to that file in the virtual host files as well. 
+
+If the folder however contains multiple, virtual host specific files, their contents should be
+copied to the `Include` statement referring to them in the virtual host files.
+
+### Check variables
+
+Enter directory `conf.d/variables`.
+
+Remove any file named `ams_default.vars` and remember to remove `Include` statements in the virtual
+host files referring to them. 
+
+If `conf.d/variables` now contains a single file, it should be renamed to `custom.vars` and don't
+forget to adapt the `Include` statements referring to that file in the virtual host files as well. 
+
+If the folder however contains multiple, virtual host specific files, their contents should be
+copied to the `Include` statement referring to them in the virtual host files.
+
+### Remove whitelists
+
+Remove the folder `conf.d/whitelists` and remove `Include` statements in the virtual host files referring to
+some file in that subfolder.
+
+### Replace any variable that is no longer available
+
+In all virtual host files:
+
+Rename `PUBLISH_DOCROOT` to `DOCROOT`
+Remove sections referring to variables named `DISP_ID`, `PUBLISH_FORCE_SSL` or `PUBLISH_WHITELIST_ENABLED`
+
+### Check your state by running the validator
+
+Run the dispatcher validator in your directory, with the `httpd` subcommand:
+
+```
+$ validator httpd .
+```
+
+If you see errors about missing include files, check whether you correctly renamed those
+files.
+
+If you see Apache directives that are not whitelisted, remove them.
+
+### Get rid of all non-publish farms
+
+Remove any farm file in `conf.dispatcher.d/enabled_farms` that has `author`, `unhealthy`, `health`,
+`lc` or `flush` in its name. All farm files in `conf.dispatcher.d/available_farms` that are not
+linked to can be removed as well.
+
+### Rename farm files
+
+All farms in `conf.d/enabled_farms` must be renamed to match the pattern `*.farm`, so e.g. a 
+farm file called `customerX_farm.any` should be renamed `customerX.farm`. 
+
+### Check cache
+
+Enter directory `conf.dispatcher.d/cache`.
+
+Remove any file prefixed `ams_`. 
+
+If `conf.dispatcher.d/cache` is now empty, copy the file `conf.dispatcher.d/cache/rules.any`
+from the standard dispatcher configuration to this folder. The standard dispatcher
+configuration can be found in the folder `src` of this SDK. Don't forget to adapt the
+`$include` statements referring to the `ams_*_cache.any` rule files  in the farm files
+as well. 
+
+If instead `conf.dispatcher.d/cache` now contains a single file with suffix `_cache.any`,
+it should be renamed to `rules.any` and don't forget to adapt the `$include` statements
+referring to that file in the farm files as well. 
+
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
+
+Remove any file that has the suffix `_invalidate_allowed.any`.
+
+Copy the file `conf.dispatcher.d/cache/default_invalidate_any` from the default
+AEM in the Cloud dispatcher configuration to that location.
+
+In each farm file, remove any contents in the `cache/allowedClients` section and replace it
+with:
+
+```
+$include "../cache/default_invalidate.any"
+```
+
+### Check client headers
+
+Enter directory `conf.dispatcher.d/clientheaders`.
+
+Remove any file prefixed `ams_`. 
+
+If `conf.dispatcher.d/clientheaders` now contains a single file with suffix `_clientheaders.any`,
+it should be renamed to `clientheaders.any` and don't forget to adapt the `$include` statements
+referring to that file in the farm files as well. 
+
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
+
+Copy the file `conf.dispatcher/clientheaders/default_clientheaders.any` from the default
+AEM as a Cloud Service dispatcher configuration to that location.
+
+In each farm file, replace any clientheader include statements that looks as follows:
+
+```
+$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
+$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"
+```
+
+with the statement:
+
+```
+$include "../clientheaders/default_clientheaders.any"
+```
+
+### Check filter
+
+Enter directory `conf.dispatcher.d/filters`.
+
+Remove any file prefixed `ams_`. 
+
+If `conf.dispatcher.d/filters` now contains a single file it should be renamed to
+`filters.any` and don't forget to adapt the `$include` statements referring to that
+file in the farm files as well. 
+
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
+
+Copy the file `conf.dispatcher/filters/default_filters.any` from the default
+AEM as a Cloud Service dispatcher configuration to that location.
+
+In each farm file, replace any filter include statements that looks as follows:
+
+```
+$include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
+```
+
+with the statement:
+
+```
+$include "../filters/default_filters.any"
+```
+
+### Check renders
+
+Enter directory `conf.dispatcher.d/renders`.
+
+Remove all files in that folder.
+
+Copy the file `conf.dispatcher.d/renders/default_renders.any` from the default
+AEM as a Cloud Service dispatcher configuration to that location.
+
+In each farm file, remove any contents in the `renders` section and replace it
+with:
+
+```
+$include "../renders/default_renders.any"
+```
+
+### Check virtualhosts
+
+Rename the directory `conf.dispatcher.d/vhosts` to `conf.dispatcher.d/virtualhosts` and enter it.
+
+Remove any file prefixed `ams_`. 
+
+If `conf.dispatcher.d/virtualhosts` now contains a single file it should be renamed to
+`virtualhosts.any` and don't forget to adapt the `$include` statements referring to that
+file in the farm files as well. 
+
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
+
+Copy the file `conf.dispatcher/virtualhosts/default_virtualhosts.any` from the default
+AEM as a Cloud Service dispatcher configuration to that location.
+
+In each farm file, replace any filter include statements that looks as follows:
+
+```
+$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
+```
+
+with the statement:
+
+```
+$include "../virtualhosts/default_virtualhosts.any"
+```
+
+### Check your state by running the validator
+
+Run the AEM as a Cloud Service dispatcher validator in your directory, with the `dispatcher` subcommand:
+
+```
+$ validator dispatcher .
+```
+
+If you see errors about missing include files, check whether you correctly renamed those
+files.
+
+If you see errors concerning undefined variable `PUBLISH_DOCROOT`, rename it to `DOCROOT`.
+
+For every other error, see the Troubleshooting section of the
+validator tool documentation.
+
+### Test your configuration with a local deployment (requires Docker installation)
+
+Using the script `docker_run.sh` in the AEM as a Cloud Service Dispatcher SDK, you can test that
+your configuration does not contain any other error that would only show up in 
+deployment:
+
+### Step 1: Generate deployment information with the validator
+
+```
+validator full -d out .
+```
+
+This validates the full configuration and generates deployment information in `out`
+
+### Step 2: Start the dispatcher in a docker image with that deployment information
+
+With your AEM publish server running on your macOS computer, listening on port 4503,
+you can run start the dispatcher in front of that server as follows:
+
+``` 
+$ docker_run.sh out docker.for.mac.localhost:4503 8080
+```
+
+This will start the container and expose Apache on local port 8080.
+
+### Use your new dispatcher configuration
+
+Congratulations! If the validator no longer reports any issue and the
+docker container starts up without any failures or warnings, you're
+ready to move your configuration to a `dispatcher/src` subdirectory
+of your git repository.
+
+**Customers who are using AMS Dispatcher configuration version 1 should contact customer support to help them migrate from version 1 to version 2 so the instructions above can be followed.**
 
 ## Dispatcher and CDN {#dispatcher-cdn}
 

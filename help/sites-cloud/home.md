@@ -15,6 +15,8 @@ This guide explains the concepts of Sites Cloud in AEM.
 * [Terminology of AEM Cloud Service](/help/overview/terminology.md)
 * [Core Concepts of AEM Cloud Service](/help/core-concepts/architecture.md)
 * [AEM Release Notes](/help/release-notes/release-notes.md)
+* [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
+* [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 
 ## AEM Cloud Service Guides
