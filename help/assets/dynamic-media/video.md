@@ -90,7 +90,7 @@ The following step-by-step workflow description is designed to help you get up a
 
 1. **Publish your Dynamic Media videos** by doing one of the following:
 
-    * If you are using Adobe Experience Manager as your web content management system you can add videos directly to your web pages.
+    * If you are using Adobe Experience Manager as your WCM (Web Content Management) system you can add videos directly to your web pages.
 
         * [Adding videos to your web pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
