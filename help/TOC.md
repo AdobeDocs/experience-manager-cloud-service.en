@@ -29,7 +29,7 @@ solution-title: Experience Cloud
     + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md)
     + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
     + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-sites.md)
-+ AEM Sites in the Cloud {#cloud-sites}
++ AEM Sites in the Cloud {#sites-cloud}
   + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
 + AEM Assets in the Cloud {#assets}
   + [Overview and what's new](/help/assets/whats-new-assets.md)
