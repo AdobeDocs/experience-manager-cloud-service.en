@@ -26,7 +26,7 @@ The Dispatcher SDK provides:
 
 The Dispatcher SDK can be downloaded from the Software Distribution portal at the URL ??? from a folder corresponding to the desired AEM version. Any new configuration available in that new dispatcher SDK version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
 
-**For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher SDK files underneath the directory you stored it to (where <version> is the version of the dispatcher SDK).
+**For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher SDK files underneath the directory you stored it to (where `version` is the version of the dispatcher SDK).
 
 ```bash
 $ chmod +x DispatcherSDKv<version>.sh
