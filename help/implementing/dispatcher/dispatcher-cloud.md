@@ -419,11 +419,13 @@ linked to can be removed as well.
 ### Remove or comment virtual host sections that do not refer to port 80
 
 If you still have sections in your virtual host files that exclusively refer to other ports than port 80, e.g.
+
 ```
 <VirtualHost *:443>
 ...
 </VirtualHost>
 ```
+
 remove or comment them. Statements in these sections will not get processed, but if you
 keep them around, you might still end up editing them with no effect, which is confusing.
 
@@ -462,15 +464,17 @@ some file in that subfolder.
 
 In all virtual host files:
 
-- Rename `PUBLISH_DOCROOT` to `DOCROOT`
-- Remove sections referring to variables named `DISP_ID`, `PUBLISH_FORCE_SSL` or `PUBLISH_WHITELIST_ENABLED`
+Rename `PUBLISH_DOCROOT` to `DOCROOT`
+Remove sections referring to variables named `DISP_ID`, `PUBLISH_FORCE_SSL` or `PUBLISH_WHITELIST_ENABLED`
 
 ### Check your state by running the validator
 
 Run the dispatcher validator in your directory, with the `httpd` subcommand:
+
 ```
 $ validator httpd .
 ```
+
 If you see errors about missing include files, check whether you correctly renamed those
 files.
 
@@ -513,6 +517,7 @@ AEM in the Cloud dispatcher configuration to that location.
 
 In each farm file, remove any contents in the `cache/allowedClients` section and replace it
 with:
+
 ```
 $include "../cache/default_invalidate.any"
 ```
@@ -534,11 +539,14 @@ Copy the file `conf.dispatcher/clientheaders/default_clientheaders.any` from the
 AEM as a Cloud Service dispatcher configuration to that location.
 
 In each farm file, replace any clientheader include statements that looks as follows:
+
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"
 ```
+
 with the statement:
+
 ```
 $include "../clientheaders/default_clientheaders.any"
 ```
@@ -560,10 +568,13 @@ Copy the file `conf.dispatcher/filters/default_filters.any` from the default
 AEM as a Cloud Service dispatcher configuration to that location.
 
 In each farm file, replace any filter include statements that looks as follows:
+
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
 ```
+
 with the statement:
+
 ```
 $include "../filters/default_filters.any"
 ```
@@ -579,6 +590,7 @@ AEM as a Cloud Service dispatcher configuration to that location.
 
 In each farm file, remove any contents in the `renders` section and replace it
 with:
+
 ```
 $include "../renders/default_renders.any"
 ```
@@ -600,10 +612,13 @@ Copy the file `conf.dispatcher/virtualhosts/default_virtualhosts.any` from the d
 AEM as a Cloud Service dispatcher configuration to that location.
 
 In each farm file, replace any filter include statements that looks as follows:
+
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
 ```
+
 with the statement:
+
 ```
 $include "../virtualhosts/default_virtualhosts.any"
 ```
@@ -611,9 +626,11 @@ $include "../virtualhosts/default_virtualhosts.any"
 ### Check your state by running the validator
 
 Run the AEM as a Cloud Service dispatcher validator in your directory, with the `dispatcher` subcommand:
+
 ```
 $ validator dispatcher .
 ```
+
 If you see errors about missing include files, check whether you correctly renamed those
 files.
 
@@ -633,15 +650,18 @@ deployment:
 ```
 validator full -d out .
 ```
+
 This validates the full configuration and generates deployment information in `out`
 
 ### Step 2: Start the dispatcher in a docker image with that deployment information
 
 With your AEM publish server running on your macOS computer, listening on port 4503,
 you can run start the dispatcher in front of that server as follows:
+
 ``` 
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
+
 This will start the container and expose Apache on local port 8080.
 
 ### Use your new dispatcher configuration
