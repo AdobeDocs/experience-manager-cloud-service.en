@@ -19,7 +19,7 @@ The new-age, exploding requirements of asset management, governance, and deliver
 
 To begin with, understand the [benefits of a cloud-native offering](#solution-benefits). Check out the notable [changes to AEM as a Cloud Service](/help/release-notes/aem-cloud-changes.md) that also impact Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
 
-Read on to know the [details of the new Assets capabilities](#detailed-whats-new) and the [known issues](/help/release-notes/known-issues.md). See a list of [deprecated or removed functionality](/help/release-notes/deprecated-removed-features.md) to know what is removed in this release and see this [list of upcoming capabilities](/help/release-notes/known-issues.md#upcoming-assets-capabilities) to know what's coming in the near future. Finally, understand the AEM terms with the help of this [glossary](/help/overview/terminology.md).
+Read on to know the [details of the new Assets capabilities](#detailed-whats-new-of-assets) and the [known issues](/help/release-notes/known-issues.md). See a list of [deprecated or removed functionality](/help/release-notes/deprecated-removed-features.md) to know what is removed in this release and see this [list of upcoming capabilities](/help/release-notes/known-issues.md#upcoming-assets-capabilities) to know what's coming in the near future. Finally, understand the AEM terms with the help of this [glossary](/help/overview/terminology.md).
 
 ## Solution benefits {#solution-benefits}
 
