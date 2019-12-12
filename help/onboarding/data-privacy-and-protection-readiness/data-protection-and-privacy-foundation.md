@@ -1,11 +1,11 @@
 ---
-title: Data Protection and Data Privacy Regulations - AEM Foundation Readiness
-seo-title: AEM Foundation Readiness for Data Protection and Data Privacy Regulations; such as GDPR, CCPA, etc
+title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Foundation Readiness
+seo-title: Adobe Experience Manager as a Cloud Service Foundation Readiness for Data Protection and Data Privacy Regulations; such as GDPR, CCPA, etc
 description: Learn about Adobe Experience Manager as a Cloud Service Foundation support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 seo-description: Learn about Adobe Experience Manager as a Cloud Service Foundation support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 ---
 
-# AEM Foundation Readiness for Data Protection and Data Privacy Regulations {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Cloud Service Foundation Readiness for Data Protection and Data Privacy Regulations {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -25,7 +25,7 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service Foundat
 
 ## AEM Foundation Data Privacy and Protection support {#aem-foundation-data-privacy-and-protection-support}
 
-At the AEM Foundation level, the Personal Data that is stored is held in the User Profile. Therefore, the information in this article primarily addresses how to access and delete user profiles, to address the Access and Delete requests respectively.
+At the AEM Foundation level, the Personal Data that is stored is held in the User Profile. Therefore, the information in this article primarily addresses how to access and delete user profiles, to address the access and delete requests respectively.
 
 ## Accessing a User Profile {#accessing-a-user-profile}
 
