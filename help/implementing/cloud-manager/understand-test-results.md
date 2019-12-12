@@ -14,13 +14,13 @@ There are two types of tests run in this context:
 
  Both types of tests are run in a containerized infrastructure designed for running these types of tests.
 
- ## Writing Functional Tests {#functional-tests}
+## Writing Functional Tests {#writing-functional-tests}
 
- Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally this would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the maven-assembly-plugin using the jar-with-dependencies descriptor. 
+Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally this would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the maven-assembly-plugin using the jar-with-dependencies descriptor. 
 
- In addition, the JAR must have the Cloud-Manager-TestType manifest header set to integration-test. In the future, it is expected that additional header values will be supported. An example configuration for the maven-assembly-plugin is:
+In addition, the JAR must have the Cloud-Manager-TestType manifest header set to integration-test. In the future, it is expected that additional header values will be supported. An example configuration for the maven-assembly-plugin is:
 
- ```java
+```java
 <build>
     <plugins>
         <!-- Create self-contained jar with dependencies -->
@@ -51,11 +51,11 @@ There are two types of tests run in this context:
     </plugins>
 ```
 
- Within this JAR file, the class names of the actual tests to be executed must end in IT. 
+Within this JAR file, the class names of the actual tests to be executed must end in IT. 
  
- For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but a class named `com.myco.tests.aem.ExampleTest` would not. 
+For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but a class named `com.myco.tests.aem.ExampleTest` would not. 
  
- The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices.
+The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices.
 
 ## Custom Functional Testing {#custom-functional-test}
 
@@ -65,7 +65,6 @@ However, if no test JAR is produced by the build, the test passes by default. Th
 
 > Note:
 >The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality described above.
-
 
 ## Local Test Execution {#local-test-execution}
 
