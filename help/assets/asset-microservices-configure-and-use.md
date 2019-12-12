@@ -44,6 +44,8 @@ If more specific configuration of asset microservices is needed, administrators 
 
 If additional, custom processing of assets is required (e.g., integrations with other systems), post-processing workflows should be created and configured for the asset processing. For more details, see [post-processing workflows](#post-processing-workflows).
 
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+
 ## Configurations for asset microservices {#configure-asset-microservices}
 
 To configure asset microservices, administrators can use configuration user interface under **[!UICONTROL Tools/Assets/Processing Profiles]**.
