@@ -85,6 +85,6 @@ Adobe Experience Manager can be configured to automatically trigger the post-pro
 >
 >* [Get started using asset microservices](asset-microservices-configure-and-use.md)
 >* [Supported file formats](file-format-support.md)
->* [Adobe Asset Link]()
->* [AEM desktop app]()
+>* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
 >* [Apache Oak documentation on direct binary access](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
