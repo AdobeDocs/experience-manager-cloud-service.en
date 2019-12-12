@@ -32,6 +32,7 @@ solution-title: Experience Cloud
   + [Supported file formats](/help/assets/file-format-support.md)
   + [Architecture](/help/assets/architecture.md)
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
+  + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
   + [Add and upload assets](/help/assets/add-assets.md)
   + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
