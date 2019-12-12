@@ -154,7 +154,7 @@ See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-med
 **To track Dynamic Media viewers using embed code**
 
 1. Have a web page ready for embedding a Dynamic Media viewer.
-1. Obtain the embed code for Adobe Launch library by first logging in to Adobe Launch (see [Configuring Adobe Launch](#configuringadobelaunch)).
+1. Obtain the embed code for Adobe Launch library by first logging in to Adobe Launch (see [Configuring Adobe Launch](#configuring-adobe-launch-for-the-integration)).
 1. Click **[!UICONTROL Property]**, then click the **[!UICONTROL Environments]** tab.
 1. Pick up the Environment level that is relevant to the environment of the web page. Then, in the **[!UICONTROL Install]** column, click the box icon.
 1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Adobe Launch library embed code, along with the surrounding `<script/>` tags.

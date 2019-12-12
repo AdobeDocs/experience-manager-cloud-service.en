@@ -49,12 +49,16 @@ To get you up and running quickly:
 
    Start by identifying dynamic variables used by the existing quick view implementation so that you can enter hotspots and image map data properly during the carousel banner creation process in AEM Assets.
 
+<!-- OBSOLETE?
+
    >[!NOTE]
    >
-   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. <!--See information on [setting up eCommerce](/help/sites-administering/generic.md).
+   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables.
    >
    >
    >If you are an AEM Assets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
+
+-->
 
 1. Optional: [Create a Carousel Set viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md), as needed.
 
@@ -74,9 +78,9 @@ To get you up and running quickly:
 
    Add one or more hotspots or image maps to an image banner and associate each one with an action such as a link, a Quickview, or an Experience Fragment. After you add hotspots or image maps, you finish this task by publishing the carousel set. Publishing creates the embed code that you can use to copy and apply to your website landing page.
 
-   See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners) - Optional. If desired, you can view a representation of your carousel set and test its interactivity.
+   See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-banners) - Optional. If desired, you can view a representation of your carousel set and test its interactivity.
 
-1. [Carousel Banners{#carousel-banners}](#carousel-bannerscarousel-banners)
+1. [Publish Carousel Banners](#publishing-carousel-banners).
 
    You publish a Carousel Set as you would any asset. In Assets, navigate to the Carousel Set and select it and tap **[!UICONTROL Publish]**. Publishing a Carousel Set activates the URL and Embed string.
 
@@ -228,10 +232,6 @@ To upload image banners, see [Uploading assets](/help/assets/manage-digital-asse
    >    * Style of the buttons. Users can rotate through the banners by tapping each dot or number. You can change where the set indicator buttons appear (and if they are numeric or a dotted style) and how large they are.
    >    * Change the highlight style of an image map or the icon used for hotspots.
    >    * Before you edit a viewer preset, choose the style you want to base the preset off of. If you do not do this, when you start to edit the viewer preset, you will lose all of your changes if you decide change to a different preset
-   >
-   >
-   >See [Special Considerations for Carousel Banners](/help/assets/dynamic-media/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) for detailed instructions and more information on the viewer editor.
-   >
    >
 
    You can also preview what the carousel banner will look like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
