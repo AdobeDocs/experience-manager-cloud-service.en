@@ -118,7 +118,7 @@ EXIF stores metadata as pairs of a metadata name and a metadata value. These met
 
 As EXIF is automatically created by modern digital cameras and supported through modern graphics software, it can be seen as the lowest common denominator for metadata management.
 
-Most of the metadata fields defined by EXIF are of a highly technical nature and of limited use for descriptive metadata management. For this reason, AEM Assets offers mapping of EXIF properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-writeback.md), the powerful metadata format AEM Assets uses for metadata management.
+Most of the metadata fields defined by EXIF are of a highly technical nature and of limited use for descriptive metadata management. For this reason, AEM Assets offers mapping of EXIF properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-metadata.md), the powerful metadata format AEM Assets uses for metadata management.
 
 #### Other Metadata {#other-metadata}
 

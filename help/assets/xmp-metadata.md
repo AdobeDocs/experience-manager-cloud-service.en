@@ -9,7 +9,7 @@ contentOwner: AG
 
 XMP (Extensible Metadata Platform) is the metadata standard used by AEM Assets for all metadata management. XMP provides a standard format for the creation, processing, and interchange of metadata for a wide variety of applications.
 
-Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](xmp.md#xmp-core-concepts) and is [supported by Adobe](xmp.md#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
+Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
 
 ## XMP overview and ecosystem {#xmp-ecosystem}
 
@@ -86,7 +86,7 @@ The XMP write-back feature lets you propagate the metadata changes to all or spe
 
 ### Enable XMP write-back {#enable-xmp-writeback}
 
-<!-- asgupta, Engg: Need attention here. for configuration.
+<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
