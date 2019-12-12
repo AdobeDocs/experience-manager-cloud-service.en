@@ -14,7 +14,7 @@ There are two types of tests run in this context:
 
  Both types of tests are run in a containerized infrastructure designed for running these types of tests.
 
- ## Writing Functional Tests {functional-tests}
+ ## Writing Functional Tests {#functional-tests}
 
  Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally this would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the maven-assembly-plugin using the jar-with-dependencies descriptor. 
 
