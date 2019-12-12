@@ -1,19 +1,21 @@
 ---
-title: Managing Metadata for Digital Assets
+title: Manage metadata for digital assets
 description: Learn about the types of metadata an how AEM Assets helps manage metadata for assets to allow easier categorization and organization of assets. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
 contentOwner: AG
 
 ---
 
-# Managing Metadata for Digital Assets {#managing-metadata-for-digital-assets}
+# Manage metadata of digital assets {#managing-metadata-for-digital-assets}
 
 Adobe Experience Manager (AEM) Assets keeps metadata for every asset. This allows for a easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to AEM Assets, metadata management integrates with the creative workflow. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
 
-* [XMP Metadata](xmp.md)
-* [How to edit or add metadata](meta-edit.md)
-* [Metadata Schemata Reference](meta-ref.md)
+>[!MORELIKETHIS]
+>
+>* [XMP Metadata](xmp-metadata.md)
+>* [How to edit or add metadata](meta-edit.md)
+>* [Metadata Schemata Reference](meta-ref.md)
 
-## Why we need metadata {#why-we-need-metadata}
+## Why metadata {#why-metadata}
 
 Metadata means data about data. In this regard, data refers to the asset you are dealing with, for instance an image. Metadata is important because it allows users to manage assets more efficiently.
 
@@ -44,7 +46,7 @@ As metadata is added to assets, the value of the asset grows, because the asset 
 
 For these reasons, AEM Assets provides you with the right means of creating, managing, and exchanging metadata for your digital assets.
 
-## Metadata Basics {#metadata-basics}
+## Metadata basics {#metadata-basics}
 
 Metadata is extracted from assets when they are imported (ingested). In addition, adding metadata helps you categorize assets even further.
 
@@ -76,14 +78,14 @@ AEM Assets supports all relevant standards for metadata management.
 
 Because of the importance of metadata and the high manual involvement required to create metadata, standards have been established that make it easier to exchange.
 
-### Encoding Standards {#encoding-standards}
+### Encoding standards {#encoding-standards}
 
 There are a variety of ways that metadata can be embedded into files. A selection of encoding standards are supported:
 
 * XMP: used by AEM Assets to store the extracted metadata within the repository.
 * ID3: for audio and video files.
 * EXIF: for image files.
-* Other/Legacy: from Microsoft Word, Powerpoint, Excel and so on.
+* Other/Legacy: from Microsoft Word, PowerPoint, Excel and so on.
 
 #### XMP {#xmp}
 
@@ -120,7 +122,7 @@ Most of the metadata fields defined by EXIF are of a highly technical nature and
 
 #### Other Metadata {#other-metadata}
 
-Other metadata that can be embedded from files include Microsoft Word, Powerpoint, Excel, and so on.
+Other metadata that can be embedded from files include Microsoft Word, PowerPoint, Excel, and so on.
 
 ## Metadata Schemata {#metadata-schemata}
 
@@ -128,7 +130,7 @@ Metadata schemas are predefined sets of metadata property definitions that can b
 
 You can also design your own metadata schemata if none exist that meet your needs (be careful, however, not to duplicate something that already exists). Within an organization, separating schemata makes it easier to share metadata among organizations.
 
-AEM provides you with an out-of-the-box list of the most popular metadata schemata, allowing you to jumpstart your metadata strategy and pick the metadata properties that you need from an already-defined schemata.
+AEM provides you with an out-of-the-box list of the most popular metadata schemata, allowing you to jump-start your metadata strategy and pick the metadata properties that you need from an already-defined schemata.
 
 The metadata schemata supported are listed in the following section.
 
@@ -185,7 +187,7 @@ The metadata schemata supported are listed in the following section.
 * xmp
 * xmpPG - xmp for paged text
 
-### Multimedia-Specific Metadata {#multimedia-specific-metadata}
+### Multimedia-specific metadata {#multimedia-specific-metadata}
 
 * xmpDM - Dynamic Media
 * xmpMM - Media Management
@@ -198,4 +200,3 @@ For example, some of the ways you could use metadata-driven workflows:
 
 * The workflow can check whether an image has a title. If it does not, the system notifies a particular user to add a title.
 * The workflow can check whether a copyright notice on an asset allows for distribution. If it does, the system sends the asset to one server. If it does not, the system sends the asset to another server.
-
