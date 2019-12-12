@@ -120,7 +120,6 @@ solution-title: Experience Cloud
 + Implementing for AEM as a Cloud Service {#implementing}
   + Using Cloud Manager {#using-cloud-manager}
     + [Configure your CI/CD Pipeline](implementing/cloud-manager/configure-pipeline.md)
-    + [Understand your Test Results](implementing/cloud-manager/understand-test-results.md)
     + [Manage your Environments](implementing/cloud-manager/manage-environments.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Package Structure](implementing/developing/introduction/aem-project-content-package-structure.md)
