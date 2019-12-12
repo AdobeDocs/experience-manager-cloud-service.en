@@ -60,7 +60,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Preview and publish video assets
 
         * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#uploadingandpreviewingvideoassets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
+          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
           [Viewing video renditions](/help/assets/video-renditions.md)
           [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -902,6 +902,8 @@ To monitor progress (including failed encoding/YouTube publish):
 
 1. You may receive email notifications about aborted or failed workflow jobs. These email notifications are configurable by an administrator. See [Configuring email notifications](#configuring-e-mail-notifications).
 
+<!-- EMAIL NOT AVAILABLE IN SKYLINE
+
 #### Configuring e-mail notifications {#configuring-e-mail-notifications}
 
 >[!NOTE]
@@ -910,9 +912,8 @@ To monitor progress (including failed encoding/YouTube publish):
 
 How you configure notification depends on whether you want notifications for YouTube publishing jobs.
 
-<!-- * For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. See [Configuring Email Notification in AEM](/help/sites-administering/notification.md). You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.-->
+* For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
 
-<!--
 For YouTube publishing jobs, do the following:
 
 1. In AEM, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
@@ -944,6 +945,8 @@ For YouTube publishing jobs, do the following:
 
 1. When you are finished, near the upper-right corner of the dialog box, tap the **[!UICONTROL Done]** icon (check mark).
 1. On the Publish to YouTube workflow page, near the upper-right corner, tap **[!UICONTROL Sync]**.
+
+-->
 
 ## Viewing video reports {#viewing-video-reports}
 
@@ -978,10 +981,10 @@ To view video reports:
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
-    * Near the upper-right corner, tap the **Refresh Video Report **icon.
+    * Near the upper-right corner, tap the **[UICONTROL Refresh Video Report]** icon.
       You only need to use Refresh if the end date of the report is the current day. This ensures that you see the video tracking that has occurred since the last time you ran the report.
 
-    * Near the upper-right corner, tap the **Date Picker **icon.
+    * Near the upper-right corner, tap the **[UICONTROL Date Picker]** icon.
       Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report]**.
 
    The Top Metrics group box identifies various aggregate measurements for all *published *videos across your site.
@@ -996,9 +999,15 @@ Use the Scene7 Viewers Reference and the Scene7 HTML5 Viewers SDK to create your
 
 See [Scene7 Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
 
+<!-- 
+
+SDK ONLY AVAILABLE INTERNALLY NOW
+
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+
+-->
 
 To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
 
@@ -1011,7 +1020,7 @@ To view Video Reports based on a video viewer that you created using the Scene7 
 
    The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   The correct value for the config2 parameter is found in both the **Embed Code **and in the copy **URL **function. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
+   The correct value for the config2 parameter is found in both the **[!UICONTROL Embed Code]** and in the copy **[UICONTROL URL]** function. In the URL from the copy **[UICONTROL URL]** command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
 1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
@@ -1064,7 +1073,7 @@ Dynamic Media has the capability of converting caption files to JSON (JavaScript
 
 See [Serving static (non-image) contents](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) in the *Scene7 Image Serving API Help* for more information about using the JSON function in a URL.
 
-To add captions or subtitles to video:
+**To add captions or subtitles to video**
 
 1. Use a third-party application or service to create your video caption/subtitle file.
 
@@ -1078,7 +1087,7 @@ To add captions or subtitles to video:
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load**. See [Obtaining a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtainingaurlstringforanasset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load**. See [Obtaining a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
 
    Now follow the onscreen instructions from the site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a .vtt filename extension.
 
@@ -1089,7 +1098,7 @@ To add captions or subtitles to video:
    Generally, you want to name the caption VTT file the same name as the video file, and append it with the language locale, such as -EN, or -FR, or -DE, and so on. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
 
 1. In AEM, upload your WebVTT caption file into DAM.
-1. Navigate to the *published *video asset that you want to associate with the caption file that you uploaded.
+1. Navigate to the *published* video asset that you want to associate with the caption file that you uploaded.
 
    Remember that URLs are only available to copy *after* you have first *published* the assets.
 
@@ -1124,7 +1133,6 @@ You create a chapter list for your video in much the same way that you create ca
 You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
--->
 
 ```xml
 WEBVTT
@@ -1144,7 +1152,6 @@ Cost-efficient access to rapidly evolving technology.
 
 In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter’s contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the video’s timeline.
 
-<!--
 Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
 
 See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
@@ -1189,7 +1196,9 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
      </tbody>
    </table>
 
-## About video thumbnails {#about-video-thumbnails-in-dynamic-media-scene-mode}
+<!--
+
+## About video thumbnails {#about-video-thumbnails}
 
 A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to click on the video.
 
@@ -1201,8 +1210,6 @@ Note that a custom video thumbnail image that you select from a video is not ext
 
 The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
 
-See also [About video thumbnails in Dynamic Media - Hybrid mode](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
-
 ### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
 
 1. Be sure you have already done the following:
@@ -1210,7 +1217,7 @@ See also [About video thumbnails in Dynamic Media - Hybrid mode](#about-video-th
     * Created a folder for your video assets.
     * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#uploadingandpreviewingvideoassets).
+    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
 1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, tap the video asset.
@@ -1233,7 +1240,11 @@ See also [About video thumbnails in Dynamic Media - Hybrid mode](#about-video-th
 1. On the Change Thumbnail page, tap **[!UICONTROL Save Change]**.
 1. On the video's Properties page, in the upper-right corner, tap **[!UICONTROL Save & Close]**.
 
-## About video thumbnails in Dynamic Media - Hybrid mode {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+-->
+
+<!--
+
+## About video thumbnails in Dynamic Media Hybrid mode{#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
 You can choose from one of ten thumbnail images automatically generated by Dynamic Media to add to your video. The video player displays your selected thumbnail when a video asset is used with the Dynamic Media component in the authoring environment of AEM Sites, AEM Mobile, or AEM Screens. The thumbnail serves as a static picture that best represents the contents of your entire video and further encourages users to click the Play button.
 
@@ -1245,11 +1256,11 @@ If you prefer, you can choose to upload a custom thumbnail to represent your vid
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
+-->
+
+<!--
+
 ### Adding a video thumbnail {#adding-a-video-thumbnail}
-
-These steps apply only to Dynamic Media running in Hybrid mode.
-
-T**o add a video thumbnail**,
 
 1. Navigate to an uploaded video asset that you want to add a video thumbnail.
 1. In asset selection mode either from the List View or the Card View, tap the video asset.
@@ -1267,6 +1278,10 @@ T**o add a video thumbnail**,
    If you configured new default time intervals, or you uploaded a new video to replace the existing video, you will need to have Dynamic Media regenerate the thumbnails.
 
    See [Configuring the default time interval that video thumbnails are generated](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
+
+-->
+
+<!--
 
 #### Configuring the default time interval that video thumbnails are generated {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
@@ -1294,6 +1309,10 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
    See [Adding a video thumbnail.](#adding-a-video-thumbnail)
 
+-->
+
+<!--
+
 ### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail-1}
 
 These steps apply only to Dynamic Media running in Hybrid mode.
@@ -1309,4 +1328,5 @@ T**o add a custom video thumbnail**,
 1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
+
 -->

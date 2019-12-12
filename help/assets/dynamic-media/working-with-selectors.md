@@ -11,9 +11,8 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 ---
 
-# Working with Selectors {#working-with-selectors}
+# Working with Selectors in Dynamic Media {#working-with-selectors}
 
-<!--
 When working with an Interactive Image, Interactive Video, or Carousel Banner, you select assets and you select sites and products for hotspots and image maps to link to. When working with Image Sets, Spin Sets, and Multimedia Sets, you also select assets with the Asset Selector.
 
 This topic covers how to use the Product, Site, and Asset selectors, including the ability to browse, filter, sort within the selectors.
@@ -26,7 +25,7 @@ For example, in this Carousel Banner, you use the Product selector if you are li
 
 When you select (rather than manually enter) where hotspots or image maps go to, you are using the selector. The Site selector only works if you are an AEM Sites customer. The product selector also requires AEM Commerce.
 
-## Selecting products {#selecting-products}
+## Selecting products in Dynamic Media {#selecting-products}
 
 Use the Product selector to choose a product when you want a hotspot or image map to provide a Quickview to a specific product in your product catalog.
 
@@ -64,7 +63,7 @@ Use the Product selector to choose a product when you want a hotspot or image ma
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selecting Sites {#selecting-sites}
+## Selecting Sites in Dynamic Media {#selecting-sites}
 
 Use the site selector to choose a webpage when you want a hotspot or image map to link to a webpage that is managed within AEM sites.
 
@@ -84,7 +83,7 @@ Use the site selector to choose a webpage when you want a hotspot or image map t
 
 1. When in **[!UICONTROL Preview]** mode if you tap the hotspot or image map, you navigate to the AEM site page you specified.
 
-## Selecting Assets {#selecting-assets}
+## Selecting assets in Dynamic Media {#selecting-assets}
 
 Use this selector to choose images for use in a Carousel Banner, an Interactive Video, Image Sets, Mixed Media Sets, and Spin Sets. In interactive Video, the asset selector is available when you tap **[!UICONTROL Select Assets]** in the **[!UICONTROL Content]** tab. In Carousel Sets, the asset selector is available when you create a new slide. In Image Sets, Mixed Media Sets, and Spin Sets, the asset selector is available when you create a new Image Set, Mixed Media Set, or Spin Set, respectively.
 
