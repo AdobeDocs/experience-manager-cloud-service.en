@@ -65,7 +65,7 @@ solution-title: Experience Cloud
       + [Responsive Layout](sites-cloud/authoring/features/responsive-layout.md)
       + [Using Tags](sites-cloud/authoring/features/tags.md)
     + Projects {#projects}
-      + [Working with Projects](psites-cloud/authoring/rojects/overview.md)
+      + [Working with Projects](sites-cloud/authoring/projects/overview.md)
       + [Managing Projects](sites-cloud/authoring/projects/managing.md)
       + [Working with Tasks](sites-cloud/authoring/projects/tasks.md)
       + [Working with Project Workflows](sites-cloud/authoring/projects/workflows.md)
