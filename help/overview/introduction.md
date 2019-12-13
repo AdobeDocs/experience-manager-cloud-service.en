@@ -394,7 +394,7 @@ Authoring was progressively developed and optimized to cater for all use-cases, 
 
 #### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
 
-The basic principles of authoring (both Sites and Assets) will be very familiar to anyone who has used AEM in the past. 
+The basic principles of authoring (both Sites and Assets) will be very familiar to anyone who has used AEM in the past.
 
 The main difference is that the UI is purely touch-enabled; the classic UI is no longer available. Otherwise the basics remain unchanged, with only small changes apparent. 
 
@@ -403,6 +403,14 @@ The main difference is that the UI is purely touch-enabled; the classic UI is no
 >[!NOTE]
 >
 >For further details see the Overview of [Changes to Sites](/help/sites-cloud/sites-cloud-changes.md).
+
+### AEM Assets {#aem-assets}
+
+Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
+
+Assets offering includes next-generation asset processing in the cloud and high performance asset ingestion and search.
+
+For details, see [overview and introduction to Assets as a Cloud Service](/help/assets/whats-new-assets.md).
 
 <!--
 

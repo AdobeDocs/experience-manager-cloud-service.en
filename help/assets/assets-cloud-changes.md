@@ -4,13 +4,13 @@ description: Notable Changes to Adobe Experience Manager Assets in AEM Cloud Ser
 
 ---
 
-# Changes to AEM Assets in AEM as a Cloud Service {#notable-changes}
+# Changes to Experience Manager Assets in Cloud Service {#notable-changes}
 
-AEM Cloud Service brings many new features and possibilities for managing your AEM projects. However there are a number of differences between AEM Assets on premise or in Adobe Managed Service as compared to AEM Cloud Service. This document highlights the important differences.
+Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are a number of differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences.
 
 >[!NOTE]
 >
->This document highlights the notable changes to AEM Assets. For changes general to AEM in the Cloud see [Notable changes to AEM as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
+>This document highlights the notable changes to AEM Assets. For changes that are generic to AEM as a Cloud Service see [Notable changes to AEM as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
 
 The main differences are in the following areas:
 
