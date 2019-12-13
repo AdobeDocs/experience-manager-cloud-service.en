@@ -13,7 +13,7 @@ content owner: Raoul Duke
 + Overview {#overview}
   + [Introduction to AEM as a Cloud Service](overview/introduction.md)
   + [Terminology - New for the Cloud](overview/terminology.md)
-  + [Notable Changes in AEM Cloud Services](release-notes/aem-cloud-changes.md)
+  + [Notable Changes in AEM Cloud Service](release-notes/aem-cloud-changes.md)
 + Release Notes {#release-notes}
   + [What's New](release-notes/what-is-new.md)
   + [Cloud Service Release Notes](release-notes/release-notes.md)
@@ -99,7 +99,6 @@ content owner: Raoul Duke
   + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
   + [Add and upload assets](/help/assets/add-assets.md)
-  + [Configure and administer Assets](/help/assets/configure-administer-assets-as-a-cloud-service.md)
   + [Search assets](/help/assets/search-assets.md)
   + [Manage assets](/help/assets/manage-digital-assets.md)
   + [How to organize assets](/help/assets/organize-assets.md)
@@ -203,6 +202,5 @@ content owner: Raoul Duke
   + [Backup and Restore](operations/backup.md)
   + [Content Search and Indexing](operations/indexing.md)
 + Integrating {#integrations}
-  + [Integrating with Adobe Analytics](integrating/Integrating-with-Adobe-Analytics.md)
-  + [Integrating with Adobe Target](integrating/Integrating-with-Adobe-Target.md)
-
+  + [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
+  + [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
