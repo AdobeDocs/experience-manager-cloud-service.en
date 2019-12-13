@@ -140,3 +140,6 @@ solution-title: Experience Cloud
   + [Content Replication Service](operations/replication.md)
   + [Maintenance Tasks](operations/maintenance.md)
   + [Backup and Restore](operations/backup.md)
++ Integrating {#operations}
+  + [Integrating with Adobe Analytics](integrating/Integrating-with-Adobe-Analytics.md)
+  + [Integrating with Adobe Target](integrating/Integrating-with-Adobe-Target.md)
