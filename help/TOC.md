@@ -12,12 +12,13 @@ solution-title: Experience Cloud
 + Overview {#overview}
   + [Introduction to AEM as a Cloud Service](overview/introduction.md)
   + [Terminology - New for the Cloud](overview/terminology.md)
-  + [Changes in AEM Cloud Services](/help/release-notes/aem-cloud-changes.md)
+  + [Notable Changes in AEM Cloud Services](release-notes/aem-cloud-changes.md)
 + Release Notes {#release-notes}
   + [What's New](release-notes/what-is-new.md)
   + [Cloud Service Release Notes](release-notes/release-notes.md)
-  + [Known issues](/help/release-notes/known-issues.md)
-  + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
+  + [Notable Changes in AEM Cloud Service](release-notes/aem-cloud-changes.md)
+  + [Known issues](release-notes/known-issues.md)
+  + [Deprecated and Removed Features](release-notes/deprecated-removed-features.md)
 + Core Concepts of AEM as a Cloud Service {#core-concepts}
   + [An Introduction to the Architecture of AEM as a Cloud Service](core-concepts/architecture.md)
 + Onboarding {#onboarding}
@@ -29,7 +30,65 @@ solution-title: Experience Cloud
     + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
     + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-sites.md)
 + AEM Sites in the Cloud {#sites-cloud}
-  + [Features of AEM Sites in the Cloud](sites-cloud/sites-cloud-changes.md)
+  + [Notable Changes to AEM Sites in AEM Cloud Service](sites-cloud/sites-cloud-changes.md)
+  + Authoring {#authoring}
+    + Getting Started {#getting-started}
+      + [Quick Start Guide to Authoring Pages](sites-cloud/authoring/getting-started/quick-start.md)
+      + [Authoring Concepts](sites-cloud/authoring/getting-started/concepts.md)
+      + [Basic Handling](sites-cloud/authoring/getting-started/basic-handling.md)
+      + [Search](sites-cloud/authoring/getting-started/search.md)
+      + [Configuring your account environment](sites-cloud/authoring/getting-started/account-environment.md)
+      + [Your Inbox](sites-cloud/authoring/getting-started/inbox.md)
+      + [Keyboard Shortcuts](sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+    + Authoring Fundamentals {#authoring}
+      + [Environment and Tools](sites-cloud/authoring/fundamentals/environment-tools.md)
+      + [Adding Page Annotations](sites-cloud/authoring/fundamentals/annotations.md)
+      + [Creating and Organizing Pages](sites-cloud/authoring/fundamentals/organizing-pages.md)
+      + [Editing Page Content](sites-cloud/authoring/fundamentals/editing-content.md)
+      + [The Rich Text Editor](sites-cloud/authoring/fundamentals/rich-text-editor.md)
+      + [Page Properties](sites-cloud/authoring/fundamentals/page-properties.md)
+      + [Publishing Pages](sites-cloud/authoring/fundamentals/publishing-pages.md)
+      + [Content Fragments](sites-cloud/authoring/fundamentals/content-fragments.md)
+      + [Experience Fragments](sites-cloud/authoring/fundamentals/experience-fragments.md)
+      + [Export to CSV](sites-cloud/authoring/fundamentals/csv-export.md)
+      + [Components](sites-cloud/authoring/fundamentals/components.md)
+      + [Authoring for Mobile Devices](sites-cloud/authoring/fundamentals/mobile.md)
+      + [Accessible Content (WCAG 2.0 Conformance)](sites-cloud/authoring/fundamentals/accessible-content.md)
+      + [Troubleshooting](sites-cloud/authoring/fundamentals/troubleshooting.md)
+      + [Keyboard Shortcuts](sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+    + Authoring Features {#features}
+      + [Page Templates](sites-cloud/authoring/features/templates.md)
+      + [Style System](sites-cloud/authoring/features/style-system.md)
+      + [Page Versions](sites-cloud/authoring/features/page-versions.md)
+      + [Page Diff](sites-cloud/authoring/features/page-diff.md)
+      + [Components Console](sites-cloud/authoring/features/components-console.md)
+      + [Responsive Layout](sites-cloud/authoring/features/responsive-layout.md)
+      + [Using Tags](sites-cloud/authoring/features/tags.md)
+    + Projects {#projects}
+      + [Working with Projects](sites-cloud/authoring/projects/overview.md)
+      + [Managing Projects](sites-cloud/authoring/projects/managing.md)
+      + [Working with Tasks](sites-cloud/authoring/projects/tasks.md)
+      + [Working with Project Workflows](sites-cloud/authoring/projects/workflows.md)
+    + Launches {#launches}
+      + [Working with Launches](sites-cloud/authoring/launches/overview.md)
+      + [Creating Launches](sites-cloud/authoring/launches/creating.md)
+      + [Editing Launches](sites-cloud/authoring/launches/editing.md)
+      + [Promoting Launches](sites-cloud/authoring/launches/promoting.md)
+    + Workflows {#workflows}
+      + [Working with Workflows](sites-cloud/authoring/workflows/overview.md)
+      + [Applying Workflows to Pages](sites-cloud/authoring/workflows/applying.md)
+      + [Participating in Workflows](sites-cloud/authoring/workflows/participating.md)
+      + [Project Workflows](sites-cloud/authoring/projects/workflows.md)
+    + Personalization {#personalization}
+      + [Personalization Overview](sites-cloud/authoring/personalization/overview.md)
+      + [Previewing Pages Using ContextHub Data](sites-cloud/authoring/personalization/contexthub.md)
+      + [Authoring Targeted Content Using Targeting Mode](sites-cloud/authoring/personalization/targeted-content.md)
+      + [Working with Targeted Content in Multisites](sites-cloud/authoring/personalization/multisite-targeted-content.md)
+      + [How Multisite Management for Targeted Content is Structured](sites-cloud/authoring/personalization/multisite-structure.md)
+      + [Managing Activities](sites-cloud/authoring/personalization/activities.md)
+      + [Managing Audiences](sites-cloud/authoring/personalization/audiences.md)
+      + [Creating and Managing Offers](sites-cloud/authoring/personalization/offers.md)
+      + [Understanding Segmentation](sites-cloud/authoring/personalization/segmentation.md)
 + AEM Assets in the Cloud {#assets}
   + [Overview and what's new](/help/assets/whats-new-assets.md)
   + [Changes to Assets in Cloud Service](/help/assets/assets-cloud-changes.md)
@@ -128,6 +187,7 @@ solution-title: Experience Cloud
     + [Develop a Repository Structure Package](implementing/developing/introduction/repository-structure-package.md)
     + [Content Search and Indexing](operations/indexing.md)
     + [AEM as a Cloud Service Development Guidelines](implementing/developing/introduction/development-guidelines.md)
+    + [AEM as a Cloud Service API](https://docs-stg.corp.adobe.com/content/help/en/experience-manager-cloud-service/using/sites-cloud/developing/ref/javadoc/index.html)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
   + Dispatcher in the Cloud {#dispatcher-cloud}
@@ -140,3 +200,4 @@ solution-title: Experience Cloud
   + [Content Replication Service](operations/replication.md)
   + [Maintenance Tasks](operations/maintenance.md)
   + [Backup and Restore](operations/backup.md)
+  + [Content Search and Indexing](operations/indexing.md)
