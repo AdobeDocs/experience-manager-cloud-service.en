@@ -75,7 +75,7 @@ For Adobe Experience Manager as a Cloud Service:
 
 Adobe is providing procedures for handling privacy requests related to Access, Delete and Opt-Out for Adobe Experience Manager as a Cloud Service. In some cases, there are APIs available that can be called from a customer developed portal or scripts to help with automation.
 
-The following diagram illustrates what a privacy request workflow might look like:
+The following diagram illustrates what a privacy request workflow might look like (illustrated using Adobe Experience Manager 6.5):
 
 ![Data Protection and Privacy](assets/data-protection-and-privacy-01.png)
 
