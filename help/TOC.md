@@ -202,6 +202,5 @@ content owner: Raoul Duke
   + [Backup and Restore](operations/backup.md)
   + [Content Search and Indexing](operations/indexing.md)
 + Integrating {#integrations}
-  + [Integrating with Adobe Analytics](integrating/Integrating-with-Adobe-Analytics.md)
-  + [Integrating with Adobe Target](integrating/Integrating-with-Adobe-Target.md)
-
+  + [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
+  + [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
