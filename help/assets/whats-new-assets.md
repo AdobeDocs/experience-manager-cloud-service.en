@@ -9,13 +9,11 @@ contentOwner: AG
 
 <!-- Need review info from gklebus -->
 
-Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
+Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
 
 Concurrent ingestion of a large number of assets or complex assets is very resource-intensive task for an AEM Author instance. The primary instance consumes considerable CPU, memory, and I/O resources when assets are added, processed, or even migrated. Such performance issues impact authoring and browsing experience of end-users.
 
 Businesses require support for a wide variety of file formats and content resolutions for multi-device, cross-geography, and multilingual use cases. Asset processing and storage requirements demand resources and capabilities that can overburden a traditional solution. At times, technical limitations of asset processing do not yield the desired results and at other times the cost of storage is an impediment for profit margins.
-
-The new-age, exploding requirements of asset management, governance, and delivery require a new-age system that is scalable and extendable. Enter Experience Manager Assets as a Cloud Service to address the perennial issues of digital asset management once and for all.
 
 To begin with, understand the [benefits of a cloud-native offering](#solution-benefits). Check out the notable [changes to AEM as a Cloud Service](/help/release-notes/aem-cloud-changes.md) that also impact Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
 
@@ -36,6 +34,5 @@ The following are the key benefits of Assets as a Cloud Service. To know more, s
 
 The major capabilities are:
 
-* Asset microservices
-* Asset upload methods
-* Open-source documentation
+* [Asset microservices](/help/assets/asset-microservices-overview.md)
+* [Asset upload methods](/help/assets/add-assets.md)

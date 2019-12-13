@@ -100,9 +100,7 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 
 If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
-You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number 1 appended to its name.
-
-![chlimage_1-213](assets/chlimage_1-213.png)
+You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number `1` appended to its name.
 
 >[!NOTE]
 >

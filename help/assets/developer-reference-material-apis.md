@@ -21,17 +21,13 @@ Experience Manager as a cloud service provides a new way of uploading assets to 
 
 ### Overview of direct binary upload {#overview-binary-upload}
 
-At a high level, the algorithm for uploading a binary is as follows:
+The high-level algorithm to upload a binary is:
 
-1. Submit an HTTP request informing AEM of the intent to upload a new binary
-2. POST the contents of the binary to one or more URIs provided by the initiation request
-3. Submit an HTTP request informing the Skyline instance that the contents of the binary were successfully uploaded
+1. Submit an HTTP request informing AEM of the intent to upload a new binary.
+1. POST the contents of the binary to one or more URIs provided by the initiation request.
+1. Submit an HTTP request to inform the server that the contents of the binary were successfully uploaded.
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
-https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
--->
-
-![Overivew of direct binary upload protocol](assets/add-assets-technical.png)
+![Overview of direct binary upload protocol](assets/add-assets-technical.png)
 
 Important differences compared to earlier versions of AEM include:
 
@@ -40,22 +36,16 @@ Important differences compared to earlier versions of AEM include:
 
 This approach should provide more scalable and performant handling of asset uploads.
 
-### Details of direct binary upload {#details-binary-upload}
-
-This section provides technical details explaining the new direct upload mechanism. 
-
 > ![NOTE]
 >
 > To review client code that implements this approach, refer to the open source [aem-upload library](https://github.com/adobe/aem-upload)
 
-#### Initiate Upload {#initiate-upload}
+### Initiate upload {#initiate-upload}
 
-The first step is to submit an HTTP POST request to the folder where the asset should be created or updated; include the selector `.initiateUpload.json` to indicate that the request is to begin a binary upload.
-
-Example, assuming the host is `author.acme.com`, and path to the folder where the asset should be created is `/assets/folder`:
+The first step is to submit an HTTP POST request to the folder where the asset should be created or updated; include the selector `.initiateUpload.json` to indicate that the request is to begin a binary upload. For example, the path to the folder where the asset should be created is `/assets/folder`:
 
 ```
-POST https://author.acme.com/content/dam/assets/folder.initiateUpload.json
+POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 ````
 
 The content type of the request body should be `application/x-www-form-urlencoded` form data, containing the following fields:
@@ -94,7 +84,7 @@ If successful, the request will respond with a 201 status code and a body contai
 * `(number) minPartSize`: The minimum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
 * `(number) maxPartSize`: The maximum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
 
-#### Upload Binary {#upload-binary}
+### Upload binary {#upload-binary}
 
 The output of initiating an upload will include one or more upload URI values. If more than one URI is provided, it's the client's responsibility to "split" the binary into parts and POST each part, in order, to each URI, in order. All URIs must be used, and each part must be larger than the minimum size and smaller than the maximum size as specified in the initiate response. Those requests will be fronted by CDN edge nodes to accelerate the upload of binaries.
 
@@ -104,9 +94,9 @@ One potential way of accomplishing this is to calculate the part size based on t
 * POST byte range 0-9,999 of the binary to the first URI in the list of upload URIs
 * POST byte range 10,000-19,999 of the binary to the second URI in the list of upload URIs
 
-If successful, the server will respond to each request with a 201 status code.
+If successful, the server responds to each request with a `201` status code.
 
-#### Complete Upload {#complete-upload}
+### Complete upload {#complete-upload}
 
 Once all parts of a binary are uploaded, the final step is to submit an HTTP POST request to the complete URI provided by the initiation data. The content type of the request body should be application/`x-www-form-urlencoded` form data, containing the following fields:
 
@@ -118,17 +108,17 @@ Once all parts of a binary are uploaded, the final step is to submit an HTTP POS
 * `(string) versionComment`: Optional. If a new version is created, comments that will be associated with the version.
 * `(bool) replace`: Optional: If true and an asset with the specified name already exists, the instance will delete the asset then re-create it.
 
-> ![NOTE]
+>![NOTE]
 >
-> If the asset already exists and neither createVersion nor replace is specified, then the instance will update the asset's current version with the new binary.
+>If the asset already exists and neither createVersion nor replace is specified, then the instance will update the asset's current version with the new binary.
 
 Like the initiate process, the complete request data may contain information for more than one file.
 
 The process of uploading a binary is not done until the complete URL is invoked for the file. Even if a file's binary is uploaded in its entirety, the asset will not be processed by the instance until its upload process is completed.
 
-If successful, the instance will respond with a 200 status code.
+If successful, the server responds with a `200` status code.
 
-### Open source upload library {#open-source-upload-library}
+### Open-source upload library {#open-source-upload-library}
 
 To learn more about the upload algorithms or to build your own upload scripts and tools, Adobe provides open source libraries and tools as a starting points:
 
@@ -141,9 +131,9 @@ To learn more about the upload algorithms or to build your own upload scripts an
 
 >[!NOTE]
 >
->For Experience Manager as a Cloud Service only the new upload APIs are supported. APIs from Experience Manager 6.5 are deprecated as those depend on uploading binaries to AEM.
+>For Experience Manager as a Cloud Service only the new upload APIs are supported. APIs from Experience Manager 6.5 are deprecated.
 
-Methods related to uploading or updating assets or renditions (any binary upload) are deprecated in the following APIs:
+Methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
 
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, like `AssetManager.createAsset(..)`
@@ -157,7 +147,7 @@ Methods related to uploading or updating assets or renditions (any binary upload
 
 Most of asset processing is executed based on **[!UICONTROL Processing Profiles]** configuration by [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices), and does not require developer extensions.
 
-For the post-processing worfklow configuration, standard AEM Workflows with extensions (e.g., custom steps can be used). Review the following subsection to understand, which workflow steps can be used in the asset post-processing workflows.
+For the post-processing workflow configuration, standard AEM Workflows with extensions (e.g., custom steps can be used). Review the following subsection to understand, which workflow steps can be used in the asset post-processing workflows.
 
 ### Workflow steps in post-processing workflow {#post-processing-workflows-steps}
 
@@ -169,7 +159,9 @@ Due to a new deployment model introduced with Experience Manager as a Cloud Serv
 
 Here is a list of technical workflow models and their level of support in AEM as a Cloud Service:
 
-#### Supported workflow steps
+### Supported workflow steps {#supported-workflow-steps}
+
+The following workflow steps are supported in the Cloud Service.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -181,40 +173,46 @@ Here is a list of technical workflow models and their level of support in AEM as
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
 
-#### Replaced by asset microservices processing or unsupported
+### Unsupported or replaced models {#unsupported-replaced-models}
 
-* `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`       
-* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`       
-* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`   
-* `com.day.cq.dam.core.process.GateKeeperProcess`       
-* `com.day.cq.dam.core.process.AssetOffloadingProcess`  
+The following technical workflow models are either replaced by asset microservices or the support is not available.
+
+* `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.GateKeeperProcess`
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.day.cq.dam.core.process.MetadataProcessorProcess`
-* `com.day.cq.dam.core.process.XMPWritebackProcess`     
-* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess` 
-* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess` 
-* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`      
+* `com.day.cq.dam.core.process.XMPWritebackProcess`
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
 * `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
-* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`   
-* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`       
-* `com.day.cq.dam.core.process.CreatePdfPreviewProcess` 
-* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`    
-* `com.day.cq.dam.video.FFMpegThumbnailProcess` 
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
+* `com.day.cq.dam.video.FFMpegThumbnailProcess`
 * `com.day.cq.dam.core.process.ThumbnailProcess`
-* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`   
-* `com.day.cq.dam.core.process.CommandLineProcess`      
-* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`   
-* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`      
-* `com.day.cq.dam.core.process.CreateSubAssetsProcess`  
-* `com.day.cq.dam.core.process.DownloadAssetProcess`    
-* `com.day.cq.dam.word.process.ExtractImagesProcess`    
-* `com.day.cq.dam.word.process.ExtractPlainProcess`     
-* `com.day.cq.dam.video.FFMpegTranscodeProcess` 
-* `com.day.cq.dam.ids.impl.process.IDSJobProcess`       
-* `com.day.cq.dam.indd.process.INDDMediaExtractProcess` 
-* `com.day.cq.dam.indd.process.INDDPageExtractProcess`  
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
+* `com.day.cq.dam.core.process.CommandLineProcess`
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
+* `com.day.cq.dam.core.process.DownloadAssetProcess`
+* `com.day.cq.dam.word.process.ExtractImagesProcess`
+* `com.day.cq.dam.word.process.ExtractPlainProcess`
+* `com.day.cq.dam.video.FFMpegTranscodeProcess`
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
 * `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
-* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`  
-* `com.day.cq.dam.core.process.ScheduledPublishBPProcess`       
-* `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`     
-* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`   
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
+* `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
+* `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 * `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
+
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
+-->
