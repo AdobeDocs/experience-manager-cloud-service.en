@@ -7,10 +7,13 @@ contentOwner: AG
 
 # Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
+<!-- 
 Give a list of and overview of all reference information available.
 * New upload method
 * Javadocs
 * Assets HTTP API documented at [https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html](https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html)
+
+-->
 
 ## Asset upload {#asset-upload-technical}
 

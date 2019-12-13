@@ -15,7 +15,6 @@ docset: aem65
 
 # Carousel Banners{#carousel-banners}
 
-<!--
 Carousel banners enable marketers to drive conversion by easily creating interactive rotating promotional content and delivering it to any screen.
 
 Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel Banners enable you to quickly create or modify rotating banners, add interactivity such as hotspots linking to product detail or related resources, and deliver them to any screen&mdash;letting you bring new promotional content to market faster.
@@ -50,12 +49,16 @@ To get you up and running quickly:
 
    Start by identifying dynamic variables used by the existing quick view implementation so that you can enter hotspots and image map data properly during the carousel banner creation process in AEM Assets.
 
+<!-- OBSOLETE?
+
    >[!NOTE]
    >
-   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. <!--See information on [setting up eCommerce](/help/sites-administering/generic.md).
+   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables.
    >
    >
    >If you are an AEM Assets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
+
+-->
 
 1. Optional: [Create a Carousel Set viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md), as needed.
 
@@ -75,9 +78,9 @@ To get you up and running quickly:
 
    Add one or more hotspots or image maps to an image banner and associate each one with an action such as a link, a Quickview, or an Experience Fragment. After you add hotspots or image maps, you finish this task by publishing the carousel set. Publishing creates the embed code that you can use to copy and apply to your website landing page.
 
-   See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners) - Optional. If desired, you can view a representation of your carousel set and test its interactivity.
+   See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-banners) - Optional. If desired, you can view a representation of your carousel set and test its interactivity.
 
-- [Carousel Banners{#carousel-banners}](#carousel-bannerscarousel-banners)
+1. [Publish Carousel Banners](#publishing-carousel-banners).
 
    You publish a Carousel Set as you would any asset. In Assets, navigate to the Carousel Set and select it and tap **[!UICONTROL Publish]**. Publishing a Carousel Set activates the URL and Embed string.
 
@@ -98,13 +101,17 @@ If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carouse
 Start by identifying dynamic variables used by the existing quick view implementation so that you can enter hotspots or image map data properly during the carousel set creation process in AEM Assets.
 
 When you add hotspots or image maps to a banner image in AEM Assets you need to assign a SKU and optional additional variables to each hotspot or image map. Such variables are used later to match hotspots or image maps with quick view content.
--->
+
+<!--
+
 >[!NOTE]
 >
->If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. <!-- See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md).--> In addition, you can use the Interactive component and add it to your web page.
+>If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md). In addition, you can use the Interactive component and add it to your web page.
 >
 >If you are an AEM Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
-<!--
+
+-->
+
 It is important to properly identify the number and type of variables to associate with hotspot or image map data. Each hotspot or image map added to a banner image must carry enough information to unambiguously identify the product in the existing backend system. At the same time, each hotspot or image map should not include more data than is necessary. The reason is because that would make the data entry process overly complex and on-going hotspot or image map management more error-prone.
 
 There are different ways to identify a set of variables to use for hotspot or image map data.
@@ -225,10 +232,6 @@ To upload image banners, see [Uploading assets](/help/assets/manage-digital-asse
    >    * Style of the buttons. Users can rotate through the banners by tapping each dot or number. You can change where the set indicator buttons appear (and if they are numeric or a dotted style) and how large they are.
    >    * Change the highlight style of an image map or the icon used for hotspots.
    >    * Before you edit a viewer preset, choose the style you want to base the preset off of. If you do not do this, when you start to edit the viewer preset, you will lose all of your changes if you decide change to a different preset
-   >
-   >
-   >See [Special Considerations for Carousel Banners](/help/assets/dynamic-media/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) for detailed instructions and more information on the viewer editor.
-   >
    >
 
    You can also preview what the carousel banner will look like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
@@ -369,8 +372,6 @@ You can perform a variety of editing tasks on Carousel Sets such as the followin
    >[!NOTE]
    >
    >If you are editing interactive images with hotspots and crop the image, your hotspots are removed.
-   >
-   >
 
 ## (Optional) Previewing Carousel Banners {#optional-previewing-carousel-banners}
 
@@ -468,4 +469,3 @@ The last step to trigger the quick view URL and activate the quick view panel mo
 ## Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 
 See [Using Quickviews to create custom pop-ups](/help/assets/dynamic-media/custom-pop-ups.md).
--->

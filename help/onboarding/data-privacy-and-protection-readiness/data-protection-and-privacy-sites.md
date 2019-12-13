@@ -1,11 +1,11 @@
 ---
-title: Data Protection and Data Privacy Regulations - AEM Sites Readiness
-seo-title: AEM Sites Readiness for Data Protection and Data Privacy Regulations; such as GDPR, CCPA, etc
+title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Sites Readiness
+seo-title: Adobe Experience Manager as a Cloud Service Sites Readiness for Data Protection and Data Privacy Regulations; such as GDPR, CCPA, etc
 description: Learn about Adobe Experience Manager as a Cloud Service Sites support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 seo-description: Learn about Adobe Experience Manager as a Cloud Service Sites support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project. 
 ---
 
-# AEM Sites Readiness for Data Protection and Data Privacy Regulations {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Cloud Service Sites Readiness for Data Protection and Data Privacy Regulations {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -23,13 +23,13 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service Sites s
 >
 >For more information about Adobe's response to privacy issues, and what this means for you as an Adobe customer, see [Adobe's Privacy Center](https://www.adobe.com/privacy.html). 
 
-Adobe Experience as a Cloud Service Sites is ready to help customers with their data privacy and protection compliance obligations. This page guides customers through the procedures to handle such requests in AEM Sites. It describes the location of private data stored, and how to remove them manually or with code.
+Adobe Experience Manager as a Cloud Service Sites is ready to help customers with their data privacy and protection compliance obligations. This page guides customers through the procedures to handle such requests in AEM Sites. It describes the location of private data stored, and how to remove them manually or with code.
 
 For further information see the [Adobe Privacy Center](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->See [AEM Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md) for further details.
+>See [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md) for further details.
 
 ## AEM Author Tier {#aem-author-tier}
 
@@ -49,15 +49,15 @@ AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) tha
 
 AEM has a cookie opt-out service that can be used for managing the opt-in/opt-out for users.
 
-## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
+## Analytics Foundation {#analytics-foundation}
 
-AEM Sites includes an optional integration with Enhanced Insights by Analytics which uses functionality within the Adobe Analytics On-demand Service.
+AEM Sites includes an optional integration with Analytics Foundation which uses functionality within the Adobe Analytics On-demand Service.
 
 For further information on managing data subject requests related to Adobe Analytics see [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## Enhanced Personalization by Target {#enhanced-personalization-by-target}
+## Personalization Foundation by Target {#personalization-foundation-by-target}
 
-AEM Sites includes an optional integration with Enhanced Personalization by Target which uses functionality within the Adobe Target On-demand Service.
+AEM Sites includes an optional integration with Personalization Foundation by Target which uses functionality within the Adobe Target On-demand Service.
 
 For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html).
 
@@ -75,10 +75,10 @@ By default, this visitor-data is not stored in AEM; AEM sends rules to the data 
 
 The site owner needs to implement an opt-out component according to the following guidelines.
 
-These guidelines implement opt-in as the default. Thus, a website visitor must clearly agree, before any Personal Data is stored in the browser's (client-side) persistence.
+These guidelines implement opt-in as the default. Thus, a website visitor must clearly agree, before any personal data is stored in the browser's (client-side) persistence.
 
 * The opt-out component should be included every time the ContextHub component is included.
-* The terms and conditions that relate to GDPR for the website, must be displayed to the website visitor, allowing them to:
+* The terms and conditions that relate to data protection and privacy for the website, must be displayed to the website visitor, allowing them to:
 
     * accept
     * reject

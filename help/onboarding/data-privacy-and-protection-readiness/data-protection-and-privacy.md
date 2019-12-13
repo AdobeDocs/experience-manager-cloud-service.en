@@ -75,7 +75,7 @@ For Adobe Experience Manager as a Cloud Service:
 
 Adobe is providing procedures for handling privacy requests related to Access, Delete and Opt-Out for Adobe Experience Manager as a Cloud Service. In some cases, there are APIs available that can be called from a customer developed portal or scripts to help with automation.
 
-The following diagram illustrates what a privacy request workflow might look like:
+The following diagram illustrates what a privacy request workflow might look like (illustrated using Adobe Experience Manager 6.5):
 
 ![Data Protection and Privacy](assets/data-protection-and-privacy-01.png)
 
@@ -91,7 +91,7 @@ See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](
 
 See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-sites.md)
 
-### Adobe Experience Manager as a Cloud Service Integration with Adobe Target & Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
+## Adobe Experience Manager as a Cloud Service Integration with Adobe Target & Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
 These Adobe Experience Manager as a Cloud Service integrations are with data protection and privacy (e.g. GDPR) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
 For further information see:

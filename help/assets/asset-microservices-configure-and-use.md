@@ -23,32 +23,35 @@ Asset microservices provide a scalable and resilient processing of assets using 
 
 Asset processing is carried out based on configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow the administrator to add more specific asset processing configuration. To allow for extensibility and full customization, asset processing allows for an optional configuration of post-processing workflows, which are then created and maintained by the administrator.
 
-A high-level flow for asset processing in Experience Manager as a Cloud service is presented below.
+A high-level flow for asset processing in Experience Manager as a Cloud Service is presented below.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservieces-flow](assets/asset-microservices-flow.png)
+![asset-microservices-flow](assets/asset-microservices-flow.png)
 
 >[!NOTE]
 >
 > For customers updating from previous versions of Experience Manager - asset processing described in this section replaces the "DAM Update Asset" workflow model used for asset ingestion processing before. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
 
-## Getting started with asset processing {#getting-started}
+## Get started with asset processing {#get-started}
 
-Asset processing with asset microservices is pre-configured with a default configuration, ensuring that the default renditions required by the system, as well as metadata extraction and text extraction are available. Users can start uploading / updating assets immediately and processing will take place.
+Asset processing with asset microservices is pre-configured with a default configuration, ensuring that the default renditions required by the system are available. It also ensure that metadata extraction and text extraction operations are available. Users can start uploading or updating assets immediately and basic processing is available by default.
 
-If more specific configuration of asset microservices is needed, administrators can create additional **[!UICONTROL Processing Profiles]**, which users will be able to assign to specific folders to get additional processing (e.g., specific renditions). For more details, see [configuring asset microservices](#configure-asset-microservices).
+For specific rendition generation or asset processing requirements, an AEM administrator can create additional [!UICONTROL Processing Profiles]. Users can assign one or more of the available profiles to specific folders to get additional processing done. Say for example, to generate web, mobile, and tablet specific renditions. The following video illustrates how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions.
 
-If additional, custom processing of assets is required (e.g., integrations with other systems), post-processing workflows should be created and configured for the asset processing. For more details, see [post-processing workflows](#post-processing-workflows).
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+
+To change existing profile, see [configurations for asset microservices](#configure-asset-microservices).
+To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 
 ## Configurations for asset microservices {#configure-asset-microservices}
 
-To configure asset microservices, administrators can use configuration user interface under **[!UICONTROL Tools/Assets/Processing Profiles]**.
+To configure asset microservices, administrators can use configuration user interface under **[!UICONTROL Tools > Assets > Processing Profiles]**.
 
-### Default configuration
+### Default configuration {#default-config}
 
 With the default configuration, only the [!UICONTROL standard] processing profile is configured. It is a built-in one, and cannot be modified. It is always executed to ensure that all the processing required by the application is taking place.
 
@@ -63,26 +66,11 @@ The standard processing profile provides the following processing configuration:
 
 ### Supported file formats {#supported-file-formats}
 
-<!--
-What exact configurations are required to process specific assets.
-
-* [Supported file formats](file-format-support.md)
-* PDF rasterization
-* Camera RAW
-* Image Transcoding Library
-* ImageMagick
-* PIE?
--->
-
-<!--
-If we were to provide Nui API documentation, then use https://git.corp.adobe.com/nui/nui/blob/master/doc/api.md 
--->
-
 Asset microservices provide support for a wide variety of file formats in terms of the ability to generate renditions or extract metadata. See [supported file formats](file-format-support.md) for the full list.
 
-### Adding additional processing profiles {#processing-profiles}
+### Add additional processing profiles {#processing-profiles}
 
-Additional processing profiles can be added using the **[!UICONTROL Create]** action. 
+Additional processing profiles can be added using the **[!UICONTROL Create]** action.
 
 Each processing profile configuration includes a list of renditions. For each rendition, you can specify the following:
 
@@ -90,7 +78,7 @@ Each processing profile configuration includes a list of renditions. For each re
 * rendition format (JPEG, PNG, or GIF are supported)
 * rendition width and height in pixels (if not specified, the full pixel size of the original is assumed)
 * rendition quality (for JPEG) in percent
-* Included and excluded mime types define, which asset types the processing profile applies to
+* Included and excluded MIME types define, which asset types the processing profile applies to
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
@@ -129,11 +117,11 @@ There are two ways to get processing profiles applied to folders:
 >
 >Only one processing profile can be applied to a specific folder. If you need more renditions generated, you can add more rendition definitions to the processing profile.
 
-After a processing profile has been applied to a folder, all new files uploaded (or updated) in this folder or any of it's subfolders will have assets processed using the additional processing profile configured, in addition to the standard built-in profile.
+After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of it's sub-folders are processed using the additional processing profile configured. This additional processing is in addition to the standard, default profile. If you apply multiple profiles to a folder, the uploaded or updated assets are processed using each of these profiles.
 
 >[!NOTE]
 >
->When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, it goes up in the folder tree until it finds a processing profile applied, and uses it for the asset. That means that a processing profile applied to a folder are applied to the whole subtree, but can be overridden with another one in the subtree.
+>When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, it goes up in the folder tree until it finds a processing profile applied, and uses it for the asset. That means that a processing profile applied to a folder works for the entire tree, but can be over-ridden with another profile applied to a sub-folder.
 
 Users can check that the processing actually took place by opening a newly-uploaded asset for which processing has finished, opening asset preview, and clicking on the left-hand rail's **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the mime type inclusion rules, should be visible and accessible.
 
