@@ -187,6 +187,7 @@ solution-title: Experience Cloud
     + [Develop a Repository Structure Package](implementing/developing/introduction/repository-structure-package.md)
     + [Content Search and Indexing](operations/indexing.md)
     + [AEM as a Cloud Service Development Guidelines](implementing/developing/introduction/development-guidelines.md)
+    + [AEM as a Cloud Service API](https://docs-stg.corp.adobe.com/content/help/en/experience-manager-cloud-service/using/sites-cloud/developing/ref/javadoc/index.html)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
   + Dispatcher in the Cloud {#dispatcher-cloud}
