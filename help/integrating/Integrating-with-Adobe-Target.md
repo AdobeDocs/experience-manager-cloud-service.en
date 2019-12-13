@@ -16,6 +16,7 @@ Integrate your AEM sites with Adobe Target to personalize content in your pages:
 * Submit context data to Target when visitors interact with your pages.
 * Track conversion rates.
 
+
 To integrate with Target, perform the following tasks:
 
 1. [Perform prerequisite tasks](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html): Register with Adobe Target and configure certain aspects of the AEM author instance. Your Adobe Target account must have **approver **level permissions at a minimum. In addition, you must secure the activity settings on the publish node so that it is inaccessible to users.

@@ -40,6 +40,7 @@ See:
 * [Extending the Adobe Analytics Integration](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) for information about developing components that collect user data and customizing the Adobe Analytics framework.
 * The knowledge base article, [Adobe Analytics integration - troubleshooting issues](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), for information about troubleshooting your Adobe Analytics integration.
 
+
 >[!NOTE]
 >
 >If you are using Adobe Analytics with a custom proxy configuration, you need to [configure two OSGi bundles](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) (for example, with the Web console) required for the **Apache HTTP Client** proxy configurations. Both are required as some functionalities of AEM use the 3.x APIs, while others use the 4.x APIs. Configure:
