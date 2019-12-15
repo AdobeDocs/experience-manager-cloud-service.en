@@ -23,9 +23,12 @@ content owner: Raoul Duke
 + Core Concepts of AEM as a Cloud Service {#core-concepts}
   + [An Introduction to the Architecture of AEM as a Cloud Service](core-concepts/architecture.md)
 + Onboarding {#onboarding}
+  + What is Required {#what-is-required}
+    + [Source Code Repository](onboarding/what-is-required/source-code-repository.md)
+    + [Add User and Roles](onboarding/what-is-required/add-users-roles.md)
   + Getting Access to AEM in the Cloud {#getting-access-aem-in-cloud}
-    + [First Time Login](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
     + [Create a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
+    + [First Time Login](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
   + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md)
     + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
