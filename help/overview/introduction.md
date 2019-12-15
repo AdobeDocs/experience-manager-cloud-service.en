@@ -187,6 +187,11 @@ Adobe proactively takes care of updating all operational instances of the servic
 
 The Cloud Manager was used as a deployment tool for Managed Services instances of AEM.
 
+The key differences between Cloud Manager for AMS and for Cloud Services, is when a tenant is created, it will be populated with credits based on the SKUs which have been purchased by the customer.
+
+Creating a normal program does not consume any credits, but a core credit must exist in order to create one.
+To learn in detail about creadits and how these are consumed, refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#program-types).
+
 #### AEM as a Cloud Service {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud Manager is integral to the continuous upgrade approach of AEM as a Cloud Service, as it controls all updates to your instances - this is mandatory. 

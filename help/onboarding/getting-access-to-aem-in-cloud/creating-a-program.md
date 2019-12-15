@@ -18,6 +18,35 @@ A *Sandbox* is typically created to serve the purposes of training, running demo
 
 A *Regular* program is created to enable live traffic at the appropriate time in the future.
 
+## Usage Limits {#usage-limits}
+  
+Credits are consumed in any of the following ways:
+
+1. **Core Credits**: 
+
+   Core Credits are consumed when a prod/stage environment set is created manually or by  self-service via the Cloud Manager UI inside a Regular program.
+   * Consumed when a regular Program is created and user selects solutions to be applied to the Program. A core credit is consumed for each solution that is applied to the Program that is created.
+   * Defined by the business value metric applied to size the application 
+   Meant for setting up and deploying sites/applications that will carry live traffic
+   * A user will only be allowed to create a Production + Stage environment set within the Program if a credit of this type is available in the credit quota for the tenant.
+
+1. **Non-core Credits**:   
+
+   Non-core Credits  are consumed when a dev environment is created manually/self-service via the Cloud Manager UI inside a Regular program.
+
+   * Consumed when a Dev environment is created, for example, a Dev environment created in an Sites+Assets application consumes a Dev credit.
+   * Defined by default dimensions.
+   * Meant to support business needs such as QA, testing, development within an existing Program
+   * A user will only be allowed to create a Dev environment type within a Program if a credit of this type is available in the credit quota for the tenant. The available and remaining quota will be displayed in the create environment wizard
+
+1. **Unlimited Credits**: 
+
+   Sandbox program creation will not consume any credits. Technically, this means that if an organization has the AEM Cloud Service product context, a Business Owner or Deployment manager shall be able to create an unlimited number of Sandbox programs in that organization.
+
+   * Defined by default dimensions
+   * Meant for setting up demo's, POC's, training and other applications that will not carry live traffic.
+   * Sandbox program credit includes a development, and production+stage environments.
+
 ## Using Create Program Wizard {#using-create-program-wizard}
 
 >[!NOTE]
