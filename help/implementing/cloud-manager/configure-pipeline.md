@@ -12,4 +12,4 @@ In order to support the Cloud Services architecture, a new step has been introdu
 
 This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configuration. 
 
-Part of this step is also to execute the Dispatcher configurations validator. Refer to [Dispatcher in Cloud](help/implementing/dispatcher/dispatcher-cloud.md) for more details.
+Part of this step is also to execute the Dispatcher configurations validator. Refer to [Dispatcher in Cloud](/help/implementing/dispatcher/dispatcher-cloud.md) for more details.
