@@ -14,8 +14,7 @@ content owner: Raoul Duke
   + [Introduction to AEM as a Cloud Service](overview/introduction.md)
   + [What is New and What is Different](overview/what-is-new-and-different.md)
   + [Terminology - New for the Cloud](overview/terminology.md)
-  + [Notable Changes in AEM Cloud Service](release-notes/aem-cloud-changes.md)
-+ Release Notes {#release-notes}
++ AEM Cloud Service Release Notes {#release-notes}
   + [What's New](release-notes/what-is-new.md)
   + [Cloud Service Release Notes](release-notes/release-notes.md)
   + [Notable Changes in AEM Cloud Service](release-notes/aem-cloud-changes.md)
@@ -197,6 +196,9 @@ content owner: Raoul Duke
     + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
   + Dispatcher in the Cloud {#dispatcher-cloud}
     + [Dispatcher in the Cloud](implementing/dispatcher/dispatcher-cloud.md)
+  + Integrating with AEM as a Cloud Service {#integrations}
+  + [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
+  + [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
 + Implementing Connectors for AEM as a Cloud Service {#connectors}
   + [Implementing an AEM Connector](connectors/implement.md)
   + [Submitting an AEM Connector](connectors/submit.md)
@@ -205,7 +207,3 @@ content owner: Raoul Duke
   + [Content Replication Service](operations/replication.md)
   + [Maintenance Tasks](operations/maintenance.md)
   + [Backup and Restore](operations/backup.md)
-  + [Content Search and Indexing](operations/indexing.md)
-+ Integrating {#integrations}
-  + [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
-  + [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
