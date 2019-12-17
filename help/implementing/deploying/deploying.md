@@ -165,8 +165,6 @@ As mentioned above, OSGI configuration should be committed to source control rat
 
 ## Mutable Content {#mutable-content}
 
-### Mutable Content Packages {#mutable-content-packages}
-
 In some cases it might be useful to prepare content changes in source control so it can be deployed by Cloud Manager whenever an environment was updated. For example, it might be reasonable to seed certain root folder structures or line up changes in editable templates to enable policies in those for components that were updated by the application deployment.
 
 There are two strategies to describe the content that will be deployed by Cloud Manager to the mutable repository, mutable content packages and repoinit statements.
