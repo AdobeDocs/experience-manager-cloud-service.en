@@ -20,9 +20,13 @@ The rest of this document will describe how developers should adapt their practi
 
 It is key to understand that AEM will be updated frequently, potentially as often as once a day, and will focus on bug fixes and performance enhancements. The update will happen transparently and without causing downtime. The update is intended to be backwards compatible meaning customers should not need to modify custom code. In fact, AEM updates are independent events from customer code deployments. The AEM update is deployed on top of the last successful customer code push, which implies that any changes committed since the last push to production will not be deployed.
 
+>[!NOTE]
+>
+> If custom code was pushed to staging and then rejected by the customer, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
+
 On a regular frequency, a feature release will take place, focusing on feature additions and enhancements that will more substantially impact the user experience compared to the daily releases. A feature release is triggered not by the deployment of a large change set, but rather by the flip of a release toggle, activating code that had been accumulating (and rigorously tested) over the course of days or weeks through the daily updates.
 
-Customers are encouraged to implement Apache Felix health checks to ensure that the application is ready before AEM starts accepting traffic. Health checks should return within 100ms and code should follow the guidelines in the [Felix health checks documentation](https://svn.apache.org/repos/asf/felix/trunk/healthcheck/README.md).
+Health checks are used to monitor the health of the application. If these checks fail during an AEM as a Cloud Service update, the release will not proceed for that environment and Adobe will investigate why the update caused this unexpected behavior.
 
 ### Composite Node Store {#composite-node-store}
 
@@ -32,31 +36,43 @@ As mentioned above, updates in most cases will incur zero downtime, including fo
 
 ### Coding against the right AEM version {#coding-against-the-right-aem-version}
 
-For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the Uberjar. However, AEM as a Cloud Service applications are auto-updated to the latest version of AEM more often (potentially daily maintenance releases and monthly feature releases), so custom code for internal releases should be built against those newer AEM interfaces.
+For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are auto-updated to the latest version of AEM more often (potentially daily maintenance releases and monthly feature releases), so custom code for internal releases should be built against those newer AEM interfaces.
 
 Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart will be supported and is expected to be the tool of choice for debugging in the majority of cases.
 
 > [!NOTE}
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure.  Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-Below is the process for a developer to access the relevant version of the AEM artifacts (quickstart, uberjar, and javadocs), which we'll refer to as the SDK. needed for developing custom code for an internal release. The process will evolve between the current pilot phase and general availability. Information about the dispatcher can be found in its own dedicated section.
+Below is the process for a developer to access the relevant version of the AEM artifacts, which we will refer to as the AEM as a Cloud Service SDK. needed for developing custom code for an internal release. The process will evolve between the current pilot phase and general availability. Information about the dispatcher can be found in its own dedicated section.
 
-## Prerelease Phase (#prerelease-phase)
+## The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
-* Versions of the quickstart are placed on the prerelease site where they can be downloaded. You can check the AEM admin console's "About Adobe Experience Manager" icon to find out the version of AEM they're running on production.
-* The maven poms should reference the following package, which is a placed in a discrete location until GA. This dependency should also be referenced in any subpackage poms. -->
+The AEM as a Cloud Service SDK is comprised of the following artifacts:
 
-<!-- Skyline UberJAR Dependency to be added to the project's Reactor pom.xml -->
+* Quickstart Jar - The AEM runtime used for local development
+* Java API Jar - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
+* Javadoc Jar - The javadocs for the Java API Jar
+* Dispatcher Tools 
 
+In addition, some customers who were previously deployed with AEM 6.5 or earlier versions will use the artifacts below. If local compilation is not working with the Quickstart jar and you suspect it's due to interfaces that have been removed from AEM deployed as a Cloud Service, reach out to Customer Support to determine if you need access, which requires changes in the backend. 
 
-<!-- ```
+* 6.5 Deprecated Java API Jar - an additional set of interfaced that have been removed since AEM 6.5
+* 6.5 Deprecated Javadoc Jar - the Javadocs for the additional set of interfaced
+
+## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
+
+* You can check the AEM Admin Console's **About Adobe Experience Manager** icon to find out the version of AEM you are running on production.
+* The quickstart jar and Dispatcher Tools can be downloaded from the [Software Distribution portal](https://downloads.experiencecloud.adobe.com/content/dam/general/public/aemcloud)
+* The Java API Jar and Javadoc Jar can be downloaded through maven tooling, either command line or with your preferred IDE.
+* The maven project poms should reference the following API Jar package. This dependency should also be referenced in any subpackage poms.
+
+```
 
 <dependency>
   <groupId>com.adobe.aem</groupId>
-  <artifactId>uber-jar</artifactId> 
-  <version>V16168</version> (enclosed comment: use the latest!)
+  <artifactId>aem-sdk-api</artifactId>
+  <version>2019.11.3006.20191108T223635Z-191201</version> 
   <scope>provided</scope>
-  <classifier>future</classifier>
 </dependency>
 
 ```
@@ -66,9 +82,9 @@ Below is the process for a developer to access the relevant version of the AEM a
 ```
 
 <repository>
-    <id>adobe-future-releases</id>
-    <name>Adobe Future Repository</name>
-    <url>https://repo.adobe.com/nexus/content/repositories/ujscm/</url>
+    <id>adobe-aem-releases</id>
+    <name>Adobe AEM Repository</name>
+    <url>https://downloads.experiencecloud.adobe.com/content/maven/public</url>
     <releases>
         <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
@@ -78,13 +94,53 @@ Below is the process for a developer to access the relevant version of the AEM a
     </snapshots>
 </repository>
 
-``` -->
+``` 
+## Refreshing a Local Project with a New SDK Version {#refreshing-a-local-prokect-with-a-new-skd-version}
+
+When is it recommended to refresh the local project with a new SDK? 
+
+Recommended: at least after monthly maintenance release. 
+
+Optional: after any daily maintenance release. Customers will be informed when their production instance has been successfully upgraded to a new AEM version. For the daily maintenance releases, it is not expected that the new SDK will have changed significantly, if at all. Still, it is recommended to occasionally refresh the local AEM developer environment with the latest SDK and rebuild and test the custom application. The monthly maintenance release will typically include more impactful changes and thus developers should immediately refresh, rebuild, and test.
+
+Here is the recommended procedure for refreshing a local environment:
+
+1. Make sure that any useful content is either committed to the project in source control or available in a mutable content package for later import
+1. Local development test content needs to be store separately so that it is not deployed as part of the Cloud Manager pipeline build; as it has only to be used for local development
+1. Stop the currently running quickstart
+1. Move the crx-quickstart folder to a different folder for safe keeping
+1. Note the new AEM version, which is noted in Cloud Manager (this will be used to identify the new QuickStart Jar version to download)
+1. Download the QuickStart JAR whose version matches the Production AEM version, from the Software Distribution Portal
+1. Create a brand new folder and put the new QuickStart Jar in it
+1. Start the new QuickStart with the desired runmodes (either renaming file or passing in runmodes via `-r`). 
+   * Make sure there's no remnant of the old quickstart in the folder.
+1. Build your AEM application
+1. Deploy your AEM application to local AEM via PackageManager
+1. Install any mutable content packages needed for local environment testing via PackageManager
+1. Continue development and deploy changes as needed
+
+If there is content that should be installed with each new AEM quickstart version, include it into a content package and include in the project's source control and install it each time.
+
+The recommendation is to update the SDK frequently (e.g. biweekly) and dispose full local state daily to not accidentally depend on stateful data in the application.
+
+In case you depend on CryptoSupport ([either by configuring the credentials of Cloudservices or the SMTP Mail service in AEM or by using CryptoSupport API in your application](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)) the encrypted properties will be encrypted by a key autogenerated on the first start of an AEM environment. While the cloudsetup takes care of automatically reusing the environment-specificE CryptoKey it is necessary to inject the cryptokey into the local development environment. 
+
+By default AEM is configured to store the key data within the data folder of a folder, but for convenience of easier reuse in development case the AEM process can be initialized on first startup with "-Dcom.adobe.granite.crypto.file.disable=true" which will generate the encryption data at "/etc/key".
+
+To be able to reuse content-packages containing the encrypted values you need to follow these steps:
+
+* Whenever you start up the local quickstart.jar the first time start up with  "-Dcom.adobe.granite.crypto.file.disable=true" (it won't do harm to always add it)
+* The very first time you started up an instance create a package that contains a filter for the root "/etc/key" this will hold the secret to be reused & across all environments for which you would want to reuse the secrets
+* Export any mutable content containing secrets or look up the encrypted values via /crx/de to add it to the package to be reused accoss installations
+* When ever you spin up a fresh instance (either to replace with a new version or as multiple dev environments should share the credentials for testing) install the package produced in step 2 & 3 to be able to reuse the content without the need to manually reconfigure (as now the cryptokey is in synch)
+
+-->
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### Deployments via Cloud Manager {#deployments-via-cloud-manager}
 
-Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. As a result, when looking at the packages in Package Manager on Cloud environments, the name will include "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content and Cloud Manager will enforce it by failing the build, outputting a message like:
 
@@ -94,23 +150,100 @@ The rest of this section will describe the composition and implications of immut
 
 ### Immutable Content Packages {#immutabe-content-packages}
 
-All content and code persisted in the immutable repository must be checked into git and deployed through Cloud Manager. In other words, unlike current AEM solutions, code is never deployed directly to a running AEM instance. This ensures that the code running for a given release in any Cloud environment is identical, which eliminates the risk of unintentional code variation on production.
+All content and code persisted in the immutable repository must be checked into git and deployed through Cloud Manager. In other words, unlike current AEM solutions, code is never deployed directly to a running AEM instance. This ensures that the code running for a given release in any Cloud environment is identical, which eliminates the risk of unintentional code variation on production. As an example, OSGI configuration should be committed to source control rather than managed at runtime via the AEM web console's configuration manager.
 
 As application changes due to the Blue-Green deployment pattern are enabled by a switch, they cannot depend on changes in the mutable repository with the exception of service users, their ACLs, nodetypes and index definition changes.
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
 
-### Mutable Content Packages {#mutable-content-packages}
+## OSGI Configuration {#osgi-configuration}
+
+As mentioned above, OSGI configuration should be committed to source control rather than through the web console. Techniques to do so include:
+
+* Making the necessary changes on the developer's local AEM environment with the AEM web console's configuration manager and then exporting the results to the AEM project on the local file system
+* Creating the OSGI configuration manually in the AEM project on the local file system, the referencing the AEM console's configuration manager for the property names.
+
+## Mutable Content {#mutable-content}
 
 In some cases it might be useful to prepare content changes in source control so it can be deployed by Cloud Manager whenever an environment was updated. For example, it might be reasonable to seed certain root folder structures or line up changes in editable templates to enable policies in those for components that were updated by the application deployment.
 
->[!NOTE] Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment.  
+There are two strategies to describe the content that will be deployed by Cloud Manager to the mutable repository, mutable content packages and repoinit statements.
+
+### Mutable Content Packages {#mutable-content-packages}
+
+Content such as folder path hierarchies, service users, and access controls (ACLs) are typically committed into a maven archetype-based AEM project. Techniques include exporting from AEM or writing directly as XML. During the build and deployment process, Cloud Manager packages the resulting mutable content package. The mutable content is installed at 3 different times during the deploy phase in the pipeline: 
+
+Ahead of startup of new version of application:
+
+* index definitions (add, modify, remove)
+
+During startup of new version of application but ahead of switchover:
+
+* Service Users (add)
+* Service User ACLs (add)
+* node types (add)
+
+After switchover to new version of application:
+
+* All other content definable via jackrabbit vault. For example:
+  * Folders (add, modify, remove)
+  * Editable templates (add, modify, remove)
+  * Context Aware configuration (anything under `/conf`) (add, modify, remove)
+  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation
+
+It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Details to be found in [AEM documentation](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) around recommended project restructuring.
+
+>[!NOTE] Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
 
 Also, there is no mechanism to rollback the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
 Any included 3rd party packages must be validated as being AEM as a Cloud Service Service compatible, otherwise its inclusion will result in a deployment failure.
 
 As mentioned above, customers with existing code bases should conform to the repository restructuring exercise described in [AEM documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html).
+
+## Repoinit {#repoinit}
+
+For the following cases, it is preferable to take the approach of hand coding explicit content creation "repoinit" statements in OSGI factory configurations:
+
+* Create/delete/disable service users
+* Create/delete groups
+* Create/delete users
+* Add ACLs
+  > [!NOTE] Definition of ACLs requires the nodestructures to be already present. Thus, preceding create path statements might be necessary.
+* Add path (for example for root folder structures)
+* Add CNDs (nodetype definitions)
+
+Repoinit is preferable for these supported content modification use cases due to the following benefits:
+
+* Repoinit creates resources at startup so logic can take the existence of those resources for granted. In the mutable content package approach, resources are created after startup, so application code relying on them may fail. 
+* Repoinit is a relatively safe instructionset as you explicitly control the action to be taken. Also, the only supported operations are additive with the exception of a few security related cases which allow removal of Users, Service Users, and Groups. In contrast, a removal of something in the mutable content package approach is explicit;  as you define a filter anything present covered by a filter will be deleted. Still, caution should be taken since with any content there are scenarios where the presence of new content can alter the behavior of the application.
+* Repoinit performs fast and atomic operations. Mutable content packages in contrast can highly depend performance wise on the structures covered by a filter. Even if you update a single node a snapshot of a large tree might be created.
+* It is possible to validate repoinit statements on a local dev environment at runtime since they will be executed when the OSGi configuration gets registered.
+* Repoinit statements are atomic and explicit and will skip if the state is already matching.
+
+When Cloud Manager deploys the application, it executes these statements, independently from the installation of any content packages.
+
+To create repoinit statements, follow the below procedure:
+
+1. Add OSGi configuration for PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project
+1. Add repoinit statements to the script property of the config. The syntax and options are documented in [Sling documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html). Note that there should be explicit creation of a parent folder before their child folders. For example, an explicit creation of `/content` before `/content/myfolder`, before `/content/myfolder/mysubfolder`. For ACLs being set on low level structures it is recommended to set those on a higher level and work with a `rep:glob` restriction.  Foe example (allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs).
+1. Validate on the local dev environment at runtime.
+
+<!-- last statement in step 2 to be clarified with Brian -->
+
+>[!WARNING] 
+>
+>For ACLs defined for nodes underneath `/apps` or `/libs` the repoinit execution will start on a blank repository. The packages are installed after repoinit so statements cannot rely on anything defined in the packages but must define the preconditions like the parent structures underneath.
+
+>[!TIP]
+>
+>For ACLs the creation of deep structures might be cumbersome, therefore is more reasonable to define an ACL on a higher level and constrain where it is supposed to act via a rep:glob restriction.
+
+More detail about about repoinit can be found in the [Sling documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html)
+
+<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+
+above appears to be internal, to confirm with Brian -->
 
 ### Package Manager "one offs" for Mutable Content Packages {#package-manager-oneoffs-for-mutable-content-packages}
 
@@ -124,7 +257,18 @@ Any content-packages installed via Cloud Manager (both mutable and immutable) wi
 
 It is common for customers to include pre-built packages from third party sources such as software vendors like Adobe's translation partners. The recommendation is to host these packages in a remote repository and reference them in the `pom.xml`. This is only possible for public repositories.
 
-If storing the package in a remote repository is not possible, customers can download the packages directly to their local maven repository and reference them as dependencies in the project `pom.xml`.
+If storing the package in a remote repository is not possible, customers can place in a local, file system based Maven repository, which is committed to SCM as part of the project, and referenced by whatever depends on it. The repository would be declared in the project pomas illustrated below:
+
+
+```
+<repository>
+    <id>project.local</id>
+    <name>project</name>
+    <url>file:${maven.multiModuleProjectDirectory}/repository</url>
+</repository>
+```
+
+<!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
 Any included third party packages must be adhere to the AEM as a Cloud Service Service coding and packaging guidelines described in this article, otherwise its inclusion will result in a deployment failure.
 
@@ -168,28 +312,42 @@ The following Maven POM XML snippet shows how 3rd party packages can be embedded
 Like AEM updates, customer releases are deployed using a rolling deployment strategy in order to eliminate author cluster downtime under the right circumstances. The general sequence of events is as described below, where **Blue** is the old version of customer code and **Green** is the new version. Both Blue and Green are running the same version of AEM code.
 
 * Blue version is active and a release candidate for Green is built and available
-* If there are any new or updated index definitions, the corresponding indexes are processed.
+* If there are any new or updated index definitions, the corresponding indexes are processed. Note that the blue deployment will always use the old indexes, while the green will always use the new indexes.
 * Green is starting up while Blue is still serving
 * Blue is running and serving while Green is being checked for readiness via health checks
 * Green nodes that are ready accept traffic and replace Blue nodes, which are brought down
 * Over time, Blue nodes are replaced by Green nodes until only Green remain, thus completing the deployment
-* Jobs for mutable content changes may be triggered
+* Any new or modified mutable content is deployed
 
 ## Indexes {#indexes}
 
-For more information on how Search and Indexing works, [see this article](/help/operations/indexing.md).
+New or modified indexes will cause an additional indexing or re-indexing step before the new (Green) version can take on traffic. Details about index management in Skyline can be found in [this article](/help/operations/indexing.md). You can check the status of the indexing job on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
+
+>[!NOTE]
+>
+>The time needed for a rolling deployment will vary depending on the size of the index, since the Green version cannot accept traffic until the new index has been generated.
+
+At this time, Skyline does not work with index management tools such as ACS Commons Ensure Oak Index tool.
+
+## Replication {#replication}
+
+The publication mechanism is backwards compatible with the [AEM Replication Java APIs](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
+
+In order to develop and test with replication with the cloud ready AEM Quickstart, the classic replication capabilities needs to be used with an Author/Publish setup. In the case of the UI entry point on AEM Author has been removed for the cloud, users would go to `http://localhost:4502/etc/replication` for configuration.
 
 ## Backwards Compatible Code for Rolling Deployments {#backwards-compatible-code-for-rolling-deployments}
 
 As detailed above, AEM as a Cloud Service's rolling deployment strategy implies that both the old and new versions may be operating at the same time. Therefore, be cautious of code changes that are not backwards compatible with the old AEM version that is still operation.
 
+In addition, the old release should be tested for compatibility with any new mutable content structures applied by the new release in the event of roll back, since mutable content is not removed.
+
 ### Service Users and ACL Changes {#service-users-and-acl-changes}
 
-For example, changing service users or ACLs needed to access content or code could lead to errors in the older AEM versions resulting in access to that content or code with outdated service users. To address this behavior, a recommendation is to make changes spread across at least 2 releases, with the first release acting as a bridge before cleaning up in the subsequent release.
+Changing service users or ACLs needed to access content or code could lead to errors in the older AEM versions resulting in access to that content or code with outdated service users. To address this behavior, a recommendation is to make changes spread across at least 2 releases, with the first release acting as a bridge before cleaning up in the subsequent release.
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 
-If a failure is reported or detected after the deployment, it is possible that a rollback to the Blue version will be required. It would be wise to ensure that the Blue code is compatible with any new structures created by the Green version.
+If a failure is reported or detected after the deployment, it is possible that a rollback to the Blue version will be required. It would be wise to ensure that the Blue code is compatible with any new structures created by the Green version since the new structures (any mutable content content) will not be rolled back. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
 
 ## Runmodes {#runmodes}
 
@@ -213,6 +371,9 @@ The supported runmode configurations are:
 * **config.publish.dev** (*Applies to AEM Dev Publish service*)
 * **config.publish.stage** (*Applies to AEM Staging Publish service*)
 * **config.publish.prod** (*Applies to AEM Production Publish service*) 
+* **config.dev** (*Applies to AEM Dev services)
+* **config.stage** (*Applies to AEM Staging services)
+* **config.prod** (*Applies to AEM Production services)
 
 The OSGI configuration that has the most matching runmodes is used.
 
@@ -225,341 +386,3 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 ## Maintenance Tasks Configuration in Source Control {#maintenance-tasks-configuration-in-source-control}
 
 Maintenance Task configurations must be persisted in source control since the **Tools > Operations** screen will no longer be available in Cloud environments. This has the benefit of ensuring that changes are intentionally persisted rather than reactively applied and perhaps forgotten. Please reference the [Maintenance Task article](/help/operations/maintenance.md) for additional information.
-
-<!-- ## Apache and Dispatcher Configuration and Testing {#apache-and-dispatcher-configuration-and-testing}
-
-This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configuration, as well as how to validate it and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For a deep-dive into Dispatcher, see the AEM 6.5 dispatcher documentation.
-
->[!NOTE]
->Windows users will need Windows 10 Professional or other distribution that supports Docker, which is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
-
-## The Dispatcher SDK {#the-dispatcher-sdk}
-
-The Dispatcher SDK provides:
-
-* A vanilla file structure containing the configuration files to include in a maven project for dispatcher;
-* Tooling for customers to validate a dispatcher configuration locally;
-* A Docker image that brings up the dispatcher locally.
-
-For prerelease, the dispatcher SDK will be distributed via the prerelease website.
-
-## Extracting the SDK {#xtracting-the-sdk}
-
-Download the shell script to a folder on your machine, make it executable and run it. It will extract the Dispatcher SDK files underneath the directory you stored it in.
-
-## File Structure {#file-structure}
-
-The structure of a project's dispatcher subfolder is as described below and should be copied into the maven project's dispatcher folder:
-
-```
-./
-├── conf.d
-│   ├── available_vhosts
-│   │   └── default.vhost
-│   ├── dispatcher_vhost.conf
-│   ├── enabled_vhosts
-│   │   ├── README
-│   │   └── default.vhost -> ../available_vhosts/default.vhost
-│   └── rewrites
-│   │   ├── default_rewrite.rules
-│   │   └── rewrite.rules
-│   └── variables
-|       ├── custom.vars
-│       └── global.vars
-└── conf.dispatcher.d
-    ├── available_farms
-    │   └── default.farm
-    ├── cache
-    │   ├── default_invalidate.any
-    │   ├── default_rules.any
-    │   └── rules.any
-    ├── clientheaders
-    │   ├── clientheaders.any
-    │   └── default_clientheaders.any
-    ├── dispatcher.any
-    ├── enabled_farms
-    │   ├── README
-    │   └── default.farm -> ../available_farms/default.farm
-    ├── filters
-    │   ├── default_filters.any
-    │   └── filters.any
-    ├── renders
-    │   └── default_renders.any
-    └── virtualhosts
-        ├── default_virtualhosts.any
-        └── virtualhosts.any
-```
-
-Below is an explanation of the notable files that can be modified:
-
-**Customizable Files**
-
-The following files are customizable and will get transferred to your Cloud instance on deployment:
-
-* `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
-
-You can have one or more of these files, and they contain `<VirtualHost>` entries to match host names and allow Apache to handle each domain traffic with different rules. Files are created in the `available_vhosts` directory and enabled with a symbolic link in the `enabled_vhosts` directory. From the `.vhost` files, other files like rewrites and variables will be included.
-
-* `conf.d/rewrites/rewrite.rules`
-
-This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
-
-* `conf.d/variables/custom.vars`
-
-This file is included from inside your `.vhost` files. You can put defines for Apache variables in this location.
-
-* `conf.d/variables/global.vars`
-
-This file is included from inside the `dispatcher_vhost.conf` file. You can change your dispatcher and rewrite log level in this file.
-
-* `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
-
-You can have one or more of these files, and they contain farms to match host names and allow the dispatcher module to handle each farm with different rules. Files are created in the `available_farms` directory and enabled with a symbolic link in the `enabled_farms` directory. From the `.farm` files, other files like filters, cache rules and others will be included.
-
-* `conf.dispatcher.d/cache/rules.any`
-
-This file is included from inside your `.farm` files. It specifies caching preferences.
-
-* `conf.dispatcher.d/clientheaders/clientheaders.any`
-
-This file is included from inside your `.farm` files. It specifies what request headers should be forwarded to the backend.
-
-* `conf.dispatcher.d/filters/filters.any`
-
-This file is included from inside your `.farm` files. It has a set of rules that change what traffic should be filtered out and not make it to the backend.
-
-* `conf.dispatcher.d/virtualhosts/virtualhosts.any`
-
-This file is included from inside your `.farm` files. It has a list of host names or URI paths to be matched by glob matching to determine what backend to use to serve a request.
-
-The above files reference the unmodifiable files listed below. Changes to those files will not be processed by dispatchers in Cloud environments.
-
-**Immutable Configuration Files**
-
-These files are part of the base framework and enforce standards and best practices. They should be considered immutable, because modifying or deleting them locally will have no impact on your deployment, as they will not get transferred to your Cloud instance.
-
-* `conf.d/available_vhosts/default.vhost`
-
-Contains a sample virtual host. For your own virtual host, create a copy of this file, customize it, go to `conf.d/enabled_vhosts` and create a symbolic link to your customized copy.
-
-* `conf.d/dispatcher_vhost.conf`
-
-Part of the base framework, used to illustrate how your virtual hosts and global variables are included.
-
-* `conf.d/rewrites/default_rewrite.rules`
-
-Default rewrite rules suitable for a standard project. If you need customization, modify `rewrite.rules`. In your customization, you can still include the default rules first, if they suit your needs.
-
-* `conf.dispatcher.d/available_farms/default.farm`
-
-Contains a sample dispatcher farm. For your own farm, create a copy of this file, customize it, go to `conf.d/enabled_farms` and create a symbolic link to your customized copy.
-
-* `conf.dispatcher.d/cache/default_invalidate.any`
-
-Part of the base framework, gets generated on startup. You are **required** to include this file in every farm you define, in the `cache/allowedClients` section.
-
-* `conf.dispatcher.d/cache/default_rules.any`
-
-Default cache rules suitable for a standard project. If you need customization, modify `conf.dispatcher.d/cache/rules.any`. In your customization, you can still include the default rules first, if they suit your needs.
-
-* `conf.dispatcher.d/clientheaders/default_clientheaders.any`
-
-Default request headers to forward to backend, suitable for a standard project. If you need customization, modify `clientheaders.any`. In your customization, you can still include the default request headers first, if they suit your needs.
-
-* `conf.dispatcher.d/dispatcher.any`
-
-Part of base framework, used to illustrate how your dispatcher farms are included.
-
-* `conf.dispatcher.d/filters/default_filters.any`
-
-Default filters suitable for a standard project. If you need customization, modify `filters.any`. In your customization, you can still include the default filters first, if they suit your needs.
-
-* `conf.dispatcher.d/renders/default_renders.any`
-
-Part of base framework, this file gets generated on startup. You are **required** to include this file in every farm you define, in the `renders` section.
-
-* `conf.dispatcher.d/virtualhosts/default_virtualhosts.any`
-
-Default host globbing suitable for a standard project. If you need customization, modify `virtualhosts.any`. In your customization, you shouldn't include the default host globbing, as it matches **every** incoming request.
-
->[!NOTE]The AEM as a Cloud Service maven archetype will generate the same dispatcher configuration file structure.
-
-The sections below describe how to validate the configuration locally so there is confidence that it will pass the associated quality gate in Cloud Manager when deploying an internal release.
-
-## Local Validation of Dispatcher Configuration {#local-validation-of-dispatcher-configuration}
-
-The validation tool is available in the SDK as a Mac OS, Linux, or Windows binary, allowing customers to run the same validation that Cloud Manager will perform while building and deploying a release.
-
-It is invoked as: `validator full [-d folder] [-w whitelist] zip-file`
-
-The tool validates the Apache and dispatcher configuration contained in the zip file. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only whitelisted directives are used. The directives allowed in Apache configuration files can be listed by running the validator's whitelist command:
-
-```
-
-$ validator whitelist
-Cloud manager validator 2.0.4
- 
-Whitelisted directives:
-  <Directory>
-  ...
-  
-  ```
-
-The whitelist contains a list of Apache directives expected in the customer configuration. If a directive is not whitelisted, the tool logs an error and returns a non-zero exit code. If no whitelist is given on the command line, the tool uses a default whitelist. Run validator whitelist to print that list.
-
- It further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
-
-* No filter rule exists that uses allows via `/glob` (see [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) for more details)
-* No admin feature is exposed. For example, access to paths such as `/crx/de or /system/console`. 
-
-When run against your maven artifact or your `dispatcher/src` subdirectory, it will report validation failures:
-
- ```
-
-$ validator full dispatcher/src
-Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
-  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
-2019/06/19 15:41:37 Dispatcher configuration validation failed:
-  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
-
-```
-
-Note that the validation tool only reports prohibited use of Apache directives that have not been whitelisted. It does not report syntactical or semantical problems with your Apache configuration, as this information is only available to Apache modules in a running environment.
-
-When no more validation failures are reported, your configuration is ready for deployment.
-
-## Testing your Apache and Dispatcher Configuration Locally {#testing-your-apache-and-dispatcher-configuration-locally}
-
-It is also possible to test drive your Apache and Dispatcher configuration locally, which requires Docker to be installed locally and your configuration passed validation as described above.
-
-By using the "`-d`" parameter, the validator outputs a folder with all configuration files needed by the dispatcher.
-
-Then, the `docker_run.sh` script can point to that folder, starting the container with your configuration.
-
-```
-
-$ validator full -d out src/dispatcher
-2019/06/19 16:02:55 No issues found
-$ docker_run.sh out docker.for.mac.localhost:4503 8080
-Running script /docker_entrypoint.d/10-create-docroots.sh
-Running script /docker_entrypoint.d/20-wait-for-backend.sh
-Waiting until aemhost is available
-aemhost resolves to xx.xx.xx.xx
-Running script /docker_entrypoint.d/30-allowed-clients.sh
-Starting httpd server
-...
-
-```
-
-This will start the dispatcher in a container with its backend pointing to an AEM instance running on your local Mac OS machine at port 4503.
-
-## Debugging your Apache and Dispatcher Configuration {#debugging-your-apache-and-dispatcher-configuration}
-
-The following strategy can be used to increase the log output for the dispatcher module and see the result of `RewriteRule` evaluation in both local and cloud environments.
-
-Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `REWRITE_LOG_LEVEL`. They can be set in the file `conf.d/variables/global.vars`. Its relevant part follows:
-
-```
-
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-
-```
-
-When running the Dispatcher locally, logs are also directly printed to the terminal output.
-
-## Different Dispatcher Configurations Per Environment {#different-dispatcher-configurations-per-environment}
-
-At this time, the same dispatcher configuration is applied to all AEM as a Cloud Service environments. The runtime will have an environment variable `ENVIRONMENT_TYPE` that contains the current run mode (dev, stage or prod) as well as a define. The define can be `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` or `ENVIRONMENT_PROD`. In the Apache configuration othe variable can be used directly in an expression. Alternatively, the define can be used to build logic:
-
-```
-
-# Simple usage of the environment variable
-ServerName ${ENVIRONMENT_TYPE}.company.com
- 
-# When more logic is required
-<IfDefine ENVIRONMENT_STAGE>
-  # These statements are for stage
-  Define VIRTUALHOST stage.example.com
-</IfDefine>
-<IfDefine ENVIRONMENT_PROD>
-  # These statements are for production
-  Define VIRTUALHOST prod.example.com
-</IfDefine>
-
-```
-
-In the Dispatcher configuration, the same environment variable is available. If more logic is required, define the variables as shown in the example above and then use them in the Dispatcher configuration section:
-
-```
-
-/virtualhosts {
-  { "${VIRTUALHOST}" }
-}
-
-```
-
-When testing your configuration locally, you can simulate different environment types by passing the variable `DISP_RUN_MODE` to the `docker_run.sh` script directly:
-
-```
-
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
-
-```
-
-For a complete list of options and variables available, run the script `docker_run.sh` without arguments.
-
-## Viewing the Dispatcher Configuration In Use by Your Docker Container {#viewing-the-dispatcher-configuration-in-use-by-your-docker-configuration}
-
-With environment specific configurations, it can be difficult to determine what the actual Dispatcher configuration looks like. After having started your docker container with `docker_run.sh` it can be dumped as follows:
-
-* Determine the docker container ID in use:
-
-```
-
-$ docker ps
-CONTAINER ID       IMAGE
-d75fbd23b29        adobe/aem-ethos/dispatcher-publish:...
-
-```
-
-*  Execute the following command line with that container ID:
-
-```
-
-$ docker exec d75fbd23b29 httpd-test
-# Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
-/farms {
-  /publishfarm {
-    /clientheaders {
-...
-
-```
-
-## Main Differences Between AMS Dispatcher Configuration strategy and AEM as a Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
-
-As described on the reference page above, the Apache and Dispatcher configuration in AEM as a Cloud Service is quite similar to the AMS one. The main difference are:
-
-* In AEM as a Cloud Service, some Apache directives may not be used (for example `Listen` or `LogLevel`)
-* In AEM as a Cloud Service, only some pieces of the Dispatcher configuration can be put in include files and their naming is important. For instance, filter rules that you want to reuse across different hosts, must be put in a file called `filters/filters.any`. See the reference page for more information.
-* In AEM as a Cloud Service there is extra validation to disallow filter rules written using `/glob` to prevent security issues. Since `deny *` will be used rather than `allow *` (which cannot be used), customers will benefit from running the Dispatcher locally and doing trial and error, looking at the logs to know exactly what paths the Dispatcher filters are blocking in order for those can be added.
-
---> 
