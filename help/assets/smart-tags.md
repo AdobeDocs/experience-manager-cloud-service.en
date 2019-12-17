@@ -64,13 +64,6 @@ The article details out the following key tasks that are required to configure t
 * Configure your AEM instance using the API key and other credentials from Adobe I/O.  
 * Optionally, enable auto-tagging on asset upload.
 
-### Prerequisites {#prerequisites}
-
-Before you can use the Smart Content Service, ensure the following to create an integration on Adobe I/O:
-
-* An Adobe ID account that has administrator privileges for the organization.
-* The Smart Content Service service is enabled for your organization.
-
 ### Obtain public certificate {#obtain-public-certificate}
 
 A public certificate allows you to authenticate your profile on Adobe I/O.
