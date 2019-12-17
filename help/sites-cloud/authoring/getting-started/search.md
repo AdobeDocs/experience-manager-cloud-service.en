@@ -9,7 +9,7 @@ topic-tags: introduction
 content-type: reference
 ---
 
-# Search {#search}
+# Search {#search-feature}
 
 The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 
