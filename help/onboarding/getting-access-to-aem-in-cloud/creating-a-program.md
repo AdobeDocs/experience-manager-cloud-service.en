@@ -9,7 +9,7 @@ seo-description: Creating a Program - Cloud Services
 
 The cloud-native solution gives the user with requisite permissions the ability to create a program on a self-service model.
 
-A program creation wizard will ask the user to submit details, depending on the user’s objective in creating the program within the bounds of what is available to the specific customer or organization. 
+A program creation wizard will ask the user to submit details, depending on the user’s objective in creating the program within the bounds of what is available to the specific customer or organization.
 
 ## Program Types {#program-types}
 

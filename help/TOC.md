@@ -24,11 +24,13 @@ content owner: Raoul Duke
   + [An Introduction to the Architecture of AEM as a Cloud Service](core-concepts/architecture.md)
 + Onboarding to AEM as a Cloud Service {#onboarding}
   + What is Required {#what-is-required}
+    + [Access Rights Granted](onboarding/what-is-required/access-rights-granted.md)
     + [Source Code Repository](onboarding/what-is-required/source-code-repository.md)
     + [Add User and Roles](onboarding/what-is-required/add-users-roles.md)
+    + [Provisioning of Environments](onboarding/what-is-required/environments-provisioned.md)
   + Getting Access to AEM in the Cloud {#getting-access-aem-in-cloud}
-    + [Create a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
     + [First Time Login](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
+    + [Create a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
     + [Create an AEM Application Project](onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md)
   + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md)
@@ -184,10 +186,13 @@ content owner: Raoul Duke
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/scene7-http2faq.md)
 + Implementing for AEM as a Cloud Service {#implementing}
   + Using Cloud Manager {#using-cloud-manager}
-    + [Configure your CI/CD Pipeline](implementing/cloud-manager/configure-pipeline.md)
     + [Manage your Environments](implementing/cloud-manager/manage-environments.md)
+    + [Configure your CI/CD Pipeline](implementing/cloud-manager/configure-pipeline.md)
+    + [Deploy your Code](implementing/cloud-manager/configure-pipeline.md)
     + [Understand your Test Results](implementing/cloud-manager/understand-test-results.md)
-    + [Manage Logs](implementing/cloud-manager/manage-logs.md)
+    + [Notifications](implementing/cloud-manager/notifications.md)
+    + [Custom Code Quality Rules](implementing/cloud-manager/custom-code-quality-rules.md)  
+    + [Access and Manage Logs](implementing/cloud-manager/manage-logs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Package Structure](implementing/developing/introduction/aem-project-content-package-structure.md)
     + [Develop a Repository Structure Package](implementing/developing/introduction/repository-structure-package.md)
