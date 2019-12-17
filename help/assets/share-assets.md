@@ -5,21 +5,24 @@ contentOwner: AG
 
 ---
 
-# Asset link sharing {#asset-link-sharing}
+# Share and distribute assets managed in Experience Manager {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
+Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. You can use the following methods to share assets from Experience Manager Assets as a Cloud Service:
+
+* Share as a link
+* Download assets
+* Share via AEM desktop app
+* Share via Adobe Asset Link
+* (upcoming functionality) Share using Brand Portal
+
+## Share assets as a link {#sharelink}
+
+To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
 
 >[!NOTE]
 >
->You require Edit ACL permission on the folder/asset you want to share as a link.
-
-## Share assets {#sharelink}
-
-To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
-
->[!NOTE]
->
->Before you share a link with users, ensure that Day CQ Mail Service is configured. An error occurs if you attempt to share a link without first [configuring Day CQ Mail Service](#configmailservice).
+>* You need Edit ACL permission on the folder or the asset that you want to share as a link.
+>* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
 
 1. In the Assets user interface, select the asset to share as a link.
 1. From the toolbar, click/tap the **[!UICONTROL Share Link]**.
@@ -27,15 +30,6 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
    Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
-
-   >[!NOTE]
-   >
-   >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs for GET requests only:
-   >    * `[aem_server]:[port]/linkshare.html`
-   >    * `[aem_server]:[port]/linksharepreview.html`
-   >    * `[aem_server]:[port]/linkexpired.html`
-   >
-   >Block other URLs to ensure that your AEM Author instance is secure.
 
    >[!NOTE]
    >
@@ -84,33 +78,15 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
 1. To unshare an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
 
-   A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
+A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 
-## Configure Day CQ mail service {#configmailservice}
-
-1. Click or tap the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
-1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
-
-    * SMTP server host name: email server host name
-    * SMTP server port: email server port
-    * SMTP user: email server user name
-    * SMTP password: email server password
-
-1. Click/tap **Save**.
-
-## Configure maximum data size {#maxdatasize}
-
-When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **Max Content Size (uncompressed)** parameter for Day CQ DAM Adhoc Asset Share Proxy Servlet in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
-
-1. Click/Tap the AEM logo and then go to **Tools** &gt; **Operations** &gt; **Web Console**.
-1. From the web console, locate the **Day CQ DAM Adhoc Asset Share Proxy Servlet** configuration.
-1. Open the **Day CQ DAM Adhoc Asset Share Proxy Servlet** configuration in edit mode, and modify the value of the **Max Content Size (uncompressed)** parameter.
-1. Save the changes.
-
-## Best practices and troubleshooting {#bestpractices}
+### Best practices and troubleshooting {#bestpractices}
 
 * Asset folders or Collections that contain a whitespace in their name may not get shared.
 * If users cannot download the shared assets, check with your AEM administrator what the [download limits](#maxdatasize) are.
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](#configmailservice) is configured or not.
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
+
+<!--
+Add content or link about how to share using BP, DA, AAL, etc.
+-->

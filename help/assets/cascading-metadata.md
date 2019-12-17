@@ -36,7 +36,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. (Optional) In the metadata schema editor, create a new field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
 
-   To create a new tab, tap/click **[!UICONTROL +]** to add a tab and then add a metadata field.
+   To create a new tab, tap/click `+` to add a tab and then add a metadata field.
 
    ![add_tab](assets/add_tab.png)
 
@@ -60,7 +60,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    >[!NOTE]
    >
-   >When adding choices, if you click the Dropdown field, the interface is distorted and the delete icon for the choices stops working. Do not click on the dropdown till you save the changes. If you face this issue, save the schema and open it again to continue editing.
+   >When adding choices, if you click the pop-up field, the interface is distorted and the delete icon for the choices stops working. Do not click on the dropdown till you save the changes. If you face this issue, save the schema and open it again to continue editing.
 
 1. (Optional) Add the other required fields. For example, format, codec, and duration for the asset type video.
 
@@ -87,24 +87,22 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
-   >[!NOTE]
+   >[!CAUTION]
    >
-   >Tapping/clicking on whitespaces (or anyplace other than values) will reset the values. In this case, you must select them again.
+   >To reset the values, click or tap on whitespace or anywhere on the interface other than the values. If the values are reset, select the values again.
 
    >[!NOTE]
    >
    >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
-1. Similary, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
+1. Similarly, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
 1. Repeat the steps to create dependency between document assets (PDF and Word) in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 1. Click **[!UICONTROL Save]**. Apply the metadata schema to a folder.
 
 1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
 
    ![Cascading metadata for Video asset](assets/video_asset.png)
-
    *Figure: Cascading metadata for Video asset*
 
    ![Cascading metadata for document asset](assets/doc_type_fields.png)
-
    *Figure: Cascading metadata for document asset*
