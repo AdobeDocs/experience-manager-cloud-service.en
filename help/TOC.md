@@ -12,6 +12,7 @@ content owner: Raoul Duke
 
 + Overview {#overview}
   + [Introduction to AEM as a Cloud Service](overview/introduction.md)
+  + [What is New and What is Different](overview/what-is-new-and-different.md)
   + [Terminology - New for the Cloud](overview/terminology.md)
   + [Notable Changes in AEM Cloud Service](release-notes/aem-cloud-changes.md)
 + Release Notes {#release-notes}
