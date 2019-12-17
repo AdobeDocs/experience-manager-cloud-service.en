@@ -179,7 +179,7 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
 The Smart Content Service is available for purchase as an add-on to AEM. After you purchase, an email is sent to the administrator of your organization with a link to Adobe IO.
 
-The administrator can follow the link to integrate the Smart Content Service with AEM. To integrate the service with AEM Assets, see [Configure Smart Tags](config-smart-tags-feature.md).
+The administrator can follow the link to integrate the Smart Content Service with AEM. To integrate the service with AEM Assets, see [configure Smart Tags](#configure-asset-tagging-using-the-smart-content-service).
 
 The onboarding process is complete when the administrator configures the service and adds users in AEM.
 
