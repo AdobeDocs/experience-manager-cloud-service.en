@@ -27,7 +27,7 @@ content owner: Raoul Duke
     + [Access Rights Granted](onboarding/what-is-required/access-rights-granted.md)
     + [Source Code Repository](onboarding/what-is-required/source-code-repository.md)
     + [Add User and Roles](onboarding/what-is-required/add-users-roles.md)
-    + [Provisioning of Environments](environments-provisioned.md)
+    + [Provisioning of Environments](onboarding/what-is-required/environments-provisioned.md)
   + Getting Access to AEM in the Cloud {#getting-access-aem-in-cloud}
     + [First Time Login](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
     + [Create a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
