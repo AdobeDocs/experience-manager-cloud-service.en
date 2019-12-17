@@ -52,14 +52,7 @@ Metadata is extracted from assets when they are imported (ingested). In addition
 
 This section covers the types of metadata and encoding standards.
 
-### Types of metadata {#types-of-metadata}
-
-There are two basic types of metadata:
-
-* technical metadata
-* descriptive metadata
-
-#### Technical metadata {#technical-metadata}
+### Technical metadata {#technical-metadata}
 
 Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. Technical metadata can be determined automatically by AEM Assets and other software and may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Examples of technical metadata are as follows:
 
@@ -68,7 +61,7 @@ Technical metadata is useful for software applications that are dealing with dig
 * the bitrate of an audio- or video-file
 * the resolution (level of detail) of an image
 
-#### Descriptive metadata {#descriptive-metadata}
+### Descriptive metadata {#descriptive-metadata}
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It has to be created manually or semi-automatically. For instance, a GPS-enabled camera can automatically track the latitude and longitude an image was taken at and add this information to the image's metadata.
 
@@ -100,7 +93,7 @@ ID3 tags are designed for the MP3 file format. Additional information on formats
 * ID3 tags work in MP3 and MP3pro files.
 * WAV has no tags.
 * WMA has proprietary tags that does not allow open source implementation.
-* Ogg Vorbis uses Xiph Comments embedded in the Ogg container.
+* Ogg Vorbis uses Xiph comments embedded in the OGG container.
 * AAC uses a proprietary tagging format.
 
 #### EXIF {#exif}
@@ -123,6 +116,45 @@ Most of the metadata fields defined by EXIF are of a highly technical nature and
 #### Other Metadata {#other-metadata}
 
 Other metadata that can be embedded from files include Microsoft Word, PowerPoint, Excel, and so on.
+
+## Manage metadata of your digital assets {#manage-assets-metadata}
+
+Enterprise Manager Assets lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. Use the [!UICONTROL Properties] page to change metadata properties to a common value or add or modify tags. To customize the metadata Properties page, including adding, modifying, deleting metadata properties, use the Schema editor.
+
+>[!NOTE]
+>
+>The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+
+1. Navigate to the location of the assets that you want to edit.
+1. Select the assets for which you want to edit common properties.
+1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected assets.
+
+   >[!NOTE]
+   >
+   >When you select multiple assets, the lowest common parent form is selected for the assets. In other words, the [!UICONTROL Properties] page only displays metadata fields that are common across the [!UICONTROL Properties] pages of all the individual assets.
+
+1. Modify the metadata properties for selected assets under the various tabs.
+1. To view the metadata editor for a specific asset, deselect the remaining assets in the list. The metadata editor fields are populated with the metadata for the particular asset.
+
+   >[!NOTE]
+   >
+   >* In the [!UICONTROL Properties] page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
+   >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
+
+1. To select a different metadata schema for the assets, tap/click **[!UICONTROL Settings]** from the toolbar, and select the desired schema. Save the changes.
+1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Tap/click **[!UICONTROL Submit]**.
+
+   >[!CAUTION]
+   >
+   >For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
+
+## Configure limit for bulk metadata update {#configlimit}
+
+To prevent DOS-like situation, AEM limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. AEM generates the following warning in the logs:
+
+`org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
+
+To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
 
 ## Metadata Schemata {#metadata-schemata}
 
@@ -192,7 +224,7 @@ The metadata schemata supported are listed in the following section.
 * xmpDM - Dynamic Media
 * xmpMM - Media Management
 
-## Metadata-driven Workflows {#metadata-driven-workflows}
+## Metadata-driven workflows {#metadata-driven-workflows}
 
 Creating metadata-driven workflows helps you automate some processes, which improved efficiency. In a metadata-driven workflow, the workflow management system reads the workflow and as a result performs some pre-defined action.
 

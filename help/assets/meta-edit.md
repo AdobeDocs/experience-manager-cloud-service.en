@@ -9,7 +9,7 @@ contentOwner: AG
 
 Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing fields (for example, when a metadata field is blank).
 
-Because companies need controlled and reliable metadata vocabularies, AEM Assets does not allow for adhoc adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [Creating New Metadata Property for Assets](meta-edit.md#editing-metadata-schema).
+Because companies need controlled and reliable metadata vocabularies, AEM Assets does not allow for ad hoc adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [Creating New Metadata Property for Assets](meta-edit.md#editing-metadata-schema).
 
 ## Editing metadata for an asset {#editing-metadata-for-an-asset}
 
@@ -29,7 +29,7 @@ To edit metadata:
    >
    >If a text field is empty, there is no existing metadata set. You can enter a value into the field and save it to add that metadata property.
 
-Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. This is done via AEM's metadata write-back workflow. Changes made to the existing properties (such as `dc:title`) are overwritten and newly created properties (including custom properties like `cq:tags`) are added together with the schema.
+Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. This is done via AEM metadata write-back workflow. Changes made to the existing properties (such as `dc:title`) are overwritten and newly created properties (including custom properties like `cq:tags`) are added together with the schema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

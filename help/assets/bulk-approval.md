@@ -1,17 +1,13 @@
 ---
-title: Review folder assets and collections
+title: Review assets in folders and collections
 description: Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 contentOwner: AG
 
 ---
 
-# Review folder assets and collections {#review-folder-assets-and-collections}
+# Review assets in folders and collections {#review-folder-assets-and-collections}
 
-Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
-
-Adobe Experience Manager (AEM) Assets lets you set up an ad-hoc review workflow for assets within a folder or collection, and share it with reviewers or creative partners to seek feedback.
-
-You can either associate the review workflow with a project or create an independent review task.
+Using Adobe Experience Manager (AEM) Assets, you can set ad-hoc review workflows for assets that are in a folder or in a collection. You can share it with reviewers or creative partners to seek their feedback. You can either associate a review workflow with a project or create an independent review task.
 
 After you share the assets, reviewers can approve or reject them. Notifications are sent at various stages of the workflow to notify intended recipients regarding the completion of various tasks. For example, when you share a folder or collection, the reviewer receives a notification that a folder/collection has been shared for review.
 

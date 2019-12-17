@@ -14,7 +14,7 @@ These operations include:
 * Deleting many assets
 * Moving many assets or assets with many references
 * Exporting/importing asset metadata in bulk.
-* Fetching assets, that are above the threadhold limit set, from a remote AEM deployment.
+* Fetching assets, that are above the threshold limit set, from a remote AEM deployment.
 
 Asynchronous processing involves enqueuing multiple jobs and eventually running them in a serial manner subject to the availability of system resources.
 
@@ -74,8 +74,7 @@ You can modify the schedule for the purge job and the duration for which details
 1. Specify the threshold number of days after which completed jobs are deleted and the maximum number of jobs for which details are retained in history.
 
    ![Configuration to schedule the purging of asynchronous jobs](assets/configmgr_purge_asyncjobs.png)
-
-   Configuration to schedule the purging of asynchronous jobs
+   *Figure: Configuration to schedule the purging of asynchronous jobs*
 
 1. Save the changes.
 

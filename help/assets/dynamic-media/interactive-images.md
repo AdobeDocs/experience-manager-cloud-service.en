@@ -298,7 +298,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 1. Tap **[!UICONTROL Save]** to save your work and return to the Browse page.
 1. Publish the interactive image. Publishing allows for the banner to be delivered through the cloud and also generates embed code if you need to integrate with a third party website.
 
-   See [Publishing assets](/help/assets/manage-digital-assets.md#publishing-assets).
+   See [Publishing assets](/help/assets/manage-digital-assets.md#publish-assets).
 
    After you have added hotspots and published the interactive image, you are now ready to add it to your existing website.
 
