@@ -196,7 +196,7 @@ content owner: Raoul Duke
     + [Deploying to AEM as a Cloud Service](implementing/deploying/deploying.md)
   + Dispatcher in the Cloud {#dispatcher-cloud}
     + [Dispatcher in the Cloud](implementing/dispatcher/dispatcher-cloud.md)
-  + Integrating with AEM as a Cloud Service {#integrations}
++ Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
 + Implementing Connectors for AEM as a Cloud Service {#connectors}
