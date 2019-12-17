@@ -62,6 +62,7 @@ The language copy for which you originally add assets is the language master. Th
 &nbsp; &nbsp; &nbsp; |- ja
 &nbsp; &nbsp; &nbsp; |- zh
 ```
+
 Perform the following steps to prepare your assets for translation:
 
 1. Create the language root of your language master. For example, the language root of the English language copy in the sample folder hierarchy is */content/dam/en*. Ensure that the language root is correctly configured according to the information in [Create a language root](#create-a-language-root).
