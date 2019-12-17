@@ -95,7 +95,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 
 ## Edit a smart collection {#edit-a-smart-collection}
 
-Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#edit-saved-searches).
+Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
 1. With the cursor in the Omnisearch box, press the Return key.
@@ -160,7 +160,7 @@ You can edit collection settings, such as title and description, or to add membe
 
    >[!NOTE]
    >
-   >You can also delete Smart collections by [delete saved searches](#delete-saved-searches).
+   >You can also delete Smart collections by [delete saved searches](#saved-searches).
 
 ## Download a collection {#download-a-collection}
 
