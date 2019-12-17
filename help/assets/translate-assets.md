@@ -110,7 +110,7 @@ If you use this option, assets to be translated are copied to the language root 
 >
 >This feature is available both for assets and folders. When an asset is selected instead of a folder, the entire hierarchy of folders up to the language root is copied to create a language copy for the asset.
 
-### Add to existing translation project {#add-to-existing-translation-project}
+### Add to an existing translation project {#add-to-existing-translation-project}
 
 If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly-added assets are copied to the target folder that contains previously-translated assets. No new translation project is created in this case.
 
@@ -146,24 +146,6 @@ Run this workflow to translate any additional set of assets and include it in a 
 * Create a new translation project
 * Add to existing translation project
 
-### Create a new translation project {#create-a-new-translation-project-1}
-
-If you use this option, a translation project is created for the set of assets for which you want to update a language copy.
-
-1. From the Assets UI, select the source folder where you added an asset.
-1. Open the **[!UICONTROL References]** pane, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
-1. Select the check box before **[!UICONTROL Language Copies]**, and then select the target folder corresponding to the appropriate locale.
-1. Click/tap **[!UICONTROL Update language copies]** at the bottom.
-1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create a new translation project]**.
-1. In the **[!UICONTROL Project Title]** field, enter a title for the project.
-1. Click/tap **[!UICONTROL Start]**.
-1. Navigate to the Projects console. The translation folder is copied to the Projects console.
-1. Open the folder to view the translation project.
-1. Click/tap the project to open the details page.
-1. To start the translation for the assets, click the arrow on the **[!UICONTROL Translation Job]** tile and select **[!UICONTROL Start]** from the list. A message notifies the commencement of the translation job.
-1. To view the status of the translation job, click/tap the ellipsis at the bottom of the **[!UICONTROL Translation Job]** tile. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
-1. Navigate to the Assets UI, and open the Properties page for each of the translated assets to view the translated metadata.
-
 ### Add to existing translation project {#add-to-existing-translation-project-1}
 
 If you use this option, the set of assets are added to an existing translation project to update the language copy for the locale you choose.
@@ -175,7 +157,7 @@ If you use this option, the set of assets are added to an existing translation p
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Add to existing translation project]**.
 1. From the **[!UICONTROL Existing translation project]** list, select a project to add the asset for translation.
 1. Click/tap **[!UICONTROL Start]**.
-1. See steps 9-14 of [Add to existing translation project](translation-projects.md#add-to-existing-translation-project) to complete the rest of the procedure.
+1. See steps 9-14 of [Add to existing translation project](#add-to-existing-translation-project) to complete the rest of the procedure.
 
 ### Create temporary language copies {#creating-temporary-language-copies}
 
@@ -265,7 +247,7 @@ Applying translation cloud services directly to your asset folder eliminates the
 
 1. From the toolbar, click/tap **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the dialog.The translation service is applied to the folder.
 
-### Apply custom translation connector  {#applying-custom-translation-connector}
+### Apply custom translation connector {#applying-custom-translation-connector}
 
 If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from Package Manager. Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](transition-cloud-services.md#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
@@ -280,6 +262,6 @@ If you want to apply a custom connector for the translation services you want to
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
 1. Specify a title and a name for the connector, and then click/tap **[!UICONTROL Create]**. The custom connector is available in the list of connectors in the **[!UICONTROL Cloud Services]** tab described in step 5 of [Applying the translation services](#applying-the-translation-services).
-1. Run any translation workflow described in [Creating Translation Projects](translation-projects.md) after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
+1. Run any translation workflow described in creating translation projects after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

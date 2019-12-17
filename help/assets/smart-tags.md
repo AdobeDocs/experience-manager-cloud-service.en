@@ -183,19 +183,16 @@ The administrator can follow the link to integrate the Smart Content Service wit
 
 The onboarding process is complete when the administrator configures the service and adds users in AEM.
 
+<!-- 
 ### Review assets and tags {#reviewing-assets-and-tags}
 
 After you are onboarded, the first thing you want to do is identify a set of tags that best describe these images in the context of your business.
 
-Next, review images to identify a set of images that best represent your product for a particular business requirement. Ensure that the assets in your curated set conform to [Smart Content Service training guidelines](train-smart-tags.md).
+Next, review images to identify a set of images that best represent your product for a particular business requirement.
 
 Add the assets to a folder and apply the tags to each asset from the properties page. Then, run the training workflow on this folder. The curated set of assets enables the Smart Content Service to effectively train more assets using your taxonomy definitions.
 
->[!NOTE]
->
->* Training is an irrevocable process. Adobe recommends that you review the tags in the curated set of assets well before training the Smart Content Service on the tags.
->* Read [Smart Content Service training guidelines](train-smart-tags.md) before starting training for any tag.
->* When you train the Smart Content Service for the first time, Adobe recommends that you train it on at least two distinct tags.
+-->
 
 ## Manage smart tags and searches {#manage-smart-tags-and-searches}
 

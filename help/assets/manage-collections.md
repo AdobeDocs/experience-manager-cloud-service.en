@@ -249,5 +249,4 @@ You can run a workflow for the assets within a collection. If the collection con
 
 >[!MORELIKETHIS]
 >
->* [Edit metadata properties of multiple Collections](/help/assets/manage-multiple-assets.md)
 >* [Create a review task for Collections](/help/assets/bulk-approval.md)

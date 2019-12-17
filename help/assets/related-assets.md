@@ -35,7 +35,7 @@ Creating source/derived relationships between assets using the Related Assets fe
 
 If the source file is related to another asset, AEM Assets fetches the referenced asset and includes it for translation.
 
-1. Translate the assets in the source folder to a target language by following the steps in [Create a new translation project](translation-projects.md#create-a-new-translation-project). For example, in this case, translate your assets to French.
+1. Translate the assets in the source folder to a target language by following the steps in [Create a new translation project](#create-a-new-translation-project). For example, in this case, translate your assets to French.
 1. From the Projects page, open the translation folder.
 1. Click/Tap the project tile to open the details page.
 1. Click/tap the ellipses below the Translation Job card to view the translation status.

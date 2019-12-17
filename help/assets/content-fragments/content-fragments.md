@@ -204,7 +204,7 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Fragment Metadata**
 
-  * Use the [Assets metadata schemas](/help/assets/metadata.md).
+  * Use the [Assets metadata schemas](/help/assets/metadata-schemas.md).
   * Tags can be created when you:
 
     * Create and author the fragment

@@ -47,7 +47,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    If the user is a member of your organization, select the user's email ID from the suggested email IDs that appear in the list below the typing area. For an external user, type the complete email ID and then select it from the list.
 
-   To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](#configmailservice).
+   To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](/help/assets/configure-asset-sharing.md#configmailservice).
 
    >[!NOTE]
    >
@@ -83,8 +83,8 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 ### Best practices and troubleshooting {#bestpractices}
 
 * Asset folders or Collections that contain a whitespace in their name may not get shared.
-* If users cannot download the shared assets, check with your AEM administrator what the [download limits](#maxdatasize) are.
-* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](#configmailservice) is configured or not.
+* If users cannot download the shared assets, check with your AEM administrator what the [download limits](/help/assets/configure-asset-sharing.md#maxdatasize) are.
+* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not.
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 
 <!--

@@ -13,7 +13,7 @@ Assets Insights captures user activity details, such as the number of times an i
 
 For Assets Insights to capture usage statistics for images from a website, you must include the embed code for the image in the website code.
 
-To let Asset Insights display usage statistics for assets, first configure the feature to fetch reporting data from Adobe Analytics. For details, see [Configure Asset Insights](/help/assets/configure-asset-insights.md).
+To let Asset Insights display usage statistics for assets, first configure the feature to fetch reporting data from Adobe Analytics. For details, see [Configure Asset Insights](#configure-asset-insights).
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ You can view the Asset Insights scores from the metadata page.
 
 1. From the Assets user interface (UI), select the image and then tap/click the **Properties** icon from the toolbar.
 1. From the Properties page, tap/click the **Insights** tab.
-1. Review the usage details for the asset in the **Insights** tab. The **Score** section descibes the total asset usage and performance sores of an asset .
+1. Review the usage details for the asset in the **Insights** tab. The **Score** section describes the total asset usage and performance sores of an asset .
 
    Usage score describes the numbers of times asset is used in various solutions.
 
@@ -114,7 +114,7 @@ After you configure your Adobe Analytics account, the Page Tracker code is gener
 
 Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
 
-1. Configure Asset Insights using the instructions in [Configuring Asset Insights](configure-asset-insights.md).
+1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
 1. Download the sample AEM Assets package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)

@@ -18,6 +18,8 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 ## Configure Day CQ mail service {#configmailservice}
 
+Before you can share assets as links, configure the email service.
+
 1. Click or tap the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
 1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:

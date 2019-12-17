@@ -35,7 +35,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 | Business users simplify opening and using assets, editing and uploading changes to AEM, and uploading new files into AEM from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones. | [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM desktop app on Win and Mac desktop |
 | Marketers and business users discover, preview, license and save, and manage the Adobe Stock assets from within AEM. Licensed and saved assets provide select Adobe Stock metadata for better governance. | [Experience Manager and Adobe Stock integration](aem-assets-adobe-stock.md) | AEM web interface |
 
-This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](share-assets-as-links.md), using [AEM Assets web UI](/help/assets/manage-digital-assets.md) should be reviewed based on specific requirement.
+This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](share-assets.md), using [AEM Assets web UI](/help/assets/manage-digital-assets.md) should be reviewed based on specific requirement.
 
 ![Creative Cloud connections for AEM: Deciding which capability to use](assets/creative-connections-aem.png)
 
@@ -48,13 +48,13 @@ Deciding on which capability to use
 | Discover - browse AEM folders | Yes | AEM Web UI + desktop actions | When browsing the network share, turn off the thumbnails to avoid downloading binary files of assets. |
 | Discover - access AEM collections | Yes | AEM Web UI + desktop actions |  |
 | Discover - search for assets from AEM | Yes | AEM Web UI + desktop actions |  |
-| Use - open asset | Yes | Yes - for any app | [Open from Web interface](/help/assets/managing-assets-touch-ui.md#previewing-assets) or from Finder |
+| Use - open asset | Yes | Yes - for any app | [Open from Web interface](/help/assets/manage-digital-assets.md#previewing-assets) or from Finder |
 | Use - place asset from AEM into a document | Yes - embedding | Yes - linking or embedding | AEM desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths. |
 | Edit - open for editing | Yes - Check-out action | Yes - Open action (in the network share) | [Check-out in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. |
 | Edit - work in progress outside AEM | Yes - Asset available in user's Creative Cloud storage account synced to desktop. | Yes |  |
 | Edit - upload changes | Yes - [Check-in action](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) with optional comment | Yes |  |
-| Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](/help/assets/managing-assets-touch-ui.md#uploading-assets) |
-| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](/help/assets/managing-assets-touch-ui.md#uploading-assets); Custom scripting or tool |
+| Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](/help/assets/manage-digital-assets.md#uploading-assets) |
+| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](/help/assets/manage-digital-assets.md#uploading-assets); Custom scripting or tool |
 | Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | AEM user / login | Users of both solutions count against the AEM user quota. |
 | Misc - network and access | Requires access from user's desktop to AEM deployment over network | Requires access from user's desktop to AEM deployment over network | Adobe Asset Link does not share network proxy environment. |
 | Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
@@ -64,7 +64,7 @@ To support asset distribution use cases, other solutions should be considered:
 * [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable, SaaS add-on to AEM Assets to publish assets.
 
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
-* AEM [link share](/help/assets/share-assets-as-links.md) to share assets ad hoc using links.
+* AEM [link share](/help/assets/share-assets.md) to share assets ad hoc using links.
 * [AEM Assets web interface](/help/assets/manage-digital-assets.md) with areas for external parties secured by AEM Access Control setup and with necessary IT / network configuration adjustments, giving these external users access to AEM.
 
 ## Key concepts and use cases {#key-concepts-and-use-cases}
