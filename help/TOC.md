@@ -22,7 +22,7 @@ content owner: Raoul Duke
   + [Deprecated and Removed Features](release-notes/deprecated-removed-features.md)
 + Core Concepts of AEM as a Cloud Service {#core-concepts}
   + [An Introduction to the Architecture of AEM as a Cloud Service](core-concepts/architecture.md)
-+ Onboarding {#onboarding}
++ Onboarding to AEM as a Cloud Service {#onboarding}
   + What is Required {#what-is-required}
     + [Source Code Repository](onboarding/what-is-required/source-code-repository.md)
     + [Add User and Roles](onboarding/what-is-required/add-users-roles.md)
