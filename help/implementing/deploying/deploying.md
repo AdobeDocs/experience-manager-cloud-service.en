@@ -18,46 +18,46 @@ The rest of this document will describe how developers should adapt their practi
 
 ## AEM version updates {#version-updates}
 
-It is key to understand that AEM will be updated frequently, potentially as often as once a day, and will focus on bug fixes and performance enhancements. The update will happen transparently and without causing downtime. The update is intended to be backwards compatible meaning customers should not need to modify custom code. In fact, AEM updates are independent events from customer code deployments. The AEM update is deployed on top of the last successful customer code push, which implies that any changes committed since the last push to production will not be deployed.
+It is key to understand that AEM will be updated frequently, potentially as often as once a day, and will focus on bug fixes and performance enhancements. The update will happen transparently and without causing downtime. The update is intended to be backwards compatible meaning you should not need to modify custom code. In fact, AEM updates are independent events from customer code deployments. The AEM update is deployed on top of your last successful code push, which implying that any changes committed since the last push to production will not be deployed.
 
 >[!NOTE]
 >
-> If custom code was pushed to staging and then rejected by the customer, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
+> If custom code was pushed to staging and then rejected by you, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
 
-On a regular frequency, a feature release will take place, focusing on feature additions and enhancements that will more substantially impact the user experience compared to the daily releases. A feature release is triggered not by the deployment of a large change set, but rather by the flip of a release toggle, activating code that had been accumulating (and rigorously tested) over the course of days or weeks through the daily updates.
+On a regular frequency, a feature release will take place, focusing on feature additions and enhancements that will impact more substantially the user experience compared to the daily releases. A feature release is triggered not by the deployment of a large change set, but rather by the flip of a release toggle, activating code that has been accumulating over the course of days or weeks through the daily updates.
 
 Health checks are used to monitor the health of the application. If these checks fail during an AEM as a Cloud Service update, the release will not proceed for that environment and Adobe will investigate why the update caused this unexpected behavior.
 
 ### Composite Node Store {#composite-node-store}
 
-As mentioned above, updates in most cases will incur zero downtime, including for the author, which is a cluster of nodes. Rolling updates are possible due to the "composite node store" feature in Oak, which allows AEM to reference multiple repositories simultaneously. In a Blue-Green deployment, the new Green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content`, `/conf`, `/etc` and others. Because both the Blue and the Green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
+As mentioned above, updates in most cases will incur zero downtime, including for the author, which is a cluster of nodes. Rolling updates are possible due to the "composite node store" feature in Oak. This feature allows AEM to reference multiple repositories simultaneously. In a rolling deployment, the new Green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content`, `/conf`, `/etc` and others. Because both the Blue and the Green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
 
 ## Customer Releases {#customer-releases}
 
 ### Coding against the right AEM version {#coding-against-the-right-aem-version}
 
-For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are auto-updated to the latest version of AEM more often (potentially daily maintenance releases and monthly feature releases), so custom code for internal releases should be built against those newer AEM interfaces.
+For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are automatically updated to the latest version of AEM more often, so custom code for internal releases should be built against those newer AEM interfaces.
 
 Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart will be supported and is expected to be the tool of choice for debugging in the majority of cases.
 
 > [!NOTE}
->There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure.  Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
+>There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-Below is the process for a developer to access the relevant version of the AEM artifacts, which we will refer to as the AEM as a Cloud Service SDK. needed for developing custom code for an internal release. The process will evolve between the current pilot phase and general availability. Information about the dispatcher can be found in its own dedicated section.
+Below is the process for a developer to access the relevant version of the AEM artifacts, which we will refer to as the AEM as a Cloud Service SDK, needed for developing custom code for an internal release. Information about the dispatcher can be found [in this page](/help/implementing/dispatcher/dispatcher-cloud.md).
 
 ## The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 The AEM as a Cloud Service SDK is comprised of the following artifacts:
 
-* Quickstart Jar - The AEM runtime used for local development
-* Java API Jar - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
-* Javadoc Jar - The javadocs for the Java API Jar
-* Dispatcher Tools 
+* **Quickstart Jar** - The AEM runtime used for local development
+* **Java API Jar** - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
+* **Javadoc Jar** - The javadocs for the Java API Jar
+* **Dispatcher Tools**
 
-In addition, some customers who were previously deployed with AEM 6.5 or earlier versions will use the artifacts below. If local compilation is not working with the Quickstart jar and you suspect it's due to interfaces that have been removed from AEM deployed as a Cloud Service, reach out to Customer Support to determine if you need access, which requires changes in the backend. 
+In addition, some customers who were previously deployed with AEM 6.5 or earlier versions will use the artifacts below. If local compilation is not working with the Quickstart jar and you suspect it is due to interfaces that have been removed from AEM deployed as a Cloud Service, reach out to Customer Support to determine if you need access. This will require changes in the backend.
 
-* 6.5 Deprecated Java API Jar - an additional set of interfaced that have been removed since AEM 6.5
-* 6.5 Deprecated Javadoc Jar - the Javadocs for the additional set of interfaced
+* **6.5 Deprecated Java API Jar** - an additional set of interfaced that have been removed since AEM 6.5
+* **6.5 Deprecated Javadoc Jar** - the Javadocs for the additional set of interfaced
 
 ## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
@@ -77,7 +77,7 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 
 ```
 
-* The remote coordinate for the maven repository where the package is hosted should be included in the pom.
+* The remote coordinate for the maven repository where the package is hosted should be included in the pom file.
 
 ```
 
@@ -100,19 +100,19 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 
 When is it recommended to refresh the local project with a new SDK?
 
-Recommended: at least after monthly maintenance release. 
+It is *recommended* to refresh it at least after a monthly maintenance release.
 
-Optional: after any daily maintenance release. Customers will be informed when their production instance has been successfully upgraded to a new AEM version. For the daily maintenance releases, it is not expected that the new SDK will have changed significantly, if at all. Still, it is recommended to occasionally refresh the local AEM developer environment with the latest SDK and rebuild and test the custom application. The monthly maintenance release will typically include more impactful changes and thus developers should immediately refresh, rebuild, and test.
+It is *optional* to refresh it after any daily maintenance release. Customers will be informed when their production instance has been successfully upgraded to a new AEM version. For the daily maintenance releases, it is not expected that the new SDK will have changed significantly, if at all. Still, it is recommended to occasionally refresh the local AEM developer environment with the latest SDK, then rebuild and test the custom application. The monthly maintenance release will typically include more impactful changes and thus developers should immediately refresh, rebuild, and test.
 
 Below is the recommended procedure for refreshing a local environment:
 
 1. Make sure that any useful content is either committed to the project in source control or available in a mutable content package for later import
-1. Local development test content needs to be store separately so that it is not deployed as part of the Cloud Manager pipeline build; as it has only to be used for local development
+1. Local development test content needs to be stored separately so that it is not deployed as part of the Cloud Manager pipeline build. This is because it only needs to be used for local development
 1. Stop the currently running quickstart
-1. Move the crx-quickstart folder to a different folder for safe keeping
-1. Note the new AEM version, which is noted in Cloud Manager (this will be used to identify the new QuickStart Jar version to download)
-1. Download the QuickStart JAR whose version matches the Production AEM version, from the Software Distribution Portal
-1. Create a brand new folder and put the new QuickStart Jar in it
+1. Move the `crx-quickstart` folder to a different folder for safe keeping
+1. Note the new AEM version, which is noted in Cloud Manager (this will be used to identify the new QuickStart Jar version to download further on)
+1. Download the QuickStart JAR whose version matches the Production AEM version from the Software Distribution Portal
+1. Create a brand new folder and put the new QuickStart Jar inside
 1. Start the new QuickStart with the desired runmodes (either renaming file or passing in runmodes via `-r`). 
    * Make sure there's no remnant of the old quickstart in the folder.
 1. Build your AEM application
@@ -120,20 +120,20 @@ Below is the recommended procedure for refreshing a local environment:
 1. Install any mutable content packages needed for local environment testing via PackageManager
 1. Continue development and deploy changes as needed
 
-If there is content that should be installed with each new AEM quickstart version, include it into a content package and include in the project's source control and install it each time.
+If there is content that should be installed with each new AEM quickstart version, include it into a content package and in the project's source control. Then, install it each time.
 
-The recommendation is to update the SDK frequently (e.g. biweekly) and dispose full local state daily to not accidentally depend on stateful data in the application.
+The recommendation is to update the SDK frequently (for example biweekly) and dispose full local state daily to not accidentally depend on stateful data in the application.
 
-In case you depend on CryptoSupport ([either by configuring the credentials of Cloudservices or the SMTP Mail service in AEM or by using CryptoSupport API in your application](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)) the encrypted properties will be encrypted by a key autogenerated on the first start of an AEM environment. While the cloudsetup takes care of automatically reusing the environment-specificE CryptoKey it is necessary to inject the cryptokey into the local development environment. 
+In case you depend on CryptoSupport ([either by configuring the credentials of Cloudservices or the SMTP Mail service in AEM or by using CryptoSupport API in your application](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), the encrypted properties will be encrypted by a key that is autogenerated on the first start of an AEM environment. While the cloudsetup takes care of automatically reusing the environment-specific CryptoKey, it is necessary to inject the cryptokey into the local development environment.
 
-By default AEM is configured to store the key data within the data folder of a folder, but for convenience of easier reuse in development case the AEM process can be initialized on first startup with "-Dcom.adobe.granite.crypto.file.disable=true" which will generate the encryption data at "/etc/key".
+By default AEM is configured to store the key data within the data folder of a folder, but for convenience of easier reuse in development, the AEM process can be initialized on first startup with "`-Dcom.adobe.granite.crypto.file.disable=true`". This will generate the encryption data at "`/etc/key`".
 
-To be able to reuse content-packages containing the encrypted values you need to follow these steps:
+To be able to reuse content packages containing the encrypted values you need to follow these steps:
 
-* Whenever you start up the local quickstart.jar the first time start up with  "`-Dcom.adobe.granite.crypto.file.disable=true`" (it won't do harm to always add it)
-* The very first time you started up an instance create a package that contains a filter for the root "/etc/key" this will hold the secret to be reused & across all environments for which you would want to reuse the secrets
-* Export any mutable content containing secrets or look up the encrypted values via /crx/de to add it to the package to be reused accoss installations
-* When ever you spin up a fresh instance (either to replace with a new version or as multiple dev environments should share the credentials for testing) install the package produced in step 2 & 3 to be able to reuse the content without the need to manually reconfigure (as now the cryptokey is in synch)
+* When you initially start up the local quickstart.jar, make sure to add the below parameter: "`-Dcom.adobe.granite.crypto.file.disable=true`". It is recommended, but optional, to always add it.
+* The very first time you started up an instance create a package that contains a filter for the root "`/etc/key`". This will hold the secret to be reused across all environments for which you would want them to be reused
+* Export any mutable content containing secrets, or look up the encrypted values via `/crx/de` to add it to the package that will be reused accoss installations
+* Whenever you spin up a fresh instance (either to replace with a new version or as multiple dev environments should share the credentials for testing), install the package produced in step 2 and 3 in order to be able to reuse the content without the need to manually reconfigure. This is because now the cryptokey is in synch.
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
