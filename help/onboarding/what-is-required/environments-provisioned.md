@@ -7,6 +7,9 @@ seo-description: Provisioning  of Environments - What Is Required
 
 # Provisioning of Environments {#environments-provisioning}
 
+>Note:
+>Content to be reviewed for Cloud Manager for AEM Cloud Services.
+
 ## Provisioning {#provisioning}
 
 All the AEM cloud environments purchased by a customer will be automatically provisioned by Adobe, and linked back to their program in Cloud Manager. These AEM cloud Environments are included in every Adobe Managed Services subscription, and are usually comprised of at least one production environment, one stage environment, and optionally one or more development or test environments.

@@ -7,7 +7,7 @@ seo-description: Creating a Program - Cloud Services
 
 # Create a Program {#create-a-program}
 
-The cloud-native solution gives the user with requisite permissions the ability to create a program on a self-service model.
+The cloud-native solution provides the user with requisite permissions and the ability to create a program on a self-service model.
 
 A program creation wizard will ask the user to submit details, depending on the user’s objective in creating the program within the bounds of what is available to the specific customer or organization.
 
@@ -21,6 +21,9 @@ A *Regular* program is created to enable live traffic at the appropriate time in
 ## Usage Limits {#usage-limits}
   
 Credits are consumed in any of the following ways:
+
+>Note:
+>Although critical from an operational perspective, the concept of *credits* does not directly appear in the Cloud Manager UI.
 
 1. **Core Credits**: 
 

@@ -29,8 +29,8 @@ content owner: Raoul Duke
     + [Add User and Roles](onboarding/what-is-required/add-users-roles.md)
     + [Provisioning of Environments](onboarding/what-is-required/environments-provisioned.md)
   + Getting Access to AEM in the Cloud {#getting-access-aem-in-cloud}
-    + [First Time Login](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
-    + [Create a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
+    + [Understand Program Types and Create a Program](onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
+    + [Access Programs](onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
     + [Create an AEM Application Project](onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md)
   + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy.md)
