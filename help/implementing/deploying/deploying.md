@@ -7,7 +7,7 @@ seo-description: Deploying to AEM as a Cloud Service
 
 # Deploying to AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
-<!-- ## Introduction {#introduction}
+## Introduction {#introduction}
 
 The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service environments.
 
@@ -94,16 +94,17 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
     </snapshots>
 </repository>
 
-``` 
+```
+
 ## Refreshing a Local Project with a New SDK Version {#refreshing-a-local-prokect-with-a-new-skd-version}
 
-When is it recommended to refresh the local project with a new SDK? 
+When is it recommended to refresh the local project with a new SDK?
 
 Recommended: at least after monthly maintenance release. 
 
 Optional: after any daily maintenance release. Customers will be informed when their production instance has been successfully upgraded to a new AEM version. For the daily maintenance releases, it is not expected that the new SDK will have changed significantly, if at all. Still, it is recommended to occasionally refresh the local AEM developer environment with the latest SDK and rebuild and test the custom application. The monthly maintenance release will typically include more impactful changes and thus developers should immediately refresh, rebuild, and test.
 
-Here is the recommended procedure for refreshing a local environment:
+Below is the recommended procedure for refreshing a local environment:
 
 1. Make sure that any useful content is either committed to the project in source control or available in a mutable content package for later import
 1. Local development test content needs to be store separately so that it is not deployed as part of the Cloud Manager pipeline build; as it has only to be used for local development
@@ -129,12 +130,10 @@ By default AEM is configured to store the key data within the data folder of a f
 
 To be able to reuse content-packages containing the encrypted values you need to follow these steps:
 
-* Whenever you start up the local quickstart.jar the first time start up with  "-Dcom.adobe.granite.crypto.file.disable=true" (it won't do harm to always add it)
+* Whenever you start up the local quickstart.jar the first time start up with  "`-Dcom.adobe.granite.crypto.file.disable=true`" (it won't do harm to always add it)
 * The very first time you started up an instance create a package that contains a filter for the root "/etc/key" this will hold the secret to be reused & across all environments for which you would want to reuse the secrets
 * Export any mutable content containing secrets or look up the encrypted values via /crx/de to add it to the package to be reused accoss installations
 * When ever you spin up a fresh instance (either to replace with a new version or as multiple dev environments should share the credentials for testing) install the package produced in step 2 & 3 to be able to reuse the content without the need to manually reconfigure (as now the cryptokey is in synch)
-
--->
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
