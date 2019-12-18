@@ -94,7 +94,8 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
     </snapshots>
 </repository>
 
-``` 
+```
+
 ## Refreshing a Local Project with a New SDK Version {#refreshing-a-local-prokect-with-a-new-skd-version}
 
 When is it recommended to refresh the local project with a new SDK?
