@@ -27,7 +27,7 @@ XMP defines a [metadata](https://en.wikipedia.org/wiki/Metadata) model that can 
 
 XMP is most commonly serialized and stored using a subset of the [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF), which is in turn expressed in [XML](https://en.wikipedia.org/wiki/XML).
 
-## Advantages of XMP {#advantages-of-xmp}
+### Advantages of XMP {#advantages-of-xmp}
 
 XMP has the following advantages over other encoding standards and schemata:
 
@@ -42,7 +42,7 @@ The XMP standard is designed to be extensible, allowing you to add custom types 
 >
 >XMP generally does not allow binary data types to be embedded. To carry binary data in XMP, for example, thumbnail images, they must be encoded in an XML-friendly format such as `Base64`.
 
-## XMP core concepts {#xmp-core-concepts}
+### XMP core concepts {#xmp-core-concepts}
 
 **Namespaces and schemata** 
 
@@ -68,11 +68,11 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 
 This XMP write-back feature in Adobe Experience Manager (AEM) Assets replicates asset metadata changes to the renditions of the asset.
 
-When you change the metadata for an asset from within AEM Assets or while uploading the asset, changes are initially stored within the asset node in Crx-De.
+When you change the metadata for an asset from within AEM Assets or while uploading the asset, changes are initially stored within the asset node in CRXDE.
 
 The XMP write-back feature propagates the metadata changes to all or specific renditions of the asset.
 
-Consider a scenario where you modify the Title property of the asset titled `Classic Leather` to `Nylon`.
+Consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
 
 ![metadata](assets/metadata.png)
 

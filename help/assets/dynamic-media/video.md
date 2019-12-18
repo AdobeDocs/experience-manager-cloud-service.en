@@ -75,7 +75,7 @@ The following step-by-step workflow description is designed to help you get up a
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
           [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
 
-        * [Managing metadata for digital assets](/help/assets/metadata.md)
+        * [Managing metadata for digital assets](/help/assets/manage-metadata.md)
         * [Metadata schemas](/help/assets/metadata-schemas.md)
 
     * Review, approve, and annotate videos, and maintain full version control

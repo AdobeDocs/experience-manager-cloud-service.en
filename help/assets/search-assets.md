@@ -501,7 +501,7 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
-For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/manage-smart-tags.md).
+For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 ### Mandatory metadata {#mandatorymetadata}
 
@@ -623,7 +623,7 @@ You can download the searched assets and their renditions just as you download r
 
 It is possible to make bulk updates to the common metadata fields of multiple assets. From the search results, select one or more assets. Click **[!UICONTROL Properties]** from the toolbar and update the metadata as required. Click **[!UICONTROL Save and Close]** when done. The previously existing metadata in the updated fields is overwritten.
 
-For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/manage-multiple-assets.md). For the assets that are available across folders or match a common criteria, it is faster to bulk update the metadata via searching.
+For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/manage-metadata.md#manage-assets-metadata). For the assets that are available across folders or match a common criteria, it is faster to bulk update the metadata via searching.
 
 ### Smart collections {#collections-1}
 

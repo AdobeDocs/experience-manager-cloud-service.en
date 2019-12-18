@@ -21,7 +21,6 @@ This article lists the known issues of Adobe Experience Manager as a Cloud Servi
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-* **Versioning UI:** Version comparison slider is not visible and preview version button does not display the preview interface. <!-- CQ-4284536 -->
 * **Metadata Schema**: Asset rating widget can cause JSP compilation error. A workaround is to remove the asset rating component from the metadata schema. <!-- CQ-4282865 -->
 
 ### Upcoming Assets capabilities {#upcoming-assets-capabilities}

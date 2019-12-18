@@ -95,7 +95,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 
 ## Edit a smart collection {#edit-a-smart-collection}
 
-Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#edit-saved-searches).
+Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
 1. With the cursor in the Omnisearch box, press the Return key.
@@ -133,7 +133,7 @@ You can edit the metadata of multiple collections simultaneously. This functiona
 
 The Search feature within Collections supports both [Search for collections](#search-collections) and [Search for assets within a Collection](#search-within-collections).
 
-### Search Collections {#search-collections}
+### Search collections {#search-collections}
 
 You can search collections from the Collections console. When you search with keywords in the Omnisearch box, AEM Assets searches for collection names, metadata, and the tags added to the collections.
 
@@ -145,7 +145,7 @@ In the Collections console, tap/click a collection to open it.
 
 Within a collection, AEM Asset search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
 
-## Edit Collection Settings {#edit-collection-settings}
+## Edit collection settings {#edit-collection-settings}
 
 You can edit collection settings, such as title and description, or to add members to a collection.
 
@@ -160,7 +160,7 @@ You can edit collection settings, such as title and description, or to add membe
 
    >[!NOTE]
    >
-   >You can also detete Smart collections by [delete saved searches](#delete-saved-searches).
+   >You can also delete Smart collections by [delete saved searches](#saved-searches).
 
 ## Download a collection {#download-a-collection}
 
@@ -171,6 +171,33 @@ When you download a collection, the entire hierarchy of assets within the collec
 1. In the **[!UICONTROL Download]** dialog, tap/click **[!UICONTROL Download]**. If you want to download the renditions of the assets within the collection, select **[!UICONTROL Renditions]**. Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection.
 
    When you select a collection to download, the complete folder hierarchy under the collection is downloaded. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
+
+## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
+
+Adobe Enterprise Manager (AEM) Assets lets you edit the metadata of many collections in bulk. Use the [!UICONTROL Properties] page to perform metadata changes on multiple collections, for example, change metadata properties to a common value or add or modify tags.
+
+To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
+
+>[!NOTE]
+>
+>The bulk editing methods work for assets available in a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+
+1. From the collections console, select the collections you want to edit.
+1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected collections.
+1. Modify the metadata properties for selected collections under the various tabs.
+
+   >[!NOTE]
+   >
+   >The metadata you add for the selected collections overwrites the previous metadata for these collections, except for tags. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
+
+1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
+
+   >[!NOTE]
+   >
+   >* In the collection properties page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. The metadata for collections that you remove is not updated.
+   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
+
+1. Save the changes.
 
 ## Create nested collections {#create-nested-collections}
 
@@ -191,9 +218,7 @@ You can add a collection to another collection, thereby creating a nested collec
 
 ## Saved searches {#saved-searches}
 
-In the Assets UI, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Creating a saved search also creates a smart collection.
-
-### Create saved searches {#create-saved-searches}
+In the Assets user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Creating a saved search also creates a smart collection.
 
 Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
 
@@ -201,17 +226,15 @@ Saved searches are created when you create a smart collection. Smart collections
 >
 >You can share smart collections in the same way as you share static collections.
 
-### Edit saved searches {#edit-saved-searches}
-
 Editing saved searches is the same as editing smart collections. For details, see [Edit a smart collection](#edit-a-smart-collection).
 
-### Delete Saved Searches {#delete-saved-searches}
+To delete saved searches, follow these steps:
 
-1. Navigate to the Assets UI, and tap/click the Search icon on the toolbar.
+1. Navigate to the Assets user interface, and tap/click **[!UICONTROL Search]** on the toolbar.
 1. With the cursor in the Omnisearch box, press the Return key.
 1. Click or tap the GlobalNav icon to display the Filters panel.
-1. From the **Saved Searches** list, tap/click the **Delete** icon next to the smart collection you want to delete.
-1. In the dialog, tap/click **Delete** to delete the saved search.
+1. From the **[!UICONTROL Saved Searches]** list, tap/click **[!UICONTROL Delete]** next to the smart collection you want to delete.
+1. In the dialog, tap/click **[!UICONTROL Delete]** to delete the saved search.
 
 ## Run a workflow on a collection {#run-a-workflow-on-a-collection}
 
@@ -226,5 +249,4 @@ You can run a workflow for the assets within a collection. If the collection con
 
 >[!MORELIKETHIS]
 >
->* [Edit metadata properties of multiple Collections](/help/assets/manage-multiple-assets.md)
 >* [Create a review task for Collections](/help/assets/bulk-approval.md)

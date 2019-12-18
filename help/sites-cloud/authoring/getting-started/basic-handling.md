@@ -242,7 +242,7 @@ You can view, navigate through, and select (for further action) your resources w
 Selecting a specific resource is dependent on a combination of the view and the device:
 
 |View|Select Touch|Select Desktop|Deselect Touch|Deselect Desktop|
-|-|-|-|-|-|
+|---|---|---|---|---|
 |Column|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
 |Card|Tap and hold the card|Mouse over then use the check mark quick action|Tap the card|Click the card|
 |List|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|

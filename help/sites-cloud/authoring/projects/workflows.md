@@ -22,13 +22,13 @@ The project workflows available out of the box include the following:
 Depending on which Project template you select, you have certain workflows available:
 
 |   |**Simple Project**|**Media Project**|**Translation Project**|
-|---|:-:|:-:|:-:|:-:|
+|---|:-:|:-:|:-:|
 |Request Copy |  |x |    |
 |Product Photo Shoot |  |x |  |
 |Project Approval |x |  |    |
 |Request Launch |x |  |    |
 |Request Landing Page |x |  |    |
-|Request Email |x |  |  |  |
+|Request Email |x |  |  |
 |DAM Create Language Copy&ast; |  |    |x |
 |DAM Create and Translate Language Copy&ast; |  |    |x |
 
@@ -90,4 +90,4 @@ This workflow lets you request a launch.
 
 ## Create (and Translate) Language Copy Workflow for Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in [Creating Language Copies for Assets.](/help/assets/translation-projects.md)
+The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in creating language copies for assets.

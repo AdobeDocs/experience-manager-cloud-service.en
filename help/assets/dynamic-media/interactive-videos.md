@@ -242,7 +242,7 @@ See [Creating a New Viewer Preset](/help/assets/dynamic-media/managing-viewer-pr
 
 If you have already uploaded your video and thumbnail assets, proceed to [Adding interactivity to your video](#adding-interactivity-to-your-video).
 
-If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/manage-digital-assets.md#deleting-assets).
+If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/manage-digital-assets.md#delete-assets).
 
 To upload a video and its associated thumbnail assets:
 
