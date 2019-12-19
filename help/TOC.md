@@ -188,7 +188,7 @@ content owner: Raoul Duke
   + Using Cloud Manager {#using-cloud-manager}
     + [Manage your Environments](implementing/cloud-manager/manage-environments.md)
     + [Configure your CI/CD Pipeline](implementing/cloud-manager/configure-pipeline.md)
-    + [Deploy your Code](implementing/cloud-manager/deply-code.md)
+    + [Deploy your Code](implementing/cloud-manager/deploy-code.md)
     + [Understand your Test Results](implementing/cloud-manager/understand-test-results.md)
     + [Notifications](implementing/cloud-manager/notifications.md)
     + [Custom Code Quality Rules](implementing/cloud-manager/custom-code-quality-rules.md)  
