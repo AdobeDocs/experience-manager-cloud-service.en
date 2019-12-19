@@ -206,7 +206,7 @@ content owner: Raoul Duke
 + Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
-+ Security [#security]
++ Security {#security}
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support-for-aem-as-a-cloud-service.md)
 + Implementing Connectors for AEM as a Cloud Service {#connectors}
   + [Implementing an AEM Connector](connectors/implement.md)
