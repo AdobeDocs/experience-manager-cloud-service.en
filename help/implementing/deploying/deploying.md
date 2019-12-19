@@ -52,7 +52,7 @@ The AEM as a Cloud Service SDK is comprised of the following artifacts:
 * **Quickstart Jar** - The AEM runtime used for local development
 * **Java API Jar** - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
 * **Javadoc Jar** - The javadocs for the Java API Jar
-* **Dispatcher Tools**
+* **Dispatcher Tools** - The set of tools used to develop against Dispatcher locally. Separate artifacts for unix and windows
 
 In addition, some customers who were previously deployed with AEM 6.5 or earlier versions will use the artifacts below. If local compilation is not working with the Quickstart jar and you suspect it is due to interfaces that have been removed from AEM deployed as a Cloud Service, reach out to Customer Support to determine if you need access. This will require changes in the backend.
 
