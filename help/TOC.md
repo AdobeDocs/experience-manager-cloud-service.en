@@ -99,8 +99,8 @@ content owner: Raoul Duke
 + AEM Assets in the Cloud {#assets}
   + [Overview and what's new](/help/assets/whats-new-assets.md)
   + [Changes to Assets in Cloud Service](/help/assets/assets-cloud-changes.md)
-  + [Supported file formats](/help/assets/file-format-support.md)
   + [Architecture](/help/assets/architecture.md)
+  + [Supported file formats](/help/assets/file-format-support.md)
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + Manage digital assets using AEM {#manage}
     + [Share assets](/help/assets/share-assets.md)
@@ -126,7 +126,7 @@ content owner: Raoul Duke
     + [Add watermark to assets](/help/assets/add-watermark-to-assets.md)
     + [Check-in and check-out assets to edit](/help/assets/check-out-and-submit-assets.md)
     + [Digital rights management for assets](/help/assets/drm.md)
-  + Configure, administer, and extend AEM Assets {#admin}
+  + Configure, administer and extend Assets {#admin}
     + [APIs and reference material](/help/assets/developer-reference-material-apis.md)
     + [Configure asset sharing](/help/assets/configure-asset-sharing.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)

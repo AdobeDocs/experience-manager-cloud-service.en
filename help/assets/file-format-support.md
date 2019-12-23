@@ -31,7 +31,7 @@ Columns of the support tables provide the following information:
 
 |    Column    |                           Description                           |
 | ------------ | --------------------------------------------------------------- |
-| Format       | file format (file extension) of the asset original binary       |
+| Format       | File format (file extension) of the asset original binary       |
 | GIF          | GIF format for rendition generation                             |
 | JPEG         | JPEG format for rendition generation                            |
 | PNG          | PNG format for rendition generation                             |
@@ -45,20 +45,20 @@ Columns of the support tables provide the following information:
 
 ## Adobe formats {#adobe-formats}
 
-| Format  | GIF | JPEG | PNG | TXT | XMP | Width/Height |
-| ------- | --- | ---- | --- | --- | --- | ------------ |
-| Adobe   | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
-| AI      | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| COLLAGE |     |      |     |     | ✓   |              |
-| DN      | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| IDEAS   |     |      |     |     | ✓   |              |
-| INDD    | ✓   | ✓    | ✓   |     | ✓   | ✓*           |
-| INDT    |     |      |     |     | ✓   |              |
-| PDF     | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
-| PROTO   |     |      |     |     | ✓   |              |
-| PSB     | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| PSD     | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| XD      | ✓   | ✓    | ✓   |     | ✓   | ✓            |
+| File format | GIF | JPEG | PNG | TXT | XMP | Width/Height |
+| ----------- | --- | ---- | --- | --- | --- | ------------ |
+| Adobe       | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
+| AI          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
+| COLLAGE     |     |      |     |     | ✓   |              |
+| DN          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
+| IDEAS       |     |      |     |     | ✓   |              |
+| INDD        | ✓   | ✓    | ✓   |     | ✓   | ✓*           |
+| INDT        |     |      |     |     | ✓   |              |
+| PDF         | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
+| PROTO       |     |      |     |     | ✓   |              |
+| PSB         | ✓   | ✓    | ✓   |     | ✓   | ✓            |
+| PSD         | ✓   | ✓    | ✓   |     | ✓   | ✓            |
+| XD          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
 
 \* For INDD (InDesign files), the size of rendition is determined by the preview embedded in the INDD file. Configure the preferences in InDesign (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) to embed larger rendition.
 
