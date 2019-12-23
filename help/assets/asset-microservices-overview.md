@@ -13,7 +13,7 @@ contentOwner: AG
 
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
-TBD: Post-GA we will provide detailed info at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all info is added, in short, in this article.
+TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 
 -->
 

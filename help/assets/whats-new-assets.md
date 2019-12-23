@@ -7,7 +7,7 @@ contentOwner: AG
 
 # Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
 
-<!-- Need review info from gklebus -->
+<!-- Need review information from gklebus -->
 
 Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
 
