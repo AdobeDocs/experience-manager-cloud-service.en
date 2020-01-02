@@ -25,7 +25,7 @@ For example, column view:
 
 You can edit a page with the page editor. For example:
 
-`https://<host>:<port>/editor.html/content/we-retail/us/en/equipment.html`
+`http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
 ![Page Editor](/help/sites-cloud/authoring/assets/page-editor.png)
 
@@ -87,7 +87,7 @@ The actual appearance and handling is dependent on the device type you are using
   * Filter components by name.
   * Limit the display to a specific group using the drop down selection.
 
-  For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Layout Container**:
+  For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
 
   ![Component Browser information](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -181,20 +181,16 @@ Clicking the chevron next to a component will collapse or expand that level.
 Clicking on the component will highlight the component in the page editor. The actions available will depend on the page state:
 
 * For example, a basic page:
-
-  `https://<host>:<port>/editor.html/content/we-retail/language-masters/en/equipment.html`
-
+  
   ![Content Tree highlighted](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
+  The components of a basic page will have the usual options.
+  
   If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon will directly start the edit dialogue for the component.
 
   ![Content Tree edit button](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* A page that is part of a livecopy, where components are inherited from another page: <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
-
-  `https://<host>:<port>/editor.html/content/we-retail/us/en/equipment.html`
-
-  ![Content Tree with a livecopy](/help/sites-cloud/authoring/assets/content-tree-livecopy.png)
+* A page that is part of a livecopy, where components are inherited from another page will have a reduced selection of options, including the inheritance options. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
 
 >[!NOTE]
 >
