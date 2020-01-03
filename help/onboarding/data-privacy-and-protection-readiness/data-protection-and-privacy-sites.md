@@ -9,12 +9,6 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service Sites s
 
 >[!WARNING]
 >
->THIS PAGE IS FOR INTERNAL DOCUMENTATION ONLY.
->
->THE CONTENT OF THIS PAGE IS CURRENTLY SUBJECT TO THE LEGAL REVIEW, AND IS ALSO WAITING FOR CONFIRMATION ON CERTAIN TECHNICAL DETAILS.
-
->[!WARNING]
->
 >The contents of this document do not constitute legal advice and are not meant as a substitute for legal advice. 
 >
 >Please consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
