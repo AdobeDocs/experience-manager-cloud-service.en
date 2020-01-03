@@ -60,9 +60,9 @@ The Annotate mode allows you to create, edit, move or delete annotations on your
     * Enter the annotation text.
     * Create a sketch (lines and shapes) to highlight an area of the component.
 
-      The cursor will change to a crosswire when you are creating a sketch. You can draw multiple distinct lines. The sketch line reflects the annotation color and can be either an arrow, circle, or oval.
-
       ![Annotation Sketch button](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+
+      The cursor will change to a crosshair when you are creating a sketch. You can draw multiple distinct lines. The sketch line reflects the annotation color and can be either an arrow, circle, or oval.
 
     * Choose/change the color:
 

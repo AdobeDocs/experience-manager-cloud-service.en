@@ -102,13 +102,9 @@ How to select a page depends on which view you are using in the console:
         * On a mobile device: tap-and-hold the card
         * On a desktop device: use the [quick action](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) represented by the tick icon:
 
-   ![Example card](/help/sites-cloud/authoring/assets/card.png)
-
     * The card will be overlaid with a tick to show that the page has been selected.
 
-   >[!NOTE]
-   >
-   >Once in selection mode the **Select** icon (a tick) will change to the **Deselect** icon (a cross).
+    ![Example card](/help/sites-cloud/authoring/assets/card.png)
 
 ### Quick Actions (Card View/Desktop Only) {#quick-actions-card-view-desktop-only}
 
@@ -151,7 +147,7 @@ To edit your page:
         * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions will be shown (for some components, this will be a limited selection).
         * To see all actions available enter full-screen mode using:
 
-        ![Full screen button](/help/sites-cloud/authoring/assets/full-screen.png)
+          ![Full screen button](/help/sites-cloud/authoring/assets/full-screen.png)
 
     * [Configure the properties of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
@@ -178,7 +174,7 @@ To edit your page:
 
         * Select the **Annotate** mode (speech bubble icon). Add annotations using the **Add annotation** (plus) icon. Exit annotation mode using the X at top right.
 
-        ![Annotations button](/help/sites-cloud/authoring/assets/annotations.png)
+          ![Annotations button](/help/sites-cloud/authoring/assets/annotations.png)
 
     * [Preview a page](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (to see how it will appear in the publish environment)
 
@@ -231,8 +227,6 @@ There are two main methods of [publishing your page](/help/sites-cloud/authoring
 
     1. Open the **Page Information** menu.
     1. Select **Publish Page**.
-
-        ![Publish Page option](/help/sites-cloud/authoring/assets/publish-page.png)
 
 * Unpublishing a page from the console can only be done via the **Manage Publication** option, which is only available on the toolbar (not via the quick actions).
 
@@ -304,7 +298,7 @@ To create a [version](/help/sites-cloud/authoring/features/page-versions.md) of 
 
    ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tap/click on the up-arrow at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
+1. Tap/click on the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
 
    ![Timeline view](/help/sites-cloud/authoring/assets/timeline-view.png)
 

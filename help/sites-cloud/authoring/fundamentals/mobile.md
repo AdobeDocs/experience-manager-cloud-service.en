@@ -31,10 +31,13 @@ Devices are grouped into the categories feature, smart, and touch according to t
 Use the following procedure to author a mobile page:
 
 1. From global navigation open the **Sites** console.
-1. Open the page **We.Retail** -&gt; **United States** -&gt; **English**.
-1. Switch to **Preview** mode.
-1. Switch to the desired emulator by clicking the device icon at the top of the page.
-1. Drag and drop components from the component browser to the page.
+1. Edit a content page.
+1. Switch to the desired emulator by clicking the **Emulator** icon at the top of the page.
+
+   ![Emulator icon](/help/sites-cloud/authoring/assets/emulator.png)
+
+1. Drag and drop components from the component browser or asset browser on to the page.
+1. [Modify the responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) of the page and its components based on the selected device.
 
 The page will look similar to the following:
 
