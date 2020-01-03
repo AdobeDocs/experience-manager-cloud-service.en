@@ -9,15 +9,9 @@ seo-description: Content Fragments are stored as Assets, so are primarily manage
 
 Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
-<!--
 >[!NOTE]
 >
 >Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
--->
-
->[!NOTE]
->
->Content fragments are then used with authoring pages; see Page Authoring with Content Fragments.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -48,7 +42,7 @@ The method of creating a content fragment is (basically) the same for both simpl
 
         * Template - for example **Simple Fragment** <!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
 
-        * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airport** model
+        * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airports** model
 
     * All available templates and models are displayed.
 
@@ -91,11 +85,11 @@ In the **Assets** console a range of actions are available for your content frag
 
 Select the fragment to reveal the toolbar with applicable actions:
 
+* **Create**
 * **Download**
 
     * Save the fragment as a ZIP file; you can define whether to include Elements, Variations, Metadata.
 
-* **Create**
 * **Checkout**
 * **Properties**
 
