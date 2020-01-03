@@ -77,6 +77,10 @@ The selected side will fill the entire window, but the bar will remain at the to
 
 ![Full screen mode](/help/sites-cloud/authoring/assets/versions-full-screen-mode.png)
 
+>[!NOTE]
+>
+>If the browser width can not accommodate both page names in full screen view, only the name of the page being displayed will be shown and the other will be available behind ellipsis.
+
 You can also choose to close the full screen view by clicking the exit full screen icon.
 
 ![Exit full screen mode](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)

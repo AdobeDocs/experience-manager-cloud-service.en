@@ -331,17 +331,16 @@ With these two actions you can add content to your components.
 
 When working in **Structure** mode an orange border indicates the component currently selected. A dotted line also indicates the parent component.
 
-For example, in the screenshot below the **Text** component is selected, within a **Layout Container** (responsivegrid).
-
-![Selected component example](/help/sites-cloud/authoring/assets/templates-border-outline.png)
-
 #### Policy and Properties (General) {#policy-and-properties-general}
 
 The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
 
-Create a content policy, or select an existing one, for a component. This allows you to define the design details.
+Create a content policy, or select an existing one, for a component.
 
 ![Content Policy button](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
+
+This allows you to define the design details.
+
 ![Content Policy](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
 The configuration window is divided in two.
@@ -396,7 +395,7 @@ If a setting allows for multiple configurations, click or tap the **Add** button
 
 To remove a configuration, click or tap the **Delete** button located to the right of the configuration.
 
-To remove a configuration, click or tap the** Delete** button.
+To remove a configuration, click or tap the **Delete** button.
 
 ![Delete button](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -539,14 +538,14 @@ You can define the template layout for a range of devices. [Responsive layout](/
 
 ![Edit template layout](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
-### Editing a Template - Page Design - Template Author/Developer {#editing-a-template-page-design-template-author-developer}
+### Editing a Template - Page Policy - Template Author/Developer {#editing-a-template-page-policy-template-author-developer}
 
-The page design including required client-side libraries and page policies are maintained under the **Page Design** option of the **Page Information** menu.
+The page policy including required client-side libraries is maintained under the **Page Policy** option of the **Page Information** menu.
 
-To access the **Page Design** dialog:
+To access the **Page Policy** dialog:
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
-1. The **Page Design** dialog opens and is divided into two sections:
+1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Policy** to open the dialog.
+1. The **Page Policy** dialog opens and is divided into two sections:
 
     * The left half defines the [page policies](#page-policies)
     * The right half defines the [page properties](#page-properties)
@@ -595,8 +594,6 @@ Using page properties, you can define the required client-side libraries by usin
   ![Add button](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
   Add as many text fields as necessary for your client-side libraries.
-
-  ![Multiple client-side libraries defined](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Define the libraries' relative position as necessary by dragging the fields using the drag handle.
 

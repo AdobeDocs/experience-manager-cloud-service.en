@@ -118,7 +118,7 @@ A developer can also configure a list of allowed element names for styles on the
 
 This property is set on the `cq:Component` node. For example:
 
-* `/apps/weretail/components/content/list@cq:styleElements=[div,section,span]`
+* `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
 
 >[!CAUTION]
 >

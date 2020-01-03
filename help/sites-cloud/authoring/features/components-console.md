@@ -14,7 +14,7 @@ content-type: reference
 
 The Components Console allows you to browse through all components defined for your instance and view key information for each component.
 
-It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
+It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. Because there is no tree structure for components, only list view is available.
 
 ![The Components Console](/help/sites-cloud/authoring/assets/components-console.png)
 
