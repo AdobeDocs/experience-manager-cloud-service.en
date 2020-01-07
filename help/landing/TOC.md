@@ -17,6 +17,6 @@ solution-title: Experience Cloud
 + [AEM Sites in the Cloud](/help/sites-cloud/home.md)
 + [AEM Assets in the Cloud](/help/assets/home.md)
 + [Implementing for AEM as a Cloud Service](/help/implementing/home.md)
-+ [Security](/help/security/home.md)
++ [Security for AEM as a Cloud Service](/help/security/home.md)
 + [Implementing Connectors for AEM as a Cloud Service](/help/connectors/implement.md)
 + [Operations and Maintenance on AEM as a Cloud Service](/help/operations/maintenance.md)
