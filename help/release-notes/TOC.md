@@ -15,4 +15,4 @@ solution-title: Experience Cloud
   + [Cloud Service Release Notes](/help/release-notes/release-notes.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Known issues](/help/release-notes/known-issues.md)
-  + [Deprecated and Removed Features](/hep/release-notes/deprecated-removed-features.md)
+  + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
