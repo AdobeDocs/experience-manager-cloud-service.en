@@ -20,16 +20,19 @@ This guide explains the concepts of security in AEM.
 ## AEM Cloud Service Guides
 
 | User Guide | Description |
-|--- |---|
-| [Release Notes](/help/release-notes/release-notes.md)| Provides important information about the latest release of AEM, including what's new deprecated and removed features, and known issues. |
-| [Assets User Guide](/help/assets/home.md) | Learn how to create, manage, deliver, and optimize digital assets. |
-| [Administering Guide](/help/sites-cloud/administering/home.md) | Understand how to administer AEM |
-| [Authoring Guide](/help/sites-cloud/authoring/home.md) | This guide explains the concepts of authoring in AEM. |
-| [Deploying User Guide](/help/implementing/deploying/deploying.md) | This guide shows you the basics of AEM.  |
-| [Developing User Guide](/help/implementing/deploying/deploying.md)| Learn how to build out your AEM instance. |
-| [Operations User Guide](/help/operations/home.md)| This guide describes the back-end operations of AEM such as indexing and maintenance tasks. |
+|---|---|
+|[Overview](/help/overview/introduction.md)|Overview of Adobe Experience Manager as a Cloud Service|
+|[Release Notes](/help/release-notes/release-notes.md)|Release notes|
+|[Core Concepts](/help/core-concepts/architecture.md)|Introduction to the Architecture of Adobe Experience Manager as a Cloud Service|
+|[Onboarding](/help/onboarding/home.md)|Onboarding guide|
+|[Sites in the Cloud](/help/sites-cloud/sites-cloud-changes.md)|User guide for sites in the cloud|
+|[Assets in the Cloud](/help/assets/whats-new-assets.md)|User guide for assets in the cloud|
+|[Implementing](/help/implementing/home.md)|Implementing AEM in the cloud|
+|[IMS Support](/help/security/ims-support-for-aem-as-a-cloud-service.md)|Key security considerations|
+|[Implementing Connectors](/help/connectors/implement.md)|Connectors for AEM in the cloud|
+|[Operations and Maintenance](/help/operations/maintenance.md)|Operations guide for AEM in the cloud|
 
-## Key AEM resources
+## Additional AEM Resources
 
 * [Dispatcher User Guide](/help/implementing/dispatcher/dispatcher-cloud.md)
 * [HTL User Guide](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)

@@ -5,7 +5,6 @@ product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
 index: no
 solution-title: Experience Cloud
-content owner: Raoul Duke
 ---
 
 # Experience Manager as a Cloud Service Help {#using}

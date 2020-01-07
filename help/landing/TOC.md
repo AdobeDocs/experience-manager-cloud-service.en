@@ -5,7 +5,6 @@ product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
 index: no
 solution-title: Experience Cloud
-content owner: Raoul Duke
 ---
 
 # Experience Manager as a Cloud Service Help {#using}
@@ -20,6 +19,5 @@ content owner: Raoul Duke
 + [Implementing for AEM as a Cloud Service](/help/implementing/home.md)
 + Security {#security}
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support-for-aem-as-a-cloud-service.md)
-+ [Implementing Connectors for AEM as a Cloud Service](connectors/implement.md)
-+ [Operations and Maintenance on AEM as a Cloud Service](operations/maintenance.md)
-
++ [Implementing Connectors for AEM as a Cloud Service](/help/connectors/implement.md)
++ [Operations and Maintenance on AEM as a Cloud Service](/help/operations/maintenance.md)
