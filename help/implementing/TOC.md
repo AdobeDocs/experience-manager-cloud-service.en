@@ -12,13 +12,13 @@ solution-title: Experience Cloud
 + [Home](/help/landing/home.md)
 + Implementing for AEM as a Cloud Service {#implementing}
   + Using Cloud Manager {#using-cloud-manager}
-    + [Manage your Environments](/help/implementing/cloud-manager/manage-environments.md)
-    + [Configure your CI/CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
-    + [Deploy your Code](/help/implementing/cloud-manager/deploy-code.md)
-    + [Understand your Test Results](/help/implementing/cloud-manager/understand-test-results.md)
-    + [Notifications](/help/implementing/cloud-manager/notifications.md)
-    + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)  
-    + [Access and Manage Logs](/help/implementing/cloud-manager/manage-logs.md)
+    + [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md)
+    + [Configuring your CI/CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
+    + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
+    + [Understanding your Test Results](/help/implementing/cloud-manager/understand-test-results.md)
+    + [Understanding Notifications](/help/implementing/cloud-manager/notifications.md)
+    + [Understanding Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)  
+    + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Package Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [Develop a Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
