@@ -7,8 +7,8 @@ index: no
 solution-title: Experience Cloud
 ---
 
-# Connectors {#toc-security}
+# Security {#toc-security}
 
 + [Home](/help/landing/home.md)
-+ Implementing Connectors for AEM as a Cloud Service {#security}
++ Security for AEM as a Cloud Service {#security}
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support-for-aem-as-a-cloud-service.md)
