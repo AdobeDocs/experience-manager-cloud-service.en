@@ -17,14 +17,18 @@ From the **Variations** tab you can:
 Perform a range of other actions depending on the data-type being edited; for example:
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
+
 * Select between [Rich Text](#rich-text), [Plain Text](#plain-text) and [Markdown](#markdown) for editing
 
 * [Upload Content](#uploading-content)
 
+<!--
 * [View key statistics](#viewing-key-statistics) (about multi-line text)
+
 * [Summarize Text](#summarizing-text)
 
 * [Synchronize variations with Master content](#synchronizing-with-master)
+-->
 
 >[!CAUTION]
 >
@@ -73,14 +77,20 @@ The following actions are also available (for all the [formats](#formats)) when 
 
 * Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
 
-* [Show Text Statistics](#viewing-key-statistics)
-
 * [Upload content](#uploading-content)
-* [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
-* [Summarize Text](#summarizing-text)
+
 * [Annotate](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) your text
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
+
+<!--
+* [Show Text Statistics](#viewing-key-statistics)
+
+* [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
+* 
+* [Summarize Text](#summarizing-text)
+
+-->
 
 ### Formats {#formats}
 
