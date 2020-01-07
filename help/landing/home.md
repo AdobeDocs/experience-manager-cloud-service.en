@@ -1,13 +1,13 @@
 ---
-title: AEM Cloud Service Connectors Guide
-seo-title: AEM Cloud Service Connectors Guide
-description: This guide explains the concepts of connectors in AEM.
-seo-description: This guide explains the concepts of connectors in AEM.
+title: AEM Cloud Service Security Guide
+seo-title: AEM Cloud Service Security Guide
+description: This guide explains the concepts of security in AEM.
+seo-description: This guide explains the concepts of security in AEM.
 ---
 
-# AEM Cloud Service Connectors Guide {#aem-connectors-guide}
+# AEM Cloud Service Security Guide {#aem-security-guide}
 
-This guide explains the concepts of connectors in AEM.
+This guide explains the concepts of security in AEM.
 
 ## Key AEM Articles
 
