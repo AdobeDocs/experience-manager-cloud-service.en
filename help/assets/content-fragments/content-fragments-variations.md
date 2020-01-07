@@ -149,16 +149,19 @@ You can also open the full-screen editor for further [actions](#actions).
 >
 >If you switch between **Rich Text** and **Markdown** you might experience unexpected effects with Block Quotes and Code Blocks, as these two formats can have differences in how they are handled.
 
+<!--
 ### Viewing Key Statistics {#viewing-key-statistics}
 
 When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. For example:
 
 ![statistics](assets/cfm-variations-04.png)
+-->
 
 ### Uploading Content {#uploading-content}
 
 To ease the process of authoring content fragments you can upload text, prepared in an external editor, and add it directly to the fragment.
 
+<!--
 ### Summarizing Text {#summarizing-text}
 
 Summarizing text is designed to help users reduce the length of their text to a predefined number of words, while keeping the key points and overall meaning.
@@ -204,6 +207,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
    ![summarization comparison](assets/cfm-variations-06.png)
 
 6. Select **Summarize** to confirm the changes.
+-->
 
 ### Annotating a Content Fragment {#annotating-a-content-fragment}
 
@@ -330,6 +334,7 @@ To delete an existing variation:
 >
 >You cannot delete **Master**.
 
+<!--
 ### Synchronizing with Master {#synchronizing-with-master}
 
 **Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevent to the variations and, therefore, need to be propagated to them..
@@ -361,3 +366,4 @@ When editing a variation you have access to the action for synchronizing the cur
    ![synchronizing with master](assets/cfm-variations-11.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
+-->
