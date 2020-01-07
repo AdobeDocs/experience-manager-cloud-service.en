@@ -7,8 +7,8 @@ seo-description: Provisioning  of Environments - What Is Required
 
 # Provisioning of Environments {#environments-provisioning}
 
->Note:
->Content to be reviewed for Cloud Manager for AEM Cloud Services.
+>[!NOTE]
+>This page is still in-progress and needs to be updated specifically for Cloud Manager in Cloud Services.
 
 ## Provisioning {#provisioning}
 

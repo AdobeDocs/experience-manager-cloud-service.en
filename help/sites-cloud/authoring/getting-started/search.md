@@ -73,9 +73,7 @@ To search and filter your resources:
 
    ![Search side panel](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. You can also add additional search terms:
-
-   ![Search side panel additional terms](/help/sites-cloud/authoring/assets/search-side-panel-additional-terms.png)
+1. You can also add additional search terms.
 
 1. Close **Search** with the **X** (top right).
 
@@ -91,7 +89,7 @@ As well as searching by a wide range of facets you can also save a particular se
 
 1. Define your search criteria and select **Save**.
 
-   ![Saving a search](/help/sites-cloud/authoring/assets/search-save.png)
+   ![Saving a search](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
 1. Assign a name, then use **Save** to confirm:
 

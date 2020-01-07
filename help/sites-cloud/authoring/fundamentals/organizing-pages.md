@@ -38,34 +38,25 @@ You can also use [folders](#creating-a-new-folder) to help organize your content
 
 The structure of a website can be thought of as a tree that holds your content pages. The names of these content pages are used to form the URLs, whereas the titles are shown when the page content is viewed.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+The following shows an example from the [WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) site, where an article about skateparks ( `la-skateparks`) is accessed:
 
-`https://<host>:<port>/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+`http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
 ```xml
  /content
- /we-retail
-  /us
-   /en
-    /products
-     /equipment
-      /hiking
-       /desert-sky-shorts
-       /hiking-poles
-       /...
-      /running...
-      /surfing...
-      /...
-     /seasonal...
-     /...
-    /about-us
-    /experience
+ /wknd
+  /en
+   /music
     /...
-   /es...
-  /de...
-  /fr...
-  /...
- /...
+   /sports
+    /la-skateparks
+    /five-gyms-la
+    /mountain-bike-routes
+   /shopping
+    /...
+   /art
+    /...
+   /...
 ```
 
 This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and perform actions on the pages. You can also create new sites and [new pages](#creating-a-new-page).
@@ -130,7 +121,7 @@ A **Title** field containing invalid characters will be accepted, but the name d
 
 #### Name {#name}
 
-When you supply a page **Name** when creating a new page, AEM will validate the name according to the conventions imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+When you supply a page **Name** when creating a new page, AEM will validate the name according to the conventions imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
 
 ![Example of entering an invalid page name](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -232,7 +223,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
    >[!NOTE]
    >
-   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists a new page will become `winter0`.
+   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page will become `beach1`.
 
 1. If you return to the console you will see your new page:
 
@@ -290,7 +281,7 @@ You can copy a page and all of its sub-pages to a new location:
 
    >[!NOTE]
    >
-   >If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
+   >If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page with the name `beach` will become `beach1`.
 
 ### Moving or Renaming a Page {#moving-or-renaming-a-page}
 
@@ -325,7 +316,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    >[!NOTE]
    >
-   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
+   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `beach` already exists a new page with the name `beach` will become `beach1`.
 
 1. From the **Select Destination** stage of the wizard you can either:
 

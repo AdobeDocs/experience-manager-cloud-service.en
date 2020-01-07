@@ -28,7 +28,6 @@ Together with the updated JSON exporter, structured content fragments can also b
 
 >[!CAUTION]
 >
-
 >This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
 
 The content fragments enable:
@@ -83,7 +82,7 @@ In the appropriate configuration dialog you can select the available parameters,
   * Specify the fragment to be used.
 * **Display Mode**:
   * **Single Text Element**
-  * **Multiple Element**
+  * **Multiple Elements**
 * **Element**
   * The default **Main** will always be available.
   * A selection will be available if the fragment was created with an appropriate template.

@@ -52,7 +52,7 @@ The AEM as a Cloud Service SDK is comprised of the following artifacts:
 * **Quickstart Jar** - The AEM runtime used for local development
 * **Java API Jar** - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
 * **Javadoc Jar** - The javadocs for the Java API Jar
-* **Dispatcher Tools**
+* **Dispatcher Tools** - The set of tools used to develop against Dispatcher locally. Separate artifacts for unix and windows
 
 In addition, some customers who were previously deployed with AEM 6.5 or earlier versions will use the artifacts below. If local compilation is not working with the Quickstart jar and you suspect it is due to interfaces that have been removed from AEM deployed as a Cloud Service, reach out to Customer Support to determine if you need access. This will require changes in the backend.
 
@@ -343,6 +343,10 @@ In addition, the old release should be tested for compatibility with any new mut
 ### Service Users and ACL Changes {#service-users-and-acl-changes}
 
 Changing service users or ACLs needed to access content or code could lead to errors in the older AEM versions resulting in access to that content or code with outdated service users. To address this behavior, a recommendation is to make changes spread across at least 2 releases, with the first release acting as a bridge before cleaning up in the subsequent release.
+
+### Index Changes {#index-changes}
+
+If changes to indexes are made, it is important that the Blue version continues to use its indexes until it is terminated, while the Green version uses its own modified set of indexes. The developer should follow the index management techniques described [in this article](/help/operations/indexing.md).
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 

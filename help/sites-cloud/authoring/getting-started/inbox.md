@@ -102,6 +102,10 @@ For both views (List and Calendar) you can define settings:
 
   ![Inbox list view settings](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
+  You can also delegate your calendar to other uses as well as request delegation from other users and manage your delegations.
+
+  ![Inbox list view delegation settings](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+
 ## Taking Action on an Item {#taking-action-on-an-item}
 
 1. To take an action on an item, select the thumbnail for the appropriate item. Icons for the actions that are applicable to that item will be shown in the toolbar:
@@ -111,7 +115,7 @@ For both views (List and Calendar) you can define settings:
    The actions are appropriate to the item and include:
 
     * **Complete** action
-    * **Re-assign**/**Delegate** an item
+    * **Delegate** an item
     * **Open** an item, depending on the item type this action can:
 
         * Show the item properties
@@ -134,9 +138,9 @@ For both views (List and Calendar) you can define settings:
     * An action wizard will be started
     * A documentation page will be opened
 
-   For example, **Re-assign** will open a dialog:
+   For example, **Delegate** will open a dialog:
 
-   ![Re-assign inbox task](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
+   ![Delegate inbox task](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
    Depending on whether a dialog, wizard, documentation page has been opened you can:
 

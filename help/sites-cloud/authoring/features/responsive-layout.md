@@ -84,11 +84,11 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
 1. Open the required page for editing. For example:
 
-   `http://<host>:<port>/editor.html/content/we-retail/us/en/experience.html`
+   `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
 1. Select the **Emulator** icon from the top toolbar:
 
-   ![Emulator button](/help/sites-cloud/authoring/assets/responsive-layout-emulator-button.png)
+   ![Emulator button](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. The emulator toolbar will open.
 
@@ -116,10 +116,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
     * See the active marker for the selected device, such as **iPad.**
     * See the active marker for the appropriate [breakpoint](#layout-definitions-device-emulation-and-breakpoints) such as **Tablet.**
-
-   ![Breakpoints](/help/sites-cloud/authoring/assets/responsive-layout-breakpoint.png)
-
-    * The blue dotted line represents the *fold* for the selected device (here an **iPhone 6**).
+    * The blue dotted line represents the *fold* for the selected device (here an **iPhone 6 Plus** in landscape).
 
    ![The fold](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
@@ -164,15 +161,12 @@ As with other components, you can select and then take action on (cut, copy, del
 
    When you mouse over the container names in the drop-down, their outlines will be displayed on the page.
 
-    * The lowest nested layout container will be outlined in black.
-    * The next-lowest nested layout container will be in a dark gray.
-    * Every successive container will be lin a lighter shade of gray.
+    * The lowest nested layout container will be outlined in blue.
+    * Every successive container will be lin a lighter shade of blue.
 
    ![Nested containers](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
 1. This will highlight the entire grid with its content. The action toolbar will be shown, from where you can select an action such as **Delete.**
-
-   ![Highlighted grid](/help/sites-cloud/authoring/assets/responsive-layout-highlight-grid.png)
 
 ## Defining Layouts (Layout mode) {#defining-layouts-layout-mode}
 
@@ -216,7 +210,7 @@ When in layout mode you can perform various actions on a grid:
 
     ![Parent button](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-  * **Show hidden components** - Reveal all or individual components. The number indicates how many hidden components there currently are.thecounter shows how many components are hidden.
+  * **Show hidden components** - Reveal all or individual components. The number indicates how many hidden components there currently are. The counter shows how many components are hidden.
 
     ![Show hidden components button](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 

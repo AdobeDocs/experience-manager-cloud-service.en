@@ -281,6 +281,7 @@ To create, edit and use content fragments you also need:
 
 A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
 
+<!--
 ### We.Retail Sample {#we-retail-sample}
 
 A sample fragment can be seen at:

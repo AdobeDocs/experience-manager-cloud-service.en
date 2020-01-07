@@ -7,8 +7,8 @@ seo-description: Add Users and Roles - What Is Required
 
 # Add Users and Roles - What Is Required {#add-users-roles}
 
->Note:
->This page is still in-progress and needs to be updated specifically for Cloud Manager in Cloud Services
+>[!NOTE]
+>This page is still in-progress and needs to be updated specifically for Cloud Manager in Cloud Services.
 
 Many features in [!UICONTROL Cloud Manager] require specific permissions to operate. For example, only certain users are allowed to set the Key Performance Indicators (KPIs) for a program. These permissions are logically grouped into roles.
 

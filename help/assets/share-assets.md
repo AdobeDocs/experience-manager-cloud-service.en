@@ -13,7 +13,7 @@ Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collec
 * Download assets
 * Share via AEM desktop app
 * Share via Adobe Asset Link
-* (upcoming functionality) Share using Brand Portal
+* (Upcoming functionality) Share using Brand Portal
 
 ## Share assets as a link {#sharelink}
 
@@ -73,16 +73,26 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >AEM supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
 
-1. To download the shared asset, click/tap the **[!UICONTROL Select]** icon from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
-1. To view the assets you shared as links, go to the Assets UI and click/tap the **[!UICONTROL GlobalNav]** icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
+1. To view the assets you shared as links, go to the Assets UI and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
 1. To unshare an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
 
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 
+## Download and share assets {#download-and-share-assets}
+
+Users can download some assets and share these outside of Experience Manager. For more information, see [how to search assets](/help/assets/search-assets.md) and [how to download assets](/help/assets/download-assets-from-aem.md).
+
+## Share assets using desktop app {#share-assets-using-desktop-app}
+
+Marketers and line-of-business users can easily share marketing assets with their creative professionals using desktop application that works on Windows and Mac. For more information, see [desktop app overview](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets).
+
+The desktop users can create new assets and share it back with their marketing counterparts who are AEM users, for example, by uploading new images. See [upload assets to Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+
 ### Best practices and troubleshooting {#bestpractices}
 
-* Asset folders or Collections that contain a whitespace in their name may not get shared.
+* Asset folders or collections that contain a whitespace in their name may not get shared.
 * If users cannot download the shared assets, check with your AEM administrator what the [download limits](/help/assets/configure-asset-sharing.md#maxdatasize) are.
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not.
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).

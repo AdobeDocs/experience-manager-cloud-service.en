@@ -9,12 +9,6 @@ seo-description: Learn about Adobe Experience Manager as a Cloud Service Sites s
 
 >[!WARNING]
 >
->THIS PAGE IS FOR INTERNAL DOCUMENTATION ONLY.
->
->THE CONTENT OF THIS PAGE IS CURRENTLY SUBJECT TO THE LEGAL REVIEW, AND IS ALSO WAITING FOR CONFIRMATION ON CERTAIN TECHNICAL DETAILS.
-
->[!WARNING]
->
 >The contents of this document do not constitute legal advice and are not meant as a substitute for legal advice. 
 >
 >Please consult your company's legal department for advice concerning Data Protection and Data Privacy regulations. 
@@ -47,7 +41,32 @@ By default AEM Sites components do not store form-data entered by visitors on th
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-AEM has a cookie opt-out service that can be used for managing the opt-in/opt-out for users.
+Adobe Experience Manager is subject to a cookie opt-out service that is used for managing the opt-in/opt-out for users.
+
+To Opt-out:
+
+1. Navigate to: 
+   [Adobe Privacy Center - Opt-out](https://www.adobe.com/privacy/opt-out.html)
+
+1. Scroll down to **Services** - **Experience Cloud service usage data**.
+
+1. Select the referenced link; currently titled **here**.
+
+1. You will be presented with the following details, together with the options to opt out or in:
+
+    * To opt-out of aggregation and analysis of data about your visit to this site, it is necessary to install a cookie on your browser. This cookie identifies that you have opted-out.
+
+      If you delete the opt-out cookie, or if you change computers or Web browsers, you will need to opt-out again.
+
+      Opt-out - Exclude me from visitor session aggregation and analysis (install the `amcglobal.sc.omtrdc.net` opt-out cookie) - Click Here.
+
+      Opt-in - Include me in visitor session aggregation and analysis (do not install the `amcglobal.sc.omtrdc.net` opt-out cookie) - Click Here. 
+
+    Follow the above steps to access the actual links.
+
+    >[!NOTE]
+    >
+    > There is a further description in the **Privacy Policy** section of the [Terms of Use](https://marketing.adobe.com/resources/help/en_US/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 

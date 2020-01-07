@@ -39,7 +39,7 @@ To [create a new Content Fragment Model](#creating-a-content-fragment-model) you
 
 When the configuration **global** is enabled for content fragment models, then any models that users create can be used in any Assets folder.
 
-To use other configurations (i.e. excluding global) with a comparable Assets folder, then you have to define the connection. This is done using **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
+To use other configurations (i.e. excluding global) with a comparable Assets folder, then you have to define the connection. This is done by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 

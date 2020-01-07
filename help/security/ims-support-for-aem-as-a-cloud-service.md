@@ -108,6 +108,8 @@ The User Management API that is used by the User Sync Tool is covered [here](htt
 >
 >The AEM IMS configuration required will be automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/deploying.md).
 
+The AEM IMS configuration required will be auto-configured when the AEM environments and instances are provisioned.  Customer administrators may modify part of the configuration as per their requirements
+
 The overall approach is to configure Adobe IMS as an OAuth provider. The **Apache Jackrabbit Oak Default Sync Handler** can be modified just like for LDAP synchronization.
 
 Below are the key OSGI configurations that need to be modified in order to change properties like User Auto Membership or Groups Mappings.
