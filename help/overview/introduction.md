@@ -15,11 +15,11 @@ Adobe Experience Manager as a Cloud Service:
 
 * Enables you to provide your customers with personalized, content-led experiences, by combining the power of the AEM Content Management System with AEM Digital Asset Management.
 
-* Provides Continuous Delivery and Continuous Integration for updates with zero downtime. 
+* Provides Continuous Delivery and Continuous Integration for updates with zero downtime.
 
 * Is based on a dynamic architecture that autoscales, thus removing infrastructure considerations.
 
-* Is security focused, using automated tests to scan for common vunerabilites.
+* Is security focused, using automated tests to scan for common vulnerabilities.
 
 * Validates customer code using automated tests.
 
