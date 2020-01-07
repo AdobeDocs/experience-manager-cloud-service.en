@@ -11,7 +11,7 @@ seo-description: Content Fragments - Delete Considerations
 
 The ability to delete content is powerful, but potentially sensitive, with many industries needing to restrict and control how these privileges are distributed.
 
-With regards to delete permissions, Content Fragments must be considered at two levels:
+In relation to delete permissions, Content Fragments must be considered at two levels:
 
 1. **The Content Fragment as a single entity.**
 
