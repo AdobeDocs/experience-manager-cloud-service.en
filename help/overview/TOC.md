@@ -9,7 +9,7 @@ solution-title: Experience Cloud
 
 # Experience Manager as a Cloud Service Help {#toc-overview}
 
-+ [Home](/help/landing/home.md) {#home}
++ [Home](/help/landing/home.md)
 + Overview {#overview}
   + [Introduction to AEM as a Cloud Service](/help/overview/introduction.md)
   + [What is New and What is Different](/help/overview/what-is-new-and-different.md)
