@@ -83,7 +83,7 @@ In the appropriate configuration dialog you can select the available parameters,
   * Specify the fragment to be used.
 * **Display Mode**:
   * **Single Text Element**
-  * **Multiple Element**
+  * **Multiple Elements**
 * **Element**
   * The default **Main** will always be available.
   * A selection will be available if the fragment was created with an appropriate template.
