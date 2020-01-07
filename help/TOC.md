@@ -141,6 +141,12 @@ content owner: Raoul Duke
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+    + [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
+    + [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+    + [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md)
+    + [Content Fragment Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md)
+    + [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md)
+    + [Content Fragments - Delete Considerations](/help/assets/content-fragments/content-fragments-delete.md)
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
   + Dynamic Media {#dynamicmedia}
     + [Dynamic Media Newsletter by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
