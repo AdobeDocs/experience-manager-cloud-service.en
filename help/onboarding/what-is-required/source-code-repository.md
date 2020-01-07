@@ -7,6 +7,9 @@ seo-description: Source Code Repository - Cloud Services
 
 # Source Code Repository {#source-code-repository} 
 
+>[!NOTE]
+>This page is still in-progress and needs to be updated specifically for Cloud Manager in Cloud Services.
+
 In order for a user to access the Cloud Manager git repository, they will need to use a Git client with a command-line tool, a standalone visual Git client, or the user's IDE such as Eclipse, IntelliJ, NetBeans.
 
 Once a Git client is set up, the user can select the **Manage Git** button from the **Piplelines** card to get the information necessary to access Cloud Manager Git repository.

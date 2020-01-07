@@ -18,8 +18,8 @@ The Production and Stage is available as a duo and is used for testing and produ
 
 * **Development**: A Development environment can be created for development and testing purposes and will be associated with non-production pipelines only.
 
-  > NOTE
-  > A Dev environment that is auto-created in a Sandbox program will be configured to include Sites and Assets solutions.
+  >[!NOTE]
+  >A Dev environment that is auto-created in a Sandbox program will be configured to include Sites and Assets solutions.
    
   The following table summarizes Environment types and their attributes:
 
@@ -29,7 +29,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    |Stage |Yes |Yes if Sites included |Yes |No|Production pipeline|
    |Development |Yes |Yes if Sites included |Yes |Yes|Non-production pipeline|
 
-   >Note:
+   >[!NOTE]
    >The Production and Stage is available as a duo and is used for testing and production purposes.  User will not be able to create only Stage or only Production environment.
 
 ## Ading an Environment {#adding-environments}
@@ -43,7 +43,7 @@ The Production and Stage is available as a duo and is used for testing and produ
 
    ![](assets/add-environment2.png)
 
-   >Note:
+   >[!NOTE]
    >When creating an environment, one or more *integrations* are created in Adobe I/O. These are visible to customer users who have access to the Adobe I/O Console and must not be deleted. This is disclaimed in the description in the Adobe I/O Console.
 
 1. Click **Save** to add an environment with the populated criteria.  Now the *Overview* screen  displays the card from where you can set up  your pipeline.
