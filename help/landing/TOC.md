@@ -14,8 +14,8 @@ solution-title: Experience Cloud
 + [AEM Cloud Service Release Notes](/help/release-notes/release-notes.md)
 + [Core Concepts of AEM as a Cloud Service](/help/core-concepts/architecture.md)
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
-+ [AEM Sites in the Cloud](/help/sites-cloud/sites-cloud-changes.md)
-+ [AEM Assets in the Cloud](/help/assets/whats-new-assets.md)
++ [AEM Sites in the Cloud](/help/sites-cloud/home.md)
++ [AEM Assets in the Cloud](/help/assets/home.md)
 + [Implementing for AEM as a Cloud Service](/help/implementing/home.md)
 + Security {#security}
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support-for-aem-as-a-cloud-service.md)
