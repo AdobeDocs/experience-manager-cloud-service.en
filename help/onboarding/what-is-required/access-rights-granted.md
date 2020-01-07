@@ -10,9 +10,9 @@ seo-description: Access Rights Granted - What Is Required
 >[!NOTE]
 >This page is still in-progress and needs to be updated specifically for Cloud Manager in Cloud Services.
 
-## User Identity Types {#user-identity-types}
-
 Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] services, will need to have their own **Adobe ID**. 
+
+### User Identity Types {#user-identity-types}
 
 To get started with an Adobe ID, please visit [Manage Adobe Identity Types](https://helpx.adobe.com/enterprise/using/identity.html) for detailed instructions on how to obtain an Adobe ID using one of the identity types available.
 
