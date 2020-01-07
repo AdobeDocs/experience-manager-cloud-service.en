@@ -28,7 +28,6 @@ Together with the updated JSON exporter, structured content fragments can also b
 
 >[!CAUTION]
 >
-
 >This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
 
 The content fragments enable:
