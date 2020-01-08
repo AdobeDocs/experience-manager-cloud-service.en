@@ -35,16 +35,9 @@ The following table summarizes the roles:
 |--- |--- |
 |Business Owner|Responsible for defining KPIs, approving production deployments and overriding important 3-tier failures.|
 |Program Manager|Uses [!UICONTROL Cloud Manager] to perform team setup, review status and view KPIs. Can approve important 3-tier failures.|
-|Deployment Manager|Manages deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage/production deployments. Can edit CI/CD Pipelines. Can approve important 3-tier failures. Can get access to the Git repository. Please contact your CSE/AMS representative to request it.|
-|Developer|Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Should get access to the Git repository for code commit. Please contact your CSE/AMS representative when adding a user with this role to grant access to Git repository.|
-|Customer Success Engineer|Generally supports customer success for AMS customers. Interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require CSE oversight.|
+|Deployment Manager|Manages deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage/production deployments. Can edit CI/CD Pipelines. Can approve important 3-tier failures. Can get access to the Git repository.|
+|Developer|Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Can get access to the Git repository for code commit.|
 |Content Author|Generally does not interact with [!UICONTROL Cloud Manager]. May use [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access AEM.|
-
->[!NOTE]
->
->Access to the [!UICONTROL Cloud Manager] Git repository is managed by your CSE. Contact them to add and remove users.
->
->If a newly added user requires access to the Git repository you will need to contact your CSE/AMS representative to have the access granted. These roles are not providing automatic access to the Git repository. You can only have a maximum of 3 users with Git repository access.
 
 ## Using Admin Console to Create a Profile {#using-admin-console-to-create-a-profile}
 
