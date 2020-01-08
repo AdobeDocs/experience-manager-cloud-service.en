@@ -14,7 +14,7 @@ This guide explains the concepts of security in AEM.
 * [Introduction of AEM as a Cloud Service](/help/overview/introduction.md)
 * [Terminology of AEM Cloud Service](/help/overview/terminology.md)
 * [Core Concepts of AEM Cloud Service](/help/core-concepts/architecture.md)
-* [AEM Release Notes](/help/release-notes/release-notes.md)
+* [AEM Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 
 ## AEM Cloud Service Guides
@@ -22,7 +22,7 @@ This guide explains the concepts of security in AEM.
 | User Guide | Description |
 |---|---|
 |[Overview](/help/overview/introduction.md)|Overview of Adobe Experience Manager as a Cloud Service|
-|[Release Notes](/help/release-notes/release-notes.md)|Release notes|
+|[Release Notes](/help/release-notes/home.md)|Release notes|
 |[Core Concepts](/help/core-concepts/architecture.md)|Introduction to the Architecture of Adobe Experience Manager as a Cloud Service|
 |[Onboarding](/help/onboarding/home.md)|Onboarding guide|
 |[Sites in the Cloud](/help/sites-cloud/sites-cloud-changes.md)|User guide for sites in the cloud|

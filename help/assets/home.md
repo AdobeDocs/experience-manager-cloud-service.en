@@ -13,14 +13,14 @@ This page lists the self-help resources about Assets as a Cloud Service.
 * [Introduction of AEM as a Cloud Service](/help/overview/introduction.md)
 * [Terminology of AEM Cloud Service](/help/overview/terminology.md)
 * [Core Concepts of AEM as a Cloud Service](/help/core-concepts/architecture.md)
-* [AEM release notes](/help/release-notes/release-notes.md)
+* [AEM release notes](/help/release-notes/home.md)
 * [Recent documentation updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 
 ## Experience Manager as a Cloud Service guides {#aem-guides}
 
 | User Guide | Description |
 |---|---|
-| [Release Notes](/help/release-notes/release-notes.md)| Provides important information about the latest release of Experience Manager, including what's new deprecated and removed features, and known issues. |
+| [Release Notes](/help/release-notes/home.md)| Provides important information about the latest release of Experience Manager, including what's new deprecated and removed features, and known issues. |
 | [Administering Guide](/help/sites-cloud/administering/home.md) | Understand how to administer Experience Manager |
 | [Authoring Guide](/help/sites-cloud/authoring/home.md) | This guide explains the concepts of authoring in Experience Manager. |
 | [Deploying User Guide](/help/implementing/deploying/deploying.md) | This guide contains the basics of Experience Manager.  |

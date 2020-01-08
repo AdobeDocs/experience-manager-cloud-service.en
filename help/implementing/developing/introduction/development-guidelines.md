@@ -62,7 +62,7 @@ As a shortcut, the following Cloud Manager CLI command can be used to launch the
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-See [this page](/help/release-notes/release-notes.md) for more information.
+See [this page](/help/release-notes/home.md) for more information.
 
 Developers can generate status information, and resolve various resources.
 
