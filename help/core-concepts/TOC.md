@@ -10,4 +10,4 @@ solution-title: Experience Cloud
 # Core Concepts {#core-concepts}
 
 + [Core Concepts of AEM as a Cloud Service](home.md)
-+ [An Introduction to the Architecture of AEM as a Cloud Service](/help/core-concepts/architecture.md)
++ [An Introduction to the Architecture of AEM as a Cloud Service](architecture.md)

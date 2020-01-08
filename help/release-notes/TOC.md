@@ -10,7 +10,7 @@ solution-title: Experience Cloud
 # Release Notes {#release-notes}
 
 + [Release Notes](home.md)
-+ [What's New](/help/release-notes/what-is-new.md)
-+ [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-+ [Known issues](/help/release-notes/known-issues.md)
-+ [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
++ [What is New?](what-is-new.md)
++ [Notable Changes in AEM Cloud Service](aem-cloud-changes.md)
++ [Known issues](known-issues.md)
++ [Deprecated and Removed Features](deprecated-removed-features.md)
