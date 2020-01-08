@@ -5,7 +5,7 @@ description: Understand Test Results - Cloud Services
 seo-description: Understand Test Results - Cloud Services
 ---
 
-# Understand your Test Results - Cloud Services {#understand-test-results} 
+# Understand your Test Results {#understand-test-results} 
 
 Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
 There are two types of tests run in this context:
@@ -13,6 +13,66 @@ There are two types of tests run in this context:
 * Adobe-written tests
 
  Both types of tests are run in a containerized infrastructure designed for running these types of tests.
+
+
+## Code Quality Testing {#code-quality-testing}
+
+As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
+
+|Name|Definition|Category|Failure Threshold|
+|--- |--- |--- |--- |
+|Security Rating|A = 0 Vulnerability <br/>B = at least 1 Minor Vulnerability<br/> C = at least 1 Major Vulnerability <br/>D = at least 1 Critical Vulnerability <br/>E = at least 1 Blocker Vulnerability|Critical|&lt; B|
+|Reliability Rating|A = 0 Bug <br/>B = at least 1 Minor Bug <br/>C = at least 1 Major Bug <br/>D = at least 1 Critical Bug E = at least 1 Blocker Bug|Important|&lt; C|
+|Maintainability Rating|Outstanding remediation cost for code smells is: <br/><ul><li>&lt;=5% of the time that has already gone into the application, the rating is A </li><li>between 6 to 10% the rating is a B </li><li>between 11 to 20% the rating is a C </li><li>between 21 to 50% the rating is a D</li><li>anything over 50% is an E</li></ul>|Important|&lt; A|
+|Coverage|A mix of unit test line coverage and condition coverage using this formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>where: CT = conditions that have been evaluated to 'true' at least once while running unit tests <br/>CF = conditions that have been evaluated to 'false' at least once while running unit tests <br/>LC = covered lines = lines_to_cover - uncovered_lines <br/><br/> B = total number of conditions <br/>EL = total number of executable lines (lines_to_cover)|Important|&lt; 50%|
+|Skipped Unit Tests|Number of skipped unit tests.|Info|> 1|
+|Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 1|
+|Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li>**Non-Java projects:**</li><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li><li>**Java projects:**</li><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
+
+
+>[!NOTE]
+>
+>Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
+
+You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
+
+>[!NOTE]
+>
+>To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
+
+### Dealing with False Positives {#dealing-with-false-positives}
+
+The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is referred to as a "false positive".
+
+In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common problem is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
+
+To look at a specific example, this code would be fairly common in an AEM project which has code to connect to some external service:
+
+```java
+@Property(label = "Service Password")
+private static final String PROP_SERVICE_PASSWORD = "password";
+```
+
+SonarQube will then raise a Blocker Vulnerability. After reviewing the code, you identify that this is not a vulnerability and can annotate this with the appropriate rule id.
+
+```java
+@SuppressWarnings("squid:S2068")
+@Property(label = "Service Password")
+private static final String PROP_SERVICE_PASSWORD = "password";
+```
+
+However, on the other hand, if the code was actually this:
+
+```java
+@Property(label = "Service Password", value = "mysecretpassword")
+private static final String PROP_SERVICE_PASSWORD = "password";
+```
+
+Then the correct solution is to remove the hardcoded password.
+
+>[!NOTE]
+>
+>While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
 ## Writing Functional Tests {#writing-functional-tests}
 
