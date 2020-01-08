@@ -320,10 +320,13 @@ This error is generated when you don't specify an include for `/renders` and `/a
 It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, e.g.
 
 ```
+
 /0100 {
     /type "allow" /glob "GET *.css *"
 }
+
 ```
+
 This statement is meant to allow requests for `css` files, but it also allows requests to **any** resource followed by the query string `?a=.css`. It is therefore forbidden to use such filters (see also CVE-2016-0957).
 
 **included file (...) does not match any known file**
