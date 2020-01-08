@@ -7,12 +7,10 @@ index: no
 solution-title: Experience Cloud
 ---
 
-# Release Notes {#toc-release-notes}
+# Release Notes {#release-notes}
 
-+ [Home](/help/landing/home.md)
-+ AEM Cloud Service Release Notes {#release-notes}
-  + [What's New](/help/release-notes/what-is-new.md)
-  + [Cloud Service Release Notes](/help/release-notes/release-notes.md)
-  + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-  + [Known issues](/help/release-notes/known-issues.md)
-  + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
++ [Release Notes](home.md)
++ [What is New?](what-is-new.md)
++ [Notable Changes in AEM Cloud Service](aem-cloud-changes.md)
++ [Known issues](known-issues.md)
++ [Deprecated and Removed Features](deprecated-removed-features.md)

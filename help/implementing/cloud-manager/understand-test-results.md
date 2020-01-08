@@ -1,11 +1,11 @@
 ---
-title: Understand Test Results - Cloud Services
+title: Understand your Test Results - Cloud Services
 seo-title: Understand Test Results - Cloud Services
 description: Understand Test Results - Cloud Services
 seo-description: Understand Test Results - Cloud Services
 ---
 
-# Understand Test Results - Cloud Services {#understand-test-results} 
+# Understand your Test Results - Cloud Services {#understand-test-results} 
 
 Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
 There are two types of tests run in this context:

@@ -11,44 +11,10 @@ The cloud-native solution provides the user with requisite permissions and the a
 
 A program creation wizard will ask the user to submit details, depending on the user’s objective in creating the program within the bounds of what is available to the specific customer or organization.
 
-## Program Types {#program-types}
+In the event of first-time access to Cloud Manager or if no programs exist in the tenant, the user will see **Create your first Program** screen. If user select *Esc* or clicks out of the dialog box, the following screen displays:
 
-A user can create a Sandbox or a Regular program. 
-A *Sandbox* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a regular program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
+ ![](assets/create-program1.png)
 
-A *Regular* program is created to enable live traffic at the appropriate time in the future.
-
-## Usage Limits {#usage-limits}
-  
-Credits are consumed in any of the following ways:
-
->Note:
->Although critical from an operational perspective, the concept of *credits* does not directly appear in the Cloud Manager UI.
-
-1. **Core Credits**: 
-
-   Core Credits are consumed when a prod/stage environment set is created manually or by  self-service via the Cloud Manager UI inside a Regular program.
-   * Consumed when a regular Program is created and user selects solutions to be applied to the Program. A core credit is consumed for each solution that is applied to the Program that is created.
-   * Defined by the business value metric applied to size the application 
-   Meant for setting up and deploying sites/applications that will carry live traffic
-   * A user will only be allowed to create a Production + Stage environment set within the Program if a credit of this type is available in the credit quota for the tenant.
-
-1. **Non-core Credits**:   
-
-   Non-core Credits  are consumed when a dev environment is created manually/self-service via the Cloud Manager UI inside a Regular program.
-
-   * Consumed when a Dev environment is created, for example, a Dev environment created in an Sites+Assets application consumes a Dev credit.
-   * Defined by default dimensions.
-   * Meant to support business needs such as QA, testing, development within an existing Program
-   * A user will only be allowed to create a Dev environment type within a Program if a credit of this type is available in the credit quota for the tenant. The available and remaining quota will be displayed in the create environment wizard
-
-1. **Unlimited Credits**: 
-
-   Sandbox program creation will not consume any credits. Technically, this means that if an organization has the AEM Cloud Service product context, a Business Owner or Deployment manager shall be able to create an unlimited number of Sandbox programs in that organization.
-
-   * Defined by default dimensions
-   * Meant for setting up demo's, POC's, training and other applications that will not carry live traffic.
-   * Sandbox program credit includes a development, and production+stage environments.
 
 ## Using Create Program Wizard {#using-create-program-wizard}
 
@@ -56,13 +22,12 @@ Credits are consumed in any of the following ways:
    >
    >The User is displayed with one or either program types depending on whether or not the corresponding credits are available in the tenant. The cloud-native solution gives the user with requisite permissions the ability to create a program on a self-service model.
 
-In the event of first-time access to Cloud Manager, or if no programs exist in the tenant, the user will see **Create your first Program** screen. If user select *Esc* or clicks out of the dialog box, the following screen displays:
-
- ![](assets/create-program1.png)
 
 Depending upon the user’s objective in creating the program within the bounds of what is available to the specific customer/organization, a program creation wizard will ask the user to submit one or more details.
 
   ![](assets/create-program2.png)
+
+If a program already exists, then the **Add Program** button will be seen on the top right of the landing page. 
 
 
 ## Creating a Sandbox Program {#create-sandbox-program}
@@ -103,9 +68,9 @@ The steps below describe how to create a program intended for production:
 
    ![](assets/create-program7.png)
 
-1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager overview page. The main CTA card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
+1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager **Overview** page. The main CTA card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
 
-    >[!CAUTION]
+    >[!NOTE]
     >
     >A regular program does not have **Auto-setup** feature.
 

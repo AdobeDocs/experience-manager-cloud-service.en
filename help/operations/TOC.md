@@ -7,10 +7,9 @@ index: no
 solution-title: Experience Cloud
 ---
 
-# Operations {#toc-operations}
+# Operations {#operations}
 
-+ [Home](/help/landing/home.md)
-+ Operations and Maintenance on AEM as a Cloud Service {#operations}
-  + [Content Replication Service](/help/operations/replication.md)
-  + [Maintenance Tasks](/help/operations/maintenance.md)
-  + [Backup and Restore](/help/operations/backup.md)
++ [Operations and Maintenance on AEM as a Cloud Service](home.md)
++ [Content Replication Service](replication.md)
++ [Maintenance Tasks](maintenance.md)
++ [Backup and Restore](backup.md)

@@ -1,38 +1,38 @@
 ---
 title: Adobe Experience Manager Assets as a Cloud Service
-description: Adobe Experience Manager Assets as a Cloud Service self-help resources and documentation links.
-
+description: Adobe Experience Manager Assets as a Cloud Service self-help resources and documentation links
 ---
 
-# Assets as a Cloud Service guide {#aem-assets-guide}
+# Assets as a Cloud Service Guide {#aem-assets-guide}
 
 This page lists the self-help resources about Assets as a Cloud Service.
 
-## Key Experience Manager Assets articles {#key-aem-articles}
+## Key Assets as a Cloud Service Articles {#key-articles}
 
-* [Introduction of AEM as a Cloud Service](/help/overview/introduction.md)
-* [Terminology of AEM Cloud Service](/help/overview/terminology.md)
-* [Core Concepts of AEM as a Cloud Service](/help/core-concepts/architecture.md)
-* [AEM release notes](/help/release-notes/release-notes.md)
-* [Recent documentation updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Introduction to Assets as a Cloud Service](whats-new-assets.md)
+* [Architecture of Assets as a Cloud Service](architecture.md)
 
-## Experience Manager as a Cloud Service guides {#aem-guides}
+## Experience Manager as a Cloud Service Guides {#aem-guides}
 
-| User Guide | Description |
+|User Guide|Description|
 |---|---|
-| [Release Notes](/help/release-notes/release-notes.md)| Provides important information about the latest release of Experience Manager, including what's new deprecated and removed features, and known issues. |
-| [Administering Guide](/help/sites-cloud/administering/home.md) | Understand how to administer Experience Manager |
-| [Authoring Guide](/help/sites-cloud/authoring/home.md) | This guide explains the concepts of authoring in Experience Manager. |
-| [Deploying User Guide](/help/implementing/deploying/deploying.md) | This guide contains the basics of Experience Manager.  |
-| [Developing User Guide](/help/implementing/deploying/deploying.md)| Learn how to extend and customize your Experience Manager deployment. |
-| [Operations User Guide](/help/operations/home.md)| This guide describes the back-end operations of Experience Manager such as indexing and maintenance tasks. |
+|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|Overview of Experience Manager as a Cloud Service documentation|
+|[Overview](/help/overview/home.md)|Provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc.|
+|[Release Notes](/help/release-notes/home.md)|Provides important information about the latest release of Experience Manager as a Cloud Service, including what's new deprecated and removed features, and known issues|
+|[Core Concepts](/help/core-concepts/home.md)|Provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service|
+|[Onboarding](/help/onboarding/home.md)|Provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information|
+|[Sites User Guide](/help/sites-cloud/home.md)|Understand how to administer Experience Manager Sites as a Cloud Service|
+|[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
+|[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
+|[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
+|[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
 
-## Other Experience Manager resources
+## Other Experience Manager Resources {#other-resources}
 
-* [Dispatcher docs](/help/implementing/dispatcher/dispatcher-cloud.md)
-* [HTL docs](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Core Components docs](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Dispatcher Documentation](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

@@ -32,7 +32,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >The Production and Stage is available as a duo and is used for testing and production purposes.  User will not be able to create only Stage or only Production environment.
 
-## Ading an Environment {#adding-environments}
+## Adding an Environment {#adding-environments}
 
 
 1. The user clicks on the **Add Environment** button to add an environment.
@@ -51,7 +51,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    ![](assets/add-environment3.png)
 
 
-## Updating Development Environment {#updating-dev-environment}
+## Updating Environment {#updating-dev-environment}
 
 Updates of Stage and Production environments are automatically managed by Adobe. 
 

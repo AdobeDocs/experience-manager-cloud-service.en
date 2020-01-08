@@ -1,18 +1,17 @@
 ---
-title: Implementing Adobe Experience Manager as a Cloud Service
-description: Adobe Experience Manager as a Cloud Service implementation self-help resources and documentation links
+title: Adobe Experience Manager as a Cloud Service Connectors
+description: Adobe Experience Manager as a Cloud Service Connectors self-help resources and documentation links
 ---
 
-# Experience Manager as a Cloud Service Core Concepts {#aem-implementation-guide}
+# Experience Manager as a Cloud Service Connectors Guide {#aem-connectors-guide}
 
-This page lists the self-help resources about implementation Experience Manager as a Cloud Service.
+This page lists the self-help resources about Connectors for Experience Manager as a Cloud Service.
 
-## Key Implementation Articles {#key-articles}
+## Key Experience Manager as a Cloud Service Connectors Articles {#key-articles}
 
-* [Managing your environments with Cloud Manager](cloud-manager/manage-environments.md)
-* [Deploying AEM as a Cloud Service](deploying/deploying.md)
-* [Developing for AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-* [Dispatcher on AEM as a Cloud Service](dispatcher/dispatcher-cloud.md)
+* [Implementing Connectors](implement.md)
+* [Submitting Connectors](submit.md)
+* [Maintaining Connectors](maintain.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
@@ -25,8 +24,8 @@ This page lists the self-help resources about implementation Experience Manager 
 |[Onboarding](/help/onboarding/home.md)|Provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to administer Experience Manager Sites as a Cloud Service|
 |[Assets User Guide](/help/assets/home.md)|Understand how to administer Experience Manager Assets as a Cloud Service.|
+|[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
-|[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
 
 ## Other Experience Manager Resources {#other-resources}
