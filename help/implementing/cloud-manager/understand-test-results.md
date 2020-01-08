@@ -34,6 +34,7 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
+You can download the list of rules here [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-Rules-new-one.xlsx)
 
 >[!NOTE]
 >
