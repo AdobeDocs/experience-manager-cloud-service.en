@@ -7,10 +7,9 @@ index: no
 solution-title: Experience Cloud
 ---
 
-# Experience Manager as a Cloud Service Help {#toc-overview}
+# Experience Manager as a Cloud Service Help {#overview}
 
-+ [Home](/help/landing/home.md)
-+ Overview {#overview}
-  + [Introduction to AEM as a Cloud Service](/help/overview/introduction.md)
-  + [What is New and What is Different](/help/overview/what-is-new-and-different.md)
-  + [Terminology - New for the Cloud](/help/overview/terminology.md)
++ [Overview](home.md)
++ [Introduction to AEM as a Cloud Service](/help/overview/introduction.md)
++ [What is New and What is Different](/help/overview/what-is-new-and-different.md)
++ [Terminology - New for the Cloud](/help/overview/terminology.md)

@@ -14,14 +14,14 @@ This guide explains the concepts of implementing in AEM.
 * [Introduction of AEM as a Cloud Service](/help/overview/introduction.md)
 * [Terminology of AEM Cloud Service](/help/overview/terminology.md)
 * [Core Concepts of AEM Cloud Service](/help/core-concepts/architecture.md)
-* [AEM Release Notes](/help/release-notes/release-notes.md)
+* [AEM Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 
 ## AEM Cloud Service Guides
 
 | User Guide | Description |
 |--- |---|
-| [Release Notes](/help/release-notes/release-notes.md)| Provides important information about the latest release of AEM, including what's new deprecated and removed features, and known issues. |
+| [Release Notes](/help/release-notes/home.md)| Provides important information about the latest release of AEM, including what's new deprecated and removed features, and known issues. |
 | [Assets User Guide](/help/assets/home.md) | Learn how to create, manage, deliver, and optimize digital assets. |
 | [Administering Guide](/help/sites-cloud/administering/home.md) | Understand how to administer AEM |
 | [Authoring Guide](/help/sites-cloud/authoring/home.md) | This guide explains the concepts of authoring in AEM. |

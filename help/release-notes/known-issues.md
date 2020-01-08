@@ -39,4 +39,4 @@ A few capabilities of Adobe Experience Manager Assets that depend on foundation 
 >
 >* [Major changes in AEM](aem-cloud-changes.md)
 >* [Deprecated and removed features](deprecated-removed-features.md)
->* [Release notes](release-notes.md)
+>* [Release notes](home.md)

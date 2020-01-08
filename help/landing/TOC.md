@@ -7,16 +7,16 @@ index: no
 solution-title: Experience Cloud
 ---
 
-# Experience Manager as a Cloud Service Help {#using}
+# Experience Manager as a Cloud Service Help {#landing}
 
-+ [Home](/help/landing/home.md)
-+ [Overview](/help/overview/introduction.md)
-+ [AEM Cloud Service Release Notes](/help/release-notes/release-notes.md)
-+ [Core Concepts of AEM as a Cloud Service](/help/core-concepts/architecture.md)
++ [Experience Manager as a Cloud Service](home.md)
++ [Overview](/help/overview/home.md)
++ [Release Notes](/help/release-notes/home.md)
++ [Core Concepts of AEM as a Cloud Service](/help/core-concepts/home.md)
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
-+ [AEM Sites in the Cloud](/help/sites-cloud/home.md)
-+ [AEM Assets in the Cloud](/help/assets/home.md)
-+ [Implementing for AEM as a Cloud Service](/help/implementing/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
++ [AEM Assets as a Cloud Service](/help/assets/home.md)
++ [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + [Security for AEM as a Cloud Service](/help/security/home.md)
-+ [Implementing Connectors for AEM as a Cloud Service](/help/connectors/implement.md)
-+ [Operations and Maintenance on AEM as a Cloud Service](/help/operations/maintenance.md)
++ [Implementing Connectors for AEM as a Cloud Service](/help/connectors/home.md)
++ [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
