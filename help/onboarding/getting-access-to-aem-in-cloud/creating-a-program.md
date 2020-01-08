@@ -11,6 +11,10 @@ The cloud-native solution provides the user with requisite permissions and the a
 
 A program creation wizard will ask the user to submit details, depending on the user’s objective in creating the program within the bounds of what is available to the specific customer or organization.
 
+In the event of first-time access to Cloud Manager or if no programs exist in the tenant, the user will see **Create your first Program** screen. If user select *Esc* or clicks out of the dialog box, the following screen displays:
+
+ ![](assets/create-program1.png)
+
 
 ## Using Create Program Wizard {#using-create-program-wizard}
 
@@ -18,13 +22,12 @@ A program creation wizard will ask the user to submit details, depending on the 
    >
    >The User is displayed with one or either program types depending on whether or not the corresponding credits are available in the tenant. The cloud-native solution gives the user with requisite permissions the ability to create a program on a self-service model.
 
-In the event of first-time access to Cloud Manager, or if no programs exist in the tenant, the user will see **Create your first Program** screen. If user select *Esc* or clicks out of the dialog box, the following screen displays:
-
- ![](assets/create-program1.png)
 
 Depending upon the user’s objective in creating the program within the bounds of what is available to the specific customer/organization, a program creation wizard will ask the user to submit one or more details.
 
   ![](assets/create-program2.png)
+
+If a program already exists, then the **Add Program** button will be seen on the top right of the landing page. 
 
 
 ## Creating a Sandbox Program {#create-sandbox-program}
@@ -65,9 +68,9 @@ The steps below describe how to create a program intended for production:
 
    ![](assets/create-program7.png)
 
-1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager overview page. The main CTA card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
+1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager **Overview** page. The main CTA card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
 
-    >[!CAUTION]
+    >[!NOTE]
     >
     >A regular program does not have **Auto-setup** feature.
 

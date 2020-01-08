@@ -16,9 +16,12 @@ solution-title: Experience Cloud
     + [Configuring your CI/CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
     + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
     + [Understanding your Test Results](/help/implementing/cloud-manager/understand-test-results.md)
-    + [Understanding Notifications](/help/implementing/cloud-manager/notifications.md)
     + [Understanding Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)  
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
+    + [Understanding Notifications](/help/implementing/cloud-manager/notifications.md)
+  + Managing your Code {#managing-code}
+    + [Maven Project Version Handling](/help/implementing/cloud-manager/project-version-handling.md)
+    + [Integrating Git with Adobe Cloud Manager](/help/implementing/cloud-manager/integrating-with-git.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Package Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [Develop a Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
