@@ -8,32 +8,23 @@ seo-description: Configure CI/CD Pipeline - Cloud Services
 # Configure your CI-CD Pipeline {#configure-ci-cd-pipeline} 
 
 
-In order to support the Cloud Services architecture, a new step has been introduced called **Build Images**. This step occurs after the code quality step but before stage deployment. This step has a log file from the process used to build images.
-
-This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configuration. 
-
-Part of this step is also to execute the Dispatcher configurations validator. Refer to [Dispatcher in Cloud](/help/implementing/dispatcher/dispatcher-cloud.md) for more details.
-
-
-
-
-The following page explains how to configure the **Pipeline**.
-
 ## Understanding the Flow {#understanding-the-flow}
 
 You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
-The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. Pipeline configuration consists of:
+The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. 
 
-* defining the trigger that will start the pipeline.
-* defining the parameters controlling the production deployment.
-* configuring the performance test parameters.
+To configure your pipeline, the user must:
+
+* define the trigger that will start the pipeline.
+* define the parameters controlling the production deployment.
+* configure the performance test parameters.
 
 ## Setting up the Pipeline {#setting-up-the-pipeline}
 
 >[!CAUTION]
 >
->The pipeline cannot be setup until the Git repository has at least one branch and one [Program Creation](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md) is complete.
+>The pipeline cannot be setup until one program creation is complete and the Git repository has at least one branch.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
@@ -41,9 +32,9 @@ Before you start to deploy your code, you must configure your pipeline settings 
 >
 >You can change the pipeline settings after initial set up.
 
-### Configuring the Pipeline Settings from [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+## Configuring the Pipeline Settings from [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
-Once you have setup your program using [!UICONTROL Cloud Manager] UI, you are ready to setup your pipeline.
+Once you have setup your program and have at least one environment using [!UICONTROL Cloud Manager] UI, you are ready to setup your deployment pipeline.
 
 Follow these steps to configure the behavior and preferences for your pipeline:
 
