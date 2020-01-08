@@ -9,7 +9,7 @@ seo-description: Dispatcher in the Cloud
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configuration, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For additional information about Dispatcher, see the [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
+This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For additional information about Dispatcher, see the [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
 >Windows users will need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
@@ -24,7 +24,7 @@ The Dispatcher SDK provides:
 
 ## Downloading and extracting the SDK {#extracting-the-sdk}
 
-The Dispatcher SDK can be downloaded from the Software Distribution portal at the URL ??? from a folder corresponding to the desired AEM version. Any new configuration available in that new dispatcher SDK version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
+The Dispatcher SDK can be downloaded from the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/dam/general/public/aemcloud) portal from a folder corresponding to the desired AEM version. Any new configuration available in that new dispatcher SDK version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
 
 **For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher SDK files underneath the directory you stored it to (where `version` is the version of the dispatcher SDK).
 
@@ -131,7 +131,8 @@ The above files reference the immutable configuration files listed below. Change
 **Immutable Configuration Files**
 
 These files are part of the base framework and enforce standards and best practices. The files are considered immutable because modifying or deleting them locally will have no impact on your deployment, as they will not get transferred to your Cloud instance.
-It is recommended that the above files reference the unmodifiable files listed below, followed by any additional statements or overrides. When dispatcher configuration is deployed to a cloud environment, the latest version of the unmodifiable files will be used, regardless of what version was used in local development.
+
+It is recommended that the above files reference the immutable files listed below, followed by any additional statements or overrides. When dispatcher configuration is deployed to a cloud environment, the latest version of the immutable files will be used, regardless of what version was used in local development.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -177,7 +178,8 @@ Part of base framework, this file gets generated on startup. You are **required*
 
 Default host globbing suitable for a standard project. If you need customization, modify `virtualhosts.any`. In your customization, you shouldn't include the default host globbing, as it matches **every** incoming request.
 
->[!NOTE]The AEM as a Cloud Service maven archetype will generate the same dispatcher configuration file structure.
+>[!NOTE]
+>The AEM as a Cloud Service maven archetype will generate the same dispatcher configuration file structure.
 
 The sections below describe how to validate the configuration locally so it can pass the associated quality gate in Cloud Manager when deploying an internal release.
 
@@ -202,7 +204,7 @@ Whitelisted directives:
 
 The table below shows the supported apache modules:
 
-| Maintenance Task | Who owns the configuration |
+| Module Name | Reference Page |
 |---|---|
 | core | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/core.html) |
 | mod_access_compat | [https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) |
@@ -226,7 +228,6 @@ The table below shows the supported apache modules:
 | mod_setenvif | [https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html) |
 | mod_substitute | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | mod_userdir| [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
-
 
 Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing "validator whitelist" in the SDK, as described in Dispatcher SDK documentation.
 
@@ -253,6 +254,96 @@ Cloud manager validator 1.0.4
 Note that the validation tool reports only the prohibited use of Apache directives that have not been whitelisted. It does not report syntactical or semantical problems with your Apache configuration, as this information is only available to Apache modules in a running environment.
 
 When no validation failures are reported, your configuration is ready for deployment.
+
+Presented below are troubleshooting techniques for debugging common validation errors that are output by the tool:
+
+**unable to locate a `conf.dispatcher.d` subfolder in the archive**
+
+Your archive should contain folders `conf.d` and `conf.dispatcher.d`. Note, that you should **not**
+use the prefix `etc/httpd` in your archive.
+
+**unable to find any farm in `conf.dispatcher.d/enabled_farms`**
+
+Your enabled farms should be located in the mentioned subfolder.
+
+**file included (...) must be named: ...**
+
+There are two sections in your farm configuration that **must** include a
+specific file: `/renders` and `/allowedClients` in the `/cache` section. Those 
+sections must look as follows:
+
+```
+/renders {
+    $include "../renders/default_renders.any"
+}
+```
+
+and:
+
+```
+/allowedClients {
+    $include "../cache/default_invalidate.any"
+}
+```
+
+**file included at unknown location: ...**
+
+There are four sections in your farm configuration where you're allowed to include your own file: `/clientheaders`, `filters`, `/rules` in `/cache` section and `/virtualhosts`. The included files need to be named as follows:
+
+| Section          | Include file name                    |
+|------------------|--------------------------------------|
+| `/clientheaders` | `../clientheaders/clientheaders.any` |
+| `/filters`       | `../filters/filters.any`             |
+| `/rules`         | `../cache/rules.any`                 |
+| `/virtualhosts`  | `../virtualhosts/virtualhosts.any`   |
+
+Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, e.g. `../filters/default_filters.any`.
+
+**include statement at (...), outside any known location: ...**
+
+Apart from the six sections mentioned in the paragraphs above, you are not allowed
+to use the `$include` statement, e.g. the following would generate this error:
+
+```
+/invalidate {
+    $include "../cache/invalidate.any"
+}
+```
+
+**allowed clients/renders are not included from: ...**
+
+This error is generated when you don't specify an include for `/renders` and `/allowedClients` in the `/cache` section. See the 
+**file included (...) must be named: ...** section for more information.
+
+**filter must not use glob pattern to allow requests**
+
+It is not secure to allow requests with a `/glob` style rule, which is matched against the complete request line, e.g.
+
+```
+/0100 {
+    /type "allow" /glob "GET *.css *"
+}
+```
+This statement is meant to allow requests for `css` files, but it also allows requests to **any** resource followed by the query string `?a=.css`. It is therefore forbidden to use such filters (see also CVE-2016-0957).
+
+**included file (...) does not match any known file**
+
+There are two types of files in your Apache virtual host configuration that can be specified as includes: rewrites and variables.
+The included files need to be named as follows:
+
+| Type      | Include file name               |
+|-----------|---------------------------------|
+| Rewrites  | `conf.d/rewrites/rewrite.rules` |
+| Variables | `conf.d/variables/custom.vars`  |
+
+Alternatively, you can include the **default** version of the rewrite rules, whose name is `conf.d/rewrites/default_rewrite.rules`.
+Note, that there is no default version of the variables files.
+
+**Deprecated configuration layout detected, enabling compatibility mode**
+
+This message indicates that your configuration has the deprecated version 1 layout, containing a complete
+Apache configuration and files with `ams_` prefixes. While this is still supported for backward
+compatibility you should switch to the new layout.
 
 ## Testing your Apache and Dispatcher configuration locally {#testing-apache-and-dispatcher-configuration-locally}
 
