@@ -9,9 +9,7 @@ This page lists the self-help resources about the core concepts of Experience Ma
 
 ## Key Core Concepts Articles {#key-articles}
 
-* [Implementing Connectors](implement.md)
-* [Submitting Connectors](submit.md)
-* [Maintaining Connectors](maintain.md)
+* [Architecture of AEM as a Cloud Service](architecture.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
