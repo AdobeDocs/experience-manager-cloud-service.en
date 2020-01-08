@@ -32,10 +32,11 @@ There are intrinsic differences between these previous approaches and AEM as a C
 * [Developing](#developing)
 * [Operations and Performance](#operations-and-performance)
 * [Identity Management](#identity-management)
-* [Authoring](#authoring)
-<!-- * [Miscellaneous](#miscellaneous) -->
-
+* [Authoring User Interface](#authoring-user-interface)
 * [AEM Sites](#aem-sites)
+* [AEM Assets](#aem-assets)
+
+<!-- * [Miscellaneous](#miscellaneous) -->
 
 ## Architecture {#architecture}
 
@@ -328,7 +329,7 @@ This combines the benefits of:
 
 * User preferences remaining local to each particular instance of AEM as a Cloud Service.
 
-## Authoring {#authoring}
+## Authoring User Interface {#authoring-user-interface}
 
 <!--
 >[!NOTE]
@@ -338,19 +339,19 @@ This combines the benefits of:
 
 ### Previous Versions {#previous-versions-authoring}
 
-Authoring was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
+The user interface of the author instance (UI), for both Sites and Assets, was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
 
 ### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
 
-The basic principles of authoring (both Sites and Assets) will be very familiar to anyone who has used AEM in the past.
+The basic principles of the authoring user interface (UI), for both Sites and Assets, will be very familiar to anyone who has used AEM in the past.
 
 The main difference is that the UI is purely touch-enabled; the classic UI is no longer available. Otherwise the basics remain unchanged, with only small changes apparent. 
 
 ## AEM Sites {#aem-sites}
 
->[!NOTE]
->
->For further details see the Overview of [Changes to Sites](/help/sites-cloud/sites-cloud-changes.md).
+Adobe Experience Manager Sites as a Cloud Service enables you to provide your customers with personalized, content-led experiences, by combining the power of the AEM Content Management System with AEM Digital Asset Management.
+
+For details see the overview of [Changes to Sites](/help/sites-cloud/sites-cloud-changes.md).
 
 ## AEM Assets {#aem-assets}
 
@@ -369,16 +370,6 @@ tbc
 #### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-sites}
 
 tbc
-
--->
-
-<!--
-
-### AEM Assets {#aem-assets}
-
->[!NOTE]
->
->For further details see the [Introduction to AEM Assets as a Cloud Service](/help/assets/cloud/introduction-assets-cloud.md).
 
 -->
 
