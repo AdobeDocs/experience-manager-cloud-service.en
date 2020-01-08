@@ -7,8 +7,7 @@ index: no
 solution-title: Experience Cloud
 ---
 
-# Security {#toc-security}
+# Security {#security}
 
-+ [Home](/help/landing/home.md)
-+ Security for AEM as a Cloud Service {#security}
-  + [IMS Support for AEM as a Cloud Service](/help/security/ims-support-for-aem-as-a-cloud-service.md)
++ [Security for AEM as a Cloud Service](home.md)
++ [IMS Support for AEM as a Cloud Service](/help/security/ims-support-for-aem-as-a-cloud-service.md)

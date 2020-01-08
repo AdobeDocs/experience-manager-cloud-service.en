@@ -7,10 +7,9 @@ index: no
 solution-title: Experience Cloud
 ---
 
-# Connectors {#toc-connectors}
+# Connectors {#connectors}
 
-+ [Home](/help/landing/home.md)
-+ Implementing Connectors for AEM as a Cloud Service {#connectors}
-  + [Implementing an AEM Connector](/help/connectors/implement.md)
-  + [Submitting an AEM Connector](/help/connectors/submit.md)
-  + [Maintaining an AEM Connector](/help/connectors/maintain.md)
++ [Implementing Connectors for AEM as a Cloud Service](home.md)
++ [Implementing an AEM Connector](/help/connectors/implement.md)
++ [Submitting an AEM Connector](/help/connectors/submit.md)
++ [Maintaining an AEM Connector](/help/connectors/maintain.md)
