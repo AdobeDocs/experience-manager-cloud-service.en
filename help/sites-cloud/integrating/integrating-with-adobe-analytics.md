@@ -12,7 +12,7 @@ Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your 
 * An Adobe Analytics configuration enables AEM to authenticate with Adobe Analytics.
 * A framework identifies the data that is sent to your Adobe Analytics report suite.
 
-The data includes page and user data; for example:
+The data includes page and user data, for example:
 
 * data that AEM components collect
 * link clicks
