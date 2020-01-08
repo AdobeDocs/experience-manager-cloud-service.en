@@ -87,7 +87,7 @@ To support this, Cloud Manager adds these standard environment variables to the 
 
 ### Custom Environment Variables {#custom-environ-variables}
 
-In some cases, a customer's build process may depend upon specific configuration variables which would be inappropriate to place in the git repository. Cloud Manager allows for these variables to be configured by a Customer Success Engineer (CSE) on a customer-by-customer basis. These variables are stored in a secure storage location and are only visible in the build container for the specific customer. Customers wishing to use this feature need to contact their CSE to configure their variables.
+In some cases, a customer's build process may depend upon specific configuration variables which would be inappropriate to place in the git repository. Cloud Manager allows for these variables to be configured by an Adobe Representative on a customer-by-customer basis. These variables are stored in a secure storage location and are only visible in the build container for the specific customer. Customers wishing to use this feature need to contact their Adobe Representative to configure their variables.
 
 Once configured, these variables will be available as environment variables. In order to use them as a Maven properties, you can reference them inside your pom.xml file, potentially within a profile as described above:
 
@@ -247,7 +247,7 @@ This same technique can be used to install language specific packages, i.e. usin
 
 >[!NOTE]
 >
->Installing a system package in this manner does **not** install it in the runtime environment used for running Adobe Experience Manager. If you need a system package installed on the AEM environment, contact your Customer Success Engineers (CSE).
+>Installing a system package in this manner does **not** install it in the runtime environment used for running Adobe Experience Manager. If you need a system package installed on the AEM environment, contact your Adobe Representative.
 
 ## Skipping Content Packages {#skipping-content-packages}
 
