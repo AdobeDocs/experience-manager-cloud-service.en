@@ -18,7 +18,7 @@ solution-title: Experience Cloud
   + Getting Access to AEM in the Cloud {#getting-access-aem-in-cloud}
     + [Navigation](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)
     + [Access Programs](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)
-    + [Understand Program and Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
+    + [Understand Programs and Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
     + [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
     + [Create an AEM Application Project](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md)
   + Data Privacy and Protection Readiness {#data-privacy-and-protection-readiness}

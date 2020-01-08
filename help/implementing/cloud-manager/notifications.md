@@ -5,7 +5,7 @@ description: Notifications - Cloud Services
 seo-description: Notifications - Cloud Services 
 ---
 
-# Notifications {#notifications} 
+# Understand Notifications {#notifications} 
 
 [!UICONTROL Cloud Manager] allows the user to receive notifications when the production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
 
