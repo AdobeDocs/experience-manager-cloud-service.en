@@ -106,7 +106,7 @@ The User Management API that is used by the User Sync Tool is covered [here](htt
 
 > [!NOTE]
 >
->The AEM IMS configuration required will be automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/deploying.md).
+>The AEM IMS configuration required will be automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/overview.md).
 
 The AEM IMS configuration required will be auto-configured when the AEM environments and instances are provisioned.  Customer administrators may modify part of the configuration as per their requirements
 

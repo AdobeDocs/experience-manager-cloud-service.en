@@ -20,7 +20,7 @@ solution-title: Experience Cloud
     + [Configuring your account environment](authoring/getting-started/account-environment.md)
     + [Your Inbox](authoring/getting-started/inbox.md)
     + [Keyboard Shortcuts](authoring/getting-started/keyboard-shortcuts.md)
-  + Authoring Fundamentals {#authoring}
+  + Authoring Fundamentals {#fundamentals}
     + [Environment and Tools](authoring/fundamentals/environment-tools.md)
     + [Adding Page Annotations](authoring/fundamentals/annotations.md)
     + [Creating and Organizing Pages](authoring/fundamentals/organizing-pages.md)
@@ -69,5 +69,5 @@ solution-title: Experience Cloud
     + [Creating and Managing Offers](authoring/personalization/offers.md)
     + [Understanding Segmentation](authoring/personalization/segmentation.md)
 + Integrating with AEM as a Cloud Service {#integrations}
-  + [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
-  + [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
+  + [Integrating with Adobe Analytics](integrating/adobe-analytics.md)
+  + [Integrating with Adobe Target](integrating/adobe-target.md)

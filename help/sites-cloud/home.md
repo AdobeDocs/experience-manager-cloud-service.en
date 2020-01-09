@@ -17,8 +17,8 @@ This page lists the self-help resources regarding Sites on Experience Manager as
 * [Using Experience Fragments](authoring/fundamentals/experience-fragments.md)
 * [Using Launches](authoring/launches/overview.md)
 * [Personalizing Content with ContextHub](authoring/personalization/contexthub.md)
-* [Integrating with Adobe Analytics](integrating/integrating-with-adobe-analytics.md)
-* [Integrating with Adobe Target](integrating/integrating-with-adobe-target.md)
+* [Integrating with Adobe Analytics](integrating/adobe-analytics.md)
+* [Integrating with Adobe Target](integrating/adobe-target.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
@@ -37,10 +37,10 @@ This page lists the self-help resources regarding Sites on Experience Manager as
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Dispatcher Documentation](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
+* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

@@ -130,7 +130,7 @@ To upload larger number of files, especially if they exist in a nested folder hi
 
 > [!NOTE]
 >
-> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager as a Cloud Service requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/deploying.md) for guidance on content migration approaches.
+> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager as a Cloud Service requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 

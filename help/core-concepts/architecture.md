@@ -55,7 +55,7 @@ The scaling of per-tenant instances of the service can be automatic or manual, o
 
 >[!NOTE]
 >
-> For further information see [Deploying - Runmodes](/help/implementing/deploying/deploying.md#runmodes)
+> For further information see [Deploying - Runmodes](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service is made available as individual instances  with each instance representing a complete AEM environment. There are four types of environments available with AEM as a Cloud Service:
 
