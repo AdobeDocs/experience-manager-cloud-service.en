@@ -9,7 +9,7 @@ solution-title: Experience Cloud
 
 # Onboarding {#onboarding}
 
-+ [Onboarding to AEM as a Cloud Service](home.md)
++ [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
 + What is Required {#what-is-required}
   + [Access Rights Granted](what-is-required/access-rights-granted.md)
   + [Add Users and Roles](what-is-required/add-users-roles.md)

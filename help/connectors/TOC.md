@@ -9,7 +9,7 @@ solution-title: Experience Cloud
 
 # Connectors {#connectors}
 
-+ [Implementing Connectors for AEM as a Cloud Service](home.md)
++ [Implementing Connectors for AEM as a Cloud Service](/help/connectors/home.md)
 + [Implementing an AEM Connector](implement.md)
 + [Submitting an AEM Connector](submit.md)
 + [Maintaining an AEM Connector](maintain.md)
