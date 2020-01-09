@@ -5,7 +5,7 @@ description: Understanding Program and Program Types - Cloud Services
 seo-description: Understanding Program and Program Types - Cloud Services 
 ---
 
-# Understanding Program and Program Types {#understanding-programs} 
+# Understanding Programs and Program Types {#understanding-programs} 
 
 In Cloud Manager you have the Tenant entity at the very top which can have multiple Programs within it.  Each Program can contain no more than one Production environment, and multiple non-production environments. 
 
