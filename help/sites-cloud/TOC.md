@@ -58,7 +58,6 @@ solution-title: Experience Cloud
     + [Working with Workflows](authoring/workflows/overview.md)
     + [Applying Workflows to Pages](authoring/workflows/applying.md)
     + [Participating in Workflows](authoring/workflows/participating.md)
-    + [Project Workflows](authoring/projects/workflows.md)
   + Personalization {#personalization}
     + [Personalization Overview](authoring/personalization/overview.md)
     + [Previewing Pages Using ContextHub Data](authoring/personalization/contexthub.md)
