@@ -54,7 +54,7 @@ Additionally, there are administrative tasks that help you manage your content:
 
 >[!NOTE]
 >
->AEM is also [administered](/help/sites-cloud/administering/home.md) from the author environment.
+>AEM is also administered from the author environment.
 
 ## Publish Environment {#publish-environment}
 
