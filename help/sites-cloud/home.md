@@ -9,7 +9,7 @@ This page lists the self-help resources regarding Sites on Experience Manager as
 
 ## Key Sites Articles {#key-articles}
 
-* [Changes in AEM Sites Cloud Service](sites-cloud-changes.md)
+* [Notable Changes to AEM Sites as a Cloud Service](sites-cloud-changes.md)
 * [Authoring quick start guide](authoring/getting-started/quick-start.md)
 * [Publishing Pages](authoring/fundamentals/publishing-pages.md)
 * [Authoring Responsive Layout](authoring/features/responsive-layout.md)

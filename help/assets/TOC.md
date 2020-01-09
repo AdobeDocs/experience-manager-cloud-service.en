@@ -11,7 +11,7 @@ solution-title: Experience Cloud
 
 + [AEM Assets as a Cloud Service](home.md)
 + [Overview and what's new](whats-new-assets.md)
-+ [Changes to Assets in Cloud Service](assets-cloud-changes.md)
++ [Notable Changes to AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architecture](architecture.md)
 + [Supported file formats](file-format-support.md)
 + [Overview of asset microservices](asset-microservices-overview.md)
