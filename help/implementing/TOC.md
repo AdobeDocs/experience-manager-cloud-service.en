@@ -27,6 +27,7 @@ solution-title: Experience Cloud
   + [Content Search and Indexing](/help/operations/indexing.md)
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/using/sites-cloud/developing/ref/javadoc/index.html)
+  + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
