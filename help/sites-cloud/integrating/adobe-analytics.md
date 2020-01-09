@@ -7,31 +7,33 @@ seo-description: Integrating with Adobe Analytics
 
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 
-Integrating Adobe Analytics and AEM allows you to track your web page activity:
+Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your web page activity:
 
 * An Adobe Analytics configuration enables AEM to authenticate with Adobe Analytics.
 * A framework identifies the data that is sent to your Adobe Analytics report suite.
 
-The data includes page and user data; for example:
+The data includes page and user data, for example:
 
 * data that AEM components collect
 * link clicks
 * video usage information
 * the number of page visits from Adobe Analytics
 
-The following pages help you configure the integration:
+The pages listed below can help you configure the integration. To be noted that Launch by Adobe is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). Therefore, integrating AEM as a Cloud Service with Launch and Adobe Analytics goes hand-in-hand.
 
-* [Connecting to Adobe Analytics and Creating Frameworks](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html)
+* [Integrate Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+* [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
+* [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 * [Configuring Link Tracking for Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-link.html)
 * [Mapping Component Data with Adobe Analytics Properties](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-mapping.html)
 * [Configuring Video Tracking for Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-video.html)
 * [Adobe Classifications](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-classifications.html)
 
-You can also use the [Opt-in wizard](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/opt-in.html) to easily perform the integration.
+
 
 >[!NOTE]
 >
->See also the how-to article: [Integrating AEM with Adobe Target and Adobe Analytics using DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>The IMS configuration (technical accounts) for Launch by Adobe is preconfigured in AEM as a Cloud Service. Users do not have to create this configuration.
 
 ## Further Information {#further-information}
 

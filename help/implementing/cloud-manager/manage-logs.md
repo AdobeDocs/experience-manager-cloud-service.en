@@ -17,8 +17,8 @@ Or, the **Environments** page:
 
 ![](assets/manage-logs2.png)
 
->Note:
-Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
+>[!Note]
+>Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
 
   ![](assets/manage-logs3.png)
 
@@ -44,23 +44,23 @@ In order to obtain the environment Id (1884 in this case) and the available serv
 ```java
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
-5552           FoundationInternal_dev   dev   Foundation Internal Dev environment  
-5565           FoundationInternal_stage stage Foundation Internal STAGE environment
-5566           FoundationInternal_prod  prod  Foundation Internal Prod environment
+1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
+1884           FoundationInternal_stage stage Foundation Internal STAGE environment
+1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
  
  
-$ aio cloudmanager:list-available-log-options 5552
+$ aio cloudmanager:list-available-log-options 1884
 Environment Id Service    Name         
-5552           author     aemerror     
-5552           author     aemrequest   
-5552           author     aemaccess    
-5552           publish    aemerror     
-5552           publish    aemrequest   
-5552           publish    aemaccess    
-5552           dispatcher httpderror   
-5552           dispatcher aemdispatcher
-5552           dispatcher httpdaccess
+1884           author     aemerror     
+1884           author     aemrequest   
+1884           author     aemaccess    
+1884           publish    aemerror     
+1884           publish    aemrequest   
+1884           publish    aemaccess    
+1884           dispatcher httpderror   
+1884           dispatcher aemdispatcher
+1884           dispatcher httpdaccess
 ```
 
-> Note:
-> While **Log Downloads** will be available through both the UI and API, **Log Tailing** is API/CLI-only.
+>[!Note]
+>While **Log Downloads** will be available through both the UI and API, **Log Tailing** is API/CLI-only.

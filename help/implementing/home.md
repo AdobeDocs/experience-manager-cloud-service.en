@@ -3,16 +3,16 @@ title: Implementing Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service implementation self-help resources and documentation links
 ---
 
-# Experience Manager as a Cloud Service Core Concepts {#aem-implementation-guide}
+# Implementing Applications for AEM as a Cloud Service {#aem-implementation-guide}
 
 This page lists the self-help resources about implementation Experience Manager as a Cloud Service.
 
 ## Key Implementation Articles {#key-articles}
 
 * [Managing your environments with Cloud Manager](cloud-manager/manage-environments.md)
-* [Deploying AEM as a Cloud Service](deploying/deploying.md)
+* [Deploying AEM as a Cloud Service](deploying/overview.md)
 * [Developing for AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-* [Dispatcher on AEM as a Cloud Service](dispatcher/dispatcher-cloud.md)
+* [Dispatcher on AEM as a Cloud Service](dispatcher/overview.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
@@ -31,10 +31,10 @@ This page lists the self-help resources about implementation Experience Manager 
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Dispatcher Documentation](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
+* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

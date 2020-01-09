@@ -166,7 +166,7 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 
 >[!NOTE]
 >
->Configuration of the Custom Workflow Runner is a configuration of an OSGi service. Please refer to [deploying to AEM as a Cloud Service](/help/implementing/deploying/deploying.md) for information on how to deploy an OSGi configuration.
+>Configuration of the Custom Workflow Runner is a configuration of an OSGi service. Please refer to [deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
 > OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
 
 For details, on which of the standard workflow steps can be used in the post-processing workflow, please see [Workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.

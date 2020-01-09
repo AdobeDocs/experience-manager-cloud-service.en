@@ -3,7 +3,7 @@ title: Adobe Experience Manager Assets as a Cloud Service
 description: Adobe Experience Manager Assets as a Cloud Service self-help resources and documentation links
 ---
 
-# Assets as a Cloud Service Guide {#aem-assets-guide}
+# AEM Assets as a Cloud Service {#aem-assets-guide}
 
 This page lists the self-help resources about Assets as a Cloud Service.
 
@@ -29,10 +29,10 @@ This page lists the self-help resources about Assets as a Cloud Service.
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Dispatcher Documentation](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
+* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

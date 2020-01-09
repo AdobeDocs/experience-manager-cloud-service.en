@@ -11,7 +11,7 @@ seo-description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Ser
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2019.12.0 |
+| Version | 2020.01.0 |
 | Type | Continuous Update |
 | Availability date | Continuous Update |
 
@@ -51,6 +51,7 @@ See the following additional information for Assets:
 |[Core Concepts](/help/core-concepts/home.md)|Provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service|
 |[Onboarding](/help/onboarding/home.md)|Provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to administer Experience Manager Sites as a Cloud Service|
+|[Assets User Guide](/help/assets/home.md)|Understand how to administer Experience Manager Assets as a Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
@@ -58,10 +59,10 @@ See the following additional information for Assets:
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Dispatcher Documentation](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/data-protection-and-privacy-foundation.md)
+* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

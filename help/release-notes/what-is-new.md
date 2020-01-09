@@ -20,5 +20,5 @@ For an overview of Assets, see [Introduction to Assets as a Cloud Service](/help
 If you are familiar with previous versions of AEM, see the following for an overview of the notable changes in AEM as a Cloud Service:
 
 * [Notable changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
-* [Notable changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
-* [Notable changes to Experience Manager Assets in Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Notable changes to AEM Sites as a AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)

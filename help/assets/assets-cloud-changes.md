@@ -4,7 +4,7 @@ description: Notable Changes to Adobe Experience Manager Assets in AEM Cloud Ser
 
 ---
 
-# Changes to Experience Manager Assets in Cloud Service {#notable-changes}
+# Notable Changes to AEM Assets as a Cloud Service {#notable-changes}
 
 Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are a number of differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences.
 
