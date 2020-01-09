@@ -359,7 +359,7 @@ Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS s
 
 Assets offering includes next-generation asset processing in the cloud and high performance asset ingestion and search.
 
-For details, see [overview and introduction to Assets as a Cloud Service](/help/assets/whats-new-assets.md).
+For details, see [overview and introduction to Assets as a Cloud Service](/help/assets/overview.md).
 
 <!--
 
