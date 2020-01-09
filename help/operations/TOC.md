@@ -9,7 +9,7 @@ solution-title: Experience Cloud
 
 # Operations {#operations}
 
-+ [Operations and Maintenance on AEM as a Cloud Service](home.md)
++ [Operations and Maintenance on AEM as a Cloud Service](/help/operations/home.md)
 + [Content Replication Service](replication.md)
 + [Maintenance Tasks](maintenance.md)
 + [Backup and Restore](backup.md)

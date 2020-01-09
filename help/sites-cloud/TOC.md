@@ -9,7 +9,7 @@ solution-title: Experience Cloud
 
 # Sites {#sites}
 
-+ [AEM Sites as a Cloud Service](home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Notable Changes to AEM Sites in AEM Cloud Service](sites-cloud-changes.md)
 + Authoring {#authoring}
   + Getting Started {#getting-started}
