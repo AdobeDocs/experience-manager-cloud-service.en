@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service Sites
 description: Adobe Experience Manager as a Cloud Service Sites self-help resources and documentation links
 ---
 
-# Experience Manager as a Cloud Service Onboarding {#aem-sites-guide}
+# AEM Sites as a Cloud Service {#aem-sites-guide}
 
 This page lists the self-help resources regarding Sites on Experience Manager as a Cloud Service.
 

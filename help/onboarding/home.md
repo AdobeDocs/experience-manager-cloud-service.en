@@ -3,7 +3,7 @@ title: Onboarding for Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service onboarding self-help resources and documentation links
 ---
 
-# Experience Manager as a Cloud Service Onboarding {#aem-onboarding-guide}
+# Onboarding to Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
 This page lists the self-help resources about onboarding for Experience Manager as a Cloud Service.
 

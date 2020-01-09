@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service Connectors
 description: Adobe Experience Manager as a Cloud Service Connectors self-help resources and documentation links
 ---
 
-# Experience Manager as a Cloud Service Connectors Guide {#aem-connectors-guide}
+# Implementing Connectors for Experience Manager as a Cloud Service {#aem-connectors-guide}
 
 This page lists the self-help resources about Connectors for Experience Manager as a Cloud Service.
 
