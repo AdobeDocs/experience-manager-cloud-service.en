@@ -94,9 +94,8 @@ On the home screen, these pipelines are listed in a new card:
 
    * **Edit** - allows editing of the pipeline settings
    * **Build** - navigates to the execution page, from which the pipeline can be executed
-   * **Manage Git** - allows the user to get the information necessary to access Cloud Manager Git repository, as shown in the figure below:
+   * **Manage Git** - allows the user to get the information necessary to access Cloud Manager Git repository
 
-   ![](assets/configure-pipeline9.png)
 
 
 ## The Next Steps {#the-next-steps}
