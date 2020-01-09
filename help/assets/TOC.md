@@ -10,7 +10,7 @@ solution-title: Experience Cloud
 # Assets {#assets}
 
 + [AEM Assets as a Cloud Service](/help/assets/home.md)
-+ [Overview and what's new](whats-new-assets.md)
++ [Overview and what's new](overview.md)
 + [Notable Changes to AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architecture](architecture.md)
 + [Supported file formats](file-format-support.md)

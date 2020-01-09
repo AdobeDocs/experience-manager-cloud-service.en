@@ -1,5 +1,5 @@
 ---
-title: Add your digital assets to Adobe Experience Manager as a Cloud Service
+title: Add your digital assets to Adobe Experience Manager
 description: Add your digital assets to Adobe Experience Manager as a Cloud Service
 
 ---
@@ -18,7 +18,7 @@ You can also choose to have additional processing done on the uploaded assets. A
 
 > [!NOTE]
 >
-> Experience Manager as a cloud service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
+> Experience Manager as a Cloud Service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
 >
 > Upload code that is customized or extended by customers technical teams needs to use the new upload APIs and protocols.
 
@@ -130,7 +130,7 @@ To upload larger number of files, especially if they exist in a nested folder hi
 
 > [!NOTE]
 >
-> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager as a Cloud Service requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
+> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 

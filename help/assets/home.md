@@ -9,7 +9,7 @@ This page lists the self-help resources about Assets as a Cloud Service.
 
 ## Key Assets as a Cloud Service Articles {#key-articles}
 
-* [Introduction to Assets as a Cloud Service](whats-new-assets.md)
+* [Introduction to Assets as a Cloud Service](overview.md)
 * [Architecture of Assets as a Cloud Service](architecture.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}

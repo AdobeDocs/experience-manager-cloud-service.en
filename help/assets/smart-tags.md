@@ -1,6 +1,6 @@
 ---
 title: Enhanced Smart Tags
-description: Enhanced smart tags
+description: Apply contextual and descriptive business tags using Adobe Sensei's AI and ML service, to improve asset discovery and content velocity.
 contentOwner: AG
 
 ---
@@ -11,40 +11,15 @@ contentOwner: AG
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for digital assets of a particular class. Tagging assets with taxonomy-controlled vocabulary ensures that they can be easily identified and retrieved by tag-based searches.
 
-Compared to natural language vocabularies, tagging digital assets based on business taxonomy helps align them with a company's business and ensures that the most relevant assets appear in searches.
+Compared to natural language vocabularies, tagging digital assets based on business taxonomy helps align them with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images appear when images of various models are searched to design a promotion campaign.
 
-For example, a car manufacturer can tag car images with model names so only relevant images appear when images of various models are searched to design a promotion campaign.
+In the background, the Smart Content Service uses AI framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in Adobe Experience Manager (AEM), the system administrator must integrate your AEM instance with Adobe I/O.
 
-For the Smart Content Service to apply the right tags, you must train it to recognize your taxonomy. To train the service, first curate a set of assets and tags that best describe these assets. Apply these tags on the assets and run a training workflow to help the service learn.
+>[!NOTE]
+>
+>Smart Content Services are applicable only for Assets customers. The Smart Content Service is available for purchase as an add-on to Experience Manager.
 
-Once a tag is trained and ready, the service can now apply these tags on assets through a tagging workflow.
-
-In the background, the Smart Content Service uses AI framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
-
-Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in Adobe Experience Manager (AEM), the system administrator must integrate your AEM instance with Adobe IO.
-
-In summary, here are the main steps to use the Smart Content Service:
-
-* Onboarding
-* Reviewing assets and tags (taxonomy definition)
-* Training the Smart Content Service
-* Automatic tagging
-
-![flowchart](assets/flowchart.gif)
-
-### Understand AEM search results with smart tags {#understandsearch}
-
-By default, AEM search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an additional `OR` clause to find any of the search terms in the applies smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
-
-* assets with `woman` and `running` keywords in the metadata.
-
-* assets smart tagged with either of the keywords.
-
-The search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. In the above example, the approximate order of display of search results is:
-
-1. matches of `woman running` in the various metadata fields.
-1. matches of `woman running` in smart tags.
-1. matches of `woman` or of `running` in smart tags.
+<!-- ![flowchart](assets/flowchart.gif) -->
 
 ## Prerequisites {#prerequisites}
 
@@ -170,11 +145,11 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
 ## Onboarding {#onboarding}
 
-The Smart Content Service is available for purchase as an add-on to AEM. After you purchase, an email is sent to the administrator of your organization with a link to Adobe IO.
+The Smart Content Service is available for purchase as an add-on to AEM. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O.
 
 The administrator can follow the link to integrate the Smart Content Service with AEM. To integrate the service with AEM Assets, see [configure Smart Tags](#configure-asset-tagging-using-the-smart-content-service).
 
-The onboarding process is complete when the administrator configures the service and adds users in AEM.
+The onboarding process is complete when an administrator configures the service and adds users in AEM.
 
 <!-- 
 ### Review assets and tags {#reviewing-assets-and-tags}
@@ -189,19 +164,33 @@ Add the assets to a folder and apply the tags to each asset from the properties 
 
 ## Manage smart tags and searches {#manage-smart-tags-and-searches}
 
-You can curate Smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
+You can curate smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
 
 Moderating Smart tags also helps refine tag-based searches for images by ensuring that your image appears in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated images from showing up in search results.
 
-You can also assign a higher rank to a tag to increase its relevence with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
+You can also assign a higher rank to a tag to increase its relevance with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
 
-1. In the OmniSearch box, search for assets based on a tag.
+1. In the Omnisearch box, search for assets based on a tag.
 1. Inspect the search results to identify an image that you don't find relevant to your search.
 1. Select the image, and then click/tap the **[!UICONTROL Manage Tags]** icon from the toolbar.
 1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you don't want the image to be searched based on a specific tag, select the tag and then click/tap the delete icon from the toolbar. Alternatively, click/tap `X` symbol that appears beside the label.
 1. To assign a higher rank to a tag, select the tag and click/tap the promote icon from the toolbar. The tag you promote, is moved to the **[!UICONTROL Tags]** section.
 1. Click/tap **[!UICONTROL Save]**, and then click/tap **[!UICONTROL OK]** to close the Success dialog.
 1. Navigate to the properties page for the image. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
+
+### Understand AEM search results with smart tags {#understandsearch}
+
+By default, AEM search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an additional `OR` clause to find any of the search terms in the applies smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
+
+* assets with `woman` and `running` keywords in the metadata.
+
+* assets smart tagged with either of the keywords.
+
+The search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. In the above example, the approximate order of display of search results is:
+
+1. matches of `woman running` in the various metadata fields.
+1. matches of `woman running` in smart tags.
+1. matches of `woman` or of `running` in smart tags.
 
 <!-- 
 
@@ -342,7 +331,7 @@ Enhanced smart tags are based on learning models of brand images and their tags.
 * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
 * Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Content Services release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-To search for assets with smart tags (regular or enhanced), use the Assets Omni-search (full-text search). There is no separate search predicate for smart tags. 
+To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags. 
 
 >[!NOTE]
 >
