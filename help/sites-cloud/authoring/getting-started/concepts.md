@@ -64,4 +64,4 @@ For more information about publishing and unpublishing pages, see the document [
 
 ## Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](/help/implementing/dispatcher/dispatcher-cloud.md)** implements load balancing and caching.
+To optimize performance for visitors to your website, the **[dispatcher](/help/implementing/dispatcher/overview.md)** implements load balancing and caching.

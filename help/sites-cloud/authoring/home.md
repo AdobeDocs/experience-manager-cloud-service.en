@@ -31,7 +31,7 @@ This guide explains the concepts of authoring in AEM.
 
 ## Key AEM resources
 
-* [Dispatcher User Guide](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [Dispatcher User Guide](/help/implementing/dispatcher/overview.md)
 * [HTL User Guide](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components User Guide](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)

@@ -58,7 +58,7 @@ See the following additional information for Assets:
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Dispatcher Documentation](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)

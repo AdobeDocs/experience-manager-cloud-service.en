@@ -12,7 +12,7 @@ This page lists the self-help resources about implementation Experience Manager 
 * [Managing your environments with Cloud Manager](cloud-manager/manage-environments.md)
 * [Deploying AEM as a Cloud Service](deploying/overview.md)
 * [Developing for AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-* [Dispatcher on AEM as a Cloud Service](dispatcher/dispatcher-cloud.md)
+* [Dispatcher on AEM as a Cloud Service](dispatcher/overview.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
@@ -31,7 +31,7 @@ This page lists the self-help resources about implementation Experience Manager 
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Dispatcher Documentation](/help/implementing/dispatcher/dispatcher-cloud.md)
+* [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
