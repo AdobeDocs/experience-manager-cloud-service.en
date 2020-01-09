@@ -10,7 +10,7 @@ This page lists the self-help resources about implementation Experience Manager 
 ## Key Implementation Articles {#key-articles}
 
 * [Managing your environments with Cloud Manager](cloud-manager/manage-environments.md)
-* [Deploying AEM as a Cloud Service](deploying/deploying.md)
+* [Deploying AEM as a Cloud Service](deploying/overview.md)
 * [Developing for AEM as a Cloud Service](developing/introduction/development-guidelines.md)
 * [Dispatcher on AEM as a Cloud Service](dispatcher/dispatcher-cloud.md)
 

@@ -28,6 +28,6 @@ solution-title: Experience Cloud
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/using/sites-cloud/developing/ref/javadoc/index.html)
 + Deploying to AEM as a Cloud Service {#deploying}
-  + [Deploying to AEM as a Cloud Service](deploying/deploying.md)
+  + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher-cloud}
   + [Dispatcher in the Cloud](dispatcher/dispatcher-cloud.md)
