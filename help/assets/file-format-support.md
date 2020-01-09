@@ -48,17 +48,17 @@ Columns of the support tables provide the following information:
 | File format | GIF | JPEG | PNG | TXT | XMP | Width/Height |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
 | Adobe       | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
-| AI          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| COLLAGE     |     |      |     |     | ✓   |              |
+| AI          | ✓   | ✓    | ✓   | -   | ✓   | ✓            |
+| COLLAGE     | -   | -    | -   | -   | ✓   | -            |
 | DN          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| IDEAS       |     |      |     |     | ✓   |              |
-| INDD        | ✓   | ✓    | ✓   |     | ✓   | ✓*           |
-| INDT        |     |      |     |     | ✓   |              |
+| IDEAS       | -   | -    | -   | -   | ✓   | -            |
+| INDD        | ✓   | ✓    | ✓   | -   | ✓   | ✓*           |
+| INDT        | -   | -    | -   | -   | ✓   | -            |
 | PDF         | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
-| PROTO       |     |      |     |     | ✓   |              |
-| PSB         | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| PSD         | ✓   | ✓    | ✓   |     | ✓   | ✓            |
-| XD          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
+| PROTO       | -   | -    | -   | -   | ✓   | -            |
+| PSB         | ✓   | ✓    | ✓   |  -  | ✓   | ✓            |
+| PSD         | ✓   | ✓    | ✓   |  -  | ✓   | ✓            |
+| XD          | ✓   | ✓    | ✓   |  -  | ✓   | ✓            |
 
 \* For INDD (InDesign files), the size of rendition is determined by the preview embedded in the INDD file. Configure the preferences in InDesign (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) to embed larger rendition.
 
@@ -166,7 +166,7 @@ Columns of the support tables provide the following information:
 
 ## Audio formats {#audio-formats}
 
-Assets as a Cloud Service supports XMP format in these audio formats: AIF, ASF, M4A, MP3, WAV, and WMA.
+Assets as a Cloud Service provides XMP support for these audio formats: AIF, ASF, M4A, MP3, WAV, and WMA.
 
 <!-- TBD: Some items from https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedinputvideoformatsforDynamicMediatranscoding may be applicable.
 

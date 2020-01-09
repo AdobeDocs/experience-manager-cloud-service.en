@@ -2,6 +2,7 @@
 title: Search digital assets and images in AEM
 description: Learn how to find the required assets in AEM by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
+mini-toc-levels: 1
 
 ---
 

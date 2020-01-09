@@ -2,6 +2,7 @@
 title: Manage your digital assets in Experience Manager
 description: Learn about various asset management and editing methods.
 contentOwner: AG
+mini-toc-levels: 1
 
 ---
 
@@ -26,7 +27,7 @@ The following (space-separated list of) characters are not supported:
 * An asset file name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? &`
 * An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload Assets {#uploading-assets}
+## Upload assets {#uploading-assets}
 
 See [add digital assets to Experience Manager](add-assets.md).
 
@@ -55,9 +56,7 @@ Some limitations of the feature are:
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
 * When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing the latest service pack.
 
--->
-
-## Preview Assets {#previewing-assets}
+## Preview assets {#previewing-assets}
 
 To preview an asset, follow these steps.
 
@@ -70,7 +69,7 @@ To preview an asset, follow these steps.
 
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
-## Editing Properties {#editing-properties}
+## Edit properties {#editing-properties}
 
 1. Navigate to the location of the asset whose metadata you want to edit.
 
@@ -151,7 +150,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >The **[!UICONTROL Paste]** icon is available in the toolbar until the paste operation is completed.
 
-### Moving or Renaming Assets {#moving-or-renaming-assets}
+### Move or rename assets {#moving-or-renaming-assets}
 
 1. Navigate to the location of the asset you want to move.
 
@@ -187,7 +186,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
-### Managing Renditions {#managing-renditions}
+### Manage renditions {#managing-renditions}
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
@@ -239,7 +238,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
 
-### Viewing Subassets {#viewing-subassets}
+### View subassets {#viewing-subassets}
 
 In AEM, subassets can be generated for assets with supported multi-page formats such as PDF, AI, Powerpoint/Apple Keynote, and InDesign. These subassets are like normal assets, but are linked to their parent asset and facilitate multi-page view in the Touch UI.
 
@@ -321,7 +320,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 >
 >If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
-## Unpublishing Assets {#unpublishing-assets}
+## Unpublish assets {#unpublishing-assets}
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
@@ -343,9 +342,9 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    >[!NOTE]
    >
-   >While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referenced by other published assets.
+   >When un-publishing a complex asset, unpublish the asset only. Avoid un-publishing the references because they may be referenced by other published assets.
 
-## Closed User Group {#closed-user-group}
+## Closed user group {#closed-user-group}
 
 A closed user group (CUG) is used to limit access to specific asset folders published from AEM. If you create a CUG for a folder, access to the folder (including folder assets and subfolders) is restricted to assigned members or groups only. To access the folder, they must log in using their security credentials.
 
@@ -380,7 +379,7 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 * Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
-## Editing Images {#editing-images}
+## Edit images {#editing-images}
 
 The editing tools in the AEM Assets interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
@@ -507,7 +506,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 >
 >You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
 
-### Viewing Saved Annotations {#viewing-saved-annotations}
+### View saved annotations {#viewing-saved-annotations}
 
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
@@ -525,7 +524,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
-### Printing Annotations {#printing-annotations}
+### Print annotations {#printing-annotations}
 
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
@@ -607,7 +606,7 @@ Here is an example of how you can configure AEM to print annotations in CJK (Chi
 1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. This configuration is available by default and works for all European and CJK languages.
 1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma separated) entry to the default font-family.
 
-## Asset Versioning {#asset-versioning}
+## Asset versioning {#asset-versioning}
 
 Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
 

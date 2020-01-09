@@ -30,9 +30,9 @@ The following are the key benefits of Assets as a Cloud Service. To know more, s
 * **Constant monitoring**: The monitoring of the system is automated and built-in checks and triggers help maintain the performance, availability, and overall robustness.
 * **Hassle-free deployments**: AEM in the Cloud operations are designed to be fully automated that require no manual intervention. To achieve this, the Cloud Manager (CM) component automates the build of deployable Docker images containing your custom code.
 
-## New Assets capabilities in details {#detailed-whats-new-of-assets}
+## New Assets capabilities {#whats-new-assets}
 
-The major capabilities are:
+The significant new capabilities are:
 
 * [Asset microservices](/help/assets/asset-microservices-overview.md)
 * [Asset upload methods](/help/assets/add-assets.md)
