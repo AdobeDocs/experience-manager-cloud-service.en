@@ -10,4 +10,4 @@ solution-title: Experience Cloud
 # Security {#security}
 
 + [Security for AEM as a Cloud Service](home.md)
-+ [IMS Support for AEM as a Cloud Service](ims-support-for-aem-as-a-cloud-service.md)
++ [IMS Support for AEM as a Cloud Service](ims-support.md)

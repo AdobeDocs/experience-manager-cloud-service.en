@@ -9,7 +9,7 @@ This page lists the self-help resources regarding Experience Manager as a Cloud 
 
 ## Key Security Articles {#key-articles}
 
-* [IMS Support for AEM as a Cloud Service](ims-support-for-aem-as-a-cloud-service.md)
+* [IMS Support for AEM as a Cloud Service](ims-support.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
