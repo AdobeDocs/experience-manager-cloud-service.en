@@ -1,9 +1,6 @@
 ---
-
-cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
-solution-title: Experience Cloud
 ---
 
 # Onboarding {#onboarding}
