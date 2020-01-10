@@ -1,15 +1,11 @@
 ---
-git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service.en
-cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
-index: no
-solution-title: Experience Cloud
 ---
 
 # Implementing {#implementing}
 
-+ [Implementing Applications for AEM as a Cloud Service](home.md)
++ [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
   + [Managing your Environments](cloud-manager/manage-environments.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)

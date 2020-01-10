@@ -1,10 +1,6 @@
 ---
 title: Know how asset microservices can process your digital assets in the cloud
 description: Process your digital assets using cloud-native and scalable asset processing microservices.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
 contentOwner: AG
 
 ---

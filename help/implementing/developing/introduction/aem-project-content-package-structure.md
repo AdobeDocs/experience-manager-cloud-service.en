@@ -274,7 +274,7 @@ In the `ui.apps/pom.xml`, the `<packageType>application</packageType>` build con
         <packageType>application</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
-          <cloudManagerTarget>none</cloudManagerTarget>>
+          <cloudManagerTarget>none</cloudManagerTarget>
         </properties>
       </configuration>
     </plugin>

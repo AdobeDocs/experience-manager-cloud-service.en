@@ -1,15 +1,11 @@
 ---
-git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service.en
-cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
-index: no
-solution-title: Experience Cloud
 ---
 
 # Sites {#sites}
 
-+ [AEM Sites as a Cloud Service](home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Notable Changes to AEM Sites in AEM Cloud Service](sites-cloud-changes.md)
 + Authoring {#authoring}
   + Getting Started {#getting-started}

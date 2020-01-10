@@ -17,7 +17,7 @@ AEM Sites as a Cloud Service provides experience management capabilities as part
 Changes and additions in AEM Sites as a Cloud Service are as follows:
 
 * [Asynchronous Page Operations](#asynchronous-page-operations)
-* [New Reference Site and Tutorial(#new-reference-site-and-tutorial)
+* [New Reference Site and Tutorial](#new-reference-site-and-tutorial)
 * [Removal of Classic UI](#classic-ui)
 
 ## Asynchronous Page Operations {#asynchronous-page-operations}

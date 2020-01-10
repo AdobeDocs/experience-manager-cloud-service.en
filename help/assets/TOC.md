@@ -1,16 +1,12 @@
 ---
-git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service.en
-cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
-index: no
-solution-title: Experience Cloud
 ---
 
 # Assets {#assets}
 
-+ [AEM Assets as a Cloud Service](home.md)
-+ [Overview and what's new](whats-new-assets.md)
++ [AEM Assets as a Cloud Service](/help/assets/home.md)
++ [Overview and what's new](overview.md)
 + [Notable Changes to AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architecture](architecture.md)
 + [Supported file formats](file-format-support.md)

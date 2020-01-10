@@ -1,15 +1,11 @@
 ---
-git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service.en
-cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
-index: no
-solution-title: Experience Cloud
 ---
 
 # Onboarding {#onboarding}
 
-+ [Onboarding to AEM as a Cloud Service](home.md)
++ [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
 + What is Required {#what-is-required}
   + [Access Rights Granted](what-is-required/access-rights-granted.md)
   + [Add Users and Roles](what-is-required/add-users-roles.md)

@@ -15,7 +15,7 @@ For an overview of Cloud Service, see the [Introduction to AEM as a Cloud Servic
 
 <!-- Please link to introduction or what's new of Sites. -->
 
-For an overview of Assets, see [Introduction to Assets as a Cloud Service](/help/assets/whats-new-assets.md)
+For an overview of Assets, see [Introduction to Assets as a Cloud Service](/help/assets/overview.md)
 
 If you are familiar with previous versions of AEM, see the following for an overview of the notable changes in AEM as a Cloud Service:
 
