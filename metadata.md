@@ -1,13 +1,14 @@
 ---
 cloud: experience-cloud
-solution-title: AEM Cloud Service
+solution-title: AEM as a Cloud Service
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
 solution-image: help/assets/experience-cloud-logo-24.png
 getting-started-title: Getting Started
 getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/analytics/how-to/adobe-launch-publishing-process.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/auditor.en
+git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
+index: y
 ---
 
 # Metadata for internal use
