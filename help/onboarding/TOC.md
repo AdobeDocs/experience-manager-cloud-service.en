@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service.en
+
 cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
