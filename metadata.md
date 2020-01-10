@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-solution-title: AEM as a Cloud Service
+solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
 solution-image: help/assets/experience-cloud-logo-24.png
 getting-started-title: Getting Started
