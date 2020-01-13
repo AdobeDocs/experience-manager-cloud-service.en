@@ -18,6 +18,7 @@ This article lists the known issues of Adobe Experience Manager as a Cloud Servi
 
 ## Sites {#sites}
 -->
+
 ## Assets {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
