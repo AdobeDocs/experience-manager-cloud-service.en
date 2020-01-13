@@ -39,7 +39,7 @@ All these help:
 
 * Simplify configuration and infrastructure for the system administrators.
 
-* Market professionals experience quicker time-to-value.
+* Marketing professionals experience quicker time-to-value.
 
 >[!NOTE]
 >

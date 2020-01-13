@@ -1,10 +1,6 @@
 ---
-git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service.en
-cloud: experience-cloud
 product: Adobe Experience Manager as a Cloud Service
 sub-product: Adobe Experience Manager as a Cloud Service
-index: no
-solution-title: Experience Cloud
 ---
 
 # Operations {#operations}
@@ -13,3 +9,4 @@ solution-title: Experience Cloud
 + [Content Replication Service](replication.md)
 + [Maintenance Tasks](maintenance.md)
 + [Backup and Restore](backup.md)
++ [Indexing](indexing.md)
