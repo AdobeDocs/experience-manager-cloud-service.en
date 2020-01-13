@@ -9,3 +9,4 @@ sub-product: Adobe Experience Manager as a Cloud Service
 + [Content Replication Service](replication.md)
 + [Maintenance Tasks](maintenance.md)
 + [Backup and Restore](backup.md)
++ [Indexing](indexing.md)
