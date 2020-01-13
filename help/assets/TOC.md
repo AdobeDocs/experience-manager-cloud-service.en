@@ -5,7 +5,6 @@ sub-product: Adobe Experience Manager as a Cloud Service
 
 # Assets {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Overview and what's new](overview.md)
 + [Notable Changes to AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architecture](architecture.md)
