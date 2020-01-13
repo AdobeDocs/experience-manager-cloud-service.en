@@ -13,10 +13,11 @@ This article lists the known issues of Adobe Experience Manager as a Cloud Servi
 
 [Contact support](https://helpx.adobe.com/support/experience-manager.html) for more information about the known issues.
 
+<!-- 
 ## Platform {#platform}
 
 ## Sites {#sites}
-
+-->
 ## Assets {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->

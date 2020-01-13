@@ -13,6 +13,13 @@ seo-description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Ser
 | Type | Continuous Update |
 | Availability date | Continuous Update |
 
+## Key Release Information {#key-articles}
+
+* [What is New](what-is-new.md)
+* [Notable Changes](aem-cloud-changes.md)
+* [Known Issues](known-issues.md)
+* [Deprecated and Removed Features](deprecated-removed-features.md)
+
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
 |User Guide|Description|
