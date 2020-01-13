@@ -9,10 +9,10 @@ This page lists the self-help resources about operations and maintenance of Expe
 
 ## Key Operations Articles {#key-articles}
 
-* [Backing up](backup.md)
+* [Content Replication](replication.md)
+* [Maintenance Tasks](maintenance.md)
+* [Backing Up and Restoring](backup.md)
 * [Indexing](indexing.md)
-* [Replication](replication.md)
-* [Maintenance](maintenance.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
