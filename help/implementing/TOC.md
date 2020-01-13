@@ -21,6 +21,7 @@ sub-product: Adobe Experience Manager as a Cloud Service
   + [AEM Project Package Structure](developing/introduction/aem-project-content-package-structure.md)
   + [Develop a Repository Structure Package](developing/introduction/repository-structure-package.md)
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
+  + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
