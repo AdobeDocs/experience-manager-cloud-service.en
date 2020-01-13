@@ -5,7 +5,6 @@ sub-product: Adobe Experience Manager as a Cloud Service
 
 # Implementing {#implementing}
 
-+ [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
   + [Managing your Environments](cloud-manager/manage-environments.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
@@ -20,9 +19,8 @@ sub-product: Adobe Experience Manager as a Cloud Service
 + Developing for AEM as a Cloud Service {#developing}
   + [AEM Project Package Structure](developing/introduction/aem-project-content-package-structure.md)
   + [Develop a Repository Structure Package](developing/introduction/repository-structure-package.md)
-  + [Content Search and Indexing](/help/operations/indexing.md)
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
-  + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/using/sites-cloud/developing/ref/javadoc/index.html)
+  + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
