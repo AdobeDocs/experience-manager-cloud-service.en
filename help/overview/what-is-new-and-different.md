@@ -5,7 +5,7 @@ description: What is Different and What is New - Adobe Experience Manager (AEM) 
 seo-description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service. 
 ---
 
-# What is Different and What is New {#what-is-different-and-what-is-new}
+# What is New and What is Different {#what-is-new-and-what-is-different}
 
 For many years AEM has been available both:
 
@@ -13,17 +13,7 @@ For many years AEM has been available both:
 
 * as a Managed Service
 
-<!-- change link when 6.5 migrated -->
-
->[!NOTE]
->
->For further details on these versions see the documentation set for [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
-
 There are intrinsic differences between these previous approaches and AEM as a Cloud Service:
-
->[!NOTE]
->
->These overviews are not exhaustive, but are intended to provide an introduction.
 
 * [Architecture](#architecture)
 * [Upgrades](#upgrades)
@@ -35,6 +25,16 @@ There are intrinsic differences between these previous approaches and AEM as a C
 * [Authoring User Interface](#authoring-user-interface)
 * [AEM Sites](#aem-sites)
 * [AEM Assets](#aem-assets)
+
+>[!NOTE]
+>
+>These overviews are not exhaustive, but are intended to provide an introduction.
+
+<!-- change link when 6.5 hub page migrated -->
+
+>[!NOTE]
+>
+>For further details on the On-Premise and Managed Service versions, see the documentation set for [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
 
 <!-- * [Miscellaneous](#miscellaneous) -->
 
