@@ -27,17 +27,22 @@ Depending upon the user’s objective in creating the program within the bounds 
 
   ![](assets/create-program2.png)
 
-If a program already exists, then the **Add Program** button will be seen on the top right of the landing page. 
+>![NOTE]
+>If a program already exists, then the **Add Program** button will be seen on the top right of the landing page, as shown in the figure below.
 
+![](assets/create-program-add.png)
 
 ## Creating a Sandbox Program {#create-sandbox-program}
 
 Follow the steps below describe how to create a Sandbox program: 
  
-1. Select **Setup for Demo** in the Create Program wizard. User submits program name before selecting **Create**.
+1. From the create program wizard, select **Set up a demo**. User submits program name before selecting **Create**.
+
+   ![](assets/create-program-setupdemo.png)
+
 1. User will see the new sandbox program card on the landing page, and can hover over it to select the Cloud Manager icon to navigate to the Cloud Manager overview page. The card will inform the user on the status of auto-setup of the newly created sandbox program. User will see progression.
 
-   ![](assets/create-program3.png)
+    ![](assets/program-create-setupdemo2.png)
 
 1. After the project with sample code and content completes, the user can access **Manage Git** link, as shown in the figure below:
 
