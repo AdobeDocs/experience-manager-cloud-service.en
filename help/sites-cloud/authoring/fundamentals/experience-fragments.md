@@ -144,7 +144,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 
    ![Variation properties](/help/sites-cloud/authoring/assets/xf-07.png)
 
-2. Confirm with **Done**, the new variation will be shown in the panel.
+1. Confirm with **Done**, the new variation will be shown in the panel.
 
 ## Using your Experience Fragment {#using-your-experience-fragment}
 
@@ -221,7 +221,7 @@ Details of your fragment can be seen:
 
    ![Experience Fragment details](/help/sites-cloud/authoring/assets/xf-15.png)
 
-2. When you open the **Properties** of the Experience Fragment:
+1. When you open the **Properties** of the Experience Fragment:
 
    ![Properties button](/help/sites-cloud/authoring/assets/xf-16.png)
 
