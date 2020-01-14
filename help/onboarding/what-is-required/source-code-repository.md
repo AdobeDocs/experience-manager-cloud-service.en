@@ -7,7 +7,7 @@ seo-description: Source Code Repository - Cloud Services
 
 # Source Code Repository {#source-code-repository} 
 
-Cloud Manager program will come auto-provisioned with it’s own git repository [Reference appropriate section to here]. 
+Cloud Manager program will come auto-provisioned with it’s own git repository. 
 
 For a user to access the Cloud Manager git repository, users will need to use a Git client with a command-line tool, a standalone visual Git client, or the user's IDE such as Eclipse, IntelliJ, NetBeans. 
 
@@ -29,5 +29,5 @@ To begin developing the AEM Cloud application, a local copy of the application c
 $ git clone {URL}
 ```
 
-> Note:
+> [!NOTE]
 > A user can check out a copy of their code, and make changes in the local code repository. When ready, the user can commit their code changes back to the remote code repository in Cloud Manager.
