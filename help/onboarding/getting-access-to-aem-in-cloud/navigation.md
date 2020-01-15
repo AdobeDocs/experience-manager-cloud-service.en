@@ -15,9 +15,9 @@ Programs are accessible through [Adobe Experience Cloud](https://my.cloudmanager
 
 ## For Existing AMS Customers {#existing-aem}
 
-If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Services, you will see your existing programs and you can add program to your Cloud Services. 
+If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Services, you will see your existing programs and can add programs to your Cloud Services. 
 
-Refer to [Adding another Cloud Services Program](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) for more details.
+Refer to [Adding Cloud Services Program](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) for more details.
 
 ## For New Cloud Services Customers {#new-cloud-services}
 
