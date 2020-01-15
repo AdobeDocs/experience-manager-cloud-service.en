@@ -16,13 +16,15 @@ Follow the steps below to create an AEM application project in Cloud Manager:
 
 1. Once you log in to Cloud Manager and the basic program setup is complete, a special call to action card will be shown on the **Overview** screen, if the repository is empty.
 
-   ![](assets/create-aem-project1.png)
+   ![](assets/create-wizard1.png)
 
 1. Click **Create** to navigate to the **Create a  Branch and Project** screen.
 
-   ![](assets/create-aem-project2.png)
+   ![](assets/create-wizard2.png)
 
-1. **Project Creation in Progress** tile displays on the *Overview* screen. 
+1. The **Project Creation in Progress** tile displays on the *Program Overview* screen.
+
+   ![](assets/create-wizard3.png)
 
 
 ## Setting up your Project {#setting-up-your-project}
