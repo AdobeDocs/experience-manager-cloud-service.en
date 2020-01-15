@@ -25,7 +25,7 @@ In the event of first-time access to Cloud Manager or if no programs exist in th
 
 Depending upon the user’s objective in creating the program within the bounds of what is available to the specific customer/organization, a program creation wizard will ask the user to submit one or more details.
 
-  ![](assets/create-program2.png)
+  ![](assets/create-program-2.png)
 
 >![NOTE]
 >If a program already exists, then the **Add Program** button will be seen on the top right of the landing page, as shown in the figure below.
@@ -50,11 +50,11 @@ Follow the steps below describe how to create a Sandbox program:
 
 1. Once the development environment is created, the user can **Access AEM** link, as shown in the figure below:
 
-   ![](assets/create-program5.png)
+   ![](assets/create-program-5.png)
 
-1. Once the Non-production pipeline deploying to development is complete, the wizard guides the user to either access AEM (on development) or deploy code to development environment:
+1. Once the Non-production pipeline deploying to development is complete, the wizard guides the user to either access AEM (on development) or to deploy code to development environment:
 
-   ![](assets/create-program6.png)
+   ![](assets/create-program-setup-deploy.png)
 
 
 ## Creating a Regular Program {#create-regular-program}
@@ -63,17 +63,31 @@ A *Regular* program is intended for a user who is familiar with AEM and Cloud Ma
 
 The steps below describe how to create a program intended for production:
 
-1. Select **Setup for Production** in the Create Program wizard to create a regular program. User can accept the default program name or edit it before selecting **Create**.
+1. Select **Set up for Production** in the Create Program wizard to create a regular program. User can accept the default program name or edit it before selecting **Continue**.
+
+   ![](assets/set-up-prod1.png)
 
 1. User will select solutions that are to be included in the Program in the screen that will be presented following the screen above.
+
+   
 
    >[!NOTE]
    >
    >The screen below is only displayed for the segment of customers who have purchased more than one solution. For customers who have purchased just one solution, the solution selection screen below will not be displayed.
 
-   ![](assets/create-program7.png)
+   ![](assets/set-up-prod2.png)
 
-1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager **Overview** page. The main CTA card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
+1. Once you have selected the solutions, click **Create**.
+
+   ![](assets/set-up-prod3.png)
+
+1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager **Overview** page. 
+
+    ![](assets/set-up-prod4.png)
+
+1. The main call-to-action card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
+   ![](assets/set-up-prod5.png)
+
 
     >[!NOTE]
     >
