@@ -14,7 +14,7 @@ content-type: reference
 The following shortcuts are available for the Sites, Assets, Users, Groups, Projects, and Experience Fragments consoles.
 
 |Location|Shortcut|Description|
-|-|-|-|
+|---|---|---|
 |General|`Ctrl+Click`|Multi-select|
 |Console - Column View & Content View|`Right Arrow`|Navigate down into the structure of your website / expand tree node|
 ||`Left Arrow`|Navigate up the tree structure / collapse tree node|
@@ -41,7 +41,7 @@ The key combinations are listed with the Windows [modifier keys](#os-specific-mo
 The modifier keys used for the keyboard shortcuts vary depending on the operating system used by the client.
 
 |Windows/Linux|macOS|
-|-|-|
+|---|---|
 |`Alt`|`Option`|
 |`Ctrl`|`Command`|
 

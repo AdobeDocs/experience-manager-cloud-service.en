@@ -1,12 +1,8 @@
 ---
 title: Content Fragments
 seo-title: Content Fragments
-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
-seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
+description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
+seo-description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
 ---
 
 # Content Fragments {#content-fragments}
@@ -28,7 +24,6 @@ Together with the updated JSON exporter, structured content fragments can also b
 
 >[!CAUTION]
 >
-
 >This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
 
 The content fragments enable:
@@ -83,7 +78,7 @@ In the appropriate configuration dialog you can select the available parameters,
   * Specify the fragment to be used.
 * **Display Mode**:
   * **Single Text Element**
-  * **Multiple Element**
+  * **Multiple Elements**
 * **Element**
   * The default **Main** will always be available.
   * A selection will be available if the fragment was created with an appropriate template.

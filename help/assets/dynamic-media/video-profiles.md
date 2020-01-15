@@ -112,7 +112,7 @@ Note that Adobe Sensei is currently limited to 9000 frames. That is, five minute
 >
 >For video smart crop to work, you must include one or more video encoding presets with your video profile.
 
-To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROLSmart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
+To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROL Smart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
 
 ![Editing a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
 
@@ -374,7 +374,7 @@ You can apply a video profile to a folder from within the **[!UICONTROL Tools]**
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
 
 #### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 

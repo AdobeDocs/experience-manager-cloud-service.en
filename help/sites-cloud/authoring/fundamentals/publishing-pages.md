@@ -96,7 +96,7 @@ To publish a page with Quick Publish:
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. In the Quick Publish dialogue, confirm the publication by clicking on **Publish** or cancel by clicking on **Cancel**. Remember that any unpublished references will automatically be published as well.
+1. In the Quick Publish dialog, confirm the publication by clicking on **Publish** or cancel by clicking on **Cancel**. Remember that any unpublished references will automatically be published as well.
 
    ![Quick publish confirmation](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
@@ -191,8 +191,6 @@ To publish or unpublish a page using Manage Publication:
     * Define a title of the workflow package if the option to keep the workflow package was chosen.
 
    Click **Publish** or **Publish Later** to complete the publication.
-
-   ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflows.png)
 
 ## Unpublishing Pages {#unpublishing-pages}
 

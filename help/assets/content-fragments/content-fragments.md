@@ -204,7 +204,7 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Fragment Metadata**
 
-  * Use the [Assets metadata schemas](/help/assets/metadata.md).
+  * Use the [Assets metadata schemas](/help/assets/metadata-schemas.md).
   * Tags can be created when you:
 
     * Create and author the fragment
@@ -230,7 +230,7 @@ The content fragment assets are made up of the following parts (either directly 
 * **Variations**
 
   * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
-  * Are created as copies of **Master**, but can then be edited a required; there is usually content overlap between the variations themselves.
+  * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
   * Can be defined during fragment authoring or pre-defined in fragment templates.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [synchronized](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
@@ -281,6 +281,7 @@ To create, edit and use content fragments you also need:
 
 A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
 
+<!--
 ### We.Retail Sample {#we-retail-sample}
 
 A sample fragment can be seen at:

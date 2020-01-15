@@ -28,8 +28,8 @@ You can create a version of your resource from:
 
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **Timeline** column.
-1. Click/tap on the arrowhead by the comment field to reveal the options:
+1. Open the **Timeline** rail.
+1. Click/tap on the ellipsis by the comment field to reveal the options:
 
    ![Versions in the timeline rail](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -47,13 +47,10 @@ You can create a version of your resource from:
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Select the **Create** option from the toolbar.
-1. The dialog will open. You can enter a **Label** and a **Comment** if required:
-
-   ![Create a new version](/help/sites-cloud/authoring/assets/versions-create-version.png)
-
+1. The same dialog will open. You can enter a **Label** and a **Comment** if required.
 1. Confirm the new version with **Create**.
 
-   The timeline will be opened with the information updated to indicate the new version.
+The timeline will be opened with the information updated to indicate the new version.
 
 ## Reverting to a Page Version {#reverting-to-a-page-version}
 
@@ -91,7 +88,7 @@ You can preview a specific version:
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to preview:
 
-   ![Preview version](/help/sites-cloud/authoring/assets/versions-preview.png)
+   ![Preview version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Select **Preview**. The page will be shown in a new tab.
 
@@ -110,7 +107,7 @@ To compare a previous version with the current page:
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to compare:
 
-   ![Compare versions](/help/sites-cloud/authoring/assets/versions-compare.png)
+   ![Compare versions](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Select **Compare to Current**. The [page diff](/help/sites-cloud/authoring/features/page-diff.md) will open and display the differences.
 

@@ -1,10 +1,6 @@
 ---
 title: Know how asset microservices can process your digital assets in the cloud
 description: Process your digital assets using cloud-native and scalable asset processing microservices.
-cloud: experience-cloud
-solution-title: Experience Cloud
-product: Adobe Experience Manager Cloud Service
-sub-product: Adobe Experience Manager Cloud Service
 contentOwner: AG
 
 ---
@@ -13,7 +9,7 @@ contentOwner: AG
 
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
-TBD: Post-GA we will provide detailed info at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all info is added, in short, in this article.
+TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 
 -->
 
@@ -78,13 +74,13 @@ Post-processing workflows are regular AEM workflow models, created and managed i
 
 Adobe Experience Manager can be configured to automatically trigger the post-processing workflows after asset processing completes.
 
-<!-- For more details, see [Get started using asset microservices](asset-microservices-configure-and-use.md). 
-Add this when this article is populated with detailed info.
--->
-
-<!-- TBD: Create some asset-microservices-data-flow-diagram.
+<!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
 
 >[!MORELIKETHIS]
 >
->[Supported file formats](file-format-support.md)
+>* [Get started using asset microservices](asset-microservices-configure-and-use.md)
+>* [Supported file formats](file-format-support.md)
+>* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [Apache Oak documentation on direct binary access](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

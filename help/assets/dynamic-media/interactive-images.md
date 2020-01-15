@@ -15,16 +15,13 @@ docset: aem65
 
 # Interactive images{#interactive-images}
 
-<!--
 You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can tap or click these hotspots and be linked directly to the product or service, add it to a shopping cart, or be linked to a web page. Direct experiences such as these increase customer engagment and conversion on your web site.
 
 The following is a shoppable banner with a Quickview pop-up. A user activates the Quickview by tapping the circle or "hotspot" on the model.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-See interactive images in action on the web page above by going to the following:
-
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+See [interactive images in action](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) on the web page pictured above.
 
 ## Watch how interactive image banners are created {#watch-how-interactive-image-banners-are-created}
 
@@ -34,17 +31,16 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 The following step-by-step workflow description is designed to help you get up and running quickly with interactive images in AEM Assets.
 
-Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on the following web page example that does not yet have Interactive Images added to it:
+Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on a [web page example that does not yet have Interactive Images added to it](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+
 
 The tutorial helps to illustrate the steps of integrating interactive images on your own website.
 
 Interactive Images steps:
 
 1. **(Optional) Identifying hotspot variables** &ndash; If you use AEM Assets and Dynamic Media standalone, start by identifying dynamic variables used in your existing Quickview implementation so that you can enter hotspot data when creating the interactive image. See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
-   However, if you use AEM Sites, or AEM eCommerce, or both, then this step is not necessary.
-   <!-- See [eCommerce concepts in AEM Assets](/help/sites-cloud/administering/concepts.md).-->
+However, if you use AEM Sites, or AEM eCommerce, or both, then this step is not necessary.
 
 1. **(Optional) Creating an Interactive Image viewer preset** &ndash; Customize the graphic image that is used to represent hotspots. Creating your own Interactive Image viewer preset is not required if you intend to use the out-of-the-box Interactive Image viewer preset named `Shoppable_Banner` instead.
 See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -69,7 +65,7 @@ See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynami
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your image by triggering to Quickviews.
->* Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+>* Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop.
 >
 >If your implementation of AEM uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -152,9 +148,7 @@ Consider the following examples of Quickview URLs and their resulting hotspot va
 
 **Example**
 
-You can apply the same approach used in the three examples above to the demo web page:
-
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+You can apply the same approach used in the three examples above to the [demo web page](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
 The demo web page has several product thumbnails, each having a Quickview button labeled “See More”. With your web browser's debugging tool still activated, click each button and note the recorded Quickview URLs. After you activate all four product Quickviews available on the page, you have the following list of Quickview requests made to the backend:
 
@@ -204,7 +198,7 @@ After you save the viewer preset, it is automatically activated (turned on) on t
 
    Be sure you publish the new viewer preset.
 
-   See [Publishing Viewer Presets That You Have Added](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
+   See [Publishing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
    You are now ready to upload an image banner.
 
@@ -304,7 +298,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 1. Tap **[!UICONTROL Save]** to save your work and return to the Browse page.
 1. Publish the interactive image. Publishing allows for the banner to be delivered through the cloud and also generates embed code if you need to integrate with a third party website.
 
-   See [Publishing assets](/help/assets/manage-digital-assets.md#publishing-assets).
+   See [Publishing assets](/help/assets/manage-digital-assets.md#publish-assets).
 
    After you have added hotspots and published the interactive image, you are now ready to add it to your existing website.
 
@@ -350,19 +344,13 @@ If you are a standalone AEM Assets customer, you can manually add the interactiv
 
 **Example**
 
-Using the demo website as an example:
-
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
-
-Notice that the picture of the three men is a static `IMG` tag:
+Using the [demo website as an example](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three men is a static `IMG` tag:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Integration is as simple as removing the `IMG` tag and replacing it with the copied embed code from AEM Assets. You can see the result in the following URL which shows the shoppable interactive image on the page with three circle hotspots:
-
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
+Integration is as simple as removing the `IMG` tag and replacing it with the copied embed code from AEM Assets. You can see the result [shows the shoppable interactive image on the page with three circle hotspots](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 >
@@ -370,9 +358,9 @@ Integration is as simple as removing the `IMG` tag and replacing it with the cop
 
 To apply a "crop" to a shoppable interactive image for a responsive environment, you can include the Interactive Image configuration attribute `ZoomView.iscommand` to the path--where `ZoomView` is the component to call and `iscommand` is the "crop" image serving command that you apply.
 
-See [ZoomView.iscommand](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html) configuration attribute.
+See [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) configuration attribute.
 
-See [crop](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_crop.html) image serving command.
+See [crop](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) image serving command.
 
 You are now ready to integrate the interactive image with an existing Quickview on your website.
 
@@ -509,11 +497,8 @@ The following is the complete source code:
  s7interactiveimageviewer.init();
 ```
 
-The final demo website with the fully integrated interactive image looks like the following:
-
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)
+The [final demo website with the fully integrated interactive image](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html).
 
 ## Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 
 See [Using Quickviews to create custom pop-ups](/help/assets/dynamic-media/custom-pop-ups.md).
--->

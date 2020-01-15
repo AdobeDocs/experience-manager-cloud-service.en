@@ -55,7 +55,7 @@ The scaling of per-tenant instances of the service can be automatic or manual, o
 
 >[!NOTE]
 >
-> For further information see [Deploying - Runmodes](/help/implementing/deploying/deploying.md#runmodes)
+> For further information see [Deploying - Runmodes](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service is made available as individual instances  with each instance representing a complete AEM environment. There are four types of environments available with AEM as a Cloud Service:
 
@@ -127,13 +127,13 @@ There are various main components of this new architecture:
 
   * The blobs storage is shared across the publish and the author tier; files are not *moved*.
 
-  * When content is approved from the author tier, this is an indication that it can be activated, therefore pushed to the publish tier persistence layer. This happens via the Replication Service, a middleware pipeline. This pipleine receives the new content, with the individual publish service nodes subscribing to the content pushed to the pipeline. 
+  * When content is approved from the author tier, this is an indication that it can be activated, therefore pushed to the publish tier persistence layer. This happens via the Replication Service, a middleware pipeline. This pipeline receives the new content, with the individual publish service nodes subscribing to the content pushed to the pipeline.
 
     >[!NOTE]
     >
     >For more details see [Replication](/help/operations/replication.md).
 
-  * Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the [Cloud Manager](/help/overview/introduction.md#cloud-manager). This includes code and configuration deployments using the Cloud Manager's CI/CD pipeline. Anything related to monitoring, maintenance and troubleshooting (for example, log files) is exposed to customers within Cloud Manager.
+  * Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the [Cloud Manager](/help/overview/introduction.md). This includes code and configuration deployments using the Cloud Manager's CI/CD pipeline. Anything related to monitoring, maintenance and troubleshooting (for example, log files) is exposed to customers within Cloud Manager.
   
   * Accessing the author and publish tiers always happens via a load balancer. This is always up-to-date with the active nodes in each of the tiers.
 

@@ -36,32 +36,49 @@ Alternatives that are known to work, but may require providing the dependency yo
 * For local development, logs entries are written to local files
   * `./crx-quickstart/logs`
 * On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+* To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+
+### Thread Dumps {#thread-dumps}
+
+Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, please contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
 ### CRX/DE Lite and System Console {#crxde-lite-and-system-console}
 
-**Local Development**
+## Local Development {#local-development}
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
 Note that on local development (using the cloud-ready quickstart), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
-**AEM Development Service**
+## AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
 Customers can access CRXDE lite on the development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
-Developer Tools under `/system/console` will not be available in AEM as a Cloud Service. Instead, the following tools will be available at general availability, with additional developer tools made available based on need:
+A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the author or publish service urls as follows:
 
-* Bundles state
-* Components state
-* Services state
-* OSGI configuration state
-* Index definitions
-* Sling Jobs
-* Recent requests
-* Servlet resolver
-* Resource resolver
-* Package dependencies
+`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+
+As a shortcut, the following Cloud Manager CLI command can be used to launch the developer console based on an environment parameter described below: 
+
+`aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
+
+See [this page](/help/release-notes/home.md) for more information.
+
+Developers can generate status information, and resolve various resources.
+
+As illustrated below, available statuses information include the state of bundles, components, OSGI configurations, oak indexes, OSGI services, and Sling jobs.
+
+![Dev Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
+
+As illustrated below, developers can resolve package dependencies and servlets:
+
+![Dev Console 2](/help/implementing/developing/introduction/assets/devconsole2.png)
+
+![Dev Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
+
+Also useful for debugging, the Developer console has a link to the Explain Query tool:
+
+![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 **AEM Staging and Production Service**
 

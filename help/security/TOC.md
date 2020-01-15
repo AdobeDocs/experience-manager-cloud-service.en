@@ -1,10 +1,9 @@
 ---
-cloud: experience-cloud
-product: Adobe Experience Manager
-audience: end-user
-user-guide-title: Security User Guide
+product: Adobe Experience Manager as a Cloud Service
+sub-product: Adobe Experience Manager as a Cloud Service
 ---
 
-# Security User Guide {#security}
+# Security {#security}
 
-
++ [Security for AEM as a Cloud Service](/help/security/home.md)
++ [IMS Support for AEM as a Cloud Service](ims-support.md)

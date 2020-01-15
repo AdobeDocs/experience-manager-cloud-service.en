@@ -71,3 +71,8 @@ Coding Best Practices
 ----------------------
 
 Since AEM as a Cloud Service is a Cloud-native solution, there are some guidelines which may impact a connector's code strategies. See [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details.
+
+Testing the AEM Connector
+-------------------------
+
+New connectors should be created (or existing connectors modified) using local environment development techniques. The Partner Team will provide ISV partners with a sandbox environment where they can deploy their AEM Connector to a vanilla application to ensure that it works. 

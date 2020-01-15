@@ -1,5 +1,5 @@
 ---
-title: Add your digital assets to Adobe Experience Manager as a Cloud Service
+title: Add your digital assets to Adobe Experience Manager
 description: Add your digital assets to Adobe Experience Manager as a Cloud Service
 
 ---
@@ -18,7 +18,7 @@ You can also choose to have additional processing done on the uploaded assets. A
 
 > [!NOTE]
 >
-> Experience Manager as a cloud service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
+> Experience Manager as a Cloud Service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
 >
 > Upload code that is customized or extended by customers technical teams needs to use the new upload APIs and protocols.
 
@@ -100,9 +100,7 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 
 If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
-You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number 1 appended to its name.
-
-![chlimage_1-213](assets/chlimage_1-213.png)
+You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number `1` appended to its name.
 
 >[!NOTE]
 >
@@ -132,7 +130,7 @@ To upload larger number of files, especially if they exist in a nested folder hi
 
 > [!NOTE]
 >
-> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager as a Cloud Service requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/deploying.md) for guidance on content migration approaches.
+> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 

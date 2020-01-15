@@ -6,16 +6,15 @@ seo-description: The Dynamic Media Viewers extension for Adobe Launch, along wit
 uuid: d218ee1c-cd2c-40c3-a3d4-b95719ae8e98
 contentOwner: Rick Brough
 topic-tags: dynamic-media
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+products: Skyline
 content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
-docset: aem65
+docset: Skyline
 
 ---
 
 # Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
-<!--
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
 The new *Dynamic Media Viewers* extension for Adobe Launch, along with the recent release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Adobe Launch to use events and data specific for the Dynamic Media Viewers in their Adobe Launch configuration.
@@ -130,7 +129,7 @@ Currently, the support for video tracking is limited to "core playback" tracking
 
 ## Using the Dynamic Media Viewers extension {#using-the-dynamic-media-viewers-extension}
 
-As mentioned in [Use cases for the integration](#use%20cases%20for%20the%20integration), it is possible to track Dynamic Media viewers with the new Adobe Launch integration in AEM Sites and by using embed code.
+As mentioned in [Use cases for the integration](#use-cases-for-the-integration), it is possible to track Dynamic Media viewers with the new Adobe Launch integration in AEM Sites and by using embed code.
 
 ### Tracking Dynamic Media viewers in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -144,7 +143,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](/help/assets/dynami
 
 Customers who do not use AEM Sites, or embed Dynamic Media viewers into web pages outside of AEM Sites, or both, can still use the Adobe Launch integration.
 
-You must complete the configuration steps from the [Configuring Adobe Analytics](#configuringadobeanalytics) and [Configuring Adobe Launch](#configuringadobelaunch) sections. However, AEM-related configuration steps are not needed.
+You must complete the configuration steps from the [Configuring Adobe Analytics](#configuring-adobe-analytics-for-the-integration) and [Configuring Adobe Launch](#configuring-adobe-launch-for-the-integration) sections. However, AEM-related configuration steps are not needed.
 
 Following proper configuration, you can add Adobe Launch support to a web page with a Dynamic Media viewer.
 
@@ -152,10 +151,10 @@ See [Add the Launch Embed Code](https://docs.adobe.com/content/help/en/launch/us
 
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md) to learn more about how to use the embed code feature of AEM Dynamic Media.
 
-**To track Dynamic Media viewers using embed code**:
+**To track Dynamic Media viewers using embed code**
 
 1. Have a web page ready for embedding a Dynamic Media viewer.
-1. Obtain the embed code for Adobe Launch library by first logging in to Adobe Launch (see [Configuring Adobe Launch](#configuringadobelaunch)).
+1. Obtain the embed code for Adobe Launch library by first logging in to Adobe Launch (see [Configuring Adobe Launch](#configuring-adobe-launch-for-the-integration)).
 1. Click **[!UICONTROL Property]**, then click the **[!UICONTROL Environments]** tab.
 1. Pick up the Environment level that is relevant to the environment of the web page. Then, in the **[!UICONTROL Install]** column, click the box icon.
 1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Adobe Launch library embed code, along with the surrounding `<script/>` tags.
@@ -509,7 +508,7 @@ See also [Create a Property](https://docs.adobe.com/content/help/en/launch/using
 1. In Adobe Launch, click **[!UICONTROL New Property]**.
 1. In the **[!UICONTROL Create Property]** dialog box, in the **[!UICONTROL Name]** field, type a descriptive name, such as the title of your website. For example, `DynamicMediaViewersProp.`
 1. In the **[!UICONTROL Domains]** field, enter your website's domain.
-1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use--in this case, *Dynamic Media Viewers*--is not yet released.
+1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use&mdash;in this case, *Dynamic Media Viewers*&mdash;is not yet released.
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
@@ -525,7 +524,7 @@ To install an extension, click **[!UICONTROL Install]**. If needed, perform a on
 
 Where required, the following extensions must be installed and configured:
 
-* (Required) *Experience Cloud ID Service *extension
+* (Required) *Experience Cloud ID Service* extension
 
 No additional configuration is needed, accept for any proposed values. When you are done, be sure you click **[!UICONTROL Save]**.
 
@@ -551,7 +550,7 @@ Click **[!UICONTROL Save]**.
 
 See [Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html).
 
-* (Optional; required only if video tracking is needed) *Adobe Media Analytics for Audio and Video* extension
+* (Optional. Required only if video tracking is needed) *Adobe Media Analytics for Audio and Video* extension
 
 Fill in the tracking server field. The tracking server for *Adobe Media Analytics for Audio and Video* extension is different from the tracking server used for Adobe Analytics. It follows the template `<trackingNamespace>.hb.omtrdc.net`, where `<trackingNamespace>` is the information from the provisioning email.
 
@@ -563,7 +562,7 @@ See [Adobe Media Analytics for Audio and Video Extension](https://docs.adobe.com
 
 Select **[!UICONTROL enable Adobe Analytics for Video]** to enable (turn on) Video Heartbeat tracking.
 
-Note that--at the time of this writing--the *Dynamic Media Viewers* extension is only available if the Adobe Launch Property is created for development.
+Note that&mdash;at the time of this writing&mdash;the *Dynamic Media Viewers* extension is only available if the Adobe Launch Property is created for development.
 
 See [Creating a property in Adobe Launch](#creating-a-property-in-adobe-launch).
 
@@ -583,7 +582,7 @@ See [Configuring the Dynamic Media Viewers extension](#configuring-the-dynamic-m
 
 ### Publishing a library {#publishing-a-library}
 
-To make changes in the Adobe Launch configuration (including Property, Extensions, Rules, and Data Elements set up), you need to *publish* such changes*.* Publishing in Adobe Launch is performed from the Publishing tab under the Property configuration.
+To make changes in the Adobe Launch configuration (including Property, Extensions, Rules, and Data Elements set up), you need to *publish* such changes. Publishing in Adobe Launch is performed from the Publishing tab under the Property configuration.
 
 Adobe Launch may have multiple Development environments, one Staging environment, and one Production environment. By default the Adobe Launch Cloud Configuration in AEM points the AEM author node to the Stage environment of Adobe Launch, and the AEM publish node to the Production environment of Adobe Launch. This arrangment means that with the default AEM settings, it is necessary to publish the Adobe Launch library to the Staging environment so as to make use of it in AEM author, and then publish it into the Production environment so that it can be used in AEM publish.
 
@@ -649,10 +648,12 @@ Publishing a library involves the following two steps:
 
 ## Configuring Adobe Experience Manager for the integration {#configuring-adobe-experience-manager-for-the-integration}
 
+<!-- Prerequisites lost below should be verified by Sasha -->
+
 Prerequisites:
 
 * AEM runs both Author and Publish instances.
-* AEM author node is set up in Dynamic Media - Scene7 run mode (dynamicmedia_s7)
+* AEM author node is set up in Dynamic Media. <!-- Scene7 run mode (dynamicmedia_s7) -->
 * Dynamic Media WCM components are enabled in AEM Sites.
 
 The AEM configuration consists of the following two major steps:
@@ -678,7 +679,7 @@ The AEM configuration consists of the following two major steps:
 
    ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
-1. Click **[!UICONTROL Download Public Key]** to download a public key file (&#42;.crt) to your local system.
+1. Click **[!UICONTROL Download Public Key]** to download a public key file (`*.crt`) to your local system.
 
    >[!NOTE]
    >
@@ -703,7 +704,7 @@ The AEM configuration consists of the following two major steps:
 
     * In the **[!UICONTROL Description]** field, enter description for the integration.
 
-    * In the **[!UICONTROL Public key certificates]** area, upload your public key file (&#42;.crt) that you downloaded previously in these steps.
+    * In the **[!UICONTROL Public key certificates]** area, upload your public key file (`*.crt`) that you downloaded previously in these steps.
 
     * Under the **[!UICONTROL Select a role for Experience Platform Launch API]** heading, select **[!UICONTROL Admin]**.
 
@@ -716,50 +717,45 @@ The AEM configuration consists of the following two major steps:
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. An Integrations details page appears, **[!UICONTROL]**similar to the following:
+1. An Integrations details page appears, similar to the following:
 
    >[!NOTE]
    >
    >***Leave open this Integration details page***. You will need various pieces of information from the **[!UICONTROL Overview]** and **[!UICONTROL JWT]** tabs in just a moment.
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
-
-   Integration details page.
+   _Integration details page_
 
 1. Return to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page that you left open previously. In the upper-right corner of the page, click **[!UICONTROL Next]** to open the **[!UICONTROL Account]** page in the **[!UICONTROL Adobe IMS Technical Account Configuration]** window.
 
-   (If you accidently closed the page earlier, return to AEM author, then click **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Click **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Adobe Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
+   (If you accidently closed the page earlier, return to AEM author, then click **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Click **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Adobe Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
-
-   Adobe IMS Technical Account Configuration - Certificate page.
+   _Adobe IMS Technical Account Configuration - Certificate page_
 
 1. The **[!UICONTROL Account]** page has five fields that will require you to fill out using information from the Integration details page from the previous step.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
-
-   Adobe IMS Technical Account Configuration - Account page.
+   _Adobe IMS Technical Account Configuration - Account page_
 
 1. On the **[!UICONTROL Account]** page, fill in the following fields:
 
     * **[!UICONTROL Title]** - Enter a descriptive account title.
-    * **[!UICONTROL Authorization Server]** - Return to the Integration details page that you opened earlier. Click the **[!UICONTROL JWT]** tab. Copy the server name--without the path--as highlighted below.
+    * **[!UICONTROL Authorization Server]** - Return to the Integration details page that you opened earlier. Click the **[!UICONTROL JWT]** tab. Copy the server name&mdash;without the path&mdash;as highlighted below.
 
    Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
    For example, `https://ims-na1.adobelogin.com/`
    (the example server name is for illustration purposes only)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
-
-   Integration detail page - JWT tab
+   _Integration detail page - JWT tab_
 
 1. **[!UICONTROL API Key]** - Return to the Integration details page. Click the **[!UICONTROL Overview]** tab, then to the right of the **[!UICONTROL API Key (Client ID)]** field, click **[!UICONTROL Copy]**.
 
-   Return to the **[!UICONTROL Account]** page, then paste the key into the respective **[!UICONTROL]**field.
+   Return to the **[!UICONTROL Account]** page, then paste the key into the respective field.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-
-   Integration details page.
+   _Integration details page_
 
 1. **[!UICONTROL Client Secret]**- Return to the Integration details page. From the **[!UICONTROL Overview]** tab, click **[!UICONTROL Retrieve Client Secret]**. To the right of the **[!UICONTROL Client secret]** field, click **[!UICONTROL Copy]**.
 
@@ -770,8 +766,7 @@ The AEM configuration consists of the following two major steps:
    Return to the **[!UICONTROL Account]** page, then paste the code into the respective field.
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-
-   Integration details page - JWT tab
+   _Integration details page - JWT tab_
 
    The Account page, with all fields filled out, will look similar to the following:
 
@@ -832,9 +827,7 @@ The AEM configuration consists of the following two major steps:
 1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
 1. Near the upper-right corner, click **[!UICONTROL Create]**.
 
-   Your new Adobe Launch Cloud Configuration is now created and listed next to your web site similar to the following example:
-
-   ![]()
+   Your new Adobe Launch Cloud Configuration is now created and listed next to your web site.
 
 1. Select your new Adobe Launch Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, click **[!UICONTROL Publish]**.
 
@@ -847,4 +840,3 @@ It is, however, supported in the AEM publish node. Using the default settings of
 It is possible to work-around this limitation by specifying Development or Staging URL of Adobe Launch library in the Adobe Launch Cloud configuration for AEM publish above. Doing this makes the AEM publish node use the Development or Staging version of Adobe Launch library.
 
 See [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) for more information about setting up Adobe Launch Cloud Configuration.
--->

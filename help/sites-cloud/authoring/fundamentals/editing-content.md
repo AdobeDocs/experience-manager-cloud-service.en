@@ -297,8 +297,6 @@ The exact edit options will depend on the component. For some components [all ac
 
 * Components constructed from more than one basic component first ask you to confirm which set of edit options you want:
 
-  ![Constructed component's edit button](/help/sites-cloud/authoring/assets/editing-constructed-component.png)
-
 ### Drag and Drop Assets into Component {#drag-and-drop-assets-into-component}
 
 For specific component types (such as images) you can drag-and-drop assets from the asset browser directly into the component to update the content.

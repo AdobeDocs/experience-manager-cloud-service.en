@@ -1,11 +1,11 @@
 ---
-title: Processing Assets Using Media Handlers and Workflows
+title: Process assets Using Media Handlers and Workflows
 description: Learn about various media handlers and how to use them in workflows to perform tasks on assets.
 contentOwner: AG
 
 ---
 
-# Processing Assets Using Media Handlers and Workflows {#processing-assets-using-media-handlers-and-workflows}
+# Process assets Using Media Handlers and Workflows {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager (AEM) Assets comes with a set of default workflows and media handlers to process assets. The workflow defines the general tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.
 

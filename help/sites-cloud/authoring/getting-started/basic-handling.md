@@ -131,12 +131,6 @@ The header is always present at the top of the screen. While most options in the
 
   ![Example of breadcrumbs expanded](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
-* Analytics time period selection
-
-  ![Analytics time period](/help/sites-cloud/authoring/assets/analytics-time.png)
-
-  This is available in list view only. See [list view](#list-view) for more information.
-
 * **Create** button
 
   ![Create button](/help/sites-cloud/authoring/assets/create.png)
@@ -152,6 +146,10 @@ The header is always present at the top of the screen. While most options in the
   You can switch between column view, card view, and list view. In the list view it also shows the view settings.
 
   ![Views](/help/sites-cloud/authoring/assets/view.png)
+
+  >[!NOTE]
+  >
+  >The **View Settings** option is only available when in **List View** mode.
 
 ## Accessing Help {#accessing-help}
 
@@ -242,7 +240,7 @@ You can view, navigate through, and select (for further action) your resources w
 Selecting a specific resource is dependent on a combination of the view and the device:
 
 |View|Select Touch|Select Desktop|Deselect Touch|Deselect Desktop|
-|-|-|-|-|-|
+|---|---|---|---|---|
 |Column|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
 |Card|Tap and hold the card|Mouse over then use the check mark quick action|Tap the card|Click the card|
 |List|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
@@ -291,9 +289,6 @@ Selecting a resource in the leftmost column will display the child resources in 
 * You can navigate up and down in the tree by tapping or clicking on the resource name or the chevron to the right of the resource name.
 
   * The resource name and chevron will be highlighted when tapped or clicked.
-
-    ![Column view select](/help/sites-cloud/authoring/assets/navigating-tree.png)
-
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
   * If you tap or click on a resource name that has no children, its details will be displayed in the final column.
 
@@ -302,8 +297,6 @@ Selecting a resource in the leftmost column will display the child resources in 
   * When selected, a check mark will be overlaid on the thumbnail and the resource name will be highlighted as well.
   * The details of the selected resource will be shown in the final column.
   * The action toolbar will become available.
-
-    ![Selecting in column view](/help/sites-cloud/authoring/assets/selecting-column.png)
 
   When a page is selected in column view, the selected page is displayed in the final colum along with the following details:
 
@@ -378,12 +371,6 @@ Selecting a resource in the leftmost column will display the child resources in 
   Click or tap on the vertical selection bar and drag the item to a new position in the list.
 
   ![Order list](/help/sites-cloud/authoring/assets/order-list.png)
-
-* You can display Analytics Data by showing the appropriate columns using the **View Settings** dialogue.
-
-  You can filter Analytics Data for the past 30, 90, or 365 days using the filter options on the right side of the header.
-
-  ![Analytics time selection](/help/sites-cloud/authoring/assets/analytics-time.png)
 
 ## Rail Selector {#rail-selector}
 

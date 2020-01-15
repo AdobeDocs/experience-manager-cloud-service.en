@@ -15,7 +15,6 @@ docset: aem65
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
-<!--
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You do this by entering Layout mode and enabling the Dynamic Media components. Then you can add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
 You add Dynamic Media assets directly to the page if you are using AEM as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
@@ -27,6 +26,8 @@ You add Dynamic Media assets directly to the page if you are using AEM as your W
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
 Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
+
+**Adding a Dynamic Media component to a page**
 
 1. In AEM, open the page where you want to add the Dynamic Media component.
 1. In the left pane, tap the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
@@ -69,7 +70,7 @@ You can localize Dynamic Media components in one of two ways:
   >
   >Please note that not all languages available in the **[!UICONTROL Language]** menu currently have tokens assigned.
 
-## Dynamic Media Components {#dynamic-media-components}
+## Available Dynamic Media Components {#dynamic-media-components}
 
 Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media]**.
 
@@ -86,7 +87,7 @@ The Dynamic Media components that are available include the following:
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
-### Dynamic Media component {#dynamic-media-component}
+### Component: Dynamic Media {#dynamic-media-component}
 
 The Dynamic Media component is smart. Depending on whether you add an image or a video, you have various options. The component supports image presets, image-based viewers such as image sets, spin sets, mixed media sets, and video. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based on screen size. All viewers are HTML5 viewers.
 
@@ -172,8 +173,8 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
     With viewer modifiers, you for example, can do the following:
 
-    * Associate a caption file with a video: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
-    * Associate a navigation file with a video: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
+    * Associate a caption file with a video: [caption](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+    * Associate a navigation file with a video: [navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
@@ -186,6 +187,8 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 #### When working with Smart Crop {#when-working-with-smart-crop}
 
 Use the Dynamic Media component to add Smart Crop image assets to your web pages. When you edit the component you can choose to use a predefined video viewer preset for playing the video on the page.
+
+See [Using Smart Crop with AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 See also [Image Profiles](/help/assets/dynamic-media/image-profiles.md).
 
@@ -217,7 +220,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL Height]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
-### Interactive Media Component {#interactive-media-component}
+### Component: Interactive Media {#interactive-media-component}
 
 Interactive Media component is for those assets that have interactivity on them such hotspots or image maps. If you have an interactive image, interactive video, or carousel banner, use the **[!UICONTROL Interactive Media]** component.
 
@@ -254,7 +257,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 * **[!UICONTROL Show Product Form]**&mdash;By default, this value is not selected. The Product Form includes any product variants such as size and color. Clear the check mark to not show the product variants.
 
-### Panoramic Media Component {#panoramic-media-component}
+### Component: Panoramic Media {#panoramic-media-component}
 
 Panoramic Media component is for those assets that are spherical panoramic images. Such images provide a 360° viewing experience of a room, property, location, or landscape. For an image to qualify as a spherical panorama, it must have either one OR both of the following:
 
@@ -282,7 +285,7 @@ You can edit the following setting by tapping **[!UICONTROL Configure]** in the 
 
 If the viewer preset you are looking for is not visible, check to ensure that it is published. You must publish viewer presets before you can use them. See [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-### Video 360 Media Component {#video-media-component}
+### Component: Video 360 Media {#video-media-component}
 
 Use the **[!UICONTROL Video 360 Media]** component to render equirectangular video on your web page for an immersive viewing experience of a room, property, location, landscape, or medical procedure.
 
@@ -306,10 +309,9 @@ See [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md) for complet
 
 >[!MORELIKETHIS]
 >
->* [Using the Video Player in AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
->* [Using Interactive Video with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
->* [Understanding the Asset Viewer with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
->* [Using Custom Video Thumbnail with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Understanding Color Management with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
->* [Using Image Sharpening with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-image-sharpening-feature-video-use.html)
--->
+>* [Using the Video Player in AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Using Interactive Video with AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Understanding the Asset Viewer with AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Using Custom Video Thumbnail with AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Understanding Color Management with AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Using Image Sharpening with AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)

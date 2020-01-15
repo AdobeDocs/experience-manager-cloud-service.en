@@ -17,14 +17,18 @@ From the **Variations** tab you can:
 Perform a range of other actions depending on the data-type being edited; for example:
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
+
 * Select between [Rich Text](#rich-text), [Plain Text](#plain-text) and [Markdown](#markdown) for editing
 
 * [Upload Content](#uploading-content)
 
+<!--
 * [View key statistics](#viewing-key-statistics) (about multi-line text)
+
 * [Summarize Text](#summarizing-text)
 
 * [Synchronize variations with Master content](#synchronizing-with-master)
+-->
 
 >[!CAUTION]
 >
@@ -58,7 +62,7 @@ For example:
 
 ### Full-Screen Editor {#full-screen-editor}
 
-When editing a multi-line text field you can open the full-screen editor:
+When editing a multi-line text field you can open the full-screen editor; tap or click within the actual text, then select the following action icon:
 
 ![full screen editor icon](assets/cfm-variations-03.png)
 
@@ -73,14 +77,20 @@ The following actions are also available (for all the [formats](#formats)) when 
 
 * Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
 
-* [Show Text Statistics](#viewing-key-statistics)
-
 * [Upload content](#uploading-content)
-* [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
-* [Summarize Text](#summarizing-text)
+
 * [Annotate](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) your text
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
+
+<!--
+* [Show Text Statistics](#viewing-key-statistics)
+
+* [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
+* 
+* [Summarize Text](#summarizing-text)
+
+-->
 
 ### Formats {#formats}
 
@@ -149,16 +159,19 @@ You can also open the full-screen editor for further [actions](#actions).
 >
 >If you switch between **Rich Text** and **Markdown** you might experience unexpected effects with Block Quotes and Code Blocks, as these two formats can have differences in how they are handled.
 
+<!--
 ### Viewing Key Statistics {#viewing-key-statistics}
 
 When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. For example:
 
 ![statistics](assets/cfm-variations-04.png)
+-->
 
 ### Uploading Content {#uploading-content}
 
 To ease the process of authoring content fragments you can upload text, prepared in an external editor, and add it directly to the fragment.
 
+<!--
 ### Summarizing Text {#summarizing-text}
 
 Summarizing text is designed to help users reduce the length of their text to a predefined number of words, while keeping the key points and overall meaning.
@@ -204,6 +217,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
    ![summarization comparison](assets/cfm-variations-06.png)
 
 6. Select **Summarize** to confirm the changes.
+-->
 
 ### Annotating a Content Fragment {#annotating-a-content-fragment}
 
@@ -330,6 +344,7 @@ To delete an existing variation:
 >
 >You cannot delete **Master**.
 
+<!--
 ### Synchronizing with Master {#synchronizing-with-master}
 
 **Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevent to the variations and, therefore, need to be propagated to them..
@@ -349,7 +364,7 @@ When editing a variation you have access to the action for synchronizing the cur
 1. Open your content fragment in the fragment editor. Ensure that the **Master** has been edited.
 1. Select a specific variation, then the appropriate synchronization action from either:
 
-    * the **Actions** drop down selector - **Select current element with master**
+    * the **Actions** drop down selector - **Sync current element with master**
 
     * the toolbar of the full-screen editor - **Sync with master**
 
@@ -361,3 +376,4 @@ When editing a variation you have access to the action for synchronizing the cur
    ![synchronizing with master](assets/cfm-variations-11.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
+-->
