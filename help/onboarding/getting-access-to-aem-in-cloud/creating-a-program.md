@@ -32,7 +32,10 @@ Depending upon the user’s objective in creating the program within the bounds 
 
 ![](assets/create-program-add.png)
 
-## Creating a Sandbox Program {#create-sandbox-program}
+## Creating a Demo Program {#create-demo-program} 
+
+>[!NOTE]
+>A demo program is analogous to a sandbox program in Cloud Manager UI.
 
 Follow the steps below describe how to create a Sandbox program: 
  
@@ -92,5 +95,8 @@ The steps below describe how to create a program intended for production:
     >[!NOTE]
     >
     >A regular program does not have **Auto-setup** feature.
+
+
+    
 
 
