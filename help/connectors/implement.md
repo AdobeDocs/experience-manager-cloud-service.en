@@ -1,3 +1,8 @@
+---
+title: Implementing an AEM Connector
+description: Implementing an AEM Connector
+---
+
 Implementing an AEM Connector
 =============================
 
