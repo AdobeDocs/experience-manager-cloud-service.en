@@ -1,12 +1,6 @@
 ---
 title: Publishing Pages
-seo-title: Publishing Pages
 description: How to publish and unpublish pages using AEM
-seo-description: How to publish and unpublish pages using AEM
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Publishing Pages {#publishing-pages}

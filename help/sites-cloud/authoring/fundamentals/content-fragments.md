@@ -1,8 +1,6 @@
 ---
 title: Content Fragments
-seo-title: Content Fragments
 description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
-seo-description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
 ---
 
 # Content Fragments {#content-fragments}

@@ -1,12 +1,6 @@
 ---
 title: Your Inbox
-seo-title: Your Inbox
 description: Managing your tasks with the inbox
-seo-description: Managing your tasks with the inbox
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 ---
 
 # Your Inbox {#your-inbox}

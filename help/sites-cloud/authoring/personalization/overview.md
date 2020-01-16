@@ -1,12 +1,6 @@
 ---
 title: Personalization and Content Targeting
-seo-title: Personalization and Content Targeting
 description: Learn how AEM can create personalized content
-seo-description: Learn how AEM can create personalized content
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 ---
 
 # Personalization and Content Targeting {#personalization}

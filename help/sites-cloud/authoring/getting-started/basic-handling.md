@@ -1,12 +1,6 @@
 ---
 title: Basic Handling
-seo-title: Basic Handling
 description: Get comfortable with navigating AEM and its basic usage
-seo-description: Get comfortable with navigating AEM and its basic usage
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 ---
 
 # Basic Handling {#basic-handling}

@@ -1,12 +1,6 @@
 ---
 title: Keyboard Shortcuts for Page Editing
-seo-title: Keyboard Shortcuts for Page Editing
 description: Various keyboard shortcuts are available throughout AEM, including some for page editing
-seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Keyboard Shortcuts for Page Editing {#keyboard-shortcuts-when-editing-pages}

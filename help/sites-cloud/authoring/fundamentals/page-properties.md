@@ -1,12 +1,6 @@
 ---
 title: Editing Page Properties
-seo-title: Editing Page Properties
 description: Define the required properties for a page
-seo-description: Define the required properties for a page
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Editing Page Properties {#editing-page-properties}

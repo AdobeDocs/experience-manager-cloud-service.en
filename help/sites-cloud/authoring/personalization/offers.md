@@ -1,12 +1,6 @@
 ---
 title: Creating and Managing Offers
-seo-title: Creating and Managing Offers
 description: Use the Offers console to create offers that you can use in activity experiences
-seo-description: Use the Offers console to create offers that you can use in activity experiences
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 ---
 
 # Creating and Managing Offers {#creating-and-managing-offers}
