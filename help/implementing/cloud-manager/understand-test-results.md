@@ -1,8 +1,6 @@
 ---
 title: Understand your Test Results - Cloud Services
-seo-title: Understand Test Results - Cloud Services
 description: Understand Test Results - Cloud Services
-seo-description: Understand Test Results - Cloud Services
 ---
 
 # Understand your Test Results {#understand-test-results} 
