@@ -1,8 +1,6 @@
 ---
 title: Creating a Program - Cloud Services
-seo-title: Creating a Program - Cloud Services
 description: Creating a Program - Cloud Services
-seo-description: Creating a Program - Cloud Services 
 ---
 
 # Create a Program {#create-a-program}

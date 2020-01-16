@@ -1,8 +1,6 @@
 ---
 title: First Time Login - Cloud Services
-seo-title: First Time Login - Cloud Services
 description: First Time Login - Cloud Services
-seo-description: First Time Login - Cloud Services 
 ---
 
 # Access Programs {#first-time-login} 
