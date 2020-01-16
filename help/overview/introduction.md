@@ -1,8 +1,6 @@
 ---
 title: Introduction to Adobe Experience Manager as a Cloud Service
-seo-title: Introduction to Adobe Experience Manager (AEM) as a Cloud Service
 description: Introduction to Adobe Experience Manager (AEM) as a Cloud Service. 
-seo-description: Introduction to Adobe Experience Manager (AEM) as a Cloud Service. 
 ---
 
 # An Introduction to Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}

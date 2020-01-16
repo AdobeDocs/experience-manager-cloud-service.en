@@ -1,8 +1,6 @@
 ---
 title: What is Different and What is New - Adobe Experience Manager as a Cloud Service
-seo-title: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service
 description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service. 
-seo-description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service. 
 ---
 
 # What is New and What is Different {#what-is-new-and-what-is-different}
