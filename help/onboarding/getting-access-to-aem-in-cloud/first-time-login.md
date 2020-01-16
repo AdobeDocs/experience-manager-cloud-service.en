@@ -19,6 +19,8 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
    >
    >Programs that are on the cloud service are indicated by the subtitle **Experience Manager Cloud** as opposed to **Experience Manager** for AMS programs), as shown below.
 
+![](assets/first_timelogin1.png)
+
 
 Based on your circumstances, you will see either of the two options:
 
