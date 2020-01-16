@@ -15,11 +15,11 @@ Once you have successfully logged in to [!UICONTROL Cloud Manager], you are read
 
 ## Cloud Manager Landing Page {#landing-page}
 
-Once you have successfully logged in to [!UICONTROL Cloud Manager], you will see the landing page, as shown in the figure below.
+Once you have successfully logged in to [!UICONTROL Cloud Manager], you will see the landing page as shown in the figure below.
 
 >[!NOTE]
    >
-   >Programs that are on the cloud service are indicated by the subtitle **Experience Manager Cloud** as opposed to **Experience Manager** for AMS programs), as shown below.
+   >Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** as opposed to **Experience Manager** for AMS programs), as shown below.
 
 ![](assets/first_timelogin1.png)
 
@@ -33,7 +33,7 @@ Based on your circumstances, you will see either of the two options:
 ## Adding a New Program in Cloud Service with no Existing Programs {#no-program}
 
 
-The Landing page directs you to create your first program, as shown in the figure below.
+The landing page directs you to create your first program, as shown in the figure below.
    ![](assets/first_timelogin0.png)
       
 
@@ -53,4 +53,4 @@ The Landing page directs you to create your first program, as shown in the figur
 
    ![](assets/first_timelogin2.png)
 
-To learn how to create a new program in Cloud Service, refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
+   To learn how to create a new program in Cloud Service, refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)

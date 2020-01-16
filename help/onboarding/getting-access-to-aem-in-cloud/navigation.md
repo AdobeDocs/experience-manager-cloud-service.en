@@ -15,13 +15,13 @@ This will take you to the Cloud Manager login page.
 
 ## For Existing AMS Customers {#existing-aem}
 
-If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Service, you will see your existing program and can add programs to your Cloud Services.
+If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Service, you will see your existing program and can add programs to your Cloud Service.
 
-Refer to [Adding Cloud Services Program](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) for more details.
+Refer to [Adding a New Program in Cloud Service with Existing Programs](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) for more details.
 
 ## For New Cloud Services Customers {#new-cloud-services}
 
 If you are a new Cloud Service customer, then you will want to add a new program to your Cloud Service.
 
-Refer to [Adding a New Program](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) for more details.
+Refer to [Adding a New Program in Cloud Service with no Existing Programs](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) for more details.
 
