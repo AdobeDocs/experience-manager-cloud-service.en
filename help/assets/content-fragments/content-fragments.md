@@ -1,8 +1,6 @@
 ---
 title: Working with Content Fragments
-seo-title: Working with Content Fragments
 description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
-seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 ---
 
 # Working with Content Fragments{#working-with-content-fragments}

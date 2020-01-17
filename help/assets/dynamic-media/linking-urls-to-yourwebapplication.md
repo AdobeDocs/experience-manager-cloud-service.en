@@ -1,14 +1,6 @@
 ---
 title: Linking URLs to your web application
-seo-title: Linking URLs to your web application
 description: How to link URLs to your web application in dynamic media
-seo-description: How to link URLs to your web application in dynamic media
-uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 ---
 
 # Linking URLs to your web application {#linking-urls-to-your-web-application}

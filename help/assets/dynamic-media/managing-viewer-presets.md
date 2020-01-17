@@ -1,16 +1,6 @@
 ---
 title: Managing viewer presets
-seo-title: Managing viewer presets
 description: How to create and manage viewer presets
-seo-description: How to create and manage viewer presets
-uuid: 64fcf16a-7c4a-435b-bf1a-f27b8b39a715
-contentOwner: Rick Brough
-products: Skyline
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
-docset: Skyline
-
 ---
 
 # Managing Viewer Presets{#managing-viewer-presets}

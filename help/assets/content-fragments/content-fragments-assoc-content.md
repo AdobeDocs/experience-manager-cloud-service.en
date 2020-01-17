@@ -1,8 +1,6 @@
 ---
 title: Associated Content
-seo-title: Associated Content
 description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
-seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 ---
 
 # Associated Content{#associated-content}

@@ -1,8 +1,6 @@
 ---
 title: Content Fragments - Delete Considerations
-seo-title: Content Fragments - Delete Considerations
 description: Content Fragments - Delete Considerations
-seo-description: Content Fragments - Delete Considerations
 ---
 
 # Content Fragments - Delete Considerations{#content-fragments-delete-considerations}
