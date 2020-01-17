@@ -1,7 +1,6 @@
 ---
 title: Search Facets
 description: This article describes how to create, modify, and use search facets in AEM.
-
 ---
 
 # Search Facets {#search-facets}

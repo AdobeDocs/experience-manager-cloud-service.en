@@ -2,7 +2,6 @@
 title: Architecture of Adobe Experience Manager Assets as a Cloud Service
 description: Architecture of Adobe Experience Manager Assets as a Cloud Service
 contentOwner: AG
-
 ---
 
 # Architecture of Assets as a Cloud Service solution {#assets-architecture}

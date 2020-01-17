@@ -2,7 +2,6 @@
 title: Video renditions
 description: Video renditions
 contentOwner: AG
-
 ---
 
 # Video renditions {#video-renditions}

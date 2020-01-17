@@ -2,7 +2,6 @@
 title: Configuring Asset Upload Restrictions
 description: Learn how to configure Adobe Experience Manager (AEM) Assets to restrict the type of assets (files) that users can upload.
 contentOwner: AG
-
 ---
 
 # Configuring Asset Upload Restrictions {#configuring-asset-upload-restrictions}

@@ -2,7 +2,6 @@
 title: Migrate to Cloud Service from Adobe Experience Manager 6.x
 description: Migrate to Cloud Service from Adobe Experience Manager 6.x
 contentOwner: AG
-
 ---
 
 # Move to Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}

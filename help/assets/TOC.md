@@ -1,6 +1,6 @@
 ---
-product: Adobe Experience Manager as a Cloud Service
-sub-product: Adobe Experience Manager as a Cloud Service
+sub-product: AEM Assets as a Cloud Service
+user-guide-title: AEM Assets as a Cloud Service
 ---
 
 # Assets {#assets}

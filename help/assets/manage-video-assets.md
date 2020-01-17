@@ -2,7 +2,6 @@
 title: Manage video assets
 description: Learn how to upload, preview, annotate, and publish video assets.
 contentOwner: AG
-
 ---
 
 # Manage video assets {#manage-video-assets}

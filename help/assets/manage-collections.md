@@ -2,7 +2,6 @@
 title: Manage assets collections
 description: Understand the concept of collection in AEM Assets. Learn how to collections, manage, edit, and collections with other users.
 contentOwner: AG
-
 ---
 
 # Manage collections {#manage-collections}

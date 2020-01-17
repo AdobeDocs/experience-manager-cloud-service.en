@@ -1,12 +1,7 @@
 ---
 title: Integrating AEM Assets with InDesign Server
 description: Learn how to integrate AEM Assets with InDesign Server.
-uuid: 3b202615-7d8d-484d-83e3-f7eb49b47cc4
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 0ed8426d-731a-4bf2-87ef-a1faeb44aae0
-docset: aem65
-
 ---
 
 # Integrating AEM Assets with InDesign Server {#integrating-aem-assets-with-indesign-server}

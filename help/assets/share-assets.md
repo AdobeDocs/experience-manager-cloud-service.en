@@ -2,7 +2,6 @@
 title: Share assets, folders, and collections as a link
 description: This article describes how to share assets, folders, and collections within Experience Manager Assets as a hyperlink.
 contentOwner: AG
-
 ---
 
 # Share and distribute assets managed in Experience Manager {#share-assets-from-aem}

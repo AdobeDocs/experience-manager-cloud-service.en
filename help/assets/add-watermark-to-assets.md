@@ -2,7 +2,6 @@
 title: Add watermark to your digital assets
 description: Learn how to use the Watermarking feature to add a digital watermark to assets.
 contentOwner: AG
-
 ---
 
 # Watermarking {#watermarking}
