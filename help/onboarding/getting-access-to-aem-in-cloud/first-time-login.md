@@ -47,10 +47,8 @@ The landing page directs you to create your first program, as shown in the figur
    Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** (as opposed to **Experience Manager** for AMS programs). 
    
    >[!NOTE]
-   >For example, in the figure below, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
+   >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
-1. Click on **Add Program** from the **Programs & Products** screen to create a new program in Cloud Service.
+1. To learn how to add a program from the **Programs & Products** screen to create a new program in Cloud Service refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
 
-   ![](assets/first_timelogin2.png)
-
-   To learn how to create a new program in Cloud Service, refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)
+  
