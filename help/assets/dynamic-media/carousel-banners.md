@@ -257,7 +257,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
 >
 >If you are editing interactive images with hotspots and crop the image, your hotspots are removed.
 
-See also [Adding Image Maps](/help/assets/image-maps.md).
+<!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
 **To add Hotspots or Image Maps to an Image Banner**
 
