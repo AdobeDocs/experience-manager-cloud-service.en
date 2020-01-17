@@ -22,7 +22,7 @@ The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and prov
 
 ## Downloading and extracting the Tools {#extracting-the-sdk}
 
-The Dispatcher Tools can be downloaded from the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/dam/general/public/aemcloud) portal from a folder corresponding to the desired AEM version. Any new configuration available in that new dispatcher Tools version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
+The Dispatcher Tools can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal . Note that access to the SDK listings is limited to those with AEM Managed Services or AEM as a Cloud Service environments. Any new configuration available in that new dispatcher Tools version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
 
 **For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
 
