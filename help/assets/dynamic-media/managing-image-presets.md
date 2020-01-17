@@ -56,7 +56,7 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 
 The sub-assets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]**.
 
-See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file).
+<!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
 You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
 
@@ -129,9 +129,9 @@ If you intend to support the ingestion of INDD files so that you can generate dy
 
 For InDesign files, sub assets are extracted only if the Adobe InDesign server is integrated with AEM. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within AEM before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md).
+<!-- See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md). -->
 
-The Media Extraction process component in the `DAM Update Asset` workflow runs several preconfigured Extend Scripts to process InDesign files.
+The Media Extraction process component in the `DAM Update Asset` workflow runs several pre-configured Extend Scripts to process InDesign files.
 
 ![The ExtendScript paths in the arguments of Media Extraction process](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 

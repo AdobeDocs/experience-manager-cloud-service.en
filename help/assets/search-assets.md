@@ -2,6 +2,7 @@
 title: Search digital assets and images in AEM
 description: Learn how to find the required assets in AEM by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
+mini-toc-levels: 1
 ---
 
 # Search assets in AEM {#search-assets-in-aem}
@@ -13,7 +14,7 @@ AEM supports the following use cases and this article describes the usage, conce
 |Search assets|Configuration and administration|Work with search results|
 |--- |--- |--- |
 |[Basic searches](#searchbasics)|[Search index](#searchindex)|[Sort results](#sort)|
-|[Understand search UI](#searchui)|[Visual or similarity search](#configvisualsearch)|[Check properties and metadata of an asset](#checkinfo)|
+|[Understand search UI](#searchui)| |[Check properties and metadata of an asset](#checkinfo)|
 |[Search suggestions](#searchsuggestions)|[Mandatory metadata](#mandatorymetadata)|[Download](#download)|
 |[Understand search results and behavior](#searchbehavior)|[Modify search facets](#searchfacets)|[Bulk metadata updates](#metadataupdates)|
 |[Search rank and boosting](#searchrank)|[Text extraction](#extracttextupload)|[Smart collections](#collections)|
@@ -70,6 +71,7 @@ At times, you may see some unexpected assets in the search results. For more inf
 
 AEM can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrators for understand what search options are made available for your DAM repository and what restrictions your login may have.
 
+<!-- 
 ### Results with and without Enhanced Smart Tags {#withsmarttags}
 
 By default, AEM search combines the search terms with an AND clause. For example, consider searching for keywords woman running. Only the assets with both woman and running keywords in the metadata appear in the search results by default. The same behavior is retained when special characters (periods, underscores, or dashes) are used with the keywords. The following search queries return the same results:
@@ -84,6 +86,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 * Assets with `woman` and `running` keywords in the metadata (default behavior).
 
 * Assets smart tagged with either of the keywords (Smart Tags behavior).
+--> 
 
 ### Search ranking and boosting {#searchrank}
 
@@ -117,13 +120,14 @@ AEM provides various methods like filters that apply to the searched assets, to 
 
 Limit search results to a folder by adding a folder path in Filters panel
 
+<!--
 ### Find similar images {#visualsearch}
 
 To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [how to configure similarity search](#configvisualsearch).
 
 ![Find similar images using the option in the card view](assets/search_find_similar.png)
-
-Find similar images using the option in the card view
+*Figure: Find similar images using the option in the card view*
+-->
 
 ### Adobe Stock images {#adobestock}
 
@@ -295,19 +299,19 @@ Illustrating use of question mark wildcard in Asset search using an example
 **Exclude a keyword**: Use dash to search for assets that do not contain a keyword. For example, `running -shoe` query returns assets that contain `running`, but not `shoe`. Similarly, `camp -night` query returns assets that contain `camp` but not `night`. Note that `camp-night` query returns assets that contain both `camp` and `night`.
 
 ![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
-
-Use of dash to search for assets not containing an excluded keyword
+*Figure: Use of dash to search for assets not containing an excluded keyword*
 
 ## Configuration and administration tasks related to search functionality {#configadmin}
 
 ### Search index configurations {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See search index best practices, oak queries and indexing, and indexing best practices.
+Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
 
 ### Sort on Name column {#sortbyname}
 
 In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
 
+<!--
 ### Visual or similarity search {#configvisualsearch}
 
 Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
@@ -341,6 +345,8 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
+-->
+
 ### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
@@ -352,6 +358,8 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+
+<!-- Check with gklebus if this customization is possible in Cloud Service now
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -375,6 +383,8 @@ You can search for digital assets based on one or more of the following properti
 | Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
 | Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+
+--> 
 
 ## Work with asset search results {#aftersearch}
 
@@ -430,9 +440,12 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 **Too many search results**: To avoid getting too many search results, consider limiting the search results. For example, to search for assets in DAM, select `Location:Assets` in Omnisearch bar. For more search filters, see [scope of search](#scope).
 
-Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags).
+<!-- Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags). 
+-->
 
+<!--
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
+-->
 
 **No auto-complete suggestions for newly uploaded assets**: The metadata (titles, tags, and so on) of the recently uploaded assets is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar. AEM Assets waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions.
 

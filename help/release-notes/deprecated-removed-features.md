@@ -24,7 +24,7 @@ Customers are advised to review if they make use of the feature/capability in th
 | ------------ | ------------------ | ----------- |
 | Assets       | Asset ingestion and processing no longer uses `DAM Asset Update` workflow | Asset ingestion uses [asset microservices](/help/assets/asset-microservices-overview.md) now. |
 | Assets       | Upload assets directly to AEM - see [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) | [Direct binary upload](/help/assets/add-assets.md) is used in Experience Manager as a Cloud Service. For technical details, see [direct upload APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Assets       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in DAM Asset Update Workflow are not supported, including calling command-line tools like ImageMagick | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` workflow are not supported, including calling command-line tools like ImageMagick | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 
 ## Removed features {#removed-features}
 

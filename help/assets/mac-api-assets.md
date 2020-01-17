@@ -70,9 +70,7 @@ In AEM a folder has the following components:
 * Properties
 * Links
 
-## Available features {#available-features}
-
-The Assets HTTP API includes the following features:
+The Assets HTTP API provides the following features:
 
 * Retrieve a folder listing
 * Create a folder
@@ -90,13 +88,16 @@ The Assets HTTP API includes the following features:
 >
 >For the ease of readability the following examples omit the full cURL notation. In fact the notation does correlate with [Resty](https://github.com/micha/resty) which is a script wrapper for cURL.
 
+<!-- TBD: The Console Manager is not available now. So how to configure the below? 
+
 **Prerequisites**
 
 * Go to `https://[aem_server]:[port]/system/console/configMgr`.
 * Navigate to **Adobe Granite CSRF Filter**.
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
+-->
 
-### Retrieve a Folder Listing {#retrieve-a-folder-listing}
+## Retrieve a folder listing {#retrieve-a-folder-listing}
 
 Retrieves a Siren representation of an existing folder and of its child entities (subfolders or assets).
 
@@ -120,7 +121,7 @@ The class of the entity returned is assets/folder.
 
 Properties of contained entities are a subset of the full set of properties of each entity. In order to obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
 
-### Create a Folder {#create-a-folder}
+## Create a folder {#create-a-folder}
 
 Creates a new `sling`: `OrderedFolder` at the given path. If a &#42; is given instead of a node name the servlet will use the parameter name as node name. Accepted as request data is either a Siren representation of the new folder or a set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`, useful for creating a folder directly from an HTML form. Additionally, properties of the folder can be specified as URL query parameters.
 
@@ -151,7 +152,7 @@ POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Create an Asset {#create-an-asset}
+## Create an asset {#create-an-asset}
 
 Creates a DAM asset at the given path with the given file. If a &#42; is given instead of a node name the servlet will use the parameter name or the file name as node name.
 
@@ -181,7 +182,7 @@ POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Update Asset binary {#update-asset-binary}
+## Update an asset binary {#update-asset-binary}
 
 Updates an Assets binary (rendition with name original). This will trigger the default Asset workflow if configured.
 
@@ -200,7 +201,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Update Asset metadata {#update-asset-metadata}
+## Update metadata of an asset {#update-asset-metadata}
 
 Updates the Asset metadata properties.
 
@@ -219,7 +220,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"cl
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Create an Asset Rendition {#create-an-asset-rendition}
+## Create an asset rendition {#create-an-asset-rendition}
 
 Creates a new asset rendition for an asset. If request parameter name is not provided the file name is used as rendition name.
 
@@ -249,7 +250,7 @@ POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"fil
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Update an Asset Rendition {#update-an-asset-rendition}
+## Update an asset rendition {#update-an-asset-rendition}
 
 Updates respectively replaces an asset rendition with the new binary data.
 
@@ -268,7 +269,7 @@ PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type:
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Create an Asset Comment {#create-an-asset-comment}
+## Create an asset comment {#create-an-asset-comment}
 
 Creates a new asset comment.
 
@@ -292,7 +293,7 @@ POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"ann
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Copy a Folder or Asset {#copy-a-folder-or-asset}
+## Copy a folder or an asset {#copy-a-folder-or-asset}
 
 Copies a folder or asset at the given path to a new destination.
 
@@ -319,7 +320,7 @@ COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Move a Folder or Asset {#move-a-folder-or-asset}
+## Move a folder or an asset {#move-a-folder-or-asset}
 
 Moves a folder or asset at the given path to a new destination.
 
@@ -346,7 +347,7 @@ MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Delete a Folder, Asset, or Rendition {#delete-a-folder-asset-or-rendition}
+## Delete a folder, an asset, or a rendition {#delete-a-folder-asset-or-rendition}
 
 Deletes a resource (-tree) at the given path.
 

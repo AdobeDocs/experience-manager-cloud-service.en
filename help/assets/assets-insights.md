@@ -6,6 +6,8 @@ contentOwner: AG
 
 # Asset Insights{#asset-insights}
 
+<!-- TBD: Add uicontrol tags  -->
+
 The Asset Insights feature enables you to track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. It helps derive insights regarding their performance and popularity.
 
 Assets Insights captures user activity details, such as the number of times an image is rated, clicked, and impressions (number of times an image is loaded on the website). It assigns scores to images based on these statistics. You can use the scores and performance statistics to select popular images for inclusion in catalogs, marketing campaigns, and so on. You can even formulate archival and license renewal policies based on these statistics.
@@ -22,15 +24,15 @@ To let Asset Insights display usage statistics for assets, first configure the f
 
 You can view the Asset Insights scores from the metadata page.
 
-1. From the Assets user interface (UI), select the image and then tap/click the **Properties** icon from the toolbar.
-1. From the Properties page, tap/click the **Insights** tab.
-1. Review the usage details for the asset in the **Insights** tab. The **Score** section describes the total asset usage and performance sores of an asset .
+1. From the Assets user interface (UI), select the image and then tap **[!UICONTROL Properties]** from the toolbar.
+1. From the Properties page, tap **[!UICONTROL Insights]**.
+1. Review the usage details for the asset in the **[!UICONTROL Insights]** tab. The **[!UICONTROL Score]** section describes the total asset usage and performance sores of an asset .
 
    Usage score describes the numbers of times asset is used in various solutions.
 
-   The **Impressions** score is the number of times the asset is loaded on the web site. The number displayed under **Clicks** is the number of times the asset is clicked.
+   The **[!UICONTROL Impressions]** score is the number of times the asset is loaded on the web site. The number displayed under **[!UICONTROL Clicks]** is the number of times the asset is clicked.
 
-1. Review the **Usage Statistics** section to know which entities the asset was part of and which creative solutions recently used it. The higher the usage, the greater the chances that the asset is popular among users. Usage data is displayed under the following heads:
+1. Review the **[!UICONTROL Usage Statistics]** section to know which entities the asset was part of and which creative solutions recently used it. The higher the usage, the greater the chances that the asset is popular among users. Usage data is displayed under the following heads:
 
     * **Asset**: The number of times the asset was part of a collection or compound asset
     * **Web & Mobile**: The number of times the asset was part of websites and apps
@@ -43,7 +45,7 @@ You can view the Asset Insights scores from the metadata page.
    >
    >Because the Asset Insights feature typically fetches the Solutions data from Adobe Analytics in a periodic manner, the Solutions section may not displaythemost recent data. The time period for which the data is displayed depends the schedule of the fetch operation that Asset Insights runs to retrieve Analytics data.
 
-1. To view performance statistics for the asset graphically over a period of time, select period in the **Performance Statistics** section. Details, including clicks and impressions are displayed as trend lines of a graph.
+1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. Details, including clicks and impressions are displayed as trend lines of a graph.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -51,24 +53,24 @@ You can view the Asset Insights scores from the metadata page.
    >
    >Unlike the data in the Solutions section, the Performance Statistics section displays the most recent data.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **Get Embed Code** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md).
+1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **[!UICONTROL Get Embed Code]** below the asset thumbnail. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
 ## View aggregate statistics for images {#viewing-aggregate-statistics-for-images}
 
-You can view scores of all assets within a folder simultaneously using **Insights View**.
+You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
 1. In the Assets UI, navigate to the folder containing the assets for which you want to view insights.
-1. Tap/click the Layout icon from the toolbar, and then choose **Insights View**.
+1. Tap/click the Layout icon from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
 ## Schedule background job {#scheduling-background-job}
 
-Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **Adobe CQ DAM Asset Performance Report Sync Job** service from the web console.
+Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
-1. Tap the AEM logo, and go to **Tools** &gt; **Operations** &gt; **Web Console**.
-1. Open the **Adobe CQ DAM Asset Performance Report Sync Job** service configuration.
+1. Tap the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -82,30 +84,29 @@ Adobe Experience Manager (AEM) Assets fetches usage data around AEM assets used 
 >
 >Insights are only supported and provided for images.
 
-1. In AEM, click **Tools** &gt; **Assets**.
+1. In AEM, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Click the **Insights Configuration** card.
+1. Click the **[!UICONTROL Insights Configuration]** card.
 1. In the wizard, select a data center and provide your credentials including the name of your organization, user name, and Shared Secret.
 
    ![Configure Adobe Analytics for Assets Insights in AEM](assets/insights_config2.png)
    *Figure: Configure Adobe Analytics for Assets Insights in AEM*
 
-1. Click/tap **Authenticate**.
-1. After AEM authenticates your credentials, from the **Report Suite** list, choose an Adobe Analytics report suite from where you want Asset Insights to fetch data. Click **Add**.
-1. After AEM sets up your report suite, click/tap **Done.**
+1. Click/tap **[!UICONTROL Authenticate]**. After AEM authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an Adobe Analytics report suite from where you want Asset Insights to fetch data. Click **[!UICONTROL Add]**.
+1. After AEM sets up your report suite, tap **[!UICONTROL Done]**.
 
 ### Page Tracker {#page-tracker}
 
-After you configure your Adobe Analytics account, the Page Tracker code is generated for you. To enable Assets Insights to track AEM assets used in third-party websites, include the page tracker code in the website code. Use the Page Tracker utility in AEM Assets to generate the page tracker code. For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md).
+After you configure your Adobe Analytics account, the Page Tracker code is generated for you. To enable Assets Insights to track AEM assets used in third-party websites, include the page tracker code in the website code. Use the Page Tracker utility in AEM Assets to generate the page tracker code. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. In AEM, click **Tools** &gt; **Assets**.
+1. In AEM, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. From the **Navigation** page, click the **Insights Page Tracker** card.
-1. Click the **Download** icon to download the page tracker code.
+1. From the **[!UICONTROL Navigation]** page, click the **[!UICONTROL Insights Page Tracker]** card.
+1. Click **[!UICONTROL Download]** to download the page tracker code.
 
 <!--
 
