@@ -12,19 +12,19 @@ This section describes how to structure the AEM as a Cloud Service Apache and Di
 >[!NOTE]
 >Windows users will need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
 
-## Dispatcher SDK {#dispatcher-sdk}
+## Dispatcher Tools {#dispatcher-sdk}
 
-The Dispatcher SDK provides:
+The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and provide:
 
 * A vanilla file structure containing the configuration files to include in a maven project for dispatcher;
 * Tooling for customers to validate a dispatcher configuration locally;
 * A Docker image that brings up the dispatcher locally.
 
-## Downloading and extracting the SDK {#extracting-the-sdk}
+## Downloading and extracting the Tools {#extracting-the-sdk}
 
-The Dispatcher SDK can be downloaded from the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/dam/general/public/aemcloud) portal from a folder corresponding to the desired AEM version. Any new configuration available in that new dispatcher SDK version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
+The Dispatcher Tools can be downloaded from the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/dam/general/public/aemcloud) portal from a folder corresponding to the desired AEM version. Any new configuration available in that new dispatcher Tools version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
 
-**For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher SDK files underneath the directory you stored it to (where `version` is the version of the dispatcher SDK).
+**For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
 
 ```bash
 $ chmod +x DispatcherSDKv<version>.sh
@@ -227,7 +227,7 @@ The table below shows the supported apache modules:
 | mod_substitute | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | mod_userdir| [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing "validator whitelist" in the SDK, as described in Dispatcher SDK documentation.
+Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing "validator whitelist" in the SDK, as described in Dispatcher Tools documentation.
 
 The whitelist contains a list of Apache directives that are permitted in a customer configuration. If a directive is not whitelisted,the tool logs an error and returns a non-zero exit code. If no whitelist is given on the command line (which is the way it should be invoked), the tool uses a default whitelist that Cloud Manager will use for validation before deploying to Cloud environments.
 
@@ -733,7 +733,7 @@ validator tool documentation.
 
 ### Test your configuration with a local deployment (requires Docker installation)
 
-Using the script `docker_run.sh` in the AEM as a Cloud Service Dispatcher SDK, you can test that
+Using the script `docker_run.sh` in the AEM as a Cloud Service Dispatcher Tools, you can test that
 your configuration does not contain any other error that would only show up in 
 deployment:
 

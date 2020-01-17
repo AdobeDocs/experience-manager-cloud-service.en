@@ -39,7 +39,7 @@ To get you up and running quickly:
 
    Start by identifying dynamic variables used by the existing quick view implementation so that you can enter hotspots and image map data properly during the carousel banner creation process in AEM Assets.
 
-<!-- OBSOLETE?
+<!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
    >[!NOTE]
    >
@@ -92,7 +92,7 @@ Start by identifying dynamic variables used by the existing quick view implement
 
 When you add hotspots or image maps to a banner image in AEM Assets you need to assign a SKU and optional additional variables to each hotspot or image map. Such variables are used later to match hotspots or image maps with quick view content.
 
-<!--
+<!-- LEAVE; COMMERCE BEING ADDED LATER
 
 >[!NOTE]
 >
@@ -279,8 +279,8 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
 
     * Tap **[!UICONTROL Quickview]**.
 
-        * If you are an AEM Sites and Ecommerce customer, tap the Product Picker icon (magnifying glass) to open the Select Product page. Tap the product you want to use, then tap the check mark in the upper-right corner of the page to return to the Carousel Banner Editor.
-        * If you are not an AEM Sites or Ecommerce customer
+        * If you are an AEM Sites <!-- and Ecommerce customer-->, tap the Product Picker icon (magnifying glass) to open the Select Product page. Tap the product you want to use, then tap the check mark in the upper-right corner of the page to return to the Carousel Banner Editor.
+        * If you are not an AEM Sites <!-- or Ecommerce customer -->
 
             * See [Identifying hotspot variables](#identifying-hotspot-and-image-map-variables) as you may want to define these variables.
             * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the quick view template so that the system knows to associate the tapped hotspot with a particular SKU's quick view.
