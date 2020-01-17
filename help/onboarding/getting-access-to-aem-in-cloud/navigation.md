@@ -19,7 +19,7 @@ This will take you to the Cloud Manager login page.  Upon successful login, you 
 
 If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Service, you will see your existing program(s) and the **Add Program** button on the top right corner of the landing page. 
 
-If you do not see the **Add Program** button and have questions about access to cloud service, please contact your Adobe representative.
+If you do not see the **Add Program** button and have questions about access to Cloud Service, please contact your Adobe representative.
 
 Refer to [Adding a New Program in Cloud Service with Existing Programs](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) for more details.
 
