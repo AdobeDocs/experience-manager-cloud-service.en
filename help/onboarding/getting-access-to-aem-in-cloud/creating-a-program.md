@@ -18,7 +18,7 @@ In the event of first-time access to Cloud Manager or if no programs exist in th
 
 >[!NOTE]
    >
-   >The User is displayed with one or either program types depending on whether or not the corresponding credits are available in the tenant. The cloud-native solution gives the user with requisite permissions the ability to create a program on a self-service model.
+   >The cloud-native solution gives the user with requisite permissions the ability to create a program on a self-service model.
 
 
 Depending upon the user’s objective in creating the program within the bounds of what is available to the specific customer/organization, a program creation wizard will ask the user to submit one or more details.

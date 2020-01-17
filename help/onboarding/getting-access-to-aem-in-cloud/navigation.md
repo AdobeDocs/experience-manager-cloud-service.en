@@ -7,9 +7,9 @@ description: Navigation - Cloud Services
 
 AEM is a cloud-native solution available as an innovative Cloud Service. 
 
-Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to Cloud Manager landing page which is also accessible through [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/). 
+Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to Cloud Manager login page which is also accessible through [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/). 
 
-This will take you to the Cloud Manager login page.  Upon successful login, you will be directed to the landing page of Cloud Manager.
+Upon successful login, you will be directed to the landing page of Cloud Manager as shown below.
 
    ![](assets/first_timelogin1.png)
 
