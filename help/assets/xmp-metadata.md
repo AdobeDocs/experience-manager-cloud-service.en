@@ -2,7 +2,6 @@
 title: XMP metadata
 description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by AEM as a standardized format for creation, processing, and interchange of metadata.
 contentOwner: AG
-
 ---
 
 # XMP metadata {#xmp-metadata}

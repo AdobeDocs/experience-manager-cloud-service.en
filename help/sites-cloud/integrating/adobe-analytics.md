@@ -1,8 +1,6 @@
 ---
 title: Integrating with Adobe Analytics
-seo-title: Integrating with Adobe Analytics
 description: Integrating with Adobe Analytics 
-seo-description: Integrating with Adobe Analytics 
 ---
 
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}

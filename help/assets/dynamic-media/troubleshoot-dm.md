@@ -1,15 +1,6 @@
 ---
 title: Troubleshooting Dynamic Media
-seo-title: Troubleshooting Dynamic Media
 description: Troubleshooting Dynamic Media.
-seo-description: Troubleshooting Dynamic Media.
-uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: Skyline
-
 ---
 
 # Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}

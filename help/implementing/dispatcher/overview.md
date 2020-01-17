@@ -1,8 +1,6 @@
 ---
 title: Dispatcher in the Cloud
-seo-title: Dispatcher in the Cloud
 description: Dispatcher in the Cloud 
-seo-description: Dispatcher in the Cloud 
 ---
 
 # Dispatcher in the Cloud {#Dispatcher-in-the-cloud}

@@ -1,8 +1,6 @@
 ---
 title: Deploying to AEM as a Cloud Service
-seo-title: Deploying to AEM as a Cloud Service
 description: Deploying to AEM as a Cloud Service 
-seo-description: Deploying to AEM as a Cloud Service
 ---
 
 # Deploying to AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}

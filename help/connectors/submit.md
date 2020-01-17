@@ -1,3 +1,8 @@
+---
+title: Submitting an AEM Connector
+description: Submitting an AEM Connector
+---
+
 Submitting an AEM Connector
 ===========================
 

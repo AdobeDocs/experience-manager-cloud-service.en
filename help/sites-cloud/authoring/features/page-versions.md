@@ -1,12 +1,6 @@
 ---
 title: Working with Page Versions
-seo-title: Working with Page Versions
 description: Create, compare, and restore versions of a page
-seo-description: Create, compare, and restore versions of a page
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Working with Page Versions {#working-with-page-versions}

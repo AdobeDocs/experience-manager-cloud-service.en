@@ -1,12 +1,6 @@
 ---
 title: Page Diff
-seo-title: Page Diff
 description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 ---
 
 # Page Diff {#page-diff}

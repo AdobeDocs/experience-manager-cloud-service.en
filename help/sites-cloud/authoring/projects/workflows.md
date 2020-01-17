@@ -1,12 +1,6 @@
 ---
 title: Working with Project Workflows
-seo-title: Working with Project Workflows
 description: A variety of project workflows are available out of the box.
-seo-description: A variety of project workflows are available out of the box.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
 ---
 
 # Working with Project Workflows {#working-with-project-workflows}

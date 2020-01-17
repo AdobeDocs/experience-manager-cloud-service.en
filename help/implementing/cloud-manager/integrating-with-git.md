@@ -1,8 +1,6 @@
 ---
 title: Integrating with Git
-seo-title: Integrating with Git - Cloud Services
 description: Integrating with Git - Cloud Services
-seo-description: Integrating with Git - Cloud Services 
 ---
 
 # Git Integration with Adobe Cloud Manager {#git-integration}

@@ -1,8 +1,6 @@
 ---
 title: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service.
-seo-title: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service.
 description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service. 
-seo-description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service. 
 ---
 
 # Release Information {#release-information}

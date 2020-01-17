@@ -1,11 +1,6 @@
 ---
 title: Quick Start Guide to Authoring Pages
-seo-title: Quick Start Guide to Authoring Pages
 description: A quick, high-level guide to get you started authoring page content
-seo-description: A quick, high-level guide to get you started authoring page content
-contentOwner: Chris Bohnert
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Quick Start Guide to Authoring Pages {#quick-guide-to-authoring-pages}

@@ -1,8 +1,6 @@
 ---
 title: Deprecated and removed features
 description: Release notes specific to deprecated and removed features in Adobe Experience Manager as a Cloud Service.
-topic-tags: release-notes
-
 ---
 
 # Deprecated and removed features {#deprecated-and-removed-features}

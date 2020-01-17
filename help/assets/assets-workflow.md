@@ -2,7 +2,6 @@
 title: Apply workflows to assets
 description: Learn how to apply workflows to assets, folders, and collections in Adobe Experience Manager Assets.
 contentOwner: AG
-
 ---
 
 # Applying Workflows to Assets {#applying-workflows-to-assets}

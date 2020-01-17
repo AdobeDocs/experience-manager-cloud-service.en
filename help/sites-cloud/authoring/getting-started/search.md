@@ -1,12 +1,6 @@
 ---
 title: Search
-seo-title: Search
 description: Find your content faster with comprehensive search
-seo-description: Find your content faster with comprehensive search
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 ---
 
 # Search {#search-feature}

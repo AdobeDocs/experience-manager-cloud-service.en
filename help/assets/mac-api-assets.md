@@ -2,7 +2,6 @@
 title: Assets HTTP API
 description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
 contentOwner: AG
-
 ---
 
 # Assets HTTP API {#assets-http-api}

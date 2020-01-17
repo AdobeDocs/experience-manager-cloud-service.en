@@ -1,8 +1,6 @@
 ---
 title: Custom Code Quality Rules - Cloud Services
-seo-title: Custom Code Quality Rules - Cloud Services
 description: Custom Code Quality Rules - Cloud Services
-seo-description: Custom Code Quality Rules - Cloud Services 
 ---
 
 # Custom Code Quality Rules {#custom-code-quality-rules} 

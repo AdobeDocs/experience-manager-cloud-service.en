@@ -1,8 +1,6 @@
 ---
 title: Introduction to Adobe Experience Manager as a Cloud Service - Terminology
-seo-title: Introduction to Adobe Experience Manager as a Cloud Service - Terminology
 description: Introduction to Adobe Experience Manager as a Cloud Service - Terminology. 
-seo-description: Introduction to Adobe Experience Manager as a Cloud Service - Terminology. 
 ---
 
 # Adobe Experience Manager as a Cloud Service - Terminology {#adobe-experience-manager-as-a-cloud-service-terminology}

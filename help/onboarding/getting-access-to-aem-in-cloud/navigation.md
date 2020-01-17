@@ -1,8 +1,6 @@
 ---
 title: Navigation
-seo-title: Navigation - Cloud Services
 description: Navigation - Cloud Services
-seo-description: Navigation - Cloud Services 
 ---
 
 # Navigation {#navigation} 

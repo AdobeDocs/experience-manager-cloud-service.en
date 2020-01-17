@@ -1,6 +1,6 @@
 ---
-product: Adobe Experience Manager as a Cloud Service
-sub-product: Adobe Experience Manager as a Cloud Service
+sub-product: Adobe Experience Manager as a Cloud Service Help
+user-guide-title: Adobe Experience Manager as a Cloud Service Help
 ---
 
 # Experience Manager as a Cloud Service Help {#landing}

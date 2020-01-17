@@ -1,18 +1,6 @@
 ---
 title: Develop a Repository Structure Package   
 description: Adobe Experience Manager as a Cloud Service Maven projects requires a Repository Structure Sub-package definition whose sole purpose is to define the JCR repository roots in which the project's Code sub-packages deploy into.
-seo-title: Develop a Repository Structure Package   
-seo-description: Adobe Experience Manager as a Cloud Service Maven projects requires a Repository Structure Sub-package definition whose sole purpose is to define the JCR repository roots in which the project's Code sub-packages deploy into.
-kt: 3796
-product: experience-manager
-sub-product: cloud-manager
-feature: cloud-manager
-topics: cicd, development
-version: 
-doc-type: article, code
-activity: develop
-team: TM
-audience:  developer
 ---
  
 # Develop a Repository Structure Package

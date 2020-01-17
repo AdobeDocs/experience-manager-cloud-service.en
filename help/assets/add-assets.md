@@ -1,7 +1,6 @@
 ---
 title: Add your digital assets to Adobe Experience Manager
 description: Add your digital assets to Adobe Experience Manager as a Cloud Service
-
 ---
 
 # Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}

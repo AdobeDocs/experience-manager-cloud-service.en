@@ -1,8 +1,6 @@
 ---
 title: Integrating with Adobe Target
-seo-title: Integrating with Adobe Target
 description: Integrating with Adobe Target 
-seo-description: Integrating with Adobe Target
 ---
 
 # Integrating with Adobe Target{#integrating-with-adobe-target}

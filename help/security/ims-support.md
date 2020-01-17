@@ -1,8 +1,6 @@
 ---
 title: IMS Support for Adobe Experience Manager as a Cloud Service
-seo-title: IMS Support for Adobe Experience Manager as a Cloud Service
 description: IMS Support for Adobe Experience Manager as a Cloud Service 
-seo-description: IMS Support for Adobe Experience Manager as a Cloud Service 
 ---
 
 # IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}

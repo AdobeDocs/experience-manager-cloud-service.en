@@ -1,12 +1,6 @@
 ---
 title: Components
-seo-title: Components
 description: Components are the fundamental authoring building block of content pages in AEM
-seo-description: Components are the fundamental authoring building block of content pages in AEM
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Components {#components}

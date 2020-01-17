@@ -1,10 +1,6 @@
 ---
 title: Known Issues
-seo-title: Known Issues
 description: Release notes specific to the Known Issues with Adobe Experience Manager as a Cloud Service
-seo-description: Release notes specific to the Known Issues with Adobe Experience Manager as a Cloud Service
-topic-tags: release-notes
-
 ---
 
 # Known issues {#known-issues}

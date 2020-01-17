@@ -1,8 +1,6 @@
 ---
 title: Variations - Authoring Fragment Content
-seo-title: Variations - Authoring Fragment Content
 description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
-seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 ---
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}

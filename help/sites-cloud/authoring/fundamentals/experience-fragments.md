@@ -1,8 +1,6 @@
 ---
 title: Experience Fragments
-seo-title: Adobe Experience Manager as a Cloud Service Experience Fragments
 description: Use Adobe Experience Manager as a Cloud Service Experience Fragments to make your experiences reusable and flexible.
-seo-description: Use Adobe Experience Manager as a Cloud Service Experience Fragments to make your experiences reusable and flexible.
 ---
 
 # Experience Fragments {#experience-fragments}

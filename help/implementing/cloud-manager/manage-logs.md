@@ -1,8 +1,6 @@
 ---
 title: Manage Logs - Cloud Services
-seo-title: Manage Logs - Cloud Services
 description: Manage Logs - Cloud Services
-seo-description: Manage Logs - Cloud Services 
 ---
 
 # Manage Logs - Cloud Services {#manage-logs} 

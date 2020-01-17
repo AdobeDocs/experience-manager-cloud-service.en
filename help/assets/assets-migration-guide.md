@@ -2,7 +2,6 @@
 title: Assets Migration Guide
 description: Describes how to bring assets into AEM, apply metadata, generate renditions, and activate them to publish instances.
 contentOwner: AG
-
 ---
 
 # Assets Migration Guide {#assets-migration-guide}

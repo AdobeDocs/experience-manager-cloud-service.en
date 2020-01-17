@@ -1,8 +1,6 @@
 ---
-title: To be completed
-seo-title: To be completed
-description: To be completed 
-seo-description: To be completed 
+title: Indexing
+description: Indexing 
 ---
 
 # Indexing {#indexing}

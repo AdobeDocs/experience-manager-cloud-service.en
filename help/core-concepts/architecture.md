@@ -1,8 +1,6 @@
 ---
 title: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service
-seo-title: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service
 description: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service. 
-seo-description: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service. 
 ---
 
 # An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}

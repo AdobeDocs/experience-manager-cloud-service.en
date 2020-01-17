@@ -2,7 +2,6 @@
 title: Configure and use asset microservices for asset processing
 description: Learn how to configure and use the cloud-native asset microservices to process assets at scale.
 contentOwner: AG
-
 ---
 
 # Get started using asset microservices {#get-started-using-asset-microservices}

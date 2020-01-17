@@ -1,6 +1,6 @@
 ---
-product: Adobe Experience Manager as a Cloud Service
-sub-product: Adobe Experience Manager as a Cloud Service
+sub-product: Onboarding to AEM as a Cloud Service
+user-guide-title: Onboarding to AEM as a Cloud Service
 ---
 
 # Onboarding {#onboarding}
