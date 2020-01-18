@@ -1,6 +1,6 @@
 ---
 title: Navigation
-description: Navigation - Cloud Services
+description: Navigation - Cloud Service
 ---
 
 # Navigation {#navigation} 

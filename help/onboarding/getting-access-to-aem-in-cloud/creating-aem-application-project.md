@@ -1,6 +1,6 @@
 ---
-title: AEM Application Project - Cloud Services
-description: AEM Application Project - Cloud Services
+title: AEM Application Project - Cloud Service
+description: AEM Application Project - Cloud Service
 ---
 
 # Create an AEM Application Project {#aem-application-project} 
