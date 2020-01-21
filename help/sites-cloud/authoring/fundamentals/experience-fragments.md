@@ -58,6 +58,7 @@ Experience Fragments should be used:
 
 It is recommended to:
 * use folders to organize your Experience Fragments, 
+
 * [configure the allowed templates on these folders](#configure-allowed-templates-folder).
 
 Creating folders allows you to:
