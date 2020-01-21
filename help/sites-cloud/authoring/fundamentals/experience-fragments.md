@@ -266,7 +266,7 @@ To create a new Building Block:
 
 1. In the Experience Fragment editor, select the components you want to re-use:
 
-   ![Select component for Buil_ding_ Block](/help/sites-cloud/authoring/assets/xf-09.png)
+   ![Select component for Building Block](/help/sites-cloud/authoring/assets/xf-09.png)
 
 1. From the components toolbar, select **Convert to building block**:
 
