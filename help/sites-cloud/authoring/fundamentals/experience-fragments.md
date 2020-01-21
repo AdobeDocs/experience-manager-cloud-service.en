@@ -88,7 +88,8 @@ See:
 To create and configure a folder for your Experience Fragments it is recommended to:
 
 1. [Create a folder](/help/sites-cloud/authoring/fundamentals/managing-pages.html#creating-a-new-folder).
-2. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
+
+1. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
@@ -133,11 +134,11 @@ To create and configure a folder for your Experience Fragments it is recommended
 
 1. Navigate to the required **Experience Fragments** console.
 
-2. Select **Configuration options**:
+1. Select **Configuration options**:
 
    ![Configuration button](/help/sites-cloud/authoring/assets/xf-18.png)
 
-3. Specify the required templates in the **Configure Experience Fragments** dialog:
+1. Specify the required templates in the **Configure Experience Fragments** dialog:
 
    ![Configure Experience Fragments](/help/sites-cloud/authoring/assets/xf-19.png)
 
@@ -148,7 +149,7 @@ To create and configure a folder for your Experience Fragments it is recommended
    >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
    -->
 
-4. Select **Save**.
+1. Select **Save**.
 
 
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
