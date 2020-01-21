@@ -123,7 +123,7 @@ To create and configure a folder for your Experience Fragments it is recommended
    >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
    -->
 
-2. Select **Save and Close**.
+1. Select **Save and Close**.
 
 ### Configure the Allowed Templates for your Instance {#configure-allowed-templates-instance}
 
