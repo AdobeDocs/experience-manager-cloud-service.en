@@ -75,7 +75,6 @@ Creating folders allows you to:
   >
   >You can use the [template editor](/help/sites-cloud/authoring/features/templates.md) to create your own template. 
 
-
 The WKND project structures some Experience Fragments according to `Contributors`. The structure used also illustrates how other features, such as Multi Site Management (including language copies), can be used. 
 
 See:
