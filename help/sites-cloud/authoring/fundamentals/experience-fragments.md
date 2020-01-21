@@ -88,7 +88,7 @@ See:
 
 To create and configure a folder for your Experience Fragments it is recommended to:
 
-1. [Create a folder](/help/sites-cloud/authoring/fundamentals/managing-pages.html#creating-a-new-folder).
+1. [Create a folder](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder).
 
 1. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
 
