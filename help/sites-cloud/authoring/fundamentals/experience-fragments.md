@@ -58,7 +58,7 @@ Experience Fragments should be used:
 
 It is recommended to:
 * use folders to organize your Experience Fragments, 
-* [configure the allowed templates](#configuring-allowed-templates) on these folders.
+* [configure the allowed templates on these folders](#configure-allowed-templates-folder).
 
 Creating folders allows you to:
 
@@ -68,7 +68,7 @@ Creating folders allows you to:
   >
   >It is not necessary to align the structure of your Experience Fragments with the page structure of your site.
 
-* [allocate the allowed templates at the folder level](#configuring-allowed-templates)
+* [allocate the allowed templates at the folder level](#configure-allowed-templates-folder)
 
   >[!NOTE]
   >
@@ -85,20 +85,55 @@ See:
 
 ## Creating and Configuring a Folder for your Experience Fragments {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
-To create and configure a folder for your Experience Fragments:
+To create and configure a folder for your Experience Fragments it is recommended to:
 
 1. [Create a folder](/help/sites-cloud/authoring/fundamentals/managing-pages.html#creating-a-new-folder).
-2. [Configure the allowed Experience Fragment templates for that folder](onfiguring-allowed-templates).
+2. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
 
-### Configuring Allowed Templates {#configuring-allowed-templates}
+### Configure the Allowed Templates for your Folder {#configure-allowed-templates-folder}
+
+>[!NOTE]
+>
+>This is the recommended method for specifying the **Allowed Templates**, as the values will not be overriden upon upgrade.
 
 1. Navigate to the required **Experience Fragments** folder.
 
-1. Select **Configuration options**:
+1. Select the folder, and then **Properties**.
+
+1. Specify the regular expression for retrieving the required templates in the **Allowed Templates** field.
+   
+   For example:
+   `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
+   
+   See:
+   `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
+
+   ![Experience Fragment Properties - Allowed Templates](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
+
+   >[!NOTE]
+   >
+   >See Templates for Experience Fragments for further details.
+   <!--
+   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
+   -->
+
+2. Select **Save and Close**.
+
+### Configure the Allowed Templates for your Instance {#configure-allowed-templates-instance}
+
+>[!CAUTION]
+>
+>It is not recommended to change the **Allowed Templates** by this method, as the templates specified can be changed upon upgrade.
+>
+>Please use this dialog for information purposes only.
+
+1. Navigate to the required **Experience Fragments** console.
+
+2. Select **Configuration options**:
 
    ![Configuration button](/help/sites-cloud/authoring/assets/xf-18.png)
 
-1. Specify the required templates in the **Configure Experience Fragments** dialog:
+3. Specify the required templates in the **Configure Experience Fragments** dialog:
 
    ![Configure Experience Fragments](/help/sites-cloud/authoring/assets/xf-19.png)
 
@@ -109,7 +144,8 @@ To create and configure a folder for your Experience Fragments:
    >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
    -->
 
-1. Select **Save**.
+4. Select **Save**.
+
 
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
 
