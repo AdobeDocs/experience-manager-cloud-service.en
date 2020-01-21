@@ -54,6 +54,63 @@ Experience Fragments should be used:
   * Sharing commerce-related content on social media channels at scale. <!-- Sharing commerce-related content on [social media](/help/sites-developing/experience-fragments.md#social-variations) channels at scale. -->
   * Making touchpoints transactional.
 
+## Organizing your Experience Fragments {#organizing-your-experience-fragments}
+
+It is recommended to:
+* use folders to organize your Experience Fragments, 
+* [configure the allowed templates](#configuring-allowed-templates) on these folders.
+
+Creating folders allows you to:
+
+* create a meaningful structure for your Experience Fragments; for example, according to classification
+
+  >[!NOTE]
+  >
+  >It is not necessary to align the structure of your Experience Fragments with the page structure of your site.
+
+* [allocate the allowed templates at the folder level](#configuring-allowed-templates)
+
+  >[!NOTE]
+  >
+  >You can use the [template editor](/help/sites-cloud/authoring/features/templates.md) to create your own template. 
+
+
+The WKND project structures some Experience Fragments according to `Contributors`. The structure used also illustrates how other features, such as Multi Site Management (including language copies), can be used. 
+
+See:
+
+`http://localhost:4502/aem/experience-fragments.html/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master`
+
+   ![Folders for Experience Fragments](/help/sites-cloud/authoring/assets/xf-folders.png)
+
+## Creating and Configuring a Folder for your Experience Fragments {#creating-and-configuring-a-folder-for-your-experience-fragments}
+
+To create and configure a folder for your Experience Fragments:
+
+1. [Create a folder](/help/sites-cloud/authoring/fundamentals/managing-pages.html#creating-a-new-folder).
+2. [Configure the allowed Experience Fragment templates for that folder](onfiguring-allowed-templates).
+
+### Configuring Allowed Templates {#configuring-allowed-templates}
+
+1. Navigate to the required **Experience Fragments** folder.
+
+1. Select **Configuration options**:
+
+   ![Configuration button](/help/sites-cloud/authoring/assets/xf-18.png)
+
+1. Specify the required templates in the **Configure Experience Fragments** dialog:
+
+   ![Configure Experience Fragments](/help/sites-cloud/authoring/assets/xf-19.png)
+
+   >[!NOTE]
+   >
+   >See Templates for Experience Fragments for further details.
+   <!--
+   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
+   -->
+
+1. Select **Save**.
+
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
 
 To create an Experience Fragment:
@@ -62,24 +119,16 @@ To create an Experience Fragment:
 
    ![Experience Fragments in the Navigation panel](/help/sites-cloud/authoring/assets/xf-01.png)
 
-1. Select **Create**. You can create **Folders** and/or **Experience Fragments**.
-
-   Creating folders allows you to create a meaningful structure for your Experience Fragments.
+1. Navigate to the required folder and select **Create**:
 
    ![Creating a folder for Experience Fragments](/help/sites-cloud/authoring/assets/xf-02.png)
 
-1. From the required folder, select **Create** then **Experience Fragment** to open the **Create Experience Fragment** wizard.
+1. Select **Experience Fragment** to open the **Create Experience Fragment** wizard.
 
    Select the required **Template**, then **Next**:
 
    ![Selecting an Experience Fragment template](/help/sites-cloud/authoring/assets/xf-03.png)
 
-   >[!NOTE]
-   >
-   >See Templates for Experience Fragments for further details.
-   <!--
-   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
-   -->
 
 1. Enter the **Properties** for your **Experience Fragment**.
 
@@ -175,7 +224,7 @@ To create a new Building Block:
 
 1. In the Experience Fragment editor, select the components you want to re-use:
 
-   ![Select component for Building Block](/help/sites-cloud/authoring/assets/xf-09.png)
+   ![Select component for Buil_ding_ Block](/help/sites-cloud/authoring/assets/xf-09.png)
 
 1. From the components toolbar, select **Convert to building block**:
 
@@ -267,24 +316,3 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
 For export to Adobe Target, JSON can also be used. See Target Integration with Experience Fragments for full information. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
-
-## Configuring Allowed Templates {#configuring-allowed-templates}
-
-1. Navigate to the required **Experience Fragments** folder.
-
-1. Select **Configuration options**:
-
-   ![Configuration button](/help/sites-cloud/authoring/assets/xf-18.png)
-
-1. Specify the required templates in the **Configure Experience Fragments** dialog:
-
-   ![Configure Experience Fragments](/help/sites-cloud/authoring/assets/xf-19.png)
-
-   >[!NOTE]
-   >
-   >See Templates for Experience Fragments for further details.
-   <!--
-   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
-   -->
-
-1. Select **Save**.
