@@ -90,11 +90,15 @@ To create and configure a folder for your Experience Fragments it is recommended
 1. [Create a folder](/help/sites-cloud/authoring/fundamentals/managing-pages.html#creating-a-new-folder).
 2. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
 
+>[!NOTE]
+>
+>It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values can be overwritten upon upgrade.
+
 ### Configure the Allowed Templates for your Folder {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
->This is the recommended method for specifying the **Allowed Templates**, as the values will not be overriden upon upgrade.
+>This is the recommended method for specifying the **Allowed Templates**, as the values will not be overwritten upon upgrade.
 
 1. Navigate to the required **Experience Fragments** folder.
 
@@ -123,7 +127,7 @@ To create and configure a folder for your Experience Fragments it is recommended
 
 >[!CAUTION]
 >
->It is not recommended to change the **Allowed Templates** by this method, as the templates specified can be changed upon upgrade.
+>It is not recommended to change the **Allowed Templates** by this method, as the templates specified can be overwritten upon upgrade.
 >
 >Please use this dialog for information purposes only.
 
