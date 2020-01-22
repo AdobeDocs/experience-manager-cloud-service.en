@@ -16,6 +16,7 @@ user-guide-title: Implementing AEM as a Cloud Service
   + [Understanding Notifications](cloud-manager/notifications.md)
 + Managing your Code {#managing-code}
   + [Maven Project Version Handling](cloud-manager/project-version-handling.md)
+  + [Accessing Git](cloud-manager/accessing-git.md)
   + [Integrating Git with Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
 + Developing for AEM as a Cloud Service {#developing}
   + [AEM Project Package Structure](developing/introduction/aem-project-content-package-structure.md)
