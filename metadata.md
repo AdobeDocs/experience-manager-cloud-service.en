@@ -3,11 +3,11 @@ product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
 solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
+solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
 getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
+getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/home.html
 tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/analytics/how-to/adobe-launch-publishing-process.html
+tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 ---
 
 # Metadata for internal use
