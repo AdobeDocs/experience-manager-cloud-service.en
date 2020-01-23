@@ -27,7 +27,7 @@ Follow the steps below to create an AEM application project in Cloud Manager:
 1. Once the program creation is complete, the **Add Environment** tile appears on the *Program Overview* page. 
    ![](assets/create-wizard4.png)
 
-Refer to [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
+   Refer to [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
 
 ## Setting up your Project {#setting-up-your-project}
 

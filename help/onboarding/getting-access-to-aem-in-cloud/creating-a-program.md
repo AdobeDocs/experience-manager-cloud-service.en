@@ -16,17 +16,12 @@ In the event of first-time access to Cloud Manager or if no programs exist in th
 
 ## Using Create Program Wizard {#using-create-program-wizard}
 
->[!NOTE]
-   >
-   >The cloud-native solution gives the user with requisite permissions the ability to create a program on a self-service model.
-
-
 Depending upon the user’s objective in creating the program within the bounds of what is available to the specific customer/organization, a program creation wizard will ask the user to submit one or more details.
 
   ![](assets/create-program-2.png)
 
->![NOTE]
->If a program already exists, then the **Add Program** button will be seen on the top right of the landing page, as shown in the figure below.
+>[!NOTE]
+>If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
 
 ![](assets/create-program-add.png)
 
@@ -35,7 +30,7 @@ Depending upon the user’s objective in creating the program within the bounds 
 >[!NOTE]
 >A demo program is analogous to a sandbox program in Cloud Manager UI.
 
-Follow the steps below describe how to create a Sandbox program: 
+Follow the steps below to create a sandbox program: 
  
 1. From the create program wizard, select **Set up a demo**. User submits program name before selecting **Create**.
 
@@ -45,9 +40,14 @@ Follow the steps below describe how to create a Sandbox program:
 
     ![](assets/program-create-setupdemo2.png)
 
-1. After the project with sample code and content completes, the user can access **Manage Git** link, as shown in the figure below:
+1. After the program set up and the project creation step completes, the user can access **Manage Git** link, as shown in the figure below:
 
    ![](assets/create-program4.png)
+   
+   >[!NOTE]
+   >
+   >To learn more about accessing and managing your Git Repository using Self-Service Git Account Management from Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/accessing-git.md).
+
 
 1. Once the development environment is created, the user can **Access AEM** link, as shown in the figure below:
 
@@ -62,13 +62,13 @@ Follow the steps below describe how to create a Sandbox program:
 
 A *Regular* program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building and testing code with the objective of deploying it to Production.
 
-The steps below describe how to create a program intended for production:
+Follow the steps below to create a regular program: 
 
 1. Select **Set up for Production** in the Create Program wizard to create a regular program. User can accept the default program name or edit it before selecting **Continue**.
 
    ![](assets/set-up-prod1.png)
 
-1. User will select solutions that are to be included in the Program in the screen that will be presented following the screen above.
+1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above.
 
    
 
