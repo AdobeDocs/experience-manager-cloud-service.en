@@ -9,7 +9,7 @@ Cloud Manager program will come auto-provisioned with it’s own git repository.
 
 For a user to access the Cloud Manager git repository, users will need to use a Git client with a command-line tool, a standalone visual Git client, or the user's IDE such as Eclipse, IntelliJ, NetBeans. 
 
-To learn about how to  manage Git using Cloud Manager UI, refer to [Manage your Git](/help/implementing/cloud-manager/configure-pipeline.md).
+To learn about how to  manage Git using Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/accessing-git.md).
 
 Once a Git client is set up, the user can select the **Manage Git** button from the **Piplelines** card to get the information necessary to access Cloud Manager Git repository.
 
