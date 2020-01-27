@@ -38,15 +38,15 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. Click **Setup Pipeline** to setup and configure your pipeline.
 
-   ![](assets/configure-pipeline1.png)
+   ![](assets/set-up-pipeline1.png)
 
 1. The **Setup Pipeline** screen displays. Select the branch and click **Next**.
 
-   ![](assets/configure-pipeline2.png)
+   ![](assets/set-up-pipeline2.png)
 
 1. Configure your deployment options.
 
-   ![](assets/configure-pipeline3.png)
+   ![](assets/set-up-pipeline3.png)
 
    You can define the trigger to start the pipeline:
 
@@ -63,7 +63,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
     
 1. Click **Next** to access the **Testing** tab to define your testing criteria for your program.
 
-   ![](assets/configure-pipeline4.png)
+   ![](assets/set-up-pipeline4.png)
 
 1. Click **Save**. The *Overview* page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
@@ -84,7 +84,7 @@ On the home screen, these pipelines are listed in a new card:
 
    Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
 
-   ![](assets/configure-pipeline7.png)
+   ![](assets/set-up-pipeline7.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
 
