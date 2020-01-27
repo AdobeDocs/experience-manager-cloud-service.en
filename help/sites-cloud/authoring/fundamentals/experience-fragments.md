@@ -51,7 +51,7 @@ Experience Fragments should be used:
   * Channel or context-specific variations.
   * Experiences that make sense to group; for example a campaign with different experiences across channels.
 * When you use Omnichannel Commerce.
-  * Sharing commerce-related content on social media channels at scale. <!-- Sharing commerce-related content on [social media](/help/sites-developing/experience-fragments.md#social-variations) channels at scale. -->
+  * Sharing commerce-related content on [social media](/help/implementing/developing/extending/experience-fragments.md#social-variations) channels at scale.
   * Making touchpoints transactional.
 
 ## Organizing your Experience Fragments {#organizing-your-experience-fragments}
@@ -117,10 +117,7 @@ To create and configure a folder for your Experience Fragments it is recommended
 
    >[!NOTE]
    >
-   >See Templates for Experience Fragments for further details.
-   <!--
-   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
-   -->
+   >See [Templates for Experience Fragments](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) for further details.
 
 1. Select **Save and Close**.
 
@@ -144,10 +141,7 @@ To create and configure a folder for your Experience Fragments it is recommended
 
    >[!NOTE]
    >
-   >See Templates for Experience Fragments for further details.
-   <!--
-   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
-   -->
+   >See [Templates for Experience Fragments](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) for further details.
 
 1. Select **Save**.
 
@@ -347,10 +341,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 >[!NOTE]
 >
->Although this is directly available from the browser, the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL.
-<!--
->Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
--->
+>Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
