@@ -5,7 +5,7 @@ description: Adobe Experience Manager as a Cloud Service Maven projects requires
  
 # Develop a Repository Structure Package
 
-Maven projects for Adobe Experience Manager as a Cloud Service require a repository structure sub-package definition whose sole purpose is to define the JCR repository roots in which the project's code sub-packages deploy into. This ensures the installation of packages in Experience Manager as a Cloud Service is automatically ordered by JCR resource dependencies. Missing dependencies may lead to scenarios were sub-structures would be installed ahead of their parent structures and therefore be unexpectedly removed, breaking the deployment.
+Maven projects for Adobe Experience Manager as a Cloud Service require a repository structure sub-package definition whose sole purpose is to define the JCR repository roots in which the project's code sub-packages deploy into. This ensures the installation of packages in Experience Manager as a Cloud Service is automatically ordered by JCR resource dependencies. Missing dependencies may lead to scenarios where sub-structures would be installed ahead of their parent structures and therefore be unexpectedly removed, breaking the deployment.
 
 If your code package deploys into a location **not covered** by the code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the repository structure package to establish these dependencies.
 
