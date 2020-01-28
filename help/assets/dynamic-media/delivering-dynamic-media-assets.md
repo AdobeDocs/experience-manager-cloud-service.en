@@ -28,7 +28,7 @@ For more information, see the following topics:
 * [Linking URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Delivering Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md)
-* I [nvalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [Invalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [Using Rulesets to Transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
