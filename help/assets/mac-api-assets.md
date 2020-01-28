@@ -74,8 +74,8 @@ The Assets HTTP API provides the following features:
 
 * Retrieve a folder listing
 * Create a folder
-* Create an asset
-* Update asset binary
+* Create an asset (deprecated)
+* Update asset binary (deprecated)
 * Update asset metadata
 * Create an asset rendition
 * Update an asset rendition
@@ -154,6 +154,9 @@ POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 
 ## Create an asset {#create-an-asset}
 
+See [asset upload](developer-reference-material-apis.md) for information on how to create an asset using APIs. Creating an asset using the HTTP API is deprecated.
+
+<!--
 Creates a DAM asset at the given path with the given file. If a &#42; is given instead of a node name the servlet will use the parameter name or the file name as node name.
 
 **Parameters**
@@ -181,9 +184,13 @@ POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"
 412 - PRECONDITION FAILED - if root collection cannot be found or accessed
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
+-->
 
 ## Update an asset binary {#update-asset-binary}
 
+See [asset upload](developer-reference-material-apis.md) for information on how to update asset binaries using APIs. Updating an asset binary using the HTTP API is deprecated.
+
+<!--
 Updates an Assets binary (rendition with name original). This will trigger the default Asset workflow if configured.
 
 **Request**
@@ -200,6 +207,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @
 412 - PRECONDITION FAILED - if root collection cannot be found or accessed
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
+-->
 
 ## Update metadata of an asset {#update-asset-metadata}
 

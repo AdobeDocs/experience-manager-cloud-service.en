@@ -46,7 +46,6 @@ Columns of the support tables provide the following information:
 
 | File format | GIF | JPEG | PNG | TXT | XMP | Width/Height |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
-| Adobe       | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
 | AI          | ✓   | ✓    | ✓   | -   | ✓   | ✓            |
 | COLLAGE     | -   | -    | -   | -   | ✓   | -            |
 | DN          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
