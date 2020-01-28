@@ -33,7 +33,7 @@ This section lists features and capabilities that have been removed from AEM wit
 | Area         | Feature            | Replacement |
 | ------------ | ------------------ | ----------- |
 | UI        | While some Classic UI dialogs remain for the time being for a few select capabilities, such as Link Checker, Version Purge and some Cloud Service configurations, access to Classic UI in general has been removed in the AEM product UI. | Standard UI  |
-| Dynamic Media | Previous integrations with [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) and [Dynamic Media Hybrid mode](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html) are not available in AEM as a Cloud Service. | Use [Dynamic Media](/help/assets/dynamic-media/dynamic-media-assets.md)
+| Dynamic Media | Previous integrations with [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) and [Dynamic Media Hybrid mode](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html) are not available in AEM as a Cloud Service. | Use [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
 
  provided with Experience Manager as a Cloud Service. |
 | Sites | Portal Director and Portlet Component | These capabilities were deprecated in AEM 6.4 and have now been removed from AEM.|
