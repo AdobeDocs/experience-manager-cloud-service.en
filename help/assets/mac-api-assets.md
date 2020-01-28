@@ -74,8 +74,8 @@ The Assets HTTP API provides the following features:
 
 * Retrieve a folder listing
 * Create a folder
-* Create an asset
-* Update asset binary
+* Create an asset (deprecated)
+* Update asset binary (deprecated)
 * Update asset metadata
 * Create an asset rendition
 * Update an asset rendition
@@ -154,52 +154,11 @@ POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 
 ## Create an asset {#create-an-asset}
 
-Creates a DAM asset at the given path with the given file. If a &#42; is given instead of a node name the servlet will use the parameter name or the file name as node name.
-
-**Parameters**
-
-* `name` - Asset name
-* `file` - File reference
-
-**Request**
-
-```
-POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"
-```
-
-or
-
-```
-POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"
-```
-
-**Response codes**
-
-```
-201 - CREATED - if Asset has been created successfully
-409 - CONFLICT - if Asset already exist
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+See [asset upload](developer-reference-material-apis.md) for information on how to create an asset using APIs. Creating an asset using the HTTP API is deprecated.
 
 ## Update an asset binary {#update-asset-binary}
 
-Updates an Assets binary (rendition with name original). This will trigger the default Asset workflow if configured.
-
-**Request**
-
-```
-PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png
-```
-
-**Response codes**
-
-```
-200 - OK - if Asset has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+See [asset upload](developer-reference-material-apis.md) for information on how to update asset binaries using APIs. Updating an asset binary using the HTTP API is deprecated.
 
 ## Update metadata of an asset {#update-asset-metadata}
 

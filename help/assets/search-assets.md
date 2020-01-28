@@ -301,6 +301,7 @@ Illustrating use of question mark wildcard in Asset search using an example
 ![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
 *Figure: Use of dash to search for assets not containing an excluded keyword*
 
+<!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
 
 ### Search index configurations {#searchindex}
@@ -346,6 +347,7 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 -->
+<!--
 
 ### Mandatory metadata {#mandatorymetadata}
 
@@ -384,7 +386,7 @@ You can search for digital assets based on one or more of the following properti
 | Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
 | Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
---> 
+-->
 
 ## Work with asset search results {#aftersearch}
 
@@ -466,4 +468,3 @@ See the issues and possible course of action below:
 * If an expected search filter/predicate is not visible, contact your administrator.
 * When searching for visually similar images, at times an expected image may be missing from the search results. Check if such assets are indexed and smart tagged.
 * When searching for visually similar images, at times a seemingly irrelevant image may be displayed in the search results. AEM displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results.
-
