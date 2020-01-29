@@ -81,6 +81,8 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 
 ```
 
+> [!NOTE] The version entry for the SDK should match the version of AEM as a Cloud Service. You can see what version you are using by logging in to AEM, then going to the question mark in the top right corner of the screen and selecting **[!UICONTROL About Adobe Experience Manager]**
+
 * The remote coordinate for the maven repository where the package is hosted should be included in the pom file.
 
 ```
