@@ -19,6 +19,7 @@ The data includes page and user data, for example:
 
 The pages listed below can help you configure the integration. To be noted that Launch by Adobe is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). Therefore, integrating AEM as a Cloud Service with Launch and Adobe Analytics goes hand-in-hand.
 
+* [Connecting to Adobe Analytics and Creating Frameworks](/help/sites-administering/adobeanalytics-connect.md) - Please note that "Analytics frameworks" are legacy in AEM, and their creation does not work in AEM as a Cloud Service because it requires the Classic UI. Launch by Adobe should be used instead, both for variable mapping and for deployment of JS libraries to pages. 
 * [Integrate Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
 * [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
 * [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)

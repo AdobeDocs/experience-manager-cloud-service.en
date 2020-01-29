@@ -14,22 +14,23 @@ Integrate your AEM sites with Adobe Target to personalize content in your pages:
 * Submit context data to Target when visitors interact with your pages.
 * Track conversion rates.
 
+>[!NOTE]
+>
+>Adobe Experience Manager as a Cloud Service customers who do not have an existing Target account, can request access to the Target Foundation Pack for Experience Cloud.  The Foundation Pack provides volume limited use of Target.
+
 
 To integrate with Target, perform the following tasks:
 
 * [Perform prerequisite tasks](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html): Register with Adobe Target and configure certain aspects of the AEM author instance. Your Adobe Target account must have **approver** level permissions at a minimum. In addition, you must secure the activity settings on the publish node so that it is inaccessible to users.
 
 * Launch by Adobe is the defacto tool for instrumenting an AEM site with Target capabilities (JS libraries). Therefore, integrating AEM as a Cloud Service with Launch and Adobe Target goes hand-in-hand (see the links below).
-
+   
+  * [Integration with Adobe Target using Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
   * [Integrate Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
   * [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
   * [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
 1. [Configure Activities](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Associate your Activities with the Target cloud configuration.
-
->[!NOTE]
->
->Adobe Experience Manager as a Cloud Service customers who do not have an existing Target account, can request access to the Target Foundation Pack for Experience Cloud.  This Foundation Pack provides volume limited use of Target.
 
 >[!NOTE]
 >
