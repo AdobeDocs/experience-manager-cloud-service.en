@@ -3,7 +3,7 @@ title: Manage Logs - Cloud Service
 description: Manage Logs - Cloud Service
 ---
 
-# Manage Logs - Cloud Services {#manage-logs} 
+# Managing Logs {#manage-logs} 
 
 Users can access a list of available log files for the selected environment using the Environment Card.  Users can access a list of available log files for the selected environment. 
 

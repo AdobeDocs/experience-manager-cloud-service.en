@@ -3,7 +3,7 @@ title: Manage Environments - Cloud Services
 description: Manage Environments - Cloud Services
 ---
 
-# Manage Environments {#manage-environments} 
+# Managing Environments {#manage-environments} 
 
 The following section describes the types of environment a  user can create and how the user can create an environment.
 

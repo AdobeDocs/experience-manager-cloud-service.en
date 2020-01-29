@@ -3,7 +3,7 @@ title: Deploy your Code - Cloud Services
 description: Deploy your Code - Cloud Services
 ---
 
-# Deploy your Code {#deploy-your-code} 
+# Deploying your Code {#deploy-your-code} 
 
 ## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
 

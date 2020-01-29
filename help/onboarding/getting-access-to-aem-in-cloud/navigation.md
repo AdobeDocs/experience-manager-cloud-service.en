@@ -3,7 +3,7 @@ title: Navigation
 description: Navigation - Cloud Service
 ---
 
-# Navigation {#navigation} 
+# Accessing Experience Manager as a Cloud Service {#navigation} 
 
 AEM is a cloud-native solution available as an innovative Cloud Service. 
 

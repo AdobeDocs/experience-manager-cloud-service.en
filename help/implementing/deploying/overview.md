@@ -13,10 +13,6 @@ The update of the AEM version is always a separate deployment event from pushing
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
-Watch this short video to get a high-level overview of how to deploy your site to AEM as a Cloud Service from a customer-managed Git repository to a cloud-managed Git repository.
-
-For a complete overview, watch the video series on how to [integrate Git with Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
-
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. For customers with existing code bases, note that it's a pre-requisite to go through the repository restructuring exercise described in [AEM documentation](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/markdown/syntax-style-guide.html).
 
 

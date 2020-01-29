@@ -3,7 +3,7 @@ title: First Time Login - Cloud Service
 description: First Time Login - Cloud Service
 ---
 
-# Access Programs {#first-time-login} 
+# Accessing Programs {#first-time-login} 
 
 Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
 

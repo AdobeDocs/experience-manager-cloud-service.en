@@ -3,7 +3,7 @@ title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 ---
 
-# Create an AEM Application Project {#aem-application-project} 
+# Creating an AEM Application Project {#aem-application-project} 
 
 ## Using Wizard to Create an AEM Application Project {#using-wizard-to-create-an-aem-application-project}
 
