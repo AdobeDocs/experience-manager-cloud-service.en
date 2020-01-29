@@ -11,8 +11,6 @@ The fundamentals of code development are similar in AEM as a Cloud Service compa
 
 The update of the AEM version is always a separate deployment event from pushing custom code. Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on top of. AEM version updates that happen after that, which will be frequent when compared to Managed Services today, are automatically applied. They are intended to be backwards compatible with the customer code already deployed.
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
-
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. For customers with existing code bases, note that it's a pre-requisite to go through the repository restructuring exercise described in [AEM documentation](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/markdown/syntax-style-guide.html).
 
 
