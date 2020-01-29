@@ -9,9 +9,9 @@ This page lists the self-help resources about onboarding for Experience Manager 
 
 ## Key Onboarding Articles {#key-articles}
 
-* [Logging in for the first time](getting-access-to-aem-in-cloud/first-time-login.md)
-* [Your provisioned environments](what-is-required/environments-provisioned.md)
-* [Foundations of data privacy and protection](data-privacy-and-protection-readiness/foundation-readiness.md)
+This section covers the requirements for accessing Experience Manager as a Cloud Service. It includes getting users set up and how access will be granted to any of the [!UICONTROL Experience Cloud] Service and the currently defined  user roles which govern the availability of a specific feature.
+
+Additionally, this section also covers information about Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations.
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
