@@ -33,34 +33,47 @@ The version of the index that is used is configured using flags in the index def
 
 1. Limitations: currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
 
-## Sizing Considerations {#sizing-considerations}
+<!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+
+AS NOTE: the above is internal for now.
+
+-->
 
 ## How to Use {#how-to-use}
 
+Defining indexes can comprise of the 3 use cases:
+
+1. Adding a new customer index definition
+1. Updating an existing index definition. This effectively means adding a new version of an existing index definition
+1. Removing an existing index that is redundant or obsolete.
+
+For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service documentation](/help/implementing/deploying/overview.md).
+
 ### Preparing the New Index Defition {#preparing-the-new-index-definition}
 
-You need to prepare a new index definition package that contains:
+You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
-1. The actual index definition;
-1. The node defining the property mentioned in the `useIfExists` flag in the index definition.
+`<indexName>[-<productVersion>]-custom-<customVersion>` 
+
+which then needs to go under `ui.content/src/main/content/jcr_root`. Sub root folders are not supported as of now.
+
+<!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
 The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
 ### Deploying Index Definitions {#deploying-index-definitions}
 
-Index definitions are now split into two pieces:
+Index definitions are now marked as custom and versioned:
 
-1. The index definition itself. For example `/oak:index/ntBaseLucene`, which is mutable content.
-1. The index version selector: for example `/apps/indexes/ntBaseLucene`, which is immutable content.
+* The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)  which is MUTABLE content
 
-Therefore, in order to deploy an index:
+Therefore, in order to deploy an index, the index definition (`/oak:index/definitionname`) should be delivered via the **mutable package**, typically `ui.content` via Git and the Cloud Manager deployment process.
 
-* The Index Definition (`/oak:index/definition`) should be delivered via the mutable package, typically `ui.content`;
-* The Index Definition selector (`/apps/indexes/definition`) should be delivered via the immutable package, typically `ui.apps`.
+Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the Blue-Green switch is taking place.
 
-## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
+<!-- ## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
 
 ### What is Index Management {#what-is-index-management}
 
@@ -187,3 +200,6 @@ The old version of the application uses the following configuration:
 The new version of the application uses the following (changed) configuration:
 
 `/libs/indexes/acme/@v2`
+
+
+ABOVE SHOULD BE REPLACED WITH INFO FROM https://wiki.corp.adobe.com/pages/viewpage.action?pageId=1638127306 -->
