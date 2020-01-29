@@ -29,5 +29,13 @@ Use the **Manage Git** button available from the Cloud Manager UI, most prominen
 
    ![](assets/manage-git3.png)
 
+The important considerations to manage your Git in Cloud Manager are:
 
+* **URL**: The repository URL
+* **Username**: The user name
+* **Password**: The value shown when the **Generate Password** button is clicked.
+
+
+> [!NOTE]
+> A user can check out a copy of their code, and make changes in the local code repository. When ready, the user can commit their code changes back to the remote code repository in Cloud Manager.
 
