@@ -3,7 +3,7 @@ title: Configure CI/CD Pipeline - Cloud Services
 description: Configure CI/CD Pipeline - Cloud Services
 ---
 
-# Configure your CI-CD Pipeline {#configure-ci-cd-pipeline} 
+# Configuring your CI-CD Pipeline {#configure-ci-cd-pipeline} 
 
 
 ## Understanding the Flow {#understanding-the-flow}

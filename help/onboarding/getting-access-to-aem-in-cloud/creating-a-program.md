@@ -3,7 +3,7 @@ title: Creating a Program - Cloud Service
 description: Creating a Program - Cloud Service
 ---
 
-# Create a Program {#create-a-program}
+# Creating a Program {#create-a-program}
 
 The cloud-native solution provides the user with requisite permissions and the ability to create a program on a self-service model.
 
