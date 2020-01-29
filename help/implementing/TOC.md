@@ -7,7 +7,7 @@ user-guide-title: Implementing AEM as a Cloud Service
 
 + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
-  + [Managing your Environments](cloud-manager/manage-environments.md)
+  + [Managing Environments](cloud-manager/manage-environments.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
   + [Understanding your Test Results](cloud-manager/understand-test-results.md)

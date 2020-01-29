@@ -1,6 +1,6 @@
 ---
-title: Manage Environments - Cloud Services
-description: Manage Environments - Cloud Services
+title: Manage Environments - Cloud Service
+description: Manage Environments - Cloud Service
 ---
 
 # Managing Environments {#manage-environments} 
@@ -48,12 +48,9 @@ The Production and Stage is available as a duo and is used for testing and produ
 
 1. Click **Save** to add an environment with the populated criteria.  Now the *Overview* screen  displays the card from where you can set up  your pipeline.
 
-   ![](assets/add-environment3.png)
-
    >[!NOTE]
-   >In case, you have not yet set up your non-production pripeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
+   >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
-   ![](assets/add-environment-image2.png)
 
 ## Updating Environment {#updating-dev-environment}
 
