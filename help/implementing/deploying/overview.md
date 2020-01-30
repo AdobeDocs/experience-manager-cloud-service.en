@@ -14,7 +14,7 @@ The update of the AEM version is always a separate deployment event from pushing
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
 >[!NOTE]
->It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 
 
 ## AEM version updates {#version-updates}
