@@ -11,7 +11,7 @@ This is referred to as publishing a page. When you want to remove a page from th
 
 You can publish/unpublish a page immediately or at a predefined date/time in the future.
 
-## Terminology {#terminology}
+## Terminology {#terminology}
 
 You may encounter different terms related to publishing as you work with AEM.
 
