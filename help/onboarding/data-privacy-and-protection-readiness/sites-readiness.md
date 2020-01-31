@@ -155,18 +155,18 @@ To preview persistance used ContextHub, a user can:
 
         * Open Developer Tools &gt; Console
 
-            * localStorage.getItem('ContextHubPersistence')
-            * sessionStorage.getItem('ContextHubPersistence')
-            * document.cookie
+            * `localStorage.getItem('ContextHubPersistence')`
+            * `sessionStorage.getItem('ContextHubPersistence')`
+            * `document.cookie`
 
 * Use the ContextHub API, in the browser's console:
 
     * ContextHub provides following data persistence layers:
 
-        * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-        * ContextHub.Utils.Persistence.Modes.SESSION
-        * ContextHub.Utils.Persistence.Modes.COOKIE
-        * ContextHub.Utils.Persistence.Modes.WINDOW
+        * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+        * `ContextHub.Utils.Persistence.Modes.SESSION`
+        * `ContextHub.Utils.Persistence.Modes.COOKIE`
+        * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
       The ContextHub store defines which persistence layer will be used, thus to view the current state of the persistence all layers should be checked.
 
@@ -192,10 +192,10 @@ To preview persistance used ContextHub, a user can:
 
     * ContextHub provides following data persistence layers:
 
-        * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-        * ContextHub.Utils.Persistence.Modes.SESSION
-        * ContextHub.Utils.Persistence.Modes.COOKIE
-        * ContextHub.Utils.Persistence.Modes.WINDOW
+        * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+        * `ContextHub.Utils.Persistence.Modes.SESSION`
+        * `ContextHub.Utils.Persistence.Modes.COOKIE`
+        * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
       The ContextHub store defines which persistence layer will be used, thus to view the current state of the persistence all layers should be checked.
 
@@ -237,7 +237,7 @@ To clear the ContextHub persistence:
 
 * To clear all ContextHub persistence layers, the appropriate code must be called for all layers:
 
-    * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-    * ContextHub.Utils.Persistence.Modes.SESSION
-    * ContextHub.Utils.Persistence.Modes.COOKIE
-    * ContextHub.Utils.Persistence.Modes.WINDOW
+    * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+    * `ContextHub.Utils.Persistence.Modes.SESSION`
+    * `ContextHub.Utils.Persistence.Modes.COOKIE`
+    * `ContextHub.Utils.Persistence.Modes.WINDOW`
