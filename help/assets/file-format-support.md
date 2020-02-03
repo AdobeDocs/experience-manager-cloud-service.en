@@ -174,4 +174,4 @@ https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#
 
 >[!MORELIKETHIS]
 >
->[Asset processing using asset microservices](asset-microservices-overview.md)
+>* [Asset processing using asset microservices](asset-microservices-overview.md)
