@@ -205,21 +205,21 @@ As mentioned above, customers with existing code bases should conform to the rep
 
 ## Repoinit {#repoinit}
 
-For the following cases, it is preferable to take the approach of hand coding explicit content creation "repoinit" statements in OSGI factory configurations:
+For the following cases, it is preferable to take the approach of hand coding explicit content creation `repoinit` statements in OSGI factory configurations:
 
 * Create/delete/disable service users
 * Create/delete groups
 * Create/delete users
 * Add ACLs
-  > [!NOTE] Definition of ACLs requires the nodestructures to be already present. Thus, preceding create path statements might be necessary.
+  > [!NOTE] Definition of ACLs requires the node structures to be already present. Thus, preceding create path statements might be necessary.
 * Add path (for example for root folder structures)
 * Add CNDs (nodetype definitions)
 
 Repoinit is preferable for these supported content modification use cases due to the following benefits:
 
-* Repoinit creates resources at startup so logic can take the existence of those resources for granted. In the mutable content package approach, resources are created after startup, so application code relying on them may fail. 
-* Repoinit is a relatively safe instructionset as you explicitly control the action to be taken. Also, the only supported operations are additive with the exception of a few security related cases which allow removal of Users, Service Users, and Groups. In contrast, a removal of something in the mutable content package approach is explicit;  as you define a filter anything present covered by a filter will be deleted. Still, caution should be taken since with any content there are scenarios where the presence of new content can alter the behavior of the application.
-* Repoinit performs fast and atomic operations. Mutable content packages in contrast can highly depend performance wise on the structures covered by a filter. Even if you update a single node a snapshot of a large tree might be created.
+* Repoinit creates resources at startup so logic can take the existence of those resources for granted. In the mutable content package approach, resources are created after startup, so application code relying on them may fail.
+* Repoinit is a relatively safe instruction set as you explicitly control the action to be taken. Also, the only supported operations are additive with the exception of a few security related cases which allow removal of Users, Service Users, and Groups. In contrast, a removal of something in the mutable content package approach is explicit;  as you define a filter anything present covered by a filter will be deleted. Still, caution should be taken since with any content there are scenarios where the presence of new content can alter the behavior of the application.
+* Repoinit performs fast and atomic operations. Mutable content packages in contrast can highly depend performance wise on the structures covered by a filter. Even if you update a single node, a snapshot of a large tree might be created.
 * It is possible to validate repoinit statements on a local dev environment at runtime since they will be executed when the OSGi configuration gets registered.
 * Repoinit statements are atomic and explicit and will skip if the state is already matching.
 
@@ -228,7 +228,7 @@ When Cloud Manager deploys the application, it executes these statements, indepe
 To create repoinit statements, follow the below procedure:
 
 1. Add OSGi configuration for PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project
-1. Add repoinit statements to the script property of the config. The syntax and options are documented in [Sling documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html). Note that there should be explicit creation of a parent folder before their child folders. For example, an explicit creation of `/content` before `/content/myfolder`, before `/content/myfolder/mysubfolder`. For ACLs being set on low level structures it is recommended to set those on a higher level and work with a `rep:glob` restriction.  Foe example (allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs).
+1. Add repoinit statements to the script property of the config. The syntax and options are documented in [Sling documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html). Note that there should be explicit creation of a parent folder before their child folders. For example, an explicit creation of `/content` before `/content/myfolder`, before `/content/myfolder/mysubfolder`. For ACLs being set on low level structures it is recommended to set those on a higher level and work with a `rep:glob` restriction.  For example `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validate on the local dev environment at runtime.
 
 <!-- last statement in step 2 to be clarified with Brian -->
