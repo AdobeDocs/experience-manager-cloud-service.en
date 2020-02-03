@@ -5,7 +5,7 @@ description: Adobe Experience Manager as a Cloud Service overview self-help reso
 
 # Experience Manager as a Cloud Service Overview {#aem-overview-guide}
 
-This page lists the self-help resources giving and overview of Experience Manager as a Cloud Service.
+This page lists self-help resources giving an introduction to, and overview of, Experience Manager as a Cloud Service.
 
 ## Key Overview Articles {#key-articles}
 
