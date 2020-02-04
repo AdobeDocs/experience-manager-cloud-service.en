@@ -169,7 +169,6 @@ When the full-screen editor is open, the action **Text Statistics** will display
 
 To ease the process of authoring content fragments you can upload text, prepared in an external editor, and add it directly to the fragment.
 
-<!--
 ### Summarizing Text {#summarizing-text}
 
 Summarizing text is designed to help users reduce the length of their text to a predefined number of words, while keeping the key points and overall meaning.
@@ -180,7 +179,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 
 >[!CAUTION]
 >
->The content fragment must have a valid language folder as an ancestor; this is used to determine the language model to be used.
+>The content fragment must have a valid language folder (ISO Code) as an ancestor; this is used to determine the language model to be used.
 >
 >For example, `en/` as in the following path:
 >
@@ -215,7 +214,6 @@ Summarizing text is designed to help users reduce the length of their text to a 
    ![summarization comparison](assets/cfm-variations-06.png)
 
 6. Select **Summarize** to confirm the changes.
--->
 
 ### Annotating a Content Fragment {#annotating-a-content-fragment}
 
