@@ -105,50 +105,34 @@ During development, or when using on premise installations, indexes can be added
 
 ### Index Management With Blue-Green Deployment {#index-management-with-blue-green-deployment}
 
-With blue-green deployments, there is no downtime. However, for index management, this requires that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, we don't want it to be used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 is still needed in version 1. When changing an index definition, we want the old version of the index only to be used for version 1, and the new version of the index only to be used for version 2.
+With blue-green deployments, there is no downtime. However, for index management, this requires that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, you would not want it to be used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 is still needed in version 1. When changing an index definition, we want the old version of the index only to be used for version 1, and the new version of the index only to be used for version 2.
 
-The following table shows 5 index definitions: 
+The following table shows 5 index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
-* index "a" is used in both versions; 
-* index "b" only in version 2; 
-* index "c" only in version 1; 
-* index "d" was changed in version 2, so that we have a new index "d_v2".
 
->[!NOTE]
->Please note that "_v2" is a naming convention only.
+> [!NOTE]
+> `<indexName>-custom-<customerVersionNumber>` is needed for AEM as a Cloud Service to mark this as a replacement for an existing index.
 
-| Index  | Use in Version 1  | Use in Version 2  |
-|---|---|---|
-| /oak:index/a  | Yes  | Yes  |
-| /oak:index/b  | No  | Yes  |
-| /oak:index/c  | Yes  | No  |
-|  /oak:index/d | Yes  | No  |
-|  /oak:index/d_v2 | No  | Yes  |
+| Index | Out-of-the-box Index  | Use in Version 1  | Use in Version 2  |
+|---|---|---|---|
+| /oak:index/damAssetLucene  | Yes  | Yes  | No  |
+| /oak:index/damAssetLucene-custom-1  | Yes (customized)  | No  | Yes  |
+| /oak:index/acmeProduct-custom-1  | No  | Yes  | No  |
+| /oak:index/acmeProduct-custom-2  | No  | No  | Yes  |
+| /oak:index/cqPageLucene  | Yes  | Yes  | Yes  |
 
-To mark which indexes to use in specific versions of the application, we use markers in the read-only area of the repository, as follows. Remember the read-only area of the repository can be different in each version:
+The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes need to end with `-custom-<number>`.
 
-| Node  | Version 1  | Version 2  |
-|---|---|---|
-| /libs/indexes/a  | v1 = true  | v1 = true  |
-| /libs/indexes/b  | node missing  | v1 = true  |
-| /libs/indexes/c  | v1 = true  | node missing  |
-| /libs/indexes/d  | v1 = true  | v2 = true  |
+### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
 
-The indexes themselves then contain pointers to the following flags:
+Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucene", a new index named `damAssetLucene-2` or `cqPageLucene-2` is created, or, if the index was already customized, the customized index definition is merged with the changes in the out-of-the-box index, as shown below. Merging of changes happens automatically. That means that you do not need to do anything if an out-of-the-box index changes. However, it is possible to customize the index again later.
 
-| Index  | "useIfExists" property value  |
-|---|---|
-| /oak:index/a  | /libs/indexes/a/@v1  |
-| /oak:index/b  | /libs/indexes/b/@v1  |
-| /oak:index/c  | /libs/indexes/c/@v1  |
-| /oak:index/d  | /libs/indexes/d/@v1  |
-| /oak:index/d_v2 | /libs/indexes/d/@v2  |
-
-Here again, the node names "/libs/indexes/a" and property names "v1" and "v2"  are naming conventions. Do ensure the conventions are followed, as in future versions the conventions might be enforced.
-
-We recommend that the version number is incremented each time the index is changed. The very first version of an index does not need to include the version number in the index node name. It is possible to re-use index names if it is guaranteed that no version of AEM is running that points to the old index.
-
-To avoid that customer index names collide with index names of the product itself, please use the prefix "custom_" for customer indexes, or another prefix as appropriate.
+| Index  | Out-of-the-box Index  | Use in Version 2  | Use in Version 3  |
+|---|---|---|---|
+| /oak:index/damAssetLucene-custom-1  | Yes (customized)  | Yes  | No  |
+| /oak:index/damAssetLucene-2-custom-1  | Yes (automatically merged from damAssetLucene-custom-1 and damAssetLucene-2)  | No  | Yes  |
+| /oak:index/cqPageLucene  | Yes  | Yes  | No  |
+| /oak:index/cqPageLucene-2  | Yes  | No  | Yes  |
 
 ### Limitations {#limitations}
 
@@ -156,47 +140,24 @@ Index management is currently only supported for indexes of type `lucene`.
 
 ### Removing an Index {#removing-an-index}
 
-To configure the index "acme" to be used in the application, the index needs to be configured as follows:
-
-`/oak:index/acme/@useIfExists = "/libs/indexes/acme/@v1"`
-
-This ensures the index is only used if the property `/libs/indexes/acme/v1` exists. Therefore, this property also needs to be created in the read-only area, as follows:
-
-`/libs/indexes/acme/@v1`
-
-If the index is to be removed in a later version of the application, the node `/libs/indexes/acme` can be removed from the read-only area of the repository.
-
-Once this new version of the application is deployed, the index is still updated. However, it is not used for queries in the new version of the application. Once no instances of the old application are running, the index shown below can be safely removed:
-
-`/oak:index/acme/`
+If an index is to be removed in a later version of the application, you can define an empty index (an index with no data to index), with a new name. For example purposes, you can name it `/oak:index/acmeProduct-custom-3`. This replaces the index `/oak:index/acmeProduct-custom-2`. Once `/oak:index/acmeProduct-custom-2` is removed by the system, the empty index `/oak:index/acmeProduct-custom-3` can then also be removed.
 
 ### Adding an Index {#adding-an-index}
 
-To add an index named "acmeNew" to be used in a new version of the application and later, the index needs to be configured as follows:
+To add an index named "/oak:index/acmeProduct-custom-1" to be used in a new version of the application and later, the index needs to be configured as follows:
 
-`/oak:index/acmeNew/@useIfExists = "/libs/indexes/acmeNew/@v1"`
+`/oak:index/acmeProduct-custom-1`
 
-As above, this ensures the index is only used if the property `/libs/indexes/acmeNew/v1` exists. We assume the old version of the application will not have that node `/` property.
-
-However, a new version of the application needs to have the following node and property, in order for the index to be used:
-
-`/libs/indexes/acmeNew/@v1`
+As above, this ensures the index is only used by the new version of the application.
 
 ### Changing an Index {#changing-an-index}
 
-When an existing index is changed, a new index needs to be added with the changed index definition. For example, let's say the existing index "acme" is changed. The old index is stored under `/oak:index/acme`, and the new index is stored under `/oak:index/acme_v2`. The respective `useIfExists` flags are set as follows:
-
-`/oak:index/acme/@useIfExists = "/libs/indexes/acme/@v1"`
-
-`/oak:index/acme_v2/@useIfExists = "/libs/indexes/acme/@v2"`
+When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index "/oak:index/acmeProduct-custom-1" is changed. The old index is stored under `/oak:index/acmeProduct-custom-1`, and the new index is stored under `/oak:index/acmeProduct-custom-2`.
 
 The old version of the application uses the following configuration:
 
-`/libs/indexes/acme/@v1`
+`/oak:index/acmeProduct-custom-1`
 
 The new version of the application uses the following (changed) configuration:
 
-`/libs/indexes/acme/@v2`
-
-
-ABOVE SHOULD BE REPLACED WITH INFO FROM https://wiki.corp.adobe.com/pages/viewpage.action?pageId=1638127306 -->
+`/oak:index/acmeProduct-custom-2`
