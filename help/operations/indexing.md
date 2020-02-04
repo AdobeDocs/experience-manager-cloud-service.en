@@ -88,7 +88,7 @@ Blue-Green deployment can reduce downtime. It also allows for zero downtime upgr
 Certain areas of the repository (read-only parts of the repository) can be different in the old (blue) and in the new (green) version of the application. The read-only areas of the repository are typically "`/app`" and "`/libs`". In the following example, italic is used to mark read-only areas, while bold is used for read-write areas.
 
 * **/**
-* <span style="color:blue">/apps (read-only)</span>
+* <span style="color: blue">/apps (read-only)</span>
 * **/content**
 * */libs (read-only)*
 * **/oak:index**
