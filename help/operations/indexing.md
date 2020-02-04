@@ -73,18 +73,15 @@ Therefore, in order to deploy an index, the index definition (`/oak:index/defini
 
 Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the Blue-Green switch is taking place.
 
-<!-- ## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
+## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
 
 ### What is Index Management {#what-is-index-management}
 
-Index management is about adding, removing, and changing indexes. Changing the *definition* of an index is fast, but applying the change (often called "building an index", or, for existing indexes, "reindexing") requires time. It is not instantaneous: the repository has to be scanned for data to be indexed. 
-
->[!NOTE]
-> Query lookups and updating an indexes are not considered index management.
+Index management is about adding, removing, and changing indexes. Changing the *definition* of an index is fast, but applying the change (often called "building an index", or, for existing indexes, "reindexing") requires time. It is not instantaneous: the repository has to be scanned for data to be indexed.
 
 ### What is Blue-Green Deployment {#what-is-blue-green-deployment}
 
-Blue-Green deployment can reduce downtime (it allows for zero downtime upgrades) and provides fast rollbacks. The old version of the application (blue) runs at the same time as the new version of the application (green).
+Blue-Green deployment can reduce downtime. It also allows for zero downtime upgrades and provides fast rollbacks. The old version of the application (blue) runs at the same time as the new version of the application (green).
 
 ### Read-Only and Read-Write Areas {#read-only-and-read-write-areas}
 
