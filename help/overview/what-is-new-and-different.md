@@ -118,7 +118,6 @@ Adobe proactively takes care of updating all operational instances of the servic
 
 ## Cloud Manager {#cloud-manager}
 
-
 Adobe Cloud Manager is integral to the continuous upgrade approach of AEM as a Cloud Service, as it controls all updates to your instances - this is mandatory. 
 
 Updates can be triggered by Adobe when a new version of the cloud service is available. Alternatively you can trigger your application updates using the pipelines provided by Cloud Manager.
@@ -342,36 +341,4 @@ Assets offering includes next-generation asset processing in the cloud and high 
 
 For details, see [overview and introduction to Assets as a Cloud Service](/help/assets/overview.md).
 
-<!--
 
-#### Previous Versions {#previous-versions-aem-sites}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-sites}
-
-tbc
-
--->
-
-<!--
-
-#### Previous Versions* {#previous-versions-aem-assets}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-assets}
-
-tbc 
-
--->
-
-<!--
-
-### Miscellaneous {#miscellaneous}
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-miscellaneous}
-
-Additionally???
-
--->
