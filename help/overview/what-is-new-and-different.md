@@ -112,29 +112,12 @@ Adobe proactively takes care of updating all operational instances of the servic
 
   * Will be released via a predictable monthly schedule.
 
->[!NOTE]
->
->This is achieved using the [Cloud Manager](#cloud-manager).
-
-## Cloud Manager {#cloud-manager}
 
 >[!NOTE]
 >
 >For further details see [Deployment Architecture](/help/core-concepts/architecture.md#deployment-architecture).
 
-### Previous Versions {#previous-versions-cloud-manager}
-
-The Cloud Manager was used as a deployment tool for Managed Services instances of AEM.
-
-The key differences between Cloud Manager for AMS and for Cloud Services, is when a tenant is created, it will be populated with credits based on the SKUs which have been purchased by the customer.
-
->[!NOTE]
->Although critical from an operational perspective, the concept of *credits* does not directly appear in the Cloud Manager UI.
-
-Creating a normal program does not consume any credits, but a core credit must exist in order to create one.
-To learn in detail about how different programs are created, refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Adobe Cloud Manager is integral to the continuous upgrade approach of AEM as a Cloud Service, as it controls all updates to your instances - this is mandatory. 
 
@@ -359,36 +342,3 @@ Assets offering includes next-generation asset processing in the cloud and high 
 
 For details, see [overview and introduction to Assets as a Cloud Service](/help/assets/overview.md).
 
-<!--
-
-#### Previous Versions {#previous-versions-aem-sites}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-sites}
-
-tbc
-
--->
-
-<!--
-
-#### Previous Versions* {#previous-versions-aem-assets}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-assets}
-
-tbc 
-
--->
-
-<!--
-
-### Miscellaneous {#miscellaneous}
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-miscellaneous}
-
-Additionally???
-
--->
