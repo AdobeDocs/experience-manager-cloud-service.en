@@ -22,7 +22,7 @@ AEM as a Cloud Service offers IMS authentication support only for Author, Admin 
 
 ## Architecture {#architecture}
 
-IMS Authentication works using OAuth protocol between AEM and the Adobe IMS endpoint. Once a user has been added to IMS and has an Adobe Identity, they can log in to AEM Managed Services instances using IMS credentials.
+IMS Authentication works using OAuth protocol between AEM and the Adobe IMS endpoint. Once a user has been added to IMS and has an Adobe Identity, they can log in to AEM author service using IMS credentials.
 
 The user login flow is shown below, the user will be redirected to IMS and optionally to the customer IDP for SSO and then redirected back to AEM.
 
