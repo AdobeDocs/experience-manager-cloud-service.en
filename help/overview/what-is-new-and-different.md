@@ -112,7 +112,6 @@ Adobe proactively takes care of updating all operational instances of the servic
 
   * Will be released via a predictable monthly schedule.
 
-
 >[!NOTE]
 >
 >For further details see [Deployment Architecture](/help/core-concepts/architecture.md#deployment-architecture).
@@ -341,4 +340,5 @@ Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS s
 Assets offering includes next-generation asset processing in the cloud and high performance asset ingestion and search.
 
 For details, see [overview and introduction to Assets as a Cloud Service](/help/assets/overview.md).
+
 
