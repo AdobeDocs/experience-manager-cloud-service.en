@@ -1,6 +1,6 @@
 ---
-sub-product: Implementing AEM as a Cloud Service
-user-guide-title: Implementing AEM as a Cloud Service
+sub-product: Implementing for AEM as a Cloud Service
+user-guide-title: Implementing for AEM as a Cloud Service
 ---
 
 # Implementing {#implementing}
