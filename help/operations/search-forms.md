@@ -409,7 +409,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Status</td>
-   <td>...</td>
+   <td>Search according to the approval and checkout status.</td>
    <td>This is a complex predicate composed from multiple predicates:
     <ul>
      <li>Approval Status</li>
@@ -432,7 +432,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Templates</td>
-   <td>...</td>
+   <td>Search according to the selected template.</td>
    <td>
     <ul>
      <li>Placeholder</li>
@@ -443,7 +443,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Translation Status</td>
-   <td>...</td>
+   <td>Search according to the translation status.</td>
    <td>
     <ul>
      <li>Field Label</li>
