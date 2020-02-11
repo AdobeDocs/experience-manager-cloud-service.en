@@ -1,4 +1,4 @@
 ---
-title: AEM as a Cloud Service Development Guidelines
+title: AEM as a Cloud Service SDK
 description: To be completed 
 ---
