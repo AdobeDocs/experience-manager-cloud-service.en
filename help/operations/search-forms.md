@@ -99,7 +99,7 @@ The following predicates are available, dependent on the configuration:
    <th>Settings</th>
   </tr>
   <tr>
-   <td>Analytics </td>
+   <td>Analytics</td>
    <td>Search/filter capabilities in the Sites browser when showing analytics powered data. Analytics search filters load up to match the mapped customized analytics columns.</td>
    <td>
     <ul>
@@ -108,7 +108,62 @@ The following predicates are available, dependent on the configuration:
     </ul> </td>
   </tr>
   <tr>
-   <td>Date Range </td>
+   <td>Approval Status</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Author</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Placeholder</li>
+     <li>Property Name*</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Checked Out By</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Placeholder</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Checkout Status</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Components</td>
+   <td>Allows an author to search/filter for pages that have a specific component on it. For example an image gallery.<br /> </td>
+   <td>
+    <ul>
+     <li>Placeholder</li>
+     <li>Property Name*</li>
+     <li>Property Depth</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Date Range</td>
    <td>Search assets created within a specified range for a date property. In the Search panel, you can specify Start and End dates.</td>
    <td>
     <ul>
@@ -121,69 +176,322 @@ The following predicates are available, dependent on the configuration:
     </ul> </td>
   </tr>
   <tr>
-    <td>Fulltext </td>
-    <td>Search predicate for full-text searches.</td>
-    <td>
-      <ul>
-        <li>Field Label</li>
-        <li>Placeholder</li>
-        <li>Property Name</li>
-        <li>Description</li>
-      </ul> 
-    </td>
+   <td>Expiry Status</td>
+   <td>Search assets based on expiry status.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>File Size</td>
+   <td>Search assets based on their size.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Option Path</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>File Type</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Mimetype Path</li>
+     <li>Description<li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Fulltext</td>
+   <td>Search predicate for full-text searches.</td>
+   <td>
+    <ul>
+     <li>Placeholder</li>
+     <li>Property Name</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Group</td>
+   <td>Search predicate for group (only used within the Insights Predicate).</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Description</li>
+    </ul> </td>
   </tr>
   <tr>
    <td>Hidden Filter</td>
    <td>A filter on property and value, not visible to the user.</td>
    <td>
     <ul>
-     <li>Property Name</li>
-     <li>Property Value</li>
+     <li>Property Name*</li>
+     <li>Property Value*</li>
      <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Page Status </td>
+   <td>Insights</td>
+   <td>...</td>
+   <td>This is a complex predicate composed from multiple predicates:
+    <ul>
+     <li>Group</li>
+     <li>Range</li>
+     <li>Options</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Member of collection</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Multi Value Property</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Placeholder</li>
+     <li>Property Name*</li>
+     <li>Delimiter Support</li>
+     <li>Input Delimiters</li>
+     <li>Ignore Case</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Options</td>
+   <td><p>The options are content nodes created by the user.</p> <p>See <a href="#addinganoptionspredicate">Adding an Options Predicate</a> for more information.</p> </td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Single Select</li>
+     <li>Add Options</li>
+     <li>Manual</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Options Property</td>
+   <td>Search on a property of the option.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Options node path<br /> </li>
+     <li>Property Depth</li>
+     <li>Single Select</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Page Status</td>
    <td>Search pages according to their status.</td>
    <td>
     <ul>
      <li>Field Label</li>
-     <li>Publish Property Name</li>
-     <li>LiveCopy Property Name</li>
+     <li>Publish Property Name<*/li>
+     <li>Locked Pages Property Name*</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Path</td>
+   <td>Search assets located under a specific path.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Add Search Paths</li>
      <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Path Browser</td>
-   <td>Search assets located under a specific path.</td>
-   <td>
-    <ul>
-     <li>Select Path</li>
-     <li>Add Search Path</li>
-     <li>Description</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Tags </td>
-   <td>Search based on tags.</td>
+   <td>Provide a path browser to search.</td>
    <td>
     <ul>
      <li>Placeholder</li>
+     <li>Root path</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Path Hidden</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Property Name</li>
+     <li>Property Value</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Property</td>
+   <td>Search on a specified property.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Placeholder</li>
+     <li>Property Name</li>
+     <li>Partial Search</li>
+     <li>Ignore Case</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Publish Status</td>
+   <td>Search assets based on their publish status</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
      <li>Property Name*</li>
      <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Translation Status </td>
-   <td>Search based on the translation status.</td>
+   <td>Range</td>
+   <td>Search resources that lie within a specified range. In the Search panel, you can specify minimum and maximum values for the range.</td>
    <td>
     <ul>
-     <li>Translation Status</li>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Rating</td>
+   <td>Search assets according to their rating.<br /> </td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Option Path</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Relative Date</td>
+   <td>Search assets based on the relative date of their creation<br /> </td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Relative Date</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Slider Range</td>
+   <td>A common search predicate extending the range predicate with the slider capability. The value of the property searched on must be between the slider limits.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Options node path</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Status</td>
+   <td>...</td>
+   <td>This is a complex predicate composed from multiple predicates:
+    <ul>
+     <li>Approval Status</li>
+     <li>Checkout Status</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Tags</td>
+   <td>Search based on tags.</td>
+   <td>
+    <ul>
+     <li>Field Lavel</li>
+     <li>Placeholder</li>
+     <li>Property Name*</li>
+     <li>Show match all tags option</li>
+     <li>Root tags path</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Templates</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Placeholder</li>
+     <li>Property Name*</li>
+     <li>Description</li>
+    </ul> 
+   </td>
+  </tr>
+  <tr>
+   <td>Translation Status</td>
+   <td>...</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
     </ul> 
    </td>
   </tr>
  </tbody>
 </table>
+
+<!--
+  <tr>
+   <td>Date ???</td>
+   <td>Slider-based search of assets based on a date property.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Asset Last Modified ?????</td>
+   <td>Date the asset was last modified.<br /> </td>
+   <td>A customized predicate, based on the Date Predicate.</td>
+  </tr>
+  <tr>
+   <td>Range Options ???</td>
+   <td>A specific search predicate for Assets and the same as common Slider Predicate. Is still available due to backward compatibilty issues.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Option Path</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Tag </td>
+   <td>Search assets based on tags. You can configure the Path property to populate various tags in the Tags list.</td>
+   <td>
+    <ul>
+     <li>Field Label</li>
+     <li>Property Name*</li>
+     <li>Option Path</li>
+     <li>Description</li>
+    </ul> </td>
+  </tr>
+-->
 
 <!--
 >[!NOTE]
@@ -252,18 +560,18 @@ Dependent on the predicate a selection of settings are available for configurati
 * **Publish and Live Copy Property Name(s)**
   The labels for the publish and live copy checkboxes for the Sites specific predicate.
 
-* The &ast; on the field labels in the **Settings** tab means the fields are required and if left blank an error message will appear
+* The &ast; on the field labels in the **Settings** tab means the fields are mandatory and if left blank an error message will appear.
 
 ## Configuring Your Search Forms {#configuring-your-search-forms}
 
 ### Creating/Opening a Customized Configuration {#creating-opening-a-customized-configuration}
 
-1. Navigate to **Tools**, **Operations**, **Search Forms**.
+1. Navigate to **Tools**, **General**, **Search Forms**.
 
 1. Select the configuration that you want to customize.
 1. Use the **Edit** icon to open the configuration for updating.
 1. If a new customization you will probably want to [add new predicate fields and define the settings](#add-edit-a-predicate-field-and-define-field-settings) as required. If an existing customization you can select an existing field and [update the settings](#add-edit-a-predicate-field-and-define-field-settings).
-1. Select **Done** to save the configuration.
+1. Select **Done** to save the configuration. Your changes can be seen next time the configuration is used.
 
    >[!NOTE]
    >
@@ -295,7 +603,7 @@ You can add or edit fields and define/update their settings:
 
    ![modify predicate](assets/csf-modify-predicate.png)
 
-1. Make your changes as required and confirm with **Done**.
+1. Make your changes as required and confirm with **Done**. Your changes can be seen next time the configuration is used.
 
 ### Previewing the Search Configuration {#previewing-the-search-configuration}
 
@@ -391,6 +699,7 @@ The following example (to search according to the template used to create a page
 1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results:
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
+-->
 
 ## User Permissions {#user-permissions}
 
@@ -416,4 +725,3 @@ The following table lists the permissions required to perform edit, delete, and 
   </tr>
  </tbody>
 </table>
--->
