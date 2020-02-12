@@ -131,7 +131,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Checked Out By</td>
-   <td>...</td>
+   <td>Search for assets checked out by a specific user.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -142,7 +142,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Checkout Status</td>
-   <td>...</td>
+   <td>Search for assets with a specific checkout status.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -198,7 +198,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>File Type</td>
-   <td>...</td>
+   <td>Search assets based on the file/mime type.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -239,7 +239,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Insights</td>
-   <td>...</td>
+   <td>Search according to a selection of Insights parameters.</td>
    <td>This is a complex predicate composed from multiple predicates:
     <ul>
      <li>Group</li>
@@ -250,7 +250,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Member of collection</td>
-   <td>...</td>
+   <td>Search for assets that are members of a collection</td>
    <td>
     <ul>
      <li>Description</li>
@@ -259,7 +259,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Multi Value Property</td>
-   <td>...</td>
+   <td>Search on multiple values of a specified property.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -332,11 +332,11 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Path Hidden</td>
-   <td>...</td>
+   <td>A filter on path, not visible to the user.</td>
    <td>
     <ul>
-     <li>Property Name</li>
-     <li>Property Value</li>
+     <li>Property Name (`path`)</li>
+     <li>Property Value (`/content/dam`)</li>
     </ul> 
    </td>
   </tr>
