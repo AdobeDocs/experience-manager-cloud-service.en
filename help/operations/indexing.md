@@ -1,9 +1,9 @@
 ---
-title: Indexing
-description: Indexing 
+title: Content Search and Indexing
+description: Content Search and Indexing 
 ---
 
-# Indexing {#indexing}
+# Content Search and Indexing {#indexing}
 
 ## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
