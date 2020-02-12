@@ -132,7 +132,7 @@ Cloud Manager is:
 
 Specifically, the number of and the type of AEM programs that can be created from the Cloud Manager is derived either:
 
-* from the customer licensing agreement, in the form of a pool of credits,
+* from the customer licensing agreement,
 
 * from internal-driven actors when AEM as a Cloud Service is used for enablement, or training,
 
