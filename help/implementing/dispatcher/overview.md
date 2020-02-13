@@ -878,7 +878,7 @@ Instead, the replication flush agent should be used.This can be done using the R
 
 The diagram below illustrates this.
 
-![CDN](assets/cdn.png "CDN") 
+![CDN](assets/cdn.png "CDN")
 
 If there is a concern that the dispatcher cache isn't clearing, contact customer support who can flush the dispatcher cache if necessary.
 
