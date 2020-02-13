@@ -34,8 +34,6 @@ There are intrinsic differences between these previous approaches and AEM as a C
 >
 >For further details on the On-Premise and Managed Service versions, see the documentation set for [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
 
-<!-- * [Miscellaneous](#miscellaneous) -->
-
 ## Architecture {#architecture}
 
 >[!NOTE]
@@ -84,11 +82,9 @@ This enables autoscaling for varying usage patterns:
 
 ## Upgrades {#upgrades}
 
-<!--
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
--->
+>For further details see the [Deploying Introduction](/help/implementing/deploying/overview.md).
 
 <!--
 ### Previous Versions {#previous-versions-upgrades}
@@ -162,11 +158,9 @@ Currently Cloud Manager is able to create environments in 3 geographical regions
 
 ## Onboarding {#onboarding}
 
-<!--
 >[!NOTE]
 >
->For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
--->
+>For further details see [Onboarding](/help/onboarding/home.md).
 
 <!--
 ### Previous Versions {#previous-versions-onboarding}
@@ -204,13 +198,7 @@ It is also significantly different as there is now:
 
 >[!NOTE]
 >
->For further details start with the [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) documentation.
-
-<!--
->[!NOTE]
->
->For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
---> 
+>For further details you can start with [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) and [Developing - The WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 <!--
 ### Previous Versions {#previous-versions-developing}
@@ -299,11 +287,9 @@ Operations for AEM as a Cloud Service are also supported by a new monitoring, re
 
 ## Identity Management {#identity-management}
 
-<!--
 >[!NOTE]
 >
->For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
--->
+>For further details see [Security - IMS Support](/help/security/ims-support.md).
 
 <!--
 ### Previous Versions {#previous-versions-identity-management}
@@ -332,11 +318,9 @@ This combines the benefits of:
 
 ## Authoring User Interface {#authoring-user-interface}
 
-<!--
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
--->
+>For further details, the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) is a good starting point.
 
 <!--
 ### Previous Versions {#previous-versions-authoring}
