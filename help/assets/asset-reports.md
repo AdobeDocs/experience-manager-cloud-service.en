@@ -2,7 +2,6 @@
 title: Asset reports
 description: This article describes various reports around assets in AEM Assets and how to generate reports.
 contentOwner: AG
-
 ---
 
 # Asset Reports {#asset-reports}

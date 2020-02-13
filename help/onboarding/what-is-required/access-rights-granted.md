@@ -1,13 +1,11 @@
 ---
 title: Access Rights Granted - What Is Required
-seo-title: Access Rights Granted - What Is Required
 description: Access Rights Granted - What Is Required
-seo-description: Access Rights Granted - What Is Required 
 ---
 
 # Access Rights Granted {#access-rights-granted} 
 
-Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] services, will need to have their own **Adobe ID**. 
+Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] service, will need to have their own **Adobe ID**. 
 
 ## User Identity Types {#user-identity-types}
 

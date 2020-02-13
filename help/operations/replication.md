@@ -1,8 +1,6 @@
 ---
 title: Replication
-seo-title: Replication
 description: Distribution and Troubleshooting replication.
-seo-description: Distribution and Troubleshooting replication. 
 ---
 
 # Replication {#replication}

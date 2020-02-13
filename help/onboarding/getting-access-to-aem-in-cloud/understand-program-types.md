@@ -1,8 +1,6 @@
 ---
 title: Understanding Program and Program Types
-seo-title: Understanding Program and Program Types - Cloud Services
 description: Understanding Program and Program Types - Cloud Services
-seo-description: Understanding Program and Program Types - Cloud Services 
 ---
 
 # Understanding Programs and Program Types {#understanding-programs} 

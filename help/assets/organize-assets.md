@@ -2,7 +2,6 @@
 title: Organize digital assets
 description: Organize your digital assets using various methods provided in Adobe Experience Manager Assets.
 contentOwner: AG
-
 ---
 
 # Organize Digital Assets{#organize-digital-assets}

@@ -1,12 +1,6 @@
 ---
 title: Authoring Concepts
-seo-title: Authoring Concepts
 description: Concepts of authoring in AEM
-seo-description: Concepts of authoring in AEM
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 ---
 
 # Authoring Concepts {#authoring-concepts}

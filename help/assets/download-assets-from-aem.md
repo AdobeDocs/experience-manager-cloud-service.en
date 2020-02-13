@@ -2,7 +2,6 @@
 title: Download assets from AEM
 description: Learn how to download assets from AEM and enable or disable the download functionality.
 contentOwner: AG
-
 ---
 
 # Download assets from AEM {#download-assets-from-aem}

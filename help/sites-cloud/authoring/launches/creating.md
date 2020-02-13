@@ -1,12 +1,6 @@
 ---
 title: Creating Launches
-seo-title: Creating Launches
 description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
-seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 ---
 
 # Creating Launches {#creating-launches}

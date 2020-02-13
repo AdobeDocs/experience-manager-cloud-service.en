@@ -1,8 +1,6 @@
 ---
 title: Variations - Authoring Fragment Content
-seo-title: Variations - Authoring Fragment Content
 description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
-seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 ---
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
@@ -22,13 +20,11 @@ Perform a range of other actions depending on the data-type being edited; for ex
 
 * [Upload Content](#uploading-content)
 
-<!--
 * [View key statistics](#viewing-key-statistics) (about multi-line text)
 
 * [Summarize Text](#summarizing-text)
 
 * [Synchronize variations with Master content](#synchronizing-with-master)
--->
 
 >[!CAUTION]
 >
@@ -83,14 +79,11 @@ The following actions are also available (for all the [formats](#formats)) when 
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
 
-<!--
 * [Show Text Statistics](#viewing-key-statistics)
 
 * [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
-* 
+ 
 * [Summarize Text](#summarizing-text)
-
--->
 
 ### Formats {#formats}
 
@@ -159,19 +152,18 @@ You can also open the full-screen editor for further [actions](#actions).
 >
 >If you switch between **Rich Text** and **Markdown** you might experience unexpected effects with Block Quotes and Code Blocks, as these two formats can have differences in how they are handled.
 
-<!--
 ### Viewing Key Statistics {#viewing-key-statistics}
 
-When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. For example:
+When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. 
+
+For example:
 
 ![statistics](assets/cfm-variations-04.png)
--->
 
 ### Uploading Content {#uploading-content}
 
 To ease the process of authoring content fragments you can upload text, prepared in an external editor, and add it directly to the fragment.
 
-<!--
 ### Summarizing Text {#summarizing-text}
 
 Summarizing text is designed to help users reduce the length of their text to a predefined number of words, while keeping the key points and overall meaning.
@@ -182,7 +174,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 
 >[!CAUTION]
 >
->The content fragment must have a valid language folder as an ancestor; this is used to determine the language model to be used.
+>The content fragment must have a valid language folder (ISO Code) as an ancestor; this is used to determine the language model to be used.
 >
 >For example, `en/` as in the following path:
 >
@@ -217,7 +209,6 @@ Summarizing text is designed to help users reduce the length of their text to a 
    ![summarization comparison](assets/cfm-variations-06.png)
 
 6. Select **Summarize** to confirm the changes.
--->
 
 ### Annotating a Content Fragment {#annotating-a-content-fragment}
 
@@ -344,7 +335,6 @@ To delete an existing variation:
 >
 >You cannot delete **Master**.
 
-<!--
 ### Synchronizing with Master {#synchronizing-with-master}
 
 **Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevent to the variations and, therefore, need to be propagated to them..
@@ -372,8 +362,8 @@ When editing a variation you have access to the action for synchronizing the cur
 
     * green indicates content added (to the variation)
     * red indicates content removed (from the variation)
+    * blue indicates replaced text
 
    ![synchronizing with master](assets/cfm-variations-11.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
--->

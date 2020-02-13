@@ -2,7 +2,6 @@
 title: Extending asset editor
 description: Learn how to extend the capabilities of assets editor using custom components.
 contentOwner: AG
-
 ---
 
 # Extending Asset Editor {#extending-asset-editor}

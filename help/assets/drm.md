@@ -2,7 +2,6 @@
 title: Digital Rights Management in Adobe Experience Manager Assets
 description: Learn how to manage asset expiration states and information for licensed assets in AEM.
 contentOwner: AG
-
 ---
 
 # Digital rights management in Experience Manager Assets {#digital-rights-management-in-assets}

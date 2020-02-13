@@ -1,7 +1,6 @@
 ---
 title: Notable changes in Adobe Experience Manager Assets as a Cloud Service
 description: Notable Changes to Adobe Experience Manager Assets in AEM Cloud Service as compared to Experience Manager 6.5
-
 ---
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}

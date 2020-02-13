@@ -1,16 +1,6 @@
 ---
 title: Delivering Dynamic Media Assets
-seo-title: Delivering Dynamic Media Assets
 description: Learn how to deliver dynamic media assets
-seo-description: Learn how to deliver dynamic media assets
-uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
-docset: aem65
-
 ---
 
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
@@ -38,7 +28,7 @@ For more information, see the following topics:
 * [Linking URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Delivering Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md)
-* I [nvalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [Invalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [Using Rulesets to Transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}

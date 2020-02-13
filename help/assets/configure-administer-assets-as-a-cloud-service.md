@@ -2,7 +2,6 @@
 title: Configure and administer Adobe Experience Manager Assets as a Cloud Service
 description: Know about the configuration and administration tasks required for Assets as a Cloud Service
 contentOwner: AG
-
 ---
 
 # Configure and administer Assets as a Cloud Service {#config-administer-assets-cloud-service}

@@ -1,12 +1,6 @@
 ---
 title: Adding Page Annotations
-seo-title: Adding Page Annotations
 description: Many components directly related to content allow you to add an annotation
-seo-description: Many components directly related to content allow you to add an annotation
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Adding Page Annotations {#adding-page-annotations}

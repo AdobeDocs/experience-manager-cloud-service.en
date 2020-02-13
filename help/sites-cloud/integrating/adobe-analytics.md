@@ -1,8 +1,6 @@
 ---
 title: Integrating with Adobe Analytics
-seo-title: Integrating with Adobe Analytics
 description: Integrating with Adobe Analytics 
-seo-description: Integrating with Adobe Analytics 
 ---
 
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
@@ -21,6 +19,7 @@ The data includes page and user data, for example:
 
 The pages listed below can help you configure the integration. To be noted that Launch by Adobe is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). Therefore, integrating AEM as a Cloud Service with Launch and Adobe Analytics goes hand-in-hand.
 
+* [Connecting to Adobe Analytics and Creating Frameworks](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html) - Please note that "Analytics frameworks" are legacy in AEM, and their creation does not work in AEM as a Cloud Service because it requires the Classic UI. Launch by Adobe should be used instead, both for variable mapping and for deployment of JS libraries to pages. 
 * [Integrate Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
 * [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
 * [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
@@ -29,7 +28,9 @@ The pages listed below can help you configure the integration. To be noted that 
 * [Configuring Video Tracking for Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-video.html)
 * [Adobe Classifications](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-classifications.html)
 
-
+>[!CAUTION]
+>
+>Adobe Experience Manager as a Cloud Service customers who do not have an existing Analytics account, can request access to the Analytics Foundation Pack for Experience Cloud.  This Foundation Pack provides volume limited use of Analytics.
 
 >[!NOTE]
 >
@@ -39,9 +40,8 @@ The pages listed below can help you configure the integration. To be noted that 
 
 See:
 
-* [Extending the Adobe Analytics Integration](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) for information about developing components that collect user data and customizing the Adobe Analytics framework.
+* [Extending the Adobe Analytics Integration](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) for information about developing components that collect user data and customizing the Adobe Analytics framework. Please note that "Analytics frameworks" are legacy in AEM, and their creation does not work in AEM as a Cloud Service because it requires the Classic UI. Launch by Adobe should be used instead, both for variable mapping and for deployment of JS libraries to pages.
 * The knowledge base article, [Adobe Analytics integration - troubleshooting issues](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), for information about troubleshooting your Adobe Analytics integration.
-
 
 >[!NOTE]
 >
@@ -53,4 +53,3 @@ See:
 >* **Apache HTTP Components Proxy Configuration** to configure the 4.x API;
 >  for example, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-

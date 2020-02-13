@@ -1,14 +1,6 @@
 ---
 title: Configuring Dynamic Media Cloud Service
-seo-title: Configuring Dynamic Media Cloud Service
 description: Information on how to configure Dynamic Media in Adobe Experience Manager Cloud Service.
-seo-description: Information on how to configure Dynamic Media in Adobe Experience Manager Cloud Service.
-uuid: ce43c589-d415-4611-9266-b4e8887e4cdc
-contentOwner: Rick Brough
-topic-tags: dynamic-media
-content-type: reference
-docset: AEM Cloud Service
-
 ---
 
 # Configuring Dynamic Media {#configuring-dynamic-media-scene-mode}

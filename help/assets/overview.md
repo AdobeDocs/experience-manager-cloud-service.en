@@ -2,7 +2,6 @@
 title: Introduction to Assets as a Cloud Service
 description: What's new in Assets as a Cloud Service.
 contentOwner: AG
-
 ---
 
 # Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}

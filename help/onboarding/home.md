@@ -9,9 +9,13 @@ This page lists the self-help resources about onboarding for Experience Manager 
 
 ## Key Onboarding Articles {#key-articles}
 
-* [Logging in for the first time](getting-access-to-aem-in-cloud/first-time-login.md)
-* [Your provisioned environments](what-is-required/environments-provisioned.md)
-* [Foundations of data privacy and protection](data-privacy-and-protection-readiness/foundation-readiness.md)
+This section covers the key articles focussed on:
+
+* requirements for accessing Experience Manager as a Cloud Service
+* understanding roles for users which govern the availability of specific features
+* setting up Cloud Manager git repository
+* accessing Experience Manager as a Cloud Service
+* foundations for data protection and privacy regulations
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
@@ -35,5 +39,6 @@ This page lists the self-help resources about onboarding for Experience Manager 
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

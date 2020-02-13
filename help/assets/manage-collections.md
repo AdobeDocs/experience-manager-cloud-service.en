@@ -2,7 +2,7 @@
 title: Manage assets collections
 description: Understand the concept of collection in AEM Assets. Learn how to collections, manage, edit, and collections with other users.
 contentOwner: AG
-
+mini-toc-levels: 1
 ---
 
 # Manage collections {#manage-collections}
@@ -129,7 +129,7 @@ You can edit the metadata of multiple collections simultaneously. This functiona
    >
    >The Append mode works only for fields that can contain multiple values. For fields that can contain only a single value, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
-## Search {#search}
+## Search {#searching}
 
 The Search feature within Collections supports both [Search for collections](#search-collections) and [Search for assets within a Collection](#search-within-collections).
 

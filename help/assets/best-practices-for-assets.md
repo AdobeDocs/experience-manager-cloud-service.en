@@ -2,7 +2,6 @@
 title: Best Practices for Assets
 description: Depending upon your AEM Assets deployment and features that you use for asset ingestion, rendition generation, and metadata extraction, identifying and adhering to best practices in different areas greatly enhances system stability and performance under load.
 contentOwner: AG
-
 ---
 
 # Best Practices for Assets {#best-practices-for-assets}

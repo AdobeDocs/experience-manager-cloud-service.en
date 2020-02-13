@@ -2,7 +2,6 @@
 title: File formats and MIME types supported by Experience Manager Assets as a Cloud Service
 description: File formats and MIME types supported by Experience Manager Assets as a Cloud Service.
 contentOwner: AG
-
 ---
 
 # Assets supported file formats {#supported-file-formats}
@@ -47,7 +46,6 @@ Columns of the support tables provide the following information:
 
 | File format | GIF | JPEG | PNG | TXT | XMP | Width/Height |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
-| Adobe       | ✓   | ✓    | ✓   | ✓   | ✓   | ✓            |
 | AI          | ✓   | ✓    | ✓   | -   | ✓   | ✓            |
 | COLLAGE     | -   | -    | -   | -   | ✓   | -            |
 | DN          | ✓   | ✓    | ✓   |     | ✓   | ✓            |
@@ -176,4 +174,4 @@ https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#
 
 >[!MORELIKETHIS]
 >
->[Asset processing using asset microservices](asset-microservices-overview.md)
+>* [Asset processing using asset microservices](asset-microservices-overview.md)

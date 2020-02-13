@@ -2,7 +2,6 @@
 title: Metadata Schemata Reference
 description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
 contentOwner: AG
-
 ---
 
 # Metadata Schemata Reference {#metadata-schemata-reference}

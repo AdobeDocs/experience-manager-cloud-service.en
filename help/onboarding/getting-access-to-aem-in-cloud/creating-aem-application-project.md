@@ -1,11 +1,9 @@
 ---
-title: AEM Application Project - Cloud Services
-seo-title: AEM Application Project - Cloud Services
-description: AEM Application Project - Cloud Services
-seo-description: AEM Application Project - Cloud Services 
+title: AEM Application Project - Cloud Service
+description: AEM Application Project - Cloud Service
 ---
 
-# Create an AEM Application Project {#aem-application-project} 
+# Creating an AEM Application Project {#aem-application-project} 
 
 ## Using Wizard to Create an AEM Application Project {#using-wizard-to-create-an-aem-application-project}
 
@@ -29,7 +27,7 @@ Follow the steps below to create an AEM application project in Cloud Manager:
 1. Once the program creation is complete, the **Add Environment** tile appears on the *Program Overview* page. 
    ![](assets/create-wizard4.png)
 
-Refer to [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
+   Refer to [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
 
 ## Setting up your Project {#setting-up-your-project}
 
