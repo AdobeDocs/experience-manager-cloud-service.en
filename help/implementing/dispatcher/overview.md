@@ -767,45 +767,89 @@ of your git repository.
 
 ## Dispatcher and CDN {#dispatcher-cdn}
 
+Publish service content delivery includes:
+
+* CDN (typically managed by Adobe)
+* AEM dispatcher
+* AEM publish
+
 The data flow is as follows:
 
-1. URL put in browser
-2. Request made to CDN mapped in DNS to that domain
-3. If content is fully cached on CDN, CDN serves it to the browser
-4. If content is not fully cached, the CDN calls out (reverse proxy) to the dispatcher
-5. If content is fully cached on dispatcher, dispatcher serves it to the CDN
-6. If content is not fully cached, the dispatcher calls out (reverse proxy) to the AEM publish
-7. Content rendered by browser
+1. The URL is added in the browser
+1. Request made to CDN mapped in DNS to that domain
+1. If content is fully cached on CDN, CDN serves it to the browser
+1. If content is not fully cached, the CDN calls out (reverse proxy) to the dispatcher
+1. If content is fully cached on dispatcher, dispatcher serves it to the CDN
+1. If content is not fully cached, the dispatcher calls out (reverse proxy) to the AEM publish
+1. The content is rendered by the browser, which may also cache it, depending on the headers
+
+Most content is set to expire after five minutes, a threshold which both the dispatcher cache and CDN respect. During redeployments of the publish service, the dispatcher cache is cleared and subsequently warmed up before the new publish nodes accept traffic.
+
+The sections below provide greater detail about content delivery, including CDN configuration and dispatcher caching. 
+
+Information about replication from the author service to the publish service is available [here](/help/operations/replication.md). 
+
+>[!NOTE]
+>Traffic goes through an apache web server, which supports modules including the dispatcher. The dispatcher is used primarily as a cache to limit processing on the publish nodes in order to increase performance.
 
 ### CDN {#cdn}
 
-AEM offers two options:
+AEM offers three options:
 
-1. Managed CDN - AEM's out-of-the-box CDN.
-2. Unmanaged CDN - Customer brings their own CDN and is entirely responsible for managing it.
+1. Adobe Managed CDN - AEM's out-of-the-box CDN. This is the recommended option since it is thoroughly integrated.
+1. Customer Managed CDN - The customer brings their own CDN and is entirely responsible for managing it.
+1. Point to Adobe Managed CDN - the customer points a CDN to AEM's out-of-the-box CDN.
 
-The first option is highly recommended and Adobe is not responsible for the result of any misconfiguration when using the second option.
+>[!CAUTION]
+>The first option is highly recommended. Adobe cannot be held responsible for the result of any misconfiguration if you choose the second option.
 
-#### Managed CDN  {#managed-cdn}
+The second and third options will be allowed on a case-by-case basis. This involves meeting certain pre-requisites including, but not limited to the customer having a legacy integration with their CDN vendor which is difficult to undo.
 
-After Adobe provisions the CDN, you should create a CNAME, mapping your application's domains to an Adobe controlled domain hosted at the managed CDN domain.
+#### Adobe Managed CDN  {#adobe-managed-cdn}
 
-The CDN acts as a layer 7 web application firewall, which requires SSL termination, hence it will need a customer-signed SSL certificate. During the pre-release phase, you have to provide the certificate to Adobe through manual processes.
+Preparing for content delivery by using Adobe's out-of-the-box CDN is simple, as described below:
 
-At the time of GA, you should upload the certificate to Cloud Manager, which will in turn upload it to the CDN. When SSL certificates are expiring, you will be notified so you can refresh the certificates in Cloud Manager.
+1. You will provide the signed SSL certificate and secret key to Adobe by sharing a link to a secure form containing this information. Please coordinate with customer support on this task.
+Note: Aem as a Cloud Service does not support Domain Validated (DV) certificates.
+1. Customer support will then coordinate with you the timing for a CNAME DNS record, pointing their FQDN to `adobe-aem.map.fastly.net`.
+1. You will be notified when the SSL certificates are expiring so you can resubmit the new SSL certificates.
 
-#### Unmanaged CDN {#unmanaged-cdn}
+By default, for an Adobe Managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you should work with customer support to configure these restrictions. 
+
+#### Customer managed CDN {#customer-managed-cdn}
 
 You may manage your own CDN, provided:
 
 1. You have an existing CDN. 
-2. You will manage it.
-3. Your application does not make extensive API calls to the CDN that are not already accommodated in AEM architecture.
-4. AEM as a Cloud Service is able to establish that the end-to-end system functions properly.
-5. You will need to provide Adobe with the whitelist of CDN urls to allow.
+1. It must be a supported CDN. Currently, Akamai is supported. If your organization would like to manage a currently unsupported CDN, please reach out to customer support.
+1. You will manage it.
+1. You must be able to configure CDN to work with Aem as a Cloud Service - see the configuration instructions below.
+1. You have engineering CDN experts that are on call in case related issues arise.
+1. You must provide whitelists of CDN nodes to Cloud Manager, as described in configuration instructions.
+1. You must perform and successfully pass a load test before going to production.
 
-Adobe will provide a AEM Cloud url for to use as your CDN's origin. 
+Configuration instructions:
 
+1. Provide the CDN vendor's whitelist to Adobe by calling the environment create/update API with a list of CIDRs to whitelist.
+1. Set the `X-Forwarded-Host` header with the domain name.
+1. Set the Host header with the origin domain, which is the Aem as a Cloud Service ingress. The value should come from Adobe.
+1. Send the SNI header to the origin. The sni header must be the origin domain.
+1. Set the `X-Edge-Key` which is is needed to route traffic correctly to the AEM servers. The value should come from Adobe.
+
+Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
+
+#### Point to Adobe Managed CDN {#point-to-point-CDN}
+
+Supported if you want to use your existing CDN, but can't satisfy the requirements of a Customer managed CDN. In this case, you manage your own CDN, but point to Adobe's managed CDN. 
+
+Customers must perform and successfully pass a load test before going to production.
+
+Configuration instructions:
+
+1. Set the `X-Forwarded-Host` header with the domain name.
+1. Set Host header with the origin domain, which is Adobe's CDN's ingress. The value should come from Adobe.
+1. Send the SNI header to the origin. Like the Host header, the sni header must be the origin domain.
+1. Set the `X-Edge-Key`, which is needed to route traffic correctly to the AEM servers. The value should come from Adobe.
 
 #### CDN cache invalidation {#CDN-cache-invalidation}
 
@@ -815,27 +859,36 @@ Cache invalidation follows these rules:
 * Client libraries (JavaScript and CSS) are cached indefinitely using the cache-control set to either immutable or 30 days for older browsers which don't respect the immutable value. Note that the client libraries are served on a unique path that changes if the client libraries change. In other words, HTML that references the client libraries will be produced as needed so you can experience new content as it is published.
 * By default, images are not cached.
 
+Prior to accepting live traffic, customers should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
+
 ## Explicit dispatcher cache invalidation {#explicit-invalidation}
 
-Prior to AEM as a Cloud Service, there were 2 ways of invalidating the dispatcher cache.
+As stated previously, traffic goes through an apache web server, which supports modules including the dispatcher. The dispatcher is used primarily as a cache to limit processing on the publish nodes in order to increase performance.
 
-1. Invoke the replication API, specifying the publish dispatcher flush agent
+In general, it won't be necessary to manually invalidate content in the dispatcher, but it is possible if needed, as described below.
+
+Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatcher cache.
+
+1. Invoke the replication agent, specifying the publish dispatcher flush agent
 2. Directly calling the `invalidate.cache` API (e.g. POST /dispatcher/invalidate.cache)
 
 The `invalidate.cache` approach will no longer be supported since it addresses only a specific dispatcher node.
 AEM as a Cloud Service operates at the service level, not the individual node level and thus the invalidation instructions in the [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) documentation are no longer accurate. 
-Instead, the replication API approach should be used. [API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) is available and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) and specifically the CustomStep example issuing a replication action of type ACTIVATE to all available agents. 
+Instead, the replication flush agent should be used.This can be done using the Replication API. The Replication API documentation is available [here](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents. The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
 The diagram below illustrates this.
 
-<!-- [CDN](assets/cdn.png "CDN") -->
+![CDN](assets/cdn.png "CDN") 
 
-<!-- See [Apache and Dispatcher Configuration and Testing](../developing/introduction/developer-experience.md#apache-and-dispatcher-configuration-and-testing) for instructions on how a developer can configure apache and the dispatcher module. -->
+If there is a concern that the dispatcher cache isn't clearing, contact customer support who can flush the dispatcher cache if necessary.
+
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, contact customer support who can flush an Adobe-managed CDN cache as necessary.
 
 ### Dispatcher Cache Invalidation during Activation/Deactivation {#cache-activation-deactivation}
 
-This publish-triggered invalidation is the same as quickstart:
-When the publish instance receives a new version of a page or asset from the author (via the replication and pipeline queue), it uses the flush agent to invalidate appropriate paths on its dispatcher. The updated path is removed from the dispatcher cache, together with its parents, up to some level that you can configure with the [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Like previous versions of AEM, publishing or unpublishing pages will clear the content from the dispatcher cache. If a caching issue is suspected, customers should republish the pages in question.
+
+When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. The updated path is removed from the dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ### Content Freshness and Version Consistency {#content-consistency}
 
