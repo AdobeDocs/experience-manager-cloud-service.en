@@ -7,9 +7,9 @@ description: Release Notes for Release 2020.2.0
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.2.0.
 
-The Release Date is February 13, 2020.
-
 ## Cloud Manager {#cloud-manager}
+
+The Release Date for Cloud Manager Release 2020.2.0 is February 13, 2020.
 
 Follow this section to learn about what is new and the updates for Cloud Manager Release 2020.2.0.
 
