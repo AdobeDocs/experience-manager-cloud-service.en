@@ -228,6 +228,7 @@ Development was an intensive task performed locally, followed by deployment to t
 The new architecture supporting AEM as a Cloud Service involves some key changes to the overall developer experience. One of the major goals for AEM as a Cloud Service is to allow experienced customers (having used AEM either on-premise or in the context of the Adobe Managed Services) to migrate to AEM as a Cloud Service as quickly as possible, without having to rewrite the bulk of their customized code. However, some adjustments might still be needed. 
 
 <!-- adjusting title level -->
+
 ### Cloud Development {#aem-as-a-cloud-service-developing-cloud-development}
 
 For existing AEM applications to run on AEM as a Cloud Service, the following steps are expected:
@@ -257,6 +258,7 @@ Due to the clear separation of code and content, developers can use a particular
 * Service users and user groups
 
 <!-- adjusting title level -->
+
 ### Local Development {#aem-as-a-cloud-service-developing-local-development}
 
 In order to support rapid iterations and development, it is also possible to develop AEM applications outside the AEM as a Cloud Service context. For this purpose, the following artifacts are made available to the developers:
