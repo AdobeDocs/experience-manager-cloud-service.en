@@ -109,7 +109,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Approval Status</td>
-   <td>...</td>
+   <td>Search according to approval status.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -120,7 +120,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Author</td>
-   <td>...</td>
+   <td>Search according to author.</td>
    <td>
     <ul>
      <li>Placeholder</li>
@@ -204,7 +204,7 @@ The following predicates are available, dependent on the configuration:
      <li>Field Label</li>
      <li>Property Name*</li>
      <li>Mimetype Path</li>
-     <li>Description<li>
+     <li>Description</li>
     </ul> 
    </td>
   </tr>
@@ -287,12 +287,12 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Options Property</td>
-   <td>Search on a property of the option.</td>
+   <td>Search on one, or more, properties of the option.</td>
    <td>
     <ul>
      <li>Field Label</li>
      <li>Property Name*</li>
-     <li>Options node path<br /> </li>
+     <li>Options node path</li>
      <li>Property Depth</li>
      <li>Single Select</li>
      <li>Description</li>
@@ -304,7 +304,7 @@ The following predicates are available, dependent on the configuration:
    <td>
     <ul>
      <li>Field Label</li>
-     <li>Publish Property Name<*/li>
+     <li>Publish Property Name*</li>
      <li>Locked Pages Property Name*</li>
      <li>Description</li>
     </ul> </td>
@@ -634,7 +634,7 @@ Once you have customized a configuration this will override the defaults. You ca
 
 >[!NOTE]
 >
->You cannot delete either of the default configurations.
+>You cannot delete the default configurations.
 
 Deleting a customized configuration is done from the console:
 
@@ -644,7 +644,6 @@ Deleting a customized configuration is done from the console:
 
 1. The customized configuration will be deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
 
-<!--
 ### Adding Options Predicates {#adding-options-predicates}
 
 Option predicates (Options, Options Property) allow you to configure an item to be searched for. They are usually used to search for something directly under the page; for example, a property on the page node.
@@ -699,7 +698,6 @@ The following example (to search according to the template used to create a page
 1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results:
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
--->
 
 ## User Permissions {#user-permissions}
 
