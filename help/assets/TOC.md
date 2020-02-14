@@ -43,6 +43,7 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Search facets](search-facets.md)
   + [Extend asset editor](extend-asset-editor.md)
   + [Assets HTTP API](mac-api-assets.md)
+  + [Connected Assets](use-assets-across-connected-assets-instances.md)
   + [Asset reports](asset-reports.md)
   + [Cascading metadata](cascading-metadata.md)
   + [XMP metadata](xmp-metadata.md)

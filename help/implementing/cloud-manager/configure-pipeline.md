@@ -84,7 +84,7 @@ On the home screen, these pipelines are listed in a new card:
 
    Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
 
@@ -93,8 +93,6 @@ On the home screen, these pipelines are listed in a new card:
    * **Edit** - allows editing of the pipeline settings
    * **Build** - navigates to the execution page, from which the pipeline can be executed
    * **Manage Git** - allows the user to get the information necessary to access Cloud Manager Git repository
-
-
 
 ## The Next Steps {#the-next-steps}
 
