@@ -36,7 +36,7 @@ You can download the list of rules here [code-quality-rules.xlsx](/help/implemen
 
 >[!NOTE]
 >
->To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
+>To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
