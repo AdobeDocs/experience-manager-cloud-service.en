@@ -44,8 +44,8 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
    The **Stage testing**, involves the following steps:
 
-    * Product Functional testing: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. See [Understand your Test Results](understand-test-results.md) for details on the testing process.
-   * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default. See [Understand your Test Results](understand-test-results.md) for details on the testing process.
+    * Product Functional testing: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. See [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+   * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default. See [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
 
        ![](assets/stage-testing.png)
 
