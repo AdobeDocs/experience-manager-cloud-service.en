@@ -36,7 +36,7 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
     * Validation: This step ensures that the pipeline is configured to use the currently available resources, for example, that the configured branch exists, the environments are available.
     * Build & Unit Testing: This step runs a containerized build process. See [Create an AEM Application Project](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) for details on the build environment.
-    * Code Scanning: This step evaluates the quality of your application code. See [Understand your Test Results](understand-test-results.md) for details on the testing process.
+    * Code Scanning: This step evaluates the quality of your application code. See [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
     * Build Images: This step has a log file from the process used to build images. This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configuration.
     * Deploy to Stage
 
