@@ -10,7 +10,6 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Managing Environments](cloud-manager/manage-environments.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
-  + [Understanding your Test Results](cloud-manager/understand-test-results.md)
   + [Understanding Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)  
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
@@ -26,6 +25,7 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
   + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+  + [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
 + Extending AEM as a Cloud Service {#extending}
   + [Experience Fragments](developing/extending/experience-fragments.md)
 + Deploying to AEM as a Cloud Service {#deploying}
