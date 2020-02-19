@@ -5,6 +5,7 @@ user-guide-title: Release Notes for AEM as a Cloud Service
 
 # Release Notes {#release-notes}
 
++ [Release Information](/help/release-notes/home.md)
 + Release Notes {#release-notes}
   + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
 + [What is New?](what-is-new.md)
