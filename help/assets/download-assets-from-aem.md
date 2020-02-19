@@ -59,8 +59,6 @@ The `Asset Download Servlet` can be disabled on an AEM Publish instances by upda
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-1. You can manually disable the OSGi component on a Publish instance, by navigating to the OSGi Console at `<aem-host>/system/console/components`. Locate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` and click **[!UICONTROL Disable]**.
-
 >[!MORELIKETHIS]
 >
 >* [Download DRM protected assets](drm.md)

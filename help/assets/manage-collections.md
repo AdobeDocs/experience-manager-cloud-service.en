@@ -98,7 +98,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
-1. With the cursor in the Omnisearch box, press the Return key.
+1. With the cursor in the Omnisearch box, press the Enter key.
 1. Tap/click the GlobalNav icon to display the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
 1. From the **[!UICONTROL Files & Folders]** list, select **[!UICONTROL Files]**.
@@ -220,7 +220,7 @@ You can add a collection to another collection, thereby creating a nested collec
 
 In the Assets user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Creating a saved search also creates a smart collection.
 
-Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRX at the relative location `/content/dam/collections/`.
 
 >[!NOTE]
 >
