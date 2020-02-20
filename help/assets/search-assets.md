@@ -218,7 +218,7 @@ AEM search capability supports searching for collections and searching for asset
 
 Asset selector lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remains intact throughout the selection.
 
-The asset selector uses the HTML5 Window.postMessage message to send data for the selected asset to the recipient. The asset selector is based on Granite's foundation picker vocabulary. By default, the asset selector operates in Browse mode.
+The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. The asset selector is based on Granite's foundation picker vocabulary. By default, the asset selector operates in Browse mode.
 
 You can pass the following request parameters in a URL to launch the asset selector in a particular context:
 
