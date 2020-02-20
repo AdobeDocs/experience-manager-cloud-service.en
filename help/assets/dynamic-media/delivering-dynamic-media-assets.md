@@ -27,7 +27,7 @@ For more information, see the following topics:
 * [Activating hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Linking URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Delivering Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
-* [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md)
+* [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2faq.md)
 * [Invalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [Using Rulesets to Transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
