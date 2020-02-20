@@ -74,7 +74,6 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Dynamic Media Video Profiles](dynamic-media/video-profiles.md)
   + [Dynamic Media Image Profiles](dynamic-media/image-profiles.md)
   + [Smart Imaging](dynamic-media/imaging-faq.md)
-  + [HTTP2 delivery of content](dynamic-media/http2.md)
   + [Delivering Dynamic Media assets](dynamic-media/delivering-dynamic-media-assets.md)
   + [Activating hotlink protection in Dynamic Media](dynamic-media/hotlink-protection.md)
   + [Image Sets](dynamic-media/image-sets.md)
@@ -99,4 +98,4 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Working with Selectors](dynamic-media/working-with-selectors.md)
   + [DHTML Viewer End-of-Life FAQs](dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + [Flash Viewers End-of-Life Notice](dynamic-media/flash-viewers-eol.md)
-  + [HTTP2 Delivery of Content FAQ](dynamic-media/scene7-http2faq.md)
+  + [HTTP2 Delivery of Content FAQ](dynamic-media/http2faq.md)
