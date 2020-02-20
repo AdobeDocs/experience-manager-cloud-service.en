@@ -83,7 +83,7 @@ This means that subsequent (`write`) requests cannot be combined into a single t
   <tr>
    <td>Access</td>
    <td><p>Can be accessed directly.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> <p>For example, to access:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br/> request:<br/> <code>/api/assets/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> </td>
+       /content/dam/wknd/en/adventures/cycling-tuscany</code><br/> request:<br/> <code>/api/assets/wknd/en/adventures/cycling-tuscany.model.json</code></p> </td>
    <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br/> <code>http://localhost:4502/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> </td>
   </tr>
   <tr>
@@ -232,9 +232,7 @@ Usage is via:
 
 For example:
 
-<!-- `https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json` -->
-
-`https://localhost:4502/api/assets/wknd/language-masters/en/adventures/cycling-tuscany.model.json`
+`http://localhost:4502/api/assets/wknd/en/adventures/cycling-tuscany.model.json`
 
 The response is serialized JSON with the content structured as in the content fragment. References are delivered as reference URLs.
 
