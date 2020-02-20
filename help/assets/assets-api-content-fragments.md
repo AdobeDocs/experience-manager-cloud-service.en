@@ -1,6 +1,6 @@
 ---
-title: Content Fragments Support in AEM Assets HTTP API
-description: Learn about Content Fragments Support in AEM Assets HTTP API.
+title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
+description: Learn about Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API.
 ---
 
 # Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}
@@ -14,11 +14,11 @@ description: Learn about Content Fragments Support in AEM Assets HTTP API.
 >* Assets REST API
 >* including support for Content Fragments
 >
->The current implementation of AEM Assets HTTP API is REST.
+>The current implementation of the Assets HTTP API is REST.
 
-The Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) allows developers to access content (stored in AEM) directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete).
+The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete).
 
-The API allows you to operate AEM as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses.
+The API allows you to operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses.
 
 For example, Single Page Applications (SPA), framework-based or custom, require content provided over the HTTP API, often in JSON format.
 
@@ -34,7 +34,7 @@ The Assets REST API:
 
 ## Prerequisites {#prerequisites}
 
-The Assets REST API is available on each out-of-the-box install of a recent AEM version.
+The Assets REST API is available on each out-of-the-box install of a recent Adobe Experience Manager as a Cloud Service version.
 
 ## Key Concepts {#key-concepts}
 
@@ -51,7 +51,9 @@ The HTTP method determines the operation to be executed:
 >
 >The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
+<!--
 The exact format of supported requests is defined in the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference) documentation.
+-->
 
 ### Transactional Behavior {#transactional-behavior}
 
@@ -65,8 +67,8 @@ This means that subsequent (`write`) requests cannot be combined into a single t
  <tbody>
   <tr>
    <td>Aspect</td>
-   <td>Assets REST API<br /> </td>
-   <td>AEM Component<br /> (components using Sling Models)</td>
+   <td>Assets REST API<br/> </td>
+   <td>AEM Component<br/> (components using Sling Models)</td>
   </tr>
   <tr>
    <td>Supported use-case(s)</td>
@@ -81,8 +83,8 @@ This means that subsequent (`write`) requests cannot be combined into a single t
   <tr>
    <td>Access</td>
    <td><p>Can be accessed directly.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> <p>For example, to access:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <code>/api/assets/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> </td>
-   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br /> <code>http://localhost:4502/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> </td>
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br/> request:<br/> <code>/api/assets/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> </td>
+   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br/> <code>http://localhost:4502/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> </td>
   </tr>
   <tr>
    <td>Security</td>
@@ -232,10 +234,7 @@ For example:
 
 <!-- `https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json` -->
 
-<!--
-`https://localhost:4502/api/assets/wknd/language-masters/en/adventures/cycling-tuscany.model.json` -->
-
-`http://localhost:4502/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json`
+`https://localhost:4502/api/assets/wknd/language-masters/en/adventures/cycling-tuscany.model.json`
 
 The response is serialized JSON with the content structured as in the content fragment. References are delivered as reference URLs.
 
