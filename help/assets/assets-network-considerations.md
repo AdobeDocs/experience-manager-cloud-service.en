@@ -83,11 +83,9 @@ Here are some items to consider:
 
 * XMP metadata read/writeback
 * Automatic activation and replication
-* Watermarking
 * Subasset ingestion/page extraction
 * Overlapping workflows.
 
 Here is a customer example for the definition of an asset workflow.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-

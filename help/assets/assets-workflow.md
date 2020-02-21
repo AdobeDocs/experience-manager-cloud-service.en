@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Apply workflows to assets {#applying-workflows-to-assets}
 
-You use workflows in digital assets to activate the asset or create watermarks. Some of the workflows for assets are configured to execute automatically based on certain conditions. For example, the workflow that automatically creates a rendition is automatically executed after an image is edited.
+You use workflows in digital assets to activate the asset. Some of the workflows for assets are configured to execute automatically based on certain conditions. For example, the workflow that automatically creates a rendition is automatically executed after an image is edited.
 
 ## Apply a workflow to an AEM asset {#apply-a-workflow-to-an-aem-asset}
 
