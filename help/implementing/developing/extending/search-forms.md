@@ -659,7 +659,9 @@ The following example (to search according to the template used to create a page
     * `jcr:title` - the field label to be shown in the search rail
     * `value` - the property value to be searched on
 
+<!--
    ![chlimage_1-379](assets/chlimage_1-379.png)
+-->
 
    >[!NOTE]
    >
@@ -692,12 +694,16 @@ The following example (to search according to the template used to create a page
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
 
+<!--
    ![chlimage_1-380](assets/chlimage_1-380.png)
+-->
 
 1. Select **Done** to save your configuration.
 1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results:
 
+<!--
    ![chlimage_1-381](assets/chlimage_1-381.png)
+-->
 
 ## User Permissions {#user-permissions}
 
