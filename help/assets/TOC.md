@@ -32,7 +32,6 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Metadata schema](metadata-schemas.md)
   + [Manage video assets](manage-video-assets.md)
   + [Download assets from AEM](download-assets-from-aem.md)
-  + [Add watermark to assets](add-watermark-to-assets.md)
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
 + Configure, administer and extend Assets {#admin}
