@@ -27,7 +27,7 @@ For more information, see the following topics:
 * [Activating hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Linking URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Delivering Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
-* [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md)
+* [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2faq.md)
 * [Invalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [Using Rulesets to Transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
@@ -35,4 +35,4 @@ For more information, see the following topics:
 
 AEM now supports the delivery of all Dynamic Media content (images and video) over HTTP/2. That is, a published URL or embed code for the image or video is available to be integrated with any application that accepts a hosted asset. That published asset is then delivered by way of HTTP/2 protocol. This method of delivery improves the way browsers and servers communicate, allowing for better response and load times of all your Dynamic Media assets.
 
-See [HTTP/2 Delivery of Content Frequently Asked Questions](/help/assets/dynamic-media/scene7-http2faq.md) to learn more.
+See [HTTP/2 Delivery of Content Frequently Asked Questions](/help/assets/dynamic-media/http2faq.md) to learn more.
