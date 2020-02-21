@@ -5,7 +5,7 @@ description: Configuring Search Forms for Adobe Experience Manager as a Cloud Se
 
 # Configuring Search Forms {#configuring-search-forms}
 
-Use **Search Forms** to customize the selection of search predicates used in the search panels available in various AEM consoles and/or panels of the author environment. Customizing these panels makes the search functionality versatile according your specific needs.
+Use **Search Forms** to customize the search facets and filters available in the various search panels of within the author environment. Customizing these panels makes the search functionality versatile according your specific needs.
 
 A [range of predicate](#predicates-and-their-settings)s are available out-of-the-box. 
 
