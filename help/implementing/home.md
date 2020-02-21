@@ -5,7 +5,7 @@ description: Adobe Experience Manager as a Cloud Service implementation self-hel
 
 # Implementing Applications for AEM as a Cloud Service {#aem-implementation-guide}
 
-This page lists the self-help resources about implementation Experience Manager as a Cloud Service.
+This page lists the self-help resources about implementation for Experience Manager as a Cloud Service. Learn how to customize your Experience Manager as a Cloud Service deployment.
 
 ## Key Implementation Articles {#key-articles}
 

@@ -26,8 +26,8 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
-+ Extending AEM as a Cloud Service {#extending}
-  + [Experience Fragments](developing/extending/experience-fragments.md)
++ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
+  + [Extending Experience Fragments](developing/extending/experience-fragments.md)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
