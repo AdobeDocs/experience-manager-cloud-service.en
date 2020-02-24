@@ -5,11 +5,25 @@ description: Configuring Search Forms for Adobe Experience Manager as a Cloud Se
 
 # Configuring Search Forms {#configuring-search-forms}
 
-Use **Search Forms** to customize the search facets and filters available in the various search panels of within the author environment. Customizing these panels makes the search functionality versatile according your specific needs.
+Adobe Experience Manager as a Cloud Service comes with a powerful [Search](/help/sites-cloud/authoring/getting-started/search.md) mechanism. 
 
-A [range of predicate](#predicates-and-their-settings)s are available out-of-the-box. 
+In combination with this there are a also set of predefined **Search Forms** to help you to filter your content. These hold predefined facets such as **Modified Date**, **Publish Status**, or **Livecopy Status** to help you quickly drill down to the resources you need.
 
-You can [configure the search forms](#configuring-your-search-forms) used within various consoles and the asset browser (when editing pages). The [dialogs for configuring these forms](#configuring-your-search-forms) can be accessed via:
+![search and filter usage](assets/csf-usage.png)
+
+Together these aim to help you locate your content quickly and easily from:
+
+* [Search and Filter](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* the [Assets Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (when editing pages)
+
+>[!NOTE]
+>
+>You can configure the underlying [Content Search and Indexing](/help/operations/indexing.md) service.
+
+Using **Search Forms**, you can customize, and extend, these panels, according to your specific needs. 
+
+The **Search Forms** provide an out-of-the-box selection of [predicates](#predicates-and-their-settings) that you can combine and define. The [dialogs for configuring these forms](#configuring-your-search-forms) can be accessed via:
 
 * **Tools**
 
@@ -17,7 +31,9 @@ You can [configure the search forms](#configuring-your-search-forms) used within
 
         * **Search Forms**
 
-When you first access this console you can see that all the configurations have a padlock symbol. This indicates that the appropriate configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized the configuration the lock will disappear - unless you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
+## Default Forms {#default-forms}
+
+When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. This indicates that the corresponding configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized, and saved, a configuration the lock will disappear. It will reappear when you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
 
 ![configuring search forms overview](assets/csf-overview.png)
 
