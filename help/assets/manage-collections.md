@@ -1,16 +1,15 @@
 ---
-title: Manage assets collections
-description: Understand the concept of collection in AEM Assets. Learn how to collections, manage, edit, and collections with other users.
+title: Manage digital assets collections
+description: Understand the concept of collection in Adobe Experience Manager Assets. Learn how to collections, manage, edit, and collections with other users.
 contentOwner: AG
 mini-toc-levels: 1
 ---
 
 # Manage collections {#manage-collections}
 
-A collection is a set of assets within Adobe Experience Manager (AEM) Assets. Use collections to share assets between users.
+A collection is a set of assets within Adobe Experience Manager Assets. Use collections to share assets between users. The set can be static collection or a dynamic collection that is based on search results.
 
-* A collection can include assets from different locations.
-* You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.
+Unlike folders, a collection can include assets from different locations. You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.
 
 You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections.
 
@@ -18,14 +17,13 @@ Collections are of the following types, based on the way they collate assets:
 
 * A collection that contains a static reference list of assets, folders, and other collections.
 
-* A Smart collection that dynamically includes assets based on a search criteria.
+* A smart collection that dynamically includes assets based on a search criteria.
 
-## Navigate the collections console {#navigate-the-collections-console}
+## Access the collections console {#navigate-the-collections-console}
 
 To open the **[!UICONTROL Collections]** console:
 
-1. Tap or click the AEM logo.
-1. From the Navigation page, go to **[!UICONTROL Assets]** &gt; **[!UICONTROL Collections]**. The **[!UICONTROL Collections]** console is displayed.
+To open the **[!UICONTROL Collections]**, tap or click the Experience Manager logo. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Create a collection {#create-a-collection}
 
@@ -49,15 +47,15 @@ You can create a collection with static references, for example a collection wit
 
    >[!NOTE]
    >
-   >AEM Assets lets you create review tasks for a collection similar to the way you create review tasks for an assets folder.
+   >Experience Manager Assets lets you create review tasks for a collection similar to the way you create review tasks for an assets folder.
 
    To add assets to the collection, navigate to the Assets user interface. For details, see [Add assets to a collection](#add-assets-to-a-collection).
 
-### Create collections using Dropzone {#create-collections-using-dropzone}
+### Create collections using dropzone {#create-collections-using-dropzone}
 
 You can drag assets from the Assets UI to a collection. You can also create a copy of a collection and drag the assets there.
 
-1. From the Assets UI, select the assets you want to add to a collection.
+1. From the Assets user interface, select the assets you want to add to a collection.
 1. Drag the assets to the **[!UICONTROL Drop in Collection]** zone. Alternatively, tap/click the **[!UICONTROL To Collection]** icon from the toolbar.
 1. In the **[!UICONTROL Add To Collection]** page, tap/click the **[!UICONTROL Create Collection]** icon from the toolbar. If you want to add the assets to an existing collection, select it from the page, and tap/click **[!UICONTROL Add]**. By default, the most recently updated collection is selected.
 1. In the **[!UICONTROL Create New Collection]** dialog, specify a name for the collection. If you want the collection to be accessible to all users, select **[!UICONTROL Public Collection]**.
@@ -203,7 +201,7 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
 
 You can add a collection to another collection, thereby creating a nested collection.
 
-1. From the Collections console, select the desired collection or group of collections, and tap or click the **[!UICONTROL To Collection]** icon in the toolbar.
+1. From the Collections console, select the desired collection or group of collections, and tap or click **[!UICONTROL To Collection]** in the toolbar.
 1. From the **[!UICONTROL Add To Collection]** page, select the collection in which to add the collection.
 
    >[!NOTE]
@@ -220,7 +218,7 @@ You can add a collection to another collection, thereby creating a nested collec
 
 In the Assets user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Creating a saved search also creates a smart collection.
 
-Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRX at the relative location `/content/dam/collections/`.
+Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
 
 >[!NOTE]
 >
@@ -230,22 +228,23 @@ Editing saved searches is the same as editing smart collections. For details, se
 
 To delete saved searches, follow these steps:
 
-1. Navigate to the Assets user interface, and tap/click **[!UICONTROL Search]** on the toolbar.
-1. With the cursor in the Omnisearch box, press the Return key.
+1. In the Assets user interface, tap/click the search icon from the toolbar.
+
+1. With the cursor in the Omnisearch field, press the Enter key.
 1. Click or tap the GlobalNav icon to display the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, tap/click **[!UICONTROL Delete]** next to the smart collection you want to delete.
 1. In the dialog, tap/click **[!UICONTROL Delete]** to delete the saved search.
 
-## Run a workflow on a collection {#run-a-workflow-on-a-collection}
+## Execute a workflow on a collection {#run-a-workflow-on-a-collection}
 
 You can run a workflow for the assets within a collection. If the collection contains nested collections, the workflow also runs on the assets within the nested collections. However, if the collection and the nested collection contain duplicate assets, the workflow only runs once for such assets.
 
 1. From the Collections console, select a collection on which you want to run a workflow.
-1. Tap/click the GlobalNav icon, and choose **Timeline** from the list.
-1. From the timeline, click or tap the Caret icon at the bottom, and then tap/click **Start Workflow**.
-1. In the **Start Workflow** section, select a workflow model from the list. For example, select the **DAM Update Asset** model.
-1. Enter a title for the workflow, and tap/click **Start**.
-1. In the dialog, tap/click **Proceed**. The workflow runs on all the assets in the collection.
+1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. From the timeline, click or tap the Caret icon at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
+1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
+1. Enter a title for the workflow, and tap/click **[!UICONTROL Start]**.
+1. In the dialog, tap/click **[!UICONTROL Proceed]**. The workflow runs on all the assets in the collection.
 
 >[!MORELIKETHIS]
 >
