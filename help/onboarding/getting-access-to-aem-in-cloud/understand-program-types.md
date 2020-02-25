@@ -7,6 +7,10 @@ description: Understanding Program and Program Types - Cloud Services
 
 In Cloud Manager you have the Tenant entity at the very top which can have multiple Programs within it.  Each Program can contain no more than one Production environment, and multiple non-production environments. 
 
+The following diagram shows the hierarchy of entities in Cloud Manager.
+
+   ![image](assets/program-types1.png)
+
 ## Program Types {#program-types}
 
 A user can create a **Sandbox** or a **Regular** program. 
