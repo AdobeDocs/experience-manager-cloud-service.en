@@ -5,11 +5,25 @@ description: Configuring Search Forms for Adobe Experience Manager as a Cloud Se
 
 # Configuring Search Forms {#configuring-search-forms}
 
-Use **Search Forms** to customize the search facets and filters available in the various search panels of within the author environment. Customizing these panels makes the search functionality versatile according your specific needs.
+Adobe Experience Manager as a Cloud Service comes with a powerful [Search](/help/sites-cloud/authoring/getting-started/search.md) mechanism. 
 
-A [range of predicate](#predicates-and-their-settings)s are available out-of-the-box. 
+In combination with this there are a also set of predefined options to help you to filter your content. These hold predefined facets such as **Modified Date**, **Publish Status**, or **Livecopy Status** to help you quickly drill down to the resources you need.
 
-You can [configure the search forms](#configuring-your-search-forms) used within various consoles and the asset browser (when editing pages). The [dialogs for configuring these forms](#configuring-your-search-forms) can be accessed via:
+![search and filter usage](assets/csf-usage.png)
+
+Together these aim to help you locate your content quickly and easily from:
+
+* [Search and Filter](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* the [Assets Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (when editing pages)
+
+>[!NOTE]
+>
+>You can configure the underlying [Content Search and Indexing](/help/operations/indexing.md) service.
+
+Using **Search Forms**, you can customize, and extend, these panels, according to your specific needs. 
+
+The **Search Forms** provide an out-of-the-box selection of [predicates](#predicates-and-their-settings) that you can combine and define. The [dialogs for configuring these forms](#configuring-your-search-forms) can be accessed via:
 
 * **Tools**
 
@@ -17,73 +31,48 @@ You can [configure the search forms](#configuring-your-search-forms) used within
 
         * **Search Forms**
 
-When you first access this console you can see that all the configurations have a padlock symbol. This indicates that the appropriate configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized the configuration the lock will disappear - unless you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
+## Default Forms {#default-forms}
+
+When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. This indicates that the corresponding configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized, and saved, a configuration the lock will disappear. It will reappear when you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
 
 ![configuring search forms overview](assets/csf-overview.png)
-
-## Configurations {#configurations}
 
 The default configurations (listed alphabetically) available are:
 
 * **Assets Admin Search Rail:**
 
-  This configuration defines the search options available to the user when using the Assets console.
-
 * **Page Editor (Documents search):**
-
-  This configuration defines the options available when searching for documents in the assets browser (when editing a page).
 
 * **Page Editor (Experience Fragments Search):**
 
-  This configuration defines the options available when searching for Experience Fragments in the assets browser (when editing a page).
-
 * **Page Editor (Image search):**
-
-  This configuration defines the options available when searching for images in the assets browser (when editing a page).
 
 * **Page Editor (Manuscript search):**
 
-  This configuration defines the options available when searching for manuscripts in the assets browser (when editing a page).
-
 * **Page Editor (Page search):**
-
-  This configuration defines the options available when searching for pages in the assets browser (when editing a page).
 
 * **Page Editor (Paragraphs search):**
 
-  This configuration defines the options available when searching for paragraphs in the assets browser (when editing a page).
-
 * **Page Editor (Product search):**
-
-  This configuration defines the options available when searching for products in the assets browser (when editing a page).
 
 * **Page Editor (Scene7 search)**:
 
-  This configuration defines the options available when searching for Scene7 resources in the assets browser (when editing a page).
-
 * **Page Editor (Video search)**:
-
-  This configuration defines the options available when searching for videos in the assets browser (when editing a page).
 
 * **Project Admin Search Rail:**
 
-  This configuration defines the search options available to the user when searching projects.
-
 * **Project Translation Search Rail:**
-
-  This configuration defines the search options available to the user when searching project translations.
 
 * **Sites Admin Search Rail**:
 
-  This configuration defines the search options available to the user when using the search rail of the Sites console.
-
 * **Snippets Admin Search Rail**:
-
-  This configuration defines the search options available to the user when searching snippets.
 
 * **Stock Admin Search Rail**:
 
-  This configuration defines the search options available to the user when searching stock.
+>[!NOTE]
+>
+> For further details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md)
+
 
 ## Predicates and Their Settings {#predicates-and-their-settings}
 
@@ -164,7 +153,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Date Range</td>
-   <td>Search assets created within a specified range for a date property. In the Search panel, you can specify Start and End dates.</td>
+   <td>Search for resources created within a specified range for a date property. In the Search panel, you can specify Start and End dates.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -177,7 +166,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Expiry Status</td>
-   <td>Search assets based on expiry status.</td>
+   <td>Search resources based on expiry status.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -187,7 +176,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>File Size</td>
-   <td>Search assets based on their size.</td>
+   <td>Filter resources based on their size.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -201,7 +190,7 @@ The following predicates are available, dependent on the configuration:
    <td>Search assets based on the file/mime type.</td>
    <td>
     <ul>
-     <li>Field Label</li>
+     <li>Field Label</li> 
      <li>Property Name*</li>
      <li>Mimetype Path</li>
      <li>Description</li>
@@ -210,7 +199,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Fulltext</td>
-   <td>Search predicate for full-text searches.</td>
+   <td>Search predicate for full-text searches. It is mapped with the ´jcr:contains´ operator.</td>
    <td>
     <ul>
      <li>Placeholder</li>
@@ -300,7 +289,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Page Status</td>
-   <td>Search pages according to their status.</td>
+   <td>Filter pages according to their status.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -311,7 +300,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Path</td>
-   <td>Search assets located under a specific path.</td>
+   <td>Filter according to specific path. You can specify multiple paths as options.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -321,7 +310,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Path Browser</td>
-   <td>Provide a path browser to search.</td>
+   <td>Provide a path browser to search under a predefined root path.</td>
    <td>
     <ul>
      <li>Placeholder</li>
@@ -356,7 +345,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Publish Status</td>
-   <td>Search assets based on their publish status</td>
+   <td>Filter resources based on their publish status.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -376,7 +365,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Rating</td>
-   <td>Search assets according to their rating.<br /> </td>
+   <td>Search for resources according to their average rating.<br /> </td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -387,7 +376,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Relative Date</td>
-   <td>Search assets based on the relative date of their creation<br /> </td>
+   <td>Filter resources based on the relative date of their creation. For example, 1 week ago, 1 month ago.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -493,23 +482,23 @@ The following predicates are available, dependent on the configuration:
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
 >* The common search predicates are defined in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
+>This information is for reference only, you must not make changes to `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### Predicate Settings {#predicate-settings}
 
-Dependent on the predicate a selection of settings are available for configuration:
+Dependent on the predicate a selection of settings are available for configuration, including:
 
 * **Field Label**
 
@@ -659,9 +648,7 @@ The following example (to search according to the template used to create a page
     * `jcr:title` - the field label to be shown in the search rail
     * `value` - the property value to be searched on
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
+   ![Predicate definition](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
    >
@@ -694,15 +681,13 @@ The following example (to search according to the template used to create a page
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
 
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![Option predicates](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results:
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## User Permissions {#user-permissions}
