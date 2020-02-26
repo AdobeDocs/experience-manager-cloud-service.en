@@ -9,6 +9,7 @@ user-guide-title: Onboarding to AEM as a Cloud Service
 + What is Required {#what-is-required}
   + [Access Rights Granted](what-is-required/access-rights-granted.md)
   + [Add Users and Roles](what-is-required/add-users-roles.md)
+  + [Role Based Permissions](what-is-required/role-based-permissions.md)
   + [Source Code Repository](what-is-required/source-code-repository.md)
 + Getting Access to AEM in the Cloud {#getting-access}
   + [Accessing Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
