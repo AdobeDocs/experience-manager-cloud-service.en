@@ -11,22 +11,21 @@ description: Role Based Permissions
 
 Each of the roles have specific permissions, preconfigured tasks, or permissions, associated with each role. This table lists the functions available and the roles who can execute the function.
 
-|Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|CSE|
-|--- |--- |--- |--- |--- |--- |--- |
-|Read Application|Read Program KPIs.|x|x|x|x|x|
+|Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|
+|--- |--- |--- |--- |--- |--- |
+|Add Program|Add New Program.|x|x|x|x|
+|Read Application|Read Program KPIs.|x|x|x|x|
 |Write Application|Program setup or edit.|x|||||
-|Read Environment|See Environment details.|x|x|x|x|x|
-|Create Execution|Start Pipeline.|x|x|x|||
-|Read Execution|See execution status.|x|x|x|x|x|
+|Read Environment|See Environment details.|x|x|x|x|
+|Create Execution|Start Pipeline.|x|x|x||
+|Read Execution|See execution status.|x|x|x|x|
 |Resume Execution|Can resume execution when paused.|x|x|x||x|
 |Execution Approve Deploy to Production|Provide GoLive Approval.|x|x|x|||
-|Execution Schedule Deploy to Production|Schedule Production Deployment.|x|x|x||x|
-|Execution Deploy to Production|Deploy application to production when paused for CSE Oversight.|||||x|
-|Execution Cancel|Cancel current execution.|x|x|x|||
-|Execution Override Quality Gate Failures|Approve Important Quality Gate Failures.|x|x|x|||
-|Pipeline Create|Setup / Edit Pipeline.||x||||
-|Pipeline Read|See Pipeline details.|x|x|x|x|x|
-|Pipeline Write|Setup / Edit Pipeline.||x||||
-|Pipeline Modify Approval|Allows editing the Business Owner option.||x||||
-|Pipeline Modify Managed Deployment|Allows editing of the CSE Oversight option.||x||||
-|Step Read|See the step quality metrics results.|x|x|x|x|x|
+|Execution Schedule Deploy to Production|Schedule Production Deployment.|x|x|x|
+|Execution Cancel|Cancel current execution.|x|x|x||
+|Execution Override Quality Gate Failures|Approve Important Quality Gate Failures.|x|x|x||
+|Pipeline Create|Setup / Edit Pipeline.||x|||
+|Pipeline Read|See Pipeline details.|x|x|x|x|
+|Pipeline Write|Setup / Edit Pipeline.||x|||
+|Pipeline Modify Approval|Allows editing the Business Owner option.||x|||
+|Step Read|See the step quality metrics results.|x|x|x|x|
