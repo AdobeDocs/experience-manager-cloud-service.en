@@ -20,3 +20,4 @@ user-guide-title: Onboarding to AEM as a Cloud Service
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
   + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)
   + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/sites-readiness.md)
++ [Overview of the Tools consoles](tools-consoles.md)
