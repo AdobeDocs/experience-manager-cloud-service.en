@@ -662,9 +662,7 @@ The following example (to search according to the template used to create a page
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Make any changes within `/apps.`
 
-1. Open the **Search Forms** console and select the configuration you want to update. For example, **Sites Admin Search Rail**.
-
-   Then click/tap the **Edit search forms** icon.
+1. Open the **Search Forms** console and select the configuration you want to update. For example, **Sites Admin Search Rail**. Then select **Edit**.
 
 1. Depending on the configuration add an **Options** or **Options Property** to the configuration.
 1. Update the fields, in particular:
@@ -684,11 +682,10 @@ The following example (to search according to the template used to create a page
    ![Option predicates](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results.
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results.
 
-<!--
    ![options being used](assets/csf-options-usage.png)
--->
+
 
 ## User Permissions {#user-permissions}
 
