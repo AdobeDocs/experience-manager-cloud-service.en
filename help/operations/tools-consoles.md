@@ -25,7 +25,7 @@ These consoles can be accessed from the [Tools Panel of the Global Navigation](/
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
