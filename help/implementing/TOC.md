@@ -28,6 +28,7 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
+  + [Configuring Search Forms](developing/extending/search-forms.md)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
