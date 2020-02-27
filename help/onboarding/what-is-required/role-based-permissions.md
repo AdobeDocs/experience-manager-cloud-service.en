@@ -15,15 +15,17 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 |--- |--- |--- |--- |--- |--- |
 |Create Tenant|Create a New Tenant.|||||
 |Update Tenant|Update Tenant.|||||
-|Add Program|Add New Program.|x||||
-|Add Environment|Add New Environment.|x|x|||
+|Add Program|Add a New Program.|x||||
+|Create Environment|Create Prod+Stage, Dev, Playground Environments.|x|x|||
 |Configure Environment Variables|Configure Environment Variables and Secrets.||x||x|
 |Add or Remove Custom Domain Name, Upload or Update SSL Cert|Add / Remove Custom Domain Name, Upload / Update SSL Cert.|x|x|||
 |Update Environment|Update Prod+Stage, Dev, Playground Environments.|x|x|||
-|Delete Environment|Delete Non-prod, Dev, Playground environments.|x|x|||
+|Delete Environment|Delete Non-prod, Dev, Playground Environments.|x|x|||
+|Delete Environment|Delete Prod+Stage Environment.|||||
 |Hibernate Environment|Hibernate Non-prod, Dev, Playground Environments.|x|x|||
 |Program Setup|Configure Program (including KPIs).|x||||
-|Program Setup|Configure Scaling Policies (General: configuring max number of tiers and On-demand horizontal scale-out: Opt-in).|||||
+|Program Setup|Configure Scaling Policies (General: configuring max number of tiers and On-demand horizontal scale-out: Opt-in).|x||||
+|Program Setup|Git Commit Access.||x||x|
 |Pipeline Setup|Setup or Edit Pipeline.||x|||
 |Pipeline Execution|Start the Pipeline.|x|x|||
 |Pipeline Execution|Reject/Approve Important 3-Tier Failures.|x|x|x||
@@ -34,6 +36,6 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 |Manage Environment|Add Publish-Dispatcher segment from the Manage Environment Screen.|x|x||||
 |Product Update|AEM Update Card is visible and takes user to Update Wizard.|x|x|x|x|
 |Product Update|Product Update Wizard can be actioned on.|x|x|||
-|Push Update|Start Push Update pipeline.|||||
+|Push Update|Start Push Update Pipeline.|||||
 |Generate Personal Access Token|Generate Personal Access Token.||x||x|
 
