@@ -9,11 +9,11 @@ Within Adobe Experience Manager as a Cloud Service a content fragment extends a 
 
 * [Creating and Managing Content Fragments](/help/assets/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
 
-* [Managing Assets](/help/assets/managing-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extending-asset-editor.md) for further information about standard assets.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
 
 ## Architecture {#architecture}
 
-The basic [constituent parts](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
+The basic [constituent parts](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
 
 * A *Content Fragment*,
 * consisting of one or more *Content Elements*,
@@ -109,7 +109,7 @@ As with standard assets, a content fragment is held under:
 
 #### Asset Permissions {#asset-permissions}
 
-For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments-delete.md).
+For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Feature Integration {#feature-integration}
 
