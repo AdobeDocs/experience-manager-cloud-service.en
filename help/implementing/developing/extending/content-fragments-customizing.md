@@ -19,7 +19,7 @@ The basic [constituent parts](/help/assets/content-fragments.md#constituent-part
 * consisting of one or more *Content Elements*,
 * and which can have one or more *Content Variations*.
 
-Depending on the type of fragment, either models or templates are also used:
+Depending on the type of fragment, either models or the **Simple Fragment** template are also used:
 
 >[!CAUTION]
 >
@@ -89,7 +89,7 @@ Content fragments with structured content (i.e. based on a content fragment mode
 
 ![content fragment to assets simple](assets/content-fragment-to-assets-simple.png)
 
-Simple content fragments (based on the template) are mapped to a composite consisting of a main asset and (optional) sub-assets:
+Simple content fragments (based on the **Simple Fragment** template) are mapped to a composite consisting of a main asset and (optional) sub-assets:
 
 * All non-content information of a fragment (such as title, description, metadata, structure) is managed on the main asset exclusively.
 * The content of the first element of a fragment is mapped to the original rendition of the main asset.
@@ -225,7 +225,7 @@ Content fragments can be integrated with:
   >
   >* As the content fragment models reside in `/conf`, these are not included in such translations. You can internationalize the UI strings.
   >
-  >* Templates are copied to create the fragment so this is implicit.
+  >* The **Simple Fragment** template is copied to create the fragment so this is implicit.
 
 * **Metadata schemas**
 
@@ -346,7 +346,7 @@ It should be noted that:
 
 * Tasks that might require additional effort:
 
-  * Creating/removing new elements will not update the data structure of simple fragments (based on a fragment template).
+  * Creating/removing new elements will not update the data structure of simple fragments (based on the **Simple Fragment** template).
 
   * Creating new variations from `ContentElement` will not update the data structure (but creating them globally from `ContentFragment` will).
 
@@ -483,7 +483,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 The auto save interval (measured in seconds) can be defined using the configuration manager (ConfMgr):
 
-* Node: `<*conf-root*>/settings/dam/cfm/jcr:content`
+* Node: `<conf-root>/settings/dam/cfm/jcr:content`
 * Property Name: `autoSaveInterval`
 * Type: `Long`
 
