@@ -167,19 +167,19 @@ Assets as a Cloud Service provides XMP support for these audio formats: AIF, ASF
 
 Document formats supported for asset management features are as follow.
 
-| File format | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-|---|---|
-| DOC | &#10003; |
-| DOCX | &#10003; |
-| ODT | &#10003; |
-| PDF | &#10003; |
-| HTML | &#10003; |
-| RTF | &#10003; |
-| TXT | &#10003; |
-| XLS | &#10003; |
-| XLSX | &#10003; |
-| PPT | &#10003; |
-| PPTX | &#10003; |
+| File format | Storage | Metadata management | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+|---|---|---|---|
+| DOC | &#10003; | &#10003; | &#10003; |
+| DOCX |&#10003; | &#10003; | &#10003; |
+| ODT | &#10003; | &#10003; | &#10003; |
+| PDF | &#10003; | &#10003; | &#10003; |
+| HTML | &#10003; | &#10003; | &#10003; |
+| RTF | &#10003; | &#10003; | &#10003; |
+| TXT | &#10003; | &#10003; | &#10003; |
+| XLS | &#10003; | &#10003; | &#10003; |
+| XLSX | &#10003; | &#10003; | &#10003; |
+| PPT | &#10003; | &#10003; | &#10003; |
+| PPTX | &#10003; | &#10003; | &#10003; |
 
 >[!MORELIKETHIS]
 >
