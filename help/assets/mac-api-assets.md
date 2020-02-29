@@ -15,7 +15,7 @@ To access the API:
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
 
-The API response is a JSON file for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
+The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
 After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
