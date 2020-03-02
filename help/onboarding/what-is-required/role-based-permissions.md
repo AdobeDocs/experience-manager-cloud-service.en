@@ -13,12 +13,8 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 
 |Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|
 |--- |--- |--- |--- |--- |--- |
-|Create Tenant|Create a New Tenant.|||||
-|Update Tenant|Update Tenant.|||||
 |Add Program|Add a New Program.|x||||
 |Create Environment|Create Prod+Stage, Dev, Playground Environments.|x|x|||
-|Configure Environment Variables|Configure Environment Variables and Secrets.||x||x|
-|Add or Remove Custom Domain Name, Upload or Update SSL Cert|Add / Remove Custom Domain Name, Upload / Update SSL Cert.|x|x|||
 |Update Environment|Update Prod+Stage, Dev, Playground Environments.|x|x|||
 |Delete Environment|Delete Non-prod, Dev, Playground Environments.|x|x|||
 |Delete Environment|Delete Prod+Stage Environment.|||||
