@@ -196,7 +196,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Enable Aspect Ration match]**&mdash;Matches the original image's aspect ratio when you select a smart crop rendition.
+* **[!UICONTROL Enable Aspect Ration match]**&mdash;Select this option to let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image.
 
 * **[!UICONTROL Title]**&mdash;Change the title of the Smart Crop image.
 
