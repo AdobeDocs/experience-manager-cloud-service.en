@@ -175,6 +175,10 @@ This process is commonly referred to as Cloud-first development. Since the end-t
 
 The Web Console, where OSGI bundles and their associated configuration are managed, and previously part of the AEM QuickStart, is no longer directly accessible to users of a AEM as a Cloud Service environment. This interface can still be accessed in read-only mode by using a new developer console. With this console, developers can select and login directly to any particular node of an author or publish service, then access the areas blocked by default.
 
+>[!NOTE]
+>
+>See also [OSGi Configuration](/help/implementing/deploying/overview.md#osgi-configuration)
+
 Another common requirement for developers is quick access to the log files of the various environments. With AEM as a Cloud Service, the log files of the different nodes in the author and publish nodes are made available via the Cloud Manager, either in the form of files that can be downloaded, or via APIs.
 
 Due to the clear separation of code and content, developers can use a particular process for updating content as part of a deployment. The typical use cases for mutable content are:
