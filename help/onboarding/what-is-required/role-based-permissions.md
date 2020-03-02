@@ -22,9 +22,7 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 |Update Environment|Update Prod+Stage, Dev, Playground Environments.|x|x|||
 |Delete Environment|Delete Non-prod, Dev, Playground Environments.|x|x|||
 |Delete Environment|Delete Prod+Stage Environment.|||||
-|Hibernate Environment|Hibernate Non-prod, Dev, Playground Environments.|x|x|||
 |Program Setup|Configure Program (including KPIs).|x||||
-|Program Setup|Configure Scaling Policies (General: configuring max number of tiers and On-demand horizontal scale-out: Opt-in).|x||||
 |Program Setup|Git Commit Access.||x||x|
 |Pipeline Setup|Setup or Edit Pipeline.||x|||
 |Pipeline Execution|Start the Pipeline.|x|x|||
@@ -32,10 +30,7 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 |Pipeline Execution|Provide GoLive Approval.|x|x|x||
 |Pipeline Execution|Schedule Production Deployment.|x|x|x||
 |Pipeline Execution|Resume Production Pipeline.|||||
-|Opt-in (or out of) to Provisioning|Opt-in to On-demand Horizontal provisioning from Program Setup Screen. Configure the max 'allowed' P-D segments that can be horizontally scaled-out on PROD and non-PROD environments.|x||||
 |Manage Environment|Add Publish-Dispatcher segment from the Manage Environment Screen.|x|x||||
-|Product Update|AEM Update Card is visible and takes user to Update Wizard.|x|x|x|x|
-|Product Update|Product Update Wizard can be actioned on.|x|x|||
 |Push Update|Start Push Update Pipeline.|||||
 |Generate Personal Access Token|Generate Personal Access Token.||x||x|
 
