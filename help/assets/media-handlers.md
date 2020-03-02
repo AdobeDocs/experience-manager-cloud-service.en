@@ -147,7 +147,7 @@ Here is an example template:
 
 The interface and classes include:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific mime types. Adding a new mime type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific MIME types. Adding a new MIME type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:
   * This class serves as basis for all other asset handler implementations and provides common used functionality plus common used functionality for subasset extraction.
@@ -158,7 +158,7 @@ The following methods need to be implemented:
 
 * `extractMetadata()`: this method extracts all available metadata.
 * `getThumbnailImage()`: this method creates a thumbnail image out of the passed asset.
-* `getMimeTypes()`: this method returns the asset mime type(s).
+* `getMimeTypes()`: this method returns the asset MIME type(s).
 
 Here is an example template:
 
@@ -166,7 +166,7 @@ package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit="true" &ast; @scr
 
 The interface and classes include:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific mime types. Adding a new mime type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific MIME types. Adding a new MIME type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality plus common used functionality for subasset extraction.
 
@@ -387,7 +387,7 @@ The following conversions can be automatically run and stored within AEM Assets:
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
-* Filters the file according to specific mime-types, if specified.
+* Filters the file according to specific MIME types, if specified.
 * Creates a temporary directory on the disk hosting the AEM server.
 * Streams the original file to the temporary directory.
 * Executes the command defined by the arguments of the step. The command is being executed within the temporary directory with the permissions of the user running AEM.
@@ -449,7 +449,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Optional argument. The process is applied if the asset has the same mime-type as the one of the argument.</p> <p>Several mime-types can be defined.</p> </td>
+   <td><p>Optional argument. The process is applied if the asset has the same MIME type as the one of the argument.</p> <p>Several mime-types can be defined.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -457,7 +457,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> cmd: &lt;command&gt;</td>
-   <td><p>Defines the command that will be executed. The syntax depends on the command line tool.</p> <p>Only one command can be defined.</p> <p>The following variables can be used to create the command:<br/></p> <p><code>${filename}</code>: name of the input file, e.g. original.jpg<br/><code>${file}</code>: full path name of the input file, e.g. /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: directory of the input file, e.g. /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: name of the input file without its extension, e.g. original<br/> <code>${extension}</code>: extension of the input file, e.g. jpg<br/></p></td>
+   <td><p>Defines the command that will be executed. The syntax depends on the command line tool.</p> <p>Only one command can be defined.</p> <p>The following variables can be used to create the command:<br/></p> <p><code>${filename}</code>: name of the input file, for example `original.jpg`<br/><code>${file}</code>: full path name of the input file, for example, `/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: directory of the input file, for example `/tmp/cqdam0816.tmp`.<br/> <code>${basename}</code>: name of the input file without its extension, e.g. original<br/> <code>${extension}</code>: extension of the input file, for example JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
