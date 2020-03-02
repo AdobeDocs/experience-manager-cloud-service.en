@@ -22,7 +22,7 @@ Asset microservices provide a scalable and resilient processing of assets using 
 * Improved resilience of asset processing. Potential issues when handling atypical files, such as corrupted files or extremely large files, do not impact the deployment's performance anymore.
 * Simplified configuration of asset processing for the administrators.
 * Assets processing setup is managed and maintained by Adobe to provide best known configuration for handling renditions, metadata, and text extraction for various file types
-* Native Adobe file processing services are used where applicable, providing high-fidelity output and efficient handling of Adobe proprietary formats.
+* Native Adobe file processing services are used where applicable, providing high-fidelity output and [efficient handling of Adobe proprietary formats](file-format-support.md).
 * Ability to configure post-processing workflow to add user-specific actions and integrations.
 
 Asset microservices help to avoid the need for third-party rendering tools (like ImageMagick) and simplify configuration of the system, while providing out-of-the-box functionality for common file types.
