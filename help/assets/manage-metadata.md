@@ -2,7 +2,7 @@
 title: Manage metadata for digital assets
 description: Learn about the types of metadata an how AEM Assets helps manage metadata for assets to allow easier categorization and organization of assets. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
 contentOwner: AG
-
+mini-toc-levels: 1
 ---
 
 # Manage metadata of digital assets {#managing-metadata-for-digital-assets}
@@ -13,7 +13,10 @@ Adobe Experience Manager (AEM) Assets keeps metadata for every asset. This allow
 >
 >* [XMP Metadata](xmp-metadata.md)
 >* [How to edit or add metadata](meta-edit.md)
->* [Metadata Schemata Reference](meta-ref.md)
+
+<!-- 
+* [Metadata Schemata Reference](meta-ref.md)
+-->
 
 ## Why metadata {#why-metadata}
 

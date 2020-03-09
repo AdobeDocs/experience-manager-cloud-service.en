@@ -2,7 +2,6 @@
 title: Use Adobe Stock digital assets in AEM Assets
 description: Search, fetch, license, and manage Adobe Stock assets in Experience Manager. Treat the licensed assets as any other Experience Manager asset.
 contentOwner: AG
-
 ---
 
 # Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}

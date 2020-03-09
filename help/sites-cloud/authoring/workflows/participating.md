@@ -1,12 +1,6 @@
 ---
 title: Participating in Workflows
-seo-title: Participating in Workflows
 description: Workflows typically include steps that require a person to perform an activity on a page or asset.
-seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 ---
 
 # Participating in Workflows {#participating-in-workflows}

@@ -2,7 +2,6 @@
 title: Introduction to Assets as a Cloud Service
 description: What's new in Assets as a Cloud Service.
 contentOwner: AG
-
 ---
 
 # Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
@@ -15,7 +14,7 @@ Concurrent ingestion of a large number of assets or complex assets is very resou
 
 Businesses require support for a wide variety of file formats and content resolutions for multi-device, cross-geography, and multilingual use cases. Asset processing and storage requirements demand resources and capabilities that can overburden a traditional solution. At times, technical limitations of asset processing do not yield the desired results and at other times the cost of storage is an impediment for profit margins.
 
-To begin with, understand the [benefits of a cloud-native offering](#solution-benefits). Check out the notable [changes to AEM as a Cloud Service](/help/release-notes/aem-cloud-changes.md) that also impact Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
+To begin with, understand the [benefits of a cloud-native offering](#solution-benefits). Check out the notable [changes to AEM as a Cloud Service](/help/release-notes/aem-cloud-changes.md) that also impact Experience Manager Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
 
 Read on to know the [details of the new Assets capabilities](#whats-new-assets) and the [known issues](/help/release-notes/known-issues.md). See a list of [deprecated or removed functionality](/help/release-notes/deprecated-removed-features.md) to know what is removed in this release and see this [list of upcoming capabilities](/help/release-notes/known-issues.md#upcoming-assets-capabilities) to know what's coming in the near future. Finally, understand the AEM terms with the help of this [glossary](/help/overview/terminology.md).
 

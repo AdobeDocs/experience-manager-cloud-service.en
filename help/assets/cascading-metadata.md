@@ -2,7 +2,6 @@
 title: Cascading metadata
 description: This article describes how to define cascading metadata for assets.
 contentOwner: AG
-
 ---
 
 # Cascading Metadata {#cascading-metadata}

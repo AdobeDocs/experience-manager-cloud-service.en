@@ -1,6 +1,6 @@
 ---
-product: Adobe Experience Manager as a Cloud Service
-sub-product: Adobe Experience Manager as a Cloud Service
+sub-product: Authoring Content in AEM as a Cloud Service
+user-guide-title: Authoring Content in AEM as a Cloud Service
 ---
 
 # Sites {#sites}

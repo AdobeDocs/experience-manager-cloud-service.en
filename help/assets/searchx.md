@@ -2,7 +2,6 @@
 title: Extend search options and feature in Adobe Experience Manager Assets
 description: Extend the search capabilities of Assets.
 contentOwner: AG
-
 ---
 
 # Extend assets search {#extend-assets-search}

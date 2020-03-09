@@ -1,10 +1,9 @@
 ---
-title: Search Facets
+title: Search facets
 description: This article describes how to create, modify, and use search facets in AEM.
-
 ---
 
-# Search Facets {#search-facets}
+# Search facets {#search-facets}
 
 Learn how to create, modify, and use search facets in AEM.
 
@@ -16,27 +15,16 @@ In summary, search facets let you search for assets in multiple ways rather than
 
 For example, if you are looking for an image, you can choose whether you want a bitmap or a vector image. You can reduce the scope of search further by specifying the MIME type for the image. Similarly, when searching for documents, you can specify the format, for example PDF or MS Word.
 
-## Adding a Predicate {#adding-a-predicate}
+## Add a predicate {#adding-a-predicate}
 
 The search facets that appear in the Filters panel are defined in the underlying search form using predicates. To display more or different facets, you add predicates to the default form or use a custom form that includes facets of your choice.
 
-For full-text searches, add the Fulltext predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
+For full-text searches, add the `Fulltext` predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
 
 1. Tap/click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then tap  **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Locate and select the Assets Admin Search Rail](assets/assets_admin_searchrail.png)
-
-   Locate and select the Assets Admin Search Rail
-
-   >[!NOTE]
-   >
-   >To use the folder search functionality from the pre-configured **Assets Admin Search Rail** from an earlier AEM version, perform these steps:
-   >
-   >1. Navigate to */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRX-DE.
-   >1. Delete the **type** node.
-   >1. From the path */libs/settings/dam/search/facets/assets/jcr:content/items*, copy the nodes **asset, directory, typeor, excludepaths**, and **searchtype** to the path mentioned on step 1.
-   >1. Save the changes.
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
 
@@ -72,7 +60,7 @@ For full-text searches, add the Fulltext predicate to the form. Use the Property
 1. Navigate to the Search panel in the Assets user interface. The Property predicate is added to the panel.
 1. Enter a description for the asset to be searched in the text box. For example, enter "Adobe." When you perform a search, assets with description matching "Adobe" are listed in the search results.
 
-## Adding an Options predicate {#adding-an-options-predicate}
+## Add an Options predicate {#adding-an-options-predicate}
 
 The Options predicate lets you add multiple search options in the Filters panel. You can select one or more of these options in the Filters panel to search for assets. For example, to search for assets based on file type, configure options, such as Images, Multimedia, Documents, and Archives in the search form. After you configure these options, the search is performed on assets of type GIF, JPEG, PNG, and so on, when you select the Images option in the Filters panel.
 
@@ -124,9 +112,9 @@ If you want to use an existing node, specify it using the selection dialog.
 1. In the **Description** field, enter an optional description and then click **[!UICONTROL Done]**.
 1. Navigate to the Search panel. The Options predicate is added to the **Search** panel. The options for **[!UICONTROL File Type]** are displayed as checkboxes.
 
-## Adding a Multi Value Property predicate {#adding-a-multi-value-property-predicate}
+## Add a Multi Value Property predicate {#adding-a-multi-value-property-predicate}
 
-The Multi Value Property predicate lets you search assets for multiple values. Consider a scenario where you have images of multiple products in AEM Assets and the metadata for each image includes an SKU number associated with the product. You can use this predicate to search for product images based on multiple SKU numbers.
+The `Multi Value Property` predicate lets you search assets for multiple values. Consider a scenario where you have images of multiple products in AEM Assets and the metadata for each image includes an SKU number associated with the product. You can use this predicate to search for product images based on multiple SKU numbers.
 
 1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
@@ -137,9 +125,9 @@ The Multi Value Property predicate lets you search assets for multiple values. C
 1. Navigate to the Filters panel in the Assets user interface. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. Specify multiple value in the Multi Value field separated by the delimiters and perform the search. The predicate fetches an exact text match for the values you specify.
 
-## Adding a Tags predicate {#adding-a-tags-predicate}
+## Add a Tags predicate {#adding-a-tags-predicate}
 
-The Tag predicate allows you to perform tag-based searches for assets. By default, AEM Assets searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
+The `Tags` predicate allows you to perform tag-based searches for assets. By default, AEM Assets searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
 
 1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
@@ -317,7 +305,7 @@ Similar to the way you add a Property predicate or an Options predicate, you can
  </tbody>
 </table>
 
-## Restoring default search facets {#restoring-default-search-facets}
+## Restore default search facets {#restoring-default-search-facets}
 
 By default, a Lock icon appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. The Lock icon disappears if you add search facets to the form indicating that the default form has been modified.
 
@@ -358,5 +346,4 @@ If you are not assigned an administrator role, here is a list of permissions you
 
 >[!MORELIKETHIS]
 >
->* [Extending Assets' search](searchx.md)
->* [Searching Assets](search-assets.md)
+>* [Search digital assets](search-assets.md)

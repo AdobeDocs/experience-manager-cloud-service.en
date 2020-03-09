@@ -1,14 +1,9 @@
 ---
 title: Provisioning  of Environments - What Is Required
-seo-title: Provisioning  of Environments - What Is Required
 description: Provisioning  of Environments - What Is Required
-seo-description: Provisioning  of Environments - What Is Required 
 ---
 
-# Provisioning of Environments {#environments-provisioning}
-
->[!NOTE]
->This page is still in-progress and needs to be updated specifically for Cloud Manager in Cloud Services.
+# Environments Provisioned {#environments-provisioning}
 
 ## Provisioning {#provisioning}
 

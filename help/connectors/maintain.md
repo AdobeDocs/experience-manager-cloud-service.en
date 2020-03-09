@@ -1,3 +1,8 @@
+---
+title: Maintaining an AEM Connector
+description: Maintaining an AEM Connector
+---
+
 Maintaining an AEM Connector
 ============================
 

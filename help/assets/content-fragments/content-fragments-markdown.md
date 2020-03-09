@@ -1,8 +1,6 @@
 ---
 title: Markdown
-seo-title: Markdown
 description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
-seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 ---
 
 # Markdown{#markdown}

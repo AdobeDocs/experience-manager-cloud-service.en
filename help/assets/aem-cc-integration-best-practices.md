@@ -3,7 +3,6 @@ title: Adobe Experience Manager and Adobe Creative Cloud integration best practi
 description: Best practices for integrating an AEM instance with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
 contentOwner: AG
 mini-toc-levels: 1
-
 ---
 
 # AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
@@ -57,7 +56,11 @@ Deciding on which capability to use
 | Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](/help/assets/manage-digital-assets.md#uploading-assets); Custom scripting or tool |
 | Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | AEM user / login | Users of both solutions count against the AEM user quota. |
 | Misc - network and access | Requires access from user's desktop to AEM deployment over network | Requires access from user's desktop to AEM deployment over network | Adobe Asset Link does not share network proxy environment. |
+
+
+<!-- Removing this row from table as migration guide is not yet final.
 | Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
+-->
 
 To support asset distribution use cases, other solutions should be considered:
 
@@ -216,6 +219,8 @@ If you use Network File Shares to manage digital assets, just using the network 
 
 Avoid using AEM desktop app to manage assets directly in the network share of AEM Assets. For example, avoid using AEM desktop app to move/copy multiple files. Instead, use the AEM Assets web UI to drag folders from Finder/Explorer to the network share or use the AEM Assets Folder Upload feature.
 
+<!-- 
 #### Asset migration {#asset-migration}
 
 To plan and execute asset migrations from existing system to a new system or migration of large volume of assets stored on servers, see the [Migration Guide](/help/assets/assets-migration-guide.md). AEM desktop app and AEM to Creative Cloud integrations do not support such migrations. Due to the large volumes of assets to be ingested, and additional requirements around metadata mapping, transformation, and ingestion, migrations should be handled using different tools and approaches.
+-->

@@ -1,14 +1,6 @@
 ---
 title: Embedding the Dynamic Media Video or Image viewer on a web page
-seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Learn how to embed Dynamic Media video or images on a web page
-seo-description: Learn how to embed Dynamic media video or images on a web page
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 ---
 
 # Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
@@ -53,4 +45,4 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 HTTP/2 is the new, updated web protocol that improves the way browsers and servers communicate. It provides faster transfer of information and reduces the amount of processing power that is needed. Delivery of Dynamic Media assets can now be over HTTP/2 which provides better response and load times.
 
-See [HTTP2 Delivery of Content](http2.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
+See [HTTP2 Delivery of Content](http2faq.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.

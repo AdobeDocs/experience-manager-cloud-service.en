@@ -1,10 +1,6 @@
 ---
 title: Using the Rich Text Editor to Author Content
-seo-title: Using the Rich Text Editor to Author Content
 description: Using the Rich Text Editor to Author Content
-seo-description: Using the Rich Text Editor to Author Content
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
 # Using the Rich Text Editor to Author Content {#use-rich-text-editor-to-author-content}

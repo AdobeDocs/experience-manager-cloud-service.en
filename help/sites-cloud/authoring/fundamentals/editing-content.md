@@ -1,12 +1,6 @@
 ---
 title: Editing Page Content
-seo-title: Editing Page Content
 description: Once your page is created you can edit the content to make the updates you require
-seo-description: Once your page is created you can edit the content to make the updates you require
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Editing Page Content{#editing-page-content}

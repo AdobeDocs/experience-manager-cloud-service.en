@@ -2,7 +2,6 @@
 title: Download assets from AEM
 description: Learn how to download assets from AEM and enable or disable the download functionality.
 contentOwner: AG
-
 ---
 
 # Download assets from AEM {#download-assets-from-aem}
@@ -59,8 +58,6 @@ The `Asset Download Servlet` can be disabled on an AEM Publish instances by upda
 1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. You can manually disable the OSGi component on a Publish instance, by navigating to the OSGi Console at `<aem-host>/system/console/components`. Locate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` and click **[!UICONTROL Disable]**.
 
 >[!MORELIKETHIS]
 >

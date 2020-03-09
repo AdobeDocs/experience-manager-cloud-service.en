@@ -1,8 +1,6 @@
 ---
 title: Working with Content Fragments
-seo-title: Working with Content Fragments
 description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
-seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 ---
 
 # Working with Content Fragments{#working-with-content-fragments}
@@ -230,7 +228,7 @@ The content fragment assets are made up of the following parts (either directly 
 * **Variations**
 
   * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
-  * Are created as copies of **Master**, but can then be edited a required; there is usually content overlap between the variations themselves.
+  * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
   * Can be defined during fragment authoring or pre-defined in fragment templates.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [synchronized](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
@@ -281,10 +279,8 @@ To create, edit and use content fragments you also need:
 
 A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
 
-<!--
-### We.Retail Sample {#we-retail-sample}
+### WKND Sample {#wknd-sample}
 
-A sample fragment can be seen at:
+The [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) samples are provided to help you learn about AEM as a Cloud Service. It includes sample fragments, these can be seen at:
 
-`https://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten`
--->
+`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`

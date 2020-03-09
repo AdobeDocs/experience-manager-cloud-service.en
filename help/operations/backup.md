@@ -1,8 +1,6 @@
 ---
 title: Backup and Restore in AEM as a Cloud Service
-seo-title: Backup and Restore in AEM as a Cloud Service
 description: Backup and Restore in AEM as a Cloud Service 
-seo-description: Backup and Restore in AEM as a Cloud Service 
 ---
 
 # Backup and Restore in AEM as a Cloud Service

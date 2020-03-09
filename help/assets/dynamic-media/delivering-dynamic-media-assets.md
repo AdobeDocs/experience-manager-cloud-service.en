@@ -1,16 +1,6 @@
 ---
 title: Delivering Dynamic Media Assets
-seo-title: Delivering Dynamic Media Assets
 description: Learn how to deliver dynamic media assets
-seo-description: Learn how to deliver dynamic media assets
-uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
-docset: aem65
-
 ---
 
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
@@ -37,12 +27,12 @@ For more information, see the following topics:
 * [Activating hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Linking URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Delivering Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
-* [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md)
-* I [nvalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2faq.md)
+* [Invalidating your CDN cached content](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [Using Rulesets to Transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
 
 AEM now supports the delivery of all Dynamic Media content (images and video) over HTTP/2. That is, a published URL or embed code for the image or video is available to be integrated with any application that accepts a hosted asset. That published asset is then delivered by way of HTTP/2 protocol. This method of delivery improves the way browsers and servers communicate, allowing for better response and load times of all your Dynamic Media assets.
 
-See [HTTP/2 Delivery of Content Frequently Asked Questions](/help/assets/dynamic-media/scene7-http2faq.md) to learn more.
+See [HTTP/2 Delivery of Content Frequently Asked Questions](/help/assets/dynamic-media/http2faq.md) to learn more.

@@ -1,8 +1,6 @@
 ---
 title: Maintenance Tasks in AEM as a Cloud Service
-seo-title: Maintenance Tasks in AEM as a Cloud Service
 description: Maintenance Tasks in AEM as a Cloud Service 
-seo-description: Maintenance Tasks in AEM as a Cloud Service 
 ---
 
 # Maintenance Tasks in AEM as a Cloud Service

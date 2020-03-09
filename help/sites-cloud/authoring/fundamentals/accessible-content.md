@@ -1,12 +1,6 @@
 ---
 title: Creating Accessible Content (WCAG 2.0 Conformance)
-seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: Help make web content accessible to, and usable by, persons with disabilities
-seo-description: Help make web content accessible to, and usable by, persons with disabilities
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Creating Accessible Content (WCAG 2.0 Conformance) {#creating-accessible-content-wcag-conformance}

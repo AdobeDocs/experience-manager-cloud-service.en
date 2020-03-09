@@ -1,12 +1,6 @@
 ---
 title: Editing Launches
-seo-title: Editing Launches
 description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s). 
-seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s). 
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 ---
 
 # Editing Launches {#editing-launches}

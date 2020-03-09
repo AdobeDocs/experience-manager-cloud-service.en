@@ -1,16 +1,6 @@
 ---
 title: Image Sets
-seo-title: Image Sets
 description: Learn how to work with image sets in Dynamic Media
-seo-description: Learn how to work with image sets in Dynamic Media
-uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
-docset: aem65
-
 ---
 
 # Image Sets {#image-sets}

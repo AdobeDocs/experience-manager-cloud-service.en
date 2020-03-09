@@ -1,12 +1,6 @@
 ---
 title: Authoring Environment and Tools
-seo-title: Authoring Environment and Tools
 description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
-seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Authoring Environment and Tools {#authoring-the-environment-and-tools}

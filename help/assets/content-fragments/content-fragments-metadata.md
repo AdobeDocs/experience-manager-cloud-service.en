@@ -1,8 +1,6 @@
 ---
 title: Metadata - Fragment Properties
-seo-title: Metadata - Fragment Properties
 description: You can view and edit the metadata (properties) for content fragments.
-seo-description: You can view and edit the metadata (properties) for content fragments.
 ---
 
 # Metadata - Fragment Properties{#metadata-fragment-properties}

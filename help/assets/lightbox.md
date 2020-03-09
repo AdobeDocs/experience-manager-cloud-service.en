@@ -2,7 +2,6 @@
 title: Lightbox in Assets as a Cloud Service acts as a private collection or image gallery. 
 description: Lightbox in Assets as a Cloud Service acts as a private collection or image gallery.
 contentOwner: AG
-
 ---
 
 # Lightbox {#lightbox}

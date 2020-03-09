@@ -1,12 +1,6 @@
 ---
 title: Publishing Pages
-seo-title: Publishing Pages
 description: How to publish and unpublish pages using AEM
-seo-description: How to publish and unpublish pages using AEM
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Publishing Pages {#publishing-pages}
@@ -17,7 +11,7 @@ This is referred to as publishing a page. When you want to remove a page from th
 
 You can publish/unpublish a page immediately or at a predefined date/time in the future.
 
-## Terminology {#terminology}
+## Terminology {#terminology}
 
 You may encounter different terms related to publishing as you work with AEM.
 
