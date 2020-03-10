@@ -7,4 +7,4 @@ description: AEM Modernization Tools
 
 ## Introduction {#introduction}
 
-Describes AEM Modernization Tools.
+This section describes AEM Modernization Tools.
