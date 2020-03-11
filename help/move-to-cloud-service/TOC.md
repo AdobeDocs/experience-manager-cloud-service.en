@@ -7,7 +7,7 @@ user-guide-title: Move to AEM as a Cloud Service
 
 + [Move to AEM as a Cloud Service AEM](/help/move-to-cloud-service/home.md)
 + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
-+ User Migration Utility Tool your Code {#user-migration-utility}
++ User Migration Utility Tool {#user-migration-utility}
 + Content Transfer Tool {content-transfer-tool}
 + Moving to AEM Assets as a Cloud Service 
 {#moving-to-aem-assets}
