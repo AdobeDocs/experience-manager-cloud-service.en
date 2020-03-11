@@ -10,7 +10,6 @@ user-guide-title: Move to AEM as a Cloud Service
   + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
   + [Dispatcher Transformation Utility Tool](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
 
-
 <!--
 + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 + User Migration Utility Tool your Code {#user-migration-utility}
