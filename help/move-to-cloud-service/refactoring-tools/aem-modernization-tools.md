@@ -3,7 +3,7 @@ title: AEM Modernization Tools
 description: AEM Modernization Tools 
 ---
 
-# AEM Modernization Tools {#aem-modernization-tools}
+# AEM Modernization Tools
 
 ## Introduction {#introduction}
 
