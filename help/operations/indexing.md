@@ -65,6 +65,10 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### Deploying Index Definitions {#deploying-index-definitions}
 
+> [!NOTE]
+>
+> There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. To work around this, please use version **1.0.4**.
+
 Index definitions are now marked as custom and versioned:
 
 * The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
