@@ -418,11 +418,12 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
+<!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
    >[!NOTE]
    >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
+   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
