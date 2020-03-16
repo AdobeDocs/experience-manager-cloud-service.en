@@ -4,11 +4,9 @@ description:  Learn how the Asset Insights feature lets you track user ratings a
 contentOwner: AG
 ---
 
-# Asset Insights{#asset-insights}
+# Asset Insights {#asset-insights}
 
-<!-- TBD: Add uicontrol tags  -->
-
-The Asset Insights feature enables you to track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. It helps derive insights regarding their performance and popularity.
+Asset Insights track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. It helps provide insights about performance and popularity of the images.
 
 Assets Insights captures user activity details, such as the number of times an image is rated, clicked, and impressions (number of times an image is loaded on the website). It assigns scores to images based on these statistics. You can use the scores and performance statistics to select popular images for inclusion in catalogs, marketing campaigns, and so on. You can even formulate archival and license renewal policies based on these statistics.
 
@@ -34,10 +32,10 @@ You can view the Asset Insights scores from the metadata page.
 
 1. Review the **[!UICONTROL Usage Statistics]** section to know which entities the asset was part of and which creative solutions recently used it. The higher the usage, the greater the chances that the asset is popular among users. Usage data is displayed under the following heads:
 
-    * **Asset**: The number of times the asset was part of a collection or compound asset
-    * **Web & Mobile**: The number of times the asset was part of websites and apps
-    * **Social**: The number of times the asset was used in solutions, such as Adobe Social and Adobe Campaign
-    * **Email**: The number of times the asset was used in email campaigns
+    * **[!UICONTROL Asset]**: The number of times the asset was part of a collection or compound asset.
+    * **[!UICONTROL Web & Mobile]**: The number of times the asset was part of websites and apps.
+    * **[!UICONTROL Social]**: The number of times the asset was used in solutions, such as Adobe Social and Adobe Campaign.
+    * **[!UICONTROL Email]**: The number of times the asset was used in email campaigns.
 
    ![usage_statistics](assets/usage_statistics.png)
 
@@ -92,6 +90,7 @@ Adobe Experience Manager (AEM) Assets fetches usage data around AEM assets used 
 1. In the wizard, select a data center and provide your credentials including the name of your organization, user name, and Shared Secret.
 
    ![Configure Adobe Analytics for Assets Insights in AEM](assets/insights_config2.png)
+
    *Figure: Configure Adobe Analytics for Assets Insights in AEM*
 
 1. Click/tap **[!UICONTROL Authenticate]**. After AEM authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an Adobe Analytics report suite from where you want Asset Insights to fetch data. Click **[!UICONTROL Add]**.
