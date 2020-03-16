@@ -79,10 +79,33 @@ Content is replicated from Author to Publish through a pub-sub mechanism. Custom
 
 ### Logs {#logs}
 
-* For local development, logs entries are written to local files
-  * `./crx-quickstart/logs`
-* On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
+
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Setting the Log Level**
+
+To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+
+**Activating the DEBUG Log Level**
+
+The default log level is INFO, that is, DEBUG messages are not logged.
+To activate DEBUG log level, use the CRX explorer to set the
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
+A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example: 
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+The log levels are as follows: 
+
+| 0  | Fatal error   | The action has failed, and the installer cannot proceed.   |
+|---|---|---|
+| 1  | Error  | The action has failed. The installation proceeds, but a part of CRX was not installed correctly and will not work.   |
+| 2  | Warning  | The action has succeeded but encountered problems. CRX may or may not work correctly. |
+| 3  |  Information | The action has succeeded.   |
 
 ### Thread Dumps {#thread-dumps}
 
