@@ -1,9 +1,9 @@
 ---
-title: Develop a Repository Structure Package   
+title: AEM Project Repository Structure Package  
 description: Adobe Experience Manager as a Cloud Service Maven projects requires a Repository Structure Sub-package definition whose sole purpose is to define the JCR repository roots in which the project's Code sub-packages deploy into.
 ---
  
-# Develop a Repository Structure Package
+# AEM Project Repository Structure Package
 
 Maven projects for Adobe Experience Manager as a Cloud Service require a repository structure sub-package definition whose sole purpose is to define the JCR repository roots in which the project's code sub-packages deploy into. This ensures the installation of packages in Experience Manager as a Cloud Service is automatically ordered by JCR resource dependencies. Missing dependencies may lead to scenarios where sub-structures would be installed ahead of their parent structures and therefore be unexpectedly removed, breaking the deployment.
 
