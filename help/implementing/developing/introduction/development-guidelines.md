@@ -87,10 +87,14 @@ On Cloud environments, developers can download logs through Cloud Manager or use
 
 To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
 
+> [!NOTE]
+> 
+> In order to perform the configuration changes listed below, you need to create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+
 **Activating the DEBUG Log Level**
 
 The default log level is INFO, that is, DEBUG messages are not logged.
-To activate DEBUG log level, use the CRX explorer to set the
+To activate DEBUG log level, set the
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
