@@ -9,7 +9,7 @@ In Cloud Manager you have the Tenant entity at the very top which can have multi
 
 The following diagram shows the hierarchy of entities in Cloud Manager.
 
-![](assets/program_types.png)
+   ![image](assets/program-types1.png)
 
 ## Program Types {#program-types}
 

@@ -36,7 +36,7 @@ You can download the list of rules here [code-quality-rules.xlsx](/help/implemen
 
 >[!NOTE]
 >
->To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
+>To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
@@ -121,7 +121,7 @@ The Custom Functional testing step in the pipeline is always present and cannot 
 
 However, if no test JAR is produced by the build, the test passes by default. This step is current done immediately after the stage deployment.
 
-> Note:
+>[!NOTE]
 >The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 ## Local Test Execution {#local-test-execution}

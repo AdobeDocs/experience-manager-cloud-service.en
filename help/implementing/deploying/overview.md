@@ -11,6 +11,10 @@ The fundamentals of code development are similar in AEM as a Cloud Service compa
 
 The update of the AEM version is always a separate deployment event from pushing custom code. Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on top of. AEM version updates that happen after that, which will be frequent when compared to Managed Services today, are automatically applied. They are intended to be backwards compatible with the customer code already deployed.
 
+The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
 >[!NOTE]
@@ -41,10 +45,10 @@ For previous AEM solutions, the most current AEM version changed infrequently (r
 
 Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart will be supported and is expected to be the tool of choice for debugging in the majority of cases.
 
-> [!NOTE}
+>[!NOTE]
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/overview.md).
+In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/overview.md).
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -103,7 +107,8 @@ After switchover to new version of application:
 
 It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Details to be found in [AEM documentation](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) around recommended project restructuring.
 
->[!NOTE] Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
+>[!NOTE]
+>Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
 
 Also, there is no mechanism to rollback the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
@@ -119,7 +124,8 @@ For the following cases, it is preferable to take the approach of hand coding ex
 * Create/delete groups
 * Create/delete users
 * Add ACLs
-  > [!NOTE] Definition of ACLs requires the node structures to be already present. Thus, preceding create path statements might be necessary.
+  > [!NOTE] 
+  >Definition of ACLs requires the node structures to be already present. Thus, preceding create path statements might be necessary.
 * Add path (for example for root folder structures)
 * Add CNDs (nodetype definitions)
 

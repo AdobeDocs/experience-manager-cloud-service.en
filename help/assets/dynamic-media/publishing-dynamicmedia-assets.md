@@ -33,5 +33,5 @@ For detailed information on publishing a set or asset, see [Publishing Assets.](
 
 AEM now supports the delivery of all Dynamic Media content (images and video) over HTTP/2. That is, a published URL or embed code for the image or video is available to be integrated with any application that accepts a hosted asset. That published asset is then delivered by way of HTTP/2 protocol. This method of delivery improves the way browsers and servers communicate, allowing for better response and load times of all your Dynamic Media assets.
 
-See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/scene7-http2faq.md) to learn more. 
+See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/http2faq.md) to learn more. 
 <!--this md file used to reside under sites-administering-->
