@@ -28,5 +28,5 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 |Pipeline Execution|Resume Production Pipeline.|||||
 |Manage Environment|Add Publish-Dispatcher segment from the Manage Environment Screen.|x|x||||
 |Push Update|Start Push Update Pipeline.|||||
-|Generate Personal Access Token|Generate Personal Access Token.||x||x|
+|Generate Personal Access Token|Access Git.||x||x|
 

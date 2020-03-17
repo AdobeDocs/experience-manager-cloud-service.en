@@ -5,6 +5,32 @@ description: To be completed
 
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
+Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
+
+During the update of AEM as a Cloud Service, there will be instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
+<!--
+
+>[!NOTE]
+> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
+
+-->
+
+If there is the need to identify the master in the cluster, the Apache Sling Discovery API can be used to detect it.
+
+## State in Memory {#state-in-memory}
+
+State must not be kept in memory but persisted in the repository. Otherwise, this state might get lost if an instance is stopped.
+
+## State on the Filesystem {#state-on-the-filesystem}
+
+The instance's file system should not be used in AEM as a Cloud Service. The disk is ephemeral and will be disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
+
+As an example where file system usage is not supported, the Publish tier should ensure that any data that needs to be persisted is shipped off to an external service for longer term storage.
+
+## Observation {#observation}
+
+Similar, with everything that is asynchronously happening like acting on observation events, it cannot be guaranteed to be executed locally and therefore must be used with care. This is true for both JCR events and Sling resource events. At the time a change is happening, the instance may be taken down and be replaced by a different instance. Other instances in the topology that are active at that time will be able to react to that event. In this case however, this will not be a local event and there might even be no active leader in case of an ongoing leader election when the event is issued.
+
 ## Background Tasks and Long Running Jobs {#background-tasks-and-long-running-jobs}
 
 Code executed as a background tasks must assume that the instance it is running in can be brought down at any time. Therefore the code must be resilient and most import resumable. That means that if the code gets re-executed it should not start from the beginning again but rather close to from where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance take down is going to occur.
@@ -25,34 +51,79 @@ Alternatives that are known to work, but may require providing the dependency yo
 
 * [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Provided by AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (not recommended as it is outdated and replaced by version 4.x)
-* [OK Http](OK Http (Not provided by AEM)) (Not provided by AEM)
+* [OK Http](https://square.github.io/okhttp/) (Not provided by AEM)
+
+## No Classic UI Customizations {#no-classic-ui-customizations}
+
+AEM as a Cloud Service only supports the Touch UI for 3rd party customer code. Classic UI is not available for customization.
+
+## Avoid Native Binaries {#avoid-native-binaries}
+
+Code will not be able to download binaries at runtime nor modify them. For example, it will not be able to unpack `jar` or `tar` files.
+
+## No Streaming Binaries through AEM as a Cloud Service {#no-streaming-binaries}
+
+Binaries should be accessed through the CDN, which will serve binaries outside of the core AEM services.
+
+For example, do not use `asset.getOriginal().getStream()`, which triggers downloading a binary onto the AEM service's ephemeral disk.
+
+## No Reverse Replication Agents {#no-reverse-replication-agents}
+
+Reverse replication from Publish to Author is not supported in AEM as a Cloud Service. If such a strategy is needed, you can use an external persistence store that is shared amongst the farm of Publish instances and potentially the Author cluster.
+
+## Forward Replication Agents Might Need to be Ported {#forward-replication-agents}
+
+Content is replicated from Author to Publish through a pub-sub mechanism. Custom replication agents are not supported.
 
 ## Monitoring and Debugging {#monitoring-and-debugging}
 
 ### Logs {#logs}
 
-* For local development, logs entries are written to local files
-  * `./crx-quickstart/logs`
-* On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
+
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Setting the Log Level**
+
+To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+
+**Activating the DEBUG Log Level**
+
+The default log level is INFO, that is, DEBUG messages are not logged.
+To activate DEBUG log level, use the CRX explorer to set the
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
+A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example: 
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+The log levels are as follows: 
+
+| 0  | Fatal error   | The action has failed, and the installer cannot proceed.   |
+|---|---|---|
+| 1  | Error  | The action has failed. The installation proceeds, but a part of CRX was not installed correctly and will not work.   |
+| 2  | Warning  | The action has succeeded but encountered problems. CRX may or may not work correctly. |
+| 3  |  Information | The action has succeeded.   |
 
 ### Thread Dumps {#thread-dumps}
 
 Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, please contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
-### CRX/DE Lite and System Console {#crxde-lite-and-system-console}
+## CRX/DE Lite and System Console {#crxde-lite-and-system-console}
 
-## Local Development {#local-development}
+### Local Development {#local-development}
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
 Note that on local development (using the cloud-ready quickstart), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
-## AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
 Customers can access CRXDE lite on the development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
-A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the author or publish service urls as follows:
+A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -78,10 +149,10 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-**AEM Staging and Production Service**
+### AEM Staging and Production Service {#aem-staging-and-production-service}
 
 Customers will not have access to developer tooling for staging and production environments. 
 
-### Diagnostics {#diagnostics}
+### Performance Monitoring {#performance-monitoring}
 
-System console is available for dev environments. However, diagnostic dumps for staging and production are not available.
+Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metrics can not be obeserved.
