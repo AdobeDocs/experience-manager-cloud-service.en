@@ -36,7 +36,6 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Digital rights management for assets](drm.md)
 + Configure, administer and extend Assets {#admin}
   + [APIs and reference material](developer-reference-material-apis.md)
-  + [Configure asset sharing](configure-asset-sharing.md)
   + [Folder metadata schema](folder-metadata-schema.md)
   + [Multilingual assets and asset translation](translate-assets.md)
   + [Search facets](search-facets.md)
