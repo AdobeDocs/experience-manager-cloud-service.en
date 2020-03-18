@@ -26,15 +26,15 @@ Before you use or configure this capability, ensure the following:
   ||AEM Sites as a Cloud Service |AEM 6.5 Sites on AMS| AEM 6.5 Sites on-premise|
   |---|---|---|---|
   |**AEM Assets as a Cloud Service**| Supported | Supported | Supported |
-  |**AEM 6.5 Assets on AMS** | Not Supported | Supported | Supported |
+  |**AEM 6.5 Assets on AMS** | Supported | Supported | Supported |
   |**AEM 6.5 Assets on-premise** | Not Supported |Not Supported | Not Supported |
 
 ### Supported file formats {#mimetypes}
 
 Authors can search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. The lists of supported formats are:
 
-* **Image formats**: The image formats supported by the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) are supported. Dynamic Media Components are not supported.
-* **Document formats**: See [Connected Assets supported document formats](file-format-support.md#supported-document-formats).
+* **Image formats**: The image formats supported by the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) are supported. Dynamic Media images are not supported.
+* **Document formats**: See [Connected Assets supported document formats](file-format-support.md#doc-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
 

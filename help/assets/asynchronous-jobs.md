@@ -25,7 +25,7 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 ## Monitoring the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox and through email.
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
