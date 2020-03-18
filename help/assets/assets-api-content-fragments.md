@@ -14,7 +14,7 @@ description: Learn about Adobe Experience Manager as a Cloud Service Content Fra
 >* Assets REST API
 >* including support for Content Fragments
 >
->The current implementation of the Assets HTTP API is REST.
+>The current implementation of the Assets HTTP API is based on the REST architectural style.
 
 The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete).
 
@@ -22,9 +22,14 @@ The API allows you to operate Adobe Experience Manager as a Cloud Service as a h
 
 For example, Single Page Applications (SPA), framework-based or custom, require content provided over the HTTP API, often in JSON format.
 
-While AEM Core Components provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in (API) pages that are based on dedicated AEM templates. Not every SPA development organization has access to such resources.
+While [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Not every SPA development organization has direct access to such knowledge.
 
-This is when the Assets REST API can be used. It allows developers to access assets (for example, images and content fragments) directly, without need to first embed them in a page, and deliver their content in serialized JSON format. (Note that it is not possible to customize JSON output from the Assets REST API). The Assets REST API also allows developers to modify content - by creating new, updating, or deleting existing assets, content fragments and folders.
+This is when the Assets REST API can be used. It allows developers to access assets (for example, images and content fragments) directly, without the need to first embed them in a page, and deliver their content in serialized JSON format. 
+
+>[!NOTE]
+>It is not possible to customize JSON output from the Assets REST API. 
+
+The Assets REST API also allows developers to modify content - by creating new, updating, or deleting existing assets, content fragments and folders.
 
 The Assets REST API:
 
