@@ -14,7 +14,7 @@ description: Learn about Adobe Experience Manager as a Cloud Service Content Fra
 >* Assets REST API
 >* including support for Content Fragments
 >
->The current implementation of the Assets HTTP API is based on the REST architectural style.
+>The current implementation of the Assets HTTP API is based on the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architectural style.
 
 The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete).
 
@@ -43,7 +43,21 @@ The Assets REST API is available on each out-of-the-box install of a recent Adob
 
 ## Key Concepts {#key-concepts}
 
-The Assets REST API offers [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-style access to assets stored within an AEM instance. It uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`).
+The Assets REST API offers [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-style access to assets stored within an AEM instance. 
+
+It uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`). 
+
+* This means that to access the asset at:
+  * `/content/dam/path/to/asset`
+* You need to request:
+  *  `/api/assets/path/to/asset` 
+
+For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
+
+>[!NOTE]
+>Access over:
+>* `/api/assets` **does not** need the use of the `.model` selector.
+>* `/content/assets` **does** require the use of the `.model` selector.
 
 The HTTP method determines the operation to be executed:
 
@@ -69,12 +83,14 @@ This means that subsequent (`write`) requests cannot be combined into a single t
 ### AEM (Assets) REST API versus AEM Components {#aem-assets-rest-api-versus-aem-components}
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Aspect</td>
    <td>Assets REST API<br/> </td>
    <td>AEM Component<br/> (components using Sling Models)</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Supported use-case(s)</td>
    <td>General purpose.</td>
@@ -87,9 +103,11 @@ This means that subsequent (`write`) requests cannot be combined into a single t
   </tr>
   <tr>
    <td>Access</td>
-   <td><p>Can be accessed directly.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> <p>For example, to access:<code class="code">
-       /content/dam/wknd/en/adventures/cycling-tuscany</code><br/> request:<br/> <code>/api/assets/wknd/en/adventures/cycling-tuscany.model.json</code></p> </td>
-   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br/> <code>http://localhost:4502/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> </td>
+   <td><p>Can be accessed directly.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> 
+   <p>An example path would look like: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
+   </td>
+    <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example path would look like:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+   </td>
   </tr>
   <tr>
    <td>Security</td>
@@ -129,8 +147,8 @@ Content Fragments are a specific type of Asset, see [Working with Content Fragme
 
 For further information about features available through the API see:
 
-* [Available Features](/help/assets/mac-api-assets.md#available-features) of the Assets REST API
-* [Entity Types](/help/assets/assets-api-content-fragments.md#entity-types)
+* The [Assets REST API](/help/assets/mac-api-assets.md)  
+* [Entity Types](/help/assets/assets-api-content-fragments.md#entity-types), where the features specific to each supported type (as relevant to Content Fragments) are explained 
 
 ### Paging {#paging}
 
@@ -169,15 +187,15 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders.
+The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
->Depending on the asset type the list of child entities may already contain the full set of properties that defines the respective child entity. Alternatively, only a reduced set of properties may be exposed for an entity in this list of child entities.
+>Depending on the asset type of the child assets and folders the list of child entities may already contain the full set of properties that defines the respective child entity. Alternatively, only a reduced set of properties may be exposed for an entity in this list of child entities.
 
 ### Assets {#assets}
 
-If an asset is requested, the response will return its metadata; such as title, name and other information as defined by the respective assets schema.
+If an asset is requested, the response will return its metadata; such as title, name and other information as defined by the respective asset schema.
 
 The binary data of an asset is exposed as a SIREN link of type `content` (also known as the `rel attribute`).
 
@@ -202,7 +220,7 @@ Content fragments:
 
 Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-To create a new content fragment, the (internal repository) path has to be provided.
+To create a new content fragment, the (internal repository) path of the model has to be provided.
 
 #### Associated Content {#associated-content}
 
@@ -237,7 +255,7 @@ Usage is via:
 
 For example:
 
-`http://localhost:4502/api/assets/wknd/en/adventures/cycling-tuscany.model.json`
+`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 The response is serialized JSON with the content structured as in the content fragment. References are delivered as reference URLs.
 
@@ -262,7 +280,7 @@ Usage is via
 
 The body has to contain a JSON representation of what is to be updated for the given content fragment.
 
-This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata. It is also mandatory to provide a valid `cq:model` property for updates.
+This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata. 
 
 ### Delete {#delete}
 
@@ -277,13 +295,13 @@ There are a few limitations:
 * **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
 
 * **Content fragment models are currently not supported**: they cannot be read or created. To be able to create a new, or update an existing, content fragment, developers have to know the correct path to the content fragment model. Currently the only method to get an overview of these is through the administration UI.
-* **References are ignored**. Currently there are no checks on whether an existing content fragment is referenced. Therefore, for example, deleting a content fragment might result in issues on a page that contains a reference.
+* **References are ignored**. Currently there are no checks on whether an existing content fragment is referenced. Therefore, for example, deleting a content fragment might result in issues on a page that contains a reference to the deleted Content Fragment.
 
 ## Status Codes and Error Messages {#status-codes-and-error-messages}
 
 The following status codes can be seen in the relevant circumstances:
 
-1. 202 (OK)
+1. 200 (OK)
 
    Returned when:
 
@@ -309,17 +327,13 @@ The following status codes can be seen in the relevant circumstances:
    >
    >This error is returned:
    >
-   >
-   >
    >    * when an error that cannot be identified with a specific code has happened
    >    * when the given payload was not valid
-   >
-   >
 
    The following lists common scenarios when this error status is returned, together with the error message (monospace) generated:
 
     * Parent folder does not exist (when creating a content fragment via `POST`)
-    * No content fragment model is supplied (null value), resource is null (potentially a permission problem) or the resource is no valid fragment template:
+    * No content fragment model is supplied (cq:model is missing), cannot be read (due to an invalid path or a permission problem) or there is no valid fragment model/template:
 
         * `No content fragment model specified`
         * `Cannot create a resource of given model '/foo/bar/qux'`
