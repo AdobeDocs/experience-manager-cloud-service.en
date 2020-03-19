@@ -9,19 +9,22 @@ There are several [advanced services](#definition-of-advanced-services-that-need
 
 This is done by configuring the [OSGi Service - Content Fragment Component Configuration](#osgi-service-content-fragment-component-configuration).
 
->[!CAUTION]
->
->If you do not need the [advanced services](#definition-of-advanced-services-that-need-configuration) described below, you can ignore this configuration.
+This information is required when:
+
+* You need to implement your own Content Fragment-based component,
+* And need to make use of the advanced services.
+
+However, it is recommended to use the Core Components.
 
 >[!CAUTION]
 >
->When you are extending or using the out-of-the-box component(s), it is not recommended to change the configuration.
-
->[!CAUTION]
+>* **If you do not need the [advanced services](#definition-of-advanced-services-that-need-configuration)** described below, you can ignore this configuration.
 >
->You can write a component from scratch that uses the Content Fragments API only, with no advanced services. However, in such a case, you will have to develop your component so that it handles the appropriate processing.
+>* **When you are extending or using the out-of-the-box component(s)**, it is not recommended to change the OSGi configuration.
 >
->Therefore, it is recommended to use the core components.
+>* **You can write a component from scratch that uses the Content Fragments API only, with no advanced services**. However, in such a case, you will have to develop your component so that it handles the appropriate processing.
+>
+>Therefore, it is recommended to use the Core Components.
 
 ## Definition of Advanced Services that need Configuration {#definition-of-advanced-services-that-need-configuration}
 
@@ -34,7 +37,7 @@ The services that require the registration of a component are:
 * Dispatcher flush for referenced fragments (if a page containing a fragment is re-published).
 * Using paragraph-based rendering.
 
-If you need one or more of these features, then (typically) it is easier to use the out-of-the-box functionality, instead of developing it from scratch.
+If you need one or more of these features, then (typically) it is easier to use the out-of-the-box Advanced Services, instead of developing them from scratch.
 
 ## OSGi Service - Content Fragment Component Configuration {#osgi-service-content-fragment-component-configuration}
 
@@ -53,12 +56,14 @@ For example:
 The OSGi configuration is:
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Label</td>
    <td>OSGi Configuration<br /> </td>
    <td>Description</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td><strong>Resource type</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
@@ -82,22 +87,16 @@ The OSGi configuration is:
  </tbody>
 </table>
 
-For some functionality (e.g. to render only a paragraph range) you will have to adhere to some conventions:
+For some functionality your component will have to adhere to predefined conventions. The following table details the properties that need to be defined, by your component, for each paragraph (i.e. `jcr:paragraph` for each component instance) so that the services can detect and process them correctly. 
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Property Name</td>
    <td>Description</td>
   </tr>
-  <tr>
-   <td><code>paragraphRange</code></td>
-   <td><p>A string property that defines the range of paragraphs to be output if in <em>single element render mode</em>.</p> <p>Format:</p>
-    <ul>
-     <li><code>1</code> or <code>1-3</code> or <code>1-3;6;7-8</code> or <code>*-3;5-*</code></li>
-     <li>only evaluated if <code>paragraphScope</code> is set to <code>range</code></li>
-    </ul> </td>
-  </tr>
+ </thead>
+ <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
    <td><p>A string property that defines how paragraphs are to be output if in <em>single element render mode</em>.</p> <p>Values:</p>
@@ -107,15 +106,25 @@ For some functionality (e.g. to render only a paragraph range) you will have to 
     </ul> </td>
   </tr>
   <tr>
+   <td><code>paragraphRange</code></td>
+   <td><p>A string property that defines the range of paragraphs to be output if in <em>single element render mode</em>.</p> <p>Format:</p>
+    <ul>
+     <li><code>1</code> or <code>1-3</code> or <code>1-3;6;7-8</code> or <code>*-3;5-*</code>
+     <ul>
+       <li><code>-</code> range indicator</li>
+       <li><code>;</code> list separator</li>
+       <li><code>*</code> wildcard</li>
+     </ul>
+     </li>
+     <li>only evaluated if <code>paragraphScope</code> is set to <code>range</code></li>
+    </ul> </td>
+  </tr>
+  <tr>
    <td><code>paragraphHeadings</code></td>
    <td>A boolean property that defines if headings (for example, <code>h1</code>, <code>h2</code>, <code>h3</code>) are counted as paragraphs (<code>true</code>) or not (<code>false</code>)</td>
   </tr>
  </tbody>
 </table>
-
->[!CAUTION]
->
->This may change in later 6.5 milestones.
 
 ## Example {#example}
 
