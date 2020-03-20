@@ -35,6 +35,10 @@ Depending on the type of fragment, either models or the **Simple Fragment** temp
   * Models are built-up of data types.
   * Functions to add new variations, etc., have to update the fragment accordingly.
 
+  >[!NOTE]
+  >
+  >For you to display/render a Content Fragment, your account must have read permissions for the model.
+
   >[!CAUTION]
   >
   >Any changes to an existing content fragment model can impact dependent fragments; this can lead to orphan properties in those fragments.
@@ -113,7 +117,9 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 
 #### Feature Integration {#feature-integration}
 
-* The Content Fragment Management (CFM) feature builds on the Assets core, but should be as independent of it as possible.
+To integrate with Assets core:
+
+* The Content Fragment Management (CFM) feature builds on the Assets core.
 
 * CFM provides its own implementations for items in the card/column/list views; these plug into the existing Assets content rendering implementations.
 
@@ -123,7 +129,7 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 
 >[!CAUTION]
 >
->The [Content Fragment Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) is now recommended. See [Developing Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) for more details.
+>The [Content Fragment component is part of Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html). See [Developing Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) for more details.
 
 Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the **[Content Fragment core component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** - a [component that allows you to include content fragments on your pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this **[Content Fragment](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** core component.
 
@@ -141,7 +147,7 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 
     * be aware of the possibility of unstable references; in-between content (added when authoring a page) has no fixed relationship to the paragraph it is positioned next to, inserting a new paragraph (in the content fragment editor) before the position of the in-between content can lose the relative position
 
-    * consider the additional parameters (such as like variation and paragraph filters) to avoid false positives in search results
+    * consider the additional parameters (such as variation and paragraph filters) to configure what is rendered on the page
 
 >[!NOTE]
 >
@@ -153,44 +159,6 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 >
 >When using a content fragment that has been based on the content fragment template **Simple Fragment** on a page, there is no reference as the template was copied when creating the fragment.
 
-#### Configuration using OSGi console {#configuration-using-osgi-console}
-
-The backend implementation of content fragments is, for example, responsible for making instances of a fragment used on a page searchable, or for managing mixed media content. This implementation needs to know which components are used for rendering fragments and how the rendering is parameterized.
-
-The parameters for this can be configured for the OSGi bundle **Content Fragment Component Configuration**.
-
-* **Resource types**
-  A list of `sling:resourceTypes` can be provided to define components that are used for rendering content fragments and where the background processing should be applied to.
-
-* **Reference Properties**
-  A list of properties can be configured to specify where the reference to the fragment is stored for the respective component.
-
->[!NOTE]
->
->There is no direct mapping between property and component type.
->
->AEM simply takes the first property that can be found on a paragraph. So you should choose the properties carefully.
-
-![OSGi Content Fragment Component Configuration](assets/cf-component-customizing-osgi.png)
-
-There are still some guidelines you must follow to ensure your component is compatible with the content fragment background processing:
-
-* The name of the property where the element(s) to be rendered is defined must be either `element` or `elementNames`.
-
-* The name of the property where the variation to be rendered is defined must be either `variation` or `variationName`.
-
-* If the output of multiple elements is supported (by using `elementNames` to specify multiple elements), the actual display mode is defined by property `displayMode`:
-
-  * If the value is `singleText` (and there is only one element configured) then the element is rendered as a text with in-between content, layout support, etc. This is the default for fragments where only one single element is rendered.
-
-  * Otherwise, a much more simple approach is used (could be called "form view"), where no in-between content is supported and the fragment content is rendered "as is".
-
-* If the fragment is rendered for `displayMode` == `singleText` (implicitly or explicitly) the following additional properties come into play:
-
-  * `paragraphScope` defines whether all paragraphs, or only a range of paragraphs, should be rendered (values: `all` vs. `range`)
-
-  * if `paragraphScope` == `range` then the property `paragraphRange` defines the range of paragraphs to be rendered
-
 ### Integration with other Frameworks {#integration-with-other-frameworks}
 
 Content fragments can be integrated with:
@@ -201,15 +169,7 @@ Content fragments can be integrated with:
 
   * The individual translations of a content fragment are actually separate fragments; for example:
 
-    * they are located under different language roots:
-
-      `/content/dam/<path>/en/<to>/<fragment>`
-
-      vs.
-
-      `/content/dam/<path>/de/<to>/<fragment>`
-
-    * but they share exactly the same relative path below the language root:
+    * they are located under different language roots; but share exactly the same relative path below the relevant language root:
 
       `/content/dam/<path>/en/<to>/<fragment>`
 
@@ -224,8 +184,6 @@ Content fragments can be integrated with:
   >The AEM translation workflow works with `/content`:
   >
   >* As the content fragment models reside in `/conf`, these are not included in such translations. You can internationalize the UI strings.
-  >
-  >* The **Simple Fragment** template is copied to create the fragment so this is implicit.
 
 * **Metadata schemas**
 
