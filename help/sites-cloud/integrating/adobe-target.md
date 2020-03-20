@@ -38,7 +38,7 @@ To integrate with Target, perform the following tasks:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service, the replication agent that synchronizes Offers and Activities from AEM to Adobe Target is disabled by default. Please contact [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) if you need to re-enable the replication agent.
+>In AEM as a Cloud Service, the replication agent that synchronizes Offers and Activities from AEM to Adobe Target is disabled by default. Please contact the [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) team if you need to re-enable the replication agent.
 
 >[!NOTE]
 >
