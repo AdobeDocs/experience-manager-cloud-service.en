@@ -203,7 +203,7 @@ When the new versions of libraries are released to production, the referencing H
 
 The mechanism for this is a serialized hash, which is appended to the client library link, ensuring a unique, versioned url for the browser to cache the CSS/JS. The serialized hash is only updated when the contents of the client library changes. This means that if unrelated updates occur (i.e no changes to the underlying css/js of the client library) even with a new deployment, the reference remains the same, ensuring less disruption to the browser cache.
 
-### Enabling Longcache versions of Client Side Libraries - AEM as a Cloud Service SDK Quickstart {enabling-longcache}
+### Enabling Longcache versions of Client Side Libraries - AEM as a Cloud Service SDK Quickstart {#enabling-longcache}
 
 Default clientlib includes on an HTML page look like the following example:
 
