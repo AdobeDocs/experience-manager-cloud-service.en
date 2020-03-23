@@ -205,7 +205,7 @@ You can use the server-side API to access your content fragments; see:
 
 >[!CAUTION]
 >
->It is strongly recommended to use the server-side API instead of directly accessing the content structure.
+>It is strongly recommended to use the server-side API instead of directly accessing the content structure. 
 
 ### Key Interfaces {#key-interfaces}
 
@@ -214,10 +214,6 @@ The following three interfaces can serve as entry points:
 * **Content Fragment** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   This interface allows you to work with a content fragment in an abstract way.
-
-  >[!CAUTION]
-  >
-  >It is strongly recommended to access a fragment through this interface. Changing the content structure directly should be avoided.
 
   The interface provides you with the means to:
 
@@ -275,30 +271,21 @@ The following can be adapted:
 
 * `ContentFragment` can be adapted to:
 
-  * `Resource` - the underlying Sling resource; note that updating the underlying `Resource` directly, requires rebuilding the `ContentFragment` object.
+  * `Resource` - the underlying Sling resource; updating the underlying `Resource` directly requires rebuilding the `ContentFragment` object.
 
-  * `Asset` - the DAM `Asset` abstraction that represents the content fragment; note that updating the `Asset` directly, requires rebuilding the `ContentFragment` object.
+  * `Asset` - the DAM `Asset` abstraction that represents the content fragment; updating the `Asset` directly requires rebuilding the `ContentFragment` object.
 
 * `ContentElement` can be adapted to:
 
   * `ElementTemplate` - for accessing the element's structural information.
 
-* `FragmentTemplate` can be adapted to:
-
-  * `Resource` - the `Resource` determining the referenced model or the original template that was copied;
-
-    * changes made through the `Resource` are not automatically reflected in the `FragmentTemplate`.
-
 * `Resource` can be adapted to:
 
   * `ContentFragment`
-  * `FragmentTemplate`
 
 ### Caveats {#caveats}
 
 It should be noted that:
-
-* The API is implemented to provide functionality supported by the UI.
 
 * The entire API is designed to **not** persist changes automatically (unless otherwise noted in the API JavaDoc). So you will always have to commit the resource resolver of the respective request (or the resolver you are actually using).
 
@@ -306,7 +293,7 @@ It should be noted that:
 
   * Creating/removing new elements will not update the data structure of simple fragments (based on the **Simple Fragment** template).
 
-  * Creating new variations from `ContentElement` will not update the data structure (but creating them globally from `ContentFragment` will).
+  * Create new variations from `ContentFragment` to update the data structure.
 
   * Removing existing variations will not update the data structure.
 
@@ -314,7 +301,7 @@ It should be noted that:
 
 >[!CAUTION]
 >
->For AEM 6.5 the client-side API is internal.
+>The client-side API is internal.
 
 ### Additional Information {#additional-information}
 
@@ -342,6 +329,7 @@ Requirements for controlling an editing session are:
 
 * If a content fragment is edited by two users concurrently, they should not overwrite each other's changes.
 
+<!--
 #### Processes {#processes}
 
 The processes involved are:
@@ -398,6 +386,8 @@ The possible actions are:
 
   * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
 
+-->
+
 * Leaving a page
 
   * If an editing session is present and the changes have not been persisted, a modal confirmation dialog is shown to notify the user of potentially lost content and allow them to stay on the page.
@@ -424,9 +414,8 @@ if (fragmentResource != null) {
 
 ### Example: Creating a new content fragment {#example-creating-a-new-content-fragment}
 
-To create a new content fragment programmatically, you need to use:
-
-`com.adobe.cq.dam.cfm.ContentFragmentManager#create`
+To create a new content fragment programmatically, you need to use a 
+`FragmentTemplate` adapted from a model or template resource.
 
 For example:
 
@@ -439,7 +428,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Example: Specifying the auto-save interval {#example-specifying-the-auto-save-interval}
 
-The auto save interval (measured in seconds) can be defined using the configuration manager (ConfMgr):
+The [auto save interval](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
 
 * Node: `<conf-root>/settings/dam/cfm/jcr:content`
 * Property Name: `autoSaveInterval`
