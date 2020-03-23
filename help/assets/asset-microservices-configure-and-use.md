@@ -52,9 +52,9 @@ To configure asset microservices, administrators can use configuration user inte
 
 ### Default configuration {#default-config}
 
-With the default configuration, only the [!UICONTROL standard] processing profile is configured. It is a built-in one, and cannot be modified. It is always executed to ensure that all the processing required by the application is taking place.
+With the default configuration, only the standard processing profile is configured. The standard processing profile is not visible on the user interface and you cannot modify it. It always executes to process uploaded assets. A standard processing profile ensures that all the basic processing required by Experience Manager is completed on all assets.
 
-![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 The standard processing profile provides the following processing configuration:
 
@@ -99,13 +99,13 @@ Otherwise, the MIME type is checked against the included MIME type, and if it ma
 
 #### Special FPO rendition {#special-fpo-rendition}
 
-Processing profile can include a special "FPO rendition", which is used when [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) is used with Adobe InDesign to place direct links to assets from Experience Manager into InDesign documents.
+When placing large-sized assets from AEM into Adobe InDesign documents, a creative professional must wait for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using InDesign. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in InDesign documents to begin with, which can be replaced with full-resolution assets on-demand later. Experience Manager provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio.
 
-Please refer to Adobe Asset Link [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile.
+The processing profile can include a FPO (For Placement Only) rendition. See Adobe Asset Link [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. For more information, see [Adobe Asset Link complete documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 ## Use asset microservices to process assets {#use-asset-microservices}
 
-Once additional processing profiles are created, they need to be applied to specific folders for Experience Manager to use them in asset processing for assets uploaded or updated in these folders. The built-in, standard processing profile is always executed.
+Create and apply the additional, custom processing profiles to specific folders for Experience Manager to process for assets uploaded to or updated in these folders. The default, in-built standard processing profile is always executed but is not visible on the user interface. If you add a custom profile, then both profiles are used to process the uploaded assets.
 
 There are two ways to get processing profiles applied to folders:
 
@@ -146,15 +146,15 @@ Adding a post-processing workflow configuration to Experience Manager is compris
 * The last step of such a model must be the `DAM Update Asset Workflow Completed Process` step. This is required to ensure that AEM knows the processing has ended and the asset can be marked as processed ("New")
 * Creating a configuration for the Custom Workflow Runner Service, which allows for configuring execution of a post-processing workflow model either by path (folder location) or regular expression
 
-### Creating post-processing workflow models
+### Create post-processing workflow models {#create-post-processing-workflow-models}
 
-Post-processing workflow models are regular AEM workflow models. Please create different ones if you need different processing for different repository locations or asset types.
+Post-processing workflow models are regular AEM workflow models. Create different models if you need different processing for different repository locations or asset types.
 
-Processing steps should be added based on needs. You can use any supported out-of-the-box steps available, as well as any custom-implemented workflow steps.
+Processing steps should be added based on needs. You can use any supported steps available, as well as any custom-implemented workflow steps.
 
-The last step of each of the post-processing workflows needs to be the `DAM Update Asset Workflow Completed Process`. This ensure that asset is properly marked as "processing completed."
+Ensure that the last step of each post-processing workflows is `DAM Update Asset Workflow Completed Process`. The last step helps ensure that Experience Manager knows when asset processing is completed.
 
-### Configuring post-processing workflow execution
+### Configure post-processing workflow execution {#configure-post-processing-workflow-execution}
 
 To configure the post-processing workflow models to be executed for assets uploaded or updated in the system after the asset microservices processing finishes, the Custom Workflow Runner service needs to be configured.
 
@@ -168,4 +168,4 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 >Configuration of the Custom Workflow Runner is a configuration of an OSGi service. See [deploy to Experience Manager](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
 > OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
 
-For details, on which of the standard workflow steps can be used in the post-processing workflow, please see [Workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
+For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
