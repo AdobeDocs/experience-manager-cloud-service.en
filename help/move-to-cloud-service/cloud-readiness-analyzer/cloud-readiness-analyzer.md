@@ -53,3 +53,24 @@ Follow the steps below to send back the file:
 1. Open a DayCare ticket to send the file to Adobe by: 
    1. Logging a support ticket in Daycare titled as **Cloud Readiness Analyzer Output**
    1. Attaching an output file to the ticket
+
+## Detection Scope {#detection-scope}
+
+The following checks are available currently in CRA:
+
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Pattern Name</strong></td>
+   <td><strong>Capability</strong></td>
+  </tr>
+  <tr>
+   <td><strong>AEM System Overview</strong></td>
+   <td>Detects and reports version of AEM instance and AEM solutions</td>
+  </tr>
+   <tr>
+   <td><strong>AEM Cloud Readiness Assessment (ACRA)</strong></td>
+   <td>Detects usage of custom runmode configurations, unsupported Sling scheduler in custom bundles, usage of Multi-Site Manager, usage of custom indexes, usage of resource mapping, and unsupported indexes and any maintenance tasks that need to be performed.</td>
+  </tr>
+ </tbody>
+</table>
