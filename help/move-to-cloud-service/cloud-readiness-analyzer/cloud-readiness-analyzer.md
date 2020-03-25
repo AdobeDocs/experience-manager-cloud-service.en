@@ -75,5 +75,5 @@ The following checks are available currently in CRA:
  </tbody>
 </table>
 
-[AEM System Overview](help/move-to-cloud-service/cloud-readiness-analyzer/aso.md)
-[AEM Cloud Readiness Assessment (ACRA)](help/move-to-cloud-service/cloud-readiness-analyzer/acra.md)
+[AEM System Overview](/help/move-to-cloud-service/cloud-readiness-analyzer/aso.md)
+[AEM Cloud Readiness Assessment (ACRA)](/help/move-to-cloud-service/cloud-readiness-analyzer/acra.md)
