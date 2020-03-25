@@ -5,7 +5,7 @@ description: Content Delivery
 
 # Content Delivery in AEM as a Cloud Service {#content-delivery}
 
-Publish service content delivery includes:
+The current page details publish service content delivery in AEM as a Cloud Service. Publish service content delivery includes:
 
 * CDN (typically managed by Adobe)
 * AEM dispatcher
