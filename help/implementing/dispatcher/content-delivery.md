@@ -27,43 +27,54 @@ The sections below provide greater detail about content delivery, including CDN 
 
 Information about replication from the author service to the publish service is available [here](/help/operations/replication.md). 
 
->[!NOTE]
->Traffic goes through an apache web server, which supports modules including the dispatcher. The dispatcher is used primarily as a cache to limit processing on the publish nodes in order to increase performance.
-
 ## CDN {#cdn}
 
-AEM offers three options:
+AEM as Cloud Service is shipped with a default CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
-1. Adobe Managed CDN - AEM's out-of-the-box CDN. This is the recommended option since it is thoroughly integrated.
-1. Customer CDN points to Adobe Managed CDN - the customer points their own CDN to AEM's out-of-the-box CDN. If the first option is not viable, this is the next preferred option since it still leverages AEM's integration with its default CDN. Customers will still be responsible of managing their own CDN.
-1. Customer Managed CDN - The customer brings their own CDN and is entirely responsible for managing it.
+In total, AEM offers two options:
 
->[!CAUTION]
->The first option is highly recommended. Adobe cannot be held responsible for the result of any misconfiguration if you choose the second option.
+1. AEM Managed CDN - AEM's out-of-the-box CDN. It is a tightly integrated option and does not require heavy customer investment in supporting the CDN integration with AEM.
+1. Customer Managed CDN points to AEM Managed CDN  - the customer points their own CDN to AEM's out-of-the-box CDN. The customer will still need to manage their own CDN, but investment in the integration with AEM is moderate.
 
-The second and third options will be allowed on a case-by-case basis. This involves meeting certain pre-requisites including, but not limited to the customer having a legacy integration with their CDN vendor which is difficult to undo.
+The first option should satisfy most of the customer performance and security requirements. Additionally, it requires the least amount of customer investment and ongoing maintenance.
 
-### Adobe Managed CDN  {#adobe-managed-cdn}
+The second option will be allowed on a case-by-case basis. The decision is based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
+
+Presented below is a decision matrix to compare the two options. More detailed information can be found in the sections that follow.
+
+| Details | AEM Managed CDN | Customer Managed CDN points to AEM CDN |
+|---|---|---|
+| **Customer effort** | None, it is fully integrated. Only need to point CNAME to AEM Managed CDN.| Moderate customer investment. The customer must manage its own CDN. |
+| **Pre-requisites** | None | Existing CDN that is onerous to replace. Must demonstrate a successful load test prior to going live. |
+| **CDN expertise** | None | Requires at least one part time engineering resource with detailed CDN knowledge that is capable of configuring the customer's CDN. |
+| **Security** | Managed by Adobe. | Managed by Adobe (and optionally by the customer at their own CDN). |
+| **Performance** | Optimized by Adobe. | Will benefit from some AEM CDN capabilities, but potentially a small performance hit due to the extra hop. **Note**: Hops from customer CDN to Fastly CDN likely to be efficient). |
+| **Caching** | Supports cache headers applied at the dispatcher level. | Supports cache headers applied at the dispatcher level. |
+| **Image and video compression capabilities** | Can work with Adobe Dynamic Media. | Can work with Adobe Dynamic Media or customer managed CDN image/video solution. |
+
+### AEM Managed CDN  {#aem-managed-cdn}
 
 Preparing for content delivery by using Adobe's out-of-the-box CDN is simple, as described below:
 
 1. You will provide the signed SSL certificate and secret key to Adobe by sharing a link to a secure form containing this information. Please coordinate with customer support on this task.
-Note: Aem as a Cloud Service does not support Domain Validated (DV) certificates.
+**Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates.
 1. Customer support will then coordinate with you the timing for a CNAME DNS record, pointing their FQDN to `adobe-aem.map.fastly.net`.
 1. You will be notified when the SSL certificates are expiring so you can resubmit the new SSL certificates.
 
+**Restricting traffic**
+
 By default, for an Adobe Managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you should work with customer support to configure these restrictions. 
 
-### Customer CDN points to Adobe Managed CDN {#point-to-point-CDN}
+### Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
 Supported if you want to use your existing CDN, but can't satisfy the requirements of a Customer managed CDN. In this case, you manage your own CDN, but point to Adobe's managed CDN. 
 
-Please be aware that you must:
+Please be aware that:
 
 1. You must have an existing CDN. 
-1. You will manage it.
-1. You must be able to configure CDN to work with Aem as a Cloud Service - see the configuration instructions below.
-1. You have engineering CDN experts that are on call in case related issues arise.
+1. You must manage it.
+1. You must be able to configure the CDN to work with Aem as a Cloud Service - see the configuration instructions below.
+1. You must have engineering CDN experts that are on call in case related issues arise.
 1. You must perform and successfully pass a load test before going to production.
 
 Configuration instructions:
@@ -73,28 +84,6 @@ Configuration instructions:
 1. Send the SNI header to the origin. Like the Host header, the sni header must be the origin domain.
 1. Set the `X-Edge-Key`, which is needed to route traffic correctly to the AEM servers. The value should come from Adobe.
 
-### Customer managed CDN {#customer-managed-cdn}
-
-Supported if you need to use your existing CDN.  In this case, you manage your own CDN, pointing it to AEM.
-
-You may manage your own CDN, provided:
-
-1. You have an existing CDN. 
-1. It must be a supported CDN. Currently, Akamai is supported. If your organization would like to manage a currently unsupported CDN, please reach out to customer support.
-1. You will manage it.
-1. You must be able to configure CDN to work with Aem as a Cloud Service - see the configuration instructions below.
-1. You have engineering CDN experts that are on call in case related issues arise.
-1. You must provide whitelists of CDN nodes to Cloud Manager, as described in configuration instructions.
-1. You must perform and successfully pass a load test before going to production.
-
-Configuration instructions:
-
-1. Provide the CDN vendor's whitelist to Adobe by calling the environment create/update API with a list of CIDRs to whitelist.
-1. Set the `X-Forwarded-Host` header with the domain name.
-1. Set the Host header with the origin domain, which is the Aem as a Cloud Service ingress. The value should come from Adobe.
-1. Send the SNI header to the origin. The SNI header must be the origin domain.
-1. Set the `X-Edge-Key` which is is needed to route traffic correctly to the AEM servers. The value should come from Adobe.
-
 Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
 
 ### Caching {#caching}
@@ -103,7 +92,7 @@ The caching process follows the rules presented below.
 
 ### HTML/Text {#html-text}
 
-* by default, cached by the browser for 5 minutes, based on the cache-control header emitted by the apache layer. The CDN also respects this value.
+* by default, cached by the browser for five minutes, based on the cache-control header emitted by the apache layer. The CDN also respects this value.
 * can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools. 
 
 You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule:
@@ -181,21 +170,20 @@ Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatc
 1. Invoke the replication agent, specifying the publish dispatcher flush agent
 2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 
-The `invalidate.cache` approach will no longer be supported since it addresses only a specific dispatcher node.
-AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not valid for AEM as a Cloud Service . 
+The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service . 
 Instead, the replication flush agent should be used. This can be done using the Replication API. The Replication API documentation is available [here](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents. The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
-The diagram below illustrates this.
+The diagram presented below illustrates this.
 
 ![CDN](assets/cdnc.png "CDN")
 
-If there is a concern that the dispatcher cache isn't clearing, contact customer support who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, contact customer support who can flush an Adobe-managed CDN cache as necessary.
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary.
 
 ## Client-Side libraries and Version Consistency {#content-consistency}
 
-Pages are of course made up of HTML, Javascript, CSS, and images. Customers are encouraged to leverage the Client-Side Libraries (clientlibs) framework to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
+Pages are composed of of HTML, Javascript, CSS, and images. Customers are encouraged to leverage the Client-Side Libraries (clientlibs) framework to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
 
 The clientlibs framework provides automatic version management, meaning that developers can check in changes to JS libraries in source control and the latest version will be made available when a customer pushes their release. Without this, developers would need to manually change HTML with references to the new version of the library, which is especially onerous if many HTML templates share the same library.
 
