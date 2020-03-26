@@ -9,6 +9,7 @@ user-guide-title: Move to AEM as a Cloud Service
 + Cloud Readiness Analyzer 
 {#cloud-readiness-analyzer}
   + [Assessing Complexity of Moving to Cloud Service](/help/move-to-cloud-service/cloud-readiness-analyzer/cloud-readiness-analyzer.md)
+  + [Detection Scope](/help/move-to-cloud-service/cloud-readiness-analyzer/detection-scope.md)
 + User Migration Utility Tool {#user-migration-utility}
 + Content Transfer Tool {content-transfer-tool}
 + Moving to AEM Assets as a Cloud Service 
