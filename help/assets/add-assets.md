@@ -61,7 +61,7 @@ To upload a file (or multiple files), you can either select them on your desktop
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -74,7 +74,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
 > [!NOTE]
 >
-> If you need to upload nested folder hierarchies to AEM, please see [Bulk upoad of assets](#bulk-upload)
+> To upload nested folder hierarchies to AEM, see [bulk upload of assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 

@@ -126,7 +126,7 @@ To learn more about the upload algorithms or to build your own upload scripts an
 
 ### Deprecated asset upload APIs {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 >
