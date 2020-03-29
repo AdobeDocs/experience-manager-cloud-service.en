@@ -5,7 +5,7 @@ description: Add your digital assets to Adobe Experience Manager as a Cloud Serv
 
 # Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Uploading your digital files to Adobe Experience Manager enriches the binary content of the file with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files (including images, PDF files, raw files, and so on) from your local folder or a network drive to Experience Manager Assets.
+Adobe Experience Manager enriches the binary content of the uploaded digital files with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to Experience Manager Assets.
 
 A number of upload methods are provided. In addition to the most commonly used browser upload, other methods of adding assets to the Experience Manager repository exist, including desktop clients, like Adobe Asset Link or Experience Manager desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as AEM extensions.
 
