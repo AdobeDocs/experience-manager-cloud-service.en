@@ -7,7 +7,6 @@ contentOwner: AG
 # Get started using asset microservices {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -15,14 +14,13 @@ contentOwner: AG
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Asset microservices provide a scalable and resilient processing of assets using cloud services, which are managed by Adobe for optimal handling of different asset types and processing options.
+Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the services for optimal handling of different asset types and processing options.
 
-Asset processing is carried out based on configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow the administrator to add more specific asset processing configuration. To allow for extensibility and full customization, asset processing allows for an optional configuration of post-processing workflows, which are then created and maintained by the administrator.
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Administrators can create and maintain the configurations of post-processing workflows, including optional customization. Customizing workflows allows for extensibility and full customization.
 
-A high-level flow for asset processing in Experience Manager as a Cloud Service is presented below.
+A high-level flow for asset processing is below.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -33,7 +31,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> For customers updating from previous versions of Experience Manager - asset processing described in this section replaces the "DAM Update Asset" workflow model used for asset ingestion processing before. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
+> The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of Experience Manager. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
 
 ## Get started with asset processing {#get-started}
 
@@ -73,17 +71,18 @@ Additional processing profiles can be added using the **[!UICONTROL Create]** ac
 
 Each processing profile configuration includes a list of renditions. For each rendition, you can specify the following:
 
-* rendition name
-* rendition format (JPEG, PNG, or GIF are supported)
-* rendition width and height in pixels (if not specified, the full pixel size of the original is assumed)
-* rendition quality (for JPEG) in percent
-* Included and excluded MIME types define, which asset types the processing profile applies to
+* Rendition name.
+* Supported rendition format, such as JPEG, PNG, or GIF.
+* Rendition width and height in pixels. If it is not specified, the full pixel size of the original image is used.
+* Rendition quality of JPEG in percent.
+* Included and excluded MIME types to define the applicability of a profile.
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
-When a new processing profile is saved, it is added to the list of configured processing profiles. These processing profiles can then be applied to folders in the folder hierarchy to make them effective for asset uploads and assets done there.
+When you create and save a new processing profile it is added to the list of configured processing profiles. You can apply these processing profiles to folders in the folder hierarchy to make them effective for asset uploads and assets processing.
 
-![processing-profiles-list](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Rendition width and height {#rendition-width-height}
 
