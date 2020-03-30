@@ -97,15 +97,6 @@ Caching at the CDN can be configured by using dispatcher rules. Note that the di
 
 * by default, cached by the browser for five minutes, based on the cache-control header emitted by the apache layer. The CDN also respects this value.
 * can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools. 
-
-You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule:
-
-```
-/0000
-{ /glob "*" /type "allow" }
-
-```
-
 * can be overridden on a finer grained level by the following apache mod_headers directives: 
 
 ```
