@@ -188,7 +188,7 @@ Instead, the replication flush agent should be used. This can be done using the 
 
 The diagram presented below illustrates this.
 
-![CDN](assets/cdnc.png "CDN")
+![CDN](assets/cdnd.png "CDN")
 
 If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
