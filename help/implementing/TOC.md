@@ -33,3 +33,4 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
   + [Dispatcher in the Cloud](dispatcher/overview.md)
+  + [Content Delivery in AEM as a Cloud Service](dispatcher/content-delivery.md)
