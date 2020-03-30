@@ -224,7 +224,7 @@ Strict clientlib versioning is enabled by default in all AEM as a Cloud Service 
 
 To enable strict clientlib versioning in the local SDK Quickstart perform the following actions:
 
-1. Navigate to the OSGi Configuration manager <host>/system/console/configMgr
+1. Navigate to the OSGi Configuration manager `<host>/system/console/configMgr`
 1. Find the OSGi Config for Adobe Granite HTML Library Manager:
    * Check the checkbox to enable Strict Versioning
    * In the field labeled Long term client side cache key, enter the value of /.*;hash
