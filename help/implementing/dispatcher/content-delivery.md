@@ -23,20 +23,20 @@ The data flow is as follows:
 
 The content type HTML/text is set to expire after 300s (5 minutes) at the dispatcher layer, a threshold which both the dispatcher cache and CDN respect. During redeployments of the publish service, the dispatcher cache is cleared and subsequently warmed up before the new publish nodes accept traffic.
 
-The sections below provide greater detail about content delivery, including CDN configuration and dispatcher caching. 
+The sections below provide greater detail about content delivery, including CDN configuration and caching. 
 
 Information about replication from the author service to the publish service is available [here](/help/operations/replication.md). 
 
 ## CDN {#cdn}
 
-AEM as Cloud Service is shipped with a default CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
+AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
 In total, AEM offers two options:
 
 1. AEM Managed CDN - AEM's out-of-the-box CDN. It is a tightly integrated option and does not require heavy customer investment in supporting the CDN integration with AEM.
 1. Customer Managed CDN points to AEM Managed CDN  - the customer points their own CDN to AEM's out-of-the-box CDN. The customer will still need to manage their own CDN, but investment in the integration with AEM is moderate.
 
-The first option should satisfy most of the customer performance and security requirements. Additionally, it requires the least amount of customer investment and ongoing maintenance.
+The first option should satisfy most of the customer performance and security requirements. Additionally, it requires minimal customer effort.
 
 The second option will be allowed on a case-by-case basis. The decision is based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
 
@@ -49,7 +49,7 @@ Presented below is a decision matrix to compare the two options. More detailed i
 | **CDN expertise** | None | Requires at least one part time engineering resource with detailed CDN knowledge that is capable of configuring the customer's CDN. |
 | **Security** | Managed by Adobe. | Managed by Adobe (and optionally by the customer at their own CDN). |
 | **Performance** | Optimized by Adobe. | Will benefit from some AEM CDN capabilities, but potentially a small performance hit due to the extra hop. **Note**: Hops from customer CDN to Fastly CDN likely to be efficient). |
-| **Caching** | Supports cache headers applied at the dispatcher level. | Supports cache headers applied at the dispatcher level. |
+| **Caching** | Supports cache headers applied at the dispatcher. | Supports cache headers applied at the dispatcher. |
 | **Image and video compression capabilities** | Can work with Adobe Dynamic Media. | Can work with Adobe Dynamic Media or customer managed CDN image/video solution. |
 
 ### AEM Managed CDN  {#aem-managed-cdn}
@@ -58,6 +58,9 @@ Preparing for content delivery by using Adobe's out-of-the-box CDN is simple, as
 
 1. You will provide the signed SSL certificate and secret key to Adobe by sharing a link to a secure form containing this information. Please coordinate with customer support on this task.
 **Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates.
+1. You should inform customer support:
+   * which custom domain should be associated with a given environment, as defined by the program id and environment id.
+   * if any IP whitelisting is needed to restrict traffic to a given environment.
 1. Customer support will then coordinate with you the timing for a CNAME DNS record, pointing their FQDN to `adobe-aem.map.fastly.net`.
 1. You will be notified when the SSL certificates are expiring so you can resubmit the new SSL certificates.
 
@@ -86,9 +89,9 @@ Configuration instructions:
 
 Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
 
-### Caching {#caching}
+## Caching {#caching}
 
-The caching process follows the rules presented below.
+Caching at the CDN can be configured by using dispatcher rules. Note that the dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
 
 ### HTML/Text {#html-text}
 
@@ -103,16 +106,16 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 
 ```
 
-* can be overridden on a finer grained level by apache mod_headers directives. For example:
+* can be overridden on a finer grained level by the following apache mod_headers directives: 
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 
 ```
 
-You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule:
+You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule (which is in the default configuration):
 
 ```
 /0000
@@ -127,33 +130,43 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 * by using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path.  In other words, HTML that references the client libraries will be produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who don't respect the "immutable" value.
 * see the section [Client-side libraries and version consistency](#content-consistency) for additional details. 
 
-### Images {#images}
+### Images and any content large enough stored in blob storage {#images}
 
-* not cached
-
-### Other content types {#other-content}
-
-* no default caching
-* can be overridden by apache `mod_headers`. For example:
+* by default, not cached
+* can be set on a finer grained level by the following apache `mod_headers` directives:
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 
 ```
 
-*Other methods of setting cache headers may also work
+It is necessary to ensure that a file under src/conf.dispatcher.d/cache has the following rule (which is in the default configuration):
 
-Prior to accepting live traffic, customers should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
+```
+/0000
+{ /glob "*" /type "allow" }
+
+```
+
+Make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
+
+* Note that other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+
+### Other content file types in node store {#other-content}
+
+* no default caching
+* default cannot be set with the `EXPIRATION_TIME` variable used for html/text file types
+* cache expiration can be set with the same LocationMatch strategy described in the html/text section by specifying the appropriate regex
 
 ## Dispatcher {#disp}
 
 Traffic goes through an apache web server, which supports modules including the dispatcher. The dispatcher is used primarily as a cache to limit processing on the publish nodes in order to increase performance.
 
-Content of type HTML/text are set with cache headers corresponding to a 300s (5 minutes) expiry.
+As described in the CDN's caching section, rules can be applied to dispatcher configuration to modify any default cache expiration settings. 
 
-The rest of this section describes considerations related to dispatcher cache invalidation.
+The rest of this section describes considerations related to dispatcher cache invalidation. For most customers,it should not be necessary to invalidate the dispatcher cache, instead relying on the dispatcher refreshing its cache upon content being republished, and the CDN respecting cache expiration headers.
 
 ### Dispatcher Cache Invalidation during Activation/Deactivation {#cache-activation-deactivation}
 
