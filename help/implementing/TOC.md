@@ -33,3 +33,5 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
   + [Dispatcher in the Cloud](dispatcher/overview.md)
++ Logging {#logging}  
+  + [Logging](/help/implementing/developing/introduction/logging.md)
