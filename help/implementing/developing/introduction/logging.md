@@ -125,6 +125,10 @@ To change the log levels for Cloud environments, the Sling Logging OSGI configur
 
 ### Activating the DEBUG Log Level {#activating-the-debug-log-level}
 
+> [!WARNING]
+>
+> Activating the DEBUG log level globally will generate a large amount of information which will be difficult to sift through. It is recommended you enable it only for the services that require debugging. For more information, see [Loggers and Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).  
+
 The default log level is INFO, that is, DEBUG messages are not logged.
 To activate DEBUG log level, set the
 
