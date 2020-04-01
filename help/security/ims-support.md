@@ -182,6 +182,6 @@ In AEM, the User Groups synced from IMS can be added as members to existing loca
 
 ![ACL3](/help/security/assets/ims17.png)
 
-As shown below, the group **AEM-GRP_008** inherits the permissions and privileges of **DAM Users**, this is an effective way of managing Permissions for synced groups and is commonly used in the LDAP based Authentication method as well.
+As shown below, the group **AEM-GRP_008** inherits the permissions and privileges of **DAM Users**, this is an effective way of managing Permissions for synced groups and is commonly used in the LDAP based authentication method as well.
 
 ![ACL3](/help/security/assets/ims18.png)
