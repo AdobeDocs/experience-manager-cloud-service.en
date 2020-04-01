@@ -13,10 +13,6 @@ AEM as a Cloud Service offers you the possibility to configure:
 
 These are all [OSGi configurations](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
->[!NOTE]
->
->Logging in AEM as a Cloud Service is based on Sling principles. See [Sling Logging](https://sling.apache.org/site/logging.html) for further information.
-
 ## Global Logging {#global-logging}
 
 [Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
