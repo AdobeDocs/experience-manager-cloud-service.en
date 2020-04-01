@@ -23,6 +23,7 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
   + [Content Search and Indexing](/help/operations/indexing.md)
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
+  + [Logging](/help/implementing/developing/introduction/logging.md)
   + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
@@ -33,5 +34,3 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
   + [Dispatcher in the Cloud](dispatcher/overview.md)
-+ Logging {#logging}  
-  + [Logging](/help/implementing/developing/introduction/logging.md)
