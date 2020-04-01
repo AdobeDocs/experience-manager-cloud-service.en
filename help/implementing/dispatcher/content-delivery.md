@@ -97,15 +97,6 @@ Caching at the CDN can be configured by using dispatcher rules. Note that the di
 
 * by default, cached by the browser for five minutes, based on the cache-control header emitted by the apache layer. The CDN also respects this value.
 * can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools. 
-
-You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule:
-
-```
-/0000
-{ /glob "*" /type "allow" }
-
-```
-
 * can be overridden on a finer grained level by the following apache mod_headers directives: 
 
 ```
@@ -188,7 +179,7 @@ Instead, the replication flush agent should be used. This can be done using the 
 
 The diagram presented below illustrates this.
 
-![CDN](assets/cdnc.png "CDN")
+![CDN](assets/cdnd.png "CDN")
 
 If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
