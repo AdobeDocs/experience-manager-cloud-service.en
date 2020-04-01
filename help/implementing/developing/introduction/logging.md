@@ -249,7 +249,7 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
-   Under `/apps/<*project-name*>/config`, create a node for the new Apache Sling Logging Writer Configuration:
+   Under `/apps/<*project-name*>/config`, create a node for the new `Apache Sling Logging Writer` Configuration:
 
     * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
 
