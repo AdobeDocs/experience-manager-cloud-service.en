@@ -11,7 +11,7 @@ AEM as a Cloud Service offers you the possibility to configure:
 * request data logging; a specialized logging configuration for request information
 * specific settings for the individual services; for example, an individual log file and format for the log messages
 
-These are all [OSGi configurations](/help/sites-deploying/configuring-osgi.md).
+These are all [OSGi configurations](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ These are all [OSGi configurations](/help/sites-deploying/configuring-osgi.md).
 
 ## Global Logging {#global-logging}
 
-[Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
 
 * the logging level
 * the location of the central log file
@@ -121,13 +121,13 @@ The other pairs follow the standard configuration:
 
 You can define your own Logger / Writer pair:
 
-1. Create a new instance of the Factory Configuration [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Create a new instance of the Factory Configuration [Apache Sling Logging Logger Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
     1. Specify the Log File.
     1. Specify the Logger.
     1. Configure the other parameters as required.
 
-1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
     1. Specify the Log File - this must match that specified for the Logger.
     1. Configure the other parameters as required.
