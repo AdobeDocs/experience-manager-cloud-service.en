@@ -115,6 +115,34 @@ The other pairs follow the standard configuration:
 
 * Does not link to a specific Writer so will create and use an implicit Writer with default configuration (daily log rotation).
 
+## Setting the Log Level {#setting-the-log-level}
+
+To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
+
+> [!NOTE]
+> 
+> In order to perform the configuration changes listed below, you need to create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+
+### Activating the DEBUG Log Level {#activating-the-debug-log-level}
+
+The default log level is INFO, that is, DEBUG messages are not logged.
+To activate DEBUG log level, set the
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
+A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example: 
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+The log levels are as follows: 
+
+| 0  | Fatal error   | The action has failed, and the installer cannot proceed.   |
+|---|---|---|
+| 1  | Error  | The action has failed. The installation proceeds, but a part of CRX was not installed correctly and will not work.   |
+| 2  | Warning  | The action has succeeded but encountered problems. CRX may or may not work correctly. |
+| 3  |  Information | The action has succeeded.   |
+
 ### Creating Your Own Loggers and Writers {#creating-your-own-loggers-and-writers}
 
 You can define your own Logger / Writer pair:
