@@ -1,16 +1,6 @@
 ---
 title: Video
-seo-title: Video
 description: Learn how to work with video in Dynamic Media
-seo-description: Learn how to work with video in Dynamic Media
-uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
-docset: aem65
-
 ---
 
 # Video{#video}
@@ -61,16 +51,21 @@ The following step-by-step workflow description is designed to help you get up a
 
         * View the source video and encoded renditions of the video along with its associated thumbnails:
           [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
           [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions)
+
+<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
+        * View the source video and encoded renditions of the video along with its associated thumbnails:
+          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
+          [Viewing video renditions](/help/assets/video-renditions.md)
+          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
 
         * [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md)
         * [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
     * Work with video metadata
 
-        * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md)
+<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
+          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
           [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
@@ -83,7 +78,12 @@ The following step-by-step workflow description is designed to help you get up a
         * [Annotating videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
 
         * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
+        * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+
+<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
+        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
         * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+-->
 
         * [Review folder assets](/help/assets/bulk-approval.md)
         * [Projects](/help/sites-cloud/authoring/projects/overview.md)

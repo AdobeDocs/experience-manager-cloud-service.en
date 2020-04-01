@@ -1,14 +1,6 @@
 ---
 title: Linking URLs to your web application
-seo-title: Linking URLs to your web application
 description: How to link URLs to your web application in dynamic media
-seo-description: How to link URLs to your web application in dynamic media
-uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 ---
 
 # Linking URLs to your web application {#linking-urls-to-your-web-application}
@@ -209,4 +201,4 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 HTTP/2 is the new, updated web protocol that improves the way browsers and servers communicate. It provides faster transfer of information and reduces the amount of processing power that is needed. Delivery of Dynamic Media assets can now be over HTTP/2 which provides better response and load times.
 
-See [HTTP2 Delivery of Content](http2.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
+See [HTTP2 Delivery of Content](http2faq.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.

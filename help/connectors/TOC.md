@@ -1,6 +1,6 @@
 ---
-product: Adobe Experience Manager as a Cloud Service
-sub-product: Adobe Experience Manager as a Cloud Service
+sub-product: Connectors for AEM as a Cloud Service
+user-guide-title: Connectors for AEM as a Cloud Service
 ---
 
 # Connectors {#connectors}

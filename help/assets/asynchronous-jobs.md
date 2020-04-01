@@ -2,7 +2,6 @@
 title: Asynchronous operations
 description: AEM Assets optimizes performance by asynchronously completing some resource-intensive tasks.
 contentOwner: AG
-
 ---
 
 # Asynchronous operations {#asynchronous-operations}

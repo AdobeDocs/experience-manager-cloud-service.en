@@ -1,6 +1,6 @@
 ---
-product: Adobe Experience Manager as a Cloud Service
-sub-product: Adobe Experience Manager as a Cloud Service
+sub-product: Overview of AEM as a Cloud Service
+user-guide-title: Overview of AEM as a Cloud Service
 ---
 
 # Experience Manager as a Cloud Service Help {#overview}

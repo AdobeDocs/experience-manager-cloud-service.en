@@ -2,7 +2,6 @@
 title: Metadata Schemata Reference
 description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
 contentOwner: AG
-
 ---
 
 # Metadata Schemata Reference {#metadata-schemata-reference}
@@ -45,7 +44,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
   </tr>
   <tr>
    <td>format</td> 
-   <td>The file format, physical medium, or dimensions of the asset. AEM uses <code>dc:format</code> to denote the mime-type of the asset.<br /> </td> 
+   <td>The file format, physical medium, or dimensions of the asset. AEM uses <code>dc:format</code> to denote the MIME type of the asset.<br /> </td> 
   </tr>
   <tr>
    <td>identifier</td> 

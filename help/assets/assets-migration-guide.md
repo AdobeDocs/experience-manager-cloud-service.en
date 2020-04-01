@@ -2,7 +2,6 @@
 title: Assets Migration Guide
 description: Describes how to bring assets into AEM, apply metadata, generate renditions, and activate them to publish instances.
 contentOwner: AG
-
 ---
 
 # Assets Migration Guide {#assets-migration-guide}
@@ -131,7 +130,7 @@ In this case, your assets are already populated with metadata and renditions are
 
 1. Activate assets.
 
-   Follow the instructions for [activating assets](#activating-assets) documented for the inital migration to AEM.
+   Follow the instructions for [activating assets](#activating-assets) documented for the initial migration to AEM.
 
 1. Clone publish.
 

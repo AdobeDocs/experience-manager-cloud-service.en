@@ -1,12 +1,6 @@
 ---
 title: Content Fragments
-seo-title: Content Fragments
-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
-seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
+description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
 ---
 
 # Content Fragments {#content-fragments}

@@ -1,16 +1,6 @@
 ---
 title: Spin Sets
-seo-title: Spin Sets
 description: Learn how to work with spin sets in Dynamic Media
-seo-description: Learn how to work with spin sets in Dynamic Media
-uuid: 379a20a3-6a17-499a-b0f1-3a835b97aa7b
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
-docset: aem65
-
 ---
 
 # Spin Sets{#spin-sets}

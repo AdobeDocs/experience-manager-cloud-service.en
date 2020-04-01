@@ -1,8 +1,6 @@
 ---
 title: Notable Changes to AEM Sites in AEM Cloud Service
-seo-title: Notable Changes to AEM Sites in AEM Cloud Service
 description: Notable Changes to AEM Sites in AEM Cloud Service 
-seo-description: Notable Changes to AEM Sites in AEM Cloud Service
 ---
 
 # Notable Changes to AEM Sites as a Cloud Service {#notable-changes}
@@ -18,7 +16,6 @@ Changes and additions in AEM Sites as a Cloud Service are as follows:
 
 * [Asynchronous Page Operations](#asynchronous-page-operations)
 * [New Reference Site and Tutorial](#new-reference-site-and-tutorial)
-* [Removal of Classic UI](#classic-ui)
 
 ## Asynchronous Page Operations {#asynchronous-page-operations}
 

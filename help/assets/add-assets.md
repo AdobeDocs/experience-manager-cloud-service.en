@@ -1,7 +1,6 @@
 ---
 title: Add your digital assets to Adobe Experience Manager
 description: Add your digital assets to Adobe Experience Manager as a Cloud Service
-
 ---
 
 # Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}
@@ -167,7 +166,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 >[!MORELIKETHIS]
 >
->[Adobe Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
->[Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->[Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->[Technical reference for asset upload](developer-reference-material-apis.md#asset-upload-technical)
+>* [Adobe Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Technical reference for asset upload](developer-reference-material-apis.md#asset-upload-technical)

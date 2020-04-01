@@ -1,13 +1,6 @@
 ---
 title: Components Console
-seo-title: Components Console
 description: The Components Console allows you to browse through all components defined for your instance
-seo-description: The Components Console allows you to browse through all components defined for your instance
-uuid: a4e34d81-7875-4e26-8b48-4473e2905c37
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Components Console {#components-console}

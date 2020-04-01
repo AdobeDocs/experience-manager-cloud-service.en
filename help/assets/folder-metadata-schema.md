@@ -2,7 +2,6 @@
 title: Folder Metadata Schema
 description: Learn how to create metadata schema for asset folders in AEM Assets
 contentOwner: AG
-
 ---
 
 # Folder Metadata Schema {#folder-metadata-schema}

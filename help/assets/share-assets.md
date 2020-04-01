@@ -2,7 +2,6 @@
 title: Share assets, folders, and collections as a link
 description: This article describes how to share assets, folders, and collections within Experience Manager Assets as a hyperlink.
 contentOwner: AG
-
 ---
 
 # Share and distribute assets managed in Experience Manager {#share-assets-from-aem}
@@ -33,7 +32,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    >[!NOTE]
    >
-   >If a shared asset is moved to a different location, its link stops working. Re-create the link and reshare with the users.
+   >If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
 
 1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
 
@@ -76,19 +75,21 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
 1. To view the assets you shared as links, go to the Assets UI and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To unshare an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
 
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 
 ## Download and share assets {#download-and-share-assets}
 
-Users can download some assets and share these outside of Experience Manager. For more information, see [how to search assets](/help/assets/search-assets.md) and [how to download assets](/help/assets/download-assets-from-aem.md).
+Users can download some assets and share these outside of Experience Manager. For more information, see [how to search assets](/help/assets/search-assets.md), [how to download assets](/help/assets/download-assets-from-aem.md), and [how to download collections](manage-collections.md#download-a-collection)
 
-## Share assets using desktop app {#share-assets-using-desktop-app}
+## Share assets with creative professionals {#share-with-creatives}
 
-Marketers and line-of-business users can easily share marketing assets with their creative professionals using desktop application that works on Windows and Mac. For more information, see [desktop app overview](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets).
+Marketers and line-of-business users can easily share approved assets with their creative professionals using,
 
-The desktop users can create new assets and share it back with their marketing counterparts who are AEM users, for example, by uploading new images. See [upload assets to Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM desktop app**: The app works on Windows and Mac. See [desktop app overview](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). The desktop users can create new assets and share it back with their counterparts who are AEM users, for example, by uploading new images. See [upload assets using desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+
+* **Adobe Asset Link**: The creative professionals can search and use assets directly from within Adobe InDesign, Adobe Illustrator, and Adobe Photoshop. 
 
 ### Best practices and troubleshooting {#bestpractices}
 

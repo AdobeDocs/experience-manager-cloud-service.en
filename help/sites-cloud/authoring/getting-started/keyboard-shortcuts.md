@@ -1,12 +1,6 @@
 ---
 title: Keyboard Shortcuts for Consoles
-seo-title: Keyboard Shortcuts for Consoles
 description: Save time when authoring by using these keyboard shortcuts
-seo-description: Save time when authoring by using these keyboard shortcuts
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 ---
 
 # Keyboard Shortcuts for Consoles {#keyboard-shortcuts-for-consoles}

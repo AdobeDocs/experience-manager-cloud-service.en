@@ -1,16 +1,6 @@
 ---
 title: Adding Dynamic Media Assets to Pages
-seo-title: Adding Dynamic Media Assets to Pages
 description: How to add Dynamic Media components to a page in AEM
-seo-description: How to add Dynamic Media components to a page in AEM
-uuid: b5e982f5-fa1c-478a-bcb3-a1ef980df201
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
-docset: aem65
-
 ---
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
@@ -206,6 +196,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
+* **[!UICONTROL Enable Aspect Ration match]**&mdash;Select this option to let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image.
+
 * **[!UICONTROL Title]**&mdash;Change the title of the Smart Crop image.
 
 * **[!UICONTROL Alt Text]**&mdash;Add a title to the smart crop image for those users who have graphics turned off.
@@ -305,7 +297,7 @@ If the viewer preset you are looking for is not visible, check to ensure that it
 
 HTTP/2 is the new, updated web protocol that improves the way browsers and servers communicate. It provides faster transfer of information and reduces the amount of processing power that is needed. Delivery of Dynamic Media assets can now be over HTTP/2 which provides better response and load times.
 
-See [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
+See [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2faq.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
 
 >[!MORELIKETHIS]
 >

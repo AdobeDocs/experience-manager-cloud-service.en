@@ -1,8 +1,6 @@
 ---
 title: What is new?
-seo-title: What is new?
 description: What is new in Adobe Experience Manager (AEM) as a Cloud Service. 
-seo-description: What is new in Adobe Experience Manager (AEM) as a Cloud Service. 
 ---
 
 # What is New? {#what-is-new}

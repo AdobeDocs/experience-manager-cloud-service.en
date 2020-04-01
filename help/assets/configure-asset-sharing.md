@@ -2,10 +2,11 @@
 title: Share assets, folders, and collections as a link
 description: This article describes how to share assets, folders, and collections within Experience Manager Assets as a hyperlink.
 contentOwner: AG
-
 ---
 
 # Configure asset link sharing {#asset-link-sharing}
+
+<!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
 To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
 

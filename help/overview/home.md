@@ -5,7 +5,7 @@ description: Adobe Experience Manager as a Cloud Service overview self-help reso
 
 # Experience Manager as a Cloud Service Overview {#aem-overview-guide}
 
-This page lists the self-help resources giving and overview of Experience Manager as a Cloud Service.
+This page lists self-help resources giving an introduction to, and overview of, Experience Manager as a Cloud Service.
 
 ## Key Overview Articles {#key-articles}
 
@@ -34,6 +34,7 @@ This page lists the self-help resources giving and overview of Experience Manage
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

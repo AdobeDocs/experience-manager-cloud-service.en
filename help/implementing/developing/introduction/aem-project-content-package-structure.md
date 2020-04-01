@@ -1,16 +1,6 @@
 ---
 title: Understand a Project's Content Package Structure
 description: Learn about how to properly define package structures for deployment to Adobe Experience Manager Cloud Service.
-seo-title: Understand an Adobe Experience Manager as a Cloud Service Project's Content Package Structure
-seo-description: Learn about how to properly define application package structures for deployment to Adobe Experience Manager Cloud Service.
-sub-product: cloud-manager
-feature: cloud-manager
-topics: best-practices
-version: 
-doc-type: article
-activity: understand
-audience: implementer, architect
-kt: 3404
 ---
 
 # Understand the Structure of a Project Content Package in Adobe Experience Manager Cloud Service {#understand-cloud-service-package-structure}

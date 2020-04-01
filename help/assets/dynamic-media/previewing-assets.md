@@ -1,16 +1,6 @@
 ---
 title: Previewing Assets
-seo-title: Previewing Assets
 description: Learn how to preview assets in Dynamic Media
-seo-description: Learn how to preview assets in Dynamic Media
-uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
-docset: aem65
-
 ---
 
 # Previewing assets{#previewing-assets}

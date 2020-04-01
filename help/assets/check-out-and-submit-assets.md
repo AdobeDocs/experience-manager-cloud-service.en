@@ -2,7 +2,6 @@
 title: Check In and Check Out Files in Assets
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
-
 ---
 
 # Check-in and check-out files in Assets {#check-in-and-check-out-files-in-assets}

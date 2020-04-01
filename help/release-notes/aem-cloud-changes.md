@@ -1,8 +1,6 @@
 ---
 title: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service
-seo-title: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service
 description: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service
-seo-description: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service
 ---
 
 # Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}

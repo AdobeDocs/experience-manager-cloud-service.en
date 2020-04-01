@@ -1,11 +1,9 @@
 ---
 title: Configure CI/CD Pipeline - Cloud Services
-seo-title: Configure CI/CD Pipeline - Cloud Services
 description: Configure CI/CD Pipeline - Cloud Services
-seo-description: Configure CI/CD Pipeline - Cloud Services 
 ---
 
-# Configure your CI-CD Pipeline {#configure-ci-cd-pipeline} 
+# Configuring your CI-CD Pipeline {#configure-ci-cd-pipeline} 
 
 
 ## Understanding the Flow {#understanding-the-flow}
@@ -40,15 +38,15 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. Click **Setup Pipeline** to setup and configure your pipeline.
 
-   ![](assets/configure-pipeline1.png)
+   ![](assets/set-up-pipeline1.png)
 
 1. The **Setup Pipeline** screen displays. Select the branch and click **Next**.
 
-   ![](assets/configure-pipeline2.png)
+   ![](assets/set-up-pipeline2.png)
 
 1. Configure your deployment options.
 
-   ![](assets/configure-pipeline3.png)
+   ![](assets/set-up-pipeline3.png)
 
    You can define the trigger to start the pipeline:
 
@@ -65,7 +63,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
     
 1. Click **Next** to access the **Testing** tab to define your testing criteria for your program.
 
-   ![](assets/configure-pipeline4.png)
+   ![](assets/set-up-pipeline4.png)
 
 1. Click **Save**. The *Overview* page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
@@ -86,7 +84,7 @@ On the home screen, these pipelines are listed in a new card:
 
    Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
 
-   ![](assets/configure-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
 
@@ -95,8 +93,6 @@ On the home screen, these pipelines are listed in a new card:
    * **Edit** - allows editing of the pipeline settings
    * **Build** - navigates to the execution page, from which the pipeline can be executed
    * **Manage Git** - allows the user to get the information necessary to access Cloud Manager Git repository
-
-
 
 ## The Next Steps {#the-next-steps}
 

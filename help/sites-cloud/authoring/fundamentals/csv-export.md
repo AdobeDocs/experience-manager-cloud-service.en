@@ -1,12 +1,6 @@
 ---
 title: Export to CSV
-seo-title: Export to CSV
 description: Export information about your pages to a CSV file on your local system
-seo-description: Export information about your pages to a CSV file on your local system
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 ---
 
 # Export to CSV {#export-to-csv}

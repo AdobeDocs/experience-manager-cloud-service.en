@@ -1,14 +1,6 @@
 ---
 title: Delivering Optimized Images for a Responsive Site
-seo-title: Delivering Optimized Images for a Responsive Site
 description: How to use the responsive code feature to deliver optimized images
-seo-description: How to use the responsive code feature to deliver optimized images
-uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 ---
 
 # Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
@@ -48,4 +40,4 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
 
 HTTP/2 is the new, updated web protocol that improves the way browsers and servers communicate. It provides faster transfer of information and reduces the amount of processing power that is needed. Delivery of Dynamic Media assets is supported using HTTP/2 which provides better response and load times.
 
-See [HTTP2 Delivery of Content](http2.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
+See [HTTP2 Delivery of Content](http2faq.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.

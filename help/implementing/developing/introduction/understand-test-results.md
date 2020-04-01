@@ -1,11 +1,9 @@
 ---
 title: Understand your Test Results - Cloud Services
-seo-title: Understand Test Results - Cloud Services
 description: Understand Test Results - Cloud Services
-seo-description: Understand Test Results - Cloud Services
 ---
 
-# Understand your Test Results {#understand-test-results} 
+# Understanding your Test Results {#understand-test-results} 
 
 Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
 There are two types of tests run in this context:
@@ -38,7 +36,7 @@ You can download the list of rules here [code-quality-rules.xlsx](/help/implemen
 
 >[!NOTE]
 >
->To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
+>To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
@@ -115,7 +113,7 @@ Within this JAR file, the class names of the actual tests to be executed must en
  
 For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but a class named `com.myco.tests.aem.ExampleTest` would not. 
  
-The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices.
+The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
 ## Custom Functional Testing {#custom-functional-test}
 
@@ -123,8 +121,8 @@ The Custom Functional testing step in the pipeline is always present and cannot 
 
 However, if no test JAR is produced by the build, the test passes by default. This step is current done immediately after the stage deployment.
 
-> Note:
->The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality described above.
+>[!NOTE]
+>The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 ## Local Test Execution {#local-test-execution}
 
