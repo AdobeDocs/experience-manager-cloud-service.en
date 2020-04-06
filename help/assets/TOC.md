@@ -47,7 +47,7 @@ user-guide-title: AEM Assets as a Cloud Service
   + [XMP metadata](xmp-metadata.md)
   + [MediaLibrary capabilities](medialibrary.md)
   + [Import and export asset metadata](metadata-import-export.md)
-+ Share and distribute Assets {#brandportal}
++ Share and distribute assets {#brandportal}
     + [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md)
     + [Publish AEM Assets to Brand Portal](publish-to-brand-portal.md)
 + Content Fragments {#content-fragments}
