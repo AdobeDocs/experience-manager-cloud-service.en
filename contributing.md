@@ -16,6 +16,11 @@ While we welcome any contributions to improve AEM Cloud Service documentation, w
 
 How you contribute depends on who you are and the sort of changes you'd like to contribute:
 
+<!--
+We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
+--- master
+-->
+
 ### Create an Issue
 
 Do you have a suggestion, observation about the current docs, or question the way something is described? File an issue. Issues are also excellent if you have something to contirbute, but don't feel comfortable editing the docs or making a pull request yourself.
@@ -32,6 +37,11 @@ If you're part of the Adobe community and want to create an article or submit ma
 
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). You must complete the online form before we can review your pull request.
 
+<!--
+If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
+--master
+-->
+
 ### Major Changes from Adobe Employees
 
 If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution, and it's your job to contribute to or author technical articles, you should use the private repository at `https://git.corp.adobe.com/AdobeDocs`.
@@ -42,9 +52,16 @@ Adobe employees from other parts of the Adobe world should use the public repo f
 
 All third-party contributions to this project must be accompanied by a signed contributor license agreement. This gives Adobe permission to redistribute your contributions as part of the project. [Sign our CLA.](https://opensource.adobe.com/cla.html) You only need to submit an Adobe CLA one time, so if you have submitted one previously, you are good to go!
 
+
 ## Tools and Setup
 
 Community contributors can use the GitHub UI for basic editing or fork the repo to make major contributions.
+
+<!--
+If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
+We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
+---master
+-->
 
 See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
 
