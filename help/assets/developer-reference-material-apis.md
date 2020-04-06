@@ -52,7 +52,9 @@ The content type of the request body should be `application/x-www-form-urlencode
 * `(string) fileName`: Required. The name of the asset as it will appear in the instance.
 * `(number) fileSize`: Required. The total length, in bytes, of the binary to be uploaded.
 
-A single request can be used to initiate uploads for multiple binaries, as long as each binary contains the required fields. If successful, the request responds with a `201` status code and a body containing JSON data in the following format:
+Note that a single request can be used to initiate uploads for multiple binaries, as long as each binary contains the required fields.
+
+If successful, the request will respond with a 201 status code and a body containing JSON data in the following format:
 
 ```
 {
@@ -69,17 +71,17 @@ A single request can be used to initiate uploads for multiple binaries, as long 
         }
     ]
 }
-```
+````
 
-* `completeURI` (string): Invoke this URI when the binary finishes uploading. The URI can be an absolute or relative URI, and clients should be able to handle either. That is, the value can be `"https://author.acme.com/content/dam.completeUpload.json"` or `"/content/dam.completeUpload.json"` See [complete upload](#complete-upload).
-* `folderPath` (string): Full path to the folder where the binary is being uploaded.
-* `(files)` (array): A list of elements whose length and order will match the length and order of the list of binary information provided in the initiate request.
-* `fileName` (string): The name of the corresponding binary, as supplied in the initiate request. This value should be included in the complete request.
-* `mimeType` (string): The mime type of the corresponding binary, as supplied in the in initiate request. This value should be included in the complete request.
-* `uploadToken` (string): An upload token for the corresponding binary. This value should be included in the complete request.
-* `uploadURIs` (array): A list of strings whose values are full URIs to which the binary's content should be uploaded (see [Upload binary](#upload-binary)).
-* `minPartSize` (number): The minimum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
-* `maxPartSize` (number): The maximum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
+* `(string) completeURI`: The URI that should be invoked when the binary has finished uploading. This could be an absolute or relative URI, and clients should be able to handle either. i.e. the value might be `"https://author.acme.com/content/dam.completeUpload.json"` or `"/content/dam.completeUpload.json"` (see [Complete upload](#complete-upload)).
+* `(string) folderPath`: Full path to the folder where the binary is being uploaded.
+* `(array) (files)`: A list of elements whose length and order will match the length and order of the list of binary information provided in the initiate request.
+* `(string) fileName`: The name of the corresponding binary, as supplied in the initiate request. This value should be included in the complete request.
+* `(string) mimeType`: The mime type of the corresponding binary, as supplied in the in initiate request. This value should be included in the complete request.
+* `(string) uploadToken`: An upload token for the corresponding binary. This value should be included in the complete request.
+* `(array) uploadURIs`: A list of strings whose values are full URIs to which the binary's content should be uploaded (see [Upload binary](#upload-binary)).
+* `(number) minPartSize`: The minimum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
+* `(number) maxPartSize`: The maximum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
 
 ### Upload binary {#upload-binary}
 
@@ -124,7 +126,7 @@ To learn more about the upload algorithms or to build your own upload scripts an
 
 ### Deprecated asset upload APIs {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 >

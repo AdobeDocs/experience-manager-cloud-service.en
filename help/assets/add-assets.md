@@ -5,7 +5,7 @@ description: Add your digital assets to Adobe Experience Manager as a Cloud Serv
 
 # Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager enriches the binary content of the uploaded digital files with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to Experience Manager Assets.
+Uploading your digital files to Adobe Experience Manager enriches the binary content of the file with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files (including images, PDF files, raw files, and so on) from your local folder or a network drive to Experience Manager Assets.
 
 A number of upload methods are provided. In addition to the most commonly used browser upload, other methods of adding assets to the Experience Manager repository exist, including desktop clients, like Adobe Asset Link or Experience Manager desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as AEM extensions.
 
@@ -61,7 +61,7 @@ To upload a file (or multiple files), you can either select them on your desktop
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -74,7 +74,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
 > [!NOTE]
 >
-> To upload nested folder hierarchies to AEM, see [bulk upload of assets](#bulk-upload).
+> If you need to upload nested folder hierarchies to AEM, please see [Bulk upoad of assets](#bulk-upload)
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 

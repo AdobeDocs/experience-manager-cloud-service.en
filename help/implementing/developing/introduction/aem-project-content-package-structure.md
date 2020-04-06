@@ -1,9 +1,9 @@
 ---
-title: AEM Project Structure
-description: Learn about how to define package structures for deployment to Adobe Experience Manager Cloud Service.
+title: Understand a Project's Content Package Structure
+description: Learn about how to properly define package structures for deployment to Adobe Experience Manager Cloud Service.
 ---
 
-# AEM Project Structure
+# Understand the Structure of a Project Content Package in Adobe Experience Manager Cloud Service {#understand-cloud-service-package-structure}
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ The package structure outlined in this document is compatible with **both** loca
 
 `/apps` and `/libs` are considered **immutable** areas of AEM as they cannot be changed (create, update, delete) after AEM starts (i.e. at runtime). Any attempt to change an immutable area at runtime will fail.
 
-Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
+Everything else in the repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
@@ -39,7 +39,7 @@ This diagram provides an overview of the recommended project structure and packa
 
 The recommended application deployment structure is as follows:
 
-+ The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
++ The `ui.apps` package, or Content Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
   + OSGi bundles
     + `/apps/my-app/install`
   + OSGi configurations
@@ -54,28 +54,23 @@ The recommended application deployment structure is as follows:
     + `/apps/settings`
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
-  + Repo Init OSGi configuration directives (and accompanying scripts)
-    + [Repo Init](#repo-init) is the recommended way to deploy (mutable) content that is logically part of the AEM application. Repo Init should be used to define:
-        + Baseline content structures
-            + `/conf/my-app`
-            + `/content/my-app`
-            + `/content/dam/my-app`
-        + Users   
-        + Service Users
-        + Groups
-        + ACLs (permissions)
-            + Any `rep:policy` for any path (mutable or immutable)
-+ The `ui.content` package, or Content Package, contains all content and configuration. Common elements of the `ui.content` package include, but are not limited to:
++ The `ui.content` package, or Code Package, contains all content and configuration. Common elements of the `ui.content` package include, but are not limited to:
   + Context-aware configurations
     + `/conf`
-  + Required, complex content structures (ie. Content build-out that is builds on and extends past Baseline content structures defined in Repo Init.
+  + Baseline content structures (Asset folders, Sites root pages)
     + `/content`, `/content/dam`, etc.
   + Governed tagging taxonomies
     + `/content/cq:tags`
+  + Service users
+    + `/home/users`
+  + User groups
+    + `/home/groups`  
   + Oak indexes
-    + `/oak:index`
+    + `/oak:indexes`
   + Etc legacy nodes
     + `/etc`
+  + ACLs (permissions)
+    + Any `rep:policy` for any path **not** under `/apps`
 + The `all` package is a container package that ONLY includes the `ui.apps` and `ui.content` packages as embeds. The `all` package must not have **any content** of its own, but rather delegate all deployment to the repository to its sub-packages.
 
   Packages are now included using the Maven [FileVault Package Maven plugin's embeddeds configuration](#embeddeds), rather than the `<subPackages>` configuration.
@@ -112,35 +107,6 @@ By default, Adobe Cloud Manager harvests all packages produced by the Maven buil
 >[!TIP]
 >
 >See the [POM XML Snippets](#pom-xml-snippets) section below for a complete snippet.
-
-## Repo Init{#repo-init}
-
-Repo Init provides instructions, or scripts, that define JCR structures, ranging from common node structures like folder trees, to users, service user, groups and ACL definition.
-
-The key benefits of Repo Init are they have implicit permissions to perform all actions defined by their scripts, and are invoked early in the deployment lifecycle ensuring all requisite JCR structures exist by the time code is executed.
-
-While Repo Init scripts themselves live in the `ui.apps` project as scripts, they can, and should, be used to define the following mutable structures:
-
-+ Baseline content structures
-  + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
-+ Service Users
-+ Users
-+ Groups
-+ ACLs
-
-Repo Init scripts are stored as `scripts` entries of `RepositoryInitializer` OSGi factory configurations, and thus, can be implicitly targetted by runmode, allowing for differences between AEM Author and AEM Publish Services' Repo Init scripts, or even between Envs (Dev, Stage and Prod).
-
-Note that when defining Users, and Groups, only groups are considered part of the application, and integral to its function should be defined here. Organization Users and Groups should still be defined at runtime in AEM; for example, if a custom workflow assigns work to a named Group, that Group should defined in via Repo Init in the AEM application, however if the Grouping is merely organizational, such as "Wendy's Team" and "Sean's Team", these are best defined, and managed at runtime in AEM.
-
->[!TIP]
->
->Repo Init scripts *must* be defined in the inline `scripts` field, and the `references` configuration will not work.
-
-The full vocabulary for Repo Init scripts is available on the [Apache Sling Repo Init documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
-
->[!TIP]
->
->See the [Repo Init Snippets](#snippet-repo-init) section below for a complete snippet.
 
 ## Repository Structure Package {#repository-structure-package}
 
@@ -354,28 +320,6 @@ In every project generating a Package, **except** for the container (`all`) proj
     ...
 ```
 
-### Repo Init{#snippet-repo-init}
-
-Repo Init scripts which contain the Repo Init scripts are defined in the `RepositoryInitializer` OSGi factory configuration via the `scripts` property. Note that since these scripts defined within OSGi configurations, they can be easily scoped by runmode using the usual `../config.<runmode>` folder semantics.
-
-Note that because scripts are typically multi-line declaration, it is easier to define them in the `.config` file, than the XML-bases `sling:OsgiConfig` format.
-
-`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
-
-```plain
-scripts=["
-    create service user my-data-reader-service
-
-    set ACL on /var/my-data
-        allow jcr:read for my-data-reader-service
-    end
-
-    create path (sling:Folder) /conf/my-app/settings
-"]
-```
-
-The `scripts` OSGi property contains directives as defined by the [Apache Sling's Repo Init language](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
-
 ### Repository Structure Package {#xml-repository-structure-package}
 
 In the `ui.apps/pom.xml` and any other `pom.xml` that declares a code package (`<packageType>application</packageType>`), add the following repository structure package configuration to the FileVault Maven plug-in. You can [create your own repository structure package for your project](repository-structure-package.md).
@@ -393,7 +337,7 @@ In the `ui.apps/pom.xml` and any other `pom.xml` that declares a code package (`
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>repository-structure-pkg</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -484,9 +428,6 @@ In the `all` project's `filter.xml` (`all/src/main/content/jcr_root/META-INF/vau
 If multiple `/apps/*-packages` are used in the embeddeds targets, then they all must be enumerated here.
 
 ### 3rd Party Maven Repositories {#xml-3rd-party-maven-repositories}
-
->[!WARNING]
-> Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for depedencies.
 
 In the reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
 

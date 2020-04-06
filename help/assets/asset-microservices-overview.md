@@ -9,9 +9,10 @@ contentOwner: AG
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
+
 -->
 
-Adobe Experience Manager as a Cloud Service provides a cloud-native way to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices.
+Adobe Experience Manager as a Cloud Service provides a cloud-native way of leveraging Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices.
 
 Asset microservices provide a scalable and resilient processing of assets using cloud services, which are managed by Adobe for optimal handling of different asset types and processing options. Key benefits are:
 
@@ -46,23 +47,23 @@ The key steps of the ingestion and processing using asset microservices are:
 * Results of the processing, such as renditions, are stored in the binary cloud storage.
 * Experience Manager is notified that the processing is complete along with direct pointers to the generated binaries (renditions), which are then available in Experience Manager for the uploaded asset
 
-This is the basic flow of asset ingestion and processing. If configured, Experience Manager can also start customer's workflow model to do post-processing of the asset, for example, to execute some customized steps that are specific to customer environment, like fetching information from customer's enterprise systems to add to asset properties.
+This is the basic flow of asset ingestion and processing. If configured, Experience Manager can also start customer's workflow model to do post-processing of the asset - e.g., to execute some customized steps that are specific to customer environment, like fetching information from customer's enterprise systems to add to asset properties.
 
-The ingestion and processing flow are key concepts of the asset microservices architecture for Experience Manager.
+The ingestion and processing flow shows a few key concepts leveraged by the asset microservices architecture for Experience Manager:
 
-* **Direct binary access**: Assets are transported (and uploaded) to the Cloud Binary Store once configured for Experience Manager environments, and then AEM, asset microservices, and finally clients get direct access to them to carry out their work. This minimizes the load on networks and duplication of binaries stored
-* **Externalized processing**: Processing of assets is done outside of AEM environment, and saves its resources (CPU, memory) for providing key Digital Asset Management functionalities and supporting interactive work with the system for end users
+* **Direct binary access** - assets are transported (and uploaded) to the Cloud Binary Store once configured for Experience Manager environments, and then AEM, asset microservices, and finally clients get direct access to them to carry out their work. This minimizes the load on networks and duplication of binaries stored
+* **Externalized processing** - processing of assets is done outside of AEM environment, and saves its resources (CPU, memory) for providing key Digital Asset Management functionalities and supporting interactive work with the system for end users
 
 ## Asset upload with direct binary access {#asset-upload-with-direct-binary-access}
 
-Experience Manager clients, which are a part of product offering, all support upload with direct binary access by default. These include upload using web interface, Adobe Asset Link, and AEM desktop app.
+Experience manager clients, which are a part of product offering, all support upload with direct binary access by default. These include upload using web interface, Adobe Asset Link, and AEM desktop app.
 
-You can use custom upload tools, which work directly with AEM HTTP APIs. You can use these APIs directly, or use and extend the following open-source projects that implement the upload protocol:
+You can use custom upload tools, which work directly with AEM HTTP APIs. You can use these APIs directly, or use and extend the following open source projects that implement the upload protocol:
 
-* [Open-source upload library](https://github.com/adobe/aem-upload)
-* [Open-source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open source upload library](https://github.com/adobe/aem-upload)
+* [Open source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
 
-For more information, see [upload assets](add-assets.md).
+For more information, see [uploading assets](add-assets.md).
 
 ## Add custom asset post-processing {#add-custom-asset-post-processing}
 

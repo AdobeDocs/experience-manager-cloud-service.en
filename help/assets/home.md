@@ -3,29 +3,29 @@ title: Adobe Experience Manager Assets as a Cloud Service
 description: Adobe Experience Manager Assets as a Cloud Service self-help resources and documentation links
 ---
 
-# Adobe Experience Manager Assets as a Cloud Service {#aem-assets-guide}
+# AEM Assets as a Cloud Service {#aem-assets-guide}
 
-Follow are the self-help resources for Experience Manager Assets as a Cloud Service.
+This page lists the self-help resources about Assets as a Cloud Service.
 
-## Key Assets articles {#key-articles}
+## Key Assets as a Cloud Service Articles {#key-articles}
 
 * [Introduction to Assets as a Cloud Service](overview.md)
 * [Architecture of Assets as a Cloud Service](architecture.md)
 
-## Experience Manager guides {#aem-guides}
+## Experience Manager as a Cloud Service Guides {#aem-guides}
 
 |User Guide|Description|
 |---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|Complete documentation of Experience Manager as a Cloud Service.|
-|[Overview](/help/overview/home.md)|Introductory overview of and glossary of Experience Manager as a Cloud service.|
-|[Release Notes](/help/release-notes/home.md)|Release notes, what's new, what is deprecated and removed features, and the known issues.|
+|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of Experience Manager as a Cloud Service documentation, start here.|
+|[Overview](/help/overview/home.md)|This guide provides an introductory overview of Experience Manager as a Cloud service, including an introduction, terminology, etc.|
+|[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what's new deprecated and removed features, and known issues.|
 |[Core Concepts](/help/core-concepts/home.md)|This guide provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service.|
-|[Security User Guide](/help/security/home.md)|Security topics about Experience Manager as a Cloud Service.|
-|[Onboarding](/help/onboarding/home.md)|Get started with Experience Manager as a Cloud Service&mdash;get access and protect important data.|
-|[Sites User Guide](/help/sites-cloud/home.md)|Administer Experience Manager Sites as a Cloud Service.|
-|[Implementation User Guide](/help/implementing/home.md)|Customize, develop, and deploy Experience Manager as a Cloud Service.|
-|[Connectors User Guide](/help/connectors/home.md)|Integrate solutions with Experience Manager as a Cloud Service.|
-|[Operations User Guide](/help/operations/home.md)|Back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
+|[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
+|[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
+|[Sites User Guide](/help/sites-cloud/home.md)|Understand how to administer Experience Manager Sites as a Cloud Service.|
+|[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
+|[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
+|[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
 
 ## Other Experience Manager Resources {#other-resources}
 

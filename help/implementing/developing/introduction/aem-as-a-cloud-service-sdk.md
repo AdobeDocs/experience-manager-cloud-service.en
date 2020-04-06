@@ -20,7 +20,7 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 ## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * You can check the AEM Admin Console's **About Adobe Experience Manager** icon to find out the version of AEM you are running on production.
-* The quickstart jar and Dispatcher Tools can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Note that access to the SDK listings is limited to those with AEM Managed Services or AEM as a Cloud Service environments.
+* The quickstart jar and Dispatcher Tools can be downloaded as a zip file from the [Software Distribution portal](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Note that access to the SDK listings is limited to those with AEM Managed Services or AEM as a Cloud Service environments.
 * The Java API Jar and Javadoc Jar can be downloaded through maven tooling, either command line or with your preferred IDE.
 * The maven project poms should reference the following API Jar package. This dependency should also be referenced in any subpackage poms.
 

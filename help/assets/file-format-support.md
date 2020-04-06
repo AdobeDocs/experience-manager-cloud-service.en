@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager as a Cloud Service supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. Adobe Experience Manager Assets supports a wide range of file formats and each product feature has varied support for different formats.
+Adobe Experience Manager as a Cloud Service supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download and so on &mdash; for any binary file, independent of its format. Adobe Experience Manager Assets supports a wide range of file formats and each product feature has varied support for different formats.
 
 In addition, Experience Manager Assets provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. This extended support is provided using [asset microservices](asset-microservices-configure-and-use.md).
 
@@ -165,7 +165,7 @@ Assets as a Cloud Service provides XMP support for these audio formats: AIF, ASF
 
 ## Supported document formats {#doc-formats}
 
-Document formats supported for asset management features are as follows.
+Document formats supported for asset management features are as follow.
 
 | File format | Storage | Metadata management | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|
