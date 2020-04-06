@@ -119,7 +119,7 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
       1. Confirm your selection in **[!UICONTROL Scope]**. Click **[!UICONTROL Next]**.
       1. Specify a Workflow title under **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
 
-       ![manageschedulepub](assets/manageschedulepub.png)
+         ![manageschedulepub](assets/manageschedulepub.png)
 
 ### Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
 
