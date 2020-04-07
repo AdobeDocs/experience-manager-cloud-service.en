@@ -14,7 +14,13 @@ While we welcome any contributions to improve AEM documentation, we do ask that 
 
 ## How to Contribute
 
+<<<<<<< HEAD
 We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
+=======
+How you contribute depends on who you are and the sort of changes you'd like to contribute:
+
+### Create an Issue
+>>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 
 * [Create an issue](#create-an-issue)
 * [Create a pull request](#create-a-pull-request)
@@ -33,7 +39,11 @@ Issues allow you to easily describe your idea for improvement to the docs and an
 
 ### Create a Pull Request {#create-a-pull-request}
 
+<<<<<<< HEAD
 If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
+=======
+### Major Changes from Adobe Employees
+>>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 
 All pull requests must be accompanied by a signed [contributor license agreement or CLA.](https://opensource.adobe.com/cla.html)  This gives Adobe permission to redistribute your contributions as part of the project. You only need to submit an Adobe CLA one time, so if you have submitted one previously, you are good to go!
 
@@ -43,11 +53,28 @@ Have a look at the following video for a quick overview of how to create issues 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
+<<<<<<< HEAD
 ### Contributions from Adobe Employees
 
 If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
 
 We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
+=======
+## Tools and Setup
+
+Community contributors can use the GitHub UI for basic editing or fork the repo to make major contributions.
+
+See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
+
+## How to Use Markdown to Format Your Topic
+
+All the articles in this repository use GitHub flavored markdown. If you are not familiar with markdown, see:
+
+* [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Printable markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Labels
+>>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 
 ## Further Information
 
