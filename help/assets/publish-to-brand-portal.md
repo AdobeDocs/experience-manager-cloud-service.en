@@ -76,9 +76,9 @@ Login to the Brand Portal interface to see the published assets are available.
 
 End - Publish assets to Brand Portal
 Start- Publish folders to Brand Portal
+
+
 -->
-
-
 ## Publish folders to Brand Portal{#publish-folders-to-brand-portal}
 
 You can publish or unpublish asset folders immediately, or schedule to a later date or time.
