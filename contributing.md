@@ -14,22 +14,7 @@ While we welcome any contributions to improve AEM documentation, we do ask that 
 
 ## How to Contribute
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
-=======
-=======
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
-=======
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
-=======
->>>>>>> parent of 190577c... Merge branch 'master' into staging
-How you contribute depends on who you are and the sort of changes you'd like to contribute:
-
-### Create an Issue
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
+We want to make it as easy as possible submit your contributions. You can contribute in two ways:
 
 * [Create an issue](#create-an-issue)
 * [Create a pull request](#create-a-pull-request)
@@ -48,20 +33,7 @@ Issues allow you to easily describe your idea for improvement to the docs and an
 
 ### Create a Pull Request {#create-a-pull-request}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
-=======
-=======
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
-=======
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
-=======
->>>>>>> parent of 190577c... Merge branch 'master' into staging
-### Major Changes from Adobe Employees
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
+If you see a problem and know exactly hwo to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
 
 All pull requests must be accompanied by a signed [contributor license agreement or CLA.](https://opensource.adobe.com/cla.html)  This gives Adobe permission to redistribute your contributions as part of the project. You only need to submit an Adobe CLA one time, so if you have submitted one previously, you are good to go!
 
@@ -71,37 +43,11 @@ Have a look at the following video for a quick overview of how to create issues 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-<<<<<<< HEAD
 ### Contributions from Adobe Employees
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
+If you are an Adobe employee and would like to make a pull request, please use the private repository at `https://git.corp.adobe.com/AdobeDocs`.
 
-We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
-=======
-=======
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
-=======
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
-=======
->>>>>>> parent of 190577c... Merge branch 'master' into staging
-## Tools and Setup
-
-Community contributors can use the GitHub UI for basic editing or fork the repo to make major contributions.
-
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
-
-## How to Use Markdown to Format Your Topic
-
-All the articles in this repository use GitHub flavored markdown. If you are not familiar with markdown, see:
-
-* [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Printable markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Labels
->>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
+For issues, please feel free to use the public repositories.
 
 ## Further Information
 
