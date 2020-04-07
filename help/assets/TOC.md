@@ -51,7 +51,10 @@ user-guide-title: AEM Assets as a Cloud Service
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 733b637... update toc
 + Share and distribute Assets {#brandportal}
     + [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md)
     + [Publish AEM Assets to Brand Portal](publish-to-brand-portal.md)
