@@ -35,9 +35,6 @@ The Production and Stage is available as a duo and is used for testing and produ
 
 1. The user clicks on the **Add Environment** button to add an environment.
 
-   >[!NOTE]
-   >This button may also be accessed from the Environments page or from the Environments card. As a user you will see this option only, if you have requisite permission. Contact your Adobe representative if you have any questions.
-
    ![](assets/add-environment.png)
 
 1. The **Add environment** dialog box appears.The user needs to submit details such as **Environment type** and **Environment name** and **Environment description** (depending upon the user’s objective in creating the environment within the bounds of what is available to the specific tenant).

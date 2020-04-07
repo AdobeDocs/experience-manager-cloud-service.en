@@ -1,11 +1,11 @@
 ---
 title: Notable changes in Adobe Experience Manager Assets as a Cloud Service
-description: Notable Changes to Adobe Experience Manager Assets in AEM Cloud Service as compared to Experience Manager 6.5
+description: Notable changes to Adobe Experience Manager Assets in AEM Cloud Service as compared to Adobe Experience Manager 6.5.
 ---
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are a number of differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences.
+Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are many differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences.
 
 >[!NOTE]
 >
@@ -18,15 +18,15 @@ The main differences as compared to Experience Manager 6.5 are in the following 
 
 ## Asset ingestion {#asset-ingestion}
 
-Asset upload has been optimized to be more efficient enabling better scaling of asset ingestion and faster uploads. Product capabilities (web user interfaces, desktop clients) have been updated. However, this may impact some existing custom code.
+Asset upload has been optimized for efficiency by enabling better scaling of asset ingestion and faster uploads. Product capabilities (web user interfaces, desktop clients) have been updated. However, this may impact some existing customization.
 
-* Experience Manager uses direct binary access principle for upload and download and asset microservices for asset processing. See [overview of asset ingestion](/help/assets/asset-microservices-overview.md)
-  * Asset upload [with direct binary access](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)
-  * For technical details, see  of [direct binary upload protocol and APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload)
-* The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of AEM is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, text extraction for indexing)
+* Experience Manager uses direct binary access principle for upload and download and asset microservices for asset processing. See [overview of asset ingestion](/help/assets/asset-microservices-overview.md).
+  * Asset upload [with direct binary access](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
+  * For technical details, see  of [direct binary upload protocol and APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload).
+* The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of AEM is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, text extraction for indexing).
   * See [configuring and using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
-  * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used
-* Assets that come in via Package Manager require manual re-processing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
+  * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used.
+* Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
 
 Standard renditions generated with asset microservices are stored in a backwards-compatible way in the asset repository nodes (same naming conventions).
 

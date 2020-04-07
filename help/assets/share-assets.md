@@ -6,14 +6,31 @@ contentOwner: AG
 
 # Share and distribute assets managed in Experience Manager {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. You can use the following methods to share assets from Experience Manager Assets as a Cloud Service:
+Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from Experience Manager Assets as a Cloud Service:
 
-* Share as a link
-* Download assets
-* Share via AEM desktop app
-* Share via Adobe Asset Link
-* (Upcoming functionality) Share using Brand Portal
+* Share as a link.
+* Download assets and share separately.
+* Share via AEM desktop app.
+* Share via Adobe Asset Link.
+* (Upcoming functionality) Share using Brand Portal.
 
+## Share assets as a link {#sharelink}
+
+To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
+
+>[!NOTE]
+>
+>* You need Edit ACL permission on the folder or the asset that you want to share as a link.
+>* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
+
+1. In the Assets user interface, select the asset to share as a link.
+1. From the toolbar, click/tap the **[!UICONTROL Share Link]**. An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
+
+   >[!NOTE]
+   >
+   >If a shared asset is moved to a different location, its link stops working. Re-create the link and reshare with the users.
+
+<!--
 ## Share assets as a link {#sharelink}
 
 To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
@@ -73,11 +90,12 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >AEM supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
 
 1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
-1. To view the assets you shared as links, go to the Assets UI and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. To view the assets you shared as links, go to the Assets user interface and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
 1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
 
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
+-->
 
 ## Download and share assets {#download-and-share-assets}
 
@@ -87,17 +105,79 @@ Users can download some assets and share these outside of Experience Manager. Fo
 
 Marketers and line-of-business users can easily share approved assets with their creative professionals using,
 
-* **AEM desktop app**: The app works on Windows and Mac. See [desktop app overview](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). The desktop users can create new assets and share it back with their counterparts who are AEM users, for example, by uploading new images. See [upload assets using desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM desktop app**: The app works on Windows and Mac. See [desktop app overview](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). The desktop users can create assets and share it back with their counterparts who are AEM users, for example, by uploading new images. See [upload assets using desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: The creative professionals can search and use assets directly from within Adobe InDesign, Adobe Illustrator, and Adobe Photoshop. 
 
-### Best practices and troubleshooting {#bestpractices}
+## Configure asset sharing {#configure-sharing}
 
-* Asset folders or collections that contain a whitespace in their name may not get shared.
-* If users cannot download the shared assets, check with your AEM administrator what the [download limits](/help/assets/configure-asset-sharing.md#maxdatasize) are.
-* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not.
-* If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
+The different options to share the assets require specific configuration and have specific prerequisites.
+
+### Configure asset link sharing {#asset-link-sharing}
+
+<!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
+
+To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
+
+   >[!NOTE]
+   >
+   >If you want to share links from your AEM Author instance to external entities, ensure that you expose only the following URLs for `GET` requests. Block other URLs to ensure that your AEM Author instance is secure.
+   >* `[aem_server]:[port]/linkshare.html`
+   >* `[aem_server]:[port]/linksharepreview.html`
+   >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
-Add content or link about how to share using BP, DA, AAL, etc.
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
+
+    * SMTP server host name: email server host name
+    * SMTP server port: email server port
+    * SMTP user: email server user name
+    * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
+-->
+
+### Configure maximum data size {#maxdatasize}
+
+When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
+
+1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
+1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Save the changes.
+
+<!--
+Add content or link about how to configure sharing via BP, DA, AAL, etc.
+-->
+
+### Enable desktop actions to use with desktop app {#desktop-actions}
+
+From within the Assets user interface in a browser, you can explore the asset locations or check-out and open the asset for editing in your desktop application. These options are called desktop actions and to enable it, see [enable desktop actions in AEM web interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+
+![Enable desktop actions to use as shortcut when working with desktop app](assets/enable_desktop_actions.png)
+
+### Configurations to use Adobe Asset Link {#configure-asset-link}
+
+Adobe Asset Link streamlines collaboration between creatives and marketers in the content creation process. It connects Adobe Experience Manager (AEM) Assets with Creative Cloud desktop apps Adobe InDesign, Adobe Photoshop, and Adobe Illustrator. The Adobe Asset Link panel allows creatives to access and modify content stored in AEM Assets without leaving the creative apps they are most familiar with.
+
+See [how to configure AEM to use with Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+
+## Best practices and troubleshooting {#bestpractices}
+
+* Asset folders or collections that contain a whitespace in their name may not get shared.
+* If users cannot download the shared assets, check with your AEM administrator what the [download limits](#maxdatasize) are.
+
+<!--
+* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
+* If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
+-->
+
+<!--
+Add content or link about how to share using Brand Portal when it is available on Cloud Service.
 -->

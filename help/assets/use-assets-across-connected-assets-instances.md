@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Use Connected Assets to share DAM assets in AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. A few reasons can be geographically distributed deployments required to work in tandem; acquisitions leading to heterogenous infrastructure that parent company wants to consolidate; growth leading to such scale that dedicated instance is required for asset management.
+In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. A few reasons can be geographically distributed existing deployments that are required to work in tandem or acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
 
 AEM Sites offers capabilities to create web pages and AEM Assets is the Digital Asset Management (DAM) system that supplies the required assets for websites. AEM now supports the above use case by integrating AEM Sites and AEM Assets.
 
@@ -14,7 +14,7 @@ AEM Sites offers capabilities to create web pages and AEM Assets is the Digital 
 
 When editing pages in Page Editor, the authors can seamlessly search, browse, and embed assets from a different AEM Assets deployment. To do an AEM administrator do a one-time integration of a local deployment of AEM Sites with a different (remote) deployment of AEM Assets.
 
-For the Sites authors, the remote assets are available as read-only local assets. The functionality supports seamless search and use of a few remote assets at a time. To make many remote assets available on local deployment in one-go, consider migrating the assets in bulk. See [Assets migration guide](/help/assets/assets-migration-guide.md).
+For the Sites authors, the remote assets are available as read-only local assets. The functionality supports seamless search and use of a few remote assets at a time. To make many remote assets available on local deployment in one-go, consider migrating the assets in bulk.
 
 ### Prerequisites and supported deployments {#prerequisites}
 
@@ -162,7 +162,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * Metadata schemas are not fetched.
 * All Sites Authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * No API support to customize the integration.
-* The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
+* The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets.
 * It is not possible to use a remote asset as a thumbnail for a web page in the [!UICONTROL Thumbnail] tab in [!UICONTROL Page Properties] by clicking [!UICONTROL Select Image].
 
 **Set up and licensing**
