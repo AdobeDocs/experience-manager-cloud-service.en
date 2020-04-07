@@ -27,7 +27,7 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. At a high level on AEM as a Cloud Service, with the introduction of the [Blue-Green deployment model](#index-management-using-blue-green-deployments) two sets of indexes will exist: one set for the old version (blue), and one set for the new version (green). 
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments).
 
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic. 
 
@@ -57,7 +57,7 @@ You need to prepare a new index definition package that contains the actual inde
 
 `<indexName>[-<productVersion>]-custom-<customVersion>` 
 
-which then needs to go under `ui.apps/src/main/content/jcr_root`. Sub root folders are not supported as of now.
+which then needs to go under `ui.content/src/main/content/jcr_root`. Sub root folders are not supported as of now.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -65,15 +65,11 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### Deploying Index Definitions {#deploying-index-definitions}
 
-> [!NOTE]
->
-> There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. To work around this, please use version **1.0.4**.
-
 Index definitions are now marked as custom and versioned:
 
-* The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
+* The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)  which is MUTABLE content
 
-Therefore, in order to deploy an index, the index definition (`/oak:index/definitionname`) needs to be delivered via `ui.apps` via Git and the Cloud Manager deployment process.
+Therefore, in order to deploy an index, the index definition (`/oak:index/definitionname`) should be delivered via the **mutable package**, typically `ui.content` via Git and the Cloud Manager deployment process.
 
 Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the Blue-Green switch is taking place.
 

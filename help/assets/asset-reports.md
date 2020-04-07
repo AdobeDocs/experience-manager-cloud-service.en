@@ -14,7 +14,7 @@ The AEM Assets reporting framework leverages Sling jobs to asynchronously proces
 
 The report management interface is intuitive and includes fine-grained options and controls to access archived reports and view report run statuses (success, failed, and queued).
 
-When a report is generated, you are notified by <!-- through an email (optional) and --> an inbox notification. You can view, download, or delete a report from the report listing page, where all previously generated reports are displayed.
+When a report is generated, you are notified through an email (optional) and an inbox notification. You can view, download, or delete a report from the report listing page, where all previously generated reports are displayed.
 
 ## Generate reports {#generate-reports}
 
@@ -75,7 +75,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
    ![files_report](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> The columns are not customizable.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
 
    The **[!UICONTROL Link Share]** report, does not include options for subfolders and renditions because it merely publishes the shared URLs that appear under */var/dam/share*.
 

@@ -166,7 +166,7 @@ When you download a collection, the entire hierarchy of assets within the collec
 
 1. From the Collections console, select one or more collections to download.
 1. From the toolbar, tap/click the download icon.
-1. In the **[!UICONTROL Download]** dialog, tap/click **[!UICONTROL Download]**. If you want to download the renditions of the assets within the collection, select **[!UICONTROL Renditions]**. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
+1. In the **[!UICONTROL Download]** dialog, tap/click **[!UICONTROL Download]**. If you want to download the renditions of the assets within the collection, select **[!UICONTROL Renditions]**. Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection.
 
    When you select a collection to download, the complete folder hierarchy under the collection is downloaded. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
 

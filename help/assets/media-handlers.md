@@ -14,7 +14,7 @@ Media handlers are services inside AEM Assets that perform specific actions on a
 
 >[!NOTE]
 >
->See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
+>Please refer to the [Assets supported formats](file-format-support.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
 
 ## Default Media Handlers {#default-media-handlers}
 
@@ -403,7 +403,7 @@ To do this, you will use ImageMagick. ImageMagick is a free software suite to cr
 
 First install ImageMagick on the disk hosting the AEM server:
 
-1. Install ImageMagick: See [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
+1. Install ImageMagick: please refer to the [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
 1. Set up the tool so you can run convert on the command line.
 1. To see if the tool is installed properly, run the following command `convert -h` on the command line.
 
