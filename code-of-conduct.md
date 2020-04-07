@@ -45,6 +45,9 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://contribu
 =======
 This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
+=======
 >>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 =======
 >>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging

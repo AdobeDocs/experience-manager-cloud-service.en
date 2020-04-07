@@ -16,8 +16,11 @@ While we welcome any contributions to improve AEM documentation, we do ask that 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
 =======
+=======
+>>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 =======
 >>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 How you contribute depends on who you are and the sort of changes you'd like to contribute:
@@ -44,8 +47,11 @@ Issues allow you to easily describe your idea for improvement to the docs and an
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
 =======
+=======
+>>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 =======
 >>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 ### Major Changes from Adobe Employees
@@ -63,10 +69,13 @@ Have a look at the following video for a quick overview of how to create issues 
 ### Contributions from Adobe Employees
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
 
 We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
 =======
+=======
+>>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 =======
 >>>>>>> parent of f6e5291... Merge branch 'staging' of https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en into staging
 ## Tools and Setup
