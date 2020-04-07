@@ -20,10 +20,6 @@ However, you must first configure AEM Assets with Brand Portal. For details, see
 
 If you make subsequent modifications to the original asset, folder, or collection in AEM Assets, the changes are not reflected in Brand Portal until you republish from AEM Assets. This feature ensures that work-in-progress changes are not available in Brand Portal. Only approved changes that are published by an administrator are available in Brand Portal.
 
-* [Publish assets to Brand Portal](#publish-assets-to-bp)
-* [Publish folders to Brand Portal](#publish-folders-to-brand-portal)
-* [Publish collections to Brand Portal](#publish-collections-to-brand-portal)
-
 >[!NOTE]
 >
 >Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
@@ -108,16 +104,16 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
 
 1.   **Publish folders later**
 
-     To schedule publishing the asset folders to a later date or time.
+   To schedule publishing the asset folders to a later date or time.
 
-     1. Select the folders that you want to schedule for publishing, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
-     1. From **[!UICONTROL Action]**, select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Later]**.
+    1. Select the folders that you want to schedule for publishing, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
+    1. From **[!UICONTROL Action]**, select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Later]**.
 
-        ![publishlaterbp](assets/publishlaterbp.png)
+       ![publishlaterbp](assets/publishlaterbp.png)
 
-      1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
-      1. Confirm your selection in **[!UICONTROL Scope]**. Click **[!UICONTROL Next]**.
-      1. Specify a Workflow title under **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
+    1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
+    1. Confirm your selection in **[!UICONTROL Scope]**. Click **[!UICONTROL Next]**.
+    1. Specify a Workflow title under **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
 
        ![manageschedulepub](assets/manageschedulepub.png)
 

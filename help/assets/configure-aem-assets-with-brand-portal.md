@@ -3,12 +3,12 @@ title: Configure AEM Assets with Brand Portal
 seo-title: Configure AEM Assets with Brand Portal
 description: Get an insight into configuring AEM Assets with Brand Portal.
 seo-description: Get an insight into configuring AEM Assets with Brand Portal.
-uuid: 
+uuid:
 contentOwner: Vishabh Gupta 
 content-type: reference
 topic-tags: brand-portal
 products: SG_EXPERIENCEMANAGER/ASSETS
-discoiquuid:  
+discoiquuid: 
 ---
 
 # Configure AEM Assets with Brand Portal {#configure-aem-assets-with-brand-portal}
@@ -29,8 +29,7 @@ You require the following to configure AEM Assets with Brand Portal:
 
 You can create new configuration on Adobe I/O to configure AEM Assets with Brand Portal.
 
-Perform the following steps in the listed sequence:
-
+Perform the following steps in the listed sequence: 
 1. [Obtain public certificate](#public-certificate)
 1. [Create Adobe I/O integration](#createnewintegration) 
 1. [Create IMS Account configuration](#create-ims-account-configuration)
@@ -297,3 +296,15 @@ See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experie
    -->
 
 
+
+<!--
+   Comment Type: draft
+
+   <li> </li>
+   -->
+
+   <!--
+   Comment Type: draft
+
+   <li>Step text</li>
+   -->
