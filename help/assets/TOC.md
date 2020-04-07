@@ -49,11 +49,14 @@ user-guide-title: AEM Assets as a Cloud Service
   + [MediaLibrary capabilities](medialibrary.md)
   + [Import and export asset metadata](metadata-import-export.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 + Share and distribute Assets {#brandportal}
     + [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md)
     + [Publish AEM Assets to Brand Portal](publish-to-brand-portal.md)
 >>>>>>> parent of 733b637... update toc
+=======
+>>>>>>> parent of da6a8ae... Configure Brand Portal with AEM Assets on Cloud
 + Content Fragments {#content-fragments}
   + [Working with Content Fragments](content-fragments/content-fragments.md)
   + [Managing Content Fragments](content-fragments/content-fragments-managing.md)
