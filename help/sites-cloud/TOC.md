@@ -5,6 +5,7 @@ user-guide-title: Authoring Content in AEM as a Cloud Service
 
 # Sites {#sites}
 
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Notable Changes to AEM Sites in AEM Cloud Service](sites-cloud-changes.md)
 + Authoring {#authoring}
   + Getting Started {#getting-started}

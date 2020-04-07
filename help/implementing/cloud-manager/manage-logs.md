@@ -62,3 +62,10 @@ Environment Id Service    Name
 
 >[!Note]
 >While **Log Downloads** will be available through both the UI and API, **Log Tailing** is API/CLI-only.
+
+### Additional Resources {#resources}
+
+Refer to the following additional resources to learn more about the Cloud Manager API and Adobe I/O CLI:
+
+* [Cloud Manager API Documentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
