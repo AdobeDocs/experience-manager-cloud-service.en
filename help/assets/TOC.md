@@ -52,7 +52,10 @@ user-guide-title: AEM Assets as a Cloud Service
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 733b637... update toc
 =======
 >>>>>>> parent of 733b637... update toc
 + Share and distribute Assets {#brandportal}
