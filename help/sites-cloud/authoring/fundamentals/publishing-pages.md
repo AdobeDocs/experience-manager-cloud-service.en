@@ -39,6 +39,7 @@ Depending on your location, you can publish:
 >* A workflow will be triggered to notify the appropriate person of your request to publish.
 >* This workflow may have been customized by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
+
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
@@ -181,7 +182,11 @@ To publish or unpublish a page using Manage Publication:
    The resources are grouped by the workflows triggered and each given options to:
 
     * Define the title of the workflow.
-    * Keep the workflow package, provided that the workflow has multi-resource support. <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+    * Keep the workflow package, provided that the workflow has multi-resource support. 
+    
+    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+    
     * Define a title of the workflow package if the option to keep the workflow package was chosen.
 
    Click **Publish** or **Publish Later** to complete the publication.
