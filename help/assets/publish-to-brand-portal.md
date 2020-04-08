@@ -12,7 +12,7 @@ However, you must first configure AEM Assets with Brand Portal. For details, see
 
 If you make subsequent modifications to the original asset, folder, or collection in AEM Assets, the changes are not reflected in Brand Portal until you republish from AEM Assets. This feature ensures that work-in-progress changes are not available in Brand Portal. Only approved changes that are published by an administrator are available in Brand Portal.
 
-* [Publish assets to Brand Portal](#publish-assets-to-brand-portal)
+* [Publish assets to Brand Portal](#publish-assets-to-bp)
 * [Publish folders to Brand Portal](#publish-folders-to-brand-portal)
 * [Publish collections to Brand Portal](#publish-collections-to-brand-portal)
 
@@ -21,7 +21,7 @@ If you make subsequent modifications to the original asset, folder, or collectio
     >Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
     >
 
-## Publish assets to Brand Portal {#publish-assets-to-brand-portal}
+## Publish assets to Brand Portal {#publish-assets-to-bp}
 
 Following are the steps to publish assets from AEM Assets to Brand Portal:
 
