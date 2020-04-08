@@ -7,11 +7,14 @@ description: Release Notes for Release 2020.3.0
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.3.0.
 
+
+## Release Date {#release-date}
+
+The Release Date for Experience Manager as a Cloud Service 2020.3.0 is March 05, 2020.
+
 ## Cloud Manager {#cloud-manager}
 
-The Release Date for Cloud Manager Release 2020.3.0 is March 05, 2020.
-
-Follow this section to learn about what is new and the updates for Cloud Manager Release 2020.3.0.
+Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.3.0.
 
 ### What's New {#what-is-new}
 
