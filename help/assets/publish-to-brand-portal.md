@@ -17,9 +17,9 @@ If you make subsequent modifications to the original asset, folder, or collectio
 * [Publish collections to Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
-    >
-    >Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
-    >
+ >
+ >Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
+ >
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
