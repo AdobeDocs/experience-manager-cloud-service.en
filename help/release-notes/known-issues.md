@@ -31,7 +31,6 @@ Some limitations of Assets functionality are:
 
 A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
 
-* Publishing to Brand Portal is not enabled at this stage. You can extend and deploy [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) implementation for asset distribution use-cases.
 * Enhanced smart tagging functionality that leverages AI services of Adobe I/O are not available for now.
 * Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
   * Photoshoot workflow models.
