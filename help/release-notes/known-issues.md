@@ -21,11 +21,7 @@ This article lists the known issues of Adobe Experience Manager as a Cloud Servi
 
 Some known issues are:
 
-* **Metadata Schema**: Asset rating widget can cause JSP compilation error. A workaround is to remove the asset rating component from the metadata schema. <!-- CQ-4282865 -->
-
-Some limitations of Assets functionality are:
-
-* With AEM Assets as a Cloud Service, the Connected Assets functionality works when AEM 6.5 Sites is deployment on AMS.
+* **Metadata Schema**: Asset rating widget used to cause JSP compilation error. It was removed from the metadata schema. <!-- CQ-4282865, CQ-4284633 -->
 
 ### Upcoming Assets capabilities {#upcoming-assets-capabilities}
 
