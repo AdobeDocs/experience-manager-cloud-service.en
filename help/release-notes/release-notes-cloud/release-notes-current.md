@@ -7,6 +7,10 @@ description: Release Notes for Release 2020.4.0
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.4.0.
 
+## Release Date {#release-date}
+
+The Release Date for Experience Manager as a Cloud Service 2020.4.0 is April 9, 2020.
+
 ## Assets {#assets}
 
 Follow this section to learn about what is new and the updates for Experience Manager Assets and Dynamic Media in AEM as a Cloud Service Release 2020.4.0.
