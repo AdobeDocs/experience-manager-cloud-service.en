@@ -42,6 +42,7 @@ These aims have significantly influenced the structure of WCAG 2.0.
 >[!NOTE]
 >
 >If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.0. These relate to scope, organization and aim.
+
 ## Structure {#structure}
 
 WCAG 2.0 is structured in a way that introduces concepts of accessible web content creation in a progressively detailed manner. This may give the impression that WCAG 2.0 is a very complex set of interlinked documents, but the aim is to (progressively) provide more detailed information as and when authors need it - rather than providing it all in one very large document.
