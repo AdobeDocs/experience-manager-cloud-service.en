@@ -13,7 +13,7 @@ AEM as a Cloud Service offers you the possibility to configure:
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. 
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs.
 
 >[!NOTE]
 >
@@ -119,15 +119,15 @@ The other pairs follow the standard configuration:
 
 To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > In order to perform the configuration changes listed below, you need to create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 ### Activating the DEBUG Log Level {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
-> Activating the DEBUG log level globally will generate a large amount of information which will be difficult to sift through. It is recommended you enable it only for the services that require debugging. For more information, see [Loggers and Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).  
+> Activating the DEBUG log level globally will generate a large amount of information which will be difficult to sift through. It is recommended you enable it only for the services that require debugging. For more information, see [Loggers and Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).
 
 The default log level is INFO, that is, DEBUG messages are not logged.
 To activate DEBUG log level, set the
@@ -135,11 +135,11 @@ To activate DEBUG log level, set the
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
 property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
-A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example: 
+A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example:
 
 ``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
 
-The log levels are as follows: 
+The log levels are as follows:
 
 | 0  | Fatal error   | The action has failed, and the installer cannot proceed.   |
 |---|---|---|

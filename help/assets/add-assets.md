@@ -15,7 +15,7 @@ While you can upload and manage any binary file in Experience Manager, most comm
 
 You can also choose to have additional processing done on the uploaded assets. A number of asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions or image processing services. See [Additional processing](#additional-processing) below for more information.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager as a Cloud Service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
 >
@@ -72,7 +72,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
-> [!NOTE]
+>[!NOTE]
 >
 > To upload nested folder hierarchies to AEM, see [bulk upload of assets](#bulk-upload).
 
@@ -127,7 +127,7 @@ To upload larger number of files, especially if they exist in a nested folder hi
 * Use a custom upload script or tool that leverages [asset upload APIs](developer-reference-material-apis.md#asset-upload-technical). Such a custom tool can add additional handling of assets (for example, translate metadata or rename files), if required.
 * Use [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
 
@@ -154,7 +154,7 @@ Additionally, if Dynamic Media is enabled in your environment:
 * [Image profiles](dynamic-media/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets
 * [Video profiles](dynamic-media/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters)
 
-> [!NOTE]
+>[!NOTE]
 >
 > Dynamic Media cropping and other operations on assets are non-destructive, that is, they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
 

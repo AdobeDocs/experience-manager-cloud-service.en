@@ -1,6 +1,6 @@
 ---
 title: Content Search and Indexing
-description: Content Search and Indexing 
+description: Content Search and Indexing
 ---
 
 # Content Search and Indexing {#indexing}
@@ -25,17 +25,17 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
 
-1. At a high level on AEM as a Cloud Service, with the introduction of the [Blue-Green deployment model](#index-management-using-blue-green-deployments) two sets of indexes will exist: one set for the old version (blue), and one set for the new version (green). 
+1. At a high level on AEM as a Cloud Service, with the introduction of the [Blue-Green deployment model](#index-management-using-blue-green-deployments) two sets of indexes will exist: one set for the old version (blue), and one set for the new version (green).
 
 <!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
-1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic. 
+1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
 1. Limitations: currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -55,7 +55,7 @@ For both points 1 and 2 above, you need to create a new index definition as part
 
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
-`<indexName>[-<productVersion>]-custom-<customVersion>` 
+`<indexName>[-<productVersion>]-custom-<customVersion>`
 
 which then needs to go under `ui.apps/src/main/content/jcr_root`. Sub root folders are not supported as of now.
 
@@ -65,7 +65,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### Deploying Index Definitions {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. To work around this, please use version **1.0.4**.
 
@@ -114,7 +114,8 @@ With blue-green deployments, there is no downtime. However, for index management
 The following table shows 5 index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` is needed for AEM as a Cloud Service to mark this as a replacement for an existing index.
 
 | Index | Out-of-the-box Index  | Use in Version 1  | Use in Version 2  |
