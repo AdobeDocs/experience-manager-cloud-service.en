@@ -1,34 +1,40 @@
 ---
-title: Release Notes for Release 2020.4.0
-description: Release Notes for Release 2020.4.0
+title: Adobe Experience Manager as a Cloud Service Release Notes for 2020.4.0
+description: Experience Manager Release Notes for 2020.4.0
 ---
 
-# Release Notes for AEM as a Cloud Service 2020.4.0 {#release-notes}
+# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.4.0.
+The following section outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Release Date {#release-date}
 
-The Release Date for Experience Manager as a Cloud Service 2020.4.0 is April 9, 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.4.0 is April 9, 2020.
 
-## Assets {#assets}
+## What's New in Assets {#assets}
 
-Follow this section to learn about what is new and the updates for Experience Manager Assets and Dynamic Media in AEM as a Cloud Service Release 2020.4.0.
+Know about new features, enhancements, and bug fixes for [!DNL Experience Manager Assets] and [!DNL Dynamic Media] in the current release.
 
-### What's New {#assets-what-is-new}
+* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) supports the asset distribution use cases for Experience Manager Assets. [!DNL Brand Portal] aids organizations to meet their marketing needs by securely distributing approved brand and product assets to external agencies, partners, internal teams, and resellers for download.
+  * [!DNL Brand Portal] configuration is completed through [!DNL Adobe I/O] console.
+  * Asset sourcing in [!DNL Brand Portal] is not yet supported with [!DNLExperience Manager] as a Cloud Service.
 
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) is available for AEM as a Cloud Service Assets, supporting asset distribution use cases. Brand Portal aids organizations to meet their marketing needs by securely distributing approved brand and product assets to external agencies, partners, internal teams, and resellers for download.
-   * Brand Portal configuration is done through Adobe I/O console
-   * Asset sourcing in Brand Portal is not yet supported with AEM as a Cloud Service
-* The new release of [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 2.0 is supported with AEM as a Cloud Service. Adobe Asset Link streamlines collaboration between creatives and marketers in the content creation process by connecting AEM Assets with Creative Cloud desktop apps Photoshop, Illustrator, and InDesign via in-app Asset Link panel.
-   * AEM as a Cloud Service is preconfigured for Adobe Asset Link, which results in [simplified configuration](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-   * Asset Link now supports an [AEM environment switcher](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink), allowing creative users to connect to different AEM enviroments more easily (e.g., in case of agency designers working with multiple clients with AEM Assetes)
-* Auto-start for [post-processing worfklows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be configured in Folder Properties UI for specific folder hierarchies.
-   * Folder Properties UI has been simplified, with new Asset Processing tab containg Metadata Profile, Processing Profile, and the new Auto-Start Workflow configuration
-* Asset reprocessing dialog allows for selecting a specific processing profile and decide to reprocess in sub-folders
-* Dynamic Media: Added Selective Publish configuration, which means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 works with [!DNL Experience Manager] as a Cloud Service. [!DNL Adobe Asset Link] streamlines collaboration between creatives and marketers in the content creation process by connecting [!DNL Experience Manager Assets] with [!DNL Creative Cloud] desktop apps [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] via in-app [!DNL Asset Link] panel.
+  * [!DNL Experience Manager] is pre-configured for [!DNL Adobe Asset Link], which results in [easy configuration](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) and faster roll-out to creative professionals.
+  * [!DNL Asset Link] now supports an [Experience Manager environment switcher](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) that allows creative users to easily connect to a different [!DNL Experience Manager] environment. An example where this functionality is useful is, for agency designers who work with multiple clients using different [!DNL Experience Manager Assets] deployments.
 
-### Bug Fixes  {#assets-bug-fixes}
+* Users can configure [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) to auto-start in the folder [!UICONTROL Properties] user interface for the specific folder hierarchies.
+  * The folder [!UICONTROL Properties] user interface is simplified, with new [!UICONTROL Asset Processing] tab containing metadata profile, processing profile, and the new auto-start workflow configuration.
+  * Asset reprocessing dialog allows to select a specific processing profile and decide to reprocess in sub-folders.
+  * [!DNL Dynamic Media]: Added selective publish configuration so that assets are auto-published for secure preview only. Also, the assets can be explicitly published to Experience Manager without publishing to DMS7 for delivery in the public domain.
 
-* Fixes in asset processing
-* Fixes in Dynamic Media configuration and publishing assets to Dynamic Media delivery service
+* The following issues were addressed:
+  * Fixes for asset processing issues.
+  * Fixes in [!DNL Dynamic Media] configuration and publishing assets to [!DNL Dynamic Media] delivery service.
+
+>[!MORELIKETHIS]
+>
+>* [About Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Configure Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Configure Experience Manager to work with Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Create workflow in Experience Manager using assets microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
