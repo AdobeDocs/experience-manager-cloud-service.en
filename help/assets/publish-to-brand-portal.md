@@ -218,7 +218,8 @@ Following are the steps to unpublish a collection:
 1. In the dialog, click **[!UICONTROL Unpublish]**.
 1. Close the confirmation message. The collection is removed from the Brand Portal interface.
 
-See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information on distribution of assets, folders, and collections to the end-users.
+In addition to assets, you can also publish metadata schemas, image presets, search facets, and tags from AEM Assets to Brand Portal. See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html).
+
 
 
 

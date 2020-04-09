@@ -221,6 +221,8 @@ Brand Portal is successfully configured with your AEM Assets cloud instance. You
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 
+In addition to assets, you can also publish metadata schemas, image presets, search facets, and tags from AEM Assets to Brand Portal. See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html).
+
 
 ## Distribution logs {#distribution-logs}
 
