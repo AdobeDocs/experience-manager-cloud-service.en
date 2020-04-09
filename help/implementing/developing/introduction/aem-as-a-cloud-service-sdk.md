@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service SDK
-description: To be completed 
+description: To be completed
 ---
 
 # The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
@@ -28,12 +28,12 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>aem-sdk-api</artifactId>
-  <version>2019.11.3006.20191108T223635Z-191201</version> 
+  <version>2019.11.3006.20191108T223635Z-191201</version>
   <scope>provided</scope>
 </dependency>
 ```
 
-> [!NOTE] The version entry for the SDK should match the version of AEM as a Cloud Service. You can see what version you are using by logging in to AEM, then going to the question mark in the top right corner of the screen and selecting **[!UICONTROL About Adobe Experience Manager]**
+>[!NOTE] The version entry for the SDK should match the version of AEM as a Cloud Service. You can see what version you are using by logging in to AEM, then going to the question mark in the top right corner of the screen and selecting **[!UICONTROL About Adobe Experience Manager]**
 
 * The remote coordinate for the maven repository where the package is hosted should be included in the pom file.
 
@@ -69,7 +69,7 @@ Below is the recommended procedure for refreshing a local environment:
 1. Note the new AEM version, which is noted in Cloud Manager (this will be used to identify the new QuickStart Jar version to download further on)
 1. Download the QuickStart JAR whose version matches the Production AEM version from the Software Distribution Portal
 1. Create a brand new folder and put the new QuickStart Jar inside
-1. Start the new QuickStart with the desired runmodes (either renaming file or passing in runmodes via `-r`). 
+1. Start the new QuickStart with the desired runmodes (either renaming file or passing in runmodes via `-r`).
    * Make sure there's no remnant of the old quickstart in the folder.
 1. Build your AEM application
 1. Deploy your AEM application to local AEM via PackageManager

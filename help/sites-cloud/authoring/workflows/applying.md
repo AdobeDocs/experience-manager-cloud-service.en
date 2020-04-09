@@ -25,7 +25,8 @@ Workflows can be started from:
 >
 >* How to apply workflows to DAM assets.
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -33,7 +34,8 @@ Workflows can be started from:
 >[!NOTE]
 >
 >AEM administrators can start workflows using several other methods.
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -99,6 +101,7 @@ You can specify details:
    >[!NOTE]
    >
    >The **Keep workflow package** option is available when the workflow has been configured for Multi Resource Support and multiple resources have been selected.
+   
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->

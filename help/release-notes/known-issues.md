@@ -21,17 +21,12 @@ This article lists the known issues of Adobe Experience Manager as a Cloud Servi
 
 Some known issues are:
 
-* **Metadata Schema**: Asset rating widget can cause JSP compilation error. A workaround is to remove the asset rating component from the metadata schema. <!-- CQ-4282865 -->
-
-Some limitations of Assets functionality are:
-
-* With AEM Assets as a Cloud Service, the Connected Assets functionality works when AEM 6.5 Sites is deployment on AMS.
+* **Metadata Schema**: Asset rating widget used to cause JSP compilation error. It was removed from the metadata schema. <!-- CQ-4282865, CQ-4284633 -->
 
 ### Upcoming Assets capabilities {#upcoming-assets-capabilities}
 
 A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
 
-* Publishing to Brand Portal is not enabled at this stage. You can extend and deploy [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) implementation for asset distribution use-cases.
 * Enhanced smart tagging functionality that leverages AI services of Adobe I/O are not available for now.
 * Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
   * Photoshoot workflow models.

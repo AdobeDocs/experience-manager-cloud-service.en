@@ -1,6 +1,6 @@
 ---
 title: IMS Support for Adobe Experience Manager as a Cloud Service
-description: IMS Support for Adobe Experience Manager as a Cloud Service 
+description: IMS Support for Adobe Experience Manager as a Cloud Service
 ---
 
 # IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
@@ -102,7 +102,7 @@ The User Management API that is used by the User Sync Tool is covered [here](htt
 
 ## Adobe Experience as a Cloud Service Configuration {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >The AEM IMS configuration required will be automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/overview.md).
 
@@ -122,7 +122,7 @@ When the Product Administrator logs in to Admin Console, they will see multiple 
 
 ![Instances login](/help/security/assets/ims6.png)
 
-In this example, the org **AEM-MS-Onboard** has 32 instances spanning different topologies and environments like Stage or Prod. 
+In this example, the org **AEM-MS-Onboard** has 32 instances spanning different topologies and environments like Stage or Prod.
 
 ![Instances login2](/help/security/assets/ims7.png)
 
