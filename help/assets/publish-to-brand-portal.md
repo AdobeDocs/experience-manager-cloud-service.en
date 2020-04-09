@@ -212,7 +212,7 @@ Following are the steps to unpublish a collection:
 
 1. From the **Collections** console of your AEM Assets instance, and select the collection that    you want to unpublish.
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. From the toolbar, click **[!UICONTROL Remove from Brand Portal]** icon.
 1. In the dialog, click **[!UICONTROL Unpublish]**.

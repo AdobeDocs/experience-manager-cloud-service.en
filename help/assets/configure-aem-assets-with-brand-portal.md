@@ -44,7 +44,7 @@ Public certificate allows you to authenticate your profile on Adobe I/O.
 
 1. Login to your AEM Assets cloud instance
 
-1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS Configurations]**.
+1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS Account Configuration UI](assets/ims-configuration1.png)
 
@@ -159,7 +159,7 @@ Perform the following steps to create Brand Portal cloud service configuration:
 
 1. Login to your AEM Assets cloud instance
 
-1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services >> AEM Brand Portal]**.
+1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
    Brand Portal Configurations page opens.
 
@@ -216,7 +216,7 @@ Perform the following steps to create Brand Portal cloud service configuration:
     >
 
 
-Once Brand Portal is successfully configured with your AEM Assets cloud instance, you can:
+Your AEM Assets cloud instance is successfully configured with Brand Portal, you can now:
 
 * [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -261,9 +261,9 @@ On publishing the asset, the following request and response logs are generated:
 In the above example, an additional request and response is triggered. The system could not find the parent folder (a.k.a Add Path) in Brand Portal because the asset was published for the first-time, therefore, triggers an addtional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
-    >
-    >Additional request is generated in case the parent folder does not exist in Brand Portal (in the above example), or the parent folder has been modified in AEM Assets. 
-    >
+   >
+   >Additional request is generated in case the parent folder does not exist in Brand Portal (in the above example), or the parent folder has been modified in AEM Assets. 
+   >
 
 ## Additional information {#additional-information}
 
