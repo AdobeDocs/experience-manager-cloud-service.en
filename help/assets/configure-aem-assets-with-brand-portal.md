@@ -202,8 +202,6 @@ Perform the following steps to create Brand Portal cloud service configuration:
    * A processing queue for distribution of assets to Brand Portal. 
    * An error queue for the assets where distribution has failed. 
 
-   You can test individual queues or the overall configuration.  
-
    ![](assets/test-bpconfig3.png)
 
 1. To verify the connection between AEM Assets and Brand Portal, click **[!UICONTROL Test Connection]**.
@@ -232,7 +230,7 @@ For example, we have published an asset from AEM Assets to Brand Portal to verif
 
 1. Follow the steps (Step 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
 
-1. Select the distribution queue **[!UICONTROL queue-bpdistributionagent0]** and click **[!UICONTROL Logs]** to view the distribution logs.
+1. Click **[!UICONTROL Logs]** to view the distribution logs. You can see the processing and error logs here.
 
    ![](assets/test-bpconfig5.png)
 
@@ -251,14 +249,12 @@ On publishing the asset, the following request and response logs are generated:
 * queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
 * queue-bpdistributionagent0 (DSTRQ3): The system replicates the folder containing the asset in Brand Portal.
 
-In the above example, an additional request and response is triggered. The system could not find the parent folder (a.k.a Add Path) in Brand Portal because the asset was published for the first-time, therefore, triggers an addtional request to create a parent folder with the same name in Brand Portal where the asset is published. 
-
-If the parent folder of same name exist (a.k.a. Add Path) in Brand Portal, additional request is not triggered. 
+In the above example, an additional request and response is triggered. The system could not find the parent folder (a.k.a Add Path) in Brand Portal because the asset was published for the first-time, therefore, triggers an addtional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
-   >
-   >To view the error logs, select the distribution queue **[!UICONTROL error-queue-bpdistributionagent0]** and click **[!UICONTROL Logs]**.
-   >
+    >
+    >Additional request is generated in case the parent folder does not exist in Brand Portal (in the above example), or the parent folder has been modified in AEM Assets. 
+    >
 
 ## Additional information {#additional-information}
 
