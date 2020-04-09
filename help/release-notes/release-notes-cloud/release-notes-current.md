@@ -28,9 +28,10 @@ Know about new features, enhancements, and bug fixes for [!DNL Experience Manage
   * Asset reprocessing dialog allows to select a specific processing profile and decide to reprocess in sub-folders.
   * [!DNL Dynamic Media]: Added selective publish configuration so that assets are auto-published for secure preview only. Also, the assets can be explicitly published to Experience Manager without publishing to DMS7 for delivery in the public domain.
 
-* The following issues are addressed:
-  * Fixes for asset processing issues.
-  * Fixes in [!DNL Dynamic Media] configuration and publishing assets to [!DNL Dynamic Media] delivery service.
+### Bug Fixes {#assets-bug-fixes}
+
+* Fixes for asset processing issues.
+* Fixes in [!DNL Dynamic Media] configuration and publishing assets to [!DNL Dynamic Media] delivery service.
 
 >[!MORELIKETHIS]
 >
