@@ -38,3 +38,25 @@ Know about new features, enhancements, and bug fixes for [!DNL Experience Manage
 >* [Configure Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Configure Experience Manager to work with Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Create workflow in Experience Manager using assets microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+
+## Cloud Manager Updates {#cloud-manager}
+
+## What's New in Cloud Manager {whats-new-cloud-manager}
+
+* Publisher URLs are now available from the Environment page in Cloud Manager UI.
+* Changes to navigation to allow user to edit, switch or add a program from Cloud Manager overview page.
+* Changes to allow user to Edit program from the program card on Cloud Manager landing page.
+* New pipeline status **Pipeline Running** displayed against the environment it is associated with.
+* Improvements to pipeline execution page comprehensibility. This includes display of Pipeline name (non-production pipeline only) and type, and a badge to indicate if the pipeline status is In Progress/Cancelled/Failed.
+* Tool tips to improve user experience and comprehensibility around why Add Program/Environment button is disabled.
+* Failed Environments can now be deleted through the UI and API.
+* The process used to generate git passwords has been made more resilient to issues in the underlying service layer.
+
+## Bug Fixes {#bug-fixes-cloud-manager}
+
+* The links to the stage environment on the pipeline execution details page were not consistently navigating to the correct location.
+* Individual steps within the environment creation process would timeout earlier than necessary causing the process to fail.
+* The Maven configuration used in the build container was updated to avoid deadlocks when downloading artifact metadata.
+* In some cases, the Build Image step would fail to download customer packages successfully.
+* Certain infrequently occurring conditions would prevent environments from being deleted.
+* Experience Cloud notifications were not consistently received.
