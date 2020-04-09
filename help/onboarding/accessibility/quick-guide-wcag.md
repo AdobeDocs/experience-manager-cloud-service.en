@@ -85,7 +85,7 @@ This list is not intended to be exhaustive, it provides an introduction to the r
 
 [What's New in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) provides valuable information about the delta between WCAG and 2.0 and WCAG 2.1.
 
-[WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) further clarifies the status of their relationship.
+The section [WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) further clarifies the status of their relationship.
 
 ### Techniques for WCAG 2.1 {#techniques-for-wcag}
 

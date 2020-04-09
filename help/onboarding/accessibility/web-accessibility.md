@@ -23,7 +23,7 @@ Adobe Experience Manager as a Cloud Service works with the [guidelines](#wcag-ac
  
 The [World Wide Web Consortium (W3C)](https://www.w3.org/) is an international community dedicated to developing web standards. Their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) publishes the [Web Content Accessibility Guidelines](#wcag-accessibility-guidelines).
 
-## WCAG 2.1 Web Content Accessibility Guidelines {#wcag-accessibility-guideslines}
+## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
 To help web designers and developers produce accessible websites the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) published the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) in June 2018.
 
