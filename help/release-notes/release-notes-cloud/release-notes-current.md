@@ -41,7 +41,7 @@ Know about new features, enhancements, and bug fixes for [!DNL Experience Manage
 
 ## Cloud Manager Updates {#cloud-manager}
 
-## What's New in Cloud Manager {whats-new-cloud-manager}
+## What's New in Cloud Manager {#whats-new-cloud-manager}
 
 * Publisher URLs are now available from the Environment page in Cloud Manager UI.
 * Changes to navigation to allow user to edit, switch or add a program from Cloud Manager overview page.
