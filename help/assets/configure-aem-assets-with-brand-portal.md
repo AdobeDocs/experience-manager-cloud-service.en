@@ -215,13 +215,20 @@ Perform the following steps to create Brand Portal cloud service configuration:
     >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
     >
 
-Brand Portal is successfully configured with your AEM Assets cloud instance. You can now:
+
+Once Brand Portal is successfully configured with your AEM Assets cloud instance, you can:
 
 * [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 
-In addition to assets, you can also publish metadata schemas, image presets, search facets, and tags from AEM Assets to Brand Portal. See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html).
+In addition to the above, you can also publish metadata schemas, image presets, search facets, and tags from AEM Assets to Brand Portal. 
+
+* [Publish presets, schemas, and facets to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
 
 ## Distribution logs {#distribution-logs}
@@ -271,6 +278,7 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
