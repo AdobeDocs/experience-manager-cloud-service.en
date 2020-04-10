@@ -19,7 +19,7 @@ On Cloud environments, developers can download logs through Cloud Manager or use
 >
 >Logging in AEM as a Cloud Service is based on Sling principles. See [Sling Logging](https://sling.apache.org/site/logging.html) for further information.
 
-## Global Logging {#global-logging}
+<!-- ## Global Logging {#global-logging}
 
 [Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
 
@@ -28,16 +28,13 @@ On Cloud environments, developers can download logs through Cloud Manager or use
 * the number of versions to be kept
 * version rotation; either maximum size or a time interval
 * the format to be used when writing the log messages
+-->
 
 ## Loggers and Writers for Individual Services {#loggers-and-writers-for-individual-services}
 
 In addition to the global logging settings, AEM as a Cloud Service allows you to configure specific settings for an individual service:
 
 * the specific logging level
-* the location of the individual log file
-* the number of versions to be kept
-* version rotation; either maximum size or the time interval
-* the format to be used when writing the log messages
 * the logger (the OSGi service supplying the log messages)
 
 This allows you to channel log messages for a single service into a separate file. This can be particularly useful during development or testing; for example, when you need an increased log level for a specific service.
@@ -155,14 +152,13 @@ You can define your own Logger / Writer pair:
 
     1. Specify the Log File.
     1. Specify the Logger.
-    1. Configure the other parameters as required.
 
-1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
+<!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
     1. Specify the Log File - this must match that specified for the Logger.
-    1. Configure the other parameters as required.
+    1. Configure the other parameters as required. -->
 
-### Create a Custom Log File {#create-a-custom-log-file}
+### Configure Logging {#configure-logging}
 
 >[!NOTE]
 >
@@ -185,7 +181,7 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
 
-1. Set the following properties on this node:
+<!-- 1. Set the following properties on this node:
 
     * Name: `org.apache.sling.commons.log.file`
 
@@ -270,8 +266,11 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >` <*cq-installation-dir*>/logs/`
    >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
+ --> 
 
-1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
+<!-- open question: see if we need to leave the above warning note in place, but adjust it so that it doesn't mention filenames --> 
+
+<!-- 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
 
    >[!CAUTION]
    >
@@ -348,6 +347,6 @@ In certain circumstances you may want to create a custom log file with a differe
 
 1. Read your new log file with your chosen tool.
 
-   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`.
+   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.draf
