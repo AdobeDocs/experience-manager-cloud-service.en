@@ -9,7 +9,7 @@ AEM as a Cloud Service offers you the possibility to configure:
 
 * global parameters for the central logging service
 * request data logging; a specialized logging configuration for request information
-* specific settings for the individual services; for example, an individual log file and format for the log messages
+* specific settings for the individual services
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
@@ -51,7 +51,7 @@ These elements are linked by the following parameters for the appropriate elemen
 
   Define the service(s) generating the messages.
 
-* **Log File (Logging Logger)**
+<!-- * **Log File (Logging Logger)**
 
   Define the physical file for storing the log messages.
 
@@ -62,12 +62,16 @@ These elements are linked by the following parameters for the appropriate elemen
   Define the physical file that the log messages will be written to.
 
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ### Standard Loggers and Writers {#standard-loggers-and-writers}
 
+> [!IMPORTANT] 
+> These can be customized if required, though the standard configuration is suitable for most installations. If, however, you need to customize the standard logging configurations, make sure you only do it on `dev` environments.
+
 Certain Loggers and Writers are included in a standard AEM as a Cloud Service installation.
 
-The first is a special case as it controls both the `request.log` and `access.log` files:
+The first is a special case as it controls both the `request` and `access` logs:
 
 * The Logger:
 
@@ -84,8 +88,6 @@ The first is a special case as it controls both the `request.log` and `access.lo
       (org.apache.sling.engine.impl.log.RequestLogger)
 
     * Writes the messages to either `request.log` or `access.log`.
-
-These can be customized if required, though the standard configuration is suitable for most installations.
 
 The other pairs follow the standard configuration:
 
@@ -111,6 +113,56 @@ The other pairs follow the standard configuration:
     * Writes `Warning` messages to `../logs/error.log` for the service `org.apache.pdfbox`.
 
 * Does not link to a specific Writer so will create and use an implicit Writer with default configuration (daily log rotation).
+
+Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another log for used for debugging Dispatcher issues. For more information, see [Debugging your Apache and Dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration). 
+
+As far as bast practices go, it is recommended you align with the configurations that currently exist in the AEM as a Cloud Service Maven archetype. These set different log settings and levels for particular environment types:
+
+* for `local dev` and `dev` environments, set the logger to **DEBUG** level to the `error.log`
+* for `stage`, set the logger to **WARN** level to the `error.log`
+* for `prod`, set logger to **ERROR** level to the `error.log`
+
+Please find examples below for each configuration:
+
+* `dev` environments:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="debug"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+
+* `stage` environments:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="warn"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+* `prod` environments:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="error"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```    
 
 ## Setting the Log Level {#setting-the-log-level}
 
@@ -150,7 +202,6 @@ You can define your own Logger / Writer pair:
 
 1. Create a new instance of the Factory Configuration [Apache Sling Logging Logger Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-    1. Specify the Log File.
     1. Specify the Logger.
 
 <!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
@@ -164,7 +215,7 @@ You can define your own Logger / Writer pair:
 >
 >When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services.
 
-In certain circumstances you may want to create a custom log file with a different log level. You can do this in the repository by:
+In certain circumstances you may want to create a custom log with a different log level. You can do this in the repository by:
 
 1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<*project-name*>/config`.
 1. Under `/apps/<*project-name*>/config`, create a node for the new Apache Sling Logging Logger Configuration:
