@@ -1,21 +1,25 @@
 ---
-title: Creating Accessible Content (WCAG 2.0 Conformance)
+title: Creating Accessible Content for Adobe Experience Manager as a Cloud Service (WCAG 2.1 Conformance)
 description: Help make web content accessible to, and usable by, persons with disabilities
 ---
 
-# Creating Accessible Content (WCAG 2.0 Conformance) {#creating-accessible-content-wcag-conformance}
+# Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
-WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
+The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
+
+>[!NOTE]
+>
+>See the list of [New Features in WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1).
 
 >[!NOTE]
 >
 >See also:
 >
->* our Quick Guide to WCAG 2.0 for further details
+>* our Quick Guide to WCAG 2.1 for further details
 >* Configuring the Rich Text Editor for producing accessible content
 
 <!-- 
->* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
+>* See our [Quick Guide to WCAG 2.1](/help/managing/qg-wcag.md) for further details
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
 
@@ -27,7 +31,7 @@ These are graded according to three conformance levels: Level A (lowest), Level 
 
 When creating your site, you should determine the overall level to which you would like your site to conform.
 
-The following section presents the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
+The following section presents the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
@@ -37,17 +41,17 @@ The following section presents the [WCAG 2.0 Guidelines](https://www.w3.org/TR/W
 >
 >In this document we are using:
 >
->* the short names for the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines).
->* the numbering used in the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) to aid cross-referencing with the WCAG website.
+>* the short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* the numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
 >
 
 ## Principle 1: Perceivable {#principle-perceivable}
 
-[Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.](https://www.w3.org/TR/WCAG20/#perceivable)
+[Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.](https://www.w3.org/TR/WCAG/#perceivable)
 
 ### Text Alternatives (1.1) {#text-alternatives}
 
-[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Non-text Content (1.1.1) {#non-text-content}
 
@@ -88,7 +92,9 @@ There are various forms of non-text content, so the value of the text alternativ
 * If the non-text content is contained in a button element and there is no text forming part of the same button, then the alternative text of the image must indicate the functionality of the button, not describe the image.
 * It is perfectly acceptable for an image to be given an empty (null) alternative text, but only if the image has no alternative text (for example, it is a purely decorative graphic) or if the equivalent text already exists in the page text.
 
+<!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
+-->
 
 Specific types of non-text content that require text alternatives might include:
 
