@@ -639,6 +639,25 @@ Follow the guidelines under [How to Meet Success Criteria 2.1.2](https://www.w3.
 * [Understanding Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [How to Meet Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
 
+### Timing Adjustable (2.2.1)  {#timing-adjustable}
+
+* Success Criterion 2.2.1
+* Level A
+* Keyboard: Provide users enough time to read and use content.
+
+#### Purpose - Timing Adjustable (2.2.1) {#purpose-timing-adjustable}
+
+The intent of this Success Criterion is to ensure that users with disabilities are given adequate time to interact with Web content whenever possible. People with disabilities such as blindness, low vision, dexterity impairments, and cognitive limitations may require more time to read content or to perform functions such as filling out on-line forms. If Web functions are time-dependent, it will be difficult for some users to perform the required action before a time limit occurs. This may render the service inaccessible to them. Designing functions that are not time-dependent will help people with disabilities succeed at completing these functions. Providing options to disable time limits, customize the length of time limits, or request more time before a time limit occurs helps those users who require more time than expected to successfully complete tasks. These options are listed in the order that will be most helpful for the user. Disabling time limits is better than customizing the length of time limits, which is better than requesting more time before a time limit occurs.
+
+#### How to Meet - Timing Adjustable (2.2.1) {#how-to-meet-timing-adjustable}
+
+Follow the guidelines under [How to Meet Success Criteria 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
+
+#### More information - Timing Adjustable (2.2.1) {#more-information-timing-adjustable}
+
+* [Understanding Success Criteria 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
+* [How to Meet Success Criteria 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
+
 ### Pause, Stop, Hide (2.2.2)  {#pause-stop-hide}
 
 * Success Criterion 2.2.2
