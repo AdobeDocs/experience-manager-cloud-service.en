@@ -567,7 +567,7 @@ Follow the guidelines under [How to Meet Success Criteria 1.4.4](https://www.w3.
 
 #### More information - Resize Text (1.4.4) {#more-information-meaningful-sequence}
 
-* [Understanding Success Criteria 1.4.4]()
+* [Understanding Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 * [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
 
 ### Images of Text (1.4.5) {#images-of-text}
@@ -615,7 +615,7 @@ Follow the guidelines under [How to Meet Success Criteria 2.1.1](https://www.w3.
 
 #### More information - Keyboard (2.1.1) {#more-information-keyboard}
 
-* [Understanding Success Criteria 2.1.1]()
+* [Understanding Success Criteria 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [How to Meet Success Criteria 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
 
 ### No Keyboard Trap (2.1.2)  {#no-keyboard-trap}
