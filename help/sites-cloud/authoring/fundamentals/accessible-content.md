@@ -557,15 +557,15 @@ If it is not possible to meet the recommended contrast levels, you will need to 
 * Level A
 * Resize Text: Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.
 
-#### Purpose - Resize Text (1.4.4) {#purpose-meaningful-sequence}
+#### Purpose - Resize Text (1.4.4) {#purpose-resize-text}
 
 The intent of this Success Criterion is to ensure that visually rendered text, including text-based controls (text characters that have been displayed so that they can be seen [vs. text characters that are still in data form such as ASCII]) can be scaled successfully so that it can be read directly by people with mild visual disabilities, without requiring the use of assistive technology such as a screen magnifier. Users may benefit from scaling all content on the Web page, but text is most critical.
 
-#### How to Meet - Resize Text (1.4.4) {#how-to-meet-meaningful-sequence}
+#### How to Meet - Resize Text (1.4.4) {#how-to-meet-resize-text}
 
 Follow the guidelines under [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text).
 
-#### More information - Resize Text (1.4.4) {#more-information-meaningful-sequence}
+#### More information - Resize Text (1.4.4) {#more-information-resize-text}
 
 * [Understanding Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 * [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
