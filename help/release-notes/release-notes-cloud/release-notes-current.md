@@ -17,7 +17,7 @@ Know about new features, enhancements, and bug fixes for [!DNL Experience Manage
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) supports the asset distribution use cases for Experience Manager Assets. [!DNL Brand Portal] aids organizations to meet their marketing needs by securely distributing approved brand and product assets to external agencies, partners, internal teams, and resellers for download.
   * [!DNL Brand Portal] configuration is completed through [!DNL Adobe I/O] console.
-  * Asset sourcing in [!DNL Brand Portal] is not yet supported with [!DNLExperience Manager] as a Cloud Service.
+  * Asset sourcing in [!DNL Brand Portal] is not yet supported with [!DNL Experience Manager] as a Cloud Service.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 works with [!DNL Experience Manager] as a Cloud Service. [!DNL Adobe Asset Link] streamlines collaboration between creatives and marketers in the content creation process by connecting [!DNL Experience Manager Assets] with [!DNL Creative Cloud] desktop apps [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] via in-app [!DNL Asset Link] panel.
   * [!DNL Experience Manager] is pre-configured for [!DNL Adobe Asset Link], which results in [easy configuration](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) and faster roll-out to creative professionals.

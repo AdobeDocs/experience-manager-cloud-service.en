@@ -52,7 +52,7 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 </repository>
 ```
 
-## Refreshing a Local Project with a New SDK Version {#refreshing-a-local-prokect-with-a-new-skd-version}
+## Refreshing a Local Project with a New SDK Version {#refreshing-a-local-project-with-a-new-skd-version}
 
 When is it recommended to refresh the local project with a new SDK?
 
@@ -88,5 +88,5 @@ To be able to reuse content packages containing the encrypted values you need to
 
 * When you initially start up the local quickstart.jar, make sure to add the below parameter: "`-Dcom.adobe.granite.crypto.file.disable=true`". It is recommended, but optional, to always add it.
 * The very first time you started up an instance create a package that contains a filter for the root "`/etc/key`". This will hold the secret to be reused across all environments for which you would want them to be reused
-* Export any mutable content containing secrets, or look up the encrypted values via `/crx/de` to add it to the package that will be reused accoss installations
+* Export any mutable content containing secrets, or look up the encrypted values via `/crx/de` to add it to the package that will be reused across installations
 * Whenever you spin up a fresh instance (either to replace with a new version or as multiple dev environments should share the credentials for testing), install the package produced in step 2 and 3 in order to be able to reuse the content without the need to manually reconfigure. This is because now the cryptokey is in synch.
