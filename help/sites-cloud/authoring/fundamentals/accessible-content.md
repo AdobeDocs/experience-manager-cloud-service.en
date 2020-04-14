@@ -404,6 +404,25 @@ You can then use the **Cell Properties** to choose whether the cell is a data or
 * [Understanding Success Criteria 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * [How to Meet Success Criteria 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
+### Meaningful Sequence (1.3.2)  {#meaningful-sequence}
+
+* Success Criterion 1.3.2
+* Level A
+* Meaningful Sequence: When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+
+#### Purpose - Meaningful Sequence (1.3.2) {#purpose-meaningful-sequence}
+
+The intent of this Success Criterion is to enable a user agent to provide an alternative presentation of content while preserving the reading order needed to understand the meaning. It is important that it be possible to programmatically determine at least one sequence of the content that makes sense. Content that does not meet this Success Criterion may confuse or disorient users when assistive technology reads the content in the wrong order, or when alternate style sheets or other formatting changes are applied.
+
+#### How to Meet - Meaningful Sequence (1.3.2) {#how-to-meet-meaningful-sequence}
+
+Follow the guidelines under [How to Meet Success Criteria 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
+
+#### More information - Meaningful Sequence (1.3.2) {#more-information-meaningful-sequence}
+
+* [Understanding Success Criteria 1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
+* [How to Meet Success Criteria 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
+
 ### Sensory Characteristics (1.3.3)  {#sensory-characteristics}
 
 * Success Criterion 1.3.3
@@ -474,6 +493,25 @@ If color is used as a cue to provide information, you should provide an addition
 <!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 -->
 
+### Audio Control (1.4.2)  {#audio-control}
+
+* Success Criterion 1.4.2
+* Level A
+* Audio Control: If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.
+
+#### Purpose - Audio Control (1.4.2) {#purpose-audio-control}
+
+Individuals who use screen reading software can find it hard to hear the speech output if there is other audio playing at the same time. This difficulty is exacerbated when the screen reader's speech output is software based (as most are today) and is controlled via the same volume control as the sound. Therefore, it is important that the user be able to turn off the background sound. Note: Having control of the volume includes being able to reduce its volume to zero.
+
+#### How to Meet - Audio Control (1.4.2) {#how-to-meet-audio-control}
+
+Follow the guidelines under [How to Meet Success Criteria 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
+
+#### More information - Audio Control (1.4.2) {#more-information-audio-control}
+
+* [Understanding Success Criteria 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
+* [How to Meet Success Criteria 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
+
 ### Contrast (Minimum) (1.4.3) {#contrast-minimum}
 
 * Success Criterion 1.4.3
@@ -513,6 +551,25 @@ If it is not possible to meet the recommended contrast levels, you will need to 
 * [Understanding Success Criteria 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [How to Meet Success Criteria 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
+### Resize Text (1.4.4)  {#resize-text}
+
+* Success Criterion 1.4.4
+* Level A
+* Resize Text: Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.
+
+#### Purpose - Resize Text (1.4.4) {#purpose-meaningful-sequence}
+
+The intent of this Success Criterion is to ensure that visually rendered text, including text-based controls (text characters that have been displayed so that they can be seen [vs. text characters that are still in data form such as ASCII]) can be scaled successfully so that it can be read directly by people with mild visual disabilities, without requiring the use of assistive technology such as a screen magnifier. Users may benefit from scaling all content on the Web page, but text is most critical.
+
+#### How to Meet - Resize Text (1.4.4) {#how-to-meet-meaningful-sequence}
+
+Follow the guidelines under [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text).
+
+#### More information - Resize Text (1.4.4) {#more-information-meaningful-sequence}
+
+* [Understanding Success Criteria 1.4.4]()
+* [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
+
 ### Images of Text (1.4.5) {#images-of-text}
 
 * Success Criterion 1.4.5
@@ -541,6 +598,46 @@ If images of text must be used, use CSS to replace the images of text with equiv
 ## Principle 2: Operable {#principle-operable}
 
 [Principle 2: Operable - User interface components and navigation must be operable.](https://www.w3.org/TR/WCAG/#operable)
+
+### Keyboard (2.1.1)  {#keyboard}
+
+* Success Criterion 2.1.1
+* Level A
+* Keyboard: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.
+
+#### Purpose - Keyboard (2.1.1) {#purpose-keyboard}
+
+The intent of this Success Criterion is to ensure that, wherever possible, content can be operated through a keyboard or keyboard interface (so an alternate keyboard can be used). When content can be operated through a keyboard or alternate keyboard, it is operable by people with no vision (who cannot use devices such as mice that require eye-hand coordination) as well as by people who must use alternate keyboards or input devices that act as keyboard emulators. Keyboard emulators include speech input software, sip-and-puff software, on-screen keyboards, scanning software and a variety of assistive technologies and alternate keyboards. Individuals with low vision also may have trouble tracking a pointer and find the use of software much easier (or only possible) if they can control it from the keyboard.
+
+#### How to Meet - Keyboard (2.1.1) {#how-to-meet-keyboard}
+
+Follow the guidelines under [How to Meet Success Criteria 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
+
+#### More information - Keyboard (2.1.1) {#more-information-keyboard}
+
+* [Understanding Success Criteria 2.1.1]()
+* [How to Meet Success Criteria 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
+
+### No Keyboard Trap (2.1.2)  {#no-keyboard-trap}
+
+* Success Criterion 2.1.2
+* Level A
+* No Keyboard Trap: If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.
+
+#### Purpose - No Keyboard Trap (2.1.2) {#purpose-no-keyboard-trap}
+
+The intent of this Success Criterion is to ensure that that content does not *trap* keyboard focus within subsections of content on a Web page. This is a common problem when multiple formats are combined within a page and rendered using plug-ins or embedded applications.
+
+There may be times when the functionality of the Web page restricts the focus to a subsection of the content, as long as the user knows how to leave that state and *untrap* the focus.
+
+#### How to Meet - No Keyboard Trap (2.1.2) {#how-to-meet-no-keyboard-trap}
+
+Follow the guidelines under [How to Meet Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
+
+#### More information - No Keyboard Trap (2.1.2) {#more-information-no-keyboard-trap}
+
+* [Understanding Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
+* [How to Meet Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
 
 ### Pause, Stop, Hide (2.2.2)  {#pause-stop-hide}
 
