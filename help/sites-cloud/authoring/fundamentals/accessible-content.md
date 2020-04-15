@@ -19,7 +19,7 @@ The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG
 >* Configuring the Rich Text Editor for producing accessible content
 
 <!-- 
->* See our [Quick Guide to WCAG 2.1](/help/managing/qg-wcag.md) for further details
+>* See our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md) for further details
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
 
@@ -599,6 +599,12 @@ If images of text must be used, use CSS to replace the images of text with equiv
 
 [Principle 2: Operable - User interface components and navigation must be operable.](https://www.w3.org/TR/WCAG/#operable)
 
+### Keyboard Accessible (2.1) {#keyboard-accessible}
+
+[Guideline 2.1 Keyboard Accessible: Make all functionality available from a keyboard.](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+
+This deals with ensuring that users can access all functionality using a keyboard.
+
 ### Keyboard (2.1.1)  {#keyboard}
 
 * Success Criterion 2.1.1
@@ -638,6 +644,12 @@ Follow the guidelines under [How to Meet Success Criteria 2.1.2](https://www.w3.
 
 * [Understanding Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [How to Meet Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
+
+### Enough Time (2.2) {#enough-time}
+
+[Guideline 2.2 Enough Time: Provide users enough time to read and use content.](https://www.w3.org/TR/WCAG/#enough-time)
+
+This deals with ensuring that users have enough time to read and take action.
 
 ### Timing Adjustable (2.2.1)  {#timing-adjustable}
 
@@ -721,6 +733,12 @@ You should take steps to make sure the following techniques are applied:
 
 * [Understanding Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
 * [How to meet Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
+
+### Navigable (2.4) {#navigable}
+
+[Guideline 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.](https://www.w3.org/TR/WCAG/#navigable)
+
+This deals with ensuring the content is easy and straightforward for users to navigate.
 
 ### Bypass Blocks (2.4.1)  {#bypass-blocks}
  
@@ -997,6 +1015,12 @@ To add the span element, with an appropriate language, you can manually edit you
 * [Understanding Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
 * [How to meet Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts)
 
+### Predictable (3.2) {#predictable}
+
+[Guideline 3.2 Predictable: Make Web pages appear and operate in predictable ways.](https://www.w3.org/TR/WCAG/#predictable)
+
+This deals with ensuring the web pages are consistent in how they look and operate.
+
 ### On Focus (3.2.1)  {#on-focus}
  
 * Success Criterion 3.2.1
@@ -1224,6 +1248,16 @@ Follow the guidelines under [How to Meet Success Criteria 3.3.4](https://www.w3.
  
 * [Understanding Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
 * [How to Meet Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
+
+## Principle 4: Rebust {#principle-robust}
+
+[Principle 4: Robust - Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.](https://www.w3.org/TR/WCAG/#robust)
+
+### Compatible (4.1) {#compatible}
+
+[Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.](https://www.w3.org/TR/WCAG/#compatible)
+
+Maximize compatibility with current and future user agents, including assistive technologies.
 
 ### Parsing (4.1.1)  {#parsing}
  
