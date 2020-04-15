@@ -128,7 +128,7 @@ Specific types of non-text content that require text alternatives might include:
 
 This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be pre-recorded or a live stream.
 
-### Audio-only and Video-only (Pre-recorded) (1.2.1) {#audio-only-and-video-only-pre-recorded}
+### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
 * Success Criterion 1.2.1
 * Level A
@@ -136,7 +136,7 @@ This deals with web content that is *time-based*. This covers content that the u
   * Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.
   * Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.
 
-#### Purpose - Audio-only and Video-only (Pre-recorded) (1.2.1) {#purpose-audio-only-and-video-only-pre-recorded}
+#### Purpose - Audio-only and Video-only (Prerecorded) (1.2.1) {#purpose-audio-only-and-video-only-prerecorded}
 
 Accessibility problems for video and audio may be experienced by:
 
@@ -148,7 +148,7 @@ Video or audio may also be unavailable to people using browsers or devices that 
 
 Providing this information in a different format, such as text (or audio for video without audio) can make it accessible for people unable to access the original content.
 
-#### How to Meet - Audio-only and Video-only (Pre-recorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-pre-recorded}
+#### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * If the content is pre-recorded audio with no video (such as a podcast):
   * Provide a link immediately before or after the content to a text-transcript of the audio content. The transcript should be an HTML page with a text equivalent of all spoken and important non-spoken content, plus an indication of who is speaking, a description of the setting, vocal expressions and a description of any other significant audio.
@@ -166,18 +166,18 @@ Inserting multimedia, specifically Flash content, into your AEM web pages is sim
 >
 >When you use multimedia with informational content, you must also create links to alternatives. For example, to include a text transcript, create an HTML page to display the transcript and then add a link next to or underneath the audio content.
 
-#### More Information - Audio-only and Video-only (Pre-recorded) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
+#### More Information - Audio-only and Video-only (Prerecorded) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
 * [Understanding Success Criteria 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
 * [How to Meet Success Criteria 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
 
-### Captions (Pre-Recorded) (1.2.2) {#captions-pre-recorded}
+### Captions (Prerecorded) (1.2.2) {#captions-prerecorded}
 
 * Success Criterion 1.2.2
 * Level A
 * Captions (Prerecorded): Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
 
-#### Purpose - Captions (Pre-Recorded) (1.2.2) {#purpose-captions-pre-recorded}
+#### Purpose - Captions (Prerecorded) (1.2.2) {#purpose-captions-prerecorded}
 
 People who are deaf or hard of hearing will be unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
 
@@ -185,7 +185,7 @@ People who are deaf or hard of hearing will be unable or have great difficulty a
 >
 >Captions are not required where suitable text or non-text equivalents (that provide directly equivalent information) are available on the same page as the video or animation.
 
-#### How to Meet - Captions (Pre-Recorded) (1.2.2) {#how-to-meet-captions-pre-recorded}
+#### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
 Captions can be either:
 
@@ -198,7 +198,7 @@ For closed captions, you will need to create and provide a synchronized caption 
 
 If you must use open captions, embed the text into the video track. This can be achieved using video editing applications that allow the overlaying of titles onto the video.
 
-#### More Information - Captions (Pre-Recorded) (1.2.2) {#more-information-captions-pre-recorded}
+#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
 
 * [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
 * [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
@@ -208,17 +208,17 @@ If you must use open captions, embed the text into the video track. This can be 
 * [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 -->
 
-### Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#audio-description-or-media-alternative-pre-recorded}
+### Audio Description or Media Alternative (Prerecorded) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
 * Success Criterion 1.2.3
 * Level A
 * Audio Description or Media Alternative (Prerecorded): An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
 
-#### Purpose - Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#purpose-audio-description-or-media-alternative-pre-recorded}
+#### Purpose - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
 
 People who are blind or visually impaired will experience accessibility barriers if the information in a video or animation is only provided visually, or if the soundtrack does not provide sufficient information to allow understanding of what is happening visually.
 
-#### How to Meet - Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-pre-recorded}
+#### How to Meet - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-prerecorded}
 
 There are two approaches that can be adopted to meet this success criterion. Either is acceptable:
 
@@ -232,7 +232,7 @@ There are two approaches that can be adopted to meet this success criterion. Eit
 
 Exact details of how to create audio-described video are beyond the scope of this guide. Creating videos and audio descriptions can be time consuming, but other Adobe products can help achieve these tasks. If you create content in Adobe Flash Professional, you should also create a script to prompt the user to download the appropriate plug-in, and provide a text alternative through the `<noscript>` element.
 
-#### More Information - Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
+#### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
 * [Understanding Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
 * [How to Meet Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
@@ -250,7 +250,7 @@ This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-r
 
 #### How to Meet - Captions (Live) (1.2.4) {#how-to-meet-captions-live}
 
-Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
+Follow the guidance provided for [Captions (Prerecorded)](#captions-prerecorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
 
 Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
 
@@ -265,21 +265,21 @@ Detailed instructions are beyond the scope of this document, but the following r
 * [Understanding Success Criteria 1.2.4](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [How to Meet Success Criteria 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### Audio Description (Pre-Recorded) (1.2.5)  {#audio-description-pre-recorded}
+### Audio Description (Prerecorded) (1.2.5)  {#audio-description-prerecorded}
 
 * Success Criterion 1.2.5
 * Level AA
 * Audio Description (Prerecorded): Audio description is provided for all prerecorded video content in synchronized media.
 
-#### Purpose - Audio Description (Pre-Recorded) (1.2.5) {#purpose-audio-description-pre-recorded}
+#### Purpose - Audio Description (Prerecorded) (1.2.5) {#purpose-audio-description-prerecorded}
 
-This success criterion is identical to [Audio Description or Media Alternative (Pre-Recorded)](#audio-description-or-media-alternative-pre-recorded), except that authors must provide a much more detailed audio description to conform to Level AA.
+This success criterion is identical to [Audio Description or Media Alternative (Prerecorded)](#audio-description-or-media-alternative-prerecorded), except that authors must provide a much more detailed audio description to conform to Level AA.
 
-#### How to Meet - Audio Description (Pre-Recorded) (1.2.5) {#how-to-meet-audio-description-pre-recorded}
+#### How to Meet - Audio Description (Prerecorded) (1.2.5) {#how-to-meet-audio-description-prerecorded}
 
-Follow the guidance provided for [Audio Description or Media Alternative (Pre-Recorded)](#audio-description-or-media-alternative-pre-recorded).
+Follow the guidance provided for [Audio Description or Media Alternative (Prerecorded)](#audio-description-or-media-alternative-prerecorded).
 
-#### More Information - Audio Description (Pre-Recorded) (1.2.5) {#more-information-audio-description-pre-recorded}
+#### More Information - Audio Description (Prerecorded) (1.2.5) {#more-information-audio-description-prerecorded}
 
 * [Understanding Success Criteria 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [How to Meet Success Criteria 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
