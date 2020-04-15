@@ -1041,9 +1041,86 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.2](https://www.w3.
 * [Understanding Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 * [How to Meet Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
+### Consistent Navigation (3.2.3)  {#consistent-navigation}
+ 
+* Success Criterion 3.2.3
+* Level AA
+* Consistent Navigation: Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.
+ 
+#### Purpose - Consistent Navigation (3.2.3) {#purpose-consistent-navigation}
+
+The intent of this Success Criterion is to encourage the use of consistent presentation and layout for users who interact with repeated content within a set of Web pages and need to locate specific information or functionality more than once. Individuals with low vision who use screen magnification to display a small portion of the screen at a time often use visual cues and page boundaries to quickly locate repeated content. Presenting repeated content in the same order is also important for visual users who use spatial memory or visual cues within the design to locate repeated content.
+
+It is important to note that the use of the phrase "same order" in this section is not meant to imply that subnavigation menus cannot be used or that blocks of secondary navigation or page structure cannot be used. Instead, this Success Criterion is intended to assist users who interact with repeated content across Web pages to be able to predict the location of the content they are looking for and find it more quickly when they encounter it again.
+
+Users may initiate a change in the order by using adaptive user agents or by setting preferences so that the information is presented in a way that is most useful to them.
+
+#### How to Meet - Consistent Navigation (3.2.3) {#how-to-meet-consistent-navigation}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
+ 
+#### More information - Consistent Navigation (3.2.3) {#more-information-consistent-navigation}
+ 
+* [Understanding Success Criteria 3.2.3](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
+* [How to Meet Success Criteria 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
+
+### Consistent Identification (3.2.4)  {#consistent-identification}
+ 
+* Success Criterion 3.2.4
+* Level A
+* Consistent Identification: Components that have the same functionality within a set of Web pages are identified consistently.
+ 
+#### Purpose - Consistent Identification (3.2.4) {#purpose-consistent-identification}
+
+The intent of this Success Criterion is to ensure consistent identification of functional components that appear repeatedly within a set of Web pages. A strategy that people who use screen readers use when operating a Web site is to rely heavily on their familiarity with functions that may appear on different Web pages. If identical functions have different labels (or, more generally, a different accessible name) on different Web pages, the site will be considerably more difficult to use. It may also be confusing and increase the cognitive load for people with cognitive limitations. Therefore, consistent labeling will help.
+
+This consistency extends to the text alternatives. If icons or other non-text items have the same functionality, then their text alternatives should be consistent as well.
+
+If there are two components on a web page that both have the same functionality as a component on another page in a set of web pages, then all 3 must be consistent. Hence the two on the same page will be consistent.
+
+While it is desirable and best practice always to be consistent within a single web page, 3.2.4 only addresses consistency within a set of web pages where something is repeated on more than one page in the set.
+
+#### How to Meet - Consistent Identification (3.2.4) {#how-to-meet-consistent-identification}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification).
+ 
+#### More information - Consistent Identification (3.2.4) {#more-information-consistent-identification}
+ 
+* [Understanding Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
+* [How to Meet Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)
+
 ### Help Users Avoid and Correct Mistakes (3.3) {#help-users-avoid-and-correct-mistakes}
 
 [Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.](https://www.w3.org/TR/WCAG/#input-assistance)
+
+### Error Identification (3.3.1)  {#error-identification}
+ 
+* Success Criterion 3.3.1
+* Level A
+* Error Identification:
+ 
+#### Purpose - Error Identification (3.3.1) {#purpose-error-identification}
+
+The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG 2.0, an "input error" is information provided by the user that is not accepted. This includes:
+
+information that is required by the web page but omitted by the user, or information that is provided by the user but that falls outside the required data format or allowed values.
+For example:
+
+* the user fails to enter the proper abbreviation in to state, province, region, etc. field;
+* the user enters a state abbreviation that is not a valid state;
+* the user enters a non existent zip or postal code;
+* the user enters a birth date 2 years in the future;
+* the user enters alphabetic characters or parentheses into their phone number field that only accepts numbers;
+* the user enters a bid that is below the previous bid or the minimum bid increment.
+
+#### How to Meet - Error Identification (3.3.1) {#how-to-meet-error-identification}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification).
+ 
+#### More information - Error Identification (3.3.1) {#more-information-error-identification}
+ 
+* [Understanding Success Criteria 3.3.1](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html)
+* [How to Meet Success Criteria 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)
 
 ### Labels or Instructions (3.3.2) {#labels-or-instructions}
 
@@ -1094,3 +1171,102 @@ In simple forms with very limited functionality, appropriately labelling a `Subm
 
 * [Understanding Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [How to meet Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
+
+### Error Suggestion (3.3.3)  {#error-suggestion}
+ 
+* Success Criterion 3.3.3
+* Level AA
+* Keyboard: If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
+ 
+#### Purpose - Error Suggestion (3.3.3) {#purpose-error-suggestion}
+
+The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG 2.0 definition of "input error" says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
+
+Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. In the case of an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
+
+The content author may provide the description of the error, or the user agent may provide the description of the error based on technology-specific, programmatically determined information.
+
+#### How to Meet - Error Suggestion (3.3.3) {#how-to-meet-error-suggestion}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion).
+ 
+#### More information - Error Suggestion (3.3.3) {#more-information-error-suggestion}
+ 
+* [Understanding Success Criteria 3.3.3](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
+* [How to Meet Success Criteria 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
+
+### Error Prevention (Legal, Financial, Data) (3.3.4)  {#error-prevention-legal-financial-data}
+ 
+* Success Criterion 3.3.4
+* Level AA
+* Error Prevention (Legal, Financial, Data): For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
+
+* Reversible
+  Submissions are reversible.
+* Checked
+  Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+* Confirmed
+  A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+ 
+#### Purpose - Error Prevention (Legal, Financial, Data) (3.3.4) {#purpose-error-prevention-legal-financial-data}
+
+The intent of this Success Criterion is to help users with disabilities avoid serious consequences as the result of a mistake when performing an action that cannot be reversed. For example, purchasing non-refundable airline tickets or submitting an order to purchase stock in a brokerage account are financial transactions with serious consequences. If a user has made a mistake on the date of air travel, he or she could end up with a ticket for the wrong day that cannot be exchanged. If the user made a mistake on the number of stock shares to be purchased, he or she could end up purchasing more stock than intended. Both of these types of mistakes involve transactions that take place immediately and cannot be altered afterwards, and can be very costly. Likewise, it may be an unrecoverable error if users unintentionally modify or delete data stored in a database that they later need to access, such as their entire travel profile in a travel services web site. When referring to modification or deletion of 'user controllable' data, the intent is to prevent mass loss of data such as deleting a file or record. It is not the intent to require a confirmation for each save command or the simple creation or editing of documents, records or other data.
+
+Users with disabilities may be more likely to make mistakes. People with reading disabilities may transpose numbers and letters, and those with motor disabilities may hit keys by mistake. Providing the ability to reverse actions allows users to correct a mistake that could result in serious consequences. Providing the ability to review and correct information gives the user an opportunity to detect a mistake before taking an action that has serious consequences.
+
+User-controllable data is user-viewable data that the user can change and/or delete through an intentional action. Examples of the user controlling such data would be updating the phone number and address for the user's account, or deleting a record of past invoices from a website. It does not refer such things as internet logs and search engine monitoring data that the user can't view or interact with directly.
+
+#### How to Meet - Error Prevention (Legal, Financial, Data) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
+ 
+#### More information - Error Prevention (Legal, Financial, Data) (3.3.4) {#more-information-error-prevention-legal-financial-data}
+ 
+* [Understanding Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
+* [How to Meet Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
+
+### Parsing (4.1.1)  {#parsing}
+ 
+* Success Criterion 4.1.1
+* Level A
+* Parsing: In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.
+ 
+#### Purpose - Parsing (4.1.1) {#purpose-parsing}
+
+The intent of this Success Criterion is to ensure that user agents, including assistive technologies, can accurately interpret and parse content. If the content cannot be parsed into a data structure, then different user agents may present it differently or be completely unable to parse it. Some user agents use "repair techniques" to render poorly coded content.
+
+Since repair techniques vary among user agents, authors cannot assume that content will be accurately parsed into a data structure or that it will be rendered correctly by specialized user agents, including assistive technologies, unless the content is created according to the rules defined in the formal grammar for that technology. In markup languages, errors in element and attribute syntax and failure to provide properly nested start/end tags lead to errors that prevent user agents from parsing the content reliably. Therefore, the Success Criterion requires that the content can be parsed using only the rules of the formal grammar.
+
+#### How to Meet - Parsing (4.1.1) {#how-to-meet-parsing}
+ 
+Follow the guidelines under [How to Meet Success Criteria 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
+ 
+#### More information - Parsing (4.1.1) {#more-information-parsing}
+ 
+* [Understanding Success Criteria 4.1.1](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
+* [How to Meet Success Criteria 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
+
+### Name, Role, Value (4.1.2)  {#name-role-value}
+ 
+* Success Criterion 4.1.2
+* Level A
+* Name, Role, Value: For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+ 
+#### Purpose - Name, Role, Value (4.1.2) {#purpose-ame-role-value}
+
+The intent of this Success Criterion is to ensure that Assistive Technologies (AT) can gather information about, activate(or set) and keep up to date on the status of user interface controls in the content.
+
+When standard controls from accessible technologies are used, this process is straightforward. If the user interface elements are used according to specification the conditions of this provision will be met. (See examples of Success Criterion 4.1.2 below)
+
+If custom controls are created, however, or interface elements are programmed (in code or script) to have a different role and/or function than usual, then additional measures need to be taken to ensure that the controls provide important information to assistive technologies and allow themselves to be controlled by assistive technologies.
+
+A particularly important state of a user interface control is whether or not it has focus. The focus state of a control can be programmatically determined, and notifications about change of focus are sent to user agents and assistive technology. Other examples of user interface control state are whether or not a checkbox or radio button has been selected, or whether or not a collapsible tree or list node is expanded or collapsed.
+
+#### How to Meet - Name, Role, Value (4.1.2) {#how-to-meet-ame-role-value}
+ 
+Follow the guidelines under [How to Meet Success Criteria 4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value).
+ 
+#### More information - Name, Role, Value (4.1.2 {#more-information-ame-role-value}
+ 
+* [Understanding Success Criteria 4.1.2](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
+* [How to Meet Success Criteria 4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)
