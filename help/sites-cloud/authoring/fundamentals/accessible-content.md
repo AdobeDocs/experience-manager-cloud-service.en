@@ -722,6 +722,25 @@ You should take steps to make sure the following techniques are applied:
 * [Understanding Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
 * [How to meet Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
 
+### Bypass Blocks (2.4.1)  {#bypass-blocks}
+ 
+* Success Criterion 2.4.1
+* Level A
+* Bypass Blocks: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.
+ 
+#### Purpose - Bypass Blocks (2.4.1) {#purpose-bypass-blocks}
+
+The intent of this Success Criterion is to allow people who navigate sequentially through content more direct access to the primary content of the Web page. Web pages and applications often have content that appears on other pages or screens. Examples of repeated blocks of content include but are not limited to navigation links, heading graphics, and advertising frames. Small repeated sections such as individual words, phrases or single links are not considered blocks for the purposes of this provision.
+
+#### How to Meet - Bypass Blocks (2.4.1) {#how-to-meet-bypass-blocks}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
+ 
+#### More information - Bypass Blocks (2.4.1) {#more-information-bypass-blocks}
+ 
+* [Understanding Success Criteria 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
+* [How to Meet Success Criteria 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
+
 ### Page Titled (2.4.2)  {#page-titled}
 
 * Success Criterion 2.4.2
@@ -742,6 +761,25 @@ You can also edit the page title when editing a page, which is accessible by **P
 
 * [Understanding Success Criterion 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
 * [How to meet Success Criterion 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+
+### Focus Order (2.4.3)  {#focus-order}
+ 
+* Success Criterion 2.4.3
+* Level A
+* Focus Order:
+ 
+#### Purpose - Focus Order (2.4.3) {#purpose-focus-order}
+
+The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, moving through components in a table one row at a time or one column at a time both reflect the logical relationships in the content. Either order may satisfy this Success Criterion.
+
+#### How to Meet - Focus Order (2.4.3) {#how-to-meet-focus-order}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
+ 
+#### More information - Focus Order (2.4.3) {#more-information-focus-order}
+ 
+* [Understanding Success Criteria 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
+* [How to Meet Success Criteria 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
 ### Link Purpose (In Context) (2.4.4)  {#link-purpose-in-context}
 
@@ -809,6 +847,69 @@ Alternatively, scripts can be used so that a minimal amount of text is provided 
 <!--
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 --> 
+
+### Multiple Ways (2.4.5)  {#multiple-ways}
+ 
+* Success Criterion 2.4.5
+* Level AA
+* Multiple Ways: More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+ 
+#### Purpose - Multiple Ways (2.4.5) {#purpose-multiple-ways}
+
+The intent of this Success Criterion is to make it possible for users to locate content in a manner that best meets their needs. Users may find one technique easier or more comprehensible to use than another.
+
+Even small sites should provide users some means of orientation. For a three or four page site, with all pages linked from the home page, it may be sufficient simply to provide links from and to the home page where the links on the home page can also serve as a site map.
+
+#### How to Meet - Multiple Ways (2.4.5) {#how-to-meet-multiple-ways}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
+ 
+#### More information - Multiple Ways (2.4.5) {#more-information-multiple-ways}
+ 
+* [Understanding Success Criteria 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
+* [How to Meet Success Criteria 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+
+### Headings and Labels (2.4.6)  {#headings-and-labels}
+ 
+* Success Criterion 2.4.6
+* Level AA
+* headings-and-labels: Headings and labels describe topic or purpose.
+ 
+#### Purpose - Headings and Labels (2.4.6) {#purpose-headings-and-labels}
+
+The intent of this Success Criterion is to help users understand what information is contained in Web pages and how that information is organized. When headings are clear and descriptive, users can find the information they seek more easily, and they can understand the relationships between different parts of the content more easily. Descriptive labels help users identify specific components within the content.
+
+#### How to Meet - Headings and Labels (2.4.6) {#how-to-meet-headings-and-labels}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
+ 
+#### More information - Headings and Labels (2.4.6) {#more-information-headings-and-labels}
+ 
+* [Understanding Success Criteria 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
+* [How to Meet Success Criteria 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+
+### Focus Visible (2.4.7)  {#focus-visible}
+ 
+* Success Criterion 2.4.7
+* Level AA
+* Focus Visible: Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.
+ 
+#### Purpose - Focus Visible (2.4.7) {#purpose-focus-visible}
+
+The purpose of this success criterion is to help a person know which element has the keyboard focus.
+
+It must be possible for a person to know which element among multiple elements has the keyboard focus. If there is only one keyboard actionable control on the screen, the success criterion would be met because the visual design presents only one keyboard actionable item.
+
+Where the success criterion says “mode of operation”, this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
+
+#### How to Meet - Focus Visible (2.4.7) {#how-to-meet-focus-visible}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
+ 
+#### More information - Focus Visible (2.4.7) {#more-information-focus-visible}
+ 
+* [Understanding Success Criteria 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
+* [How to Meet Success Criteria 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)
 
 ## Principle 3: Understandable {#principle-understandable}
 
@@ -895,6 +996,50 @@ To add the span element, with an appropriate language, you can manually edit you
 
 * [Understanding Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
 * [How to meet Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts)
+
+### On Focus (3.2.1)  {#on-focus}
+ 
+* Success Criterion 3.2.1
+* Level A
+* On Focus: When any user interface component receives focus, it does not initiate a change of context.
+ 
+#### Purpose - On Focus (3.2.1) {#purpose-on-focus}
+
+The intent of this Success Criterion is to ensure that functionality is predictable as visitors navigate their way through a document. Any component that is able to trigger an event when it receives focus must not change the context. Examples of changing context when a component receives focus include, but are not limited to:
+
+* forms submitted automatically when a component receives focus;
+* new windows launched when a component receives focus;
+* focus is changed to another component when that component receives focus;
+
+Focus may be moved to a control either via the keyboard (e.g. tabbing to a control) or the mouse (e.g. clicking on a text field). Moving the mouse over a control does not move the focus unless scripting implements this behavior. Note that for some types of controls, clicking on a control may also activate the control (e.g. button), which may, in turn, initiate a change in context.
+
+#### How to Meet - On Focus (3.2.1) {#how-to-meet-on-focus}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus).
+ 
+#### More information - On Focus (3.2.1) {#more-information-on-focus}
+ 
+* [Understanding Success Criteria 3.2.1](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
+* [How to Meet Success Criteria 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
+
+### On Input (3.2.2)  {#on-input}
+ 
+* Success Criterion 3.2.2
+* Level A
+* On Input: Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.
+ 
+#### Purpose - On Input (3.2.2) {#purpose-on-input}
+
+The intent of this Success Criterion is to ensure that entering data or selecting a form control has predictable effects. Changing the setting of any user interface component is changing some aspect in the control that will persist when the user is no longer interacting with it. So checking a checkbox, entering text into a text field, or changing the selected option in a list control changes its setting, but activating a link or a button does not. Changes in context can confuse users who do not easily perceive the change or are easily distracted by changes. Changes of context are appropriate only when it is clear that such a change will happen in response to the user's action.
+
+#### How to Meet - On Input (3.2.2) {#how-to-meet-on-input}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
+ 
+#### More information - On Input (3.2.2) {#more-information-on-input}
+ 
+* [Understanding Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
+* [How to Meet Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
 ### Help Users Avoid and Correct Mistakes (3.3) {#help-users-avoid-and-correct-mistakes}
 
