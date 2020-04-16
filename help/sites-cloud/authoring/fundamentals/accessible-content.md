@@ -5,25 +5,24 @@ description: Help make web content accessible to, and usable by, persons with di
 
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
-The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
+The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), drawn up by [a working group of the World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 
->[!NOTE]
->
->See the list of [New Features in WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1).
+As an introduction, the consortium provides a series of sections and supporting documents:
 
->[!NOTE]
->
->See also:
->
->* our Quick Guide to WCAG 2.1 for further details
->* Configuring the Rich Text Editor for producing accessible content
+* [New Features in WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
+* [How to Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Understanding WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/)
+* [Techniques for WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/)
+* [The WCAG Documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+
+In addition, see:
+* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md) for further details
 
 <!-- 
->* See our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md) for further details
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
 
-These are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
+The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
 
 * **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
 * **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches an enhanced level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
@@ -704,9 +703,9 @@ Depending on the nature of the content, you can apply one or more of the followi
 * [Understanding Success Criterion 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [How to meet Success Criterion 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
-### Seizures (2.3) {#seizures}
+### Seizures and Physical Reactions (2.3) {#seizures-and-physcial-reactions}
 
-[Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
+[Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures or physical reactions.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
 ### Three Flashes or Below Threshold (2.3.1) {#three-flashes-or-below-threshold}
 
@@ -784,7 +783,7 @@ You can also edit the page title when editing a page, which is accessible by **P
  
 * Success Criterion 2.4.3
 * Level A
-* Focus Order:
+* Focus Order: If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.
  
 #### Purpose - Focus Order (2.4.3) {#purpose-focus-order}
 
@@ -891,7 +890,7 @@ Follow the guidelines under [How to Meet Success Criteria 2.4.5](https://www.w3.
  
 * Success Criterion 2.4.6
 * Level AA
-* headings-and-labels: Headings and labels describe topic or purpose.
+* Headings and Labels: Headings and labels describe topic or purpose.
  
 #### Purpose - Headings and Labels (2.4.6) {#purpose-headings-and-labels}
 
@@ -1113,7 +1112,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.
 * [Understanding Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
 * [How to Meet Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)
 
-### Help Users Avoid and Correct Mistakes (3.3) {#help-users-avoid-and-correct-mistakes}
+### Input Assistance (3.3) {#input-assistance}
 
 [Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.](https://www.w3.org/TR/WCAG/#input-assistance)
 
@@ -1121,7 +1120,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.
  
 * Success Criterion 3.3.1
 * Level A
-* Error Identification:
+* Error Identification: If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.
  
 #### Purpose - Error Identification (3.3.1) {#purpose-error-identification}
 
@@ -1225,12 +1224,12 @@ Follow the guidelines under [How to Meet Success Criteria 3.3.3](https://www.w3.
 * Level AA
 * Error Prevention (Legal, Financial, Data): For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
 
-* Reversible
-  Submissions are reversible.
-* Checked
-  Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
-* Confirmed
-  A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+  * Reversible
+    Submissions are reversible.
+  * Checked
+    Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+  * Confirmed
+    A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
  
 #### Purpose - Error Prevention (Legal, Financial, Data) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
