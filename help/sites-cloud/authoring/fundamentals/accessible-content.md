@@ -1248,7 +1248,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.3.4](https://www.w3.
 * [Understanding Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
 * [How to Meet Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
 
-## Principle 4: Rebust {#principle-robust}
+## Principle 4: Robust {#principle-robust}
 
 [Principle 4: Robust - Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.](https://www.w3.org/TR/WCAG/#robust)
 
