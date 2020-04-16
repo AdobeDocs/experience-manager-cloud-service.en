@@ -13,7 +13,7 @@ description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service
 
 ## Key Release Information {#key-articles}
 
-* [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
+* [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [What is New](what-is-new.md)
 * [Notable Changes](aem-cloud-changes.md)
 * [Known Issues](known-issues.md)
