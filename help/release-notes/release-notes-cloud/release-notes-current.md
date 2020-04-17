@@ -16,7 +16,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.4.0 is Ap
 Know about new features, enhancements, and bug fixes for [!DNL Experience Manager Assets] and [!DNL Dynamic Media] in the current release.
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) supports the asset distribution use cases for Experience Manager Assets. [!DNL Brand Portal] aids organizations to meet their marketing needs by securely distributing approved brand and product assets to external agencies, partners, internal teams, and resellers for download.
-  * [!DNL Brand Portal] configuration is completed through [!DNL Adobe I/O] console.
+  * [!DNL Brand Portal] configuration is completed through [!DNL Adobe I/O] console. See [configure Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
   * Asset sourcing in [!DNL Brand Portal] is not yet supported with [!DNL Experience Manager] as a Cloud Service.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 works with [!DNL Experience Manager] as a Cloud Service. [!DNL Adobe Asset Link] streamlines collaboration between creatives and marketers in the content creation process by connecting [!DNL Experience Manager Assets] with [!DNL Creative Cloud] desktop apps [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] via in-app [!DNL Asset Link] panel.
@@ -25,7 +25,13 @@ Know about new features, enhancements, and bug fixes for [!DNL Experience Manage
 
 * Users can configure [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) to auto-start in the folder [!UICONTROL Properties] user interface for the specific folder hierarchies.
   * The folder [!UICONTROL Properties] user interface is simplified, with new [!UICONTROL Asset Processing] tab containing metadata profile, processing profile, and the new auto-start workflow configuration.
-  * Asset reprocessing dialog allows to select a specific processing profile and decide to reprocess in sub-folders.
+
+    ![Processing profiles can easily be applied to folders and all assets uploaded to folders are processing using these profiles](/help/assets/assets/asset-processing-folder-properties.png)
+
+  * Asset reprocessing option allows to select a specific processing profile to reprocess user-selected assets in sub-folders.
+
+    ![Reprocess selected assets using a specific processing profile](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
   * [!DNL Dynamic Media]: Added selective publish configuration so that assets are auto-published for secure preview only. Also, the assets can be explicitly published to Experience Manager without publishing to DMS7 for delivery in the public domain.
 
 ### Bug Fixes {#assets-bug-fixes}
