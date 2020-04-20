@@ -27,6 +27,7 @@ While [AEM Core Components](https://docs.adobe.com/content/help/en/experience-ma
 This is when the Assets REST API can be used. It allows developers to access assets (for example, images and content fragments) directly, without the need to first embed them in a page, and deliver their content in serialized JSON format. 
 
 >[!NOTE]
+>
 >It is not possible to customize JSON output from the Assets REST API. 
 
 The Assets REST API also allows developers to modify content - by creating new, updating, or deleting existing assets, content fragments and folders.
