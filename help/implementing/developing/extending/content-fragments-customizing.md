@@ -291,11 +291,9 @@ It should be noted that:
 
 * Tasks that might require additional effort:
 
-  * Creating/removing new elements will not update the data structure of simple fragments (based on the **Simple Fragment** template).
-
   * Create new variations from `ContentFragment` to update the data structure.
 
-  * Removing existing variations will not update the data structure.
+  * Removing existing variations through an element, using `ContentElement.removeVariation()`, will not update the global data structures assigned to the variation. To ensure these data structures are kept in sync, use `ContentFragment.removeVariation()` instead, which removes a variation globally.
 
 ## The Content Fragment Management API - Client-Side {#the-content-fragment-management-api-client-side}
 
@@ -313,84 +311,18 @@ See the following:
 
 ## Edit Sessions {#edit-sessions}
 
-An editing session is started when the user opens a content fragment in one of the editor pages. The editing session is finished when the user leaves the editor by selecting either **Save** or **Cancel**.
+>[!CAUTION]
+>
+>Please consider this background information. You are not supposed to change anything here (as it is marked as a *private area* in the repository), but it might help in some cases to understand how things work under the hood.
 
-### Requirements {#requirements}
+Editing a content fragment, which can span multiple views (= HTML pages), is atomic. As such atomic multi-view edit capabilities are not a typical AEM concept, content fragments use what is called an *editing session*.
 
-Requirements for controlling an editing session are:
+An editing session is started when the user opens a content fragment in the editor. The editing session is finished when the user leaves the editor by selecting either **Save** or **Cancel**.
 
-* Editing a content fragment, which can span multiple views (= HTML pages), should be atomic.
+Technically, all edits are done on *live* content, just as with all other AEM editing. When the editing session is started, a version of the current, unedited status is created. If a user cancels an edit, that version is restored. If the user clicks on **Save**, nothing specific is done, as all the editing was executed on *live* content, therefore all changes are persisted already. Also, clicking on **Save** will trigger some background processing (such as creating full text search information and/or handling mixed-media assets).
 
-* The editing should also be *transactional*; at the end of the edit session the changes must either be committed (saved) or rolled back (cancelled).
-
-* Edge cases should be handled properly; these include situations such as when the user leaving the page by entering a URL manually or using global navigation.
-
-* A periodic auto save (every x minutes) should be available to prevent data loss.
-
-* If a content fragment is edited by two users concurrently, they should not overwrite each other's changes.
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* Leaving a page
-
-  * If an editing session is present and the changes have not been persisted, a modal confirmation dialog is shown to notify the user of potentially lost content and allow them to stay on the page.
+There are some safety measures for edge cases; for example, if the user tries to leave the editor without saving or cancelling the editing session. Also, a periodic auto save is available to prevent data loss.
+Note that two users may edit the same content fragment concurrently, and therefore may overwrite each others changes. To prevent this, the content fragment needs to be locked by applying the DAM adminstration's *Checkout* action on the fragment.
 
 ## Examples {#examples}
 
