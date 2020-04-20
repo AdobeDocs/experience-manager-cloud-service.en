@@ -134,7 +134,7 @@ Any users and groups added under this product profile will be able to login to t
 
 ![Product Profile](/help/security/assets/ims8.png)
 
-### Logging into Adobe Experience Manager as a Cloud Service (#logging-in-to-aem)
+### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
 **Local Administrator Login**
 
@@ -149,6 +149,10 @@ AEM can continue to support local logins for Admin users. The login screen has a
 For other users, the IMS based login can be used once IMS is configured on the instance. The user will first click on the Sign in with Adobe button as shown below:
 
 ![IMS Login](/help/security/assets/ims10.png)
+
+
+>[!NOTE]
+> Any user created in IMS can be created using Adobe ID or Federated ID. If a user is setup using Adobe ID, they are authenticated using their Company's Identity Provider to login.
 
 They will then be redirected to the IMS login screen and will need to enter their credentials:
 
@@ -185,3 +189,54 @@ In AEM, the User Groups synced from IMS can be added as members to existing loca
 As shown below, the group **AEM-GRP_008** inherits the permissions and privileges of **DAM Users**, this is an effective way of managing Permissions for synced groups and is commonly used in the LDAP based Authentication method as well.
 
 ![ACL3](/help/security/assets/ims18.png)
+
+
+### Accessing Cloud Manager {#accessing-cloud-manager}
+
+To be able to access Cloud Manager or to AEM as a Cloud Service environments, you must be assigned to Profiles of the Cloud Manager Product.
+
+Cloud Manager Product has the following profiles:
+
+* Business Owner
+* Deployment Manager
+* Program Manager
+* Developer 
+* Integrations
+
+>[!NOTE]
+>Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+
+**Steps for Adding a User**
+
+1. Add a user to a particular profile either from an existing user's screen or from a new user screen. 
+
+1. Alternatively, you can also add a user from the **Overview** screen, as shown in the figure below.
+
+   ![ACL3](/help/security/assets/ims23.png)
+
+   >[!NOTE]
+   >You can assign more than one profile to a user as shown in the figure below.
+
+   ![ACL3](/help/security/assets/ims22.png)
+
+
+1. Once you have been added to the appropriate profile, you should be able to access the respective tenants in Cloud Manager via [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) using the top right corner from the user interface.
+
+
+### Accessing an Instance in AEM as a Cloud Service {#accessing-instance-cloud-service}
+
+>[!IMPORTANT]
+>The steps mentioned in the preceding section must have already been completed before you are granted access to an instance in AEM as a Cloud Service.
+
+In order to have access to an AEM instance within the **Admin Console**, you should see the Cloud Manager Program and the environments within the program in the product list on the **Admin Console**.
+
+For example, in the screenshot below, you will see two available environments namely *dev author* and a *publish*.
+
+![ACL3](/help/security/assets/ims19.png)
+
+To get access to AEM instances the user will need to be added to a group of the appropriate Cloud Service Product.
+
+Every author instance will have an AEM Administrators and AEM Users Profile and every publish instance will have an AEM Users Profile. You can add other profiles as needed. 
+
+To get admin level access to the AEM instance, add the user to the AEM Administrators Profile for that particular Product.  
+
