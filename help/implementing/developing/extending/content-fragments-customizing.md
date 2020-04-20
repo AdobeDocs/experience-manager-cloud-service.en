@@ -324,69 +324,6 @@ Technically, all edits are done on *live* content, just as with all other AEM ed
 There are some safety measures for edge cases; for example, if the user tries to leave the editor without saving or cancelling the editing session. Also, a periodic auto save is available to prevent data loss.
 Note that two users may edit the same content fragment concurrently, and therefore may overwrite each others changes. To prevent this, the content fragment needs to be locked by applying the DAM adminstration's *Checkout* action on the fragment.
 
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* Leaving a page
-
-  * If an editing session is present and the changes have not been persisted, a modal confirmation dialog is shown to notify the user of potentially lost content and allow them to stay on the page.
-
 ## Examples {#examples}
 
 ### Example: Accessing an existing content fragment {#example-accessing-an-existing-content-fragment}
