@@ -14,7 +14,7 @@ This information is required when:
 * You need to implement your own Content Fragment-based component,
 * And need to make use of the advanced services.
 
-However, it is recommended to use the Core Components.
+It is recommended to use the Core Components.
 
 >[!CAUTION]
 >

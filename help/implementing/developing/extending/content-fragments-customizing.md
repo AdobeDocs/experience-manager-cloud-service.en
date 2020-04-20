@@ -37,7 +37,7 @@ Depending on the type of fragment, either models or the **Simple Fragment** temp
 
   >[!NOTE]
   >
-  >For you to display/render a Content Fragment, your account must have read permissions for the model.
+  >For you to display/render a Content Fragment, your account must have `read` permissions for the model.
 
   >[!CAUTION]
   >
