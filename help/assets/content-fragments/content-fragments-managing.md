@@ -20,7 +20,7 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 >[!NOTE]
 >
->See [Developing Content Fragments](/help/implementing/developing/extending/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
+>See [Developing Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md) for further information on templates; used for simple content fragments.
 
 ### Creating a Content Fragment {#creating-a-content-fragment}
 
