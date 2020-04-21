@@ -159,7 +159,7 @@ The content fragment assets are made up of the following parts (either directly 
   * For simple fragments:
 
     * The content is held in one (or more) multi-line text field(s), or element(s).
-    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see Content Fragment Templates). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+    * The elements are defined in the fragment template (cannot be defined when authoring the fragment). 
 
 * **Fragment Paragraphs**
 
@@ -263,7 +263,7 @@ To create, edit and use content fragments you also need:
 * **Fragment Template**
 
   * Required to [create a simple fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-  * Usually developed during project implementation; cannot be created when authoring. <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+  * Usually developed during project implementation; cannot be created when authoring. 
   * Defines the basics properties of a simple fragment (title, number of text elements, tag definitions).
   * Template definitions require a title and one text element; everything else is optional. The template defines a minimal scope of the fragment and default content if applicable. Authors can later extend a fragment beyond what is defined in the template.
 
