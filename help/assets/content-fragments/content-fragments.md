@@ -90,7 +90,7 @@ Content fragments can be either:
 
 * Simple fragments
   These have no predefined structure. They contain only text, and images.
-  These are based on the Simple Fragment template.
+  These are based on the **Simple Fragment** template.
 
 * Fragments that contain structured content
   These are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
@@ -159,7 +159,7 @@ The content fragment assets are made up of the following parts (either directly 
   * For simple fragments:
 
     * The content is held in one (or more) multi-line text field(s), or element(s).
-    * The elements are defined in the fragment template (cannot be defined when authoring the fragment). 
+    * The elements are defined in the **Simple Fragment** template. 
 
 * **Fragment Paragraphs**
 
@@ -196,7 +196,7 @@ The content fragment assets are made up of the following parts (either directly 
   * The individual assets within the collection are available to be used with the fragment in the page editor, when it is added to a page. This means that they are optional, depending on the requirements of the specific channel.
   * The assets are [associated to fragments via collections](/help/assets/content-fragments/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
 
-    * Collections can be associated to fragments via templates, as default content, or by authors during fragment authoring.
+    * Collections can be associated to fragments as default content, or by authors during fragment authoring.
     * [Assets (DAM) Collections](/help/assets/manage-collections.md) are the basis for the associated content of fragments.
   * Optionally you can also add the fragment itself to a collection to aid tracking.
 
@@ -229,7 +229,7 @@ The content fragment assets are made up of the following parts (either directly 
 
   * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
   * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
-  * Can be defined during fragment authoring or pre-defined in fragment templates.
+  * Can be defined during fragment authoring.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [synchronized](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
   * Can be [Summarized](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) to quickly truncate the text to a predefined length.
@@ -262,10 +262,8 @@ To create, edit and use content fragments you also need:
 
 * **Fragment Template**
 
-  * Required to [create a simple fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-  * Usually developed during project implementation; cannot be created when authoring. 
+  * The **Simple Fragment** template is required to [create a simple fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
   * Defines the basics properties of a simple fragment (title, number of text elements, tag definitions).
-  * Template definitions require a title and one text element; everything else is optional. The template defines a minimal scope of the fragment and default content if applicable. Authors can later extend a fragment beyond what is defined in the template.
 
 * **Content Fragment Component**
 
