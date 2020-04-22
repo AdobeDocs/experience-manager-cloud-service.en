@@ -89,12 +89,18 @@ Together with the JSON export capabilities of AEM core components, this structur
 Content fragments can be either:
 
 * Simple fragments
-  These have no predefined structure. They contain only text, and images.
-  These are based on the **Simple Fragment** template.
+
+  * These have no predefined structure. 
+
+  * They contain only text, and images.
+
+  * These are based on the **Simple Fragment** template.
 
 * Fragments that contain structured content
-  These are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
-  These can also be used to realize Content Services using the JSON Exporter.
+
+  * These are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+
+  * These can also be used to realize Content Services using the JSON Exporter.
 
 ## Content Type {#content-type}
 
