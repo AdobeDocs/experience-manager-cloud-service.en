@@ -87,19 +87,19 @@ The other pairs follow the standard configuration:
 
 * Does not link to a specific Writer so will create and use an implicit Writer with default configuration (daily log rotation).
 
-### AEM as a Cloud Service HTTP Request Logging {#request-logging}
+**AEM as a Cloud Service HTTP Request Logging**
 
 All access requests to AEM WCM and the repository are registered here.
 
 Example output:
 
-### AEM HTTP Request/Response Access logging {#access-logging}
+**AEM HTTP Request/Response Access logging**
 
 Each access request is registered here together with the response.
 
 Example output:
 
-### Apache Web Server / Dispatcher Logging {#dispatcher-logging}
+**Apache Web Server / Dispatcher Logging**
 
 This is a log for used for debugging Dispatcher issues. For more information, see [Debugging your Apache and Dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/).
 
