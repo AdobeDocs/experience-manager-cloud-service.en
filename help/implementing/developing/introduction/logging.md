@@ -93,7 +93,7 @@ All access requests to AEM WCM and the repository are registered here.
 
 Example output:
 
-**AEM HTTP Request/Response Access logging**
+**AEM HTTP Request/Response Access Logging**
 
 Each access request is registered here together with the response.
 
