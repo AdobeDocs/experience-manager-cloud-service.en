@@ -85,7 +85,7 @@ The other pairs follow the standard configuration:
 
     * Writes `Warning` messages to `../logs/error.log` for the service `org.apache.pdfbox`.
 
-* Does not link to a specific Writer so will create and use an implicit Writer with default configuration (daily log rotation).
+* Does not link to a specific Writer so will create and use an implicit Writer with default configuration.
 
 **AEM as a Cloud Service HTTP Request Logging**
 
@@ -93,7 +93,7 @@ All access requests to AEM WCM and the repository are registered here.
 
 Example output:
 
-**AEM HTTP Request/Response Access Logging**
+**AEM as a Cloud Service HTTP Request / Response Access Logging**
 
 Each access request is registered here together with the response.
 
@@ -180,7 +180,7 @@ These elements are linked by the following parameters for the appropriate elemen
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## Setting the Log Level {#setting-the-log-level}
+### Setting the Log Level {#setting-the-log-level}
 
 To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Since this is not instantaneous, be cautious about enabling verbose logs on production environments which receive a lot of traffic. In the future, it's possible that there will be mechanisms to more quickly change the log level.
 
@@ -188,7 +188,7 @@ To change the log levels for Cloud environments, the Sling Logging OSGI configur
 >
 > In order to perform the configuration changes listed below, you need to create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
-### Activating the DEBUG Log Level {#activating-the-debug-log-level}
+**Activating the DEBUG Log Level**
 
 >[!WARNING]
 >
