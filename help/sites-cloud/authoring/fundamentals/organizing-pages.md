@@ -260,18 +260,21 @@ You can copy a page and all of its sub-pages to a new location:
 
    And then the **Copy** page icon:
 
-   ![Copy button](/help/sites-cloud/authoring/assets/copy.png)
+   ![Copy](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >If you are in selection mode this is exited automatically as soon as the page is copied.
 
 1. Navigate to the location for the new copy of the page.
-1. Use the **Paste** page icon:
+1. The **Paste** icon is available with a drop down arrow directly to the right:
 
-   ![Paste button](/help/sites-cloud/authoring/assets/paste.png)
+   ![Paste](/help/sites-cloud/authoring/assets/paste.png)
+   
+   You can either:
 
-   A copy of the original page and any sub-pages will be created at this location.
+     1. Select the **Paste** page icon itself: A copy of the original page and any child-pages will be created at this location.
+     1. Select the drop down arrow to reveal the **Paste without children** option. A copy of the original page will be created at this location; child-pages will not be copied. 
 
    >[!NOTE]
    >
