@@ -113,7 +113,6 @@ With blue-green deployments, there is no downtime. However, for index management
 
 The following table shows 5 index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
-
 >[!NOTE]
 >
 > `<indexName>-custom-<customerVersionNumber>` is needed for AEM as a Cloud Service to mark this as a replacement for an existing index.
