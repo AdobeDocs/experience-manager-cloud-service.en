@@ -376,13 +376,18 @@ AEM offers you the functionality to update any internal links that refer to the 
    >
    >As a security precaution, **the Delete** page icon is not available as a quick action.
 
-1. A dialog will ask for confirmation, use:
+1. A dialog will ask for confirmation.
 
+   ![Delete dialog](/help/sites-cloud/authoring/assets/delete-page.png)
+
+    * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion will be created upon deletion.
+      * [Versions can be restored at a later date.](/help/sites-cloud/authoring/features/page-versions.md)
+      * Pages deleted without previous versions can not be restored.
     * **Cancel** to abort the action
     * **Delete** to confirm the action:
 
-        * If the page has no references, the page will be deleted.
-        * If the page has references, a message box will inform you that **One or more pages are referenced.** You can select **Force Delete** or **Cancel**.
+      * If the page has no references, the page will be deleted.
+      * If the page has references, a message box will inform you that **One or more pages are referenced.** You can select **Force Delete** or **Cancel**.
 
 >[!NOTE]
 >
