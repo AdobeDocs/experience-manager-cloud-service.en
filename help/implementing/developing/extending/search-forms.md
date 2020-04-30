@@ -692,11 +692,13 @@ The following example (to search according to the template used to create a page
 The following table lists the permissions required to perform edit, delete, and preview actions on search forms.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>Action</strong></td>
    <td><strong>Permissions</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Edit </td>
    <td>Read, Write permissions on the <code>/apps </code>node.</td>

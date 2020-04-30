@@ -14,11 +14,13 @@ These consoles can be accessed from the [Tools Panel of the Global Navigation](/
 >As the cards in the UI provide details about the purpose of each option, this table simply provides quick reference as to the location of features in the Tools panel.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Section</td>
    <td>Option</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>General</td>
    <td> </td>
