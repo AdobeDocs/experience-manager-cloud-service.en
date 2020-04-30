@@ -65,7 +65,7 @@ The recommended application deployment structure is as follows:
         + Groups
         + ACLs (permissions)
             + Any `rep:policy` for any path (mutable or immutable)
-+ The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to: <!-- GRANITE-29128 -->
++ The `ui.content` package, or Content Package, contains all content and configuration. Common elements of the `ui.content` package include, but are not limited to:
   + Context-aware configurations
     + `/conf`
   + Required, complex content structures (ie. Content build-out that is builds on and extends past Baseline content structures defined in Repo Init.
