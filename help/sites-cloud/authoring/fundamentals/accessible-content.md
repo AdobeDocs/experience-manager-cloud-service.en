@@ -5,7 +5,7 @@ description: Help make web content accessible to, and usable by, persons with di
 
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
-The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), drawn up by [a working group of the World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
+The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), drawn up by [a working group of the World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), consist of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 
 As an introduction, the consortium provides a series of sections and supporting documents:
 
