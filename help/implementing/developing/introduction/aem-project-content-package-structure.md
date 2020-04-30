@@ -65,15 +65,13 @@ The recommended application deployment structure is as follows:
         + Groups
         + ACLs (permissions)
             + Any `rep:policy` for any path (mutable or immutable)
-+ The `ui.content` package, or Content Package, contains all content and configuration. Common elements of the `ui.content` package include, but are not limited to:
++ The `ui.content` package, or Content Package, contains all content and configuration. The Content Package, contains everything not in the `ui.apps` package, or in other words, anything not in `/apps` or `/oak:index`. Common elements of the `ui.content` package include, but are not limited to:
   + Context-aware configurations
     + `/conf`
   + Required, complex content structures (ie. Content build-out that is builds on and extends past Baseline content structures defined in Repo Init.
     + `/content`, `/content/dam`, etc.
   + Governed tagging taxonomies
     + `/content/cq:tags`
-  + Oak indexes
-    + `/oak:index`
   + Etc legacy nodes
     + `/etc`
 + The `all` package is a container package that ONLY includes the `ui.apps` and `ui.content` packages as embeds. The `all` package must not have **any content** of its own, but rather delegate all deployment to the repository to its sub-packages.
