@@ -1,25 +1,28 @@
 ---
-title: Creating Accessible Content (WCAG 2.0 Conformance)
+title: Creating Accessible Content for Adobe Experience Manager as a Cloud Service (WCAG 2.1 Conformance)
 description: Help make web content accessible to, and usable by, persons with disabilities
 ---
 
-# Creating Accessible Content (WCAG 2.0 Conformance) {#creating-accessible-content-wcag-conformance}
+# Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
-WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
+The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), drawn up by [a working group of the World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 
->[!NOTE]
->
->See also:
->
->* our Quick Guide to WCAG 2.0 for further details
->* Configuring the Rich Text Editor for producing accessible content
+As an introduction, the consortium provides a series of sections and supporting documents:
+
+* [New Features in WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
+* [How to Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Understanding WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/)
+* [Techniques for WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/)
+* [The WCAG Documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+
+In addition, see:
+* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md) for further details
 
 <!-- 
->* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
 
-These are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
+The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
 
 * **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
 * **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches an enhanced level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
@@ -27,7 +30,7 @@ These are graded according to three conformance levels: Level A (lowest), Level 
 
 When creating your site, you should determine the overall level to which you would like your site to conform.
 
-The following section presents the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
+The following section presents the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
@@ -37,17 +40,17 @@ The following section presents the [WCAG 2.0 Guidelines](https://www.w3.org/TR/W
 >
 >In this document we are using:
 >
->* the short names for the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines).
->* the numbering used in the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) to aid cross-referencing with the WCAG website.
+>* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
 >
 
 ## Principle 1: Perceivable {#principle-perceivable}
 
-[Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.](https://www.w3.org/TR/WCAG20/#perceivable)
+[Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.](https://www.w3.org/TR/WCAG/#perceivable)
 
 ### Text Alternatives (1.1) {#text-alternatives}
 
-[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Non-text Content (1.1.1) {#non-text-content}
 
@@ -88,7 +91,9 @@ There are various forms of non-text content, so the value of the text alternativ
 * If the non-text content is contained in a button element and there is no text forming part of the same button, then the alternative text of the image must indicate the functionality of the button, not describe the image.
 * It is perfectly acceptable for an image to be given an empty (null) alternative text, but only if the image has no alternative text (for example, it is a purely decorative graphic) or if the equivalent text already exists in the page text.
 
+<!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
+-->
 
 Specific types of non-text content that require text alternatives might include:
 
@@ -108,18 +113,21 @@ Specific types of non-text content that require text alternatives might include:
 
 #### More Information - Non-text Content (1.1.1) {#more-information-non-text-content}
 
-* [Understanding Success Criteria 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
-* [How to Meet Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG20/quickref/#text-equiv)
-* [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
+* [Understanding Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+* [How to Meet Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
 * [W3C explanation of and alternatives to CAPTCHAs](https://www.w3.org/TR/turingtest/)
+
+<!--
+* [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
+-->
 
 ### Time-based Media (1.2) {#time-based-media}
 
-[Guideline 1.2 Time-based Media: Provide alternatives for time-based media.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[Guideline 1.2 Time-based Media: Provide alternatives for time-based media.](https://www.w3.org/TR/WCAG/#time-based-media)
 
 This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be pre-recorded or a live stream.
 
-### Audio-only and Video-only (Pre-recorded) (1.2.1) {#audio-only-and-video-only-pre-recorded}
+### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
 * Success Criterion 1.2.1
 * Level A
@@ -127,7 +135,7 @@ This deals with web content that is *time-based*. This covers content that the u
   * Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.
   * Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.
 
-#### Purpose - Audio-only and Video-only (Pre-recorded) (1.2.1) {#purpose-audio-only-and-video-only-pre-recorded}
+#### Purpose - Audio-only and Video-only (Prerecorded) (1.2.1) {#purpose-audio-only-and-video-only-prerecorded}
 
 Accessibility problems for video and audio may be experienced by:
 
@@ -139,7 +147,7 @@ Video or audio may also be unavailable to people using browsers or devices that 
 
 Providing this information in a different format, such as text (or audio for video without audio) can make it accessible for people unable to access the original content.
 
-#### How to Meet - Audio-only and Video-only (Pre-recorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-pre-recorded}
+#### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * If the content is pre-recorded audio with no video (such as a podcast):
   * Provide a link immediately before or after the content to a text-transcript of the audio content. The transcript should be an HTML page with a text equivalent of all spoken and important non-spoken content, plus an indication of who is speaking, a description of the setting, vocal expressions and a description of any other significant audio.
@@ -157,18 +165,18 @@ Inserting multimedia, specifically Flash content, into your AEM web pages is sim
 >
 >When you use multimedia with informational content, you must also create links to alternatives. For example, to include a text transcript, create an HTML page to display the transcript and then add a link next to or underneath the audio content.
 
-#### More Information - Audio-only and Video-only (Pre-recorded) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
+#### More Information - Audio-only and Video-only (Prerecorded) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
-* [Understanding Success Criteria 1.2.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
-* [How to Meet Success Criteria 1.2.1](https://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
+* [Understanding Success Criteria 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
+* [How to Meet Success Criteria 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
 
-### Captions (Pre-Recorded) (1.2.2) {#captions-pre-recorded}
+### Captions (Prerecorded) (1.2.2) {#captions-prerecorded}
 
 * Success Criterion 1.2.2
 * Level A
 * Captions (Prerecorded): Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
 
-#### Purpose - Captions (Pre-Recorded) (1.2.2) {#purpose-captions-pre-recorded}
+#### Purpose - Captions (Prerecorded) (1.2.2) {#purpose-captions-prerecorded}
 
 People who are deaf or hard of hearing will be unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
 
@@ -176,12 +184,12 @@ People who are deaf or hard of hearing will be unable or have great difficulty a
 >
 >Captions are not required where suitable text or non-text equivalents (that provide directly equivalent information) are available on the same page as the video or animation.
 
-#### How to Meet - Captions (Pre-Recorded) (1.2.2) {#how-to-meet-captions-pre-recorded}
+#### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
 Captions can be either:
 
-* Open: always visible when the video is played)
-* Closed:* *the captions can be switched on or off by the user
+* Open: always visible when the video is played
+* Closed: the captions can be switched on or off by the user
 
 Use closed captioning wherever possible, as this gives users the choice over whether or not to view captions.
 
@@ -189,24 +197,27 @@ For closed captions, you will need to create and provide a synchronized caption 
 
 If you must use open captions, embed the text into the video track. This can be achieved using video editing applications that allow the overlaying of titles onto the video.
 
-#### More Information - Captions (Pre-Recorded) (1.2.2) {#more-information-captions-pre-recorded}
+#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Understanding Success Criteria 1.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html):
-* [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
+* [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+
+<!--
 * [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
 * [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
-### Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#audio-description-or-media-alternative-pre-recorded}
+### Audio Description or Media Alternative (Prerecorded) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
 * Success Criterion 1.2.3
 * Level A
 * Audio Description or Media Alternative (Prerecorded): An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
 
-#### Purpose - Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#purpose-audio-description-or-media-alternative-pre-recorded}
+#### Purpose - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
 
 People who are blind or visually impaired will experience accessibility barriers if the information in a video or animation is only provided visually, or if the soundtrack does not provide sufficient information to allow understanding of what is happening visually.
 
-#### How to Meet - Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-pre-recorded}
+#### How to Meet - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-prerecorded}
 
 There are two approaches that can be adopted to meet this success criterion. Either is acceptable:
 
@@ -220,11 +231,11 @@ There are two approaches that can be adopted to meet this success criterion. Eit
 
 Exact details of how to create audio-described video are beyond the scope of this guide. Creating videos and audio descriptions can be time consuming, but other Adobe products can help achieve these tasks. If you create content in Adobe Flash Professional, you should also create a script to prompt the user to download the appropriate plug-in, and provide a text alternative through the `<noscript>` element.
 
-#### More Information - Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
+#### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [Understanding Success Criteria 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
-* [How to Meet Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
+* [Understanding Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
+* [How to Meet Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
+* [Adobe Encore](https://www.adobe.com/products/encore.html)
 
 ### Captions (Live) (1.2.4)  {#captions-live}
 
@@ -238,40 +249,43 @@ This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-r
 
 #### How to Meet - Captions (Live) (1.2.4) {#how-to-meet-captions-live}
 
-Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
+Follow the guidance provided for [Captions (Prerecorded)](#captions-prerecorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
 
 Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
 
 * [WebAIM: Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
+
+<!--
 * [AccessIT (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accessit/articles?1209)
+-->
 
 #### More Information - Captions (Live) (1.2.4) {#more-information-captions-live}
 
-* [Understanding Success Criteria 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
-* [How to Meet Success Criteria 1.2.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions)
+* [Understanding Success Criteria 1.2.4](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
+* [How to Meet Success Criteria 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### Audio Description (Pre-Recorded) (1.2.5)  {#audio-description-pre-recorded}
+### Audio Description (Prerecorded) (1.2.5)  {#audio-description-prerecorded}
 
 * Success Criterion 1.2.5
 * Level AA
 * Audio Description (Prerecorded): Audio description is provided for all prerecorded video content in synchronized media.
 
-#### Purpose - Audio Description (Pre-Recorded) (1.2.5) {#purpose-audio-description-pre-recorded}
+#### Purpose - Audio Description (Prerecorded) (1.2.5) {#purpose-audio-description-prerecorded}
 
-This success criterion is identical to [Audio Description or Media Alternative (Pre-Recorded)](#audio-description-or-media-alternative-pre-recorded), except that authors must provide a much more detailed audio description to conform to Level AA.
+This success criterion is identical to [Audio Description or Media Alternative (Prerecorded)](#audio-description-or-media-alternative-prerecorded), except that authors must provide a much more detailed audio description to conform to Level AA.
 
-#### How to Meet - Audio Description (Pre-Recorded) (1.2.5) {#how-to-meet-audio-description-pre-recorded}
+#### How to Meet - Audio Description (Prerecorded) (1.2.5) {#how-to-meet-audio-description-prerecorded}
 
-Follow the guidance provided for [Audio Description or Media Alternative (Pre-Recorded)](#audio-description-or-media-alternative-pre-recorded).
+Follow the guidance provided for [Audio Description or Media Alternative (Prerecorded)](#audio-description-or-media-alternative-prerecorded).
 
-#### More Information - Audio Description (Pre-Recorded) (1.2.5) {#more-information-audio-description-pre-recorded}
+#### More Information - Audio Description (Prerecorded) (1.2.5) {#more-information-audio-description-prerecorded}
 
-* [Understanding Success Criteria 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
-* [How to Meet Success Criteria 1.2.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
+* [Understanding Success Criteria 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
+* [How to Meet Success Criteria 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
 ### Adaptable (1.3) {#adaptable}
 
-[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG/#adaptable)
 
 This guideline covers the requirements necessary to support people who:
 
@@ -334,7 +348,7 @@ You can make sure your web pages are given the appropriate structure by:
   >
   >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes).
 
-<!-- removed link syntax for ExL
+<!-- removed link syntax for ExL - Bob Bringhurst
 >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
 -->
 
@@ -386,8 +400,27 @@ You can then use the **Cell Properties** to choose whether the cell is a data or
 
 #### More information - Info and Relationships (1.3.1) {#more-information-info-and-relationships}
 
-* [Understanding Success Criteria 1.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
-* [How to Meet Success Criteria 1.3.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic)
+* [Understanding Success Criteria 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+* [How to Meet Success Criteria 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
+
+### Meaningful Sequence (1.3.2)  {#meaningful-sequence}
+
+* Success Criterion 1.3.2
+* Level A
+* Meaningful Sequence: When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+
+#### Purpose - Meaningful Sequence (1.3.2) {#purpose-meaningful-sequence}
+
+The intent of this Success Criterion is to enable a user agent to provide an alternative presentation of content while preserving the reading order needed to understand the meaning. It is important that it be possible to programmatically determine at least one sequence of the content that makes sense. Content that does not meet this Success Criterion may confuse or disorient users when assistive technology reads the content in the wrong order, or when alternate style sheets or other formatting changes are applied.
+
+#### How to Meet - Meaningful Sequence (1.3.2) {#how-to-meet-meaningful-sequence}
+
+Follow the guidelines under [How to Meet Success Criteria 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
+
+#### More information - Meaningful Sequence (1.3.2) {#more-information-meaningful-sequence}
+
+* [Understanding Success Criteria 1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
+* [How to Meet Success Criteria 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
 ### Sensory Characteristics (1.3.3)  {#sensory-characteristics}
 
@@ -418,12 +451,12 @@ Make sure that any information that relies on visual characteristics of page con
 
 #### More information - Sensory Characteristics (1.3.3) {#more-information-sensory-characteristics}
 
-* [Understanding Success Criteria 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
-* [How to Meet Success Criteria 1.3.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
+* [Understanding Success Criteria 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
+* [How to Meet Success Criteria 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
 ### Distinguishable (1.4) {#distinguishable}
 
-[Guideline 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
+[Guideline 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.](https://www.w3.org/TR/WCAG/#distinguishable)
 
 ### Use of Color (1.4.1)  {#use-of-color}
 
@@ -453,9 +486,30 @@ If color is used as a cue to provide information, you should provide an addition
 
 #### More Information - Use of Color (1.4.1) {#more-information-use-of-color}
 
-* [Understanding Success Criteria 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [How to Meet Success Criteria 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Understanding Success Criteria 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
+* [How to Meet Success Criteria 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
+
+<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+-->
+
+### Audio Control (1.4.2)  {#audio-control}
+
+* Success Criterion 1.4.2
+* Level A
+* Audio Control: If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.
+
+#### Purpose - Audio Control (1.4.2) {#purpose-audio-control}
+
+Individuals who use screen reading software can find it hard to hear the speech output if there is other audio playing at the same time. This difficulty is exacerbated when the screen reader's speech output is software based (as most are today) and is controlled via the same volume control as the sound. Therefore, it is important that the user be able to turn off the background sound. Note: Having control of the volume includes being able to reduce its volume to zero.
+
+#### How to Meet - Audio Control (1.4.2) {#how-to-meet-audio-control}
+
+Follow the guidelines under [How to Meet Success Criteria 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
+
+#### More information - Audio Control (1.4.2) {#more-information-audio-control}
+
+* [Understanding Success Criteria 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
+* [How to Meet Success Criteria 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
 
 ### Contrast (Minimum) (1.4.3) {#contrast-minimum}
 
@@ -493,8 +547,27 @@ If it is not possible to meet the recommended contrast levels, you will need to 
 
 #### More Information - Contrast (Minimum) (1.4.3) {#more-information-contrast-minimum}
 
-* [Understanding Success Criteria 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-* [How to Meet Success Criteria 1.4.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast)
+* [Understanding Success Criteria 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
+* [How to Meet Success Criteria 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+
+### Resize Text (1.4.4)  {#resize-text}
+
+* Success Criterion 1.4.4
+* Level A
+* Resize Text: Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.
+
+#### Purpose - Resize Text (1.4.4) {#purpose-resize-text}
+
+The intent of this Success Criterion is to ensure that visually rendered text, including text-based controls (text characters that have been displayed so that they can be seen [vs. text characters that are still in data form such as ASCII]) can be scaled successfully so that it can be read directly by people with mild visual disabilities, without requiring the use of assistive technology such as a screen magnifier. Users may benefit from scaling all content on the Web page, but text is most critical.
+
+#### How to Meet - Resize Text (1.4.4) {#how-to-meet-resize-text}
+
+Follow the guidelines under [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text).
+
+#### More information - Resize Text (1.4.4) {#more-information-resize-text}
+
+* [Understanding Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
+* [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
 
 ### Images of Text (1.4.5) {#images-of-text}
 
@@ -518,12 +591,83 @@ If images of text must be used, use CSS to replace the images of text with equiv
 
 #### More Information - Images of Text (1.4.5) {#more-information-images-of-text}
 
-* [Understanding Success Criteria 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
-* [How to Meet Success Criteria 1.4.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation)
+* [Understanding Success Criteria 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
+* [How to Meet Success Criteria 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
 
 ## Principle 2: Operable {#principle-operable}
 
-[Principle 2: Operable - User interface components and navigation must be operable.](https://www.w3.org/TR/WCAG20/#operable)
+[Principle 2: Operable - User interface components and navigation must be operable.](https://www.w3.org/TR/WCAG/#operable)
+
+### Keyboard Accessible (2.1) {#keyboard-accessible}
+
+[Guideline 2.1 Keyboard Accessible: Make all functionality available from a keyboard.](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+
+This deals with ensuring that users can access all functionality using a keyboard.
+
+### Keyboard (2.1.1)  {#keyboard}
+
+* Success Criterion 2.1.1
+* Level A
+* Keyboard: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.
+
+#### Purpose - Keyboard (2.1.1) {#purpose-keyboard}
+
+The intent of this Success Criterion is to ensure that, wherever possible, content can be operated through a keyboard or keyboard interface (so an alternate keyboard can be used). When content can be operated through a keyboard or alternate keyboard, it is operable by people with no vision (who cannot use devices such as mice that require eye-hand coordination) as well as by people who must use alternate keyboards or input devices that act as keyboard emulators. Keyboard emulators include speech input software, sip-and-puff software, on-screen keyboards, scanning software and a variety of assistive technologies and alternate keyboards. Individuals with low vision also may have trouble tracking a pointer and find the use of software much easier (or only possible) if they can control it from the keyboard.
+
+#### How to Meet - Keyboard (2.1.1) {#how-to-meet-keyboard}
+
+Follow the guidelines under [How to Meet Success Criteria 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
+
+#### More information - Keyboard (2.1.1) {#more-information-keyboard}
+
+* [Understanding Success Criteria 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
+* [How to Meet Success Criteria 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
+
+### No Keyboard Trap (2.1.2)  {#no-keyboard-trap}
+
+* Success Criterion 2.1.2
+* Level A
+* No Keyboard Trap: If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.
+
+#### Purpose - No Keyboard Trap (2.1.2) {#purpose-no-keyboard-trap}
+
+The intent of this Success Criterion is to ensure that that content does not *trap* keyboard focus within subsections of content on a Web page. This is a common problem when multiple formats are combined within a page and rendered using plug-ins or embedded applications.
+
+There may be times when the functionality of the Web page restricts the focus to a subsection of the content, as long as the user knows how to leave that state and *untrap* the focus.
+
+#### How to Meet - No Keyboard Trap (2.1.2) {#how-to-meet-no-keyboard-trap}
+
+Follow the guidelines under [How to Meet Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
+
+#### More information - No Keyboard Trap (2.1.2) {#more-information-no-keyboard-trap}
+
+* [Understanding Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
+* [How to Meet Success Criteria 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
+
+### Enough Time (2.2) {#enough-time}
+
+[Guideline 2.2 Enough Time: Provide users enough time to read and use content.](https://www.w3.org/TR/WCAG/#enough-time)
+
+This deals with ensuring that users have enough time to read and take action.
+
+### Timing Adjustable (2.2.1)  {#timing-adjustable}
+
+* Success Criterion 2.2.1
+* Level A
+* Keyboard: Provide users enough time to read and use content.
+
+#### Purpose - Timing Adjustable (2.2.1) {#purpose-timing-adjustable}
+
+The intent of this Success Criterion is to ensure that users with disabilities are given adequate time to interact with Web content whenever possible. People with disabilities such as blindness, low vision, dexterity impairments, and cognitive limitations may require more time to read content or to perform functions such as filling out on-line forms. If Web functions are time-dependent, it will be difficult for some users to perform the required action before a time limit occurs. This may render the service inaccessible to them. Designing functions that are not time-dependent will help people with disabilities succeed at completing these functions. Providing options to disable time limits, customize the length of time limits, or request more time before a time limit occurs helps those users who require more time than expected to successfully complete tasks. These options are listed in the order that will be most helpful for the user. Disabling time limits is better than customizing the length of time limits, which is better than requesting more time before a time limit occurs.
+
+#### How to Meet - Timing Adjustable (2.2.1) {#how-to-meet-timing-adjustable}
+
+Follow the guidelines under [How to Meet Success Criteria 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
+
+#### More information - Timing Adjustable (2.2.1) {#more-information-timing-adjustable}
+
+* [Understanding Success Criteria 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
+* [How to Meet Success Criteria 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
 ### Pause, Stop, Hide (2.2.2)  {#pause-stop-hide}
 
@@ -556,12 +700,12 @@ Depending on the nature of the content, you can apply one or more of the followi
 
 #### More information - Pause, Stop, Hide (2.2.2) {#more-information-pause-stop-hide}
 
-* [Understanding Success Criterion 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
-* [How to meet Success Criterion 2.2.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
+* [Understanding Success Criterion 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
+* [How to meet Success Criterion 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
-### Seizures (2.3) {#seizures}
+### Seizures and Physical Reactions (2.3) {#seizures-and-physcial-reactions}
 
-[Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.](https://www.w3.org/TR/WCAG20/#seizure)
+[Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures or physical reactions.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
 ### Three Flashes or Below Threshold (2.3.1) {#three-flashes-or-below-threshold}
 
@@ -571,7 +715,7 @@ Depending on the nature of the content, you can apply one or more of the followi
 
 >[!NOTE]
 >
->Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](https://www.w3.org/TR/WCAG20/#cc5).
+>Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Purpose - Three Flashes or Below Threshold (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -586,8 +730,33 @@ You should take steps to make sure the following techniques are applied:
 
 #### More Information - Three Flashes or Below Threshold (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [Understanding Success Criterion 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [How to meet Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG20/quickref/#seizure)
+* [Understanding Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
+* [How to meet Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
+
+### Navigable (2.4) {#navigable}
+
+[Guideline 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.](https://www.w3.org/TR/WCAG/#navigable)
+
+This deals with ensuring the content is easy and straightforward for users to navigate.
+
+### Bypass Blocks (2.4.1)  {#bypass-blocks}
+ 
+* Success Criterion 2.4.1
+* Level A
+* Bypass Blocks: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.
+ 
+#### Purpose - Bypass Blocks (2.4.1) {#purpose-bypass-blocks}
+
+The intent of this Success Criterion is to allow people who navigate sequentially through content more direct access to the primary content of the Web page. Web pages and applications often have content that appears on other pages or screens. Examples of repeated blocks of content include but are not limited to navigation links, heading graphics, and advertising frames. Small repeated sections such as individual words, phrases or single links are not considered blocks for the purposes of this provision.
+
+#### How to Meet - Bypass Blocks (2.4.1) {#how-to-meet-bypass-blocks}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
+ 
+#### More information - Bypass Blocks (2.4.1) {#more-information-bypass-blocks}
+ 
+* [Understanding Success Criteria 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
+* [How to Meet Success Criteria 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
 ### Page Titled (2.4.2)  {#page-titled}
 
@@ -607,8 +776,27 @@ You can also edit the page title when editing a page, which is accessible by **P
 
 #### More Information - Page Titled (2.4.2) {#more-information-page-titled}
 
-* [Understanding Success Criterion 2.4.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
-* [How to meet Success Criterion 2.4.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title)
+* [Understanding Success Criterion 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
+* [How to meet Success Criterion 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+
+### Focus Order (2.4.3)  {#focus-order}
+ 
+* Success Criterion 2.4.3
+* Level A
+* Focus Order: If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.
+ 
+#### Purpose - Focus Order (2.4.3) {#purpose-focus-order}
+
+The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, moving through components in a table one row at a time or one column at a time both reflect the logical relationships in the content. Either order may satisfy this Success Criterion.
+
+#### How to Meet - Focus Order (2.4.3) {#how-to-meet-focus-order}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
+ 
+#### More information - Focus Order (2.4.3) {#more-information-focus-order}
+ 
+* [Understanding Success Criteria 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
+* [How to Meet Success Criteria 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
 ### Link Purpose (In Context) (2.4.4)  {#link-purpose-in-context}
 
@@ -656,7 +844,7 @@ John Smith’s publications
 >
 >The above snippet is an illustration, it is recommended to use the **Image** component.
 
-While it’s advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
+While it’s advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Where the link text is part of a list of closely related links and when the list item enclosing the link provides enough context.
 * Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.
@@ -670,17 +858,83 @@ Alternatively, scripts can be used so that a minimal amount of text is provided 
 
 #### More Information - Link Purpose (In Context) (2.4.4) {#more-information-link-purpose-in-context}
 
-* [Understanding Success Criterion 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
-* [How to meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)
+* [Understanding Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
+* [How to meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)
+
+<!--
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
+--> 
+
+### Multiple Ways (2.4.5)  {#multiple-ways}
+ 
+* Success Criterion 2.4.5
+* Level AA
+* Multiple Ways: More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+ 
+#### Purpose - Multiple Ways (2.4.5) {#purpose-multiple-ways}
+
+The intent of this Success Criterion is to make it possible for users to locate content in a manner that best meets their needs. Users may find one technique easier or more comprehensible to use than another.
+
+Even small sites should provide users some means of orientation. For a three or four page site, with all pages linked from the home page, it may be sufficient simply to provide links from and to the home page where the links on the home page can also serve as a site map.
+
+#### How to Meet - Multiple Ways (2.4.5) {#how-to-meet-multiple-ways}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
+ 
+#### More information - Multiple Ways (2.4.5) {#more-information-multiple-ways}
+ 
+* [Understanding Success Criteria 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
+* [How to Meet Success Criteria 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+
+### Headings and Labels (2.4.6)  {#headings-and-labels}
+ 
+* Success Criterion 2.4.6
+* Level AA
+* Headings and Labels: Headings and labels describe topic or purpose.
+ 
+#### Purpose - Headings and Labels (2.4.6) {#purpose-headings-and-labels}
+
+The intent of this Success Criterion is to help users understand what information is contained in Web pages and how that information is organized. When headings are clear and descriptive, users can find the information they seek more easily, and they can understand the relationships between different parts of the content more easily. Descriptive labels help users identify specific components within the content.
+
+#### How to Meet - Headings and Labels (2.4.6) {#how-to-meet-headings-and-labels}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
+ 
+#### More information - Headings and Labels (2.4.6) {#more-information-headings-and-labels}
+ 
+* [Understanding Success Criteria 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
+* [How to Meet Success Criteria 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+
+### Focus Visible (2.4.7)  {#focus-visible}
+ 
+* Success Criterion 2.4.7
+* Level AA
+* Focus Visible: Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.
+ 
+#### Purpose - Focus Visible (2.4.7) {#purpose-focus-visible}
+
+The purpose of this success criterion is to help a person know which element has the keyboard focus.
+
+It must be possible for a person to know which element among multiple elements has the keyboard focus. If there is only one keyboard actionable control on the screen, the success criterion would be met because the visual design presents only one keyboard actionable item.
+
+Where the success criterion says “mode of operation”, this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
+
+#### How to Meet - Focus Visible (2.4.7) {#how-to-meet-focus-visible}
+ 
+Follow the guidelines under [How to Meet Success Criteria 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
+ 
+#### More information - Focus Visible (2.4.7) {#more-information-focus-visible}
+ 
+* [Understanding Success Criteria 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
+* [How to Meet Success Criteria 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)
 
 ## Principle 3: Understandable {#principle-understandable}
 
-[Principle 3: Understandable - Information and the operation of user interface must be understandable.](https://www.w3.org/TR/WCAG20/#understandable)
+[Principle 3: Understandable - Information and the operation of user interface must be understandable.](https://www.w3.org/TR/WCAG/#understandable)
 
 ### Make Text Content Readable and Understandable (3.1) {#make-text-content-readable-and-understandable}
 
-[Guideline 3.1 Readable: Make text content readable and understandable.](https://www.w3.org/TR/WCAG20/#meaning)
+[Guideline 3.1 Readable: Make text content readable and understandable.](https://www.w3.org/TR/WCAG/#readable)
 
 ### Language of Page (3.1.1) {#language-of-page}
 
@@ -706,8 +960,8 @@ In AEM, the default language of your page is set when creating the page, but may
 
 #### More Information - Language of Page (3.1.1) {#more-information-language-of-page}
 
-* [Understanding Success Criterion 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
-* [How to meet Success Criterion 3.1.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id)
+* [Understanding Success Criterion 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
+* [How to meet Success Criterion 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * The codes are based on ISO 639-1. A more extensive list of codes for each language can be found at the [W3 Schools site](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Language of Parts (3.1.2)  {#language-of-parts}
@@ -757,12 +1011,139 @@ To add the span element, with an appropriate language, you can manually edit you
 
 #### More Information - Language of Parts (3.1.2) {#more-information-language-of-parts}
 
-* [Understanding Success Criterion 3.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.htm)
-* [How to meet Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id)
+* [Understanding Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
+* [How to meet Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts)
 
-### Help Users Avoid and Correct Mistakes (3.3) {#help-users-avoid-and-correct-mistakes}
+### Predictable (3.2) {#predictable}
 
-[Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.](https://www.w3.org/TR/WCAG20/#minimize-error)
+[Guideline 3.2 Predictable: Make Web pages appear and operate in predictable ways.](https://www.w3.org/TR/WCAG/#predictable)
+
+This deals with ensuring the web pages are consistent in how they look and operate.
+
+### On Focus (3.2.1)  {#on-focus}
+ 
+* Success Criterion 3.2.1
+* Level A
+* On Focus: When any user interface component receives focus, it does not initiate a change of context.
+ 
+#### Purpose - On Focus (3.2.1) {#purpose-on-focus}
+
+The intent of this Success Criterion is to ensure that functionality is predictable as visitors navigate their way through a document. Any component that is able to trigger an event when it receives focus must not change the context. Examples of changing context when a component receives focus include, but are not limited to:
+
+* forms submitted automatically when a component receives focus;
+* new windows launched when a component receives focus;
+* focus is changed to another component when that component receives focus;
+
+Focus may be moved to a control either via the keyboard (e.g. tabbing to a control) or the mouse (e.g. clicking on a text field). Moving the mouse over a control does not move the focus unless scripting implements this behavior. Note that for some types of controls, clicking on a control may also activate the control (e.g. button), which may, in turn, initiate a change in context.
+
+#### How to Meet - On Focus (3.2.1) {#how-to-meet-on-focus}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus).
+ 
+#### More information - On Focus (3.2.1) {#more-information-on-focus}
+ 
+* [Understanding Success Criteria 3.2.1](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
+* [How to Meet Success Criteria 3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
+
+### On Input (3.2.2)  {#on-input}
+ 
+* Success Criterion 3.2.2
+* Level A
+* On Input: Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.
+ 
+#### Purpose - On Input (3.2.2) {#purpose-on-input}
+
+The intent of this Success Criterion is to ensure that entering data or selecting a form control has predictable effects. Changing the setting of any user interface component is changing some aspect in the control that will persist when the user is no longer interacting with it. So checking a checkbox, entering text into a text field, or changing the selected option in a list control changes its setting, but activating a link or a button does not. Changes in context can confuse users who do not easily perceive the change or are easily distracted by changes. Changes of context are appropriate only when it is clear that such a change will happen in response to the user's action.
+
+#### How to Meet - On Input (3.2.2) {#how-to-meet-on-input}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
+ 
+#### More information - On Input (3.2.2) {#more-information-on-input}
+ 
+* [Understanding Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
+* [How to Meet Success Criteria 3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
+
+### Consistent Navigation (3.2.3)  {#consistent-navigation}
+ 
+* Success Criterion 3.2.3
+* Level AA
+* Consistent Navigation: Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.
+ 
+#### Purpose - Consistent Navigation (3.2.3) {#purpose-consistent-navigation}
+
+The intent of this Success Criterion is to encourage the use of consistent presentation and layout for users who interact with repeated content within a set of Web pages and need to locate specific information or functionality more than once. Individuals with low vision who use screen magnification to display a small portion of the screen at a time often use visual cues and page boundaries to quickly locate repeated content. Presenting repeated content in the same order is also important for visual users who use spatial memory or visual cues within the design to locate repeated content.
+
+It is important to note that the use of the phrase "same order" in this section is not meant to imply that subnavigation menus cannot be used or that blocks of secondary navigation or page structure cannot be used. Instead, this Success Criterion is intended to assist users who interact with repeated content across Web pages to be able to predict the location of the content they are looking for and find it more quickly when they encounter it again.
+
+Users may initiate a change in the order by using adaptive user agents or by setting preferences so that the information is presented in a way that is most useful to them.
+
+#### How to Meet - Consistent Navigation (3.2.3) {#how-to-meet-consistent-navigation}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
+ 
+#### More information - Consistent Navigation (3.2.3) {#more-information-consistent-navigation}
+ 
+* [Understanding Success Criteria 3.2.3](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
+* [How to Meet Success Criteria 3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
+
+### Consistent Identification (3.2.4)  {#consistent-identification}
+ 
+* Success Criterion 3.2.4
+* Level A
+* Consistent Identification: Components that have the same functionality within a set of Web pages are identified consistently.
+ 
+#### Purpose - Consistent Identification (3.2.4) {#purpose-consistent-identification}
+
+The intent of this Success Criterion is to ensure consistent identification of functional components that appear repeatedly within a set of Web pages. A strategy that people who use screen readers use when operating a Web site is to rely heavily on their familiarity with functions that may appear on different Web pages. If identical functions have different labels (or, more generally, a different accessible name) on different Web pages, the site will be considerably more difficult to use. It may also be confusing and increase the cognitive load for people with cognitive limitations. Therefore, consistent labeling will help.
+
+This consistency extends to the text alternatives. If icons or other non-text items have the same functionality, then their text alternatives should be consistent as well.
+
+If there are two components on a web page that both have the same functionality as a component on another page in a set of web pages, then all 3 must be consistent. Hence the two on the same page will be consistent.
+
+While it is desirable and best practice always to be consistent within a single web page, 3.2.4 only addresses consistency within a set of web pages where something is repeated on more than one page in the set.
+
+#### How to Meet - Consistent Identification (3.2.4) {#how-to-meet-consistent-identification}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification).
+ 
+#### More information - Consistent Identification (3.2.4) {#more-information-consistent-identification}
+ 
+* [Understanding Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
+* [How to Meet Success Criteria 3.2.4](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)
+
+### Input Assistance (3.3) {#input-assistance}
+
+[Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.](https://www.w3.org/TR/WCAG/#input-assistance)
+
+### Error Identification (3.3.1)  {#error-identification}
+ 
+* Success Criterion 3.3.1
+* Level A
+* Error Identification: If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.
+ 
+#### Purpose - Error Identification (3.3.1) {#purpose-error-identification}
+
+The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG 2.0, an "input error" is information provided by the user that is not accepted. This includes:
+
+information that is required by the web page but omitted by the user, or information that is provided by the user but that falls outside the required data format or allowed values.
+For example:
+
+* the user fails to enter the proper abbreviation in to state, province, region, etc. field;
+* the user enters a state abbreviation that is not a valid state;
+* the user enters a non existent zip or postal code;
+* the user enters a birth date 2 years in the future;
+* the user enters alphabetic characters or parentheses into their phone number field that only accepts numbers;
+* the user enters a bid that is below the previous bid or the minimum bid increment.
+
+#### How to Meet - Error Identification (3.3.1) {#how-to-meet-error-identification}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification).
+ 
+#### More information - Error Identification (3.3.1) {#more-information-error-identification}
+ 
+* [Understanding Success Criteria 3.3.1](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html)
+* [How to Meet Success Criteria 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)
 
 ### Labels or Instructions (3.3.2) {#labels-or-instructions}
 
@@ -811,5 +1192,114 @@ In simple forms with very limited functionality, appropriately labelling a `Subm
 
 #### More Information - Labels or Instructions (3.3.2) {#more-information-labels-or-instructions}
 
-* [Understanding Success Criterion 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
-* [How to meet Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
+* [Understanding Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
+* [How to meet Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
+
+### Error Suggestion (3.3.3)  {#error-suggestion}
+ 
+* Success Criterion 3.3.3
+* Level AA
+* Keyboard: If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
+ 
+#### Purpose - Error Suggestion (3.3.3) {#purpose-error-suggestion}
+
+The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG 2.0 definition of "input error" says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
+
+Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. In the case of an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
+
+The content author may provide the description of the error, or the user agent may provide the description of the error based on technology-specific, programmatically determined information.
+
+#### How to Meet - Error Suggestion (3.3.3) {#how-to-meet-error-suggestion}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion).
+ 
+#### More information - Error Suggestion (3.3.3) {#more-information-error-suggestion}
+ 
+* [Understanding Success Criteria 3.3.3](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
+* [How to Meet Success Criteria 3.3.3](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
+
+### Error Prevention (Legal, Financial, Data) (3.3.4)  {#error-prevention-legal-financial-data}
+ 
+* Success Criterion 3.3.4
+* Level AA
+* Error Prevention (Legal, Financial, Data): For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
+
+  * Reversible
+    Submissions are reversible.
+  * Checked
+    Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+  * Confirmed
+    A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+ 
+#### Purpose - Error Prevention (Legal, Financial, Data) (3.3.4) {#purpose-error-prevention-legal-financial-data}
+
+The intent of this Success Criterion is to help users with disabilities avoid serious consequences as the result of a mistake when performing an action that cannot be reversed. For example, purchasing non-refundable airline tickets or submitting an order to purchase stock in a brokerage account are financial transactions with serious consequences. If a user has made a mistake on the date of air travel, he or she could end up with a ticket for the wrong day that cannot be exchanged. If the user made a mistake on the number of stock shares to be purchased, he or she could end up purchasing more stock than intended. Both of these types of mistakes involve transactions that take place immediately and cannot be altered afterwards, and can be very costly. Likewise, it may be an unrecoverable error if users unintentionally modify or delete data stored in a database that they later need to access, such as their entire travel profile in a travel services web site. When referring to modification or deletion of 'user controllable' data, the intent is to prevent mass loss of data such as deleting a file or record. It is not the intent to require a confirmation for each save command or the simple creation or editing of documents, records or other data.
+
+Users with disabilities may be more likely to make mistakes. People with reading disabilities may transpose numbers and letters, and those with motor disabilities may hit keys by mistake. Providing the ability to reverse actions allows users to correct a mistake that could result in serious consequences. Providing the ability to review and correct information gives the user an opportunity to detect a mistake before taking an action that has serious consequences.
+
+User-controllable data is user-viewable data that the user can change and/or delete through an intentional action. Examples of the user controlling such data would be updating the phone number and address for the user's account, or deleting a record of past invoices from a website. It does not refer such things as internet logs and search engine monitoring data that the user can't view or interact with directly.
+
+#### How to Meet - Error Prevention (Legal, Financial, Data) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
+ 
+Follow the guidelines under [How to Meet Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
+ 
+#### More information - Error Prevention (Legal, Financial, Data) (3.3.4) {#more-information-error-prevention-legal-financial-data}
+ 
+* [Understanding Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
+* [How to Meet Success Criteria 3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
+
+## Principle 4: Robust {#principle-robust}
+
+[Principle 4: Robust - Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.](https://www.w3.org/TR/WCAG/#robust)
+
+### Compatible (4.1) {#compatible}
+
+[Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.](https://www.w3.org/TR/WCAG/#compatible)
+
+Maximize compatibility with current and future user agents, including assistive technologies.
+
+### Parsing (4.1.1)  {#parsing}
+ 
+* Success Criterion 4.1.1
+* Level A
+* Parsing: In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.
+ 
+#### Purpose - Parsing (4.1.1) {#purpose-parsing}
+
+The intent of this Success Criterion is to ensure that user agents, including assistive technologies, can accurately interpret and parse content. If the content cannot be parsed into a data structure, then different user agents may present it differently or be completely unable to parse it. Some user agents use "repair techniques" to render poorly coded content.
+
+Since repair techniques vary among user agents, authors cannot assume that content will be accurately parsed into a data structure or that it will be rendered correctly by specialized user agents, including assistive technologies, unless the content is created according to the rules defined in the formal grammar for that technology. In markup languages, errors in element and attribute syntax and failure to provide properly nested start/end tags lead to errors that prevent user agents from parsing the content reliably. Therefore, the Success Criterion requires that the content can be parsed using only the rules of the formal grammar.
+
+#### How to Meet - Parsing (4.1.1) {#how-to-meet-parsing}
+ 
+Follow the guidelines under [How to Meet Success Criteria 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
+ 
+#### More information - Parsing (4.1.1) {#more-information-parsing}
+ 
+* [Understanding Success Criteria 4.1.1](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
+* [How to Meet Success Criteria 4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
+
+### Name, Role, Value (4.1.2)  {#name-role-value}
+ 
+* Success Criterion 4.1.2
+* Level A
+* Name, Role, Value: For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+ 
+#### Purpose - Name, Role, Value (4.1.2) {#purpose-ame-role-value}
+
+The intent of this Success Criterion is to ensure that Assistive Technologies (AT) can gather information about, activate(or set) and keep up to date on the status of user interface controls in the content.
+
+When standard controls from accessible technologies are used, this process is straightforward. If the user interface elements are used according to specification the conditions of this provision will be met. (See examples of Success Criterion 4.1.2 below)
+
+If custom controls are created, however, or interface elements are programmed (in code or script) to have a different role and/or function than usual, then additional measures need to be taken to ensure that the controls provide important information to assistive technologies and allow themselves to be controlled by assistive technologies.
+
+A particularly important state of a user interface control is whether or not it has focus. The focus state of a control can be programmatically determined, and notifications about change of focus are sent to user agents and assistive technology. Other examples of user interface control state are whether or not a checkbox or radio button has been selected, or whether or not a collapsible tree or list node is expanded or collapsed.
+
+#### How to Meet - Name, Role, Value (4.1.2) {#how-to-meet-ame-role-value}
+ 
+Follow the guidelines under [How to Meet Success Criteria 4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value).
+ 
+#### More information - Name, Role, Value (4.1.2 {#more-information-ame-role-value}
+ 
+* [Understanding Success Criteria 4.1.2](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
+* [How to Meet Success Criteria 4.1.2](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)
