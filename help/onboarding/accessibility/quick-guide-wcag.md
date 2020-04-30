@@ -7,7 +7,7 @@ seo-title: A Quick Guide to WCAG 2.1
 
 Adobe Experience Manager (AEM) as a Cloud Service has been developed to maximize compliance with the Web Content Accessibility Guidelines.
 
-The [Web Content Accessibility Guidelines version 2.1 (WCAG)](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.1 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities. They provide advice to web content authors, designers and developers on ensuring that the resources they produce are as accessible as possible to as many people as possible, regardless of any disability they have; for example, visual impairment, hearing loss, learning difficulties, age related limitations, amongst others.
 
