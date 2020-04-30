@@ -9,7 +9,7 @@ description: Role Based Permissions
 
 ## User Permissions {#user-permissions}
 
-Each of the roles have specific permissions, preconfigured tasks, or permissions, associated with each role. This table lists the functions available and the roles who can execute the function.
+Each of the roles have specific permissions, pre-configured tasks, or permissions, associated with each role. This table lists the functions available and the roles who can execute the function.
 
 |Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|
 |--- |--- |--- |--- |--- |--- |
@@ -26,6 +26,8 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 |Pipeline Execution|Provide GoLive Approval.|x|x|x||
 |Pipeline Execution|Schedule Production Deployment.|x|x|x||
 |Pipeline Execution|Resume Production Pipeline.|||||
+|Pipeline Delete|Allows Deleting of a Pipeline.||x|||
+|Execution Cancel|Cancel Current Execution.||x|||
 |Manage Environment|Add Publish-Dispatcher segment from the Manage Environment Screen.|x|x||||
 |Push Update|Start Push Update Pipeline.|||||
 |Generate Personal Access Token|Access Git.||x||x|
