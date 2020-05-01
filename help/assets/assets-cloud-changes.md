@@ -5,18 +5,15 @@ description: Notable changes to Adobe Experience Manager Assets in AEM Cloud Ser
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are many differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences.
-
->[!NOTE]
->
->This document highlights the notable changes that are specific to Experience Manager Assets as a Cloud Service. See the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are many differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences for Assets capabilities. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 The main differences as compared to Experience Manager 6.5 are in the following areas:
 
-* [Asset ingestion](#asset-ingestion)
-* [Removal of Classic UI](#classic-ui)
+* [Asset ingestion and upload](#asset-ingestion).
+* [Asset microservices for cloud processing](#asset-microservices).
+* [Removal of Classic UI](#classic-ui).
 
-## Asset ingestion {#asset-ingestion}
+## Asset ingestion and upload {#asset-ingestion}
 
 Asset upload has been optimized for efficiency by enabling better scaling of asset ingestion and faster uploads. Product capabilities (web user interfaces, desktop clients) have been updated. However, this may impact some existing customization.
 
@@ -30,12 +27,14 @@ Asset upload has been optimized for efficiency by enabling better scaling of ass
 
 Standard renditions generated with asset microservices are stored in a backwards-compatible way in the asset repository nodes (same naming conventions).
 
-## Develop and test asset microservices {#developing-testing-asset-microservices}
+## Develop and test asset microservices {#asset-microservices}
 
-Asset microservices is a native cloud service that is automatically provisioned and wired to Experience Manager in customer programs and environments managed in Cloud Manager. Developers working to extend Experience Manager or do customization can use the existing content (or assets with renditions generated in a cloud environment) to test and validate their code using, displaying, downloading assets.
+Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. Asset microservices help to avoid the need for third-party rendering tools and methods (like ImageMagick and FFmpeg transcoding) and simplify configurations, while providing out-of-the-box functionality for common file types. Currently, ImageMagick integration and FFMmpeg transcoding are not available in Cloud Service.
 
-To do an end-to-end validation of the code and process including asset ingestion and processing, deploy the code changes to a cloud-dev environment using the pipeline and test with full execution of asset microservices processing.
+Asset microservices is a cloud-native service that is automatically provisioned and wired to Experience Manager in customer programs and environments managed in Cloud Manager. To extend or customize Experience Manager, the developers can use the existing content or assets with renditions generated in a cloud environment, to test and validate their code using, displaying, downloading assets.
+
+To do an end-to-end validation of the code and process including asset ingestion and processing, deploy the code changes to a cloud-dev environment using [the pipeline](/help/implementing/cloud-manager/configure-pipeline.md) and test with full execution of asset microservices processing.
 
 ## Removal of Classic UI {#classic-ui}
 
-The Classic UI is no longer available in Experience Manager as a Cloud Service.
+The Classic UI is no longer available in Experience Manager as a Cloud Service. The standard interface is the Touch-enabled UI.

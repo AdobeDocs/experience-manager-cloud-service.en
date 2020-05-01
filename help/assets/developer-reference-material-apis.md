@@ -37,7 +37,7 @@ This approach should provide more scalable and performant handling of asset uplo
 
 > ![NOTE]
 >
-> To review client code that implements this approach, refer to the open source [aem-upload library](https://github.com/adobe/aem-upload)
+> To review client code that implements this approach, refer to the open-source [aem-upload library](https://github.com/adobe/aem-upload)
 
 ### Initiate upload {#initiate-upload}
 
@@ -89,25 +89,27 @@ One potential way of accomplishing this is to calculate the part size based on t
 
 * Calculate part size by dividing total size by number of URIs: 20,000 / 2 = 10,000
 * POST byte range 0-9,999 of the binary to the first URI in the list of upload URIs
-* POST byte range 10,000-19,999 of the binary to the second URI in the list of upload URIs
+* POST byte range 10,000 - 19,999 of the binary to the second URI in the list of upload URIs
 
 If successful, the server responds to each request with a `201` status code.
 
 ### Complete upload {#complete-upload}
 
-Once all parts of a binary are uploaded, the final step is to submit an HTTP POST request to the complete URI provided by the initiation data. The content type of the request body should be application/`x-www-form-urlencoded` form data, containing the following fields:
+After all the parts of a binary file are uploaded, submit an HTTP POST request to the complete URI provided by the initiation data. The content type of the request body should be `application/x-www-form-urlencoded` form data, containing the following fields.
 
-* `(string) fileName`: Required. The name of the asset, as was provided by the initiation data.
-* `(string) mimeType`: Required. The HTTP content type of the binary, as was provided by the initiation data.
-* `(string) uploadToken`: Required. Upload token for the binary, as was provided by the initiation data.
-* `(bool) createVersion`: Optional. If true and an asset with the specified name already exists, the instance will create a new version of the asset.
-* `(string) versionLabel`: Optional. If a new version is created, the label that will be associated with the version.
-* `(string) versionComment`: Optional. If a new version is created, comments that will be associated with the version.
-* `(bool) replace`: Optional: If true and an asset with the specified name already exists, the instance will delete the asset then re-create it.
+|Fields | Type | Required or not | Description |
+|---|---|---|---|
+| `fileName` | String | Required | The name of the asset, as was provided by the initiation data. |
+| `mimeType` | String | Required | The HTTP content type of the binary, as was provided by the initiation data. |
+| `uploadToken` | String | Required | Upload token for the binary, as was provided by the initiation data. |
+| `createVersion` | Boolean | Optional | If `True` and an asset with the specified name already exists, then Experience Manager creates a new version of the asset. |
+| `versionLabel` | String | Optional | If a new version is created, the label associated with the new version of an asset . |
+| `versionComment` | String | Optional | If a new version is created, the comments associated with the version. |
+| `replace` | Boolean | Optional | If `True` and an asset with the specified name already exists, Experience Manager deletes the asset then re-create it. |
 
 >![NOTE]
 >
->If the asset already exists and neither createVersion nor replace is specified, then the instance will update the asset's current version with the new binary.
+>If the asset already exists and neither `createVersion` nor `replace` is specified, then Experience Manager updates the asset's current version with the new binary.
 
 Like the initiate process, the complete request data may contain information for more than one file.
 
@@ -117,48 +119,36 @@ If successful, the server responds with a `200` status code.
 
 ### Open-source upload library {#open-source-upload-library}
 
-To learn more about the upload algorithms or to build your own upload scripts and tools, Adobe provides open source libraries and tools as a starting points:
+To learn more about the upload algorithms or to build your own upload scripts and tools, Adobe provides open-source libraries and tools as a starting points:
 
-* [Open source aem-upload library](https://github.com/adobe/aem-upload)
-* [Open source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open-source aem-upload library](https://github.com/adobe/aem-upload)
+* [Open-source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### Deprecated asset upload APIs {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
->[!NOTE]
->
->For Experience Manager as a Cloud Service only the new upload APIs are supported. APIs from Experience Manager 6.5 are deprecated.
-
-Methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
+For Adobe Experience Manager as a Cloud Service only the new upload APIs are supported. The APIs from Adobe Experience Manager 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
 
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, like `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
 >
->* [Open source aem-upload library](https://github.com/adobe/aem-upload)
->* [Open source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
+>* [Open-source aem-upload library](https://github.com/adobe/aem-upload).
+>* [Open-source command-line tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 ## Asset processing and post-processing workflows {#post-processing-workflows}
 
-Most of asset processing is executed based on **[!UICONTROL Processing Profiles]** configuration by [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices), and does not require developer extensions.
+In Experience Manager, the asset processing is based on **[!UICONTROL Processing Profiles]** configuration that uses [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). Processing does not require developer extensions.
 
-For the post-processing workflow configuration, standard AEM Workflows with extensions (e.g., custom steps can be used). Review the following subsection to understand, which workflow steps can be used in the asset post-processing workflows.
+For post-processing workflow configuration, use the standard workflows with extensions with custom steps.
 
-### Workflow steps in post-processing workflow {#post-processing-workflows-steps}
+## Support of workflow steps in post-processing workflow {#post-processing-workflows-steps}
 
->[!NOTE]
->
->This section applies mostly to the customers updating to AEM as a Cloud Service from previous versions of AEM.
+Customers upgrading to Experience Manager as a Cloud Service from previous versions of Experience Manager can use asset microservices for processing of assets. The cloud-native asset microservices are much simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported.
 
-Due to a new deployment model introduced with Experience Manager as a Cloud Service, certain workflow steps used in the `DAM Update Asset` workflow before the introduction of asset microservices might not be supported any more for post-processing workflows. Note that most of them are replaced by a much simpler to configure and use asset microservices.
-
-Here is a list of technical workflow models and their level of support in AEM as a Cloud Service:
-
-### Supported workflow steps {#supported-workflow-steps}
-
-The following workflow steps are supported in the Cloud Service.
+The following workflow steps are supported in Experience Manager as a Cloud Service.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -169,8 +159,6 @@ The following workflow steps are supported in the Cloud Service.
 * `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
-
-### Unsupported or replaced models {#unsupported-replaced-models}
 
 The following technical workflow models are either replaced by asset microservices or the support is not available.
 

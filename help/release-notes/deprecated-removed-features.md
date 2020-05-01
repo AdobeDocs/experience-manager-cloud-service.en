@@ -20,15 +20,16 @@ This section lists features and capabilities that have been marked as deprecated
 
 Customers are advised to review if they make use of the feature/capability in their current deployment, and make plans to change their implementation to use the alternative provided.
 
-| Area         | Feature            | Replacement |
+| Capabilities | Deprecated feature | Replacement |
 | ------------ | ------------------ | ----------- |
-| Assets       | Asset ingestion and processing no longer uses `DAM Asset Update` workflow | Asset ingestion uses [asset microservices](/help/assets/asset-microservices-overview.md) now. |
-| Assets       | Upload assets directly to AEM - see [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) | [Direct binary upload](/help/assets/add-assets.md) is used in Experience Manager as a Cloud Service. For technical details, see [direct upload APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Assets       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` workflow are not supported, including calling command-line tools like ImageMagick | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets       | `DAM Asset Update` workflow to process ingested images. | Asset ingestion uses [asset microservices](/help/assets/asset-microservices-overview.md) now. |
+| Assets       | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use [Direct binary upload](/help/assets/add-assets.md). For technical details, see [direct upload APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Assets       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` workflow are not supported, including calling command-line tools like ImageMagick. | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets       | FFmpeg transcoding of videos. | For FFmpeg thumbnail generation, use [Asset microservices](/help/assets/asset-microservices-overview.md). For FFmpeg transcoding, use [Dynamic Media](/help/assets/manage-video-assets.md). |
 
 ## Removed features {#removed-features}
 
-This section lists features and capabilities that have been removed from AEM with Experience Manager as a Cloud Service. 
+This section lists features and capabilities that have been removed from AEM with Experience Manager as a Cloud Service.
 
 | Area         | Feature            | Replacement |
 | ------------ | ------------------ | ----------- |
