@@ -11,9 +11,7 @@ First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/ma
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 -->
 
-Adobe Experience Manager as a Cloud Service provides a cloud-native way to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices.
-
-Asset microservices provide a scalable and resilient processing of assets using cloud services, which are managed by Adobe for optimal handling of different asset types and processing options. Key benefits are:
+Adobe Experience Manager as a Cloud Service provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
 
 * Scalable architecture that allows for seamless processing for resource-intensive operations.
 * Efficient indexing and text extractions that does not impact the performance of your Experience Manager environments.
@@ -24,7 +22,7 @@ Asset microservices provide a scalable and resilient processing of assets using 
 * Native Adobe file processing services are used where applicable, providing high-fidelity output and [efficient handling of Adobe proprietary formats](file-format-support.md).
 * Ability to configure post-processing workflow to add user-specific actions and integrations.
 
-Asset microservices help to avoid the need for third-party rendering tools (like ImageMagick) and simplify configuration of the system, while providing out-of-the-box functionality for common file types.
+Asset microservices help to avoid the need for third-party rendering tools and methods (like ImageMagick and FFmpeg transcoding) and simplify configurations, while providing out-of-the-box functionality for common file types.
 
 ## High-level architecture {#asset-microservices-architecture}
 
@@ -41,12 +39,12 @@ The key steps of the ingestion and processing using asset microservices are:
 
 * Clients, such as web browsers or Adobe Asset Link, send an upload request to Experience Manager and start uploading the binary directly to the binary cloud storage.
 * When the direct binary upload completes, the client notifies Experience Manager.
-* Experience Manager sends a processing request to asset microservices. The request contents depends on the processing profiles configuration in Experience Manager that specify, which renditions should be generated
+* Experience Manager sends a processing request to asset microservices. The request contents depends on the processing profiles configuration in Experience Manager that specify, which renditions to generate.
 * Assets microservices back-end receives the request, dispatches it to one or more microservices based on the request. Each microservice accesses the original binary directly from the binary cloud store.
 * Results of the processing, such as renditions, are stored in the binary cloud storage.
-* Experience Manager is notified that the processing is complete along with direct pointers to the generated binaries (renditions), which are then available in Experience Manager for the uploaded asset
+* Experience Manager is notified that the processing is complete along with direct pointers to the generated binaries (renditions). The generated renditions are available in Experience Manager for the uploaded asset.
 
-This is the basic flow of asset ingestion and processing. If configured, Experience Manager can also start customer's workflow model to do post-processing of the asset, for example, to execute some customized steps that are specific to customer environment, like fetching information from customer's enterprise systems to add to asset properties.
+This is the basic flow of asset ingestion and processing. If configured, Experience Manager can also start custom workflow model to do post-processing of the asset. For example, execute customized steps that are specific to your environment, such as fetch information from an enterprise system and add to asset properties.
 
 The ingestion and processing flow are key concepts of the asset microservices architecture for Experience Manager.
 
