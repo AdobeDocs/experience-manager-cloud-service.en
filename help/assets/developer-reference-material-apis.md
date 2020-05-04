@@ -45,7 +45,7 @@ The first step is to submit an HTTP POST request to the folder where the asset s
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 The content type of the request body should be `application/x-www-form-urlencoded` form data, containing the following fields:
 
