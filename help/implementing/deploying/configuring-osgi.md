@@ -302,14 +302,35 @@ The intent is for the value of the OSGI property `my_var1` to be the same for st
 | **Folder**  | **Contents of myfile.cfg.json**  |
 |---|---|
 |  config |
-{ 
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
+{<br> 
+ "my_var1": "val",<br>
+ "my_var2": "abc",<br>
+ "my_var3": 500<br>
 } |
-|  config.dev | { 
- "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+|  config.dev | {<br> 
+ "my_var1" : "$[env:my_var1]"<br>
+ "my_var2": "abc",<br>
+ "my_var3": 500<br>
 } |
 
+**Example 2**
+
+The intent is for the value of the OSGI property `my_var1` to differ for stage, prod, and for each of the 3 dev environments. Thus the Cloud Manager API will need to be called to set the value for `my_var1` for each dev env.
+
+|  **Folder** | **Contents of myfile.cfg.json**  |
+|---|---|
+| config.stage  | {<br> 
+ "my_var1": "val1",<br>
+ "my_var2": "abc",<br>
+ "my_var3": 500<br>
+}  |
+| config.prod  | {<br> 
+ "my_var1": "val2",<br>
+ "my_var2": "abc",<br>
+ "my_var3": 500<br>
+}  |
+| config.dev  | {<br> 
+ "my_var1" : "$[env:my_var1]"<br>
+ "my_var2": "abc",<br>
+ "my_var3": 500<br>
+}  |
