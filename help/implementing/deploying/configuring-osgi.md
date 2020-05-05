@@ -299,38 +299,47 @@ In the examples below, assume that there are 3 dev environments, in addition to 
 
 The intent is for the value of the OSGI property `my_var1` to be the same for stage and prod, but differ for each of the 3 dev environments.
 
-| **Folder**  | **Contents of myfile.cfg.json**  |
-|---|---|
-|  config |
-{<br> 
- "my_var1": "val",<br>
- "my_var2": "abc",<br>
- "my_var3": 500<br>
-} |
-|  config.dev | {<br> 
- "my_var1" : "$[env:my_var1]"<br>
- "my_var2": "abc",<br>
- "my_var3": 500<br>
-} |
+html
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Contents of myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ 
+ "my_var1": "val",
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+</table>
 
 **Example 2**
 
 The intent is for the value of the OSGI property `my_var1` to differ for stage, prod, and for each of the 3 dev environments. Thus the Cloud Manager API will need to be called to set the value for `my_var1` for each dev env.
 
-|  **Folder** | **Contents of myfile.cfg.json**  |
-|---|---|
-| config.stage  | {<br> 
- "my_var1": "val1",<br>
- "my_var2": "abc",<br>
- "my_var3": 500<br>
-}  |
-| config.prod  | {<br> 
- "my_var1": "val2",<br>
- "my_var2": "abc",<br>
- "my_var3": 500<br>
-}  |
-| config.dev  | {<br> 
- "my_var1" : "$[env:my_var1]"<br>
- "my_var2": "abc",<br>
- "my_var3": 500<br>
-}  |
