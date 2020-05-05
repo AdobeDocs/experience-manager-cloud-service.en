@@ -342,3 +342,232 @@ config.dev
 
 The intent is for the value of the OSGI property `my_var1` to differ for stage, prod, and for each of the 3 dev environments. Thus the Cloud Manager API will need to be called to set the value for `my_var1` for each dev env.
 
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Contents of myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ 
+ "my_var1": "val2",
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+</table>
+
+**Example 3**
+
+The intent is for the value of the OSGi property `my_var1` to be the same for stage, production, and just one of the dev environments, but for it to differ for the other two dev environments. In this case, the Cloud Manager API will need to be called to set the value of `my_var1` for each of the dev environments, including for the dev environment which should have the same value as stage and production. It will not inherit the value set in the folder **config**.
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Contents of myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+</table>
+
+Another way to accomplish this would be to set a default value for the replacement token in the config.dev folder such that it's the same value as in the **config** folder.
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Contents of myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ 
+ "my_var1": "$[env:my_var1;default=val1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
+</pre>
+</td>
+</tr>
+</table>
+
+## Cloud Manager API Format for Setting Properties {#cloud-manager-api-format-for-setting-properties}
+
+### Setting Values via API {#setting-values-via-api}
+
+Calling the API will deploy the new variables and values to a Cloud environment, similar to a typical customer code deployment pipeline. The author and publish services will be restarted and reference the new values, typically taking a few minutes.
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+Note that default variables are not set via API, but rather in the OSGi property itself.
+
+See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) for more information.
+
+### Getting values via API {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) for more information.
+
+### Deleting values via API {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+To delete a variable, include it with an empty value.
+
+See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) for more information.
+
+### Getting Values via the Command Line {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### Setting values via the Command Line {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### Deleting Values via the Command Line {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> See [this page](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for more information on how to configure values using the Cloud Manager plugin for Adobe I/O CLI.
+
+### Number of Variables {#number-of-variables}
+
+Up to 20 variables can be declared. 
+
+## Deployment Considerations for Secret and Environment Specific Configuration Values {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+Because the secret and environment specific configuration values live outside of Git, and therefore, are not part of the formal AEM as a Cloud Service deployment mechanisms, the customer should manage, govern and integrate into the AEM as a Cloud Service deployment process.
+
+As mentioned above, calling the API will deploy the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services will be restarted and reference the new values, typically taking a few minutes. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
+
+Typically, customers would call the API to set environment variables before deploying code that relies on them in Cloud Manager. In some situations, one might want to modify an existing variable after code has already been deployed. 
+
+Note that the API may not succeed when a pipeline is in use, either an AEM update or customer deployment, depending on what part of the end to end pipeline is being executed at that time. The error response will indicate that the request was not successful, although it will not indicate the specific reason.
+
+There may be scenarios where a scheduled customer code deployment relies on existing variables to have new values, which would not be appropriate with the current code. If this a concern, it is recommended to make variable modifications in an additive way. To do that, create new variable names instead of just changing the value of old variables so old code never references the new value. Then when the new customer release looks stable, one can choose to remove the older values.
+
+Similarly, since a variable's values are not versioned, a rollback of code could cause it to reference newer values that cause issues. The aforementioned additive variable strategy would help here as well.
+
+This additive variable strategy is also useful for disaster recovery scenarios where if code from several days prior needed to be redeployed, the variable names and values it references will still be intact. This relies on a strategy where a customer waits a few days before removing those older variables, otherwise the older code would not have appropriate variables to reference.
