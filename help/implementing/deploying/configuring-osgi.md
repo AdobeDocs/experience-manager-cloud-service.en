@@ -289,7 +289,7 @@ For example if `$[secret:server_password]` is used, a text file named **server_p
 If an OSGI property requires different values for author versus publish:
 
 * separate `config.author` and `config.publish` OSGi folders should be used, as described in the [Runmode Resolution section](#runmode-resolution).
-* independent variable names should be used. It is recommended to use a prefix such as author_<variablename> and publish_<variablename> where the variable names are the same
+* independent variable names should be used. It is recommended to use a prefix such as `author_<variablename>` and `publish_<variablename>` where the variable names are the same
 
 ### Configuration Examples {#configuration-examples}
 
