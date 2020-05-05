@@ -29,7 +29,7 @@ user-guide-title: Authoring Content in AEM as a Cloud Service
     + [Export to CSV](authoring/fundamentals/csv-export.md)
     + [Components](authoring/fundamentals/components.md)
     + [Authoring for Mobile Devices](authoring/fundamentals/mobile.md)
-    + [Accessible Content (WCAG 2.0 Conformance)](authoring/fundamentals/accessible-content.md)
+    + [Creating Accessible Content (WCAG 2.1 Conformance)](authoring/fundamentals/accessible-content.md)
     + [Troubleshooting](authoring/fundamentals/troubleshooting.md)
     + [Keyboard Shortcuts](authoring/fundamentals/keyboard-shortcuts.md)
   + Authoring Features {#features}
