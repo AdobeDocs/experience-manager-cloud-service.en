@@ -301,18 +301,15 @@ The intent is for the value of the OSGI property `my_var1` to be the same for st
 
 | **Folder**  | **Contents of myfile.cfg.json**  |
 |---|---|
-|  config | ```
+|  config |
 { 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-}
-```  |
-|  config.dev | ```
-{ 
+} |
+|  config.dev | { 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
-```  |
+} |
 
