@@ -134,7 +134,7 @@ To add a new configuration to the repository you need to know the following:
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Whether a specific [run mode](/help/sites-deploying/configure-runmodes.md) is required. Create the folder:
+1. Whether a specific runmode is required. Create the folder:
 
     * `config` - for all run modes
     * `config.author` - for the author environment
@@ -299,7 +299,6 @@ In the examples below, assume that there are 3 dev environments, in addition to 
 
 The intent is for the value of the OSGI property `my_var1` to be the same for stage and prod, but differ for each of the 3 dev environments.
 
-html
 <table>
 <tr>
 <td>
