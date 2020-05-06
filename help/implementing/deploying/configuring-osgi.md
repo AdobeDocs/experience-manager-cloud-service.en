@@ -155,7 +155,7 @@ To add a new configuration to the repository you need to know the following:
 
    `select * from sling:OsgiConfig`
 
-   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
 ## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
@@ -177,7 +177,7 @@ To actually add the new configuration to the repository:
 
 ## Configuration Property Format In Source Control {#configuration-property-format-in-source-control}
 
-<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above.
 
 Follow those steps and modify the syntax as outlined in the sub-sections below:
 
