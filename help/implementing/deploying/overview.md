@@ -77,6 +77,8 @@ As mentioned above, OSGI configuration should be committed to source control rat
 * Making the necessary changes on the developer's local AEM environment with the AEM web console's configuration manager and then exporting the results to the AEM project on the local file system
 * Creating the OSGI configuration manually in the AEM project on the local file system, the referencing the AEM console's configuration manager for the property names.
 
+Read more about OSGI configuration at [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+
 ## Mutable Content {#mutable-content}
 
 In some cases it might be useful to prepare content changes in source control so it can be deployed by Cloud Manager whenever an environment was updated. For example, it might be reasonable to seed certain root folder structures or line up changes in editable templates to enable policies in those for components that were updated by the application deployment.
@@ -275,7 +277,7 @@ In existing AEM solutions, customers have the option of running instances with a
 
 AEM as a Cloud Service on the other hand is more opinionated about which run modes are available and how OSGI bundles and OSGI configuration can be mapped to them:
 
-* OSGI configuration run modes must reference dev, stage, prod for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported whereas these have to be used in this particular order (for example author.dev or publish.prod). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which will no longer include the `environment_type` at runtime.
+* OSGI configuration run modes must reference dev, stage, prod for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported whereas these have to be used in this particular order (for example `author.dev` or `publish.prod`). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which will no longer include the `environment_type` at runtime. For more information, see [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * OSGI bundles run modes are limited to the service (author, publish). Per-run mode OSGI bundles should be installed in the content package under either `install/author` or `install/publish`.
 
 Like the existing AEM solutions, there is no way to use run modes to install just content for specific environments or services. If it was desired to seed a dev environment with data or HTML that isn't on stage or production, package manager could be used.
