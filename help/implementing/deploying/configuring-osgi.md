@@ -177,7 +177,9 @@ To actually add the new configuration to the repository:
 
 ## Configuration Property Format In Source Control {#configuration-property-format-in-source-control}
 
-Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. Follow those steps and modify the syntax as outlined in the sub-sections below:
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+Follow those steps and modify the syntax as outlined in the sub-sections below:
 
 ### Inline Values {#inline-values}
 
