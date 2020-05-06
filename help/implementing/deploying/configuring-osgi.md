@@ -3,7 +3,7 @@ title: Configuring OSGi for AEM as a Cloud Service
 description: OSGi Configuration With Secret Values and Environment-specific Values 
 ---
 
-# OSGi Configurations {#osgi-configurations}
+# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and its configurations.
 
@@ -91,7 +91,7 @@ There are three varieties of OSGi configuration values that can be used with AEM
 
 The common case for OSGi uses inline OSGi configuration values. Environment-specific configurations are used only for specific use cases where a value differs between dev environments.
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 Environment-specific configurations extend the traditional, statically-defined OSGi configurations that contain inline values, providing the ability to manage the OSGi configuration values externally via the Cloud Manager API. It is important to understand when the common and traditional approach of defining inline values and storing them in Git, should be used, versus abstracting the values into environment-specific configurations.
 
@@ -161,52 +161,19 @@ To add a new configuration to the repository you need to know the following:
 
 To actually add the new configuration to the repository:
 
-1. Use CRXDE Lite to navigate to:
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-   ` /apps/<yourProject>`
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
-1. If not already existing, create the `config` folder ( `sling:Folder`):
 
-    * `config` - applicable to all run modes
-    * `config.<run-mode>` - specific to a particular run mode
-
-1. Under this folder create a node:
-
-    * Type: `sling:OsgiConfig`
-    * Name: the persistent identity (PID);
-
-      for example for AEM WCM Version Manager use `com.day.cq.wcm.core.impl.VersionManagerImpl`
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >When making a Factory Configuration append `-<identifier>` to the name.
-   >
-   >As in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information); for example:
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
-1. For each parameter that you want to configure, create a property on this node:
 
-    * Name: the parameter name as shown in the Web console; the name is shown in brackets at the end of the field description. For example, for `Create Version on Activation` use `versionmanager.createVersionOnActivation`
-    * Type: as appropriate.
-    * Value: as required.
-
-   You only need to create properties for the parameters that you want to configure, others will still take the default values as set by AEM.
-
-1. Save all changes.
-
-   Changes are applied as soon as the node is updated by restarting the service (as with changes made in the Web console).
-
->[!CAUTION]
->
->You must not change anything in the `/libs` path.
-
->[!CAUTION]
->
->The full path of a configuration must be correct for it to be read at startup.
-
+1. Save the JSON file to your project.
 
 ## Configuration Property Format In Source Control {#configuration-property-format-in-source-control}
 
