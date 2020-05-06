@@ -120,7 +120,7 @@ AEM as a Cloud Service requires the use of environment-specific configurations (
 
 Use secret environment-specific configurations to store the value for secrets on all AEM as a Cloud Service environments, including Stage and Production.
 
-### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
 #### What You Need to Know {#what-you-need-to-know}
 
@@ -173,7 +173,7 @@ To actually add the new configuration to the repository:
    >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. Save the JSON file to your project.
+1. Save the JSON file to your project. -->
 
 ## Configuration Property Format In Source Control {#configuration-property-format-in-source-control}
 
