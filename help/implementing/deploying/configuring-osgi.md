@@ -27,7 +27,7 @@ an OSGi configuration file is defined at:
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-following the [cfg.json OSGi configuration format](following the cfg.json OSGi configuration format).
+following the cfg.json OSGi configuration format.
 
 > [!NOTE]
 >
