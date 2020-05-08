@@ -260,18 +260,21 @@ You can copy a page and all of its sub-pages to a new location:
 
    And then the **Copy** page icon:
 
-   ![Copy button](/help/sites-cloud/authoring/assets/copy.png)
+   ![Copy](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >If you are in selection mode this is exited automatically as soon as the page is copied.
 
 1. Navigate to the location for the new copy of the page.
-1. Use the **Paste** page icon:
+1. The **Paste** icon is available with a drop down arrow directly to the right:
 
-   ![Paste button](/help/sites-cloud/authoring/assets/paste.png)
+   ![Paste](/help/sites-cloud/authoring/assets/paste.png)
+   
+   You can either:
 
-   A copy of the original page and any sub-pages will be created at this location.
+     1. Select the **Paste** page icon itself: A copy of the original page and any child-pages will be created at this location.
+     1. Select the drop down arrow to reveal the **Paste without children** option. A copy of the original page will be created at this location; child-pages will not be copied. 
 
    >[!NOTE]
    >
@@ -373,13 +376,18 @@ AEM offers you the functionality to update any internal links that refer to the 
    >
    >As a security precaution, **the Delete** page icon is not available as a quick action.
 
-1. A dialog will ask for confirmation, use:
+1. A dialog will ask for confirmation.
 
+   ![Delete dialog](/help/sites-cloud/authoring/assets/delete-page.png)
+
+    * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion will be created upon deletion.
+      * [Versions can be restored at a later date.](/help/sites-cloud/authoring/features/page-versions.md)
+      * Pages deleted without previous versions can not be restored.
     * **Cancel** to abort the action
     * **Delete** to confirm the action:
 
-        * If the page has no references, the page will be deleted.
-        * If the page has references, a message box will inform you that **One or more pages are referenced.** You can select **Force Delete** or **Cancel**.
+      * If the page has no references, the page will be deleted.
+      * If the page has references, a message box will inform you that **One or more pages are referenced.** You can select **Force Delete** or **Cancel**.
 
 >[!NOTE]
 >

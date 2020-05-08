@@ -7,7 +7,7 @@ description: How to publish dynamic media assets
 
 You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. After your dynamic media assets are published, they are available to you for including in a web page via URL or by way of embedding.
 
-You can also instantly publish assets that you upload&mdash;without any user intervention. See [Configuring Dynamic Media](config-dm.md).
+You can also instantly publish assets that you upload&mdash;without any user intervention. Or, you can selectively publish those assets. See [Configuring Dynamic Media](config-dm.md).
 
 In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset's name to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
 
@@ -33,5 +33,5 @@ For detailed information on publishing a set or asset, see [Publishing Assets.](
 
 AEM now supports the delivery of all Dynamic Media content (images and video) over HTTP/2. That is, a published URL or embed code for the image or video is available to be integrated with any application that accepts a hosted asset. That published asset is then delivered by way of HTTP/2 protocol. This method of delivery improves the way browsers and servers communicate, allowing for better response and load times of all your Dynamic Media assets.
 
-See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/scene7-http2faq.md) to learn more. 
+See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/http2faq.md) to learn more. 
 <!--this md file used to reside under sites-administering-->

@@ -5,7 +5,7 @@ description: Add your digital assets to Adobe Experience Manager as a Cloud Serv
 
 # Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Uploading your digital files to Adobe Experience Manager enriches the binary content of the file with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files (including images, PDF files, raw files, and so on) from your local folder or a network drive to Experience Manager Assets.
+Adobe Experience Manager enriches the binary content of the uploaded digital files with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to Experience Manager Assets.
 
 A number of upload methods are provided. In addition to the most commonly used browser upload, other methods of adding assets to the Experience Manager repository exist, including desktop clients, like Adobe Asset Link or Experience Manager desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as AEM extensions.
 
@@ -15,7 +15,7 @@ While you can upload and manage any binary file in Experience Manager, most comm
 
 You can also choose to have additional processing done on the uploaded assets. A number of asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions or image processing services. See [Additional processing](#additional-processing) below for more information.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager as a Cloud Service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
 >
@@ -61,7 +61,7 @@ To upload a file (or multiple files), you can either select them on your desktop
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -72,9 +72,9 @@ To upload a file (or multiple files), you can either select them on your desktop
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
-> [!NOTE]
+>[!NOTE]
 >
-> If you need to upload nested folder hierarchies to AEM, please see [Bulk upoad of assets](#bulk-upload)
+> To upload nested folder hierarchies to AEM, see [bulk upload of assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -127,7 +127,7 @@ To upload larger number of files, especially if they exist in a nested folder hi
 * Use a custom upload script or tool that leverages [asset upload APIs](developer-reference-material-apis.md#asset-upload-technical). Such a custom tool can add additional handling of assets (for example, translate metadata or rename files), if required.
 * Use [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
 
@@ -154,7 +154,7 @@ Additionally, if Dynamic Media is enabled in your environment:
 * [Image profiles](dynamic-media/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets
 * [Video profiles](dynamic-media/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters)
 
-> [!NOTE]
+>[!NOTE]
 >
 > Dynamic Media cropping and other operations on assets are non-destructive, that is, they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
 

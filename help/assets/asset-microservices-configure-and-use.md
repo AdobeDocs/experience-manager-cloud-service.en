@@ -7,7 +7,6 @@ contentOwner: AG
 # Get started using asset microservices {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -15,25 +14,24 @@ contentOwner: AG
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Asset microservices provide a scalable and resilient processing of assets using cloud services, which are managed by Adobe for optimal handling of different asset types and processing options.
+Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the services for optimal handling of different asset types and processing options.
 
-Asset processing is carried out based on configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow the administrator to add more specific asset processing configuration. To allow for extensibility and full customization, asset processing allows for an optional configuration of post-processing workflows, which are then created and maintained by the administrator.
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Administrators can create and maintain the configurations of post-processing workflows, including optional customization. Customizing workflows allows for extensibility and full customization.
 
-A high-level flow for asset processing in Experience Manager as a Cloud Service is presented below.
+Asset microservices allows you can process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservices-flow](assets/asset-microservices-flow.png)
+![A high-level view of asset processing](assets/asset-microservices-flow.png "A high-level view of asset processing")
 
 >[!NOTE]
 >
-> For customers updating from previous versions of Experience Manager - asset processing described in this section replaces the "DAM Update Asset" workflow model used for asset ingestion processing before. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
+> The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of Experience Manager. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
 
 ## Get started with asset processing {#get-started}
 
@@ -52,9 +50,9 @@ To configure asset microservices, administrators can use configuration user inte
 
 ### Default configuration {#default-config}
 
-With the default configuration, only the [!UICONTROL standard] processing profile is configured. It is a built-in one, and cannot be modified. It is always executed to ensure that all the processing required by the application is taking place.
+With the default configuration, only the standard processing profile is configured. The standard processing profile is not visible on the user interface and you cannot modify it. It always executes to process uploaded assets. A standard processing profile ensures that all the basic processing required by Experience Manager is completed on all assets.
 
-![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 The standard processing profile provides the following processing configuration:
 
@@ -73,17 +71,18 @@ Additional processing profiles can be added using the **[!UICONTROL Create]** ac
 
 Each processing profile configuration includes a list of renditions. For each rendition, you can specify the following:
 
-* rendition name
-* rendition format (JPEG, PNG, or GIF are supported)
-* rendition width and height in pixels (if not specified, the full pixel size of the original is assumed)
-* rendition quality (for JPEG) in percent
-* Included and excluded MIME types define, which asset types the processing profile applies to
+* Rendition name.
+* Supported rendition format, such as JPEG, PNG, or GIF.
+* Rendition width and height in pixels. If it is not specified, the full pixel size of the original image is used.
+* Rendition quality of JPEG in percent.
+* Included and excluded MIME types to define the applicability of a profile.
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
-When a new processing profile is saved, it is added to the list of configured processing profiles. These processing profiles can then be applied to folders in the folder hierarchy to make them effective for asset uploads and assets done there.
+When you create and save a new processing profile it is added to the list of configured processing profiles. You can apply these processing profiles to folders in the folder hierarchy to make them effective for asset uploads and assets processing.
 
-![processing-profiles-list](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Rendition width and height {#rendition-width-height}
 
@@ -93,19 +92,19 @@ An empty value means that asset processing assumes the pixel dimension of the or
 
 #### MIME type inclusion rules {#mime-type-inclusion-rules}
 
-When an asset with a specific mime type is processed, the mime type is first checked against the excluded mime types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset ("blacklisting").
+When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset ("blacklisting").
 
-Otherwise, the mime type is checked against the included mime type, and if it matches the list, the rendition is generated ("whitelisting").
+Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated ("whitelisting").
 
 #### Special FPO rendition {#special-fpo-rendition}
 
-Processing profile can include a special "FPO rendition", which is used when [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) is used with Adobe InDesign to place direct links to assets from Experience Manager into InDesign documents.
+When placing large-sized assets from AEM into Adobe InDesign documents, a creative professional must wait for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using InDesign. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in InDesign documents to begin with, which can be replaced with full-resolution assets on-demand later. Experience Manager provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio.
 
-Please refer to Adobe Asset Link [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile.
+The processing profile can include a FPO (For Placement Only) rendition. See Adobe Asset Link [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. For more information, see [Adobe Asset Link complete documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 ## Use asset microservices to process assets {#use-asset-microservices}
 
-Once additional processing profiles are created, they need to be applied to specific folders for Experience Manager to use them in asset processing for assets uploaded or updated in these folders. The built-in, standard processing profile is always executed.
+Create and apply the additional, custom processing profiles to specific folders for Experience Manager to process for assets uploaded to or updated in these folders. The default, in-built standard processing profile is always executed but is not visible on the user interface. If you add a custom profile, then both profiles are used to process the uploaded assets.
 
 There are two ways to get processing profiles applied to folders:
 
@@ -122,7 +121,7 @@ After a processing profile is applied to a folder, all the new assets uploaded (
 >
 >When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, it goes up in the folder tree until it finds a processing profile applied, and uses it for the asset. That means that a processing profile applied to a folder works for the entire tree, but can be over-ridden with another profile applied to a sub-folder.
 
-Users can check that the processing actually took place by opening a newly-uploaded asset for which processing has finished, opening asset preview, and clicking on the left-hand rail's **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the mime type inclusion rules, should be visible and accessible.
+Users can check that the processing actually took place by opening a newly-uploaded asset for which processing has finished, opening asset preview, and clicking on the left-hand rail's **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the MIME type inclusion rules, should be visible and accessible.
 
 ![additional-renditions](assets/renditions-additional-renditions.png)
 *Figure: Example of two additional renditions generated by a processing profile applied to the parent folder*
@@ -146,15 +145,15 @@ Adding a post-processing workflow configuration to Experience Manager is compris
 * The last step of such a model must be the `DAM Update Asset Workflow Completed Process` step. This is required to ensure that AEM knows the processing has ended and the asset can be marked as processed ("New")
 * Creating a configuration for the Custom Workflow Runner Service, which allows for configuring execution of a post-processing workflow model either by path (folder location) or regular expression
 
-### Creating post-processing workflow models
+### Create post-processing workflow models {#create-post-processing-workflow-models}
 
-Post-processing workflow models are regular AEM workflow models. Please create different ones if you need different processing for different repository locations or asset types.
+Post-processing workflow models are regular AEM workflow models. Create different models if you need different processing for different repository locations or asset types.
 
-Processing steps should be added based on needs. You can use any supported out-of-the-box steps available, as well as any custom-implemented workflow steps.
+Processing steps should be added based on needs. You can use any supported steps available, as well as any custom-implemented workflow steps.
 
-The last step of each of the post-processing workflows needs to be the `DAM Update Asset Workflow Completed Process`. This ensure that asset is properly marked as "processing completed."
+Ensure that the last step of each post-processing workflows is `DAM Update Asset Workflow Completed Process`. The last step helps ensure that Experience Manager knows when asset processing is completed.
 
-### Configuring post-processing workflow execution
+### Configure post-processing workflow execution {#configure-post-processing-workflow-execution}
 
 To configure the post-processing workflow models to be executed for assets uploaded or updated in the system after the asset microservices processing finishes, the Custom Workflow Runner service needs to be configured.
 
@@ -168,4 +167,4 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 >Configuration of the Custom Workflow Runner is a configuration of an OSGi service. See [deploy to Experience Manager](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
 > OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
 
-For details, on which of the standard workflow steps can be used in the post-processing workflow, please see [Workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
+For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.

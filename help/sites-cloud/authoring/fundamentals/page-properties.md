@@ -101,6 +101,7 @@ The properties are distributed across several tabs.
   >For example: if you define an alias of `latin-lang` for the node `/content/we-retail/spanish` node, then this page can be accessed via `/content/we-retail/latin-language`
   >
   >For further details see Localized page names under SEO and URL Management Best Practices.
+
   <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -168,31 +169,49 @@ Shows the page thumbnail image. You can:
 
 * **Cloud Services**
 
-  * Define properties for cloud services. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+  * Define properties for cloud services. 
+  
+  <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### Personalization {#personalization}
 
 * **ContextHub Configurations**
 
-  * Select the ContextHub Configuration and Segments Path. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+  * Select the ContextHub Configuration and Segments Path.
+  
+  <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **Targeting Configuration**
 
   * Select a [Brand to specify a scope for Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
+  >[!NOTE]
+  >This option requires the user account to be in the `Target Adminstrators`group.
+
 ### Permissions {#permissions}
 
 * **Permissions**
 
-  * Add Permissions <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-  * Edit Closed User Group <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-  * View the Effective Permissions <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+  * Add Permissions 
+  * Edit Closed User Group 
+  * View the Effective Permissions 
+  
+  <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+  
+  <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+  
+  <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
   
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-  * Define properties for a Blueprint page within multi-site management. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+  * Define properties for a Blueprint page within multi-site management. 
+  
+  <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
   * Controls the circumstances under which modifications will be propagated to the Live Copy.
 
 ### Live Copy {#live-copy}
@@ -248,6 +267,7 @@ From the **Sites** console you can select several pages then use **View Properti
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See Editing Properties of Multiple Assets for details.
 >
 >There is also the Bulk Editor, which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -295,6 +315,7 @@ Once you have entered Bulk Editing you can:
 >[!NOTE]
 >
 >The page component can be configured to specify the fields available for bulk editing. See Configuring your page for bulk editing of page properties.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->

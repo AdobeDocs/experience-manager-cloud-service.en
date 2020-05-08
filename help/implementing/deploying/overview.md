@@ -11,6 +11,10 @@ The fundamentals of code development are similar in AEM as a Cloud Service compa
 
 The update of the AEM version is always a separate deployment event from pushing custom code. Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on top of. AEM version updates that happen after that, which will be frequent when compared to Managed Services today, are automatically applied. They are intended to be backwards compatible with the customer code already deployed.
 
+The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
 >[!NOTE]
@@ -41,102 +45,10 @@ For previous AEM solutions, the most current AEM version changed infrequently (r
 
 Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart will be supported and is expected to be the tool of choice for debugging in the majority of cases.
 
-> [!NOTE}
+>[!NOTE]
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-Below is the process for a developer to access the relevant version of the AEM artifacts, which we will refer to as the AEM as a Cloud Service SDK, needed for developing custom code for an internal release. Information about the dispatcher can be found [in this page](/help/implementing/dispatcher/overview.md).
-
-## The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
-
-The AEM as a Cloud Service SDK is comprised of the following artifacts:
-
-* **Quickstart Jar** - The AEM runtime used for local development
-* **Java API Jar** - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
-* **Javadoc Jar** - The javadocs for the Java API Jar
-* **Dispatcher Tools** - The set of tools used to develop against Dispatcher locally. Separate artifacts for unix and windows
-
-In addition, some customers who were previously deployed with AEM 6.5 or earlier versions will use the artifacts below. If local compilation is not working with the Quickstart jar and you suspect it is due to interfaces that have been removed from AEM deployed as a Cloud Service, reach out to Customer Support to determine if you need access. This will require changes in the backend.
-
-* **6.5 Deprecated Java API Jar** - an additional set of interfaced that have been removed since AEM 6.5
-* **6.5 Deprecated Javadoc Jar** - the Javadocs for the additional set of interfaced
-
-## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
-
-* You can check the AEM Admin Console's **About Adobe Experience Manager** icon to find out the version of AEM you are running on production.
-* The quickstart jar and Dispatcher Tools can be downloaded as a zip file from the [Software Distribution portal](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Note that access to the SDK listings is limited to those with AEM Managed Services or AEM as a Cloud Service environments.
-* The Java API Jar and Javadoc Jar can be downloaded through maven tooling, either command line or with your preferred IDE.
-* The maven project poms should reference the following API Jar package. This dependency should also be referenced in any subpackage poms.
-
-```
-
-<dependency>
-  <groupId>com.adobe.aem</groupId>
-  <artifactId>aem-sdk-api</artifactId>
-  <version>2019.11.3006.20191108T223635Z-191201</version> 
-  <scope>provided</scope>
-</dependency>
-
-```
-
-> [!NOTE] The version entry for the SDK should match the version of AEM as a Cloud Service. You can see what version you are using by logging in to AEM, then going to the question mark in the top right corner of the screen and selecting **[!UICONTROL About Adobe Experience Manager]**
-
-* The remote coordinate for the maven repository where the package is hosted should be included in the pom file.
-
-```
-
-<repository>
-    <id>adobe-aem-releases</id>
-    <name>Adobe AEM Repository</name>
-    <url>https://downloads.experiencecloud.adobe.com/content/maven/public</url>
-    <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-    </releases>
-    <snapshots>
-        <enabled>false</enabled>
-    </snapshots>
-</repository>
-
-```
-
-## Refreshing a Local Project with a New SDK Version {#refreshing-a-local-prokect-with-a-new-skd-version}
-
-When is it recommended to refresh the local project with a new SDK?
-
-It is *recommended* to refresh it at least after a monthly maintenance release.
-
-It is *optional* to refresh it after any daily maintenance release. Customers will be informed when their production instance has been successfully upgraded to a new AEM version. For the daily maintenance releases, it is not expected that the new SDK will have changed significantly, if at all. Still, it is recommended to occasionally refresh the local AEM developer environment with the latest SDK, then rebuild and test the custom application. The monthly maintenance release will typically include more impactful changes and thus developers should immediately refresh, rebuild, and test.
-
-Below is the recommended procedure for refreshing a local environment:
-
-1. Make sure that any useful content is either committed to the project in source control or available in a mutable content package for later import
-1. Local development test content needs to be stored separately so that it is not deployed as part of the Cloud Manager pipeline build. This is because it only needs to be used for local development
-1. Stop the currently running quickstart
-1. Move the `crx-quickstart` folder to a different folder for safe keeping
-1. Note the new AEM version, which is noted in Cloud Manager (this will be used to identify the new QuickStart Jar version to download further on)
-1. Download the QuickStart JAR whose version matches the Production AEM version from the Software Distribution Portal
-1. Create a brand new folder and put the new QuickStart Jar inside
-1. Start the new QuickStart with the desired runmodes (either renaming file or passing in runmodes via `-r`). 
-   * Make sure there's no remnant of the old quickstart in the folder.
-1. Build your AEM application
-1. Deploy your AEM application to local AEM via PackageManager
-1. Install any mutable content packages needed for local environment testing via PackageManager
-1. Continue development and deploy changes as needed
-
-If there is content that should be installed with each new AEM quickstart version, include it into a content package and in the project's source control. Then, install it each time.
-
-The recommendation is to update the SDK frequently (for example biweekly) and dispose full local state daily to not accidentally depend on stateful data in the application.
-
-In case you depend on CryptoSupport ([either by configuring the credentials of Cloudservices or the SMTP Mail service in AEM or by using CryptoSupport API in your application](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), the encrypted properties will be encrypted by a key that is autogenerated on the first start of an AEM environment. While the cloudsetup takes care of automatically reusing the environment-specific CryptoKey, it is necessary to inject the cryptokey into the local development environment.
-
-By default AEM is configured to store the key data within the data folder of a folder, but for convenience of easier reuse in development, the AEM process can be initialized on first startup with "`-Dcom.adobe.granite.crypto.file.disable=true`". This will generate the encryption data at "`/etc/key`".
-
-To be able to reuse content packages containing the encrypted values you need to follow these steps:
-
-* When you initially start up the local quickstart.jar, make sure to add the below parameter: "`-Dcom.adobe.granite.crypto.file.disable=true`". It is recommended, but optional, to always add it.
-* The very first time you started up an instance create a package that contains a filter for the root "`/etc/key`". This will hold the secret to be reused across all environments for which you would want them to be reused
-* Export any mutable content containing secrets, or look up the encrypted values via `/crx/de` to add it to the package that will be reused accoss installations
-* Whenever you spin up a fresh instance (either to replace with a new version or as multiple dev environments should share the credentials for testing), install the package produced in step 2 and 3 in order to be able to reuse the content without the need to manually reconfigure. This is because now the cryptokey is in synch.
+In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/overview.md).
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -164,6 +76,8 @@ As mentioned above, OSGI configuration should be committed to source control rat
 
 * Making the necessary changes on the developer's local AEM environment with the AEM web console's configuration manager and then exporting the results to the AEM project on the local file system
 * Creating the OSGI configuration manually in the AEM project on the local file system, the referencing the AEM console's configuration manager for the property names.
+
+Read more about OSGI configuration at [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
 ## Mutable Content {#mutable-content}
 
@@ -195,7 +109,8 @@ After switchover to new version of application:
 
 It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Details to be found in [AEM documentation](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) around recommended project restructuring.
 
->[!NOTE] Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
+>[!NOTE]
+>Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
 
 Also, there is no mechanism to rollback the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
@@ -211,7 +126,8 @@ For the following cases, it is preferable to take the approach of hand coding ex
 * Create/delete groups
 * Create/delete users
 * Add ACLs
-  > [!NOTE] Definition of ACLs requires the node structures to be already present. Thus, preceding create path statements might be necessary.
+  > [!NOTE] 
+  >Definition of ACLs requires the node structures to be already present. Thus, preceding create path statements might be necessary.
 * Add path (for example for root folder structures)
 * Add CNDs (nodetype definitions)
 
@@ -361,7 +277,7 @@ In existing AEM solutions, customers have the option of running instances with a
 
 AEM as a Cloud Service on the other hand is more opinionated about which run modes are available and how OSGI bundles and OSGI configuration can be mapped to them:
 
-* OSGI configuration run modes must reference dev, stage, prod for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported whereas these have to be used in this particular order (for example author.dev or publish.prod). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which will no longer include the `environment_type` at runtime.
+* OSGI configuration run modes must reference dev, stage, prod for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported whereas these have to be used in this particular order (for example `author.dev` or `publish.prod`). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which will no longer include the `environment_type` at runtime. For more information, see [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * OSGI bundles run modes are limited to the service (author, publish). Per-run mode OSGI bundles should be installed in the content package under either `install/author` or `install/publish`.
 
 Like the existing AEM solutions, there is no way to use run modes to install just content for specific environments or services. If it was desired to seed a dev environment with data or HTML that isn't on stage or production, package manager could be used.

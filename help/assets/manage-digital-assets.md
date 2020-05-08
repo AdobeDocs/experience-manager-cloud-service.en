@@ -5,7 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 ---
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To manage Content Fragments, see [Content Fragments](content-fragments/content-fragments.md) assets.
 
@@ -15,7 +15,8 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
@@ -28,32 +29,7 @@ The following (space-separated list of) characters are not supported:
 
 ## Upload assets {#uploading-assets}
 
-See [add digital assets to Experience Manager](add-assets.md).
-
-### Streamed uploads {#streamed-uploads}
-
-If you upload many assets to AEM, the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. AEM Assets supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in AEM Assets.
-
->[!NOTE]
->
->Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
-
-### Extract ZIP archive containing assets {#extractzip}
-
-You can upload ZIP archives just like any other supported asset. The same file name rules apply to ZIP files. AEM allows you to extract a ZIP archive to a DAM location. If the archive files do not contain ZIP as extension, enable file type detection using content.
-
-Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and select a destination folder. Select an option to handle conflicts, if any. If the assets in the ZIP file already exist in the destination folder, you can select one of these options: skip extraction, replace existing files, keep both assets by renaming, or create new version.
-
-After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interrupting the extraction.
-
-![Notification of zip extraction](assets/zip_extract_notification.png)
-
-Some limitations of the feature are:
-
-* If a folder by the same name exists at the destination, the assets from the ZIP file are extracted in the existing folder.
-* If you cancel the extraction, the already extracted assets are not deleted.
-* You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
-* When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing the latest service pack.
+See [add digital assets to Experience Manager](add-assets.md), for detailed information.
 
 ## Preview assets {#previewing-assets}
 
@@ -90,19 +66,13 @@ To preview an asset, follow these steps.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
+1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press the Enter key. The new tag is saved in AEM.
 
    YouTube requires Tags to publish and have a link to YouTube (if a suitable link can be found).
 
    >[!NOTE]
    >
-   >To create tags, write permission for `/content/cq:tags/default` in the CRX repository are required.
-
-1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
-
-   ![ratings](assets/ratings.png)
-
-   The rating score that you assign to the asset is displayed under **[!UICONTROL Your Ratings]**. The average rating score that the asset received from users who rated the asset is displayed under **[!UICONTROL Rating]**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **[!UICONTROL Rating Breakdown]**. You can search assets based on average rating scores.
+   >To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
 
 1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
 
@@ -115,7 +85,8 @@ To preview an asset, follow these steps.
    For more details, see [Asset Insights](assets-insights.md).
 
 1. Tap/click **[!UICONTROL Save & Close]**.
-1. Navigate to the Assets user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
+
+1. Navigate to the Assets user interface. The edited metadata properties, including title, description, and tags are displayed on the asset card in Card view and under relevant columns in the List view.
 
 ## Copy assets {#copying-assets}
 
@@ -123,7 +94,7 @@ When you copy an asset or a folder, the entire asset or the folder is copied, al
 
 A few attributes that are unique to a particular copy of an asset are not carried forward. Some examples are:
 
-* Relative path, asset ID, creation date and time, and versions and version history. Some of these properties are indicated by the properties `dam:relativePath`, `jcr:uuid`, `jcr:created`, and `cq:name`.
+* Asset ID, creation date and time, and versions and version history. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
 * Creation time and referenced paths are unique for each asset and each of its rendition.
 
@@ -236,28 +207,6 @@ The other properties and metadata information is retained. A partial copy is not
    >[!NOTE]
    >
    >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
-
-### View subassets {#viewing-subassets}
-
-In AEM, subassets can be generated for assets with supported multi-page formats such as PDF, AI, Powerpoint/Apple Keynote, and InDesign. These subassets are like normal assets, but are linked to their parent asset and facilitate multi-page view in the Touch UI.
-
-Subasset generation is disabled by default. To enable subasset generation, add the **[!UICONTROL Create Sub Asset]** step to the DAM Update Asset workflow.
-
-For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` component from the contents of the Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
-
-1. To view subassets, navigate to the location of the asset and open its asset page.
-
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Subassets]** from the list
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >The **Subassets** option is displayed only if subassets are-available/have-been-generated for the asset.
-
-   When you select **Subassets** from the list, the **subassets** page displays the subassets linked to the parent asset.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
 
 ## Delete assets {#delete-assets}
 
@@ -470,11 +419,13 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
+<!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
+-->
 
    >[!NOTE]
    >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
+   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
@@ -567,43 +518,11 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
-
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
-
-If an asset includes annotations in foreign languages (especially non-latin languages), you must first configure CQ-DAM-Handler-Gibson Font Manager Service on the AEM server to be able to print these annotations. When configuring CQ-DAM-Handler-Gibson Font Manager Service, provide the path where fonts for the desired languages are located.
-
-1. Open the CQ-DAM-Handler-Gibson Font Manager Service configuration page from the URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. To configure CQ-DAM-Handler-Gibson Font Manager Service, do one of the following:
-
-    * In the System Fonts directory option, specify the complete path to the fonts directory on your system. For example, if you're a Mac user, you can specify the path as */Library/Fonts* in the System Fonts directory option. AEM fetches the fonts from this directory.
-    * Create a directory named `fonts` inside the ``crx-quickstart`` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. You can override this default path from within the Adobe Server Fonts directory option.
-
-    * Create a new folder for fonts in your system, and store the desired fonts in the folder. Then, specify the complete path to that folder in the Customer Fonts directory option.
-
-1. Access the Annotation PDF configuration from the URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. Configure the Annotation PDF with the correct set of font-family as follows:
-
-    * Include the string `<font_family_name_of_custom_font, sans-serif>` within the font-family option. For example, if you want to print annotations in CJK (Chinese, Japanese and Korean), include the string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in the font-family option. If you want to print annotations in Hindi, download the appropriate font and configure the font-family as Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
-
-1. Restart the AEM instance.
-
-Here is an example of how you can configure AEM to print annotations in CJK (Chinese, Japanese and Korean):
-
-1. Download Google Noto CJK fonts from the following links, and store them in the font directory configured in Font Manager Service.
-
-    * All In One Super CJK font: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-    * Noto Sans (for European languages): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-    * Noto fonts for a language of your choice: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. This configuration is available by default and works for all European and CJK languages.
-1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma separated) entry to the default font-family.
 
 ## Asset versioning {#asset-versioning}
 

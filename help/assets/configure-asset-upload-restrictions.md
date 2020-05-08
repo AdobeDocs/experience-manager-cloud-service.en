@@ -18,4 +18,3 @@ You can configure Adobe Experience Manager (AEM) Assets to restrict the type of 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
 1. Click/tap **[!UICONTROL Save]** to save the changes. If you specify MIME-strings for allowed MIME types, the upload operation fails for any asset with MIME type that doesn’t match the configured MIME strings in these fields.
-

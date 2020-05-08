@@ -1,6 +1,6 @@
 # Adobe Experience Manager Cloud Service Documentation
 
-This is the repository for [!UICONTROL Adobe Experience Manager] Cloud Service documentation. This documentation covers the installation, administering, authoring use, and how to customize AEM using Cloud Service.
+This is the repository for Adobe Experience Manager Cloud Service documentation. This documentation covers the installation, administering, authoring use, and how to customize AEM using Cloud Service.
 
 Your contributions to the documentation are welcome. Please see the following resources:
 

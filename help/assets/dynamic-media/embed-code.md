@@ -45,4 +45,4 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 HTTP/2 is the new, updated web protocol that improves the way browsers and servers communicate. It provides faster transfer of information and reduces the amount of processing power that is needed. Delivery of Dynamic Media assets can now be over HTTP/2 which provides better response and load times.
 
-See [HTTP2 Delivery of Content](http2.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
+See [HTTP2 Delivery of Content](http2faq.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.

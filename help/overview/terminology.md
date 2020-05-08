@@ -34,6 +34,7 @@ The following terms are used in relation to Adobe Experience Manager (AEM) as a 
 | Asset microservices | Cloud-based digital asset processing services that cater to various asset processing use cases, such as rendition generation, PDF processions, subasset handling, text extraction, and so on. See [asset microservices overview](/help/assets/asset-microservices-overview.md), for more information. |
 |Cloud Manager Git Repository|Where customers store their code and configuration settings.|
 |Cloud Provider|AEM as a Cloud Service supports both Azure and AWS as cloud providers.|
+|Content Delivery Network (CDN)|AEM as Cloud Service is shipped with a default CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.|
 |Content Repository|Where the content is persisted.|
 |Enterprise Isolation|Each instance of the AEM as a Cloud service is isolated from the other instances.|
 |Golden Master|The AEM publish tier.|

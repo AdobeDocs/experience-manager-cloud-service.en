@@ -8,32 +8,32 @@ contentOwner: AG
 
 ## Overview {#overview}
 
-The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](content-fragments/content-fragments.md).
+The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](assets-api-content-fragments.md).
 
 To access the API:
 
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
 
-The API response is a JSON file for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
+The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
 After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
 >[!NOTE]
 >
->All the API calls related to uploading or updating assets or binaries in general (like renditions) is depreated for AEM as a Cloud Service deployment. For uploading binaries, please use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
+>All the API calls related to uploading or updating assets or binaries in general (like renditions) is depreated for AEM as a Cloud Service deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
 
 ## Content Fragments {#content-fragments}
 
 A [content fragment](content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.
 
-For further information see [Content Fragments Support in the AEM Assets HTTP API](content-fragments/content-fragments.md).
+For further information see [Content Fragments Support in the AEM Assets HTTP API](assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 
 The Assets HTTP API exposes two major elements, folders and assets (for standard assets).
 
-Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](content-fragments/content-fragments.md) for further information.
+Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
 
 ### Folders {#folders}
 
@@ -62,7 +62,7 @@ In AEM an assets contains the following elements:
 * Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or InDesign.
 * Optional comments
 
-For information about elements in Content Fragments see [Content Fragments Support in AEM Assets HTTP API](content-fragments/content-fragments.md).
+For information about elements in Content Fragments see [Content Fragments Support in AEM Assets HTTP API](assets-api-content-fragments.md).
 
 In AEM a folder has the following components:
 

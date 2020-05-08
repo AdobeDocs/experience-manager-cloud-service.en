@@ -57,6 +57,12 @@ Follow the steps below to create a sandbox program:
 
    ![](assets/create-program-setup-deploy.png)
 
+   >[!NOTE]
+   >You can also edit, switch or add a program from Cloud Manager Overview page, as shown below:
+
+   ![](assets/create-program-a1.png)
+
+
 
 ## Creating a Regular Program {#create-regular-program}
 

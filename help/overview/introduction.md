@@ -15,6 +15,8 @@ Adobe Experience Manager as a Cloud Service:
 
 * Provides Continuous Delivery and Continuous Integration for updates with zero downtime.
 
+* Delivers content quickly and efficiently, leveraging a built-in Content Delivery Network (CDN) and other network layer best practices.
+
 * Is based on a dynamic architecture that autoscales, thus removing infrastructure considerations.
 
 * Is security focused, using automated tests to scan for common vulnerabilities.

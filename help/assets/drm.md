@@ -28,9 +28,9 @@ You can view the expiration status of an asset at the following places:
 
 You can search for expired assets, including expired subassets in the Search panel.
 
-1. In the Assets console, click the Search icon in the toolbar to display the Omni Search box.
+1. In the Assets console, click the Search icon in the toolbar to display the Omnisearch field.
 
-1. With the cursor in the Omni Search box, hit the Return key to display the Search Results page.
+1. With the cursor in the Omnisearch box, press the Enter key to display the search results page.
 
 1. Click the GlobalNav icon to display the Search panel.
 
@@ -38,23 +38,25 @@ You can search for expired assets, including expired subassets in the Search pan
 
 1. Select **[!UICONTROL Expired]**. The expired assets are displayed in search results.
 
-When you choose the **Expired** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. The compound assets that reference expired subassets are not displayed immediately after the subassets expire. Instead, they are displayed after AEM Assets detects that they reference expired subassets the next time the scheduler runs.
+When you choose the **[!UICONTROL Expired]** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. The compound assets that reference expired subassets are not displayed immediately after the subassets expire. Instead, they are displayed after AEM Assets detects that they reference expired subassets the next time the scheduler runs.
 
 If you modify the expiration date of a published asset to a date earlier than the current scheduler cycle, the schedule still detects this asset as an expired asset in the next time it runs and reflects is status accordingly.
 
 In addition, if a glitch or error prevents the scheduler from detecting expired assets in the current cycle, the scheduler re-examines these assets in the next cycle and detects their expired status.
 
-To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in AEM Configuration Manager.
+To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in AEM Configuration Manager.
 
 1. Open AEM Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. After the job completes, assets that have expired subassets and referenced assets are displayed as expired in search results.
 
 1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 00 hrs.
-1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
    >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. In the **[!UICONTROL Prior notification in seconds]** field, specify the time in seconds prior to the time an asset expires when you want to receive a notification regarding the expiration. If you are an administrator or the asset creator, you receive a message before the expiration of the asset notifying you that the asset is about to expire after the specified time.
 
@@ -86,7 +88,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
 1. To search for assets based on their status, click/tap the **[!UICONTROL Search]** icon to display the Omnisearch bar.
 
-1. Hit the Return key and then click/tap the **[!UICONTROL GlobalNav]** icon to display the Search panel.
+1. Press the Enter key and then click/tap the AEM icon to display the Search panel.
 1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
 1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
