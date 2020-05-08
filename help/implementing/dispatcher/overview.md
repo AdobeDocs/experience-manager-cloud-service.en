@@ -12,6 +12,9 @@ This section describes how to structure the AEM as a Cloud Service Apache and Di
 >[!NOTE]
 >Windows users will need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
 
+>[!WARNING]
+> Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility.
+
 ## Dispatcher Tools {#dispatcher-sdk}
 
 The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and provide:
