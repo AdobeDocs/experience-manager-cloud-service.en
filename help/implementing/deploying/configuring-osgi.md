@@ -163,37 +163,37 @@ There are two ways create new OSGi configurations, as described below. The forme
 
 ### Writing OSGi Configurations
 
-OSGi configuration JSON file by hand directly in the your AEM project. This is often the quickest way to create OSGi configurations for well known OSGi components, and especially custom OSGi components that have been designed and developed by the same developer defining the configurations. This approach can also be leveraged to copy/paste and update configurations for the same OSGi component across various runmode folders.
+JSON formatted OSGi configuration files can be written by hand directly in the AEM project. This is often the quickest way to create OSGi configurations for well known OSGi components, and especially custom OSGi components that have been designed and developed by the same developer defining the configurations. This approach can also be leveraged to copy/paste and update configurations for the same OSGi component across various runmode folders.
 
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration should effect
-2. In this config folder, create a new `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component is is usually the OSGi component implementation's full class name. For example:
+1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component is is usually the OSGi component implementation's full class name. For example:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
    Note that OSGi configuration factory file names, use the `<PID>-<factory-name>.cfg.json` naming convention
-3. Open the new `.cfg.json` file, and define the key/value combinations for the OSGi property and value pairs, following the [JSON OSGi configuration format](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
-4. Save your changes to the new `.cfg.json` file
-5. Add and commit your new OSGi configuration file to Git
+1. Open the new `.cfg.json` file, and define the key/value combinations for the OSGi property and value pairs, following the [JSON OSGi configuration format](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Save your changes to the new `.cfg.json` file
+1. Add and commit your new OSGi configuration file to Git
 
 ### Generating OSGi Configurations using the AEM SDK Quickstart
 
 The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi components, and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and their value formats may not be well understood by the developer defining the OSGi configurations in the AEM project. Note that using the AEM Web Console's Configuration UI does write `.cfg.json` files into the repository, so be aware of this to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console as the admin user
-2. Navigate to OSGi > Configuration
-3. Locate the OSGi component to configure, and tap its title to edit
+1. Navigate to OSGi > Configuration
+1. Locate the OSGi component to configure, and tap its title to edit
    ![OSGi Configuration](./assets/configuring-osgi/configuration.png)
-4. Edit the OSGi configuration property values via the Web UI as needed
-5. Record the Persistent Identity (PID) to safe place, this will be used later to generate the OSGi configuration JSON
-6. Tap Save
-7. Navigate to OSGi > OSGi Installer Configuration Printer
-8. Paste in the PID copied in Step 5, ensure Serialization Format is set to "OSGi Configurator JSON" 
-9. Tap Print,
-10. The OSGi Configuration in JSON format will display in the Serialized Configuration Properties section
+1. Edit the OSGi configuration property values via the Web UI as needed
+1. Record the Persistent Identity (PID) to safe place, this will be used later to generate the OSGi configuration JSON
+1. Tap Save
+1. Navigate to OSGi > OSGi Installer Configuration Printer
+1. Paste in the PID copied in Step 5, ensure Serialization Format is set to "OSGi Configurator JSON" 
+1. Tap Print,
+1. The OSGi Configuration in JSON format will display in the Serialized Configuration Properties section
    ![OSGi Installer Configuration Printer](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
-11. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration should effect.
-12. In this config folder, create a new `<PID>.cfg.json` file. The PID is the same value from Step 5.
-13. Paste the Serialized Configuration Properties from Step 10 into the `.cfg.json` file.
-14. Save your changes to the new `.cfg.json` file.
-15. Add and commit your new OSGi configuration file to Git.
+1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration should effect.
+1. In this config folder, create a new `<PID>.cfg.json` file. The PID is the same value from Step 5.
+1. Paste the Serialized Configuration Properties from Step 10 into the `.cfg.json` file.
+1. Save your changes to the new `.cfg.json` file.
+1. Add and commit your new OSGi configuration file to Git.
 
 
 ## OSGi Configuration Property Formats
