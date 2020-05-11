@@ -25,7 +25,7 @@ In addition, see:
 The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
 
 * **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
-* **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches an enhanced level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
+* **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches a foundational level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
 * **Level AAA:** Your site reaches a very high level of accessibility. To meet this level, all Level A, Level AA and Level AAA Success Criteria are satisfied.
 
 When creating your site, you should determine the overall level to which you would like your site to conform.
@@ -42,7 +42,6 @@ The following section presents the [WCAG 2.1 Guidelines](https://www.w3.org/TR/W
 >
 >* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
->
 
 ## Principle 1: Perceivable {#principle-perceivable}
 
@@ -76,7 +75,7 @@ For static graphics, the basic requirement is to provide an equivalent text alte
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be nonsensical, the **Image is decorative** option can be checked.
+AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
 
 #### Creating Good Text Alternatives {#creating-good-text-alternatives}
 
@@ -89,7 +88,7 @@ There are various forms of non-text content, so the value of the text alternativ
 * Alternative text should not replicate content provided in text form nearby on the same page. Remember that many images are illustrations of points already covered in the text of a page, so a detailed text alternative may already exist.
 * If the non-text content is a link to another page or document and there is no other text forming part of the same link, then the alternative text for the image must indicate the destination of the link, not describe the image.
 * If the non-text content is contained in a button element and there is no text forming part of the same button, then the alternative text of the image must indicate the functionality of the button, not describe the image.
-* It is perfectly acceptable for an image to be given an empty (null) alternative text, but only if the image has no alternative text (for example, it is a purely decorative graphic) or if the equivalent text already exists in the page text.
+* It is perfectly acceptable for an image to be given an empty (null) alternative text, but only if the image needs no alternative text (for example, it is a purely decorative graphic) or if the equivalent text already exists in the page text.
 
 <!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
