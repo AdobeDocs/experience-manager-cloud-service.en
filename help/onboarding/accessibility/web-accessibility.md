@@ -13,7 +13,7 @@ Creating accessible websites and content with AEM as a Cloud Service impacts:
  
 * Authors using these features to create accessible websites.
  
-  * Creating accessible content is a process. AEM provides the capabilities, but content authors need to ensure that they follow the techniques required to create accessible content.
+  Creating accessible content is a process. AEM provides the capabilities, but content authors need to ensure that they follow the techniques required to create accessible content.
  
 * Template developers should also be aware of such issues when implementing the website design.
  
@@ -26,15 +26,6 @@ The [World Wide Web Consortium (W3C)](https://www.w3.org/) is an international c
 ## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
 To help web designers and developers produce accessible websites the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) published the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) in June 2018.
-
->[!NOTE]
-> 
-> WCAG 2.1 updates the previous version, WCAG 2.0, from 2008. See [WCAG 2.1 - Comparison with WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
-
->[!NOTE]
-> 
->An [updated version of the guidelines, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) is currently in development, but will not be considered at this point in time.
- 
 
 WCAG 2.1 provides [guidelines (with related success criteria) covering the accessibility levels and how to conform to them](https://www.w3.org/TR/WCAG/#conformance).
  

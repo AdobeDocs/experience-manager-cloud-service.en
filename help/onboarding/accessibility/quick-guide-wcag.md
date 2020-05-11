@@ -9,11 +9,19 @@ Adobe Experience Manager (AEM) as a Cloud Service has been developed to maximize
 
 The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
+>[!NOTE]
+> 
+> WCAG 2.1 updates the previous version, WCAG 2.0, from 2008. See [WCAG 2.1 - Comparison with WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+
+>[!NOTE]
+> 
+>An [updated version of the guidelines, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) is currently in development, but will not be considered at this point in time.
+
 WCAG 2.1 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities. They provide advice to web content authors, designers and developers on ensuring that the resources they produce are as accessible as possible to as many people as possible, regardless of any disability they have; for example, visual impairment, hearing loss, learning difficulties, age related limitations, amongst others.
 
 For example, describing an image (or any other non-text content) by using the `alt` attribute in HTML greatly benefits people who are blind or partially sighted. The textual description in the `alt` attribute can either be converted into speech output or transmitted to electronic refreshable braille displays.
 
-Additionally, WCAG 2.1 can result in advatages for other beneficiaries, including people who may be considered *situationally disabled*. People who, because of circumstances such as browsing technology, network connection speed or browsing environment, may experience barriers similar to people with disabilities.
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. People who, because of circumstances such as browsing technology, network connection speed or browsing environment, may experience barriers similar to people with disabilities.
 
 Using Adobe Experience Manager, content authors and/or website owners can create web content that meets relevant WCAG 2.1 Level A and Level AA success criteria.
 
@@ -61,14 +69,14 @@ To elaborate:
 * Each guideline consists of one or more **success criteria**.
 * Success criteria are written as statements, which are either `True` or `False` for any given web page.
 * Success sriteria may include either/or choices, or may include exceptions; situations where the success criteria need not be met.
-* Success criteria are numbered according to the parent guideline and principle, from 1.1.1 to 4.1.1. They also have a short name summarizing the intent of the criterion, for easier reference. For example, success criterion 1.1.1 is Non-text alternative.
+* Success criteria are numbered according to the parent guideline and principle, from 1.1.1 to 4.1.1. They also have a short name summarizing the intent of the criterion, for easier reference. For example, success criterion 1.1.1 is Non-text Content.
 * Success criteria include a list of related **techniques** (described in more detail below).
 
 ## Supporting Resources {#supporting-resources}
 
 In addition to the core WCAG 2.1 components of Principles, Guidelines and Success Criteria, there are a series of supporting documents. Some of them provide specific advice on how to meet aspects of the guidelines, others are more general references helping web authors, designers and developers of all abilities understand and use WCAG 2.1 as effectively as possible.
 
-While WCAG 2.1 is a stable document, and will not change, most of these supporting resources are dynamic documents; they will change and grow over time, as new technologies emerge, and new examples are found of how web accessibility can be achieved.
+While WCAG 2.1 itself is a stable document, and will not change, most of these supporting resources are dynamic documents; they will change and grow over time, as new technologies emerge, and new examples are found of how web accessibility can be achieved.
 
 ### WCAG 2.1 Resources {#wcag-resources}
 
@@ -83,7 +91,7 @@ This list is not intended to be exhaustive, it provides an introduction to the r
 
 ### What is New in WCAG 2.1 {#what-is-new}
 
-[What's New in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) provides valuable information about the delta between WCAG and 2.0 and WCAG 2.1.
+[What's New in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) provides valuable information about the delta between WCAG 2.0 and WCAG 2.1.
 
 The section [WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) further clarifies the status of their relationship.
 
@@ -134,7 +142,7 @@ An example can be found at: [Understanding Success Criterion 1.1.1 ("Non-text co
 
 ### How to Meet WCAG 2.1 {#how-to-meet-wcag}
 
-The ‘How to Meet’ section is available on the [How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) page. This section provides an alternative presentation of WCAG, allowing refining the content of the guidelines to those most relevant to a reader’s own interests or circumstances. Readers can filter the success criteria techniques they would like to view by specifying particular web content technologies such as Cascading Style Sheets or scripting, or specifying a particular priority level(s).
+The ‘How to Meet’ section is available on the [How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) page. This section provides an alternative presentation of WCAG, allowing readers to refine the content of the guidelines to those most relevant to their own interests and/or circumstances. Readers can filter the success criteria techniques they would like to view by specifying particular web content technologies such as Cascading Style Sheets or scripting, or specifying a particular priority level(s).
 
 Without filtering, this resource provides all success criteria grouped by guideline. For each success criterion, the following is provided:
 
