@@ -353,38 +353,40 @@ You can make sure your web pages are given the appropriate structure by using th
     >
     >They are effectively the same, but `<strong>` and `<em>` are preferable as they are semantically correct html. Your development team can configure the RTE to use `<strong>` and `<em>` (instead of `<b>` and `<i>`) when developing your project instance.
 
-* **Complex Data Tables**: In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
+* **Complex Data Tables**: In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. 
 
   >[!NOTE]
   >
   >The id attribute is not available in an out-of-the-box installation. It can be enabled by configuring HTML rules and the serializer in the RTE.
 
- ```xml
-  <table>
-     <tr>
-       <th rowspan="2" id="h">Homework</th>
-       <th colspan="3" id="e">Exams</th>
-       <th colspan="3" id="p">Projects</th>
-     </tr>
-     <tr>
-       <th id="e1" headers="e">1</th>
-       <th id="e2" headers="e">2</th>
-       <th id="ef" headers="e">Final</th>
-       <th id="p1" headers="p">1</th>
-       <th id="p2" headers="p">2</th>
-       <th id="pf" headers="p">Final</th>
-     </tr>
-     <tr>
-      <td headers="h">15%</td>
-      <td headers="e e1">15%</td>
-      <td headers="e e2">15%</td>
-      <td headers="e ef">20%</td>
-      <td headers="p p1">10%</td>
-      <td headers="p p2">10%</td>
-      <td headers="p pf">15%</td>
-     </tr>
+  For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
+
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
     </table>
- ```
+  ```
 
   To achieve this in AEM you must add the markup directly using the source edit mode.
 
@@ -485,9 +487,6 @@ If color is used as a cue to provide information, you should provide an addition
 * [Understanding Success Criteria 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [How to Meet Success Criteria 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### Audio Control (1.4.2)  {#audio-control}
 
 * Success Criterion 1.4.2
@@ -553,7 +552,7 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 
 >[!NOTE]
 >
->To help with conversions to other units:
+>The following sites can help with conversions to other units:
 >
 >* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
