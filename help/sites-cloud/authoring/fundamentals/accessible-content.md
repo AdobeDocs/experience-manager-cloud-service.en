@@ -178,10 +178,6 @@ Inserting multimedia into your AEM web pages is similar to inserting an image. H
 
 People who are Deaf or hard of hearing will be unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
 
->[!NOTE]
->
->Captions are not required where suitable text or non-text equivalents (that provide directly equivalent information) are available on the same page as the video or animation.
-
 #### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
 Captions can be either:
@@ -549,6 +545,20 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 * For text that is at least 18-point (or 14-point bold) in size, the contrast ratio should be at least 3:1.
 * If a background is patterned, then the background around any text should be shaded so that the 4.5:1 or 3:1 ratio is maintained.
 
+>[!NOTE]
+>
+>Please remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
+>
+>It is recommended to use good judgment and err on the side of readability and usability when selecting the appropriate fonts and sizing for web content.
+
+>[!NOTE]
+>
+>To help with conversions to other units:
+>
+>* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
+>* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
+
 To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
 Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user’s browser will determine the colors of the text and background.
@@ -797,7 +807,7 @@ You can also edit the page title when editing a page, which is accessible by **P
  
 #### Purpose - Focus Order (2.4.3) {#purpose-focus-order}
 
-The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, moving through components in a table one row at a time or one column at a time both reflect the logical relationships in the content. Either order may satisfy this Success Criterion.
+The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, moving through components in an online form composed of multiple fields and/or steps reflects the logical relationships in the content. 
 
 #### How to Meet - Focus Order (2.4.3) {#how-to-meet-focus-order}
  
@@ -960,13 +970,17 @@ The purpose of this success criterion is to make sure that text and other lingui
 
 To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. For example:
 
-* If a page is written in British English, the `<html>` element should read:
-  `<html lang = “en-gb”>`
+* If a page is written in English, the `<html>` element should read:
+  `<html lang = “en”>`
 
-* Whereas a page to be rendered as US English should adopt the following standard:
-  `<html lang = “en-us”>`
+* Whereas a page to be rendered in Spanish should adopt the following standard:
+  `<html lang = “es”>`
 
-In AEM, the default language of your page is set when creating the page, but may also be changed when editing a page, which is accessible by **Sidekick** - **Page** tab - **Page Properties...** - **Advanced** tab.
+In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+
+>[!NOTE]
+>
+>AEM provides further fine-tuning for variations of a root language; for example, American Engish - en-us, British English - en-gb, and Canadian English - en-ca. This level of detail is often superfluous for assistive technology, though can be used for regional variations in page content.
 
 #### More Information - Language of Page (3.1.1) {#more-information-language-of-page}
 
@@ -987,7 +1001,7 @@ The purpose of this success criterion is similar to the success criterion [Langu
 Pages applying this success criterion allow:
 
 * Braille transition software to insert accented characters.
-* Screen readers to pronounce those words that are not in the default language correctly.
+* Screen readers to pronounce those words that have special characters or are not in the default language that was identified at the page level.
 * Translation tools such as Google Translate to correctly translate content from one language to another.
 
 #### How to Meet - Language of Parts (3.1.2) {#how-to-meet-language-of-parts}
