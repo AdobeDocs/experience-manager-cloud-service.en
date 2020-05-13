@@ -11,7 +11,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 > 
-> WCAG 2.1 updates the previous version, WCAG 2.0, from 2008. See [WCAG 2.1 - Comparison with WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+> WCAG 2.1 updates the previous version WCAG 2.0, from 2008. See [WCAG 2.1 - Comparison with WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 > 
@@ -108,7 +108,7 @@ Techniques can be accessed:
 * By collection (techniques may be general, or relate to a specific technology or format - such as HTML, CSS, or Client-side Scripting), or
 * From related success criteria. Techniques can apply to more than one success criterion.
 
-Each technique has a unique number, which relates to its collection. For example, one of the ARIA techniques is *Technique ARIA2: Identifying required fields with the "required" property*.
+Each technique has a unique number, which relates to its collection. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 Techniques may be Sufficient, Advisory, or a Failure:
 
