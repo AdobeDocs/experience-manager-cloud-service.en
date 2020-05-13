@@ -13,11 +13,15 @@ Creating accessible websites and content with AEM as a Cloud Service impacts:
  
 * Authors using these features to create accessible websites.
  
-  * Creating accessible content is a process. AEM provides the capabilities, but content authors need to ensure that they follow the techniques required to create accessible content.
+  Creating accessible content is a process. AEM provides the capabilities, but content authors need to ensure that they follow the techniques required to create accessible content.
  
 * Template developers should also be aware of such issues when implementing the website design.
  
 Adobe Experience Manager as a Cloud Service works with the [guidelines](#wcag-accessibility-guideslines) provided by the [World Wide Web Consortium](#world-wide-web-consortium). 
+
+>[!NOTE]
+>
+> See the [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html) for further details.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
  
@@ -26,15 +30,6 @@ The [World Wide Web Consortium (W3C)](https://www.w3.org/) is an international c
 ## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
 To help web designers and developers produce accessible websites the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) published the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) in June 2018.
-
->[!NOTE]
-> 
-> WCAG 2.1 updates the previous version, WCAG 2.0, from 2008. See [WCAG 2.1 - Comparison with WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
-
->[!NOTE]
-> 
->An [updated version of the guidelines, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) is currently in development, but will not be considered at this point in time.
- 
 
 WCAG 2.1 provides [guidelines (with related success criteria) covering the accessibility levels and how to conform to them](https://www.w3.org/TR/WCAG/#conformance).
  
@@ -49,8 +44,6 @@ Using Adobe Experience Manager, content authors and/or website owners can create
 >[!NOTE]
 > 
 >When creating your site, you should determine the overall level to which you would like your site to conform.
->
->As it is not possible to satisfy all Level AAA Success Criteria for certain types of content, it is not recommended as a required level of conformance.
  
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)
