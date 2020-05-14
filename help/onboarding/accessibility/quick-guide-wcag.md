@@ -63,7 +63,7 @@ To elaborate:
 * Each guideline consists of one or more **success criteria**.
 * Success criteria are written as statements, which are either `True` or `False` for any given web page.
 * Success sriteria may include either/or choices, or may include exceptions; situations where the success criteria need not be met.
-* Success criteria are numbered according to the parent guideline and principle, from 1.1.1 to 4.1.1. They also have a short name summarizing the intent of the criterion, for easier reference. For example, success criterion 1.1.1 is Non-text Content.
+* Success criteria are numbered according to the parent guideline and principle, from 1.1.1 to 4.1.1. They also have a short name summarizing the intent of the criterion, for easier reference. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * Success criteria include a list of related **techniques** (described in more detail below).
 
 ## Supporting Resources {#supporting-resources}
@@ -85,9 +85,11 @@ This list is not intended to be exhaustive, it provides an introduction to the r
 
 ### What is New in WCAG 2.1 {#what-is-new}
 
-[What's New in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) provides valuable information about the delta between WCAG 2.0 and WCAG 2.1.
+The guidelines provide information about what is new in WCAG 2.1:
 
-The section [WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) further clarifies the status of their relationship.
+* [What's New in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) provides valuable information about the delta between WCAG 2.0 and WCAG 2.1. 
+
+* The section [WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) further clarifies the status of their relationship.
 
 ### Techniques for WCAG 2.1 {#techniques-for-wcag}
 

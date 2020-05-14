@@ -17,7 +17,7 @@ Creating accessible websites and content with AEM as a Cloud Service impacts:
  
 * Template developers should also be aware of such issues when implementing the website design.
  
-Adobe Experience Manager as a Cloud Service works with the [guidelines](#wcag-accessibility-guideslines) provided by the [World Wide Web Consortium](#world-wide-web-consortium). 
+Adobe Experience Manager as a Cloud Service works with the [guidelines](#wcag-accessibility-guidelines) provided by the [World Wide Web Consortium](#world-wide-web-consortium). 
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Adobe Experience Manager as a Cloud Service works with the [guidelines](#wcag-ac
  
 The [World Wide Web Consortium (W3C)](https://www.w3.org/) is an international community dedicated to developing web standards. Their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) publishes the [Web Content Accessibility Guidelines](#wcag-accessibility-guidelines).
 
-## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
+## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guidelines}
 
 To help web designers and developers produce accessible websites the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) published the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) in June 2018.
 
