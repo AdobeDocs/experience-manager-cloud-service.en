@@ -46,7 +46,7 @@ Actually implementing the styles only requires deployment on AEM and selection w
 
 The following diagram illustrates the architecture of the Style System.
 
-![aem-style-system](assets/aem-style-system.png)
+![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
 ## Use {#use}
 
@@ -65,11 +65,11 @@ If you wish to use the Style System for your own components do the following:
 1. After installing the WKND project, navigate to WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en` and edit the page.
 1. Select a **Title** component further down the page
 
-   ![Style System for the author](assets/style-system-author1.png)
+   ![Style System for the author](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
 1. Tap or click the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
 
-   ![Selecting styles](assets/style-system-author2.png)
+   ![Selecting styles](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
    >[!NOTE]
    >
@@ -79,15 +79,15 @@ If you wish to use the Style System for your own components do the following:
 
 1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -&gt; Edit Template**.
 
-   ![Edit Template](assets/style-system-edit-template.png)
+   ![Edit Template](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
 1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
 
-   ![Edit policy](assets/style-system-edit-policy.png)
+   ![Edit policy](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
 
 1. On the Styles tab of the properties, you can see how the styles have been configured.
 
-   ![Edit properties](assets/style-system-properties.png)
+   ![Edit properties](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
     * **Group Name:** Styles can be grouped together within the style menu that the content author will see when configuring the style of the component.
     * **Styles can be combined:** Allows for multiple styles within that group to be selected at one time.
