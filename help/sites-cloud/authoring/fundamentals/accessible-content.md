@@ -62,14 +62,18 @@ A useful additional benefit is that text alternatives enable non-text content to
 
 #### How to Meet - Non-text Content (1.1.1) {#how-to-meet-non-text-content}
 
-For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alt Text** field:
+For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
 
 <!--
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
 AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
@@ -1181,19 +1185,21 @@ Follow the guidelines under [How to Meet Success Criteria 3.3.1](https://www.w3.
 
 Providing instructions to help people complete forms is a fundamental part of good practice in interface usability. Doing this is particularly helpful for people with visual or cognitive impairments who might otherwise have difficulty understanding the layout of a form and the sort of data to be provided in a particular form field.
 
-In AEM a default label is added when you add a form component, such as a **Text Field**, to the page. This default title is dependent on the component type, You can add your own title in the **Title and Text** tab of the edit dialog for that field. It is important to ensure that labels help users to understand the data associated with each form component.
+##### Forms
+
+In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. This default title is dependent on the component type, You can add your own title in the **Title and Text** tab of the edit dialog for that field. It is important to ensure that labels help users to understand the data associated with each form component.
 
 This **Title** field must be used for field elements as it provides a label that is available to assistive technology. Simply writing a label in text beside the field is not sufficient.
 
 For some form components it is also possible to visually hide labels using the **Hide Title** checkbox. Labels hidden in this way are still available to assistive technology, but not displayed on the screen. While this can be a good approach in some situations it is usually best to include a visual label wherever possible, as some users may be looking at a very small section of the screen (one field at a time) and need the labels to identify the field correctly.
 
-#### Image Buttons {#image-buttons}
+###### Image Buttons {#image-buttons}
 
-Where image buttons are used (for example, the **Image Button** component) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
+Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
 
-#### Groups of Form Fields {#groups-of-form-fields}
+###### Groups of Form Fields {#groups-of-form-fields}
 
-Where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. When adding a set of radio buttons in AEM, the **Title** field provides this group title, while individual titles are specified as the radio buttons (**Items**) are created.
+In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. When adding a set of radio buttons in AEM, the **Title** field provides this group title, while individual titles are specified as the radio buttons (**Items**) are created.
 
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see Adding Support for Additional HTML Elements and Attributes).
 
@@ -1201,7 +1207,7 @@ However, there is no programmatic association between the group title and the ra
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-#### Additional Considerations for Forms {#additional-considerations-for-forms}
+###### Additional Considerations for Forms {#additional-considerations-for-forms}
 
 If data is to be entered in a specific format, make this clear in the label text. For example, if a date has to be entered in the `DD-MM-YYYY` format, specifically indicate this as part of the label. This means that when screen reader users encounter the field, the label is automatically announced, along with the additional information about format.
 
