@@ -59,7 +59,7 @@ To build a property predicate:
 
 1. Add `titlepredicate.jsp`.
 
-   ```xml
+   ```javascript
    <%--
 
      Sample title predicate component
@@ -152,7 +152,7 @@ To build a group predicate:
 
 1. Add **titlepredicate.jsp**:
 
-   ```xml
+   ```javascript
    <%--
 
      Sample group predicate component

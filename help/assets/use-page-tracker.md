@@ -12,7 +12,7 @@ To capture events, such as clicks and so on that are specific to assets, you als
 
 The following sample code displays how a web page that contains both the Page Tracker code and Embed code looks like:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -56,7 +56,7 @@ The following sample code displays how a web page that contains both the Page Tr
 
 You add the page tracker code within the header section of your website code. The following code snippet displays the Page Tracker code included in a sample web page:
 
-```xml
+```javascript
  <head>
             <script type="text/javascript" src="http://localhost:4502/xxxx/etc/clientlibs/sitecatalyst/appmeasurement.js"></script>
             <script type="text/javascript" src="http://localhost:4502/xxxx/etc/clientlibs/foundation/assetinsights/pagetracker.js"></script>
@@ -76,7 +76,7 @@ You add the page tracker code within the header section of your website code. Th
 
 You add the embed code within the body of your website code. The following code snippet displays the Embed code included in a sample web page:
 
-```xml
+```javascript
 <body>
 
       <img
