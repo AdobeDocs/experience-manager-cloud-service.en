@@ -7,11 +7,10 @@ contentOwner: AG
 # Move to Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}
 
 <!-- About the need to move from previous AEM deployment to a cloud service deployment. And how does Adobe help do it OOTB?
--->
+
 
 ## About the migration tool {#migration-tool}
 
-<!-- 
 Link back to information about the tool in the Experience Manager as a Cloud Service docs if the tool works the same for Sites and Assets. Document the Assets-specific information here.
 
 * What is the migration tool called? Is there a branding term for it?
@@ -19,7 +18,6 @@ Link back to information about the tool in the Experience Manager as a Cloud Ser
 * Before migrating using the tool, is any prepping required?
 * See CQ-4271901
 
--->
 
 The migration tool helps you achieve the following:
 
@@ -35,7 +33,6 @@ The migration tool creates processing profiles in a Maven module that users can 
 
 The migration tool provides a report of the changes it made and information about the changes.
 
-<!--  
 
 What is the output of the tool, besides migrated content.
 
@@ -46,6 +43,7 @@ Give details about reports and logs of the tool.
 * Location of logs. How to read the logs.
 * What common errors to look for. Troubleshooting for these errors.
 
--->
 
 ## Migrate content to a new deployment {#content-migration-across-deployments}
+
+-->
