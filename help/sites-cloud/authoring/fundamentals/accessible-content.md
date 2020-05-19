@@ -530,7 +530,7 @@ Follow the guidelines under [How to Meet Success Criteria 1.4.2](https://www.w3.
   
   >[!NOTE]
   >
-  >See [Understanding Non-text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) for further information, to help ensure that readers understand the additional requirements around non-text elements (including icons, interface elements, amongst others).
+  >See [Understanding Non-text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) for further information, to help ensure that content authors understand the additional requirements around non-text elements (including icons, interface elements, amongst others).
 
 #### Purpose - Contrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
 
