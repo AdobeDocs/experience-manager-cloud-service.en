@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
-seo-title: Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
+description: An Introduction to Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
 ---
  
 # Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
