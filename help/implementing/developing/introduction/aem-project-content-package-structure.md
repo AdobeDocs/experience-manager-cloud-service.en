@@ -126,7 +126,7 @@ While Repo Init scripts themselves live in the `ui.apps` project as scripts, the
 + Groups
 + ACLs
 
-Repo Init scripts are stored as `scripts` entries of `RepositoryInitializer` OSGi factory configurations, and thus, can be implicitly targetted by runmode, allowing for differences between AEM Author and AEM Publish Services' Repo Init scripts, or even between Envs (Dev, Stage and Prod).
+Repo Init scripts are stored as `scripts` entries of `RepositoryInitializer` OSGi factory configurations, and thus, can be implicitly targeted by runmode, allowing for differences between AEM Author and AEM Publish Services' Repo Init scripts, or even between Envs (Dev, Stage and Prod).
 
 Note that when defining Users, and Groups, only groups are considered part of the application, and integral to its function should be defined here. Organization Users and Groups should still be defined at runtime in AEM; for example, if a custom workflow assigns work to a named Group, that Group should defined in via Repo Init in the AEM application, however if the Grouping is merely organizational, such as "Wendy's Team" and "Sean's Team", these are best defined, and managed at runtime in AEM.
 
@@ -185,7 +185,7 @@ Breaking this folder structure down:
 + The 3rd-level folder must be either
 `application` or `content`
   + The `application` folder holds code packages
-  + The `content` folder golds content packages
+  + The `content` folder holds content packages
   This folder name must correspond to the [package types](#package-types) of the packages it contains.
 + The 4th-level folder contains the sub-packages, and must be one of:
   + `install` to install on **both** AEM author and AEM publish
@@ -217,7 +217,7 @@ Simply add the `<filter root="/apps/<my-app>-packages"/>` entries for any 2nd-le
 
 ## Embedding 3rd-party Packages {#embedding-3rd-party-packages}
 
-All packages must be available via the [Adobe's public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referencable 3rd party Maven artifact repository.
+All packages must be available via the [Adobe's public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
 
 If the 3rd party packages are in **Adobe's public Maven artifact repository**, no further configuration is needed for Adobe Cloud Manager to resolve the artifacts.
 
@@ -332,7 +332,7 @@ In the `ui.content/pom.xml`, the `<packageType>content</packageType>` build conf
 
 ### Marking Packages for Adobe Cloud Manager Deployment {#cloud-manager-target}
 
-In every project generating a Package, **except** for the container (`all`) project, add `<cloudManagerTarget>none</cloudManagerTarget>` to the `<properties>` configuration of the `filevault-package-maven-plugin` plug-in declaration to ensure they **are not** deployed by Adobe Cloud Manager. THe container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
+In every project generating a Package, **except** for the container (`all`) project, add `<cloudManagerTarget>none</cloudManagerTarget>` to the `<properties>` configuration of the `filevault-package-maven-plugin` plug-in declaration to ensure they **are not** deployed by Adobe Cloud Manager. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
 ```xml
 ...
@@ -484,7 +484,7 @@ If multiple `/apps/*-packages` are used in the embeddeds targets, then they all 
 ### 3rd Party Maven Repositories {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for depedencies.
+> Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for dependencies.
 
 In the reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
 
