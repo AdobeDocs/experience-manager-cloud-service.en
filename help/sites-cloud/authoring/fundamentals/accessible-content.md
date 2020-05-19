@@ -1154,7 +1154,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.
  
 #### Purpose - Error Identification (3.3.1) {#purpose-error-identification}
 
-The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG 2.0, an "input error" is information provided by the user that is not accepted. This includes:
+The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. This includes:
 
 information that is required by the web page but omitted by the user, or information that is provided by the user but that falls outside the required data format or allowed values.
 For example:
@@ -1235,7 +1235,7 @@ In simple forms with very limited functionality, appropriately labelling a `Subm
  
 #### Purpose - Error Suggestion (3.3.3) {#purpose-error-suggestion}
 
-The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG 2.0 definition of "input error" says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
+The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
 
 Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. In the case of an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
 
