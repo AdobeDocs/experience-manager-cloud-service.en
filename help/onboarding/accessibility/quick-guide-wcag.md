@@ -1,6 +1,6 @@
 ---
 title: A Quick Guide to WCAG 2.1
-seo-title: A Quick Guide to WCAG 2.1
+description: A Quick Guide to WCAG 2.1
 ---
 
 # A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
