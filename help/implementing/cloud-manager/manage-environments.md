@@ -37,7 +37,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    ![](assets/no-environment-2.png)
 
 
-    The **Add Environment** option will also be available on the **Environments** card when there are zero environments in the program.
+    The **Add Environment** option is also available on the **Environments** card when there are zero environments in the program.
 
     ![](assets/no-environments.png)
 
@@ -58,7 +58,6 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
-
 ## Updating Environment {#updating-dev-environment}
 
 Updates of Stage and Production environments are automatically managed by Adobe. 
@@ -66,11 +65,12 @@ Updates of Stage and Production environments are automatically managed by Adobe.
 Updates to Development environments are managed by users of the program. When an environment is not running the latest publicly available AEM release, the status on Environments Card on the Home Screen will show **UPDATE AVAILABLE**.
 
 ![](assets/manage-environments2.png)
-)
 
-When this status is displayed, **Update** option will be available from the dropdown menu, both on the Environments Card and the **Manage** menu if you  click on **Details** from the **ENVIRONMENTS** card.
 
-![](assets/add-environment4.png)
+The **Update** option is available from the dropdown menu in the **Environments** Card. 
+This option is also available from the **Manage** button, if you click on **Details** from the **Environments** card.
+
+![](assets/update-environment2.png)
 
 Selecting this from the dropdown menu will allow a Deployment Manager to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
 
@@ -80,10 +80,19 @@ If the pipeline has already been updated, the user is prompted to execute the pi
 
 User with the requisite permissions will be able to delete a Development environment. 
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+The **Delete** option is available from the dropdown menu in the **Environments** Card. 
+This option is also available from the **Manage** button, if you click on **Details** from the **Environments** card.
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
+
+## Accessing Developer Console {#accessing-developer-console}
+
+Select **Developer Console** from the dropdown menu in the **Environments** Card. 
+
+![](assets/dev-console1.png)
+
+You can also select this option from the **Manage** button, if you click on **Details** from the **Environments** card.
 
