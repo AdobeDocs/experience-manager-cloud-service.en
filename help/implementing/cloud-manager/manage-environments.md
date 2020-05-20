@@ -33,10 +33,17 @@ The Production and Stage is available as a duo and is used for testing and produ
 ## Adding an Environment {#adding-environments}
 
 
-1. The user clicks on the **Add Environment** button to add an environment.
+1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen. 
+   ![](assets/no-environment-2.png)
 
-   ![](assets/add-environment.png)
 
+    The **Add Environment** option will also be available on the **Environments** card when there are zero environments in the program.
+
+    ![](assets/no-environments.png)
+
+   >[!NOTE)
+   >The **Add Environment** option will be disabled based on lack of permissions or what may be contracted.
+   
 1. The **Add environment** dialog box appears.The user needs to submit details such as **Environment type** and **Environment name** and **Environment description** (depending upon the user’s objective in creating the environment within the bounds of what is available to the specific tenant).
 
    ![](assets/add-environment2.png)
@@ -68,3 +75,15 @@ When this status is displayed, **Update** option will be available from the drop
 Selecting this from the dropdown menu will allow a Deployment Manager to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
 
 If the pipeline has already been updated, the user is prompted to execute the pipeline.
+
+## Deleting Environment {#deleting-environment}
+
+User with the requisite permissions will be able to delete a Development environment. 
+
+Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+
+![](assets/deleting-environment1.png)
+
+>[!NOTE]
+This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
+
