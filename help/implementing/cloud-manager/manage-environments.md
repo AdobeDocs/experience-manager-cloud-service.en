@@ -41,7 +41,7 @@ The Production and Stage is available as a duo and is used for testing and produ
 
     ![](assets/no-environments.png)
 
-   >[!NOTE)
+   >[!NOTE]
    >The **Add Environment** option will be disabled based on lack of permissions or what may be contracted.
    
 1. The **Add environment** dialog box appears.The user needs to submit details such as **Environment type** and **Environment name** and **Environment description** (depending upon the user’s objective in creating the environment within the bounds of what is available to the specific tenant).
