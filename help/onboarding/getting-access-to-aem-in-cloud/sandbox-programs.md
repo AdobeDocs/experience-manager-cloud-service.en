@@ -11,7 +11,7 @@ A Sandbox program is one of the two types of programs available in AEM Cloud Ser
 
 A Sandbox is typically created to serve the purposes of training, running demos, enablement, or Proof of Concept (POC)s. They are not meant to carry live traffic.
 
-Sandbox programs include Sites and Assets and is auto-populated with a Git branch that includes sample code, a development environment, and a non-production pipeline.
+Sandbox programs include Sites and Assets and are auto-populated with a Git repository, a Development environment, and a non-production pipeline.  The Git repository is populated with a sample project based on the AEM Project archetype.
 
 Refer to [Understanding Programs and Program Types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) to learn more about the Program Types.
 
@@ -165,9 +165,8 @@ A user can manually apply AEM updates to the environments in a Sandbox Program.
 Refer to [Updating Environment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) to learn how to update an environment.
 
 >[!NOTE]
->* A *Non-production Pipeline* deploying to the development environment of interest must be configured in order for a manual update pipeline to be initiated. 
->* A *Production Pipeline* must be configured in order for a manual update pipeline to Production+Stage environment set to be initiated.  
->* Manual update to either *Production* or *Stage* environment will automatically update the other. The Production+Stage environment set must be on the same AEM release. 
+>* A manual update can only be run when the targeted environment has a properly configured pipeline. 
+>* A manual update to either *Production* or *Stage* environment will automatically update the other. The Production+Stage environment set must be on the same AEM release. 
 
 
 
