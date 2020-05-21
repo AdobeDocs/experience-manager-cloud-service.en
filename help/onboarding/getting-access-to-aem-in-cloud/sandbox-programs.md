@@ -130,9 +130,9 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
 
 Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
 
-A user can manually apply AEM updates to the environments in a Sandbox Program (see figure below). This can be done when the status displayed is **UPDATE AVAILABLE**. 
+A user can manually apply AEM updates to the environments in a Sandbox Program.
 
-The Update option is available from the dropdown menu on the **Environments** Card. This option is also available from the **Manage** button, if you click on **Details** from the **Environments** card. 
+Refer to [Updating Environment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) to learn how to update an environment.
 
 >[!NOTE]
 >A *Non-production Pipeline* deploying to the development environment of interest must be configured in order for a manual update pipeline to be initiated. 
