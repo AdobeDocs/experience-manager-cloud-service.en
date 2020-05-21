@@ -25,7 +25,7 @@ Depending upon the user’s objective in creating the program within the bounds 
 
 ![](assets/create-program-add.png)
 
-## Creating a Sandbox Program {#create-demo-program} 
+## Creating a Sandbox Program {#create-sandbox-program} 
 
 Follow the steps below to create a sandbox program: 
  

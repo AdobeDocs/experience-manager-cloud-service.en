@@ -34,7 +34,7 @@ Sandbox Programs have the following attributes:
 
 A program creation wizard lets you create a Sandbox Program.
 
-To learn how to create a Sandbox Program, refer to [Creating a Sandbox Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program).
+To learn how to create a Sandbox Program, refer to.
 
 ### Creating Sandbox Environments {#creating-sandbox-environments}
 
@@ -44,7 +44,7 @@ The Production-Stage environment set can be manually added to the Sandbox Progra
 
 To learn how to manually create an environment, refer to [Adding Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) for more details.
 
-### Deleting Sandbox Environments  {#deleting-sandbox-environments}
+### Deleting Sandbox Environments {#deleting-sandbox-environments}
 
 User with the requisite permissions can delete a Development or Production/Stage environment  or sets. 
 
@@ -80,9 +80,16 @@ Follow the steps below to manually hibernate your Sandbox Program environments:
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
 
-1. Click Hibernate, as shown in the figure below
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   Or,
+
+   Click **Hibernate** from the Environments listing, as shown in the figure below:
+
+   ![](assets/hibernate-1b.png)
+
 1. Click **Hibernate** to confirm the step.
 
    ![](assets/hibernate-2.png)
@@ -90,14 +97,6 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
 1. When the hibernation is successful, you will see the hibernation process complete notification for your environment in the **Developer Console** screen.
 
    ![](assets/hibernate-4.png)
-
-#### Accessing a Hibernated Environment {#accessing-hibernated-environment}
-
-When making any browser requests against either the author or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as illustrated below:
-
-A user with the **Cloud Manager - Developer Role** can click on the Developer Console button to access the developer console and de-hibernate the environment. Information about setting roles can be found in Cloud Manager Documentation.
-
-If a user in an organization cannot click the Developer Console button to be brought to the Developer Console, it's likely that they need to be given the "Cloud Manager - Developer Role".
 
 
 ### De-hibernation {#de-hibernation-introduction}
@@ -112,6 +111,13 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
 
     ![](assets/de-hibernation-img1.png)
 
+    Or,
+
+    Click on **De-hibernate** from the **Environments** listing, as shown in the figure below:
+ 
+    ![](assets/de-hibernate-1b.png)
+
+
 1. Click **De Hibernate** to confirm the step.
 
    ![](assets/de-hibernation-img2.png)
@@ -124,9 +130,19 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
  
    ![](assets/de-hibernation-img4.png)
 
+#### Accessing a Hibernated Environment {#accessing-hibernated-environment}
+
+When making any browser requests against either the author or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as shown in the figure below:
+
+![](assets/de-hibernation-img5.png)
+
+
+A user with the **Cloud Manager - Developer Role** can click on the **Developer Console** to access the developer console and de-hibernate the environment. 
+
+>[!NOTE]
+> Many features in Cloud Manager require specific permissions to operate. To learn more about roles for users which govern the availability of specific features, refer to[Add Users and Roles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ## AEM Updates to Sandbox Environments {#aem-updates-sandbox}
-
 
 Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
 
