@@ -34,7 +34,7 @@ Sandbox Programs have the following attributes:
 
 A program creation wizard lets you create a Sandbox Program.
 
-To learn how to create a Sandbox Program, refer to.
+To learn how to create a Sandbox Program, refer to [Creating a Sandbox Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) for more details.
 
 ### Creating Sandbox Environments {#creating-sandbox-environments}
 
@@ -67,6 +67,9 @@ Hibernation is categorized as:
 * **Automatic**  Sandbox Program environments are automatically hibernated after eight hours of inactivity, meaning that neither the author nor publish services receive request.
 
 * **Manual**: As a user you may manually hibernate a Sandbox Program environment, although there is no requirement to do so since hibernation will occur automatically after certain period (eight hours) of inactivity.
+
+>[!CAUTION]
+>In the latest release, linking to Developer Console of Cloud Manager will not allow you to hibernate the Sandbox Program environment.
 
 #### Using Manual Hibernation {#using-manual-hibernation}
 
@@ -142,6 +145,17 @@ A user with the **Cloud Manager - Developer Role** can click on the **Developer 
 >[!NOTE]
 > Many features in Cloud Manager require specific permissions to operate. To learn more about roles for users which govern the availability of specific features, refer to[Add Users and Roles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
+#### Important Considerations {#important-considerations}
+
+Few key considerations related to hibernated and de-hibernated environments are:
+
+* A user may use a pipeline to deploy custom code to hibernated environments. The environment will remain hibernated and the new code will appear in the environment once de-hibernated.
+
+* AEM upgrades can be applied to hibernated environments, which customers can manually trigger from Cloud Manager. The environment will remain hibernated and the new release will appear in the environment once de-hibernated.
+
+>[!NOTE]
+>Currently, Cloud Manager does not indicate whether an environment is hibernated.
+
 ## AEM Updates to Sandbox Environments {#aem-updates-sandbox}
 
 Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
@@ -151,13 +165,9 @@ A user can manually apply AEM updates to the environments in a Sandbox Program.
 Refer to [Updating Environment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) to learn how to update an environment.
 
 >[!NOTE]
->A *Non-production Pipeline* deploying to the development environment of interest must be configured in order for a manual update pipeline to be initiated. 
-
->[!NOTE]
->A *Production Pipeline* must be configured in order for a manual update pipeline to Production+Stage environment set to be initiated. 
-
->[!NOTE] 
->Manual update to either *Production* or *Stage* environment will automatically update the other. The Production+Stage environment set must be on the same AEM release. 
+>* A *Non-production Pipeline* deploying to the development environment of interest must be configured in order for a manual update pipeline to be initiated. 
+>* A *Production Pipeline* must be configured in order for a manual update pipeline to Production+Stage environment set to be initiated.  
+>* Manual update to either *Production* or *Stage* environment will automatically update the other. The Production+Stage environment set must be on the same AEM release. 
 
 
 
