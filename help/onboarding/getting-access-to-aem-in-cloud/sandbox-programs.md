@@ -13,7 +13,7 @@ A Sandbox is typically created to serve the purposes of training, running demos,
 
 Sandbox programs include Sites and Assets and is auto-populated with a Git branch that includes sample code, a development environment, and a non-production pipeline.
 
-For more information about program types, refer to [Understanding Programs and Program Types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html).
+Refer to [Understanding Programs and Program Types](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) to learn more about the Program Types.
 
 ### Attributes of Sandbox Programs {#attributes-sandbox}
 
@@ -79,9 +79,17 @@ Follow the steps below to manually hibernate your Sandbox Program environments:
 
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
-1. Click Hibernate, as shown in the figure below:
-1. Click **Hibernate** to confirm the step
-1. When the hibernation is successful, you will see the following screen.
+
+1. Click Hibernate, as shown in the figure below
+
+   ![](assets/hibernate-1.png)
+1. Click **Hibernate** to confirm the step.
+
+   ![](assets/hibernate-2.png)
+
+1. When the hibernation is successful, you will see the hibernation process complete notification for your environment in the **Developer Console** screen.
+
+   ![](assets/hibernate-4.png)
 
 #### Accessing a Hibernated Environment {#accessing-hibernated-environment}
 
