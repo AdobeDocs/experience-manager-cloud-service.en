@@ -38,7 +38,7 @@ To learn how to create a Sandbox Program, refer to [Creating a Sandbox Program](
 
 ### Creating Sandbox Environments {#creating-sandbox-environments}
 
-Sandbox Programs are delivered a development environment at the time of program creation in an auto-created manner. The development environment includes an author and a publish tier by default.
+Sandbox Programs are delivered to a development environment at the time of program creation in an auto-created manner. The development environment includes an author and a publish tier by default.
 
 The Production-Stage environment set can be manually added to the Sandbox Program, when the user is ready to setup a production pipeline. 
 
@@ -64,12 +64,12 @@ Hibernation can occur either automatically or manually. It may take up to a few 
 
 Hibernation is categorized as:
 
-* **Automatic**  Sandbox Program environments are automatically hibernated after eight hours of inactivity, meaning that neither the author nor publish services receive request.
+* **Automatic**  Sandbox Program environments are automatically hibernated after eight hours of inactivity, meaning that neither the author nor publish services receive requests.
 
-* **Manual**: As a user you may manually hibernate a Sandbox Program environment, although there is no requirement to do so since hibernation will occur automatically after certain period (eight hours) of inactivity.
+* **Manual**: As a user you may manually hibernate a Sandbox Program environment, although there is no requirement to do so since hibernation will occur automatically after a certain period (eight hours) of inactivity.
 
 >[!CAUTION]
->In the latest release, linking to Developer Console of Cloud Manager will not allow you to hibernate the Sandbox Program environment.
+>In the latest release, linking to the Developer Console directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
 
 #### Using Manual Hibernation {#using-manual-hibernation}
 
@@ -82,6 +82,8 @@ Follow the steps below to manually hibernate your Sandbox Program environments:
 
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
+   >[!NOTE]
+   >linking to the Developer Console directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.  
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -89,7 +91,7 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
 
    Or,
 
-   Click **Hibernate** from the Environments listing, as shown in the figure below:
+   Click the **Environments** link in top left to view the environments listing and then click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1b.png)
 
@@ -107,6 +109,9 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
 
+   >[!NOTE]
+   >Alternatively, you can navigate to the **Developer Console** to de-hibernate by trying to access the author or publish service of an already hibernated environment; in that case, a landing page will appear with a link to the Developer Console. See the Accessing a Hibernated Environment section below.
+
    >[!IMPORTANT]
    >Access to the Developer Console is defined by the **Cloud Manager - Developer Role** in the **Admin Console**. A user with a developer role permission can de-hibernate a Sandbox Program environment.
 
@@ -116,7 +121,7 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
 
     Or,
 
-    Click on **De-hibernate** from the **Environments** listing, as shown in the figure below:
+    Click the **Environments** link in top left to view the environments listing and then click **De-hibernate**, as shown in the figure below
  
     ![](assets/de-hibernate-1b.png)
 
@@ -145,7 +150,7 @@ A user with the **Cloud Manager - Developer Role** can click on the **Developer 
 >[!NOTE]
 > Many features in Cloud Manager require specific permissions to operate. To learn more about roles for users which govern the availability of specific features, refer to[Add Users and Roles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Important Considerations {#important-considerations}
+### Important Considerations {#important-considerations}
 
 Few key considerations related to hibernated and de-hibernated environments are:
 
