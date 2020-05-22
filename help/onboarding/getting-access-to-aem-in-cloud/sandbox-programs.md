@@ -82,8 +82,8 @@ Follow the steps below to manually hibernate your Sandbox Program environments:
 
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
-   >[!NOTE]
-   >linking to the Developer Console directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.  
+   >[!IMPORTANT]
+   >Linking to the **Developer Console** directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.  
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -108,6 +108,9 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
 
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
+
+   >[!IMPORTANT]
+   >Linking to the **Developer Console** directly from Cloud Manager will not give you the option to de-hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
 
    >[!NOTE]
    >Alternatively, you can navigate to the **Developer Console** to de-hibernate by trying to access the author or publish service of an already hibernated environment; in that case, a landing page will appear with a link to the Developer Console. See the Accessing a Hibernated Environment section below.
