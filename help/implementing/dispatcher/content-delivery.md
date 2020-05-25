@@ -48,7 +48,7 @@ Presented below is a decision matrix to compare the two options. More detailed i
 | **Pre-requisites** | None | Existing CDN that is onerous to replace. Must demonstrate a successful load test prior to going live. |
 | **CDN expertise** | None | Requires at least one part time engineering resource with detailed CDN knowledge that is capable of configuring the customer's CDN. |
 | **Security** | Managed by Adobe. | Managed by Adobe (and optionally by the customer at their own CDN). |
-| **Performance** | Optimized by Adobe. | Will benefit from some AEM CDN capabilities, but potentially a small performance hit due to the extra hop. **Note**: Hops from customer CDN to Fastly CDN likely to be efficient). |
+| **Performance** | Optimized by Adobe. | Will benefit from some AEM CDN capabilities, but potentially a small performance hit due to the extra hop. **Note**: Hops from customer CDN to Adobe's out of the box CDN likely to be efficient). |
 | **Caching** | Supports cache headers applied at the dispatcher. | Supports cache headers applied at the dispatcher. |
 | **Image and video compression capabilities** | Can work with Adobe Dynamic Media. | Can work with Adobe Dynamic Media or customer managed CDN image/video solution. |
 
@@ -61,7 +61,7 @@ Preparing for content delivery by using Adobe's out-of-the-box CDN is simple, as
 1. You should inform customer support:
    * which custom domain should be associated with a given environment, as defined by the program id and environment id.
    * if any IP whitelisting is needed to restrict traffic to a given environment.
-1. Customer support will then coordinate with you the timing for a CNAME DNS record, pointing their FQDN to `adobe-aem.map.fastly.net`.
+1. Customer support will then coordinate with you the timing for a CNAME DNS record, pointing their FQDN to `cdn.adobeaemcloud.com`.
 1. You will be notified when the SSL certificates are expiring so you can resubmit the new SSL certificates.
 
 **Restricting traffic**

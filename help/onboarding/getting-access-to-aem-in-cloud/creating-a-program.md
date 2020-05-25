@@ -25,16 +25,13 @@ Depending upon the user’s objective in creating the program within the bounds 
 
 ![](assets/create-program-add.png)
 
-## Creating a Demo Program {#create-demo-program} 
-
->[!NOTE]
->A demo program is analogous to a sandbox program in Cloud Manager UI.
+## Creating a Sandbox Program {#create-sandbox-program} 
 
 Follow the steps below to create a sandbox program: 
  
 1. From the create program wizard, select **Set up a demo**. User submits program name before selecting **Create**.
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. User will see the new sandbox program card on the landing page, and can hover over it to select the Cloud Manager icon to navigate to the Cloud Manager overview page. The card will inform the user on the status of auto-setup of the newly created sandbox program. User will see progression.
 

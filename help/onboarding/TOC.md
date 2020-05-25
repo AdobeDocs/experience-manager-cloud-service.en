@@ -13,9 +13,11 @@ user-guide-title: Onboarding to AEM as a Cloud Service
   + [Source Code Repository](what-is-required/source-code-repository.md)
 + Getting Access to AEM in the Cloud {#getting-access}
   + [Accessing Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-  + [Accessing Programs](getting-access-to-aem-in-cloud/first-time-login.md)
-  + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
-  + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
+  + Cloud Service Programs {#cloud-service-programs}
+    + [Accessing Programs](getting-access-to-aem-in-cloud/first-time-login.md)
+    + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
+    + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
+    + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
   + [Creating an AEM Application Project](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
