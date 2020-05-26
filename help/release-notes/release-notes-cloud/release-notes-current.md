@@ -1,15 +1,15 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Release Notes for 2020.5.0
-description: Experience Manager Release Notes for 2020.5.0
+title: Adobe Experience Manager as a Cloud Service Release Notes for 2020.6.0
+description: Experience Manager Release Notes for 2020.6.0
 ---
 
-# Release Notes for AEM as a Cloud Service 2020.5.0 {#release-notes}
+# Release Notes for AEM as a Cloud Service 2020.6.0 {#release-notes}
 
-The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.5.0.
+The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.6.0.
 
 ## Release Date {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is June 07, 2020.
 
 ## What's New in AEM Sites {#aem-sites}
 
