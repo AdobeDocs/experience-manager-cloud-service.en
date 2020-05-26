@@ -9,7 +9,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ## Release Date {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is June 07, 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June ??, 2020.
 
 ## What's New in AEM Sites {#aem-sites}
 
