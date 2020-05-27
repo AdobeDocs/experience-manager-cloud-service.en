@@ -55,6 +55,8 @@ The Navigation panel:
 
 ![Navigation panel](/help/sites-cloud/authoring/assets/navigation.png)
 
+The title of the browser tab will update to reflect your location as you navigate through the consoles and content.
+
 From Navigation the consoles available are:
 
 |Console|Purpose|
@@ -144,6 +146,14 @@ The header is always present at the top of the screen. While most options in the
   >[!NOTE]
   >
   >The **View Settings** option is only available when in **List View** mode.
+
+* Keyboard navigation 
+
+  You can navigate a website using only the keyboard. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are focusable .
+
+  In the **Sites** console there is the added option to **Skip to main content**. This becomes visible as you tab through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
+
+  ![Skip to main content](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Accessing Help {#accessing-help}
 

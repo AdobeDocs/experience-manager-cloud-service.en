@@ -1,6 +1,6 @@
 ---
 title: Creating Accessible Content for Adobe Experience Manager as a Cloud Service (WCAG 2.1 Conformance)
-description: Help make web content accessible to, and usable by, persons with disabilities
+description: Use AEM as a Cloud Service to help make web content accessible to, and usable by, persons with disabilities
 ---
 
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
@@ -16,7 +16,8 @@ As an introduction, the consortium provides a series of sections and supporting 
 * [The WCAG Documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 In addition, see:
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md) for further details
+* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* The [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).
 
 <!-- 
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
@@ -25,24 +26,19 @@ In addition, see:
 The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
 
 * **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
-* **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches an enhanced level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
+* **Level AA:** This is an ideal level of accessibility to strive for, in which your site reaches a foundational level of accessibility, so that it is accessible to most people in most situations using most technologies. To meet this level, all Level A and Level AA Success Criteria are satisfied.
 * **Level AAA:** Your site reaches a very high level of accessibility. To meet this level, all Level A, Level AA and Level AAA Success Criteria are satisfied.
 
 When creating your site, you should determine the overall level to which you would like your site to conform.
 
-The following section presents the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
-
->[!NOTE]
->
->As it is not possible to satisfy all Level AAA Success Criteria for certain types of content, it is not recommended for this level of conformance to be required as a general policy.
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
 >In this document we are using:
 >
->* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
->
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 ## Principle 1: Perceivable {#principle-perceivable}
 
@@ -66,17 +62,21 @@ A useful additional benefit is that text alternatives enable non-text content to
 
 #### How to Meet - Non-text Content (1.1.1) {#how-to-meet-non-text-content}
 
-For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alt Text** field:
+For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
 
 <!--
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be nonsensical, the **Image is decorative** option can be checked.
+AEM requires the **Alternative Text** field to be filled by default. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
 
 #### Creating Good Text Alternatives {#creating-good-text-alternatives}
 
@@ -89,7 +89,7 @@ There are various forms of non-text content, so the value of the text alternativ
 * Alternative text should not replicate content provided in text form nearby on the same page. Remember that many images are illustrations of points already covered in the text of a page, so a detailed text alternative may already exist.
 * If the non-text content is a link to another page or document and there is no other text forming part of the same link, then the alternative text for the image must indicate the destination of the link, not describe the image.
 * If the non-text content is contained in a button element and there is no text forming part of the same button, then the alternative text of the image must indicate the functionality of the button, not describe the image.
-* It is perfectly acceptable for an image to be given an empty (null) alternative text, but only if the image has no alternative text (for example, it is a purely decorative graphic) or if the equivalent text already exists in the page text.
+* It is perfectly acceptable for an image to be given an empty (null) alternative text, but only if the image needs no alternative text (for example, it is a purely decorative graphic) or if the equivalent text already exists in the page text.
 
 <!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
@@ -97,10 +97,10 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 Specific types of non-text content that require text alternatives might include:
 
-* Illustrative photos: These are images of people, objects or places. Think about the role of the photo in the page; an appropriate text equivalent is likely to be `Photo of [object]`, but may be dependent on the surrounding text.
+* Illustrative photos: These are images of people, objects or places. It is important to think about the role of the photo in the page, and generally recommended to describe the image content, as assistive technology will announce the element type (for example, `graphic` or `image`); it can increase clarity to use `screenshot` or `illustration` in the alternative text descriptions, but this depends on the context. Consistency is a big factor, a decision should be made for an entire authoring team and this applied throughout the user experience.
 * Icons: These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 * Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
-* Maps, diagrams, flowcharts: For graphics providing spatial data (for example. to support describing relationships between objects or a process), ensure that the key message is provided in text format. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
+* Maps, diagrams, flowcharts: For graphics providing spatial data (for example, to support describing relationships between objects or a process), ensure that the key message is provided in text format, and that this text information is positioned near each associated data point. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
 * CAPTCHAs: A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is obviously not possible, so instead you will need to consider alternative non-graphic solutions. The W3C provides a number of suggestions, such as:Each of these approaches has their own merits and drawbacks.
   * Logic puzzles
   * The use of sound output instead of images
@@ -125,7 +125,7 @@ Specific types of non-text content that require text alternatives might include:
 
 [Guideline 1.2 Time-based Media: Provide alternatives for time-based media.](https://www.w3.org/TR/WCAG/#time-based-media)
 
-This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be pre-recorded or a live stream.
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
 ### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -149,17 +149,19 @@ Providing this information in a different format, such as text (or audio for vid
 
 #### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* If the content is pre-recorded audio with no video (such as a podcast):
+* If the content is prerecorded audio with no video (such as a podcast):
   * Provide a link immediately before or after the content to a text-transcript of the audio content. The transcript should be an HTML page with a text equivalent of all spoken and important non-spoken content, plus an indication of who is speaking, a description of the setting, vocal expressions and a description of any other significant audio.
-* If the content is an animation or pre-recorded video with no audio:
+* If the content is an animation or prerecorded video with no audio:
   * Provide a link immediately before or after the content to an equivalent text description of the information provided by the video
   * Or an equivalent audio description in a commonly used audio format such as MP3.
 
 >[!NOTE]
 >
->If the audio or video content is provided as an alternative to content that already exists in another format on a web page, there is no need to follow the above requirements. For example, if a video illustrates a list of text instructions, then this video does not require an alternative as the text instructions already act as an alternative to the video.
+>If the audio or video content is provided as an alternative to content that already exists in another format on the same web page, an additional alternative may not be required. 
+>
+>The guidelines, [Understanding WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html), provide further information.
 
-Inserting multimedia, specifically Flash content, into your AEM web pages is similar to inserting an image. However, as multimedia content is much more than a still image, there are a variety of different settings and options for controlling how the multimedia is played.
+Inserting multimedia into your AEM web pages is similar to inserting an image. However, as multimedia content is much more than a still image, there are a variety of different settings and options for controlling how the multimedia is played.
 
 >[!NOTE]
 >
@@ -178,11 +180,7 @@ Inserting multimedia, specifically Flash content, into your AEM web pages is sim
 
 #### Purpose - Captions (Prerecorded) (1.2.2) {#purpose-captions-prerecorded}
 
-People who are deaf or hard of hearing will be unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
-
->[!NOTE]
->
->Captions are not required where suitable text or non-text equivalents (that provide directly equivalent information) are available on the same page as the video or animation.
+People who are Deaf or hard of hearing will be unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
 
 #### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -193,13 +191,13 @@ Captions can be either:
 
 Use closed captioning wherever possible, as this gives users the choice over whether or not to view captions.
 
-For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Pre-Recorded) (1.2.2)](#more-information-captions-pre-recorded)). Make sure you provide a note to let users know that captions are available for the video.
+For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Prerecorded) (1.2.2)](#more-information-captions-prerecorded). Make sure you provide a note, or enable the caption feature in the video player, to let users know that captions are available for the video.
 
 If you must use open captions, embed the text into the video track. This can be achieved using video editing applications that allow the overlaying of titles onto the video.
 
-#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -227,15 +225,18 @@ There are two approaches that can be adopted to meet this success criterion. Eit
       * This allows users to switch between the existing audio track (which *does not* contain an audio description) and the new audio track (which *does* contain an audio description).
       * This prevents disruption to users who do not need the additional description.
     * Create a second version of the video content to allow for extended audio descriptions. This reduces the difficulties associated with providing detailed audio descriptions within the gaps between existing dialogue, by temporarily pausing the audio and video at appropriate points. As a result, a much longer audio description can be given, before the action starts again. As in the previous example, this is best provided as an optional extra audio track in order to prevent disruption to users who do not need the additional description.
-1. Provide a text transcript that is a suitable text equivalent of the audio and visual elements of the video or animation. This should include, where appropriate, an indication as to who is speaking, a description of the setting, vocal expressions. Depending on its length, you can place the transcript on the same page as the video or animation, or on a separate page; if you choose the latter option, provide a link to the transcript adjacent to the video or animation.
+1. Provide a text transcript that is a suitable text equivalent of the audio and visual elements of the video or animation. This should include, where appropriate, an indication as to who is speaking, a description of the setting, any events or information presented visually, and vocal expressions. Depending on its length, you can place the transcript on the same page as the video or animation, or on a separate page; if you choose the latter option, provide a link to the transcript adjacent to the video or animation.
 
-Exact details of how to create audio-described video are beyond the scope of this guide. Creating videos and audio descriptions can be time consuming, but other Adobe products can help achieve these tasks. If you create content in Adobe Flash Professional, you should also create a script to prompt the user to download the appropriate plug-in, and provide a text alternative through the `<noscript>` element.
+Exact details of how to create audio-described video are beyond the scope of this guide. Creating videos and audio descriptions can be time consuming, but other Adobe products can help achieve these tasks. 
 
 #### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [Understanding Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
+* [Understanding Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [How to Meet Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### Captions (Live) (1.2.4)  {#captions-live}
 
@@ -245,7 +246,7 @@ Exact details of how to create audio-described video are beyond the scope of thi
 
 #### Purpose - Captions (Live) (1.2.4) {#purpose-captions-live}
 
-This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-recorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### How to Meet - Captions (Live) (1.2.4) {#how-to-meet-captions-live}
 
@@ -255,9 +256,7 @@ Detailed instructions are beyond the scope of this document, but the following r
 
 * [WebAIM: Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
 
-<!--
-* [AccessIT (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accessit/articles?1209)
--->
+* [AccessComputing project (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
 #### More Information - Captions (Live) (1.2.4) {#more-information-captions-live}
 
@@ -289,9 +288,9 @@ Follow the guidance provided for [Audio Description or Media Alternative (Prerec
 
 This guideline covers the requirements necessary to support people who:
 
-* may not be able to access information as presented by an author in a *standard *two dimensional, multi-column, colored web page layout
+* may not be able to access information as presented by an author in the default presentation of that content (for example, a multi-column layout or a page with heavy use of color and/or images).
 
-* may use an audio-only, or alternative visual display such as large text or high contrast.
+* may use audio-only, or alternative visual display such as large text or high contrast.
 
 ### Info and Relationships (1.3.1)  {#info-and-relationships}
 
@@ -301,38 +300,27 @@ This guideline covers the requirements necessary to support people who:
 
 #### Purpose - Info and Relationships (1.3.1) {#purpose-info-and-relationships}
 
-Many assistive technologies used by people with disabilities rely on structural information in order to effectively display or output content. This structural information can take the form of page headings, table row and column headings and list types. For example, a screen reader could allow a user to navigate through a page from heading to heading. However, when page content only appears to have structure through visual styling, rather than the underlying HTML, then there is no structural information available to assistive technologies, limiting their ability to support easier browsing.
+Many assistive technologies used by people with disabilities rely on structural information in order to effectively display or *understand* content. This structural information can take the form of page headings, table row and column headings and list types. For example, a screen reader could allow a user to navigate through a page from heading to heading. However, when page content only appears to have structure through visual styling, rather than the underlying HTML, then there is no structural information available to assistive technologies, limiting their ability to support easier browsing.
 
-This success criterion exists to make sure that such structural information is provided through HTML, so that browsers and assistive technologies can access and take advantage of the information.
+This success criterion exists to make sure that such structural information is provided programmatically through HTML, or other coding techniques, so that browsers and assistive technologies can access and take advantage of the information.
 
 #### How to Meet - Info and Relationships (1.3.1) {#how-to-meet-info-and-relationships}
 
-AEM makes it easy to construct web pages using the appropriate HTML elements. Open your page content in the RTE (a Text component), and use the **Paraformat** menu (paragraph symbol) to specify the appropriate structural element (for example paragraph, heading, etc.).
+AEM makes it easy to construct semantically meaningful web content using the appropriate HTML elements. Open your page content in the RTE (a Text component), and use the **Paraformat** menu (paragraph symbol) to specify the appropriate structural element (for example paragraph, heading, etc.).
 
-You can make sure your web pages are given the appropriate structure by:
+You can make sure your web pages are given the appropriate structure by using the following elements where applicable:
 
-* **Using headings:** As long as you have the accessibility features of the RTE enabled, AEM offers 3 levels of page heading. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
-* **Emphasized text**: Use the `<strong>` or `<em>` element to indicate emphasis. Do not use headings to highlight text within paragraphs.
-  * Highlight the text you want to emphasize;
-  * Click on the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
+* **Headings:** As long as you have the accessibility features of the RTE enabled, AEM offers 3 levels of page heading. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
 
-    >[!NOTE]
-    >
-    >RTE in a standard AEM installation is set up to use:
-    >
-    >* `<b>` for `<strong>`
-    >* `<i>` for `<em>`
-    >
-    >They are effectively the same, but `<strong>` and `<em>` are preferable as they are semantically correct html. Your development team can configure the RTE to use `<strong>` and `<em>` (instead of `<b>` and `<i>`) when developing your project instance.
-
-* **Use lists**: You can use HTML to specify three different types of lists:
+* **Lists**: You can use HTML to specify three different types of lists:
   * The `<ul>` element is used for *unordered* (bulleted) lists. Individual list items are identified using the `<li>` element.In the RTE, use the **Bullet List** icon.
   * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element. In the RTE, use the **Numbered List** icon.
 
   If you want to change existing content into a specific list type, highlight the appropriate text and select the appropriate list type. As in the earlier example showing how paragraph text is entered, the appropriate list elements are automatically added to your HTML.
 
   In full screen mode, the individual **Bullet List** and **Numbered List** icons are visible. When not in full screen mode, the two options are available behind the single **Lists** icon.
-* **Use tables**: Tables of data must be identified using HTML table elements:
+
+* **Tables**: Tables of data must be identified using HTML table elements:
   * one `<table>` element
   * a `<tr>` element for each row of the table
   * a `<th>` element for each row and column heading
@@ -348,49 +336,64 @@ You can make sure your web pages are given the appropriate structure by:
   >
   >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes).
 
-<!-- removed link syntax for ExL - Bob Bringhurst
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
--->
+  <!-- removed link syntax for ExL - Bob Bringhurst
+  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
+  -->
 
-To open the **Table** dialog where you can select the **Table Properties** tab:
+  To open the **Table** dialog where you can select the **Table Properties** tab:
 
-* Define an appropriate **Caption**.
-* Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
+  * Define an appropriate **Caption**.
+  * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
   
-You can then use the **Cell Properties** to choose whether the cell is a data or header cell:
+  You can then use the **Cell Properties** to choose whether the cell is a data or header cell:
 
-* **Complex Data Tables**: In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
+* **Emphasis**: Use the `<strong>` or `<em>` element to indicate emphasis. Do not use headings to highlight text within paragraphs.
+  * Highlight the text you want to emphasize;
+  * Click on the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
+
+    >[!NOTE]
+    >
+    >RTE in a standard AEM installation is set up to use:
+    >
+    >* `<b>` for `<strong>`
+    >* `<i>` for `<em>`
+    >
+    >They are effectively the same, but `<strong>` and `<em>` are preferable as they are semantically correct html. Your development team can configure the RTE to use `<strong>` and `<em>` (instead of `<b>` and `<i>`) when developing your project instance.
+
+* **Complex Data Tables**: In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. 
 
   >[!NOTE]
   >
   >The id attribute is not available in an out-of-the-box installation. It can be enabled by configuring HTML rules and the serializer in the RTE.
 
- ```xml
-  <table>
-     <tr>
-       <th rowspan="2" id="h">Homework</th>
-       <th colspan="3" id="e">Exams</th>
-       <th colspan="3" id="p">Projects</th>
-     </tr>
-     <tr>
-       <th id="e1" headers="e">1</th>
-       <th id="e2" headers="e">2</th>
-       <th id="ef" headers="e">Final</th>
-       <th id="p1" headers="p">1</th>
-       <th id="p2" headers="p">2</th>
-       <th id="pf" headers="p">Final</th>
-     </tr>
-     <tr>
-      <td headers="h">15%</td>
-      <td headers="e e1">15%</td>
-      <td headers="e e2">15%</td>
-      <td headers="e ef">20%</td>
-      <td headers="p p1">10%</td>
-      <td headers="p p2">10%</td>
-      <td headers="p pf">15%</td>
-     </tr>
+  For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
+
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
     </table>
- ```
+  ```
 
   To achieve this in AEM you must add the markup directly using the source edit mode.
 
@@ -430,7 +433,7 @@ Follow the guidelines under [How to Meet Success Criteria 1.3.2](https://www.w3.
 
 #### Purpose - Sensory Characteristics (1.3.3) {#purpose-sensory-characteristics}
 
-Designers often focus on visual design features, such as color, shape, text style, or a piece of content’s absolute or relative position when presenting information. These can be very powerful design techniques in conveying information, but people who are blind or visually impaired may be unable to access information that requires visual identification of attributes such as position, color or shape.
+Designers often focus on visual design features, such as color, shape, text style, or a piece of content’s absolute or relative position when presenting information. These can be very powerful design techniques in conveying information (and can improve the overall accessibility for sighted users with cognitive accessibility needs), but people who are blind or visually impaired may be unable to access information that requires visual identification of attributes such as position, color or shape.
 
 Similarly, information that requires distinguishing between different sounds (e.g. male or female spoken content) will present accessibility barriers to people with hearing impairment, if it is not reflected in any text alternative for the audio content.
 
@@ -476,21 +479,20 @@ For example, someone with red-green color vision deficiency will be unable to di
 
 Additionally, color cannot be perceived by people using text-only browsers, monochrome display devices or viewing a black-and-white printout of the page.
 
+A further consideration is the *selected* state for an interface element (for example, tabs, toggle buttons, amongst others), which needs to be conveyed in some way other than just with color and beyond just a visual presentation. For such elements, the additional use of patterns, shapes, and programmatic information are helpful when creating a fully inclusive user experience that does not rely on a specific sense.
+
 #### How to Meet - Use of Color (1.4.1) {#how-to-meet-use-of-color}
 
 Wherever color is used to convey information, make sure that the information is available without the need to see the color.
 
 For example, make sure that information provided by color is also provided explicitly in text.
 
-If color is used as a cue to provide information, you should provide an additional visual cue, such as changing the style (e.g. bold, italics) or font. This helps people with low vision or who have color vision deficiency to identify the information. However, it cannot be relied on entirely, as it will not help people who cannot see the page at all.
+If color is used as a cue to provide information, you should provide an additional visual cue, such as changing the style (e.g. bold, italics) or font. This helps people with low vision or who have color vision deficiency to identify the information. However, it cannot be relied on entirely, as it will not help people who cannot see the page at all. Therefore it is (sometimes) useful to provide hidden text or to use programmatic solutions, such as the [Accessible Rich Internet Applications (ARIA) suite of web standards](https://www.w3.org/WAI/standards-guidelines/aria/), to convey this information to non-sighted users.
 
 #### More Information - Use of Color (1.4.1) {#more-information-use-of-color}
 
 * [Understanding Success Criteria 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [How to Meet Success Criteria 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
-
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
 
 ### Audio Control (1.4.2)  {#audio-control}
 
@@ -500,7 +502,13 @@ If color is used as a cue to provide information, you should provide an addition
 
 #### Purpose - Audio Control (1.4.2) {#purpose-audio-control}
 
-Individuals who use screen reading software can find it hard to hear the speech output if there is other audio playing at the same time. This difficulty is exacerbated when the screen reader's speech output is software based (as most are today) and is controlled via the same volume control as the sound. Therefore, it is important that the user be able to turn off the background sound. Note: Having control of the volume includes being able to reduce its volume to zero.
+Individuals who use screen reading software can find it hard to hear the speech output if there is other audio playing at the same time. This difficulty is exacerbated when the screen reader's speech output is software based (as most are today) and is controlled via the same volume control as the sound. Additionally, some people with cognitive disabilities and people who are neurodivergent may have sound sensitivity. These individuals will find any inability to change the volume level on audio content quite disruptive. 
+
+Therefore, it is important that the user be able to turn off the background sound. 
+
+>[!NOTE]
+>
+>Having control of the volume includes being able to reduce its volume to zero.
 
 #### How to Meet - Audio Control (1.4.2) {#how-to-meet-audio-control}
 
@@ -517,8 +525,12 @@ Follow the guidelines under [How to Meet Success Criteria 1.4.2](https://www.w3.
 * Level AA
 * Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
   * Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1.
-  * Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+  * Incidental: Text or images of text that are part of an inactive user interface component, that are [pure decoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
   * Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
+  
+  >[!NOTE]
+  >
+  >See [Understanding Non-text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) for further information, to help ensure that content authors understand the additional requirements around non-text elements (including icons, interface elements, amongst others).
 
 #### Purpose - Contrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
 
@@ -538,6 +550,20 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 * For text less than 18-point (or 14-point bold) in size, the contrast ratio between text/images of text and the background should be at least 4.5:1.
 * For text that is at least 18-point (or 14-point bold) in size, the contrast ratio should be at least 3:1.
 * If a background is patterned, then the background around any text should be shaded so that the 4.5:1 or 3:1 ratio is maintained.
+
+>[!NOTE]
+>
+>Please remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
+>
+>It is recommended to use good judgment and err on the side of readability and usability when selecting the appropriate fonts and sizing for web content.
+
+>[!NOTE]
+>
+>The following sites can help with conversions to other units:
+>
+>* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
+>* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
 
 To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
@@ -562,7 +588,7 @@ The intent of this Success Criterion is to ensure that visually rendered text, i
 
 #### How to Meet - Resize Text (1.4.4) {#how-to-meet-resize-text}
 
-Follow the guidelines under [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text).
+As well as following the guidelines under [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) you can encourage content authors to use fluid, flexible widths and heights in their page designs and font sizes (for example, Responsive Web Design) to allow readers the ability to resize text.
 
 #### More information - Resize Text (1.4.4) {#more-information-resize-text}
 
@@ -633,7 +659,7 @@ Follow the guidelines under [How to Meet Success Criteria 2.1.1](https://www.w3.
 
 The intent of this Success Criterion is to ensure that that content does not *trap* keyboard focus within subsections of content on a Web page. This is a common problem when multiple formats are combined within a page and rendered using plug-ins or embedded applications.
 
-There may be times when the functionality of the Web page restricts the focus to a subsection of the content, as long as the user knows how to leave that state and *untrap* the focus.
+There may be times when the functionality of the web page restricts the focus to a subsection of the content (for example, a modal dialog). In such cases you should provide a method for a user to be able to exit from that subsection of content (for example, the ESC key closes the modal dialog, or a Close button closes the modal dialog).
 
 #### How to Meet - No Keyboard Trap (2.1.2) {#how-to-meet-no-keyboard-trap}
 
@@ -686,17 +712,17 @@ Points to note are:
 
 #### Purpose - Pause, Stop, Hide (2.2.2) {#purpose-pause-stop-hide}
 
-Certain users may find content that moves is distracting and makes it difficult to concentrate on other parts of the page. Additionally, such content may prove difficult to read for people who have trouble keeping up with moving text.
+Certain users may find content that moves is distracting, or even physically painful, making it difficult to concentrate on other parts of the page. Additionally, such content may prove difficult to read for people who have trouble keeping up with moving text.
 
 #### How to Meet - Pause, Stop, Hide (2.2.2) {#how-to-meet-pause-stop-hide}
 
 Depending on the nature of the content, you can apply one or more of the following suggestions when creating web pages containing moving, flashing or blinking content:
 
-* Provide a means of pausing scrolling content to give users enough time to read it. For example, news tickers or auto-updated text.
+* Provide a means of pausing scrolling content to give users enough time to read it. For example, news tickers, auto-updated text, and image carousels that auto-advance.
 * Make sure that content that blinks stops blinking after five seconds.
-* Use appropriate technologies to display blinking content that can be disabled by the browser. For example, Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) files.
-* Provide a form control on the web page to allow the user to disable all blinking content on the page.
-* If any of the above is not possible, provide a link to a page containing all the content, but without any blinking.
+* Use appropriate technologies to display moving or blinking content that can be disabled by the browser. For example, Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) files.
+* Provide a form control on the web page to allow the user to disable all moving or blinking content on the page.
+* If any of the above is not possible, provide a link to a page containing all the content, but without any moving or blinking.
 
 #### More information - Pause, Stop, Hide (2.2.2) {#more-information-pause-stop-hide}
 
@@ -747,7 +773,7 @@ This deals with ensuring the content is easy and straightforward for users to na
  
 #### Purpose - Bypass Blocks (2.4.1) {#purpose-bypass-blocks}
 
-The intent of this Success Criterion is to allow people who navigate sequentially through content more direct access to the primary content of the Web page. Web pages and applications often have content that appears on other pages or screens. Examples of repeated blocks of content include but are not limited to navigation links, heading graphics, and advertising frames. Small repeated sections such as individual words, phrases or single links are not considered blocks for the purposes of this provision.
+The intent of this Success Criterion is to allow people who navigate sequentially through content more direct access to the primary content of the Web page. Web pages and applications often have content that appears on other pages or screens. Examples of repeated blocks of content include but are not limited to navigation links, header graphics, menus, and advertising frames. Small repeated sections such as individual words, phrases or single links are not considered blocks for the purposes of this provision.
 
 #### How to Meet - Bypass Blocks (2.4.1) {#how-to-meet-bypass-blocks}
  
@@ -770,7 +796,7 @@ This success criterion helps everyone, regardless of any particular impairment, 
 
 #### How to Meet - Page Titled (2.4.2) {#how-to-meet-page-titled}
 
-When a new HTML page is created in AEM, you can specify the page title. Make sure that the title adequately describes the content of the page, so that visitors can quickly identify whether or not the content is actually relevant to their needs.
+When a new HTML page is created in AEM, you can specify the page title. Make sure that the title adequately describes the content and purpose of the page, especially any unique aspects, so that visitors can quickly identify whether or not the content is actually relevant to their needs.
 
 You can also edit the page title when editing a page, which is accessible by **Page Information** - **Properties.**
 
@@ -787,7 +813,7 @@ You can also edit the page title when editing a page, which is accessible by **P
  
 #### Purpose - Focus Order (2.4.3) {#purpose-focus-order}
 
-The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, moving through components in a table one row at a time or one column at a time both reflect the logical relationships in the content. Either order may satisfy this Success Criterion.
+The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, moving through components in an online form composed of multiple fields and/or steps reflects the logical relationships in the content. 
 
 #### How to Meet - Focus Order (2.4.3) {#how-to-meet-focus-order}
  
@@ -806,7 +832,7 @@ Follow the guidelines under [How to Meet Success Criteria 2.4.3](https://www.w3.
 
 #### Purpose - Link Purpose (In Context) (2.4.4) {#purpose-link-purpose-in-context}
 
-For all users, regardless of impairment, clearly indicating the direction of a link through appropriate link text is vital. This helps users decide whether or not they actually want to follow a link. For sighted users, meaningful link text is extremely useful where there are several links on a page (particularly if the page is text-heavy), as meaningful link text provides a clearer indication of the functionality of the target page. While users of assistive technologies, which can generate a list of all the links on a single page, can more easily understand the link text out of context.
+For all users, regardless of impairment, clearly indicating the direction of a link through appropriate link text is vital. This helps users decide whether or not they actually want to follow a link. For sighted users, meaningful link text is extremely useful where there are several links on a page (particularly if the page is text-heavy), as meaningful link text provides a clearer indication of the functionality of the target page. Users of some assistive technologies, which can generate a list of all the links on a single page, can more easily understand the link text out of context if that link text is both unique and informative. However, sighted individuals with cognitive disabilities may become confused if a link does not provide enough information to accurately describe where the link will take them.
 
 #### How to Meet - Link Purpose (In Context) (2.4.4) {#how-to-meet-link-purpose-in-context}
 
@@ -821,9 +847,9 @@ Above all, make sure that the purpose of a link is clearly described within the 
 
 Links should be phrased consistently across pages, especially for navigation bars. For example, if a link to a specific page is named **Publications** on one page, use that text on other pages to ensure consistency.
 
-However, at the time of writing, there are some issues surrounding the use of titles:
+At the time of writing, there are some issues surrounding the use of title attributes to ensure that similar links presented on a page provide unique information about the destination (for example, "read more" will often refer to a range of different destinations):
 
-* Text contained within the title attribute is generally only available to mouse users as a tool-tip pop-up and cannot be accessed using the keyboard.
+* Text contained within the title attribute is generally only available to mouse users as a tool-tip pop-up and cannot be consistently accessed using the keyboard, or by mobile users.
 * Screen readers can read out title attributes, but this functionality may not be enabled by default; so users may be unaware a title attribute exists.
 * It is difficult to change the appearance of the title text, which means it may be difficult or impossible to read by some people.
 
@@ -844,7 +870,7 @@ John Smith’s publications
 >
 >The above snippet is an illustration, it is recommended to use the **Image** component.
 
-While it’s advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+While it is advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Where the link text is part of a list of closely related links and when the list item enclosing the link provides enough context.
 * Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.
@@ -950,13 +976,17 @@ The purpose of this success criterion is to make sure that text and other lingui
 
 To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. For example:
 
-* If a page is written in British English, the `<html>` element should read:
-  `<html lang = “en-gb”>`
+* If a page is written in English, the `<html>` element should read:
+  `<html lang = “en”>`
 
-* Whereas a page to be rendered as US English should adopt the following standard:
-  `<html lang = “en-us”>`
+* Whereas a page to be rendered in Spanish should adopt the following standard:
+  `<html lang = “es”>`
 
-In AEM, the default language of your page is set when creating the page, but may also be changed when editing a page, which is accessible by **Sidekick** - **Page** tab - **Page Properties...** - **Advanced** tab.
+In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+
+>[!NOTE]
+>
+>AEM provides further fine-tuning for variations of a root language; for example, American Engish - en-us, British English - en-gb, and Canadian English - en-ca. This level of detail is often superfluous for assistive technology, though can be used for regional variations in page content.
 
 #### More Information - Language of Page (3.1.1) {#more-information-language-of-page}
 
@@ -977,7 +1007,7 @@ The purpose of this success criterion is similar to the success criterion [Langu
 Pages applying this success criterion allow:
 
 * Braille transition software to insert accented characters.
-* Screen readers to pronounce those words that are not in the default language correctly.
+* Screen readers to pronounce those words that have special characters or are not in the default language that was identified at the page level.
 * Translation tools such as Google Translate to correctly translate content from one language to another.
 
 #### How to Meet - Language of Parts (3.1.2) {#how-to-meet-language-of-parts}
@@ -1124,7 +1154,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.
  
 #### Purpose - Error Identification (3.3.1) {#purpose-error-identification}
 
-The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG 2.0, an "input error" is information provided by the user that is not accepted. This includes:
+The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. This includes:
 
 information that is required by the web page but omitted by the user, or information that is provided by the user but that falls outside the required data format or allowed values.
 For example:
@@ -1155,19 +1185,21 @@ Follow the guidelines under [How to Meet Success Criteria 3.3.1](https://www.w3.
 
 Providing instructions to help people complete forms is a fundamental part of good practice in interface usability. Doing this is particularly helpful for people with visual or cognitive impairments who might otherwise have difficulty understanding the layout of a form and the sort of data to be provided in a particular form field.
 
-In AEM a default label is added when you add a form component, such as a **Text Field**, to the page. This default title is dependent on the component type, You can add your own title in the **Title and Text** tab of the edit dialog for that field. It is important to ensure that labels help users to understand the data associated with each form component.
+##### Forms
+
+In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. This default title is dependent on the component type, You can add your own title in the **Title and Text** tab of the edit dialog for that field. It is important to ensure that labels help users to understand the data associated with each form component.
 
 This **Title** field must be used for field elements as it provides a label that is available to assistive technology. Simply writing a label in text beside the field is not sufficient.
 
 For some form components it is also possible to visually hide labels using the **Hide Title** checkbox. Labels hidden in this way are still available to assistive technology, but not displayed on the screen. While this can be a good approach in some situations it is usually best to include a visual label wherever possible, as some users may be looking at a very small section of the screen (one field at a time) and need the labels to identify the field correctly.
 
-#### Image Buttons {#image-buttons}
+###### Image Buttons {#image-buttons}
 
-Where image buttons are used (for example, the **Image Button** component) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
+Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
 
-#### Groups of Form Fields {#groups-of-form-fields}
+###### Groups of Form Fields {#groups-of-form-fields}
 
-Where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. When adding a set of radio buttons in AEM, the **Title** field provides this group title, while individual titles are specified as the radio buttons (**Items**) are created.
+In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. When adding a set of radio buttons in AEM, the **Title** field provides this group title, while individual titles are specified as the radio buttons (**Items**) are created.
 
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see Adding Support for Additional HTML Elements and Attributes).
 
@@ -1175,7 +1207,7 @@ However, there is no programmatic association between the group title and the ra
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-#### Additional Considerations for Forms {#additional-considerations-for-forms}
+###### Additional Considerations for Forms {#additional-considerations-for-forms}
 
 If data is to be entered in a specific format, make this clear in the label text. For example, if a date has to be entered in the `DD-MM-YYYY` format, specifically indicate this as part of the label. This means that when screen reader users encounter the field, the label is automatically announced, along with the additional information about format.
 
@@ -1203,7 +1235,7 @@ In simple forms with very limited functionality, appropriately labelling a `Subm
  
 #### Purpose - Error Suggestion (3.3.3) {#purpose-error-suggestion}
 
-The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG 2.0 definition of "input error" says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
+The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
 
 Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. In the case of an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
 
