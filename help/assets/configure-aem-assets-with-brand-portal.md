@@ -21,11 +21,11 @@ Configuring an AEM Assets cloud instance with your Brand Portal tenant (organiza
 1. Test the configuration by publishing an asset from AEM Assets cloud instance to Brand Portal.
 
 >[!NOTE]
-    >
-    >A Brand Portal tenant shall only be configured with one AEM Assets cloud instance.
-    >
-    >Do not configure a Brand Portal tenant with multiple AEM Assets cloud instances.
-    >
+ >
+ >A Brand Portal tenant shall only be configured with one AEM Assets cloud instance.
+ >
+ >Do not configure a Brand Portal tenant with multiple AEM Assets cloud instances.
+ >
 
 ## Prerequisites {#prerequisites}
 
@@ -219,11 +219,11 @@ Perform the following steps to configure the IMS account that you have created i
    ![](assets/create-new-integration5.png)
 
 >[!CAUTION]
-   >
-   >You must have only one IMS configuration. Do not create multiple IMS configurations.
-   >
-   >Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create a new, valid configuration.
-   >
+ >
+ >You must have only one IMS configuration. Do not create multiple IMS configurations.
+ >
+ >Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create a new, valid configuration.
+ >
 
 
 ### Configure cloud service {#configure-the-cloud-service}
@@ -338,9 +338,9 @@ On publishing the asset, the following request and response logs are generated:
 In the above example, an additional request and response are triggered. The system could not find the parent folder (a.k.a Add Path) in Brand Portal because the asset was published for the first time, therefore, triggers an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
-   >
-   >Additional request is generated in case the parent folder does not exist in Brand Portal (in the above example), or the parent folder has been modified in AEM Assets. 
-   >
+ >
+ >Additional request is generated in case the parent folder does not exist in Brand Portal (in the above example), or the parent folder has been modified in AEM Assets. 
+ >
 
 
 <!--
