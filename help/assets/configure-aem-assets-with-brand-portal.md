@@ -6,7 +6,26 @@ contentOwner: Vishabh Gupta
 
 # Configure AEM Assets with Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Manager (AEM) Assets is configured with Brand Portal through Adobe I/O, which procures an IMS token for authorization of your Brand Portal tenant.
+Adobe Experience Manager (AEM) Assets is configured with Brand Portal via Adobe Developer Console, which procures an IMS token for authorization of your Brand Portal tenant.
+
+**How configuration works?**
+
+Configuring an AEM Assets cloud instance with your Brand Portal tenant (organization) is a multi-step process which requires configurations in both, AEM Assets cloud instance as well as in Adobe Developer Console.
+
+1. In AEM Assets cloud instance, create an IMS account and generate a public certificate (public key).
+1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
+1. Under the project, configure an API using the public key to create a service account (JWT) connection.
+1. Get the service account credentials and JWT payload information.
+1. In AEM Assets cloud instance, configure the IMS account using the service account credentials and JWT payload.
+1. In AEM Assets cloud instance, configure the Brand Portal cloud service using the IMS account and Brand Portal endpoint (organization URL).
+1. Test the configuration by publishing an asset from AEM Assets cloud instance to Brand Portal.
+
+>[!NOTE]
+    >
+    >A Brand Portal tenant shall only be configured with one AEM Assets cloud instance.
+    >
+    >Do not configure a Brand Portal tenant with multiple AEM Assets cloud instances.
+    >
 
 ## Prerequisites {#prerequisites}
 
@@ -20,12 +39,11 @@ You require the following to configure AEM Assets with Brand Portal:
 
 ## Create configuration {#create-new-configuration}
 
-You can create configuration on Adobe I/O to configure your AEM Assets cloud instance with Brand Portal.
-
-Perform the following steps in the listed sequence: 
+Perform the following steps in the specified sequence to configure AEM Assets cloud instance with Brand Portal.
+ 
 1. [Obtain public certificate](#public-certificate)
-1. [Create Adobe I/O integration](#createnewintegration) 
-1. [Create IMS Account configuration](#create-ims-account-configuration)
+1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)
 1. [Configure cloud service](#configure-the-cloud-service)
 1. [Test configuration](#test-configuration)
 
@@ -36,52 +54,104 @@ IMS configuration authenticates your Brand Portal tenant with AEM Assets author 
 IMS configuration includes two steps:
 
 * [Obtain public certificate](#public-certificate) 
-* [Create IMS Account configuration](#create-ims-account-configuration)
+* [Configure IMS account](#create-ims-account-configuration)
 
 ### Obtain public certificate {#public-certificate}
 
-Public certificate allows you to authenticate your profile on Adobe I/O.
+Public certificate allows you to authenticate your profile on Adobe Developer Console.
 
-1. Login to your AEM Assets cloud instance.
+1. Log in to your AEM Assets cloud instance.
 
 1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS Account Configuration UI](assets/ims-configuration1.png)
 
-1. Adobe IMS Configurations page opens.
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. 
    
-   Click **[!UICONTROL Create]**. 
-   
-   It will take you to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page.
+1. You are redirected to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
 
-1. By default, **Certificate** tab opens.
-
-   In **Cloud Solution**, select **[!UICONTROL Adobe Brand Portal]**.  
+   Select the cloud solution **[!UICONTROL Adobe Brand Portal]**.  
 
 1. Mark the check box **[!UICONTROL Create new certificate]** and specify an **alias** for the certificate. The alias serves as name of the dialog. 
 
-1. Click **[!UICONTROL Create certificate]**. A dialog appears. Click **[!UICONTROL OK]** to generate the public certificate.
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** in the dialog box to generate the public certificate.
 
    ![Create Certificate](assets/ims-config2.png)
 
-1. Click **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create Adobe I/O integration](#createnewintegration).  
+1. Click **[!UICONTROL Download Public Key]** and save the certificate (.crt) file on your machine. 
+
+   The certificate file will be used in further steps to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
    ![Download Certificate](assets/ims-config3.png)
 
 1.  Click **[!UICONTROL Next]**. 
 
-    In the **Account** tab, you create the Adobe IMS Account but for that you will need the integration details. Keep this page open for now.
+    In the **Account** tab, you create the Adobe IMS account but for that you will need the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
-    Open a new tab and [create Adobe I/O integration](#createnewintegration) to get the integration details for IMS Account configurations. 
+    Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
 
-### Create Adobe I/O integration {#createnewintegration}
+### Create service account (JWT) connection {#createnewintegration}
 
-Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which is required in setting up the IMS Account configurations.
+In Adobe Developer Console, projects and APIs are configured at organization (Brand Portal tenant) level. Configuring an API creates a service account (JWT) connection in Adobe Developer Console. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. To configure AEM Assets cloud instance with Brand Portal, you must generate a public certificate (public key) in AEM Assets cloud instance and create credentials in Adobe Developer Console by uploading the public key. This public key is used to configure API for the selected Brand Portal organization and generates the credentials and JWT payload for the service account. These credentials are further used to configure the IMS account in AEM Assets cloud instance. Once the IMS account is configured, you can configure the Brand Portal cloud service in AEM Assets cloud instance.
 
-1. Login to Adobe I/O Console with system administrator privileges on the IMS organization of the Brand Portal tenant.
+Perform the following steps to generate the service account credentials and JWT payload:
 
-   Default URL: [https://console.adobe.io/](https://console.adobe.io/) 
+1. Log in to Adobe Developer Console with system administrator privileges on the IMS organization (Brand Portal tenant). The default URL is 
 
+   [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)
+
+
+   >[!NOTE]
+    >
+    >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the dropdown (organization list) located at the upper-right corner.
+    >
+
+1. Click **[!UICONTROL Create new project]**. A blank project is created for your organization. 
+
+   Click **[!UICONTROL Edit project]** to update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and click **[!UICONTROL Save]**.
+
+   ![Create Project](assets/service-account1.png)
+   
+1. In the Project overview tab, click **[!UICONTROL Add API]**.
+
+   ![Add API](assets/service-account2.png)
+
+1. In the Add an API window, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**. 
+
+   Ensure that you have access to the AEM Brand Portal service.
+
+1. In the Configure API window, click **[!UICONTROL Upload your public key]**. Then, click **[!UICONTROL Select a File]** and upload the public certificate (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. 
+
+   Click **[!UICONTROL Next]**.
+
+   ![Upload Public Key](assets/service-account3.png)
+
+1. Verify the public certificate and click **[!UICONTROL Next]**.
+
+1. In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+
+   Select the default product profile **[!UICONTROL Assets Brand Portal]**. 
+
+   ![Select Product Profile](assets/service-account4.png)
+
+1. With the API configured, you are redirected to the API overview. From the left navigation under **[!UICONTROL Credentials]**, click **[!UICONTROL Service Account (JWT)]**.
+
+   >[!NOTE]
+    >
+    >You can view the credentials and perform other actions (generate JWT tokens, copy credential details, retrieve client secrets, so on) as needed.
+    >
+
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
+
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![Service Account Credentials](assets/service-account5.png)
+
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]**. 
+
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in AEM Assets cloud instance.
+
+<!--
 1. Click **[!UICONTROL Create Integration]**.
 
 1. Select **[!UICONTROL Access an API]**, and click **[!UICONTROL Continue]**.
@@ -116,33 +186,35 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
    The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
 
-### Create IMS Account configuration {#create-ims-account-configuration}
+-->
+
+### Configure IMS account {#create-ims-account-configuration}
 
 Ensure that you have performed the following steps:
 
 * [Obtain public certificate](#public-certificate)
-* [Create Adobe I/O integration](#createnewintegration)
+* [Create service account (JWT) connection](#createnewintegration)
 
-**Steps to create IMS account configuration:**
+Perform the following steps to configure the IMS account that you have created in [obtain public certificate](#public-certificate).
 
-1. Open the IMS Configuration page, **[!UICONTROL Accounts]** tab. You kept the page open at the end of section, [Obtain public certificate](#public-certificate).
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Accounts]** tab. You kept the page open while [obtaintaing the public certificate](#public-certificate).
 
 1. Specify a **[!UICONTROL Title]** for the IMS account.
 
    In **[!UICONTROL Authorization Server]**, enter the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
 
-   Paste the API Key, Client Secret, and JWT payload that you have copied in the end of [Create Adobe I/O integration](#createnewintegration).
+   Paste the client ID in API key, client secret, and JWT payload that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    Click **[!UICONTROL Create]**.
 
-   The Integration is created.
+   The IMS account is configured. 
 
    ![IMS Account configuration](assets/create-new-integration6.png)
 
    
-1. Select the IMS configuration and click **[!UICONTROL Check Health]**. A dialog box appears. 
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-   Click **[!UICONTROL Check]**. On successful connection, the *Token retrieved successfully* message appears.
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
    ![](assets/create-new-integration5.png)
 
@@ -156,21 +228,19 @@ Ensure that you have performed the following steps:
 
 ### Configure cloud service {#configure-the-cloud-service}
 
-Perform the following steps to create Brand Portal cloud service configuration:
+Perform the following steps to configure the Brand Portal cloud service:
 
-1. Login to your AEM Assets cloud instance.
+1. Log in to your AEM Assets cloud instance.
 
 1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
-   Brand Portal Configurations page opens.
-
-1. Click **[!UICONTROL Create]**.
+1. In the Brand Portal Configurations page, click **[!UICONTROL Create]**.
 
 1. Specify a **[!UICONTROL Title]** for the configuration. 
 
-   Select the IMS Configuration that you have created in the step, [create IMS Account configuration](#create-ims-account-configuration).
+   Select the IMS configuration that you have created while [configuring the IMS account](#create-ims-account-configuration).
    
-   In **[!UICONTROL Service URL]**, enter your Brand Portal tenant URL.   
+   In the **[!UICONTROL Service URL]**, enter your Brand Portal tenant (organization URL).   
    
     ![](assets/create-cloud-service.png)
 
@@ -178,15 +248,15 @@ Perform the following steps to create Brand Portal cloud service configuration:
 
 ### Test configuration {#test-configuration}
 
-1. Login to your AEM Assets cloud instance.
+Perform the following steps to validate the configuration:
+
+1. Log in to your AEM Assets cloud instance.
 
 1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
     ![](assets/test-bpconfig1.png)
 
-1. The Distribution page opens. 
-
-   A Brand Portal distribution agent `bpdistributionagent0` is created under **[!UICONTROL Publish to Brand Portal]**.
+1. In the Distribution page, you can see that a Brand Portal distribution agent `bpdistributionagent0` is created for **[!UICONTROL Publish to Brand Portal]**.
 
    Click **[!UICONTROL Publish to Brand Portal]**.
 
@@ -197,7 +267,7 @@ Perform the following steps to create Brand Portal cloud service configuration:
     >By default, one distribution agent is created for a Brand Portal tenant.
     >
 
-1. The distribution agent page opens. By default, the **[!UICONTROL Status]** tab opens which populates the distribution queues. 
+1. In the distribution agent page, you can see the distribution queues under the **[!UICONTROL Status]** tab. 
    
    A distribution agent contains two queues: 
    * **processing-queue**: for the distribution of assets to Brand Portal. 
@@ -240,11 +310,11 @@ See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experie
 
 ## Distribution logs {#distribution-logs}
 
-You can check the logs for detailed information on the actions performed on the distribution agent. 
+You can check the logs for detailed information on the actions performed by the distribution agent. 
 
-For example, we have published an asset from AEM Assets to Brand Portal to verify the configuration. 
+For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
-1. Follow the steps (Step 1 - 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
 
 1. Click **[!UICONTROL Logs]** to view the distribution logs. You can see the processing and error logs here.
 
