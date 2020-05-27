@@ -16,7 +16,7 @@ You require the following to configure AEM Assets with Brand Portal:
 * Brand Portal tenant URL.
 * A user with system administrator privileges on the IMS organization of the Brand Portal tenant. 
 
-**Contact Support** for further queries.
+**Contact Customer Care** for further queries.
 
 ## Create configuration {#create-new-configuration}
 
