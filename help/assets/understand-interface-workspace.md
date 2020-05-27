@@ -10,14 +10,16 @@ contentOwner: AG
 TBD: Removing this article for now from TOC.
 Need to rewrite this getting started content post-GA.
 
--->
-
-Overview of the home page experience.
-Parts of the UI that lead to different capabilities accessible from here.
-How to reach Assets specific UI and where to look to do DAM specific tasks.
-How to navigate, where to search, find workflows, do configurations, check reports, etc.
-How to find support and docs links, profile info, etc.
+Topics to be covered:
+* Overview of the home page experience.
+* Parts of the UI that lead to different capabilities accessible from here.
+* How to reach Assets specific UI and where to look to do DAM specific tasks.
+* How to navigate, where to search, find workflows, do configurations, check reports, etc.
+* How to find support and docs links, profile info, etc.
+* Embed videos from Tech Mktg, if any.
+* Look for videos on YT and blog posts on the Internet for introductions to AEMaaCS Assets.
 
 >[!MORELIKETHIS]
 >
->
+>* [Basic handling for Sites]
+-->

@@ -18,16 +18,6 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 [Content fragment models](/help/assets/content-fragments/content-fragments-models.md) can be enabled and created, prior to creating content fragments with structured content.
 
->[!NOTE]
->
->See Developing Content Fragments for further information on templates; used for simple content fragments.
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
-
 ### Creating a Content Fragment {#creating-a-content-fragment}
 
 The method of creating a content fragment is (basically) the same for both simple and structured fragments:
@@ -36,13 +26,13 @@ The method of creating a content fragment is (basically) the same for both simpl
 2. Select **Create**, then **Content Fragment** to open the wizard.
 3. The first step of the wizard requires you to specify the basis of the new fragment.
 
-    * This can be a:
+    * This can be:
 
-        * Template - for example **Simple Fragment** <!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * the **Simple Fragment** template
 
-        * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airports** model
+      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airports** model
 
-    * All available templates and models are displayed.
+        * All available models are displayed.
 
    After selection, use **Next** to proceed.
 
@@ -118,11 +108,9 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 To open your fragment for editing:
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
 
 >[!CAUTION]
 >
@@ -175,13 +163,7 @@ The editor has two options:
 
   >[!CAUTION]
   >
-  >To edit a content fragment you need the appropriate permissions. Please contact your system administrator if you are experiencing issues. 
-  
-  <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+  >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
 
   >[!NOTE]
   >
