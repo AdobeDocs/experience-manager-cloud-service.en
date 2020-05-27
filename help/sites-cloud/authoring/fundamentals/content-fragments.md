@@ -5,7 +5,7 @@ description: Adobe Experience Manager as a Cloud Service Content Fragments allow
 
 # Content Fragments {#content-fragments}
 
-Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
+Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
 
 They allow you to create channel-neutral content, together with (possibly channel-specific) variations. You can then use these fragments, and their variations, when authoring your content pages.
 

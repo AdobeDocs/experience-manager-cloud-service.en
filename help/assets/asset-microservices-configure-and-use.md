@@ -20,14 +20,14 @@ Asset microservices provide a scalable and resilient processing of assets using 
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Administrators can create and maintain the configurations of post-processing workflows, including optional customization. Customizing workflows allows for extensibility and full customization.
 
-A high-level flow for asset processing is below.
+Asset microservices allows you can process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservices-flow](assets/asset-microservices-flow.png)
+![A high-level view of asset processing](assets/asset-microservices-flow.png "A high-level view of asset processing")
 
 >[!NOTE]
 >
@@ -168,3 +168,7 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 > OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
 
 For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
+
+## Best practices and limitations {#best-practices-limitations-tips}
+
+* Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.

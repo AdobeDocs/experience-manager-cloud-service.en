@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Manage video assets {#manage-video-assets}
 
-Learn how to manage and edit the video assets in Adobe Experience Manager (AEM) Assets. Video encoding and transcoding is possible only with Dynamic Media integration. Without Dynamic Media, you get basic support for videos, such as extraction of preview thumbnails for the supported file formats and preview in the user interface for formats that are supported for playback in the browser directly.
+Learn how to manage and edit the video assets in Adobe Experience Manager (AEM) Assets. Video encoding and transcoding, for example, FFmpeg transcoding, is possible only with Dynamic Media integration. Without Dynamic Media, you get basic support for videos, such as extraction of preview thumbnails for the supported file formats and preview in the user interface for formats that are supported for playback in the browser directly.
 
 <!-- Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/dynamic-media/video.md). -->
 

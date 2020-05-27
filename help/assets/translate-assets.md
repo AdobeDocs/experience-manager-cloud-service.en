@@ -50,7 +50,7 @@ Each language folder is called a language copy. The root folder of a language co
 
 The language copy for which you originally add assets is the language master. The language master is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
 
-```
+```shell
 /content
 &nbsp; &nbsp; /- dam
 &nbsp; &nbsp; &nbsp; |- en
