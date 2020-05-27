@@ -10,7 +10,7 @@ Adobe Experience Manager (AEM) Assets is configured with Brand Portal via Adobe 
 
 **How configuration works?**
 
-Configuring an AEM Assets cloud instance with your Brand Portal tenant (organization) is a multi-step process which requires configurations in both, AEM Assets cloud instance as well as in Adobe Developer Console.
+Configuring the AEM Assets cloud instance with a Brand Portal tenant (organization) requires configurations in both, AEM Assets cloud instance as well as in Adobe Developer Console.
 
 1. In AEM Assets cloud instance, create an IMS account and generate a public certificate (public key).
 1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
