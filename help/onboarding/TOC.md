@@ -26,4 +26,6 @@ user-guide-title: Onboarding to AEM as a Cloud Service
 + Accessibility {#accessibility}
   + [AEM as a Cloud Service and the Web Accessibility Guidelines](accessibility/web-accessibility.md)
   + [A Quick Guide to WCAG 2.1](accessibility/quick-guide-wcag.md)
++ Best Practices {#best-practices}
+  + [SEO and URL Management](best-practices/seo-and-url-management.md)
 + [Overview of the Tools consoles](tools-consoles.md)
