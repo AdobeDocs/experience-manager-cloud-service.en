@@ -90,7 +90,12 @@ This feature is not available for Production/Stage environment set in a regular 
 
 ## Accessing Developer Console {#accessing-developer-console}
 
-Select **Developer Console** from the dropdown menu in the **Environments** Card. 
+Select **Developer Console** from the dropdown menu in the **Environments** Card. This will open a new tab in your browser with the login page to **Developer Console**. 
+
+Only a user in the Developer role will have access to **Developer Console**. The exception being for Sandbox Programs, where any user with access to the Cloud Manager Sandbox Program will have access to **Developer Console**.
+
+Refer to [Hibernating and De-hibernating Sandbox Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
+
 
 ![](assets/dev-console1.png)
 
