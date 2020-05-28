@@ -19,7 +19,7 @@ There are some generally accepted best practices when it comes to URLs.
 
 In your AEM project, when evaluating your URLs, ask yourself the following:
 
-“If a user were to see this URL and none of the content on the page, could they describe what this page was?”
+*“If a user were to see this URL and none of the content on the page, could they describe what this page was?”*
 
 If the answer is yes, then it is likely that the URL will work well for a search engine.
 
