@@ -3,7 +3,7 @@ title: Move to AEM as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service moving to AEM as a cloud service self-help resources and documentation links
 ---
 
-# Move to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 ## Benefits of Moving to AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
