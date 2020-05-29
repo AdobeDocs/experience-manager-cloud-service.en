@@ -3,9 +3,9 @@ sub-product: Move to AEM as a Cloud Service
 user-guide-title: Move to AEM as a Cloud Service
 ---
 
-# Move to AEM as a Cloud Service Guide {#moving}
+# Moving to AEM as a Cloud Service Guide {#moving}
 
-+ [Move to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phases of Transition Journey {#phases}
   + [Planning](/help/move-to-cloud-service/planning.md)
   + [Execution](/help/move-to-cloud-service/execution.md)

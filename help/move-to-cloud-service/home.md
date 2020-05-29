@@ -39,7 +39,7 @@ Learn more about the different phases involved in the transition journey to Clou
 |[Core Concepts](/help/core-concepts/home.md)|This guide provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to administer Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to administer Experience Manager Assets as a Cloud Service.|
-|[Move to AEM as a Cloud Service User Guide](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service.|
+|[Moving to AEM as a Cloud Service User Guide](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
