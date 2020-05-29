@@ -69,7 +69,7 @@ Follow the steps below to create a regular program:
 
 1. Select **Set up for Production** in the Create Program wizard to create a regular program. User can accept the default program name or edit it before selecting **Continue**.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above.
 
