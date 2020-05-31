@@ -13,6 +13,8 @@ Follow the section below to understand the important considerations while runnin
 
 * If you are using a *Sandbox Environment*, ensure that your environment is upgraded to May 29'2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
 
+* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the administration group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
 * The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process.
@@ -22,7 +24,7 @@ Follow the section below to understand the important considerations while runnin
 The Content Transfer Tool can be downloaded as a zip file from the the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
->Refer to [Accessing the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) for more details.
+>Download the Content Transfer Tool from [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Running the Content Transfer Tool {#running-tool}
 
@@ -112,7 +114,8 @@ Follow the steps below to extract your migration set from the Content Transfer T
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > You will have to refresh the page to view the updated status.
+   >You will have to refresh the page to view the updated status.
+   >When extraction phase is started, write lock is created and released after *60 seconds*. So, if an extraction is stopped, you need to wait for a minute for lock to be released before starting extraction again.
 
 #### Top-Up Extraction {#top-up-extraction-process}
 
@@ -244,10 +247,12 @@ The files created in the *OUT_DIR* specified above for consistency can then be c
 
 As a user, you might see the following behavioral changes in the User Interface (UI) for Content Transfer Tool:
 
-1. User creates a migration set for an author URL (Development/Stage/Production) and successfully performs extraction and ingestion.
+* User creates a migration set for an author URL (Development/Stage/Production) and successfully performs extraction and ingestion.
 
-1. User then creates a new migration set for the same Author URL and performs extraction and ingestion on the new migration set. The UI shows that the ingestion status of the first migration set changes to **FAILED** and no logs are available.
+* User then creates a new migration set for the same Author URL and performs extraction and ingestion on the new migration set. The UI shows that the ingestion status of the first migration set changes to **FAILED** and no logs are available.
 
-1. This does not mean that the ingestion for the first migration set failed. This behavior is seen because when a new ingestion job is started, it deletes the previous ingestion job. Hence, the changes status on the first migration set should be ignored.
+* This does not mean that the ingestion for the first migration set failed. This behavior is seen because when a new ingestion job is started, it deletes the previous ingestion job. Hence, the changes status on the first migration set should be ignored.
+
+* The icons in the Content Transfer Tool UI may appear to be different from the screenshots shown in this guide or may not show up at all depending on the version of the source AEM instance.
 
 
