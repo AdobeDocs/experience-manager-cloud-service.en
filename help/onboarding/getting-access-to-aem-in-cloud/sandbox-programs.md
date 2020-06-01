@@ -80,6 +80,9 @@ You can manually hibernate your Sandbox Program from the Developer Console in tw
 * Environment detail screen 
 * Environment listing screen 
 
+>[!NOTE]
+>Access to Developer Console for a Sandbox Program is available to any user of Cloud Manager.
+
 Follow the steps below to manually hibernate your Sandbox Program environments:
 
 1. Navigate to the **Developer Console**. 
