@@ -14,6 +14,8 @@ Smart Content Service uses an artifical intelligence framework of [Adobe Sensei]
 ![flowchart](assets/flowchart.gif) 
 -->
 
+## Integrate with Adobe I/O {#aio-integration}
+
 Before you can tag their images using SCS, integrate [!DNL Adobe Experience Manager] with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within [!DNL Experience Manager].
 
 The article details out the following key tasks that are required to configure the Smart Content Service. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Content Service.
@@ -23,12 +25,14 @@ The article details out the following key tasks that are required to configure t
 * Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe I/O.  
 * Optionally, enable auto-tagging on asset upload.
 
+### Prerequisites for Adobe I/O integration {#prerequisite-for-aio-integration}
+
 Before you can use the Smart Content Service, ensure the following to create an integration on Adobe I/O:
 
 * An Adobe ID account that has administrator privileges for the organization.
 * The Smart Content Service service is enabled for your organization.
 
-## Obtain a public certificate {#obtain-public-certificate}
+### Obtain a public certificate {#obtain-public-certificate}
 
 A public certificate allows you to authenticate your profile on Adobe I/O.
 
@@ -52,7 +56,7 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
 
    ![A representation of the settings created for the smart tagging service](assets/download_link.png)
 
-## Reconfigure if a certificate expires {#certrenew}
+### Reconfigure if a certificate expires {#certrenew}
 
 When the certificate expires it is no longer trusted. To add a new certificate, follow these steps. You cannot renew an expired certificate.
 
@@ -70,7 +74,7 @@ When the certificate expires it is no longer trusted. To add a new certificate, 
 1. To download a public certificate, click **[!UICONTROL Download Public Certificate for OAuth Integration]**.
 1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing Smart Content Services on the **[!UICONTROL Integrations]** page. Upload the new certificate. For more information, see the instructions in [Create Adobe I/O integration](#create-adobe-i-o-integration).
 
-## Create Adobe I/O integration {#create-aio-integration}
+### Create an integration {#create-aio-integration}
 
 To use Smart Content Service APIs, create an integration in Adobe I/O to generate API Key, Technical Account Id, Organization Id, and Client Secret.
 
@@ -79,9 +83,6 @@ To use Smart Content Service APIs, create an integration in Adobe I/O to generat
 1. Click **[!UICONTROL New integration]**.
 1. On the **[!UICONTROL Create a new integration]** page, select **[!UICONTROL Access an API]**. Click **[!UICONTROL Continue]**.
 1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Continue]**.
-
-   ![When creating a new integration select Smart Content under Experience Cloud from the available options](assets/smart_content.png)
-
 1. On the next page, select **[!UICONTROL New integration]**. Click **[!UICONTROL Continue]**.
 1. On the **[!UICONTROL Integration Details]** page, specify a name for the integration gateway and add a description.
 1. In the **[!UICONTROL Public keys certificates]**, upload `AEM-SmartTags.crt` file that you downloaded above.
@@ -90,7 +91,7 @@ To use Smart Content Service APIs, create an integration in Adobe I/O to generat
 
    ![In the Overview tab, you can review the information provided for integration.](assets/integration_details.png)
 
-## Configure Smart Content Service {#configure-smart-content-service}
+### Configure Smart Content Service {#configure-smart-content-service}
 
 To configure the integration, use the values of Technical Account ID, Organization Id, Client Secret, Authorization Server, and API key fields from the Adobe I/O integration. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] instance.
 
@@ -99,7 +100,7 @@ To configure the integration, use the values of Technical Account ID, Organizati
 1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the pre-populated values for the **[!UICONTROL Service URL]** and **[!UICONTROL Authorization Server]** fields.
 1. For the fields **[!UICONTROL API Key]**, **[!UICONTROL Technical Account Id]**, **[!UICONTROL Organization Id]**, and **[!UICONTROL Client Secret]**, use the values generated above.
 
-## Validate the configuration {#validate-the-configuration}
+### Validate the configuration {#validate-the-configuration}
 
 After you've completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
 
@@ -111,34 +112,28 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
    The validation result is displayed in the same dialog.
 
-<!-- 
-TBD: Is this still applicable?
-
-## Enable smart tagging in the Update Asset workflow (Optional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+## Enable smart tagging for newly uploaded assets (Optional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. In [!DNL Experience Manager], go to **[!UICONTROL Tools > Workflow > Models]**.
 1. On **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Update Asset]** workflow model.
 1. Click **[!UICONTROL Edit]** from the toolbar.
 1. Expand the Side Panel to display the steps. Drag **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
 
-   ![Add smart tag asset step after the process thumbnail step in the [!UICONTROL DAM Update Asset] workflow](assets/chlimage_1-105.png)
+   ![Add smart tag asset step after the process thumbnail step in the DAM Update Asset workflow](assets/chlimage_1-105.png)
 
-   *Figure: Add smart tag asset step after the process thumbnail step in the [!UICONTROL DAM Update Asset] workflow.*
+   *Figure: Add smart tag asset step after the process thumbnail step in the DAM Update Asset workflow.*
 
-1. Open the step in edit mode. Under **[!UICONTROL Advanced Settings]**, ensure that the **[!UICONTROL Handler Advance]** option is selected.
+1. Open the step to configure. Under **[!UICONTROL Advanced Settings]**, ensure that the **[!UICONTROL Handler Advance]** option is selected.
 
-   ![chlimage_1-3](assets/chlimage_1-106.png)
+   ![chlimage_1-3](assets/smart-tags-workflow-handler-setting.png)
 
-1. In the **[!UICONTROL Arguments]** tab, select **[!UICONTROL Ignore Errors]** if you want the workflow to complete even if the automatic tagging step fails.
+1. In the **[!UICONTROL Arguments]** tab, select **[!UICONTROL Ignore Errors]** if you want the workflow to ignore failures when predicting tags.
 
    ![chlimage_1-4](assets/chlimage_1-107.png)
 
    To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **[!UICONTROL Ignore Smart Tag Flag]**.
 
-   ![chlimage_1-5](assets/chlimage_1-108.png)
-
-1. Click **[!UICONTROL OK]** to close the process step, and then save the workflow.
--->
+1. Click **[!UICONTROL OK]** to close the process step, and then save the workflow. Click **[!UICONTROL Sync]**.
 
 >[!MORELIKETHIS]
 >
