@@ -1,12 +1,10 @@
 ---
-title: Enhanced Smart Tags
-description: Apply contextual and descriptive business tags using Adobe Sensei's AI and ML service, to improve asset discovery and content velocity.
+title: Tag images with artificially intelligent services.
+description: Tag images with artificially intelligent services that apply contextual and descriptive business tags using Adobe Sensei services.
 contentOwner: AG
 ---
 
 # Tag your images using smart services {#smart-tag-assets}
-
-## Overview of smart tags {#overview-of-enhanced-smart-tags}
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches.
 
@@ -18,29 +16,17 @@ In the background, the Smart Content Service (SCS) uses an artifical intelligenc
 ![flowchart](assets/flowchart.gif) 
 -->
 
-To use smart tagging, accomplish the following tasks:
+To use smart tagging, complete the following tasks:
 
-* [Onboarding](#get-onboard).
 * [Integrate Experience Manager with Adobe I/O](#integrate-aem-with-aio).
 * [Understand tag models and guidelines](#understand-tag-models-guidelines).
 * [Train the model](#train-model).
-* [Tag digital assets](#tag-assets).
+* [Tag your digital assets](#tag-assets).
 * [Manage the tags and searches](#manage-smart-tags-and-searches).
-
-## Onboarding {#get-onboard}
 
 Smart Content Services are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager].
 
-Before you can use the Smart Content Service, ensure the following prerequisites:
-
-* An Adobe ID account that has administrator privileges for the organization.
-* The Smart Content Service service is enabled for your organization.
-
-The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O.
-
-The administrator accesses the link to integrate the Smart Content Service with [!DNL Experience Manager].
-
-<!-- TBD: Add a link to buy SCS or initiate a sales call. -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
 ## Integrate [!DNL Experience Manager] with Adobe I/O {#integrate-aem-with-aio}
 

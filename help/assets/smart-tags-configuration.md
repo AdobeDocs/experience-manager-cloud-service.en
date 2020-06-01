@@ -6,12 +6,15 @@ contentOwner: AG
 
 # Configure Experience Manager for smart tagging of assets {#configure-aem-for-smart-tagging}
 
-Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches. Adobe provides Smart Content Service (SCS) that uses artificial intelligence and machine learning algorithms to train images.
+Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches. Adobe provides Smart Content Service (SCS) that uses artificial intelligence and machine learning algorithms to train images. Smart Content Service uses an artifical intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy.
 
-Smart Content Service uses an artifical intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy.
+The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O. The administrator accesses the link to integrate the Smart Content Service with [!DNL Experience Manager].
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
-![flowchart](assets/flowchart.gif) 
+<!-- TBD: 
+1. Create a similar flowchart for how training works in CS. ![flowchart](assets/flowchart.gif)
+2. Is there a link to buy SCS or initiate a sales call.
+3. Keystroke all steps and check all screenshots.
+4. Post-GA, if time permits, create a video.
 -->
 
 ## Integrate with Adobe I/O {#aio-integration}
