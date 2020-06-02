@@ -39,7 +39,7 @@ The developers are responsible for developing and customizing the proposed proje
 * realize the design
 * develop the necessary services and scripts to implement the required functionality
 
-The configuration of the [development](/help/implementing/developing/development-guidelines.md) environment can be dependent on various factors, though it is usually comprised of:
+The configuration of the [development](/help/implementing/developing/introduction/development-guidelines.md) environment can be dependent on various factors, though it is usually comprised of:
 
 * An integrated development system with version control to provide an integrated code-base. This is used to merge and consolidate code from the individual development environments used by each developer.
 * A personal environment for each developer; usually resident on their local machine. At apppropriate intervals the code is synchronized with the version control system
