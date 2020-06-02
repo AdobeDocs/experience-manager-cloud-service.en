@@ -18,7 +18,7 @@ DevOps aims to avoid problems such as:
 
 ## Environments {#environments}
 
-An Adobe Experience Manager (AEM) deployment usually consists of multiple environments, used for different purposes on different levels:
+Adobe Experience Manager (AEM) as a Cloud Service usually consists of multiple environments, used for different purposes on different levels:
 
 * [Development](#development)
 * [Quality Assurance](#quality-assurance)
@@ -104,7 +104,7 @@ Code should always be propagated from bottom to top:
 
 The code (e.g. customized web application functionality and design templates) is usually transferred by exporting and importing packages between the different content repositories. Where meaningful, this replication can be configured as an automatic process.
 
-AEM projects often trigger code deployment:
+AEM as a Cloud Service projects often trigger code deployment:
 
 * Automatically: for transfer to the development and QA environments.
 * Manually: deployments to the staging and production environments are done in a more controlled manner, often manual; though automation is possible if required.
@@ -126,6 +126,6 @@ Production content should be moved from the production environment to the stagin
 Content can transferred:
 
 * Between the different environments - by exporting and importing packages.
-* Between different instances - by directly replicating (AEM replication) the content (using a HTTP, or HTTPS, connection).
+* Between different instances - by directly replicating (AEM as a Cloud Service replication) the content (using a HTTP, or HTTPS, connection).
 
 ![Content Movement](assets/content-movement.png)
