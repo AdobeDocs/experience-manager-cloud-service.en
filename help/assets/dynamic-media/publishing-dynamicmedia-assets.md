@@ -1,15 +1,16 @@
 ---
 title: Publishing Dynamic Media Assets
 description: How to publish dynamic media assets
+contentOwner: Rick Brough
 ---
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. After your dynamic media assets are published, they are available to you for including in a web page via URL or by way of embedding.
+You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**. After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by way of embedding code on the page.
 
 You can also instantly publish assets that you upload&mdash;without any user intervention. Or, you can selectively publish those assets. See [Configuring Dynamic Media](config-dm.md).
 
-In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset's name to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
+In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset's name and to the left of the date and time to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
 
 >[!NOTE]
 >
@@ -19,7 +20,7 @@ If you intend to publish video assets immediately after encoding them, make sure
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-See also [Embedding the Video Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Dynamic Media Video viewer or Image viewer on a web page.](embed-code.md)
 
 >[!NOTE]
 >

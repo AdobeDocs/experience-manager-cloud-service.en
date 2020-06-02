@@ -15,7 +15,7 @@ You add Dynamic Media assets directly to the page if you are using AEM as your W
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
+Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
 
 **Adding a Dynamic Media component to a page**
 
@@ -44,7 +44,7 @@ Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media c
 
    The Dynamic Media Video 360 Media component.
 
-1. When you are finished, near the upper-right corner of the dialog box, tap the checkmark to save your changes.
+1. When you are finished, in the upper-right corner of the dialog box, tap the checkmark to save your changes.
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
