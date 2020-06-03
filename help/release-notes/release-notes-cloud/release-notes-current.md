@@ -75,7 +75,7 @@ PM/EM review required before publishing.
 Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
 
 With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. This is a more intuitive experience.
-Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to smart tag](/help/assets/smart-tags.md) and [configure smart tagging]().
+Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to smart tag](/help/assets/smart-tags.md) and configure smart tagging.
 
 **Support for ingestion, preview and delivery of 3D content**
 
