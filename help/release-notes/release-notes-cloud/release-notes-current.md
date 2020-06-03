@@ -23,24 +23,45 @@ Follow this section to learn about what is new and the updates for AEM Sites in 
 
 ## What's New in Cloud Manager {#cloud-manager}
 
-Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.5.0.
+Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.6.0.
 
-### What's New {#what-is-new}
+### What's New {#what-is-new-cloud-manager}
 
-* Six additional code quality rules have been added to help customers identify potential issues when planning a migration to Cloud Service.
-* A new metric *Cloud Service Compatibility* has been added to summarize the number of compatibility-related issues.
-* Environments which failed to be created will now be automatically deleted approximately 24 hours after creation failed unless they have already been deleted.
-* The performance of the Activity page and the Pipeline Executions List API has been improved.
-* The code quality log now contains complete stack traces for exceptions.
+* A user in the *Business Owner* role in Cloud Manager is now able to delete a Sandbox Program from the landing page (via quick action button on Program card) or from within the program. 
 
-### Bug Fixes  {#bug-fixes}
+* A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager is now able to delete their Production and Stage environment set via the Cloud Manager UI. The delete option is now available from both the Environment card on the overview page as well as the Environments page. Selecting the delete option on either Production or Stage also deletes the other in the set.
 
-* A misleading card was displayed on the overview page while the production pipeline was running.
-* The *DontImplementOrExtendProviderTypesPomCheck* code quality rule could sometimes produce a Null Pointer Exception.
-* Some documentation links from the overview page did not work correctly.
-* The Create Environment dialog did not render correctly in Safari.
-* Certain cards on the overview page did not display entity names correctly.
-* In some cases, the Build Image would fail to download customer packages successfully.
+* Coach marks on the landing page to inform and instruct the user about basic navigation. 
+
+* Coach marks on the *Overview* page to inform and instruct the user about basic navigation inside Cloud Manager to get them started.
+
+* A **LEARN** page is now available in Cloud Manager, accessible via the top navigation. This page includes resources to help users learn about the most frequently used work-flows as relevant to their roles assigned in Cloud Manager.
+
+* Sandbox Programs are now identified by means of a **Sandbox** badge that will be displayed on the program card on the landing page as well as next to the program name in the *Overview* page.
+
+* A user in the *SysAdmin* role now has one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager can be managed. A **Manage Roles** button will be available on the landing page next to the **Add Program** button.
+
+* A user in the SysAdmin role now has one-click access to Author instance directly from CM.
+
+* The Build log now includes the list of discovered artifacts, including skipped content packages.
+
+* The Build step now validates that all of the generated content packages include all mandatory properties – name, group and version.
+
+* The Build step now validates that the build produced at least one content package.
+
+### Bug Fixes {#bug-fixes-cm}
+
+* In certain situations, the icons in the **Create Program** dialog were misaligned.
+
+* The AEM release identifier was not consistently displayed on the *Overview* page.
+
+* When configuring the production pipeline, the **Scheduled Deployment** option was not visible for some customers.
+
+### Known Issues {#known-issues-cm}
+
+* Environments within a Sandbox program will be hibernated when no activity is detected for a certain duration. This status will not be observed in Cloud Manager. The status can however be observed via Developer Console. This will be addressed in an upcoming release. 
+
+* The link to the Developer Console directly from Cloud Manager will not display the option to de-hibernate/hibernate a Sandbox Program's environment. To address this, once at the Developer Console, add the pattern #release-cm-p1234-e5678 to the end of the url, where 1234 is the Program ID and 5678 is the Environment ID. This will be addressed in an upcoming release.
 
 ## What's New in [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
