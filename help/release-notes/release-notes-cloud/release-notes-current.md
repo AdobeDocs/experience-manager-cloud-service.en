@@ -50,18 +50,22 @@ PM/EM review required before publishing.
 -->
 
 **Guided User Experience for Enhanced Smart Tags, powered by Adobe Sensei**
+
 Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
 
 With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. This is a more intuitive experience.
 Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to smart tag](/help/assets/smart-tags.md) and [configure smart tagging]().
 
 **Support for ingestion, preview and delivery of 3D content**
+
 Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and leverage a variety of core 3D files, including .obj, .stl, .gltf, and .glb files. With the addition of [!DNL Dynamic Media], 3D experiences can be configured and delivered via agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR).
 
 **Adobe Asset Link support for Adobe XD**
+
 With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
 
 **Accessibility enhancements**
+
 [!DNL Adobe Experience Manager Assets] is now more accessible in compliance with Web Content Accessibility Guidelines (WCAG) v2.1 guidelines. The accessibility has improved for the following use cases or interfaces:
 
 * User interface elements, controls, pages and dialogs are screen reader friendly.
@@ -81,6 +85,7 @@ The release provides the following additional enhancements based on the feedback
 In addition to the above new features, the current release provides the following enhancements and bug fixes based on customer feedback for [!DNL Assets].
 
 * For MP3 music files, the play button displayed on thumbnail in the DAM preview does not work. (CQ-4294731)
+* Search results page automatically scrolls up when the user is browsing the assets at the bottom of the search results. (GRANITE-26895)
 * Scrolling a large number of assets search results crashes [!DNL Google Chrome] browser. (GRANITE-26432)
 * The options, scope, and workflows progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, these items appear to as tabs instead. (CQ-4273015)
 * While navigating between elements of tree structure, nothing is read out to screen reader users due to inappropriate implementation of accessibility concerns in tree view. (CQ-4272964)
