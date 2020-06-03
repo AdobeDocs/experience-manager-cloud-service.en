@@ -236,7 +236,7 @@ For later (re-)configurations, say to add more styles, follow only the instructi
 
 >[!NOTE]
 >
->Styles can also be defined for [tables or table cells](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). These configurations require separate procedures.
+>Styles can also be defined for [tables or table cells](configure-rich-text-editor-plug-ins.md#tablestyles). These configurations require separate procedures.
 
 ### Enable the Style drop-down selector list {#styleselectorlist}
 
