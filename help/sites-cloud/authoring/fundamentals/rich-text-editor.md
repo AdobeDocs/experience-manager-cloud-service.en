@@ -1,13 +1,13 @@
 ---
-title: Using the Rich Text Editor to Author Content
-description: Using the Rich Text Editor to Author Content
+title: Use the Rich Text Editor in Adobe Experience Manager to author content.
+description: Use the Experience Manager Rich Text Editor to author content.
 ---
 
-# Using the Rich Text Editor to Author Content {#use-rich-text-editor-to-author-content}
+# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
 The Rich Text Editor (RTE) is a basic building block for inserting textual content into AEM. It forms the basis of various components
 
-## In-Place Editing {#in-place-editing}
+## In-place editing {#in-place-editing}
 
 Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) as with any component.
 
@@ -19,19 +19,17 @@ Tapping/clicking agin or initially selecting the component with a slow double-ta
 
 This toolbar provides the following options:
 
-* **Format**: This allows you to set Bold, Italic and Underline.
-* **Lists**: With this you can create bulleted or numbered lists, or set the indentation.
-* **Hyperlink**
-* **Unlink**
-* **Full Screen**
-* **Close**
-* **Save**
+* **Format**: Emphasize text as bold or italic or underline the text.
+* **Lists**: Create bulleted or numbered lists and set the indentation.
+* **Hyperlink**: Create links.
+* **Unlink**: Remove hyperlink.
+* **Full Screen**: Open the editor in fullscreen mode.
+* **Close**: Stop editing.
+* **Save**: Save changes.
 
-## Full Screen Editing {#full-screen-editing}
+## Full screen editing {#full-screen-editing}
 
-For text-based components, tapping the full screen mode from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) opens the rich text editor and hides the rest of the page content.
-
-![RTE full screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+For text-based components, tap the full-screen mode ![RTE full screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png) from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) to open the rich text editor and hides the rest of the page content.
 
 Full screen mode displays all the configured options that you can use for authoring. The availability of options depends on the configuration. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -39,15 +37,15 @@ Full screen mode displays all the configured options that you can use for author
 
 Additional rich text editor options include:
 
-* **Anchor**: Create an anchor in the text that you can later link to/reference.
+* **Anchor**: Create an anchor in the text that you can later link to or create a reference to.
 * **Align Text Left**
 * **Center Text**
 * **Align Text Right**
 
-Close full screen mode by clicking the minimize icon.
+Click minimize to close the full-screen mode.
 
 ![RTE minimize button](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->Copying nested lists from Microsoft Word into the RTE can give inconsistent results and may require manual adjustment after pasting the text in the RTE.
+>Copying nested lists from Microsoft Word into the RTE can give inconsistent results. Instead, paste as text and do manual adjustment.

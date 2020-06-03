@@ -18,7 +18,7 @@ In the event of first-time access to Cloud Manager or if no programs exist in th
 
 Depending upon the user’s objective in creating the program within the bounds of what is available to the specific customer/organization, a program creation wizard will ask the user to submit one or more details.
 
-  ![](assets/create-program-2.png)
+  ![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -29,7 +29,7 @@ Depending upon the user’s objective in creating the program within the bounds 
 
 Follow the steps below to create a sandbox program: 
  
-1. From the create program wizard, select **Set up a demo**. User submits program name before selecting **Create**.
+1. From the create program wizard, select **Set up a sandbox**. User submits program name before selecting **Create**.
 
    ![](assets/create-sandbox.png)
 
@@ -69,7 +69,7 @@ Follow the steps below to create a regular program:
 
 1. Select **Set up for Production** in the Create Program wizard to create a regular program. User can accept the default program name or edit it before selecting **Continue**.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above.
 

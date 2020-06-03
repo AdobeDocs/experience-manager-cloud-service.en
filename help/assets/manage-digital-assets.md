@@ -29,7 +29,19 @@ The following (space-separated list of) characters are not supported:
 
 ## Upload assets {#uploading-assets}
 
-See [add digital assets to Experience Manager](add-assets.md), for detailed information.
+See [add digital assets to Experience Manager](add-assets.md).
+
+## Detect duplicate assets {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+If a duplicate asset exists in DAM repository, Assets detects it and notifies the user. Duplicate detection is disabled by default. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. See [how to do OSGi configurations](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). The duplication detection is based on the unique `dam:sha1` value stored at `jcr:content/metadata/dam:sha1`. It means that duplicate assets are detected even if the filenames are different.
+
+![Detect duplicate asset OSGi configuration](assets/duplicate-detection.png)
+
+Once enabled, Experience Manager sends notifications of duplicate assets to the inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
+
+![Inbox notification for duplicate assets](assets/duplicate-detect-inbox-notification.png)
 
 ## Preview assets {#previewing-assets}
 

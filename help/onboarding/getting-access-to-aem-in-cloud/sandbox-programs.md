@@ -80,6 +80,9 @@ You can manually hibernate your Sandbox Program from the Developer Console in tw
 * Environment detail screen 
 * Environment listing screen 
 
+>[!NOTE]
+>Access to Developer Console for a Sandbox Program is available to any user of Cloud Manager.
+
 Follow the steps below to manually hibernate your Sandbox Program environments:
 
 1. Navigate to the **Developer Console**. 
@@ -143,17 +146,17 @@ Refer to [Accessing Developer Console](https://docs.adobe.com/content/help/en/ex
  
    ![](assets/de-hibernation-img4.png)
 
+#### Permissions to De-hibernate {#permissions-de-hibernate}
+
+Any user with a product profile giving them access to AEM as a Cloud Service should be able to access the **Developer Console**, allowing them to de-hibernate the environment. 
+
+Refer to [Add Users and Roles](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager about setting up user permissions.
+
 #### Accessing a Hibernated Environment {#accessing-hibernated-environment}
 
 When making any browser requests against either the author or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as shown in the figure below:
 
 ![](assets/de-hibernation-img5.png)
-
-
-A user with the **Cloud Manager - Developer Role** can click on the **Developer Console** to access the developer console and de-hibernate the environment. 
-
->[!NOTE]
-> Many features in Cloud Manager require specific permissions to operate. To learn more about roles for users which govern the availability of specific features, refer to[Add Users and Roles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### Important Considerations {#important-considerations}
 
