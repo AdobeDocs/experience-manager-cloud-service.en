@@ -79,6 +79,7 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Smart Imaging](dynamic-media/imaging-faq.md)
   + [Delivering Dynamic Media assets](dynamic-media/delivering-dynamic-media-assets.md)
   + [Activating hotlink protection in Dynamic Media](dynamic-media/hotlink-protection.md)
+  + [Dimensional 3D Images](dynamic-media/assets-3d.md)
   + [Image Sets](dynamic-media/image-sets.md)
   * [Dimensional (3D) Images](dynamic-media/assets-3D.md)
   + [Panoramic Images](dynamic-media/panoramic-images.md)
