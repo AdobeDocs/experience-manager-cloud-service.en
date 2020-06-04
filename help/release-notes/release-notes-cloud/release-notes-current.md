@@ -67,7 +67,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 <!-- 
 Assets RNs are being authored and are a work in progress.
-PM/EM review required before publishing. 
+PM/EM review required before publishing.
 -->
 
 **Guided User Experience for Enhanced Smart Tags, powered by Adobe Sensei**
@@ -75,15 +75,19 @@ PM/EM review required before publishing.
 Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
 
 With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. This is a more intuitive experience.
-Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to smart tag](/help/assets/smart-tags.md) and configure smart tagging.
+Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to smart tag](/help/assets/smart-tags.md) and [configure smart tagging](/help/assets/smart-tags-configuration.md).
 
 **Support for ingestion, preview and delivery of 3D content**
 
 Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and leverage a variety of core 3D files, including .obj, .stl, .gltf, and .glb files. With the addition of [!DNL Dynamic Media], 3D experiences can be configured and delivered via agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR).
 
+<!-- TBD: Add link to the DM help article. -->
+
 **Adobe Asset Link support for Adobe XD**
 
 With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
+
+<!-- TBD: Add link to the AAL help article. -->
 
 **Accessibility enhancements**
 
@@ -92,6 +96,8 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * User interface elements, controls, pages and dialogs are screen reader friendly.
 * User interface elements, controls, and input form fields are accessible using keyboard.
 * Change in color or contrast of some interface elements to make these more distinguishable by users with limited vision and without perception of color. For example, Assets now has appropriate contrast in the star rating icons in [!UICONTROL Properties] page and in the card view.
+
+<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
 
 **Enhancements based on customer feedback**
 
@@ -106,10 +112,28 @@ The release provides the following additional enhancements based on the feedback
 In addition to the above new features, the current release provides the following enhancements and bug fixes based on customer feedback for [!DNL Assets].
 
 * For MP3 music files, the play button displayed on thumbnail in the DAM preview does not work. (CQ-4294731)
-* Search results page automatically scrolls up when the user is browsing the assets at the bottom of the search results. (GRANITE-26895)
+* Search results page automatically scrolls up when a user browses the assets at the bottom of the search results. (GRANITE-26895)
 * Scrolling a large number of assets search results crashes [!DNL Google Chrome] browser. (GRANITE-26432)
-* The options, scope, and workflows progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, these items appear to as tabs instead. (CQ-4273015)
-* While navigating between elements of tree structure, nothing is read out to screen reader users due to inappropriate implementation of accessibility concerns in tree view. (CQ-4272964)
-* In the link sharing dialog, when navigating in browse mode, the screen reader narrates the table information as soon as the dialog is loaded. (CQ-4294232)
-* In the link sharing dialog, when navigating in browse mode, the screen reader is unable to navigate to all the listed auto-suggestions. (CQ-4294232)
-* In the link sharing dialog, when navigating in browse mode, the screen reader does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box (CQ-4294232).
+* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
+* When adding tags in Properties page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
+* In the link sharing dialog, when navigating in browse mode, the screen reader,
+
+  * narrates the table information as soon as the dialog is loaded.
+  * is unable to navigate to all the listed auto-suggestions.
+  * does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
+
+* Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
+* The color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast to be visible to users with limited vision and without perception of color. (CQ-4295106)
+* The list box drop-down of combo box (in various fields on different pages) now shows entries as a list of options that can be announced by screen readers. (CQ-4294017)
+* Chevron up arrow next to [!UICONTROL Comment] field on assets details page can now be accessed using keyboard keys. (CQ-4289268)
+* Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers. (CQ-4273033)
+* Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard. (CQ-4273031)
+* The option to open filter sidebar can now be accessed using keyboard. (CQ-4273018)
+* The purpose of various combo box elements (such as Path field and option to open Selection dialog in Basic tab of asset Properties) are now correctly announced by screen readers. (CQ-4273016)
+* [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using keyboard and are screen reader friendly. (CQ-4272953)
+* Functionality to control video volume is now accessible through tab (to focus on volume slider) and arrow keys (to adjust volume) on keyboard. (CQ-4272696)
+* Many actionable options on the Assets user interface do not indicate focus when using keyboard. (CQ-4272694)
+* Information that the rows in list view table are selectable is now communicated to screen reader users when keyboard focus is on them. This information is announced when mouse is hovered on the rows. (CQ-4271824)
+* Some form fields, such as the username and password fields on the login page, rely only on placeholder values to give an accessible label. (CQ-4271716)
+* Interactive user interface elements, such as links and options (on header and zoom options of assets page, folder navigation), are now accessible using a keyboard. (CQ-4271412)
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique. (CQ-4271409)
