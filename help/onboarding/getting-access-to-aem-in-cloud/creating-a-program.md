@@ -72,7 +72,7 @@ The delete option is available from the landing page, as shown below:
 
 Or,
 
-Select **Delete Program** from the *Overview* page:
+Select **Delete Program** from the *Overview* page to delete your Sandbox Program.
 
    ![](assets/delete-sandbox2.png)
 
