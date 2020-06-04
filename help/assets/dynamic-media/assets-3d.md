@@ -19,7 +19,7 @@ Dynamic Media lets you upload, manage, view, and deliver 3D assets as immersive 
 
 There is no additional installation required to use 3D assets in Dynamic Media.
 
-![shoe in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![shoe in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -138,7 +138,7 @@ See also [Previewing assets using the software interface](/help/assets/dynamic-m
     * Near the upper-right of the page, click **[!UICONTROL Preview]** to enter **[!UICONTROL Preview]** mode.
     * Delete `/editor.html` from the page URL in the browser.
 
-    ![3D asset showing inside the 3D Media component](/help/assets/dynamic-media/assets/3d-asset-in-3d-media.png)
+    ![3D asset showing inside the 3D Media component](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
     A fully interactive 3D asset as displayed in **[!UICONTROL Preview]** mode.
 
 1.  While in **[!UICONTROL Preview]** mode, do any of the following:
@@ -175,7 +175,7 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in AE
 1. Tap **[!UICONTROL Edit]** to open the template.
 1. Near the upper-right of the page, in the drop-down menu, select **[!UICONTROL Structure]** mode, if it is not already active.
 
-   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structure.png)
+   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
 1. Tap an empty area in the **[!UICONTROL Layout Container]** region to select it and open its associated toolbar.  
 1. On the toolbar, tap the **[!UICONTROL Policy]** icon to open the **[!UICONTROL Policy Editor]**.
@@ -193,13 +193,13 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 1. Open AEM Sites and select the web page to which you want to add the Dynamic Media 3D Media component.  
 1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. Make sure **[!UICONTROL Edit]** mode is selected near the upper-right of page.
 
-   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edit.png)
+   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
 1. On the toolbar, tap the Side Panel icon to toggle or "turn on" the display of the panel.  
 
 1. In the side panel, tap the plus sign icon to open the **[!UICONTROL Components]** list.
 
-    ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filter.png)
+    ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filtera.png)
 
 1. Drag the **[!UICONTROL 3D Media]** component from the **[!UICONTROL Components]** list to the location on the page where you want the 3D viewer to appear. 
 
@@ -212,11 +212,11 @@ See [Assigning a 3D asset to the a 3D Media component](#assigning-a-three-d-asse
 1. In the AEM Sites page editor, select the **[!UICONTROL 3D Media Viewer]** component that you previously added to the page.  
 1. Tap the **[!UICONTROL Configuration]** icon (wrench) to open the component configuration dialog box.
 
-    ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-config.png)
+    ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
 
 1. In the 3D Media dialog box, from the Viewer Preset drop-down list, select **[!UICONTROL Dimensional]** to assign the Dimensional viewer preset to the component.
 
-    ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-config.png)
+    ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-configa.png)
 
 1. In the upper-right corner, tap the check mark to save your changes.
 
@@ -231,7 +231,7 @@ See [Adding the 3D Media component to a web page](#adding-the-three-d-media-comp
 1. In the side panel, search for or scroll to the 3D asset that you want to view on the page being edited.
 1. Drag the 3D asset from the Assets side panel and drop it onto the **[!UICONTROL 3D Media]** component that you previously added to the page.
 
-    ![Assign 3d asset to 3d Media component](/help/assets/dynamic-media/assets/3d-asset-add.png)
+    ![Assign 3d asset to 3d Media component](/help/assets/dynamic-media/assets/3d-asset-adda.png)
 
 >[!NOTE]
 >
@@ -258,18 +258,18 @@ See also [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-
 1. Open a 3D asset (GLB, OBJ, or STL file format) to view it in the asset details page.
 1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
 
-    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publish.png)
+    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
 1. Tap **[!UICONTROL Close]** to exit the dialog box and return to the asset details page.
 1. From the drop-down list to the left of the 3D asset's file name, tap **[!UICONTROL Renditions]**.
 
-    ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditions.png)
+    ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
 1. Tap **[!UICONTROL original]**. When a 3D asset is published (or "activated") the URL button appears near the bottom-left corner of the page if all of the following 3D asset conditions are met:
     * The 3D asset is a supported format (GLB, OBJ, STL, and USDZ).
     * The 3D asset was ingested into the Dynamic Media Image Production System (IPS).
     * The 3D asset is published.
 
-    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-url.png)
+    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
 1. Tap **[!UICONTROL URL]** to display the 3D asset's production URL. 
