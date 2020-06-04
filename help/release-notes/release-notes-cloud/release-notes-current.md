@@ -104,14 +104,16 @@ The release provides the following additional enhancements based on the feedback
 * Accessibility improvements for the Assets user interface.
 * Ability to reprocess assets with asset processing profiles, giving users full control of the process (run full asset processing, just apply specific processing profile, and decide if post-processing workflow should be run).
 * Search queries return results faster now when the underlying cluster instance has been restarted behind the scenes (the initial search run could last longer in such a case before).
+* Sort by 'Name' when viewing assets in list view in Assets interface and in the search results.
+* Sort on ‘Created’ (Date) when viewing assets in list view in Assets interface and in the search results.
 
 ### Bug Fixes {#assets-bug-fixes}
 
 In addition to the above new features, the current release provides the following enhancements and bug fixes based on customer feedback for [!DNL Assets].
 
 * For MP3 music files, the play button displayed on thumbnail in the DAM preview does not work. (CQ-4294731)
-* Search results page automatically scrolls up when a user browses the assets at the bottom of the search results. (GRANITE-26895)
-* Scrolling a large number of assets search results crashes [!DNL Google Chrome] browser. (GRANITE-26432)
+* Hovering pointer on card view, makes the screen scroll as a result of (automatic) focus on the quick actions available in the card. (GRANITE-26895)
+* Displaying too many images after scrolling a large number of search results leads to browser crash. (GRANITE-26432)
 * The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
 * When adding tags in [!UICONTROL Properties] page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
 * In the link sharing dialog, when navigating in browse mode, the screen reader,
@@ -124,7 +126,6 @@ In addition to the above new features, the current release provides the followin
 * The luminosity ratio is less than 3:1 for the Yellow-colored rating icons. It is not useful to users with limited vision and without perception of color. The rating stars are displayed in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view  (CQ-4295106)
 * The list box drop-down of combo box (in various fields on different pages) now shows entries as a list of options that can be announced by screen readers. (CQ-4294017)
 * The chevron up arrow in the [!UICONTROL Timeline] cannot be accessed using a keyboard, to apply a workflow to an asset. (CQ-4289268)
-
 * Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers. (CQ-4273033)
 * Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard. (CQ-4273031)
 * The option to open filter sidebar can now be accessed using keyboard. (CQ-4273018)
