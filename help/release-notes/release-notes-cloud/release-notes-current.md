@@ -9,17 +9,8 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ## Release Date {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June ??, 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
 
-## What's New in AEM Sites {#aem-sites}
-
-Follow this section to learn about what is new and the updates for AEM Sites in AEM as a Cloud Service Release 2020.5.0.
-
-* Detailed job information now available after processing bulk page moves and roll outs as asynchronous jobs.
-* When copying/pasting a page tree, now offering to choose between pasting only the root page or also the sub-pages of the tree.
-* AEM Experience Fragments exported to Adobe Target workspaces now appear as unique offer types and offer sources in Target.
-* MSM - using *publish* trigger now successfully rolls out delete events for components in live copy source, that is, deleting components in a live copy that were deleted in live copy source.
-* MSM - live copy components are now being renamed to *_msm_moved* after same component rollout from live copy source.
 
 ## What's New in Foundations in AEM as a Cloud Service {#foundations}
 
