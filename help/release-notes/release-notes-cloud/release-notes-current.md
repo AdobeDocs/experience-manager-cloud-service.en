@@ -21,6 +21,13 @@ Follow this section to learn about what is new and the updates for AEM Sites in 
 * MSM - using *publish* trigger now successfully rolls out delete events for components in live copy source, that is, deleting components in a live copy that were deleted in live copy source.
 * MSM - live copy components are now being renamed to *_msm_moved* after same component rollout from live copy source.
 
+## What's New in Foundations in AEM as a Cloud Service {#foundations}
+
+AEM project build times will improve by removing all references in the AEM project’s pom.xml to the remote repository `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+
+The AEM as a Cloud Service SDK API Jar, which was previously hosted in that location, is now located in Maven Central, which is Maven’s default artifact repository.
+
+
 ## What's New in Cloud Manager {#cloud-manager}
 
 Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.6.0.
@@ -61,7 +68,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * Environments within a Sandbox program will be hibernated when no activity is detected for a certain duration. This status will not be observed in Cloud Manager. The status can however be observed via Developer Console. This will be addressed in an upcoming release. 
 
-* The link to the Developer Console directly from Cloud Manager will not display the option to de-hibernate/hibernate a Sandbox Program's environment. To address this, once at the Developer Console, add the pattern #release-cm-p1234-e5678 to the end of the url, where 1234 is the Program ID and 5678 is the Environment ID. This will be addressed in an upcoming release.
+* The link to the Developer Console directly from Cloud Manager will not display the option to de-hibernate/hibernate a Sandbox Program's environment. To address this, once at the Developer Console, add the pattern `#release-cm-p1234-e5678` to the end of the url, where *1234* is the Program ID and *5678* is the Environment ID. This will be addressed in an upcoming release.
 
 ## What's New in [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
