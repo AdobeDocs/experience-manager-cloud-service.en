@@ -308,10 +308,6 @@ Illustrating use of question mark wildcard in Asset search using an example
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
 
-### Sort on Name column {#sortbyname}
-
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
-
 <!--
 ### Visual or similarity search {#configvisualsearch}
 
@@ -347,8 +343,8 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 -->
-<!--
 
+<!--
 ### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
@@ -397,13 +393,13 @@ Once you see some searched assets that match your criteria, you can do the follo
 * Use Desktop Actions to open these assets in the desktop app.
 * Create smart collections.
 
-### Sort searched results {#sort}
+### Sort search results {#sort}
 
-Sorting search results helps you to discover required asset faster. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. AEM Assets uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
+Sorting search results helps you to discover required asset faster. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. [!DNL Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Title, Status, Dimensions, Size, Rating, Usage, (Date) Modified, (Date) Published, Workflow, and Checked out.
+In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, (Date) Created, (Date) Modified, (Date) Published, Workflow, and Checked out.
 
-See [configure sorting on Name column](#sortbyname). For limitations of sort functionality, see [limitations](#limitations).
+For limitations of sort functionality, see [limitations](#limitations).
 
 ### Check detailed information of an asset {#checkinfo}
 
