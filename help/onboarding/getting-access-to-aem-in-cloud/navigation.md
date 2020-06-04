@@ -13,19 +13,19 @@ Upon successful login, you will be directed to the landing page of Cloud Manager
 
 ## SysAdmin Access {#sysadmin-access}
 
-A user in the SysAdmin role has one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager are managed.
-
-   ![](assets/manage-access1.png)
+As a user in the SysAdmin role, you have one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager are managed.
 
 ### Managing Roles {#manage-roles}
 
 As a user in the SysAdmin, a **Manage Roles** option is available on the landing page next to the **Add Program**. This gives you one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager can be managed.
 
-Refer to [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) to get more information on how to add users to a profile refer accessing Cloud Manager 
+Refer to [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) to get more information on how to add users to a profile refer accessing Cloud Manager. 
 
 ### Managing Access to AEM {#manage-access-aem}
 
-As a user in the SysAdmin, you have one-click access to the Author instance directly from Cloud Manager.
+As a user in the SysAdmin, you have one-click access to the Admin Console from where you can navigate to the Author instance directly and manage access.
+
+   ![](assets/manage-access1.png)
 
 Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
 
