@@ -115,7 +115,7 @@ In addition to the above new features, the current release provides the followin
 * Search results page automatically scrolls up when a user browses the assets at the bottom of the search results. (GRANITE-26895)
 * Scrolling a large number of assets search results crashes [!DNL Google Chrome] browser. (GRANITE-26432)
 * The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
-* When adding tags in Properties page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
+* When adding tags in [!UICONTROL Properties] page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
 * In the link sharing dialog, when navigating in browse mode, the screen reader,
 
   * narrates the table information as soon as the dialog is loaded.
@@ -123,9 +123,10 @@ In addition to the above new features, the current release provides the followin
   * does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
 
 * Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
-* The color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast to be visible to users with limited vision and without perception of color. (CQ-4295106)
+* The luminosity ratio is less than 3:1 for the Yellow-colored rating icons. It is not useful to users with limited vision and without perception of color. The rating stars are displayed in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view  (CQ-4295106)
 * The list box drop-down of combo box (in various fields on different pages) now shows entries as a list of options that can be announced by screen readers. (CQ-4294017)
-* Chevron up arrow next to [!UICONTROL Comment] field on assets details page can now be accessed using keyboard keys. (CQ-4289268)
+* The chevron up arrow in the [!UICONTROL Timeline] cannot be accessed using a keyboard, to apply a workflow to an asset. (CQ-4289268)
+
 * Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers. (CQ-4273033)
 * Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard. (CQ-4273031)
 * The option to open filter sidebar can now be accessed using keyboard. (CQ-4273018)
