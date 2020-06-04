@@ -3,7 +3,7 @@ title: Configuring Dynamic Media Cloud Service
 description: Information on how to configure Dynamic Media in Adobe Experience Manager Cloud Service.
 ---
 
-# Configuring Dynamic Media {#configuring-dynamic-media-scene-mode}
+# About configuring Dynamic Media Cloud Service {#configuring-dynamic-media-scene-mode}
 
 If you use Adobe Experience Manager set up for different environments, such as one for development, one for staging, and one for live production, you need to configure Dynamic Media Cloud Services for each one of those environments.
 

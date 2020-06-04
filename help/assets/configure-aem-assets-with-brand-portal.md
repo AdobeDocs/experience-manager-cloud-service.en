@@ -49,7 +49,7 @@ Perform the following steps in the specified sequence to configure AEM Assets cl
 
 ### Create IMS configuration {#create-ims-configuration}
 
-IMS configuration authenticates your Brand Portal tenant with AEM Assets author instance. 
+IMS configuration authenticates your Brand Portal tenant with AEM Assets cloud instance. 
 
 IMS configuration includes two steps:
 
