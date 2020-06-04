@@ -28,10 +28,6 @@ Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop
 
 1. Drag a **[!UICONTROL Dynamic Media]** component and drop it in the desired location on the page.
 
-   In the example below, the **[!UICONTROL Video 360 Media]** component is being used.
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
-
 1. Hover the mouse pointer directly on the component. When the component is surrounded by a blue box, tap once to display the component's toolbar. Tap the **[!UICONTROL Configuration (wrench)]** icon.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
