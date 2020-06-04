@@ -103,7 +103,7 @@ The following are the valid values for this property:
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the folder's metadata node as the property `dc:title`.
 
-* `./jcr:created`: Displays the JCR property at the folder's node. If you configure these properties in CRXDE, Adobe recommends that you mark them as Disable Edit, because they are protected. Otherwise, the error ' `Asset(s) failed to modify`' occurs when you save the asset's properties.
+* `./jcr:created`: Stores the creation date and time of an asset. It is a protected property. If you configure these properties, Adobe recommends that you mark them as [!UICONTROL Disable Edit].
 
 To ensure that the component is displayed properly in the metadata schema form, do not include a space in the property path.
 
