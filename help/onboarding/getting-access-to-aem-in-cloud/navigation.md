@@ -41,7 +41,7 @@ As a user in the SysAdmin role, you have one-click access to the **Admin Console
 
 1. Navigate to **Environments** card from **Program Overview** page.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
 
    Or,
 
