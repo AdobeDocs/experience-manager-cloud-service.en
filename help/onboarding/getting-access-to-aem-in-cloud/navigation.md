@@ -30,6 +30,8 @@ Refer to [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experi
 
 1. Once you click on **Manage Access**, you are navigated to **Admin Console** from where you can manage the user roles or permissions to Cloud Manager.
 
+   ![](assets/sys-admin1.png)
+
 ### Managing Access to Author Instance {#manage-access-aem}
 
 As a user in the SysAdmin role, you have one-click access to the **Admin Console** from where you can navigate to the author instance directly and manage access.
