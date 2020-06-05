@@ -38,6 +38,7 @@ user-guide-title: AEM Assets as a Cloud Service
   + [APIs and reference material](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
   + [Processing profiles](/help/assets/dynamic-media/processing-profiles.md)
+  + [Configure Smart Tags](smart-tags-configuration.md)
   + [Multilingual assets and asset translation](translate-assets.md)
   + [Search facets](search-facets.md)
   + [Extend asset editor](extend-asset-editor.md)

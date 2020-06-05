@@ -10,7 +10,7 @@ Organizations that deal with digital assets increasingly use taxonomy-controlled
 
 Compared to natural language vocabularies, tagging based on business taxonomy helps align the assets with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
 
-In the background, the Smart Content Service (SCS) uses an artifical intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
+In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
 <!-- TBD: Create a similar flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -24,32 +24,32 @@ To use smart tagging, complete the following tasks:
 * [Tag your digital assets](#tag-assets).
 * [Manage the tags and searches](#manage-smart-tags-and-searches).
 
-Smart Content Services are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager].
+Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
 ## Integrate [!DNL Experience Manager] with Adobe I/O {#integrate-aem-with-aio}
 
-You can integrate [!DNL Adobe Experience Manager] with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within [!DNL Experience Manager].
+You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using Adobe I/O. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
 
-See [configure Experience Manager for smart tagging of assets](smart-tags-configuration.md) for tasks to configure the Smart Content Service. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Content Service.
+See [configure Experience Manager for smart tagging of assets](smart-tags-configuration.md) for tasks to configure the Smart Tags. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Tags service.
 
 ## Understand tag models and guidelines {#understand-tag-models-guidelines}
 
-A tag model is a group of related tags that are by a visual aspect of the image. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. Tags can relate only with the distinctly different visual aspects of images. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of related `cq:tags`. Each tag can be exclusively applied to an image.
+A tag model is a group of related tags that are by a visual aspect of the image. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. Tags can relate only with the distinctly different visual aspects of images. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
 
 Tags that cannot realistically be handled are related to:
 
 * Non-visual, abstract aspects such as the year or season of release of a product, mood of or emotion evoked by an image.
-* Nuanced visual differences in products such as shirts with and without collars or small product logos embedded on products.
+* Fine visual differences in products such as shirts with and without collars or small product logos embedded on products.
 
 Before you create a tag model and train the service, identify a set of unique tags that best describe the objects in the images in the context of your business. Ensure that the assets in your curated set conform to [the training guidelines](#training-guidelines).
 
 ### Training guidelines {#training-guidelines}
 
-Training is an irrevocable process. The images in your training set should conform to the following guidelines:
+The images in your training set should conform to the following guidelines:
 
-**Quantity and size:** Minimum 10 images per tag. Minimum of 500 pixels on the longer side.
+**Quantity and size:** Minimum 10 images and maximum 50 images per tag.
 
 **Coherence**: Images for a tag should be visually similar. It is best to add together the tags about the same visual aspects (such as the same type of objects in an image) together into a single tag model. For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
 
@@ -71,7 +71,7 @@ Training is an irrevocable process. The images in your training set should confo
 
 **Number of examples**: For each tag, add at least 10 examples. However, Adobe recommends about 30 examples. A maximum of 50 examples per tag are supported.
 
-**Pervent false positives and conflicts**: Adobe recommended creating a single tag model for a single visual aspect. Structure the tag models in a way that avoids overlapping tags between the models. For example, do not use a common tags like `sneakers` in two different tag models names `shoes` and `footwear`. The training process overwrites one trained tag model with the other for a common keyword.
+**Prevent false positives and conflicts**: Adobe recommends creating a single tag model for a single visual aspect. Structure the tag models in a way that avoids overlapping tags between the models. For example, do not use a common tags like `sneakers` in two different tag models names `shoes` and `footwear`. The training process overwrites one trained tag model with the other for a common keyword.
 
 **Examples**: Some more examples for guidance are:
 
@@ -85,15 +85,13 @@ Training is an irrevocable process. The images in your training set should confo
 
 **Images used to train**: You can use the same images to train different tag models. However, the do not associate an image with more than one tag in a tag model. Hence, it is possible to tag the same image with different tags belonging to different tag models.
 
-## Train the model for your custom tags {#train-model}
+You cannot undo the training. The above guidelines should help you choose good images to train.
 
-<!-- 
-TBD: Use BJ recording https://bluejeans.com/playback/guid/MjI1NTI3NDQ3NDo0MjY4OTItYzNjNmE4MDAtNDAzMC00Y2I5LWFiOGEtN2ViMTgxYmZmZDQ3?s=vl
--->
+## Train the model for your custom tags {#train-model}
 
 To create and train a model for your business-specific tags, follow these steps:
 
-1. Create the necessary tags and the appropriate tag structure under `cq:tags`. Upload the relevant images in the DAM repository.
+1. Create the necessary tags and the appropriate tag structure. Upload the relevant images in the DAM repository.
 1. In [!DNL Experience Manager] user interface, access **[!UICONTROL Assets]** > **[!UICONTROL Training Model]**.
 1. Click **[!UICONTROL Create]**. Provide a **[!UICONTROL Title]**, **[!UICONTROL Description]**.
 1. Browse and select the tags from the existing tags in `cq:tags` that you want to train the model for. Click **[!UICONTROL Next]**.
@@ -107,19 +105,19 @@ To create and train a model for your business-specific tags, follow these steps:
 
 ### View training status and report {#training-status}
 
-To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
+To check whether the Smart Tags service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
 1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools > Assets > Reports]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
 1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, click **[!UICONTROL View]** from the toolbar.
-1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Content Service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag. If you do not see your tags in this report, run the training workflow again for these tags.
+1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag. If you do not see your tags in this report, run the training workflow again for these tags.Tags
 1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as an Microsoft Excel spreadsheet.
 
 ## Tag assets {#tag-assets}
 
-After you have trained the Smart Content Service, you can trigger the tagging workflow to automatically apply appropriate tags on a different set of similar assets. You can apply the tagging workflow periodically or whenever required. The tagging workflow applies to both, assets and folders.
+After you have trained the Smart Tags service, you can trigger the tagging workflow to automatically apply appropriate tags on a different set of similar assets. You can apply the tagging workflow periodically or whenever required. The tagging workflow applies to both, assets and folders.
 
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
@@ -133,7 +131,7 @@ After you have trained the Smart Content Service, you can trigger the tagging wo
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
+   Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 ### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
@@ -144,7 +142,7 @@ After you have trained the Smart Content Service, you can trigger the tagging wo
    ![start_workflow](assets/start_workflow.png)
 
 1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether your your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
@@ -152,7 +150,7 @@ After you have trained the Smart Content Service, you can trigger the tagging wo
 
 ### Tag uploaded assets {#tag-uploaded-assets}
 
-Experience Manager can automatically tag the assets that users upload to DAM. To do so, admnistrators configure a workflow to add an available step of to smart tag assets. See [how to enable smart tagging for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+Experience Manager can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step of to smart tag assets. See [how to enable smart tagging for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Manage smart tags and image searches {#manage-smart-tags-and-searches}
 
@@ -186,17 +184,17 @@ The search results that match all search terms in metadata fields are displayed 
 
 ### Tagging limitations {#limitations}
 
-Enhanced smart tags are based on learning models of brand images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Content Service has the following limitations:
+Enhanced smart tags are based on learning models of brand images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Tags has the following limitations:
 
 * Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
 * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Content Services release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Tags release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
 To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags.
 
 >[!NOTE]
 >
->The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training.
+>The ability of the Smart Tags to train on your tags and apply them on other images depends on the quality of images you use for training.
 >
 >For best results, Adobe recommends that you use visually similar images to train the service for each tag.
 
