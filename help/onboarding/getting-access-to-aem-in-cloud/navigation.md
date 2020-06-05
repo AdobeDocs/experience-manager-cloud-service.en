@@ -26,7 +26,7 @@ Refer to [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experi
 
 1. Navigate to the landing page of the Cloud Manager and click on **Manage Access**.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. Clicking on **Manage Access** navigates you to the **Admin Console** from where you can manage the user roles or permissions to Cloud Manager.
 
