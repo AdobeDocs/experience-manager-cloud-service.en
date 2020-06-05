@@ -53,6 +53,8 @@ As a user in the SysAdmin role, you have one-click access to the **Admin Console
 
 1. Once you click on **Manage Access**, you are navigated to **Admin Console** from where you have the access to the author instance of the environment.
 
+   ![](assets/sys-admin-2.png)
+
 ## For Existing AMS Customers {#existing-aem}
 
 If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Service, you will see your existing program(s) and the **Add Program** button on the top right corner of the landing page. 
