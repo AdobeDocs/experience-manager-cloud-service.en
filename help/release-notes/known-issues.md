@@ -27,13 +27,12 @@ Some known issues are:
 
 A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
 
-* Enhanced smart tagging functionality that leverages AI services of Adobe I/O are not available for now.
 * Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
   * Photoshoot workflow models.
   * Product information tab in the asset properties user interface is not populated.
 * Capabilities not enabled at this stage due to dependency on InDesign Server integration:
   * Asset Templates and Asset Catalogs.
-  * Multi-page preview of InDesign files.
+  * Multi-page preview of Adobe InDesign files.
 
 >[!MORELIKETHIS]
 >
