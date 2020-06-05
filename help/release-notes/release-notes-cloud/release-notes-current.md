@@ -25,9 +25,9 @@ Follow this section to learn about what is new and the updates for AEM Sites in 
 
 ### Accessibility {#accessibility}
 
-* Narrating role and state now possible for the Masonry items in the create page while navigating in the browse mode using down arrow.
+* Narrating role and state are now possible for the Masonry items in the **Create Page** dialog while navigating in the browsing mode using the down arrow.
 
-* Added link in navigation l to allow users skip  to the main content.
+* Added a link in navigation to allow users to skip to the main content.
 
 * Screen reader improvements.
 
