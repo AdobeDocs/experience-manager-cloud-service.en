@@ -11,6 +11,46 @@ Upon successful login, you will be directed to the landing page of Cloud Manager
 
    ![](assets/first_timelogin1.png)
 
+## SysAdmin Tasks {#sysadmin-tasks}
+
+A user in the SysAdmin role can now directly access the Admin Console to manage roles and permissions and access to AEM instances.
+
+### Managing Roles {#manage-roles}
+
+As a user in the SysAdmin role, you have one-click access to the location in **Admin Console** from where user roles or permissions to Cloud Manager are managed.
+
+Refer to [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) to get more information on how to add users to a profile. 
+
+>[!NOTE]
+>For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
+
+1. Navigate to the landing page of the Cloud Manager and click on **Manage Access**.
+
+   ![](assets/sys-admin5.png)
+
+1. Clicking on **Manage Access** navigates you to the **Admin Console** from where you can manage the user roles or permissions to Cloud Manager.
+
+### Managing Access to Author Instance {#manage-access-aem}
+
+As a user in the SysAdmin role, you have one-click access to the **Admin Console** from where you can navigate to the Author instance directly and manage access.
+
+>[!NOTE]
+>For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
+
+   Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
+
+1. Navigate to **Environments** card from **Program Overview** page.
+
+   ![](assets/sys-admin6.png)
+
+   Or,
+
+   Click on **Details** from the **Environments** card to open the Environments page. Click **Manage** -> **Manage Access**.
+
+   ![](assets/sys-admin4.png)
+
+1. Clicking on **Manage Access** navigates to **Admin Console** from where you have the access to the Author instance of an environment.
+
 ## For Existing AMS Customers {#existing-aem}
 
 If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Service, you will see your existing program(s) and the **Add Program** button on the top right corner of the landing page. 
