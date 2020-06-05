@@ -122,6 +122,8 @@ In addition to the above new features, the current release provides the followin
 * Hovering pointer on card view, makes the screen scroll as a result of (automatic) focus on the quick actions available in the card. (GRANITE-26895)
 * Displaying too many images after scrolling a large number of search results leads to browser crash. (GRANITE-26432)
 * The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
+* When downloading an asset, if email option is selected and even if a valid email ID is provided, the download option is not available. (CQ-4296535)
+
 * When adding tags in [!UICONTROL Properties] page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
 * In the link sharing dialog, when navigating in browse mode, the screen reader,
 
@@ -129,6 +131,9 @@ In addition to the above new features, the current release provides the followin
   * is unable to navigate to all the listed auto-suggestions.
   * does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
 
+* Dragging options is not working using keyboard in NVDA browse mode in metadata schema editor. (CQ-4296326)
+* On Assets user interface, the view settings are not accessible by keyboard. (CQ-4289038)
+* Custom filters saved as smart collections are not applied properly to assets. (CQ-4294942)
 * Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
 * The luminosity ratio is less than 3:1 for the Yellow-colored rating icons. It is not useful to users with limited vision and without perception of color. The rating stars are displayed in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view  (CQ-4295106)
 * The list box drop-down of combo box (in various fields on different pages) now shows entries as a list of options that can be announced by screen readers. (CQ-4294017)
