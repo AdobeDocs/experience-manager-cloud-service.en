@@ -41,7 +41,7 @@ As a user in the SysAdmin role, you have one-click access to the **Admin Console
 
    Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
 
-1. Navigate to **Environments** card from the *Overview* page or to the **Environments** page to use the **Manage Access** option, as shown in the figure below.
+1. Navigate to **Environments** card from **Program Overview** or from the **Environments** page to use the **Manage Access** option, as shown in the figure below.
 
    ![](assets/manage-access1.png)
 
