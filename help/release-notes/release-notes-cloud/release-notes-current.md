@@ -45,6 +45,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 ### What's New {#what-is-new-cloud-manager}
 
 * A user in the *Business Owner* role in Cloud Manager is now able to delete a Sandbox Program from the landing page (via quick action button on Program card) or from within the program.
+Refer to [Deleting a Sandbox Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for more details.
 
 * A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager is now able to delete their Production and Stage environment set via the Cloud Manager UI. The delete option is now available from both the Environment card on the overview page as well as the Environments page. Selecting the delete option on either Production or Stage also deletes the other in the set.
 
@@ -54,11 +55,12 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * A **LEARN** page is now available in Cloud Manager, accessible via the top navigation. This page includes resources to help users learn about the most frequently used work-flows as relevant to their roles assigned in Cloud Manager.
 
-* Sandbox Programs are now identified by means of a **Sandbox** badge that will be displayed on the program card on the landing page as well as next to the program name in the *Overview* page.
+* Sandbox Programs are now identified by means of a **Sandbox** badge that will be displayed on the program card on the landing page as well as next to the program name in the **Program Overview** page.
 
-* A user in the *SysAdmin* role now has one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager can be managed. A **Manage Roles** button will be available on the landing page next to the **Add Program** button.
+* A user in the SysAdmin role now has one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager can be managed. A **Manage Access** button will be available on the landing page next to the **Add Program** button.
+Refer to [SysAdmin Tasks](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) for more details.
 
-* A user in the SysAdmin role now has one-click access to Author instance directly from CM.
+* A user in the SysAdmin role now has one-click access to author instance directly from CM.
 
 * The Build log now includes the list of discovered artifacts, including skipped content packages.
 
