@@ -15,6 +15,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 
 Follow this section to learn about what is new and the updates for AEM Sites in AEM as a Cloud Service Release 2020.6.0.
 
+### What's New {#whats-new-2020.6.0}
+
+Release 2.9.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
+
+* Integration between [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) and the Core Components
+* Configurable HTML ID attributes for all components
+* A new Progress Bar component
+* Many bug fixes
+
 ### Bug Fixes {#sites-bug-fixes}
 
 * Components inside layout container not visible when Layout container is copied and pasted again on a page.
