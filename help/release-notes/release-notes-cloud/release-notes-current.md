@@ -11,13 +11,11 @@ The following section outlines the general Release Notes for Experience Manager 
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
 
-
 ## What's New in Foundations in AEM as a Cloud Service {#foundations}
 
 AEM project build times will improve by removing all references in the AEM project’s pom.xml to the remote repository `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
 The AEM as a Cloud Service SDK API Jar, which was previously hosted in that location, is now located in Maven Central, which is Maven’s default artifact repository.
-
 
 ## What's New in Cloud Manager {#cloud-manager}
 
@@ -25,11 +23,11 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 ### What's New {#what-is-new-cloud-manager}
 
-* A user in the *Business Owner* role in Cloud Manager is now able to delete a Sandbox Program from the landing page (via quick action button on Program card) or from within the program. 
+* A user in the *Business Owner* role in Cloud Manager is now able to delete a Sandbox Program from the landing page (via quick action button on Program card) or from within the program.
 
 * A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager is now able to delete their Production and Stage environment set via the Cloud Manager UI. The delete option is now available from both the Environment card on the overview page as well as the Environments page. Selecting the delete option on either Production or Stage also deletes the other in the set.
 
-* Coach marks on the landing page to inform and instruct the user about basic navigation. 
+* Coach marks on the landing page to inform and instruct the user about basic navigation.
 
 * Coach marks on the *Overview* page to inform and instruct the user about basic navigation inside Cloud Manager to get them started.
 
@@ -57,7 +55,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 ### Known Issues {#known-issues-cm}
 
-* Environments within a Sandbox program will be hibernated when no activity is detected for a certain duration. This status will not be observed in Cloud Manager. The status can however be observed via Developer Console. This will be addressed in an upcoming release. 
+* Environments within a Sandbox program will be hibernated when no activity is detected for a certain duration. This status will not be observed in Cloud Manager. The status can however be observed via Developer Console. This will be addressed in an upcoming release.
 
 * The link to the Developer Console directly from Cloud Manager will not display the option to de-hibernate/hibernate a Sandbox Program's environment. To address this, once at the Developer Console, add the pattern `#release-cm-p1234-e5678` to the end of the url, where *1234* is the Program ID and *5678* is the Environment ID. This will be addressed in an upcoming release.
 
@@ -79,13 +77,16 @@ Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how
 
 Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and leverage a variety of core 3D files, including .obj, .stl, .gltf, and .glb files. With the addition of [!DNL Dynamic Media], 3D experiences can be configured and delivered via agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR).
 
-<!-- TBD: Add link to the DM help article. -->
+<!-- TBD: Add link to the DM help article, if any. -->
+
+<!-- Hiding this as the GA is at a later date. 
+TBD: Add link to the AAL help article. 
 
 **Adobe Asset Link support for Adobe XD**
 
 With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
 
-<!-- TBD: Add link to the AAL help article. -->
+-->
 
 **Accessibility enhancements**
 
@@ -97,17 +98,23 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 
 <!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
 
-**Enhancements based on customer feedback**
+**Other enhancements**
 
-The release provides the following additional enhancements based on the feedback from our customers and users:
+The release provides the following additional enhancements:
 
 * Accessibility improvements for the Assets user interface.
 * Ability to reprocess assets with asset processing profiles, giving users full control of the process (run full asset processing, just apply specific processing profile, and decide if post-processing workflow should be run).
 * Search queries return results faster now when the underlying cluster instance has been restarted behind the scenes (the initial search run could last longer in such a case before).
 * Sort by 'Name' when viewing assets in list view in Assets interface and in the search results.
 * Sort on ‘Created’ (Date) when viewing assets in list view in Assets interface and in the search results.
+* Support to convert EPS files to images.
 
 ### Bug Fixes {#assets-bug-fixes}
+
+<!-- TBD: Add enhancements above and bug fixes below.
+Seek DM bug fixes if any.
+Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
+-->
 
 In addition to the above new features, the current release provides the following enhancements and bug fixes based on customer feedback for [!DNL Assets].
 
@@ -130,10 +137,10 @@ In addition to the above new features, the current release provides the followin
 * Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard. (CQ-4273031)
 * The option to open filter sidebar can now be accessed using keyboard. (CQ-4273018)
 * The purpose of various combo box elements (such as Path field and option to open Selection dialog in Basic tab of asset Properties) are now correctly announced by screen readers. (CQ-4273016)
-* [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using keyboard and are screen reader friendly. (CQ-4272953)
-* Functionality to control video volume is now accessible through tab (to focus on volume slider) and arrow keys (to adjust volume) on keyboard. (CQ-4272696)
+* [!UICONTROL Metadata Schema Editor] page and its elements are not accessible using keyboard and are not screen reader friendly. (CQ-4272953)
+* Video volume controls are not accessible using a keyboard. (CQ-4272696)
 * Many actionable options on the Assets user interface do not indicate focus when using keyboard. (CQ-4272694)
-* Information that the rows in list view table are selectable is now communicated to screen reader users when keyboard focus is on them. This information is announced when mouse is hovered on the rows. (CQ-4271824)
+* Screen reader users do not know that the rows in list view are selectable when using a keyboard. The information is only announced when mouse is hovered on the rows. (CQ-4271824)
 * Some form fields, such as the username and password fields on the login page, rely only on placeholder values to give an accessible label. (CQ-4271716)
-* Interactive user interface elements, such as links and options (on header and zoom options of assets page, folder navigation), are now accessible using a keyboard. (CQ-4271412)
+* Interactive user interface elements, such as links and options (on header and zoom options of assets page, folder navigation) can now be accessed using a keyboard. (CQ-4271412)
 * Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique. (CQ-4271409)
