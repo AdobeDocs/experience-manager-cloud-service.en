@@ -30,6 +30,9 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
   + [Content Fragments Configuring Components for Rendering](developing/extending/content-fragments-configuring-components-rendering.md)
   + [Configuring Search Forms](developing/extending/search-forms.md)
+  + [Configure Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md)
+  + [Configure the RTE plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+  + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
   + [Configuring OSGi for AEM as a Cloud Service](deploying/configuring-osgi.md)
