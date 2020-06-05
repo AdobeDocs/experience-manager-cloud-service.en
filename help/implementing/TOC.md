@@ -36,6 +36,8 @@ user-guide-title: Implementing for AEM as a Cloud Service
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
   + [Configuring OSGi for AEM as a Cloud Service](deploying/configuring-osgi.md)
-+ Dispatcher in the Cloud {#dispatcher}
-  + [Dispatcher in the Cloud](dispatcher/overview.md)
-  + [Content Delivery in AEM as a Cloud Service](dispatcher/content-delivery.md)
++ Content Delivery Overview {#content-delivery}
+  + [Content Delivery Flow](dispatcher/overview.md)
+  + [Dispatcher in the Cloud](dispatcher/disp-overview.md)
+  + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
+  + [Caching in AEM as a Cloud Service](dispatcher/caching.md)
