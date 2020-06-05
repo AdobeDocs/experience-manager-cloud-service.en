@@ -11,6 +11,27 @@ The following section outlines the general Release Notes for Experience Manager 
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
 
+## What's New in AEM Sites {#aem-sites}
+
+Follow this section to learn about what is new and the updates for AEM Sites in AEM as a Cloud Service Release 2020.6.0.
+
+### Bug Fixes {#sites-bug-fixes}
+
+* Components inside layout container not visible when Layout container is copied and pasted again on a page.
+
+* Fixed Issue with resizing of layout component.
+
+* Added ability to manage routing Angular only pages and AEM/Angular pages.
+
+### Accessibility {#accessibility}
+
+* Narrating role and state now possible for the Masonry items in the create page while navigating in the browse mode using down arrow.
+
+* Added link in navigation l to allow users skip  to the main content.
+
+* Screen reader improvements.
+
+
 ## What's New in Foundations in AEM as a Cloud Service {#foundations}
 
 AEM project build times will improve by removing all references in the AEM project’s pom.xml to the remote repository `https://downloads.experiencecloud.adobe.com/content/maven/public`.
