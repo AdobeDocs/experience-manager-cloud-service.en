@@ -195,7 +195,6 @@ To search for assets with smart tags (regular or enhanced), use the Assets Omnis
 >[!NOTE]
 >
 >The ability of the Smart Tags to train on your tags and apply them on other images depends on the quality of images you use for training.
->
 >For best results, Adobe recommends that you use visually similar images to train the service for each tag.
 
 >[!MORELIKETHIS]

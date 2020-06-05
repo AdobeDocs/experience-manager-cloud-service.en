@@ -73,6 +73,7 @@ When the certificate expires it is no longer trusted. To add a new certificate, 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Click **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Click the required configuration.  
 
 1. To download a public certificate, click **[!UICONTROL Download Public Certificate for OAuth Integration]**.
+
 1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing service in the Project. Upload the new certificate. For more information, see the instructions in [Create Adobe I/O integration](#create-aio-integration).
 
 ### Create an integration {#create-aio-integration}
