@@ -113,17 +113,12 @@ Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how
 
 **Support for ingestion, preview and delivery of 3D content**
 
-Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and leverage a variety of core 3D files, including .obj, .stl, .gltf, and .glb files. With the addition of [!DNL Dynamic Media], 3D experiences can be configured and delivered via agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR).
-
-<!-- TBD: Add link to the DM help article, if any. -->
+Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and leverage a variety of core 3D files, including .obj, .stl, .gltf, and .glb files. With the addition of [!DNL Dynamic Media], 3D experiences can be configured and delivered via agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR). See [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **Accessibility enhancements**
@@ -134,18 +129,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * User interface elements, controls, and input form fields are accessible using keyboard.
 * Change in color or contrast of some interface elements to make these more distinguishable by users with limited vision and without perception of color. For example, Assets now has appropriate contrast in the star rating icons in [!UICONTROL Properties] page and in the card view.
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **Other enhancements**
 
 The release provides the following additional enhancements:
 
-* Accessibility improvements for the Assets user interface.
 * Ability to reprocess assets with asset processing profiles, giving users full control of the process (run full asset processing, just apply specific processing profile, and decide if post-processing workflow should be run).
 * Search queries return results faster now when the underlying cluster instance has been restarted behind the scenes (the initial search run could last longer in such a case before).
-* Sort by 'Name' when viewing assets in list view in Assets interface and in the search results.
-* Sort on ‘Created’ (Date) when viewing assets in list view in Assets interface and in the search results.
-* Support to convert EPS files to images.
+* Sort by 'Name' when viewing assets in list view in Assets interface and in the search results. See [search assets](/help/assets/search-assets.md#sort).
+* Sort on ‘Created’ (Date) when viewing assets in list view in Assets interface and in the search results. See [search assets](/help/assets/search-assets.md#sort).
+* Support to convert EPS files to images using asset microservices.
 
 ### Bug Fixes {#assets-bug-fixes}
 

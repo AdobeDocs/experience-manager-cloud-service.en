@@ -4,7 +4,7 @@ description: Tag images with artificially intelligent services that apply contex
 contentOwner: AG
 ---
 
-# Tag your images using smart services {#smart-tag-assets}
+# Train Smart Tag service and tag your images {#train-service-tag-assets}
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches.
 
@@ -18,7 +18,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 To use smart tagging, complete the following tasks:
 
-* [Integrate Experience Manager with Adobe I/O](#integrate-aem-with-aio).
+* [Integrate Experience Manager with Adobe Developer Console](#integrate-aem-with-aio).
 * [Understand tag models and guidelines](#understand-tag-models-guidelines).
 * [Train the model](#train-model).
 * [Tag your digital assets](#tag-assets).
@@ -28,11 +28,11 @@ Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] custom
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integrate [!DNL Experience Manager] with Adobe I/O {#integrate-aem-with-aio}
+## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
-You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using Adobe I/O. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
+You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using Adobe Developer Console. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
 
-See [configure Experience Manager for smart tagging of assets](smart-tags-configuration.md) for tasks to configure the Smart Tags. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Tags service.
+See [configure Experience Manager for smart tagging of assets](smart-tags-configuration.md) for tasks to configure the Smart Tags. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## Understand tag models and guidelines {#understand-tag-models-guidelines}
 
