@@ -59,7 +59,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Access Token**: Enter the access token.
 
       >[!NOTE]
-      >You can retrieve the access token from the author instance by navigating to `/libs/granite/migration/token.json`.
+      >You can retrieve the access token from the author instance by navigating to `/libs/granite/migration/token.json`. The access token is retrieved from the Cloud Service author instance.
 
    1. **Parameters**: Select the following parameters to create the migration set:
 
