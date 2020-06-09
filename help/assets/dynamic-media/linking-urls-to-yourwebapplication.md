@@ -15,13 +15,13 @@ To place these URL strings in your web pages and applications, copy them from Dy
 >
 >URL strings are only available for dynamic renditions of assets. They are currently not available for static assets that reside in DAM and not the dynamic media server. The URL button does not appear for renditions that are static.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-See also [Linking YouTube URLs to your Web Application.](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
+See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## Obtaining a URL for an asset {#obtaining-a-url-for-an-asset}
 
@@ -45,7 +45,7 @@ There are several different ways you can obtain a URL string. However, the steps
 
    Remember that URLs are only available to copy *after* you have first *published* the assets. In addition, the viewer preset or image preset must also be published.
 
-   See [Publishing Assets.](publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -77,6 +77,7 @@ There are several different ways you can obtain a URL string. However, the steps
 
 Dynamic Media supports the delivery of static assets, which are additional assets beyond just images and video. Supported static assets formats for delivery include the following:
 
+* 3D files
 * Animated GIF
 * Audio files
 * CSS
@@ -92,7 +93,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
-   See [Publishing Assets.](publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
 1. Use any of the following methods to obtain the URL of the published static asset:
 
@@ -102,7 +103,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
           For example, `https://aem.com/is/content/adobe/image.gif`.
 
-    * click **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
+    * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
 
       Change the copied URL to use `is/content` in the path instead of `is/image/`.
 
