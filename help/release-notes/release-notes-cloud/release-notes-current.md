@@ -115,11 +115,11 @@ Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how
 
 Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and leverage a variety of core 3D files, including .obj, .stl, .gltf, and .glb files. With the addition of [!DNL Dynamic Media], 3D experiences can be configured and delivered via agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR). See [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-<!-- Hiding this as the GA is at a later date. 
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
--->
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link for Adobe XD documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+
+With this release, creative users and designers can now work with assets managed in [!DNL AEM Assets] using [!DNL Adobe Asset Link] in a range of Creative Cloud desktop apps, including [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator], and [!DNL InDesign].
 
 **Accessibility enhancements**
 
