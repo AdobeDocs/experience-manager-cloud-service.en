@@ -11,9 +11,9 @@ Follow the section below to understand the important considerations while runnin
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to May 29'2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+* If you are using a *Sandbox Environment* , ensure that your environment is upgraded to June 10, 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
 
-* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the administration group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
@@ -21,10 +21,10 @@ Follow the section below to understand the important considerations while runnin
 
 ## Availability {#availability}
 
-The Content Transfer Tool can be downloaded as a zip file from the the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Content Transfer Tool can be downloaded as a zip file (Content Transfer Tool v1.0.0) from the the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
->Download the Content Transfer Tool from [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Download the Content Transfer Tool, from [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Running the Content Transfer Tool {#running-tool}
 
