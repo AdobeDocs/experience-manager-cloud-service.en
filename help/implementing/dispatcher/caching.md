@@ -5,7 +5,10 @@ description: Caching in AEM as a Cloud Service
 
 # Introduction {#intro}
 
-Caching at the CDN can be configured by using dispatcher rules. Note that the dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+Traffic passes through the CDN to an apache web server layer, which supports modules including the dispatcher. In order to increase performance, the dispatcher is used primarily as a cache to limit processing on the publish nodes.
+Rules can be applied to the dispatcher configuration to modify any default cache expiration settings, resulting in caching at the CDN. Note that dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+
+This page also describes how dispatcher cache is invalidated, as well as how caching works at the browser level with regards to client-side libraries.
 
 ## Caching {#caching}
 
@@ -13,7 +16,7 @@ Caching at the CDN can be configured by using dispatcher rules. Note that the di
 
 * by default, cached by the browser for five minutes, based on the cache-control header emitted by the apache layer. The CDN also respects this value.
 * can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools. 
-* can be overridden on a finer grained level by the following apache mod_headers directives: 
+* can be overridden on a finer grained level by the following apache mod_headers directives:
 
 ```
 <LocationMatch "\.(html)$">
@@ -27,6 +30,15 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 ```
 /0000
 { /glob "*" /type "allow" }
+
+```
+
+* To prevent specific content from being cached, set the Cache-Control header to "private". For example, the following would prevent html content under a directory named "myfolder" from being cached:
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 
 ```
 
@@ -67,13 +79,9 @@ Make sure that assets meant to be kept private rather than cached are not part o
 * default cannot be set with the `EXPIRATION_TIME` variable used for html/text file types
 * cache expiration can be set with the same LocationMatch strategy described in the html/text section by specifying the appropriate regex
 
-## Dispatcher {#disp}
+## Dispatcher Cache Invalidation {#disp}
 
-Traffic goes through an apache web server, which supports modules including the dispatcher. The dispatcher is used primarily as a cache to limit processing on the publish nodes in order to increase performance.
-
-As described in the CDN's caching section, rules can be applied to dispatcher configuration to modify any default cache expiration settings.
-
-The rest of this section describes considerations related to dispatcher cache invalidation. For most customers,it should not be necessary to invalidate the dispatcher cache, instead relying on the dispatcher refreshing its cache upon content being republished, and the CDN respecting cache expiration headers.
+In general, it will not be necessary to invalidate the dispatcher cache. Instead you should rely on the dispatcher refreshing its cache when content is being republished and the CDN respecting cache expiration headers.
 
 ### Dispatcher Cache Invalidation during Activation/Deactivation {#cache-activation-deactivation}
 
