@@ -9,27 +9,6 @@ AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to r
 
 The AEM managed CDN will satisfy most customer's performance and security requirements. Customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
 
-<!--- In total, AEM offers two options:
-
-1. AEM Managed CDN - AEM's out-of-the-box CDN. It is a tightly integrated option and does not require heavy customer investment in supporting the CDN integration with AEM.
-1. Customer Managed CDN points to AEM Managed CDN  - the customer points their own CDN to AEM's out-of-the-box CDN. The customer will still need to manage their own CDN, but investment in the integration with AEM is moderate.
-
-The first option should satisfy most of the customer performance and security requirements. Additionally, it requires minimal customer effort.
-
-The second option will be allowed on a case-by-case basis. The decision is based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
-
-Presented below is a decision matrix to compare the two options. More detailed information can be found in the sections that follow.
-
-| Details | AEM Managed CDN | Customer Managed CDN points to AEM CDN |
-|---|---|---|
-| **Customer effort** | None, it is fully integrated. Only need to point CNAME to AEM Managed CDN.| Moderate customer investment. The customer must manage its own CDN. |
-| **Pre-requisites** | None | Existing CDN that is onerous to replace. Must demonstrate a successful load test prior to going live. |
-| **CDN expertise** | None | Requires at least one part time engineering resource with detailed CDN knowledge that is capable of configuring the customer's CDN. |
-| **Security** | Managed by Adobe. | Managed by Adobe (and optionally by the customer at their own CDN). |
-| **Performance** | Optimized by Adobe. | Will benefit from some AEM CDN capabilities, but potentially a small performance hit due to the extra hop. **Note**: Hops from customer CDN to Adobe's out of the box CDN likely to be efficient). |
-| **Caching** | Supports cache headers applied at the dispatcher. | Supports cache headers applied at the dispatcher. |
-| **Image and video compression capabilities** | Can work with Adobe Dynamic Media. | Can work with Adobe Dynamic Media or customer managed CDN image/video solution. |--->
-
 ## AEM Managed CDN  {#aem-managed-cdn}
 
 Follow these to prepare for content delivery by using Adobe's out-of-the-box CDN:
@@ -52,11 +31,11 @@ By default, for an Adobe Managed CDN setup, all public traffic can make its way 
 
 If a customer must use its existing CDN, they may manage it and point it to Adobe's managed CDN, providing the following are satisfied:
 
-1. Customer must have an existing CDN that would be onerous to replace.
-1. Customer must manage it.
-1. Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions below.
-1. Customer must have engineering CDN experts that are on call in case related issues arise.
-1. Customer must perform and successfully pass a load test before going to production.
+* Customer must have an existing CDN that would be onerous to replace.
+* Customer must manage it.
+* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions below.
+* Customer must have engineering CDN experts that are on call in case related issues arise.
+* Customer must perform and successfully pass a load test before going to production.
 
 Configuration instructions:
 
