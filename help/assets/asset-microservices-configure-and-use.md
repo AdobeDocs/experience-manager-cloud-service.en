@@ -92,9 +92,9 @@ An empty value means that asset processing assumes the pixel dimension of the or
 
 #### MIME type inclusion rules {#mime-type-inclusion-rules}
 
-When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset ("blacklisting").
+When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset (blocked list).
 
-Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated ("whitelisting").
+Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated (allowed list).
 
 #### Special FPO rendition {#special-fpo-rendition}
 
