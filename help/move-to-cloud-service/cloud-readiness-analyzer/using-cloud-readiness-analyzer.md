@@ -9,18 +9,18 @@ description: Using Cloud Readiness Analyzer
 
 Follow the section below to understand the important considerations while running the Cloud Readiness Analyzer (CRA):
 
-* CRA is supported on source AEM instances with version 6.1 and above.
-* CRA can run on any environment. 
+* CRA is supported on source AEM instances with version 6.1 and above
+* CRA can run on any environment (preferably *Stage* environment)
 
    >[!NOTE]
-   >In order to increase the detection rate and avoid any slowdowns on business critical instances, it is recommended to run CRA on the source author staging environments that are as close as possible to production ones in the areas of customizations, configurations, content and user applications. Alternatively, it can also be run on a clone of the publish environment.
+   >In order to increase the detection rate and avoid any slowdowns on business critical instances, it is recommended to run CRA on the source author staging environments that are as close as possible to production ones in the areas of customizations, configurations, content and user applications. Alternatively, it can also run on a clone of the *Publish* environment.
 
 ## Availability {#availability}
 
-The Cloud Readiness Analyzer (CRA) can be downloaded as a zip file from the the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Cloud Readiness Analyzer can be downloaded as a zip file from the the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
->Download the Cloud Readiness Analyzer (CRA) from *pending*.
+>Download the Cloud Readiness Analyzer from the Software Distribution Portal *pending*.
 
 ## Running the Cloud Readiness Analyzer {#running-tool}
 
@@ -30,20 +30,32 @@ Follow this section to learn how to run Cloud Readiness Analyzer:
 
 ### Viewing the Results {#viewing-the-results}
 
-There are two ways to view the output of the CRA:
+>[!IMPORTANT]
+>The reports generated from Cloud Readiness Analyzer are based on Pattern Detectors. Refer to [Pattern Detectors](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) for more details.
 
-1. Using the organized report
+There are two ways to view the output from the Cloud Readiness Analyzer:
+
+1. **Using the Organized Report**
 
    >[!NOTE]
    >The organized report is available on AEM version 6.3 and above.
 
-  Refer to CRA Document Planning and Status to describe importance levels in the report
+   Or,
 
-1. Viewing the output of the CRA (can be used with AEM version 6.1 and above):
+1. **Viewing the output of the CRA**
 
-   1. Navigate to AEM Web Console by browsing to.
+   Follow the steps below to view the output from the Cloud Readiness Analyzer:
 
-   1. Select Status - Cloud Readiness Analyzer as shown in the image below.
+   >[!NOTE]
+   >The steps below are applicable to AEM version 6.1 and above.
+
+   1. Navigate to **AEM Web Console** using `https://serveraddress:serverport/system/console/configMgr`.
+
+   1. Select **Status - Pattern Detector** as shown in the figure below.
+
+#### Viewing the Report in AEM 6.1 Instances {#aem-instances-report}
+
+You can download the csv report for AEM 6.1.This is pending. 
 
 #### Understanding Importance Levels in the Report {#importance-levels}
 
