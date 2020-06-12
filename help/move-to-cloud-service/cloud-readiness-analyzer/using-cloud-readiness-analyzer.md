@@ -30,7 +30,7 @@ Follow this section to learn how to run Cloud Readiness Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Once you click on **Cloud Readiness Analyzer**, the tool starts generating the report and after few minutes you will see the generated report.
+1. Once you click on **Cloud Readiness Analyzer**, the tool starts generating the report and after few minutes the summary report is available on your AEM instance.
 
    >[!NOTE]
    >You will have to scroll down the page to view the complete report.
@@ -72,12 +72,22 @@ Follow the steps below to generate a CSV format of your summary report:
 
 1. 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-1. Once your report is generated, click on **CSV** to download the full summary report in comma-separated values (CSV) format, as shown in the figure below.
+1. Once the report is available, click on **CSV** to download the full summary report in comma-separated values (CSV) format, as shown in the figure below.
 
 ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### Viewing the Report in AEM 6.1 Instances {#aem-instances-report}
 
-You can download the csv report for AEM 6.1.This is pending. 
+Follow the steps below to download the CSV report for Adobe Experience Manager (AEM) 6.1:
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Select the **Status** tab and search for **Pattern Detector** from the drop-down list, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. You can download the summary report in a zip folder or in a JSON format.
+ 
 
