@@ -28,42 +28,56 @@ Follow this section to learn how to run Cloud Readiness Analyzer:
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-### Viewing the Results {#viewing-the-results}
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. Once you click on **Cloud Readiness Analyzer**, the tool starts generating the report and after few minutes you will see the generated report.
+
+   >[!NOTE]
+   >You will have to scroll down the page to view the complete report.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### Viewing the Results in the Summary Report {#viewing-the-results}
 
 >[!IMPORTANT]
 >The reports generated from Cloud Readiness Analyzer are based on Pattern Detectors. Refer to [Pattern Detectors](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) for more details.
 
-There are two ways to view the output from the Cloud Readiness Analyzer:
+Once you scroll down the page to view the complete summary report, you can see the following information for each of the category highlighted in the report:
 
-1. **Using the Organized Report**
+1. **Importance Level**
 
-   >[!NOTE]
-   >The organized report is available on AEM version 6.3 and above.
+   The following table describes the meaning of the various Pattern Detector and Cloud Readiness Analyzer importance levels.
 
-   Or,
+   |Importance Level|Description|
+   |--- |--- |
+   |INFO/0|This finding is provided for informational purposes.|
+   |ADVISORY/1|This finding is potentially an upgrade issue. Further investigation is recommended.|
+   |MAJOR/2|This finding is likely to be an upgrade issue that should be addressed.|
+   |CRITICAL/3|This finding is very likely to be an upgrade issue that must be addressed to prevent loss of function or performance.|
 
-1. **Viewing the output of the CRA**
+1. **Description**
+   The description provides an information on the reported category.
 
-   Follow the steps below to view the output from the Cloud Readiness Analyzer:
+1. **Documentation URL**
+   The documentation URL allows you to view the technical documentation for the associated type.
 
-   >[!NOTE]
-   >The steps below are applicable to AEM version 6.1 and above.
+1. **Message**
+   A description of the finding in a single message.
 
-   1. Navigate to **AEM Web Console** using `https://serveraddress:serverport/system/console/configMgr`.
+### Viewing the Results in a CSV Format {#viewing-the-results-csv}
 
-   1. Select **Status - Pattern Detector** as shown in the figure below.
+The summary report is available in the AEM User Interface. You can download the full report in a comma-separated values (CSV) format that is helpful during the refactoring process.
+
+Follow the steps below to generate a CSV format of your summary report:
+
+1. 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
+
+1. Once your report is generated, click on **CSV** to download the full summary report in comma-separated values (CSV) format, as shown in the figure below.
+
+![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### Viewing the Report in AEM 6.1 Instances {#aem-instances-report}
 
 You can download the csv report for AEM 6.1.This is pending. 
 
-#### Understanding Importance Levels in the Report {#importance-levels}
-
-The following table describes the meaning of the various Pattern Detector and Cloud Readiness Analyzer importance levels.
-
-|Importance Level|Description|
-|--- |--- |
-|INFO/0|This finding is provided for informational purposes.|
-|ADVISORY/1|This finding is potentially an upgrade issue. Further investigation is recommended.|
-|MAJOR/2|This finding is likely to be an upgrade issue that should be addressed.|
-|CRITICAL/3|This finding is very likely to be an upgrade issue that must be addressed to prevent loss of function or performance.|
