@@ -11,7 +11,7 @@ Follow the section below to understand the important considerations while runnin
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
-* If you are using a *Sandbox Environment* , ensure that your environment is upgraded to June 10, 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
 
 * To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
@@ -19,9 +19,11 @@ Follow the section below to understand the important considerations while runnin
 
 * The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process.
 
+* The recommended upper limit for the repository size that the Content Transfer Tool can support at a time is 20GB.
+
 ## Availability {#availability}
 
-The Content Transfer Tool can be downloaded as a zip file (Content Transfer Tool v1.0.0) from the the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Content Transfer Tool can be downloaded as a zip file (Content Transfer Tool v1.0.0) from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
 >Download the Content Transfer Tool, from [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -200,6 +202,8 @@ Or,
    You can also view logs for your migration set from the *Overview* screen. Select the migration set and click the status under **EXTRACTION** field. In this case, click  **FINISHED** to view logs in a new tab.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. To tail the logs without using the user interface, you can SSH into your source AEM environment and tail the `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Deleting a Migration Set {#deleting-migration-set}
 
