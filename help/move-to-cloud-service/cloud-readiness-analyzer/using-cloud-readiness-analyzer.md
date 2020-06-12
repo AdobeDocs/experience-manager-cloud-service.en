@@ -167,9 +167,7 @@ The cache lifetime value is stored as the `maxCacheAge` property on the followin
  
 The value of this property is the cache lifetime in seconds. An administrator may adjust the cache lifetime using the CRX/DE Lite interface to AEM.
 
-
-
-#### Viewing the Report in AEM 6.1 Instances {#aem-instances-report}
+## Viewing the Report in AEM 6.1 Instances {#aem-instances-report}
 
 Follow the steps below to download the CSV report for Adobe Experience Manager (AEM) 6.1:
 
