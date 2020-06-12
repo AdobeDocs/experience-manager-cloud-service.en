@@ -46,7 +46,7 @@ Follow this section to learn how to run Cloud Readiness Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-### AEM 6.3 and later
+### AEM 6.3 and later {#aem-older-version}
  
 For AEM 6.3 and above, the primary way to run Cloud Readiness Analyzer is to:
  
@@ -59,7 +59,7 @@ Once the CRA report has been generated and displayed, you have the option of dow
  
 You may force the CRA to clear its cache and regenerate the report by clicking the "Refresh Report" button in the upper left corner.
  
-### AEM 6.2 and 6.1
+### AEM 6.2 and 6.1 {#aem-specific-versions}
  
 The CRA user interface is limited in AEM 6.2 to a link that generates and downloads the CSV report. For AEM 6.1, the user interface is not functional and only the HTTP interface may be used.
  
