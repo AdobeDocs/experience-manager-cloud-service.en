@@ -47,3 +47,11 @@ Follow the section below to understand guidelines and best practices to use the 
 * In the ingestion phase, it is recommended to run the ingestion using the *wipe* mode enabled where the existing repository (author or publish) in the target AEM Cloud Service environment will be completely deleted and then updated with the migration set data. This mode is much faster than the non-wipe mode,  where the migration set is applied on top of the current content.
 
 * After the content transfer activity is completed, the correct project structure is required in the Cloud Service environment to ensure that the content renders successfully in the Cloud Service environment.
+
+* Before running the Content Transfer Tool, you must ensure that there is enough disk space in the `crx-quickstart` subdirectory of the source AEM instance. This is because the Content Transfer Tool creates a local copy of the repository that is later uploaded to the migration set. 
+   The general formula to calculate the require free disk space is as follows:
+   *data store size + node store size * 1.5*
+
+     * For the *data store size*, the Content Transfer Tool uses 64 GB, even if the actual data store is larger.
+     * The *node store size* is segment store directory size or the MongoDB database size.
+  Hence, for a segment store size of 20GB, the required free disk space would be 94GB.
