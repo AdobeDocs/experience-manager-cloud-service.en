@@ -33,13 +33,13 @@ Authors can create and edit textual content in Experience Manager using the diff
 |Editing mode|Editing area|Recommended features to be enabled|
 |--- |--- |--- |
 |Inline|In-place editing for quick, minor edits; Format without opening a dialog box|Minimal RTE features|
-|RTE full screen|Covers entire page|All the required RTE features|
+|RTE full-screen|Covers entire page|All the required RTE features|
 |Dialog|Dialog box on top of the page content but does not cover the entire page| Judiciously enable features|
-|Dialog full screen|Same as Full screen mode; contains fields of the dialog alongside RTE|All the required RTE features|
+|Dialog full-screen|Same as full-screen mode; contains fields of the dialog alongside RTE|All the required RTE features|
 
 >[!NOTE]
 >
->The source-edit feature is not available in inline editing mode. You cannot drag images in the full screen mode. All other features work in all the modes.
+>The source-edit feature is not available in inline editing mode. You cannot drag images in the full-screen mode. All other features work in all the modes.
 
 ### Inline editing {#inline-editing}
 
@@ -49,15 +49,15 @@ When opened (with a slow double-click) the content can be edited within the page
 
 *Figure: Inline editing with basic options in the toolbar.*
 
-### Full screen editing {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
-Experience Manager components can be opened in full screen view that hides the page content and occupies the available screen. Consider full screen editing a detailed version of the inline editing as it offers the most editing options. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Experience Manager components can be opened in full-screen view that hides the page content and occupies the available screen. Consider full-screen editing a detailed version of the inline editing as it offers the most editing options. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
-In the dialog full screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
+In the dialog full-screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
 
-![The detailed RTE toolbar when editing in full screen mode](assets/rte-toolbar-full-screen-mode.png)
+![The detailed RTE toolbar when editing in full-screen mode](assets/rte-toolbar-full-screen-mode.png)
 
-*Figure: The detailed RTE toolbar when editing in full screen mode.*
+*Figure: The detailed RTE toolbar when editing in full-screen mode.*
 
 ### Dialog editing {#dialog-editing}
 
@@ -106,16 +106,16 @@ The following table lists the current plug-ins, showing:
 
 >[!NOTE]
 >
->The full screen plug-in is not supported in dialog mode. Use of the `dialogFullScreen` setting to configure the toolbar for full screen mode.
+>The full-screen plug-in is not supported in dialog mode. Use of the `dialogFullScreen` setting to configure the toolbar for full-screen mode.
 
 ## Understand the configuration paths and locations {#understand-the-configuration-paths-and-locations}
 
 The [mode of RTE editing (and the UI)](#editingmodes) that you provide for your authors decide the location for the configuration details when you are [activating the RTE plug-ins](configure-rich-text-editor-plug-ins.md#activateplugin):
 
 * Inline mode: `cq:editConfig/cq:inplaceEditing`
-* Full screen mode: `cq:editConfig/cq:inplaceEditing`
+* Full-screen mode: `cq:editConfig/cq:inplaceEditing`
 * Dialog mode: `cq:dialog`
-* Full screen dialog mode: `cq:dialog`
+* Full-screen dialog mode: `cq:dialog`
 
 >[!NOTE]
 >
@@ -204,13 +204,13 @@ To configure the toolbar for `dialogFullScreen`, use the following sample config
 </uiSettings>
 ```
 
-Different UI settings are used for the inline mode and full screen mode. The toolbar property is used to specify the buttons of the toolbar.
+Different user interface settings are used for the inline mode and full-screen mode. The toolbar property specifies the option of the toolbar.
 
-For example, if the button is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
+For example, if the option is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
 
-If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
+If the option is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
 
-Separators (`|`) between a group of buttons can be specified with `-`.
+Separators (`|`) between a group of option can be specified with `-`.
 
 The pop-up node under inline or full-screen mode contains a list of the popovers being used. Each child node under the 'popovers' node is named after the plug-in (for example, format). It has a property 'items' containing a list of features of the plug-in (for example, format#bold).
 
