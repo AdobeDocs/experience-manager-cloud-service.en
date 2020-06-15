@@ -23,7 +23,7 @@ The following are best practice tips for organizing your digital asset files.
 
     * **Development folders** &ndash; contains digital assets that you are currently working on.
     * **Client folders** &ndash; contains digital assets based on clients or project names.
-    * **Master folders** &ndash; contains original, source digital assets.
+    * **Primary source folders** &ndash; contains original, source digital assets.
     * **Rendition folders** &ndash; contains renditions and copies of the original, source digital assets.
     * **File Size folders** &ndash; contains digital assets based on small, medium, or large file sizes.
     * **Staging folders** &ndash; contains digital assets that are ready to publish live on your website.

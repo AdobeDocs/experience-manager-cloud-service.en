@@ -5,11 +5,11 @@ description: Dynamic Media already comes with a predefined Adaptive Video Encodi
 
 # Video profiles{#video-profiles}
 
-Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your master videos using the Adaptive Video Encoding profile, during playback the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This is known as adaptive streaming.
+Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your primary videos using the Adaptive Video Encoding profile, during playback the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This is known as adaptive streaming.
 
 The following are other factors that determine the quality of your videos:
 
-* **Resolution of the uploaded master video**
+* **Resolution of the uploaded primary video**
 
   If the MP4 video was recorded at a lower resolution, such as 240p or 360p, it cannot be streamed in high definition.
 
