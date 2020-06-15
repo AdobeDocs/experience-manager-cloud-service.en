@@ -77,6 +77,10 @@ Therefore, in order to deploy an index, the index definition (`/oak:index/defini
 
 Once the new index definition is added, the new application needs to be deployed via Cloud Manager. Upon deployment two jobs are started, responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are being reindexed with the new index definitions, before the Blue-Green switch is taking place.
 
+>[!TIP]
+>
+>For further details on the required package structure for AEM as a Cloud Service, see the document [AEM Project Structure.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+
 ## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
 
 ### What is Index Management {#what-is-index-management}

@@ -31,6 +31,16 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 >
 > As in previous versions of AEM, `/libs` should not be modified. Only AEM product code may deploy to `/libs`.
 
+### Oak Indexes {#oak-indexes}
+
+Oak indexes (`/oak:index`) are specifically managed by the AEM Cloud Serice deployment process. This is because the Cloud Manager must wait until any new index is deployed and fully re-idnexed before switching over to the new code image.
+
+For this reason, although Oak indexes are mutable at run time, they must be deployed as code so that they can be installed before any mutable packages are installed. Therefore `/oak:index` configurations are part of the Code Package and not part of the Content Package [as described below.](#recommended-package-structure)
+
+>[!TIP]
+>
+>For further details about indexing in AEM as a Cloud Service, please see the document [Content Search and Indexing.](/help/operations/indexing.md)
+
 ## Recommended Package Structure {#recommended-package-structure}
 
 ![Experience Manager Project Package Structure](assets/content-package-organization.png)
