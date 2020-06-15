@@ -25,13 +25,13 @@ The following step-by-step workflow description is designed to help you get up a
         * [Creating a video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
         * Learn more about [Best practices for video encoding](#best-practices-for-encoding-videos).
 
-    * Associate the video processing profile to one or more folders where you are going to upload your primary videos.
+    * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
 
         * [Applying a video profile to folders](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
-    * Upload your primary videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your primary source videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
         * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
@@ -296,7 +296,7 @@ You can obtain a file’s metadata by viewing its metadata using a video editing
 
 ### Aspect ratio {#aspect-ratio}
 
-When you choose or create a video encoding preset for your primary video file, make sure that the preset has the same aspect ratio as the primary video file. The aspect ratio is the ratio of the width to the height of the video.
+When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio as the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
 
 To determine the aspect ratio of a video file, obtain the file’s metadata and note the file’s width and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
 
@@ -363,7 +363,7 @@ Because resolution and data rate are linked, you have two options when encoding 
 * Choose a data rate and then encode at the highest resolution that looks good at the data rate you chose.
 * Choose a resolution and then encode at the data rate necessary to achieve high-quality video at the resolution you chose.
 
-When you choose (or create) a video encoding preset for your primary video file, use this table to target the correct resolution:
+When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
 
 |Resolution|Height (pixels)|Screen size|
 |--- |--- |--- |
