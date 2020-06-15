@@ -39,14 +39,14 @@ Follow this section to learn how to run Cloud Readiness Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Once you click on **Cloud Readiness Analyzer**, the tool starts generating the report and after few minutes the summary report is available on your AEM instance.
+1. Once you click on **Cloud Readiness Analyzer**, the tool starts generating the report and after few minutes the CRA report is available on your AEM instance.
 
    >[!NOTE]
    >You will have to scroll down the page to view the complete report.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## Interpreting the Cloud Readiness Analyzer Organized Report {#organized-report}
+## Interpreting the Cloud Readiness Analyzer Report {#cra-report}
 
 When the Cloud Readiness Analyzer is run in the AEM instance, the report is displayed as results in the tool window. 
 
@@ -76,7 +76,7 @@ For AEM 6.3 and above, the primary way to run Cloud Readiness Analyzer is to:
    >[!NOTE]
    >The CRA will begin a background process to generate the report as soon as the tool is opened. It displays an indication that the report generation is in process until the report is ready. You may close your browser tab and return at a later time to view the report when it is complete.
  
-1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV). Click on **CSV** to download the full summary report in comma-separated values (CSV) format, as shown in the figure below.
+1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV). Click on **CSV** to download the full CRA report in comma-separated values (CSV) format, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -85,28 +85,18 @@ For AEM 6.3 and above, the primary way to run Cloud Readiness Analyzer is to:
  
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
  
-The Cloud Readiness Analyzer is limited in Adobe Experience Manager (AEM) 6.2 to a link that generates and downloads the CSV report.
+The Cloud Readiness Analyzer is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
+
+For Adobe Experience Manager 6.1, tool is not functional and only the HTTP interface may be used.
 
 >[!NOTE]
->
->* For Adobe Experience Manager 6.1, tool is not functional and only the HTTP interface may be used.
->
->* In all versions, the included Pattern Detector may run independently.
+>In all versions, the included Pattern Detector may run independently.
 
-Follow the steps below to download the CSV report for Adobe Experience Manager (AEM) 6.1 and 6.2:
-
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Select the **Status** tab and search for **Pattern Detector** from the drop-down list, as shown in the figure below.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. You can download the summary report in a zip folder or in a JSON format.
-  
-## Interpreting the Cloud Readiness Analyzer CSV Report {#crs-csv-report}
+## Interpreting the Cloud Readiness Analyzer CSV Report {#cra-csv-report}
  
-When you click the **CSV** option from your AEM instance, the CSV format of the Cloud Readiness Analyzer report is built from the results cache and returned to your browser. Depending on your browser settings, this report will be automatically downloaded as a file with a default name of `results.csv`. If the cache has expired then the report will be regenerated before the CSV file is built and downloaded.
+When you click the **CSV** option from your AEM instance, the CSV format of the Cloud Readiness Analyzer report is built from the results cache and returned to your browser. Depending on your browser settings, this report will be automatically downloaded as a file with a default name of `results.csv`. 
+
+If the cache has expired then the report will be regenerated before the CSV file is built and downloaded.
 
 The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. Its format is suitable for viewing and editing in an application such as Microsoft Excel. It is intended to provide all of the finding information in a repeatable format that can be helpful when comparing reports over time to measure progress.
  
@@ -181,7 +171,7 @@ The default CRA cache lifetime is 24 hours. With the option for refreshing a rep
 The cache lifetime value is stored as the `maxCacheAge` property on the following repository node:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
  
-The value of this property is the cache lifetime in seconds. An administrator may adjust the cache lifetime using the CRX/DE Lite.
+The value of this property is the cache lifetime in seconds. An administrator may adjust the cache lifetime using the **CRXDE Lite**.
 
 
 
