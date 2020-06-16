@@ -29,11 +29,13 @@ Follow the section below to understand the important considerations while runnin
 The Cloud Readiness Analyzer can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
->Download the Cloud Readiness Analyzer from the Software Distribution Portal *pending*.
+>Download the Cloud Readiness Analyzer from the Software Distribution portal.
 
-## Running the Cloud Readiness Analyzer {#running-tool}
+## Viewing the Cloud Readiness Analyzer Report {#viewing-report}
 
-Follow this section to learn how to run Cloud Readiness Analyzer:
+### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+
+Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
 1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
@@ -44,17 +46,37 @@ Follow this section to learn how to run Cloud Readiness Analyzer:
    >[!NOTE]
    >You will have to scroll down the page to view the complete report.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+
+1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV). Click on **CSV** to download the full CRA report in comma-separated values (CSV) format, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+
+   >[!NOTE]
+   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**.
+
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Cloud Readiness Analyzer is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
+
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
+
+>[!NOTE]
+>In all versions, the included Pattern Detector may run independently.
 
 ## Interpreting the Cloud Readiness Analyzer Report {#cra-report}
 
-When the Cloud Readiness Analyzer is run in the AEM instance, the report is displayed as results in the tool window. 
+When the Cloud Readiness Analyzer tool is run in the AEM instance, the report is displayed as results in the tool window. 
 
 The format of the report is:
  
-* *Report Overview*: Information about the report itself, including when it was generated.
-* *System Overview*: Information about the AEM system on which the CRA was run.
-* *Finding Categories*: Multiple sections that each address one or more findings of the same category. Each section includes the following: Category name, sub-types, finding count and importance, summary, link to category documentation, and individual finding information.
+* **Report Overview**: Information about the report itself and information such as:
+  * *Report Time*: When the report contents were generated and first made available.
+  * *Expiration Time*: When the report contents cache will expire.
+  * *Generation Time Period*: The time spent by the report contents generation process.
+  * *Finding Count*: The total number of findings included in the report.
+* **System Overview**: Information about the AEM system on which the CRA was run.
+* **Finding Categories**: Multiple sections that each address one or more findings of the same category. Each section includes the following: Category name, sub-types, finding count and importance, summary, link to category documentation, and individual finding information.
  
 An importance level is assigned to each finding to indicate a rough priority for action. 
 
@@ -66,31 +88,7 @@ Follow the table below to understand the importance levels:
 |ADVISORY|This finding is potentially an upgrade issue. Further investigation is recommended.|
 |MAJOR|This finding is likely to be an upgrade issue that should be addressed.|
 |CRITICAL|This finding is very likely to be an upgrade issue that must be addressed to prevent loss of function or performance.|
-
-### Adobe Experience Manager 6.3 and later {#aem-older-version}
  
-For AEM 6.3 and above, the primary way to run Cloud Readiness Analyzer is to:
- 
-1. Select the Adobe Experience Manager instance and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
- 
-   >[!NOTE]
-   >The CRA will begin a background process to generate the report as soon as the tool is opened. It displays an indication that the report generation is in process until the report is ready. You may close your browser tab and return at a later time to view the report when it is complete.
- 
-1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV). Click on **CSV** to download the full CRA report in comma-separated values (CSV) format, as shown in the figure below.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
-
-   >[!NOTE]
-   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**.
- 
-### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
- 
-The Cloud Readiness Analyzer is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
-
-For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
-
->[!NOTE]
->In all versions, the included Pattern Detector may run independently.
 
 ## Interpreting the Cloud Readiness Analyzer CSV Report {#cra-csv-report}
  
