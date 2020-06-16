@@ -20,7 +20,7 @@ Refer to [Dispatcher Overview](https://docs.adobe.com/content/help/en/experience
 
 You must learn how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate and run it locally before deploying to Cloud environments.
 
-Refer to [Dispatcher in the Cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html) for more information.
+Refer to [Dispatcher in the Cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for more information.
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
