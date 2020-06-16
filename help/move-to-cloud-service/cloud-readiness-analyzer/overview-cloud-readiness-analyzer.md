@@ -9,11 +9,11 @@ The Cloud Readiness Analyzer helps accelerate the processes of assessing readine
  
 This tool generates a report that identifies areas of potential refactoring, which is the first step in the transition journey to AEM as a Cloud Service.
 
-## Summary Report in Cloud Readiness Analyzer {#summary-report}
+## Cloud Readiness Analyzer Report {#cra-report}
 
-The Cloud Readiness Analyzer summary report is used to gain a high-level understanding of general upgrade readiness. The report consists of findings within categories of issues that must be addressed before a successful deployment to AEM as a Cloud Service. 
+The Cloud Readiness Analyzer Report is used to gain a high-level understanding of general upgrade readiness. The report consists of findings within categories of issues that must be addressed before a successful deployment to AEM as a Cloud Service. 
 
-The summary report include the following categories:
+The Cloud Readiness Analyzer report includes the following categories:
  
 * Application functionality that must be refactored
 * Repository items that must be moved to a supported location
@@ -21,9 +21,9 @@ The summary report include the following categories:
 * Deployment and configuration issues
 * AEM 6.x features that have been replaced by new functionality or that are currently not supported on AEM as a Cloud Service
  
-Additional information about the categories and possible implications and solutions associated with those categories are provided via links from within the summary report.
+Additional information about the categories and possible implications and solutions associated with those categories are provided via links from within the Cloud Readiness Analyzer Report.
  
 >[!NOTE]
->The Cloud Readiness Analyzer report speeds up the process of estimating the time and cost that is required to transition to AEM as a Cloud Service by providing information that would otherwise have to be manually gathered and evaluated.
+>The Cloud Readiness Analyzer Report speeds up the process of estimating the time and cost that is required to transition to AEM as a Cloud Service by providing information that would otherwise have to be manually gathered and evaluated.
  
 You can also download the Cloud Readiness Analyzer report from your AEM instance. Refer to **Viewing the Results in a CSV Format** for more details pending.
