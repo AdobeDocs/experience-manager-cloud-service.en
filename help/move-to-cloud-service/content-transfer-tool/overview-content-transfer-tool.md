@@ -42,7 +42,7 @@ Follow the section below to understand guidelines and best practices to use the 
 
 * It is advisable to run compaction, data store consistency checks on the repositories before hand to spot potential problems and also reduce the garbage present in the repository. 
 
-* If the AEM Cloud Author Content Delivery Network (CDN) config is configured to have a whitelist of IPs then it should be ensured that the source environment IPs are also added to the whitelist so that the source environment and AEM Cloud environment can communicate with each other.
+* If the AEM Cloud Author Content Delivery Network (CDN) config is configured to have a whitelist of IPs then it should be ensured that the source environment IPs are also added to the allowlist so that the source environment and AEM Cloud environment can communicate with each other.
 
 * In the ingestion phase, it is recommended to run the ingestion using the *wipe* mode enabled where the existing repository (author or publish) in the target AEM Cloud Service environment will be completely deleted and then updated with the migration set data. This mode is much faster than the non-wipe mode,  where the migration set is applied on top of the current content.
 
