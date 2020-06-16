@@ -151,7 +151,7 @@ When both an HTTP header and corresponding query parameter are present, the quer
 A simply way to initiate the generation of the report via the HTTP interface is with the following command:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
  
-Once a request has been made, the client need not remain active for the report to be generated. The report generation could be initiated with one client using an HTTP GET request and, once the report has been generated, viewed from the cache in another client or the CSV tool in the AEM instance.
+Once a request has been made, the client need not remain active for the report to be generated. The report generation could be initiated with one client using an HTTP GET request and, once the report has been generated, viewed from the cache in another client or the CSV tool in the user interface within AEM.
  
 ### Responses (#http-responses)
  
