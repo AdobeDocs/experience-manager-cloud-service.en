@@ -15,7 +15,7 @@ user-guide-title: Move to AEM as a Cloud Service
     + [Overview](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
     + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
   + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
-    + [Overview](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.mdd)
+    + [Overview](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
     + [Using Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
 + Code Refactoring Tools {#refactoring-tools}
   + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
