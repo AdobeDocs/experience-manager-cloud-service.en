@@ -230,7 +230,7 @@ The table below shows the supported apache modules:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing "validator whitelist" in the SDK, as described above.
+Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing validator's allowlist command in the SDK, as described above.
 
 The allowlist contains a list of Apache directives that are permitted in a customer configuration. If a directive is not allowlisted, the tool logs an error and returns a non-zero exit code. If no allowlist is given on the command line (which is the way it should be invoked), the tool uses a default allowlist that Cloud Manager will use for validation before deploying to Cloud environments.
 
