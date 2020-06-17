@@ -33,7 +33,7 @@ The Cloud Readiness Analyzer can be downloaded as a zip file from the Software D
 
 ## Viewing the Cloud Readiness Analyzer Report {#viewing-report}
 
-### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
 Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
@@ -57,7 +57,7 @@ Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
  
-The Cloud Readiness Analyzer is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
+The Cloud Readiness Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
 For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
@@ -70,11 +70,11 @@ When the Cloud Readiness Analyzer tool is run in the AEM instance, the report is
 
 The format of the report is:
  
-* **Report Overview**: Information about the report itself and information such as:
-  * *Report Time*: When the report contents were generated and first made available.
-  * *Expiration Time*: When the report contents cache will expire.
-  * *Generation Time Period*: The time spent by the report contents generation process.
-  * *Finding Count*: The total number of findings included in the report.
+* **Report Overview**: Information about the report itself and includes the following information:
+  * **Report Time**: When the report contents were generated and first made available.
+  * **Expiration Time**: When the report contents cache will expire.
+  * **Generation Time Period**: The time spent by the report contents generation process.
+  * **Finding Count**: The total number of findings included in the report.
 * **System Overview**: Information about the AEM system on which the CRA was run.
 * **Finding Categories**: Multiple sections that each address one or more findings of the same category. Each section includes the following: Category name, sub-types, finding count and importance, summary, link to category documentation, and individual finding information.
  
