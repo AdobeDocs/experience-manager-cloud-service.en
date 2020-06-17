@@ -151,7 +151,7 @@ A simply way to initiate the generation of the report via the HTTP interface is 
  
 Once a request has been made, the client need not remain active for the report to be generated. The report generation could be initiated with one client using an HTTP GET request and, once the report has been generated, viewed from the cache in another client or the CSV tool in the user interface within AEM.
  
-### Responses (#http-responses)
+### Responses {#http-responses}
  
 The following response values are possible:
  
