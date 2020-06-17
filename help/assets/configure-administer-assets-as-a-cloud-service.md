@@ -17,7 +17,7 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * How to monitor health of services
 * How to see the running statuses
 * How to get service-level reports like usage, performance, uptime, etc.
-* Enable asset download by configuring the download servlet. It is disbaled to prevent DDOS kind of situations.
+* Enable asset download by configuring the download servlet. It is disabled to prevent DDOS kind of situations.
 * Configure SMTP to enable email notifications.
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.

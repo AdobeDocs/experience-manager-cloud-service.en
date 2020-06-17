@@ -26,6 +26,10 @@ To allow communication between AEM and Adobe Stock, create an IMS configuration 
 1. Provide appropriate values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
 1. Add the downloaded public key to your Adobe Developer Console service account.
 
+<!--
+TBD: Update this instance when AIO updates their documentation publish URL.
+-->
+
 ### Create Adobe Stock configuration in AEM {#create-adobe-stock-configuration-in-aem}
 
 1. In the AEM user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
