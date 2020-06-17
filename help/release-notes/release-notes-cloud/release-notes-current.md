@@ -40,7 +40,6 @@ Release 2.9.0 of the [Core Components](https://docs.adobe.com/content/help/en/ex
 
 * Screen reader improvements.
 
-
 ## What's New in Foundations in AEM as a Cloud Service {#foundations}
 
 AEM project build times will improve by removing all references in the AEM project’s pom.xml to the remote repository `https://downloads.experiencecloud.adobe.com/content/maven/public`.
@@ -99,17 +98,12 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 ## What's New in [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-<!-- 
-Assets RNs are being authored and are a work in progress.
-PM/EM review required before publishing.
--->
-
 **Guided User Experience for Enhanced Smart Tags, powered by Adobe Sensei**
 
 Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
 
 With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. This is a more intuitive experience.
-Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to smart tag](/help/assets/smart-tags.md) and [configure smart tagging](/help/assets/smart-tags-configuration.md).
+Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to add smart tags to assets](/help/assets/smart-tags.md) and [configure smart tagging](/help/assets/smart-tags-configuration.md).
 
 **Support for ingestion, preview and delivery of 3D content**
 
@@ -125,9 +119,49 @@ With this release, creative users and designers can now work with assets managed
 
 [!DNL Adobe Experience Manager Assets] is now more accessible in compliance with Web Content Accessibility Guidelines (WCAG) v2.1 guidelines. The accessibility has improved for the following use cases or interfaces:
 
-* User interface elements, controls, pages and dialogs are screen reader friendly.
-* User interface elements, controls, and input form fields are accessible using keyboard.
-* Change in color or contrast of some interface elements to make these more distinguishable by users with limited vision and without perception of color. For example, Assets now has appropriate contrast in the star rating icons in [!UICONTROL Properties] page and in the card view.
+The user interface elements are screen reader friendly, are accessible using a keyboard, and have better contrast. The following is a detailed list of enhancements:
+
+* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
+
+* When adding tags in [!UICONTROL Properties] page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
+
+* In the link sharing dialog, when navigating in browse mode, the screen reader,
+
+  * narrates the table information as soon as the dialog is loaded.
+  * is unable to navigate to all the listed auto-suggestions.
+  * does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
+
+* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible and screen reader friendly. The options can be used using a keyboard. (CQ-4272953) Users can drag the components using the keyboard in NVDA browse mode. (CQ-4296326)
+
+* On Assets user interface, the view settings are not accessible by keyboard. (CQ-4289038)
+
+* The luminosity ratio is less than 3:1 for the Yellow-colored rating icons. It is not useful to users with limited vision and without perception of color. The rating stars are displayed in the  tab in asset  or in card view  
+
+* Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in the [!UICONTROL Properties] of an asset and in card view is changed for appropriate contrast. (CQ-4295106)
+
+* The list box popup menu of combo box (in various fields on different pages) now displays entries as a list of options that can be announced by screen readers. (CQ-4294017)
+
+* To apply a workflow to an asset, the chevron arrow in the [!UICONTROL Timeline] can be accessed using a keyboard. (CQ-4289268)
+
+* Users can remove selected tags in the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page using `x` symbol. Its purpose is now announced by screen readers along with the number of selected tag (CQ-4273033).
+
+* The read-only form fields can be focused upon using a keyboard. For example, the disabled fields on [!UICONTROL Basic] tab on an asset's [!UICONTROL Properties] page. (CQ-4273031)
+
+* Access the options to filter assets in the left sidebar using a keyboard now. (CQ-4273018)
+
+* The purpose of various combo box elements such as Path field and the option to open Selection dialog in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page are now correctly announced by screen readers. (CQ-4273016)
+
+* The volume controls for videos are accessible using a keyboard. (CQ-4272696)
+
+* Many actionable options on the Assets user interface do not indicate focus when using keyboard. (CQ-4272694)
+
+* Screen reader users now get to know when the rows in list view are selectable using a keyboard. The information is announced when pointer is hovered on the rows. (CQ-4271824)
+
+* Some form fields, such as the username and password fields on the login page, rely on placeholder values to give an accessible label. (CQ-4271716)
+
+* Interactive user interface elements, such as links and options such as on header and zoom options of assets page or folder navigation can now be accessed using a keyboard. (CQ-4271412)
+
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique. (CQ-4271409)
 
 **Other enhancements**
 
@@ -146,36 +180,11 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-In addition to the above new features, the current release provides the following enhancements and bug fixes based on customer feedback for [!DNL Assets].
+In addition to the above new features, the current release provides the following bug fixes based on customer feedback for [!DNL Assets].
 
 * For MP3 music files, the play button displayed on thumbnail in the DAM preview does not work. (CQ-4294731)
 * Hovering pointer on card view, makes the screen scroll as a result of (automatic) focus on the quick actions available in the card. (GRANITE-26895)
 * Displaying too many images after scrolling a large number of search results leads to browser crash. (GRANITE-26432)
-* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
 * When downloading an asset, if email option is selected and even if a valid email ID is provided, the download option is not available. (CQ-4296535)
-
-* When adding tags in [!UICONTROL Properties] page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
-* In the link sharing dialog, when navigating in browse mode, the screen reader,
-
-  * narrates the table information as soon as the dialog is loaded.
-  * is unable to navigate to all the listed auto-suggestions.
-  * does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
-
-* Dragging options is not working using keyboard in NVDA browse mode in metadata schema editor. (CQ-4296326)
-* On Assets user interface, the view settings are not accessible by keyboard. (CQ-4289038)
 * Custom filters saved as smart collections are not applied properly to assets. (CQ-4294942)
 * Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
-* The luminosity ratio is less than 3:1 for the Yellow-colored rating icons. It is not useful to users with limited vision and without perception of color. The rating stars are displayed in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view  (CQ-4295106)
-* The list box drop-down of combo box (in various fields on different pages) now shows entries as a list of options that can be announced by screen readers. (CQ-4294017)
-* The chevron up arrow in the [!UICONTROL Timeline] cannot be accessed using a keyboard, to apply a workflow to an asset. (CQ-4289268)
-* Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers. (CQ-4273033)
-* Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard. (CQ-4273031)
-* The option to open filter sidebar can now be accessed using keyboard. (CQ-4273018)
-* The purpose of various combo box elements (such as Path field and option to open Selection dialog in Basic tab of asset Properties) are now correctly announced by screen readers. (CQ-4273016)
-* [!UICONTROL Metadata Schema Editor] page and its elements are not accessible using keyboard and are not screen reader friendly. (CQ-4272953)
-* Video volume controls are not accessible using a keyboard. (CQ-4272696)
-* Many actionable options on the Assets user interface do not indicate focus when using keyboard. (CQ-4272694)
-* Screen reader users do not know that the rows in list view are selectable when using a keyboard. The information is only announced when mouse is hovered on the rows. (CQ-4271824)
-* Some form fields, such as the username and password fields on the login page, rely only on placeholder values to give an accessible label. (CQ-4271716)
-* Interactive user interface elements, such as links and options (on header and zoom options of assets page, folder navigation) can now be accessed using a keyboard. (CQ-4271412)
-* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique. (CQ-4271409)

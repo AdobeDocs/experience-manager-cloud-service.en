@@ -15,7 +15,7 @@ During the update of AEM as a Cloud Service, there will be instances with old an
 
 -->
 
-If there is the need to identify the master in the cluster, the Apache Sling Discovery API can be used to detect it.
+If there is the need to identify the primary in the cluster, the Apache Sling Discovery API can be used to detect it.
 
 ## State in Memory {#state-in-memory}
 

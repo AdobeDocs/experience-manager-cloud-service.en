@@ -123,6 +123,9 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 >For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 -->
 
+<!--
+TBD: The method has changed in AEMaaCS. Find the new ones.
+
 ### Filter XMP metadata {#filtering-xmp-metadata}
 
 AEM Assets supports filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested. Filtering is possible via a blocked list and an allowed list.
@@ -146,6 +149,7 @@ Filtering of XMP metadata via allowed list resolves this issue by letting you de
    >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
 1. Save the changes.
+-->
 
 >[!MORELIKETHIS]
 >
