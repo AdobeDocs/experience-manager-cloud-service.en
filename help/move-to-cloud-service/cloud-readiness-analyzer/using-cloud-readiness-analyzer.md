@@ -160,7 +160,7 @@ The following response values are possible:
 * `400 Bad Request`: Indicates that there was an error with the request. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
 * `401 Unauthorized`: The request was not authorized.
 * `500 Internal Server Error`: Indicates that an internal server error occurred. A message in Problem Details format provides more details.
-* `503 Service Unavailable`: Indicates that the server is busy with another response and cannot service this request in a timely manner. This is only like to occur when synchronous requests are made. A message in Problem Details format provides more details.
+* `503 Service Unavailable`: Indicates that the server is busy with another response and cannot service this request in a timely manner. This is only likely to occur when synchronous requests are made. A message in Problem Details format provides more details.
  
 ## Cache Lifetime Adjustment {#cache-adjustment}
  
