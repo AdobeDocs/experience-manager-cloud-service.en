@@ -190,7 +190,7 @@ The validation tool is available in the SDK at `bin/validator` as a Mac OS, Linu
 
 It is invoked as: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-The tool validates the Apache and dispatcher configuration. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only whitelisted directives are used. The directives allowed in Apache configuration files can be listed by running the validator's whitelist command:
+The tool validates the Apache and dispatcher configuration. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only allowlisted directives are used. The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
 
 ```
 
@@ -230,9 +230,9 @@ The table below shows the supported apache modules:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing "validator whitelist" in the SDK, as described in Dispatcher Tools documentation.
+Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing "validator whitelist" in the SDK, as described above.
 
-The whitelist contains a list of Apache directives that are permitted in a customer configuration. If a directive is not whitelisted,the tool logs an error and returns a non-zero exit code. If no whitelist is given on the command line (which is the way it should be invoked), the tool uses a default whitelist that Cloud Manager will use for validation before deploying to Cloud environments.
+The allowlist contains a list of Apache directives that are permitted in a customer configuration. If a directive is not allowlisted, the tool logs an error and returns a non-zero exit code. If no allowlist is given on the command line (which is the way it should be invoked), the tool uses a default allowlist that Cloud Manager will use for validation before deploying to Cloud environments.
 
  Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
 
@@ -252,7 +252,7 @@ Cloud manager validator 1.0.4
 
 ```
 
-Note that the validation tool reports only the prohibited use of Apache directives that have not been whitelisted. It does not report syntactical or semantical problems with your Apache configuration, as this information is only available to Apache modules in a running environment.
+Note that the validation tool reports only the prohibited use of Apache directives that have not been allowlisted. It does not report syntactical or semantical problems with your Apache configuration, as this information is only available to Apache modules in a running environment.
 
 When no validation failures are reported, your configuration is ready for deployment.
 
@@ -550,7 +550,7 @@ forget to adapt the `Include` statements referring to that file in the virtual h
 If the folder however contains multiple, virtual host specific files, their contents should be
 copied to the `Include` statement referring to them in the virtual host files.
 
-### Remove whitelists
+### Remove allowlists
 
 Remove the folder `conf.d/whitelists` and remove `Include` statements in the virtual host files referring to
 some file in that subfolder.
@@ -573,7 +573,7 @@ $ validator httpd .
 If you see errors about missing include files, check whether you correctly renamed those
 files.
 
-If you see Apache directives that are not whitelisted, remove them.
+If you see Apache directives that are not allowlisted, remove them.
 
 ### Get rid of all non-publish farms
 
