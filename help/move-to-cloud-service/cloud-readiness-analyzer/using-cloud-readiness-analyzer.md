@@ -7,18 +7,18 @@ description: Using Cloud Readiness Analyzer
 
 ## Important Considerations for Using Cloud Readiness Analyzer {#imp-considerations}
 
-Follow the section below to understand the important considerations while running the Cloud Readiness Analyzer (CRA):
+Follow the section below to understand the important considerations for running the Cloud Readiness Analyzer (CRA):
  
 * The CRA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). The version of Pattern Detector used by CRA is included in the CRA installation package.
  
-* The CRA may only be run by the **admin** user or a user in the **Administrators**.
+* The CRA may only be run by the **admin** user or a user in the **Administrators** group.
  
 * CRA is supported on AEM instances with version 6.1 and above.
  
 * CRA can run on any environment, but it is preferred to have it run on a *Stage* environment.
  
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended to run CRA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
+   >In order to avoid an impact on business critical instances, it is recommended that you run CRA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
  
 * The generation of CRA report contents can take a significant amount of time, from several minutes to a few hours. The amount of time required is highly dependent on the size and nature of the AEM repository content, the AEM version, and other factors.
  
@@ -48,7 +48,7 @@ Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV). Click on **CSV** to download the full CRA report in comma-separated values (CSV) format, as shown in the figure below.
+1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -70,7 +70,7 @@ When the Cloud Readiness Analyzer tool is run in the AEM instance, the report is
 
 The format of the report is:
  
-* **Report Overview**: Information about the report itself and includes the following information:
+* **Report Overview**: Information about the report itself that includes the following information:
   * **Report Time**: When the report contents were generated and first made available.
   * **Expiration Time**: When the report contents cache will expire.
   * **Generation Time Period**: The time spent by the report contents generation process.
@@ -127,7 +127,7 @@ The HTTP interface may be used in a variety of methods.
  
 One simple way is to open a browser tab in the same browser in which you have already signed in to AEM as an administrator. You can enter the URL in the browser tab and have the results displayed or downloaded by the browser.
  
-You may also use a command-line tool such as `curl` or `wget` as well as any HTTP client application. When not using an browser tab with an authenticated session, you must supply an administrative user name and password as part of the comment. 
+You may also use a command-line tool such as `curl` or `wget` as well as any HTTP client application. When not using a browser tab with an authenticated session, you must supply an administrative user name and password as part of the comment. 
 
 The following is an example of how this can be done:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
@@ -169,7 +169,7 @@ The default CRA cache lifetime is 24 hours. With the option for refreshing a rep
 The cache lifetime value is stored as the `maxCacheAge` property on the following repository node:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
  
-The value of this property is the cache lifetime in seconds. An administrator may adjust the cache lifetime using CRXDE Lite.
+The value of this property is the cache lifetime in seconds. An administrator may adjust the cache lifetime using CRX/DE Lite.
 
 
 
