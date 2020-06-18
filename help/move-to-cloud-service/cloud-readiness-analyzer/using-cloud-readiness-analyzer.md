@@ -29,7 +29,7 @@ Follow the section below to understand the important considerations for running 
 The Cloud Readiness Analyzer can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
->Download the Cloud Readiness Analyzer from the Software Distribution portal.
+>Download the Cloud Readiness Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
 ## Viewing the Cloud Readiness Analyzer Report {#viewing-report}
 
