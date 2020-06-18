@@ -26,7 +26,7 @@ Follow the section below to understand the important considerations while runnin
 The Content Transfer Tool can be downloaded as a zip file (Content Transfer Tool v1.0.0) from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
->Download the Content Transfer Tool, from [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
 ## Running the Content Transfer Tool {#running-tool}
 
