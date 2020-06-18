@@ -143,7 +143,7 @@ When Cloud Manager deploys the application, it executes these statements, indepe
 
 To create repoinit statements, follow the below procedure:
 
-1. Add OSGi configuration for PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project
+1. Add OSGi configuration for factory PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project. Use a descriptive name for the configuration like **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
 1. Add repoinit statements to the script property of the config. The syntax and options are documented in [Sling documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html). Note that there should be explicit creation of a parent folder before their child folders. For example, an explicit creation of `/content` before `/content/myfolder`, before `/content/myfolder/mysubfolder`. For ACLs being set on low level structures it is recommended to set those on a higher level and work with a `rep:glob` restriction.  For example `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validate on the local dev environment at runtime.
 
