@@ -30,6 +30,8 @@ The Content Transfer Tool can be downloaded as a zip file (Content Transfer Tool
 
 ## Running the Content Transfer Tool {#running-tool}
 
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 Follow this section to learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish):
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Transfer**.

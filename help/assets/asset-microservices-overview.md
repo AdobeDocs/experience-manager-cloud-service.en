@@ -6,11 +6,6 @@ contentOwner: AG
 
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
 
-<!--
-First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
-TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
--->
-
 Adobe Experience Manager as a Cloud Service provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
 
 * Scalable architecture that allows for seamless processing for resource-intensive operations.
