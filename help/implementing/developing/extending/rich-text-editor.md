@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. To know how to use RTE features for authoring, see [Use Rich Text Editor for authoring](rich-text-editor.md). See how authors [use RTE for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) web content.
+The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. See how authors [use RTE for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) web content.
 
 The RTE concepts and steps required to configure it are listed below.
 
