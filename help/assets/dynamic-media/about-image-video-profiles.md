@@ -1,23 +1,24 @@
 ---
-title: Profiles for Processing Metadata, Images, and Videos
-description: A profile a set of rules around the options to be applied to assets uploaded to a folder. Specify what metadata profile and video encoding profile to apply to video assets that you upload. For image assets, you can also specify what imaging profile to apply to image assets to have them properly cropped.
+title: About Dynamic Media Image Profiles and Video Profiles
+description: An Image Profile or a Video Profile is a recipe for what options to apply to assets that you upload to a folder. For example, you can specify what video encoding to apply to Dynamic Media video assets that you upload. Or, what Image Profile to apply to Dynamic Media image assets to have them properly cropped.
 ---
 
-# Profiles for processing metadata, images, and videos{#profiles-for-processing-metadata-images-and-videos}
+# About Dynamic Media Image Profiles and Video Profiles{#about-dm-image-video-profiles}
 
-A profile is a recipe for what options to apply to assets that get uploaded to a folder. For example, you can specify what metadata profile and video encoding profile to apply to video assets that you upload. Or, what imaging profile to apply to image assets to have them properly cropped.
+An Image Profile or Video Profile is a recipe for what options to apply to assets that you upload to a folder. For example, you can specify what video encoding to apply to Dynamic Media video assets that you upload. Or, what Image Profile to apply to Dynamic Media image assets to have them properly cropped.
 
-Those rules can include adding metadata, smart cropping of images, or establishing video encoding profiles. In AEM, you can create three types of profiles, which are covered in detail at the following links:
+In Dynamic Media, you can create two types of profiles, which are covered in detail at the following links:
 
-* [Metadata profiles](/help/assets/metadata-profiles.md)
-* [Image profiles](/help/assets/dynamic-media/image-profiles.md)
-* [Video profiles](/help/assets/dynamic-media/video-profiles.md)
+* [Dynamic Media Image profiles](/help/assets/dynamic-media/image-profiles.md)
+* [Dynamic Media Video profiles](/help/assets/dynamic-media/video-profiles.md)
 
-You must have Administrator rights to create, edit, and delete metadata, image, or video profiles.
+See also [Metadata profiles](/help/assets/metadata-profiles.md).
 
-After you create your metadata, image, or video profile, you assign it to one or more folders that you use as the destination for newly uploaded assets.
+You must have Administrator rights to create, edit, and delete Dynamic Media Image Profiles or Dynamic Media Video Profiles.
 
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+After you create your Image Profile or Video Profile, you assign it to one or more folders that you use as the destination for newly uploaded Dynamic Media assets.
+
+See also [Best Practices for Organizing your Digital Assets for using Image Profiles or Video Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
 >[!NOTE]
 >
@@ -25,13 +26,13 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 >
 >The same is true even when you move assets between two folders that have the same profile assigned to it.
 
-## Reprocessing assets in a folder {#reprocessing-assets}
+## Reprocessing Dynamic Media assets in a folder {#reprocessing-assets}
 
-You can reprocess assets in a folder that already has an existing processing profile that you later changed. 
+You can reprocess assets in a folder that already has an existing Dynamic Media Image Profile or a Dynamic Media Video Profile that you later changed. 
 
-For example, suppose you created an Image profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image profile applied to the assets. However, later you decide to add a new smart crop ratio to the profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow. 
+For example, suppose you created a Dynamic Media Image Profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image Profile applied to the assets. However, later you decide to add a new smart crop ratio to the Image Profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow. 
 
-You can run the reprocess workflow on an asset for which processing failed the first time. As such, even if you have not edited a processing profile or applied a processing profile, you can still run the reprocess workflow on a folder of assets any time.
+You can run the reprocess workflow on an asset for which processing failed the first time. As such, even if you have not edited an Image Profile or Video profile, or you have already applied an Image Profile or a Video Profile, you can still run the reprocess workflow on a folder of assets any time.
 
 You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped together in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on AEM. If the batch size is very large, you may experience a delay in processing. Or, if the batch size is too small, it can cause too many round trips to the Dynamic Media server.
 
@@ -48,10 +49,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**To reprocess assets in a folder**:
-1. In AEM, from the Assets page, navigate to a folder of assets that has a processing profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
+**To reprocess Dynamic Media assets in a folder**:
+1. In AEM, from the Assets page, navigate to a folder of Dynamic Media assets that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
 
-    Folders that have a processing profile already assigned to it are indicated by the display of the profile's name directly below the folder name in Card View. 
+    Folders that have an Image Profile or a Video Profile already assigned to it are indicated by the display of the profile's name directly below the folder name in Card View. 
 
 1. Select a folder.
 
