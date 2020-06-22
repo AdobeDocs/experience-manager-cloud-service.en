@@ -316,7 +316,7 @@ You can check the logs for detailed information on the actions performed by the 
 
 For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
-1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
 1. Click **[!UICONTROL Logs]** to view the distribution logs. You can see the processing and error logs here.
 
