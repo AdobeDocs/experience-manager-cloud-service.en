@@ -334,11 +334,10 @@ The following status codes can be seen in the relevant circumstances:
    The following lists common scenarios when this error status is returned, together with the error message (monospace) generated:
 
     * Parent folder does not exist (when creating a content fragment via `POST`)
-    * No content fragment model is supplied (cq:model is missing), cannot be read (due to an invalid path or a permission problem) or there is no valid fragment model/template:
+    * No content fragment model is supplied (cq:model is missing), cannot be read (due to an invalid path or a permission problem) or there is no valid fragment model:
 
         * `No content fragment model specified`
         * `Cannot create a resource of given model '/foo/bar/qux'`
-        * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
 
     * The content fragment could not be created (potentially a permission problem):
 
