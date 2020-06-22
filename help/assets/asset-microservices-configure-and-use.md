@@ -130,20 +130,18 @@ Users can check that the processing actually took place by opening a newly-uploa
 
 For situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
 
-Post-processing workflows, if configured, are automatically executed by AEM after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them.
+Post-processing workflows, if configured, are automatically executed by AEM after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them. The examples include:
 
-Examples include:
-
-* custom workflow steps for processing assets, for example, Java code to generate renditions from proprietary file formats.
-* integrations to add metadata or properties to assets from external systems, for example, product or process information.
-* additional processing done by external services
+* Custom workflow steps to process assets.
+* Integrations to add metadata or properties to assets from external systems, for example, product or process information.
+* Additional processing done by external services.
 
 Adding a post-processing workflow configuration to Experience Manager is comprised of the following steps:
 
-* Creating one or more workflow models. We'll call them "post-processing workflow models," but they are regular AEM workflow models.
-* Adding specific workflow steps to these models. These steps will be execution on the assets based on workflow model configuration.
-* The last step of such a model must be the `DAM Update Asset Workflow Completed Process` step. This is required to ensure that AEM knows the processing has ended and the asset can be marked as processed ("New")
-* Creating a configuration for the Custom Workflow Runner Service, which allows for configuring execution of a post-processing workflow model either by path (folder location) or regular expression
+* Create one or more workflow models. The documents mention it as *post-processing workflow models*, but those are regular Experience Manager workflow models.
+* Add specific workflow steps to these models. The steps are executed on the assets based on a workflow model configuration.
+* Add [!UICONTROL DAM Update Asset Workflow Completed Process] step at the end. Adding this step ensures that Experience Manager knows when the processing ends and the asset can be marked as processed, that is *New* is displayed on the asset.
+* Create a configuration for the Custom Workflow Runner Service that allows to configure execution of a post-processing workflow model either by a path (folder location) or by a regular expression.
 
 ### Create post-processing workflow models {#create-post-processing-workflow-models}
 
