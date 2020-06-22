@@ -8,12 +8,6 @@ contentOwner: AG
 
 A Metadata Profile lets you apply default metadata to assets within a folder. Create a Metadata Profile and apply it to a folder. Any asset that you subsequently upload to the folder inherits the default metadata that you configured in the Metadata Profile.
 
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
-
 ## Add a metadata profile {#adding-a-metadata-profile}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**, and then tap  **[!UICONTROL Create]**.
