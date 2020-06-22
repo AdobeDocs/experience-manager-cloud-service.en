@@ -9,7 +9,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 
 Content fragments contain structured content:
 
-  * They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+* They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
 
 Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
 
