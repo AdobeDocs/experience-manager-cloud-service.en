@@ -7,6 +7,10 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.
 
+Content fragments contain structured content:
+
+  * They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+
 Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
 
 * enables you to use the component to manage which elements of a fragment to deliver
@@ -52,7 +56,7 @@ They provide the delivery of content to channels that are not traditional AEM we
 * Native Mobile Applications
 * other channels and touch-points external to AEM
 
-Delivery is made in JSON format.
+Delivery is made in JSON format using the JSON Exporter.
 
 AEM Content Fragments can be used to describe and manage structured content. Structured content is defined in models that can contain a variety of content types; including text, numerical data, boolean, date and time, and more.
 
@@ -68,12 +72,6 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
->[!CAUTION]
->
->Content fragments are not available in the classic UI.
->
->The Content Fragment component can be seen in the classic UI sidekick, but further functionality is not available.
-
 >[!NOTE]
 >
 >AEM also supports the translation of fragment content. See Creating Translation Projects for Content Fragments for further information.
@@ -83,24 +81,6 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## Types of Content Fragment {#types-of-content-fragment}
-
-Content fragments can be either:
-
-* Simple fragments
-
-  * These have no predefined structure. 
-
-  * They contain only text, and images.
-
-  * These are based on the **Simple Fragment** template.
-
-* Fragments that contain structured content
-
-  * These are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
-
-  * These can also be used to realize Content Services using the JSON Exporter.
 
 ## Content Type {#content-type}
 
@@ -161,18 +141,14 @@ The content fragment assets are made up of the following parts (either directly 
 * **Fragment Elements**
 
   * Elements correlate to the data fields holding content.
-  * For fragments with structured content, you use a content model to create the content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
-  * For simple fragments:
-
-    * The content is held in one (or more) multi-line text field(s), or element(s).
-    * The elements are defined in the **Simple Fragment** template. 
+  * You use a content model to create the content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
 
 * **Fragment Paragraphs**
 
   * Blocks of text, that are:
 
     * separated by vertical spaces (carriage return)
-    * in multi-line text elements; in either simple or structured fragments
+    * in multi-line text elements
 
   * In the [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) and [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) modes, a paragraph can be formatted as a header, in which case it and the following paragraph belong together as one unit.
 
@@ -265,11 +241,6 @@ To create, edit and use content fragments you also need:
   * Required to [create a structured fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
   * Content models definitions require a title and one data element; everything else is optional. The model defines a minimal scope of the fragment and default content if applicable. Authors cannot change the defined structure when authoring fragment content.
-
-* **Fragment Template**
-
-  * The **Simple Fragment** template is required to [create a simple fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-  * Defines the basics properties of a simple fragment (title, number of text elements, tag definitions).
 
 * **Content Fragment Component**
 

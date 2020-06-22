@@ -44,12 +44,6 @@ When you open your content fragment for editing, the **Variations** tab will be 
 
 For example:
 
-* Editing a simple fragment
-
-  A simple fragment consists of one multi-line text field (visual assets can be added from the full-screen editor).
-
-  ![simple fragment](assets/cfm-variations-01.png)
-
 * Editing a fragment with structured content
 
   A structured fragment contains various fields, of various data-types, that were defined in the content model. For any multi-line fields the [full-screen editor](#full-screen-editor) is available.
