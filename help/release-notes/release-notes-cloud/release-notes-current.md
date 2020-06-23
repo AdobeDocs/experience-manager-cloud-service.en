@@ -102,16 +102,16 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
 
-With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. This is a more intuitive experience.
-Train Enhanced Smart Tags for more a intuitive training for Smart Tags. See [how to add smart tags to assets](/help/assets/smart-tags.md) and [configure smart tagging](/help/assets/smart-tags-configuration.md).
+With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. The experience is a more intuitive now.
+Train Enhanced Smart Tags for more an intuitive training for Smart Tags. See [how to add smart tags to assets](/help/assets/smart-tags.md) and [configure smart tagging](/help/assets/smart-tags-configuration.md).
 
-**Support for ingestion, preview and delivery of 3D content**
+**Support for ingestion, preview, and delivery of 3D content**
 
-Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and leverage a variety of core 3D files, including .obj, .stl, .gltf, and .glb files. With the addition of [!DNL Dynamic Media], 3D experiences can be configured and delivered via agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR). See [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and use various core 3D files, including OBJ, STL, GLTF, and GLB files. With the addition of [!DNL Dynamic Media], you can configure and deliver 3D experiences using agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR). See [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link for Adobe XD documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+With the latest release, [!DNL Experience Manager Assets] supports a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link for Adobe XD documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
 With this release, creative users and designers can now work with assets managed in [!DNL AEM Assets] using [!DNL Adobe Asset Link] in a range of Creative Cloud desktop apps, including [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator], and [!DNL InDesign].
 
@@ -121,17 +121,17 @@ With this release, creative users and designers can now work with assets managed
 
 The user interface elements are screen reader friendly, are accessible using a keyboard, and have better contrast. The following is a detailed list of enhancements:
 
-* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress indicators. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
+* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress bars on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress bar. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
 
 * When adding tags in [!UICONTROL Properties] page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
 
 * In the link sharing dialog, when navigating in browse mode, the screen reader,
 
-  * narrates the table information as soon as the dialog is loaded.
-  * is unable to navigate to all the listed auto-suggestions.
-  * does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
+  * Narrates the table information immediately when the dialog is loaded.
+  * Is unable to navigate to all the listed auto-suggestions.
+  * Does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
 
-* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible and screen reader friendly. The options can be used using a keyboard. (CQ-4272953) Users can drag the components using the keyboard in NVDA browse mode. (CQ-4296326)
+* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) Users can drag the components using the keyboard in NVDA browse mode. (CQ-4296326)
 
 * On Assets user interface, the view settings are not accessible by keyboard. (CQ-4289038)
 
@@ -139,17 +139,17 @@ The user interface elements are screen reader friendly, are accessible using a k
 
 * Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in the [!UICONTROL Properties] of an asset and in card view is changed for appropriate contrast. (CQ-4295106)
 
-* The list box popup menu of combo box (in various fields on different pages) now displays entries as a list of options that can be announced by screen readers. (CQ-4294017)
+* The screen readers can now read the entries of the list box pop-up menu of combo box (in various fields on different pages) as a list of options. (CQ-4294017)
 
 * To apply a workflow to an asset, the chevron arrow in the [!UICONTROL Timeline] can be accessed using a keyboard. (CQ-4289268)
 
-* Users can remove selected tags in the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page using `x` symbol. Its purpose is now announced by screen readers along with the number of selected tag (CQ-4273033).
+* Users can remove selected tags in the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page using `x` symbol. The screen readers now announce the purpose and the number of selected tags (CQ-4273033).
 
 * The read-only form fields can be focused upon using a keyboard. For example, the disabled fields on [!UICONTROL Basic] tab on an asset's [!UICONTROL Properties] page. (CQ-4273031)
 
 * Access the options to filter assets in the left sidebar using a keyboard now. (CQ-4273018)
 
-* The purpose of various combo box elements such as Path field and the option to open Selection dialog in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page are now correctly announced by screen readers. (CQ-4273016)
+* The screen reader announces the purpose of various combo box elements such as Path field and the option to open Selection dialog in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page. (CQ-4273016)
 
 * The volume controls for videos are accessible using a keyboard. (CQ-4272696)
 
@@ -157,7 +157,7 @@ The user interface elements are screen reader friendly, are accessible using a k
 
 * Screen reader users now get to know when the rows in list view are selectable using a keyboard. The information is announced when pointer is hovered on the rows. (CQ-4271824)
 
-* Some form fields, such as the username and password fields on the login page, rely on placeholder values to give an accessible label. (CQ-4271716)
+* Some form fields, such as the user name and password fields on the login page, rely on placeholder values to give an accessible label. (CQ-4271716)
 
 * Interactive user interface elements, such as links and options such as on header and zoom options of assets page or folder navigation can now be accessed using a keyboard. (CQ-4271412)
 
@@ -165,7 +165,7 @@ The user interface elements are screen reader friendly, are accessible using a k
 
 **Other enhancements**
 
-The release provides the following additional enhancements:
+The release provides the following other enhancements:
 
 * Ability to reprocess assets with asset processing profiles, giving users full control of the process (run full asset processing, just apply specific processing profile, and decide if post-processing workflow should be run).
 * Search queries return results faster now when the underlying cluster instance has been restarted behind the scenes (the initial search run could last longer in such a case before).
@@ -184,7 +184,7 @@ In addition to the above new features, the current release provides the followin
 
 * For MP3 music files, the play button displayed on thumbnail in the DAM preview does not work. (CQ-4294731)
 * Hovering pointer on card view, makes the screen scroll as a result of (automatic) focus on the quick actions available in the card. (GRANITE-26895)
-* Displaying too many images after scrolling a large number of search results leads to browser crash. (GRANITE-26432)
+* Displaying too many images after scrolling many search results leads to browser crash. (GRANITE-26432)
 * When downloading an asset, if email option is selected and even if a valid email ID is provided, the download option is not available. (CQ-4296535)
 * Custom filters saved as smart collections are not applied properly to assets. (CQ-4294942)
 * Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
