@@ -33,6 +33,10 @@ The properties are distributed across several tabs.
 
   * Indicates whether the page is shown or hidden in the page navigation of the resulting site.
 
+* **HTML ID**
+
+  * HTML ID to apply to the component.
+
 * **Page Title**
 
   * A title to be used on the page. Typically used by title components. If empty the **Title** will be used.
@@ -90,6 +94,10 @@ The properties are distributed across several tabs.
 
   * Indicate the page to which this page should automatically redirect.
 
+* **Design**
+
+  * Indicates whether the page is shown or hidden in the page navigation of the resulting site.
+
 * **Alias**
 
   * Specify an alias to be used with this page.
@@ -106,9 +114,11 @@ The properties are distributed across several tabs.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
+<!--
 * **Inherited from &lt;*path*&gt;**
 
   * Indicates whether the page is inherited. and where from.
+-->
 
 * **Cloud Configuration**
 
@@ -167,7 +177,7 @@ Shows the page thumbnail image. You can:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **Cloud Service Configurations**
 
   * Define properties for cloud services. 
   
