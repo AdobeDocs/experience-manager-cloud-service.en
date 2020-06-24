@@ -17,4 +17,4 @@ user-guide-title: Adobe Experience Manager as a Cloud Service Help
 + [Implementing Applications for AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/home.html)
 + [Implementing Connectors for AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/connectors/home.html)
 + [Operations and Maintenance on AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/operations/home.html)
-+ [Commerce Integration Framework on Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
++ [Commerce Integration Framework on AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
