@@ -23,9 +23,11 @@ There is no additional installation required to use 3D assets in Dynamic Media.
 
 <!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
-## Supported 3D file formats in Dynamic Media {#supported-three-d-file-formats-in-dm} 
+## 3D formats supported in Dynamic Media {#supported-three-d-file-formats-in-dm} 
 
-Dynamic Media supports the following 3D file formats: 
+Dynamic Media supports the following 3D file formats.
+
+See also [3D formats supported](/help/assets/file-format-support.md#supported-3d-formats)
 
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
