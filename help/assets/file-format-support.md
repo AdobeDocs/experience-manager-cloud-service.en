@@ -80,6 +80,21 @@ The following sub-types of raster image file formats that are not supported in [
 * TIFF files that have floating point data.
 * TIFF files that have Lab color space.
 
+## Supported 3D formats {#support-3d-formats}
+
+The following list of 3D formats are supported.
+
+See [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+
+| Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; | | |
+| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
+| gLTF | &#10003; | &#10003; | &#10003; | | &#10003; | | &#10003; | |
+| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
+| STL | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
+| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; | | | &#10003; |
+
 ## [!DNL Camera RAW] formats {#camera-raw-formats}
 
 | File format | Thumbnail generation | Metadata extraction | Width/Height |
