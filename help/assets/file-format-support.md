@@ -80,7 +80,7 @@ The following sub-types of raster image file formats that are not supported in [
 * TIFF files that have floating point data.
 * TIFF files that have Lab color space.
 
-## 3D formats supported {#support-3d-formats}
+## 3D formats {#support-3d-formats}
 
 The following list of 3D formats are supported.
 
