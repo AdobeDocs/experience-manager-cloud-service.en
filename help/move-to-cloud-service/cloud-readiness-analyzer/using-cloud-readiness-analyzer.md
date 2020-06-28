@@ -11,9 +11,12 @@ Follow the section below to understand the important considerations for running 
  
 * The CRA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). The version of Pattern Detector used by CRA is included in the CRA installation package.
  
-* The CRA may only be run by the **admin** user or a user in the **Administrators** group.
+* CRA may only be run by the **admin** user or a user in the **administrators** group.
  
 * CRA is supported on AEM instances with version 6.1 and above.
+ 
+   >[!NOTE]
+   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing CRA on AEM 6.1.
  
 * CRA can run on any environment, but it is preferred to have it run on a *Stage* environment.
  
@@ -26,7 +29,7 @@ Follow the section below to understand the important considerations for running 
 
 ## Availability {#availability}
 
-The Cloud Readiness Analyzer can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Cloud Readiness Analyzer can be downloaded as a zip file from the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
 
 >[!NOTE]
 >Download the Cloud Readiness Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
@@ -162,7 +165,9 @@ The following response values are possible:
 * `500 Internal Server Error`: Indicates that an internal server error occurred. A message in Problem Details format provides more details.
 * `503 Service Unavailable`: Indicates that the server is busy with another response and cannot service this request in a timely manner. This is only likely to occur when synchronous requests are made. A message in Problem Details format provides more details.
  
-## Cache Lifetime Adjustment {#cache-adjustment}
+## Administrator Information
+
+### Cache Lifetime Adjustment {#cache-adjustment}
  
 The default CRA cache lifetime is 24 hours. With the option for refreshing a report, and regenerating the cache, in both the AEM instance and the HTTP interface, this default value is likely to be appropriate for most uses of the CRA. If the report generation time is particularly long for your AEM instance, you may wish to adjust the cache lifetime in order to minimize the regeneration of the report.
  
@@ -171,7 +176,12 @@ The cache lifetime value is stored as the `maxCacheAge` property on the followin
  
 The value of this property is the cache lifetime in seconds. An administrator may adjust the cache lifetime using CRX/DE Lite.
 
+### Installing on AEM 6.1 {#installing-on-aem61}
 
+CRA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. This account is available on AEM 6.2 and later. On AEM 6.1, this account must be created *prior to* installation of CRA by taking the following steps:
 
- 
+1. Follow the instructions at [Creating a new service user](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) to create a user. Set the UserID to `repository-reader-service` and leave the Intermediate Path empty and then click the green checkmark.
 
+2. Follow the instructions at [Managing Users and Groups](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), specifically the instructions for Adding Users to a Group to add the `repository-reader-service` user to the `administrators` group.
+
+3. Install the CRA package via Package Manager on your source AEM instance. (This will add the necessary configuration amendment to the ServiceUserMapper configuration for the `repository-reader-service` system service user.)
