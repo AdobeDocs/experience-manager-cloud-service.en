@@ -260,3 +260,15 @@ Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS s
 Assets offering includes next-generation asset processing in the cloud and high performance asset ingestion and search.
 
 For details, see [overview and introduction to Assets as a Cloud Service](/help/assets/overview.md).
+
+## Getting to Know Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
+
+For further information see:
+
+* [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+* [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
+* [Notable changes to AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Introducing AEM Assets as a Cloud Service](/help/assets/overview.md)
+* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
