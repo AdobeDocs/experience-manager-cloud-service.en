@@ -8,9 +8,15 @@ description: Notable Changes to AEM Sites in AEM Cloud Service
 AEM Sites as a Cloud Service provides experience management capabilities as part of the cloud-native AEM as a Cloud Service platform. In addition to core benefits of AEM as a Cloud Service, such as cloud-native scalability, uptime, and always being up-to-date, AEM Sites as a Cloud Service also provides a number of Sites-specific changes and additions. 
 
 >[!NOTE]
->This document highlights the notable changes to AEM Sites. For changes general to AEM in the Cloud see:
+>This document highlights the notable changes to AEM Sites. For changes general to AEM as a Cloud Service, and other modules, see:
 >
->* [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
+>* [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* An [Overview of AEM as a Cloud Service - What is New and What is Different](/help/overview/what-is-new-and-different.md)
+>* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+>* [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
+>* [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Introducing AEM Assets as a Cloud Service](/help/assets/overview.md)
+>* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 
 Changes and additions in AEM Sites as a Cloud Service are as follows:
 
