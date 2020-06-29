@@ -18,15 +18,21 @@ AEM Cloud Service brings many new features and possibilities for managing your A
 
 The main differences are found in the following areas:
 
-- [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}](#notable-changes-to-adobe-experience-manager-aem-as-a-cloud-service-notable-changes-aem-cloud)
-  - [/apps and /libs are immutable at runtime {#apps-libs-immutable}](#apps-and-libs-are-immutable-at-runtime-apps-libs-immutable)
-  - [OSGi bundles and settings must be repository-based {#osgi}](#osgi-bundles-and-settings-must-be-repository-based-osgi)
-  - [Changes to publish repository are not allowed {#changes-to-publish-repo}](#changes-to-publish-repository-are-not-allowed-changes-to-publish-repo)
-  - [Custom runmodes are not allowed {#custom-runmodes}](#custom-runmodes-are-not-allowed-custom-runmodes)
-  - [Removal of Replication Agents {#replication-agents}](#removal-of-replication-agents-replication-agents)
-  - [Removal of Classic UI {#classic-ui}](#removal-of-classic-ui-classic-ui)
-  - [Publish-Side Delivery {#publish-side-delivery}](#publish-side-delivery-publish-side-delivery)
-  - [Asset Handling and Delivery {#asset-handling}](#asset-handling-and-delivery-asset-handling)
+* [/apps and /libs are immutable at runtime](#apps-libs-immutable)
+
+* [OSGi bundles and settings must be repository-based](#osgi)
+
+* [Changes to publish repository are not allowed](#changes-to-publish-repo)
+
+* [Custom runmodes are not allowed](#custom-runmodes)
+
+* [Removal of Replication Agents](#replication-agents)
+
+* [Removal of Classic UI](#classic-ui)
+
+* [Publish-Side Delivery](#publish-side-delivery)
+
+* [Asset Handling and Delivery](#asset-handling)
 
 ## /apps and /libs are immutable at runtime {#apps-libs-immutable}
 
