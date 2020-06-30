@@ -27,6 +27,7 @@ This page lists the self-help resources about operations and maintenance of Expe
 |[Assets User Guide](/help/assets/home.md)|Understand how to administer Experience Manager Assets as a Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
+|[Commerce User Guide](/help/security/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
 
 ## Other Experience Manager Resources {#other-resources}
 

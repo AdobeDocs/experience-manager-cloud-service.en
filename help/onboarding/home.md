@@ -31,6 +31,7 @@ This section covers the key articles focussed on:
 |[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
+|[Commerce User Guide](/help/security/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
 
 ## Other Experience Manager Resources {#other-resources}
 
