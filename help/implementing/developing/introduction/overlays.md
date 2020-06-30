@@ -21,7 +21,7 @@ In a standard instance the predefined functionality is held under `/libs` and it
 
         * Reconstruct the appropriate `/libs` structure under `/apps`.
 
-          This does not require a 1:1 copy, the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) is used to cross-reference the original definitions that are required. The Sling Resource Merger provides services to access and merge resources by means of diff (differencing) mechanisms.
+          This does not require a 1:1 copy, as the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) is used to cross-reference the original definitions that are required. The Sling Resource Merger provides services to access and merge resources by means of diff (differencing) mechanisms.
 
         * Make any changes under `/apps`.
 
