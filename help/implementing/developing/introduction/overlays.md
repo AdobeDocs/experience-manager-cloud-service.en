@@ -34,7 +34,7 @@ In a standard instance the predefined functionality is held under `/libs` and it
 
 >[!CAUTION]
 >
->The [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) and the related methods can only be used with [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). This means that creating an overlay with a skeleton structure is only appropriate for the standard, touch-enabled UI.
+>The [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) and the related methods can only be used with [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). This means that creating an overlay with a skeleton structure is only appropriate for the standard, touch-enabled UI.
 
 Overlays are the recommended method for many changes, such as configuring your consoles or creating your selection category to the asset browser in the side panel (used when authoring pages). They are required as:
 
