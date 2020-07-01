@@ -13,7 +13,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
 Overlay is a term that can be used in many contexts. In this context (extending AEM as a Cloud Service) an overlay means taking the predefined functionality and imposing your own definitions over that (to customize the standard functionality).
 
-In a standard instance the predefined functionality is held under `/libs` and it is recommended practice to define your overlay (customizations) under the `/apps` branch. AEM uses a search path to find a resource, searching first the `/apps` branch and then the `/libs` branch (the [search path can be configured](#configuring-the-search-paths)). This mechanism means that your overlay (and the customizations defined there) will have priority.
+In a standard instance the predefined functionality is held under `/libs` and it is recommended practice to define your overlay (customizations) under the `/apps` branch (using a [search path](#search-paths) to resolve the resources). 
 
 * The touch-enabled UI uses [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)-related overlays:
 
@@ -43,38 +43,15 @@ Overlays are the recommended method for many changes, such as [configuring your 
 -->
 
 * You ***must not* make changes in the `/libs` branch**
-  Any changes you do make may be lost, because this branch is liable to changes whenever you:
-
-  * upgrade on your instance
-  * apply a hotfix
-  * install a feature pack
+  Any changes you do make may be lost, because this branch is liable to changes whenever upgrades are applied to your instance.
 
 * They concentrate your changes in one location; making it easier for you to track, migrate, backup and/or debug your changes as necessary.
 
-## Configuring the Search Paths {#configuring-the-search-paths}
+## Search Paths {#search-paths}
 
-For overlays the resource delivered is an aggregate of the resources and properties retrieved, depending on search paths that can be defined:
+AEM uses a search path to find a resource, searching (by default) first the `/apps` branch and then the `/libs` branch. This mechanism means that your overlay in `/apps` (and the customizations defined there) will have priority.
 
-* The resource **Resolver Search Path** as defined in the [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) for the **Apache Sling Resource Resolver Factory**.
-
-  * The top-down order of search paths indicates their respective priorities.
-  * In a standard installation the primary defaults are `/apps`, `/libs` - so the content of `/apps` has a higher priority than that of `/libs` (i.e. it *overlays* it).
-
-* Two service users need JCR:READ access to the location where the scripts are stored. Those users are: components-search-service (used by the com.day.cq.wcm.coreto access/cache components) and sling-scripting (used by org.apache.sling.servlets.resolver to find servlets).
-* The following configuration must also be configured according to where you put your scripts (in this example under /etc, /libs or /apps).
-
-  ```
-  PID = org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
-  resource.resolver.searchpath=["/etc","/apps","/libs"]
-  resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
-  ```
-
-* Finally the Servlet Resolver must also be configured (in this example to add /etc as well)
-
-  ```
-  PID = org.apache.sling.servlets.resolver.SlingServletResolver
-  servletresolver.paths=["/bin/","/libs/","/apps/","/etc/","/system/","/index.servlet","/login.servlet","/services/"]
-  ```
+For overlays the resource delivered is an aggregate of the resources and properties retrieved, depending on search paths defined in the OSGi configuration.
 
 <!--
 ## Example of Usage {#example-of-usage}

@@ -9,7 +9,7 @@ description: The Sling Resource Merger provides services to access and merge res
 
 The Sling Resource Merger provides services to access and merge resources. It provides diff (differencing) mechanisms for both:
 
-* **[Overlays](/help/implementing/developing/introduction/overlays.md)** of resources using the [configured search paths](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths).
+* **[Overlays](/help/implementing/developing/introduction/overlays.md)** of resources using the [search paths](/help/implementing/developing/introduction/overlays.md#search-paths).
 
 * **Overrides** of component dialogs for the touch-enabled UI (`cq:dialog`), using the resource type hierarchy (by means of the property `sling:resourceSuperType`).
 
@@ -23,9 +23,7 @@ With the Sling Resource Merger, the overlay/override resources and/or properties
 
 >[!CAUTION]
 >
->The Sling Resource Merger and related methods can only be used with [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). This also means that it is only appropriate for the standard, touch-enabled UI; in particular overrides defined in this manner are only applicable for the touch-enabled dialog of a component.
->
->Overlays/overrides for other areas (including other aspects of a touch-enabled component) involve copying the appropriate node and structure from the original to where the customization will be defined.
+>The Sling Resource Merger and related methods can only be used with the touch-enabled UI (which is the only UI available for AEM as a Cloud Service).
 
 ### Goals for AEM {#goals-for-aem}
 
@@ -36,24 +34,16 @@ The goals for using the Sling Resource Merger in AEM are to:
 
   When using the Sling Resource Merger it is not recommended to copy the entire structure from `/libs` as this would result in too much information being held in the customization (usually `/apps`). Duplicating information unnecessarily increases the chance of problems when the system in upgraded in any way.
 
->[!NOTE]
->
->Overrides are not dependent on the search paths, they use the property `sling:resourceSuperType` to make the connection.
->
->However, overrides are often defined under `/apps`, as best practice in AEM is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
-
 >[!CAUTION]
 >
 >You ***must*** not change anything in the `/libs` path.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>This is because the content of `/libs` may be overwritten any time upgrades are applied to your instance.
 >
->The recommended method for configuration and other changes is:
+>* Overlays are dependent on [search paths](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
->
->1. Make any changes within `/apps`
->
+>* Overrides are not dependent on the search paths, they use the property `sling:resourceSuperType` to make the connection.
+>  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 ### Properties {#properties}
 
