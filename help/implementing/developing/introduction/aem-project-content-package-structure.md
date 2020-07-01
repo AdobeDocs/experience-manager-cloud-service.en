@@ -52,13 +52,13 @@ The recommended application deployment structure is as follows:
 + The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
   + OSGi bundles
     + `/apps/my-app/install`
-  + OSGi configurations
+  + [OSGi configurations](/help/implementing/deploying/configuring-osgi.md)
     + `/apps/my-app/config`
-  + HTL scripts
+  + [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) scripts
     + `/apps/my-app/components`
   + JavaScript and CSS (via Client Libraries)
     + `/apps/my-app/clientlibs`
-  + Overlays of /libs
+  + [Overlays](/help/implementing/developing/introduction/overlays.md) of /libs
     + `/apps/cq`, `/apps/dam/`, etc.
   + Fallback context-aware configurations
     + `/apps/settings`
