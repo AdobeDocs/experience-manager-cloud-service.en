@@ -27,8 +27,6 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. At a high level on AEM as a Cloud Service, with the introduction of the [Blue-Green deployment model](#index-management-using-blue-green-deployments) two sets of indexes will exist: one set for the old version (blue), and one set for the new version (green).
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
-
 1. Customers can see whether the indexing job is complete on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
 1. Limitations: currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
@@ -154,7 +152,9 @@ If an index is to be removed in a later version of the application, you can defi
 
 To add an index named "/oak:index/acmeProduct-custom-1" to be used in a new version of the application and later, the index needs to be configured as follows:
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+This works by prepending a custom identifier to the index name, followed by a dot (**.**). The identifier needs to be between 1 to 4 characters in lenght.
 
 As above, this ensures the index is only used by the new version of the application.
 
