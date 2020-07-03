@@ -28,7 +28,7 @@ This section covers the key articles focussed on:
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
-|[Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service
+|[Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service|
 |[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.|
