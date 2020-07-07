@@ -29,7 +29,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 >[!WARNING]
 >
-> As in previous versions of AEM, `/libs` should not be modified. Only AEM product code may deploy to `/libs`.
+>As in previous versions of AEM, `/libs` should not be modified. Only AEM product code may deploy to `/libs`.
 
 ### Oak Indexes {#oak-indexes}
 
@@ -496,7 +496,8 @@ If multiple `/apps/*-packages` are used in the embeddeds targets, then they all 
 ### 3rd Party Maven Repositories {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for dependencies.
+>
+>Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for dependencies.
 
 In the reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
 

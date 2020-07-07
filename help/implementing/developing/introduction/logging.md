@@ -39,8 +39,9 @@ On Cloud environments, developers can download logs through Cloud Manager or use
 
 ### Standard Loggers and Writers {#standard-loggers-and-writers}
 
-> [!IMPORTANT] 
-> These can be customized if required, though the standard configuration is suitable for most installations. If, however, you need to customize the standard logging configurations, make sure you only do it on `dev` environments.
+>[!IMPORTANT] 
+>
+>These can be customized if required, though the standard configuration is suitable for most installations. If, however, you need to customize the standard logging configurations, make sure you only do it on `dev` environments.
 
 Certain Loggers and Writers are included in a standard AEM as a Cloud Service installation.
 
@@ -186,13 +187,13 @@ To change the log levels for Cloud environments, the Sling Logging OSGI configur
 
 >[!NOTE]
 >
-> In order to perform the configuration changes listed below, you need to create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>In order to perform the configuration changes listed below, you need to create them on a local development environment and then push them to an AEM as a Cloud Service instance. For more information on how to do this, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activating the DEBUG Log Level**
 
 >[!WARNING]
 >
-> Activating the DEBUG log level globally will generate a large amount of information which will be difficult to sift through. It is recommended you enable it only for the services that require debugging. For more information, see [Loggers and Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).
+>Activating the DEBUG log level globally will generate a large amount of information which will be difficult to sift through. It is recommended you enable it only for the services that require debugging. For more information, see [Loggers and Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).
 
 The default log level is INFO, that is, DEBUG messages are not logged.
 To activate DEBUG log level, set the

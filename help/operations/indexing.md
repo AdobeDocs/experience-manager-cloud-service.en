@@ -65,7 +65,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
-> There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. To work around this, please use version **1.0.4**.
+>There is a known issue with Jackrabbit Filevault Maven Package Plugin version **1.1.0** which does not allow you to add `oak:index` to modules of `<packageType>application</packageType>`. To work around this, please use version **1.0.4**.
 
 Index definitions are now marked as custom and versioned:
 
@@ -117,7 +117,7 @@ The following table shows 5 index definitions: index `cqPageLucene` is used in b
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` is needed for AEM as a Cloud Service to mark this as a replacement for an existing index.
+>`<indexName>-custom-<customerVersionNumber>` is needed for AEM as a Cloud Service to mark this as a replacement for an existing index.
 
 | Index | Out-of-the-box Index  | Use in Version 1  | Use in Version 2  |
 |---|---|---|---|

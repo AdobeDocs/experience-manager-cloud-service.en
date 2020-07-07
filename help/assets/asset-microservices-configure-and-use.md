@@ -31,7 +31,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of Experience Manager. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
+>The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of Experience Manager. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
 
 ## Get started with asset processing {#get-started}
 
@@ -163,7 +163,7 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 >[!NOTE]
 >
 >Configuration of the Custom Workflow Runner is a configuration of an OSGi service. See [deploy to Experience Manager](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
-> OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
+>OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
 
 For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
 

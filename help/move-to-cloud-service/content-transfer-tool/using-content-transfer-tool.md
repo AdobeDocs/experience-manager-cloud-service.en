@@ -230,7 +230,8 @@ If there are missing blob ids reported, as mentioned below, then there is a need
 The following command is executed 
 
 >[!NOTE]
-> `--verbose` flag is required to report the node paths from where the blobs are referenced.
+>
+>`--verbose` flag is required to report the node paths from where the blobs are referenced.
 
 **For repositories AEM 6.5 (Oak 1.8 and below)**
 
