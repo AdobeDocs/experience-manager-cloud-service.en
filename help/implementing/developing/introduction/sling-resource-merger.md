@@ -43,7 +43,8 @@ The goals for using the Sling Resource Merger in AEM are to:
 >* Overlays are dependent on [search paths](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
 >* Overrides are not dependent on the search paths, they use the property `sling:resourceSuperType` to make the connection.
->  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
+>
+>However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 ### Properties {#properties}
 

@@ -14,6 +14,7 @@ The main differences as compared to Experience Manager 6.5 are in the following 
 * [Removal of Classic UI](#classic-ui).
 
 >[!NOTE]
+>
 >This document highlights the notable changes to AEM Assets. For changes general to AEM as a Cloud Service, and other modules, see:
 >
 >* [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
