@@ -18,3 +18,23 @@ Release 2.10.0 of the [Core Components](https://docs.adobe.com/content/help/en/e
 * Introduction of a new [PDF Viewer Component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
 * Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
 * Bug fixes and code quality improvements
+
+## What's New in Cloud Transition Tools {#cloud-transition}
+
+Follow this section to learn about what is new and the updates for Cloud Transition Tools.
+
+### What's New in Content Transfer Tool {#whats-new-ctt}
+
+
+#### Bug Fixes {#content-transfer-tool-bug-fixes}
+
+
+#### Known Issues {#content-transfer-tool-known-issues}
+
+### What's New in Cloud Readiness Analyzer {#whats-new-cra}
+
+
+#### Bug Fixes {#cra-bug-fixes}
+
+
+#### Known Issues {#cra-known-issues}
