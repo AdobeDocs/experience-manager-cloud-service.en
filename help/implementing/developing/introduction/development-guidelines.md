@@ -154,8 +154,7 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 For regular programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For more information about setting up user permissions, see [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-
+Users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services In order to view status dump data from both services.
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
