@@ -19,11 +19,45 @@ Release 2.10.0 of the [Core Components](https://docs.adobe.com/content/help/en/e
 * Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
 * Bug fixes and code quality improvements
 
+
+## What's New in Cloud Manager {#cloud-manager}
+
+Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.6.0.
+
+### What's New {#what-is-new-cloud-manager}
+
+* The environments page has been redesigned.
+
+* Hibernated environments now show a discrete status in Cloud Manager when they are hibernated. 
+
+* The Cloud Manager build container now supports both Java 8 and Java 11. 
+
+* Cloud Manager pipelines now support customer-set variables and secrets.
+
+### Bug Fixes {#bug-fixes-cm}
+
+* The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created. 
+
+* *The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
+
+* The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible. 
+
+* Certain failures in the code quality process could result in the log file not being generated correctly.
+
+* When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
+
+* Some large pipeline step logs could not be consistently downloaded through the user interface.
+
+* The validation of environment names had an off-by-one error.
+
+* The Environments page would sometimes show publish and dispatcher segments when none was present.
+
 ## What's New in Cloud Transition Tools {#cloud-transition}
 
 Follow this section to learn about what is new and the updates for Cloud Transition Tools.
 
 ### What's New in Content Transfer Tool {#whats-new-ctt}
+
 
 
 #### Bug Fixes {#content-transfer-tool-bug-fixes}
