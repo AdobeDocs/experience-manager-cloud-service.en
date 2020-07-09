@@ -60,15 +60,15 @@ Follow this section to learn about what is new and the updates for Cloud Transit
 
 
 
-#### Bug Fixes {#content-transfer-tool-bug-fixes}
+### Bug Fixes {#content-transfer-tool-bug-fixes}
 
 
-#### Known Issues {#content-transfer-tool-known-issues}
+### Known Issues {#content-transfer-tool-known-issues}
 
 ### What's New in Cloud Readiness Analyzer {#whats-new-cra}
 
 
-#### Bug Fixes {#cra-bug-fixes}
+### Bug Fixes {#cra-bug-fixes}
 
 
-#### Known Issues {#cra-known-issues}
+### Known Issues {#cra-known-issues}
