@@ -22,7 +22,7 @@ Release 2.10.0 of the [Core Components](https://docs.adobe.com/content/help/en/e
 
 ## What's New in Cloud Manager {#cloud-manager}
 
-Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.6.0.
+Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.7.0.
 
 ### What's New {#what-is-new-cloud-manager}
 
