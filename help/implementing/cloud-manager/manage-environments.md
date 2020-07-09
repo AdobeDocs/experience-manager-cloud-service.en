@@ -34,8 +34,7 @@ The Production and Stage is available as a duo and is used for testing and produ
 
 
 1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen. 
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
     The **Add Environment** option is also available on the **Environments** card when there are zero environments in the program.
 
@@ -67,12 +66,12 @@ Updates to Development environments are managed by users of the program. When an
 ![](assets/manage-environments2.png)
 
 
-The **Update** option is available from the dropdown menu in the **Environments** Card. 
+The **Update** option is available from the **Environments** Card. 
 This option is also available from the **Manage** button, if you click on **Details** from the **Environments** card.
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-Selecting this from the dropdown menu will allow a Deployment Manager to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
+Selecting this option will allow a Deployment Manager to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
 
 If the pipeline has already been updated, the user is prompted to execute the pipeline.
 

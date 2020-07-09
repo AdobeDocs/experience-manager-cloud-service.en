@@ -52,7 +52,7 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
-* The Java version installed is Oracle JDK 8u202.
+* The Java version installed Oracle JDK 8u202 and 11.0.2.
 * There are some additional system packages installed which are necessary:
 
     * bzip2
@@ -66,6 +66,37 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 * Maven is always run with the command: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository. (Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
+### Using Java 11 {#using-java-11}
+
+Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. Customers who intend to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>The Supported Vendors are Oracle and Sun Microsystems and the Supported Versions are 1.8, 1.11, and 11.
 
 ## Environment Variables {#environment-variables}
 
