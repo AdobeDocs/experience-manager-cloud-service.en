@@ -92,11 +92,11 @@ To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
                     </jdk>
                 </toolchains>
             </configuration>
+        </plugin>
 ```
 
 >[!NOTE]
->* The Supported Vendors are `oracle` and `sun`. 
->* The Supported Versions are `1.8`, `1.11`, and `11`.
+>The supported `vendor` values are `oracle` and `sun` and the supported `version` values are `1.8`, `1.11`, and `11`.
 
 ## Environment Variables {#environment-variables}
 
