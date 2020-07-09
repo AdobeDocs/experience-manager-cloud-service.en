@@ -38,7 +38,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created. 
 
-* *The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
+* The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
 
 * The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible. 
 
