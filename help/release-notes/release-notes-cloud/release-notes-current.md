@@ -32,8 +32,6 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * The Cloud Manager build container now supports both Java 8 and Java 11. 
 
-* Cloud Manager pipelines now support customer-set variables and secrets.
-
 ### Bug Fixes {#bug-fixes-cm}
 
 * The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created. 
