@@ -13,7 +13,7 @@ These files can be downloaded through the UI, either from the **Overview**  page
 
 Or, the **Environments** page:
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Note]
 >Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
