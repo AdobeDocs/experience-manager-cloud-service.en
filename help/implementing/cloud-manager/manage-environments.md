@@ -63,7 +63,7 @@ Updates of Stage and Production environments are automatically managed by Adobe.
 
 Updates to Development environments are managed by users of the program. When an environment is not running the latest publicly available AEM release, the status on Environments Card on the Home Screen will show **UPDATE AVAILABLE**.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 The **Update** option is available from the **Environments** Card. 
@@ -79,10 +79,14 @@ If the pipeline has already been updated, the user is prompted to execute the pi
 
 User with the requisite permissions will be able to delete a Development environment. 
 
-The **Delete** option is available from the dropdown menu in the **Environments** Card. 
-This option is also available from the **Manage** button, if you click on **Details** from the **Environments** card.
+The **Delete** option is available from the dropdown menu in the **Environments** Card. Click on **...** for a Development environment you want to delete.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+You can also delete an environment, if you click on **Details** from the **Environments** card.
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
@@ -96,7 +100,7 @@ Only a user in the Developer role will have access to **Developer Console**. The
 Refer to [Hibernating and De-hibernating Sandbox Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 You can also select this option from the **Manage** button, if you click on **Details** from the **Environments** card.
 
