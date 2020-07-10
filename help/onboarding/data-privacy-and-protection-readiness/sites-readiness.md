@@ -62,13 +62,9 @@ To Opt-out:
 
     Follow the above steps to access the actual links.
 
-    <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
     >[!NOTE]
     >
-    > There is a further description in the **Privacy Policy** section of the [Terms of Use](https://marketing.adobe.com/resources/help/en_US/terms.html).
+    > There is a further description in the **2. Privacy.** section of the [Adobe General Terms of Use](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
