@@ -67,7 +67,7 @@ Updates to Development environments are managed by users of the program. When an
 
 
 The **Update** option is available from the **Environments** Card. 
-This option is also available from the **Manage** button, if you click on **Details** from the **Environments** card.
+This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Update**, as shown in the figure below:
 
 ![](assets/environments-screen-update.png)
 
@@ -83,7 +83,7 @@ The **Delete** option is available from the dropdown menu in the **Environments*
 
 ![](assets/environ-delete.png)
 
-You can also delete an environment, if you click on **Details** from the **Environments** card.
+The delete option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Delete**, as shown in the figure below:
 
 ![](assets/environ-delete-2.png)
 
@@ -102,5 +102,5 @@ Refer to [Hibernating and De-hibernating Sandbox Environments](https://docs.adob
 
 ![](assets/environ-dev-console.png)
 
-You can also select this option from the **Manage** button, if you click on **Details** from the **Environments** card.
+This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select an environment, click on **...** and select **Developer Console**.
 
