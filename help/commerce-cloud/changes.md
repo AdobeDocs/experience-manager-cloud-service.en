@@ -5,5 +5,13 @@ description: Notable changes to Commerce on AEM as a Cloud Service as compared t
 
 # Notable changes to Commerce on AEM as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. This document highlights the important differences for Commerce capabilities. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. This document highlights the important differences for Commerce capabilities between Commerce Integration Framework for on-premise, Adobe Managed Service and Experience Manager as a Cloud Service. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
+The main differences as compared to Experience Manager 6.5 are in the following areas:
+* [Support for CIF on-premise](#cif-onprem)
+* [Deployment of CIF Authoring Tools](#cif-tools)
+
+## Support for CIF on-premise {#cif-onprem}
+
+
+## Deployment of CIF Authoring Tools {#cif-tools}
