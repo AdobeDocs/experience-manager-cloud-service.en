@@ -558,7 +558,7 @@ Or, if you intend to use the default tags in AEM, you can skip this task and go 
 
 >[!NOTE]
 >
->After the cloud service is configured, additional configuration is not required to enable the YouTube Publish replication agent as this point. The reason is because it was enabled when the cloud service configuration was saved.
+>After the cloud service is configured, additional configuration is not required to enable the YouTube Publish replication agent at this point. The reason is because it was enabled when the cloud service configuration was saved.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
