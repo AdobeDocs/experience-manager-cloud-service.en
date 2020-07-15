@@ -538,7 +538,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ### Number of Variables {#number-of-variables}
 
-Up to 20 variables can be declared. 
+Up to 200 variables per environment can be declared.
 
 ## Deployment Considerations for Secret and Environment Specific Configuration Values {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
