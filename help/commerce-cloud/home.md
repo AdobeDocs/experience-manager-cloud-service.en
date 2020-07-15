@@ -5,7 +5,7 @@ description: Commerce Integration Framework on AEM as a Cloud Service self-help 
 
 # Commerce Integration Framework on AEM as a Cloud Service {#commerce-guide}
 
-This page lists the self-help resources regarding Commerce on AEM as a Cloud Service.
+This page lists the self-help resources regarding Commerce Integration Framework on AEM as a Cloud Service.
 
 ## Key Commerce Articles {#key-articles}
 
