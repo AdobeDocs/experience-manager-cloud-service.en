@@ -45,7 +45,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 ## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer.
+Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.0.2.
 
 ### Bug Fixes {#cra-bug-fixes}
 
