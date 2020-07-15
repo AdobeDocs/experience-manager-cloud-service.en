@@ -21,6 +21,8 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
+* The number of environment variables per environment has been increased to 200.
+
 * The Cloud Manager build container now supports both Java 8 and Java 11.
 
 ### Bug Fixes {#bug-fixes-cm}
