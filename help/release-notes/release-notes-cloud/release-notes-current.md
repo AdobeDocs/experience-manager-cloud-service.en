@@ -42,3 +42,20 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 * The validation of environment names had an off-by-one error.
 
 * The Environments page would sometimes show publish and dispatcher segments when none was present.
+
+## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer.
+
+### Bug Fixes {#cra-bug-fixes}
+
+* Earlier version of the CRA could not be run on Adobe Experience Manager (AEM) 6.1. Explicit support to allow users in the administrators group was added.
+
+   Refer to [Installing CRA on AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
+
+* The expiration timestamp displayed on the summary report was incorrect.
+
+* CRA was detecting duplicate custom components.
+
+* On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
+
