@@ -3,7 +3,7 @@ title: Sling Cheatsheet
 description: An easy Sling reference
 ---
 
-# Sling Cheatsheet{#sling-cheatsheet}
+# Sling Cheatsheet {#sling-cheatsheet}
 
 ![Understanding Apache Sling script resolution.](assets/sling-cheatsheet-01.png)  
 
