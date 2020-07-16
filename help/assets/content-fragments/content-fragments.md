@@ -65,7 +65,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 >[!NOTE]
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
->* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
+>* **Content Fragments** are editorial content, that can be used to access structured data, including texts, numbers, and dates, amongst others. They are pure content, with definition and structure, but without additional visual design and/or layout.
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
