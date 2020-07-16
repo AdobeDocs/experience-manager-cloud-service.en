@@ -43,6 +43,10 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * The Environments page would sometimes show publish and dispatcher segments when none was present.
 
+### Known Issues {#known-issues}
+
+* Due to a change in how code coverage is calculated, the _minimum_ version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version will receive an error message in the code quality process.
+
 ## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
 Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.0.2.
