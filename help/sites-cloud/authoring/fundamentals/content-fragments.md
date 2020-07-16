@@ -63,8 +63,8 @@ The content fragments enable:
    >
    >For more information about further editing functionality see also:
    >
-   >    * [Responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 ### Selecting the Element or Variation {#selecting-the-element-or-variation}
 
@@ -78,21 +78,19 @@ In the appropriate configuration dialog you can select the available parameters,
   * **Single Text Element**
   * **Multiple Elements**
 * **Element**
-  * The default **Main** will always be available.
-  * A selection will be available if the fragment was created with an appropriate template.
+  * A selection will be available dependent on the model used.
 
   >[!NOTE]
   >
-  >The elements available depend on the template used.
+  >The elements available depend on the model used.
 
 * **Variation**
   * The default **Master** will always be available.
   * A selection will be available if variations were created for the fragment.
-* **Paragraphs**: specify the range of paragraph(s) to include:
-  * **All**
-  * **Range**: for example, `1`, `3-5`, `9-*`
-    * **Handle headings as their own paragraphs**
-* **Handle headings as their own paragraphs**
+
+* **ID**
+
+  * **HTML ID** attribute to apply to the component.
 
 ### Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
 
@@ -133,6 +131,7 @@ For in-between content you can:
 >When this occurs the in-between content is kept as is:
 >
 >* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.
+>
 >  This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to.
 >* Unless the two paragraph structures conflict; in such a case, the in-between content is not displayed (although it is still present internally).
 

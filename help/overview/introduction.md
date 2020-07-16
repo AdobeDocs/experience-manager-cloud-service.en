@@ -69,6 +69,8 @@ AEM achieves these goals by adopting the main characteristics of modern cloud se
 
 * [What is New and What is Different](/help/overview/what-is-new-and-different.md) between Adobe Experience Manager as a Cloud Service and previous versions
 * The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
-* [Notable Changes to AEM Sites in AEM as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
+* [Notable changes to AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introducing Assets as a Cloud Service](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)

@@ -28,28 +28,32 @@ Refer to [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experi
 
    ![](assets/sys-admin5.png)
 
-1. Clicking on **Manage Access** navigates you to the **Admin Console** from where you can manage the user roles or permissions to Cloud Manager.
+1. Once you click on **Manage Access**, you are navigated to **Admin Console** from where you can manage the user roles or permissions to Cloud Manager.
+
+   ![](assets/sys-admin1.png)
 
 ### Managing Access to Author Instance {#manage-access-aem}
 
-As a user in the SysAdmin role, you have one-click access to the **Admin Console** from where you can navigate to the Author instance directly and manage access.
+As a user in the SysAdmin role, you have one-click access to the **Admin Console** from where you can navigate to the author instance directly and manage access.
 
 >[!NOTE]
 >For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
 
    Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
 
-1. Navigate to **Environments** card from **Program Overview** page.
+1. Navigate to **Environments** card from **Program Overview** page and click on **Manage Access**.
 
    ![](assets/sys-admin6.png)
 
    Or,
 
-   Click on **Details** from the **Environments** card to open the Environments page. Click **Manage** -> **Manage Access**.
+   **Manage Access** is also available from the **Manage** button, if you click on **Details** from the **Environments** card.
 
    ![](assets/sys-admin4.png)
 
-1. Clicking on **Manage Access** navigates to **Admin Console** from where you have the access to the Author instance of an environment.
+1. Once you click on **Manage Access**, you are navigated to **Admin Console** from where you have the access to the author instance of the environment.
+
+   ![](assets/sys-admin-2.png)
 
 ## For Existing AMS Customers {#existing-aem}
 

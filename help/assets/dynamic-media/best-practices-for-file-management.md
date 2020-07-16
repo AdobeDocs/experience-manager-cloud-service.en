@@ -1,15 +1,15 @@
 ---
-title: Best Practices for Organizing Your Digital Assets for Using Profiles
-description: Tips and best-practices for naming, organizing, managing metadata for digital asset files.
+title: Best practices for organizing your digital assets for using Dynamic Media Image Profiles or Video Profiles
+description: Tips and best-practices for naming, organizing, and managing Dynamic Media image and video asset files.
 ---
 
-# Best practices to organize digital assets to use profiles {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# Best practices for organizing your digital assets for using Image profiles or Video profiles{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-An important concept regarding the use of profiles in AEM Assets is that they are assigned to folders. Within a profile are settings in the form of metadata profiles, along with video profiles or image profiles. These settings process the contents of a folder along with any of its sub-folders. Therefore, how you name files and folders, how you arrange sub-folders, and how you handle the files within these folders has a significant impact on how those assets are processed by a profile.
+An important concept regarding the use of Dynamic Media Image Profiles or Video Profiles is that they are assigned to folders. Within a profile are settings for an image or video. These settings process the contents of a folder along with any of its sub-folders. Therefore, how you name files and folders, how you arrange sub-folders, and how you handle the files within these folders has a significant impact on how those assets are processed by the profile.
 
 By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital asset collection and ensure that the right files are processed by the right profile.
 
-See [Profiles for Processing Video, Metadata, and Images](processing-profiles.md).
+See [About Dynamic Media Image Profile and Video Profiles](about-image-video-profiles.md).
 
 The following are best practice tips for organizing your digital asset files.
 
@@ -23,7 +23,7 @@ The following are best practice tips for organizing your digital asset files.
 
     * **Development folders** &ndash; contains digital assets that you are currently working on.
     * **Client folders** &ndash; contains digital assets based on clients or project names.
-    * **Master folders** &ndash; contains original, source digital assets.
+    * **Primary source folders** &ndash; contains original, source digital assets.
     * **Rendition folders** &ndash; contains renditions and copies of the original, source digital assets.
     * **File Size folders** &ndash; contains digital assets based on small, medium, or large file sizes.
     * **Staging folders** &ndash; contains digital assets that are ready to publish live on your website.

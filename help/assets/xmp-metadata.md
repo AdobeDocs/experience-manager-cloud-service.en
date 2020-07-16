@@ -115,38 +115,6 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 
-<!--
->[!NOTE]
->
->For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
->
->For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
--->
-
-### Filter XMP metadata {#filtering-xmp-metadata}
-
-AEM Assets supports both blacklist and whitelist filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested.
-
-Blacklist filtering lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If blacklist filtering allows a large number of assets with numerous XMP metadata to be imported, the AEM instance/cluster can encounter stability issues, for example clogged observation queues.
-
-Whitelist filtering of XMP metadata resolves this issue by letting you define the XMP properties to be imported. This way, other/unknown XMP properties are ignored. You can add some of these properties to the blacklist filter for backward compatibility.
-
->[!NOTE]
->
->Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. AEM stories this value in the metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
-
-1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
-1. To apply whitelist filtering, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
-
-1. To filter out blacklisted XMP properties after applying whitelist filtering, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
-
-   >[!NOTE]
-   >
-   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, blacklist filtering is enabled by default. To disable blacklist filtering, unselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
-
-1. Save the changes.
-
 >[!MORELIKETHIS]
 >
 >* [XMP specification by Adobe](https://www.adobe.com/devnet/xmp.html)

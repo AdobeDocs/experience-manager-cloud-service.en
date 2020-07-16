@@ -9,9 +9,9 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ## Release Date {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July ?? , 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 31, 2020.
 
-### What's New {#whats-new-2020.7.0}
+## What's New in Core Components {#whats-new-core-components}
 
 Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
@@ -24,11 +24,17 @@ Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/e
 
 Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.7.0.
 
+### Release Date {#release-date}
+
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
+
 ### What's New {#what-is-new-cloud-manager}
 
 * The environments page has been redesigned.
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
+
+* The number of environment variables per environment has been increased to 200.
 
 * The Cloud Manager build container now supports both Java 8 and Java 11.
 
@@ -38,7 +44,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
 
-* The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible.
+* The **Cancel** and **Save** options on the Non-Production Pipeline edit page were not always visible.
 
 * Certain failures in the code quality process could result in the log file not being generated correctly.
 
@@ -50,26 +56,18 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * The Environments page would sometimes show publish and dispatcher segments when none was present.
 
-## What's New in Cloud Transition Tools {#cloud-transition}
+## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Follow this section to learn about what is new and the updates for Cloud Transition Tools.
-
-### What's New in Content Transfer Tool {#whats-new-ctt}
-
-### Bug Fixes {#content-transfer-tool-bug-fixes}
-
-### Known Issues {#content-transfer-tool-known-issues}
-
-### What's New in Cloud Readiness Analyzer {#whats-new-cra}
+Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.0.2.
 
 ### Bug Fixes {#cra-bug-fixes}
 
-* Earlier version of the CRA could not be run on AEM 6.1. Explicit support to allow users in the administrators group was added. For more details, refer to [Installing CRA on AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)
+* Earlier version of the CRA could not be run on Adobe Experience Manager (AEM) 6.1. Explicit support to allow users in the administrators group was added.
+
+   Refer to [Installing CRA on AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
 
 * The expiration timestamp displayed on the summary report was incorrect.
 
 * CRA was detecting duplicate custom components.
 
 * On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
-
-### Known Issues {#cra-known-issues}

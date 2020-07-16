@@ -6,58 +6,80 @@ contentOwner: AG
 
 # Configure Experience Manager for smart tagging of assets {#configure-aem-for-smart-tagging}
 
-Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches. Adobe provides Smart Content Service (SCS) that uses artificial intelligence and machine learning algorithms to train images. Smart Content Service uses an artifical intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy.
+Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches. Adobe provides Smart Tags that uses artificial intelligence and machine learning algorithms to train images. Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy.
 
-The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O. The administrator accesses the link to integrate the Smart Content Service with [!DNL Experience Manager].
+The Smart Tags functionality is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to Adobe Developer Console. The administrator accesses the link to integrate the Smart Tags with [!DNL Experience Manager] using Adobe Developer Console.
 
 <!-- TBD: 
-1. Create a similar flowchart for how training works in CS. ![flowchart](assets/flowchart.gif)
+1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
-4. Post-GA, if time permits, create a video.
 -->
 
-## Integrate with Adobe I/O {#aio-integration}
+## Integrate with Adobe Developer Console {#aio-integration}
 
-Before you can tag their images using SCS, integrate [!DNL Adobe Experience Manager] with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within [!DNL Experience Manager].
+Before you can tag the images using SCS, integrate [!DNL Adobe Experience Manager] with the Smart Tags service using Adobe Developer Console. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.
 
-The article details out the following key tasks that are required to configure the Smart Content Service. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Content Service.
+* Create a configuration in [!DNL Experience Manager] to generate a public key. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
+* [Create an integration in Adobe Developer Console](#create-aio-integration) and upload the generated public key.
+* [Configure Smart Tags](#configure-smart-content-service) in your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
+* [Test the configuration](#validate-the-configuration).
+* [Reconfigure after certificate expires](#certrenew).
 
-* Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. Obtain public certificate for OAuth integration.
-* Create an integration in Adobe I/O and upload the generated public key.
-* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe I/O.  
-* Optionally, enable auto-tagging on asset upload.
+### Prerequisites for Adobe Developer Console integration {#prerequisite-for-aio-integration}
 
-### Prerequisites for Adobe I/O integration {#prerequisite-for-aio-integration}
-
-Before you can use the Smart Content Service, ensure the following to create an integration on Adobe I/O:
+Before you can use the Smart Tags, ensure the following to create an integration on Adobe Developer Console:
 
 * An Adobe ID account that has administrator privileges for the organization.
-* The Smart Content Service service is enabled for your organization.
+* The Smart Tags is enabled for your organization.
 
 ### Obtain a public certificate {#obtain-public-certificate}
 
-A public certificate allows you to authenticate your profile on Adobe I/O.
+A public certificate allows you to authenticate your profile on Adobe Developer Console. You create a certificate from within [!DNL Experience Manager].
 
-1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.  
+1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-1. On the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. On the [!UICONTROL Adobe IMS Configurations] page, click **[!UICONTROL Create]**. From **[!UICONTROL Cloud Solution]** menu, select **[!UICONTROL Smart Tags]**.
 
-1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the Smart Tags configuration. Click **[!UICONTROL Create]**.
+1. Select **[!UICONTROL Create new certificate]**. Provide a name and click **[!UICONTROL Create certificate]**. Click **[!UICONTROL OK]**.
 
-1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the following values:
+1. Click **[!UICONTROL Download Public Key]**.
 
-   **[!UICONTROL Service URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   ![Experience Manager Smart Tags create public key](assets/aem_smarttags-config1.png)
 
-   **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
+### Create an integration {#create-aio-integration}
 
-   Leave the other fields blank for now (to be provided later). Click **[!UICONTROL OK]**.
+To use Smart Tags, create an integration in Adobe Developer Console to generate API Key, Technical Account Id, Organization Id, and Client Secret.
 
-   ![Experience Manager Smart Content Service dialog to provide content service URL](assets/aem_scs.png)
+1. Access [https://console.adobe.io](https://console.adobe.io/) in a browser. Select the appropriate account and verify that the associated organization role is system administrator.
+1. Create a project with any desired name. Click **[!UICONTROL Add API]**.
+1. On the **[!UICONTROL Add an API]** page, select **[!UICONTROL Experience Cloud]** and select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Upload your public key]**. Provide the certificate file downloaded from [!DNL Experience Manager]. A message [!UICONTROL Public key(s) uploaded successfully] is displayed. Click **[!UICONTROL Next]**.
+1. [!UICONTROL Create a new Service Account (JWT) credential] page displays the public key for the service account just configured. Click **[!UICONTROL Next]**.
+1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**. A page displays more information about the configuration. Keep this page open to copy and add these values in Experience Manager when further configuring Smart Tags in [!DNL Experience Manager].
 
-1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
+   ![In the Overview tab, you can review the information provided for integration.](assets/integration_details.png)
 
-   ![A representation of the settings created for the smart tagging service](assets/download_link.png)
+### Configure Smart Tags {#configure-smart-content-service}
+
+To configure the integration, use the values of Payload, Client Secret, Authorization Server, and API key fields from the Adobe Developer Console integration.
+
+1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. Access **[!UICONTROL Adobe IMS Technical Account Configuration]** page, provide a desired **[!UICONTROL Title]**.
+1. In **[!UICONTROL Authorization Server]** field, provide `https://ims-na1.adobelogin.com` URL.
+1. In **[!UICONTROL API Key]** field, provide **[!UICONTROL Client ID]** from the [!DNL Adobe Developer Console].
+1. In **[!UICONTROL Client Secret]** field, provide the **[!UICONTROL Client Secret]** from the [!DNL Adobe Developer Console]. Click **[!UICONTROL Retrieve Client Secret]** option to see it.
+1. In [!DNL Adobe Developer Console], in your project, click **[!UICONTROL Service Account (JWT)]** from the left margin. Click **[!UICONTROL Generate JWT]** tab. Click **[!UICONTROL Copy]** to copy the displayed **[!UICONTROL JWT Payload]**. Provide this value in the **[!UICONTROL Payload]** field in [!DNL Experience Manager]. Click **[!UICONTROL Create]**.
+
+### Validate the configuration {#validate-the-configuration}
+
+After you've completed the configuration, follow these steps to validate the configuration.
+
+1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+
+1. Select the Smart Tags configuration. Click **[!UICONTROL Check Health]** from the toolbar. Click **[!UICONTROL Check]**. A dialog with [!UICONTROL Healthy configuration] message confirms that the configuration is working.
+
+![Validate Smart Tags configuration](assets/smart-tag-config-validation.png)
 
 ### Reconfigure if a certificate expires {#certrenew}
 
@@ -70,50 +92,11 @@ When the certificate expires it is no longer trusted. To add a new certificate, 
 
    ![Delete existing similaritysearch entry in Keystore to add a new security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figure: Delete existing `similaritysearch` entry in Keystore to add a new security certificate.*
+   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a new security certificate.*
 
-1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Click **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Click the required configuration.  
+1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open the available Smart Tags configuration. To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
 
-1. To download a public certificate, click **[!UICONTROL Download Public Certificate for OAuth Integration]**.
-1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing Smart Content Services on the **[!UICONTROL Integrations]** page. Upload the new certificate. For more information, see the instructions in [Create Adobe I/O integration](#create-adobe-i-o-integration).
-
-### Create an integration {#create-aio-integration}
-
-To use Smart Content Service APIs, create an integration in Adobe I/O to generate API Key, Technical Account Id, Organization Id, and Client Secret.
-
-1. Access [https://console.adobe.io](https://console.adobe.io/).
-1. On the **[!UICONTROL Integrations]** page, select the appropriate account and verify that the associated organization role is system administrator.
-1. Click **[!UICONTROL New integration]**.
-1. On the **[!UICONTROL Create a new integration]** page, select **[!UICONTROL Access an API]**. Click **[!UICONTROL Continue]**.
-1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Continue]**.
-1. On the next page, select **[!UICONTROL New integration]**. Click **[!UICONTROL Continue]**.
-1. On the **[!UICONTROL Integration Details]** page, specify a name for the integration gateway and add a description.
-1. In the **[!UICONTROL Public keys certificates]**, upload `AEM-SmartTags.crt` file that you downloaded above.
-1. Click **[!UICONTROL Create Integration]**.
-1. To view the integration information, click **[!UICONTROL Continue to integration details]**.
-
-   ![In the Overview tab, you can review the information provided for integration.](assets/integration_details.png)
-
-### Configure Smart Content Service {#configure-smart-content-service}
-
-To configure the integration, use the values of Technical Account ID, Organization Id, Client Secret, Authorization Server, and API key fields from the Adobe I/O integration. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] instance.
-
-1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
-1. Under the **[!UICONTROL Assets Smart Tags]**, open the configuration created above. On the service settings page, click **[!UICONTROL Edit]**.
-1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the pre-populated values for the **[!UICONTROL Service URL]** and **[!UICONTROL Authorization Server]** fields.
-1. For the fields **[!UICONTROL API Key]**, **[!UICONTROL Technical Account Id]**, **[!UICONTROL Organization Id]**, and **[!UICONTROL Client Secret]**, use the values generated above.
-
-### Validate the configuration {#validate-the-configuration}
-
-After you've completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
-
-1. Access your [!DNL Experience Manager] server at `https://[aem_server]:[port]`.
-
-1. Go to **[!UICONTROL Tools > Operations > Web Console]** to open the OSGi console. Click **[!UICONTROL Main > JMX]**.
-1. Click **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks.]** 
-1. Click **[!UICONTROL validateConfigs()]**. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
-
-   The validation result is displayed in the same dialog.
+1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing service in the Project. Upload the new certificate and configure. For more information on configuration, see the instructions in [Create Adobe Developer Console integration](#create-aio-integration).
 
 ## Enable smart tagging for newly uploaded assets (Optional) {#enable-smart-tagging-for-uploaded-assets}
 
@@ -128,7 +111,7 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
 1. Open the step to configure. Under **[!UICONTROL Advanced Settings]**, ensure that the **[!UICONTROL Handler Advance]** option is selected.
 
-   ![chlimage_1-3](assets/smart-tags-workflow-handler-setting.png)
+   ![Setting for handler to advance to the next step in the workflow.](assets/smart-tags-workflow-handler-setting.png)
 
 1. In the **[!UICONTROL Arguments]** tab, select **[!UICONTROL Ignore Errors]** if you want the workflow to ignore failures when predicting tags. To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **[!UICONTROL Ignore Smart Tag Flag]**.
 

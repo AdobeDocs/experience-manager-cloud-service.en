@@ -29,7 +29,8 @@ A *migration set* has the following attributes:
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity. 
 
 >[!NOTE]
-> After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
+>
+>After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
 
 In the extraction phase, to ***top-up*** an existing migration set, the *overwrite* option must be disabled. Refer to [Top Up Extraction](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process) for more details.
 
@@ -40,10 +41,18 @@ In the ingestion phase, to apply the delta content on top of the current content
 
 Follow the section below to understand guidelines and best practices to use the Content Transfer Tool:
 
-* It is advisable to run compaction, data store consistency checks on the repositories before hand to spot potential problems and also reduce the garbage present in the repository. 
+* It is advisable to run [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) on the **source** repository to identify potential problems and reduce the size of the repository.
 
-* If the AEM Cloud Author Content Delivery Network (CDN) config is configured to have a whitelist of IPs then it should be ensured that the source environment IPs are also added to the whitelist so that the source environment and AEM Cloud environment can communicate with each other.
+* If the AEM Cloud Author Content Delivery Network (CDN) config is configured to have a whitelist of IPs then it should be ensured that the source environment IPs are also added to the allowlist so that the source environment and AEM Cloud environment can communicate with each other.
 
 * In the ingestion phase, it is recommended to run the ingestion using the *wipe* mode enabled where the existing repository (author or publish) in the target AEM Cloud Service environment will be completely deleted and then updated with the migration set data. This mode is much faster than the non-wipe mode,  where the migration set is applied on top of the current content.
 
 * After the content transfer activity is completed, the correct project structure is required in the Cloud Service environment to ensure that the content renders successfully in the Cloud Service environment.
+
+* Before running the Content Transfer Tool, you must ensure that there is enough disk space in the `crx-quickstart` subdirectory of the source AEM instance. This is because the Content Transfer Tool creates a local copy of the repository that is later uploaded to the migration set. 
+   The general formula to calculate the require free disk space is as follows:
+   `data store size + node store size * 1.5`
+
+     * *data store size*: the Content Transfer Tool uses 64 GB, even if the actual data store is larger.
+     * *node store size*: segment store directory size or the MongoDB database size.
+  Hence, for a segment store size of 20GB, the required free disk space would be 94GB.

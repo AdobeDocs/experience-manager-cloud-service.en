@@ -17,9 +17,9 @@ You can also choose to have additional processing done on the uploaded assets. A
 
 >[!NOTE]
 >
-> Experience Manager as a Cloud Service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
+>Experience Manager as a Cloud Service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like AEM user interface, Adobe Asset Link, AEM desktop app, and thus transparent to the end users.
 >
-> Upload code that is customized or extended by customers technical teams needs to use the new upload APIs and protocols.
+>Upload code that is customized or extended by customers technical teams needs to use the new upload APIs and protocols.
 
 ## Upload assets {#upload-assets}
 
@@ -74,7 +74,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
 >[!NOTE]
 >
-> To upload nested folder hierarchies to AEM, see [bulk upload of assets](#bulk-upload).
+>To upload nested folder hierarchies to AEM, see [bulk upload of assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -129,7 +129,7 @@ To upload larger number of files, especially if they exist in a nested folder hi
 
 >[!NOTE]
 >
-> Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
+>Bulk upload as a part of content migration from other systems when setting up and deploying to Experience Manager requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 
@@ -151,12 +151,12 @@ The following profiles are available:
 
 Additionally, if Dynamic Media is enabled in your environment:
 
-* [Image profiles](dynamic-media/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets
-* [Video profiles](dynamic-media/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters)
+* [Dynamic Media Image profiles](dynamic-media/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets.
+* [Dynamic Media Video profiles](dynamic-media/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters).
 
 >[!NOTE]
 >
-> Dynamic Media cropping and other operations on assets are non-destructive, that is, they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
+>Dynamic Media cropping and other operations on assets are non-destructive, that is, they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **[!UICONTROL Processing Profile]** column.
 

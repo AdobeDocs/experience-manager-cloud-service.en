@@ -23,6 +23,10 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
   + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
+  + [Sling Cheatsheet](developing/introduction/sling-cheatsheet.md)  
+  + [Using Sling Adapters](developing/introduction/sling-adapters.md)  
+  + [Using the Sling Resource Merger in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
+  + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
@@ -30,9 +34,15 @@ user-guide-title: Implementing for AEM as a Cloud Service
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
   + [Content Fragments Configuring Components for Rendering](developing/extending/content-fragments-configuring-components-rendering.md)
   + [Configuring Search Forms](developing/extending/search-forms.md)
+  + [Configure Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md)
+  + [Configure the RTE plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+  + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
   + [Configuring OSGi for AEM as a Cloud Service](deploying/configuring-osgi.md)
++ Author Tier {#author-tier}  
+  + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
+  + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
 + Content Delivery Overview {#content-delivery}
   + [Content Delivery Flow](dispatcher/overview.md)
   + [Dispatcher in the Cloud](dispatcher/disp-overview.md)

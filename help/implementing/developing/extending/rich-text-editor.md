@@ -1,12 +1,12 @@
 ---
-title: Configure the Rich Text Editor to author content in Adobe Experience Manager as a Cloud Service.
-description: Configure Rich Text Editor to author content in Adobe Experience Manager as a Cloud Service.
+title: Configure the Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Configure Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 ---
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. To know how to use RTE features for authoring, see [Use Rich Text Editor for authoring](rich-text-editor.md). See how authors [use RTE for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) web content.
+The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. See how authors [use RTE for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) web content.
 
 The RTE concepts and steps required to configure it are listed below.
 
@@ -24,44 +24,44 @@ The RTE interface offers a [responsive design](/help/sites-cloud/authoring/featu
 
 *Figure: Rich Text Editor toolbar with all the available options enabled.*
 
-The toolbar provides the options for the WYSIWYG authoring experience. Experience Manager administrators can configure the options available in the toolbar on the interface. A comprehensive set of editing options are available by default in Experience Manager. Developers can customize Experience Manager to add more editing options.
+The toolbar provides the options for the WYSIWYG authoring experience. [!DNL Experience Manager] administrators can configure the options available in the toolbar on the interface. A comprehensive set of editing options are available by default in [!DNL Experience Manager]. Developers can customize [!DNL Experience Manager] to add more editing options.
 
 ## Various modes of editing {#editingmodes}
 
-Authors can create and edit textual content in Experience Manager using the different modes of components. The toolbar options for authoring and formatting content and the user experience of RTE-enabled components in different editing mode varies based on RTE configurations.
+Authors can create and edit textual content in [!DNL Experience Manager] using the different modes of components. The toolbar options for authoring and formatting content and the user experience of RTE-enabled components in different editing mode varies based on RTE configurations.
 
 |Editing mode|Editing area|Recommended features to be enabled|
 |--- |--- |--- |
-|Inline|In-place editing for quick, minor edits; Format without opening a dialog box|Minimal RTE features|
-|RTE full screen|Covers entire page|All the required RTE features|
-|Dialog|Dialog box on top of the page content but does not cover the entire page| Judiciously enable features|
-|Dialog full screen|Same as Full screen mode; contains fields of the dialog alongside RTE|All the required RTE features|
+|Inline|In-place editing for quick, minor edits; Format without opening a dialog box.|Minimal RTE features.|
+|RTE full-screen|Covers entire page.|All the required RTE features.|
+|Dialog|Dialog box on top of the page content but does not cover the entire page.| Judiciously enable features.|
+|Dialog full-screen|Same as full-screen mode; contains fields of the dialog alongside RTE.|All the required RTE features.|
 
 >[!NOTE]
 >
->The source-edit feature is not available in inline editing mode. You cannot drag images in the full screen mode. All other features work in all the modes.
+>The source-edit feature is not available in inline editing mode. You cannot drag images in the full-screen mode. All other features work in all the modes.
 
 ### Inline editing {#inline-editing}
 
-When opened (with a slow double-click) the content can be edited within the page. A compact toolbar with very basic options is presented.
+To edit the content within a page, open the content with a slow double-click . A compact toolbar with basic options is presented.
 
 ![Inline editing with basic options in the toolbar](assets/inline-editing-mode-basic-options.png)
 
 *Figure: Inline editing with basic options in the toolbar.*
 
-### Full screen editing {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
-Experience Manager components can be opened in full screen view that hides the page content and occupies the available screen. Consider full screen editing a detailed version of the inline editing as it offers the most editing options. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+[!DNL Experience Manager] components can be opened in full-screen view that hides the page content and occupies the available screen. Consider full-screen editing a detailed version of the inline editing as it offers the most editing options. It can be opened by clicking ![Icon to open RTE in full-screen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
-In the dialog full screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
+In the dialog full-screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
 
-![The detailed RTE toolbar when editing in full screen mode](assets/rte-toolbar-full-screen-mode.png)
+![The detailed RTE toolbar when editing in full-screen mode](assets/rte-toolbar-full-screen-mode.png)
 
-*Figure: The detailed RTE toolbar when editing in full screen mode.*
+*Figure: The detailed RTE toolbar when editing in full-screen mode.*
 
 ### Dialog editing {#dialog-editing}
 
-When a component is double-clicked a dialog box opens for editing the contents. The dialog box opens on top of the existing page. In some specific scenarios, the dialog opens as a pop-up window. For example, when a Text component is part of a column in a multi-column page layout and the area available for the dialog is less.
+When a component is double-clicked a dialog box opens for editing the contents. The dialog box opens on top of the existing page. In some specific scenarios, the dialog opens as a pop-up window. For example, when a Text component is part of a column in a multicolumn page layout and the area available for the dialog is less.
 
 ![Dialog editing mode](assets/dialog_editing_modetouchui.png)
 
@@ -76,7 +76,7 @@ The functionality is made available via a series of plug-ins, each with:
   * Used to activate, or deactivate, basic functionality for that plug-in.
   * Configured using a standardized procedure.
 
-* Where appropriate, additional properties and options requiring specialized configuration.
+* Where appropriate, more properties and options requiring specialized configuration.
 
 Basic features of the RTE are activated, or deactivated, by the value of the `features` property on a node specific to the appropriate plug-in.
 
@@ -88,34 +88,34 @@ The following table lists the current plug-ins, showing:
 
 |Plug-in ID|features|Description|
 |--- |--- |--- |
-|edit|cut copy paste-default paste-plaintext paste-wordhtml| [Cut, copy and, the three paste modes](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles).|
-|[findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin)|find replace| Find and replace.|
-|[format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin)|bold italic underline| [Basic text formatting](configure-rich-text-editor-plug-ins.md#textstyles).|
-|[image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin)|image|Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors|
-|[keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin)||To define this value, see [tab size](configure-rich-text-editor-plug-ins.md#tabsize).|
-|[justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin)|justifyleft justifycenter justifyright|Paragraph alignment.|
-|[links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin)|modifylink unlink anchor|[Hyperlinks and anchors](configure-rich-text-editor-plug-ins.md#linkstyles).|
-|[lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin)|ordered unordered indent outdent|This plug-in controls both [indentation and lists](configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists.|
-|[misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin)|specialchars sourceedit|Miscellaneous tools allow authors to enter [special characters](configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list.|
-|Paraformat|paraformat|The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). You can [add more paragraph formats](configure-rich-text-editor-plug-ins.md#paraformats) or extend the list.|
-|spellcheck|checktext|[Language aware spell checker](configure-rich-text-editor-plug-ins.md#adddict).|
-|styles|styles|Support for styling using a CSS class. [Add new text styles](configure-rich-text-editor-plug-ins.md#textstyles) if you want to add (or extend) your own range of styles for use with text.|
-|subsuperscript|subscript superscript|Extensions to the basic formats, adding sub- and super-script.|
-|table|table removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns|See [configure table styles](configure-rich-text-editor-plug-ins.md#tablestyles), if you want to add your own styles for either entire tables or individual cells.|
-|undo|undo redo|History size of [undo and redo](configure-rich-text-editor-plug-ins.md#undohistory) operations.|
+|edit| `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml`| [Cut, copy and, the three paste modes](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles).|
+|[findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin)|`find`, `replace`| Find and replace.|
+|[format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin)| `bold`, `italic`, `underline` | [Basic text formatting](configure-rich-text-editor-plug-ins.md#textstyles).|
+|[image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin)|`image`|Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors|
+|[keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin)| - |To define this value, see [tab size](configure-rich-text-editor-plug-ins.md#tabsize).|
+|[justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin)|`justifyleft`, `justifycenter`, `justifyright` |Paragraph alignment.|
+|[links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin)|`modifylink`, `unlink`, `anchor`|[Hyperlinks and anchors](configure-rich-text-editor-plug-ins.md#linkstyles).|
+|[lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin)|`ordered`, `unordered`, `indent`, `outdent` | This plug-in controls both [indentation and lists](configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists.|
+|[misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin)| `specialchars`, `sourceedit` |Miscellaneous tools let authors to enter [special characters](configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a [range of special characters](configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list.|
+|Paraformat|`paraformat`|The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). You can [add more paragraph formats](configure-rich-text-editor-plug-ins.md#paraformats) or extend the list.|
+|spellcheck| `checktext` | [Language aware spell checker](configure-rich-text-editor-plug-ins.md#adddict).|
+|styles| `styles` | Support for styling using a CSS class. [Add new text styles](configure-rich-text-editor-plug-ins.md#textstyles) if you want to add (or extend) your own range of styles for use with text.|
+| subsuperscript | `subscript`, `superscript` | Extensions to the basic formats, adding sub-script and super-script. |
+| table | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | See [configure table styles](configure-rich-text-editor-plug-ins.md#tablestyles) to add your own styles for entire tables or individual cells. |
+| undo | `undo`, `redo` | History size of [undo and redo](configure-rich-text-editor-plug-ins.md#undohistory) operations.|
 
 >[!NOTE]
 >
->The full screen plug-in is not supported in dialog mode. Use of the `dialogFullScreen` setting to configure the toolbar for full screen mode.
+>The full-screen plug-in is not supported in dialog mode. Use of the `dialogFullScreen` setting to configure the toolbar for full-screen mode.
 
 ## Understand the configuration paths and locations {#understand-the-configuration-paths-and-locations}
 
-The [mode of RTE editing (and the UI)](#editingmodes) that you provide for your authors decide the location for the configuration details when you are [activating the RTE plug-ins](configure-rich-text-editor-plug-ins.md#activateplugin):
+The [mode of RTE editing and the interface](#editingmodes) that you provide for your authors decide the location for the configuration details when you are [activating the RTE plug-ins](configure-rich-text-editor-plug-ins.md#activateplugin). The locations are:
 
-* Inline mode: `cq:editConfig/cq:inplaceEditing`
-* Full screen mode: `cq:editConfig/cq:inplaceEditing`
-* Dialog mode: `cq:dialog`
-* Full screen dialog mode: `cq:dialog`
+* Inline mode: `cq:editConfig/cq:inplaceEditing`.
+* Full-screen mode: `cq:editConfig/cq:inplaceEditing`.
+* Dialog mode: `cq:dialog`.
+* Full-screen dialog mode: `cq:dialog`.
 
 >[!NOTE]
 >
@@ -129,15 +129,11 @@ The [mode of RTE editing (and the UI)](#editingmodes) that you provide for your 
 
 Configure the following properties that apply in Dialog editing mode:
 
-* `useFixedInlineToolbar`: Set this Boolean property defined on the RTE node (one with sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) to `True`, to make RTE toolbar fixed instead of floating.
-
-  When this property is true, Richtext editing is, by default, started on the "foundation-contentloaded" event.
-
-  To prevent this, set the property `customStart` to `True`and trigger the 'rte-start' event to start RTE editing. When this property is 'true', the default behavior, rte start on click, does not work.
+* `useFixedInlineToolbar`: You can make the RTE toolbar fixed instead of floating. Set this Boolean property defined on the RTE node with sling:resourceType= `cq/gui/components/authoring/dialog/richtext` to `True`. When this property is set to `True`, the rich text editing is started on the `foundation-contentloaded` event. To prevent this, set the property `customStart` to `True` and trigger the `rte-start` event to start RTE editing. When this property is `true`, RTE does not start on clicking and this is the default behavior.
 
 * `customStart`: Set this Boolean property defined on the RTE node to `True`, to control when to start RTE by triggering the event `rte-start`.
 
-* `rte-start`: Trigger this event on the `contenteditable-div` of RTE, when to start editing RTE. This works only if `customStart` has been set to true.
+* `rte-start`: Trigger this event on the `contenteditable-div` of RTE, when to start editing RTE. It works only if `customStart` has been set to `true`.
 
 When RTE is used in the touch-enabled dialog, set the property `useFixedInlineToolbar` to `true` to avoid issues.
 
@@ -150,7 +146,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-The [Core Components text component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/features/templates.md) and the [Core Components developer documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+The [Core Components text component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/features/templates.md) and the [Core Components developer documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
 
 >For reference purposes, the default Text components (delivered as part of a standard installation) can be found at:
 >
@@ -161,7 +157,7 @@ The [Core Components text component](https://docs.adobe.com/content/help/en/expe
 
 ## Configure RTE toolbar {#dialogfullscreen}
 
-Experience Manager allows you to configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
+[!DNL Experience Manager] lets you to configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
 
 To configure the toolbar for `dialogFullScreen`, use the following sample configuration.
 
@@ -204,15 +200,15 @@ To configure the toolbar for `dialogFullScreen`, use the following sample config
 </uiSettings>
 ```
 
-Different UI settings are used for the inline mode and full screen mode. The toolbar property is used to specify the buttons of the toolbar.
+Different user interface settings are used for the inline mode and full-screen mode. The toolbar property specifies the option of the toolbar.
 
-For example, if the button is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
+For example, if the option is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
 
-If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
+If the option is a pop over (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
 
-Separators (`|`) between a group of buttons can be specified with `-`.
+Separators (`|`) between a group of option can be specified with `-`.
 
-The pop-up node under inline or full-screen mode contains a list of the popovers being used. Each child node under the 'popovers' node is named after the plug-in (for example, format). It has a property 'items' containing a list of features of the plug-in (for example, format#bold).
+The pop-up node under inline or full-screen mode contains a list of the pop overs being used. Each child node under the `popovers` node is named after the plug-in (for example, format). It has a property 'items' containing a list of features of the plug-in (for example, format#bold).
 
 ## RTE user interface settings and content policies {#rtecontentpolicies}
 
@@ -235,7 +231,7 @@ You can customize the mapping between Coral icons displayed on the RTE toolbar a
 1. Create nodes for individual icons under it.
 1. On each of the individual icon nodes, specify a Coral icon and a command to map to the icon.
 
-Below is a sample snippet to map the command Bold to the Coral icon named `textItalic`.
+Below is a sample snippet to map the command `Bold` to the Coral icon named `textItalic`.
 
 ```java
 <text jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/richtext" name="./text" useFixedInlineToolbar="{Boolean}true">
@@ -259,11 +255,11 @@ Below is a sample snippet to map the command Bold to the Coral icon named `textI
 
 ## Known limitations {#known-limitations}
 
-Experience Manager RTE capability has the following limitations:
+[!DNL Experience Manager] RTE capability has the following limitations:
 
-* RTE capabilities are supported only in Experience Manager component dialogs. RTE is not supported on wizards or Foundation-forms.
+* RTE capabilities are supported only in [!DNL Experience Manager] component dialogs. RTE is not supported on wizards or Foundation-forms.
 
-* Experience Manager does not work on Hybrid devices. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* [!DNL Experience Manager] does not work on Hybrid devices. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
@@ -273,7 +269,7 @@ Experience Manager RTE capability has the following limitations:
 
 * For a floating dialog, enable only the plug-ins without a pop-up dialog. Plug-ins without pop-up are smaller in size and are most suitable for a floating dialog.
 * Enable the plug-ins with larger pop-up, such as the `Paste` plug-in, only in the full-screen dialog mode or in full-screen mode. Plug-ins with large pop-up need more screen real-estate to provide a good authoring experience.
-* If you are using custom plugins for CoralUI3 RTE, use `rte.coralui3` library.
+* If you are using custom plug-ins for CoralUI3 RTE, use `rte.coralui3` library.
 
 >[!MORELIKETHIS]
 >

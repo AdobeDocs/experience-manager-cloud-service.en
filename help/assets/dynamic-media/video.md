@@ -25,13 +25,13 @@ The following step-by-step workflow description is designed to help you get up a
         * [Creating a video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
         * Learn more about [Best practices for video encoding](#best-practices-for-encoding-videos).
 
-    * Associate the video processing profile to one or more folders where you are going to upload your master videos.
+    * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
 
         * [Applying a video profile to folders](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
-    * Upload your master videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your primary source videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
         * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
@@ -130,13 +130,13 @@ For managing single video and Adaptive Video Sets, the following is supported:
 * Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
     * When an adaptive video set is generated, it includes MP4 videos.
-    * **Note**: Master/source videos are not added to an Adaptive Video Set.
+    * **Note**: Primary/source videos are not added to an Adaptive Video Set.
 
 * Video captioning in all HTML5 video viewers.
 * Organize, browse, and search video with full metadata support for efficient management of video assets.
 * Deliver Adaptive Video Sets to the web as well as to desktops, and mobile devices, including the iPhone, iPad, Android, Blackberry, and Windows phone.
 
-Adaptive video streaming is supported on a variety of iOS platforms. See [Scene7 Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html).
+Adaptive video streaming is supported on a variety of iOS platforms. See [Scene7 Viewers Reference Guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find Blackberry devices that support this video format at the following: [Supported video formats on Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -152,7 +152,7 @@ You can find Windows devices that support this video format at the following: [S
 
 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample.
 
-See also [Viewers for AEM and Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) and [Viewers for AEM assets only](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) in the Adobe Scene7 Viewers Reference Guide.
+See also [Viewers for AEM and Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) and [Viewers for AEM assets only](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
@@ -164,7 +164,7 @@ On the playback side of the viewer, it automatically detects the browser’s vid
 
 By combining into a single player the ability to design the playback components using HTML5 and CSS, have embedded playback, and use adaptive and progressive streaming depending on the browser’s capability, you extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
-See also [About HTML5 Viewers](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) in the Adobe Scene7 Viewers Reference Guide.
+See also [About HTML5 Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
 
 ### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -296,7 +296,7 @@ You can obtain a file’s metadata by viewing its metadata using a video editing
 
 ### Aspect ratio {#aspect-ratio}
 
-When you choose or create a video encoding preset for your master video file, make sure that the preset has the same aspect ratio as the master video file. The aspect ratio is the ratio of the width to the height of the video.
+When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio as the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
 
 To determine the aspect ratio of a video file, obtain the file’s metadata and note the file’s width and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
 
@@ -363,7 +363,7 @@ Because resolution and data rate are linked, you have two options when encoding 
 * Choose a data rate and then encode at the highest resolution that looks good at the data rate you chose.
 * Choose a resolution and then encode at the data rate necessary to achieve high-quality video at the resolution you chose.
 
-When you choose (or create) a video encoding preset for your master video file, use this table to target the correct resolution:
+When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
 
 |Resolution|Height (pixels)|Screen size|
 |--- |--- |--- |
@@ -378,7 +378,7 @@ When you choose (or create) a video encoding preset for your master video file, 
 
 In the United States and Japan, most video is shot at 29.97 frames per second (fps); in Europe, most video is shot at 25 fps. Film is shot at 24 fps.
 
-Choose a video encoding preset that matches the fps rate of your master video file. For example, if your master video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the master video file’s fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
+Choose a video encoding preset that matches the fps rate of your primary source video file. For example, if your primary source video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the primary source video file’s fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
 
 ### Video encoding dimensions {#video-encoding-dimensions}
 
@@ -416,7 +416,6 @@ Publishing video assets to YouTube servers involves completing the following tas
 1. [Configuring Google Cloud settings](#configuring-google-cloud-settings)
 1. [Creating a YouTube channel](#creating-a-youtube-channel)
 1. [Adding tags for publishing](#adding-tags-for-publishing)
-1. [Enabling the YouTube Publish Replication agent](#enabling-the-youtube-publish-replication-agent)
 1. [Setting up YouTube in AEM](#setting-up-youtube-in-aem)
 1. [(Optional) Automating the setting of default YouTube properties for your uploaded videos](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Publishing videos to your YouTube channel](#publishing-videos-to-your-youtube-channel)
@@ -555,9 +554,13 @@ To create a YouTube channel:
 
 To publish to your videos to YouTube, AEM associates tags to one or more YouTube channels. To add tags for publishing, see [Administering Tags](/help/sites-cloud/authoring/features/tags.md).
 
-Or, if you intend to use the default tags in AEM, you can skip this task and go to [Enabling the YouTube Publish replication agent](#enabling-the-youtube-publish-replication-agent).
+Or, if you intend to use the default tags in AEM, you can skip this task and go to [Setting up YouTube in AEM](#setting-up-youtube-in-aem).
 
-### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>After the cloud service is configured, additional configuration is not required to enable the YouTube Publish replication agent at this point. The reason is because it was enabled when the cloud service configuration was saved.
+
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
@@ -565,9 +568,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Click **[!UICONTROL OK]**.
-
-   Now you will set up YouTube in AEM.
+1. Click **[!UICONTROL OK]**. -->
 
 ### Setting up YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -740,7 +741,7 @@ Now you associate the tags that you added earlier to video assets. This process 
 >
 >Note that publish immediately does not automatically publish to YouTube. When Dynamic Media is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
 >
->**[!UICONTROL Publish Immediately]** means that the uploaded asset--after it is synched with IPS--is published automatically to the delivery system. While that is true for Dynamic Media, it is not true for YouTube. To publish to YouTube, you must publish by way of AEM Author.
+>**[!UICONTROL Publish Immediately]** means that the uploaded asset&ndash;after it is synched with IPS&ndash;is published automatically to the delivery system. While that is true for Dynamic Media, it is not true for YouTube. To publish to YouTube, you must publish by way of AEM Author.
 
 >[!NOTE]
 >
@@ -748,9 +749,9 @@ Now you associate the tags that you added earlier to video assets. This process 
 >
 >See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->For more detailed progress information, you can monitor the YouTube log under replication. Be aware, however, that such monitoring requires administrator access.
+>For more detailed progress information, you can monitor the YouTube log under replication. Be aware, however, that such monitoring requires Administrator access.
 
-To publish videos to your YouTube channel:
+**To publish videos to your YouTube channel**:
 
 1. In AEM, navigate to a video asset that you want to publish to your YouTube channel.
 1. Select the video asset (the adaptive video set).
@@ -774,7 +775,7 @@ You can optionally monitor progress of your YouTube publishing (or unpublishing)
 
 See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Publishing times can vary greatly depending on numerous factors that include the format of your master video, file size, and upload traffic. The publishing process can take anywhere from a few minutes to several hours. Also, be aware that higher resolution formats are rendered much more slowly. For example, 720p and 1080p take significantly longer to appear than 480p.
+Publishing times can vary greatly depending on numerous factors that include the format of your primary source video, file size, and upload traffic. The publishing process can take anywhere from a few minutes to several hours. Also, be aware that higher resolution formats are rendered much more slowly. For example, 720p and 1080p take significantly longer to appear than 480p.
 
 After eight hours if you you still see a status message that says **[!UICONTROL Uploaded (processing, please wait)]**, try removing the video from our site and uploading it again.
 
@@ -997,7 +998,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Scene7 Viewers Reference and the Scene7 HTML5 Viewers SDK to create your own video viewers.
 
-See [Scene7 Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+See [Scene7 Viewers Reference Guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 <!-- 
 
@@ -1071,7 +1072,7 @@ Captioning also allows for greater accessibility by using closed captioning for 
 
 Dynamic Media has the capability of converting caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl and index the content to make the videos more easily discoverable and give customers additional details about the video content.
 
-See [Serving static (non-image) contents](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) in the *Scene7 Image Serving API Help* for more information about using the JSON function in a URL.
+See [Serving static (non-image) contents](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) in the *Scene7 Image Serving API Help* for more information about using the JSON function in a URL.
 
 **To add captions or subtitles to video**
 

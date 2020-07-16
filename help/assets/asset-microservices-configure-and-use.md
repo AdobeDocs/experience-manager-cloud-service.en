@@ -31,7 +31,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of Experience Manager. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
+>The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of Experience Manager. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
 
 ## Get started with asset processing {#get-started}
 
@@ -92,9 +92,9 @@ An empty value means that asset processing assumes the pixel dimension of the or
 
 #### MIME type inclusion rules {#mime-type-inclusion-rules}
 
-When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset ("blacklisting").
+When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset (blocked list).
 
-Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated ("whitelisting").
+Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated (allowed list).
 
 #### Special FPO rendition {#special-fpo-rendition}
 
@@ -130,20 +130,18 @@ Users can check that the processing actually took place by opening a newly-uploa
 
 For situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
 
-Post-processing workflows, if configured, are automatically executed by AEM after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them.
+Post-processing workflows, if configured, are automatically executed by AEM after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them. The examples include:
 
-Examples include:
-
-* custom workflow steps for processing assets, for example, Java code to generate renditions from proprietary file formats.
-* integrations to add metadata or properties to assets from external systems, for example, product or process information.
-* additional processing done by external services
+* Custom workflow steps to process assets.
+* Integrations to add metadata or properties to assets from external systems, for example, product or process information.
+* Additional processing done by external services.
 
 Adding a post-processing workflow configuration to Experience Manager is comprised of the following steps:
 
-* Creating one or more workflow models. We'll call them "post-processing workflow models," but they are regular AEM workflow models.
-* Adding specific workflow steps to these models. These steps will be execution on the assets based on workflow model configuration.
-* The last step of such a model must be the `DAM Update Asset Workflow Completed Process` step. This is required to ensure that AEM knows the processing has ended and the asset can be marked as processed ("New")
-* Creating a configuration for the Custom Workflow Runner Service, which allows for configuring execution of a post-processing workflow model either by path (folder location) or regular expression
+* Create one or more workflow models. The documents mention it as *post-processing workflow models*, but those are regular Experience Manager workflow models.
+* Add specific workflow steps to these models. The steps are executed on the assets based on a workflow model configuration.
+* Add [!UICONTROL DAM Update Asset Workflow Completed Process] step at the end. Adding this step ensures that Experience Manager knows when the processing ends and the asset can be marked as processed, that is *New* is displayed on the asset.
+* Create a configuration for the Custom Workflow Runner Service that allows to configure execution of a post-processing workflow model either by a path (folder location) or by a regular expression.
 
 ### Create post-processing workflow models {#create-post-processing-workflow-models}
 
@@ -165,7 +163,7 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 >[!NOTE]
 >
 >Configuration of the Custom Workflow Runner is a configuration of an OSGi service. See [deploy to Experience Manager](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
-> OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
+>OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
 
 For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
 
