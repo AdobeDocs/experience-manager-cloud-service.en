@@ -240,7 +240,7 @@ To create, edit and use content fragments you also need:
   * Content models definitions require a title and one data element; everything else is optional. 
   * The model can define default content - if applicable. 
   * Authors cannot change the defined structure when authoring fragment content.
-  * Changes made to a model after dependent content fragments have been created, will impact those content fragments.
+  * Changes made to a model after dependent content fragments have been created, can impact those content fragments.
 
 * **Content Fragment Component**
 
