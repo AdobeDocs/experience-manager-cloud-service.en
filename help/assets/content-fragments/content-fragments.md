@@ -65,7 +65,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 >[!NOTE]
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
->* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
+>* **Content Fragments** are editorial content, that can be used to access structured data, including texts, numbers, and dates, amongst others. They are pure content, with definition and structure, but without additional visual design and/or layout.
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
@@ -145,10 +145,7 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Fragment Paragraphs**
 
-  * Blocks of text, that are:
-
-    * separated by vertical spaces (carriage return)
-    * in multi-line text elements
+  * Blocks of text, often multi-line, that are delimited as individual entities.
 
   * In the [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) and [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) modes, a paragraph can be formatted as a header, in which case it and the following paragraph belong together as one unit.
 
@@ -238,9 +235,12 @@ To create, edit and use content fragments you also need:
 * **Content Model**
 
   * Are [enabled and then created using Tools](/help/assets/content-fragments/content-fragments-models.md).
-  * Required to [create a structured fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+  * Required to [create a fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
-  * Content models definitions require a title and one data element; everything else is optional. The model defines a minimal scope of the fragment and default content if applicable. Authors cannot change the defined structure when authoring fragment content.
+  * Content models definitions require a title and one data element; everything else is optional. 
+  * The model can define default content - if applicable. 
+  * Authors cannot change the defined structure when authoring fragment content.
+  * Changes made to a model after dependent content fragments have been created, will impact those content fragments.
 
 * **Content Fragment Component**
 
