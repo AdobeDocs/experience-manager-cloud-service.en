@@ -126,7 +126,7 @@ For in-between content you can:
 >
 >You can also [insert visual assets (images) to the fragment itself](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph.
+>Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph. If you need this level of connection you can add the image to the fragment (as a [mixed-media fragment](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
