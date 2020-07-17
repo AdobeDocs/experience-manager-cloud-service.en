@@ -58,7 +58,7 @@ For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, reques
 >[!NOTE]
 >Access over:
 >* `/api/assets` **does not** need the use of the `.model` selector.
->* `/content/assets` **does** require the use of the `.model` selector.
+>* `/content/path/to/page` **does** require the use of the `.model` selector.
 
 The HTTP method determines the operation to be executed:
 
