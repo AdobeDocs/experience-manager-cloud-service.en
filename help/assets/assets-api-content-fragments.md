@@ -198,7 +198,7 @@ The Assets REST API exposes access to the properties of a folder; for example it
 
 If an asset is requested, the response will return its metadata; such as title, name and other information as defined by the respective asset schema.
 
-The binary data of an asset is exposed as a SIREN link of type `content` (also known as the `rel attribute`).
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 
@@ -231,7 +231,7 @@ Associated content is currently not exposed.
 
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
-* Creation is strictly bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
+* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
 * Delivery is possible from both, as AEM serves requested content in JSON format only.
 
   * Storage and delivery from an AEM author instance should suffice for behind-the-firewall, media library applications.
