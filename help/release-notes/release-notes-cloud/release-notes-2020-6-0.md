@@ -175,11 +175,6 @@ The release provides the following other enhancements:
 
 ### Bug Fixes {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
 In addition to the above new features, the current release provides the following bug fixes based on customer feedback for [!DNL Assets].
 
 * For MP3 music files, the play button displayed on thumbnail in the DAM preview does not work. (CQ-4294731)
@@ -188,3 +183,4 @@ In addition to the above new features, the current release provides the followin
 * When downloading an asset, if email option is selected and even if a valid email ID is provided, the download option is not available. (CQ-4296535)
 * Custom filters saved as smart collections are not applied properly to assets. (CQ-4294942)
 * Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
+* Folder properties display 500 internal server error. (CQ-4295701)
