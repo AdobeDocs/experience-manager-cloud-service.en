@@ -74,7 +74,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See Creating Translation Projects for Content Fragments for further information.
+>AEM also supports the translation of fragment content. 
 
 <!--
 >[!NOTE]
