@@ -32,7 +32,7 @@ It is also considered a best practice to include the Adobe Public Maven Reposito
 
 1. Determine the latest version of the CIF Project Archetype by viewing [the latest release on GitHub](https://github.com/adobe/aem-cif-project-archetype/releases/latest).
 
-    ![latest release version](./assets/new-cif-project/latest-release-GH.png)
+    ![latest release version](/help/commerce-cloud/assets/new-cif-project/latest-release-GH.png)
 
     This should be a 3-digit version number. For the purposes of this guide, any time you see `x.y.z` replace with the latest version you see on GitHub, i.e **0.3.0**, ***0.5.0***, ect...
 
@@ -307,7 +307,7 @@ Next we will verify that the project was installed successfully on the local AEM
 
     Search for the package **acme-store.all-0.0.1-SNAPSHOT.zip**:
 
-    ![Acme Store All Package](assets/new-cif-project/acme-store-all-package.png)
+    ![Acme Store All Package](/help/commerce-cloud/assets/new-cif-project/acme-store-all-package.png)
 
     Many more packages were installed than just the **acme-store.all-0.0.1-SNAPSHOT.zip** package. This is because the **acme-store.all-0.0.1-SNAPSHOT.zip** embedded multiple sub-packages within it. Some of these sub-packages even included sub-sub-packages! Luckily the archetype took care of setting up these dependencies for us.
 
@@ -327,41 +327,41 @@ Next we will verify that the project was installed successfully on the local AEM
 
 2. Navigate to the OSGi Configuration manager: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) and verify that the OSGi Configurations have been persisted:
 
-    ![OSGi Configurations](assets/new-cif-project/osgi-configurations.png)
+    ![OSGi Configurations](/help/commerce-cloud/assets/new-cif-project/osgi-configurations.png)
 
 3. Navigate to the [CIF Configurations console](http://localhost:4502/libs/commerce/gui/content/configuration.html/conf). You should see a configuration for **Acme Store Configuration**.
 
 4. View the properties for the **Acme Store Configuration** by selecting **Commerce** and clicking **Properties**.
 
-    ![Acme Store Configuration Properties](assets/new-cif-project/cif-cloud-service-console.png)
+    ![Acme Store Configuration Properties](/help/commerce-cloud/assets/new-cif-project/cif-cloud-service-console.png)
 
 5. You should see the properties entered in the previous exercise, including the custom entry for the **Root category id**:
 
-    ![Cloud Service Config Properties](assets/new-cif-project/cif-cloud-service-properties.png)
+    ![Cloud Service Config Properties](/help/commerce-cloud/assets/new-cif-project/cif-cloud-service-properties.png)
 
 6. Navigate to the AEM Products Console: [http://localhost:4502/aem/products.html/var/commerce/products](http://localhost:4502/aem/products.html/var/commerce/products).
 
 7. You should see an entry for **acme-default** has been automatically created. A magento binding has been created and categories and products are pulled from the Magento instance:
 
-    ![Commerce Console](assets/new-cif-project/commerce-console.png)
+    ![Commerce Console](/help/commerce-cloud/assets/new-cif-project/commerce-console.png)
 
 ## View Sample Content {#view}
 
 1. Navigate to the AEM Sites Console to view the sample content: [http://localhost:4502/sites.html/content/acme/us](http://localhost:4502/sites.html/content/acme/us)
 
-    ![Acme Store Sites Console](assets/new-cif-project/acme-store-sites-console.png)
+    ![Acme Store Sites Console](/help/commerce-cloud/assets/new-cif-project/acme-store-sites-console.png)
 
     If you have followed the video on the [Getting Started AEM - Magento Integration](01-getting-started.md) and installed the [Venia Demo Store Project](https://github.com/adobe/aem-cif-project-archetype/releases/tag/latest) this structure should look familiar. This is because the **samplecontent** installed with the archetype is the same content that the Venia Demo Store project uses. Now that we have our own AEM project, with a custom namespace, we can use the Venia Store as a base and begin to customize the project to meet our needs.
 
 2. Open the US `>` English page: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html). You should see a page like the following:
 
-    ![Home Page Venia Style](./assets/new-cif-project/acme-home-venia-style.png)
+    ![Home Page Venia Style](/help/commerce-cloud/assets/new-cif-project/acme-home-venia-style.png)
 
     Note that sample content has the Venia default style applied initially. This theme is intended to be overwritten by implementations by overwriting the client library located at `ui.apps/src/main/content/jcr_root/apps/acme/clientlibs/theme`.
 
 3. Switch into **Preview** mode. The navigation of the site should now be populated with categories from the connected Magento instance:
 
-    ![US EN Home Page](assets/new-cif-project/us-en-samplesite.png)
+    ![US EN Home Page](/help/commerce-cloud/assets/new-cif-project/us-en-samplesite.png)
 
     You should now be able to browse catalogs and products within the sample refrence storefront site.
 
