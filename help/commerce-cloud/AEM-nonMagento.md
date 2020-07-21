@@ -1,3 +1,8 @@
+---
+title: AEM and non-Magento/3rd Party Integration using Commerce Integration Framework
+description: AEM and non-Magento/3rd Party Integration using Commerce Integration Framework
+---
+
 # AEM and non-Magento/3rd Party Integration using Commerce Integration Framework
 
 Enterprise businesses may require additional 3rd party solutions in addition to a Commerce backend to power their storefront. The Commerce Integration Framework (CIF) can be used in such integration scenarios where in addition to Magento, a 3rd party solution also needs to be integrated with AEM. CIF provides elements such as an accelerator storefront, commerce core components and authoring tools that work with Magento out-of-the-box. To integrate AEM and a 3rd party solution and re-use these CIF elements, some additional development is needed. 
