@@ -8,11 +8,11 @@ description: AEM - Magento Integration using Commerce Integration Framework FAQ
 
 ### 1. Is GraphQL only used for Magento or will this be available for querying content authored on AEMs JCR?
 
-Adobe has adopted Magento’s GraphQL APIs as its official commerce API for all commerce related data. Hence, AEM uses GraphQL to exchange commerce data with Magento and later this year with any commerce engine via I/O Runtime. However, AEM intends to use GraphQL for querying in the future.
+Adobe has adopted Magento’s GraphQL APIs as its official commerce API for all commerce related data. Hence, AEM uses GraphQL to exchange commerce data with Magento and with any commerce engine via I/O Runtime. 
 
 ### 2. How does Adobe I/O come into play? Does AEM talk to Magento directly?
 
-The AEM commerce connector connects to Magento GraphQL. Hence, AEM can directly connect to Magento without an I/O Runtime layer. If there is a need to integrate a non-Magento commerce backend (third party solution) with AEM, the I/O Runtime platform can be used to host the mapping layer to connect the Magento GraphQL APIs to any third party solutions APIs. For more details on this, please refer to this [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference). For non-Magento solutions, AEM would be configured to point to the I/O Runtime endpoint.
+AEM can directly connect to Magento without an I/O Runtime layer. If there is a need to integrate a non-Magento commerce backend (third party solution) with AEM, the I/O Runtime platform can be used to host the mapping layer to connect the Magento GraphQL APIs to any third party solutions APIs. For more details on this, please refer to this [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference). For non-Magento solutions, AEM would be configured to point to the I/O Runtime endpoint.
 
 The I/O Runtime platform can also be used to extend or customize commerce services. For this use-cases you would call the I/O Runtime endpoint that will then host a customized implementation of the respective service. Integration and extension use-cases can be combined.
 
@@ -26,7 +26,7 @@ It does not matter where Magento is deployed. The integration and the new AEM Ve
 
 ### 5. How are catalog pages or product pages created in AEM? How do they persist in AEM?
 
-This new integration does not need the classic CIF on-prem workflow to import product and create product pages in AEM. Catalog pages and product pages are created and cached dynamically in AEM based on generic catalog and product page templates. No Product or Catalog data is imported and stored in AEM.
+Catalog pages and product pages are created and cached dynamically in AEM based on generic catalog and product page templates. No Product or Catalog data is imported and stored in AEM.
 
 ### 6. Do you also cache pricing and other data via Dispatcher. Does that raise a frequent cache invalidation challenge?
 
@@ -42,7 +42,7 @@ The Venia theme (developed by Magento) is used which is mobile first and aligned
 
 ### 9. When you update product data in Magento, is that a real-time push to AEM? Or is it a batch process?
 
-A connector (AEM-CIF connector) was developed which enables data to flow from Magento to AEM on-demand. Hence, this is not a real-time push or a batch process when there is an update in Magento.
+The CIF add-on used with AEM Cloud Service enables data to flow from Magento to AEM on-demand. Hence, this is not a real-time push or a batch process when there is an update in Magento.
 
 ### 10. Is there any recommendation on unified search across AEM content with Commerce?
 
@@ -62,34 +62,29 @@ Integration with third party solutions such as other commerce solutions (non-Mag
 
 ### 14. Is there a way to enhance the product data with commercial text? Where do you do this? In AEM or in Magento?
 
-This functionality is planned in early 2020 but can be developed on a project-level. There are multiple ways to achieve this and it will depend on the use case. One way would be to work with custom attributes. Allow AEM authors to mutate these fields in AEM’s product editor and synchronize the data back to the PIM. Another option would be leveraging AEM Experience Fragments which gets injected into the product pages.
+There are multiple ways to achieve this and it will depend on the use case. One way would be to work with custom attributes. Allow AEM authors to mutate these fields in AEM’s product editor and synchronize the data back to the PIM. Another option would be leveraging AEM Experience Fragments which gets injected into the product pages.
 
 ### 15. Does the integration between AEM-Magento change when Adobe I/O Runtime platform is used?
 
-Customers will not need to re-do the integration once GraphQL on I/O Runtime is available.
 Customers who want to extend commerce services can use the same integration and write action sequences hosted on the I/O Runtime platform to inject business logic and enrich the commerce services.
 
-### 16. With no products stored in AEM, how do you envision authors mapping images to a specific product?
-
-You can store product assets (images) in AEM Assets but you will have to manually store the asset URLs in Magento. Authors will have access to a tagging feature later in 2019 so that they can tag assets with product or catalog to enable product specific asset search.
-
-### 17. Since AEM creates product and catalog pages dynamically based on a generic template in AEM, what would I see if I were to open CRXDE Lite and check under content? Would I see an entire product tree based on the products in Magento? If not, how would an author enhance those pages?
+### 16. Since AEM creates product and catalog pages dynamically based on a generic template in AEM, what would I see if I were to open CRXDE Lite and check under content? Would I see an entire product tree based on the products in Magento? If not, how would an author enhance those pages?
 
 There are no JCR catalog or product pages anymore. See question 12.
 
-### 18. Will SPA store front work with AEM SPA editor?
+### 17. Will SPA store front work with AEM SPA editor?
 
 AEM can be used as an authoring tool for any kind of store front. Currently, hybrid rendering is used for the new store front. In the future, AEM will be used for authoring with SPA and PWA.
 
-### 19. How does PIM play into this framework?
+### 18. How does PIM play into this framework?
 
 PIM data gets exposed to AEM and clients via GraphQL requests. Our recommendation is to integrate PIM with the commerce engine (Magento or other) so that PIM data can then be retrieved from the commerce engine.
 
-### 20. How can we ensure PCI compliance when using AEM for the entire presentation layer?
+### 19. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
 When using AEM on AMS and Magento cloud deployment, it is mandatory to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass cardholder data. This approach provides coverage for PCI compliance for the tech stacks and data centers. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to https://magento.com/pci-compliance
 
-### 21. How can I request for an I/O Runtime trial license?
+### 20. How can I request for an I/O Runtime trial license?
 
 You can request for a trial license to use I/O Runtime [here](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md).
 
