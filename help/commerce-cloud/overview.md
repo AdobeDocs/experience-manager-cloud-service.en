@@ -38,6 +38,10 @@ The AEM components are server-side and client-side rendered components with Mage
 
 The AEM Venia storefront provides a B2C storefront for AEM (Author, Preview, Deploy) and supports Adobe Commerce GraphQL endpoints. It uses [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) & [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components). 
 
+#### AEM Project Archetype
+
+The [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. Optionally [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be included into a new generated project.
+
 #### CIF Extension Layer
 
 The CIF extension layer is a middle layer to host complex business logic. It runs on the Adobe I/O Runtime platform which is Adobe's serverless platform. It allows you to extend end-to-end service calls by injecting business and process logic on a microservice level. Business logic would be for example to use location and channel to determine an inventory strategy. Process logic would be for example to retrieve personalized information. 
