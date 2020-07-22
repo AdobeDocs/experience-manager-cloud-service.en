@@ -71,3 +71,13 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 * CRA was detecting duplicate custom components.
 
 * On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
+
+## What's New in AEM Cloud Services  {#whats-new-cloud-services}
+
+AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been updated with 
+
+* new AEM UI implementations, replacing previous versions based on Classic UI
+
+* simplified UI dialogs, leaving framework creation for variable mapping and other configurations to Adobe Launch 
+
+* storage of configurations now in /conf rather than /etc/cloudsettings in the AEM repository
