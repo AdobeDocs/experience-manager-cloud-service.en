@@ -13,6 +13,7 @@ The main differences as compared to Experience Manager 6.5 are in the following 
 * [Moving from on-premise and Adobe Managed Service](#moving-cif-cs)
 
 ## Support for CIF Classic/Quickstart on Experience Manager as a Cloud Service {#cif-classic}
+
 The Classic Commerce Integration Framework which included a Product Importer to import and store product catalogs in Experience Manager is no longer available in Experience Manager as a Cloud Service. The use of Classic CIF is not supported in Experience Manager as a Cloud Service and projects using Classic CIF will have to replace the Classic CIF implementation with the supported version as described in [CIF on Experience Manager as a Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
 
 
