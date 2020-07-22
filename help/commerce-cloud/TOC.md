@@ -12,6 +12,6 @@ user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
 + [Notable Changes to Commerce Integration Framework on AEM as a Cloud Service](changes.md)
 + [Architecture of the Commerce Integration Framework on AEM as a Cloud Service](architecture.md)
 + Developing {#developing}
-+ [Configuring](configuring.md)
++ [Configuring](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/tree/cif/help/commerce-cloud/configuring)
 + Deploying {#deploying}
 + [FAQ]((/help/commerce-cloud/faq.md))
