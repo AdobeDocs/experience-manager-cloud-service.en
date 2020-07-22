@@ -14,17 +14,17 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
-4. Post-GA, if time permits, create a video.
 -->
 
 ## Integrate with Adobe Developer Console {#aio-integration}
 
 Before you can tag the images using SCS, integrate [!DNL Adobe Experience Manager] with the Smart Tags service using Adobe Developer Console. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.
 
-* Create a configuration in [!DNL Experience Manager] to generate a public key. Obtain public certificate for OAuth integration.
-* Create an integration in Adobe Developer Console and upload the generated public key.
-* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
-* Optionally, enable auto-tagging on asset upload.
+* Create a configuration in [!DNL Experience Manager] to generate a public key. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
+* [Create an integration in Adobe Developer Console](#create-aio-integration) and upload the generated public key.
+* [Configure Smart Tags](#configure-smart-content-service) in your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
+* [Test the configuration](#validate-the-configuration).
+* [Reconfigure after certificate expires](#certrenew).
 
 ### Prerequisites for Adobe Developer Console integration {#prerequisite-for-aio-integration}
 
@@ -46,23 +46,6 @@ A public certificate allows you to authenticate your profile on Adobe Developer 
 1. Click **[!UICONTROL Download Public Key]**.
 
    ![Experience Manager Smart Tags create public key](assets/aem_smarttags-config1.png)
-
-### Reconfigure if a certificate expires {#certrenew}
-
-When the certificate expires it is no longer trusted. To add a new certificate, follow these steps. You cannot renew an expired certificate.
-
-1. Log in your [!DNL Experience Manager] deployment as an administrator. Click **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.  
-
-1. Locate and click **[!UICONTROL dam-update-service]** user. Click on **[!UICONTROL Keystore]** tab.
-1. Delete the existing **[!UICONTROL similaritysearch]** keystore with the expired certificate. Click **[!UICONTROL Save & Close]**.
-
-   ![Delete existing similaritysearch entry in Keystore to add a new security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
-
-   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a new security certificate.*
-
-1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open the available Smart Tags configuration. To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
-
-1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing service in the Project. Upload the new certificate and configure. For more information on configuration, see the instructions in [Create Adobe Developer Console integration](#create-aio-integration).
 
 ### Create an integration {#create-aio-integration}
 
@@ -97,6 +80,23 @@ After you've completed the configuration, follow these steps to validate the con
 1. Select the Smart Tags configuration. Click **[!UICONTROL Check Health]** from the toolbar. Click **[!UICONTROL Check]**. A dialog with [!UICONTROL Healthy configuration] message confirms that the configuration is working.
 
 ![Validate Smart Tags configuration](assets/smart-tag-config-validation.png)
+
+### Reconfigure if a certificate expires {#certrenew}
+
+When the certificate expires it is no longer trusted. To add a new certificate, follow these steps. You cannot renew an expired certificate.
+
+1. Log in your [!DNL Experience Manager] deployment as an administrator. Click **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.  
+
+1. Locate and click **[!UICONTROL dam-update-service]** user. Click on **[!UICONTROL Keystore]** tab.
+1. Delete the existing **[!UICONTROL similaritysearch]** keystore with the expired certificate. Click **[!UICONTROL Save & Close]**.
+
+   ![Delete existing similaritysearch entry in Keystore to add a new security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
+
+   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a new security certificate.*
+
+1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open the available Smart Tags configuration. To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
+
+1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing service in the Project. Upload the new certificate and configure. For more information on configuration, see the instructions in [Create Adobe Developer Console integration](#create-aio-integration).
 
 ## Enable smart tagging for newly uploaded assets (Optional) {#enable-smart-tagging-for-uploaded-assets}
 

@@ -17,9 +17,8 @@ If you make subsequent modifications to the original asset, folder, or collectio
 * [Publish collections to Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
- >
- >Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
- >
+>
+>Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
@@ -176,11 +175,10 @@ To unpublish asset folders from Brand Portal:
 You can publish or unpublish collections from your AEM Assets cloud instance.
 
 >[!NOTE]
- >
- >Content fragments cannot be published to the Brand Portal. Therefore, if you select content fragment(s) in AEM Assets, then **[!UICONTROL Publish to Brand Portal]** action is not available.
- >
- >If collections containing content fragments are published from AEM Assets to Brand Portal, then all the contents of the folder except content fragments is replicated to the Brand Portal interface.
- >
+>
+>Content fragments cannot be published to the Brand Portal. Therefore, if you select content fragment(s) in AEM Assets, then **[!UICONTROL Publish to Brand Portal]** action is not available.
+>
+>If collections containing content fragments are published from AEM Assets to Brand Portal, then all the contents of the folder except content fragments is replicated to the Brand Portal interface.
 
 ### Publish collections {#publish-collections}
 

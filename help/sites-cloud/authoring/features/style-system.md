@@ -110,21 +110,27 @@ The following steps are only necessary to enable the Style System for your own c
 
 ### Enable Style Tab in Design Dialog {#enable-styles-tab-design}
 
-In order for a component to work with AEM's Style System and show the style tab in its design dialog, the component developer must include the style tab with the following settings on the component:
+For a component to work with AEM's Style System and show the style tab in its design dialog, the component developer must include the style tab with the following settings on the component:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>This uses [overlays](/help/implementing/developing/introduction/overlays.md), by means of the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
 
 ### Enable Styles Tab in Edit Dialog {#enable-styles-tab-edit}
 
-An optional Styles tab in the Edit Dialog is also available. Unlike the Design Dialog tab, the tab in the Edit Dialog isn't essential for the Style System to function, but is an optional alternative interface for a content author to set styles.
+An optional Styles tab in the Edit Dialog is also available. Unlike the Design Dialog tab, the tab in the Edit Dialog is not essential for the Style System to function, but is an optional alternative interface for a content author to set styles.
 
 The edit dialog tab can be included in a similar way to the design dialog tab:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>This uses [overlays](/help/implementing/developing/introduction/overlays.md), by means of the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >

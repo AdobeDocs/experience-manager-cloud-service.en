@@ -27,7 +27,7 @@ It is key to understand that AEM will be updated frequently, potentially as ofte
 
 >[!NOTE]
 >
-> If custom code was pushed to staging and then rejected by you, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
+>If custom code was pushed to staging and then rejected by you, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
 
 On a regular frequency, a feature release will take place, focusing on feature additions and enhancements that will impact more substantially the user experience compared to the daily releases. A feature release is triggered not by the deployment of a large change set, but rather by the flip of a release toggle, activating code that has been accumulating over the course of days or weeks through the daily updates.
 
@@ -126,8 +126,11 @@ For the following cases, it is preferable to take the approach of hand coding ex
 * Create/delete groups
 * Create/delete users
 * Add ACLs
-  > [!NOTE] 
+
+  >[!NOTE]
+  >
   >Definition of ACLs requires the node structures to be already present. Thus, preceding create path statements might be necessary.
+
 * Add path (for example for root folder structures)
 * Add CNDs (nodetype definitions)
 
@@ -149,7 +152,7 @@ To create repoinit statements, follow the below procedure:
 
 <!-- last statement in step 2 to be clarified with Brian -->
 
->[!WARNING] 
+>[!WARNING]
 >
 >For ACLs defined for nodes underneath `/apps` or `/libs` the repoinit execution will start on a blank repository. The packages are installed after repoinit so statements cannot rely on anything defined in the packages but must define the preconditions like the parent structures underneath.
 

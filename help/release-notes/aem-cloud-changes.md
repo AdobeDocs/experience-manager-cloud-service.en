@@ -8,20 +8,30 @@ description: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Servic
 AEM Cloud Service brings many new features and possibilities for managing your AEM projects. However there are a number of differences between AEM Sites on premise or in Adobe Managed Service as compared to AEM Cloud Service. This document highlights the important differences.
 
 >[!NOTE]
->This document highlights the notable changes to AEM as a whole. For solution-specific changes see:
+>This document highlights the notable changes to AEM as a whole. For further information and solution-specific changes see:
 >
->* [Notable changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Notable changes to AEM Assets in AEM Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [What is New and What is Different](/help/overview/what-is-new-and-different.md) between Adobe Experience Manager as a Cloud Service and previous versions
+>* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+>* [Notable changes to AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 The main differences are found in the following areas:
 
 * [/apps and /libs are immutable at runtime](#apps-libs-immutable)
+
 * [OSGi bundles and settings must be repository-based](#osgi)
+
 * [Changes to publish repository are not allowed](#changes-to-publish-repo)
+
 * [Custom runmodes are not allowed](#custom-runmodes)
+
 * [Removal of Replication Agents](#replication-agents)
+
 * [Removal of Classic UI](#classic-ui)
+
 * [Publish-Side Delivery](#publish-side-delivery)
+
 * [Asset Handling and Delivery](#asset-handling)
 
 ## /apps and /libs are immutable at runtime {#apps-libs-immutable}

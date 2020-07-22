@@ -5,13 +5,24 @@ description: Notable changes to Adobe Experience Manager Assets in AEM Cloud Ser
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are many differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences for Assets capabilities. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. However, there are many differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a Cloud Service. This document highlights the important differences for Assets capabilities. 
 
 The main differences as compared to Experience Manager 6.5 are in the following areas:
 
 * [Asset ingestion and upload](#asset-ingestion).
 * [Asset microservices for cloud processing](#asset-microservices).
 * [Removal of Classic UI](#classic-ui).
+
+>[!NOTE]
+>
+>This document highlights the notable changes to AEM Assets. For changes general to AEM as a Cloud Service, and other modules, see:
+>
+>* [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* An [Overview of AEM as a Cloud Service - What is New and What is Different](/help/overview/what-is-new-and-different.md)
+>* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+>* [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
+>* [Notable changes to AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 
 ## Asset ingestion and upload {#asset-ingestion}
 

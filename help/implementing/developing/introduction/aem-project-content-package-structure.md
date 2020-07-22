@@ -29,7 +29,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 >[!WARNING]
 >
-> As in previous versions of AEM, `/libs` should not be modified. Only AEM product code may deploy to `/libs`.
+>As in previous versions of AEM, `/libs` should not be modified. Only AEM product code may deploy to `/libs`.
 
 ### Oak Indexes {#oak-indexes}
 
@@ -52,13 +52,13 @@ The recommended application deployment structure is as follows:
 + The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
   + OSGi bundles
     + `/apps/my-app/install`
-  + OSGi configurations
+  + [OSGi configurations](/help/implementing/deploying/configuring-osgi.md)
     + `/apps/my-app/config`
-  + HTL scripts
+  + [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) scripts
     + `/apps/my-app/components`
   + JavaScript and CSS (via Client Libraries)
     + `/apps/my-app/clientlibs`
-  + Overlays of /libs
+  + [Overlays](/help/implementing/developing/introduction/overlays.md) of /libs
     + `/apps/cq`, `/apps/dam/`, etc.
   + Fallback context-aware configurations
     + `/apps/settings`
@@ -496,7 +496,8 @@ If multiple `/apps/*-packages` are used in the embeddeds targets, then they all 
 ### 3rd Party Maven Repositories {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for dependencies.
+>
+>Adding more Maven repositories may extend maven build times as additional Maven repositories will be checked for dependencies.
 
 In the reactor project's `pom.xml`, add any necessary 3rd party public Maven repository directives. The full `<repository>` configuration should be available from the 3rd party repository provider.
 

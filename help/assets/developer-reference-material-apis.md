@@ -35,9 +35,9 @@ Important differences compared to earlier versions of AEM include:
 
 This approach should provide more scalable and performant handling of asset uploads.
 
-> ![NOTE]
+>[!NOTE]
 >
-> To review client code that implements this approach, refer to the open-source [aem-upload library](https://github.com/adobe/aem-upload)
+>To review client code that implements this approach, refer to the open-source [aem-upload library](https://github.com/adobe/aem-upload)
 
 ### Initiate upload {#initiate-upload}
 

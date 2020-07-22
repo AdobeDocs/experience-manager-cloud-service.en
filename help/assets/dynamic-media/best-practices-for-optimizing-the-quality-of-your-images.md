@@ -59,7 +59,7 @@ There are two image sharpening methods that you can use:
 
       AEM Help topic on Sharpening an image.
 
-      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
     * AEM also lets you control a fourth parameter: monochrome (0,1). This parameter determines if unsharp masking is applied to each color component separately using the value 0 or to the image brightness/intensity using the value 1.
 
