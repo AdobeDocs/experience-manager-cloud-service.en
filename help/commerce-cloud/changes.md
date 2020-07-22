@@ -17,13 +17,14 @@ The main differences as compared to Experience Manager 6.5 are in the following 
 The Classic Commerce Integration Framework which included a Product Importer to import and store product catalogs in Experience Manager is no longer available in Experience Manager as a Cloud Service. The use of Classic CIF is not supported in Experience Manager as a Cloud Service and projects using Classic CIF will have to replace the Classic CIF implementation with the supported version as described in [CIF on Experience Manager as a Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
 
 
-## Deployment of CIF Authoring Tools {#cif-tools}
+## Deployment of CIF {#cif-tools}
 
 Shown below are the different deployment models for Commerce Integration Framework for the different AEM offerings:
 
 |                  | AEM On-premise  |  AEM Managed Services         |  AEM Cloud Service         |
 |-------------     |-----------|-----------|-----------|
-|How to deploy CIF Authoring tools for Magento backend| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM 6.4 and 6.5| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM AMS 6.4 and 6.5| AEM Cloud Service instance will need to be provisioned with CIF add-on. Contact your sales representative for more details|
+|How to deploy CIF Authoring tools for Magento backend| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM 6.5| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM 6.5| AEM Cloud Service instance will need to be provisioned with CIF add-on. Contact your sales representative for more details|
+|How to deploy [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)|AEM package install|[Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html) | 
 
 Note: CIF Classic/Quickstart version of Commerce Integration Framework may be used on AEM On-premise offering for very limited use-cases. However, this is not the recommended solution.
 
