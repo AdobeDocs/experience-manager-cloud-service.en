@@ -5,7 +5,7 @@ description: Customize CIF Core Components
 
 # Customize CIF Core Components
 
-[CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides a standard set of Commerce components that can be used to accelerate a project that integrates Adobe Experience Manager (AEM) and Magento solutions. These components are production ready and can be [easily styled with CSS](./04-style-cif-component.md). Many implementations will also want to extend these components to meet business specific requirements.
+[CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides a standard set of Commerce components that can be used to accelerate a project that integrates Adobe Experience Manager (AEM) and Magento solutions. These components are production ready and can be [easily styled with CSS](style-cif-component.md). Many implementations will also want to extend these components to meet business specific requirements.
 
 In this tutorial we will review several different extension points provided by CIF Core Components and AEM in general. We will do this by extending the capabilities of the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to include the ability to render a "New" banner. Content authors will have the ability to turn toggle this banner and determine how long to display the banner. The "age" of the product will be based on it's creation date in the Magento catalog. Once a product is a certain amount of days old, the "New" banner should automatically disappear.
 
@@ -24,9 +24,8 @@ The following tools and technologies are required:
 
 It is recommended to review the following content before proceeding with this tutorial:
 
-* [Getting Started with AEM and Magento Integration - Video](../getting-started/01-getting-started.md)
-* [Creating a new AEM CIF Project - Tutorial](../getting-started/02-new-cif-project.md)
-* [Style CIF Core Components - Tutorial](./style-cif-component.md)
+* [Introducing Commerce Integration Framework on AEM as a Cloud Service](/help/commerce-cloud/overview.md)
+* [Style CIF Core Components - Tutorial](style-cif-component.md)
 
 ## Starter Project
 
@@ -53,7 +52,7 @@ We have provided a starter project to be used with this tutorial. The project wa
     $ mvn clean install -PautoInstallAll
     ```
 
-4. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance by following the [Getting started with AEM and Magento Integration - Video](../getting-started/01-getting-started.md) or add the configurations to the newly created project by following the instructions in [Creating a new AEM CIF Project - Tutorial](../getting-started/02-new-cif-project.md).
+4. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance or add the configurations to the newly created project.
 
 5. At this point you should have a working version of a storefront that is connected to a Magento instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -149,7 +148,7 @@ Use the IDE of your choice to [open the starter project downloaded](https://docs
 
     Currently there is no logic behind when the banner will be displayed. In the next few exercises we will correct that.
 
-    > Note, the CSS to render the banner was provided as part of the starter project and can be found at: `ui.apps/../apps/acme/clientlibs/theme/components/productteaser/teaser.css`. For more details checkout the [Styling CIF Core Components tutorial](./04-style-cif-component.md).
+    > Note, the CSS to render the banner was provided as part of the starter project and can be found at: `ui.apps/../apps/acme/clientlibs/theme/components/productteaser/teaser.css`. For more details checkout the [Styling CIF Core Components tutorial](style-cif-component.md).
 
 ## Customizing the Dialog of the Product Teaser
 

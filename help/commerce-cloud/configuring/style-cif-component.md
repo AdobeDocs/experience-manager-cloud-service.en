@@ -22,11 +22,6 @@ The following tools and technologies are required:
   * [AEM 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html)
 * Magento running a [version compatible to the archetype](https://github.com/adobe/aem-cif-project-archetype#requirements)
 
-It is recommended to review the following content before proceeding with this tutorial:
-
-* [Getting Started with AEM and Magento Integration - Video](../getting-started/01-getting-started.md)
-* [Creating a new AEM CIF Project - Tutorial](../getting-started/02-new-cif-project.md)
-
 ## Generate a project
 
 We will generate a new AEM CIF project using the [CIF Project archetype](https://github.com/adobe/aem-cif-project-archetype) and then override the default styles. 
@@ -63,7 +58,7 @@ We will generate a new AEM CIF project using the [CIF Project archetype](https:/
     $ mvn clean install -PautoInstallAll
     ```
 
-4. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance by following the [AEM and Magento Integration - Video](../getting-started/01-getting-started.md) or add the configurations to the newly created project by following the instructions in [Creating a new AEM CIF Project - Tutorial](../getting-started/02-new-cif-project.md).
+4. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance or add the configurations to the newly created project.
 
 5. At this point you should have a working version of a storefront that is connected to a Magento instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
