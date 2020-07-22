@@ -26,17 +26,34 @@ The main benefits are:
 
 ## CIF Elements
 
-### CIF Authoring tools
+### CIF add-on for Authoring tools
 
+The CIF add-On provides access to commerce authoring tooling such as product & category pickers or product search for authors to empower them to create rich experiences with marketing and commerce content. The add-on also manages the backend connection to Magento (or alternative commerce system) via GraphQL. Once the add-on is provisioned it is deployed on AEM as a Cloud Service environments automatically.
 
 
 ### AEM CIF Core Components
 
 The AEM components are server-side and client-side rendered components with Magento GraphQL support. They're used to create static, cacheable and SEO-friendly commerce storefornt based on AEM technologies.
 
+Basic components are provided, common across commerce implementations such as Product Detail, Product List, Navigation, Search, etc. They can be used as-is or be extended.
+
+The AEM CIF Core Components work like the AEM Sites Core Components but are dedicated to commerce specific use-cases.
+
+These components key benefits are:
+
+- They are easy to use in your projects.
+- They can be used as-is or with very minimal modifications.
+- They provide best practices for connecting with Magento via GraphQL APIs or REST APIs
+
+Components such as Product Teaser and Product Carousel are provided to enable AEM Authors to create Experience pages in AEM, combining marketing and commerce content. These components can be easily dragged and dropped on to a content page created in AEM and linked to specific products or categories using the CIF Authoring tools such as the Product or Category Picker in Cloud Service.
+
+All the components are open-sourced on GitHub. This shows full transparency on changes made going forward and allows you to get the latest version very easily. You can also provide pull requests for improvements and bug fixes that can be incorporated. For more details, refer to [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components).
+
 ### AEM Venia Storefront
 
-The AEM Venia storefront provides a B2C storefront for AEM (Author, Preview, Deploy) and supports Adobe Commerce GraphQL endpoints. It uses [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) & [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components). 
+The AEM Venia reference storefront is a modern production-ready reference storefront showcasing a basic B2C commerce journey. It can be used to kickstart commerce projects and accelerate projects using AEM, CIF, and Magento. It demonstrates best practices for integrating AEM and Magento and shows how to use the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) & [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) and supports Adobe Commerce GraphQL endpoints.. It also provides pre-sales with a reference site to demo the integration between AEM and Magento.
+
+The project is open source and for more details, refer to [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
 ### AEM Project Archetype
 
