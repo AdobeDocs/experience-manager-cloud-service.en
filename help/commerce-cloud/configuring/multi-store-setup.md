@@ -7,9 +7,7 @@ description: Multi-Store Setup
 
 A video walkthrough detailing options for integrating multiple Magento Store Views with Adobe Experience Manager Sites. AEM Multi-Site Management features of Live Copy and Language Copy are used in conjunction with the Commerce Integration Framework to globally manage sites across regions and locales.
 
-<figure class="video_container">
-  <iframe title="Adobe Video Publishing Cloud Player" width="640" height="360" src="https://video.tv.adobe.com/v/28952/?quality=12" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-</figure>
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 You can find more information on these topics from the following resources:
 
