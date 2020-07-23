@@ -59,7 +59,15 @@ Product and Catalog pages are relatively static and are rendered server-side usi
 These pages are created dynamically, rendered on the server, cached on the AEM dispatcher and then delivered to the browser.
 For more dynamic attributes such as Inventory or Price, on the other hand, client-side components are used. Client-side components or Web components fetch data directly from Magento via GraphQL APIs and the content is then rendered on the browser.
 
-The project is open source and for more details, refer to [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)
+#### Checkout
+
+This reference storefront uses client-side Cart component that renders the shopping cart and the checkout form to demonstrate a full experience integration pattern where you can deliver commerce experiences with Magento running in a completely headless way and AEM owning the glass. *This component requires the AEM Dispatcher to be setup with GraphQL routing to enable the AEM page to access Magento's GraphQL endpoint. Additionally, it is mandatory to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass PCI sensitive data. 
+
+#### Account Management
+
+Account management is handled by Magento and the reference storefront utilizes client-side React-based components to enable AEM to render the experience for the following functionalities: Create Acct, Sign In, and Forgot Password. *These components require the AEM Dispatcher to be setup with GraphQL routing to enable the AEM page to access Magento's GraphQL endpoint. 
+
+The AEM Venia storefront project is open source and for more details, refer to [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
 ### AEM Project Archetype
 
