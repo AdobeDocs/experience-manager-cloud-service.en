@@ -16,11 +16,11 @@ user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
   + [Customize](customize.md)
   + [Configure](configure.md)
   + [Deploy](deploy.md)
-+ Tutorials {#tutorials}
-  + [Multi-Template Usage](configuring/multi-template-usage.md)
-  + [Multi-Store Setup](configuring/multi-store-setup.md)
-  + [Shopping Cart Setup](configuring/shopping-cart-dispatcher.md)
-  + [Styling CIF Components](configuring/style-cif-component.md)
-  + [Customizing CIF Components](configuring/customize-cif-components.md)
-  + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
+  + Tutorials {#tutorials}
+    + [Multi-Template Usage](configuring/multi-template-usage.md)
+    + [Multi-Store Setup](configuring/multi-store-setup.md)
+    + [Shopping Cart Setup](configuring/shopping-cart-dispatcher.md)
+    + [Styling CIF Components](configuring/style-cif-component.md)
+    + [Customizing CIF Components](configuring/customize-cif-components.md)
+    + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
 + [FAQ](faq.md)
