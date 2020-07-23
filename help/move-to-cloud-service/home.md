@@ -43,7 +43,7 @@ Learn more about the different phases involved in the transition journey to Clou
 |[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.|
-|[Commerce User Guide](/help/security/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
+|[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
 
 ## Other Experience Manager Resources {#other-resources}
 

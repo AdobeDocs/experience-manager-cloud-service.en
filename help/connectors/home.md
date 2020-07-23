@@ -28,7 +28,7 @@ This page lists the self-help resources about Connectors for Experience Manager 
 |[Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.|
-|[Commerce User Guide](/help/security/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
+|[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
 
 ## Other Experience Manager Resources {#other-resources}
 
