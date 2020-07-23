@@ -17,5 +17,5 @@ user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
   + [Develop](develop.md)
   + [Customize](customize.md)
   + [Configure](configure.md)
-  + [Deploy](delpoy.md)
+  + [Deploy](deploy.md)
 + [FAQ](faq.md)
