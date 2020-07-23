@@ -11,7 +11,6 @@ user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
 + Architecture {#architecture}
   + [Magento Integration](architecture.md)
   + [3rd Party Commerce Integration](third-party.md)
-+ [Notable Changes to Commerce Integration Framework on AEM as a Cloud Service](changes.md)
 + [Architecture of the Commerce Integration Framework on AEM as a Cloud Service](architecture.md)
 + Develop, Customize, Configure and Deploy CIF {#configuring}
   + [Develop](develop.md)
