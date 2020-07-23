@@ -51,7 +51,13 @@ All the components are open-sourced on GitHub. This shows full transparency on c
 
 ### AEM Venia Storefront
 
-The AEM Venia reference storefront is a modern production-ready reference storefront showcasing a basic B2C commerce journey. It can be used to kickstart commerce projects and accelerate projects using AEM, CIF, and Magento. It demonstrates best practices for integrating AEM and Magento and shows how to use the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) & [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) and supports Adobe Commerce GraphQL endpoints.. It also provides pre-sales with a reference site to demo the integration between AEM and Magento.
+The AEM Venia reference storefront is a modern production-ready reference storefront showcasing a basic B2C commerce journey. It can be used to kickstart commerce projects and accelerate projects using AEM, CIF, and Magento. It demonstrates best practices for integrating AEM and Magento and shows how to use the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) & [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) and supports Adobe Commerce GraphQL endpoints. It also provides pre-sales with a reference site to demo the integration between AEM and Magento.
+
+The AEM Venia Store front is a mixed page application in which AEM owns the glass and Magento powers the commerce backend in a headless way. Both server-side rendering and client-side rendering are used in the storefront. Server-side rendering is used to deliver static content and client-side rendering is used to deliver dynamic content.
+
+Product and Catalog pages are relatively static and are rendered server-side using AEM Core Components such as Product Detail and Product List on generic templates created in AEM. These components get data from Magento via GraphQL APIs.
+These pages are created dynamically, rendered on the server, cached on the AEM dispatcher and then delivered to the browser.
+For more dynamic attributes such as Inventory or Price, on the other hand, client-side components are used. Client-side components or Web components fetch data directly from Magento via GraphQL APIs and the content is then rendered on the browser.
 
 The project is open source and for more details, refer to [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
