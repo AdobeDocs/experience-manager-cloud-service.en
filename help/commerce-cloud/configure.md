@@ -16,7 +16,7 @@ This guide helps you configuring CIF on AEM as a Cloud Service.
 
 You can find more information on this topic from the following resource(s):
 
-- [AEM CIF Core Components - Multi catalog page configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+* [AEM CIF Core Components - Multi catalog page configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 
 ## Multi-Store Setup
@@ -27,10 +27,10 @@ A video walkthrough detailing options for integrating multiple Magento Store Vie
 
 You can find more information on these topics from the following resources:
 
-- [Magento Websites, Stores & Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-- [AEM CIF Core Components - Multi store / site configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-- [Using Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-- [Reusing Content: Multi Site Manager and Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [Magento Websites, Stores & Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [AEM CIF Core Components - Multi store / site configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Using Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Reusing Content: Multi Site Manager and Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
 
 
 ## Shopping Cart and Dispatcher Setup
@@ -41,9 +41,9 @@ You can find more information on these topics from the following resources:
 
 You can find more information on this topic from the following resource(s):
 
-- [Shopping Cart](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher with Magento Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
-- [Docker Hub](https://hub.docker.com/)
+* [Shopping Cart](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
+* [AEM Dispatcher with Magento Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+* [Docker Hub](https://hub.docker.com/)
 
 
 ## Style CIF Core Components {#style-cif}
@@ -944,8 +944,8 @@ You just customized your first CIF component! Download the [finished solution pa
 
 You can find more information on this topic from the following resource(s):
 
-- [CIF URL Provider Configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#configuring-and-customising-product-and-category-pages-urls)
-- [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+* [CIF URL Provider Configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#configuring-and-customising-product-and-category-pages-urls)
+* [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 
 ## Additional Resources
