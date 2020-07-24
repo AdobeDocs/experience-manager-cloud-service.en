@@ -38,6 +38,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * The Cloud Manager build container now supports both Java 8 and Java 11.
 
+* Cloud Manager pipelines now support customer-set variables and secrets. 
+   Refer to [Pipeline Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) for more details.
+
 ### Bug Fixes {#bug-fixes-cm}
 
 * The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
@@ -55,6 +58,10 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 * The validation of environment names had an off-by-one error.
 
 * The Environments page would sometimes show publish and dispatcher segments when none was present.
+
+### Known Issues {#known-issues}
+
+* Due to a change in how code coverage is calculated, the _minimum_ version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version will receive an error message in the code quality process.
 
 ## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 

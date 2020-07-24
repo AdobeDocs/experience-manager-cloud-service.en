@@ -74,7 +74,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
 >[!NOTE]
 >
->To upload nested folder hierarchies to AEM, see [bulk upload of assets](#bulk-upload).
+>To upload nested folder hierarchies to AEM, see [bulk upload assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -120,7 +120,7 @@ However, the following (space-separated list of) characters are not supported:
 * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
 * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Bulk upload of assets {#bulk-upload}
+## Bulk upload assets {#bulk-upload}
 
 To upload larger number of files, especially if they exist in a nested folder hierarchy on disk, the following approaches can be used:
 

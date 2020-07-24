@@ -160,7 +160,7 @@ Content fragments can be integrated with:
 
 You can use the server-side API to access your content fragments; see:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -236,7 +236,9 @@ The following can be adapted:
 
 * `ContentElement` can be adapted to:
 
-  * `ElementTemplate` - for accessing the element's structural information.
+  * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - for accessing the element's structural information.
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` can be adapted to:
 
@@ -250,7 +252,7 @@ It should be noted that:
 
 * Tasks that might require additional effort:
 
-  * Create new variations from `ContentFragment` to update the data structure.
+  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements will share this variation, and that appropriate global data structures will be updated as required to reflect the newly created variation in the content structure.
 
   * Removing existing variations through an element, using `ContentElement.removeVariation()`, will not update the global data structures assigned to the variation. To ensure these data structures are kept in sync, use `ContentFragment.removeVariation()` instead, which removes a variation globally.
 
@@ -311,8 +313,8 @@ To create a new content fragment programmatically, you need to use a
 For example:
 
 ```java
-Resource ModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 
 ```
