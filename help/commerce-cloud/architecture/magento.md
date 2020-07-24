@@ -11,7 +11,7 @@ AEM and Magento are seamlessly integrated using the Commerce Integration Framewo
 
 The overall architecture is as follows:
 
-![AEM Magento Architecture Overview](assets/AEM_Magento_Architecture.JPG)
+![AEM Magento Architecture Overview](/help/commerce-cloud/assets/AEM_Magento_Architecture.JPG)
 
 ## AEM Venia Reference Store-front
 
