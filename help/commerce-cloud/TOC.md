@@ -21,5 +21,5 @@ user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
 + Customize AEM Commerce as a Cloud Service {#customize}
     + [Styling CIF Components](customizing/style-cif-component.md)
     + [Customizing CIF Components](customizing/customize-cif-components.md)
-+ [Deploy AEM Commerce as a Cloud Service](deploying.md)
++ [Deploy AEM Commerce as a Cloud Service](deploy.md)
 + [FAQ](faq.md)
