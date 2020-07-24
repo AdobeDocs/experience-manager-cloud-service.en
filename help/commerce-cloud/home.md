@@ -9,8 +9,8 @@ This page lists the self-help resources regarding Commerce Integration Framework
 
 ## Key Commerce Articles {#key-articles}
 
-* [Introduction to Commerce on AEM as a Cloud Service](overview.md)
-* [Architecture of the Commerce Integration Framework on AEM as a Cloud Service](architecture.md)
+* [Introduction of AEM Commerce as a Cloud Service](overview.md)
+* [Architecture of AEM Commerce as a Cloud Service](architecture/magento.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
