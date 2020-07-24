@@ -12,6 +12,7 @@ description: Customize CIF on AEM as a Cloud Service
 ## Style CIF Core Components {#style-cif}
 
 ## Additional Resources
+
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 * [Customizing CIF Core Components](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
