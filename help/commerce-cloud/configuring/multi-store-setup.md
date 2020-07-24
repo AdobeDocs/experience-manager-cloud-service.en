@@ -3,7 +3,7 @@ title: Multi-Store Setup
 description: Multi-Store Setup
 ---
 
-# Multi-Store Setup
+# Multi-Store Setup {#multi-store}
 
 The AEM CIF Core Components can be used on multiple AEM site structures and the underlying GraphQL client implementation can connect to different Magento stores / store views. This allows projects to implement complex multi-store / multi-site setups.
 
@@ -17,7 +17,7 @@ The recommended setup is to use a 1:1 relationship between AEM site and Magento 
 
 To connect an AEM site and AEM CIF Core Components so too to a dedicated store view follow the steps below:
 
-## Configuration
+## Configuration {#configuration}
 
 1. Configure multiple stores & store views according to the pattern described in [Magento Websites, Stores & Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
