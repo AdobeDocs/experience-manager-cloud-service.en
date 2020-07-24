@@ -11,7 +11,7 @@ Enterprise businesses may require additional 3rd party commerce solutions to pow
 
 The overall architecture is as follows:
 
-![AEM non-Magento/3rd Party Architecture Overview](assets/AEM_nonMagento_Architecture.JPG)
+![AEM non-Magento/3rd Party Architecture Overview](/help/commerce-cloud/assets/AEM_nonMagento_Architecture.JPG)
 
 The main difference between the integration architecure for AEM - Magento and AEM - 3rd party commerce is the addition of an integration and data transformation layer as shown in the image above. The integration layer needs to be hosted on the Adobe I/O Runtime platform which is Adobe's serverless platform. You can learn more about Adobe I/O Runtime [here](https://www.adobe.io/apis/experienceplatform/runtime.html).
 
