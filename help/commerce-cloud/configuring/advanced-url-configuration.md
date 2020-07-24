@@ -3,7 +3,6 @@ title: Advanced URL Configurations
 description: Advanced URL Configurations
 ---
 
-
 # Advanced URL Configurations
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations will customize these URLs for search engine optimization (SEO) purposes.  The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
