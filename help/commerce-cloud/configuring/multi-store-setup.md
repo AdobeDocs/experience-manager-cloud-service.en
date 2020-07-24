@@ -25,23 +25,23 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 
 3. Create a child configuration of the CIF Cloud Service config following these steps:
 
-    - In AEM go to Tools -> General -> Configuration Browser
-    - Select the base configuration you created
-    - Create a new configuration using the steps described at point 2 above
+   * In AEM go to Tools -> General -> Configuration Browser
+   * Select the base configuration you created
+   * Create a new configuration using the steps described at point 2 above
 
     This new configuration will be created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
 
 4. Assign the child configuration to an AEM site
 
-    - Go to AEM Sites console
-    - Navigate to the region or language root of your site structure e.g. /content/venia/us _or_ /content/venia/us/en for the Venia sample page
-    - Select the page and open page properties
-    - Select the Advanced tab
-    - In the `Configuration` section select the configuration you created at step
+   * Go to AEM Sites console
+   * Navigate to the region or language root of your site structure e.g. /content/venia/us _or_ /content/venia/us/en for the Venia sample page
+   * Select the page and open page properties
+   * Select the Advanced tab
+   * In the `Configuration` section select the configuration you created at step
 
 ## Additional Resources
 
-- [Magento Websites, Stores & Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-- [AEM CIF Core Components - Multi store / site configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-- [Using Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-- [Reusing Content: Multi Site Manager and Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [Magento Websites, Stores & Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [AEM CIF Core Components - Multi store / site configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Using Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Reusing Content: Multi Site Manager and Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
