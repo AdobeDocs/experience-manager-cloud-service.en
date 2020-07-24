@@ -6,7 +6,7 @@ user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
 # Commerce {#commerce}
 
 + [AEM Commerce as a Cloud Service](/help/commerce-cloud/home.md)
-+ [Introducing AEM Commerce as a Cloud Service](overview.md)
++ [Introduction](overview.md)
 + [Notable Changes](changes.md)
 + Architecture {#architecture}
   + [Magento Integration](architecture/magento.md)
