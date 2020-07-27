@@ -24,11 +24,13 @@ Before the client sends a GraphQL request, it will check if that **exact** same 
 We recommend that to configure some caching for the search service that fetches all the available aggregations/facets values displayed on the product search and category pages. These values typically only change when a new attribute is for example added to products, so the duration for this cache entry can be "large" if the set of product attributes does not change often. While this is project-specific, we recommend values of a few minutes in project development phases and a few hours on stable production systems.
 
 This is typically configured with the following cache entry:
+
 ```
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 ```
 
 Another example scenario where the GraphQl caching feature is recommended to be used is the navigation component because it sends the same GraphQL query on all pages. In this case, the cache entry would be typically set to:
+
 ```
 venia/components/structure/navigation:true:10:600
 ```
