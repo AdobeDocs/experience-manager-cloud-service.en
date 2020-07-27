@@ -100,3 +100,13 @@ AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been upda
 * Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Additionally, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
 
 * Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
+
+## What's New in Foundations in AEM as a Cloud Service {#cloud-foundation}
+
+* Logs can be forwarded to Splunk accounts, which allows organizations to leverage their Splunk investment.
+
+* A static, dedicated egress IP address can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
+
+* Ported AEM Analytics cloud service UI from Classic UI to new AEM UI. Also moved location of Analytics cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services. 
+
+* Ported AEM Target cloud service UI from Classic UI to new AEM UI. Also moved location of Target cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
