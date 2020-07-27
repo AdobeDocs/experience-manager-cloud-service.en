@@ -37,7 +37,7 @@ The AEM components are server-side and client-side rendered components with Mage
 
 Basic components are provided, common across commerce implementations such as Product Detail, Product List, Navigation, Search, etc. They can be used as-is or be extended.
 
-The AEM CIF Core Components work like the AEM Sites Core Components but are dedicated to commerce specific use-cases.
+The [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) work like the [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) but are dedicated to commerce specific use-cases.
 
 These components key benefits are:
 
@@ -47,7 +47,7 @@ These components key benefits are:
 
 Components such as Product Teaser and Product Carousel are provided to enable AEM Authors to create Experience pages in AEM, combining marketing and commerce content. These components can be easily dragged and dropped on to a content page created in AEM and linked to specific products or categories using the CIF Authoring tools such as the Product or Category Picker in Cloud Service.
 
-All the components are open-sourced on GitHub. This shows full transparency on changes made going forward and allows you to get the latest version very easily. You can also provide pull requests for improvements and bug fixes that can be incorporated. For more details, refer to [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components).
+All the components are open-sourced on [GitHub](https://github.com/adobe/aem-core-cif-components). This shows full transparency on changes made going forward and allows you to get the latest version very easily. You can also provide pull requests for improvements and bug fixes that can be incorporated.
 
 ### AEM Venia Storefront
 
