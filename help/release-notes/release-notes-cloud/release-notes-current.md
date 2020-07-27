@@ -93,7 +93,7 @@ AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been upda
 
 ## What's New in [!DNL Adobe Experience Manager Assets] {#assets}
 
-### What's New {#what-is-assets}
+### What's New {#what-is-new-assets}
 
 * [!DNL Asset Compute Service] is a scalable and extensible service for processing assets. In addition the Asset Compute Service runs on the Adobe I/O Runtime platform which allows the traditionally intensive asset processing to be offloaded. It requires Firefly to work. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. It allows partners and customers to develop and deploy custom workers.
 
