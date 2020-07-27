@@ -13,7 +13,7 @@ The overall architecture is as follows:
 
 ![CIF Architecture Overview](../assets/AEM_Magento_Architecture.JPG)
 
-CIF builds upon GraphQL support. The main communication channel between AEM and Magento is Magento's [GraphQL API](https://devdocs.magento.com/guides/v2.3/graphql/index.html) API.
+CIF builds upon GraphQL support. The main communication channel between AEM and Magento is Magento's [GraphQL API](https://devdocs.magento.com/guides/v2.3/graphql/index.html) API. There are different ways to configure the communication between AEM as a Cloud Service and Magento, see [configration](../configuring/graphql.md) page for details.
 
 Within CIF there is support for server-side and client-side communication patterns.
 Server-side APIs calls are implemented using the build-in, generic [GraphQL client](https://github.com/adobe/commerce-cif-graphql-client) in combination with a [set of generated data models](https://github.com/adobe/commerce-cif-magento-graphql) for the Magento GraphQL schema. Additionally, any GraphQL query or mutation in GQL format can be used.
