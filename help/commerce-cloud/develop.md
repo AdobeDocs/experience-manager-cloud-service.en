@@ -23,12 +23,12 @@ The CIF Add-On is provided as a Sling Feature archive. The Zip file available on
 
 The following should be installed locally:
 
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
-- [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
-- [Node.js v10+](https://nodejs.org/en/)
-- [npm 6+](https://www.npmjs.com/)
-- [Git](https://git-scm.com/)
+* [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
+* [Node.js v10+](https://nodejs.org/en/)
+* [npm 6+](https://www.npmjs.com/)
+* [Git](https://git-scm.com/)
 
 ### Accessing the CIF Add-on
 
@@ -111,6 +111,6 @@ To get started with the Venia Reference Store simply clone the Git repository an
 
 ## Additional Resources
 
-- [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
+* [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+* [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
