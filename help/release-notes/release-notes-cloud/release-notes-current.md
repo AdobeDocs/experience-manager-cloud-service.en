@@ -11,7 +11,9 @@ The following section outlines the general Release Notes for Experience Manager 
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
-## What's New in Core Components {#whats-new-core-components}
+## Core Components {#whats-new-core-components}
+
+### What's New {#what-is-new-core-components}
 
 Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
@@ -20,7 +22,7 @@ Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/e
 * Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
 * Bug fixes and code quality improvements
 
-## What's New in Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.7.0.
 
@@ -63,7 +65,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * Due to a change in how code coverage is calculated, the _minimum_ version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version will receive an error message in the code quality process.
 
-## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
 Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.0.2.
 
@@ -79,17 +81,21 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
 
-## What's New in AEM Cloud Services {#whats-new-cloud-services}
+## AEM Cloud Services {#whats-new-cloud-services}
+
+### What's New {#what-is-new-cloud-services}
 
 AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been updated with
 
-* new AEM UI implementations, replacing previous versions based on Classic UI
+* New AEM UI implementations, replacing previous versions based on Classic UI
 
 * simplified UI dialogs, leaving framework creation for variable mapping and other configurations to Adobe Launch
 
 * storage of configurations now in /conf rather than /etc/cloudsettings in the AEM repository
 
-## What is new in [!DNL Adobe Experience Manager Assets] {#assets}
+## [!DNL Adobe Experience Manager Assets] {#assets}
+
+### What's New {#what-is-assets}
 
 * [!DNL Asset Compute Service] is a scalable and extensible service for processing assets. In addition the Asset Compute Service runs on the Adobe I/O Runtime platform which allows the traditionally intensive asset processing to be offloaded. It requires Firefly to work. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. It allows partners and customers to develop and deploy custom workers.
 
@@ -101,7 +107,9 @@ AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been upda
 
 * Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
 
-## What's New in Foundations in AEM as a Cloud Service {#cloud-foundation}
+## Foundations in AEM as a Cloud Service {#cloud-foundation}
+
+### What's New {#what-is-new-foundations}
 
 * Logs can be forwarded to Splunk accounts, which allows organizations to leverage their Splunk investment.
 
