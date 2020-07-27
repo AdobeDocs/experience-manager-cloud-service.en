@@ -24,8 +24,6 @@ Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/e
 
 ## What's New in Cloud Manager {#cloud-manager}
 
-Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.7.0.
-
 ### Release Date {#release-date-cm}
 
 The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
