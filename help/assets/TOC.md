@@ -1,6 +1,7 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
+user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 ---
 
 # Assets {#assets}
