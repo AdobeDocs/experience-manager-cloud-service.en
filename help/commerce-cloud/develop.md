@@ -98,6 +98,31 @@ mvn -B archetype:generate \
  -D includeExamples=n \
  -D includeCommerce=y
 ```
+CIF Core Components can be used in any project by either including the provided `all` package or individualy using the CIF content package and related OSGI bunldes. To manually add CIF Core Components to a project use the following dependencies:
+
+```java
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-apps</artifactId>
+    <type>zip</type>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-core</artifactId>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>graphql-client</artifactId>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>magento-graphql</artifactId>
+    <version>x.y.z</version>
+</dependency>
+```
 
 ### Use AEM Venia Reference Store
 
