@@ -9,7 +9,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ## Release Date {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 31, 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
 ## What's New in Core Components {#whats-new-core-components}
 
@@ -38,7 +38,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * The Cloud Manager build container now supports both Java 8 and Java 11.
 
-* Cloud Manager pipelines now support customer-set variables and secrets. 
+* Cloud Manager pipelines now support customer-set variables and secrets.
    Refer to [Pipeline Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) for more details.
 
 ### Bug Fixes {#bug-fixes-cm}
@@ -79,12 +79,24 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
 
-## What's New in AEM Cloud Services  {#whats-new-cloud-services}
+## What's New in AEM Cloud Services {#whats-new-cloud-services}
 
-AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been updated with 
+AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been updated with
 
 * new AEM UI implementations, replacing previous versions based on Classic UI
 
-* simplified UI dialogs, leaving framework creation for variable mapping and other configurations to Adobe Launch 
+* simplified UI dialogs, leaving framework creation for variable mapping and other configurations to Adobe Launch
 
 * storage of configurations now in /conf rather than /etc/cloudsettings in the AEM repository
+
+## What is new in [!DNL Adobe Experience Manager Assets] {#assets}
+
+* [!DNL Asset Compute Service] is a scalable and extensible service for processing assets. In addition the Asset Compute Service runs on the Adobe I/O Runtime platform which allows the traditionally intensive asset processing to be offloaded. It requires Firefly to work. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. It allows partners and customers to develop and deploy custom workers.
+
+* The initial configuration of [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service is improved to be more robust. It now provides progress of the processes to the administrators.
+
+* Publishing of assets to [!DNL Dynamic Media] is simplified and made more robust by making it an integral part of overall asset processing pipeline using asset microservices and improving the batch publishing backend.
+
+* Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Additionally, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
+
+* Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
