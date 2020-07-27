@@ -26,9 +26,9 @@ The main benefits are:
 
 ## CIF Elements
 
-### CIF add-on for Authoring tools
+### CIF Add-On for Authoring tools
 
-The CIF add-On provides access to commerce authoring tooling such as product & category pickers or product search for authors to empower them to create rich experiences with marketing and commerce content. The add-on also manages the backend connection to Magento (or alternative commerce system) via GraphQL. Once the add-on is provisioned it is deployed on AEM as a Cloud Service environments automatically.
+The CIF Add-On provides access to commerce authoring tooling such as product & category pickers or product search for authors to empower them to create rich experiences with marketing and commerce content. The add-on also manages the backend connection to Magento (or alternative commerce system) via GraphQL. Once the add-on is provisioned it is deployed on AEM as a Cloud Service environments automatically.
 
 
 ### AEM CIF Core Components
@@ -51,7 +51,7 @@ All the components are open-sourced on GitHub. This shows full transparency on c
 
 ### AEM Venia Storefront
 
-The AEM Venia reference storefront is a modern production-ready reference storefront showcasing a basic B2C commerce journey. It can be used to kickstart commerce projects and accelerate projects using AEM, CIF, and Magento. It demonstrates best practices for integrating AEM and Magento and shows how to use the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) & [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) and supports Adobe Commerce GraphQL endpoints. It also provides pre-sales with a reference site to demo the integration between AEM and Magento.
+The [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) is a modern production-ready reference storefront showcasing a basic B2C commerce journey. It can be used to kickstart commerce projects and accelerate projects using AEM, CIF, and Magento. It demonstrates best practices for integrating AEM and Magento and shows how to use the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) & [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) and supports Adobe Commerce GraphQL endpoints. It also provides pre-sales with a reference site to demo the integration between AEM and Magento.
 
 The AEM Venia Store front is a mixed page application in which AEM owns the glass and Magento powers the commerce backend in a headless way. Both server-side rendering and client-side rendering are used in the storefront. Server-side rendering is used to deliver static content and client-side rendering is used to deliver dynamic content.
 
@@ -61,13 +61,13 @@ For more dynamic attributes such as Inventory or Price, on the other hand, clien
 
 #### Checkout
 
-This reference storefront uses client-side Cart component that renders the shopping cart and the checkout form to demonstrate a full experience integration pattern where you can deliver commerce experiences with Magento running in a completely headless way and AEM owning the glass. *MH*This component requires the AEM Dispatcher to be setup with GraphQL routing to enable the AEM page to access Magento's GraphQL endpoint. Additionally, it is mandatory to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass PCI sensitive data. 
+This reference storefront uses client-side Cart component that renders the shopping cart and the checkout form to demonstrate a full experience integration pattern where you can deliver commerce experiences with Magento running in a completely headless way and AEM owning the glass. It is recommended to use the provided abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass PCI sensitive data.
 
 #### Account Management
 
 Account management is handled by Magento and the reference storefront utilizes client-side React-based components to enable AEM to render the experience for the following functionalities: Create Acct, Sign In, and Forgot Password.
 
-The AEM Venia storefront project is open source and for more details, refer to [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)
+The AEM Venia storefront project is open source and for more details, refer to [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia).
 
 ### AEM Project Archetype
 
