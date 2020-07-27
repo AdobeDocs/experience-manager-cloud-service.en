@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Release Notes for 2020.7.0
-description: Experience Manager Release Notes for 2020.7.0
+title: Release Notes for 2020.7.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.7.0.
 ---
 
-# Release Notes for AEM as a Cloud Service 2020.7.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.7.0.
 
@@ -12,8 +12,6 @@ The following section outlines the general Release Notes for Experience Manager 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
 ## What's New in Core Components {#whats-new-core-components}
-
-### What's New {#what-is-new-core-components}
 
 Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
@@ -61,7 +59,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 ### Known Issues {#known-issues}
 
-* Due to a change in how code coverage is calculated, the _minimum_ version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version will receive an error message in the code quality process.
+* Due to a change in how code coverage is calculated, the *minimum* version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version receive an error message in the code quality process.
 
 ## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
@@ -79,21 +77,17 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
 
-## What's New in AEM Cloud Services {#whats-new-cloud-services}
+## What is new in [!DNL Experience Manager Sites] as a Cloud Services {#whats-new-cloud-services}
 
-### What's New {#what-is-new-cloud-services}
+[!DNL Experience Manager] as a Cloud Service connectors for [!DNL Adobe Target] and [!DNL Adobe Analytics] are enhanced in the following ways:
 
-AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been updated with
+* A new user interface implementation replaces the implementation based on the Classic UI.
 
-* New AEM UI implementations, replacing previous versions based on Classic UI
+* Simplified user interface dialogs, leaving framework creation for variable mapping and other configurations to [!DNL Adobe Launch].
 
-* simplified UI dialogs, leaving framework creation for variable mapping and other configurations to Adobe Launch
+* Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
 
-* storage of configurations now in /conf rather than /etc/cloudsettings in the AEM repository
-
-## What's New in [!DNL Adobe Experience Manager Assets] {#assets}
-
-### What's New {#what-is-new-assets}
+## What is new in [!DNL Adobe Experience Manager Assets] {#assets}
 
 * [!DNL Asset Compute Service] is a scalable and extensible service for processing assets. In addition the Asset Compute Service runs on the Adobe I/O Runtime platform which allows the traditionally intensive asset processing to be offloaded. It requires Firefly to work. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. It allows partners and customers to develop and deploy custom workers.
 
@@ -113,6 +107,6 @@ AEM Cloud Service connectors for Adobe Target and Adobe Analytics have been upda
 
 * A static, dedicated egress IP address can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
 
-* Ported AEM Analytics cloud service UI from Classic UI to new AEM UI. Also moved location of Analytics cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services. 
+* Ported AEM Analytics cloud service UI from Classic UI to new AEM UI. Also moved location of Analytics cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
 
 * Ported AEM Target cloud service UI from Classic UI to new AEM UI. Also moved location of Target cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
