@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager and Adobe Creative Cloud integration best practices
-description: Best practices for integrating an AEM instance with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
+description: Best practices integrate an Experience Manager deployment with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
 contentOwner: AG
 mini-toc-levels: 1
 ---
