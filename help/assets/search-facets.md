@@ -1,11 +1,9 @@
 ---
-title: Search facets
+title: Search facets.
 description: This article describes how to create, modify, and use search facets in AEM.
 ---
 
 # Search facets {#search-facets}
-
-Learn how to create, modify, and use search facets in AEM.
 
 An enterprise-wide deployment of Adobe Experience Manager (AEM) Assets has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of AEM.
 
@@ -28,34 +26,30 @@ For full-text searches, add the `Fulltext` predicate to the form. Use the Proper
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
 
-   ![Drag-and-drop a predicate to customize the search filters](assets/drag_predicate.png)
+   ![Press and move a predicate to customize the search filters](assets/drag_predicate.png)
 
-   Drag-and-drop a predicate to customize the search filters
+   *Figure: Press and move a predicate to customize the search filters.*
 
-1. In the Settings tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate.
-
-   The header label in the Settings tab identifies the type of the selected predicate.
+1. In the Settings tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate. The header label in the Settings tab identifies the type of the selected predicate.
 
    ![Use the Settings tab to provide the required options of a predicate](assets/settings.png)
 
-   Use the Settings tab to provide the required options of a predicate
+   *Figure: Use the Settings tab to provide the required options of a predicate.*
 
-1. In the **[!UICONTROL Property Name]** field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. For example, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`.
-
-   You can also select an existing node from the selection dialog.
+1. In the **[!UICONTROL Property Name]** field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. For example, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`. You can also select an existing node from the selection dialog.
 
    ![Associate a metadata property with a predicate in the Property Name field](assets/property_settings.png)
 
-   Associate a metadata property with a predicate in the Property Name field
+   *Figure: Associate a metadata property with a predicate in the Property Name field.*
 
-1. Tap/click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
+1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
 1. Review the layout of the predicate in the Preview mode.
 
    ![Preview the search form before submitting the changes](assets/preview-1.png)
 
    Preview the search form before submitting the changes
 
-1. To close the preview, tap/click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
+1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
 1. Tap **[!UICONTROL Done]** to save the settings.
 1. Navigate to the Search panel in the Assets user interface. The Property predicate is added to the panel.
 1. Enter a description for the asset to be searched in the text box. For example, enter "Adobe." When you perform a search, assets with description matching "Adobe" are listed in the search results.
@@ -132,13 +126,11 @@ The `Tags` predicate allows you to perform tag-based searches for assets. By def
 1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
-1. In the Settings tab, enter a placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. Alternatively, you can select a node in CRXDE from the selection dialog.
+1. In the Settings tab, enter a placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. Alternatively, you can select a node in CRXDE from the selection dialog.
 1. Configure the Root tags path property of this predicate to populate various tags in the Tags list.
 1. Select **[!UICONTROL Show match all tags option]** to search for assets that include all tags that you specify.
 
    ![Typical settings of Tags predicate](assets/tags_predicate.png)
-
-   Typical settings of Tags predicate
 
 1. In the **[!UICONTROL Description]** field, enter an optional description and then click/tap **[!UICONTROL Done]**.
 1. Navigate to the Search panel. The **[!UICONTROL Tags]** predicate is added to the Search panel.
@@ -323,27 +315,12 @@ To restore the default search facet, perform these steps:
 
 If you are not assigned an administrator role, here is a list of permissions you require to perform edit, delete, and preview actions involving search facets.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Action</strong></td>
-   <td><strong>Permissions</strong></td>
-  </tr>
-  <tr>
-   <td>Edit </td>
-   <td>Read and Write permissions on the <code>/apps</code> node in CRX<br /> </td>
-  </tr>
-  <tr>
-   <td>Delete</td>
-   <td>Read, Write, and Delete permissions on the <code>/apps</code> node in CRX</td>
-  </tr>
-  <tr>
-   <td>Preview</td>
-   <td>Read, Write, and Delete permissions on the <code>/var/dam/content</code> node in CRX. Also, Read and Write permissions on <code>/apps</code> node.</td>
-  </tr>
- </tbody>
-</table>
+| Action | Permission |
+|---|---|
+|Edit|Read and write permissions on the `/apps` node in CRX.|
+|Delete|Read, write, and delete permissions on the `/apps` node in CRX.|
+|Preview|Read, write, and delete permissions on the `/var/dam/content` node in CRX. Also, Read and write permissions on `/apps` node.|
 
 >[!MORELIKETHIS]
 >
->* [Search digital assets](search-assets.md)
+>* [Search digital assets](search-assets.md).
