@@ -164,21 +164,21 @@ Customers will not have access to developer tooling for staging and production e
 
 Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metrics can not be obeserved.
 
-## Dedicated Egress IP Address
+## Dedicated Egress IP Address {#dedicated-egress-ip-address}
 
 Upon request, AEM as a Cloud Service will provision a static, dedicated, IP address for HTTP (port 80) and HTTPS (port 443) outbound traffic programmed in Java code. 
 
-### Benefits
+### Benefits {#benefits}
 
 This dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the customer's AEM Cloud Service will be permitted to flow into the external service. This is in addition to traffic from any other IPs allowed. 
 
 Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers.
 
-### Configuration
+### Configuration {#configuration}
 
 To enable a dedicated IP address, submit a request to Customer Support, who will provide the IP address information. The request should specify each environment and additional requests should be made if new environments need the feature after the initial request. Sandbox program environments are not supported.
 
-### Feature Usage
+### Feature Usage {#feature-usage}
 
 The feature is compatible with Java code or libraries that result in outbound traffic, provided they use standard Java system properties for proxy configurations. In practice, this should include most common libraries. 
 
@@ -202,6 +202,6 @@ The same dedicated IP is applied to all of a customer's programs in their Adobe 
 
 Only HTTP and HTTPS ports are supported. This includes HTTP/1.1, as well as HTTP/2 when encrypted.
 
-### Debugging Considerations
+### Debugging Considerations {#debugging-considerations}
 
 In order to validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, it may be useful to call out to a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which will return the calling IP address.
