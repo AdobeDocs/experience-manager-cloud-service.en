@@ -11,7 +11,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
-## Adobe Experience Manager Sites as a Cloud Services {#cloud-services-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
 ### What's New {#what-is-new-sites}
 
