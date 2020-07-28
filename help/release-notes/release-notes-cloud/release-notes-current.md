@@ -23,7 +23,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
 
-## Adobe Experience Manager Assets {#assets}
+## Adobe Experience Manager Assets as a Cloud Service {#assets}
 
 ### What's New {#what-is-new-assets}
 
