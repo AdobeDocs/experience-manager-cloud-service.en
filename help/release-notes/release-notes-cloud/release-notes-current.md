@@ -16,8 +16,11 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
 * Introduction of a new [PDF Viewer Component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
-* Core Component [support of AMP](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html)
+
+* [Accelerated Mobile Pages (AMP) support of Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) helps to produce faster customer experiences by making the page transition instantaneously when entering the site from a Google mobile search result, which improves user engagement and SEO.
+
 * Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+
 * Bug fixes and code quality improvements
 
 ## What's New in Cloud Manager {#cloud-manager}
