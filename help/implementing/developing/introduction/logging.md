@@ -28,42 +28,42 @@ AEM as a Cloud Service's provides access to Java log statements. Developers of a
 
 <table style="width: 100%;">
 <tbody>
-<tr style="height: 23px;">
-<td style="height: 23px;">&nbsp;<b>AEM Environment</b></td>
-<td style="height: 23px;">&nbsp;<b>Log Level</b></td>
-<td style="height: 23px;">&nbsp;<b>Description</b></td>
-<td style="height: 23px;">&nbsp;<b>Log Statement Availability</b></td>
+<tr>
+<td>&nbsp;<b>AEM Environment</b></td>
+<td>&nbsp;<b>Log Level</b></td>
+<td>&nbsp;<b>Description</b></td>
+<td>&nbsp;<b>Log Statement Availability</b></td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">&nbsp;Development</td>
-<td style="height: 23px;">&nbsp;DEBUG</td>
-<td style="height: 23px;">&nbsp;Describes what is happening in the application.
+<tr>
+<td>&nbsp;Development</td>
+<td>&nbsp;DEBUG</td>
+<td>&nbsp;Describes what is happening in the application.
 
 When DEBUG logging is active, statements providing a clear picture of what activities occur as well as any key parameters that affect processing are logged.</td>
-<td style="height: 23px;">&nbsp;<ul>
+<td>&nbsp;<ul>
 <li> Local Development</li>
 <li>Development</li>
 </ul></td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">&nbsp;Stage</td>
-<td style="height: 23px;">&nbsp;WARN</td>
-<td style="height: 23px;">&nbsp;Describes conditions that have the potential to become errors.
+<tr>
+<td>&nbsp;Stage</td>
+<td>&nbsp;WARN</td>
+<td>&nbsp;Describes conditions that have the potential to become errors.
 
 When WARN logging is active, only statements indicating conditionals that are approaching sub-optimality are logged.</td>
-<td style="height: 23px;">&nbsp;<ul>
+<td>&nbsp;<ul>
 <li> Local Development</li>
 <li>Development</li>
 <li>Stage</li>
 </ul></td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">&nbsp;Production</td>
-<td style="height: 23px;">&nbsp;ERROR</td>
-<td style="height: 23px;">&nbsp;Describes conditions that indicate a failure, and need to resolve.
+<tr>
+<td>&nbsp;Production</td>
+<td>&nbsp;ERROR</td>
+<td>&nbsp;Describes conditions that indicate a failure, and need to resolve.
 
 When ERROR logging is active, only statements indicating failures are logged. ERROR log statements indicate a serious issue that should be resolved as soon as possible.</td>
-<td style="height: 23px;">&nbsp;<ul>
+<td>&nbsp;<ul>
 <li> Local Development</li>
 <li>Development</li>
 <li>Stage</li>
@@ -72,5 +72,3 @@ When ERROR logging is active, only statements indicating failures are logged. ER
 </tr>
 </tbody>
 </table>
-<!-- DivTable.com -->
-<p>&nbsp;</p>
