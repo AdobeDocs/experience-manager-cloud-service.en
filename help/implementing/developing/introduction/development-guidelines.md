@@ -176,7 +176,7 @@ Without the dedicated IP address feature enabled, traffic coming out of AEM as a
 
 ### Configuration
 
-To enable a dedicated IP address, submit a request to Customer Support, who will provide the IP address information. A request should be made for each environment, including any new environments that are created after the initial request.
+To enable a dedicated IP address, submit a request to Customer Support, who will provide the IP address information. The request should specify each environment and additional requests should be made if new environments need the feature after the initial request. Sandbox program environments are not supported.
 
 ### Feature Usage
 
