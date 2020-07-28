@@ -26,7 +26,7 @@ Note that HTTP requests that are served from Publish tier's Dispatcher cache or 
 
 AEM as a Cloud Service's provides access to Java log statements. Developers of applications for AEM should follow general Java logging best practices, logging pertinent statements about the execution of custom code, at the following log levels:
 
-<table style="width: 100%;">
+<table>
 <tbody>
 <tr>
 <td>&nbsp;<b>AEM Environment</b></td>
