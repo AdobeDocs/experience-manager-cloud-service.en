@@ -70,11 +70,11 @@ Some additional resources are listed below:
 
 * Watch Install Dispatcher SDK to understand how to install Dispatcher SDK:
 
-   > [!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Watch Configure Dispatcher SDK to understand on how to configure Dispatcher SDK:
 
-   > [!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 * Review [Local Development Setup](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) documentation to set up a local development environment
 
