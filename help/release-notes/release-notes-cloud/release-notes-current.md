@@ -11,7 +11,9 @@ The following section outlines the general Release Notes for Experience Manager 
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
-## What's New in Core Components {#whats-new-core-components}
+## Core Components {#core-components}
+
+### What's New {#what-is-new-core-components}
 
 Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
@@ -23,7 +25,7 @@ Release 2.11.0 of the [Core Components](https://docs.adobe.com/content/help/en/e
 
 * Bug fixes and code quality improvements
 
-## What's New in Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Release Date {#release-date-cm}
 
@@ -64,7 +66,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * Due to a change in how code coverage is calculated, the *minimum* version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version receive an error message in the code quality process.
 
-## What's New in Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
 Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.0.2.
 
@@ -80,7 +82,9 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
 
-## What is new in [!DNL Experience Manager Sites] as a Cloud Services {#whats-new-cloud-services}
+## Adobe Experience Manager Sites as a Cloud Services {#whats-new-cloud-services}
+
+### What's New {#what-is-new-sites}
 
 [!DNL Experience Manager] as a Cloud Service connectors for [!DNL Adobe Target] and [!DNL Adobe Analytics] are enhanced in the following ways:
 
@@ -90,7 +94,9 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
 
-## What is new in [!DNL Adobe Experience Manager Assets] {#assets}
+## Adobe Experience Manager Assets {#assets}
+
+### What's New {#what-is-assets}
 
 * [!DNL Asset Compute Service] is a scalable and extensible service for processing assets. In addition the Asset Compute Service runs on the Adobe I/O Runtime platform which allows the traditionally intensive asset processing to be offloaded. It requires Firefly to work. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. It allows partners and customers to develop and deploy custom workers.
 
@@ -102,7 +108,7 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
 
-## What's New in Foundations in AEM as a Cloud Service {#cloud-foundation}
+## Foundations in AEM as a Cloud Service {#cloud-foundation}
 
 ### What's New {#what-is-new-foundations}
 
