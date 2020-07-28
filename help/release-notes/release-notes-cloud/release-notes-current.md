@@ -94,7 +94,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 * Due to a change in how code coverage is calculated, the *minimum* version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version receive an error message in the code quality process.
 
 
-## Foundations in AEM as a Cloud Service {#cloud-foundation}
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
 
 ### What's New {#what-is-new-foundations}
 
