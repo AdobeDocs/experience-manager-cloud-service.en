@@ -82,7 +82,7 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.
 
-## Adobe Experience Manager Sites as a Cloud Services {#whats-new-cloud-services}
+## Adobe Experience Manager Sites as a Cloud Services {#cloud-services-sites}
 
 ### What's New {#what-is-new-sites}
 
