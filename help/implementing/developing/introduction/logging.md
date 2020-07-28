@@ -27,48 +27,62 @@ Note that HTTP requests that are served from Publish tier's Dispatcher cache or 
 AEM as a Cloud Service's provides access to Java log statements. Developers of applications for AEM should follow general Java logging best practices, logging pertinent statements about the execution of custom code, at the following log levels:
 
 <table>
-<tbody>
 <tr>
-<td>&nbsp;<b>AEM Environment</b></td>
-<td>&nbsp;<b>Log Level</b></td>
-<td>&nbsp;<b>Description</b></td>
-<td>&nbsp;<b>Log Statement Availability</b></td>
+<td>
+<b>AEM Environment</b></td>
+<td>
+<b>Log Level</b></td>
+<td>
+<b>Description</b></td>
+<td>
+<b>Log Statement Availability</b></td>
 </tr>
 <tr>
-<td>&nbsp;Development</td>
-<td>&nbsp;DEBUG</td>
-<td>&nbsp;Describes what is happening in the application.
+<td>
+Development</td>
+<td>
+DEBUG</td>
+<td>
+Describes what is happening in the application.<br>
 
 When DEBUG logging is active, statements providing a clear picture of what activities occur as well as any key parameters that affect processing are logged.</td>
-<td>&nbsp;<ul>
+<td>
+<ul>
 <li> Local Development</li>
 <li>Development</li>
 </ul></td>
 </tr>
 <tr>
-<td>&nbsp;Stage</td>
-<td>&nbsp;WARN</td>
-<td>&nbsp;Describes conditions that have the potential to become errors.
+<td>
+Stage</td>
+<td>
+WARN</td>
+<td>
+Describes conditions that have the potential to become errors.<br>
 
 When WARN logging is active, only statements indicating conditionals that are approaching sub-optimality are logged.</td>
-<td>&nbsp;<ul>
+<td>
+<ul>
 <li> Local Development</li>
 <li>Development</li>
 <li>Stage</li>
 </ul></td>
 </tr>
 <tr>
-<td>&nbsp;Production</td>
-<td>&nbsp;ERROR</td>
-<td>&nbsp;Describes conditions that indicate a failure, and need to resolve.
+<td>
+Production</td>
+<td>
+ERROR</td>
+<td>
+Describes conditions that indicate a failure, and need to resolve.<br>
 
 When ERROR logging is active, only statements indicating failures are logged. ERROR log statements indicate a serious issue that should be resolved as soon as possible.</td>
-<td>&nbsp;<ul>
+<td>
+<ul>
 <li> Local Development</li>
 <li>Development</li>
 <li>Stage</li>
 <li>Production</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
