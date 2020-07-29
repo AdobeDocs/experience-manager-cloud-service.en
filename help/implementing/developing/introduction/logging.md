@@ -44,7 +44,6 @@ Development</td>
 DEBUG</td>
 <td>
 Describes what is happening in the application.<br>
-
 When DEBUG logging is active, statements providing a clear picture of what activities occur as well as any key parameters that affect processing are logged.</td>
 <td>
 <ul>
@@ -85,7 +84,7 @@ When ERROR logging is active, only statements indicating failures are logged. ER
 </tr>
 </table>
 
-While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above.
+While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above. 
 
 AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types, in order to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
 
@@ -200,3 +199,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### Configuring the HTTP Access Log {#configuring-the-http-access-log}
+
+The HTTP Access log is not configurable in AEM as a Cloud Service.
+
+## Apache Web Server / Dispatcher Logging {#dispatcher-logging}
+
+AEM as a Cloud Service provides three logs for the Apache Web Servers and dispatcher layer on the Publish:
+
+* Apache HTTPD Web Server Access log
+* Apache HTTPD Web Server Error log
+* Dispatcher log
+
+Note that these logs are only available for the Publish tier.
+
+This set of logs provides insights into HTTP requests to the AEM as a Cloud Service Publish tier prior to those requests reaching the AEM application. This is important to understand as, ideally, most HTTP requests to the Publish tier servers are served by cached content by the Apache HTTPD Web Server and AEM Dispatcher, and never reach the AEM application itself, thus there are no log statements for these requests in AEM's Java, Request or Access logs.
