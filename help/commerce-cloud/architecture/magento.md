@@ -26,7 +26,7 @@ For the client-side components, which are build using [React](https://reactjs.or
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) follow very similar design patterns and best practies as the [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components).
 
-The business logic and backend communication with Magento for the CIF Core Components is implemented in Sling Models. In case it is necessary to customize this logic to fulfill project-specific requirements the delegation Pattern for Sling Models can be used.
+The business logic and backend communication with Magento for the AEM CIF Core Components is implemented in Sling Models. In case it is necessary to customize this logic to fulfill project-specific requirements the delegation Pattern for Sling Models can be used.
 
 >[!TIP]
 >
