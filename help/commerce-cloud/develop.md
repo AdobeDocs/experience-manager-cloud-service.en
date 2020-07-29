@@ -32,7 +32,7 @@ The following should be installed locally:
 
 ### Accessing the CIF Add-on
 
-The CIF Add-On can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Note that access to the SDK listings is limited to those with AEM Commerce license.
+The CIF Add-On can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Note that access to the SDK listings is limited to those with AEM as a Cloud Service license.
 
 >[!TIP]
 >
