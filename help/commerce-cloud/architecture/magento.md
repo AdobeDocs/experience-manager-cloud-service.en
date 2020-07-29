@@ -20,9 +20,9 @@ Server-side APIs calls are implemented using the build-in, generic [GraphQL clie
 
 For the client-side components, which are build using [React](https://reactjs.org/), the [Apollo Client](https://www.apollographql.com/docs/react/) is used.
 
-## CIF Core Component Architecture {#cif-core-components}
+## AEM CIF Core Component Architecture {#cif-core-components}
 
-![CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
+![AEM CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) follow very similar design patterns and best practies as the [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components).
 
@@ -30,6 +30,6 @@ The business logic and backend communication with Magento for the CIF Core Compo
 
 >[!TIP]
 >
->The [Customizing CIF Components](../customizing/customize-cif-components.md) page has a detailed example and best practice on how to customize CIF Core Components.
+>The [Customizing AEM CIF Core Components](../customizing/customize-cif-components.md) page has a detailed example and best practice on how to customize CIF Core Components.
 
 Within projects, AEM CIF Core Components and custom project components can easily retrieve the configured client for a Magento store associated with an AEM page via Sling Context-Aware configuration.
