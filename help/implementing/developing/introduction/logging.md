@@ -20,7 +20,9 @@ Logging at the AEM application level, is handled by three logs:
 1. HTTP Request logs, which log information about HTTP requests and their responses served by AEM
 1. HTTP Access logs, which log summarized information and HTTP requests served by AEM
 
-Note that HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
+> [!NOTE]
+> 
+> HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
 
 ## AEM Java logging {#aem-java-logging}
 
@@ -90,10 +92,6 @@ AEM Log levels are set per environment type via OSGi configuration, which in tur
 
 ### Log Format {#log-format} 
 
-| Date and Time  | AEM as a Cloud Service dode ID  | Log Level  | Thread  |  Java Class | Log message  |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398  |  `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*`  | qtp2130572036-1472  | com.example.approval.workflow.impl.CustomApprovalWorkflow  | `No specified approver, defaulting to [ Creative Approvers user group ]`  |
-
 **Example log output**
 
 ```
@@ -103,6 +101,35 @@ AEM Log levels are set per environment type via OSGi configuration, which in tur
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Date and time</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>AEM as a Cloud Service node ID</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>Log level</td>
+<td>DEBUG</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Java class</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>Log message</td>
+<td>No specified approver, defaulting to [ Creative Approvers user group ]</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuration Loggers {#configuration-loggers}
 
@@ -160,10 +187,6 @@ The key to understanding this log is mapping the HTTP request and response pairs
 
 ### Log Format {#http-request-logging-format}
 
-| Date and Time  | Request/Response Pair ID  |   | HTTP Method  | URL  | Protocol  | AEM as a Cloud Service node ID  |
-|---|---|---|---|---|---|---|
-| 29/Apr/2020:19:14:21 +0000  | `[137]`  | ->  |  POST |  /conf/global/settings/dam/adminui-extension/metadataprofile/ |  HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]`  |
-
 **Example Log**
 
 ```
@@ -175,6 +198,36 @@ The key to understanding this log is mapping the HTTP request and response pairs
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Date and time</td>
+<td>29/Apr/2020:19:14:21 +0000</td>
+</tr>
+<tr>
+<td>Request/Response Pair ID</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>HTTP Method</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadataprofile/</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>AEM as a Cloud Service node ID</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuring the Log {#configuring-the-log}
 
@@ -328,5 +381,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher Log {#dispatcher-log}
 
-**Log Format**
+<!--de completat-->
 
+**Example**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### Log Format {#dispatcher-log-format}
+
+### Configuring the Dispatcher Error Log {#configuring-the-dispatcher-error-log}
+
+The dispatcher log levels is defined by the variable DISP_LOG_LEVEL in the file `conf.d/variables/global.var`.
+
+It can be set to Error, Warn, Info, Debug and Trace1, with a default value of Warn.
+
+While Dispatcher logging supports several other levels of logging granularity, the AEM as a Cloud Service recommends using the levels described below.
+
+To set the log level per environment, use the appropriate conditional branch in the `global.var` file, as described below:
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## How to Access Logs {#how-to-access-logs}
+
+### Cloud Environments {#cloud-environments}
+
+AEM as a Cloud Service logs for cloud services can be accessed either by downloading through the Cloud Manager interface or by tailing logs at the command line using the using the Adobe I/O command line interface. For more information, see the [Cloud Manager logging documentation](/help/implementing/cloud-manager/manage-logs.md).
+
+### Local SDK {#local-sdk}
+
+AEM as a Cloud Service SDK provides logs files to support local development.
+
+AEM logs are located in the folder `crx-quickstart/logs`, where the following logs can be viewed:
+
+* AEM Java log: `error.log`
+* AEM HTTP Request log: `request.log`
+* AEM HTTP Access log: `access.log`
+
+Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
+
+To retrieve the logs:
+
+1. At the command line, type `docker ps` to list your containers
+1. To log into the container, type "`docker exec -it <container> /bin/sh`", where `<container>` is the dispatcher container id from the previous step
+1. Navigate to the cache root under `/mnt/var/www/html`
+1. The logs are under `/etc/httpd/logs`
+1. Inspect the logs: they can be accessed under the folder XYZ, where the following logs can be viewed:
+   * Apache HTTPD Web server access log - `httpd_access.log`
+   * Apache HTTPD Web server error logs - `httpd_error.log`
+   * Dispatcher logs - `dispatcher.log`
+
+Logs are also directly printed to the terminal output. Most of the time, these logs should be DEBUG, which can be accomplished by passing in the Debug level as a parameter when running Docker. For example:
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## Debugging Production and Stage {#debugging-production-and-stage}
+
+In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments. 
+
+While this is possible, it requires changes to the log levels in the configuration files in Git from Warn and Error to Debug, and performing a deployment to AEM as a Cloud Service to register these configuration changes with the environments. 
+
+Depending on the traffic and the amount of log statement written by Debug, this may result in an adverse performance impact on the environment, therefore, it's recommended that changes to Stage and Production debug levels are:
+
+* Done judiciously, and only when absolutely necessary
+* Reverted to the appropriate levels and re-deployed as soon as possible
+
+## Splunk Logs {#splunk-logs}
+
+Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to leverage the query features available in the Splunk product.
+
+The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
+
+### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
+
+In the support request, customers should indicate:
+
+* The Splunk host
+* The Splunk index
+* The Splunk port 
+* The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
+
+The properties above should be specified for each relevant program/environment type combination.  For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
+
+> [!NOTE]
+>
+> Splunk forwarding for sandbox program environments is not supported.
+
+Below you will find a sample customer support request:
+
+Program 123, Production Env
+
+* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
+* Splunk port: 443
+* Splunk HEC token: ABC123
+
+Program 123, Stage Env
+
+* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123stage
+* Splunk port: 443
+* Splunk HEC token: ABC123
+
+Program 123, Dev Envs
+
+* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123dev
+* Splunk port: 443
+* Splunk HEC token: ABC123
+
+It may be sufficient for the same Splunk index to be used for each environment, in which case either the `aem_env_type` field can be used to differentiate based on the values dev, stage, and prod. If there are multiple dev environments, the `aem_env_id` field can also be used. Some organizations may choose a separate index for the production environment's logs if the associated index limits access to a reduced set of Splunk users. 
+
+Here is an example log entry:
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
