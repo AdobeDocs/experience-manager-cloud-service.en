@@ -59,7 +59,6 @@ Stage</td>
 WARN</td>
 <td>
 Describes conditions that have the potential to become errors.<br>
-
 When WARN logging is active, only statements indicating conditionals that are approaching sub-optimality are logged.</td>
 <td>
 <ul>
@@ -75,7 +74,6 @@ Production</td>
 ERROR</td>
 <td>
 Describes conditions that indicate a failure, and need to resolve.<br>
-
 When ERROR logging is active, only statements indicating failures are logged. ERROR log statements indicate a serious issue that should be resolved as soon as possible.</td>
 <td>
 <ul>
