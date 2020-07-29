@@ -379,7 +379,7 @@ This will start the dispatcher in a container with its backend pointing to an AE
 
 ## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
 
-Log levels are defined by the variables `DISP_LOG_LEVEL` and `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s`. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
+Log levels are defined by the variables `DISP_LOG_LEVEL` and `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s`. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 
