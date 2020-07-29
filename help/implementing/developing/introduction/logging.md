@@ -20,7 +20,9 @@ Logging at the AEM application level, is handled by three logs:
 1. HTTP Request logs, which log information about HTTP requests and their responses served by AEM
 1. HTTP Access logs, which log summarized information and HTTP requests served by AEM
 
-Note that HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
+> [!NOTE]
+> 
+> HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
 
 ## AEM Java logging {#aem-java-logging}
 
@@ -448,7 +450,7 @@ Logs are also directly printed to the terminal output. Most of the time, these l
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-##  Debugging Production and Stage {#debugging-production-and-stage}
+## Debugging Production and Stage {#debugging-production-and-stage}
 
 In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments. 
 
@@ -477,6 +479,7 @@ In the support request, customers should indicate:
 The properties above should be specified for each relevant program/environment type combination.  For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
 
 > [!NOTE]
+>
 > Splunk forwarding for sandbox program environments is not supported.
 
 Below you will find a sample customer support request:
