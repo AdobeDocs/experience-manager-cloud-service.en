@@ -42,11 +42,11 @@ It is possible to add custom properties for each template, as long as the corres
 
 It is also possible to replace the `UrlProvider` service with a completely custom OSGi service. In this case, one must implement the `UrlProvider` interface and register it with a higher service ranking in order to replace the default implementation.
 
-## Combine with Sling Mappings
+## Combine with Sling Mappings {#sling-mapping}
 
 In addition to the `UrlProvider`, it is also possible to configure [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) in order to rewrite and process URLs. The AEM Archetype project also provides [an example configuration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) to configure some Sling Mappings for port 4503 (publish) and 80 (dispatcher).
 
-### Combine with AEM Dispatcher
+## Combine with AEM Dispatcher {#dispatcher}
 
 URL rewrites can also be achived by using AEM Dispatcher HTTP server with `mod_rewrite` module. The [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) provides a reference AEM Dispatcher config which already includes basic [rewrite rules](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) for the generated size.
 
