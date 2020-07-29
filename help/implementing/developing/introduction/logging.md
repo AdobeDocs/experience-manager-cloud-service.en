@@ -188,9 +188,41 @@ This log is helpful to quickly understand what HTTP requests are being made to A
 
 ### Log Format {#access-log-format}
 
-| AEM as a Cloud Service node ID  | IP address of the client  | User  |   |  Date and time |   | HTTP method  | URL  | Protocol  |   | HTTP response  | HTTP request time in milliseconds  | Referrer  | User agent  |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| cm-p1235-e2644-aem-author-59555cb5b8-8kgr2  | -  | `myuser@adobe.com`  | 30/Apr/2020:17:37:14 +0000  | " | GET  |  /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |   | HTTP/1.1  |  " | 200  | 1141  |  `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` | "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"  | 
+<table>
+<tbody>
+<tr>
+<td><b>AEM as a Cloud Service node ID</b></td>
+<td><b>IP address of the client</b></td>
+<td><b>User</b></td>
+<td><b>Date and time</b></td>
+<td><b>Blank</b></td>
+<td><b>HTTP method</b></td>
+<td><b>URL</b></td>
+<td><b>Protocol</b></td>
+<td><b>Blank</b></td>
+<td><b>HTTP response status</b></td>
+<td><b>HTTP response time in milliseconds</b></td>
+<td><b>Referrer</b></td>
+<td><b>User agent</b></td>
+</tr>
+<tr>
+<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
+<td>-</td>
+<td>myuser@adobe.com</td>
+<td>30/Apr/2020:17:37:14 +0000</td>
+<td>"</td>
+<td>GET</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+<td>HTTP/1.1</td>
+<td>"</td>
+<td>200</td>
+<td>1141</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
+
 
 **Example**
 
