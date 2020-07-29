@@ -197,8 +197,8 @@ The key to understanding this log is mapping the HTTP request and response pairs
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
-
 ```
+
 <table>
 <tbody>
 <tr>
