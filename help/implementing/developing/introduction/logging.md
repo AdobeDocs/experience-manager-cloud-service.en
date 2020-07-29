@@ -188,41 +188,18 @@ This log is helpful to quickly understand what HTTP requests are being made to A
 
 ### Log Format {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>AEM as a Cloud Service node ID</b></td>
-<td><b>IP address of the client</b></td>
-<td><b>User</b></td>
-<td><b>Date and time</b></td>
-<td><b>Blank</b></td>
-<td><b>HTTP method</b></td>
-<td><b>URL</b></td>
-<td><b>Protocol</b></td>
-<td><b>Blank</b></td>
-<td><b>HTTP response status</b></td>
-<td><b>HTTP response time in milliseconds</b></td>
-<td><b>Referrer</b></td>
-<td><b>User agent</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>30/Apr/2020:17:37:14 +0000</td>
-<td>"</td>
-<td>GET</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
-</tr>
-</tbody>
-</table>
-
+| AEM as a Cloud Service node ID  | cm-p1234-e26813-aem-publish-5c787687c-lqlxr  |
+|---|---|
+| IP Address of the Client  |  - |
+| User  |  myuser@adobe.com |
+| Date and time  | 30/Apr/2020:17:37:14 +0000  |
+| HTTP ethod  | GET  |
+|  URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| Protocol  | HTTP/1.1  |
+| HTTP response status  | 200  |
+| HTTP request time in milliseconds  | 1141  |
+| Referrer  | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"`  |
+| User agent  | "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"  |
 
 **Example**
 
@@ -236,7 +213,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 The HTTP Access log is not configurable in AEM as a Cloud Service.
 
-## Apache Web Server / Dispatcher Logging {#dispatcher-logging}
+## Apache Web Server and Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
 
 AEM as a Cloud Service provides three logs for the Apache Web Servers and dispatcher layer on the Publish:
 
@@ -246,4 +223,74 @@ AEM as a Cloud Service provides three logs for the Apache Web Servers and dispat
 
 Note that these logs are only available for the Publish tier.
 
-This set of logs provides insights into HTTP requests to the AEM as a Cloud Service Publish tier prior to those requests reaching the AEM application. This is important to understand as, ideally, most HTTP requests to the Publish tier servers are served by cached content by the Apache HTTPD Web Server and AEM Dispatcher, and never reach the AEM application itself, thus there are no log statements for these requests in AEM's Java, Request or Access logs.
+This set of logs provides insights into HTTP requests to the AEM as a Cloud Service Publish tier prior to those requests reaching the AEM application. This is important to understand as, ideally, most HTTP requests to the Publish tier servers are served by content that is cached by the Apache HTTPD Web Server and AEM Dispatcher, and never reach the AEM application itself. Thus there are no log statements for these requests in AEM's Java, Request or Access logs.
+
+### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
+
+The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Note that requests that are served from an upstream CDN are not reflected in these logs.
+
+See information about the error log format in the [official apache documentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+
+**Log Format**
+
+<!--blank until prod build finishes-->
+
+**Example**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### Configuring the Apache HTTPD Web Server Access Log {#configuring-the-apache-httpd-webs-server-access-log}
+
+This log is not configurable in AEM as a Cloud Service.
+
+## Apache HTTPD Web Server error log {#apache-httpd-web-server-error-log}
+
+The Apache HTTP Web Server error log provides statements for each error in the Publish tier's Web server/Dispatcher.
+
+See information about the error log format in the [official apache documentation](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+
+**Log Format**
+
+<!--placeholder-->
+
+**Example**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### Configuring the Apache HTTPD Web Server Error Log {#configuring-the-apache-httpd-web-server-error-log}
+
+The mod_rewrite log levels are defined by the variable REWRITE_LOG_LEVEL in the file `conf.d/variables/global.var`.
+
+It can be set to Error, Warn, Info, Debug and Trace1 - Trace8, with a default value of Warn. To debug your RewriteRules, it is recommended to raise the log level to Trace2.
+
+See the [mod_rewrite module documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) for more information.
+
+To set the log level per environment, use the appropriate conditional branch in the global.var file, as described below:
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Dispatcher Log {#dispatcher-log}
+
+**Log Format**
+
