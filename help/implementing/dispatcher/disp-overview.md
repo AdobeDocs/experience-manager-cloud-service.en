@@ -203,7 +203,7 @@ Whitelisted directives:
   <Directory>
   ...
   
-  ```
+```
 
 The table below shows the supported apache modules:
 
@@ -243,7 +243,7 @@ The allowlist contains a list of Apache directives that are permitted in a custo
 
 When run against your maven artifact or your `dispatcher/src` subdirectory, it will report validation failures:
 
- ```
+```
 
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4

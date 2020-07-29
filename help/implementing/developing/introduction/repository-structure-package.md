@@ -106,7 +106,7 @@ Make sure to add this new Maven sub-project to the parent projects `<modules>` l
         </plugins>
     </build>
 </project>
- ```
+```
 
 ## Referencing the Repository Structure Package
 
