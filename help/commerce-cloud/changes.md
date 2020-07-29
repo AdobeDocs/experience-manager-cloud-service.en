@@ -1,9 +1,9 @@
 ---
-title: Notable changes to Commerce on AEM as a Cloud Service
-description: Notable changes to Commerce on AEM as a Cloud Service as compared to Adobe Experience Manager 6.5.
+title: Notable changes to AEM Commerce as a Cloud Service
+description: Notable changes to AEM Commerce as a Cloud Service as compared to Adobe Experience Manager 6.5.
 ---
 
-# Notable changes to Commerce on AEM as a Cloud Service {#notable-changes}
+# Notable changes to AEM Commerce as a Cloud Service {#notable-changes}
 
 Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. This document highlights the important differences for Commerce capabilities between Commerce Integration Framework (CIF) for on-premise, Adobe Managed Service and Experience Manager as a Cloud Service. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
@@ -24,10 +24,12 @@ Shown below are the different deployment models for Commerce Integration Framewo
 |                  | AEM On-premise  |  AEM Managed Services         |  AEM Cloud Service         |
 |-------------     |-----------|-----------|-----------|
 |How to deploy CIF Authoring tools for Magento backend| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM 6.5| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM 6.5| AEM Cloud Service instance will need to be provisioned with CIF add-on. Contact your sales representative for more details|
-|How to deploy [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)|AEM package install|Deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html) | Project moved into [Cloud Manager Git Repository](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) and deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html)|
+|How to deploy [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)|AEM package install|Deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Project moved into [Cloud Manager Git Repository](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) and deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html)|
 
-Note: CIF Classic/Quickstart version of Commerce Integration Framework may be used on AEM On-premise offering for very limited use-cases. However, this is not the recommended solution.
+>[!Note]
+>
+>CIF Classic/Quickstart version of Commerce Integration Framework may be used on AEM On-premise offering for very limited use-cases. However, this is not the recommended solution.
 
 
-## Moving to CIF on Experience Manager as a Cloud Service from on-premise and Managed Services {#moving-cif-cs}
+## Moving to AEM Commerce as a Cloud Service from On-premise and Managed Services {#moving-cif-cs}
 

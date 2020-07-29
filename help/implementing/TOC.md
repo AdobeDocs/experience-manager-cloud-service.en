@@ -28,6 +28,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Using Sling Adapters](developing/introduction/sling-adapters.md)  
   + [Using the Sling Resource Merger in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
   + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
+  + [Logging](developing/introduction/logging.md) 
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
