@@ -22,7 +22,7 @@ Logging at the AEM application level, is handled by three logs:
 
 Note that HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
 
-### AEM Java logging {#aem-java-logging}
+## AEM Java logging {#aem-java-logging}
 
 AEM as a Cloud Service's provides access to Java log statements. Developers of applications for AEM should follow general Java logging best practices, logging pertinent statements about the execution of custom code, at the following log levels:
 
@@ -84,3 +84,105 @@ When ERROR logging is active, only statements indicating failures are logged. ER
 </ul></td>
 </tr>
 </table>
+
+While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above.
+
+AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types, in order to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
+
+### Log Format {#log-format} 
+
+| Date and Time  | AEM as a Cloud Service dode ID  | Log Level  | Thread  |  Java Class | Log message  |
+|---|---|---|---|---|---|
+| 29.04.2020 21:50:13.398  |  `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*`  | qtp2130572036-1472  | com.example.approval.workflow.impl.CustomApprovalWorkflow  | No specified approver, defaulting to [ Creative Approvers user group ]  |
+
+**Example log output**
+
+`22.06.2020 18:33:30.120 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *ERROR* [qtp501076283-1809] io.prometheus.client.dropwizard.DropwizardExports Failed to get value from Gauge`
+`22.06.2020 18:33:30.229 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [qtp501076283-1805] org.apache.sling.auth.core.impl.SlingAuthenticator getAnonymousResolver: Anonymous access not allowed by configuration - requesting credentials`
+`22.06.2020 18:33:30.370 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] org.apache.sling.i18n.impl.JcrResourceBundle Finished loading 0 entries for 'en_US' (basename: <none>) in 4ms`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring`
+
+### Configuration Loggers {#configuration-loggers}
+
+AEM Java logs are defined as OSGi configuration, and thus target specific AEM as a Cloud Service environments using run mode folders.
+
+Configure java logging for custom Java packages via OSGi configurations for the Sling LogManager factory. There are two supported configuration properties:
+
+| OSGi Configuration property  | Description  |
+|---|---|
+| org.apache.sling.commons.log.names | The Java packages for which to collect log statements.  |
+| org.apache.sling.commons.log.level | The log level at which to log the Java packages, specified by org.apache.sling.commons.log.names  |
+
+Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
+
+The following are examples of the recommended logging configurations (using the placeholder Java package of `com.example`) for the three AEM as a Cloud Service environment types.
+
+### Development {#development}
+
+/apps/my-app/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "debug"
+}
+```
+
+### Stage {#stage}
+
+/apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "warn"
+}
+```
+
+### Production {#productiomn}
+
+/apps/my-app/config.prod/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "error"
+}
+```
+
+## AEM HTTP Request Logging {#aem-http-request-logging}
+
+AEM as a Cloud Service's HTTP request logging provides insight into the HTTP requests made to AEM and their HTTP responses in time order. This log is helpful to understand the HTTP Requests made to AEM and the order they are processed and responded to.
+
+The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Note that often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
+
+### Log Format {#http-request-logging-format}
+
+| Date and Time  | Request/Response Pair ID  |   | HTTP Method  | URL  | Protocol  | AEM as a Cloud Service node ID  |
+|---|---|---|---|---|---|---|
+| 29/Apr/2020:19:14:21 +0000  | `[137]`  | ->  |  POST |  /conf/global/settings/dam/adminui-extension/metadataprofile/ |  HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]`  |
+
+**Example Log**
+
+```
+29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+```
+
+### Configuring the Log {#configuring-the-log}
+
+The AEM HTTP Request log is not configurable in AEM as a Cloud Service.
+
+## AEM HTTP Access Logging {#aem-http-access-logging}
+
+AEM as Cloud Service HTTP access logging shows HTTP requests in time order. Each log entry represents the HTTP Request that accesses AEM.
+
+This log is helpful to quickly understand what HTTP requests are being made to AEM, if they succeed by looking at the accompanying HTTP response status code, and how long the HTTP request took to complete. This log can also be helpful to debug a specific user's activity by filtering log entries by Users.
+
+### Log Format {#access-log-format}
