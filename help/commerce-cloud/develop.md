@@ -13,9 +13,9 @@ Developing AEM Commerce projects based on Commerce Integration Framework (CIF) f
 
 ## Local Development with AEM as a Cloud Service SDK {#local}
 
-A local development environment is recommended to work with CIF projects. The CIF Add-On provided for AEM as a Cloud Service environments is available for local development as well. I can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+A local development environment is recommended to work with CIF projects. The CIF Add-On provided for AEM as a Cloud Service environments is available for local development as well. It can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
-The CIF Add-On is provided as a Sling Feature archive. The Zip file available on the Software Distribution portal includes two Sling Feature archive files, one for AEM author and one for AEM publish instances.
+The CIF Add-On is provided as a Sling Feature archive. The zip file available on the Software Distribution portal includes two Sling Feature archive files, one for AEM author and one for AEM publish instances.
 
 **New to AEM as a Cloud Service?** Check out the [following guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
@@ -40,7 +40,7 @@ The CIF Add-On can be downloaded as a zip file from the [Software Distribution p
 
 ### Local setup
 
-For local CIF add-on development using the AEM as a Cloud Service SDK following steps:
+For local CIF Add-on development using the AEM as a Cloud Service SDK following steps:
 
 1. Get the latest AEM as a Cloud Service SDK
 2. Unpack the AEM .jar to create the `crx-quickstart` folder, run:
