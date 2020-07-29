@@ -13,12 +13,12 @@ user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
   + [3rd Party Commerce Integration](architecture/third-party.md)
 + [Getting started](getting-started.md)
 + [Develop with AEM Cloud Service SDK](develop.md)
-+ Configuration {#configure}
++ Configure {#configure}
     + [Multi-Template Usage](configuring/multi-template-usage.md)
     + [Multi-Store Setup](configuring/multi-store-setup.md)
     + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
     + [Caching Options](configuring/caching.md)
-+ Customization {#customize}
++ Customize {#customize}
     + [Styling CIF Components](customizing/style-cif-component.md)
     + [Customizing CIF Components](customizing/customize-cif-components.md)
 + [FAQ](faq.md)
