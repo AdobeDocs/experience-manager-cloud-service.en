@@ -13,7 +13,7 @@ The overall architecture is as follows:
 
 ![CIF Architecture Overview](../assets/AEM_Magento_Architecture.JPG)
 
-CIF builds upon GraphQL support. The main communication channel between AEM and Magento is Magento's [GraphQL API](https://devdocs.magento.com/guides/v2.3/graphql/index.html) API. There are different ways to configure the communication between AEM as a Cloud Service and Magento, see [configration](../configuring/graphql.md) page for details.
+CIF builds upon GraphQL support. The main communication channel between AEM and Magento is Magento's [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/) API. There are different ways to configure the communication between AEM as a Cloud Service and Magento, see [configration](../configuring/graphql.md) page for details.
 
 Within CIF there is support for server-side and client-side communication patterns.
 Server-side APIs calls are implemented using the build-in, generic [GraphQL client](https://github.com/adobe/commerce-cif-graphql-client) in combination with a [set of generated data models](https://github.com/adobe/commerce-cif-magento-graphql) for the Magento GraphQL schema. Additionally, any GraphQL query or mutation in GQL format can be used.
@@ -22,14 +22,14 @@ For the client-side components, which are build using [React](https://reactjs.or
 
 ## CIF Core Component Architecture {#cif-core-components}
 
-![CIF Core Component Architecture](../assets/cif-component-architecture.png)
+![CIF Core Component Architecture](../assets/cif-component-architecture1.jpg)
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) follow very similar design patterns and best practies as the [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components).
 
-The business logic and backend communication with Magento for the CIF Core Components is implemented in Sling Models. In case it is necessary to customize this logic to fulfill project-specific requirements the delegation Pattern for Sling Models.
+The business logic and backend communication with Magento for the CIF Core Components is implemented in Sling Models. In case it is necessary to customize this logic to fulfill project-specific requirements the delegation Pattern for Sling Models can be used.
 
 >[!TIP]
 >
 >The [Customizing CIF Components](../customizing/customize-cif-components.md) page has a detailed example and best practice on how to customize CIF Core Components.
 
-Within projects, AEM CIF Core Components and custom project components can easily retrieve the configured client for a Magneto store associated with an AEM page via Sling Context-Aware configuration.
+Within projects, AEM CIF Core Components and custom project components can easily retrieve the configured client for a Magento store associated with an AEM page via Sling Context-Aware configuration.
