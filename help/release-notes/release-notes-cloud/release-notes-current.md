@@ -96,9 +96,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 ### What's New {#what-is-new-foundations}
 
-* Logs can be forwarded to Splunk accounts, which allows organizations to leverage their Splunk investment.
+* [Logs can be forwarded to Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs), which allows organizations to leverage their Splunk investment.
 
-* A static, dedicated egress IP address can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
+* [A static, dedicated egress IP address](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
 
 * Ported AEM Analytics cloud service UI from Classic UI to new AEM UI. Also moved location of Analytics cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
 
