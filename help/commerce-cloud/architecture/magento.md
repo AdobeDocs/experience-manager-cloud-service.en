@@ -22,7 +22,7 @@ For the client-side components, which are build using [React](https://reactjs.or
 
 ## CIF Core Component Architecture {#cif-core-components}
 
-![CIF Core Component Architecture](../assets/cif-component-architecture1.jpg)
+![CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) follow very similar design patterns and best practies as the [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components).
 
