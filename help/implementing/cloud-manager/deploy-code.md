@@ -50,7 +50,8 @@ Once you have configured your **Pipeline** (repository, environment, and testing
        ![](assets/stage-testing.png)
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >The following sections needs to be updated for Cloud Manager for AEM Cloud Services and is in-progress.
 
 ## Deployment Process {#deployment-process}
