@@ -197,6 +197,7 @@ The key to understanding this log is mapping the HTTP request and response pairs
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+
 ```
 <table>
 <tbody>
@@ -486,24 +487,24 @@ Below you will find a sample customer support request:
 
 Program 123, Production Env
 
-   * Splunk host: `splunk-hec-ext.acme.com`
-   * Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
-   * Splunk port: 443
-   * Splunk HEC token: ABC123
+* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
+* Splunk port: 443
+* Splunk HEC token: ABC123
 
 Program 123, Stage Env
 
-   * Splunk host: `splunk-hec-ext.acme.com`
-   * Splunk index: acme_123stage
-   * Splunk port: 443
-   * Splunk HEC token: ABC123
+* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123stage
+* Splunk port: 443
+* Splunk HEC token: ABC123
 
 Program 123, Dev Envs
 
-   * Splunk host: `splunk-hec-ext.acme.com`
-   * Splunk index: acme_123dev
-   * Splunk port: 443
-   * Splunk HEC token: ABC123
+* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123dev
+* Splunk port: 443
+* Splunk HEC token: ABC123
 
 It may be sufficient for the same Splunk index to be used for each environment, in which case either the `aem_env_type` field can be used to differentiate based on the values dev, stage, and prod. If there are multiple dev environments, the `aem_env_id` field can also be used. Some organizations may choose a separate index for the production environment's logs if the associated index limits access to a reduced set of Splunk users. 
 
