@@ -5,7 +5,7 @@ description: Experience Manager Release Notes for 2020.4.0
 
 # Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-The following section outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Release Date {#release-date}
 
