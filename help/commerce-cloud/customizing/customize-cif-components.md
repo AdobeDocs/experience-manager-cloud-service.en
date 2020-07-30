@@ -242,7 +242,7 @@ Next, we will customize the dialog of the Product Teaser component to allow an A
 
     Dialogs defined as part of a proxy component inherit all of the existing dialog fields with a feauture known as [Sling Resource Merger](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/sling-resource-merger.html). Therefore we con't have to re-define the existing fields that are part of the Product Teaser.
 
-4. Update `productteaser.html` and add a `data-sly-test` to the `<div>` for the badge. This will be a simple test to decide to render the badge if the user has checked "true".
+1. Update `productteaser.html` and add a `data-sly-test` to the `<div>` for the badge. This will be a simple test to decide to render the badge if the user has checked "true".
 
     ```html
         ...
@@ -255,20 +255,20 @@ Next, we will customize the dialog of the Product Teaser component to allow an A
     ...
     ```
 
-5. Deploy the updated code to the local instance of AEM using features of your IDE or by using your maven skills:
+1. Deploy the updated code to the local instance of AEM using features of your IDE or by using your maven skills:
 
     ```shell
     $ cd ui.apps
     $ mvn -PautoInstallPackage clean install
     ```
 
-6. Return to the Product Teaser component and click the *wrench* icon to open the Dialog. You should now see a tab for **Badge** with two additional fields. Updating these fields will persist the values to AEM. You should be able to toggle on/off the badge with the checkbox:
+1. Return to the Product Teaser component and click the *wrench* icon to open the Dialog. You should now see a tab for **Badge** with two additional fields. Updating these fields will persist the values to AEM. You should be able to toggle on/off the badge with the checkbox:
 
     ![Toggle badge](/help/commerce-cloud/assets/customize-cif-components/toggle-badge-checkbox.gif)
 
     This gives the author some control over when the badge appears. However it would be ideal for the badge to disappear automatically once the product has reached a certain age in day based on the entry for **Max Product Age**. For this we will need to implement some backend logic.
 
-## Updating the Sling Model for the Product Teaser
+## Updating the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 
 Next, we will extend the business logic of the Product Teaser by implementing a Sling Model. [Sling Models](https://sling.apache.org/documentation/bundles/models.html), are annotation driven "POJOs" (Plain Old Java Objects) that implement any of the business logic needed by the component. Sling Models are used in conjunction with the HTL scripts as part of the component. We will follow the [delegation pattern for Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) so that we can just extend parts of the existing Product Teaser model.
 
@@ -276,7 +276,7 @@ Sling Models are implemented as Java and can be found in the **core** module of 
 
 1. Open the Acme Store project in the IDE of your choice and navigate under the **core** module to: `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`. **MyProductTeaser.java** is a Java Interface that we pre-created that extends the CIF **ProductTeaser** interface.
 
-2. Next, open the file **MyProductTeaserImpl.java** located at: `core/src/main/java/com/acme/cif/core/models/MyProductTeaserImpl.java`. `MyProductTeaserImpl` is the implementation class for the interface `MyProductTeaser`. 
+1. Next, open the file **MyProductTeaserImpl.java** located at: `core/src/main/java/com/acme/cif/core/models/MyProductTeaserImpl.java`. `MyProductTeaserImpl` is the implementation class for the interface `MyProductTeaser`. 
 
     Using the [delegation pattern for Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) we can reference the `ProductTeaser` class via the `sling:resourceSuperType` property: 
 
@@ -295,7 +295,7 @@ Sling Models are implemented as Java and can be found in the **core** module of 
     }
     ```
 
-3. One of the extra extension points provided by AEM CIF Core Components is the `AbstractProductRetriever` which allows us to get access to specific product attributes. Add the following method to initialize the `AbstractProductRetriever` in the `init()` method:
+1. One of the extra extension points provided by AEM CIF Core Components is the `AbstractProductRetriever` which allows us to get access to specific product attributes. Add the following method to initialize the `AbstractProductRetriever` in the `init()` method:
 
     ```java
     import javax.annotation.PostConstruct;
@@ -315,30 +315,32 @@ Sling Models are implemented as Java and can be found in the **core** module of 
 
     ```
 
-4. Lets test out these changes by modifying the formatted price and overriding the logic in `getFormattedPrice()`. Make the following updates so that we explicitly format the price based on the German locale. (or pick a different country!)
+1. Lets test out these changes by modifying the formatted price and overriding the logic in `getFormattedPrice()`. Make the following updates so that we explicitly format the price based on the German locale. (or pick a different country!)
 
     ```java
-    import java.util.Locale;
-    import java.text.NumberFormat;
-    ...
+            import java.util.Locale;
+            import java.text.NumberFormat;
+             ...
 
-    @Override
-    public String getFormattedPrice() {
-         //return productTeaser.getFormattedPrice();
-        NumberFormat germanCurrencyFormat = NumberFormat.getCurrencyInstance(Locale.GERMANY);
-        Double price =  productRetriever.fetchProduct().getPrice().getRegularPrice().getAmount().getValue();
-        if(price != null) {
-            return germanCurrencyFormat.format(price);
-        }
-        return null;
-    }
+                @Override
+                    public String getFormattedPrice() 
+                    {
+                    //return productTeaser.getFormattedPrice();
+                    NumberFormat germanCurrencyFormat = NumberFormat.getCurrencyInstance(Locale.GERMANY);
+                    Double price =  productRetriever.fetchProduct().getPrice().getRegularPrice().getAmount().getValue();
+                        if(price != null) 
+                        {
+                            return germanCurrencyFormat.format(price);
+                        }
+                    return null;
+                    }
     ```
 
     Note how the `productRetriever` object gives us access to the `ProductInterface` object via the `fetchProduct()` method. You can see all of the [available methods here](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java).
 
     > Note* modifying the locale to German is just a fun example to see the override. In reality the ProductTeaser uses the [page's locale to determine the format](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/internal/models/v1/productteaser/ProductTeaserImpl.java#L173).
 
-5. Next we need to update the **productteaser.html** in the **ui.apps** module to reference our new Sling Model at: `com.acme.cif.core.models.MyProductTeaser`.
+1. Next we need to update the **productteaser.html** in the **ui.apps** module to reference our new Sling Model at: `com.acme.cif.core.models.MyProductTeaser`.
 
     ```diff
       <!--/* productteaser.html - change the use.product to point to MyProductTeaser */-->
@@ -351,20 +353,20 @@ Sling Models are implemented as Java and can be found in the **core** module of 
 
     Save the changes to `productteaser.html`.
 
-6. Deploy the code base to the local instance of AEM. Since changes were made to both the **ui.apps** and **core** modules, build and deploy the project from the root:
+1. Deploy the code base to the local instance of AEM. Since changes were made to both the **ui.apps** and **core** modules, build and deploy the project from the root:
 
     ```shell
     $ cd acme-store
     $ mvn -PautoInstallPackage clean install
     ```
 
-7. Open a browser and navigate to: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). This console shows all of the Sling Models registered in the system. Double-check to ensure the MyTeaserModelImpl got deployed and is mapped correctly. You should be able to see something like:
+1. Open a browser and navigate to: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). This console shows all of the Sling Models registered in the system. Double-check to ensure the MyTeaserModelImpl got deployed and is mapped correctly. You should be able to see something like:
 
     ```plain
     com.acme.cif.core.models.MyProductTeaserImpl - acme/components/commerce/productteaser
     ```
 
-8. Finally navigate to where you authored the Product Teaser component and you should now see the price with the German currency format:
+1. Finally navigate to where you authored the Product Teaser component and you should now see the price with the German currency format:
 
     ![Price Format Updated](/help/commerce-cloud/assets/customize-cif-components/german-currency-update.png)
 
