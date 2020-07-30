@@ -53,6 +53,6 @@ To connect AEM Commerce with Magento follow these steps:
 
 With this, you are ready to use AEM Commerce as a Cloud Service and can deploy your project via Cloud Manager.
 
-## 3rd party commerce integrations {#3rd-party}
+## 3rd party commerce integrations {#integrations}
 
 For 3rd party commerce integrations, an [API mapping layer](architecture/third-party.md) is needed to connect AEM Commerce as a Cloud Service and CIF Core Components with your commerce system. This API mapping layer is typically deployed on Adobe I/O Runtime. Contact your sales representative for available integrations and access to Adobe I/O Runtime.
