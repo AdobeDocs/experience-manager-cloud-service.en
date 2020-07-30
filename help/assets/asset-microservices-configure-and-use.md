@@ -39,7 +39,7 @@ Experience Manager allows for the following levels of processing.
 
 |Configuration|Description|Use cases covered|
 |---|---|---|
-|[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px)</li> <br> <li>Large preview (web rendition - 1280 px)</li> <br> <li>Metadata extraction </li> <br> <li> Text extraction </li> </ul> |
+|[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px)</li> <br> <li>Large preview (web rendition - 1280 px)</li> <br> <li>Metadata extraction </li> <br> <li> Text extraction </li> |
 |[Standard configuration](#standard-config)|It is configured by administrators using the Experience Manager user interface. It provides more rendition generation than the above default configuration.| TBD. |
 |[Custom worker](#custom-config) | Allows for custom development to support more complex requirements. Leverages a cloud-native [!DNL Asset Compute Service]. | See [use cases](#custom-config). |
 
