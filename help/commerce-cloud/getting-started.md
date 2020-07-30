@@ -11,4 +11,3 @@ Once you have been provisioned with the CIF add-on, it will be applied to any ex
 
 For more details, refer to [Setup your Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html). There are some additional configurations you will need to do after you have been provisioned with the CIF add-on as described below.
 
-

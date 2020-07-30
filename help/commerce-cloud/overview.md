@@ -28,6 +28,7 @@ The main benefits are:
 
 ![CIF Elements](assets/cif-overview1.jpg)
 
+
 ### CIF add-On for Authoring tools {add-on-authoring-tools}
 
 The CIF add-On provides access to commerce authoring tooling such as Product Console, Product & Category Pickers or product search for authors to empower them to create rich experiences with marketing and commerce content. The add-on also manages the backend connection to Magento (or alternative commerce system) via GraphQL. Once the add-on is provisioned it is deployed on AEM as a Cloud Service environments automatically.
