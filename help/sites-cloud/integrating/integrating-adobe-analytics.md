@@ -20,7 +20,7 @@ Compared to previous versions of AEM, framework support is not provided in the A
 
 1. Navigate to **Tools** → **Cloud Services**.
 2. Select **Adobe Analytics Configurations**.
-![Analytics Window](assets/analytics_screen.png "Analytics Window")
+![Analytics Window](assets/analytics_screen1.png "Analytics Window")
 3. Select the **Create** button.
 4. Fill in the details (see below), and click **Connect**.
 
@@ -28,7 +28,7 @@ Compared to previous versions of AEM, framework support is not provided in the A
 
 The configuration fields present in the Adobe Analytics Configuration window are:
 
-![Configuration Parameters](assets/properties_field.png "Configuration Parameters")
+![Configuration Parameters](assets/properties_field1.png "Configuration Parameters")
 
 | Property | Description |
 |---|---|
