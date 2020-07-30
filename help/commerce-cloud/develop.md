@@ -30,9 +30,9 @@ The following should be installed locally:
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### Accessing the CIF Add-on
+### Accessing the CIF add-on
 
-The CIF Add-On can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Note that access to the SDK listings is limited to those with AEM as a Cloud Service license.
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). The zip file contains the CIF add-on as Sling Feature archive, it is not an AEM package. Note that access to the SDK listings is limited to those with AEM as a Cloud Service license.
 
 >[!TIP]
 >
@@ -50,7 +50,9 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
     ```
 
 3. Create a `crx-quickstart/install` folder
-4. Copy the correct Sling Feature archive file of the CIF add-on into the `crx-quickstart/install` folder. The CIF Add-On zip file contains two Sling Feature archive `.far` files. Make sure to use the correct one for AEM Author or AEM Publish, depending on how you plan to run the local EM as a Cloud Service SDK.
+4. Copy the correct Sling Feature archive file of the CIF add-on into the `crx-quickstart/install` folder.
+
+    The CIF add-on zip file contains two Sling Feature archive `.far` files. Make sure to use the correct one for AEM Author or AEM Publish, depending on how you plan to run the local AEM as a Cloud Service SDK.
 
 5. Create a local OS environment variable named `COMMERCE_ENDPOINT` holding the Magento GraphQL endpoint.
 
@@ -65,6 +67,8 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
     ```bash
     set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
     ````
+
+    This variable must be set up for the AEM as a Cloud Service environment as well.
 
 6. Start the AEM as a Cloud Service SDK
 
