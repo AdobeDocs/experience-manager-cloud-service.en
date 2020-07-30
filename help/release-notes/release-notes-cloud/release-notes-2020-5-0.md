@@ -5,7 +5,7 @@ description: Experience Manager Release Notes for 2020.5.0
 
 # Release Notes for AEM as a Cloud Service 2020.5.0 {#release-notes}
 
-The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.5.0.
+This page outlines the general Release Notes for Experience Manager as a Cloud Service 2020.5.0.
 
 ## Release Date {#release-date}
 
