@@ -19,12 +19,12 @@ Adobe Launch is necessary for managing client-side properties for both Analytics
 ## Creating the Adobe Target Configuration {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
-![Navigation](assets/cloudservice.png "Navigation")
+![Navigation](assets/cloudservice1.png "Navigation")
 2. Select **Adobe Target**.
 3. Select the **Create** button.
-![Create](assets/tenant.png "Create")
+![Create](assets/tenant1.png "Create")
 4. Fill in the details (see below), and select **Connect**.
-![Connect](assets/open_screen.png "Connect")
+![Connect](assets/open_screen1.png "Connect")
 
 ### IMS Configuration
 
@@ -37,7 +37,7 @@ To edit the Target configuration, follow these steps:
 1. Select an existing configuration and click **Properties**.
 2. Edit the properties.
 3. Select **Re-connect to Adobe Target**.
-![Re-connect](assets/edit_config_page.png "Re-connect")
+![Re-connect](assets/edit_config_page1.png "Re-connect")
 4. Select **Save and Close**.
 
 ### Adding a configuration to a site {#add-configuration}
@@ -68,7 +68,7 @@ A property is a container that will be filled with extensions, rules, data eleme
 2. Provide a name for your property.
 3. As the domain enter the IP/host on which you want to load the launch library.
 4. Select the **Save** button.
-![Launchproperty](assets/properties_newproperty.png "Launchproperty")
+![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### Adding the required extensions {#add-extension}
 
@@ -76,10 +76,10 @@ A property is a container that will be filled with extensions, rules, data eleme
 
 1. Select the Extension Catalog option, and search for Target in the filter.
 2. Select **Adobe Target** at.js and Click on the Install option.
-![Target Search](assets/search_ext.png "Target Search")
+![Target Search](assets/search_ext1.png "Target Search")
 3. Select the **Configure** button. Notice the configuration window with the Target account credentials imported, and the at.js version for this extension.
 4. Select **Save** to add the Target extension to your Launch property. You should be able to see the Target extension listed under the **Installed Extensions** list.
-![Save Extension](assets/configure_extension.png "Save Extension")
+![Save Extension](assets/configure_extension1.png "Save Extension")
 5. Repeat the steps above to search for the **Adobe ContextHub** extension and install it (this is required for the integration with contexthub parameters, based on which targeting will be done).
 
 ### Creating a Data Element {#data-element}
@@ -90,16 +90,16 @@ A property is a container that will be filled with extensions, rules, data eleme
 2. Select **Add Data Element**.
 3. Provide the name of data element and map it to a context hub parameter.
 4. select **Save**.
-![Data Element](assets/data_elem.png "Data Element")
+![Data Element](assets/data_elem1.png "Data Element")
 
 ### Creating a Page Rule {#page-rule}
 
 In **Rule** we define and order a sequence of actions, which will be executed on site, to achieve targeting.
 
 1. Add a set of actions as exemplified in the screenshot.
-![Actions](assets/rules.png "Actions")
+![Actions](assets/rules1.png "Actions")
 2. In Add Params to All Mboxes add the data element configured earlier (see data element above), to the parameter which will be sent in the mbox call.
-![Mbox](assets/map_data.png "Actions")
+![Mbox](assets/map_data1.png "Actions")
 
 ### Build and Publish {#build-publish}
 
