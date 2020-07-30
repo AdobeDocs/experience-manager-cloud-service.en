@@ -37,9 +37,11 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Experience Manager allows for the following levels of processing.
 
-* [Default configuration](#default-config): It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.
-* [Standard configuration](#standard-config): It is configured by administrators using the Experience Manager user interface. It provides more rendition generation than the above default configuration.
-* [Custom worker](#custom-config): Allows for custom development to support your processing requirements. A development framework allows for multiple uses cases that are configurable as per your organization's need.
+|Configuration|Description|Use cases covered|
+|---|---|---|
+|[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px)</li> <br> <li>Large preview (web rendition - 1280 px)</li> <br> <li>Metadata extraction </li> <br> <li> Text extraction </li> </ul> |
+|[Standard configuration](#standard-config)|It is configured by administrators using the Experience Manager user interface. It provides more rendition generation than the above default configuration.| TBD. |
+|[Custom worker](#custom-config) | Allows for custom development to support more complex requirements. Leverages a cloud-native [!DNL Asset Compute Service]. | See [use cases](#custom-config). |
 
 To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 
@@ -56,32 +58,15 @@ With the default configuration, only the most basic processing profile is config
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-The default processing profile contains configurations for the following:
-
-* Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px)
-* Large preview (web rendition - 1280 px)
-* Metadata extraction
-* Text extraction
-
 ## Standard profile {#standard-config}
 
 [!DNL Experience Manager] provide capabilities to generate more specific renditions for common formats as per user's needs. An administrator can create additional [!UICONTROL Processing Profiles] to facilitate such rendition creation. Users then assign one or more of the available profiles to specific folders to get the additional processing done. Say for example, the additional processing can generate renditions for web, mobile, and tablet. The following video illustrates how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions.
 
-### Rendition width and height {#rendition-width-height}
+* **Rendition width and height**: Rendition width and height specification provides maximum sizes of the generated output image. Asset microservices tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original. An empty value means that asset processing assumes the pixel dimension of the original.
 
-Rendition width and height specification provides maximum sizes of the generated output image. Asset microservices tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original.
+* **MIME type inclusion rules**: When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset (blocked list). Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated (allowed list).
 
-An empty value means that asset processing assumes the pixel dimension of the original.
-
-### MIME type inclusion rules {#mime-type-inclusion-rules}
-
-When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset (blocked list).
-
-Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated (allowed list).
-
-### Special FPO rendition {#special-fpo-rendition}
-
-When placing large-sized assets from [!DNL Experience Manager] into [!DNL Adobe InDesign] documents, a creative professional waits for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using [!DNL InDesign]. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in [!DNL InDesign] documents to begin with, which can be replaced with full-resolution assets on-demand later. [!DNL Experience Manager] provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio.
+* **Special FPO rendition**: When placing large-sized assets from [!DNL Experience Manager] into [!DNL Adobe InDesign] documents, a creative professional waits for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using [!DNL InDesign]. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in [!DNL InDesign] documents to begin with, which can be replaced with full-resolution assets on-demand later. [!DNL Experience Manager] provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio.
 
 The processing profile can include a FPO (For Placement Only) rendition. See [!DNL Adobe Asset Link] [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. For more information, see [Adobe Asset Link complete documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
@@ -90,11 +75,8 @@ The processing profile can include a FPO (For Placement Only) rendition. See [!D
 To create standard processing profile, follow these steps:
 
 1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Click **[!UICONTROL Create]**.
-
 1. Provide a name that helps you uniquely identify the profile when applying to a folder.
-
 1. To generate FPO renditions, on the **[!UICONTROL Standard]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
-
 1. To generate other renditions, click **[!UICONTROL Add New]** and provide the following information:
 
    * File name of each rendition.
@@ -115,11 +97,18 @@ The following video demonstrates the usefulness and usage of standard profile.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
-## Custom profile {#custom-config}
+## Custom profile and use cases {#custom-config}
+
+**TBD items**:
+
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
 
 Some complex asset processing use cases cannot be accomplished using default configurations as the needs of the organizations are varied. Adobe offers [!DNL Asset Compute Service] for such use cases. It is a scalable and extensible service to process digital assets. It can transform image, video, document and other file formats into different renditions including thumbnails, extracted text & metadata and archives.
 
-Developers can use the Asset Compute Service to create specialized custom workers that cater to complex use cases. [!DNL Experience Manager] users can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases:
+Developers can use the Asset Compute Service to create specialized custom workers that cater to pre-defined, complex use cases. [!DNL Experience Manager] can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases:
 
 * Generate custom enhanced smart tags for digital assets using Adobe Sensei.
 * Generate cropping mask of a subject using Adobe Sensei.
@@ -134,28 +123,22 @@ Developers can use the Asset Compute Service to create specialized custom worker
 
 ### Create a custom profile {#create-custom-profile}
 
-**TBD items**:
-
-* Cross-link to Extensibility content.
-* Add note about organization.
-* Mention how to get URL of worker.
-* Mention mapping of service parameter.
-* Review from flow perspective shared in Jira ticket.
-
 To create a custom profile, following these steps:
 
 1. Administrators access **[!UICONTROL Tools > Assets > Processing Profiles]**. Click **[!UICONTROL Create]**.
-
-1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide a name that helps you uniquely identify the profile when applying to a folder.
-
+1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide the desired file name of the rendition.
 1. Provide the following information and click **[!UICONTROL Save]**.
 
    * File name of each rendition and a supported file extension.
-   * Endpoint URL of a Firefly custom app. The app must be from the same organization as the Experience Manager account is.
+   * End-point URL of a Firefly custom app. The app must be from the same organization as the Experience Manager account is.
    * Add Service Parameters as required.
    * Included and excluded MIME types to define the applicability of a profile.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
+
+>[!CAUTION]
+>
+>If the Firefly app and [!DNL Experience Manager] account are not from the same organization, the integration does not work.
 
 ## Use processing profiles to process assets {#use-profiles}
 
