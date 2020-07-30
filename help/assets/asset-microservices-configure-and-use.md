@@ -121,7 +121,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 * Must cross-link to Extensibility content.
 * Add note about same organization.
-* 
 
 Administrators can configure Experience Manager to invoke custom worker created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom workers that cater to complex use cases. [!DNL Asset Compute Service] is a scalable and extensible service of [!DNL Adobe Experience Cloud] to process digital assets. It can transform image, video, document and other file formats into different renditions including thumbnails, extracted text & metadata and archives. The supported use cases are:
 
