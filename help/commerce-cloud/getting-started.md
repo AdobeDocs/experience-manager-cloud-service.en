@@ -45,11 +45,13 @@ To connect AEM Commerce with Magento follow these steps:
 
 >[!TIP]
 >
->You can list all Cloud Manager variables using the following command to double check: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
+>You can list all Cloud Manager variables using the following command to double-check: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
 >[!Note]
 >
 >Alterntivly you can use the [Cloud Manger API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) to configure the Cloud Manager variables as well.
+
+With this, you are ready to use AEM Commerce as a Cloud Service and can deploy your project via Cloud Manager.
 
 ## 3rd party commerce integrations {#3rd-party}
 

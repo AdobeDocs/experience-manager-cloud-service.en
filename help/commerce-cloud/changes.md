@@ -16,8 +16,7 @@ The main differences as compared to Experience Manager 6.5 are in the following 
 
 The Classic Commerce Integration Framework which included a Product Importer to import and store product catalogs in Experience Manager is no longer available in Experience Manager as a Cloud Service. The use of Classic CIF is not supported in Experience Manager as a Cloud Service and projects using Classic CIF will have to replace the Classic CIF implementation with the supported version as described in [CIF on Experience Manager as a Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
 
-
-## Deployment of CIF {#cif-tools}
+## Deployment of CIF {#deployment}
 
 Shown below are the different deployment models for Commerce Integration Framework for the different AEM offerings:
 
@@ -30,6 +29,18 @@ Shown below are the different deployment models for Commerce Integration Framewo
 >
 >CIF Classic/Quickstart version of Commerce Integration Framework may be used on AEM On-premise offering for very limited use-cases. However, this is not the recommended solution.
 
-
 ## Moving to AEM Commerce as a Cloud Service from On-premise and Managed Services {#moving-cif-cs}
 
+Customers moving from an AEM on-premise or Managed Services installation to AEM as a Cloud Service need to do a few minor adjustments on the AEM project.
+
+The first adjustment, as described above, is needed for the CIF Connector. The CIF Connector is replaced by the CIF add-on which is deployed by Adobe. Therefore do not install the CIF Connector on AEM as a Cloud Service. Also, the use with the local AEM Cloud SDK is not supported, Adobe provides the CIF add-on also for [local development](develop.md).
+
+Second, understand the [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) and the characteristics of AEM as a Cloud Service. Adapt your project setup to the AEM as a Cloud Service layout.
+The main differences here are:
+
+* The GraphQL client OSGI bundle **must not** be included into the AEM project anymore, it is deployed via the CIF add-on
+* OSGI configs for GraphQL client and Graphql Data Service **must not** be included into the AEM project anymore
+
+>[!Tip]
+>
+>Check out the [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) project on GitHub. This project provides Maven profiles for AEM as a Cloud Service and on-premise deployments which take into account the different framework conditions.  
