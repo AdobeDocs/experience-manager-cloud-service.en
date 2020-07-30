@@ -19,7 +19,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * A new user interface implementation replaces the implementation based on the Classic UI.
 
-* Simplified user interface dialogs, leaving framework creation for variable mapping and other configurations to [!DNL Adobe Launch].
+* Simplified user interface dialogs, leaving framework creation for variable mapping and other configurations to [!DNL Adobe Launch]. See [Integrating Adobe Analytics](help/sites-cloud/integrating/integrating-adobe-analytics.md) and [Integrating Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 * Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
 
