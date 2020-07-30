@@ -15,12 +15,10 @@ In this tutorial we will review several different extension points provided by A
 
 The following tools and technologies are required:
 
-* [Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/index.html) or [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html) (AEM 6.5+ only)
+* [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
-* Adobe Experience Manager (local instance)
-  * [AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
-  * [AEM 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html)
-* Magento running a [version compatible with Archetype 0.7.0](https://github.com/adobe/aem-cif-project-archetype#requirements)
+* [AEM Cloud SKD with CIF add-on](../develop.md)
+* Magento compatible with CIF Core Components
 
 It is recommended to review the following content before proceeding with this tutorial:
 
