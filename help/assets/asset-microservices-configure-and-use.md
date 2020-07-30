@@ -4,7 +4,7 @@ description: Learn how to configure and use the cloud-native asset microservices
 contentOwner: AG
 ---
 
-# Get started using asset microservices {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -16,7 +16,7 @@ contentOwner: AG
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
 -->
 
-Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the services for optimal handling of different asset types and processing options.
+Asset microservices provide for scalable and resilient processing of assets using cloud services. Adobe manages the services for optimal handling of different asset types and processing options.
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Administrators can create and maintain the configurations of post-processing workflows, including optional customization. Customizing workflows allows for extensibility and full customization.
 
@@ -31,78 +31,127 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of Experience Manager. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
+>The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of [!DNL Experience Manager]. Most of the standard rendition generation and metadata-related steps are replaced by the asset microservices processing, and remaining steps, if any, can be replaced by the post-processing workflow configuration.
 
-## Get started with asset processing {#get-started}
+## Understand asset processing options {#get-started}
 
-Asset processing with asset microservices is pre-configured with a default configuration, ensuring that the default renditions required by the system are available. It also ensure that metadata extraction and text extraction operations are available. Users can start uploading or updating assets immediately and basic processing is available by default.
+Experience Manager allows for the following levels of processing.
 
-For specific rendition generation or asset processing requirements, an AEM administrator can create additional [!UICONTROL Processing Profiles]. Users can assign one or more of the available profiles to specific folders to get additional processing done. Say for example, to generate web, mobile, and tablet specific renditions. The following video illustrates how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions.
+* [Default configuration](#default-profile): It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.
+* [Standard configuration](#standard-config): It is configured by administrators using the Experience Manager user interface. It provides more rendition generation than the above default configuration.
+* [Custom worker](#custom-config): Allows for custom development to support your processing requirements. A development framework allows for multiple uses cases that are configurable as per your organization's need.
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
-
-To change existing profile, see [configurations for asset microservices](#configure-asset-microservices).
 To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 
-## Configurations for asset microservices {#configure-asset-microservices}
+### Supported file formats {#supported-file-formats}
 
-To configure asset microservices, administrators can use configuration user interface under **[!UICONTROL Tools > Assets > Processing Profiles]**.
+Asset microservices provide support for a wide variety of file formats in terms of the ability to generate renditions or extract metadata. See [supported file formats](file-format-support.md) for the full list.
 
-### Default configuration {#default-config}
+## Default profile {#default-profile}
 
-With the default configuration, only the standard processing profile is configured. The standard processing profile is not visible on the user interface and you cannot modify it. It always executes to process uploaded assets. A standard processing profile ensures that all the basic processing required by Experience Manager is completed on all assets.
+Some defaults are pre-configured to ensure that the default renditions required in Experience Manager are available. The default configuration also ensure that metadata extraction and text extraction operations are available. Users can start uploading or updating assets immediately and basic processing is available by default.
 
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
+With the default configuration, only the most basic processing profile is configured. Such a processing profile is not visible on the user interface and you cannot modify it. It always executes to process uploaded assets. Such a default processing profile ensures that the basic processing required by [!DNL Experience Manager] is completed on all assets.
 
-The standard processing profile provides the following processing configuration:
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+-->
+
+The default processing profile contains configurations for the following:
 
 * Standard thumbnails used by Asset user interface (48, 140, and 319 px)
 * Large preview (web rendition - 1280 px)
 * Metadata extraction
 * Text extraction
 
-### Supported file formats {#supported-file-formats}
+## Standard profile {#standard-config}
 
-Asset microservices provide support for a wide variety of file formats in terms of the ability to generate renditions or extract metadata. See [supported file formats](file-format-support.md) for the full list.
+Experience Manager provide capabilities to generate more specific renditions for common formats as per user's needs. An administrator can create additional [!UICONTROL Processing Profiles] to facilitate such rendition creation. Users then assign one or more of the available profiles to specific folders to get the additional processing done. Say for example, the additional processing can generate renditions for web, mobile, and tablet. The following video illustrates how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions.
 
-### Add additional processing profiles {#processing-profiles}
+### Rendition width and height {#rendition-width-height}
 
-Additional processing profiles can be added using the **[!UICONTROL Create]** action.
-
-Each processing profile configuration includes a list of renditions. For each rendition, you can specify the following:
-
-* Rendition name.
-* Supported rendition format, such as JPEG, PNG, or GIF.
-* Rendition width and height in pixels. If it is not specified, the full pixel size of the original image is used.
-* Rendition quality of JPEG in percent.
-* Included and excluded MIME types to define the applicability of a profile.
-
-![processing-profiles-adding](assets/processing-profiles-adding.png)
-
-When you create and save a new processing profile it is added to the list of configured processing profiles. You can apply these processing profiles to folders in the folder hierarchy to make them effective for asset uploads and assets processing.
-
-<!-- Removed per cqdoc-15624 request by engineering.
- ![processing-profiles-list](assets/processing-profiles-list.png) -->
-
-#### Rendition width and height {#rendition-width-height}
-
-Rendition width and height specification provides maximum sizes of the generated output image. Asset microservice tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original.
+Rendition width and height specification provides maximum sizes of the generated output image. Asset microservices tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original.
 
 An empty value means that asset processing assumes the pixel dimension of the original.
 
-#### MIME type inclusion rules {#mime-type-inclusion-rules}
+### MIME type inclusion rules {#mime-type-inclusion-rules}
 
 When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. If it matches that list, this specific rendition is not generated for the asset (blocked list).
 
 Otherwise, the MIME type is checked against the included MIME type, and if it matches the list, the rendition is generated (allowed list).
 
-#### Special FPO rendition {#special-fpo-rendition}
+### Special FPO rendition {#special-fpo-rendition}
 
 When placing large-sized assets from AEM into Adobe InDesign documents, a creative professional must wait for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using InDesign. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in InDesign documents to begin with, which can be replaced with full-resolution assets on-demand later. Experience Manager provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio.
 
 The processing profile can include a FPO (For Placement Only) rendition. See Adobe Asset Link [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. For more information, see [Adobe Asset Link complete documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
-## Use asset microservices to process assets {#use-asset-microservices}
+### Create standard profile {#create-standard-profile}
+
+To create standard processing profile, follow these steps:
+
+1. Administrators access **[!UICONTROL Tools > Assets > Processing Profiles]**. Click **[!UICONTROL Create]**.
+
+1. Provide a name that helps you uniquely identify the profile when applying to a folder.
+
+1. To generate FPO renditions, on the **[!UICONTROL Standard]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
+
+1. To generate other renditions, click **[!UICONTROL Add New]** and provide the following information:
+
+   * File name of each rendition.
+   * File format (PNG, JPEG, or GIF) of each rendition.
+   * Width and height in pixels of each renditions. If the values are not specified, the full pixel size of the original image is used.
+   * Quality in percent of each JPEG rendition.
+   * Included and excluded MIME types to define the applicability of a profile.
+
+![processing-profiles-adding](assets/processing-profiles-adding.png)
+
+1. Click **[!UICONTROL Save]**.
+
+The following video demonstrates the usefulness and usage of standard profile.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) 
+ -->
+
+## Custom profile {#custom-config}
+
+**TBD items**:
+
+* Must cross-link to Extensibility content.
+* Add note about same organization.
+* 
+
+Administrators can configure Experience Manager to invoke custom worker created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom workers that cater to complex use cases. [!DNL Asset Compute Service] is a scalable and extensible service of [!DNL Adobe Experience Cloud] to process digital assets. It can transform image, video, document and other file formats into different renditions including thumbnails, extracted text & metadata and archives. The supported use cases are:
+
+* Generate custom enhanced smart tags for digital assets using Adobe Sensei end-point.
+* Generate cropping mask of a subject using Adobe Sensei.
+* Retrieve product metadata information from PIM system and make the metadata part of binary of asset during ingestion of asset.
+* Change the background color of a transparent image using [!DNL Adobe Photoshop] API.
+* Retouch an image using [!DNL Photoshop] API.
+* Straighten an image using [!DNL Adobe Lightroom] API.
+
+You cannot edit the standard metadata using the custom workers. You can only modify custom metadata.
+
+### Create a custom profile {#create-custom-profile}
+
+To create a custom profile, following these steps:
+
+1. Administrators access **[!UICONTROL Tools > Assets > Processing Profiles]**. Click **[!UICONTROL Create]**.
+
+1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide a name that helps you uniquely identify the profile when applying to a folder.
+
+1. Provide the following information and click **[!UICONTROL Save]**.
+
+   * File name of each rendition and a supported file extension.
+   * Endpoint URL of a Firefly custom app. The app must be from the same organization as the Experience Manager account is.
+   * Add Service Parameters as required.
+   * Included and excluded MIME types to define the applicability of a profile.
+
+![custom-processing-profile](assets/custom-processing-profile.png)
+
+## Use processing profiles to process assets {#use-profiles}
 
 Create and apply the additional, custom processing profiles to specific folders for Experience Manager to process for assets uploaded to or updated in these folders. The default, in-built standard processing profile is always executed but is not visible on the user interface. If you add a custom profile, then both profiles are used to process the uploaded assets.
 

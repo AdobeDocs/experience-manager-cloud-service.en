@@ -37,7 +37,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
 
-
 ## Core Components {#core-components}
 
 ### What's New {#what-is-new-core-components}
