@@ -1,5 +1,5 @@
 ---
-title: Integrating with Adobe Analytics
+title: Integrating with Adobe Analytics 
 description: Integrating with Adobe Analytics 
 ---
 

@@ -56,7 +56,6 @@ To upload a file (or multiple files), you can either select them on your desktop
 
    If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. However, files that are already uploaded are not deleted.
 
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -66,7 +65,6 @@ To upload a file (or multiple files), you can either select them on your desktop
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
-
 
  1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
 
@@ -147,7 +145,7 @@ In order to have additional processing done on the uploaded assets, you can use 
 The following profiles are available:
 
 * [Metadata profiles](metadata-profiles.md) allow you to apply default metadata properties to assets uploaded into that folder
-* [Processing profiles](asset-microservices-configure-and-use.md#processing-profiles) allow you to apply rendition processing and generate renditions in addition to the default ones
+* [Processing profiles](asset-microservices-configure-and-use.md) allow you to generate more renditions than are possible by default.
 
 Additionally, if Dynamic Media is enabled in your environment:
 
