@@ -39,9 +39,9 @@ Experience Manager allows for the following levels of processing.
 
 |Configuration|Description|Use cases covered|
 |---|---|---|
-|[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px)</li> <br> <li>Large preview (web rendition - 1280 px)</li> <br> <li>Metadata extraction </li> <br> <li> Text extraction </li> |
-|[Standard configuration](#standard-config)|It is configured by administrators using the Experience Manager user interface. It provides more rendition generation than the above default configuration.| TBD. |
-|[Custom worker](#custom-config) | Allows for custom development to support more complex requirements. Leverages a cloud-native [!DNL Asset Compute Service]. | See [use cases](#custom-config). |
+|[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px); Large preview (web rendition - 1280 px); Metadata and text extraction. |
+|[Standard configuration](#standard-config) | Configured by administrators via user interface only. Provides more options for rendition generation than the above default configuration.| Change format and resolution of images; generate FPO renditions. |
+|[Custom configuration](#custom-config) | Configured by administrators via user interface to invoke custom workers that support more complex requirements. Leverages a cloud-native [!DNL Asset Compute Service]. | See [allowed use cases](#custom-config). |
 
 To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 
