@@ -182,6 +182,7 @@ Part of base framework, this file gets generated on startup. You are **required*
 Default host globbing suitable for a standard project. If you need customization, modify `virtualhosts.any`. In your customization, you shouldn't include the default host globbing, as it matches **every** incoming request.
 
 >[!NOTE]
+>
 >The AEM as a Cloud Service maven archetype will generate the same dispatcher configuration file structure.
 
 The sections below describe how to validate the configuration locally so it can pass the associated quality gate in Cloud Manager when deploying an internal release.
@@ -203,7 +204,7 @@ Whitelisted directives:
   <Directory>
   ...
   
-  ```
+```
 
 The table below shows the supported apache modules:
 
@@ -243,7 +244,7 @@ The allowlist contains a list of Apache directives that are permitted in a custo
 
 When run against your maven artifact or your `dispatcher/src` subdirectory, it will report validation failures:
 
- ```
+```
 
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
@@ -378,39 +379,7 @@ This will start the dispatcher in a container with its backend pointing to an AE
 
 ## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
 
-The following strategy can be used to increase the log output for the dispatcher module and see the result of the `RewriteRule` evaluation in both local and cloud environments.
-
-Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `REWRITE_LOG_LEVEL`. They can be set in the file `conf.d/variables/global.vars`. Its relevant part follows:
-
-```
-
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-
-```
-
-When running the Dispatcher locally, logs are also directly printed to the terminal output. Most of the time, these logs should be in DEBUG, which can be accomplished by passing in the Debug level as a parameter when running Docker. For example: 
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-Logs for cloud environments will be exposed through the logging service available in Cloud Manager.
+Log levels are defined by the variables `DISP_LOG_LEVEL` and `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s`. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 

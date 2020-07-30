@@ -68,7 +68,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * The number of environment variables per environment has been increased to 200.
 
-* Cloud Manager pipelines now support customer-set variables and secrets.
+* Cloud Manager pipelines now support customer-set variables and secrets. 
 
    Refer to [Pipeline Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) for more details.
 
