@@ -7,21 +7,21 @@ description: Integrating with Adobe Target
 
 As part of the Adobe Marketing Cloud, Adobe Target lets you increase content relevance through targeting and measuring across all channels. Integrating Adobe Target and AEM as a Cloud Service requires:
 
-* using the Touch UI to create an Analytics Configuration in AEM as a Cloud Service (IMS configuration required). 
+* using the Touch UI to create an Analytics Configuration in AEM as a Cloud Service (IMS configuration required).
 * adding and configuring Adobe Analytics as an extension in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-The integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target you only need the Adobe Target Configuration and IMS.
+Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target you only need the Adobe Target Configuration and IMS.
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service customers who do not have an existing Target account, can request access to the Target Foundation Pack for Experience Cloud.  The Foundation Pack provides volume limited use of Target.
+>Adobe Experience Manager as a Cloud Service customers who do not have an existing Target account, can request access to the Target Foundation Pack for Experience Cloud. The Foundation Pack provides volume limited use of Target.
 
 ## Creating the Adobe Target Configuration {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
 ![Navigation](assets/cloudservice.png "Navigation")
 2. Select **Adobe Target**.
-3. Click the **Create** button.
+3. Select the **Create** button.
 ![Create](assets/tenant.png "Create")
 4. Fill in the details (see below), and select **Connect**.
 ![Connect](assets/open_screen.png "Connect")
@@ -52,10 +52,6 @@ AEM offers an out of the box integration with Experience Platform Launch. By add
 >
 >Existing (legacy) frameworks still work, but cannot be configured in the Touch UI. It is advisable to rebuild the variable mapping configurations in Launch.
 
->[!NOTE]
->
->Existing (legacy) frameworks still work, but cannot be configured in the Touch UI. It is advisable to rebuild the variable mapping configurations in Launch.
-
 As a general overview, the integration steps are:
 
 1. Create a Launch Property
@@ -76,7 +72,7 @@ A property is a container that will be filled with extensions, rules, data eleme
 
 ### Adding the required extensions {#add-extension}
 
-Extensions is the container that manages the core library settings. The Adobe Target extension supports client-side implementations using Target JavaScript SDK for the modern web, at.js. You need to add both the **Adobe Target** and **Adobe ContextHub** extensions.
+**Extensions** is the container that manages the core library settings. The Adobe Target extension supports client-side implementations by using Target JavaScript SDK for the modern web, at.js. You need to add both the **Adobe Target** and **Adobe ContextHub** extensions.
 
 1. Select the Extension Catalog option, and search for Target in the filter.
 2. Select **Adobe Target** at.js and Click on the Install option.
@@ -88,7 +84,7 @@ Extensions is the container that manages the core library settings. The Adobe Ta
 
 ### Creating a Data Element {#data-element}
 
-Data elements are the placeholders to which you can map context hub parameters.
+**Data elements** are the placeholders to which you can map context hub parameters.
 
 1. Select **Data Elements**.
 2. Select **Add Data Element**.
@@ -98,7 +94,7 @@ Data elements are the placeholders to which you can map context hub parameters.
 
 ### Creating a Page Rule {#page-rule}
 
-In Rule we define and order a sequence of actions, which will be executed on site, to achieve targeting.
+In **Rule** we define and order a sequence of actions, which will be executed on site, to achieve targeting.
 
 1. Add a set of actions as exemplified in the screenshot.
 ![Actions](assets/rules.png "Actions")
