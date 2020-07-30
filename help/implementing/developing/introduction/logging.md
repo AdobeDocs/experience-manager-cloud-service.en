@@ -20,9 +20,9 @@ Logging at the AEM application level, is handled by three logs:
 1. HTTP Request logs, which log information about HTTP requests and their responses served by AEM
 1. HTTP Access logs, which log summarized information and HTTP requests served by AEM
 
-> [!NOTE]
-> 
-> HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
+>[!NOTE]
+>
+>HTTP requests that are served from Publish tier's Dispatcher cache or upstream CDN are not reflected in these logs.
 
 ## AEM Java logging {#aem-java-logging}
 
@@ -588,9 +588,9 @@ In the support request, customers should indicate:
 
 The properties above should be specified for each relevant program/environment type combination.  For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
 
-> [!NOTE]
+>[!NOTE]
 >
-> Splunk forwarding for sandbox program environments is not supported.
+>Splunk forwarding for sandbox program environments is not supported.
 
 Below you will find a sample customer support request:
 
