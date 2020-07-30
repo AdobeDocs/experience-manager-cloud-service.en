@@ -87,7 +87,8 @@ The CIF integration layer is used to standardize integrations with other commerc
 
 Some of the commonly implemented AEM Commerce integration patterns are shown below.
 
-![AEM CIF Integration Patterns](assets/aem-cif-integration-patterns-updated.JPG)
+![AEM CIF Integration Patterns](/help/commerce-cloud/assets/aem-cif-integration-patterns-updated.JPG)
+
 
 ### Integration Pattern 1 {#integration-pattern-one}
 
