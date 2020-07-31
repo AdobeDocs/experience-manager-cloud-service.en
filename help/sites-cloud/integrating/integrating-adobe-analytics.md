@@ -7,8 +7,8 @@ description: Integrating with Adobe Analytics
 
 Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your web page activity. The integration requires:
 
-* using the Touch UI to create an Analytics Configuration in AEM as a Cloud Service.
-* adding and configuring Adobe Analytics as an extension in [Adobe Launch].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* using the Touch UI to create an Analytics configuration in AEM as a Cloud Service.
+* adding and configuring Adobe Analytics as an extension in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Compared to previous versions of AEM, framework support is not provided in the Analytics Configuration in AEM as a Cloud Service. Instead, it is now done through Adobe Launch, which is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). In Adobe Launch, a property is created where the Adobe Analytics extension can be configured and rules are created to send data to Adobe Analytics. Adobe Launch has replaced the task of analytics provided by the sitecatalyst.
 
@@ -16,11 +16,11 @@ Compared to previous versions of AEM, framework support is not provided in the A
 >
 >Adobe Experience Manager as a Cloud Service customers who do not have an existing Analytics account, can request access to the Analytics Foundation Pack for Experience Cloud. This Foundation Pack provides volume limited use of Analytics.
 
-## Creating the Analytics Configuration {#analytics-configuration}
+## Creating the Adobe Analytics Configuration {#analytics-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
-2. Select **Adobe Analytics Configurations**.
-![Analytics Window](assets/analytics_screen1.png "Analytics Window")
+2. Select **Adobe Analytics**.
+![Adobe Analytics Window](assets/analytics_screen2.png "Adobe Analytics Window")
 3. Select the **Create** button.
 4. Fill in the details (see below), and click **Connect**.
 
