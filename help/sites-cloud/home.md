@@ -17,8 +17,8 @@ This page lists the self-help resources regarding Sites on Experience Manager as
 * [Using Experience Fragments](authoring/fundamentals/experience-fragments.md)
 * [Using Launches](authoring/launches/overview.md)
 * [Personalizing Content with ContextHub](authoring/personalization/contexthub.md)
-* [Integrating with Adobe Analytics](integrating/adobe-analytics.md)
-* [Integrating with Adobe Target](integrating/adobe-target.md)
+* [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
+* [Integrating with Adobe Target](integrating/integrating-adobe-target.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 

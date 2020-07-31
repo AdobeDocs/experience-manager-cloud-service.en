@@ -85,7 +85,7 @@ To create standard processing profile, follow these steps:
    * Quality in percent of each JPEG rendition.
    * Included and excluded MIME types to define the applicability of a profile.
 
-![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
 1. Click **[!UICONTROL Save]**.
 
@@ -99,23 +99,22 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Custom profile and use cases {#custom-config}
 
-**TBD items**:
+<!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
 * Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
+-->
 
 Some complex asset processing use cases cannot be accomplished using default configurations as the needs of the organizations are varied. Adobe offers [!DNL Asset Compute Service] for such use cases. It is a scalable and extensible service to process digital assets. It can transform image, video, document and other file formats into different renditions including thumbnails, extracted text & metadata and archives.
 
-Developers can use the Asset Compute Service to create specialized custom workers that cater to pre-defined, complex use cases. [!DNL Experience Manager] can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases:
+Developers can use the Asset Compute Service to create specialized custom workers that cater to pre-defined, complex use cases. [!DNL Experience Manager] can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
 
-* Generate custom enhanced smart tags for digital assets using Adobe Sensei.
-* Generate cropping mask of a subject using Adobe Sensei.
-* Retrieve product metadata information from PIM system and make the metadata part of binary of asset during ingestion of asset.
-* Change the background color of a transparent image using [!DNL Adobe Photoshop] API.
-* Retouch an image using [!DNL Photoshop] API.
-* Straighten an image using [!DNL Adobe Lightroom] API.
+* Invoke [!DNL Adobe Photoshop] to Image cutout API and save the result as rendition.
+* Invoke third-party systems to update data, for example, a PIM system.
+* Use [!DNL Photoshop] API to generate variety of renditions based on Photoshop template.
+* Use [!DNL Adobe Lightroom] API to optimize the ingested assets and save them as renditions.
 
 >[!NOTE]
 >
@@ -209,3 +208,4 @@ For details about which standard workflow step can be used in the post-processin
 ## Best practices and limitations {#best-practices-limitations-tips}
 
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
+* Currently, the support is limited to generating renditions. Generating new asset is not supported.
