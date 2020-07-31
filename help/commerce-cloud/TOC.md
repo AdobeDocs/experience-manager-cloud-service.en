@@ -1,6 +1,7 @@
 ---
-sub-product: Commerce Integration Framework on AEM as a Cloud Service
-user-guide-title: Commerce Integration Framework on AEM as a Cloud Service
+sub-product: AEM Commerce as a Cloud Service
+user-guide-title: AEM Commerce as a Cloud Service
+user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
 ---
 
 # Commerce {#commerce}
