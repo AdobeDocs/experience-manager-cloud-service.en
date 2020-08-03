@@ -10,7 +10,7 @@ Adobe Experience Manager as a Cloud Service brings many new features and possibi
 The main differences as compared to Experience Manager 6.5 are in the following areas:
 
 * [Asset ingestion and upload](#asset-ingestion).
-* [Asset microservices for cloud processing](#asset-microservices).
+* [Asset microservices for cloud-native processing](#asset-microservices).
 * [Removal of Classic UI](#classic-ui).
 
 >[!NOTE]
