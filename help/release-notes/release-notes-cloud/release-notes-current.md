@@ -25,9 +25,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ## Adobe Experience Manager Assets as a Cloud Service {#assets}
 
->[!NOTE]
->AEM Assets as a Cloud Service features will be rolled out in the next few days.
-
 ### What's New {#what-is-new-assets}
 
 * [!DNL Asset Compute Service] is a scalable and extensible service to process assets. Administrators can configure Experience Manager to invoke custom worker created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom workers that cater to complex use cases. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. see [Use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
