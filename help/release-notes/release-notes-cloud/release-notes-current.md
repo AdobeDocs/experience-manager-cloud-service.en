@@ -108,7 +108,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 ### What's New {#what-is-new-commerce}
 
-* AEM Commerce is now available on Cloud Service. 
+AEM Commerce is now available on Cloud Service. 
 
   Refer to [Getting started with AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) for more details.
 
