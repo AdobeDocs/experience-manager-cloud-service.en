@@ -139,8 +139,8 @@ To create a custom profile, following these steps:
 1. Provide the following information.
 
    * File name of each rendition and a supported file extension.
-   * End-point URL of a Firefly custom app. The app must be from the same organization as the Experience Manager account is.
-   * Add [!UICONTROL Service Parameters] to pass extra information or parameters to the custom worker.
+   * [End-point URL of a Firefly custom app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). The app must be from the same organization as the Experience Manager account is.
+   * Add Service Parameters to [pass extra information or parameters to the custom worker](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters).
    * Included and excluded MIME types to define the applicability of a profile.
 
    Click **[!UICONTROL Save]**.
