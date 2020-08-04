@@ -41,7 +41,7 @@ Experience Manager allows for the following levels of processing.
 |---|---|---|
 |[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Large preview (web rendition - 1280 px) </li><li> Metadata and text extraction.</li></ul> |
 |[Custom configuration](#standard-config) | Configured by administrators via user interface. Provides more options for rendition generation by extending the default option. Extend the out-of-the-box worker to provide different formats and renditions. | <ul><li>FPO rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
-|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom workers to invoke [!DNL Asset Compute Service]. Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
+|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom workers to invoke [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -111,7 +111,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled by default or via processing profiles configuration on the UI. If the business needs are not met by this processing, Adobe recommends developing and using Asset Compute Service to extend the default capabilities.
+The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled automatically or via processing profiles configuration. If the business needs are not met by these processing options, Adobe recommends developing and using [!DNL Asset Compute Service] to extend the default capabilities. For an overview, see [understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ The [!DNL Asset Compute Service] supports a variety of use cases such as default
 
 It can transform image, video, document and other file formats into different renditions including thumbnails, extracted text & metadata and archives.
 
-Developers can use the [!DNL Asset Compute Service] to create specialized custom workers that cater to pre-defined use cases. [!DNL Experience Manager] can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
+Developers can use the [!DNL Asset Compute Service] to [create custom workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) that cater to the supported use cases. [!DNL Experience Manager] can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
 
 * Use [!DNL Adobe Photoshop]'s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) and save the result as rendition.
 * Invoke third-party systems to update data, for example, a PIM system.
@@ -231,3 +231,9 @@ For details about which standard workflow step can be used in the post-processin
 
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
 * Currently, the support is limited to generating renditions. Generating new asset is not supported.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
+>* [Understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+>* [How to create custom workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html).
