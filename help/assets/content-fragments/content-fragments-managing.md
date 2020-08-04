@@ -125,7 +125,6 @@ To open your fragment for editing:
    >
    >1. A message will be shown when the fragment is already referenced on a content page.
    >
-   >
    >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 3. Navigate through the three modes using the icons in the side panel:
