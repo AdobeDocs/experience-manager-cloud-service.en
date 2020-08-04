@@ -346,8 +346,8 @@ Sling Models are implemented as Java and can be found in the **core** module of 
     -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
     +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
        data-sly-use.actionsTpl="actions.html">
-        ...
-     ```
+       ...
+    ```
 
     Save the changes to `productteaser.html`.
 

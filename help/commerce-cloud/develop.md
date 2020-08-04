@@ -60,13 +60,13 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
     ```bash
     export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-    ````
+    ```
 
     Example Windows:
 
     ```bash
     set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-    ````
+    ```
 
     This variable must be set up for the AEM as a Cloud Service environment as well.
 
