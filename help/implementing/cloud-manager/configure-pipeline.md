@@ -8,7 +8,7 @@ description: Configure CI/CD Pipeline - Cloud Services
 
 ## Understanding the Flow {#understanding-the-flow}
 
-You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. 
 
