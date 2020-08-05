@@ -7,7 +7,7 @@ description: Integrating with Adobe Target
 
 As part of the Adobe Marketing Cloud, Adobe Target lets you increase content relevance through targeting and measuring across all channels. Integrating Adobe Target and AEM as a Cloud Service requires:
 
-* using the Touch UI to create an Analytics Configuration in AEM as a Cloud Service (IMS configuration required).
+* using the Touch UI to create a Target Configuration in AEM as a Cloud Service (IMS configuration required).
 * adding and configuring Adobe Target as an extension in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target you only need the Adobe Target Configuration and IMS.
