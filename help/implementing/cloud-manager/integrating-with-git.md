@@ -23,7 +23,7 @@ The video series assumes a basic knowledge of git and source control management.
 
 >[!NOTE]
 >
-> The steps and naming conventions outlined in this video series represent some best practices for working with a customer-managed git repository and Cloud Manager. It is expected that the conventions and workflows depicted would be adapted for individual development teams.
+>The steps and naming conventions outlined in this video series represent some best practices for working with a customer-managed git repository and Cloud Manager. It is expected that the conventions and workflows depicted would be adapted for individual development teams.
 
 ## Initial Sync {#initial-sync}
 

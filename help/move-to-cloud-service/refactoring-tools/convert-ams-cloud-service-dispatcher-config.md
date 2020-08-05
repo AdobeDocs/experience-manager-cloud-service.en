@@ -193,7 +193,8 @@ This section provides step by step instructions on how to convert an AMS configu
 ## Testing your configuration with a local deployment {#testing-config-local-deployment}
 
 >[!IMPORTANT]
-> The testing of your configuration with a local deployment requires Docker installation.
+>
+>The testing of your configuration with a local deployment requires Docker installation.
 
 Using the script `docker_run.sh` in the Dispatcher SDK, you can test that your configuration does not contain any other error that would only show up in deployment:
 

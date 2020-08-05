@@ -4,7 +4,7 @@ description: Organize your digital assets using various methods provided in Adob
 contentOwner: AG
 ---
 
-# Organize Digital Assets{#organize-digital-assets}
+# Organize digital assets {#organize-digital-assets}
 
 All digital assets, metadata and content of Microsoft Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and fully respects the proper permissions. Metadata is covered in detail in Metadata in Digital Asset Management.
 
@@ -37,5 +37,5 @@ You can limit who can access certain folders in Assets by making the folder part
 You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
-1. In the **Tags** area, click the drop-down button to reveal the available tags. Select tags as appropriate to add a tag. To delete a tag, hover the mouse over the tag and click the **x** to delete it.
+1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
 1. Click **Save** to save any tags you added.

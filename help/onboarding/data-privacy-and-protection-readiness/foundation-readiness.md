@@ -89,7 +89,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> For AEM as a Cloud Service there is no manual procedure available from the UI for the deletion of a user profile, as CRXDE is not accessible.
+>For AEM as a Cloud Service there is no manual procedure available from the UI for the deletion of a user profile, as CRXDE is not accessible.
 
 ### HTTP API {#http-api-1}
 

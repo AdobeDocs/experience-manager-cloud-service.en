@@ -1,190 +1,129 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Release Notes for 2020.6.0
-description: Experience Manager Release Notes for 2020.6.0
+title: Release Notes for 2020.7.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.7.0.
 ---
 
-# Release Notes for AEM as a Cloud Service 2020.6.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
-The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.6.0.
+The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.7.0.
 
 ## Release Date {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
-## What's New in AEM Sites {#aem-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
-Follow this section to learn about what is new and the updates for AEM Sites in AEM as a Cloud Service Release 2020.6.0.
+### What's New {#what-is-new-sites}
 
-### What's New {#whats-new-2020.6.0}
+[!DNL Experience Manager] as a Cloud Service connectors for [!DNL Adobe Target] and [!DNL Adobe Analytics] are enhanced in the following ways:
 
-Release 2.9.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
+* A new user interface implementation replaces the implementation based on the Classic UI.
 
-* Integration between [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) and the Core Components
-* Configurable HTML ID attributes for all components
-* A new Progress Bar component
-* Many bug fixes
+* Simplified user interface dialogs, leaving framework creation for variable mapping and other configurations to [!DNL Adobe Launch]. See [Integrating Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) and [Integrating Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
 
-### Bug Fixes {#sites-bug-fixes}
+* Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
 
-* Components inside layout container not visible when Layout container is copied and pasted again on a page.
+## Adobe Experience Manager Assets as a Cloud Service {#assets}
 
-* Fixed Issue with resizing of layout component.
+### What's New {#what-is-new-assets}
 
-* Added ability to manage routing Angular only pages and AEM/Angular pages.
+* [!DNL Asset Compute Service] is a scalable and extensible service to process assets. Administrators can configure Experience Manager to invoke custom worker created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom workers that cater to complex use cases. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. see [Use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 
-### Accessibility {#accessibility}
+* The initial configuration of [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service is improved to be more robust. It now provides progress of the processes to the administrators.
 
-* Narrating role and state are now possible for the Masonry items in the **Create Page** dialog while navigating in the browsing mode using the down arrow.
+* Publishing of assets to [!DNL Dynamic Media] is simplified and made more robust by making it an integral part of overall asset processing pipeline using asset microservices and improving the batch publishing backend.
 
-* Added a link in navigation to allow users to skip to the main content.
+* Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Additionally, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
 
-* Screen reader improvements.
+* Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
 
-## What's New in Foundations in AEM as a Cloud Service {#foundations}
+## Core Components {#core-components}
 
-AEM project build times will improve by removing all references in the AEM project’s pom.xml to the remote repository `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+### What's New {#what-is-new-core-components}
 
-The AEM as a Cloud Service SDK API Jar, which was previously hosted in that location, is now located in Maven Central, which is Maven’s default artifact repository.
+Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-## What's New in Cloud Manager {#cloud-manager}
+* Introduction of a new [PDF Viewer Component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
 
-Follow this section to learn about what is new and the updates for Cloud Manager in AEM as a Cloud Service Release 2020.6.0.
+* Accelerated Mobile Pages (AMP) support of Core Components is now available. It helps to produce faster customer experiences by making the page transition instantaneously when entering the site from a Google mobile search result, which improves user engagement and SEO.
+   Refer to [AMP Support for the Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) for more details.
+
+* Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html).
+
+* Bug fixes and code quality improvements.
+
+## Cloud Manager {#cloud-manager}
+
+### Release Date {#release-date-cm}
+
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
 
 ### What's New {#what-is-new-cloud-manager}
 
-* A user in the *Business Owner* role in Cloud Manager is now able to delete a Sandbox Program from the landing page (via quick action button on Program card) or from within the program.
+* The environments page has been redesigned.
 
-  Refer to [Deleting a Sandbox Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for more details.
+* Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
-* A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager is now able to delete their Production and Stage environment set via the Cloud Manager UI. The delete option is now available from both the Environment card on the **Programs Overview** page as well as the **Environments** page. Selecting the delete option on either Production or Stage also deletes the other in the set.
+* The number of environment variables per environment has been increased to 200.
 
-  Refer to [Deleting a Sandbox Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for more details.
+* Cloud Manager pipelines now support customer-set variables and secrets. 
 
-* Coach marks on the landing page to inform and instruct the user about basic navigation.
-
-* Coach marks on the **Program Overview** page to inform and instruct the user about basic navigation inside Cloud Manager to get them started.
-
-* A **LEARN** page is now available in Cloud Manager, accessible via the top navigation. This page includes resources to help users learn about the most frequently used work-flows as relevant to their roles assigned in Cloud Manager.
-
-* Sandbox Programs are now identified by means of a **Sandbox** badge that will be displayed on the program card on the landing page as well as next to the program name in the **Program Overview** page.
-
-* A user in the SysAdmin role now has one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager can be managed. A **Manage Access** button is now available on the landing page next to the **Add Program** button.
-  
-  Refer to [SysAdmin Tasks](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) for more details.
-
-* A user in the SysAdmin role now has one-click access to author instance directly from Cloud Manager. 
-
-  Refer to [Managing Access to Author Instance](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) for more details.
-
-* The Build log now includes the list of discovered artifacts, including skipped content packages.
-
-* The Build step now validates that all of the generated content packages include all mandatory properties – name, group and version.
-
-* The Build step now validates that the build produced at least one content package.
+   Refer to [Pipeline Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) for more details.
 
 ### Bug Fixes {#bug-fixes-cm}
 
-* In certain situations, the icons in the **Create Program** dialog were misaligned.
+* The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
 
-* The AEM release identifier was not consistently displayed on the **Programs Overview** page.
+* The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
 
-* When configuring the production pipeline, the **Scheduled Deployment** option was not visible for some customers.
+* The **Cancel** and **Save** options on the Non-Production Pipeline edit page were not always visible.
 
-### Known Issues {#known-issues-cm}
+* Certain failures in the code quality process could result in the log file not being generated correctly.
 
-* Environments within a Sandbox program will be hibernated when no activity is detected for a certain duration. This status will not be observed in Cloud Manager. The status can however be observed via Developer Console. This will be addressed in an upcoming release.
+* When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
 
-* The link to the Developer Console directly from Cloud Manager will not display the option to de-hibernate/hibernate a Sandbox Program's environment. To address this, once at the Developer Console, add the pattern `#release-cm-p1234-e5678` to the end of the url, where *1234* is the Program ID and *5678* is the Environment ID. This will be addressed in an upcoming release.
+* Some large pipeline step logs could not be consistently downloaded through the user interface.
 
-## What's New in [!DNL Adobe Experience Manager Assets] {#aem-assets}
+* The validation of environment names had an off-by-one error.
 
-**Guided User Experience for Enhanced Smart Tags, powered by Adobe Sensei**
+* The Environments page would sometimes show publish and dispatcher segments when none was present.
 
-Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
+### Known Issues {#known-issues}
 
-With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. The experience is a more intuitive now.
-Train Enhanced Smart Tags for more an intuitive training for Smart Tags. See [how to add smart tags to assets](/help/assets/smart-tags.md) and [configure smart tagging](/help/assets/smart-tags-configuration.md).
+* Due to a change in how code coverage is calculated, the *minimum* version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version receive an error message in the code quality process.
 
-**Support for ingestion, preview, and delivery of 3D content**
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
 
-Organizations can now store and use 3D files within AEM Assets. User can upload, preview, and use various core 3D files, including OBJ, STL, GLTF, and GLB files. With the addition of [!DNL Dynamic Media], you can configure and deliver 3D experiences using agnostic URLs or viewers. This includes a [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer component, and the ability to deliver 3D files via [!DNL Dynamic Media] (AR/VR). See [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+### What's New {#what-is-new-foundations}
 
-**Adobe Asset Link support for Adobe XD**
+* [Logs can be forwarded to Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs), which allows organizations to leverage their Splunk investment.
 
-With the latest release, [!DNL Experience Manager Assets] supports a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link for Adobe XD documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+* [A static, dedicated egress IP address](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
 
-With this release, creative users and designers can now work with assets managed in [!DNL AEM Assets] using [!DNL Adobe Asset Link] in a range of Creative Cloud desktop apps, including [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator], and [!DNL InDesign].
+* Ported AEM Analytics cloud service UI from Classic UI to new AEM UI. Also moved location of Analytics cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
 
-**Accessibility enhancements**
+* Ported AEM Target cloud service UI from Classic UI to new AEM UI. Also moved location of Target cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
 
-[!DNL Adobe Experience Manager Assets] is now more accessible in compliance with Web Content Accessibility Guidelines (WCAG) v2.1 guidelines. The accessibility has improved for the following use cases or interfaces:
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
-The user interface elements are screen reader friendly, are accessible using a keyboard, and have better contrast. The following is a detailed list of enhancements:
+### What's New {#what-is-new-commerce}
 
-* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress bars on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress bar. Instead, screen reader users perceive these status indicators as a tab list. (CQ-4273015)
+AEM Commerce is now available on Cloud Service. 
 
-* When adding tags in [!UICONTROL Properties] page of an asset, users navigate a tree structure of tags. The tree structure is not accessible as screen reader users do not hear anything when navigating it. (CQ-4272964)
+  Refer to [Getting started with AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) for more details.
 
-* In the link sharing dialog, when navigating in browse mode, the screen reader,
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-  * Narrates the table information immediately when the dialog is loaded.
-  * Is unable to navigate to all the listed auto-suggestions.
-  * Does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
+Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.0.2.
 
-* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) Users can drag the components using the keyboard in NVDA browse mode. (CQ-4296326)
+### Bug Fixes {#cra-bug-fixes}
 
-* On Assets user interface, the view settings are not accessible by keyboard. (CQ-4289038)
+* Earlier version of the CRA could not be run on Adobe Experience Manager (AEM) 6.1. Explicit support to allow users in the administrators group was added.
 
-* The luminosity ratio is less than 3:1 for the Yellow-colored rating icons. It is not useful to users with limited vision and without perception of color. The rating stars are displayed in the  tab in asset  or in card view  
+   Refer to [Installing CRA on AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
 
-* Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in the [!UICONTROL Properties] of an asset and in card view is changed for appropriate contrast. (CQ-4295106)
+* The expiration timestamp displayed on the summary report was incorrect.
 
-* The screen readers can now read the entries of the list box pop-up menu of combo box (in various fields on different pages) as a list of options. (CQ-4294017)
+* CRA was detecting duplicate custom components.
 
-* To apply a workflow to an asset, the chevron arrow in the [!UICONTROL Timeline] can be accessed using a keyboard. (CQ-4289268)
-
-* Users can remove selected tags in the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page using `x` symbol. The screen readers now announce the purpose and the number of selected tags (CQ-4273033).
-
-* The read-only form fields can be focused upon using a keyboard. For example, the disabled fields on [!UICONTROL Basic] tab on an asset's [!UICONTROL Properties] page. (CQ-4273031)
-
-* Access the options to filter assets in the left sidebar using a keyboard now. (CQ-4273018)
-
-* The screen reader announces the purpose of various combo box elements such as Path field and the option to open Selection dialog in [!UICONTROL Basic] tab of an asset's [!UICONTROL Properties] page. (CQ-4273016)
-
-* The volume controls for videos are accessible using a keyboard. (CQ-4272696)
-
-* Many actionable options on the Assets user interface do not indicate focus when using keyboard. (CQ-4272694)
-
-* Screen reader users now get to know when the rows in list view are selectable using a keyboard. The information is announced when pointer is hovered on the rows. (CQ-4271824)
-
-* Some form fields, such as the user name and password fields on the login page, rely on placeholder values to give an accessible label. (CQ-4271716)
-
-* Interactive user interface elements, such as links and options such as on header and zoom options of assets page or folder navigation can now be accessed using a keyboard. (CQ-4271412)
-
-* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique. (CQ-4271409)
-
-**Other enhancements**
-
-The release provides the following other enhancements:
-
-* Ability to reprocess assets with asset processing profiles, giving users full control of the process (run full asset processing, just apply specific processing profile, and decide if post-processing workflow should be run).
-* Search queries return results faster now when the underlying cluster instance has been restarted behind the scenes (the initial search run could last longer in such a case before).
-* Sort by 'Name' when viewing assets in list view in Assets interface and in the search results. See [search assets](/help/assets/search-assets.md#sort).
-* Sort on ‘Created’ (Date) when viewing assets in list view in Assets interface and in the search results. See [search assets](/help/assets/search-assets.md#sort).
-* Support to convert EPS files to images using asset microservices.
-
-### Bug Fixes {#assets-bug-fixes}
-
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
-In addition to the above new features, the current release provides the following bug fixes based on customer feedback for [!DNL Assets].
-
-* For MP3 music files, the play button displayed on thumbnail in the DAM preview does not work. (CQ-4294731)
-* Hovering pointer on card view, makes the screen scroll as a result of (automatic) focus on the quick actions available in the card. (GRANITE-26895)
-* Displaying too many images after scrolling many search results leads to browser crash. (GRANITE-26432)
-* When downloading an asset, if email option is selected and even if a valid email ID is provided, the download option is not available. (CQ-4296535)
-* Custom filters saved as smart collections are not applied properly to assets. (CQ-4294942)
-* Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
+* On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.

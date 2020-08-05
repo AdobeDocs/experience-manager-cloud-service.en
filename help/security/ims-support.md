@@ -84,7 +84,7 @@ User Sync Tool is distributed through the Adobe Github repository [at this locat
 
 >[!NOTE]
 >
-> A prerelease version **2.4RC1** is available with dynamic group creation support and can be found [here](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>A prerelease version **2.4RC1** is available with dynamic group creation support and can be found [here](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 The major features for this release are the ability to dynamically map new LDAP groups for user membership in the Admin Console, as well as dynamic user group creation.
 
@@ -152,7 +152,8 @@ For other users, the IMS based login can be used once IMS is configured on the i
 
 
 >[!NOTE]
-> Any user created in IMS can be created using Adobe ID or Federated ID. If a user is setup using Adobe ID, they are authenticated using their Company's Identity Provider to login.
+>
+>Any user created in IMS can be created using Adobe ID or Federated ID. If a user is setup using Adobe ID, they are authenticated using their Company's Identity Provider to login.
 
 They will then be redirected to the IMS login screen and will need to enter their credentials:
 

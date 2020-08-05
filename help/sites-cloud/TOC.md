@@ -1,6 +1,7 @@
 ---
 sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Authoring Content in AEM as a Cloud Service
+user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 ---
 
 # Sites {#sites}
@@ -65,5 +66,5 @@ user-guide-title: Authoring Content in AEM as a Cloud Service
     + [Creating and Managing Offers](authoring/personalization/offers.md)
     + [Understanding Segmentation](authoring/personalization/segmentation.md)
 + Integrating with AEM as a Cloud Service {#integrations}
-  + [Integrating with Adobe Analytics](integrating/adobe-analytics.md)
-  + [Integrating with Adobe Target](integrating/adobe-target.md)
+  + [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
+  + [Integrating with Adobe Target](integrating/integrating-adobe-target.md)

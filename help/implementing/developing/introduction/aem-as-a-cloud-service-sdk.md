@@ -33,7 +33,9 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 </dependency>
 ```
 
->[!NOTE] The version entry for the SDK should match the version of AEM as a Cloud Service. You can see what version you are using by logging in to AEM, then going to the question mark in the top right corner of the screen and selecting **[!UICONTROL About Adobe Experience Manager]**
+>[!NOTE]
+>
+>The version entry for the SDK should match the version of AEM as a Cloud Service. You can see what version you are using by logging in to AEM, then going to the question mark in the top right corner of the screen and selecting **[!UICONTROL About Adobe Experience Manager]**
 
 
 ## Refreshing a Local Project with a New SDK Version {#refreshing-a-local-project-with-a-new-skd-version}

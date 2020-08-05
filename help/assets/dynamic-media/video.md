@@ -416,7 +416,6 @@ Publishing video assets to YouTube servers involves completing the following tas
 1. [Configuring Google Cloud settings](#configuring-google-cloud-settings)
 1. [Creating a YouTube channel](#creating-a-youtube-channel)
 1. [Adding tags for publishing](#adding-tags-for-publishing)
-1. [Enabling the YouTube Publish Replication agent](#enabling-the-youtube-publish-replication-agent)
 1. [Setting up YouTube in AEM](#setting-up-youtube-in-aem)
 1. [(Optional) Automating the setting of default YouTube properties for your uploaded videos](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Publishing videos to your YouTube channel](#publishing-videos-to-your-youtube-channel)
@@ -555,9 +554,13 @@ To create a YouTube channel:
 
 To publish to your videos to YouTube, AEM associates tags to one or more YouTube channels. To add tags for publishing, see [Administering Tags](/help/sites-cloud/authoring/features/tags.md).
 
-Or, if you intend to use the default tags in AEM, you can skip this task and go to [Enabling the YouTube Publish replication agent](#enabling-the-youtube-publish-replication-agent).
+Or, if you intend to use the default tags in AEM, you can skip this task and go to [Setting up YouTube in AEM](#setting-up-youtube-in-aem).
 
-### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>After the cloud service is configured, additional configuration is not required to enable the YouTube Publish replication agent at this point. The reason is because it was enabled when the cloud service configuration was saved.
+
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
@@ -565,9 +568,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Click **[!UICONTROL OK]**.
-
-   Now you will set up YouTube in AEM.
+1. Click **[!UICONTROL OK]**. -->
 
 ### Setting up YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -740,7 +741,7 @@ Now you associate the tags that you added earlier to video assets. This process 
 >
 >Note that publish immediately does not automatically publish to YouTube. When Dynamic Media is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
 >
->**[!UICONTROL Publish Immediately]** means that the uploaded asset--after it is synched with IPS--is published automatically to the delivery system. While that is true for Dynamic Media, it is not true for YouTube. To publish to YouTube, you must publish by way of AEM Author.
+>**[!UICONTROL Publish Immediately]** means that the uploaded asset&ndash;after it is synched with IPS&ndash;is published automatically to the delivery system. While that is true for Dynamic Media, it is not true for YouTube. To publish to YouTube, you must publish by way of AEM Author.
 
 >[!NOTE]
 >
@@ -748,9 +749,9 @@ Now you associate the tags that you added earlier to video assets. This process 
 >
 >See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->For more detailed progress information, you can monitor the YouTube log under replication. Be aware, however, that such monitoring requires administrator access.
+>For more detailed progress information, you can monitor the YouTube log under replication. Be aware, however, that such monitoring requires Administrator access.
 
-To publish videos to your YouTube channel:
+**To publish videos to your YouTube channel**:
 
 1. In AEM, navigate to a video asset that you want to publish to your YouTube channel.
 1. Select the video asset (the adaptive video set).
