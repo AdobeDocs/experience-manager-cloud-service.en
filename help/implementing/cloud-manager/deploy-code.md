@@ -44,9 +44,14 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
    The **Stage testing**, involves the following steps:
 
-    * Product Functional testing: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. See [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
-   * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default. See [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
-   * The Content Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, a content audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. See Understand your Test Results for details on the testing process.
+    * Product Functional Testing: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. 
+       Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+
+   * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default.  
+      Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+
+   * Content Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, a content audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
+      Refer to [Understanding Content Audit results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
        ![](assets/stage-testing.png)
 
