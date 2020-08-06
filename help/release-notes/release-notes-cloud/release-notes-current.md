@@ -21,7 +21,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
 
-* Hibernated environments can be de-hibernated from the Cloud Manager overview page.
+* Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
 
 * Authentication-bound Private Maven Repositories are now supported.
 
@@ -45,7 +45,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * There was a color mismatch on the overview page.
 
-### Known Issues {#known-issues}
+### Known Issues {#known-issues-cm}
 
 * Invalid pages are included bringing the Content Audit Average Score below what they should be.
 
