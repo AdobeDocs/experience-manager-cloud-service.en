@@ -9,6 +9,7 @@ Cloud Manager for Cloud Services pipeline executions will support execution of t
 There are two types of tests run in this context:
 * Customer-written tests 
 * Adobe-written tests
+* Open source tool powered by Lighthouse from Google
 
  Both types of tests are run in a containerized infrastructure designed for running these types of tests.
 
@@ -142,3 +143,45 @@ The system properties are as follows:
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+## Content Audit Testing {#content-audit-testing}
+
+Content Audit is a feature available in Cloud Manager Sites Production pipelines that is powered by Lighthouse, an open source tool from Google. This feature will be included and enabled in all Cloud Manager Production pipelines. 
+
+It validates the deployment process and helps ensure that changes deployed:
+
+1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App)
+
+1. Do not include regressions in these dimensions
+
+Content Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight will be valuable to determine if there is a regression that will be introduced with the current deployment.
+
+### Understanding Content Audit Results {#understanding-content-audit-results}
+
+Content Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
+
+* Aggregate level metrics measure the average score across the pages that were audited.
+* Individual page level scores are also available via drill down.
+* Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
+* A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
+
+#### Aggregate Scores {#aggregate-scores}
+
+There is an aggregate level score for each test type (performance, accessibility, SEO, best practices, and PWA).
+
+The aggregate level score takes the average score of the pages that are included in the run. The change at the aggregate level represents the average score of the pages in the current run compared to the average of the scores from the previous run, even if the collection of pages configured to be included has been changed between runs. 
+
+Value of Change metric may be one of the following:
+
+* **Positive value** - the page(s) have improved on the selected test since the last production pipeline run
+
+* **Negative value** - the page(s) have regressed on the selected test since the last production pipeline run
+
+* **No Change** - the page(s) have scored the same since the last production pipeline run
+
+* **N/A** - there was no previous score available to compare to
+
+#### Page-level Scores {#page-level-scores}
+
+By drilling into any of the tests, more detailed page level scoring can be seen. The user will be able to see how the individual pages scored for the specific test along with the change from the previous time the test was run.
+Clicking into the Details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
