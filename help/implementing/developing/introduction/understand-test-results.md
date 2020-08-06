@@ -164,10 +164,13 @@ Value of Change metric may be one of the following:
 
 * **N/A** - there was no previous score available to compare to
 
+   ![](assets/content-audit-test1.png)
+
 #### Page-level Scores {#page-level-scores}
 
 By drilling into any of the tests, more detailed page level scoring can be seen. The user will be able to see how the individual pages scored for the specific test along with the change from the previous time the test was run.
 Clicking into the Details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
+   ![](assets/page-level-scores.png)
 
 ## Local Test Execution {#local-test-execution}
 
