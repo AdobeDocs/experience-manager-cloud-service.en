@@ -61,7 +61,14 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
    * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
     
-1. Click **Next** to access the **Testing** tab to define your testing criteria for your program.
+1. The production pipeline settings includes a third tab labeled as **Content Audit**.
+
+  This option provides a table for the URL paths that should always be included in the Content Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the content audit as a default.
+
+   >[!NOTE]
+   > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
+   
+   Refer to [Understanding Content Audit results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
    ![](assets/set-up-pipeline4.png)
 
