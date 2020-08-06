@@ -7,35 +7,30 @@ description: Configure CI/CD Pipeline - Cloud Services
 
 In Cloud Manager, there are two types of Pipeline:
 
-* **Production Pipelines**:
+* **Production Pipeline**:
   
-  A Production Pipeline can only be added once a production and stage environment is created. 
+  A Production Pipeline can only be added once a production and stage environment set is created. 
   
-  Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
+  Refer to [Setting up Production Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
-* **Non-Production Pipelines**:
+* **Non-Production Pipeline**:
 
   A Non-Production Pipeline can be added from the **Overview** page from the Cloud Manager's user interface. 
   
   Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
 
-## Understanding the Flow {#understanding-the-flow}
+>[!NOTE]
+>To configure your pipeline, you must:
+> * define the trigger that will start the pipeline.
+> * define the parameters controlling the production deployment.
+> * configure the performance test parameters.
 
-You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+## Setting up Production Pipeline {#setting-up-production-pipeline}
 
-The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. 
+The Deployment Manager is responsible for setting up the Production Pipeline.
 
-To configure your pipeline, the user must:
-
-* define the trigger that will start the pipeline.
-* define the parameters controlling the production deployment.
-* configure the performance test parameters.
-
-## Setting up the Pipeline {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->The pipeline cannot be setup until one program creation is complete and the Git repository has at least one branch.
+>[!NOTE]
+>A Production Pipeline cannot be setup until a program creation is complete, Git repository has at least one branch, and a Production and Stage environment set is created.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
