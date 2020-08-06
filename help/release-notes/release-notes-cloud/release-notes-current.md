@@ -1,129 +1,53 @@
 ---
-title: Release Notes for 2020.7.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.7.0.
+title: Release Notes for 2020.8.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.8.0.
 ---
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
-The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.7.0.
-
-## Release Date {#release-date}
-
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
-
-## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
-
-### What's New {#what-is-new-sites}
-
-[!DNL Experience Manager] as a Cloud Service connectors for [!DNL Adobe Target] and [!DNL Adobe Analytics] are enhanced in the following ways:
-
-* A new user interface implementation replaces the implementation based on the Classic UI.
-
-* Simplified user interface dialogs, leaving framework creation for variable mapping and other configurations to [!DNL Adobe Launch]. See [Integrating Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) and [Integrating Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
-
-* Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
-
-## Adobe Experience Manager Assets as a Cloud Service {#assets}
-
-### What's New {#what-is-new-assets}
-
-* [!DNL Asset Compute Service] is a scalable and extensible service to process assets. Administrators can configure Experience Manager to invoke custom worker created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom workers that cater to complex use cases. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. see [Use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
-
-* The initial configuration of [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service is improved to be more robust. It now provides progress of the processes to the administrators.
-
-* Publishing of assets to [!DNL Dynamic Media] is simplified and made more robust by making it an integral part of overall asset processing pipeline using asset microservices and improving the batch publishing backend.
-
-* Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Additionally, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
-
-* Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
-
-## Core Components {#core-components}
-
-### What's New {#what-is-new-core-components}
-
-Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
-
-* Introduction of a new [PDF Viewer Component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
-
-* Accelerated Mobile Pages (AMP) support of Core Components is now available. It helps to produce faster customer experiences by making the page transition instantaneously when entering the site from a Google mobile search result, which improves user engagement and SEO.
-   Refer to [AMP Support for the Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) for more details.
-
-* Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html).
-
-* Bug fixes and code quality improvements.
+The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.8.0.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Release Date {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2020.
 
 ### What's New {#what-is-new-cloud-manager}
 
-* The environments page has been redesigned.
+* Content Audit is a feature enabled on Cloud Manager Sites production pipelines. The Production Pipeline configuration for programs with Sites will now include a third tab named "Content Audit". Whenever a production pipeline is run, a new Content Audit step will be included in the pipeline after custom functional testing which will evaluate the site against a number of dimensions including performance, SEO (Search Engine Optimization), accessibility, best practices and PWA (Progressive Web App).The environments page has been redesigned.
 
-* Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
+* Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
 
-* The number of environment variables per environment has been increased to 200.
+* Hibernated environments can be de-hibernated from the Cloud Manager overview page.
 
-* Cloud Manager pipelines now support customer-set variables and secrets. 
-
-   Refer to [Pipeline Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) for more details.
+* Authentication-bound Private Maven Repositories are now supported.
 
 ### Bug Fixes {#bug-fixes-cm}
 
-* The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
+* Some unnecessary and undesired SonarQube plugins were being executed as part of the Code Quality scanning.
 
-* The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
+* On the pipeline execution page, the branch name was incorrectly formatted.
 
-* The **Cancel** and **Save** options on the Non-Production Pipeline edit page were not always visible.
+* In some cases, completed pipeline executions were not successfully recorded as having been completed thereby preventing new executions of the pipeline.
 
-* Certain failures in the code quality process could result in the log file not being generated correctly.
+* Pipeline executions would occasionally get "stuck" due to internal communication issues.
 
-* When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
+* Upon provisioning a new organization, some users with administrative roles other than system administrators were erroneously given access to Cloud Manager.
 
-* Some large pipeline step logs could not be consistently downloaded through the user interface.
+* Under certain conditions, the update indexes job was started multiple times in parallel resulting in a deployment failure.
 
-* The validation of environment names had an off-by-one error.
+* The tooltip on the program cards were not consistently correct.
 
-* The Environments page would sometimes show publish and dispatcher segments when none was present.
+* The user interface erroneously allowed for operations to be attempted on an environment while it was being deleted.
+
+* There was a color mismatch on the overview page.
 
 ### Known Issues {#known-issues}
 
-* Due to a change in how code coverage is calculated, the *minimum* version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version receive an error message in the code quality process.
+* Invalid pages are included bringing the Content Audit Average Score below what they should be.
 
-## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
+* The Content Audit tab incorrectly displays the base URL using the author domain instead of the publish domain.
 
-### What's New {#what-is-new-foundations}
+* In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. If no pages are added, the homepage will be audited.
 
-* [Logs can be forwarded to Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs), which allows organizations to leverage their Splunk investment.
-
-* [A static, dedicated egress IP address](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
-
-* Ported AEM Analytics cloud service UI from Classic UI to new AEM UI. Also moved location of Analytics cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
-
-* Ported AEM Target cloud service UI from Classic UI to new AEM UI. Also moved location of Target cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### What's New {#what-is-new-commerce}
-
-AEM Commerce is now available on Cloud Service. 
-
-  Refer to [Getting started with AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) for more details.
-
-## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
-
-Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.0.2.
-
-### Bug Fixes {#cra-bug-fixes}
-
-* Earlier version of the CRA could not be run on Adobe Experience Manager (AEM) 6.1. Explicit support to allow users in the administrators group was added.
-
-   Refer to [Installing CRA on AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
-
-* The expiration timestamp displayed on the summary report was incorrect.
-
-* CRA was detecting duplicate custom components.
-
-* On AEM 6.1, the content inspection was exiting before completing the full inspection. Exception handling was added to allow the inspector to skip and continue until the full inspection is completed.

@@ -133,9 +133,9 @@ Content Audit is a feature available in Cloud Manager Sites Production pipelines
 
 It validates the deployment process and helps ensure that changes deployed:
 
-1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App)
+1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
 
-1. Do not include regressions in these dimensions
+1. Do not include regressions in these dimensions.
 
 Content Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
 
