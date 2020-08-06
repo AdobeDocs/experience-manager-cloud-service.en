@@ -5,6 +5,14 @@ description: Configure CI/CD Pipeline - Cloud Services
 
 # Configuring your CI-CD Pipeline {#configure-ci-cd-pipeline} 
 
+In Cloud Manager, there are two types of Pipeline:
+
+* **Production Pipelines**:
+  A Production Pipeline can only be added once a production and stage environment is created. Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) section for more details.
+
+* **Non-Production Pipelines**:
+
+  A Non-Production Pipeline can be added from the **Overview** page from the Cloud Manager's user interface. Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
 
 ## Understanding the Flow {#understanding-the-flow}
 
@@ -70,14 +78,18 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    
     Refer to [Understanding Content Audit Results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
-    ![](assets/set-up-pipeline4.png)
+    ![](assets/content-audit-1.png)
 
-1. Click **Save**. The *Overview* page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
+    Click on **Add New Page Override** to provide a URL path to be included in the Content Audit. Once you add the path, click **Save**.
+
+    ![](assets/content-audit-2.png)
+
+1. Click **Save** from the **Edit Pipeline** screen. The **Overview** page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
    ![](assets/configure-pipeline5.png)
    
 
-## Non-Production & Code Quality Only Pipelines
+## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
 
