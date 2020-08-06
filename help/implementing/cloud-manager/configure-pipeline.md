@@ -8,7 +8,7 @@ description: Configure CI/CD Pipeline - Cloud Services
 
 ## Understanding the Flow {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. 
 
@@ -63,14 +63,14 @@ Follow these steps to configure the behavior and preferences for your pipeline:
     
 1. The production pipeline settings includes a third tab labeled as **Content Audit**.
 
-  This option provides a table for the URL paths that should always be included in the Content Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the content audit as a default.
+   This option provides a table for the URL paths that should always be included in the Content Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the content audit as a default.
 
-   >[!NOTE]
-   > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
+    >[!NOTE]
+    > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
    
-   Refer to [Understanding Content Audit results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
+    Refer to [Understanding Content Audit Results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
-   ![](assets/set-up-pipeline4.png)
+    ![](assets/set-up-pipeline4.png)
 
 1. Click **Save**. The *Overview* page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
