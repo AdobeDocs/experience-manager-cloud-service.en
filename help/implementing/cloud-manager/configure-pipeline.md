@@ -50,11 +50,11 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. The **Setup Pipeline** screen displays. Select the branch and click **Next**.
 
-   ![](assets/set-up-pipeline2.png)
+    ![](assets/set-up-pipeline-1.png)
 
 1. Configure your deployment options.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/set-up-pipeline-2.png)
 
    You can define the trigger to start the pipeline:
 
