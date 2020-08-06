@@ -8,11 +8,15 @@ description: Configure CI/CD Pipeline - Cloud Services
 In Cloud Manager, there are two types of Pipeline:
 
 * **Production Pipelines**:
-  A Production Pipeline can only be added once a production and stage environment is created. Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) section for more details.
+  A Production Pipeline can only be added once a production and stage environment is created. 
+  
+  Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) section for more details.
 
 * **Non-Production Pipelines**:
 
-  A Non-Production Pipeline can be added from the **Overview** page from the Cloud Manager's user interface. Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
+  A Non-Production Pipeline can be added from the **Overview** page from the Cloud Manager's user interface. 
+  
+  Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
 
 ## Understanding the Flow {#understanding-the-flow}
 
@@ -82,8 +86,8 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
     Click on **Add New Page Override** to provide a URL path to be included in the Content Audit. Once you add the path, click **Save**.
 
-    ![](assets/content-audit-2.png)
-
+    ![](assets/content-audit2.png)
+    
 1. Click **Save** from the **Edit Pipeline** screen. The **Overview** page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
    ![](assets/configure-pipeline5.png)
