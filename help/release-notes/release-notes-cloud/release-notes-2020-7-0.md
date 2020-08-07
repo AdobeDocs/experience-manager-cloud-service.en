@@ -27,7 +27,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### What's New {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] is a scalable and extensible service to process assets. Administrators can configure Experience Manager to invoke custom worker created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom workers that cater to complex use cases. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. see [Use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] is a scalable and extensible service to process assets. Administrators can configure Experience Manager to invoke custom applications created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom applications that cater to complex use cases. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. see [Use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 
 * The initial configuration of [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service is improved to be more robust. It now provides progress of the processes to the administrators.
 

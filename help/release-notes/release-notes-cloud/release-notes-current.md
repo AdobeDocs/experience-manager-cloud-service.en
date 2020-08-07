@@ -7,6 +7,14 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.8.0.
 
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What's New {#what-is-new-commerce}
+
+* Product Console feature is now available. This allows marketers/authors in AEM to view and navigate categories and products that are stored in the commerce backend. Support for properties for catogories and products in the Product Console also provided.
+
+* Product and Category Pickers improved to allow marketers to select product via SKU or select category via category ID.
+
 ## Cloud Manager {#cloud-manager}
 
 ### Release Date {#release-date-cm}
