@@ -714,7 +714,7 @@ When adding links in [!DNL Experience Manager], you can define the CSS styles to
 
             * **Name** `targetInternal`
             * **Type** `String`
-            * **Value** the target for internal links (only use when the `` mode is `auto`)
+            * **Value** the target for internal links (only use when the mode is `auto`)
 
         * The target for external links:
 

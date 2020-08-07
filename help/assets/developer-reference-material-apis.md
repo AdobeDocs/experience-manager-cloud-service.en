@@ -41,11 +41,7 @@ This approach should provide more scalable and performant handling of asset uplo
 
 ### Initiate upload {#initiate-upload}
 
-The first step is to submit an HTTP POST request to the folder where the asset should be created or updated; include the selector `.initiateUpload.json` to indicate that the request is to begin a binary upload. For example, the path to the folder where the asset should be created is `/assets/folder`:
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+The first step is to submit an HTTP POST request to the folder where the asset should be created or updated; include the selector `.initiateUpload.json` to indicate that the request is to begin a binary upload. For example, the path to the folder where the asset should be created is `/assets/folder`. The POST request is `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 The content type of the request body should be `application/x-www-form-urlencoded` form data, containing the following fields:
 
@@ -54,7 +50,7 @@ The content type of the request body should be `application/x-www-form-urlencode
 
 A single request can be used to initiate uploads for multiple binaries, as long as each binary contains the required fields. If successful, the request responds with a `201` status code and a body containing JSON data in the following format:
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
