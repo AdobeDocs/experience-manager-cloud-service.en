@@ -37,6 +37,14 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
 
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What's New {#what-is-new-commerce}
+
+AEM Commerce is now available on Cloud Service. 
+
+  Refer to [Getting started with AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) for more details.
+
 ## Core Components {#core-components}
 
 ### What's New {#what-is-new-core-components}
@@ -103,14 +111,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 * Ported AEM Analytics cloud service UI from Classic UI to new AEM UI. Also moved location of Analytics cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
 
 * Ported AEM Target cloud service UI from Classic UI to new AEM UI. Also moved location of Target cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### What's New {#what-is-new-commerce}
-
-AEM Commerce is now available on Cloud Service. 
-
-  Refer to [Getting started with AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) for more details.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 

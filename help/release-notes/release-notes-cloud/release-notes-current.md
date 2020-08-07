@@ -33,7 +33,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * In some cases, completed pipeline executions were not successfully recorded as having been completed thereby preventing new executions of the pipeline.
 
-* Pipeline executions would occasionally get "stuck" due to internal communication issues.
+* Pipeline executions would occasionally get *stuck* due to internal communication issues.
 
 * Upon provisioning a new organization, some users with administrative roles other than system administrators were erroneously given access to Cloud Manager.
 
@@ -43,7 +43,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * The user interface erroneously allowed for operations to be attempted on an environment while it was being deleted.
 
-* There was a color mismatch on the overview page.
+* There was a color mismatch on the Cloud Manager's **Overview** page.
 
 ### Known Issues {#known-issues-cm}
 
