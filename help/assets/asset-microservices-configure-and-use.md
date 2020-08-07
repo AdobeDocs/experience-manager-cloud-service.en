@@ -103,14 +103,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Custom profile and use cases {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled automatically or via processing profiles configuration. If the business needs are not met by these processing options, Adobe recommends developing and using [!DNL Asset Compute Service] to extend the default capabilities. For an overview, see [understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
@@ -141,11 +133,11 @@ To create a custom profile, following these steps:
    * File name of each rendition and a supported file extension.
    * [End-point URL of a Firefly custom app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). The app must be from the same organization as the Experience Manager account is.
    * Add Service Parameters to [pass extra information or parameters to the custom application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters).
-   * Included and excluded MIME types to define the applicability of a profile.
+   * Included and excluded MIME types to limit the processing to a few specific file formats.
 
    Click **[!UICONTROL Save]**.
 
-Custom application gets all the provided files if they are setup with a processing profile. The application must filter the files.
+The custom applications are headless [Project Firefly](https://github.com/AdobeDocs/project-firefly) apps. Custom application gets all the provided files if they are setup with a processing profile. The application must filter the files.
 
 >[!CAUTION]
 >
