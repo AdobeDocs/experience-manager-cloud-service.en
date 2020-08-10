@@ -7,6 +7,12 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.8.0.
 
+<!-- 
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is configured by default. You need not manually integrate with [!DNL Adobe Developer Console]. If it is not configured on your existing deployment, then [configure smart tags](/help/assets/smart-tags-configuration.md).
+-->
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What's New {#what-is-new-commerce}
