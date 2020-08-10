@@ -52,7 +52,6 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
-* The Java version installed Oracle JDK 8u202 and 11.0.2.
 * There are some additional system packages installed which are necessary:
 
     * bzip2
