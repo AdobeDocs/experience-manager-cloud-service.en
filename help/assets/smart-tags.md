@@ -30,6 +30,10 @@ Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] custom
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
+>[!IMPORTANT]
+>
+>On new Experience Manager Assets deployments, the smart tagging functionality is configured by default. You need not manually integrate with Adobe Developer Console. If it is not configured on your existing deployment, then follow the integration steps.
+
 You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using Adobe Developer Console. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
 
 See [configure Experience Manager for smart tagging of assets](smart-tags-configuration.md) for tasks to configure the Smart Tags. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
