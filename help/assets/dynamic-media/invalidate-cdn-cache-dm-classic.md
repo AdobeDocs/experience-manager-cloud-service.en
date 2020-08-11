@@ -1,21 +1,29 @@
 ---
-title: Invalidating your CDN cached content
+title: Invalidating your CDN cache by way of Dynamic Media Classic
 description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 ---
 
-# Invalidating your CDN cached content {#invalidating-your-cdn-cached-content}
+# Invalidating your CDN cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
 Dynamic Media assets are cached by the CDN for fast delivery. However, when you make updates to an asset, you may want those changes to take effect immediately. Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 
+>[!IMPORTANT]
+>
+>These steps apply only to Dynamic Media in AEM 6.5, Service Pack 5 or earlier. If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md).
+
 See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**To invalidate your CDN cached content:**
+**To invalidate your CDN cache by way of Dynamic Media Classic:**
 
-1. Log on to your Dynamic Media Classic (Scene7) account:
+1. Do one of the following:
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+   * In your web browser, log on to your Dynamic Media Classic account:
 
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+
+      Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+
+   * Open the Dynamic Media Classic application, then sign in to your account.
 
 1. Click **[!UICONTROL Setup > Application Setup > General Settings]**.
 1. On the Application General Settings page, under the Servers group heading, locate the **[!UICONTROL CDN Invalidation Template]** text box.
