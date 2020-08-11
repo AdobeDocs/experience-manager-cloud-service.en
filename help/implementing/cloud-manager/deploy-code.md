@@ -53,7 +53,7 @@ Once you have configured your **Pipeline** (repository, environment, and testing
    * Content Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, a content audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
       Refer to [Understanding Content Audit results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
-       ![](assets/stage-testing.png)
+       ![](assets/testing-tab.png)
 
 
 ## Deployment Process {#deployment-process}

@@ -168,7 +168,7 @@ The response will contain paging information as part of the `properties` section
 
 `GET /api/assets.json?offset=2&limit=3`
 
-```
+```json
 ...
 "properties": {
     ...

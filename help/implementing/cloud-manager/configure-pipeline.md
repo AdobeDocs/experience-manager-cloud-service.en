@@ -7,30 +7,30 @@ description: Configure CI/CD Pipeline - Cloud Services
 
 In Cloud Manager, there are two types of Pipeline:
 
-* **Production Pipelines**:
-  A Production Pipeline can only be added once a production and stage environment is created. Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) section for more details.
+* **Production Pipeline**:
+  
+  A Production Pipeline can only be added once a production and stage environment set is created. 
+  
+  Refer to [Setting up Production Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
-* **Non-Production Pipelines**:
+* **Non-Production Pipeline**:
 
-  A Non-Production Pipeline can be added from the **Overview** page from the Cloud Manager's user interface. Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
+  A Non-Production Pipeline can be added from the **Overview** page from the Cloud Manager's user interface. 
+  
+  Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
 
-## Understanding the Flow {#understanding-the-flow}
+>[!NOTE]
+>To configure your pipeline, you must:
+> * define the trigger that will start the pipeline.
+> * define the parameters controlling the production deployment.
+> * configure the performance test parameters.
 
-You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+## Setting up Production Pipeline {#setting-up-production-pipeline}
 
-The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. 
+The Deployment Manager is responsible for setting up the Production Pipeline.
 
-To configure your pipeline, the user must:
-
-* define the trigger that will start the pipeline.
-* define the parameters controlling the production deployment.
-* configure the performance test parameters.
-
-## Setting up the Pipeline {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->The pipeline cannot be setup until one program creation is complete and the Git repository has at least one branch.
+>[!NOTE]
+>A Production Pipeline cannot be setup until a program creation is complete, Git repository has at least one branch, and a Production and Stage environment set is created.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
@@ -71,6 +71,8 @@ Follow these steps to configure the behavior and preferences for your pipeline:
     
 1. The production pipeline settings includes a third tab labeled as **Content Audit**.
 
+    ![](assets/content-audit-1.png)
+
    This option provides a table for the URL paths that should always be included in the Content Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the content audit as a default.
 
     >[!NOTE]
@@ -78,12 +80,13 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    
     Refer to [Understanding Content Audit Results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
-    ![](assets/content-audit-1.png)
-
     Click on **Add New Page Override** to provide a URL path to be included in the Content Audit. Once you add the path, click **Save**.
 
-    ![](assets/content-audit-2.png)
+    >[!NOTE]
+    >In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. Refer to [Known Issues](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) for more details.
 
+    ![](assets/content-audit2.png)
+    
 1. Click **Save** from the **Edit Pipeline** screen. The **Overview** page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
    ![](assets/configure-pipeline5.png)

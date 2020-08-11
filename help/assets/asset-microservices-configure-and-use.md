@@ -7,9 +7,9 @@ contentOwner: AG
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -40,8 +40,8 @@ Experience Manager allows for the following levels of processing.
 | Option | Description | Use cases covered |
 |---|---|---|
 |[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Large preview (web rendition - 1280 px) </li><li> Metadata and text extraction.</li></ul> |
-|[Custom configuration](#standard-config) | Configured by administrators via user interface. Provides more options for rendition generation by extending the default option. Extend the out-of-the-box worker to provide different formats and renditions. | <ul><li>FPO rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
-|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom workers to invoke [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
+|[Custom configuration](#standard-config) | Configured by administrators via user interface. Provides more options for rendition generation by extending the default option. Extend the out-of-the-box option to provide different formats and renditions. | <ul><li>FPO rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
+|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom applications to invoke [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -103,23 +103,15 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Custom profile and use cases {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled automatically or via processing profiles configuration. If the business needs are not met by these processing options, Adobe recommends developing and using [!DNL Asset Compute Service] to extend the default capabilities. For an overview, see [understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
->Adobe recommends using a custom worker only when the business need cannot be accomplished using the default configurations or the standard profile.
+>Adobe recommends using a custom application only when the business requirements cannot be accomplished using the default configurations or the standard profile.
 
-It can transform image, video, document and other file formats into different renditions including thumbnails, extracted text & metadata and archives.
+It can transform image, video, document, and other file formats into different renditions including thumbnails, extracted text and metadata, and archives.
 
-Developers can use the [!DNL Asset Compute Service] to [create custom workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) that cater to the supported use cases. [!DNL Experience Manager] can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
+Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] can invoke these custom applications from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
 
 * Use [!DNL Adobe Photoshop]'s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) and save the result as rendition.
 * Invoke third-party systems to update data, for example, a PIM system.
@@ -128,22 +120,24 @@ Developers can use the [!DNL Asset Compute Service] to [create custom workers](h
 
 >[!NOTE]
 >
->You cannot edit the standard metadata using the custom workers. You can only modify custom metadata.
+>You cannot edit the standard metadata using the custom applications. You can only modify custom metadata.
 
 ### Create a custom profile {#create-custom-profile}
 
 To create a custom profile, following these steps:
 
 1. Administrators access **[!UICONTROL Tools > Assets > Processing Profiles]**. Click **[!UICONTROL Create]**.
-1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide the desired file name of the rendition.
+1. Click **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide the desired file name of the rendition.
 1. Provide the following information.
 
    * File name of each rendition and a supported file extension.
-   * [End-point URL of a Firefly custom app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). The app must be from the same organization as the Experience Manager account is.
-   * Add Service Parameters to [pass extra information or parameters to the custom worker](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters).
-   * Included and excluded MIME types to define the applicability of a profile.
+   * [End-point URL of a Firefly custom app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). The app must be from the same organization as the Experience Manager account is.
+   * Add Service Parameters to [pass extra information or parameters to the custom application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters).
+   * Included and excluded MIME types to limit the processing to a few specific file formats.
 
    Click **[!UICONTROL Save]**.
+
+The custom applications are headless [Project Firefly](https://github.com/AdobeDocs/project-firefly) apps. Custom application gets all the provided files if they are setup with a processing profile. The application must filter the files.
 
 >[!CAUTION]
 >
@@ -153,11 +147,11 @@ To create a custom profile, following these steps:
 
 To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that leverages the Photoshop API to edit the images.
 
-Asset Compute Service integration allows Experience Manager to pass these parameters to the custom worker using the [!UICONTROL Service Parameters] field. The custom worker then invokes Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
+Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then invokes Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Figure: Use [!UICONTROL Service Parameters] field to pass added information to predefined parameters build into the custom worker.*
+*Figure: Use [!UICONTROL Service Parameters] field to pass added information to predefined parameters build into the custom application.*
 
 When campaign images are uploaded to the folder on which this processing profile is applied, the images are updated with `Jumanji` text in `Arial-BoldMT` font.
 
@@ -236,4 +230,4 @@ For details about which standard workflow step can be used in the post-processin
 >
 >* [Introduction to Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
 >* [Understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
->* [How to create custom workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html).
+>* [How to create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).

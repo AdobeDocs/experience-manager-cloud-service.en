@@ -6,7 +6,7 @@ description: Understand Test Results - Cloud Services
 # Understanding your Test Results {#understand-test-results} 
 
 Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
-There are two types of tests run in this context:
+There are three types of tests run in this context:
 * Customer-written tests 
 * Adobe-written tests
 * Open source tool powered by Lighthouse from Google
@@ -169,7 +169,9 @@ Value of Change metric may be one of the following:
 #### Page-level Scores {#page-level-scores}
 
 By drilling into any of the tests, more detailed page level scoring can be seen. The user will be able to see how the individual pages scored for the specific test along with the change from the previous time the test was run.
-Clicking into the Details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
+
+Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
+
    ![](assets/page-level-scores.png)
 
 ## Local Test Execution {#local-test-execution}

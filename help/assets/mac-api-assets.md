@@ -72,6 +72,8 @@ In [!DNL Experience Manager] a folder has the following components:
 * Properties.
 * Links.
 
+## Available features {#available-features}
+
 The Assets HTTP API includes the following features:
 
 * Retrieve a folder listing.
