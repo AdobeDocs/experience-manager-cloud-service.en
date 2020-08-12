@@ -5,10 +5,18 @@ description: Understand Test Results - Cloud Services
 
 # Understanding your Test Results {#understand-test-results} 
 
-Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
-There are three types of tests run in this context:
-* Customer-written tests 
-* Adobe-written tests
+Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment.
+
+There are three broad categories of tests supported by Cloud Manager for Cloud Services Pipeline:
+
+1. [Code Quality Testing](#code-quality-testing)
+1. [Functional Testing](#functional-testing)
+1. [Content Audit Testing](#content-audit-testing)
+
+These tests can be:
+
+* Customer-written 
+* Adobe-written
 * Open source tool powered by Lighthouse from Google
 
     >[!NOTE]
@@ -75,7 +83,31 @@ Then the correct solution is to remove the hardcoded password.
 >
 >While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
-## Writing Functional Tests {#writing-functional-tests}
+## Functional Testing {#functional-testing}
+
+Functional testing is categorized into two types:
+
+* Product Functional Testing
+* Custom Functional Testing
+
+### Product Functional Testing {#product-functional-testing}
+
+Product Functional Tests are a set of stable HTTP integration tests (ITs) around authoring, replication, that prevent customer changes to their application code from being deployed if it breaks core functionality in AEM.
+They run automatically whenever a customer deploys new code to Cloud Manager. 
+
+The Product Functional testing step in the pipeline is always present and cannot be skipped.This step is current done immediately after the stage deployment.
+
+### Custom Functional Testing {#custom-functional-testing}
+
+The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
+
+However, if no test JAR is produced by the build, the test passes by default. 
+
+>[!NOTE]
+>The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+
+
+#### Writing Functional Tests {#writing-functional-tests}
 
 Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally this would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the maven-assembly-plugin using the jar-with-dependencies descriptor. 
 
@@ -117,15 +149,6 @@ Within this JAR file, the class names of the actual tests to be executed must en
 For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but a class named `com.myco.tests.aem.ExampleTest` would not. 
  
 The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
-
-## Custom Functional Testing {#custom-functional-test}
-
-The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
-
-However, if no test JAR is produced by the build, the test passes by default. This step is current done immediately after the stage deployment.
-
->[!NOTE]
->The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 ## Content Audit Testing {#content-audit-testing}
 
