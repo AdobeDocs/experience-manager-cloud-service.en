@@ -17,7 +17,7 @@ These tests can be:
 
 * Customer-written 
 * Adobe-written
-* Powered by Lighthouse from Google as an open source tool 
+* Open source tool (powered by Lighthouse from Google) 
 
     >[!NOTE]
     > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
