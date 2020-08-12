@@ -97,7 +97,7 @@ Functional testing is categorized into two types:
 
 Product Functional Tests are a set of stable HTTP integration tests (ITs) around core functionality in AEM (for example, authoring and replication) that prevent customer changes to their application code from being deployed if it breaks this core functionality.
 
-They run automatically whenever a customer deploys new code to Cloud Manager.
+Product Functional Tests run automatically whenever a customer deploys new code to Cloud Manager.
 
 ### Custom Functional Testing {#custom-functional-testing}
 
