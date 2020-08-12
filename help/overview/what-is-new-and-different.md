@@ -109,7 +109,7 @@ Specifically, the number of and the type of AEM programs that can be created fro
   
 Cloud Manager has evolved as a self-service portal where the main components of AEM as a Cloud Service can be created and configured:
 
-* Creating and managing new programs.
+* Creating and managing the AEM environments within these programs.
 
 * Creating and managing the AEM environments within these programs.
 
@@ -124,6 +124,9 @@ Currently Cloud Manager is able to create environments in 3 geographical regions
 * EMEA (Netherlands)
 
 * APAC (Australia)
+
+>[!NOTE]
+>Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) to get started with Cloud Manager in AEM as a Cloud Service.
 
 ## Onboarding {#onboarding}
 

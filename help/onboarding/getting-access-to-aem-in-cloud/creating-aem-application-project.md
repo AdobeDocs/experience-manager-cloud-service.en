@@ -367,3 +367,12 @@ With the content-package-maven-plugin it is similar:
             </configuration>
         </plugin>
 ```
+
+## Additional Resources {#additional-resources}
+
+Refer to the sections below to learn how to use Cloud Manager in Cloud Service:
+
+* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
+* [Configure your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
+* [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
+* [Understanding your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
