@@ -30,9 +30,9 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
 
     ![CDN Invalidation Template - Create](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. In the upper-right corner of the CDN Invalidation Template page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK]**.<br>
-***Part 2: Setting CDN Invalidation options***
-<br>
+1. In the upper-right corner of the CDN Invalidation Template page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK]**.
+
+    *Part 2: Setting CDN Invalidation options*
 
 1. In AEM as a Cloud Service, tap **[!UICONTROL Tools > Assets > CDN Invalidation.]**
 
