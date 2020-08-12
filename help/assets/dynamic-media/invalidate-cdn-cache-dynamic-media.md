@@ -75,7 +75,7 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
 | *Failed to retrieve URL(s) for selected asset(s).* | Occurs if the any of the following scenarios are met:<br>&ndash; A Dynamic Media configuration is not found.<br>&ndash; There is a exception while retrieving a service user through which the Dynamic Media configuration is read.<br>&ndash; The publish server or the company root used to form the URLs is missing in the Dynamic Media configuration. |
 | *Some URLs are not defined correctly. Please correct and re-submit.* | Occurs if the IPS CDN cache invalidation API returns an error that the URL is referring to a different company or if the URL is not valid as per the validation done by the IPS cdnCacheInvalidation API. | 
 | *Failed to invalidate CDN cache.* | Occurs if the CDN cache invalidation request fails for any other reason. |
-| *No URL(s) entered to be invalidated.* | Occurs if there are no URLs present in the **[!UICONTROL CDN Invalidation &ndash; Confirm page]**, and you tap **[!UICONTROL Submit]**.
+| *No URL(s) entered to be invalidated.* | Occurs if there are no URLs present in the **[!UICONTROL CDN Invalidation &ndash; Confirm page]**, and you tap **[!UICONTROL Submit]**. |
 
 
    <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
