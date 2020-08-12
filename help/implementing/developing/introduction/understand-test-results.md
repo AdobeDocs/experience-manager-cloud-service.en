@@ -17,7 +17,7 @@ These tests can be:
 
 * Customer-written 
 * Adobe-written
-* Open source tool powered by Lighthouse from Google
+* Powered by Lighthouse from Google as an open source tool 
 
     >[!NOTE]
     > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
@@ -83,6 +83,9 @@ Then the correct solution is to remove the hardcoded password.
 >
 >While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
+>[!NOTE]
+>While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) for more details.
+
 ## Functional Testing {#functional-testing}
 
 Functional testing is categorized into two types:
@@ -104,7 +107,7 @@ The Custom Functional testing step in the pipeline is always present and cannot 
 However, if no test JAR is produced by the build, the test passes by default. 
 
 >[!NOTE]
->The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+>The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 
 #### Writing Functional Tests {#writing-functional-tests}
