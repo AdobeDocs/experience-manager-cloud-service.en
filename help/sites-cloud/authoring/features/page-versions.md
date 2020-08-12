@@ -46,19 +46,19 @@ You can create a version of your resource from:
 
 The timeline will be opened with the information updated to indicate the new version.
 
-## Reverting to a Page Version {#reverting-to-a-page-version}
+## Revert to a Version {#revert-to-a-version}
 
-Once a version has been created you can revert to that version if needed.
+Once you have created a version of your page, you can revert to that version using Timeline, if needed.
 
 >[!NOTE]
 >
->When restoring a page, the version created will be part of a new branch.
+>When reverting a page, the version created will be part of a new branch.
 >
 >To illustrate:  
 >
 >1. Create versions of any page.
 >1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
->1. Restore the first version; i.e. 1.0.
+>1. Revert to the first version; i.e. 1.0.
 >1. Create new versions again.
 >1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
 
@@ -72,6 +72,18 @@ To revert to a previous version:
    ![Revert version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
+
+## Restore Tree {#restore-tree}
+
+This method can be used to restore a version of a tree as at a specified date and time; this can include pages that have been previously deleted:
+
+## Restore Version {#restore-version}
+
+This method can be used to restore versions of specified pages within the current folder; this can also include restoring pages that have been previously deleted:
+
+>[!NOTE]
+>
+>If you select a single page - that has never had any child pages - before selecting **Restore Version**, then nothing will be available.
 
 ## Previewing a Version {#previewing-a-version}
 
