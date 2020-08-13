@@ -18,7 +18,7 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 
 >[!IMPORTANT]
 >
->On new Experience Manager Assets deployments, the smart tagging functionality is configured by default. You need not manually integrate with Adobe Developer Console. If it is not configured on your existing deployment, then follow the integration steps.
+>The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the existing deployments, administrators follow these steps to configure it.
 
 ## Integrate with Adobe Developer Console {#aio-integration}
 
