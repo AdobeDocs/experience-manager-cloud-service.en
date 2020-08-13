@@ -14,17 +14,16 @@ You can download assets including static and dynamic renditions. Alternatively, 
 
 The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets cannot be downloaded.
 
-**To download assets,**
+To download assets, follow these steps:
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
-1. Navigate to a folder that contains assets you want to download.
+1. In the upper-left corner of Experience Manager, click the AEM logo and click **[!UICONTROL Navigation]**.
+1. Click **[!UICONTROL Assets]** > **[!UICONTROL Files]**. Navigate to a folder that contains assets you want to download.
 1. Select the folder or select one or more assets within the folder.
-1. On the toolbar, tap **[!UICONTROL Download]**.
+1. On the toolbar, click **[!UICONTROL Download]**.
 
    ![Available options when downloading assets from Experience Manager Assets](/help/assets/assets/asset-download1.png)
-   
-   *Download dialog box options.*
+
+   *Figure: Download dialog box options.*
 
 1. In the Download dialog box, select the download options you want.
 
@@ -37,12 +36,11 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
    | **[!UICONTROL Smart Crops]** | Select this option to download all the smart crop renditions of the selected asset from within AEM. A zip file with the Smart Crop renditions is created and downloaded to your local computer. |
    | **[!UICONTROL Dynamic Rendition(s)]** | Select this option to generate a series of alternate renditions in real time. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](/help/assets/dynamic-media/image-presets.md) list. <br>In addition, you can select the size and unit of measurement, format, color space, resolution, and any optional image modifiers such as inverting the image. The option is only available if you have [!DNL Dynamic Media] enabled.|
 
-1. In the dialog box, tap **[!UICONTROL Download]**.
-
+1. In the dialog box, click **[!UICONTROL Download]**.
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
-The default servlet in AEM allows authenticated users to issue arbitrarily-large, concurrent download requests for creating ZIP files of assets visible to them that can overload the server and the network. To mitigate potential DoS risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled by default for publish instances.
+The default servlet in AEM allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances.
 
 To allow downloading assets from your DAM, say when using something like Asset Share Commons or other portal-like implementation, manually enable the servlet via an OSGi configuration. Adobe recommends setting the permissible download size as low as possible without affecting the day-to-day download requirements. A high value may impact performance.
 
@@ -69,5 +67,5 @@ The `Asset Download Servlet` can be disabled on an AEM Publish instances by upda
 >[!MORELIKETHIS]
 >
 >* [Download DRM protected assets](drm.md)
->* [Download assets using AEM desktop app on Win or Mac desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+>* [Download assets using Experience Manager desktop app on Win or Mac desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
 >* [Download assets using Adobe Assets Link from within the supported Adobe Creative Cloud apps](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
