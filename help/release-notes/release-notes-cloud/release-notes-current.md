@@ -7,11 +7,31 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.8.0.
 
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+* User interface to invalidate cache is now available in [!DNL Dynamic Media].
+
+* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
+
+* A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
+
+  * Quick downloads of small assets.
+  * Asynchronous download for large downloads so that users don't have to wait.
+  * A new modular API for developer extensibility.
+
+* Do basic video transcoding using processing profiles.
+
+* Create simple watermarks on images.
+
+* A simpler download experience for Brand Portal users. Administrators can configure the download experience.
+
+* Native and high-fidelity PDF previews are available in Brand Portal.
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What's New {#what-is-new-commerce}
 
-* Product Console feature is now available. This allows marketers/authors in AEM to view and navigate categories and products that are stored in the commerce backend. Support for properties for catogories and products in the Product Console also provided.
+* Product Console feature is now available. This allows marketers/authors in AEM to view and navigate categories and products that are stored in the commerce backend. Support for properties for categories and products in the Product Console also provided.
 
 * Product and Category Pickers improved to allow marketers to select product via SKU or select category via category ID.
 
@@ -60,4 +80,3 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * The Content Audit tab incorrectly displays the base URL using the author domain instead of the publish domain.
 
 * In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. If no pages are added, the homepage will be audited.
-
