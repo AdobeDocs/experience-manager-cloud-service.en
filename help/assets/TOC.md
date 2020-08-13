@@ -100,7 +100,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Linking URLs to your web application](dynamic-media/linking-urls-to-yourwebapplication.md)
   + [Using Rulesets to transform URLs](dynamic-media/using-rulesets-to-transform-urls.md)
   + [Publishing Dynamic Media assets](dynamic-media/publishing-dynamicmedia-assets.md)
-  + [Invalidating your CDN cache by way of Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+  + [Invalidating the CDN cache by way of Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
   + [Working with Selectors](dynamic-media/working-with-selectors.md)
   + [DHTML Viewer End-of-Life FAQs](dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + [Flash Viewers End-of-Life Notice](dynamic-media/flash-viewers-eol.md)
