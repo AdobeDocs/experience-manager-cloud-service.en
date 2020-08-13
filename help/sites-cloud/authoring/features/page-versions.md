@@ -128,6 +128,18 @@ This method can be used to restore versions of specified pages within the curren
 
 This method can be used to restore a version of a tree as at a specified date and time; this can include pages that have been previously deleted:
 
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). The latest version of the tree will be shown:
+
+   ![Restore Tree](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+
+1. Use the date and time selector at **Latest Versions at Date** to select another version of the tree - the one to be restored.
+
+1. If the flag **Preserved Non Versioned Pages** is active (selected), then any non-versioned pages will be maintained and not impacted by the restore. If the flag is unselected, then they will be removed as they did not exist in the versioned tree.
+
+1. Select **Restore** for the selected version of the tree to be restored as the *current* version.
+
 ## Previewing a Version {#previewing-a-version}
 
 You can preview a specific version:
