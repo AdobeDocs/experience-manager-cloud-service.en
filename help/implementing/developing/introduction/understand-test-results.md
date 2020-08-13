@@ -17,7 +17,7 @@ These tests can be:
 
 * Customer-written 
 * Adobe-written
-* Powered by Lighthouse from Google as an open source tool 
+* Open source tool (powered by Lighthouse from Google) 
 
     >[!NOTE]
     > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
@@ -84,7 +84,7 @@ Then the correct solution is to remove the hardcoded password.
 >While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
 >[!NOTE]
->While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) for more details.
+>While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
 
 ## Functional Testing {#functional-testing}
 
@@ -95,10 +95,11 @@ Functional testing is categorized into two types:
 
 ### Product Functional Testing {#product-functional-testing}
 
-Product Functional Tests are a set of stable HTTP integration tests (ITs) around authoring, replication, that prevent customer changes to their application code from being deployed if it breaks core functionality in AEM.
-They run automatically whenever a customer deploys new code to Cloud Manager. 
+Product Functional Tests are a set of stable HTTP integration tests (ITs) around core functionality in AEM (for example, authoring and replication) that prevent customer changes to their application code from being deployed if it breaks this core functionality.
 
-The Product Functional testing step in the pipeline is always present and cannot be skipped.This step is current done immediately after the stage deployment.
+Product Functional Tests run automatically whenever a customer deploys new code to Cloud Manager and cannot be skipped.
+
+Refer to [Product Functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) for sample tests.
 
 ### Custom Functional Testing {#custom-functional-testing}
 

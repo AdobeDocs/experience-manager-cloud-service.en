@@ -39,6 +39,15 @@ If a DAM user uploads one or more assets that already exist in the repository, [
 
 ![Detect duplicate asset OSGi configuration](assets/duplicate-detection.png)
 
+You can add the configuration file `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in custom code and the file can contain the following:
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
+
 Once enabled, Experience Manager sends notifications of duplicate assets to the inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
 
 ![Inbox notification for duplicate assets](assets/duplicate-detect-inbox-notification.png)
