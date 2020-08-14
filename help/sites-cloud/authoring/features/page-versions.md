@@ -57,11 +57,17 @@ The timeline will be opened with the information updated to indicate the new ver
 Once you have created a version of your page, there are various methods of reinstating a prior version:
 
 * the **Revert to this Version** option from the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) rail
-  Reinstate a prior version of a selected page
+
+  Reinstate a prior version of a selected page.
+
 * the **Restore** options from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+
   * **Restore Version** 
+
     Reinstate versions of specified pages within the currently selected folder; this can also include restoring pages that have been previously deleted.
+
   * **Restore Tree**
+
     Reinstate a version of an entire tree as at a specified date and time; this can include pages that have been previously deleted.
 
 >[!NOTE]
@@ -100,7 +106,6 @@ This method can be used to restore versions of specified pages within the curren
    >[!NOTE]
    >
    >If, either:
-   >
    >* you have selected a single page, that has never had any child pages,
    >* or none of the pages in the folder have versions,
    >
@@ -122,7 +127,7 @@ This method can be used to restore versions of specified pages within the curren
 
 >[!NOTE]
 >
->The steps of selecting a required page and the related version are interchangeable.
+>The order in which you select a required page and the related version is interchangeable.
 
 ### Restore Tree {#restore-tree}
 
@@ -136,7 +141,11 @@ This method can be used to restore a version of a tree as at a specified date an
 
 1. Use the date and time selector at **Latest Versions at Date** to select another version of the tree - the one to be restored.
 
-1. If the flag **Preserved Non Versioned Pages** is active (selected), then any non-versioned pages will be maintained and not impacted by the restore. If the flag is unselected, then they will be removed as they did not exist in the versioned tree.
+1. Set the flag **Preserved Non Versioned Pages** as required:
+
+   * If active (selected), then any non-versioned pages will be maintained and not impacted by the restore. 
+
+   * If inactive (unselected), then any non-versioned pages will be removed as they did not exist in the versioned tree.
 
 1. Select **Restore** for the selected version of the tree to be restored as the *current* version.
 
