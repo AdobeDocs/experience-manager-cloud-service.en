@@ -183,4 +183,4 @@ In addition to the above new features, the current release provides the followin
 * When downloading an asset, if email option is selected and even if a valid email ID is provided, the download option is not available. (CQ-4296535)
 * Custom filters saved as smart collections are not applied properly to assets. (CQ-4294942)
 * Multiple search and indexing enhancements and bug fixes to improve performance. (CQ-4286373)
-* Folder properties display 500 internal server error. (CQ-4295701)
+* The folder properties tab cannot be accessed in Assets and returns a 500 error. (CQ-4295701)

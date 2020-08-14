@@ -13,7 +13,7 @@ You can publish/unpublish a page immediately or at a predefined date/time in the
 
 ## Terminology {#terminology}
 
-You may encounter different terms related to publishing as you work with AEM.
+You may encounter different terms related to publishing as you work with Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Publish / Unpublish**
   * These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
@@ -44,6 +44,10 @@ Depending on your location, you can publish:
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
+
+>[!NOTE]
+>
+> For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publishing from the Editor {#publishing-from-the-editor}
 
@@ -132,7 +136,7 @@ To publish or unpublish a page using Manage Publication:
 
    Clicking the Add Content button starts the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) to allow content selection.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel **to cancel the selection and return to the wizard.
+   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
    Back in the wizard, you can select an item in the list to configure its further options such as:
 

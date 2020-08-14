@@ -7,4 +7,5 @@ user-guide-description: Learn about important security topics regarding Experien
 # Security {#security}
 
 + [Security for AEM as a Cloud Service](/help/security/home.md)
++ [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 + [IMS Support for AEM as a Cloud Service](ims-support.md)

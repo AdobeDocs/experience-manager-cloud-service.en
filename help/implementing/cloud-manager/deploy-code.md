@@ -35,8 +35,8 @@ Once you have configured your **Pipeline** (repository, environment, and testing
    The **Stage Deployment**, involves the following steps:
 
     * Validation: This step ensures that the pipeline is configured to use the currently available resources, for example, that the configured branch exists, the environments are available.
-    * Build & Unit Testing: This step runs a containerized build process. See [Create an AEM Application Project](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) for details on the build environment.
-    * Code Scanning: This step evaluates the quality of your application code. See [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+    * Build & Unit Testing: This step runs a containerized build process. See [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) for details on the build environment.
+    * Code Scanning: This step evaluates the quality of your application code. See [Code Quality Testing](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) for details on the testing process.
     * Build Images: This step has a log file from the process used to build images. This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configuration.
     * Deploy to Stage
 
@@ -45,10 +45,10 @@ Once you have configured your **Pipeline** (repository, environment, and testing
    The **Stage testing**, involves the following steps:
 
     * Product Functional Testing: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. 
-       Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+       Refer to [Product Functional Testing](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) for more details.
 
    * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default.  
-      Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+      Refer to [Custom Functional Testing](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) for more details.
 
    * Content Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, a content audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
       Refer to [Understanding Content Audit results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
