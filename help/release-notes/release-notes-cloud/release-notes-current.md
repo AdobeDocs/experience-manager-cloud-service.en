@@ -35,7 +35,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
 
-* Authentication-bound Private Maven Repositories are now supported.
 
 ### Bug Fixes {#bug-fixes-cm}
 
