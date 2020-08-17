@@ -97,6 +97,7 @@ To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
     </configuration>
 </plugin>
 ```
+
 >[!NOTE]
 >Supported vendor values are `oracle`  and `sun`.
 >Supported version values are `1.8`, `1.11`, and `11`.
