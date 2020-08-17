@@ -52,6 +52,7 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
+* The Java versions installed are Oracle JDK 8u202 and 11.0.2.
 * There are some additional system packages installed which are necessary:
 
     * bzip2
@@ -68,6 +69,37 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 >[!NOTE]
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
 
+### Using Java 11 Support {#using-java-support}
+
+Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. Customers wishing to use Java 11 in their projects can do so using the Maven Toolchains Plugin.
+
+To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+>[!NOTE]
+>Supported vendor values are `oracle`  and `sun`.
+>Supported version values are `1.8`, `1.11`, and `11`.
 
 ## Environment Variables {#environment-variables}
 
