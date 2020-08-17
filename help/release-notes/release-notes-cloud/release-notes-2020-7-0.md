@@ -78,6 +78,11 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
    Refer to [Pipeline Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) for more details.
 
+* Authentication-bound Private Maven Repositories are now supported.
+
+* The Cloud Manager build container now supports both Java 8 and Java 11.
+  Refer to [Using Java 11 Support](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) for more details.
+
 ### Bug Fixes {#bug-fixes-cm}
 
 * The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
