@@ -71,7 +71,9 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 
 ### Using Java 11 Support {#using-java-support}
 
-Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. Customers wishing to use Java 11 in their projects can do so using the Maven Toolchains Plugin.
+Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. 
+
+Customers who want to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
 To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
 
@@ -100,6 +102,7 @@ To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
 
 >[!NOTE]
 >Supported vendor values are `oracle`  and `sun`.
+>
 >Supported version values are `1.8`, `1.11`, and `11`.
 
 ## Environment Variables {#environment-variables}
