@@ -23,11 +23,11 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
 
-## Adobe Experience Manager Assets as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What's New {#what-is-new-assets}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] is a scalable and extensible service to process assets. Administrators can configure Experience Manager to invoke custom applications created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom applications that cater to complex use cases. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available Sensei services. see [Use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] is a scalable and extensible service to process assets. Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. Developers can use the service to create specialized custom applications that cater to complex use cases. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 
 * The initial configuration of [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service is improved to be more robust. It now provides progress of the processes to the administrators.
 
@@ -35,13 +35,19 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Additionally, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
 
-* Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in Cloud Manager are automatically deployed to `/var` and thus available in Experience Manager. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
+* Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in [!DNL Cloud Manager] are automatically deployed to `/var` and thus available in [!DNL Experience Manager]. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
+
+### Bugs fixed {#assets-bugs-fixed}
+
+* The Move Asset wizard does not load as expected for the assets that are included in Collections. (CQ-4296756)
+* The values of `dam:size` and `dam:sha1` are excluded from XMP writeback. (CQ-4237355)
+* When unpublishing assets in bulk, [!DNL Brand Portal] generates an error suggesting that the request URI is too long. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What's New {#what-is-new-commerce}
 
-AEM Commerce is now available on Cloud Service. 
+AEM Commerce is now available on Cloud Service.
 
   Refer to [Getting started with AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) for more details.
 
@@ -77,6 +83,11 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 * Cloud Manager pipelines now support customer-set variables and secrets. 
 
    Refer to [Pipeline Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) for more details.
+
+* Authentication-bound Private Maven Repositories are now supported.
+
+* The Cloud Manager build container now supports both Java 8 and Java 11.
+  Refer to [Using Java 11 Support](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) for more details.
 
 ### Bug Fixes {#bug-fixes-cm}
 
