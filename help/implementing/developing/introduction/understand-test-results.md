@@ -29,9 +29,13 @@ This step evaluates the quality of your application code. It is the core objecti
 
 Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about different types of pipelines.
 
+### Understanding Custom Code Quality Rules {#understanding-code-quality-rules}
+
 In Code Quality Testing, the source code is scanned to ensure that it deployments meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-The results of this step is delivered as *Rating*. The table below summarizes the ratings for various test criteria:
+You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+The results of this step is delivered as *Rating*. The following table summarizes the rating for testing criteria:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -43,9 +47,6 @@ The results of this step is delivered as *Rating*. The table below summarizes th
 |Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 0|
 |Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li>**Non-Java projects:**</li><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li><li>**Java projects:**</li><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
 |Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues.|Info|> 0|
-
-
-You can download the list of rules here [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
