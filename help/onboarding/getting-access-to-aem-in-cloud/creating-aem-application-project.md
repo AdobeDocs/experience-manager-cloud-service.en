@@ -52,7 +52,7 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
-* The Java version installed Oracle JDK 8u202 and 11.0.2.
+* The Java versions installed are Oracle JDK 8u202 and 11.0.2.
 * There are some additional system packages installed which are necessary:
 
     * bzip2
@@ -69,6 +69,41 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 >[!NOTE]
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
 
+### Using Java 11 Support {#using-java-support}
+
+Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. 
+
+Customers who want to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+
+>[!NOTE]
+>Supported vendor values are `oracle`  and `sun`.
+>
+>Supported version values are `1.8`, `1.11`, and `11`.
 
 ## Environment Variables {#environment-variables}
 
@@ -204,7 +239,7 @@ And if you wanted to output a simple message only when the build is run outside 
 
 ## Password-Protected Maven Repository Support {#password-protected-maven-repositories}
 
-In order to use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret [Pipeline Variable](#pipeline-variables) and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema. When the Cloud Manager build process starts, the `<servers>` element in this file will be merged into the default `settings.xml` file provided by Cloud Manager. With this file in place, the server id would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile]{#activating-maven-profiles-in-cloud-manager}, although that's not strictly necessary.
+In order to use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret [Pipeline Variable](#pipeline-variables) and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema. When the Cloud Manager build process starts, the `<servers>` element in this file will be merged into the default `settings.xml` file provided by Cloud Manager. Server IDs starting with `adobe` and `cloud-manager` are considered reserved and should not be used by custom servers. Server IDs **not** matching one of these prefixes or the default ID `central` will never be mirrored by Cloud Manager. With this file in place, the server id would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
 
 As an example, let's say that the repository is at https://repository.myco.com/maven2, the username Cloud Manager should use is `cloudmanager` and the password is `secretword`.
 
@@ -368,3 +403,12 @@ With the content-package-maven-plugin it is similar:
             </configuration>
         </plugin>
 ```
+
+## Additional Resources {#additional-resources}
+
+Refer to the sections below to learn how to use Cloud Manager in Cloud Service:
+
+* [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
+* [Configure your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
+* [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
+* [Understanding your Test Results](/help/implementing/developing/introduction/understand-test-results.md)

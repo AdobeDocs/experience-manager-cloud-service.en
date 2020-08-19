@@ -27,6 +27,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Native and high-fidelity PDF previews are available in Brand Portal.
 
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What's New {#what-is-new-commerce}
@@ -51,7 +52,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
 
-* Authentication-bound Private Maven Repositories are now supported.
 
 ### Bug Fixes {#bug-fixes-cm}
 
@@ -80,3 +80,17 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * The Content Audit tab incorrectly displays the base URL using the author domain instead of the publish domain.
 
 * In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. If no pages are added, the homepage will be audited.
+
+## Content Transfer Tool {#content-transfer-tool}
+
+Follow this section to learn about what is new and the updates for Content Transfer Tool Release v1.0.4.
+
+### What's New {#what-is-new-ctt}
+
+* Content Transfer Tool now supports Shared S3 DataStore.
+
+### Bug Fixes {#ctt-bug-fixes}
+
+* Additional timeouts added for the tool to complete actions.
+
+* Earlier version UI sometimes displayed successful extraction even though log showed errors.

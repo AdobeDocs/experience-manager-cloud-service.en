@@ -5,11 +5,19 @@ description: Understand Test Results - Cloud Services
 
 # Understanding your Test Results {#understand-test-results} 
 
-Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
-There are two types of tests run in this context:
-* Customer-written tests 
-* Adobe-written tests
-* Open source tool powered by Lighthouse from Google
+Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment.
+
+There are three broad categories of tests supported by Cloud Manager for Cloud Services Pipeline:
+
+1. [Code Quality Testing](#code-quality-testing)
+1. [Functional Testing](#functional-testing)
+1. [Content Audit Testing](#content-audit-testing)
+
+These tests can be:
+
+* Customer-written 
+* Adobe-written
+* Open source tool (powered by Lighthouse from Google) 
 
     >[!NOTE]
     > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
@@ -17,7 +25,13 @@ There are two types of tests run in this context:
 
 ## Code Quality Testing {#code-quality-testing}
 
-As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
+This step evaluates the quality of your application code. It is the core objective of a Code-Quality only pipeline  and is executed immediately following the build step in all non-production and production pipelines. 
+
+Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about different types of pipelines.
+
+In Code Quality Testing, the source code is scanned to ensure that it deployments meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+
+The results of this step is delivered as *Rating*. The table below summarizes the ratings for various test criteria:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -31,11 +45,12 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 |Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues.|Info|> 0|
 
 
+You can download the list of rules here [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
+
 >[!NOTE]
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -75,7 +90,35 @@ Then the correct solution is to remove the hardcoded password.
 >
 >While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
-## Writing Functional Tests {#writing-functional-tests}
+>[!NOTE]
+>While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
+
+## Functional Testing {#functional-testing}
+
+Functional testing is categorized into two types:
+
+* Product Functional Testing
+* Custom Functional Testing
+
+### Product Functional Testing {#product-functional-testing}
+
+Product Functional Tests are a set of stable HTTP integration tests (ITs) around core functionality in AEM (for example, authoring and replication) that prevent customer changes to their application code from being deployed if it breaks this core functionality.
+
+Product Functional Tests run automatically whenever a customer deploys new code to Cloud Manager and cannot be skipped.
+
+Refer to [Product Functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) for sample tests.
+
+### Custom Functional Testing {#custom-functional-testing}
+
+The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
+
+However, if no test JAR is produced by the build, the test passes by default. 
+
+>[!NOTE]
+>The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+
+
+#### Writing Functional Tests {#writing-functional-tests}
 
 Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally this would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the maven-assembly-plugin using the jar-with-dependencies descriptor. 
 
@@ -117,15 +160,6 @@ Within this JAR file, the class names of the actual tests to be executed must en
 For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but a class named `com.myco.tests.aem.ExampleTest` would not. 
  
 The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
-
-## Custom Functional Testing {#custom-functional-test}
-
-The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
-
-However, if no test JAR is produced by the build, the test passes by default. This step is current done immediately after the stage deployment.
-
->[!NOTE]
->The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 ## Content Audit Testing {#content-audit-testing}
 
