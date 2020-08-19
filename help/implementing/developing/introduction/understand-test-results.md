@@ -162,6 +162,25 @@ For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but 
  
 The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
+#### Local Test Execution {#local-test-execution}
+
+As the test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, NetBeans, and so on. 
+
+However, when running these tests, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
+
+The system properties are as follows:
+
+* `sling.it.instances - should be set to 2`
+* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
+* `sling.it.instance.runmode.1 - should be set to author`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
+* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.runmode.2 - should be set to publish`
+* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
+* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+
 ## Content Audit Testing {#content-audit-testing}
 
 Content Audit is a feature available in Cloud Manager Sites Production pipelines that is powered by Lighthouse, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines. 
@@ -208,22 +227,4 @@ By drilling into any of the tests, more detailed page level scoring can be seen.
 Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
 
    ![](assets/page-level-scores.png)
-
-## Local Test Execution {#local-test-execution}
-
-As the test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, NetBeans, and so on. 
-
-However, when running these tests necessarily, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
-
-The system properties are as follows:
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 
