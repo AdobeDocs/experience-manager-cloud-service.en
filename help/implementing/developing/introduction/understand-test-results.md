@@ -25,7 +25,17 @@ These tests can be:
 
 ## Code Quality Testing {#code-quality-testing}
 
-As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
+This step evaluates the quality of your application code. It is the core objective of a Code-Quality only pipeline  and is executed immediately following the build step in all non-production and production pipelines. 
+
+Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about different types of pipelines.
+
+### Understanding Custom Code Quality Rules {#understanding-code-quality-rules}
+
+In Code Quality Testing, the source code is scanned to ensure that it deployments meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+
+You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+The results of this step is delivered as *Rating*. The following table summarizes the rating for testing criteria:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -38,12 +48,10 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 |Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li>**Non-Java projects:**</li><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li><li>**Java projects:**</li><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
 |Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues.|Info|> 0|
 
-
 >[!NOTE]
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -154,6 +162,25 @@ For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but 
  
 The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
+#### Local Test Execution {#local-test-execution}
+
+As the test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, NetBeans, and so on. 
+
+However, when running these tests, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
+
+The system properties are as follows:
+
+* `sling.it.instances - should be set to 2`
+* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
+* `sling.it.instance.runmode.1 - should be set to author`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
+* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.runmode.2 - should be set to publish`
+* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
+* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+
 ## Content Audit Testing {#content-audit-testing}
 
 Content Audit is a feature available in Cloud Manager Sites Production pipelines that is powered by Lighthouse, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines. 
@@ -200,22 +227,4 @@ By drilling into any of the tests, more detailed page level scoring can be seen.
 Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
 
    ![](assets/page-level-scores.png)
-
-## Local Test Execution {#local-test-execution}
-
-As the test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, NetBeans, and so on. 
-
-However, when running these tests necessarily, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
-
-The system properties are as follows:
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 

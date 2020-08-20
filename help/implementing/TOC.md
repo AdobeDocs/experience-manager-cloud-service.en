@@ -11,6 +11,11 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Managing Environments](cloud-manager/manage-environments.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
+  + Understanding your Test Results {#test-results}
+    + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
+    + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
+    + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
+    + [Content Audit Testing](/help/implementing/cloud-manager/content-audit-testing.md)
   + [Understanding Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)  
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
@@ -30,7 +35,6 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
   + [Logging](developing/introduction/logging.md) 
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-  + [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
