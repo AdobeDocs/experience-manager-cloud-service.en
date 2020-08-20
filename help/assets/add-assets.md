@@ -144,13 +144,13 @@ In order to have additional processing done on the uploaded assets, you can use 
 
 The following profiles are available:
 
-* [Metadata profiles](metadata-profiles.md) allow you to apply default metadata properties to assets uploaded into that folder
-* [Processing profiles](asset-microservices-configure-and-use.md) allow you to generate more renditions than are possible by default.
+* [Metadata profiles](metadata-profiles.md) let you apply default metadata properties to assets uploaded into that folder
+* [Processing profiles](asset-microservices-configure-and-use.md) let you generate more renditions than are possible by default.
 
 Additionally, if Dynamic Media is enabled in your environment:
 
-* [Dynamic Media Image profiles](dynamic-media/image-profiles.md) allow you to apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets.
-* [Dynamic Media Video profiles](dynamic-media/video-profiles.md) allow you to apply specific video encoding profiles (resolution, format, parameters).
+* [Dynamic Media Image profiles](dynamic-media/image-profiles.md) let you apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets.
+* [Dynamic Media Video profiles](dynamic-media/video-profiles.md) let you apply specific video encoding profiles (resolution, format, parameters).
 
 >[!NOTE]
 >
