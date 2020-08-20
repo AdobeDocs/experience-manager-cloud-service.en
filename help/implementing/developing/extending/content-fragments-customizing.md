@@ -19,21 +19,12 @@ The basic [constituent parts](/help/assets/content-fragments/content-fragments.m
 * consisting of one or more *Content Elements*,
 * and which can have one or more *Content Variations*.
 
-Depending on the type of fragment, either models or the **Simple Fragment** template are also used:
+The individual Content Fragments are based on Content Fragment Models:
 
->[!CAUTION]
->
->[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are now recommended for creating all your fragments.
->
->Content fragment models are used for all examples in WKND.
-
-* Content Fragment Models:
-
-  * Used for defining content fragments that hold structured content.
-  * Content fragment models define the structure of a content fragment when it is created.
-  * A fragment references the model; so changes to the model may/will impact any dependent fragments.
-  * Models are built-up of data types.
-  * Functions to add new variations, etc., have to update the fragment accordingly.
+* Content fragment models define the structure of a content fragment when it is created.
+* A fragment references the model; so changes to the model may/will impact any dependent fragments.
+* Models are built-up of data types.
+* Functions to add new variations, etc., have to update the fragment accordingly.
 
   >[!NOTE]
   >
@@ -42,20 +33,6 @@ Depending on the type of fragment, either models or the **Simple Fragment** temp
   >[!CAUTION]
   >
   >Any changes to an existing content fragment model can impact dependent fragments; this can lead to orphan properties in those fragments.
-
-* Content Fragment Template - **Simple Fragment**:
-
-  * Used for defining simple content fragments.
-
-  * This template defines the (basic, text-only) structure of a content fragment when it is created.
-
-  * The template is copied to the fragment when it is created.
-
-  * Functions to add new variations, etc., have to update the fragment accordingly.
-
-  * The Content fragment template (**Simple Fragment**) operates in a different manner to that of other templating mechanisms within the AEM ecosystem (e.g. page templates, etc.). Therefore it should be considered separately.
-
-  * When based on the **Simple Fragment** template the MIME type of the content is managed on the actual content; this means that each element and variation can have a different MIME type.
 
 ### Integration of Sites with Assets {#integration-of-sites-with-assets}
 
@@ -69,11 +46,11 @@ Content Fragments are considered a Sites feature as:
 
 * They are used when authoring your pages.
 
-#### Mapping Structured Content Fragments to Assets {#mapping-structured-content-fragments-to-assets}
+#### Mapping Content Fragments to Assets {#mapping-content-fragments-to-assets}
 
-![content fragment to assets structured](assets/content-fragment-to-assets-structured.png)
+![content fragment to assets](assets/content-fragment-to-assets.png)
 
-Content fragments with structured content (i.e. based on a content fragment model) are mapped to a single asset:
+Content fragments, based on a content fragment model, are mapped to a single asset:
 
 * All content is stored under the `jcr:content/data` node of the asset:
 
@@ -88,22 +65,6 @@ Content fragments with structured content (i.e. based on a content fragment mode
 
 * Metadata and associated content is stored below `jcr:content/metadata`
   Except for the title and description, which are not considered traditional metadata and stored on `jcr:content`
-
-#### Mapping Simple Content Fragments to Assets {#mapping-simple-content-fragments-to-assets}
-
-![content fragment to assets simple](assets/content-fragment-to-assets-simple.png)
-
-Simple content fragments (based on the **Simple Fragment** template) are mapped to a composite consisting of a main asset and (optional) sub-assets:
-
-* All non-content information of a fragment (such as title, description, metadata, structure) is managed on the main asset exclusively.
-* The content of the first element of a fragment is mapped to the original rendition of the main asset.
-
-    * The variations (if there are any) of the first element are mapped to other renditions of the main asset.
-
-* Additional elements (if existing) are mapped to sub-assets of the main asset.
-
-    * The main content of these additional elements map to the original rendition of the respective sub-asset.
-    * Other variations (if applicable) of any additional elements map to other renditions of the respective sub-asset.
 
 #### Asset Location {#asset-location}
 
@@ -153,11 +114,9 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 >
 >**Content Fragment Model:**
 >
->When using a content fragment that has been based on a content fragment model on a page, the model is referenced. This means that if the model has not been published at the time you publish the page, this will be flagged and the model added to the resources to be published with the page.
+>When a content fragment is used on a page, the content fragment model that it is based on is referenced. 
 >
->**Content Fragment Template - Simple Fragment:**
->
->When using a content fragment that has been based on the content fragment template **Simple Fragment** on a page, there is no reference as the template was copied when creating the fragment.
+>This means that if the model has not been published at the time you publish the page, this will be flagged and the model added to the resources to be published with the page.
 
 ### Integration with other Frameworks {#integration-with-other-frameworks}
 
@@ -201,7 +160,7 @@ Content fragments can be integrated with:
 
 You can use the server-side API to access your content fragments; see:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -235,7 +194,7 @@ The following three interfaces can serve as entry points:
     * Add collections
     * Remove collections
 
-  * Access the fragment's model or template
+  * Access the fragment's model
 
   Interfaces that represent the prime elements of a fragment are:
 
@@ -277,7 +236,9 @@ The following can be adapted:
 
 * `ContentElement` can be adapted to:
 
-  * `ElementTemplate` - for accessing the element's structural information.
+  * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - for accessing the element's structural information.
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` can be adapted to:
 
@@ -291,7 +252,7 @@ It should be noted that:
 
 * Tasks that might require additional effort:
 
-  * Create new variations from `ContentFragment` to update the data structure.
+  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements will share this variation, and that appropriate global data structures will be updated as required to reflect the newly created variation in the content structure.
 
   * Removing existing variations through an element, using `ContentElement.removeVariation()`, will not update the global data structures assigned to the variation. To ensure these data structures are kept in sync, use `ContentFragment.removeVariation()` instead, which removes a variation globally.
 
@@ -347,13 +308,13 @@ if (fragmentResource != null) {
 ### Example: Creating a new content fragment {#example-creating-a-new-content-fragment}
 
 To create a new content fragment programmatically, you need to use a 
-`FragmentTemplate` adapted from a model or template resource.
+`FragmentTemplate` adapted from a model resource.
 
 For example:
 
 ```java
-Resource templateOrModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 
 ```

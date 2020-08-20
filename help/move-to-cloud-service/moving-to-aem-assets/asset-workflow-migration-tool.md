@@ -13,6 +13,19 @@ This section describes resources and implementation details on Asset Workflow Mi
 
 This utility allows the AEM developers to migrate existing AEM asset processing workflows to AEM as a Cloud Service.
 
+## Supported workflows {#migration-support-for-workflows}
+
+The workflows have varying level of migration support. See this [list of specific workflows](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). The workflows are categorized in the following categories based on the support provided. Adobe supports migration of the workflows that are listed in `SUPPORTED`, `REQUIRED`, or `OPTIONAL` categories. The workflow steps mentioned in the other categories are not supported.
+
+* `SUPPORTED`: Supported functionality in [!DNL Experience Manager Assets] as a Cloud Service.
+* `OPTIONAL`: Optional functionality in [!DNL Experience Manager Assets] as a Cloud Service.
+* `REQUIRED`: A required step that is added to the workflow.
+* `UNNECESSARY`: Functionality is not necessary in [!DNL Experience Manager Assets] as a Cloud Service.
+* `NUI_OOTB`: Functionality provided by [Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
+* `DMS7_OOTB`: Functionality provided by default [!DNL Dynamic Media] connectors.
+* `NUI_MIGRATED`: Migrated to a [processing profile for the Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
+* `UNSUPPORTED`: Currently not supported in [!DNL Experience Manager Assets] as a Cloud Service.
+
 ## Installing Asset Workflow Migration Tool {#installing-tool}
 
 Refer to **[Git Resource: AEM Assets as a Cloud Service - Workflow Migration](https://github.com/adobe/aem-cloud-migration)** to learn about installing and building code from the source.

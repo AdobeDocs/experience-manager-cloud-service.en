@@ -58,7 +58,7 @@ For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, reques
 >[!NOTE]
 >Access over:
 >* `/api/assets` **does not** need the use of the `.model` selector.
->* `/content/assets` **does** require the use of the `.model` selector.
+>* `/content/path/to/page` **does** require the use of the `.model` selector.
 
 The HTTP method determines the operation to be executed:
 
@@ -168,7 +168,7 @@ The response will contain paging information as part of the `properties` section
 
 `GET /api/assets.json?offset=2&limit=3`
 
-```
+```json
 ...
 "properties": {
     ...
@@ -198,7 +198,7 @@ The Assets REST API exposes access to the properties of a folder; for example it
 
 If an asset is requested, the response will return its metadata; such as title, name and other information as defined by the respective asset schema.
 
-The binary data of an asset is exposed as a SIREN link of type `content` (also known as the `rel attribute`).
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 
@@ -231,7 +231,7 @@ Associated content is currently not exposed.
 
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
-* Creation is strictly bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
+* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
 * Delivery is possible from both, as AEM serves requested content in JSON format only.
 
   * Storage and delivery from an AEM author instance should suffice for behind-the-firewall, media library applications.
@@ -302,7 +302,7 @@ There are a few limitations:
 
 The following status codes can be seen in the relevant circumstances:
 
-1. 200 (OK)
+* **200** (OK)
 
    Returned when:
 
@@ -310,19 +310,19 @@ The following status codes can be seen in the relevant circumstances:
 
     * successfully updating a content fragment via `PUT`
 
-1. 201 (Created)
+* **201** (Created)
 
    Returned when:
 
     * successfully creating a content fragment via `POST`
 
-1. 404 (Not found)
+* **404** (Not found)
 
    Returned when:
 
     * the requested content fragment does not exist
 
-1. 500 (Internal server error)
+* **500** (Internal server error)
 
    >[!NOTE]
    >
@@ -334,11 +334,10 @@ The following status codes can be seen in the relevant circumstances:
    The following lists common scenarios when this error status is returned, together with the error message (monospace) generated:
 
     * Parent folder does not exist (when creating a content fragment via `POST`)
-    * No content fragment model is supplied (cq:model is missing), cannot be read (due to an invalid path or a permission problem) or there is no valid fragment model/template:
+    * No content fragment model is supplied (cq:model is missing), cannot be read (due to an invalid path or a permission problem) or there is no valid fragment model:
 
         * `No content fragment model specified`
         * `Cannot create a resource of given model '/foo/bar/qux'`
-        * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
 
     * The content fragment could not be created (potentially a permission problem):
 

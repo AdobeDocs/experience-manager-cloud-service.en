@@ -1,53 +1,53 @@
 ---
-title: Using the Rich Text Editor to Author Content
-description: Using the Rich Text Editor to Author Content
+title: Use the Rich Text Editor in [!DNL Adobe Experience Manager] to author content.
+description: Use the [!DNL Experience Manager] Rich Text Editor to author content.
 ---
 
-# Using the Rich Text Editor to Author Content {#use-rich-text-editor-to-author-content}
+# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
-The Rich Text Editor (RTE) is a basic building block for inserting textual content into AEM. It forms the basis of various components
+The Rich Text Editor (RTE) is a basic building block to add textual content to [!DNL Adobe Experience Manager]. Also, many other components that allow authoring are based on RTE. Experience Manager developers can customize RTE and administrators configure RTE for use by authors.
 
-## In-Place Editing {#in-place-editing}
+## In-place editing {#in-place-editing}
 
-Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) as with any component.
+Selecting a text-based component with a single click to reveal the [component toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar).
 
 ![The component toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
-Tapping/clicking agin or initially selecting the component with a slow double-tap/click will open in-place editing, which has its own toolbar. Here you can edit the content and make basic formatting changes.
+Clicking again or initially selecting the component with a slow double-click opens in-place editing. The editing mode contains a toolbar. You can edit the content and make basic formatting changes.
 
 ![In place editing with the RTE](/help/sites-cloud/authoring/assets/rte-in-place-editing.png)
 
-This toolbar provides the following options:
+Typically, the toolbar provides the following options:
 
-* **Format**: This allows you to set Bold, Italic and Underline.
-* **Lists**: With this you can create bulleted or numbered lists, or set the indentation.
-* **Hyperlink**
-* **Unlink**
-* **Full Screen**
-* **Close**
-* **Save**
+* **Format**: Emphasize text as bold or italic or underline the text.
+* **Lists**: Create bulleted or numbered lists and set the indentation.
+* **Hyperlink**: Create links.
+* **Unlink**: Remove hyperlink.
+* **Full Screen**: Open the editor in full-screen mode.
+* **Close**: Stop editing.
+* **Save**: Save changes.
 
-## Full Screen Editing {#full-screen-editing}
+## Full-screen editing {#full-screen-editing}
 
-For text-based components, tapping the full screen mode from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) opens the rich text editor and hides the rest of the page content.
-
-![RTE full screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+For text-based components, click the full-screen mode ![RTE full screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png) from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) to open the rich text editor and hides the rest of the page content.
 
 Full screen mode displays all the configured options that you can use for authoring. The availability of options depends on the configuration. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
 ![RTE in full screen mode](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
-Additional rich text editor options include:
+Further rich text editor options include:
 
-* **Anchor**: Create an anchor in the text that you can later link to/reference.
-* **Align Text Left**
-* **Center Text**
-* **Align Text Right**
+* **Anchor**: Create an anchor in the text that you can later link to or create a reference to.
+* **Align Text Left**.
+* **Center Text**.
+* **Align Text Right**.
 
-Close full screen mode by clicking the minimize icon.
+Click minimize to close the full-screen mode.
 
-![RTE minimize button](/help/sites-cloud/authoring/assets/rte-minimize.png)
-
->[!NOTE]
+>[!Tip]
 >
->Copying nested lists from Microsoft Word into the RTE can give inconsistent results and may require manual adjustment after pasting the text in the RTE.
+>Copying nested lists from [!DNL Microsoft Word] into the RTE can give inconsistent results. Instead, paste as text and do manual adjustment.
+
+>[!MORELIKETHIS]
+>
+>* [Configure rich text editors](/help/implementing/developing/extending/rich-text-editor.md)

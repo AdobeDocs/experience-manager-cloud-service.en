@@ -11,22 +11,28 @@ Follow the section below to understand the important considerations while runnin
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to May 29'2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+* The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store and Shared S3 Data Store. It currently does not support Azure Blob Store Data Store.
 
-* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the administration group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+
+* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
 * The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process.
 
+* The recommended upper limit for the repository size that the Content Transfer Tool can support at a time is 20GB.
+
 ## Availability {#availability}
 
-The Content Transfer Tool can be downloaded as a zip file from the the Software Distribution portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
->Download the Content Transfer Tool from [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
 ## Running the Content Transfer Tool {#running-tool}
+
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 Follow this section to learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish):
 
@@ -59,7 +65,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Access Token**: Enter the access token.
 
       >[!NOTE]
-      >You can retrieve the access token from the author instance by navigating to `/libs/granite/migration/token.json`.
+      >You can retrieve the access token from the author instance by navigating to `/libs/granite/migration/token.json`. The access token is retrieved from the Cloud Service author instance.
 
    1. **Parameters**: Select the following parameters to create the migration set:
 
@@ -201,6 +207,8 @@ Or,
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
+1. To tail the logs without using the user interface, you can SSH into your source AEM environment and tail the `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+
 ### Deleting a Migration Set {#deleting-migration-set}
 
 You can delete the migration set from the *Overview* page.
@@ -224,7 +232,8 @@ If there are missing blob ids reported, as mentioned below, then there is a need
 The following command is executed 
 
 >[!NOTE]
-> `--verbose` flag is required to report the node paths from where the blobs are referenced.
+>
+>`--verbose` flag is required to report the node paths from where the blobs are referenced.
 
 **For repositories AEM 6.5 (Oak 1.8 and below)**
 

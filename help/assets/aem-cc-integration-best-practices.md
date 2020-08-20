@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager and Adobe Creative Cloud integration best practices
-description: Best practices for integrating an AEM instance with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
+description: Best practices integrate an Experience Manager deployment with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
 contentOwner: AG
 mini-toc-levels: 1
 ---
@@ -166,7 +166,7 @@ AEM Assets supports two types of users based on their access to the AEM Assets d
 
 #### Creative users with direct access to DAM {#creative-users-with-direct-access-to-dam}
 
-Typically, in-house creative teams or agencies/creative professionals onboarded to the internal network have access to the DAM instance, including AEM login. AEM and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to AEM over network, for example, via VPN or IP whitelisting.
+Typically, in-house creative teams or agencies/creative professionals onboarded to the internal network have access to the DAM instance, including AEM login. AEM and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to AEM over network, for example, via VPN or IP allowed list.
 
 In such cases, Adobe Asset Link or AEM desktop app provides easy access to final/approved assets and lets you save creative-ready assets to DAM.
 
@@ -179,7 +179,7 @@ Use the following strategies to provide access to final/approved assets:
 * Use desktop app if Asset Link does not work.
 * Use [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for distributing assets securely to external partners
 * Use a custom implementation of a distribution and sourcing portal based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Use Access Control set up in AEM and necessary network infrastructure (for example, VPN and IP whitelisting) to give external parties access to a dedicated area of content in your DAM. They can use AEM Web UI to get assets and upload new content into your DAM.
+* Use Access Control set up in AEM and necessary network infrastructure (for example, VPN and IP allowed listing) to give external parties access to a dedicated area of content in your DAM. They can use AEM Web UI to get assets and upload new content into your DAM.
 
 #### Work in progress on assets from AEM {#work-in-progress-on-assets-from-aem}
 

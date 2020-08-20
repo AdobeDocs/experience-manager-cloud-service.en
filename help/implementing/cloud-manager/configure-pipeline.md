@@ -5,24 +5,32 @@ description: Configure CI/CD Pipeline - Cloud Services
 
 # Configuring your CI-CD Pipeline {#configure-ci-cd-pipeline} 
 
+In Cloud Manager, there are two types of Pipeline:
 
-## Understanding the Flow {#understanding-the-flow}
+* **Production Pipeline**:
+  
+  A Production Pipeline can only be added once a production and stage environment set is created. 
+  
+  Refer to [Setting up Production Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
-You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+* **Non-Production Pipeline**:
 
-The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. 
+  A Non-Production Pipeline can be added from the **Overview** page from the Cloud Manager's user interface. 
+  
+  Refer to [Non-Production & Code Quality Only Pipelines](configure-pipeline.md#non-production-pipelines) for more details.
 
-To configure your pipeline, the user must:
+>[!NOTE]
+>To configure your pipeline, you must:
+> * define the trigger that will start the pipeline.
+> * define the parameters controlling the production deployment.
+> * configure the performance test parameters.
 
-* define the trigger that will start the pipeline.
-* define the parameters controlling the production deployment.
-* configure the performance test parameters.
+## Setting up Production Pipeline {#setting-up-production-pipeline}
 
-## Setting up the Pipeline {#setting-up-the-pipeline}
+The Deployment Manager is responsible for setting up the Production Pipeline.
 
->[!CAUTION]
->
->The pipeline cannot be setup until one program creation is complete and the Git repository has at least one branch.
+>[!NOTE]
+>A Production Pipeline cannot be setup until a program creation is complete, Git repository has at least one branch, and a Production and Stage environment set is created.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
@@ -42,11 +50,11 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. The **Setup Pipeline** screen displays. Select the branch and click **Next**.
 
-   ![](assets/set-up-pipeline2.png)
+    ![](assets/setup-pipeline-1.png)
 
 1. Configure your deployment options.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    You can define the trigger to start the pipeline:
 
@@ -61,16 +69,30 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
    * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
     
-1. Click **Next** to access the **Testing** tab to define your testing criteria for your program.
+1. The production pipeline settings includes a third tab labeled as **Content Audit**.
 
-   ![](assets/set-up-pipeline4.png)
+    ![](assets/content-audit-1.png)
 
-1. Click **Save**. The *Overview* page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
+   This option provides a table for the URL paths that should always be included in the Content Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the content audit as a default.
+
+    >[!NOTE]
+    > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
+   
+    Refer to [Understanding Content Audit Results](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
+
+    Click on **Add New Page Override** to provide a URL path to be included in the Content Audit. Once you add the path, click **Save**.
+
+    >[!NOTE]
+    >In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. Refer to [Known Issues](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) for more details.
+
+    ![](assets/content-audit2.png)
+    
+1. Click **Save** from the **Edit Pipeline** screen. The **Overview** page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
    ![](assets/configure-pipeline5.png)
    
 
-## Non-Production & Code Quality Only Pipelines
+## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
 

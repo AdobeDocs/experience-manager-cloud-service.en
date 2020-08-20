@@ -9,13 +9,21 @@ Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distributio
 
 >[!NOTE]
 >
-> Read [Distribution](/help/core-concepts/architecture.md#content-distribution) for more information.
+>Read [Distribution](/help/core-concepts/architecture.md#content-distribution) for more information.
 
 ## Methods of Publishing Content {#methods-of-publishing-content}
 
 ### Quick Un/Publish - Planned Un/Publish {#publish-unpublish}
 
 These standard AEM functionalities for the authors do not change with AEM Cloud Service.
+
+### On and Off Times - Trigger Configuration {#on-and-off-times-trigger-configuration}
+
+The additional possibilities of **On Time** and **Off Time** are available from the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
+
+To realize the automatic replication for this you need to enable **Auto Replicate** in the [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) **On Off Trigger Configuration**: 
+
+   ![OSGi On Off Trigger Configuration](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Tree Activation {#tree-activation}
 

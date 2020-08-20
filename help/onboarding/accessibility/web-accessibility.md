@@ -21,7 +21,7 @@ Adobe Experience Manager as a Cloud Service works with the [guidelines](#wcag-ac
 
 >[!NOTE]
 >
-> See the [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html) for further details.
+>See the [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html) for further details.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
  
@@ -42,7 +42,7 @@ Using Adobe Experience Manager, content authors and/or website owners can create
 * [Creating Accessible Content](/help/sites-cloud/authoring/fundamentals/accessible-content.md) details how they relate to AEM. 
  
 >[!NOTE]
-> 
+>
 >When creating your site, you should determine the overall level to which you would like your site to conform.
  
 <!--

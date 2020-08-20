@@ -25,7 +25,7 @@ For example, suppose you want to present images of caps with different color bil
 
 To get you up and running quickly:
 
-1. [Upload your master images for multiple views.](#uploading-assets-in-image-sets)
+1. [Upload your primary source images for multiple views.](#uploading-assets-in-image-sets)
 
    Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 

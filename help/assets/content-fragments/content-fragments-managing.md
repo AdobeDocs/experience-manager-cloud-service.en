@@ -15,22 +15,17 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 ### Creating a Content Model {#creating-a-content-model}
 
-
 [Content fragment models](/help/assets/content-fragments/content-fragments-models.md) can be enabled and created, prior to creating content fragments with structured content.
 
 ### Creating a Content Fragment {#creating-a-content-fragment}
 
-The method of creating a content fragment is (basically) the same for both simple and structured fragments:
+The method of creating a content fragment is:
 
 1. Navigate to the **Assets** folder where you want to create the fragment.
 2. Select **Create**, then **Content Fragment** to open the wizard.
 3. The first step of the wizard requires you to specify the basis of the new fragment.
 
-    * This can be:
-
-      * the **Simple Fragment** template
-
-      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airports** model
+      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Adventure** model
 
         * All available models are displayed.
 
@@ -129,8 +124,6 @@ To open your fragment for editing:
    >[!NOTE]
    >
    >1. A message will be shown when the fragment is already referenced on a content page.
-   >
-   >
    >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 3. Navigate through the three modes using the icons in the side panel:

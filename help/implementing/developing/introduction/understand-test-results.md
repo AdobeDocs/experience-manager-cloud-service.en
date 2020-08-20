@@ -5,17 +5,37 @@ description: Understand Test Results - Cloud Services
 
 # Understanding your Test Results {#understand-test-results} 
 
-Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
-There are two types of tests run in this context:
-* Customer-written tests 
-* Adobe-written tests
+Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment.
 
- Both types of tests are run in a containerized infrastructure designed for running these types of tests.
+There are three broad categories of tests supported by Cloud Manager for Cloud Services Pipeline:
+
+1. [Code Quality Testing](#code-quality-testing)
+1. [Functional Testing](#functional-testing)
+1. [Content Audit Testing](#content-audit-testing)
+
+These tests can be:
+
+* Customer-written 
+* Adobe-written
+* Open source tool (powered by Lighthouse from Google) 
+
+    >[!NOTE]
+    > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
 
 
 ## Code Quality Testing {#code-quality-testing}
 
-As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
+This step evaluates the quality of your application code. It is the core objective of a Code-Quality only pipeline  and is executed immediately following the build step in all non-production and production pipelines. 
+
+Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about different types of pipelines.
+
+### Understanding Custom Code Quality Rules {#understanding-code-quality-rules}
+
+In Code Quality Testing, the source code is scanned to ensure that it deployments meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+
+You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+The results of this step is delivered as *Rating*. The following table summarizes the rating for testing criteria:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -28,12 +48,10 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 |Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li>**Non-Java projects:**</li><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li><li>**Java projects:**</li><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
 |Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues.|Info|> 0|
 
-
 >[!NOTE]
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -73,7 +91,35 @@ Then the correct solution is to remove the hardcoded password.
 >
 >While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
-## Writing Functional Tests {#writing-functional-tests}
+>[!NOTE]
+>While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
+
+## Functional Testing {#functional-testing}
+
+Functional testing is categorized into two types:
+
+* Product Functional Testing
+* Custom Functional Testing
+
+### Product Functional Testing {#product-functional-testing}
+
+Product Functional Tests are a set of stable HTTP integration tests (ITs) around core functionality in AEM (for example, authoring and replication) that prevent customer changes to their application code from being deployed if it breaks this core functionality.
+
+Product Functional Tests run automatically whenever a customer deploys new code to Cloud Manager and cannot be skipped.
+
+Refer to [Product Functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) for sample tests.
+
+### Custom Functional Testing {#custom-functional-testing}
+
+The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
+
+However, if no test JAR is produced by the build, the test passes by default. 
+
+>[!NOTE]
+>The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+
+
+#### Writing Functional Tests {#writing-functional-tests}
 
 Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally this would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the maven-assembly-plugin using the jar-with-dependencies descriptor. 
 
@@ -116,20 +162,11 @@ For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but 
  
 The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
-## Custom Functional Testing {#custom-functional-test}
-
-The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
-
-However, if no test JAR is produced by the build, the test passes by default. This step is current done immediately after the stage deployment.
-
->[!NOTE]
->The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
-
-## Local Test Execution {#local-test-execution}
+#### Local Test Execution {#local-test-execution}
 
 As the test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, NetBeans, and so on. 
 
-However, when running these tests necessarily, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
+However, when running these tests, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
 
 The system properties are as follows:
 
@@ -142,3 +179,52 @@ The system properties are as follows:
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+
+## Content Audit Testing {#content-audit-testing}
+
+Content Audit is a feature available in Cloud Manager Sites Production pipelines that is powered by Lighthouse, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines. 
+
+It validates the deployment process and helps ensure that changes deployed:
+
+1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
+
+1. Do not include regressions in these dimensions.
+
+Content Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
+
+### Understanding Content Audit Results {#understanding-content-audit-results}
+
+Content Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
+
+* Aggregate level metrics measure the average score across the pages that were audited.
+* Individual page level scores are also available via drill down.
+* Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
+* A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
+
+#### Aggregate Scores {#aggregate-scores}
+
+There is an aggregate level score for each test type (performance, accessibility, SEO, best practices, and PWA).
+
+The aggregate level score takes the average score of the pages that are included in the run. The change at the aggregate level represents the average score of the pages in the current run compared to the average of the scores from the previous run, even if the collection of pages configured to be included has been changed between runs. 
+
+Value of Change metric may be one of the following:
+
+* **Positive value** - the page(s) have improved on the selected test since the last production pipeline run
+
+* **Negative value** - the page(s) have regressed on the selected test since the last production pipeline run
+
+* **No Change** - the page(s) have scored the same since the last production pipeline run
+
+* **N/A** - there was no previous score available to compare to
+
+   ![](assets/content-audit-test1.png)
+
+#### Page-level Scores {#page-level-scores}
+
+By drilling into any of the tests, more detailed page level scoring can be seen. The user will be able to see how the individual pages scored for the specific test along with the change from the previous time the test was run.
+
+Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
+
+   ![](assets/page-level-scores.png)
+

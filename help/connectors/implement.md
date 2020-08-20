@@ -8,7 +8,7 @@ Implementing an AEM Connector
 
 Provided below are useful references for building [AEM Connectors](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) and should be read in conjunction with guidance on [submitting](submit.md) and [maintaining](maintain.md) connectors.
 
-Note that a Developer license for AEM can be obtained through the [Adobe Exchange Program](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html).
+Note that a Developer license for AEM can be obtained through the [Adobe Exchange Program](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Common Integration Patterns
 ---------------------------
@@ -40,7 +40,7 @@ Community Resources
 In addition to the static documentation above, Adobe and the AEM community offer resources to help bring a connector to market:
 
 *   The Adobe Community's [AEM Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is an active site where your peers ask and respond to questions
-*   Additional Adobe technical resources are available to certain partner levels. Learn more about the [Adobe Exchange Program](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html).
+*   Additional Adobe technical resources are available to certain partner levels. Learn more about the [Adobe Exchange Program](https://partners.adobe.com/exchangeprogram/experiencecloud).
 *   If your organization would like implementation help, consider Adobe's [Professional Services](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) team or see the [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) for a list of Adobe's partners across the globe
 
 Package structure rules

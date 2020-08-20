@@ -33,6 +33,10 @@ The properties are distributed across several tabs.
 
   * Indicates whether the page is shown or hidden in the page navigation of the resulting site.
 
+* **HTML ID**
+
+  * HTML ID to apply to the component.
+
 * **Page Title**
 
   * A title to be used on the page. Typically used by title components. If empty the **Title** will be used.
@@ -51,13 +55,21 @@ The properties are distributed across several tabs.
 
 * **On Time**
 
-  * The date and time at which the published page will be activated. When published this page will be kept dormant until the specified time.
-  * Leave these fields empty for pages you want to publish immediately (the normal scenario).
+  * The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
+
+    >[!NOTE]
+    >
+    > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
+
+    * If already [published (manually)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) this page will be kept dormant (hidden) until rendering at the specified time.
+    * If not published, and configured for auto-replication, the page will be automatically published, then rendered, at the specified time.
+    * If not published, and not configured for auto-replication, the page will not be automatically published, so a 404 will be seen when an attempt to access the page is made.
+  * Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
 * **Off Time**
 
-  * The time at which the published page will be deactivated.
-  * Leave these fields empty for immediate action.
+  * In parallel to **On Time** this defines the time at which the published page will be hidden on the publish environment.
+  * Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
 * **Vanity URL**
 
@@ -90,6 +102,10 @@ The properties are distributed across several tabs.
 
   * Indicate the page to which this page should automatically redirect.
 
+* **Design**
+
+  * Indicates whether the page is shown or hidden in the page navigation of the resulting site.
+
 * **Alias**
 
   * Specify an alias to be used with this page.
@@ -106,9 +122,11 @@ The properties are distributed across several tabs.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
+<!--
 * **Inherited from &lt;*path*&gt;**
 
   * Indicates whether the page is inherited. and where from.
+-->
 
 * **Cloud Configuration**
 
@@ -167,7 +185,7 @@ Shows the page thumbnail image. You can:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **Cloud Service Configurations**
 
   * Define properties for cloud services. 
   

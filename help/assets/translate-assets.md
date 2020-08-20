@@ -15,7 +15,7 @@ Human translation: The translated assets are returned and imported into AEM. Whe
 Machine translation: The machine translation service immediately translates the metadata and tags for assets.
 
 <!--
-We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only 1 master article.
+We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/translation-projects.html
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/preparing-assets-for-translation.html
@@ -48,7 +48,7 @@ In Adobe Experience Manager (AEM) Assets, multilingual assets are included in fo
 
 Each language folder is called a language copy. The root folder of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/dam/it` is the Italian language root for the Italian language copy. Language copies must use a [correctly-configured language root](#create-a-language-root) so that the correct language is targeted when translations of source assets are performed.
 
-The language copy for which you originally add assets is the language master. The language master is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
+The language copy for which you originally add assets is the language primary. The language primary is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
 
 ```shell
 /content
@@ -64,9 +64,9 @@ The language copy for which you originally add assets is the language master. Th
 
 Perform the following steps to prepare your assets for translation:
 
-1. Create the language root of your language master. For example, the language root of the English language copy in the sample folder hierarchy is */content/dam/en*. Ensure that the language root is correctly configured according to the information in [Create a language root](#create-a-language-root).
+1. Create the language root of your language primary. For example, the language root of the English language copy in the sample folder hierarchy is `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a language root](#create-a-language-root).
 
-1. Add assets to your language master.
+1. Add assets to your language primary.
 1. Create the language root of each target language for which you require a language copy.
 
 ### Create a Language Root {#create-a-language-root}
@@ -83,7 +83,7 @@ For example, the root page of the Italian language copy of the sample hierarchy 
 
 The touch-optimized UI provides a References panel that shows a list of language roots that have been created within AEM Assets.
 
-1. In the Assets console, select the language master for which you want to create language copies.
+1. In the Assets console, select the language primary for which you want to create language copies.
 1. Click or tap the GlobalNav icon, and choose **[!UICONTROL References]** to open the Reference pane.
 1. In the References pane, click or tap **[!UICONTROL Language Copies]**. The Language Copies panel shows the language copies of the assets.
 

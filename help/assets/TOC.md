@@ -1,6 +1,7 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
+user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 ---
 
 # Assets {#assets}
@@ -35,9 +36,10 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
 + Configure, administer and extend Assets {#admin}
-  + [APIs and reference material](developer-reference-material-apis.md)
+  + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
-  + [Processing profiles](/help/assets/dynamic-media/processing-profiles.md)
+  + [About working with Image profiles and Video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
+  + [Configure Smart Tags](smart-tags-configuration.md)
   + [Multilingual assets and asset translation](translate-assets.md)
   + [Search facets](search-facets.md)
   + [Extend asset editor](extend-asset-editor.md)
@@ -74,11 +76,12 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Applying Dynamic Media Viewer Presets](dynamic-media/viewer-presets.md)
   + [Managing Dynamic Media Image Presets](dynamic-media/managing-image-presets.md)
   + [Applying Dynamic Media Image Presets](dynamic-media/image-presets.md)
-  + [Dynamic Media Video Profiles](dynamic-media/video-profiles.md)
-  + [Dynamic Media Image Profiles](dynamic-media/image-profiles.md)
+  + [Image Profiles](dynamic-media/image-profiles.md)
+  + [Video Profiles](dynamic-media/video-profiles.md)
   + [Smart Imaging](dynamic-media/imaging-faq.md)
   + [Delivering Dynamic Media assets](dynamic-media/delivering-dynamic-media-assets.md)
   + [Activating hotlink protection in Dynamic Media](dynamic-media/hotlink-protection.md)
+  + [3D Support](dynamic-media/assets-3d.md)
   + [Image Sets](dynamic-media/image-sets.md)
   + [Panoramic Images](dynamic-media/panoramic-images.md)
   + [Mixed Media Sets](dynamic-media/mixed-media-sets.md)
@@ -97,7 +100,7 @@ user-guide-title: AEM Assets as a Cloud Service
   + [Linking URLs to your web application](dynamic-media/linking-urls-to-yourwebapplication.md)
   + [Using Rulesets to transform URLs](dynamic-media/using-rulesets-to-transform-urls.md)
   + [Publishing Dynamic Media assets](dynamic-media/publishing-dynamicmedia-assets.md)
-  + [Invalidating your CDN cached content](dynamic-media/invalidate-cdn-cached-content.md)
+  + [Invalidating the CDN cache by way of Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
   + [Working with Selectors](dynamic-media/working-with-selectors.md)
   + [DHTML Viewer End-of-Life FAQs](dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + [Flash Viewers End-of-Life Notice](dynamic-media/flash-viewers-eol.md)

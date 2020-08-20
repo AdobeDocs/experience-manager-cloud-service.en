@@ -63,12 +63,16 @@ The content fragments enable:
    >
    >For more information about further editing functionality see also:
    >
-   >    * [Responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 ### Selecting the Element or Variation {#selecting-the-element-or-variation}
 
 Open the fragment's **Configuration** dialog to configure the fragment for use on the current page. The dialog can depend on the component used.
+
+>[!NOTE]
+>
+>See also [Core Components, the Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 In the appropriate configuration dialog you can select the available parameters, including:
 
@@ -78,21 +82,19 @@ In the appropriate configuration dialog you can select the available parameters,
   * **Single Text Element**
   * **Multiple Elements**
 * **Element**
-  * The default **Main** will always be available.
-  * A selection will be available if the fragment was created with an appropriate template.
+  * A selection will be available dependent on the model used.
 
   >[!NOTE]
   >
-  >The elements available depend on the template used.
+  >The elements available depend on the model used.
 
 * **Variation**
   * The default **Master** will always be available.
   * A selection will be available if variations were created for the fragment.
-* **Paragraphs**: specify the range of paragraph(s) to include:
-  * **All**
-  * **Range**: for example, `1`, `3-5`, `9-*`
-    * **Handle headings as their own paragraphs**
-* **Handle headings as their own paragraphs**
+
+* **ID**
+
+  * **HTML ID** attribute to apply to the component.
 
 ### Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
 
@@ -124,7 +126,7 @@ For in-between content you can:
 >
 >You can also [insert visual assets (images) to the fragment itself](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph.
+>Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph. If you need this level of connection you can add the image to the fragment (as a [mixed-media fragment](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -133,12 +135,13 @@ For in-between content you can:
 >When this occurs the in-between content is kept as is:
 >
 >* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.
+>
 >  This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to.
 >* Unless the two paragraph structures conflict; in such a case, the in-between content is not displayed (although it is still present internally).
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
+If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
 
 >[!NOTE]
 >
@@ -156,7 +159,7 @@ From here you can drag the assets to the required location (either to an existin
 
 ### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself, then the options for editing these assets in the page editor is limited.
+If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
 For example, for an image you can
 

@@ -64,7 +64,7 @@ To Opt-out:
 
     >[!NOTE]
     >
-    > There is a further description in the **Privacy Policy** section of the [Terms of Use](https://marketing.adobe.com/resources/help/en_US/terms.html).
+    > There is a further description in the **2. Privacy.** section of the [Adobe General Terms of Use](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
@@ -76,7 +76,7 @@ For further information on managing data subject requests related to Adobe Analy
 
 AEM Sites includes an optional integration with Personalization Foundation by Target which uses functionality within the Adobe Target On-demand Service.
 
-For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html).
+For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 

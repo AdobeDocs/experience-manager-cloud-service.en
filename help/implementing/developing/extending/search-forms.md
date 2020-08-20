@@ -71,7 +71,7 @@ The default configurations (listed alphabetically) available are:
 
 >[!NOTE]
 >
-> For further details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md)
+>For further details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md)
 
 
 ## Predicates and Their Settings {#predicates-and-their-settings}
@@ -484,7 +484,7 @@ The following predicates are available, dependent on the configuration:
 
 >[!NOTE]
 >
->* The common search predicates are defined in:
+>The common search predicates are defined in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >This information is for reference only, you must not make changes to `/libs`.
