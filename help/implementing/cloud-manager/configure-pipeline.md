@@ -78,7 +78,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
     >[!NOTE]
     > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
    
-    Refer to [Understanding Content Audit Results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
+    Refer to [Understanding Content Audit Results](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
 
     Click on **Add New Page Override** to provide a URL path to be included in the Content Audit. Once you add the path, click **Save**.
 
