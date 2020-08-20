@@ -36,7 +36,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
 + Configure, administer and extend Assets {#admin}
-  + [APIs and reference material](developer-reference-material-apis.md)
+  + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
   + [About working with Image profiles and Video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
   + [Configure Smart Tags](smart-tags-configuration.md)
