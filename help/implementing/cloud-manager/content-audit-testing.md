@@ -5,7 +5,7 @@ description: Content Audit Testing - Cloud Services
 
 # Content Audit Testing {#content-audit-testing}
 
-Content Audit is a feature available in Cloud Manager Sites Production pipelines, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines. 
+Content Audit is a feature available in Cloud Manager Sites Production pipelines, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines.
 
 It validates the deployment process and helps ensure that changes deployed:
 
