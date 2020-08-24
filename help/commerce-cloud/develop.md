@@ -13,11 +13,13 @@ Developing AEM Commerce projects based on Commerce Integration Framework (CIF) f
 
 ## Local Development with AEM as a Cloud Service SDK {#local}
 
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+
 A local development environment is recommended to work with CIF projects. The CIF Add-On provided for AEM as a Cloud Service environments is available for local development as well. It can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 The CIF Add-On is provided as a Sling Feature archive. The zip file available on the Software Distribution portal includes two Sling Feature archive files, one for AEM author and one for AEM publish instances.
 
-**New to AEM as a Cloud Service?** Check out the [following guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**New to AEM as a Cloud Service?** Check out [a more detailed guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### Required software
 
@@ -32,7 +34,7 @@ The following should be installed locally:
 
 ### Accessing the CIF add-on
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). The zip file contains the CIF add-on as Sling Feature archive, it is not an AEM package. Note that access to the SDK listings is limited to those with AEM as a Cloud Service license.
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). The zip file contains the CIF add-on as **Sling Feature archive**, it is not an AEM package. Note that access to the SDK listings is limited to those with AEM as a Cloud Service license.
 
 >[!TIP]
 >
