@@ -982,10 +982,10 @@ To view video reports:
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
-    * Near the upper-right corner, tap the **[UICONTROL Refresh Video Report]** icon.
+    * Near the upper-right corner, tap the **[!UICONTROL Refresh Video Report]** icon.
       You only need to use Refresh if the end date of the report is the current day. This ensures that you see the video tracking that has occurred since the last time you ran the report.
 
-    * Near the upper-right corner, tap the **[UICONTROL Date Picker]** icon.
+    * Near the upper-right corner, tap the **[!UICONTROL Date Picker]** icon.
       Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report]**.
 
    The Top Metrics group box identifies various aggregate measurements for all *published *videos across your site.
@@ -1021,7 +1021,7 @@ To view Video Reports based on a video viewer that you created using the Scene7 
 
    The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   The correct value for the config2 parameter is found in both the **[!UICONTROL Embed Code]** and in the copy **[UICONTROL URL]** function. In the URL from the copy **[UICONTROL URL]** command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
+   The correct value for the config2 parameter is found in both the **[!UICONTROL Embed Code]** and in the copy **[!UICONTROL URL]** function. In the URL from the copy **[!UICONTROL URL]** command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
 1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
