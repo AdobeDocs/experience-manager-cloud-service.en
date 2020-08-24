@@ -5,11 +5,19 @@ description: Understand Test Results - Cloud Services
 
 # Understanding your Test Results {#understand-test-results} 
 
-Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment. 
-There are two types of tests run in this context:
-* Customer-written tests 
-* Adobe-written tests
-* Open source tool powered by Lighthouse from Google
+Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. This is in contrast to tests run during the Build and Unit Testing step which are run offline, without access to any running AEM environment.
+
+There are three broad categories of tests supported by Cloud Manager for Cloud Services Pipeline:
+
+1. [Code Quality Testing](#code-quality-testing)
+1. [Functional Testing](#functional-testing)
+1. [Content Audit Testing](#content-audit-testing)
+
+These tests can be:
+
+* Customer-written 
+* Adobe-written
+* Open source tool
 
     >[!NOTE]
     > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
@@ -17,7 +25,17 @@ There are two types of tests run in this context:
 
 ## Code Quality Testing {#code-quality-testing}
 
-As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
+This step evaluates the quality of your application code. It is the core objective of a Code-Quality only pipeline  and is executed immediately following the build step in all non-production and production pipelines. 
+
+Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about different types of pipelines.
+
+### Understanding Custom Code Quality Rules {#understanding-code-quality-rules}
+
+In Code Quality Testing, the source code is scanned to ensure that it deployments meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+
+You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+The results of this step is delivered as *Rating*. The following table summarizes the rating for testing criteria:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -30,12 +48,10 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 |Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li>**Non-Java projects:**</li><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li><li>**Java projects:**</li><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
 |Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues.|Info|> 0|
 
-
 >[!NOTE]
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -75,7 +91,35 @@ Then the correct solution is to remove the hardcoded password.
 >
 >While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
-## Writing Functional Tests {#writing-functional-tests}
+>[!NOTE]
+>While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
+
+## Functional Testing {#functional-testing}
+
+Functional testing is categorized into two types:
+
+* Product Functional Testing
+* Custom Functional Testing
+
+### Product Functional Testing {#product-functional-testing}
+
+Product Functional Tests are a set of stable HTTP integration tests (ITs) around core functionality in AEM (for example, authoring and replication) that prevent customer changes to their application code from being deployed if it breaks this core functionality.
+
+Product Functional Tests run automatically whenever a customer deploys new code to Cloud Manager and cannot be skipped.
+
+Refer to [Product Functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) for sample tests.
+
+### Custom Functional Testing {#custom-functional-testing}
+
+The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
+
+However, if no test JAR is produced by the build, the test passes by default. 
+
+>[!NOTE]
+>The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+
+
+#### Writing Functional Tests {#writing-functional-tests}
 
 Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally this would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the maven-assembly-plugin using the jar-with-dependencies descriptor. 
 
@@ -118,14 +162,24 @@ For example, a class named `com.myco.tests.aem.ExampleIT` would be executed but 
  
 The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
-## Custom Functional Testing {#custom-functional-test}
+#### Local Test Execution {#local-test-execution}
 
-The Custom Functional testing step in the pipeline is always present and cannot be skipped. 
+As the test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, NetBeans, and so on. 
 
-However, if no test JAR is produced by the build, the test passes by default. This step is current done immediately after the stage deployment.
+However, when running these tests, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
 
->[!NOTE]
->The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accesing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+The system properties are as follows:
+
+* `sling.it.instances - should be set to 2`
+* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
+* `sling.it.instance.runmode.1 - should be set to author`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
+* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.runmode.2 - should be set to publish`
+* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
+* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
 
 ## Content Audit Testing {#content-audit-testing}
 
@@ -173,22 +227,4 @@ By drilling into any of the tests, more detailed page level scoring can be seen.
 Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
 
    ![](assets/page-level-scores.png)
-
-## Local Test Execution {#local-test-execution}
-
-As the test classes are JUnit tests, they can be run from mainstream Java IDEs like Eclipse, IntelliJ, NetBeans, and so on. 
-
-However, when running these tests necessarily, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients). 
-
-The system properties are as follows:
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 

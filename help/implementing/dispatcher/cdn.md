@@ -7,7 +7,7 @@ description: CDN in AEM as a Cloud Service
 
 AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
-The AEM managed CDN will satisfy most customer's performance and security requirements. Customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
+The AEM managed CDN will satisfy most customer's performance and security requirements. For the publish tier, customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
@@ -46,4 +46,6 @@ Configuration instructions:
 
 Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
 
-Note that there is potentially a small performance hit due to the extra hop, although hops from the customer CDN to Adobe's managed CDN are likely to be efficient.
+There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to Adobe's managed CDN are likely to be efficient.
+
+Note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.

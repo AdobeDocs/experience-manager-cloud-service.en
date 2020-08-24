@@ -680,7 +680,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
 
 1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
 1. Click **[!UICONTROL default]**. (Do not add a checkmark to the selection box to the left of "default".)
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **Edit]**.
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[Edit]**.
 1. On the Metadata Schema Editor page, click the **[!UICONTROL Advanced]** tab.
 1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Category]**.
 1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
@@ -714,7 +714,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
     * (Optional) On the right side of the page, under the Settings tab, in the Field Label text field, enter `YouTube Publishing`.
     * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you just created.
 
-    * Click **[!UICONTROL Field Label** to select the component.
+    * Click **[!UICONTROL Field Label]** to select the component.
     * On the right side of the page, under the Settings tab, paste the YouTube Publishing values (Field Label value and Map to property value) that you copied earlier, into their respective fields on the form. Paste the Choices value into the Default Value field.
 
 1. Add the copied YouTube Privacy values to the profile by doing the following:
@@ -1088,7 +1088,7 @@ See [Serving static (non-image) contents](https://docs.adobe.com/content/help/en
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load**. See [Obtaining a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtaining a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
 
    Now follow the onscreen instructions from the site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a .vtt filename extension.
 

@@ -41,7 +41,7 @@ Experience Manager allows for the following levels of processing.
 |---|---|---|
 |[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Large preview (web rendition - 1280 px) </li><li> Metadata and text extraction.</li></ul> |
 |[Custom configuration](#standard-config) | Configured by administrators via user interface. Provides more options for rendition generation by extending the default option. Extend the out-of-the-box option to provide different formats and renditions. | <ul><li>FPO rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
-|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom applications to invoke [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
+|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom applications to call [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -111,10 +111,10 @@ The [!DNL Asset Compute Service] supports a variety of use cases such as default
 
 It can transform image, video, document, and other file formats into different renditions including thumbnails, extracted text and metadata, and archives.
 
-Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] can invoke these custom applications from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
+Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] can call these custom applications from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
 
 * Use [!DNL Adobe Photoshop]'s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) and save the result as rendition.
-* Invoke third-party systems to update data, for example, a PIM system.
+* Call third-party systems to update data, for example, a PIM system.
 * Use [!DNL Photoshop] API to generate variety of renditions based on Photoshop template.
 * Use [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) to optimize the ingested assets and save those as renditions.
 
@@ -147,7 +147,7 @@ The custom applications are headless [Project Firefly](https://github.com/AdobeD
 
 To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that leverages the Photoshop API to edit the images.
 
-Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then invokes Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
+Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then calls Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 

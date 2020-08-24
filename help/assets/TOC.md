@@ -36,7 +36,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
 + Configure, administer and extend Assets {#admin}
-  + [APIs and reference material](developer-reference-material-apis.md)
+  + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
   + [About working with Image profiles and Video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
   + [Configure Smart Tags](smart-tags-configuration.md)
@@ -100,7 +100,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Linking URLs to your web application](dynamic-media/linking-urls-to-yourwebapplication.md)
   + [Using Rulesets to transform URLs](dynamic-media/using-rulesets-to-transform-urls.md)
   + [Publishing Dynamic Media assets](dynamic-media/publishing-dynamicmedia-assets.md)
-  + [Invalidating your CDN cached content](dynamic-media/invalidate-cdn-cached-content.md)
+  + [Invalidating the CDN cache by way of Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
   + [Working with Selectors](dynamic-media/working-with-selectors.md)
   + [DHTML Viewer End-of-Life FAQs](dynamic-media/dhtml-viewer-endoflifefaqs.md)
   + [Flash Viewers End-of-Life Notice](dynamic-media/flash-viewers-eol.md)
