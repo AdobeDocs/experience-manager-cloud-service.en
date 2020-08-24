@@ -72,11 +72,11 @@ The page content is rendered in the content frame. The content frame is complete
 
 The content frame is on the right-hand section of the window, under the toolbar.
 
-![chlimage_1-148](assets/chlimage_1-148.png)
+![Content frame](assets/ui-content-frame.png)
 
 ### Editor Frame {#editor-frame}
 
-The editor frame realises the editing features.
+The editor frame enables the editing features.
 
 The editor frame is a container (abstract) for all the page authoring elements. It lives on top of the content frame, and includes:
 
@@ -85,33 +85,39 @@ The editor frame is a container (abstract) for all the page authoring elements. 
 * All the overlays
 * Any other page authoring element; for example, the component toolbar
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![Editor frame](assets/ui-editor-frame.png)
 
 ### Side Panel {#side-panel}
 
-This contains two default tabs to allow you to select assets and components; they can be dragged from here and dropped onto the page.
+This contains three default tabs. The **Assets** and **Components** tabs allow you to select such elements and drag them from the panel and drop them onto the page. The **Content Tree** tab allows you to inspect the hierarchy of content on the page.
 
-The side panel is hidden by default. When selected it will either be shown at the left side, or will slide across to cover the entire window (when the window size is below a width of 1024px; as, for example, on a mobile device).
+The side panel is hidden by default. When selected it will either be shown at the left side, or will slide across to cover the entire window when the window size is below a width of 1024px; as, for example, on a mobile device.
 
-![chlimage_1-150](assets/chlimage_1-150.png)
+![Side panel](assets/ui-side-panel.png)
 
 ### Side Panel - Assets {#side-panel-assets}
 
 In the Assets tab you can select from the range of assets. You can also filter on a specific term, or select a group.
 
-![chlimage_1-151](assets/chlimage_1-151.png)
+![Assets tab](assets/ui-side-panel-assets.png)
 
 ### Side Panel - Asset Groups {#side-panel-asset-groups}
 
-In the Asset tab there is a drop down that you can use to select the specific asset groups.
+In the Assets tab there is a drop down that you can use to select the specific asset groups.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![Asset groups](assets/ui-side-panel-asset-groups.png)
 
 ### Side Panel - Components {#side-panel-components}
 
 In the Components tab you can select from the range of components. You can also filter on a specific term, or select a group.
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![Components tab](assets/ui-side-panel-components.png)
+
+### Side Panel - Content Tree {#side-panel-content-tree}
+
+In the Content Tree tab you can view the hierarchy of content on the page. Clicking an entry in the tab jumps to and selects the item on the page within the editor.
+
+![Content tree](assets/ui-side-panel-content-tree.png)
 
 ### Overlays {#overlays}
 
@@ -119,7 +125,7 @@ These overlay the content frame and are used by the [layers](#layer) to realize 
 
 The overlays live in the editor frame (with all other page authoring elements), though they actually overlay the appropriate components in the content frame.
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![Overlays](assets/ui-overlays.png)
 
 ### Layer {#layer}
 
@@ -130,7 +136,7 @@ A layer is an independent bundle of functionality that can be activated to:
 
 The layers provide sophisticated functionality for the entire page, as opposed to specific actions on an individual component.
 
-AEM comes with several layers already implemented for page authoring; including for example, edit, preview, annotate.
+AEM comes with several layers already implemented for page authoring; including for example, edit, preview, and annotate layers.
 
 >[!NOTE]
 >
@@ -142,18 +148,18 @@ The layer switcher allows you to choose the layer you want to use. When closed, 
 
 The layer switcher is available as a drop down from the toolbar (at the top of the window, within the editor frame).
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![Layer switcher](assets/ui-layer-switcher.png)
 
 ### Component Toolbar {#component-toolbar}
 
-Each instance of a component will reveal its toolbar when clicked (either once or with a slow double-click). The toolbar contains the specific actions (e.g. copy, paste, open-editor) that are available for the component instance (Editable) on the page.
+Each instance of a component will reveal its toolbar when clicked (either once or with a slow double-click). The toolbar contains the specific actions (e.g. copy, paste, open-editor) that are available for the component instance on the page.
 
 Depending on the space available, the component toolbars are positioned at the top-, or bottom-, right corner of the appropriate component.
 
-![chlimage_1-156](assets/chlimage_1-156.png)
+![Component toolbar](assets/ui-component-toolbar.png)
 
 ## Further Information {#further-information}
 
-For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).
+<!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 For further technical information see the [JS documentation set](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) for the touch-enabled page editor.
