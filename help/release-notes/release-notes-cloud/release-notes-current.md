@@ -19,14 +19,11 @@ The following section outlines the general Release Notes for Experience Manager 
   * Asynchronous download for large downloads so that users don't have to wait.
   * A new modular API for developer extensibility.
 
-* Do basic video transcoding using processing profiles.
+* Transcode your MP4 video files using processing profiles, without [!DNL Dynamic Media] license. For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video).
 
-* Create simple watermarks on images.
+* A simpler download experience for Brand Portal users that administrators can configure. See [download experience overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* A simpler download experience for Brand Portal users. Administrators can configure the download experience.
-
-* Native and high-fidelity PDF previews are available in Brand Portal.
-
+* Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -51,7 +48,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
 
 * Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
-
 
 ### Bug Fixes {#bug-fixes-cm}
 
