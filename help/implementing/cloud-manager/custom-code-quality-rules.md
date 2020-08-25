@@ -3,7 +3,7 @@ title: Custom Code Quality Rules - Cloud Services
 description: Custom Code Quality Rules - Cloud Services
 ---
 
-# Understanding Custom Code Quality Rules {#custom-code-quality-rules} 
+# Custom Code Quality Rules {#custom-code-quality-rules} 
 
 
 This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.

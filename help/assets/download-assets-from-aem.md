@@ -1,6 +1,6 @@
 ---
-title: Download assets from AEM
-description: Learn how to download assets from AEM and enable or disable the download functionality.
+title: Download assets from [!DNL Adobe Experience Manager Assets].
+description: Download assets from [!DNL Adobe Experience Manager Assets] and enable or disable the download functionality.
 contentOwner: AG
 ---
 
@@ -16,12 +16,10 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 To download assets, follow these steps:
 
-1. In the upper-left corner of Experience Manager, click the AEM logo and click **[!UICONTROL Navigation]**.
-1. Click **[!UICONTROL Assets]** > **[!UICONTROL Files]**. Navigate to a folder that contains assets you want to download.
-1. Select the folder or select one or more assets within the folder.
-1. On the toolbar, click **[!UICONTROL Download]**.
+1. In Experience Manager user interface, click **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Navigate to the assets you want to download. Select the folder or select one or more assets within the folder. On the toolbar, click **[!UICONTROL Download]**.
 
-   ![Available options when downloading assets from Experience Manager Assets](/help/assets/assets/asset-download1.png)
+   ![Available options when downloading assets from [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
    *Figure: Download dialog box options.*
 

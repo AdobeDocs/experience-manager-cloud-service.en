@@ -242,7 +242,7 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Click **[!UICONTROL Save**.
+1. Click **[!UICONTROL Save]**.
 
 ### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
