@@ -50,5 +50,5 @@ To process assets using a processing profile, add a profile to a folder. See [us
 
 >[!MORELIKETHIS]
 >
->* [Dynamic Media video documentation](/help/assets/video.md).
+>* [Dynamic Media video documentation](/help/assets/dynamic-media/video.md).
 >* [Know more about use, types, and configuration of processing profiles](/help/assets/asset-microservices-configure-and-use.md).
