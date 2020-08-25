@@ -42,7 +42,6 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Configure Smart Tags](smart-tags-configuration.md)
   + [Multilingual assets and asset translation](translate-assets.md)
   + [Search facets](search-facets.md)
-  + [Extend asset editor](extend-asset-editor.md)
   + [Assets HTTP API](mac-api-assets.md)
   + [Content Fragments Support in AEM Assets HTTP API](assets-api-content-fragments.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
