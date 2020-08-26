@@ -23,8 +23,8 @@ The `aio-cli-plugin-aem-cloud-service-migration` plugin consists of two main par
 
 * **User Interface** 
 
-  * `aio-cli` commands to execute one or more code refactoring tools (via chaining the tools to be executed sequentially)
-  * `config.yaml` which takes in the required input parameters
+  * `aio-cli` commands to execute one or more code refactoring tools (via chaining the tools to be executed sequentially).
+  * `config.yaml` which takes in the required input parameters.
 
 * **Underlying Code Refactoring Tool Suite**
 
@@ -36,7 +36,7 @@ The `aio-cli-plugin-aem-cloud-service-migration` plugin consists of two main par
 
 ## Availability {#availability}
 
-Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute for this plugin code that is open sourced in GitHub.
+Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute to this plugin code that is open sourced in GitHub.
 
 >[!NOTE]
 >Currently only the Dispatcher Converter is integrated with the plugin.
