@@ -335,8 +335,7 @@ No targets yet, but implements Adaptable and could be used as source in a custom
 
 **Asset** adapts to:
 
-| [Resource](
-  /org/apache/sling/api/resource/Resource.html) |Resource of the asset. |
+| [Resource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/Resource.html) |Resource of the asset. |
 |---|---|
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) |Node of the asset. |
 | ... |Everything that the asset's resource can be adapted to. |
