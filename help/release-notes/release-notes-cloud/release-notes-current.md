@@ -11,9 +11,11 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ### What is new in [!DNL Assets] {#what-is-new}
 
+* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
+
 * User interface to invalidate cache is now available in [!DNL Dynamic Media].
 
-* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
+* [!DNL Experience Manager] has improved the performance of metadata extraction for asset microservices. It increases the overall asset ingestion throughput.
 
 * A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
 
