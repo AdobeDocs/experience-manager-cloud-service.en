@@ -32,7 +32,7 @@ Asynchronous download service provides a framework for seamless download of larg
 
 Asynchronous downloads are triggered in either of the following case:
 
-* If there are more than 10 assets or more than 10 MB to be downloaded.
+* If there are more than 10 assets or more than 100 MB to be downloaded.
 * If the download takes more than 30 seconds to prepare.
 
 To download assets, follow these steps:
