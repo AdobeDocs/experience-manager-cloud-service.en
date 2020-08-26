@@ -1,6 +1,14 @@
 ---
 title: Style AEM CIF Core Components
-description: Style AEM CIF Core Components
+description: Learn how to style AEM CIF Core Components. The tutorial covers how Client-Side Libraries or clientlibs are used to deploy and manage CSS and Javascript for an Adobe Experience Manager (AEM) Commerce implementation. This tutorial will also cover how the ui.frontend module and a webpack project are integrated into the end-to-end build process.
+sub-product: commerce
+topics: front-end-development
+version: cloud-service
+doc-type: tutorial
+activity: develop
+audience: developer
+kt: 3456
+thumbnail: 3456-style-cif.jpg
 ---
 
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
