@@ -9,6 +9,8 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
+### What is new in [!DNL Assets] {#what-is-new}
+
 * User interface to invalidate cache is now available in [!DNL Dynamic Media].
 
 * On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
@@ -24,6 +26,19 @@ The following section outlines the general Release Notes for Experience Manager 
 * A simpler download experience for Brand Portal users that administrators can configure. See [download experience overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
 * Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+
+* Enhanced accessibility support is added to user interface controls, navigation, browse, and search experience in [!DNL Assets].
+
+  * If you press the Escape key after selecting [!UICONTROL Add Rendition] option, the focus returns to the toolbar. <!-- via CQ-4293594-->
+  * Keyboard focus works as expected when using the Email combo box. <!-- via CQ-4286215 -->
+  * The accordions elements in search filters section are interpreted as standard expandable accordions. <!-- via CQ-4273103 -->
+  * When applying a tag to an asset, the dialog box displays tags as tree elements. ARIA attributes are appropriately applied to the tree elements to make them accessible now. <!-- via CQ-4272964 -->
+
+<!--
+### Bugs fixed in [!DNL Assets] {#bugs-fixed}
+
+List awaited.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
