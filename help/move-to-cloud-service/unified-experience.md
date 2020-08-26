@@ -9,17 +9,19 @@ The Unified Experience for Code Refactoring tools unifies the experience for exe
 
 This tool reduces the complexity of using code refactoring tools, with each having different execution requirements in terms of installation, setup and execution.
 
+![image](/help/move-to-cloud-service/assets/unified-1.png)
+
 ## Benefits {#benefits}
 
-The Unified Experience for Code Refactoring Tools invokes and executes all code refactoring tools that work on the source code from the same place.
+The Unified Experience for Code Refactoring tools invoke and execute all code refactoring tools that work on the source code from the same place.
 
-The Unified Experience for Code Refactoring Tools along with the companion repositories allows to:
+These tools along with the companion repositories allows:
 
-* Unify all the tools that work on source code migration into one `node.js` application exposed as `aio-cli plugin` to provide a consistent user experience to the user.
+* Unifying all the tools that work on source code migration into one `node.js` application exposed as `aio-cli plugin` to provide a consistent user experience to the user.
 
-* Provision to perform the overall migration via a single command, while also providing flexibility to execute one particular tool as per requirement.
+* Provisioning to perform the overall migration via a single command, while also providing flexibility to execute one particular tool as per requirement.
 
-* Simplify future addition of new tools such as adding new tool to the plugin should simply require addition of a new command for developer, and a simple plugin update for user, so the experience remains consistent with more value addition.
+* Simplifying future addition of new tools such as adding new tool to the plugin should simply require addition of a new command for developer, and a simple plugin update for user, so the experience remains consistent with more value addition.
 
 ## Understanding the Plugin {#understanding-plugin}
 
