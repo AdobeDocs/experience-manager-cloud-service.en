@@ -9,7 +9,7 @@ The Unified Experience for Code Refactoring tools unifies the experience for exe
 
 This tool reduces the complexity of using code refactoring tools, with each having different execution requirements in terms of installation, setup and execution.
 
-![image](/help/move-to-cloud-service/assets/unified-a.png)
+![image](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## Benefits {#benefits}
 
