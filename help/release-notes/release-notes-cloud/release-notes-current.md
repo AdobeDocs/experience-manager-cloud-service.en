@@ -25,6 +25,8 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Transcode your MP4 video files using processing profiles, without [!DNL Dynamic Media] license. For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video).
 
+* Use processing profile to generate custom metadata using Compute Service. See [Custom metadata using processing profile](/help/assets/manage-metadata.md#metadata-compute-service)
+
 * A simpler download experience for Brand Portal users that administrators can configure. See [download experience overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
 * Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
@@ -36,11 +38,10 @@ The following section outlines the general Release Notes for Experience Manager 
   * The accordions elements in search filters section are interpreted as standard expandable accordions. <!-- via CQ-4273103 -->
   * When applying a tag to an asset, the dialog box displays tags as tree elements. ARIA attributes are appropriately applied to the tree elements to make them accessible now. <!-- via CQ-4272964 -->
 
-<!--
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed}
 
-List awaited.
--->
+* Relate and unrelate option does not respond when clicked for the first time. (CQ-4299022)
+* When downloading an asset, if you select the option to receive it via email, the email is not sent. (CQ-4299146)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
