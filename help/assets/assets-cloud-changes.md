@@ -30,7 +30,7 @@ Asset upload has been optimized for efficiency by enabling better scaling of ass
 
 * Experience Manager uses direct binary access principle for upload and download and asset microservices for asset processing. See [overview of asset ingestion](/help/assets/asset-microservices-overview.md).
   * Asset upload [with direct binary access](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
-  * For technical details, see  of [direct binary upload protocol and APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload).
+  * For technical details, see  of [direct binary upload protocol and APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
 * The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of AEM is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, text extraction for indexing).
   * See [configuring and using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used.

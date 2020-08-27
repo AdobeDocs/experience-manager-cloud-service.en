@@ -44,7 +44,7 @@ Further rich text editor options include:
 
 Click minimize to close the full-screen mode.
 
->[!Tip]
+>[!TIP]
 >
 >Copying nested lists from [!DNL Microsoft Word] into the RTE can give inconsistent results. Instead, paste as text and do manual adjustment.
 

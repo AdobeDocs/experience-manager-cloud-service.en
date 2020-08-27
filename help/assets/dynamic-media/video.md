@@ -680,7 +680,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
 
 1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
 1. Click **[!UICONTROL default]**. (Do not add a checkmark to the selection box to the left of "default".)
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **Edit]**.
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[Edit]**.
 1. On the Metadata Schema Editor page, click the **[!UICONTROL Advanced]** tab.
 1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Category]**.
 1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
@@ -714,7 +714,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
     * (Optional) On the right side of the page, under the Settings tab, in the Field Label text field, enter `YouTube Publishing`.
     * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you just created.
 
-    * Click **[!UICONTROL Field Label** to select the component.
+    * Click **[!UICONTROL Field Label]** to select the component.
     * On the right side of the page, under the Settings tab, paste the YouTube Publishing values (Field Label value and Map to property value) that you copied earlier, into their respective fields on the form. Paste the Choices value into the Default Value field.
 
 1. Add the copied YouTube Privacy values to the profile by doing the following:
@@ -982,10 +982,10 @@ To view video reports:
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
-    * Near the upper-right corner, tap the **[UICONTROL Refresh Video Report]** icon.
+    * Near the upper-right corner, tap the **[!UICONTROL Refresh Video Report]** icon.
       You only need to use Refresh if the end date of the report is the current day. This ensures that you see the video tracking that has occurred since the last time you ran the report.
 
-    * Near the upper-right corner, tap the **[UICONTROL Date Picker]** icon.
+    * Near the upper-right corner, tap the **[!UICONTROL Date Picker]** icon.
       Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report]**.
 
    The Top Metrics group box identifies various aggregate measurements for all *published *videos across your site.
@@ -1021,7 +1021,7 @@ To view Video Reports based on a video viewer that you created using the Scene7 
 
    The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   The correct value for the config2 parameter is found in both the **[!UICONTROL Embed Code]** and in the copy **[UICONTROL URL]** function. In the URL from the copy **[UICONTROL URL]** command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
+   The correct value for the config2 parameter is found in both the **[!UICONTROL Embed Code]** and in the copy **[!UICONTROL URL]** function. In the URL from the copy **[!UICONTROL URL]** command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
 1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 

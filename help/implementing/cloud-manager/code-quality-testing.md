@@ -9,14 +9,26 @@ The Code Quality Testing evaluates the quality of your application code. It is t
 
 Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about different types of pipelines.
 
-## Understanding Custom Code Quality Rules {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 In Code Quality Testing, the source code is scanned to ensure that it meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
 >You can download the complete list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-The results of this step is delivered as *Rating*. The following table summarizes the rating for testing criteria:
+**Three-tier Gate**
+
+There is a three-tier structure in this code quality testing step for the identified issues:
+
+* **Critical**: These are issues identified by the gate which cause an immediate failure of the pipeline.
+
+* **Important**: These are issues identified by the gate which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.
+
+* **Info**: These are issues identified by the gate which are provided purely for informational purposes and have no impact on the pipeline execution
+
+The results of this step is delivered as *Ratings*. 
+
+The following table summarizes the ratings and failure thresholds for each of the Critical, Important and Information categories:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
