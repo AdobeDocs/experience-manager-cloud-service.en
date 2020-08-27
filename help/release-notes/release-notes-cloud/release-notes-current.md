@@ -13,7 +13,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Ability to restore pages and sub-pages (page trees) to an earlier version. 
 
-* The SPA Editor now supports AEM Launches.
+* Ability to create Launches in AEM SPA Editor.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -26,6 +26,7 @@ The following section outlines the general Release Notes for Experience Manager 
 * A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
 
   * Asynchronous download for large downloads so that users don't have to wait.
+  
   * A new modular API for developer extensibility.
 
 * [!DNL Experience Manager] has improved the performance of metadata extraction for asset microservices. It increases the overall asset ingestion throughput.
@@ -76,6 +77,8 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
 
+* Ability to perform Experience Checks on pages, powered by Google Lighthouse. As part of Cloud Manager pipeline, up to 25 pages can be checked and validated against experience KPIs, and scores are displayed in Cloud Manager UI.
+
 ### Bug Fixes {#bug-fixes-cm}
 
 * Some unnecessary and undesired SonarQube plugins were being executed as part of the Code Quality scanning.
@@ -122,7 +125,7 @@ Follow this section to learn about what is new and the updates for Content Trans
 
 Follow this section to learn about what is new and the updates for Code Refactoring Tools.
 
-### What's New {#what-is-new-ctt}
+### What's New {#what-is-new-refactoring}
 
 * AIO-CLI plugin released to unify code refactoring tools to enable developers to invoke and execute code refactoring tools from one place. Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
 
