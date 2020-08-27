@@ -37,7 +37,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* User interface to invalidate cache is now available in [!DNL Dynamic Media].
+* You can now invalidate the CDN (Content Delivery Network) cache directly from [!DNL Dynamic Media] in AEM as a Cloud Service (as opposed to using [!DNL Dynamic Media Classic]) to ensure the latest assets are served within minutes instead of hours. See [Invalidating the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) 
 
 * Enhanced accessibility support is added to user interface controls, navigation, browse, and search experience in [!DNL Assets].
 
