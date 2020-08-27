@@ -28,7 +28,7 @@ This document:
 
 >[!TIP]
 >
->[The WKND tutorial](/help/implementing/developing/introduction/getting-started.md) goes into depth into how to use Page Templates by implementing an example and is quite useful for understanding how to set up a template in a new project
+>[The WKND tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) goes into depth into how to use Page Templates by implementing an example and is quite useful for understanding how to set up a template in a new project
 
 ## Creating a New Template {#creating-a-new-template}
 
@@ -203,7 +203,7 @@ To create a new folder, you can either do this:
 
 Once your template folders are created (either via CRXDE or with the Configuration Browser), ACLs must defined for the appropriate groups for the template folders to ensure proper security.
 
-The template folders for the [WKND tutorial](/help/implementing/developing/introduction/getting-started.md) can be used as an example.
+The template folders for the [WKND tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) can be used as an example.
 
 #### The template-authors Group {#the-template-authors-group}
 
@@ -290,7 +290,7 @@ When creating a new template you need to specify a template type:
 
 * AEM provides a small selection of out-of-the-box template types such as HTML5 Page and Adaptive Form Page.
 
-  * Additional examples are provided as a part of the [WKND tutorial.](/help/implementing/developing/introduction/getting-started.md)
+  * Additional examples are provided as a part of the [WKND tutorial.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 * Template types are typically defined by developers.
 
