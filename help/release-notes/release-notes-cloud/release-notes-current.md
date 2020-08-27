@@ -19,19 +19,16 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ### What is new in [!DNL Assets] {#what-is-new}
 
+* Video transcoding is now supported with asset microservices, with a new Video section in the [!UICONTROL Processing Profiles] screen supporting configuration of video bitrate and dimensions (output format is MP4 with H.264 codec). For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). For more transcoding options and video delivery [!DNL Dynamic Media] add-on can be used.
+
 * On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
-
-* User interface to invalidate cache is now available in [!DNL Dynamic Media].
-
-* [!DNL Experience Manager] has improved the performance of metadata extraction for asset microservices. It increases the overall asset ingestion throughput.
 
 * A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
 
-  * Quick downloads of small assets.
   * Asynchronous download for large downloads so that users don't have to wait.
   * A new modular API for developer extensibility.
 
-* Transcode your MP4 video files using processing profiles, without [!DNL Dynamic Media] license. For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video).
+* [!DNL Experience Manager] has improved the performance of metadata extraction for asset microservices. It increases the overall asset ingestion throughput.
 
 * Use processing profile to generate custom metadata using Compute Service. See [Custom metadata using processing profile](/help/assets/manage-metadata.md#metadata-compute-service)
 
@@ -39,12 +36,16 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
+* User interface to invalidate cache is now available in [!DNL Dynamic Media].
+
 * Enhanced accessibility support is added to user interface controls, navigation, browse, and search experience in [!DNL Assets].
 
   * If you press the Escape key after selecting [!UICONTROL Add Rendition] option, the focus returns to the toolbar. <!-- via CQ-4293594-->
   * Keyboard focus works as expected when using the Email combo box. <!-- via CQ-4286215 -->
   * The accordions elements in search filters section are interpreted as standard expandable accordions. <!-- via CQ-4273103 -->
   * When applying a tag to an asset, the dialog box displays tags as tree elements. ARIA attributes are appropriately applied to the tree elements to make them accessible now. <!-- via CQ-4272964 -->
+  
+* [!DNL AEM Desktop app] 2.0.3 release is now available, improving compatibility with [!DNL AEM] 6.5.5 [!DNL Service Pack] and updating client OS compatibility list (removing [!DNL Windows] 7 and [!DNL MacOS] versions before 10.14).
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed}
 
