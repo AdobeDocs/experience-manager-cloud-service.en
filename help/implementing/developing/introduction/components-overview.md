@@ -1,9 +1,9 @@
 ---
-title: Components
+title: Components Overview
 description: Components are modular units which realize specific functionality to present your content on your website
 ---
 
-# Components {#components-overview}
+# Components Overview {#components-overview}
 
 This page provides an overview of Adobe Experience Manager (AEM) components such as those [used for page authoring](/help/sites-cloud/authoring/fundamentals/components.md).
 
