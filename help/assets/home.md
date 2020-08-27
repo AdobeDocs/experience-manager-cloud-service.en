@@ -23,7 +23,7 @@ Follow are the self-help resources for Experience Manager Assets as a Cloud Serv
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Onboarding](/help/onboarding/home.md)|Get started with Experience Manager as a Cloud Service &mdash; get access and protect important data.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
-|[Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service.|
+|[Moving to Experience Manager as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Experience Manager as a Cloud Service.|
 |[Implementation User Guide](/help/implementing/home.md)|Customize, develop, and deploy Experience Manager as a Cloud Service.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.|

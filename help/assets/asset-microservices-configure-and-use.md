@@ -1,26 +1,16 @@
 ---
-title: Configure and use asset microservices for asset processing
-description: Learn how to configure and use the cloud-native asset microservices to process assets at scale.
+title: Configure and use asset microservices for asset processing.
+description: Configure and use the cloud-native asset microservices to process assets at scale.
 contentOwner: AG
 ---
 
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+Asset microservices provides for scalable and resilient processing of assets using cloud-native applications (also called workers). Adobe manages the services for optimal handling of different asset types and processing options.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like ImageMagick.
 
-Asset microservices provide for scalable and resilient processing of assets using cloud services. Adobe manages the services for optimal handling of different asset types and processing options.
-
-Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and let an administrator to add more specific asset processing configuration. Administrators can create and maintain the configurations of post-processing workflows, including optional customization. Customizing workflows allows for extensibility and full customization.
-
-Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like ImageMagick.
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**. Experience Manager provides a basic default set up and let administrators add more specific asset processing configuration. Administrators create, maintain, and modify the configurations of post-processing workflows, including optional customization. Customizing the workflows lets developers extend the default offering.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -86,7 +76,7 @@ To create standard processing profile, follow these steps:
    * Quality in percent of each JPEG rendition.
    * Included and excluded MIME types to define the applicability of a profile.
 
-   ![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-image.png)
 
 1. Click **[!UICONTROL Save]**.
 
@@ -151,9 +141,7 @@ Asset Compute Service integration allows Experience Manager to pass these parame
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Figure: Use [!UICONTROL Service Parameters] field to pass added information to predefined parameters build into the custom application.*
-
-When campaign images are uploaded to the folder on which this processing profile is applied, the images are updated with `Jumanji` text in `Arial-BoldMT` font.
+*Figure: Use [!UICONTROL Service Parameters] field to pass added information to predefined parameters build into the custom application. In this example, when campaign images are uploaded, the images are updated with `Jumanji` text in `Arial-BoldMT` font.*
 
 ## Use processing profiles to process assets {#use-profiles}
 
@@ -162,19 +150,20 @@ Create and apply the additional, custom processing profiles to specific folders 
 Apply processing profiles to folders using one of the following methods:
 
 * Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. It opens a content browser that allow you to navigate to specific folders, select them and confirm the application of the profile.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. To save the changes, click **[!UICONTROL Save & Close]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. To save the changes, click **[!UICONTROL Save & Close]**.
+  ![Apply processing profile to a folder from the Asset Properties tab](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->Only one processing profile can be applied to a specific folder. To generate more renditions, add more rendition definitions to the existing processing profile.
+>Only one processing profile can be applied to a folder. To generate more renditions, add more rendition definitions to the existing processing profile.
 
-After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of it's sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile. If you apply multiple profiles to a folder, the uploaded or updated assets are processed using each of these profiles.
+After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of it's sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile.
 
 >[!NOTE]
 >
 >A processing profile applied to a folder works for the entire tree, but can be over-ridden with another profile applied to a sub-folder. When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.
 
-All the generated renditions are available in the [!UICONTROL Renditions] view in the left rail. Open asset preview and open the left rail to access the **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the MIME type inclusion rules, should be visible and accessible.
+To verify that assets are processed, preview the generated renditions in the [!UICONTROL Renditions] view in the left rail. Open asset preview and open the left rail to access the **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the MIME type inclusion rules, should be visible and accessible.
 
 ![additional-renditions](assets/renditions-additional-renditions.png)
 
@@ -231,3 +220,9 @@ For details about which standard workflow step can be used in the post-processin
 >* [Introduction to Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
 >* [Understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 >* [How to create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
+>* [Supported MIME types for various use cases](/help/assets/file-format-support.md).
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
