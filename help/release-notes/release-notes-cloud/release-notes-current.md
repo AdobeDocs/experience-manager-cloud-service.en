@@ -9,7 +9,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new}
+### What is new in [!DNL Sites] {#what-is-new-sites}
 
 * Ability to restore pages and sub-pages (page trees) to an earlier version. 
 
@@ -17,7 +17,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
 * Video transcoding is now supported with asset microservices, with a new Video section in the [!UICONTROL Processing Profiles] screen supporting configuration of video bitrate and dimensions (output format is MP4 with H.264 codec). For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). For more transcoding options and video delivery [!DNL Dynamic Media] add-on can be used.
 
@@ -117,3 +117,15 @@ Follow this section to learn about what is new and the updates for Content Trans
 * Additional timeouts added for the tool to complete actions.
 
 * Earlier version UI sometimes displayed successful extraction even though log showed errors.
+
+## Code Refactoring Tools {#code-refactoring-tools}
+
+Follow this section to learn about what is new and the updates for Code Refactoring Tools.
+
+### What's New {#what-is-new-ctt}
+
+* AIO-CLI plugin released to unify code refactoring tools to enable developers to invoke and execute code refactoring tools from one place. Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* AEM Dispatcher Converter extended to support conversions of On-premise and Adobe Managed Services Dispatcher configurations into AEM as a Cloud Service compatible Dispatcher configurations. Refer to [Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) for more details.
+
+* AEM Dispatcher Converter re-written in ` node.js ` and integrated with AIO-CLI plugin.
