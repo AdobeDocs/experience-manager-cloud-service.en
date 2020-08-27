@@ -37,8 +37,11 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Templates](developing/introduction/templates.md)
   + [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
   + [Style System](/help/sites-cloud/authoring/features/style-system.md)
-  + [JSON Exporter for Content Services](/help/implementing/developing/introduction/json-exporter.md)
-  + [Enabling JSON Export for a Component](/help/implementing/developing/introduction/json-exporter-components.md)
+  + [JSON Exporter for Content Services](developing/introduction/json-exporter.md)
+  + [Enabling JSON Export for a Component](developing/introduction/json-exporter-components.md)
+  + [Image Editor](developing/introduction/image-editor.md)
+  + [Decoration Tags](developing/introduction/decoration-tag.md)
+  + [Using Hide Conditions](developing/introduction/hide-conditions.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
