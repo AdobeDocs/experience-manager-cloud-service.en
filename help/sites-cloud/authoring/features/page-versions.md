@@ -217,7 +217,7 @@ Timewarp makes a best effort to reproduce a page at a selected point in time. Ho
 * **Timewarp works based on published pages** - Timewarp will only work fully if you have previously published the page. If not, timewarp will show the current page on the author environment.
 * **Timewarp uses page versions** - If you navigate to a page that has been removed/deleted from the repository it will be rendered properly if old versions of the page are still available in the repository.
 * **Removed versions affect Timewarp** - If versions are removed from the repository then Timewarp cannot show the correct view.  
-* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](#reverting-to-a-page-version).
+* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](#revert-to-a-version).
 * **Timewarp is only based on page content** - If elements (such as code, css, assets/images, etc) for rendering the website have changed, the view will differ from what it originally was, as those items are not versioned in the repository.
 
 >[!CAUTION]
