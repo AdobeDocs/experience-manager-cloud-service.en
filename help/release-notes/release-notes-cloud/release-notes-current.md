@@ -11,7 +11,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* Ability to restore pages and sub-pages (page trees) to an earlier version. 
+* Ability to [restore pages and sub-pages (page trees) to an earlier version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions). 
 
 * Ability to create Launches in AEM SPA Editor.
 
