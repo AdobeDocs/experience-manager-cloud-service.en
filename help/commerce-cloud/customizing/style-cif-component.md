@@ -39,7 +39,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
 1. Run the following git command to clone the project:
 
-    ```terminal
+    ```shell
     $ git clone git@github.com:adobe/aem-cif-guides-venia.git
     ```
 
@@ -440,7 +440,7 @@ Return to the IDE and the generated project.
     >[!NOTE]
     >There are additional [IDE Setup and Tools](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) that can sync project files directly to a local AEM instance without having to perform a full Maven build.
 
-### View Updated Product Teaser {#view-updated-product-teaser}
+## View Updated Product Teaser {#view-updated-product-teaser}
 
 After the code for the project has been deployed to AEM, we should now be able to see the changes to the Product Teaser.
 
@@ -452,7 +452,7 @@ After the code for the project has been deployed to AEM, we should now be able t
 
     ![Multiple Product Teasers](../assets/style-cif-component/multiple-teasers-final.png)
 
-### Troubleshooting {#troubleshooting}
+## Troubleshooting {#troubleshooting}
 
 You can verify in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) that the updated CSS file has been deployed: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
@@ -460,11 +460,11 @@ When deploying new CSS and/or JavaScript files it is also important to ensure th
 
 AEM also attempts to cache client libraries for performance. Occasionally, following a code deployment the older files are served. You can manually invalidate AEM's client library cache using the [Rebuild Client Libraries tool](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Invalidate Caches is the preferred method if you suspect AEM has cached an old version of a client library. Rebuild Libraries is inefficient and time consuming.*
 
-### Congratulations {#congratulations}
+## Congratulations {#congratulations}
 
 You just styled your first AEM CIF Core Component and you used a webpack dev server!
 
-### Bonus Challenge {#bonus-challenge}
+## Bonus Challenge {#bonus-challenge}
 
 Use the [AEM Style system](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html) to create two styles that can be toggled on/off by a content author. [Developing with the Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) includes detailed steps and information on how to accomplish this.
 
@@ -473,12 +473,8 @@ Use the [AEM Style system](https://docs.adobe.com/content/help/en/experience-man
 ## Additional Resources {#additional-resources}
 
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-
 * [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
-
 * [Set up a Local AEM Development Environment](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-
 * [Client-Side Libraries](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
 * [Getting Started with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-
 * [Developing with the Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
