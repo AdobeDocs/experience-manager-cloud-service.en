@@ -1,11 +1,11 @@
 ---
-title: Release Notes for 2020.8.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.8.0.
+title: Release Notes for 2020.9.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.9.0.
 ---
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.8.0.
+The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.9.0.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -65,7 +65,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ### Release Date {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is st 06, 2020.
 
 ### What's New {#what-is-new-cloud-manager}
 
