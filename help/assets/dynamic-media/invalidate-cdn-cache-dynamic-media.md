@@ -19,7 +19,9 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
 
 1. In AEM as a Cloud Service, tap **[!UICONTROL Tools > Assets > CDN Invalidation Template.]**
 
+<!--
     ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
+-->
 
 1. On the **[!UICONTROL CDN Invalidation Template]** page, do one of the following options based on your scenario:
 
