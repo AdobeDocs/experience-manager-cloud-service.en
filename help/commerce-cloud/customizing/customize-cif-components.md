@@ -484,3 +484,4 @@ Review the functionality of the **New** badge that has already be implemented in
 * [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 * [Customizing AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 * [Customizing Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
+* [Getting Started with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
