@@ -99,7 +99,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Download and share assets {#download-and-share-assets}
 
-Users can download some assets and share these outside of Experience Manager. For more information, see [how to search assets](/help/assets/search-assets.md), [how to download assets](/help/assets/download-assets-from-aem.md), and [how to download collections](manage-collections.md#download-a-collection)
+Users can download the required assets and share these outside of [!DNL Experience Manager]. For more information, see [how to search assets](/help/assets/search-assets.md), [how to download assets](/help/assets/download-assets-from-aem.md), and [how to download collections](manage-collections.md#download-a-collection)
 
 ## Share assets with creative professionals {#share-with-creatives}
 

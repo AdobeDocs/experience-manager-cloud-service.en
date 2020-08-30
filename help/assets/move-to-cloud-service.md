@@ -1,6 +1,6 @@
 ---
-title: Migrate to Cloud Service from Adobe Experience Manager 6.x
-description: Migrate to Cloud Service from Adobe Experience Manager 6.x
+title: Migrate to Experience Manager as a Cloud Service from Adobe Experience Manager 6.x.
+description: Migrate to Experience Manager as a Cloud Service from Adobe Experience Manager 6.x.
 contentOwner: AG
 ---
 
