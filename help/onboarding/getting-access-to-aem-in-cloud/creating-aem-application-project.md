@@ -311,9 +311,9 @@ And finally reference the server id inside the `pom.xml` file:
 
 ### Deploying Sources {#deploying-sources}
 
- It is a good practice to deploy the Java sources alongside with the binary to a Maven repository. 
+It is a good practice to deploy the Java sources alongside with the binary to a Maven repository. 
  
- Configure the maven-source-plugin in your project:
+Configure the maven-source-plugin in your project:
 
  ```xml
          <plugin>
@@ -330,11 +330,11 @@ And finally reference the server id inside the `pom.xml` file:
          </plugin>
  ```
 
- ### Deploying Project Sources {#deploying-project-sources}
+### Deploying Project Sources {#deploying-project-sources}
 
- It is a good practice to deploy the whole project source alongside with the binary to a Maven repository - this allows as to rebuild the exact artifact. 
+It is a good practice to deploy the whole project source alongside with the binary to a Maven repository - this allows as to rebuild the exact artifact. 
  
- Configure the maven-assembly-plugin in your project:
+Configure the maven-assembly-plugin in your project:
 
  ```xml
          <plugin>
