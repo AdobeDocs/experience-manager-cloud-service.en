@@ -214,6 +214,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
     </body>
     </html>
     <!--cq{"decorated":false,"type":"wknd-spa-react/components/page","path":"/content/wknd-spa-react/us/en/home/jcr:content","selectors":null,"servlet":"Script /apps/spa-project-core/components/page/page.html","totalTime":39,"selfTime":33}-->
+
    ```
 
 
