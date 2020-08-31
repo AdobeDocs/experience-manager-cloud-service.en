@@ -7,7 +7,11 @@ description: This document describes the general, framework-independent contract
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill.
 
+## Introduction {#introdcution}
+
 This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) in order to implement editable SPA components within AEM.
+
+To enable the author to use the AEM Page Editor to edit the data exposed by an Single Page Application framework, a project must be able to interpret the structure of the model representing the semantic of the data stored for an application within the AEM repository. To achieve this goal, two framework-agnostic libraries are provided: the `PageModelManager` and the `ComponentMapping`.
 
 >[!NOTE]
 >
@@ -19,9 +23,7 @@ This document describes the general contract that any SPA framework should fulfi
 >
 >Although the SPA capabilities of AEM are framework-independent, currently only the React and Angular frameworks are is supported.
 
-To enable the author to use the AEM Page Editor to edit the data exposed by an Single Page Application framework, a project must be able to interpret the structure of the model representing the semantic of the data stored for an application within the AEM repository. To achieve this goal, two framework-agnostic libraries are provided: the `PageModelManager` and the `ComponentMapping`.
-
-### PageModelManager {#pagemodelmanager}
+## PageModelManager {#pagemodelmanager}
 
 The `PageModelManager` library is provided as an NPM package to be used by an SPA project. It accompanies the SPA and serves as a data model manager.
 
