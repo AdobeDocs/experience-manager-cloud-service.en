@@ -158,7 +158,7 @@ Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK
 
 ### Using Multiple Selectors {#multiple-selectors}
 
-Additional custom selectors can be defined and used as part of an SPA developed for the AEM SPA SDK. However this support requires that the `model` selector be the first selector and the extension be `.json` as [required by the JSON Exporter.](/help/implementing/developing/introduction/json-exporter.md#multiple-selectors)
+Additional custom selectors can be defined and used as part of an SPA developed for the AEM SPA SDK. However this support requires that the `model` selector be the first selector and the extension be `.json` as [required by the JSON Exporter.](json-exporter.md#multiple-selectors)
 
 ### Text Editor Requirements {#text-editor-requirements}
 
