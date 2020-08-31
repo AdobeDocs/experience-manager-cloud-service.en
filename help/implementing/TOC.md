@@ -49,7 +49,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Using Hide Conditions](developing/components/hide-conditions.md)
 + Headless Experience Management {#headless}
   + [Headless and Hybrid with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-  + [Enabling JSON Export for a Component](developing/introduction/json-exporter-components.md)
+  + [Enabling JSON Export for a Component](developing/components/enabling-json-exporter.md)
   + Single Page Applications {#spa}
     + [SPA Introduction and Walkthrough](developing/spa/introduction.md)
     + [SPA WKND Tutorial](developing/spa/wknd-tutorial.md)
