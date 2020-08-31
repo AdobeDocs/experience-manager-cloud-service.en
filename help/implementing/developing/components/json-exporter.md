@@ -9,7 +9,7 @@ AEM Content Services are designed to generalize the description and delivery of 
 
 They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client. These channels can include:
 
-* [Single Page Applications](spa-walkthrough.md)
+* [Single Page Applications](introduction.md)
 * Native Mobile Applications
 * Other channels and touch-points external to AEM
 
@@ -68,7 +68,7 @@ See also:
 * Sling Models:
   * [Sling Models - Associating a model class with a resource type since 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM with JSON:
-  * [Enabling JSON Export for a Component](eabling-json-exporter.md)
+  * [Enabling JSON Export for a Component](enabling-json-exporter.md)
 
 ## Related Documentation {#related-documentation}
 
