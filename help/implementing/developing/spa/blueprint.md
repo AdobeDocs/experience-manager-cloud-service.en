@@ -136,7 +136,7 @@ The container dynamically gets the child components from the store of the [`Comp
 
 ### Page {#page}
 
-The `Page` component extends the `Container` component. A container is a component meant to contain and render child components including child pages. To do so, the container iterates over the `:itemsOrder`, `:items`, and `:children` properties of its model. The `Page` component dynamically gets the child components from the store of the [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) library. The `Page` is responsible for instantiating child components.
+The `Page` component extends the `Container` component. A container is a component meant to contain and render child components including child pages. To do so, the container iterates over the `:itemsOrder`, `:items`, and `:children` properties of its model. The `Page` component dynamically gets the child components from the store of the [`ComponentMapping`](#componentmapping) library. The `Page` is responsible for instantiating child components.
 
 ### Responsive Grid {#responsive-grid}
 
