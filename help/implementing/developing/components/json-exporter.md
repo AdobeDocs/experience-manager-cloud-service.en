@@ -53,11 +53,11 @@ Your page can contain either a single content fragment or multiple components of
 
   >[!NOTE]
   >
-  >You can [adapt your own components](/help/implementing/developing/introduction/json-exporter-components.md) to access and use this data.
+  >You can [adapt your own components](enabling-json-exporter.md) to access and use this data.
 
   >[!NOTE]
   >
-  >Although not a standard implementation, [multiple selectors are supported,](json-exporter-components.md#multiple-selectors) but `model` must be the first.
+  >Although not a standard implementation, [multiple selectors are supported,](enabling-json-exporter.md#multiple-selectors) but `model` must be the first.
 
 ### Further Information {#further-information}
 
@@ -68,7 +68,7 @@ See also:
 * Sling Models:
   * [Sling Models - Associating a model class with a resource type since 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM with JSON:
-  * [Enabling JSON Export for a Component](/help/implementing/developing/introduction/json-exporter-components.md)
+  * [Enabling JSON Export for a Component](eabling-json-exporter.md)
 
 ## Related Documentation {#related-documentation}
 
