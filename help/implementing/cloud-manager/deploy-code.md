@@ -7,7 +7,7 @@ description: Deploy your Code - Cloud Services
 
 ## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
 
-Once you have configured your **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+Once you have configured your Production Pipeline (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Click **Deploy** from the Cloud Manager to start the deployment process.
 
@@ -36,7 +36,7 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
     * Validation: This step ensures that the pipeline is configured to use the currently available resources, for example, that the configured branch exists, the environments are available.
     * Build & Unit Testing: This step runs a containerized build process. See [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) for details on the build environment.
-    * Code Scanning: This step evaluates the quality of your application code. See [Code Quality Testing](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) for details on the testing process.
+    * Code Scanning: This step evaluates the quality of your application code. See [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) for details on the testing process.
     * Build Images: This step has a log file from the process used to build images. This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configuration.
     * Deploy to Stage
 
@@ -45,13 +45,13 @@ Once you have configured your **Pipeline** (repository, environment, and testing
    The **Stage testing**, involves the following steps:
 
     * Product Functional Testing: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. 
-       Refer to [Product Functional Testing](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) for more details.
+       Refer to [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
 
    * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default.  
-      Refer to [Custom Functional Testing](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) for more details.
+      Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
    * Content Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, a content audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
-      Refer to [Understanding Content Audit results](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
+      Refer to [Understanding Content Audit results](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
 
        ![](assets/testing-tab.png)
 
@@ -73,7 +73,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
    >
    >This feature is expected to be primarily used by 1-1-1 customers.
 
-1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependences determining the deployment order.
+1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependencies determining the deployment order.
 
    To learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content, please refer to How to Work with Packages.
 
@@ -85,7 +85,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
    1. Current configs are backed up and copied to a temporary location
    1. All configs are deleted except the immutable files. Refer to Manage your Dispatcher Configurations for more details. This clears the directories to ensure no orphaned files are left behind.
-   1. The artifact is extracted to the httpd directory.  Immutable files are not overwritten. Any changes you make to immutable files in your git repository will be ignored at the time of deployment.  These files are core to the AMS dispatcher framework and cannot be changed.
+   1. The artifact is extracted to the `httpd` directory.  Immutable files are not overwritten. Any changes you make to immutable files in your git repository will be ignored at the time of deployment.  These files are core to the AMS dispatcher framework and cannot be changed.
    1. Apache performs a config test. If no errors are found, the service is reloaded. If an error occurs, the configs are restored from backup, the service is reloaded, and the error is reported back to Cloud Manager.
    1. Each path specified in the pipeline configuration is invalidated or flushed from the dispatcher cache.
    

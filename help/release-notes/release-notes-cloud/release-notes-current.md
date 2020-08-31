@@ -7,11 +7,57 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.8.0.
 
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* Ability to [restore pages and sub-pages (page trees) to an earlier version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions). 
+
+* Ability to create Launches in AEM SPA Editor.
+
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* Video transcoding is now supported with asset microservices, with a new Video section in the [!UICONTROL Processing Profiles] screen supporting configuration of video bitrate and dimensions (output format is MP4 with H.264 codec). For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). For more transcoding options and video delivery [!DNL Dynamic Media] add-on can be used.
+
+* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
+
+* A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
+
+  * Asynchronous download for large downloads so that users don't have to wait.
+  
+  * A new modular API for developer extensibility.
+
+* [!DNL Experience Manager] has improved the performance of metadata extraction for asset microservices. It increases the overall asset ingestion throughput.
+
+* Use processing profile to generate custom metadata using Compute Service. See [Custom metadata using processing profile](/help/assets/manage-metadata.md#metadata-compute-service)
+
+* A simpler download experience for Brand Portal users that administrators can configure. See [download experience overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+
+* Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+
+* You can now invalidate the CDN (Content Delivery Network) cache directly from [!DNL Dynamic Media] in AEM as a Cloud Service (as opposed to using [!DNL Dynamic Media Classic]) to ensure the latest assets are served within minutes instead of hours. See [Invalidating the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) 
+
+* Enhanced accessibility support is added to user interface controls, navigation, browse, and search experience in [!DNL Assets].
+
+  * If you press the Escape key after selecting [!UICONTROL Add Rendition] option, the focus returns to the toolbar. <!-- via CQ-4293594-->
+  * Keyboard focus works as expected when using the Email combo box. <!-- via CQ-4286215 -->
+  * The accordions elements in search filters section are interpreted as standard expandable accordions. <!-- via CQ-4273103 -->
+  * When applying a tag to an asset, the dialog box displays tags as tree elements. ARIA attributes are appropriately applied to the tree elements to make them accessible now. <!-- via CQ-4272964 -->
+  
+* [!DNL AEM Desktop app] 2.0.3 release is now available, improving compatibility with [!DNL AEM] 6.5.5 [!DNL Service Pack] and updating client OS compatibility list (removing [!DNL Windows] 7 and [!DNL MacOS] versions before 10.14).
+
+### Bugs fixed in [!DNL Assets] {#bugs-fixed}
+
+* Relate and unrelate option does not respond when clicked for the first time. (CQ-4299022)
+* When downloading an asset, if you select the option to receive it via email, the email is not sent. (CQ-4299146)
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What's New {#what-is-new-commerce}
 
-* Product Console feature is now available. This allows marketers/authors in AEM to view and navigate categories and products that are stored in the commerce backend. Support for properties for catogories and products in the Product Console also provided.
+* Product Console feature is now available. This allows marketers/authors in AEM to view and navigate categories and products that are stored in the commerce backend. Support for properties for categories and products in the Product Console also provided.
 
 * Product and Category Pickers improved to allow marketers to select product via SKU or select category via category ID.
 
@@ -25,13 +71,13 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Content Audit is a feature enabled on Cloud Manager Sites Production Pipelines. The Production Pipeline configuration for programs with Sites now includes a third tab named **Content Audit**. Whenever a production pipeline is run, a new Content Audit step will be included in the pipeline after custom functional testing which will evaluate the site against a number of dimensions including performance, SEO (Search Engine Optimization), accessibility, best practices and PWA (Progressive Web App).
 
-   Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
+   Refer to [Content Audit Testing](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
 
 * Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
 
 * Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
 
-* Authentication-bound Private Maven Repositories are now supported.
+* Ability to perform Experience Checks on pages, powered by Google Lighthouse. As part of Cloud Manager pipeline, up to 25 pages can be checked and validated against experience KPIs, and scores are displayed in Cloud Manager UI.
 
 ### Bug Fixes {#bug-fixes-cm}
 
@@ -75,3 +121,14 @@ Follow this section to learn about what is new and the updates for Content Trans
 
 * Earlier version UI sometimes displayed successful extraction even though log showed errors.
 
+## Code Refactoring Tools {#code-refactoring-tools}
+
+Follow this section to learn about what is new and the updates for Code Refactoring Tools.
+
+### What's New {#what-is-new-refactoring}
+
+* AIO-CLI plugin released to unify code refactoring tools to enable developers to invoke and execute code refactoring tools from one place. Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* AEM Dispatcher Converter extended to support conversions of On-premise and Adobe Managed Services Dispatcher configurations into AEM as a Cloud Service compatible Dispatcher configurations. Refer to [Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) for more details.
+
+* AEM Dispatcher Converter re-written in ` node.js ` and integrated with AIO-CLI plugin.

@@ -8,8 +8,14 @@ description: Create, compare, and restore versions of a page
 Versioning creates a "snapshot" of a page at a specific point in time. With versioning, you can perform the following actions:
 
 * Create a version of a page.
-* Restore a page to a previous version in order to undo a change that you made to a page, for example.
-* Compare the current version of a page with a previous version with differences in the text and images highlighted.
+* Reinstate a previous version of one, or more, pages, to:
+  * Undo changes made to the pages.
+  * Restore pages that were deleted.
+  * Restore a tree (as at a specified date and time).
+* Preview a version.
+* Compare the current version of a page with a previous version.
+  * Differences in the text and images are highlighted.
+* Timewarp uses the page versions to determine the state of the publish environment.
 
 ## Creating a New Version {#creating-a-new-version}
 
@@ -46,32 +52,102 @@ You can create a version of your resource from:
 
 The timeline will be opened with the information updated to indicate the new version.
 
-## Reverting to a Page Version {#reverting-to-a-page-version}
+## Reinstating Versions {#reinstating-versions}
 
-Once a version has been created you can revert to that version if needed.
+Once you have created a version of your page, there are various methods of reinstating a prior version:
+
+* the **Revert to this Version** option from the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) rail
+
+  Reinstate a prior version of a selected page.
+
+* the **Restore** options from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+
+  * **Restore Version** 
+
+    Reinstate versions of specified pages within the currently selected folder; this can also include restoring pages that have been previously deleted.
+
+  * **Restore Tree**
+
+    Reinstate a version of an entire tree as at a specified date and time; this can include pages that have been previously deleted.
 
 >[!NOTE]
 >
->When restoring a page, the version created will be part of a new branch.
+>When reinstating a page, the version created will be part of a new branch.
 >
 >To illustrate:  
 >
 >1. Create versions of any page.
 >1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
->1. Restore the first version; i.e. 1.0.
+>1. Reinstate the first version; i.e. 1.0.
 >1. Create new versions again.
 >1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
 
-To revert to a previous version:
+### Revert to a Version {#revert-to-a-version}
+
+To **Revert** the selected page to a previous version:
 
 1. Navigate to show the page you want to revert to a previous version.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
 1. Select the version you want to revert to. The possible options will be shown:
 
-   ![Revert version](/help/sites-cloud/authoring/assets/versions-revert.png)
+   ![Revert to this Version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
+
+### Restore Version {#restore-version}
+
+This method can be used to restore versions of specified pages within the current folder; this can also include restoring pages that have been previously deleted:
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Select **Restore**, then **Restore Version** from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar).
+
+   >[!NOTE]
+   >
+   >If, either:
+   >* you have selected a single page, that has never had any child pages,
+   >* or none of the pages in the folder have versions,
+   >
+   >Then the display will be empty as there are no versions applicable. 
+
+1. The available versions will be listed:
+
+   ![Restore Version - List of all pages in folder](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+
+1. For a specific page, use the drop down selector under **RESTORE TO VERSION** to select the required version for that page.
+
+   ![Restore Version - Select Version](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+
+1. In the main display, select the required page to be restored:
+
+   ![Restore Version - Select Page](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+
+1. Select **Restore** for the selected version, of the selected page, to be restored as the *current* version.
+
+>[!NOTE]
+>
+>The order in which you select a required page and the related version is interchangeable.
+
+### Restore Tree {#restore-tree}
+
+This method can be used to restore a version of a tree as at a specified date and time; this can include pages that have been previously deleted:
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). The latest version of the tree will be shown:
+
+   ![Restore Tree](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+
+1. Use the date and time selector at **Latest Versions at Date** to select another version of the tree - the one to be restored.
+
+1. Set the flag **Preserved Non Versioned Pages** as required:
+
+   * If active (selected), then any non-versioned pages will be maintained and not impacted by the restore. 
+
+   * If inactive (unselected), then any non-versioned pages will be removed as they did not exist in the versioned tree.
+
+1. Select **Restore** for the selected version of the tree to be restored as the *current* version.
 
 ## Previewing a Version {#previewing-a-version}
 
@@ -141,7 +217,7 @@ Timewarp makes a best effort to reproduce a page at a selected point in time. Ho
 * **Timewarp works based on published pages** - Timewarp will only work fully if you have previously published the page. If not, timewarp will show the current page on the author environment.
 * **Timewarp uses page versions** - If you navigate to a page that has been removed/deleted from the repository it will be rendered properly if old versions of the page are still available in the repository.
 * **Removed versions affect Timewarp** - If versions are removed from the repository then Timewarp cannot show the correct view.  
-* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](#reverting-to-a-page-version).
+* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](#revert-to-a-version).
 * **Timewarp is only based on page content** - If elements (such as code, css, assets/images, etc) for rendering the website have changed, the view will differ from what it originally was, as those items are not versioned in the repository.
 
 >[!CAUTION]
