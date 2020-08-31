@@ -9,7 +9,7 @@ We have developed tools to automate some of the code refactoring tasks required 
 
 ## Benefits {#benefits}
 
-The Unified Experience plugin provide the following benefits:
+The Unified Experience plugin provides the following benefits:
 
 * Unifies tools that work on source code into one `node.js` application exposed as `aio-cli ` plugin to provide a consistent user experience to the user.
 

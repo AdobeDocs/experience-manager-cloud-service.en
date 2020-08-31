@@ -169,3 +169,7 @@ The old version of the application uses the following configuration:
 The new version of the application uses the following (changed) configuration:
 
 `/oak:index/acme.product-custom-2`
+
+### Index-Availability/Fault-Tolerance {#index-availability}
+
+It is recommended to create duplicate indexes for features that are extremely important (keeping in mind the naming convention for indexes mentioned above), so in the case of index corruption or any such unforeseen event there is a fallback index available to respond to queries.

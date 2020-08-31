@@ -1,9 +1,9 @@
 ---
-title: Invalidating your CDN cache by way of Dynamic Media Classic
+title: Invalidating the CDN cache by way of Dynamic Media Classic
 description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 ---
 
-# Invalidating your CDN cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
+# Invalidating the CDN cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
 Dynamic Media assets are cached by the CDN for fast delivery. However, when you make updates to an asset, you may want those changes to take effect immediately. Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 
