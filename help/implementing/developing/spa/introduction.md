@@ -97,7 +97,7 @@ When a SPA is built to leverage the AEM SPA Editor, the content author notices n
 
 1. Use the Assets Browser to drag-and-drop a new image into an image component.
 
-   ![Dropping an image asset](assets/wkdn-events-drop-image.png)
+   ![Dropping an image asset](/help/implementing/developing/introduction/assets/wkdn-events-drop-image.png)
 
 1. The change is persisted.
 
