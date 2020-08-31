@@ -152,7 +152,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 1. Use the built-in tool of your browser to view the source of the page.
 1. Note that the content of the source is limited.
 
-   ```
+   ```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
