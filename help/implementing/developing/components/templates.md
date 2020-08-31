@@ -100,7 +100,7 @@ When creating a new editable template you:
     * When using a template to create a new page there is no visible difference and no indication between static and editable templates.
     * For the page author, the process is transparent.
 
-   For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
+   For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
 
    For technical details on creating pages with editable templates, see [Resultant Content Pages](#resultant-content-pages) in this document.
 
@@ -316,6 +316,7 @@ Definitions for your customized templates types should be stored in user-defined
 >
 >The template types have to respect the correct folder structure (i.e. `/settings/wcm/...`), otherwise the template types will not be found.
 
+<!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
 
 The [device groups](/help/sites-developing/mobile.md#device-groups) used for an editable template (set as relative path of the property `cq:deviceGroups`) define which mobile devices are available as emulators in the [layout mode](/help/sites-authoring/responsive-layout.md) of page authoring. This value can be set in two places:
@@ -331,9 +332,10 @@ When creating a new editable template, the value is copied from the template typ
 
 >[!NOTE]
 >
->With [static templates](/help/sites-developing/page-templates-static.md), the value of `cq:deviceGroups` could be set at the root of the site.
+>With static templates /help/sites-developing/page-templates-static.md, the value of `cq:deviceGroups` could be set at the root of the site.
 >
 >With editable templates, this value is now stored at the template level and is not supported at the page root level.
+-->
 
 ### Creating Template Types {#creating-template-types}
 
@@ -504,14 +506,14 @@ Pages created from editable templates:
 
   * `cq:templateType` - Provides a reference to the template type.
 
-![How templates, content, and components interrelate](assets/templates-content-components.png)
+![How templates, content, and components interrelate](/help/implementing/developing/introduction/assets/templates-content-components.png)
 
 The above diagram shows how templates, content, and components interrelate:
 
 * Controller - `/content/<my-site>/<my-page>` - The resultant page that references the template. The content controls the entire process. According to the definitions it accesses the appropriate template and components.
 * Configuration - `/conf/<my-folder>/settings/wcm/templates/<my-template>` - The [template and related content policies](#template-definitions) define the page configuration.
 * Model - OSGi bundles - The [OSGI bundles](/help/implementing/deploying/configuring-osgi.md) implement the functionality.
-* View - `/apps/<my-site>/components` - On both the author and publish environments the content is rendered by [components](/help/sites-developing/components.md).
+* View - `/apps/<my-site>/components` - On both the author and publish environments the content is rendered by components.
 
 When rendering a page:
 
@@ -569,7 +571,7 @@ The following diagram depicts the template evaluation process:
 >
 >* only on the site root
 >
->For an example, see the [WKND tutorial](getting-started.md) content: `/content/wknd/jcr:content`
+>For an example, see the [WKND tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) content: `/content/wknd/jcr:content`
 >
 >The properties `allowedPaths`, `allowedParents`, and `allowedChildren` can also be placed on the templates to define more sophisticated rules. However, when possible, it is *much* simpler to define further `cq:allowedTemplates` properties on sub-sections of the site if there is a need to further restrict the allowed templates.
 >
