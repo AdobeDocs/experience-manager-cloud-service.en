@@ -11,7 +11,7 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 
 >[!NOTE]
 >
->This article is based on the Angular framework. For the corresponding document for the React framework see [Getting Started with SPAs in AEM - React](/help/sites-developing/spa-getting-started-react.md).
+>This article is based on the Angular framework. For the corresponding document for the React framework see [Getting Started with SPAs in AEM - React](getting-started-react.md).
 
 ## Introduction {#introduction}
 
