@@ -559,7 +559,7 @@ The evaluation works as follows:
 
 The following diagram depicts the template evaluation process:
 
-![Template evalutation process](/help/implementing/developing/introduction/template-evaluation.png)
+![Template evalutation process](/help/implementing/developing/introduction/assets/template-evaluation.png)
 
 >[!CAUTION]
 >
