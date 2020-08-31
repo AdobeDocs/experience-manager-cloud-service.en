@@ -272,5 +272,5 @@ See how a simple SPA works and experiment with an SPA yourself by continuing on 
 
 For more information about SPAs in AEM, see the following documents:
 
-* [SPA Editor Overview](/editor-overview.md) for an overview of SPAs in AEM and the communication model
+* [SPA Editor Overview](editor-overview.md) for an overview of SPAs in AEM and the communication model
 
