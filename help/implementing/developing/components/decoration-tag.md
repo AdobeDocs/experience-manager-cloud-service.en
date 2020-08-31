@@ -55,7 +55,7 @@ For further information about developing in HTL see the [HTL documentation](http
 
 This decision tree summarizes the logic that determines the behavior of the wrapper tags.
 
-![Decision tree](assets/decoration-tag-decision-tree.png)
+![Decision tree](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
 
 ### Use Cases {#use-cases}
 
