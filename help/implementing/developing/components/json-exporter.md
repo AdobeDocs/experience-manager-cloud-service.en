@@ -9,7 +9,7 @@ AEM Content Services are designed to generalize the description and delivery of 
 
 They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client. These channels can include:
 
-* [Single Page Applications](introduction.md)
+* Single Page Applications
 * Native Mobile Applications
 * Other channels and touch-points external to AEM
 
