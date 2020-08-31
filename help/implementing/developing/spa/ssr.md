@@ -24,7 +24,7 @@ Only when at least one of these two questions are answered with a clear "yes" fo
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-If you [are confident that your project requires the implementation of SSR](/help/sites-developing/spa-ssr.md#when-to-use-ssr), Adobe's recommended solution is to use Adobe I/O Runtime.
+If you [are confident that your project requires the implementation of SSR](#when-to-use-ssr), Adobe's recommended solution is to use Adobe I/O Runtime.
 
 For more information on Adobe I/O Runtime, please see
 
