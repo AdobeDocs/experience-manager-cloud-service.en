@@ -7,7 +7,7 @@ description: Page Templates are used when creating a page which will be used as 
 
 When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties). This has serveral advantages:
 
-* Page Templates allow specialized authors to [create and edit templates](/help/sites-authoring/templates.md).
+* Page Templates allow specialized authors to [create and edit templates](/help/sites-cloud/authoring/features/templates.md).
   * Such specialized authors are called **template authors**
   * Template authors must be members of the `template-authors` group.
 * Page Templates retain a dynamic connection to any pages created from them. This ensures that any changes to the template are reflected in the pages themselves.
@@ -559,7 +559,7 @@ The evaluation works as follows:
 
 The following diagram depicts the template evaluation process:
 
-![Template evalutation process](assets/template-evaluation.png)
+![Template evalutation process](/help/implementing/developing/introduction/template-evaluation.png)
 
 >[!CAUTION]
 >
