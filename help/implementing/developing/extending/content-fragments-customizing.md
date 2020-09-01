@@ -9,7 +9,11 @@ Within Adobe Experience Manager as a Cloud Service a content fragment extends a 
 
 * [Creating and Managing Content Fragments](/help/assets/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
 
+* [Managing Assets](/help/assets/manage-digital-assets.md) for further information about standard assets.
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
 * [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## Architecture {#architecture}
 

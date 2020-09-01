@@ -133,6 +133,16 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
    >
    >For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
+## Custom metadata using processing profile {#metadata-compute-service}
+
+Assets as a Cloud Service can generate custom metadata for an asset using cloud-native services. Configure a processing profile to generate custom metadata. See [how to use processing profile](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+
+![Metadata rendition in processing profile](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>Only one processing profile can be applied to a folder. To apply multiple processing to assets in a folder, add more options to a single processing profile. For example, a single profile can generate renditions, transcode assets, generate custom metadata, and so on. You can apply MIME type filters for each task so that the appropriate task is triggered for the required file format.
+
 ## Configure limit for bulk metadata update {#configlimit}
 
 To prevent DOS-like situation, AEM limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. AEM generates the following warning in the logs:
