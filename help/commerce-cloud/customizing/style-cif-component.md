@@ -432,7 +432,7 @@ Return to the IDE and the generated project.
 
 1. Deploy the updates to AEM using your Maven skills, from a command line terminal:
 
-     ```shell
+    ```shell
     $ cd aem-cif-guides-venia/
     $ mvn clean install -PautoInstallPackage,cloud
     ```
