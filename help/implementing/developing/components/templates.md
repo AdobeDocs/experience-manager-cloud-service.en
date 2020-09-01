@@ -506,7 +506,7 @@ Pages created from editable templates:
 
   * `cq:templateType` - Provides a reference to the template type.
 
-![How templates, content, and components interrelate](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![How templates, content, and components interrelate](assets/templates-content-components.png)
 
 The above diagram shows how templates, content, and components interrelate:
 
@@ -559,7 +559,7 @@ The evaluation works as follows:
 
 The following diagram depicts the template evaluation process:
 
-![Template evalutation process](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![Template evaluation process](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
