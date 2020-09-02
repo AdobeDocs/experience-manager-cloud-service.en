@@ -21,7 +21,7 @@ The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a refe
 
 ## What you will build
 
-A new style will be implemented for the Product Teaser component that resembles a card.
+In this tutorial a new style will be implemented for the Product Teaser component that resembles a card. Lessons learned in the tutorial can be applied to other CIF Core Components.
 
 ![What you will build](../assets/style-cif-component/what-you-will-build.png)
 
