@@ -380,7 +380,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
 1. Save the changes and deploy the updates to AEM using your Maven skills, from a command line terminal:
 
-     ```shell
+    ```shell
     $ cd aem-cif-guides-venia/
     $ mvn clean install -PautoInstallPackage,cloud
     ```
@@ -459,7 +459,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
 1. Save the changes and deploy the updates to AEM using your Maven skills, from a command line terminal:
 
-     ```shell
+    ```shell
     $ cd aem-cif-guides-venia/
     $ mvn clean install -PautoInstallPackage,cloud
     ```
