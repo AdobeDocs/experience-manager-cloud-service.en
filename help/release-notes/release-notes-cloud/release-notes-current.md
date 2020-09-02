@@ -7,6 +7,10 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.8.0.
 
+## Release Date {#release-date}
+
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is August 27, 2020.
+
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
