@@ -10,10 +10,10 @@ description: Project Set up Details - Cloud Services
 In order to be built and deployed successfully with Cloud Manager, existing AEM projects need to adhere to some basic rules:
 
 * Projects must be built using Apache Maven.
-* There must be a *pom.xml* file in the root of the Git repository. This *pom.xml* file can refer to as many submodules (which in turn may have other submodules, etc.) as necessary.
+* There must be a *pom.xml* file in the root of the Git repository. This *pom.xml* file can refer to as many sub-modules (which in turn may have other sub-modules, etc.) as necessary.
 
 * You can add references to additional Maven artifact repositories in your *pom.xml* files. Access to [password-protected artifact repositories](#password-protected-maven-repositories) is supported when configured. However, access to network-protected artifact repositories is not supported.
-* Deployable content packages are discovered by scanning for content package *zip* files which are contained in a directory named *target*. Any number of submodules may produce content packages.
+* Deployable content packages are discovered by scanning for content package *zip* files which are contained in a directory named *target*. Any number of sub-modules may produce content packages.
 
 * Deployable Dispatcher artifacts are discovered by scanning for *zip* files (again, contained in a directory named *target*) which have directories named *conf* and *conf.d*.
 
@@ -24,7 +24,7 @@ In order to be built and deployed successfully with Cloud Manager, existing AEM 
 
 In some limited cases, you may need to vary your build process slightly when running inside Cloud Manager as opposed to when it runs on developer workstations. For these cases, [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) can be used to define how the build should be different in different environments, including Cloud Manager.
 
-Activation of a Maven Profile inside the Cloud Manager build environment should be done by looking for CM_BUILD environment variable described above. Conversly, a profile intended to be used only outside of the Cloud Manager build environment should be done by looking for the absense of this variable.
+Activation of a Maven Profile inside the Cloud Manager build environment should be done by looking for CM_BUILD environment variable described above. Conversely, a profile intended to be used only outside of the Cloud Manager build environment should be done by looking for the absence of this variable.
 
 For example, if you wanted to output a simple message only when the build is run inside Cloud Manager, you would do this:
 
