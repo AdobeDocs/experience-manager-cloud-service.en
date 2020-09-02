@@ -3,7 +3,7 @@ title: Build Environment Details
 description: Build Environment Details - Cloud Services
 ---
 
-# Understanding Build Environment Details {#understanding-build-environment} 
+# Understanding the Build Environment {#understanding-build-environment} 
 
 ## Build Environment Details {#build-environment-details}
 

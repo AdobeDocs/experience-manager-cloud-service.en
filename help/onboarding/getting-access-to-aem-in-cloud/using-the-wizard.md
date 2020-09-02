@@ -3,12 +3,12 @@ title: Using the Wizard
 description: Using the Wizard - Cloud Services
 ---
 
-# Using Wizard to Create an AEM Application Project {#using-wizard-to-create-an-aem-application-project}
+# Using the Wizard {#using-wizard-to-create-an-aem-application-project}
 
 To help get new customers started, Cloud Manger is now able to create a minimal AEM project as a starting point. This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
-Follow the steps below to create an AEM application project in Cloud Manager:
+Follow the steps below to create an AEM application project in Cloud Manager using the wizard:
 
 1. Once you log in to Cloud Manager and the basic program setup is complete, a special call to action card will be shown on the **Overview** screen, if the repository is empty.
 
