@@ -21,7 +21,7 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
   + Creating an AEM Application Project {#create-application-project}
     + [Using the Wizard](getting-access-to-aem-in-cloud/using-the-wizard.md)
-    + [Setting up Project](getting-access-to-aem-in-cloud/setting-up-project.md)
+    + [Setting up your Project](getting-access-to-aem-in-cloud/setting-up-project.md)
     + [Understanding the Build Environment](getting-access-to-aem-in-cloud/build-environment-details.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
