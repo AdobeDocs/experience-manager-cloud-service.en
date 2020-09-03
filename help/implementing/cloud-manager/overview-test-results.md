@@ -17,9 +17,9 @@ There are three broad categories of tests supported by Cloud Manager for Cloud S
 
    The Functional Testing is a part of  the Stage testing phase of a Production Pipeline.
 
-1. [Content Audit Testing](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   The Content Audit Testing is enabled in all Cloud Manager Production Pipelines and cannot be skipped.
+   The Experience Audit Testing is enabled in all Cloud Manager Production Pipelines and cannot be skipped.
 
 These tests can be:
 

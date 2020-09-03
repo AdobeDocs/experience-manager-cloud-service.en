@@ -1,11 +1,11 @@
 ---
-title: Content Audit Testing - Cloud Services
-description: Content Audit Testing - Cloud Services
+title: Experience Audit Testing - Cloud Services
+description: Experience Audit Testing - Cloud Services
 ---
 
-# Content Audit Testing {#content-audit-testing}
+# Experience Audit Testing {#experience-audit-testing}
 
-Content Audit is a feature available in Cloud Manager Sites Production pipelines, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines.
+Experience Audit is a feature available in Cloud Manager Sites Production pipelines, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines.
 
 It validates the deployment process and helps ensure that changes deployed:
 
@@ -13,11 +13,11 @@ It validates the deployment process and helps ensure that changes deployed:
 
 1. Do not include regressions in these dimensions.
 
-Content Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
+Experience Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
 
-## Understanding Content Audit Results {#understanding-content-audit-results}
+## Understanding Experience Audit Results {#understanding-experience-audit-results}
 
-Content Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
+Experience Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
 
 * Aggregate level metrics measure the average score across the pages that were audited.
 * Individual page level scores are also available via drill down.

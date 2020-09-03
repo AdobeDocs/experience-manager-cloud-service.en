@@ -50,8 +50,8 @@ Once you have configured your Production Pipeline (repository, environment, and 
    * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default.  
       Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
-   * Content Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, a content audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
-      Refer to [Understanding Content Audit results](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
+   * Experience Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
+      Refer to [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
        ![](assets/testing-tab.png)
 
@@ -79,7 +79,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
    >[!NOTE]
    >
-   >All AEM artifacts are deployed to both the author and the publishers. Runmodes should be leveraged when node-specific configurations are required. To learn more about how the runmodes allow you to tune your AEM instance for a specific purpose, please refer to Run Modes.
+   >All AEM artifacts are deployed to both the author and the publishers. Run modes should be leveraged when node-specific configurations are required. To learn more about how the Run modes allow you to tune your AEM instance for a specific purpose, please refer to Run modes.
 
 1. The dispatcher artifact is deployed to each dispatcher as follows:
 

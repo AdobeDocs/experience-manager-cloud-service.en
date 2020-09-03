@@ -78,12 +78,12 @@ Follow these steps to configure the behavior and preferences for your pipeline:
     >[!NOTE]
     > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
    
-    Refer to [Understanding Content Audit Results](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
+    Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/xperience-audit-testing.md) for more details.
 
-    Click on **Add New Page Override** to provide a URL path to be included in the Content Audit. Once you add the path, click **Save**.
+    Click on **Add New Page Override** to provide a URL path to be included in the Experience Audit. Once you add the path, click **Save**.
 
     >[!NOTE]
-    >In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. Refer to [Known Issues](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) for more details.
+    >In order to activate the Experience Audit step, users must edit the pipeline and, optionally, add pages. Refer to [Known Issues](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) for more details.
 
     ![](assets/content-audit2.png)
     
