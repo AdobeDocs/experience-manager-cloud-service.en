@@ -16,7 +16,7 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 * enables you to use the component to manage which elements of a fragment to deliver
 * allows bulk-delivery, by adding multiple content fragment core components on the page being used for API delivery
 
-This and the following pages cover the tasks for creating, configuring and maintaining your content fragments:
+This and the following pages cover the tasks for creating, configuring, maintaining and using your content fragments:
 
 * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - create your content fragments; then edit, publish and reference
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - enabling, creating and defining your models
@@ -24,10 +24,11 @@ This and the following pages cover the tasks for creating, configuring and maint
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - using markdown syntax for your fragment
 * [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) - adding associated content
 * [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md) - viewing and editing the fragment properties
+* Use [Content Fragments, together with GraphQL, to deliver content](/help/assets/content-fragments/content-fragments-graphql.md) for use in your applications.
 
 >[!NOTE]
 >
->These pages should be read in conjunction with [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>These pages can be read in conjunction with [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
