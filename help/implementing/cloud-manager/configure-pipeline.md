@@ -82,9 +82,6 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
     Click on **Add New Page Override** to provide a URL path to be included in the Experience Audit. Once you add the path, click **Save**.
 
-    >[!NOTE]
-    >In order to activate the Experience Audit step, users must edit the pipeline and, optionally, add pages. Refer to [Known Issues](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) for more details.
-
     ![](assets/exp-audit2.png)
     
 1. Click **Save** from the **Edit Pipeline** screen. The **Overview** page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
