@@ -19,14 +19,18 @@ Experience Audit in Cloud Manager ensures that the end users digital experience 
 
 Experience Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
 
-* Aggregate level metrics measure the average score across the pages that were audited.
+* Aggregate level metrics measure the average score across the pages that were audited for performance, accessibility, best practices, SEO (Search Engine Optimization). 
+   >[!NOTE]
+   >Progressive Web App (PWA) score is not included in the summary score and will only be shown in the page-level report details screen.
 * Individual page level scores are also available via drill down.
 * Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
 * A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
 
 ### Aggregate Scores {#aggregate-scores}
 
-There is an aggregate level score for each test type (performance, accessibility, SEO, best practices, and PWA).
+There is an aggregate level score for each test types such as performance, accessibility, SEO, and best practices.
+>[!NOTE]
+>Progressive Web App (PWA) score is not included in the summary score and will only be shown in the page-level report details screen.
 
 The aggregate level score takes the average score of the pages that are included in the run. The change at the aggregate level represents the average score of the pages in the current run compared to the average of the scores from the previous run, even if the collection of pages configured to be included has been changed between runs. 
 
