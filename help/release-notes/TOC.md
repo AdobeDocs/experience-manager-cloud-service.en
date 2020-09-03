@@ -8,7 +8,8 @@ user-guide-description: This guide provides important information about the late
 
 + [Release Information](/help/release-notes/home.md)
 + Release Notes {#release-notes}
-  + [Current Release Notes (2020.8.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+  + [Current Release Notes (2020.9.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+  + [Release Notes for 2020.8.0](/help/release-notes/release-notes-cloud/release-notes-2020-8-0.md)
   + [Release Notes for 2020.7.0](/help/release-notes/release-notes-cloud/release-notes-2020-7-0.md)
   + [Release Notes for 2020.6.0](/help/release-notes/release-notes-cloud/release-notes-2020-6-0.md)
   + [Release Notes for 2020.5.0](/help/release-notes/release-notes-cloud/release-notes-2020-5-0.md)
