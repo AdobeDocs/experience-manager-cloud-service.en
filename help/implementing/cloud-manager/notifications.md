@@ -25,11 +25,10 @@ The sidebar lists the most recent notifications.
 
 By default, notifications are available in the web user interface across Adobe [!UICONTROL Experience Cloud] solutions. Individual users can also opt for these notifications to be sent through email, either on an immediate or digest basis.
 
-
 This will take the user to the Notifications Preferences screen in Adobe [!UICONTROL Experience Cloud].
 
 The users can turn on email notifications and (optionally) select the types of notifications they want to receive over email.
 
 >[!NOTE]
 >
->You can also enable digesting from the Adobe [!UICONTROL Experience Cloud], as shown below:
+>You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
