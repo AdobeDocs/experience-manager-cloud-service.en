@@ -14,7 +14,7 @@ The AEM managed CDN will satisfy most customer's performance and security requir
 Follow these to prepare for content delivery by using Adobe's out-of-the-box CDN:
 
 1. Provide the signed SSL certificate and secret key to Adobe by sharing a link to a secure form containing this information. Please coordinate with customer support on this task.
-**Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates.
+**Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates. Also, it must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
 1. Inform customer support:
    * which custom domain should be associated with a given environment, as defined by the program id and environment id. Note that custom domains on the author side are not supported.
    * if any IP allowlisting is needed to restrict traffic to a given environment.
