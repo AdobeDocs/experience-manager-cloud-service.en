@@ -27,6 +27,26 @@ GraphQL is:
 
 GraphQL allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md), of a specific model type. The content returned can then be used by your applications. 
 
+#### GraphQL Terminology {#graphql-terminology}
+
+GraphQL uses the following:
+
+* **[Queries](https://graphql.org/learn/queries/)**
+  
+* **[Schemas and Types](https://graphql.org/learn/schema/)**
+  
+* **[Fields](https://graphql.org/learn/queries/#fields)**
+
+See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
+
+#### GraphQL Query Types {#graphql-query-types}
+
+With GraphQL you can perform queries for either:
+
+* **Single entry**
+  
+* **[List of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
+
 ### Content Fragments {#content-fragments}
 Content fragments:
 
@@ -117,6 +137,22 @@ The fields:
 ### Sample Content Fragments {#sample-content-fragments}
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
+
+### Sample Query - All Available Schemas
+
+**Query**
+
+```xml
+{
+  __schema {
+    types {
+      name
+    }
+  }
+}
+```
+
+**Result**
 
 ### Sample Query - All Persons that have a name of "Jobs" or "Smith"
 
