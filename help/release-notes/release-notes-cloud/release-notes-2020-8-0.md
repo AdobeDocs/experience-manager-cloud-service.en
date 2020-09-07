@@ -15,9 +15,9 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* Ability to [restore pages and sub-pages (page trees) to an earlier version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions). 
+* Ability to [restore pages and sub-pages (page trees) to an earlier version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Ability to create Launches in AEM SPA Editor.
+* Ability to [create Launches](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor.](/help/implementing/developing/spa/introduction.md)
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
