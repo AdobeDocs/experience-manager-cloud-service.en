@@ -50,11 +50,11 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. The **Setup Pipeline** screen displays. Select the branch and click **Next**.
 
-    ![](assets/setup-pipeline-1.png)
+    ![](assets/setup-1.png)
 
 1. Configure your deployment options.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    You can define the trigger to start the pipeline:
 
@@ -69,23 +69,20 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
    * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
     
-1. The production pipeline settings includes a third tab labeled as **Content Audit**.
+1. The production pipeline settings includes a third tab labeled as **Experience Audit**.
 
-    ![](assets/content-audit-1.png)
+    ![](assets/setup-3.png)
 
-   This option provides a table for the URL paths that should always be included in the Content Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the content audit as a default.
+   This option provides a table for the URL paths that should always be included in the Experience Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the experience audit as a default.
 
-    >[!NOTE]
-    > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
+   >[!NOTE]
+   > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
    
-    Refer to [Understanding Content Audit Results](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
+   Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
-    Click on **Add New Page Override** to provide a URL path to be included in the Content Audit. Once you add the path, click **Save**.
+   Click **Add New Page Override** to provide a URL path to be included in the Experience Audit. Once you add the path, click **Save**.
 
-    >[!NOTE]
-    >In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. Refer to [Known Issues](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) for more details.
-
-    ![](assets/content-audit2.png)
+    ![](assets/exp-audit2.png)
     
 1. Click **Save** from the **Edit Pipeline** screen. The **Overview** page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 

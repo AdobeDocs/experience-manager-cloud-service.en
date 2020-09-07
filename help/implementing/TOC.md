@@ -16,7 +16,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
     + [Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)
     + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
-    + [Content Audit Testing](/help/implementing/cloud-manager/content-audit-testing.md)  
+    + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)  
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
 + Managing your Code {#managing-code}
@@ -36,7 +36,6 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
   + [Logging](developing/introduction/logging.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-  + [Understand Your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
   + [Page Diff](/help/implementing/developing/introduction/page-diff.md)
   + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
   + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
