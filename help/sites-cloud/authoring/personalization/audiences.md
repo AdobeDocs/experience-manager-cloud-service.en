@@ -58,7 +58,7 @@ To create an Adobe Target audience:
 
    ![Navigating to audiences](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. In the Audiences console, tap or click **Create** and then** Create Target Audience**.
+1. In the Audiences console, tap or click **Create** and then **Create Target Audience**.
 
    ![Creating a Target audience](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 

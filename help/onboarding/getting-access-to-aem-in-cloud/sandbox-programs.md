@@ -11,7 +11,7 @@ A Sandbox program is one of the two types of programs available in AEM Cloud Ser
 
 A Sandbox is typically created to serve the purposes of training, running demos, enablement, or Proof of Concept (POC)s. They are not meant to carry live traffic. They are not subject to the [AEM as a Cloud Service Commitments](https://www.adobe.com/legal/service-commitments.html).
 
-The environments created in a Sandbox aren't configured for auto-scaling. Therefore, they are not suitable for performance or load testing.
+The environments created in a Sandbox are not configured for auto-scaling. Therefore, they are not suitable for performance or load testing.
 
 Sandbox programs include Sites and Assets and are auto-populated with a Git repository, a Development environment, and a non-production pipeline.  The Git repository is populated with a sample project based on the AEM Project archetype.
 

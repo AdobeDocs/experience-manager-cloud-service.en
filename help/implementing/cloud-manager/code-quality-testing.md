@@ -52,7 +52,7 @@ The following table summarizes the ratings and failure thresholds for each of th
 
 ## Dealing with False Positives {#dealing-with-false-positives}
 
-The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is referred to as a "false positive".
+The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is referred to as a *false positive*.
 
 In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common problem is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
 
