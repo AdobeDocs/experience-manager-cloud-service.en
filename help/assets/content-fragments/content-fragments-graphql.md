@@ -54,10 +54,9 @@ Content fragments:
   
 * [Can be nested](/help/assets/content-fragments/content-fragments-models.md#nested-content-fragments), using either of the following data types:
   * **Content Reference** 
-    * This provides a simple reference to the other fragment.
+    * This provides a simple reference to another fragment.
   * **[Fragment Reference](#fragment-references)** 
-    * This effectively includes the content from the other fragment. 
-    * This is of particular interest in conjunction with GraphQL.
+    * This references another fragment - dependent on a specific model.
 
 ### Content Fragment Models {#content-fragments-models}
 
@@ -69,13 +68,15 @@ These [Content Fragment Models](/help/assets/content-fragments/content-fragments
 
 The **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference)**:
 
+* Is of particular interest in conjunction with GraphQL.
+
 * Is a specific data type that can be used when defining a Content Fragment Model. 
 
-* Effectively includes the content of the referenced fragment into the referencing fragment. 
+* References another fragment, dependent on a specific Content Fragment Model. 
 
-* Can be used to add an extra layer of data content for use with GraphQL.
+* Allows you to retrieve structured data. 
 
-* When defined as a **multifeed**, multiple sub-fragments can be referenced by the prime fragment.
+  * When defined as a **multifeed**, multiple sub-fragments can be referenced by the prime fragment.
 
 ## A Sample Content Fragment Structure for use with GraphQL {#content-fragment-structure-graphql}
 
