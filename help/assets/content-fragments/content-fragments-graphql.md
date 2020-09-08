@@ -21,11 +21,9 @@ GraphQL is:
 
 * "*...an open spec for a flexible API layer. Put GraphQL over your existing backends to build products faster than ever before....*". 
 
-  See [Explore GraphQL](https://www.graphql.com).
+  See [Explore GraphQL](https://www.graphql.com). "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 
-  * "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
-
-GraphQL allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md), of a specific model type. The content returned can then be used by your applications. 
+GraphQL allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
 
 #### GraphQL Terminology {#graphql-terminology}
 
@@ -54,9 +52,12 @@ Content fragments:
 
 * They are based on a [Content Fragment Model](#content-fragments-models), which predefines the structure for the resulting fragment.
   
-* Can be nested, using either of the following data types:
-  * **Content Reference** - this provides a simple reference to the other fragment.
-  * **[Fragment Reference](#fragment-references)** - this effectively includes the content from the other fragments. This is of particular interest in conjunction with GraphQL.
+* [Can be nested](/help/assets/content-fragments/content-fragments-models.md#nested-content-fragments), using either of the following data types:
+  * **Content Reference** 
+    * This provides a simple reference to the other fragment.
+  * **[Fragment Reference](#fragment-references)** 
+    * This effectively includes the content from the other fragment. 
+    * This is of particular interest in conjunction with GraphQL.
 
 ### Content Fragment Models {#content-fragments-models}
 
@@ -66,7 +67,7 @@ These [Content Fragment Models](/help/assets/content-fragments/content-fragments
 
 ### Fragment References {#fragment-references}
 
-The **Fragment Reference**:
+The **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference)**:
 
 * Is a specific data type that can be used when defining a Content Fragment Model. 
 

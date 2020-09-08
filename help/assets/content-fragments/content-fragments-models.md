@@ -110,6 +110,29 @@ The content fragment model effectively defines the structure of the resulting co
 
    ![save](assets/cfm-models-07.png)
 
+## Nested Content Fragments {#nested-content-fragments}
+
+Content Fragments can be nested, using either of the following data types:
+* **[Content Reference](#content-reference)** 
+  * This provides a simple reference to the other fragment.
+* **[Fragment Reference](#fragment-reference)** 
+  * This effectively includes the content from the other fragment. 
+    >[!NOTE]
+    >
+    >This is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+### Content Reference {#content-reference}
+
+<!-- Check screenshot - might need update -->
+
+   ![Content Reference](assets/cfm-content-reference.png)
+
+### Fragment Reference {#fragment-reference}
+
+<!-- Check screenshot - might need update -->
+
+   ![Fragment Reference](assets/cfm-fragment-reference.png)
+
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
