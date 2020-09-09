@@ -79,7 +79,9 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
    ![](assets/exp-audit4.png)
 
-   The URL that appears in the table will be `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
+   The URL that appears in the table will be:
+   
+   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
    ![](assets/exp-audit5.png)
 
