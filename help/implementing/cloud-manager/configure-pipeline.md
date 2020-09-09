@@ -73,9 +73,9 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
     ![](assets/setup-3.png) 
 
-   Click **Add New Page Override** to provide a URL path to be included in the Experience Audit.
+   Click **Add New Page** to provide a URL path to be included in the Experience Audit.
 
-   For instance, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `us/en/about-us.html` in this field. 
+   For instance, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `us/en/about-us.html` in this field and click **Save**.
 
    ![](assets/exp-audit4.png)
 
