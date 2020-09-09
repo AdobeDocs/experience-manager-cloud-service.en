@@ -69,20 +69,28 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
    * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
     
-1. The production pipeline settings includes a third tab labeled as **Experience Audit**.
+1. The production pipeline settings includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. The user must complete the input field to define their own custom link.
 
-    ![](assets/setup-3.png)
+    ![](assets/setup-3.png) 
 
-   This option provides a table for the URL paths that should always be included in the Experience Audit. The user can manually enter a URL path to be included. A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the experience audit as a default.
+   Click **Add New Page** to provide a URL path to be included in the Experience Audit.
 
-   >[!NOTE]
-   > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
+   For instance, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `us/en/about-us.html` in this field and click **Save**.
+
+   ![](assets/exp-audit4.png)
+
+   The URL that appears in the table will be:
    
+   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
+
+   ![](assets/exp-audit5.png)
+
+   A maximum of 25 rows can be included. If there are no pages submitted by the user in this section, the homepage of the site will be included in the Experience Audit by default.
+ 
    Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
-   Click **Add New Page Override** to provide a URL path to be included in the Experience Audit. Once you add the path, click **Save**.
-
-    ![](assets/exp-audit2.png)
+    >[!NOTE]
+    > The pages that are configured will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests. 
     
 1. Click **Save** from the **Edit Pipeline** screen. The **Overview** page now displays the **Deploy your Program** card. Click **Deploy** button to deploy your program.
 
