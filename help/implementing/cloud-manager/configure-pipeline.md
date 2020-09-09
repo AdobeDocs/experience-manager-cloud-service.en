@@ -69,7 +69,10 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
    * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
     
-1. The production pipeline settings includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. The user must click on **Add New Page** to define their own custom link.
+1. The production pipeline settings includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
+
+   >[!NOTE]
+   >You must click on **Add New Page** to define your own custom link.
 
     ![](assets/setup-3.png) 
 
