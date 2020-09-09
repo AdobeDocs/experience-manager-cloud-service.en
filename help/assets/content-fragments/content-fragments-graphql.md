@@ -5,13 +5,9 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 
 # Content Delivery using Content Fragments with GraphQL {#Content Delivery using Content Fragments with GraphQL}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with GraphQL, to deliver content for use in your applications.
+With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with GraphQL, to deliver structured content for use in your applications.
 
-## The Fundamentals {#the-fundamentals}
-
-As a quick introduction, the following fundamentals are introduced.
-
-### GraphQL {#graphql}
+## GraphQL - An Overview {#graphql-overview}
 
 GraphQL is:
 
@@ -25,7 +21,7 @@ GraphQL is:
 
 GraphQL allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
 
-#### GraphQL Terminology {#graphql-terminology}
+### GraphQL Terminology {#graphql-terminology}
 
 GraphQL uses the following:
 
@@ -37,7 +33,7 @@ GraphQL uses the following:
 
 See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
 
-#### GraphQL Query Types {#graphql-query-types}
+### GraphQL Query Types {#graphql-query-types}
 
 With GraphQL you can perform queries for either:
 
@@ -45,8 +41,16 @@ With GraphQL you can perform queries for either:
   
 * **[List of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
+## Content Fragments for use with GraphQL {#content-fragments-overview}
+
+[Content Fragments](#content-fragments) can be used as a basis for GraphQL queries as:
+
+* The [Content Fragment Models](#content-fragments-models) provide the required structure by means of defined data types.
+* The [Fragment Reference](#fragment-references), available when defining a model, can be used to define additional layers of structure.
+
 ### Content Fragments {#content-fragments}
-Content fragments:
+
+Content Fragments:
 
 * Contain structured content.
 
@@ -111,8 +115,8 @@ The fields:
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
 | Company Name | Single line text | |
-| CEO | Fragment Reference | [Person](#person) |
-| Employees | Fragment Reference | [Person](#person) |
+| CEO | Fragment Reference (single) | [Person](#person) |
+| Employees | Fragment Reference (multifield) | [Person](#person) |
 
 #### Person {#person}
 
@@ -122,7 +126,7 @@ The fields:
 |--- |--- |--- |
 | Name | Single line text | |
 | First name | Single line text | |
-| Awards | Fragment Reference | [Award](#award) |
+| Awards | Fragment Reference (multifield) | [Award](#award) |
 
 #### Award {#award}
 
@@ -145,6 +149,62 @@ The fields:
 | Categories | Tags | |
 
 ### Sample Content Fragments {#sample-content-fragments}
+
+The following fragments are used for the appropriate model. 
+
+#### Company {#company}
+
+* Apple
+  * CEO: 0Steve Jobs
+  * Employees: Duke Marsh and Max Caulfield
+* Little Pony Inc.
+  * CEO: Adam Smith
+  * Employees: Lara Croft and Cutter Slade
+* NextStep Inc.
+  * CEO: Steve Jobs
+  * Employees: Joe Smith and Abe Lincoln
+
+#### Person {#person}
+
+* Abe Lincoln
+* Adam Smith
+* Cutter Slade
+  * Awards: Gameblitz and Gamestar
+* Duke Marsh
+* Joe Smith
+* Lara Croft
+  * Awards: Gamestar
+* Max Caulfield
+  * Awards: Gameblitz
+* Steve Jobs
+
+#### Award {#award}
+
+* Gameblitz Award
+* Gamestar Award
+* Oscar
+
+#### City {#city}
+
+* Basel
+  * Country: Switzerland
+  * Population: 172258
+* Berlin
+  * Country: Germany
+  * Population: 3669491
+* Bucharest
+  * Country: Romania
+  * Population: 1821000
+* San Francisco
+  * Country: USA
+  * Population: 883306
+* San Jose
+  * Country: USA
+  * Population: 102635
+* Stuttgart
+  * Country: Germany
+  * Population: 634830
+* Zurich
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
