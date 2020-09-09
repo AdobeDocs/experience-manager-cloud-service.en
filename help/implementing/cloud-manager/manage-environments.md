@@ -93,7 +93,7 @@ This feature is not available for Production/Stage environment set in a regular 
 
 ## Managing Access {#managing-access}
 
-Select **Manage Access** from from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
+Select **Manage Access** from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
 
 Refer to [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) to learn more.
 
