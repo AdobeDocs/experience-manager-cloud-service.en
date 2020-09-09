@@ -117,7 +117,7 @@ Content Fragments can be nested, using either of the following data types:
   * Provides a simple reference to another fragment.
   * Offers you the full flexibility to reference any other fragment.
 * **[Fragment Reference](#fragment-reference)** 
-  * Rreferences another fragment - dependent on a specific model.
+  * References another fragment - dependent on a specific model.
   * Allows you to retrieve structured data.
     >[!NOTE]
     >
@@ -126,6 +126,8 @@ Content Fragments can be nested, using either of the following data types:
 ### Content Reference {#content-reference}
 
 The Content Reference allows you to render content from another content fragment.
+
+In addition to standard properties you can specify the **Root Path** for any referenced fragments.
 
 <!-- Check screenshot - might need update -->
 
@@ -138,6 +140,16 @@ The Fragment Reference effectively includes the content from the referenced frag
 >[!NOTE]
 >
 >This is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+In addition to standard properties you can define:
+
+* **Model Type**
+  Referenced fragments must have been created using the specified Content Fragment Model.
+
+* **Root Path**
+  This specifies a root path for any fragments referenced.
+
+* **Allow Fragment Creation**
 
 <!-- Check screenshot - might need update -->
 

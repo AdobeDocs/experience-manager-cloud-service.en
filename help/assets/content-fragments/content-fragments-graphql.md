@@ -64,6 +64,8 @@ These [Content Fragment Models](/help/assets/content-fragments/content-fragments
 
 * Provide the data types and fields required for GraphQL to ensure that your application only requests what is possible, and receives what is expected.
 
+* The data type **[Fragment References](#fragment-references)** can be used in your model to define additional levels of structure.
+
 ### Fragment References {#fragment-references}
 
 The **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference)**:
@@ -76,7 +78,13 @@ The **[Fragment Reference](/help/assets/content-fragments/content-fragments-mode
 
 * Allows you to retrieve structured data. 
 
-  * When defined as a **multifeed**, multiple sub-fragments can be referenced by the prime fragment.
+  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+
+See:
+
+* A [sample Content Fragment structure](#content-fragment-structure-graphql) 
+
+* And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
 
 ## A Sample Content Fragment Structure for use with GraphQL {#content-fragment-structure-graphql}
 
@@ -88,7 +96,7 @@ For a simple example we need:
 
 ### Sample Content Fragment Models {#sample-content-fragment-models}
 
-If we consider the following Content Models, and their interrelationships (->):
+If we consider the following Content Models, and their interrelationships (references ->):
 
 * [Company](#company)
   -> [Person](#person)
@@ -140,9 +148,11 @@ The fields:
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
-### Sample Query - All Available Schemas
+### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
-**Query**
+This will return all available schemas and datatypes.
+
+**Sample Query**
 
 ```xml
 {
@@ -154,30 +164,66 @@ The fields:
 }
 ```
 
-**Result**
+**Sample Result**
 
-### Sample Query - All Persons that have a name of "Jobs" or "Smith"
+```xml
+{
+  "data": {
+    "__schema": {
+      "types": [
+        {
+          "name": "ArrayMode"
+        },
+        {
+          "name": "AwardModel"
+        },
+        {
+          "name": "AwardModelArrayFilter"
+        },
+        {
+          "name": "AwardModelFilter"
+        },
+        {
+          "name": "Boolean"
+        },
 
-**Query**
+...more results...
+
+       {
+          "name": "__InputValue"
+        },
+        {
+          "name": "__Schema"
+        },
+        {
+          "name": "__Type"
+        },
+        {
+          "name": "__TypeKind"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - All Persons that have a name of "Jobs" or "Smith" {#sample-all-persons-jobs-smith}
+
+**Sample Query**
 
 ```xml
 query {
   persons(filter: {
-    logOp: AND
-    expression: {
-      name: {
-        logOp: OR
-        expressions: [
-          {
-            operator: EQUALS
-            value: "Jobs"
-          },
-          {
-            operator: EQUALS
-            value: "Smith"
-          }
-        ]
-      }
+    name: {
+      _logOp: OR
+      _expressions: [
+        {
+          value: "Jobs"
+        },
+        {
+          value: "Smith"
+        }
+      ]
     }
   }) {
     name
@@ -186,7 +232,7 @@ query {
 }
 ```
 
-**Results**
+**Sample Results**
 
 ```xml
 {
@@ -203,6 +249,209 @@ query {
       {
         "name": "Jobs",
         "firstName": "Steve"
+      }
+    ]
+  }
+}
+```
+
+### Sample Query - All cities located in Germany or Switzerland with a population between 400000 and 999999 {#sample-all-cities-d-ch-population}
+
+**Sample Query**
+
+```xml
+query {
+  citys(filter: {
+    population: {
+      _expressions: [
+        {
+          value: 400000
+          _operator: GREATER_EQUAL
+        }, {
+          value: 1000000
+          _operator: LOWER
+        }
+      ]
+    },
+    country: {
+      _logOp: OR
+      _expressions: [
+        {
+          value: "Germany"
+        }, {
+          value: "Switzerland"
+        }
+      ]
+    }
+  }) {
+    name
+    population
+    country
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "citys": [
+      {
+        "name": "Stuttgart",
+        "population": 634830,
+        "country": "Germany"
+      },
+      {
+        "name": "Zurich",
+        "population": 415367,
+        "country": "Switzerland"
+      }
+    ]
+  }
+}
+```
+
+### Sample Query for Nested Content Fragments - All companies that have at least one employee that has a name of "Smith" {#sample-companies-employee-smith}
+
+**Sample Query**
+
+```xml
+query {
+  companys(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    name
+    ceo {
+      name
+      firstName
+    }
+    employees {
+      name
+      firstName
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "companys": [
+      {
+        "name": "NextStep Inc.",
+        "ceo": {
+          "name": "Jobs",
+          "firstName": "Steve"
+        },
+        "employees": [
+          {
+            "name": "Smith",
+            "firstName": "Joe"
+          },
+          {
+            "name": "Lincoln",
+            "firstName": "Abraham"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+### Sample Query for Nested Content Fragments - All companies where all employees have won the "Gamestar" award {#sample-all-companies-employee-gamestar-award}
+
+**Sample Query**
+
+```xml
+query {
+  companys(filter: {
+    employees: {
+      _apply: ALL
+      _match: {
+        awards: {
+          _match: {
+            id: {
+              _expressions: [
+                {
+                  value: "GS"
+                  _operator:EQUALS
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }) {
+    name
+    ceo {
+      name
+      firstName
+    }
+    employees {
+      name
+      firstName
+      awards {
+        id
+        title
+      }
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "companys": [
+      {
+        "name": "Little Pony, Inc.",
+        "ceo": {
+          "name": "Smith",
+          "firstName": "Adam"
+        },
+        "employees": [
+          {
+            "name": "Croft",
+            "firstName": "Lara",
+            "awards": [
+              {
+                "id": "GS",
+                "title": "Gamestar"
+              }
+            ]
+          },
+          {
+            "name": "Slade",
+            "firstName": "Cutter",
+            "awards": [
+              {
+                "id": "GB",
+                "title": "Gameblitz"
+              },
+              {
+                "id": "GS",
+                "title": "Gamestar"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
