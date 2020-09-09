@@ -21,7 +21,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Product search functionality added to Product Console.
 
-### Bug Fixes {bug-fixes-commerce}
+### Bug Fixes {#bug-fixes-commerce}
 
 * Commerce Cloud configurations did not respect inheritance. This has been fixed to ensure that configuration inherits values.
 
