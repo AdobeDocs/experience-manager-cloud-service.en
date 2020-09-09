@@ -7,6 +7,24 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.9.0.
 
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What's New {#what-is-new-commerce}
+
+* Released CIF Core Components v1.3.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) for more details.
+
+* Preview capability with product/category for product and category templates is now available. This allows business users/marketers in AEM to view the product/category templates with real data.
+
+* Properties page added to products and categories to allow business users to view details associated with the product SKU/category id.
+
+* Sorting feature added to Product Console to allow sorting of products/categories by name or price attributes.
+
+* Product search functionality added to Product Console.
+
+### Bug Fixes {#bug-fixes-commerce}
+
+* Commerce Cloud configurations did not respect inheritance. This has been fixed to ensure that configuration inherits values.
+
 
 ## Cloud Manager {#cloud-manager}
 
