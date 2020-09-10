@@ -50,10 +50,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create]**.
 1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. These are provided to you by Adobe in the provisioning email. Please contact support if you did not receive this.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
+1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that is 8-25 characters long. Note that the **[!UICONTROL Current Password]** field is pre-filled and hidden from any interaction. 
 
    >[!NOTE]
    >
-   >After you receive your provisioning email with Dynamic Media credentials, please [log into](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that the Dynamic Media cloud service is set up with the correct credentials.
+   >If necessary, you can check the spelling of a password you have typed by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
+
+1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done]**. 
+ The new password is saved the moment you tap **[!UICONTROL Save]** on the **[!UICONTROL Create Dynamic Media Configuration]** page.
+ See also Changing the password to your Dynamic Media Configuration.
 
 1. When the connection is successful, you can set the following:
 
@@ -88,8 +93,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-1. Tap **[!UICONTROL Save]**.
-1. To securely preview Dynamic Media content before it gets published, you will need to "allowlist" the AEM author instance to connect to Dynamic Media:
+1. Tap **[!UICONTROL Save]**. The new Dynamic Media password and configuration is saved. If you tapped **[!UICONTROL Cancel]** instead, no password update occurs.
+1. To securely preview Dynamic Media content before it gets published, you need to "allowlist" the AEM author instance to connect to Dynamic Media. To set this up, do the following:
 
     * Log on to your Dynamic Media Classic account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
     * On the navigation bar near the top right of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
@@ -102,6 +107,10 @@ To migrate any custom viewer presets and configurations that you have created fr
 You are now finished with the basic configuration; you are ready to use Dynamic Media.
 
 If you want to further customize your configuration, you can optionally complete any of the tasks under [Configuring Advanced Settings in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### Changing the password to your Dynamic Media configuration
+
+1. 
 
 ## (Optional) Configuring Advanced Settings in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
