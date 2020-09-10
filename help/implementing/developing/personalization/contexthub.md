@@ -5,9 +5,11 @@ description: ContextHub is a framework for storing, manipulating, and presenting
 
 # ContextHub {#contexthub}
 
-ContextHub is a framework for storing, manipulating, and presenting context data allowing you to:
+ContextHub is a framework for storing, manipulating, and presenting context data. It's primary feature is offering the ability to [view context data while simulating and switching between various personas.](/help/sites-cloud/authoring/personalization/contexthub.md)
 
-* [Present, view, and simulate user experience](#presentation) while authoring pages using context data.
+The ContextHub allowing you to:
+
+* [Present, view, switch personas, and simulate user experience](#presentation) while authoring pages using context data.
 * [Persist context data](#persistence) on your website as a data layer representation.
 * [Manage segments](#segmentation) for the selected context.
 

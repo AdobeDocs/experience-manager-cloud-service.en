@@ -5,7 +5,7 @@ description: Learn how to configure Context Hub.
 
 # Configuring ContextHub {#configuring-contexthub}
 
-ContextHub is a framework for storing, manipulating, and presenting context data. For more detail on ContextHub, please see the [developer documentation](contexthub.md).
+ContextHub is a framework for storing, manipulating, and presenting context data. For more detail on ContextHub, please see the [ContextHub developer overview](contexthub.md).
 
 You can configure the ContextHub toolbar to control whether it appears in Preview mode, to create ContextHub stores, and add UI modules.
 
