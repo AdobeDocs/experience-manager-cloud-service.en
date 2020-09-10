@@ -3,7 +3,7 @@ title: Content Fragment Models
 description: Content Fragment Models are used to create content fragments with structured content.
 ---
 
-# Content Fragment Models{#content-fragment-models}
+# Content Fragment Models {#content-fragment-models}
 
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
@@ -110,15 +110,15 @@ The content fragment model effectively defines the structure of the resulting co
 
    ![save](assets/cfm-models-07.png)
 
-## Nested Content Fragments {#nested-content-fragments}
+## Nested Content {#nested-content}
 
-Content Fragments can be nested, using either of the following data types:
+Content Fragments can form nested content, using either of the following data types:
 * **[Content Reference](#content-reference)** 
-  * Provides a simple reference to another fragment.
-  * Offers you the full flexibility to reference any other fragment.
+  * Provides a simple reference to other content; of any type.
   * Can be configured for a one or multiple references (in the resulting fragment).
-* **[Fragment Reference](#fragment-reference)** 
-  * References another fragment - dependent on a specific model.
+
+* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
+  * References another fragment, dependent on a specific model.
   * Allows you to include/retrieve structured data.
     >[!NOTE]
     >
@@ -127,17 +127,36 @@ Content Fragments can be nested, using either of the following data types:
 
 ### Content Reference {#content-reference}
 
-The Content Reference allows you to render content from another content fragment.
+The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify the **Root Path** for any referenced fragments.
+In addition to standard properties you can specify the **Root Path** for any referenced content.
 
 <!-- Check screenshot - might need update -->
 
    ![Content Reference](assets/cfm-content-reference.png)
 
-### Fragment Reference {#fragment-reference}
+### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The Fragment Reference effectively includes the content from the referenced fragment. This of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data.
+The Fragment Reference references another content fragment. This of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+
+For example:
+
+* A model defining Employee details, that include
+  * A reference to the model that defines the Company
+
+```xml
+type EmployeeModel {
+    name: String
+    firstName: String
+    company: CompanyModel
+}
+ 
+type CompanyModel {
+    name: String
+    street: String
+    city: String
+}
+```
 
 >[!NOTE]
 >

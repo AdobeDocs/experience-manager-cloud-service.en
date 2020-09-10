@@ -3,7 +3,7 @@ title: Content Delivery using Content Fragments with GraphQL
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with GraphQL for Content Delivery.
 ---
 
-# Content Delivery using Content Fragments with GraphQL {#Content Delivery using Content Fragments with GraphQL}
+# Content Delivery using Content Fragments with GraphQL {#content-delivery-using-content-fragments-with-graphQL}
 
 With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with GraphQL, to deliver structured content for use in your applications.
 
@@ -56,23 +56,17 @@ Content Fragments:
 
 * They are based on a [Content Fragment Model](#content-fragments-models), which predefines the structure for the resulting fragment.
   
-* [Can be nested](/help/assets/content-fragments/content-fragments-models.md#nested-content-fragments), using either of the following data types:
-  * **Content Reference** 
-    * This provides a simple reference to another fragment.
-  * **[Fragment Reference](#fragment-references)** 
-    * This references another fragment - dependent on a specific model.
-
 ### Content Fragment Models {#content-fragments-models}
 
 These [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md):
 
-* Provide the data types and fields required for GraphQL to ensure that your application only requests what is possible, and receives what is expected.
+* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
 
-* The data type **[Fragment References](#fragment-references)** can be used in your model to define additional levels of structure.
+* The data type **[Fragment References](#fragment-references)** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
 
 ### Fragment References {#fragment-references}
 
-The **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference)**:
+The **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**:
 
 * Is of particular interest in conjunction with GraphQL.
 
@@ -189,22 +183,31 @@ The following fragments are used for the appropriate model.
 * Basel
   * Country: Switzerland
   * Population: 172258
+  * Categories: city:emea
 * Berlin
   * Country: Germany
   * Population: 3669491
+  * Categories: city:capital and city:emea
 * Bucharest
   * Country: Romania
   * Population: 1821000
+  * Categories: city:capital and city:emea
 * San Francisco
   * Country: USA
   * Population: 883306
+  * Categories: city:na
 * San Jose
   * Country: USA
   * Population: 102635
+  * Categories: city:na
 * Stuttgart
   * Country: Germany
   * Population: 634830
+  * Categories: city:emea
 * Zurich
+  * Country: Switzerland
+  * Population: 415367
+  * Categories: city:capital and city:emea
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
@@ -263,6 +266,50 @@ This will return all available schemas and datatypes.
         }
       ]
     }
+  }
+}
+```
+
+### Sample Query - All Cities {#sample-all-cities}
+
+**Sample Query**
+
+```xml
+query {
+  citys {
+    name
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "citys": [
+      {
+        "name": "Basel"
+      },
+      {
+        "name": "Berlin"
+      },
+      {
+        "name": "Bucharest"
+      },
+      {
+        "name": "San Francisco"
+      },
+      {
+        "name": "San Jose"
+      },
+      {
+        "name": "Stuttgart"
+      },
+      {
+        "name": "Zurich"
+      }
+    ]
   }
 }
 ```
