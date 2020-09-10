@@ -72,7 +72,7 @@ The HTTP method determines the operation to be executed:
 >The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
 <!--
-The exact format of supported requests is defined in the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference) documentation.
+The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation.
 -->
 
 ### Transactional Behavior {#transactional-behavior}
@@ -149,7 +149,7 @@ Content Fragments are a specific type of Asset, see [Working with Content Fragme
 For further information about features available through the API see:
 
 * The [Assets REST API](/help/assets/mac-api-assets.md)  
-* [Entity Types](/help/assets/assets-api-content-fragments.md#entity-types), where the features specific to each supported type (as relevant to Content Fragments) are explained 
+* [Entity Types](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), where the features specific to each supported type (as relevant to Content Fragments) are explained 
 
 ### Paging {#paging}
 
@@ -231,7 +231,7 @@ Associated content is currently not exposed.
 
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
-* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
+* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * Delivery is possible from both, as AEM serves requested content in JSON format only.
 
   * Storage and delivery from an AEM author instance should suffice for behind-the-firewall, media library applications.
@@ -245,7 +245,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 <!--
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
+>For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
 -->
 
 ### Read/Delivery {#read-delivery}
