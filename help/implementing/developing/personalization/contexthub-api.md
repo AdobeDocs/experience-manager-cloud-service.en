@@ -35,7 +35,7 @@ The following table lists the names of events that occur for the ContextHub UI.
 
 | **Constant** |**Description** |**Value** |
 |---|---|---|
-| `ContextHub.Constants.EVENT_UI_MODE_REGISTERED` |Fired when a mode is registered |`ui-mode-registered `|
+| `ContextHub.Constants.EVENT_UI_MODE_REGISTERED` |Fired when a mode is registered |`ui-mode-registered`|
 | `ContextHub.Constants.EVENT_UI_MODE_UNREGISTERED` |Fired when a mode is unregistered |`ui-mode-unregistered` |
 | `ContextHub.Constants.EVENT_UI_MODE_RENDERER_REGISTERED` |Fired when a mode renderer is registered |`ui-mode-renderer-registered` |
 | `ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTERED` |Fired when a mode renderer is unregistered |`ui-mode-renderer-unregistered` |
@@ -68,11 +68,11 @@ Returns all registered ContextHub stores.
 
 This function has no parameters.
 
-**Returns**
+##### Returns {#returns-}
 
 An object that contains all ContextHub stores. Each store is an object that uses the same name as the store.
 
-**Example**
+##### Example {#example-}
 
 The following example retrieves all stores and then retrieves the geolocation store:
 
@@ -85,15 +85,15 @@ var geoloc = allStores.geolocation
 
 Retrieves a store as a Javascript object.
 
-**Parameters**
+##### Parameters {#parameters-}
 
 * **`name`:** The name with which the store was registered.
 
-**Returns**
+##### Returns {#returns-getstore-name}
 
 An object that represents the store.
 
-**Example**
+##### Example {#example-getstore-name}
 
 The following example retrieves the geolocation store:
 
@@ -125,7 +125,7 @@ Provides access to ContextHub segments.
 
 Returns the segments that are resolved in the current context. This function has no parameters.
 
-**Returns**
+##### Returns {#returns-getresolvedsegments}
 
 An array of `ContextHub.SegmentEngine.Segment` objects.
 
@@ -158,12 +158,12 @@ Merges a data object or an array with the store data. Each key/value pair in the
 
 Note that values can be objects.
 
-**Parameters**
+##### Parameters {#parameters-addallitems}
 
 * **`tree`:** (Object or array) The data to add to the store.
 * **`options`:** (Object) An optional object of options that is passed to the setItem function. For information, see the `options` parameter of [`setItem(key,value,options)`](#setitem-key-value-options).
 
-**Returns**
+##### Returns {#returns-addallitems}
 
 A `boolean` value:
 
@@ -174,13 +174,13 @@ A `boolean` value:
 
 Creates a reference from one key to another key. A key cannot reference itself.
 
-**Parameters**
+##### Parameters {#parameters-addreference}
 
 * **`key`:** The key that references `anotherKey`.
 
 * **`anotherkey`:** They key that is referenced by `key`.
 
-**Returns**
+##### Returns {#returns-addreference}
 
 A `boolean` value:
 
@@ -199,11 +199,11 @@ Removes all data from the store. The function has no parameters and no return va
 
 Returns the value that is associated with a key.
 
-**Parameters**
+##### Parameters {#parameters-getitem}
 
 * **`key`:** (String) The key for which to return the value.
 
-**Returns**
+##### Returns {#returns-getitem}
 
 An Object that represents the value for the key.
 
@@ -211,11 +211,11 @@ An Object that represents the value for the key.
 
 Retrieves the keys from the store. Optionally you can retrieve the keys that are used internally by the ContextHub framework.
 
-**Parameters**
+##### Parameters {#parameters-getkeys}
 
 * **`includeInternals`:** A value of `true` includes internally-used keys in the results. These keys begin with the underscore (`_`) character. The default value is `false`.
 
-**Returns**
+##### Returns {#returns-getkeys}
 
 An array of key names ( `string` values).
 
@@ -223,7 +223,7 @@ An array of key names ( `string` values).
 
 Retrieves the references from the store.
 
-**Returns**
+##### Returns {#returns-getreferences}
 
 An array that uses referencing keys as indices for the referenced keys:
 
@@ -234,11 +234,11 @@ An array that uses referencing keys as indices for the referenced keys:
 
 Retrieves the data tree from the store. Optionally you can include the key/value pairs that are use internally by the ContextHub framework.
 
-**Parameters**
+##### Parameters {#parameters-gettree}
 
 * `includeInternals:` A value of `true` includes internally-used key/value pairs in the results. The keys of this data begin with the underscore (`_`) character. The default value is `false`.
 
-**Returns**
+##### Returns {#returns-gettree}
 
 An object that represents the data tree. The keys are the property names of the object.
 
@@ -251,7 +251,7 @@ Initializes the store.
 * The `eventChannel` is `data:<name>`, where `<name>` is the store name.
 * The `storeDataKey` is `/store/<name>`, where `<name>` is the store name.
 
-**Parameters**
+##### Parameters {#parameters-init}
 
 * **`name`:** The name of the store.
 * **`config`:** An object that contains configuration properties:
@@ -263,7 +263,7 @@ Initializes the store.
 
 Determines whether eventing is paused for this store.
 
-**Returns**
+##### Returns {#returns-iseventingpaused}
 
 A boolean value:
 
@@ -282,13 +282,13 @@ When a key is removed, the function triggers the `data` event. The event data in
 
 Optionally, you can prevent the triggering of the `data` event.
 
-**Parameters**
+##### Parameters {#parameters-removeitem}
 
 * **`key`:** (String) The name of the key to remove.
 * **`options`:** (Object) An object of options. The following object properties are valid:
   * silent: A value of `true` prevents the triggering of the `data` event. The default value is `false`.
 
-**Returns**
+##### Returns {#returns-removeitem}
 
 A `boolean` value:
 
@@ -299,11 +299,11 @@ A `boolean` value:
 
 Removes a reference from the store.
 
-**Parameters**
+##### Parameters {#parameters-removereference}
 
 * **`key`:** The key reference to remove. This parameter corresponds with the `key` parameter of the `addReference` function.
 
-**Returns**
+##### Returns {#returns-removereference}
 
 A `boolean` value:
 
@@ -316,15 +316,7 @@ Resets the initial values of the store's persisted data. Optionally, you can rem
 
 Initial values are provided in the `initialValues` property of the config object that is used to instantiate the store object.
 
-**Parameters**
-
-* **`keepRemainingData`:** (Boolean) A value of true causes non-initial data to be persisted. A value of false causes all data to be removed except for the initial values.
-
-Resets the initial values of the store's persisted data. Optionally, you can remove all other data from the store. Eventing is paused for this store while the store is reset. This function returns no value.
-
-Initial values are provided in the initialValues property of the config object that is used to instantiate the store object.
-
-**Parameters**
+##### Parameters {#parameters-reset}
 
 * **`keepRemainingData`**: (Boolean) A value of true causes non-initial data to be persisted. A value of false causes all data to be removed except for the initial values.
 
@@ -332,12 +324,12 @@ Initial values are provided in the initialValues property of the config object t
 
 Retrieves a referenced key. Optionally, you can specify the number of iterations to use for resolving the best match.
 
-**Parameters**
+##### Parameters {#parameters-resolvereference}
 
 * **`key`:** (String) The key for which to resolve the reference. This `key` parameter corresponds with the `key` parameter of the `addReference` function.
 * **`retry`:** (Number) The number of iterations to use.
 
-**Returns**
+##### Returns {#returns-resolvereference}
 
 A `string` value that represents the referenced key. If no reference is resolved, the value of the `key` parameter is returned.
 
@@ -353,14 +345,14 @@ Triggers the `data` event only if the value for the key is different than the va
 
 The event data includes the store name, the key, the previous value, the new value, and the action type of `set`.
 
-**Parameters**
+##### Parameters {#parameters-setitem}
 
 * **`key`:** (String) The name of the key.
 * **`options`:** (Object) An object of options. The following object properties are valid:
   * `silent`: A value of `true` prevents the triggering of the `data` event. The default value is `false`.
 * **`value`:** (Object) The value to associate with the key.
 
-**Returns**
+##### Returns {#returns-setitem}
 
 A `boolean` value:
 
@@ -381,7 +373,7 @@ ContextHub.Store.JSONPStore extends [ContextHub.Store.Core](#contexthub-store-co
 
 Configures the details for connecting to the JSONP service that this object uses. You can either update or replace the existing configuration. The function returns no value.
 
-**Parameters**
+##### Parameters {#parameters-configureservice}
 
 * **`serviceConfig`:** An object that contains the following properties:
   * `host`: (String) The server name or IP address.
@@ -399,7 +391,7 @@ Configures the details for connecting to the JSONP service that this object uses
 
 Returns the raw response that is cached since the last call to the JSONP service. The function requires no parameters.
 
-**Returns**
+##### Returns {#returns-getrawresponse}
 
 An object that represents the raw response.
 
@@ -407,7 +399,7 @@ An object that represents the raw response.
 
 Retrieves the service object for this ContextHub.Store.JSONPStore object. The service object contains all of the information required to create the service URL.
 
-**Returns**
+##### Returns {#returns-getservicedetails}
 
 An object with the following properties:
 
@@ -425,11 +417,11 @@ An object with the following properties:
 
 Retrieves the URL of the JSONP service.
 
-**Parameters**
+##### Parameters {#parameters-getserviceurl}
 
 * **`resolve`:** (Boolean) Determines whether to include resolved parameters in the URL. A value of `true` resolves parameters, and `false` does not.
 
-**Returns**
+##### Returns {#returns-getserviceurl}
 
 A `string` value that represents the service URL.
 
@@ -437,7 +429,7 @@ A `string` value that represents the service URL.
 
 initializes the `ContextHub.Store.JSONPStore` object.
 
-**Parameters**
+##### Parameters {#parameters-init-1}
 
 * **`name`:** (String) The name of the store.
 * **`config`:** (Object) An object that contains the service property. The JSONPStore object uses the properties of the `service` object to construct the URL of the JSONP service:
@@ -463,7 +455,7 @@ Queries the remote JSONP service and caches the response. If the amount of time 
 
 Triggers the ready event when the query is finished. If the JSONP service URL is not set, the function does nothing.
 
-**Parameters**
+##### Parameters {#parameters-queryservice}
 
 * **`reload`:** (Boolean) A value of true removes the cached response and forces the JSONP service to be called.
 
@@ -473,7 +465,7 @@ Resets the initial values of the store's persisted data and then calls the JSONP
 
 Initial values are provided in the initialValues property of the config object that is used to instantiate the store object.
 
-**Parameters**
+##### Parameters {#parameters-reset-1}
 
 * **`keepRemainingData`:** (Boolean) A value of true causes non-initial data to be persisted. A value of false causes all data to be removed except for the initial values.
 
@@ -503,13 +495,13 @@ Manages UI modules and UI module renderers.
 
 Registers a UI module renderer with ContextHub. After the renderer is registered, it can be used to [create UI modules](configuring-contexthub.md#adding-a-ui-module). Use this function when you are [extending `ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types) to create a custom UI Module renderer.
 
-**Parameters**
+##### Parameters {#parameters-registerrenderer}
 
 * **`moduleType`:** (String) The identifier for the UI module renderer. If a renderer is already registered using the specified value, the existing renderer is unregistered before this renderer is registered.
 * **`renderer`:** (String) The name of the class that renders the UI module.
 * **`dontRender`:** (Boolean) Set to `true` to prevent the ContextHub UI from being rendered after the renderer is registered. The default value is `false`.
 
-**Example**
+##### Example {#example-registerrenderer}
 
 The following example registers a renderer as the `contexthub.browserinfo` module type.
 
@@ -527,15 +519,15 @@ A utility class for interacting with cookies.
 
 Determines whether a cookie exists.
 
-**Parameters**
+##### Parameters {#parameters-exists}
 
 * **`key`:** A `String` that contains the key of the cookie for which you are testing.
 
-**Returns**
+##### Returns {#returns-exists}
 
 A `boolean` value of true indicates that the cookie exists.
 
-**Example**
+##### Example {#example-exists}
 
 ```javascript
 if (ContextHub.Utils.Cookie.exists("name")) {
@@ -547,7 +539,7 @@ if (ContextHub.Utils.Cookie.exists("name")) {
 
 Returns all cookies that have keys that match a filter.
 
-**Parameters**
+##### Parameters {#parameters-getallitems}
 
 * **`filter`:** (Optional) Criteria for matching cookie keys. To return all cookies, specify no value. The following types are supported:
   * String: The string is compared to the cookie key.
@@ -555,11 +547,11 @@ Returns all cookies that have keys that match a filter.
   * A RegExp object: The test function of the object is used to match cookie keys.
   * A function: A function that tests a cookie key for a match. The function must take the cookie key as a parameter and return true if the test confirms a match.
 
-**Returns**
+##### Returns {#returns-getallitems}
 
 An object of cookies. Object properties are cookie keys and key values are cookie values.
 
-**Example**
+##### Example {#example-getallitems}
 
 ```javascript
 ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
@@ -569,15 +561,15 @@ ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 
 Returns a cookie value.
 
-**Parameters**
+##### Parameters {#parameters-getitem-1}
 
 * **`key`:** The key of the cookie for which you want the value.
 
-**Returns**
+##### Returns {#returns-getitem-1}
 
 The cookie value, or `null` if no cookie was found for the key.
 
-**Example**
+##### Example {#example-getitem-1}
 
 ```javascript
 ContextHub.Utils.Cookie.getItem("name");
@@ -587,7 +579,7 @@ ContextHub.Utils.Cookie.getItem("name");
 
 Returns an array of the keys of existing cookies that match a filter.
 
-**Parameters**
+##### Parameters {#parameters-getkeys-1}
 
 * **`filter`:** Criteria for matching cookie keys. The following types are supported:
   * String: The string is compared to the cookie key.
@@ -595,11 +587,11 @@ Returns an array of the keys of existing cookies that match a filter.
   * A RegExp object: The test function of the object is used to match cookie keys.
   * A function: A function that tests a cookie key for a match. The function must take the cookie key as a parameter and return `true` if the test confirms a match.
 
-**Returns**
+##### Returns {#returns-getkeys-1}
 
 An array of strings where each string is the key of a cookie that matches the filter.
 
-**Example**
+##### Example {#example-getkeys-1}
 
 ```javascript
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
@@ -609,16 +601,16 @@ ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 
 Removes a cookie. To remove the cookie, the value is set to an empty string and the expiry date is set to the day before the current date.
 
-**Parameters**
+##### Parameters {#parameters-removeitem-1}
 
 * **`key`:** A `String` value that represents the key of the cookie to remove.
 * **`options`:** An object that contains property values for configuring the cookie attributes. See the [`setItem`](#setitem-key-value-options) function for information. The `expires` property has no effect.
 
-**Returns**
+##### Returns {#returns-removeitem-1}
 
 This function does not return a value.
 
-**Example**
+##### Example {#example-removeitem-1}
 
 ```javascript
 ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
@@ -628,7 +620,7 @@ ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 
 Creates a cookie of the given key and value, and adds the cookie to the current document. Optionally, you can specify options that configure the attributes of the cookie.
 
-**Parameters**
+##### Parameters {#parameters-setitem-1}
 
 * **`key`:** A String that contains the key of the cookie.
 * **`value`:** A String that contains the cookie value.
@@ -637,11 +629,11 @@ Creates a cookie of the given key and value, and adds the cookie to the current 
   * `secure`: A `boolean` value that specifies the `Secure` attribute of the cookie. The default value is `false`.
   * `path`: A `String` value to use as the `Path` attribute of the cookie. The default value is `undefined`.
 
-**Returns**
+##### Returns {#returns-setitem-1}
 
 The cookie with the set value.
 
-**Example**
+##### Example {#example-setitem-1}
 
 ```javascript
 ContextHub.Utils.Cookie.setItem("name", "mycookie", {
@@ -656,12 +648,12 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 Removes all cookies that match a given filter. Cookies are matched using the `getKeys` function and removed using the `removeItem` function.
 
-**Parameters**
+##### Parameters {#parameters-vanish}
 
 * **`filter`:** The `filter` argument to use in the call to the [`getKeys`](#getkeys-filter) function.
 * **`options`:** The `options` argument to use in the call to the [`removeItem`](#removeitem-key-options) function.
 
-**Returns**
+##### Returns {#returns-vanish}
 
 This function does not return a value.
 
@@ -675,12 +667,12 @@ Enables you to bind and unbind functions to ContextHub store events. Access `Con
 
 Unbinds a function from an event.
 
-**Parameters**
+##### Parameters {#parameters-off}
 
 * **`name`:** The [name of the event](#contexthub-utils-eventing) for which you are unbinding the function.
 * **`selector`:** The selector that identifies the bind. (See the `selector` parameter for the [`on`](#on-name-handler-selector-triggerforpastevents) and [`once`](#once-name-handler-selector-triggerforpastevents) functions).
 
-**Returns**
+##### Returns {#returns-off}
 
 This function returns no value.
 
@@ -688,14 +680,14 @@ This function returns no value.
 
 Binds a function to an event. The function is called every time the event occurs. Optionally, the function can be called for events that have occurred in the past, before the binding is established.
 
-**Parameters**
+##### Parameters {#parameters-on}
 
 * **`name`:** (String) The [name of the event](#contexthub-utils-eventing) to which you are binding the function.
 * **`handler`:** (Function) The function to bind to the event.
 * **`selector`:** (String) A unique identifier for the bind. You need the selector to identify the bind if you want to use the `off` function to remove the bind.
 * **`triggerForPastEvents`:** (Boolean) Indicates whether the handler should be executed for events that occurred in the past. A value of `true` calls the handler for past events. A value of `false` calls the handler for future events. The default value is `true`.
 
-**Returns**
+##### Returns {#returns-on}
 
 When the `triggerForPastEvents` argument is `true`, this function returns a `boolean` value that indicates whether the event occurred in the past:
 
@@ -704,7 +696,7 @@ When the `triggerForPastEvents` argument is `true`, this function returns a `boo
 
 If `triggerForPastEvents` is `false`, this function returns no value.
 
-**Example**
+##### Example {#example-on}
 
 The following example binds a function to the data event of the geolocation store. The function populates an element on the page with the value for the latitude data item from the store.
 
@@ -728,14 +720,14 @@ The following example binds a function to the data event of the geolocation stor
 
 Binds a function to an event. The function is called only once, for the first occurrence of the event. Optionally, the function can be called for the event that has occurred in the past, before the binding is established.
 
-**Parameters**
+##### Parameters {#parameters-once}
 
 * **`name`:** (String) The [name of the event](#contexthub-utils-eventing) to which you are binding the function.
 * **`handler`:** (Function) The function to bind to the event.
 * **`selector`:** (String) A unique identifier for the bind. You need the selector to identify the bind if you want to use the `off` function to remove the bind.
 * **`triggerForPastEvents`:** (Boolean) Indicates whether the handler should be executed for events that occurred in the past. A value of `true` calls the handler for past events. A value of `false` calls the handler for future events. The default value is `true`.
 
-**Returns**
+##### Returns {#returns-once}
 
 When the `triggerForPastEvents` argument is `true`, this function returns a `boolean` value that indicates whether the event occurred in the past:
 
@@ -754,7 +746,7 @@ A utility class that enables an object to inherit the properties and methods of 
 
 Causes an object to inherit the properties and methods of another object.
 
-**Parameters**
+##### Parameters {#parameters-inherit}
 
 * **`child`:** (Object) The object that inherits.
 * **`parent`:** (Object) The object that defines the properties and methods that are inherited.
@@ -769,15 +761,15 @@ Provides functions for serializing objects into JSON format and deserializing JS
 
 Parses a string value as JSON and converts it into a javascript object.
 
-**Parameters**
+##### Parameters {#parameters-parse}
 
 * **`data`:** A string value in JSON format.
 
-**Returns**
+##### Returns {#returns-parse}
 
 A Javascript object.
 
-**Example**
+##### Example {#example-parse}
 
 The code:
 
@@ -799,17 +791,17 @@ Object {
 
 Serializes Javascript values and objects into string values of JSON format.
 
-**Parameters**
+##### Parameters {#parameters-stringify}
 
 * **`data`:** The value or object to serialize. This function supports boolean, array, number, string, and date values.
 
-**Returns**
+##### Returns {#returns-stringify}
 
 The serialized string value. When `data` is a R `egExp` value, this function returns an empty object. When `data` is a function, returns `undefined`.
 
-**Example**
+##### Example {#example-stringify}
 
-The following code: 
+The following code:
 
 ```javascript
 ContextHub.Utils.JSON.stringify({
@@ -835,12 +827,12 @@ This class facilitates the manipulation of data objects that to be stored or are
 
 Creates a copy of a data object and adds to it the data tree from a second object. The function returns the copy and does not modify either of the original objects. When the data trees of the two objects contain identical keys, the value of the second object overwrites the value of the first object.
 
-**Parameters**
+##### Parameters {#parameters-addallitems-1}
 
 * **`tree`:** The object that is copied.
 * **`secondTree`:** The object that is merged with the copy of the `tree` object.
 
-**Returns**
+##### Returns {#returns-addallitems-1}
 
 An object that contains the merged data.
 
@@ -848,11 +840,11 @@ An object that contains the merged data.
 
 Creates a copy of an object, finds and removes items in the data tree that contain no values, null values, or undefined values, and returns the copy.
 
-**Parameters**
+##### Parameters {#parameters-cleanup}
 
 * **`tree`:** The object to clean.
 
-**Returns**
+##### Returns {#returns-cleanup}
 
 A copy of tree that is cleaned.
 
@@ -860,16 +852,16 @@ A copy of tree that is cleaned.
 
 Retrieves the value from an object for the a key.
 
-**Parameters**
+##### Parameters {#parameters-getitem-2}
 
 * **`tree`:** The data object.
 * **`key`:** The key for the value that you want to retrieve.
 
-**Returns**
+##### Returns {#returns-getitem-2}
 
 The value that corresponds with the key. When the key has child keys, this function returns a complex object. When the type of the value for the key is `undefined`, `null` is returned.
 
-**Example**
+##### Example {#example-getitem-2}
 
 Consider the following Javascript object:
 
@@ -917,17 +909,17 @@ Object {
 
 Retrieves all keys from the data tree of an object. Optionally, you can retrieve only the keys of the children of a specific key. You can also optionally specify a sort order of the retrieved keys.
 
-**Parameters**
+##### Parameters {#parameters-getkeys-2}
 
 * **`tree`:** The object from which to retrieve the keys of the data tree.
 * **`parent`:** (Optional) The key of an item in the data tree for which you want to retrieve the keys of the child items.
 * **`order`:** (Optional) A function that determines the sort order of the returned keys. (See [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) on the Mozilla Developer Network.)
 
-**Returns**
+##### Returns {#returns-getkeys-2}
 
 An array of keys.
 
-**Example**
+##### Example {#example-getkeys-2}
 
 Consider the following object:
 
@@ -958,16 +950,16 @@ The `ContextHub.Utils.JSON.tree.getKeys(myObject);` script returns the following
 
 Creates a copy of a given object, removes the specified branch from the data tree, and returns the modified copy.
 
-**Parameters**
+##### Parameters {#parameters-removeitem-2}
 
 * **`tree`:** A data object.
 * **`key`:** The key to remove.
 
-**Returns**
+##### Returns {#returns-removeitem-2}
 
 A copy of the original data object with the key removed.
 
-**Example**
+##### Example {#example-removeitem-2}
 
 Consider the following object:
 
@@ -1013,15 +1005,15 @@ Sanitizes string values to make them usable as keys. To sanitize a string, this 
 
 Use the resultant array to create a usable key.  
 
-**Parameters**
+##### Parameters {#parameters-sanitizekey}
 
 * **`key`:** The `string` to sanitize.
 
-**Returns**
+##### Returns {#returns-sanitizekey}
 
 An array of `string` values where each string is the portion of the `key` that was demarcated by slashes. represents the sanitized key. If the sanitized array has a length of zero, this function returns `null`.
 
-**Example**
+##### Example {#example-sanitizekey}
 
 The following code sanitizes a string to produce the array `["this", "is", "a", "path"]`, and then generates the key `"/this/is/a/path"` from the array:
 
@@ -1035,17 +1027,17 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 Adds a key/value pair to the data tree of a copy of an object. For information about data trees, see [Persistence.](contexthub.md#persistence)
 
-**Parameters**
+##### Parameters {#parameters-setitem-2}
 
 * **`tree`:** A data object.
 * **`key`:** The key to associate with the value that you are adding. The key is the path to the item in the data tree. This function calls `ContextHub.Utils.JSON.tree.sanitize` to sanitize the key before adding it.
 * **`value`:** The value to add to the data tree.
 
-**Returns**
+##### Returns {#returns-setitem-2}
 
 A copy of the `tree` object that includes the `key`/ `value` pair.
 
-**Example**
+##### Example {#example-setitem-2}
 
 Consider the following Javascript code:
 
@@ -1078,11 +1070,11 @@ Enables you to register store candidates and obtain registered store candidates.
 
 Returns the store types that are registered as store candidates. Either retrieve the registered candidates of a specific store type or of all store types.
 
-**Parameters**
+##### Parameters {#parameters-getregisteredcandidates}
 
 * **`storeType`:** (String) The name of the store type. See the `storeType` parameter of the [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) function.
 
-**Returns**
+##### Returns {#returns-getregisteredcandidates}
 
 An object of store types. The object properties are the store type names, and the property values are an array of registered store candidates.
 
@@ -1090,11 +1082,11 @@ An object of store types. The object properties are the store type names, and th
 
 Returns a store type from the registered candidates. If more than one store type of the same name is registered, the function returns the store type with the highest priority.
 
-**Parameters**
+##### Parameters {#parameters-getstorefromcandidates}
 
 * `storeType`: (String) The name of the store candidate. See the `storeType` parameter of the [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies) function.
 
-**Returns**
+##### Returns {#returns-getstorefromcandidates}
 
 An object that represents the registered store candidate. If the requested store Type is not registered, an error is thrown.
 
@@ -1102,7 +1094,7 @@ An object that represents the registered store candidate. If the requested store
 
 Returns the names of the store types that are registered as store candidates. This function requires no parameters.
 
-**Returns**
+##### Returns {#returns-getsupportedstoretypes}
 
 An array of string values, where each string is the storetype with which a store candidate was registered. See the `storeType` parameter of the [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) function.
 
@@ -1112,14 +1104,14 @@ Registers a store object as a store candidate using a name and priority.
 
 The priority is a number that indicates the importance of same-named stores. When a store candidate is registered using the same name as an already-registered store candidate, the candidate with the higher priority is used. When registering a store candidate, the store is registered only if the priority is higher than same-named registered store candidates.
 
-**Parameters**
+##### Parameters {#parameters-registerstorecandidate}
 
 * **`store`:** (Object) The store object to register as a store candidate.
 * **`storeType`:** (String) The name of the store candidate. This value is required when creating an instance of the store candidate.
 * **`priority`:** (Number) The priority of the store candidate.
 * **`applies`:** (Function) The function to invoke that evaluates the applicability of the store in the current environment. The function must return `true` if the store is applicable, and `false` otherwise. The default value is a function that returns true: `function() {return true;}`
 
-**Example**
+##### Example {#example-registerstorecandidate}
 
 ```javascript
 ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
