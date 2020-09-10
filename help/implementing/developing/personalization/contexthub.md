@@ -22,7 +22,7 @@ The [ContextHub toolbar](/help/sites-cloud/authoring/personalization/contexthub.
 Each ContextHub UI module is an instance of a predefined module type:
 
 * ContextHub provides several [sample module types](sample-modules.md).
-* Use AEM consoles to [add UI modules](/help/operations/contexthub-configuration.md#adding-a-ui-module), and to [group them in UI modes](/help/operations/contexthub-configuration.md#adding-a-ui-mode).
+* Use AEM consoles to [add UI modules](configuring-contexthub#adding-a-ui-module), and to [group them in UI modes](configuring-contexthub.md#adding-a-ui-mode).
 * Developers can [create custom module types](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 Developers need to [add the ContextHub component to the page](configuring-contexthub.md).

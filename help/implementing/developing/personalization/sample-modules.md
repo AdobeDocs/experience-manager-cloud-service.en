@@ -67,7 +67,7 @@ The following example configures a c`ontexthub.base` UI module to display inform
 
 ## contexthub.browserinfo UI Module Type {#contexthub-browserinfo-ui-module-type}
 
-The `contexthub.browserinfo` UI module displays information about the client web browser and operating system. Information is obtained from the surferinfo store, based on the [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) store candidate.
+The `contexthub.browserinfo` UI module displays information about the client web browser and operating system. Information is obtained from the surferinfo store, based on the [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) store candidate.
 
 ![contexthub.browserinfo module](assets/browserinfo-module.png)
 
@@ -156,7 +156,7 @@ Instances of the contexthub.location UI module do not require a value for the De
 
 ## contexthub.screen-orientation UI Module Type {#contexthub-screen-orientation-ui-module-type}
 
-The `contexthub.screen-orientation` UI module displays the current screen orientation of the client. Although disabled by default, the module provides a popover that enables you to select an orientation. The module obtains information from a ContextHub store named emulators that is based on the [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) store candidate.
+The `contexthub.screen-orientation` UI module displays the current screen orientation of the client. Although disabled by default, the module provides a popover that enables you to select an orientation. The module obtains information from a ContextHub store named emulators that is based on the [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) store candidate.
 
 ![contexthub.screen-orientation module](assets/screen-orientation-module.png)
 

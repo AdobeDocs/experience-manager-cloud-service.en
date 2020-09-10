@@ -111,7 +111,7 @@ AEM provides the following sample store candidates upon which you can base a sto
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) |Defines properties and capabilities for a number of devices, and detects the current client device |
 | [contexthub.generic-jsonp](sample-stores.md#contexthub-generic-jsonp-sample-store-candidate) |Retrieves and stores data from a JSONP service |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) |Stores profile data for the current user |
-| [contexthub.surferinfo](samples-tores.md#contexthub-surferinfo-sample-store-candidate) |Stores information about the client, such as device information, browser type, and window orientation |
+| [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) |Stores information about the client, such as device information, browser type, and window orientation |
 | [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) |Stores page tags and tag counts |
 
 1. On the Experience Manager rail, click or tap Tools &gt; Sites &gt; ContextHub.
