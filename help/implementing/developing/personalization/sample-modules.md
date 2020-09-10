@@ -71,7 +71,7 @@ The `contexthub.browserinfo` UI module displays information about the client web
 
 ![contexthub.browserinfo module](assets/browserinfo-module.png)
 
-The source code for the UI module is located at /libs/granite/contexthub/components/modules/browserinfo. Although contexthub.browserinfo extends the contexthub.base UI module, it does not override or provide additional functions. The implementation provides a default configuration for rendering browser information.
+The source code for the UI module is located at `/libs/granite/contexthub/components/modules/browserinfo`. Although `contexthub.browserinfo` extends the `contexthub.base` UI module, it does not override or provide additional functions. The implementation provides a default configuration for rendering browser information.
 
 ### Configuration {#configuration-1}
 
@@ -94,7 +94,7 @@ The `contexthub.datetime` UI module displays the date and time that is stored in
 
 The module provides a popover form that enables you to change the date and time in the store.
 
-The source of the contexthub.datetime UI module is located at `/libs/granite/contexthub/components/modules/datetime`.
+The source of the `contexthub.datetime` UI module is located at `/libs/granite/contexthub/components/modules/datetime`.
 
 ### Configuration {#configuration-2}
 

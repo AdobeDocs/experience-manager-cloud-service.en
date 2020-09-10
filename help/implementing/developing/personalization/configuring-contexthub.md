@@ -240,4 +240,4 @@ ContextHub can be disabled to prevent it from loading js/css and initializing. T
 
 or
 
-* Use CRXDE Lite to set the property `disabled` to **true** under `/libs/settings/cloudsettings`
+* Use CRXDE Lite to set the property `disabled` to **true** under `/conf/global/settings/cloudsettings/<configName>/contexthub`
