@@ -50,15 +50,19 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create]**.
 1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. These are provided to you by Adobe in the provisioning email. Please contact support if you did not receive this.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
-1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that is 8-25 characters long. Note that the **[!UICONTROL Current Password]** field is pre-filled and hidden from any interaction. 
+1. In the **[!UICONTROL Change Password]** dialog box, do the following:
 
-   >[!NOTE]
-   >
-   >If necessary, you can check the spelling of a password you have typed by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
+   * In the **[!UICONTROL New Password]** field, enter a new password that contains one upper-case character and is 8-25 characters long. (Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction.) 
 
-1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done]**. 
- The new password is saved the moment you tap **[!UICONTROL Save]** on the **[!UICONTROL Create Dynamic Media Configuration]** page.
- See also Changing the password to your Dynamic Media Configuration.
+      If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
+
+   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]** 
+
+   The new password is saved when you tap **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
+
+   If you tapped **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you are still required to enter a new password when you tap **[!UICONTROL Save]** to save the Dynamic Media configuration.
+  
+   See also [Changing the password to Dynamic Media](#change-dm-password).
 
 1. When the connection is successful, you can set the following:
 
@@ -94,6 +98,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tap **[!UICONTROL Save]**. The new Dynamic Media password and configuration is saved. If you tapped **[!UICONTROL Cancel]** instead, no password update occurs.
+1. In the **[!UICONTROL Configuring Dynamic Media]** dialog box, tap **[!UICONTROL OK]**.
 1. To securely preview Dynamic Media content before it gets published, you need to "allowlist" the AEM author instance to connect to Dynamic Media. To set this up, do the following:
 
     * Log on to your Dynamic Media Classic account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
@@ -108,10 +113,28 @@ You are now finished with the basic configuration; you are ready to use Dynamic 
 
 If you want to further customize your configuration, you can optionally complete any of the tasks under [Configuring Advanced Settings in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-### Changing the password to your Dynamic Media configuration
+### Changing the password to Dynamic Media {#change-dm-password}
 
-1. 
+Password expiration in Dynamic Media is set to 100 years from the current system date.
 
+Passwords must contain at least one upper-case character and be 8-25 characters in length.
+
+If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
+
+The changed password is saved when you tap **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page.
+
+1. In AEM, tap the AEM logo to access the global navigation console.
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Edit.]**
+1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, directly below the **[!UICONTROL Password]** field, tap **[!UICONTROL Change Password.]**
+1. In the **[!UICONTROL Change Password]** dialog box, do the following:
+
+   * In the **[!UICONTROL New Password]** field, enter a new password. (Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction.) 
+
+   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]**
+
+1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK.]**
+ 
 ## (Optional) Configuring Advanced Settings in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 If you want to further customize the configuration and setup of Dynamic Media, or optimize its performance, you can complete one or more of the following *optional* tasks:
