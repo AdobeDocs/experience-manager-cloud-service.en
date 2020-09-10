@@ -29,7 +29,7 @@ The aem.segmentation store candidate extends [`ContextHub.Store.PersistedJSONPSt
 
 ### Configuration {#configuration-segmentation}
 
-When you create an aem.segmentation store, you do not need to provide a detailed configuration. The default configuration specifies the location of the ContextHub segment definitions.
+When you create an `aem.segmentation` store, you do not need to provide a detailed configuration. The default configuration specifies the location of the ContextHub segment definitions.
 
 ```xml
 {
@@ -43,7 +43,7 @@ When you create an aem.segmentation store, you do not need to provide a detailed
 
 ## contexthub.geolocation Sample Store Candidate {#contexthub-geolocation-sample-store-candidate}
 
-The contexthub.geolocation sample store candidate uses Google Maps to obtain and store information about the client location.
+The `contexthub.geolocation` sample store candidate uses Google Maps to obtain and store information about the client location.
 
 ### Source Location {#source-location-geolocation}
 
@@ -51,13 +51,13 @@ The contexthub.geolocation sample store candidate uses Google Maps to obtain and
 
 ### Base Implementation {#base-implementation-geolocation}
 
-The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+The `contexthub.geolocation` store candidate extends [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-geolocation}
 
 The default configuration specifies information about the Google service and the initial latitude and longitude coordinates.
 
-```xml
+```javascript
 {
         "service": {
             "jsonp": false,
@@ -88,7 +88,7 @@ The default configuration specifies information about the Google service and the
 
 The store uses a data tree that is similar to the following example:
 
-```xml
+```javascript
 {
    "latitude":"37.331375",
    "longitude":"-121.893992"
@@ -111,7 +111,7 @@ Stores information about the current client environment such as the device, wind
 
 ### Base Implementation {#base-implementation-surferinfo}
 
-The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+The `contexthub.surferinfo` store candidate extends [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-surferinfo}
 
@@ -121,7 +121,7 @@ The default configuration is inherited from `ContextHub.Store.PersistedStore`.
 
 Stores that use this store candidate have a data tree that is similar to the following example:
 
-```xml
+```javascript
 {
    "display":{
       "resolution":{
@@ -170,7 +170,7 @@ Stores that use this store candidate have a data tree that is similar to the fol
 
 ## granite.emulators Sample Store Candidate {#granite-emulators-sample-store-candidate}
 
-The granite.emulators sample store candidate stores information about client devices.
+The `granite.emulators` sample store candidate stores information about client devices.
 
 ### Source Location {#source-location-emulators}
 
@@ -178,13 +178,13 @@ The granite.emulators sample store candidate stores information about client dev
 
 ### Base Implementation {#base-implementation-emulators}
 
-The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+The `granite.emulators` store candidate extends [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-emulators}
 
 The default configuration includes an array named `defaultEmulators` that contains information about different devices. When you create a store, provide different device profiles in the Detail Configuration property as required, using the format illustrated in the following example:
 
-```xml
+```javascript
 {
    "defaultEmulators":[
         {
@@ -231,7 +231,7 @@ The default configuration includes an array named `defaultEmulators` that contai
 
 The store data tree is similar to the following example:
 
-```xml
+```javascript
 {
    "devices":[
       {"id":"native",
@@ -312,13 +312,13 @@ Stores information about the current user.
 
 ### Base Implementation {#base-implementation-profile}
 
-The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+The `granite.profile` store candidate extends [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-profile}
 
 The following default configuration is used. You should not change this configuration.
 
-```xml
+```javascript
 {
    "service":{
       "jsonp":false,
@@ -333,7 +333,7 @@ The following default configuration is used. You should not change this configur
 
 Stores that use this store candidate have a data tree that is similar to the following example:
 
-```xml
+```javascript
 {
    "displayName":"anonymous",
    "path":"/home/users/6/6zavE_DGre6Ad9Y5E0Ba",

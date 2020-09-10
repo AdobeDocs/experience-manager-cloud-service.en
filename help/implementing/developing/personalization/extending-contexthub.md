@@ -19,7 +19,7 @@ The javascript file that includes the code that creates and registers the store 
 contexthub.store.[storeType]
 ```
 
-The `[storeType]` part of the category is the `storeType` with which the store candidate is registered. (See [Registering a ContextHub Store Candidate](#registering-a-contexthub-store-candidate)). For example, for the storeType of `contexthub.mystore`, the category of the client library folder must be `contexthub.store.contexthub.mystore`.
+The `storeType` part of the category is the `storeType` with which the store candidate is registered. (See [Registering a ContextHub Store Candidate](#registering-a-contexthub-store-candidate)). For example, for the storeType of `contexthub.mystore`, the category of the client library folder must be `contexthub.store.contexthub.mystore`.
 
 ### Creating a ContextHub Store Candidate {#creating-a-contexthub-store-candidate}
 
@@ -39,7 +39,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-Realistically, your custom store candidates will define additional functions or override the store's initial configuration. Several [sample store candidates](/sample-stores.md) are installed in the repository below `/libs/granite/contexthub/components/stores`. To learn from these samples, use CRXDE Lite to open the javascript files.
+Realistically, your custom store candidates will define additional functions or override the store's initial configuration. Several [sample store candidates](sample-stores.md) are installed in the repository below `/libs/granite/contexthub/components/stores`.
 
 ### Registering a ContextHub Store Candidate {#registering-a-contexthub-store-candidate}
 
