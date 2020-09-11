@@ -52,7 +52,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
 1. In the **[!UICONTROL Change Password]** dialog box, do the following:
 
-   * In the **[!UICONTROL New Password]** field, enter a new password that contains one upper-case character and is 8-25 characters long. (Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction.) 
+   * In the **[!UICONTROL New Password]** field, enter a new password that contains a minimum of one upper-case character and one number, and consist of 8-25 characters. (Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction.) 
 
       If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
 
@@ -117,7 +117,7 @@ If you want to further customize your configuration, you can optionally complete
 
 Password expiration in Dynamic Media is set to 100 years from the current system date.
 
-Passwords must contain at least one upper-case character and be 8-25 characters in length.
+Passwords must contain a minimum of one upper-case character and one number, and consist of 8-25 characters.
 
 If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
 
