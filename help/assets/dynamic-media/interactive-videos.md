@@ -116,7 +116,7 @@ Normally there is no need for you to use any specialized debugging tools. Modern
 
 * To see all outgoing HTTP requests in Google Chrome, press **F12** (Windows) or **Command+Options+I** (Mac) to open the Developer Tools panel, and then click the **Network** tab.
 
-* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **Net]** tab, or you can use the built-in Inspector tool and its Network tab.
+* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **[Net]** tab, or you can use the built-in Inspector tool and its Network tab.
 
 * In Internet Explorer activate the debugger tool by pressing **F12**.
 
@@ -253,7 +253,7 @@ See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-f
 
 >[!NOTE]
 >
->Be aware that the social media sharing tools in Interactive Video are not supported when you embed the viewer in an Experience Fragment.  To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>Be aware that the social media sharing tools in Interactive Video are not supported when you embed the viewer in an Experience Fragment. To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
 >[!NOTE]
 >

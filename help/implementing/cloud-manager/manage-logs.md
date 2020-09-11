@@ -15,7 +15,7 @@ Or, the **Environments** page:
 
 ![](assets/download-logs.png)
 
->[!Note]
+>[!NOTE]
 >Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
 
   ![](assets/manage-logs3.png)
@@ -60,7 +60,7 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
+>[!NOTE]
 >While **Log Downloads** will be available through both the UI and API, **Log Tailing** is API/CLI-only.
 
 ### Additional Resources {#resources}

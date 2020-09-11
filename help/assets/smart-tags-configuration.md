@@ -16,6 +16,10 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 3. Keystroke all steps and check all screenshots.
 -->
 
+>[!IMPORTANT]
+>
+>The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the existing deployments, administrators follow these steps to configure it.
+
 ## Integrate with Adobe Developer Console {#aio-integration}
 
 Before you can tag the images using SCS, integrate [!DNL Adobe Experience Manager] with the Smart Tags service using Adobe Developer Console. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.

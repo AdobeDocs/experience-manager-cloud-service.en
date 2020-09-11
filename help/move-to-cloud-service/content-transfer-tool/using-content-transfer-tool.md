@@ -11,6 +11,8 @@ Follow the section below to understand the important considerations while runnin
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
+* The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store and Shared S3 Data Store. It currently does not support Azure Blob Store Data Store.
+
 * If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
 
 * To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
@@ -23,7 +25,7 @@ Follow the section below to understand the important considerations while runnin
 
 ## Availability {#availability}
 
-The Content Transfer Tool can be downloaded as a zip file (Content Transfer Tool v1.0.0) from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance.
+The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, refer to [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.

@@ -242,7 +242,7 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Click **[!UICONTROL Save**.
+1. Click **[!UICONTROL Save]**.
 
 ### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
@@ -262,7 +262,7 @@ Leaving them blank tells AEM that this image preset is responsive. You can adjus
 
 When you create or edit image presets, you have the options described in this section. In addition, Adobe recommends these “best practice” option choices to start:
 
-* **[!UICONTROL Format** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
+* **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
 
 * **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]** (this sharpening filter offers less control than Unsharp Masking settings).
 
@@ -471,4 +471,4 @@ Image presets are automatically published for you.
 ### Deleting Image Presets {#deleting-image-presets}
 
 1. In AEM, tap the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
-1. Select a preset, and then click **[!UICONTROL Delete**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.
+1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.

@@ -1,26 +1,16 @@
 ---
-title: Configure and use asset microservices for asset processing
-description: Learn how to configure and use the cloud-native asset microservices to process assets at scale.
+title: Configure and use asset microservices for asset processing.
+description: Configure and use the cloud-native asset microservices to process assets at scale.
 contentOwner: AG
 ---
 
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+Asset microservices provides for scalable and resilient processing of assets using cloud-native applications (also called workers). Adobe manages the services for optimal handling of different asset types and processing options.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like ImageMagick.
 
-Asset microservices provide for scalable and resilient processing of assets using cloud services. Adobe manages the services for optimal handling of different asset types and processing options.
-
-Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and let an administrator to add more specific asset processing configuration. Administrators can create and maintain the configurations of post-processing workflows, including optional customization. Customizing workflows allows for extensibility and full customization.
-
-Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like ImageMagick.
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**. Experience Manager provides a basic default set up and let administrators add more specific asset processing configuration. Administrators create, maintain, and modify the configurations of post-processing workflows, including optional customization. Customizing the workflows lets developers extend the default offering.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -40,8 +30,8 @@ Experience Manager allows for the following levels of processing.
 | Option | Description | Use cases covered |
 |---|---|---|
 |[Default configuration](#default-config)|It is available as is and cannot be modified. This configuration provides very basic rendition generation capability.| <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Large preview (web rendition - 1280 px) </li><li> Metadata and text extraction.</li></ul> |
-|[Custom configuration](#standard-config) | Configured by administrators via user interface. Provides more options for rendition generation by extending the default option. Extend the out-of-the-box worker to provide different formats and renditions. | <ul><li>FPO rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
-|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom workers to invoke [!DNL Asset Compute Service]. Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
+|[Custom configuration](#standard-config) | Configured by administrators via user interface. Provides more options for rendition generation by extending the default option. Extend the out-of-the-box option to provide different formats and renditions. | <ul><li>FPO rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
+|[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom applications to call [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -86,7 +76,7 @@ To create standard processing profile, follow these steps:
    * Quality in percent of each JPEG rendition.
    * Included and excluded MIME types to define the applicability of a profile.
 
-   ![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-image.png)
 
 1. Click **[!UICONTROL Save]**.
 
@@ -103,47 +93,41 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Custom profile and use cases {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
-The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled by default or via processing profiles configuration on the UI. If the business needs are not met by this processing, Adobe recommends developing and using Asset Compute Service to extend the default capabilities.
+The [!DNL Asset Compute Service] supports a variety of use cases such as default processing, processing Adobe-specific formats like Photoshop files, and implementing custom or organization-specific processing. The DAM Update Asset workflow customization required in the past, are either handled automatically or via processing profiles configuration. If the business needs are not met by these processing options, Adobe recommends developing and using [!DNL Asset Compute Service] to extend the default capabilities. For an overview, see [understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
->Adobe recommends using a custom worker only when the business need cannot be accomplished using the default configurations or the standard profile.
+>Adobe recommends using a custom application only when the business requirements cannot be accomplished using the default configurations or the standard profile.
 
-It can transform image, video, document and other file formats into different renditions including thumbnails, extracted text & metadata and archives.
+It can transform image, video, document, and other file formats into different renditions including thumbnails, extracted text and metadata, and archives.
 
-Developers can use the [!DNL Asset Compute Service] to create specialized custom workers that cater to pre-defined use cases. [!DNL Experience Manager] can invoke these custom workers from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
+Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] can call these custom applications from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
 
 * Use [!DNL Adobe Photoshop]'s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) and save the result as rendition.
-* Invoke third-party systems to update data, for example, a PIM system.
+* Call third-party systems to update data, for example, a PIM system.
 * Use [!DNL Photoshop] API to generate variety of renditions based on Photoshop template.
 * Use [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) to optimize the ingested assets and save those as renditions.
 
 >[!NOTE]
 >
->You cannot edit the standard metadata using the custom workers. You can only modify custom metadata.
+>You cannot edit the standard metadata using the custom applications. You can only modify custom metadata.
 
 ### Create a custom profile {#create-custom-profile}
 
 To create a custom profile, following these steps:
 
 1. Administrators access **[!UICONTROL Tools > Assets > Processing Profiles]**. Click **[!UICONTROL Create]**.
-1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide the desired file name of the rendition.
+1. Click **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide the desired file name of the rendition.
 1. Provide the following information.
 
    * File name of each rendition and a supported file extension.
-   * End-point URL of a Firefly custom app. The app must be from the same organization as the Experience Manager account is.
-   * Add [!UICONTROL Service Parameters] to pass extra information or parameters to the custom worker.
-   * Included and excluded MIME types to define the applicability of a profile.
+   * [End-point URL of a Firefly custom app](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). The app must be from the same organization as the Experience Manager account is.
+   * Add Service Parameters to [pass extra information or parameters to the custom application](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters).
+   * Included and excluded MIME types to limit the processing to a few specific file formats.
 
    Click **[!UICONTROL Save]**.
+
+The custom applications are headless [Project Firefly](https://github.com/AdobeDocs/project-firefly) apps. Custom application gets all the provided files if they are setup with a processing profile. The application must filter the files.
 
 >[!CAUTION]
 >
@@ -153,13 +137,11 @@ To create a custom profile, following these steps:
 
 To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that leverages the Photoshop API to edit the images.
 
-Asset Compute Service integration allows Experience Manager to pass these parameters to the custom worker using the [!UICONTROL Service Parameters] field. The custom worker then invokes Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
+Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then calls Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Figure: Use [!UICONTROL Service Parameters] field to pass added information to predefined parameters build into the custom worker.*
-
-When campaign images are uploaded to the folder on which this processing profile is applied, the images are updated with `Jumanji` text in `Arial-BoldMT` font.
+*Figure: Use [!UICONTROL Service Parameters] field to pass added information to predefined parameters build into the custom application. In this example, when campaign images are uploaded, the images are updated with `Jumanji` text in `Arial-BoldMT` font.*
 
 ## Use processing profiles to process assets {#use-profiles}
 
@@ -168,19 +150,20 @@ Create and apply the additional, custom processing profiles to specific folders 
 Apply processing profiles to folders using one of the following methods:
 
 * Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. It opens a content browser that allow you to navigate to specific folders, select them and confirm the application of the profile.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. To save the changes, click **[!UICONTROL Save & Close]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. To save the changes, click **[!UICONTROL Save & Close]**.
+  ![Apply processing profile to a folder from the Asset Properties tab](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->Only one processing profile can be applied to a specific folder. To generate more renditions, add more rendition definitions to the existing processing profile.
+>Only one processing profile can be applied to a folder. To generate more renditions, add more rendition definitions to the existing processing profile.
 
-After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of it's sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile. If you apply multiple profiles to a folder, the uploaded or updated assets are processed using each of these profiles.
+After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of it's sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile.
 
 >[!NOTE]
 >
 >A processing profile applied to a folder works for the entire tree, but can be over-ridden with another profile applied to a sub-folder. When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.
 
-All the generated renditions are available in the [!UICONTROL Renditions] view in the left rail. Open asset preview and open the left rail to access the **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the MIME type inclusion rules, should be visible and accessible.
+To verify that assets are processed, preview the generated renditions in the [!UICONTROL Renditions] view in the left rail. Open asset preview and open the left rail to access the **[!UICONTROL Renditions]** view. The specific renditions in the processing profile, for which the specific asset's type matches the MIME type inclusion rules, should be visible and accessible.
 
 ![additional-renditions](assets/renditions-additional-renditions.png)
 
@@ -231,3 +214,15 @@ For details about which standard workflow step can be used in the post-processin
 
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
 * Currently, the support is limited to generating renditions. Generating new asset is not supported.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
+>* [Understand extensibility and when to use it](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+>* [How to create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
+>* [Supported MIME types for various use cases](/help/assets/file-format-support.md).
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->

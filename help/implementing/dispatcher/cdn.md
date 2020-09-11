@@ -7,14 +7,14 @@ description: CDN in AEM as a Cloud Service
 
 AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
-The AEM managed CDN will satisfy most customer's performance and security requirements. Customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
+The AEM managed CDN will satisfy most customer's performance and security requirements. For the publish tier, customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
 Follow these to prepare for content delivery by using Adobe's out-of-the-box CDN:
 
 1. Provide the signed SSL certificate and secret key to Adobe by sharing a link to a secure form containing this information. Please coordinate with customer support on this task.
-**Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates.
+**Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates. Also, it must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
 1. Inform customer support:
    * which custom domain should be associated with a given environment, as defined by the program id and environment id. Note that custom domains on the author side are not supported.
    * if any IP allowlisting is needed to restrict traffic to a given environment.
@@ -46,4 +46,6 @@ Configuration instructions:
 
 Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
 
-Note that there is potentially a small performance hit due to the extra hop, although hops from the customer CDN to Adobe's managed CDN are likely to be efficient.
+There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to Adobe's managed CDN are likely to be efficient.
+
+Note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.

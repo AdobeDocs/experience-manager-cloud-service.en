@@ -25,7 +25,7 @@ Shown below are the different deployment models for Commerce Integration Framewo
 |How to deploy CIF Authoring tools for Magento backend| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM 6.5| [Refer to CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) supported on AEM 6.5| AEM as a Cloud Service needs to be provisioned with CIF add-on. Contact your sales representative for more details|
 |How to deploy [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)|AEM package install|Deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Project moved into [Cloud Manager Git Repository](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) and deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html)|
 
->[!Note]
+>[!NOTE]
 >
 >For additional documentation on how to use CIF with AEM Managed Service or AEM On-premise, refer to [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
@@ -45,6 +45,6 @@ The main differences here are:
 * The GraphQL client OSGI bundle **must not** be included into the AEM project anymore, it is deployed via the CIF add-on
 * OSGI configs for GraphQL client and Graphql Data Service **must not** be included into the AEM project anymore
 
->[!Tip]
+>[!TIP]
 >
 >Check out the [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) project on GitHub. This project provides Maven profiles for AEM as a Cloud Service and on-premise deployments which take into account the different framework conditions.  

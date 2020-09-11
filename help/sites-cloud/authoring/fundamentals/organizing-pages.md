@@ -9,7 +9,7 @@ This document describes how to create and manage pages with Adobe Experience Man
 
 >[!NOTE]
 >
->Your account needs the appropriate access rights] and permissions to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the appropriate access rights and permissions to take action on pages such as create, copy, move, edit, and delete.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 
@@ -86,7 +86,7 @@ The page **Title** and **Name** can be created separately but are related:
 >
 >Also keep in mind that some browsers (e.g. older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
-When creating a new page, AEM will validate the page name according to the conventions imposed by AEM and the JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
 
 The minimum allowed characters are:
 
@@ -96,7 +96,7 @@ The minimum allowed characters are:
 * `_` (underscore)
 * `-` (hyphen/minus)
 
-Full details of all characters allowed can be found in the naming conventions. <!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+Full details of all characters allowed can be found in [the naming conventions](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Full details of all characters allowed can be found in the naming conventions. <
 
 #### Title {#title}
 
-If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and validate the name according to the conventions imposed by AEM and JCR. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
 
 A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. For example:
 
@@ -115,7 +115,7 @@ A **Title** field containing invalid characters will be accepted, but the name d
 
 #### Name {#name}
 
-When you supply a page **Name** when creating a new page, AEM will validate the name according to the conventions imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
 
 ![Example of entering an invalid page name](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -200,7 +200,7 @@ Unless all pages have been created for you in advance, you must create a page be
     * **Name**:
 
         * This is used to generate the URI. If not specified, the name is derived from the title.
-        * If you supply a page **Name** when creating a new page, AEM will validate the name according to the conventions imposed by AEM and JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
         * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field will be highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
 
    >[!TIP]
@@ -360,9 +360,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 >[!NOTE]
 >
->A page can only be moved to a location where the template upon which the page is based is allowed. See Template Availability for more information.
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
 -->
 
 #### Asynchronous Actions {#asynchronous-actions}

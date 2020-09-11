@@ -98,7 +98,7 @@ Certain areas of the repository (read-only parts of the repository) can be diffe
 * **/content**
 * */libs (read-only)*
 * **/oak:index**
-* **/oak:index/acme**
+* **/oak:index/acme.**
 * **/jcr:system**
 * **/system**
 * **/var**
@@ -123,8 +123,8 @@ The following table shows 5 index definitions: index `cqPageLucene` is used in b
 |---|---|---|---|
 | /oak:index/damAssetLucene  | Yes  | Yes  | No  |
 | /oak:index/damAssetLucene-custom-1  | Yes (customized)  | No  | Yes  |
-| /oak:index/acmeProduct-custom-1  | No  | Yes  | No  |
-| /oak:index/acmeProduct-custom-2  | No  | No  | Yes  |
+| /oak:index/acme.product-custom-1  | No  | Yes  | No  |
+| /oak:index/acme.product-custom-2  | No  | No  | Yes  |
 | /oak:index/cqPageLucene  | Yes  | Yes  | Yes  |
 
 The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes need to end with `-custom-<number>`.
@@ -146,26 +146,30 @@ Index management is currently only supported for indexes of type `lucene`.
 
 ### Removing an Index {#removing-an-index}
 
-If an index is to be removed in a later version of the application, you can define an empty index (an index with no data to index), with a new name. For example purposes, you can name it `/oak:index/acmeProduct-custom-3`. This replaces the index `/oak:index/acmeProduct-custom-2`. Once `/oak:index/acmeProduct-custom-2` is removed by the system, the empty index `/oak:index/acmeProduct-custom-3` can then also be removed.
+If an index is to be removed in a later version of the application, you can define an empty index (an index with no data to index), with a new name. For example purposes, you can name it `/oak:index/acme.product-custom-3`. This replaces the index `/oak:index/acme.product-custom-2`. Once `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then also be removed.
 
 ### Adding an Index {#adding-an-index}
 
-To add an index named "/oak:index/acmeProduct-custom-1" to be used in a new version of the application and later, the index needs to be configured as follows:
+To add an index named "/oak:index/acme.product-custom-1" to be used in a new version of the application and later, the index needs to be configured as follows:
 
-`*mk.*assetLuceneIndex-1-custom-1`
+`acme.product-1-custom-1`
 
-This works by prepending a custom identifier to the index name, followed by a dot (**.**). The identifier needs to be between 1 to 4 characters in lenght.
+This works by prepending a custom identifier to the index name, followed by a dot (**`.`**). The identifier should be between 2 and 5 characters in length.
 
 As above, this ensures the index is only used by the new version of the application.
 
 ### Changing an Index {#changing-an-index}
 
-When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index "/oak:index/acmeProduct-custom-1" is changed. The old index is stored under `/oak:index/acmeProduct-custom-1`, and the new index is stored under `/oak:index/acmeProduct-custom-2`.
+When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index "/oak:index/acme.product-custom-1" is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
 
 The old version of the application uses the following configuration:
 
-`/oak:index/acmeProduct-custom-1`
+`/oak:index/acme.product-custom-1`
 
 The new version of the application uses the following (changed) configuration:
 
-`/oak:index/acmeProduct-custom-2`
+`/oak:index/acme.product-custom-2`
+
+### Index-Availability/Fault-Tolerance {#index-availability}
+
+It is recommended to create duplicate indexes for features that are extremely important (keeping in mind the naming convention for indexes mentioned above), so in the case of index corruption or any such unforeseen event there is a fallback index available to respond to queries.
