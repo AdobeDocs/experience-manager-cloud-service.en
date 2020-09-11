@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service Development Guidelines
-description: To be completed
+description: AEM as a Cloud Service Development Guidelines
 ---
 
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
