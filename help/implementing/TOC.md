@@ -66,7 +66,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [Model Routing](developing/spa/routing.md)
     + [Launch Integration](developing/spa/launch-integration.md)
     + [Server Side Rendering](developing/spa/ssr.md)
-    + [Javascript API References](developing/spa/reference-materials.md)
+    + [SPA Reference Documents](developing/spa/reference-materials.md)
 + Personalization {#personalization}
   + [ContextHub](developing/personalization/contexthub.md)
   + [Configuring ContextHub](developing/personalization/configuring-contexthub.md)
