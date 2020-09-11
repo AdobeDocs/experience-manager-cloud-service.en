@@ -88,13 +88,13 @@ See:
 
 For a simple example we need:
 
-* One, or more, [Sample Content Fragment Models](#sample-content-fragment-models)
+* One, or more, [Sample Content Fragment Models](#sample-content-fragment-models-schemas) - form the basis for the GraphQL schemas
 
 * [Sample Content Fragments](#sample-content-fragments) based on the above models
 
-### Sample Content Fragment Models {#sample-content-fragment-models}
+### Sample Content Fragment Models (Schemas) {#sample-content-fragment-models-schemas}
 
-If we consider the following Content Models, and their interrelationships (references ->):
+For the sample queries, we will use the following Content Models, and their interrelationships (references ->):
 
 * [Company](#company)
   -> [Person](#person)
@@ -272,6 +272,8 @@ This will return all available schemas and datatypes.
 
 ### Sample Query - All Cities {#sample-all-cities}
 
+This is a straightforward query to return the `name`of all entries in the `city`schema.
+
 **Sample Query**
 
 ```xml
@@ -316,6 +318,7 @@ query {
 
 ### Sample Query - All Persons that have a name of "Jobs" or "Smith" {#sample-all-persons-jobs-smith}
 
+This will filter all `persons` for any that have the name `Jobs`or `Smith`.
 **Sample Query**
 
 ```xml
@@ -363,6 +366,8 @@ query {
 ```
 
 ### Sample Query - All cities located in Germany or Switzerland with a population between 400000 and 999999 {#sample-all-cities-d-ch-population}
+
+Here a combination of fields are filtered on. An `AND` (implicit) is used to select the `population`range, while an `OR` (explicit) is used to select the required cities.
 
 **Sample Query**
 
@@ -420,6 +425,8 @@ query {
 ```
 
 ### Sample Query for Nested Content Fragments - All companies that have at least one employee that has a name of "Smith" {#sample-companies-employee-smith}
+
+This query illustrates filtering across two nested fragments - `company` and `employee`.
 
 **Sample Query**
 
@@ -480,6 +487,8 @@ query {
 ```
 
 ### Sample Query for Nested Content Fragments - All companies where all employees have won the "Gamestar" award {#sample-all-companies-employee-gamestar-award}
+
+This query illustrates filtering across three nested fragments - `company`, `employee`, and `award`.
 
 **Sample Query**
 

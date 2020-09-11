@@ -141,8 +141,8 @@ The Fragment Reference references another content fragment. This of particular i
 
 For example:
 
-* A model defining Employee details, that include
-  * A reference to the model that defines the Company
+* A model defining details for an employee; these include:
+  * A reference to the model that defines the employer (company)
 
 ```xml
 type EmployeeModel {
