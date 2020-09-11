@@ -7,6 +7,12 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.9.0.
 
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* The Single Page Application (SPA) Editor Javascript SDK [is now open source.](/help/implementing/developing/spa/reference-materials.md)
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What's New {#what-is-new-commerce}
@@ -24,7 +30,6 @@ The following section outlines the general Release Notes for Experience Manager 
 ### Bug Fixes {#bug-fixes-commerce}
 
 * Commerce Cloud configurations did not respect inheritance. This has been fixed to ensure that configuration inherits values.
-
 
 ## Cloud Manager {#cloud-manager}
 
