@@ -3,9 +3,9 @@ title: SPA Reference Materials
 description: An overview of the single page application API references and source code repositories
 ---
 
-# SPA Javascript API References{#spa-javascript-api-references}
+# SPA Reference Materials {#spa-reference-materials}
 
-## API References for NMP Modules {#api-references}
+## SPA Javascript API References for NMP Modules {#api-references}
 
 The following are the available JavaScript API references of the NPM modules for the AEM SPA Editor SDK framework.
 
