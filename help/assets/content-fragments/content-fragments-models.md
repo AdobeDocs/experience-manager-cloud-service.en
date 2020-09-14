@@ -106,9 +106,11 @@ The content fragment model effectively defines the structure of the resulting co
 
    ![remove](assets/cfm-models-06.png)
 
-1. After adding all required fields, and defining the properties, use **Save** to persist the definition. For example:
+1. Add all required fields, and define the related properties, as required. For example:
 
    ![save](assets/cfm-models-07.png)
+
+1. Sekect **Save** to persist the definition.
 
 ## Nested Content {#nested-content}
 

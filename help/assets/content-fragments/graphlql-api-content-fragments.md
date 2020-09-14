@@ -3,7 +3,7 @@ title: Content Delivery using Content Fragments with GraphQL
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with GraphQL for Content Delivery.
 ---
 
-# GraphQL API for Use with Content Fragments {#graphql-api-for-use-with-content-fragments}
+# GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
 ## The GraphQL API {#graphql-api}
 
