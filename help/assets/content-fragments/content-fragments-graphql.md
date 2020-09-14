@@ -48,6 +48,8 @@ With GraphQL you can perform queries for either:
 * The [Content Fragment Models](#content-fragments-models) provide the required structure by means of defined data types.
 * The [Fragment Reference](#fragment-references), available when defining a model, can be used to define additional layers of structure.
 
+![Content Fragments for use with GraphQL](assets/cfm-nested-01.png "Content Fragments for use with GraphQL")
+
 ### Content Fragments {#content-fragments}
 
 Content Fragments:
@@ -104,7 +106,7 @@ For the sample queries, we will use the following Content Models, and their inte
 
 #### Company {#company}
 
-The fields:
+The basic fields defining the comparny are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
@@ -114,7 +116,7 @@ The fields:
 
 #### Person {#person}
 
-The fields:
+The fields defining a person, who can also be an employee:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
@@ -124,7 +126,7 @@ The fields:
 
 #### Award {#award}
 
-The fields:
+The fields defining an award are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
@@ -133,7 +135,7 @@ The fields:
 
 #### City {#city}
 
-The fields:
+The fields for defining a city are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
@@ -148,72 +150,52 @@ The following fragments are used for the appropriate model.
 
 #### Company {#company}
 
-* Apple
-  * CEO: 0Steve Jobs
-  * Employees: Duke Marsh and Max Caulfield
-* Little Pony Inc.
-  * CEO: Adam Smith
-  * Employees: Lara Croft and Cutter Slade
-* NextStep Inc.
-  * CEO: Steve Jobs
-  * Employees: Joe Smith and Abe Lincoln
+| Company Name | CEO | Employees |
+|--- |--- |--- |
+| Apple | Steve Jobs | Duke Marsh and Max Caulfield |
+| Little Pony Inc. | CEO: Adam Smith | Lara Croft and Cutter Slade |
+| NextStep Inc. | Steve Jobs | Joe Smith and Abe Lincoln |
 
 #### Person {#person}
 
-* Abe Lincoln
-* Adam Smith
-* Cutter Slade
-  * Awards: Gameblitz and Gamestar
-* Duke Marsh
-* Joe Smith
-* Lara Croft
-  * Awards: Gamestar
-* Max Caulfield
-  * Awards: Gameblitz
-* Steve Jobs
+| Name | First Name | Awards |
+|--- |--- |--- |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Slade | Cutter | Gameblitz and Gamestar |
+| Marsh | Duke | | 
+| Smith | Joe | |
+| Lara Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Jobs | Steve | |
 
 #### Award {#award}
 
-* Gameblitz Award
-* Gamestar Award
-* Oscar
+| Shortcut/ID | Title |
+|--- |--- |
+| GB | Gameblitz |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### City {#city}
 
-* Basel
-  * Country: Switzerland
-  * Population: 172258
-  * Categories: city:emea
-* Berlin
-  * Country: Germany
-  * Population: 3669491
-  * Categories: city:capital and city:emea
-* Bucharest
-  * Country: Romania
-  * Population: 1821000
-  * Categories: city:capital and city:emea
-* San Francisco
-  * Country: USA
-  * Population: 883306
-  * Categories: city:na
-* San Jose
-  * Country: USA
-  * Population: 102635
-  * Categories: city:na
-* Stuttgart
-  * Country: Germany
-  * Population: 634830
-  * Categories: city:emea
-* Zurich
-  * Country: Switzerland
-  * Population: 415367
-  * Categories: city:capital and city:emea
+| Name | Country | Population | Categories |
+|--- |--- |--- |--- |
+| Basel | Switzerland | 172258 | city:emea |
+| Berlin | Germany | 3669491 | city:capital and city:emea |
+| Bucharest | Romania | 1821000 | city:capital and city:emea |
+| San Francisco | USA | 883306 | city:na |
+| San Jose | USA | 102635 | city:na |
+| Stuttgart | Germany | 634830 | city:emea |
+| Zurich | Switzerland | 415367 | city:capital and city:emea |
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
 ### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
-This will return all available schemas and datatypes.
+<!-- why doesn't schema have a trailing s? -->
+
+This will return all types for all available schemas.
 
 **Sample Query**
 
@@ -266,6 +248,130 @@ This will return all available schemas and datatypes.
         }
       ]
     }
+  }
+}
+```
+
+### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
+
+Using the structure of the nested fragments, this query returns the full details of a company's CEO and all its employees.
+
+**Sample Query**
+
+```xml
+query {
+  companys {
+    name
+    ceo {
+      _path
+      name
+      firstName
+    	awards {
+      	id
+     	  title
+      }
+    }
+    employees {
+    	name
+   	  firstName
+    	awards {
+      	id
+     	  title
+      }
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "companys": [
+      {
+        "name": "Apple Inc.",
+        "ceo": {
+          "_path": "/content/dam/persons/steve-jobs",
+          "name": "Jobs",
+          "firstName": "Steve",
+          "awards": []
+        },
+        "employees": [
+          {
+            "name": "Marsh",
+            "firstName": "Duke",
+            "awards": []
+          },
+          {
+            "name": "Caulfield",
+            "firstName": "Max",
+            "awards": [
+              {
+                "id": "GB",
+                "title": "Gameblitz"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Little Pony, Inc.",
+        "ceo": {
+          "_path": "/content/dam/persons/adam-smith",
+          "name": "Smith",
+          "firstName": "Adam",
+          "awards": []
+        },
+        "employees": [
+          {
+            "name": "Croft",
+            "firstName": "Lara",
+            "awards": [
+              {
+                "id": "GS",
+                "title": "Gamestar"
+              }
+            ]
+          },
+          {
+            "name": "Slade",
+            "firstName": "Cutter",
+            "awards": [
+              {
+                "id": "GB",
+                "title": "Gameblitz"
+              },
+              {
+                "id": "GS",
+                "title": "Gamestar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NextStep Inc.",
+        "ceo": {
+          "_path": "/content/dam/persons/steve-jobs",
+          "name": "Jobs",
+          "firstName": "Steve",
+          "awards": []
+        },
+        "employees": [
+          {
+            "name": "Smith",
+            "firstName": "Joe",
+            "awards": []
+          },
+          {
+            "name": "Lincoln",
+            "firstName": "Abraham",
+            "awards": []
+          }
+        ]
+      }
+    ]
   }
 }
 ```
@@ -426,7 +532,7 @@ query {
 
 ### Sample Query for Nested Content Fragments - All companies that have at least one employee that has a name of "Smith" {#sample-companies-employee-smith}
 
-This query illustrates filtering across two nested fragments - `company` and `employee`.
+This query illustrates filtering for any `person` of `name` "Smith", returning information from across two nested fragments - `company` and `employee`.
 
 **Sample Query**
 
