@@ -110,7 +110,9 @@ The content fragment model effectively defines the structure of the resulting co
 
    ![save](assets/cfm-models-07.png)
 
-1. Sekect **Save** to persist the definition.
+1. Select **Save** to persist the definition.
+
+<!-- strange issue with title here when it hits Git -->
 
 ## Nested Content {#nested-content}
 
