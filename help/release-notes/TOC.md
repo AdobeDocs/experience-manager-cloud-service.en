@@ -1,6 +1,7 @@
 ---
 sub-product: Release Notes for AEM as a Cloud Service
 user-guide-title: Release Notes for AEM as a Cloud Service
+breadcrumb-title: Release Notes
 user-guide-description: This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.
 ---
 
