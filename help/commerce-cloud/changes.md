@@ -29,7 +29,7 @@ Shown below are the different deployment models for Commerce Integration Framewo
 >
 >For additional documentation on how to use CIF with AEM Managed Service or AEM On-premise, refer to [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!Note]
+>[!NOTE]
 >
 >CIF Classic/Quickstart version of Commerce Integration Framework may be used on AEM On-premise offering for very limited use-cases. However, this is not the recommended solution.
 
