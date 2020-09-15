@@ -191,9 +191,21 @@ The following fragments are used for the appropriate model.
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
-### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
+There are a few basic mechanisms available for use:
 
-<!-- why doesn't schema have a trailing s? -->
+* if you required a single result
+  * use the model name; eg city
+
+* if you expect a list of results
+  * add a trailing "s"; e.g. citys
+
+* if you want to use a logical OR
+  * use " _logOp: OR"
+  * logical AND is implicit
+
+See the sample queries for illustrations of how to use these.
+
+### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
 This will return all types for all available schemas.
 
@@ -263,7 +275,8 @@ This will return all types for all available schemas.
       ]
     }
   }
-}```
+}
+```
 
 ### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
 
@@ -429,6 +442,82 @@ query {
       },
       {
         "name": "Zurich"
+      }
+    ]
+  }
+}
+```
+
+### Sample Query - A Single City Fragment {#sample-single-city-fragment}
+
+This is a query to return the details of a single fragment entries at a specific location in the repository.
+
+**Sample Query**
+
+```xml
+{
+  city (_path: "/content/dam/cities/berlin") {
+    _path
+    name
+    country
+    population
+    categories
+
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "city": {
+      "_path": "/content/dam/cities/berlin",
+      "name": "Berlin",
+      "country": "Germany",
+      "population": 3669491,
+      "categories": [
+        "city:capital",
+        "city:emea"
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - All Cities with a Named Variation {#sample-cities-named-variation}
+
+If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the `city` Berlin, then you can use a query to return details of the variation.
+
+**Sample Query**
+
+```xml
+{
+  citys (variation: "berlin_centre") {
+    _path
+    name
+    country
+    population
+    categories
+  }
+}
+```
+
+**Sample Results**
+```xml
+{
+  "data": {
+    "citys": [
+      {
+        "_path": "/content/dam/cities/berlin",
+        "name": "Berlin",
+        "country": "Germany",
+        "population": 3669491,
+        "categories": [
+          "city:capital",
+          "city:emea"
+        ]
       }
     ]
   }
@@ -687,6 +776,62 @@ query {
             ]
           }
         ]
+      }
+    ]
+  }
+}
+```
+
+### Sample Query for Metadata - List the Metadata for Awards titled GB {#sample-metadata-awards-gb}
+
+This query illustrates filtering across three nested fragments - `company`, `employee`, and `award`.
+
+**Sample Query**
+
+```xml
+query {
+  awards(filter: {
+      id: {
+        _expressions: [
+          {
+            value:"GB"
+          }
+        ]
+    }
+  }) {
+    _metadata {
+        stringMetadata {
+        name,
+        value
+      }
+    }
+    id
+    title
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "awards": [
+      {
+        "_metadata": {
+          "stringMetadata": [
+            {
+              "name": "title",
+              "value": "Gameblitz Award"
+            },
+            {
+              "name": "description",
+              "value": ""
+            }
+          ]
+        },
+        "id": "GB",
+        "title": "Gameblitz"
       }
     ]
   }

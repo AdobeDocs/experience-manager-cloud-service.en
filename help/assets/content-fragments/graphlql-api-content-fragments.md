@@ -5,6 +5,8 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 
 # GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
+The GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
+
 ## The GraphQL API {#graphql-api}
 
 *"GraphQL is a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."* See [GraphQL Foundation](https://foundation.graphql.org/).
@@ -39,13 +41,23 @@ The use cases can depend on the type of AEM as a Cloud Service environment:
 
 ## Schema Generation {#schema-generation}
 
-The data schemas are based on the [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
+The data schemas correlate to (are based on) the [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md). The data schema caches are refreshed when you update a Content Fragment Model.
 
+<!-- to be addressed later -->
+
+<!--
 ## Security Considerations {#security-considerations}
+-->
 
 ## Permissions {#permission}
 
+The permissions are those required for accessing Assets.
+
+<!-- to be addressed later -->
+
+<!-- 
 ## Authentication {#authentication}
+-->
 
 ## End-Points {#end-points}
 
@@ -53,6 +65,16 @@ The data schemas are based on the [Content Fragment Models](/help/assets/content
 
 ## Filtering {#filtering}
 
-## Sorting {#sorting}
+See the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries) for examples.
 
+<!-- to be addressed later -->
+
+<!--
+## Sorting {#sorting}
+-->
+
+<!-- to be addressed later -->
+
+<!--
 ## Paging {#paging}
+-->
