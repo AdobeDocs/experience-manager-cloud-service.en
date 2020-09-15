@@ -153,7 +153,7 @@ The following fragments are used for the appropriate model.
 | Company Name | CEO | Employees |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh and Max Caulfield |
-| Little Pony Inc. | CEO: Adam Smith | Lara Croft and Cutter Slade |
+| Little Pony Inc. | Adam Smith | Lara Croft and Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith and Abe Lincoln |
 
 #### Person {#person}
@@ -165,7 +165,7 @@ The following fragments are used for the appropriate model.
 | Slade | Cutter | Gameblitz and Gamestar |
 | Marsh | Duke | | 
 | Smith | Joe | |
-| Lara Croft | Lara | Gamestar |
+| Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
 | Jobs | Steve | |
 
@@ -201,7 +201,8 @@ There are a few basic mechanisms available for use:
 
 * if you want to use a logical OR
   * use " _logOp: OR"
-  * logical AND is implicit
+
+* logical AND also exists, but is (often) implicit
 
 See the sample queries for illustrations of how to use these.
 
