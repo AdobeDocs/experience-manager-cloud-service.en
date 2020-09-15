@@ -204,6 +204,7 @@ This will return all types for all available schemas.
   __schema {
     types {
       name
+      description
     }
   }
 }
@@ -217,40 +218,52 @@ This will return all types for all available schemas.
     "__schema": {
       "types": [
         {
-          "name": "ArrayMode"
+          "name": "ArrayMode",
+          "description": null
         },
         {
-          "name": "AwardModel"
+          "name": "AwardModel",
+          "description": null
         },
         {
-          "name": "AwardModelArrayFilter"
+          "name": "AwardModelArrayFilter",
+          "description": null
         },
         {
-          "name": "AwardModelFilter"
+          "name": "AwardModelFilter",
+          "description": null
         },
         {
-          "name": "Boolean"
+          "name": "Boolean",
+          "description": "Built-in Boolean"
         },
 
 ...more results...
 
-       {
-          "name": "__InputValue"
+        {
+          "name": "__Field",
+          "description": null
         },
         {
-          "name": "__Schema"
+          "name": "__InputValue",
+          "description": null
         },
         {
-          "name": "__Type"
+          "name": "__Schema",
+          "description": "A GraphQL Introspection defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, the entry points for query, mutation, and subscription operations."
         },
         {
-          "name": "__TypeKind"
+          "name": "__Type",
+          "description": null
+        },
+        {
+          "name": "__TypeKind",
+          "description": "An enum describing what kind of type a given __Type is"
         }
       ]
     }
   }
-}
-```
+}```
 
 ### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
 

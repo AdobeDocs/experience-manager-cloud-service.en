@@ -92,6 +92,7 @@ The content fragment model effectively defines the structure of the resulting co
    >[!NOTE]
    >
    >For the data type **Multi line text** it is possible to define the **Default Type** as either:
+   >
    >    * **Rich Text**
    >    * **Markdown**
    >    * **Plain Text**
@@ -112,12 +113,11 @@ The content fragment model effectively defines the structure of the resulting co
 
 1. Select **Save** to persist the definition.
 
-<!-- strange issue with title here when it hits Git -->
-
-## Nested Content {#nested-content}
+## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
-* **[Content Reference](#content-reference)** 
+
+* **[Content Reference](#content-reference)**
   * Provides a simple reference to other content; of any type.
   * Can be configured for a one or multiple references (in the resulting fragment).
 
@@ -154,7 +154,7 @@ type EmployeeModel {
     firstName: String
     company: CompanyModel
 }
- 
+
 type CompanyModel {
     name: String
     street: String
