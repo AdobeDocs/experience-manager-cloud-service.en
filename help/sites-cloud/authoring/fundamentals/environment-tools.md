@@ -93,7 +93,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 ## Assets Browser {#assets-browser}
 
-The assets browser shows all assets that are available for direct use on your current page. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.
 
 The assets browser is a tab within the side panel along with the [components browser](#components-browser) and [content tree](#content-tree). To open or close the side panel use the icon at the top left of the toolbar:
 
@@ -148,7 +148,7 @@ The actual appearance and handling is dependent on the device type you are using
 >
 >A mobile device is detected when the width is less than 1024px; i.e. also on a small desktop window.
 
-If you need to quickly make a change to an asset, you can start the asset editor directly from the asset browser by clicking the edit icon shown next to the asset's name. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
 ![Asset edit button](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 

@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service SDK
-description: To be completed
+description: An overview of the AEM as a Cloud Service Software Development Kit
 ---
 
 # The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}

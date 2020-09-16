@@ -122,11 +122,9 @@ The properties are distributed across several tabs.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **Inherited from &lt;path&gt;**
 
   * Indicates whether the page is inherited. and where from.
--->
 
 * **Cloud Configuration**
 
@@ -187,7 +185,7 @@ Shows the page thumbnail image. You can:
 
 * **Cloud Service Configurations**
 
-  * Define properties for cloud services. 
+  * Define properties for cloud services.
   
   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->

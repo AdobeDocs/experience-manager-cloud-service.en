@@ -7,7 +7,7 @@ description: This document describes the general, framework-independent contract
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill.
 
-## Introduction {#introdcution}
+## Introduction {#introduction}
 
 This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) in order to implement editable SPA components within AEM.
 
@@ -90,7 +90,7 @@ npm module: [@adobe/aem-react-editable-components](https://www.npmjs.com/package
 
 #### Angular {#angular}
 
-npm module: [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+npm module: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Main Services and Components {#main-services-and-components}
 
@@ -273,4 +273,3 @@ See how a simple SPA works and experiment with an SPA yourself by continuing on 
 For more information about SPAs in AEM, see the following documents:
 
 * [SPA Editor Overview](editor-overview.md) for an overview of SPAs in AEM and the communication model
-

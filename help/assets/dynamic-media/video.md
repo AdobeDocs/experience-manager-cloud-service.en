@@ -403,9 +403,9 @@ Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 fil
 
 ## Publishing videos to YouTube {#publishing-videos-to-youtube}
 
-You can publish on-premise AEM video assets directly to a YouTube channel that you have previously created.
+You can publish video assets managed in AEM Assets directly to a YouTube channel that you have previously created.
 
-To publish video assets to YouTube, you set up AEM Assets with tags. You associate these tags with a YouTube channel. If a video asset's tag matches the tag of a YouTube channel, then the video is published to YouTube. Publish to YouTube occurs along with a normal publish of the video as long as an associated tag is used.
+To publish video assets to YouTube, you tag video assets in AEM Assets with tags. You associate these tags with a YouTube channel. If a video asset's tag matches the tag of a YouTube channel, then the video is published to YouTube. Publish to YouTube occurs along with a normal publish of the video as long as an associated tag is used.
 
 YouTube does its own encoding. As such, the original video file that was uploaded into AEM is published to YouTube instead of any video rendition that Dynamic Media’s encoding has created. While it is not required to process videos using Dynamic Media, it is expected that they will do so in case a viewer preset is needed for playback.
 
