@@ -44,19 +44,22 @@ Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Once you click on **Cloud Readiness Analyzer**, the tool starts generating the report and displays it when it is available.
-
-   >[!NOTE]
-   >You will have to scroll down the page to view the complete report.
+2. Click on **Generate Report** to execute the Cloud Readiness Analyzer. 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+3. While the CRA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
+
+
+4. Once the CRA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. This action will automatically scroll to the location of that finding in the report.
+
+
+5. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
-   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**. While the report is being regenerated, it displays the progress in terms of percentage completed
 
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
  
