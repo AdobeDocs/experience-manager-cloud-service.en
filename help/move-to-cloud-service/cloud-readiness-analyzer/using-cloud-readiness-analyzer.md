@@ -81,7 +81,7 @@ The format of the report is:
 * **System Overview**: Information about the AEM system on which the CRA was run.
 * **Finding Categories**: Multiple sections that each address one or more findings of the same category. Each section includes the following: Category name, sub-types, finding count and importance, summary, link to category documentation, and individual finding information.
  
-An importance level is assigned to each finding to indicate a rough priority for action. 
+An importance level is assigned to each finding to indicate a rough priority for action. To learn more about each Finding Category, refer to [Pattern Detector Categories](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
 
 Follow the table below to understand the importance levels:
  
@@ -91,7 +91,7 @@ Follow the table below to understand the importance levels:
 |ADVISORY|This finding is potentially an upgrade issue. Further investigation is recommended.|
 |MAJOR|This finding is likely to be an upgrade issue that should be addressed.|
 |CRITICAL|This finding is very likely to be an upgrade issue that must be addressed to prevent loss of function or performance.|
- 
+
 
 ## Interpreting the Cloud Readiness Analyzer CSV Report {#cra-csv-report}
  
