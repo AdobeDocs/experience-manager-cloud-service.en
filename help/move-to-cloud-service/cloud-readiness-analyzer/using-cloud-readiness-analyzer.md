@@ -44,16 +44,16 @@ Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-2. Click on **Generate Report** to execute the Cloud Readiness Analyzer. 
+1. Click on **Generate Report** to execute the Cloud Readiness Analyzer. 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
 
-3. While the CRA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
+1. While the CRA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
 
 
-4. Once the CRA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
+1. Once the CRA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
 
@@ -61,7 +61,7 @@ The above action will automatically scroll to the location of that finding in th
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
 
-5. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
 
