@@ -6,7 +6,7 @@ description: Backup and Restore in AEM as a Cloud Service
 # Backup and Restore in AEM as a Cloud Service
 
 Should content or data corruption occur, AEM as a Cloud Service can restore a customer's full application (code and content) to specific, predetermined times in the last seven days, replacing what was on production.
-If a customer's deployment, meaning the deployed application code is either broken or buggy, it is preferable to fix it and roll forward to a new release rather than restoring it from backup.
+If a customer's deployment, meaning the deployed application code is either broken or buggy, it is preferable to fix it and roll forward to a new release rather than restoring it from backup. Backup is performed in a manner that has no impact on the runtime performance of an application.
 
 >[!CAUTION]
 >
