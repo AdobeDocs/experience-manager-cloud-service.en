@@ -59,9 +59,11 @@ The permissions are those required for accessing Assets.
 ## Authentication {#authentication}
 -->
 
-## End-Points {#end-points}
+<!-- to be addressed later -->
 
+<!-- 
 ## Caching {#caching}
+-->
 
 ## Filtering {#filtering}
 
@@ -78,3 +80,49 @@ See the [Sample Queries](/help/assets/content-fragments/content-fragments-graphq
 <!--
 ## Paging {#paging}
 -->
+
+## End-Points {#end-points}
+
+To have access to GraphQL servlets in AEM you need to configure an endpoint. This also includes two OSGi configurations.
+
+1. The Sling schema servlet that responds to requests to retrieve the GraphQL schema:
+
+   ![AEM Sites GraphQL Schema Servlet](assets/cfm-endpoint-01.png)
+
+   * **Selectors** (`sling.servlet.selectors`) 
+     Must be left blank.
+
+   * **Resource Types** (`sling.servlet.resourceTypes`) 
+     Define the resource type that the GraphQL servlet should listen to. 
+     For example: 
+     `graphql-enablement/components/endpoint`.
+
+   * **Methods** (`sling.servlet.methods^)
+     The HTTP method the servlet should listen to; usually `GET`.
+
+   * **Extensions** (`sling.servlet.extensions`)
+     Specify the extension that the Schema Servlet should respond to. In this case it is `GQLschema`, to be compatible with the GraphQL specifications.
+
+1. The servlet that responds to graphql requests :
+
+   ![Apache Sling GraphQL Servlet](assets/cfm-endpoint-02.png)
+
+   * **Selectors** (`sling.servlet.selectors`) 
+     Must be left blank.
+
+   * **Resource Type** (`sling.servlet.resourceTypes`) 
+     The resource type the GraphQL servlet should respond to. 
+     For example, `graphql-enablement/components/endpoint`.
+
+   * **Methods** (`sling.servlet.methods`)
+     The HTTP methods the GraphQL servlet should respond to, usually `GET` and `POST`.
+
+   * **Extensions** (`sling.servlet.extensions`)
+     The extension to listen for GraphQL requests, usually `gql`.
+
+1. You now need to create an endpoint - a node of the sling:resourceType defined in these configurations. 
+   For example, to create an endpoint for retrieving the GraphQL Schema create a new node under `/apps/<my-site>/graphql`:
+
+   * Name: `endpoint`
+   * Primary Type: ``nt:unstructured`
+   * sling:resourceType: `graphql-enablement/components/endpoint`
