@@ -53,7 +53,7 @@ Follow this section to learn how to view the Cloud Readiness Analyzer report:
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
 
 
-4. Once the CRA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. This action will automatically scroll to the location of that finding in the report.
+4. Once the CRA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
 
