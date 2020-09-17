@@ -189,22 +189,34 @@ The following fragments are used for the appropriate model.
 | Stuttgart | Germany | 634830 | city:emea |
 | Zurich | Switzerland | 415367 | city:capital<br>city:emea |
 
-## GraphQL - Sample Queries {#graphql-sample-queries}
+## GraphQL for AEM - Some Extensions {#graphql-some-extensions}
 
-There are a few basic mechanisms available for use in GraphQL queries for AEM:
+The basic operation of queries adheres to the GraphQL specification. For use in GraphQL queries for AEM there are a few extensions:
 
-* if you required a single result:
+* If you require a single result:
   * use the model name; eg city
 
-* if you expect a list of results:
+* If you expect a list of results:
   * add a trailing "s"; e.g. citys
 
-* if you want to use a logical OR:
+* If you want to use a logical OR:
   * use " _logOp: OR"
 
-* logical AND also exists, but is (often) implicit
+* Logical AND also exists, but is (often) implicit
 
-See the sample queries for illustrations of how to use these.
+* You can query on field names that correspond to the fields within the Content Fragment Model
+
+* In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
+
+  * `_path` : the path to your Content Fragement within the repository
+  
+  * `_variations` : to reveal specific Variations within your Content Fragment
+
+  * `_metadata` : to reveal metadata for you fragment
+
+## GraphQL - Sample Queries {#graphql-sample-queries}
+
+See the sample queries for illustrations of create queries, together with sample results.
 
 ### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
