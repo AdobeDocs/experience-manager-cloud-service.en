@@ -53,7 +53,7 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 ### What's New {#what-is-new-cra}
 
-* The Cloud Readiness Analyzer (CRA) has a start state console that displays an explicit "Generate Report" button for the user to click to execute the CRA. 
+* The Cloud Readiness Analyzer (CRA) has a start state console that displays an explicit **Generate Report** button for the user to click to execute the CRA. 
 
 * The CRA UI displays progress while it is running. It displays items being analyzed and findings found during execution.
 
@@ -61,5 +61,5 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 ### Bug Fixes {#cra-bug-fixes}
 
-* In certain cases, the CRA report wasn't getting updated after forcing a refresh. This has been fixed in this version.
+* In certain cases, the CRA report was not getting updated after forcing a refresh. This has been fixed in this version.
 
