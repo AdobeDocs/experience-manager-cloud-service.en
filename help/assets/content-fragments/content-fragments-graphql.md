@@ -191,7 +191,7 @@ The following fragments are used for the appropriate model.
 
 ## GraphQL for AEM - Some Extensions {#graphql-some-extensions}
 
-The basic operation of queries adheres to the GraphQL specification. For use in GraphQL queries for AEM there are a few extensions:
+The basic operation of queries adheres to the GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
 * If you require a single result:
   * use the model name; eg city
@@ -212,7 +212,7 @@ The basic operation of queries adheres to the GraphQL specification. For use in 
   
   * `_variations` : to reveal specific Variations within your Content Fragment
 
-  * `_metadata` : to reveal metadata for you fragment
+  * `_metadata` : to reveal metadata for your fragment
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
