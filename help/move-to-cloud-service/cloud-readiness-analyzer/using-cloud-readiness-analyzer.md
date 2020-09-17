@@ -57,7 +57,7 @@ Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
 
-The above action will automatically scroll to the location of that finding in the report.
+   The above action will automatically scroll to the location of that finding in the report.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
 
@@ -66,7 +66,7 @@ The above action will automatically scroll to the location of that finding in th
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
 
    >[!NOTE]
-   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**. 
+   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**.
    
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
    
