@@ -272,7 +272,7 @@ Perform the following steps to validate the configuration:
 
    ![](assets/test-bpconfig4.png)
 
-   A message appears at the bottom of the page that your *test package is successfully delivered*.
+   A message appears that your *test package is successfully delivered*.
 
    >[!NOTE]
     >
