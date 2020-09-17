@@ -191,15 +191,15 @@ The following fragments are used for the appropriate model.
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
-There are a few basic mechanisms available for use:
+There are a few basic mechanisms available for use in GraphQL queries for AEM:
 
-* if you required a single result
+* if you required a single result:
   * use the model name; eg city
 
-* if you expect a list of results
+* if you expect a list of results:
   * add a trailing "s"; e.g. citys
 
-* if you want to use a logical OR
+* if you want to use a logical OR:
   * use " _logOp: OR"
 
 * logical AND also exists, but is (often) implicit

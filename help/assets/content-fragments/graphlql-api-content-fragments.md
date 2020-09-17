@@ -124,5 +124,5 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
    For example, to create an endpoint for retrieving the GraphQL Schema create a new node under `/apps/<my-site>/graphql`:
 
    * Name: `endpoint`
-   * Primary Type: ``nt:unstructured`
+   * Primary Type: `nt:unstructured`
    * sling:resourceType: `graphql-enablement/components/endpoint`
