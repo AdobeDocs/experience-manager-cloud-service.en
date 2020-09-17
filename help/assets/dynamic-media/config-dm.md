@@ -48,17 +48,22 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create]**.
 1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. These are provided to you by Adobe in the provisioning email. Please contact support if you did not receive this.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
-1. In the **[!UICONTROL Change Password]** dialog box, do the following:
+1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that consists of 8-25 characters. The password must contain at least one of each of the following:
 
-   * In the **[!UICONTROL New Password]** field, enter a new password that contains a minimum of one upper-case character and one number, and consist of 8-25 characters. (Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction.) 
+      * Uppercase letter
+      * Lowercase letter
+      * Number
+      * Special character # $ & . - _ : { }
+
+      Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction. 
 
       If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
 
-   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]** 
+1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]** 
 
    The new password is saved when you tap **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
 
-   If you tapped **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you are still required to enter a new password when you tap **[!UICONTROL Save]** to save the Dynamic Media configuration.
+   If you tapped **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you are still required to enter a new password when you tap **[!UICONTROL Save]** to save the newly created Dynamic Media configuration.
   
    See also [Changing the password to Dynamic Media](#change-dm-password).
 
