@@ -19,7 +19,7 @@ GraphQL is:
 
   See [Explore GraphQL](https://www.graphql.com). "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 
-GraphQL allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
+[GraphQL for AEM](#graphql-for-aem) allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
 
 ### GraphQL Terminology {#graphql-terminology}
 
@@ -43,17 +43,9 @@ With GraphQL you can perform queries for either:
 
 ## GraphQL for AEM {#graphql-for-aem}
 
-For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL has been implemented. 
+For [Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) has been implemented. 
 
 The GraphQL for AEM implementation is based on the [GraphQL Java libraries](https://graphql.org/code/#java).
-
-### GraphQL for AEM - Endpoints {#graphql-aem-endpoints}
-
-The [endpoint](/help/assets/content-fragments/graphlql-api-content-fragments.md#end-points) is the path used to access GraphQL for AEM. Using this path you (or your app) can:
-
-* access the GraphQL schema,
-* send your GraphQL queries, 
-* receive the responses (to your GraphQL queries).
 
 ## Content Fragments for use with GraphQL for AEM {#content-fragments-use-with-graphql-for-aem}
 

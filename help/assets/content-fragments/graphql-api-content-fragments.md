@@ -224,6 +224,12 @@ For examples, see the [Sample Queries](/help/assets/content-fragments/content-fr
 
 ## End-Points {#end-points}
 
+The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+
+* access the GraphQL schema,
+* send your GraphQL queries, 
+* receive the responses (to your GraphQL queries).
+
 To have access to GraphQL servlets in AEM you need to configure an endpoint. This also includes two OSGi configurations.
 
 1. The Sling schema servlet that responds to requests to retrieve the GraphQL schema:
@@ -244,7 +250,7 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
    * **Extensions** (`sling.servlet.extensions`)
      Specify the extension that the Schema Servlet should respond to. In this case it is `GQLschema`, to be compatible with the GraphQL specifications.
 
-1. The servlet that responds to graphql requests :
+2. The servlet that responds to graphql requests :
 
    ![Apache Sling GraphQL Servlet](assets/cfm-endpoint-02.png)
 
@@ -261,7 +267,7 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
    * **Extensions** (`sling.servlet.extensions`)
      The extension to listen for GraphQL requests, usually `gql`.
 
-1. You now need to create an endpoint - a node of the sling:resourceType defined in these configurations. 
+3. You now need to create an endpoint - a node of the sling:resourceType defined in these configurations. 
    For example, to create an endpoint for retrieving the GraphQL Schema create a new node under `/apps/<my-site>/graphql`:
 
    * Name: `endpoint`
