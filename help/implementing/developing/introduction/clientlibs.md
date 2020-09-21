@@ -9,6 +9,20 @@ Modern websites rely heavily on client-side processing driven by complex JavaScr
 
 To help manage these client-side libraries (clientlibs), AEM provides **Client-side Library Folders**, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client. The client-side library system then takes care of producing the correct links in your final webpage to load the correct code.
 
+Advantages of using clientlibs in AEM include:
+
+* Client-side code is stored in the repository like all other application code and content
+* Clientlibs in AEM can aggregate all CSS and JS into one file
+* Expose clientlibs via a path that is accessible through the [dispatcher](/help/implementing/dispatcher/disp-overview.md)
+* Allows the rewriting of paths for referenced files or images
+* Allows control of inlining CSS that you wish
+
+Clientlibs are the built-in solution for delivering CSS and Javascript from AEM.
+
+>[!TIP]
+>
+>Front-end developers who are creating CSS and Javascript for AEM projects should also familiarize themselves with the [AEM Project Archetype and its automated front-end build process.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+
 ## How Client-Side Libraries Work in AEM {#how-client-side-libraries-work-in-aem}
 
 The standard way to include a client-side library (that is, a JS or CSS file) in the HTML of a page is simply to include a `<script>` or `<link>` tag in the page, containing the path to the file in question. For example,
@@ -102,7 +116,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 >[!CAUTION]
 >
->When using proxied client libraries, the AEM Dispatcher configuration may require an update to ensure the URIs with the extension clientlibs are allowed.
+>When using proxied client libraries, the [AEM Dispatcher](/help/implementing/dispatcher/disp-overview.md) configuration may require an update to ensure the URIs with the extension clientlibs are allowed.
 
 >[!CAUTION]
 >
