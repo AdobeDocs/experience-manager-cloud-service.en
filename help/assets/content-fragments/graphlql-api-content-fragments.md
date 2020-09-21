@@ -47,9 +47,53 @@ The use cases can depend on the type of AEM as a Cloud Service environment:
 
 ## Schema Generation {#schema-generation}
 
-The data schemas correlate to (are based on) the [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md). The data schema caches are refreshed when you update a Content Fragment Model.
+The data schemas correlate to (are based on) the [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md). 
 
-<!-- to be addressed later -->
+In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
+
+The Sites GraphQL service listens (in the background) for any modifications done to a Content Fragment Model. When updates are detected, just that part of the schema is regenerated. This optimization saves time and provides stablity. 
+
+So for example, if you install a WKND package, then modify the Adventure model, only `AdventureModel` GraphQL type will get updated, whereas `ArticleModel` will remain the same. 
+
+>[!NOTE]
+>
+>This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
+
+The schema is served through the same endpoint as the GraphQL queries, but the client has to handle that the schema is called with the extension GQLschema. So for an example, doing a simple `GET` request on `/content/graphql/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
+
+## Fields {#fields}
+
+Within the schema, there are individual fields:
+
+* Fields that you generate, based on how you configure your Content Fragment Model. The field names are taken from the **Property Name** field of the **Data Type**.
+  
+  There is also the **Render As** property to take into consideration, because users can configure certain data types; for example, as either a single line text or a multifield. 
+
+* The GraphQL API also generates a number of helper fields in order to identify a Content Fragment, or to get more information about a content fragment.
+
+### Field Types {#field-types}
+
+GraphQL for AEM supports a list of types. All the supported Content Fragment Model Data Types and the corresponding GraphQL types are represented:
+
+| Content Fragment Model - Data Type | GraphQL Type | Description |
+|--- |--- |--- |
+| Single Line Text | String, [String] | Used for simple strings such as author names, location names, etc |
+| Multi Line Text | String | Used for outputing text such as the body of an article |
+| Number | Float, [Float] | Used to display floating point number and regular numbers |
+| Boolean | Boolean | Used to display checkboxes → simple true/false statements |
+| Date And Time | Calendar | Used to display date and time in an ISO 8086 format |
+| Enumeration | String | Used to display an option from a list of options defined at model creation |
+| Tags | [String] | Used to display a list of Strings representing Tags used in AEM |
+| Content Reference | String | Used to display the path towards another asset in AEM |
+| Fragment Reference | <A model type> | Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
+
+### GraphQL for AEM - Helper Fields {#graphql-aem-helper-fields}
+
+#### Path {#path}
+
+#### Metadata {#metadata}
+
+#### Varations {#variations}
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -73,7 +117,9 @@ The permissions are those required for accessing Assets.
 
 ## Filtering {#filtering}
 
-See the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries) for examples.
+Filtering in your GraphQL queries allows you to return specific data. Filtering uses a syntax based on logical operators and expressions.
+
+For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries) for examples.
 
 <!-- to be addressed later -->
 

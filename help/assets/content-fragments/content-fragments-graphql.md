@@ -47,6 +47,14 @@ For Adobe Experience as a Cloud Experience, a customized implementation of the s
 
 The GraphQL for AEM implementation is based on the [GraphQL Java libraries](https://graphql.org/code/#java).
 
+### GraphQL for AEM - Endpoints {#graphql-aem-endpoints}
+
+The [endpoint](/help/assets/content-fragments/graphlql-api-content-fragments.md#end-points) is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+
+* access the GraphQL schema,
+* send your GraphQL queries, 
+* receive the responses (to your GraphQL queries).
+
 ## Content Fragments for use with GraphQL for AEM {#content-fragments-use-with-graphql-for-aem}
 
 [Content Fragments](#content-fragments) can be used as a basis for GraphQL for AEM queries as:
