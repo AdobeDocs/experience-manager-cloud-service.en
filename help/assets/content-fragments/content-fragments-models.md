@@ -129,6 +129,16 @@ Content Fragments can form nested content, using either of the following data ty
     >This method is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
   * Can be configured for one or multiple references (in the resulting fragment).
 
+>[!NOTE]
+>
+>AEM has a recurrence protection for:
+>
+>* Content References
+>  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
+>
+>* Fragment References in GraphQL 
+>  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+
 ### Content Reference {#content-reference}
 
 The Content Reference allows you to render content from another source; for example, image or content fragment.

@@ -51,15 +51,15 @@ The data schemas correlate to (are based on) the [Content Fragment Models](/help
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
-The Sites GraphQL service listens (in the background) for any modifications done to a Content Fragment Model. When updates are detected, just that part of the schema is regenerated. This optimization saves time and provides stablity. 
+The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stablity.
 
-So for example, if you install a WKND package, then modify the Adventure model, only `AdventureModel` GraphQL type will get updated, whereas `ArticleModel` will remain the same. 
+So for example, if you install a package containing Content-Fragment-Model-1 and Content-Fragment-Model-2, then modify Content-Fragment-Model-2, only the `Model-2` GraphQL type will get updated, whereas `Model-1` will remain the same. 
 
 >[!NOTE]
 >
 >This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
 
-The schema is served through the same endpoint as the GraphQL queries, but the client has to handle that the schema is called with the extension GQLschema. So for an example, doing a simple `GET` request on `/content/graphql/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
+The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/graphql/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
 ## Fields {#fields}
 
@@ -91,9 +91,98 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 #### Path {#path}
 
+The path field is used as an identifier in GraphQL. It represents the path of the Content Fragment asset inside the AEM repository. We have chosen this as the identifier of a content fragment, because it:
+
+* is unique within AEM,
+* can be easily fetched.
+
+The following code will display the paths of all Content Fragments that were created based on the Content Fragment Model `Person`. 
+
+```xml
+{
+    persons {
+        _path
+    }
+}
+```
+
+To retrieve a single Content Fragment of a specific type, you also need to determine its path first. for example:
+
+```xml
+{
+    person(_path="/content/dam/path/to/fragment/john-doe") {
+        _path
+        name
+        first-name
+    }
+}
+```
+
+See [Sample Query - A Single City Fragment](/help/assets/content-fragments/content-fragments-graphql.md#sample-single-city-fragment).
+
 #### Metadata {#metadata}
 
+Through GraphQL AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a content fragment, such as the title of a content fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
+
+Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData `exposes the information grouped by the following scalar types:
+
+| Field |
+|--- |
+|`stringMetadata:[StringMetadata]!`|
+|`stringArrayMetadata:[StringArrayMetadata]!`|
+|`intMetadata:[IntMetadata]!`|
+|`intArrayMetadata:[IntArrayMetadata]!`|
+|`floatMetadata:[FloatMetadata]!`|
+|`floatArrayMetadata:[FloatArrayMetadata]!`|
+|`booleanMetadata:[BooleanMetadata]!`|
+|`booleanArrayMetadata:[booleanArrayMetadata]!` |
+|`calendarMetadata:[CalendarMetadata]!`|
+|`calendarArrayMetadata:[CalendarArrayMetadata]!`|
+
+Each scalar type represents either a single name-value pair or an array of name-value pairs, where the value of that pair is of the type it was grouped in. 
+
+For example, if you want to retrieve the title of a Content Fragment, we know that this property is a String property, so we would query for all the String Metadata:
+
+To query for metadata:
+
+```xml
+{
+  person(_path="/content/dam/path/to/fragment/john-doe") {
+    _path
+    _metadata {
+      stringMetadata {
+        name
+        value
+      }
+    }
+  }
+}
+```
+
+You can view all the metadata GraphQL types if you view the Generated GraphQL schema. All model types have the same `TypedMetaData`. 
+
+>[!NOTE]
+>
+>**Difference between normal and array metadata**
+>Keep in mind that `StringMetadata` and `StringArrayMetadata` both refer to what is stored in the repository, not how you retrieve them. 
+>
+>So for example, by calling the `stringMetadata` field, you would receive an array of all the metadata that was stored in the repository as a `String `, and if you call `stringArrayMetadata` you would receive an array of all the metadata that was stored in the repository as `String[]`.
+
+See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql.md#sample-metadata-awards-gb).
+
 #### Varations {#variations}
+
+The `_variations` field has been implemented to simplify querying the variations that a Content Fragment has. For example:
+
+```xml
+{
+  person(_path="/content/dam/path/to/fragment/john-doe") {
+    _variations
+  }
+}
+```
+
+ee [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql.md#sample-cities-named-variation).
 
 <!--
 ## Security Considerations {#security-considerations}
