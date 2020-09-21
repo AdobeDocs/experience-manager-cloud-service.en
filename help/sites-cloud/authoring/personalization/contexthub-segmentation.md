@@ -19,7 +19,7 @@ The [Audiences](audiences.md) console is used to manage segments for ContextHub 
 
 To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**.
 
-![chlimage_1-310](assets/contexthub-segmentation-audiences.png)
+![Managing audiences](/help/sites-cloud/authoring/assets/contexthub-segmentation-audiences.png)
 
 ## Segment Editor {#segment-editor}
 
