@@ -5,7 +5,7 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 
 # Content Delivery using Content Fragments with GraphQL {#content-delivery-using-content-fragments-with-graphQL}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with GraphQL, to deliver structured content for use in your applications.
+With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with GraphQL for AEM (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
 ## GraphQL - An Overview {#graphql-overview}
 
@@ -41,9 +41,15 @@ With GraphQL you can perform queries for either:
   
 * **[List of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-## Content Fragments for use with GraphQL {#content-fragments-overview}
+## GraphQL for AEM {#graphql-for-aem}
 
-[Content Fragments](#content-fragments) can be used as a basis for GraphQL queries as:
+For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL has been implemented. 
+
+The GraphQL for AEM implementation is based on the [GraphQL Java libraries](https://graphql.org/code/#java).
+
+## Content Fragments for use with GraphQL for AEM {#content-fragments-use-with-graphql-for-aem}
+
+[Content Fragments](#content-fragments) can be used as a basis for GraphQL for AEM queries as:
 
 * The [Content Fragment Models](#content-fragments-models) provide the required structure by means of defined data types.
 * The [Fragment Reference](#fragment-references), available when defining a model, can be used to define additional layers of structure.
@@ -191,7 +197,7 @@ The following fragments are used for the appropriate model.
 
 ## GraphQL for AEM - Some Extensions {#graphql-some-extensions}
 
-The basic operation of queries adheres to the GraphQL specification. For GraphQL queries with AEM there are a few extensions:
+The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
 * If you require a single result:
   * use the model name; eg city

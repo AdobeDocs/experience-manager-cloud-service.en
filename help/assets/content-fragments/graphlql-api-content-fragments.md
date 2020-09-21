@@ -27,6 +27,12 @@ For further information about the GraphQL API, see the following sections (among
 
   * [Case Studies](https://www.graphql.com/case-studies/)
 
+The GraphQL for AEM implementation is based on the standard GraphQL Java implementation. See:
+
+* [graphQL.org - Java](https://graphql.org/code/#java)
+
+* [GraphQL Java at GitHub](https://github.com/graphql-java)
+
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
 The use cases can depend on the type of AEM as a Cloud Service environment:
