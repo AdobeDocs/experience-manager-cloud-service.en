@@ -421,7 +421,84 @@ query {
 }
 ```
 
-### Sample Query - All Cities {#sample-all-cities}
+### Sample Query - All Information about All Cities {#sample-all-information-all-cities}
+
+To retrieve all information about all cities, you can use the very basic query:
+**Sample Query**
+
+```xml
+{
+  citys
+}
+```
+
+When executed, the system will automatically expand the query to include all fields:
+
+```xml
+{
+  citys {
+    _path
+    name
+    country
+    population
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "citys": [
+      {
+        "_path": "/content/dam/cities/basel",
+        "name": "Basel",
+        "country": "Switzerland",
+        "population": 172258
+      },
+      {
+        "_path": "/content/dam/cities/berlin",
+        "name": "Berlin",
+        "country": "Germany",
+        "population": 3669491
+      },
+      {
+        "_path": "/content/dam/cities/bucharest",
+        "name": "Bucharest",
+        "country": "Romania",
+        "population": 1821000
+      },
+      {
+        "_path": "/content/dam/cities/san-francisco",
+        "name": "San Francisco",
+        "country": "USA",
+        "population": 883306
+      },
+      {
+        "_path": "/content/dam/cities/san-jose",
+        "name": "San Jose",
+        "country": "USA",
+        "population": 1026350
+      },
+      {
+        "_path": "/content/dam/cities/stuttgart",
+        "name": "Stuttgart",
+        "country": "Germany",
+        "population": 634830
+      },
+      {
+        "_path": "/content/dam/cities/zurich",
+        "name": "Zurich",
+        "country": "Switzerland",
+        "population": 415367
+      }
+    ]
+  }
+}
+```
+
+### Sample Query - Names of All Cities {#sample-names-all-cities}
 
 This is a straightforward query to return the `name`of all entries in the `city`schema.
 
