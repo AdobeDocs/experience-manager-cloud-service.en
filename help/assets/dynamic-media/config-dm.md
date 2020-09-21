@@ -53,9 +53,9 @@ To migrate any custom viewer presets and configurations that you have created fr
       * Uppercase letter
       * Lowercase letter
       * Number
-      * Special character # $ & . - _ : { }
+      * Special character: `# $ & . - _ : { }`
 
-      Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction. 
+      Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction. 
 
       If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
 
@@ -120,7 +120,12 @@ If you want to further customize your configuration, you can optionally complete
 
 Password expiration in Dynamic Media is set to 100 years from the current system date.
 
-Passwords must contain a minimum of one upper-case character and one number, and consist of 8-25 characters.
+The password must contain at least one of each of the following:
+
+   * Uppercase letter
+   * Lowercase letter
+   * Number
+   * Special character: `# $ & . - _ : { }`
 
 If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
 
@@ -132,7 +137,9 @@ The changed password is saved when you tap **[!UICONTROL Save]** in the upper-ri
 1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, directly below the **[!UICONTROL Password]** field, tap **[!UICONTROL Change Password.]**
 1. In the **[!UICONTROL Change Password]** dialog box, do the following:
 
-   * In the **[!UICONTROL New Password]** field, enter a new password. (Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from any interaction.) 
+   * In the **[!UICONTROL New Password]** field, enter a new password.
+
+      Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
 
    * In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]**
 
