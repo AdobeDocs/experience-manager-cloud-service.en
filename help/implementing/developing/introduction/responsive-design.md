@@ -63,7 +63,7 @@ In your CSS file, define media queries based on the properties of the devices th
 
 The [WKND tutorial](develop-wknd-tutorial.md) uses this strategy to define styles in the site design. The CSS file used by WKND is located at `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
-<!-->
+<!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
 
 Use the **Emulators** toolbar to preview your content on different devices. When you select a device, the page changes to adapt to the viewport size.
