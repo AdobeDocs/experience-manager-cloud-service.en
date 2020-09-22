@@ -351,7 +351,7 @@ Then you set the `allowProxy` property on `foo` to true.
 1. On the lines below `#base=[root]`, type the paths of the source files relative to the root. Place each file name on a separate line.
 1. Click **Save All**.
 
-### Linking to Dependencies {#linking-to-dependencies}
+### Linking to Dependencies {#linking-dependencies}
 
 When the code in your client library folder references other libraries, identify the other libraries as dependencies. The `ui:includeClientLib` tag that references your client library folder causes the HTML code to include a link to your generated library file as well as the dependencies.
 
