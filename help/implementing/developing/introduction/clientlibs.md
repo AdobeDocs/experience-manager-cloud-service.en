@@ -182,19 +182,7 @@ Use the categories property to identify the client library folder to embed. To e
 * **Type:** String[]
 * **Value:** The value of the categories property of the `cq:ClientLibraryFolder` node to embed.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-->
 XXXXXXXXXXXXXXXXX Below is copy of original article for reference XXXXXXXXXXXXXXXXXXXXX
 
 Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. Organizing and optimizing the serving of this code can be a complicated issue.
@@ -588,3 +576,4 @@ The HTML Library Manager service processes `cq:ClientLibraryFolder` tags and gen
 * Improve readability: Include whitespace and do not compress.
 
 For information about configuring the service, see [AEM HTML Library Manager.](/help/implementing/deploying/configuring-osgi.md)
+-->
