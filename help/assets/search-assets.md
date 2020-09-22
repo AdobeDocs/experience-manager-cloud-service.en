@@ -86,7 +86,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 * Assets with `woman` and `running` keywords in the metadata (default behavior).
 
 * Assets smart tagged with either of the keywords (Smart Tags behavior).
---> 
+-->
 
 ### Search ranking and boosting {#searchrank}
 
@@ -100,13 +100,13 @@ You can improve the relevance of keywords for particular assets to help boost se
 
 1. From the Assets user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click/tap **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
 1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click/tap **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
-1. Click/tap **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
+1. Click **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
 
 You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Understand how search results are ranked and how the rank can be influenced.*
+*Video: Understand how search results are ranked and how the rank can be influenced.*
 
 ## Advanced search {#scope}
 
@@ -235,7 +235,7 @@ To access the asset selector interface, go to `https://[AEM server]:[port]/aem/a
 
 ![Browse and select asset in the asset picker](assets/assetpicker.png)
 
-Browse and select asset in the asset picker
+*Figure: Browse and select asset in the asset picker.*
 
 ## Limitations {#limitations}
 
@@ -257,8 +257,8 @@ Visual search or similarity search has the following limitations:
 * Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Usage data is grouped under Usage score, Impressions, Clicks, and Media channels where the assets appear categories.
 * Use check box to select all the search results or the filtered search results to operate on the selection. It selects all searched assets irrespective of how many assets are displayed in the current user view. For example, you can download all the selected assets, update metadata properties in bulk for all the selected assets, or add selected assets to a Collection.
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
-* Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
-* Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.
+* Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example `shoe12`).
+* Full-text search supports operators such as `-` and `^`. To search these letters as string literals, enclose the search expression in double quotes. For example, use `"Notebook - Beauty"` instead of `Notebook - Beauty`.
 * If the search results are too many, limit the [scope of search](#scope) to zero-in on the desired assets. It works best when you have some idea of how to better look for the desired assets, for example, specific file type, specific location, specific metadata, and so on.
 
 * **Tagging**: Tags helps you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. AEM offers methods to automatically tag assets using Adobe Sensei's artificially intelligent services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in if the feature is enabled on your account. It works alongside the in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
@@ -271,7 +271,7 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Search behavior with and without quotation marks](assets/search_with_quotes.gif)
 
-Search behavior with and without quotation marks
+*Figure: Search behavior with and without quotation marks.*
 
 **Search with asterisk wildcard**: To broaden the search, use an asterisk before or after the search word to match any number of characters. For example, searching for run without an asterisk does not return assets containing any variation of the word (including in the metadata). An asterisk substitutes for any number of characters. For example,
 
@@ -282,7 +282,7 @@ Search behavior with and without quotation marks
 
 ![Illustrating use of asterisk wildcard in Asset search using an example](assets/search_with_asterisk_run.gif)
 
-Illustrating use of asterisk wildcard in Asset search using an example
+*Figure: Illustrating use of asterisk wildcard in Asset search using an example.*
 
 **Search with question mark wildcard**: To broaden the search, use one or more '?' characters to match exact number of characters. For example, in the following illustration,
 
@@ -294,7 +294,7 @@ Illustrating use of asterisk wildcard in Asset search using an example
 
 ![Illustrating use of question mark wildcard in Asset search using an example](assets/search_with_questionmark_run.gif)
 
-Illustrating use of question mark wildcard in Asset search using an example
+*Figure: Illustrating use of question mark wildcard in Asset search using an example.*
 
 **Exclude a keyword**: Use dash to search for assets that do not contain a keyword. For example, `running -shoe` query returns assets that contain `running`, but not `shoe`. Similarly, `camp -night` query returns assets that contain `camp` but not `night`. Note that `camp-night` query returns assets that contain both `camp` and `night`.
 
@@ -307,6 +307,7 @@ Illustrating use of question mark wildcard in Asset search using an example
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -341,7 +342,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -356,8 +356,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -367,20 +368,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -458,6 +459,9 @@ You can create smart collections based on the search criteria. From the **[!UICO
 **Search filter/predicate is not available**: If an expected customization to search filters is not available on the user interface, contact your administrator to check if the customization was implemented for all authors and on the production server you are using. It is possible that the configuration was incorrect.
 
 ## Troubleshoot search-related issues {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 See the issues and possible course of action below:
 

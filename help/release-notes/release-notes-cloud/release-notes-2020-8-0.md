@@ -21,25 +21,24 @@ The following section outlines the general Release Notes for Experience Manager 
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Video transcoding is now supported with asset microservices, with a new Video section in the [!UICONTROL Processing Profiles] screen supporting configuration of video bitrate and dimensions (output format is MP4 with H.264 codec). For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). For more transcoding options and video delivery [!DNL Dynamic Media] add-on can be used.
+* Video transcoding is now supported with asset microservices. A new section in the [!UICONTROL Processing Profiles] configuration lets you set video bit rate and dimensions. The output format is MP4 with H.264 codec. For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). For more transcoding options and for video delivery, use [!DNL Dynamic Media] add-on.
 
 * On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
 
 * A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
 
   * Asynchronous download for large downloads so that users don't have to wait.
-  
   * A new modular API for developer extensibility.
 
-* [!DNL Experience Manager] has improved the performance of metadata extraction for asset microservices. It increases the overall asset ingestion throughput.
+* Metadata extraction for asset microservices has an improved performance. It increases the overall asset ingestion throughput.
 
-* Use processing profile to generate custom metadata using Compute Service. See [Custom metadata using processing profile](/help/assets/manage-metadata.md#metadata-compute-service)
+* Use a processing profile to generate custom metadata using Compute Service. See [Custom metadata using processing profile](/help/assets/manage-metadata.md#metadata-compute-service).
 
 * A simpler download experience for Brand Portal users that administrators can configure. See [download experience overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
 * Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* You can now invalidate the CDN (Content Delivery Network) cache directly from [!DNL Dynamic Media] in AEM as a Cloud Service (as opposed to using [!DNL Dynamic Media Classic]) to ensure the latest assets are served within minutes instead of hours. See [Invalidating the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) 
+* You can now invalidate the CDN (Content Delivery Network) cache directly from [!DNL Dynamic Media] in AEM as a Cloud Service (as opposed to using [!DNL Dynamic Media Classic]). It ensures that the latest assets are served within minutes instead of hours. See [Invalidating the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Enhanced accessibility support is added to user interface controls, navigation, browse, and search experience in [!DNL Assets].
 
@@ -48,7 +47,7 @@ The following section outlines the general Release Notes for Experience Manager 
   * The accordions elements in search filters section are interpreted as standard expandable accordions. <!-- via CQ-4273103 -->
   * When applying a tag to an asset, the dialog box displays tags as tree elements. ARIA attributes are appropriately applied to the tree elements to make them accessible now. <!-- via CQ-4272964 -->
   
-* [!DNL AEM Desktop app] 2.0.3 release is now available, improving compatibility with [!DNL AEM] 6.5.5 [!DNL Service Pack] and updating client OS compatibility list (removing [!DNL Windows] 7 and [!DNL MacOS] versions before 10.14).
+* [!DNL AEM Desktop app] 2.0.3 release is now available. It improves compatibility with [!DNL Experience Manager] 6.5.5 service pack and has an updated client OS compatibility list. [!DNL Windows] 7 and [!DNL macOS] versions earlier than 10.14 are not supported.
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed}
 

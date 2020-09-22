@@ -30,5 +30,4 @@ This will take the user to the Notifications Preferences screen in Adobe [!UICON
 The users can turn on email notifications and (optionally) select the types of notifications they want to receive over email.
 
 >[!NOTE]
->
 >You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
