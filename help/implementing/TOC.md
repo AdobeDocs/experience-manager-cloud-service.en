@@ -77,6 +77,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Extending ContextHub](developing/personalization/extending-contexthub.md)
   + [ContextHub API](developing/personalization/contexthub-api.md)
   + [Integrating with Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
+  + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
