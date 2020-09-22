@@ -113,7 +113,7 @@ Both models are valid and supported by AEM. However, one should consider the adv
     </ul> </td>
    <td>
     <ul>
-     <li>Clientlib resources required by the application such as CSS and JavaScript will need to be made available by the AEM developer via the <code>allowProxy</code> property<br /> </li>
+     <li>Clientlib resources required by the application such as CSS and JavaScript will need to be made available by the AEM developer via the <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> property<br /> </li>
      <li>Resources must be synched between AEM and Adobe I/O Runtime<br /> </li>
      <li>To enable authoring of the SPA, a proxy server for Adobe I/O Runtime may be necessary</li>
     </ul> </td>

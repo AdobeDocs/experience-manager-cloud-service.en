@@ -110,7 +110,7 @@ When creating a new editable template you:
 >
 >All sample content pages contain `cq.shared`, so any content based on them automatically includes `cq.shared`. However, if you decide to create your own content pages from scratch without basing them on sample content, you must make sure to include the `cq.shared` namespace.
 >
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>See [Using Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md) for further information.
 
 >[!CAUTION]
 >
