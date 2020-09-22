@@ -29,7 +29,7 @@ See the following topics for information about implementing responsive design be
 * [Fluid grids](#developing-a-fluid-grid)
 * [Adaptive images](#using-adaptive-images)
 
-As you design, use the **Emulator** toobar to preview your pages for various screen sizes.
+As you design, use the **Emulator** toolbar to preview your pages for various screen sizes.
 
 ## Before You Develop {#before-you-develop}
 
@@ -63,6 +63,7 @@ In your CSS file, define media queries based on the properties of the devices th
 
 The [WKND tutorial](develop-wknd-tutorial.md) uses this strategy to define styles in the site design. The CSS file used by WKND is located at `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
+<!-->
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
 
 Use the **Emulators** toolbar to preview your content on different devices. When you select a device, the page changes to adapt to the viewport size.
@@ -862,3 +863,4 @@ The following CSS could implement this behavior:
 For the page layout of each viewport size you are targeting, determine the number of columns that each content block spans. Then, determine which class to use for the div elements of those content blocks.
 
 When you have established the div classes, you can implement the grid using your AEM application.
+-->
