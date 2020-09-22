@@ -95,8 +95,10 @@ The recommended application deployment structure is as follows:
   + `all` content package embeds the following packages, to create a singular deployment artifact
     + `ui.apps.common` deploys code required by **both** site A and site B
     + `ui.apps.site-a` deploys code required by site A
+        + `core.site-a` OSGi bundle Jar is embedded in `ui.apps.site-a`
     + `ui.content.site-a` deploys content and configuration required by site A
     + `ui.apps.site-b` deploys code required by site B
+        + `core.site-b` OSGi bundle Jar is embedded in `ui.apps.site-b`
     + `ui.content.site-b` deploys content and configuration required by site B
 
 ## Package Types {#package-types}
