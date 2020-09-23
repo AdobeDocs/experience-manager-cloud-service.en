@@ -151,7 +151,7 @@ To configure the service, you can use the [Web Console](/help/sites-deploying/co
 
 ## Setting the Maximum Size of the Inbox {#setting-the-maximum-size-of-the-inbox}
 
-You can set the maximum size of the inbox by configuring the **Adobe Granite Workflow Service**, using the [Web Console](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or [add an OSGi configuration to the repository](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-in-the-repository). The following table describes the property that you configure for either method.
+You can set the maximum size of the inbox by configuring the **Adobe Granite Workflow Service**, see [add an OSGi configuration to the repository](/help/implementing/deploying/configuring-osgi.md). The following table describes the property that you configure.
 
 >[!NOTE]
 >
