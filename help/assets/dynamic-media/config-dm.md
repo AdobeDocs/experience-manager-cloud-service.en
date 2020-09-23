@@ -39,7 +39,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Creating a Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
+## Creating a new Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
@@ -103,22 +103,12 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Tap **[!UICONTROL Save]**. The new Dynamic Media password and configuration is saved. If you tapped **[!UICONTROL Cancel]** instead, no password update occurs.
 1. In the **[!UICONTROL Configuring Dynamic Media]** dialog box, tap **[!UICONTROL OK]** to begin the configuration.
 
-   When the configuration finishes, you will receive an Inbox notification within AEM informing you that the configuration was either successful or not, as seen in the following respective images. 
-
-   ![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
-
-   ![aeminboxfailure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
-
-1. To access the Inbox notifications, near the upper-right corner of the AEM page, tap the bell icon, then tap **[!UICONTROL View All]**.
-1. On the Inbox page, tap the success notification to read an overview of the status and logs of the configuration.
-
-   If the configuration failed, tap the failure notification as seen below.
-
-   ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
-
-1. On the **[!UICONTROL DMSETUP]** page,
-
-   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   >[!IMPORTANT]
+   >
+   >When the new Dynamic Media configuration finishes its setup, you will receive a status notification within AEM's Inbox.
+   >
+   >This Inbox notification informs you if the configuration was either successful or not.
+   > See [Troubleshooting a new Dynamic Media configuration](#troubleshooting-dm-config) and [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) for more information. 
 
 1. To securely preview Dynamic Media content before it gets published, you need to "allowlist" the AEM author instance to connect to Dynamic Media. To set this up, do the following:
 
@@ -133,6 +123,29 @@ To migrate any custom viewer presets and configurations that you have created fr
 You are now finished with the basic configuration; you are ready to use Dynamic Media.
 
 If you want to further customize your configuration, you can optionally complete any of the tasks under [Configuring Advanced Settings in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### Troubleshooting a new Dynamic Media Configuration {#troubleshoot-dm-config}
+
+When a new Dynamic Media configuration finishes its setup, you will receive a status notification within AEM's Inbox. This notification informs you if the configuration was either successful or not, as seen in the following respective images from the Inbox.
+
+   ![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+   ![aeminboxfailure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+See also [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+**To troubleshoot a new Dynamic Media configuration**
+
+1. Near the upper-right corner of the AEM page, tap the bell icon, then tap **[!UICONTROL View All]**.
+1. On the Inbox page, tap the success notification to read an overview of the status and logs of the configuration.
+
+   If the configuration failed, tap the failure notification similar to the following screenshot.
+
+   ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. On the **[!UICONTROL DMSETUP]** page, review the configuration details that describe the failure. In particular, take note of any error messages or error codes. You will need to contact Adobe Care with this information.
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Changing the password to Dynamic Media {#change-dm-password}
 
