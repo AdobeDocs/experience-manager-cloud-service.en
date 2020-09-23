@@ -7,7 +7,7 @@ description: Learn how to Administer Workflow Instances
 
 The workflow console provides several tools for administering workflow instances to ensure that they are executing as expected.
 
-A range of consoles are available for administering your workflows. Use the [global navigation](/help/sites-authoring/basic-handling.md#global-navigation) to open the **Tools** pane, then select **Workflow**:
+A range of consoles are available for administering your workflows. Use the [global navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to open the **Tools** pane, then select **Workflow**:
 
 * **Models**: Manage workflow definitions
 * **Instances**: View and manage running workflow instances
@@ -32,6 +32,7 @@ A range of consoles are available for administering your workflows. Use the [glo
    ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
 
 1. In the Filter dialog, select the workflow search criteria. You can search based on these inputs:
+
 * Payload path: Select a specific path
 * Workflow model: Select a workflow model
 * Assignee: Select a workflow Assignee
@@ -150,7 +151,7 @@ To configure the service, you can use the [Web Console](/help/sites-deploying/co
 
 ## Setting the Maximum Size of the Inbox {#setting-the-maximum-size-of-the-inbox}
 
-You can set the maximum size of the inbox by configuring the **Adobe Granite Workflow Service**, using the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or [add an OSGi configuration to the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). The following table describes the property that you configure for either method.
+You can set the maximum size of the inbox by configuring the **Adobe Granite Workflow Service**, using the [Web Console](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or [add an OSGi configuration to the repository](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-in-the-repository). The following table describes the property that you configure for either method.
 
 >[!NOTE]
 >
