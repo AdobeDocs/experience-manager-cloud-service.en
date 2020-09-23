@@ -136,6 +136,29 @@ If you need to use client libraries on author, you can create your client librar
 
 You can then "hook" into the authoring JS by adding your client libraries to an out-of-the-box client library category.
 
+## Debugging Tools {#debugging-tools}
+
+AEM provides several tools for debugging and testing client library folders.
+
+### Discover Client Libraries {#discover-client-libraries}
+
+The `/libs/cq/granite/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/granite/ui/content/dumplibs` node has the component as a resource type. To open the page, use the following URL (changing the host and port as required):
+
+`https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
+
+The information includes the library path and type (CSS or JS), and the values of the library attributes, such as categories and dependencies. Subsequent tables on the page show the libraries in each category and channel.
+
+### See Generated Output {#see-generated-output}
+
+The `dumplibs` component includes a test selector that displays the source code that is generated for `ui:includeClientLib` tags. The page includes code for different combinations of js, css, and themed attributes.
+
+1. Use one of the following methods to open the Test Output page:
+   * From the `dumplibs.html` page, click the link in the **Click here for output testing** text.
+   * Open the following URL in your web browser (use a different host and port as required):
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+   * The default page shows output for tags with no value for the categories attribute.
+1. To see the output for a category, type the value of the client library's `categories` property and click **Submit Query**.
+
 ## Additional Client Library Folder Features {#additional-features}
 
 There are a number of other features that are supported by client library folders in AEM. Additional client library settings can be controlled through the **Adobe Granite HTML Library Manager** panel of the System Console at `https://<host>:<port>/system/console/configMgr`).
@@ -181,3 +204,135 @@ Use the categories property to identify the client library folder to embed. To e
 * **Name:** embed
 * **Type:** String[]
 * **Value:** The value of the categories property of the `cq:ClientLibraryFolder` node to embed.
+
+#### Using Embedding to Minimize Requests {#using-embedding-to-minimize-requests}
+
+In some cases you may find that the final HTML generated for typical page by your publish instance includes a relatively large number of `<script>` elements.
+
+In such cases, it can be useful to combine all the required client library code in to a single file so that the number of back and forth requests on page load is reduced. To do this you can `embed` the required libraries into you app-specific client library using the embed property of the `cq:ClientLibraryFolder` node.
+
+#### Paths in CSS Files {#paths-in-css-files}
+
+When you embed CSS files, the generated CSS code uses paths to resources that are relative to the embedding library. For example, the publicly-accessible library `/etc/client/libraries/myclientlibs/publicmain` embeds the `/apps/myapp/clientlib` client library:
+
+The `main.css` file contains the following style:
+
+```javascript
+body {
+  padding: 0;
+  margin: 0;
+  background: url(images/bg-full.jpg) no-repeat center top;
+  width: 100%;
+}
+```
+
+The CSS file that the `publicmain` node generates contains the following style, using the URL of the original image:
+
+```javascript
+body {
+  padding: 0;
+  margin: 0;
+  background: url(../../../apps/myapp/clientlib/styles/images/bg-full.jpg) no-repeat center top;
+  width: 100%;
+}
+```
+
+#### See Embedded Files in HTML Output {#see-embedded-files}
+
+To trace the origin of embedded code, or to ensure that embedded client libraries are producing the expected results, you can see the names of the files that are being embedded at runtime. To see the file names, append the `debugClientLibs=true` parameter to the URL of your web page. The library that is generated contains `@import` statements instead of the embedded code.
+
+In the example in the previous [Embedding Code From Other Libraries](#embedding-code-from-other-libraries) section, the `/etc/client/libraries/myclientlibs/publicmain` client library folder embeds the `/apps/myapp/clientlib` client library folder. Appending the parameter to the web page produces the following link in the web page's source code:
+
+```xml
+<link rel="stylesheet" href="/etc/clientlibs/mycientlibs/publicmain.css">
+```
+
+Opening the `publicmain.css` file reveals the following code:
+
+```javascript
+@import url("/apps/myapp/clientlib/styles/main.css");
+```
+
+1. In the address box of your web browser, append the following text to the URL of your HTML:
+   * `?debugClientLibs=true`
+1. When the page loads, view the page source.
+1. Click the link that is provided as the href for the link element to open the file and view the source code.
+
+### Using Preprocessors {#using-preprocessors}
+
+AEM allows for pluggable preprocessors and ships with support for [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) for CSS and JavaScript and [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) for JavaScript with YUI set as AEM's default preprocessor.
+
+The pluggable preprocessors allow for flexible usage including:
+
+* Defining ScriptProcessors that can process script sources
+* Processors are configurable with options
+* Processors can be used for minification, but also for non-minified cases
+* The clientlib can define which processor to use
+
+>[!NOTE]
+>
+>By default, AEM uses the YUI Compressor. See the [YUI Compressor GitHub documentation](https://github.com/yui/yuicompressor/issues) for a list of known issues. Switching to GCC compressor for particular clientlibs may solve some issues observed when using YUI.
+
+>[!CAUTION]
+>
+>Do not place a minified library in a client library. Instead provide the raw library and if minification is required, use the options of the preprocessors.
+
+#### Usage {#usage}
+
+You can choose to configure the preprocessors configuration per clientlibrary or system-wide.
+
+* Add the multivalue properties `cssProcessor` and `jsProcessor` on the clientlibrary node
+* Or define the system default configuration via the **HTML Library Manager** OSGi configuration
+
+A preprocessor configuration on the clientlib node takes precedence over the OSGI configuration.
+
+#### Format and Examples {#format-and-examples}
+
+##### Format {#format}
+
+```javascript
+config:= mode ":" processorName options*;
+mode:= "default" | "min";
+processorName := "none" | <name>;
+options := ";" option;
+option := name "=" value;
+```
+
+##### YUI Compressor for CSS Minification and GCC for JS {#yui-compressor-for-css-minification-and-gcc-for-js}
+
+```javascript
+cssProcessor: ["default:none", "min:yui"]
+jsProcessor: ["default:none", "min:gcc;compilationLevel=advanced"]
+```
+
+##### Typescript to Preprocess and Then GCC to Minify and Obfuscate {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate}
+
+```javascript
+jsProcessor: [
+   "default:typescript",
+   "min:typescript",
+   "min:gcc;obfuscate=true"
+]
+```
+
+##### Additional GCC Options {#additional-gcc-options}
+
+```javascript
+failOnWarning (defaults to "false")
+languageIn (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT5")
+compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
+```
+
+For further details on GCC options, see the [GCC documentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
+
+#### Set System Default Minifier {#set-system-default-minifier}
+
+YUI is set as the default minifier in AEM. To change this to GCC, follow these steps.
+
+1. Go to Apache Felix Config Manager at (`http://<host>:<portY/system/console/configMgr`)
+1. Find and edit the **Adobe Granite HTML Library Manager**.
+1. Enable the **Minify** option (if not already enabled).
+1. Set the value **JS Processor Default Configs** to `min:gcc`.
+   * Options can be passed if separated with a semicolon e.g. `min:gcc;obfuscate=true`.
+1. Click **Save** to save the changes.
