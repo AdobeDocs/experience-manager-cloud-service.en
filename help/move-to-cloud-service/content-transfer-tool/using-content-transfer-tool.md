@@ -92,9 +92,9 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    * A *green cloud* indicates that you can complete the complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set from overview page and click **Properties** to view or edit the migration set properties.
+1. Select a migration set from overview page and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the container name or the service URL. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+   
 
 ### Extraction Process in Content Transfer {#extraction-process}
 
