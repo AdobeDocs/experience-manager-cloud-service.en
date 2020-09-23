@@ -25,8 +25,8 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 * Enhancements in [!DNL Dynamic Media]
 
-  * It is now possible to use [!DNL Dynamic Media] features like Smart Crop or dynamic renditions withouth the need to publish assets to Dynamic Media global delivery infrastructure. AEM and [!DNL Dynamic Media] publishing is decoupled and can be carried out separately to achieve this.
-  * Administrators can reset [!DNL Dynamic Media] passwords directly in AEM UI, without the need for using the [!DNL Dynamic Media Classic] desktop app for it.
+  * Selective Publish - It is now possible for a marketing team to access [!DNL Dynamic Media] smart crop images and dynamic renditions that are synched to [!DNL Dynamic Media] so they can create promotional materials, all without the need to publish those assets to [!DNL Dynamic Media] for global delivery. AEM and [!DNL Dynamic Media] publishing is decoupled and can be carried out separately to achieve this.
+  * Administrators can reset [!DNL Dynamic Media] Cloud Service password received on provisioning directly in AEM UI, without the need for using the [!DNL Dynamic Media Classic] desktop app.
 
 * To know about the following enhancements, see [what is new in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
   
