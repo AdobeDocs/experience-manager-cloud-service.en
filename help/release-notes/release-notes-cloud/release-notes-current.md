@@ -63,3 +63,16 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * In certain cases, the CRA report was not getting updated after forcing a refresh. This has been fixed in this version.
 
+## Content Transfer Tool {#content-transfer-tool}
+
+Follow this section to learn about what is new and the updates for Content Transfer Tool Release v1.1.10.
+
+### What is New {#what-is-new-ctt}
+
+* The Content Transfer Tool (CTT) supports Azure Blob Store Data Store.
+
+* The CTT user interface has an auto-reload feature that reloads the overview page every 30 seconds.
+
+* Button added to CTT user interface to retrieve *Access Token* easily.
+
+* Descriptive validation message added for *URL* and *Migration Set Name*.
