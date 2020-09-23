@@ -23,6 +23,11 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 * Watermarking a PNG image is supported for renditions generated with asset microservices. It can be configured as a Processing Profile. <!-- TBD: Link to the help article.>
 
+* Enhancements in [!DNL Dynamic Media]
+
+  * It is now possible to use [!DNL Dynamic Media] features like Smart Crop or dynamic renditions withouth the need to publish assets to Dynamic Media global delivery infrastructure. AEM and [!DNL Dynamic Media] publishing is decoupled and can be carried out separately to achieve this.
+  * Administrators can reset [!DNL Dynamic Media] passwords directly in AEM UI, without the need for using the [!DNL Dynamic Media Classic] desktop app for it.
+
 * To know about the following enhancements, see [what is new in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
   
   * Enhanced PDF preview with Adobe Document Cloud View SDK integration.
