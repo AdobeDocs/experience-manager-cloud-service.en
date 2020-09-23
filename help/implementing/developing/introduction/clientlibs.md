@@ -161,9 +161,15 @@ The `dumplibs` component includes a test selector that displays the source code 
 
 ## Additional Client Library Folder Features {#additional-features}
 
-There are a number of other features that are supported by client library folders in AEM. Additional client library settings can be controlled through the **Adobe Granite HTML Library Manager** panel of the System Console at `https://<host>:<port>/system/console/configMgr`).
+There are a number of other features that are supported by client library folders in AEM. However, these are not required on AEM as a Cloud Service and as such their use is discouraged. They are are listed here for completeness.
 
-However, most of these are not required on AEM as a Cloud Service and as such their use is discouraged. They are are listed here for completeness.
+>[!WARNING]
+>
+>These additional features of Client Library Folders are not required on AEM as a Cloud Service and as such their use is discouraged. They are are listed here for completeness.
+
+### Adobe Granite HTML LIbrary Manager {#html-library-manager}
+
+Additional client library settings can be controlled through the **Adobe Granite HTML Library Manager** panel of the System Console at `https://<host>:<port>/system/console/configMgr`).
 
 ### Additional Folder Properties {#additional-folder-properties}
 
