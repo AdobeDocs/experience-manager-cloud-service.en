@@ -103,7 +103,7 @@ Configure **Adobe Granite Workflow Purge Configuration** to purge workflow insta
 
 You can also create multiple configurations of the service to purge workflow instances that satisfy different criteria. For example, create a configuration that purges the instances of a particular workflow model when they are running for much longer than the expected time. Create another configuration that purges all completed workflows after a certain number of days to minimize the size of the repository.
 
-To configure the service, you can use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or [add an OSGi configuration to the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). The following table desribes the properties that you need for either method.
+To configure the service, you can configure the OSGI Configuration Files see [OSGi configuration files](/help/implementing/deploying/configuring-osgi.md). The following table desribes the properties that you need for either method.
 
 >[!NOTE]
 >
