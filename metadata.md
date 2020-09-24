@@ -1,5 +1,5 @@
 ---
-product: Adobe Experience Manager
+product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
 solution-title: Adobe Experience Manager as a Cloud Service
