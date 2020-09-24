@@ -67,6 +67,8 @@ user-guide-description: Understand how to author with, and administer, Experienc
     + [Creating and Managing Offers](authoring/personalization/offers.md)
     + [Understanding Segmentation](authoring/personalization/segmentation.md)
     + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
++ Administering {#administering}
+  + [Administering Workflows](administering/workflows-administering.md)
 + Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-adobe-target.md)
