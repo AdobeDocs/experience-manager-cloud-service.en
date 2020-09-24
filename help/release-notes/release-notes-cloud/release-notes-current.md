@@ -21,7 +21,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Watermarking a PNG image is supported for renditions generated with asset microservices. It can be configured as a Processing Profile. <!-- TBD: Link to the help article.>
+* Watermarking a PNG image is supported for renditions generated with asset microservices. It can be configured as a Processing Profile.
 
 * Enhancements in [!DNL Dynamic Media]
 
