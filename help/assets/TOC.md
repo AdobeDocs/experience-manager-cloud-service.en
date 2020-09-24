@@ -1,11 +1,11 @@
 ---
-sub-product: AEM Assets as a Cloud Service
-user-guide-title: AEM Assets as a Cloud Service
+sub-product: Adobe Experience Manager Assets as a Cloud Service
+user-guide-title: Adobe Experience Manager Assets as a Cloud Service Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 ---
 
-# Assets {#assets}
+# Adobe Experience Manager Assets Guide {#assets}
 
 + [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Overview and what's new](overview.md)
