@@ -5,7 +5,7 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes fo
 
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.9.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## Release Date {#release-date}
 
@@ -21,12 +21,12 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Watermarking a PNG image is supported for renditions generated with asset microservices. It can be configured as a Processing Profile.
+* Watermarking image files is supported for renditions generated with asset microservices. It can be configured as a Processing Profile and uses a PNG file as a watermark. See [watermark your assets](/help/assets/watermark-assets.md).
 
 * Enhancements in [!DNL Dynamic Media]
 
-  * Selective Publish - It is now possible for a marketing team to access [!DNL Dynamic Media] smart crop images and dynamic renditions that are synched to [!DNL Dynamic Media] so they can create promotional materials, all without the need to publish those assets to [!DNL Dynamic Media] for global delivery. AEM and [!DNL Dynamic Media] publishing is decoupled and can be carried out separately to achieve this.
-  * Administrators can reset [!DNL Dynamic Media] Cloud Service password received on provisioning directly in AEM UI, without the need for using the [!DNL Dynamic Media Classic] desktop app.
+  * Selective Publish - It is now possible for a marketing team to access [!DNL Dynamic Media] smart crop images and dynamic renditions that are synchronized to [!DNL Dynamic Media] so they can create promotional materials, all without the need to publish those assets to [!DNL Dynamic Media] for global delivery. [!DNL Experience Manager] and [!DNL Dynamic Media] publishing is decoupled and can occur separately to achieve this. See [selective publish](/help/assets/dynamic-media/selective-publishing.md).
+  * Administrators can now reset [!DNL Dynamic Media] Cloud Service password that is received on provisioning. The reset can be done in [!DNL Experience Manager] user interface, without the need to use the [!DNL Dynamic Media Classic] desktop app.
 
 * To know about the following enhancements, see [what is new in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
   
