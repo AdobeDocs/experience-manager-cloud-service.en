@@ -44,19 +44,37 @@ Follow this section to learn how to view the Cloud Readiness Analyzer report:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Once you click on **Cloud Readiness Analyzer**, the tool starts generating the report and displays it when it is available.
+1. Click on **Generate Report** to execute the Cloud Readiness Analyzer. 
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
+
+1. While the CRA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
+
+
+1. Once the CRA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
+
+   The above action will automatically scroll to the location of that finding in the report.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
+
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
-   >You will have to scroll down the page to view the complete report.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
-
-1. Once the CRA report is generated and displayed, you have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
-
+   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**. 
+   
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
+   
    >[!NOTE]
-   >You may force the CRA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
+   
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+   
 
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
  
@@ -83,6 +101,9 @@ The format of the report is:
  
 An importance level is assigned to each finding to indicate a rough priority for action. 
 
+>[!NOTE]
+>To learn more about each Finding Category, refer to [Pattern Detector Categories](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html).
+
 Follow the table below to understand the importance levels:
  
 |Importance|Description|
@@ -91,7 +112,7 @@ Follow the table below to understand the importance levels:
 |ADVISORY|This finding is potentially an upgrade issue. Further investigation is recommended.|
 |MAJOR|This finding is likely to be an upgrade issue that should be addressed.|
 |CRITICAL|This finding is very likely to be an upgrade issue that must be addressed to prevent loss of function or performance.|
- 
+
 
 ## Interpreting the Cloud Readiness Analyzer CSV Report {#cra-csv-report}
  
@@ -139,32 +160,36 @@ The following is an example of how this can be done:
  
 The following HTTP headers are used by this interface:
  
-* `Cache-Control: max-age=<seconds>`: Specify the cache freshness lifetime in seconds. (See [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
-* `Prefer: respond-async`: Indicates that the server should respond asynchronously. (See [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Cache-Control: max-age=<seconds>`: Specifies the cache freshness lifetime in seconds. (See [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Prefer: respond-async`: Specifies that the server should respond asynchronously. (See [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Prefer: return=minimal`: Specifies that the server should return a minimal response. (See [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2).)
  
 The following HTTP query parameters are available as a convenience for when HTTP headers might not be easily used:
  
-* `max-age` (number, optional): Specify the cache freshness lifetime in seconds. This number must be 0 or greater. The default freshness lifetime is 86400 seconds, meaning that without this parameter or the corresponding header a fresh cache will be used to serve requests for 24 hours before the report must be regenerated. Using `max-age=0` will force the cache to be cleared and initiate a regeneration of the report. Immediately following this request the freshness lifetime will be reset to the previous non-zero value.
-* `respond-async` (boolean, optional): Specify that the response should be provided asynchronously. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted, processing cache` without waiting for the report to be generated and the cache to be refreshed. If the cache is fresh then this parameter has no effect. The default value is `false`, meaning that without this parameter or the corresponding header, the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
- 
+* `max-age` (number, optional): Specifies the cache freshness lifetime in seconds. This number must be 0 or greater. The default freshness lifetime is 86400 seconds. Without this parameter or the corresponding header a fresh cache will be used to serve requests for 24 hours, at which point the cache must be regenerated. Using `max-age=0` will force the cache to be cleared and initiate a regeneration of the report, using the previous non-zero freshness lifetime for the newly generated cache.
+* `respond-async` (boolean, optional): Specifies that the response should be provided asynchronously. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. If the cache is fresh then this parameter has no effect. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` (boolean, optional): Specifies that the server may refresh the cache in response to a request if the current cache is empty, stale, or soon to be stale. If `may-refresh-cache=true`, or if it is not specified, then the server may initiate a background task which will invoke the Pattern Detector and refresh the cache. If `may-refresh-cache=false` then the server will not initiate any refresh task that would otherwise have been done if the cache is empty or stale, in which case the report will be empty. Any refresh task which is already in process will not be affected by this parameter.
+* `return-minimal` (boolean, optional): Specifies that the response from the server should only include the status containing the progress indication and cache status in the JSON format. If `return-minimal=true`, then the response body will be limited to the status object. If `return-minimal=false`, or if it is not specified, then a complete response will be provided.
+* `log-findings` (boolean, optional): Specifies that the server should log the contents of the cache when it is first built or refreshed. Each finding from the cache will be logged as a JSON string. This logging will only occur if `log-findings=true` and the request generates a new cache.
+
 When both an HTTP header and corresponding query parameter are present, the query parameter will take precedence.
- 
+
 A simply way to initiate the generation of the report via the HTTP interface is with the following command:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
- 
-Once a request has been made, the client need not remain active for the report to be generated. The report generation could be initiated with one client using an HTTP GET request and, once the report has been generated, viewed from the cache in another client or the CSV tool in the user interface within AEM.
- 
+
+Once a request has been made, the client need not remain active for the report to be generated. The report generation could be initiated with one client using an HTTP GET request and, once the report has been generated, viewed from the cache with another client or with the CRA tool in the AEM user interface.
+
 ### Responses {#http-responses}
- 
+
 The following response values are possible:
- 
-* `200 OK`: The response contains findings from the Pattern Detector which were generated within the freshness lifetime of the cache.
-* `202 Accepted, processing cache`: Provided for asynchronous responses to indicate that the cache was stale and that a refresh is in process.
-* `400 Bad Request`: Indicates that there was an error with the request. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) for more details.
-* `401 Unauthorized`: The request was not authorized.
+
+* `200 OK`: Indicates that the response contains findings from the Pattern Detector which were generated within the freshness lifetime of the cache.
+* `202 Accepted`: Used to indicate that the cache is stale. When `respond-async=true` and `may-refresh-cache=true` this response indicates that a refresh task is underway. When `may-refresh-cache=false` this response simply indicates that the cache is stale.
+* `400 Bad Request`: Indicates that there was an error with the request. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `401 Unauthorized`: Indicates that the request was not authorized.
 * `500 Internal Server Error`: Indicates that an internal server error occurred. A message in Problem Details format provides more details.
 * `503 Service Unavailable`: Indicates that the server is busy with another response and cannot service this request in a timely manner. This is only likely to occur when synchronous requests are made. A message in Problem Details format provides more details.
- 
+
 ## Administrator Information
 
 ### Cache Lifetime Adjustment {#cache-adjustment}

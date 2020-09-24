@@ -1,6 +1,7 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
+breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 ---
 
@@ -16,7 +17,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
     + [Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)
     + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
-    + [Content Audit Testing](/help/implementing/cloud-manager/content-audit-testing.md)  
+    + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)  
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
 + Managing your Code {#managing-code}
@@ -36,7 +37,6 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Overlays in AEM as a Cloud Service](developing/introduction/overlays.md)
   + [Logging](developing/introduction/logging.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-  + [Understand Your Test Results](/help/implementing/developing/introduction/understand-test-results.md)
   + [Page Diff](/help/implementing/developing/introduction/page-diff.md)
   + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
   + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
@@ -67,7 +67,17 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [Model Routing](developing/spa/routing.md)
     + [Launch Integration](developing/spa/launch-integration.md)
     + [Server Side Rendering](developing/spa/ssr.md)
-    + [Javascript API References](developing/spa/reference-materials.md)
+    + [SPA Reference Documents](developing/spa/reference-materials.md)
++ Personalization {#personalization}
+  + [ContextHub](developing/personalization/contexthub.md)
+  + [Configuring ContextHub](developing/personalization/configuring-contexthub.md)
+  + [Sample Store Candidates](developing/personalization/sample-stores.md)
+  + [Sample Store Modules](developing/personalization/sample-modules.md)
+  + [ContextHub Diagnostics](developing/personalization/contexthub-diagnostics.md)
+  + [Extending ContextHub](developing/personalization/extending-contexthub.md)
+  + [ContextHub API](developing/personalization/contexthub-api.md)
+  + [Integrating with Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
+  + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)

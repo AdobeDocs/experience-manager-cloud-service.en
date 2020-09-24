@@ -90,7 +90,7 @@ npm module: [@adobe/aem-react-editable-components](https://www.npmjs.com/package
 
 #### Angular {#angular}
 
-npm module: [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+npm module: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Main Services and Components {#main-services-and-components}
 

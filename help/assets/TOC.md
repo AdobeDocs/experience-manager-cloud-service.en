@@ -1,6 +1,7 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
+breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 ---
 
@@ -43,7 +44,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Multilingual assets and asset translation](translate-assets.md)
   + [Search facets](search-facets.md)
   + [Assets HTTP API](mac-api-assets.md)
-  + [Content Fragments Support in AEM Assets HTTP API](assets-api-content-fragments.md)
+  + [Content Fragments Support in AEM Assets HTTP API](content-fragments/assets-api-content-fragments.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
   + [Asset reports](asset-reports.md)
   + [Cascading metadata](cascading-metadata.md)
