@@ -139,10 +139,10 @@ Password expiration in Dynamic Media is set to 100 years from the current system
 
 The password must contain at least one of each of the following:
 
-   * Uppercase letter
-   * Lowercase letter
-   * Number
-   * Special character: `# $ & . - _ : { }`
+* Uppercase letter
+* Lowercase letter
+* Number
+* Special character: `# $ & . - _ : { }`
 
 If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
 
