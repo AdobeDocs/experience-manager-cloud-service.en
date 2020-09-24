@@ -28,3 +28,6 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 * As a standalone utility : The Repository Modernizer can also be executed as a standalone utility.
 
   Refer to **[Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** to learn how to use this tool.
+
+>[!NOTE]
+>Repository Modernizer is developed using NodeJS. It is recommended to have NodeJS 10.0+ installed.
