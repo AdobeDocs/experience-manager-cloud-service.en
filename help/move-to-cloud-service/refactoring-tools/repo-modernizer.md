@@ -19,6 +19,9 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 
 * `all` package is a container package that contains the sub-packages `ui.apps` and `ui.content`.
 
+>[!NOTE]
+>The Project structure is based on *Archetype 24* for packages and their `pom.xml/filter.xml files`. Refer to [Archetype 24](https://github.com/adobe/aem-project-archetype) for more details.
+
 ## Using the Repository Modernizer {#using-repo-modernizer}
 
 * Via Adobe I/O CLI : It is recommended to use the Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin for the Adobe I/O CLI).
@@ -29,5 +32,5 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 
   Refer to **[Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** to learn how to use this tool.
 
->[!NOTE]
->Repository Modernizer is developed using NodeJS. It is recommended to have NodeJS 10.0+ installed.
+   >[!NOTE]
+  >The Repository Modernizer is developed using NodeJS. It is recommended to have NodeJS 10.0+ installed.
