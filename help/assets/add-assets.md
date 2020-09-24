@@ -23,18 +23,6 @@ You can also choose to have additional processing done on the uploaded assets. A
 
 ## Upload assets {#upload-assets}
 
-To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from from the user interface.
-
-1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
-1. To upload the assets, do one of the following:
-
-    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
-    * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. The dialog to rename file is not displayed.
-
-   ![create_menu](assets/create_menu.png)
-
-   To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
@@ -52,10 +40,6 @@ To upload a file (or multiple files), you can either select them on your desktop
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
-
-   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. However, files that are already uploaded are not deleted.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -66,13 +50,29 @@ To upload a file (or multiple files), you can either select them on your desktop
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
- 1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
+To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from from the user interface.
+
+1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
+1. To upload the assets, do one of the following:
+
+    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
+    * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. The dialog to rename file is not displayed.
+
+   ![create_menu](assets/create_menu.png)
+
+   To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
+
+1. To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
+
+   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. However, files that are already uploaded are not deleted.
+
+1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
 >[!NOTE]
 >
->To upload nested folder hierarchies to AEM, see [bulk upload assets](#bulk-upload).
+>To upload nested folder hierarchies, see [bulk upload assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
