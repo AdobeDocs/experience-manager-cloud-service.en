@@ -103,3 +103,18 @@ Follow this section to learn about what is new and the updates for Content Trans
 * Button added to CTT user interface to retrieve *Access Token* easily.
 
 * Descriptive validation message added for *URL* and *Migration Set Name*.
+
+## Code Refactoring Tools {#code-refactoring}
+
+Follow this section to learn about what is new and the updates for Code Refactoring Tools.
+
+### What is New {#what-is-new-refactoring}
+
+* AIO-CLI plugin supports Repository Modernizer and allows users to execute the tool using the plugin. 
+
+  Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* Repository Modernizer utility can be used to restructure existing project packages into packages compatible with the project structure defined for AEM as a Cloud Service. 
+
+  Refer to [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
+
