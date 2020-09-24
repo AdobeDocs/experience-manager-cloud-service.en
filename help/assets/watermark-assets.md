@@ -23,7 +23,7 @@ To configure Experience Manager to watermark assets follow these steps:
 
 1. [Create a processing profile](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) to leverage asset microservices to apply the watermark.
 
-  ![Asset processing profile to create watermark](assets/watermark-processing-profile.png)
+   ![Asset processing profile to create watermark](assets/watermark-processing-profile.png)
 
 1. [Apply the processing profiles to a folder](/help/assets/asset-microservices-configure-and-use.md#use-profiles) to create watermarked assets.
 
