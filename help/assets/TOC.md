@@ -1,11 +1,11 @@
 ---
-sub-product: AEM Assets as a Cloud Service
-user-guide-title: AEM Assets as a Cloud Service
+sub-product: Adobe Experience Manager Assets as a Cloud Service
+user-guide-title: Assets as a Cloud Service Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 ---
 
-# Assets {#assets}
+# Assets as a Cloud Service Guide {#assets}
 
 + [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Overview and what's new](overview.md)
@@ -100,6 +100,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Linking URLs to your web application](dynamic-media/linking-urls-to-yourwebapplication.md)
   + [Using Rulesets to transform URLs](dynamic-media/using-rulesets-to-transform-urls.md)
   + [Publishing Dynamic Media assets](dynamic-media/publishing-dynamicmedia-assets.md)
+  + [Working with Selective Publish in Dynamic Media](dynamic-media/selective-publishing.md)
   + [Invalidating the CDN cache by way of Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
   + [Invalidating the CDN cache by way of Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
   + [Working with Selectors](dynamic-media/working-with-selectors.md)
