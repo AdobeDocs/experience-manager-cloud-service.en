@@ -98,9 +98,8 @@ Follow this section to learn about what is new and the updates for Content Trans
 
 * The Content Transfer Tool (CTT) supports Azure Blob Store Data Store.
 
-* The CTT UI has an auto-reload feature that reloads the overview page every 30 seconds.
+* The CTT user interface has an auto-reload feature that reloads the overview page every 30 seconds.
 
-* Button added to CTT UI to retrieve Access Token easily.
+* Button added to CTT user interface to retrieve *Access Token* easily.
 
-* Descriptive validation message added for URL and Migration Set Name.
-
+* Descriptive validation message added for *URL* and *Migration Set Name*.
