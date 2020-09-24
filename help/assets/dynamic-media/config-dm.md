@@ -149,7 +149,7 @@ The Image Server screen establishes default settings for delivering images. See 
 
 #### Configuring application general settings {#configuring-application-general-settings}
 
-To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings]**.
+To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings.]**
 
    * **[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by AEM support.
    * **[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder than the original or assets with a different filename extension from the original (such as JPG, TIF, or PNG).
@@ -219,14 +219,14 @@ See [Uploading Assets](/help/assets/add-assets.md).
 1. Under the mimeTypes folder, select a mime type.
 1. On the right side of the CRXDE Lite page, in the lower portion:
 
-    * double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets will be synched to Dynamic Media for processing. If you wish to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
+   * double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets will be synched to Dynamic Media for processing. If you wish to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-    * double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given mime type.
+   * double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given mime type.
 
 1. Do one of the following:
 
-    * Repeat steps 3-4 to edit additional mime types.
-    * On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+   * Repeat steps 3-4 to edit additional mime types.
+   * On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to AEM.
 
@@ -236,7 +236,7 @@ You can add custom MIME types for unsupported formats in AEM Assets. To ensure t
 
 **To add custom MIME types for unsupported formats**
 
-1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console]**.
+1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
