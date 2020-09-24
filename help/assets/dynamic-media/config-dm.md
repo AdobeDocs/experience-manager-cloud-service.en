@@ -57,27 +57,35 @@ To configure dynamic media cloud services:
 
 1. When the connection is successful, you can set the following:
 
-    * **[!UICONTROL Company]** - the name of the Dynamic Media account. It is possible you may have multiple Dynamic Media accounts for different sub-brands, divisions, or different staging/production environments.
+* **[!UICONTROL Company]** - the name of the Dynamic Media account. It is possible you may have multiple Dynamic Media accounts for different sub-brands, divisions, or different staging/production environments.
 
-    * **[!UICONTROL Company Root Folder Path]**
+* **[!UICONTROL Company Root Folder Path]**
 
-    * **[!UICONTROL Publishing Assets]** - You can choose from the following three options:
-      * **[!UICONTROL Immediately]** means that when assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.
-      * **[!UICONTROL Upon Activation]** means that you need to explicitly publish the asset first before a URL/Embed link is provided.
-      * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain.
+* **[!UICONTROL Publishing Assets]** - You can choose from the following three options:
 
-    * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
+* **[!UICONTROL Immediately]** means that when assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.
+
+* **[!UICONTROL Upon Activation]** means that you need to explicitly publish the asset first before a URL/Embed link is provided.
+
+* **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain.
+
+* **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
     Unless you have a special arrangment to use your own company's server or a special server, Adobe Systems recommends that you leave this setting as specified.
 
-    * **[!UICONTROL Sync all content]** - Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:
+* **[!UICONTROL Sync all content]** - Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:
 
-    * **[!UICONTROL Dynamic Media sync mode]**
-        * **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-        * **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
-        To mark a selected folder for sync to Dynamic Media, open the Properties page of your asset folder. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**. 
-            * **[!UICONTROL Inherited]** - No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tool tip.
-            * **[!UICONTROL Enable for sub-folders]** -  Include everything in this sub-tree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.
-            * **[!UICONTROL Disabled for sub-folders]** - Exclude everything in this sub-tree from syncing to Dynamic Media.  
+* **[!UICONTROL Dynamic Media sync mode]**
+
+* **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+
+* **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
+To mark a selected folder for sync to Dynamic Media, open the Properties page of your asset folder. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
+
+* **[!UICONTROL Inherited]** - No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tool tip.
+
+* **[!UICONTROL Enable for sub-folders]** -  Include everything in this sub-tree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.
+
+* **[!UICONTROL Disabled for sub-folders]** - Exclude everything in this sub-tree from syncing to Dynamic Media.  
 
    >[!NOTE]
    >
@@ -170,10 +178,10 @@ To configure the default color properties to enable color correction when reques
 
    You can set the following color correction properties:
 
-   * **[!UICONTROL CMYK Default Color Space]** - Name of the default CMYK color profile.
-   * **[!UICONTROL Gray-Scale Default Color Space]** - Name of the default Gray color profile.
-   * **[!UICONTROL RGB Default Color Space]** - Name of the default RGB color profile.
-   * **[!UICONTROL Color Conversion Rendering Intent]** - Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe recommends **[!UICONTROL relative]** as the default.
+   **[!UICONTROL CMYK Default Color Space]** - Name of the default CMYK color profile.
+   **[!UICONTROL Gray-Scale Default Color Space]** - Name of the default Gray color profile.
+   **[!UICONTROL RGB Default Color Space]** - Name of the default RGB color profile.
+   **[!UICONTROL Color Conversion Rendering Intent]** - Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe recommends **[!UICONTROL relative]** as the default.
 
 1. Tap **[!UICONTROL Save]**.
 
@@ -184,7 +192,7 @@ Doing so would do the following:
 * Enables color correction for RGB and CMYK images.
 * RGB images that do not have a color profile will be assumed to be in the *sRGB* color space.
 * CMYK images that do not have a color profile will be assumed to be in *WebCoated* color space.
-* Dynamic renditions that return RGB output, will return it in the *sRGB *color space.
+* Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * Dynamic renditions that return CMYK output, will return it in the *WebCoated* color space.
 
 #### Configuring asset processing {#configuring-asset-processing}
@@ -626,4 +634,4 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-
+   
