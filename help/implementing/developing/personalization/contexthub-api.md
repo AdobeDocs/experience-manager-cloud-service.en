@@ -13,7 +13,7 @@ Constant values that the ContextHub Javascript API defines.
 
 ### Event Constants {#event-constants}
 
-The following table lists the names events that occur for ContextHub Stores. See also [ContextHub.Utils.Eventing](contexthub-api.md#contexthub-utils-eventing).
+The following table lists the names events that occur for ContextHub Stores. See also [ContextHub.Utils.Eventing](#contexthub-utils-eventing).
 
 | Constant |Description |Value |
 |---|---|---|

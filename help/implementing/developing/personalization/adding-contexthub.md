@@ -107,15 +107,15 @@ Note that custom store candidates can define additional functions that provide a
 
 ### ContextHub Eventing {#contexthub-eventing}
 
-ContextHub includes an event framework that enables you to automatically react to store events. Each store object contains a [`ContextHub.Utils.Eventing`](#contexthub-utils-eventing) object that is available as the store's [`eventing`](contexthub-api.md#eventing) property. Use the [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) or [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) function to bind a Javascript function to a store event.
+ContextHub includes an event framework that enables you to automatically react to store events. Each store object contains a [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object that is available as the store's [`eventing`](contexthub-api.md#eventing) property. Use the [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) or [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) function to bind a Javascript function to a store event.
 
 ## Using Context Hub to Manipulate Cookies {#using-context-hub-to-manipulate-cookies}
 
-The Context Hub Javascript API provides cross-browser support for handling browser cookies. The [`ContextHub.Utils.Cookie`](#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
+The Context Hub Javascript API provides cross-browser support for handling browser cookies. The [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
 
 ## Determining Resolved ContextHub Segments {#determining-resolved-contexthub-segments}
 
-The ContextHub segment engine enables you to determine which of the registered segments are resolved in the current context. Use the getResolvedSegments function of the [`ContextHub.SegmentEngine.SegmentManager`](#contexthub-segmentengine-segmentmanager) class to retrieve resolved segments. Then, use the `getName` or `getPath` function of the [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) class to test for a segment.
+The ContextHub segment engine enables you to determine which of the registered segments are resolved in the current context. Use the getResolvedSegments function of the [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) class to retrieve resolved segments. Then, use the `getName` or `getPath` function of the [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) class to test for a segment.
 
 ### ContextHub Segments {#contexthub-segments}
 
