@@ -286,7 +286,7 @@ When creating a new template you need to specify a template type:
 
   * The resource type of the page component.
   * The policy of the root node, which defines the components allowed in the template editor.
-  * It is recommended to define the breakpoints for the responsive grid and setup of the mobile emulator at on the template type. This is optional, because the configuration could also be defined on the individual template (see the section [Template Type and Mobile Device Groups](#p-template-type-and-mobile-device-groups-br-p)).
+  * It is recommended to define the breakpoints for the responsive grid and setup of the mobile emulator at on the template type.
 
 * AEM provides a small selection of out-of-the-box template types such as HTML5 Page and Adaptive Form Page.
 
@@ -470,7 +470,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
 
    Before a template can be used it must be enabled by either:
 
-    * [Enabling the template](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) from the **Templates** console.
+    * [Enabling the template](/help/sites-cloud/authoring/features/templates.md) from the **Templates** console.
 
     * Setting the status property on the `jcr:content` node.
 
