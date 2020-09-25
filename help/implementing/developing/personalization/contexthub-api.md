@@ -5,7 +5,7 @@ description: The ContextHub Javascript API is available to your scripts when the
 
 # ContextHub Javascript API Reference {#contexthub-javascript-api-reference}
 
-The ContextHub Javascript API is available to your scripts when the [ContextHub component has been added to the page](configuring-contexthub.md#adding-contexthub-to-a-page-component).
+The ContextHub Javascript API is available to your scripts when the [ContextHub component has been added to the page](adding-contexthub.md).
 
 ## ContextHub Constants {#contexthub-constants}
 
@@ -475,7 +475,7 @@ Resolves the given parameter.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so it inherits all of the functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes:](configuring-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so it inherits all of the functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
