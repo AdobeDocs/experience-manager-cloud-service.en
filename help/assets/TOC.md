@@ -36,6 +36,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Download assets from AEM](download-assets-from-aem.md)
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
+  + [Watermark assets](watermark-assets.md)
 + Configure, administer and extend Assets {#admin}
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
