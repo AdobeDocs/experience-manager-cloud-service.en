@@ -11,12 +11,10 @@ The ContextHub Javascript API provides access to the context data that ContextHu
 
 ## Adding ContextHub to a Page Component {#adding-contexthub-to-a-page-component}
 
-To enable the ContextHub features and to link to the ContextHub Javascript libraries, include the contexthub component in the `head` section of your page. The JSP code for your page component resembles the following example:
+To enable the ContextHub features and to link to the ContextHub Javascript libraries, include the `contexthub` component in the `head` section of your page. The HTL code for your page component should resemble the following example:
 
 ```xml
-<head>
-   <sling:include path="contexthub" resourceType="granite/contexthub/components/contexthub" />
-</head>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
 Note that you also need to configure whether the ContextHub toolbar appears in Preview mode. See [Showing and Hiding the ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
