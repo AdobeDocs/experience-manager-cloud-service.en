@@ -83,7 +83,7 @@ Additionally, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-j
 
 ## Interacting with ContextHub Stores {#interacting-with-contexthub-stores}
 
-Use the [`ContextHub`](contexthub-api.md#ui-event-constants) Javascript object to obtain a store as a Javascript object. Once you obtain the store object you can manipulate the data that it contains. Use the [`getAllStores`](#contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
+Use the [`ContextHub`](contexthub-api.md#ui-event-constants) Javascript object to obtain a store as a Javascript object. Once you obtain the store object you can manipulate the data that it contains. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
 
 ### Accessing Store Data {#accessing-store-data}
 
