@@ -40,7 +40,7 @@ The following sections detail how Adobe I/O Runtime can be used to implement SSR
 >
 >Adobe recommends a separate Adobe I/O Runtime instance for every AEM environment (author, publish, stage, etc.).
 
-## Remote Renderer Configuration {#remote-renderer-configuration}
+## Remote Renderer Configuration {#remote-content-renderer-configuration}
 
 AEM must know where the remotely-rendered content can be retrieved. Regardless of [which model you choose to implement for SSR,](#adobe-i-o-runtime) you will need to specify to AEM how to access this remote rendering service.
 
@@ -60,8 +60,6 @@ The following fields are available for the configuration:
 >[!NOTE]
 >
 >Regardless of if you choose to implement the [AEM-driven communication flow](#aem-driven-communication-flow) or the [Adobe I/O Runtime-driven flow,](#adobe-i-o-runtime-driven-communication-flow) you must define a remote content renderer configuration.
->
->This configuration also must be defined if you choose to [use a custom Node.js server.](#using-node-js)
 
 >[!NOTE]
 >
@@ -69,7 +67,7 @@ The following fields are available for the configuration:
 
 ## AEM-Driven Communication Flow {#aem-driven-communication-flow}
 
-When using SSR, the [component interaction workflow](introduction.md#workflow) of SPAs in AEM includes a phase in which the initial content of the app is generated on Adobe I/O Runtime.
+When using SSR, the [component interaction workflow](introduction.md#interaction-with-the-spa-editor) of SPAs in AEM includes a phase in which the initial content of the app is generated on Adobe I/O Runtime.
 
 1. The browser requests the SSR content from AEM.
 1. AEM posts the model to Adobe I/O Runtime.
@@ -157,7 +155,7 @@ The `RemoteContentRendererRequestHandlerServlet` can be used to programmatically
 
 To add a custom request Handler, implement the `RemoteContentRendererRequestHandler` interface. Be sure to set the `Constants.SERVICE_RANKING` component property to an integer higher than 100, which is the ranking of the `DefaultRemoteContentRendererRequestHandlerImpl`.
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -181,7 +179,7 @@ To have a servlet fetch and return some content that can be injected into the pa
 
 Usually, the HTL template of a page component is the main recipient of such a feature.
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
