@@ -30,9 +30,9 @@ Adobe is committed to make products for all users, including people with disabil
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [Revised Section 508](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/).
-* EN 301 549.
+* [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-To access the report detailing the levels of compliance, see [Accessibility conformance reports](https://www.adobe.com/accessibility/compliance.html) page for Adobe solutions.
+To access the report detailing the levels of compliance, see [Accessibility conformance reports ](https://www.adobe.com/accessibility/compliance.html) (ACR) page for all Adobe solutions.
 
 ## Assistive technologies to use {#at-support}
 
@@ -76,6 +76,7 @@ Most keyboard shortcuts that apply to [!DNL Experience Manager] consoles also ap
 
 Users can use keyboard to navigate to and fill in the sign in field to log in. After logging in, DAM users can navigate to [!DNL Assets] user interface using keyboard.
 
+
 ## Browse existing assets and view related information {#browse}
 
 In the [!DNL Assets] user interface, users can use keyboard to browse through the list of existing digital assets in DAM repository.
@@ -88,9 +89,15 @@ In the [!DNL Assets] user interface, users can use keyboard to browse through th
 * See comments on an asset.
 * View metadata.
 
-Users can now access and focus the interactive user interface options in References list of assets using keyboard keys (NPR-34115).
+When browsing the assets repository, the following functionality improves accessibility:
 
-Initiate functionality like [search](#search).
+* Users can access and focus the interactive user interface options in References list of assets using keyboard keys.
+* The elements in each row in list view are announced as the elements of the same row by screen readers.
+* User focus when navigating using `Tab` key can move to the close option in version preview.
+
+
+Initiate asset [search](#search).
+
 
 ## Add and upload digital assets {#upload}
 
@@ -111,6 +118,10 @@ Initiate functionality like [search](#search).
 * To manage metadata, can users browse through all the options on the Properties page?
 * Other metadata-related enhancements?
 
+For metadata operations, the following product behavior improves accessibility:
+
+* Screen readers now announce the options to delete the selected tags in Basic tab of asset Properties buttons to delete the selected tags.
+
 ## Search digital assets {#search}
 
 Being able to quickly search the relevant assets, boosts the content velocity. The content velocity use cases are are part of core [!DNL Assets] functionality. Search use case is accessible in the following ways:
@@ -118,6 +129,14 @@ Being able to quickly search the relevant assets, boosts the content velocity. T
 * Users search for assets from within the Omnisearch bar. Use either the keyboard keys or the keyboard shortcut `/` to access Omnisearch bar.
 * Start typing the search keyword and use keyboard to select the auto-suggestions. Press the Return key to accept an auto-suggested string and search assets for it.
 * Screen readers can identify and announce the mixed state checkboxes (in which unless you select all the nested predicates the first-level checkboxes are not selected and are stricken through) in Filters panel when filtering search results.
+
+When filtering search results:
+
+* Search result page has an informative titles for better understanding of screen reader users.
+* A screen reader announces the options in search filter as expandable accordions.
+* Predicates that have mixed-state buttons are announced by screen readers.
+
+* User focus now correctly moves to search icon after Omnisearch is closed.
 
 ## Accessible documentation {#accessible-docs}
 
@@ -147,8 +166,6 @@ For a list of enhancements done in each release, see the [release notes](https:/
 <!-- <!-- TBD: Just listing the RN enhancements here too for the sake of collating in this article. Remove this section later.
 
 
-•	
-•	Screen reader now announce the options in search filter as expandable accordions (NPR-34104). 
 •	Search page and search result page now have more informative titles for better understanding of screen reader users (NPR-34093). 
 •	Screen readers now announce the options to delete the selected tags in Basic tab of asset Properties buttons to delete the selected tags (NPR-33972). 
 •	The elements in each row in list view are now correctly announced as the elements of the same row by screen readers (NPR-33932). 
