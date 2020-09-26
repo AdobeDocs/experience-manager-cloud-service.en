@@ -74,8 +74,9 @@ Most keyboard shortcuts that apply to [!DNL Experience Manager] consoles also ap
 
 ## Sign in and navigate [!DNL Assets] user interface {#login}
 
-Users can use keyboard to navigate to and fill in the sign in field to log in. After logging in, DAM users can navigate to [!DNL Assets] user interface using keyboard.
+Users can use keyboard to navigate to and fill in the sign in field to log in. After logging in, DAM users can navigate to [!DNL Assets] user interface using keyboard. The keyboard navigation order is left-to-right and top-to-bottom. When navigating using a keyboard, the actionable options that is focused is highlighted with better color contrast.
 
+The error messages due to incorrect username and password combinations on login page are announced by screen readers each time the error occurs.
 
 ## Browse existing assets and view related information {#browse}
 
@@ -87,14 +88,23 @@ In the [!DNL Assets] user interface, users can use keyboard to browse through th
 * See the generated renditions.
 * See timeline and versions.
 * See comments on an asset.
-* View metadata.
+* View and manage metadata.
+
+* In Experience Manager header section, when navigating in browse mode, screen reader now announces that,
+  
+  * auto edited suggestions in Type to search in Omnisearch.
+  * The state as expanded or collapsed for Solutions, Help, Inbox and User options.
+  * The Searching Help status message that is displayed when user enters a search string in Search for Help field under Help option
+  * The error message if incorrect value is entered in Impersonate as field under User option and focus correctly moves to the text field (NPR-33804).
 
 When browsing the assets repository, the following functionality improves accessibility:
 
+* Screen reader announces text alternatives that depict the purpose or functionality of the icons instead of their names.
 * Users can access and focus the interactive user interface options in References list of assets using keyboard keys.
 * The elements in each row in list view are announced as the elements of the same row by screen readers.
 * User focus when navigating using `Tab` key can move to the close option in version preview.
-
+* When using keyboard to browse, the highlighted actionable user interface options have more prominent visual focus with enhanced contrast. It makes the focused area more identifiable to the user.
+* * Use of the `Esc` key to remove the quick action icons from thumbnail view does not remove the keyboard focus from the last focused item.
 
 Initiate asset [search](#search).
 
@@ -118,9 +128,15 @@ Initiate asset [search](#search).
 * To manage metadata, can users browse through all the options on the Properties page?
 * Other metadata-related enhancements?
 
-For metadata operations, the following product behavior improves accessibility:
+For metadata operations typically done by roles such as marketers, agency professionals, and line of business users, the following features improve accessibility:
 
-* Screen readers now announce the options to delete the selected tags in Basic tab of asset Properties buttons to delete the selected tags.
+* [!UICONTROL Save & Close] option on asset Properties page can now be accessed using the keyboard.
+
+* Screen readers announce the options to delete the selected tags in Basic tab of asset Properties buttons to delete the selected tags.
+
+For metadata operations typically done by administrators, the following features improve accessibility:
+
+* The drag functionality using keyboard correctly functions in Metadata Schema Editor in browse mode of screen reader.
 
 ## Search digital assets {#search}
 
@@ -137,6 +153,21 @@ When filtering search results:
 * Predicates that have mixed-state buttons are announced by screen readers.
 
 * User focus now correctly moves to search icon after Omnisearch is closed.
+
+## Share assets {#share-assets}
+
+<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+-->
+
+* In the link sharing dialog, when navigating in browse mode, the screen readers,
+
+  * Do not narrate the table information as soon as the dialog is loaded.
+  * Can navigate to all the listed auto-suggestions.
+  * Narrate the displayed auto-suggestions for Add Email Address and Search fields.
+
+## Accessibility in Dynamic Media {#dynamic-media-accessibility}
+
+* Keyboard focus successfully moves to Flyout, InlineZoom, Shoppable_Banner, Zoom_dark, Zoom_light, ZoomVertical_dark, and ZoomVertical_light options when navigating using keyboard Tab key in asset details Viewers in Dynamic Media 
 
 ## Accessible documentation {#accessible-docs}
 
