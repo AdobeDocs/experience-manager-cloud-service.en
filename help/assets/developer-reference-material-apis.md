@@ -1,5 +1,5 @@
 ---
-title: Developer references for digital asset management in [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Developer references for [!DNL Assets]
 description: [!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].
 contentOwner: AG
 ---

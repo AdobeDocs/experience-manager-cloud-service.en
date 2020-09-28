@@ -1,5 +1,5 @@
 ---
-title: Manage your digital assets in Experience Manager
+title: Manage digital assets
 description: Learn about various asset management and editing methods.
 contentOwner: AG
 mini-toc-levels: 1
