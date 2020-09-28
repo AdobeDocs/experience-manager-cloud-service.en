@@ -71,6 +71,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
 + Personalization {#personalization}
   + [ContextHub](developing/personalization/contexthub.md)
   + [Configuring ContextHub](developing/personalization/configuring-contexthub.md)
+  + [Adding ContextHub to Pages](developing/personalization/adding-contexthub.md)
   + [Sample Store Candidates](developing/personalization/sample-stores.md)
   + [Sample Store Modules](developing/personalization/sample-modules.md)
   + [ContextHub Diagnostics](developing/personalization/contexthub-diagnostics.md)
