@@ -1,5 +1,5 @@
 ---
-title: Architecture of Adobe Experience Manager Assets as a Cloud Service
+title: Architecture of [!DNL Assets]
 description: Architecture of Adobe Experience Manager Assets as a Cloud Service
 contentOwner: AG
 ---

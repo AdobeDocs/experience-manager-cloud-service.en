@@ -1,5 +1,5 @@
 ---
-title: Configure and use asset microservices for asset processing.
+title: Configure and use asset microservices
 description: Configure and use the cloud-native asset microservices to process assets at scale.
 contentOwner: AG
 ---

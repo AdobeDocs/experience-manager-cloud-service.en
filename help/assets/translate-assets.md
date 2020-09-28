@@ -1,5 +1,5 @@
 ---
-title: Create and manage digital assets in multiple languages and run translation workflows
+title: Create and manage digital assets in multiple languages
 description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 ---
