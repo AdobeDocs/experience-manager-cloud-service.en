@@ -51,22 +51,22 @@ If a template author chooses to disable the child pages option, a design propert
 
 1. By default, the page author can use the list core component to build a list using child pages by choosing the option **Child pages**.
 
-   ![List Component settings](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![List Component settings](assets/hide-conditions-list-settings.png)
 
 1. In the design dialog of the list core component, the template author can choose the option **Disable Children** to prevent the option to generate a list based on child pages from being shown to the page author.
 
-   ![List Component design dialog](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![List Component design dialog](assets/hide-conditions-list-design.png)
 
 1. A policy node is created under `/conf/wknd/settings/wcm/policies/wknd/components/list` with a property `disableChildren` set to `true`.
 
-   ![Node structure of hide condition](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![Node structure of hide condition](assets/hide-conditions-node-structure.png)
 
 1. The hide condition is defined as the value of a `granite:hide` property on the dialog property node `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-  ![Evaluation of hide condition](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![Evaluation of hide condition](assets/hide-conditions-evaluation.png)
 
 1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
 
 1. The option **Child pages** is no longer rendered for the page author when using the list component.
 
-   ![List Component with child option disabled](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![List Component with child option disabled](assets/hide-conditions-child-disabled.png)

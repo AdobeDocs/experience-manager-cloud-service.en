@@ -31,7 +31,7 @@ Within AEM the delivery is achieved using the selector `model` and `.json` exten
 
 1. Will deliver content such as:
 
-   ![JSON model of WKND content](/help/implementing/developing/introduction/assets/json-model-wknd.png)
+   ![JSON model of WKND content](assets/json-model-wknd.png)
 
 You can alternatively deliver the contents of a structured content fragment by targeting it specifically.
 
@@ -49,7 +49,7 @@ Your page can contain either a single content fragment or multiple components of
 
 * Will deliver content such as:
 
-  ![JSON model of WKND content fragment](/help/implementing/developing/introduction/assets/json-model-wknd-content-fragment.png)
+  ![JSON model of WKND content fragment](assets/json-model-wknd-content-fragment.png)
 
   >[!NOTE]
   >

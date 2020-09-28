@@ -31,7 +31,7 @@ Typically, the toolbar provides the following options:
 
 For text-based components, click the full-screen mode ![RTE full screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png) from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) to open the rich text editor and hides the rest of the page content.
 
-Full screen mode displays all the configured options that you can use for authoring. The availability of options depends on the configuration. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE in full screen mode](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 

@@ -1,6 +1,7 @@
 ---
 sub-product: Move to AEM as a Cloud Service
 user-guide-title: Move to AEM as a Cloud Service
+breadcrumb-title: Move Guide
 user-guide-description: Understand the transition journey to Cloud Service.
 ---
 
@@ -20,6 +21,7 @@ user-guide-description: Understand the transition journey to Cloud Service.
     + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Code Refactoring Tools {#refactoring-tools}
   + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
+  + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
   + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
   + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
   + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)

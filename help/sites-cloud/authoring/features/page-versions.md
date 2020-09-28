@@ -62,7 +62,7 @@ Once you have created a version of your page, there are various methods of reins
 
 * the **Restore** options from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
-  * **Restore Version** 
+  * **Restore Version**
 
     Reinstate versions of specified pages within the currently selected folder; this can also include restoring pages that have been previously deleted.
 
@@ -109,7 +109,7 @@ This method can be used to restore versions of specified pages within the curren
    >* you have selected a single page, that has never had any child pages,
    >* or none of the pages in the folder have versions,
    >
-   >Then the display will be empty as there are no versions applicable. 
+   >Then the display will be empty as there are no versions applicable.
 
 1. The available versions will be listed:
 
@@ -123,7 +123,7 @@ This method can be used to restore versions of specified pages within the curren
 
    ![Restore Version - Select Page](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. Select **Restore** for the selected version, of the selected page, to be restored as the *current* version.
+1. Select **Restore** for the selected version, of the selected page, to be restored as the current version.
 
 >[!NOTE]
 >

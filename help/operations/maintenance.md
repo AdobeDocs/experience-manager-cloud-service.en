@@ -5,7 +5,7 @@ description: Maintenance Tasks in AEM as a Cloud Service
 
 # Maintenance Tasks in AEM as a Cloud Service
 
-Maintenance Tasks are processes that run on a schedule in order to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe. 
+Maintenance Tasks are processes that run on a schedule in order to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe.
 
 For additional information about maintenance tasks, see the following pages:
 

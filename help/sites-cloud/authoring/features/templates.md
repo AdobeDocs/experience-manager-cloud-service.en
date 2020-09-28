@@ -22,7 +22,7 @@ The **Template Editor** allows template authors to:
 
 This document explains how a **template author** can use the template console and editor to create and manage editable templates.
 
-For detailed information about how editable templates work at a technical level, please see the developer document Page Templates - Editable for more information. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ When creating a new editable template you:
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
-A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document Page Templates - Editable. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Creating a New Template - Template Author {#creating-a-new-template-template-author}
 
@@ -99,7 +99,7 @@ A template folder should be created for your project to hold your project-specif
    >
    >In a standard AEM instance the **global** folder already exists in the template console. This holds default templates and acts as a fallback if no policies and/or template-types are found in the current folder.
    >
-   >It is recommended best practice to use a template folder created for your project. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >It is recommended best practice to use a [template folder created for your project](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Select **Create**, followed by **Create Template** to open the wizard.
 
@@ -107,7 +107,7 @@ A template folder should be created for your project to hold your project-specif
 
    >[!NOTE]
    >
-   >Template types are predefined template layouts and can be thought of as templates for a template. These are predefined by developers or the system administrator. More information can be found in the developer document Page Templates - Editable. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >Template types are predefined template layouts and can be thought of as templates for a template. These are predefined by developers or the system administrator. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Complete the **Template Details**:
 
@@ -197,7 +197,7 @@ A template can be made available or unavailable for certain page branches.
    >If the **Allowed Templates** list is left empty then the tree will be ascended until a value/list is found.
    >
    >
-   >See Template Availability - the principles for allowed templates remain the same. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Click **Save** to save the changes to the page properties.
 
@@ -407,7 +407,7 @@ For example for an image component you can define the cropping proportions, allo
 
 >[!NOTE]
 >
->Content policies for components implementing the rich text editor can only be defined for options made available by the RTE through its UI settings. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[Content policies for components implementing the rich text editor](/help/implementing/developing/extending/rich-text-editor.md) can only be defined for options made available by the RTE through its UI settings.
 
 #### Policy and Properties (Layout Container) {#policy-and-properties-layout-container}
 

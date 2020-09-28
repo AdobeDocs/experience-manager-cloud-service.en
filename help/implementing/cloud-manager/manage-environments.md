@@ -91,6 +91,15 @@ The delete option is also available, if you click on **Details** from the **Envi
 >[!NOTE]
 This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
 
+## Managing Access {#managing-access}
+
+Select **Manage Access** from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
+
+Refer to [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) to learn more.
+
+![](assets/environ-manage-access.png)
+
+
 ## Accessing Developer Console {#accessing-developer-console}
 
 Select **Developer Console** from the dropdown menu in the **Environments** Card. This will open a new tab in your browser with the login page to **Developer Console**. 

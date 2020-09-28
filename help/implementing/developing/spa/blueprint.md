@@ -7,7 +7,7 @@ description: This document describes the general, framework-independent contract
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill.
 
-## Introduction {#introdcution}
+## Introduction {#introduction}
 
 This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) in order to implement editable SPA components within AEM.
 
@@ -90,7 +90,7 @@ npm module: [@adobe/aem-react-editable-components](https://www.npmjs.com/package
 
 #### Angular {#angular}
 
-npm module: [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+npm module: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Main Services and Components {#main-services-and-components}
 
@@ -157,7 +157,7 @@ The SPA component is mapped to a graphical container such as the Responsive Grid
 
 For example:
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -173,7 +173,7 @@ For example:
 
 The underlying [`Component Mapping`](#componentmapping) library and its `MapTo` function can be encapsulated and extended to provide the functionalities relative to the edit configuration provided alongside the current component class.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -195,7 +195,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 In the above implementation, the project component is extended with the emptiness functionality before the being actually registered in the [Component Mapping](#componentmapping) store. This is done by encapsulating and extending the [`ComponentMapping`](#componentmapping) library to introduce the support of the `EditConfig` configuration object:
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -235,9 +235,9 @@ The following fragment illustrates the typical HTML representation of a page con
 * The responsive grid element carries class names prefixed with `aem-Grid--`
 * The responsive column element carries class names prefixed with `aem-GridColumn--`
 * A responsive grid which is also the column of a parent grid is wrapped such as the two previous prefixes are not appearing on the same element
-* Elements corresponding to editable resources carry a `data-cq-data-path` property. See the [Contract with the Page Editor](#contract-wtih-the-page-editor) section of this document.
+* Elements corresponding to editable resources carry a `data-cq-data-path` property. See the [Contract with the Page Editor](#contract-with-the-page-editor) section of this document.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
@@ -273,4 +273,3 @@ See how a simple SPA works and experiment with an SPA yourself by continuing on 
 For more information about SPAs in AEM, see the following documents:
 
 * [SPA Editor Overview](editor-overview.md) for an overview of SPAs in AEM and the communication model
-
