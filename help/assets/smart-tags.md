@@ -1,5 +1,5 @@
 ---
-title: Tag images with artificially intelligent services.
+title: Tag images with smart services
 description: Tag images with artificially intelligent services that apply contextual and descriptive business tags using Adobe Sensei services.
 contentOwner: AG
 ---

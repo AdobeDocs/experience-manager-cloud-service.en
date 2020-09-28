@@ -1,5 +1,5 @@
 ---
-title: Watermark your assets
+title: Watermark the assets
 description: Add watermark to your digital assets.
 contentOwner: AG
 ---
