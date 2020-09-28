@@ -5,7 +5,7 @@ breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 ---
 
-# Assets as a Cloud Service Guide {#assets}
+# Assets Guide {#assets}
 
 + [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Overview and what's new](overview.md)
