@@ -75,17 +75,14 @@ AEM version updates are of two types:
    * Can be released on a daily basis.
    * Mostly maintenance, including the latest bug-fixes and security updates.
 
-   As changes are applied regularly the impact is incremental, reducing the impact on your service.
+     As changes are applied regularly the impact is incremental, reducing the impact on your service.
 
->[!NOTE]
->To learn more about AEM push updates, see the whitepaper on [Adobe Experience Manager as a Cloud Service Continuous Delivery Model](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+     >[!NOTE]
+     >To learn more about AEM push updates, see the whitepaper on [Adobe Experience Manager as a Cloud Service Continuous Delivery Model.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **New Feature updates**
 
    * Released via a predictable monthly schedule.
-
->[!NOTE]
->For further details see [Deployment Architecture](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) .
 
 ## Cloud Manager {#cloud-manager}
 
