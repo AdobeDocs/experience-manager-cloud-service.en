@@ -59,7 +59,7 @@ This enables autoscaling for varying usage patterns:
 ![Autoscaling for varying usage patterns](assets/introduction-04.png "Autoscaling for varying usage patterns")
 
 
-## Updates {#upgrades}
+## AEM Updates {#upgrades}
 
 >[!NOTE]
 >For further details see the [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
@@ -76,9 +76,6 @@ AEM version updates are of two types:
    * Mostly maintenance, including the latest bug-fixes and security updates.
 
      As changes are applied regularly the impact is incremental, reducing the impact on your service.
-
-     >[!NOTE]
-     >To learn more about AEM push updates, see the whitepaper on [Adobe Experience Manager as a Cloud Service Continuous Delivery Model.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **New Feature updates**
 
