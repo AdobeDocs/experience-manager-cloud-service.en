@@ -14,15 +14,12 @@ AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (
  
 AEM version updates are of two types:
 
-* **Push updates**
+* **AEM Push updates**
 
    * Can be released on a daily basis.
    * Mostly maintenance, including the latest bug-fixes and security updates.
 
-   As changes are applied regularly the impact is incremental, reducing the impact on your service.
-
->[!NOTE]
->To learn more about AEM push updates, see the whitepaper on [Adobe Experience Manager as a Cloud Service Continuous Delivery Model](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+     As changes are applied regularly the impact is incremental, reducing the impact on your service.
 
 * **New Feature updates**
 
