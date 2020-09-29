@@ -7,7 +7,7 @@ description: AEM Version Updates
 
 ## Introduction {#introduction}
 
-AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure  that your projects are on the most current AEM version. These means that all upgrade operations are fully automated, so do not require any interruption of service for users.
+AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure  that your projects are on the most current AEM version. This means that Production and Stage instances are updated to the latest AEM version without any interruption of service for users. 
 
 >[!NOTE]
 >If the update to production environment fails, Cloud Manager will automatically rollback the stage environment. This is done automatically to make sure that after an update completes, both stage and production environments are at on same AEM version.
