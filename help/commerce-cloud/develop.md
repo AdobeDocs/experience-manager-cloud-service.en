@@ -80,12 +80,12 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
     Example Mac OSX:
 
     ```bash
-    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud/graphql --port 3002 --proxyPartial ''
+    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
     ```
     
     Example Windows:
     ```bash
-    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud/graphql --port 3002 --proxyPartial '""'
+    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
     ```
     The argument `--proxyPartial` needs to receive an empty string.
     
@@ -96,6 +96,10 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
     Navigate to the CIF Cloud Service configuration (Tools > Cloud Services > CIF Configuration). Open the properties view of the config used by your project.
     
     For the `GraphQL Proxy Path` property use the local proxy server endpoint `http://localhost:3002/graphql`. Save the configuration.
+
+>[!NOTE]
+>
+>Do not push the configuration of step 8 into the project repo. This config is only required for a local development setup. AEM as a Cloud Service environments are already set up with the GraphQL proxy during the onboarding.
 
 Verify the setup via OSGI console: `http://localhost:4502/system/console/osgi-installer`. The list should include the CIF add-on related bundles, content-package, and OSGI configurations as defined in the feature model file.
 
