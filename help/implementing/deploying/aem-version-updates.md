@@ -17,6 +17,7 @@ AEM version updates are of two types:
 * **AEM Push updates**
 
    * Can be released on a daily basis.
+
    * Mostly maintenance, including the latest bug-fixes and security updates.
 
      As changes are applied regularly the impact is incremental, reducing the impact on your service.
