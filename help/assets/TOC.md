@@ -29,7 +29,6 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [How to add or edit metadata](meta-edit.md)
   + [Review folder assets and collections](bulk-approval.md)
   + [Use and configure Assets Insights](assets-insights.md)
-  + [Asynchronous jobs](asynchronous-jobs.md)
   + [Metadata profiles](metadata-profiles.md)
   + [Metadata schema](metadata-schemas.md)
   + [Manage video assets](manage-video-assets.md)
