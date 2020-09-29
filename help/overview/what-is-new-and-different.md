@@ -59,7 +59,7 @@ This enables autoscaling for varying usage patterns:
 ![Autoscaling for varying usage patterns](assets/introduction-04.png "Autoscaling for varying usage patterns")
 
 
-## AEM Updates {#upgrades}
+## AEM Updates {#aem-updates}
 
 >[!NOTE]
 >For further details see the [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
@@ -71,7 +71,7 @@ AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (
 
 AEM version updates are of two types:
 
-* **Push updates**
+* **AEM Push updates**
 
    * Can be released on a daily basis.
    * Mostly maintenance, including the latest bug-fixes and security updates.
