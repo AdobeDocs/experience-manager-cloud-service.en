@@ -165,7 +165,7 @@ For metadata operations that are typically done by roles such as marketers and a
 * The drag functionality using keyboard correctly functions in Metadata Schema Editor in browse mode of screen reader.
 * A user can move the focus using keyboard to the Add User or Group field under Closed User Group in the Permissions tab of folder Properties.
 
-## Search digital assets {#search}
+## Search digital assets {#search-assets}
 
 A quick and seamless asset search experience boosts content velocity. The content velocity use cases are are part of core [!DNL Assets] functionality. To start a search from the Omnisearch bar, users can use keyboard shortcut `/` or use `Tab` along with screen readers to quickly locate the search option. The screen reader narrates the name of the option as [!UICONTROL Search Button] when focus is on search option ![search option](assets/do-not-localize/search_icon.png). Users can press `Return` to open the Omnisearch box. The screen reader not only narrates the keyword typed in search box but also narrates the auto-complete suggestions offered by [!DNL Experience Manager Assets]. Users can use a combination of arrow keys, `Return`, and `Tab` to access the various options to trigger a search.
 
