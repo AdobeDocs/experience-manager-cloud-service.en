@@ -39,4 +39,4 @@ The `aio-cli-plugin-aem-cloud-service-migration` plugin consists of two main par
 Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute to this plugin code that is open sourced in GitHub.
 
 >[!NOTE]
->Currently only the Dispatcher Converter is integrated with the plugin.
+>Currently the plugin is integrated with AEM Dispatcher Converter and Repository Modernizer.

@@ -141,7 +141,7 @@ So if the page is not reloaded when navigating through the child pages, how is i
 
 The next section, [Loading a SPA Application](#loading-a-spa-application), digs deeper into the mechanics of loading the SPA and how content can be loaded synchronously and asynchronously.
 
-### Loading an SPA Application {#loading-an-spa-application}
+### Loading an SPA Application {#loading-a-spa-application}
 
 1. If not already loaded, load the We.Retail Journal application either on the publish server or using the option **View as Published** from the **Page Information** menu in the page editor.
 

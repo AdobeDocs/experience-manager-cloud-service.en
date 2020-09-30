@@ -169,7 +169,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
     }
     ```
 
-    ![Sample GraphlQL response](../assets/customize-cif-components/sample-graphql-query.png)
+    ![Sample GraphQL response](../assets/customize-cif-components/sample-graphql-query.png)
 
     Note that the value of **Yes** is an integer of **1**. This will be useful when we write the GraphQL query in Java.
 

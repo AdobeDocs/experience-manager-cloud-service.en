@@ -71,12 +71,14 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
 + Personalization {#personalization}
   + [ContextHub](developing/personalization/contexthub.md)
   + [Configuring ContextHub](developing/personalization/configuring-contexthub.md)
+  + [Adding ContextHub to Pages](developing/personalization/adding-contexthub.md)
   + [Sample Store Candidates](developing/personalization/sample-stores.md)
   + [Sample Store Modules](developing/personalization/sample-modules.md)
   + [ContextHub Diagnostics](developing/personalization/contexthub-diagnostics.md)
   + [Extending ContextHub](developing/personalization/extending-contexthub.md)
   + [ContextHub API](developing/personalization/contexthub-api.md)
   + [Integrating with Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
+  + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
@@ -87,6 +89,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
+  + [AEM Version Updates](deploying/aem-version-updates.md)
   + [Configuring OSGi for AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Author Tier {#author-tier}  
   + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
