@@ -13,6 +13,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + [Architecture](architecture.md)
 + [Supported file formats](file-format-support.md)
 + [Overview of asset microservices](asset-microservices-overview.md)
++ [Accessibility in [!DNL Assets]](accessibility.md)
 + Manage digital assets using AEM {#manage}
   + [Share assets](share-assets.md)
   + [Monitor activities and DAM tasks](assets-activity-history.md)
