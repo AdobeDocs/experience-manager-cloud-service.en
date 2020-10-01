@@ -119,7 +119,7 @@ If other AEM projects, which are themselves comprised of their own code and cont
 
 For example, an AEM project that includes 2 vendor AEM applications might look like:
 
-  + `all` content package embeds the following packages, to create a singular deployment artifact
++ `all` content package embeds the following packages, to create a singular deployment artifact
     + `core` OSGi bundle Jar required by the AEM application
     + `ui.apps` deploys code required by the AEM application
     + `ui.config` deploys OSGi configurations required by the AEM application
