@@ -131,7 +131,7 @@ For example, an AEM project that includes 2 vendor AEM applications might look l
 
 Packages are to be marked with their declared package type.
 
-+ Container packages must not have a `packageType` set.
++ Container packages must set their `packageType` to `container`.
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
 
@@ -298,11 +298,11 @@ The simple case sets the `ui.content` mutable content package to depend on the `
 Complex deployments expand on the simple case, and set dependencies between the corresponding mutable content and immutable code packages. As required, dependencies can be established between immutable code packages as well.
 
 + `all` has no dependencies
-  + `ui.apps.common` has no dependencies
-  + `ui.apps.site-a` depends on `ui.apps.common`
-  + `ui.content.site-a` depends on `ui.apps.site-a`
-  + `ui.apps.site-b` depends on `ui.apps.common`
-  + `ui.content.site-b` depends on `ui.apps.site-b`
+  + `common.ui.apps.common` has no dependencies
+  + `site-a.ui.apps` depends on `common.ui.apps`
+  + `site-a.ui.content` depends on `site-a.ui.apps`
+  + `site-b.ui.apps` depends on `common.ui.apps`
+  + `site-b.ui.content` depends on `site-b.ui.apps`
 
 ## Local Development and Deployment {#local-development-and-deployment}
 
