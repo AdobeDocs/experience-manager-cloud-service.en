@@ -1,6 +1,6 @@
 ---
 title: Accessibility in [!DNL Experience Manager Assets]
-description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
+description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help users with disabilities.
 contentOwner: AG
 ---
 
