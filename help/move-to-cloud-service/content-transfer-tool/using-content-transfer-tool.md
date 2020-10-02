@@ -13,7 +13,7 @@ Follow the section below to understand the important considerations while runnin
 
 * The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store, Shared S3 Data Store, and Azure Blob Store Data Store.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to October 1 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+* If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
 
 * To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
