@@ -225,9 +225,9 @@ The [Day CQ Mail Service OSGI service](https://docs.adobe.com/content/help/en/ex
 
 AEM CS requires mail to be sent out through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Note that Adobe does not support SMTP egressing over a unique dedicated IP address. 
+>Note that Adobe does not support SMTP egressing over a unique dedicated IP address. 
 
 ### Configuration {#email-configuration}
 
