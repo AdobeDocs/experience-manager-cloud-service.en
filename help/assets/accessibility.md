@@ -1,5 +1,5 @@
 ---
-title: Accessibility in [!DNL Experience Manager Assets].
+title: Accessibility in [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 ---
@@ -36,11 +36,12 @@ To access the report detailing the levels of compliance, see [Accessibility conf
 
 ## Assistive technologies {#at-support}
 
-Users with disabilities frequently rely on hardware and software to access web content. These tools are known as assistive technologies. [!DNL Adobe Experience Manager Assets] work with the following assistive technologies to let users use the core functionalities:
+Users with disabilities frequently rely on hardware and software to access web content. These tools are known as assistive technologies. [!DNL Adobe Experience Manager Assets] work with the following kinds of assistive technologies to provide users support when using the software's core functionalities:
 
 * Screen readers.
 * Speech recognition software.
 * Keyboard usage – navigation and shortcuts.
+* Assistive hardware, including switch controls, refreshable Braille displays, and other computer input devices.
 * UI magnifying tools.
 
 ## [!DNL Experience Manager Assets] use cases that are accessible {#accessible-assets-use-cases}
