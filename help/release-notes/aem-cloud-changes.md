@@ -101,7 +101,7 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 ## Asset Handling and Delivery {#asset-handling}
 
-Asset upload, treatment, and download have been optimized in AEM Cloud Service to be more efficient enabling better scaling and faster uploads and downloads. However this may impact some existing custom code.
+Asset upload, treatment, and download have been optimized in Assets as a Cloud Service to be more efficient enabling better scaling and faster uploads and downloads. However this may impact some existing custom code.
 
 * The default workflow **DAM Asset Update** in previous versions of AEM is no longer available.
 * Web site components that deliver a binary **without transformation** should use direct download.

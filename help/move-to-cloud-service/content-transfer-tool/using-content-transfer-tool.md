@@ -13,15 +13,15 @@ Follow the section below to understand the important considerations while runnin
 
 * The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store, Shared S3 Data Store, and Azure Blob Store Data Store.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+* If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
 
-* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
 * The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process.
 
-* The recommended upper limit for the repository size that the Content Transfer Tool can support at a time is 20GB.
+* Currently the default MongoDB size for a AEM as a Cloud Service Author instance is 32GB. It is recommended that for segment store size of greater than 20GB, you should submit a Support ticket to increase the MongoDB size.
 
 ## Availability {#availability}
 
