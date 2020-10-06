@@ -464,6 +464,7 @@ config.dev
 </table>
 
 ## Cloud Manager API Format for Setting Properties {#cloud-manager-api-format-for-setting-properties}
+
 See [this page](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) about how the API has to be configured. 
 >[!NOTE]
 >
