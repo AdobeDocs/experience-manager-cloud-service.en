@@ -110,6 +110,8 @@ Follow this section to learn about what is new and the updates for Code Refactor
 
 ### What is New {#what-is-new-refactoring}
 
+[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) is a utility developed to restructure existing project packages by separating content and code into discrete packages to be compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
+
 * AIO-CLI plugin supports Repository Modernizer and allows users to execute the tool using the plugin. 
 
   Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
