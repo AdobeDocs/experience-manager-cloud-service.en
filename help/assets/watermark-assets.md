@@ -8,11 +8,11 @@ contentOwner: AG
 
 [!DNL Adobe Experience Manager Assets] lets you add a digital watermark to images. [!DNL Assets] supports applying an image as a watermark to other image files. Watermarks can help users verify the authenticity and copyright ownership of the assets. Also, a watermark can be used to indicate a document's state like confidential, draft, validity, and so on.
 
-To configure Experience Manager to watermark assets follow these steps:
+To configure [!DNL Experience Manager] to watermark assets follow these steps:
 
 1. A PNG file is applied as a watermark. Upload this file in your DAM repository.
 
-1. Access the Cloud Manager Git repository associated with your environment. Commit a file named `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` in their Cloud Manager Git repository with the following contents. For more details, see [how to do OSGi configuration in Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Access the [!DNL Cloud Manager] Git repository associated with your environment. Commit a file named `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` in their [!DNL Cloud Manager] Git repository with the following contents. For more details, see [how to do OSGi configuration in [!DNL Experience Manager] as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
