@@ -30,7 +30,7 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
    * The AEM GraphQL API supports Content Fragment delivery.
    * Direct content delivery is also possible with the Content Fragment Core Component's JSON export.
 
-## Getting Started with Headless in AEM {#getting-started}  
+## Headless Getting Started Guides {#getting-started}  
 
 The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
 
@@ -39,3 +39,15 @@ The Headless Getting Started Guides lay out a simple path for for creating, mana
 1. [Creating an Assets Folder](getting-started/create-assets-folder.md)
 1. [Creating a Content Fragment](getting-started/create-content-fragment.md)
 1. [Accessing and Delivering Content Fragments](getting-started/create-api-request.md)
+
+## Audience {#audience}
+
+The tasks described in the [Headless Getting Started Guides](#getting-started) are necessary for a basic end-to-end demonstration of AEM's headless capabilities. Anyone with administrator access to a test AEM instance can follow these guides to understand headless delivery in AEM, though someone with developer experience is ideal.
+
+However in a production situation, the tasks will be performed by different personas a varying number of times. For example:
+
+* **Administrators** will need to set up the initial configuration and folder structure for the content normally only once or sporadically.
+* **Information architects** generally will add new models as the needs of the organization evolve.
+* **Content authors** will continually create new content based on the models defined by the architects.
+
+The Headless Getting Started Guides point out generally who would perform the tasks described and how frequently.

@@ -18,6 +18,8 @@ The remainder of this guide will focus on GraphQL access.
 
 ## How to Deliver a Content Fragment Using GraphQL {#how-to-deliver-a-content-fragment}
 
+Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only needed to be considered once per endpoint per model. For the purposes of this getting started guide we will will only need to create one.
+
 ## Next Steps {#next-steps}
 
 That's it! You now have a basic understanding of headless content management in AEM. Of course there are many more resources where you can dive deeper for a comprehensive understanding of the features available.

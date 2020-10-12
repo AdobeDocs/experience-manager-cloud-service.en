@@ -15,6 +15,8 @@ Content Fragment Models define the structure of the data and content that you wi
 
 ## How to Create a Content Fragment Model {#how-to-create-a-content-fragment-model}
 
+An information architect would perform these tasks only sporadically as new models are required. For the purposes of this getting started guide, we only need to create one model.
+
 1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; Content Fragment Models**.
 1. Tap or click on the folder that was made by creating your configuration.
    ![The models folder](../assets/models-folder.png)

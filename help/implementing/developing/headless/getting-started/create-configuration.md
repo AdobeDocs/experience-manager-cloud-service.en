@@ -11,9 +11,11 @@ As a first step to getting started with headless in AEM as a Cloud Service, you 
 
 The Configuration Manager provides a generic configuration API, content structure, resolution mechanism for configurations in AEM.
 
-For the purposes of headless content management in AEM, Think of a configuration as a workplace withing AEM where you can create your Content Models and Content Fragments. You can have multiple configurations to separate these models.
+For the purposes of headless content management in AEM, think of a configuration as a workplace withing AEM where you can create your Content Models, which define the structure of your future content and Content Fragments. You can have multiple configurations to separate these models.
 
 ## How to Create a Configuration {#how-to-create-a-configuration}
+
+An administrator would only need to create a configuration once once, or very seldomly when a new workspace is required for organizing your Content Models. For the purposes of this getting started guide, we only need to create one configuration.
 
 1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
 1. Provide a **Title** and a **Name** for your configuration.
