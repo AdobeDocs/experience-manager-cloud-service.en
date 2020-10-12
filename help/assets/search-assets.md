@@ -1,5 +1,5 @@
 ---
-title: Search digital assets and images in AEM
+title: Search digital assets
 description: Learn how to find the required assets in AEM by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
 mini-toc-levels: 1
@@ -102,7 +102,7 @@ You can improve the relevance of keywords for particular assets to help boost se
 1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click/tap **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
 1. Click **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
 
-You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
+You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 

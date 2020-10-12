@@ -1,5 +1,5 @@
 ---
-title: Digital Rights Management in [!DNL Adobe Experience Manager Assets] as a Cloud Service.
+title: Digital Rights Management in [!DNL Assets]
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a Cloud Service.
 contentOwner: AG
 ---

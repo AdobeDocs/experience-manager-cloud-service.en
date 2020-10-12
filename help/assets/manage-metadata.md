@@ -1,5 +1,5 @@
 ---
-title: Manage metadata of your digital assets in [!DNL Adobe Experience Manager].
+title: Manage metadata of digital assets
 description: Learn about the types of metadata an how [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] makes it possible to automatically organize and process assets based on their metadata.
 contentOwner: AG
 mini-toc-levels: 1
@@ -204,7 +204,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF and PDF/X - Adobe PDF and third-party applications.
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadata for paged text.
 

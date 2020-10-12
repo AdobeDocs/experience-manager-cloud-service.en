@@ -41,7 +41,8 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 >[!NOTE]
 >
 >If you are performing a bulk migration of assets from Dynamic Media Classic to AEM, you must enable the Migration replication agent on the Dynamic Media server. When the migration is complete, make sure you disable the agent.
- The Migration publish agent must be disabled on the Dynamic Media server so the Reprocess workflow works as expected.
+>
+>The Migration publish agent must be disabled on the Dynamic Media server so the Reprocess workflow works as expected.
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
