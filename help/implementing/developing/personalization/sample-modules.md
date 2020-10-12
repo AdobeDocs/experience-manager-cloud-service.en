@@ -88,7 +88,7 @@ Instances of the contexthub.browserinfo UI module do not require a value for the
 
 ## contexthub.datetime UI Module Type {#contexthub-datetime-ui-module-type}
 
-The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) store candidate.
+The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the `contexthub.datetime` store candidate.
 
 ![contexthub.datetime module](assets/datetime-module.png)
 
@@ -180,7 +180,7 @@ Instances of the `contexthub.screen-orientation` UI module do not require a valu
 
 ## contexthub.tagcloud UI Module Type {#contexthub-tagcloud-ui-module-type}
 
-The `contexthub.tagcloud` UI module displays information about tags. On the toolbar the UI module shows the number of tags. The popup reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) store candidate.
+The `contexthub.tagcloud` UI module displays information about tags. On the toolbar the UI module shows the number of tags. The popup reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the `contexthub.tagcloud` store candidate.
 
 ![contexthub.tagcloud module](assets/tagcloud-module.png)
 

@@ -71,6 +71,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
 + Personalization {#personalization}
   + [ContextHub](developing/personalization/contexthub.md)
   + [Configuring ContextHub](developing/personalization/configuring-contexthub.md)
+  + [Adding ContextHub to Pages](developing/personalization/adding-contexthub.md)
   + [Sample Store Candidates](developing/personalization/sample-stores.md)
   + [Sample Store Modules](developing/personalization/sample-modules.md)
   + [ContextHub Diagnostics](developing/personalization/contexthub-diagnostics.md)
@@ -88,6 +89,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Deploying to AEM as a Cloud Service {#deploying}
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
+  + [AEM Version Updates](deploying/aem-version-updates.md)
   + [Configuring OSGi for AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Author Tier {#author-tier}  
   + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)

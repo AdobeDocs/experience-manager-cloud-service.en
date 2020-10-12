@@ -1,5 +1,5 @@
 ---
-title: Check In and Check Out Files in Assets
+title: Check In and Check Out files in [!DNL Assets]
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
 ---

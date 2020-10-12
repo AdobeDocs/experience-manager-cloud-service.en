@@ -1,5 +1,5 @@
 ---
-title: Know how asset microservices can process your digital assets in the cloud
+title: Process assets using asset microservices
 description: Process your digital assets using cloud-native and scalable asset processing microservices.
 contentOwner: AG
 ---
