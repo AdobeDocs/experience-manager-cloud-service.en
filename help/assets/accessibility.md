@@ -1,6 +1,6 @@
 ---
-title: Accessibility in [!DNL Experience Manager Assets].
-description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
+title: Accessibility in [!DNL Experience Manager Assets]
+description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help users with disabilities.
 contentOwner: AG
 ---
 
@@ -36,11 +36,12 @@ To access the report detailing the levels of compliance, see [Accessibility conf
 
 ## Assistive technologies {#at-support}
 
-Users with disabilities frequently rely on hardware and software to access web content. These tools are known as assistive technologies. [!DNL Adobe Experience Manager Assets] work with the following assistive technologies to let users use the core functionalities:
+Users with disabilities frequently rely on hardware and software to access web content. These tools are known as assistive technologies. [!DNL Adobe Experience Manager Assets] work with the following kinds of assistive technologies to provide users support when using the software's core functionalities:
 
 * Screen readers.
 * Speech recognition software.
 * Keyboard usage – navigation and shortcuts.
+* Assistive hardware, including switch controls, refreshable Braille displays, and other computer input devices.
 * UI magnifying tools.
 
 ## [!DNL Experience Manager Assets] use cases that are accessible {#accessible-assets-use-cases}
@@ -137,7 +138,7 @@ When browsing the assets repository, the following functionality improves access
 * Use of the `Esc` key to remove the quick action icons from thumbnail view does not remove the keyboard focus from the last focused item.
 * With an asset selected, pressing Alt + 4 keyboard shortcut opens the References list. Using `Tab` key, users can navigate through the none-zero reference entries.
 * Comments on an asset are available in the asset timeline. It is accessible by keyboard.
-* View Settings in Experience Manager are accessible by keyboard. User can navigate through the available card sizes using arrow keys, and select and tab through to navigate through and set other elements in the existing View Settings view.
+* View Settings in Experience Manager are accessible by keyboard. User can navigate through the available card sizes using arrow keys and select and tab through to navigate through and set other elements in the existing View Settings view.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -167,7 +168,7 @@ For metadata operations that are typically done by roles such as marketers and a
 
 ## Search digital assets {#search-assets}
 
-A quick and seamless asset search experience boosts content velocity. The content velocity use cases are are part of core [!DNL Assets] functionality. To start a search from the Omnisearch bar, users can use keyboard shortcut `/` or use `Tab` along with screen readers to quickly locate the search option. The screen reader narrates the name of the option as [!UICONTROL Search Button] when focus is on search option ![search option](assets/do-not-localize/search_icon.png). Users can press `Return` to open the Omnisearch box. The screen reader not only narrates the keyword typed in search box but also narrates the auto-complete suggestions offered by [!DNL Experience Manager Assets]. Users can use a combination of arrow keys, `Return`, and `Tab` to access the various options to trigger a search.
+A quick and seamless asset search experience boosts content velocity. The content velocity use cases are part of core [!DNL Assets] functionality. To start a search from the Omnisearch bar, users can use keyboard shortcut `/` or use `Tab` along with screen readers to quickly locate the search option. The screen reader narrates the name of the option as [!UICONTROL Search Button] when focus is on search option ![search option](assets/do-not-localize/search_icon.png). Users can press `Return` to open the Omnisearch box. The screen reader not only narrates the keyword typed in search box but also narrates the suggestions offered by [!DNL Experience Manager Assets]. Users can use a combination of arrow keys, `Return`, and `Tab` to access the various options to trigger a search.
 
 Search functionality is made further accessible by the following functionality:
 
@@ -179,7 +180,7 @@ Search functionality is made further accessible by the following functionality:
 
 When filtering search results:
 
-* Search result page has an informative titles for better understanding of screen reader users.
+* Search result page has an informative title for better understanding of screen reader users.
 * A screen reader announces the options in search filter as expandable accordions.
 * Predicates that have mixed-state buttons are announced by screen readers.
 
@@ -195,8 +196,8 @@ When sharing assets, the following functionalities improve the accessibility:
 * In the link sharing dialog, when navigating in browse mode, the screen readers,
 
   * Do not narrate the table information as soon as the dialog is loaded.
-  * Can navigate to all the listed auto-suggestions.
-  * Narrate the displayed auto-suggestions for Add Email Address and Search fields.
+  * Can navigate to all the listed suggestions.
+  * Narrate the displayed suggestions for Add Email Address and Search fields.
 
 ## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
