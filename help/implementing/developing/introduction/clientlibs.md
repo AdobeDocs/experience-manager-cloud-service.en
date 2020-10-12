@@ -120,7 +120,7 @@ Each helper template expects a `categories` option for referencing the desired c
 
 [See the HTL documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) for more details on loading clientlibs via HTL.
 
-<!-->
+<!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
 
 This is possible. Still need detail.
