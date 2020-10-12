@@ -1,0 +1,41 @@
+---
+title: Headless Development for AEM Sites as a Cloud Service
+description: Using powerful features like Content Models, Content Fragments, and the GraphQL API, with AEM as a Cloud Service you can manage your experiences centrally and serve them across channels.
+---
+
+# Headless Development for AEM Sites as a Cloud Service {#headless-development}
+
+Using powerful features like Content Models, Content Fragments, and the GraphQL API, with AEM as a Cloud Service you can manage your experiences centrally and serve them across channels.
+
+## Overview {#overview}
+
+Headless implementation is increasingly becoming important for delivering experiences to wherever your audience is, across channels. Headless forgoes page and component management as is traditional in full stack and hybrid solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is the newest and most dynamic development pattern for implementing web experiences.
+
+![AEM Implementation Models](assets/aem-implementation-models.png)
+
+## AEM as a Cloud Service and Headless {#aem-headless}
+
+AEM as a Cloud Service is a flexible tool for the headless implementation model by offering three powerful services:
+
+1. Content Models
+   * Content Models are structured representation of content.
+   * These are defined by model developers (information architects) in the AEM Content Fragment Model editor.
+   * Content Models serve as a basis for Content Fragments.
+1. Content Fragments
+   * Content Fragments are instantiations of content models.
+   * These are created by content authors using the AEM Content Fragment editor.
+   * They are stored in AEM Assets and managed in Assets Admin UI.
+1. Content API for delivery
+   * The AEM Assets REST API supports Content Fragment CRUD operations.
+   * The AEM GraphQL API supports Content Fragment delivery.
+   * Direct content delivery is also possible with the Content Fragment Core Component's JSON export.
+
+## Getting Started with Headless in AEM {#getting-started}  
+
+The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
+
+1. [Creating a Configuration](getting-started/create-configuration.md)
+1. [Creating a Content Fragment Model](getting-started/create-content-model.md)
+1. [Creating an Assets Folder](getting-started/create-assets-folder.md)
+1. [Creating a Content Fragment](getting-started/create-content-fragment.md)
+1. [Accessing and Delivering Content Fragments](getting-started/create-api-request.md)

@@ -1,0 +1,42 @@
+---
+title: Creating a Configuration
+description: As a first step to getting started with headless in AEM as a Cloud Service, you need to create a configuration.
+---
+
+# Creating a Configuration {#creating-configuration}
+
+As a first step to getting started with headless in AEM as a Cloud Service, you need to create a configuration.
+
+## What is a Configuration? {#what-is-a-configuration}
+
+The Configuration Manager provides a generic configuration API, content structure, resolution mechanism for configurations in AEM.
+
+For the purposes of headless content management in AEM, Think of a configuration as a workplace withing AEM where you can create your Content Models and Content Fragments. You can have multiple configurations to separate these models.
+
+## How to Create a Configuration {#how-to-create-a-configuration}
+
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
+1. Provide a **Title** and a **Name** for your configuration.
+   * The **Title** should be descriptive.
+   * The **Name** will become the node name in the repository. It will be automatically generated based on the title and adjusted according to [AEM naming conventions,](/help/implementing/developing/introduction/naming-conventions.md) but can be adjusted if necessary.
+1. Check the following options:
+   * **Content Fragment Models**
+   * **GraphQL Persistent Queries**
+
+   ![Create Configuration](../assets/create-configuration.png)
+
+1. Tap or click **Create**
+
+You can create multiple configurations if required. Configurations can also be nested.
+
+>![NOTE]
+>
+>Configuration options in addition to **Content Fragment Models** and **GraphQL Persistent Queries** may be required depending on your implementation requirements.
+
+## Next Steps {#next-steps}
+
+Using this configuration, you can now move on to the second part of the getting started guide and [create Content Fragment Models.](create-content-model.md)
+
+>![TIP]
+>
+>For complete details about the Configuration Manager, see the Configuration Manager documentation.
