@@ -1,15 +1,17 @@
 ---
 title: Headless Development for AEM Sites as a Cloud Service
-description: Using powerful features like Content Models, Content Fragments, and the GraphQL API, with AEM as a Cloud Service you can manage your experiences centrally and serve them across channels.
+description: Using powerful features like Content Models, Content Fragments, and the GraphQL API, AEM as a Cloud Service allows you to manage your experiences centrally and serve them across channels.
 ---
 
 # Headless Development for AEM Sites as a Cloud Service {#headless-development}
 
-Using powerful features like Content Models, Content Fragments, and the GraphQL API, with AEM as a Cloud Service you can manage your experiences centrally and serve them across channels.
+Using powerful features like Content Models, Content Fragments, and the GraphQL API, AEM as a Cloud Service allows you to manage your experiences centrally and serve them across channels.
 
 ## Overview {#overview}
 
-Headless implementation is increasingly becoming important for delivering experiences to wherever your audience is, across channels. Headless forgoes page and component management as is traditional in full stack and hybrid solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is the newest and most dynamic development pattern for implementing web experiences.
+Headless implementation is increasingly becoming important for delivering experiences to your audience is, wherever they are and regardless of channel.
+
+Headless implementation forgoes page and component management as is traditional in full stack and hybrid solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing web experiences.
 
 ![AEM Implementation Models](assets/aem-implementation-models.png)
 
@@ -19,20 +21,20 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
 
 1. Content Models
    * Content Models are structured representation of content.
-   * These are defined by model developers (information architects) in the AEM Content Fragment Model editor.
+   * These are defined by information architects in the AEM Content Fragment Model editor.
    * Content Models serve as a basis for Content Fragments.
 1. Content Fragments
    * Content Fragments are instantiations of content models.
    * These are created by content authors using the AEM Content Fragment editor.
    * They are stored in AEM Assets and managed in Assets Admin UI.
 1. Content API for delivery
-   * The AEM Assets REST API supports Content Fragment CRUD operations.
    * The AEM GraphQL API supports Content Fragment delivery.
-   * Direct content delivery is also possible with the Content Fragment Core Component's JSON export.
+   * The AEM Assets REST API supports Content Fragment CRUD operations.
+   * Direct content delivery is also possible with the [Content Fragment Core Component's JSON export.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## Headless Getting Started Guides {#getting-started}  
 
-The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
+The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service in five steps. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
 
 1. [Creating a Configuration](getting-started/create-configuration.md)
 1. [Creating a Content Fragment Model](getting-started/create-content-model.md)
@@ -48,6 +50,6 @@ However in a production situation, the tasks will be performed by different pers
 
 * **Administrators** will need to set up the initial configuration and folder structure for the content normally only once or sporadically.
 * **Information architects** generally will add new models as the needs of the organization evolve.
-* **Content authors** will continually create new content based on the models defined by the architects.
+* **Content authors** will continually create new content as Content Fragments based on the models defined by the architects.
 
-The Headless Getting Started Guides point out generally who would perform the tasks described and how frequently.
+The Headless Getting Started Guides point out who would generally perform the tasks described and how frequently.

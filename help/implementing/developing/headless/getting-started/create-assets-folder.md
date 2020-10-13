@@ -1,9 +1,9 @@
 ---
-title: Creating an Assets Folder
+title: Creating an Assets Folder Headless Quick Start Guide
 description: Content Fragment Models define the structure of Content Fragments. Content Fragments are then stored in assets folders.
 ---
 
-# Creating an Assets Folder {#creating-an-assets-folder}
+# Creating an Assets Folder Headless Quick Start Guide{#creating-an-assets-folder}
 
 Content Fragment Models define the structure of Content Fragments. Content Fragments are then stored in assets folders.
 
@@ -13,7 +13,7 @@ Content Fragment Models define the structure of Content Fragments. Content Fragm
 
 However you will need to first create an assets folder where you will store them.
 
-Assets folders are used to organize content assets like Content Fragments as well as images.
+Assets folders are used to [organize traditional content assets](/help/assets/manage-digital-assets.md) like images and video as well as Content Fragments.
 
 ## How to Create an Assets Folder {#how-to-create-an-assets-folder}
 
@@ -23,7 +23,9 @@ An administrator would only need to create folders occasionally to organize cont
 1. Tap or click **Create -&gt; Folder**.
 1. Provide a **Title** and a **Name** for your folder.
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository. It will be automatically generated based on the title and adjusted according to [AEM naming conventions,](/help/implementing/developing/introduction/naming-conventions.md) but can be adjusted if necessary.
+   * The **Name** will become the node name in the repository.
+      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+      * It can be adjusted if necessary.
 
    ![Create folder](../assets/assets-folder-create.png)
 1. Select the folder you just created and then select **Properties** from the toolbar (or use the `p` [keyboard shortcut.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))

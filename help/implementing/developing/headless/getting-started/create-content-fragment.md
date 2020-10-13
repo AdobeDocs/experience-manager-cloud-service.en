@@ -1,17 +1,17 @@
 ---
-title: Creating Content Fragments
-description: Content Fragments allow you to design, create, curate and use page-independent content that can be delivered headlessly by AEM.
+title: Creating Content Fragments Headless Quick Start Guide
+description: Content Fragments allow you to design, create, curate, and use page-independent content that can be delivered headlessly by AEM.
 ---
 
-# Creating Content Fragments {#creating-content-fragments}
+# Creating Content Fragments Headless Quick Start Guide {#creating-content-fragments}
 
-Content Fragments allow you to design, create, curate and use page-independent content that can be delivered headlessly by AEM.
+Content Fragments allow you to design, create, curate, and use page-independent content that can be delivered headlessly by AEM.
 
 ## What are Content Fragments? {#what-are-content-fragments}
 
-[Now that you have created an assets folder](create-assets-folder.md) where you can store your Content Fragments, you can not create the fragments!
+[Now that you have created an assets folder](create-assets-folder.md) where you can store your Content Fragments, you can now create the fragments!
 
-Content Fragments allow you to design, create, curate and publish page-independent content. They allow you to prepare content ready for use in multiple locations/over multiple channels.
+Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations and over multiple channels.
 
 Content fragments contain structured content and can be delivered in JSON format.
 
@@ -37,6 +37,8 @@ Content authors will create any number of Content Fragments to represent the con
 
    ![Content Fragment Editor](../assets/content-fragment-edit.png)
 1. Tap or click **Save**.
+
+Content Fragments can reference other Content Fragments, allowing for a nested content structure if necessary.
 
 ## Next Steps {#next-steps}
 

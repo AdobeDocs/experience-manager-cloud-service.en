@@ -1,9 +1,9 @@
 ---
-title: Creating Content Fragment Models
+title: Creating Content Fragment Models Headless Quick Start Guide
 description: Content Fragment Models define the structure of the content you will create and serve using AEM's headless capabilities.
 ---
 
-# Creating Content Fragment Models {#creating-content-fragment-models}
+# Creating Content Fragment Models Headless Quick Start Guide {#creating-content-fragment-models}
 
 Content Fragment Models define the structure of the content you will create and serve using AEM's headless capabilities.
 
@@ -31,11 +31,11 @@ An information architect would perform these tasks only sporadically as new mode
    ![Configure properties](../assets/models-configure-properties.png)
 1. When you are finished building your model, tap or click **Save**.
 
-You can create multiple models. Models can reference other models. Use configurations to organize your models.
+You can create multiple models. Models can reference other models. Use [configurations](create-configuration.md) to organize your models.
 
 ## Next Steps {#next-steps}
 
-Now that you have defined the structures of your Content Fragments, you can move on to the third part of the getting started guide and [create folders where you will store the fragments themselves.](create-assets-folder.md)
+Now that you have defined the structures of your Content Fragments by creating models, you can move on to the third part of the getting started guide and [create folders where you will store the fragments themselves.](create-assets-folder.md)
 
 >![TIP]
 >

@@ -1,9 +1,9 @@
 ---
-title: Creating a Configuration
+title: Creating a Configuration Headless Quick Start Guide
 description: As a first step to getting started with headless in AEM as a Cloud Service, you need to create a configuration.
 ---
 
-# Creating a Configuration {#creating-configuration}
+# Creating a Configuration Headless Quick Start Guide {#creating-configuration}
 
 As a first step to getting started with headless in AEM as a Cloud Service, you need to create a configuration.
 
@@ -11,16 +11,20 @@ As a first step to getting started with headless in AEM as a Cloud Service, you 
 
 The Configuration Manager provides a generic configuration API, content structure, resolution mechanism for configurations in AEM.
 
-For the purposes of headless content management in AEM, think of a configuration as a workplace withing AEM where you can create your Content Models, which define the structure of your future content and Content Fragments. You can have multiple configurations to separate these models.
+In the context of headless content management in AEM, think of a configuration as a workplace within AEM where you can create your Content Models, which define the structure of your future content and Content Fragments. You can have multiple configurations to separate these models.
+
+If you are familiar with [page templates in a full-stack AEM implementation,](/help/sites-cloud/authoring/features/templates.md) the usage of configurations for the management of Content Models is similar.
 
 ## How to Create a Configuration {#how-to-create-a-configuration}
 
-An administrator would only need to create a configuration once once, or very seldomly when a new workspace is required for organizing your Content Models. For the purposes of this getting started guide, we only need to create one configuration.
+An administrator would only need to create a configuration once, or very seldomly when a new workspace is required for organizing your Content Models. For the purposes of this getting started guide, we only need to create one configuration.
 
 1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
 1. Provide a **Title** and a **Name** for your configuration.
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository. It will be automatically generated based on the title and adjusted according to [AEM naming conventions,](/help/implementing/developing/introduction/naming-conventions.md) but can be adjusted if necessary.
+   * The **Name** will become the node name in the repository.
+      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+      * It can be adjusted if necessary.
 1. Check the following options:
    * **Content Fragment Models**
    * **GraphQL Persistent Queries**
@@ -33,7 +37,7 @@ You can create multiple configurations if required. Configurations can also be n
 
 >![NOTE]
 >
->Configuration options in addition to **Content Fragment Models** and **GraphQL Persistent Queries** may be required depending on your implementation requirements.
+>Configuration options in addition to **Content Fragment Models** and **GraphQL Persistent Queries** may be necessary depending on your implementation requirements.
 
 ## Next Steps {#next-steps}
 
