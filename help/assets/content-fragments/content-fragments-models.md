@@ -57,7 +57,7 @@ To use other configurations (i.e. excluding global) with a comparable Assets fol
 
 ## Defining your Content Fragment Model {#defining-your-content-fragment-model}
 
-The content fragment model effectively defines the structure of the resulting content fragments. Using the model editor you can add, and configure, the required fields:
+The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
 
 >[!CAUTION]
 >
@@ -112,6 +112,45 @@ The content fragment model effectively defines the structure of the resulting co
    ![save](assets/cfm-models-07.png)
 
 1. Select **Save** to persist the definition.
+
+## Data Types {#data-types}
+
+A selection of data types is available for defining your model:
+
+* **Single line text**
+  * Add one, or more, fields of a single line of text; the maximum length can be defined
+* **Multi line text**
+  * A text area that can be Rich Text, Plain Text or Markdown
+* **Number**
+  * Add one, or more, numerical fields
+* **Boolean**
+  * Add a boolean checkbox
+* **Date and time**
+  * Add a date and/or time
+* **Enumeration**
+  * Add a set of checkbox, radio button(s), or dropdown fields
+* **Tags**
+  * Allows fragment authors to access and select areas of tags
+* **Content Reference**
+  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+* **Fragment Reference**
+  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+* **JSON Object**
+  * Allows the content fragment authors to enter JSON syntax into the corresponding elements of a fragment. The JSON will be passed through, and output as JSON in GraphQL. 
+  * Includes JSON syntax highlighting in the content fragment editor.
+
+## Validation {#validation}
+
+Various data types now include the possibility to define validation requirements for when content is entered:
+
+* **Single line text**
+  * Compare against a predefined regex.
+* **Number**
+  * Check for specific values.
+* **Content Reference**
+  * Test for specific types of content.
+* **Fragment Reference**
+  * Test for a specific content fragment model.
 
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
