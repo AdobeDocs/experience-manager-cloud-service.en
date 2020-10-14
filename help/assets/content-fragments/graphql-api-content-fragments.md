@@ -72,7 +72,7 @@ For example, if a user created a Content Fragment Model called `Article`, then A
    
    * Three of them have been controlled by the user: `author`, `main` and `linked_article`.
 
-   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#graphql-aem-helper-fields) are marked with a preceeding `_` to distinguish between what has been defined by the user and what has been auto-generated.
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceeding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
 1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md#content-fragment-structure-graphql)).
 
@@ -100,13 +100,17 @@ The schema is served through the same endpoint as the GraphQL queries, with the 
 
 ## Fields {#fields}
 
-Within the schema, there are individual fields:
+Within the schema there are individual fields, of two basic categories:
 
-* Fields that you generate, based on how you configure your Content Fragment Model. The field names are taken from the **Property Name** field of the **Data Type**.
+* Fields that you generate.
+
+  A selection of [Field Types](#field-types) are used to create fields based on how you configure your Content Fragment Model. The field names are taken from the **Property Name** field of the **Data Type**.
   
-  There is also the **Render As** property to take into consideration, because users can configure certain data types; for example, as either a single line text or a multifield. 
+  * There is also the **Render As** property to take into consideration, because users can configure certain data types; for example, as either a single line text or a multifield. 
 
-* The GraphQL API also generates a number of helper fields in order to identify a Content Fragment, or to get more information about a content fragment.
+* GraphQL for AEM also generates a number of [helper fields](#helper-fields).
+
+  These are used to identify a Content Fragment, or to get more information about a content fragment.
 
 ### Field Types {#field-types}
 
@@ -124,7 +128,9 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Content Reference | String | Used to display the path towards another asset in AEM |
 | Fragment Reference | <A model type> | Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
 
-### GraphQL for AEM - Helper Fields {#graphql-aem-helper-fields}
+### Helper Fields {#helper-fields}
+
+In addition to the data types for user generated fields, GraphQL for AEM also generates a number of *helper* fields in order to help identify a Content Fragment, or to provide additional information about a Content Fragment.
 
 #### Path {#path}
 
@@ -137,9 +143,11 @@ The following code will display the paths of all Content Fragments that were cre
 
 ```xml
 {
-    persons {
-        _path
+  persons {
+    items {
+      _path
     }
+  }
 }
 ```
 
@@ -159,7 +167,7 @@ See [Sample Query - A Single City Fragment](/help/assets/content-fragments/conte
 
 #### Metadata {#metadata}
 
-Through GraphQL AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a content fragment, such as the title of a content fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
+Through GraphQL, AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a content fragment, such as the title of a content fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
 
 Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData `exposes the information grouped by the following scalar types:
 

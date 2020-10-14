@@ -309,22 +309,24 @@ Using the structure of the nested fragments, this query returns the full details
 ```xml
 query {
   companys {
-    name
-    ceo {
-      _path
+    items {
       name
-      firstName
-    	awards {
-      	id
-     	  title
+      ceo {
+        _path
+        name
+        firstName
+    	  awards {
+      	  id
+     	    title
+        }
       }
-    }
-    employees {
-    	name
-   	  firstName
-    	awards {
-      	id
-     	  title
+      employees {
+    	  name
+   	    firstName
+    	  awards {
+      	  id
+     	    title
+        }
       }
     }
   }
@@ -432,6 +434,7 @@ To retrieve all information about all cities, you can use the very basic query:
 ```xml
 {
   citys
+    items
 }
 ```
 
@@ -440,10 +443,12 @@ When executed, the system will automatically expand the query to include all fie
 ```xml
 {
   citys {
-    _path
-    name
-    country
-    population
+    items {
+      _path
+      name
+      country
+      population
+    }
   }
 }
 ```
@@ -510,7 +515,9 @@ This is a straightforward query to return the `name`of all entries in the `city`
 ```xml
 query {
   citys {
-    name
+    items {
+      name
+    }
   }
 }
 ```
@@ -594,11 +601,13 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 ```xml
 {
   citys (variation: "berlin_centre") {
-    _path
-    name
-    country
-    population
-    categories
+    items {
+      _path
+      name
+      country
+      population
+      categories
+    }
   }
 }
 ```
@@ -643,8 +652,10 @@ query {
       ]
     }
   }) {
-    name
-    firstName
+    items {
+      name
+      firstName
+    }
   }
 }
 ```
@@ -703,9 +714,11 @@ query {
       ]
     }
   }) {
-    name
-    population
-    country
+    items {
+      name
+      population
+      country
+    }
   }
 }
 ```
@@ -752,14 +765,16 @@ query {
       }
     }
   }) {
-    name
-    ceo {
+    items {
       name
-      firstName
-    }
-    employees {
-      name
-      firstName
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
     }
   }
 }
@@ -820,17 +835,19 @@ query {
       }
     }
   }) {
-    name
-    ceo {
+    items {
       name
-      firstName
-    }
-    employees {
-      name
-      firstName
-      awards {
-        id
-        title
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+        awards {
+          id
+          title
+        }
       }
     }
   }
@@ -898,14 +915,16 @@ query {
         ]
     }
   }) {
-    _metadata {
+    items {
+      _metadata {
         stringMetadata {
-        name,
-        value
+          name,
+          value
+        }
       }
+      id
+      title
     }
-    id
-    title
   }
 }
 ```
