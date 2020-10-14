@@ -227,11 +227,74 @@ The `_variations` field has been implemented to simplify querying the variations
 }
 ```
 
-ee [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql.md#sample-cities-named-variation).
+See [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql.md#sample-cities-named-variation).
 
 <!--
 ## Security Considerations {#security-considerations}
 -->
+
+## GraphQL Variables {#graphql-variables}
+
+GraphQL permits variables to be placed in the query. For more information you can see the [GraphQL documentation for GraphiQL](https://graphql.org/learn/queries/#variables).
+
+For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL:
+
+![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
+
+```xml
+### query
+query GetArticlesByVariation($variation: String!) {
+    articles(variation: $variation) {
+        items {
+            _path
+            author
+        }
+    }
+}
+ 
+### in query variables
+{
+    "variation": "uk"
+}
+```
+
+## GraphQL Directives {#graphql-directives}
+
+In GraphQL there is a possibility to change the query based on variables, called GraphQL Directives.
+
+For example there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
+
+![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
+
+```xml
+query getAdventureByType($includePrice: Boolean!) {
+  adventures {
+    items {
+      adventureType
+      adventurePrice @include(if: $includePrice)
+    }
+  }
+}
+ 
+### in query variables
+{
+    "includePrice": true
+}
+```
+
+## Filtering {#filtering}
+
+You can also use filtering in your GraphQL queries to return specific data. 
+
+Filtering uses a syntax based on logical operators and expressions. 
+
+For examples, see:
+
+* the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries)
+  
+* the [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql.md#content-fragment-structure-graphql) used in these queries
+
+* details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql.md#graphql-some-extensions)
 
 ## Permissions {#permission}
 
@@ -248,12 +311,6 @@ The permissions are those required for accessing Assets.
 <!-- 
 ## Caching {#caching}
 -->
-
-## Filtering {#filtering}
-
-Filtering in your GraphQL queries allows you to return specific data. Filtering uses a syntax based on logical operators and expressions.
-
-For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries) for examples.
 
 <!-- to be addressed later -->
 
