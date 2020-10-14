@@ -27,9 +27,11 @@ GraphQL uses the following:
 
 * **[Queries](https://graphql.org/learn/queries/)**
   
-* **[Schemas and Types](https://graphql.org/learn/schema/)**
+* **[Schemas and Types](https://graphql.org/learn/schema/)** - using these, GraphQL presents the types and operations allowed for the GraphQL for AEM implementation.
   
 * **[Fields](https://graphql.org/learn/queries/#fields)**
+
+* **GraphQL Endpoint** - the path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas.
 
 See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
 
@@ -51,6 +53,7 @@ The GraphQL for AEM implementation is based on the [GraphQL Java libraries](http
 
 [Content Fragments](#content-fragments) can be used as a basis for GraphQL for AEM queries as:
 
+* They enable you to design, create, curate and publish page-independent content.
 * The [Content Fragment Models](#content-fragments-models) provide the required structure by means of defined data types.
 * The [Fragment Reference](#fragment-references), available when defining a model, can be used to define additional layers of structure.
 

@@ -7,6 +7,12 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 
 The GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
 
+Using the GraphQL API in AEM enables the efficient delivery of Content Fragments to JavaScript clients in Headless CMS implementations:
+
+* Avoiding iterative API requests as with REST,
+* Ensuring that delivery is limited to the specific requirements,
+* Allowing for bulk delivery of exactly what is needed for rendering as response to a single API query.
+
 ## The GraphQL API {#graphql-api}
 
 *"GraphQL is a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."* See [GraphQL Foundation](https://foundation.graphql.org/).
@@ -27,7 +33,7 @@ For further information about the GraphQL API, see the following sections (among
 
   * [Case Studies](https://www.graphql.com/case-studies/)
 
-The GraphQL for AEM implementation is based on the standard GraphQL Java implementation. See:
+The GraphQL for AEM implementation is based on the standard GraphQL Java Library. See:
 
 * [graphQL.org - Java](https://graphql.org/code/#java)
 
@@ -47,13 +53,44 @@ The use cases can depend on the type of AEM as a Cloud Service environment:
 
 ## Schema Generation {#schema-generation}
 
-The data schemas correlate to (are based on) the [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md). 
+GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
+
+The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
+
+For Content Fragments, the GraphQL schemas (structure and types) are based on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) and their data types.
+
+For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
+
+1. A Content Fragment Model:
+
+   ![Content Fragment Model for use with GraphQL](assets/cfm-graphqlapi-01.png "Content Fragment Model for use with GraphQL")
+
+1. The corresponding GraphQL schema (output from GraphiQL automatic documentationi):
+   ![GraphQL Schema based on Content Fragment Model](assets/cfm-graphqlapi-02.png "GraphQL Schema based on Content Fragment Model")
+
+   This shows that the generated type `ArticleModel` contains several [fields](#fields). 
+   
+   * Three of them have been controlled by the user: `author`, `main` and `linked_article`.
+
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#graphql-aem-helper-fields) are marked with a preceeding `_` to distinguish between what has been defined by the user and what has been auto-generated.
+
+1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md#content-fragment-structure-graphql)).
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
 The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stablity.
 
-So for example, if you install a package containing Content-Fragment-Model-1 and Content-Fragment-Model-2, then modify Content-Fragment-Model-2, only the `Model-2` GraphQL type will get updated, whereas `Model-1` will remain the same. 
+So for example, if you:
+
+1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
+ 
+   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+
+1. Then modify `Content-Fragment-Model-2`:
+
+   1. Only the `Model-2` GraphQL type will get updated.
+
+   1. Whereas `Model-1` will remain the same. 
 
 >[!NOTE]
 >
@@ -170,7 +207,7 @@ You can view all the metadata GraphQL types if you view the Generated GraphQL sc
 
 See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql.md#sample-metadata-awards-gb).
 
-#### Varations {#variations}
+#### Variations {#variations}
 
 The `_variations` field has been implemented to simplify querying the variations that a Content Fragment has. For example:
 
