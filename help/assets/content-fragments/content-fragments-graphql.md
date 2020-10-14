@@ -227,6 +227,12 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 See the sample queries for illustrations of create queries, together with sample results.
 
+>[!NOTE]
+>
+>Depending on your instance you can directly access the Graph*i*QL interface for submitting and testing queries.
+>
+>For example: `http://localhost:4502/content/graphiql.html`
+
 ### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
 This will return all types for all available schemas.
