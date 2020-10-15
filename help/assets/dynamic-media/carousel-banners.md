@@ -237,7 +237,8 @@ See [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fr
 >[!NOTE]
 >
 >Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
-To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>
+>To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
 As you add hotspots or image maps to an image, remember to save your work. Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
@@ -289,6 +290,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
     * Tap **[!UICONTROL Hyperlink]**.
 
         * If you are an AEM Sites customer, tap the Site Selector icon (folder) to navigate to a URL.
+
           >[!NOTE]
           >
           >The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
@@ -309,7 +311,8 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
           >[!NOTE]
           >
           >Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
-          To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+          >
+          >To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
