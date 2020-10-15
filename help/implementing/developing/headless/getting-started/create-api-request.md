@@ -22,11 +22,13 @@ Information architects will need to design queries for their channel endpoints i
 
 1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL**
    * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+
 1. The GraphiQL is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlesly as JSON.
    * The left panel allows you to build your query.
    * The right panel displays the results.
    * The query editor features code completion and hotkeys to easily execute the query.
    ![GraphiQL editor](../assets/graphiql.png)
+
 1. Assuming that the model we created was called `person` with fields `firstName`, `lastName`, and `position`, we can build a simple query to retrieve the content of our Content Fragment.
 
    ```
@@ -41,8 +43,10 @@ Information architects will need to design queries for their channel endpoints i
      }
    }
    ```
+
 1. Enter the query into the left panel.
    ![GraphiQL query](../assets/graphiql-query.png)
+
 1. Click the **Execute Query** button or use the `Ctrl-Enter` hotkey and the results are displayed as JSON in the right panel.
    ![GraphiQL results](../assets/graphiql-results.png)
 
