@@ -11,6 +11,8 @@ Follow the section below to understand the important considerations while runnin
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
+* Java needs to be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
+
 * The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store, Shared S3 Data Store, and Azure Blob Store Data Store.
 
 * If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
