@@ -282,6 +282,51 @@ query getAdventureByType($includePrice: Boolean!) {
 }
 ```
 
+## Persisted Queries {#persisted-queries}
+
+After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
+
+This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
+
+Here are the steps required to persist a given query:
+
+1. Prepare the query by POSTing it to the endpoint URL suffixed by "/persisted"
+   
+   For example, create a persisted query:
+   ```xml
+   $ curl -v --location \
+   --request POST 'https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted' \
+   --header 'Content-Type: application/json' \
+   --data-raw '{"query":"{\n player(_path:\"/conte.... _references {\n images\n }\n }\n}","variables":{}}'
+   ```
+
+1. At this point, check the servet response and look for the `Location` header and affinity cookie, similar to:
+
+   * Location Header:
+     ```xml
+     https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted/94c....gql
+     ```
+
+   * Affinity Cookie
+     ```xml
+     set-cookie: affinity="062deedd03b5bb87"; Path=/; HttpOnly
+     ```
+
+1. You can then replay the persisted query by GETing the Location path and specifying the affinity cookie:
+   
+   >[!NOTE]
+   >
+   >The affinity cookie may not be required in future releases.
+
+   For example, to use the persisted query:
+
+   ```xml
+   $ curl -v \
+   --location 'https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted/b0....gql' \
+   --header 'Cookie: affinity="062deedd03b5bb87"' \
+   --header 'Content-Type: application/json'
+   ```
+
 ## Filtering {#filtering}
 
 You can also use filtering in your GraphQL queries to return specific data. 

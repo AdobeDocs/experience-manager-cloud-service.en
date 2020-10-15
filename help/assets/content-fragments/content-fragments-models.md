@@ -190,7 +190,7 @@ In addition to standard properties you can specify the **Root Path** for any ref
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references another content fragment. This of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
 
 For example:
 
@@ -217,6 +217,11 @@ type CompanyModel {
 
 In addition to standard properties you can define:
 
+* **Render As**:
+  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
+  * **multifield** - the fragment author can create multiple, individual, references
+  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+
 * **Model Type**
   Referenced fragments must have been created using the specified Content Fragment Model.
 
@@ -228,6 +233,13 @@ In addition to standard properties you can define:
 <!-- Check screenshot - might need update -->
 
    ![Fragment Reference](assets/cfm-fragment-reference.png)
+
+
+>[!NOTE]
+>
+>A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
+>
+>There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
