@@ -1,6 +1,14 @@
 ---
 title: Multi-Store Setup
-description: Multi-Store Setup
+description: Learn how map multiple store views from Magento to AEM. This allows projects to support multi-tenant and multi-lingual use cases.
+sub-product: Commerce
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 3046
+thumbnail: 28952.jpg
 ---
 
 # Multi-Store Setup {#multi-store}
