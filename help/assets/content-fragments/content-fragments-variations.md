@@ -146,6 +146,15 @@ You can also open the full-screen editor for further [actions](#actions).
 >
 >If you switch between **Rich Text** and **Markdown** you might experience unexpected effects with Block Quotes and Code Blocks, as these two formats can have differences in how they are handled.
 
+### Fragment References {#fragment-references}
+
+If the Content Fragment Model contains Fragment References, your fragment authors may have additional options:
+
+* Edit Content Fragment
+* New Content Fragment
+
+![Fragment References](assets/cfm-variations-12.png)
+
 ### Viewing Key Statistics {#viewing-key-statistics}
 
 When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. 
