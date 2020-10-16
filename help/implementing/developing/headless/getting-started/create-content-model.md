@@ -31,6 +31,7 @@ An information architect would perform these tasks only sporadically as new mode
 1. Using the **Content Fragment Model Editor**, build your Content Fragment Model by dragging and dropping fields from the **Data Types** column.
 
    ![Drag and drop fields](../assets/models-drag-and-drop.png)
+
 1. Once you place a field, you must configure its properties. The editor will automatically switch to the **Properties** tab for the added field where you can provide the mandatory fields.
 
    ![Configure properties](../assets/models-configure-properties.png)
@@ -46,6 +47,8 @@ An information architect would perform these tasks only sporadically as new mode
 1. The model is now enabled and ready to use.
 
    ![Model enabled](../assets/models-enabled.png)
+
+The **Content Fragment Model Editor** supports many different data type such as simple text fields, asset references, references to other models, and JSON data.
 
 You can create multiple models. Models can reference other models. Use [configurations](create-configuration.md) to organize your models.
 

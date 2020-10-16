@@ -50,7 +50,12 @@ Information architects will need to design queries for their channel endpoints i
 1. Click the **Execute Query** button or use the `Ctrl-Enter` hotkey and the results are displayed as JSON in the right panel.
    ![GraphiQL results](../assets/graphiql-results.png)
 
-GraphQL enables structured queries that can target specific elements of the models, deliver nested results, and much more. The resulting JSON can be used to deliver data to other sites or apps.
+1. Click the **Docs** link at the top-right of the page to show in-context documentation to help you build your queries which adapts to your own models.
+   ![GraphiQL documentation](../assets/graphiql-documentation.png)
+
+GraphQL enables structured queries that can target not only specific data sets or individual data objects, but also can deliver specific elements of the objects, nested results, offers support for query variables, and much more.
+
+GraphQL can avoid iterative API requests as well as over-delivery, and instead allows for bulk delivery of exactly what is needed for rendering as a response to a single API query. The resulting JSON can be used to deliver data to other sites or apps.
 
 ## Next Steps {#next-steps}
 
