@@ -135,6 +135,9 @@ A selection of data types is available for defining your model:
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
 * **Fragment Reference**
   * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * The data type can be configured to allow fragment authors to:
+    * Edit the referenced fragment directly.
+    * Create a new content fragment, based on the appropriate model  
 * **JSON Object**
   * Allows the content fragment authors to enter JSON syntax into the corresponding elements of a fragment. The JSON will be passed through, and output as JSON in GraphQL. 
   * Includes JSON syntax highlighting in the content fragment editor.
@@ -218,8 +221,9 @@ type CompanyModel {
 In addition to standard properties you can define:
 
 * **Render As**:
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
+
   * **multifield** - the fragment author can create multiple, individual, references
+
   * **fragmentreference** - allows the fragment author to select a single reference to a fragment
 
 * **Model Type**
@@ -229,6 +233,12 @@ In addition to standard properties you can define:
   This specifies a root path for any fragments referenced.
 
 * **Allow Fragment Creation**
+
+  This will allow the fragment author to create a new fragment based on the appropriate model.
+
+<!--
+  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
+-->
 
 <!-- Check screenshot - might need update -->
 
