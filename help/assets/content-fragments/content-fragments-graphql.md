@@ -321,17 +321,17 @@ query {
         _path
         name
         firstName
-    	  awards {
-      	  id
-     	    title
+        awards {
+        id
+          title
         }
       }
       employees {
-    	  name
-   	    firstName
-    	  awards {
-      	  id
-     	    title
+       name
+        firstName
+       awards {
+         id
+          title
         }
       }
     }
