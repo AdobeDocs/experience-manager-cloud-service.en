@@ -180,6 +180,7 @@ Through GraphQL, AEM also exposes the metadata of a Content Fragment. Metadata i
 
 Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData` exposes the information grouped by the following scalar types:
 
+<!--
 | Field |
 |--- |
 |`stringMetadata:[StringMetadata]!`|
@@ -192,6 +193,7 @@ Because Metadata is generated through the Schema Editor and as such does not hav
 |`booleanArrayMetadata:[booleanArrayMetadata]!` |
 |`calendarMetadata:[CalendarMetadata]!`|
 |`calendarArrayMetadata:[CalendarArrayMetadata]!`|
+-->
 
 Each scalar type represents either a single name-value pair or an array of name-value pairs, where the value of that pair is of the type it was grouped in. 
 
