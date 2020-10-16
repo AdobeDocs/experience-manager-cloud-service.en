@@ -39,7 +39,7 @@ An administrator would only need to create folders occasionally to organize cont
 
 You can create additional subfolders within the folder you just created. The subfolders will inherit the **Cloud Configuration** of the parent folder. This can be overridden however if you wish to use models from another configuration.
 
-If you are using a localized site structure, you can create this below your new folder.
+If you are using a localized site structure, you can [create a language root](/help/assets/translate-assets.md) below your new folder.
 
 ## Next Steps {#next-steps}
 
