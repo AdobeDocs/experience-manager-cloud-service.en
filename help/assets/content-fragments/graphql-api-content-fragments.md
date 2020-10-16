@@ -178,7 +178,7 @@ See [Sample Query - A Single City Fragment](/help/assets/content-fragments/conte
 
 Through GraphQL, AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a content fragment, such as the title of a content fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
 
-Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData `exposes the information grouped by the following scalar types:
+Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData` exposes the information grouped by the following scalar types:
 
 | Field |
 |--- |
@@ -220,7 +220,7 @@ You can view all the metadata GraphQL types if you view the Generated GraphQL sc
 >**Difference between normal and array metadata**
 >Keep in mind that `StringMetadata` and `StringArrayMetadata` both refer to what is stored in the repository, not how you retrieve them. 
 >
->So for example, by calling the `stringMetadata` field, you would receive an array of all the metadata that was stored in the repository as a `String `, and if you call `stringArrayMetadata` you would receive an array of all the metadata that was stored in the repository as `String[]`.
+>So for example, by calling the `stringMetadata` field, you would receive an array of all the metadata that was stored in the repository as a `String` , and if you call `stringArrayMetadata` you would receive an array of all the metadata that was stored in the repository as `String[]`.
 
 See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql.md#sample-metadata-awards-gb).
 
