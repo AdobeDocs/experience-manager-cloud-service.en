@@ -50,7 +50,7 @@ An information architect would perform these tasks only sporadically as new mode
 
 The **Content Fragment Model Editor** supports many different data type such as simple text fields, asset references, references to other models, and JSON data.
 
-You can create multiple models. Models can reference other models. Use [configurations](create-configuration.md) to organize your models.
+You can create multiple models. Models can reference other content fragments. Use [configurations](create-configuration.md) to organize your models.
 
 ## Next Steps {#next-steps}
 

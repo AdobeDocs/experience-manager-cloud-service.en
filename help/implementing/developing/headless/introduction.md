@@ -53,3 +53,7 @@ However in a production situation, the tasks will be performed by different pers
 * **Content authors** will continually create new content as Content Fragments based on the models defined by the architects.
 
 The Headless Getting Started Guides point out who would generally perform the tasks described and how frequently.
+
+## Next Step {#next-step}
+
+Ready to learn more? Then get started by reading the first part of the Headless Getting Started Guide: [Creating a Configuration.](getting-started/create-configuration.md)
