@@ -302,6 +302,7 @@ Here are the steps required to persist a given query:
 1. Prepare the query by POSTing it to the endpoint URL suffixed by "/persisted"
    
    For example, create a persisted query:
+
    ```xml
    $ curl -v --location \
    --request POST 'https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted' \
@@ -312,17 +313,19 @@ Here are the steps required to persist a given query:
 1. At this point, check the servet response and look for the `Location` header and affinity cookie, similar to:
 
    * Location Header:
+
      ```xml
      https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted/94c....gql
      ```
 
    * Affinity Cookie
+
      ```xml
      set-cookie: affinity="062deedd03b5bb87"; Path=/; HttpOnly
      ```
 
 1. You can then replay the persisted query by GETing the Location path and specifying the affinity cookie:
-   
+
    >[!NOTE]
    >
    >The affinity cookie may not be required in future releases.
@@ -401,9 +404,11 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
      `graphql-enablement/components/endpoint`.
 
    * **Methods** (`sling.servlet.methods^)
+
      The HTTP method the servlet should listen to; usually `GET`.
 
    * **Extensions** (`sling.servlet.extensions`)
+
      Specify the extension that the Schema Servlet should respond to. In this case it is `GQLschema`, to be compatible with the GraphQL specifications.
 
 2. The servlet that responds to graphql requests :

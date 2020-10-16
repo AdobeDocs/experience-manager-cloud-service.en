@@ -619,6 +619,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 ```
 
 **Sample Results**
+
 ```xml
 {
   "data": {
