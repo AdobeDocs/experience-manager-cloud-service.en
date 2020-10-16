@@ -176,9 +176,12 @@ See [Sample Query - A Single City Fragment](/help/assets/content-fragments/conte
 
 #### Metadata {#metadata}
 
+<!--
 Through GraphQL, AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a content fragment, such as the title of a content fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
 
 Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData` exposes the information grouped by the following scalar types:
+
+-->
 
 <!--
 | Field |
