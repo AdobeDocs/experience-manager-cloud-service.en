@@ -107,23 +107,23 @@ For a simple example we need:
 
 For the sample queries, we will use the following Content Models, and their interrelationships (references ->):
 
-* [Company](#company)
-  -> [Person](#person)
-  &nbsp;&nbsp;&nbsp;&nbsp;-> [Award](#award)
+* [Company](#model-company)
+  -> [Person](#model-person)
+  &nbsp;&nbsp;&nbsp;&nbsp;-> [Award](#model-award)
 
-* [City](#city)
+* [City](#model-city)
 
-#### Company {#company}
+#### Company {#model-company}
 
 The basic fields defining the comparny are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
 | Company Name | Single line text | |
-| CEO | Fragment Reference (single) | [Person](#person) |
-| Employees | Fragment Reference (multifield) | [Person](#person) |
+| CEO | Fragment Reference (single) | [Person](#model-person) |
+| Employees | Fragment Reference (multifield) | [Person](#model-person) |
 
-#### Person {#person}
+#### Person {#model-person}
 
 The fields defining a person, who can also be an employee:
 
@@ -131,9 +131,9 @@ The fields defining a person, who can also be an employee:
 |--- |--- |--- |
 | Name | Single line text | |
 | First name | Single line text | |
-| Awards | Fragment Reference (multifield) | [Award](#award) |
+| Awards | Fragment Reference (multifield) | [Award](#model-award) |
 
-#### Award {#award}
+#### Award {#model-award}
 
 The fields defining an award are:
 
@@ -142,7 +142,7 @@ The fields defining an award are:
 | Shortcut/ID | Single line text | |
 | Title | Single line text | |
 
-#### City {#city}
+#### City {#model-city}
 
 The fields for defining a city are:
 
@@ -157,7 +157,7 @@ The fields for defining a city are:
 
 The following fragments are used for the appropriate model. 
 
-#### Company {#company}
+#### Company {#fragment-company}
 
 | Company Name | CEO | Employees |
 |--- |--- |--- |
@@ -165,7 +165,7 @@ The following fragments are used for the appropriate model.
 | Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
-#### Person {#person}
+#### Person {#fragment-person}
 
 | Name | First Name | Awards |
 |--- |--- |--- |
@@ -178,7 +178,7 @@ The following fragments are used for the appropriate model.
 | Caulfield | Max | Gameblitz |
 | Jobs | Steve | |
 
-#### Award {#award}
+#### Award {#fragment-award}
 
 | Shortcut/ID | Title |
 |--- |--- |
@@ -186,7 +186,7 @@ The following fragments are used for the appropriate model.
 | GS | Gamestar |
 | OSC | Oscar |
 
-#### City {#city}
+#### City {#fragment-city}
 
 | Name | Country | Population | Categories |
 |--- |--- |--- |--- |
