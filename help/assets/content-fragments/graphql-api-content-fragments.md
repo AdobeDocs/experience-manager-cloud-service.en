@@ -135,7 +135,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Enumeration | String | Used to display an option from a list of options defined at model creation |
 | Tags | [String] | Used to display a list of Strings representing Tags used in AEM |
 | Content Reference | String | Used to display the path towards another asset in AEM |
-| Fragment Reference | <A model type> | Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
+| Fragment Reference | *A model type* | Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
 
 ### Helper Fields {#helper-fields}
 
@@ -176,14 +176,10 @@ See [Sample Query - A Single City Fragment](/help/assets/content-fragments/conte
 
 #### Metadata {#metadata}
 
-<!--
 Through GraphQL, AEM also exposes the metadata of a Content Fragment. Metadata is the information that describes a content fragment, such as the title of a content fragment, the thumbnail path, the description of a Content Fragment, the date it was created, amongst others.
 
 Because Metadata is generated through the Schema Editor and as such does not have a specific structure, the `TypedMetaData` GraphQL type was implemented to expose the metadata of a Content Fragment. `TypedMetaData` exposes the information grouped by the following scalar types:
 
--->
-
-<!--
 | Field |
 |--- |
 |`stringMetadata:[StringMetadata]!`|
@@ -196,7 +192,6 @@ Because Metadata is generated through the Schema Editor and as such does not hav
 |`booleanArrayMetadata:[booleanArrayMetadata]!` |
 |`calendarMetadata:[CalendarMetadata]!`|
 |`calendarArrayMetadata:[CalendarArrayMetadata]!`|
--->
 
 Each scalar type represents either a single name-value pair or an array of name-value pairs, where the value of that pair is of the type it was grouped in. 
 
