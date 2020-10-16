@@ -3,7 +3,7 @@ title: Content Fragment Models
 description: Content Fragment Models are used to create content fragments with structured content.
 ---
 
-# Content Fragment Models{#content-fragment-models}
+# Content Fragment Models {#content-fragment-models}
 
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
@@ -57,7 +57,7 @@ To use other configurations (i.e. excluding global) with a comparable Assets fol
 
 ## Defining your Content Fragment Model {#defining-your-content-fragment-model}
 
-The content fragment model effectively defines the structure of the resulting content fragments. Using the model editor you can add, and configure, the required fields:
+The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
 
 >[!CAUTION]
 >
@@ -92,6 +92,7 @@ The content fragment model effectively defines the structure of the resulting co
    >[!NOTE]
    >
    >For the data type **Multi line text** it is possible to define the **Default Type** as either:
+   >
    >    * **Rich Text**
    >    * **Markdown**
    >    * **Plain Text**
@@ -106,9 +107,139 @@ The content fragment model effectively defines the structure of the resulting co
 
    ![remove](assets/cfm-models-06.png)
 
-1. After adding all required fields, and defining the properties, use **Save** to persist the definition. For example:
+1. Add all required fields, and define the related properties, as required. For example:
 
    ![save](assets/cfm-models-07.png)
+
+1. Select **Save** to persist the definition.
+
+## Data Types {#data-types}
+
+A selection of data types is available for defining your model:
+
+* **Single line text**
+  * Add one, or more, fields of a single line of text; the maximum length can be defined
+* **Multi line text**
+  * A text area that can be Rich Text, Plain Text or Markdown
+* **Number**
+  * Add one, or more, numerical fields
+* **Boolean**
+  * Add a boolean checkbox
+* **Date and time**
+  * Add a date and/or time
+* **Enumeration**
+  * Add a set of checkbox, radio button(s), or dropdown fields
+* **Tags**
+  * Allows fragment authors to access and select areas of tags
+* **Content Reference**
+  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+* **Fragment Reference**
+  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+* **JSON Object**
+  * Allows the content fragment authors to enter JSON syntax into the corresponding elements of a fragment. The JSON will be passed through, and output as JSON in GraphQL. 
+  * Includes JSON syntax highlighting in the content fragment editor.
+
+## Validation {#validation}
+
+Various data types now include the possibility to define validation requirements for when content is entered:
+
+* **Single line text**
+  * Compare against a predefined regex.
+* **Number**
+  * Check for specific values.
+* **Content Reference**
+  * Test for specific types of content.
+* **Fragment Reference**
+  * Test for a specific content fragment model.
+
+## Using References to form Nested Content {#using-references-to-form-nested-content}
+
+Content Fragments can form nested content, using either of the following data types:
+
+* **[Content Reference](#content-reference)**
+  * Provides a simple reference to other content; of any type.
+  * Can be configured for a one or multiple references (in the resulting fragment).
+
+* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
+  * References another fragment, dependent on a specific model.
+  * Allows you to include/retrieve structured data.
+    >[!NOTE]
+    >
+    >This method is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+  * Can be configured for one or multiple references (in the resulting fragment).
+
+>[!NOTE]
+>
+>AEM has a recurrence protection for:
+>
+>* Content References
+>  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
+>
+>* Fragment References in GraphQL 
+>  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+
+### Content Reference {#content-reference}
+
+The Content Reference allows you to render content from another source; for example, image or content fragment.
+
+In addition to standard properties you can specify the **Root Path** for any referenced content.
+
+<!-- Check screenshot - might need update -->
+
+   ![Content Reference](assets/cfm-content-reference.png)
+
+### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+
+The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+
+For example:
+
+* A model defining details for an employee; these include:
+  * A reference to the model that defines the employer (company)
+
+```xml
+type EmployeeModel {
+    name: String
+    firstName: String
+    company: CompanyModel
+}
+
+type CompanyModel {
+    name: String
+    street: String
+    city: String
+}
+```
+
+>[!NOTE]
+>
+>This is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+In addition to standard properties you can define:
+
+* **Render As**:
+  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
+  * **multifield** - the fragment author can create multiple, individual, references
+  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+
+* **Model Type**
+  Referenced fragments must have been created using the specified Content Fragment Model.
+
+* **Root Path**
+  This specifies a root path for any fragments referenced.
+
+* **Allow Fragment Creation**
+
+<!-- Check screenshot - might need update -->
+
+   ![Fragment Reference](assets/cfm-fragment-reference.png)
+
+
+>[!NOTE]
+>
+>A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
+>
+>There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
