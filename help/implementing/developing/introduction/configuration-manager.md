@@ -99,7 +99,7 @@ If you think of configurations as workspaces, access rights can be set on those 
 
 ## Configurations as a Developer {#configurations-developer}
 
-As a developer, it is important to know how AEM as a Cloud Service works with configurations and how it uses Sling Context Aware Configurations to do this.
+As a developer, it is important to know how AEM as a Cloud Service works with configurations and how it uses Sling Context-Aware Configurations to do this.
 
 ### Separation of Configuration and Content {#separation-of-config-and-content}
 
