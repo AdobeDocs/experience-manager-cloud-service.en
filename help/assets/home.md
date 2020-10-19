@@ -33,7 +33,7 @@ Follow are the self-help resources for Experience Manager Assets as a Cloud Serv
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService) 
+* [Recent Documentation Updates](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
