@@ -1,9 +1,9 @@
 ---
-title: Configuration Manager
+title: Configurations and the Configuration Browser
 description: Understand AEM configurations and how they manage workspace settings in AEM.
 ---
 
-# Configuration Manager {#configuration-manager}
+# Configurations and the Configuration Browser {#configuration-browser}
 
 AEM configurations serve to manage settings in AEM and serve as workspaces.
 
@@ -27,7 +27,7 @@ The AEM administrator as well as authors can consider configurations as workspac
 
 Configurations can be created for many different features within AEM.
 
-* [Cloud Configurations](/help/implementing/developing/introduction/configuration-manager.md)
+* [Cloud Configurations](/help/implementing/developing/introduction/configurations.md)
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
@@ -48,9 +48,9 @@ By doing this:
 
 Similar setups are possible not only for Editable Templates but also for Cloud Configurations, ContextHub Segments, and Content Fragment Models.
 
-### Using the Configuration Manager
+### Using the Configuration Browser {#using-configuration-browser}
 
-The Configuration Manager allows an administrator to easily create, manage, and configure access rights to configurations in AEM.
+The Configuration Browser allows an administrator to easily create, manage, and configure access rights to configurations in AEM.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ It is very simple to create a new configuration in AEM by using the Configuratio
      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](naming-conventions.md)
      * It can be adjusted if necessary.
 1. Check the type of configurations you wish to allow.
-   * [Cloud Configurations](/help/implementing/developing/introduction/configuration-manager.md)
+   * [Cloud Configurations](/help/implementing/developing/introduction/configurations.md)
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
    * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
