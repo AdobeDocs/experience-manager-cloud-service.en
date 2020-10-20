@@ -225,7 +225,11 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
   * `_locale` : to reveal the language; based on Language Manager
 
-  * `_reference` : JSON output allows the prefetching of references
+  * `_references` : to reveal references
+
+* GraphQL union types are supported:
+
+  * use `...on` 
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
@@ -1084,7 +1088,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for a single Nested Content Fragment {#sample-wknd-single-nested-fragment}
+#### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
 
 **Sample Query**
 
@@ -1096,6 +1100,93 @@ This sample query interrogates:
     fragments {
       _path
       author
+    }
+  }
+}
+```
+
+#### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
+
+```xml
+{
+  bookmarks {
+    items {
+        fragments {
+          ... on ArticleModel {
+            _path
+            author
+          }
+          ... on AdventureModel {
+            _path
+            adventureTitle
+          }
+        }
+     }
+  }
+}
+```
+
+#### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
+
+```xml
+{
+  bookmarks {
+    items {
+      attachments {
+        ... on PageRef {
+          _path
+          type
+        }
+        ... on ImageRef {
+          _path
+          width
+        }
+        ... on MultimediaRef {
+          _path
+          size
+        }
+        ... on DocumentRef {
+          _path
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          format
+        }
+      }
+    }
+  }
+}
+```
+
+#### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
+
+```xml
+{
+  bookmarks {
+    items {
+      _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+      }
     }
   }
 }

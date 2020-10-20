@@ -7,7 +7,7 @@ description: Content Fragment Models are used to create content fragments with s
 
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
-## Enable Content Fragment Models {#enable-content-fragment-models}
+## Enable Content Fragment Models for your Instance {#enable-content-fragment-models-instance}
 
 >[!CAUTION]
 >
@@ -42,12 +42,12 @@ To use other configurations (i.e. excluding global) with a comparable Assets fol
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-1. Navigate to the folder appropriate to your [configuration](#enable-content-fragment-models).
+1. Navigate to the folder appropriate to your [configuration](#enable-content-fragment-models-instance).
 1. Use **Create** to open the wizard.
 
    >[!CAUTION]
    >
-   >If the [use of content fragment models have not been enabled](#enable-content-fragment-models), the **Create** option will not be available.
+   >If the [use of content fragment models have not been enabled](#enable-content-fragment-models-instance), the **Create** option will not be available.
 
 1. Specify the **Model Title**. You can also add a **Description** if required.
 
@@ -251,6 +251,47 @@ In addition to standard properties you can define:
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
 >
 >There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
+
+## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
+
+For full control over the use of your Content Fragment Models they have a status that you can set.
+
+### Enabling a Content Fragment Model {#enabling-a-content-fragment-model}
+
+Once a model has been created it needs to be enabled so that it:
+
+* Is available for selection when creating a new Content Fragment.
+* Can be referenced from within a Content Fragment Model.
+* Is available to GraphQL; so the schema is generated.
+
+To enable a Model that is flagged as either:
+
+* **Draft** : mew (never enabled).
+* **Disabled** : has been specifically disabled.
+
+You use the **Enable** option from either:
+
+* The top toolbar, when the required Model is selected.
+* The corresponding Quick Action (mouse-over the required Model).
+
+![Enable a Draft or Disabled Model](assets/cfm-status-enable.png)
+
+### Disabling a Content Fragment Model {#disabling-a-content-fragment-model}
+
+A model can also be disabled so that:
+
+* The model is no longer available as a basis for creating *new* Content Fragments.
+* However:
+  * The GraphQL schema keeps being generated and is still queryrable (to avoid impacting JSON API).
+  * Any Content Fragments based of the model can still be queried and returned from the GraphQL endpoint.
+* The model cannot be referenced anymore, but existing references are kept untouched, and can still be queried and returned from the GraphQL endpoint.
+
+To disable a Model that is flagged as **Enabled** you use the **Disable** option from either:
+
+* The top toolbar, when the required Model is selected.
+* The corresponding Quick Action (mouse-over the required Model).
+
+![Disable an Enabled Model](assets/cfm-status-disable.png)
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
