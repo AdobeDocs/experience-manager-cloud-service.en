@@ -1,11 +1,11 @@
 ---
 title: Configuration Manager
-description: Understand how AEM manages configuration using Sling Context-Aware Configurations and the Configuration Manager.
+description: Understand AEM configurations and how they manage workspace settings in AEM.
 ---
 
 # Configuration Manager {#configuration-manager}
 
-AEM manages configuration using Sling Context-Aware Configurations and the Configuration Manager.
+AEM configurations serve to manage settings in AEM and serve as workspaces.
 
 ## What is a Configuration? {#what-is-a-configuration}
 
@@ -16,9 +16,14 @@ A configuration can be considered from two different viewpoints.
 
 Simply put, from an administrator's point of view, configurations are how you create workspaces to manage settings in AEM, whereas the developer should understand how AEM persists and looks up these configurations within the repository.
 
+Regardless from your perspective, configurations serve two main purposes in AEM:
+
+* Configurations enable certain features for groups of users.
+* Configurations define access rights for those features.
+
 ## Configurations as an Administrator {#configurations-administrator}
 
-The AEM administrator as well as authors can consider configurations as workspaces. These workspaces can be used to gather groups of settings together as well as their associated content for organizational purposes.
+The AEM administrator as well as authors can consider configurations as workspaces. These workspaces can be used to gather groups of settings together as well as their associated content for organizational purposes by implementing access rights for those features.
 
 Configurations can be created for many different features within AEM.
 
@@ -99,16 +104,16 @@ If you think of configurations as workspaces, access rights can be set on those 
 
 ## Configurations as a Developer {#configurations-developer}
 
-As a developer, it is important to know how AEM as a Cloud Service works with configurations and how it uses Sling Context-Aware Configurations to do this.
+As a developer, it is important to know how AEM as a Cloud Service works with configurations and how it processes configuration resolution.
 
 ### Separation of Configuration and Content {#separation-of-config-and-content}
 
-Although the [administrator and users may think of configurations as workplaces](#configurations-administrator) to manage different settings and content, it is important to understand that configurations and content is stored and managed separately by AEM on the back end.
+Although the [administrator and users may think of configurations as workplaces](#configurations-administrator) to manage different settings and content, it is important to understand that configurations and content are stored and managed separately by AEM in the repository.
 
-* `/content` is home to all content
-* `/conf` is home to all configuration
+* `/content` is home to all content.
+* `/conf` is home to all configuration.
 
-Content references its associated configuration via a `cq:conf` property.
+Content references its associated configuration via a `cq:conf` property. AEM performs a lookup based on the content and it's contextual `cq:conf` property to find the appropriate configuration.
 
 ### A Simple Example {#example}
 
@@ -122,9 +127,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 The starting point of all configuration lookup is a content resource, usually somewhere under `/content`. This could be a page, a component inside a page, an asset, or DAM folder. This is the actual content for which we are looking for the right configuration that applies in this context.
 
-Now with the `Conf` object in hand, we can retrieve the specific configuration item we are interested in. In this case it is `dam/imageserver`, which is a collection of settings related to the `imageserver`. Note it's a relative path. The `getItem` call returns a `ValueMap`. We then read a `bgkcolor` string property and provide a default value of "FFFFFF" in case the property (or entire config item) is not present.
+Now with the `Conf` object in hand, we can retrieve the specific configuration item we are interested in. In this case it is `dam/imageserver`, which is a collection of settings related to the `imageserver`. The `getItem` call returns a `ValueMap`. We then read a `bgkcolor` string property and provide a default value of "FFFFFF" in case the property (or entire config item) is not present.
 
-Now let's have a look at the corresponding JCR content for that:
+Now let's have a look at the corresponding JCR content:
 
 ```text
 /content/dam/wknd
@@ -142,7 +147,7 @@ Now let's have a look at the corresponding JCR content for that:
 
 In this example, we assume a WKND specific DAM folder here and a corresponding configuration. Starting at that folder `/content/dam/wknd`, we'll see that there is a string property named `cq:conf` that references the configuration that should apply for the subtree. The property will usually be set on the `jcr:content` of an asset folder or page. These `conf` links are explicit, so it is easy to follow them by just looking at the content in CRXDE.
 
-Jumping inside `/conf`, we follow the reference and see there is a `/conf/wknd` node. This is a configuration. Please note that its lookup is completely transparent to the application code - if you look at the above code it never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is completely controlled through the JCR content, and completely transparent to the application code.
+Jumping inside `/conf`, we follow the reference and see there is a `/conf/wknd` node. This is a configuration. Please note that its lookup is completely transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is completely controlled through the JCR content.
 
 We see the configuration contains a fixed-named `settings` node that contains the actual items, including the `dam/imageserver` we need in our case. Such an item can be thought of as a "settings document" and is usually represented by a `cq:Page` including a `jcr:content` holding the actual content.
 
@@ -174,14 +179,14 @@ To support this the configuration lookup in AEM has inheritance and fallback mec
    * Fixed with application deployment
    * Read-only at runtime
 1. `/libs`
-   * Granite/AEM product defaults
-   * Not to be changed by customer
+   * AEM product defaults
+   * Only changeable by Adobe, project access not allowed
    * Fixed with application deployment
    * Read-only at runtime
 
 ### Using Configurations {#using-configurations}
 
-Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the example.](#example)
+Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example.](#example)
 
 For further details about Context-Aware Configurations, examples, and how to use them, [see the Sling documentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
