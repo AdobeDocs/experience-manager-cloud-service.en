@@ -203,3 +203,4 @@ To search for assets with smart tags (regular or enhanced), use the Assets Omnis
 >
 >* [Configure Experience Manager for smart tagging](smart-tags-configuration.md)
 >* [Understand how smart tags help manage assets](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Smart tagging video assets](smart-tags-video-assets.md)
