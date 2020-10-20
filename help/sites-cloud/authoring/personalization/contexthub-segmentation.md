@@ -19,14 +19,14 @@ The [Audiences](audiences.md) console is used to manage segments for ContextHub 
 
 To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**.
 
-![Managing audiences](/help/sites-cloud/authoring/assets/contexthub-segmentation-audiences.png)
+![Managing audiences](../assets/contexthub-segmentation-audiences.png)
 
 ## Segment Editor {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
 The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the list of segments and click the **Edit** button.
 
-![Segment editor](/help/sites-cloud/authoring/assets/contexthub-segment-editor.png)
+![Segment editor](../assets/contexthub-segment-editor.png)
 
 Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
 
@@ -82,11 +82,11 @@ To define your new segment:
 
 1. After [accessing the segments](#accessing-segments), click or tap the Create button and select **Create ContextHub Segment**.
 
-   ![Add segment](/help/sites-cloud/authoring/assets/contexthub-create-segment.png)
+   ![Add segment](../assets/contexthub-create-segment.png)
 
 1. In the **New ContextHub Segment**, enter a title for the segment as well as a boost value if required and then tap or click **Create**.
 
-   ![New segment](/help/sites-cloud/authoring/assets/contexthub-new-segment.png)
+   ![New segment](../assets/contexthub-new-segment.png)
 
    Each segment has a boost parameter that is used as a weighting factor. A higher number indicates that the segment will be selected in preference to a segment with a lower number in instances where multiple segments are valid.
 
@@ -97,7 +97,7 @@ To define your new segment:
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
 1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 
-   ![Testing for people in Basel](/help/sites-cloud/authoring/assets/contexthub-comparing-property-value.png)
+   ![Testing for people in Basel](../assets/contexthub-comparing-property-value.png)
 
    Always set a **Data Type** if possible to ensure that your comparisons are evaluated properly. See [Comparisons](#comparisons) for more information.
 
@@ -123,7 +123,7 @@ The following example is used to select visitors who are considered in our Swiss
 
 You start by placing an OR container component within the default AND container. Within the OR container you you can add the property or reference components.
 
-![Segment with OR operator](/help/sites-cloud/authoring/assets/contexthub-or-operator.png)
+![Segment with OR operator](../assets/contexthub-or-operator.png)
 
 You can nest multiple AND and OR operators as required.
 
@@ -190,11 +190,11 @@ Once the segment has been defined, potential results can be tested with the help
 
 For example, our simple segment definition to identify users in Basel is based on the location of the user. Loading a specific persona that matches those criteria shows if that the segment is successfully resolved:
 
-![Segment that resolves](/help/sites-cloud/authoring/assets/contexthub-segment-resolve.png)
+![Segment that resolves](../assets/contexthub-segment-resolve.png)
 
 Or if it is not resolved:
 
-![Segment that doesn't resolve](/help/sites-cloud/authoring/assets/contexthub-segment-doesnt-resolve.png)
+![Segment that doesn't resolve](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
