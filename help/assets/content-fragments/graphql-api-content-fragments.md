@@ -13,15 +13,6 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 * Ensuring that delivery is limited to the specific requirements,
 * Allowing for bulk delivery of exactly what is needed for rendering as response to a single API query.
 
-A question that has arisen is:
-
-* "*How is the GraphQL API for AEM different from Query Builder API?*"
-
-To which we would say:
-
-* "*The GraphQL API offers total control on the JSON output, and is an industry standard for querying content. 
-  Moving forward, AEM is planning to invest in the GraphQL API.*"
-
 ## The GraphQL API {#graphql-api}
 
 *"GraphQL is a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."* See [GraphQL Foundation](https://foundation.graphql.org/).
@@ -434,3 +425,14 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
    * Name: `endpoint`
    * Primary Type: `nt:unstructured`
    * sling:resourceType: `graphql-enablement/components/endpoint`
+
+## FAQs {#faqs}
+
+A question that has arisen is:
+
+* "*How is the GraphQL API for AEM different from Query Builder API?*"
+
+To which we would say:
+
+* "*The GraphQL API offers total control on the JSON output, and is an industry standard for querying content. 
+  Moving forward, AEM is planning to invest in the GraphQL API.*"

@@ -78,6 +78,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Creating a Content Fragment](developing/headless/getting-started/create-content-fragment.md)
       + [Accessing and Delivering Content Fragments](developing/headless/getting-started/create-api-request.md)
     + Content Fragments {#content-fragments}
+      + [Headless Delivery with Content Fragments and GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
       + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
       + [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
       + [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)

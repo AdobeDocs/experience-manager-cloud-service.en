@@ -139,8 +139,9 @@ A selection of data types is available for defining your model:
     * Edit the referenced fragment directly.
     * Create a new content fragment, based on the appropriate model  
 * **JSON Object**
-  * Allows the content fragment authors to enter JSON syntax into the corresponding elements of a fragment. The JSON will be passed through, and output as JSON in GraphQL. 
-  * Includes JSON syntax highlighting in the content fragment editor.
+  * Allows the content fragment authors to enter JSON syntax into the corresponding elements of a fragment. 
+    * The JSON will be passed through, and output as JSON in GraphQL. 
+    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
 
 ## Validation {#validation}
 

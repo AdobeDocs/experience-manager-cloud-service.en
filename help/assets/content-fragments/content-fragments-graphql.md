@@ -3,7 +3,7 @@ title: Content Delivery using Content Fragments with GraphQL
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with GraphQL for Content Delivery.
 ---
 
-# Content Delivery using Content Fragments with GraphQL {#content-delivery-using-content-fragments-with-graphQL}
+# Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with GraphQL for AEM (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
@@ -222,6 +222,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * `_variations` : to reveal specific Variations within your Content Fragment
 
   * `_metadata` : to reveal metadata for your fragment
+
+  * `_locale` : to reveal the language; based on Language Manager
+
+  * `_reference` : JSON output allows the prefetching of references
 
 ## GraphQL - Sample Queries {#graphql-sample-queries}
 
@@ -959,6 +963,200 @@ query {
         "title": "Gameblitz"
       }
     ]
+  }
+}
+```
+
+### Sample Queries using the WKND Project {#sample-queries-using-wknd-project}
+
+These sample queries are based on the WKND project. 
+
+>[!NOTE]
+>
+>As the results can be extensive they are not reproduced here.
+
+#### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
+
+This sample query interrogates:
+
+* for all Content Fragments of type `article`
+* with the `path`and `author` properties.
+
+**Sample Query**
+
+```xml
+{
+  articles {
+    items {
+      _path
+      author
+    }
+  }
+}
+```
+
+#### Sample Query for Metadata {#sample-wknd-metadata}
+
+This query interrogates:
+
+* for all Content Fragments of type `adventure`
+* metadata
+
+**Sample Query**
+
+```xml
+{
+  adventures {
+    items {
+      _path,
+      _metadata {
+        stringMetadata {
+          name,
+          value
+        }
+        stringArrayMetadata {
+          name,
+          value
+        }
+        intMetadata {
+          name,
+          value
+        }
+        intArrayMetadata {
+          name,
+          value
+        }
+        floatMetadata {
+          name,
+          value
+        }
+        floatArrayMetadata {
+          name,
+          value
+        }
+        booleanMetadata {
+          name,
+          value
+        }
+        booleanArrayMetadata {
+          name,
+          value
+        }
+        calendarMetadata {
+          name,
+          value
+        }
+        calendarArrayMetadata {
+          name,
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+#### Sample Query for a single Content Fragment of a given Model {#sample-wknd-single-content-fragment-of-given-model}
+
+This sample query interrogates:
+
+* for a single Content Fragment of a given model
+* for all formats of content:
+  * HTML
+  * Markdown
+  * Plain Text
+  * JSON
+
+**Sample Query**
+
+```xml
+{
+  article (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+    _path
+    author
+    main {
+      html
+      markdown
+      plaintext
+      json
+    }
+  }
+}
+```
+
+#### Sample Query for a single Nested Content Fragment {#sample-wknd-single-nested-fragment}
+
+**Sample Query**
+
+```xml
+{
+  article (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+    _path
+    author
+    fragments {
+      _path
+      author
+    }
+  }
+}
+```
+
+#### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
+
+**Sample Query**
+
+```xml
+{
+  article (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    _path
+    author
+    main {
+      html
+      markdown
+      plaintext
+      json
+    }
+  }
+}
+```
+
+#### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
+
+**Sample Query**
+
+```xml
+{
+  articles (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+#### Sample Query for Image References {#sample-wknd-image-references}
+
+If you add two image references to a Content Fragment you can run such a sample query.
+
+**Sample Query**
+
+```xml
+{
+  articles {
+    _path
+    _references {
+      images
+      multimedia
+      archives
+      documents
+    }
   }
 }
 ```
