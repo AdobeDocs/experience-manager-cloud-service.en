@@ -150,7 +150,7 @@ A list of all allowed entries is created. If any configurations overlap ( `path`
 To create a new folder, you can either do this:
 
 * Programmatically or with CRXDE Lite
-* Using the Configuration Browser
+* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Using CRXDE Lite {#using-crxde-lite}
 
@@ -183,7 +183,7 @@ To create a new folder, you can either do this:
 
 ### Using the Configuration Browser {#using-the-configuration-browser}
 
-1. Go to **Global Navigation** -&gt; **Tools** &gt; **Configuration Browser**.
+1. Go to **Global Navigation** -&gt; **Tools** &gt; [**Configuration Browser**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    The existing folders are listed to the left including the `global` folder.
 
@@ -197,7 +197,7 @@ To create a new folder, you can either do this:
 
 >[!NOTE]
 >
->In the Configuration Browser, you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
+>In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
 
 ### ACLs and Groups {#acls-and-groups}
 

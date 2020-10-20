@@ -9,7 +9,7 @@ As a first step to getting started with headless in AEM as a Cloud Service, you 
 
 ## What is a Configuration? {#what-is-a-configuration}
 
-The Configuration Manager provides a generic configuration API, content structure, resolution mechanism for configurations in AEM.
+The Configuration Browser provides a generic configuration API, content structure, resolution mechanism for configurations in AEM.
 
 In the context of headless content management in AEM, think of a configuration as a workplace within AEM where you can create your Content Models, which define the structure of your future content and Content Fragments. You can have multiple configurations to separate these models.
 
@@ -45,4 +45,4 @@ Using this configuration, you can now move on to the second part of the getting 
 
 >![TIP]
 >
->For complete details about the Configuration Manager, see the Configuration Manager documentation.
+>For complete details about the Configuration Browser, [see the Configuration Browser documentation.](/help/implementing/developing/introduction/configurations.md)
