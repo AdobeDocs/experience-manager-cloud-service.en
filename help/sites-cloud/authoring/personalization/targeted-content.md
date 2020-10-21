@@ -268,7 +268,7 @@ When you add a component to the Target component, it provides content for a spec
 
 You can add a Target component to the page in Edit mode or in Target mode. You can add components to the Target component only in Target mode. The Target component belongs to the Personalization component group.
 
-If editing targeted content, you must click or tap **Start Targeting **before you can do so.
+If editing targeted content, you must click or tap **Start Targeting** before you can do so.
 
 1. Drag the Target component to the page where you want the offer to appear.
 1. By default, no location ID is set. Click or tap the configure cog wheel to set the location.
@@ -381,7 +381,7 @@ Open a library offer from an experience in Targeted mode to edit the offer. The 
 
 The Target step of [the targeting process](#the-targeting-process-create-target-and-goals-settings) involves mapping audiences with the experiences that you worked with in the Create step. The Target page shows the audiences that each experience is targeting. You can specify or change the audience for each experience. If you are using Adobe Target, you can also create A/B tests that allow you to target percentage of traffic for an audience to a particular experience.
 
-### If you are using AEM targeting or Adobe Target (experience targeting) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### If you are using AEM targeting or Adobe Target (experience targeting) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Audiences appear on the left side of the mapping diagram, and experiences appear on the right side.
 
@@ -403,7 +403,7 @@ Use the following procedure to associate an experience with an audience when usi
 1. (Optional) Click or tap **Edit** and then type a keyword to search for the desired segment.
 1. In the list of audiences, select the audience and click or tap **OK**.
 
-### If you are using A/B Testing (Adobe Target) ... {#if-you-are-using-a-b-testing-adobe-target}
+### If you are using A/B Testing (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 If you have an A/B test activity, audiences are on your left, the percentage that each experience is viewed is in the middle, and the experiences are on the right.
 
