@@ -80,7 +80,9 @@ The following references are available out-of-the-box to link directly to a scri
 
 To define your new segment:
 
-1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Create ContextHub Segment**.
+1. After [accessing the segments](#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment, or leave it in the root.
+
+1. Tap or click the **Create** button and select **Create ContextHub Segment**.
 
    ![Add segment](../assets/contexthub-create-segment.png)
 
@@ -179,7 +181,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Add **Script Reference** component in the desired place of the segment.
 1. Open the edit dialog of the **Script Reference** component. If [properly configured](#defining-a-script-to-reference), the script should be available in the **Script name** drop-down.
 
-## Organizing Segments into Folders {#organizing-segments}
+## Organizing Segments {#organizing-segments}
 
 If you have many segments, they can become hard to manage as a flat list. In such cases, it can be useful to create folders to manage your segments.
 
