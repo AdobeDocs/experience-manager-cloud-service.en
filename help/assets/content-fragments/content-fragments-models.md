@@ -7,6 +7,12 @@ description: Content Fragment Models are used to create content fragments with s
 
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
+To use Content Fragment Models you:
+
+1. [Enable Content Fragment Model functionality for your instance](#enable-content-fragment-models-instance)
+1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
+1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
+
 ## Enable Content Fragment Models for your Instance {#enable-content-fragment-models-instance}
 
 >[!CAUTION]
@@ -83,23 +89,15 @@ The content fragment model effectively defines the structure of the resulting co
 
     * Drag a required data type to the required location for a field:
 
-   ![data type to field](assets/cfm-models-04.png)
+      ![data type to field](assets/cfm-models-04.png)
 
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. For example:
+    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
+      Many properties are self-explanatory, for additional details see [Properties](#properties).
+      For example:
 
-   ![field properties](assets/cfm-models-05.png)
+      ![field properties](assets/cfm-models-05.png)
 
-   >[!NOTE]
-   >
-   >For the data type **Multi line text** it is possible to define the **Default Type** as either:
-   >
-   >    * **Rich Text**
-   >    * **Markdown**
-   >    * **Plain Text**
-   >
-   >If not specified, the default value **Rich Text** is used for this field.
-   >
-   >Changing the **Default Type** in a content fragment model will only take effect on an existing, related, content fragment after that fragment is opened in the editor and saved.
+
 
 1. **To Remove a Field**
 
@@ -143,9 +141,32 @@ A selection of data types is available for defining your model:
     * The JSON will be passed through, and output as JSON in GraphQL. 
     * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
 
+## Properties {#properties}
+
+Many properties are self-explanatory, additional details are below:
+
+* **Field Label**
+  Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
+
+* **Translatable**
+  Checking the "Translatable" checkbox on a field in CF model editor will
+
+  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
+  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+
+* For the data type **Multi line text** it is possible to define the **Default Type** as either:
+
+  * **Rich Text**
+  * **Markdown**
+  * **Plain Text**
+
+  If not specified, the default value **Rich Text** is used for this field.
+
+  Changing the **Default Type** in a content fragment model will only take effect on an existing, related, content fragment after that fragment is opened in the editor and saved.
+
 ## Validation {#validation}
 
-Various data types now include the possibility to define validation requirements for when content is entered:
+Various data types now include the possibility to define validation requirements for when content is entered in the resulting fragment:
 
 * **Single line text**
   * Compare against a predefined regex.
@@ -153,6 +174,11 @@ Various data types now include the possibility to define validation requirements
   * Check for specific values.
 * **Content Reference**
   * Test for specific types of content.
+  * Only images within a predefined range of width and height (in pixels) can be referenced. 
+  * Only assets of specified file size or smaller can be referenced. 
+  * Only predefined file types can be referenced.
+  * No more than the predefined number of assets can be referenced. 
+  * No more than the predefined number of fragments can be referenced.
 * **Fragment Reference**
   * Test for a specific content fragment model.
 
@@ -165,12 +191,12 @@ Content Fragments can form nested content, using either of the following data ty
   * Can be configured for a one or multiple references (in the resulting fragment).
 
 * **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
-  * References another fragment, dependent on a specific model.
+  * References other fragments, dependent on the specific models specified.
   * Allows you to include/retrieve structured data.
     >[!NOTE]
     >
     >This method is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-  * Can be configured for one or multiple references (in the resulting fragment).
+  * Can be configured for one or multiple references (in the resulting fragment)..
 
 >[!NOTE]
 >
@@ -228,7 +254,7 @@ In addition to standard properties you can define:
   * **fragmentreference** - allows the fragment author to select a single reference to a fragment
 
 * **Model Type**
-  Referenced fragments must have been created using the specified Content Fragment Model.
+  Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
 
 * **Root Path**
   This specifies a root path for any fragments referenced.
