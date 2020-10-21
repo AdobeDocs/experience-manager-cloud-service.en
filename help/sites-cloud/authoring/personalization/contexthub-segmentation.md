@@ -104,7 +104,82 @@ To define your new segment:
 1. Click **Done** to save your definition:
 1. Add more components as required. You can formulate boolean expressions using the container components for AND and OR comparisons (see [Using AND and Or Containers](#using-and-and-or-containers) below). With the segment editor you can delete components not needed anymore, or drag them to new positions within the statement.
 
-## Organize Segments into Folders {#organize-segments}
+### Using AND and OR Containers {#using-and-and-or-containers}
+
+Using the AND and OR container components, you can construct complex segments in AEM. When doing this, it helps to be aware of a few basic points:
+
+* The top level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
+* Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
+
+The following example is used to select visitors who are considered in our Swiss target group:
+
+```text
+ People in Basel
+
+ OR
+
+ People in Zürich
+```
+
+You start by placing an OR container component within the default AND container. Within the OR container you you can add the property or reference components.
+
+![Segment with OR operator](../assets/contexthub-or-operator.png)
+
+You can nest multiple AND and OR operators as required.
+
+### Using Script References {#using-script-references}
+
+By using the Script Reference component, the evaluation of a segment property can be delegated to an external script. Once the script is configured properly, it can be used as any other component of a segment condition.
+
+#### Defining a Script to Reference {#defining-a-script-to-reference}
+
+1. Add file to `contexthub.segment-engine.scripts` clientlib.
+1. Implement a function that returns a value. For example:
+
+   ```javascript
+   ContextHub.console.log(ContextHub.Shared.timestamp(), '[loading] contexthub.segment-engine.scripts - script.profile-info.js');
+
+   (function() {
+       'use strict';
+
+       /**
+        * Sample script returning profile information. Returns user info if data is available, false otherwise.
+        *
+        * @returns {Boolean}
+        */
+       var getProfileInfo = function() {
+           /* let the SegmentEngine know when script should be re-run */
+           this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
+           this.dependOn(ContextHub.SegmentEngine.Property('profile/givenName'));
+
+           /* variables */
+           var name = ContextHub.get('profile/givenName');
+           var age = ContextHub.get('profile/age');
+
+           return name === 'Joe' && age === 123;
+       };
+
+       /* register function */
+       ContextHub.SegmentEngine.ScriptManager.register('getProfileInfo', getProfileInfo);
+
+   })();
+   ```
+
+1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
+
+If the script depends on additional properties, the script should call `this.dependOn()`. For example if the script depends on `profile/age`:
+
+```javascript
+this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
+```
+
+#### Referencing a Script {#referencing-a-script}
+
+1. Create ContextHub segment.
+1. Add **Script Reference** component in the desired place of the segment.
+1. Open the edit dialog of the **Script Reference** component. If [properly configured](#defining-a-script-to-reference), the script should be available in the **Script name** drop-down.
+
+## Organizing Segments into Folders {#organizing-segments}
 
 If you have many segments, they can become hard to manage as a flat list. In such cases, it can be useful to create folders to manage your segments.
 
@@ -181,82 +256,17 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 1. Tap or click the **Open Selection Dialog** to select the new **ContextHub Path** and/or **Segments Path**.
 
+1. Using the selection dialog, select the path and tap or click **Select**.
 
+   ![Path Selection Dialog](../assets/contexthub-selection-dialog.png )
 
-### Using AND and OR Containers {#using-and-and-or-containers}
+   * The dialog offers a search field with auto-completion to assist finding the correct path.
 
-Using the AND and OR container components, you can construct complex segments in AEM. When doing this, it helps to be aware of a few basic points:
+1. Once the **ContextHub Path** and/or **Segments Path** is/are provided, tap or click **Save**.
 
-* The top level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
-* Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
-
-The following example is used to select visitors who are considered in our Swiss target group:
-
-```text
- People in Basel
-
- OR
-
- People in Zürich
-```
-
-You start by placing an OR container component within the default AND container. Within the OR container you you can add the property or reference components.
-
-![Segment with OR operator](../assets/contexthub-or-operator.png)
-
-You can nest multiple AND and OR operators as required.
-
-### Using Script References {#using-script-references}
-
-By using the Script Reference component, the evaluation of a segment property can be delegated to an external script. Once the script is configured properly, it can be used as any other component of a segment condition.
-
-#### Defining a Script to Reference {#defining-a-script-to-reference}
-
-1. Add file to `contexthub.segment-engine.scripts` clientlib.
-1. Implement a function that returns a value. For example:
-
-   ```javascript
-   ContextHub.console.log(ContextHub.Shared.timestamp(), '[loading] contexthub.segment-engine.scripts - script.profile-info.js');
-
-   (function() {
-       'use strict';
-
-       /**
-        * Sample script returning profile information. Returns user info if data is available, false otherwise.
-        *
-        * @returns {Boolean}
-        */
-       var getProfileInfo = function() {
-           /* let the SegmentEngine know when script should be re-run */
-           this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
-           this.dependOn(ContextHub.SegmentEngine.Property('profile/givenName'));
-
-           /* variables */
-           var name = ContextHub.get('profile/givenName');
-           var age = ContextHub.get('profile/age');
-
-           return name === 'Joe' && age === 123;
-       };
-
-       /* register function */
-       ContextHub.SegmentEngine.ScriptManager.register('getProfileInfo', getProfileInfo);
-
-   })();
-   ```
-
-1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
-
-If the script depends on additional properties, the script should call `this.dependOn()`. For example if the script depends on `profile/age`:
-
-```javascript
-this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
-```
-
-#### Referencing a Script {#referencing-a-script}
-
-1. Create ContextHub segment.
-1. Add **Script Reference** component in the desired place of the segment.
-1. Open the edit dialog of the **Script Reference** component. If [properly configured](#defining-a-script-to-reference), the script should be available in the **Script name** drop-down.
+1. The segment will appear under the path provided.
+   * How you sort your columns will affect where in the list segment appears.
+   * You can tap or click the column headings to adjust your sort.
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
