@@ -97,8 +97,6 @@ The content fragment model effectively defines the structure of the resulting co
 
       ![field properties](assets/cfm-models-05.png)
 
-
-
 1. **To Remove a Field**
 
    Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
@@ -143,10 +141,16 @@ A selection of data types is available for defining your model:
 
 ## Properties {#properties}
 
-Many properties are self-explanatory, additional details are below:
+Many properties are self-explanatory, for certain properites additional details are below:
+
+* **Render As**
+  The various options for realizing/rendering the field in a fragment; often as single or multiple instances.
 
 * **Field Label**
   Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
+
+* **Validation**
+  Basic valida†¡on is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.
 
 * **Translatable**
   Checking the "Translatable" checkbox on a field in CF model editor will
@@ -346,6 +350,7 @@ To publish a content fragment model:
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Publish** from the toolbar.
+   The published status will be indicated in the console. 
 
    >[!NOTE]
    >
