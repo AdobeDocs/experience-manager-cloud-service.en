@@ -21,10 +21,6 @@ The author environment provides the mechanisms for creating, updating, and revie
 
 On the author environment the functionality of AEM is made available through AEM's authoring UI. For the publish environment you design the entire look-and-feel of the interface made available to your users.
 
->[!NOTE]
->
->AEM itself is used to publish the AEM documentation.
-
 ## Author Environment {#author-environment}
 
 The author works in what is known as the **author environment**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It requires the author to login, using an account that has been assigned the appropriate access rights.
