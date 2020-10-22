@@ -246,29 +246,9 @@ If you have many segments, they can become hard to manage as a flat list. In suc
    * Tap or click **Force Delete** to confirm.
    * Tap or click **Cancel** to abort.
 
-### Add Existing Segment to a Folder {#add-existing-segment-to-folder}
-
-1. After [accessing the segments](#accessing-segments), click or tap the segment you wish to modify to select it and then tap or click **Properties** in the toolbar.
-
-   ![Select segment](../assets/contexthub-select-segment.png)
-
-1. In the **Segment Properties** window, choose the **Personalization** tab.
-
-   ![Personalization tab of Segment Properties window](../assets/contexthub-edit-segment-properties.png)
-
-1. Tap or click the **Open Selection Dialog** to select the new **ContextHub Path** and/or **Segments Path**.
-
-1. Using the selection dialog, select the path and tap or click **Select**.
-
-   ![Path Selection Dialog](../assets/contexthub-selection-dialog.png )
-
-   * The dialog offers a search field with auto-completion to assist finding the correct path.
-
-1. Once the **ContextHub Path** and/or **Segments Path** is/are provided, tap or click **Save**.
-
-1. The segment will appear under the path provided.
-   * How you sort your columns will affect where in the list segment appears.
-   * You can tap or click the column headings to adjust your sort.
+>[!NOTE]
+>
+> It is not possible to move a segment from one folder to another.
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
