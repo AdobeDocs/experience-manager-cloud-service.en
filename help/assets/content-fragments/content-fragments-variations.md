@@ -154,10 +154,29 @@ You can also open the full-screen editor for further [actions](#actions).
 
 If the Content Fragment Model contains Fragment References, your fragment authors may have additional options:
 
-* Edit Content Fragment
-* New Content Fragment
+* [Edit Content Fragment](#fragment-references-edit-content-fragment)
+* [New Content Fragment](#fragment-references-new-content-fragment)
 
 ![Fragment References](assets/cfm-variations-12.png)
+
+#### Edit Content Fragment {#fragment-references-edit-content-fragment}
+
+The option **Edit Content Fragment** will open
+a new browser tab, with the content fragment open in the content fragment editor.
+
+#### New Content Fragment {#fragment-references-new-content-fragment}
+
+The option **New Content Fragment** will allow you to create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
+
+You will then be able to create a new fragment by:
+
+1. Navigating to, and selecting the required folder.
+1. Selecting **Next**.
+1. Specifying properties; for example **Title**.
+1. Selecting **Create**.
+1. Finally:
+   1. **Done** will return (to the original fragment) and reference the new fragment.
+   1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
 
 ### Viewing Key Statistics {#viewing-key-statistics}
 
