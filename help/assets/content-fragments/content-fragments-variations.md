@@ -32,7 +32,9 @@ Perform a range of other actions depending on the data-type being edited; for ex
 
 ## Authoring your Content {#authoring-your-content}
 
-When you open your content fragment for editing, the **Variations** tab will be open by default. Here you can author the content, for Master or any variations you have. You can:
+When you open your content fragment for editing, the **Variations** tab will be open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields, of various data-types, that were defined in the content model. 
+
+You can:
 
 * make edits directly in the **Variations** tab
 
@@ -40,18 +42,13 @@ When you open your content fragment for editing, the **Variations** tab will be 
 
 * for **Multi line text** fields you can also open the [full-screen editor](#full-screen-editor) to:
 
-    * select the [Format](#formats)
-    * see more editing options (for [Rich Text](#rich-text) format)
-
-    * access a range of [actions](#actions)
+  * select the [Format](#formats)
+  * see more editing options (for [Rich Text](#rich-text) format)
+  * access a range of [actions](#actions)
 
 For example:
 
-* Editing a fragment with structured content
-
-  A structured fragment contains various fields, of various data-types, that were defined in the content model. For any multi-line fields the [full-screen editor](#full-screen-editor) is available.
-
-  ![full screen editor](assets/cfm-variations-02.png)
+![full screen editor](assets/cfm-variations-02.png)
 
 ### Full Screen Editor {#full-screen-editor}
 
