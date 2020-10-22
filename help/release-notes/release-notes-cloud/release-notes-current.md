@@ -39,7 +39,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-Follow this section to learn about what is new and the updates for Content Transfer Tool Release v1.1.12.
+Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### What is New {#what-is-new-ctt}
 
