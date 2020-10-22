@@ -35,7 +35,10 @@ Perform a range of other actions depending on the data-type being edited; for ex
 When you open your content fragment for editing, the **Variations** tab will be open by default. Here you can author the content, for Master or any variations you have. You can:
 
 * make edits directly in the **Variations** tab
-* open the [full-screen editor](#full-screen-editor) to:
+
+  * each data type provides different editing options
+
+* for **Multi line text** fields you can also open the [full-screen editor](#full-screen-editor) to:
 
     * select the [Format](#formats)
     * see more editing options (for [Rich Text](#rich-text) format)
@@ -50,13 +53,17 @@ For example:
 
   ![full screen editor](assets/cfm-variations-02.png)
 
-### Full-Screen Editor {#full-screen-editor}
+### Full Screen Editor {#full-screen-editor}
 
-When editing a multi-line text field you can open the full-screen editor; tap or click within the actual text, then select the following action icon:
+When editing a multi-line text field you can open the full screen editor; tap or click within the actual text, then select the following action icon:
 
 ![full screen editor icon](assets/cfm-variations-03.png)
 
-The full-screen editor provides:
+This will open the full screen text editor:
+
+![full screen editor icon](assets/cfm-variations-fullscreentexteditor.png)
+
+The full screen text editor provides:
 
 * Access to various [actions](#actions)
 * Depending on the [format](#formats), additional formatting options ([Rich Text](#rich-text))
@@ -71,7 +78,7 @@ The following actions are also available (for all the [formats](#formats)) when 
 
 * [Annotate](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) your text
 
-* [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
+* [Insert assets into your fragment](#inserting-assets-into-your-fragment)
 
 * [Show Text Statistics](#viewing-key-statistics)
 
@@ -106,7 +113,7 @@ Rich text editing allows you to format:
     * Paste Text/from Word
     * Insert a table
     * Paragraph style: Paragraph, Heading 1/2/3
-    * [Insert visual assets](#inserting-assets-into-your-fragment)
+    * [Insert assets](#inserting-assets-into-your-fragment)
     * Search
     * Find/Replace
     * Spellchecker

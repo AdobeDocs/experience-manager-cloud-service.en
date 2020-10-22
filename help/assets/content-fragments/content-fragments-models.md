@@ -144,7 +144,7 @@ A selection of data types is available for defining your model:
 Many properties are self-explanatory, for certain properites additional details are below:
 
 * **Render As**
-  The various options for realizing/rendering the field in a fragment; often as single or multiple instances.
+  The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
 
 * **Field Label**
   Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
@@ -167,6 +167,8 @@ Many properties are self-explanatory, for certain properites additional details 
   If not specified, the default value **Rich Text** is used for this field.
 
   Changing the **Default Type** in a content fragment model will only take effect on an existing, related, content fragment after that fragment is opened in the editor and saved.
+
+* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
 
 ## Validation {#validation}
 
