@@ -21,13 +21,13 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
     + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
   + Using Cloud Manager {#using-cloud-manager}
-    + [Managing Environments](cloud-manager/manage-environments.md)
-    + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
-    + [Deploying your Code](cloud-manager/deploy-code.md)
+    + [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
+    + [Configuring your CI/CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
+    + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
   + Understanding your Test Results {#test-results}
     + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
     + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
-    + [Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)
+    + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)
     + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
     + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)  
   + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
