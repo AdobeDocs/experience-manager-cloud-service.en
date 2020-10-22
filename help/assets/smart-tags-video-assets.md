@@ -5,15 +5,15 @@ description: Smart tagging video assets automates the asset tagging by applying 
 
 # Smart tag your video assets {#video-smart-tags}
 
-Purpose: for content velocity...
-
-[!DNL Adobe Experience Manager] as a Cloud Service supports automated tagging of video assets assisted by artificial intelligence. Tagging the videos manually can be time-consuming. However, Adobe Sensei powered video smart tagging feature uses artificial intelligence models to analyze video content and add tags to the video assets. Thereby reducing time for DAM users to deliver rich experiences to their customers.
+The expanding need for new content calls for reduced manual efforts to deliver compelling digital experiences in no time. [!DNL Adobe Experience Manager] as a Cloud Service supports automated tagging of video assets assisted by artificial intelligence. Tagging the videos manually can be time-consuming. However, Adobe Sensei powered video smart tagging feature uses artificial intelligence models to analyze video content and add tags to the video assets. Thereby reducing time for DAM users to deliver rich experiences to their customers. Adobe's machine learning service generates two sets of tags for a video. While, one set corresponds to objects, scenes, and attributes in that video; the other set relates to actions such as drinking, running, and jogging.
 
 The video assets with file formats MP4, MKV, MOV, AVI, FLV, and WMV are supported for smart tagging. Moreover, the functionality supports tagging of videos up to the size 300 MB. The automated tagging of video assets occurs as standard asset processing after a video is uploaded, or when a re-processing is triggered. The video tagging process runs in parallel to thumbnail creation, and metadata extraction in the Asset Compute service, thereby increasing the processing time for video assets. You can, therefore, [opt-out of video smart tagging](#opt-out-video-smart-tagging) on a folder.
 
 ## Smart tagging videos on ingestion {#smart-tag-assets-on-ingestion}
 
 When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a Cloud Service, the videos undergo ![processing](assets/do-not-localize/assetprocessing.png). Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset Compute Service leverages Adobe Sensei to create these smart tags.
+
+![Smart Tags are added to videos and seen in Basic tab of asset Properties](assets/smart-tags-added-to-videos.png)
 
 >[!IMPORTANT]
 >
@@ -61,6 +61,8 @@ The search results display the video assets based on the tag you specified.
 
 To know more about how to moderate the smart tags for assets, see [Manage smart tags](smart-tags.md#manage-smart-tags-and-searches).
 
+![Moderate video smart tags](assets/manage-video-smart-tags.png)
+
 >[!NOTE]
 >
 >Any tags that are moderated using the steps in [Manage smart tags](smart-tags.md#manage-smart-tags-and-searches) are not remembered on reprocessing of the asset. The original set of tags are displayed again.
@@ -77,24 +79,34 @@ To opt out of automated video smart tags generation for assets uploaded to speci
 
     When the [!UICONTROL Inherited] option is selected, the inherited folder path is also visible along with the information whether it is set to [!UICONTROL Enable] or [!UICONTROL Disable].
 
+    ![Disable video smart tagging](assets/disable-video-tagging.png)
+
 1. Select [!UICONTROL Disable] to opt out of smart tagging of videos uploaded to the folder.
 
 ## Confidence score {#confidence-score-video-tag}
 
-General instructions on, Configuring OSGi for AEM as a Cloud Service: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html. This contains information how to configure services and where to add those configuration files in the CloudManager Git repository associated with the customer environment. 
+[!DNL Adobe Experience Manager] applies a minimum confidence threshold for object and action smart tags to avoid having too many tags for each video asset, which slows down indexing. Your asset search results are ranked based on the confidence scores, which generally improve search results beyond what an inspection of the assigned tags of any video asset suggests. Inaccurate tags often have low confidence scores so they seldom appear at the top of the Smart Tags list for assets.
 
-The confidence score OSGI configuration must be added to the project deployed to AEM as a Cloud Service via Cloud Manager:
+>[!NOTE]
+>
+> A maximum of 100 smart tags are displayed for an asset in [!UICONTROL Basic] tab of asset [!UICONTROL Properties].
 
-In the AEM project (ui.config since Archetype 24, or previously ui.apps) the config.author OSGi configuration, include a config file named com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json with the following contents:
+The default threshold for action and object tags in [!DNL Adobe Experience Manager] is 0.7 (should be value between 0 and 1). If some video assets are not tagged by a specific tag, then it indicates that the algorithm is less than 70% confident in the predicted tags. The default threshold might not always be optimal for all the users. You can, therefore, change the confidence score value in OSGI configuration.
 
-inside the ui.config Maven Project
-/apps/example/osgiconfig/config.author/com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json
+To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a Cloud Service through Cloud Manager:
 
+* In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+
+```json
 {
   "minVideoActionConfidenceScore":0.5,
   "minVideoObjectConfidenceScore":0.5,
 }
-Confidence score value in OSGI config should have a value between 0 and 1. Default value is set to 0.7.
+```
+
+>[!NOTE]
+>
+>Manual tags are assigned a confidence of 100% (maximum confidence). Therefore, if there are images with manual tags that match the search query, they are displayed before smart tags matching the search query.
 
 ## Limitations {#video-smart-tagging-limitations}
 
