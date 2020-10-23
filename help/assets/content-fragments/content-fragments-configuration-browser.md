@@ -1,13 +1,13 @@
 ---
-title: Content Fragments - Configuration Manager
+title: Content Fragments - Configuration Browser
 description: Learn how to enable certain Content Fragment functionality in the Configuration Browser.
 ---
 
-# Content Fragments - Configuration Manager{#content-fragments-configuration-browser}
+# Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
 
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
-Before using Content Fragments you need to use the Configuration Manager to:
+Before using Content Fragments you need to use the Configuration Browser to:
 
 * **Content Fragment Models** - mandatory
 * **GraphQL Persistent Queries** - optional
