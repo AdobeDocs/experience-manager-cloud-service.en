@@ -80,7 +80,7 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 ### What is New {#what-is-new-cra}
 
-* The Cloud Readiness Analyzer (CRA) has a start state console that displays an explicit **Generate Report** button for the user to click to execute the CRA.
+* The [Cloud Readiness Analyzer (CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) has a start state console that displays an explicit **Generate Report** button for the user to click to execute the CRA.
 
 * The CRA UI displays progress while it is running. It displays items being analyzed and findings found during execution.
 
@@ -96,7 +96,7 @@ Follow this section to learn about what is new and the updates for Content Trans
 
 ### What is New {#what-is-new-ctt}
 
-* The Content Transfer Tool (CTT) supports Azure Blob Store Data Store.
+* The [Content Transfer Tool (CTT)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) supports Azure Blob Store Data Store.
 
 * The CTT user interface has an auto-reload feature that reloads the overview page every 30 seconds.
 
