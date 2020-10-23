@@ -9,51 +9,19 @@ Content Fragment Models define the structure of content for your [content fragme
 
 To use Content Fragment Models you:
 
-1. [Enable Content Fragment Model functionality for your instance](#enable-content-fragment-models-instance)
+1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-manager.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
-
-## Enable Content Fragment Models for your Instance {#enable-content-fragment-models-instance}
-
->[!CAUTION]
->
->If do you not enable **Content Fragment Models** the **Create** option will not be available for creating new models.
-
-To enable content fragment models you need to:
-
-* Enable the use of content fragment models in the configuration browser
-* Apply the configuration to your Assets folder
-
-### Enable Content Fragment Models in Configuration Browser {#enable-content-fragment-models-in-configuration-browser}
-
-To [create a new Content Fragment Model](#creating-a-content-fragment-model) you **must** first enable them using the [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
-
-1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
-2. Select the location appropriate to your website.
-3. Use **Create** to open the dialog, where you:
-
-    1. Specify a **Title**.
-    2. Select **Content Fragment Models** to enable their use.
-
-   ![configuration](assets/cfm-models-01.png)
-
-4. Select **Create** to save the definition.
-
-### Apply the Configuration to your Assets Folder {#apply-the-configuration-to-your-assets-folder}
-
-When the configuration **global** is enabled for content fragment models, then any models that users create can be used in any Assets folder.
-
-To use other configurations (i.e. excluding global) with a comparable Assets folder, then you have to define the connection. This is done by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-1. Navigate to the folder appropriate to your [configuration](#enable-content-fragment-models-instance).
+1. Navigate to the folder appropriate to your [configuration](/help/assets/content-fragments/content-fragments-configuration-manager.md).
 1. Use **Create** to open the wizard.
 
    >[!CAUTION]
    >
-   >If the [use of content fragment models have not been enabled](#enable-content-fragment-models-instance), the **Create** option will not be available.
+   >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-manager.md), the **Create** option will not be available.
 
 1. Specify the **Model Title**. You can also add a **Description** if required.
 
