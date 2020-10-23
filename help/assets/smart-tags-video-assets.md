@@ -1,19 +1,21 @@
 ---
 title: Smart tag your video assets
-description: Smart tagging video assets automates the asset tagging by applying contextual and descriptive business tags using Adobe Sensei services.
+description: Smart tagging video assets automates the asset tagging by applying contextual and descriptive tags using Adobe Sensei services.
 ---
 
 # Smart tag your video assets {#video-smart-tags}
 
 The expanding need for new content calls for reduced manual efforts to deliver compelling digital experiences in no time. [!DNL Adobe Experience Manager] as a Cloud Service supports automated tagging of video assets assisted by artificial intelligence. Tagging the videos manually can be time-consuming. However, Adobe Sensei powered video smart tagging feature uses artificial intelligence models to analyze video content and add tags to the video assets. Thereby reducing time for DAM users to deliver rich experiences to their customers. Adobe's machine learning service generates two sets of tags for a video. While, one set corresponds to objects, scenes, and attributes in that video; the other set relates to actions such as drinking, running, and jogging.
 
-The video assets with file formats MP4, MKV, MOV, AVI, FLV, and WMV are supported for smart tagging. Moreover, the functionality supports tagging of videos up to the size 300 MB. The automated tagging of video assets occurs as standard asset processing after a video is uploaded, or when a re-processing is triggered. The video tagging process runs in parallel to thumbnail creation, and metadata extraction in the Asset Compute service, thereby increasing the processing time for video assets. You can, therefore, [opt-out of video smart tagging](#opt-out-video-smart-tagging) on a folder.
+The video assets with file formats MP4, MKV, MOV, AVI, FLV, and WMV are supported for smart tagging. Moreover, the functionality allows tagging of videos up to the size 300 MB. The automated tagging of video assets occurs as standard asset processing (along with thumbnail creation and metadata extraction) after a video is uploaded, or when a re-processing is triggered. The smart tags are displayed in descending order of their [confidence score](#confidence-score-video-tag) in asset [!UICONTROL Properties]. Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a Cloud Service. However, you can [opt-out of video smart tagging](#opt-out-video-smart-tagging) on a folder.
 
 ## Smart tagging videos on ingestion {#smart-tag-assets-on-ingestion}
 
 When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a Cloud Service, the videos undergo ![processing](assets/do-not-localize/assetprocessing.png). Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset Compute Service leverages Adobe Sensei to create these smart tags.
 
 ![Smart Tags are added to videos and seen in Basic tab of asset Properties](assets/smart-tags-added-to-videos.png)
+
+The applied smart tags are sorted in descending order of [confidence score](#confidence-score-video-tag), combined for object and action tags, within [!UICONTROL Smart Tags].
 
 >[!IMPORTANT]
 >
@@ -35,7 +37,7 @@ To smart tag video assets, or folders (including subfolders) of assets that alre
 
 1. Select ![reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) from the toolbar and select the [!UICONTROL Full Process] option.
 
-Once the process completes, navigate to the [!UICONTROL Properties] page of any video asset within the folder. The automatically added tags are seen in [!UICONTROL Smart Tags] section in [!UICONTROL Basic] tab.
+Once the process completes, navigate to the [!UICONTROL Properties] page of any video asset within the folder. The automatically added tags are seen in [!UICONTROL Smart Tags] section in [!UICONTROL Basic] tab. These applied smart tags are sorted in descending order of [confidence score](#confidence-score-video-tag).
 
 ## Search for smart tagged videos {#search-smart-tagged-videos}
 
@@ -87,10 +89,6 @@ To opt out of automated video smart tags generation for assets uploaded to speci
 
 [!DNL Adobe Experience Manager] applies a minimum confidence threshold for object and action smart tags to avoid having too many tags for each video asset, which slows down indexing. Your asset search results are ranked based on the confidence scores, which generally improve search results beyond what an inspection of the assigned tags of any video asset suggests. Inaccurate tags often have low confidence scores so they seldom appear at the top of the Smart Tags list for assets.
 
->[!NOTE]
->
-> A maximum of 100 smart tags are displayed for an asset in [!UICONTROL Basic] tab of asset [!UICONTROL Properties].
-
 The default threshold for action and object tags in [!DNL Adobe Experience Manager] is 0.7 (should be value between 0 and 1). If some video assets are not tagged by a specific tag, then it indicates that the algorithm is less than 70% confident in the predicted tags. The default threshold might not always be optimal for all the users. You can, therefore, change the confidence score value in OSGI configuration.
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a Cloud Service through Cloud Manager:
@@ -106,7 +104,7 @@ To add the confidence score OSGI configuration to the project deployed to [!DNL 
 
 >[!NOTE]
 >
->Manual tags are assigned a confidence of 100% (maximum confidence). Therefore, if there are images with manual tags that match the search query, they are displayed before smart tags matching the search query.
+>Manual tags are assigned a confidence of 100% (maximum confidence). Therefore, if there are video assets with manual tags that match the search query, they are displayed before smart tags matching the search query.
 
 ## Limitations {#video-smart-tagging-limitations}
 
@@ -114,7 +112,9 @@ To add the confidence score OSGI configuration to the project deployed to [!DNL 
 
 * Tagging progress is not shown.
 
-* Only the videos of size not more than 300 MB are suitable for tagging. The Adobe Sensei service smart tag the videos meeting this criteria and skip tagging other videos in a folder.
+* Only the videos of size not more than 300 MB are suitable for tagging. The Adobe Sensei service smart tags the videos meeting this criteria and skip tagging other videos in a folder.
+
+* Some AVI codecs are not supported by Adobe Sensei service. Therefore, smart tags for some AVI files might not generate successfully.
 
 >[!MORELIKETHIS]
 >
