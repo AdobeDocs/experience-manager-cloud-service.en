@@ -80,7 +80,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + Content Fragments {#content-fragments}
       + [Headless Delivery with Content Fragments and GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
       + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
-      + [Enable Content Fragment Functionality for your Instance](/help/assets/content-fragments/content-fragments-configuration-manager.md)
+      + [Enable Content Fragment Functionality for your Instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
       + [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md)

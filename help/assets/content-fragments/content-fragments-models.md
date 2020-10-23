@@ -9,19 +9,19 @@ Content Fragment Models define the structure of content for your [content fragme
 
 To use Content Fragment Models you:
 
-1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-manager.md)
+1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-1. Navigate to the folder appropriate to your [configuration](/help/assets/content-fragments/content-fragments-configuration-manager.md).
+1. Navigate to the folder appropriate to your [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Use **Create** to open the wizard.
 
    >[!CAUTION]
    >
-   >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-manager.md), the **Create** option will not be available.
+   >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
 1. Specify the **Model Title**. You can also add a **Description** if required.
 

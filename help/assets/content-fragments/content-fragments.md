@@ -18,7 +18,7 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 
 This and the following pages cover the tasks for creating, configuring, maintaining and using your content fragments:
 
-* [Enable Content Fragment functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-manager.md)
+* [Enable Content Fragment functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - enabling, creating and defining your models
 * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - create your content fragments; then edit, publish and reference
 * [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md) - author the fragment content and create variations of the Master

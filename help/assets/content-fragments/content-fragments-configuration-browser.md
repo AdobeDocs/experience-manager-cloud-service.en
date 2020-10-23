@@ -1,9 +1,9 @@
 ---
 title: Content Fragments - Configuration Manager
-description: Learn how to enable certain Content Fragment functionality in the Configuration Manager.
+description: Learn how to enable certain Content Fragment functionality in the Configuration Browser.
 ---
 
-# Content Fragments - Configuration Manager{#content-fragments-configuration-manager}
+# Content Fragments - Configuration Manager{#content-fragments-configuration-browser}
 
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
@@ -18,12 +18,12 @@ Before using Content Fragments you need to use the Configuration Manager to:
 
 To enable content fragment functionality you need to:
 
-* Enable the use of content fragment functionality in the configuration browser
+* Enable the use of content fragment functionality via the configuration browser
 * Apply the configuration to your Assets folder
 
 ### Enable Content Fragment Functionality in Configuration Browser {#enable-content-fragment-functionality-in-configuration-browser}
 
-To [use certain Content Fragment functionality](#creating-a-content-fragment-model) you **must** first enable them using the [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+To [use certain Content Fragment functionality](#creating-a-content-fragment-model) you **must** first enable them via the [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 2. Select the location appropriate to your website.
