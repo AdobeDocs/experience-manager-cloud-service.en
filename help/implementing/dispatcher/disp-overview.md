@@ -27,7 +27,7 @@ The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and prov
 
 ## Downloading and extracting the Tools {#extracting-the-sdk}
 
-The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new dispatcher Tools version, can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
+The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new dispatcher Tools version, can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
 /Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md
 Unzip the SDK, which bundles Dispatcher Tools for both macOS/Linux and Windows.
 
