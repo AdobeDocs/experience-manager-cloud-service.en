@@ -27,18 +27,20 @@ The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and prov
 
 ## Downloading and extracting the Tools {#extracting-the-sdk}
 
-The Dispatcher Tools can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal . Note that access to the SDK listings is limited to those with AEM Managed Services or AEM as a Cloud Service environments. Any new configuration available in that new dispatcher Tools version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
+The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new dispatcher Tools version, can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md
+Unzip the SDK, which bundles Dispatcher Tools for both macOS/Linux and Windows.
 
-**For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
+**For macOS/Linux**, make the dispatcher tool artifact executable and run it. It will self extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**For Windows**, download the zip archive and extract it.
+**For Windows**, extract the Dispatcher Tooling zip archive.
 
 ## File Structure {#file-structure}
 
@@ -386,7 +388,7 @@ The script does the following:
 
 It is also possible to test drive your Apache and Dispatcher configuration locally. It requires the docker to be installed locally and your configuration to pass the validation as described above.
 
-Execute the validator tool, by using the "`-d`" parameter which outputs a folder with all the configuration files needed by the dispatcher. Then, the `docker_run.sh` script can point to that folder. By providing the port number (in the example below, 8080) to expose the dispatcher endpoint, it starts the container with your configuration.
+Execute the validator tool (note that it is different from the `validator.sh` mentioned earlier), by using the `-d` parameter which outputs a folder with all the dispatcher configuration files. Then execute the `docker_run.sh` script, passing that folder as an argument. By providing the port number (here: 8080) to expose the dispatcher endpoint, a Docker container is started, running the dispatcher with your configuration.
 
 ```
 
