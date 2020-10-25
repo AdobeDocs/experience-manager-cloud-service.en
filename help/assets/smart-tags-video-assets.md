@@ -9,7 +9,7 @@ The expanding need for new content calls for reduced manual efforts to deliver c
 
 The video assets with file formats MP4, MKV, MOV, AVI, FLV, and WMV are supported for smart tagging. Moreover, the functionality allows tagging of videos up to the size 300 MB. The automated tagging of video assets occurs as standard asset processing (along with thumbnail creation and metadata extraction) after a video is uploaded, or when a re-processing is triggered. The smart tags are displayed in descending order of their [confidence score](#confidence-score-video-tag) in asset [!UICONTROL Properties]. Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a Cloud Service. However, you can [opt-out of video smart tagging](#opt-out-video-smart-tagging) on a folder.
 
-## Smart tagging videos on ingestion {#smart-tag-assets-on-ingestion}
+## Smart tagging videos on upload {#smart-tag-assets-on-ingestion}
 
 When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a Cloud Service, the videos undergo ![processing](assets/do-not-localize/assetprocessing.png). Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset Compute Service leverages Adobe Sensei to create these smart tags.
 
