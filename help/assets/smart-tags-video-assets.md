@@ -35,7 +35,9 @@ To smart tag video assets, or folders (including subfolders) of assets that alre
 
 1. Select the entire folder or specific video assets.
 
-1. Select ![reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) from the toolbar and select the [!UICONTROL Full Process] option.
+1. Select ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets icon] and select the [!UICONTROL Full Process] option.
+
+![Reprocess Assets to add tags to videos existing DAM repository](assets/reprocess.gif)
 
 Once the process completes, navigate to the [!UICONTROL Properties] page of any video asset within the folder. The automatically added tags are seen in [!UICONTROL Smart Tags] section in [!UICONTROL Basic] tab. These applied smart tags are sorted in descending order of [confidence score](#confidence-score-video-tag).
 
@@ -43,7 +45,7 @@ Once the process completes, navigate to the [!UICONTROL Properties] page of any 
 
 To search for the video assets based on the auto generated smart tags, use [Omnisearch](search-assets.md#search-assets-in-aem):
 
-1. Select the search icon ![search icon](assets/do-not-localize/search_icon.png) from the toolbar to display the Omnisearch field.
+1. Select the search icon ![search icon](assets/do-not-localize/search_icon.png) to display the Omnisearch field.
 
 1. Specify a tag, in the Omnisearch field, that you have not explicitly added to a video.
 
