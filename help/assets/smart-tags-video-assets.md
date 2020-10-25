@@ -71,9 +71,9 @@ To know more about how to moderate the smart tags for assets, see [Manage smart 
 >
 >Any tags that are moderated using the steps in [Manage smart tags](smart-tags.md#manage-smart-tags-and-searches) are not remembered on reprocessing of the asset. The original set of tags are displayed again.
 
-## Opt out of video smart tagging on asset ingestion {#opt-out-video-smart-tagging}
+## Opt out of video smart tagging {#opt-out-video-smart-tagging}
 
-As the automated tagging of videos runs in parallel to other asset processing tasks like thumbnail creation and metadata extraction, it can be time consuming. To expedite the asset processing you can opt out of video smart tagging at folder level.
+As the automated tagging of videos runs in parallel to other asset processing tasks like thumbnail creation and metadata extraction, it can be time consuming. To expedite the asset processing you can opt out of video smart tagging on upload at folder level.
 
 To opt out of automated video smart tags generation for assets uploaded to specific folder:
 
@@ -86,6 +86,10 @@ To opt out of automated video smart tags generation for assets uploaded to speci
     ![Disable video smart tagging](assets/disable-video-tagging.png)
 
 1. Select [!UICONTROL Disable] to opt out of smart tagging of videos uploaded to the folder.
+
+>[!IMPORTANT]
+>
+>If you have opted out of tagging videos on a folder at the time of upload and want to smart tag the videos after upload, then **[!UICONTROL Enable Smart Tags for Videos]** from [!UICONTROL Asset Processing] tab of the folder [!UICONTROL Properties] and use [[!UICONTROL Reprocess Asset] option](#smart-tag-existing-videos) to add smart tags to the video.
 
 ## Confidence score {#confidence-score-video-tag}
 
