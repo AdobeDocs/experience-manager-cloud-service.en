@@ -58,7 +58,7 @@ The core features in [!DNL Assets] are more accessible than before and are regul
 
 ## Support for use of keyboard {#keyboard-use}
 
-Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the UI control using a keyboard and pressing Return and by pressing `alt + 2` keyboard shortcut.
+Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the UI control using a keyboard and pressing `Return` and by pressing `Alt + 2` keyboard shortcut.
 
 <!-- TBD items:
 
