@@ -12,18 +12,16 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
 The following release (2020.11.0) will be on November 26.
 
-<!-- The release is moved to Wed, 28 Oct just this once.
--->
-
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Content to come
+* **[!DNL Adobe Sensei] powered video smart tagging**: By leveraging AI models to analyze video content for object and action-specific tags, DAM users can spend less time adding tags and more time making use of the rich information exposed to deliver the right experience to customers.
 
-### Bugs Fixed {#bugs-fixed-assets}
+<!-- ### Bugs Fixed {#bugs-fixed-assets}
 
 Content to come
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -35,7 +33,7 @@ Content to come
 
 ### Bug Fixes {#bug-fixes-commerce}
 
-* GraphQL requests in the Product Console and Pickers were done via HTTP POST. This has been fixed to ensure that the Apollo GraphQL client respects the setting in the GraphQL client OSGi configuration to support GET requests if configured. 
+* GraphQL requests in the Product Console and Pickers were done via HTTP POST. This has been fixed to ensure that the Apollo GraphQL client respects the setting in the GraphQL client OSGi configuration to support GET requests if configured.
 
 * CIF Cloud config UI displayed "Save & Close" buttons for configs in /lib and /apps/. But these are read-only hence UI fixed to display "Close" button only.
 
@@ -45,7 +43,7 @@ Content to come
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
-* The Cloud Manager build container now supports both Java 8 and Java 11. 
+* The Cloud Manager build container now supports both Java 8 and Java 11.
 
 * The number of environment variables per environment has been increased to 200.
 
@@ -55,7 +53,7 @@ Content to come
 
 * The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
 
-* The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment. 
+* The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
 
 * The Cancel and Save buttons on the Non-Production Pipeline Edit page were not always visible.
 
@@ -63,9 +61,9 @@ Content to come
 
 * When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
 
-* Some large pipeline step logs could not be consistently downloaded through the user interface. 
+* Some large pipeline step logs could not be consistently downloaded through the user interface.
 
-* The validation of environment names had an off-by-one error. 
+* The validation of environment names had an off-by-one error.
 
 * The Environments page would sometimes show publish and dispatcher segments when none was present.
 
@@ -80,6 +78,3 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### Bug Fixes {#ctt-bug-fixes}
 
 * Content Transfer Tool was skipping content files if the migration set contained paths that had the partially similar file names. This has been fixed.
-
-
-
