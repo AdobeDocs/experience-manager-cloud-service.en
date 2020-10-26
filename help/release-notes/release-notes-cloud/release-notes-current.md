@@ -19,10 +19,11 @@ The following release (2020.11.0) will be on November 26.
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-
+* Content to come
 
 ### Bugs Fixed {#bugs-fixed-assets}
 
+Content to come
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 

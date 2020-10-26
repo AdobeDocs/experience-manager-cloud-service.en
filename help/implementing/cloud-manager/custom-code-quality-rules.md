@@ -9,8 +9,7 @@ description: Custom Code Quality Rules - Cloud Services
 This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
 >[!NOTE]
->
->The code samples provided here are only for illustrative purposes.
+>The code samples provided here are only for illustrative purposes. See [Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) to learn about SonarQube concepts and quality rules.
 
 ## SonarQube Rules {#sonarqube-rules}
 

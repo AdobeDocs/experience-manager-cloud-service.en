@@ -11,9 +11,7 @@ Define new types of ContextHub stores and modules when the ones provided do not 
 
 ContextHub stores are created from registered store candidates. To create a custom store, you need to create and register a store candidate.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-The javascript file that includes the code that creates and registers the store candidate must be included in a client library folder. The category of the folder must match the following pattern:
+The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/implementing/developing/introduction/clientlibs.md). The category of the folder must match the following pattern:
 
 ```xml
 contexthub.store.[storeType]
@@ -94,9 +92,7 @@ Create and register the renderer class in a self-executing anonymous function. T
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-The javascript file that includes the code that creates and registers the renderer must be included in a client library folder. The category of the folder must match the following pattern:
+The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/implementing/developing/introduction/clientlibs.md). The category of the folder must match the following pattern:
 
 ```javascript
 contexthub.module.[moduleType]

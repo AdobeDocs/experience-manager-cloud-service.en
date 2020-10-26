@@ -11,17 +11,19 @@ Follow the section below to understand the important considerations while runnin
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
+* Java needs to be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
+
 * The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store, Shared S3 Data Store, and Azure Blob Store Data Store.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+* If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
 
-* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
 * The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process.
 
-* The recommended upper limit for the repository size that the Content Transfer Tool can support at a time is 20GB.
+* Currently the default MongoDB size for a AEM as a Cloud Service Author instance is 32GB. It is recommended that for segment store size of greater than 20GB, you should submit a Support ticket to increase the MongoDB size.
 
 ## Availability {#availability}
 
@@ -132,37 +134,40 @@ Once the extraction process is complete, you can transfer delta content, by usin
 1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up extraction. Click **Extract** to start the top-up extraction. The **Migration Set extraction** dialog box displays.
 
    >[!IMPORTANT]
+   >
    >You should disable the **Overwrite staging container during extraction** option.
-     ![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
- 
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
 ### Ingestion Process in Content Transfer {#ingestion-process}
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
 
 1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. For demonstration purposes, the option **Ingest content to Author instance** is disabled. It is possible to ingest content to Author and Publish at the same time.  
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)    
-   
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
 1. Once the ingestion is complete, the status in **PUBLISH INGESTION** field updates to **FINISHED**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   
 #### Top Up Ingestion {#top-up-ingestion-process}
 
 The Content Transfer Tool has a feature that supports differential content *top-up* where it is possible to transfer only changes made since the previous content transfer activity.
 
 >[!NOTE]
->After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
+>
+>After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service.
 
 Once the ingestion process is complete, you can use delta content, by using the top-up ingestion method. Follow the steps below:
 
 1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. The **Migration Set Ingestion** dialog box displays. 
 
    >[!IMPORTANT]
+   >
    >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity.
-     ![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Viewing Logs for a Migration Set {#viewing-logs-migration-set}
 

@@ -5,15 +5,16 @@ breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 ---
 
-# Assets Guide {#assets}
+# [!DNL Assets] Guide {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
 + [Overview and what's new](overview.md)
-+ [Notable Changes to AEM Assets as a Cloud Service](assets-cloud-changes.md)
-+ [Architecture](architecture.md)
++ [Notable Changes to [!DNL Assets] as a Cloud Service](assets-cloud-changes.md)
++ [[!DNL Assets] architecture](architecture.md)
 + [Supported file formats](file-format-support.md)
 + [Overview of asset microservices](asset-microservices-overview.md)
-+ Manage digital assets using AEM {#manage}
++ [Accessibility in [!DNL Assets]](accessibility.md)
++ Manage digital assets {#manage}
   + [Share assets](share-assets.md)
   + [Monitor activities and DAM tasks](assets-activity-history.md)
   + [Get started using asset microservices](asset-microservices-configure-and-use.md)
@@ -22,30 +23,29 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Common asset management tasks](manage-digital-assets.md)
   + [Smart tags](smart-tags.md)
   + [How to organize assets](organize-assets.md)
-  + [Use Adobe Stock assets in AEM](aem-assets-adobe-stock.md)
+  + [Use [!DNL Adobe Stock] assets in AEM](aem-assets-adobe-stock.md)
   + [Manage collections](manage-collections.md)
   + [Metadata overview](manage-metadata.md)
-  + [Integrate with Adobe Creative Cloud](aem-cc-integration-best-practices.md)
+  + [Integrate with [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
   + [How to add or edit metadata](meta-edit.md)
   + [Review folder assets and collections](bulk-approval.md)
   + [Use and configure Assets Insights](assets-insights.md)
-  + [Asynchronous jobs](asynchronous-jobs.md)
   + [Metadata profiles](metadata-profiles.md)
   + [Metadata schema](metadata-schemas.md)
   + [Manage video assets](manage-video-assets.md)
-  + [Download assets from AEM](download-assets-from-aem.md)
+  + [Download assets](download-assets-from-aem.md)
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
   + [Watermark assets](watermark-assets.md)
-+ Configure, administer and extend Assets {#admin}
++ Configure, administer and extend [!DNL Assets] {#admin}
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
-  + [About working with Image profiles and Video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
-  + [Configure Smart Tags](smart-tags-configuration.md)
-  + [Multilingual assets and asset translation](translate-assets.md)
+  + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
+  + [Configure smart tags](smart-tags-configuration.md)
+  + [Multilingual assets and translation](translate-assets.md)
   + [Search facets](search-facets.md)
   + [Assets HTTP API](mac-api-assets.md)
-  + [Content Fragments Support in AEM Assets HTTP API](content-fragments/assets-api-content-fragments.md)
+  + [Content Fragments support in Assets HTTP API](content-fragments/assets-api-content-fragments.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
   + [Asset reports](asset-reports.md)
   + [Cascading metadata](cascading-metadata.md)
@@ -53,8 +53,8 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [MediaLibrary capabilities](medialibrary.md)
   + [Import and export asset metadata](metadata-import-export.md)
 + Share and distribute assets {#brand-portal}
-  + [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md)
-  + [Publish assets to Brand Portal](publish-to-brand-portal.md)
+  + [Configure [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+  + [Publish assets to [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Content Fragments {#content-fragments}
   + [Working with Content Fragments](content-fragments/content-fragments.md)
   + [Managing Content Fragments](content-fragments/content-fragments-managing.md)
