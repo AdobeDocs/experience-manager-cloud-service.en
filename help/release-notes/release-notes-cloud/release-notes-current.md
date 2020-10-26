@@ -18,7 +18,7 @@ The following release (2020.11.0) will be on November 26.
 
 * **[!DNL Adobe Sensei] powered video smart tagging**: By leveraging AI models to analyze video content for object and action-specific tags, DAM users can spend less time adding tags and more time making use of the rich information exposed to deliver the right experience to customers.
 
-* **[!DNL Assets] WebP Support**:Assets as a Cloud Service now supports WebP. WebP is an emerging image format created by Google. WebP has two main benefits. WebP is designed to create images that are visually indistinguishable from JPGs (or PNGs), and the files are much smaller. The result is that WebP results in a faster website.
+* **[!DNL Assets] WebP Support**:Assets as a Cloud Service now supports WebP. WebP is an emerging image format created by Google. WebP has two main benefits. WebP is designed to create images that are visually indistinguishable from JPGs (or PNGs), and the files are much smaller. 
 <!-- ### Bugs Fixed {#bugs-fixed-assets}
 
 Content to come
