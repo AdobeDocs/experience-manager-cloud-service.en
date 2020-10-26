@@ -32,7 +32,7 @@ Configurations can be created for many different features within AEM.
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
 
-### Example {#example}
+### Example {#administrator-example}
 
 For example an administrator may create two configurations for Editable Templates.
 
@@ -117,7 +117,7 @@ Although the [administrator and users may think of configurations as workplaces]
 
 Content references its associated configuration via a `cq:conf` property. AEM performs a lookup based on the content and it's contextual `cq:conf` property to find the appropriate configuration.
 
-### A Simple Example {#example}
+### Example {#developer-example}
 
 For this example, let's assume you have some application code that is interested in DAM settings.
 
@@ -188,7 +188,7 @@ To support this the configuration lookup in AEM has inheritance and fallback mec
 
 ### Using Configurations {#using-configurations}
 
-Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example.](#example)
+Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example.](#developer-example)
 
 For further details about Context-Aware Configurations, examples, and how to use them, [see the Sling documentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
