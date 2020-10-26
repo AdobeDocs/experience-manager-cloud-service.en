@@ -36,6 +36,9 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Using the Wizard](getting-access-to-aem-in-cloud/using-the-wizard.md)
     + [Setting up your Project](getting-access-to-aem-in-cloud/setting-up-project.md)
     + [Understanding the Build Environment](getting-access-to-aem-in-cloud/build-environment-details.md)
+  + Release Notes for Cloud Manager {#release-notes-cloud-manager}
+    + [Release Notes for 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+    + [Release Notes for 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
   + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)

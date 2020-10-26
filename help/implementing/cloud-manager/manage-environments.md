@@ -58,7 +58,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
 
-### Viewing the Environments {#viewing-environment}
+### Viewing Environments {#viewing-environment}
 
 The **Environments** card on the Overview page lists up to three environments. 
 
