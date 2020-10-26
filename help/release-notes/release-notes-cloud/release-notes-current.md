@@ -39,6 +39,36 @@ Content to come
 
 * CIF Cloud config UI displayed "Save & Close" buttons for configs in /lib and /apps/. But these are read-only hence UI fixed to display "Close" button only.
 
+### Cloud Manager {#cloud-manager}
+
+* The Environments page has been redesigned.
+
+* Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
+
+* The Cloud Manager build container now supports both Java 8 and Java 11. 
+
+* The number of environment variables per environment has been increased to 200.
+
+* The Environment card on the Overview page will now list up to three environments. Users can select the **Show all** button to navigate to the Environment summary page to view a table with a complete list of environments.
+
+### Bug Fixes {#bug-fixes-cloud-manager}
+
+* The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
+
+* The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment. 
+
+* The Cancel and Save buttons on the Non-Production Pipeline Edit page were not always visible.
+
+* Certain failures in the code quality process could result in the log file not being generated correctly.
+
+* When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
+
+* Some large pipeline step logs could not be consistently downloaded through the user interface. 
+
+* The validation of environment names had an off-by-one error. 
+
+* The Environments page would sometimes show publish and dispatcher segments when none was present.
+
 ## Content Transfer Tool {#content-transfer-tool}
 
 Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
