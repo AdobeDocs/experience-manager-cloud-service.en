@@ -57,6 +57,16 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
+
+### Viewing the Environments {#viewing-environment}
+
+The **Environments** card on the Overview page lists up to three environments. 
+
+The user can select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
+
+   ![](assets/environment-view1.png)
+
+
 ## Updating Environment {#updating-dev-environment}
 
 Updates of Stage and Production environments are automatically managed by Adobe. 
