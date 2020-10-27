@@ -4,7 +4,7 @@ description: Tag images using artificially intelligent services that apply conte
 contentOwner: AG
 ---
 
-# Train Smart Tag service and tag your images {#train-service-tag-assets}
+# Train Smart Content Service and auto-tag your images {#train-service-tag-assets}
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches.
 
