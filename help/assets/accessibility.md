@@ -25,7 +25,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 [!DNL Adobe Experience Manager] allows content creators and publishers to serve amazing experiences on the web. Adobe strives to include the creators with disabilities by improving the accessibility of [!DNL Experience Manager]. The software is continuously enhanced to meet the needs of all types of users and adhere to the worldwide standards that include individuals with visual, auditory, mobility, or other impairments.
 
-[!DNL Experience Manager] publishes conformance information that describes the standards it adheres to, outlines the accessibility features in the product, and describes the level of compliance. These accessibility conformance reports helps [!DNL Experience Manager] users understand the extent of the adherence. The enhancements done in [!DNL Assets] lets all users use the interfaces easily via keyboard, screen reader, magnifiers, and other assistive technology.
+[!DNL Experience Manager] publishes conformance information that describes the standards it adheres to, outlines the accessibility features in the product, and describes the level of compliance. These accessibility conformance reports help [!DNL Experience Manager] users understand the extent of the adherence. The enhancements done in [!DNL Assets] lets all users use the interfaces easily via keyboard, screen reader, magnifiers, and other assistive technology.
 
 [!DNL Experience Manager] provides varying levels of support for the following standards:
 
@@ -58,7 +58,7 @@ The core features in [!DNL Assets] are more accessible than before and are regul
 
 ## Support for use of keyboard {#keyboard-use}
 
-Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the UI control using a keyboard and pressing Return and by pressing `alt + 2` keyboard shortcut.
+Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the UI control using a keyboard and pressing `Return` and by pressing `Alt + 2` keyboard shortcut.
 
 <!-- TBD items:
 
@@ -70,7 +70,7 @@ Many user interface elements that are clickable or actionable with a pointer can
 
 ### Keyboard shortcuts in Assets {#keyboard-shortcuts}
 
-The following actions in Assets work with the listed keyboard shortcuts. Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to Assets. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+The following actions in Assets work with the listed keyboard shortcuts. Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to Assets. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | User interface or scenario | Keyboard shortcut | Action |
 |---|---|---|
@@ -185,7 +185,7 @@ When filtering search results:
 
 ## Share assets {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 When sharing assets, the following functionalities improve the accessibility:

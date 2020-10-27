@@ -27,7 +27,7 @@ Like for existing non-cloud AEM versions, a local, offline development based on 
 >[!NOTE]
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/overview.md).
+In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/disp-overview.md).
 
 The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
 

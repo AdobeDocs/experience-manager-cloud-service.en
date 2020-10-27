@@ -42,7 +42,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
   + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
-  + [Configure smart tags](smart-tags-configuration.md)
+  + [Configure smart tagging of images](smart-tags-configuration.md)
   + [Multilingual assets and translation](translate-assets.md)
   + [Search facets](search-facets.md)
   + [Assets HTTP API](mac-api-assets.md)

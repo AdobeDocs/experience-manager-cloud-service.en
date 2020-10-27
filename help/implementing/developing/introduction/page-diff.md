@@ -23,7 +23,7 @@ When content is compared, the whole tree up to the page to compare is recreated 
 
 A cleanup task runs automatically to clean up this temporary content.
 
-## Permissions {#permissions}
+## Limitations {#limitations}
 
 The diff occurs client-side via DOM comparison, making the diff process simple, however there are a number of limitations that need to be considered by the developer.
 
