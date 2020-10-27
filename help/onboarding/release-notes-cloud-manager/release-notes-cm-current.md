@@ -24,7 +24,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.10.0 is Octobe
 * The number of environment variables per environment has been increased to 200.
 
 * The Environment card on the Overview page will now list up to three environments. Users can select the **Show All** button to navigate to the Environment summary page to view a table with a complete list of environments.
-   Refer to [Viewing Environments](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
+   Refer to [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
  
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
