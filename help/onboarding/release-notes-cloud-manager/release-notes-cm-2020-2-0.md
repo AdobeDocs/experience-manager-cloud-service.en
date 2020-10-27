@@ -1,6 +1,6 @@
 ---
-title: Release Notes for Release 2020.2.0
-description: Release Notes for Release 2020.2.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.2.0
+description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.2.0
 ---
 
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.2.0 {#release-notes}
