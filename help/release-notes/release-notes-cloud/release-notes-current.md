@@ -59,6 +59,10 @@ Content to come
 
 * The Environment card on the Overview page will now list up to three environments. Users can select the **Show all** button to navigate to the Environment summary page to view a table with a complete list of environments.
 
+### Workflows {#Workflows}
+
+* Support added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date
+
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
 * The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
