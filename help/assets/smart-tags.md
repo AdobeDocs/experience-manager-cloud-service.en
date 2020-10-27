@@ -1,6 +1,6 @@
 ---
-title: Tag images with smart services
-description: Tag images with artificially intelligent services that apply contextual and descriptive business tags using Adobe Sensei services.
+title: Auto-tag images with AI-generated tags
+description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 ---
 
@@ -12,7 +12,7 @@ Compared to natural language vocabularies, tagging based on business taxonomy he
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -26,13 +26,13 @@ To use smart tagging, complete the following tasks:
 
 Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the existing deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
+>The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
 
 You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using [!DNL Adobe Developer Console]. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager]. See [configure Experience Manager for smart tagging of assets](smart-tags-configuration.md) for tasks to configure the Smart Tags. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
