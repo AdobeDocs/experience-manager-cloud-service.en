@@ -147,28 +147,36 @@ After you have trained the Smart Tags service, you can trigger the tagging workf
 1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether your your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
->
+
 >In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds 6 months.
 
 ### Tag uploaded assets {#tag-uploaded-assets}
 
 Experience Manager can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step of to smart tag assets. See [how to enable smart tagging for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
-## Manage smart tags and image searches {#manage-smart-tags-and-searches}
+## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
-You can curate smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
+You can curate smart tags to remove any inaccurate tags that may have been assigned to your brand assets, so that only the most relevant tags are displayed.
 
-Moderating Smart tags also helps refine tag-based searches for images by ensuring that your image appears in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated images from showing up in search results.
+Moderating smart tags also helps refine tag-based searches for assets by ensuring that your assets appear in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated assets from showing up in search results.
 
-You can also assign a higher rank to a tag to increase its relevance with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
+You can also assign a higher rank to a tag to increase its relevance with respect to an asset. Promoting a tag for an asset increases the chances of the asset appearing in search results when a search is performed based on the particular tag.
 
-1. In the Omnisearch box, search for assets based on a tag.
-1. Inspect the search results to identify an image that you don't find relevant to your search.
-1. Select the image, and then click the **[!UICONTROL Manage Tags]** icon from the toolbar.
-1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you don't want the image to be searched based on a specific tag, select the tag and then click the delete icon from the toolbar. Alternatively, click `X` symbol that appears beside the label.
-1. To assign a higher rank to a tag, select the tag and click the promote icon from the toolbar. The tag you promote, is moved to the **[!UICONTROL Tags]** section.
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
-1. Navigate to the properties page for the image. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
+To moderate the smart tags of your assets:
+
+1. In the Omnisearch field search for assets based on a tag.
+
+1. Inspect the search results to identify the assets that you do not find relevant to your search.
+
+1. Select the asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
+
+1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you do not want the asset to be searched based on a specific tag, then select the tag and select ![Delete icon](assets/do-not-localize/delete-icon.png) from the toolbar. Alternatively, select `X` symbol next to the label.
+
+1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.png) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
+
+1. Select **[!UICONTROL Save]** and then select **[!UICONTROL OK]** to close the [!UICONTROL Success] dialog.
+
+1. Navigate to the [!UICONTROL Properties] page for the asset. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
 
 ### Understand AEM search results with smart tags {#understandsearch}
 
@@ -203,3 +211,4 @@ To search for assets with smart tags (regular or enhanced), use the Assets Omnis
 >
 >* [Configure Experience Manager for smart tagging](smart-tags-configuration.md)
 >* [Understand how smart tags help manage assets](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Smart tagging video assets](smart-tags-video-assets.md)
