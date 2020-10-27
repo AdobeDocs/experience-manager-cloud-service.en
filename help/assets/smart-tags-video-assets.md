@@ -27,7 +27,7 @@ The already existing video assets in DAM are not smart tagged automatically. You
 
 To smart tag video assets, or folders (including subfolders) of assets that already exist in assets repository, follow these steps:
 
-1. Select the [!Adobe Experience Manager] logo and then select assets from the [!UICONTROL Navigation] page.
+1. Select the [!DNL Adobe Experience Manager] logo and then select assets from the [!UICONTROL Navigation] page.
 
 1. Select [!UICONTROL Files] to display the Assets interface.
 
@@ -35,7 +35,7 @@ To smart tag video assets, or folders (including subfolders) of assets that alre
 
 1. Select the entire folder or specific video assets.
 
-1. Select ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets icon] and select the [!UICONTROL Full Process] option.
+1. Select ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
 
 ![Reprocess Assets to add tags to videos existing DAM repository](assets/reprocess.gif)
 
