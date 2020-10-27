@@ -67,7 +67,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Metadata - Fragment Properties](content-fragments/content-fragments-metadata.md)
   + [Content Fragments - Delete Considerations](content-fragments/content-fragments-delete.md)
   + [Markdown](content-fragments/content-fragments-markdown.md)
-  + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-preview.md)
+  + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
   + [Dynamic Media Newsletter by Experience League](dynamic-media/dynamic-media-newsletter.md)
   + [Setting up Dynamic Media](dynamic-media/administering-dynamic-media.md)

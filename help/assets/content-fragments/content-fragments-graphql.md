@@ -89,7 +89,15 @@ The **[Fragment Reference](/help/assets/content-fragments/content-fragments-mode
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
-See:
+### JSON Preview {#json-preview}
+
+To help with designing and developing your Content Fragment Modesl, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
+
+## Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
+
+To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
+
+To help with this see:
 
 * A [sample Content Fragment structure](#content-fragment-structure-graphql) 
 
@@ -218,6 +226,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 * In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
 
   * `_path` : the path to your Content Fragement within the repository
+
+  * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
+
+  * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, 
   
   * `_variations` : to reveal specific Variations within your Content Fragment
 
@@ -226,6 +238,8 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * `_locale` : to reveal the language; based on Language Manager
 
   * `_references` : to reveal references
+
+  * `_ignoreCase` : to ignore the case when querying
 
 * GraphQL union types are supported:
 
@@ -755,6 +769,167 @@ query {
         "country": "Switzerland"
       }
     ]
+  }
+}
+```
+
+### Sample Query - All cities with SAN in the name, irrespective of case {#sample-all-cities-san-ignore-case}
+
+This query interrogates for all cities that have `SAN` in the name, irrespective of case.
+
+**Sample Query**
+
+```xml
+query {
+  citys(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "SAN"
+          _operator: CONTAINS
+          _ignoreCase: true
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      population
+      country
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "citys": {
+      "items": [
+        {
+          "name": "San Francisco",
+          "population": 883306,
+          "country": "USA"
+        },
+        {
+          "name": "San Jose",
+          "population": 1026350,
+          "country": "USA"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - Filter on an array with an item that must occur at least once {#sample-array-item-occur-at-least-once}
+
+This query filters on an array with an item (`city:na`) that must occur at least once.
+
+**Sample Query**
+
+```xml
+query {
+  citys(filter: {
+    categories: {
+      _expressions: [
+        {
+          value: "city:na"
+          _apply: AT_LEAST_ONCE
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      population
+      country
+      categories
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "citys": {
+      "items": [
+        {
+          "name": "San Francisco",
+          "population": 883306,
+          "country": "USA",
+          "categories": [
+            "city:beach",
+            "city:na"
+          ]
+        },
+        {
+          "name": "San Jose",
+          "population": 1026350,
+          "country": "USA",
+          "categories": [
+            "city:na"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - Filter on an exact array value {#sample-array-exact-value}
+
+This query filters on an exact array value.
+
+**Sample Query**
+
+```xml
+query {
+  citys(filter: {
+    categories: {
+      _expressions: [
+        {
+          values: [
+            "city:beach",
+            "city:na"
+          ]
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      population
+      country
+      categories
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "citys": {
+      "items": [
+        {
+          "name": "San Francisco",
+          "population": 883306,
+          "country": "USA",
+          "categories": [
+            "city:beach",
+            "city:na"
+          ]
+        }
+      ]
+    }
   }
 }
 ```

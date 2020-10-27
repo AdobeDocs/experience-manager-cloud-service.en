@@ -290,45 +290,77 @@ This is required as POST queries are usually not cached, and if using GET with t
 
 Here are the steps required to persist a given query:
 
-1. Prepare the query by POSTing it to the endpoint URL suffixed by "/persisted"
-   
+>[!NOTE]
+>Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+
+1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
+
    For example, create a persisted query:
 
    ```xml
-   $ curl -v --location \
-   --request POST 'https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted' \
-   --header 'Content-Type: application/json' \
-   --data-raw '{"query":"{\n player(_path:\"/conte.... _references {\n images\n }\n }\n}","variables":{}}'
+   $ curl -X PUT \
+      http://localhost:4502/graphql/persist.json/wknd/plain-article-query \
+      -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+      -H 'content-type: application/json' \
+      -d '{  articles { items { author _path } } }'
    ```
 
-1. At this point, check the servet response and look for the `Location` header and affinity cookie, similar to:
+1. At this point, check the response.
 
-   * Location Header:
-
-     ```xml
-     https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted/94c....gql
-     ```
-
-   * Affinity Cookie
+   For example, check for success:
 
      ```xml
-     set-cookie: affinity="062deedd03b5bb87"; Path=/; HttpOnly
+     {
+       "action": "create",
+       "configurationName": "wknd",
+       "name": "plain-article-query",
+       "shortPath": "/wknd/plain-article-query",
+       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+     }
      ```
 
-1. You can then replay the persisted query by GETing the Location path and specifying the affinity cookie:
+1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
+
+   For example, use the persisted query:
+
+   ```xml
+   $ curl -X GET \
+      http://localhost:4502/graphql/execute.json/wknd/plain-article-query \
+      -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+      -H 'content-type: application/json'
+   ```
+
+1. To execute the query on publish, the related persist tree need to replicated
+
+   * Using a POST for replication:
+     ```xml
+     $curl -X POST   http://localhost:4502/bin/replicate.json \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+       -F cmd=activate
+     ```
+
+   * Using a package:
+     1. Create a new package definition.
+     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`
+     1. ).
+     1. Build the package.
+     1. Replicate the package.
+
+   * Using replication/distribution tool
+     1. Go in the Distribution tool
+     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`)
+
+   * Using a workflow (via workflow launcher configuration):
+     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+
+1. Once the query configuration is on publish, the same apply as in 4. just using the publish endpoint.
 
    >[!NOTE]
    >
-   >The affinity cookie may not be required in future releases.
-
-   For example, to use the persisted query:
-
-   ```xml
-   $ curl -v \
-   --location 'https://publish-...adobeaemcloud.com/apps/graphql-enablement/content/endpoint.gql/persisted/b0....gql' \
-   --header 'Cookie: affinity="062deedd03b5bb87"' \
-   --header 'Content-Type: application/json'
-   ```
+   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
+   >
+   >If that is not the case it will not be able to execute.
 
 ## Filtering {#filtering}
 
