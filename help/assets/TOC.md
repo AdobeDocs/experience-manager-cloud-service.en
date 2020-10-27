@@ -22,7 +22,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Search assets](search-assets.md)
   + [Common asset management tasks](manage-digital-assets.md)
   + [Smart tags](smart-tags.md)
-    + [Smart tag your video assets](smart-tags-video-assets.md)
+  + [Smart tag your video assets](smart-tags-video-assets.md)
   + [How to organize assets](organize-assets.md)
   + [Use [!DNL Adobe Stock] assets in AEM](aem-assets-adobe-stock.md)
   + [Manage collections](manage-collections.md)
