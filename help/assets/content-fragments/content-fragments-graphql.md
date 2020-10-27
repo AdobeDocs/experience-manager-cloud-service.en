@@ -103,6 +103,46 @@ To help with this see:
 
 * And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
 
+## GraphQL for AEM - Some Extensions {#graphql-some-extensions}
+
+The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
+
+* If you require a single result:
+  * use the model name; eg city
+
+* If you expect a list of results:
+  * add a trailing "s"; e.g. citys
+
+* If you want to use a logical OR:
+  * use " _logOp: OR"
+
+* Logical AND also exists, but is (often) implicit
+
+* You can query on field names that correspond to the fields within the Content Fragment Model
+
+* In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
+
+  * `_path` : the path to your Content Fragement within the repository
+
+  * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
+
+  * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, 
+  
+  * `_variations` : to reveal specific Variations within your Content Fragment
+
+  * `_metadata` : to reveal metadata for your fragment
+
+  * `_locale` : to reveal the language; based on Language Manager
+
+  * `_references` : to reveal references
+
+  * `_ignoreCase` : to ignore the case when querying
+
+* GraphQL union types are supported:
+
+  * use `...on` 
+
+
 ## A Sample Content Fragment Structure for use with GraphQL {#content-fragment-structure-graphql}
 
 For a simple example we need:
@@ -206,46 +246,7 @@ The following fragments are used for the appropriate model.
 | Stuttgart | Germany | 634830 | city:emea |
 | Zurich | Switzerland | 415367 | city:capital<br>city:emea |
 
-## GraphQL for AEM - Some Extensions {#graphql-some-extensions}
-
-The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
-
-* If you require a single result:
-  * use the model name; eg city
-
-* If you expect a list of results:
-  * add a trailing "s"; e.g. citys
-
-* If you want to use a logical OR:
-  * use " _logOp: OR"
-
-* Logical AND also exists, but is (often) implicit
-
-* You can query on field names that correspond to the fields within the Content Fragment Model
-
-* In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
-
-  * `_path` : the path to your Content Fragement within the repository
-
-  * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
-
-  * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, 
-  
-  * `_variations` : to reveal specific Variations within your Content Fragment
-
-  * `_metadata` : to reveal metadata for your fragment
-
-  * `_locale` : to reveal the language; based on Language Manager
-
-  * `_references` : to reveal references
-
-  * `_ignoreCase` : to ignore the case when querying
-
-* GraphQL union types are supported:
-
-  * use `...on` 
-
-## GraphQL - Sample Queries {#graphql-sample-queries}
+## GraphQL - Sample Queries using the Sample Content Fragment Structure {#graphql-sample-queries-sample-content-fragment-structure}
 
 See the sample queries for illustrations of create queries, together with sample results.
 
@@ -1146,7 +1147,7 @@ query {
 }
 ```
 
-### Sample Queries using the WKND Project {#sample-queries-using-wknd-project}
+## Sample Queries using the WKND Project {#sample-queries-using-wknd-project}
 
 These sample queries are based on the WKND project. 
 
@@ -1154,7 +1155,7 @@ These sample queries are based on the WKND project.
 >
 >As the results can be extensive they are not reproduced here.
 
-#### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
+### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
 
 This sample query interrogates:
 
@@ -1174,7 +1175,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for Metadata {#sample-wknd-metadata}
+### Sample Query for Metadata {#sample-wknd-metadata}
 
 This query interrogates:
 
@@ -1235,7 +1236,7 @@ This query interrogates:
 }
 ```
 
-#### Sample Query for a single Content Fragment of a given Model {#sample-wknd-single-content-fragment-of-given-model}
+### Sample Query for a single Content Fragment of a given Model {#sample-wknd-single-content-fragment-of-given-model}
 
 This sample query interrogates:
 
@@ -1263,7 +1264,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
+### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
 
 **Sample Query**
 
@@ -1280,7 +1281,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
+### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
 ```xml
 {
@@ -1301,7 +1302,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
+### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
 
 ```xml
 {
@@ -1334,7 +1335,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
+### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
 
 ```xml
 {
@@ -1367,7 +1368,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
+### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
 
 **Sample Query**
 
@@ -1386,7 +1387,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
+### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
 
 **Sample Query**
 
@@ -1407,7 +1408,7 @@ This sample query interrogates:
 }
 ```
 
-#### Sample Query for Image References {#sample-wknd-image-references}
+### Sample Query for Image References {#sample-wknd-image-references}
 
 If you add two image references to a Content Fragment you can run such a sample query.
 

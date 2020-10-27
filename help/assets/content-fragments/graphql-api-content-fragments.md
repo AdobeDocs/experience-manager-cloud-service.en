@@ -370,11 +370,13 @@ Filtering uses a syntax based on logical operators and expressions.
 
 For examples, see:
 
-* the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries)
-  
-* the [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql.md#content-fragment-structure-graphql) used in these queries
-
 * details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql.md#graphql-some-extensions)
+
+* [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql.md#content-fragment-structure-graphql) prepared for use in sample queries
+
+* [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries-sample-content-fragment-structure)
+
+* [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql.md#sample-queries-using-wknd-project)
 
 ## Permissions {#permission}
 
