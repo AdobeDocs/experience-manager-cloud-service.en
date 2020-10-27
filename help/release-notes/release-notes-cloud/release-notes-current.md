@@ -59,7 +59,7 @@ Content to come
 
 * The Environment card on the Overview page will now list up to three environments. Users can select the **Show all** button to navigate to the Environment summary page to view a table with a complete list of environments.
 
-### Workflows {#Workflows}
+### Workflows {#workflows}
 
 * Support added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date
 
