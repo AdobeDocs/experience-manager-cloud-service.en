@@ -18,6 +18,13 @@ The following release (2020.11.0) will be on November 26.
 
 * **[!DNL Adobe Sensei] powered video smart tagging**: By leveraging AI models to analyze video content for object and action-specific tags, DAM users can spend less time adding tags and more time making use of the rich information exposed to deliver the right experience to customers.
 
+* **Brand Portal enhancements**: The following new features and more are available in Brand Portal. For details, see [Brand Portal release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
+
+* Enhanced download experience for simplified, quick downloads. Additional download configurations can be configured by administrators to offer an experience that suits the needs of the users and businesses.
+* One-click navigation to Files, Collections, and Shared Links is now possible from any page.
+* Users can select and download specific renditions now. The new rendition download option is available in the Renditions panel in the Asset details page.
+* A timeout of 15 minutes for guest user session ensures a better experience to all concurrent users.
+
 * **[!DNL Assets] WebP file support**: Assets as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience.
 
 <!--
