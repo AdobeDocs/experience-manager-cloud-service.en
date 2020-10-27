@@ -12,13 +12,13 @@ AEM configurations serve to manage settings in AEM and serve as workspaces.
 A configuration can be considered from two different viewpoints.
 
 * [An administrator](#configurations-administrator) uses configurations as workspaces within AEM to define and manage groups of settings.
-* [A developer](#configurations-developer) uses the underlying configuration mechanism that implements Sling Context-Aware Configurations to persist and look up settings in AEM.
+* [A developer](#configurations-developer) uses the underlying configuration mechanism that implements configurations to persist and look up settings in AEM.
 
-Simply put, from an administrator's point of view, configurations are how you create workspaces to manage settings in AEM, whereas the developer should understand how AEM persists and looks up these configurations within the repository.
+In summary: from an administrator's point of view, configurations are how you create workspaces to manage settings in AEM, whereas the developer should understand how AEM uses and manages these configurations within the repository.
 
 Regardless from your perspective, configurations serve two main purposes in AEM:
 
-* Configurations enable certain features for groups of users.
+* Configurations enable certain features for certain groups of users.
 * Configurations define access rights for those features.
 
 ## Configurations as an Administrator {#configurations-administrator}
@@ -31,6 +31,8 @@ Configurations can be created for many different features within AEM.
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
+
+### Example {#administrator-example}
 
 For example an administrator may create two configurations for Editable Templates.
 
@@ -115,7 +117,7 @@ Although the [administrator and users may think of configurations as workplaces]
 
 Content references its associated configuration via a `cq:conf` property. AEM performs a lookup based on the content and it's contextual `cq:conf` property to find the appropriate configuration.
 
-### A Simple Example {#example}
+### Example {#developer-example}
 
 For this example, let's assume you have some application code that is interested in DAM settings.
 
@@ -186,7 +188,7 @@ To support this the configuration lookup in AEM has inheritance and fallback mec
 
 ### Using Configurations {#using-configurations}
 
-Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example.](#example)
+Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example.](#developer-example)
 
 For further details about Context-Aware Configurations, examples, and how to use them, [see the Sling documentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
