@@ -91,6 +91,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + Delivery API {#delivery-api}
       + [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
       + [Content Fragments GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+      + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + Personalization {#personalization}
   + [ContextHub](developing/personalization/contexthub.md)
   + [Configuring ContextHub](developing/personalization/configuring-contexthub.md)

@@ -1,11 +1,11 @@
 ---
-title: Content Delivery using Content Fragments with GraphQL
-description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with GraphQL for Content Delivery.
+title: Content Delivery using Content Fragments with the Adobe Experience Manager as a Cloud Service GraphQL API
+description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for Headless Content Delivery.
 ---
 
-# GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
+# AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
-The GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
+The Adobe Experience Manager as a Cloud Service (AEM) GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
 
 Using the GraphQL API in AEM enables the efficient delivery of Content Fragments to JavaScript clients in Headless CMS implementations:
 
@@ -74,7 +74,7 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
    * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceeding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
-1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md#content-fragment-structure-graphql)).
+1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
@@ -163,7 +163,7 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 }
 ```
 
-See [Sample Query - A Single City Fragment](/help/assets/content-fragments/content-fragments-graphql.md#sample-single-city-fragment).
+See [Sample Query - A Single City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-city-fragment).
 
 #### Metadata {#metadata}
 
@@ -213,7 +213,7 @@ You can view all the metadata GraphQL types if you view the Generated GraphQL sc
 >
 >So for example, by calling the `stringMetadata` field, you would receive an array of all the metadata that was stored in the repository as a `String` , and if you call `stringArrayMetadata` you would receive an array of all the metadata that was stored in the repository as `String[]`.
 
-See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql.md#sample-metadata-awards-gb).
+See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md-samples#sample-metadata-awards-gb).
 
 #### Variations {#variations}
 
@@ -227,7 +227,7 @@ The `_variations` field has been implemented to simplify querying the variations
 }
 ```
 
-See [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql.md#sample-cities-named-variation).
+See [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -370,13 +370,13 @@ Filtering uses a syntax based on logical operators and expressions.
 
 For examples, see:
 
-* details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql.md#graphql-some-extensions)
+* details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-some-extensions)
 
-* [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql.md#content-fragment-structure-graphql) prepared for use in sample queries
+* [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
 
-* [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql.md#graphql-sample-queries-sample-content-fragment-structure)
+* [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
-* [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql.md#sample-queries-using-wknd-project)
+* [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## Permissions {#permission}
 

@@ -103,8 +103,9 @@ A selection of data types is available for defining your model:
     * Edit the referenced fragment directly.
     * Create a new content fragment, based on the appropriate model  
 * **JSON Object**
-  * Allows the content fragment authors to enter JSON syntax into the corresponding elements of a fragment. 
-    * The JSON will be passed through, and output as JSON in GraphQL. 
+  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
+    * To allow AEM to store direct JSON that you have copy/pasted from another service.
+    * The JSON will be passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
 
 ## Properties {#properties}
@@ -169,7 +170,7 @@ Content Fragments can form nested content, using either of the following data ty
   * Allows you to include/retrieve structured data.
     >[!NOTE]
     >
-    >This method is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+    >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
   * Can be configured for one or multiple references (in the resulting fragment)..
 
 >[!NOTE]
@@ -217,7 +218,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->This is of particular interest in conjunction with [Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>This is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 In addition to standard properties you can define:
 

@@ -69,6 +69,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Content Fragments - Delete Considerations](content-fragments/content-fragments-delete.md)
   + [Markdown](content-fragments/content-fragments-markdown.md)
   + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
+  + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + Dynamic Media {#dynamicmedia}
   + [Dynamic Media Newsletter by Experience League](dynamic-media/dynamic-media-newsletter.md)
   + [Setting up Dynamic Media](dynamic-media/administering-dynamic-media.md)
