@@ -61,9 +61,17 @@ The Production and Stage is available as a duo and is used for testing and produ
 
 The **Environments** card on the Overview page lists up to three environments. 
 
-The user can select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
+1. Select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
 
-   ![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. The **Environments** page displays the list of all the existing environments.
+
+   ![](assets/environment-view-2.png)
+
+1. Select any one of the environments from the list to view the environment details.
+
+   ![](assets/environment-view-3.png)
 
 
 ## Updating Environment {#updating-dev-environment}

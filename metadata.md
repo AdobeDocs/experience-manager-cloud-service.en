@@ -2,6 +2,7 @@
 product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
+type: Documentation
 solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
 getting-started-title: Getting Started
