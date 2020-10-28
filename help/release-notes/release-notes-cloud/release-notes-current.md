@@ -12,6 +12,16 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
 The following release (2020.11.0) will be on November 26.
 
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sitess}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+
+* **Project Archetype 24**: The recommended foundation to start a new AEM project got better, now including the new Adobe Client Data Layer, option to deliver site in AMP and new extension points to add project CSS/JS.
+
+* **ContextHub Folders**: Ability to create audience folders to easily organize, find and select audience segments to use for ContextHub offer targeting capabilities. 
+
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
