@@ -59,7 +59,7 @@ Content to come
 
 * CIF Cloud config UI displayed "Save & Close" buttons for configs in /lib and /apps/. But these are read-only hence UI fixed to display "Close" button only.
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * The Environments page has been redesigned.
 
@@ -69,8 +69,8 @@ Content to come
 
 * The number of environment variables per environment has been increased to 200.
 
-* The Environment card on the Overview page will now list up to three environments. Users can select the **Show all** button to navigate to the Environment summary page to view a table with a complete list of environments.
-
+* The Environment card on the Overview page will now list up to three environments. Users can select the **Show All** button to navigate to the Environment summary page to view a table with a complete list of environments.
+   Refer to [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
