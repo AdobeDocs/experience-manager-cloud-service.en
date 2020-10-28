@@ -95,7 +95,7 @@ Content to come
 
 ### Workflows {#workflows}
 
-* Support added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date.
+* Support was added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date. See [Search Workflow Instances](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
