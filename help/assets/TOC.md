@@ -3,6 +3,7 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Assets as a Cloud Service Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
+solution: Experience Manager, Experience Manager Assets
 ---
 
 # [!DNL Assets] Guide {#assets}
