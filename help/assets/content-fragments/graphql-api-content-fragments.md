@@ -462,11 +462,10 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
 
 ## FAQs {#faqs}
 
-A question that has arisen is:
+Questions that have arisen:
 
-* "*How is the GraphQL API for AEM different from Query Builder API?*"
+1. **Q**: "*How is the GraphQL API for AEM different from Query Builder API?*"
 
-To which we would say:
-
-* "*The GraphQL API offers total control on the JSON output, and is an industry standard for querying content. 
-  Moving forward, AEM is planning to invest in the GraphQL API.*"
+   * **A**: 
+     "*The AEM GraphQL API offers total control on the JSON output, and is an industry standard for querying content. 
+     Moving forward, AEM is planning to invest in the AEM GraphQL API.*"

@@ -47,7 +47,8 @@ solution: Experience Manager, Experience Manager Assets
   + [Search facets](search-facets.md)
   + [Assets HTTP API](mac-api-assets.md)
   + [Content Fragments support in Assets HTTP API](content-fragments/assets-api-content-fragments.md)
-  + [GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+  + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+  + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
   + [Asset reports](asset-reports.md)
   + [Cascading metadata](cascading-metadata.md)
@@ -69,7 +70,6 @@ solution: Experience Manager, Experience Manager Assets
   + [Content Fragments - Delete Considerations](content-fragments/content-fragments-delete.md)
   + [Markdown](content-fragments/content-fragments-markdown.md)
   + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
-  + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + Dynamic Media {#dynamicmedia}
   + [Dynamic Media Newsletter by Experience League](dynamic-media/dynamic-media-newsletter.md)
   + [Setting up Dynamic Media](dynamic-media/administering-dynamic-media.md)
