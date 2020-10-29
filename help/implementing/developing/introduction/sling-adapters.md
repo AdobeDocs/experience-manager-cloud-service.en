@@ -351,4 +351,4 @@ No targets yet, but implements Adaptable and could be used as source in a custom
 
 #### Other {#other}
 
-Furthermore Sling / JCR / OCM also provides an ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` for custom OCM ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)) objects.
+Furthermore Sling / JCR / OCM also provides an [`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory) for custom OCM ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)) objects.

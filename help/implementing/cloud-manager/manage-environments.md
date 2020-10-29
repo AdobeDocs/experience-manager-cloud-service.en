@@ -30,8 +30,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >The Production and Stage is available as a duo and is used for testing and production purposes.  User will not be able to create only Stage or only Production environment.
 
-## Adding an Environment {#adding-environments}
-
+## Adding Environment {#adding-environments}
 
 1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen. 
    ![](assets/environments-tab.png)
@@ -56,6 +55,24 @@ The Production and Stage is available as a duo and is used for testing and produ
 
    >[!NOTE]
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
+
+
+## Viewing Environment {#viewing-environment}
+
+The **Environments** card on the Overview page lists up to three environments. 
+
+1. Select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
+
+   ![](assets/environment-view-1.png)
+
+1. The **Environments** page displays the list of all the existing environments.
+
+   ![](assets/environment-view-2.png)
+
+1. Select any one of the environments from the list to view the environment details.
+
+   ![](assets/environment-view-3.png)
+
 
 ## Updating Environment {#updating-dev-environment}
 

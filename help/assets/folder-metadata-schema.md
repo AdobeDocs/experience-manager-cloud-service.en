@@ -164,4 +164,3 @@ Open the properties for a folder configured with a folder metadata schema. A **[
 Enter metadata values in the various fields and tap/click **[!UICONTROL Save]** to store the values. The values you specify are stored in the folder node in the CRX repository.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
-
