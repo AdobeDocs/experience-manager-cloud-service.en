@@ -10,7 +10,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 ## Release Date {#release-date}
 
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
-The following release (2020.11.0) will be on November 26.
+The following release (2020.11.0) will be on December 1, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sitess}
 
@@ -59,7 +59,7 @@ Content to come
 
 * CIF Cloud config UI displayed "Save & Close" buttons for configs in /lib and /apps/. But these are read-only hence UI fixed to display "Close" button only.
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * The Environments page has been redesigned.
 
@@ -69,8 +69,8 @@ Content to come
 
 * The number of environment variables per environment has been increased to 200.
 
-* The Environment card on the Overview page will now list up to three environments. Users can select the **Show all** button to navigate to the Environment summary page to view a table with a complete list of environments.
-
+* The Environment card on the Overview page will now list up to three environments. Users can select the **Show All** button to navigate to the Environment summary page to view a table with a complete list of environments.
+   Refer to [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
@@ -95,7 +95,7 @@ Content to come
 
 ### Workflows {#workflows}
 
-* Support added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date.
+* Support was added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date. See [Search Workflow Instances](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
