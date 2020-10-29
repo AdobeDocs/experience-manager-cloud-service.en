@@ -10,7 +10,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 ## Release Date {#release-date}
 
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
-The following release (2020.11.0) will be on November 26.
+The following release (2020.11.0) will be on December 1, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sitess}
 
