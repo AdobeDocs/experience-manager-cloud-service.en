@@ -23,22 +23,24 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 # Accessibility in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
-Adobe is committed to make products for all users, including people with disabilities. [!DNL Adobe Experience Manager] is continuously enhanced to meet the needs of all types of users. [!DNL Experience Manager] publishes conformance information that details standards it adheres to, outlines the accessibility features in the product, and describes the level of compliance. It helps users understand the extent of the adherence.
+[!DNL Adobe Experience Manager] allows content creators and publishers to serve amazing experiences on the web. Adobe strives to include the creators with disabilities by improving the accessibility of [!DNL Experience Manager]. The software is continuously enhanced to meet the needs of all types of users and adhere to the worldwide standards that include individuals with visual, auditory, mobility, or other impairments.
 
-[!DNL Adobe Experience Manager] provides varying levels of support for the following standards:
+[!DNL Experience Manager] publishes conformance information that describes the standards it adheres to, outlines the accessibility features in the product, and describes the level of compliance. These accessibility conformance reports help [!DNL Experience Manager] users understand the extent of the adherence. The enhancements done in [!DNL Assets] lets all users use the interfaces easily via keyboard, screen reader, magnifiers, and other assistive technology.
+
+[!DNL Experience Manager] provides varying levels of support for the following standards:
 
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-* [Revised Section 508](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
-* [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/).
+* [Revised Section 508 of the Rehabilitation Act](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
+* [Accessibility Initiative – Accessible Rich Internet Applications (WAI-ARIA) by W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-To access the report detailing the levels of compliance, see [Accessibility conformance reports ](https://www.adobe.com/accessibility/compliance.html) (ACR) page for all Adobe solutions.
+To access the report detailing the levels of compliance, see [Accessibility conformance reports](https://www.adobe.com/accessibility/compliance.html) (ACR) page for all Adobe solutions.
 
 ## Assistive technologies {#at-support}
 
-Users with disabilities frequently rely on hardware and software to access web content. These tools are known as assistive technologies. [!DNL Adobe Experience Manager Assets] work with the following kinds of assistive technologies to provide users support when using the software's core functionalities:
+Users with disabilities frequently rely on hardware and software to access web content. These tools are known as assistive technologies. [!DNL Experience Manager Assets] can work with the following types of assistive technologies (AT) when using the software's core functionalities:
 
-* Screen readers.
+* Screen readers and screen magnifier.
 * Speech recognition software.
 * Keyboard usage – navigation and shortcuts.
 * Assistive hardware, including switch controls, refreshable Braille displays, and other computer input devices.
@@ -56,7 +58,7 @@ The core features in [!DNL Assets] are more accessible than before and are regul
 
 ## Support for use of keyboard {#keyboard-use}
 
-Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the UI control using a keyboard and pressing Return and by pressing `alt + 2` keyboard shortcut.
+Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the UI control using a keyboard and pressing `Return` and by pressing `Alt + 2` keyboard shortcut.
 
 <!-- TBD items:
 
@@ -68,47 +70,45 @@ Many user interface elements that are clickable or actionable with a pointer can
 
 ### Keyboard shortcuts in Assets {#keyboard-shortcuts}
 
-<!-- TBD: Add here only those keyboard shortcuts that work for/with Assets. Do with Oct release.
--->
+The following actions in Assets work with the listed keyboard shortcuts. Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to Assets. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | User interface or scenario | Keyboard shortcut | Action |
 |---|---|---|
 | Column view in Assets user interface | Up and Down arrow keys | Navigate to files and folders within the same hierarchy. |
 | Column view in Assets user interface | Left and Right arrow keys | Navigate to files and folders above or below the current folder. |
 | Browsing folders in Assets | `/` | Invoke search by opening Omnisearch box. |
-| Assets Console | &#96; | Toggle side rails |
-| Assets Console | Alt + 1 | Open the content tree. |
-| Assets Console | Alt + 2  | Open [!UICONTROL Navigation] siderail. |
-| Assets Console | Alt + 3  | Display [!UICONTROL Timeline] of a selected asset. |
-| Assets Console | Alt + 4  | Open Live Copy references of the selected asset. |
-| Assets Console | Alt + 5  | Invoke search and search within the selected folder. |
+| Assets Console | ` | Toggle side rails |
+| Assets Console | `Alt + 1` | Open the content tree. |
+| Assets Console | `Alt + 2`  | Open [!UICONTROL Navigation] left rail. |
+| Assets Console | `Alt + 3`  | Display [!UICONTROL Timeline] of a selected asset. |
+| Assets Console | `Alt + 4`  | Open Live Copy references of the selected asset. |
+| Assets Console | `Alt + 5`  | Invoke search and search within the selected folder. |
 | Asset or folder is selected | Backspace | Delete the selected asset or folder. |
 | Asset or folder is selected | `p` | Open Properties page of the selected asset. |
 | Asset or folder is selected | `e` | Edit the selected asset. |
 | Asset or folder is selected | `m` | Move the selected asset. |
-| Asset or folder is selected | Ctrl + c | Copy the selected asset. |
-| Asset or folder is selected | Esc | Deselect the selection. |
-| Dialog box opens and is in the focus | Esc | Close dialog box. |
-| Inside a folder in DAM | Ctrl + v | Paste the copied asset. |
-| Assets Console | Ctrl + A | Select all assets. |
-| Asset property pages | Ctrl + S | Save changes. |
+| Asset or folder is selected | `Ctrl + c` | Copy the selected asset. |
+| Asset or folder is selected | `Esc` | Deselect the selection. |
+| Dialog box opens and is in the focus | `Esc` | Close dialog box. |
+| Inside a folder in DAM | `Ctrl + v` | Paste the copied asset. |
+| Assets Console | `Ctrl + A` | Select all assets. |
+| Asset property pages | `Ctrl + S` | Save changes. |
 | Assets Console | `?` | See a list of keyboard shortcuts. |
-
-Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to Assets. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 ## Sign in and navigate [!DNL Assets] user interface {#login}
 
 Users can use keyboard to navigate to and fill in the sign in field to log in. The error messages due to incorrect username and password combinations on login page are announced by screen readers each time the error occurs.
 
-After logging in, DAM users can navigate to [!DNL Assets] user interface using keyboard. The keyboard navigation order is left-to-right and top-to-bottom. When navigating using a keyboard, any actionable option that is focused is highlighted with better color contrast and is narrated by a screen reader. The state - expanded or collapsed - of the focused options in the menu is announced by a screen reader.
+After logging in, DAM users can navigate within [!DNL Assets] user interface using keyboard. The user interface elements, like left rail, menus, user profile, search bar, files and folders, and administration and configuration settings are navigable using keyboard. The keyboard navigation order is left-to-right and top-to-bottom. When navigating using a keyboard, an actionable option when focused is highlighted with better color contrast and is narrated by a screen reader. Where appropriate, the state -- for example, expanded, collapsed, and mixed-state -- of the focused options in the menu is announced by a screen reader. Also, the purpose of the actionable option is announced by a screen reader, instead of, say the appearance or UI placement.
 
-If a user expands the help or user profile option from the menu, the appropriate option or status are announced by screen reader. If a user expands the user profile option, the available options can be selected using a keyboard. For example, a user can impersonate a different user. The user interface option and error message
+If a user expands the help or user profile option from the menu, the appropriate option or status are announced by screen reader. If a user expands the user profile option, the available options can be selected using a keyboard. For example, an administrator can impersonate a different user. If a user searches for a string from the [!UICONTROL Help] option, a narrator announces 'Searching Help' to indicate that a search is in progress.
+
+<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in Experience Manager user interface](assets/keyboard-navigation-in-aem.gif)
 
 *Figure: Navigating through the options at the top of Experience Manager user interface using `Tab` key.*
-
-If a user searches for a string from the [!UICONTROL Help] option, a narrator announces 'Searching Help' to indicate that a search is in progress.
+-->
 
 ## Browse existing assets and view related information {#browse}
 
@@ -136,9 +136,9 @@ When browsing the assets repository, the following functionality improves access
 * User focus when navigating using `Tab` key can move to the close option in version preview.
 * When using keyboard to browse, the highlighted actionable user interface options have more prominent visual focus with enhanced contrast. It makes the focused area more identifiable to the user.
 * Use of the `Esc` key to remove the quick action icons from thumbnail view does not remove the keyboard focus from the last focused item.
-* With an asset selected, pressing Alt + 4 keyboard shortcut opens the References list. Using `Tab` key, users can navigate through the none-zero reference entries.
-* Comments on an asset are available in the asset timeline. It is accessible by keyboard.
-* View Settings in Experience Manager are accessible by keyboard. User can navigate through the available card sizes using arrow keys and select and tab through to navigate through and set other elements in the existing View Settings view.
+* With an asset selected, pressing `Alt + 4` keyboard shortcut opens the [!UICONTROL References] list in the left rail. Using `Tab` key, users can navigate through the non-zero reference entries. Browsing through only the non-zero reference entries saves effort and keystrokes as well.
+* Comments on an asset are available in the asset timeline. It is accessible if left rail is accessed using a keyboard or a keyboard shortcut.
+* [!UICONTROL View Settings] in [!DNL Experience Manager] are accessible using a keyboard. Users can navigate through the available card sizes using the arrow keys and select and tab through to navigate through and set other elements in the existing View Settings view.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -149,7 +149,6 @@ When browsing the assets repository, the following functionality improves access
 * List the a11y fixes in workflows to configure and administer [!DNL Experience Manager Assets]?
 * Some enhancements in Processing profiles creation or application to a folder?
 * Some enhancements to metadata properties UI?
-
 -->
 
 ## Manage digital assets {#manage-assets}
@@ -162,7 +161,7 @@ For metadata operations that are typically done by roles such as marketers and a
 
 * [!UICONTROL Save & Close] option on asset Properties page can now be accessed using the keyboard.
 * Screen readers announce the options to delete the selected tags in Basic tab of asset Properties buttons to delete the selected tags.
-* Date picker popup dialog can be used using a keyboard. Datepicker is used to set on-times and off-times.
+* Date picker popup dialog can be used using a keyboard. Datepicker user interface element is used to set on-times and off-times.
 * The drag functionality using keyboard correctly functions in Metadata Schema Editor in browse mode of screen reader.
 * A user can move the focus using keyboard to the Add User or Group field under Closed User Group in the Permissions tab of folder Properties.
 
@@ -186,7 +185,7 @@ When filtering search results:
 
 ## Share assets {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 When sharing assets, the following functionalities improve the accessibility:
@@ -199,11 +198,14 @@ When sharing assets, the following functionalities improve the accessibility:
   * Can navigate to all the listed suggestions.
   * Narrate the displayed suggestions for Add Email Address and Search fields.
 
+<!-- TBD: With more info from the DM team. A few Sev1 issues are fixed and if those are shipped, then mention those here.
+
 ## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
 When using Dynamic Media, the following functionality helps make it accessible:
 
 * A user can focus to `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`, `ZoomVertical_dark`, and `ZoomVertical_light` options using `Tab` key in asset details Viewers in [!DNL Dynamic Media].
+-->
 
 ## Accessible documentation {#accessible-docs}
 
@@ -217,14 +219,11 @@ When using Dynamic Media, the following functionality helps make it accessible:
 <!-- 
 ## More resources for accessibility {#a11y-resources}
 
-TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share or leave a link here.
+TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share a reference with asgupta@adobe.com.
 -->
-
-## Enhancements in [!DNL Experience Manager Assets] releases {#rn-fixes}
-
-For a list of specific enhancements done in each individual release, see the [release notes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html) of the respective releases.
 
 >[!MORELIKETHIS]
 >
->* [AEM accessibility guidance](/help/onboarding/accessibility/web-accessibility.md)
->* [Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html)
+>* [Release notes of specific enhancements done in each individual release](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>* [AEM accessibility guidance](/help/onboarding/accessibility/web-accessibility.md).
+>* [Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).

@@ -1,4 +1,5 @@
 ---
+solution: Experience Manager, Experience Manager Sites
 sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Authoring Content in AEM as a Cloud Service
 breadcrumb-title: Authoring Guide

@@ -62,7 +62,7 @@ It's recommended that the majority of connector code is placed under `/apps/conn
 Cloud Services Configurations
 -----------------------------
 
-One aspect of the connector implementation is code backing the configuration of the connector. This code causes a card with the connector's name to appear under Tools > Operations > Cloud Services. When clicked, a configuration browser pops up where the customer selects the parent folder to contain the connector configuration. The connector's code should result in a form with all the properties that must be configured, ultimately storing the values in a configuration folder under `/conf`. This folder can later be selected under the Sites properties tab or the Assets properties tab.
+One aspect of the connector implementation is code backing the configuration of the connector. This code causes a card with the connector's name to appear under Tools > Operations > Cloud Services. When clicked, a [configuration browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) pops up where the customer selects the parent folder to contain the connector configuration. The connector's code should result in a form with all the properties that must be configured, ultimately storing the values in a configuration folder under `/conf`. This folder can later be selected under the Sites properties tab or the Assets properties tab.
 
 
 Context-Aware Configurations

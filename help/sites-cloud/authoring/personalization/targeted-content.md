@@ -18,7 +18,7 @@ Author targeted content using Targeting mode of AEM. Targeting mode and the Targ
 
 You can use either AEM or Adobe Target as the targeting engine (you must have a valid Adobe Target account to use Adobe Target). If you are using Adobe Target, you must configure the integration first. See the instructions for integrating with Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
 
-![Targeting content](/help/sites-cloud/authoring/assets/targeted-content.png)
+![Targeting content](../assets/targeted-content.png)
 
 The activities and experiences that you see in Target mode reflect the [Activities console](/help/sites-cloud/authoring/personalization/activities.md):
 
@@ -46,11 +46,11 @@ To switch to Target mode:
 1. Open the page for which you want to author targeted content.
 1. On the toolbar at the top of the page, click or tap the mode drop-down menu to reveal the available mode types.
 
-   ![Targeting mode](/help/sites-cloud/authoring/assets/targeted-mode.png)
+   ![Targeting mode](../assets/targeted-mode.png)
 
 1. Click or tap **Targeting**. Targeting options display at the top of the page.
 
-   ![Targeting toolbar](/help/sites-cloud/authoring/assets/targeted-toolbar.png)
+   ![Targeting toolbar](../assets/targeted-toolbar.png)
 
 ## Adding an Activity Using Targeting Mode {#adding-an-activity-using-targeting-mode}
 
@@ -111,7 +111,7 @@ To add an activity:
 1. In the **Activity** drop-down menu, select the activity for which you are authoring targeted content.
 1. To reveal the controls that guide you through the targeting process, click or tap **Start Targeting**.
 
-   ![Start targeting](/help/sites-cloud/authoring/assets/targeted-start-targeting.png)
+   ![Start targeting](../assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
@@ -135,15 +135,15 @@ After you [start the targeting process](#the-targeting-process-create-target-and
 
 Experiences are displayed in the Audiences pane. In the following example, experiences include **Default**, **Female**, **Female over 30**, and **Female under 30**. This example shows the Default offer of a targeted **Image** component.
 
-![Targeted image component](/help/sites-cloud/authoring/assets/targeted-image-component.png)
+![Targeted image component](../assets/targeted-image-component.png)
 
 When a different experience is selected, the Image component shows the offer for that experience.
 
-![Targeted image component changed](/help/sites-cloud/authoring/assets/targeted-image-different.png)
+![Targeted image component changed](../assets/targeted-image-different.png)
 
 When an experience is selected and the targeted component does not include an offer for that experience, the component displays **Add Offer** superimposed upon the semi-transparent default offer. When no offer has been created for an experience, the **Default** offer is displayed for the segment that is mapped to the experience.
 
-![Add offer](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
+![Add offer](../assets/targeted-add-offer.png)
 
 The Default experience is also displayed when the visitor properties do not match any segments that are mapped to the experiences. See [Adding Experiences using Targeting Mode](#adding-and-removing-experiences-using-targeting-mode).
 
@@ -151,11 +151,11 @@ The Default experience is also displayed when the visitor properties do not matc
 
 Offers that are [authored on the page](#adding-a-custom-offer) and used for a single experience are called custom offers. The following image is superimposed on the content of a custom offer:
 
-![Custom offer icon](/help/sites-cloud/authoring/assets/targeted-custom-offer-icon.png)
+![Custom offer icon](../assets/targeted-custom-offer-icon.png)
 
 Offers that are [added from an offer library](#adding-an-offer-from-an-offer-library) are superimposed with the following image:
 
-![Library offer icon](/help/sites-cloud/authoring/assets/targeted-library-offer-icon.png)
+![Library offer icon](../assets/targeted-library-offer-icon.png)
 
 You can save custom offers to an offer library if you decide that you want to reuse it. You can also convert a library offer to a custom offer if you want to modify the content for an experience. After editing, you can once again save the offer back to the library.
 
@@ -167,7 +167,7 @@ Using the Create step of [the targeting process](#the-targeting-process-create-t
 
 To add an experience:
 
-1. To add an experience, click or tap **+** **Add Experience Targeting **that appears below existing experiences in the **Audiences** pane.
+1. To add an experience, click or tap **+** **Add Experience Targeting** that appears below existing experiences in the **Audiences** pane.
 1. Select and audience. By default, that name is the name of the experience. You can type another name, if desired. Click or tap **OK**.
 
 #### Removing Experiences Using Targeting Mode {#removing-experiences-using-targeting-mode}
@@ -176,7 +176,7 @@ To delete an experience:
 
 1. Click or tap the arrow next to the experience name.
 
-   ![Delete and experience](/help/sites-cloud/authoring/assets/targeted-delete-experiene.png)
+   ![Delete and experience](../assets/targeted-delete-experiene.png)
 
 1. Click **Delete**.
 
@@ -232,11 +232,11 @@ Perform the following procedure after [starting the targeting process](#the-targ
 
 1. Click or tap the component to target. The toolbar for the component appears, similar to the following example.
 
-   ![Targeted component](/help/sites-cloud/authoring/assets/targeted-component.png)
+   ![Targeted component](../assets/targeted-component.png)
 
 1. Click or tap the Target icon.
 
-   ![Target button](/help/sites-cloud/authoring/assets/targeted-target-button.png)
+   ![Target button](../assets/targeted-target-button.png)
 
    The component content is the offer for the Default experience. When a component is targeted, its default node will be replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](#adding-a-custom-offer) or [add a library offer](#adding-an-offer-from-an-offer-library).
 
@@ -254,21 +254,21 @@ Because the Target component is a container, it appears as a drop area for other
 
 In Target mode, the Target component has a blue border, and the drop-target message indicates the targeted nature.
 
-![Target drop zone](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
+![Target drop zone](../assets/targeted-drop-target.png)
 
 In Edit mode, the Target component has a bullseye icon.
 
-![Icon of target drop zone](/help/sites-cloud/authoring/assets/targeted-drop-target-icon.png)
+![Icon of target drop zone](../assets/targeted-drop-target-icon.png)
 
 When you drag components into the Target component, they are targeted components.
 
-![Drop zone with targets](/help/sites-cloud/authoring/assets/targeted-drop-zone-populated.png)
+![Drop zone with targets](../assets/targeted-drop-zone-populated.png)
 
 When you add a component to the Target component, it provides content for a specific experience. To specify the experience, you select the experience before you add the components.
 
 You can add a Target component to the page in Edit mode or in Target mode. You can add components to the Target component only in Target mode. The Target component belongs to the Personalization component group.
 
-If editing targeted content, you must click or tap **Start Targeting **before you can do so.
+If editing targeted content, you must click or tap **Start Targeting** before you can do so.
 
 1. Drag the Target component to the page where you want the offer to appear.
 1. By default, no location ID is set. Click or tap the configure cog wheel to set the location.
@@ -296,7 +296,7 @@ If you decide that the offer can be used for other experiences, you can create a
 1. Select the experience to which you are adding the offer.
 1. To reveal the component menu, click or tap the targeted component to which you are adding the offer.
 
-   ![Adding an offer](/help/sites-cloud/authoring/assets/targeted-component-menu.png)
+   ![Adding an offer](../assets/targeted-component-menu.png)
 
 1. Click or tap the + icon.
 
@@ -304,7 +304,7 @@ If you decide that the offer can be used for other experiences, you can create a
 
 1. Click or tap the offer to reveal the offer menu, then click or tap the edit icon.
 
-   ![Target component toolbar](/help/sites-cloud/authoring/assets/targeted-offer-menu.png)
+   ![Target component toolbar](../assets/targeted-offer-menu.png)
 
 1. Edit the content of the component.
 
@@ -317,33 +317,33 @@ You cannot add library offers to the Default experience.
 1. Select the experience to which you are adding the offer.
 1. To reveal the component menu, click or tap the targeted component to which you are adding the offer.
 
-   ![Targeted offer](/help/sites-cloud/authoring/assets/targeted-add-offer-large.png)
+   ![Targeted offer](../assets/targeted-add-offer-large.png)
 
 1. Click or tap the folder icon.
 
-   ![Folder icon](/help/sites-cloud/authoring/assets/targeted-folder-button.png)
+   ![Folder icon](../assets/targeted-folder-button.png)
 
 1. Select the offer from the library and then click or tap the checkmark icon.
 
-   ![Offer library](/help/sites-cloud/authoring/assets/targeted-select-content.png)
+   ![Offer library](../assets/targeted-select-content.png)
 
    The offer picker lets you browse or filter for offers. When browsing or filtering, you may also want to sort the offers and change how you view them. The number in the upper right-hand indicates how many offers are available in the current library.
 
     * Click or tap **Browse** to navigate to another folder. The navigation pane opens and you click the arrow to drill down into folders. Click or tap **Browse** again to close the navigation pane.
 
-   ![Browse content](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
+   ![Browse content](../assets/targeted-select-content-browse.png)
 
     * Click or tap **Filter** to filter the offers against keywords or tags. You enter keywords and you select tags from the drop-down menu. Click or tap **Filter** again to close the filtering pane.
 
-   ![Filter content](/help/sites-cloud/authoring/assets/targeted-filter.png)
+   ![Filter content](../assets/targeted-filter.png)
 
     * Change how you sort the offers by clicking or tapping the arrow next to **Newest to Oldest**. Offers can be sorted newest to oldest or oldest to newest.
 
-   ![Filter sort order](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
+   ![Filter sort order](../assets/targeted-filter-sort.png)
 
    Click or tap the icon next to **View as** to view offers as tiles or as a list.
 
-   ![View as button](/help/sites-cloud/authoring/assets/targeted-view-as-button.png)
+   ![View as button](../assets/targeted-view-as-button.png)
 
 #### Adding a Custom Offer to a Library {#adding-a-custom-offer-to-a-library}
 
@@ -354,7 +354,7 @@ For information about using the Offers console to create a reusable offer, see [
 1. Select the experience to reveal the custom offer.
 1. Click or tap the custom offer to reveal the offer menu, then click or tap the **Save Offer To Offer Library** icon.
 
-   ![Save offer to offer library](/help/sites-cloud/authoring/assets/targeted-save-offer-library-button.png)
+   ![Save offer to offer library](../assets/targeted-save-offer-library-button.png)
 
 1. Type a name for the offer, and select the library to which you are adding the offer, then click or tap the checkmark icon.
 
@@ -365,7 +365,7 @@ Convert a library offer to a custom offer to change the offer for current experi
 1. Select the experience to reveal the library offer.
 1. Click or tap the library offer to reveal the offer menu, then click or tap the Convert to Inline Offer icon.
 
-   ![Convert to inline offer](/help/sites-cloud/authoring/assets/targeted-convert-inline.png)
+   ![Convert to inline offer](../assets/targeted-convert-inline.png)
 
 #### Editing a Library Offer {#editing-a-library-offer}
 
@@ -381,11 +381,11 @@ Open a library offer from an experience in Targeted mode to edit the offer. The 
 
 The Target step of [the targeting process](#the-targeting-process-create-target-and-goals-settings) involves mapping audiences with the experiences that you worked with in the Create step. The Target page shows the audiences that each experience is targeting. You can specify or change the audience for each experience. If you are using Adobe Target, you can also create A/B tests that allow you to target percentage of traffic for an audience to a particular experience.
 
-### If you are using AEM targeting or Adobe Target (experience targeting) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### If you are using AEM targeting or Adobe Target (experience targeting) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Audiences appear on the left side of the mapping diagram, and experiences appear on the right side.
 
-![Mapping audiences](/help/sites-cloud/authoring/assets/targeted-diagram.png)
+![Mapping audiences](../assets/targeted-diagram.png)
 
 Define an audience using a segment. The cloud configuration for the page determines determines the segments that are available to you. When the page is not associated with an Adobe Target cloud configuration, AEM segments are available for defining audiences. When the page is associated with an Adobe Target cloud configuration, you use Target segments.
 
@@ -393,7 +393,7 @@ For information targeting engines, see [Targeting Engine](/help/sites-cloud/auth
 
 An audience must not be used by more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
 
-![Warning icon](/help/sites-cloud/authoring/assets/targeted-warn.png)
+![Warning icon](../assets/targeted-warn.png)
 
 ### Associating experiences with audiences (AEM or Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -403,13 +403,13 @@ Use the following procedure to associate an experience with an audience when usi
 1. (Optional) Click or tap **Edit** and then type a keyword to search for the desired segment.
 1. In the list of audiences, select the audience and click or tap **OK**.
 
-### If you are using A/B Testing (Adobe Target) ... {#if-you-are-using-a-b-testing-adobe-target}
+### If you are using A/B Testing (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 If you have an A/B test activity, audiences are on your left, the percentage that each experience is viewed is in the middle, and the experiences are on the right.
 
 You can change the percentages as long as they add up to 100 percent. An audience can be used by multiple experiences in A/B testing.
 
-![A/B targeting](/help/sites-cloud/authoring/assets/targeted-ab.png)
+![A/B targeting](../assets/targeted-ab.png)
 
 ### Associating Audiences and Traffic Percentages with A/B Testing {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
@@ -429,15 +429,15 @@ The goal metrics are only measured for the published campaign.
 
 If using AEM as the targeting engine:
 
-![AEM as target engine](/help/sites-cloud/authoring/assets/targeted-goals.png)
+![AEM as target engine](../assets/targeted-goals.png)
 
 If using Adobe Target as the targeting engine:
 
-![Adobe Target as target engine](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![Adobe Target as target engine](../assets/targeted-engine.png)
 
 If using Adobe Target as the targeting engine and you have A4T Analytics configured for the account, you have an additional **Reporting Source** drop-down menu:
 
-![A4T](/help/sites-cloud/authoring/assets/targeted-source.png)
+![A4T](../assets/targeted-source.png)
 
 The following success metrics are available (used for publish only):
 
@@ -494,7 +494,7 @@ To configure goals and settings if using Adobe Target:
 
    If you select **Adobe Analytics**, select the company and report suite. If you select **Adobe Target**, no action is required.
 
-   ![Reporting source](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
+   ![Reporting source](../assets/targeted-reporting-source.png)
 
 1. In the **Goal Metric** area, under **My Primary Goal** select the success metric you want to track - Conversion, Revenue, Engagement - and enter how that metric gets measured (or what action the audience takes to indicate a goal has been reached). See definition of the goal metrics in the previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) on success metrics.
 
@@ -508,7 +508,7 @@ To configure goals and settings if using Adobe Target:
    >
    >You must have at least one goal defined.
 
-   ![Goal metric](/help/sites-cloud/authoring/assets/targeted-goal-metric.png)
+   ![Goal metric](../assets/targeted-goal-metric.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ To configure goals and settings if using Adobe Target:
 
 1. Click **Add a New Metric** to configure additional success metrics.
 
-   ![Additional metrics](/help/sites-cloud/authoring/assets/targeted-additional-metrics.png)
+   ![Additional metrics](../assets/targeted-additional-metrics.png)
 
    >[!NOTE]
    >
@@ -553,11 +553,11 @@ To simulate the visitor's experience, use the following tools:
 1. To switch to Preview mode, on the toolbar click or tap **Preview**.
 1. On the tool bar, click or tap the Context Hub icon.
 
-   ![ContextHub button](/help/sites-cloud/authoring/assets/targeted-contexthub-button.png)
+   ![ContextHub button](../assets/targeted-contexthub-button.png)
 
 1. Use Context Hub to change context properties. For example, click or tap the Persona property to select a different user.
 
-   ![ContextHub toolbar](/help/sites-cloud/authoring/assets/targeted-contexthub-toolbar.png)
+   ![ContextHub toolbar](../assets/targeted-contexthub-toolbar.png)
 
    The page changes to show the content that is targeted for the current context.
 
@@ -569,19 +569,19 @@ You can customize the Target component by accessing the component's options in o
 
 1. After you have targeted the component, in the Target component, click or tap the component and then the settings icon (gear).
 
-   ![Component settings](/help/sites-cloud/authoring/assets/targeted-component-settings.png)
+   ![Component settings](../assets/targeted-component-settings.png)
 
    AEM displays the Target component options window.
 
-   ![Target dialog](/help/sites-cloud/authoring/assets/targeted-dialog.png)
+   ![Target dialog](../assets/targeted-dialog.png)
 
 1. Alternatively to access these settings in full screen mode, in the Target component options window, click or tap the full screen icon.
 
-   ![Full screen button](/help/sites-cloud/authoring/assets/targeted-fullscreen.png)
+   ![Full screen button](../assets/targeted-fullscreen.png)
 
    AEM displays the full-screen Target component options window.
 
-   ![Component in full screen](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+   ![Component in full screen](../assets/targeted-target-as-enging.png)
 
 1. Configure the Target component settings as described in the following tables.
 
@@ -592,7 +592,7 @@ You can customize the Target component by accessing the component's options in o
 
 If you select Adobe Target as the engine:
 
-![Target as engine](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+![Target as engine](../assets/targeted-target-as-enging.png)
 
 |Option|Description|
 |---|---|
