@@ -383,7 +383,7 @@ You can preview carousel banners from the Carousel Editor (preferred method) or 
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tap **[Preview]**.
+1. Tap **[!UICONTROL Preview]**.
 1. Tap the hotspots or image maps on the image to test their associated actions.
 
 **To preview carousel banners from the Viewers list**

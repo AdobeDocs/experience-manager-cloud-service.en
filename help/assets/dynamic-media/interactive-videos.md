@@ -116,7 +116,7 @@ Normally there is no need for you to use any specialized debugging tools. Modern
 
 * To see all outgoing HTTP requests in Google Chrome, press **F12** (Windows) or **Command+Options+I** (Mac) to open the Developer Tools panel, and then click the **Network** tab.
 
-* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **[Net]** tab, or you can use the built-in Inspector tool and its Network tab.
+* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **[!UICONTROL Net]** tab, or you can use the built-in Inspector tool and its Network tab.
 
 * In Internet Explorer activate the debugger tool by pressing **F12**.
 
