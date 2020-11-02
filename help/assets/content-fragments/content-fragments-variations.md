@@ -75,8 +75,6 @@ The following actions are also available (for all the [formats](#formats)) when 
 
 * [Annotate](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) your text
 
-* [Insert assets into your fragment](#inserting-assets-into-your-fragment)
-
 * [Show Text Statistics](#viewing-key-statistics)
 
 * [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
@@ -105,16 +103,16 @@ Rich text editing allows you to format:
 * Numbered list
 * Indentation: increase, decrease
 * Create/Break hyperlinks
+* Paste Text/from Word
+* Insert a table
+* Paragraph style: Paragraph, Heading 1/2/3
+* [Insert asset](#inserting-assets-into-your-fragment)
+* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment)
 * Open the full-screen editor, where the following formatting options are available:
-
-    * Paste Text/from Word
-    * Insert a table
-    * Paragraph style: Paragraph, Heading 1/2/3
-    * [Insert assets](#inserting-assets-into-your-fragment)
-    * Search
-    * Find/Replace
-    * Spellchecker
-    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Search
+  * Find/Replace
+  * Spellchecker
+  * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 
 The [actions](#actions) are also accessible from the full-screen editor.
 
@@ -285,24 +283,62 @@ They will be added to the paragraph sequence of the fragment without any formatt
 >There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. Position the cursor at the position you want to add the image.
-2. Use the **Insert Asset** icon to open the search dialog.
+1. Use the **Insert Asset** icon to open the search dialog.
 
    ![insert asset icon](assets/cfm-variations-09.png)
 
-3. In the dialog you can either:
+1. In the dialog you can either:
 
-    * navigate to the required asset in DAM
-    * search for the asset in DAM
+   * navigate to the required asset in DAM
+   * search for the asset in DAM
 
    Once located, select the required asset by clicking on the thumbnail.
 
-4. Use **Select** to add the asset to the paragraph system of your content fragment at the current location.
+1. Use **Select** to add the asset to the paragraph system of your content fragment at the current location.
 
    >[!CAUTION]
    >
    >If, after adding an asset, you change format to:
-   >    * **Plain Text**: the asset will be completely lost from the fragment.
-   >    * **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
+   >* **Plain Text**: the asset will be completely lost from the fragment.
+   >* **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
+
+### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
+
+To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
+
+They will be added as a reference, in your current location in your fragment.
+
+<!--
+>[!CAUTION]
+>
+>These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
+>
+>However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+
+>[!NOTE]
+>
+>There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+-->
+
+1. Position the cursor at the position you want to add the fragment.
+2. Use the **Insert Content Fragment** icon to open the search dialog.
+
+   ![insert Content Fragment icon](assets/cfm-variations-13.png)
+
+3. In the dialog you can either:
+
+    * navigate to the required fragment in the Assets folder
+    * search for the fragment
+
+   Once located, select the required fragment by clicking on the thumbnail.
+
+4. Use **Select** to add a reference to the selected Content Fragment to your current content fragment (at the current location).
+
+   >[!CAUTION]
+   >
+   >If, after adding an reference to another fragment, you change format to:
+   >* **Plain Text**: the reference will be completely lost from the fragment.
+   >* **Markdown**: the reference will remain.
 
 ## Managing Variations {#managing-variations}
 
@@ -380,15 +416,15 @@ When editing a variation you have access to the action for synchronizing the cur
 1. Open your content fragment in the fragment editor. Ensure that the **Master** has been edited.
 1. Select a specific variation, then the appropriate synchronization action from either:
 
-    * the **Actions** drop down selector - **Sync current element with master**
+   * the **Actions** drop down selector - **Sync current element with master**
 
-    * the toolbar of the full-screen editor - **Sync with master**
+   * the toolbar of the full-screen editor - **Sync with master**
 
 1. Master and the variation will be shown side-by-side:
 
-    * green indicates content added (to the variation)
-    * red indicates content removed (from the variation)
-    * blue indicates replaced text
+   * green indicates content added (to the variation)
+   * red indicates content removed (from the variation)
+   * blue indicates replaced text
 
    ![synchronizing with master](assets/cfm-variations-11.png)
 

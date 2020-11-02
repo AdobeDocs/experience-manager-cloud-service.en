@@ -326,3 +326,17 @@ To publish a content fragment model:
    >[!NOTE]
    >
    >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+
+## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
+
+Content fragment models that have been published can be unpublished if they are not referenced by any fragments.
+
+<!-->
+To unpublish a content fragment model:
+
+1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+
+1. Navigate to the folder holding your content fragment model.
+1. Select your model, followed by **Unpublish** from the toolbar.
+   The published status will be indicated in the console. 
+-->
