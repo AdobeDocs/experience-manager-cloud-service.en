@@ -47,11 +47,13 @@ The GraphQL for AEM implementation is based on the standard GraphQL Java Library
 
 ## GraphiQL Interface {#graphiql-interface}
 
-AEM Graph API includes an implementation of the standard GraphiQL interface. This allows you to directly input, and test, queries.
+AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
 
 For example: 
 
 * `http://localhost:4502/content/graphiql.html`
+
+This provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
