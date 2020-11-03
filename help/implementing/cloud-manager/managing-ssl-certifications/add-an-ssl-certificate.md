@@ -64,7 +64,7 @@ You can verify that the private key and `main/server` certificate match using th
 >[!NOTE]
 >The output of these two commands must be exactly the same. If you cannot locate a matching private key to your `main/server` certificate, you will be required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
 
-### Certificate Validity Dates {certificate-validity-dates}
+### Certificate Validity Dates {#certificate-validity-dates}
 
 Cloud Manager expects the SSL certificate to be valid for at least 90 days into the future
 
