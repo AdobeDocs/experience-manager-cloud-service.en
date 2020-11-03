@@ -10,7 +10,7 @@ Cloud Manager provides customers the self-service capability to install SSL cert
 >[!IMPORTANT]
 >Cloud Manager does not provide SSL certificates or private keys. These must be obtained from third party certification authorities. See How to Get an SSL Certificate to learn more. INSERT LINK
 
->[!NOTES] 
+>[!NOTE] 
 >AEM as a Cloud Service only supports secure https sites. Customers with multiple custom domains will not want to upload a certificate every time they add a domain. Hence such customers will benefit by getting one certificate with multiple domains.
   
 Cloud Manager supports the following customer SSL certificate requirements: 
