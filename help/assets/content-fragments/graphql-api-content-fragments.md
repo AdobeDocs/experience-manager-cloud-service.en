@@ -45,6 +45,16 @@ The GraphQL for AEM implementation is based on the standard GraphQL Java Library
 
 * [GraphQL Java at GitHub](https://github.com/graphql-java)
 
+## GraphiQL Interface {#graphiql-interface}
+
+AEM Graph API includes an implementation of the standard GraphiQL interface. This allows you to directly input, and test, queries.
+
+For example: 
+
+* `http://localhost:4502/content/graphiql.html`
+
+![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
+
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
 The use cases can depend on the type of AEM as a Cloud Service environment:

@@ -162,7 +162,7 @@ See the sample queries for illustrations of create queries, together with sample
 
 >[!NOTE]
 >
->Depending on your instance you can directly access the Graph*i*QL interface for submitting and testing queries.
+>Depending on your instance you can directly access the [Graph*i*QL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) for submitting and testing queries.
 >
 >For example: `http://localhost:4502/content/graphiql.html`
 
