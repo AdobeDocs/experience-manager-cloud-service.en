@@ -5,7 +5,7 @@ description: Deleting an SSL Certificate - Managing SSL Certificates
 
 # Deleting an SSL Certificate {#deleting-an-ssl-certificate}
 
->[IMPORTANT]
+>[!IMPORTANT]
 >Removing certificates from Cloud Manager is a permanent action that cannot be undone. Best practice is to save any necessary SSL files locally before deleting them in the Cloud Manager user interface.
 
 >[!NOTE]
