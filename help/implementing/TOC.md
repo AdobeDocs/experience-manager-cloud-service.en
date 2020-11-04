@@ -38,7 +38,6 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Using Client-Side Libraries](developing/introduction/clientlibs.md)
   + [Configurations and the Configuration Browser](developing/introduction/configurations.md)
   + [Logging](developing/introduction/logging.md)
-  + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + [Page Diff](/help/implementing/developing/introduction/page-diff.md)
   + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
   + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
