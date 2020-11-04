@@ -53,7 +53,6 @@ The following legend describes the level of support.
 | GIF         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | JPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | PNG         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
-| SVG         | -                    | &#10003;            | -            | -        |
 | TIFF        | &#10003;             | &#10003;            | &#10003;     | -        |
 
 ## Image formats in [!DNL Dynamic Media] {#image-support-dynamic-media}
