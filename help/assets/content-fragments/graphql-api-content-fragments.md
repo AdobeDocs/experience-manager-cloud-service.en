@@ -317,10 +317,21 @@ Here are the steps required to persist a given query:
 
    ```xml
    $ curl -X PUT \
-      http://localhost:4502/graphql/persist.json/wknd/plain-article-query \
-      -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-      -H 'content-type: application/json' \
-      -d '{  articles { items { author _path } } }'
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H "Content-Type: application/json" \
+       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
+       -d \
+   '{
+     articleList {
+       items{
+           _path
+           author
+           main {
+               json
+           }
+       }
+     }
+   }'
    ```
 
 1. At this point, check the response.
@@ -346,6 +357,32 @@ Here are the steps required to persist a given query:
       http://localhost:4502/graphql/execute.json/wknd/plain-article-query \
       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
       -H 'content-type: application/json'
+   ```
+
+1. Update a persisted query by POSTing to an already existing query path.
+
+   For example, use the persisted query:
+
+   ```xml
+   $ curl -X POST \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H "Content-Type: application/json" \
+       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
+       -d \
+   '{
+     articleList {
+       items{
+           _path
+           author
+           main {
+               json
+           }
+         referencearticle {
+           _path
+         }
+       }
+     }
+   }'
    ```
 
 1. To execute the query on publish, the related persist tree need to replicated
