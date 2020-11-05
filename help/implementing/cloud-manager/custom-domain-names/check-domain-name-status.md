@@ -48,6 +48,6 @@ A Canonical Name or `CNAME` record is a type of DNS record that maps an alias na
 
 Login to your Domain Registrar and create a CNAME record to point your custom domain name to the target as shown below:
 
-|[CNAME|Custom Domain Name Point to Target|
+|CNAME|Custom Domain Name Point to Target|
 |--- |--- |
 |www.customdomain.com|cdn.adobeaemcloud.com|
