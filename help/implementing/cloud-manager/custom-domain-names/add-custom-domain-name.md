@@ -7,7 +7,7 @@ description: Adding a Custom Domain Name
 
 A user must be a Business Owner or Deployment Manager in order to add a Custom Domain name in Cloud Manager.
 
->[NOTE]
+>[!NOTE]
 >Before adding a custom domain name, a valid SSL certificate that contains the custom domain name must be installed to your Program. See Installing an SSL Certificate (INSERT LINK) to learn more.
 
 Only one domain name can be added at a time. Users can, however, add wildcards, for example, `*.wknd.com` as a domain name, and that would allow multiple subdomains to be hosted with a single TXT record.
