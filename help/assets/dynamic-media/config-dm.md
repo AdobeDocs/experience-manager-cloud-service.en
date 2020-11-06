@@ -247,14 +247,14 @@ Doing so would do the following:
 * Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * Dynamic renditions that return CMYK output, will return it in the *WebCoated* color space.
 
-#### Configuring asset processing {#configuring-asset-processing}
+#### Editing MIME types for supported formats {#configuring-asset-processing}
 
-You can define which asset types should be processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
+You can define which asset types are processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
 
 * Convert an Adobe PDF to an eCatalog asset.
 * Convert an Adobe Photoshop Document (.PSD) to a banner template asset for personalization.
 * Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated Postscript file (.EPS).
-* Note: Video Profiles and Imaging Profiles can be used to define processing of videos and images, respectively.
+* [Video Profiles](/help/assets/dynamic-media/video-profiles.md) and [Imaging Profiles](/help/assets/dynamic-media/image-profiles.md) can be used to define processing of videos and images, respectively.
 
 See [Uploading Assets](/help/assets/add-assets.md).
 
@@ -270,9 +270,9 @@ To configure asset processing:
 1. Under the mimeTypes folder, select a mime type.
 1. On the right side of the CRXDE Lite page, in the lower portion:
 
-   * double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets will be synched to Dynamic Media for processing. If you wish to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
+   * Double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets will be synched to Dynamic Media for processing. If you want to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-   * double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given mime type.
+   * Double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given mime type.
 
 1. Do one of the following:
    * Repeat steps 3-4 to edit additional mime types.
@@ -280,11 +280,11 @@ To configure asset processing:
 
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to AEM.
 
-#### Adding custom MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
 
 You can add custom MIME types for unsupported formats in AEM Assets. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before `image_` and its enabled value is set to **[!UICONTROL false]**.
 
-To add custom MIME types for unsupported formats:
+To add MIME types for unsupported formats:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
