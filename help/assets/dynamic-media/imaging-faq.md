@@ -99,8 +99,6 @@ Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imag
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
-
 ## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 Smart Imaging works with images delivered over HTTP or HTTPS. In addition, it also works over HTTP/2.
