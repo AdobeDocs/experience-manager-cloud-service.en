@@ -73,7 +73,7 @@ To create standard processing profile, follow these steps:
    * File name of each rendition.
    * File format (PNG, JPEG, GIF, or WebP) of each rendition.
    * Width and height in pixels of each renditions. If the values are not specified, the full pixel size of the original image is used.
-   * Quality in percent of each JPEG rendition.
+   * Quality in percent of each JPEG and WebP rendition.
    * Included and excluded MIME types to define the applicability of a profile.
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
