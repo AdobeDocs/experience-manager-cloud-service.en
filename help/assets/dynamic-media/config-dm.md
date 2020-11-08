@@ -258,7 +258,7 @@ You can define which asset types are processed by Dynamic Media and customize ad
 
 See [Uploading Assets](/help/assets/add-assets.md).
 
-To configure asset processing:
+**To edit the MIME types for supported formats**
 
 1. In AEM, click the AEM logo to access the global navigation console, then click **[!UICONTROL General > CRXDE Lite]**.
 1. In the left rail, navigate to the following:
@@ -350,7 +350,7 @@ As an alternative, note that you can use **[!UICONTROL View Code]** with no form
 
 Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention may make use of one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
 
-To configure default naming:
+**To configure default naming**
 
 1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -384,7 +384,7 @@ You can create, edit, and manage your batch set presets. There are two forms of 
 
 You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
 
-To create a Batch Set Preset:
+**To create a Batch Set Preset**
 
 1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -440,7 +440,7 @@ Grouping for the shared asset name part of the spinset is added to the **Match**
 
 When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **Batch Set Presets** in the **Upload Job Options** dialog box.
 
-To create a Batch Set Preset for the auto-generation of a 2D Spin Set:
+**To create a Batch Set Preset for the auto-generation of a 2D Spin Set**
 
 1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
