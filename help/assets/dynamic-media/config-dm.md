@@ -186,8 +186,8 @@ Setup and configuration tasks include the following:
 * [Publishing setup for Image Server](#publishing-setup-for-image-server)
 * [Configuring application general settings](#configuring-application-general-settings)
 * [Configuring color management](#configuring-color-management)
-* [Configuring asset processing](#configuring-asset-processing)
-* [Adding custom MIME types for unsupported formats](#adding-custom-mime-types-for-unsupported-formats)
+* [Editing MIME types for supported formats](#editing-mime-types-for-supported-formats)
+* [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
 * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Publishing setup for Image Server {#publishing-setup-for-image-server}
@@ -247,7 +247,7 @@ Doing so would do the following:
 * Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * Dynamic renditions that return CMYK output, will return it in the *WebCoated* color space.
 
-#### Editing MIME types for supported formats {#configuring-asset-processing}
+#### Editing MIME types for supported formats {#editing-mime-types-for-supported-formats}
 
 You can define which asset types are processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
 
@@ -258,7 +258,7 @@ You can define which asset types are processed by Dynamic Media and customize ad
 
 See [Uploading Assets](/help/assets/add-assets.md).
 
-To configure asset processing:
+**To edit the MIME types for supported formats**
 
 1. In AEM, click the AEM logo to access the global navigation console, then click **[!UICONTROL General > CRXDE Lite]**.
 1. In the left rail, navigate to the following:
@@ -280,11 +280,11 @@ To configure asset processing:
 
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to AEM.
 
-#### Adding MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
 You can add custom MIME types for unsupported formats in AEM Assets. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before `image_` and its enabled value is set to **[!UICONTROL false]**.
 
-To add MIME types for unsupported formats:
+**To add MIME types for unsupported formats**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -350,7 +350,7 @@ As an alternative, note that you can use **[!UICONTROL View Code]** with no form
 
 Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention may make use of one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
 
-To configure default naming:
+**To configure default naming**
 
 1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -384,7 +384,7 @@ You can create, edit, and manage your batch set presets. There are two forms of 
 
 You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
 
-To create a Batch Set Preset:
+**To create a Batch Set Preset**
 
 1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -440,7 +440,7 @@ Grouping for the shared asset name part of the spinset is added to the **Match**
 
 When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **Batch Set Presets** in the **Upload Job Options** dialog box.
 
-To create a Batch Set Preset for the auto-generation of a 2D Spin Set:
+**To create a Batch Set Preset for the auto-generation of a 2D Spin Set**
 
 1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -535,9 +535,11 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+   You can increase **[!UICONTROL Maximum Parallel Jobs]** to adequately support heavy upload of files to Dynamic Media. The exact value is dependent on hardware capacity. In certain scenarios&ndash;that is, an initial migration or a one-time bulk upload&ndash;you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) may have negative effects on other concurrent activities. As such, you should test and adjust the value based on your particular use case.
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
