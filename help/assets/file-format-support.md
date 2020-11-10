@@ -54,9 +54,6 @@ The following legend describes the level of support.
 | JPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | PNG         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | TIFF        | &#10003;             | &#10003;            | &#10003;     | -        |
-| WebP        | &#10003;             | &#10003;            | -            | -        |
-
-* WebP support is currently for lossy compression and supports 0-100 values to change quality of image.
 
 ## Image formats in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
