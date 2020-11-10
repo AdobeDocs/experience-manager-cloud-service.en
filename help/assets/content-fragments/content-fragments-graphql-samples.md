@@ -21,7 +21,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use the model name; eg city
 
 * If you expect a list of results:
-  * add a trailing "s"; e.g. citys
+  * add "List" to the model name; for example,  `cityList`
 
 * If you want to use a logical OR:
   * use " _logOp: OR"
@@ -151,7 +151,7 @@ The following fragments are used for the appropriate model.
 | Basel | Switzerland | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
 | Bucharest | Romania | 1821000 | city:capital<br>city:emea |
-| San Francisco | USA | 883306 | city:na |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
 | San Jose | USA | 102635 | city:na |
 | Stuttgart | Germany | 634830 | city:emea |
 | Zurich | Switzerland | 415367 | city:capital<br>city:emea |
@@ -191,28 +191,48 @@ This will return all types for all available schemas.
     "__schema": {
       "types": [
         {
+          "name": "AdventureModel",
+          "description": null
+        },
+        {
+          "name": "AdventureModelArrayFilter",
+          "description": null
+        },
+        {
+          "name": "AdventureModelFilter",
+          "description": null
+        },
+        {
+          "name": "AdventureModelResult",
+          "description": null
+        },
+        {
+          "name": "AdventureModelResults",
+          "description": null
+        },
+        {
+          "name": "AllFragmentModels",
+          "description": null
+        },
+        {
+          "name": "ArchiveRef",
+          "description": null
+        },
+        {
           "name": "ArrayMode",
           "description": null
         },
         {
-          "name": "AwardModel",
+          "name": "ArticleModel",
           "description": null
-        },
-        {
-          "name": "AwardModelArrayFilter",
-          "description": null
-        },
-        {
-          "name": "AwardModelFilter",
-          "description": null
-        },
-        {
-          "name": "Boolean",
-          "description": "Built-in Boolean"
         },
 
 ...more results...
 
+        {
+          "name": "__EnumValue",
+          "description": null
+        },
         {
           "name": "__Field",
           "description": null
@@ -247,7 +267,7 @@ Using the structure of the nested fragments, this query returns the full details
 
 ```xml
 query {
-  companys {
+  companyList {
     items {
       name
       ceo {
@@ -277,90 +297,92 @@ query {
 ```xml
 {
   "data": {
-    "companys": [
-      {
-        "name": "Apple Inc.",
-        "ceo": {
-          "_path": "/content/dam/persons/steve-jobs",
-          "name": "Jobs",
-          "firstName": "Steve",
-          "awards": []
-        },
-        "employees": [
-          {
-            "name": "Marsh",
-            "firstName": "Duke",
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
             "awards": []
           },
-          {
-            "name": "Caulfield",
-            "firstName": "Max",
-            "awards": [
-              {
-                "id": "GB",
-                "title": "Gameblitz"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Little Pony, Inc.",
-        "ceo": {
-          "_path": "/content/dam/persons/adam-smith",
-          "name": "Smith",
-          "firstName": "Adam",
-          "awards": []
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
         },
-        "employees": [
-          {
-            "name": "Croft",
-            "firstName": "Lara",
-            "awards": [
-              {
-                "id": "GS",
-                "title": "Gamestar"
-              }
-            ]
-          },
-          {
-            "name": "Slade",
-            "firstName": "Cutter",
-            "awards": [
-              {
-                "id": "GB",
-                "title": "Gameblitz"
-              },
-              {
-                "id": "GS",
-                "title": "Gamestar"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "NextStep Inc.",
-        "ceo": {
-          "_path": "/content/dam/persons/steve-jobs",
-          "name": "Jobs",
-          "firstName": "Steve",
-          "awards": []
-        },
-        "employees": [
-          {
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
             "name": "Smith",
-            "firstName": "Joe",
+            "firstName": "Adam",
             "awards": []
           },
-          {
-            "name": "Lincoln",
-            "firstName": "Abraham",
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
             "awards": []
-          }
-        ]
-      }
-    ]
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
+          ]
+        }
+      ]
+    }
   }
 }
 ```
@@ -372,8 +394,9 @@ To retrieve all information about all cities, you can use the very basic query:
 
 ```xml
 {
-  citys
+  cityList {
     items
+  }
 }
 ```
 
@@ -381,7 +404,7 @@ When executed, the system will automatically expand the query to include all fie
 
 ```xml
 {
-  citys {
+  cityList {
     items {
       _path
       name
@@ -397,50 +420,52 @@ When executed, the system will automatically expand the query to include all fie
 ```xml
 {
   "data": {
-    "citys": [
-      {
-        "_path": "/content/dam/cities/basel",
-        "name": "Basel",
-        "country": "Switzerland",
-        "population": 172258
-      },
-      {
-        "_path": "/content/dam/cities/berlin",
-        "name": "Berlin",
-        "country": "Germany",
-        "population": 3669491
-      },
-      {
-        "_path": "/content/dam/cities/bucharest",
-        "name": "Bucharest",
-        "country": "Romania",
-        "population": 1821000
-      },
-      {
-        "_path": "/content/dam/cities/san-francisco",
-        "name": "San Francisco",
-        "country": "USA",
-        "population": 883306
-      },
-      {
-        "_path": "/content/dam/cities/san-jose",
-        "name": "San Jose",
-        "country": "USA",
-        "population": 1026350
-      },
-      {
-        "_path": "/content/dam/cities/stuttgart",
-        "name": "Stuttgart",
-        "country": "Germany",
-        "population": 634830
-      },
-      {
-        "_path": "/content/dam/cities/zurich",
-        "name": "Zurich",
-        "country": "Switzerland",
-        "population": 415367
-      }
-    ]
+    "cityList": {
+      "items": [
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/basel",
+          "name": "Basel",
+          "country": "Switzerland",
+          "population": 172258
+        },
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/berlin",
+          "name": "Berlin",
+          "country": "Germany",
+          "population": 3669491
+        },
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/bucharest",
+          "name": "Bucharest",
+          "country": "Romania",
+          "population": 1821000
+        },
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/san-francisco",
+          "name": "San Francisco",
+          "country": "USA",
+          "population": 883306
+        },
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/san-jose",
+          "name": "San Jose",
+          "country": "USA",
+          "population": 1026350
+        },
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/stuttgart",
+          "name": "Stuttgart",
+          "country": "Germany",
+          "population": 634830
+        },
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/zurich",
+          "name": "Zurich",
+          "country": "Switzerland",
+          "population": 415367
+        }
+      ]
+    }
   }
 }
 ```
@@ -453,7 +478,7 @@ This is a straightforward query to return the `name`of all entries in the `city`
 
 ```xml
 query {
-  citys {
+  cityList {
     items {
       name
     }
@@ -466,33 +491,36 @@ query {
 ```xml
 {
   "data": {
-    "citys": [
-      {
-        "name": "Basel"
-      },
-      {
-        "name": "Berlin"
-      },
-      {
-        "name": "Bucharest"
-      },
-      {
-        "name": "San Francisco"
-      },
-      {
-        "name": "San Jose"
-      },
-      {
-        "name": "Stuttgart"
-      },
-      {
-        "name": "Zurich"
-      }
-    ]
+    "cityList": {
+      "items": [
+        {
+          "name": "Basel"
+        },
+        {
+          "name": "Berlin"
+        },
+        {
+          "name": "Bucharest"
+        },
+        {
+          "name": "San Francisco"
+        },
+        {
+          "name": "San Jose"
+        },
+        {
+          "name": "Stuttgart"
+        },
+        {
+          "name": "Zurich"
+        }
+      ]
+    }
   }
 }
 ```
 
+<!--
 ### Sample Query - A Single City Fragment {#sample-single-city-fragment}
 
 This is a query to return the details of a single fragment entries at a specific location in the repository.
@@ -530,7 +558,9 @@ This is a query to return the details of a single fragment entries at a specific
   }
 }
 ```
+-->
 
+<!--
 ### Sample Query - All Cities with a Named Variation {#sample-cities-named-variation}
 
 If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the `city` Berlin, then you can use a query to return details of the variation.
@@ -539,7 +569,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 
 ```xml
 {
-  citys (variation: "berlin_centre") {
+  cityList (variation: "berlin_centre") {
     items {
       _path
       name
@@ -571,6 +601,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
   }
 }
 ```
+-->
 
 ### Sample Query - All Persons that have a name of "Jobs" or "Smith" {#sample-all-persons-jobs-smith}
 
@@ -579,7 +610,7 @@ This will filter all `persons` for any that have the name `Jobs`or `Smith`.
 
 ```xml
 query {
-  persons(filter: {
+  personList(filter: {
     name: {
       _logOp: OR
       _expressions: [
@@ -605,20 +636,22 @@ query {
 ```xml
 {
   "data": {
-    "persons": [
-      {
-        "name": "Smith",
-        "firstName": "Adam"
-      },
-      {
-        "name": "Smith",
-        "firstName": "Joe"
-      },
-      {
-        "name": "Jobs",
-        "firstName": "Steve"
-      }
-    ]
+    "personList": {
+      "items": [
+        {
+          "name": "Smith",
+          "firstName": "Adam"
+        },
+        {
+          "name": "Smith",
+          "firstName": "Joe"
+        },
+        {
+          "name": "Jobs",
+          "firstName": "Steve"
+        }
+      ]
+    }
   }
 }
 ```
@@ -631,7 +664,7 @@ Here a combination of fields are filtered on. An `AND` (implicit) is used to sel
 
 ```xml
 query {
-  citys(filter: {
+  cityList(filter: {
     population: {
       _expressions: [
         {
@@ -668,21 +701,22 @@ query {
 ```xml
 {
   "data": {
-    "citys": [
-      {
-        "name": "Stuttgart",
-        "population": 634830,
-        "country": "Germany"
-      },
-      {
-        "name": "Zurich",
-        "population": 415367,
-        "country": "Switzerland"
-      }
-    ]
+    "cityList": {
+      "items": [
+        {
+          "name": "Stuttgart",
+          "population": 634830,
+          "country": "Germany"
+        },
+        {
+          "name": "Zurich",
+          "population": 415367,
+          "country": "Switzerland"
+        }
+      ]
+    }
   }
-}
-```
+}```
 
 ### Sample Query - All cities with SAN in the name, irrespective of case {#sample-all-cities-san-ignore-case}
 
@@ -692,7 +726,7 @@ This query interrogates for all cities that have `SAN` in the name, irrespective
 
 ```xml
 query {
-  citys(filter: {
+  cityList(filter: {
     name: {
       _expressions: [
         {
@@ -717,7 +751,7 @@ query {
 ```xml
 {
   "data": {
-    "citys": {
+    "cityList": {
       "items": [
         {
           "name": "San Francisco",
@@ -743,7 +777,7 @@ This query filters on an array with an item (`city:na`) that must occur at least
 
 ```xml
 query {
-  citys(filter: {
+  cityList(filter: {
     categories: {
       _expressions: [
         {
@@ -768,7 +802,7 @@ query {
 ```xml
 {
   "data": {
-    "citys": {
+    "cityList": {
       "items": [
         {
           "name": "San Francisco",
@@ -801,7 +835,7 @@ This query filters on an exact array value.
 
 ```xml
 query {
-  citys(filter: {
+  cityList(filter: {
     categories: {
       _expressions: [
         {
@@ -828,7 +862,7 @@ query {
 ```xml
 {
   "data": {
-    "citys": {
+    "cityList": {
       "items": [
         {
           "name": "San Francisco",
@@ -853,7 +887,7 @@ This query illustrates filtering for any `person` of `name` "Smith", returning i
 
 ```xml
 query {
-  companys(filter: {
+  companyList(filter: {
     employees: {
       _match: {
         name: {
@@ -886,25 +920,27 @@ query {
 ```xml
 {
   "data": {
-    "companys": [
-      {
-        "name": "NextStep Inc.",
-        "ceo": {
-          "name": "Jobs",
-          "firstName": "Steve"
-        },
-        "employees": [
-          {
-            "name": "Smith",
-            "firstName": "Joe"
+    "companyList": {
+      "items": [
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "name": "Jobs",
+            "firstName": "Steve"
           },
-          {
-            "name": "Lincoln",
-            "firstName": "Abraham"
-          }
-        ]
-      }
-    ]
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe"
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham"
+            }
+          ]
+        }
+      ]
+    }
   }
 }
 ```
@@ -917,7 +953,7 @@ This query illustrates filtering across three nested fragments - `company`, `emp
 
 ```xml
 query {
-  companys(filter: {
+  companyList(filter: {
     employees: {
       _apply: ALL
       _match: {
@@ -960,41 +996,43 @@ query {
 ```xml
 {
   "data": {
-    "companys": [
-      {
-        "name": "Little Pony, Inc.",
-        "ceo": {
-          "name": "Smith",
-          "firstName": "Adam"
-        },
-        "employees": [
-          {
-            "name": "Croft",
-            "firstName": "Lara",
-            "awards": [
-              {
-                "id": "GS",
-                "title": "Gamestar"
-              }
-            ]
+    "companyList": {
+      "items": [
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "name": "Smith",
+            "firstName": "Adam"
           },
-          {
-            "name": "Slade",
-            "firstName": "Cutter",
-            "awards": [
-              {
-                "id": "GB",
-                "title": "Gameblitz"
-              },
-              {
-                "id": "GS",
-                "title": "Gamestar"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 }
 ```
@@ -1007,7 +1045,7 @@ This query illustrates filtering across three nested fragments - `company`, `emp
 
 ```xml
 query {
-  awards(filter: {
+  awardList(filter: {
       id: {
         _expressions: [
           {
@@ -1035,24 +1073,26 @@ query {
 ```xml
 {
   "data": {
-    "awards": [
-      {
-        "_metadata": {
-          "stringMetadata": [
-            {
-              "name": "title",
-              "value": "Gameblitz Award"
-            },
-            {
-              "name": "description",
-              "value": ""
-            }
-          ]
-        },
-        "id": "GB",
-        "title": "Gameblitz"
-      }
-    ]
+    "awardList": {
+      "items": [
+        {
+          "_metadata": {
+            "stringMetadata": [
+              {
+                "name": "title",
+                "value": "Gameblitz Award"
+              },
+              {
+                "name": "description",
+                "value": ""
+              }
+            ]
+          },
+          "id": "GB",
+          "title": "Gameblitz"
+        }
+      ]
+    }
   }
 }
 ```
@@ -1076,7 +1116,7 @@ This sample query interrogates:
 
 ```xml
 {
-  articles {
+  articleList {
     items {
       _path
       author
@@ -1096,7 +1136,7 @@ This query interrogates:
 
 ```xml
 {
-  adventures {
+  adventureList {
     items {
       _path,
       _metadata {
@@ -1161,36 +1201,43 @@ This sample query interrogates:
 
 ```xml
 {
-  article (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
-    _path
-    author
-    main {
-      html
-      markdown
-      plaintext
-      json
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+    item {
+        _path
+        author
+        main {
+          html
+          markdown
+          plaintext
+          json
+        }
     }
   }
 }
 ```
 
+<!--
 ### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
 
 **Sample Query**
 
 ```xml
 {
-  article (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
-    _path
-    author
-    fragments {
-      _path
-      author
+  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+    item {
+        _path
+        author
+        fragments {
+          _path
+					author
+      }
     }
   }
 }
 ```
+-->
 
+<!--
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
 ```xml
@@ -1211,12 +1258,13 @@ This sample query interrogates:
   }
 }
 ```
+-->
 
 ### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
 
 ```xml
 {
-  bookmarks {
+  bookmarkList {
     items {
       attachments {
         ... on PageRef {
@@ -1245,11 +1293,12 @@ This sample query interrogates:
 }
 ```
 
+<!--
 ### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
 
 ```xml
 {
-  bookmarks {
+  bookmarkList {
     items {
       _references {
          ... on ImageRef {
@@ -1277,7 +1326,9 @@ This sample query interrogates:
   }
 }
 ```
+-->
 
+<!--
 ### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
 
 **Sample Query**
@@ -1296,14 +1347,15 @@ This sample query interrogates:
   }
 }
 ```
+-->
 
 ### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
 
 **Sample Query**
 
 ```xml
-{
-  articles (_locale: "fr") {
+{ 
+  articleList (_locale: "fr") {
     items {
       _path
       author
@@ -1318,6 +1370,7 @@ This sample query interrogates:
 }
 ```
 
+<!--
 ### Sample Query for Image References {#sample-wknd-image-references}
 
 If you add two image references to a Content Fragment you can run such a sample query.
@@ -1337,3 +1390,4 @@ If you add two image references to a Content Fragment you can run such a sample 
   }
 }
 ```
+-->
