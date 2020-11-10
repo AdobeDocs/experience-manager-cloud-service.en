@@ -3,7 +3,7 @@ title: Overview to Best Practices Analyzer
 description: Overview to Best Practices Analyzer
 ---
 
-# Overview {#overview-best practices analyzer}
+# Overview {#overview-best-practices-analyzer}
 
 The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Additionally, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service.
  
