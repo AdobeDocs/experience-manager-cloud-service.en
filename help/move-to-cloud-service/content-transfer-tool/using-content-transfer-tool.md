@@ -43,6 +43,9 @@ The Content Transfer Tool can be downloaded as a zip file from the Software Dist
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
+>[!NOTE]
+>The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The *Extraction* process copies the entire `/home` into the migration set and the *Ingestion* process copies all users and groups referenced in the migrated content ACLs.
+
 Follow this section to learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish):
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Transfer**.
