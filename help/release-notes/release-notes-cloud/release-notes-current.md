@@ -55,7 +55,7 @@ Content to come
 
 ### Bug Fixes {#bug-fixes-commerce}
 
-* GraphQL client config was not not read correctly when the config is not specified in the Sling CA config directly, but in one of the parent configs. This has been fixed.
+* GraphQL client config was not read correctly when the config is not specified in the Sling CA config directly, but in one of the parent configs. This has been fixed.
 
 
 ### Cloud Manager {#cloud-manager}
