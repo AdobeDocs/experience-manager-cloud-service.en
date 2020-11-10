@@ -123,7 +123,7 @@ However, the following (space-separated list of) characters are not supported:
 To upload larger number of files, especially if they exist in a nested folder hierarchy on disk, the following approaches can be used:
 
 * Use a custom upload script or tool that leverages [asset upload APIs](developer-reference-material-apis.md#asset-upload-technical). Such a custom tool can add additional handling of assets (for example, translate metadata or rename files), if required.
-* Use [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies.
+* Use [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ To upload larger number of files, especially if they exist in a nested folder hi
 In addition to web browser user interface, Experience Manager supports other clients on desktop. They also provide upload experience without the need to go to the web browser.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from [!DNL Experience Manager] in Adobe Photoshop, Adobe Illustrator, and Adobe InDesign desktop applications. You can upload the currently open document into [!DNL Experience Manager] directly from Adobe Asset Link user interface from within these desktop applications.
-* [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, independent on their file type or native application that handles them. It is particularly useful to upload files in nested folder hierarchies from your local file system, as browser upload only supports uploading flat file lists.
+* [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, independent on their file type or native application that handles them. It is particularly useful to upload files in nested folder hierarchies from your local file system, as browser upload only supports uploading flat file lists.
 
 ## Additional processing {#additional-processing}
 
@@ -164,7 +164,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Technical reference for asset upload](developer-reference-material-apis.md#asset-upload-technical)

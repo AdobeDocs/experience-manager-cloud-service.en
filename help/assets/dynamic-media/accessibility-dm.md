@@ -10,6 +10,8 @@ content-type: reference
 
 Dynamic Media supports keyboard control and assistive technologies, such as JAWS and NVDA screen readers, across the authoring user interface.
 
+
+
 ## Keyboard accessibility support in Dynamic Media
 
 Keystrokes supported by individual user interface elements are&ndash;in most cases&ndash;obvious and easy to discover. Keyboard control in Dynamic Media is about the following:
@@ -18,9 +20,9 @@ Keystrokes supported by individual user interface elements are&ndash;in most cas
 Using `Tab` advances input focus to the next user interface element in the tabbing order; using `Shift+Tab` brings input focus back to the previous user interface element. 
 The focus traversal follows the natural user interface element location on the screen and moves in a left-to-right, then top-to-bottom order.
 * Ability to use the `Spacebar` and `Enter` key to activate standard user interface elements, such as buttons, drop-down list, and so on.
-* Ability to use some custom keystrokes to interact with complex UI elements, such as arrow keys in the Hot Spot Editor.
 * Ability to see the keyboard focus highlight on the active element. The user interface element that has input focus may receive a visual focus indication as a border rendered around the user interface element.
- 
+* Ability to use some custom keystrokes to interact with complex UI elements, such as arrow keys in the Hot Spot Editor. In the Image Crop/Smart Crop editor, you have the ability to use arrow keys to crop the frame size, or re-position the image, or both. 
+
 Because Dynamic Media is a plug-in to AEM Assets, most of the keyboard control behavior is exactly the same as in AEM Assets. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in AEM Assets, and reacts to the `Spacebar` key as in AEM Assets. See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts). Exceptions to this are the Hotspot editor and the Image Crop/Smart Crop editors.
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
