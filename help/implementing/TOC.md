@@ -42,7 +42,10 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
   + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
 + Developer Tools {#developer-tools}
+  + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
+  + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+  + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + Components and Templates {#components-templates}
   + [Components Overview](developing/components/overview.md)
   + [Templates](developing/components/templates.md)
