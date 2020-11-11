@@ -41,6 +41,8 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Page Diff](/help/implementing/developing/introduction/page-diff.md)
   + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
   + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
++ Developer Tools {#developer-tools}
+  + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
 + Components and Templates {#components-templates}
   + [Components Overview](developing/components/overview.md)
   + [Templates](developing/components/templates.md)
