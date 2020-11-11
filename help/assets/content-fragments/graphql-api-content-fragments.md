@@ -7,11 +7,12 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 
 >[!CAUTION]
 >
->The AEM GraphQL API functionality, for use with Content Fragments, will not be GAed until early 2021.
+>The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
 >
-> The related documentation is:
-> * liable to change at any time.
-> * already available for preview purposes.
+>The related documentation:
+>
+>* Has already been updated in line with the prospective changes.
+>* Is already available for preview purposes.
 
 The Adobe Experience Manager as a Cloud Service (AEM) GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
 
