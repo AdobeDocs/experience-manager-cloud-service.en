@@ -521,6 +521,7 @@ query {
 ```
 
 <!--
+
 ### Sample Query - A Single City Fragment {#sample-single-city-fragment}
 
 This is a query to return the details of a single fragment entries at a specific location in the repository.
@@ -558,9 +559,11 @@ This is a query to return the details of a single fragment entries at a specific
   }
 }
 ```
+
 -->
 
 <!--
+
 ### Sample Query - All Cities with a Named Variation {#sample-cities-named-variation}
 
 If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the `city` Berlin, then you can use a query to return details of the variation.
@@ -601,6 +604,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
   }
 }
 ```
+
 -->
 
 ### Sample Query - All Persons that have a name of "Jobs" or "Smith" {#sample-all-persons-jobs-smith}
@@ -716,7 +720,8 @@ query {
       ]
     }
   }
-}```
+}
+```
 
 ### Sample Query - All cities with SAN in the name, irrespective of case {#sample-all-cities-san-ignore-case}
 
@@ -1217,6 +1222,7 @@ This sample query interrogates:
 ```
 
 <!--
+
 ### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
 
 **Sample Query**
@@ -1235,9 +1241,11 @@ This sample query interrogates:
   }
 }
 ```
+
 -->
 
 <!--
+
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
 ```xml
@@ -1258,6 +1266,7 @@ This sample query interrogates:
   }
 }
 ```
+
 -->
 
 ### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
@@ -1294,6 +1303,7 @@ This sample query interrogates:
 ```
 
 <!--
+
 ### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
 
 ```xml
@@ -1326,9 +1336,11 @@ This sample query interrogates:
   }
 }
 ```
+
 -->
 
 <!--
+
 ### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
 
 **Sample Query**
@@ -1347,6 +1359,7 @@ This sample query interrogates:
   }
 }
 ```
+
 -->
 
 ### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
@@ -1371,6 +1384,7 @@ This sample query interrogates:
 ```
 
 <!--
+
 ### Sample Query for Image References {#sample-wknd-image-references}
 
 If you add two image references to a Content Fragment you can run such a sample query.
@@ -1390,4 +1404,5 @@ If you add two image references to a Content Fragment you can run such a sample 
   }
 }
 ```
+
 -->
