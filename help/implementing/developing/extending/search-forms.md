@@ -26,10 +26,8 @@ Using **Search Forms**, you can customize, and extend, these panels, according t
 The **Search Forms** provide an out-of-the-box selection of [predicates](#predicates-and-their-settings) that you can combine and define. The [dialogs for configuring these forms](#configuring-your-search-forms) can be accessed via:
 
 * **Tools**
-
-    * **General**
-
-        * **Search Forms**
+  * **General**
+    * **Search Forms**
 
 ## Default Forms {#default-forms}
 
@@ -39,35 +37,24 @@ When you first access the **Search Forms** console you can see that all the conf
 
 The default configurations (listed alphabetically) available are:
 
-* **Assets Admin Search Rail:**
-
-* **Page Editor (Documents search):**
-
-* **Page Editor (Experience Fragments Search):**
-
-* **Page Editor (Image search):**
-
-* **Page Editor (Manuscript search):**
-
-* **Page Editor (Page search):**
-
-* **Page Editor (Paragraphs search):**
-
-* **Page Editor (Product search):**
-
-* **Page Editor (Scene7 search)**:
-
-* **Page Editor (Video search)**:
-
-* **Project Admin Search Rail:**
-
-* **Project Translation Search Rail:**
-
-* **Sites Admin Search Rail**:
-
-* **Snippets Admin Search Rail**:
-
-* **Stock Admin Search Rail**:
+* **Assets Admin Search Rail**
+* **Page Editor (Documents search)**
+* **Page Editor (Experience Fragments Search)**
+* **Page Editor (Image search)**
+* **Page Editor (Manuscript search)**
+* **Page Editor (Page search)**
+* **Page Editor (Paragraphs search)**
+* **Page Editor (Product search)**
+* **Page Editor (Scene7 search)**
+* **Page Editor (Video search)**
+* **Project Admin Search Rail**
+* **Project Translation Search Rail**
+* **Sites Admin Search Rail**
+* **Snippets Admin Search Rail**
+* **Stock Admin Search Rail**
+* **Content Fragment Models Search Rail**
+* **Project Admin Search Rail**
+* **Project Translation Search Rail**
 
 >[!NOTE]
 >

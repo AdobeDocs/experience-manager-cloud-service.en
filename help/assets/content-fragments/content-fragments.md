@@ -10,24 +10,36 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 Content fragments contain structured content:
 
 * They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+* The structure can range between:
+  * Basic
+    * For example, a single, multi-line text field.
+    * Can be used for preparing straightforward content for use in page authoring.
+  * Complex
+    * A combination of many fields of varying data types, including text, number, boolean, data and time, amongst others.
+    * Can be used either for preparing more structured content for page authoring, or for delivery to your application.
+  * Nested
+    * The reference data types available allow you to nest your content.
+    * Tends to be used for delivery to your application.
 
 Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
 
 * enables you to use the component to manage which elements of a fragment to deliver
 * allows bulk-delivery, by adding multiple content fragment core components on the page being used for API delivery
 
-This and the following pages cover the tasks for creating, configuring and maintaining your content fragments:
+This and the following pages cover the tasks for creating, configuring, maintaining and using your content fragments:
 
-* [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - create your content fragments; then edit, publish and reference
+* [Enable Content Fragment functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - enabling, creating and defining your models
+* [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - create your content fragments; then edit, publish and reference
 * [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md) - author the fragment content and create variations of the Master
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - using markdown syntax for your fragment
 * [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) - adding associated content
 * [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md) - viewing and editing the fragment properties
+* Use [Content Fragments, together with GraphQL, to deliver content](/help/assets/content-fragments/content-fragments-graphql.md) for use in your applications. To help with this, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
->These pages should be read in conjunction with [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>These pages can be read in conjunction with [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
@@ -43,8 +55,19 @@ Content fragments allow you to:
 * Build content pools for a range of channels.
 * Design content variations for specific channels.
 * Add images to your text by inserting assets (mixed-media fragments).
+* Create nested content to reflect the complexity of your data.
 
 These content fragments can then be assembled to provide experiences over a variety of channels.
+
+>[!NOTE]
+>
+>**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
+>* **Content Fragments** are editorial content, that can be used to access structured data, including texts, numbers, and dates, amongst others. They are pure content, with definition and structure, but without additional visual design and/or layout.
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
+>
+>Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
+>
+>For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -64,13 +87,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 >[!NOTE]
 >
->**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
->* **Content Fragments** are editorial content, that can be used to access structured data, including texts, numbers, and dates, amongst others. They are pure content, with definition and structure, but without additional visual design and/or layout.
->* **Experience Fragments** are fully laid out content; a fragment of a web page.
->
->Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
->
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
+>See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >
