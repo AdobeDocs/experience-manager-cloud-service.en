@@ -9,6 +9,12 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 
 ## Cloud Manager {#cloud-manager}
 
+### Release Date {#release-date-cm}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2020.10.0 is October 02, 2020.
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+
 * The Environments page has been redesigned.
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
@@ -37,4 +43,3 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 * The validation of environment names had an off-by-one error.
 
 * The Environments page would sometimes show publish and dispatcher segments when none was present.
-
