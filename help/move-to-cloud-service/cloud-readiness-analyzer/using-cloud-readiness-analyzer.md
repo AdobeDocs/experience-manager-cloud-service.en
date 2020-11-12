@@ -141,9 +141,9 @@ A value of "\N" in an column for an individual finding indicates that no data wa
 The BPA provides an HTTP interface that may be used as an alternative to its user interface within AEM. The interface supports both HEAD and GET commands. It may be used to generate the BPA report and return it in one of three formats: JSON, CSV, and tab-separated values (TSV).
  
 The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
-* `http://<host>/apps/readiness-analyzer/analysis/result.json` for JSON format
-* `http://<host>/apps/readiness-analyzer/analysis/result.csv` for CSV format
-* `http://<host>/apps/readiness-analyzer/analysis/result.tsv` for TSV format
+* `http://<host>/apps/best-practices-analyzer/analysis/report.json` for JSON format
+* `http://<host>/apps/best-practices-analyzer/analysis/report.csv` for CSV format
+* `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` for TSV format
  
 ### Executing an HTTP Request {#executing-http-request}
  
@@ -154,7 +154,7 @@ One simple way is to open a browser tab in the same browser in which you have al
 You may also use a command-line tool such as `curl` or `wget` as well as any HTTP client application. When not using a browser tab with an authenticated session, you must supply an administrative user name and password as part of the comment. 
 
 The following is an example of how this can be done:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
  
 ### Headers and Parameters {#http-headers-and-parameters}
  
@@ -175,7 +175,7 @@ The following HTTP query parameters are available as a convenience for when HTTP
 When both an HTTP header and corresponding query parameter are present, the query parameter will take precedence.
 
 A simply way to initiate the generation of the report via the HTTP interface is with the following command:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
 Once a request has been made, the client need not remain active for the report to be generated. The report generation could be initiated with one client using an HTTP GET request and, once the report has been generated, viewed from the cache with another client or with the BPA tool in the AEM user interface.
 
@@ -197,7 +197,7 @@ The following response values are possible:
 The default BPA cache lifetime is 24 hours. With the option for refreshing a report, and regenerating the cache, in both the AEM instance and the HTTP interface, this default value is likely to be appropriate for most uses of the BPA. If the report generation time is particularly long for your AEM instance, you may wish to adjust the cache lifetime in order to minimize the regeneration of the report.
  
 The cache lifetime value is stored as the `maxCacheAge` property on the following repository node:
-`/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
+`/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
  
 The value of this property is the cache lifetime in seconds. An administrator may adjust the cache lifetime using CRX/DE Lite.
 
