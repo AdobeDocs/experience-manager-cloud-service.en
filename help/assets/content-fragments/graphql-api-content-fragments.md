@@ -234,7 +234,7 @@ You can view all the metadata GraphQL types if you view the Generated GraphQL sc
 >
 >So for example, by calling the `stringMetadata` field, you would receive an array of all the metadata that was stored in the repository as a `String` , and if you call `stringArrayMetadata` you would receive an array of all the metadata that was stored in the repository as `String[]`.
 
-See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md-samples#sample-metadata-awards-gb).
+See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb).
 
 #### Variations {#variations}
 
