@@ -15,9 +15,9 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 
 ### What's New {#what-is-new}
 
-* A new menu option **Login locally** is now be available to users from the environment menu options on the Environment card and Environments Summary pages. 
+* A new menu option **Local Login** is now be available to users from the environment menu options on the Environment card and Environments Summary pages. 
 
-* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI 
+* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
