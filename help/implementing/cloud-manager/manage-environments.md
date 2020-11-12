@@ -133,7 +133,7 @@ This option is also available, if you click on **Details** from the **Environmen
 
 ## Login Locally {#login-locally}
 
-Select **Local Login** from the dropdown menu in the **Environments** Card to login locally to Adobe Experience Manager 
+Select **Local Login** from the dropdown menu in the **Environments** Card to login locally to Adobe Experience Manager. 
 
 ![](assets/environ-login-locally.png)
 
