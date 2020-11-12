@@ -60,7 +60,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is November 12, 2020.
 
-### What's New {#what-is-new}
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * A new menu option **Local Login** is now be available to users from the environment menu options on the Environment card and Environments Summary pages. 
 
