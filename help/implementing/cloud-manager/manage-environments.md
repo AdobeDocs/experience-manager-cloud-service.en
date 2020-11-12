@@ -135,5 +135,9 @@ This option is also available, if you click on **Details** from the **Environmen
 
 Select **Local Login** from the dropdown menu in the **Environments** Card to login locally to Adobe Experience Manager 
 
-![](assets/environ-login.png)
+![](assets/environ-login-locally.png)
+
+Additionally, you can login locally from the **Environments** summary page.
+
+![](assets/environ-login-locally-2.png)
 
