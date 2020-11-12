@@ -131,3 +131,9 @@ Refer to [Hibernating and De-hibernating Sandbox Environments](https://docs.adob
 
 This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select an environment, click on **...** and select **Developer Console**.
 
+## Login Locally {#login-locally}
+
+Select **Local Login** from the dropdown menu in the **Environments** Card to login locally to Adobe Experience Manager 
+
+![](assets/environ-login.png)
+
