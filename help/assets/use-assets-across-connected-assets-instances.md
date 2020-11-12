@@ -21,7 +21,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Before you use or configure this capability, ensure the following:
 
 * The users are part of the appropriate user groups on each deployment.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. For information about [!DNL Experience Manager] 6.5, see [Connected Assets functionality in Experience Manager 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. For more information about how this functionality works in [!DNL Experience Manager] 6.5, see [Connected Assets in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
   | |[!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS| [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise|
   |---|---|---|---|
@@ -33,7 +33,7 @@ Before you use or configure this capability, ensure the following:
 
 Authors search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
-* **Image formats**: The formats that the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) supports. [!DNL Dynamic Media] images are not supported.
+* **Image formats**: The formats that the [Image component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) supports. [!DNL Dynamic Media] images are not supported.
 * **Document formats**: See the [supported document formats](file-format-support.md#document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
@@ -186,8 +186,8 @@ The fetched assets can be used as any other local asset, except that the associa
 
 To troubleshoot for the common error scenario, follow these steps:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and the prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/operations/asynchronous-jobs.md) for errors in asset fetching.
-* If you cannot access the remote DAM deployment from the local [!DNL Sites] deployment, ensure that cross-site cookies are allowed. If cross-site cookies are blocked the two deployments of [!DNL Experience Manager] may not authenticate. For example, [!DNL Google Chrome] in Incognito mode may block third-party cookies. To allow cookies in [!DNL Chrome] browser, click the 'eye' icon in the address bar, navigate to Site Not Working > Blocked, select the Remote DAM URL, and allow login-token cookie. Alternately, see help about [how to enable third-party cookies](https://support.google.com/chrome/answer/95647).
+* If you are unable to access the remote DAM deployment from the local [!DNL Sites] deployment, ensure that cross-site cookies are allowed. If cross-site cookies are blocked the two deployments of [!DNL Experience Manager] may not authenticate. For example, [!DNL Google Chrome] in Incognito mode may block third-party cookies. To allow cookies in [!DNL Chrome] browser, click the 'eye' icon in the address bar, navigate to Site Not Working > Blocked, select the Remote DAM URL, and allow login-token cookie. Alternately, see help about [how to enable third-party cookies](https://support.google.com/chrome/answer/95647).
 
   ![Cookie error in Chrome in incognito mode](assets/chrome-cookies-incognito-dialog.png)

@@ -1,6 +1,14 @@
 ---
 title: Creating Multiple Category and Product Pages
-description: Creating Multiple Category and Product Pages
+description: Learn how to enrich Category Landing and Product Detail pages with targeted marketing content.
+sub-product: Commerce
+version: cloud-service
+doc-type: feature-video
+activity: use
+audience: marketer
+feature: Commerce Integration Framework
+kt: 3455
+thumbnail: 28969.jpg
 ---
 
 # Creating Multiple Category and Product Pages

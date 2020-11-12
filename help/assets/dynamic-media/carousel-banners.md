@@ -269,7 +269,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
     * For hotspots: On the image, tap a location where you want the hotspot to appear.
     * For image maps: On the image, click, then drag from the top left to the bottom right to create the image map area. You can adjust the size of the image map by dragging the corners.
 
-   If necessary, drag the hotspot or the image map to a new location. Add additional hotspots or image maps as necessary.
+   If necessary, drag the hotspot or the image map to a new location. Or, use the keyboard arrow keys to control the position of a selected hot spot. Add additional hotspots or image maps as necessary.
 
    To delete a hotspot or image map, tap the **[!UICONTROL Actions]** tab. Under the **[!UICONTROL Maps & Hotspots]** heading, from the **[!UICONTROL Selected Type]** drop-down menu, select the name of the hotspot or image map you want to remove. Tap the **[!UICONTROL Trash]** icon next to the menu, then tap **[!UICONTROL Delete]**.
 
@@ -383,7 +383,7 @@ You can preview carousel banners from the Carousel Editor (preferred method) or 
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tap **[Preview]**.
+1. Tap **[!UICONTROL Preview]**.
 1. Tap the hotspots or image maps on the image to test their associated actions.
 
 **To preview carousel banners from the Viewers list**

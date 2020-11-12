@@ -19,7 +19,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.10.0 is Octobe
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
-* The Cloud Manager build container now supports both Java 8 and Java 11.
+* The Cloud Manager build container now supports compiling projects using either Java 8 or Java 11. Support for Java 11 is provided by the Maven toolchains system.
 
 * The number of environment variables per environment has been increased to 200.
 

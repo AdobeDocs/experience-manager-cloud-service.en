@@ -28,7 +28,7 @@ The following legend describes the level of support.
 
 ## Adobe formats {#adobe-formats}
 
-| File format | Thumbnail generation | Fulltext extraction | Metadata extraction | Width/Height |
+| File format | Thumbnail generation | Full-text extraction | Metadata extraction | Width/Height |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI          | &#10003;             | -                   | &#10003;            | &#10003;     |
 | COLLAGE     | -                    | -                   | &#10003;            | -            |
@@ -53,7 +53,6 @@ The following legend describes the level of support.
 | GIF         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | JPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | PNG         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
-| SVG         | -                    | &#10003;            | -            | -        |
 | TIFF        | &#10003;             | &#10003;            | &#10003;     | -        |
 
 ## Image formats in [!DNL Dynamic Media] {#image-support-dynamic-media}
@@ -131,7 +130,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 
 The document formats supported for asset management features are as follows.
 
-| File format | Thumbnail generation | Fulltext extraction | Width/Height | Metadata management | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| File format | Thumbnail generation | Full-text extraction | Width/Height | Metadata management | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF         | &#10003;             | &#10003;            | &#10003;     | &#10003;            | &#10003;         |
 | DOCX        | &#10003;             | &#10003;            | &#10003;     | &#10003;            | &#10003;         |

@@ -12,7 +12,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 is December 1, 2020.
 The following release (2020.12.0) will be on December 17, 2020
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sitess}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
@@ -37,13 +37,7 @@ The following release (2020.12.0) will be on December 17, 2020
 
 * **[!DNL Adobe Asset Link] version 2.1**: A new version of [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) extension for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] is available. It adds compatibility with the latest [!DNL Adobe Creative Cloud] applications with version 2021, released in October 2020.
 
-* **[!DNL Assets] WebP file support**: [!DNL Assets] as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets] WebP file support**: [!DNL Assets] as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience. See [create a standard processing profile](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -58,18 +52,18 @@ Content to come
 * GraphQL client config was not read correctly when the config is not specified in the Sling CA config directly, but in one of the parent configs. This has been fixed.
 
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * The Environments page has been redesigned.
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
-* The Cloud Manager build container now supports both Java 8 and Java 11.
+* The Cloud Manager build container now supports compiling projects using either Java 8 or Java 11. Support for Java 11 is provided by the Maven toolchains system.
 
 * The number of environment variables per environment has been increased to 200.
 
-* The Environment card on the Overview page will now list up to three environments. Users can select the **Show all** button to navigate to the Environment summary page to view a table with a complete list of environments.
-
+* The Environment card on the Overview page will now list up to three environments. Users can select the **Show All** button to navigate to the Environment summary page to view a table with a complete list of environments.
+   Refer to [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
@@ -94,7 +88,7 @@ Content to come
 
 ### Workflows {#workflows}
 
-* Support added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date.
+* Support was added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date. See [Search Workflow Instances](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
