@@ -56,7 +56,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ## Cloud Manager {#cloud-manager}
 
-### Release Date {#release-date}
+### Release Date {#release-date-cm}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is November 12, 2020.
 
