@@ -21,7 +21,7 @@ Or, the **Environments** page:
   ![](assets/download-logs2.png)
 
 
-## Logs through API {#logs-thorugh-api}
+## Logs through API {#logs-through-api}
 
 In addition to downloading logs through the UI, logs will be available through the API and the Command Line Interface. 
 
