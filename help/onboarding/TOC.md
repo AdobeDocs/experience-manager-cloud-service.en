@@ -37,7 +37,8 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Setting up your Project](getting-access-to-aem-in-cloud/setting-up-project.md)
     + [Understanding the Build Environment](getting-access-to-aem-in-cloud/build-environment-details.md)
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Release Notes for 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
     + [Release Notes for 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
     + [Release Notes for 2020.8.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
     + [Release Notes for 2020.7.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
