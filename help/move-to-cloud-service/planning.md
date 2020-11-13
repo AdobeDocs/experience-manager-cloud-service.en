@@ -33,7 +33,7 @@ The first step in the Planning phase is to assess your readiness to move from yo
 
 You will need to do a comprehensive assessment of your current AEM source code against the notable changes and deprecated features to determine the level of effort expected in the transition journey.
 
-You can accelerate the assessment step by running the Cloud Readiness Analyzer (CRA) on your current AEM version. For more details refer to [CRA Overview](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html).
+You can accelerate the assessment step by running the Best Practices Analyzer on your current AEM version. For more details refer to [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >If you already have access to Cloud Manager and a Cloud Service environment, it is recommended to run your current code in a Cloud Manager code quality pipeline to assess the required code changes to be compatible with Cloud Service.
