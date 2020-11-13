@@ -59,7 +59,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
    The above action will automatically scroll to the location of that finding in the report.
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzerr/assets/BPA_pic5.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
