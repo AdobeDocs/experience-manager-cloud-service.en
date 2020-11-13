@@ -42,38 +42,38 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
 1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic1.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Click on **Generate Report** to execute the Best Practices Analyzer. 
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic2.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic3.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. Once the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic4.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
    The above action will automatically scroll to the location of that finding in the report.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic5.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzerr/assets/BPA_pic5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic6.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
    >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**. 
    
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic7.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
    
    >[!NOTE]
    >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
    
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic8.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
    
 
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
