@@ -91,3 +91,19 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### Bug Fixes {#ctt-bug-fixes}
 
 * Content Transfer Tool was skipping content files if the migration set contained paths that had the partially similar file names. This has been fixed.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer is November 13, 2020.
+
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+
+* Cloud Readiness Analyzer is now Best Practices Analyzer (BPA). BPA provides a best practice assessment of your current AEM implementation and helps assess the readiness to move from an existing AEM instance to AEM as a Cloud Service.
+
+* A new detector was added to detect the use of `java.io.InputStream`, which can cause issues if used in AEM as a Cloud Service.
+
+### Bug Fixes {#bpa-bug-fixes}
+
+* Bug causing the positives related to the *textfield foundation* component was fixed.
