@@ -100,7 +100,7 @@ The Release Date for Best Practices Analyzer is November 13, 2020.
 
 ### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
-* Cloud Readiness Analyzer is now Best Practices Analyzer (BPA). BPA provides a best practice assessment of your current AEM implementation and helps assess the readiness to move from an existing AEM instance to AEM as a Cloud Service.
+* Cloud Readiness Analyzer is now Best Practices Analyzer (BPA). BPA provides a best practices assessment of your current AEM implementation and helps assess the readiness to move from an existing AEM instance to AEM as a Cloud Service.
 
 * A new detector was added to detect the use of `java.io.InputStream`, which can cause issues if used in AEM as a Cloud Service.
 
