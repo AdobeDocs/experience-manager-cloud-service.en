@@ -7,7 +7,7 @@ description: Learn how to enable certain Content Fragment functionality in the C
 
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
-Before using Content Fragments you need to use the Configuration Browser to:
+Before using Content Fragments you need to use the **Configuration Browser** to enable:
 
 * **Content Fragment Models** - mandatory
 * **GraphQL Persistent Queries** - optional
@@ -23,7 +23,11 @@ To enable content fragment functionality you need to:
 
 ### Enable Content Fragment Functionality in Configuration Browser {#enable-content-fragment-functionality-in-configuration-browser}
 
-To [use certain Content Fragment functionality](#creating-a-content-fragment-model) you **must** first enable them via the [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+To [use certain Content Fragment functionality](#creating-a-content-fragment-model) you **must** first enable them via the **Configuration Browser**:
+
+>[!NOTE]
+>
+>For further details see also [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 2. Select the location appropriate to your website.
@@ -34,7 +38,7 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
        * **Content Fragment Models** 
        * **GraphQL Persistent Queries**
 
-       ![configuration](assets/cfm-models-01.png)
+       ![Define configuration](assets/cfm-conf-01.png)
 
 4. Select **Create** to save the definition.
 
@@ -44,3 +48,4 @@ When the configuration **global** is enabled for content fragment functionality,
 
 To use other configurations (i.e. excluding global) with a comparable Assets folder, then you have to define the connection. This is done by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
+![Apply configuration](assets/cfm-conf-02.png)
