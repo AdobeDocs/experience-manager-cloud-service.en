@@ -23,7 +23,7 @@ To use Content Fragment Models you:
    >
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
-1. Specify the **Model Title**. You can also add a **Description** if required.
+1. Specify the **Model Title**. You can also add **Tags**, and a **Description** if required.
 
    ![title and description](assets/cfm-models-02.png)
 
