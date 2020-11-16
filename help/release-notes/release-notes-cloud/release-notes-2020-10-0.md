@@ -3,6 +3,7 @@ title: Release Notes for 2020.10.0 release of [!DNL Adobe Experience Manager] as
 description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.10.0.
 ---
 
+
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
@@ -61,11 +62,18 @@ Content to come
 
 ## Cloud Manager {#cloud-manager}
 
+### Release Date {#release-date-cm}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2020.10.0 is October 02, 2020.
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+
 * The Environments page has been redesigned.
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
-* The Cloud Manager build container now supports both Java 8 and Java 11.
+* The Cloud Manager build container now supports compiling projects using either Java 8 or Java 11. Support for Java 11 is provided by the Maven toolchains system.
+
 
 * The number of environment variables per environment has been increased to 200.
 
@@ -90,7 +98,6 @@ Content to come
 
 * The Environments page would sometimes show publish and dispatcher segments when none was present.
 
-
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
 ### Workflows {#workflows}
@@ -108,3 +115,4 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### Bug Fixes {#ctt-bug-fixes}
 
 * Content Transfer Tool was skipping content files if the migration set contained paths that had the partially similar file names. This has been fixed.
+

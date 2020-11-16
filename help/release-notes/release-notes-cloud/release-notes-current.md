@@ -1,11 +1,11 @@
 ---
-title: Release Notes for 2020.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.10.0.
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 ---
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
 ## Release Date {#release-date}
 
@@ -52,37 +52,26 @@ The following release (2020.12.0) will be on December 17, 2020
 * GraphQL client config was not read correctly when the config is not specified in the Sling CA config directly, but in one of the parent configs. This has been fixed.
 
 
+
 ## Cloud Manager {#cloud-manager}
 
-* The Environments page has been redesigned.
+### Release Date {#release-date-cm}
 
-* Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is November 12, 2020.
 
-* The Cloud Manager build container now supports compiling projects using either Java 8 or Java 11. Support for Java 11 is provided by the Maven toolchains system.
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* The number of environment variables per environment has been increased to 200.
+* A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
+   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
 
-* The Environment card on the Overview page will now list up to three environments. Users can select the **Show All** button to navigate to the Environment summary page to view a table with a complete list of environments.
-   Refer to [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
+* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* The link from Cloud Manager to the Developer Console was incorrectly active before environments were fully created.
-
-* The link to the Developer Console directly from Cloud Manager did not display the option to de-hibernate/hibernate a Sandbox Program's environment.
-
-* The Cancel and Save buttons on the Non-Production Pipeline Edit page were not always visible.
-
-* Certain failures in the code quality process could result in the log file not being generated correctly.
-
-* When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
-
-* Some large pipeline step logs could not be consistently downloaded through the user interface.
-
-* The validation of environment names had an off-by-one error.
-
-* The Environments page would sometimes show publish and dispatcher segments when none was present.
-
+* The loading of dependencies done prior to build execution required downloading a Maven plugin.
+* The link from the Cloud Manager footer to select a language will now navigate to the correct location.
+* Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
+* All existing production pipelines will be automatically enabled with the Experience Audit step. 
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -101,3 +90,19 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### Bug Fixes {#ctt-bug-fixes}
 
 * Content Transfer Tool was skipping content files if the migration set contained paths that had the partially similar file names. This has been fixed.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer is November 13, 2020.
+
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+
+* Cloud Readiness Analyzer is now Best Practices Analyzer (BPA). BPA provides a best practices assessment of your current AEM implementation and helps assess the readiness to move from an existing AEM instance to AEM as a Cloud Service.
+
+* A new detector was added to detect the use of `java.io.InputStream`, which can cause issues if used in AEM as a Cloud Service.
+
+### Bug Fixes {#bpa-bug-fixes}
+
+* Bug causing the positives related to the *textfield foundation* component was fixed.
