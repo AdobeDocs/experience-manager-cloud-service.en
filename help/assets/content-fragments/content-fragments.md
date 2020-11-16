@@ -39,7 +39,13 @@ This and the following pages cover the tasks for creating, configuring, maintain
 
 >[!NOTE]
 >
->These pages can be read in conjunction with [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>These pages can be read in conjunction with:
+>
+>* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
+>* [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
@@ -67,7 +73,7 @@ These content fragments can then be assembled to provide experiences over a vari
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
+>For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments).
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -111,6 +117,8 @@ Content fragments are:
 * Used in the [page editor by means of the Content Fragment component](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (referencing component):
 
   * The **Content Fragment** component is available to page authors. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
+
+* Accessible using the [AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 Content Fragments are a content structure that:
 
@@ -178,13 +186,13 @@ The content fragment assets are made up of the following parts (either directly 
   * Can only be added to multi-line text elements (any fragment type).
   * Are attached to the preceding text (paragraph).
 
-  >[!CAUTION]
-  >
-  >Can be (inadvertently) removed from a fragment by switching to Plain Text format.
+    >[!CAUTION]
+    >
+    >Assets can be (inadvertently) removed from a fragment by switching to Plain Text format.
 
-  >[!NOTE]
-  >
-  >Assets can also be added as [additional (in-between) content](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) when using a fragment on a page; using either Associated Content or assets from the Assets browser.
+    >[!NOTE]
+    >
+    >Assets can also be added as [additional (in-between) content](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) when using a fragment on a page; using either Associated Content or assets from the Assets browser.
 
 * **Associated Content**
 
@@ -247,17 +255,20 @@ In-between content:
 
 ### Required by Fragments {#required-by-fragments}
 
-To create, edit and use content fragments you also need:
+To create content fragments you  need:
 
 * **Content Model**
 
-  * Are [enabled and then created using Tools](/help/assets/content-fragments/content-fragments-models.md).
+  * Are [enabled using the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+  * Are [created using Tools](/help/assets/content-fragments/content-fragments-models.md).
   * Required to [create a fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
-  * Content models definitions require a title and one data element; everything else is optional. 
+  * Content model definitions require a title and one data element; everything else is optional. 
   * The model can define default content - if applicable. 
   * Authors cannot change the defined structure when authoring fragment content.
   * Changes made to a model after dependent content fragments have been created, can impact those content fragments.
+
+To use your Content Fragments for page authoring you also need:
 
 * **Content Fragment Component**
 
