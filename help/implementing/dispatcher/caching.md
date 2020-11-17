@@ -21,6 +21,17 @@ This page also describes how dispatcher cache is invalidated, as well as how cac
 ```
 <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Age 0
+</LocationMatch>
+
+```
+
+Exercise caution when setting global cache control headers or those that match a wide regex so they are not applied to content that you might intend to keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service will remove the cache header if it detects that it has been applied to what it detects to be uncacheable by dispatcher, as described in dispatcher documentation. In order to force AEM to always apply caching, one can add the "always" option as follows:
+
+```
+<LocationMatch "\.(html)$">
+        Header always set Cache-Control "max-age=200"
+        Header set Age 0
 </LocationMatch>
 
 ```
@@ -36,7 +47,7 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 * To prevent specific content from being cached, set the Cache-Control header to "private". For example, the following would prevent html content under a directory named "myfolder" from being cached:
 
 ```
-<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
     Header set Cache-Control “private”
 </LocationMatch>
 
@@ -55,11 +66,14 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 * can be set on a finer grained level by the following apache `mod_headers` directives:
 
 ```
-<LocationMatch "^.*.jpeg$">
+<LocationMatch "^\.*.(jpeg|jpg)$">
     Header set Cache-Control "max-age=222"
+    Header set Age 0
 </LocationMatch>
 
 ```
+
+See the discussion in the html/text section above for exercising caution to not cache too widely and also how to force AEM to always apply caching with the "always" option.
 
 It is necessary to ensure that a file under src/conf.dispatcher.d/cache has the following rule (which is in the default configuration):
 
