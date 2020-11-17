@@ -187,7 +187,12 @@ Content Fragments can form nested content, using either of the following data ty
 
 The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify the **Root Path** for any referenced content.
+In addition to standard properties you can specify:
+
+* The **Root Path** for any referenced content.
+* The content types that can be referenced.
+* Limitations for file sizes.
+* Image restraints.
 
 <!-- Check screenshot - might need update -->
 
@@ -329,9 +334,8 @@ To publish a content fragment model:
 
 ## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
 
-Content fragment models that have been published can be unpublished if they are not referenced by any fragments.
+Content fragment models can be unpublished if they are not referenced by any fragments.
 
-<!--
 To unpublish a content fragment model:
 
 1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
@@ -339,4 +343,3 @@ To unpublish a content fragment model:
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
--->
