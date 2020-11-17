@@ -73,8 +73,6 @@ The following actions are also available (for all the [formats](#formats)) when 
 
 * [Upload content](#uploading-content)
 
-* [Annotate](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) your text
-
 * [Show Text Statistics](#viewing-key-statistics)
 
 * [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
@@ -240,13 +238,27 @@ To annotate a fragment:
 
 1. Select **Master** or the required variation.
 1. Open the full-screen editor.
-1. Select some text. The **Annotate** icon becomes available.
+1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
 
    ![annotate](assets/cfm-variations-07.png)
 
 1. A dialog will open. Here you can enter your annotation.
 
-1. Close the full-screen editor and **Save** the fragment.
+   ![annotate](assets/cfm-variations-07a.png)
+
+1. Select **Apply** on the dialog. 
+
+   ![annotate](assets/cfm-variations-annotations-apply-icon.png)
+
+   If the annotation was applied to selected text, then that text will remain highlighted.
+
+   ![annotate](assets/cfm-variations-07b.png)
+
+1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
+
+   ![annotate](assets/cfm-variations-07c.png)
+
+1. Select **Save**.
 
 ### Viewing, Editing, Deleting Annotations {#viewing-editing-deleting-annotations}
 
@@ -365,7 +377,7 @@ You can make changes to the variation content after either:
 * [Creating your variation](#creating-a-variation).
 * Opening an existing fragment, then selecting the required variation from the side panel.
 
-![creating a variation](assets/cfm-variations-10.png)
+![editing a variation](assets/cfm-variations-10.png)
 
 ### Renaming a Variation {#renaming-a-variation}
 
@@ -418,7 +430,11 @@ When editing a variation you have access to the action for synchronizing the cur
 
    * the **Actions** drop down selector - **Sync current element with master**
 
+      ![synchronizing with master](assets/cfm-variations-11a.png)
+
    * the toolbar of the full-screen editor - **Sync with master**
+
+      ![synchronizing with master](assets/cfm-variations-11b.png)
 
 1. Master and the variation will be shown side-by-side:
 
@@ -426,6 +442,6 @@ When editing a variation you have access to the action for synchronizing the cur
    * red indicates content removed (from the variation)
    * blue indicates replaced text
 
-   ![synchronizing with master](assets/cfm-variations-11.png)
+   ![synchronizing with master](assets/cfm-variations-11c.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
