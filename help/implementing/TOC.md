@@ -88,6 +88,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md)
+      + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
     + Delivery API {#delivery-api}
       + [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
