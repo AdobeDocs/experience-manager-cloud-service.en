@@ -18,13 +18,13 @@ This page also describes how dispatcher cache is invalidated, as well as how cac
 * can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools. 
 * can be overridden on a finer grained level by the following apache mod_headers directives:
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
+   </LocationMatch>
 
-```
+   ```
 
 Exercise caution when setting global cache control headers or those that match a wide regex so they are not applied to content that you might intend to keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service will remove the cache header if it detects that it has been applied to what it detects to be uncacheable by dispatcher, as described in dispatcher documentation. In order to force AEM to always apply caching, one can add the "always" option as follows:
 
@@ -33,7 +33,6 @@ Exercise caution when setting global cache control headers or those that match a
         Header always set Cache-Control "max-age=200"
         Header set Age 0
 </LocationMatch>
-
 ```
 
 You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule (which is in the default configuration):
@@ -44,16 +43,17 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 
 ```
 
-* To prevent specific content from being cached, set the Cache-Control header to "private". For example, the following would prevent html content under a directory named "myfolder" from being cached:
+* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
 
-```
-<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
 
-```
+   ```
 
-* Note that other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >[!NOTE]
+   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
@@ -65,13 +65,13 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 * by default, not cached
 * can be set on a finer grained level by the following apache `mod_headers` directives:
 
-```
-<LocationMatch "^\.*.(jpeg|jpg)$">
-    Header set Cache-Control "max-age=222"
-    Header set Age 0
-</LocationMatch>
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
 
-```
+   ```
 
 See the discussion in the html/text section above for exercising caution to not cache too widely and also how to force AEM to always apply caching with the "always" option.
 
@@ -85,7 +85,8 @@ It is necessary to ensure that a file under src/conf.dispatcher.d/cache has the 
 
 Make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
 
-* Note that other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+>[!NOTE]
+>The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### Other content file types in node store {#other-content}
 
