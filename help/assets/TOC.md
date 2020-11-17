@@ -70,6 +70,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Metadata - Fragment Properties](content-fragments/content-fragments-metadata.md)
   + [Content Fragments - Delete Considerations](content-fragments/content-fragments-delete.md)
   + [Markdown](content-fragments/content-fragments-markdown.md)
+  + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
   + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
   + [Dynamic Media Newsletter by Experience League](dynamic-media/dynamic-media-newsletter.md)
