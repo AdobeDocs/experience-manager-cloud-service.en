@@ -34,7 +34,7 @@ This page also describes how dispatcher cache is invalidated, as well as how cac
         Header set Age 0
    </LocationMatch>
 
-  ```
+   ```
 
    You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule (which is in the default configuration):
 
