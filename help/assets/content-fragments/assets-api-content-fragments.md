@@ -5,6 +5,12 @@ description: Learn about Adobe Experience Manager as a Cloud Service Content Fra
 
 # Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}
 
+>[!CAUTION]
+>
+>The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
+>
+>The related documentation is already available for preview purposes.
+
 ## Overview {#overview}
 
 >[!NOTE]
