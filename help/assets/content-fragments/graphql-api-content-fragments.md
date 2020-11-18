@@ -393,8 +393,11 @@ Here are the steps required to persist a given query:
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
-   '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
+
+<!--
+   '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
+-->
 
 1. Create a wrapped plain query with cache control.
 
@@ -452,6 +455,7 @@ Here are the steps required to persist a given query:
 1. To execute the query on publish, the related persist tree need to replicated
 
    * Using a POST for replication:
+
      ```xml
      $curl -X POST   http://localhost:4502/bin/replicate.json \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
