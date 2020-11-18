@@ -5,6 +5,12 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 
 # Working with Content Fragments{#working-with-content-fragments}
 
+>[!CAUTION]
+>
+>The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
+>
+>The related documentation is already available for preview purposes.
+
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.
 
 Content fragments contain structured content:
