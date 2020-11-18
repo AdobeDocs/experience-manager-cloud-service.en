@@ -354,9 +354,7 @@ Here are the steps required to persist a given query:
 
    ```xml
    $ curl -X GET \
-      http://localhost:4502/graphql/execute.json/wknd/plain-article-query \
-      -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-      -H 'content-type: application/json'
+       http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
 1. Update a persisted query by POSTing to an already existing query path.
@@ -385,9 +383,76 @@ Here are the steps required to persist a given query:
    }'
    ```
 
+1. Create a wrapped plain query.
+
+   For example:
+
+   ```xml
+   $ curl -X PUT \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H "Content-Type: application/json" \
+       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
+       -d \
+   '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
+   ```
+
+1. Create a wrapped plain query with cache control.
+
+   For example:
+
+   ```xml
+   $ curl -X PUT \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H "Content-Type: application/json" \
+       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+       -d \
+   '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+   ```
+
+1. Create a persisted query with parameters:
+
+   For example:
+
+   ```xml
+   $ curl -X PUT \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H "Content-Type: application/json" \
+       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
+       -d \
+   'query GetAsGraphqlModelTestByPath($apath: String!, $withReference: Boolean = true) {
+     articleByPath(_path: $apath) {
+       item {
+         _path
+           author
+           main {
+           plaintext
+           }
+           referencearticle @include(if: $withReference) {
+           _path
+           }
+         }
+       }
+     }'
+   ```
+
+1. Executing a query with parameters.
+
+   For example:
+
+   ```xml
+   $ curl -X POST \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H "Content-Type: application/json" \
+       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+
+   $ curl -X GET \
+       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+   ```
+
 1. To execute the query on publish, the related persist tree need to replicated
 
    * Using a POST for replication:
+
      ```xml
      $curl -X POST   http://localhost:4502/bin/replicate.json \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
@@ -397,25 +462,62 @@ Here are the steps required to persist a given query:
 
    * Using a package:
      1. Create a new package definition.
-     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`
-     1. ).
+     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
      1. Build the package.
      1. Replicate the package.
 
-   * Using replication/distribution tool
-     1. Go in the Distribution tool
-     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`)
+   * Using replication/distribution tool.
+     1. Go to the Distribution tool.
+     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
    * Using a workflow (via workflow launcher configuration):
      1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. Once the query configuration is on publish, the same apply as in 4. just using the publish endpoint.
+1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
 
    >[!NOTE]
    >
    >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
    >
    >If that is not the case it will not be able to execute.
+
+   >[!NOTE]
+   >
+   >Any semicolons (";") in the URLs need to be encoded.
+   >
+   >For example, as in the request to Execute a persisted query:
+   >
+   >```xml
+   >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+   >```
+
+## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
+
+>[!NOTE]
+>
+>For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
+
+To allow a third party website to consume JSON output, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint. This configuration should specify a trusted web site name (or regex) for which access should be granted.
+
+* Accessing the GraphQL endpoint:
+
+  * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
+  * supportedmethods: [POST]
+  * allowedpaths: ["/apps/graphql-enablement/content/endpoint.gql(/persisted)?"]
+
+* Accessing the GraphQL persisted queries endpoint:
+
+  * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
+  * supportedmethods: [GET]
+  * allowedpaths: ["/graphql/execute.json/.*"]
+
+>[!CAUTION]
+>
+>It remains the customer's responsibility to:
+>
+>* only grant access to trusted domains 
+>* not use a wildcard [*] syntax; which will expose the GraphQL endpoints to the entire world.
+
 
 ## Filtering {#filtering}
 
