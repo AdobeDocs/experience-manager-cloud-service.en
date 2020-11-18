@@ -18,7 +18,7 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 >Content fragments can be used:
 >
 >* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
->* for [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/authoring/fundamentals/content-fragments-graphql.md).
+>* for [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 ## Creating Content Fragments {#creating-content-fragments}
 
