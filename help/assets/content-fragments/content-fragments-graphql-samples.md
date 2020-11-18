@@ -50,7 +50,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
   * `_locale` : to reveal the language; based on Language Manager
 
-  * `_references` : to reveal references
+  * `_references` : to reveal references; including inline references in the Rich Text Editor
 
   * `_ignoreCase` : to ignore the case when querying
 
@@ -613,6 +613,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 ### Sample Query - All Persons that have a name of "Jobs" or "Smith" {#sample-all-persons-jobs-smith}
 
 This will filter all `persons` for any that have the name `Jobs`or `Smith`.
+
 **Sample Query**
 
 ```xml
@@ -656,6 +657,73 @@ query {
         {
           "name": "Jobs",
           "firstName": "Steve"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - All Persons that do not have a name of "Jobs" {#sample-all-persons-not-jobs}
+
+This will filter all `persons` for any that have the name `Jobs`or `Smith`.
+
+**Sample Query**
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "personList": {
+      "items": [
+        {
+          "name": "Lincoln",
+          "firstName": "Abraham"
+        },
+        {
+          "name": "Smith",
+          "firstName": "Adam"
+        },
+        {
+          "name": "Slade",
+          "firstName": "Cutter"
+        },
+        {
+          "name": "Marsh",
+          "firstName": "Duke"
+        },
+        {
+          "name": "Smith",
+          "firstName": "Joe"
+        },
+        {
+          "name": "Croft",
+          "firstName": "Lara"
+        },
+        {
+          "name": "Caulfield",
+          "firstName": "Max"
         }
       ]
     }
@@ -1356,6 +1424,64 @@ This sample query interrogates:
 ```xml
 { 
   articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+### Sample Query for a single Content Fragment with RTE Inline Reference {#sample-wknd-single-fragment-rte-inline-reference}
+
+**Sample Query**
+
+```xml
+{
+  bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
+    item {
+      _path
+      description {
+        json
+      }
+    }
+    _references {
+      ... on ArticleModel {
+        _path
+      }
+      ... on AdventureModel {
+        _path
+      }
+      ... on ImageRef {
+        _path
+      }
+      ... on MultimediaRef {
+        _path
+      }
+      ... on DocumentRef {
+        _path
+      }
+      ... on ArchiveRef {
+        _path
+      }
+    }
+  }
+}
+```
+
+### Sample Query for a named Variation of multiple Content Fragments of a given Model {#sample-wknd-variation-multiple-fragment-given-model}
+
+**Sample Query**
+
+```xml
+{
+  articleList (variation: "variation1") {
     items {
       _path
       author
