@@ -394,7 +394,7 @@ Here are the steps required to persist a given query:
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
-    ```
+   ```
 
 1. Create a wrapped plain query with cache control.
 
