@@ -44,13 +44,13 @@ Sandbox Programs are delivered to a development environment at the time of progr
 
 The Production-Stage environment set can be manually added to the Sandbox Program, when the user is ready to setup a production pipeline. 
 
-To learn how to manually create an environment, refer to [Adding Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
+To learn how to manually create an environment, refer to [Adding Environment](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
 ### Deleting Sandbox Environments {#deleting-sandbox-environments}
 
 User with the requisite permissions can delete a Development or Production/Stage environment  or sets. 
 
-To delete an environment, refer to [Deleting Environments](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) for more details.
+To delete an environment, refer to [Deleting Environment](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) for more details.
 
 
 ## Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
@@ -169,7 +169,7 @@ Few key considerations related to hibernated and de-hibernated environments are:
 
 ## AEM Updates to Sandbox Environments {#aem-updates-sandbox}
 
-Refer to [AEM version updates](/help/implementing/deploying/overview.md#version-updates) for more details.
+Refer to [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.
 
 A user can manually apply AEM updates to the environments in a Sandbox Program.
 
