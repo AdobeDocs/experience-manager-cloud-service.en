@@ -526,8 +526,6 @@ query {
 }
 ```
 
-<!--
-
 ### Sample Query - A Single City Fragment {#sample-single-city-fragment}
 
 This is a query to return the details of a single fragment entries at a specific location in the repository.
@@ -536,13 +534,14 @@ This is a query to return the details of a single fragment entries at a specific
 
 ```xml
 {
-  city (_path: "/content/dam/cities/berlin") {
-    _path
-    name
-    country
-    population
-    categories
-
+  cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
+    item {
+      _path
+      name
+      country
+      population
+     categories
+    }
   }
 }
 ```
@@ -552,23 +551,21 @@ This is a query to return the details of a single fragment entries at a specific
 ```xml
 {
   "data": {
-    "city": {
-      "_path": "/content/dam/cities/berlin",
-      "name": "Berlin",
-      "country": "Germany",
-      "population": 3669491,
-      "categories": [
-        "city:capital",
-        "city:emea"
-      ]
+    "cityByPath": {
+      "item": {
+        "_path": "/content/dam/sample-content-fragments/cities/berlin",
+        "name": "Berlin",
+        "country": "Germany",
+        "population": 3669491,
+        "categories": [
+          "city:capital",
+          "city:emea"
+        ]
+      }
     }
   }
 }
 ```
-
--->
-
-<!--
 
 ### Sample Query - All Cities with a Named Variation {#sample-cities-named-variation}
 
@@ -578,7 +575,7 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 
 ```xml
 {
-  cityList (variation: "berlin_centre") {
+  cityList (variation: "berlin_center") {
     items {
       _path
       name
@@ -595,23 +592,23 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 ```xml
 {
   "data": {
-    "citys": [
-      {
-        "_path": "/content/dam/cities/berlin",
-        "name": "Berlin",
-        "country": "Germany",
-        "population": 3669491,
-        "categories": [
-          "city:capital",
-          "city:emea"
-        ]
-      }
-    ]
+    "cityList": {
+      "items": [
+        {
+          "_path": "/content/dam/sample-content-fragments/cities/berlin",
+          "name": "Berlin",
+          "country": "Germany",
+          "population": 3669491,
+          "categories": [
+            "city:capital",
+            "city:emea"
+          ]
+        }
+      ]
+    }
   }
 }
 ```
-
--->
 
 ### Sample Query - All Persons that have a name of "Jobs" or "Smith" {#sample-all-persons-jobs-smith}
 
@@ -1227,8 +1224,6 @@ This sample query interrogates:
 }
 ```
 
-<!--
-
 ### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
 
 **Sample Query**
@@ -1239,24 +1234,20 @@ This sample query interrogates:
     item {
         _path
         author
-        fragments {
+        referencearticle {
           _path
-					author
+          author
       }
     }
   }
 }
 ```
 
--->
-
-<!--
-
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
 ```xml
 {
-  bookmarks {
+  bookmarkList {
     items {
         fragments {
           ... on ArticleModel {
@@ -1272,8 +1263,6 @@ This sample query interrogates:
   }
 }
 ```
-
--->
 
 ### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
 
@@ -1308,44 +1297,36 @@ This sample query interrogates:
 }
 ```
 
-<!--
-
 ### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
 
 ```xml
 {
   bookmarkList {
-    items {
-      _references {
-         ... on ImageRef {
-          _path
-          type
-          height
-        }
-        ... on MultimediaRef {
-          _path
-          type
-          size
-        }
-        ... on DocumentRef {
-          _path
-          type
-          author
-        }
-        ... on ArchiveRef {
-          _path
-          type
-          format
-        }
+    _references {
+       ... on ImageRef {
+        _path
+        type
+        height
+      }
+      ... on MultimediaRef {
+        _path
+        type
+        size
+      }
+      ... on DocumentRef {
+        _path
+        type
+        author
+      }
+      ... on ArchiveRef {
+        _path
+        type
+        format
       }
     }
   }
 }
 ```
-
--->
-
-<!--
 
 ### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
 
@@ -1353,20 +1334,20 @@ This sample query interrogates:
 
 ```xml
 {
-  article (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    _path
-    author
-    main {
-      html
-      markdown
-      plaintext
-      json
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
     }
   }
 }
 ```
-
--->
 
 ### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
 
@@ -1388,27 +1369,3 @@ This sample query interrogates:
   }
 }
 ```
-
-<!--
-
-### Sample Query for Image References {#sample-wknd-image-references}
-
-If you add two image references to a Content Fragment you can run such a sample query.
-
-**Sample Query**
-
-```xml
-{
-  articles {
-    _path
-    _references {
-      images
-      multimedia
-      archives
-      documents
-    }
-  }
-}
-```
-
--->
