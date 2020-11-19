@@ -49,9 +49,9 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
 1. Create one or more regular expression groups. On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**, then specify an expression string that you want to use to define the naming criteria for image set or spin set asset members.
 
-   | **[!UICONTROL Asset Naming Convention]**  | Description | 
-   | --- | --- | --- |
-   | Match | Required. To delete a group, tap **[!UICONTROL X]**.|
+   | **[!UICONTROL Asset Naming Convention]** | Description |
+   | --- | --- |
+   | Match | Required. To delete a group, tap **[!UICONTROL X]**. |
    | Base Name | Required. To delete a group, tap **[!UICONTROL X]**. |
    | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.|
    | **[!UICONTROL Sequence Ordering]** |  |
@@ -281,6 +281,12 @@ When you apply one or more batch set preseets to one or more folders, you FINSH
    To remove an applied batch set preset, tap **[!UICONTROL X]** to the right of the preset type.
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**.
+
+### Applying batch set presets to a folder with previously uploaded assets {#apply-bsp-to-uploaded-assets}
+
+
+
+
 
 ## Removing batch set presets from folders {#remove-bsp-from-folder}
 
