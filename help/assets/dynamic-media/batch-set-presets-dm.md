@@ -12,6 +12,14 @@ You first define naming conventions for the assets that you want to group togeth
 
 All active batch set presets for a company are listed on the Upload Job Option dialog box, so you can specify which preset you want applied during each upload session. Company administrators see all active and inactive batch set presets. When you upload files, Dynamic Media Classic automatically creates a set with all files that match the defined naming convention in the active presets.
 
+**Best Practice** &ndash; When working with batch set presets, image sets, and spin sets, Adobe recommends the following workflow:
+1. Create a batch set preset.
+1. Create a new asset folder.
+1. Apply the batch set preset to the asset folder.
+1. Upload images to the asset folder.
+1. Create your image set or spin set.
+1. Publish your image set or spin set. 
+
 ## Creating a batch set preset for an image set or a spin set {#creating-bsp}
 
 Dynamic Media uses batch set presets to organize assets that share some common information or content into sets of images for display in viewers. You can enable saved batch set presets to automatically run alongside the asset import jobs you schedule in Dynamic Media.
@@ -43,43 +51,37 @@ When you finish creating a batch set preset, you apply it to one or more folders
 1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Choose the preset type carefully; it is not editable later.
 1. Tap **[!UICONTROL Create]**.
 1. On the right side of the **[!UICONTROL Edit Batch Set Preset]** page, set the editable options you want under the **[!UICONTROL Preset Details]** and **[!UICONTROL Set Naming Convention]** headings.
-      See [Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX](#features-options-bsp) fields to learn more about the editable options that are available.
+   See [Preset Details, Set Naming Convention, and Rule Results - RegX options](#features-options-bsp) to learn more about the editable options that are available.
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
 
-1. Create one or more regular expression groups. On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**, then specify an expression string that you want to use to define the naming criteria for image set or spin set asset members.
+1. Create one or more regular expression groups. 
 
-   | **[!UICONTROL Asset Naming Convention]** | Description |
-   | --- | --- |
-   | Match | Required. To delete a group, tap **[!UICONTROL X]**. |
-   | Base Name | Required. To delete a group, tap **[!UICONTROL X]**. |
-   | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.|
-   | **[!UICONTROL Sequence Ordering]** |  |
-   | Match | Optional. If you are finished creating groups, continue to the next step. |
-   | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
+   * On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**.
+   See [Asset Naming Convention and Sequence Ordering fields](#regx-main-fields-bsp) to learn more about the group types that are available.
+   * Specify an expression string that you want to use to define the naming criteria for image set or spin set asset members.
+   See [Regular expression options](#regx-options-bsp) to view the list of expressions that are available in each field.
+      * As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
 
-   As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
-
-   See [Table of expressions for Asset Naming Convention and Sequence Ordering](#regx-options-bsp) to view the list of expressions that are available to create your regular expression.
-
-    >[!IMPORTANT]
-    >
-    >Dynamic Media does not validate the regular expressions you create. However, the methods you use to create regular expressions on the [!UICONTROL Edit Batch Set Preset] page (except for the [!UICONTROL Raw Code] field) are designed to prevent most syntax errors.
+      >[!IMPORTANT]
+      >
+      >Dynamic Media does not validate the regular expressions you create. However, the methods you use to create regular expressions on the [!UICONTROL Edit Batch Set Preset] page (except for the [!UICONTROL Raw Code] field) are designed to prevent most syntax errors.
 
 1. Do one of the following:
 
-   * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, tap **[!UICONTROL Add Group]**. Create another group as you did in the previous step.
-   * Review the regular expressions syntax in the [!UICONTROL Rule Results - RegX] area. If you need to make changes to the syntax, make your edits in the respective group on the left side of the page.
+   * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, tap **[!UICONTROL Add Group]**. Create another regular expression group as you did in the previous step.
+   * Review the regular expressions syntax in the **[!UICONTROL Rule Results - RegX]** area. If you need to make changes to the syntax, make your edits in the respective group on the left side of the page.
    * If you are finished creating groups, continue to the next step.
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]**.
-You are now ready to apply the batch set preset to one or more folders.
 
-### Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX fields {#features-options-bsp}
+When you finish creating a batch set preset, you apply it to one or more folders, upload assets to the folder, then create your image set or spin set, depending on the preset type you chose. See [Applying batch set presets to one or more folders](#apply-bsp).
 
-These features and options are available on the right side of the Edit Batch Set Preset page.
+### Preset Details, Set Naming Convention, and Rule Results - RegX options {#features-options-bsp}
 
-Return to 
+These options are available on the **[!UICONTROL Edit Batch Set Preset]** page when you create or edit a batch set preset.
+
+See [Creating a batch set preset for an image set or a spin set](#creating-bsp) or [Editing a batch set preset](#edit-bsp).
 
    | **[!UICONTROL Preset Details]**  | Description | 
    | --- | --- |
@@ -94,10 +96,26 @@ Return to
    | Asset Naming Convention - Base Name | Not editable. Displays the regular expression syntax based on the Base Name expressions you chose or the raw code you enter. To edit the syntax, you make changes to the expressions you selected for a Base Name group. |
    | Sequence Ordering - Match | Not editable. Displays the regular expression syntax based on the expressions you chose or the raw code you enter. To edit the syntax, you make changes to the expressions you selected for a Sequence Ordering group. |
 
+### Asset Naming Convention and Sequence Ordering fields {#regx-main-fields-bsp}
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet
+These options are available on the **[!UICONTROL Edit Batch Set Preset]** page when you create or edit a batch set preset.
 
-### Table of expressions for Asset Naming Convention and Sequence Ordering {#regx-options-bsp}
+See [Creating a batch set preset for an image set or a spin set](#creating-bsp) or [Editing a batch set preset](#edit-bsp).
+
+   | **[!UICONTROL Asset Naming Convention]** | Description |
+   | --- | --- |
+   | Match | Required. To delete a group, tap **[!UICONTROL X]**. |
+   | Base Name | Required. To delete a group, tap **[!UICONTROL X]**. |
+   | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.|
+   | **[!UICONTROL Sequence Ordering]** |  |
+   | Match | Optional. If you are finished creating groups, continue to the next step. |
+   | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
+
+### Regular expression options {#regx-options-bsp}
+
+These options are available on the **[!UICONTROL Edit Batch Set Preset]** page when you create or edit a batch set preset.
+
+See [Creating a batch set preset for an image set or a spin set](#creating-bsp) or [Editing a batch set preset](#edit-bsp).
 
    | Match type | Context | Value you can specify | character(s), which are | and |
    | --- | --- | --- | --- | --- |
