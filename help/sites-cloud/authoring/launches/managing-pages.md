@@ -28,8 +28,10 @@ You can navigate through the structure of your launch from:
 * The **Launches** Console:
   If you select a specific launch, you can then select **Manage Content**:
   ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-console.png)
-  This will open the launch in the Sites console, where you can:
-  * navigate, 
-  * **Create** new pages,
-  * select existing pages and take action; for example, **Edit**, open **Properties**, **Lock**, **Copy**, **Paste** and **Delete**
+  
+Both of these entry points will open the launch in the Timeline of the Sites console, where you can:
+
+* Navigate, 
+* **Create** new pages,
+* Select existing pages and take action; for example, **Edit**, open **Properties**, **Lock**, **Copy**, **Paste** and **Delete**
   ![Navigate launch in Sites Console from Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
