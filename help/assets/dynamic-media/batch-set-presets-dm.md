@@ -26,7 +26,7 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
 <!-- See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set). -->
 
-**To create a batch set preset for an image set or a spin set** 
+**To create a batch set preset for an image set or a spin set:**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Batch Set Presets.]**
 
@@ -43,16 +43,11 @@ When you finish creating a batch set preset, you apply it to one or more folders
 1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Choose the preset type carefully; it is not editable later.
 1. Tap **[!UICONTROL Create]**.
 1. On the right side of the **[!UICONTROL Edit Batch Set Preset]** page, set the editable options you want under the **[!UICONTROL Preset Details]** and **[!UICONTROL Set Naming Convention]** headings.
-      See [Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX fields](#features-options-bsp) to learn more about the editable options that are available.
+      See [Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX](#features-options-bsp) fields to learn more about the editable options that are available.
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
 
-1. Create one or more regular expression groups. On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**, then specify an expression string that you want to use to define the image set's or spin set's members naming criteria.
-See [Table of expressions for Asset Naming Convention and Sequence Ordering](#regx-options-bsp) to view the list of expressions that are available to create your regular expression.<br>As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
-
-    >[!IMPORTANT]
-    >
-    >Dynamic Media does not validate the regular expressions you create. However, the methods you use to create regular expressions on this page (except for [!UICONTROL Raw Code]) are designed to prevent most syntax errors.
+1. Create one or more regular expression groups. On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**, then specify an expression string that you want to use to define the naming criteria for image set or spin set asset members.
 
    | **[!UICONTROL Asset Naming Convention]**  | Description | 
    | --- | --- | --- |
@@ -62,6 +57,14 @@ See [Table of expressions for Asset Naming Convention and Sequence Ordering](#re
    | **[!UICONTROL Sequence Ordering]** |  |
    | Match | Optional. If you are finished creating groups, continue to the next step. |
    | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
+
+   As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
+
+   See [Table of expressions for Asset Naming Convention and Sequence Ordering](#regx-options-bsp) to view the list of expressions that are available to create your regular expression.
+
+    >[!IMPORTANT]
+    >
+    >Dynamic Media does not validate the regular expressions you create. However, the methods you use to create regular expressions on the [!UICONTROL Edit Batch Set Preset] page (except for the [!UICONTROL Raw Code] field) are designed to prevent most syntax errors.
 
 1. Do one of the following:
 
@@ -75,6 +78,8 @@ You are now ready to apply the batch set preset to one or more folders.
 ### Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX fields {#features-options-bsp}
 
 These features and options are available on the right side of the Edit Batch Set Preset page.
+
+Return to 
 
    | **[!UICONTROL Preset Details]**  | Description | 
    | --- | --- |
@@ -153,13 +158,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expression
 
 ## Editing a batch set preset {#edit-bsp}
 
-You can edit an existing batch set preset that you have created. You can change the asset naming convention or sequence order. You can also update the destination folder and set naming conventions. You cannot, however, change the preset's name or preset type of Image Set or Spin Set. If it becomes necessary to change a preset's name, you can simply copy the existing preset and specify a new name.
+You can edit an existing batch set preset that you have created. You can change any of the string groups you created for the asset naming convention or sequence order. If needed, you can also update the destination folder and set naming conventions.
 
-See [Copying a batch set preset.](#copy-bsp)
+You cannot, however, change the preset's name or preset type (Image Set or Spin Set). If it becomes necessary to change a preset's name, you can simply copy the existing preset and specify a new name. See [Copying a batch set preset.](#copy-bsp)
 
-If the batch set preset was already applied to one or more folders before you edited it, the updated preset is re-applied when you *reprocess* assets in the folder.
-
-See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+If the batch set preset was already applied to one or more folders before you edited it, the updated preset is re-applied when you *reprocess* assets in the folder. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 **To edit a batch set preset:**
 
@@ -340,3 +343,4 @@ See [Removing batch set presets from folders by way of the Batch Set Preset page
 >
 >* [Image Sets](/help/assets/dynamic-media/image-sets.md)
 >* [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
+>* [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
