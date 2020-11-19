@@ -1,10 +1,10 @@
 ---
-title: Tag images with smart services
-description: Tag images with artificially intelligent services that apply contextual and descriptive business tags using Adobe Sensei services.
+title: Auto-tag images with AI-generated tags
+description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 ---
 
-# Train Smart Tag service and tag your images {#train-service-tag-assets}
+# Train Smart Content Service and auto-tag your images {#train-service-tag-assets}
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches.
 
@@ -12,7 +12,7 @@ Compared to natural language vocabularies, tagging based on business taxonomy he
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -26,13 +26,13 @@ To use smart tagging, complete the following tasks:
 
 Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the existing deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
+>The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
 
 You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using [!DNL Adobe Developer Console]. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager]. See [configure Experience Manager for smart tagging of assets](smart-tags-configuration.md) for tasks to configure the Smart Tags. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
@@ -154,21 +154,29 @@ After you have trained the Smart Tags service, you can trigger the tagging workf
 
 Experience Manager can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step of to smart tag assets. See [how to enable smart tagging for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
-## Manage smart tags and image searches {#manage-smart-tags-and-searches}
+## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
-You can curate smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
+You can curate smart tags to remove any inaccurate tags that may have been assigned to your brand assets, so that only the most relevant tags are displayed.
 
-Moderating Smart tags also helps refine tag-based searches for images by ensuring that your image appears in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated images from showing up in search results.
+Moderating smart tags also helps refine tag-based searches for assets by ensuring that your assets appear in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated assets from showing up in search results.
 
-You can also assign a higher rank to a tag to increase its relevance with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
+You can also assign a higher rank to a tag to increase its relevance with respect to an asset. Promoting a tag for an asset increases the chances of the asset appearing in search results when a search is performed based on the particular tag.
 
-1. In the Omnisearch box, search for assets based on a tag.
-1. Inspect the search results to identify an image that you don't find relevant to your search.
-1. Select the image, and then click the **[!UICONTROL Manage Tags]** icon from the toolbar.
-1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you don't want the image to be searched based on a specific tag, select the tag and then click the delete icon from the toolbar. Alternatively, click `X` symbol that appears beside the label.
-1. To assign a higher rank to a tag, select the tag and click the promote icon from the toolbar. The tag you promote, is moved to the **[!UICONTROL Tags]** section.
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
-1. Navigate to the properties page for the image. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
+To moderate the smart tags of your assets:
+
+1. In the Omnisearch field search for assets based on a tag.
+
+1. Inspect the search results to identify the assets that you do not find relevant to your search.
+
+1. Select the asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
+
+1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you do not want the asset to be searched based on a specific tag, then select the tag and select ![Delete icon](assets/do-not-localize/delete-icon.png) from the toolbar. Alternatively, select `X` symbol next to the label.
+
+1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.png) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
+
+1. Select **[!UICONTROL Save]** and then select **[!UICONTROL OK]** to close the [!UICONTROL Success] dialog.
+
+1. Navigate to the [!UICONTROL Properties] page for the asset. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
 
 ### Understand AEM search results with smart tags {#understandsearch}
 
@@ -190,7 +198,7 @@ Enhanced smart tags are based on learning models of brand images and their tags.
 
 * Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
 * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Tags release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* Tagging is supported in the languages that Experience Manager supports. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 
 To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags.
 
@@ -203,3 +211,4 @@ To search for assets with smart tags (regular or enhanced), use the Assets Omnis
 >
 >* [Configure Experience Manager for smart tagging](smart-tags-configuration.md)
 >* [Understand how smart tags help manage assets](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Smart tagging video assets](smart-tags-video-assets.md)

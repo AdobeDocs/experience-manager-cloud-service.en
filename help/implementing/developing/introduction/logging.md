@@ -581,7 +581,7 @@ The network bandwidth associated with logs sent to Splunk are considered part of
 
 In the support request, customers should indicate:
 
-* The Splunk host
+* Splunk HEC endpoint address
 * The Splunk index
 * The Splunk port 
 * The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
@@ -596,21 +596,21 @@ Below you will find a sample customer support request:
 
 Program 123, Production Env
 
-* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
 * Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
 * Splunk port: 443
 * Splunk HEC token: ABC123
 
 Program 123, Stage Env
 
-* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
 * Splunk index: acme_123stage
 * Splunk port: 443
 * Splunk HEC token: ABC123
 
 Program 123, Dev Envs
 
-* Splunk host: `splunk-hec-ext.acme.com`
+* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
 * Splunk index: acme_123dev
 * Splunk port: 443
 * Splunk HEC token: ABC123

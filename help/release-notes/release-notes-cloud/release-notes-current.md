@@ -1,120 +1,109 @@
 ---
-title: Release Notes for 2020.9.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.9.0.
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 ---
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
 ## Release Date {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
+The following release (2020.11.0) will be on December 1, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* The Single Page Application (SPA) Editor JavaScript SDK [is now open source.](/help/implementing/developing/spa/reference-materials.md)
+<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+
+* **Project Archetype 24**: The recommended foundation to start a new AEM project got better, now including the new Adobe Client Data Layer, option to deliver site in AMP and new extension points to add project CSS/JS.
+
+* **ContextHub Folders**: Ability to create audience folders to easily organize, find and select audience segments to use for ContextHub offer targeting capabilities. 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Watermarking image files is supported for renditions generated with asset microservices. It can be configured as a Processing Profile and uses a PNG file as a watermark. See [watermark your assets](/help/assets/watermark-assets.md).
+* **[!DNL Adobe Sensei] powered video smart tagging**: By leveraging AI models to analyze video content for object and action-specific tags, DAM users can spend less time adding tags and more time making use of the rich information exposed to deliver the right experience to customers. See [Smart tag video assets](/help/assets/smart-tags-video-assets.md).
 
-* Enhancements in [!DNL Dynamic Media]
+* **Brand Portal enhancements**: The following new features and more are available in [!DNL Brand Portal]. For details, see [[!DNL Brand Portal] release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-  * Selective Publish - It is now possible for a marketing team to access [!DNL Dynamic Media] smart crop images and dynamic renditions that are synchronized to [!DNL Dynamic Media] so they can create promotional materials, all without the need to publish those assets to [!DNL Dynamic Media] for global delivery. [!DNL Experience Manager] and [!DNL Dynamic Media] publishing is decoupled and can occur separately to achieve this. See [selective publish](/help/assets/dynamic-media/selective-publishing.md).
-  * Administrators can now reset [!DNL Dynamic Media] Cloud Service password that is received on provisioning. The reset can be done in [!DNL Experience Manager] user interface, without the need to use the [!DNL Dynamic Media Classic] desktop app.
+  * [Enhanced download experience](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) for simplified, quick downloads. Additional download configurations can be configured by administrators to offer an experience that suits the needs of the users and businesses.
+  * One-click navigation to Files, [Collections](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html), and Shared Links is now possible from any page.
+  * Users can [select and download specific renditions](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) now. The new rendition download option is available in the Renditions panel in the Asset details page.
+  * A timeout of 15 minutes for guest user sessions ensures a better experience to all concurrent users.
 
-* To know about the following enhancements, see [what is new in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
-  
-  * Enhanced PDF preview with Adobe Document Cloud View SDK integration.
-  * Single-click download functionality.
-  * New administration configurations for the download experience.
+* **[!DNL Adobe Asset Link] version 2.1**: A new version of [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) extension for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] is available. It adds compatibility with the latest [!DNL Adobe Creative Cloud] applications with version 2021, released in October 2020.
 
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-TBD: list of Assets aaCS bugs that are fixed.
--->
+* **[!DNL Assets] WebP file support**: [!DNL Assets] as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience. See [create a standard processing profile](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What is New {#what-is-new-commerce}
 
-* Released CIF Core Components v1.3.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) for more details.
+* Released CIF Venia Reference Site - 2020.10.2 that includes the lastest CIF Core Components version v1.4.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) for more details.
 
-* Preview capability with product/category for product and category templates is now available. This allows business users/marketers in AEM to view the product/category templates with real data.
-
-* Properties page added to products and categories to allow business users to view details associated with the product SKU/category id.
-
-* Sorting feature added to Product Console to allow sorting of products/categories by name or price attributes.
-
-* Product search functionality added to Product Console.
+* Released CIF Core Components v1.4.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) for more details.
 
 ### Bug Fixes {#bug-fixes-commerce}
 
-* Commerce Cloud configurations did not respect inheritance. This has been fixed to ensure that configuration inherits values.
+* GraphQL requests in the Product Console and Pickers were done via HTTP POST. This has been fixed to ensure that the Apollo GraphQL client respects the setting in the GraphQL client OSGi configuration to support GET requests if configured.
+
+* CIF Cloud config UI displayed "Save & Close" buttons for configs in /lib and /apps/. But these are read-only hence UI fixed to display "Close" button only.
+
 
 ## Cloud Manager {#cloud-manager}
 
 ### Release Date {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is November 12, 2020.
 
-### What's New {#what-is-new-cloud-manager}
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Content Audit has been relabeled as Experience Audit.
-* The build process has been separated into three separate Maven commands.
-* If the Git Repository fails to be cloned, it will be reattempted up to three times.
+* A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
+   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
 
-### Bug Fixes {#bug-fixes-cm}
+* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
-* The Content Audit tab incorrectly displayed the base URL using the author domain instead of the publish domain.
+### Bug Fixes {#bug-fixes-cloud-manager}
 
-## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+* The loading of dependencies done prior to build execution required downloading a Maven plugin.
+* The link from the Cloud Manager footer to select a language will now navigate to the correct location.
+* Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
+* All existing production pipelines will be automatically enabled with the Experience Audit step. 
 
-Follow this section to learn about what is new and the updates for Cloud Readiness Analyzer Release v1.1.0.
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
-### What is New {#what-is-new-cra}
+### Workflows {#workflows}
 
-* The Cloud Readiness Analyzer (CRA) has a start state console that displays an explicit **Generate Report** button for the user to click to execute the CRA.
-
-* The CRA UI displays progress while it is running. It displays items being analyzed and findings found during execution.
-
-* The CRA report displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. Clicking on the number of that finding will automatically scroll to the location of that finding in the report.
-
-### Bug Fixes {#cra-bug-fixes}
-
-* In certain cases, the CRA report was not getting updated after forcing a refresh. This has been fixed in this version.
+* Support was added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date. See [Search Workflow Instances](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-Follow this section to learn about what is new and the updates for Content Transfer Tool Release v1.1.10.
+Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### What is New {#what-is-new-ctt}
 
-* The Content Transfer Tool (CTT) supports Azure Blob Store Data Store.
+* User experience for logs improved. Timestamps added to Extraction and Ingestion logs. Message added to indicate if logs are empty.
 
-* The CTT user interface has an auto-reload feature that reloads the overview page every 30 seconds.
+### Bug Fixes {#ctt-bug-fixes}
 
-* Button added to CTT user interface to retrieve *Access Token* easily.
+* Content Transfer Tool was skipping content files if the migration set contained paths that had the partially similar file names. This has been fixed.
 
-* Descriptive validation message added for *URL* and *Migration Set Name*.
+## Best Practices Analyzer {#best-practices-analyzer}
 
-## Code Refactoring Tools {#code-refactoring}
+### Release Date {#release-date-bpa}
 
-Follow this section to learn about what is new and the updates for Code Refactoring Tools.
+The Release Date for Best Practices Analyzer is November 13, 2020.
 
-### What is New {#what-is-new-refactoring}
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
-* AIO-CLI plugin supports Repository Modernizer and allows users to execute the tool using the plugin. 
+* Cloud Readiness Analyzer is now Best Practices Analyzer (BPA). BPA provides a best practices assessment of your current AEM implementation and helps assess the readiness to move from an existing AEM instance to AEM as a Cloud Service.
 
-  Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+* A new detector was added to detect the use of `java.io.InputStream`, which can cause issues if used in AEM as a Cloud Service.
 
-* Repository Modernizer utility can be used to restructure existing project packages into packages compatible with the project structure defined for AEM as a Cloud Service. 
+### Bug Fixes {#bpa-bug-fixes}
 
-  Refer to [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
-
+* Bug causing the positives related to the *textfield foundation* component was fixed.

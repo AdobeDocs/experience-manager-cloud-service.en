@@ -237,7 +237,8 @@ See [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fr
 >[!NOTE]
 >
 >Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
-To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>
+>To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
 As you add hotspots or image maps to an image, remember to save your work. Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
@@ -268,7 +269,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
     * For hotspots: On the image, tap a location where you want the hotspot to appear.
     * For image maps: On the image, click, then drag from the top left to the bottom right to create the image map area. You can adjust the size of the image map by dragging the corners.
 
-   If necessary, drag the hotspot or the image map to a new location. Add additional hotspots or image maps as necessary.
+   If necessary, drag the hotspot or the image map to a new location. Or, use the keyboard arrow keys to control the position of a selected hot spot. Add additional hotspots or image maps as necessary.
 
    To delete a hotspot or image map, tap the **[!UICONTROL Actions]** tab. Under the **[!UICONTROL Maps & Hotspots]** heading, from the **[!UICONTROL Selected Type]** drop-down menu, select the name of the hotspot or image map you want to remove. Tap the **[!UICONTROL Trash]** icon next to the menu, then tap **[!UICONTROL Delete]**.
 
@@ -289,6 +290,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
     * Tap **[!UICONTROL Hyperlink]**.
 
         * If you are an AEM Sites customer, tap the Site Selector icon (folder) to navigate to a URL.
+
           >[!NOTE]
           >
           >The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
@@ -309,7 +311,8 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
           >[!NOTE]
           >
           >Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
-          To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+          >
+          >To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -380,7 +383,7 @@ You can preview carousel banners from the Carousel Editor (preferred method) or 
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tap **[Preview]**.
+1. Tap **[!UICONTROL Preview]**.
 1. Tap the hotspots or image maps on the image to test their associated actions.
 
 **To preview carousel banners from the Viewers list**

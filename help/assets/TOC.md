@@ -3,6 +3,7 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Assets as a Cloud Service Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
+solution: Experience Manager, Experience Manager Assets
 ---
 
 # [!DNL Assets] Guide {#assets}
@@ -21,7 +22,8 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Add and upload assets](add-assets.md)
   + [Search assets](search-assets.md)
   + [Common asset management tasks](manage-digital-assets.md)
-  + [Smart tags](smart-tags.md)
+  + [Smart tags for images](smart-tags.md)
+  + [Smart tag your video assets](smart-tags-video-assets.md)
   + [How to organize assets](organize-assets.md)
   + [Use [!DNL Adobe Stock] assets in AEM](aem-assets-adobe-stock.md)
   + [Manage collections](manage-collections.md)
@@ -37,11 +39,11 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
   + [Watermark assets](watermark-assets.md)
-+ Configure, administer and extend [!DNLAssets] {#admin}
++ Configure, administer and extend [!DNL Assets] {#admin}
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
   + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
-  + [Configure smart tags](smart-tags-configuration.md)
+  + [Configure smart tagging of images](smart-tags-configuration.md)
   + [Multilingual assets and translation](translate-assets.md)
   + [Search facets](search-facets.md)
   + [Assets HTTP API](mac-api-assets.md)
