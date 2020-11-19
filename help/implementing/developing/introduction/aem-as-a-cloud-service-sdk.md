@@ -17,6 +17,17 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 * **6.5 Deprecated Java API Jar** - an additional set of interfaced that have been removed since AEM 6.5
 * **6.5 Deprecated Javadoc Jar** - the Javadocs for the additional set of interfaced
 
+## Building for the SDK {#building-for-the-sdk}
+
+The AEM as a Cloud Service SDK is used to build and deploy custom code. For further details, reference the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). At a high level, the following steps are performed:
+
+* **Compile code**. As expected, source code is compiled, generating the resulting content packages
+* **Build artifacts**. Artifacts are built during this process
+* **Analyze bundles**. Bundles are analyzed using the Maven analyzer plugin, which looks for problems in the Maven project such as missing dependencies
+* **Deploy artifacts**. Artifacts are deployed to the local server.
+
+The same steps are executed by Cloud Manager when deploying to Cloud Environments. Performing builds locally allows for local development and testing so developers can efficiently discover code or structural issues well before committing to source control and triggering Cloud Manager deployments, which can take longer.
+
 ## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * You can check the AEM Admin Console's **About Adobe Experience Manager** icon to find out the version of AEM you are running on production.
