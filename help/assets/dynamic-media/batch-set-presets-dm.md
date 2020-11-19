@@ -22,9 +22,7 @@ You can use the either the form field method to define a batch set preset or the
 
 Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention may make use of one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
 
-When you finish creating a batch set preset, you apply it to one or more folders, then create your image set or spin set, depending on the preset type you chose.
-
-See [Applying batch set presets to one or more folders](#apply-bsp).
+When you finish creating a batch set preset, you apply it to one or more folders, then create your image set or spin set, depending on the preset type you chose. See [Applying batch set presets to one or more folders](#apply-bsp).
 
 <!-- See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set). -->
 
@@ -58,8 +56,8 @@ See [Table of expressions for Asset Naming Convention and Sequence Ordering](#re
 
    | **[!UICONTROL Asset Naming Convention]**  | Description | 
    | --- | --- | --- |
-   | Match | Optional. To delete a group, tap **[!UICONTROL X]**.|
-   | Base Name | Optional. To delete a group, tap **[!UICONTROL X]**. |
+   | Match | Required. To delete a group, tap **[!UICONTROL X]**.|
+   | Base Name | Required. To delete a group, tap **[!UICONTROL X]**. |
    | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.|
    | **[!UICONTROL Sequence Ordering]** |  |
    | Match | Optional. If you are finished creating groups, continue to the next step. |
@@ -79,7 +77,7 @@ You are now ready to apply the batch set preset to one or more folders.
 These features and options are available on the right side of the Edit Batch Set Preset page.
 
    | **[!UICONTROL Preset Details]**  | Description | 
-   | --- | --- | --- |
+   | --- | --- |
    | Preset Name | Not editable. The name you specified when you first created the batch set. If you need to re-name the preset, you can copy the existing batch set preset and specify a new name. See [Copying an existing batch set preset](#copy-bsp). |
    | Type | Not editable. The type was specified when you first created the batch set. Copying an existing batch set preset does not let you change its [!UICONTROL Type]; you must create a new preset instead. |
    | Included Derived Assets | Optional. Select **[!UICONTROL Yes]** (default) to include derived assets in your batch set. For example, when you upload assets, Dynamic Media creates one additional asset per uploaded asset, letting you see all of the assets in AEM ??? |
@@ -317,7 +315,7 @@ See also [Removing batch set presets from a folder's Properties page](#remove-bs
 
 ### Removing batch set presets from a folder's Properties page {#remove-bsp-from-folders-via-properties}
 
-When you remove one or more batch set preseets from a folders, you FINSH
+When you remove one or more batch set presets from a folders, you FINSH
 
 See [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page).
 
