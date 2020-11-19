@@ -33,7 +33,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    >[!NOTE]
    >
-   >You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+   >You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md). **Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
 1. Set up [Spin Set Viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md), as needed.
 

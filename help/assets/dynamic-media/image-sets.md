@@ -35,7 +35,7 @@ To get you up and running quickly:
 
    To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets]**. Then, add images and click **[!UICONTROL Save]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
    >[!IMPORTANT]
    >
@@ -103,7 +103,7 @@ You can create Image Sets through the user interface or via the API. This sectio
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md). 
 >**Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
 When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after they have been added.
@@ -160,7 +160,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 ## Viewing Image Sets {#viewing-image-sets}
 
-You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 >[!IMPORTANT]
 >

@@ -22,24 +22,39 @@ You can use the either the form field method to define a batch set preset or the
 
 Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention may make use of one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
 
+When you finish creating a batch set preset, you apply it to one or more folders, then create your image set or spin set, depending on the preset type you chose.
 
-See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set).
+See [Applying batch set presets to one or more folders](#apply-bsp).
+
+<!-- See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set). -->
 
 **To create a batch set preset for an image set or a spin set** 
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Batch Set Presets.]**
-1. In the **[!UICONTROL Preset Name]** text field, enter a descriptive name. The preset name is not editable later.
-1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. The preset type is not editable later.
-1. Tap **[!UICONTROL Create.]**
-1. On the right side of the **[!UICONTROL Edit Batch Set Preset]** page, set the editable options you want.
-    Use the [Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX fields](#features-options-bsp) to learn more about the editable options that are available for your batch set preset.
 
-1. Create one or more regular expression groups. On the left side of the Edit Batch Set Preset page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**, then specify a expression string that you want to use to define the image set's or spin set's members naming criteria.
-Use the [Table of expressions for Asset Naming Convention and Sequence Ordering](#regx-options-bsp) to see the list of expressions that are available to create your regular expression.<br>As you select and specify expressions for this first group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
+   ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
+
+1. On the **[!UICONTROL Batch Set Preset]** page, tap **[!UICONTROL Create.]**
+
+   ![bsp-create2.png](/help/assets/assets-dm/bsp-create2.png)
+
+1. In the **[!UICONTROL Create Batch Set Preset]** dialog box, in the **[!UICONTROL Preset Name]** text field, enter a descriptive name. The preset name is not editable unless you copy the preset later and specify a new name.
+
+   ![bsp-create3.png](/help/assets/assets-dm/bsp-create3.png)
+
+1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Choose the preset type carefully; it is not editable later.
+1. Tap **[!UICONTROL Create]**.
+1. On the right side of the **[!UICONTROL Edit Batch Set Preset]** page, set the editable options you want under the **[!UICONTROL Preset Details]** and **[!UICONTROL Set Naming Convention]** headings.
+      See [Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX fields](#features-options-bsp) to learn more about the editable options that are available.
+
+   ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
+
+1. Create one or more regular expression groups. On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**, then specify an expression string that you want to use to define the image set's or spin set's members naming criteria.
+See [Table of expressions for Asset Naming Convention and Sequence Ordering](#regx-options-bsp) to view the list of expressions that are available to create your regular expression.<br>As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
 
     >[!IMPORTANT]
     >
-    >There is no validation of regular expressions you create, by Dynamic Media. However, the method of creating regular expressions for a batch set preset is designed to prevent most syntax errors.
+    >Dynamic Media does not validate the regular expressions you create. However, the methods you use to create regular expressions on this page (except for [!UICONTROL Raw Code]) are designed to prevent most syntax errors.
 
    | **[!UICONTROL Asset Naming Convention]**  | Description | 
    | --- | --- | --- |
@@ -50,17 +65,14 @@ Use the [Table of expressions for Asset Naming Convention and Sequence Ordering]
    | Match | Optional. If you are finished creating groups, continue to the next step. |
    | And/Or | Optional. These variables are only available if you add two or more groups within the same Match, Base Name, or Sequence Order. In the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
 
-   SCREENSHOT HERE
-
 1. Do one of the following:
 
    * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, tap **[!UICONTROL Add Group]**. Create another group as you did in the previous step.
-   * Review the regular expressions syntax in the [!UICONTROL Rule Results - RegX] area. If you need to make changes to the syntax, make your edits in the respect group on the left side of the page.
+   * Review the regular expressions syntax in the [!UICONTROL Rule Results - RegX] area. If you need to make changes to the syntax, make your edits in the respective group on the left side of the page.
    * If you are finished creating groups, continue to the next step.
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]**.
 You are now ready to apply the batch set preset to one or more folders.
-ADD LINKS TO TOPICS HERE.
 
 ### Table of features and options for Preset Details, Set Naming Convention, and Rule Results - RegX fields {#features-options-bsp}
 
@@ -75,9 +87,9 @@ These features and options are available on the right side of the Edit Batch Set
    | **[!UICONTROL Set Naming Convention]** |  |
    | Prefix<br>or<br>Suffix | Optional. Enter either a prefix, suffix, or both in the respective fields.<br>The prefix and suffix fields let you create as many batch set presets using an alternate, custom file naming convention that may be needed for a particular set of content. This method is especially useful in cases where there is an exception to a company's defined default naming scheme.<br>The prefix or suffix is added to the **[!UICONTROL Base Name]** you define in the **[!UICONTROL Asset Naming Convention]** area. By adding a prefix or suffix you ensure that your set gets created exclusively and independently from other assets. It can also serve to further help others identify file types. For example, to determine a color mode used, you could add as a prefix or suffix `rgb` or `cmyk`.<br>While specifying a set naming convention is not required to use batch set preset functionality, best practice recommends that you use the set naming convention to define as many elements of your naming convention that you want grouped in a set to help streamline batch set creation. |
    | **[!UICONTROL Rule Results - RegX]** |  |
-   | Asset Naming Convention - Match | Not editable. Displays the regular expression syntax based on the Match expressions you chose or the raw code you enter. To edit the syntax, make changes to the expressions you selected for a Match group. |
-   | Asset Naming Convention - Base Name | Not editable. Displays the regular expression syntax based on the Base Name expressions you chose or the raw code you enter. To edit the syntax, make changes to the expressions you selected for a Base Name group. |
-   | Sequence Ordering - Match | Not editable. Displays the regular expression syntax based on the expressions you chose or the raw code you enter. To edit the syntax, make changes to the expressions you selected for a Sequence Ordering group. |
+   | Asset Naming Convention - Match | Not editable. Displays the regular expression syntax based on the Match expressions you chose or the raw code you enter. To edit the syntax, you make changes to the expressions you selected for a Match group. |
+   | Asset Naming Convention - Base Name | Not editable. Displays the regular expression syntax based on the Base Name expressions you chose or the raw code you enter. To edit the syntax, you make changes to the expressions you selected for a Base Name group. |
+   | Sequence Ordering - Match | Not editable. Displays the regular expression syntax based on the expressions you chose or the raw code you enter. To edit the syntax, you make changes to the expressions you selected for a Sequence Ordering group. |
 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet
@@ -143,46 +155,73 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expression
 
 ## Editing a batch set preset {#edit-bsp}
 
-You can edit an existing batch set preset that you have created. You can change the asset naming convention or sequence order. You can also update the destination folder and set naming conventions. You cannot, however, change the preset's name or type. If it becomes necessary to change a preset's name, you can simply copy the existing preset and specify a new name.
+You can edit an existing batch set preset that you have created. You can change the asset naming convention or sequence order. You can also update the destination folder and set naming conventions. You cannot, however, change the preset's name or preset type of Image Set or Spin Set. If it becomes necessary to change a preset's name, you can simply copy the existing preset and specify a new name.
 
 See [Copying a batch set preset.](#copy-bsp)
 
 If the batch set preset was already applied to one or more folders before you edited it, the updated preset is re-applied when you *reprocess* assets in the folder.
 
-kSee [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+**To edit a batch set preset:**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check the batch set preset that you want to change.
 1. On the toolbar, tap **[!UICONTROL Edit Batch Set Preset.]**
 
-   SCREENSHOT
+   ![bsp-edit1.png](/help/assets/assets-dm/bsp-edit1.png)
 
 1. Edit the preset as necessary. 
 1. In the upper-right corner of the **[!UICONTROL Batch Set Preset]** page, tap **[!UICONTROL Save.]**
 
 ## Copying an existing batch set preset {#copy-bsp}
 
-If you copy an existing preset that was previously applied to folders, those folders are not affected when you copy the preset.
+You can copy an existing batch set preset to avoid having to manually recreate a complex preset, or if you simply want to rename a preset. You cannot, however, change the preset type used (Image Set or Spin Set).
+
+If you copy an existing preset that is reference by asset folders, those folders are not affected.
+
+**To copy an existing batch set preset:**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
-1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check the batch set preset that you want to copy.
+1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of the batch set preset that you want to copy.
+
+   ![bsp-copy1.png](/help/assets/assets-dm/bsp-copy1.png)
+
 1. On the toolbar, tap **[!UICONTROL Copy]**.
-1. In the **[!UICONTROL Copy Batch Set Preset]** dialog box, in the **[!UICONTROL Title]** field, type a new name for the preset.
-1. In the upper-right corner of the **[!UICONTROL Batch Set Preset]** page, tap **[!UICONTROL Save.]**
+1. In the **[!UICONTROL Copy Batch Set Preset]** dialog box, in the **[!UICONTROL Title]** text box, type a new name for the preset.
+
+   ![bsp-copy2.png](/help/assets/assets-dm/bsp-copy2.png)
+
+1. Tap **[!UICONTROL Copy]**.
 
 ## Deleting batch set presets {#delete-bsp}
 
-If you delete one or more batch set presets that were previously applied to one or more asset folders, the folder's assets remain unchanged.
+You can delete batch set presets to remove them permanently from Dynamic Media. If you delete a preset that was previously applied to one or more asset folders, 
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
-1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check one or more batch set presets that you want to remove.
-1. On the toolbar, tap **[!UICONTROL Delete Batch Set Presets]**.
-1. In the **[!UICONTROL Delete Batch Set Presets]** dialog box, tap **[!UICONTROL Delete]**.
-If the presets were previously applied to one or more asset folders, you may need to tap **[!UICONTROL Force Delete]** instead.
+CHECK! the folder's assets remain unchanged until you reprocess the folder (see [Reprocessing assets]()CHECK! In such cases, you will need to "force delete" the preset. 
 
-## Applying a batch set preset to one or more folders {#apply-bsp-to-folder}
+If you want to remove presets from folders instead, see [Removing batch set presets from folders](#remove-bsp-from-folder).
 
-When you assign a batch set preset to a folder, any subfolders automatically inherit the preset from its parent folder. This means that you can assign only one preset to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
+**To delete batch set presets:**
+
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to delete.
+
+   ![bsp-delete1.png](/help/assets/assets-dm/bsp-delete1.png)
+
+1. On the toolbar, tap **[!UICONTROL Delete Batch Set Preset(s)]**.
+
+   ![bsp-delete2.png](/help/assets/assets-dm/bsp-delete2.png)
+
+1. In the **[!UICONTROL Delete Batch Set Presets]** dialog box, tap **[!UICONTROL Delete]**. 
+
+   If the preset you are deleting was referenced by an asset folder, you may need to tap **[!UICONTROL Force Delete]** instead.
+
+   ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
+
+## Applying batch set presets to one or more folders {#apply-bsp}
+
+When you assign batch set presets to one or more folders, any subfolders automatically inherit the presets from its parent folder.
 
 If you assigned a different preset to a folder, the new preset overrides the previous preset. The previously existing folder assets remain unchanged. The new preset is applied on the assets that are added to the folder later.
 
@@ -194,13 +233,112 @@ You can apply presets to specific folders or globally to all assets.
 
 You can reprocess assets in a folder that already has an existing batch set preset that you later changed. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-## Removing a batch set preset from one or more folders {#remove-bsp-from-folder}
+Choose either one of the following:
 
+* [Applying batch set presets to folders from the Batch Set Preset page](#apply-bsp-to-folders-via-bsp-page)
+* [Applying batch set presets from a folder's Properties page](#apply-bsp-to-folders-via-properties)
 
+### Applying batch set presets to folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
+
+When you apply one or more batch set preseets to one or more folders, you FINSH
+
+**To apply batch set presets to folders from the Batch Set Preset page:**
+
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check one or more batch set presets that you want to apply one or more folders.
+1. On the toolbar, tap **[!UICONTROL Apply Batch Preset to Folder(s)]**.
+
+   ![bsp-apply-to-folders1.png](/help/assets/assets-dm/bsp-apply-to-folders1.png)
+
+1. On the **[!UICONTROL Select Folder(s)]** page, select one or more folder you want the batch set presets applied to.
+
+   ![bsp-apply-to-folders2.png](/help/assets/assets-dm/bsp-apply-to-folders2.png)
+
+1. In the upper-right corner of the **[!UICONTROL Select Folder(s)]** page, tap **[!UICONTROL Apply]**.
+
+### Applying batch set presets from a folder's Properties page {#apply-bsp-to-folders-via-properties}
+
+When you apply one or more batch set preseets to one or more folders, you FINSH
+
+**To apply batch set presets from a folder's Properties page:**
+
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Navigate to a folder to which you want to apply one or more batch set presets.
+1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box.
+
+   ![bsp-apply-via-properties1.png](/help/assets/assets-dm/bsp-apply-via-properties1.png)
+
+1. On the toolbar, tap **[!UICONTROL Properties]**.
+1. On the folder's Properties page, tap **[!UICONTROL Dynamic Media Processing]**.
+
+   ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
+
+1. Under **[!UICONTROL Batch Set Preset(s)]**, from the **[!UICONTROL Preset Name]** drop-down list box, select the name of a batch set preset you want to apply. The screenshot above shows two batch set presets were applied to the folder.
+
+   If no batch set preset names exist in the **[!UICONTROL Preset Name]** drop-down list box, it means you have not yet created any batch set presets. See [Creating a batch set preset](#creating-bsp).
+
+   To remove an applied batch set preset, tap **[!UICONTROL X]** to the right of the preset type.
+
+1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**.
+
+## Removing batch set presets from folders {#remove-bsp-from-folder}
+
+When you remove batch set presets from one or more folders, FINISH
+
+If no batch set presets were applied to a selected folder, 
+
+Choose from the following:
+* [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page)
+* [Removing batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties)
+
+### Removing batch set presets from folders by way of the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
+
+When you remove one or more batch set preseets from one or more folders, you FINSH
+
+See also [Removing batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties).
+
+**To remove batch set presets from folders by way of the Batch Set Preset page:**
+
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to remove from one or more folders.
+
+   ![bsp-remove-from-folders1.png](/help/assets/assets-dm/bsp-remove-from-folders1.png)
+
+1. On the toolbar, tap **[!UICONTROL Remove Batch Preset from Folder(s)]**.
+
+   ![bsp-remove-from-folders2.png](/help/assets/assets-dm/bsp-remove-from-folders2.png)
+
+1. On the **[!UICONTROL Select Folder(s)]** page, select one or more folders in which you want the batch set presets removed. The screenshot above shows a selected folder with the names of two batch set presets already applied to it that will be removed.
+1. In the upper-right corner of the **[!UICONTROL Select Folder(s)]** page, tap **[!UICONTROL Remove]**.
+
+   ![bsp-remove-from-folders3.png](/help/assets/assets-dm/bsp-remove-from-folders3.png)
+
+1. In the **[!UICONTROL Remove profile]** dialog box, tap **[!UICONTROL Remove]**.
+
+### Removing batch set presets from a folder's Properties page {#remove-bsp-from-folders-via-properties}
+
+When you remove one or more batch set preseets from a folders, you FINSH
+
+See [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page).
+
+**To remove batch set presets from a folder's Properties page:**
+
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Navigate to a folder to which you want to remove one or more batch set presets.
+1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box.
+
+   ![bsp-apply-via-properties1.png](/help/assets/assets-dm/bsp-apply-via-properties1.png)
+
+1. On the toolbar, tap **[!UICONTROL Properties]**.
+1. On the folder's Properties page, tap **[!UICONTROL Dynamic Media Processing]**.
+
+   ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
+
+1. Under **[!UICONTROL Batch Set Preset(s)]**, tap **[!UICONTROL X]** to the right of the preset type.
+
+1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**.
 
 >[!MORELIKETHIS]
 >
->* [Previewing an asset](previewing-asset.md#previewing_an_asset) FIX
->* [Setting up Image Presets](setting-image-presets.md#setting_up_image_presets) FIX
->* [Viewing, adding, and exporting metadata](viewing-adding-exporting-metadata.md#viewing_adding_and_exporting_metadata) FIX
->* [Checking job files](checking-job-files.md#checking_job_files) FIX
+>* [Image Sets](/help/assets/dynamic-media/image-sets.md)
+>* [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
