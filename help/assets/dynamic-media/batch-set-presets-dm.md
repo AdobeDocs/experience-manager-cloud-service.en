@@ -15,7 +15,7 @@ Use **[!UICONTROL Batch Set Presets]** to help ease the creation and organizatio
 **Best Practice** &ndash; When working with batch set presets Adobe recommends the following workflow:
 
 1. Create a batch set preset.
-1. Create an asset folder and ensure it is synched to Dynamic Media.
+1. Create a new asset folder and ensure it is synched to Dynamic Media.
 1. Apply the batch set preset to the asset folder.
 1. Upload images to the asset folder.
 1. Create your image set or spin set.
@@ -50,7 +50,7 @@ With respect to sequence automation, you can specify rules to force-sort assets 
 
 Nonetheless, it is best to rely on alphanumeric numbering for sorting as much as possible. Furthermore, you can use the image set or spin set editor tools in Dynamic Media to easily rearrange the sequence order of assets, or add and delete new assets in the set by using a drag-and-drop operation.
 
-When you finish creating a batch set preset, you apply it to one or more folders that you have created. At that point, you are ready to create your image set or spin set, depending on the preset type you chose. See [Applying batch set presets to one or more folders](#apply-bsp).
+When you finish creating a batch set preset, you apply it to one or more folders that you have created. At that point, you are ready to create your image set or spin set, depending on the preset type you chose. See [About applying batch set presets to folders](#apply-bsp).
 
 <!-- See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set). -->
 
@@ -82,7 +82,7 @@ When you finish creating a batch set preset, you apply it to one or more folders
    * Using the drop-down lists and text boxes in the form, specify an expression string that you want to use to define the naming criteria for image set or spin set asset members. See [Regular expression options](#regx-options-bsp) to review the list of expressions that are available in each form.
       * As you select and specify expressions for a group, notice that the actual regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
       * To remove a group you have added, tap **[!UICONTROL X]**.
-   * When you add two or more groups, in the **[!UICONTROL And]** drop-down list, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
+   * When you add two or more groups, in the **[!UICONTROL And]** drop-down list, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL Or]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL Or]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
 
 1. Do one of the following:
 
@@ -289,18 +289,14 @@ If you want to remove presets from folders instead, see [Removing batch set pres
 When you remove batch set presets from one or more folders, FINISH
 
 
-If no batch set presets were applied to a selected folder, 
+If no batch set presets were applied to a selected folder,
 
-Choose from the following:
-
-* [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page)
-* [Removing batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties)
+* [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page) - This method offers you the most flexibility. You can remove a single preset or multiple presets from a single folder or multiple folders.
+* [Removing batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties) - This method lets you remove one or more batch set presets from a single folder only.
 
 ### Removing batch set presets from folders by way of the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
 
 When you remove one or more batch set preseets from one or more folders, you FINSH
-
-See also [Removing batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties).
 
 **To remove batch set presets from folders by way of the Batch Set Preset page:**
 
@@ -324,8 +320,6 @@ See also [Removing batch set presets from a folder's Properties page](#remove-bs
 
 When you remove one or more batch set presets from a folders, you FINSH
 
-See [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page).
-
 **To remove batch set presets from a folder's Properties page:**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
@@ -347,4 +341,6 @@ See [Removing batch set presets from folders by way of the Batch Set Preset page
 >
 >* [Image Sets](/help/assets/dynamic-media/image-sets.md)
 >* [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
+>* [Configuring selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - See "Sync Mode" in the topic.
+>* [Creating a new Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - See "Dynamic Media sync mode" in the topic.
 >* [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)
