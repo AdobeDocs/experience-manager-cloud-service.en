@@ -259,7 +259,14 @@ If you copy an existing preset that is reference by asset folders, those folders
 
 ## Deleting batch set presets {#delete-bsp}
 
+<<<<<<< Updated upstream
 You can delete batch set presets to remove them permanently from Dynamic Media. If you delete a preset that was previously applied to one or more asset folders, 
+=======
+You can delete batch set presets to remove them permanently from Dynamic Media. That is, they will no longer show on the [!UICONTROL Batch Set Preset] page or in the Batch Set Preset drop-down list folder's Properties page . 
+
+
+If you delete a preset that was previously applied to one or more asset folders, any image sets or spin Sets that were previously created from assets in the folder continue to show as-is. Also, this deleted preset should now not appear in Folder Properties dropdown and hence not get applied to existing assets (on reprocess) or new uploaded assets in the folder
+>>>>>>> Stashed changes
 
 CHECK! the folder's assets remain unchanged until you reprocess the folder (see [Reprocessing assets]()CHECK! In such cases, you will need to "force delete" the preset. 
 
@@ -282,8 +289,11 @@ If you want to remove presets from folders instead, see [Removing batch set pres
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 ## About removing batch set presets from folders {#remove-bsp-from-folder}
 
 When you remove batch set presets from one or more folders, FINISH
