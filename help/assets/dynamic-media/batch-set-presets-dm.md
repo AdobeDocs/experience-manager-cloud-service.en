@@ -6,7 +6,7 @@ contentOwner: Rick Brough
 
 # About Batch Set Presets {#about-bsp}
 
-Use **[!UICONTROL Batch Set Presets]** to help ease the creation and organization of multiple assets in an image set or spin set at the time you manually upload asset files to a folder either individually or using bulk ingestion, or have the preset run alongside the asset import jobs you schedule in Dynamic Media. Each preset is a uniquely named, self-contained set of instructions that defines how to construct the image set or spin sete using images that match the defined naming conventions in the preset recipe.
+Use **[!UICONTROL Batch Set Presets]** to help ease the creation and organization of multiple assets in an image set or spin set at the time you upload asset files to a folder either individually or using bulk ingestion, or have the preset run alongside the asset import jobs you schedule in Dynamic Media. Each preset is a uniquely named, self-contained set of instructions that defines how to construct the image set or spin sete using images that match the defined naming conventions in the preset recipe.
 
 >[!IMPORTANT]
 >
@@ -220,11 +220,13 @@ See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-vid
 
 ## Editing a batch set preset {#edit-bsp}
 
-You can edit an existing batch set preset that you have created. You can change any of the string groups you created for the asset naming convention or sequence order. If needed, you can also update the destination folder and set naming conventions.
+You can edit an existing batch set preset that you have created. You can change any of the expression groups you created for the asset naming convention or sequence order. If needed, you can also update the destination folder and set naming conventions.
 
-You cannot, however, change the preset's name or preset type (Image Set or Spin Set). If it becomes necessary to change a preset's name, you can simply copy the existing preset and specify a new name. See [Copying a batch set preset.](#copy-bsp)
+You cannot, however, change the preset's name or preset type (Image Set or Spin Set). If it becomes necessary to change a preset's name, you can simply copy the existing preset and specify a new name. See [Copying a batch set preset](#copy-bsp).
 
-If the batch set preset was already applied to one or more folders before you edited it, the updated preset is re-applied when you *reprocess* assets in the folder. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+If you edit a batch set preset that was previously applied to a folder, the newly edited preset gets applied only to new assets that are uploaded to the folder. 
+
+If you want the newly edited preset to be re-applied to the existing assets in the folder, you must reprocess the folder. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). In this way, the existing assets would now qualify to be part of an image set or spin set and be added. Furthermore, the existing assets that were already included in the image set or spin set, based on the previous batch set preset that was used, do not get removed (assuming they no longer qualify based on the newly edited preset) and will show as-is.
 
 **To edit a batch set preset:**
 
@@ -259,18 +261,11 @@ If you copy an existing preset that is reference by asset folders, those folders
 
 ## Deleting batch set presets {#delete-bsp}
 
-<<<<<<< Updated upstream
-You can delete batch set presets to remove them permanently from Dynamic Media. If you delete a preset that was previously applied to one or more asset folders, 
-=======
-You can delete batch set presets to remove them permanently from Dynamic Media. That is, they will no longer show on the [!UICONTROL Batch Set Preset] page or in the Batch Set Preset drop-down list folder's Properties page . 
+You can delete batch set presets to remove them permanently from Dynamic Media. That is, they will no longer show on the [!UICONTROL Batch Set Preset] page nor will they show in the **[!UICONTROL Batch Set Preset(s)]** drop-down list of the **[!UICONTROL Dynamic Media Processing]** tab on the folder's **[!UICONTROL Properties]** page. As such, the preset will not get applied to existing assets on a folder reprocess or when new assets are uploaded in the folder
 
+If you delete a preset that was previously applied to one or more folders, any image sets or spin Sets that were created from assets in those folders will continue to show as-is.
 
-If you delete a preset that was previously applied to one or more asset folders, any image sets or spin Sets that were previously created from assets in the folder continue to show as-is. Also, this deleted preset should now not appear in Folder Properties dropdown and hence not get applied to existing assets (on reprocess) or new uploaded assets in the folder
->>>>>>> Stashed changes
-
-CHECK! the folder's assets remain unchanged until you reprocess the folder (see [Reprocessing assets]()CHECK! In such cases, you will need to "force delete" the preset. 
-
-If you want to remove presets from folders instead, see [Removing batch set presets from folders](#remove-bsp-from-folder).
+If you only want to *remove* presets from folders instead, see [Removing batch set presets from folders](#remove-bsp-from-folder).
 
 **To delete batch set presets:**
 
@@ -289,26 +284,18 @@ If you want to remove presets from folders instead, see [Removing batch set pres
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
 ## About removing batch set presets from folders {#remove-bsp-from-folder}
 
-When you remove batch set presets from one or more folders, FINISH
+When you remove batch set presets from folders, any new assets that you upload to these folders will not have the batch set preset applied to them. Existing assets in the folder that were already added to the image set or spint set, based on batch set preset that was applied to the folder, will continue to show as-is.
 
+If you want to *delete* presets from folders instead, see [Deleting batch set presets](#delete-bsp).
 
-If no batch set presets were applied to a selected folder,
+There are two methods you can use to remove batch set presets from folders.
 
 * [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page) - This method offers you the most flexibility. You can remove a single preset or multiple presets from a single folder or multiple folders.
 * [Removing batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties) - This method lets you remove one or more batch set presets from a single folder only.
 
 ### Removing batch set presets from folders by way of the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
-
-When you remove one or more batch set preseets from one or more folders, you FINSH
-
-**To remove batch set presets from folders by way of the Batch Set Preset page:**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to remove from one or more folders.
@@ -327,10 +314,6 @@ When you remove one or more batch set preseets from one or more folders, you FIN
 1. In the **[!UICONTROL Remove profile]** dialog box, tap **[!UICONTROL Remove]**.
 
 ### Removing batch set presets from a folder's Properties page {#remove-bsp-from-folders-via-properties}
-
-When you remove one or more batch set presets from a folders, you FINSH
-
-**To remove batch set presets from a folder's Properties page:**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigate to a folder to which you want to remove one or more batch set presets.
@@ -351,6 +334,6 @@ When you remove one or more batch set presets from a folders, you FINSH
 >
 >* [Image Sets](/help/assets/dynamic-media/image-sets.md)
 >* [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
->* [Configuring selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - See "Sync Mode" in the topic.
->* [Creating a new Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - See "Dynamic Media sync mode" in the topic.
+>* [Configuring selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - See "Sync Mode" in the topic to learn more about synching a single folder to Dynamic Media.
+>* [Creating a new Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - See "Dynamic Media sync mode" in the topic to learn more about synching all folders to Dynamic Media.
 >* [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)

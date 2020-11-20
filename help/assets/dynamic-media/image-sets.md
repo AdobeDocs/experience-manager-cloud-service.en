@@ -25,21 +25,23 @@ For example, suppose you want to present images of caps with different color bil
 
 To get you up and running quickly:
 
+1. Optional. [Create a batch set preset](/help/assets/dynamic-media/batch-set-presets-dm.md) and apply it to a new  folder where your spin set images will be uploaded.
+
+   A batch set preset can help you automate the creation of your image set. 
+
+   >[!IMPORTANT]
+   >
+   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+
 1. [Upload your primary source images for multiple views.](#uploading-assets-in-image-sets)
 
-   Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+   Upload the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
 1. [Create Image Sets.](#creating-image-sets)
 
    In Image Sets, users click thumbnail images in the Image Set Viewer.
 
    To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets]**. Then, add images and click **[!UICONTROL Save]**.
-
-   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md).
-
-   >[!IMPORTANT]
-   >
-   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
 
