@@ -78,10 +78,11 @@ When you finish creating a batch set preset, you apply it to one or more folders
 1. Create one or more regular expression groups. 
 
    * On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**.
-   * Specify an expression string that you want to use to define the naming criteria for image set or spin set asset members. See [Regular expression options](#regx-options-bsp) to view the list of expressions that are available in each field.
-      * As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
    * The **[!UICONTROL Match]** and **[!UICONTROL Base Name]** forms are required; **[!UICONTROL Sequence Ordering]** is optional.
-   * When you add two or more groups, in the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you are about to create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
+   * Using the drop-down lists and text boxes in the form, specify an expression string that you want to use to define the naming criteria for image set or spin set asset members. See [Regular expression options](#regx-options-bsp) to view the list of expressions that are available in each form.
+      * As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
+
+   * When you add two or more groups, in the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
 
       >[!IMPORTANT]
       >
@@ -90,12 +91,12 @@ When you finish creating a batch set preset, you apply it to one or more folders
 1. Do one of the following:
 
    * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, tap **[!UICONTROL Add Group]**. Create another regular expression group as you did in the previous step.
-   * Review the regular expressions syntax in the **[!UICONTROL Rule Results - RegX]** area. If you need to make changes to the syntax, make your edits in the respective group on the left side of the page.
+   * Review the regular expression syntax in the **[!UICONTROL Rule Results - RegX]** area. If you need to make changes to the syntax, make your edits in the respective group on the left side of the page.
    * If you are finished creating groups, continue to the next step.
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]**.
 
-When you finish creating a batch set preset, you apply it to one or more folders, upload assets to the folder, then create your image set or spin set, depending on the preset type you chose. See [Applying batch set presets to one or more folders](#apply-bsp).
+When you finish creating a batch set preset, you apply it to one or more empty asset folders, upload assets to the folder, then create your image set or spin set, depending on the preset type you chose. See [Applying batch set presets to one or more folders](#apply-bsp).
 
 ### Preset Details, Set Naming Convention, and Rule Results - RegX options {#features-options-bsp}
 
@@ -150,7 +151,7 @@ See [Creating a batch set preset for an image set or a spin set](#creating-bsp) 
    | | | | | Lowercase |
    | Raw Code | | `<regular expression pattern>`| | |
 
-## Applying batch set presets to one or more folders {#apply-bsp}
+## About applying batch set presets to one or more folders {#apply-bsp}
 
 When you assign batch set presets to one or more folders, any subfolders automatically inherit the presets from its parent folder.
 
@@ -219,7 +220,6 @@ If you have a folder that already contains assets that you uploaded previously, 
 
 See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-
 ## Editing a batch set preset {#edit-bsp}
 
 You can edit an existing batch set preset that you have created. You can change any of the string groups you created for the asset naming convention or sequence order. If needed, you can also update the destination folder and set naming conventions.
@@ -286,7 +286,7 @@ If you want to remove presets from folders instead, see [Removing batch set pres
 
 
 
-## Removing batch set presets from folders {#remove-bsp-from-folder}
+## About removing batch set presets from folders {#remove-bsp-from-folder}
 
 When you remove batch set presets from one or more folders, FINISH
 
