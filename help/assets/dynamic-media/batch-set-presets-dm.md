@@ -150,6 +150,76 @@ See [Creating a batch set preset for an image set or a spin set](#creating-bsp) 
    | | | | | Lowercase |
    | Raw Code | | `<regular expression pattern>`| | |
 
+## Applying batch set presets to one or more folders {#apply-bsp}
+
+When you assign batch set presets to one or more folders, any subfolders automatically inherit the presets from its parent folder.
+
+If you assigned a different preset to a folder, the new preset overrides the previous preset. The previously existing folder assets remain unchanged. The new preset is applied on the assets that are added to the folder later.
+
+Folders that have a preset assigned to it are indicated in the user interface by the name of the preset appearing in the card name.
+
+![chlimage_1-517](assets/chlimage_1-517.png)
+
+You can apply presets to specific folders or globally to all assets.
+
+You can reprocess assets in a folder that already has an existing batch set preset that you later changed. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+Choose either one of the following:
+
+* [Applying batch set presets to folders from the Batch Set Preset page](#apply-bsp-to-folders-via-bsp-page)
+* [Applying batch set presets from a folder's Properties page](#apply-bsp-to-folders-via-properties)
+* [Applying batch set presets to a folder with previously uploaded assets](#apply-bsp-to-uploaded-assets)
+
+### Applying batch set presets to folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
+
+When you apply one or more batch set preseets to one or more folders, you FINSH
+
+**To apply batch set presets to folders from the Batch Set Preset page:**
+
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check one or more batch set presets that you want to apply one or more folders.
+1. On the toolbar, tap **[!UICONTROL Apply Batch Preset to Folder(s)]**.
+
+   ![bsp-apply-to-folders1.png](/help/assets/assets-dm/bsp-apply-to-folders1.png)
+
+1. On the **[!UICONTROL Select Folder(s)]** page, select one or more folder you want the batch set presets applied to.
+
+   ![bsp-apply-to-folders2.png](/help/assets/assets-dm/bsp-apply-to-folders2.png)
+
+1. In the upper-right corner of the **[!UICONTROL Select Folder(s)]** page, tap **[!UICONTROL Apply]**.
+
+### Applying batch set presets from a folder's Properties page {#apply-bsp-to-folders-via-properties}
+
+When you apply one or more batch set preseets to one or more folders, you FINSH
+
+**To apply batch set presets from a folder's Properties page:**
+
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Navigate to a folder to which you want to apply one or more batch set presets.
+1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box.
+
+   ![bsp-apply-via-properties1.png](/help/assets/assets-dm/bsp-apply-via-properties1.png)
+
+1. On the toolbar, tap **[!UICONTROL Properties]**.
+1. On the folder's Properties page, tap **[!UICONTROL Dynamic Media Processing]**.
+
+   ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
+
+1. Under **[!UICONTROL Batch Set Preset(s)]**, from the **[!UICONTROL Preset Name]** drop-down list box, select the name of a batch set preset you want to apply. The screenshot above shows two batch set presets were applied to the folder.
+
+   If no batch set preset names exist in the **[!UICONTROL Preset Name]** drop-down list box, it means you have not yet created any batch set presets. See [Creating a batch set preset](#creating-bsp).
+
+   To remove an applied batch set preset, tap **[!UICONTROL X]** to the right of the preset type.
+
+1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**.
+
+### Applying batch set presets to a folder with previously uploaded assets {#apply-bsp-to-uploaded-assets}
+
+If you have a folder that already contains assets that you uploaded previously, you can still apply the batch set preset to the folder as usual. However, you will need to *reprocess* the assets to apply the preset across the existing assets in the folder or all assets across multiple folders.
+
+See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+
 ## Editing a batch set preset {#edit-bsp}
 
 You can edit an existing batch set preset that you have created. You can change any of the string groups you created for the asset naming convention or sequence order. If needed, you can also update the destination folder and set naming conventions.
@@ -213,72 +283,6 @@ If you want to remove presets from folders instead, see [Removing batch set pres
    If the preset you are deleting was referenced by an asset folder, you may need to tap **[!UICONTROL Force Delete]** instead.
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
-
-## Applying batch set presets to one or more folders {#apply-bsp}
-
-When you assign batch set presets to one or more folders, any subfolders automatically inherit the presets from its parent folder.
-
-If you assigned a different preset to a folder, the new preset overrides the previous preset. The previously existing folder assets remain unchanged. The new preset is applied on the assets that are added to the folder later.
-
-Folders that have a preset assigned to it are indicated in the user interface by the name of the preset appearing in the card name.
-
-![chlimage_1-517](assets/chlimage_1-517.png)
-
-You can apply presets to specific folders or globally to all assets.
-
-You can reprocess assets in a folder that already has an existing batch set preset that you later changed. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
-
-Choose either one of the following:
-
-* [Applying batch set presets to folders from the Batch Set Preset page](#apply-bsp-to-folders-via-bsp-page)
-* [Applying batch set presets from a folder's Properties page](#apply-bsp-to-folders-via-properties)
-
-### Applying batch set presets to folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
-
-When you apply one or more batch set preseets to one or more folders, you FINSH
-
-**To apply batch set presets to folders from the Batch Set Preset page:**
-
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
-1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check one or more batch set presets that you want to apply one or more folders.
-1. On the toolbar, tap **[!UICONTROL Apply Batch Preset to Folder(s)]**.
-
-   ![bsp-apply-to-folders1.png](/help/assets/assets-dm/bsp-apply-to-folders1.png)
-
-1. On the **[!UICONTROL Select Folder(s)]** page, select one or more folder you want the batch set presets applied to.
-
-   ![bsp-apply-to-folders2.png](/help/assets/assets-dm/bsp-apply-to-folders2.png)
-
-1. In the upper-right corner of the **[!UICONTROL Select Folder(s)]** page, tap **[!UICONTROL Apply]**.
-
-### Applying batch set presets from a folder's Properties page {#apply-bsp-to-folders-via-properties}
-
-When you apply one or more batch set preseets to one or more folders, you FINSH
-
-**To apply batch set presets from a folder's Properties page:**
-
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
-1. Navigate to a folder to which you want to apply one or more batch set presets.
-1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box.
-
-   ![bsp-apply-via-properties1.png](/help/assets/assets-dm/bsp-apply-via-properties1.png)
-
-1. On the toolbar, tap **[!UICONTROL Properties]**.
-1. On the folder's Properties page, tap **[!UICONTROL Dynamic Media Processing]**.
-
-   ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
-
-1. Under **[!UICONTROL Batch Set Preset(s)]**, from the **[!UICONTROL Preset Name]** drop-down list box, select the name of a batch set preset you want to apply. The screenshot above shows two batch set presets were applied to the folder.
-
-   If no batch set preset names exist in the **[!UICONTROL Preset Name]** drop-down list box, it means you have not yet created any batch set presets. See [Creating a batch set preset](#creating-bsp).
-
-   To remove an applied batch set preset, tap **[!UICONTROL X]** to the right of the preset type.
-
-1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**.
-
-### Applying batch set presets to a folder with previously uploaded assets {#apply-bsp-to-uploaded-assets}
-
-
 
 
 
@@ -344,4 +348,4 @@ See [Removing batch set presets from folders by way of the Batch Set Preset page
 >
 >* [Image Sets](/help/assets/dynamic-media/image-sets.md)
 >* [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
->* [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)
