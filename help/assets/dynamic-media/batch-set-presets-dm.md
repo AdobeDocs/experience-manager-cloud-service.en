@@ -79,14 +79,10 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
    * On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**.
    * The **[!UICONTROL Match]** and **[!UICONTROL Base Name]** forms are required; **[!UICONTROL Sequence Ordering]** is optional.
-   * Using the drop-down lists and text boxes in the form, specify an expression string that you want to use to define the naming criteria for image set or spin set asset members. See [Regular expression options](#regx-options-bsp) to view the list of expressions that are available in each form.
-      * As you select and specify expressions for a group, notice that the resulting regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
-
-   * When you add two or more groups, in the **[!UICONTROL And]** drop-down, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
-
-      >[!IMPORTANT]
-      >
-      >Dynamic Media does not validate the regular expressions you create. However, the methods you use to create regular expressions on the [!UICONTROL Edit Batch Set Preset] page (except for the [!UICONTROL Raw Code] field) are designed to prevent most syntax errors.
+   * Using the drop-down lists and text boxes in the form, specify an expression string that you want to use to define the naming criteria for image set or spin set asset members. See [Regular expression options](#regx-options-bsp) to review the list of expressions that are available in each form.
+      * As you select and specify expressions for a group, notice that the actual regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
+      * To remove a group you have added, tap **[!UICONTROL X]**.
+   * When you add two or more groups, in the **[!UICONTROL And]** drop-down list, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL OR]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL OR]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
 
 1. Do one of the following:
 
@@ -96,7 +92,7 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]**.
 
-When you finish creating a batch set preset, you apply it to one or more empty asset folders, upload assets to the folder, then create your image set or spin set, depending on the preset type you chose. See [Applying batch set presets to one or more folders](#apply-bsp).
+When you finish creating a batch set preset, you apply it to one or more empty asset folders, upload assets to the folder, then create your image set or spin set, depending on the preset type you chose. See [About applying batch set presets to folders](#apply-bsp).
 
 ### Preset Details, Set Naming Convention, and Rule Results - RegX options {#features-options-bsp}
 
@@ -151,29 +147,31 @@ See [Creating a batch set preset for an image set or a spin set](#creating-bsp) 
    | | | | | Lowercase |
    | Raw Code | | `<regular expression pattern>`| | |
 
-## About applying batch set presets to one or more folders {#apply-bsp}
+## About applying batch set presets to folders {#apply-bsp}
 
 When you assign batch set presets to one or more folders, any subfolders automatically inherit the presets from its parent folder.
 
-If you assigned a different preset to a folder, the new preset overrides the previous preset. The previously existing folder assets remain unchanged. The new preset is applied on the assets that are added to the folder later.
+You can apply multiple batch set presets to a folder.
 
-Folders that have a preset assigned to it are indicated in the user interface by the name of the preset appearing in the card name.
-
-![chlimage_1-517](assets/chlimage_1-517.png)
-
-You can apply presets to specific folders or globally to all assets.
+Folders that have a batch preset assigned to it are indicated in the user interface by the name of the preset appearing in the folder, in the **[!UICONTROL Card]** view.
 
 You can reprocess assets in a folder that already has an existing batch set preset that you later changed. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-Choose either one of the following:
+There are three methods you can use to apply batch set presets to folders. The first two methods assume you are applying batch set presets to a new folder that does not contain any assets.
 
-* [Applying batch set presets to folders from the Batch Set Preset page](#apply-bsp-to-folders-via-bsp-page)
-* [Applying batch set presets from a folder's Properties page](#apply-bsp-to-folders-via-properties)
-* [Applying batch set presets to a folder with previously uploaded assets](#apply-bsp-to-uploaded-assets)
+* [Apply batch set presets to folders from the Batch Set Preset page](#apply-bsp-to-folders-via-bsp-page) - This method offers you the most flexibility. You can apply a single preset or multiple presets to a single folder or multiple folders.
+* [Apply batch set presets from a folder's Properties page](#apply-bsp-to-folders-via-properties) - This method lets you apply one or more batch set presets to a single folder only.
+* [Reprocess assets in a folder](#apply-bsp-to-uploaded-assets) - Use this method if any of the following are true:
+  * You want to apply a batch set preset to an existing asset folder that already has assets uploaded to it.
+  * You later edit an existing batch set preset that was previously applied to a folder of assets.
+  * You later upload more assets to an existing folder that already has a batch set preset applied to it.
+  * You delete assets from a folder that already has a batch set preset applied to it.
 
 ### Applying batch set presets to folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
 
 When you apply one or more batch set preseets to one or more folders, you FINSH
+
+As a best practice, before you upload any assets into folders, you should create one or more folders first and make sure they are synched up Dynamic Media, then apply the presets you want.
 
 **To apply batch set presets to folders from the Batch Set Preset page:**
 
@@ -289,6 +287,7 @@ If you want to remove presets from folders instead, see [Removing batch set pres
 ## About removing batch set presets from folders {#remove-bsp-from-folder}
 
 When you remove batch set presets from one or more folders, FINISH
+
 
 If no batch set presets were applied to a selected folder, 
 
