@@ -23,18 +23,18 @@ Use **[!UICONTROL Batch Set Presets]** to help ease the creation and organizatio
 
 ## Creating a batch set preset for an image set or a spin set {#creating-bsp}
 
-To create Batch Set Presets, you should have some familiarity and understanding of regular expressions.
+To create Batch Set Presets, it is desirable that you have some familiarity and understanding of regular expressions.
 
-And, optimally, your company should also have a defined naming convention for how assets should be grouped together in a set.
-To help you understand the importance of such a naming convention, suppose your company's defined naming convention is `<style>-<color>-<view>`, and the base name for the set must always be `<style>-<color>`, and the set name extension is `-SET`. If you upload an image named `0123-RED-01`, then a set would be created named `0123-RED-SET`. If you later upload images `0123-RED-03` and `0123-BLUE-01`, then the `RED-03` image would be added to the set in the second position because it is sorted lower than `01`. However, the `BLUE-01` image would be part of a new set named `0123-BLUE-SET`. For the next asset upload, you send files `0123-RED-02` and `0123-BLUE-02`. Each asset would be added to its respective set. The `RED-02` image would be automatically sorted between the existing `01` and `03` images, because of the sort order.
+Ideally, your company should also have a defined naming convention for how assets should be grouped together in a set.
+To help you understand the importance of using a naming convention, suppose your company's defined naming convention is `<style>-<color>-<view>`. And, the base name for the set must always be `<style>-<color>`, and the set name extension be `-SET`. If you upload an image named `0123-RED-01`, then a set would be created named `0123-RED-SET`. If you later upload images `0123-RED-03` and `0123-BLUE-01`, then the `RED-03` image would be added to the set in the second position because it is sorted lower than `01`. However, the `BLUE-01` image would be part of a new set named `0123-BLUE-SET`. For the next asset upload, you add files `0123-RED-02` and `0123-BLUE-02`. Each asset would be added to its respective set. The `RED-02` image would be automatically sorted between the existing `01` and `03` images, because of the sort order.
 
-The **[!UICONTROL Batch Set Preset]** feature lets you create, edit, or delete batch set presets, and apply or remove batch set presets to or from asset folders. You can create as many batch set presets as necessary to cover all asset ingest jobs you require. There are two forms of batch set preset definitions: one for a default naming convention that your company may have defined, and one for custom naming conventions that you create on the fly.
+The **[!UICONTROL Batch Set Preset]** feature lets you create, edit, or delete batch set presets, and apply or remove batch set presets to or from asset folders. You can use either the form field drop-down lists to define a batch set preset or use the **[!UICONTROL Raw Code]** field, which lets you type regular expression syntax. 
 
-You can use either the form field drop-down lists to define a batch set preset or use the raw code method, which lets you type out regular expression syntax.
+You can create as many batch set presets as necessary to cover all asset ingest jobs you require. There are two forms of batch set preset definitions: one for a default naming convention that your company may have defined, and one for custom naming conventions that you create on the fly.
 
 **About Match and Base Name**
 
-Two required elements are available for definition: **[!UICONTROL Match]** and **[!UICONTROL Base Name]**. These fields let you define all the elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention often makes use of one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
+Two required elements are available for defining your batch set preset: **[!UICONTROL Match]** and **[!UICONTROL Base Name]**. These elements let you define a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention often makes use of one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
  
 For example, the syntax for a literal match regular expression might look like the following:
 
@@ -42,36 +42,36 @@ For example, the syntax for a literal match regular expression might look like t
 
 **About Sequence Ordering**
 
-You can optionally define the order in which images are displayed after the image set or spin set is grouped together in Dynamic Media. By default, your assets are ordered alphanumerically. However, you can use a comma-separated list of regular expressions to define the order.
+You can also optionally define the order in which images are displayed after the image set or spin set is grouped together in Dynamic Media. By default, your assets are ordered alphanumerically. However, you can use a comma-separated list of regular expressions to define the order.
 
-With respect to sequence automation, you can specify rules to force-sort assets in a certain way, if necessary. For example, suppose your first asset is always named `_main` and you want it followed with `_alt1`, `_alt2`, `_alt2`. In such cases, then could create a sequence rule that looks like the following:
+With respect to sequence ordering automation, you can specify rules to force-sort assets in a certain way, if necessary. For example, suppose your first asset is always named `_main` and you want it followed with `_alt1`, `_alt2`, `_alt3`, and so on. In such cases, you could create a sequence ordering rule with the following syntax:
 
 `.*_main,.*_alt[0-9]`
 
-Nonetheless, it is best to rely on alphanumeric numbering for sorting as much as possible. Furthermore, you can use the image set or spin set editor tools in Dynamic Media to easily rearrange the sequence order of assets, or add and delete new assets in the set by using a drag-and-drop operation.
+While a force-sort sequence is possible, it is generally best to rely on alphanumeric numbering for sorting, as much as possible. Furthermore, you can use the image set or spin set editor tools in Dynamic Media to easily rearrange the sequence order of assets, or add and delete new assets in the set by using a drag-and-drop operation.
 
-When you finish creating a batch set preset, you apply it to one or more folders that you have created. At that point, you are ready to create your image set or spin set, depending on the preset type you chose. See [About applying batch set presets to folders](#apply-bsp).
+When you finish creating a batch set preset, you apply it to one or more folders that you have created. See [About applying batch set presets to folders](#apply-bsp).
 
 <!-- See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set). -->
 
 **To create a batch set preset for an image set or a spin set:**
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Batch Set Presets.]**
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
-1. On the **[!UICONTROL Batch Set Preset]** page, tap **[!UICONTROL Create.]**
+1. On the **[!UICONTROL Batch Set Presets]** page, near the upper-right corner, tap **[!UICONTROL Create]**.
 
    ![bsp-create2.png](/help/assets/assets-dm/bsp-create2.png)
 
-1. In the **[!UICONTROL Create Batch Set Preset]** dialog box, in the **[!UICONTROL Preset Name]** text field, enter a descriptive name. The preset name is not editable unless you copy the preset later and specify a new name.
+1. In the **[!UICONTROL Create Batch Set Preset]** dialog box, in the **[!UICONTROL Preset Name]** text field, enter a descriptive name. Be aware that the preset name is not editable if you later decide to change it.
 
    ![bsp-create3.png](/help/assets/assets-dm/bsp-create3.png)
 
-1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Choose the preset type carefully; it is not editable later.
+1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Be sure you choose the correct preset type; it is not editable later.
 1. Tap **[!UICONTROL Create]**.
 1. On the right side of the **[!UICONTROL Edit Batch Set Preset]** page, set the editable options you want under the **[!UICONTROL Preset Details]** and **[!UICONTROL Set Naming Convention]** headings.
-   See [Preset Details, Set Naming Convention, and Rule Results - RegX options](#features-options-bsp) to learn more about the editable options that are available.
+   See [Preset Details, Set Naming Convention, and Rule Results - RegX options](#features-options-bsp) to learn more about the editable options that are available to you.
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
 
@@ -79,8 +79,8 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
    * On the left side of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**.
    * The **[!UICONTROL Match]** and **[!UICONTROL Base Name]** forms are required; **[!UICONTROL Sequence Ordering]** is optional.
-   * Using the drop-down lists and text boxes in the form, specify an expression string that you want to use to define the naming criteria for image set or spin set asset members. See [Regular expression options](#regx-options-bsp) to review the list of expressions that are available in each form.
-      * As you select and specify expressions for a group, notice that the actual regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading. These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
+   * Using the drop-down lists and text boxes in the group's form, specify an expression group that you want to use to define the naming criteria for image set or spin set asset members. See [Regular expression options](#regx-options-bsp) to review the complete list of expressions that are available in each form.
+      * As you select and specify expressions for a group, you will notice that the actual regular expression syntax is reflected near the lower right side of the page, under the **[!UICONTROL Rule Results - RegX]** heading (you may need to tap anywhere outside the form area to see the regular expression string updated in the lower right). These regular expression strings represent the pattern that you want to match in a search of Dynamic Media assets to create your image set or spin set.
       * To remove a group you have added, tap **[!UICONTROL X]**.
    * When you add two or more groups, in the **[!UICONTROL And]** drop-down list, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL Or]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL Or]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
 
@@ -88,11 +88,11 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
    * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, tap **[!UICONTROL Add Group]**. Create another regular expression group as you did in the previous step.
    * Review the regular expression syntax in the **[!UICONTROL Rule Results - RegX]** area. If you need to make changes to the syntax, make your edits in the respective group on the left side of the page.
-   * If you are finished creating groups, continue to the next step.
+   * If you are finished creating expression groups, continue to the next step.
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]**.
 
-When you finish creating a batch set preset, you apply it to one or more empty asset folders, upload assets to the folder, then create your image set or spin set, depending on the preset type you chose. See [About applying batch set presets to folders](#apply-bsp).
+You are now read to apply the batch set preset to one or more empty asset folders, upload assets to the folder, then create your image set or spin set, depending on the preset type you chose. See [About applying batch set presets to folders](#apply-bsp).
 
 ### Preset Details, Set Naming Convention, and Rule Results - RegX options {#features-options-bsp}
 
@@ -107,7 +107,7 @@ See [Creating a batch set preset for an image set or a spin set](#creating-bsp) 
    | Included Derived Assets | Optional. Select **[!UICONTROL Yes]** (default) to have Dynamic Media’s IPS (Image Production System) include generated or “derived” images with your Spin Set or Image Set. A derived asset is an image that was not directly uploaded by a user. Instead, the asset was produced by IPS when a master asset was uploaded. For example, an image asset that IPS generated from a page in a PDF, at the time the PDF was uploaded in Dynamic Media, is considered a derived asset. |
    | Destination Folder | Optional.  If you define large numbers of image sets or spin sets, you may prefer to keep these sets separate from the folders that contain the assets themselves. As such, you may want to consider creating an Image Sets or Spin Sets folder and redirect the application to place batch set generated sets here.<br>In such case, specify which folder within the AEM Assets folder structure (`/content/dam`) should have the batch set preset active. Be sure the folder is enabled for Dynamic Media synchronization to allow it as a destination folder. See [Configuring selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Be aware that more than one folder can have a given batch set preset assigned to it, if you apply the preset by way of the folder’s **[!UICONTROL Properties]**. See [Applying batch set presets from a folder's Properties page](#apply-bsp-to-folders-via-properties).<br>If you do not specify a folder, the batch set preset is created in the same folder as the asset upload folder. |
    | **[!UICONTROL Set Naming Convention]** |  |
-   | Prefix<br>or<br>Suffix | Optional. Enter either a prefix, suffix, or both in the respective fields.<br>The prefix and suffix fields let you create as many batch set presets using an alternate, custom file naming convention that may be needed for a particular set of content. This method is especially useful in cases where there is an exception to a company's defined default naming scheme.<br>The prefix or suffix is added to the **[!UICONTROL Base Name]** you define in the **[!UICONTROL Asset Naming Convention]** area. By adding a prefix or suffix you ensure that your set gets created exclusively and independently from other assets. It can also serve to further help others identify file types. For example, to determine a color mode used, you could add as a prefix or suffix `rgb` or `cmyk`.<br>While specifying a set naming convention is not required to use batch set preset functionality, best practice recommends that you use the set naming convention to define as many elements of your naming convention that you want grouped in a set to help streamline batch set creation. |
+   | Prefix<br>or<br>Suffix | Optional. Enter either a prefix, suffix, or both in the respective fields.<br>The prefix and suffix fields let you create as many batch set presets using an alternate, custom file naming convention that may be needed for a particular set of content. This method is especially useful in cases where there is an exception to a company's defined default naming scheme.<br>The prefix or suffix is added to the **[!UICONTROL Base Name]** you define in the **[!UICONTROL Asset Naming Convention]** area. By adding a prefix or suffix you ensure that your image set or spin set gets created exclusively and independently from other assets. It can also serve to further help others identify file types. For example, to determine a color mode used, you could add as a prefix or suffix `rgb` or `cmyk`.<br>While specifying a set naming convention is not required to use batch set preset functionality, best practice recommends that you use the set naming convention to define as many elements of your naming convention that you want grouped in a set to help streamline batch set creation. |
    | **[!UICONTROL Rule Results - RegX]** |  |
    | Asset Naming Convention - Match | Read-only. Displays the regular expression syntax based on the Match form options you chose or the raw code you entered. |
    | Asset Naming Convention - Base Name | Read-only. Displays the regular expression syntax based on the Base Name form options you chose or the raw code you entered. |
