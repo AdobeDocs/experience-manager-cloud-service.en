@@ -8,30 +8,47 @@ description: You can create new pages within your Launch. You can also delete un
 With launches you can both:
 
 * [Manage new content in existing pages](/help/sites-cloud/authoring/launches/editing.md),
-* [Add new pages to](#add-pages-to-launch), or [delete unwanted pages from](#remove-pages-from-launch), a launch,
-* Navigate within the structure of a launch.
-
-## Add Pages to Your Launch {#add-pages-to-launch}
-
-## Remove Pages from Your Launch {#remove-pages-from-launch}
+* [Navigate through the structure of a launch in the Sites console](#navigate-structure-of-launch),
+* From the console [Add new pages to](#add-pages-to-launch), or [delete unwanted pages from](#remove-pages-from-launch), a launch,
+* Take other standard actions on pages within the launch.
 
 ## Navigate the Structure of Your Launch {#navigate-structure-of-launch}
 
 You can navigate through the structure of your launch from:
 
 * The Page Editor:
-  You can either
-  * **Leave** the launch and return to editing the source page
-  * **Navigate** the structure of the Launch
+  
+  * Select **Navigate** to open the structure of the Launch in the console:
   ![Navigate launch from Page Editor](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+  
+  >[!NOTE]
+  >You can also:
+  >
+  >* **Leave** the launch and return to editing the source page
 
 * The **Launches** Console:
   If you select a specific launch, you can then select **Manage Content**:
   ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-console.png)
   
-Both of these entry points will open the launch in the Timeline of the Sites console, where you can:
+Both of these entry points will open the launch in the **Timeline** of the Sites console, where you can:
 
 * Navigate, 
 * **Create** new pages,
 * Select existing pages and take action; for example, **Edit**, open **Properties**, **Lock**, **Copy**, **Paste** and **Delete**
   ![Navigate launch in Sites Console from Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+
+## Add Pages to Your Launch {#add-pages-to-launch}
+
+To add new pages to your launch:
+
+1. [Navigate to the required location in your launch](#navigate-structure-of-launch).
+
+1. Select **Create** to [create a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) as usual.
+
+## Remove Pages from Your Launch {#remove-pages-from-launch}
+
+To remove pages from your launch:
+
+1. [Navigate to the required location in your launch](#navigate-structure-of-launch).
+
+1. Select **Delete** to [delete a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) as usual.
