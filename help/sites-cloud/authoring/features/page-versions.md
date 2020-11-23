@@ -185,6 +185,10 @@ To compare a previous version with the current page:
 
 Timewarp is a feature designed to simulate the *published* state of a page at specific times in the past.
 
+>[!NOTE]
+>
+>[Timewarp can also be used with Launches to preview the future](/help/sites-cloud/authoring/launches/preview.md).
+
 Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time in order to understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
 
 To do this:
