@@ -51,7 +51,9 @@ user-guide-description: Understand how to author with, and administer, Experienc
   + Launches {#launches}
     + [Working with Launches](authoring/launches/overview.md)
     + [Creating Launches](authoring/launches/creating.md)
+    + [Managing Pages in Launches](authoring/launches/managing-pages.md)
     + [Editing Launches](authoring/launches/editing.md)
+    + [Previewing Launches with Timewarp](authoring/launches/preview.md)
     + [Promoting Launches](authoring/launches/promoting.md)
   + Workflows {#workflows}
     + [Working with Workflows](authoring/workflows/overview.md)
