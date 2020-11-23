@@ -249,7 +249,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
 >[!NOTE]
 >
 >When you add hotspots to an image in an [Interactive Image](/help/assets/dynamic-media/interactive-images.md) or a Carousel Banner, the hotspot information is stored in the same metadata location&mdash;relative to the image's location&mdashregardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image&mdash;along with its defined hotspot data&mdash;in either viewer.
-
+>
 >Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You may want to create Interactive Images and Carousel Banners using separate copies of the same image instead.
 
 >[!NOTE]
