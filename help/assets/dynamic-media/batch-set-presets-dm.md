@@ -63,9 +63,6 @@ When you finish creating a batch set preset, you apply it to one or more folders
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
 1. On the **[!UICONTROL Batch Set Presets]** page, near the upper-right corner, tap **[!UICONTROL Create]**.
-
-   ![bsp-create2.png](/help/assets/assets-dm/bsp-create2.png)
-
 1. In the **[!UICONTROL Create Batch Set Preset]** dialog box, in the **[!UICONTROL Preset Name]** text field, enter a descriptive name. Be aware that the preset name is not editable if you later decide to change it.
 
 1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Be sure you choose the correct preset type; it is not editable later.
@@ -138,25 +135,16 @@ You may find it necessary to reprocess assets in a folder if you experience eith
 ### Applying batch set presets to asset folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
-1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check one or more batch set presets that you want to apply one or more folders.
+1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of each batch set preset that you want to apply to folders.
 1. On the toolbar, tap **[!UICONTROL Apply Batch Preset to Folder(s)]**.
-
-   ![bsp-apply-to-folders1.png](/help/assets/assets-dm/bsp-apply-to-folders1.png)
-
-1. On the **[!UICONTROL Select Folder(s)]** page, select one or more folder that you want the batch set presets applied to.
-
-   ![bsp-apply-to-folders2.png](/help/assets/assets-dm/bsp-apply-to-folders2.png)
-
+1. On the **[!UICONTROL Select Folder(s)]** page, select the check box of each folder that you want the batch set presets applied to.
 1. In the upper-right corner of the **[!UICONTROL Select Folder(s)]** page, tap **[!UICONTROL Apply]**.
 
 ### Applying batch set presets from an asset folder's Properties page {#apply-bsp-to-folders-via-properties}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigate to a folder to which you want to apply one or more batch set presets.
-1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box.
-
-   ![bsp-apply-via-properties1.png](/help/assets/assets-dm/bsp-apply-via-properties1.png)
-
+1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box of the.
 1. On the toolbar, tap **[!UICONTROL Properties]**.
 1. On the folder's Properties page, tap the **[!UICONTROL Dynamic Media Processing]** tab.
 
@@ -185,9 +173,6 @@ If you want the newly edited preset to be re-applied to the existing assets in t
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check the batch set preset that you want to change.
 1. On the toolbar, tap **[!UICONTROL Edit Batch Set Preset.]**
-
-   ![bsp-edit1.png](/help/assets/assets-dm/bsp-edit1.png)
-
 1. Edit the preset as necessary. 
 1. In the upper-right corner of the **[!UICONTROL Batch Set Preset]** page, tap **[!UICONTROL Save.]**
 
@@ -201,9 +186,6 @@ If you copy an existing preset that is reference by asset folders, those folders
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of the batch set preset that you want to copy.
-
-   ![bsp-copy1.png](/help/assets/assets-dm/bsp-copy1.png)
-
 1. On the toolbar, tap **[!UICONTROL Copy]**.
 1. In the **[!UICONTROL Copy Batch Set Preset]** dialog box, in the **[!UICONTROL Title]** text box, type a new name for the preset.
 
@@ -226,9 +208,6 @@ There are two methods you can use to remove batch set presets from folders.
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to remove from one or more folders.
-
-   ![bsp-remove-from-folders1.png](/help/assets/assets-dm/bsp-remove-from-folders1.png)
-
 1. On the toolbar, tap **[!UICONTROL Remove Batch Preset from Folder(s)]**.
 
 1. On the **[!UICONTROL Select Folder(s)]** page, select one or more folders in which you want the batch set presets removed. The screenshot above shows a selected folder with the names of two batch set presets already applied to it that will be removed.
@@ -242,10 +221,7 @@ There are two methods you can use to remove batch set presets from folders.
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigate to a folder to which you want to remove one or more batch set presets.
-1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box.
-
-   ![bsp-apply-via-properties1.png](/help/assets/assets-dm/bsp-apply-via-properties1.png)
-
+1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box of a folder.
 1. On the toolbar, tap **[!UICONTROL Properties]**.
 1. On the folder's Properties page, tap **[!UICONTROL Dynamic Media Processing]**.
 
@@ -267,9 +243,6 @@ If you just want to *remove* presets from folders instead, see [Removing batch s
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to delete.
-
-   ![bsp-delete1.png](/help/assets/assets-dm/bsp-delete1.png)
-
 1. On the toolbar, tap **[!UICONTROL Delete Batch Set Preset(s)]**.
 
    ![bsp-delete2.png](/help/assets/assets-dm/bsp-delete2.png)
