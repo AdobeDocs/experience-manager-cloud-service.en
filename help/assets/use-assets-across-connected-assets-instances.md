@@ -12,7 +12,7 @@ Users can create web pages in [!DNL Experience Manager Sites]. [!DNL Experience 
 
 ## Overview of Connected Assets {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. The administrators create a one-time integration of a deployment of [!DNL Sites] with a different (remote) deployment of [!DNL Assets].
+When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and use of a few remote assets at a time. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
 
@@ -147,7 +147,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). The assets are also searchable and visible in the local repository via [!UICONTROL Content Finder].
+>Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored in the local folder (`connectedassets` in the above walk-through). The assets are also searchable and visible in the local repository via [!UICONTROL Content Finder].
 
 The fetched assets can be used as any other local asset, except that the associated metadata cannot be edited.
 
