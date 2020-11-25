@@ -13,9 +13,9 @@ user-guide-description: Understand the transition journey to Cloud Service.
   + [Execution](/help/move-to-cloud-service/execution.md)
   + [Post Go-live](/help/move-to-cloud-service/post-go-live.md)
 + Cloud Transition Tools {#cloud-migration}
-  + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
-    + [Overview](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-    + [Using Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+  + Best Practices Analyzer {#best-practices-analyzer}
+    + [Overview](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+    + [Using Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
   + Content Transfer Tool {#content-transfer-tool}
     + [Overview](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
     + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
