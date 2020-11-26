@@ -7,6 +7,14 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 
 >[!CAUTION]
 >
+>Certain features for Content Fragments will be released in early 2021.
+>
+>The related documentation is already available for preview purposes.
+>
+>Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+
+>[!CAUTION]
+>
 >The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
 >
 >The related documentation is already available for preview purposes.
