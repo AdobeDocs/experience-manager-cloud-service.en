@@ -54,6 +54,10 @@ The following legend describes the level of support.
 | JPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | PNG         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 | TIFF        | &#10003;             | &#10003;            | &#10003;     | -        |
+| SVG         | &#10003;             | -                   | &#10003;     | &#10003; |
+| SGI         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
+| RGB         | &#10003;             | &#10003;            | &#10003;     | &#10003; |
+| RGBA        | &#10003;             | &#10003;            | &#10003;     | &#10003; |
 
 ## Image formats in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
@@ -184,7 +188,7 @@ The document formats supported for asset management features are as follows.
 | QT          | &#10003;             | -                   | &#10003;     |
 | R3D         | &#10003;             | -                   | &#10003;     |
 | SWF         | &#10003;             | -                   | &#10003;     |
-| WEBM        | &#10003;             | -                   | &#10003;     |
+| WebM        | &#10003;             | -                   | &#10003;     |
 | WMV         | &#10003;             | &#10003;            | &#10003;     |
 
 ## Video formats in [!DNL Dynamic Media] for transcoding {#video-dynamic-media-transcoding}
