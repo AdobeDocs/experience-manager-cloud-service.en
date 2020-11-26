@@ -119,6 +119,10 @@ Before beginning your transition journey to Cloud Service, you should familiariz
 </tr>
 </table>
 
+>[!NOTE]
+>The Best Practices Analyzer Report speeds up the process of estimating the time and cost that is required to transition to AEM as a Cloud Service by providing information that would otherwise have to be manually gathered and evaluated.
+ 
+
 <br>
 
 ### Execution
