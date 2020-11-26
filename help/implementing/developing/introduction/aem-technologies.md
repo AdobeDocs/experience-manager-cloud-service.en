@@ -1,6 +1,6 @@
 ---
 title: AEM Technical Foundations
-description: An overview of the technical foundations of AEM including how AEM is structured and fundamental technologies like JCR, Sling, OSGi, the dispatcher, workflows, and MSM.
+description: An overview of the technical foundations of AEM including how AEM is structured and fundamental technologies like JCR, Sling, and OSGi.
 ---
 
 # AEM Technical Foundations {#aem-technical-foundations}
