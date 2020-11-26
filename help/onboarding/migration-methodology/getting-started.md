@@ -83,6 +83,7 @@ See self-help resources about implementation for Experience Manager as a Cloud S
 >1. [Contact the Experience Manager Support Team](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Explore [Experience Manager Communities & Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
+<br>
 
 ## Moving to Adobe Experience Manager as a Cloud Service {#move-to-cloud}
 
@@ -103,18 +104,22 @@ The figure below shows a pictorial representation of the recommended transition 
 
 Before beginning your transition journey to Cloud Service, you should familiarize yourself with Experience Manager as a Cloud Service and review the notable changes that have been made to it and also review the features that have been replaced or deprecated.
 
-  1. Project discovery and assessment
-     * Refer to [Notable Changes to Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en) to understand the important differences between Adobe Experience Manager as a Cloud Service and Experience Manager 6.x.
-     * Refer to [Deprecated Features](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features) to learn more about features and capabilities that have been marked as deprecated.
-     * [For Cloud Service Migrations only] Assessing Cloud Service Readiness : Run the [Best Practices Analyzer(BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) on source environment 
-     * Complete an assessment against notable changes and deprecated features in Experience Manager CS
+<table>
+<tr>
+<td>Project discovery and assessment</td>
+<td><ul><li>Refer to <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">Notable Changes to Experience Manager as a Cloud Service</a> to understand the important differences between Adobe Experience Manager as a Cloud Service and Experience Manager 6.x.</li><li>Refer to <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features">Deprecated Features</a> to learn more about features and capabilities that have been marked as deprecated.</li><li>[For Cloud Service Migrations only] Assessing Cloud Service Readiness : Run the <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration">Best Practices Analyzer(BPA)</a> on source environment </li><li>Complete an assessment against notable changes and deprecated features in Experience Manager CS</li></ul></td>
+</tr>
+<tr>
+<td>Review</td>
+<td><ul><li>Based on discovery, perform effort estimation and resourcing exercises</li></ul></td>
+</tr>
+<tr>
+<td>Measure</td>
+<td><ul><li><a href="https://experienceleague.adobe.com/welcome/aem/part6.html">Establish Project KPIs</a>, success criteria and project timelines</li></ul</td>
+</tr>
+</table>
 
-  2. Review
-     * Based on discovery, perform effort estimation and resourcing exercises
-
-  3. Measure
-      * [Establish Project KPIs](https://experienceleague.adobe.com/welcome/aem/part6.html), success criteria and project timelines
-
+<br>
 
 ### Execution
 
@@ -124,8 +129,9 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 
 #### Content Migration
 
-1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration)
-2. [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager)
+1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) : used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance.
+2. [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) : used for importing and exporting of mutable content of the repository.
+
 
 #### Refactor/Optimize
 
