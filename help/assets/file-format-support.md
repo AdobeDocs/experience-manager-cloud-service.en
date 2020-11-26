@@ -1,18 +1,18 @@
 ---
 title: Supported file formats and MIME types
-description: File formats and MIME types supported by Experience Manager Assets as a Cloud Service.
+description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a Cloud Service.
 contentOwner: AG
 ---
 
-# Assets supported file formats {#supported-file-formats}
+# [!DNL Assets] supported file formats {#supported-file-formats}
 
-Adobe Experience Manager as a Cloud Service supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. Adobe Experience Manager Assets supports a wide range of file formats and each product feature has varied support for different formats.
+[!DNL Adobe Experience Manager] as a Cloud Service supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. [!DNL Adobe Experience Manager Assets] supports a wide range of file formats and each product feature has varied support for different formats.
 
-In addition, Experience Manager Assets provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. This extended support is provided using [asset microservices](asset-microservices-configure-and-use.md).
+In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. This extended support is provided using [asset microservices](asset-microservices-configure-and-use.md).
 
 The highlights for Asset conversion using asset microservices include:
 
-* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension, and Adobe Acrobat or PDF.
+* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
 * Key [imaging file formats](#image-formats).
 * [Camera Raw file formats](#camera-raw-formats) for a wide range of cameras, including Canon, Nikon, Fujifilm, Olympus, and other manufacturers (powered by Adobe Camera Raw).
 * Common [document formats](#document-formats), including Microsoft Office and Open Document formats.
@@ -32,7 +32,7 @@ The following legend describes the level of support.
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI          | &#10003;             | -                   | &#10003;            | &#10003;     |
 | COLLAGE     | -                    | -                   | &#10003;            | -            |
-| DN          | &#10003;             |                     | &#10003;            | &#10003;     |
+| DN          | &#10003;             | -                   | &#10003;            | &#10003;     |
 | IDEAS       | -                    | -                   | &#10003;            | -            |
 | INDD        | &#10003;             | -                   | &#10003;            | &#10003; *   |
 | INDT        | -                    | -                   | &#10003;            | -            |
@@ -87,12 +87,12 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 
 | Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; | | |
-| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
-| gLTF | &#10003; | &#10003; | &#10003; | | &#10003; | | &#10003; | |
-| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
-| STL | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
-| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; | | | &#10003; |
+| DN | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; | -| -|
+| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | -| &#10003; | &#10003; |
+| gLTF | &#10003; | &#10003; | &#10003; |- | &#10003; |- | &#10003; |- |
+| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; |
+| STL | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; |
+| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; |- |- | &#10003; |
 
 ## [!DNL Camera RAW] formats {#camera-raw-formats}
 
@@ -167,7 +167,7 @@ The document formats supported for asset management features are as follows.
 | 3G2         | -                    | &#10003;            | -            |
 | 3GP         | -                    | &#10003;            | -            |
 | AVI         | &#10003;             | &#10003;            | &#10003;     |
-| DIVX        | &#10003;             |                     | &#10003;     |
+| DIVX        | &#10003;             |  -                  | &#10003;     |
 | F4V         | &#10003;             | &#10003;            | &#10003;     |
 | FLV         | &#10003;             | &#10003;            | &#10003;     |
 | M2T         | &#10003;             | -                   | &#10003;     |
@@ -189,28 +189,28 @@ The document formats supported for asset management features are as follows.
 
 ## Video formats in [!DNL Dynamic Media] for transcoding {#video-dynamic-media-transcoding}
 
-| Video file extension   | Container          | Recommended video codecs                                                                                                                            | Unsupported video codecs                                |
-|------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| MP4                    | MPEG-4             | H264/AVC (all profiles)                                                                                                                             |                                                         |
-| MOV, QT                | Apple QuickTime    | H264/AVC, Apple ProRes422  & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV  (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR   | Apple Intermediate, Apple Animation                     |
-| FLV, F4V               | Adobe Flash        | H264/AVC, Flix VP6, H263, Sorenson                                                                                                                  | SWF (vector animation files)                            |
-| WMV                    | Windows Media 9    | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4)                                                                                     | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2)   |
-| MPG, VOB, M2V, MP2     | MPEG-2             | MPEG-2                                                                                                                                              |                                                         |
-| M4V                    | Apple iTunes       | H264/AVC                                                                                                                                            |                                                         |
-| AVI                    | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro                                                                | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM)       |
-| WebM                   | WebM               | Google VP8                                                                                                                                          |                                                         |
-| OGV, OGG               | Ogg                | Theora, VP3, Dirac                                                                                                                                  |                                                         |
-| MXF                    | MXF                | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro                                                                                                        |                                                         |
-| MTS                    | AVCHD              | H264/AVC                                                                                                                                            |                                                         |
-| MKV                    | Matroska           | H264/AVC                                                                                                                                            |                                                         |
-| R3D, RM                | Red Raw Video      | MJPEG 2000                                                                                                                                          |                                                         |
-| RAM, RM                | RealVideo          | Unsupported                                                                                                                                         | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40)           |
-| FLAC                   | Native Flac        | Free lossless audio codec                                                                                                                           |                                                         |
-| MJ2                    | Motion JPEG 2000   | Motion JPEG 2000 codec                                                                                                                              |                                                         |
+| Video file extension   | Container          | Recommended video codecs    | Unsupported video codecs   |
+|------------------------|--------------------|--------|-------|
+| MP4                    | MPEG-4             | H264/AVC (all profiles) | - |
+| MOV, QT                | Apple QuickTime    | H264/AVC, Apple ProRes422  & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV  (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR   | Apple Intermediate, Apple Animation  |
+| FLV, F4V               | Adobe Flash        | H264/AVC, Flix VP6, H263, Sorenson  | SWF (vector animation files) |
+| WMV                    | Windows Media 9    | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4)  | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| MPG, VOB, M2V, MP2     | MPEG-2             | MPEG-2  |- |
+| M4V                    | Apple iTunes       | H264/AVC | - |
+| AVI                    | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| WebM                   | WebM               | Google VP8 |- |
+| OGV, OGG               | Ogg                | Theora, VP3, Dirac  | - |
+| MXF                    | MXF                | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | -|
+| MTS                    | AVCHD              | H264/AVC | - |
+| MKV                    | Matroska           | H264/AVC  | - |
+| R3D, RM                | Red Raw Video      | MJPEG 2000 | -  |
+| RAM, RM                | RealVideo          | Unsupported | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
+| FLAC                   | Native Flac        | Free lossless audio codec |  - |
+| MJ2                    | Motion JPEG 2000   | Motion JPEG 2000 codec | - |
 
 ## Audio formats {#audio-formats}
 
-Assets as a Cloud Service provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
+[!DNL Assets] as a Cloud Service provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
 
 >[!MORELIKETHIS]
 >
