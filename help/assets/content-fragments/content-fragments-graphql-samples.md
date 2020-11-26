@@ -38,21 +38,25 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 * In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
 
-  * `_path` : the path to your Content Fragement within the repository
+  * For content:
 
-  * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
+    * `_locale` : to reveal the language; based on Language Manager
 
-  * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, 
+    * `_metadata` : to reveal metadata for your fragment
+
+    * `_path` : the path to your Content Fragement within the repository
+
+    * `_references` : to reveal references; including inline references in the Rich Text Editor
+
+    * `_variations` : to reveal specific Variations within your Content Fragment
+
+  * And operations:
   
-  * `_variations` : to reveal specific Variations within your Content Fragment
+    * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, 
+  
+    * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
 
-  * `_metadata` : to reveal metadata for your fragment
-
-  * `_locale` : to reveal the language; based on Language Manager
-
-  * `_references` : to reveal references; including inline references in the Rich Text Editor
-
-  * `_ignoreCase` : to ignore the case when querying
+    * `_ignoreCase` : to ignore the case when querying
 
 * GraphQL union types are supported:
 
@@ -79,7 +83,7 @@ For the sample queries, we will use the following Content Models, and their inte
 
 #### Company {#model-company}
 
-The basic fields defining the comparny are:
+The basic fields defining the company are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
