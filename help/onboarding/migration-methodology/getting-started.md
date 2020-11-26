@@ -152,7 +152,7 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 
 ### Post Go-Live
 
-In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.</dt>
+In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.
 
 >[!TIP]
 > Tools are available to troubleshoot AEM as a Cloud Service environments
