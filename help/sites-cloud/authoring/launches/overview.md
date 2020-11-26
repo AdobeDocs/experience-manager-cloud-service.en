@@ -25,6 +25,8 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 * [Creating Launches](/help/sites-cloud/authoring/launches/creating.md)
 * [Editing Launches](/help/sites-cloud/authoring/launches/editing.md)
+* [Managing Pages within Launches](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Using Timewarp to Preview your content based on Launches](/help/sites-cloud/authoring/launches/preview.md)
 * [Promoting Launches](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Launches - the Order of Events {#launches-the-order-of-events}
