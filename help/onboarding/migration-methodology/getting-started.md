@@ -30,7 +30,8 @@ This one-pager outlines the recommended phased approach to transition customers 
 
 ## Developer Journey in Adobe Experience Manager as a Cloud Service {#developer-journey}
 
-### Developing
+### Developing 
+
 The fundamentals of code development are similar in Adobe Experience Manager as a Cloud Service compared to the Adobe Experience Manager On Premise and Managed Services solutions. 
 
 Developers write code and test it locally, which is then pushed to remote Adobe Experience Manager as a Cloud Service environments. 
@@ -41,7 +42,7 @@ See self-help resources about implementation for Experience Manager as a Cloud S
 |-----------|------------|
 |<ol><li>Review [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) documentation to learn more.</li><li>Watch [Install Dispatcher SDK](https://video.tv.adobe.com/v/30601) to understand how to install Dispatcher SDK</li><li>Watch [Configure Dispatcher SDK](https://video.tv.adobe.com/v/30602) to understand on how to configure Dispatcher SDK</li><li>Review [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) documentation to learn more</li><li>Configuring access to Experience Manager [walk-through](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[Development Essentials](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Development Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Understanding Experience Manager Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)</li><li>[Digital Foundation Blueprint](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Overlays](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/overlays.html?lang=en#developing)</li><li>[Experience Manager as a Cloud Service API reference](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol>|
 
-[!TIP]
+>[!TIP]
 > See tutorial on how to [Develop and Deploy WKND on local Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
 
 ### Deploying
@@ -64,7 +65,7 @@ See self-help resources about implementation for Experience Manager as a Cloud S
      * [Configuring OSGI configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#deploying)
       * [Backup and Restore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
-[!TIP]
+>[!TIP]
 > See tutorial on how to [Deploy WKND to Experience Manager Cloud  Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)  
 
 ### Help and Resources
@@ -77,7 +78,7 @@ See self-help resources about implementation for Experience Manager as a Cloud S
       * [Experience Manager Cloud Service Logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging) (aemerror, aemaccess, aemrequest, aemdispatcher, httpderror, httpaccess)
       * Local SDK Logs (under host:port/crx-quickstart/logs)
 
- [!NOTE]
+>[!NOTE]
 > For additional help, you may want to :
 >1. [Contact the Experience Manager Support Team](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Explore [Experience Manager Communities & Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
@@ -96,6 +97,7 @@ The figure below shows a pictorial representation of the recommended transition 
 
 ![image](/help/move-to-cloud-service/assets/home-img1.png)
 
+<br>
 
 ### Planning
 
@@ -131,9 +133,8 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 |---|---|---|
 |<ul><li>[Local Dev setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)</li><li>[Local Dispatcher Setup](https://video.tv.adobe.com/v/30602/)</li><li>[Compile your code using SDK API jar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Review AEM Dev Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)<ul><li>Background Tasks and Long Running Jobs</li><li>Sling schedulers</li><li>Input stream usage & more</li></ul></li></ul>|<ul><li>Run the Best Practices Analyzer([BPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)) on source environment.[**Migration only**]<ul><li>Project Structuring considerations (based on [Cloud Archetype](https://github.com/adobe/aem-project-archetype))<ul><li>Separation of code and content (Mutable vs Immutable)</li><li>[Custom index definitions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#indexing)</li><li>[Custom runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)</li></ul></li></ul></li><li>Review and execute on necessary changes</li><li>[Deploy](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en) it on local SDK</li><li>Perform smoke testing via AEM SDK</li></ul>|<ul><li>Review [Dispatcher configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=en#local-validation-of-dispatcher-configuration) for refactoring</li><li>Leverage [Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=en#introduction-dispatcher) tool where appropriate. [**Migration only**]</li><li>Testing can be conducted using [Dispatcher SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites) </li></ul>|
 
- [!TIP]
-> Assets Customers : Review & Refactor Assets Workflows using 
-   [Asset Cloud Migration](https://github.com/adobe/aem-cloud-migration) tooling 
+>[!TIP]
+> Assets Customers : Review & Refactor Assets Workflows using [Asset Cloud Migration](https://github.com/adobe/aem-cloud-migration) tooling 
 
 
 #### Deployment/Go-Live
@@ -147,16 +148,19 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
   7. Smoke test validation
   8. Go-Live 
 
+<br>
+
 ### Post Go-Live
 
 In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.</dt>
 
-[!TIP]
-
+>[!TIP]
 > Tools are available to troubleshoot AEM as a Cloud Service environments
 >1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#aem-as-a-cloud-service-development-tools)
 >2. [CRX/DE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=en#debugging)
 >3. [Managing Logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=en#using-cloud-manager)
+
+<br>
 
 ### Tools & Resources
   
@@ -167,7 +171,7 @@ In the Post Go-live phase, you should ensure clean-up of temporary files, review
 |                          |                           | [Foundation Components to Core Components](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html) |                       |   |
 |                          |                           | [Classic UI to Touch-Enabled UI](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)           |                       |   |
 
- [!NOTE]
+>[!NOTE]
 > For additional help, you may want to :
 >1. [Contact the Experience Manager Support Team](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Explore [Experience Manager Communities & Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
