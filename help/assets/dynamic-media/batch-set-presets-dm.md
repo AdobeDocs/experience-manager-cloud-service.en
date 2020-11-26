@@ -10,7 +10,7 @@ Use **[!UICONTROL Batch Set Presets]** to help ease the creation and organizatio
 
 >[!IMPORTANT]
 >
->If you used batch set presets in [!DNL Dynamic Media Classic], and you are migrating from [!DNL Dynamic Media Classic] to [!DNL Adobe Experience Manager as a Cloud Service], you will need to manually recreate your batch set presets definitions within [!DNL Adobe Experience Manager as a Cloud Service].
+>If you used batch set presets in [!DNL Dynamic Media Classic], and you are migrating from [!DNL Dynamic Media Classic] to Adobe Experience Manager as a Cloud Service, you will need to manually recreate your batch set presets definitions within [!DNL Adobe Experience Manager as a Cloud Service].
 
 **Best Practice** &ndash; When working with batch set presets Adobe recommends the following workflow:
 
@@ -28,7 +28,7 @@ To create Batch Set Presets, it is desirable that you have some familiarity and 
 Ideally, your company should also have a defined naming convention for how assets should be grouped together in a set.
 To help you understand the importance of using a naming convention, suppose your company's defined naming convention is `<style>-<color>-<view>`. And, the base name for the set must always be `<style>-<color>`, and the set name extension be `-SET`. If you upload an image named `0123-RED-01`, then a set would be created named `0123-RED-SET`. If you later upload images `0123-RED-03` and `0123-BLUE-01`, then the `RED-03` image would be added to the set in the second position because it is sorted lower than `01`. However, the `BLUE-01` image would be part of a new set named `0123-BLUE-SET`. For the next asset upload, you add files `0123-RED-02` and `0123-BLUE-02`. Each asset would be added to its respective set. The `RED-02` image would be automatically sorted between the existing `01` and `03` images, because of the sort order.
 
-The **[!UICONTROL Batch Set Preset]** page in [!DNL Dynamic Media] lets you create, edit, or delete batch set presets, and apply or remove batch set presets to or from asset folders. You can use either the form field drop-down lists to define a batch set preset or use the **[!UICONTROL Raw Code]** field, which lets you type regular expression syntax. 
+The **[!UICONTROL Batch Set Preset]** page in [!DNL Dynamic Media] lets you create, edit, or delete batch set presets, and apply or remove batch set presets to or from asset folders. You can use either the form field drop-down lists to define a batch set preset or use the **[!UICONTROL Raw Code]** field, which lets you type regular expression syntax.
 
 You can create as many batch set presets as necessary to cover all asset ingest jobs you require.
 
@@ -58,7 +58,7 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
 **To create a batch set preset for an image set or a spin set:**
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -134,7 +134,7 @@ You may find it necessary to reprocess assets in a folder if you experience eith
 
 ### Applying batch set presets to asset folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of each batch set preset that you want to apply to folders.
 1. On the toolbar, tap **[!UICONTROL Apply Batch Preset to Folder(s)]**.
 1. On the **[!UICONTROL Select Folder(s)]** page, select the check box of each folder that you want the batch set presets applied to.
@@ -142,7 +142,7 @@ You may find it necessary to reprocess assets in a folder if you experience eith
 
 ### Applying batch set presets from an asset folder's Properties page {#apply-bsp-to-folders-via-properties}
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigate to a folder to which you want to apply one or more batch set presets.
 1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box of the.
 1. On the toolbar, tap **[!UICONTROL Properties]**.
@@ -170,7 +170,7 @@ If you want the newly edited preset to be re-applied to the existing assets in t
 
 **To edit a batch set preset:**
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check the batch set preset that you want to change.
 1. On the toolbar, tap **[!UICONTROL Edit Batch Set Preset.]**
 1. Edit the preset as necessary. 
@@ -184,7 +184,7 @@ If you copy an existing preset that is reference by asset folders, those folders
 
 **To copy an existing batch set preset:**
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets.]**
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of the batch set preset that you want to copy.
 1. On the toolbar, tap **[!UICONTROL Copy]**.
 1. In the **[!UICONTROL Copy Batch Set Preset]** dialog box, in the **[!UICONTROL Title]** text box, type a new name for the preset.
@@ -206,7 +206,7 @@ There are two methods you can use to remove batch set presets from folders.
 
 ### Removing batch set presets from folders by way of the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to remove from one or more folders.
 1. On the toolbar, tap **[!UICONTROL Remove Batch Preset from Folder(s)]**.
 
@@ -219,7 +219,7 @@ There are two methods you can use to remove batch set presets from folders.
 
 ### Removing batch set presets from a folder's Properties page {#remove-bsp-from-folders-via-properties}
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigate to a folder to which you want to remove one or more batch set presets.
 1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box of a folder.
 1. On the toolbar, tap **[!UICONTROL Properties]**.
@@ -241,13 +241,13 @@ If you just want to *remove* presets from folders instead, see [Removing batch s
 
 **To delete batch set presets:**
 
-1. Tap the [!DNL Adobe Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to delete.
 1. On the toolbar, tap **[!UICONTROL Delete Batch Set Preset(s)]**.
 
    ![bsp-delete2.png](/help/assets/assets-dm/bsp-delete2.png)
 
-1. In the **[!UICONTROL Delete Batch Set Presets]** dialog box, tap **[!UICONTROL Delete]**. 
+1. In the **[!UICONTROL Delete Batch Set Presets]** dialog box, tap **[!UICONTROL Delete]**.
 
    If the preset you are deleting was referenced by an asset folder, you may need to tap **[!UICONTROL Force Delete]** instead.
 
