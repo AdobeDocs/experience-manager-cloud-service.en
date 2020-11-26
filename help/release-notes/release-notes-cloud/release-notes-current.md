@@ -79,6 +79,14 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 
 * Support was added for searching workflow instances based on Workflow Title, Workflow Model, Status, Initiator, Payload Path and Start Date. See [Search Workflow Instances](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
+### User Sync {#user-sync}
+
+* User data, including profile attributes and group memberships, can be persisted on the publish tier. Learn more about this feature in [Registration, Login, and User Profile documentation](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md). 
+
+### Analyzers {#analyzers}
+
+The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) and [here](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+
 ## Content Transfer Tool {#content-transfer-tool}
 
 Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.

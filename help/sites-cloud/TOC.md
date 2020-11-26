@@ -70,6 +70,7 @@ user-guide-description: Understand how to author with, and administer, Experienc
     + [Creating and Managing Offers](authoring/personalization/offers.md)
     + [Understanding Segmentation](authoring/personalization/segmentation.md)
     + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+    + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administering {#administering}
   + [Administering Workflows](administering/workflows-administering.md)
 + Integrating with AEM as a Cloud Service {#integrations}
