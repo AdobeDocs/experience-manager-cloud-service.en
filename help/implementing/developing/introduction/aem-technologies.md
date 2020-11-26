@@ -3,7 +3,7 @@ title: AEM Technical Foundations
 description: An overview of the technical foundations of AEM including how AEM is structured and fundamental technologies like JCR, Sling, OSGi, the dispatcher, workflows, and MSM.
 ---
 
-# AEM Core Concepts {#aem-core-concepts}
+# AEM Technical Foundations {#aem-technical-foundations}
 
 AEM is a robust platform built upon proven, scalable, and flexible technologies. This document give a detailed overview of the various parts that make up AEM and is intended as a technical appendix for a full-stack AEM developer. It is not intended as a getting-started guide. If you are new to AEM development, please consult the [Getting Started Developing AEM Sites - WKND Tutorial](develop-wknd-tutorial.md) as a first step.
 
