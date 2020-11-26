@@ -12,3 +12,7 @@ description: With Timewarp you can view your content based on your launches.
 
 1. The content appropriate at that date will be shown:
    ![Navigate launch from Page Editor](/help/sites-cloud/authoring/assets/launches-timewarp-02.png)
+
+   >[!NOTE]
+   >
+   >Whichever launch has the live date closest to - and before - the date selected will be applicable and its content will be shown.
