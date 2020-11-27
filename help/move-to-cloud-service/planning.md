@@ -5,6 +5,12 @@ description: Planning Phase
 
 # Planning {#planning-phase}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_planning"
+>title="Planning your Transition"
+>abstract="Before beginning your transition journey to Cloud Service, you should familiarize yourself with AEM as a Cloud Service and review the notable changes that have been made to it and also review the features that have been replaced or deprecated."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
+
 Before beginning your transition journey to Cloud Service, you should familiarize yourself with AEM as a Cloud Service and review the notable changes that have been made to it and also review the features that have been replaced or deprecated.
 
 ## Notable Changes {#notable-changes}
