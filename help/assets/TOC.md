@@ -78,6 +78,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Working with Dynamic Media](dynamic-media/dynamic-media.md)
   + [Configuring Dynamic Media](dynamic-media/config-dm.md)
   + [Troubleshooting Dynamic Media](dynamic-media/troubleshoot-dm.md)
+  + [Accessibility in [!DNL Dynamic Media]](dynamic-media/accessibility-dm.md)
   + [Managing Dynamic Media assets](dynamic-media/managing-assets.md)
   + [Best practices for optimizing the quality of your images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
   + [Best practices for file management](dynamic-media/best-practices-for-file-management.md)
