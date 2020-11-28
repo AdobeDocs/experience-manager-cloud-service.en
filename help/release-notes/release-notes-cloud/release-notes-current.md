@@ -34,7 +34,7 @@ The following release (2020.12.0) will be on December 17, 2020
 
 * **Dynamic Media Batch Set Presets**: Automate the creation and organization of multiple assets in an image set or spin set at the time you upload asset files to a folder either individually or using bulk ingestion. <!-- TBD: See [Batch Set Presets](). -->
 
-* The following enhancements are done for accessibility in [!DNL Dynamic Media]. <!-- TBD: For details, see [accessibility features in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md). -->
+* The following enhancements are done for accessibility in [!DNL Dynamic Media]. For details, see [accessibility features in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
   * Screen readers (JAWS, Narrator) narrate the name, role, and state for the menu items in the Embed size menu option.
   * Users can navigate the Email link dialog using the `Tab` key.
