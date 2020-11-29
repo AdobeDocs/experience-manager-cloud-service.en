@@ -32,6 +32,16 @@ The following release (2020.12.0) will be on December 17, 2020
 
   ![sort assets](/help/assets/assets/asset-sort-options.png)
 
+* The following enhancements are done for accessibility in [Experience Manager Assets] in this release. For more information, see [accessibility features in [!DNL Assets]](/help/assets/accessibility.md).
+
+  * When navigating timeline using a keyboard, the Esc key can collapse the Show All option without losing the focus.
+  * When navigating using keyboard tab key, after removing the last tag from the added tags, the tag field retains the focus.
+  * [!DNL Experience Manager] components now contain appropriate information for name, role, and value to be used by screen readers.
+  * After you delete the Type/Size combo box, Link combo box, Language combo box, or Text edit box, the keyboard focus returns to the next or the previous user interface elements or to a more relevant user interface element.
+  * When hovering pointer over options, tips such as Select and Download appear. Users who use a screen magnifier may not see the file thumbnails because of these tips. Now, it is possible to preserve the focus, after removing the option using `Escape` key.
+  * Upon selecting a grid cell from the grid present in the page, the focus shifts to the action bar that appears on the screen.
+  * Visual users can differentiate between normal text and a link, as visual clues (underline and chevron icon) are displayed for links to all solutions in [!DNL Experience Manager] home page.
+
 * **Dynamic Media Batch Set Presets**: Automate the creation and organization of multiple assets in an image set or spin set at the time you upload asset files to a folder either individually or using bulk ingestion. <!-- TBD: See [Batch Set Presets](). -->
 
 * The following enhancements are done for accessibility in [!DNL Dynamic Media]. For details, see [accessibility features in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
