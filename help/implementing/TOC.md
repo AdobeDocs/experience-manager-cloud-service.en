@@ -31,6 +31,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
   + [Logging](developing/introduction/logging.md)
   + [Configurations and the Configuration Browser](developing/introduction/configurations.md)
+  + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + Full Stack AEM Development {#full-stack}
     + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
@@ -53,6 +54,8 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Image Editor](developing/components/image-editor.md)
       + [Decoration Tags](developing/components/decoration-tag.md)
       + [Using Hide Conditions](developing/components/hide-conditions.md)
+     + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
+    + [Building Tagging into AEM Applications](/help/implementing/developing/introduction/tagging-applications.md)
   + Hybrid AEM Development {#hybrid}
     + [Hybrid and SPA with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](developing/components/enabling-json-exporter.md)
