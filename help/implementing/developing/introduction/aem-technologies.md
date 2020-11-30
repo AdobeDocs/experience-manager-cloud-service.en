@@ -13,14 +13,14 @@ AEM is a robust platform built upon proven, scalable, and flexible technologies.
 
 ## Fundamentals {#fundamentals}
 
-As a modern content management system, AEM development relies on standard web technologies:
+As a modern content management system, AEM relies on standard web technologies:
 
 * The request-response (XMLHttpRequest / XMLHttpResponse) cycle
 * HTML
 * CSS
 * JavaScript
 
-The underlying content repository and business logic is built around Java technologies:
+The underlying content repository and business logic layers are built around Java technologies:
 
 * JCR
 * Sling
@@ -28,23 +28,23 @@ The underlying content repository and business logic is built around Java techno
 
 ## Java Content Repository {#java-content-repository}
 
-The Java Content Repository (JCR) standard, [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository. AEM is built upon a JCR.
-
-Specification lead is held by Adobe Research (Switzerland) AG.
+The Java Content Repository (JCR) standard, [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository. The specification lead is held by Adobe Research (Switzerland) AG.
 
 The [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, `javax.jcr.*` is used for the direct access and manipulation of repository content.
+
+AEM is built upon a JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/) is an implementation of a scalable and high-performance hierarchical content repository for use as the foundation of modern world-class web sites and other demanding content applications, conforming to the JCR standard.
 
-Jackrabbit Oak (or just Oak), is the implementation of the JCR standard upon which AEM is built.
+Jackrabbit Oak (also referred to simply as Oak), is the implementation of the JCR standard upon which AEM is built.
 
 ## Sling Request Processing {#sling-request-processing}
 
-### Introduction to Sling {#introduction-to-sling}
-
 AEM is built using [Sling](https://sling.apache.org/site/index.html), a Web application framework based on REST principles that provides easy development of content-oriented applications. Sling uses a JCR repository, like Apache Jackrabbit Oak, as its data store. Sling has been contributed to the Apache Software Foundation - further information can be found at Apache.
+
+### Introduction to Sling {#introduction-to-sling}
 
 Using Sling, the type of content to be rendered is not the first processing consideration. Instead the main consideration is whether the URL resolves to a content object for which a script can then be found to perform the rendering. This provides excellent support for web content authors to build pages which are easily customized to their requirements.
 
