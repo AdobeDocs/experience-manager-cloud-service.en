@@ -21,16 +21,25 @@ You can navigate through the structure of your launch from:
   * Select **Navigate** to open the structure of the Launch in the console:
   ![Navigate launch from Page Editor](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
   
-  >[!NOTE]
-  >You can also:
-  >
-  >* **Leave** the launch and return to editing the source page
+    >[!NOTE]
+    >
+    >You can also:
+    >
+    >* **Leave** the launch and return to editing the source page
 
 * The **Launches** Console:
   If you select a specific launch, you can then select **Manage Content**:
-  ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-console.png)
+  ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+* The **Sites** Console:
+  If you select a specific source page and open **References**, you can then select **Launches** followed by **Manage Content**:
+  ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
   
-Both of these entry points will open the launch in the **Timeline** of the Sites console, where you can:
+  >[!NOTE]
+  >
+  >You can also select **Launches Console** to access **Manage Content** (and other actions).
+  
+All of these entry points will open the launch in the Sites console, where you can:
 
 * Navigate, 
 * **Create** new pages,
