@@ -36,7 +36,7 @@ See Changing Live Copy Content for further information. <!--See [Changing Live C
 
 To track the changes you have made, you can view the launch in **References** and compare the launch page with its source page:
 
-1. In the **Sites** console, [navigate to the source page of your launch and select it](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. In the **Sites** console, [navigate to the source pages of your launch and select one](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel and select **Launches**.
 1. Select your specific launch then **Compare to Source**:
 
