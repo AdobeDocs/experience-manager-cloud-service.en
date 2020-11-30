@@ -23,18 +23,29 @@ In the end the user has a local copy of the site, giving an app-like experience 
 1. Log into AEM.
 1. From the main menu, tap or click **Navigation** -&gt; **Sites**.
 1. Select the Sites project and tap or click [**Properties**](/help/sites-cloud/authoring/fundamentals/page-properties.md) or use the hotkey `p`.
-1. Select the **Progressive Web App** tab and configure the applicable properties.
+1. Select the **Progressive Web App** tab and configure the applicable properties. At a minimum you will want:
+   1. Select the option **Make this site installable as a PWA**.
+   1. Define the **URL to load when user opens app**.
+
+      ![Enable PWA](../assets/pwa-enable.png)
+
    1. You will need to upload a 512x512 png icon to assets (DAM) and reference that as the icon for this app.
+
+      ![Define PWA icon](../assets/pwa-icon.png)
+
    1. Configure the paths you want the service worker to take offline. The usual areas are
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
       * Any third party font references
       * `/etc/clientlibs/<sitename>`
-1. Save and close
+
+      ![Define PWA offline paths](../assets/pwa-offline.png)
+
+1. Tap or click **Save &amp; Close**.
 1. Access the starting page in your browser.
 1. You should now see a + icon on the address bar allowing you to install the app.
-1. Install the app, browse a bit to ensure the pages are taken offline. Enjoy.
+1. Install the app, browse a bit to ensure the pages are taken offline.
 
 ## Limitations {#limitations}
 
