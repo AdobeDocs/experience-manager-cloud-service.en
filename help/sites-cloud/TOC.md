@@ -43,6 +43,7 @@ user-guide-description: Understand how to author with, and administer, Experienc
     + [Components Console](authoring/features/components-console.md)
     + [Responsive Layout](authoring/features/responsive-layout.md)
     + [Using Tags](authoring/features/tags.md)
+    + [Enabling Progressive Web App Features](authoring/features/enable-pwa.md)
   + Projects {#projects}
     + [Working with Projects](authoring/projects/overview.md)
     + [Managing Projects](authoring/projects/managing.md)
