@@ -18,7 +18,7 @@ Instead of requiring any re-coding of the site, a content author is able to conf
 
 In the end the user has a local copy of the site, giving an app-like experience even without an internet connection.
 
-## Enabling PWA {#enabling-pwa}
+## Enabling PWA for Your Site {#enabling-pwa-for-your-site}
 
 1. Log into AEM.
 1. From the main menu, tap or click **Navigation** -&gt; **Sites**.
