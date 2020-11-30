@@ -8,7 +8,7 @@ description: One-pager for migration to Experience Manager as a Cloud Service
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration-overview"
 >title="Migration to AEM as a cloud Service"
->abstract="Outlines the recommended phased approach to transition customers from various Experience Manager deployments to Experience Manager as a Cloud Sergit vice and help existing customers deliver connected, continuous experiences"
+>abstract="Outlines the recommended phased approach to transition customers from various Experience Manager deployments to Experience Manager as a Cloud Service and help existing customers deliver connected, continuous experiences"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en" text="What's new & different?"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en" text="Introduction to AEM as a Cloud Service."
 
