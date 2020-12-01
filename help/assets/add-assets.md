@@ -55,20 +55,18 @@ To upload a file (or multiple files), you can either select them on your desktop
 1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
 
-    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
+    * On the toolbar, click **[!UICONTROL Create]** > **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. The dialog to rename file is not displayed.
 
    ![create_menu](assets/create_menu.png)
 
-   To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
+   To select multiple files, select the `Ctrl` or the `Command` key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
-1. To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
-
-   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. However, files that are already uploaded are not deleted.
+1. To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset. 
+If you cancel an upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. However, files that are already uploaded are not deleted.
 
 1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
-
-   In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
+In addition, the [!DNL Assets] user interface displays the most recent asset that you upload or the folder that you created first.
 
 >[!NOTE]
 >
@@ -120,10 +118,29 @@ However, the following (space-separated list of) characters are not supported:
 
 ## Bulk upload assets {#bulk-upload}
 
-To upload larger number of files, especially if they exist in a nested folder hierarchy on disk, the following approaches can be used:
+To upload larger number of files, use one of the following approaches. Also, see the [use cases and methods](#upload-methods-comparison)
 
-* Use a custom upload script or tool that leverages [asset upload APIs](developer-reference-material-apis.md#asset-upload-technical). Such a custom tool can add additional handling of assets (for example, translate metadata or rename files), if required.
-* Use [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies.
+* [Asset upload APIs](developer-reference-material-apis.md#asset-upload-technical): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
+* [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Useful for creative professionals and marketers who upload assets from their local file system. Use it to upload nested folders available locally.
+* [Bulk ingestion tool](#bulk-ingestion-tool): Use for ingestion of large amounts of assets either occasionally or initially when deploying [!DNL Experience Manager].
+
+### Bulk asset ingestion tool {#bulk-ingestion-tool}
+
+Add following details:
+
+* Use case of when to use this method.
+* Applicable personas
+* Configuration steps
+* How to manage ingestion jobs and see statuses.
+* Points to remember about managing or curating the assets to be ingested.
+
+To configure the tool, follow these steps:
+
+1. Create a Bulk import configuration.  Navigate to Tools > Asset > Bulk Import > select the Create button.
+
+  ![Configuration of bulk importer](assets/bulk-import-config.png)
+
+1. Provide appropriate details.
 
 >[!NOTE]
 >
@@ -161,6 +178,18 @@ For folders that have a processing profile assigned, the profile name appears on
 ## Upload or ingest assets using APIs {#upload-using-apis}
 
 Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
+
+## Scenario based upload methods {#upload-methods-comparison}
+
+| Upload method       | When to use?   | Primary Persona (Admin, Developer, Creative User, Marketer) |
+|---------------------|-------------------------------------------------------------------------------------------|------------|
+| Assets Console/UI   | Occasional upload, ease of press and drag, finder upload. Not for large bulk ingestions. | All |
+| Upload API          | For dynamic decisioning of assets during upload                                                   | Developer                                                   |
+| Desktop App         | Low volume asset ingestion, but for migration                                                     | Admin, Marketer                                             |
+| Asset Link          | For creatives and marketers to collaborate on assets from within the supported Creative Cloud desktop apps. | Creative, Marketer |
+| Bulk Ingestion tool | Bulk asset ingestion from datastores.  Recommended for migrations and occasional bulk ingestions. | Admin, Developer                                            |
+
+Describe when to use what method.
 
 >[!MORELIKETHIS]
 >
