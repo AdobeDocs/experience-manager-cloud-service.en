@@ -120,7 +120,7 @@ Your site is now configured and you can [install it as a local app.](#using-pwa-
 
 Now that you have [configured your site to support PWA,](#enabling-pwa-for-your-site) you can experience it for yourself.
 
-1. Access the site in a [supported mobile browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+1. Access the site in a [supported browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 1. You will see a `+` icon in the address bar of the browser, indicating that the site can be installed as a local app.
    * Depending on the browser, it may also display a notification (such as a banner or dialog box) indicating that it's possible to install as a local app.
 1. Install the app.
@@ -151,7 +151,11 @@ These settings allow your site behave like a native app by making it installable
   * **Portrait** - This forces the app to open in portrait layout regardless of the orientation of the user's device.
   * **Landscape** - This forces the app to open in landscape layout regardless of the orientation of the user's device.
 * **Color of the toolbar** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) and, depending on the browser, can affect other app presentation elements.
+  * Use the swatch pop-up to select a color.
+  * The color can also be defined by hex or RGB value.
 * **Color of the splash screen** - This defines the [background color of the app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) which is shown as the app loads.
+  * Use the swatch pop-up to select a color.
+  * The color can also be defined by hex or RGB value.
   * Certain browsers [build a splash screen automatically](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) from the app name, background color, and icon.
 * **Icon** - This defines [the icon](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) that represents the app on the user's device.
   * The icon must be a png file of size 512x512 pixels.
@@ -163,8 +167,11 @@ These settings make parts of this site available offline and available locally o
 
 * **How often does your content change?** - This setting defines the caching model for your PWA.
   * **Moderately** - [This setting](https://web.dev/stale-while-revalidate/) is the case for most sites and is the default value.
+    * With this setting, the content first viewed by the user will be loaded from the cache and while the user is consuming that content, the rest of the content in the cache will be revalidated.
   * **Frequently** - This is the case for sites that need updates to be very fast such as auction houses.
+    * With this setting, the app will look for the most recent content via the network first, and if it is not available will fall back to the local cache.
   * **Rarely** - This is the case for sites that are nearly static such as reference pages.
+    * With this setting, the app will look for the content in the cache first, and if not available will fall back to the network to retrieve it.
 * **Files to pre-fetch** - These files will be cached immediately when the app is installed.
 * **Paths to cache on first use** - These files will be cached whenever the user browsers to the page the first time in the app.
 * **Cache exclusions** - These files will never be caches regardless of the settings under **Files to pre-fetch** and **Paths to cache on first use**.
