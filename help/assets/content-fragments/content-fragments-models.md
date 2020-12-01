@@ -151,10 +151,10 @@ A selection of data types is available for defining your model:
   * Add a set of checkbox, radio button(s), or dropdown fields
 * **Tags**
   * Allows fragment authors to access and select areas of tags
-
-<!--
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+
+<!--
 * **Fragment Reference**
   * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
