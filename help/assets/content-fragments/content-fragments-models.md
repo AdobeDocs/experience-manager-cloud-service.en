@@ -5,6 +5,7 @@ description: Content Fragment Models are used to create content fragments with s
 
 # Content Fragment Models {#content-fragment-models}
 
+<!--
 >[!CAUTION]
 >
 >Certain features for Content Fragments will be released in early 2021.
@@ -12,6 +13,7 @@ description: Content Fragment Models are used to create content fragments with s
 >The related documentation is already available for preview purposes.
 >
 >Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+-->
 
 >[!CAUTION]
 >
@@ -65,6 +67,44 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
 
+1. **To Add a Field**
+
+    * Drag a required data type to the required location for a field.
+
+    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
+      Many properties are self-explanatory, for additional details see [Properties](#properties).
+
+1. **To Remove a Field**
+
+   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
+
+1. Add all required fields, and define the related properties, as required. 
+
+1. Select **Save** to persist the definition.
+
+<!--
+## Defining your Content Fragment Model {#defining-your-content-fragment-model}
+
+The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
+
+>[!CAUTION]
+>
+>Editing an existing content fragment model can impact dependent fragments.
+
+1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
+
+1. Navigate to the folder holding your content fragment model.
+1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
+
+   Once open the model editor shows:
+
+    * left: fields already defined
+    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
+
+   >[!NOTE]
+   >
+   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
+
    ![properties](assets/cfm-models-03.png)
 
 1. **To Add a Field**
@@ -91,6 +131,8 @@ The content fragment model effectively defines the structure of the resulting co
 
 1. Select **Save** to persist the definition.
 
+-->
+
 ## Data Types {#data-types}
 
 A selection of data types is available for defining your model:
@@ -109,6 +151,8 @@ A selection of data types is available for defining your model:
   * Add a set of checkbox, radio button(s), or dropdown fields
 * **Tags**
   * Allows fragment authors to access and select areas of tags
+
+<!--
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
 * **Fragment Reference**
@@ -121,6 +165,7 @@ A selection of data types is available for defining your model:
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
     * The JSON will be passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
+-->
 
 ## Properties {#properties}
 
@@ -135,12 +180,6 @@ Many properties are self-explanatory, for certain properites additional details 
 * **Validation**
   Basic valida†¡on is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.
 
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
-
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
-
 * For the data type **Multi line text** it is possible to define the **Default Type** as either:
 
   * **Rich Text**
@@ -151,7 +190,15 @@ Many properties are self-explanatory, for certain properites additional details 
 
   Changing the **Default Type** in a content fragment model will only take effect on an existing, related, content fragment after that fragment is opened in the editor and saved.
 
+<!--
+* **Translatable**
+  Checking the "Translatable" checkbox on a field in CF model editor will
+
+  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
+  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
+-->
 
 ## Validation {#validation}
 
@@ -161,6 +208,8 @@ Various data types now include the possibility to define validation requirements
   * Compare against a predefined regex.
 * **Number**
   * Check for specific values.
+
+<!--
 * **Content Reference**
   * Test for specific types of content.
   * Only images within a predefined range of width and height (in pixels) can be referenced. 
@@ -170,7 +219,9 @@ Various data types now include the possibility to define validation requirements
   * No more than the predefined number of fragments can be referenced.
 * **Fragment Reference**
   * Test for a specific content fragment model.
+-->
 
+<!--
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
@@ -207,11 +258,14 @@ In addition to standard properties you can specify:
 * The content types that can be referenced.
 * Limitations for file sizes.
 * Image restraints.
+-->
 
-<!-- Check screenshot - might need update -->
+<!-- Check screenshot - might need update
 
    ![Content Reference](assets/cfm-content-reference.png)
+-->
 
+<!--
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
 The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
@@ -256,15 +310,16 @@ In addition to standard properties you can define:
 * **Allow Fragment Creation**
 
   This will allow the fragment author to create a new fragment based on the appropriate model.
+-->
 
 <!--
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
 -->
 
-<!-- Check screenshot - might need update -->
+<!-- Check screenshot - might need update
 
    ![Fragment Reference](assets/cfm-fragment-reference.png)
-
+-->
 
 >[!NOTE]
 >

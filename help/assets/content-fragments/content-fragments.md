@@ -5,6 +5,7 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 
 # Working with Content Fragments{#working-with-content-fragments}
 
+<!--
 >[!CAUTION]
 >
 >Certain features for Content Fragments will be released in early 2021.
@@ -12,6 +13,7 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 >The related documentation is already available for preview purposes.
 >
 >Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+-->
 
 >[!CAUTION]
 >
@@ -31,9 +33,12 @@ Content fragments contain structured content:
   * Complex
     * A combination of many fields of varying data types, including text, number, boolean, data and time, amongst others.
     * Can be used either for preparing more structured content for page authoring, or for delivery to your application.
+
+<!--
   * Nested
     * The reference data types available allow you to nest your content.
     * Tends to be used for delivery to your application.
+-->
 
 Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
 
