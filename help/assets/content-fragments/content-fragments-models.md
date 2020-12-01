@@ -178,7 +178,7 @@ Many properties are self-explanatory, for certain properites additional details 
   Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
 
 * **Validation**
-  Basic valida†¡on is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.
+  Basic validation is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.
 
 * For the data type **Multi line text** it is possible to define the **Default Type** as either:
 
@@ -321,11 +321,13 @@ In addition to standard properties you can define:
    ![Fragment Reference](assets/cfm-fragment-reference.png)
 -->
 
+<!--
 >[!NOTE]
 >
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
 >
 >There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
+-->
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 

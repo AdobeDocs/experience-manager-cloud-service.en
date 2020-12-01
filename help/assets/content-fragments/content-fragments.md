@@ -80,7 +80,10 @@ Content fragments allow you to:
 * Build content pools for a range of channels.
 * Design content variations for specific channels.
 * Add images to your text by inserting assets (mixed-media fragments).
+
+<!--
 * Create nested content to reflect the complexity of your data.
+-->
 
 These content fragments can then be assembled to provide experiences over a variety of channels.
 
