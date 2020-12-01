@@ -20,14 +20,18 @@ Through a simple configuration, a content author can now enable progressive web 
 
 ## Introduction {#introduction}
 
-[Progressive web apps (PWAs)](https://web.dev/progressive-web-apps/) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browsing a site while on-the-go and lose the internet connection. PWAs allow seamless experiences even if the network is lost or unstable.
+[Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browse a site while on-the-go and lose the internet connection. PWAs allow seamless experiences even if the network is lost or unstable.
 
 Instead of requiring any re-coding of the site, a content author is able to configure PWA properties as an additional tab in the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) of a site.
 
-* When saved or published, this configuration riggers an event handler that writes out the manifest and service worker that enhances the site to become a PWA.
-* The manifest and service worker are stored in context aware configuration applicable to the site. Sling mappings are also maintained to ensure that service worker is served from the root of the application to enable proxying content allowing offline capabilities within the app.
+* When saved or published, this configuration triggers an event handler that writes out the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) that enhances the site to become a PWA.
+* The manifest and service worker are stored in [context aware configuration](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) applicable to the site. Sling mappings are also maintained to ensure that service worker is served from the root of the application to enable proxying content allowing offline capabilities within the app.
 
 In the end the user has a local copy of the site, giving an app-like experience even without an internet connection.
+
+>[!NOTE]
+>
+>Progressive web apps are an evolving technology and support for local app installation [depends on which browser you use.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 
 ## Prerequisites {#prerequisites}
 
@@ -40,7 +44,7 @@ These are technical steps that the author will need to coordinate with the devel
 
 ### Adjust Your Components {#adjust-components}
 
-Your components need to include the manifest files and service worker. To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker.](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
 
 ```xml
 <link rel="manifest" href="/content/<projectName>/manifest.webmanifest" crossorigin="use-credentials"/>
@@ -104,13 +108,23 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
       ![Define PWA offline paths](../assets/pwa-offline.png)
 
 1. Tap or click **Save &amp; Close**.
-1. Access the starting page in your browser.
-1. You should now see a + icon on the address bar allowing you to install the app.
-1. Install the app, browse a bit, and see that pages are available offline.
+
+Your site is now configured and you can [install it as a local app.](#using-pwa-enabled-site)
+
+## Using Your PWA-Enabled Site {#using-pwa-enabled-site}
+
+Now that you have configured your site to support PWA, you can experience for yourself.
+
+1. Access the starting page in a [supported mobile browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+1. You will see a + icon on the address bar, indicating that the site can be installed as a local app.
+   * Depending on the browser, it may also display a notification (such as a banner or dialog box) indicating that it's possible to install as a local app.
+1. Install the app.
+1. The app will be installed on the home screen of your device.
+1. Open the app, browse a bit, and see that pages are available offline.
 
 ## Detailed Options {#detailed-options}
 
-The following gives more details on the options available when configuring your site for PWA.
+The following section provides more detail on the options available when configuring your site for PWA.
 
 ### Configure Installable Experience** {configure-installable-experience}
 
@@ -131,6 +145,7 @@ These settings allow your site behave like a native app by making it installable
   * **Landscape** - This forces the app to open in landscape layout regardless of the user's orientation of the device.
 * **Color of the toolbar** - This defines the color of the app toolbar.
 * **Color of the splash screen** - This defines the color of the app splash screen, which is shown as the app loads.
+  * Certain browsers [build a splash screen automatically](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) from the app name, background color, and icon.
   * The splash screen is not visible to the user on sufficiently fast devices.
 * **Icon** - This defines the icon the represents the app on the user's device.
   * The icon must be a png file of size 512x512 pixels.
