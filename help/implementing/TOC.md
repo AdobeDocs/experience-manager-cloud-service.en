@@ -41,6 +41,9 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Page Diff](/help/implementing/developing/introduction/page-diff.md)
   + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
   + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
+  + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
+  + [Building Tagging into AEM Applications](/help/implementing/developing/introduction/tagging-applications.md)
+  + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
 + Developer Tools {#developer-tools}
   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
