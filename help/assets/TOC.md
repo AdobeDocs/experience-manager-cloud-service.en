@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Assets
 
 # [!DNL Assets] Guide {#assets}
 
-+ [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Overview and what's new](overview.md)
-+ [Notable Changes to [!DNL Assets] as a Cloud Service](assets-cloud-changes.md)
++ [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] architecture](architecture.md)
 + [Supported file formats](file-format-support.md)
 + [Overview of asset microservices](asset-microservices-overview.md)

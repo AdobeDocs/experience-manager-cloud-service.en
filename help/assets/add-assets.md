@@ -1,6 +1,6 @@
 ---
 title: Add your digital assets to [!DNL Adobe Experience Manager].
-description: Add your digital assets to [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Add your digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 ---
 
 # Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}
@@ -13,13 +13,23 @@ We will focus on upload methods for end users here, and provide links to article
 
 While you can upload and manage any binary file in Experience Manager, most commonly used file formats have support for additional services, like metadata extraction or preview/rendition generation. Refer to [supported file formats](file-format-support.md) for details.
 
-You can also choose to have additional processing done on the uploaded assets. A number of asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions or image processing services. See [Additional processing](#additional-processing) below for more information.
+You can also choose to have additional processing done on the uploaded assets. A number of asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions or image processing services. See [process assets when uploaded](#process-when-uploaded).
 
 >[!NOTE]
 >
->Experience Manager as a Cloud Service leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like Experience Manager user interface, Adobe Asset Link, Experience Manager desktop app, and thus transparent to the end users.
+>Experience Manager as a [!DNL Cloud Service] leverages a new way of uploading assets - direct binary upload. It is supported by default by the out of the box product capabilities and clients, like Experience Manager user interface, Adobe Asset Link, Experience Manager desktop app, and thus transparent to the end users.
 >
 >Upload code that is customized or extended by customers technical teams needs to use the new upload APIs and protocols.
+
+Assets as a [!DNL Cloud Service] provides the following upload methods. Adobe recommends that you understand your use case and applicability of an upload option before using it.
+
+| Upload method       | When to use?   | Primary Persona |
+|---------------------|----------------|-----------------|
+| [Assets Console user interface](#upload-assets)  | Occasional upload, ease of press and drag, finder upload. Do not use to upload a large number of assets. | All users |
+| [Upload API](#upload-using-apis) | For dynamic decisions during upload. | Developer |
+| [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Low volume asset ingestion, but for migration. | Administrator, Marketer |
+| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Useful when creatives and marketers work on assets from within the supported [!DNL Creative Cloud] desktop apps. | Creative, Marketer |
+| [Asset bulk ingestor](#asset-bulk-ingestor)  | Recommended for large-scale migrations and occasional bulk ingestions. Only for supported datastores. | Administrator, Developer |
 
 ## Upload assets {#upload-assets}
 
@@ -62,7 +72,7 @@ To upload a file (or multiple files), you can either select them on your desktop
 
    To select multiple files, select the `Ctrl` or the `Command` key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
-1. To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset. 
+1. To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 If you cancel an upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. However, files that are already uploaded are not deleted.
 
 1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
@@ -93,54 +103,74 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### Handling uploads when asset already exists {#handling-upload-existing-file}
 
-If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
+You can upload an asset with the same path (same name and same location) as that of an existing asset. However, a warning dialog is displayed with the following options:
 
-You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number `1` appended to its name.
+* Replace existing asset: If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, cropping, and so on) you made to the existing asset are deleted.
+* Create another version: A new version of the existing asset is created in the repository. You can view the two versions in the [!UICONTROL Timeline] and can revert to the previously existing version if required.
+* Keep both: If you choose to keep both assets, the new asset is renamed with the number `1` appended to its name.
 
 >[!NOTE]
 >
 >When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
 >
->If Asset Insights is enabled to track impressions/clicks with Adobe Analytics, the regenerated asset ID invalidates the data-captured for the asset on Analytics.
+>If Asset Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
 To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
 ### File name handling and forbidden characters {#filename-handling}
 
-[!DNL Experience Manager Assets] prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
+[!DNL Experience Manager Assets] tries to prevent you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name. Some upload methods do not stop you from uploading assets with forbidden characters in the filenames but replaces the characters with `-`.
 
-To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload.
+To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
-However, the following (space-separated list of) characters are not supported:
-
-* asset file name must not contain `* / : [ \\ ] | # % { } ? &`
-* asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* invalid characters for asset file name `* / : [ \\ ] | # % { } ? &`
+* invalid characters for asset folder name `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Bulk upload assets {#bulk-upload}
+
+The bulk asset ingestor can handle thousands of assets efficiently. However, a large-scale ingestion is not just a broad and large file dump or blind migration. For it to be a meaningful project that serves your business purpose, planning and curating the assets lead to a much more efficient ingestion. All ingestions are not the same and generalizations cannot be made without factoring in the nuanced repository composition and business needs. The following are overarching suggestions to plan and execute a bulk ingestion:
+
+* Curate assets: Remove assets that are not needed in the DAM. Consider removing unused, obsolete, or duplicate assets. This reduces the data transferred and assets ingested leading to faster ingestions.
+* Organize assets: Consider organizing the content in some logical order, say by file size, file format, use case, or priority. In general, large complex files require more processing. You can also consider ingesting large files separately using the file size filtering option (described below).
+* Stagger ingestions: Consider breaking up your ingestion into multiple bulk ingestion projects. This allows you to see content sooner and update your ingestion as necessary. For example, you can ingest processing-intensive assets during non-peak hours or gradually in multiple chunks. However, you can ingest smaller and simpler assets that do not require much processing in one go.
 
 To upload larger number of files, use one of the following approaches. Also, see the [use cases and methods](#upload-methods-comparison)
 
 * [Asset upload APIs](developer-reference-material-apis.md#asset-upload-technical): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
 * [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Useful for creative professionals and marketers who upload assets from their local file system. Use it to upload nested folders available locally.
-* [Bulk ingestion tool](#bulk-ingestion-tool): Use for ingestion of large amounts of assets either occasionally or initially when deploying [!DNL Experience Manager].
+* [Bulk ingestion tool](#asset-bulk-ingestor): Use for ingestion of large amounts of assets either occasionally or initially when deploying [!DNL Experience Manager].
 
-### Bulk asset ingestion tool {#bulk-ingestion-tool}
+### Asset bulk ingestor tool {#asset-bulk-ingestor}
 
-Add following details:
-
-* Use case of when to use this method.
-* Applicable personas
-* Configuration steps
-* How to manage ingestion jobs and see statuses.
-* Points to remember about managing or curating the assets to be ingested.
+The tool is provided only to the administrators group to use for large-scale ingestion of assets from Azure or S3 datastores.
 
 To configure the tool, follow these steps:
 
-1. Create a Bulk import configuration.  Navigate to Tools > Asset > Bulk Import > select the Create button.
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Select the **[!UICONTROL Create]** option.
 
   ![Configuration of bulk importer](assets/bulk-import-config.png)
 
-1. Provide appropriate details.
+1. On [!UICONTROL bulk import configuration] page, provide the required values.
+
+   * [!UICONTROL Title]: A descriptive title.
+   * [!UICONTROL Import Source]: Select the applicable datasource.
+   * [!UICONTROL Filter by Min Size]: Provide minimum file size of assets in MB.
+   * [!UICONTROL Filter by Max Size]: Provide maximum file size of assets in MB.
+   * [!UICONTROL Exclude Mime Types]: Comma-separated list of MIME types to exclude from the ingestion. For example, `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL Include Mime Types]: Comma-separated list of MIME types to include in the ingestion. See [all supported file formats](/help/assets/file-format-support.md).
+   * [!UICONTROL Import Mode]: Select Skip, Replace, or Create Version. Skip mode is the default and in this mode the ingestor skips to import an asset if it already exists. See the meaning of [replace and create version options](#handling-upload-existing-file).
+   * [!UICONTROL Assets Target Folder]: Import folder in DAM where assets are to be imported. For example, `/content/dam/imported_assets`
+
+1. You can delete, modify, execute and do more with your created ingestor configurations. When you select a bulk import ingestor configuration, the follow option are available in the toolbar.
+
+   * [!UICONTROL Edit]: Edit the selected configuration.
+   * [!UICONTROL Delete]: Delete the selected configuration.
+   * [!UICONTROL Check]: Validate connection to the datastore.
+   * [!UICONTROL Dry Run]: Invoke a test run of the bulk ingestion.
+   * [!UICONTROL Run]: Execute the selected configuration.
+   * [!UICONTROL Stop]: Terminate an active configuration.
+   * [!UICONTROL Job Status]: View the status of the configuration when it is used in an ongoing import job or used for a completed job.
+   * [!UICONTROL View Assets]: View the target folder if it exists.
 
 >[!NOTE]
 >
@@ -153,18 +183,18 @@ In addition to web browser user interface, Experience Manager supports other cli
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from [!DNL Experience Manager] in Adobe Photoshop, Adobe Illustrator, and Adobe InDesign desktop applications. You can upload the currently open document into [!DNL Experience Manager] directly from Adobe Asset Link user interface from within these desktop applications.
 * [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, independent on their file type or native application that handles them. It is particularly useful to upload files in nested folder hierarchies from your local file system, as browser upload only supports uploading flat file lists.
 
-## Additional processing {#additional-processing}
+## Process assets when uploaded {#process-when-uploaded}
 
-In order to have additional processing done on the uploaded assets, you can use asset processing profiles profiles  on the folder, into which assets are uploaded. They are available in the folder **[!UICONTROL Properties]** dialog.
+In order to do additional processing on the uploaded assets, you can apply processing profiles on the upload folders. The profiles are available in the **[!UICONTROL Properties]** page of a folder in [!DNL Assets].
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-The following profiles are available:
+The following tabs are available:
 
 * [Metadata profiles](metadata-profiles.md) let you apply default metadata properties to assets uploaded into that folder
 * [Processing profiles](asset-microservices-configure-and-use.md) let you generate more renditions than are possible by default.
 
-Additionally, if Dynamic Media is enabled in your environment:
+Additionally, if [!DNL Dynamic Media] is enabled on your deployment, the following tabs are available:
 
 * [Dynamic Media Image profiles](dynamic-media/image-profiles.md) let you apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets.
 * [Dynamic Media Video profiles](dynamic-media/video-profiles.md) let you apply specific video encoding profiles (resolution, format, parameters).
@@ -179,21 +209,9 @@ For folders that have a processing profile assigned, the profile name appears on
 
 Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
 
-## Scenario based upload methods {#upload-methods-comparison}
-
-| Upload method       | When to use?   | Primary Persona (Admin, Developer, Creative User, Marketer) |
-|---------------------|-------------------------------------------------------------------------------------------|------------|
-| Assets Console/UI   | Occasional upload, ease of press and drag, finder upload. Not for large bulk ingestions. | All |
-| Upload API          | For dynamic decisioning of assets during upload                                                   | Developer                                                   |
-| Desktop App         | Low volume asset ingestion, but for migration                                                     | Admin, Marketer                                             |
-| Asset Link          | For creatives and marketers to collaborate on assets from within the supported Creative Cloud desktop apps. | Creative, Marketer |
-| Bulk Ingestion tool | Bulk asset ingestion from datastores.  Recommended for migrations and occasional bulk ingestions. | Admin, Developer                                            |
-
-Describe when to use what method.
-
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [About Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Technical reference for asset upload](developer-reference-material-apis.md#asset-upload-technical)
