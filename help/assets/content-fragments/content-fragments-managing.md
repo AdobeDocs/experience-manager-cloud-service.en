@@ -5,6 +5,7 @@ description: Content Fragments are stored as Assets, so are primarily managed fr
 
 # Managing Content Fragments{#managing-content-fragments}
 
+<!--
 >[!CAUTION]
 >
 >Certain features for Content Fragments will be released in early 2021.
@@ -12,6 +13,7 @@ description: Content Fragments are stored as Assets, so are primarily managed fr
 >The related documentation is already available for preview purposes.
 >
 >Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+-->
 
 >[!CAUTION]
 >
