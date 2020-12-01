@@ -120,10 +120,29 @@ However, the following (space-separated list of) characters are not supported:
 
 ## Bulk upload assets {#bulk-upload}
 
-To upload larger number of files, especially if they exist in a nested folder hierarchy on disk, the following approaches can be used:
+To upload larger number of files, use one of the following approaches:
 
-* Use a custom upload script or tool that leverages [asset upload APIs](developer-reference-material-apis.md#asset-upload-technical). Such a custom tool can add additional handling of assets (for example, translate metadata or rename files), if required.
-* Use [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) to upload nested folder hierarchies.
+* [Asset upload APIs](developer-reference-material-apis.md#asset-upload-technical): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
+* [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Useful for creative professionals and marketers who upload assets from their local file system. Use it to upload nested folders available locally.
+* [Bulk ingestion tool](): Use for occasional ingestion of assets or an initial ingestion of assets into a deployment.
+
+### Bulk asset ingestion tool {#bulk-ingestion-tool}
+
+Add following details:
+
+* Use case of when to use this method.
+* Applicable personas
+* Configuration steps
+* How to manage ingestion jobs and see statuses.
+* Points to remember about managing or curating the assets to be ingested.
+
+To configure the tool, follow these steps:
+
+1. Create a Bulk import configuration.  Navigate to Tools > Asset > Bulk Import > select the Create button.
+
+  ![Configuration of bulk importer](assets/bulk-import-config.png)
+
+1. Provide appropriate details.
 
 >[!NOTE]
 >
@@ -161,6 +180,10 @@ For folders that have a processing profile assigned, the profile name appears on
 ## Upload or ingest assets using APIs {#upload-using-apis}
 
 Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
+
+## Best practices and tips {#best-practices-tips}
+
+Describe when to use what method.
 
 >[!MORELIKETHIS]
 >

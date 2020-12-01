@@ -32,8 +32,10 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is new in [!DNL Assets] and [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that leverages [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling.
-This tool is for system administrator, consultant, or implementation partner personas. This feature allows for large scale ingestion and is ideally used during initial ingestion or occasional large ingestion. For smaller ingestion jobs the Desktop App and drag and drop are also available.
+* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that leverages [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [bulk import tool](/help/assets/add-assets.md#bulk-ingestion-tool).
+This tool is for system administrator, consultant, or implementation partner personas. This feature allows for large scale ingestion and is ideally used during initial ingestion or occasional large ingestion. For smaller ingestion jobs, use the [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) or [upload using Assets user interface](/help/assets/add-assets.md#upload-assets).
+
+  ![Configuration of bulk importer](/help/assets/assets/bulk-import-config-low-res.png)
 
 * Users can sort the digital assets in Card and Column views.
 
