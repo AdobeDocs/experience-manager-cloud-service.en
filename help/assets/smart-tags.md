@@ -147,7 +147,7 @@ After you have trained the Smart Tags service, you can trigger the tagging workf
 1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether your your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
-
+>
 >In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds 6 months.
 
 ### Tag uploaded assets {#tag-uploaded-assets}
