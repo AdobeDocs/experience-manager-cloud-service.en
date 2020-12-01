@@ -78,19 +78,17 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
     This variable must be set up for the AEM as a Cloud Service environment as well.
 
+    For more information on variables, see [Configuring OSGi for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+
 1. (Optional) To enable staged catalog features, you need to create an integration token for your Magento instance. Please follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
 
-    Create a file called `COMMERCE_AUTH_HEADER` in `crx-quickstart/secrets` with the following content:
+    Set an OSGi secret  with the name `COMMERCE_AUTH_HEADER` to the following value:
 
     ```xml
     Authorization: Bearer <Access Token>
     ```
 
-    When starting AEM as a Cloud Service SDK, add the following parameter:
-
-    ```bash
-    -D org.apache.felix.configadmin.plugin.interpolation.secretsdir=<path to aem>/crx-quickstart/secrets
-    ```
+    For more information on secrets, see [Configuring OSGi for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. Start the AEM as a Cloud Service SDK
 
