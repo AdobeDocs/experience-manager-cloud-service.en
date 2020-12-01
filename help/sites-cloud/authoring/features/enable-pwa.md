@@ -129,7 +129,7 @@ Now that you have configured your site to support PWA, you can experience for yo
 
 The following section provides more detail on the options available when configuring your site for PWA.
 
-### Configure Installable Experience** {configure-installable-experience}
+### Configure Installable Experience** {#configure-installable-experience}
 
 These settings allow your site behave like a native app by making it installable on the visitor's home screen and available offline.
 
@@ -174,5 +174,7 @@ These settings make parts of this site available offline and available locally o
 
 ## Limitations {#limitations}
 
-* A user must browse the page at least once before it becomes cached offline.
-* Pages are not automatically synched or updated if the suer is not using the app.
+Not all PWA features are available for AEM Sites. These are a few notable limitations.
+
+* A user must browse the page at least once before it is cached offline.
+* Pages are not automatically synched or updated if the user is not using the app.
