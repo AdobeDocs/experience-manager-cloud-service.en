@@ -37,14 +37,16 @@ In the end the user has a local copy of the site, giving an app-like experience 
 
 To be able to use PWA features for your site, there are two requirements for your project environment.
 
-1. Adjust your components to enable this feature
-1. Adjust your dispatcher rules to expose the manifest files
+1. [Adjust your components](#adjust-components) to enable this feature
+1. [Adjust your dispatcher](#adjust-dispatcher) rules to expose the required files
 
 These are technical steps that the author will need to coordinate with the development team. These steps are only required once per site.
 
 ### Adjust Your Components {#adjust-components}
 
-Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker.](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+
+ To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
 
 ```xml
 <link rel="manifest" href="/content/<projectName>/manifest.webmanifest" crossorigin="use-credentials"/>
@@ -56,7 +58,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 <script>
         // Check that service workers are supported
         if ('serviceWorker' in navigator) {
-            // Use the window load event to keep the page load performant
+            // Use the window load event to make sure the page load performs well
             window.addEventListener('load', () => {
                 let serviceWorker = '/<projectName>sw.js';
                 navigator.serviceWorker.register(serviceWorker);
@@ -68,13 +70,14 @@ The developer will also need to add the following link to the `customfooterlibs.
 >[!NOTE]
 >
 >Future versions of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en#core-components-introduction) will include these features automatically. However if you use custom components instead of the Core Components, these adjustments will always be required.
+
 ### Adjust Your Dispatcher {#adjust-dispatcher}
 
-The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, the dispatcher doesn't expose such files. To expose these files, the developer must add the following configuration to their project.
+The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, the dispatcher doesn't expose such files. To expose these files, the developer must add the following configuration to your site project.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
- 
+
 # Allow webmanifest files
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
@@ -87,7 +90,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 
 1. Log into AEM.
 1. From the main menu, tap or click **Navigation** -&gt; **Sites**.
-1. Select the Sites project and tap or click [**Properties**](/help/sites-cloud/authoring/fundamentals/page-properties.md) or use the hotkey `p`.
+1. Select your sites project and tap or click [**Properties**](/help/sites-cloud/authoring/fundamentals/page-properties.md) or use the hotkey `p`.
 1. Select the **Progressive Web App** tab and configure the applicable properties. At a minimum you will want to:
    1. Select the option **Make this site installable as a PWA**.
    1. Define the **URL to load when user opens app**.
@@ -115,8 +118,8 @@ Your site is now configured and you can [install it as a local app.](#using-pwa-
 
 Now that you have configured your site to support PWA, you can experience for yourself.
 
-1. Access the starting page in a [supported mobile browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
-1. You will see a + icon on the address bar, indicating that the site can be installed as a local app.
+1. Access the site in a [supported mobile browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+1. You will see a `+` icon in the address bar of the browser, indicating that the site can be installed as a local app.
    * Depending on the browser, it may also display a notification (such as a banner or dialog box) indicating that it's possible to install as a local app.
 1. Install the app.
 1. The app will be installed on the home screen of your device.
@@ -130,24 +133,26 @@ The following section provides more detail on the options available when configu
 
 These settings allow your site behave like a native app by making it installable on the visitor's home screen and available offline.
 
-* **Make this site installable as a PWA** - Main toggle to enable PWA for the site
-* **URL to load when user opens app** - Content path that will open when the user loads the locally-installed app
+* **Make this site installable as a PWA** - This is the main toggle to enable PWA for the site.
+* **URL to load when user opens app** - This is the [start URL](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) that the app will open when the user loads the locally-installed app.
   * This can be any path in your content structure.
-  * This does not have to be the root and is usually a dedicated welcome page for the app.
-* **Customize app experience** - The app is still an AEM site delivered through a browser. These options define how the browser should be hidden or otherwise presented to the user.
+  * This does not have to be the root and is often a dedicated welcome page for the app.
+* **Customize app experience** - A PWA-enabled app is still an AEM site delivered through a browser. [These display options](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) define how the browser should be hidden or otherwise presented to the user on the local device.
   * **Standalone** - The browser is completely hidden from the user and it appears like a native app. This is the default value.
+    * With this option, app navigation must be possible entirely through your content using links and buttons on the site's pages without using the browser's navigation controls.
   * **Browser** - The browser appears as it normally would when visiting the site.
   * **Minimal UI** - The browser is mostly hidden, like a native app, but basic navigation controls are exposed.
   * **Full Screen** - The browser is completely hidden, like a native app, but is rendered in full screen mode.
-* **Screen orientation when opening the app**
+    * With this option, app navigation must be possible entirely through your content using links and buttons on the site's pages without using the browser's navigation controls.
+* **Screen orientation when opening the app** - As a local app, the PWA needs to know how to handle [device orientations.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
   * **Any** - The app adjusts to the user's selected orientation. This is the default value.
   * **Portrait** - This forces the app to open in portrait layout regardless of the user's orientation of the device.
   * **Landscape** - This forces the app to open in landscape layout regardless of the user's orientation of the device.
-* **Color of the toolbar** - This defines the color of the app toolbar.
-* **Color of the splash screen** - This defines the color of the app splash screen, which is shown as the app loads.
+* **Color of the toolbar** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) and depending on the browser can affect other presentation elements.
+* **Color of the splash screen** - This defines the [background color of the app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) which is shown as the app loads.
   * Certain browsers [build a splash screen automatically](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) from the app name, background color, and icon.
   * The splash screen is not visible to the user on sufficiently fast devices.
-* **Icon** - This defines the icon the represents the app on the user's device.
+* **Icon** - This defines [the icon](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) that represents the app on the user's device.
   * The icon must be a png file of size 512x512 pixels.
   * The icon must be [stored in DAM.](/help/assets/overview.md)
 
@@ -155,13 +160,17 @@ These settings allow your site behave like a native app by making it installable
 
 These settings make parts of this site available offline and available locally on your visitor's device.
 
-* **How often does your content change?**
-  * **Moderately** - This is the case for most sites and is the default value.
-  * **Frequently** - This is the case for sites that need changes to be closer to real-time such as auction houses.
+* **How often does your content change?** - This setting defines the caching model for your PWA.
+  * **Moderately** - [This setting](https://web.dev/stale-while-revalidate/) is the case for most sites and is the default value.
+  * **Frequently** - This is the case for sites that need updates to be very fast such as auction houses.
   * **Rarely** - This is the case for sites that are nearly static such as reference pages.
 * **Files to pre-fetch** - These files will be cached immediately when the app is installed.
 * **Paths to cache on first use** - These files will be cached whenever the user browsers to the page the first time in the app.
 * **Cache exclusions** - These files will never be caches regardless of the settings under **Files to pre-fetch** and **Paths to cache on first use**.
+
+>[!TIP]
+>
+>Your developer team likely has valuable input regarding how your offline configuration should be set up.
 
 ## Limitations {#limitations}
 
