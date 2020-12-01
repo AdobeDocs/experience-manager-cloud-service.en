@@ -24,18 +24,18 @@ Through a simple configuration, a content author can now enable progressive web 
 
 Instead of requiring any re-coding of the site, a content author is able to configure PWA properties as an additional tab in the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) of a site.
 
-* When saved or published, this configuration triggers an event handler that writes out the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) that enhances the site to become a PWA.
+* When saved or published, this configuration triggers an event handler that writes out the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) that enable PWA features on the site.
 * The manifest and service worker are stored in [context aware configuration](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) applicable to the site. Sling mappings are also maintained to ensure that service worker is served from the root of the application to enable proxying content allowing offline capabilities within the app.
 
-In the end the user has a local copy of the site, giving an app-like experience even without an internet connection.
+With PWA, the user has a local copy of the site, giving an app-like experience even without an internet connection.
 
 >[!NOTE]
 >
->Progressive web apps are an evolving technology and support for local app installation [depends on which browser you use.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+>Progressive web apps are an evolving technology and support for local app installation and other features [depends on which browser you use.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 
 ## Prerequisites {#prerequisites}
 
-To be able to use PWA features for your site, there are two requirements for your project environment.
+To be able to use PWA features for your site, there are two requirements for your project environment:
 
 1. [Adjust your components](#adjust-components) to enable this feature
 1. [Adjust your dispatcher](#adjust-dispatcher) rules to expose the required files
@@ -69,11 +69,11 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 >[!NOTE]
 >
->Future versions of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en#core-components-introduction) will include these features automatically. However if you use custom components instead of the Core Components, these adjustments will always be required.
+>Future versions of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) will include these features automatically. However if you use custom components instead of the Core Components, these adjustments will always be required.
 
 ### Adjust Your Dispatcher {#adjust-dispatcher}
 
-The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, the dispatcher doesn't expose such files. To expose these files, the developer must add the following configuration to your site project.
+The PWA feature generates and uses `/content/<sitename>/manifest.webmanifest` files. By default, [the dispatcher](/help/implementing/dispatcher/overview.md) doesn't expose such files. To expose these files, the developer must add the following configuration to your site project.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -88,6 +88,8 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 
 ## Enabling PWA for Your Site {#enabling-pwa-for-your-site}
 
+With [the prerequisites](#prerequisites) met, it is very easy for a content author to enable PWA features to a site. The following is a basic outline of how to do this. Individual options are detailed in section [Detailed Options.](#detailed-options)
+
 1. Log into AEM.
 1. From the main menu, tap or click **Navigation** -&gt; **Sites**.
 1. Select your sites project and tap or click [**Properties**](/help/sites-cloud/authoring/fundamentals/page-properties.md) or use the hotkey `p`.
@@ -97,7 +99,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 
       ![Enable PWA](../assets/pwa-enable.png)
 
-   1. Upload a 512x512 png icon to assets (DAM) and reference that as the icon for this app.
+   1. Upload a 512x512 png icon to the DAM and reference that as the icon for the app.
 
       ![Define PWA icon](../assets/pwa-icon.png)
 
@@ -116,7 +118,7 @@ Your site is now configured and you can [install it as a local app.](#using-pwa-
 
 ## Using Your PWA-Enabled Site {#using-pwa-enabled-site}
 
-Now that you have configured your site to support PWA, you can experience for yourself.
+Now that you have [configured your site to support PWA,](#enabling-pwa-for-your-site) you can experience it for yourself.
 
 1. Access the site in a [supported mobile browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 1. You will see a `+` icon in the address bar of the browser, indicating that the site can be installed as a local app.
@@ -127,7 +129,7 @@ Now that you have configured your site to support PWA, you can experience for yo
 
 ## Detailed Options {#detailed-options}
 
-The following section provides more detail on the options available when configuring your site for PWA.
+The following section provides more detail on the options available when [configuring your site for PWA.](#enabling-pwa-for-your-site)
 
 ### Configure Installable Experience** {#configure-installable-experience}
 
@@ -139,19 +141,18 @@ These settings allow your site behave like a native app by making it installable
   * This does not have to be the root and is often a dedicated welcome page for the app.
 * **Customize app experience** - A PWA-enabled app is still an AEM site delivered through a browser. [These display options](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) define how the browser should be hidden or otherwise presented to the user on the local device.
   * **Standalone** - The browser is completely hidden from the user and it appears like a native app. This is the default value.
-    * With this option, app navigation must be possible entirely through your content using links and buttons on the site's pages without using the browser's navigation controls.
+    * With this option, app navigation must be possible entirely through your content using links and components on the site's pages without using the browser's navigation controls.
   * **Browser** - The browser appears as it normally would when visiting the site.
   * **Minimal UI** - The browser is mostly hidden, like a native app, but basic navigation controls are exposed.
   * **Full Screen** - The browser is completely hidden, like a native app, but is rendered in full screen mode.
-    * With this option, app navigation must be possible entirely through your content using links and buttons on the site's pages without using the browser's navigation controls.
+    * With this option, app navigation must be possible entirely through your content using links and components on the site's pages without using the browser's navigation controls.
 * **Screen orientation when opening the app** - As a local app, the PWA needs to know how to handle [device orientations.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
-  * **Any** - The app adjusts to the user's selected orientation. This is the default value.
-  * **Portrait** - This forces the app to open in portrait layout regardless of the user's orientation of the device.
-  * **Landscape** - This forces the app to open in landscape layout regardless of the user's orientation of the device.
-* **Color of the toolbar** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) and depending on the browser can affect other presentation elements.
+  * **Any** - The app adjusts to the orientation of the user's device. This is the default value.
+  * **Portrait** - This forces the app to open in portrait layout regardless of the orientation of the user's device.
+  * **Landscape** - This forces the app to open in landscape layout regardless of the orientation of the user's device.
+* **Color of the toolbar** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) and, depending on the browser, can affect other app presentation elements.
 * **Color of the splash screen** - This defines the [background color of the app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) which is shown as the app loads.
   * Certain browsers [build a splash screen automatically](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) from the app name, background color, and icon.
-  * The splash screen is not visible to the user on sufficiently fast devices.
 * **Icon** - This defines [the icon](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) that represents the app on the user's device.
   * The icon must be a png file of size 512x512 pixels.
   * The icon must be [stored in DAM.](/help/assets/overview.md)
