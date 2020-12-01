@@ -47,9 +47,11 @@ This tool is for system administrator, consultant, or implementation partner per
   * Upon selecting a grid cell from the grid present in the page, the focus shifts to the action bar that appears on the screen.
   * Visual users can differentiate between normal text and a link, as visual clues (underline and chevron icon) are displayed for links to all solutions in [!DNL Experience Manager] home page.
 
-* **Dynamic Media Batch Set Presets**: Automate the creation and organization of multiple assets in an image set or spin set at the time you upload asset files to a folder either individually or using bulk ingestion. <!-- TBD: See [Batch Set Presets](). -->
+* **Batch Set Presets in Dynamic Media**: Now you can automate the creation and organization of multiple assets in an image set or spin set at the time you upload asset files to a folder either individually or using bulk ingestion. 
 
-* The following enhancements are done for accessibility in [!DNL Dynamic Media]. For details, see [accessibility features in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  See [About Batch Set Presets](/help/assets/dynamic-media/batch-set-presets-dm.md).
+
+* The following accessibility enhancements are now available in [!DNL Dynamic Media]:
 
   * Screen readers (JAWS, Narrator) narrate the name, role, and state for the menu items in the Embed size menu option.
   * Users can navigate the Email link dialog using the `Tab` key.
@@ -59,6 +61,8 @@ This tool is for system administrator, consultant, or implementation partner per
   * Viewers are improved to let users navigate using a keyboard.
   * The keyboard and screen reader users can use the crop functionality.
   * The keyboard users can better manage the hotspots.
+
+  See [Accessibility in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
