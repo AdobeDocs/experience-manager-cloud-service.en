@@ -16,11 +16,17 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+* **[Core Components 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: AEM as a Cloud Service benefits from automatic updates to the latest release of the Core Components. Release 2.12.0 includes the latest improvements contributed by the community such as [a new POST form handler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) the ability to include custom CSS, Javascript, and metadata [tags via context aware configuration;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) and a [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) utility to simplify Adobe Data Layer integration in custom components. See the [list of changes](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
-* **Project Archetype 24**: The recommended foundation to start a new AEM project got better, now including the new Adobe Client Data Layer, option to deliver site in AMP and new extension points to add project CSS/JS.
+* **[Project Archetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: The recommended foundation to start a new AEM project got better, now including the new [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), option to [deliver site in AMP,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) and new [extension points to add project CSS/JS.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
-* **ContextHub Folders**: Ability to create audience folders to easily organize, find and select audience segments to use for ContextHub offer targeting capabilities. 
+* **[ContextHub Folders](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Ability to create audience folders to easily organize, find and select audience segments to use for ContextHub offer targeting capabilities.
+
+* **[Launches Hierarchy Management](/help/sites-cloud/authoring/launches/managing-pages.md) & [Future Timewarp](/help/sites-cloud/authoring/launches/preview.md)**: New UI to add/remove pages within a launch, and browsing site with Timewarp shows future state from Launches.
+
+* **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI.
+
+* **Make a Site Installable**: New site properties to configure Progressive Web Application (PWA) capabilities, that will make a site installable and optional offline available. The features requires Core Components.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
