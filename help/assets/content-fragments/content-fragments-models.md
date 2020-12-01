@@ -130,7 +130,6 @@ The content fragment model effectively defines the structure of the resulting co
    ![save](assets/cfm-models-07.png)
 
 1. Select **Save** to persist the definition.
-
 -->
 
 ## Data Types {#data-types}
