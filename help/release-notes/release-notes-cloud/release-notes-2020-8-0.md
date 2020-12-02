@@ -14,7 +14,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Ability to [restore pages and sub-pages (page trees) to an earlier version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Ability to [create Launches](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor.](/help/implementing/developing/spa/introduction.md)
+* Ability to [create Launches](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor.](/help/implementing/developing/hybrid/introduction.md)
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
