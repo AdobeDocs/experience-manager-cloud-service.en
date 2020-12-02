@@ -24,6 +24,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Maven Project Version Handling](cloud-manager/project-version-handling.md)
   + [Accessing Git](cloud-manager/accessing-git.md)
   + [Integrating Git with Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
+  + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + Developing for AEM as a Cloud Service {#developing}
   + [AEM Project Structure](developing/introduction/aem-project-content-package-structure.md)
   + [AEM Project Repository Structure Package](developing/introduction/repository-structure-package.md)
