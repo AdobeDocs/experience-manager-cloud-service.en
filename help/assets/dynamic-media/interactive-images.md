@@ -248,10 +248,10 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the Hotspot management page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 
-  1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
-  1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location.
-  1. Add additional hotspots as necessary by repeating steps a and b.
-  1. (Optional) To delete a hotspot, select it on the image, then tap **[!UICONTROL Delete]** (garbage can icon) under the **[!UICONTROL Hotspots]** heading.
+   1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
+   1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location. Or, use the keyboard arrow keys to control the position of a selected hot spot.
+   1. Add additional hotspots as necessary by repeating steps a and b.
+   1. (Optional) To delete a hotspot, select it on the image, then tap **[!UICONTROL Delete]** (garbage can icon) under the **[!UICONTROL Hotspots]** heading.
 
 1. In the Name text field, type the name of the hotspot. This name also appears in the Selected Hotspot drop-down list.
 1. Do one of the following:

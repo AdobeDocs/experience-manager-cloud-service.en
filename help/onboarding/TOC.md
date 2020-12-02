@@ -37,7 +37,8 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Setting up your Project](getting-access-to-aem-in-cloud/setting-up-project.md)
     + [Understanding the Build Environment](getting-access-to-aem-in-cloud/build-environment-details.md)
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Release Notes for 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
     + [Release Notes for 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
     + [Release Notes for 2020.8.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
     + [Release Notes for 2020.7.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
@@ -53,6 +54,8 @@ user-guide-description: This guide provides an summary of how to get started wit
 + Accessibility {#accessibility}
   + [AEM as a Cloud Service and the Web Accessibility Guidelines](accessibility/web-accessibility.md)
   + [A Quick Guide to WCAG 2.1](accessibility/quick-guide-wcag.md)
++ Migration Methodology {#migration-methodology}
+  + [Migration to Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
   + [SEO and URL Management](best-practices/seo-and-url-management.md)
 + [Overview of the Tools consoles](tools-consoles.md)
