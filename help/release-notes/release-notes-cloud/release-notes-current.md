@@ -9,7 +9,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 
 ## Release Date {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 is December 1, 2020.
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 is December 2, 2020.
 The following release (2020.12.0) will be on December 17, 2020
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
@@ -19,10 +19,6 @@ The following release (2020.12.0) will be on December 17, 2020
 * **[Launches Hierarchy Management](/help/sites-cloud/authoring/launches/managing-pages.md) & [Future Timewarp](/help/sites-cloud/authoring/launches/preview.md)**: New UI to add/remove pages within a launch, and browsing site with Timewarp shows future state from Launches.
 
 * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI.
-
-* **Make a Site Installable**: New site properties to configure Progressive Web Application (PWA) capabilities, that will make a site installable and optional offline available. The features requires Core Components.
-
-* **[Core Components 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: AEM as a Cloud Service benefits from automatic updates to the latest release of the Core Components. Release 2.12.0 includes the latest improvements contributed by the community such as [a new POST form handler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) the ability to include custom CSS, Javascript, and metadata [tags via context aware configuration;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) and a [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) utility to simplify Adobe Data Layer integration in custom components. See the [list of changes](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
