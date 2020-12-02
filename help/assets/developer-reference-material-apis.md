@@ -10,7 +10,9 @@ The article contains recommendations, reference materials and resources for deve
 
 ## AEM Assets APIs and Operations
 
-AEM as a Cloud Service provides several APIs for interacting with AEM Assets, with each API supporting specific operations. Review the table below to understand which APIs support different operations. Note that some APIs continue to exist, however are not supported (denoted with an ❌) and must not be used.
+AEM as a Cloud Service provides several APIs for programmatically interacting with AEM Assets, with each API supporting specific operations. Review the table below to understand which APIs support different operations. Note that some APIs continue to exist, however are not supported (denoted with an ❌) and must not be used.
+
+The AEM Assets UI, Experience Manager Desktop App and Adobe Asset Link support these, or subsets of these, operations.
 
 + ✔️ : Operation supported
 + ❌ : Operation __not__ supported
@@ -25,13 +27,6 @@ AEM as a Cloud Service provides several APIs for interacting with AEM Assets, wi
 | Delete original    |➖|✔️|➖|✔️|✔️|➖|
 | Copy original      |➖|✔️|➖|✔️|✔️|➖| 
 | Move original      |➖|✔️|➖|✔️|✔️|➖| 
-| __Asset Rendition Binaries__ ||||||| 
-| Create rendition   |➖|❌  |✔️|❌|❌|➖|
-| Read rendition     |➖|❌|✔️|✔️|✔️|➖|
-| Update rendition   |➖|❌|✔️|❌|❌|➖|
-| Delete rendition   |➖|✔️|➖|✔️|✔️|➖|
-| Copy rendition     |➖|✔️|➖|✔️|✔️|➖|
-| Move rendition     |➖|✔️|➖|✔️|✔️|➖| 
 | __Asset Metadata__ ||||||| 
 | Create metadata    |➖|✔️|✔️|✔️|✔️|➖|
 | Read metadata      |➖|✔️|➖|✔️|✔️|➖|
