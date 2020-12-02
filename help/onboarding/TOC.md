@@ -54,6 +54,8 @@ user-guide-description: This guide provides an summary of how to get started wit
 + Accessibility {#accessibility}
   + [AEM as a Cloud Service and the Web Accessibility Guidelines](accessibility/web-accessibility.md)
   + [A Quick Guide to WCAG 2.1](accessibility/quick-guide-wcag.md)
++ [Migration Methodology] {#migration-methodology}
+  + [Migration to Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
   + [SEO and URL Management](best-practices/seo-and-url-management.md)
 + [Overview of the Tools consoles](tools-consoles.md)
