@@ -383,6 +383,8 @@ The script does the following:
 1. It runs the validator from the previous section to ensure that only the supported directives are included. If the configuration isn't valid, the script will fail.
 2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment
 
+During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
+
 ## Testing your Apache and Dispatcher configuration locally {#testing-apache-and-dispatcher-configuration-locally}
 
 It is also possible to test drive your Apache and Dispatcher configuration locally. It requires the docker to be installed locally and your configuration to pass the validation as described above.
