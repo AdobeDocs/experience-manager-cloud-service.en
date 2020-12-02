@@ -6,7 +6,56 @@ contentOwner: AG
 
 # [!DNL Assets] APIs and developer reference material {#assets-cloud-service-apis}
 
-The article contains reference material and resources for developers of [!DNL Assets] as a Cloud Service. It includes new upload method, API reference, and information about the support provided in post-processing workflows.
+The article contains recommendations, reference materials and resources for developers of [!DNL Assets] as a Cloud Service. It includes new asset upload module, API reference, and information about the support provided in post-processing workflows.
+
+## AEM Assets APIs and Operations
+
+AEM as a Cloud Service provides several APIs for interacting with AEM Assets, with each API supporting specific operations. Review the table below to understand which APIs support different operations. Note that some APIs continue to exist, however are not supported (denoted with an ❌) and must not be used.
+
++ ✔️ : Operation supported
++ ❌ : Operation __not__ supported
++ ➖ : Operation unavailable
+
+| | [@adobe/aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java APIs | [Asset Compute workers](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [AEM Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=en#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | GraphQL _(Preview)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| __Asset Original Binary__ |||||||
+| Create original    |✔️|❌|➖|❌|❌|➖|
+| Read original      |➖|❌|✔️|✔️|✔️|➖| 
+| Update original    |✔️|❌|✔️|❌|❌ |➖|
+| Delete original    |➖|✔️|➖|✔️|✔️|➖|
+| Copy original      |➖|✔️|➖|✔️|✔️|➖| 
+| Move original      |➖|✔️|➖|✔️|✔️|➖| 
+| __Asset Rendition Binaries__ ||||||| 
+| Create rendition   |➖|❌  |✔️|❌|❌|➖|
+| Read rendition     |➖|❌|✔️|✔️|✔️|➖|
+| Update rendition   |➖|❌|✔️|❌|❌|➖|
+| Delete rendition   |➖|✔️|➖|✔️|✔️|➖|
+| Copy rendition     |➖|✔️|➖|✔️|✔️|➖|
+| Move rendition     |➖|✔️|➖|✔️|✔️|➖| 
+| __Asset Metadata__ ||||||| 
+| Create metadata    |➖|✔️|✔️|✔️|✔️|➖|
+| Read metadata      |➖|✔️|➖|✔️|✔️|➖|
+| Update metadata    |➖|✔️|✔️|✔️|✔️|➖|
+| Delete metadata    |➖|✔️|✔️|✔️|✔️|➖|
+| Copy metadata      |➖|✔️|➖|✔️|✔️|➖|
+| Move metadata      |➖|✔️|➖|✔️|✔️|➖|
+| __Content Fragments (CF)__ |||||||
+| Create CF          |➖|✔️|➖|✔️|➖|➖|
+| Read CF            |➖|✔️|➖|✔️|➖|✔️|
+| Update CF          |➖|✔️|➖|✔️|➖|➖|
+| Delete CF          |➖|✔️|➖|✔️|➖|➖|
+| Copy CF            |➖|✔️|➖|✔️|➖|➖|
+| Move CF            |➖|✔️|➖|✔️|➖|➖| 
+| __Asset Versions__ ||||||| 
+| Create version     |✔️|✔️|➖|➖|➖|➖|
+| Read version       |➖|✔️|➖|➖|➖|➖|
+| Delete version     |➖|✔️|➖|➖|➖|➖|
+| __Asset Folders__ |||||||
+| Create folder      |✔️|✔️|➖|✔️|➖|➖|
+| Read folder        |➖|✔️|➖|✔️|➖|➖|
+| Delete folder      |✔️|✔️|➖|✔️|➖|➖|
+| Copy folder        |✔️|✔️|➖|✔️|➖|➖| 
+| Move folder        |✔️|✔️|➖|✔️|➖|➖| 
 
 ## Asset upload {#asset-upload-technical}
 
