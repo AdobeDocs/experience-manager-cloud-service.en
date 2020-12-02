@@ -25,7 +25,7 @@ After publishing, you can include the video assets in a web page as a URL or dir
 
 ## Transcode using Processing Profile {#transcode-video}
 
-[!DNL Experience Manager] as a Cloud Service lets you do basic transcoding of MP4 video files using Processing Profiles. The functionality allows you to not just upload but also preview and scale a MP4 video file.
+[!DNL Experience Manager] as a [!DNL Cloud Service] lets you do basic transcoding of MP4 video files using Processing Profiles. The functionality allows you to not just upload but also preview and scale a MP4 video file.
 
 ![Create Processing Profile for video transcoding in Experience Manager](assets/video-processing-profile-for-mp4.png)
 
