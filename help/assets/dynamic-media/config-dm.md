@@ -188,7 +188,7 @@ Setup and configuration tasks include the following:
 * [Configuring color management](#configuring-color-management)
 * [Editing MIME types for supported formats](#editing-mime-types-for-supported-formats)
 * [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
-* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+<!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### Publishing setup for Image Server {#publishing-setup-for-image-server}
 
@@ -332,7 +332,7 @@ You can add custom MIME types for unsupported formats in AEM Assets. To ensure t
 
 1. Near the upper-left corner of the CRXDE Lite page, click **[!UICONTROL Save All]**.
 
-#### Creating batch set presets to auto-generate Image Sets and Spin Sets {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
+<!-- #### Creating batch set presets to auto-generate Image Sets and Spin Sets {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
 Use batch set presets to automate the creation of image sets or spin sets while assets are uploaded to Dynamic Media.
 
@@ -496,7 +496,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 1. In the Details panel, click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Active]** next to the new preset name.
 
-   Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set.
+   Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set. -->
 
 ### (Optional) Tuning the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
