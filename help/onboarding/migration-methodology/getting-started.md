@@ -3,7 +3,7 @@ title: One-pager for migration to Experience Manager as a Cloud Service
 description: One-pager for migration to Experience Manager as a Cloud Service
 ---
 
-# One-Pager : Migration to Adobe Experience Manager as a Cloud Service {#Overview}
+# Migration to Adobe Experience Manager as a Cloud Service {#Overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration-overview"
