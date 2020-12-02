@@ -14,9 +14,9 @@ AEM as a Cloud Service provides several APIs for programmatically interacting wi
 
 The AEM Assets UI, Experience Manager Desktop App and Adobe Asset Link support these, or subsets of these, operations.
 
-+ ✔️ : Operation supported
-+ ❌ : Operation __not__ supported
-+ ➖ : Operation unavailable
+* ✔️ : Operation supported
+* ❌ : Operation __not__ supported
+* ➖ : Operation unavailable
 
 | | [@adobe/aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java APIs | [Asset Compute workers](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [AEM Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=en#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | GraphQL _(Preview)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
