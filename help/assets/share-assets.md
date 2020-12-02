@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Share and distribute assets managed in Experience Manager {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from Experience Manager Assets as a Cloud Service:
+Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from Experience Manager Assets as a [!DNL Cloud Service]:
 
 * Share as a link.
 * Download assets and share separately.
@@ -178,6 +178,5 @@ See [how to configure AEM to use with Adobe Asset Link](https://helpx.adobe.com/
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->

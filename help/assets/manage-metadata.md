@@ -135,7 +135,7 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
 
 ## Custom metadata using processing profile {#metadata-compute-service}
 
-Assets as a Cloud Service can generate custom metadata for an asset using cloud-native services. Configure a processing profile to generate custom metadata. See [how to use processing profile](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets as a [!DNL Cloud Service] can generate custom metadata for an asset using cloud-native services. Configure a processing profile to generate custom metadata. See [how to use processing profile](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Metadata rendition in processing profile](assets/processing-profile-metadata.png)
 

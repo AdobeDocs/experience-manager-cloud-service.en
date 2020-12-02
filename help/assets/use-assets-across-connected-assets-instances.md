@@ -23,9 +23,9 @@ Before you use or configure this capability, ensure the following:
 * The users are part of the appropriate user groups on each deployment.
 * For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. For more information about how this functionality works in [!DNL Experience Manager] 6.5, see [Connected Assets in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-  | |[!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS| [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise|
+  | |[!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS| [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise|
   |---|---|---|---|
-  |**[!DNL Experience Manager Assets] as a Cloud Service**| Supported | Supported | Supported |
+  |**[!DNL Experience Manager Assets] as a [!DNL Cloud Service]**| Supported | Supported | Supported |
   |**[!DNL Experience Manager] 6.5 [!DNL Assets] on AMS** | Supported | Supported | Supported |
   |**[!DNL Experience Manager] 6.5 [!DNL Assets] on-premise** | Not Supported |Not Supported | Not Supported |
 
