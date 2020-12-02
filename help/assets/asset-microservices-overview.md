@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
 
-Adobe Experience Manager as a Cloud Service provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
+Adobe Experience Manager as a [!DNL Cloud Service] provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
 
 * Scalable architecture that allows for seamless processing for resource-intensive operations.
 * Efficient indexing and text extractions that does not impact the performance of your Experience Manager environments.
@@ -73,5 +73,5 @@ Adobe Experience Manager can be configured to automatically trigger the post-pro
 >* [Get started using asset microservices](asset-microservices-configure-and-use.md)
 >* [Supported file formats](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Apache Oak documentation on direct binary access](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

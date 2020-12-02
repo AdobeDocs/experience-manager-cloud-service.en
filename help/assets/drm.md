@@ -1,6 +1,6 @@
 ---
 title: Digital Rights Management in [!DNL Assets]
-description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a Cloud Service.
+description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 ---
 

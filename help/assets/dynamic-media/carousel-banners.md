@@ -249,7 +249,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
 >[!NOTE]
 >
 >When you add hotspots to an image in an [Interactive Image](/help/assets/dynamic-media/interactive-images.md) or a Carousel Banner, the hotspot information is stored in the same metadata location&mdash;relative to the image's location&mdashregardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image&mdash;along with its defined hotspot data&mdash;in either viewer.
-
+>
 >Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You may want to create Interactive Images and Carousel Banners using separate copies of the same image instead.
 
 >[!NOTE]
@@ -269,7 +269,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
     * For hotspots: On the image, tap a location where you want the hotspot to appear.
     * For image maps: On the image, click, then drag from the top left to the bottom right to create the image map area. You can adjust the size of the image map by dragging the corners.
 
-   If necessary, drag the hotspot or the image map to a new location. Add additional hotspots or image maps as necessary.
+   If necessary, drag the hotspot or the image map to a new location. Or, use the keyboard arrow keys to control the position of a selected hot spot. Add additional hotspots or image maps as necessary.
 
    To delete a hotspot or image map, tap the **[!UICONTROL Actions]** tab. Under the **[!UICONTROL Maps & Hotspots]** heading, from the **[!UICONTROL Selected Type]** drop-down menu, select the name of the hotspot or image map you want to remove. Tap the **[!UICONTROL Trash]** icon next to the menu, then tap **[!UICONTROL Delete]**.
 
