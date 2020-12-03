@@ -107,11 +107,11 @@ The **[Fragment Reference](/help/assets/content-fragments/content-fragments-mode
 
 * Is of particular interest in conjunction with GraphQL.
 
-* Is a specific data type that can be used when defining a Content Fragment Model. 
+* Is a specific data type that can be used when defining a Content Fragment Model.
 
-* References another fragment, dependent on a specific Content Fragment Model. 
+* References another fragment, dependent on a specific Content Fragment Model.
 
-* Allows you to retrieve structured data. 
+* Allows you to retrieve structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
@@ -122,3 +122,7 @@ To help with designing and developing your Content Fragment Modesl, you can prev
 ## Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
 See [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md) for an introduction to using the AEM GraphQL API.
+
+## Tutorial - Getting Started with AEM Headless and GraphQL
+
+Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM’s GraphQL APIs and consumed by an external app, in a headless CMS scenario.
