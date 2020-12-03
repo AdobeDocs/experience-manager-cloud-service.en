@@ -46,7 +46,7 @@ Follow the steps below to add a new (third) source or repository:
 1. Add a reference to the new directory in the root Maven pom in the Cloud Manager Git Repository.
 
 
-## Appendix A: Sample GitHub Action {#sample-github-action}
+## Sample GitHub Action {#sample-github-action}
 
 This is a sample GitHub action triggered by a push to the main branch and then pushing into a sub directory of Cloud Manager's Git Repository. The GitHub actions needs to be provided with two secrets, `MAIN_USER` and `MAIN_PASSWORD`, to be able to connect and push to Cloud Manager's Git repository.
 
@@ -110,7 +110,7 @@ As shown above, using a GitHub action is very flexible. Any mapping between bran
 >[!NOTE]
 >The above script uses `git add` to update the repository which assumes that removals are included - depending on the default configuration of Git, this needs to be replaced with `git add --all`.
 
-## Appendix B: Sample Jenkins Job {#sample-jenkins-job}
+## Sample Jenkins Job {#sample-jenkins-job}
 
 This is a sample script that can be used in a Jenkins job or similar. It gets triggered by a change in a Git Repository. The Jenkins job checks out the latest state of that project or branch and then triggers this script.
 
