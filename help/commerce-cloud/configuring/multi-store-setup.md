@@ -1,6 +1,14 @@
 ---
 title: Multi-Store Setup
-description: Multi-Store Setup
+description: Learn how map multiple store views from Magento to AEM. This allows projects to support multi-tenant and multi-lingual use cases.
+sub-product: Commerce
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 3046
+thumbnail: 28952.jpg
 ---
 
 # Multi-Store Setup {#multi-store}
@@ -25,7 +33,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 
 3. Create a child configuration of the CIF Cloud Service config following these steps:
 
-   * In AEM go to Tools -> General -> Configuration Browser
+   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Select the base configuration you created
    * Create a new configuration using the steps described at point 2 above
 

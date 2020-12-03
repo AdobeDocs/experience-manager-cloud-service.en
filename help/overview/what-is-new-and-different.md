@@ -59,31 +59,28 @@ This enables autoscaling for varying usage patterns:
 ![Autoscaling for varying usage patterns](assets/introduction-04.png "Autoscaling for varying usage patterns")
 
 
-## Upgrades {#upgrades}
+## AEM Updates {#aem-updates}
 
 >[!NOTE]
->
->For further details see the [Deploying Introduction](/help/implementing/deploying/overview.md).
+>For further details see the [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
 
-AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure that your projects are fully up-to-date. These mean that all upgrade operations are fully automated, so do not require any interruption of service for users.
-
-Adobe proactively takes care of updating all operational instances of the service to the latest version of the AEM code base:
-
-* Bug-fixes:
- 
-  * Can be released on a daily basis.
-
-  * Instances are frequently updated with the latest bug-fixes. As changes are applied regularly the impact is incremental, reducing the impact on your service.
-
-  * Most updates are for maintenance and security reasons. 
-
-* New Features:
-
-  * Will be released via a predictable monthly schedule.
+AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that Production and Stage instances are updated to the latest AEM version without any interruption of service for users.
 
 >[!NOTE]
->
->For further details see [Deployment Architecture](/help/core-concepts/architecture.md#deployment-architecture).
+> If the update to production environment fails, Cloud Manager will automatically rollback the stage environment. This is done automatically to make sure that after an update completes, both stage and production environments are at on same AEM version.
+
+AEM version updates are of two types:
+
+* **AEM Push updates**
+
+   * Can be released on a daily basis.
+   * Mostly maintenance, including the latest bug-fixes and security updates.
+
+     As changes are applied regularly the impact is incremental, reducing the impact on your service.
+
+* **New Feature updates**
+
+   * Released via a predictable monthly schedule.
 
 ## Cloud Manager {#cloud-manager}
 

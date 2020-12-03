@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Share and distribute assets managed in Experience Manager {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from Experience Manager Assets as a Cloud Service:
+Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from Experience Manager Assets as a [!DNL Cloud Service]:
 
 * Share as a link.
 * Download assets and share separately.
@@ -105,7 +105,7 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 Marketers and line-of-business users can easily share approved assets with their creative professionals using,
 
-* **AEM desktop app**: The app works on Windows and Mac. See [desktop app overview](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). The desktop users can create assets and share it back with their counterparts who are AEM users, for example, by uploading new images. See [upload assets using desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM desktop app**: The app works on Windows and Mac. See [desktop app overview](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). The desktop users can create assets and share it back with their counterparts who are AEM users, for example, by uploading new images. See [upload assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: The creative professionals can search and use assets directly from within Adobe InDesign, Adobe Illustrator, and Adobe Photoshop. 
 
@@ -158,7 +158,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Enable desktop actions to use with desktop app {#desktop-actions}
 
-From within the Assets user interface in a browser, you can explore the asset locations or check-out and open the asset for editing in your desktop application. These options are called desktop actions and to enable it, see [enable desktop actions in AEM web interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+From within the Assets user interface in a browser, you can explore the asset locations or check-out and open the asset for editing in your desktop application. These options are called desktop actions and to enable it, see [enable desktop actions in AEM web interface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Enable desktop actions to use as shortcut when working with desktop app](assets/enable_desktop_actions.png)
 
@@ -178,6 +178,5 @@ See [how to configure AEM to use with Adobe Asset Link](https://helpx.adobe.com/
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->

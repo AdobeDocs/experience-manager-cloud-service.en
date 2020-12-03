@@ -30,8 +30,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >The Production and Stage is available as a duo and is used for testing and production purposes.  User will not be able to create only Stage or only Production environment.
 
-## Adding an Environment {#adding-environments}
-
+## Adding Environment {#adding-environments}
 
 1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen. 
    ![](assets/environments-tab.png)
@@ -57,19 +56,37 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
+
+## Viewing Environment {#viewing-environment}
+
+The **Environments** card on the Overview page lists up to three environments. 
+
+1. Select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
+
+   ![](assets/environment-view-1.png)
+
+1. The **Environments** page displays the list of all the existing environments.
+
+   ![](assets/environment-view-2.png)
+
+1. Select any one of the environments from the list to view the environment details.
+
+   ![](assets/environment-view-3.png)
+
+
 ## Updating Environment {#updating-dev-environment}
 
 Updates of Stage and Production environments are automatically managed by Adobe. 
 
 Updates to Development environments are managed by users of the program. When an environment is not running the latest publicly available AEM release, the status on Environments Card on the Home Screen will show **UPDATE AVAILABLE**.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 The **Update** option is available from the **Environments** Card. 
 This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Update**, as shown in the figure below:
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Selecting this option will allow a Deployment Manager to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
 
@@ -85,11 +102,12 @@ The **Delete** option is available from the dropdown menu in the **Environments*
 
 The delete option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Delete**, as shown in the figure below:
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
-This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
+>
+>This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
 
 ## Managing Access {#managing-access}
 
@@ -97,7 +115,7 @@ Select **Manage Access** from the dropdown menu in the **Environments** Card. Yo
 
 Refer to [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) to learn more.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Accessing Developer Console {#accessing-developer-console}
@@ -109,7 +127,17 @@ Only a user in the Developer role will have access to **Developer Console**. The
 Refer to [Hibernating and De-hibernating Sandbox Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select an environment, click on **...** and select **Developer Console**.
+
+## Login Locally {#login-locally}
+
+Select **Local Login** from the dropdown menu in the **Environments** Card to login locally to Adobe Experience Manager. 
+
+![](assets/environ-login-locally.png)
+
+Additionally, you can login locally from the **Environments** summary page.
+
+![](assets/environ-login-locally-2.png)
 

@@ -1,16 +1,16 @@
 ---
-title: Developer references for digital asset management in [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Developer references for [!DNL Assets]
 description: [!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].
 contentOwner: AG
 ---
 
 # [!DNL Assets] APIs and developer reference material {#assets-cloud-service-apis}
 
-The article contains reference material and resources for developers of [!DNL Assets] as a Cloud Service. It includes new upload method, API reference, and information about the support provided in post-processing workflows.
+The article contains reference material and resources for developers of [!DNL Assets] as a [!DNL Cloud Service]. It includes new upload method, API reference, and information about the support provided in post-processing workflows.
 
 ## Asset upload {#asset-upload-technical}
 
-[!DNL Experience Manager] as a Cloud Service provides a new method to upload assets to the repository. Users can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
+[!DNL Experience Manager] as a [!DNL Cloud Service] provides a new method to upload assets to the repository. Users can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
 
 1. [Submit an HTTP request](#initiate-upload). It informs [!DNL Experience Manage]r deployment of your intent to upload a new binary.
 1. [POST the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
@@ -112,7 +112,7 @@ To learn more about the upload algorithms or to build your own upload scripts an
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-The new upload method is supported only for [!DNL Adobe Experience Manager] as a Cloud Service. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
+The new upload method is supported only for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
 
 * [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, like `AssetManager.createAsset(..)`
@@ -132,7 +132,7 @@ For post-processing workflow configuration, use the standard workflows with exte
 
 Customers upgrading from previous versions of [!DNL Experience Manager] can use asset microservices to process assets. The cloud-native asset microservices are much simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported.
 
-[!DNL Experience Manager] as a Cloud Service support the following workflow steps:
+[!DNL Experience Manager] as a [!DNL Cloud Service] support the following workflow steps:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -188,4 +188,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [The Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [The Experience Cloud as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

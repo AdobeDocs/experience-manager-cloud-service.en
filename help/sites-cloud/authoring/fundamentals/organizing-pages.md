@@ -361,7 +361,6 @@ AEM offers you the functionality to update any internal links that refer to the 
 >[!NOTE]
 >
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
--->
 
 #### Asynchronous Actions {#asynchronous-actions}
 

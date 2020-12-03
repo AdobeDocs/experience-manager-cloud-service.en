@@ -9,7 +9,7 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->Image profiles are not applicable to PDF files.
+>Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Crop options {#crop-options}
 
@@ -191,7 +191,7 @@ You can re-run smart crop to generate the additional crops again, if required.
 
 See also [Editing the smart crop or smart swatch of multiple images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**To edit the smart crop or smart swatch of a single image**:
+**To edit the smart crop or smart swatch of a single image**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch Image Profile applied to it.
 
@@ -205,6 +205,7 @@ See also [Editing the smart crop or smart swatch of multiple images](#editing-th
     * On the image, drag a corner handle to adjust the size of the viewable area of the crop or swatch.
     * On the image, drag the box/swatch to a new location. You can only edit image swatches; color swatches are static.
     * Above the image, tap  **[!UICONTROL Revert]** to undo all your edits and restore the original crop or swatch.
+    * Use the keyboard arrow keys to crop the frame size, or re-position the image, or both. 
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL Close]** to return to the folder of assets.
 
@@ -216,7 +217,7 @@ After you edit a smart crop and save, the change is propagated everywhere you us
 
 You can re-run smart crop to generate the additional crops again, if required.
 
-**To edit the smart crop or smart swatch of multiple images**:
+**To edit the smart crop or smart swatch of multiple images**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to a folder that has a smart crop or smart swatch Image Profile applied to it.
 1. On the folder, tap the **[!UICONTROL More Actions]** (...) icon, then tap **[!UICONTROL Smart Crop]**.

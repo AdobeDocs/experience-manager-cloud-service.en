@@ -214,7 +214,7 @@ See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-f
 
 >[!NOTE]
 >
->Be aware that the social media sharing tools in Interactive Image are not supported when you embed the viewer in an Experience Fragment.  To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>Be aware that the social media sharing tools in Interactive Image are not supported when you embed the viewer in an Experience Fragment. To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
 Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
@@ -225,7 +225,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 >[!NOTE]
 >
 >When you add hotspots to an image in an Interactive Image or a Carousel Banner, the hotspot information is stored in the same metadata location--relative to the image's location--regardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image--along with its defined hotspot data--in either viewer.
-
+>
 >Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You may want to create Interactive Images and Carousel Banners using separate copies of the same image instead.
 >
 >See also [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md).
@@ -248,10 +248,10 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the Hotspot management page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 
-  1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
-  1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location.
-  1. Add additional hotspots as necessary by repeating steps a and b.
-  1. (Optional) To delete a hotspot, select it on the image, then tap **[!UICONTROL Delete]** (garbage can icon) under the **[!UICONTROL Hotspots]** heading.
+   1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
+   1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location. Or, use the keyboard arrow keys to control the position of a selected hot spot.
+   1. Add additional hotspots as necessary by repeating steps a and b.
+   1. (Optional) To delete a hotspot, select it on the image, then tap **[!UICONTROL Delete]** (garbage can icon) under the **[!UICONTROL Hotspots]** heading.
 
 1. In the Name text field, type the name of the hotspot. This name also appears in the Selected Hotspot drop-down list.
 1. Do one of the following:
@@ -283,7 +283,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 
           >[!NOTE]
           >
-          >Be aware that the social media sharing tools in Interactive Image are not supported when you embed the viewer in an Experience Fragment.  To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+          >Be aware that the social media sharing tools in Interactive Image are not supported when you embed the viewer in an Experience Fragment. To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
 1. Tap **[!UICONTROL Save]** to save your work and return to the Browse page.
 1. Publish the interactive image. Publishing allows for the banner to be delivered through the cloud and also generates embed code if you need to integrate with a third party website.
