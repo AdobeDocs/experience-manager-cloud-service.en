@@ -172,10 +172,6 @@ To configure the tool, follow these steps:
    * [!UICONTROL Job Status]: View the status of the configuration when it is used in an ongoing import job or used for a completed job.
    * [!UICONTROL View Assets]: View the target folder if it exists.
 
->[!NOTE]
->
->Bulk upload as a part of content migration from other systems when setting up and deploying to [!DNL Experience Manager] requires careful planning, consideration, and choice of tools. See the [deployment guide](/help/implementing/deploying/overview.md) for guidance on content migration approaches.
-
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 
 In addition to web browser user interface, [!DNL Experience Manager] supports other clients on desktop. They also provide upload experience without the need to go to the web browser.
