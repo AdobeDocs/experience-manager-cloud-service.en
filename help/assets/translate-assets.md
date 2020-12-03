@@ -1,5 +1,5 @@
 ---
-title: Create and manage digital assets in multiple languages and run translation workflows
+title: Create and manage digital assets in multiple languages
 description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 ---
@@ -52,14 +52,14 @@ The language copy for which you originally add assets is the language primary. T
 
 ```shell
 /content
-&nbsp; &nbsp; /- dam
-&nbsp; &nbsp; &nbsp; |- en
-&nbsp; &nbsp; &nbsp; |- fr
-&nbsp; &nbsp; &nbsp; |- de
-&nbsp; &nbsp; &nbsp; |- es
-&nbsp; &nbsp; &nbsp; |- it
-&nbsp; &nbsp; &nbsp; |- ja
-&nbsp; &nbsp; &nbsp; |- zh
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 Perform the following steps to prepare your assets for translation:

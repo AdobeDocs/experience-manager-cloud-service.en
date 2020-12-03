@@ -39,45 +39,43 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Configuring Dynamic Media Cloud Service {#configuring-dynamic-media-cloud-services}
+## Creating a new Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Before you configure Dynamic Media Cloud Service**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
-
-To configure dynamic media cloud services:
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. In AEM, tap the AEM logo to access the global navigation console.
-1. On the left side of the consol, under the **[!UICONTROL Tools]** heading, tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create]**.
-1. On the Create Dynamic Media Configuration page, enter a title, the Dynamic Media account email address, password, then select your region. These are provided to you by Adobe in the provisioning email. Please contact support if you did not receive this.
+1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. These are provided to you by Adobe in the provisioning email. Please contact support if you did not receive this.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
+1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that consists of 8-25 characters. The password must contain at least one of each of the following:
 
-   >[!NOTE]
-   >
-   >After you receive your provisioning email with Dynamic Media credentials, please [log into](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that the Dynamic Media cloud service is set up with the correct credentials.
+      * Uppercase letter
+      * Lowercase letter
+      * Number
+      * Special character: `# $ & . - _ : { }`
+
+      Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction. 
+
+      If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
+
+1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]** 
+
+   The new password is saved when you tap **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
+
+   If you tapped **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you are still required to enter a new password when you tap **[!UICONTROL Save]** to save the newly created Dynamic Media configuration.
+  
+   See also [Changing the password to Dynamic Media](#change-dm-password).
 
 1. When the connection is successful, you can set the following:
 
-    * **[!UICONTROL Company]** - the name of the Dynamic Media account. It is possible you may have multiple Dynamic Media accounts for different sub-brands, divisions, or different staging/production environments.
-
-    * **[!UICONTROL Company Root Folder Path]**
-
-    * **[!UICONTROL Publishing Assets]** - You can choose from the following three options:
-      * **[!UICONTROL Immediately]** means that when assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.
-      * **[!UICONTROL Upon Activation]** means that you need to explicitly publish the asset first before a URL/Embed link is provided.
-      * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain.
-
-    * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
-    Unless you have a special arrangment to use your own company's server or a special server, Adobe Systems recommends that you leave this setting as specified.
-
-    * **[!UICONTROL Sync all content]** - Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:
-
-    * **[!UICONTROL Dynamic Media sync mode]**
-        * **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-        * **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
-        To mark a selected folder for sync to Dynamic Media, open the Properties page of your asset folder. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**. 
-            * **[!UICONTROL Inherited]** - No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tool tip.
-            * **[!UICONTROL Enable for sub-folders]** -  Include everything in this sub-tree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.
-            * **[!UICONTROL Disabled for sub-folders]** - Exclude everything in this sub-tree from syncing to Dynamic Media.  
+   | Property | Description |
+   |---|---|
+   | Company | The name of the Dynamic Media account. It is possible you may have multiple Dynamic Media accounts for different sub-brands, divisions, or different staging/production environments. |
+   | Company Root Folder Path | Your company's root folder path. |
+   | Publishing Assets | You can choose from the following three options:<br>**[!UICONTROL Immediately]**: When assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.<br>**[!UICONTROL Upon Activation]**: You need to explicitly publish the asset first before a URL/Embed link is provided.<br>**[!UICONTROL Selective Publish]**: Assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain. |
+   | Secure Preview Server | Lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).<br>Unless you have a special arrangment to use your own company's server or a special server, Adobe Systems recommends that you leave this setting as specified. |
+   | Sync all content | Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]**: The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.<br>To mark a selected folder for sync to Dynamic Media, select an asset folder, then on the toolbar, tap **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.* See also [Working with Selective Publish at the folder level in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Inherited]**: No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tool tip.<br>**[!UICONTROL Enable for sub-folders]**: Include everything in this sub-tree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.<br>**[!UICONTROL Disabled for sub-folders]**: Exclude everything in this sub-tree from syncing to Dynamic Media. |
 
    >[!NOTE]
    >
@@ -86,10 +84,19 @@ To configure dynamic media cloud services:
    >
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Tap **[!UICONTROL Save]**.
-1. To securely preview Dynamic Media content before it gets published, you will need to "allowlist" the AEM author instance to connect to Dynamic Media:
+1. Tap **[!UICONTROL Save]**. The new Dynamic Media password and configuration is saved. If you tapped **[!UICONTROL Cancel]** instead, no password update occurs.
+1. In the **[!UICONTROL Configuring Dynamic Media]** dialog box, tap **[!UICONTROL OK]** to begin the configuration.
+
+   >[!IMPORTANT]
+   >
+   >When the new Dynamic Media configuration finishes its setup, you will receive a status notification within AEM's Inbox.
+   >
+   >This Inbox notification informs you if the configuration was either successful or not.
+   > See [Troubleshooting a new Dynamic Media configuration](#troubleshoot-dm-config) and [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) for more information. 
+
+1. To securely preview Dynamic Media content before it gets published, you need to "allowlist" the AEM author instance to connect to Dynamic Media. To set this up, do the following:
 
     * Log on to your Dynamic Media Classic account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
     * On the navigation bar near the top right of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
@@ -102,6 +109,58 @@ To configure dynamic media cloud services:
 You are now finished with the basic configuration; you are ready to use Dynamic Media.
 
 If you want to further customize your configuration, you can optionally complete any of the tasks under [Configuring Advanced Settings in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### Troubleshooting a new Dynamic Media Configuration {#troubleshoot-dm-config}
+
+When a new Dynamic Media configuration finishes its setup, you will receive a status notification within AEM's Inbox. This notification informs you if the configuration was either successful or not, as seen in the following respective images from the Inbox.
+
+   ![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+   ![aeminboxfailure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+See also [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+**To troubleshoot a new Dynamic Media configuration**
+
+1. Near the upper-right corner of the AEM page, tap the bell icon, then tap **[!UICONTROL View All]**.
+1. On the Inbox page, tap the success notification to read an overview of the status and logs of the configuration.
+
+   If the configuration failed, tap the failure notification similar to the following screenshot.
+
+   ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. On the **[!UICONTROL DMSETUP]** page, review the configuration details that describe the failure. In particular, take note of any error messages or error codes. You will need to contact Adobe Care with this information.
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+
+### Changing the password to Dynamic Media {#change-dm-password}
+
+Password expiration in Dynamic Media is set to 100 years from the current system date.
+
+The password must contain at least one of each of the following:
+
+* Uppercase letter
+* Lowercase letter
+* Number
+* Special character: `# $ & . - _ : { }`
+
+If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
+
+The changed password is saved when you tap **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page.
+
+1. In AEM, tap the AEM logo to access the global navigation console.
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Edit.]**
+1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, directly below the **[!UICONTROL Password]** field, tap **[!UICONTROL Change Password.]**
+1. In the **[!UICONTROL Change Password]** dialog box, do the following:
+
+   * In the **[!UICONTROL New Password]** field, enter a new password.
+
+      Note that the **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
+
+   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]**
+
+1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK.]**
 
 ## (Optional) Configuring Advanced Settings in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -127,9 +186,9 @@ Setup and configuration tasks include the following:
 * [Publishing setup for Image Server](#publishing-setup-for-image-server)
 * [Configuring application general settings](#configuring-application-general-settings)
 * [Configuring color management](#configuring-color-management)
-* [Configuring asset processing](#configuring-asset-processing)
-* [Adding custom MIME types for unsupported formats](#adding-custom-mime-types-for-unsupported-formats)
-* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Editing MIME types for supported formats](#editing-mime-types-for-supported-formats)
+* [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
+<!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### Publishing setup for Image Server {#publishing-setup-for-image-server}
 
@@ -139,37 +198,24 @@ To configure Publish Setup: in Dynamic Media Classic, click **[!UICONTROL Setup 
 
 The Image Server screen establishes default settings for delivering images. See the UI screen for description of each setting.
 
-* **[!UICONTROL Request Attributes]** - These settings impose limits on images that can be delivered from the server.
-* **[!UICONTROL Default Request Attributes]** - These settings pertain to the default appearance of images.
-* **[!UICONTROL Common Thumbnail Attributes]** - These settings pertain to the default appearance of thumbnail images.
-* **[!UICONTROL Defaults for Catalog Fields]**- These settings pertain to the resolution and default thumbnail type of images.
-* **[!UICONTROL Color Management Attributes]** - These settings determine which ICC color profiles are used.
-* **[!UICONTROL Compatibility Attributes]** - This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
-* **[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[!UICONTROL Localization Support]**, see [Considerations when setting up localization of assets](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+**[!UICONTROL Request Attributes]** - These settings impose limits on images that can be delivered from the server.
+**[!UICONTROL Default Request Attributes]** - These settings pertain to the default appearance of images.
+**[!UICONTROL Common Thumbnail Attributes]** - These settings pertain to the default appearance of thumbnail images.
+**[!UICONTROL Defaults for Catalog Fields]**- These settings pertain to the resolution and default thumbnail type of images.
+**[!UICONTROL Color Management Attributes]** - These settings determine which ICC color profiles are used.
+**[!UICONTROL Compatibility Attributes]** - This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
+**[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[!UICONTROL Localization Support]**, see [Considerations when setting up localization of assets](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
 #### Configuring application general settings {#configuring-application-general-settings}
 
-To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings]**.
+To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings.]**
 
-* **[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by AEM support.
-
-* **[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder than the original or assets with a different filename extension from the original (such as JPG, TIF, or PNG).
-
-* **[!UICONTROL Overwrite in current folder, same base image name/extension]** - This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created.
-
-    >[!NOTE]
-    >
-    >To maintain consistency with AEM, always choose this setting: **Overwrite in current folder, same base image name/extension**
-
-* **[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location
-* **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
-
-* **[!UICONTROL Default Color Profiles]** - See [Configuring Color Management](#configuring-color-management) for additional information.
-
->[!NOTE]
->
->By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increasing or decreasing the number of image presets that display](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing or decreasing the number of viewer presets that display](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
->
+**[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by AEM support.
+**[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder than the original or assets with a different filename extension from the original (such as JPG, TIF, or PNG).
+**[!UICONTROL Overwrite in current folder, same base image name/extension]** - This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created. To maintain consistency with AEM, always choose **[!UICONTROL Overwrite in current folder, same base image name/extension]**.
+**[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location.
+**[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
+**[!UICONTROL Default Color Profiles]** - See [Configuring Color Management](#configuring-color-management) for additional information. By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increasing or decreasing the number of image presets that display](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing or decreasing the number of viewer presets that display](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Configuring color management {#configuring-color-management}
 
@@ -180,13 +226,14 @@ To configure the default color properties to enable color correction when reques
 1. [Log into Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials provided during provisioning. Navigate to **[!UICONTROL Setup > Application Setup]**.
 1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
 1. Scroll to the property you need to change, for example a property in the **[!UICONTROL Color Management Attributes]** area.
-
    You can set the following color correction properties:
 
-    * **[!UICONTROL CMYK Default Color Space]** - Name of the default CMYK color profile
-    * **[!UICONTROL Gray-Scale Default Color Space]** - Name of the default Gray color profile
-    * **[!UICONTROL RGB Default Color Space]** - Name of the default RGB color profile
-    * **[!UICONTROL Color Conversion Rendering Intent]** - Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default.
+   | Property | Description |
+   |---|---|
+   | CMYK Default Color Space | Name of the default CMYK color profile. |
+   | Gray-Scale Default Color Space | Name of the default Gray color profile. |
+   | RGB Default Color Space | Name of the default RGB color profile. |
+   | Color Conversion Rendering Intent | Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe recommends **[!UICONTROL relative]** as the default. |
 
 1. Tap **[!UICONTROL Save]**.
 
@@ -197,21 +244,21 @@ Doing so would do the following:
 * Enables color correction for RGB and CMYK images.
 * RGB images that do not have a color profile will be assumed to be in the *sRGB* color space.
 * CMYK images that do not have a color profile will be assumed to be in *WebCoated* color space.
-* Dynamic renditions that return RGB output, will return it in the *sRGB *color space.
+* Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * Dynamic renditions that return CMYK output, will return it in the *WebCoated* color space.
 
-#### Configuring asset processing {#configuring-asset-processing}
+#### Editing MIME types for supported formats {#editing-mime-types-for-supported-formats}
 
-You can define which asset types should be processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
+You can define which asset types are processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
 
 * Convert an Adobe PDF to an eCatalog asset.
 * Convert an Adobe Photoshop Document (.PSD) to a banner template asset for personalization.
 * Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated Postscript file (.EPS).
-* Note: Video Profiles and Imaging Profiles can be used to define processing of videos and images, respectively.
+* [Video Profiles](/help/assets/dynamic-media/video-profiles.md) and [Imaging Profiles](/help/assets/dynamic-media/image-profiles.md) can be used to define processing of videos and images, respectively.
 
 See [Uploading Assets](/help/assets/add-assets.md).
 
-**To configure asset processing**
+**To edit the MIME types for supported formats**
 
 1. In AEM, click the AEM logo to access the global navigation console, then click **[!UICONTROL General > CRXDE Lite]**.
 1. In the left rail, navigate to the following:
@@ -223,24 +270,23 @@ See [Uploading Assets](/help/assets/add-assets.md).
 1. Under the mimeTypes folder, select a mime type.
 1. On the right side of the CRXDE Lite page, in the lower portion:
 
-    * double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets will be synched to Dynamic Media for processing. If you wish to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
+   * Double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets will be synched to Dynamic Media for processing. If you want to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-    * double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given mime type.
+   * Double-click **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values you can use for a given mime type.
 
 1. Do one of the following:
-
-    * Repeat steps 3-4 to edit additional mime types.
-    * On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+   * Repeat steps 3-4 to edit additional mime types.
+   * On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to AEM.
 
-#### Adding custom MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
 You can add custom MIME types for unsupported formats in AEM Assets. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before `image_` and its enabled value is set to **[!UICONTROL false]**.
 
-**To add custom MIME types for unsupported formats**
+**To add MIME types for unsupported formats**
 
-1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console]**.
+1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -286,7 +332,7 @@ You can add custom MIME types for unsupported formats in AEM Assets. To ensure t
 
 1. Near the upper-left corner of the CRXDE Lite page, click **[!UICONTROL Save All]**.
 
-#### Creating batch set presets to auto-generate Image Sets and Spin Sets {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
+<!-- #### Creating batch set presets to auto-generate Image Sets and Spin Sets {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
 Use batch set presets to automate the creation of image sets or spin sets while assets are uploaded to Dynamic Media.
 
@@ -450,7 +496,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 1. In the Details panel, click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Active]** next to the new preset name.
 
-   Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set.
+   Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set. -->
 
 ### (Optional) Tuning the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
@@ -473,7 +519,7 @@ Adobe recommends using the following "tuned" job parameters for PDF, Postscript,
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### Updating the Granite Transient Workflow queue {#updating-the-granite-transient-workflow-queue}
 
@@ -489,9 +535,11 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+   You can increase **[!UICONTROL Maximum Parallel Jobs]** to adequately support heavy upload of files to Dynamic Media. The exact value is dependent on hardware capacity. In certain scenarios&ndash;that is, an initial migration or a one-time bulk upload&ndash;you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) may have negative effects on other concurrent activities. As such, you should test and adjust the value based on your particular use case.
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -501,7 +549,7 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
-**To update the Granite Workflow queue**
+To update the Granite Workflow queue:
 
 1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
 
@@ -523,7 +571,7 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
 The Scene7 Upload Connection setting synchronizes AEM assets to Dynamic Media Classic servers.
 
-**To update the Scene7 upload connection**
+To update the Scene7 upload connection:
 
 1. Navigate to `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. In the **[!UICONTROL Number of connections]** field and/or the **[!UICONTROL Active job timeout]** field, change the number as desired.
@@ -536,7 +584,7 @@ The Scene7 Upload Connection setting synchronizes AEM assets to Dynamic Media Cl
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Tap **[!UICONTROL Save]**.
+1. Tap **[!UICONTROL Save.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
@@ -640,4 +688,4 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-
+   

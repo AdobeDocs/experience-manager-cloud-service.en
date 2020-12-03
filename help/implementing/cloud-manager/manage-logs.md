@@ -7,9 +7,9 @@ description: Manage Logs - Cloud Service
 
 Users can access a list of available log files for the selected environment using the Environment Card.  Users can access a list of available log files for the selected environment. 
 
-These files can be downloaded through the UI, either from the **Overview**  page.
+These files can be downloaded through the UI, either from the **Overview**  page:
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 Or, the **Environments** page:
 
@@ -18,10 +18,10 @@ Or, the **Environments** page:
 >[!NOTE]
 >Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
 
-  ![](assets/manage-logs3.png)
+  ![](assets/download-logs2.png)
 
 
-## Logs through API {#logs-thorugh-api}
+## Logs through API {#logs-through-api}
 
 In addition to downloading logs through the UI, logs will be available through the API and the Command Line Interface. 
 

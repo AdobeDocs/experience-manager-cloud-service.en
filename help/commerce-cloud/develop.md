@@ -1,6 +1,12 @@
 ---
 title: Develop AEM Commerce for AEM as a Cloud Service
-description: Develop AEM Commerce for AEM as a Cloud Service
+description: Learn how to generate a commerce-enabled AEM project using the AEM project archetype. Learn how to build and deploy the project to a local development environment using the AEM as a Cloud Service SDK.
+topics: Commerce, Development
+feature: Commerce Integration Framework
+version: cloud-service
+doc-type: tutorial
+kt: 5826
+thumbnail: 39476.jpg
 ---
 
 # Develop AEM Commerce for AEM as a Cloud Service {#develop}
@@ -45,18 +51,18 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
 For local CIF Add-on development using the AEM as a Cloud Service SDK following steps:
 
 1. Get the latest AEM as a Cloud Service SDK
-2. Unpack the AEM .jar to create the `crx-quickstart` folder, run:
+1. Unpack the AEM .jar to create the `crx-quickstart` folder, run:
 
     ```bash
     java -jar <jar name> -unpack
     ```
 
-3. Create a `crx-quickstart/install` folder
-4. Copy the correct Sling Feature archive file of the CIF add-on into the `crx-quickstart/install` folder.
+1. Create a `crx-quickstart/install` folder
+1. Copy the correct Sling Feature archive file of the CIF add-on into the `crx-quickstart/install` folder.
 
     The CIF add-on zip file contains two Sling Feature archive `.far` files. Make sure to use the correct one for AEM Author or AEM Publish, depending on how you plan to run the local AEM as a Cloud Service SDK.
 
-5. Create a local OS environment variable named `COMMERCE_ENDPOINT` holding the Magento GraphQL endpoint.
+1. Create a local OS environment variable named `COMMERCE_ENDPOINT` holding the Magento GraphQL endpoint.
 
     Example Mac OSX:
 
@@ -72,7 +78,48 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
     This variable must be set up for the AEM as a Cloud Service environment as well.
 
-6. Start the AEM as a Cloud Service SDK
+    For more information on variables, see [Configuring OSGi for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+
+1. (Optional) To enable staged catalog features, you need to create an integration token for your Magento instance. Please follow the steps at [Getting Started](./getting-started.md#staging) to create the token.
+
+    Set an OSGi secret  with the name `COMMERCE_AUTH_HEADER` to the following value:
+
+    ```xml
+    Authorization: Bearer <Access Token>
+    ```
+
+    For more information on secrets, see [Configuring OSGi for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+
+1. Start the AEM as a Cloud Service SDK
+
+1. Start the local GraphQL proxy server
+
+    To make the Magento GraphQL endpoint available locally for the CIF add-on and the CIF components use the following command. The GraphQL endpoint will then be available at `http://localhost:3002/graphql`.
+    Example Mac OSX:
+
+    ```bash
+    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
+    ```
+
+    Example Windows:
+
+    ```bash
+    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
+    ```
+
+    The argument `--proxyPartial` needs to receive an empty string.
+    
+    You can test the local GraphQL proxy by pointing a GraphQL query tool to `http://localhost:3002/graphql` and test a few queries.
+ 
+1. Login to AEM SDK and configure CIF to use the local GraphQL proxy server.
+ 
+    Navigate to the CIF Cloud Service configuration (Tools > Cloud Services > CIF Configuration). Open the properties view of the config used by your project.
+    
+    For the `GraphQL Proxy Path` property use the local proxy server endpoint `http://localhost:3002/graphql`. Save the configuration.
+
+>[!NOTE]
+>
+>Do not push the configuration of step 8 into the project repo. This config is only required for a local development setup. AEM as a Cloud Service environments are already set up with the GraphQL proxy during the onboarding.
 
 Verify the setup via OSGI console: `http://localhost:4502/system/console/osgi-installer`. The list should include the CIF add-on related bundles, content-package, and OSGI configurations as defined in the feature model file.
 

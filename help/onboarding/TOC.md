@@ -20,10 +20,33 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
     + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
     + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
+  + Using Cloud Manager {#using-cloud-manager}
+    + [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
+    + [Configuring your CI/CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
+    + [Deploying your Code](/help/implementing/cloud-manager/deploy-code.md)
+  + Understanding your Test Results {#test-results}
+    + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
+    + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
+    + [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+    + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
+    + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)  
+  + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
+  + [Understanding Notifications](/help/implementing/cloud-manager/notifications.md)
   + Creating an AEM Application Project {#create-application-project}
     + [Using the Wizard](getting-access-to-aem-in-cloud/using-the-wizard.md)
     + [Setting up your Project](getting-access-to-aem-in-cloud/setting-up-project.md)
     + [Understanding the Build Environment](getting-access-to-aem-in-cloud/build-environment-details.md)
+  + Release Notes for Cloud Manager {#release-notes-cloud-manager}
+    + [Current Release Notes (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Release Notes for 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+    + [Release Notes for 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+    + [Release Notes for 2020.8.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+    + [Release Notes for 2020.7.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+    + [Release Notes for 2020.6.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+    + [Release Notes for 2020.5.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+    + [Release Notes for 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+    + [Release Notes for 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+    + [Release Notes for 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
   + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)
@@ -31,6 +54,8 @@ user-guide-description: This guide provides an summary of how to get started wit
 + Accessibility {#accessibility}
   + [AEM as a Cloud Service and the Web Accessibility Guidelines](accessibility/web-accessibility.md)
   + [A Quick Guide to WCAG 2.1](accessibility/quick-guide-wcag.md)
++ Migration Methodology {#migration-methodology}
+  + [Migration to Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
   + [SEO and URL Management](best-practices/seo-and-url-management.md)
 + [Overview of the Tools consoles](tools-consoles.md)

@@ -1,5 +1,5 @@
 ---
-title: Manage your digital assets in Experience Manager
+title: Manage digital assets
 description: Learn about various asset management and editing methods.
 contentOwner: AG
 mini-toc-levels: 1
@@ -35,7 +35,7 @@ See [add digital assets to Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. See [how to do OSGi configurations](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). The duplication detection is based on the unique `dam:sha1` value stored at `jcr:content/metadata/dam:sha1`. It means that duplicate assets are detected even if the filenames are different.
+If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. See [how to do OSGi configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). The duplication detection is based on the unique `dam:sha1` value stored at `jcr:content/metadata/dam:sha1`. It means that duplicate assets are detected even if the filenames are different.
 
 ![Detect duplicate asset OSGi configuration](assets/duplicate-detection.png)
 

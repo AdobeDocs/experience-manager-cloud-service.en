@@ -21,24 +21,26 @@ This section describes how to structure the AEM as a Cloud Service Apache and Di
 
 The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and provide:
 
-* A vanilla file structure containing the configuration files to include in a maven project for dispatcher;
-* Tooling for customers to validate a dispatcher configuration locally;
+* A vanilla file structure containing the configuration files to include in a maven project for dispatcher.
+* Tooling for customers to validate that the dispatcher configuration includes only AEM as a Cloud Service supported directives.        Additionally, the tooling also validates that the syntax is correct so apache can start successfully.
 * A Docker image that brings up the dispatcher locally.
 
 ## Downloading and extracting the Tools {#extracting-the-sdk}
 
-The Dispatcher Tools can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal . Note that access to the SDK listings is limited to those with AEM Managed Services or AEM as a Cloud Service environments. Any new configuration available in that new dispatcher Tools version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.  
+The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new dispatcher Tools version, can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
 
-**For macOS and Linux**, download the shell script to a folder on your machine, make it executable and run it. It will self extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
+Unzip the SDK, which bundles Dispatcher Tools for both macOS/Linux and Windows.
+
+**For macOS/Linux**, make the dispatcher tool artifact executable and run it. It will self extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**For Windows**, download the zip archive and extract it.
+**For Windows**, extract the Dispatcher Tooling zip archive.
 
 ## File Structure {#file-structure}
 
@@ -187,13 +189,13 @@ Default host globbing suitable for a standard project. If you need customization
 
 The sections below describe how to validate the configuration locally so it can pass the associated quality gate in Cloud Manager when deploying an internal release.
 
-## Local validation of Dispatcher configuration {#local-validation-of-dispatcher-configuration}
+## Local validation of supported directives in Dispatcher configuration {#local-validation-of-dispatcher-configuration}
 
 The validation tool is available in the SDK at `bin/validator` as a Mac OS, Linux, or Windows binary, allowing customers to run the same validation that Cloud Manager will perform while building and deploying a release.
 
 It is invoked as: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-The tool validates the Apache and dispatcher configuration. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only allowlisted directives are used. The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
+The tool validates that the dispatcher configuration is using the appropriate directives supported by AEM as a Cloud service by scanning all files with pattern `conf.d/enabled_vhosts/*.vhost`. The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
 
 ```
 
@@ -214,7 +216,6 @@ The table below shows the supported apache modules:
 | `mod_access_compat` | [https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) |
 | `mod_alias` | [https://httpd.apache.org/docs/2.4/mod/mod_alias.html](https://httpd.apache.org/docs/2.4/mod/mod_alias.html) |
 | `mod_allowmethods` | [https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html](https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html) |
-| `mod_auth_basic` | [https://httpd.apache.org/docs/2.4/mod/mod_auth_basic.html](https://httpd.apache.org/docs/2.4/mod/mod_auth_basic.html) |
 | `mod_authn_core` | [https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html) |
 | `mod_authn_file` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html) |
 | `mod_authz_core` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html) |
@@ -256,8 +257,6 @@ Cloud manager validator 1.0.4
 ```
 
 Note that the validation tool reports only the prohibited use of Apache directives that have not been allowlisted. It does not report syntactical or semantical problems with your Apache configuration, as this information is only available to Apache modules in a running environment.
-
-When no validation failures are reported, your configuration is ready for deployment.
 
 Presented below are troubleshooting techniques for debugging common validation errors that are output by the tool:
 
@@ -352,13 +351,45 @@ This message indicates that your configuration has the deprecated version 1 layo
 Apache configuration and files with `ams_` prefixes. While this is still supported for backward
 compatibility you should switch to the new layout.
 
+## Local validation of dispatcher configuration syntax so that apache httpd can start {#local-validation}
+
+Once it has been established that the dispatcher module configuration includes only supported directives, you should check that the syntax is correct so that apache can start up. In order to test this, the docker must be installed locally. And note that it's not necessary for AEM to be running.
+
+Use the `validate.sh` script as shown below:
+
+```
+
+$ validate.sh src/dispatcher
+Phase 1: Dispatcher validator
+2019/06/19 16:02:55 No issues found
+Phase 1 finished
+Phase 2: httpd -t validation in docker image
+Running script /docker_entrypoint.d/10-create-docroots.sh
+Running script /docker_entrypoint.d/20-wait-for-backend.sh
+Waiting until aemhost is available
+aemhost resolves to xx.xx.xx.xx
+Running script /docker_entrypoint.d/30-allowed-clients.sh
+# Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
+/farms {
+...
+}
+Syntax OK
+Phase 2 finished
+
+```
+
+The script does the following:
+
+1. It runs the validator from the previous section to ensure that only the supported directives are included. If the configuration isn't valid, the script will fail.
+2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment
+
+During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
+
 ## Testing your Apache and Dispatcher configuration locally {#testing-apache-and-dispatcher-configuration-locally}
 
-It is also possible to test drive your Apache and Dispatcher configuration locally. It requires Docker to be installed locally and your configuration to pass the validation as described above.
+It is also possible to test drive your Apache and Dispatcher configuration locally. It requires the docker to be installed locally and your configuration to pass the validation as described above.
 
-By using the "`-d`" parameter, the validator outputs a folder with all the configuration files needed by the dispatcher.
-
-Then, the `docker_run.sh` script can point to that folder, starting the container with your configuration.
+Execute the validator tool (note that it is different from the `validator.sh` mentioned earlier), by using the `-d` parameter which outputs a folder with all the dispatcher configuration files. Then execute the `docker_run.sh` script, passing that folder as an argument. By providing the port number (here: 8080) to expose the dispatcher endpoint, a Docker container is started, running the dispatcher with your configuration.
 
 ```
 
@@ -379,7 +410,37 @@ This will start the dispatcher in a container with its backend pointing to an AE
 
 ## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
 
-Log levels are defined by the variables `DISP_LOG_LEVEL` and `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s`. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
+The following strategy can be used to increase the log output for the dispatcher module and see the results of the `RewriteRule` evaluation in both local and cloud environments.
+
+Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `REWRITE_LOG_LEVEL`. They can be set in the file `conf.d/variables/global.vars`. Its relevant part follows:
+
+```
+
+# Log level for the dispatcher
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1
+# Default value: Warn
+#
+# Define DISP_LOG_LEVEL Warn
+ 
+# Log level for mod_rewrite
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
+# Default value: Warn
+#
+# To debug your RewriteRules, it is recommended to raise your log
+# level to Trace2.
+#
+# More information can be found at:
+# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
+#
+# Define REWRITE_LOG_LEVEL Warn
+
+```
+
+When running dispatcher locally, logs are printed directly to the terminal output. Most of the time, you want these logs to be in DEBUG, which can be done by passing the Debug level as a parameter when running Docker. For example: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+
+Logs for cloud environments are be exposed through the logging service available in Cloud Manager.
 
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 

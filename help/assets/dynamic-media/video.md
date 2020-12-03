@@ -678,9 +678,9 @@ To create the metadata processing profile, you are first going to copy values fr
 
 To automate the setting of default YouTube properties for your uploaded videos:
 
-1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
 1. Click **[!UICONTROL default]**. (Do not add a checkmark to the selection box to the left of "default".)
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[Edit]**.
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[!UICONTROL Edit]**.
 1. On the Metadata Schema Editor page, click the **[!UICONTROL Advanced]** tab.
 1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Category]**.
 1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:

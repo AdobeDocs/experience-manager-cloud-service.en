@@ -9,46 +9,32 @@ description: Deploying to AEM as a Cloud Service
 
 The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service environments.
 
-The update of the AEM version is always a separate deployment event from pushing custom code. Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on top of. AEM version updates that happen after that, which will be frequent when compared to Managed Services today, are automatically applied. They are intended to be backwards compatible with the customer code already deployed.
-
-The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
-
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed in another way, custom code releases should be tested against the AEM version that is on production since that is what it will be deployed on the top. AEM version updates that happen after that, which will be frequent and are automatically applied. They are intended to be backward compatible with the customer code already deployed.
 
 The rest of this document will describe how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
 >[!NOTE]
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 
-
-## AEM version updates {#version-updates}
-
-It is key to understand that AEM will be updated frequently, potentially as often as once a day, and will focus on bug fixes and performance enhancements. The update will happen transparently and without causing downtime. The update is intended to be backwards compatible meaning you should not need to modify custom code. In fact, AEM updates are independent events from customer code deployments. The AEM update is deployed on top of your last successful code push, which implying that any changes committed since the last push to production will not be deployed.
-
->[!NOTE]
->
->If custom code was pushed to staging and then rejected by you, the next AEM update will remove those changes to reflect the git tag of the last successful customer release to production.
-
-On a regular frequency, a feature release will take place, focusing on feature additions and enhancements that will impact more substantially the user experience compared to the daily releases. A feature release is triggered not by the deployment of a large change set, but rather by the flip of a release toggle, activating code that has been accumulating over the course of days or weeks through the daily updates.
-
-Health checks are used to monitor the health of the application. If these checks fail during an AEM as a Cloud Service update, the release will not proceed for that environment and Adobe will investigate why the update caused this unexpected behavior.
-
-### Composite Node Store {#composite-node-store}
-
-As mentioned above, updates in most cases will incur zero downtime, including for the author, which is a cluster of nodes. Rolling updates are possible due to the "composite node store" feature in Oak. This feature allows AEM to reference multiple repositories simultaneously. In a rolling deployment, the new Green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content`, `/conf`, `/etc` and others. Because both the Blue and the Green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
-
 ## Customer Releases {#customer-releases}
 
 ### Coding against the right AEM version {#coding-against-the-right-aem-version}
 
-For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are automatically updated to the latest version of AEM more often, so custom code for internal releases should be built against those newer AEM interfaces.
+For previous AEM solutions, the most current AEM version changed infrequently (roughly annually with quarterly service packs) and customers would update the production instances to the latest quickstart on their own time, referencing the API Jar. However, AEM as a Cloud Service applications are automatically updated to the latest version of AEM more often, so custom code for internal releases should be built against the latest AEM version.
 
 Like for existing non-cloud AEM versions, a local, offline development based on a specific quickstart will be supported and is expected to be the tool of choice for debugging in the majority of cases.
 
 >[!NOTE]
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/overview.md).
+In order to develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/disp-overview.md).
+
+The following video provides a high level overview on how to deploy code to AEM as a Cloud Service:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
+>[!NOTE]
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
 
 ## Deploying Content Packages via Cloud Manager and Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -242,19 +228,19 @@ Like AEM updates, customer releases are deployed using a rolling deployment stra
 
 ## Indexes {#indexes}
 
-New or modified indexes will cause an additional indexing or re-indexing step before the new (Green) version can take on traffic. Details about index management in Skyline can be found in [this article](/help/operations/indexing.md). You can check the status of the indexing job on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
+New or modified indexes will cause an additional indexing or re-indexing step before the new (Green) version can take on traffic. Details about index management in AEM as a Cloud Service can be found in [this article](/help/operations/indexing.md). You can check the status of the indexing job on the Cloud Manager build page and will receive a notification when the new version is ready to take traffic.
 
 >[!NOTE]
 >
 >The time needed for a rolling deployment will vary depending on the size of the index, since the Green version cannot accept traffic until the new index has been generated.
 
-At this time, Skyline does not work with index management tools such as ACS Commons Ensure Oak Index tool.
+At this time, AEM as a Cloud Service does not work with index management tools such as ACS Commons Ensure Oak Index tool.
 
 ## Replication {#replication}
 
 The publication mechanism is backwards compatible with the [AEM Replication Java APIs](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-In order to develop and test with replication with the cloud ready AEM Quickstart, the classic replication capabilities needs to be used with an Author/Publish setup. In the case of the UI entry point on AEM Author has been removed for the cloud, users would go to `http://localhost:4502/etc/replication` for configuration.
+In order to develop and test with replication with the cloud ready AEM quickstart, the classic replication capabilities needs to be used with an Author/Publish setup. In the case of the UI entry point on AEM Author has been removed for the cloud, users would go to `http://localhost:4502/etc/replication` for configuration.
 
 ## Backwards Compatible Code for Rolling Deployments {#backwards-compatible-code-for-rolling-deployments}
 
