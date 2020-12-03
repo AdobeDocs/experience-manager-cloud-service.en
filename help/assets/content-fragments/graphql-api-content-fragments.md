@@ -626,3 +626,7 @@ Questions that have arisen:
    * **A**: 
      "*The AEM GraphQL API offers total control on the JSON output, and is an industry standard for querying content. 
      Moving forward, AEM is planning to invest in the AEM GraphQL API.*"
+
+## Tutorial - Getting Started with AEM Headless and GraphQL {#tutorial}
+
+Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM’s GraphQL APIs and consumed by an external app, in a headless CMS scenario.
