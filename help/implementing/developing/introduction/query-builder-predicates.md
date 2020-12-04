@@ -127,366 +127,253 @@ It does not support filtering.
 
 #### Properties {#properties-3}
 
-* **property**
-
-  relative path to a `DATE` property, for example `jcr:lastModified`
-
-* **lowerBound**
-
-  lower date bound to check property for, for example `2014-10-01`
-
-* **lowerOperation**
-
-  " `>`" (newer) or " `>=`" (at or newer), applies to the `lowerBound`. The default is " `>`".
-
-* **upperBound**
-
-  upper bound to check property for, for example `2014-10-01T12:15:00`
-
-* **upperOperation**
-
-  " `<`" (older) or " `<=`" (at or older), applies to the `upperBound`. The default is " `<`".
-
-* **timeZone**
-
-  ID of timezone to use when it is not given as an ISO-8601 date string. The default is the default timezone of the system.
+* **`property`** - relative path to a `DATE` property, for example `jcr:lastModified`
+* **`lowerBound`** - lower date bound to check property for, for example `2014-10-01`
+* **`lowerOperation`** - `>` (newer) or `>=` (at or newer), applies to the `lowerBound`. The default is `>`
+* **`upperBound`** - upper bound to check property for, for example `2014-10-01T12:15:00`
+* **`upperOperation`** - `<` (older) or `<=` (at or older), applies to the `upperBound`. The default is `<`
+* **`timeZone`** - ID of timezone to use when it is not given as an ISO-8601 date string. The default is the default timezone of the system.
 
 ### excludepaths {#excludepaths}
 
-Excludes nodes from the result where their path matches a regular expression.
+This predicate excludes nodes from the result where their path matches a regular expression.
 
 This is a filtering-only predicate and cannot leverage a search index.
 
-Does not support facet extraction.
+It does not support facet extraction.
 
 #### Properties {#properties-4}
 
-* **excludepaths**
-
-  regular expression matched against result paths, excluding matching ones from the result.
+* **`excludepaths`** - regular expression matched against result paths, excluding matching ones from the result.
 
 ### fulltext {#fulltext}
 
-Searches for terms in the fulltext index.
+This predicate searches for terms in the fulltext index.
 
-Does not support filtering.
+It does not support filtering.
 
-Does not support facet extraction.
+It does not support facet extraction.
 
 #### Properties {#properties-5}
 
-* **fulltext**
-
-  the fulltext search term(s)
-
-* **relPath**
-
-  the relative path to search in the property or subnode. This property is optional.
-
+* **`fulltext`** - the fulltext search term(s)
+* **`relPath`** - the relative path to search in the property or subnode. This property is optional.
 
 ### hasPermission {#haspermission}
 
-Restricts the result to items where the current session has the specified [JCR privileges.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+This predicate restricts the result to items where the current session has the specified [JCR privileges.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 This is a filtering-only predicate and cannot leverage a search index. It does not support facet extraction.
 
 #### Properties {#properties-7}
 
-* **hasPermission**
-
-  comma-separated JCR privileges that the current user session must ALL have for the node in question; for example `jcr:write`, `jcr:modifyAccessControl`
+* **`hasPermission`** - comma-separated JCR privileges that the current user session must ALL have for the node in question; for example `jcr:write`, `jcr:modifyAccessControl`
 
 ### language {#language}
 
-Finds CQ pages in a specific language. This looks at both the page language property and the page path which often includes the language or locale in a top level site structure.
+This predicate finds AEM pages in a specific language. This looks at both the page language property and the page path which often includes the language or locale in a top level site structure.
 
 This is a filtering-only predicate and cannot leverage a search index.
 
-Supports facet extraction. Will provide buckets for each unique language code.
+It supports facet extraction and provides buckets for each unique language code.
 
 #### Properties {#properties-8}
 
-* **language**
-
-  ISO language code, for example " `de`"
+* **`language`** - ISO language code, for example `de`
 
 ### mainasset {#mainasset}
 
-Checks if a node is a DAM main asset and not a sub asset. This is basically every node not inside a "subassets" node. Note that this does not check for the `dam:Asset` node type. To use this predicate, simply set " `mainasset=true`" or " `mainasset=false`", there are no further properties.
+This predicate checks if a node is a DAM main asset and not a sub asset. This is basically every node not inside a sub assets node. Note that this does not check for the `dam:Asset` node type. To use this predicate, simply set `mainasset=true` or `mainasset=false`. There are no further properties.
 
 This is a filtering-only predicate and cannot leverage a search index.
 
-Supports facet extraction. Will provide 2 buckets for main and subassets.
+It supports facet extraction and provides two buckets for main and sub assets.
 
 #### Properties {#properties-9}
 
-* **mainasset**
-
-  boolean, " `true`" for main assets, " `false`" for sub assets
+* **`mainasset`** - boolean, `true` for main assets, `false` for sub assets
 
 ### memberOf {#memberof}
 
-Finds items that are member of a specific [sling resource collection](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+This predicate finds items that are member of a specific [sling resource collection](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-This is a filtering-only predicate and cannot leverage a search index. Does not support facet extraction.
+This is a filtering-only predicate and cannot leverage a search index.
+
+It does not support facet extraction.
 
 #### Properties {#properties-10}
 
-* **memberOf**
-
-  path of Sling resource collection
+* **`memberOf`** - path of Sling resource collection
 
 ### nodename {#nodename}
 
-Matches on JCR node names.
+This predicate matches on JCR node names.
 
-Supports facet extraction. Will provide buckets for each unique node name (filename).
+It supports facet extraction and provides buckets for each unique node name (filename).
 
 #### Properties {#properties-11}
 
-* **nodename**
-
-  node name pattern that allows wildcards: `*` = any or no char, `?` = any char, `[abc]` = only chars in brackets
+* **`nodename`** - node name pattern that allows wildcards: `*` = any or no char, `?` = any char, `[abc]` = only chars in brackets
 
 ### notexpired {#notexpired}
 
-Matches items by checking if a JCR DATE property is greater or equal than the current server time. This can be used to check on an " `expiresAt`" like date property and limit to only the ones that have not expired yet ( `notexpired=true`) or that have expired already ( `notexpired=false`).
+This predicate matches items by checking if a JCR date property is greater or equal than the current server time. This can be used to check on an `expiresAt` value and limit results to only those that have not yet expired (`notexpired=true`) or that have expired already (`notexpired=false`).
 
-Does not support filtering.
+It does not support filtering.
 
-Supports facet extraction in the same way as the daterange predicate.
+It supports facet extraction in the same way as the [`daterange`](#daterange) predicate.
 
 #### Properties {#properties-12}
 
-* **notexpired**
-
-  boolean, " `true`" for not expired yet (date in the future or equal), " `false`" for expired (date in the past) (required)
-
-* **property**
-
-  relative path to the `DATE` property to check (required)
+* **`notexpired`** - boolean, `true` for not yet expired (date in the future or equal), `false` for expired (date in the past) (required)
+* **`property`** - relative path to the `DATE` property to check (required)
 
 ### path {#path}
 
-Searches within a given path.
+This predicate searches within a given path.
 
-Does not support facet extraction.
+It does not support facet extraction.
 
 #### Properties {#properties-14}
 
-* **path**
-
-  path pattern; depending on exact, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) (exact=false, default) or only an exact path matches, which can include wildcards ( `*`); if self is set, the entire subtree including the base node will be searched
-
-* **exact**
-
-  if `exact` is true/on, the exact path must match, but it can contain simple wildcards ( `*`), that match names, but not " `/`"; if it is false (default) all descendents are included (optional)
-
-* **flat**
-
-  searches only the direct children (like appending " `/*`" in xpath) (only used if ' `exact`' is not true, optional)
-
-* **self**
-
-  searches the subtree but includes the base node given as path (no wildcards)
+* **`path`** - This defines the path pattern.
+  * Depending on the `exact` property, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) or only an exact path matches, which can include wildcards ( `*`).
+    * Defaults to `true`
+  * If the `self`property is set, the entire subtree including the base node will be searched.
+* **`exact`** - if `exact` is `true`, the exact path must match, but it can contain simple wildcards ( `*`), that match names, but not " `/`"; if it is `false` (default) all descendants are included (optional)
+* **`flat`** - searches only the direct children (like appending `/*` in xpath) (only used if ' `exact`' is not true, optional)
+* **`self`** - searches the subtree but includes the base node given as path (no wildcards)
 
 ### property {#property}
 
-Matches on JCR properties and their values.
+This predicate matches on JCR properties and their values.
 
-Supports facet extraction. Will provide buckets for each unique property value in the results.
+It supports facet extraction and provides buckets for each unique property value in the results.
 
 #### Properties {#properties-15}
 
-* **property**
-
-  relative path to property, for example `jcr:title`
-
-* **value**
-
-  value to check property for; follows the JCR property type to string conversions
-
-* **N_value**
-
-  use `1_value`, `2_value`, ... to check for multiple values (combined with `OR` by default, with `AND` if and=true) (since 5.3)
-
-* **and**
-
-  set to true for combining multiple values ( `N_value`) with AND (since 5.3)
-
-* **operation**
-
-  " `equals`" for exact match (default), " `unequals`" for unequality comparison, " `like`" for using the `jcr:like` xpath function (optional), " `not`" for no match (eg. " `not(@prop)`" in xpath, value param will be ignored) or " `exists`" for existence check (value can be true - property must exist, the default - or false - same as " `not`")
-
-* **depth**
-
-  number of wildcard levels underneath which the property/relative path can exist (for instance, `property=size depth=2` will check node/size, node/&ast;/size and node/&ast;/&ast;/size)
+* **`property`** - relative path to property, for example `jcr:title`
+* **`value`** - value to check property for; follows the JCR property type to string conversions
+* **`N_value`** - use `1_value`, `2_value`, ... to check for multiple values (combined with `OR` by default, with `AND` if `and=true`)
+* **`and`** - set to `true` for combining multiple values ( `N_value`) with `AND`
+* **`operation`**
+  * `equals` for exact match (default)
+  * `unequals` for inequality comparison
+  * `like` for using the `jcr:like` xpath function (optional)
+  * `not` for no match (e.g. `not(@prop)` in xpath, value param will be ignored)
+  * `exists` for existence check
+    * `true` the property must exist
+    * `false` is the same as `not` and is the default
+* **`depth`** - number of wildcard levels underneath which the property/relative path can exist (for instance, `property=size depth=2` will check `node/size`, `node/*/size` and `node/*/*/size`)
 
 ### rangeproperty {#rangeproperty}
 
-Matches a JCR property against an interval. This applies to properties with linear types such as `LONG`, `DOUBLE` and `DECIMAL`. For `DATE` please see the daterange predicate that has optimized date format input.
+This predicate matches a JCR property against an interval. This applies to properties with linear types such as `LONG`, `DOUBLE` and `DECIMAL`. For `DATE` please see the [`daterange`](#daterange) predicate that has optimized date format input.
 
-You can define a lower bound and an upper bound or only one of them. The operation (eg. "lesser than" or "lesser or equals") can also be specified for lower and upper bound individually.
+You can define a lower bound, an upper bound, or both. The operation (e.g. "lesser than" or "lesser than or equals") can also be specified for lower and upper bound individually.
 
-Does not support facet extraction.
+It does not support facet extraction.
 
 #### Properties {#properties-16}
 
-* **property**
-
-  relative path to property
-
-* **lowerBound**
-
-  lower bound to check property for
-
-* **lowerOperation**
-
-  " `>`" (default) or " `>=`", applies to the `lowerValue`
-
-* **upperBound**
-
-  upper bound to check property for
-
-* **upperOperation**
-
-  " `<`" (default) or " `<=`", applies to the `lowerValue`
-
-* **decimal**
-
-  " `true`" if the checked property is of type Decimal
+* **`property`** - relative path to property
+* **`lowerBound`** - lower bound to check property
+* **`lowerOperation`** - `>` (default) or `>=`, applies to the `lowerValue`
+* **`upperBound`** - upper bound to check property
+* **`upperOperation`** - `<` (default) or `<=`, applies to the `lowerValue`
+* **`decimal`** - `true` if the checked property is of type Decimal
 
 ### relativedaterange {#relativedaterange}
 
-Matches `JCR DATE` properties against a date/time interval using time offsets relative to the current server time. You can specify `lowerBound` and `upperBound` using either a millisecond value or the bugzilla syntax `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years). Prefix with " `-`" to indicate a negative offset before the current time. If you only specify `lowerBound` or `upperBound`, the other one will default to 0, meaning the current time.
+This predicate matches `JCR DATE` properties against a date/time interval using time offsets relative to the current server time. You can specify `lowerBound` and `upperBound` using either a millisecond value or the Bugzilla syntax `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years). Prefix with `-` to indicate a negative offset before the current time. If you only specify `lowerBound` or `upperBound`, the other one will default to `0`, representing the current time.
 
 For example:
 
-* `upperBound=1h` (and no `lowerBound`) would select anything in the next hour
-* `lowerBound=-1d` (and no `upperBound`) would select anything in the last 24 hours
-* `lowerBound=-6M` and `upperBound=-3M` would select anything 6 months to 3 months old
-* `lowerBound=-1500` and `upperBound=5500` would select anything between 1500 milliseconds in the past and 5500 milliseconds in the future
-* `lowerBound=1d` and `upperBound=2d` would select anything in the day after tomorrow
+* `upperBound=1h` (and no `lowerBound`) selects anything in the next hour
+* `lowerBound=-1d` (and no `upperBound`) selects anything in the last 24 hours
+* `lowerBound=-6M` and `upperBound=-3M` selects anything in the last 3 to six months
+* `lowerBound=-1500` and `upperBound=5500` selects anything between 1500 milliseconds old and 5500 milliseconds in the future
+* `lowerBound=1d` and `upperBound=2d` selects anything the day after tomorrow
 
 Note that it does not take leap years into consideration and all months are 30 days.
 
-Does not support filtering.
+It does not support filtering.
 
-Supports facet extraction in the same way as the daterange predicate.
+It supports facet extraction in the same way as the [`daterange`](#daterange) predicate.
 
 #### Properties {#properties-17}
 
-* **upperBound**
-
-  upper date bound in milliseconds or `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years) relative to current server time, use "-" for negative offset
-
-* **lowerBound**
-
-  lower date bound in milliseconds or `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years) relative to current server time, use "-" for negative offset
-
+* **`upperBound`** - upper date bound in milliseconds or `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years) relative to current server time, use `-` for negative offset
+* **`lowerBound`** - lower date bound in milliseconds or `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years) relative to current server time, use `-` for negative offset
 
 ### savedquery {#savedquery}
 
-Includes all predicates of a persisted querybuilder query into the current query as a sub group predicate.
+This predicate includes all predicates of a persisted Query Builder query into the current query as a sub group predicate.
 
 Note that this will not execute an extra query but extend the current query.
 
-Queries can be persisted programmatically using `QueryBuilder#storeQuery()`. The format can be either a multi-line String property or a `nt:file` node that contains the query as a text file in Java properties format.
+Queries can be persisted programmatically using `QueryBuilder#storeQuery()`. The format can be either a multi-line `String` property or an `nt:file` node that contains the query as a text file in Java properties format.
 
-Does not support facet extraction for the predicates of the saved query.
+It does not support facet extraction for the predicates of the saved query.
 
 #### Properties {#properties-19}
 
-* **savedquery**
-
-  path to the saved query (String property or `nt:file` node)
+* **`savedquery`** - path to the saved query (`String` property or `nt:file` node)
 
 ### similar {#similar}
 
-Similarity search using JCR XPath's `rep:similar()`.
+This predicate is a similarity search using JCR XPath's `rep:similar()`.
 
-Does not support filtering. Does not support facet extraction.
+It does not support filtering and does not support facet extraction.
 
 #### Properties {#properties-20}
 
-* **similar**
-  absolute path to the node for which to find similar nodes
-
-* **local**
-  a relative path to a descendant node or `.` for the current node (optional, default is " `.`")
+* **`similar`** - absolute path to the node for which to find similar nodes
+* **`local`** - a relative path to a descendant node or `.` for the current node (optional, default is " `.`")
 
 ### tag {#tag}
 
-Searches for content tagged with one or more tags, by specifying tag title paths.
+This predicate searches for content tagged with one or more tags, by specifying tag title paths.
 
-Supports facet extraction. Will provide buckets for each unique tag, using their current tag title path.
+It supports facet extraction and provides buckets for each unique tag, using their current tag title path.
 
 #### Properties {#properties-21}
 
-* **tag**
-
-  tag title path to look for, for example "Asset Properties : Orientation / Landscape"
-
-* **N_value**
-
-  use `1_value`, `2_value`, ... to check for multiple tags (combined with `OR` by default, with `AND` if and=true) (since 5.6)
-
-* **property**
-
-  property (or relative path to property) to look at (default " `cq:tags`")
+* **`tag`** - tag title path to look for, for example `properties:orientation/landscape`
+* **`N_value`** - use `1_value`, `2_value`, ... to check for multiple tags (combined with `OR` by default, with `AND` if `and=true`)
+* **`property`** - property (or relative path to property) to look at (default `cq:tags`)
 
 ### tagid {#tagid}
 
-Searches for content tagged with one or more tags, by specifying tag IDs.
+This predicate searches for content tagged with one or more tags, by specifying tag IDs.
 
-Supports facet extraction. Will provide buckets for each unique tag, using their current tag ID.
+It supports facet extraction and provides buckets for each unique tag, using their current tag ID.
 
 #### Properties {#properties-22}
 
-* **tagid**
-
-  tag id to look for, for example " `properties:orientation/landscape`"
-
-* **N_value**
-
-  use `1_value`, `2_value`, ... to check for multiple tagids (combined with `OR` by default, with `AND` if and=true) (since 5.6)
-
-* **property**
-
-  property (or relative path to property) to look at (default " `cq:tags`")
+* **`tagid`** - tag ID to look for, for example `properties:orientation/landscape`
+* **`N_value`** - use `1_value`, `2_value`, ... to check for multiple tag IDs (combined with `OR` by default, with `AND` if `and=true`)
+* **`property`** - property (or relative path to property) to look at (default `cq:tags`)
 
 ### tagsearch {#tagsearch}
 
-Searches for content tagged with one or more tags, by specifying keywords. This will first search for tags containing these keywords in their titles, then restricting the result to only items tagged with these.
+This predicate searches for content tagged with one or more tags, by specifying keywords. This will first search for tags containing these keywords in their titles, then restrict the result to only items tagged with these.
 
-Does not support facet extraction.
+It does not support facet extraction.
 
 #### Properties {#Properties-1}
 
-* **tagsearch**
-
-  keyword to search for in tag titles
-
-* **property**
-
-  property (or relative path to property) to look at (default " `cq:tags`")
-
-* **lang**
-
-  to search in a certain localized tag title only (e.g. " `de`")
-
-* **all**
-
-  (bool) search entire tag fulltext, i.e. all titles, description etc. (takes precedence over "l `ang`")
+* **`tagsearch`** - keyword to search for in tag titles
+* **`property`** - property (or relative path to property) to consider (default `cq:tags`)
+* **`lang`** - to search in a certain localized tag title only (e.g. `de`)
+* **`all`** - boolean value to search entire tag fulltext, i.e. all titles, description etc. (takes precedence over `lang`)
 
 ### type {#type}
 
-Restricts results to a specific JCR node type, both primary node type or mixin type. This will also find subtypes of that node type. Note that repository search indexes need to cover the node types for efficient execution.
+This predicate restricts results to a specific JCR node type, both primary node types or mixin types. This will also find sub types of that node type. Note that repository search indexes need to cover the node types for efficient execution.
 
-Supports facet extraction. Will provide buckets for each unique type in the results.
+It supports facet extraction and provides buckets for each unique type in the results.
 
 #### Properties {#Properties-2}
 
-* **type**
-
-  node type or mixin name to search for, for example `cq:Page`
+* **`type`** - node type or mixin name to search for, for example `cq:Page`
