@@ -9,51 +9,28 @@ description: Predicate reference for the Query Builder API.
 
 ### root {#root}
 
-Root predicate group. Supports all features of a group and allows to set global query parameters.
+This is the root predicate group. It supports all features of a group and allows setting global query parameters.
 
 The name "root" is never used in a query, it's implicit.
 
 #### Properties {#properties-18}
 
-* **p.offset**
-
-  number indicating the start of the result page, i.e. how many items to skip
-
-* **p.limit**
-
-  number indicating the page size
-
-* **p.guessTotal**
-
-  recommended: avoid calculating the full result total which can be costly; either a number indicating the maximum total to count up to (for example 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results) or " `true`" to count only up to the minimum necessary `p.offset` + `p.limit`
-
-* **p.excerpt**
-
-  if set to " `true`", include full text excerpt in the result
-
-* **p.hits**
-
-  (only for the JSON servlet) select the way the hits are written as JSON, with these standard ones (extensible via the ResultHitWriter service):
-
-    * **simple**:
-
-        minimal items like `path`, `title`, `lastmodified`, `excerpt` (if set)
-
-    * **full**:
-
-        sling JSON rendering of the node, with `jcr:path` indicating the path of the hit: by default just lists the direct properties of the node, include a deeper tree with `p.nodedepth=N`, with 0 meaning the entire, infinite subtree; add `p.acls=true` to include the JCR permissions of the current session on the given result item (mappings: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-
-    * **selective**:
-
-        only properties specified in `p.properties`, which is a space separated (use "+" in URLs) list of relative paths; if the relative path has a depth &gt; 1 these will be represented as child objects; the special jcr:path property includes the path of the hit
+* **`p.offset`** -  number indicating the start of the result page, i.e. how many items to skip
+* **`p.limit`** - number indicating the page size
+* **`p.guessTotal`** - recommended: avoid calculating the full result total which can be costly; either a number indicating the maximum total to count up to (for example 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results) or `true` to count only up to the minimum necessary `p.offset` + `p.limit`
+* **`p.excerpt`** - if set to `true`, include full text excerpt in the result
+* **`p.hits`** - (only for the JSON servlet) select the way the hits are written as JSON, with these standard ones (extensible via the ResultHitWriter service):
+  * **`simple`** - minimal items like `path`, `title`, `lastmodified`, `excerpt` (if set)
+  * **`full`** - sling JSON rendering of the node, with `jcr:path` indicating the path of the hit: by default just lists the direct properties of the node, include a deeper tree with `p.nodedepth=N`, with 0 meaning the entire, infinite subtree; add `p.acls=true` to include the JCR permissions of the current session on the given result item (mappings: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+  * **`selective`** - only properties specified in `p.properties`, which is a space separated (use "+" in URLs) list of relative paths; if the relative path has a depth &gt; 1 these will be represented as child objects; the special `jcr:path` property includes the path of the hit
 
 ### group {#group}
 
-Allows to build nested conditions. Groups can contain nested groups. Everything in a querybuilder query is implicitly in a root group, which can have `p.or` and `p.not` parameters as well.
+This predicate allows building nested conditions. Groups can contain nested groups. Everything in a Query Builder query is implicitly in a root group, which can have `p.or` and `p.not` parameters as well.
 
-Example for matching either one of two properties against a value:
+The following is an example for matching either one of two properties against a value:
 
-```
+```text
 group.p.or=true
 group.1_property=jcr:title
 group.1_property.value=My Page
@@ -63,9 +40,9 @@ group.2_property.value=My Page
 
 This is conceptually `(1_property` OR `2_property)`.
 
-Example for nested groups:
+The following is an example for nested groups:
 
-```
+```text
 fulltext=Management
 group.p.or=true
 group.1_group.path=/content/geometrixx/en
@@ -74,107 +51,79 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-This searches for the term "**Management**" within pages in `/content/geometrixx/en` or in assets in `/content/dam/geometrixx`.
+This searches for the term **Management** within pages in `/content/geometrixx/en` or in assets in `/content/dam/geometrixx`.
 
 This is conceptually `fulltext AND ( (path AND type) OR (path AND type) )`. Be aware that such OR joins need good indexes for performance.
 
 #### Properties {#properties-6}
 
-* **p.or**
-
-  if set to " `true`", only one predicate in the group must match. This defaults to " `false`", meaning all must match
-
-* **p.not**
-
-  if set to " `true`", it negates the group (defaults to " `false`")
-
-* **&lt;predicate&gt;**
-
-  adds nested predicates
-
-* **N_&lt;predicate&gt;**
-
-  adds multiple nested predicates of the same time, like `1_property, 2_property, ...`
+* **`p.or`** - if set to " `true`", only one predicate in the group must match. This defaults to " `false`", meaning all must match
+* **`p.not`** - if set to " `true`", it negates the group (defaults to " `false`")
+* **`<predicate>`** - adds nested predicates
+* **`N_<predicate>`** - adds multiple nested predicates of the same time, like `1_property, 2_property, ...`
 
 ### orderby {#orderby}
 
-Allows to sort the result. If ordering by multiple properties is required, this predicate needs to be added multiple times using the number prefix, such as `1_orderby=first`, `2_oderby=second`.
+This predicate allows sorting the results. If ordering by multiple properties is required, this predicate needs to be added multiple times using the number prefix, such as `1_orderby=first`, `2_oderby=second`.
 
 #### Properties {#properties-13}
 
-* **orderby**
-
-  either JCR property name indicated by a leading @, for example `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example `2_property`, on which to sort
-
-* **sort**
-
-  sort direction, either " `desc`" for descending or " `asc`" for ascending (default)
-
-* **case**
-
-  if set to " `ignore`" will make sorting case insensitive, meaning "a" comes before "B"; if empty or left out, sorting is case sensitive, meaning "B" comes before "a"
+* **`orderby`** - either JCR property name indicated by a leading @, for example `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example `2_property`, on which to sort
+* **`sort`** - sort direction, either " `desc`" for descending or " `asc`" for ascending (default)
+* **`case`** - if set to " `ignore`" will make sorting case insensitive, meaning "a" comes before "B"; if empty or left out, sorting is case sensitive, meaning "B" comes before "a"
 
 ## Predicates {#predicates}
 
 ### boolproperty {#boolproperty}
 
-Matches on JCR BOOLEAN properties. Only accepts the values " `true`" and " `false`". In case of " `false`", it will match if the property has the value " `false`" or if it does not exist at all. This can be useful for checking for boolean flags that are only set when enabled.
+This predicate matches on JCR boolean properties. Only accepts the values `true` and `false`. In case of `false`, it will match if the property has the value `false` or if it does not exist at all. This can be useful for checking for boolean flags that are only set when enabled.
 
-The inherited " `operation`" parameter has no meaning.
+The inherited `operation` parameter has no meaning.
 
-Supports facet extraction. Will provide buckets for each `true` or `false` value, but only for existing properties.
+This predicate supports facet extraction and provides buckets for each `true` or `false` value, but only for existing properties.
 
 #### Properties {#properties}
 
-* **boolproperty**
-  relative path to property, for example `myFeatureEnabled` or `jcr:content/myFeatureEnabled`
-
-* **value**
-  value to check property for, " `true`" or " `false`"
+* **`boolproperty`** -  relative path to property, for example `myFeatureEnabled` or `jcr:content/myFeatureEnabled`
+* **`value`** - value to check property for, `true` or `false`
 
 ### contentfragment {#contentfragment}
 
-Restricts the result to content fragments.
+This predicate restricts the result to content fragments.
 
-Does not support filtering.
-
-Does not support facet extraction.
+* It does not support filtering.
+* It does not support facet extraction.
 
 #### Properties {#properties-1}
 
-* **contentfragment**
-  It can be used with any value to check for content fragments.
+* **`contentfragment`** - It can be used with any value to check for content fragments.
 
-### dateComparison {#datecomparison}
+### `dateComparison` {#datecomparison}
 
-Compares two JCR DATE properties with each other. Can test if they are equal, unequal, greater than or greater-than-or-equal.
+This predicate compares two JCR date properties with each other. Can test if they are equal, unequal, greater than or greater-than-or-equal.
 
 This is a filtering-only predicate and cannot leverage a search index.
 
 #### Properties {#properties-2}
 
-* **property1**
-
-  path to first date property
-
-* **property2**
-
-  path to second date property
-
-* **operation**
-
-  " `=`" for exact match, " `!=`" for unequality comparison, " `>`" for property1 greater than property2, " `>=`" for property1 greater than or equal to property2. The default value is " `=`".
+* **`property1`** - path to first date property
+* **`property2`** - path to second date property
+* **`operation`**
+  * `=` for exact match (default)
+  * `!=` for inequality comparison
+  * `>` for `property1` greater than `property2`
+  * `>=` for `property1` greater than or equal to `property2`
 
 ### daterange {#daterange}
 
-Matches JCR DATE properties against a date/time interval. This uses the ISO8601
-format for dates and times ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) and allows also partial representations, like `YYYY-MM-DD`. Alternatively, the timestamp can be provided as number of milliseconds since 1970 in the UTC timezone, the unix time format.
+This predicate matches JCR date properties against a date/time interval. This uses the ISO8601
+format for dates and times (`YYYY-MM-DDTHH:mm:ss.SSSZ`) and allows also partial representations, like `YYYY-MM-DD`. Alternatively, the timestamp can be provided as POSIX time.
 
 You can look for anything between two timestamps, anything newer or older than a given date, and also chose between inclusive and open intervals.
 
-Supports facet extraction. Will provide buckets "today", "this week", "this month", "last 3 months", "this year", "last year" and "earlier than last year".
+It supports facet extraction and provides buckets "today", "this week", "this month", "last 3 months", "this year", "last year" and "earlier than last year".
 
-Does not support filtering.
+It does not support filtering.
 
 #### Properties {#properties-3}
 
