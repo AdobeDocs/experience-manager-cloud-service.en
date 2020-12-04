@@ -143,13 +143,16 @@ Assets as a [!DNL Cloud Service] can generate custom metadata for an asset using
 >
 >Only one processing profile can be applied to a folder. To apply multiple processing to assets in a folder, add more options to a single processing profile. For example, a single profile can generate renditions, transcode assets, generate custom metadata, and so on. You can apply MIME type filters for each task so that the appropriate task is triggered for the required file format.
 
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+
 ## Configure limit for bulk metadata update {#configlimit}
 
-To prevent DOS-like situation, AEM limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. AEM generates the following warning in the logs:
+To prevent DOS-like situation, [!DNL Experience Manager] limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. [!DNL Experience Manager] generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+-->
 
 ## Metadata schemata {#metadata-schemata}
 
