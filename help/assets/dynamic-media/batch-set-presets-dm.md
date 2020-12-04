@@ -17,7 +17,7 @@ Use **[!UICONTROL Batch Set Presets]** to help ease the creation and organizatio
 1. Create a batch set preset. See [Creating a batch set preset for an image set or a spin set](#creating-bsp).
 1. Create a new asset folder or use an existing asset folder and ensure it is synched to [!DNL Dynamic Media]. See [Creating folders](/help/assets/manage-digital-assets.md#creating-folders).
 1. Apply the batch set preset to the asset folder. See [About applying batch set presets to folders](#apply-bsp).
-1. Upload images to the asset folder. See [Uploading assets for Image Sets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Uploading assets for Spin Sets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets), or [Add digital assets to Adobe Experience Manager](#add-assets-to-experience-manager)..
+1. Upload images to the asset folder. See [Uploading assets for Image Sets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Uploading assets for Spin Sets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets), or [Add digital assets to Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Create your image set or spin set. See [Image Sets](/help/assets/dynamic-media/image-sets.md) or [Spin Sets](/help/assets/dynamic-media/spin-sets.md).
 1. Publish your image set or spin set. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). 
 
