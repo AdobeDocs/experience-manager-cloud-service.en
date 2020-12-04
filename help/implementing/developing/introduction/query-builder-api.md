@@ -214,12 +214,12 @@ If no `p.or` is given then all predicates are ANDed together, that is, each resu
 
 Here you are searching for all pages of a given template, using the `cq:template` property:
 
-`http://<host>:<port>/bin/querybuilder.json?property=cq%3atemplate&property.value=%2fapps%2fgeometrixx%2ftemplates%2fhomepage&type=cq%3aPageContent`
+`http://<host>:<port>/bin/querybuilder.json?property=cq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPageContent`
 
 ```xml
 type=cq:PageContent
 property=cq:template
-property.value=/apps/geometrixx/templates/homepage
+property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
 This has the drawback that the `jcr:content` nodes of the pages, not the pages themselves, are returned. To solve this, you can search by relative path:
