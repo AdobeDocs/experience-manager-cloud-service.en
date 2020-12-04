@@ -1,6 +1,6 @@
 ---
 title: Maven Project Version Handling
-description: Maven Project Version Handlingt - Cloud Services
+description: Maven Project Version Handling - Cloud Services
 ---
 
 # Maven Project Version Handling {#maven-project-version-handling} 
