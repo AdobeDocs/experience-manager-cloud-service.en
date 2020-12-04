@@ -638,7 +638,7 @@ Publishing a library involves the following two steps:
 
 ## Configuring Adobe Experience Manager for the integration {#configuring-adobe-experience-manager-for-the-integration}
 
-<!-- Prerequisites lost below should be verified by Sasha -->
+<!-- Prerequisites list below should be verified by Sasha -->
 
 Prerequisites:
 
