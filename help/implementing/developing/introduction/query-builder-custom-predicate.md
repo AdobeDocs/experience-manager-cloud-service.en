@@ -151,7 +151,7 @@ The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class
    >
    >The name of the `PredicateEvaluator` is the predicate name, which is used when building queries.
 
-3. Override:
+1. Override:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
@@ -159,7 +159,7 @@ The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class
 
    In the override method you build a `Xpath` expression based on the `Predicate` given in argument.
 
-### Example of a Custom Predicate Evalutor for Replication Metadata {#example-of-a-custom-predicate-evalutor-for-replication-metadata}
+### Example of a Custom Predicate Evaluator for Replication Metadata {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
 The complete implementation of this `PredicateEvaluator` might be similar to the following class.
 
