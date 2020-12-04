@@ -5,11 +5,11 @@ description: The Query Builder in AEM offers an easy, customizable way to query 
 
 # Implementing a Custom Predicate Evaluator for the Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-This document describes how to extend the [Query Builder](querybuilder-api.md) by implementing a custom predicate evaluator.
+This document describes how to extend the [Query Builder](query-builder-api.md) by implementing a custom predicate evaluator.
 
 ## Overview {#overview}
 
-The [Query Builder](querybuilder-api.md) offers an easy way to query the content repository. AEM comes with [a set of predicate evaluators](#query-builder-predicates.md) that help you query your data.
+The [Query Builder](query-builder-api.md) offers an easy way to query the content repository. AEM comes with [a set of predicate evaluators](#query-builder-predicates.md) that help you query your data.
 
 However you might want to simplify your queries by implementing a custom predicate evaluator that hides some complexity and ensures a better semantic.
 
@@ -24,7 +24,7 @@ A custom predicate could also perform other things not directly possible with XP
 
 >[!TIP]
 >
->You can find examples of queries in the [Query Builder](querybuilder-api.md) document.
+>You can find examples of queries in the [Query Builder](query-builder-api.md) document.
 
 >[!TIP]
 >
