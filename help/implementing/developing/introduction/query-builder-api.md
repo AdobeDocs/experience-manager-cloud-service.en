@@ -339,7 +339,7 @@ p.nodedepth=5
 
 ## More Predicates {#morepredicates}
 
-For more predicates, see the [Query Builder Predicate Reference page](querybuilder-predicate-reference.md).
+For more predicates, see the [Query Builder Predicate Reference page](querybuilder-predicates.md).
 
 You can also check the [Javadoc for the `PredicateEvaluator` classes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). The Javadoc for these classes contains the list of properties that you can use.
 
