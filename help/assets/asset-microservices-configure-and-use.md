@@ -173,7 +173,7 @@ To verify that assets are processed, preview the generated renditions in the [!U
 
 For situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
 
-Post-processing workflows, if configured, are automatically executed by AEM after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them. The examples include:
+Post-processing workflows, if configured, are automatically executed by [!DNL Experience Manager] after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them. The examples include:
 
 * Custom workflow steps to process assets.
 * Integrations to add metadata or properties to assets from external systems, for example, product or process information.
@@ -188,7 +188,7 @@ Adding a post-processing workflow configuration to Experience Manager is compris
 
 ### Create post-processing workflow models {#create-post-processing-workflow-models}
 
-Post-processing workflow models are regular AEM workflow models. Create different models if you need different processing for different repository locations or asset types.
+Post-processing workflow models are regular [!DNL Experience Manager] workflow models. Create different models if you need different processing for different repository locations or asset types.
 
 Processing steps should be added based on needs. You can use any supported steps available, as well as any custom-implemented workflow steps.
 
@@ -206,7 +206,7 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 >[!NOTE]
 >
 >Configuration of the Custom Workflow Runner is a configuration of an OSGi service. See [deploy to Experience Manager](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
->OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
+>OSGi web console, unlike in on-premise and managed services deployments of [!DNL Experience Manager], is not directly available in the cloud service deployments.
 
 For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
 
