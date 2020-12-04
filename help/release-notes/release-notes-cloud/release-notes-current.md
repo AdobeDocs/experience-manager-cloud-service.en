@@ -23,6 +23,7 @@ The following release (2020.12.0) will be on December 17, 2020
 * **Sort the Live Copy pages available for rollout**: New option to sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
 ### What is new in [!DNL Assets] and [!DNL Dynamic Media] {#what-is-new-assets}
 
 * **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that leverages [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [asset bulk ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor).
