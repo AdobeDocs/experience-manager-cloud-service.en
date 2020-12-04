@@ -33,6 +33,10 @@ A custom predicate could also perform other things not directly possible with XP
 >* [Open aem-search-custom-predicate-evaluator project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
+>[!NOTE]
+>
+>This linked code on GitHub and the code snippets in this document are provided for demonstration purposes only.
+
 ### Predicate Evaluator in Detail {#predicate-evaluator-in-detail}
 
 A predicate evaluator handles the evaluation of certain predicates, which are the defining constraints of a query.
@@ -131,8 +135,7 @@ The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class
     package com.adobe.aem.docs.search;
 
    +import org.apache.felix.scr.annotations.Component;
-   +
-    import com.day.cq.search.eval.AbstractPredicateEvaluator;
+   +import com.day.cq.search.eval.AbstractPredicateEvaluator;
 
    +@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
     public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
