@@ -47,24 +47,24 @@ For the `QueryBuilder` JSON Servlet, each example includes a sample link to an A
 
 The following query will **return ten results** (or to be precise a maximum of ten), but inform you of the **Number of hits:** that are actually available:
 
-`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
+`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path`
 
 ```xml
 path=/content
 1_property=sling:resourceType
-1_property.value=foundation/components/text
+1_property.value=wknd/components/structure/page
 1_property.operation=like
 orderby=path
 ```
 
 The same query (with the parameter `p.limit=-1`) will **return all results** (this might be a high number depending on your instance):
 
-`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.limit=-1&orderby=path`
+`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path&p.limit=-1`
 
 ```xml
 path=/content
 1_property=sling:resourceType
-1_property.value=foundation/components/text
+1_property.value=wknd/components/structure/page
 1_property.operation=like
 p.limit=-1
 orderby=path
@@ -78,12 +78,12 @@ The disadvantage to the parameter is users do not see the exact total. But you c
 
 Add `p.guessTotal=true` to the query below to see how it works:
 
-`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=true&orderby=path`
+`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&p.guessTotal=true&orderby=path`
 
 ```xml
 path=/content
 1_property=sling:resourceType
-1_property.value=foundation/components/text
+1_property.value=wknd/components/structure/page
 1_property.operation=like
 p.guessTotal=true
 orderby=path
@@ -101,7 +101,7 @@ The query will return the `p.limit` default of `10` results with a `0` offset:
 
 You can also use a numeric value to count up to a custom number of maximum results. Use the same query as above, but change the value of `p.guessTotal` to `50`:
 
-`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=50&orderby=path`
+`http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&p.guessTotal=50&orderby=path`
 
 It will return a number the same default limit of 10 results with a 0 offset, but will only display a maximum of 50 results:
 
@@ -151,7 +151,7 @@ orderby=@jcr:content/cq:lastModified
 
 ### Find All Pages and Order Them by Last Modified, Descending {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
-`http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc]`
+`http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
 ```xml
 type=cq:Page
@@ -171,11 +171,11 @@ orderby.sort=desc
 
 ### Search for Pages with a Certain Tag {#search-for-pages-tagged-with-a-certain-tag}
 
-`http://<host>:<port>/bin/querybuilder.json?type=cq:Page&tagid=marketing:interest/product&tagid.property=jcr:content/cq:tags`
+`http://<host>:<port>/bin/querybuilder.json?type=cq:Page&tagid=wknd:activity/cycling&tagid.property=jcr:content/cq:tags`
 
 ```xml
 type=cq:Page
-tagid=marketing:interest/product
+tagid=wknd:activity/cycling
 tagid.property=jcr:content/cq:tags
 ```
 
@@ -187,18 +187,18 @@ Because, in the previous example, you are searching for pages (`cq:Page` nodes),
 
 ### Search Multiple Paths (using groups) {#search-under-multiple-paths-using-groups}
 
-`http://<host>:<port>/bin/querybuilder.json?fulltext=Management&group.1_path=/content/geometrixx/en/company/management&group.2_path=/content/geometrixx/en/company/bod&group.p.or=true`
+`http://<host>:<port>/bin/querybuilder.json?fulltext=Experience&group.1_path=/content/wknd/us/en/magazine&group.2_path=/content/wknd/us/en/adventures&group.p.or=true`
 
 ```xml
-fulltext=Management
+fulltext=Experience
 group.p.or=true
-group.1_path=/content/geometrixx/en/company/management
-group.2_path=/content/geometrixx/en/company/bod
+group.1_path=/content/wknd/us/en/magazine
+group.2_path=/content/wknd/us/en/adventures
 ```
 
 This query uses a *group* (named `group`), which acts to delimit subexpressions within a query, much as parentheses do in more standard notations. For example, the previous query might be expressed in a more familiar style as:
 
-`"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
+`"Experience" and ("/content/wknd/us/en/magazine" or "/content/wknd/us/en/adventures")`
 
 Inside the group in the example, the `path` predicate is used multiple times. To differentiate and order the two instances of the predicate (ordering is required for some predicates), you must prefix the predicates with `N_` where `N` is the ordering index. In the previous example, the resulting predicates are `1_path` and `2_path`.
 
@@ -224,51 +224,51 @@ property.value=/apps/geometrixx/templates/homepage
 
 This has the drawback that the `jcr:content` nodes of the pages, not the pages themselves, are returned. To solve this, you can search by relative path:
 
-`http://<host>:<port>/bin/querybuilder.json?property=jcr%3acontent%2fcq%3atemplate&property.value=%2fapps%2fgeometrixx%2ftemplates%2fhomepage&type=cq%3aPage`
+`http://<host>:<port>/bin/querybuilder.json?property=jcr%3acontent%2fcq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPage`
 
 ```xml
 type=cq:Page
 property=jcr:content/cq:template
-property.value=/apps/geometrixx/templates/homepage
+property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
 ### Search for Multiple Properties {#search-for-multiple-properties}
 
 When using the property predicate multiple times, you have to add the number prefixes again:
 
-`http://<host>:<port>/bin/querybuilder.json?1_property=jcr%3acontent%2fcq%3atemplate&1_property.value=%2fapps%2fgeometrixx%2ftemplates%2fhomepage&2_property=jcr%3acontent%2fjcr%3atitle&2_property.value=English&type=cq%3aPage`
+`http://<host>:<port>/bin/querybuilder.json?1_property=jcr%3acontent%2fcq%3atemplate&1_property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&2_property=jcr%3acontent%2fjcr%3atitle&2_property.value=Cycling%20Tuscany&type=cq%3aPage`
 
 ```xml
 type=cq:Page
 1_property=jcr:content/cq:template
-1_property.value=/apps/geometrixx/templates/homepage
+1_property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 2_property=jcr:content/jcr:title
-2_property.value=English
+2_property.value=Cycling Tuscany
 ```
 
 ### Search for Multiple Property Values {#search-for-multiple-property-values}
 
-To avoid big groups when you want to search for multiple values of a property ( `"A" or "B" or "C"`), you can provide multiple values to the `property` predicate:
+To avoid big groups when you want to search for multiple values of a property (`"A" or "B" or "C"`), you can provide multiple values to the `property` predicate:
 
-`http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Products&property.2_value=Square&property.3_value=Events`
+`http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 
 ```xml
 property=jcr:title
-property.1_value=Products
-property.2_value=Square
-property.3_value=Events
+property.1_value=Cycling Tuscany
+property.2_value=Ski Touring
+property.3_value=Whistler Mountain Biking
 ```
 
-For multi-value properties, you can also require that multiple values match ( `"A" and "B" and "C"`):
+For multi-value properties, you can also require that multiple values match (`"A" and "B" and "C"`):
 
-`http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.and=true&property.1_value=test&property.2_value=foo&property.3_value=bar`
+`http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.and=true&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 
 ```xml
 property=jcr:title
 property.and=true
-property.1_value=test
-property.2_value=foo
-property.3_value=bar
+property.1_value=Cycling Tuscany
+property.2_value=Ski Touring
+property.3_value=Whistler Mountain Biking
 ```
 
 ## Refining What is Returned {#refining-what-is-returned}
@@ -283,11 +283,11 @@ p.hits=full
 
 in which case all properties will be included for each node:
 
-`http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Triangle`
+`http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
 ```xml
 property=jcr:title
-property.value=Triangle
+property.value=Cycling Tuscany
 p.hits=full
 ```
 
@@ -305,11 +305,11 @@ p.properties
 
 separated by a space:
 
-`http://<host>:<port>/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle`
+`http://<host>:<port>/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
 ```xml
 property=jcr:title
-property.value=Triangle
+property.value=Cycling Tuscany
 p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
@@ -328,11 +328,11 @@ p.hits=full
 
 Example:
 
-`http://<host>:<port>/bin/querybuilder.json?p.hits=full&p.nodedepth=5&property=jcr%3atitle&property.value=Triangle`
+`http://<host>:<port>/bin/querybuilder.json?p.hits=full&p.nodedepth=5&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
 ```xml
 property=jcr:title
-property.value=Triangle
+property.value=Cycling Tuscany
 p.hits=full
 p.nodedepth=5
 ```
@@ -350,7 +350,7 @@ For such principal properties, you can shorten the query and use `similar=/conte
 ## Example Query Builder API Usage {#example-query-builder-api-usage}
 
 ```java
-   String fulltextSearchTerm = "Geometrixx";
+   String fulltextSearchTerm = "WKND";
 
     // create query description as hash map (simplest way, same as form post)
     Map<String, String> map = new HashMap<String, String>();
@@ -381,7 +381,7 @@ For such principal properties, you can shorten the query and use `similar=/conte
     long numberOfPages = totalMatches / 20;
 
     //Place the results in XML to return to client
-    DocumentBuilderFactory factory =     DocumentBuilderFactory.newInstance();
+    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder builder = factory.newDocumentBuilder();
     Document doc = builder.newDocument();
 
@@ -405,7 +405,7 @@ For such principal properties, you can shorten the query and use `similar=/conte
 
 The same query executed over HTTP using the Query Builder (JSON) Servlet:
 
-`http://<host>:<port>/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=Geometrixx&group.1_fulltext.relPath=jcr:content&group.2_fulltext=Geometrixx&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
+`http://<host>:<port>/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=WKND&group.1_fulltext.relPath=jcr:content&group.2_fulltext=WKND&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
 ## Storing and Loading Queries {#storing-and-loading-queries}
 
@@ -455,27 +455,12 @@ Explain **all** queries during the development cycle against the target index se
    * Navigate to `https://<host>:<port>/system/console/slinglog`. Create a new logger for `com.day.cq.search.impl.builder.QueryImpl` at **DEBUG**.
 1. Once DEBUG has been enabled for the above class, the logs will display the XPath generated by Query Builder.
 1. Copy the XPath query from the log entry for the associated Query Builder query, For example:
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. Paste the XPath query into Explain Query as XPath to obtain the query plan.
 
-### Obtain explain-able XPath via the Query Builder debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Obtain Explainable XPath via the Query Builder Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
 Use the AEM Query Builder debugger to generate an explainable XPath query.
-
-#### Obtain Explainable XPath via Logging {#obtain-explainable-xpath-via-logging}
-
-Explain **all** queries during the development cycle against the target index set.
-
-1. Enable DEBUG logs for QueryBuilder to obtain underlying, explainable XPath query
-   * Navigate to `https://<host>:<port>/system/console/slinglog`. Create a new logger for `com.day.cq.search.impl.builder.QueryImpl` at **DEBUG**.
-1. Once DEBUG has been enabled for the above class, the logs will display the XPath generated by Query Builder.
-1. Copy the XPath query from the log entry for the associated QueryBuilder query, For example:
-    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
-1. Paste the XPath query into Explain Query as XPath to obtain the query plan
-
-#### Obtain Explainable XPath via the Query Builder Debugger {#obtain-explainable-xpath-via-the-query-builder-debugger}
-
- Use the AEM QueryBuilder debugger to generate an explainable XPath query.
 
 ![Query Builder Debugger](assets/query-builder-debugger.png)
 
@@ -500,13 +485,13 @@ The log output (INFO level) of the query builder implementation when executing t
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
 null=group: limit=20, offset=0[
     {group=group: or=true[
-        {1_fulltext=fulltext: fulltext=Geometrixx, relPath=jcr:content}
-        {2_fulltext=fulltext: fulltext=Geometrixx, relPath=jcr:content/@cq:tags}
+        {1_fulltext=fulltext: fulltext=WKND, relPath=jcr:content}
+        {2_fulltext=fulltext: fulltext=WKND, relPath=jcr:content/@cq:tags}
     ]}
     {path=path: path=/content}
     {type=type: type=cq:Page}
 ]
-com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]
+com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]
 com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
