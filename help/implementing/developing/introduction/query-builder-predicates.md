@@ -22,7 +22,7 @@ The name "root" is never used in a query, it's implicit.
 * **`p.hits`** - (only for the JSON servlet) select the way the hits are written as JSON, with these standard ones (extensible via the ResultHitWriter service):
   * **`simple`** - minimal items like `path`, `title`, `lastmodified`, `excerpt` (if set)
   * **`full`** - sling JSON rendering of the node, with `jcr:path` indicating the path of the hit: by default just lists the direct properties of the node, include a deeper tree with `p.nodedepth=N`, with 0 meaning the entire, infinite subtree; add `p.acls=true` to include the JCR permissions of the current session on the given result item (mappings: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-  * **`selective`** - only properties specified in `p.properties`, which is a space separated (use "+" in URLs) list of relative paths; if the relative path has a depth &gt; 1 these will be represented as child objects; the special `jcr:path` property includes the path of the hit
+  * **`selective`** - only properties specified in `p.properties`, which is a space separated (use `+` in URLs) list of relative paths; if the relative path has a depth `>1` these will be represented as child objects; the special `jcr:path` property includes the path of the hit
 
 ### group {#group}
 
@@ -45,20 +45,20 @@ The following is an example for nested groups:
 ```text
 fulltext=Management
 group.p.or=true
-group.1_group.path=/content/geometrixx/en
+group.1_group.path=/content/wknd/ch/de
 group.1_group.type=cq:Page
-group.2_group.path=/content/dam/geometrixx
+group.2_group.path=/content/dam/wknd
 group.2_group.type=dam:Asset
 ```
 
-This searches for the term **Management** within pages in `/content/geometrixx/en` or in assets in `/content/dam/geometrixx`.
+This searches for the term **Management** within pages in `/content/wknd/ch/de` or in assets in `/content/dam/wknd`.
 
-This is conceptually `fulltext AND ( (path AND type) OR (path AND type) )`. Be aware that such OR joins need good indexes for performance.
+This is conceptually `fulltext AND ( (path AND type) OR (path AND type) )`. Be aware that such OR joins need good indexes for performance reasons.
 
 #### Properties {#properties-6}
 
-* **`p.or`** - if set to " `true`", only one predicate in the group must match. This defaults to " `false`", meaning all must match
-* **`p.not`** - if set to " `true`", it negates the group (defaults to " `false`")
+* **`p.or`** - if set to `true`, only one predicate in the group must match. This defaults to `false`, meaning all must match
+* **`p.not`** - if set to `true`, it negates the group (defaults to `false`)
 * **`<predicate>`** - adds nested predicates
 * **`N_<predicate>`** - adds multiple nested predicates of the same time, like `1_property, 2_property, ...`
 
@@ -69,8 +69,8 @@ This predicate allows sorting the results. If ordering by multiple properties is
 #### Properties {#properties-13}
 
 * **`orderby`** - either JCR property name indicated by a leading @, for example `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example `2_property`, on which to sort
-* **`sort`** - sort direction, either " `desc`" for descending or " `asc`" for ascending (default)
-* **`case`** - if set to " `ignore`" will make sorting case insensitive, meaning "a" comes before "B"; if empty or left out, sorting is case sensitive, meaning "B" comes before "a"
+* **`sort`** - sort direction, either `desc` for descending or `asc` for ascending (default)
+* **`case`** - if set to `ignore` will make sorting case insensitive, meaning `a` comes before `B`; if empty or left out, sorting is case sensitive, meaning `B` comes before `a`
 
 ## Predicates {#predicates}
 
@@ -121,7 +121,7 @@ format for dates and times (`YYYY-MM-DDTHH:mm:ss.SSSZ`) and allows also partial 
 
 You can look for anything between two timestamps, anything newer or older than a given date, and also chose between inclusive and open intervals.
 
-It supports facet extraction and provides buckets "today", "this week", "this month", "last 3 months", "this year", "last year" and "earlier than last year".
+It supports facet extraction and provides buckets `today`, `this week`, `this month`, `last 3 months`, `this year`, `last year`, and `earlier than last year`.
 
 It does not support filtering.
 
@@ -237,11 +237,11 @@ It does not support facet extraction.
 #### Properties {#properties-14}
 
 * **`path`** - This defines the path pattern.
-  * Depending on the `exact` property, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) or only an exact path matches, which can include wildcards ( `*`).
+  * Depending on the `exact` property, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) or only an exact path matches, which can include wildcards (`*`).
     * Defaults to `true`
   * If the `self`property is set, the entire subtree including the base node will be searched.
-* **`exact`** - if `exact` is `true`, the exact path must match, but it can contain simple wildcards ( `*`), that match names, but not " `/`"; if it is `false` (default) all descendants are included (optional)
-* **`flat`** - searches only the direct children (like appending `/*` in xpath) (only used if ' `exact`' is not true, optional)
+* **`exact`** - if `exact` is `true`, the exact path must match, but it can contain simple wildcards (`*`), that match names, but not `/`; if it is `false` (default) all descendants are included (optional)
+* **`flat`** - searches only the direct children (like appending `/*` in xpath) (only used if `exact` is not true, optional)
 * **`self`** - searches the subtree but includes the base node given as path (no wildcards)
 
 ### property {#property}
@@ -255,7 +255,7 @@ It supports facet extraction and provides buckets for each unique property value
 * **`property`** - relative path to property, for example `jcr:title`
 * **`value`** - value to check property for; follows the JCR property type to string conversions
 * **`N_value`** - use `1_value`, `2_value`, ... to check for multiple values (combined with `OR` by default, with `AND` if `and=true`)
-* **`and`** - set to `true` for combining multiple values ( `N_value`) with `AND`
+* **`and`** - set to `true` for combining multiple values (`N_value`) with `AND`
 * **`operation`**
   * `equals` for exact match (default)
   * `unequals` for inequality comparison
@@ -270,7 +270,7 @@ It supports facet extraction and provides buckets for each unique property value
 
 This predicate matches a JCR property against an interval. This applies to properties with linear types such as `LONG`, `DOUBLE` and `DECIMAL`. For `DATE` please see the [`daterange`](#daterange) predicate that has optimized date format input.
 
-You can define a lower bound, an upper bound, or both. The operation (e.g. "lesser than" or "lesser than or equals") can also be specified for lower and upper bound individually.
+You can define a lower bound, an upper bound, or both. The operation (e.g. lesser than or lesser than or equal to) can also be specified for lower and upper bound individually.
 
 It does not support facet extraction.
 
@@ -329,7 +329,7 @@ It does not support filtering and does not support facet extraction.
 #### Properties {#properties-20}
 
 * **`similar`** - absolute path to the node for which to find similar nodes
-* **`local`** - a relative path to a descendant node or `.` for the current node (optional, default is " `.`")
+* **`local`** - a relative path to a descendant node or `.` for the current node (optional, default is `.`)
 
 ### tag {#tag}
 
