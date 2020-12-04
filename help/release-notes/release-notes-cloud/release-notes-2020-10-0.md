@@ -3,7 +3,6 @@ title: Release Notes for 2020.10.0 release of [!DNL Adobe Experience Manager] as
 description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.10.0.
 ---
 
-
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
@@ -25,8 +24,6 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
-
 * **[!DNL Adobe Sensei] powered video smart tagging**: By leveraging AI models to analyze video content for object and action-specific tags, DAM users can spend less time adding tags and more time making use of the rich information exposed to deliver the right experience to customers. See [Smart tag video assets](/help/assets/smart-tags-video-assets.md).
 
 * **Brand Portal enhancements**: The following new features and more are available in [!DNL Brand Portal]. For details, see [[!DNL Brand Portal] release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
@@ -38,13 +35,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 * **[!DNL Adobe Asset Link] version 2.1**: A new version of [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) extension for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] is available. It adds compatibility with the latest [!DNL Adobe Creative Cloud] applications with version 2021, released in October 2020.
 
-* **[!DNL Assets] WebP file support**: [!DNL Assets] as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets] WebP file support**: [!DNL Assets] as a Cloud Service now supports WebP image format. WebP is an emerging image format created by Google. Images in WebP file format are visually indistinguishable from JPG or PNG files and the files are much smaller. Lowered file size of assets improves the page-load times and help content creators deliver a faster web experience. See how to use WebP in [create processing profile](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -73,7 +64,6 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.10.0 is Octobe
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
 * The Cloud Manager build container now supports compiling projects using either Java 8 or Java 11. Support for Java 11 is provided by the Maven toolchains system.
-
 
 * The number of environment variables per environment has been increased to 200.
 
@@ -115,4 +105,3 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### Bug Fixes {#ctt-bug-fixes}
 
 * Content Transfer Tool was skipping content files if the migration set contained paths that had the partially similar file names. This has been fixed.
-
