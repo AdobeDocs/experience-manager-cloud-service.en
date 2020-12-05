@@ -12,7 +12,7 @@ Dynamic Media supports keyboard control and assistive technologies, such as JAWS
 
 ## Keyboard accessibility support in Dynamic Media
 
-Because Dynamic Media is a plug-in to AEM Assets, most of the keyboard control behavior is exactly the same as in AEM Assets. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in AEM Assets, and reacts to the `Spacebar` key as in AEM Assets. See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Because Dynamic Media is a plug-in to Experience Manager Assets, most of the keyboard control behavior is exactly the same as in Experience Manager Assets. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in Experience Manager Assets, and reacts to the `Spacebar` key as in Experience Manager Assets. See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Keystrokes supported by individual user interface elements in Dynamic Media are-in most cases-obvious and easy to discover. Keyboard control in Dynamic Media is about the following:
 
