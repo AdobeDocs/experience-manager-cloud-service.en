@@ -56,8 +56,12 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Image Editor](developing/components/image-editor.md)
       + [Decoration Tags](developing/components/decoration-tag.md)
       + [Using Hide Conditions](developing/components/hide-conditions.md)
-     + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
+    + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
     + [Building Tagging into AEM Applications](/help/implementing/developing/introduction/tagging-applications.md)
+    + Search {#search}
+      + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
+      + [Query Builder Predicate Reference](/help/implementing/developing/introduction/query-builder-predicates.md)
+      + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
   + Hybrid AEM Development {#hybrid}
     + [Hybrid and SPA with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](developing/components/enabling-json-exporter.md)
