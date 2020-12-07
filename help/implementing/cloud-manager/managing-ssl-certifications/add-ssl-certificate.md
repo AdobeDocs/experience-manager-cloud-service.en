@@ -6,11 +6,13 @@ description: Adding an SSL Certificate - Managing SSL Certificates
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 >[!NOTE]
->A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Goto How to get an SSL certificate to learn more.INSERT LINK
+>AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted.
+
+A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Refer to Getting an SSL Certificate for more details.
 
 ## Certificate Format {#certificate-format}
 
-SSL files must be in PEM format in order to be installed on Cloud Manager. Common file extensions that are within the PEM format include .pem, .crt, .cer, and .cert. 
+SSL files must be in PEM format in order to be installed on Cloud Manager. Common file extensions that are within the PEM format include `.pem,` .`crt`, `.cer`, and `.cert`. 
 
 Follow the steps below to convert the format of your SSL files to PEM:
 
@@ -30,20 +32,20 @@ Follow the steps below to convert the format of your SSL files to PEM:
 
 >[!NOTE]
 >* A user must be in the Business Owner or Deployment Manager role in order to install an SSL certificate in Cloud Manager.
->* At any given time, Cloud Manager will allow a maximum of 5 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+>* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+
+Follow the steps below to add a certificate:
 
 1. Login to Cloud Manager.
 1. Navigate to Environments screen from Overview page.
-1. Navigate to SSL Certificates screen from the left navigation menu. A table with details of any existing SSL certificates will be displayed on this screen.INSERT IMAGE
+1. Navigate to SSL Certificates screen from the left navigation menu. A table with details of any existing SSL certificates will be displayed on this screen.
 1. Select the **Add certificate** button to launch a wizard.
-1. Enter a name for your certificate. This can be any name that helps you reference your certificate easily.
-1. Paste the Certificate, Private Key and Chain contents into their respective fields. Use the paste icon to the right of the input box.
-1. Select **Save**.
+   1. Provide a name for your certificate. This can be any name that helps you reference your certificate easily.
+   1. Paste the Certificate, Private Key and Chain  contents into their respective fields. Use the paste icon to the right of the input box. 
+      >[!NOTE]
+      >All three fields are not optional and must be included.
+1. Once you submit your certificate, you will see it displayed as a new row in the table.
 
-   >[!NOTE]
-   >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to Certificate INSERT LINK Errors to learn more about addressing common errors.
-
-   Once you submit your certificate, you will see it displayed as a new row in the table.
 
 ## Certificate Errors {#certificate-errors}
 
