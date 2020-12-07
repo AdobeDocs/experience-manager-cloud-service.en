@@ -27,5 +27,5 @@ There are two ways to create Custom Oak Index Definitions:
 >[!NOTE]
 >While it is recommended to use Index Converter tool via [AIO CLI plugin for source migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration), it can also be executed standalone.
 
-Refer to **[Git Resource: aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)** to learn how to install and use the plugin.
+Refer to **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** to learn how to install and use the plugin.
 
