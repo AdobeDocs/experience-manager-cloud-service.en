@@ -18,12 +18,14 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)
     + [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
     + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)  
+    + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
 + Managing your Code {#managing-code}
   + [Maven Project Version Handling](cloud-manager/project-version-handling.md)
   + [Accessing Git](cloud-manager/accessing-git.md)
   + [Integrating Git with Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
+  + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + Developing for AEM as a Cloud Service {#developing}
   + [AEM Project Structure](developing/introduction/aem-project-content-package-structure.md)
   + [AEM Project Repository Structure Package](developing/introduction/repository-structure-package.md)
@@ -54,8 +56,15 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Image Editor](developing/components/image-editor.md)
       + [Decoration Tags](developing/components/decoration-tag.md)
       + [Using Hide Conditions](developing/components/hide-conditions.md)
-     + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
+    + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
     + [Building Tagging into AEM Applications](/help/implementing/developing/introduction/tagging-applications.md)
+    + Search {#search}
+      + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
+      + [Query Builder Predicate Reference](/help/implementing/developing/introduction/query-builder-predicates.md)
+      + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+    + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
+    + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
+    + [Java API Guidelines](/help/implementing/developing/introduction/java-api-guidelines.md)
   + Hybrid AEM Development {#hybrid}
     + [Hybrid and SPA with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](developing/components/enabling-json-exporter.md)
