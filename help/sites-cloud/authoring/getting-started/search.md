@@ -11,7 +11,7 @@ The author environment of AEM provides various mechanisms for searching for cont
 
 Search is available from the top toolbar:
 
-![Search button](/help/sites-cloud/authoring/assets/search-button.png)
+![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
 
 With the search rail you can:
 
