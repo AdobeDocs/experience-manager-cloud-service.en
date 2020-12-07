@@ -62,6 +62,9 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
       + [Query Builder Predicate Reference](/help/implementing/developing/introduction/query-builder-predicates.md)
       + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+    + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
+    + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
+    + [Java API Guidelines](/help/implementing/developing/introduction/java-api-guidelines.md)
   + Hybrid AEM Development {#hybrid}
     + [Hybrid and SPA with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](developing/components/enabling-json-exporter.md)
