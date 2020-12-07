@@ -29,7 +29,7 @@ Follow are the self-help resources for Experience Manager Assets as a [!DNL Clou
 |[Implementation User Guide](/help/implementing/home.md)|Customize, develop, and deploy Experience Manager as a [!DNL Cloud Service].|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a [!DNL Cloud Service].|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a [!DNL Cloud Service], such as indexing and maintenance tasks.|
-|[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on AEM as a [!DNL Cloud Service].|
+|[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on [!DNL Experience Manager] as a [!DNL Cloud Service].|
 
 ## Other Experience Manager Resources {#other-resources}
 
@@ -41,4 +41,4 @@ Follow are the self-help resources for Experience Manager Assets as a [!DNL Clou
 * [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&mv=other#recommended/solutions/experience-manager)
-* [AEM Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager] Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
