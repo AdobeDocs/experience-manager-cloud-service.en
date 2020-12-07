@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Review assets in folders and collections {#review-folder-assets-and-collections}
 
-Using Adobe Experience Manager (AEM) Assets, you can set ad-hoc review workflows for assets that are in a folder or in a collection. You can share it with reviewers or creative partners to seek their feedback. You can either associate a review workflow with a project or create an independent review task.
+Using Adobe Experience Manager Assets, you can set ad-hoc review workflows for assets that are in a folder or in a collection. You can share it with reviewers or creative partners to seek their feedback. You can either associate a review workflow with a project or create an independent review task.
 
 After you share the assets, reviewers can approve or reject them. Notifications are sent at various stages of the workflow to notify intended recipients regarding the completion of various tasks. For example, when you share a folder or collection, the reviewer receives a notification that a folder/collection has been shared for review.
 
@@ -40,7 +40,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![review_name](assets/review_name.png)
 
 1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to AEM Assets as an Approver and navigate to the Assets UI. To approve assets, click/tap the **[!UICONTROL Notifications]** icon and then select the review task from the list.
+1. Log in to [!DNL Experience Manager Assets] as an Approver and navigate to the Assets UI. To approve assets, click/tap the **[!UICONTROL Notifications]** icon and then select the review task from the list.
 
    ![notification](assets/notification.png)
 
@@ -84,7 +84,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to AEM Assets as an Approver and navigate to the Assets console. To approve assets, tap/click the **[!UICONTROL Notifications]** icon and then select the review task from the list.
+1. Log in to [!DNL Experience Manager Assets] as an Approver and navigate to the Assets console. To approve assets, tap/click the **[!UICONTROL Notifications]** icon and then select the review task from the list.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
 1. All the assets in the collection are visible on the review page. Select the assets and tap/click the **[!UICONTROL Approve/Reject]** icon to approve or reject assets, as appropriate.
 
