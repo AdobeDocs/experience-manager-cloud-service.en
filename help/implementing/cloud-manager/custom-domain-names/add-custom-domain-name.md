@@ -20,13 +20,12 @@ Follow the steps below to add a Custom Domain Name from Domain Settings page:
 
 1. Navigate to Domain Settings page from the **Environments Page** 
 
-1. Select **Add custom domain name**
-   This will launch the add custom domain name wizard.
+1. Select **Add custom domain name** to launch the add custom domain name wizard.
 
 1. Enter the custom domain name. 
 
-  >[!NOTE] 
-  >Do not include `http://`, `https://`, or spaces when entering in your domain. 
+   >[!NOTE] 
+   >You should not include `http://`, `https://`, or spaces when entering in your domain. 
 
 1. Select the Environment whose Publish service will be associated with the domain name.
 
@@ -34,14 +33,15 @@ Follow the steps below to add a Custom Domain Name from Domain Settings page:
 
 1. This will take you to the Domain Name Verification for your Environment screen. Refer to Adding a TXT Record to learn more.
 
-   >[!NOTE]Follow the instructions provided to prove domain ownership for your environment.
+   >[!NOTE]
+   >Follow the instructions provided to prove domain ownership for your environment.
 
 1. Select Continue. 
 1. CDN deployment requires a valid SSL certificate  and successful TXT verification. This is indicated by status **Verified and Deployed**.
 1. Navigate to Checking Custom Domain Name Status to learn more about various statuses and how to address.
 
->[!NOTE]
->DNS proof can take up to a few hours to recognize, because of DNS propagation delays. Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to Checking Domain Name Status for more details.
+   >[!NOTE]
+   >DNS proof can take up to a few hours to recognize, because of DNS propagation delays. Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to Checking Domain Name Status for more details.
 
 ## Adding a Custom Domain Name from Environments page {#adding-cdn-environments}
 
@@ -57,7 +57,7 @@ Follow the steps below to add a Custom Domain Name from Domain Settings page:
 1. Select Continue. 
 1. CDN deployment requires a valid SSL certificate  and successful TXT verification. This is indicated by status **Verified and Deployed**.  
 
-At this point, your custom domain name is ready for testing and a `CNAME` to point to it. Go to Domain Name Status to learn more about various statuses and how to address.
+At this point, your custom domain name is ready for testing and a `CNAME` to point to it. Refer to Domain Name Status to learn more about various statuses and how to address.
 
->[!NOTE]
->DNS proof can take up to a few hours to recognize, because of DNS propagation delays. Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to Checking Domain Name Status to learn more.
+   >[!NOTE]
+   >DNS proof can take up to a few hours to recognize, because of DNS propagation delays. Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to Checking Domain Name Status to learn more.
