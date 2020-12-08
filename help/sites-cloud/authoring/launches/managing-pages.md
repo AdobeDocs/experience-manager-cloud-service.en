@@ -45,6 +45,8 @@ All of these entry points will open the launch in the Sites console, where you c
 * **Create** new pages,
 * Select existing pages and take action; for example, **Edit**, open **Properties**, **Lock**, **Copy**, **Paste** and **Delete**
   ![Navigate launch in Sites Console from Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* Use the **References** rail to return to the **Launch Source** pages:
+    ![Sites Console - Launch Source](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Add Pages to Your Launch {#add-pages-to-launch}
 
