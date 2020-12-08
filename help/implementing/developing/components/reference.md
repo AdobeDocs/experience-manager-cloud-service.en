@@ -157,7 +157,7 @@ A component is a node of type `cq:Component` and has the following properties an
 |`component.html`|`nt:file`|This is the HTL script file of the component.|
 |`cq:icon`|`String`|This value points to the [icon of the component](#component-icon) and appears in the Components Browser.|
 
-If we look at the **Text** component, we can see these elements:
+If we look at the **Text** component, we can see a number of these elements:
 
 ![Text Component structure](assets/components-text.png)
 
@@ -175,102 +175,50 @@ Child nodes of particular interest include:
 
 ### Dialogs {#dialogs}
 
-Dialogs are a key element of your component as they provide an interface for authors to configure and provide input to that component.
+Dialogs are a key element of your component as they provide an interface for authors to configure the component on a content page and provide input for that component. See the [authoring documentation](/help/sites-cloud/authoring/fundamentals/editing-content.md) for details on how content authors interact with components.
 
-Depending on the complexity of the component your dialog may need one or more tabs - to keep the dialog short and to sort the input fields.
+Depending on the complexity of the component your dialog may need one or more tabs.
 
-Dialog definitions are specific to the UI:
+* `cq:dialog` ( `nt:unstructured`) nodes:
+  * define the dialog for editing content of this component
+  * are defined using Granite UI components
+  * have a property `sling:resourceType`, as standard Sling content structure
+  * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the Help icon (the ? icon) is selected.
+    * For out-of-the box components this often references a page in the documentation.
+    * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
 
->[!NOTE]
->
->* For compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.
->* The [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) is also provided to help you extend/convert components that only have dialogs defined for the classic UI.
->
+![Dialog definition of Title Component](assets/components-title-dialog.png)
 
-* Touch-Enabled UI
-    * `cq:dialog` ( `nt:unstructured`) nodes:
-        * define the dialog for editing content of this component
-        * specific to the touch-enabled UI
-        * are defined using Granite UI components
-        * have a property `sling:resourceType`, as standard Sling content structure
-        * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the Help icon (the ? icon) is selected.
-            * For out-of-the box components this often references a page in the documentation.
-            * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
+Within the dialog, individual fields are defined:
 
-  ![chlimage_1-242](assets/chlimage_1-242.png)
-
-  Within the dialog, individual fields are defined:
-
-  ![screen_shot_2012-02-13at60937pm](assets/screen_shot_2012-02-13at60937pm.png)
-
-* Classic UI
-    * `dialog` ( `cq:Dialog`) nodes
-        * define the dialog for editing content of this component
-        * specific to the classic UI
-        * are defined using ExtJS widgets
-        * have a property `xtype`, which refers to ExtJS
-        * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the **Help** button is selected.
-            * For out-of-the box components this often references a page in the documentation.
-            * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
-
-  ![chlimage_1-243](assets/chlimage_1-243.png)
-
-  Within the dialog, individual fields are defined:
-
-  ![chlimage_1-244](assets/chlimage_1-244.png)
-
-  Within a classic dialog box:
-
-    * you can create the dialog as `cq:Dialog`, which will provide a single tab - as in the text component, or if you need multiple tabs, as with the textimage component, the dialog can be defined as `cq:TabPanel`.
-    * a `cq:WidgetCollection` ( `items`) is used to provide a base for either input fields ( `cq:Widget`) or further tabs ( `cq:Widget`). This hierarchy can be extended.
+![Fields of dialog definition of Title Component](assets/components-title-dialog-items.png)
 
 ### Design Dialogs {#design-dialogs}
 
-Design dialogs are very similar to the dialogs used to edit and configure content, but they provide the interface for authors to configure and provide design details for that component.
+Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for template authors to pro-configure and provide design details for that component on a page template. Page templates are then used by the content authors to create content pages. See the [template documentation](/help/sites-cloud/authoring/features/templates.md) for details on how templates are created.
 
-[Design dialogs are available in Design Mode](/help/sites-authoring/default-components-designmode.md), though they are not needed for all components e.g. **Title** and **Image** both have design dialogs, whereas **Text** does not.
+[Design dialogs are used when editing a page template](/help/sites-cloud/authoring/features/templates.md), though they are not needed for all components. For example the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
 
-The design dialog for the paragraph system (e.g. parsys) is a special case as it allows the user to specific other components to be available for selection (from the components browser or sidekick) on the page.
+### Adding your Component to the Template {#adding-your-component-to-the-template}
 
-### Adding your Component to the Paragraph System {#adding-your-component-to-the-paragraph-system}
+Once a component has been defined it must be made available for use. To make a component available for use in a template, you must enable the component in the policy of the layout container of the template.
 
-Once a component has been defined it must be made available for use. To make a component available for use in a paragraph system you can either:
-
-1. Open [Design Mode](/help/sites-authoring/default-components-designmode.md) for a page and enable the required component.
-1. Add the required component(s) to the `components` property of your template definition under:
-
-   `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
-
-   For example, see:
-
-   `/etc/designs/geometrixx/jcr:content/contentpage/par`
-
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+See the [template documentation](/help/sites-cloud/authoring/features/templates.md) for details on how templates are created.
 
 ### Components and the Content They Create {#components-and-the-content-they-create}
 
-If we create and configure an instance of the **Title** component on the page: `<content-path>/Prototype.html`
+If we create and configure an instance of the **Title** component on the page: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
-* Touch-Enabled UI
-
-  ![chlimage_1-246](assets/chlimage_1-246.png)
-
-* Classic UI
-
-  ![screen_shot_2012-02-01at34257pm](assets/screen_shot_2012-02-01at34257pm.png)
+![Title edit dialog](assets/components-title-dialog.png)
 
 Then we can see the structure of the content created within the repository:
 
-![screen_shot_2012-02-13at61405pm](assets/screen_shot_2012-02-13at61405pm.png)
+![Title component node structure](assets/components-title-content-nodes.png)
 
-In particular, if you look at the actual text for a **Title**:
+In particular, if you look at the actual text of a **Title Component**:
 
-* the definition (for both UIs) have the property `name`= `./jcr:title`
-
-    * `/libs/foundation/components/title/cq:dialog/content/items/column/items/title`
-    * `/libs/foundation/components/title/dialog/items/title`
-
-* within the content, this generates the property `jcr:title` holding the author's content.
+* The content contains a `jcr:title` property holding the actual text of the title that the author entered.
+* It also contains a `sling:resourceType` reference to the component definition.
 
 The properties defined are dependent on the individual definitions. Although they can be more complex than above they still follow the same basic principles.
 
@@ -280,57 +228,25 @@ Components within AEM are subject to 3 different hierarchies:
 
 * **Resource Type Hierarchy**
 
-  This is used to extend components using the property `sling:resourceSuperType`. This enables the component to inherit. For example a text component will inherit various attributes from the standard component.
-
-    * scripts (resolved by Sling)
-    * dialogs
-    * descriptions (including thumbnail images, icons, etc)
-
-* **Container Hierarchy**
-
-  This is used to populate configuration settings to the child component and is most commonly used in a parsys scenario.
-
-  For example, configuration settings for the edit bar buttons, control set layout (editbars, rollover), dialog layout (inline, floating) can be defined on the parent component and propagated to the child components.
-
-  Configuration settings (related to edit functionality) in `cq:editConfig` and `cq:childEditConfig` are propagated.
-
-* **Include Hierarchy**
-
-  This is imposed at runtime by the sequence of includes.
-
-  This hierarchy is used by the Designer, which in turn acts as the base for various design aspects of the rendering; including layout information, css information, the available components in a parsys among others.
+  This is used to extend components using the property `sling:resourceSuperType`. This enables the component to inherit from another component.
 
 ## Edit Behavior {#edit-behavior}
 
-This section explains how to configure the edit behavior of a component. This includes attributes such as actions available for the component, characteristics of the inplace editor and the listeners related to events on the component.
-
-The configuration is common to both the touch-enabled and classic UI, albeit with certain, specific differences.
+This section explains how to configure the edit behavior of a component. This includes attributes such as actions available for the component, characteristics of the in.place editor, and the listeners related to events on the component.
 
 The edit behavior of a component is configured by adding a `cq:editConfig` node of type `cq:EditConfig` below the component node (of type `cq:Component`) and by adding specific properties and child nodes. The following properties and child nodes are available:
 
-* [ `cq:editConfig` node properties](#configuring-with-cq-editconfig-properties):
-
-    * `cq:actions` ( `String array`): defines the actions that can be performed on the component.
-    * `cq:layout` ( `String`): : defines how the component is edited in the classic UI.
-    * `cq:dialogMode` ( `String`): defines how the component dialog is opened in the classic UI
-
-        * In the touch-enabled UI, dialogs are always floating in desktop mode, and automatically opened as fullscreen in mobile.
-
-    * `cq:emptyText` ( `String`): defines text that is displayed when no visual content is present.
-    * `cq:inherit` ( `Boolean`): defines if missing values are inherited from the component that it inherits from.
-    * `dialogLayout` (String): defines how the dialog should open.
-
-* [ `cq:editConfig` child nodes](#configuring-with-cq-editconfig-child-nodes):
-
-    * `cq:dropTargets` (node type `nt:unstructured`): defines a list of drop targets that can accept a drop from an asset of the content finder
-
-        * Multiple drop targets are only available in the classic UI.
-        * In the touch-enabled UI a single drop target is allowed.
-
-    * `cq:actionConfigs` (node type `nt:unstructured`): defines a list of new actions that are appended to the cq:actions list.
-    * `cq:formParameters` (node type `nt:unstructured`): defines additional parameters that are added to the dialog form.
-    * `cq:inplaceEditing` (node type `cq:InplaceEditingConfig`): defines an inplace editing configuration for the component.
-    * `cq:listeners` (node type `cq:EditListenersConfig`): defines what happens before or after an action occurs on the component.
+* [`cq:editConfig` node properties](#configuring-with-cq-editconfig-properties):
+  * `cq:actions` (`String` array) -  Defines the actions that can be performed on the component
+  * `cq:emptyText` ( `String`) - Defines text that is displayed when no visual content is present
+  * `cq:inherit` (`Boolean`) - Defines if missing values are inherited from another component
+  * `dialogLayout` (`String`) - Defines how the dialog should open
+* [`cq:editConfig` child nodes](#configuring-with-cq-editconfig-child-nodes):
+  * `cq:dropTargets` (node type `nt:unstructured`): defines a list of drop targets that can accept a drop from an asset of the content finder (a single drop target is allowed)
+  * `cq:actionConfigs` (node type `nt:unstructured`): defines a list of new actions that are appended to the cq:actions list.
+  * `cq:formParameters` (node type `nt:unstructured`): defines additional parameters that are added to the dialog form.
+  * `cq:inplaceEditing` (node type `cq:InplaceEditingConfig`): defines an inplace editing configuration for the component.
+  * `cq:listeners` (node type `cq:EditListenersConfig`): defines what happens before or after an action occurs on the component.
 
 >[!NOTE]
 >
