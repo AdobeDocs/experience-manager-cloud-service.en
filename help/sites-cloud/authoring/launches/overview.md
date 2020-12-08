@@ -77,23 +77,31 @@ Launches allow you to:
 >
 >Please contact your system administrator if you experience any problems.
 
-## The Launches Console {#the-launches-console}
-
-The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
-
-* The **Tools** Console: **Tools**, **Sites**, **Launches**.
-
-* Or directly; for example, with:
-   `https://<host>:<port>/libs/launches/content/launches.html`
-
 ## Launches in References (Sites Console) {#launches-in-references-sites-console}
 
 1. In the **Sites** console, navigate to the source of the launch(es).
 1. Open the **References** rail and select the source page.
-1. Select **Launches**, the existing launch(es) will be listed:
+1. Select **Launches**, the existing launch(es) will be listed, together with access to the **Launches Console**:
 
    ![References of launches in sites console](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
 
    ![Actions to take on launches in sites console](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## The Launches Console {#the-launches-console}
+
+The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
+
+* The **Tools** Console: **Tools**, **Sites**, **Launches**.
+
+* **Launches Console** at the bottom of the **Launches** section of the **References** rail when navigating source content in the Sites console.
+
+  ![Launches Console in References of launches in Sites console](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* The **Launches** button at the top right, when navigating launch content in the Sites console:
+
+  ![Launches option in Sites console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* Or directly; for example, with:
+   `https://<host>:<port>/libs/launches/content/launches.html`
