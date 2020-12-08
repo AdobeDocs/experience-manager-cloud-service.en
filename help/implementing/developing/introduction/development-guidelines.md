@@ -115,7 +115,7 @@ The log levels are as follows:
 
 Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, please contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
-## CRX/DE Lite and System Console {#crxde-lite-and-system-console}
+## CRX/DE Lite and Developer Console {#crxde-lite-and-developer-console}
 
 ### Local Development {#local-development}
 
@@ -125,7 +125,7 @@ Note that on local development (using the cloud-ready quickstart), `/apps` and `
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-Customers can access CRXDE lite on the development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
+Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
 A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
