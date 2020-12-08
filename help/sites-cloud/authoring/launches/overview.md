@@ -26,7 +26,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 * [Creating Launches](/help/sites-cloud/authoring/launches/creating.md)
 * [Editing Launches](/help/sites-cloud/authoring/launches/editing.md)
 * [Managing Pages within Launches](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [Using Timewarp to Preview your content based on Launches](/help/sites-cloud/authoring/launches/preview.md)
+* [Using Timewarp to Preview your Content based on Launches](/help/sites-cloud/authoring/launches/preview.md)
 * [Promoting Launches](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Launches - the Order of Events {#launches-the-order-of-events}
@@ -77,13 +77,14 @@ Launches allow you to:
 >
 >Please contact your system administrator if you experience any problems.
 
-### The Launches Console {#the-launches-console}
+## The Launches Console {#the-launches-console}
 
 The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
 
 * The **Tools** Console: **Tools**, **Sites**, **Launches**.
 
-* Or directly with `https://<host>:<port>/libs/launches/content/launches.html`
+* Or directly; for example, with:
+   `https://<host>:<port>/libs/launches/content/launches.html`
 
 ## Launches in References (Sites Console) {#launches-in-references-sites-console}
 
