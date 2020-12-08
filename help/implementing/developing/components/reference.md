@@ -236,342 +236,35 @@ This section explains how to configure the edit behavior of a component. This in
 
 The edit behavior of a component is configured by adding a `cq:editConfig` node of type `cq:EditConfig` below the component node (of type `cq:Component`) and by adding specific properties and child nodes. The following properties and child nodes are available:
 
-* [`cq:editConfig` node properties](#configuring-with-cq-editconfig-properties):
-  * `cq:actions` (`String` array) -  Defines the actions that can be performed on the component
-  * `cq:emptyText` ( `String`) - Defines text that is displayed when no visual content is present
-  * `cq:inherit` (`Boolean`) - Defines if missing values are inherited from another component
-  * `dialogLayout` (`String`) - Defines how the dialog should open
+* `cq:editConfig` node properties
 * [`cq:editConfig` child nodes](#configuring-with-cq-editconfig-child-nodes):
   * `cq:dropTargets` (node type `nt:unstructured`): defines a list of drop targets that can accept a drop from an asset of the content finder (a single drop target is allowed)
-  * `cq:actionConfigs` (node type `nt:unstructured`): defines a list of new actions that are appended to the cq:actions list.
-  * `cq:formParameters` (node type `nt:unstructured`): defines additional parameters that are added to the dialog form.
-  * `cq:inplaceEditing` (node type `cq:InplaceEditingConfig`): defines an inplace editing configuration for the component.
-  * `cq:listeners` (node type `cq:EditListenersConfig`): defines what happens before or after an action occurs on the component.
+  * `cq:inplaceEditing` (node type `cq:InplaceEditingConfig`): defines an in-place editing configuration for the component
+  * `cq:listeners` (node type `cq:EditListenersConfig`): defines what happens before or after an action occurs on the component
 
->[!NOTE]
->
->In this page, a node (properties and child nodes) is represented as XML, as shown in the following example.
-
-```
-<jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
-    cq:actions="[edit]"
-    cq:dialogMode="floating"
-    cq:layout="editbar"
-    jcr:primaryType="cq:EditConfig">
-    <cq:listeners
-        jcr:primaryType="cq:EditListenersConfig"
-        afteredit="REFRESH_PAGE"/>
-</jcr:root>
-```
-
-There are many existing configurations in the repository. You can easily search for specific properties or child nodes:
-
-* To look for a property of the `cq:editConfig` node, e.g. `cq:actions`, you can use the Query tool in **CRXDE Lite** and search with the following XPath query string:
-
-  `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
-
-* To look for a child node of `cq:editConfig`, e.g. you can search for `cq:dropTargets`, which is of type `cq:DropTargetConfig`; you can use the Query tool in** CRXDE Lite** and search with the following XPath query string:
-
-  `//element(cq:dropTargets, cq:DropTargetConfig)`
-
-### Configuring with cq:EditConfig Properties {#configuring-with-cq-editconfig-properties}
-
-### cq:actions {#cq-actions}
-
-The `cq:actions` property ( `String array`) defines one or several actions that can be performed on the component. The following values are available for configuration:
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property Value</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><code>text:&lt;some text&gt;</code></td>
-   <td>Displays the static text value &lt;some text&gt;<br /> Only visible in classic UI. The touch-enabled UI does not display actions in a contextual menu, so this is not applicable.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>Adds a spacer.<br /> Only visible in classic UI. The touch-enabled UI does not display actions in a contextual menu, so this is not applicable.</td>
-  </tr>
-  <tr>
-   <td><code>edit</code></td>
-   <td>Adds a button to edit the component.</td>
-  </tr>
-      <tr>
-    <td><code>editannotate</code></td>
-    <td>Adds a button to edit the component as well as allowing <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
-   </tr>
-  <tr>
-   <td><code>delete</code></td>
-   <td>Adds a button to delete the component</td>
-  </tr>
-  <tr>
-   <td><code>insert</code></td>
-   <td>Adds a button to insert a new component before the current one</td>
-  </tr>
-  <tr>
-   <td><code>copymove</code></td>
-   <td>Adds a button to copy and cut the component.</td>
-  </tr>
- </tbody>
-</table>
-
-The following configuration adds an edit button, a spacer, a delete and an insert button to the component edit bar:
-
-```
-<jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
-    cq:actions="[edit,-,delete,insert]"
-    cq:layout="editbar"
-    jcr:primaryType="cq:EditConfig"/>
-```
-
-The following configuration adds the text "Inherited Configurations from Base Framework" to the component edit bar:
-
-```
-<jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
-    cq:actions="[text:Inherited Configurations from Base Framework]"
-    cq:layout="editbar"
-    jcr:primaryType="cq:EditConfig"/>
-```
-
-### cq:layout (Classic UI Only) {#cq-layout-classic-ui-only}
-
-The `cq:layout` property ( `String`) defines how the component can be edited in the classic UI. The following values are available:
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property Value</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><code>rollover</code></td>
-   <td>Default value. The component edition is accessible "on mouse over" through clicks and/or context menu.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditRollover</code>.</td>
-  </tr>
-  <tr>
-   <td><code>editbar</code></td>
-   <td>The component edition is accessible through a toolbar.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditBar</code>.</td>
-  </tr>
-  <tr>
-   <td><code>auto</code></td>
-   <td>The choice is left to the client side code.</td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
->The concepts of rollover and editbar are not applicable in the touch-enabled UI.
-
-The following configuration adds an edit button to the component edit bar:
-
-```
-<jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
-    cq:actions="[edit]"
-    cq:layout="editbar"
-    jcr:primaryType="cq:EditConfig">
-</jcr:root>
-```
-
-### cq:dialogMode (Classic UI Only) {#cq-dialogmode-classic-ui-only}
-
-The component can be linked to an edit dialog. The `cq:dialogMode` property ( `String`) defines how the component dialog will be opened in the classic UI. The following values are available:
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property Value</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><code>floating</code></td>
-   <td>The dialog is floating.<br /> </td>
-  </tr>
-  <tr>
-   <td><code>inline</code></td>
-   <td>(default value). The dialog is anchored over the component.<br /> </td>
-  </tr>
-  <tr>
-   <td><code>auto</code></td>
-   <td>If the component width is smaller than the client side <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> value, the dialog is floating, otherwise it is inline.</td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
->In the touch-enabled UI, dialogs are always floating in desktop mode and automatically opened as fullscreen in mobile.
-
-The following configuration defines an edit bar with an edit button, and a floating dialog:
-
-```
-<jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
-    cq:actions="[edit]"
-    cq:dialogMode="floating"
-    cq:layout="editbar"
-    jcr:primaryType="cq:EditConfig">
-</jcr:root>
-```
-
-### cq:emptyText {#cq-emptytext}
-
-The `cq:emptyText` property ( `String`) defines text that is displayed when no visual content is present. It defaults to: `Drag components or assets here`.
-
-### cq:inherit {#cq-inherit}
-
-The `cq:inherit` property ( `boolean`) defines whether missing values are inherited from the component that it inherits from. It defaults to `false`.
-
-### dialogLayout {#dialoglayout}
-
-The `dialogLayout` property defines how a dialog should open by default.
-
-* A value of `fullscreen` opens the dialog in full screen.
-* An empty value or absence of the property defaults to opening the dialog normally.
-* Note that the user can always toggle the fullscreen mode within the dialog.
-* Does not apply to the classic UI.
+There are many existing configurations in AEM. You can easily search for specific properties or child nodes using the Query tool in **CRXDE Lite**.
 
 ### Configuring with cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
 
-### cq:dropTargets {#cq-droptargets}
+#### cq:dropTargets {#cq-droptargets}
 
-The `cq:dropTargets` node (node type `nt:unstructured`) defines a list of drop targets that can accept a drop from an asset dragged from the content finder. It serves as a collection of nodes of type `cq:DropTargetConfig`.
+The `cq:dropTargets` node (node type `nt:unstructured`) defines the drop target that can accept a drop from an asset dragged from the content finder. It is a node of type `cq:DropTargetConfig`.
 
->[!NOTE]
->
->Multiple drop targets are only available in the classic UI.
->
->In the touch-enabled UI only the first target will be used.
-
-Each child node of type `cq:DropTargetConfig` defines a drop target in the component. The node name is important because it must be used in the JSP, as follows, to generate the CSS class name assigned to the DOM element that is the effective drop target:
-
-```
-<drop target css class> = <drag and drop prefix> +
- <node name of the drop target in the edit configuration>
-```
-
-The `<drag and drop prefix>` is defined by the Java property:
-
-`com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
-
-For example, the class name is defined as follows in the JSP of the Download component
-( `/libs/foundation/components/download/download.jsp`), where `file` is the node name of the drop target in the edit configuration of the Download component:
-
-`String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
-
-The node of type `cq:DropTargetConfig` needs to have the following properties:
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property Name</strong></td>
-   <td><strong>Property Value<br /> </strong></td>
-  </tr>
-  <tr>
-   <td><code>accept</code></td>
-   <td>Regex applied to the asset mime type to validate if dropping is allowed.</td>
-  </tr>
-  <tr>
-   <td><code>groups</code></td>
-   <td>Array of drop target groups. Each group must match the group type that is defined in the content finder extension and that is attached to the assets.</td>
-  </tr>
-  <tr>
-   <td><code>propertyName</code></td>
-   <td>Name of the property that will be updated after a valid drop.</td>
-  </tr>
- </tbody>
-</table>
-
-The following configuration is taken from the Download component. It enables any asset (the mime-type can be any string) from the `media` group to be dropped from the content finder into the component. After the drop, the component property `fileReference` is being updated:
-
-```
-    <cq:dropTargets jcr:primaryType="nt:unstructured">
-        <file
-            jcr:primaryType="cq:DropTargetConfig"
-            accept="[.*]"
-            groups="[media]"
-            propertyName="./fileReference"/>
-    </cq:dropTargets>
-```
-
-### cq:actionConfigs (Classic UI Only) {#cq-actionconfigs-classic-ui-only}
-
-The `cq:actionConfigs` node (node type `nt:unstructured`) defines a list of new actions that are appended to the list defined by the `cq:actions` property. Each child node of `cq:actionConfigs` defines a new action by defining a widget.
-
-The following sample configuration defines a new button (with a separator for the classic UI):
-
-* a separator, defined by the xtype `tbseparator`;
-
-    * This is only used by the classic UI.
-    * This definition is ignored by the touch-enabled UI as xtypes are ignored (and separators are unnecessary as the action toolbar is constructed differently in the touch-enabled UI).
-
-* a button named **Manage comments** that runs the handler function `CQ_collab_forum_openCollabAdmin()`.
-
-```
-<jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
-    cq:actions="[EDIT,COPYMOVE,DELETE,INSERT]"
-    jcr:primaryType="cq:EditConfig">
-    <cq:actionConfigs jcr:primaryType="nt:unstructured">
-        <separator0
-            jcr:primaryType="nt:unstructured"
-            xtype="tbseparator"/>
-        <manage
-            jcr:primaryType="nt:unstructured"
-            handler="function(){CQ_collab_forum_openCollabAdmin();}"
-            text="Manage comments"/>
-    </cq:actionConfigs>
-</jcr:root>
-```
-
->[!NOTE]
->
->See [Add New Action to a Component Toolbar](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) as an example for the touch-enabled UI.
-
-### cq:formParameters {#cq-formparameters}
-
-The `cq:formParameters` node (node type `nt:unstructured`) defines additional parameters that are added to the dialog form. Each property is mapped to a form parameter.
-
-The following configuration adds a parameter called `name`, set with the value `photos/primary` to the dialog form:
-
-```
-    <cq:formParameters
-        jcr:primaryType="nt:unstructured"
-        name="photos/primary"/>
-```
+The child node of type `cq:DropTargetConfig` defines a drop target in the component.
 
 ### cq:inplaceEditing {#cq-inplaceediting}
 
-The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an inplace editing configuration for the component. It can have the following properties:
+The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an in-place editing configuration for the component. It can have the following properties:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property Name</strong></td>
-   <td><strong>Property Value<br /> </strong></td>
-  </tr>
-  <tr>
-   <td><code>active</code></td>
-   <td>(<code>boolean</code>) True to enable the inplace editing of the component.</td>
-  </tr>
-  <tr>
-   <td><code>configPath</code></td>
-   <td>(<code>String</code>) Path of the editor configuration. The configuration can be specified by a configuration node.</td>
-  </tr>
-  <tr>
-   <td><code>editorType</code></td>
-   <td><p>(<code>String</code>) Editor type. The available types are:</p>
-    <ul>
-     <li>plaintext: to be used for non HTML content.<br /> </li>
-     <li>title: is an enhanced plaintext editor that converts graphical titles into a plaintext before editing begins. Used by the Geometrixx title component.<br /> </li>
-     <li>text: to be used for HTML content (uses the Rich Text Editor).<br /> </li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|Property Name|Property Type|Property Value|
+|---|---|---|
+|`active`|`Boolean`|`true` to enable the in-place editing of the component.|
+|`configPath`|`String`|Path of the editor configuration, which can be specified by a configuration node|
+|`editorType`|`String`|The available types are: `plaintext` for non HTML content, `title` converts graphical titles into a plaintext before editing begins, and `text` uses the Rich Text Editor|
 
-The following configuration enables the inplace editing of the component and defines `plaintext` as the editor type:
+The following configuration enables the inp-lace editing of the component and defines `plaintext` as the editor type:
 
-```
+```text
     <cq:inplaceEditing
         jcr:primaryType="cq:InplaceEditingConfig"
         active="{Boolean}true"
@@ -582,91 +275,27 @@ The following configuration enables the inplace editing of the component and def
 
 The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happens before or after an action on the component. The following table defines its possible properties.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property Name</strong></td>
-   <td><strong>Property Value<br /> </strong></td>
-   <td><p><strong>Default Value</strong></p> <p>(Classic UI Only)</p> </td>
-  </tr>
-  <tr>
-   <td><code>beforedelete</code></td>
-   <td>The handler is triggered before the component is removed.<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>beforeedit</code></td>
-   <td>The handler is triggered before the component is edited.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>beforecopy</code></td>
-   <td>The handler is triggered before the component is copied.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>beforemove</code></td>
-   <td>The handler is triggered before the component is moved.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>beforeinsert</code></td>
-   <td>The handler is triggered before the component is inserted.<br /> Only operational for the touch-enabled UI.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>beforechildinsert</code></td>
-   <td>The handler is triggered before the component is inserted inside another component (containers only).</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>afterdelete</code></td>
-   <td>The handler is triggered after the component is removed.</td>
-   <td><code>REFRESH_SELF</code></td>
-  </tr>
-  <tr>
-   <td><code>afteredit</code></td>
-   <td>The handler is triggered after the component is edited.</td>
-   <td><code>REFRESH_SELF</code></td>
-  </tr>
-  <tr>
-   <td><code>aftercopy</code></td>
-   <td>The handler is triggered after the component is copied.</td>
-   <td><code>REFRESH_SELF</code></td>
-  </tr>
-  <tr>
-   <td><code>afterinsert</code></td>
-   <td>The handler is triggered after the component is inserted.</td>
-   <td><code>REFRESH_INSERTED</code></td>
-  </tr>
-  <tr>
-   <td><code>aftermove</code></td>
-   <td>The handler is triggered after the component is moved.</td>
-   <td><code>REFRESH_SELFMOVED</code></td>
-  </tr>
-  <tr>
-   <td><code>afterchildinsert</code></td>
-   <td>The handler is triggered after the component is inserted inside another component (containers only).</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
+|Property Name|Property Value|
+|---|---|
+|`beforedelete`|The handler is triggered before the component is removed.|
+|`beforeedit`|The handler is triggered before the component is edited.|
+|`beforecopy`|The handler is triggered before the component is copied.|
+|`beforeremove`|The handler is triggered before the component is moved.|
+|`beforeinsert`|The handler is triggered before the component is inserted.|
+|`beforechildinsert`|The handler is triggered before the component is inserted inside another component (containers only).|
+|`afterdelete`|The handler is triggered after the component is removed.|
+|`afteredit`|The handler is triggered after the component is edited.|
+|`aftercopy`|The handler is triggered after the component is copied.|
+|`afterinsert`|The handler is triggered after the component is inserted.|
+|`aftermove`|The handler is triggered after the component is moved.|
+|`afterchildinsert`|The handler is triggered after the component is inserted inside another component (containers only).|
 
 >[!NOTE]
 >
->The `REFRESH_INSERTED` and `REFRESH_SELFMOVED` handlers are only available in the classic UI.
-
->[!NOTE]
+>In the case of nested components there are certain restrictions on actions defined as properties on the `cq:listeners` node. For nested components, the values of the following properties **must** be `REFRESH_PAGE`:
 >
->Default values for the listeners are only set in the classic UI.
-
->[!NOTE]
->
->In the case of nested components there are certain restrictions on actions defined as properties on the `cq:listeners` node:
->
->* For nested components, the values of the following properties *must* be `REFRESH_PAGE`: >
->  * `aftermove`
->  * `aftercopy`
+>* `aftermove`
+>* `aftercopy`
 
 The event handler can be implemented with a custom implementation. For example (where `project.customerAction` is a static method):
 
@@ -676,13 +305,9 @@ The following example is equivalent to the `REFRESH_INSERTED` configuration:
 
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
->[!NOTE]
->
->For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
-
 With the following configuration the page is refreshed after the component has been deleted, edited, inserted or moved:
 
-```
+```text
     <cq:listeners
         jcr:primaryType="cq:EditListenersConfig"
         afterdelete="REFRESH_PAGE"
