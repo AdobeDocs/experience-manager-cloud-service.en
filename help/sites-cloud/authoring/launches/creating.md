@@ -113,13 +113,15 @@ Creating a nested launch (launch within a launch) gives you the ability to creat
 Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
 
 1. In the **Launches** console select **Create**.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Select the required launch and confirm with **Select**:
+1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the **Filters** rail. Select the required launch and confirm with **Select**:
 
    ![Creating a nested launch](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Proceed with **Next** and complete the **Properties** as with any other launch.
+1. Proceed with **Next**.
 
-   ![Select source for nested launch](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Complete the **Properties** as with any other launch.
+
+1. Complete with **Create**.
 
 #### Creating a Nested Launch - Sites Console {#creating-a-nested-launch-sites-console}
 
