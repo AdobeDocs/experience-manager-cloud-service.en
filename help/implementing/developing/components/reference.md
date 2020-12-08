@@ -62,8 +62,6 @@ This is an abstraction that helps to ensure that even when the look and feel cha
 
 ### Component Definition {#component-definition}
 
-#### Component Basics {#component-basics}
-
 The definition of a component can be broken down as follows:
 
 * AEM components are based on [Sling.](https://sling.apache.org/documentation.html)
