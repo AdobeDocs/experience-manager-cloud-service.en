@@ -1,6 +1,6 @@
 ---
 title: Interactive Videos
-description: Learn how to work with interactive video and shoppable video in Dynamic Media
+description: Learn how to work with interactive video and shoppable video in Dynamic Media.
 ---
 
 # Interactive Videos{#interactive-videos}

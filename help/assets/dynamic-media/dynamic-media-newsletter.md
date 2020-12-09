@@ -1,6 +1,6 @@
 ---
-description: The Dynamic Media Newsletter by Experience League is a monthly newsletter. It is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can start realize value right away. Valuable knowledge-building resources are available in this one-stop shop newsletter, including how to videos, solution overviews, and introductions to some of the key features and capabilities like image presets, viewer presets, video profiles, and more. 
 title: Dynamic Media Newsletter
+description: The Dynamic Media Newsletter by Experience League is a monthly newsletter. It is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can start realize value right away. Valuable knowledge-building resources are available in this one-stop shop newsletter, including how to videos, solution overviews, and introductions to some of the key features and capabilities like image presets, viewer presets, video profiles, and more. 
 ---
 
 # ![Dynamic Media Newsletter logo](/help/assets/dynamic-media/assets/dynamic-media-newsletter-logo.png)

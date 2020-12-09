@@ -37,11 +37,14 @@ You need to promote launch pages to move the content back into the source (produ
 You can promote launches from either the **Sites** console or the **Launches** console:
 
 1. Open:
-   * The **Sites** console:
+   * The **Sites** console when navigating source pages:
      1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
      1. Select **Launches** (e.g. Launches (1)) to show a list of the specific launches.
      1. Select the specific launch to show the actions available.
      1. Select **Promote launch** to open the wizard.
+   * The **Sites** console when navigating launch pages:
+     1. Select the required launch page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+     1. The **Promote** action will be available in the toolbar.
    * The **Launches** console:
      1. Select your launch (tap/click on the thumbnail).
      1. Select **Promote**.
@@ -51,6 +54,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
     * **Scope**
       * **Promote full launch**
       * **Promote modified pages**
+      * **Promote approved pages** - dependent on the launch approval workflow
       * **Promote current page**
       * **Promote current page and sub pages**
 
@@ -62,7 +66,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
       >
       >This covers a single launch, if you have nested launches see [Promoting a Nested Launch](#promoting-a-nested-launch).
 1. Select **Next** to proceed.
-1. You can review the pages to be promoted, these will depend on the range of pages you have chosen:
+1. You can review the pages to be promoted; these will depend on the range of pages you have chosen:
 
    ![Review promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -93,6 +97,7 @@ After creating a nested launch you can promote it back to any of the sources, in
    * **Scope** - Here you can select whether to promote the entire launch, or only pages that have actually been edited. If the latter, you can then select to include/exclude sub-pages. The default configuration is to only promote page changes for the current page:
       * **Promote full launch**
       * **Promote modified pages**
+      * **Promote approved pages** - dependent on the launch approval workflow
       * **Promote current page**
       * **Promote current page and sub pages**
 
