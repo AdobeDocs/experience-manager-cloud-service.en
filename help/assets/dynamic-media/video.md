@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Learn how to work with video in Dynamic Media
+description: Learn how to work with video in Dynamic Media.
 ---
 
 # Video{#video}
