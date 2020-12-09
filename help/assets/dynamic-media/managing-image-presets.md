@@ -1,6 +1,6 @@
 ---
 title: Managing Image Presets
-description: Understand image presets and learn how to create, modify, and manage image presets
+description: Understand image presets and learn how to create, modify, and manage image presets.
 ---
 
 # Managing Image Presets{#managing-image-presets}
