@@ -56,6 +56,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Image Editor](developing/components/image-editor.md)
       + [Decoration Tags](developing/components/decoration-tag.md)
       + [Using Hide Conditions](developing/components/hide-conditions.md)
+      + [Components Reference Guide](developing/components/reference.md)
     + [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)
     + [Building Tagging into AEM Applications](/help/implementing/developing/introduction/tagging-applications.md)
     + Search {#search}
