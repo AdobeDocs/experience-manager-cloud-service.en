@@ -4,53 +4,57 @@ description: [!DNL Assets] APIs and developer reference content lets you manage 
 contentOwner: AG
 ---
 
-# [!DNL Assets] APIs and developer reference material {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] APIs and developer reference material {#assets-cloud-service-apis}
 
-The article contains recommendations, reference materials and resources for developers of [!DNL Assets] as a Cloud Service. It includes new asset upload module, API reference, and information about the support provided in post-processing workflows.
+The article contains recommendations, reference materials, and resources for developers of [!DNL Assets] as a [!DNL Cloud Service]. It includes new asset upload module, API reference, and information about the support provided in post-processing workflows.
 
-## AEM Assets APIs and Operations
+## [!DNL Experience Manager Assets] APIs and operations {#use-cases-and-apis}
 
-AEM as a Cloud Service provides several APIs for programmatically interacting with AEM Assets, with each API supporting specific operations. Review the table below to understand which APIs support different operations. Note that some APIs continue to exist, however are not supported (denoted with an ❌) and must not be used.
+[!DNL Assets] as a [!DNL Cloud Service] provides several APIs to programmatically interact with digital assets. Each API supports specific use cases, as mentioned in the table below. The [!DNL Assets] user interface, [!DNL Experience Manager] desktop app and [!DNL Adobe Asset Link] support all or some of the operations.
 
-The AEM Assets UI, Experience Manager Desktop App and Adobe Asset Link support these, or subsets of these, operations.
+>[!CAUTION]
+>
+>Some APIs continue to exist but are not actively supported (denoted with an &times;) and must not be used.
 
-* ✔️ : Operation supported
-* ❌ : Operation __not__ supported
-* ➖ : Operation unavailable
+| Support level |         Description         |
+| ------------- | --------------------------- |
+| &#10003;      | Supported                   |
+| &times;       | Not supported. Do not use.  |
+| -             | Not available               |
 
-| | [@adobe/aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java APIs | [Asset Compute workers](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [AEM Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=en#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | GraphQL _(Preview)_ |
+| Use case | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java APIs | [Asset compute service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | GraphQL _(Preview)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
-| __Asset Original Binary__ |||||||
-| Create original    |✔️|❌|➖|❌|❌|➖|
-| Read original      |➖|❌|✔️|✔️|✔️|➖| 
-| Update original    |✔️|❌|✔️|❌|❌ |➖|
-| Delete original    |➖|✔️|➖|✔️|✔️|➖|
-| Copy original      |➖|✔️|➖|✔️|✔️|➖| 
-| Move original      |➖|✔️|➖|✔️|✔️|➖| 
-| __Asset Metadata__ ||||||| 
-| Create metadata    |➖|✔️|✔️|✔️|✔️|➖|
-| Read metadata      |➖|✔️|➖|✔️|✔️|➖|
-| Update metadata    |➖|✔️|✔️|✔️|✔️|➖|
-| Delete metadata    |➖|✔️|✔️|✔️|✔️|➖|
-| Copy metadata      |➖|✔️|➖|✔️|✔️|➖|
-| Move metadata      |➖|✔️|➖|✔️|✔️|➖|
-| __Content Fragments (CF)__ |||||||
-| Create CF          |➖|✔️|➖|✔️|➖|➖|
-| Read CF            |➖|✔️|➖|✔️|➖|✔️|
-| Update CF          |➖|✔️|➖|✔️|➖|➖|
-| Delete CF          |➖|✔️|➖|✔️|➖|➖|
-| Copy CF            |➖|✔️|➖|✔️|➖|➖|
-| Move CF            |➖|✔️|➖|✔️|➖|➖| 
-| __Asset Versions__ ||||||| 
-| Create version     |✔️|✔️|➖|➖|➖|➖|
-| Read version       |➖|✔️|➖|➖|➖|➖|
-| Delete version     |➖|✔️|➖|➖|➖|➖|
-| __Asset Folders__ |||||||
-| Create folder      |✔️|✔️|➖|✔️|➖|➖|
-| Read folder        |➖|✔️|➖|✔️|➖|➖|
-| Delete folder      |✔️|✔️|➖|✔️|➖|➖|
-| Copy folder        |✔️|✔️|➖|✔️|➖|➖| 
-| Move folder        |✔️|✔️|➖|✔️|➖|➖| 
+| **Original binary** |||||||
+| Create original    |&#10003;|&times;|-|&times;|&times;|-|
+| Read original      |-|&times;|&#10003;|&#10003;|&#10003;|-|
+| Update original    |&#10003;|&times;|&#10003;|&times;|&times; |-|
+| Delete original    |-|&#10003;|-|&#10003;|&#10003;|-|
+| Copy original      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Move original      |-|&#10003;|-|&#10003;|&#10003;|-|
+| **Metadata** |||||||
+| Create metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Read metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Update metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Delete metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Copy metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Move metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| **Content Fragments (CF)** |||||||
+| Create CF          |-|&#10003;|-|&#10003;|-|-|
+| Read CF            |-|&#10003;|-|&#10003;|-|&#10003;|
+| Update CF          |-|&#10003;|-|&#10003;|-|-|
+| Delete CF          |-|&#10003;|-|&#10003;|-|-|
+| Copy CF            |-|&#10003;|-|&#10003;|-|-|
+| Move CF            |-|&#10003;|-|&#10003;|-|-|
+| **Versions** |||||||
+| Create version     |&#10003;|&#10003;|-|-|-|-|
+| Read version       |-|&#10003;|-|-|-|-|
+| Delete version     |-|&#10003;|-|-|-|-|
+| **Folders** |||||||
+| Create folder      |&#10003;|&#10003;|-|&#10003;|-|-|
+| Read folder        |-|&#10003;|-|&#10003;|-|-|
+| Delete folder      |&#10003;|&#10003;|-|&#10003;|-|-|
+| Copy folder        |&#10003;|&#10003;|-|&#10003;|-|-|
+| Move folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 
 ## Asset upload {#asset-upload-technical}
 
