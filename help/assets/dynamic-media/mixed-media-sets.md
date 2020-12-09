@@ -1,6 +1,6 @@
 ---
 title: Mixed Media Sets
-description: Learn how to work with mixed media sets in Dynamic Media
+description: Learn how to work with mixed media sets in Dynamic Media.
 ---
 
 # Mixed Media Sets{#mixed-media-sets}
