@@ -1,6 +1,6 @@
 ---
 title: Carousel Banners
-description: Learn how to work with carousel banners in Dynamic Media
+description: Learn how to work with Carousel Banners in Dynamic Media.
 ---
 
 # Carousel Banners{#carousel-banners}
