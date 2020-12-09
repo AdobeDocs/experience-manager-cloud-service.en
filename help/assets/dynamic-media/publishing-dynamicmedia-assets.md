@@ -1,6 +1,6 @@
 ---
 title: Publishing Dynamic Media Assets
-description: How to publish dynamic media assets
+description: Learn how to publish Dynamic Media assets.
 contentOwner: Rick Brough
 ---
 

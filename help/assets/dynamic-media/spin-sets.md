@@ -1,6 +1,6 @@
 ---
 title: Spin Sets
-description: Learn how to work with spin sets in Dynamic Media
+description: Learn how to work with spin sets in Dynamic Media.
 ---
 
 # Spin Sets{#spin-sets}
