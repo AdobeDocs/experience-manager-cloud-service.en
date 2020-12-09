@@ -30,11 +30,11 @@ If [Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-common
 
 * Via Adobe I/O CLI : It is recommended to use the Index Converter via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin for the Adobe I/O CLI).
 
-Refer to **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** to learn how to install and use the plugin.
+   Refer to **[Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** to learn how to install and use the plugin.
 
 * As a standalone utility : The Index Converter can also be executed as a standalone utility.
 
-Refer to **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** to learn how to use this tool.
+   Refer to **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** to learn how to use this tool.
 
 
 
