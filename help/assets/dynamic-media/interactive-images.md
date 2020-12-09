@@ -1,6 +1,6 @@
 ---
 title: Interactive images
-description: Learn how to work with interactive images in Dynamic Media
+description: Learn how to work with Interactive Images in Dynamic Media.
 ---
 
 # Interactive images{#interactive-images}

@@ -87,7 +87,7 @@ To preview an asset, follow these steps.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press the Enter key. The new tag is saved in [!DNL Experience Manager].
+1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and select the `Enter` key. The new tag is saved in [!DNL Experience Manager].
 
    YouTube requires Tags to publish and have a link to YouTube (if a suitable link can be found).
 

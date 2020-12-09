@@ -1,6 +1,6 @@
 ---
 title: Setting Up Dynamic Media
-description: To set up dynamic media, you need to configure dynamic media and manage image and viewer presets
+description: To set up Dynamic Media, you need to configure Dynamic Media and manage image and viewer presets.
 ---
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
@@ -11,9 +11,9 @@ description: To set up dynamic media, you need to configure dynamic media and ma
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -33,4 +33,4 @@ See also the following topics:
 >
 >**If you are upgrading:**
 >
->* After you have AEM up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of AEM and new to Dynamic Media, you may need to re-process your assets to make them Dynamic Media-enabled.
+>* After you have Experience Manager up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of Experience Manager and new to Dynamic Media, you may need to re-process your assets to make them Dynamic Media-enabled.

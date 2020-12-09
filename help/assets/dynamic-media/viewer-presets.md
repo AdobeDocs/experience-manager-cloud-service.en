@@ -1,6 +1,6 @@
 ---
 title: Applying Dynamic Media viewer presets
-description: Learn how to apply viewer presets in Dynamic Media
+description: Learn how to apply viewer presets in Dynamic Media.
 ---
 
 # Applying Dynamic Media viewer presets {#applying-viewer-presets}
@@ -12,7 +12,7 @@ If you are an administrator and need to manage, create, sort, and delete viewer 
 See also [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
 You may not need to publish viewer presets depending on what publish mode you are using.
-Any problems with viewer presets, see [Troubleshooting Dynamic Media - Scene7](troubleshoot-dm.md#viewers).
+Any problems with viewer presets, see [Troubleshooting Dynamic Media](troubleshoot-dm.md#viewers).
 
 ## Applying a Dynamic Media viewer preset to an asset {#applying-a-viewer-preset-to-an-asset}
 

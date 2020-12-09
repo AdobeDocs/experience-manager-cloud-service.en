@@ -1,6 +1,6 @@
 ---
 title: Image Sets
-description: Learn how to work with image sets in Dynamic Media
+description: Learn how to work with image sets in Dynamic Media.
 ---
 
 # Image Sets {#image-sets}
