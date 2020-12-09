@@ -1,6 +1,6 @@
 ---
 title: Accessibility in [!DNL Dynamic Media]
-description: Learn about accessibility in Dynamic Media and Dynamic Media Viewers
+description: Learn about accessibility in Dynamic Media and Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
