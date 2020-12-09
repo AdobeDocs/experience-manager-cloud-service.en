@@ -1,8 +1,6 @@
 ---
 title: Working with 3D assets in Dynamic Media
-seo-title: Working with 3D assets in Dynamic Media
-description: Learn how to work with 3D assets in Dynamic Media
-seo-description: Learn how to work with 3D assets in Dynamic Media
+description: Learn how to work with 3D assets in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
