@@ -1,6 +1,6 @@
 ---
 title: Working with Selectors
-description: Selecting assets for interactive images, interactive video, and carousel banners
+description: Learn about methods you can use to select assets for interactive images, interactive videos, and carousel banners in Dynamic Media.
 ---
 
 # Working with Selectors in Dynamic Media {#working-with-selectors}
