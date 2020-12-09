@@ -1,6 +1,6 @@
 ---
 title: Managing viewer presets
-description: How to create and manage viewer presets
+description: How to create and manage viewer presets in Dynamic Media.
 ---
 
 # Managing Viewer Presets{#managing-viewer-presets}

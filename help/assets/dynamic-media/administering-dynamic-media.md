@@ -1,6 +1,6 @@
 ---
 title: Setting Up Dynamic Media
-description: To set up dynamic media, you need to configure dynamic media and manage image and viewer presets
+description: To set up Dynamic Media, you need to configure Dynamic Media and manage image and viewer presets.
 ---
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
