@@ -14,6 +14,11 @@ For example, the seasonal product pages of your online store are updated quarter
 * Changes to the source pages that occur as a result of normal maintenance tasks. These changes are automatically duplicated in the launch pages.
 * Edits that are performed directly on the launch pages in preparation for the next quarter.
 
+You can also:
+
+* Navigate content in the launch branch; adding, or removing, pages as necessary.
+* Preview how published content will look at a specific date/atim in the future.
+
 When the next quarter arrives, you promote the launch pages so that you can publish the source pages (holding the updated content). You can promote either all pages, or only those that you have modified.
 
 Launches can also be:
