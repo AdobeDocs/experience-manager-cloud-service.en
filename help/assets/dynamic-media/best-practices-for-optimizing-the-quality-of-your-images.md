@@ -1,6 +1,6 @@
 ---
 title: Best practices for optimizing the quality of your images
-description: Learn best practices for optimizing image quality in Dynamic Media
+description: Learn best practices you can use in Dynamic Media to optimize the quality of your image assets.
 ---
 
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}

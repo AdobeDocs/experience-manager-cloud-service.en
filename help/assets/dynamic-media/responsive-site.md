@@ -1,6 +1,6 @@
 ---
 title: Delivering Optimized Images for a Responsive Site
-description: How to use the responsive code feature to deliver optimized images
+description: Learn how to use the responsive code feature to deliver optimized images from Dynamic Media.
 ---
 
 # Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
