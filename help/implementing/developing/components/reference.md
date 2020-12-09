@@ -29,17 +29,43 @@ Before starting to actually configure or code your component you should ask:
   * CSS formatting should be kept separate from the component definitions. Define conventions for naming your HTML elements so that you can modify them through external CSS files.
 * What security implications may your new component introduce?
 
+### Reusing Existing Components {#reusing-components}
+
+Before you invest time in creating an entirely new component, consider customizing or extending existing components. [The Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) offer a suite of flexible, robust, and well-tested production-ready components.
+
+#### Extending Core Components {#extending-core-components}
+
+The Core Components also offer [clear customization patterns](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) that you can use to adapt them to the needs of your own project.
+
+#### Overlaying Components {#overlying-components}
+
+Components can also be redefined with an [overlay](/help/implementing/developing/introduction/overlays.md) based on the search path logic. However in such case, the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) will not be triggered and `/apps` must define the entire overlay.
+
+#### Extending Component Dialogs {#extending-component-dialogs}
+
+It is also possible to override a component dialog using the Sling Resource Merger and defining the property `sling:resourceSuperType`.
+
+This means you only need to redefine the required differences, as opposed to redefining the entire dialog.
+
 ### Content Logic and Rendering Markup  {#content-logic-and-rendering-markup}
+
+Your component will be rendered with [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Your component needs to define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
 
 It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
-This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This (optional) logic is invoked from HTL with a specific command. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
+This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
+
+This (optional) logic can be implemented in different ways and is invoked from HTL with specific commands:
+
+* Using Java - [The HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) enables an HTL file to access helper methods in a custom Java class. This allows you to use Java code to implement the logic for selecting and configuring the component content.
+* Using JavaScript - [The HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) enables a HTL file to access helper code written in JavaScript. This allows you to use JavaScript code to implement the logic for selecting and configuring the component content.
+* Using Client-Side Libraries - Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. See the document [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) for more information.
 
 ### Developing Your Own Components {#developing-your-own-components}
 
 Dev content here?
 
-## Structure {#structure}
+## Component Structure {#structure}
 
 The structure of an AEM component is powerful and flexible. The main parts are:
 
@@ -48,8 +74,6 @@ The structure of an AEM component is powerful and flexible. The main parts are:
 * [Properties and Child Nodes of a Component](#properties-and-child-nodes-of-a-component)
 * [Dialogs](#dialogs)
 * [Design Dialogs](#design-dialogs)
-* [Component Availability](#component-availability)
-* [Components and the Content They Create](#components-and-the-content-they-create)
 
 ### Resource Type {#resource-type}
 
@@ -177,13 +201,15 @@ Dialogs are a key element of your component as they provide an interface for aut
 
 Depending on the complexity of the component your dialog may need one or more tabs.
 
-* `cq:dialog` ( `nt:unstructured`) nodes:
-  * define the dialog for editing content of this component
-  * are defined using Granite UI components
-  * have a property `sling:resourceType`, as standard Sling content structure
-  * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the Help icon (the ? icon) is selected.
-    * For out-of-the box components this often references a page in the documentation.
-    * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
+Dialogs for AEM components:
+
+* Are `cq:dialog` nodes of type `nt:unstructured`.
+* Are located under their `cq:Component` nodes and next to their component definitions.
+* Define the dialog for editing content of this component.
+* Are defined using Granite UI components.
+* Are rendered server-side (as Sling components), based on their content structure and the `sling:resourceType` property.
+* Contain a node structure describing the fields within the dialog
+  * These nodes are `nt:unstructured` with the required `sling:resourceType` property.  
 
 ![Dialog definition of Title Component](assets/components-title-dialog.png)
 
@@ -196,6 +222,53 @@ Within the dialog, individual fields are defined:
 Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for template authors to pro-configure and provide design details for that component on a page template. Page templates are then used by the content authors to create content pages. See the [template documentation](/help/sites-cloud/authoring/features/templates.md) for details on how templates are created.
 
 [Design dialogs are used when editing a page template](/help/sites-cloud/authoring/features/templates.md), though they are not needed for all components. For example the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
+
+### Coral UI and Granite UI {#coral-and-granite}
+
+Coral UI and Granite UI define the look and feel of AEM.
+
+* [Coral UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) provides a consistent UI across all cloud solutions.
+* [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) provides Coral UI markup wrapped into Sling components for building UI consoles and dialogs.
+
+Granite UI provides a large range of the basic widgets needed to create your dialog on the authoring environment. When necessary you can extend this selection and create your own widget.
+
+For additional details see the following resources:
+
+* [Coral UI Guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+* [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
+
+### Customizing Dialog Fields {#customizing-dialog-fields}
+
+>[!TIP]
+>
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+
+To create a new widget for use in a component dialog requires you to create a new Granite UI field component.
+
+If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a new component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
+
+`/libs/granite/ui/components/coral/foundation/form/field`
+
+More specifically Granite UI provides a range of field components that are suitable for use in dialogs, or more generally speaking in [forms.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+
+Once you have created your resource type, you can instantiate your field by adding a new node in your dialog, with the property `sling:resourceType` referring to the resource type you have just introduced.
+
+#### Access to Dialog Fields {#access-to-dialog-fields}
+
+You can also use render conditions (`rendercondition`) to control who has access to specific tabs/fields in your dialog; for example:
+
+```text
++ mybutton
+  - sling:resourceType = granite/ui/components/coral/foundation/button
+  + rendercondition
+    - sling:resourceType = myapp/components/renderconditions/group
+    - groups = ["administrators"]
+```
+
+## Using Components {#using-components}
+
+Once you have create a component, you need to enable it in order to use it. Using it shows how the structure of the component relates to the structure of the resulting content in the repository.
 
 ### Adding your Component to the Template {#adding-your-component-to-the-template}
 
@@ -222,11 +295,9 @@ The properties defined are dependent on the individual definitions. Although the
 
 ## Component Hierarchy and Inheritance {#component-hierarchy-and-inheritance}
 
-Components within AEM are subject to 3 different hierarchies:
+Components within AEM are subject to the **Resource Type Hierarchy**. This is used to extend components using the property `sling:resourceSuperType`. This enables the component to inherit from another component.
 
-* **Resource Type Hierarchy**
-
-  This is used to extend components using the property `sling:resourceSuperType`. This enables the component to inherit from another component.
+See the section [Reusing Components](#reusing-components) for more information.
 
 ## Edit Behavior {#edit-behavior}
 
@@ -244,13 +315,17 @@ There are many existing configurations in AEM. You can easily search for specifi
 
 ### Configuring with cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
 
-#### cq:dropTargets {#cq-droptargets}
+#### Dropping Assets into a Dialog - cq:dropTargets {#cq-droptargets}
 
 The `cq:dropTargets` node (node type `nt:unstructured`) defines the drop target that can accept a drop from an asset dragged from the content finder. It is a node of type `cq:DropTargetConfig`.
 
 The child node of type `cq:DropTargetConfig` defines a drop target in the component.
 
-### cq:inplaceEditing {#cq-inplaceediting}
+### In-Place Editing - cq:inplaceEditing {#cq-inplaceediting}
+
+An in-place editor allows the user to edit content directly in the content flow, without the need to open a dialog. For example, the standard **Text** and **Title** components both have an inp-lace editor.
+
+An in-place editor is not necessary/meaningful for every component type.
 
 The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an in-place editing configuration for the component. It can have the following properties:
 
@@ -269,7 +344,16 @@ The following configuration enables the inp-lace editing of the component and de
         editorType="plaintext"/>
 ```
 
-### cq:listeners {#cq-listeners}
+### Handling Field Events - cq:listeners {#cq-listeners}
+
+The method of handling events on dialog fields is done with listeners in a custom client library.
+
+To inject logic into your field, you should:
+
+* Have your field marked with a given CSS class (the hook).
+* Define in your client library a JS listener hooked on that CSS class name (this ensures that your custom logic is scoped to your field only, and does not affect other fields of the same type).
+
+To achieve this you need to know about the underlying widget library with which you want to interact. [See the Coral UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) to identify to which event you want to react.
 
 The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happens before or after an action on the component. The following table defines its possible properties.
 
@@ -313,3 +397,35 @@ With the following configuration the page is refreshed after the component has b
         afterinsert="REFRESH_PAGE"
         afterMove="REFRESH_PAGE"/>
 ```
+
+### Field Validation {#field-validation}
+
+Field validation in Granite UI and the Granite UI widgets is done by using the `foundation-validation` API. See the [`foundation-valdiation` Granite documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) for details.
+
+## Preview Behavior {#preview-behavior}
+
+The [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie is set when switching to Preview mode even when the page is not refreshed.
+
+For components with a rendering that are sensitive to the WCM Mode, they need to be defined to refresh themselves specifically, then rely on the value of the cookie.
+
+## Documenting Components {#documenting-components}
+
+As a developer, you want easy access to component documentation so that you can quickly understand the component's:
+
+* Description
+* Intended use
+* Content structure and properties
+* Exposed APIs and extension points
+* Etc.
+
+For this reason, it is quite easy to make any existing documentation markdown you have available within the component itself.
+
+All you need to do is place a `README.md` file in the component structure.
+
+![README.md in component structure](assets/components-documentation.png)
+
+This markdown will then be displayed in the [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
+
+![README.md visible in the Components Console](assets/components-documentation-console.png)
+
+The supported markdown is the same as that for [content fragments.](/help/assets/content-fragments/content-fragments.md)
