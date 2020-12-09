@@ -15,7 +15,7 @@ Cloud Manager provides customers the self-service capability to install SSL cert
   
 Cloud Manager supports the following customer SSL certificate requirements: 
 
-* An SSL certificate may be used by multiple Environments- Add once and use multiple times.
+* An SSL certificate may be used by multiple Environments, that is, add once and use multiple times.
 * Each Cloud Manager Environment can use multiple certificates.
 * A Private Key may issue multiple SSL certificates.
 * Each certificate will typically contain multiple Domains.
@@ -23,6 +23,8 @@ Cloud Manager supports the following customer SSL certificate requirements:
 
 Using the Cloud Manager UI SSL Certificates page, a user with permissions can perform several tasks to manage SSL certificates for a program:
 
-* Adding an SSL certificate.
-* Viewing, updating or replacing an SSL certificate. These actions allow you to view details or to replace a certificate that is about to expire.
-* Deleting an SSL certificate.
+* Adding an SSL certificate
+* Viewing, updating or replacing an SSL certificate
+   >[!NOTE]
+   >These actions allow you to view details or to replace a certificate that is about to expire.
+* Deleting an SSL certificate

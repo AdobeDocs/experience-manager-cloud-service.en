@@ -1,6 +1,6 @@
 ---
 title: About managing Dynamic Media assets
-description: Learn how to work with Dynamic Media assets
+description: Learn how to work with Dynamic Media assets.
 ---
 
 # About managing Dynamic Media assets {#managing-assets}
