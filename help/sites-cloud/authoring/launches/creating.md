@@ -13,6 +13,16 @@ Create a launch to enable the updating of a new version of existing web pages fo
 
 Optionally, you can specify the **Launch Date** (and time) to define when the launch pages are to be promoted and activated. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
 
+>[!NOTE]
+>
+>When you create a launch, pages higher up in the hierarchy are created with the template:
+>
+>* `/libs/launches/templates/outofscope`
+>
+>These pages cannot be edited. You will see the message: 
+>
+>* **This page is not part of the launch. Go to production page**
+
 ## Creating a Launch {#creating-a-launch}
 
 You can create a launch from either the Sites or Launches console:
