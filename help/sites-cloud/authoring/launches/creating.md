@@ -15,7 +15,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 
 >[!NOTE]
 >
->When you create a launch, pages higher up in the hierarchy are created with the template:
+>When you create a launch, pages higher up in the hierarchy are not copies of the source pages. They are created with the template:
 >
 >* `/libs/launches/templates/outofscope`
 >
