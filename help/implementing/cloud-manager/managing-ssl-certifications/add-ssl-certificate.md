@@ -8,7 +8,7 @@ description: Adding an SSL Certificate - Managing SSL Certificates
 >[!NOTE]
 >AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted.
 
-A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Refer to Getting an SSL Certificate for more details.
+A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Refer to [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) for more details.
 
 ## Certificate Format {#certificate-format}
 
@@ -37,15 +37,20 @@ Follow the steps below to convert the format of your SSL files to PEM:
 Follow the steps below to add a certificate:
 
 1. Login to Cloud Manager.
-1. Navigate to Environments screen from Overview page.
-1. Navigate to SSL Certificates screen from the left navigation menu. A table with details of any existing SSL certificates will be displayed on this screen.
-1. Select the **Add certificate** button to launch a wizard.
-   1. Provide a name for your certificate. This can be any name that helps you reference your certificate easily.
-   1. Paste the Certificate, Private Key and Chain  contents into their respective fields. Use the paste icon to the right of the input box. 
+1. Navigate to **Environments** screen from **Overview** page.
+1. Click on **SSL Certificates** from the left navigation menu. A table with details of any existing SSL certificates will be displayed on this screen.
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+1. Select the **Add certificate** button to open **Add SSL Certificate** dialog box.
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   1. Enter a name for your certificate in **Certificate Name**. This can be any name that helps you reference your certificate easily.
+   1. Paste the **Certificate**, **Private key** and **Certificate chain** into their respective fields. Use the paste icon to the right of the input box. 
       >[!NOTE]
       >All three fields are not optional and must be included.
-1. Once you submit your certificate, you will see it displayed as a new row in the table.
-
+1. Click **Save** to submit your certificate. You will see it displayed as a new row in the table.
+    [!NOTE]
+    >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
 
 ## Certificate Errors {#certificate-errors}
 
