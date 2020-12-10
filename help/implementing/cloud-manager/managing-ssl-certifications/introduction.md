@@ -8,7 +8,7 @@ description: Introduction - Managing SSL Certificates
 Cloud Manager provides customers the self-service capability to install SSL certificates via the Cloud Manager UI. Cloud Manager uses a Platform TLS service to manage SSL certificates and private keys owned by customers and typically obtained from third party certification authorities for example, Let’s Encrypt.
 
 >[!IMPORTANT]
->Cloud Manager does not provide SSL certificates or private keys. These must be obtained from third party certification authorities. See How to Get an SSL Certificate to learn more. INSERT LINK
+>Cloud Manager does not provide SSL certificates or private keys. These must be obtained from third party certification authorities. Refer to [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) to learn more.
 
 >[!NOTE] 
 >AEM as a Cloud Service only supports secure https sites. Customers with multiple custom domains will not want to upload a certificate every time they add a domain. Hence such customers will benefit by getting one certificate with multiple domains.
