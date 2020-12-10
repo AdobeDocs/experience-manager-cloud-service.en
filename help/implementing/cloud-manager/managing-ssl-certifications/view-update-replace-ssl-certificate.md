@@ -3,7 +3,7 @@ title: Viewing Updating and Replacing an SSL Certificate - Managing SSL
 description: Viewing Updating and Replacing an SSL Certificate - Managing SSL Certificates
 ---
 
-# Viewing Updating and Replacing an SSL Certificate  {#view-update-replace-ssl-certificate}
+# Viewing & Updating & Replacing an SSL Certificate  {#view-update-replace-ssl-certificate}
 
 ## Viewing and Updating an SSL Certificate {#view-update}
 
