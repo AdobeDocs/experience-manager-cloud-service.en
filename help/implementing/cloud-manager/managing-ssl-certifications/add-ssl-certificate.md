@@ -28,11 +28,13 @@ Follow the steps below to convert the format of your SSL files to PEM:
 
   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## Adding your Certificate {#adding-certificate}
+## Important Considerations {#important-considerations}
 
->[!NOTE]
->* A user must be in the Business Owner or Deployment Manager role in order to install an SSL certificate in Cloud Manager.
->* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+* A user must be in the Business Owner or Deployment Manager role in order to install an SSL certificate in Cloud Manager.
+
+* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+
+## Adding a Certificate {#adding-a-cert}
 
 Follow the steps below to add a certificate:
 
@@ -43,12 +45,14 @@ Follow the steps below to add a certificate:
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 1. Select the **Add certificate** button to open **Add SSL Certificate** dialog box.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
    1. Enter a name for your certificate in **Certificate Name**. This can be any name that helps you reference your certificate easily.
    1. Paste the **Certificate**, **Private key** and **Certificate chain** into their respective fields. Use the paste icon to the right of the input box. 
-      >[!NOTE]
-      >All three fields are not optional and must be included.
+   All three fields are not optional and must be included.
+
 1. Click **Save** to submit your certificate. You will see it displayed as a new row in the table.
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
     >[!NOTE]
     >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
 
