@@ -11,21 +11,16 @@ The AEM managed CDN will satisfy most customer's performance and security requir
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
-Follow these to prepare for content delivery by using Adobe's out-of-the-box CDN:
+Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using Adobe’s out-of-the-box CDN:
 
-1. Provide the signed SSL certificate and secret key to Adobe by sharing a link to a secure form containing this information. Please coordinate with customer support on this task. Adobe supports up to 10 SSL certificates for a program.
-**Note:** Aem as a Cloud Service does not support Domain Validated (DV) certificates. Also, it must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
-1. Inform customer support:
-   * which custom domain(s) should be associated with a given environment, as defined by the program id and environment id. Up to 100 domains are supported for a given environment and domains cannot contain wildcards. Note that custom domains on the author side are not supported. 
-   * if any IP allowlisting is needed to restrict traffic to a given environment.
-1. Coordinate with customer support about timing of the necessary changes to the DNS records. The instructions are different based on whether an apex record is needed:
-   * if an apex record is not needed, customers should set the CNAME DNS record to point their FQDN to `cdn.adobeaemcloud.com`.
-   * if an apex record is needed, create an A record pointing to the following IPs: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Customers need an apex record if the desired FQDN matches the DNS Zone. This can be tested by using the Unix dig command to see if the SOA value of the output matches the domain. For example, the command `dig anything.dev.adobeaemcloud.com` returns a SOA (Start of Authority, i.e., the zone) of `dev.adobeaemcloud.com` so its not an APEX record, while `dig dev.adobeaemcloud.com` returns a SOA of `dev.adobeaemcloud.com` so it is an apex record.
-1. You will be notified when the SSL certificates are expiring so you can resubmit the new SSL certificates.
+1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Restricting traffic**
 
-By default, for an Adobe Managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you should work with customer support to configure these restrictions. 
+By default, for an Adobe Managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. If you wish to limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) you can do this in a self-service way via Cloud Manager UI.
+
+Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) to learn more.
 
 ## Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
