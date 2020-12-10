@@ -17,7 +17,7 @@ When to use these options in the Cloud Manager UI:
 
 ## Updating an SSL Certificate about to Expire {#update-ssl-certificate}
 
-When a certificate expires any domains that are in use with the expired certificate will no longer work. To update an expired certificate, one must follow the steps listed below. This will ensure that your domain continues to work as desired. Adding a new certificate will necessitate updating the custom domain name with the new Certificate before the domains will work as desired. Refer to [Viewing & Updating & Replacing a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)for more details
+When a certificate expires any domains that are in use with the expired certificate will no longer work. To update an expired certificate, one must follow the steps listed below. This will ensure that your domain continues to work as desired. Adding a new certificate will necessitate updating the custom domain name with the new Certificate before the domains will work as desired. Refer to [Viewing & Updating & Replacing a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) for more details.
 
 Follow the steps below to update an SSL Certificate:
 

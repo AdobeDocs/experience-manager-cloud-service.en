@@ -7,8 +7,7 @@ description: Checking DNS Record Status
 
 You can determine whether your domain name is properly resolving to your AEM as a Cloud Service website by clicking the Status icon for the DNS record from the table on the Environments from the Domain Settings page. 
 
->[!NOTE]
->Cloud Manager will automatically trigger a DNS lookup when your Custom Domain Name is first successfully verified and deployed. For subsequent attempts, you must actively select the **resolve again** icon next to the status.
+Cloud Manager will automatically trigger a DNS lookup when your Custom Domain Name is first successfully verified and deployed. For subsequent attempts, you must actively select the **resolve again** icon next to the status.
 
 Cloud Manager performs a DNS lookup for your domain name and displays one of the following status messages:
 
