@@ -21,7 +21,7 @@ The following are the definitions of status that will appears in an IP Allow Lis
 
 * **Failed**: One or more apply or unapply process in an Update failed. Each Apply and Unapply will be  listed along with Complete or Failed.
    * The status will be Failed, even if one apply/unapply in the update fails. 
-   * The status will remain Failed until all failures are cleared.User must select the retry icon next to the status to clear the failure.
+   * The status will remain Failed until all failures are cleared. User must select the retry icon next to the status to clear the failure.
    * User will not be able to Update or Delete IP Allow List while the status is Failed.
 
 * **Deleting**: Delete request is in progress. This involves unapply of all services. Each Unapply will be  listed along with Not Started/In Progress/Complete or Failed.
