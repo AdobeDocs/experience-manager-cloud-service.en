@@ -50,7 +50,7 @@ Follow the steps below to add a certificate:
       >All three fields are not optional and must be included.
 1. Click **Save** to submit your certificate. You will see it displayed as a new row in the table.
     [!NOTE]
-    >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
+    >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the section **Certificate Errors** to learn more about addressing common errors.
 
 ## Certificate Errors {#certificate-errors}
 
