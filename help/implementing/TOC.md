@@ -31,6 +31,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + Custom Domain Names {#custom-domain-names}
     + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
     + [Getting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+    + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
     + [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
     + [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
     + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)  
