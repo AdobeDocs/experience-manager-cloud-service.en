@@ -46,13 +46,15 @@ Follow the steps below to add a certificate:
 
 1. Click on **Add SSL Certificate** to open **Add SSL Certificate** dialog box.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+     * Enter a name for your certificate in **Certificate Name**. This can be any name that helps you reference your certificate easily.
+     * Paste the **Certificate**, **Private key** and **Certificate chain** into their respective fields. Use the paste icon to the right of the input box. 
+     All three fields are not optional and must be included.
 
-   1. Enter a name for your certificate in **Certificate Name**. This can be any name that helps you reference your certificate easily.
-   1. Paste the **Certificate**, **Private key** and **Certificate chain** into their respective fields. Use the paste icon to the right of the input box. 
-   All three fields are not optional and must be included.
-      >[!NOTE]
-      >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
+       ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
+  
+        >[!NOTE]
+        >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
 
 1. Click **Save** to submit your certificate. You will see it displayed as a new row in the table.
 
