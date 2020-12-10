@@ -16,17 +16,17 @@ SSL files must be in PEM format in order to be installed on Cloud Manager. Commo
 
 Follow the steps below to convert the format of your SSL files to PEM:
 
-1. Convert PFX to PEM
+* Convert PFX to PEM
 
-  `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. Convert P7B to PEM
+* Convert P7B to PEM
 
-  `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. Convert DER to PEM
+* Convert DER to PEM
 
-  `openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## Important Considerations {#important-considerations}
 
@@ -43,9 +43,11 @@ Follow the steps below to add a certificate:
 1. Click on **SSL Certificates** from the left navigation menu. A table with details of any existing SSL certificates will be displayed on this screen.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. Select the **Add certificate** button to open **Add SSL Certificate** dialog box.
+
+1. Click on **Add SSL Certificate** to open **Add SSL Certificate** dialog box.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. Enter a name for your certificate in **Certificate Name**. This can be any name that helps you reference your certificate easily.
    1. Paste the **Certificate**, **Private key** and **Certificate chain** into their respective fields. Use the paste icon to the right of the input box. 
    All three fields are not optional and must be included.
@@ -77,6 +79,4 @@ You can verify that the private key and `main/server` certificate match using th
 
 ### Certificate Validity Dates {#certificate-validity-dates}
 
-Cloud Manager expects the SSL certificate to be valid for at least 90 days into the future
-
-Check the validity of the certificate chain.
+Cloud Manager expects the SSL certificate to be valid for at least 90 days into the future. You should check the validity of the certificate chain.

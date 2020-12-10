@@ -5,7 +5,7 @@ description: Introduction - Managing SSL Certificates
 
 # Introduction {#introduction}
 
-Cloud Manager provides customers the self-service capability to install SSL certificates via the Cloud Manager UI. Cloud Manager uses a Platform TLS service to manage SSL certificates and private keys owned by customers and typically obtained from third party certification authorities for example, Let’s Encrypt.
+Cloud Manager provides customers the self-service capability to install SSL certificates via the Cloud Manager UI. Cloud Manager uses a Platform TLS service to manage SSL certificates and private keys owned by customers and typically obtained from third party certification authorities for example, *Let’s Encrypt*.
 
 ## Important Considerations {#important-considerations}
 
