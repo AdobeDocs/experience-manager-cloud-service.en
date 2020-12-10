@@ -9,7 +9,7 @@ description: Deleting an SSL Certificate - Managing SSL Certificates
 >Removing certificates from Cloud Manager is a permanent action that cannot be undone. Best practice is to save any necessary SSL files locally before deleting them in the Cloud Manager user interface.
 
 >[!NOTE]
->A user must be in the Business Owner or Deployment Manager role in order to delete an SSL certificate in Cloud Manager. Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it.  All associated domains must be deleted before deleting the SSL certificate. Refer to Delete Custom Domain Name INSERT LINK to learn more on this topic.
+>A user must be in the Business Owner or Deployment Manager role in order to delete an SSL certificate in Cloud Manager. Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it.  All associated domains must be deleted before deleting the SSL certificate. Refer to [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) to learn more.
 
 Follow the steps below to delete an SSL Certificate:
 
