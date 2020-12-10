@@ -12,6 +12,6 @@ Cloud Manager allows you to add a custom domain to identify your site with a uni
 
 Using the Cloud Manager UI Domain Settings page, or the Environment Details page, a user with permissions can perform several tasks to manage custom domain names for your environments, including:
 
-* Adding a custom domain name.
-* Viewing or Updating custom domain name that allows a user to view details or to replace a certificate that is about to expire.
-* Deleting custom domain name.
+* [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [Viewing or Updating a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) that allows a user to view details or to replace a certificate that is about to expire
+* [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
