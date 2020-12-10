@@ -45,22 +45,39 @@ Follow the steps below to add a Custom Domain Name from Domain Settings page:
 
 1. Click on **Create**. 
 1. CDN deployment requires a valid SSL certificate  and successful TXT verification. This is indicated by status **Verified and Deployed**.
-1. Navigate to Checking Custom Domain Name Status to learn more about various statuses and how to address.
+   Navigate to [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address.
 
    >[!NOTE]
    >DNS proof can take up to a few hours to recognize, because of DNS propagation delays. Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to Checking Domain Name Status for more details.
 
 ## Adding a Custom Domain Name from Environments page {#adding-cdn-environments}
 
-1. Navigate to Environment Detail page for the environment of interest.
-1. Use the input fields at the top of the Domain Names table to submit  the custom domain name, SSL certificate. Next select Add.
-1. This will launch the Add Custom Domain name wizard with the Environment name pre-populated. 
-1. Enter the custom domain name. Note: Do not include `http://`, `https://`, or spaces when entering in your domain. Select Continue.
-1. This will take you to the Domain Name Verification for your Environment screen. Refer to [Domain Verification](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more. Follow the instructions provided to prove domain ownership for your environment.
-1. Select **Continue**. 
-1. CDN deployment requires a valid SSL certificate  and successful TXT verification. This is indicated by status **Verified and Deployed**.  
+1. Navigate to Environments Detail page for the environment of interest.
 
-At this point, your custom domain name is ready for testing and a `CNAME` to point to it. Refer to Domain Name Status to learn more about various statuses and how to address.
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
+   
+1. Use the input fields at the top of the Domain Names table to submit  the custom domain name and select the SSL certificate from the drop-down list. Click on **+ Add**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+
+1. Check the fields from the **Add Domain Name** dialog box and click **Continue**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+
+   >[!NOTE]
+   >Do not include `http://`, `https://`, or spaces when entering in your domain.
+
+1. Domain Name Verification for your Environment screen displays.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
+
+   Refer to [Domain Verification](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more. Follow the instructions provided to prove domain ownership for your environment.
+
+1. Click on **Create**. 
+
+1. Custom Domain Name deployment requires a valid SSL certificate  and successful TXT verification. This is indicated by status **Verified and Deployed**.  
+
+At this point, your custom domain name is ready for testing and a `CNAME` to point to it. Refer to [Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address.
 
    >[!NOTE]
    >DNS proof can take up to a few hours to recognize, because of DNS propagation delays. Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to Checking Domain Name Status to learn more.
