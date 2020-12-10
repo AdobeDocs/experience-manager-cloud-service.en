@@ -62,6 +62,7 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)  
     + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
     + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+  + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)  
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
     + [Current Release Notes (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
     + [Release Notes for 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
