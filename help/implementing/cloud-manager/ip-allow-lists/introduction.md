@@ -10,7 +10,7 @@ AEM as a cloud service is open to the internet and security is handled through u
 IP Allow lists can be added once and applied/unapplied multiple times as a unit or entity to an Author and/or Publisher service in an environment.
 
 >[!NOTE]
->IP Allow-Lists names are supported in Cloud Manager for Author and/or Publish service in an environment.
+>IP Allow Lists names are supported in Cloud Manager for Author and/or Publish service in an environment.
 
 Using the Cloud Manager UI IP Allow List page, or the Environment Details page, a user with permissions can perform several tasks to manage IP Allow Lists for your environments, including:
 
