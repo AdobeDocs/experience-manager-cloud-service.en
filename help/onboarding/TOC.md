@@ -54,11 +54,11 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Viewing & Updating Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
     + [Updating Custom Domain Name’s SSL Certificate](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
     + [Deleting Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-  + Managing IP Allow-Lists {#ip-allow-lists}
+  + Managing IP Allow Lists {#ip-allow-lists}
     + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
     + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-    + [Viewing & Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-    + [Applying IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+    + [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+    + [Applying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
     + [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)  
     + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
     + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
