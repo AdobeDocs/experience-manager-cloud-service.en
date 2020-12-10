@@ -346,7 +346,7 @@ The following configuration enables the inp-lace editing of the component and de
 
 ### Handling Field Events - cq:listeners {#cq-listeners}
 
-The method of handling events on dialog fields is done with listeners in a custom client library.
+The method of handling events on dialog fields is done with listeners in a custom [client library.](/help/implementing/developing/introduction/clientlibs.md)
 
 To inject logic into your field, you should:
 
