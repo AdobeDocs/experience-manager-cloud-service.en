@@ -53,8 +53,8 @@ Follow the steps below to add a certificate:
        ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
   
-        >[!NOTE]
-        >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
+       >[!NOTE]
+       >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
 
 1. Click **Save** to submit your certificate. You will see it displayed as a new row in the table.
 
