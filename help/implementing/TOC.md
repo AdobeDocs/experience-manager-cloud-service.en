@@ -25,7 +25,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
     + [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
     + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-    + [Viewing &  Updating or Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+    + [Viewing &  Updating & Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
     + [Checking Status of an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)  
     + [Deleting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
   + Managing Custom Domain Names {#custom-domain-names}
