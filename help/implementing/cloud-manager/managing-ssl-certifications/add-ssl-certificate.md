@@ -6,7 +6,7 @@ description: Adding an SSL Certificate - Managing SSL Certificates
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted.
+>AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted. In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
 
 A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Refer to [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) for more details.
 
@@ -51,12 +51,12 @@ Follow the steps below to add a certificate:
    1. Enter a name for your certificate in **Certificate Name**. This can be any name that helps you reference your certificate easily.
    1. Paste the **Certificate**, **Private key** and **Certificate chain** into their respective fields. Use the paste icon to the right of the input box. 
    All three fields are not optional and must be included.
+      >[!NOTE]
+      >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
 
 1. Click **Save** to submit your certificate. You will see it displayed as a new row in the table.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-    >[!NOTE]
-    >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
 
 ## Certificate Errors {#certificate-errors}
 
