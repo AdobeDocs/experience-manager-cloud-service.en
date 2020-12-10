@@ -43,7 +43,7 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Viewing &  Updating or Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
     + [Checking Status of an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)  
     + [Deleting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-  + Custom Domain Names {#custom-domain-names}
+  + Managing Custom Domain Names {#custom-domain-names}
     + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
     + [Getting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
     + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -54,7 +54,7 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Viewing & Updating Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
     + [Updating Custom Domain Name’s SSL Certificate](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
     + [Deleting Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-  + IP Allow-Lists {#ip-allow-lists}
+  + Managing IP Allow-Lists {#ip-allow-lists}
     + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
     + [Adding an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
     + [Viewing & Updating an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
