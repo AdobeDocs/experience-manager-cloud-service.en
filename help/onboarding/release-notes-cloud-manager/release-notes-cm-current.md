@@ -17,7 +17,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.12.0 is Decemb
 
 * Self service management of [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) and [Custom Domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Self service management of [IP Allow-Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Self service management of [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * Updated **Environment** details page now allows users to manage Custom Domain names and IP Allow-Lists on their environments.
 
