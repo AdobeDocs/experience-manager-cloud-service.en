@@ -14,9 +14,9 @@ IP Allow lists can be added once and applied/unapplied multiple times as a unit 
 
 Using the Cloud Manager UI IP Allow List page, or the Environment Details page, a user with permissions can perform several tasks to manage IP Allow Lists for your environments, including:
 
-* Adding IP Allow List
+* [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
     >[!NOTE]
     > You can Add once and reuse or apply the rule any number of times across environment-services in the program.
-* Viewing or Updating an IP Allow List 
-* Applying or Un-applying an IP Allow List 
-* Deleting an IP Allow List 
+* [Viewing or Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) 
+* [Applying or Unapplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
