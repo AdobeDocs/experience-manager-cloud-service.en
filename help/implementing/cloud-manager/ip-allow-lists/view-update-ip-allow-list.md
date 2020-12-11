@@ -3,7 +3,7 @@ title: Viewing and Updating - IP Allow Lists in Could Manager
 description: Viewing and Updating - IP Allow Lists in Could Manager
 ---
 
-# Viewing and Updating IP Allow Lists {#view-update}
+# Viewing and Updating an IP Allow List {#view-update}
 
 You can view and update IP Allow Lists under the following scenarios:
 
