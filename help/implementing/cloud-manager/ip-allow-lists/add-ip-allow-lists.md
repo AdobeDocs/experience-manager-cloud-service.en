@@ -3,11 +3,9 @@ title: Adding IP Allow List
 description: Adding IP Allow List
 ---
 
-# Introduction {#introduction}
+# Adding an IP Allow List {#add-ip-allow-list}
 
 A user in the Business Owner or Deployment Manager role must be logged in in order to be able to add an IP Allow List.
-
-## Adding IP Allow List {#add-ip-allow-list}
 
 Follow the steps below to add an IP Allow List:
 
