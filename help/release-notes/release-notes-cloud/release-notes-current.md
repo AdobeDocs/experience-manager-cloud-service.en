@@ -78,21 +78,21 @@ This tool is for system administrator, consultant, or implementation partner per
 
 ### Release Date {#release-date-cm}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is November 12, 2020.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2020.12.0 is December 10, 2020.
 
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
-   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
+* Self service management of [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
+* Self service management of [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+* Updated **Environment** details page now allows users to manage Custom Domain Names and IP Allow Lists on their environments.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* The loading of dependencies done prior to build execution required downloading a Maven plugin.
-* The link from the Cloud Manager footer to select a language will now navigate to the correct location.
-* Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
-* All existing production pipelines will be automatically enabled with the Experience Audit step. 
+* Some occurrences of failures at code scanning stage without providing results addressed.
+
+* Environment card did not consistently display **Add** button.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -112,30 +112,18 @@ The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a
 
 New [“httpd -t” syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) check for apache and dispatcher configuration executed during Cloud Manager build, which can also be run using AEM as a Cloud Service SDK’s Dispatcher Tools.
 
-## Content Transfer Tool {#content-transfer-tool}
+## Code Refactoring Tools {#code-refactoring-tools}
 
-Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
+### What is new in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-### What is New {#what-is-new-ctt}
+* New version of AIO-CLI plugin released. Latest version of this plugin includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. Please refer to [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin. 
 
-* User experience for logs improved. Timestamps added to Extraction and Ingestion logs. Message added to indicate if logs are empty.
+* Index Converter is a utility that can be used to transform a customer's Custom OAK Index Definitions to AEM as a CLoud Service compatible OAK Index Definitions. 
+   Refer to [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) for more details.
 
-### Bug Fixes {#ctt-bug-fixes}
+* New feature added to [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) that creates a separate package `ui.config` to contain all OSGi configurations. 
 
-* Content Transfer Tool was skipping content files if the migration set contained paths that had the partially similar file names. This has been fixed.
+### Bug Fixes {#crt-bug-fixes}
 
-## Best Practices Analyzer {#best-practices-analyzer}
-
-### Release Date {#release-date-bpa}
-
-The Release Date for Best Practices Analyzer is November 13, 2020.
-
-### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
-
-* Cloud Readiness Analyzer is now Best Practices Analyzer (BPA). BPA provides a best practices assessment of your current AEM implementation and helps assess the readiness to move from an existing AEM instance to AEM as a Cloud Service.
-
-* A new detector was added to detect the use of `java.io.InputStream`, which can cause issues if used in AEM as a Cloud Service.
-
-### Bug Fixes {#bpa-bug-fixes}
-
-* Bug causing the positives related to the *textfield foundation* component was fixed.
+* Several bug fixes done on the AEM Dispatcher Converter and Repository Modernizer tools. 
+    Refer to [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) and [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
