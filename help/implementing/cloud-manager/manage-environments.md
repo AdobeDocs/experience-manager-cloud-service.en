@@ -143,21 +143,28 @@ Additionally, you can login locally from the **Environments** summary page.
 
 ## Managing Custom Domain Names {#manage-cdn}
 
-Navigate to the Environment details page from the Environments Summary page. 
+Navigate to the **Environments** details page from the Environments Summary page. 
 
 The following actions can be performed on the Publish service for your environment  as described below: 
 
-1. **Adding a Custom Domain Name**: Refer to [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **Adding a Custom Domain Name**
+   Refer to [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Viewing and Updating Custom Domain Name**: Refer to [Viewing & Updating Custom Domain Names & SSL Certificates](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **Viewing and Updating Custom Domain Name and SSl Certificates**
+   Refer to
+   * [Viewing & Updating Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [Viewing & Updating SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **Deleting Custom Domain Name**: Refer to [Deleting a Custom Domain Names & SSL Certificates](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **Deleting Custom Domain Name and SSl Certificates**
+    Refer to
+    * [Deleting a Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+    * [SSL Certificates](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-## Managing IP Allow-Lists {#manage-ip-allow-lists} 
+## Managing IP Allow Lists {#manage-ip-allow-lists} 
 
 Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
 
-### Applying an IP Allow-List {#apply-ip-allow-list}
+### Applying an IP Allow Lists {#apply-ip-allow-list}
 
 Applying an IP Allow List is the process by which all IP ranges included in the definition of the Allow-List are associated with an Author or Publish service in an environment. A user in the Business Owner or Deployment Manager role must be logged in in order to be able to apply an IP Allow List.
 
