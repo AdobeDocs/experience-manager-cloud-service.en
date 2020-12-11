@@ -26,7 +26,8 @@ The following are the definitions of status that will appears in an IP Allow Lis
 
 * **Deleting**: Delete request is in progress. This involves unapply of all services. Each Unapply will be  listed along with Not Started/In Progress/Complete or Failed.
 Once Delete operation is completed, the IP Allow List will:
-   * No longer appear in the IP Allow List table * No longer be applied on any service in the program in Cloud Manager
+   * No longer appear in the IP Allow List table.
+   * No longer be applied on any service in the program in Cloud Manager.
 
 * **Delete Failed**: One or more unapply process in a Delete operation failed. Each Unapply will be  listed along with Complete or Failed.
 
