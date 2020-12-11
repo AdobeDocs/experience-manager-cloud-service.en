@@ -40,20 +40,6 @@ To add..
 
 To add..
 
-## Content Transfer Tool {#content-transfer-tool}
-
-To add..
-
-## Best Practices Analyzer {#best-practices-analyzer}
-
-### Release Date {#release-date-bpa}
-
-The Release Date for Best Practices Analyzer is November 13, 2020.
-
-### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
-
-To add...
-
 ## Code Refactoring Tools {#code-refactoring-tools}
 
 ### What is new in [!DNL Code Refactoring Tools] {#what-is-new-crt}
