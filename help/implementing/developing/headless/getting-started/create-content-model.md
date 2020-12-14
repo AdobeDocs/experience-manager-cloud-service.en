@@ -56,6 +56,6 @@ You can create multiple models. Models can reference other content fragments. Us
 
 Now that you have defined the structures of your Content Fragments by creating models, you can move on to the third part of the getting started guide and [create folders where you will store the fragments themselves.](create-assets-folder.md)
 
->![TIP]
+>[!TIP]
 >
 >For complete details about Content Fragment Models, see the [Content Fragment Models documentation](/help/assets/content-fragments/content-fragments-models.md)
