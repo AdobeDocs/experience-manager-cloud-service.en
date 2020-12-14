@@ -1,6 +1,6 @@
 ---
-title: Viewing and Updating - IP Allow Lists in Could Manager
-description: Viewing and Updating - IP Allow Lists in Could Manager
+title: Viewing and Updating - IP Allow Lists in Cloud Manager
+description: Viewing and Updating - IP Allow Lists in Cloud Manager
 ---
 
 # Viewing and Updating an IP Allow List {#view-update}
