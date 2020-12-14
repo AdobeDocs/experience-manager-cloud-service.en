@@ -46,6 +46,6 @@ Content Fragments can also reference other assets in AEM. [These assets need to 
 
 Now that you have created a Content Fragment, you can move on to the final part of the getting started guide and [create API requests to access and deliver content fragments.](create-api-request.md)
 
->![TIP]
+>[!TIP]
 >
 >For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/assets/content-fragments/content-fragments.md)

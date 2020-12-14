@@ -35,7 +35,7 @@ An administrator would only need to create a configuration once, or very seldoml
 
 You can create multiple configurations if required. Configurations can also be nested.
 
->![NOTE]
+>[!NOTE]
 >
 >Configuration options in addition to **Content Fragment Models** and **GraphQL Persistent Queries** may be necessary depending on your implementation requirements.
 
@@ -43,6 +43,6 @@ You can create multiple configurations if required. Configurations can also be n
 
 Using this configuration, you can now move on to the second part of the getting started guide and [create Content Fragment Models.](create-content-model.md)
 
->![TIP]
+>[!TIP]
 >
 >For complete details about the Configuration Browser, [see the Configuration Browser documentation.](/help/implementing/developing/introduction/configurations.md)
