@@ -549,7 +549,7 @@ The evaluation works as follows:
 
 * If `T` has a non-empty `allowedPaths` property, but none of the values match the path of `P`, `T` is rejected.
 
-* If both of the above properties are either empty or non-existent, `T` is rejected unless it belongs to the same application as `P`. `T` belongs to the same application as `P` if and only if the name of the second level of the path of `T` is the same as the name of the second level of the path of `P`. For example, the template `/apps/geometrixx/templates/foo` belongs to the same application as the page `/content/geometrixx`.
+* If both of the above properties are either empty or non-existent, `T` is rejected unless it belongs to the same application as `P`. `T` belongs to the same application as `P` if and only if the name of the second level of the path of `T` is the same as the name of the second level of the path of `P`. For example, the template `/apps/wknd/templates/foo` belongs to the same application as the page `/content/wknd`.
 
 * If `T` has an non-empty `allowedParents` property, but none of the values match the path of `P`, `T` is rejected.
 
