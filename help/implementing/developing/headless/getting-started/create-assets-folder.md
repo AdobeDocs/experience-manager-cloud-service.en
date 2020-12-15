@@ -45,6 +45,6 @@ If you are using a localized site structure, you can [create a language root](/h
 
 Now that you have created a folder for your Content Fragments, you can move on to the fourth part of the getting started guide and [create content fragments.](create-content-fragment.md)
 
->![TIP]
+>[!TIP]
 >
 >For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/assets/content-fragments/content-fragments.md)

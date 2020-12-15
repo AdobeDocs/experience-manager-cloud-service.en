@@ -1,9 +1,9 @@
 ---
-title: Viewing and Updating - IP Allow Lists in Could Manager
-description: Viewing and Updating - IP Allow Lists in Could Manager
+title: Viewing and Updating - IP Allow Lists in Cloud Manager
+description: Viewing and Updating - IP Allow Lists in Cloud Manager
 ---
 
-# Viewing and Updating IP Allow Lists {#view-update}
+# Viewing and Updating an IP Allow List {#view-update}
 
 You can view and update IP Allow Lists under the following scenarios:
 
@@ -22,10 +22,10 @@ A user in the Business Owner or Deployment Manager role must be logged in in ord
 
 Follow the steps below to update an IP Allow List:
 
-1. Navigate to the IP Allow List page from the Environments screen.
+1. Navigate to the **IP Allow Lists** page from the **Environments** screen.
 1. Identify the row where the IP Allow List rule you wish to view/update is listed.
 1. Select the **...** menu from the far right end of the row.
-1. Select the View & Update option.
+1. Select the **View & Update** option.
 1. Make changes to the name or IP’s and confirm your submission.
 
 ## Important Considerations while Adding, Updating or Removing IP Allow Lists {#considerations} 
@@ -34,4 +34,4 @@ Follow the steps below to update an IP Allow List:
 * Removing an IP range from the IP Allow List will automatically Unapply it from all corresponding environment- services.
 * Updates cannot be made to an IP Allow List while a prior update is in progress and has not completed.
 * Updates cannot be made to an IP Allow List if any errors exist from a prior update. Any error(s) must be cleared by attempting to retry the update. 
-   Refer to Checking IP Allow List Status to learn more.
+   Refer to [Checking IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) to learn more.

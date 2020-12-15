@@ -11,4 +11,5 @@ When an entity requests a certificate from a Certificate Authority, the CA compl
 
 >[!NOTE]
 >AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) or self-signed certificates will not be accepted. OV and EV certificates provide users with extra, CA-validated information that they can use to decide if the owner of a website, sender of an email, or digital signatory of executable code or PDF documents is trustworthy. DV certificates are common and inexpensive. However, they do not allow ownership verification.
+>In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
 

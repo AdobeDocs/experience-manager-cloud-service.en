@@ -143,7 +143,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 ### Loading an SPA Application {#loading-a-spa-application}
 
-1. If not already loaded, load the We.Retail Journal application either on the publish server or using the option **View as Published** from the **Page Information** menu in the page editor.
+1. If not already loaded, load the WKND SPA Project app either on the publish server or using the option **View as Published** from the **Page Information** menu in the page editor.
 
     `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -244,7 +244,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 1. The model can also group pages together so that they are loaded synchronously, reducing the number of page reloads needed.
 
-   In the example of We.Retail Journal, the `home`, `page-1`, `page-2`, and `page-3` pages are loaded synchronously, since visitors commonly visit all of those pages.
+   In the example of WKND SPA Project app, the `home`, `page-1`, `page-2`, and `page-3` pages are loaded synchronously, since visitors commonly visit all of those pages.
 
    This behavior is not mandatory and is fully definable.
 

@@ -5,7 +5,7 @@ description: Checking Status of an SSL Certificate - Managing SSL Certificates
 
 # Checking Status of an SSL Certificate {#checking-status-an-ssl-certificate}
 
-The status of your SSL certificates can be understood at a glance from the SSL certificate page or from the Environment details page.
+The status of your SSL certificates can be understood at a glance from the SSL certificate page.
 
 You can identify the status of an SSL certificate from the following color schemes:
 
