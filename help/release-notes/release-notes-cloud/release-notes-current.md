@@ -12,17 +12,6 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 is December 17, 2020.
 The following release (2020.12.0) will be on January xx, 2020
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
-
-### What is new in [!DNL Sites] {#what-is-new-sites}
-
-To add...
-
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
-
-
-To add..
-
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What is New {#what-is-new-commerce}
@@ -50,10 +39,6 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.12.0 is Decemb
 * Some occurrences of failures at code scanning stage without providing results addressed.
 
 * Environment card did not consistently display **Add** button.
-
-## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
-
-To add..
 
 ## Code Refactoring Tools {#code-refactoring-tools}
 
