@@ -20,7 +20,6 @@ To add...
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] and [!DNL Dynamic Media] {#what-is-new-assets}
 
 To add..
 
@@ -34,7 +33,23 @@ To add..
 
 ## Cloud Manager {#cloud-manager}
 
-To add..
+### Release Date {#release-date-cm}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2020.12.0 is December 10, 2020.
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+
+* Self service management of [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+
+* Self service management of [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+* Updated **Environment** details page now allows users to manage Custom Domain Names and IP Allow Lists on their environments.
+
+### Bug Fixes {#bug-fixes-cloud-manager}
+
+* Some occurrences of failures at code scanning stage without providing results addressed.
+
+* Environment card did not consistently display **Add** button.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -50,6 +65,6 @@ To add..
 
 * New feature added to [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) that creates a separate package `ui.config` to contain all OSGi configurations. 
 
-### Bug Fixes {#bpa-bug-fixes}
+### Bug Fixes {#crt-bug-fixes}
 
 * Several bug fixes done on the AEM Dispatcher Converter and Repository Modernizer tools. Please refer to [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) and [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
