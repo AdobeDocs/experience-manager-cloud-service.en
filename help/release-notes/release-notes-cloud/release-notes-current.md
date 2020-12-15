@@ -12,6 +12,16 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 is December 17, 2020.
 The following release (2020.12.0) will be on January xx, 2020
 
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+* Integration with [!DNL Adobe InDesign Server] lets users use [!DNL Assets] templates user interface to create brochures or ads. It supports high-fidelity, multi-page previews of INDD file type. Full-text search is supported as [!DNL Experience Manager] extracts and indexes full text. <!-- TBD: Add link to article. -->
+
+* [!DNL Experience Manager] desktop app lets users upload digital assets by dragging from Windows Explorer or Mac Finder. See [add assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+
+* [!DNL Experience Manager] is enhanced to track and display asset references when an asset is used in a remote [!DNL Experience Manager Sites] deployment using the Connected Assets functionality. A new [!UICONTROL References] tab in asset's [!UICONTROL Properties] page now lists local and remote references of the asset. The references let DAM users track asset usage in [!DNL Sites] pages and in compound assets in [!DNL Assets]. <!-- TBD: Add link to article. -->
+
+* [!DNL Dynamic Media] capabilities are now accessible via [!DNL Sites] image-based Core Components. Authors can quickly configure components to use Image Presets, Smart Crop, and Image Modifiers when creating webpages. <!-- TBD: Add link to article. -->
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What is New {#what-is-new-commerce}
