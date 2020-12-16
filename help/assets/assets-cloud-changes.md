@@ -1,37 +1,27 @@
 ---
 title: Notable changes in Adobe Experience Manager Assets as a [!DNL Cloud Service]
-description: Notable changes to Adobe Experience Manager Assets in AEM [!DNL Cloud Service] as compared to Adobe Experience Manager 6.5.
+description: Notable changes to Adobe Experience Manager Assets in Experience Manager [!DNL Cloud Service] as compared to Adobe Experience Manager 6.5.
 ---
 
 # Notable changes to Experience Manager Assets as a [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager as a [!DNL Cloud Service] brings many new features and possibilities to manage your AEM projects. However, there are many differences between Experience Manager Assets on-premise or in Adobe Managed Service as compared to Experience Manager as a [!DNL Cloud Service]. This document highlights the important differences for Assets capabilities.
+Adobe Experience Manager as a [!DNL Cloud Service] brings many new features and possibilities to manage your Experience Manager projects. There are many differences between Experience Manager Assets on-premise or hosted as Adobe Managed Service as compared to [!DNL Experience Manager] as a [!DNL Cloud Service]. This article highlights the important differences for [!DNL Assets] capabilities.
 
 The main differences as compared to [Experience Manager] 6.5 are in the following areas:
 
-* [Asset ingestion and upload](#asset-ingestion).
+* [Asset ingestion, upload, and processing](#asset-ingestion).
 * [Asset microservices for cloud-native processing](#asset-microservices).
 * [Removal of Classic UI](#classic-ui).
 
->[!NOTE]
->
->This document highlights the notable changes to [!DNL Adobe Experience Manager Assets]. For changes general to [!DNL Experience Manager] as a [!DNL Cloud Service], and other modules, see:
->
->* [An Introduction to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]](/help/overview/introduction.md)
->* An [Overview of AEM as a [!DNL Cloud Service] - What is New and What is Different](/help/overview/what-is-new-and-different.md)
->* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a [!DNL Cloud Service]
->* [Notable changes to [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
->* [Notable changes to [!DNL Experience Manager Sites] as a [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+## Asset ingestion and processing {#asset-ingestion}
 
-## Asset ingestion and upload {#asset-ingestion}
-
-Asset upload has been optimized for efficiency by enabling better scaling of asset ingestion and faster uploads. Product capabilities (web user interfaces, desktop clients) have been updated. However, this may impact some existing customization.
+Asset upload has been optimized for efficiency by enabling better scaling of asset ingestion, faster uploads, faster processing using microservices, and bulk ingestion. Product capabilities (web user interfaces, desktop clients) have been updated. However, this may impact some existing customization.
 
 * Experience Manager uses direct binary access principle for upload and download and asset microservices for asset processing. See [overview of asset ingestion](/help/assets/asset-microservices-overview.md).
   * Asset upload [with direct binary access](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
   * For technical details, see  of [direct binary upload protocol and APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
-* The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of AEM is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, text extraction for indexing).
+  * For a comparison of the available API methods for basic CRUD operations, see [APIs and asset operations](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
+* The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of [!DNL Experience Manager] is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, and text extraction for indexing).
   * See [configuring and using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used.
 * Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
@@ -49,3 +39,12 @@ To do an end-to-end validation of the code and process including asset ingestion
 ## Removal of Classic UI {#classic-ui}
 
 The Classic UI is no longer available in Experience Manager as a [!DNL Cloud Service]. The standard interface is the Touch-enabled UI.
+
+>[!MORELIKETHIS]
+>
+>* [An introduction to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]](/help/overview/introduction.md)
+>* An [overview of [!DNL Experience Manager] as a [!DNL Cloud Service] - What is New and What is Different](/help/overview/what-is-new-and-different.md)
+>* The [architecture](/help/core-concepts/architecture.md) of [!DNL Experience Manager] as a [!DNL Cloud Service]
+>* [Notable changes to [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
+>* [Notable changes to [!DNL Experience Manager Sites] as a [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
