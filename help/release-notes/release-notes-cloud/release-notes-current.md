@@ -14,9 +14,9 @@ The following release (2020.12.0) will be on January xx, 2020
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* Integration with [!DNL Adobe InDesign Server] lets users use [!DNL Assets] templates user interface to create brochures or ads. It supports high-fidelity, multi-page previews of INDD file type. Full-text search is supported as [!DNL Experience Manager] extracts and indexes full text. <!-- TBD: Add link to article. -->
+* Integration with [!DNL Adobe InDesign Server] is now available for AEM as a Cloud Service. It provides automation for processing InDesign files using InDesign Server scripting, and lets users use [!DNL Assets] templates user interface to create brochures or ads. Note: only [!DNL Adobe InDesign Server] hosted by [!DNL Adobe Managed Services] is supported for [!DNL AEM as a Cloud Service]. <!-- TBD: Add link to article. -->
 
-* [!DNL Experience Manager] desktop app lets users upload digital assets by dragging from Windows Explorer or Mac Finder. See [add assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* [!DNL Experience Manager] desktop app lets users upload files and folders by dragging and dropping them from Windows Explorer or Mac Finder onto the desktop app UI. See [add assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * [!DNL Experience Manager] is enhanced to track and display asset references when an asset is used in a remote [!DNL Experience Manager Sites] deployment using the Connected Assets functionality. A new [!UICONTROL References] tab in asset's [!UICONTROL Properties] page now lists local and remote references of the asset. The references let DAM users track asset usage in [!DNL Sites] pages and in compound assets in [!DNL Assets]. <!-- TBD: Add link to article. -->
 
