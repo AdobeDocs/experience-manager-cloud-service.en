@@ -3,6 +3,10 @@ title: Generating Access Tokens for Server Side APIs
 description: Learn how to facilitate communication between a third party server and AEM as a Cloud Service by generating a secure JWT Token
 ---
 
+>[!IMPORTANT]
+>
+>This feature is not yet available. Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for an up to date list of features.
+
 # Introduction {#introduction}
 
 Some architectures rely on making calls to AEM as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application that calls a server, which then makes API requests to AEM as a Cloud Service.
