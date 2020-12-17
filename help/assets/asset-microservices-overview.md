@@ -17,7 +17,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] provides a cloud-native metho
 * Native Adobe file processing services are used where applicable, providing high-fidelity output and [efficient handling of Adobe proprietary formats](file-format-support.md).
 * Ability to configure post-processing workflow to add user-specific actions and integrations.
 
-Asset microservices help to avoid the need for third-party rendering tools and methods (like ImageMagick and FFmpeg transcoding) and simplify configurations, while providing out-of-the-box functionality for common file types.
+Asset microservices help to avoid the need for third-party rendering tools and methods (like ImageMagick and FFmpeg transcoding) and simplify configurations, while providing basic functionality for common file types by default.
 
 ## High-level architecture {#asset-microservices-architecture}
 
