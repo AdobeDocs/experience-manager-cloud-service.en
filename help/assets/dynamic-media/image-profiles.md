@@ -89,7 +89,7 @@ In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
  </tbody>
 </table>
 
-Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
