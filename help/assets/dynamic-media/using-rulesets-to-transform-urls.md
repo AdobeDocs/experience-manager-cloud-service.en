@@ -10,11 +10,11 @@ You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets 
 * Adding a MIME type suffix. Many services and websites require image suffixes, such as adding `.jpg` to a URL.
 * Creating a folder path to the URL for SEO (Search Engine Optimization) purposes.
 
-  See [How Dynamic Media Classic Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  See [How Adobe Dynamic Media Classic Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Adding metadata to the URL for SEO (Search Engine Optimization) purposes.
 
-  See [How Dynamic Media Classic Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  See [How Adobe Dynamic Media Classic Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Setting the content disposition to trigger a download.
 * Simplify Image Serving templating URLs for personalization. For example, turn `rgb{XX,YY,ZZ}` into the RTF-ready `\redXX\greenYY\blueZZ`
@@ -38,9 +38,11 @@ See also [Troubleshooting rule sets](https://helpx.adobe.com/experience-manager/
 Also, make sure you first test your rule set in a staging environment that does not impact your live production environment.
 Production environments and staging environments typically require different logins.
 
-* **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+See the [Adobe Dynamic Media Classic desktop application for sign in information](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 See also [Using 'asset' instead of 'is' image in a rule set](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
