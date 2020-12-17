@@ -405,6 +405,7 @@ If you have a custom JavaScript that needs to be executed only when the dialog i
 This event is triggered  whenever the dialog loads (or re-loads) and is ready for use, which means whenever there is a change (create/update) in the DOM of the dialog.
 
 `dialog-ready` can be used to hook in JavaScript custom code that performs customizations on the fields inside a dialog or similar tasks.
+
 ## Preview Behavior {#preview-behavior}
 
 The [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie is set when switching to Preview mode even when the page is not refreshed.
