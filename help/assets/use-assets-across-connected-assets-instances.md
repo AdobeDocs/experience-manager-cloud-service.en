@@ -151,6 +151,16 @@ Use the above setup to try the authoring experience to understand how the functi
 
 The fetched assets can be used as any other local asset, except that the associated metadata cannot be edited.
 
+<!-- TBD: Uncomment after verification for Dec release.
+
+### Check use of an asset across other pages {#asset-usage-references}
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+
+Users can view incoming references of the assets and move or delete the asset.
+
+-->
+
 ## Limitations and best practices {#tip-and-limitations}
 
 * To get insights about asset usage, configure the [Asset Insight](/help/assets/assets-insights.md) functionality on the [!DNL Sites] instance.
