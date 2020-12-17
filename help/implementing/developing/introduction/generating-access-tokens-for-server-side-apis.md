@@ -11,7 +11,7 @@ description: Learn how to facilitate communication between a third party server 
 
 Some architectures rely on making calls to AEM as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application that calls a server, which then makes API requests to AEM as a Cloud Service.
 
-The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [developer console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
+The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
