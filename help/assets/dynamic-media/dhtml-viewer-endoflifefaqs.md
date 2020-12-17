@@ -1,9 +1,9 @@
 ---
-title: DHTML Viewer End-of-Life FAQs
+title: DHTML Viewer End-of-Life
 description: Effective January 31, 2014, the DHTML viewer platform is officially end-of-life.
 ---
 
-# DHTML Viewer End-of-Life {#dhtml-viewer-end-of-life-faqs}
+# DHTML Viewer End-of-Life {#dhtml-viewer-end-of-life}
 
 Effective January 31, 2014, the DHTML viewer platform is officially end-of-life.
 
