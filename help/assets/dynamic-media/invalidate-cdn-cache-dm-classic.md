@@ -11,7 +11,7 @@ Dynamic Media assets are cached by the CDN for fast delivery. However, when you 
 >
 >These steps apply only to Dynamic Media in AEM 6.5, Service Pack 5 or earlier. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
-See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+See also [Cache overview in Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
 **To invalidate your CDN cache by way of Dynamic Media Classic:**
 
