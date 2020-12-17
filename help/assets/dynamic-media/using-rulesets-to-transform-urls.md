@@ -10,11 +10,11 @@ You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets 
 * Adding a MIME type suffix. Many services and websites require image suffixes, such as adding `.jpg` to a URL.
 * Creating a folder path to the URL for SEO (Search Engine Optimization) purposes.
 
-  See [How Adobe Scene7 Publishing System Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  See [How Dynamic Media Classic Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Adding metadata to the URL for SEO (Search Engine Optimization) purposes.
 
-  See [How Adobe Scene7 Publishing System Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  See [How Dynamic Media Classic Supports SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Setting the content disposition to trigger a download.
 * Simplify Image Serving templating URLs for personalization. For example, turn `rgb{XX,YY,ZZ}` into the RTF-ready `\redXX\greenYY\blueZZ`
