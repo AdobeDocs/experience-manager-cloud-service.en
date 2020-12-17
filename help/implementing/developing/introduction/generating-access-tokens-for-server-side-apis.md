@@ -11,7 +11,7 @@ description: Learn how to facilitate communication between a third party server 
 
 Some architectures rely on making calls to AEM as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application that calls a server, which then makes API requests to AEM as a Cloud Service.
 
-The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service developer console is used to generate tokens needed for the authentication process.
+The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [developer console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
@@ -19,16 +19,16 @@ A user with the admin role can generate a JWT bearer token, which should be inst
 
 The server-to-server flow involves the following steps:
 
-* Generate the JWT token from the developer console
+* Generate the JWT bearer token from the developer console
 * Install the token on a non-AEM server making calls to AEM
-* Exchange the JWT token for an access token using Adobe's IMS APIs
+* Exchange the JWT bearer token for an access token using Adobe's IMS APIs
 * Calling the AEM API
 
 ### Generating the JWT Bearer Token {generating-the-jwt-bearer-token}
 
 Users who have the admin role for an organization will see the integrations tab in the developer console for a given environment, as well as two buttons. Clicking the **Get Service Credentials** button will generate the private key, certificate, and configuration.
 
-![JWT Generation](assets/JWTtoken1.png)
+![JWT Generation](assets/JWTtoken2.png)
 
 The output will be similar to the following:
 
@@ -62,7 +62,7 @@ Include the JWT token in a call to Adobe's IMS service in order to retrieve an a
 
 ### Calling the AEM API {#calling-the-aem-api}
 
-Make the appropriate server-to-server API calls to an AEM as a Cloud Service environment, including the access token in the header.
+Make the appropriate server-to-server API calls to an AEM as a Cloud Service environment, including the access token in the header. So for the "Authorization" header, use the value `"Bearer <access_token>"`.
 
 <!-- ### Code Samples {#code-samples}
 
@@ -91,7 +91,7 @@ Click the **Get Local Development Token** button in the Developer Console to gen
 
 ### Call then AEM Application with an Access Token {#call-the-aem-application-with-an-access-token}
 
-Make the appropriate server-to-server API calls from the non-AEM application to an AEM as a Cloud Service environment, including the access token in the header.
+Make the appropriate server-to-server API calls from the non-AEM application to an AEM as a Cloud Service environment, including the access token in the header. So for the "Authorization" header, use the value `"Bearer <access_token>"`.
 
 ## JWT Bearer Token Revocation {#jwt-bearer-token-revocation}
 
