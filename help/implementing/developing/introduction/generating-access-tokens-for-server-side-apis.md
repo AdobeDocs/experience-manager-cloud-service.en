@@ -28,7 +28,7 @@ The server-to-server flow involves the following steps:
 
 Users who have the admin role for an organization will see the integrations tab in the developer console for a given environment, as well as two buttons. Clicking the **Get Service Credentials** button will generate the private key, certificate, and configuration.
 
-![JWT Generation](assets/JWTtoken2.png)
+![JWT Generation](assets/JWTtoken3.png)
 
 The output will be similar to the following:
 
