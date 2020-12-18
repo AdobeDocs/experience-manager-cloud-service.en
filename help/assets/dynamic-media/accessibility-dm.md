@@ -45,12 +45,12 @@ Dynamic Media user interface elements work with assistive technologies such as s
 
 All out-of-the-box Dynamic Media viewers components support keyboard accessibility for your customers.
 
-See [Keyboard accessiblity and navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in the Dynamic Media Viewers Reference Guide.
+See [Keyboard accessiblity and navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in the Dynamic Media Viewers Reference Guide.
 
 ## Assistive technology support in Dynamic Media viewers {#assistive-technology=support-for-dm-viewers}
 
 All Dynamic Media viewer components support ARIA (Accessible Rich Internet Applications) roles and attributes to improve integration with assistive technologies such as screen readers.
-See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) for the Interactive Image viewer.
+See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) for the Interactive Image viewer.
 
 >[!MORELIKETHIS]
 >
