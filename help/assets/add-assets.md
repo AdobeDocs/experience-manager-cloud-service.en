@@ -144,6 +144,8 @@ To upload larger number of files, use one of the following approaches. Also, see
 
 The tool is provided only to the administrators group to use for large-scale ingestion of assets from Azure or S3 datastores.
 
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+
 To configure the tool, follow these steps:
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**. Select the **[!UICONTROL Create]** option.
