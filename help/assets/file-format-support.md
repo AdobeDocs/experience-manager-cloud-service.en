@@ -216,6 +216,10 @@ The document formats supported for asset management features are as follows.
 
 [!DNL Assets] as a [!DNL Cloud Service] provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
 
+## Tips and limitations {#limitations-and-tips}
+
+* Currently, the file size limit for metadata extraction is approximately 10 GB. When uploading very large assets, sometimes metadata extraction operation fails.
+
 >[!MORELIKETHIS]
 >
 >* [Asset processing using asset microservices](asset-microservices-overview.md)
