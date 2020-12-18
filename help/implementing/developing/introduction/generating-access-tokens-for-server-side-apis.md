@@ -26,7 +26,7 @@ The server-to-server flow involves the following steps:
 
 ### Generating the JWT Bearer Token {#generating-the-jwt-bearer-token}
 
-Users who have the admin role for an organization will see the integrations tab in the developer console for a given environment, as well as two buttons. Clicking the **Get Service Credentials** button will generate the private key, certificate, and configuration.
+Users who have the admin role for an organization will see the integrations tab in the developer console for a given environment, as well as two buttons. Clicking the **Get Service Credentials** button will generate the private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
 ![JWT Generation](assets/JWTtoken3.png)
 
