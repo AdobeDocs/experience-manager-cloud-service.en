@@ -374,13 +374,11 @@ The following status codes can be seen in the relevant circumstances:
 
 See here for detailed API references:
 
-<!--
-* [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
--->
+* [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
-    * [Available Features](/help/assets/mac-api-assets.md#available-features)
+  * [Available Features](/help/assets/mac-api-assets.md#available-features)
 
 ## Additional Resources {#additional-resources}
 
