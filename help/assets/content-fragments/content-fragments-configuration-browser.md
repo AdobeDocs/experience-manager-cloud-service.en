@@ -5,12 +5,6 @@ description: Learn how to enable certain Content Fragment functionality in the C
 
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
 
->[!CAUTION]
->
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
->
->The related documentation is already available for preview purposes.
-
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
 Before using Content Fragments you need to use the **Configuration Browser** to enable:

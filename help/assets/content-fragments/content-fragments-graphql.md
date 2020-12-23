@@ -5,12 +5,6 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 
 # Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
->[!CAUTION]
->
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
->
->The related documentation is already available for preview purposes.
-
 With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
 ## Headless CMS {#headless-cms}

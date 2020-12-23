@@ -5,12 +5,6 @@ description: Learning to use GraphQL with AEM - Sample Content and Queries.
 
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
->[!CAUTION]
->
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
->
->The related documentation is already available for preview purposes.
-
 To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
 
 To help with this see:
