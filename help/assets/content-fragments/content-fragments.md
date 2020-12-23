@@ -5,22 +5,6 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 
 # Working with Content Fragments{#working-with-content-fragments}
 
-<!--
->[!CAUTION]
->
->Certain features for Content Fragments will be released in early 2021.
->
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
->
->The related documentation is already available for preview purposes.
-
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.
 
 Content fragments contain structured content:
@@ -33,12 +17,9 @@ Content fragments contain structured content:
   * Complex
     * A combination of many fields of varying data types, including text, number, boolean, data and time, amongst others.
     * Can be used either for preparing more structured content for page authoring, or for delivery to your application.
-
-<!--
   * Nested
     * The reference data types available allow you to nest your content.
     * Tends to be used for delivery to your application.
--->
 
 Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
 
@@ -80,10 +61,7 @@ Content fragments allow you to:
 * Build content pools for a range of channels.
 * Design content variations for specific channels.
 * Add images to your text by inserting assets (mixed-media fragments).
-
-<!--
 * Create nested content to reflect the complexity of your data.
--->
 
 These content fragments can then be assembled to provide experiences over a variety of channels.
 
@@ -121,11 +99,9 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >AEM also supports the translation of fragment content. 
 
-<!--
 >[!NOTE]
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
 
 ## Content Type {#content-type}
 
