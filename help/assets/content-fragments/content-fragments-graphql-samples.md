@@ -21,10 +21,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use the model name; eg city
 
 * If you expect a list of results:
-  * add "List" to the model name; for example,  `cityList`
+  * add `List` to the model name; for example,  `cityList`
 
 * If you want to use a logical OR:
-  * use " _logOp: OR"
+  * use ` _logOp: OR`
 
 * Logical AND also exists, but is (often) implicit
 
