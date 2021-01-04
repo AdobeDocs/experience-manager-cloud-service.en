@@ -5,6 +5,14 @@ description: Learning to use GraphQL with AEM - Sample Content and Queries.
 
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
+>[!NOTE]
+>
+>This page should be read together with:
+>
+>* [Content Fragments](/help/assets/content-fragments/content-fragments.md)
+>* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+>* [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
 
 To help with this see:
@@ -13,7 +21,7 @@ To help with this see:
 
 * And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
 
-## GraphQL for AEM - Some Extensions {#graphql-some-extensions}
+## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
@@ -22,153 +30,65 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
+  * See [Sample Query - All Information about All Cities](#sample-all-information-all-cities)
 
 * If you want to use a logical OR:
   * use ` _logOp: OR`
+  * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](#sample-all-persons-jobs-smith)
 
 * Logical AND also exists, but is (often) implicit
 
 * You can query on field names that correspond to the fields within the Content Fragment Model
+  * See [Sample Query - Full Details of a Company's CEO and Employees](#sample-full-details-company-ceos-employees)
 
 * In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
 
   * For content:
 
     * `_locale` : to reveal the language; based on Language Manager
+      * See [Sample Query for multiple Content Fragments of a given locale](#sample-wknd-multiple-fragments-given-locale)
 
     * `_metadata` : to reveal metadata for your fragment
+      * See [Sample Query for Metadata - List the Metadata for Awards titled GB](#sample-metadata-awards-gb)
 
     * `_path` : the path to your Content Fragement within the repository
+      * See [Sample Query - A Single City Fragment](#sample-single-city-fragment)
 
-    * `_references` : to reveal references; including inline references in the Rich Text Editor
+    * `_reference` : to reveal references; including inline references in the Rich Text Editor
+      * See [Sample Query for multiple Content Fragments with Prefetched References](#sample-wknd-multiple-fragments-prefetched-references)
 
-    * `_variations` : to reveal specific Variations within your Content Fragment
+    * `_variation` : to reveal specific Variations within your Content Fragment
+      * See [Sample Query - All Cities with a Named Variation](#sample-cities-named-variation)
 
   * And operations:
   
-    * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, 
+    * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`
+      * See [Sample Query - All Persons that do not have a name of "Jobs"](#sample-all-persons-not-jobs)
   
     * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
+      * See [Sample Query - Filter on an array with an item that must occur at least once](#sample-array-item-occur-at-least-once)
 
     * `_ignoreCase` : to ignore the case when querying
+      * See [Sample Query - All cities with SAN in the name, irrespective of case](#sample-all-cities-san-ignore-case)
 
 * GraphQL union types are supported:
 
-  * use `...on` 
-
-
-## A Sample Content Fragment Structure for use with GraphQL {#content-fragment-structure-graphql}
-
-For a simple example we need:
-
-* One, or more, [Sample Content Fragment Models](#sample-content-fragment-models-schemas) - form the basis for the GraphQL schemas
-
-* [Sample Content Fragments](#sample-content-fragments) based on the above models
-
-### Sample Content Fragment Models (Schemas) {#sample-content-fragment-models-schemas}
-
-For the sample queries, we will use the following Content Models, and their interrelationships (references ->):
-
-* [Company](#model-company)
-  -> [Person](#model-person)
-  &nbsp;&nbsp;&nbsp;&nbsp;-> [Award](#model-award)
-
-* [City](#model-city)
-
-#### Company {#model-company}
-
-The basic fields defining the company are:
-
-| Field Name | Data Type | Reference |
-|--- |--- |--- |
-| Company Name | Single line text | |
-| CEO | Fragment Reference (single) | [Person](#model-person) |
-| Employees | Fragment Reference (multifield) | [Person](#model-person) |
-
-#### Person {#model-person}
-
-The fields defining a person, who can also be an employee:
-
-| Field Name | Data Type | Reference |
-|--- |--- |--- |
-| Name | Single line text | |
-| First name | Single line text | |
-| Awards | Fragment Reference (multifield) | [Award](#model-award) |
-
-#### Award {#model-award}
-
-The fields defining an award are:
-
-| Field Name | Data Type | Reference |
-|--- |--- |--- |
-| Shortcut/ID | Single line text | |
-| Title | Single line text | |
-
-#### City {#model-city}
-
-The fields for defining a city are:
-
-| Field Name | Data Type | Reference |
-|--- |--- |--- |
-| Name | Single line text | |
-| Country | Single line text | |
-| Population | Number | |
-| Categories | Tags | |
-
-### Sample Content Fragments {#sample-content-fragments}
-
-The following fragments are used for the appropriate model. 
-
-#### Company {#fragment-company}
-
-| Company Name | CEO | Employees |
-|--- |--- |--- |
-| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
-
-#### Person {#fragment-person}
-
-| Name | First Name | Awards |
-|--- |--- |--- |
-| Lincoln | Abe | |
-| Smith | Adam | |
-| Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke | | 
-| Smith | Joe | |
-| Croft | Lara | Gamestar |
-| Caulfield | Max | Gameblitz |
-| Jobs | Steve | |
-
-#### Award {#fragment-award}
-
-| Shortcut/ID | Title |
-|--- |--- |
-| GB | Gameblitz |
-| GS | Gamestar |
-| OSC | Oscar |
-
-#### City {#fragment-city}
-
-| Name | Country | Population | Categories |
-|--- |--- |--- |--- |
-| Basel | Switzerland | 172258 | city:emea |
-| Berlin | Germany | 3669491 | city:capital<br>city:emea |
-| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
-| San Francisco | USA | 883306 | city:beach<br>city:na |
-| San Jose | USA | 102635 | city:na |
-| Stuttgart | Germany | 634830 | city:emea |
-| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
+  * use `... on` 
+    * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Sample Queries using the Sample Content Fragment Structure {#graphql-sample-queries-sample-content-fragment-structure}
 
-See the sample queries for illustrations of create queries, together with sample results.
+See these sample queries for illustrations of create queries, together with sample results.
 
 >[!NOTE]
 >
 >Depending on your instance you can directly access the [Graph*i*QL interface included with AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) for submitting and testing queries.
 >
 >For example: `http://localhost:4502/content/graphiql.html`
+
+>[!NOTE]
+>
+>The sample queries are based on the [Sample Content Fragment Structure for use with GraphQL](#content-fragment-structure-graphql)
 
 ### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
@@ -1493,3 +1413,106 @@ This sample query interrogates:
   }
 }
 ```
+
+## The Sample Content Fragment Structure for use with GraphQL {#content-fragment-structure-graphql}
+
+The sample queries are based on the following structure, which uses:
+
+* One, or more, [Sample Content Fragment Models](#sample-content-fragment-models-schemas) - form the basis for the GraphQL schemas
+
+* [Sample Content Fragments](#sample-content-fragments) based on the above models
+
+### Sample Content Fragment Models (Schemas) {#sample-content-fragment-models-schemas}
+
+For the sample queries, we will use the following Content Models, and their interrelationships (references ->):
+
+* [Company](#model-company)
+  -> [Person](#model-person)
+  &nbsp;&nbsp;&nbsp;&nbsp;-> [Award](#model-award)
+
+* [City](#model-city)
+
+#### Company {#model-company}
+
+The basic fields defining the company are:
+
+| Field Name | Data Type | Reference |
+|--- |--- |--- |
+| Company Name | Single line text | |
+| CEO | Fragment Reference (single) | [Person](#model-person) |
+| Employees | Fragment Reference (multifield) | [Person](#model-person) |
+
+#### Person {#model-person}
+
+The fields defining a person, who can also be an employee:
+
+| Field Name | Data Type | Reference |
+|--- |--- |--- |
+| Name | Single line text | |
+| First name | Single line text | |
+| Awards | Fragment Reference (multifield) | [Award](#model-award) |
+
+#### Award {#model-award}
+
+The fields defining an award are:
+
+| Field Name | Data Type | Reference |
+|--- |--- |--- |
+| Shortcut/ID | Single line text | |
+| Title | Single line text | |
+
+#### City {#model-city}
+
+The fields for defining a city are:
+
+| Field Name | Data Type | Reference |
+|--- |--- |--- |
+| Name | Single line text | |
+| Country | Single line text | |
+| Population | Number | |
+| Categories | Tags | |
+
+### Sample Content Fragments {#sample-content-fragments}
+
+The following fragments are used for the appropriate model. 
+
+#### Company {#fragment-company}
+
+| Company Name | CEO | Employees |
+|--- |--- |--- |
+| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+
+#### Person {#fragment-person}
+
+| Name | First Name | Awards |
+|--- |--- |--- |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke | | 
+| Smith | Joe | |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Jobs | Steve | |
+
+#### Award {#fragment-award}
+
+| Shortcut/ID | Title |
+|--- |--- |
+| GB | Gameblitz |
+| GS | Gamestar |
+| OSC | Oscar |
+
+#### City {#fragment-city}
+
+| Name | Country | Population | Categories |
+|--- |--- |--- |--- |
+| Basel | Switzerland | 172258 | city:emea |
+| Berlin | Germany | 3669491 | city:capital<br>city:emea |
+| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
+| San Jose | USA | 102635 | city:na |
+| Stuttgart | Germany | 634830 | city:emea |
+| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
