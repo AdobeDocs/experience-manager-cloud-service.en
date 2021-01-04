@@ -30,7 +30,7 @@ The following release (2021.1.0) will be on January 28, 2020.
 
 ### What is New {#what-is-new-commerce}
 
-* Released CIF Venia Reference Site - 2020.12.01 that includes the lastest CIF Core Components version v1.6.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) for more details.
+* Released CIF Venia Reference Site - 2020.12.01 that includes the latest CIF Core Components version v1.6.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) for more details.
 
 * Released CIF Core Components v1.6.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) for more details.
 
