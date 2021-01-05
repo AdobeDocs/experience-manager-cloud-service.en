@@ -65,11 +65,11 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 
 ## XMP writeback to renditions {#xmp-writeback-to-renditions}
 
-This XMP write-back feature in Adobe Experience Manager (AEM) Assets replicates asset metadata changes to the renditions of the asset.
+This XMP writeback feature in Adobe Experience Manager (AEM) Assets replicates asset metadata changes to the renditions of the asset.
 
 When you change the metadata for an asset from within AEM Assets or while uploading the asset, changes are initially stored within the asset node in CRXDE.
 
-The XMP write-back feature propagates the metadata changes to all or specific renditions of the asset.
+The XMP writeback feature propagates the metadata changes to all or specific renditions of the asset.
 
 Consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
 
@@ -81,13 +81,16 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 
 However, AEM Assets does not automatically propagate any metadata changes to the renditions of an asset.
 
-The XMP write-back feature lets you propagate the metadata changes to all or specific renditions of the asset. However, the changes are not stored under the metadata node in the asset hierarchy. Instead, this feature embeds the changes in the binary files for the renditions.
+The XMP writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. However, the changes are not stored under the metadata node in the asset hierarchy. Instead, this feature embeds the changes in the binary files for the renditions.
 
-### Enable XMP write-back {#enable-xmp-writeback}
+<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
+### Enable XMP writeback {#enable-xmp-writeback}
 -->
 
+<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
+
+<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
@@ -114,6 +117,7 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 1. Save the workflow.
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
+-->
 
 >[!MORELIKETHIS]
 >

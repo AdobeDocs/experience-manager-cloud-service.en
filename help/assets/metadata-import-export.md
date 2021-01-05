@@ -10,7 +10,7 @@ AEM Assets lets you import asset metadata in bulk using a CSV file. You can do b
 
 ## Import metadata {#import-metadata}
 
-The metadata import is asynchronous and does not impede the system performance. Simultaneous update of the metadata for multiple assets can be resource-intensive because of XMP writeback activity if workflow flag is checked. Plan such an import during lean server usage so that performance for other users is not impacted.
+The metadata import is asynchronous and does not impede the system performance. Simultaneous update of the metadata for multiple assets can possibly be resource-intensive because of XMP writeback activity using asset microservices. Adobe recommends that you plan any bulk operations during lean server usage so that performance for other users is not impacted.
 
 >[!NOTE]
 >
@@ -21,17 +21,17 @@ The metadata import is asynchronous and does not impede the system performance. 
 1. In the **[!UICONTROL Metadata Import]** page, tap/click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
 1. Specify the following parameters:
 
-   |       Parameter        |                                                                                                       Description                                                                                                        |
-   | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-   | Batch Size             | Number of assets in a batch for which metadata is to be imported. The default value is 50. Maximum value is 100.                                                                                                         |
-   | Field Separator        | Default value is `,` (a comma). You can specify any other character.                                                                                                                                                     |
-   | Multi value Delimiter  | Separator for metadata values. Default value is `|`.                                                                                                                                                                     |
+   |       Parameter        |      Description  |
+   | ---------------------- | ------- |
+   | Batch Size             | Number of assets in a batch for which metadata is to be imported. The default value is 50. Maximum value is 100. |
+   | Field Separator        | Default value is `,` (a comma). You can specify any other character. |
+   | Multi value Delimiter  | Separator for metadata values. Default value is `|`. |
    | Launch Workflows       | False by default. When set to `true` and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
-   | Asset Path Column Name | Defines the column name for the CSV file with assets.                                                                                                                                                                    |
+   | Asset Path Column Name | Defines the column name for the CSV file with assets.  |
 
-1. Tap/click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
+1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
 
-To add date and timestamp when importing metadata, use `YYYY-MM-DDThh:mm:ss.fff-00:00` format for date and time. Date and time are separated by `T`, `hh` is hours in 24-hour format, `fff` is nanoseconds, and `-00:00` is timezone offset. For example, `2020-03-26T11:26:00.000-07:00` is March 26, 2020 at 11:26:00.000 AM PST time.
+To add date and timestamp when importing metadata, use `YYYY-MM-DDThh:mm:ss.fff-00:00` format for date and time. Date and time are separated by `T`, `hh` is hours in 24-hour format, `fff` is nanoseconds, and `-00:00` is time zone offset. For example, `2020-03-26T11:26:00.000-07:00` is March 26, 2020 at 11:26:00.000 AM PST time.
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ To add date and timestamp when importing metadata, use `YYYY-MM-DDThh:mm:ss.fff-
 
 ## Export Metadata {#export-metadata}
 
-You can export metada for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, AEM traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
+You can export metadata for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, AEM traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
 
 A few use cases for exporting metadata in bulk are:
 
@@ -61,4 +61,5 @@ A few use cases for exporting metadata in bulk are:
 1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
 
    ![Dialog  to download the CSV file containing metadata exported in bulk](assets/csv_download.png)
-   *Figure: Dialog  to download the CSV file containing metadata exported in bulk*
+
+   *Figure: Dialog  to download the CSV file containing metadata exported in bulk.*
