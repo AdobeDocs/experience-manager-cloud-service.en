@@ -1,5 +1,5 @@
 ---
-title: Content Delivery using Content Fragments with the Adobe Experience Manager as a Cloud Service GraphQL API
+title: AEM GraphQL API for use with Content Fragments
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for Headless Content Delivery.
 ---
 
@@ -15,7 +15,19 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 
 ## The GraphQL API {#graphql-api}
 
-*"GraphQL is a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."* See [GraphQL Foundation](https://foundation.graphql.org/).
+GraphQL is:
+
+* "*...a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.*". 
+
+  See [GraphQL.org](https://graphql.org)
+
+* "*...an open spec for a flexible API layer. Put GraphQL over your existing backends to build products faster than ever before....*". 
+
+  See [Explore GraphQL](https://www.graphql.com). "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+
+* *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."* 
+  
+  See [GraphQL Foundation](https://foundation.graphql.org/).
 
 For further information about the GraphQL API, see the following sections (amongst many other resources):
 

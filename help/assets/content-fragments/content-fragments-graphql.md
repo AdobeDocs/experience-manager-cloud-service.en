@@ -7,6 +7,10 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 
 With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
+>[!NOTE]
+>
+>See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+
 ## Headless CMS {#headless-cms}
 
 A Headless Content Management System (CMS) is:
@@ -21,21 +25,13 @@ In terms of authoring Content Fragments in AEM this means that:
 
 * The content of your Content Fragments will be structured in a predetermined manner - according to the Content Fragment Models. This simplifies access for your applications, which will further process your content. 
 
->[!NOTE]
->
->See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
-
 ## GraphQL - An Overview {#graphql-overview}
 
 GraphQL is:
 
-* "*...a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.*". 
+* "*...a query language for APIs and a runtime for fulfilling those queries with your existing data.*". 
 
   See [GraphQL.org](https://graphql.org)
-
-* "*...an open spec for a flexible API layer. Put GraphQL over your existing backends to build products faster than ever before....*". 
-
-  See [Explore GraphQL](https://www.graphql.com). "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 
 The [AEM GraphQL API](#aem-graphql-api) allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
 
@@ -89,7 +85,7 @@ The **[Fragment Reference](/help/assets/content-fragments/content-fragments-mode
 
 ### JSON Preview {#json-preview}
 
-To help with designing and developing your Content Fragment Modesl, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
+To help with designing and developing your Content Fragment Models, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 ## Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
