@@ -5,22 +5,6 @@ description: Content Fragments are stored as Assets, so are primarily managed fr
 
 # Managing Content Fragments{#managing-content-fragments}
 
-<!--
->[!CAUTION]
->
->Certain features for Content Fragments will be released in early 2021.
->
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
->
->The related documentation is already available for preview purposes.
-
 Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
 >[!NOTE]
@@ -232,13 +216,13 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 * View information about versions, comments, and annotations
 * Actions for Versions
 
-    * **[Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
+  * **[Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
 
-    * **[Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
+  * **[Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
 
-    * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
+  * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
 
-    * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
+  * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
 
 * Actions for Annotations
 
