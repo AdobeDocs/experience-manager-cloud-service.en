@@ -64,7 +64,8 @@ GraphQL uses the following:
   
 * **[Fields](https://graphql.org/learn/queries/#fields)**
 
-* **GraphQL Endpoint** - the path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas.
+* **GraphQL Endpoint**
+  * The path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas. See [Endpoint Configuration](#endpoint-configuration) for further details.
 
 See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
 
@@ -75,6 +76,10 @@ With GraphQL you can perform queries to return either:
 * A **single entry**
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
+
+You can also perform:
+
+* [Persisted Queries, that are cached](#persisted-queries-caching)
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -99,6 +104,10 @@ The use cases can depend on the type of AEM as a Cloud Service environment:
   * Query data for "content management purposes":
     * GraphQL in AEM as a Cloud Service is currently a read-only API.
     * The REST API can be used for CR(u)D operations.
+
+## Permissions {#permission}
+
+The permissions are those required for accessing Assets.
 
 ## Schema Generation {#schema-generation}
 
@@ -331,6 +340,22 @@ query getAdventureByType($includePrice: Boolean!) {
 }
 ```
 
+## Filtering {#filtering}
+
+You can also use filtering in your GraphQL queries to return specific data. 
+
+Filtering uses a syntax based on logical operators and expressions. 
+
+For examples, see:
+
+* details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+
+* [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
+
+* [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+
+* [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
@@ -549,37 +574,10 @@ To allow a third party website to consume JSON output, a CORS policy must be con
 >* only grant access to trusted domains 
 >* not use a wildcard [*] syntax; which will expose the GraphQL endpoints to the entire world.
 
-
-## Filtering {#filtering}
-
-You can also use filtering in your GraphQL queries to return specific data. 
-
-Filtering uses a syntax based on logical operators and expressions. 
-
-For examples, see:
-
-* details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
-
-* [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
-
-* [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
-
-* [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
-
-## Permissions {#permission}
-
-The permissions are those required for accessing Assets.
-
 <!-- to be addressed later -->
 
 <!-- 
 ## Authentication {#authentication}
--->
-
-<!-- to be addressed later -->
-
-<!-- 
-## Caching {#caching}
 -->
 
 <!-- to be addressed later -->
@@ -594,7 +592,7 @@ The permissions are those required for accessing Assets.
 ## Paging {#paging}
 -->
 
-## End-Points {#end-points}
+## Endpoint Configuration {#endpoint-configuration}
 
 The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
 
