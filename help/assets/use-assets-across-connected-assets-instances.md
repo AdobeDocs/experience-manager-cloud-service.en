@@ -99,6 +99,10 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 1. Add the [!DNL Sites] deployment as an allowed origin in the CORS configuration on the [!DNL Assets] deployment. For more information, see [understand CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
+You can check the connectivity between configured [!DNL Sites] deployments and [!DNL Assets] deployment.
+
+![Connection test of Connected Assets configured [!DNL Sites]](assets/connected-assets-multiple-config.png)
+
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
 ## Use remote assets {#use-remote-assets}
