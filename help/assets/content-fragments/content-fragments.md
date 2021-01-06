@@ -101,7 +101,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
+>AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
 
 ## Content Type {#content-type}
 
