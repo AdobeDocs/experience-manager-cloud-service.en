@@ -139,13 +139,15 @@ To open your fragment for editing:
 
    Some features in the top toolbar are available from multiple modes:
 
-   * **Publish** the fragment
-  
-   * See the status of the fragment; for example, information about when it was created, modified or published.
-  
-   * See the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
+   * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
      * The name is also a link that will open the model editor.
+
+   * See the status of the fragment; for example, information about when it was created, modified or published.
+
+   * **Publish** the fragment.
+
+   ![modes](assets/cfm-managing-top-toolbar.png)
 
 4. After making changes, use **Save** or **Cancel** as required.
 
