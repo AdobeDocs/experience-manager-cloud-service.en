@@ -61,6 +61,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Configurations and the Configuration Browser](developing/introduction/configurations.md)
   + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+  + [Generating Access Tokens for Server Side APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
   + Full Stack AEM Development {#full-stack}
     + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
     + [Structure of the AEM UI](developing/introduction/ui-structure.md)

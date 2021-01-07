@@ -35,18 +35,24 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 >
 >For further details see also [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
+>[!CAUTION]
+>
+>Sub-configurations (a configuration nested within a configuration) are not supported for use with Content Fragments.
+
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
-2. Select the location appropriate to your website.
-3. Use **Create** to open the dialog, where you:
 
-    1. Specify a **Title**.
-    2. To enable their use select 
-       * **Content Fragment Models** 
-       * **GraphQL Persistent Queries**
+1. Use **Create** to open the dialog, where you:
 
-       ![Define configuration](assets/cfm-conf-01.png)
+   1. Specify a **Title**.
+   1. To enable their use select 
+      * **Content Fragment Models** 
+      * **GraphQL Persistent Queries**
 
-4. Select **Create** to save the definition.
+      ![Define configuration](assets/cfm-conf-01.png)
+
+1. Select **Create** to save the definition.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Apply the Configuration to your Assets Folder {#apply-the-configuration-to-your-assets-folder}
 
