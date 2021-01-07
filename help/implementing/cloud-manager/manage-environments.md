@@ -162,7 +162,7 @@ Navigate to the Environment details page from the Environments Summary page. You
 Applying an IP Allow List is the process by which all IP ranges included in the definition of the Allow-List are associated with an Author or Publish service in an environment. A user in the Business Owner or Deployment Manager role must be logged in in order to be able to apply an IP Allow List.
 
 >[!NOTE]
->The IP Allow List must exist in Cloud Manager in order to apply it to an environment-service. To learn more about IP Allow Lists in Cloud Manager navigate to [Introduction to IP Allow Lists in Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>The IP Allow List must exist in Cloud Manager in order to apply it to an environment-service. To learn more about IP Allow Lists in Cloud Manager navigate to [Introduction to IP Allow Lists in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Follow the steps below to apply an IP Allow List:
 
