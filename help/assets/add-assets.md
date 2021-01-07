@@ -128,7 +128,7 @@ To suit specific file naming conventions for your organization, the [!UICONTROL 
 
 ## Bulk upload assets {#bulk-upload}
 
-The bulk asset ingestor can handle thousands of assets efficiently. However, a large-scale ingestion is not just a broad and large file dump or blind migration. For it to be a meaningful project that serves your business purpose, planning and curating the assets lead to a much more efficient ingestion. All ingestions are not the same and generalizations cannot be made without factoring in the nuanced repository composition and business needs. The following are overarching suggestions to plan and execute a bulk ingestion:
+The bulk asset ingestor can handle very large number of assets efficiently. However, a large-scale ingestion is not just a broad file dump or a casual migration. For a large-scale ingestion to be a meaningful project that serves your business purpose and is efficient, plan the migration and curate the assets organization. All ingestions are different so instead of generalizing, factor in the nuanced repository composition and business needs. The following are some overarching suggestions to plan and execute a bulk ingestion:
 
 * Curate assets: Remove assets that are not needed in the DAM. Consider removing unused, obsolete, or duplicate assets. This reduces the data transferred and assets ingested leading to faster ingestions.
 * Organize assets: Consider organizing the content in some logical order, say by file size, file format, use case, or priority. In general, large complex files require more processing. You can also consider ingesting large files separately using the file size filtering option (described below).
@@ -142,7 +142,9 @@ To upload larger number of files, use one of the following approaches. Also, see
 
 ### Asset bulk ingestor tool {#asset-bulk-ingestor}
 
-The tool is provided only to the administrators group to use for large-scale ingestion of assets from Azure or S3 datastores.
+The tool is provided only to the administrators group to use for large-scale ingestion of assets from Azure or S3 datastores. See a video walk-through of the configuration and ingestion.
+
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 To configure the tool, follow these steps:
 

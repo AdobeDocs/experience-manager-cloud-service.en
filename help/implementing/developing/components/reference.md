@@ -61,10 +61,6 @@ This (optional) logic can be implemented in different ways and is invoked from H
 * Using JavaScript - [The HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) enables a HTL file to access helper code written in JavaScript. This allows you to use JavaScript code to implement the logic for selecting and configuring the component content.
 * Using Client-Side Libraries - Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. See the document [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) for more information.
 
-### Developing Your Own Components {#developing-your-own-components}
-
-Dev content here?
-
 ## Component Structure {#structure}
 
 The structure of an AEM component is powerful and flexible. The main parts are:
@@ -401,6 +397,14 @@ With the following configuration the page is refreshed after the component has b
 ### Field Validation {#field-validation}
 
 Field validation in Granite UI and the Granite UI widgets is done by using the `foundation-validation` API. See the [`foundation-valdiation` Granite documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) for details.
+
+### Detecting Availability of the Dialog {#dialog-ready}
+
+If you have a custom JavaScript that needs to be executed only when the dialog is available and ready, you should listen for the `dialog-ready` event.
+
+This event is triggered  whenever the dialog loads (or re-loads) and is ready for use, which means whenever there is a change (create/update) in the DOM of the dialog.
+
+`dialog-ready` can be used to hook in JavaScript custom code that performs customizations on the fields inside a dialog or similar tasks.
 
 ## Preview Behavior {#preview-behavior}
 

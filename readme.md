@@ -1,6 +1,6 @@
-# Adobe Experience Manager Cloud Service Documentation
+# Adobe Experience Manager as a Cloud Service Documentation
 
-This is the repository for Adobe Experience Manager Cloud Service documentation. This documentation covers the installation, administering, authoring use, and how to customize AEM using Cloud Service.
+This is the repository for Adobe Experience Manager as a Cloud Service documentation. This documentation covers the installation, administering, authoring use, and how to customize Experience Using as a Cloud Service.
 
 Your contributions to the documentation are welcome. Please see the following resources:
 
