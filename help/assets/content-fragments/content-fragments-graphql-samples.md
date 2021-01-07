@@ -1184,12 +1184,12 @@ This query interrogates:
 
 This sample query interrogates:
 
-* for a single Content Fragment of a given model
-* for all formats of content:
-  * HTML
-  * Markdown
-  * Plain Text
-  * JSON
+* for a single Content Fragment at a specific path
+  * within that, all formats of content:
+    * HTML
+    * Markdown
+    * Plain Text
+    * JSON
 
 **Sample Query**
 
@@ -1212,6 +1212,11 @@ This sample query interrogates:
 
 ### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
 
+This query interrogates:
+
+* for a single Content Fragment at a specific path
+  * within that, the path and author of the referenced (nested) fragment
+
 **Sample Query**
 
 ```xml
@@ -1230,6 +1235,15 @@ This sample query interrogates:
 ```
 
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
+
+This query interrogates:
+
+* for multiple Content Fragments
+  * with Fragment References to other fragments of specific Model types
+
+>[!NOTE]
+>
+>The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
 
 ```xml
 {
