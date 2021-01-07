@@ -95,19 +95,25 @@ To preview an asset, follow these steps.
    >
    >To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
 
-1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
+1. Tap/click **[!UICONTROL Save & Close]**.
 
-   Usage statistics include the following:
+1. Navigate to the Assets user interface. The edited metadata properties, including title, description, and tags are displayed on the asset card in Card view and under relevant columns in the List view.
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+## View asset usage and references {#usage-and-references}
+
+[!DNL Experience Manager] lets you track statistics about usage of a digital asset. The usage statistics include the following:
 
     * Number of times the asset was viewed or downloaded
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-   For more details, see [Asset Insights](assets-insights.md).
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
 
-1. Tap/click **[!UICONTROL Save & Close]**.
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
 
-1. Navigate to the Assets user interface. The edited metadata properties, including title, description, and tags are displayed on the asset card in Card view and under relevant columns in the List view.
+-->
 
 ## Copy assets {#copying-assets}
 

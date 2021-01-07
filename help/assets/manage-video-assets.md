@@ -21,17 +21,17 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 ## Publish video assets {#publish-video-assets}
 
-After publishing, you can include the video assets in a web page as a URL or directly embed the assets. For details, see [publish Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+After publishing, you can include the video assets in a web page as a URL or directly embed the assets. For details, see [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Transcode using Processing Profile {#transcode-video}
 
 [!DNL Experience Manager] as a [!DNL Cloud Service] lets you do basic transcoding of MP4 video files using Processing Profiles. The functionality allows you to not just upload but also preview and scale a MP4 video file.
 
-![Create Processing Profile for video transcoding in Experience Manager](assets/video-processing-profile-for-mp4.png)
+![Create Processing Profile for video transcoding in [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Figure: A Processing Profile for video transcoding in [!DNL Experience Manager].*
 
-If you provide only width or only height and leave the other field blank, the renditions maintain the aspect ratio. Currently, only h264 codec is available for transcoding.
+If you provide only width or only height and leave the other field blank, the renditions maintain the aspect ratio. H.264 video codec is available for transcoding.
 
 To process assets using a processing profile, add a profile to a folder. See [use processing profiles to process assets](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -45,8 +45,18 @@ To process assets using a processing profile, add a profile to a folder. See [us
 
 ## Best practices and limitations {#tips-limitations}
 
-* Without Dynamic Media license, you can only process MP4 files using processing profiles.
-* For basic transcoding using 
+* Without [!DNL Dynamic Media] license, you can only process MP4 files using processing profiles.
+* When transcode MP4 files using Processing Profiles, the following guidelines and limitations apply:
+
+  * Apple ProRes files can only transcode to a maximum resolution of 1080p.
+  * If the source file has a bitrate >200 Mbps, you can only transcode to a maximum resolution of 1080p.
+  * If the source framerate >= 60 fps then, the maximum source file size you can use is
+
+    * 400 MB for 4k transcoding.
+    * 800 MB for 1080p transcoding.
+    * 8 GB for 720p transcoding.
+
+  * Maximum file size you can transcode to 4k resolution is 2.55 GB MP4 file of 4k resolution, 12 Mbps bitrate, and 23 fps.
 
 >[!MORELIKETHIS]
 >
