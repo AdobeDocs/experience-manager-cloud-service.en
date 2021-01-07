@@ -1,6 +1,6 @@
 ---
-title: Introduction - IP Allow Lists in Could Manager
-description: Introduction - IP Allow Lists in Could Manager
+title: Introduction - IP Allow Lists in Cloud Manager
+description: Introduction - IP Allow Lists in Cloud Manager
 ---
 
 # Introduction {#introduction}
