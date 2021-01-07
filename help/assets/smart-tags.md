@@ -18,7 +18,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 To use smart tagging, complete the following tasks:
 
-* [Integrate Experience Manager with Adobe Developer Console](#integrate-aem-with-aio).
+* [Integrate [!DNL Adobe Experience Manager] with Adobe Developer Console](#integrate-aem-with-aio).
 * [Understand tag models and guidelines](#understand-tag-models-guidelines).
 * [Train the model](#train-model).
 * [Tag your digital assets](#tag-assets).
@@ -98,6 +98,9 @@ To create and train a model for your business-specific tags, follow these steps:
 1. Click **[!UICONTROL Create]**. Provide a **[!UICONTROL Title]**, **[!UICONTROL Description]**.
 1. Browse and select the tags from the existing tags in `cq:tags` that you want to train the model for. Click **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Select Assets]** dialog, click **[!UICONTROL Add Assets]** against each tag. Search in the DAM repository or browse the repository to select at least 10 and at most 50 images. Select assets and not the folder. Once you've selected the images, click **[!UICONTROL Select]**.
+
+   ![View training status](assets/smart-tags-training-status.png)
+
 1. To preview the thumbnails of the selected images, click the accordion in front of a tag. You can modify your selection by clicking **[!UICONTROL Add Assets]**. Once satisfied with the selection, click **[!UICONTROL Submit]**. The user interface displays a notification at the bottom of the page indicating that the training is initiated.
 1. Check the status of the training in the **[!UICONTROL Status]** column for each tag model. Possible statuses are [!UICONTROL Pending], [!UICONTROL Trained], and [!UICONTROL Failed].
 
@@ -109,13 +112,13 @@ To create and train a model for your business-specific tags, follow these steps:
 
 To check whether the Smart Tags service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools > Assets > Reports]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools] > **[!UICONTROL Assets] > **[!UICONTROL Reports]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
 1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, click **[!UICONTROL View]** from the toolbar.
 1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag. If you do not see your tags in this report, run the training workflow again for these tags.Tags
-1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as an Microsoft Excel spreadsheet.
+1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as an [!DNL Microsoft Excel] spreadsheet.
 
 ## Tag assets {#tag-assets}
 
