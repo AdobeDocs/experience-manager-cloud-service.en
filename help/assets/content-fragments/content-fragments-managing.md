@@ -125,7 +125,7 @@ To open your fragment for editing:
    >1. A message will be shown when the fragment is already referenced on a content page.
    >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
-3. Navigate through the three modes using the icons in the side panel:
+3. Navigate through the various modes using the icons in the side panel:
 
     * Variations: [Editing the content](#editing-the-content-of-your-fragment) and [Managing your Variations](#creating-and-managing-variations-within-your-fragment)
 
@@ -136,6 +136,16 @@ To open your fragment for editing:
     * [Preview](/help/assets/content-fragments/content-fragments-json-preview.md)
 
    ![modes](assets/cfm-managing-04.png)
+
+   Some features in the top toolbar are available from multiple modes:
+
+   * **Publish** the fragment
+  
+   * See the status of the fragment; for example, information about when it was created, modified or published.
+  
+   * See the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
+
+     * The name is also a link that will open the model editor.
 
 4. After making changes, use **Save** or **Cancel** as required.
 
