@@ -41,22 +41,12 @@ You can:
 
   * each data type provides different editing options
 
-* **Publish** the fragment
-  
-* see the status of the fragment; for example, modified, published, etc.
-  
-* see the name of the Content Fragment Mdel used for creating the current fragment:
-
-  * The name is also a link that will open the model editor.
-
 * for **Multi line text** fields you can also open the [full-screen editor](#full-screen-editor) to:
 
   * select the [Format](#formats)
   * see more editing options (for [Rich Text](#rich-text) format)
   * access a range of [actions](#actions)
-
-* **Save** your changes to the fragment. Or **Cancel**.
-  
+ 
 For example:
 
 ![full screen editor](assets/cfm-variations-02.png)
