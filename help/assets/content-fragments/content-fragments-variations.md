@@ -46,7 +46,7 @@ You can:
   * select the [Format](#formats)
   * see more editing options (for [Rich Text](#rich-text) format)
   * access a range of [actions](#actions)
-
+ 
 For example:
 
 ![full screen editor](assets/cfm-variations-02.png)
