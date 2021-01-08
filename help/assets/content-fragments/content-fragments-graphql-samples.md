@@ -1093,7 +1093,13 @@ query {
 
 ## Sample Queries using the WKND Project {#sample-queries-using-wknd-project}
 
-These sample queries are based on the WKND project. 
+These sample queries are based on the WKND project. This has:
+
+* Content Fragment Models available under:
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Content Fragments (and other content) available under:
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1270,7 +1276,10 @@ This query interrogates:
 
 ### Sample Query for a Content Fragment of a specific Model with Content References{#sample-wknd-fragment-specific-model-content-reference}
 
-There are two flavors of this query - one to return all content references, and one to return content references for `attachments`.
+There are two flavors of this query:
+
+1. To return all content references.
+1. To return the specific content references of type `attachments`.
 
 These queries interrogate:
 
@@ -1315,7 +1324,7 @@ The following query returns all content references by using `_references`:
 
 #### Sample Query for multiple Content Fragments with Attachments {#sample-wknd-multiple-fragments-attachments}
 
-The following query returns all `attachments` - a specific field (sub-group) of content references:
+The following query returns all `attachments` - a specific field (sub-group) of type `content-reference`:
 
 >[!NOTE]
 >

@@ -282,6 +282,12 @@ A fragment, with its elements and variations, can be used to create coherent con
 
 ### WKND Sample {#wknd-sample}
 
-The [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) samples are provided to help you learn about AEM as a Cloud Service. It includes sample fragments, these can be seen at:
+The [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) samples are provided to help you learn about AEM as a Cloud Service. 
 
-`http://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+The WKND project includes:
+
+* Content Fragment Models available under:
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Content Fragments (and other content) available under:
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
