@@ -284,4 +284,4 @@ A fragment, with its elements and variations, can be used to create coherent con
 
 The [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) samples are provided to help you learn about AEM as a Cloud Service. It includes sample fragments, these can be seen at:
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+`http://<host>:<port>/assets.html/content/dam/wknd/en/adventures`

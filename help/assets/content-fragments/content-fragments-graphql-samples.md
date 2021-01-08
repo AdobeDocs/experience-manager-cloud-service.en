@@ -52,7 +52,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       * See [Sample Query for Metadata - List the Metadata for Awards titled GB](#sample-metadata-awards-gb)
 
     * `_path` : the path to your Content Fragement within the repository
-      * See [Sample Query - A Single City Fragment](#sample-single-city-fragment)
+      * See [Sample Query - A Single Specific City Fragment](#sample-single-specific-city-fragment)
 
     * `_reference` : to reveal references; including inline references in the Rich Text Editor
       * See [Sample Query for multiple Content Fragments with Prefetched References](#sample-wknd-multiple-fragments-prefetched-references)
@@ -92,7 +92,7 @@ See these sample queries for illustrations of create queries, together with samp
 
 ### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
-This will return all types for all available schemas.
+This will return all `types` for all available schemas.
 
 **Sample Query**
 
@@ -176,134 +176,6 @@ This will return all types for all available schemas.
         {
           "name": "__TypeKind",
           "description": "An enum describing what kind of type a given __Type is"
-        }
-      ]
-    }
-  }
-}
-```
-
-### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
-
-Using the structure of the nested fragments, this query returns the full details of a company's CEO and all its employees.
-
-**Sample Query**
-
-```xml
-query {
-  companyList {
-    items {
-      name
-      ceo {
-        _path
-        name
-        firstName
-        awards {
-        id
-          title
-        }
-      }
-      employees {
-       name
-        firstName
-       awards {
-         id
-          title
-        }
-      }
-    }
-  }
-}
-```
-
-**Sample Results**
-
-```xml
-{
-  "data": {
-    "companyList": {
-      "items": [
-        {
-          "name": "Apple Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Marsh",
-              "firstName": "Duke",
-              "awards": []
-            },
-            {
-              "name": "Caulfield",
-              "firstName": "Max",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Little Pony, Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
-            "name": "Smith",
-            "firstName": "Adam",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Croft",
-              "firstName": "Lara",
-              "awards": [
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            },
-            {
-              "name": "Slade",
-              "firstName": "Cutter",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                },
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "NextStep Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Smith",
-              "firstName": "Joe",
-              "awards": []
-            },
-            {
-              "name": "Lincoln",
-              "firstName": "Abraham",
-              "awards": []
-            }
-          ]
         }
       ]
     }
@@ -444,7 +316,7 @@ query {
 }
 ```
 
-### Sample Query - A Single City Fragment {#sample-single-city-fragment}
+### Sample Query - A Single Specific City Fragment {#sample-single-specific-city-fragment}
 
 This is a query to return the details of a single fragment entries at a specific location in the repository.
 
@@ -520,6 +392,134 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
+
+Using the structure of the nested fragments, this query returns the full details of a company's CEO and all its employees.
+
+**Sample Query**
+
+```xml
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        _path
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
           ]
         }
       ]
@@ -1184,12 +1184,12 @@ This query interrogates:
 
 This sample query interrogates:
 
-* for a single Content Fragment of a given model
-* for all formats of content:
-  * HTML
-  * Markdown
-  * Plain Text
-  * JSON
+* for a single Content Fragment of type `article` at a specific path
+  * within that, all formats of content:
+    * HTML
+    * Markdown
+    * Plain Text
+    * JSON
 
 **Sample Query**
 
@@ -1212,6 +1212,15 @@ This sample query interrogates:
 
 ### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
 
+This query interrogates:
+
+* for a single Content Fragment of type `article` at a specific path
+  * within that, the path and author of the referenced (nested) fragment
+
+>[!NOTE]
+>
+>The field `referencearticle` has the Data type `fragment-reference`.
+
 **Sample Query**
 
 ```xml
@@ -1230,6 +1239,15 @@ This sample query interrogates:
 ```
 
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
+
+This query interrogates:
+
+* for multiple Content Fragments of type `bookmark`
+  * with Fragment References to other fragments of the specific model types `article` and `adventure`
+
+>[!NOTE]
+>
+>The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
 
 ```xml
 {
@@ -1250,7 +1268,58 @@ This sample query interrogates:
 }
 ```
 
-### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
+### Sample Query for a Content Fragment of a specific Model with Content References{#sample-wknd-fragment-specific-model-content-reference}
+
+There are two flavors of this query - one to return all content references, and one to return content references for `attachments`.
+
+These queries interrogate:
+
+* for multiple Content Fragments of type `bookmark`
+  * with Content References to other fragments 
+
+#### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
+
+The following query returns all content references by using `_references`:
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### Sample Query for multiple Content Fragments with Attachments {#sample-wknd-multiple-fragments-attachments}
+
+The following query returns all `attachments` - a specific field (sub-group) of content references:
+
+>[!NOTE]
+>
+>The field `attachments` has the Data type `content-reference`, with various forms selected.
 
 ```xml
 {
@@ -1283,80 +1352,16 @@ This sample query interrogates:
 }
 ```
 
-### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
-
-**Sample Query**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
-
-**Sample Query**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### Sample Query for a single Content Fragment with RTE Inline Reference {#sample-wknd-single-fragment-rte-inline-reference}
+
+This query interrogates:
+
+* for a single Content Fragment of type `bookmark` at a specific path
+  * within that, RTE inline references
+
+>[!NOTE]
+>
+>The RTE inline references are hydrated in `_references`.
 
 **Sample Query**
 
@@ -1393,7 +1398,37 @@ This sample query interrogates:
 }
 ```
 
+### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
+
+This query interrogates:
+
+* for a single Content Fragment of type `article` at a specific path
+  * within that, the data related to the variation: `variation1`
+
+**Sample Query**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### Sample Query for a named Variation of multiple Content Fragments of a given Model {#sample-wknd-variation-multiple-fragment-given-model}
+
+This query interrogates:
+
+* for Content Fragments of type `article` with a specific variation: `variation1`
 
 **Sample Query**
 
@@ -1414,7 +1449,32 @@ This sample query interrogates:
 }
 ```
 
-## The Sample Content Fragment Structure for use with GraphQL {#content-fragment-structure-graphql}
+### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
+
+This query interrogates:
+
+* for Content Fragments of type `article` within the `fr` locale
+
+**Sample Query**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 
 The sample queries are based on the following structure, which uses:
 

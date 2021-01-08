@@ -221,7 +221,7 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 }
 ```
 
-See [Sample Query - A Single City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-city-fragment).
+See [Sample Query - A Single Specific City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment).
 
 #### Metadata {#metadata}
 
