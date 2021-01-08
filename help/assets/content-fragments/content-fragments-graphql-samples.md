@@ -1184,7 +1184,7 @@ This query interrogates:
 
 This sample query interrogates:
 
-* for a single Content Fragment at a specific path
+* for a single Content Fragment of type `article` at a specific path
   * within that, all formats of content:
     * HTML
     * Markdown
@@ -1214,8 +1214,12 @@ This sample query interrogates:
 
 This query interrogates:
 
-* for a single Content Fragment at a specific path
+* for a single Content Fragment of type `article` at a specific path
   * within that, the path and author of the referenced (nested) fragment
+
+>[!NOTE]
+>
+>The field `referencearticle` has the Data type `fragment-reference`.
 
 **Sample Query**
 
@@ -1238,8 +1242,8 @@ This query interrogates:
 
 This query interrogates:
 
-* for multiple Content Fragments
-  * with Fragment References to other fragments of specific Model types
+* for multiple Content Fragments of type `bookmark`
+  * with Fragment References to other fragments of the specific model types `article` and `adventure`
 
 >[!NOTE]
 >
@@ -1264,7 +1268,58 @@ This query interrogates:
 }
 ```
 
-### Sample Query for a Content Fragment of a specific Model with a Content Reference{#sample-wknd-fragment-specific-model-content-reference}
+### Sample Query for a Content Fragment of a specific Model with Content References{#sample-wknd-fragment-specific-model-content-reference}
+
+There are two flavors of this query - one to return all content references, and one to return content references for `attachments`.
+
+These queries interrogate:
+
+* for multiple Content Fragments of type `bookmark`
+  * with Content References to other fragments 
+
+#### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
+
+The following query returns all content references by using `_references`:
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### Sample Query for multiple Content Fragments with Attachments {#sample-wknd-multiple-fragments-attachments}
+
+The following query returns all `attachments` - a specific field (sub-group) of content references:
+
+>[!NOTE]
+>
+>The field `attachments` has the Data type `content-reference`, with various forms selected.
 
 ```xml
 {
@@ -1297,80 +1352,16 @@ This query interrogates:
 }
 ```
 
-### Sample Query for multiple Content Fragments with Prefetched References {#sample-wknd-multiple-fragments-prefetched-references}
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
-
-**Sample Query**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
-
-**Sample Query**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### Sample Query for a single Content Fragment with RTE Inline Reference {#sample-wknd-single-fragment-rte-inline-reference}
+
+This query interrogates:
+
+* for a single Content Fragment of type `bookmark` at a specific path
+  * within that, RTE inline references
+
+>[!NOTE]
+>
+>The RTE inline references are hydrated in `_references`.
 
 **Sample Query**
 
@@ -1407,13 +1398,68 @@ This query interrogates:
 }
 ```
 
+### Sample Query for a single Content Fragment variation of a given Model {#sample-wknd-single-fragment-given-model}
+
+This query interrogates:
+
+* for a single Content Fragment of type `article` at a specific path
+  * within that, the data related to the variation: `variation1`
+
+**Sample Query**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### Sample Query for a named Variation of multiple Content Fragments of a given Model {#sample-wknd-variation-multiple-fragment-given-model}
+
+This query interrogates:
+
+* for Content Fragments of type `article` with a specific variation: `variation1`
 
 **Sample Query**
 
 ```xml
 {
   articleList (variation: "variation1") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+### Sample Query for multiple Content Fragments of a given locale {#sample-wknd-multiple-fragments-given-locale}
+
+This query interrogates:
+
+* for Content Fragments of type `article` within the `fr` locale
+
+**Sample Query**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
     items {
       _path
       author
