@@ -251,12 +251,6 @@ The files created in the *OUT_DIR* specified above for consistency can then be c
 
 As a user, you might see the following behavioral changes in the User Interface (UI) for Content Transfer Tool:
 
-* User creates a migration set for an author URL (Development/Stage/Production) and successfully performs extraction and ingestion.
-
-* User then creates a new migration set for the same Author URL and performs extraction and ingestion on the new migration set. The UI shows that the ingestion status of the first migration set changes to **FAILED** and no logs are available.
-
-* This does not mean that the ingestion for the first migration set failed. This behavior is seen because when a new ingestion job is started, it deletes the previous ingestion job. Hence, the changes status on the first migration set should be ignored.
-
 * The icons in the Content Transfer Tool UI may appear to be different from the screenshots shown in this guide or may not show up at all depending on the version of the source AEM instance.
 
 
