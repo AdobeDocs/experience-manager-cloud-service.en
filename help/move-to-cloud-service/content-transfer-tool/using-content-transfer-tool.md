@@ -157,8 +157,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
 1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. For demonstration purposes, the option **Ingest content to Author instance** is disabled. It is possible to ingest content to Author and Publish at the same time.  
 
->[!IMPORTANT]
-   >
+   >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
