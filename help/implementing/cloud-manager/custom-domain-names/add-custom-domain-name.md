@@ -11,6 +11,8 @@ A user must be a Business Owner or Deployment Manager in order to add a Custom D
 
 * Before adding a custom domain name, a valid SSL certificate that contains the custom domain name must be installed to your Program. Refer to [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.
 
+* Domain names cannot be added to environments while there is a current running pipeline attached to those environments.
+
 * Only one domain name can be added at a time. However, domains cannot contain wildcards. Custom domains on the author side are not supported.
 
 * Each Cloud Manager Environment can host up to a maximum of 100 custom domains per environment. 
