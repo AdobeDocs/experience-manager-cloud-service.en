@@ -74,7 +74,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.12.0 is Decemb
 
 The Release Date for Content Transfer Tool v1.1.20 is January 08, 2021.
 
-### What is new in [!DNL Content Transfer Tool] {#what-is-new-crt}
+### What is new in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
 * Users can now learn if their Access Token has expired by hovering on the status icon in the Content Transfer Tool (CTT) user interface. They will also be notified in the Migration Set Details UI that they are unable to connect to their Cloud Service instance.
 
