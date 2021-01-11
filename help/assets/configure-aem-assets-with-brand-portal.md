@@ -64,13 +64,13 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
 
    ![Create Certificate](assets/ims-config2.png)
 
-1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine. 
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
    The public key will be used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
    ![Download Certificate](assets/ims-config3.png)
 
-1.  Click **[!UICONTROL Next]**. 
+1. Click **[!UICONTROL Next]**.
 
     In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
