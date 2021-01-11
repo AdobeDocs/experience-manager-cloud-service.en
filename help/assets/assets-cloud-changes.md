@@ -1,11 +1,11 @@
 ---
-title: Notable changes in Adobe Experience Manager Assets as a [!DNL Cloud Service]
-description: Notable changes to Adobe Experience Manager Assets in Experience Manager [!DNL Cloud Service] as compared to Adobe Experience Manager 6.5.
+title: Notable changes in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
+  description: Notable changes to [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager 6.5.
 ---
 
-# Notable changes to Experience Manager Assets as a [!DNL Cloud Service] {#notable-changes}
+# Notable changes to [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager as a [!DNL Cloud Service] brings many new features and possibilities to manage your Experience Manager projects. There are many differences between Experience Manager Assets on-premise or hosted as Adobe Managed Service as compared to [!DNL Experience Manager] as a [!DNL Cloud Service]. This article highlights the important differences for [!DNL Assets] capabilities.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] brings many new features and possibilities to manage your Experience Manager projects. There are many differences between [!DNL Experience Manager Assets] on-premise or hosted as Adobe Managed Service as compared to [!DNL Experience Manager] as a [!DNL Cloud Service]. This article highlights the important differences for [!DNL Assets] capabilities.
 
 The main differences as compared to [Experience Manager] 6.5 are in the following areas:
 
@@ -15,16 +15,17 @@ The main differences as compared to [Experience Manager] 6.5 are in the followin
 
 ## Asset ingestion and processing {#asset-ingestion}
 
-Asset upload has been optimized for efficiency by enabling better scaling of asset ingestion, faster uploads, faster processing using microservices, and bulk ingestion. Product capabilities (web user interfaces, desktop clients) have been updated. However, this may impact some existing customization.
+Asset upload is optimized for efficiency by enabling better scaling of ingestion, faster uploads, faster processing using microservices, and bulk ingestion. Product capabilities (web user interfaces, desktop clients) are updated. Also, this may impact some existing customizations.
 
-* Experience Manager uses direct binary access principle for upload and download and asset microservices for asset processing. See [overview of asset ingestion](/help/assets/asset-microservices-overview.md).
+* [!DNL Experience Manager] uses direct binary access principle to upload and download assets and uses asset microservices to process asset. See [overview of microservices](/help/assets/asset-microservices-overview.md).
   * Asset upload [with direct binary access](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
-  * For technical details, see  of [direct binary upload protocol and APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
+  * For technical details, see [direct binary upload protocol and APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
   * For a comparison of the available API methods for basic CRUD operations, see [APIs and asset operations](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
 * The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of [!DNL Experience Manager] is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, and text extraction for indexing).
-  * See [configuring and using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
+  * See [configure and use asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used.
-* Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
+* Assets that are uploaded using Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the [!DNL Assets] interface.
+* A digital asset without an extension or with an incorrect extension is not processed as desired. For example, when uploading such assets, either nothing happens or an incorrect processing profile may apply to the asset. Users can still store the binary files in the DAM.
 
 Standard renditions generated with asset microservices are stored in a backwards-compatible way in the asset repository nodes (same naming conventions).
 
