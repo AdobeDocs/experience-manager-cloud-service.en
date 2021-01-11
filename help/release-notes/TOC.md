@@ -11,6 +11,7 @@ user-guide-description: This guide provides important information about the late
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
   + 2020 {#2020}
+   + [Release Notes for 2020.12.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
    + [Release Notes for 2020.11.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
    + [Release Notes for 2020.10.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
    + [Release Notes for 2020.9.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-9-0.md)
