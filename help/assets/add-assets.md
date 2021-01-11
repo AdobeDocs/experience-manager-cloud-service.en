@@ -37,17 +37,13 @@ Assets as a [!DNL Cloud Service] provides the following upload methods. Adobe re
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -90,7 +86,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -183,23 +179,23 @@ In addition to web browser user interface, [!DNL Experience Manager] supports ot
 
 ## Process assets when uploaded {#process-when-uploaded}
 
-In order to do additional processing on the uploaded assets, you can apply processing profiles on the upload folders. The profiles are available in the **[!UICONTROL Properties]** page of a folder in [!DNL Assets].
+In order to do additional processing on the uploaded assets, you can apply processing profiles on the upload folders. The profiles are available in the **[!UICONTROL Properties]** page of a folder in [!DNL Assets]. A digital asset without an extension or with an incorrect extension is not processed as desired. For example, when uploading such assets, either nothing happens or an incorrect processing profile may apply to the asset. Users can still store the binary files in the DAM.
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![Properties of an asset folder with options to add a processing profile](assets/assets-folder-properties.png)
 
 The following tabs are available:
 
-* [Metadata profiles](metadata-profiles.md) let you apply default metadata properties to assets uploaded into that folder
+* [Metadata profiles](metadata-profiles.md) let you apply default metadata properties to assets uploaded into that folder.
 * [Processing profiles](asset-microservices-configure-and-use.md) let you generate more renditions than are possible by default.
 
 Additionally, if [!DNL Dynamic Media] is enabled on your deployment, the following tabs are available:
 
-* [Dynamic Media Image profiles](dynamic-media/image-profiles.md) let you apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets.
-* [Dynamic Media Video profiles](dynamic-media/video-profiles.md) let you apply specific video encoding profiles (resolution, format, parameters).
+* [[!DNL Dynamic Media] Image profiles](dynamic-media/image-profiles.md) let you apply specific cropping (**[!UICONTROL Smart Cropping]** and pixel cropping) and sharpening configuration to the uploaded assets.
+* [[!DNL Dynamic Media] Video profiles](dynamic-media/video-profiles.md) let you apply specific video encoding profiles (resolution, format, parameters).
 
 >[!NOTE]
 >
->Dynamic Media cropping and other operations on assets are non-destructive, that is, they do not change the uploaded original, but instead provide parameters for cropping or media transformation to be done when delivering the assets
+>[!DNL Dynamic Media] cropping and other operations on assets are non-destructive, that is, the operations do not change the uploaded original. Instead, it provides parameters to crop or transform when delivering the assets.
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **[!UICONTROL Processing Profile]** column.
 

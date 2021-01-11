@@ -69,7 +69,7 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 
 Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
-1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -85,7 +85,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 >
 >Insights are only supported and provided for images.
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]**.
+1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -103,7 +103,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 After you configure your Adobe Analytics account, the Page Tracker code is generated for you. To enable Assets Insights to track the [!DNL Experience Manager] assets used in third-party websites, include the page tracker code in the website code. Use the Page Tracker utility in Assets to generate the page tracker code. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]**.
+1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
