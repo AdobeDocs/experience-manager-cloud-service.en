@@ -11,7 +11,7 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 
 * Avoiding iterative API requests as with REST,
 * Ensuring that delivery is limited to the specific requirements,
-* Allowing for bulk delivery of exactly what is needed for rendering as response to a single API query.
+* Allowing for bulk delivery of exactly what is needed for rendering as the response to a single API query.
 
 ## The GraphQL API {#graphql-api}
 
