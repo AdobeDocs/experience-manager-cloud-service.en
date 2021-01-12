@@ -121,7 +121,7 @@ The GraphQL specification provides a series of guidelines on how to create a rob
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) and their data types.
 
->[!NOTE]
+>[!CAUTION]
 >
 >All the GraphQL schemas (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
 >
@@ -608,6 +608,12 @@ To allow a third party website to consume JSON output, a CORS policy must be con
 >
 >* only grant access to trusted domains 
 >* not use a wildcard [*] syntax; which will expose the GraphQL endpoints to the entire world.
+
+>[!CAUTION]
+>
+>All the GraphQL [schemas](#schema-generation) (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
+>
+>This means that you need to ensure that no sensitive data is available, as it could be leaked this way; for example, this includes information that could be present as field names in the model definition.
 
 <!-- to be addressed later -->
 
