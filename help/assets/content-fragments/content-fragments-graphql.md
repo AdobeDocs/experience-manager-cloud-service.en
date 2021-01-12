@@ -63,7 +63,7 @@ Content Fragments:
 
 These [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md):
 
-* Are used to generate the [Schemas](https://graphql.org/learn/schema/).
+* Are used to generate the [Schemas](https://graphql.org/learn/schema/), once **Enabled**.
 
 * Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
 
