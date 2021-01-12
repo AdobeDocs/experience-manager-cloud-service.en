@@ -588,7 +588,7 @@ To allow a third party website to consume JSON output, a CORS policy must be con
 
   * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
   * supportedmethods: [POST]
-  * allowedpaths: ["/apps/graphql-enablement/content/endpoint.gql(/persisted)?"]
+  * allowedpaths: ["/apps/graphql-enablement/content/endpoint.gql"]
 
 * Accessing the GraphQL persisted queries endpoint:
 
