@@ -59,7 +59,7 @@ When editing a multi-line text field you can open the full screen editor; tap or
 
 This will open the full screen text editor:
 
-![full screen editor icon](assets/cfm-variations-fullscreentexteditor.png)
+![full screen editor](assets/cfm-variations-fullscreentexteditor.png)
 
 The full screen text editor provides:
 
@@ -111,7 +111,7 @@ Rich text editing allows you to format:
   * Find/Replace
   * Spellchecker
   * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment)
+* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment); available when your **Multi line text** field is configured with **Allow Fragment Reference**.
 
 The [actions](#actions) are also accessible from the full-screen editor.
 
@@ -330,6 +330,10 @@ They will be added to the paragraph sequence of the fragment without any formatt
 To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
 
 They will be added as a reference, in your current location in your fragment.
+
+>[!NOTE]
+>
+>This option is available when your **Multi line text** is configured with **Allow Fragment Reference**.
 
 >[!CAUTION]
 >

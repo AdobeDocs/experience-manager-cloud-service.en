@@ -11,7 +11,7 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 
 * Avoiding iterative API requests as with REST,
 * Ensuring that delivery is limited to the specific requirements,
-* Allowing for bulk delivery of exactly what is needed for rendering as response to a single API query.
+* Allowing for bulk delivery of exactly what is needed for rendering as the response to a single API query.
 
 ## The GraphQL API {#graphql-api}
 
@@ -23,11 +23,15 @@ GraphQL is:
 
 * "*...an open spec for a flexible API layer. Put GraphQL over your existing backends to build products faster than ever before....*". 
 
-  See [Explore GraphQL](https://www.graphql.com). "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+  See [Explore GraphQL](https://www.graphql.com). 
 
 * *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."* 
   
   See [GraphQL Foundation](https://foundation.graphql.org/).
+
+<!--
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+-->
 
 For further information about the GraphQL API, see the following sections (amongst many other resources):
 
@@ -115,7 +119,13 @@ GraphQL is a strongly typed API, which means that data must be clearly structure
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
-For Content Fragments, the GraphQL schemas (structure and types) are based on [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) and their data types.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) and their data types.
+
+>[!CAUTION]
+>
+>All the GraphQL schemas (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
+>
+>This means that you need to ensure that no sensitive data is available, as it could be leaked this way; for example, this includes information that could be present as field names in the model definition.
 
 For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
 
@@ -346,13 +356,38 @@ You can also use filtering in your GraphQL queries to return specific data.
 
 Filtering uses a syntax based on logical operators and expressions. 
 
-For examples, see:
+For example, the following (basic) query filters all persons that have a name of `Jobs` or `Smith`:
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _logOp: OR
+      _expressions: [
+        {
+          value: "Jobs"
+        },
+        {
+          value: "Smith"
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+For further examples, see:
 
 * details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
 
-* [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
-
 * [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+
+  * And the [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
 
 * [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
@@ -559,7 +594,7 @@ To allow a third party website to consume JSON output, a CORS policy must be con
 
   * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
   * supportedmethods: [POST]
-  * allowedpaths: ["/apps/graphql-enablement/content/endpoint.gql(/persisted)?"]
+  * allowedpaths: ["/apps/graphql-enablement/content/endpoint.gql"]
 
 * Accessing the GraphQL persisted queries endpoint:
 
@@ -573,6 +608,12 @@ To allow a third party website to consume JSON output, a CORS policy must be con
 >
 >* only grant access to trusted domains 
 >* not use a wildcard [*] syntax; which will expose the GraphQL endpoints to the entire world.
+
+>[!CAUTION]
+>
+>All the GraphQL [schemas](#schema-generation) (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
+>
+>This means that you need to ensure that no sensitive data is available, as it could be leaked this way; for example, this includes information that could be present as field names in the model definition.
 
 <!-- to be addressed later -->
 

@@ -23,7 +23,7 @@ To use Content Fragment Models you:
    >
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
-1. Specify the **Model Title**. You can also add **Tags**, and a **Description** if required.
+1. Specify the **Model Title**. You can also add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required.
 
    ![title and description](assets/cfm-models-02.png)
 
@@ -131,6 +131,21 @@ Many properties are self-explanatory, for certain properites additional details 
 
   Changing the **Default Type** in a content fragment model will only take effect on an existing, related, content fragment after that fragment is opened in the editor and saved.
 
+* **Unique**
+  Content (for the specific field) must be unique across all content fragments created from the current model. 
+
+  This is used to ensure that content authors cannot repeat content already added in another fragment of the same model. 
+
+  For example, a **Single line text** field called `Country` in the Content Fragment Model cannot have the value `Japan` in two dependent Content Fragments. A warning will be issued when the second instance is attempted.
+
+  >[!NOTE]
+  >
+  >Uniqueness is ensured per language root. 
+
+  >[!NOTE]
+  >
+  >Variations can have the same *unique* value as variations of the same fragment, but not the same value as used in any variation of other fragments.
+
 * **Translatable**
   Checking the "Translatable" checkbox on a field in CF model editor will
 
@@ -149,13 +164,16 @@ Various data types now include the possibility to define validation requirements
   * Check for specific values.
 * **Content Reference**
   * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
   * Only assets of specified file size or smaller can be referenced. 
+  * Only images within a predefined range of width and/or height (in pixels) can be referenced. 
+* **Fragment Reference**
+  * Test for a specific content fragment model.
+
+<!--
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
+-->
 
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
