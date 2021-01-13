@@ -84,3 +84,4 @@ The Release Date for Content Transfer Tool v1.1.20 is January 08, 2021.
 * Option to view logs was disabled if the logs were not available. This has been fixed and messaging has been added to notify user why logs are missing.
 * Content Transfer Tool user interface status showed FAILED when user stopped an ingestion. This has been fixed to display *STOPPED* instead.
 
+Test edit. Please ignore, will revert afterwards.
