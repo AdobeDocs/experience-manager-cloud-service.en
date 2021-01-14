@@ -5,7 +5,7 @@ description: Page Templates are used when creating a page which will be used as 
 
 # Page Templates {#page-templates}
 
-When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties). This has serveral advantages:
+When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties). This has several advantages:
 
 * Page Templates allow specialized authors to [create and edit templates](/help/sites-cloud/authoring/features/templates.md).
   * Such specialized authors are called **template authors**
@@ -54,7 +54,7 @@ When creating a new editable template you:
 
    For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   For technical deatils of the structure, see [Structure](#structure) in this document.
+   For technical details of the structure, see [Structure](#structure) in this document.
 
    **Policies**
 
@@ -66,7 +66,7 @@ When creating a new editable template you:
 
    For details on how a template author defines policies, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   For technical deatil of policies, see [Content Policies](#content-policies) in this document.
+   For technical details of policies, see [Content Policies](#content-policies) in this document.
 
    **Initial Content**
 
@@ -93,7 +93,7 @@ When creating a new editable template you:
 
    For details on how a template author enables a template, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
-   For technical deatils on enabling a template, see [Enabling and Allowing a Template for Us](#enabling-and-allowing-a-template-for-use)e in this document
+   For technical details on enabling a template, see [Enabling and Allowing a Template for Us](#enabling-and-allowing-a-template-for-use)e in this document
 
 1. Use it to create content pages.
 
@@ -104,6 +104,16 @@ When creating a new editable template you:
 
    For technical details on creating pages with editable templates, see [Resultant Content Pages](#resultant-content-pages) in this document.
 
+>[!TIP]
+>
+>Never enter any information that needs to be internationalized into a template. For internalization purposes, the [localization feature of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
+
+>[!NOTE]
+>
+>Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
+>
+>Adobe does not recommend having more than 1000 templates due to potential performance impacts.
+
 >[!NOTE]
 >
 >The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
@@ -112,9 +122,7 @@ When creating a new editable template you:
 >
 >See [Using Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md) for further information.
 
->[!CAUTION]
->
->Never enter any information that needs to be internationalized into a template.
+
 
 ## Template Folders {#template-folders}
 
@@ -248,7 +256,7 @@ The following table details the necessary permissions for template editing.
    <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td>
   </tr>
   <tr>
-   <td>Annonymous Web User</td>
+   <td>Anonymous Web User</td>
    <td>read</td>
    <td>Anonymous Web User must read policies while rendering a page</td>
   </tr>
