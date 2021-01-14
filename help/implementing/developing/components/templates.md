@@ -106,7 +106,7 @@ When creating a new editable template you:
 
 >[!TIP]
 >
->Never enter any information that needs to be internationalized into a template. For internalization purposes, the [localization feature of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
+>Never enter any information that needs to be internationalized into a template. For internalization purposes, the [localization features of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
 
 >[!NOTE]
 >
