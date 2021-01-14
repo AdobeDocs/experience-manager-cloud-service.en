@@ -7,9 +7,9 @@ description: Learning to use GraphQL with AEM - Sample Content and Queries.
 
 >[!CAUTION]
 >
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
+>The AEM GraphQL API for Content Fragments Delivery is available on request. 
 >
->The related documentation is already available for preview purposes.
+>Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
 
 To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
 
