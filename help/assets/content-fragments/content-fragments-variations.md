@@ -5,16 +5,6 @@ description: Variations allow you to author content for the fragment, then creat
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-<!--
->[!CAUTION]
->
->Certain features for Content Fragments will be released in early 2021.
->
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
---> 
-
 [Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
 
 From the **Variations** tab you can:
