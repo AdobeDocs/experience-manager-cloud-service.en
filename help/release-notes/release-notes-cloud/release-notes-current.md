@@ -38,21 +38,15 @@ The following release (2021.1.0) will be on January 28, 2021.
 
 ### Release Date {#release-date-cm}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2020.12.0 is December 10, 2020.
-
-### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
-
-* Self service management of [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Self service management of [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* Updated **Environment** details page now allows users to manage Custom Domain Names and IP Allow Lists on their environments.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January 14, 2021.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* Some occurrences of failures at code scanning stage without providing results addressed.
+* Assets Production instance may on occasion, show the Brand Portal status on the **Environments** detail page as *Pending* without allowing the user to take any action.
 
-* Environment card did not consistently display **Add** button.
+* When triggering a de-hibernate from Cloud Manager, sometimes a failure message was displayed even when de-hibernation was started successfully. 
+
+* Rare cases of failure encountered in environment creation or deletion has been addressed.
 
 ## Code Refactoring Tools {#code-refactoring-tools}
 
