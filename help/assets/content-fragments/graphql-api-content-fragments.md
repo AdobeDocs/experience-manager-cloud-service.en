@@ -87,7 +87,13 @@ You can also perform:
 
 ## GraphiQL Interface {#graphiql-interface}
 
+<!--
 AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
+-->
+
+An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is available for use with AEM GraphQL. This can be [installed with AEM](#installing-graphiql-interface). 
+
+This interface allows you to directly input, and test, queries.
 
 For example: 
 
@@ -96,6 +102,12 @@ For example:
 This provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
+
+### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
+
+The [GraphiQL for AEM package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
+
+The package contains the source code and a README with full details of how it can be installed on an AEM instance (in a variety of scenarios).
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
