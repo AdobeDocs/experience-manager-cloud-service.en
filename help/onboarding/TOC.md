@@ -13,6 +13,10 @@ user-guide-description: This guide provides an summary of how to get started wit
   + [Add Users and Roles](what-is-required/add-users-roles.md)
   + [Role Based Permissions](what-is-required/role-based-permissions.md)
   + [Source Code Repository](what-is-required/source-code-repository.md)
++ Phases of Transition Journey {#phases}
+  + [Planning](/help/move-to-cloud-service/planning.md)
+  + [Execution](/help/move-to-cloud-service/execution.md)
+  + [Post Go-live](/help/move-to-cloud-service/post-go-live.md)
 + Getting Access to AEM in the Cloud {#getting-access}
   + [Accessing Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
   + Cloud Service Programs {#cloud-service-programs}
