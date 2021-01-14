@@ -7,9 +7,9 @@ description: Learn how to enable certain Content Fragment functionality in the C
 
 >[!CAUTION]
 >
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
+>The AEM GraphQL API for Content Fragments Delivery is available on request. 
 >
->The related documentation is already available for preview purposes.
+>Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
 
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
