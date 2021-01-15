@@ -327,7 +327,6 @@ To configure the **Policies** for **Allowed Content Fragment Models**:
 
    * **Inherited from `<folder>`**
 
-     This defaults to `/conf/<tenant>/settings/dam/cfm/models`.
      Policies are automatically inherited when creating new child folders; the policy can be reconfigured (and the inheritance broken) if sub-folders need to allow models different to the parent folder. 
 
    * **Allowed Content Fragment Models by Path**
@@ -341,6 +340,12 @@ To configure the **Policies** for **Allowed Content Fragment Models**:
    ![Content Fragment Model Policy](assets/cfm-model-policy-assets-folder.png)
 
 1. **Save** any changes.
+
+The Content Fragment Models allowed for a folder are resolved as follows:
+*	The **Policies** for **Allowed Content Fragment Models**.
+*	If empty than try to determine the policy using the inheritance rules.
+*	If the inheritance chain does not deliver a result, then look at the **Cloud Services** definition for that folder (also first directly and then via inheritance).
+*	If none of the above deliver any results, then there are no allowed models for that folder.
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
