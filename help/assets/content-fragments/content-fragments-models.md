@@ -12,6 +12,7 @@ To use Content Fragment Models you:
 1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
+1. [Apply a Policy to your Assets folder](#apply-content-fragment-model-policy-assets-folder) to regulate where your Content Fragment Models can be used.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
@@ -309,6 +310,31 @@ To disable a Model that is flagged as **Enabled** you use the **Disable** option
 * The corresponding Quick Action (mouse-over the required Model).
 
 ![Disable an Enabled Model](assets/cfm-status-disable.png)
+
+## Applying a Content Fragment Model Policy to your Assets Folder {#apply-content-fragment-model-policy-assets-folder}
+
+To implement content governance, you can configure which Content Fragment Models are allowed for Fragment creation in a given Assets folder. 
+
+>[!NOTE]
+>
+>The mechanism is similar to allowing page templates for a page, and its children, in advanced properties of a page. 
+
+To configure **Allowed Content Fragment Models**:
+
+1. Navigate and open **Properties** for the required Assets folder.
+
+1. Open the **Policies** tab, where you can configure:
+   * **Inherited from appropriate-parent**
+     This defaults to `/conf/<tenant>/settings/dam/cfm/models`.
+     Policies are automatically inherited when creating new child folders; the policy can be reconfigured (and the inheritance broken) if sub-folders need to allow models different to the parent folder. 
+   * **Allowed Content Fragment Models by Path**
+     Multiple models can be allowed.
+   * **Allowed Content Fragment Models by Tag**
+     Multiple models can be allowed.
+
+   ![Content Fragment Model Policy](assets/cfm-model-policy-assets-folder.png)
+
+1. **Save** any changes.
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
