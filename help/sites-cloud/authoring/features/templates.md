@@ -81,7 +81,7 @@ When creating a new editable template you:
 >
 >The **Allowed Templates** are often pre-defined when your website is initially set up.
 
->[!CAUTION]
+>[!TIP]
 >
 >Never enter any information that needs to be internationalized into a template. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -119,6 +119,12 @@ A template folder should be created for your project to hold your project-specif
    >[!NOTE]
    >
    >When a new template is created it is marked as **Draft** in the console, this indicates that it is not yet available to use by page authors.
+
+>[!NOTE]
+>
+>Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
+>
+>Adobe does not recommend having more than 1000 templates due to potential performance impacts.
 
 ### Defining Template Properties - Template Author {#defining-template-properties-template-author}
 
