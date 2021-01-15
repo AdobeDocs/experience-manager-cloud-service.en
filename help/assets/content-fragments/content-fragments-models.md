@@ -12,7 +12,7 @@ To use Content Fragment Models you:
 1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
-1. [Apply a Policy to your Assets folder](#apply-content-fragment-model-policy-assets-folder) to regulate where your Content Fragment Models can be used.
+1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
@@ -311,15 +311,15 @@ To disable a Model that is flagged as **Enabled** you use the **Disable** option
 
 ![Disable an Enabled Model](assets/cfm-status-disable.png)
 
-## Applying a Content Fragment Model Policy to your Assets Folder {#apply-content-fragment-model-policy-assets-folder}
+## Allowing Content Fragment Models on your Assets Folder {#allowing-content-fragment-models-assets-folder}
 
-To implement content governance, you can configure which Content Fragment Models are allowed for Fragment creation in a given Assets folder. 
+To implement content governance, you can configure **Policies** on Assets folder to control which Content Fragment Models are allowed for Fragment creation in that folder. 
 
 >[!NOTE]
 >
->The mechanism is similar to allowing page templates for a page, and its children, in advanced properties of a page. 
+>The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
 
-To configure **Allowed Content Fragment Models**:
+To configure the **Policies** for **Allowed Content Fragment Models**:
 
 1. Navigate and open **Properties** for the required Assets folder.
 
