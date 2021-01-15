@@ -94,7 +94,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## Developer Flow {#developer-flow}
 
-Developers will likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, since developers do not necessarily have admin role access to the AEM as a Cloud Service dev environment, we cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Thus, we provide a mechanism for a developer to generate an access token directly that can be used in requests to AEM as a Cloud Service environments which they have access to. See the [Developer Guidelines documentation](/help/implementing/developing/introduction/development-guidelines.md) for information about the required permissions to use the AEM as a Cloud Service developer console.
+Developers will likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, since developers do not necessarily have admin role access to the AEM as a Cloud Service dev environment, we cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Thus, we provide a mechanism for a developer to generate an access token directly that can be used in requests to AEM as a Cloud Service environments which they have access to. 
+
+See the [Developer Guidelines documentation](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) for information about the required permissions to use the AEM as a Cloud Service developer console.
 
 >[!NOTE]
 >
