@@ -324,12 +324,18 @@ To configure **Allowed Content Fragment Models**:
 1. Navigate and open **Properties** for the required Assets folder.
 
 1. Open the **Policies** tab, where you can configure:
+
    * **Inherited from `<folder>`**
+
      This defaults to `/conf/<tenant>/settings/dam/cfm/models`.
      Policies are automatically inherited when creating new child folders; the policy can be reconfigured (and the inheritance broken) if sub-folders need to allow models different to the parent folder. 
+
    * **Allowed Content Fragment Models by Path**
+
      Multiple models can be allowed.
+
    * **Allowed Content Fragment Models by Tag**
+
      Multiple models can be allowed.
 
    ![Content Fragment Model Policy](assets/cfm-model-policy-assets-folder.png)
