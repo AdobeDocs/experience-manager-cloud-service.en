@@ -69,11 +69,11 @@ The advantage and flexibility of AEM becomes apparent with levels 2 and 3 while 
 
 ## Implementing the Integration Levels {#implementing}
 
-There are different tools in AEM available depending on what integration level you choose. Each level builds on the tools used in the previous.
+There are different tools in AEM available depending on what integration level you choose. Each level builds on the tools used in the previous. The following list links to the relevant resources.
 
-* Level 1: Content Fragments and the [AEM headless framework](/help/implementing/developing/headless/introduction.md) can be used to deliver AEM content to the SPA.
-* Level 2: In addition to level one:
-  * The RemotePage component can be used to embed the external SPA into AEM where AEM content can be viewed in-context.
-  * Certain points on the SPA can also be enabled to allow limited editing in AEM.
-* Level 3: In addition to level two:
+* **Level 1:** Content Fragments and the [AEM headless framework](/help/implementing/developing/headless/introduction.md) can be used to deliver AEM content to the SPA.
+* **Level 2:** In addition to level one:
+  * [The RemotePage component](/help/implementing/developing/hybrid/remote-page.md) can be used to embed the external SPA into AEM where AEM content can be viewed in-context.
+  * Certain points on the SPA can also be enabled to [allow limited editing in AEM.](/help/implementing/developing/hybrid/editing-external-spa.md)
+* **Level 3:** In addition to level two:
   * Entire zones of the SPA can be enabled to allow comprehensive editing in AEM.
