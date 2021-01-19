@@ -220,7 +220,7 @@ Since the new component needs to be added below the existing text at `root/respo
 <AEMText
  pagePath='/content/wknd-spa-react/us/en/home'
  itemPath='root/responsivegrid/text_20' />
- ```
+```
 
 The `TestPage` component looks like the following after adding the virtual component.
 
@@ -281,7 +281,7 @@ For example, assume we have a SPA in which the application is rendered inside a 
 
 ### Editing a React SPA with Routing {#editing-react-spa-with-routing}
 
-If the external React SPA application has multiple pages, [it can use routing to determine the page/component to render.(/help/implementing/developing/hybrid/routing.md) The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
+If the external React SPA application has multiple pages, [it can use routing to determine the page/component to render.](/help/implementing/developing/hybrid/routing.md) The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
 
 In the following example we have a simple React application with two pages. The page to be rendered is determined by matching the path provided to the router against the active URL. For example, if we are on `mydomain.com/test`, `TestPage` will be rendered.
 
