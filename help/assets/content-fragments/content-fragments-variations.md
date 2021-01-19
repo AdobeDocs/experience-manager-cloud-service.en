@@ -11,8 +11,6 @@ From the **Variations** tab you can:
 
 * [Enter the content](#authoring-your-content) for your fragment,
 * [Create and manage variations](#managing-variations) of the **Master** content,
-* See the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) that was used to create the fragment; shown in top toolbar, under the fragment name.
-* **[Publish](#publishing-your-fragment)** your fragment.
 
 Perform a range of other actions depending on the data-type being edited; for example:
 
@@ -365,12 +363,6 @@ They will be added as a reference, in your current location in your fragment.
    >If, after adding an reference to another fragment, you change format to:
    >* **Plain Text**: the reference will be completely lost from the fragment.
    >* **Markdown**: the reference will remain.
-
-## Publishing your Fragment {#publishing-your-fragment}
-
-You can **[Publish](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment)** your fragment from the icon in the top toolbar:
-
-![Publish icon in top toolbar](assets/cfm-variations-toolbar-publish.png)
 
 ## Managing Variations {#managing-variations}
 
