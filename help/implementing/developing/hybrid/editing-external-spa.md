@@ -2,9 +2,9 @@
 title: Editing an External SPA within AEM
 description: This document describes the recommended steps to upload a standalone SPA to an AEM instance, add editable sections of content, and enable authoring.
 ---
-# Editing and External SPA within AEM {#external-spa-within-aem}
+# Editing an External SPA within AEM {#editing-external-spa-within-aem}
 
-When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, it is often clear that you need to be able to view and edit the SPA within AEM.
+When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, you often need to be able to edit as well as view the SPA within AEM.
 
 ## Overview {#overview}
 
@@ -15,20 +15,24 @@ This document describes the recommended steps to upload a standalone SPA to an A
 The prerequisites are simple.
 
 * Ensure an instance of AEM is running locally.
-  * For the examples in this document, it is assumed that the 
 * Create a base AEM SPA project using [the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#available-properties)
   * This will form the basis of the AEM project which will be updated to include the external SPA.
   * For the samples in this document, we are using the starting point of [the WKND SPA project.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=en#spa-editor)
-* A working, external React SPA
+* Have the working, external React SPA that you wish to integrate at hand.
 
 ## Upload SPA to AEM Project {#upload-spa-to-aem-project}
 
+First you need to upload the external SPA to your AEM project.
+
 1. Replace `src` in the `/ui.frontend` project folder with your React application's `src` folder.
-1. Include any additional dependencies in the app's `package.json` in the `/ui.frontend/package.json` file. Ensure the SPA SDK dependencies are of [recommended versions.](/help/implementing/developing/hybrid/getting-started-react.md#dependencies)
+1. Include any additional dependencies in the app's `package.json` in the `/ui.frontend/package.json` file.
+   * Ensure the SPA SDK dependencies are of [recommended versions.](/help/implementing/developing/hybrid/getting-started-react.md#dependencies)
 1. Include any customizations in the `/public` folder.
 1. Include any inline scripts or styles added in the `/public/index.html` file.
 
 ## Configure the Remote SPA {#configure-remote-spa}
+
+Now that the external SPA is part of your AEM project, it needs to be configured within AEM.
 
 ### Include Adobe SPA SDK Packages {#include-spa-sdk-packages}
 
@@ -42,7 +46,7 @@ To take advantage of AEM SPA features, there are dependencies on the following t
 
 #### Installation {#installation}
 
-Run the following npm command to install.
+Run the following npm command to install the required packages.
 
 ```shell
 npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-manager @adobe/aem-react-editable-components
@@ -52,11 +56,11 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 Before the app renders, the [`ModelManager`](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager) needs to be initialized to handle the creation of the AEM `ModelStore`.
 
-This needs to be done within the `src/index.js` file of your application or wherever the rendering of application to root node is done.
+This needs to be done within the `src/index.js` file of your application or wherever the root of the application is rendered.
 
 For this, we can use `initializationAsync` API provided by the `ModelManager`.
 
-The following screenshot shows enabling initialization of the `ModelManager` in a simple React application. The only constraint is that `initializationAsync` needs to be called before `ReactDOM.render()`.
+The following screenshot shows how to enable initialization of the `ModelManager` in a simple React application. The only constraint is that `initializationAsync` needs to be called before `ReactDOM.render()`.
 
 ![Initialize ModelManager](assets/external-spa-initialize-modelmanager.png)
 
@@ -78,7 +82,7 @@ In this example, the `ModelManager` is initialized and an empty `ModelStore` is 
 
    ![Text.js](assets/external-spa-textjs.png)
 
-1. Create a config object to specify the attributes required for enabling AEM editing.
+1. Create a configuration object to specify the attributes required for enabling AEM editing.
 
    ![Create config object](assets/external-spa-config-object.png)
 
@@ -92,7 +96,7 @@ In this example, the `ModelManager` is initialized and an empty `ModelStore` is 
 
    >[!NOTE]
    >
-   >In this example there are separate versions of the component - AEM wrapped and unwrapped React components. The wrapped version needs to be used when explicitly using the component. When the component is part of a page, you can continue using the default component as done currently in the SPA editor.
+   >In this example there are separate versions of the component: AEM wrapped and unwrapped React components. The wrapped version needs to be used when explicitly using the component. When the component is part of a page, you can continue using the default component as currently done in the SPA editor.
 
 1. Render content in the component.
 
@@ -136,7 +140,7 @@ In this example, the `ModelManager` is initialized and an empty `ModelStore` is 
 
    >[!NOTE]
    >
-   >In this example, we have made further customizations to the rendered component to match the existing text component. This, however, is not related to AEM authoring.
+   >In this example, we have made further customizations to the rendered component to match the existing text component. This however is not related to authoring in AEM.
 
 #### Add Authorable Components to the Page {#add-authorable-component-to-page}
 
@@ -146,8 +150,8 @@ Let's take an example page where we need to add a text from the WKND SPA project
 
 1. Determine the path of the node to be displayed.
 
-   * `pagePath`: The page which contains the node, i.e. `/content/wknd-spa-react/us/en/home`
-   * `itemPath`: Path to the node within the page, i.e. `root/responsivegrid/text`
+   * `pagePath`: The page which contains the node, in our example `/content/wknd-spa-react/us/en/home`
+   * `itemPath`: Path to the node within the page, in our example `root/responsivegrid/text`
      * This consists of the names of the containing items on the page.
 
    ![Path of the node](assets/external-spa-path.png)
@@ -160,7 +164,7 @@ Let's take an example page where we need to add a text from the WKND SPA project
 
 #### Verify Editing of Text Content on AEM {#verify-text-edit}
 
-We can now test the component on the running AEM instance.
+We can now test the component on our running AEM instance.
 
 1. Run the following Maven command from the `aem-guides-wknd-spa` directory to build and deploy the project to AEM.
 
@@ -192,9 +196,9 @@ The `AEMText` component is now authorable on AEM.
 
    >[!NOTE]
    >
-   >In this example we are using the unwrapped react Text component instead of the wrapped `AEMText` created previously. This is because when the component is part of a page/container and not stand alone, the container will take care of recursively mapping the component and enabling authoring capabilities and the additional wrapper is not needed for each child.
+   >In this example we are using the unwrapped React text component instead of the wrapped `AEMText` created previously. This is because when the component is part of a page/container and not stand alone, the container will take care of recursively mapping the component and enabling authoring capabilities and the additional wrapper is not needed for each child.
 
-1. To add an authorable page in the SPA, follow the same steps as outlined in Add authorable components to the page - except that we can skip the itemPath prop here.
+1. To add an authorable page in the SPA, follow the same steps in the section [Add Authorable Components to the Page.](#add-authorable-component-to-page) Here we can can skip the `itemPath` property however.
 
 #### Verify Page Content on AEM {#verify-page-content}
 
@@ -206,7 +210,7 @@ The page is now editable on AEM with a layout container and child Text Component
 
 ### Virtual Leaf Components {#virtual-leaf-components}
 
-In the previous examples, we added components to the SPA for which content already exists within AEM. However, there could be use cases where content has not yet been created in AEM, but needs to be added later by the content author. To accommodate this, the front-end developer can add components in the appropriate positions within the SPA. These components will display placeholders when opened in the editor. Once the content is added within these placeholders by the content author, nodes are created in the JCR structure and content is persisted. The created component will allow the same set of operations as the standalone leaf components.
+In the previous examples, we added components to the SPA with existing AEM content. However, there are cases where content has not yet been created in AEM, but needs to be added later by the content author. To accommodate this, the front-end developer can add components in the appropriate locations within the SPA. These components will display placeholders when opened in the editor in AEM. Once the content is added within these placeholders by the content author, nodes are created in the JCR structure and content is persisted. The created component will allow the same set of operations as the stand alone leaf components.
 
 In this example, we are reusing the `AEMText` component created previously. We want new text to be added below the existing text component on the WKND home page. The addition of components is the same as for normal leaf components. However, the `itemPath` can be updated to the path where the new component needs to be added.
 
@@ -218,7 +222,7 @@ Since the new component needs to be added below the existing text at `root/respo
  itemPath='root/responsivegrid/text_20' />
  ```
 
-The `TestPage` component looks like this after adding the virtual component.
+The `TestPage` component looks like the following after adding the virtual component.
 
 ![Testing the virtual component](assets/external-spa-virtual-component.png)
 
@@ -236,16 +240,20 @@ When the content author updates this component, a new `text_20` node is created 
 
 #### Requirements and Limitations {#limitations}
 
+There are a number of requirements to add virtual leaf components as well as some limitations.
+
 * The `pagePath` property is mandatory for creating a virtual component.
 * The page node provided at the path in `pagePath` must exist in the AEM project.
 * The name of the node to be created must be provided in the `itemPath`.
-* The component can be created at any level. 
-  * If we provide an `itemPath='text_20'` in the above example, the new node will be created directly under the page i.e. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+* The component can be created at any level.
+  * If we provide an `itemPath='text_20'` in the previous example, the new node will be created directly under the page i.e. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * The path to the node where a new node is created must be valid when provided via `itemPath`.
   * In this example, `root/responsivegrid` must exist so that the new node `text_20` can be created there.
-* Currently, only leaf component creation is supported. Virtual container and page will be supported in future versions.
+* Only leaf component creation is supported. Virtual container and page will be supported in future versions.
 
 ## Additional Customizations {#additional-customizations}
+
+If you followed the previous examples, your external SPA is now editable within AEM. However there are additional aspects of your external SPA that you can further customize.
 
 ### Root Node ID {#root-node-id}
 
@@ -273,13 +281,13 @@ For example, assume we have a SPA in which the application is rendered inside a 
 
 ### Editing a React SPA with Routing {#editing-react-spa-with-routing}
 
-If the external React SPA application has multiple pages, it can use routing to determine the page/component to render. The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM specific info.
+If the external React SPA application has multiple pages, it can use routing to determine the page/component to render. The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
 
 In the following example we have a simple React application with two pages. The page to be rendered is determined by matching the path provided to the router against the active URL. For example, if we are on `mydomain.com/test`, `TestPage` will be rendered.
 
 ![Routing in an external SPA](assets/external-spa-routing.png)
 
-To enable editing within AEM for this example SPA, the follwoing steps are required.
+To enable editing within AEM for this example SPA, the following steps are required.
 
 1. Identify the level which would act as the root on AEM.
 
