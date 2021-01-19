@@ -60,7 +60,7 @@ The method of creating a content fragment is:
 
 5. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
 
-## Actions for a Content Fragment {#actions-for-a-content-fragment}
+## Actions for a Content Fragment in the Assets Console {#actions-for-a-content-fragment-assets-console}
 
 In the **Assets** console a range of actions are available for your content fragments, either:
 
@@ -320,7 +320,7 @@ You can revert to a specific version of your fragment:
 
 Content Fragments must be published for use in the publish enviroment. They can be published:
 
-* After creation; from the **[Assets](#actions-for-a-content-fragment)** console.
+* After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
 * When you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
 
