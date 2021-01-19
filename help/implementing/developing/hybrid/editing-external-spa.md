@@ -178,7 +178,7 @@ mvn clean install -PautoInstallSinglePackage
 
 The `AEMText` component is now authorable on AEM.
 
-### AEM Authorable Pages {aem-authorable-pages}
+### AEM Authorable Pages {#aem-authorable-pages}
 
 1. Identify a page to be added for authoring in the SPA. This example uses `/content/wknd-spa-react/us/en/home.html`.
 1. Create a new file (e.g. `Page.js`) for the authorable Page Component. Here, we can reuse the Page Component provided in `@adobe/cq-react-editable-components`.
