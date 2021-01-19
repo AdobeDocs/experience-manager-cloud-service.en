@@ -273,3 +273,36 @@ For example, assume we have a SPA in which the application is rendered inside a 
 
 ### Editing a React SPA with Routing {#editing-react-spa-with-routing}
 
+If the external React SPA application has multiple pages, it can use routing to determine the page/component to render. The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM specific info.
+
+In the following example we have a simple React application with two pages. The page to be rendered is determined by matching the path provided to the router against the active URL. For example, if we are on `mydomain.com/test`, `TestPage` will be rendered.
+
+![Routing in an external SPA](assets/external-spa-routing.png)
+
+To enable editing within AEM for this example SPA, the follwoing steps are required.
+
+1. Identify the level which would act as the root on AEM.
+
+   * For our sample, we are considering wknd-spa-react/us/en as the root of the SPA. This means that everything prior to that path is AEM only pages/content.
+
+1. Create a new page at the required level.
+
+   * In this example, the page to be edited is `mydomain.com/test`. `test` is in the root path of the app. This needs to be preserved when creating the page in AEM as well. Therefore we can create a new page at the root level defined in the previous step.
+   * The new page created must have the same name as the page to be edited. In this example for `mydomain.com/test`, the new page created must be `/path/to/aem/root/test`.
+
+1. Add helpers within SPA routing.
+
+   * The newly-created page will not yet render the the expected content in AEM. This is because the router expects a path of `/test` whereas the AEM active path is `/wknd-spa-react/us/en/test`. To accommodate the AEM-specific portion of the URL, we need to add some helpers on the SPA side.
+
+   ![Routing helper](assets/external-spa-router-helper.png)
+
+   * The `toAEMPath` helper provided by `@adobe/cq-spa-page-model-manager` can be used for this. It transforms the path provided for routing to include AEM-specific portions when the application is open on an AEM instance. It accepts three parameters:
+     * The path required for routing
+     * The origin URL of the AEM instance where the SPA is edited
+     * The project root on AEM as determined in the first step
+
+   * These values can be set as environment variables for more flexibility.
+
+1. Verify editing the page in AEM.
+
+   * Deploy the project to AEM and navigate to the newly created `test` page. The page content is now rendered and AEM components are editable.
