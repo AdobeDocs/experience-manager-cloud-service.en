@@ -111,7 +111,7 @@ To open your fragment for editing:
 >To edit a content fragment you need the appropriate permissions. Please contact your system administrator if you are experiencing issues.
 
 1. Use the **Assets** console to navigate to the location of your content fragment.
-2. Open the fragment for editing, by either:
+1. Open the fragment for editing, by either:
 
     * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
     * Selecting the fragment, then **Edit** from the toolbar.
@@ -125,7 +125,7 @@ To open your fragment for editing:
    >1. A message will be shown when the fragment is already referenced on a content page.
    >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
-3. Navigate through the various modes using the icons in the side panel:
+1. Navigate through the various modes using the icons in the side panel:
 
     * Variations: [Editing the content](#editing-the-content-of-your-fragment) and [Managing your Variations](#creating-and-managing-variations-within-your-fragment)
 
@@ -137,19 +137,24 @@ To open your fragment for editing:
 
    ![modes](assets/cfm-managing-04.png)
 
-   Some features in the top toolbar are available from multiple modes:
+1. Some features in the top toolbar are available from multiple modes:
 
    * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
      * The name is also a link that will open the model editor.
 
-   * See the status of the fragment; for example, information about when it was created, modified or published.
+   * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
+     * New: grey
+     * Draft: blue
+     * Published: green
+     * Modified: orange
+     * Deactivated: red
 
-   * **Publish** the fragment.
+   * **[Publish](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment)** the fragment.
 
    ![modes](assets/cfm-managing-top-toolbar.png)
 
-4. After making changes, use **Save** or **Cancel** as required.
+1. After making changes, use **Save** or **Cancel** as required.
 
    >[!NOTE]
    >
@@ -307,6 +312,7 @@ You can revert to a specific version of your fragment:
 Content Fragments must be published for use in the publish enviroment. They can be published:
 
 * After creation; from the **Assets** console.
+* From the [Content Fragment Editor](/help/assets/content-fragments/content-fragments-variations.md#publishing-your-fragment).
 * When you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
