@@ -15,9 +15,9 @@ This document describes the recommended steps to upload a standalone SPA to an A
 The prerequisites are simple.
 
 * Ensure an instance of AEM is running locally.
-* Create a base AEM SPA project using [the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#available-properties)
+* Create a base AEM SPA project using [the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)
   * This will form the basis of the AEM project which will be updated to include the external SPA.
-  * For the samples in this document, we are using the starting point of [the WKND SPA project.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=en#spa-editor)
+  * For the samples in this document, we are using the starting point of [the WKND SPA project.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)
 * Have the working, external React SPA that you wish to integrate at hand.
 
 ## Upload SPA to AEM Project {#upload-spa-to-aem-project}
@@ -281,7 +281,7 @@ For example, assume we have a SPA in which the application is rendered inside a 
 
 ### Editing a React SPA with Routing {#editing-react-spa-with-routing}
 
-If the external React SPA application has multiple pages, it can use routing to determine the page/component to render. The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
+If the external React SPA application has multiple pages, [it can use routing to determine the page/component to render.(/help/implementing/developing/hybrid/routing.md) The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
 
 In the following example we have a simple React application with two pages. The page to be rendered is determined by matching the path provided to the router against the active URL. For example, if we are on `mydomain.com/test`, `TestPage` will be rendered.
 
@@ -314,3 +314,16 @@ To enable editing within AEM for this example SPA, the following steps are requi
 1. Verify editing the page in AEM.
 
    * Deploy the project to AEM and navigate to the newly created `test` page. The page content is now rendered and AEM components are editable.
+
+## Additional Resources {#additional-resources}
+
+The following reference material may be helpful to understand SPAs in the context of AEM.
+
+* [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
+* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [The WKND SPA project](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
+* [Getting Started with SPAs in AEM Using React](/help/implementing/developing/hybrid/getting-started-react.md)
+* [SPA Reference Materials (API references)](/help/implementing/developing/hybrid/reference-materials.md)
+* [SPA Blueprint and PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
+* [SPA Model Routing](/help/implementing/developing/hybrid/routing.md)
+* [SPA and Server-Side Rendering](/help/implementing/developing/hybrid/ssr.md)
