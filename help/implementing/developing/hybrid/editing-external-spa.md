@@ -162,3 +162,114 @@ Let's take an example page where we need to add a text from the WKND SPA project
 
 We can now test the component on the running AEM instance.
 
+1. Run the following Maven command from the `aem-guides-wknd-spa` directory to build and deploy the project to AEM.
+
+```shell
+mvn clean install -PautoInstallSinglePackage
+```
+
+1. On your AEM instance, navigate to `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`.
+
+![Editing the SPA in AEM](assets/external-spa-edit-aem.png)
+
+The `AEMText` component is now authorable on AEM.
+
+### AEM Authorable Pages {aem-authorable-pages}
+
+1. Identify a page to be added for authoring in the SPA. This example uses `/content/wknd-spa-react/us/en/home.html`.
+1. Create a new file (e.g. `Page.js`) for the authorable Page Component. Here, we can reuse the Page Component provided in `@adobe/cq-react-editable-components`.
+1. Repeat step four in the section [AEM authorable leaf components.](#authorable-leaf-components) Use the wrapper function `withMappable` on the component.
+1. As was done previously, apply `MapTo` to the AEM resource types for all the child components within the page.
+
+   ```javascript
+   import { Page, MapTo, withMappable } from '@adobe/aem-react-editable-components';
+   import Text, { TextEditConfig } from './Text';
+
+   export default withMappable(Page);
+
+   MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+   ```
+
+   >[!NOTE]
+   >
+   >In this example we are using the unwrapped react Text component instead of the wrapped `AEMText` created previously. This is because when the component is part of a page/container and not stand alone, the container will take care of recursively mapping the component and enabling authoring capabilities and the additional wrapper is not needed for each child.
+
+1. To add an authorable page in the SPA, follow the same steps as outlined in Add authorable components to the page - except that we can skip the itemPath prop here.
+
+#### Verify Page Content on AEM {#verify-page-content}
+
+To verify that the page can be edited, follow the same steps in the section [Verify Editing of Text Content on AEM.](#verify-text-edit)
+
+![Editing a page in AEM](assets/external-spa-edit-page.png)
+
+The page is now editable on AEM with a layout container and child Text Component.
+
+### Virtual Leaf Components {#virtual-leaf-components}
+
+In the previous examples, we added components to the SPA for which content already exists within AEM. However, there could be use cases where content has not yet been created in AEM, but needs to be added later by the content author. To accommodate this, the front-end developer can add components in the appropriate positions within the SPA. These components will display placeholders when opened in the editor. Once the content is added within these placeholders by the content author, nodes are created in the JCR structure and content is persisted. The created component will allow the same set of operations as the standalone leaf components.
+
+In this example, we are reusing the `AEMText` component created previously. We want new text to be added below the existing text component on the WKND home page. The addition of components is the same as for normal leaf components. However, the `itemPath` can be updated to the path where the new component needs to be added.
+
+Since the new component needs to be added below the existing text at `root/responsivegrid/text`, the new path would be `root/responsivegrid/{itemName}`.
+
+```html
+<AEMText
+ pagePath='/content/wknd-spa-react/us/en/home'
+ itemPath='root/responsivegrid/text_20' />
+ ```
+
+The `TestPage` component looks like this after adding the virtual component.
+
+![Testing the virtual component](assets/external-spa-virtual-component.png)
+
+>[!NOTE]
+>
+>Ensure the `AEMText` component has its `resourceType` set in the configuration to enable this feature.
+
+You can now deploy the changes to AEM following the steps in the section [Verify Editing of Text Content on AEM.](#verify-text-edit) A placeholder will be displayed for the currently non-existing `text_20` node.
+
+![The text_20 node in aem](assets/external-spa-text20-aem.png)
+
+When the content author updates this component, a new `text_20` node is created at `root/responsivegrid/text_20` in `/content/wknd-spa-react/us/en/home`.
+
+![The text20 node](assets/external-spa-text20-node.png)
+
+#### Requirements and Limitations {#limitations}
+
+* The `pagePath` property is mandatory for creating a virtual component.
+* The page node provided at the path in `pagePath` must exist in the AEM project.
+* The name of the node to be created must be provided in the `itemPath`.
+* The component can be created at any level. 
+  * If we provide an `itemPath='text_20'` in the above example, the new node will be created directly under the page i.e. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+* The path to the node where a new node is created must be valid when provided via `itemPath`.
+  * In this example, `root/responsivegrid` must exist so that the new node `text_20` can be created there.
+* Currently, only leaf component creation is supported. Virtual container and page will be supported in future versions.
+
+## Additional Customizations {#additional-customizations}
+
+### Root Node ID {#root-node-id}
+
+By default, we assume that the React application is rendered inside a `div` of element ID `spa-root`. If required, this can be customized.
+
+For example, assume we have a SPA in which the application is rendered inside a `div` of element ID `root`. This needs to be reflected across three files.
+
+1. In the `index.js` of the React application (or where `ReactDOM.render()` is called)
+
+   ![ReactDOM.render() in the index.js file](assets/external-spa-root-index.png)
+
+1. In the `index.html` of the React application
+
+   ![The index.html of the application](assets/external-spa-index.png)
+
+1. In the AEM app's page component body via two steps:
+
+   1. Create a new `body.html` for the page component.
+
+     ![Create a new body.html file](assets/external-spa-update-body.gif)
+
+   1. Add the new root element in the new `body.html` file.
+
+     ![Add the root element to body.html](assets/external-spa-add-root.png)
+
+### Editing a React SPA with Routing {#editing-react-spa-with-routing}
+
