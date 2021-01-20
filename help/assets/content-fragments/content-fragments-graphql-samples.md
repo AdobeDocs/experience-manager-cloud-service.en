@@ -51,6 +51,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * `_metadata` : to reveal metadata for your fragment
       * See [Sample Query for Metadata - List the Metadata for Awards titled GB](#sample-metadata-awards-gb)
 
+    * `_model` : allow querying for a Content Fragment Model (path and title)
+      * See [Sample Query for a Content Fragment Model from a Model](#sample-wknd-content-fragment-model-from-model)
+  
     * `_path` : the path to your Content Fragement within the repository
       * See [Sample Query - A Single Specific City Fragment](#sample-single-specific-city-fragment)
 
@@ -1211,6 +1214,30 @@ This sample query interrogates:
           plaintext
           json
         }
+    }
+  }
+}
+```
+
+### Sample Query for a Content Fragment Model from a Model {#sample-wknd-content-fragment-model-from-model}
+
+This sample query interrogates:
+
+* for a single Content Fragment 
+  * details of the underlying Content Fragment Model 
+  
+**Sample Query**
+
+```xml
+{
+  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+    item {
+      _path
+      adventureTitle
+      _model {
+        _path
+        title
+      }
     }
   }
 }
