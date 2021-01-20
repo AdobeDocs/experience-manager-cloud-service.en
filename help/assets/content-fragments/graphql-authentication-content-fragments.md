@@ -44,7 +44,7 @@ Adobe uses a system based on [JSON Web Token](https://jwt.io/) in order to gener
 >
 >The first time the service token is generated, it must be from a user with the **IMS Organization Administrator** role. A normal AEM administrator can not perform this action for the first time, but can perform it any time after that.
 
-1. Open the [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#developer-console-access).
+1. Open the [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
 1. Open the **Integrations** tab.
 
@@ -129,11 +129,11 @@ If you are developing a third party application, you can get a temporary Access 
 
 >[!CAUTION]
 >
->Anyone with [access to the Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#developer-console-access)) can generate this Local Development Token.
+>Anyone with [access to the Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) can generate this Local Development Token.
 >
 >However, it expires after 24 hours, so it will need to be refreshed every day.
 
-1. Open the Developer Console.
+1. Open the [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
 1. Open the **Integrations** tab.
 
