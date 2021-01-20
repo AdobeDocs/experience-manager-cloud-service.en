@@ -11,7 +11,6 @@ From the **Variations** tab you can:
 
 * [Enter the content](#authoring-your-content) for your fragment,
 * [Create and manage variations](#managing-variations) of the **Master** content,
-* See the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) that was used to create the fragment; shown in top toolbar, under the fragment name.
 
 Perform a range of other actions depending on the data-type being edited; for example:
 
