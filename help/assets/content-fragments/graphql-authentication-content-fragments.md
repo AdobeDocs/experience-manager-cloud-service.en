@@ -34,7 +34,7 @@ To retrieve an Access Token for use by a third party service, it helps to first 
 >
 >* The Access Token generated through the JWT token is only available for 24 hours after it was generated, This is why it must be fetched again and again using the Service Credentials.
 >
->* Calls made using these Access Tokens are processed on the AEM instance with a single [Tech Service Account](#tech-service-account-service-credentials).
+>* Calls made using these Access Tokens are processed on the AEM instance with a single [Technical Account User](#tech-service-account-service-credentials).
 
 ### Creating Service Credentials using a JSON Web Token {#creating-service-credentials-json-web-token}
 
@@ -96,7 +96,7 @@ Your service can now use the `access_token` in its Authorization header of reque
 Authorization: Bearer <access_token>
 ```
 
-### The Tech Service Account created by the Service Credentials process {#tech-service-account-service-credentials}
+### The Technical Account created by the Service Credentials process {#technical-account-service-credentials}
 
 Any calls coming through the Service Credentials are managed by only one service tech account on the AEM instance. 
 
@@ -107,19 +107,19 @@ This user account is:
  
 You can identify the account, as the user ID is the same as the email for the account used to generate the [JWT Service Credentials JSON](#creating-service-credentials-json-web-token).
 
-![Tech Service Account](assets/cfm-tech-service-account.png)
+![Technical Account User](assets/cfm-tech-service-account.png)
 
 >[!CAUTION]
 >
->All requests for a particular instance go through only one Tech Service Account. 
+>All requests for a particular instance go through only one Technical Account User. 
 >
->This means that even if the users have different projects on the instance, the Tech Service Account is the same for all requests. 
+>This means that even if the users have different projects on the instance, the Technical Account User is the same for all requests. 
 >
 >The account is unique per environment.
 
 >[!CAUTION]
 >
->The Tech Service Account might not automatically have all the proper permissions to perform GraphQL queries. 
+>The Technical Account User might not automatically have all the proper permissions to perform GraphQL queries. 
 >
 >Administrators will need to manually add permissions to this account to ensure that GraphQL functions properly.
 
