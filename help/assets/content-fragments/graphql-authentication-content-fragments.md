@@ -7,7 +7,7 @@ description: Learn about the authentication required for Remote AEM GraphQL quer
 
 The [Adobe Experience Manager as a Cloud Service (AEM) GraphQL API used with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md) is primarily designed for remote queries from third party applications or services.  These are not (usually) part of the Adobe infrastructure, but interrogate AEM resources for content.
 
->[NOTE]
+>[!NOTE]
 >
 >For testing and development you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interface.
 
