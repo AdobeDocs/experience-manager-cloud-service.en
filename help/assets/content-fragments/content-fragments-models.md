@@ -61,7 +61,10 @@ The content fragment model effectively defines the structure of the resulting co
       ![data type to field](assets/cfm-models-04.png)
 
     * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
+
+      * Many properties are self-explanatory, for additional details see [Properties](#properties).
+      * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
+
       For example:
 
       ![field properties](assets/cfm-models-05.png)
