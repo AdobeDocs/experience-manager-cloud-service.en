@@ -627,11 +627,9 @@ To allow a third party website to consume JSON output, a CORS policy must be con
 >
 >This means that you need to ensure that no sensitive data is available, as it could be leaked this way; for example, this includes information that could be present as field names in the model definition.
 
-<!-- to be addressed later -->
-
-<!-- 
 ## Authentication {#authentication}
--->
+
+See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md).
 
 <!-- to be addressed later -->
 

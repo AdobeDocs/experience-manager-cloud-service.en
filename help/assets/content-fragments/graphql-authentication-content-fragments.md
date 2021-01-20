@@ -1,9 +1,9 @@
 ---
-title: Authentication for AEM GraphQL Queries on Content Fragments
-description: Learn about the authentication required for AEM GraphQL queries.
+title: Authentication for Remote AEM GraphQL Queries on Content Fragments
+description: Learn about the authentication required for Remote AEM GraphQL queries.
 ---
 
-# Authentication for AEM GraphQL Queries on Content Fragments {#authentication-for-aem-graphql-queries-on-content-fragments}
+# Authentication for Remote AEM GraphQL Queries on Content Fragments {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
 The [Adobe Experience Manager as a Cloud Service (AEM) GraphQL API used with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md) is primarily designed for remote queries from third party applications or services.  These are not (usually) part of the Adobe infrastructure, but interrogate AEM resources for content.
 
@@ -40,17 +40,17 @@ To retrieve an Access Token for use by a third party service, it helps to first 
 
 Adobe uses a system based on [JSON Web Token](https://jwt.io/) in order to generate access tokens for service-to-service communications. 
 
-1. Open the Developer Console.
+>[!CAUTION]
+>
+>The first time the service token is generated, it must be from a user with the **IMS Organization Administrator** role. A normal AEM administrator can not perform this action for the first time, but can perform it any time after that.
+
+1. Open the [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#developer-console-access).
 
 1. Open the **Integrations** tab.
 
 1. Select **Get Service Credentials**.
    
    ![Developer Console - Get Service Credentials](assets/cfm-graphql-auth-dev-console.png)
-
-   >[!CAUTION]
-   >
-   >The first time the service token is generated, it must be from a user with the **IMS Organization Administrator** role. A normal AEM administrator can not perform this action for the first time, but can perform it any time after that.
 
 This will retrieve a JWT (also known as Service Credentials) that looks similar to the following:
 
@@ -73,6 +73,7 @@ This will retrieve a JWT (also known as Service Credentials) that looks similar 
   "statusCode": 200
 }
 ```
+
 ### Creating an Access Token {#creating-access-token}
 
 The JWT can now be used by a third party service to create Access Tokens.
@@ -114,7 +115,7 @@ You can identify the account, as the user ID is the same as the email for the ac
 >
 >This means that even if the users have different projects on the instance, the Tech Service Account is the same for all requests. 
 >
->It is unique per environment.
+>The account is unique per environment.
 
 >[!CAUTION]
 >
@@ -128,7 +129,7 @@ If you are developing a third party application, you can get a temporary Access 
 
 >[!CAUTION]
 >
->Anyone with access to the Developer Console can generate this Local Development Token.
+>Anyone with [access to the Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#developer-console-access)) can generate this Local Development Token.
 >
 >However, it expires after 24 hours, so it will need to be refreshed every day.
 
