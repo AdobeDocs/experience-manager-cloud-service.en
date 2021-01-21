@@ -38,15 +38,21 @@ The following release (2021.1.0) will be on January 28, 2021.
 
 ### Release Date {#release-date-cm}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January 14, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2020.12.0 is December 10, 2020.
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+
+* Self service management of [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+
+* Self service management of [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+* Updated **Environment** details page now allows users to manage Custom Domain Names and IP Allow Lists on their environments.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* Assets Production instance may on occasion, show the Brand Portal status on the **Environments** detail page as *Pending* without allowing the user to take any action.
+* Some occurrences of failures at code scanning stage without providing results addressed.
 
-* When triggering a de-hibernate from Cloud Manager, sometimes a failure message was displayed even when de-hibernation was started successfully. 
-
-* Rare cases of failure encountered in environment creation or deletion has been addressed.
+* Environment card did not consistently display **Add** button.
 
 ## Code Refactoring Tools {#code-refactoring-tools}
 
@@ -61,19 +67,3 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 ### Bug Fixes {#crt-bug-fixes}
 
 * Several bug fixes done on the AEM Dispatcher Converter and Repository Modernizer tools. Please refer to [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) and [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
-
-## Cloud Transition Tools {#code-transition-tools}
-
-### Release Date {#release-date-ctt}
-
-The Release Date for Content Transfer Tool v1.1.20 is January 08, 2021.
-
-### What is new in [!DNL Content Transfer Tool] {#what-is-new-ctt}
-
-* Users can now learn if their Access Token has expired by hovering on the status icon in the Content Transfer Tool (CTT) user interface. They will also be notified in the Migration Set Details UI that they are unable to connect to their Cloud Service instance.
-
-### Bug Fixes {#ctt-bug-fixes}
-
-* Content Transfer Tool (CTT) user interface status for a migration set did not persist and changed after a period of inactivity. This has been fixed.
-* Option to view logs was disabled if the logs were not available. This has been fixed and messaging has been added to notify user why logs are missing.
-* Content Transfer Tool user interface status showed FAILED when user stopped an ingestion. This has been fixed to display *STOPPED* instead.
