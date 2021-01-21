@@ -60,6 +60,10 @@ The method of creating a content fragment is:
 
 5. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
 
+   >[!NOTE]
+   >In **List** mode of the console you can update the **View Settings** to enable the **Content Fragment Model** 
+   column.
+
 ## Actions for a Content Fragment in the Assets Console {#actions-for-a-content-fragment-assets-console}
 
 In the **Assets** console a range of actions are available for your content fragments, either:
