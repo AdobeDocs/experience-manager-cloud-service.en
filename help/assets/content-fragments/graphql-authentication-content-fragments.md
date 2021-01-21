@@ -26,13 +26,13 @@ Authorization: Bearer <access_token>
 To retrieve an Access Token for use by a third party service, it helps to first understand how the access token is generated:
 
 * [Service Credentials are generated, based on a JSON Web Token (JWT)](#creating-service-credentials-json-web-token).
-* This is used to [generate the Access Token](#creating-access-token)
+* This is used to [generate the Access Token](#creating-access-token).
 
 >[!NOTE]
 >
 >* The Service Credentials have a lifespan of 1 year; this is due to the certificates used.
 >
->* The Access Token generated through the JWT token is only available for 24 hours after it was generated, This is why it must be fetched again and again using the Service Credentials.
+>* The Access Token generated through the JWT token is only available for 24 hours after it was generated. This is why it must be fetched again and again using the Service Credentials.
 >
 >* Calls made using these Access Tokens are processed on the AEM instance with a single [Technical Account User](#tech-service-account-service-credentials).
 
