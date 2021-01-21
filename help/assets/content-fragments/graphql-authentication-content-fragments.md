@@ -15,7 +15,7 @@ For authentication the third party service needs to use an [Access Token](#acces
 
 ## Access Token {#access-token}
 
-For a third party service to connect with an AEM instance it needs to have an *Access Token*. The service must then add this token to the *Authorization* header on the POST request. For example, a GraphQL Authorization Header:
+For a third party service to connect with an AEM instance it needs to have an *Access Token*. The service must then add this token to the `Authorization` header on the POST request. For example, a GraphQL Authorization Header:
 
 ```xml
 Authorization: Bearer <access_token>
@@ -23,7 +23,7 @@ Authorization: Bearer <access_token>
 
 ## Retrieving an Access Token for use by a Third Party Service {#retrieving-access-token-third-party-service}
 
-To retrieve an Access Token for use by a third party service, it helps to first understand how the access token is generated:
+To retrieve an Access Token, for use by a third party service, it helps to first understand how the access token is generated:
 
 * [Service Credentials are generated, based on a JSON Web Token (JWT)](#creating-service-credentials-json-web-token).
 * This is used to [generate the Access Token](#creating-access-token).
@@ -38,7 +38,7 @@ To retrieve an Access Token for use by a third party service, it helps to first 
 
 ### Creating Service Credentials using a JSON Web Token {#creating-service-credentials-json-web-token}
 
-Adobe uses a system based on [JSON Web Token](https://jwt.io/) in order to generate access tokens for service-to-service communications. 
+Adobe uses a system based on [JSON Web Tokens](https://jwt.io/) in order to generate access tokens for service-to-service communications. 
 
 >[!CAUTION]
 >
@@ -49,7 +49,7 @@ Adobe uses a system based on [JSON Web Token](https://jwt.io/) in order to gener
 1. Open the **Integrations** tab.
 
 1. Select **Get Service Credentials**.
-   
+
    ![Developer Console - Get Service Credentials](assets/cfm-graphql-auth-dev-console.png)
 
 This will retrieve a JWT (also known as Service Credentials) that looks similar to the following:
@@ -98,9 +98,9 @@ Authorization: Bearer <access_token>
 
 ### The Technical Account created by the Service Credentials process {#technical-account-service-credentials}
 
-Any calls coming through the Service Credentials are managed by only one service tech account on the AEM instance. 
+Any calls coming through the Service Credentials are managed by only one sccount (Technical Account User) on the AEM instance. 
 
-This user account is:
+This account is:
 
 * Created automatically when the IMS Org Administrator generates the Service Credentials for the first time.
 * Is automatically added to the contributors group. 
@@ -157,7 +157,7 @@ You can then use the value of the `accessToken` field to create (local) requests
 Authorization: Bearer <access_token>
 ```
 
->[!NOTE]
+>[!CAUTION]
 >
 >All requests made using this access token will actually be made *by the user account that generated the token*. 
 >
