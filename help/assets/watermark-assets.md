@@ -12,7 +12,7 @@ To configure [!DNL Experience Manager] to watermark assets follow these steps:
 
 1. A PNG file is applied as a watermark. Upload this file in your DAM repository.
 
-1. Access the [!DNL Cloud Manager] Git repository associated with your environment. Commit a file named `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` in the repository with the following contents. For instructions, see [how to do OSGi configuration in [!DNL Experience Manager] as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Access the [!DNL Cloud Manager] Git repository associated with your environment. Commit a file named `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` in the repository with the following contents. For instructions, see [how to do OSGi configuration in [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {

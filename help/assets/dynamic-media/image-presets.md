@@ -1,6 +1,6 @@
 ---
 title: Applying Dynamic Media Image Presets
-description: Learn how to apply image presets in Dynamic Media
+description: Learn how to apply image presets in Dynamic Media.
 ---
 
 # Applying Dynamic Media Image Presets {#applying-image-presets}

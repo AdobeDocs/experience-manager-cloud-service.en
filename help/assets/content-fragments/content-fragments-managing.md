@@ -5,11 +5,20 @@ description: Content Fragments are stored as Assets, so are primarily managed fr
 
 # Managing Content Fragments{#managing-content-fragments}
 
+>[!CAUTION]
+>
+>The AEM GraphQL API for Content Fragments Delivery is available on request. 
+>
+>Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
+
 Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
 >[!NOTE]
 >
->Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>Content fragments can be used:
+>
+>* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* for [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -68,6 +77,7 @@ In the **Assets** console a range of actions are available for your content frag
 
 Select the fragment to reveal the toolbar with applicable actions:
 
+* **Reprocess Assets**
 * **Create**
 * **Download**
 
@@ -82,17 +92,12 @@ Select the fragment to reveal the toolbar with applicable actions:
 
     * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
 
-* **Manage Tags**
-* **To Collection**
-
-    * Add the fragment to a collection.
-    * This can also be done when [associating a collection with the fragment](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content).
-
-* **Copy**/**Paste**
-
-* **Move**
 * **Quick Publish**
 * **Manage Publication**
+* **Manage Tags**
+* **To Collection**
+* **Copy** (and **Paste**)
+* **Move**
 * **Delete**
 
 >[!NOTE]
@@ -133,6 +138,8 @@ To open your fragment for editing:
     * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
     * [Associated Content](#associating-content-with-your-fragment)
     * [Metadata](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+    * [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
+    * [Preview](/help/assets/content-fragments/content-fragments-json-preview.md)
 
    ![modes](assets/cfm-managing-04.png)
 

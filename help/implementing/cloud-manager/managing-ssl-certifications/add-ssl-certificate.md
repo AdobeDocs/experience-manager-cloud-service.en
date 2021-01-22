@@ -6,44 +6,59 @@ description: Adding an SSL Certificate - Managing SSL Certificates
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 >[!NOTE]
->A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Goto How to get an SSL certificate to learn more.INSERT LINK
+>AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted. In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
+
+A Certificate takes a few days to provision and it is recommended that the certificate be provisioned even months in advance. Refer to [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) for more details.
 
 ## Certificate Format {#certificate-format}
 
-SSL files must be in PEM format in order to be installed on Cloud Manager. Common file extensions that are within the PEM format include .pem, .crt, .cer, and .cert. 
+SSL files must be in PEM format in order to be installed on Cloud Manager. Common file extensions that are within the PEM format include `.pem,` .`crt`, `.cer`, and `.cert`. 
 
 Follow the steps below to convert the format of your SSL files to PEM:
 
-1. Convert PFX to PEM
+* Convert PFX to PEM
 
-  `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. Convert P7B to PEM
+* Convert P7B to PEM
 
-  `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. Convert DER to PEM
+* Convert DER to PEM
 
-  `openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## Adding your Certificate {#adding-certificate}
+## Important Considerations {#important-considerations}
 
->[!NOTE]
->* A user must be in the Business Owner or Deployment Manager role in order to install an SSL certificate in Cloud Manager.
->* At any given time, Cloud Manager will allow a maximum of 5 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+* A user must be in the Business Owner or Deployment Manager role in order to install an SSL certificate in Cloud Manager.
+
+* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+
+## Adding a Certificate {#adding-a-cert}
+
+Follow the steps below to add a certificate:
 
 1. Login to Cloud Manager.
-1. Navigate to Environments screen from Overview page.
-1. Navigate to SSL Certificates screen from the left navigation menu. A table with details of any existing SSL certificates will be displayed on this screen.INSERT IMAGE
-1. Select the **Add certificate** button to launch a wizard.
-1. Enter a name for your certificate. This can be any name that helps you reference your certificate easily.
-1. Paste the Certificate, Private Key and Chain contents into their respective fields. Use the paste icon to the right of the input box.
-1. Select **Save**.
+1. Navigate to **Environments** screen from **Overview** page.
+1. Click on **SSL Certificates** from the left navigation menu. A table with details of any existing SSL certificates will be displayed on this screen.
 
-   >[!NOTE]
-   >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to Certificate INSERT LINK Errors to learn more about addressing common errors.
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-   Once you submit your certificate, you will see it displayed as a new row in the table.
+1. Click on **Add SSL Certificate** to open **Add SSL Certificate** dialog box.
+
+     * Enter a name for your certificate in **Certificate Name**. This can be any name that helps you reference your certificate easily.
+     * Paste the **Certificate**, **Private key** and **Certificate chain** into their respective fields. Use the paste icon to the right of the input box. 
+     All three fields are not optional and must be included.
+
+       ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
+  
+       >[!NOTE]
+       >Any errors detected will be displayed. You must address all errors before your certificate can be saved. Refer to the [Certificate Errors](#certificate-errors) to learn more about addressing common errors.
+
+1. Click **Save** to submit your certificate. You will see it displayed as a new row in the table.
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## Certificate Errors {#certificate-errors}
 
@@ -66,6 +81,4 @@ You can verify that the private key and `main/server` certificate match using th
 
 ### Certificate Validity Dates {#certificate-validity-dates}
 
-Cloud Manager expects the SSL certificate to be valid for at least 90 days into the future
-
-Check the validity of the certificate chain.
+Cloud Manager expects the SSL certificate to be valid for at least 90 days into the future. You should check the validity of the certificate chain.

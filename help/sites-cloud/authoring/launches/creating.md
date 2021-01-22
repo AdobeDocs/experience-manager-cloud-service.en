@@ -13,6 +13,16 @@ Create a launch to enable the updating of a new version of existing web pages fo
 
 Optionally, you can specify the **Launch Date** (and time) to define when the launch pages are to be promoted and activated. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
 
+>[!NOTE]
+>
+>When you create a launch, pages higher up in the hierarchy are not copies of the source pages. They are placeholders, created with the template:
+>
+>* `/libs/launches/templates/outofscope`
+>
+>These pages cannot be edited. You will see the message: 
+>
+>* **This page is not part of the launch. Go to production page**
+
 ## Creating a Launch {#creating-a-launch}
 
 You can create a launch from either the Sites or Launches console:
@@ -113,13 +123,15 @@ Creating a nested launch (launch within a launch) gives you the ability to creat
 Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
 
 1. In the **Launches** console select **Create**.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Select the required launch and confirm with **Select**:
+1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the **Filters** rail. Select the required launch and confirm with **Select**:
 
    ![Creating a nested launch](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Proceed with **Next** and complete the **Properties** as with any other launch.
+1. Proceed with **Next**.
 
-   ![Select source for nested launch](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Complete the **Properties** as with any other launch.
+
+1. Complete with **Create**.
 
 #### Creating a Nested Launch - Sites Console {#creating-a-nested-launch-sites-console}
 

@@ -1,6 +1,6 @@
 ---
 title: Delivering Dynamic Media assets
-description: With Dynamic Media you have several options to deliver your dynamic media assets - both video and images - to your website.
+description: With Dynamic Media you have several options to deliver your Dynamic Media assets - both video and images - to your website.
 ---
 
 # Delivering Dynamic Media assets{#delivering-dynamic-media-assets}

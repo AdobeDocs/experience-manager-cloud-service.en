@@ -1,28 +1,22 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.11.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.11.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.1.0
+description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.1.0
 ---
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.11.0 {#release-notes}
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.1.0 {#release-notes}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2020.11.0.
+This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.1.0.
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is November 12, 2020.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January 14, 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-### What's New {#what-is-new}
+### Bug Fixes  {#bug-fixes}
 
-* A new menu option **Local Login** is now be available to users from the environment menu options on the Environment card and Environments Summary pages. 
-   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
+* Assets Production instance may on occasion, show the Brand Portal status on the **Environments** detail page as *Pending* without allowing the user to take any action.
 
-* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
+* When triggering a de-hibernate from Cloud Manager, sometimes a failure message was displayed even when de-hibernation was started successfully. 
 
-### Bug Fixes {#bug-fixes-cloud-manager}
-
-* The loading of dependencies done prior to build execution required downloading a Maven plugin.
-* The link from the Cloud Manager footer to select a language will now navigate to the correct location.
-* Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
-* All existing production pipelines will be automatically enabled with the Experience Audit step. 
+* Rare cases of failure encountered in environment creation or deletion has been addressed.

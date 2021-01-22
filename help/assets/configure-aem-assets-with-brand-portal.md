@@ -1,16 +1,16 @@
 ---
-title: Configure AEM Assets as a Cloud Service with Brand Portal
+title: Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal
 description: Configure AEM Assets with Brand Portal.
 contentOwner: Vishabh Gupta
 ---
 
-# Configure AEM Assets as a Cloud Service with Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Configuring Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets as a Cloud Service instance to Brand Portal and distribute them to the Brand Portal users.
+Configuring Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
 
 **Configuration workflow**
 
-AEM Assets as a Cloud Service is configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, AEM Assets as well as Adobe Developer Console.
+AEM Assets as a [!DNL Cloud Service] is configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, AEM Assets as well as Adobe Developer Console.
 
 1. In AEM Assets, create an IMS account and generate a public key (certificate).
 1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
@@ -22,13 +22,13 @@ AEM Assets as a Cloud Service is configured with Brand Portal via Adobe Develope
 
 >[!NOTE]
 >
->An AEM Assets as a Cloud Service instance shall only be configured with one Brand Portal tenant.
+>An AEM Assets as a [!DNL Cloud Service] instance shall only be configured with one Brand Portal tenant.
 
 ## Prerequisites {#prerequisites}
 
 You require the following to configure AEM Assets with Brand Portal:
 
-* An up and running AEM Assets as a Cloud Service instance
+* An up and running AEM Assets as a [!DNL Cloud Service] instance
 * A Brand Portal tenant URL
 * A user with system administrator privileges on the IMS organization of the Brand Portal tenant 
 
@@ -44,7 +44,7 @@ Perform the following steps in the specified sequence to configure AEM Assets wi
 
 ### Create IMS configuration {#create-ims-configuration}
 
-The IMS configuration authenticates your AEM Assets as a Cloud Service instance with the Brand Portal tenant. 
+The IMS configuration authenticates your AEM Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
 
 IMS configuration includes two steps:
 
@@ -64,13 +64,13 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
 
    ![Create Certificate](assets/ims-config2.png)
 
-1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine. 
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
    The public key will be used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
    ![Download Certificate](assets/ims-config3.png)
 
-1.  Click **[!UICONTROL Next]**. 
+1. Click **[!UICONTROL Next]**.
 
     In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
@@ -224,7 +224,7 @@ Perform the following steps to configure the Brand Portal cloud service:
 
 1. Click **[!UICONTROL Save & Close]**. The cloud configuration is created. 
 
-   Your AEM Assets as a Cloud Service instance is now configured with the Brand Portal tenant. 
+   Your AEM Assets as a [!DNL Cloud Service] instance is now configured with the Brand Portal tenant. 
 
 ### Test configuration {#test-configuration}
 
@@ -256,7 +256,7 @@ Perform the following steps to validate the configuration:
 
    ![](assets/test-bpconfig3.png)
 
-1. To verify the connection between AEM Assets as a Cloud Service and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
    ![](assets/test-bpconfig4.png)
 

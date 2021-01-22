@@ -66,7 +66,7 @@ You can drag assets from the Assets UI to a collection. You can also create a co
 A Smart Collection uses a search criteria to dynamically populate assets. You can create a Smart Collection using only files and not folders or files and folders.
 
 1. Navigate to the Assets UI, and tap/click the **[!UICONTROL Search]** icon.
-1. Enter search keyword in the Omni Search box and press Enter. Tap/click the GlobalNav icon to display the Filters panel and apply a search filter from the Search panel.
+1. Enter search keyword in the Omni Search box and select `Enter`. Tap/click the GlobalNav icon to display the Filters panel and apply a search filter from the Search panel.
 1. From the **[!UICONTROL Files & Folders]** list, select **[!UICONTROL Files]**.
 1. Tap/click **[!UICONTROL Save Smart Collection]**.
 1. Specify a name for the collection. Select **[!UICONTROL Public]** to add the DAM Users group with the Viewer role to the smart collection.
@@ -96,7 +96,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
-1. With the cursor in the Omnisearch box, press the Enter key.
+1. With the cursor in the Omnisearch box, select the `Enter` key.
 1. Tap/click the GlobalNav icon to display the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
 1. From the **[!UICONTROL Files & Folders]** list, select **[!UICONTROL Files]**.
@@ -133,7 +133,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 ### Search collections {#search-collections}
 
-You can search collections from the Collections console. When you search with keywords in the Omnisearch box, AEM Assets searches for collection names, metadata, and the tags added to the collections.
+You can search collections from the Collections console. When you search with keywords in the Omnisearch box, [!DNL Experience Manager Assets] searches for collection names, metadata, and the tags added to the collections.
 
 If you search for collections from the top level, only individual collections are returned in search results. Assets or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
 
@@ -141,7 +141,7 @@ If you search for collections from the top level, only individual collections ar
 
 In the Collections console, tap/click a collection to open it.
 
-Within a collection, AEM Asset search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
+Within a collection, [!DNL Experience Manager] search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
 
 ## Edit collection settings {#edit-collection-settings}
 
@@ -172,7 +172,7 @@ When you download a collection, the entire hierarchy of assets within the collec
 
 ## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
 
-Adobe Enterprise Manager (AEM) Assets lets you edit the metadata of many collections in bulk. Use the [!UICONTROL Properties] page to perform metadata changes on multiple collections, for example, change metadata properties to a common value or add or modify tags.
+Adobe Enterprise Manager Assets lets you edit the metadata of many collections in bulk. Use the [!UICONTROL Properties] page to perform metadata changes on multiple collections, for example, change metadata properties to a common value or add or modify tags.
 
 To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
 
@@ -230,7 +230,7 @@ To delete saved searches, follow these steps:
 
 1. In the Assets user interface, tap/click the search icon from the toolbar.
 
-1. With the cursor in the Omnisearch field, press the Enter key.
+1. With the cursor in the Omnisearch field, select the `Enter` key.
 1. Click or tap the GlobalNav icon to display the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, tap/click **[!UICONTROL Delete]** next to the smart collection you want to delete.
 1. In the dialog, tap/click **[!UICONTROL Delete]** to delete the saved search.
@@ -241,7 +241,7 @@ You can run a workflow for the assets within a collection. If the collection con
 
 1. From the Collections console, select a collection on which you want to run a workflow.
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
-1. From the timeline, click or tap the Caret icon at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
+1. From the timeline, select or tap the Caret icon at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
 1. Enter a title for the workflow, and tap/click **[!UICONTROL Start]**.
 1. In the dialog, tap/click **[!UICONTROL Proceed]**. The workflow runs on all the assets in the collection.

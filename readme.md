@@ -1,15 +1,6 @@
-# Adobe Experience Manager Cloud Service Documentation
+# Adobe Experience Manager as a Cloud Service Documentation
 
-| EXL-PR | EXL | Preview | Activate | Published | Help |
-|--- |--- |--- |--- |--- |--- |
-| [![Build Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_pr-exl/lastBuild/) | [![Build Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-service.en_exl/lastBuild/lastBuild) | [Preview URL](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/sites/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/)| [Live URL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html?lang=en) | [Authoring Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
-
-| Production | Stage |
-|---|---|
-| [![Build Status](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/lastBuild) | [![Build Status](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/lastBuild) |
-|[Output Prod](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)|[Output Stg](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/landing/home.html)|
-
-This is the repository for Adobe Experience Manager Cloud Service documentation. This documentation covers the installation, administering, authoring use, and how to customize AEM using Cloud Service.
+This is the repository for Adobe Experience Manager as a Cloud Service documentation. This documentation covers the installation, administering, authoring use, and how to customize Experience Using as a Cloud Service.
 
 Your contributions to the documentation are welcome. Please see the following resources:
 

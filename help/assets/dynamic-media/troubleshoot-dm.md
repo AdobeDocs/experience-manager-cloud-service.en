@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Dynamic Media
-description: Troubleshooting Dynamic Media.
+description: Troubleshooting tips when using Dynamic Media.
 ---
 
 # Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}

@@ -22,6 +22,7 @@ user-guide-description: Understand the transition journey to Cloud Service.
 + Code Refactoring Tools {#refactoring-tools}
   + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
   + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
+  + [Index Converter](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
   + [Asset Workflow Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
   + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
   + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)

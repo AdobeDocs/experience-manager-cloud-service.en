@@ -57,9 +57,25 @@ To connect AEM Commerce with Magento follow these steps:
 
 >[!NOTE]
 >
->Alterntivly you can use the [Cloud Manger API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) to configure the Cloud Manager variables as well.
+>Alternatively you can use the [Cloud Manger API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) to configure the Cloud Manager variables as well.
 
 With this, you are ready to use AEM Commerce as a Cloud Service and can deploy your project via Cloud Manager.
+
+## Enable Staged Catalog Features (Optional) {#staging}
+
+>[!NOTE]
+>
+>This feature is only available with Magento Enterprise Edition or Magento Cloud.
+
+1. Login to Magento and create an integration token. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details. Make sure the integration token has *only* access to `Content -> Staging` resources. Copy the `Access Token` value.
+
+1. Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
+
+    ```bash
+    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+    ```
+
+    Please see [Connecting AEM Commerce with Magento](#magento) on how to configure the Adobe I/O CLI for Cloud Manager.
 
 ## 3rd party commerce integrations {#integrations}
 
