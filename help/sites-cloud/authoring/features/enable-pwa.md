@@ -20,7 +20,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 ## Introduction {#introduction}
 
-[Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browse a site while on-the-go and lose the internet connection. PWAs allow seamless experiences even if the network is lost or unstable.
+[Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browse a site while on-the-go even if losing an internet connection. PWAs allow seamless experiences even if the network is lost or unstable.
 
 Instead of requiring any re-coding of the site, a content author is able to configure PWA properties as an additional tab in the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) of a site.
 
@@ -94,8 +94,8 @@ With [the prerequisites](#prerequisites) met, it is very easy for a content auth
 1. From the main menu, tap or click **Navigation** -&gt; **Sites**.
 1. Select your sites project and tap or click [**Properties**](/help/sites-cloud/authoring/fundamentals/page-properties.md) or use the hotkey `p`.
 1. Select the **Progressive Web App** tab and configure the applicable properties. At a minimum you will want to:
-   1. Select the option **Make this site installable as a PWA**.
-   1. Define the **URL to load when user opens app**.
+   1. Select the option **Enable PWA**.
+   1. Define the **Startup URL**.
 
       ![Enable PWA](../assets/pwa-enable.png)
 
@@ -131,50 +131,53 @@ Now that you have [configured your site to support PWA,](#enabling-pwa-for-your-
 
 The following section provides more detail on the options available when [configuring your site for PWA.](#enabling-pwa-for-your-site)
 
-### Configure Installable Experience** {#configure-installable-experience}
+### Configure Installable Experience {#configure-installable-experience}
 
 These settings allow your site behave like a native app by making it installable on the visitor's home screen and available offline.
 
-* **Make this site installable as a PWA** - This is the main toggle to enable PWA for the site.
-* **URL to load when user opens app** - This is the [start URL](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) that the app will open when the user loads the locally-installed app.
+* **Enable PWA** - This is the main toggle to enable PWA for the site.
+* **Startup URL** - This is the [preferred start URL](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) that the app will open when the user loads the locally-installed app.
   * This can be any path in your content structure.
   * This does not have to be the root and is often a dedicated welcome page for the app.
-* **Customize app experience** - A PWA-enabled app is still an AEM site delivered through a browser. [These display options](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) define how the browser should be hidden or otherwise presented to the user on the local device.
+  * If this URL is relative, the manifest URL is used as the base URL to resolve it.
+  * When left empty, the feature uses the address of the web page from which the we app got installed.
+  * It is recommended to set a value.
+* **Display mode** - A PWA-enabled app is still an AEM site delivered through a browser. [These display options](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) define how the browser should be hidden or otherwise presented to the user on the local device.
   * **Standalone** - The browser is completely hidden from the user and it appears like a native app. This is the default value.
     * With this option, app navigation must be possible entirely through your content using links and components on the site's pages without using the browser's navigation controls.
   * **Browser** - The browser appears as it normally would when visiting the site.
   * **Minimal UI** - The browser is mostly hidden, like a native app, but basic navigation controls are exposed.
   * **Full Screen** - The browser is completely hidden, like a native app, but is rendered in full screen mode.
     * With this option, app navigation must be possible entirely through your content using links and components on the site's pages without using the browser's navigation controls.
-* **Screen orientation when opening the app** - As a local app, the PWA needs to know how to handle [device orientations.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Screen orientation** - As a local app, the PWA needs to know how to handle [device orientations.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
   * **Any** - The app adjusts to the orientation of the user's device. This is the default value.
   * **Portrait** - This forces the app to open in portrait layout regardless of the orientation of the user's device.
   * **Landscape** - This forces the app to open in landscape layout regardless of the orientation of the user's device.
-* **Color of the toolbar** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) and, depending on the browser, can affect other app presentation elements.
-  * Use the swatch pop-up to select a color.
+* **Theme color** - This defines the [color of the app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) that affects how the local user's operating system displays the native UI toolbar and navigation controls. Depending on the browser, it can affect other app presentation elements.
+  * Use the color well pop-up to select a color.
   * The color can also be defined by hex or RGB value.
-* **Color of the splash screen** - This defines the [background color of the app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) which is shown as the app loads.
-  * Use the swatch pop-up to select a color.
+* **Background color** - This defines the [background color of the app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) which is shown as the app loads.
+  * Use the color well pop-up to select a color.
   * The color can also be defined by hex or RGB value.
   * Certain browsers [build a splash screen automatically](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) from the app name, background color, and icon.
 * **Icon** - This defines [the icon](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) that represents the app on the user's device.
   * The icon must be a png file of size 512x512 pixels.
   * The icon must be [stored in DAM.](/help/assets/overview.md)
 
-### Offline Configuration {#offline-configuration}
+### Cache Management (Advanced) {#offline-configuration}
 
-These settings make parts of this site available offline and available locally on your visitor's device.
+These settings make parts of this site available offline and available locally on your visitor's device. This allows controlling the cache of the web app to optimize network requests and support offline experiences.
 
-* **How often does your content change?** - This setting defines the caching model for your PWA.
+* **Caching strategy and frequency of content refresh** - This setting defines the caching model for your PWA.
   * **Moderately** - [This setting](https://web.dev/stale-while-revalidate/) is the case for most sites and is the default value.
     * With this setting, the content first viewed by the user will be loaded from the cache and while the user is consuming that content, the rest of the content in the cache will be revalidated.
   * **Frequently** - This is the case for sites that need updates to be very fast such as auction houses.
     * With this setting, the app will look for the most recent content via the network first, and if it is not available will fall back to the local cache.
   * **Rarely** - This is the case for sites that are nearly static such as reference pages.
     * With this setting, the app will look for the content in the cache first, and if not available will fall back to the network to retrieve it.
-* **Files to pre-fetch** - These files will be cached immediately when the app is installed.
-* **Paths to cache on first use** - These files will be cached whenever the user browsers to the page the first time in the app.
-* **Cache exclusions** - These files will never be caches regardless of the settings under **Files to pre-fetch** and **Paths to cache on first use**.
+* **File pre-caching** - These files hosted on AEM will be saved to the local browser cache when the service worker is installing and before it is used. This guarantees that the web app is full functional when offline.
+* **Paths inclusions** - Network requests for the defined paths are intercepted and cached content is return in accordance with the configured **Caching strategy and frequency of content refresh**.
+* **Cache exclusions** - These files will never be cached regardless of the settings under **File pre-caching** and **Path inclusions**.
 
 >[!TIP]
 >
