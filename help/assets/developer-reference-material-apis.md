@@ -4,13 +4,61 @@ description: [!DNL Assets] APIs and developer reference content lets you manage 
 contentOwner: AG
 ---
 
-# [!DNL Assets] APIs and developer reference material {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] APIs and developer reference material {#assets-cloud-service-apis}
 
-The article contains reference material and resources for developers of [!DNL Assets] as a Cloud Service. It includes new upload method, API reference, and information about the support provided in post-processing workflows.
+The article contains recommendations, reference materials, and resources for developers of [!DNL Assets] as a [!DNL Cloud Service]. It includes new asset upload module, API reference, and information about the support provided in post-processing workflows.
+
+## [!DNL Experience Manager Assets] APIs and operations {#use-cases-and-apis}
+
+[!DNL Assets] as a [!DNL Cloud Service] provides several APIs to programmatically interact with digital assets. Each API supports specific use cases, as mentioned in the table below. The [!DNL Assets] user interface, [!DNL Experience Manager] desktop app and [!DNL Adobe Asset Link] support all or some of the operations.
+
+>[!CAUTION]
+>
+>Some APIs continue to exist but are not actively supported (denoted with an &times;) and must not be used.
+
+| Support level |         Description         |
+| ------------- | --------------------------- |
+| &#10003;      | Supported                   |
+| &times;       | Not supported. Do not use.  |
+| -             | Not available               |
+
+| Use case | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java APIs | [Asset compute service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Preview)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Original binary** |||||||
+| Create original    |&#10003;|&times;|-|&times;|&times;|-|
+| Read original      |-|&times;|&#10003;|&#10003;|&#10003;|-|
+| Update original    |&#10003;|&times;|&#10003;|&times;|&times; |-|
+| Delete original    |-|&#10003;|-|&#10003;|&#10003;|-|
+| Copy original      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Move original      |-|&#10003;|-|&#10003;|&#10003;|-|
+| **Metadata** |||||||
+| Create metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Read metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Update metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Delete metadata    |-|&#10003;|&#10003;|&#10003;|&#10003;|-|
+| Copy metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| Move metadata      |-|&#10003;|-|&#10003;|&#10003;|-|
+| **Content Fragments (CF)** |||||||
+| Create CF          |-|&#10003;|-|&#10003;|-|-|
+| Read CF            |-|&#10003;|-|&#10003;|-|&#10003;|
+| Update CF          |-|&#10003;|-|&#10003;|-|-|
+| Delete CF          |-|&#10003;|-|&#10003;|-|-|
+| Copy CF            |-|&#10003;|-|&#10003;|-|-|
+| Move CF            |-|&#10003;|-|&#10003;|-|-|
+| **Versions** |||||||
+| Create version     |&#10003;|&#10003;|-|-|-|-|
+| Read version       |-|&#10003;|-|-|-|-|
+| Delete version     |-|&#10003;|-|-|-|-|
+| **Folders** |||||||
+| Create folder      |&#10003;|&#10003;|-|&#10003;|-|-|
+| Read folder        |-|&#10003;|-|&#10003;|-|-|
+| Delete folder      |&#10003;|&#10003;|-|&#10003;|-|-|
+| Copy folder        |&#10003;|&#10003;|-|&#10003;|-|-|
+| Move folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 
 ## Asset upload {#asset-upload-technical}
 
-[!DNL Experience Manager] as a Cloud Service provides a new method to upload assets to the repository. Users can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
+[!DNL Experience Manager] as a [!DNL Cloud Service] provides a new method to upload assets to the repository. Users can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
 
 1. [Submit an HTTP request](#initiate-upload). It informs [!DNL Experience Manage]r deployment of your intent to upload a new binary.
 1. [POST the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
@@ -112,7 +160,7 @@ To learn more about the upload algorithms or to build your own upload scripts an
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-The new upload method is supported only for [!DNL Adobe Experience Manager] as a Cloud Service. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
+The new upload method is supported only for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
 
 * [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, like `AssetManager.createAsset(..)`
@@ -132,7 +180,7 @@ For post-processing workflow configuration, use the standard workflows with exte
 
 Customers upgrading from previous versions of [!DNL Experience Manager] can use asset microservices to process assets. The cloud-native asset microservices are much simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported.
 
-[!DNL Experience Manager] as a Cloud Service support the following workflow steps:
+[!DNL Experience Manager] as a [!DNL Cloud Service] support the following workflow steps:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -188,4 +236,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [The Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [The Experience Cloud as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

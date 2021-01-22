@@ -20,6 +20,7 @@ You can view and edit the metadata (properties) for content fragments:
 3. The **Basic** tab provides options that you can view or edit:
 
     * Thumbnail, for which you can **Upload Image**
+    * **Content Fragment Model** indicates the model used to create the current fragment
     * **Title**
     * **Description**
     * **Tags**

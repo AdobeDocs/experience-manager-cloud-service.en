@@ -1,6 +1,6 @@
 ---
 title: Linking URLs to your web application
-description: How to link URLs to your web application in dynamic media
+description: How to link URLs to your web application in Dynamic Media.
 ---
 
 # Linking URLs to your web application {#linking-urls-to-your-web-application}

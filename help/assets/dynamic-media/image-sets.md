@@ -1,6 +1,6 @@
 ---
 title: Image Sets
-description: Learn how to work with image sets in Dynamic Media
+description: Learn how to work with image sets in Dynamic Media.
 ---
 
 # Image Sets {#image-sets}
@@ -25,21 +25,23 @@ For example, suppose you want to present images of caps with different color bil
 
 To get you up and running quickly:
 
+1. Optional. [Create a batch set preset](/help/assets/dynamic-media/batch-set-presets-dm.md) and apply it to a new  folder where your spin set images will be uploaded.
+
+   A batch set preset can help you automate the creation of your image set. 
+
+   >[!IMPORTANT]
+   >
+   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+
 1. [Upload your primary source images for multiple views.](#uploading-assets-in-image-sets)
 
-   Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+   Upload the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
 1. [Create Image Sets.](#creating-image-sets)
 
    In Image Sets, users click thumbnail images in the Image Set Viewer.
 
    To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets]**. Then, add images and click **[!UICONTROL Save]**.
-
-   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-
-   >[!IMPORTANT]
-   >
-   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
 
@@ -72,9 +74,9 @@ To edit Image Sets, see [editing Image Sets.](#editing-image-sets) In addition, 
 
 If you have issues creating sets, see Images and Sets in [Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
-## Uploading Assets in Image Sets {#uploading-assets-in-image-sets}
+## Uploading assets for Image Sets {#uploading-assets-in-image-sets}
 
-Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
+Start by uploading the image assets for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
 
 Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
@@ -103,7 +105,7 @@ You can create Image Sets through the user interface or via the API. This sectio
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md). 
 >**Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
 When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after they have been added.
@@ -160,7 +162,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 ## Viewing Image Sets {#viewing-image-sets}
 
-You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 >[!IMPORTANT]
 >

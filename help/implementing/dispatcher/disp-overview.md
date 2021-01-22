@@ -10,12 +10,7 @@ description: Dispatcher in the Cloud
 This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For additional information about Dispatcher, see the [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
->
 >Windows users will need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
-
->[!WARNING]
->
->Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility.
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -25,7 +20,7 @@ The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and prov
 * Tooling for customers to validate that the dispatcher configuration includes only AEM as a Cloud Service supported directives.        Additionally, the tooling also validates that the syntax is correct so apache can start successfully.
 * A Docker image that brings up the dispatcher locally.
 
-## Downloading and extracting the Tools {#extracting-the-sdk}
+## Downloading and Extracting the Tools {#extracting-the-sdk}
 
 The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new dispatcher Tools version, can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
 
@@ -382,6 +377,8 @@ The script does the following:
 
 1. It runs the validator from the previous section to ensure that only the supported directives are included. If the configuration isn't valid, the script will fail.
 2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment
+
+During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
 
 ## Testing your Apache and Dispatcher configuration locally {#testing-apache-and-dispatcher-configuration-locally}
 

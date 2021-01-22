@@ -26,9 +26,9 @@ For full-text searches, add the `Fulltext` predicate to the form. Use the Proper
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
 
-   ![Press and move a predicate to customize the search filters](assets/drag_predicate.png)
+   ![Select and move a predicate to customize the search filters](assets/drag_predicate.png)
 
-   *Figure: Press and move a predicate to customize the search filters.*
+   *Figure: Select and move a predicate to customize the search filters.*
 
 1. In the Settings tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate. The header label in the Settings tab identifies the type of the selected predicate.
 

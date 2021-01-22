@@ -87,7 +87,7 @@ The header is always present at the top of the screen. While most options in the
 
 * [Search](/help/sites-cloud/authoring/getting-started/search.md)
 
-  ![Search button](/help/sites-cloud/authoring/assets/search-button.png)
+  ![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
 
   You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
 

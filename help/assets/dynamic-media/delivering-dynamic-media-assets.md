@@ -1,11 +1,11 @@
 ---
 title: Delivering Dynamic Media Assets
-description: Learn how to deliver dynamic media assets
+description: Learn how to deliver Dynamic Media assets.
 ---
 
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
 
-How you can deliver your dynamic media assets - both video and images - depends on how your website is implemented.
+How you can deliver your Dynamic Media assets - both video and images - depends on how your website is implemented.
 
 With Dynamic Media you have several options:
 

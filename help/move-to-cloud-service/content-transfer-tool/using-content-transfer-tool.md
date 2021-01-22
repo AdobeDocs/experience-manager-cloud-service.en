@@ -19,6 +19,8 @@ Follow the section below to understand the important considerations while runnin
 
 * To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
 
+* The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you will have to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
+
 * Currently the default MongoDB size for a AEM as a Cloud Service Author instance is 32GB. It is recommended that for segment store size of greater than 20GB, you should submit a Support ticket to increase the MongoDB size.
 
 * The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The *Extraction* process copies the entire `/home` into the migration set and the *Ingestion* process copies all users and groups referenced in the migrated content ACLs.
@@ -155,6 +157,9 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
 1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. For demonstration purposes, the option **Ingest content to Author instance** is disabled. It is possible to ingest content to Author and Publish at the same time.  
 
+   >[!IMPORTANT]
+   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance.
+
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
 1. Once the ingestion is complete, the status in **PUBLISH INGESTION** field updates to **FINISHED**.
@@ -245,12 +250,6 @@ The files created in the *OUT_DIR* specified above for consistency can then be c
 ### UI Behavior {#ui-behavior}
 
 As a user, you might see the following behavioral changes in the User Interface (UI) for Content Transfer Tool:
-
-* User creates a migration set for an author URL (Development/Stage/Production) and successfully performs extraction and ingestion.
-
-* User then creates a new migration set for the same Author URL and performs extraction and ingestion on the new migration set. The UI shows that the ingestion status of the first migration set changes to **FAILED** and no logs are available.
-
-* This does not mean that the ingestion for the first migration set failed. This behavior is seen because when a new ingestion job is started, it deletes the previous ingestion job. Hence, the changes status on the first migration set should be ignored.
 
 * The icons in the Content Transfer Tool UI may appear to be different from the screenshots shown in this guide or may not show up at all depending on the version of the source AEM instance.
 

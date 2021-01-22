@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
 
-Adobe Experience Manager as a Cloud Service provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
+Adobe Experience Manager as a [!DNL Cloud Service] provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
 
 * Scalable architecture that allows for seamless processing for resource-intensive operations.
 * Efficient indexing and text extractions that does not impact the performance of your Experience Manager environments.
@@ -17,7 +17,7 @@ Adobe Experience Manager as a Cloud Service provides a cloud-native method to le
 * Native Adobe file processing services are used where applicable, providing high-fidelity output and [efficient handling of Adobe proprietary formats](file-format-support.md).
 * Ability to configure post-processing workflow to add user-specific actions and integrations.
 
-Asset microservices help to avoid the need for third-party rendering tools and methods (like ImageMagick and FFmpeg transcoding) and simplify configurations, while providing out-of-the-box functionality for common file types.
+Asset microservices help to avoid the need for third-party rendering tools and methods (like ImageMagick and FFmpeg transcoding) and simplify configurations, while providing basic functionality for common file types by default.
 
 ## High-level architecture {#asset-microservices-architecture}
 
@@ -43,14 +43,14 @@ This is the basic flow of asset ingestion and processing. If configured, Experie
 
 The ingestion and processing flow are key concepts of the asset microservices architecture for Experience Manager.
 
-* **Direct binary access**: Assets are transported (and uploaded) to the Cloud Binary Store once configured for Experience Manager environments, and then AEM, asset microservices, and finally clients get direct access to them to carry out their work. This minimizes the load on networks and duplication of binaries stored
-* **Externalized processing**: Processing of assets is done outside of AEM environment, and saves its resources (CPU, memory) for providing key Digital Asset Management functionalities and supporting interactive work with the system for end users
+* **Direct binary access**: Assets are transported (and uploaded) to the Cloud Binary Store once configured for Experience Manager environments, and then [!DNL Experience Manager], asset microservices, and finally clients get direct access to them to carry out their work. This minimizes the load on networks and duplication of binaries stored
+* **Externalized processing**: Processing of assets is done outside of [!DNL Experience Manager] environment, and saves its resources (CPU, memory) for providing key Digital Asset Management functionalities and supporting interactive work with the system for end users
 
 ## Asset upload with direct binary access {#asset-upload-with-direct-binary-access}
 
-Experience Manager clients, which are a part of product offering, all support upload with direct binary access by default. These include upload using web interface, Adobe Asset Link, and AEM desktop app.
+Experience Manager clients, which are a part of product offering, all support upload with direct binary access by default. These include upload using web interface, Adobe Asset Link, and [!DNL Experience Manager] desktop app.
 
-You can use custom upload tools, which work directly with AEM HTTP APIs. You can use these APIs directly, or use and extend the following open-source projects that implement the upload protocol:
+You can use custom upload tools, which work directly with [!DNL Experience Manager] HTTP APIs. You can use these APIs directly, or use and extend the following open-source projects that implement the upload protocol:
 
 * [Open-source upload library](https://github.com/adobe/aem-upload)
 * [Open-source command-line tool](https://github.com/adobe/aio-cli-plugin-aem)
@@ -61,7 +61,7 @@ For more information, see [upload assets](add-assets.md).
 
 While most customers should get all their asset processing needs from the configurable asset microservices, some might need additional asset processing. This is especially true if assets need to be processed based on information coming from other systems via integrations. In cases like that, custom post-processing workflows can be used.
 
-Post-processing workflows are regular AEM workflow models, created and managed in AEM Workflow editor. Customers can configure the workflows to carry out additional processing steps on an asset, including using available out-of-the-box workflow steps and custom workflows.
+Post-processing workflows are regular [!DNL Experience Manager] workflow models, created and managed in [!DNL Experience Manager] Workflow editor. Customers can configure the workflows to carry out additional processing steps on an asset, including using available out-of-the-box workflow steps and custom workflows.
 
 Adobe Experience Manager can be configured to automatically trigger the post-processing workflows after asset processing completes.
 

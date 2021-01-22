@@ -41,9 +41,11 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
    ![Select report type](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
    >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
    >[!NOTE]
    >
@@ -132,6 +134,8 @@ To add custom columns to these reports, follow these steps:
 
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
 
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
+
 ## Configure purging service {#configure-purging-service}
 
 To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
@@ -140,3 +144,8 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
 1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
 1. Save the changes.
+-->
+
+## Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
+
+* If the Disk Usage Report does not generate and you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and then generate the report again.

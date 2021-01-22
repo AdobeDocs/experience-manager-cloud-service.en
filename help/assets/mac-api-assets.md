@@ -21,7 +21,7 @@ After the [!UICONTROL Off Time], an asset and its renditions are not available v
 
 >[!NOTE]
 >
->All the API calls related to uploading or updating assets or binaries in general (like renditions) is depreated for AEM as a Cloud Service deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
+>All the API calls related to uploading or updating assets or binaries in general (like renditions) is deprecated for AEM as a [!DNL Cloud Service] deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
 
 ## Content Fragments {#content-fragments}
 

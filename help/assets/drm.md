@@ -1,6 +1,6 @@
 ---
 title: Digital Rights Management in [!DNL Assets]
-description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a Cloud Service.
+description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 ---
 
@@ -30,7 +30,7 @@ You can search for expired assets, including expired subassets in the Search pan
 
 1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
 
-1. With the cursor in the Omnisearch box, press the Enter key to display the search results page.
+1. With the cursor in the Omnisearch box, select the `Enter` key to display the search results page.
 
 1. Click the GlobalNav icon to display the Search panel.
 
@@ -88,7 +88,7 @@ The [!DNL Assets] console can display various states for assets. Depending on th
 
 1. To search for assets based on their status, click **[!UICONTROL Search]** to display the Omnisearch bar.
 
-1. Press return and click [!DNL Experience Manager] to display the search panel.
+1. Select `Return` and click [!DNL Experience Manager] to display the search panel.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
 1. Click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.

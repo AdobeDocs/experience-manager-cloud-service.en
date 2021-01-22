@@ -61,9 +61,9 @@ With the default configuration, only the most basic processing profile is config
 
 The processing profile can include a FPO (For Placement Only) rendition. See [!DNL Adobe Asset Link] [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. For more information, see [Adobe Asset Link complete documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
-### Create standard profile {#create-standard-profile}
+### Create a standard profile {#create-standard-profile}
 
-To create standard processing profile, follow these steps:
+To create a standard processing profile, follow these steps:
 
 1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Click **[!UICONTROL Create]**.
 1. Provide a name that helps you uniquely identify the profile when applying to a folder.
@@ -101,7 +101,7 @@ The [!DNL Asset Compute Service] supports a variety of use cases such as default
 
 It can transform image, video, document, and other file formats into different renditions including thumbnails, extracted text and metadata, and archives.
 
-Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] can call these custom applications from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
+Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) for the supported use cases. [!DNL Experience Manager] can call these custom applications from the user interface by using custom profiles that administrators configure. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
 
 * Use [!DNL Adobe Photoshop]'s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) and save the result as rendition.
 * Call third-party systems to update data, for example, a PIM system.
@@ -116,7 +116,7 @@ Developers can use the [!DNL Asset Compute Service] to [create custom applicatio
 
 To create a custom profile, following these steps:
 
-1. Administrators access **[!UICONTROL Tools > Assets > Processing Profiles]**. Click **[!UICONTROL Create]**.
+1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Click **[!UICONTROL Create]**.
 1. Click **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide the desired file name of the rendition.
 1. Provide the following information.
 
@@ -138,6 +138,8 @@ The custom applications are headless [Project Firefly](https://github.com/AdobeD
 To illustrate custom profile's usage, let's consider a use case to apply some custom text to campaign images. You can create a processing profile that leverages the Photoshop API to edit the images.
 
 Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then calls Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
@@ -173,7 +175,7 @@ To verify that assets are processed, preview the generated renditions in the [!U
 
 For situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
 
-Post-processing workflows, if configured, are automatically executed by AEM after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them. The examples include:
+Post-processing workflows, if configured, are automatically executed by [!DNL Experience Manager] after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them. The examples include:
 
 * Custom workflow steps to process assets.
 * Integrations to add metadata or properties to assets from external systems, for example, product or process information.
@@ -188,7 +190,7 @@ Adding a post-processing workflow configuration to Experience Manager is compris
 
 ### Create post-processing workflow models {#create-post-processing-workflow-models}
 
-Post-processing workflow models are regular AEM workflow models. Create different models if you need different processing for different repository locations or asset types.
+Post-processing workflow models are regular [!DNL Experience Manager] workflow models. Create different models if you need different processing for different repository locations or asset types.
 
 Processing steps should be added based on needs. You can use any supported steps available, as well as any custom-implemented workflow steps.
 
@@ -206,7 +208,7 @@ The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflo
 >[!NOTE]
 >
 >Configuration of the Custom Workflow Runner is a configuration of an OSGi service. See [deploy to Experience Manager](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
->OSGi web console, unlike in on-premise and managed services deployments of AEM, is not directly available in the cloud service deployments.
+>OSGi web console, unlike in on-premise and managed services deployments of [!DNL Experience Manager], is not directly available in the cloud service deployments.
 
 For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
 
@@ -214,6 +216,7 @@ For details about which standard workflow step can be used in the post-processin
 
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
 * Currently, the support is limited to generating renditions. Generating new asset is not supported.
+* Currently, the file size limit for metadata extraction is approximately 10 GB. When uploading very large assets, sometimes metadata extraction operation fails.
 
 >[!MORELIKETHIS]
 >
