@@ -32,8 +32,9 @@ Information architects will need to design queries for their channel endpoints i
 1. Assuming that the model we created was called `person` with fields `firstName`, `lastName`, and `position`, we can build a simple query to retrieve the content of our Content Fragment.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
