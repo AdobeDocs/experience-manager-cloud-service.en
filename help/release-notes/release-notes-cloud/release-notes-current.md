@@ -58,6 +58,19 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 * New feature added to [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) that creates a separate package `ui.config` to contain all OSGi configurations. 
 
+## AEM as a Cloud Service Foundation {aem-as-a-cloud-service-foundation}
+
+### SDK Build Analyzers {#sdk-build-analyzers}
+
+The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager.
+
+Two new analyzers have been added for this release:
+
+* repoinit analyzer
+* bundle-nativecode
+
+For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
+
 ### Bug Fixes {#crt-bug-fixes}
 
 * Several bug fixes done on the AEM Dispatcher Converter and Repository Modernizer tools. Please refer to [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) and [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
