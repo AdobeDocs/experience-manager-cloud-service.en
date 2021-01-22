@@ -36,7 +36,7 @@ To use HTTP/2, you must meet the following requirements:
 * Use the Adobe-bundled CDN (content delivery network) as part of your Dynamic Media Classic license.
 * Use a dedicated domain (that is, `images.company.com` or `mycompany.scene7.com`), not a generic Dynamic Media domain (that is, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`).
 
-  To find your domains, [log into your instance of Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
+  To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
   Click **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labelled **Published Server Name**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
@@ -49,7 +49,7 @@ You must [use the Admin Console to create a support case](https://helpx.adobe.co
      * Primary contact name, email, and phone number.
      * All domains to be transitioned over to HTTP2. That is, `images.company.com` or `mycompany.scene7.com`.
 
-     To find your domains, [log into your instance of Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
+     To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
      Click **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name]**.
 
@@ -57,7 +57,7 @@ You must [use the Admin Console to create a support case](https://helpx.adobe.co
      * Verify you are using the CDN through Adobe and not managed with a direct relationship.
      * Verify you are using a dedicated domain. That is, `images.company.com` or `mycompany.scene7.com`, not a generic Dynamic Media domain such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-     To find your domains, [log into your instance of Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
+     To find your domains, Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
      Click **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
