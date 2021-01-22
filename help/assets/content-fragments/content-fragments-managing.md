@@ -25,8 +25,8 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 The method of creating a content fragment is:
 
 1. Navigate to the **Assets** folder where you want to create the fragment.
-2. Select **Create**, then **Content Fragment** to open the wizard.
-3. The first step of the wizard requires you to specify the basis of the new fragment.
+1. Select **Create**, then **Content Fragment** to open the wizard.
+1. The first step of the wizard requires you to specify the basis of the new fragment.
 
       * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Adventure** model
 
@@ -36,7 +36,7 @@ The method of creating a content fragment is:
 
    ![fragment basis](assets/cfm-managing-01.png)
 
-4. In the **Properties** step specify:
+1. In the **Properties** step specify:
 
     * **Basic**
 
@@ -58,7 +58,10 @@ The method of creating a content fragment is:
 
           Mandatory; will be automatically derived from the title, but can be updated.
 
-5. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
+1. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
+
+   >[!NOTE]
+   >In **List** mode of the console you can update the **View Settings** to enable the **Content Fragment Model** column.
 
 ## Actions for a Content Fragment in the Assets Console {#actions-for-a-content-fragment-assets-console}
 
