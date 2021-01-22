@@ -22,7 +22,7 @@ An information architect would perform these tasks only sporadically as new mode
 
    ![The models folder](../assets/models-folder.png)
 1. Tap or click **Create**.
-1. Provide a **Model Title**, **Tags** and **Description**. You can also select/deselect **Enable model**.
+1. Provide a **Model Title**, **Tags** and **Description**. You can also select/deselect **Enable model** for the model to be immediately enabled upon creation.
 
    ![Create a model](../assets/models-create.png)
 1. In the confirmation window, tap or click **Open** to configure your model.
