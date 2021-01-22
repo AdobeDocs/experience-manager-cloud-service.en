@@ -58,7 +58,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 * New feature added to [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) that creates a separate package `ui.config` to contain all OSGi configurations. 
 
-## AEM as a Cloud Service Foundation {aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
