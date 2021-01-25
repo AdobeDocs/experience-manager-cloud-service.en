@@ -15,7 +15,7 @@ The server-to-server flow is described below, along with a simplified flow for d
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-A user with the admin role can generate a AEM as a Cloud Service credential, which should be installed on the server and should be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service.
+A user with an IMS org administrator role can generate an AEM as a Cloud Service credential, which can subsequently be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service.
 
 The server-to-server flow involves the following steps:
 
@@ -23,10 +23,11 @@ The server-to-server flow involves the following steps:
 * Install the AEM as a Cloud Service credentials on a non AEM server making calls to AEM
 * Generate a JWT token and exchange that token for an access token using Adobe's IMS APIs
 * Calling the AEM API with the access token as a Bearer Authentication token
+* Set appropriate permissions for the technical account user in the AEM environment
 
 ### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Users who have the admin role for an IMS organization will see the integrations tab in the Developer Console for a given environment, as well as two buttons. Clicking the **Get Service Credentials** button will generate the service credentials json, which will contain all the information required for the non AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
+Users with access to the AEM as a Cloud Service developer console will see the integrations tab in the Developer Console for a given environment, as well as two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Get Service Credentials** button to display the service credentials json, which will contain all the information required for the non AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
 ![JWT Generation](assets/JWTtoken3.png)
 
@@ -52,6 +53,10 @@ The output will be similar to the following:
 }
 ```
 
+>[!IMPORTANT]
+>
+>An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager) must first access the Developer Console and click the **Get Service Credentials** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role.
+
 ### Install the AEM Service Credentials on a Non AEM Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
 The non-AEM application making calls to AEM should be able to access the AEM as a Cloud Service credentials, treating it as a secret.
@@ -60,7 +65,7 @@ The non-AEM application making calls to AEM should be able to access the AEM as 
 
 Use the credentials to create a JWT token in a call to Adobe's IMS service in order to retrieve an access token, which is valid for 24 hours.
 
-The AEM-CS Service Credentials may be exchanged for an access token using client libraries designed for this purpose. The client libraries are available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains more detailed guidance and latest information.
+The AEM CS Service Credentials may be exchanged for an access token using client libraries designed for this purpose. The client libraries are available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains more detailed guidance and latest information.
 
 ```
 /*jshint node:true */
@@ -82,7 +87,7 @@ exchange(config).then(accessToken => {
 
 The same exchange can be performed in any language capable of generating a signed JWT Token with the correct format and calling the IMS Token Exchange APIs.
 
-The access token will define when it expires, which is typically 12h. There is sample code in the git repository to manage an access token and refresh it before it expires.
+The access token will define when it expires, which is typically 12 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
@@ -92,13 +97,23 @@ Make the appropriate server-to-server API calls to an AEM as a Cloud Service env
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
+### Set the Appropriate Permissions for the Technical Account User in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
+
+Once the technical account user is created in AEM (this occurs after the first request with the corresponding access token), the technical account user must be properly permissioned **in** AEM.
+
+Note that by default, on the AEM Author service, the technical account user is added to the Contributors user group which provides read access AEM.
+
+This technical account user in AEM can be further privisioned with permissions using the usual methods.
+
 ## Developer Flow {#developer-flow}
 
-Developers will likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, since developers do not necessarily have admin role access to the AEM as a Cloud Service dev environment, we cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Thus, we provide a mechanism for a developer to generate an access token directly that can be used in requests to AEM as a Cloud Service environments which they have access to. See the [Developer Guidelines documentation](/help/implementing/developing/introduction/development-guidelines.md) for information about the required permissions to use the AEM as a Cloud Service developer console.
+Developers will likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, since developers do not necessarily have IMS admin role permissions, we cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Thus, we provide a mechanism for a developer to generate an access token directly that can be used in requests to AEM as a Cloud Service environments which they have access to. 
+
+See the [Developer Guidelines documentation](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) for information about the required permissions to use the AEM as a Cloud Service developer console.
 
 >[!NOTE]
 >
->The token is valid for 24 hours after which time it must be regenerated using the same method.
+>The local development access token is valid for 24 hours after which time it must be regenerated using the same method.
 
 Developers may use this token to make calls from their non-AEM test application to an AEM as a Cloud Service environment. Typically, the developer will use this token with the non-AEM application on their own laptop. Also, the AEM as a Cloud is typically a non-production environment.
 
