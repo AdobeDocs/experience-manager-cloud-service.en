@@ -14,8 +14,17 @@ This page also describes how dispatcher cache is invalidated, as well as how cac
 
 ### HTML/Text {#html-text}
 
-* by default, cached by the browser for five minutes, based on the cache-control header emitted by the apache layer. The CDN also respects this value.
-* can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools. 
+* by default, cached by the browser for five minutes, based on the `cache-control` header emitted by the apache layer. The CDN also respects this value.
+* the default HTML/Text caching setting can be disabled by defining the `DISABLE_DEFAULT_CACHING` variable in `global.vars`:
+
+```
+Define DISABLE_DEFAULT_CACHING
+
+```
+
+This can be useful, for example, when your business logic requires fine tuning of the age header (with a value based on calendar day) since by default the age header is set to 0. That said, **please exercise caution when turning off default caching.**
+
+* can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools.
 * can be overridden on a finer grained level by the following apache mod_headers directives:
 
    ```
