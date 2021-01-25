@@ -15,11 +15,11 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 There are a few exceptional cases to be considered. The following specific cases will be logged and the user or group in question will not be mapped:
 
-   1. If a user has no email address in the `profile/email` field of their jcr node.
+1. If a user has no email address in the `profile/email` field of their jcr node.
 
-   1. If a given email is not found on the IMS system for the Organization ID used (or if the IMS ID cannot be retrieved for another reason).
+1. If a given email is not found on the IMS system for the Organization ID used (or if the IMS ID cannot be retrieved for another reason).
 
-   1. If the user is currently disabled it is treated the same as if it were not disabled.  It will be mapped and migrated as normal, and will remain disabled on the cloud instance.
+1. If the user is currently disabled it is treated the same as if it were not disabled.  It will be mapped and migrated as normal, and will remain disabled on the cloud instance.
 
 ## Using the User Mapping Tool {#using-user-mapping-tool}
 
