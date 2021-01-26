@@ -1,22 +1,47 @@
 ---
-title: Auto-tag images with AI-generated tags
-description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
+title: Auto-tag assets with AI-generated tags
+description: Tag assets using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] service.
 contentOwner: AG
 ---
 
-# Train Smart Content Service and auto-tag your images {#train-service-tag-assets}
+# Add smart tags to your assets for faster searches {#smart-tag-assets-for-faster-search}
 
-Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches.
+Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved in searches.
 
 Compared to natural language vocabularies, tagging based on business taxonomy helps align the assets with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
 
-In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
+In the background, the Smart Tags uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-To use smart tagging, complete the following tasks:
+## Supported asset types {#smart-tags-supported-file-formats}
+
+Smart Tags are applied only to those supported file types that generate renditions in JPG and PNG format. The functionality is supported for the following types of assets:
+
+|Images (MIME types) | Text-based assets (file formats) | Video assets (file formats and codecs) |
+|----|-----|------|
+| image/jpeg | TXT | MP4 (H264/AVC) |
+| image/tiff | RTF | MKV (H264/AVC) |
+| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | XML | AVI (indeo4) |
+| image/gif | JSON | FLV (H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV (WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] auto-adds the Smart Tags to the text-based assets and to videos by default. To auto-add Smart Tags to images, complete the following tasks.
 
 * [Integrate [!DNL Adobe Experience Manager] with Adobe Developer Console](#integrate-aem-with-aio).
 * [Understand tag models and guidelines](#understand-tag-models-guidelines).
@@ -24,7 +49,9 @@ To use smart tagging, complete the following tasks:
 * [Tag your digital assets](#tag-assets).
 * [Manage the tags and searches](#manage-smart-tags-and-searches).
 
-Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
+>[!TIP]
+>
+>Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -85,7 +112,7 @@ The images in your training set should conform to the following guidelines:
   * a tag model that includes car models released in 2019 and 2020.
   * multiple tag models that include the same few car models.
 
-**Images used to train**: You can use the same images to train different tag models. However, the do not associate an image with more than one tag in a tag model. Hence, it is possible to tag the same image with different tags belonging to different tag models.
+**Images used to train**: You can use the same images to train different tag models. However, do not associate an image with more than one tag in a tag model. It is possible to tag the same image with different tags belonging to different tag models.
 
 You cannot undo the training. The above guidelines should help you choose good images to train.
 
@@ -118,7 +145,7 @@ To check whether the Smart Tags service is trained on your tags in the training 
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
 1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, click **[!UICONTROL View]** from the toolbar.
 1. Review the details of the report. The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag. If you do not see your tags in this report, run the training workflow again for these tags.Tags
-1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as an [!DNL Microsoft Excel] spreadsheet.
+1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as a [!DNL Microsoft Excel] spreadsheet.
 
 ## Tag assets {#tag-assets}
 
@@ -147,15 +174,17 @@ After you have trained the Smart Tags service, you can trigger the tagging workf
    ![start_workflow](assets/start_workflow.png)
 
 1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether your your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds 6 months.
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds 6 months.
 
 ### Tag uploaded assets {#tag-uploaded-assets}
 
 Experience Manager can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step of to smart tag assets. See [how to enable smart tagging for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
@@ -183,7 +212,7 @@ To moderate the smart tags of your assets:
 
 ### Understand AEM search results with smart tags {#understandsearch}
 
-By default, AEM search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an additional `OR` clause to find any of the search terms in the applies smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
+By default, AEM search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an additional `OR` clause to find any of the search terms in the applied smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
 
 * assets with `woman` and `running` keywords in the metadata.
 
@@ -202,6 +231,8 @@ Enhanced smart tags are based on learning models of brand images and their tags.
 * Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
 * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
 * Tagging is supported in the languages that Experience Manager supports. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags.
 

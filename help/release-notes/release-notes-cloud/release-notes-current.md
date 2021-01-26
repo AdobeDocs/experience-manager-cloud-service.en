@@ -18,13 +18,7 @@ The following release (2021.1.0) will be on January 28, 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* Integration with [!DNL Adobe InDesign Server] is now available for [!DNL Experience Manager] as a [!DNL Cloud Service]. It provides automation to process [!DNL Adobe InDesign] files using [!DNL Adobe InDesign Server] scripting and lets users use [!DNL Assets] templates user interface to create brochures or ads. Only [!DNL InDesign Server] hosted by [!DNL Adobe Managed Services] is supported for [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
-
-* [!DNL Experience Manager] is enhanced to track and display asset references when an asset is used in a remote [!DNL Experience Manager Sites] deployment using the Connected Assets functionality. A new [!UICONTROL References] tab in asset's [!UICONTROL Properties] page now lists local and remote references of the asset. The references let DAM users track asset usage in [!DNL Sites] pages and in compound assets in [!DNL Assets]. See [configure and use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
-
-* [!DNL Dynamic Media] capabilities are now accessible via [!DNL Sites] image-based Core Components. Authors can quickly configure components to use Image Presets, Smart Crop, and Image Modifiers when creating webpages. See [Core Components 2.13.0 release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
-
-* [!DNL Experience Manager] desktop app lets users upload files and folders by dragging the files from Windows Explorer or Mac Finder on the desktop app interface. See [add assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* [!DNL Experience Manager] as a [!DNL Cloud Service] extends the Smart Tags functionality to support the identification of keywords and entities in text-based assets. The text is identified, indexed, and is made available as metadata to improve the search experience without the need for any configuration. See [Smart Tags](/help/assets/smart-tags.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
