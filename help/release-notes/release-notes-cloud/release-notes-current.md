@@ -62,6 +62,17 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 * Server-to-server authenticated API calls - Generate the appropriate access tokens to make authenticated server-to-server API calls between your external applications and AEM as a Cloud Service environments. [Learn more](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
 
+### SDK Build Analyzers {#sdk-build-analyzers}
+
+The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager.
+
+Two new analyzers have been added for this release:
+
+* repoinit analyzer
+* bundle-nativecode
+
+For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
+
 ## Cloud Transition Tools {#code-transition-tools}
 
 ### Release Date {#release-date-ctt}
