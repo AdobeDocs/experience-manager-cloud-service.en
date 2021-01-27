@@ -46,7 +46,11 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
    >[!NOTE]
    >If you skip this step, users and groups mapping will be skipped during Extraction phase.
 
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    Populate the fields in User Management API Configuration as described below:
+
+    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **Org ID**:  Enter the IMS Org ID for the organization the users are being migrated.  
 
@@ -60,12 +64,17 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
       >[!NOTE]
       >The Access Token expires every 24 hours and a new one needs to be created. To create a new token, go back into [Adobe Developer Console](https://console.adobe.io), choose your project, click on User Management API and paste the same private key into the box.
 
-1. After entering the above information, click on Save.
+1. After entering the above information, click on **Save**.
 
-1. Create a Migration Set by clicking on Create Migration Set and populating the fields and then clicking on Save. For more details, refer to Running the Content Transfer Tool.
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. Create a Migration Set by clicking on **Create Migration Set** and populating the fields and then clicking on **Save**. For more details, refer to Running the Content Transfer Tool.
 
    >[!NOTE]
    >The toggle switch to include Mapping Users from IMS Users and Groups is ON by default. With this setting, when Extraction is performed on this migration set, the User Mapping Tool will run as part of the Extraction phase. This is the recommended way to run the Extraction phase of the Content Transfer Tool. If this toggle is turned OFF and/or User Mapping Config is not created, users and groups mapping will be skipped during the Extraction phase.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. To run Extraction phase, refer to [Running the Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
 
