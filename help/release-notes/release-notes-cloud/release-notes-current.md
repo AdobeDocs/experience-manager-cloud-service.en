@@ -62,6 +62,12 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 * Several bug fixes done on the AEM Dispatcher Converter and Repository Modernizer tools. Please refer to [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) and [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
+## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
+
+### What is New {#what-is-new-foundation}
+
+* Server-to-server authenticated API calls - Generate the appropriate access tokens to make authenticated server-to-server API calls between your external applications and AEM as a Cloud Service environments. [Learn more](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
+
 ## Cloud Transition Tools {#code-transition-tools}
 
 ### Release Date {#release-date-ctt}
