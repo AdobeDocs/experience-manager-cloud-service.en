@@ -28,23 +28,23 @@ The User Mapping Tool uses an API that allows it to lookup IMS users by email an
 Follow these steps to set this up:
 
 1. Navigate to [Adobe Developer Console](https://console.adobe.io) using your Adobe ID.
-1. Create a new project or open an existing project
-1. Add an API
-1. Choose User Management API
-1. Create a JWT credential
-1. Generate a key pair, or Upload a public key (rsa is no good)
+1. Create a new project or open an existing project.
+1. Add an API.
+1. Choose User Management API.
+1. Create a JWT credential.
+1. Generate a key pair, or Upload a public key (rsa is no good).
 1. Generate an access token (or JWT token or bearer token).
-1. Save all this information (Client ID, Client Secret, Technical Account ID, Technical Account Email, Organization ID, Access Token) in a safe place.
+1. Save all this information such as **Client ID**, **Client Secret**, **Technical Account ID**, **Technical Account Email**, **Organization ID**, and **Access Token** safely.
 
 ## User Interface {#user-interface}
 
-The User Mapping Tool is integrated into the Content Transfer Tool. You can download the Content Transfer Tool from Software Distribution Portal. For more details on the latest version, refer to Release Notes.
+The User Mapping Tool is integrated into the Content Transfer Tool. You can download the Content Transfer Tool from Software Distribution Portal. For more details on the latest version, refer to the [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Select Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Transfer**.
 1. Click on **Create User Mapping Config**.
 
    >[!NOTE]
-   >If you skip this step, users and groups mapping will be skipped during Extraction phase.
+   >If you skip this step, users and groups mapping will be skipped during the Extraction phase.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
 
