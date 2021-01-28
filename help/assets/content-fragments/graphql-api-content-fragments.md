@@ -113,7 +113,7 @@ To enable the endpoint for GraphQL for AEM you need to:
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
 <!-- link needs to be updated -->
-To have access to GraphQL servlets in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphiQL for AEM Endpoint Enablement package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
+To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphiQL for AEM Endpoint Enablement package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
 
 <!-- does it include source code? -->
 
