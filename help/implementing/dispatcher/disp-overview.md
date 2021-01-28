@@ -376,7 +376,8 @@ Phase 2 finished
 The script does the following:
 
 1. It runs the validator from the previous section to ensure that only the supported directives are included. If the configuration isn't valid, the script will fail.
-2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment
+2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
+3. Checks that the subset of the dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](#file-structure), has not been modified. This is a new check, introduced with AEM SDK version v2021.1.4738 that also includes Dispatcher Tools version 2.0.36. Before this update, customers might have incorrectly assumed that any local SDK modifications of those immutable files would also be applied to the Cloud environment.
 
 During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
 
