@@ -714,7 +714,6 @@ See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/a
 
 <!-- commented out for the January release (at minimum) -->
 
-<!--
 ## Endpoint Configuration {#endpoint-configuration}
 
 The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
@@ -768,7 +767,6 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
    * Name: `endpoint`
    * Primary Type: `nt:unstructured`
    * sling:resourceType: `graphql-enablement/components/endpoint`
--->
 
 ## FAQs {#faqs}
 
