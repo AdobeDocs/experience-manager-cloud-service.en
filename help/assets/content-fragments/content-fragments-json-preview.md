@@ -7,9 +7,9 @@ description: Previewing JSON representation of your fragment.
 
 >[!CAUTION]
 >
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
+>The AEM GraphQL API for Content Fragments Delivery is available on request. 
 >
->The related documentation is already available for preview purposes.
+>Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
 
 When developing the models for Content Fragments, you might want to view sample JSON output for a content fragment, as based on a model. For example, to get an idea of how the final output will look. This could be helpful when validating the model JSON structure, maybe with default sample content per data type.
 

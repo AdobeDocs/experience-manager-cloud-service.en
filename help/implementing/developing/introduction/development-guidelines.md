@@ -215,8 +215,8 @@ AEM as a Cloud Service requires outbound mail to be encrypted. The sections belo
 By default, outbound email is disabled. To activate it, submit a support ticket with:
 
 1. The fully qualified domain name for the mail server (for example `smtp.sendgrid.net`)
-1. The port to be used. It should be port 465 if supported by the mail server, otherwise port 587 Note that port 587 can only be used if the mail server requires and enforces TLS on that port
-1. The program id and environment id for the environments they would like to mail out of
+1. The port to be used. It should be port 465 if supported by the mail server, otherwise port 587. Note that port 587 can only be used if the mail server requires and enforces TLS on that port
+1. The program ID and environment ID for the environments they would like to mail out of
 1. Whether SMTP access is needed on author, publish, or both.
 
 ### Sending Emails {#sending-emails}
@@ -233,7 +233,7 @@ AEM CS requires mail to be sent out through port 465. If a mail server does not 
 
 E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-See [AEM 6.5 documentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM CS, the following adjustments must be made to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+See [AEM 6.5 documentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, the following adjustments must be made to the `com.day.cq.mailer.DefaultMailService OSGI` service:
 
 If port 465 has been requested:
 

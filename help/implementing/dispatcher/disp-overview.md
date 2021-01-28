@@ -188,16 +188,16 @@ The sections below describe how to validate the configuration locally so it can 
 
 The validation tool is available in the SDK at `bin/validator` as a Mac OS, Linux, or Windows binary, allowing customers to run the same validation that Cloud Manager will perform while building and deploying a release.
 
-It is invoked as: `validator full [-d folder] [-w whitelist] zip-file | src folder`
+It is invoked as: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
 The tool validates that the dispatcher configuration is using the appropriate directives supported by AEM as a Cloud service by scanning all files with pattern `conf.d/enabled_vhosts/*.vhost`. The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
 
 ```
 
-$ validator whitelist
+$ validator allowlist
 Cloud manager validator 2.0.4
  
-Whitelisted directives:
+Allowlisted directives:
   <Directory>
   ...
   
@@ -244,7 +244,7 @@ When run against your maven artifact or your `dispatcher/src` subdirectory, it w
 
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
+2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
@@ -376,7 +376,8 @@ Phase 2 finished
 The script does the following:
 
 1. It runs the validator from the previous section to ensure that only the supported directives are included. If the configuration isn't valid, the script will fail.
-2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment
+2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
+3. Checks that the subset of the dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](#file-structure), has not been modified. This is a new check, introduced with AEM SDK version v2021.1.4738 that also includes Dispatcher Tools version 2.0.36. Before this update, customers might have incorrectly assumed that any local SDK modifications of those immutable files would also be applied to the Cloud environment.
 
 During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
 

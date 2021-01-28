@@ -5,21 +5,11 @@ description: Content Fragment Models are used to create content fragments with s
 
 # Content Fragment Models {#content-fragment-models}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>The AEM GraphQL API for Content Fragments Delivery is available on request. 
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->The AEM GraphQL API, for Content Fragment Delivery, will be released in early 2021.
->
->The related documentation is already available for preview purposes.
+>Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
 
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
