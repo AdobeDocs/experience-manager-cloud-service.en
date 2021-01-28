@@ -68,8 +68,10 @@ GraphQL uses the following:
   
 * **[Fields](https://graphql.org/learn/queries/#fields)**
 
-* **GraphQL Endpoint**
-  * The path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas. See [Endpoint Configuration](#endpoint-configuration) for further details.
+* **[GraphQL Endpoint](#graphql-aem-endpoint)**
+  * The path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas. 
+
+  * See [Enabling your GraphQL Endpoint](#enabling-graphql-endpoint) for further details.
 
 See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
 
@@ -81,9 +83,68 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
+<!--
 You can also perform:
 
 * [Persisted Queries, that are cached](#persisted-queries-caching)
+-->
+
+## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
+
+The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+
+* access the GraphQL schema,
+* send your GraphQL queries, 
+* receive the responses (to your GraphQL queries).
+
+The GraphQL for AEM endpoint is:
+
+`/content/cq:graphql/global/endpoint`
+
+To enable the endpoint for GraphQL for AEM you need to:
+
+>[!CAUTION]
+>
+>These steps are liable to change in the near future.
+
+* [Enable your GraphQL Endpoint](#enabling-graphql-endpoint)
+* [Perform additional configurations](#additional-configurations-graphql-endpoint)
+
+### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
+
+<!-- link needs to be updated -->
+To have access to GraphQL servlets in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphiQL for AEM Endpoint Enablement package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
+
+<!-- does it include source code? -->
+
+The package contains the source code and a README with full details of how it can be installed on an AEM instance.
+
+### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
+
+Additional configurations are required:
+
+* Dispatcher: 
+  * To allow required URLs.
+* Vanity URL: 
+  * To allocate a simplified URL for the endpoint.
+* CRSF Configuration: 
+  * Security protection for the endpoint.
+
+<!-- link needs to be updated -->
+This configurations can be realized by installing a dedicated package: the [GraphiQL for AEM Endpoint Configuration package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip). See the package README for full details.
+
+<!-- prepared in case more details are required here as opposed to the readme -->
+<!--
+* [Dispatcher](#dispatcher-configuration-graphql-endpoint): to allow required URLs
+* [Vanity URL](#vanity-url-configuration-graphql-endpoint): to allocate a simplified URL to the endpoint
+* [CRSF Configuration](#crsf-configuration-graphql-endpoint): security protection for the endpoint
+
+#### Dispatcher Configuration for GraphQL Endpoint {#dispatcher-configuration-graphql-endpoint}
+
+#### Vanity URL Configuration for GraphQL Endpoint {#vanity-url-configuration-graphql-endpoint}
+
+#### CRSF Configuration for GraphQL Endpoint {#crsf-configuration-graphql-endpoint}
+-->
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -176,7 +237,7 @@ So for example, if you:
 >
 >This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
 
-The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/graphql/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
+The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
 ## Fields {#fields}
 
@@ -405,6 +466,12 @@ For further examples, see:
 
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
+>[!CAUTION]
+>
+>Persisted queries for the AEM GraphQL API will be released in the near future. 
+>
+>The related documentation is already available for preview purposes.
+
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
 This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
@@ -602,6 +669,8 @@ Here are the steps required to persist a given query:
 
 To allow a third party website to consume JSON output, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint. This configuration should specify a trusted web site name (or regex) for which access should be granted.
 
+<!-- Do the allowedpaths need updating? -->
+
 * Accessing the GraphQL endpoint:
 
   * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
@@ -643,6 +712,9 @@ See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/a
 ## Paging {#paging}
 -->
 
+<!-- commented out for the January release (at minimum) -->
+
+<!--
 ## Endpoint Configuration {#endpoint-configuration}
 
 The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
@@ -696,6 +768,7 @@ To have access to GraphQL servlets in AEM you need to configure an endpoint. Thi
    * Name: `endpoint`
    * Primary Type: `nt:unstructured`
    * sling:resourceType: `graphql-enablement/components/endpoint`
+-->
 
 ## FAQs {#faqs}
 
