@@ -46,11 +46,11 @@ To process assets using a processing profile, add a profile to a folder. See [us
 ## Best practices and limitations {#tips-limitations}
 
 * Without [!DNL Dynamic Media] license, you can only process MP4 files using processing profiles.
-* When transcode MP4 files using Processing Profiles, the following guidelines and limitations apply:
+* When transcoding MP4 files using Processing Profiles, the following guidelines and limitations apply:
 
   * Apple ProRes files can only transcode to a maximum resolution of 1080p.
   * If the source file has a bitrate >200 Mbps, you can only transcode to a maximum resolution of 1080p.
-  * If the source framerate >= 60 fps then, the maximum source file size you can use is
+  * If the source framerate >=60 fps then, the maximum size of the source file that you can use is,
 
     * 400 MB for 4k transcoding.
     * 800 MB for 1080p transcoding.
