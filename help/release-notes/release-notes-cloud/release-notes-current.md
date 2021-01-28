@@ -20,6 +20,8 @@ The following release (2021.1.0) will be on January 28, 2021.
 
 * [!DNL Experience Manager] as a [!DNL Cloud Service] extends the Smart Tags functionality to support the identification of keywords and entities in text-based assets. The text is identified, indexed, and is made available as metadata to improve the search experience without the need for any configuration. See [Smart Tags](/help/assets/smart-tags.md).
 
+* MXF file format is now supported. See [supported file formats](/help/assets/file-format-support.md#video-formats).
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### What is New {#what-is-new-commerce}
