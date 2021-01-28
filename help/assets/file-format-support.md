@@ -184,7 +184,7 @@ The document formats supported for asset management features are as follows.
 | MPEG        | &#10003;             | &#10003;            | &#10003;     |
 | MPG         | &#10003;             | &#10003;            | &#10003;     |
 | MTS         | &#10003;             | -                   | &#10003;     |
-| MXF         | &#10003;             | -                   | -            |
+| MXF         | &#10003;             | -                   | &#10003;     |
 | OGV         | &#10003;             | -                   | &#10003;     |
 | QT          | &#10003;             | -                   | &#10003;     |
 | R3D         | -                    | &#10003;            | &#10003;     |
