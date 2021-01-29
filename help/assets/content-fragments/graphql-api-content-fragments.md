@@ -119,6 +119,12 @@ To make GraphQL queries in AEM you need to enable and configure an endpoint. You
 
 The package contains the enablement details and a README with full details of how it can be installed on an AEM instance.
 
+>[!CAUTION]
+>
+>There is currently a known issue after installing this package:
+>
+>* The entry `cq:graphql` is seen in the **Sites** console; at the top level.
+
 >[!NOTE]
 >
 >This package can be used as a blueprint to be added to your project sources (the recommended scenario).
