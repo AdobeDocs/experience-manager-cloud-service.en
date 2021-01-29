@@ -112,12 +112,9 @@ To enable the endpoint for GraphQL for AEM you need to:
 
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
-<!-- link needs to be added -->
-To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the GraphQL for AEM Endpoint Enablement package.
+To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the default GraphQL endpoint.
 
-<!-- [GraphQL for AEM Endpoint Enablement package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip). -->
-
-The package contains the enablement details and a README with full details of how it can be installed on an AEM instance.
+See the package **README** for full details.
 
 >[!CAUTION]
 >
@@ -153,10 +150,9 @@ Additional configurations are required:
   * Security protection for the endpoint.
   * Mandatory.
 
-<!-- link needs to be added -->
-These configurations can be realized by installing a dedicated package: the GraphQL for AEM Endpoint Configuration package. See the package **README** for full details.
+These configurations can be realized by installing a dedicated package: the [GraphQL Sample Configuration](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package. This archive contains a sample configuration that can be used to set up GraphQL on AEM.
 
-<!-- [GraphQL for AEM Endpoint Configuration package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip). -->
+See the package **README** for full details.
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -178,11 +174,9 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
 
-<!-- apparently a new package might be coming (0.0.4) - if so link needs to be updated -->
+The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip) package.
 
-The [GraphiQL for AEM package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
-
-The package contains the source code and a README with full details of how it can be installed on an AEM instance (in a variety of scenarios).
+See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
