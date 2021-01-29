@@ -125,6 +125,12 @@ The package contains the enablement details and a README with full details of ho
 >
 >* The entry `cq:graphql` is seen in the **Sites** console; at the top level.
 
+>[!CAUTION]
+>
+>The endpoint from the content package is accessible to everyone. This can - especially on publish instances - be an attack vector, as GraphQL queries can impose a heavy load on the server.
+>
+>Therefore, you might be interested in setting ACLs, appropriate to your use case, on the endpoint. 
+
 >[!NOTE]
 >
 >This package can be used as a blueprint to be added to your project sources (the recommended scenario).
