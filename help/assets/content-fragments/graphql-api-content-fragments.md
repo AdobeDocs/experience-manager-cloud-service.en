@@ -113,38 +113,111 @@ To enable the endpoint for GraphQL for AEM you need to:
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
 <!-- link needs to be updated -->
-To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphiQL for AEM Endpoint Enablement package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
+To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphQL for AEM Endpoint Enablement package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
 
-<!-- does it include source code? -->
+The package contains the enablement details and a README with full details of how it can be installed on an AEM instance.
 
-The package contains the source code and a README with full details of how it can be installed on an AEM instance.
+>[!NOTE]
+>
+>This package can be used:
+>
+>* 1:1 on a local instance
+>* As a blueprint to be added to your online project (the recommended scenario).
+
+>[!NOTE]
+>Additionally you can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
 
 ### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
 
 Additional configurations are required:
 
+<!--
 * Dispatcher: 
   * To allow required URLs.
+  * Manatory.
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint.
-* CRSF Configuration: 
+  * Optional.
+* CSRF Configuration: 
   * Security protection for the endpoint.
+-->
+
+* [Endpoint](#endpoint-configuration-graphql-endpoint): 
+  * To configure your endpoint.
+  * Mandatory.
+* [Dispatcher](#dispatcher-configuration-graphql-endpoint): 
+  * To allow required URLs.
+  * Mandatory.
+* [Vanity URL](#vanity-url-configuration-graphql-endpoint): 
+  * To allocate a simplified URL to the endpoint.
+  * Optional.
+* [CSRF Configuration](#csrf-configuration-graphql-endpoint): 
+  * Security protection for the endpoint.
+  * Mandatory.
 
 <!-- link needs to be updated -->
-This configurations can be realized by installing a dedicated package: the [GraphiQL for AEM Endpoint Configuration package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip). See the package README for full details.
+These configurations can be realized by installing a dedicated package: the [GraphQL for AEM Endpoint Configuration package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen). See the package README for full details.
 
-<!-- prepared in case more details are required here as opposed to the readme -->
-<!--
-* [Dispatcher](#dispatcher-configuration-graphql-endpoint): to allow required URLs
-* [Vanity URL](#vanity-url-configuration-graphql-endpoint): to allocate a simplified URL to the endpoint
-* [CRSF Configuration](#crsf-configuration-graphql-endpoint): security protection for the endpoint
-
+#### Endpoint Configuration {#endpoint-configuration-graphql-endpoint}
+ 
+The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+ 
+* access the GraphQL schema,
+* send your GraphQL queries,
+* receive the responses (to your GraphQL queries).
+ 
+To have access to GraphQL servlets in AEM you need to configure an endpoint. This also includes two OSGi configurations.
+ 
+1. The Sling schema servlet that responds to requests to retrieve the GraphQL schema:
+ 
+   ![AEM Sites GraphQL Schema Servlet](assets/cfm-endpoint-01.png)
+ 
+   * **Selectors** (`sling.servlet.selectors`)
+     Must be left blank.
+ 
+   * **Resource Types** (`sling.servlet.resourceTypes`)
+     Define the resource type that the GraphQL servlet should listen to.
+     For example:
+     `graphql-enablement/components/endpoint`.
+ 
+   * **Methods** (`sling.servlet.methods^)
+ 
+     The HTTP method the servlet should listen to; usually `GET`.
+ 
+   * **Extensions** (`sling.servlet.extensions`)
+ 
+     Specify the extension that the Schema Servlet should respond to. In this case it is `GQLschema`, to be compatible with the GraphQL specifications.
+ 
+2. The servlet that responds to graphql requests :
+ 
+   ![Apache Sling GraphQL Servlet](assets/cfm-endpoint-02.png)
+ 
+   * **Selectors** (`sling.servlet.selectors`)
+     Must be left blank.
+ 
+   * **Resource Type** (`sling.servlet.resourceTypes`)
+     The resource type the GraphQL servlet should respond to.
+     For example, `graphql-enablement/components/endpoint`.
+ 
+   * **Methods** (`sling.servlet.methods`)
+     The HTTP methods the GraphQL servlet should respond to, usually `GET` and `POST`.
+ 
+   * **Extensions** (`sling.servlet.extensions`)
+     The extension to listen for GraphQL requests, usually `gql`.
+ 
+3. You now need to create an endpoint - a node of the sling:resourceType defined in these configurations.
+   For example, to create an endpoint for retrieving the GraphQL Schema create a new node under `/apps/<my-site>/graphql`:
+ 
+   * Name: `endpoint`
+   * Primary Type: `nt:unstructured`
+   * sling:resourceType: `graphql-enablement/components/endpoint`
+  
 #### Dispatcher Configuration for GraphQL Endpoint {#dispatcher-configuration-graphql-endpoint}
 
 #### Vanity URL Configuration for GraphQL Endpoint {#vanity-url-configuration-graphql-endpoint}
 
-#### CRSF Configuration for GraphQL Endpoint {#crsf-configuration-graphql-endpoint}
--->
+#### CSRF Configuration for GraphQL Endpoint {#csrf-configuration-graphql-endpoint}
+
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -165,6 +238,8 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
+
+<!-- apparently a new package might be coming (0.0.4) - if so link needs to be updated -->
 
 The [GraphiQL for AEM package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
 
