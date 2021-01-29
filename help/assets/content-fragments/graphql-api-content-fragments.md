@@ -68,8 +68,10 @@ GraphQL uses the following:
   
 * **[Fields](https://graphql.org/learn/queries/#fields)**
 
-* **GraphQL Endpoint**
-  * The path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas. See [Endpoint Configuration](#endpoint-configuration) for further details.
+* **[GraphQL Endpoint](#graphql-aem-endpoint)**
+  * The path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas. 
+
+  * See [Enabling your GraphQL Endpoint](#enabling-graphql-endpoint) for further details.
 
 See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
 
@@ -81,9 +83,73 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
+<!--
 You can also perform:
 
 * [Persisted Queries, that are cached](#persisted-queries-caching)
+-->
+
+## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
+
+The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+
+* access the GraphQL schema,
+* send your GraphQL queries, 
+* receive the responses (to your GraphQL queries).
+
+The GraphQL for AEM endpoint is:
+
+`/content/cq:graphql/global/endpoint`
+
+To enable the endpoint for GraphQL for AEM you need to:
+
+>[!CAUTION]
+>
+>These steps are liable to change in the near future.
+
+* [Enable your GraphQL Endpoint](#enabling-graphql-endpoint)
+* [Perform additional configurations](#additional-configurations-graphql-endpoint)
+
+### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
+
+<!-- link needs to be added -->
+To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the GraphQL for AEM Endpoint Enablement package.
+
+<!-- [GraphQL for AEM Endpoint Enablement package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip). -->
+
+The package contains the enablement details and a README with full details of how it can be installed on an AEM instance.
+
+>[!CAUTION]
+>
+>There is currently a known issue after installing this package:
+>
+>* The entry `cq:graphql` is seen in the **Sites** console; at the top level.
+
+>[!NOTE]
+>
+>This package can be used as a blueprint to be added to your project sources (the recommended scenario).
+
+>[!NOTE]
+>Additionally you can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
+
+### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
+
+Additional configurations are required:
+
+* Dispatcher: 
+  * To allow required URLs.
+  * Manatory.
+* Vanity URL: 
+  * To allocate a simplified URL for the endpoint.
+  * Optional.
+* CSRF Configuration: 
+  * Security protection for the endpoint.
+  * Mandatory.
+
+<!-- link needs to be added -->
+These configurations can be realized by installing a dedicated package: the GraphQL for AEM Endpoint Configuration package. See the package **README** for full details.
+
+<!-- [GraphQL for AEM Endpoint Configuration package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip). -->
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -104,6 +170,8 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
+
+<!-- apparently a new package might be coming (0.0.4) - if so link needs to be updated -->
 
 The [GraphiQL for AEM package is available from the Adobe Software Distribution site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-graphiql-0.0.2.zip).
 
@@ -176,7 +244,7 @@ So for example, if you:
 >
 >This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
 
-The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/graphql/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
+The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
 ## Fields {#fields}
 
@@ -405,6 +473,12 @@ For further examples, see:
 
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
+>[!CAUTION]
+>
+>Persisted queries for the AEM GraphQL API will be released in the near future. 
+>
+>The related documentation is already available for preview purposes.
+
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
 This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
@@ -602,6 +676,8 @@ Here are the steps required to persist a given query:
 
 To allow a third party website to consume JSON output, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint. This configuration should specify a trusted web site name (or regex) for which access should be granted.
 
+<!-- Do the allowedpaths need updating? -->
+
 * Accessing the GraphQL endpoint:
 
   * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
@@ -642,60 +718,6 @@ See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/a
 <!--
 ## Paging {#paging}
 -->
-
-## Endpoint Configuration {#endpoint-configuration}
-
-The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
-
-* access the GraphQL schema,
-* send your GraphQL queries, 
-* receive the responses (to your GraphQL queries).
-
-To have access to GraphQL servlets in AEM you need to configure an endpoint. This also includes two OSGi configurations.
-
-1. The Sling schema servlet that responds to requests to retrieve the GraphQL schema:
-
-   ![AEM Sites GraphQL Schema Servlet](assets/cfm-endpoint-01.png)
-
-   * **Selectors** (`sling.servlet.selectors`) 
-     Must be left blank.
-
-   * **Resource Types** (`sling.servlet.resourceTypes`) 
-     Define the resource type that the GraphQL servlet should listen to. 
-     For example: 
-     `graphql-enablement/components/endpoint`.
-
-   * **Methods** (`sling.servlet.methods^)
-
-     The HTTP method the servlet should listen to; usually `GET`.
-
-   * **Extensions** (`sling.servlet.extensions`)
-
-     Specify the extension that the Schema Servlet should respond to. In this case it is `GQLschema`, to be compatible with the GraphQL specifications.
-
-2. The servlet that responds to graphql requests :
-
-   ![Apache Sling GraphQL Servlet](assets/cfm-endpoint-02.png)
-
-   * **Selectors** (`sling.servlet.selectors`) 
-     Must be left blank.
-
-   * **Resource Type** (`sling.servlet.resourceTypes`) 
-     The resource type the GraphQL servlet should respond to. 
-     For example, `graphql-enablement/components/endpoint`.
-
-   * **Methods** (`sling.servlet.methods`)
-     The HTTP methods the GraphQL servlet should respond to, usually `GET` and `POST`.
-
-   * **Extensions** (`sling.servlet.extensions`)
-     The extension to listen for GraphQL requests, usually `gql`.
-
-3. You now need to create an endpoint - a node of the sling:resourceType defined in these configurations. 
-   For example, to create an endpoint for retrieving the GraphQL Schema create a new node under `/apps/<my-site>/graphql`:
-
-   * Name: `endpoint`
-   * Primary Type: `nt:unstructured`
-   * sling:resourceType: `graphql-enablement/components/endpoint`
 
 ## FAQs {#faqs}
 
