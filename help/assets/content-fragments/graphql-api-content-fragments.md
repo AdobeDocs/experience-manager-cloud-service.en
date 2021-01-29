@@ -124,7 +124,7 @@ The package contains the enablement details and a README with full details of ho
 >There is currently a known issue after installing this package:
 >
 >* The entry `cq:graphql` is seen in the **Sites** console; at the top level. 
->  This should not be used.
+>  This must not be used.
 
 >[!CAUTION]
 >
