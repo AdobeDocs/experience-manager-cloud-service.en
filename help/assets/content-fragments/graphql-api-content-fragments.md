@@ -677,13 +677,11 @@ Here are the steps required to persist a given query:
 
 To allow a third party website to consume JSON output, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint. This configuration should specify a trusted web site name (or regex) for which access should be granted.
 
-<!-- Do the allowedpaths need updating? -->
-
 * Accessing the GraphQL endpoint:
 
   * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
   * supportedmethods: [POST]
-  * allowedpaths: ["/apps/graphql-enablement/content/endpoint.gql"]
+  * allowedpaths: ["/content/graphql/global/endpoint.json"]
 
 * Accessing the GraphQL persisted queries endpoint:
 
@@ -696,7 +694,8 @@ To allow a third party website to consume JSON output, a CORS policy must be con
 >It remains the customer's responsibility to:
 >
 >* only grant access to trusted domains 
->* not use a wildcard [*] syntax; which will expose the GraphQL endpoints to the entire world.
+>* make sure no sensitive information is exposed 
+>* not use a wildcard [*] syntax which will not only disable authenticated access to the GraphQL endpoint but also expose it to the entire world.
 
 >[!CAUTION]
 >
