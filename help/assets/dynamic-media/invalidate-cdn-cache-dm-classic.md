@@ -15,15 +15,9 @@ See also [Cache overview in Dynamic Media Classic](https://helpx.adobe.com/exper
 
 **To invalidate your CDN cache by way of Dynamic Media Classic:**
 
-1. Do one of the following:
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-   * In your web browser, log on to your Dynamic Media Classic account:
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
-
-   * Open the Dynamic Media Classic application, then sign in to your account.
+      Your credentials and sign in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
 1. Click **[!UICONTROL Setup > Application Setup > General Settings]**.
 1. On the Application General Settings page, under the Servers group heading, locate the **[!UICONTROL CDN Invalidation Template]** text box.
