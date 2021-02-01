@@ -37,7 +37,6 @@ To edit the Target configuration, follow these steps:
 1. Select an existing configuration and click **Properties**.
 2. Edit the properties.
 3. Select **Re-connect to Adobe Target**.
-![Re-connect](assets/edit_config_page1.png "Re-connect")
 4. Select **Save and Close**.
 
 ### Adding a configuration to a site {#add-configuration}
