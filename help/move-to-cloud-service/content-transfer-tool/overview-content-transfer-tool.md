@@ -13,7 +13,11 @@ There are two phases associated with content transfer:
 
 1. **Extraction**:  Extraction refers to extracting content from the source AEM instance into a temporary area called *migration set*. A *migration set* is a cloud storage area provided by Adobe to temporarily store the transferred content between the source AEM instance and the Cloud Service AEM instance. 
 
-   Refer to [Extraction Process in Content Transfer](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) for more details.
+   Refer to [Extraction Process in Content Transfer](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) for more details. 
+
+>[!NOTE]
+>
+> It is recommended to run the User Mapping Tool as part of the Extraction phase. Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) for more details.
 
 2. **Ingestion**: Ingestion refers to ingesting content from the *migration set* into the target Cloud Service instance. 
 
