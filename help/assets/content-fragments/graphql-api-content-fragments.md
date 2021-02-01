@@ -108,11 +108,17 @@ To enable the endpoint for GraphQL for AEM you need to:
 * [Enable your GraphQL Endpoint](#enabling-graphql-endpoint)
 * [Perform additional configurations](#additional-configurations-graphql-endpoint)
 
+To simplify the setup of a GraphQL endpoint, you can use the [GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package.
+
+This archive contains both [the required additional configuration](#additional-configurations-graphql-endpoint) and [the GraphQL endpoint](#enabling-graphql-endpoint). If installed on a plain AEM instance, it will expose a fully working GraphQL endpoint at `/content/cq:graphql/global/endpoint.json`.
+
+This package is meant to be a blueprint for your own GraphQL projects.
+
+See the package **README** for full details.
+
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
 To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the default GraphQL endpoint.
-
-See the package **README** for full details.
 
 >[!CAUTION]
 >
@@ -129,7 +135,7 @@ See the package **README** for full details.
 
 >[!NOTE]
 >
->This package can be used as a blueprint to be added to your project sources (the recommended scenario).
+>This package will not work out-of-the-box. You will have to provide [Additional Configurations for GraphQL Endpoint](#additional-configurations-graphql-endpoint) separately.
 
 >[!NOTE]
 >Additionally you can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
@@ -140,7 +146,7 @@ Additional configurations are required:
 
 * Dispatcher: 
   * To allow required URLs.
-  * Manatory.
+  * Mandatory.
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint.
   * Optional.
@@ -148,7 +154,7 @@ Additional configurations are required:
   * Security protection for the endpoint.
   * Mandatory.
 
-These configurations can be realized by installing a dedicated package: the [GraphQL Sample Configuration](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package. This archive contains a sample configuration that can be used to set up GraphQL on AEM.
+The [GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package shows how these configurations need to look like. Use them as a blueprint.
 
 See the package **README** for full details.
 
