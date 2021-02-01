@@ -173,18 +173,18 @@ To verify that assets are processed, preview the generated renditions in the [!U
 
 ## Post-processing workflows {#post-processing-workflows}
 
-For situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
+For a situation, where additional processing of assets is required that cannot be achieved using the processing profiles, additional post-processing workflows can be added to the configuration. This allows for adding fully customized processing on top of the configurable processing using asset microservices.
 
-Post-processing workflows, if configured, are automatically executed by [!DNL Experience Manager] after the microservices processing finishes. There is no need to add workflow launchers manually to trigger them. The examples include:
+Post-processing workflows, if configured, are automatically executed by [!DNL Experience Manager] after the microservices processing finishes. There is no need to add workflow launchers manually to trigger the workflows. The examples include:
 
 * Custom workflow steps to process assets.
 * Integrations to add metadata or properties to assets from external systems, for example, product or process information.
 * Additional processing done by external services.
 
-Adding a post-processing workflow configuration to Experience Manager is comprised of the following steps:
+To add a post-processing workflow configuration to [!DNL Experience Manager], follow these steps:
 
-* Create one or more workflow models. The documents mention it as *post-processing workflow models*, but those are regular Experience Manager workflow models.
-* Add specific workflow steps to these models. The steps are executed on the assets based on a workflow model configuration.
+* Create one or more workflow models. These custom models are referred to as *post-processing workflow models* in this documentation. Those are regular [!DNL Experience Manager] workflow models.
+* Add the required workflow steps to these models. Review the steps from the default workflow and add all of the required default steps to the custom workflow. The steps are executed on the assets based on a workflow model configuration. For example, if you want smart tagging to happen automatically upon asset upload, add the step to your custom post-processing workflow model.
 * Add [!UICONTROL DAM Update Asset Workflow Completed Process] step at the end. Adding this step ensures that Experience Manager knows when the processing ends and the asset can be marked as processed, that is *New* is displayed on the asset.
 * Create a configuration for the Custom Workflow Runner Service that allows to configure execution of a post-processing workflow model either by a path (folder location) or by a regular expression.
 
@@ -200,7 +200,7 @@ Ensure that the last step of each post-processing workflows is `DAM Update Asset
 
 To configure the post-processing workflow models to be executed for assets uploaded or updated in the system after the asset microservices processing finishes, the Custom Workflow Runner service needs to be configured.
 
-The Custom Workflow Runner service (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is an OSGi service and provides two options for configuration:
+The Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is an OSGi service and provides two options for configuration:
 
 * Post-processing workflows by path (`postProcWorkflowsByPath`): Multiple workflow models can be listed, based on different repository paths. Paths and models should be separated by a colon. Simple repository paths are supported and should be mapped to a workflow model in the `/var` path. For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Post-processing workflows by expression (`postProcWorkflowsByExpression`): Multiple workflow models can be listed, based on different regular expressions. Expressions and models should be separated by a colon. The regular expression should point to the Asset node directly, and not one of the renditions or files. For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
