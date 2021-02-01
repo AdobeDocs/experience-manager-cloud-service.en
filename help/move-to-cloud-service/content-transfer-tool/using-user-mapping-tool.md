@@ -40,7 +40,7 @@ Follow the steps below to set this up:
 
 The User Mapping Tool is integrated into the Content Transfer Tool. You can download the Content Transfer Tool from [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). For more details on the latest version, refer to the [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Select Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Transfer**.
+1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Transfer**.
 1. Click on **Create User Mapping Config**.
 
    >[!NOTE]
