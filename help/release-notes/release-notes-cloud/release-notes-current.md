@@ -79,7 +79,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 ### What is New {#what-is-new-foundation}
 
-* Server-to-server authenticated API calls - Generate the appropriate access tokens to make authenticated server-to-server API calls between your external applications and AEM as a Cloud Service environments. [Learn more](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
+* Server-to-server authenticated API calls - Generate the appropriate access tokens to make authenticated server-to-server API calls between your external applications and AEM as a Cloud Service environments. Learn more by reading [the documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) or by consulting the [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
