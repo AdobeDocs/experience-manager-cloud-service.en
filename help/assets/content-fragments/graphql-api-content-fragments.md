@@ -83,11 +83,9 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-<!--
 You can also perform:
 
 * [Persisted Queries, that are cached](#persisted-queries-caching)
--->
 
 ## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
 
@@ -473,12 +471,6 @@ For further examples, see:
 * [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## Persisted Queries (Caching) {#persisted-queries-caching}
-
->[!CAUTION]
->
->Persisted queries for the AEM GraphQL API will be released in the near future. 
->
->The related documentation is already available for preview purposes.
 
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
