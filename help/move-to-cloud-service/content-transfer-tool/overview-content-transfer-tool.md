@@ -19,7 +19,7 @@ There are two phases associated with content transfer:
 >
 > It is recommended to run the User Mapping Tool as part of the Extraction phase. Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) for more details.
 
-2. **Ingestion**: Ingestion refers to ingesting content from the *migration set* into the target Cloud Service instance. 
+1. **Ingestion**: Ingestion refers to ingesting content from the *migration set* into the target Cloud Service instance. 
 
    Refer to [Ingestion Process in Content Transfer](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) for more details.
   
