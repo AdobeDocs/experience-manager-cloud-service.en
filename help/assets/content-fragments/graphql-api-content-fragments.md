@@ -123,9 +123,9 @@ See the package **README** for full details.
 
 >[!CAUTION]
 >
->The endpoint from the content package is accessible to everyone. This can - especially on publish instances - be an attack vector, as GraphQL queries can impose a heavy load on the server.
+>The endpoint from the content package is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
->Therefore, you might be interested in setting ACLs, appropriate to your use case, on the endpoint. 
+>You can set up ACLs, appropriate to your use case, on the endpoint. 
 
 >[!NOTE]
 >
@@ -139,16 +139,16 @@ See the package **README** for full details.
 Additional configurations are required:
 
 * Dispatcher: 
-  * To allow required URLs.
-  * Manatory.
+  * To allow required URLs
+  * Mandatory
 * Vanity URL: 
-  * To allocate a simplified URL for the endpoint.
-  * Optional.
+  * To allocate a simplified URL for the endpoint
+  * Optional
 * CSRF Configuration: 
-  * Security protection for the endpoint.
-  * Mandatory.
+  * Security protection for the endpoint
+  * Mandatory
 
-These configurations can be realized by installing a dedicated package: the [GraphQL Sample Configuration](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package. This archive contains a sample configuration that can be used to set up GraphQL on AEM.
+These configurations can be made by installing a dedicated package: the [GraphQL Sample Configuration](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package. This archive contains a sample configuration that can be used to set up GraphQL on AEM.
 
 See the package **README** for full details.
 
