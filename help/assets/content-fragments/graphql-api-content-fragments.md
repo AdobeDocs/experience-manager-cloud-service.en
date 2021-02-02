@@ -290,7 +290,7 @@ The following code will display the paths of all Content Fragments that were cre
 
 ```xml
 {
-  persons {
+  personList {
     items {
       _path
     }
@@ -302,11 +302,13 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 
 ```xml
 {
-    person(_path="/content/dam/path/to/fragment/john-doe") {
-        _path
-        name
-        first-name
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      firstName
+      name
     }
+  }
 }
 ```
 
@@ -386,9 +388,7 @@ GraphQL permits variables to be placed in the query. For more information you ca
 
 For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL.
 
-<!--
 ![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
--->
 
 ```xml
 ### query
@@ -413,16 +413,14 @@ In GraphQL there is a possibility to change the query based on variables, called
 
 For example there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
 
-<!--
 ![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
--->
 
 ```xml
 ### query
-query getAdventureByType($includePrice: Boolean!) {
+query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
     items {
-      adventureType
+      adventureTitle
       adventurePrice @include(if: $includePrice)
     }
   }
