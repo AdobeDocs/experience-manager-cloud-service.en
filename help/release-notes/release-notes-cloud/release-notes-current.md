@@ -66,7 +66,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 ### Release Date {#release-date-ctt}
 
-The Release Date for Content Transfer Tool v1.2.20 is February 01, 2021.
+The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
 ### What is new in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
