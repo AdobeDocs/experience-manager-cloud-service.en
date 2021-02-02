@@ -84,7 +84,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
-   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
+   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
 
 * The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
