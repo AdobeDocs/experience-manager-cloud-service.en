@@ -117,7 +117,7 @@ To enable the endpoint for GraphQL for AEM you need to:
 To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/global/endpoint`:
 
 * Nodes `cq:graphql` and `global` must be of type `sling:Folder`.
-* Node `enpoint` must be of type `nt:unstructured` and contain a `sling:resourceType` of `graphql/sites/components/endpoint`.
+* Node `endpoint` must be of type `nt:unstructured` and contain a `sling:resourceType` of `graphql/sites/components/endpoint`.
 
 >[!CAUTION]
 >
@@ -128,9 +128,9 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 
 >[!CAUTION]
 >
->The endpoint is accessible to everyone. This can - especially on publish instances - be an attack vector, as GraphQL queries can impose a heavy load on the server.
+>The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
->Therefore, you might be interested in setting ACLs, appropriate to your use case, on the endpoint. 
+>You can set up ACLs, appropriate to your use case, on the endpoint. 
 
 >[!NOTE]
 >
