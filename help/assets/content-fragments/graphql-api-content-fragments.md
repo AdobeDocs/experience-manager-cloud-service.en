@@ -384,14 +384,16 @@ See [Sample Query - All Cities with a Named Variation](/help/assets/content-frag
 
 GraphQL permits variables to be placed in the query. For more information you can see the [GraphQL documentation for GraphiQL](https://graphql.org/learn/queries/#variables).
 
-For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL:
+For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL.
 
+<!--
 ![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
+-->
 
 ```xml
 ### query
 query GetArticlesByVariation($variation: String!) {
-    articles(variation: $variation) {
+    articleList(variation: $variation) {
         items {
             _path
             author
@@ -411,11 +413,14 @@ In GraphQL there is a possibility to change the query based on variables, called
 
 For example there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
 
+<!--
 ![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
+-->
 
 ```xml
+### query
 query getAdventureByType($includePrice: Boolean!) {
-  adventures {
+  adventureList {
     items {
       adventureType
       adventurePrice @include(if: $includePrice)
