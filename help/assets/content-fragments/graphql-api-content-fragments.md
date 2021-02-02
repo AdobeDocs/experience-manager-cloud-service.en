@@ -217,7 +217,7 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
    This shows that the generated type `ArticleModel` contains several [fields](#fields). 
    
-   * Three of them have been controlled by the user: `author`, `main` and `linked_article`.
+   * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
 
    * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceeding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
