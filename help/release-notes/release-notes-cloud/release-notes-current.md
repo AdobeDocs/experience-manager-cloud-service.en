@@ -66,14 +66,10 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 ### Release Date {#release-date-ctt}
 
-The Release Date for Content Transfer Tool v1.1.20 is January 08, 2021.
+The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
 ### What is new in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Users can now learn if their Access Token has expired by hovering on the status icon in the Content Transfer Tool (CTT) user interface. They will also be notified in the Migration Set Details UI that they are unable to connect to their Cloud Service instance.
-
-### Bug Fixes {#ctt-bug-fixes}
-
-* Content Transfer Tool (CTT) user interface status for a migration set did not persist and changed after a period of inactivity. This has been fixed.
-* Option to view logs was disabled if the logs were not available. This has been fixed and messaging has been added to notify user why logs are missing.
-* Content Transfer Tool user interface status showed FAILED when user stopped an ingestion. This has been fixed to display *STOPPED* instead.
+* New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+* Content Transfer Tool now migrates all groups and users referenced in the migration set including children.
+* Users are allowed to select certain paths under `/etc` when creating migration sets.
