@@ -114,6 +114,10 @@ To enable the endpoint for GraphQL for AEM you need to:
 
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
+>[!NOTE]
+>
+>See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
+
 To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/global/endpoint`:
 
 * Nodes `cq:graphql` and `global` must be of type `sling:Folder`.
@@ -140,6 +144,10 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 >Additionally you can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
 
 ### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
+
+>[!NOTE]
+>
+>See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
 
 Additional configurations are required:
 
