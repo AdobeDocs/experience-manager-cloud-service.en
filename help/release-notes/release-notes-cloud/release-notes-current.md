@@ -43,7 +43,7 @@ The following release (2021.1.0) will be on January 28, 2021.
 
 ### What is New {#what-is-new-commerce}
 
-* Product Experience Management: New 'Commerce' tab under asset properties. This tab enables you to link products & categories to assets. The tab also shows real-time data for linked products & categories, and a link to show details in the product console.
+* Product Experience Management: New 'Commerce' properties tab for Assets and Experience Fragments. This tab enables you to link products / categories to Assets and Experience Fragments. The tab also shows real-time data for linked products / categories, and a link to show details in the product console.
 
 * Released CIF Venia Reference Site - 2021.02.02 that includes the latest CIF Core Components version v1.7.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) for more details.
 
