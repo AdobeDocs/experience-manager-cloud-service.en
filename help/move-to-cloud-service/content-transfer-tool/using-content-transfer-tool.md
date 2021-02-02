@@ -21,9 +21,7 @@ Follow the section below to understand the important considerations while runnin
 
 * The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you will have to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
 
-* Currently the default MongoDB size for a AEM as a Cloud Service Author instance is 32GB. It is recommended that for segment store size of greater than 20GB, you should submit a Support ticket to increase the MongoDB size.
-
-* The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The *Extraction* process copies the entire `/home` into the migration set and the *Ingestion* process copies all users and groups referenced in the migrated content ACLs.
+* The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The *Extraction* process copies the entire `/home` into the migration set and the *Ingestion* process copies all users and groups referenced in the migrated content ACLs. To automatically map the existing users and groups to their IMS IDs, please refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
