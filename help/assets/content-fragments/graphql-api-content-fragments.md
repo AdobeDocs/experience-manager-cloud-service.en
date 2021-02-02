@@ -95,9 +95,13 @@ The endpoint is the path used to access GraphQL for AEM. Using this path you (or
 * send your GraphQL queries, 
 * receive the responses (to your GraphQL queries).
 
-The GraphQL for AEM endpoint is:
+The repository path of the GraphQL for AEM endpoint is:
 
 `/content/cq:graphql/global/endpoint`
+
+Your app can use the following path in the request URL:
+
+`/content/_cq_graphql/global/endpoint.json`
 
 To enable the endpoint for GraphQL for AEM you need to:
 
@@ -110,26 +114,27 @@ To enable the endpoint for GraphQL for AEM you need to:
 
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
-To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the default GraphQL endpoint.
+To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/global/endpoint`:
 
-See the package **README** for full details.
+* Nodes `cq:graphql` and `global` must be of type `sling:Folder`.
+* Node `endpoint` must be of type `nt:unstructured` and contain a `sling:resourceType` of `graphql/sites/components/endpoint`.
 
 >[!CAUTION]
 >
->There is currently a known issue after installing this package:
+>There is currently a known issue with the endpoint:
 >
 >* The entry `cq:graphql` is seen in the **Sites** console; at the top level. 
 >  This must not be used.
 
 >[!CAUTION]
 >
->The endpoint from the content package is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
+>The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
 >You can set up ACLs, appropriate to your use case, on the endpoint. 
 
 >[!NOTE]
 >
->This package can be used as a blueprint to be added to your project sources (the recommended scenario).
+>Your endpoint will not work out-of-the-box. You will have to provide [Additional Configurations for GraphQL Endpoint](#additional-configurations-graphql-endpoint) separately.
 
 >[!NOTE]
 >Additionally you can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
@@ -144,13 +149,36 @@ Additional configurations are required:
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint
   * Optional
-* CSRF Configuration: 
-  * Security protection for the endpoint
-  * Mandatory
+* OSGi Configuration:
+  * GraphQL Servlet Configuration:
+    * Handles requests to the endpoint
+    * The configuration name is `org.apache.sling.graphql.core.GraphQLServlet`. It needs to be provided as an OSGi factory configuration
+    * `sling.servlet.extensions` must be set to `[json]`
+    * `sling.servlet.methods` must be set to `[GET,POST]`
+    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
+    * Mandatory
+  * Schema Servlet Configuration:
+    * Creates the GraphQL schema
+    * The configuration name is `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`. It needs to be provided as an OSGi factory configuration
+    * `sling.servlet.extensions` must be set to `[GQLschema]`
+    * `sling.servlet.methods` must be set to `[GET]`
+    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
+    * Mandatory
+  * CSRF Configuration: 
+    * Security protection for the endpoint
+    * The configuration name is `com.adobe.granite.csrf.impl.CSRFFilter`
+    * Add `/content/cq:graphql/global/endpoint` to the existing list of excluded paths (`filter.excluded.paths`)
+    * Mandatory
 
-These configurations can be made by installing a dedicated package: the [GraphQL Sample Configuration](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package. This archive contains a sample configuration that can be used to set up GraphQL on AEM.
+### Supporting packages {#supporting-packages}
 
-See the package **README** for full details.
+To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package.
+
+This archive contains both [the required additional configuration](#additional-configurations-graphql-endpoint) and [the GraphQL endpoint](#enabling-graphql-endpoint). If installed on a plain AEM instance, it will expose a fully working GraphQL endpoint at `/content/cq:graphql/global/endpoint`.
+
+This package is meant to be a blueprint for your own GraphQL projects. See the package **README** for details on how to use the package.
+
+Should you prefer to manually create the required configuration, Adobe also provides a dedicated [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the GraphQL endpoint only, without any configuration.
 
 ## GraphiQL Interface {#graphiql-interface}
 
