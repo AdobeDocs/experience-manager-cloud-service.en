@@ -5,12 +5,6 @@ description: Content Fragments are stored as Assets, so are primarily managed fr
 
 # Managing Content Fragments{#managing-content-fragments}
 
->[!CAUTION]
->
->The AEM GraphQL API for Content Fragments Delivery is available on request. 
->
->Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
-
 Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
 >[!NOTE]
@@ -31,8 +25,8 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 The method of creating a content fragment is:
 
 1. Navigate to the **Assets** folder where you want to create the fragment.
-2. Select **Create**, then **Content Fragment** to open the wizard.
-3. The first step of the wizard requires you to specify the basis of the new fragment.
+1. Select **Create**, then **Content Fragment** to open the wizard.
+1. The first step of the wizard requires you to specify the basis of the new fragment.
 
       * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Adventure** model
 
@@ -42,7 +36,7 @@ The method of creating a content fragment is:
 
    ![fragment basis](assets/cfm-managing-01.png)
 
-4. In the **Properties** step specify:
+1. In the **Properties** step specify:
 
     * **Basic**
 
@@ -64,9 +58,12 @@ The method of creating a content fragment is:
 
           Mandatory; will be automatically derived from the title, but can be updated.
 
-5. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
+1. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
 
-## Actions for a Content Fragment {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >In **List** mode of the console you can update the **View Settings** to enable the **Content Fragment Model** column.
+
+## Actions for a Content Fragment in the Assets Console {#actions-for-a-content-fragment-assets-console}
 
 In the **Assets** console a range of actions are available for your content fragments, either:
 
@@ -117,7 +114,7 @@ To open your fragment for editing:
 >To edit a content fragment you need the appropriate permissions. Please contact your system administrator if you are experiencing issues.
 
 1. Use the **Assets** console to navigate to the location of your content fragment.
-2. Open the fragment for editing, by either:
+1. Open the fragment for editing, by either:
 
     * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
     * Selecting the fragment, then **Edit** from the toolbar.
@@ -131,23 +128,49 @@ To open your fragment for editing:
    >1. A message will be shown when the fragment is already referenced on a content page.
    >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
-3. Navigate through the three modes using the icons in the side panel:
-
-    * Variations: [Editing the content](#editing-the-content-of-your-fragment) and [Managing your Variations](#creating-and-managing-variations-within-your-fragment)
-
-    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-    * [Associated Content](#associating-content-with-your-fragment)
-    * [Metadata](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-    * [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
-    * [Preview](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![modes](assets/cfm-managing-04.png)
-
-4. After making changes, use **Save** or **Cancel** as required.
+1. After making changes, use **Save** or **Cancel** as required.
 
    >[!NOTE]
    >
    >Both **Save** and **Cancel** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
+
+## Modes and Actions in the Content Fragment Editor {#modes-actions-content-fragment-editor}
+
+There are various modes and actions available from the Content Fragment Editor.
+
+### Modes in the Content Fragment Editor {#modes-in-the-content-fragment-editor}
+
+Navigate through the various modes using the icons in the side panel:
+
+* Variations: [Editing the content](#editing-the-content-of-your-fragment) and [Managing your Variations](#creating-and-managing-variations-within-your-fragment)
+
+* [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Associated Content](#associating-content-with-your-fragment)
+* [Metadata](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Preview](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![modes](assets/cfm-managing-04.png)
+
+### Toolbar Actions in theContent Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
+
+Some features in the top toolbar are available from multiple modes:
+
+![modes](assets/cfm-managing-top-toolbar.png)
+
+* Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
+
+  * The name is also a link that will open the model editor.
+
+* See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
+
+  * New: grey
+  * Draft: blue
+  * Published: green
+  * Modified: orange
+  * Deactivated: red
+
+* **[Publish](#publishing-and-referencing-a-fragment)** the fragment.
 
 ## Save, Cancel and Versions {#save-cancel-and-versions}
 
@@ -222,13 +245,13 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 * View information about versions, comments, and annotations
 * Actions for Versions
 
-    * **[Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
+  * **[Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
 
-    * **[Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
+  * **[Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
 
-    * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
+  * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
 
-    * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
+  * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
 
 * Actions for Annotations
 
@@ -300,7 +323,8 @@ You can revert to a specific version of your fragment:
 
 Content Fragments must be published for use in the publish enviroment. They can be published:
 
-* After creation; from the **Assets** console.
+* After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
+* From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
 * When you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
