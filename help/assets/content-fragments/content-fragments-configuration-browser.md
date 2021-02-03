@@ -5,12 +5,6 @@ description: Learn how to enable certain Content Fragment functionality in the C
 
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
 
->[!CAUTION]
->
->The AEM GraphQL API for Content Fragments Delivery is available on request. 
->
->Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
-
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
 Before using Content Fragments you need to use the **Configuration Browser** to enable:
