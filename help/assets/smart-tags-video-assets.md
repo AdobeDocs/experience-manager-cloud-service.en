@@ -1,17 +1,17 @@
 ---
 title: Smart tag your video assets
-description: Smart tagging video assets automates the asset tagging by applying contextual and descriptive tags using Adobe Sensei services.
+description: Experience Manager automatically adds contextual and descriptive Smart Tags to videos using [!DNL Adobe Sensei].
 ---
 
 # Smart tag your video assets {#video-smart-tags}
 
-The expanding need for new content calls for reduced manual efforts to deliver compelling digital experiences in no time. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports automated tagging of video assets assisted by artificial intelligence. Tagging the videos manually can be time-consuming. However, Adobe Sensei powered video smart tagging feature uses artificial intelligence models to analyze video content and add tags to the video assets. Thereby reducing time for DAM users to deliver rich experiences to their customers. Adobe's machine learning service generates two sets of tags for a video. While, one set corresponds to objects, scenes, and attributes in that video; the other set relates to actions such as drinking, running, and jogging.
+The expanding need for new content calls for reduced manual efforts to deliver compelling digital experiences in no time. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports auto-tagging of video assets using artificial intelligence. Tagging the videos manually can be time-consuming. However, [!DNL Adobe Sensei] powered video smart tagging feature uses artificial intelligence models to analyze video content and add tags to the video assets. Thereby reducing time for DAM users to deliver rich experiences to their customers. Adobe's machine learning service generates two sets of tags for a video. While, one set corresponds to objects, scenes, and attributes in that video; the other set relates to actions such as drinking, running, and jogging.
 
-The video file formats (and their codecs) supported for smart tagging are MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f), and WMV (WMV2). Moreover, the functionality allows tagging of videos up to the size 300 MB. The automated tagging of video assets occurs as standard asset processing (along with thumbnail creation and metadata extraction) after a video is uploaded, or when a re-processing is triggered. The smart tags are displayed in descending order of their [confidence score](#confidence-score-video-tag) in asset [!UICONTROL Properties]. Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. However, you can [opt-out of video smart tagging](#opt-out-video-smart-tagging) on a folder.
+The auto-tagging of video assets occurs as standard asset processing (along with thumbnail creation and metadata extraction) after a video is uploaded, or when a re-processing is triggered. The smart tags are displayed in descending order of their [confidence score](#confidence-score-video-tag) in asset [!UICONTROL Properties]. Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. However, you can [opt-out of video smart tagging](#opt-out-video-smart-tagging) on a folder.
 
 ## Smart tagging videos on upload {#smart-tag-assets-on-ingestion}
 
-When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], the videos undergo ![processing](assets/do-not-localize/assetprocessing.png). Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset Compute Service leverages Adobe Sensei to create these smart tags.
+When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], the videos are processed. Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset microservices leverages [!DNL Adobe Sensei] to create these smart tags.
 
 ![Smart Tags are added to videos and seen in Basic tab of asset Properties](assets/smart-tags-added-to-videos.png)
 
@@ -37,7 +37,9 @@ To smart tag video assets, or folders (including subfolders) of assets that alre
 
 1. Select ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
 
-![Reprocess Assets to add tags to videos existing DAM repository](assets/reprocess.gif)
+<!-- TBD: Limit size -->
+
+![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)
 
 Once the process completes, navigate to the [!UICONTROL Properties] page of any video asset within the folder. The automatically added tags are seen in [!UICONTROL Smart Tags] section in [!UICONTROL Basic] tab. These applied smart tags are sorted in descending order of [confidence score](#confidence-score-video-tag).
 
@@ -116,13 +118,13 @@ To add the confidence score OSGI configuration to the project deployed to [!DNL 
 
 ## Limitations {#video-smart-tagging-limitations}
 
-* Training the Smart Tag Service (or Enhanced Smart Tags) for tagging your video assets is not supported yet.
+* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe Sensei] settings.
 
-* Tagging progress is not shown.
+* Tagging progress is not displayed.
 
-* Only the videos of size not more than 300 MB are suitable for tagging. The Adobe Sensei service smart tags the videos meeting this criteria and skip tagging other videos in a folder.
+* Only the videos smaller than 300 MB in file size are auto-tagged. The [!DNL Adobe Sensei] service skips video files that are larger in size.
 
-* Only the videos in these file formats (and supported codecs)—MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f), and WMV (WMV2)—can be tagged.
+* Only the videos in the file formats and supported codecs mentioned in [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) are tagged.
 
 >[!MORELIKETHIS]
 >

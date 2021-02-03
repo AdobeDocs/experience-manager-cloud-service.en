@@ -84,7 +84,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
-   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
+   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
 
 * The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
@@ -107,7 +107,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 
 ### SDK Build Analyzers {#analyzers}
 
-The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) and [here](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) and [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ### Others {#others-foundation}
 
