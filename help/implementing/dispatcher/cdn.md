@@ -44,3 +44,24 @@ Prior to accepting live traffic, you should validate with Adobe customer support
 There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to Adobe's managed CDN are likely to be efficient.
 
 Note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
+
+## Geolocation Headers {#geo-headers}
+
+The Adobe managed CDN will add headers to each request with:
+
+* country code: `x-aem-client-country`
+* continent code: `x-aem-client-continent`
+
+The values for the country codes are the Alpha-2 codes described [here](https://en.wikipedia.org/wiki/ISO_3166-1).
+
+The values for the continent codes are:
+
+* AF Africa
+* AN Antarctica
+* AS Asia
+* EU Europe
+* NA North America
+* OC Oceania
+* SA South America
+
+This information may be useful for use cases such as redirecting to a different url based on the origin (country) of the request. Although, in this specific use case the redirect should not be cached since it varies. If needed, you can use `Cache-Control: private` to prevent caching. See also [Caching](/help/implementing/dispatcher/caching.md#html-text).
