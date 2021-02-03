@@ -49,6 +49,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Assets HTTP API](mac-api-assets.md)
   + [Content Fragments support in Assets HTTP API](content-fragments/assets-api-content-fragments.md)
   + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+  + [Authentication for Remote AEM GraphQL Queries on Content Fragments](content-fragments/graphql-authentication-content-fragments.md)
   + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
   + [Asset reports](asset-reports.md)
