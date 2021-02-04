@@ -4,7 +4,7 @@
 ## Adobe Experience Manager as a Cloud Service: Roles and Responsibilities 
 
 <br></br>
-#### Adobe provides a set of services around the provisioning, development, staging and production of Experience Manager as a Cloud Service. For the development and deployment of the solution to proceed as efficiently as possible, it is important that the customer and customizer understand and fulfill their roles, as described below.
+Adobe provides a set of services around the provisioning, development, staging and production of Experience Manager as a Cloud Service. For the development and deployment of the solution to proceed as efficiently as possible, it is important that the customer and customizer understand and fulfill their roles, as described below.
 ***
 
 | Activity                        | Sub-Activity                                          | Customer    | Customizer  | Adobe   | Cloud Manager functionality |
@@ -44,4 +44,4 @@
 | Production                      | Production backup and disaster recovery               |             |             | Owner   |                             |
 ***
 <br></br>
-### The above assumes Premier Support is included. The table may be subject to modification by agreement between the Customer and Customizer. We recommend that you work with your Adobe Sales and customization teams if you require clarification on any of the above. Customers that do not want to handle customization themselves should obtain the services of Adobe’s Professional Services team or an Experience Manager partner. To maintain high-quality levels, Adobe requires that partners engaged in Experience Manager as a Cloud Service development projects are staffed with at least one individual who has obtained the Advanced Developer certification for Experience Manager software.
+The above assumes Premier Support is included. The table may be subject to modification by agreement between the Customer and Customizer. We recommend that you work with your Adobe Sales and customization teams if you require clarification on any of the above. Customers that do not want to handle customization themselves should obtain the services of Adobe’s Professional Services team or an Experience Manager partner. To maintain high-quality levels, Adobe requires that partners engaged in Experience Manager as a Cloud Service development projects are staffed with at least one individual who has obtained the Advanced Developer certification for Experience Manager software.
