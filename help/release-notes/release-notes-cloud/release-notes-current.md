@@ -20,7 +20,9 @@ The following release (2021.2.0) will be on February 25, 2021.
 
 * **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
 
-* [The RemotePage component](/help/implementing/developing/hybrid/remote-page.md) brings support for viewing and editing external SPAs within AEM using.
+* **[The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)**: Added support for viewing and editing external SPAs within AEM using.
+
+* **[Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Added ability to upload a standalone single-page application to an AEM instance, add editable sections of content, and enable authoring.
 
 * Enhanced JSON output from GraphQL API, including ability to output rich text in JSON format and locales.
 
