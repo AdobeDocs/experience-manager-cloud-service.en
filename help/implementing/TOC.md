@@ -62,6 +62,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + [Generating Access Tokens for Server Side APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+  + [Headful and Headless in AEM](developing/headful-headless.md)
   + Full Stack AEM Development {#full-stack}
     + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
     + [Structure of the AEM UI](developing/introduction/ui-structure.md)
@@ -107,8 +108,11 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [SPA Page Component](developing/hybrid/page-component.md)
     + [Dynamic Model to Component Mapping](developing/hybrid/model-to-component-mapping.md)
     + [Model Routing](developing/hybrid/routing.md)
-    + [Launch Integration](developing/hybrid/launch-integration.md)
+    + [The RemotePage Component](developing/hybrid/remote-page.md)
+    + [Editing an External SPA within AEM](developing/hybrid/editing-external-spa.md)
     + [Server Side Rendering](developing/hybrid/ssr.md)
+    + [Enabling JSON Export for a Component](developing/components/enabling-json-exporter.md)
+    + [Launch Integration](developing/hybrid/launch-integration.md)
     + [SPA Reference Documents](developing/hybrid/reference-materials.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
@@ -134,6 +138,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
       + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
       + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
       + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+      +  [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
 + Developer Tools {#developer-tools}
   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
