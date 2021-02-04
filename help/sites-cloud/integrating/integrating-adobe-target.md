@@ -30,23 +30,25 @@ Adobe Launch is necessary for managing client-side properties for both Analytics
 
 An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). Refer to [this video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) and [this page](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) to learn how to create the Target IMS configuration.
 
-### Target Tenant ID and Target Client Code {#tenant-client}
+### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
-When configuring the Target Tenant ID and Target Client Code fields, please be aware of the following:
+When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields, please be aware of the following:
 
-1. For most customers, the Tenant ID and the Client Code values are the same. In which case, make sure both fields contain the correct information and are **identical**.
-2. If needed, the customer can also use **different** values for the Tenant ID and the Client Code fields (although it is a less common occurrence). In this case, be aware that:
+1. For most customers, the Tenant ID and the Client Code are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+2. For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields. In which case, be aware that:
 
 * You have the option to change the default Tenant ID set.
-* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field. Consequently, make sure both fields contain the correct information.
-* The backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
+* Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
+* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
+
+As stated previously, the first scenario is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 
 >[!NOTE]
 >
 > If you want to edit an already existing Target Configuration:
 >
-> 1. Re-enter the Tenant ID
-> 2. Re-connect to Target
+> 1. Re-enter the Tenant ID.
+> 2. Re-connect to Target.
 > 3. Save the configuration.
 
 ### Editing the Target Configuration {#edit-target-configuration}
