@@ -92,10 +92,6 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
 1. Start the AEM as a Cloud Service SDK
 
->[!NOTE]
->
->Do not push the configuration of step 8 into the project repo. This config is only required for a local development setup. AEM as a Cloud Service environments are already set up with the GraphQL proxy during the onboarding.
-
 Verify the setup via OSGI console: `http://localhost:4502/system/console/osgi-installer`. The list should include the CIF add-on related bundles, content-package, and OSGI configurations as defined in the feature model file.
 
 ## Project Setup {#project}
