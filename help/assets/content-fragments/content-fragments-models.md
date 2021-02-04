@@ -5,12 +5,6 @@ description: Content Fragment Models are used to create content fragments with s
 
 # Content Fragment Models {#content-fragment-models}
 
->[!CAUTION]
->
->The AEM GraphQL API for Content Fragments Delivery is available on request. 
->
->Please reach out to [Adobe Support](https://experienceleague.adobe.com/?lang=en&support-solution=General#support) to enable the API for your AEM as a Cloud Service program.
-
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
 To use Content Fragment Models you:
@@ -18,6 +12,7 @@ To use Content Fragment Models you:
 1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
+1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
@@ -29,50 +24,12 @@ To use Content Fragment Models you:
    >
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
-1. Specify the **Model Title**. You can also add **Tags**, and a **Description** if required.
+1. Specify the **Model Title**. You can also add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required.
 
    ![title and description](assets/cfm-models-02.png)
 
 1. Use **Create** to save the empty model. A message will indicate the success of the action, you can select **Open** to immediately edit the model, or **Done** to return to the console.
 
-## Defining your Content Fragment Model {#defining-your-content-fragment-model}
-
-The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
-
->[!CAUTION]
->
->Editing an existing content fragment model can impact dependent fragments.
-
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your content fragment model.
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
-
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
-
-1. **To Add a Field**
-
-    * Drag a required data type to the required location for a field.
-
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
-
-1. **To Remove a Field**
-
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
-
-1. Add all required fields, and define the related properties, as required. 
-
-1. Select **Save** to persist the definition.
-
-<!--
 ## Defining your Content Fragment Model {#defining-your-content-fragment-model}
 
 The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
@@ -104,7 +61,10 @@ The content fragment model effectively defines the structure of the resulting co
       ![data type to field](assets/cfm-models-04.png)
 
     * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
+
+      * Many properties are self-explanatory, for additional details see [Properties](#properties).
+      * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
+
       For example:
 
       ![field properties](assets/cfm-models-05.png)
@@ -120,7 +80,6 @@ The content fragment model effectively defines the structure of the resulting co
    ![save](assets/cfm-models-07.png)
 
 1. Select **Save** to persist the definition.
--->
 
 ## Data Types {#data-types}
 
@@ -142,8 +101,6 @@ A selection of data types is available for defining your model:
   * Allows fragment authors to access and select areas of tags
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
-
-<!--
 * **Fragment Reference**
   * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
@@ -154,7 +111,6 @@ A selection of data types is available for defining your model:
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
     * The JSON will be passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
--->
 
 ## Properties {#properties}
 
@@ -179,7 +135,21 @@ Many properties are self-explanatory, for certain properites additional details 
 
   Changing the **Default Type** in a content fragment model will only take effect on an existing, related, content fragment after that fragment is opened in the editor and saved.
 
-<!--
+* **Unique**
+  Content (for the specific field) must be unique across all content fragments created from the current model. 
+
+  This is used to ensure that content authors cannot repeat content already added in another fragment of the same model. 
+
+  For example, a **Single line text** field called `Country` in the Content Fragment Model cannot have the value `Japan` in two dependent Content Fragments. A warning will be issued when the second instance is attempted.
+
+  >[!NOTE]
+  >
+  >Uniqueness is ensured per language root. 
+
+  >[!NOTE]
+  >
+  >Variations can have the same *unique* value as variations of the same fragment, but not the same value as used in any variation of other fragments.
+
 * **Translatable**
   Checking the "Translatable" checkbox on a field in CF model editor will
 
@@ -187,7 +157,6 @@ Many properties are self-explanatory, for certain properites additional details 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
 
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
--->
 
 ## Validation {#validation}
 
@@ -197,20 +166,19 @@ Various data types now include the possibility to define validation requirements
   * Compare against a predefined regex.
 * **Number**
   * Check for specific values.
-
-<!--
 * **Content Reference**
   * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
   * Only assets of specified file size or smaller can be referenced. 
+  * Only images within a predefined range of width and/or height (in pixels) can be referenced. 
+* **Fragment Reference**
+  * Test for a specific content fragment model.
+
+<!--
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
 -->
 
-<!--
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
@@ -247,14 +215,9 @@ In addition to standard properties you can specify:
 * The content types that can be referenced.
 * Limitations for file sizes.
 * Image restraints.
--->
+  <!-- Check screenshot - might need update -->
+  ![Content Reference](assets/cfm-content-reference.png)
 
-<!-- Check screenshot - might need update
-
-   ![Content Reference](assets/cfm-content-reference.png)
--->
-
-<!--
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
 The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
@@ -299,24 +262,16 @@ In addition to standard properties you can define:
 * **Allow Fragment Creation**
 
   This will allow the fragment author to create a new fragment based on the appropriate model.
--->
 
-<!--
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
--->
+  <!-- Check screenshot - might need update -->
+  ![Fragment Reference](assets/cfm-fragment-reference.png)
 
-<!-- Check screenshot - might need update
-
-   ![Fragment Reference](assets/cfm-fragment-reference.png)
--->
-
-<!--
 >[!NOTE]
 >
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
 >
 >There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
--->
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 
@@ -358,6 +313,42 @@ To disable a Model that is flagged as **Enabled** you use the **Disable** option
 * The corresponding Quick Action (mouse-over the required Model).
 
 ![Disable an Enabled Model](assets/cfm-status-disable.png)
+
+## Allowing Content Fragment Models on your Assets Folder {#allowing-content-fragment-models-assets-folder}
+
+To implement content governance, you can configure **Policies** on Assets folder to control which Content Fragment Models are allowed for Fragment creation in that folder. 
+
+>[!NOTE]
+>
+>The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
+
+To configure the **Policies** for **Allowed Content Fragment Models**:
+
+1. Navigate and open **Properties** for the required Assets folder.
+
+1. Open the **Policies** tab, where you can configure:
+
+   * **Inherited from `<folder>`**
+
+     Policies are automatically inherited when creating new child folders; the policy can be reconfigured (and the inheritance broken) if sub-folders need to allow models different to the parent folder. 
+
+   * **Allowed Content Fragment Models by Path**
+
+     Multiple models can be allowed.
+
+   * **Allowed Content Fragment Models by Tag**
+
+     Multiple models can be allowed.
+
+   ![Content Fragment Model Policy](assets/cfm-model-policy-assets-folder.png)
+
+1. **Save** any changes.
+
+The Content Fragment Models allowed for a folder are resolved as follows:
+* The **Policies** for **Allowed Content Fragment Models**.
+* If empty, then try to determine the policy using the inheritance rules.
+* If the inheritance chain does not deliver a result, then look at the **Cloud Services** configuration for that folder (also first directly and then via inheritance).
+* If none of the above deliver any results, then there are no allowed models for that folder.
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
