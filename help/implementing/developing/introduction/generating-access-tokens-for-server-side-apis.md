@@ -5,13 +5,13 @@ description: Learn how to facilitate communication between a third party server 
 
 # Introduction {#introduction}
 
->[!IMPORTANT]
->
->This feature is not yet available. Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for an up to date list of features.
-
 Some architectures rely on making calls to AEM as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application that calls a server, which then makes API requests to AEM as a Cloud Service.
 
 The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
+
+>[!NOTE]
+>
+>In addition to this documentation, you can also consult the tutorial on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
