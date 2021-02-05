@@ -151,74 +151,8 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 1. Use the built-in tool of your browser to view the source of the page.
 1. Note that the content of the source is limited.
-
-   ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>WKND SPA React Home Page</title>
-
-        <meta name="template" content="spa-page-template"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.css" type="text/css">
-
-    <meta name="theme-color" content="#000000"/>
-    <link rel="icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/favicon.ico"/>
-    <link rel="apple-touch-icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/logo192.png"/>
-    <link rel="manifest" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/manifest.json"/>
-
-    <!-- AEM page model -->
-    <meta property="cq:pagemodel_root_url" content="/content/wknd-spa-react/us/en.model.json"/>
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Asar&display=swap" rel="stylesheet"/>
-    <meta property="cq:datatype" content="JSON"/>
-    <meta property="cq:wcmmode" content="edit"/>
-
-    <link rel="stylesheet" href="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.css" type="text/css">
-    <link rel="stylesheet" href="/etc.clientlibs/wcm/foundation/clientlibs/main.min.css" type="text/css">
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/messaging.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/utils.min.js"></script>
-    <script type="text/javascript" src="/libs/granite/author/deviceemulator/clientlibs.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wcm/foundation/clientlibs/main.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
-
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/header","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/header/header.html","totalTime":2,"selfTime":2}-->
-
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.css" type="text/css">
-
-    </head>
-
-    <body class="page basicpage">
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="spa-root"></div>
-
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.js"></script>
-
-    <script type="text/javascript" src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.js"></script>
-
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/pagemodel/messaging.min.js"></script>
-
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-author.min.css" type="text/css">
-
-    <!--cq{"decorated":true,"type":"cq/cloudserviceconfigs/components/servicecomponents","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudservices","selectors":null,"servlet":"Script /libs/cq/cloudserviceconfigs/components/servicecomponents/servicecomponents.jsp","totalTime":2,"selfTime":2}-->
-
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/footer","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/footer/footer.html","totalTime":2,"selfTime":2}-->
-
-    </body>
-    </html>
-    <!--cq{"decorated":false,"type":"wknd-spa-react/components/page","path":"/content/wknd-spa-react/us/en/home/jcr:content","selectors":null,"servlet":"Script /apps/spa-project-core/components/page/page.html","totalTime":39,"selfTime":33}-->
-   ```
-
-   The page does not have any content within its body. It is primarily made up of stylesheets and a call to various scripts such as `clientlib-react.min.js`.
-
-   These scripts are the primary drivers of this application and are responsible for rendering all content.
+   * The page does not have any content within its body. It is primarily made up of stylesheets and a call to various scripts such as `clientlib-react.min.js`.
+   * These scripts are the primary drivers of this application and are responsible for rendering all content.
 
 1. Use your browser's built-in tools to inspect the page. See the content of the DOM fully loaded.
 
@@ -287,6 +221,14 @@ In the following section we will explore the contract that allows the SPA Editor
    >This behavior differs from server-side rendered pages in AEM, where there is a `cq` element inserted for each editable component.
    >
    >This approach in the SPA Editor removes the need to inject custom elements, relying only an additional data attribute, making the markup simpler for the frontend developer.
+
+## Headful and Headless in AEM {#headful-headless}
+
+SPAs can be enabled with flexible levels of integration within AEM including SPAs developed and maintained outside of AEM. Additionally, SPAs can be leveraged within AEM while also using AEM to deliver content to additional endpoints headlessly.
+
+>[!TIP]
+>
+>See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
 
 ## Next Steps {#next-steps}
 
