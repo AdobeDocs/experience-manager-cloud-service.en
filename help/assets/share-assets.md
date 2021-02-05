@@ -21,7 +21,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 >[!NOTE]
 >
 >* You need Edit ACL permission on the folder or the asset that you want to share as a link.
->* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
+>* Before you share a link with users, ensure that [outbound email is enabled](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Otherwise, an error occurs.
 
 1. In the [!DNL Assets] user interface, select the asset to share as a link.
 1. From the toolbar, click the **[!UICONTROL Share Link]**. An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
