@@ -18,7 +18,7 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 
 >[!IMPORTANT]
 >
->The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the existing deployments, administrators follow these steps to configure the integration.
+>[!DNL Experience Manager Assets] deployments created after [August 2020 release](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the older deployments, administrators can follow the following steps to configure the integration.
 
 ## Integrate with Adobe Developer Console {#aio-integration}
 
@@ -102,7 +102,7 @@ When the certificate expires it is no longer trusted. To add a new certificate, 
 
 1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing service in the Project. Upload the new certificate and configure. For more information on configuration, see the instructions in [Create Adobe Developer Console integration](#create-aio-integration).
 
-## Enable smart tagging for newly uploaded assets (Optional) {#enable-smart-tagging-for-uploaded-assets}
+## Enable auto-tagging when assets are uploaded (Optional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. In [!DNL Experience Manager], go to **[!UICONTROL Tools > Workflow > Models]**.
 1. On **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Update Asset]** workflow model.
