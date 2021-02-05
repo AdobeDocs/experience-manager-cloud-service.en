@@ -22,6 +22,10 @@ By default, for an Adobe Managed CDN setup, all public traffic can make its way 
 
 Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) to learn more.
 
+>[!CAUTION]
+>
+>Only requests from the allowed IPs will be served by AEM’s managed CDN. If you point your own CDN to the AEM managed CDN then make sure the IPs of your CDN are included in the allowlist.
+
 ## Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
 If a customer must use its existing CDN, they may manage it and point it to Adobe's managed CDN, providing the following are satisfied:
