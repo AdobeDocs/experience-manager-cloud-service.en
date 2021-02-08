@@ -10,7 +10,7 @@ contentOwner: AG
 
 In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. This extended support is provided using [asset microservices](asset-microservices-configure-and-use.md).
 
-The highlights for Asset conversion using asset microservices include:
+The highlights for asset conversion using asset microservices include:
 
 * Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
 * Key [imaging file formats](#image-formats).
@@ -18,7 +18,7 @@ The highlights for Asset conversion using asset microservices include:
 * Common [document formats](#document-formats), including Microsoft Office and Open Document formats.
 * Wide range of [video](#video-formats) and [audio](#audio-formats) formats.
 
-The following legend describes the level of support.
+The following legend describes the level of support for each format.
 
 | Support level |         Description         |
 | ------------- | --------------------------- |
@@ -224,3 +224,4 @@ The document formats supported for asset management features are as follows.
 >[!MORELIKETHIS]
 >
 >* [Asset processing using asset microservices](asset-microservices-overview.md)
+>* [Supported file formats for smart tagging of text-based assets](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
