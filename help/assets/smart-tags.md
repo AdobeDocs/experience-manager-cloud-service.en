@@ -20,7 +20,7 @@ You can tag the following types of assets:
 
 * **Images**: Images in many formats are tagged using the Adobe Sensei's smart content services. You [create a training model](#train-model) and then [apply smart tags](#tag-assets) to images.
 * **Video assets**: Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Videos are auto-tagged](/help/assets/smart-tags-video-assets.md) when you upload new videos or re-process existing ones.
-* **Text-based assets**: [!DNL Experience Manager Assets] auto-tags the supported text-based assets when uploaded.
+* **Text-based assets**: [!DNL Experience Manager Assets] auto-tags the supported text-based assets when uploaded. Understand more about [smart tagging of text-based assets](#smart-tag-text-based-assets).
 
 ## Supported asset types {#smart-tags-supported-file-formats}
 
