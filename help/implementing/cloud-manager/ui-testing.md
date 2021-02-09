@@ -9,7 +9,7 @@ UI tests are Selenium-based tests packaged in a Docker image in order to allow a
 
 >[!NOTE]
 > Stage and production pipelines created before February 10, 2021, need to be updated in order to use the UI tests as described on this page.
-> See [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) for information pipeline configuration.
+> See [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) for information about pipeline configuration.
  
 ## Building UI Tests {#building-ui-tests}
 
