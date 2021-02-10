@@ -1,16 +1,16 @@
-* ---
-title: Accessibility in [!DNL Dynamic Media]
+---
+title: Accessibility in Dynamic Media
 description: Learn about accessibility in Dynamic Media and Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 ---
 
-# Accessibility in Dynamic Media {#working-with-three-d-assets-dm}
+# Accessibility in Dynamic Media {#accessibility-in-dm}
 
 Dynamic Media supports keyboard control and assistive technologies, such as JAWS and NVDA screen readers, across the authoring user interface.
 
-## Keyboard accessibility support in Dynamic Media
+## Keyboard accessibility support in Dynamic Media {#keyboard-support-in-dm}
 
 Because Dynamic Media is a plug-in to Experience Manager Assets, most of the keyboard control behavior is the same as in Experience Manager Assets. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in Experience Manager Assets. It also reacts to the `Spacebar` key as in Experience Manager Assets. See [keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
