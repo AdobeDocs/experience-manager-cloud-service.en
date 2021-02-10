@@ -239,10 +239,10 @@ If port 465 has been requested:
 
 * set `smtp.port` to `465`
 * set `smtp.ssl` to `true`
-* set `smtp.starttls` to `false`
 
 If port 587 has been requested (only allowed if the mail server does not support port 465):
 
 * set `smtp.port` to `587`
 * set `smtp.ssl` to `false`
-* set `smtp.starttls` to `true`
+
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.tls` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.

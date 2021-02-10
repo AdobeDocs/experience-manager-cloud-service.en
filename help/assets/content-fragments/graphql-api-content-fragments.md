@@ -13,6 +13,13 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 * Ensuring that delivery is limited to the specific requirements,
 * Allowing for bulk delivery of exactly what is needed for rendering as the response to a single API query.
 
+>[!NOTE]
+>
+>GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
+>
+>* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
+
 ## The GraphQL API {#graphql-api}
 
 GraphQL is:
@@ -83,11 +90,9 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-<!--
 You can also perform:
 
 * [Persisted Queries, that are cached](#persisted-queries-caching)
--->
 
 ## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
 
@@ -97,9 +102,13 @@ The endpoint is the path used to access GraphQL for AEM. Using this path you (or
 * send your GraphQL queries, 
 * receive the responses (to your GraphQL queries).
 
-The GraphQL for AEM endpoint is:
+The repository path of the GraphQL for AEM endpoint is:
 
 `/content/cq:graphql/global/endpoint`
+
+Your app can use the following path in the request URL:
+
+`/content/_cq_graphql/global/endpoint.json`
 
 To enable the endpoint for GraphQL for AEM you need to:
 
@@ -112,47 +121,84 @@ To enable the endpoint for GraphQL for AEM you need to:
 
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
-To make GraphQL queries in AEM you need to enable and configure an endpoint. You can do this by installing a dedicated package: the [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the default GraphQL endpoint.
+>[!NOTE]
+>
+>See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
 
-See the package **README** for full details.
+To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/global/endpoint`:
+
+* Nodes `cq:graphql` and `global` must be of type `sling:Folder`.
+* Node `endpoint` must be of type `nt:unstructured` and contain a `sling:resourceType` of `graphql/sites/components/endpoint`.
 
 >[!CAUTION]
 >
->There is currently a known issue after installing this package:
+>There is currently a known issue with the endpoint:
 >
 >* The entry `cq:graphql` is seen in the **Sites** console; at the top level. 
 >  This must not be used.
 
 >[!CAUTION]
 >
->The endpoint from the content package is accessible to everyone. This can - especially on publish instances - be an attack vector, as GraphQL queries can impose a heavy load on the server.
+>The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
->Therefore, you might be interested in setting ACLs, appropriate to your use case, on the endpoint. 
+>You can set up ACLs, appropriate to your use case, on the endpoint. 
 
 >[!NOTE]
 >
->This package can be used as a blueprint to be added to your project sources (the recommended scenario).
+>Your endpoint will not work out-of-the-box. You will have to provide [Additional Configurations for GraphQL Endpoint](#additional-configurations-graphql-endpoint) separately.
 
 >[!NOTE]
 >Additionally you can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
 
 ### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
 
+>[!NOTE]
+>
+>See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
+
 Additional configurations are required:
 
 * Dispatcher: 
-  * To allow required URLs.
-  * Manatory.
+  * To allow required URLs
+  * Mandatory
 * Vanity URL: 
+  * To allocate a simplified URL for the endpoint
+  * Optional
+* OSGi Configuration:
+  * GraphQL Servlet Configuration:
+    * Handles requests to the endpoint
+    * The configuration name is `org.apache.sling.graphql.core.GraphQLServlet`. It needs to be provided as an OSGi factory configuration
+    * `sling.servlet.extensions` must be set to `[json]`
+    * `sling.servlet.methods` must be set to `[GET,POST]`
+    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
+    * Mandatory
+  * Schema Servlet Configuration:
+    * Creates the GraphQL schema
+    * The configuration name is `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`. It needs to be provided as an OSGi factory configuration
+    * `sling.servlet.extensions` must be set to `[GQLschema]`
+    * `sling.servlet.methods` must be set to `[GET]`
+    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
+    * Mandatory
+  * CSRF Configuration: 
+    * Security protection for the endpoint
+    * The configuration name is `com.adobe.granite.csrf.impl.CSRFFilter`
+    * Add `/content/cq:graphql/global/endpoint` to the existing list of excluded paths (`filter.excluded.paths`)
+    * Mandatory
+
+### Supporting packages {#supporting-packages}
   * To allocate a simplified URL for the endpoint.
   * Optional.
 * CSRF & Referrer Filter Configuration: 
   * Security protection for the endpoint.
   * Mandatory.
 
-These configurations can be realized by installing a dedicated package: the [GraphQL Sample Configuration](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package. This archive contains a sample configuration that can be used to set up GraphQL on AEM.
+To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package.
 
-See the package **README** for full details.
+This archive contains both [the required additional configuration](#additional-configurations-graphql-endpoint) and [the GraphQL endpoint](#enabling-graphql-endpoint). If installed on a plain AEM instance, it will expose a fully working GraphQL endpoint at `/content/cq:graphql/global/endpoint`.
+
+This package is meant to be a blueprint for your own GraphQL projects. See the package **README** for details on how to use the package.
+
+Should you prefer to manually create the required configuration, Adobe also provides a dedicated [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the GraphQL endpoint only, without any configuration.
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -176,7 +222,9 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip) package.
 
+<!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
+-->
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
@@ -219,7 +267,7 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
    This shows that the generated type `ArticleModel` contains several [fields](#fields). 
    
-   * Three of them have been controlled by the user: `author`, `main` and `linked_article`.
+   * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
 
    * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceeding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
@@ -292,7 +340,7 @@ The following code will display the paths of all Content Fragments that were cre
 
 ```xml
 {
-  persons {
+  personList {
     items {
       _path
     }
@@ -304,11 +352,13 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 
 ```xml
 {
-    person(_path="/content/dam/path/to/fragment/john-doe") {
-        _path
-        name
-        first-name
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      firstName
+      name
     }
+  }
 }
 ```
 
@@ -341,12 +391,14 @@ To query for metadata:
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _path
-    _metadata {
-      stringMetadata {
-        name
-        value
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      _metadata {
+        stringMetadata {
+          name
+          value
+        }
       }
     }
   }
@@ -370,8 +422,10 @@ The `_variations` field has been implemented to simplify querying the variations
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _variations
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _variations
+    }
   }
 }
 ```
@@ -386,14 +440,14 @@ See [Sample Query - All Cities with a Named Variation](/help/assets/content-frag
 
 GraphQL permits variables to be placed in the query. For more information you can see the [GraphQL documentation for GraphiQL](https://graphql.org/learn/queries/#variables).
 
-For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL:
+For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL.
 
 ![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
 
 ```xml
 ### query
 query GetArticlesByVariation($variation: String!) {
-    articles(variation: $variation) {
+    articleList(variation: $variation) {
         items {
             _path
             author
@@ -416,10 +470,11 @@ For example there you can include the `adventurePrice` field in a query for all 
 ![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
 
 ```xml
-query getAdventureByType($includePrice: Boolean!) {
-  adventures {
+### query
+query GetAdventureByType($includePrice: Boolean!) {
+  adventureList {
     items {
-      adventureType
+      adventureTitle
       adventurePrice @include(if: $includePrice)
     }
   }
@@ -473,12 +528,6 @@ For further examples, see:
 * [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## Persisted Queries (Caching) {#persisted-queries-caching}
-
->[!CAUTION]
->
->Persisted queries for the AEM GraphQL API will be released in the near future. 
->
->The related documentation is already available for preview purposes.
 
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
@@ -752,7 +801,7 @@ Example: Access is granted for the requests having a Referrer `my.domain`
 >
 >* only grant access to trusted domains 
 >* make sure no sensitive information is exposed 
->* not use a wildcard [*] syntax which will not only disable authenticated access to the GraphQL endpoint but also expose it to the entire world.
+>* not use a wildcard [*] syntax; this will both disable authenticated access to the GraphQL endpoint and also expose it to the entire world.
 
 >[!CAUTION]
 >
