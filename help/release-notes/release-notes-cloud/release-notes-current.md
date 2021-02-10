@@ -36,9 +36,11 @@ The following release (2021.2.0) will be on February 25, 2021.
 
 * Ability to preview JSON output directly in Content Fragment editor.
 
+<!--
 ### Progressive Web Apps (PWAs) {#pwa}
 
 * [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
