@@ -11,6 +11,13 @@ With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Frag
 >
 >See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
 
+>[!NOTE]
+>
+>GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
+>
+>* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
+
 ## Headless CMS {#headless-cms}
 
 A Headless Content Management System (CMS) is:
