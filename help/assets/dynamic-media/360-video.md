@@ -13,7 +13,7 @@ This section describes working with the 360/VR Video viewer to render equirectan
 
 Spatial audio is not currently supported; if audio is mixed in stereo, the balance (L/R) does not change as the customer changes the camera viewing angle.
 
-See [Using Dynamic Media 360 Videos and Custom Video thumbnail with AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+See [Using Dynamic Media 360 Videos and Custom Video thumbnail with AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
