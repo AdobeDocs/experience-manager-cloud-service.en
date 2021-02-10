@@ -186,11 +186,6 @@ Additional configurations are required:
     * Mandatory
 
 ### Supporting packages {#supporting-packages}
-  * To allocate a simplified URL for the endpoint.
-  * Optional.
-* CSRF & Referrer Filter Configuration: 
-  * Security protection for the endpoint.
-  * Mandatory.
 
 To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package.
 
