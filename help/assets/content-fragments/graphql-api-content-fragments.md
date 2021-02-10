@@ -721,7 +721,7 @@ Here are the steps required to persist a given query:
 >
 >For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
 
-To allow a third party website to consume JSON output, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint. 
+To allow a third party website to consume JSON output, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint(s). 
 This configuration should specify a trusted website origin `alloworigin` or `alloworiginregexp` for which access should be granted.
 
 Example: Access to GraphQL endpoint & persisted queries endpoint is granted for `https://my.domain`
@@ -763,8 +763,7 @@ If you have configured a vanity path for the endpoint, you can also use it in `a
 #### Referrer Filter
 
 In additional to CORS configuration, a Referrer filter must be configured to allow access from 3rd party host. 
-This is done by adding an appropriate OSGi Referrer configuration file for the desired endpoint. 
-This configuration should specify a trusted website host name `allow.hosts` or `allow.hosts` for which access should be granted.
+This is done by adding an appropriate OSGi Referrer configuration file which should specify a trusted website host name `allow.hosts` or `allow.hosts` for which access should be granted.
 
 Example: Access is granted for the requests having a Referrer `my.domain`
 
