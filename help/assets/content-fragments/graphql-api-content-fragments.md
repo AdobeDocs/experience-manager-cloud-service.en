@@ -13,6 +13,13 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 * Ensuring that delivery is limited to the specific requirements,
 * Allowing for bulk delivery of exactly what is needed for rendering as the response to a single API query.
 
+>[!NOTE]
+>
+>GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
+>
+>* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
+
 ## The GraphQL API {#graphql-api}
 
 GraphQL is:
