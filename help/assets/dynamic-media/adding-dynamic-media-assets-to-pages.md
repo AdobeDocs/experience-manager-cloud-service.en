@@ -5,9 +5,9 @@ description: How to add Dynamic Media components to a page in Adobe Experience M
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You do this by entering Layout mode and enabling the Dynamic Media components. Then you can add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
+To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You enter Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
-You add Dynamic Media assets directly to the page if you are using Experience Manager as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
+You add Dynamic Media assets directly to the page if you are using Experience Manager as your WCM. If you are using a third party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ The Dynamic Media components that are available include the following:
 
 ### Component: Dynamic Media {#dynamic-media-component}
 
-The Dynamic Media component is smart. Depending on whether you add an image or a video, you have various options. The component supports image presets, image-based viewers such as image sets, spin sets, mixed media sets, and video. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based on screen size. All viewers are HTML5 viewers.
+The Dynamic Media component is smart. Depending on whether you add an image or a video, you have various options. The component supports image presets, image-based viewers such as image sets, spin sets, mixed media sets, and video. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based on-screen size. All viewers are HTML5 viewers.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ The Dynamic Media component is smart. Depending on whether you add an image or a
 
 When you add the Dynamic Media component, and **[!UICONTROL Dynamic Media Settings]** is blank or you cannot add an asset properly, check the following:
 
-* The image has a pyramid tiff file. Images imported before dynamic media is enabled do not have a pyramid tiff file.
+* The image has a pyramid tiff file. Images imported before Dynamic Media is enabled do not have a pyramid tiff file.
 
 #### When working with images {#when-working-with-images}
 
@@ -239,7 +239,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 Interactive Media component is for those assets that have interactivity on them such hotspots or image maps. If you have an interactive image, interactive video, or carousel banner, use the **[!UICONTROL Interactive Media]** component.
 
-The Interactive Media component is smart. Depending on whether you add an image or a video, you have various options. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based on screen size. All viewers are HTML5 viewers.
+The Interactive Media component is smart. Depending on whether you add an image or a video, you have various options. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based on-screen size. All viewers are HTML5 viewers.
 
 >[!NOTE]
 >
@@ -304,7 +304,7 @@ If the viewer preset you are looking for is not visible, check to ensure that it
 
 Use the **[!UICONTROL Video 360 Media]** component to render equirectangular video on your web page for an immersive viewing experience of a room, property, location, landscape, or medical procedure.
 
-During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.
+During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverages their built-in gyroscopic controls.
 
 The viewer includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.
 
@@ -312,7 +312,7 @@ The viewer includes native support for the delivery of 360 video assets. By defa
 
 You can edit the following setting by tapping **[!UICONTROL Configure]** in the component.
 
-* **[!UICONTROL Viewer Preset]**&mdash;Select an existing viewer from the Viewer preset drop-down menu. Use Video360VR for end users who use virtual reality glasses. Includes basic video playback controls and social media features. Use Video360_social which includes basic video playback controls. Video rendering is done in stereo mode. Manual point-of-view control is off but gyroscopic control is on. There is no social media features.
+* **[!UICONTROL Viewer Preset]**&mdash;Select an existing viewer from the Viewer preset drop-down menu. Use Video360VR for end users who use virtual reality glasses. Includes basic video playback controls and social media features. Use Video360_social which includes basic video playback controls. Video rendering is done in stereo mode. Manual point-of-view control is off but gyroscopic control is on. There are no social media features.
 
 If the viewer preset you are looking for is not visible, check to ensure that it is published. You must publish viewer presets before you can use them. See [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
