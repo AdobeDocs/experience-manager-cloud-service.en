@@ -33,9 +33,9 @@ As a best practice for image sizing, use `&wid=<value>&hei=<value>&resMode=sharp
 
 Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the following helpful resources:
 
-Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to AEM as well.
+* Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to AEM as well.
 
-On Adobe TV, watch [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+* Watch [Using Image Sharpening with AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 With AEM, you can sharpen images on ingestion, on delivery, or both. In most cases, however, you should sharpen images using only one method or the other, but not both. Sharpening images on delivery, on a URL, typically gives you the best results.
 
