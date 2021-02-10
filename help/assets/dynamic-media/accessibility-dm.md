@@ -1,4 +1,4 @@
----
+* ---
 title: Accessibility in [!DNL Dynamic Media]
 description: Learn about accessibility in Dynamic Media and Dynamic Media Viewers.
 contentOwner: Rick Brough
@@ -12,20 +12,20 @@ Dynamic Media supports keyboard control and assistive technologies, such as JAWS
 
 ## Keyboard accessibility support in Dynamic Media
 
-Because Dynamic Media is a plug-in to Experience Manager Assets, most of the keyboard control behavior is exactly the same as in Experience Manager Assets. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in Experience Manager Assets, and reacts to the `Spacebar` key as in Experience Manager Assets. See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Because Dynamic Media is a plug-in to Experience Manager Assets, most of the keyboard control behavior is the same as in Experience Manager Assets. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in Experience Manager Assets. It also reacts to the `Spacebar` key as in Experience Manager Assets. See [keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Keystrokes supported by individual user interface elements in Dynamic Media are-in most cases-obvious and easy to discover. Keyboard control in Dynamic Media is about the following:
+Keystrokes supported by Individual user interface elements in Dynamic Media are-in most cases-obvious and easy to find. Keyboard control in Dynamic Media is about the following:
 
 * Ability to use `Tab` and `Shift+Tab` keystrokes to navigate between interactive elements on the page.
 Using `Tab` advances input focus to the next user interface element in the tabbing order; using `Shift+Tab` brings input focus back to the previous user interface element. 
 The focus traversal follows the natural user interface element location on the screen and moves in a left-to-right, then top-to-bottom order. In addition, if any field has an error, you can press `Tab` to move the focus to it.
 * Ability to use the `Spacebar` and `Enter` key to activate standard user interface elements, such as buttons, drop-down list, and so on.
-* Ability to see the keyboard focus highlight on the active element. The user interface element that has input focus may receive a visual focus indication as a border rendered around the user interface element.
+* Ability to see the keyboard focus highlight on the active element. The user interface element that has input focus received a visual focus indication as a border rendered around the user interface element.
 * In the Hotspot editor, you can use some custom keystrokes, such as arrow keys, to interact with complex user interface elements to reposition hotspots. 
-* In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. In addition, you have the ability to use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` functions as desired to navigate between interactive elements on the page.
-* In the Image Crop/Smart Crop editor, you have the ability to do the following:
-  * Use arrow keys to crop the frame size, or re-position the image, or both.
-  * The first `Tab` stop highlights the entire image frame. You can then use arrow keys on the keyboard to re-position the frame.
+* In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. In addition, you can use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` functions as desired to navigate between interactive elements on the page.
+* In the Image Crop/Smart Crop editor, you can do the following:
+  * Use arrow keys to crop the frame size, or reposition the image, or both.
+  * The first `Tab` stop highlights the entire image frame. You can then use arrow keys on the keyboard to reposition the frame.
   * The next four `Tab` stops are the frame's four corners. When focus is placed on a frame corner, the corner is highlight. Again, you can use arrow keys on the keyboard to move the focused corner.
   See [Editing the smart crop or smart swatch of a single image](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
@@ -39,13 +39,13 @@ The focus traversal follows the natural user interface element location on the s
 
 ## Assistive technology support in Dynamic Media {#assistive-technology=support-for-dm}
 
-Dynamic Media user interface elements work with assistive technologies such as screen readers. For example, it recognises landmarks on a page when you navigate landmarks using keyboard shortcut `D` or regions using keyboard shortcut `R`. It also narrates the heading when navigating using the heading keyboard shortcut `H`.
+Dynamic Media user interface elements work with assistive technologies such as screen readers. For example, it recognizes landmarks on a page when you navigate landmarks using keyboard shortcut `D` or regions using keyboard shortcut `R`. It also narrates the heading when navigating using the heading keyboard shortcut `H`.
 
 ## Keyboard accessibility support in Dynamic Media viewers {#keyboard-accessibility-for-dm-viewers}
 
 All out-of-the-box Dynamic Media viewers components support keyboard accessibility for your customers.
 
-See [Keyboard accessiblity and navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in the Dynamic Media Viewers Reference Guide.
+See [Keyboard accessibility and navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in the Dynamic Media Viewers Reference Guide.
 
 ## Assistive technology support in Dynamic Media viewers {#assistive-technology=support-for-dm-viewers}
 
