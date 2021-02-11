@@ -39,6 +39,7 @@ For more information, please visit [Onboarding to Experience Manager as a Cloud 
     * IDP Configuration.
 * AEM Administrator:  
     * Manage local groups, permissions, and privileges.
+
 ### 3. Onboard Users and Manage Access in Admin Console: 
  
 >   ![processoverview3.jpg](./assets/processOverview3.jpg) 
