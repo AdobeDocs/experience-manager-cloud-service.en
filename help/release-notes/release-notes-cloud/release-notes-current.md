@@ -139,7 +139,7 @@ The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
 The Release Date for Best Practices Analyzer v2.1.0 is February 11, 2021.
 
-### What is new in [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
 * Ability to detect the use of AEM Forms and AEM Forms implementation and indicate areas that are relevant to migrating to AEM Forms as a Cloud Service.
 * Ability to detect and report on usage and count of custom components and templates.
