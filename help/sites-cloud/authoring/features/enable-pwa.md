@@ -1,6 +1,8 @@
 ---
 title: Enabling Progressive Web App Features
 description: AEM Sites allows the content author to enable progressive web app capabilities to any site through simple configuration instead of coding.
+hide: yes
+hidefromtoc: yes
 ---
 
 # Enabling Progressive Web App Features {#enabling-pwa}
