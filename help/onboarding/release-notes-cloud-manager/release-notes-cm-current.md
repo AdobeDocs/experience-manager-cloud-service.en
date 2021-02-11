@@ -23,11 +23,11 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 * The list of deprecated APIs identified during code scanning has been refined to include additional classes and methods deprecated in the latest Cloud Service SDK releases.
 
-* SonarQube profile for Cloud Manager updated to remove Sonar rule squid:S2142. This will no longer conflict with Thread Interruption Checks.
+* SonarQube profile for Cloud Manager updated to remove Sonar rule squid:S2142. This will no longer conflict with Thread Interruption checks.
 
 * Cloud Manager UI will inform the user who may not temporarily not be able to add/update domain name because the associated environment either has a running pipeline attached to it or currently in the waiting for the approval step.
 
-* Properties set in customer `pom.xml` files prefixed with sonar and will now be dynamically removed in order to avoid build and quality scanning failures.
+* Properties set in customer `pom.xml` files prefixed with Sonar will now be dynamically removed in order to avoid build and quality scanning failures.
 
 * Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed. 
 
@@ -38,7 +38,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 * Cloud Manager UI will now inform a user if the certificate private keys does not meet the 2048 bit limit with an appropriate error message.
 
-* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed.
+* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that is currently being deployed.
 
 * In some cases, an internal issue may cause environment deletion to be stuck. 
 

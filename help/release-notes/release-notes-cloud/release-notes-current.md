@@ -62,15 +62,37 @@ The following release (2021.2.0) will be on February 25, 2021.
 
 ### Release Date {#release-date-cm}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January 14, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is February 11, 2021.
+
+### What is New {#what-is-new-cloud-manager}
+
+* Cloud Manager Production pipeline will now include Custom UI testing capability.
+
+* Assets customers will now be able to choose when and where to deploy their Brand Portal instance in a self-service way via Cloud Manager UI. For a regular (non sandbox) program with Assets solution, Brand Portal can now be provisioned on the Production environment. The provisioning can be done only once on Production environment.
+
+* The AEM Project Archetype used in Project and Sandbox Creation has been updated to version 25. 
+
+* The list of deprecated APIs identified during code scanning has been refined to include additional classes and methods deprecated in the latest Cloud Service SDK releases.
+
+* SonarQube profile for Cloud Manager updated to remove Sonar rule squid:S2142. This will no longer conflict with Thread Interruption checks.
+
+* Cloud Manager UI will inform the user who may not temporarily not be able to add/update domain name because the associated environment either has a running pipeline attached to it or currently in the waiting for the approval step.
+
+* Properties set in customer `pom.xml` files prefixed with Sonar will now be dynamically removed in order to avoid build and quality scanning failures.
+
+* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* Assets Production instance may on occasion, show the Brand Portal status on the **Environments** detail page as *Pending* without allowing the user to take any action.
+* Matching SSL certificate against a domain name is no longer case sensitive.
 
-* When triggering a de-hibernate from Cloud Manager, sometimes a failure message was displayed even when de-hibernation was started successfully.
+* Cloud Manager UI will now inform a user if the certificate private keys does not meet the 2048 bit limit with an appropriate error message.
 
-* Rare cases of failure encountered in environment creation or deletion has been addressed.
+* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that is currently being deployed.
+
+* In some cases, an internal issue may cause environment deletion to be stuck.
+
+* Some pipeline failures were incorrectly reported as pipeline errors.
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
