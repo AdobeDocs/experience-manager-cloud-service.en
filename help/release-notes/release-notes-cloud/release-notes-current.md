@@ -113,9 +113,17 @@ Two new analyzers have been added for this release:
 
 For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
 
-## Cloud Transition Tools {#code-transition-tools}
+## Content Transfer Tool {#content-transfer-tool}
 
 ### Release Date {#release-date-ctt}
+
+he Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* When mapping multiple users, some users’ IMS IDs were being mapped incorrectly. This has been fixed.
+
+### Release Date {#release-date-ctt-feb}
 
 The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
@@ -124,3 +132,24 @@ The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 * New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 * Content Transfer Tool now migrates all groups and users referenced in the migration set including children.
 * Users are allowed to select certain paths under `/etc` when creating migration sets.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.0 is February 11, 2021.
+
+### What is new in [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}
+
+* Ability to detect the use of AEM Forms and AEM Forms implementation and indicate areas that are relevant to migrating to AEM Forms as a Cloud Service.
+* Ability to detect and report on usage and count of custom components and templates.
+* Ability to detect the type of node store and data store used.
+* Ability to detect the usage of Dynamic Media.
+* Ability to detect the Java version used.
+
+
+
+
+
+
+
