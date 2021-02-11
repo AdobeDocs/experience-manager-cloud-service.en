@@ -63,7 +63,7 @@ Deciding on which capability to use
 
 To support asset distribution use cases, other solutions should be considered:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable, SaaS add-on to AEM Assets to publish assets.
+* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable add-on to Assets to publish assets.
 
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
 * AEM [link share](/help/assets/share-assets.md) to share assets ad hoc using links.

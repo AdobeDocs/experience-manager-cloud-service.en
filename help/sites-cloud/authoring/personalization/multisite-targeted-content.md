@@ -179,9 +179,9 @@ To create an area as a livecopy:
 
 1. In the **Rollout Configs** drop-down menu, select the appropriate configuration.
 
-   See Installed Rollout Configurations for descriptions of each option. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   See [Installed Rollout Configurations](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) for descriptions of each option.
 
-   See Creating and Synchronizing Live Copies for more information on live copies. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   See [Creating and Synchronizing Live Copies](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) for more information on live copies.
 
    >[!NOTE]
    >
