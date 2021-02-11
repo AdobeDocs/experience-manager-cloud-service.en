@@ -13,10 +13,11 @@ Once auto-provisioning is complete:
 * Review role-based permissions for users to determine permission assignments in Cloud Manager
 <br>  
 > ![processoverview.jpg](./assets/processOverview.jpg)
+<br> 
+
+For more information, please visit [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 <br>  
-> For more information, please visit [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
-<br>  
-### Resources and Links  
+### Resources and Links <br> 
 • [IMS Support for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)   
 • [Role Based Permissions in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)  
 • [Accessing Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)  
