@@ -10,11 +10,10 @@ Once auto-provisioning is complete:
 * Access Rights Granted – Adobe will create an Organization within Adobe Identity Management System (IMS)
 * Designated Administrator will have administrator permissions by default
 * Administrator can add users and roles for additional team members through the Admin Console
-* Review role-based permissions for users to determine permission assignments in Cloud Manager
-<br>  
-> ![processoverview.jpg](./assets/processOverview.jpg)
-<br> 
+* Review role-based permissions for users to determine permission assignments in Cloud Manager  
 
+> ![processoverview.jpg](./assets/processOverview.jpg)
+ 
 For more information, please visit [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 <br>  
 ### Resources and Links <br> 
