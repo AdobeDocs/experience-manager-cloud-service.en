@@ -765,7 +765,7 @@ If you have configured a vanity path for the endpoint, you can also use it in `a
 In additional to CORS configuration, a Referrer filter must be configured to allow access from 3rd party host. 
 This is done by adding an appropriate OSGi Referrer Filter configuration file which should specify a trusted website host name `allow.hosts` or `allow.hosts.regexp` for which access should be granted.
 
-Example: Access is granted for the requests having a Referrer `https://my.domain` on port 443.
+Example: Access is granted for the requests having a Referrer `https://my.domain` on port 443 (HTTPS).
 
 ```xml
 {
