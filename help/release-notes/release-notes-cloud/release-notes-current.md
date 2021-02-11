@@ -117,7 +117,7 @@ For more information, see the documentation [here](https://experienceleague.adob
 
 ### Release Date {#release-date-ctt}
 
-he Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
+The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
 
 ### Bug Fixes {#bug-fixes-ctt}
 
