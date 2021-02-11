@@ -82,6 +82,8 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 * Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed.
 
+* Additional Code Quality Rules have been added to cover Cloud Service Compatibility issues.
+
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
 * Matching SSL certificate against a domain name is no longer case sensitive.
