@@ -13,6 +13,13 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 * Ensuring that delivery is limited to the specific requirements,
 * Allowing for bulk delivery of exactly what is needed for rendering as the response to a single API query.
 
+>[!NOTE]
+>
+>GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
+>
+>* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
+
 ## The GraphQL API {#graphql-api}
 
 GraphQL is:
@@ -125,9 +132,9 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 
 >[!CAUTION]
 >
->There is currently a known issue with the endpoint:
+>In certain releases there is currently a known issue with the endpoint:
 >
->* The entry `cq:graphql` is seen in the **Sites** console; at the top level. 
+>* Depending on the release used, the entry `cq:graphql` is seen in the **Sites** console; at the top level. 
 >  This must not be used.
 
 >[!CAUTION]
@@ -210,7 +217,9 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip) package.
 
+<!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
+-->
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
