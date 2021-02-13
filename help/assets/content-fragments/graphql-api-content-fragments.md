@@ -132,9 +132,9 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 
 >[!CAUTION]
 >
->There is currently a known issue with the endpoint:
+>In certain releases there is currently a known issue with the endpoint:
 >
->* The entry `cq:graphql` is seen in the **Sites** console; at the top level. 
+>* Depending on the release used, the entry `cq:graphql` is seen in the **Sites** console; at the top level. 
 >  This must not be used.
 
 >[!CAUTION]
