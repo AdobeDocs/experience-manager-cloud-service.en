@@ -1,6 +1,7 @@
 ---
 title: Setting Up Dynamic Media
-description: To set up Dynamic Media, you need to configure Dynamic Media and manage image and viewer presets.
+description: To set up Dynamic Media, you must configure Dynamic Media and manage image and viewer presets.
+contentOwner: Rick Brough
 ---
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
@@ -33,4 +34,4 @@ See also the following topics:
 >
 >**If you are upgrading:**
 >
->* After you have Experience Manager up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of Experience Manager and new to Dynamic Media, you may need to re-process your assets to make them Dynamic Media-enabled.
+>* After you have Experience Manager up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of Experience Manager and new to Dynamic Media, you likely must reprocess your assets to make them Dynamic Media-enabled. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
