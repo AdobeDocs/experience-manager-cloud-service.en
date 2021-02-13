@@ -20,10 +20,10 @@ The AEM Media Library is a designated part of the AEM WCM content repository whe
 
 Unique features that are only available to customers of AEM Assets are:
 
-1. the ability to extract and edit metadata other than title, tags and description.
-1. the AEM Assets Admin, available from the welcome screen by clicking the second button next to the siteadmin.
+1. The ability to extract and edit metadata other than title, tags and description.
+1. The AEM Assets Admin, available from the welcome screen by clicking the second option adjacent to `siteadmin`.
 1. All workflow steps related to Digital Asset Management, namely AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, AEM Assets metadata extraction.
-1. libraries including "dam" im package space.
+1. Libraries including "dam" in the package space.
 
 Using these features requires a valid license of AEM Assets.
 
