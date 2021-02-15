@@ -36,9 +36,11 @@ The following release (2021.2.0) will be on February 25, 2021.
 
 * Ability to preview JSON output directly in Content Fragment editor.
 
+<!--
 ### Progressive Web Apps (PWAs) {#pwa}
 
 * [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -60,15 +62,39 @@ The following release (2021.2.0) will be on February 25, 2021.
 
 ### Release Date {#release-date-cm}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January 14, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is February 11, 2021.
+
+### What is New {#what-is-new-cloud-manager}
+
+* Cloud Manager Production pipeline will now include Custom UI testing capability.
+
+* Assets customers will now be able to choose when and where to deploy their Brand Portal instance in a self-service way via Cloud Manager UI. For a regular (non sandbox) program with Assets solution, Brand Portal can now be provisioned on the Production environment. The provisioning can be done only once on Production environment.
+
+* The AEM Project Archetype used in Project and Sandbox Creation has been updated to version 25. 
+
+* The list of deprecated APIs identified during code scanning has been refined to include additional classes and methods deprecated in the latest Cloud Service SDK releases.
+
+* SonarQube profile for Cloud Manager updated to remove Sonar rule squid:S2142. This will no longer conflict with Thread Interruption checks.
+
+* Cloud Manager UI will inform the user who may not temporarily not be able to add/update domain name because the associated environment either has a running pipeline attached to it or currently in the waiting for the approval step.
+
+* Properties set in customer `pom.xml` files prefixed with sonar will now be dynamically removed in order to avoid build and quality scanning failures.
+
+* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed.
+
+* Additional Code Quality Rules have been added to cover Cloud Service Compatibility issues.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* Assets Production instance may on occasion, show the Brand Portal status on the **Environments** detail page as *Pending* without allowing the user to take any action.
+* Matching SSL certificate against a domain name is no longer case sensitive.
 
-* When triggering a de-hibernate from Cloud Manager, sometimes a failure message was displayed even when de-hibernation was started successfully.
+* Cloud Manager UI will now inform a user if the certificate private keys does not meet the 2048 bit limit with an appropriate error message.
 
-* Rare cases of failure encountered in environment creation or deletion has been addressed.
+* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that is currently being deployed.
+
+* In some cases, an internal issue may cause environment deletion to be stuck.
+
+* Some pipeline failures were incorrectly reported as pipeline errors.
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
@@ -87,9 +113,17 @@ Two new analyzers have been added for this release:
 
 For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
 
-## Cloud Transition Tools {#code-transition-tools}
+## Content Transfer Tool {#content-transfer-tool}
 
 ### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* When mapping multiple users, some users’ IMS IDs were being mapped incorrectly. This has been fixed.
+
+### Release Date {#release-date-ctt-feb}
 
 The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
@@ -98,3 +132,24 @@ The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 * New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 * Content Transfer Tool now migrates all groups and users referenced in the migration set including children.
 * Users are allowed to select certain paths under `/etc` when creating migration sets.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.0 is February 11, 2021.
+
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+
+* Ability to detect the use of AEM Forms and AEM Forms implementation and indicate areas that are relevant to migrating to AEM Forms as a Cloud Service.
+* Ability to detect and report on usage and count of custom components and templates.
+* Ability to detect the type of node store and data store used.
+* Ability to detect the usage of Dynamic Media.
+* Ability to detect the Java version used.
+
+
+
+
+
+
+
