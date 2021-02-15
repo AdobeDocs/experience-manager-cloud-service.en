@@ -764,6 +764,7 @@ For example, to grant access to the GraphQL endpoint and persisted queries endpo
   ]
 }
 ```
+
 If you have configured a vanity path for the endpoint, you can also use it in `allowedpaths`.
 
 ### Referrer Filter {#referrer-filter}
