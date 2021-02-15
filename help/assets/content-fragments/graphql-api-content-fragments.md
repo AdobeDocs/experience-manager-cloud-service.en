@@ -715,23 +715,79 @@ Here are the steps required to persist a given query:
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
+#### CORS Filter
+
 >[!NOTE]
 >
 >For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
 
-To allow a third party website to consume JSON output, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint. This configuration should specify a trusted web site name (or regex) for which access should be granted.
+To access the GraphQL endpoint, a CORS policy must be configured in the customer Git repository. This is done by adding an appropriate OSGi CORS configuration file for the desired endpoint(s). 
+This configuration should specify a trusted website origin `alloworigin` or `alloworiginregexp` for which access should be granted.
 
-* Accessing the GraphQL endpoint:
+Example: Access to GraphQL endpoint & persisted queries endpoint is granted for `https://my.domain`
 
-  * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
-  * supportedmethods: [POST]
-  * allowedpaths: ["/content/graphql/global/endpoint.json"]
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
+If you have configured a vanity path for the endpoint, you can also use it in `allowedpaths`.
 
-* Accessing the GraphQL persisted queries endpoint:
+#### Referrer Filter
 
-  * alloworigin: [your domain] or alloworiginregexp: [your domain regex]
-  * supportedmethods: [GET]
-  * allowedpaths: ["/graphql/execute.json/.*"]
+In addition to CORS configuration, a Referrer filter must be configured to allow access from 3rd party host. 
+This is done by adding an appropriate OSGi Referrer Filter configuration file which should specify a trusted website host name `allow.hosts` or `allow.hosts.regexp` for which access should be granted.
+
+Example: Access is granted for the requests having a Referrer `my.domain`.
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
