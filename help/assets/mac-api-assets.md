@@ -1,19 +1,19 @@
 ---
 title: Assets HTTP API
-description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Adobe Experience Manager Assets].
+description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
 ---
 
-# Assets HTTP API {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
 
 ## Overview {#overview}
 
-The Assets HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
+The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 To access the API:
 
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
-1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
+1. Follow the [!DNL Assets] service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
@@ -25,15 +25,13 @@ After the [!UICONTROL Off Time], an asset and its renditions are not available v
 
 ## Content Fragments {#content-fragments}
 
-A [content fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.
+A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling Content Fragments.
 
-For further information see [Content Fragments Support in the Experience Manager Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
+For further information, see [Content Fragments support in the [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 
-The Assets HTTP API exposes two major elements, folders and assets (for standard assets).
-
-Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
+The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets). Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment data models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
 
 ### Folders {#folders}
 
@@ -74,19 +72,19 @@ In [!DNL Experience Manager] a folder has the following components:
 
 ## Available features {#available-features}
 
-The Assets HTTP API includes the following features:
+The [!DNL Assets] HTTP API includes the following features:
 
-* Retrieve a folder listing.
-* Create a folder.
-* Create an asset (deprecated).
-* Update asset binary (deprecated).
-* Update asset metadata.
-* Create an asset rendition.
-* Update an asset rendition.
-* Create an asset comment.
-* Copy a folder or asset.
-* Move a folder or asset.
-* Delete a folder, asset, or rendition.
+* [Retrieve a folder listing](#retrieve-a-folder-listing).
+* [Create a folder](#create-a-folder).
+* [Create an asset (deprecated)](#create-an-asset)
+* [Update asset binary (deprecated)](#update-asset-binary).
+* [Update asset metadata](#update-asset-metadata).
+* [Create an asset rendition](#create-an-asset-rendition).
+* [Update an asset rendition](#update-an-asset-rendition).
+* [Create an asset comment](#create-an-asset-comment).
+* [Copy a folder or asset](#copy-a-folder-or-asset).
+* [Move a folder or asset](#move-a-folder-or-asset).
+* [Delete a folder, asset, or rendition](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -137,11 +135,11 @@ An API call fails with a `500` response code if the parent node of the provided 
 
 ## Create an asset {#create-an-asset}
 
-See [asset upload](developer-reference-material-apis.md) for information on how to create an asset using APIs. Creating an asset using the HTTP API is deprecated.
+See [asset upload](developer-reference-material-apis.md) for information on how to create an asset. You cannot create an asset using the HTTP API.
 
 ## Update an asset binary {#update-asset-binary}
 
-See [asset upload](developer-reference-material-apis.md) for information on how to update asset binaries using APIs. Updating an asset binary using the HTTP API is deprecated.
+See [asset upload](developer-reference-material-apis.md) for information on how to update asset binaries. You cannot update an asset binary using the HTTP API.
 
 ## Update metadata of an asset {#update-asset-metadata}
 
@@ -255,3 +253,7 @@ Deletes a resource (-tree) at the provided path.
 * 200 - OK - if folder has been deleted successfully.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
+
+>[!MORELIKETHIS]
+>
+>* [Developer reference docs for [!DNL Assets]](/help/assets/developer-reference-material-apis.md)

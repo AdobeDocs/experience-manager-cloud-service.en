@@ -50,10 +50,13 @@ Once you have configured your Production Pipeline (repository, environment, and 
    * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default.  
       Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
+   * Custom UI Testing: This step in the pipeline is always present and cannot be skipped. Custom UI tests can be written and enables customers to quickly build test automation suites to validate web and mobile apps built on AEM.
+      Refer to [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) for more details.
+
    * Experience Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
       Refer to [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
-       ![](assets/testing-tab.png)
+       ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 ## Deployment Process {#deployment-process}
