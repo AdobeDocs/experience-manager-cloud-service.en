@@ -90,9 +90,11 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
+<!--
 You can also perform:
 
 * [Persisted Queries, that are cached](#persisted-queries-caching)
+-->
 
 ## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
 
@@ -522,6 +524,7 @@ For further examples, see:
 
 * [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
+<!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
@@ -712,6 +715,7 @@ Here are the steps required to persist a given query:
    >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
+-->
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
@@ -730,8 +734,13 @@ To access the GraphQL endpoint, a CORS policy must be configured in the customer
 
 This configuration must specify a trusted website origin `alloworigin` or `alloworiginregexp` for which access must be granted.
 
+<!--
 For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
+-->
 
+For example, to grant access to the GraphQL endpoint for `https://my.domain` you can use:
+
+<!--
 ```xml
 {
   "supportscredentials":true,
@@ -761,6 +770,39 @@ For example, to grant access to the GraphQL endpoint and persisted queries endpo
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
+  ]
+}
+```
+-->
+
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
