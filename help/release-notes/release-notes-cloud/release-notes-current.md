@@ -42,9 +42,17 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service] extends the Smart Tags functionality to support the identification of keywords and entities in text-based assets. The text is identified, indexed, and is made available as metadata to improve the search experience without the need for any configuration. See [Smart Tags](/help/assets/smart-tags.md).
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-* MXF file format is now supported. See [supported file formats](/help/assets/file-format-support.md#video-formats).
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
+
+Asset Sourcing feature leverages Experience Manager Assets Brand Portal to help customers engage with agency users to source assets for new marketing campaigns, photoshoots and projects. (https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=KT+-+Assets+-+Brand+Portal+Asset+Sourcing+for+Cloud+Service)
+
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
+
+Ability to select a root path. select if a minimum number of tags is required. 
+
+Add a Boolean or radio widget type to metadata schema setup. -->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
