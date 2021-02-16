@@ -66,7 +66,6 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 ### What is New {#what-is-new-cloud-manager}
 
-* Cloud Manager Production pipeline will now include Custom UI testing capability.
 
 * Assets customers will now be able to choose when and where to deploy their Brand Portal instance in a self-service way via Cloud Manager UI. For a regular (non sandbox) program with Assets solution, Brand Portal can now be provisioned on the Production environment. The provisioning can be done only once on Production environment.
 
