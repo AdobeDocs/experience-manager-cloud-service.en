@@ -47,7 +47,7 @@ As stated previously, the first case is the most common for AEM as a Cloud Servi
 
 >[!NOTE]
 >
-> If you want to edit an already existing Target Configuration:
+> If you want to change an existing Target Configuration:
 >
 > 1. Re-enter the Tenant ID.
 > 2. Re-connect to Target.
