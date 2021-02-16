@@ -35,13 +35,15 @@ An IMS configuration for both Launch and Target is necessary to properly integra
 When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields, please be aware of the following:
 
 1. For most customers, the Tenant ID and the Client Code are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
-2. For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields. In which case, be aware that:
+2. For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
 
+In both cases, be aware that:
+
+* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field. 
 * You have the option to change the default Tenant ID set.
 * Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
-* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 
-As stated previously, the first scenario is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
+As stated previously, the first case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 
 >[!NOTE]
 >
