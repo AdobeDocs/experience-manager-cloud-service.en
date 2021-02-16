@@ -74,6 +74,9 @@ user-guide-description: Understand how to author with, and administer, Experienc
     + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administering {#administering}
   + [Administering Workflows](administering/workflows-administering.md)
+  + [MSM and Translation](msm-and-translation.md)
+  + Multi Site Manager {#msm}
+    + [MSM and Live Copy Overview](msm-live-copy-overview.md)
 + Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-adobe-target.md)
