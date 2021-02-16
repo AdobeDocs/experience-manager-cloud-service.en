@@ -99,4 +99,4 @@ For this use case it is not required to buy [!DNL Assets], even the use of the M
 
 >[!MORELIKETHIS]
 >
->*[Experience Manager as a Cloud Service product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [Experience Manager as a Cloud Service product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
