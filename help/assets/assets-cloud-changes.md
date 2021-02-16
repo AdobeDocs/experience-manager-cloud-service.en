@@ -24,10 +24,14 @@ Asset upload is optimized for efficiency by enabling better scaling of ingestion
 * The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of [!DNL Experience Manager] is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, and text extraction for indexing).
   * See [configure and use asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used.
+* Metadata writeback is not supported.
 * Assets that are uploaded using Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the [!DNL Assets] interface.
-* A digital asset without an extension or with an incorrect extension is not processed as desired. For example, when uploading such assets, either nothing happens or an incorrect processing profile may apply to the asset. Users can still store the binary files in the DAM.
+* A digital asset without an extension or with an incorrect extension is not processed as desired. [Automatic MIME type detection](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) is not available. For example, when uploading such assets, either nothing happens or an incorrect processing profile may apply to the asset. Users can still store the binary files without an extension in the DAM.
+* [[!DNL Assets] Home Page experience](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) is not available.
+* Duplicate asset detection works different as compared to [how it worked in Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
+* For placement only (FPO) renditions are generated differently as compared to how it works in previous [!DNL Experience Manager] versions. See [FPO rendition for Experience Manager as a Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-Standard renditions generated with asset microservices are stored in a backwards-compatible way in the asset repository nodes (same naming conventions).
+Standard renditions generated with asset microservices are stored in a compatible way in the asset repository nodes using the same naming conventions.
 
 ## Develop and test asset microservices {#asset-microservices}
 
