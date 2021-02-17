@@ -78,6 +78,7 @@ user-guide-description: Understand how to author with, and administer, Experienc
   + Multi Site Manager {#msm}
     + [MSM and Live Copy Overview](msm-live-copy-overview.md)
     + [Live Copy Overview Console](live-copy-overview.md)
+    + [Configuring Live Copy Synchronization](live-copy-sync-config.md)
 + Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-adobe-target.md)
