@@ -39,7 +39,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Creating a new Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
+## Creating a Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
