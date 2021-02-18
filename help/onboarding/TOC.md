@@ -91,7 +91,7 @@ user-guide-description: This guide provides an summary of how to get started wit
   + [Migration to Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
   + [SEO and URL Management](best-practices/seo-and-url-management.md)
-  + [Assessing KPIs]((best-practices/assessing-kpis.md)
-  + [Aligning KPIs]((best-practices/aligning-kpis.md)
-  + [Choose the Right Team]((best-practices/choose-right-team.md)
+  + [Assessing KPIs](best-practices/assessing-kpis.md)
+  + [Aligning KPIs](best-practices/aligning-kpis.md)
+  + [Choose the Right Team](best-practices/choose-right-team.md)
 + [Overview of the Tools consoles](tools-consoles.md)
