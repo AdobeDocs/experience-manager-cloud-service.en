@@ -14,7 +14,7 @@ In a 2018 study, IDC analyzed the business value several large companies saw whe
 
 To realize the same dramatic gains, your organization needs to have clear goals for your Experience Manager implementation. And you need to have KPIs that help everyone stay focused on those goals.
 
-# Accessing KPIs 
+## Accessing KPIs 
 
 In assessing your KPIs, make sure that:
 

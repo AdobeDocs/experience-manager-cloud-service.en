@@ -3,7 +3,7 @@ title: Right People, right roles
 description: Right People, right roles
 ---
 
-## **First, get the right people in the right roles**
+# **First, get the right people in the right roles**
 
 Chances are that in your organization several departments own different aspects of the digital experience. Without governance, the stage is set for endless debate, infighting, and confusion.
 

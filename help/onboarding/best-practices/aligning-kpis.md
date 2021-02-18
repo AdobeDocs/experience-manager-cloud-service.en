@@ -9,7 +9,7 @@ description: Aligning KPIs
 In a digital world, you can measure almost everything. Choosing three KPIs for your Adobe Experience Manager implementation will help your team focus on what matters most.
 
 
-# **Follow these 6 steps to decide what to measure and how**
+## **Follow these 6 steps to decide what to measure and how**
 
 
 1.  **Start with your business objectives.** For example, your business objectives might be to grow online revenue, decrease operational expenses, or reduce legal expenses associated with digital rights management (DRM) violations.
