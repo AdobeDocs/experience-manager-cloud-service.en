@@ -116,6 +116,6 @@ solution: Experience Manager, Experience Manager Assets
   + [Publishing Dynamic Media assets](dynamic-media/publishing-dynamicmedia-assets.md)
   + [Working with Selective Publish in Dynamic Media](dynamic-media/selective-publishing.md)
   + [Working with Selectors](dynamic-media/working-with-selectors.md)
-  + [DHTML Viewer End-of-Life FAQs](dynamic-media/dhtml-viewer-endoflifefaqs.md)
-  + [Flash Viewers End-of-Life Notice](dynamic-media/flash-viewers-eol.md)
   + [HTTP2 Delivery of Content FAQ](dynamic-media/http2faq.md)
+  + [Flash Viewers End-of-Life](dynamic-media/flash-viewers-eol.md)
+  + [DHTML Viewers End-of-Life](dynamic-media/dhtml-viewer-endoflifefaqs.md)
