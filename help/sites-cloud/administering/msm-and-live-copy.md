@@ -146,6 +146,7 @@ Live Copy Configuration|Definition of the configuration details for a Live Copy|
 |Live Relationship|Effective definition of the inheritance for a given resource i.e. the connection(s) between the source and Live Copies|Ensures that changes to the source can be synchronized with the Live Copy|
 |Blueprint|Synonymous with Source|Can be defined by a blueprint configuration|
 |Blueprint Configuration|Predefined configuration specifying a source path|When a blueprint page is referenced in a blueprint configuration the Rollout command becomes available|
+|Chapter|The sections of the blueprint to include in the Live Copy|These are generally sub-pages of the root|
 |Synchronization|The generic term for the synchronization of content between the source and the Live Copies (by both **Rollout** and **Synchronize** options)||
 |Rollout|Synchronizes from the source to the Live Copy|Can be triggered by an author (on a blueprint page) or by a system event (as defined by the rollout configuration)|
 |Rollout Configuration|Rules that determine which properties will be synchronized, how and when||
