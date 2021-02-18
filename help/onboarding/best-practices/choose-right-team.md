@@ -31,6 +31,9 @@ to people with the suggested qualifications.
 |Front-end Developer|Agile certification, understanding of HTML, CSS, and JavaScript|Novice to Intermediate|Detail oriented, process driven, consistent|
 
 Now that you know what roles are required, look at the chart below to see when each role comes into play in the implementation process.
+
+<br>
+
 ![](assets/team_involvement.png)
 
 **Review this list with your implementation team** and make sure you have people with relevant qualifications in each role. Team members who are less familiar with Adobe Experience Cloud can use [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) learning resources to get certified through [Adobe Digital Learning](https://learning.adobe.com/certification.html).
@@ -55,6 +58,11 @@ You may already have most of the people you need to run a successful Adobe Exper
 |DAM Librarian|Library science background and degree|Expert|Detail oriented, process driven, organized|
 
 Now that you know what roles are required, look at the chart below to see when each role comes into play in the implementation process.
+
+<br>
+
 ![](assets/team_involvement2.png)
 
-**Review this list with your implementation team** and make sure you have people with relevant qualifications in each role. Team members who are less familiar with Adobe Experience Cloud can use [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) learning resources get certified through [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+>[!TIP]
+>
+> Learn more about Adobe Experience Cloud and leverage resources on [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) and get certified through [Adobe Digital Learning](https://learning.adobe.com/certification.html).
