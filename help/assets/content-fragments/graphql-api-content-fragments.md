@@ -132,12 +132,14 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 * Nodes `cq:graphql` and `global` must be of type `sling:Folder`.
 * Node `endpoint` must be of type `nt:unstructured` and contain a `sling:resourceType` of `graphql/sites/components/endpoint`.
 
+<!--
 >[!CAUTION]
 >
 >In certain releases there is currently a known issue with the endpoint:
 >
 >* Depending on the release used, the entry `cq:graphql` is seen in the **Sites** console; at the top level. 
 >  This must not be used.
+-->
 
 >[!CAUTION]
 >
