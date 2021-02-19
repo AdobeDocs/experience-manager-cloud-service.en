@@ -2,14 +2,13 @@
 
 This page lists the self-help resources about provisioning process for Experience Manager as a Cloud Service. 
 
-## AEM as a Cloud Service Onboarding Overview
+## AEM as a Cloud Service Provisioning Process Overview
 
 This section covers the key articles focussed on:
 
 * Accessing AEM as a Cloud Service  
 * Adobe Experience Manager as a Cloud Service Onboarding and Provisioning Process  
-* What to expect during Customer Kickoff with Adobe  
-* First Customer Call - Admin Console & Support Walk Through
+* Help and Resources
 
 
 ### Accessing AEM as a Cloud Service  
@@ -59,22 +58,8 @@ Three methods to onboard users, depending on size and preference:
 * Sync users from enterprise Active
 Directory
 
-### 4. Admin configures org and grants users and group access to environments
+### 4. Admin configures org and grants users and group access to environments  
  
-## Customer Kickoff with Adobe 
-
-* First Customer Meeting
-    * Admin Console walk-through
-    * Standard support processes
-    * Experience League Walkthrough for Enablement
-
-## First Customer Call - Admin Console & Support Walk Through 
-
-* Onboarding Call
-    * Admin Console introduction
-    * Standard support processes
-    * Introduction to other resources
-
-* AEM-specific Best Practices
-    * Ensure involvement from the following stakeholders: Cloud SMEs, Post-sales stakeholders, and Onboarding team.
-
+## Help and Resources
+[First Time Login - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)  
+[Configuring access to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
