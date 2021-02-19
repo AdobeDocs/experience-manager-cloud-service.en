@@ -134,9 +134,10 @@ The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
 
 The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
-### What is new in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### What is new in Content Transfer Tool {#what-is-new-ctt}
 
-* New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+* New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. 
+    Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 * Content Transfer Tool now migrates all groups and users referenced in the migration set including children.
 * Users are allowed to select certain paths under `/etc` when creating migration sets.
 
@@ -144,15 +145,28 @@ The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
 ### Release Date {#release-date-bpa}
 
-The Release Date for Best Practices Analyzer v2.1.0 is February 11, 2021.
+The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 
-### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### What is new in Best Practices Analyzer {#what-is-new-bpa}
 
 * Ability to detect the use of AEM Forms and AEM Forms implementation and indicate areas that are relevant to migrating to AEM Forms as a Cloud Service.
 * Ability to detect and report on usage and count of custom components and templates.
 * Ability to detect the type of node store and data store used.
 * Ability to detect the usage of Dynamic Media.
 * Ability to detect the Java version used.
+
+## Code Refactoring Tools {#code-refactoring-tools}
+
+### What is new in Code Refactoring Tools {#what-is-new-crt}
+
+* New version of AIO-CLI plugin released. Latest version of this plugin includes several bug fixes for the Repository Modernizer. 
+   Refer to [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
+
+### Bug Fixes {#bug-fixes-crt}
+
+* Several bug fixes done on the Repository Modernizer. 
+   Refer to [GitHub Resource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
+
 
 
 
