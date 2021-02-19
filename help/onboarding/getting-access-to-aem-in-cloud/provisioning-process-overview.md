@@ -60,6 +60,7 @@ Directory
 
 ### 4. Admin configures org and grants users and group access to environments  
  
-## Help and Resources
+## Help and Resources  
+
 [First Time Login - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)  
 [Configuring access to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
