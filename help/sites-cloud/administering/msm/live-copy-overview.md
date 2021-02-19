@@ -27,7 +27,7 @@ The **Live Copy Overview** can be opened from the **References** side panel of t
 1. In the **Sites** console, [navigate to your blueprint page and select it.](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 1. Open the **[References](/help/sites-authoring/basic-handling.md#references)** panel and select **Live Copies**.
 
-   ![Live Copy from References panel](assets/live-copy-references.png)
+   ![Live Copy from References panel](../assets/live-copy-references.png)
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ The **Live Copy Overview** can be opened when viewing properties of a blueprint 
 1. Open **Properties** for the appropriate blueprint page.
 1. Open the **Blueprint** tab - the **Live Copy Overview** option will be shown in the top toolbar:
 
-   ![Blueprint Properties tab](assets/live-copy-blueprint-tab.png)
+   ![Blueprint Properties tab](../assets/live-copy-blueprint-tab.png)
 
 1. Select **Live Copy Overview** to show and use the overview of all Live Copies related to the current blueprint.
 
@@ -53,7 +53,7 @@ The **Live Copy Overview** can be opened when viewing properties of a blueprint 
 
 The **Live Copy Overview** window provides and overview of the status of the Live Copies related to the selected page.
 
- ![Live Copy Overview window](assets/live-copy-overview.png)
+ ![Live Copy Overview window](../assets/live-copy-overview.png)
 
 A rollout depends on the synchronization actions defined in the specific rollout configuration. Some actions are dependent on modifications to the content. However, there are also many actions that are not dependent on modifications to the content, but are dependent on events such as page activation. Such events do not modify the content, but do modify the internal properties related to the content.
 
@@ -70,7 +70,7 @@ The **Live Copy Overview** can also be used to perform actions on the Live Copy:
 
 When you select a blueprint page, the following actions are available:
 
-![Live Copy Overview actions for a blueprint](assets/live-copy-overview-actions-blueprint.png)
+![Live Copy Overview actions for a blueprint](../assets/live-copy-overview-actions-blueprint.png)
 
 * **Edit** - Open the blueprint page for editing.
 * **[Rollout](/help/sites-administering/msm.md#rollout-and-synchronize)** - Perform a rollout to push changes from the source to the Live Copy.
@@ -79,7 +79,7 @@ When you select a blueprint page, the following actions are available:
 
 When you select a Live Copy page, the following actions are available:
 
-![Live Copy Overview actions for a Live Copy](assets/live-copy-overview-actions.png)
+![Live Copy Overview actions for a Live Copy](../assets/live-copy-overview-actions.png)
 
 * **Edit** - Open the Live Copy page for editing.
 * **[Relationship Status](#relationship-status)** - View information about the status and inheritance.
@@ -100,10 +100,10 @@ The **Relationship Status** console has two tabs providing a range of functional
 
 This tab provides detailed information about the status of the relationship between the blueprint and Live Copy.
 
-![Relationship Status tab](assets/live-copy-relationship-status.png)
+![Relationship Status tab](../assets/live-copy-relationship-status.png)
 
 ### Live Copy {#live-copy-tab}
 
 This tab allows you to view and edit the Live Copy configuration.
 
-![Live Copy tab](assets/live-copy-relationship-status-live-copy.png)
+![Live Copy tab](../assets/live-copy-relationship-status-live-copy.png)

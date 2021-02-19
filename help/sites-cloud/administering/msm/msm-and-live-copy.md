@@ -201,7 +201,7 @@ The basic form of Live Copy has:
 
 Changes can be [synchronized](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) according to requirements.
 
-![Live Copy composition overview](assets/live-copy-composition.png)
+![Live Copy composition overview](../assets/live-copy-composition.png)
 
 #### Live Copy with non-Live-Copy Pages {#live-copy-with-non-live-copy-pages}
 
@@ -210,7 +210,7 @@ When you create a Live Copy in AEM, you can see and navigate through the Live Co
 * Such resources have no live relationship to the source/blueprint pages and are not synchronized.
 * Scenarios can occur that MSM handles as special cases. For example, when you (or a process) create a page with the same position and name in both the source/blueprint and Live Copy branches. For such situations see [MSM Rollout Conflicts](/help/sites-administering/msm-rollout-conflicts.md) for more information.
 
-![Live Copy with non-Live Copy pages](assets/live-copy-with-non-live-copy-pages.png)
+![Live Copy with non-Live Copy pages](../assets/live-copy-with-non-live-copy-pages.png)
 
 #### Nested Live Copies {#nested-live-copies}
 
@@ -221,7 +221,7 @@ When you (or a process) create a [new page within an existing Live Copy](#live-c
 
 For example, links that point from the second to the first blueprint will be rewritten as links pointing from the nested/second Live Copy to the first Live Copy.
 
-![Nested Live Copies](assets/live-copy-nested.png)
+![Nested Live Copies](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
@@ -254,12 +254,12 @@ A rollout is the central MSM action that synchronizes Live Copies with their sou
 * When authoring a blueprint page you can use the **[Rollout](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint)** command to push changes to the Live Copy.
   * The **Rollout** command is available on a blueprint page that is referenced by a blueprint configuration.
 
-  ![Rollout](assets/live-copy-rollout.png)
+  ![Rollout](../assets/live-copy-rollout.png)
 
 * When authoring a Live Copy page you can use the **[Synchronize](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy)** command to pull changes from the source to the Live Copy.
   * The **Synchronize** command is always available on the Live Copy page regardless of whether the source/blueprint page is encompassed by a blueprint configuration.
 
-  ![Synchronize](assets/live-copy-synchronize.png)
+  ![Synchronize](../assets/live-copy-synchronize.png)
 
 ### Rollout Configurations {#rollout-configurations}
 

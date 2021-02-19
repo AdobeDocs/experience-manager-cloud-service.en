@@ -17,11 +17,10 @@ MSM is a configurable framework for automating content deployment. Implementatio
 
 >[!NOTE]
 >
->Further information about working with MSM is available in the Knowledge Base articles:
+>Further information about working with MSM is available in the following articles:
 >
->* [MSM FAQ](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
->* [Troubleshooting MSM issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
->
+>* [MSM FAQ](faq.md)
+>* [Troubleshooting MSM Issues](troubleshooting.md)
 
 ## Live Copy Sources and Blueprint Configurations {#live-copy-sources-and-blueprint-configurations}
 
