@@ -1,6 +1,15 @@
 # AEM as a Cloud Service: Onboarding and Access  
 
+This page lists the self-help resources about provisioning process for Experience Manager as a Cloud Service. 
+
 ## AEM as a Cloud Service Onboarding Overview
+
+This section covers the key articles focussed on:
+
+* Accessing AEM as a Cloud Service  
+* Adobe Experience Manager as a Cloud Service Onboarding and Provisioning Process  
+* What to expect during Customer Kickoff with Adobe  
+* First Customer Call - Admin Console & Support Walk Through
 
 
 ### Accessing AEM as a Cloud Service  
