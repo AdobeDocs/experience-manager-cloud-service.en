@@ -109,7 +109,7 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **Create Live Copy** (**Sites**)
 
-  * MSM allows you to [create an ad-hoc (one-off) Live Ccopy of an individual page or sub-branch of a website.](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) For example, duplicating a sub-branch to provide information about a new/updated version of a product. Creating a Live Copy in this manner:
+  * MSM allows you to [create an ad-hoc (one-off) Live Copy of an individual page or sub-branch of a website.](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) For example, duplicating a sub-branch to provide information about a new/updated version of a product. Creating a Live Copy in this manner:
     * Creates an ad-hoc Live Copy (no blueprint configuration required).
     * Can be used to (immediately) create a Live Copy of any page/branch.
     * Requires **Synchronize** (does not provide the **Rollout** button).
