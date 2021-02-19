@@ -98,7 +98,7 @@ The following table describes the properties that you can configure:
 
 |Web Console Property|OSGi Property|Description|
 |---|---|---|
-|Excluded Nodetypes|`cq.wcm.msm.action.excludednodetypes`|A regular expression that matches the node types to be excluded from the synchronization action|
+|Excluded Node Types|`cq.wcm.msm.action.excludednodetypes`|A regular expression that matches the node types to be excluded from the synchronization action|
 |Excluded Paragraph Items|`cq.wcm.msm.action.excludedparagraphitems`|A regular expression that matches the paragraph items to be excluded from the synchronization action|
 |Excluded Page Properties|`cq.wcm.msm.action.excludedprops`|A regular expression that matches the page properties to be excluded from the synchronization action|
 |Ignored Mixin NodeTypes|`cq.wcm.msm.action.ignoredMixin`|A regular expression that matches the names of mixin node types to be excluded from the synchronization action (only available to `contentUpdate` action)|
@@ -109,7 +109,7 @@ Several properties and node types are excluded by default, these are defined in 
 
 By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
 
-![Live Copy exclusion regexes](assets/live-copy-exclude.png)
+![Live Copy exclusion regexes](../assets/live-copy-exclude.png)
 
 You can change the expressions defining the exclusion list as required.
 
@@ -159,7 +159,7 @@ You can also configure the rollout configurations for a Live Copy page when you 
 
    The **Configuration** section shows the rollout configurations that the page inherits.
 
-   ![Live Copy inheritance from parent page](assets/live-copy-inherit.png)
+   ![Live Copy inheritance from parent page](../assets/live-copy-inherit.png)
 
 1. If required, adjust the **Live Copy Inheritance** flag. If checked the Live Copy configuration is effective on all children.
 
@@ -167,7 +167,7 @@ You can also configure the rollout configurations for a Live Copy page when you 
 
    The selected rollout configurations appear below the drop-down list.
 
-   ![Overriding Live Copy configuration inheritance](assets/live-copy-inherit-override.png)
+   ![Overriding Live Copy configuration inheritance](../assets/live-copy-inherit-override.png)
 
 1. Click or tap **Save &amp; Close**.
 
