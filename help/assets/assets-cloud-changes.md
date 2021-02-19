@@ -31,6 +31,7 @@ Asset upload is optimized for efficiency by enabling better scaling of ingestion
 * [!DNL Assets] Home Page experience is not available. See [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
 * Duplicate asset detection works different as compared to [how it worked in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
 * For placement only (FPO) renditions are generated differently as compared to previous [!DNL Experience Manager] versions. See [FPO rendition for [!DNL Experience Manager] as a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
+* When a ZIP archive is uploaded, [!DNL Experience Manager] as a [!DNL Cloud Service] does not extract the assets bundled in the archive. See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip).
 
 Standard renditions generated with asset microservices are stored in a backward-compatible way in the asset repository nodes using the same naming conventions.
 
