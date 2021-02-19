@@ -101,26 +101,23 @@ Customized conflict handlers allow you to implement your own rules. Using the se
 Customized conflict handlers can:
 
 * Be named according to your requirements.
-* Be developed/configured according to your requirements; for example, you can develop a handler so that the Live Copy page is given precedence.
-* Can be designed to be configured using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md); in particular the:
+* Be developed/configured according to your requirements.
+  * For example, you can develop a handler so that the Live Copy page is given precedence.
+* Can be designed to be configured using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md). In particular the:
+  * **Service Ranking** defines the order related to other conflict handlers ( `service.ranking`).
+    * The default value is `0`.
 
-    * **Service Ranking**:
+### Behavior When Conflict Handling is Deactivated {#behavior-when-conflict-handling-deactivated}
 
-      Defines the order related to other conflict handlers ( `service.ranking`).
-
-      The default value is 0.
-
-### Behavior When Conflict Handling Deactivated {#behavior-when-conflict-handling-deactivated}
-
-If you manually [deactivate conflict handling](#rollout-manager-and-conflict-handling) then AEM takes no action on any conflicting pages (non-conflicting pages are rolled out as expected).
+If you manually [deactivate conflict handling,](#rollout-manager-and-conflict-handling) AEM takes no action on any conflicting pages. Non-conflicting pages are rolled out as expected.
 
 >[!CAUTION]
 >
->AEM does not give any indication that conflicts are being ignored as this behavior must be explicitly configured, so it is assumed that it is the required behavior.
+>When conflict handling is deactivated, AEM does not give any indication that conflicts are being ignored. Since in such cases this behavior must be explicitly configured, it is assumed that it is the desired behavior.
 
 In this case the Live Copy effectively takes precedence. The blueprint page `/b` is not copied and the Live Copy page `/b` is left untouched.
 
-* blueprint: `/b`
+* Blueprint: `/b`
 
   Is not copied at all, but is ignored.
 
@@ -128,28 +125,14 @@ In this case the Live Copy effectively takes precedence. The blueprint page `/b`
 
   Stays the same.
 
-<table>
- <caption>
-   After Rollout
- </caption>
- <tbody>
-  <tr>
-   <td><strong>blueprint after rollout</strong></td>
-   <td><strong>Live Copy after rollout</strong><br /> <br /> <br /> </td>
-   <td><strong>publish after rollout</strong><br /> <br /> </td>
-  </tr>
-  <tr>
-   <td><code>b</code></td>
-   <td><code>b</code><br /> <br /> (no change; has the content of the page b that was manually created in the Live Copy branch)</td>
-   <td><code>b</code><br /> <br /> (no change; contains the content of the page b that was manually created in the Live Copy branch)<br /> </td>
-  </tr>
-  <tr>
-   <td><code> /bp-level-1</code><br /> </td>
-   <td><code> /lc-level-1</code><br /> <br /> (no change)</td>
-   <td><code> /lc-level-1</code><br /> <br /> (no change)</td>
-  </tr>
- </tbody>
-</table>
+#### After Rollout {#after-rollout-no-conflict}
+
+||Blueprint After Rollout|Live Copy After Rollout|Publish After Rollout|
+|---|---|---|---|
+|Value|`b`|`b`|`b`|
+|Comment||No change, has the content of the page `b` that was manually created in the Live Copy branch|No change, contains the content of the page `b` that was manually created in the Live Copy branch|
+|Value|`/bp-level-1`|`/lc-level-1`|`/lc-level-1`|
+|Comment||No change|No Change|
 
 ### Service Rankings {#service-rankings}
 
