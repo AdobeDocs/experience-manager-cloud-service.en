@@ -87,7 +87,7 @@ exchange(config).then(accessToken => {
 
 The same exchange can be performed in any language capable of generating a signed JWT Token with the correct format and calling the IMS Token Exchange APIs.
 
-The access token will define when it expires, which is typically 12 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
+The access token will define when it expires, which is typically 24 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
@@ -113,7 +113,7 @@ See the [Developer Guidelines documentation](/help/implementing/developing/intro
 
 >[!NOTE]
 >
->The local development access token is valid for 24 hours after which time it must be regenerated using the same method.
+>The local development access token is valid for a maximum of 24 hours after which it must be regenerated using the same method.
 
 Developers may use this token to make calls from their non-AEM test application to an AEM as a Cloud Service environment. Typically, the developer will use this token with the non-AEM application on their own laptop. Also, the AEM as a Cloud is typically a non-production environment.
 
