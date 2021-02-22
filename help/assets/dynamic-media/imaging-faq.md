@@ -1,15 +1,15 @@
 ---
 title: Smart imaging
-description: Smart imaging leverages each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement.
+description: Smart imaging applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement.
 ---
 
 # Smart Imaging {#smart-imaging}
 
 ## What is "Smart Imaging"? {#what-is-smart-imaging}
 
-Smart Imaging technology leverages Adobe Sensei AI capabilities and works with existing "image presets" to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
+Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets". It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
-Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN service. This service finds the optimal internet route between servers, networks, and peering points that has lowest latency, and/or packet loss rate than the default route on the Internet.
+Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It looks at the lowest latency, or the lowest packet loss rate, or both, rather than simply using the default route on the Internet.
 
 The following image asset examples depict the added Smart Imaging optimization:
 
@@ -21,24 +21,24 @@ The following image asset examples depict the added Smart Imaging optimization:
 | [Image 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 | | | | |  Average = 51% |
 
-Similar to the above, Adobe also ran a test with 7009 URLs from live customer sites, and were able to achieve an average of 38% further file size optimisation for JPEG and 31% further file size optimisation for PNG with WebP format, owing to the capability of Smart Imaging.
+Similar to the above, Adobe also ran a test with 7009 URLs from live customer sites. They were able to achieve an average of 38% further file size optimization for JPEG. For PNG with WebP format, they were able to achieve an average of 31% further file size optimization. This kind of optimization is possible because of the capability of Smart Imaging.
 
 ## What are the key benefits of the latest Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
-Because images constitute a majority of a page's load time, the performance improvement can have a profound impact on business KPIs such as higher conversion, time spent on site, and lower site bounce rate.
+Images constitute most of a page's load time. As such, any performance improvement can have a profound impact on higher conversion rates, time spent on a site, and lower site bounce rates.
 
 Enhancements in latest version of Smart Imaging:
 
-* Serves optimized content immediately (at run-time).
+* Serves optimized content immediately (at runtime).
 * Uses Adobe Sensei technology to convert according to the quality (qlt) specified in the image request.
 * Smart Imaging can be turned off using the “bfc” URL parameter.
 * TTL (Time To Live) independent. Previously, a minimum TTL of 12 hours was mandatory for Smart Imaging to work.
-* Previously, both the original and derivative images were cached, and it was a 2 step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single step cache invalidation process.
-* Customers making use of custom headers in their ruleset (for example, “Timing Allow Origin”, “X-Robot” as suggested in [Adding a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) will benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging.
+* Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
+* Customers who use of custom headers in their ruleset. For example, “Timing Allow Origin”, “X-Robot” as suggested in [Adding a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) benefit from the latest Smart Imaging. These headers are not blocked, unlike the previous version of Smart Imaging.
 
 ## Are there any licensing costs associated with smart imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Smart Imaging is included with your existing license of either Dynamic Media Classic (Scene7) or AEM Dynamic Media (On Prem, AMS, and AEM as a Cloud Service). 
+No. Smart Imaging is included with your existing license. This rule is true for either Dynamic Media Classic or Experience Manager Dynamic Media (On-prem, AMS, and Experience Manager as a Cloud Service).
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ No. Smart Imaging is included with your existing license of either Dynamic Media
 
 ## How does smart imaging work? {#how-does-smart-imaging-work}
 
-When an image is requested by a consumer, we check the user characteristics and convert to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
+When an image is requested by a consumer, Smart Imaging checks the user characteristics. It then converts to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
 * Automatically convert to WebP for the following browsers:
   * Chrome
@@ -81,19 +81,19 @@ The following image formats are supported for Smart Imaging:
 
 Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
-## How does Smart Imaging work with our existing image presets that are already in use? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
+## How does Smart Imaging work with your existing image presets that are already in use? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Smart Imaging works with your existing “image presets” and observes all of your image settings with the exception of quality (qlt) and format (fmt) if the requested file format is JPEG or PNG. For format conversion, we maintain full visual fidelity as defined by your image preset settings, but at a smaller file size. If original image size is smaller than what Smart Imaging produces, then the original image is served.
+Smart Imaging works with your existing “image presets”. It observes all of your image settings except for quality (qlt) and format (fmt) if the requested file format is JPEG or PNG. For format conversion, Smart Imaging maintains full visual fidelity as defined by your image preset settings, but at a smaller file size. If the original image size is smaller than what Smart Imaging produces, then the original image is served.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
-## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
+## Do I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
+Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this functionality is handled automatically.
 
-In case you need to configure a new custom domain to use Smart Imaging, the URLs will need to be updated to reflect this custom domain.
+In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging).
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -105,20 +105,20 @@ Smart Imaging works with images delivered over HTTP or HTTPS. In addition, it al
 
 ## Am I eligible to use smart imaging? {#am-i-eligible-to-use-smart-imaging}
 
-To use Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on AEM account must meet the following requirements:
+To use Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on Experience Manager account must meet the following requirements:
 
 * Use the Adobe-bundled CDN (Content Delivery Network) as part of your license.
 * Use a dedicated domain (for example, `images.company.com` or `mycompany.scene7.com`), not a generic domain (for example, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`). 
 
 To find your domains, log in to your company account or accounts.  
   
-Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic domain, you can request moving over to your own custom domain as part of this transition when you submit a technical support ticket.
+Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you currently use a generic domain, you can request to move over to your own custom domain. Make this transition request when you submit a technical support ticket.
 
 Your first custom domain is no additional cost with a Dynamic Media license.
 
 ## What is the process for enabling Smart Imaging for my account? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-You must initiate the request to use smart imaging; it is not automatically enabled.
+You initiate the request to use smart imaging; it is not automatically enabled.
 
 1. [Use the Admin Console to create a support case.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Provide the following information in your support case:
@@ -139,12 +139,12 @@ You must initiate the request to use smart imaging; it is not automatically enab
        Click **[!UICONTROL Setup > Application Setup > General Settings]**.  
 
        Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
-    1. Indicate if you also need this to work over HTTP/2.
+    1. Indicate if you want it to work over HTTP/2.
 
-1. Technical Support will add you to the Smart Imaging customer Wait List based on the order in which requests were submitted.
-1. When Adobe is ready to handle your request, support will contact you to coordinate and set a target date.
-1. **Optional**: You have the option to test smart imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by support.
+1. Adobe Customer Care adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Care contacts you to coordinate and set a target date.
+1. **Optional**: You can optionally test smart imaging in Staging before Adobe pushes the new feature to production.
+1. You are notified after completion by Customer Care.
 1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
     1. If you use Dynamic Media Classic, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
@@ -156,22 +156,22 @@ Requests are processed in the order in which they are received by Technical Supp
 
 >[!NOTE]
 >
->There may be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+>Occasionally, there is a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
 
 ## What are the risks with switching over to use Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-There is no risk to a customer web page. However, you should be aware that the transition to Smart Imaging clears out your cache at the CDN because it involves moving to a new configuration of Dynamic Media Classic or Dynamic Media on AEM.
+There is no risk to a customer web page. However, the transition to Smart Imaging does clear out your CDN cache. This operation involves moving to a new configuration of Dynamic Media Classic or Dynamic Media on Experience Manager.
 
-During the initial transition, the non-cached images directly hits Adobe's origin servers until the cache is rebuilt again. Because of this, Adobe plans to handle a few customer transitions at a time so that acceptable performance is maintained when pulling requests from our origin. For most customers, the cache is fully built up again at the CDN within ~1 to 2 days.
+During the initial transition, the non-cached images directly hit Adobe's origin servers until the cache is rebuilt again. As such, Adobe plans to handle a few customer transitions at a time so that acceptable performance is maintained when pulling requests from the origin. For most customers, the cache is fully built up again at the CDN within ~1 – 2 days.
 
-## How can I verify whether smart imaging is working as expected?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## How can I verify whether smart imaging is working as expected?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. After your account is configured with smart imaging, load a Dynamic Media Classic (Scene7)/Dynamic Media image URL on the browser.
 1. Open the Chrome developer pane by clicking **[!UICONTROL View > Developer > Developer Tools]** in the browser. Or, choose any browser developer tool of your choice.
 
-1. Ensure that cache is disabled when developer tools is open.
+1. Ensure that cache is disabled when developer tools are open.
 
-    * On Windows &ndash; navigate to settings in the developer tool pane, then select **[!UICONTROL Disable cache (while devtools is open)]** checkbox.
+    * On Windows &ndash; navigate to settings in the developer tool pane, then select **[!UICONTROL Disable cache (while devtools is open)]** check box.
     * On Mac &ndash; in the developer pane, under the **[!UICONTROL Network]** tab, select **[!UICONTROL disable cache]** .
 
 1. Observe the Content Type is transformed to the appropriate format. The following screenshot shows a PNG image being converted dynamically to WebP on Chrome.
@@ -179,11 +179,11 @@ During the initial transition, the non-cached images directly hits Adobe's origi
 
 >[!NOTE]
 >
->Not all images are converted. Smart Imaging decides if the conversion is needed to improve performance. In some cases, where there is no expected performance gain or the format is not JPEG or PNG, the image is not converted.
+>Not all images are converted. Smart Imaging decides if the conversion is necessary to improve performance. Sometimes, where there is no expected performance gain or the format is not JPEG or PNG, the image is not converted.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
-## Can Smart Imaging be turned off for any request? {#turning-off-smart-imaging}
+## Can Smart Imaging be turned off for any request?{#turning-off-smart-imaging}
 
 Yes. You can turn off Smart Imaging by adding the modifier `bfc=off` to the URL.
 
@@ -191,10 +191,10 @@ Yes. You can turn off Smart Imaging by adding the modifier `bfc=off` to the URL.
 
 Currently, you can optionally enable or disable Smart Imaging. No other tuning is available.
 
-## If Smart Imaging manages the quality settings, are there minimums and maximums we can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? (#minimum-maximum)
+## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? (#minimum-maximum)
 
 There is no such provisioning ability in the current Smart Imaging.
 
-## In some cases, a JPEG image is returned to Chrome instead of a WebP image. Why does that happen? (#jpeg-webp)
+## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? (#jpeg-webp)
 
 Smart Imaging determines if the conversion is beneficial or not. It returns the new image only if the conversion results in a smaller file size with comparable quality.
