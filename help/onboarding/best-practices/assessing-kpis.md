@@ -5,6 +5,13 @@ description: Accessing KPIs
 
 # Are you measuring the things that matter most?
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="Assessing KPIs"
+>abstract="Before you begin your Adobe Experience Manager launch, everyone who has a stake in the project should know what your top three KPIs are and why they matter."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Aligning KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Choosing the Right Team"
+
 Before you begin your Adobe Experience Manager launch, everyone who has a stake in the project should know what your top three KPIs are and why they matter.
 
 **The right KPIs will help you get more value from Adobe Experience Manager**
