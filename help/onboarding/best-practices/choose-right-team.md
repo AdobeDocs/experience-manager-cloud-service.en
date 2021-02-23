@@ -5,6 +5,13 @@ description: Right People, right roles
 
 # **First, get the right people in the right roles**
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="Choose the  Right Team"
+>abstract="Putting the right people in the right jobs to help drive your Adobe Experience Manager deployment to success."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Aligning KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Assessing KPIs"
+
 Chances are that in your organization several departments own different aspects of the digital experience. Without governance, the stage is set for endless debate, infighting, and confusion.
 
 Digital governance starts with figuring out who’s in charge of what and who’s doing which digitally focused job. You may need to do some strategic hiring to add needed skills. An even bigger challenge is driving a culture shift — building broad support for the new technology and helping people get used to new ways of doing things. A key part of that effort is creating a digital community, which lets people learn from and support each other.
