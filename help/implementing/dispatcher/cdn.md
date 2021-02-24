@@ -41,7 +41,7 @@ Configuration instructions:
 1. Set the `X-Forwarded-Host` header with the domain name.
 1. Set Host header with the origin domain, which is the AEM CDN's ingress. The value should come from Adobe.
 1. Send the SNI header to the origin. Like the Host header, the sni header must be the origin domain.
-1. Set the `X-Edge-Key`, which is needed to route traffic correctly to the AEM servers. The value should come from Adobe.
+1. Set either the `X-Edge-Key` or the `X-AEM-Edge-Key` (if your CDN strips X-Edge-*), which is needed to route traffic correctly to the AEM servers. The value should come from Adobe. Please inform Adobe if you want direct access to Adobe CDN's ingress (to be blocked when `X-Edge-Key` is not present).
 
 Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
 
