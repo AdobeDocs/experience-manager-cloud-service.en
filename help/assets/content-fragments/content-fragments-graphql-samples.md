@@ -41,7 +41,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 * You can query on field names that correspond to the fields within the Content Fragment Model
   * See [Sample Query - Full Details of a Company's CEO and Employees](#sample-full-details-company-ceos-employees)
 
-* In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
+* In addition to the fields from your model, there are some system generated fields (preceded by underscore):
 
   * For content:
 
