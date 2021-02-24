@@ -44,17 +44,24 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+## What is new in [!DNL Assets] {#what-is-new-assets}
+
+* Assets can be sourced using [!DNL Experience Manager Assets Brand Portal]. It helps to source assets from the agency users for new marketing campaigns, photoshoots, and projects.
+
 <!-- TBD: refine this list of features and enh. for Feb release.
 
 Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Asset Sourcing feature leverages Experience Manager Assets Brand Portal to help customers engage with agency users to source assets for new marketing campaigns, photoshoots and projects. (https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=KT+-+Assets+-+Brand+Portal+Asset+Sourcing+for+Cloud+Service)
 
 Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
 Ability to select a root path. select if a minimum number of tags is required. 
 
 Add a Boolean or radio widget type to metadata schema setup. -->
+
+## Bug fixes in [!DNL Assets] {#bug-fixes-assets}
+
+* When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
+* When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available. (CQ-4314101)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
