@@ -41,7 +41,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 * You can query on field names that correspond to the fields within the Content Fragment Model
   * See [Sample Query - Full Details of a Company's CEO and Employees](#sample-full-details-company-ceos-employees)
 
-* In addition to the fields from your model, there are some system generated fields (preceeded by underscore):
+* In addition to the fields from your model, there are some system-generated fields (preceded by underscore):
 
   * For content:
 
@@ -54,7 +54,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * `_model` : allow querying for a Content Fragment Model (path and title)
       * See [Sample Query for a Content Fragment Model from a Model](#sample-wknd-content-fragment-model-from-model)
   
-    * `_path` : the path to your Content Fragement within the repository
+    * `_path` : the path to your Content Fragment within the repository
       * See [Sample Query - A Single Specific City Fragment](#sample-single-specific-city-fragment)
 
     * `_reference` : to reveal references; including inline references in the Rich Text Editor
@@ -321,7 +321,7 @@ query {
 
 ### Sample Query - A Single Specific City Fragment {#sample-single-specific-city-fragment}
 
-This is a query to return the details of a single fragment entries at a specific location in the repository.
+This is a query to return the details of a single fragment entry at a specific location in the repository.
 
 **Sample Query**
 
