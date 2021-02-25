@@ -19,6 +19,18 @@ With the new architecture, AEM is responsible for primary source assets and sync
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
+>[!NOTE]
+>
+>Customers that do not use the bundled CDN with Experience Manager Dynamic Media do not benefit from the following capabilities:
+>
+>* [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
+>* [Cache invalidation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
+>* [Hotlink protection](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
+>* [HTTP/2 delivery of content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
+>* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>* URL redirect at the CDN level
+>* Akamai ChinaCDN (for optimal delivery in China)
+
 <!-- OBSOLETE CONTENT
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
