@@ -63,16 +63,6 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
 * When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available. (CQ-4314101)
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### What is New {#what-is-new-commerce}
-
-* Product Experience Management: New 'Commerce' properties tab for Assets and Experience Fragments. This tab enables you to link products / categories to Assets and Experience Fragments. The tab also shows real-time data for linked products / categories, and a link to show details in the product console.
-
-* Released CIF Venia Reference Site - 2021.02.02 that includes the latest CIF Core Components version v1.7.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) for more details.
-
-* Released CIF Core Components v1.7.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) for more details.
-
 ## Cloud Manager {#cloud-manager}
 
 ### Release Date {#release-date-cm}
@@ -109,23 +99,6 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 * In some cases, an internal issue may cause environment deletion to be stuck.
 
 * Some pipeline failures were incorrectly reported as pipeline errors.
-
-## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
-
-### What is New {#what-is-new-foundation}
-
-* Server-to-server authenticated API calls - Generate the appropriate access tokens to make authenticated server-to-server API calls between your external applications and AEM as a Cloud Service environments. Learn more by reading [the documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) or by consulting the [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
-
-### SDK Build Analyzers {#sdk-build-analyzers}
-
-The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager.
-
-Two new analyzers have been added for this release:
-
-* repoinit analyzer
-* bundle-nativecode
-
-For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
