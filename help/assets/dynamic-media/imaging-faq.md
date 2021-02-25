@@ -9,6 +9,10 @@ description: Smart imaging applies each user's unique viewing characteristics to
 
 Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets". It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
+>[!NOTE]
+>
+>This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
+
 Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It looks at the lowest latency, or the lowest packet loss rate, or both, rather than simply using the default route on the Internet.
 
 The following image asset examples depict the added Smart Imaging optimization:

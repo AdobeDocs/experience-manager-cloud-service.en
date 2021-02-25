@@ -11,7 +11,7 @@ If you use Adobe Experience Manager for different environments, such as developm
 
 The following architecture diagram describes how Dynamic Media works.
 
-With the new architecture, AEM is responsible for primary source assets and syncs with Dynamic Media for asset processing and publishing:
+With the new architecture, Experience Manager is responsible for primary source assets and syncs with Dynamic Media for asset processing and publishing:
 
 1. When the primary source asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image.
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
@@ -21,13 +21,13 @@ With the new architecture, AEM is responsible for primary source assets and sync
 
 >[!NOTE]
 >
->Customers that do not use the bundled CDN with Experience Manager Dynamic Media do not benefit from the following capabilities:
+>The following list of features require that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
 >
->* [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
->* [Cache invalidation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
->* [Hotlink protection](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
->* [HTTP/2 delivery of content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
->* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+>* [Cache invalidation](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink protection](/help/assets/dynamic-media/hotlink-protection.md)
+>* [HTTP/2 delivery of content](/help/assets/dynamic-media/http2faq.md)
+>* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](/help/assets/dynamic-media/launch.md)
 >* URL redirect at the CDN level
 >* Akamai ChinaCDN (for optimal delivery in China)
 
