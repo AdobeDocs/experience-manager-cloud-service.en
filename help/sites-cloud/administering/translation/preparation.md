@@ -61,30 +61,29 @@ To create the language root you create a page and use an ISO language code as th
 
 You can use either format, according to the structure that you have chosen for your global site.  For example, the root page of the French language copy of the WKND site has `fr` as the **Name** property. Note that the **Name** property is used as the name of the page node in the repository, and therefore determines the path of the page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
-1. Navigate to Sites.
+1. Navigate to sites.
 1. Click or tap the site for which you want to create a language copy.
 1. Click or tap **Create**, and then click or tap **Page**.
 
    ![Create page](../assets/create-page.png)
 
-1. Select the page template and then click or tap Next.
-1. In the Name field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
+1. Select the page template and then click or tap **Next**.
+1. In the **Name** field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
 
-   ![chlimage_1-22](assets/chlimage_1-22a.png)
+   ![Create language root page](../assets/create-language-root.png)
 
-1. Click or tap Create. In the confirmation dialog box, click or tap either **Done** to return to the Sites console, or **Open** to open the language copy.
+1. Click or tap **Create**. In the confirmation dialog box, click or tap either **Done** to return to the Sites console, or **Open** to open the language copy.
 
 ## Seeing the Status of Language Roots {#seeing-the-status-of-language-roots}
 
-The touch-optimized UI provides a References panel that shows a list of language roots that have been created.
+AEM provides a **References** rail that shows a list of language roots that have been created.
 
-![chlimage_1-23](assets/chlimage_1-23a.png)
+![Language roots](../assets/language-roots.png)
 
-The following procedure uses the touch-optimized UI to open the References panel for a page.
+Use the following procedure view the language copies for a page using the [rail selector.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-1. On the Sites console, select a page of the site and then click or tap **References**.
+1. On the sites console, select a page of the site and then click or tap **References**.
 
-   ![chlimage_1-24](assets/chlimage_1-24a.png)
+   ![Open references rail](../assets/opening-references-rail.png)
 
-1. In the references panel, click or tap **Language Copies**. The Language Copies panel shows the language copies of the web site.
-
+1. In the references rail, click or tap **Language Copies**. The rail shows the language copies of the web site.
