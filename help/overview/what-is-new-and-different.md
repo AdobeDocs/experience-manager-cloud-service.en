@@ -114,13 +114,7 @@ Cloud Manager has evolved as a self-service portal where the main components of 
 
 * Being notified of important lifecycle events for these components (for example, product updates).
 
-Currently Cloud Manager is able to create environments in 3 geographical regions (with more regions following):
-
-* US (East)
-
-* EMEA (Netherlands)
-
-* APAC (Australia)
+Cloud Manager creates environments in datacenters across many geographic regions, providing for global coverage. CDN Points of Presence (PoPs) ensure low-latency content delivery for customers located all over the world.
 
 >[!NOTE]
 >Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) to get started with Cloud Manager in AEM as a Cloud Service.
@@ -255,7 +249,7 @@ For details see the overview of [Changes to Sites](/help/sites-cloud/sites-cloud
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, SaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
+Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
 
 Assets offering includes next-generation asset processing in the cloud and high performance asset ingestion and search.
 
