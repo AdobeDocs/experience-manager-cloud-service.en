@@ -5,15 +5,9 @@ description: Learn how to manage translation projects in AEM.
 
 # Managing Translation Projects {#managing-translation-projects}
 
-After preparing content for translation, you need to complete the language structure by creating missing language copies, and creating translation projects.
-
 Translation projects enable you to manage the translation of AEM content. A translation project is a type of AEM [project](/help/sites-authoring/projects.md) that contains resources that are to be translated into other languages. These resources are the pages and assets of the [language copies](/help/sites-administering/tc-prep.md) that are created from the language master.
 
 When resources are added to a translation project, a translation job is created for them. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
-
->[!NOTE]
->
->A translation project can contain multiple translation jobs.
 
 Translation projects are long-running items, defined by language and translation method/provider to align with organizational governance for globalization. They should be initiated once, either during initial translation or manually, and remain in effect throughout content and translation update activities.
 
@@ -22,12 +16,6 @@ Translation projects and jobs are created with translation preparation workflows
 1. [Create new project](#creating-translation-projects-using-the-references-panel)
 1. [Add to existing project](#adding-pages-to-a-translation-project)
 1. [Content structure only](#creating-the-structure-of-a-language-copy)
-
->[!NOTE]
->
->Option 3 is unrelated to a translation job/project. It allows you to copy content and structural changes in the language master to (untranslated) language copies. You can use this to keep your language masters in sync, even without translation.
-
-## Performing Initial Translations and Updating Existing Translations {#performing-initial-translations-and-updating-existing-translations}
 
 AEM detects whether a translation project is being created for the initial translation of content, or to update already-translated language copies. When you create a translation project for a page and indicate the language copies for which you are translating, AEM detects whether the source page already exists in the targeted language copies:
 
@@ -42,7 +30,11 @@ For example, the `/content/wknd/fr` language root is created for the French tran
 * A translation project is created for the `/content/wknd/en/products` page and all child pages, targeting the French language copy. Because the language copy does not include the `/content/wknd/fr/products` page, AEM immediately copies the `/content/wknd/en/products` page and all child pages to the French language copy. The copies are also included in the translation project.
 * A translation project is created for the `/content/wknd/en` page and all child pages, targeting the French language copy. Because the language copy includes the page that corresponds with the `/content/wknd/en` page (the language root), AEM copies the `/content/wknd/en` page and all child pages and adds them to a launch. The copies are also included in the translation project.
 
-## Creating Translation Projects Using the References Panel {#creating-translation-projects-using-the-references-panel}
+## Translation Jobs from the Sites Console {#performing-initial-translations-and-updating-existing-translations}
+
+Translation projects can be created or updated directly from the sites console.
+
+### Creating Translation Projects Using the References Panel {#creating-translation-projects-using-the-references-panel}
 
 Create translation projects so that you can execute and manage the workflow for translating the resources of your language master. When you create projects, you specify the page in the language master that you are translating and the language copies for which you are performing the translation:
 
@@ -103,9 +95,9 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 
    ![Create project to update language copies](../assets/create-update-language-copies-project.png)
 
-1. Click or tap **Create****.
+1. Click or tap **Create**.
 
-## Adding Pages to a Translation Project {#adding-pages-to-a-translation-project}
+### Adding Pages to a Translation Project {#adding-pages-to-a-translation-project}
 
 After you have created a translation project, you can use the **Resources** rail to add pages to the project. Adding pages is useful when you are including pages from different branches in the same project.
 
@@ -135,7 +127,71 @@ As when creating a new project, when adding pages, copies of the pages are added
 
 1. Click or tap **Update**.
 
-## Adding Pages/Assets to a Translation Job {#adding-pages-assets-to-a-translation-job}
+### Creating the Structure of a Language Copy {#creating-the-structure-of-a-language-copy}
+
+It is possible to create only the structure of the language copy, allowing you to copy content and structural changes in the language master to (untranslated) language copies. This is unrelated to a translation job or project. You can use this to keep your language masters in sync, even without translation.
+
+Populate your language copy so that it contains content from the master language that you are translating. Before you populate your language copy, you must have [created the language root](/help/sites-administering/tc-prep.md#creating-a-language-root) of the language copy.
+
+1. Use the sites console to select the language root of the master language that you are using as the source.
+1. Open the references rail by clicking or tapping **References** in the toolbar.
+
+   ![References](../assets/references.png)
+
+1. Select **Language Copies**, and then select the language copies that you want to populate.
+
+   ![Select language copies](../assets/language-copy-structure-select.png)
+
+1. Click or tap **Update Language Copies** to reveal the translation tools, and configure the properties:
+
+    * Select the **Select all sub-pages** option.
+    * For **Project**, select **Create Structure Only**.
+
+   ![Structure only](../assets/language-copy-structure-only.png)
+
+1. Click or tap **Update**.
+
+## Managing Translation Projects from the Project Console
+
+Many translation tasks and advanced options can be accessed in the projects console.
+
+### Understanding the Projects Console
+
+Translation projects in AEM use the standard [AEM projects console.](/help/sites-cloud/authoring/projects/overview.md) If you are not familiar with AEM projects, please review that documentation.
+
+As any other project A translation project is made up of tiles that present an overview of the project tasks.
+
+![Translattion project](../assets/translation-project.png)
+
+* **Summary** - An overview of the project
+* **Tasks** - One or more translation tasks
+* **Team** - Users collaborating on the translation project
+* **Tasks** - Items that need to be completed as part of the translation effort
+
+Use the commands and ellipsis buttons at the top and bottom of the tiles (respectively) to access controls and options for the various tiles.
+
+![Commands button](../assets/context.png)
+
+![Ellipsis button](../assets/ellipsis.png)
+
+### Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
+
+You can manually create a translation project if you prefer to use the projects console instead of the sites console.
+
+When you manually create a translation project, you must provide values for the following translation-related properties in addition to the [basic properties](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
+
+* **Name:** Project name
+* **Source Language:** The language of the source content
+* **Target Language:** The language into which the content is being translated
+* **Translation Method:** Select **Human Translation** to indicate that the translation is to be performed manually.
+
+1. On the toolbar of the projects console, click or tap **Create**.
+1. Select the **Translation Project** template and then click or tap **Next**.
+1. Enter values for the **Basic** properties tab.
+1. Click or tap **Advanced** and provide values for the translation-related properties.
+1. Click or tap **Create**. In the confirmation box, click or tap **Done** to return to the projects console, or click or tap **Open Project** to open and start managing the project.
+
+### Adding Pages and Assets to a Translation Job {#adding-pages-assets-to-a-translation-job}
 
 You can add pages, assets, or tags to the translation job of your translation project. To add pages or assets:
 
@@ -161,11 +217,11 @@ You can add pages, assets, or tags to the translation job of your translation pr
 >
 >This method adds pages/assets and their children to the project. Select **Asset/Page (without children)** if you only want to add the parents.
 
-## Adding Tags to a Translation Job {#adding-tags-to-a-translation-job}
+### Adding Tags to a Translation Job {#adding-tags-to-a-translation-job}
 
 You can add tags to a translation project similar to [how you add assets and pages to a project.](#adding-pages-assets-to-a-translation-job}) Just select **Tags** under the **Add** menu then follow the same steps.
 
-## Seeing Translation Project Details {#seeing-translation-project-details}
+### Seeing Translation Project Details {#seeing-translation-project-details}
 
 The translation project properties are accessible via the ellipsis button of the project summary tile. In addition to the generic [project information](/help/sites-authoring/projects.md#project-info), the translation project properties contains translation-specific properties such as:
 
@@ -180,7 +236,7 @@ When a project is created using the Resources pane of a page, these properties a
 
 ![Translation project properties](../assets/translation-project-properties.png)
 
-## Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
+### Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
 
 The translation job tile of a translation project provides the status of a translation job, as well as the number of pages and assets in the job.
 
@@ -205,7 +261,7 @@ The following table describes each status that a job or an item in the job can h
 
 To see the status of each file in the job, click or tap the ellipsis on the bottom of the tile.
 
-## Setting the Due Date of Translation Jobs {#setting-the-due-date-of-translation-jobs}
+### Setting the Due Date of Translation Jobs {#setting-the-due-date-of-translation-jobs}
 
 Specify the date before which your translation vendor needs to return translated files. Setting the due date functions correctly only when the translation vendor that you are using supports this feature.
 
@@ -219,7 +275,7 @@ Specify the date before which your translation vendor needs to return translated
 
 1. Click or tap **Save &amp; Close**.
 
-## Scoping a Translation Job {#scoping-a-translation-job}
+### Scoping a Translation Job {#scoping-a-translation-job}
 
 Scope a translation job to obtain an estimate of the cost of translation from your translation service provider. When you scope a job, source files are submitted to the translation vendor who compares the text to their pool of stored translations (translation memory). Typically, the scope is the number of words that require translating.
 
@@ -237,7 +293,7 @@ Scoping functions correctly only when the translation vendor that you are using 
 1. On the title of the translation job, tap or click the commands menu, then tap or click **Request Scope**.
 1. When the job status changes to **Scope Completed**, click or tap the commands menu, then click or tap **Show Scope**.
 
-## Starting a Translation Job {#starting-a-translation-job}
+### Starting a Translation Job {#starting-a-translation-job}
 
 Start a translation job to translate the source pages to the target language. The translation is performed according to the property values of the translation summary tile.
 
@@ -247,7 +303,7 @@ Start a translation job to translate the source pages to the target language. Th
 
 After you start the translation job, the translation job tile shows the translation in **In Progress** status.
 
-## Canceling a Translation Job {#canceling-a-translation-job}
+### Canceling a Translation Job {#canceling-a-translation-job}
 
 Cancel a translation job to halt the translation process and prevent the translation vendor from performing any further translations. You can cancel a job when the job has the **Committed For Translation** or **Translation In Progress** status.
 
@@ -255,7 +311,7 @@ Cancel a translation job to halt the translation process and prevent the transla
 1. On the translation job tile, click or tap the commands menu, then click or tap **Cancel**.
 1. In the action dialog that confirms the cancellation of the translation, click or tap **OK**.
 
-## Accept/Reject Workflow {#accept-reject-workflow}
+### Accept and Reject Workflow {#accept-reject-workflow}
 
 When the content comes back after translation and is in **Ready for Review** status, you can go in the translation job and accept/reject content.
 
@@ -263,90 +319,65 @@ If you select **Reject Translation**, you have the option to add a comment.
 
 Rejecting content sends it back to translation vendor where they will be able to see the comment.
 
-## Reviewing and Promoting Updated Content {#reviewing-and-promoting-updated-content}
+### Completing and Archiving Translation Jobs {#completing-and-archiving-translation-jobs}
+
+Complete a translation job after you have reviewed the translated files from the vendor.
+
+1. In the projects console, open the translation project.
+1. On the translation job tile, click or tap the commands menu, then click or tap **Complete**.
+1. The job now has the status **Complete**.
+
+For human translation workflows, completing a translation indicates to the vendor that the translation contract has been fulfilled and that they should save the translation to their translation memory.
+
+Archive a translation job after it is complete and you no longer need to see job status details.
+
+1. In the projects console, open the translation project.
+1. On the translation job tile, click or tap the commands menu, then click or tap **Archive**.
+
+When you archive the job, the translation job tile is removed from the project.
+
+## Reviewing and Using Translated Content {#reviewing-and-promoting-updated-content}
+
+You can use the sites console to review content, compare language copies, and activate the content.
+
+### Promoting Updated Content {#promoting-updated-content}
 
 When content is translated for an existing language copy, review the translations, make changes if necessary, and then promote the translations to move it to the language copy. You can review translated files when the translation job shows the **Ready For Review** status.
 
-![chlimage_1-269](assets/chlimage_1-269.png)
+![Job ready for review](../assets/job-ready-for-review.png)
 
 1. Select the page in the language master, click or tap **References**, then click or tap **Language Copies**.
 1. Click or tap the language copy to review.
 
-   ![chlimage_1-270](assets/chlimage_1-270.png)
+   ![Language copy ready for review](../assets/language-copy-ready-for-review.png)
 
 1. Click or tap **Launch** to reveal the launch-related commands.
 
-   ![chlimage_1-271](assets/chlimage_1-271.png)
+   ![chlimage_1-271](../assets/language-copy-launch.png)
 
 1. To open the launch copy of the page to review and edit the content, click **Open Page**.
 1. After you have reviewed the content and made necessary changes, to promote the launch copy click **Promote**.
 1. On the **Promote Launch** page, specify which pages to promote and then click or tap **Promote**.
 
-## Comparing Language Copies {#comparing-language-copies}
+### Comparing Language Copies {#comparing-language-copies}
 
 To compare language copies to the language master:
 
-1. In the **Sites** console, navigate to the language copy you want to compare.
-1. Open the **[References](/help/sites-authoring/basic-handling.md#references)** rail.
+1. In the sites console, navigate to the language copy you want to compare.
+1. Open the [References rail.](/help/sites-authoring/basic-handling.md#references)
 1. Under the **Copies** heading select **Language Copies.**
 1. Select your specific language copy and then you can either click **Compare to Master** or **Compare to Previous** if applicable.
 
-   ![chlimage_1-37](assets/chlimage_1-37.jpeg)
+   ![Compare language copies](../assets/language-copy-compare.png)
 
 1. The two pages (launch and source) will be opened side-by-side.
+   * For full information about using this feature see [Page Diff](/help/sites-authoring/page-diff.md).
 
-   For full information about using this feature see [Page Diff](/help/sites-authoring/page-diff.md).
+## Importing and Exporting Translation Jobs {#import-export}
 
-## Completing and Archiving Translation Jobs {#completing-and-archiving-translation-jobs}
+Although AEM offers a number of translation solutions and interfaces, it is also possible to import and export translation job information manually.
 
-Complete a translation job after you have reviewed the translated files from the vendor. For human translation workflows, completing a translation indicates to the vendor that the translation contract has been fulfilled and that they should save the translation to their translation memory.
-
-After you complete the job, the job has the **Complete** status.
-
-![chlimage_1-272](assets/chlimage_1-272.png)
-
-Archive a translation job after it is complete and you no longer need to see job status details. When you archive the job, the translation job tile is removed from the project.
-
-## Creating the Structure of a Language Copy {#creating-the-structure-of-a-language-copy}
-
-Populate your language copy so that it contains content from the master language that you are translating. Before you populate your language copy, you must have [created the language root](/help/sites-administering/tc-prep.md#creating-a-language-root) of the language copy.
-
-1. Use the sites console to select the language root of the master language that you are using as the source.
-1. On the toolbar, click or tap **References**.
-
-   ![chlimage_1-273](assets/chlimage_1-273.png)
-
-1. Select **Language Copies**, and then select the language copies that you want to populate.
-
-   ![chlimage_1-38](assets/chlimage_1-38.jpeg)
-
-1. Click or tap **Update Language Copies** to reveal the translation tools, and configure the properties:
-
-    * Select the **Select all sub-pages** option.
-    * For **Project**, select **Create Structure Only**.
-
-   ![chlimage_1-39](assets/chlimage_1-39.jpeg)
-
-1. Click or tap **Start**.
-
-## Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
-
-You can manually create a translation project if you prefer to use the projects console.
-
-When you manually create a translation project, you must provide values for the following translation-related properties in addition to the [basic properties](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
-
-* **Name:** Project name
-* **Source Language:** The language of the source content
-* **Target Language:** The language into which the content is being translated
-* **Translation Method:** Select **Human Translation** to indicate that the translation is to be performed manually.
-
-1. On the toolbar of the projects console, click or tap **Create**.
-1. Select the **Translation Project** template and then click or tap **Next**.
-1. Enter values for the **Basic** properties tab.
-1. Click or tap **Advanced** and provide values for the translation-related properties.
-1. Click or tap **Create**. In the confirmation box, click or tap **Done** to return to the projects console, or click or tap **Open Project** to open and start managing the project.
-
-## Exporting a Translation Job {#exporting-a-translation-job}
+### Exporting a Translation Job {#exporting-a-translation-job}
 
 You can download the content of a translation job, for example to send to a translation provider that is not integrated with AEM via a connector, or to review the content.
 
@@ -354,7 +385,7 @@ You can download the content of a translation job, for example to send to a tran
 1. In the dialog box, click or tap **Download Exported File**, and if necessary use the web browser dialog box to save the file.
 1. In the dialog box, click or tap **Close**.
 
-## Importing a Translation Job {#importing-a-translation-job}
+### Importing a Translation Job {#importing-a-translation-job}
 
 You can import translated content into AEM, for example when your translation provider sends it to you because they are not integrated with AEM via a connector.
 
