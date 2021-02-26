@@ -1,6 +1,6 @@
 ---
 title: Connecting to Microsoft Translator
-description: Learn how to connect AEM to Microsoft Translator.
+description: Learn how to connect to Microsoft Translator out-of-the-box with AEM to automate your translation workflow.
 ---
 
 # Connecting to Microsoft Translator {#connecting-to-microsoft-translator}
