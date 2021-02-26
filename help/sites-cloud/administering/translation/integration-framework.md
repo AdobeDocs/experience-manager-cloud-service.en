@@ -1,6 +1,6 @@
 ---
 title: Configuring the Translation Integration Framework
-description: Learn how to configure the Translation Integration Framework.
+description: Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 ---
 
 # Configuring the Translation Integration Framework {#configuring-the-translation-integration-framework}

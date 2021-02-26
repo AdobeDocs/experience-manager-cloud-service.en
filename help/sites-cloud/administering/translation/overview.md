@@ -1,6 +1,6 @@
 ---
 title: Translating Content for Multilingual Sites
-description: Learn how to translate content for multilingual sites.
+description: Get an overview of how to translate content for multilingual sites.
 ---
 
 # Translating Content for Multilingual Sites {#translating-content-for-multilingual-sites}

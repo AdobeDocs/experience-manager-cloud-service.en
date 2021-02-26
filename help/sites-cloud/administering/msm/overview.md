@@ -1,6 +1,6 @@
 ---
 title: Reusing Content: Multi Site Manager and Live Copy
-description: Learn about reusing content with Live Copies and the Multi Site Manager.
+description: Get an introduction to reusing content with AEM's powerful Live Copies and the Multi Site Manager features.
 ---
 
 # Reusing Content: Multi Site Manager and Live Copy {#multi-site-manager-and-live-copy}

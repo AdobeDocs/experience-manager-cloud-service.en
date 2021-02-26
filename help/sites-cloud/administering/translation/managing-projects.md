@@ -1,6 +1,6 @@
 ---
 title: Managing Translation Projects
-description: Learn how to manage translation projects in AEM.
+description: Learn how to create and manage both machine and human translation projects in AEM.
 ---
 
 # Managing Translation Projects {#managing-translation-projects}

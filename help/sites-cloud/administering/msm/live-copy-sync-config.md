@@ -1,6 +1,6 @@
 ---
 title: Configuring Live Copy Synchronization
-description: Learn about configuring Live Copy Synchronization.
+description: Learn about the powerful Live Copy synchronization options available and how you can configure and customize them for your project's needs.
 ---
 
 # Configuring Live Copy Synchronization {#configuring-live-copy-synchronization}
