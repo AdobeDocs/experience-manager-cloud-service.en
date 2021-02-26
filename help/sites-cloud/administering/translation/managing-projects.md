@@ -227,33 +227,25 @@ To obtain more information about scoping results, please contact your translatio
 
 >[!NOTE]
 >
->Scoping is optional. You can start a translation job without scoping.
+>Scoping is optional and only applies to human translation. You can start a translation job without scoping.
 
 When you scope a translation job, the status of the job is **Scope Requested**. When the translation vendor returns the scope, the status is changed to **Scope Completed**. When scoping is completed you can use the **Show Scope** command to review the scoping results.
 
 Scoping functions correctly only when the translation vendor that you are using supports this feature.
 
 1. In the projects console, open your translation project.
-1. On the Translation Job tile, click or tap the commands menu, then click or tap Request Scope.
-
-   ![chlimage_1-264](assets/chlimage_1-264.png)
-
-1. When the job status changes to SCOPE_COMPLETED, on the Translation Job tile click or tap the commands menu, then click or tap Show Scope.
+1. On the title of the translation job, tap or click the commands menu, then tap or click **Request Scope**.
+1. When the job status changes to **Scope Completed**, click or tap the commands menu, then click or tap **Show Scope**.
 
 ## Starting a Translation Job {#starting-a-translation-job}
 
 Start a translation job to translate the source pages to the target language. The translation is performed according to the property values of the translation summary tile.
 
-After you start the translation job, the translation job tile shows the translation in **In Progress** status.
-
-![chlimage_1-265](assets/chlimage_1-265.png)
-
 1. In the projects console, open the translation project.
 1. On the translation job tile, click or tap the commands menu, then click or tap **Start**.
-
-   ![chlimage_1-266](assets/chlimage_1-266.png)
-
 1. In the action dialog that confirms the starting of the translation, click or tap **Close**.
+
+After you start the translation job, the translation job tile shows the translation in **In Progress** status.
 
 ## Canceling a Translation Job {#canceling-a-translation-job}
 
@@ -267,13 +259,9 @@ Cancel a translation job to halt the translation process and prevent the transla
 
 When the content comes back after translation and is in **Ready for Review** status, you can go in the translation job and accept/reject content.
 
-![chlimage_1-267](assets/chlimage_1-267.png)
-
 If you select **Reject Translation**, you have the option to add a comment.
 
-![chlimage_1-268](assets/chlimage_1-268.png)
-
-Rejecting content sends it back to translation vendor where he will be able to see the comment.
+Rejecting content sends it back to translation vendor where they will be able to see the comment.
 
 ## Reviewing and Promoting Updated Content {#reviewing-and-promoting-updated-content}
 
