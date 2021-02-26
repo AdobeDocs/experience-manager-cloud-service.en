@@ -60,8 +60,7 @@ See [Git Resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build
 
 ## What to do if Cloud Manager deployment fails at deploy step in AEM as a Cloud Service Environment? {#cloud-manager-deployment-cloud-service}
 
-1. The most common reason for deploys to fail is due to insufficient permissions for the *sling-distribution-importer* user.
-
+The most common reason for deploys to fail is due to insufficient permissions for the *sling-distribution-importer* user.
 Refer to the example below to understand an issue, cause, and solution:
 
 **Issue**
@@ -90,11 +89,12 @@ org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
 
 1. The deployment might fail due to some other failure during replication of the content packages (sling distribution) from author to publish instances. 
 
-Refer to the steps below to simulate this on a local setup:
-   * Install an Author and Publish instance (using the latest AEM SDK jars)
-   * Log into the Author instance
-   * Go to **Tools** -> **Deployment** -> **Distribution**
-   * Distribute the content packages that are part of the code base and see if the queue gets blocked with an error 
+   Refer to the steps below to simulate this on a local setup:
+
+      * Install an Author and Publish instance (using the latest AEM SDK jars)
+      * Log into the Author instance
+      * Go to **Tools** -> **Deployment** -> **Distribution**
+      * Distribute the content packages that are part of the code base and see if the queue gets blocked with an error 
 
 ## Unable to set a variable via aio cloud manager set pipeline variables. How to debug these issues? {#set-variable} 
 
