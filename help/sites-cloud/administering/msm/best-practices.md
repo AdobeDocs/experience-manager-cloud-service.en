@@ -15,16 +15,9 @@ MSM is a configurable framework for automating content deployment. Implementatio
 * Once a plan exists for your structure, content flows, automation, and governance, **prototype and thoroughly test your system** before starting a live implementation.
 * Keep in mind that **Adobe Consulting and leading System Integrators** have deep experience planning and implementing content automation with MSM, so they can help you both get started with your MSM project and throughout its entire implementation.
 
->[!NOTE]
->
->Further information about working with MSM is available in the following articles:
->
->* [MSM FAQ](faq.md)
->* [Troubleshooting MSM Issues](troubleshooting.md)
-
 ## Live Copy Sources and Blueprint Configurations {#live-copy-sources-and-blueprint-configurations}
 
-Keep in mind that a Live Copy can be created using either [regular pages](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) or a [blueprint configuration](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Both are valid use cases.
+Keep in mind that a Live Copy can be created using either [regular pages](creating-live-copies.md#creating-a-live-copy-of-a-page) or a [blueprint configuration](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Both are valid use cases.
 
 The additional benefits of using a blueprint configuration are that they:
 
@@ -55,15 +48,15 @@ To support the nesting of components such that locally added components are main
 
 Notice that AEM has two main approaches for creating Live Copies:
 
-* When [creating a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) - This can be considered as the more generic approach, allowing you to create Live Copies from any page. The content structure of a Live Copy exactly matches the source.
+* When [creating a Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page) - This can be considered as the more generic approach, allowing you to create Live Copies from any page. The content structure of a Live Copy exactly matches the source.
 
-* When [creating a Site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) - This is a more specialized approach, primarily for creating websites with a multilingual structure.
+* When [creating a Site](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) - This is a more specialized approach, primarily for creating websites with a multilingual structure.
 
 The following are a few considerations to keep in mind when creating a site:
 
-* To create a new site, you need a [blueprint configuration](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* To create a new site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
 * To allow the selection of language paths to create in a new site, the corresponding language roots must exist in the blueprint (source).
-* Once a [new site has been created as a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (using **Create**, then **Site**), the first two levels of this Live Copy are *shallow*. Children of the page do not belong to the live-relationship, but a roll-out will still descend if a live-relationship that matches the trigger is found.
+* Once a [new site has been created as a Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (using **Create**, then **Site**), the first two levels of this Live Copy are *shallow*. Children of the page do not belong to the live-relationship, but a roll-out will still descend if a live-relationship that matches the trigger is found.
 
 It is helpful to avoid:
 
@@ -82,7 +75,7 @@ When creating language masters keep in mind the following:
     * Please check with your translation service provider for more information.
     * An alternative approach for creating and translating language masters is to use language copies in conjunction with AEM's out-of-the-box translation integration framework.
 
-For more information see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) and the [Translation Best Practices](/help/sites-administering/tc-bp.md).
+For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices](/help/sites-administering/tc-bp.md).
 
 ## Structure Changes and Rollouts {#structure-changes-and-rollouts}
 

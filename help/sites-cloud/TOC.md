@@ -91,7 +91,8 @@ user-guide-description: Understand how to author with, and administer, Experienc
       + [Language Copy Wizard](administering/translation/wizard.md)
       + [Identifying Content to Translate](administering/translation/rules.md)
       + [Configuring the Translation Integration Framework](administering/translation/integration-framework.md)
-      + [Connecting to Microsoft Translator](administering/translations/connect-ms-translator.md)
+      + [Connecting to Microsoft Translator](administering/translation/connect-ms-translator.md)
+      + [Translation Best Practices](administering/translation/best-practices.md)
 + Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-adobe-target.md)
