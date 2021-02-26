@@ -592,6 +592,12 @@ The properties above should be specified for each relevant program/environment t
 >
 >Splunk forwarding for sandbox program environments is not supported.
 
+You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments.
+
+If any new dev environments created after the initial request are intended to have Splunk forwarding, but don't have it enabled, an additional request should be made.
+
+Also note that if dev environments have been requested, it is possible that other dev environments not in the request or even sandbox environments will have Splunk forwarding enabled and will share a Splunk index. Customers can use the `aem_env_id` field to distinguish between these environments.
+
 Below you will find a sample customer support request:
 
 Program 123, Production Env
