@@ -57,11 +57,10 @@ The Web Console, used in previous versions of AEM to change OSGi settings, is no
 
 ## Changes to publish repository are not allowed {#changes-to-publish-repo}
 
-Direct changes to the publish repository are not allowed on AEM Cloud Service. In prior versions of on-premise AEM or AEM on AMS, code changes could be made directly to the publish repository for example to creates users, update user profile, and create nodes. This is no longer possible and can be mitigated in the following ways:
+Aside from changes under the `/home` folder on the publish tier, direct changes to the publish repository are not allowed on AEM Cloud Service. In prior versions of on-premise AEM or AEM on AMS, code changes could be made directly to the publish repository. Some limitations can be mitigated in the following ways:
 
 * For content and content based configuration: make the changes on the author instance and publish them.
 * For code and configuration: make the changes in the GIT repository and run the CI/CD pipeline to roll them out.
-* For user-related data such as form submits or profile data: use the Unified Profile Service from Experience Cloud Platform or other 3rd party session aware store.
 
 ## Custom runmodes are not allowed {#custom-runmodes}
 
