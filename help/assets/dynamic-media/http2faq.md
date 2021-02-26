@@ -7,6 +7,10 @@ description: Learn about HTTP2 content delivery.
 
 Adobe is excited to announce the availability of HTTP/2 delivery of content. When using HTTP/2, an overall performance increase is experienced.
 
+>[!NOTE]
+>
+>This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
+
 ## What is HTTP/2? {#what-is-http}
 
 HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of processing power that is needed.
@@ -33,7 +37,7 @@ The following demonstration illustrates the difference between HTTP/1 versus HTT
 To use HTTP/2, you must meet the following requirements:
 
 * Use secure HTTPS for your rich media requests.
-* Use the Adobe-bundled CDN (content delivery network) as part of your Dynamic Media Classic license.
+* Use the Adobe-bundled CDN (Content Delivery Network) as part of your Dynamic Media Classic license.
 * Use a dedicated domain (that is, `images.company.com` or `mycompany.scene7.com`), not a generic Dynamic Media domain (that is, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`).
 
   To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
