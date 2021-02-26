@@ -87,3 +87,48 @@ Use the following procedure view the language copies for a page using the [rail 
    ![Open references rail](../assets/opening-references-rail.png)
 
 1. In the references rail, click or tap **Language Copies**. The rail shows the language copies of the web site.
+
+## Language Copies on Multiple Levels {#multiple-levels}
+
+Language roots can also be grouped under nodes, for example by region, while still being recognized as roots of language copies.
+
+```text
+/content
+    |- wknd
+        |- language-masters
+            |- europe
+                |- de
+                |- fr
+                |- it
+                |- es
+                ]- pt
+            |- americas
+                |- en
+                |- es
+                |- fr
+                |- pt
+            |- asia
+                |- ...
+            |- africa
+                |- ...
+            |- oceania
+                |- ...
+        |- europe
+        |- americas
+        |- asia
+        |- africa
+        |- oceania            
+```
+
+>[!NOTE]
+>
+>Only one level is allowed. For example, the following will not allow the `es` page to resolve to a language copy:
+>
+>* `/content/wknd/language-masters/en`
+>* `/content/wknd/language-masters/americas/central-america/es`
+>
+> This `es` language copy will not be detected as it is 2 levels (`americas/central-america`) away from the `en` node.
+
+>[!TIP]
+>
+>In such a setup, language roots can have any page name, rather than just the ISO-code of the language. AEM will always check the path and name first, but if the page name does not identify a language, AEM will check the `cq:language` property of the page for the language identification.

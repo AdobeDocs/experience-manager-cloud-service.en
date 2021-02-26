@@ -30,7 +30,7 @@ For example, the `/content/wknd/fr` language root is created for the French tran
 * A translation project is created for the `/content/wknd/en/products` page and all child pages, targeting the French language copy. Because the language copy does not include the `/content/wknd/fr/products` page, AEM immediately copies the `/content/wknd/en/products` page and all child pages to the French language copy. The copies are also included in the translation project.
 * A translation project is created for the `/content/wknd/en` page and all child pages, targeting the French language copy. Because the language copy includes the page that corresponds with the `/content/wknd/en` page (the language root), AEM copies the `/content/wknd/en` page and all child pages and adds them to a launch. The copies are also included in the translation project.
 
-## Translation Jobs from the Sites Console {#performing-initial-translations-and-updating-existing-translations}
+## Translation from the Sites Console {#performing-initial-translations-and-updating-existing-translations}
 
 Translation projects can be created or updated directly from the sites console.
 
@@ -67,7 +67,8 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 1. Select **Language Copies**, and then select the language copies for which you are translating the source pages.
 1. Click or tap **Create &amp; Translate** and then configure the translation job:
 
-    * Use the Languages drop-down to select a language copy for which you want to translate. Select additional languages as required. Languages that appear in the list correspond with the [language roots that you have created](/help/sites-administering/tc-prep.md#creating-a-language-root).
+    * Use the **Languages** drop-down to select a language copy for which you want to translate. Select additional languages as required. Languages that appear in the list correspond with the [language roots that you have created](/help/sites-administering/tc-prep.md#creating-a-language-root).
+      * Selecting multiple languages creates one projects with a translation job for each language.
     * To translate the page that you selected and all child pages, select **Select all sub-pages**. To translate only the selected page that you selected, clear the option.
     * For **Project**, select **Create Translation Project(s)**.
     * Optionally for **Project Master**, select a project from which to inherit user roles and permissions.
@@ -151,6 +152,29 @@ Populate your language copy so that it contains content from the master language
 
 1. Click or tap **Update**.
 
+### Updating Translation Memory {#updating-translation-memory}
+
+Manual edits of translated content can be synchronized back to the Translation Management System (TMS) to train its Translation Memory.
+
+1. From the sites console, after updating text content in a translated page, select **Update Translation Memory**.
+1. A list view shows a side-by-side comparison of the source and the translation for every text component that was edited. Select which translation updates should be synchronized to translation memory, and select **Update Memory**.
+
+![Compare changes for translation memory](../assets/update-translation-memory-compare.png)
+
+AEM will send the selected strings back to the Translation Management System.
+
+### Checking Translation Status of a Page {#check-translation-status}
+
+A property can be selected in the list view of the sites console that shows if a page has been translated, is in translation, or has not yet been translated.
+
+1. In the site console, switch to [list view.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Tap or click, **View Settings** in the view drop-down.
+1. In the dialog, check the **Translated** property and tap or click **Update**.
+
+The sites console now displays the **Translated** column showing the translation status of the pages listed.
+
+![Translation status in list view](../assets/translation-status-list-view.png)
+
 ## Managing Translation Projects from the Project Console
 
 Many translation tasks and advanced options can be accessed in the projects console.
@@ -182,7 +206,8 @@ When you manually create a translation project, you must provide values for the 
 
 * **Name:** Project name
 * **Source Language:** The language of the source content
-* **Target Language:** The language into which the content is being translated
+* **Target Language:** The language or languages into which the content is being translated
+  * If multiple languages are selected, a job is created for each language within the project.
 * **Translation Method:** Select **Human Translation** to indicate that the translation is to be performed manually.
 
 1. On the toolbar of the projects console, click or tap **Create**.
@@ -223,16 +248,23 @@ You can add tags to a translation project similar to [how you add assets and pag
 
 ### Seeing Translation Project Details {#seeing-translation-project-details}
 
-The translation project properties are accessible via the ellipsis button of the project summary tile. In addition to the generic [project information](/help/sites-authoring/projects.md#project-info), the translation project properties contains translation-specific properties such as:
+The translation project properties are accessible via the ellipsis button of the project summary tile. In addition to the generic [project information](/help/sites-authoring/projects.md#project-info), the translation project properties contains translation-specific.
+
+In your translation project, click or tap the ellipsis at the bottom of the Translation Summary tile. Most project-specific properties are on the **Advanced** tab.
 
 * **Source Language:** The language of the pages that are being translated
-* **Target Language:** The language into which the pages are being translated
-* **Method:** The translation workflow, either **Human Translation** or **Machine Translation**
+* **Target Language:** The language or languages into which the pages are being translated
+* **Cloud Configuration:** The cloud configuration for the translation service connector that is used for the project
+* **Translation Method:** The translation workflow, either **Human Translation** or **Machine Translation**
 * **Translation Provider:** The translation service provider that is performing the translation
 * **Content Category:** (Machine Translation) The content category that is used for translating
-* **Cloud Configuration:** The cloud configuration for the translation service connector that is used for the project
+* **Translation Provider Credential:** The credentials to sign into the provider
+* **Automatically Promote Translation Launches:** After receiving translated content, translation launches are automatically promoted
+  * **Delete Launch After Promotion:** If translation launches are automatically promoted, delete the launch after promotion
+* **Automatically Approve Translations:** After receiving translated content, translation jobs are automatically approved
+* **Repeat Translation:** Configure recurring execution of a translation project by selecting the frequency that the project will automatically create and execute translation jobs
 
-When a project is created using the Resources pane of a page, these properties are automatically configured based on the properties of the source page.
+When a project is created using the references rail of a page, these properties are automatically configured based on the properties of the source page.
 
 ![Translation project properties](../assets/translation-project-properties.png)
 
@@ -293,15 +325,23 @@ Scoping functions correctly only when the translation vendor that you are using 
 1. On the title of the translation job, tap or click the commands menu, then tap or click **Request Scope**.
 1. When the job status changes to **Scope Completed**, click or tap the commands menu, then click or tap **Show Scope**.
 
-### Starting a Translation Job {#starting-a-translation-job}
+### Starting Translation Jobs {#starting-translation-jobs}
 
 Start a translation job to translate the source pages to the target language. The translation is performed according to the property values of the translation summary tile.
+
+You can start an individual job from within the project.
 
 1. In the projects console, open the translation project.
 1. On the translation job tile, click or tap the commands menu, then click or tap **Start**.
 1. In the action dialog that confirms the starting of the translation, click or tap **Close**.
 
 After you start the translation job, the translation job tile shows the translation in **In Progress** status.
+
+You can also start all translation jobs for a project.
+
+1. In the project console, select the translation project.
+1. In the tool bar tap or click **Start Translation Job(s)**.
+1. In the dialog, review the list of jobs that will be started and then confirm with **Start** or abort with **Cancel**.
 
 ### Canceling a Translation Job {#canceling-a-translation-job}
 
