@@ -68,4 +68,4 @@ The values for the continent codes are:
 * OC Oceania
 * SA South America
 
-This information may be useful for use cases such as redirecting to a different url based on the origin (country) of the request. Although, in this specific use case the redirect should not be cached since it varies. If needed, you can use `Cache-Control: private` to prevent caching. See also [Caching](/help/implementing/dispatcher/caching.md#html-text).
+This information may be useful for use cases such as redirecting to a different url based on the origin (country) of the request. Use the Vary header for caching responses that are dependent on geo information. For example, redirects to a specific country landing page should always contain `Vary: x-aem-client-country`. If needed, you can use `Cache-Control: private` to prevent caching. See also [Caching](/help/implementing/dispatcher/caching.md#html-text).
