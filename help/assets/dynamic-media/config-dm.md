@@ -11,13 +11,24 @@ If you use Adobe Experience Manager for different environments, such as developm
 
 The following architecture diagram describes how Dynamic Media works.
 
-With the new architecture, AEM is responsible for primary source assets and syncs with Dynamic Media for asset processing and publishing:
+With the new architecture, Experience Manager is responsible for primary source assets and syncs with Dynamic Media for asset processing and publishing:
 
 1. When the primary source asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image.
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to publish and approve, it triggers the Dynamic Media service to push content to delivery servers and cache content at the CDN.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
+
+>[!NOTE]
+>
+>The following list of features require you to use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
+>
+>* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+>* [Cache invalidation](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink protection](/help/assets/dynamic-media/hotlink-protection.md)
+>* [HTTP/2 delivery of content](/help/assets/dynamic-media/http2faq.md)
+>* URL redirect at the CDN level
+>* Akamai ChinaCDN (for optimal delivery in China)
 
 <!-- OBSOLETE CONTENT
 
@@ -131,7 +142,7 @@ See also [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 1. On the **[!UICONTROL DMSETUP]** page, review the configuration details that describe the failure. In particular, take note of any error messages or error codes. Contact Adobe Customer Care with this information.
 
-   ![Dynamic Media Setup page](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![Dynamic Media Set up page](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Changing the password to Dynamic Media {#change-dm-password}
 
