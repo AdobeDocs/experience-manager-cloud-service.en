@@ -1,6 +1,6 @@
 ---
 title: Rollout Conflicts
-description: Learn how to deal with Multi Site Manager rollout conflicts.
+description: Learn how to manage and resolve Multi Site Manager rollout conflicts.
 ---
 
 # Rollout Conflicts {#msm-rollout-conflicts}

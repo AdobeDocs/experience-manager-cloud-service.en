@@ -1,6 +1,6 @@
 ---
 title: Live Copy Overview Console
-description: Learn about the basics of the Live Copy Overview Console.
+description: Learn about the basics of the Live Copy Overview Console to quickly understand the status of your Live Copies in order to synchronize content.
 ---
 
 # Live Copy Overview Console {#live-copy-overview-console}
