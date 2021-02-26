@@ -56,120 +56,46 @@ After you configure a translation integration framework, you can [associate it w
 >
 >For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
 
-A single configuration of the framework controls how to translate page content, community content, and assets.
-![chlimage_1-386](assets/translation-config-65.jpg)
+A single configuration of the framework controls how to translate page content and assets.
+
+![Translation configuration](../assets/translation-configuration.png)
+
+To create a new translation configuration:
+
+1. In the [global navigation menu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) click or tap **Tools -&gt; Cloud Services -&amp; Translation Cloud Services**.
+1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular site or can be global.
+1. Provide the following information in the fields and then click or tap **Create**.:
+   1. Select **Configuration Type** in the drop-down.
+   1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console as well as in page property drop-down lists.
+   1. Optionally, type a **Name** to use for the repository node that stores the configuration.
+1. In the **Edit Configuration** window, configure the properties on the **Sites** and **Assets** tabs, and then click or tap **Save &amp; Close**.
 
 ### Sites Configuration Properties {#sites-configuration-properties}
 
-The Sites properties control how the translation of page content is performed.
+The **Sites** tab controls how the translation of page content is performed.
 
-<table>
- <tbody>
-  <tr>
-   <th>Property</th>
-   <th>Description</th>
-  </tr>
-  <tr>
-   <td>Translation Workflow</td>
-   <td><p>Select the translation method that the framework performs for site content:</p>
-    <ul>
-     <li>Machine Translation: The translation provider performs the translation using machine translation in real time.</li>
-     <li>Human Translation: Content is sent to the translation provider to be translated by translators. </li>
-     <li>Do Not Translate: Content is not sent for translation. This is to skip certain content branches which would not be translated but could be updated with latest content.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Translation Provider</td>
-   <td>Select the translation provider to perform the translation. A provider appears in the list when their corresponding connector is installed.</td>
-  </tr>
-  <tr>
-   <td>Content Category</td>
-   <td>(Machine Translation Only) A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.</td>
-  </tr>
-  <tr>
-   <td>Translate Tags</td>
-   <td>Select to translate tags that are associated with the page.</td>
-  </tr>
-  <tr>
-   <td>Translate Page Assets</td>
-   <td><p>Select how to translate assets that are added to components from the file system or referenced from Assets:</p>
-    <ul>
-     <li>Do not translate: Page assets are not translated.</li>
-     <li>Using Sites translation workflow: Assets are handled according to the configuration properties on the Sites tab.</li>
-     <li>Using Assets translation workflow: Assets are handled according to the configuration of the properties on the Assets tab.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Auto-Execute Translation</td>
-   <td>Select to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review and scope the translation job when you select this option.</td>
-  </tr>
- </tbody>
-</table>
-
-### Communities Configuration Properties {#communities-configuration-properties}
-
-Communities properties control how the translation of user-generated content is performed. The translation of user-generated content always uses machine translation. For more information, see [Translating User Generated Content](/help/communities/translate-ugc.md).
-
-| Property |Description |
+|Property|Description|
 |---|---|
-| Translation Provider |Select the translation provider to perform the translation. The provider for which cloud configurations are created appear in the list. |
-| Content Category |A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content. |
-| Choose A Locale To Use As The Global Share Store |(Optional) By selecting a locale for storing UGC, posts from all language copies will appear in one global conversation. By convention, choose the locale for the [base language](/help/communities/sites-console.md#translation) for the website. Choosing No Common Store will disable global translation. By default, global translation is disabled. |
+|Translation Workflow|This property defines the translation method that the framework performs for site content:<br>- Machine Translation: The translation provider performs the translation using machine translation in real time.<br>- Human Translation: Content is sent to the translation provider to be translated by translators.<br>- Do Not Translate: Content is not sent for translation. This is to skip certain content branches which would not be translated but could be updated with latest content.|
+|Translation Provider|This property defines the translation provider to perform the translation. A provider appears in the list when its corresponding connector is installed.|
+|Content Category|(Machine Translation Only) This property is a category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.|
+|Translate Tags|This option enables translating tags that are associated with the page.|
+|Translate Page Assets|This property defines how to translate assets that are added to components from the file system or referenced from assets:<br>- Do not translate: Page assets are not translated.<br>- Using sites translation workflow: Assets are handled according to the configuration properties on the **Sites** tab.<br>- Using assets translation workflow: Assets are handled according to the properties configured on the **Assets** tab.|
+|Auto-Execute Translation|Enable this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review and scope the translation job when you select this option.|
 
 ### Assets Configuration Properties {#assets-configuration-properties}
 
 Assets properties control how to configure assets. For more information about translating assets, see [Creating Language Copies for Assets](/help/assets/translation-projects.md).
 
-<table>
- <tbody>
-  <tr>
-   <th>Property</th>
-   <th>Description</th>
-  </tr>
-  <tr>
-   <td>Translation Workflow</td>
-   <td><p>Select the type of translation that the framework performs for assets:</p>
-    <ul>
-     <li>Machine Translation: The translation provider performs the translation immediately using machine translation.</li>
-     <li>Human Translation: Content is automatically sent to the translation provider to be manually translated. </li>
-     <li>Do Not Translate: Assets are not sent for translation.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Translation Provider</td>
-   <td>Select the translation provider to perform the translation. A provider appears in the list when their corresponding connector is installed.</td>
-  </tr>
-  <tr>
-   <td>Content Category</td>
-   <td>(Machine Translation only) A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.</td>
-  </tr>
-  <tr>
-   <td>Translate Assets</td>
-   <td>Select to include assets in the translation project. </td>
-  </tr>
-  <tr>
-   <td>Translate Metadata</td>
-   <td>Select to translate asset metadata.</td>
-  </tr>
-  <tr>
-   <td>Translate Tags</td>
-   <td>Select to translate tags that are associated with the asset.</td>
-  </tr>
-  <tr>
-   <td>Auto-Execute Translation</td>
-   <td>Select to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.</td>
-  </tr>
- </tbody>
-</table>
-
-1. In the side bar, click or tap Tools &gt; Operations &gt; Cloud &gt; Cloud Services.
-1. In the Translation Integration area, whether any configurations have been created determines which link appears:
-
-    * If no configurations have been created, click or tap Configure Now.
-    * If configurations already exist, click or tap Show Configurations, and then click or tap the + link that appears next to Available Configurations.
-
-1. Type a name for the configuration and then click or tap Create.
-1. Configure the properties on the Sites, Communities, and Assets tab, and then click or tap OK.
+|Property|Description|
+|---|---|
+|Translation Workflow|This property selects the type of translation that the framework performs for assets:<br>- Machine Translation: The translation provider performs the translation immediately using machine translation.<br>- Human Translation: Content is automatically sent to the translation provider to be manually translated.<br>-Do Not Translate: Assets are not sent for translation.|
+|Translation Provider|This property defines the translation provider to perform the translation. A provider appears in the list when its corresponding connector is installed.|
+|Content Category|(Machine Translation only) This property describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.|
+|Translate Assets|Activate this property to include assets in the translation project.|
+|Translate Metadata|Activate this property to translate asset metadata.|
+|Translate Tags|Activate this property to translate tags that are associated with the asset.|
+|Auto-Execute Translation|Select this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.|
 
 ## Configuring Pages for Translation {#configuring-pages-for-translation}
 
@@ -180,27 +106,24 @@ To configure the translation of your source pages into other languages, associat
 
 Note that the translation integration framework cloud configuration identifies the cloud configuration to use for connecting to the service provider. When you associate a source page with a framework cloud configuration, the page must be associated with the service provider cloud configuration that the framework cloud configuration uses.
 
-When you associate a page with a cloud configuration, the descendants of the page inherit the association. For example, if you associate the /content/geometrixx/en/products page with a Translation Integration Framework, the Products page and all pages below it are translated according to the framework.
+When you associate a page with a cloud configuration, the descendants of the page inherit the association. For example, if you associate the `/content/wknd/language-masters/en/magazine` page with a Translation Integration Framework, the `magazine` page and child pages below it are translated according to the framework.
 
-When required, you can override the association on a descendent page. For example, the content of a web site is mostly about clothing. However, one branch of pages describes the company. The root page of the site is associated with a Translation Integration Framework that specifies machine translation using the Clothing category. The branch that describes the company uses a framework that performs machine translation using the General category.
-
-Further, for any communities [SCF components](/help/communities/scf.md) on the pages, the user generated content (UGC) will include the ability for users to translate content. For more information, see [Translation of User Generated Content](/help/communities/translate-ugc.md).
+When required, you can override the association on a descendent page. For example, the content of a web site is mostly about travel and lifestyle. However, one branch of pages describes the company. In such a case, the root page of the site might be associated with a Translation Integration Framework that specifies machine translation using the Lifestyle category while the branch that describes the company would use a framework that performs machine translation using the General category.
 
 ### Associating a Page with a Translation Provider {#associating-a-page-with-a-translation-provider}
 
 Associate a page with the translation provider that you are using to translate the page and descendent pages.
 
-1. In the Sites console, select the page to configure and click or tap View Properties.
-1. Click or tap Edit then click or tap the Cloud Services tab.
-1. Click or tap Add Configuration &gt; Translation Integration.
-1. Select the translation provider to use, and then click or tap Done.
+1. In the sites console, select the page to configure and click or tap **View Properties**.
+1. Click or tap the **Cloud Services** tab.
+1. In the **Add Configuration** dropdown, select the configuration.
+1. Click or tap **Save &amp; Close**.
 
 ### Associating Pages with a Translation Integration Framework {#associating-pages-with-a-translation-integration-framework}
 
 Associate a page with the Translation Integration Framework that defines how you want to perform the translation of the page and descendent pages.
 
-1. In the Sites console, select the page to configure and click or tap View Properties.
-1. Click or tap Edit then click or tap the Cloud Services tab.
-1. Click or tap Add Configuration &gt; Translation Integration.
-1. Select the translation integration framework to use, and then click or tap Done.
-
+1. In the sites console, select the page to configure and click or tap **View Properties**.
+1. Click or tap the **Cloud Services** tab.
+1. In the **Add Configuration** dropdown, select the configuration.
+1. Click or tap **Save &amp; Close**.
