@@ -5,13 +5,13 @@ description: Learn how to facilitate communication between a third party server 
 
 # Introduction {#introduction}
 
->[!IMPORTANT]
->
->This feature is not yet available. Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for an up to date list of features.
-
 Some architectures rely on making calls to AEM as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application that calls a server, which then makes API requests to AEM as a Cloud Service.
 
 The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
+
+>[!NOTE]
+>
+>In addition to this documentation, you can also consult the tutorial on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
@@ -87,7 +87,7 @@ exchange(config).then(accessToken => {
 
 The same exchange can be performed in any language capable of generating a signed JWT Token with the correct format and calling the IMS Token Exchange APIs.
 
-The access token will define when it expires, which is typically 12 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
+The access token will define when it expires, which is typically 24 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
@@ -113,7 +113,7 @@ See the [Developer Guidelines documentation](/help/implementing/developing/intro
 
 >[!NOTE]
 >
->The local development access token is valid for 24 hours after which time it must be regenerated using the same method.
+>The local development access token is valid for a maximum of 24 hours after which it must be regenerated using the same method.
 
 Developers may use this token to make calls from their non-AEM test application to an AEM as a Cloud Service environment. Typically, the developer will use this token with the non-AEM application on their own laptop. Also, the AEM as a Cloud is typically a non-production environment.
 
@@ -134,4 +134,11 @@ Make the appropriate server-to-server API calls from the non-AEM application to 
 
 ## Service Credentials Revocation {#service-credentials-revocation}
 
-Please submit a request to customer support if the JWT bearer token needs to be revoked.
+If the credentials need to be revoked, you need to submit a request to customer support using these steps:
+
+1. Disable the technical account user for the Adobe Admin Console in the User Interface:
+   * In Cloud Manager, press the **...** button next to your environment. This will open the product profiles page
+   * Now, click on the **AEM Users** profile, to show a list of the users
+   * Click the **API Credentials** tab, then find the appropriate technical account user and delete it
+2. Contact customer support, and request that the service credentials for that specific environment are deleted
+3. Finally, you can generate the credentials again, as described in this documentation. Also make sure that the new technical account user that is created has the appropriate permissions.

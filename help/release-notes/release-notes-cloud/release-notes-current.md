@@ -9,67 +9,148 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 
 ## Release Date {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 is December 17, 2020.
-The following release (2021.1.0) will be on January 28, 2021.
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 is February 25, 2021.
+The following release (2021.3.0) will be on March 25, 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* **[Content Fragment HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**: Add the ability to add/update and delete Content Fragment variations using the HTTP API.
+### Headless Content Management {#headless}
+
+* **[GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
+
+* **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
+
+* **[The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)**: Added support for viewing and editing external SPAs within AEM using.
+
+* **[Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Added ability to upload a standalone single-page application to an AEM instance, add editable sections of content, and enable authoring.
+
+* Enhanced JSON output from GraphQL API, including ability to output rich text in JSON format and locales.
+
+* Support for nesting Content Fragment models to allow creating nested Content Fragment structures, via dedicated Content Fragment Reference data types or Content Fragment references inline in multiline text fields.
+
+* Additional validation rules available in Content Fragment model data types, including "unique", "required" and "translatable".
+
+* Ability tag Content Fragment models, and to allow Content Fragment creation in a folder with policies by tags or paths.
+
+* Usability enhancements in Content Fragment editor, including publish action and display of model a fragment is based on.
+
+* Ability to preview JSON output directly in Content Fragment editor.
+
+<!--
+### Progressive Web Apps (PWAs) {#pwa}
+
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* Integration with [!DNL Adobe InDesign Server] is now available for [!DNL Experience Manager] as a [!DNL Cloud Service]. It provides automation to process [!DNL Adobe InDesign] files using [!DNL Adobe InDesign Server] scripting and lets users use [!DNL Assets] templates user interface to create brochures or ads. Only [!DNL InDesign Server] hosted by [!DNL Adobe Managed Services] is supported for [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
+## What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] is enhanced to track and display asset references when an asset is used in a remote [!DNL Experience Manager Sites] deployment using the Connected Assets functionality. A new [!UICONTROL References] tab in asset's [!UICONTROL Properties] page now lists local and remote references of the asset. The references let DAM users track asset usage in [!DNL Sites] pages and in compound assets in [!DNL Assets]. See [configure and use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
+* Assets can be sourced using [!DNL Experience Manager Assets Brand Portal]. It helps to source assets from the agency users for new marketing campaigns, photoshoots, and projects.
 
-* [!DNL Dynamic Media] capabilities are now accessible via [!DNL Sites] image-based Core Components. Authors can quickly configure components to use Image Presets, Smart Crop, and Image Modifiers when creating webpages. See [Core Components 2.13.0 release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-* [!DNL Experience Manager] desktop app lets users upload files and folders by dragging the files from Windows Explorer or Mac Finder on the desktop app interface. See [add assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-### What is New {#what-is-new-commerce}
+Ability to select a root path. select if a minimum number of tags is required. 
 
-* Released CIF Venia Reference Site - 2020.12.01 that includes the latest CIF Core Components version v1.6.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) for more details.
+Add a Boolean or radio widget type to metadata schema setup. -->
 
-* Released CIF Core Components v1.6.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) for more details.
+## Bug fixes in [!DNL Assets] {#bug-fixes-assets}
+
+* When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
+* When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available. (CQ-4314101)
 
 ## Cloud Manager {#cloud-manager}
 
 ### Release Date {#release-date-cm}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January 14, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is February 11, 2021.
+
+### What is New {#what-is-new-cloud-manager}
+
+
+* Assets customers will now be able to choose when and where to deploy their Brand Portal instance in a self-service way via Cloud Manager UI. For a regular (non sandbox) program with Assets solution, Brand Portal can now be provisioned on the Production environment. The provisioning can be done only once on Production environment.
+
+* The AEM Project Archetype used in Project and Sandbox Creation has been updated to version 25. 
+
+* The list of deprecated APIs identified during code scanning has been refined to include additional classes and methods deprecated in the latest Cloud Service SDK releases.
+
+* SonarQube profile for Cloud Manager updated to remove Sonar rule squid:S2142. This will no longer conflict with Thread Interruption checks.
+
+* Cloud Manager UI will inform the user who may not temporarily not be able to add/update domain name because the associated environment either has a running pipeline attached to it or currently in the waiting for the approval step.
+
+* Properties set in customer `pom.xml` files prefixed with sonar will now be dynamically removed in order to avoid build and quality scanning failures.
+
+* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed.
+
+* Additional Code Quality Rules have been added to cover Cloud Service Compatibility issues.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 
-* Assets Production instance may on occasion, show the Brand Portal status on the **Environments** detail page as *Pending* without allowing the user to take any action.
+* Matching SSL certificate against a domain name is no longer case sensitive.
 
-* When triggering a de-hibernate from Cloud Manager, sometimes a failure message was displayed even when de-hibernation was started successfully. 
+* Cloud Manager UI will now inform a user if the certificate private keys does not meet the 2048 bit limit with an appropriate error message.
 
-* Rare cases of failure encountered in environment creation or deletion has been addressed.
+* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that is currently being deployed.
 
-## Code Refactoring Tools {#code-refactoring-tools}
+* In some cases, an internal issue may cause environment deletion to be stuck.
 
-### What is new in [!DNL Code Refactoring Tools] {#what-is-new-crt}
+* Some pipeline failures were incorrectly reported as pipeline errors.
 
-* New version of AIO-CLI plugin released. Latest version of this plugin includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. Please refer to [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin. 
-
-* Index Converter is a utility that can be used to transform a customer's Custom OAK Index Definitions to AEM as a CLoud Service compatible OAK Index Definitions. Please refer to [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) for more details.
-
-* New feature added to [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) that creates a separate package `ui.config` to contain all OSGi configurations. 
-
-### Bug Fixes {#crt-bug-fixes}
-
-* Several bug fixes done on the AEM Dispatcher Converter and Repository Modernizer tools. Please refer to [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) and [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
-
-## Cloud Transition Tools {#code-transition-tools}
+## Content Transfer Tool {#content-transfer-tool}
 
 ### Release Date {#release-date-ctt}
 
-The Release Date for Content Transfer Tool v1.2.20 is February 01, 2021.
+The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
 
-### What is new in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### Bug Fixes {#bug-fixes-ctt}
 
-* New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+* When mapping multiple users, some users’ IMS IDs were being mapped incorrectly. This has been fixed.
+
+### Release Date {#release-date-ctt-feb}
+
+The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
+
+### What is new in Content Transfer Tool {#what-is-new-ctt}
+
+* New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. 
+    Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 * Content Transfer Tool now migrates all groups and users referenced in the migration set including children.
 * Users are allowed to select certain paths under `/etc` when creating migration sets.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
+
+### What is new in Best Practices Analyzer {#what-is-new-bpa}
+
+* Ability to detect the use of AEM Forms and AEM Forms implementation and indicate areas that are relevant to migrating to AEM Forms as a Cloud Service.
+* Ability to detect and report on usage and count of custom components and templates.
+* Ability to detect the type of node store and data store used.
+* Ability to detect the usage of Dynamic Media.
+* Ability to detect the Java version used.
+
+## Code Refactoring Tools {#code-refactoring-tools}
+
+### What is new in Code Refactoring Tools {#what-is-new-crt}
+
+* New version of AIO-CLI plugin released. Latest version of this plugin includes several bug fixes for the Repository Modernizer. 
+   Refer to [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
+
+### Bug Fixes {#bug-fixes-crt}
+
+* Several bug fixes done on the Repository Modernizer. 
+   Refer to [GitHub Resource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
+
+
+
+
+
+
+
+

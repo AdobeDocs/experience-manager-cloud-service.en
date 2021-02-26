@@ -35,7 +35,7 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
 
-1. In the left rail, select the drop-down menu and tap **[!UICONTROL Viewers]**.
+1. In the left rail, select the drop-down list and tap **[!UICONTROL Viewers]**.
 1. In the left rail, tap a viewer preset name. The viewer preset is applied to the asset.
 1. Tap **[!UICONTROL Embed]**.
 1. In the **[!UICONTROL Embed Code]** dialog box, copy the entire code to the clipboard, and then tap **[!UICONTROL Close]**.

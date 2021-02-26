@@ -11,7 +11,6 @@ From the **Variations** tab you can:
 
 * [Enter the content](#authoring-your-content) for your fragment,
 * [Create and manage variations](#managing-variations) of the **Master** content,
-* See the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) that was used to create the fragment; shown in top toolbar, under the fragment name.
 
 Perform a range of other actions depending on the data-type being edited; for example:
 
@@ -46,12 +45,10 @@ You can:
   * select the [Format](#formats)
   * see more editing options (for [Rich Text](#rich-text) format)
   * access a range of [actions](#actions)
-
-<!--
+ 
 For example:
 
 ![full screen editor](assets/cfm-variations-02.png)
--->
 
 ### Full Screen Editor {#full-screen-editor}
 
@@ -59,11 +56,9 @@ When editing a multi-line text field you can open the full screen editor; tap or
 
 ![full screen editor icon](assets/cfm-variations-03.png)
 
-<!--
 This will open the full screen text editor:
 
-![full screen editor icon](assets/cfm-variations-fullscreentexteditor.png)
--->
+![full screen editor](assets/cfm-variations-fullscreentexteditor.png)
 
 The full screen text editor provides:
 
@@ -115,10 +110,7 @@ Rich text editing allows you to format:
   * Find/Replace
   * Spellchecker
   * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-
-<!--
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment)
--->
+* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment); available when your **Multi line text** field is configured with **Allow Fragment Reference**.
 
 The [actions](#actions) are also accessible from the full-screen editor.
 
@@ -154,7 +146,6 @@ You can also open the full-screen editor for further [actions](#actions).
 >
 >If you switch between **Rich Text** and **Markdown** you might experience unexpected effects with Block Quotes and Code Blocks, as these two formats can have differences in how they are handled.
 
-<!--
 ### Fragment References {#fragment-references}
 
 If the Content Fragment Model contains Fragment References, your fragment authors may have additional options:
@@ -182,7 +173,6 @@ You will then be able to create a new fragment by:
 1. Finally:
    1. **Done** will return (to the original fragment) and reference the new fragment.
    1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
--->
 
 ### Viewing Key Statistics {#viewing-key-statistics}
 
@@ -240,7 +230,6 @@ Summarizing text is designed to help users reduce the length of their text to a 
 
 1. Select **Summarize** to confirm the changes.
 
-<!--
 1. The original text is displayed side-by-side with the proposed summarization:
 
     * Any sentences to be eliminated are highlighted in red, with strike-through.
@@ -248,15 +237,18 @@ Summarizing text is designed to help users reduce the length of their text to a 
     * Click on any non-highlighted sentence to have it eliminated.
 
    ![summarization comparison](assets/cfm-variations-06.png)
--->
 
 ### Annotating a Content Fragment {#annotating-a-content-fragment}
 
 To annotate a fragment:
 
 1. Select **Master** or the required variation.
+
 1. Open the full-screen editor.
+
 1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
+
+   ![annotate](assets/cfm-variations-07.png)
 
 1. A dialog will open. Here you can enter your annotation.
 
@@ -274,18 +266,9 @@ To annotate a fragment:
 
 1. Select **Save**.
 
-<!--
-1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
-
-   ![annotate](assets/cfm-variations-07.png)
--->
-
-<!--
 1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
 
    ![annotate](assets/cfm-variations-07c.png)
-
--->
 
 ### Viewing, Editing, Deleting Annotations {#viewing-editing-deleting-annotations}
 
@@ -301,13 +284,9 @@ Annotations:
 
 * Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
 
-* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
-
-<!--
-* Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
-
   ![annotations](assets/cfm-variations-08.png)
--->
+
+* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
 
 ### Inserting Assets into your Fragment {#inserting-assets-into-your-fragment}
 
@@ -345,15 +324,16 @@ They will be added to the paragraph sequence of the fragment without any formatt
    >* **Plain Text**: the asset will be completely lost from the fragment.
    >* **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
 
-<!--
 ### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
 
 To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
 
 They will be added as a reference, in your current location in your fragment.
--->
 
-<!--
+>[!NOTE]
+>
+>This option is available when your **Multi line text** is configured with **Allow Fragment Reference**.
+
 >[!CAUTION]
 >
 >These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
@@ -363,9 +343,7 @@ They will be added as a reference, in your current location in your fragment.
 >[!NOTE]
 >
 >There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
--->
 
-<!--
 1. Position the cursor at the position you want to add the fragment.
 1. Use the **Insert Content Fragment** icon to open the search dialog.
 
@@ -385,7 +363,6 @@ They will be added as a reference, in your current location in your fragment.
    >If, after adding an reference to another fragment, you change format to:
    >* **Plain Text**: the reference will be completely lost from the fragment.
    >* **Markdown**: the reference will remain.
--->
 
 ## Managing Variations {#managing-variations}
 
@@ -461,25 +438,7 @@ When editing a variation you have access to the action for synchronizing the cur
 >Transferring changes *from a variation to **Master*** is not available as an option.
 
 1. Open your content fragment in the fragment editor. Ensure that the **Master** has been edited.
-1. Select a specific variation, then the appropriate synchronization action from either:
 
-   * the **Actions** drop down selector - **Sync current element with master**
-
-   * the toolbar of the full-screen editor - **Sync with master**
-
-      ![synchronizing with master](assets/cfm-variations-11b.png)
-
-1. Master and the variation will be shown side-by-side:
-
-   * green indicates content added (to the variation)
-   * red indicates content removed (from the variation)
-   * blue indicates replaced text
-
-   ![synchronizing with master](assets/cfm-variations-11c.png)
-
-1. Select **Synchronize**, the variation will updated and shown.
-
-<!--
 1. Select a specific variation, then the appropriate synchronization action from either:
 
    * the **Actions** drop down selector - **Sync current element with master**
@@ -499,5 +458,3 @@ When editing a variation you have access to the action for synchronizing the cur
    ![synchronizing with master](assets/cfm-variations-11c.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
-
--->

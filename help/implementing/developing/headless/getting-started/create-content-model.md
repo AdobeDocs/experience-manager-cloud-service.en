@@ -22,7 +22,7 @@ An information architect would perform these tasks only sporadically as new mode
 
    ![The models folder](../assets/models-folder.png)
 1. Tap or click **Create**.
-1. Provide a **Model Title** and **Description**.
+1. Provide a **Model Title**, **Tags** and **Description**. You can also select/deselect **Enable model** to control whether the model is immediately enabled upon creation.
 
    ![Create a model](../assets/models-create.png)
 1. In the confirmation window, tap or click **Open** to configure your model.
@@ -38,7 +38,7 @@ An information architect would perform these tasks only sporadically as new mode
 1. When you are finished building your model, tap or click **Save**. The newly-created model is saved in **Draft** mode.
 
    ![Model in draft mode](../assets/models-draft.png)
-1. The model must be enabled in order to use it. Select the model you just created and then tap or click **Enable**.
+1. The model must be enabled in order to use it (if not already enabled). Select the model you just created and then tap or click **Enable**.
 
    ![Enabling the model](../assets/models-enable.png)
 1. Confirm enabling the model by tapping or clicking **Enable** in the confirmation dialog.

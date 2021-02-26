@@ -15,6 +15,14 @@ Headless implementation forgoes page and component management as is traditional 
 
 ![AEM Implementation Models](assets/aem-implementation-models.png)
 
+## Comparing Headful and Headless {#headful-headless}
+
+This document focuses on the full headless implementation model of AEM. However headful versus headless need not be a binary choice in AEM. Headless features can be used to manage and deliver your content to a variety of endpoints while also enabling your content authors to edit single page applications. All in AEM.
+
+>[!TIP]
+>
+>See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
+
 ## AEM as a Cloud Service and Headless {#aem-headless}
 
 AEM as a Cloud Service is a flexible tool for the headless implementation model by offering three powerful services:
