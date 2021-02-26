@@ -1,15 +1,15 @@
 ---
-title: Troubleshooting MSM Issues
+title: Troubleshooting MSM Issues and FAQ
 description: Find out how to troubleshoot the most common MSM-related issues.
 ---
 
-# Troubleshooting MSM Issues {#troubleshooting-msm}
+# Troubleshooting MSM Issues and FAQ {#troubleshooting-msm}
 
-## First Steps {#first-steps}
+## Troubleshooting First Steps {#first-steps}
 
 If you are experiencing what you think is incorrect behavior or an error in MSM, before beginning and detailed troubleshooting be sure to:
 
-* Check the [MSM FAQ article](faq.md) as your problems or questions may already be addressed there.
+* Check the [MSM FAQ](#faq) as your problems or questions may already be addressed there.
 * Check the [MSM best practices article](best-practices.md) as a number of tips are offered there along with clarifications of a number of misconceptions.
 
 ## Finding advanced information about your blueprint and Live Copy status {#advanced-info}
@@ -45,3 +45,36 @@ The information present in these properties should be reflected in the UI, howev
 Knowing those properties can be also useful in order to query your repository and find out sets of pages that are in particular states. For example:
 
 * `select * from cq:LiveSync` returns all Live Copy root pages.
+
+## FAQ {#faq}
+
+Here are some frequently-asked questions related to MSM and Live Copy.
+
+### Why are some properties (e.g. title, annotations) are not updated during an MSM rollout? {#missing-properties}
+
+MSM sync actions are highly configurable. Which properties or components are modified during rollouts directly depends on properties of those configurations.
+
+Please see [this article](best-practices.md) for more information on this topic.
+
+### How can I remove rollout permissions for a group of authors? {#remove-rollout-permissions}
+
+There is no **rollout** privilege that can be set or removed for AEM principals (users or groups).
+
+As an alternative you can either:
+
+* Customization the product UI to hide the Rollout actions for a given principal.
+* Remove write privileges from the Live Copy tree for authors who are not allowed to roll-out.
+
+### Why do I see Live Copy pages with the suffix "_msm_moved"? {#moved-pages}
+
+If a blueprint page is rolled out, it will either update its Live Copy page or create a new Live Copy page if it didn't exist yet (e.g. when it is rolled out for the first time or the Live Copy page was manually deleted).
+
+In this latter case however, if a page without a `cq:LiveRelationship` property exists with the same name, this page will be renamed accordingly, before the Live Copy page is created.
+
+By default, the rollout expects either a linked Live Copy page, to which the updates of the blueprints will be rolled out, or no page at, when a Live Copy page is created.
+
+If a "standalone" page is found, MSM chooses to rename this page, and create a separate, linked Live Copy page.
+
+Such a standalone page in a Live Copy sub-tree is typically the result of a **Detach** operation, or the former Live Copy page was manually deleted by an author and then re-created with the same name.
+
+To avoid this use the Live Copy **Suspend** feature instead of **Detach**. More details on the **Detach** action in [this article.](creating-live-copies.md)

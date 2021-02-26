@@ -74,11 +74,24 @@ user-guide-description: Understand how to author with, and administer, Experienc
     + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administering {#administering}
   + [Administering Workflows](administering/workflows-administering.md)
-  + [MSM and Translation](msm-and-translation.md)
-  + Multi Site Manager {#msm}
-    + [MSM and Live Copy Overview](msm-live-copy-overview.md)
-    + [Live Copy Overview Console](live-copy-overview.md)
-    + [Configuring Live Copy Synchronization](live-copy-sync-config.md)
+  + Reusing Content {#reusing-content}
+    + [MSM and Translation](administering/msm-and-translation.md)
+    + Multi Site Manager {#msm}
+      + [MSM and Live Copy Overview](administering/msm/overview.md)
+      + [Configuring Live Copy Synchronization](administering/msm/live-copy-sync-config.md)
+      + [Creating and Synchronizing Live Copies](administering/msm/creating-live-copies.md)
+      + [Live Copy Overview Console](administering/msm/live-copy-overview.md)
+      + [Rollout Conflicts](administering/msm/rollout-conflicts.md)
+      + [MSM Best Practices](administering/msm/best-practices.md)
+      + [Troubleshooting and FAQ](administering/msm/troubleshooting.md)
+    + Translation {#translation}
+      + [Translating Content for Multilingual Sites](administering/translation/overview.md)
+      + [Preparing Content for Translation](administering/translation/preparation.md)
+      + [Managing Translation Projects](administering/translation/managing-projects.md)
+      + [Language Copy Wizard](administering/translation/wizard.md)
+      + [Identifying Content to Translate](administering/translation/rules.md)
+      + [Configuring the Translation Integration Framework](administering/translation/integration-framework.md)
+      + [Connecting to Microsoft Translator](administering/translations/connect-ms-translator.md)
 + Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-adobe-target.md)
