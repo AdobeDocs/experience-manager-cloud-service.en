@@ -46,22 +46,18 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ## What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Assets can be sourced using [!DNL Experience Manager Assets Brand Portal]. It helps to source assets from the agency users for new marketing campaigns, photoshoots, and projects.
+* In [!DNL Brand Portal], a new download setting is introduced, that lets you create separate folder for each asset when downloading folders, collection, and so on. see [download settings](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
 * When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
 * When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available. (CQ-4314101)
+* When multiple assets are selected to update the properties, sometimes either an error occurs or properties of a deselected asset get updated. (CQ-4316532)
+* When attempting to open [!UICONTROL Assets Admin Search Rail], the page remains blank and clicking on [!UICONTROL Edit] > [!UICONTROL Settings] generates an error. (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
