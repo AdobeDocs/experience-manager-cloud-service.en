@@ -22,7 +22,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 >[!NOTE]
 >
->The features described in this document are planned to be available with the [March 2021 release of AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+>The features described in this document are planned to be made available with the [March 2021 release of AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
 
 ## Introduction {#introduction}
 
