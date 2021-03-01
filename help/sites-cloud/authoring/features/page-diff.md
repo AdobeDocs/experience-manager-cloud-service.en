@@ -22,9 +22,9 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 The side-by-side diff can compare:
 
 * [Versions](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Earlier version of a page with its current state
-* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint
 * [Launches](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Launch with its Source
-* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [Language Copies](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - A page before and after (re-)translation
 
 See the respective topics on how to start the diff within those contexts.
 
