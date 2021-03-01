@@ -5,7 +5,7 @@ description: Learn how to create and manage both machine and human translation p
 
 # Managing Translation Projects {#managing-translation-projects}
 
-Translation projects enable you to manage the translation of AEM content. A translation project is a type of AEM [project](/help/sites-authoring/projects.md) that contains resources that are to be translated into other languages. These resources are the pages and assets of the [language copies](/help/sites-administering/tc-prep.md) that are created from the language master.
+Translation projects enable you to manage the translation of AEM content. A translation project is a type of AEM [project](/help/sites-cloud/authoring/projects/overview.md) that contains resources that are to be translated into other languages. These resources are the pages and assets of the [language copies](preparation.md) that are created from the language master.
 
 When resources are added to a translation project, a translation job is created for them. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
@@ -67,7 +67,7 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 1. Select **Language Copies**, and then select the language copies for which you are translating the source pages.
 1. Click or tap **Create &amp; Translate** and then configure the translation job:
 
-    * Use the **Languages** drop-down to select a language copy for which you want to translate. Select additional languages as required. Languages that appear in the list correspond with the [language roots that you have created](/help/sites-administering/tc-prep.md#creating-a-language-root).
+    * Use the **Languages** drop-down to select a language copy for which you want to translate. Select additional languages as required. Languages that appear in the list correspond with the [language roots that you have created](preparation.md#creating-a-language-root).
       * Selecting multiple languages creates one projects with a translation job for each language.
     * To translate the page that you selected and all child pages, select **Select all sub-pages**. To translate only the selected page that you selected, clear the option.
     * For **Project**, select **Create Translation Project(s)**.
@@ -132,7 +132,7 @@ As when creating a new project, when adding pages, copies of the pages are added
 
 It is possible to create only the structure of the language copy, allowing you to copy content and structural changes in the language master to (untranslated) language copies. This is unrelated to a translation job or project. You can use this to keep your language masters in sync, even without translation.
 
-Populate your language copy so that it contains content from the master language that you are translating. Before you populate your language copy, you must have [created the language root](/help/sites-administering/tc-prep.md#creating-a-language-root) of the language copy.
+Populate your language copy so that it contains content from the master language that you are translating. Before you populate your language copy, you must have [created the language root](preparation.md#creating-a-language-root) of the language copy.
 
 1. Use the sites console to select the language root of the master language that you are using as the source.
 1. Open the references rail by clicking or tapping **References** in the toolbar.
@@ -185,7 +185,7 @@ Translation projects in AEM use the standard [AEM projects console.](/help/sites
 
 As any other project A translation project is made up of tiles that present an overview of the project tasks.
 
-![Translattion project](../assets/translation-project.png)
+![Translation project](../assets/translation-project.png)
 
 * **Summary** - An overview of the project
 * **Tasks** - One or more translation tasks
@@ -202,7 +202,7 @@ Use the commands and ellipsis buttons at the top and bottom of the tiles (respec
 
 You can manually create a translation project if you prefer to use the projects console instead of the sites console.
 
-When you manually create a translation project, you must provide values for the following translation-related properties in addition to the [basic properties](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
+When you manually create a translation project, you must provide values for the following translation-related properties in addition to the [basic properties](/help/sites-cloud/authoring/projects/managing.md#creating-a-project):
 
 * **Name:** Project name
 * **Source Language:** The language of the source content
@@ -248,7 +248,7 @@ You can add tags to a translation project similar to [how you add assets and pag
 
 ### Seeing Translation Project Details {#seeing-translation-project-details}
 
-The translation project properties are accessible via the ellipsis button of the project summary tile. In addition to the generic [project information](/help/sites-authoring/projects.md#project-info), the translation project properties contains translation-specific.
+The translation project properties are accessible via the ellipsis button of the project summary tile. In addition to the generic [project information](/help/sites-cloud/authoring/projects/overview.md#project-info), the translation project properties contains translation-specific.
 
 In your translation project, click or tap the ellipsis at the bottom of the Translation Summary tile. Most project-specific properties are on the **Advanced** tab.
 
@@ -393,7 +393,7 @@ When content is translated for an existing language copy, review the translation
 
 1. Click or tap **Launch** to reveal the launch-related commands.
 
-   ![chlimage_1-271](../assets/language-copy-launch.png)
+   ![Launching](../assets/language-copy-launch.png)
 
 1. To open the launch copy of the page to review and edit the content, click **Open Page**.
 1. After you have reviewed the content and made necessary changes, to promote the launch copy click **Promote**.
@@ -404,14 +404,14 @@ When content is translated for an existing language copy, review the translation
 To compare language copies to the language master:
 
 1. In the sites console, navigate to the language copy you want to compare.
-1. Open the [References rail.](/help/sites-authoring/basic-handling.md#references)
+1. Open the [References rail.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
 1. Under the **Copies** heading select **Language Copies.**
 1. Select your specific language copy and then you can either click **Compare to Master** or **Compare to Previous** if applicable.
 
    ![Compare language copies](../assets/language-copy-compare.png)
 
 1. The two pages (launch and source) will be opened side-by-side.
-   * For full information about using this feature see [Page Diff](/help/sites-authoring/page-diff.md).
+   * For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Importing and Exporting Translation Jobs {#import-export}
 

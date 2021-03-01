@@ -13,7 +13,7 @@ The Language Copy Wizard is a guided experience for creating and instrumenting m
 
 To access the wizard:
 
-1. In the sites console, select a page and tap or click **Create** and seelct **Language Copy**.
+1. In the sites console, select a page and tap or click **Create** and select **Language Copy**.
 
    ![Create language copy from wizard](../assets/language-copy-wizard.png)
 
@@ -27,7 +27,7 @@ To access the wizard:
 
    >[!NOTE]
    >
-   >By default, there is only one translation setting. To be able to select other settings, you have to configure cloud configurations first. See [Configuring the Translation Integration Framework](/help/sites-administering/tc-tic.md).
+   >By default, there is only one translation setting. To be able to select other settings, you have to configure cloud configurations first. See [Configuring the Translation Integration Framework](integration-framework.md).
 
 1. In the **Translate** step of the wizard you can choose between creating the structure only, creating a new translation project, or adding to an existing translation project.
 

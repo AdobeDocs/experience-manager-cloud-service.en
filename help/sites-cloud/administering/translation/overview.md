@@ -12,12 +12,12 @@ Automate the translation of page content and assets to create and maintain multi
 
 Translating content involves the following steps:
 
-1. [Connect AEM with your translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) and [create translation integration framework configurations](/help/sites-administering/tc-tic.md).
-1. [Associate the pages of your language master](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) with the translation service and framework configurations.
-1. [Identify the type of content](/help/sites-administering/tc-rules.md) to translate.
-1. [Prepare the content for translation](/help/sites-administering/tc-prep.md) by authoring the language master and creating the root pages of language copies.
-1. [Create translation projects](/help/sites-administering/tc-manage.md) to gather the content to translate and to prepare the translation process.
-1. Use the translation projects to [manage the content translation process](/help/sites-administering/tc-manage.md).
+1. [Connect AEM with your translation service provider](integration-framework.md#connecting-to-a-translation-service-provider) and [create translation integration framework configurations](integration-framework.md).
+1. [Associate the pages of your language master](integration-framework.md#configuring-pages-for-translation) with the translation service and framework configurations.
+1. [Identify the type of content](rules.md) to translate.
+1. [Prepare the content for translation](preparation.md) by authoring the language master and creating the root pages of language copies.
+1. [Create translation projects](managing-projects.md) to gather the content to translate and to prepare the translation process.
+1. Use the translation projects to [manage the content translation process](managing-projects.md).
 
 If your translation service provider does not provide a connector to integration with AEM, AEM supports the manual extraction and re-insertion of translation content in XML format.
 
@@ -27,4 +27,4 @@ If your translation service provider does not provide a connector to integration
 
 ## Best Practices {#best-practices}
 
-The [Translation Best Practices](/help/sites-administering/tc-bp.md) page contains important information regarding your implementation.
+The [Translation Best Practices](best-practices.md) page contains important information regarding your implementation.

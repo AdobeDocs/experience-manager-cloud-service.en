@@ -48,7 +48,7 @@ In the following sections we use the example of a new page `b`, created in both 
 
 The rollout manager allows you to activate or deactivate conflict management.
 
-This is done using [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of **Day CQ WCM Rollout Manager**. Set the value **Handle conflict with manually created Pages** ( `rolloutmgr.conflicthandling.enabled`) to true if the rollout manager should handle conflicts from a page created in the Live Copy with a name that exists in the blueprint.
+This is done using [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) of **Day CQ WCM Rollout Manager**. Set the value **Handle conflict with manually created Pages** ( `rolloutmgr.conflicthandling.enabled`) to true if the rollout manager should handle conflicts from a page created in the Live Copy with a name that exists in the blueprint.
 
 AEM has [predefined behavior when conflict management has been deactivated.](#behavior-when-conflict-handling-deactivated)
 
@@ -103,7 +103,7 @@ Customized conflict handlers can:
 * Be named according to your requirements.
 * Be developed/configured according to your requirements.
   * For example, you can develop a handler so that the Live Copy page is given precedence.
-* Can be designed to be configured using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md). In particular the:
+* Can be designed to be configured using the [OSGi configuration](/help/implementing/deploying/configuring-osgi.md). In particular the:
   * **Service Ranking** defines the order related to other conflict handlers ( `service.ranking`).
     * The default value is `0`.
 

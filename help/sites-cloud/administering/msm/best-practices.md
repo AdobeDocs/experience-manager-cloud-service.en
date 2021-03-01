@@ -75,7 +75,7 @@ When creating language masters keep in mind the following:
     * Please check with your translation service provider for more information.
     * An alternative approach for creating and translating language masters is to use language copies in conjunction with AEM's out-of-the-box translation integration framework.
 
-For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices](/help/sites-administering/tc-bp.md).
+For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices.](/help/sites-cloud/administering/translation/best-practices.md)
 
 ## Structure Changes and Rollouts {#structure-changes-and-rollouts}
 
@@ -94,7 +94,7 @@ When considering moving pages in a Live Copy, consider the following best practi
 
 >[!NOTE]
 >
->The following will work only with the [On Rollout trigger](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
+>The following will work only with the [On Rollout trigger](live-copy-sync-config.md#rollout-triggers).
 
 1. Create a custom rollout configuration.
    * This new configuration must include the action `PageMoveAction`.
@@ -116,7 +116,7 @@ MSM rollout configurations are highly customizable. You should be aware that aut
 
 ### onModify {#onmodify}
 
-When using the [rollout trigger](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` you should consider that:
+When using the [rollout trigger](live-copy-sync-config.md#rollout-triggers) `onModify` you should consider that:
 
 * Automating rollouts with `onModify` triggers may have a negative impact on authoring performance as they trigger rollouts after every page modification.
 * The rollout result may differ from the one expected as:
@@ -128,13 +128,13 @@ Therefore, it is recommended that you only use `onModify` triggers if the benefi
 
 ### Node Types/Properties {#node-types-properties}
 
-In addition to customizing rollout actions, MSM also allows you to customize node properties that are being rolled out. The [MSM OSGi configuration allows you to exclude node types](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the Live Copy.
+In addition to customizing rollout actions, MSM also allows you to customize node properties that are being rolled out. The [MSM OSGi configuration allows you to exclude node types](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the Live Copy.
 
 ## Further Information {#further-information}
 
 Refer to the following articles for more details on MSM and Live Copy.
 
-* [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md)
-* [Live Copy Overview Console](/help/sites-administering/msm-livecopy-overview.md)
-* [Configuring Live Copy Synchronization](/help/sites-administering/msm-sync.md)
-* [MSM Rollout Conflicts](/help/sites-administering/msm-rollout-conflicts.md)
+* [Creating and Synchronizing Live Copies](creating-live-copies.md)
+* [Live Copy Overview Console](live-copy-overview.md)
+* [Configuring Live Copy Synchronization](live-copy-sync-config.md)
+* [MSM Rollout Conflicts](msm-rollout-conflicts.md)

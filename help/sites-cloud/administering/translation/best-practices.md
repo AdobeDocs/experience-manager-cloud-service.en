@@ -34,7 +34,7 @@ Creating or expanding a global web presence can be a complex process, but with g
 * Engage a **localization service provider (LSP)** with expertise in translation and related localization activities. LSPs can help to scale your global business by providing a breadth of resources and technologies to improve efficiency and save translation costs:
   * Some LSPs are both service and technology providers. There are also standalone technology providers who allow many LSPs to participate in their translation platforms.
   * The **AEM Translation Framework** supports integration with a variety of translation technology providers for both machine and human translation.
-  * Learn how to [integrate LSP connectors in your AEM system](/help/sites-cloud/administering/translation/integration-framework.md) to automate content translation, or how to manually create, export and import Translation Projects for testing and in cases where there is no LSP or translation technology provider.
+  * Learn how to [integrate LSP connectors in your AEM system](integration-framework.md) to automate content translation, or how to manually create, export and import Translation Projects for testing and in cases where there is no LSP or translation technology provider.
 * Choose a **translation method** that best suits the content.
   * **Human translation** is best-suited for content where messaging and quality expectations are high and the content will live for some time on the site, such as Marketing pages.
   * **Machine translation** can be a good choice for mass volumes of translation when time to publish is critical, quality expectations are relaxed, or human translation costs are prohibitive. Support knowledge base and user generated content are commonly machine-translated.
