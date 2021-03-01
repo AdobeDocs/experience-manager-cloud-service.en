@@ -137,4 +137,4 @@ Refer to the following articles for more details on MSM and Live Copy.
 * [Creating and Synchronizing Live Copies](creating-live-copies.md)
 * [Live Copy Overview Console](live-copy-overview.md)
 * [Configuring Live Copy Synchronization](live-copy-sync-config.md)
-* [MSM Rollout Conflicts](msm-rollout-conflicts.md)
+* [MSM Rollout Conflicts](rollout-conflicts.md)
