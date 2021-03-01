@@ -91,7 +91,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-Depending on your project you may want to include different types of extensions to the rewrite rules. The `webmanifest` extension can be useful to include in the rewrite conditions when you introduced a rule that hides and redirects requests to `/content/<projectName>.``
+Depending on your project you may want to include different types of extensions to the rewrite rules. The `webmanifest` extension can be useful to include in the rewrite conditions when you introduced a rule that hides and redirects requests to `/content/<projectName>`.
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
