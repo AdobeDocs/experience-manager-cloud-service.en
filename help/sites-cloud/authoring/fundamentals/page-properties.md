@@ -182,7 +182,7 @@ Configure the page thumbnail
   
 ### Blueprint {#blueprint}
 
-This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies are are part of [Multi Site Management.](//help/sites-cloud/administering/msm/overview.md)
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies are are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Current Live Copies** - Lists pages that are based on (i.e. are Live Copies of) this blueprint page
 

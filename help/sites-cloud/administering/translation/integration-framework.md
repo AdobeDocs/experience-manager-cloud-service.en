@@ -11,7 +11,7 @@ The Translation Integration Framework integrates with third-party translation se
 1. [Create a Translation Integration Framework configuration.](#creating-a-translation-integration-configuration)
 1. [Associate the cloud configurations with your pages.](#configuring-pages-for-translation)
 
-For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
+For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
 
 ## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
