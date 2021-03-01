@@ -30,7 +30,7 @@ Dynamic Media-only features include the following:
 * [Video](video.md)
 * [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md)
 * [Managing Assets](managing-assets.md)
-* [Using Quickviews to create custom pop-ups](custom-pop-ups.md)
+* [Using Quick views to create custom pop-up windows](custom-pop-ups.md)
 
 See also [Setting up Dynamic Media](administering-dynamic-media.md).
 

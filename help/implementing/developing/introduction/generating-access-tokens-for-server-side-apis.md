@@ -87,7 +87,7 @@ exchange(config).then(accessToken => {
 
 The same exchange can be performed in any language capable of generating a signed JWT Token with the correct format and calling the IMS Token Exchange APIs.
 
-The access token will define when it expires, which is typically 12 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
+The access token will define when it expires, which is typically 24 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
@@ -113,7 +113,7 @@ See the [Developer Guidelines documentation](/help/implementing/developing/intro
 
 >[!NOTE]
 >
->The local development access token is valid for 24 hours after which time it must be regenerated using the same method.
+>The local development access token is valid for a maximum of 24 hours after which it must be regenerated using the same method.
 
 Developers may use this token to make calls from their non-AEM test application to an AEM as a Cloud Service environment. Typically, the developer will use this token with the non-AEM application on their own laptop. Also, the AEM as a Cloud is typically a non-production environment.
 
@@ -134,4 +134,11 @@ Make the appropriate server-to-server API calls from the non-AEM application to 
 
 ## Service Credentials Revocation {#service-credentials-revocation}
 
-Please submit a request to customer support if the JWT bearer token needs to be revoked.
+If the credentials need to be revoked, you need to submit a request to customer support using these steps:
+
+1. Disable the technical account user for the Adobe Admin Console in the User Interface:
+   * In Cloud Manager, press the **...** button next to your environment. This will open the product profiles page
+   * Now, click on the **AEM Users** profile, to show a list of the users
+   * Click the **API Credentials** tab, then find the appropriate technical account user and delete it
+2. Contact customer support, and request that the service credentials for that specific environment are deleted
+3. Finally, you can generate the credentials again, as described in this documentation. Also make sure that the new technical account user that is created has the appropriate permissions.
