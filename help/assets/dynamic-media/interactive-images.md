@@ -250,7 +250,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
    1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
    1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location. Or, use the keyboard arrow keys to control the position of a selected hot spot.
    1. Add more hotspots as necessary by repeating steps a and b.
-   1. (Optional) To delete a hotspot, select it on the image, then tap **[!UICONTROL Delete]** (garbage can icon) under the **[!UICONTROL Hotspots]** heading.
+   1. (Optional) To delete a hotspot, select it on the image, then tap **[!UICONTROL Delete]** (trash icon) under the **[!UICONTROL Hotspots]** heading.
 
 1. In the Name text field, type the name of the hotspot. This name also appears in the Selected Hotspot drop-down list.
 1. Do one of the following:
@@ -333,7 +333,7 @@ If you are a standalone AEM Assets customer, you can manually add the interactiv
 
 **Example**
 
-Using the [demo website as an example](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three men is a static `IMG` tag:
+Using the [demo website as an example](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three individuals is a static `IMG` tag:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
