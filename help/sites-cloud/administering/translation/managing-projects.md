@@ -244,7 +244,7 @@ You can add pages, assets, or tags to the translation job of your translation pr
 
 ### Adding Tags to a Translation Job {#adding-tags-to-a-translation-job}
 
-You can add tags to a translation project similar to [how you add assets and pages to a project.](#adding-pages-assets-to-a-translation-job}) Just select **Tags** under the **Add** menu then follow the same steps.
+You can add tags to a translation project similar to [how you add assets and pages to a project.](#adding-pages-assets-to-a-translation-job) Just select **Tags** under the **Add** menu then follow the same steps.
 
 ### Seeing Translation Project Details {#seeing-translation-project-details}
 

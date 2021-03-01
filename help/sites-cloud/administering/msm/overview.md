@@ -1,5 +1,5 @@
 ---
-title: Reusing Content: Multi Site Manager and Live Copy
+title: Reusing Content - Multi Site Manager and Live Copy
 description: Get an introduction to reusing content with AEM's powerful Live Copies and the Multi Site Manager features.
 ---
 
@@ -158,7 +158,7 @@ Live Copy Configuration|Definition of the configuration details for a Live Copy|
 |Shallow|A Live Copy of a single page||
 |Deep|A Live Copy of a page, together with its child pages||
 
-<!-->
+<!--
 >[!TIP]
 >
 >See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
