@@ -28,7 +28,7 @@ For example, you can create a rule that translates the content that authors add 
 
 There is a [console](#translation-rules-ui) that has been added for configuring translation rules. The definitions in the UI will populate the file for you.
 
-For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
+For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
 
 >[!NOTE]
 >

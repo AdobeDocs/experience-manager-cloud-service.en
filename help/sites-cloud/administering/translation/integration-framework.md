@@ -50,11 +50,11 @@ After you create a framework configuration, you associate the cloud configuratio
 
 When different sections of your website have different translation requirements, create multiple framework configurations accordingly. For example, a multilingual website might include English, Spanish, and Japanese language copies. The site owner uses two different translation service providers for Spanish and Japanese translations. Therefore, two configurations of the framework are configured. Each configuration uses a different translation service provider.
 
-After you configure a translation integration framework, you can [associate it with the pages](/help/sites-administering/tc-prep.md) that use it.
+After you configure a translation integration framework, you can [associate it with the pages](preparation.md) that use it.
 
 >[!TIP]
 >
->For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
+>For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
 
 A single configuration of the framework controls how to translate page content and assets.
 
@@ -85,7 +85,7 @@ The **Sites** tab controls how the translation of page content is performed.
 
 ### Assets Configuration Properties {#assets-configuration-properties}
 
-Assets properties control how to configure assets. For more information about translating assets, see [Creating Language Copies for Assets](/help/assets/translation-projects.md).
+Assets properties control how to configure assets. For more information about translating assets, see [Creating Language Copies for Assets](/help/assets/translate-assets.md).
 
 |Property|Description|
 |---|---|

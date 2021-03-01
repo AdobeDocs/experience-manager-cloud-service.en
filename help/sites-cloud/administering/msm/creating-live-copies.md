@@ -13,7 +13,7 @@ A blueprint configuration identifies an existing website that you want to use as
 
 >[!TIP]
 >
->Blueprint configurations enable you to push content changes to Live Copies. See [Live Copies - Source, Blueprints and Blueprint Configurations](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations).
+>Blueprint configurations enable you to push content changes to Live Copies. See [Live Copies - Source, Blueprints and Blueprint Configurations](overview.md#source-blueprints-and-blueprint-configurations).
 
 When you create a blueprint configuration, you select a template that defines the internal structure of the blueprint. The default blueprint template assumes that the source website has the following characteristics:
 
@@ -31,13 +31,13 @@ After you create the blueprint configuration, you configure the following proper
 * **Source Path**: The path of the root page of the site that you are using as the source (blueprint)
 * **Description**. (Optional) A description of the blueprint configuration, which appears in the list of blueprint configurations to choose from when creating a site
 
-When your blueprint configuration is used, you can associate it with a rollout configuration that determines how the Live Copies of the source/blueprint are synchronized. See [Specifying the Rollout Configurations To Use](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
+When your blueprint configuration is used, you can associate it with a rollout configuration that determines how the Live Copies of the source/blueprint are synchronized. See [Specifying the Rollout Configurations To Use](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
 ### Creating a Blueprint Configuration {#creating-a-blueprint-configuration}
 
 To create a blueprint configuration:
 
-1. [Navigate](/help/sites-authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
+1. [Navigate](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
    ![Blueprint configurations](../assets/blueprint-configurations.png)
@@ -56,7 +56,7 @@ To create a blueprint configuration:
 
 You can edit or delete an existing blueprint configuration:
 
-1. [Navigate](/help/sites-authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
+1. [Navigate](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
    ![Blueprint configurations](../assets/blueprint-configurations.png)
@@ -75,13 +75,13 @@ There are a number of ways to create a Live Copy.
 You can create a Live Copy of any page or branch. When you create the Live Copy, you can specify the rollout configurations to use for synchronizing the content:
 
 * The selected rollout configurations apply to the Live Copy page and its child pages.
-* If you do not specify any rollout configurations, MSM determines which rollout configurations to use. See [Specifying the Rollout Configuration To Use](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
+* If you do not specify any rollout configurations, MSM determines which rollout configurations to use. See [Specifying the Rollout Configuration To Use](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
 You can create a Live Copy of any page:
 
 * Pages that are referenced by a [blueprint configuration](#creating-a-blueprint-configuration)
 * And pages that have no connection to a configuration
-* Live Copy within the pages of another Live Copy ([nested Live Copies](msm-and-live-copy.md#nested-live-copies))
+* Live Copy within the pages of another Live Copy ([nested Live Copies](overview.md#nested-live-copies))
 
 The only difference is that availability of the **Rollout** command on the source/blueprint pages is dependent on whether source is referenced by a blueprint configuration:
 
@@ -123,7 +123,7 @@ To create a Live Copy:
 
 ### Creating a Live Copy of a Site from a Blueprint Configuration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
-Create a Live Copy using a blueprint configuration to create a site based on the blueprint (source) content. When you create a Live Copy from a blueprint configuration, you select one or more language branches of the blueprint source to copy, then you select the chapters to copy from the language branches. See [Creating a Blueprint Configuration](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+Create a Live Copy using a blueprint configuration to create a site based on the blueprint (source) content. When you create a Live Copy from a blueprint configuration, you select one or more language branches of the blueprint source to copy, then you select the chapters to copy from the language branches. See [Creating a Blueprint Configuration](#creating-a-blueprint-configuration).
 
 If you omit some language branches from the Live Copy, you can add them later. See [Creating a Live Copy Inside a Live Copy (Blueprint Configuration)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration) for details.
 
@@ -140,7 +140,7 @@ When you create the site, provide values for the following properties:
 * **Name**: (Optional) The name of the JCR node that stores the root page of the Live Copy (the default value is based on the title)
 * **Site Owner**: (Optional) Information about the party responsible for the Live Copy
 * **Live Copy**: Select this option to establish a live relationship with the source site. If you do not select this option, a copy of the blueprint is created but is not subsequently synchronized with the source.
-* **Rollout Configs**: (Optional) Select one or more rollout configurations to use for synchronizing the Live Copy. By default, the rollout configurations are inherited from the blueprint. See [Specifying the Rollout Configurations to Use](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) for more details.
+* **Rollout Configs**: (Optional) Select one or more rollout configurations to use for synchronizing the Live Copy. By default, the rollout configurations are inherited from the blueprint. See [Specifying the Rollout Configurations to Use](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) for more details.
 
 To create a Live Copy of a site from a blueprint configuration:
 
@@ -191,7 +191,7 @@ To view the properties:
 
 ### Seeing the Live Copies of a Blueprint Page {#seeing-the-live-copies-of-a-blueprint-page}
 
-Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the Live Copy pages that use the current (blueprint) page as the source. Use this list to keep track of the Live Copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-authoring/editing-page-properties.md).
+Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the Live Copy pages that use the current (blueprint) page as the source. Use this list to keep track of the Live Copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
 ![Blueprint tab of page properties](../assets/live-copy-blueprint-tab.png)
 
@@ -201,14 +201,13 @@ There are a number of ways to synchronize your Live Copy.
 
 ### Rolling Out a Blueprint {#rolling-out-a-blueprint}
 
-Roll out a blueprint page to push content changes to Live Copies. A **Rollout** action executes the rollout configurations that use the [On Rollout](/help/sites-administering/msm-sync.md#rollout-triggers) trigger.
+Roll out a blueprint page to push content changes to Live Copies. A **Rollout** action executes the rollout configurations that use the [On Rollout](live-copy-sync-config.md#rollout-triggers) trigger.
 
 >[!NOTE]
 >
 >Conflicts can occur if new pages with the same page name are created in both the blueprint branch and a dependent Live Copy branch.
 >
->Such [conflicts need to be handled and resolved upon rollout](/help/sites-administering/msm-rollout-conflicts.md).
->
+>Such [conflicts need to be handled and resolved upon rollout](rollout-conflicts.md).
 
 #### Rolling Out a Blueprint from Page Properties {#rolling-out-a-blueprint-from-page-properties}
 
@@ -226,7 +225,7 @@ Roll out a blueprint page to push content changes to Live Copies. A **Rollout** 
 
    ![Define rollout time](../assets/rollout-now-later.png)
 
-Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [***Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -255,9 +254,9 @@ Rollouts are processed as asynchronous jobs and can be checked on the [**Async J
 
 #### Roll Out a Blueprint from the Live Copy Overview {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-The [**Rollout** action is also available from the Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), when a Blueprint page is selected.
+The [**Rollout** action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Blueprint page is selected.
 
-1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Blueprint Page.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Blueprint Page.
 1. Select **Rollout** from the toolbar.
 
    ![Live Copy overview](../assets/live-copy-overview-actions-blueprint.png)
@@ -282,7 +281,7 @@ Synchronize a Live Copy to pull changes from the source to the Live Copy.
 
 >[!NOTE]
 >
->Synchronizing executes the rollout configurations that use the [On Rollout](/help/sites-administering/msm-sync.md#rollout-triggers) trigger.
+>Synchronizing executes the rollout configurations that use the [On Rollout](live-copy-sync-config.md#rollout-triggers) trigger.
 
 1. In the **Sites** console, select the Live Copy page and open the properties.
 1. Open the **Live Copy** tab.
@@ -294,9 +293,9 @@ Synchronize a Live Copy to pull changes from the source to the Live Copy.
 
 #### Synchronize a Live Copy from the Live Copy Overview {#synchronize-a-live-copy-from-the-live-copy-overview}
 
-The [Synchronize action is also available from the Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
+The [Synchronize action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
 1. Select **Synchronize** from the toolbar.
 1. Confirm the **Rollout** action in the dialog after specifying whether you want to include:
 
@@ -322,8 +321,7 @@ To change Live Copy content, you can:
 >
 >Conflicts can occur if new pages with the same page name are created in both the blueprint branch and a dependent Live Copy branch.
 >
->Such [conflicts need to be handled and resolved upon rollout](/help/sites-administering/msm-rollout-conflicts.md).
->
+>Such [conflicts need to be handled and resolved upon rollout](rollout-conflicts.md).
 
 ### Adding Components to a Live Copy Page {#adding-components-to-a-live-copy-page}
 
@@ -333,7 +331,7 @@ When the Live Copy page is synchronized with the source page, the added componen
 
 >[!TIP]
 >
->Changes made locally to a component marked as a container will not be overwritten by the content of the blueprint on a rollout. See [MSM Best Practices](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) for more information.
+>Changes made locally to a component marked as a container will not be overwritten by the content of the blueprint on a rollout. See [MSM Best Practices](best-practices.md#components-and-container-synchronization) for more information.
 
 ### Suspending Inheritance for a Page {#suspending-inheritance-for-a-page}
 
@@ -360,9 +358,9 @@ To suspend inheritance on a page:
 
 #### Suspending Inheritance from the Live Copy Overview {#suspending-inheritance-from-the-live-copy-overview}
 
-The [Suspend action is also available from the Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
+The [Suspend action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
 1. Select **Suspend** from the toolbar.
 1. Select the appropriate option from:
 
@@ -403,9 +401,9 @@ When selected, the dialog will be shown. You can select a synchronization, if re
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
-The [Resume action is also available from the Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
+The [Resume action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page that has been suspended. The page will be shown as **INHERITANCE CANCELLED**.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Live Copy Page that has been suspended. The page will be shown as **INHERITANCE CANCELLED**.
 1. Select **Resume** from the toolbar.
 1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy** dialog.
 
@@ -443,7 +441,7 @@ To specify or change the depth:
    >
    >Switching to a shallow Live Copy will have immediate effect and is non-reversible.
    >
-   >See [Live Copies - Composition](/help/sites-administering/msm.md#live-copies-composition) for more information.
+   >See [Live Copies - Composition](overview.md#live-copies-composition) for more information.
 
 1. Click or tap **Save** to persist your updates.
 
@@ -545,9 +543,9 @@ Resetting affects changes that you have made to page properties, the paragraph s
 
 #### Reset a Live Copy Page from the Live Copy Overview {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-The [**Reset** action is also available from the Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
+The [**Reset** action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
 1. Select **Reset** from the toolbar.
 1. Confirm the **Reset** action in the **Reset Live Copy** dialog:
 
@@ -557,8 +555,8 @@ The [**Reset** action is also available from the Live Copy Overview](/help/sites
 
 To track the changes you have made, you can view the blueprint page in **References** and compare it with its Live Copy page:
 
-1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it.](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
-1. Open the **[References](/help/sites-authoring/basic-handling.md#references)** panel and depending on context select either:
+1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel and depending on context select either:
 
     * **Blueprint**
     * **Live Copies**
@@ -574,7 +572,7 @@ To track the changes you have made, you can view the blueprint page in **Referen
 
 1. The Live Copy and blueprint pages will be opened side-by-side.
 
-   For full information about using the comparison feature see [Page Diff](/help/sites-authoring/page-diff.md).
+   For full information about using the comparison feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Detaching a Live Copy {#detaching-a-live-copy}
 
@@ -611,7 +609,7 @@ There are implications on where within the tree that you use **Detach**:
 
   >[!NOTE]
   >
-  >See [MSM Rollout Conflicts](/help/sites-administering/msm-rollout-conflicts.md) for details of such situations.
+  >See [MSM Rollout Conflicts](rollout-conflicts.md) for details of such situations.
 
 ### Detach a Live Copy Page from the Page Properties {#detach-a-live-copy-page-from-the-page-properties}
 
@@ -627,9 +625,9 @@ To detach a Live Copy:
 
 ### Detach a Live Copy Page from the Live Copy Overview {#detach-a-live-copy-page-from-the-live-copy-overview}
 
-The [Detach action is also available from the Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
+The [Detach action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Live Copy Page.
 1. Select **Detach** from the toolbar.
 1. Confirm the **Detach** action in the **Detach Live Copy** dialog:
 
