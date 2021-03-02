@@ -123,10 +123,7 @@ When you supply a page **Name** when creating a new page, AEM will [validate the
 >
 >You should avoid using a two-letter code as defined by ISO-639-1 as a page name, unless it is a language root.
 >
->See Preparing Content for Translation for more information.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>See [Preparing Content for Translation](/help/sites-cloud/administering/translation/preparation.md) for more information.
 
 ### Templates {#templates}
 
