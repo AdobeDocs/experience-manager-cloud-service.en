@@ -52,10 +52,11 @@ The scaling of per-tenant instances of the service can be automatic or manual, o
 ## Environments {#environments}
 
 >[!NOTE]
->
 >For further information see [Deploying - Runmodes](/help/implementing/deploying/overview.md#runmodes)
 
-AEM as a Cloud Service is made available as individual instances  with each instance representing a complete AEM environment. There are four types of environments available with AEM as a Cloud Service:
+AEM as a Cloud Service is made available as individual instances  with each instance representing a complete AEM environment. 
+
+There are three types of environments available with AEM as a Cloud Service:
 
 * **Production environment**: hosts the applications for the business practitioners.
 
@@ -63,9 +64,7 @@ AEM as a Cloud Service is made available as individual instances  with each inst
 
 * **Development environment**: allows developers to implement AEM applications under the same runtime conditions as the stage and production environments.
 
-* **Demonstration environment**: can be used for evaluation, demonstration, prototyping, and training purposes.
-
-The development and the demonstration environments are often referred to as *non-production* environments.
+   Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
 
 ## Programs {#programs}
 

@@ -1,14 +1,15 @@
 ---
 title: Customize CIF Core Components
 description: Learn how to customize AEM CIF Core Components. The tutorial covers how to safely extend a CIF Core Component to meet business specific requirements. Learn how to extend a GraphQL query to return a custom attribute and display the new attribute in a CIF Core Component.
-sub-product: commerce
-topics: development
+sub-product: Commerce
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 4279
-thumbnail: 4279-customize-cif.jpg
+thumbnail: customize-aem-cif-core-component.jpg
 ---
 
 # Customize AEM CIF Core Components {#customize-cif-components}
@@ -169,7 +170,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
     }
     ```
 
-    ![Sample GraphlQL response](../assets/customize-cif-components/sample-graphql-query.png)
+    ![Sample GraphQL response](../assets/customize-cif-components/sample-graphql-query.png)
 
     Note that the value of **Yes** is an integer of **1**. This will be useful when we write the GraphQL query in Java.
 

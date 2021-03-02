@@ -36,8 +36,8 @@ Each ContextHub store is an instance of a predefined store type:
 * ContextHub provides several [sample store types](sample-stores.md).
 * Use AEM consoles to [create stores](configuring-contexthub.md#creating-a-contexthub-store).
 * Developers can [create custom store types](extending-contexthub.md#creating-custom-store-candidates).
-* Developers can [access store data](configuring-contexthub.md#interacting-with-contexthub-stores) via Javascript.
+* Developers can [access store data](adding-contexthub.md#interacting-with-contexthub-stores) via Javascript.
 
 ## Segmentation {#segmentation}
 
-ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. You can use the Javascript API to [determine resolved segments](configuring-contexthub.md#determining-resolved-contexthub-segments).
+ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. You can use the Javascript API to [determine resolved segments](adding-contexthub.md#determining-resolved-contexthub-segments).

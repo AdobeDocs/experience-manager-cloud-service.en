@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager and Adobe Creative Cloud integration best practices
+title: Best practices to integrate with [!DNL Adobe Creative Cloud]
 description: Best practices integrate an Experience Manager deployment with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
 contentOwner: AG
 mini-toc-levels: 1
@@ -19,7 +19,6 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 
 ## Collaboration need of creatives, marketers, and DAM users {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | Requirements | Use case | Involved surfaces |
 |---|---|---|
 | Simplify experience for creatives on desktop | Streamline access to asset from a DAM (AEM Assets) for creative professionals, or more broadly, users on desktop working in native asset creation applications. They need an easy and straightforward way to discover, use (open), edit and save changes to AEM, as well as upload new files. | Win or Mac desktop; Creative Cloud apps |
@@ -31,7 +30,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 | Value proposition for the involved personas | Adobe offering | Involved surfaces |
 |---|---|---|
 | Creative users discover assets from AEM, open and use them, edit and upload changes to AEM, as well as upload new files into AEM, without leaving Creative Cloud apps. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator, and InDesign |
-| Business users simplify opening and using assets, editing and uploading changes to AEM, and uploading new files into AEM from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones. | [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM desktop app on Win and Mac desktop |
+| Business users simplify opening and using assets, editing and uploading changes to AEM, and uploading new files into AEM from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones. | [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | AEM desktop app on Win and Mac desktop |
 | Marketers and business users discover, preview, license and save, and manage the Adobe Stock assets from within AEM. Licensed and saved assets provide select Adobe Stock metadata for better governance. | [Experience Manager and Adobe Stock integration](aem-assets-adobe-stock.md) | AEM web interface |
 
 This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](share-assets.md), using [AEM Assets web UI](/help/assets/manage-digital-assets.md) should be reviewed based on specific requirement.
@@ -64,7 +63,7 @@ Deciding on which capability to use
 
 To support asset distribution use cases, other solutions should be considered:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable, SaaS add-on to AEM Assets to publish assets.
+* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable add-on to Assets to publish assets.
 
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
 * AEM [link share](/help/assets/share-assets.md) to share assets ad hoc using links.

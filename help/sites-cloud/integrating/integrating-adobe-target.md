@@ -26,9 +26,32 @@ Adobe Launch is necessary for managing client-side properties for both Analytics
 4. Fill in the details (see below), and select **Connect**.
 ![Connect](assets/open_screen1.png "Connect")
 
-### IMS Configuration
+### IMS Configuration {#ims-configuration}
 
 An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). Refer to [this video](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) and [this page](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) to learn how to create the Target IMS configuration.
+
+### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
+
+When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields, please be aware of the following:
+
+1. For most customers, the Tenant ID and the Client Code are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+2. For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
+
+In both cases, be aware that:
+
+* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field. 
+* You have the option to change the default Tenant ID set.
+* Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
+
+As stated previously, the first case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
+
+>[!NOTE]
+>
+> If you want to change an existing Target Configuration:
+>
+> 1. Re-enter the Tenant ID.
+> 2. Re-connect to Target.
+> 3. Save the configuration.
 
 ### Editing the Target Configuration {#edit-target-configuration}
 
@@ -37,7 +60,6 @@ To edit the Target configuration, follow these steps:
 1. Select an existing configuration and click **Properties**.
 2. Edit the properties.
 3. Select **Re-connect to Adobe Target**.
-![Re-connect](assets/edit_config_page1.png "Re-connect")
 4. Select **Save and Close**.
 
 ### Adding a configuration to a site {#add-configuration}

@@ -1,6 +1,6 @@
 ---
 title: Caching & Performance
-description: Caching & Performance
+description: Learn about the different configurations available to enable GraphQL and content caching to optimize the performance of your commerce implementation.
 ---
 
 # Caching & Performance {#caching}

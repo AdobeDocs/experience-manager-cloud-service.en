@@ -1,16 +1,16 @@
 ---
-title: Configure AEM Assets as a Cloud Service with Brand Portal
+title: Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal
 description: Configure AEM Assets with Brand Portal.
 contentOwner: Vishabh Gupta
 ---
 
-# Configure AEM Assets as a Cloud Service with Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Configuring Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets as a Cloud Service instance to Brand Portal and distribute them to the Brand Portal users.
+Configuring Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
 
 **Configuration workflow**
 
-AEM Assets as a Cloud Service is configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, AEM Assets as well as Adobe Developer Console.
+AEM Assets as a [!DNL Cloud Service] is configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, AEM Assets as well as Adobe Developer Console.
 
 1. In AEM Assets, create an IMS account and generate a public key (certificate).
 1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
@@ -21,15 +21,14 @@ AEM Assets as a Cloud Service is configured with Brand Portal via Adobe Develope
 1. Test your configuration by publishing an asset from AEM Assets to Brand Portal.
 
 >[!NOTE]
- >
- >An AEM Assets as a Cloud Service instance shall only be configured with one Brand Portal tenant.
- >
+>
+>An AEM Assets as a [!DNL Cloud Service] instance shall only be configured with one Brand Portal tenant.
 
 ## Prerequisites {#prerequisites}
 
 You require the following to configure AEM Assets with Brand Portal:
 
-* An up and running AEM Assets as a Cloud Service instance
+* An up and running AEM Assets as a [!DNL Cloud Service] instance
 * A Brand Portal tenant URL
 * A user with system administrator privileges on the IMS organization of the Brand Portal tenant 
 
@@ -45,7 +44,7 @@ Perform the following steps in the specified sequence to configure AEM Assets wi
 
 ### Create IMS configuration {#create-ims-configuration}
 
-The IMS configuration authenticates your AEM Assets as a Cloud Service instance with the Brand Portal tenant. 
+The IMS configuration authenticates your AEM Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
 
 IMS configuration includes two steps:
 
@@ -57,27 +56,21 @@ IMS configuration includes two steps:
 The public key (certificate) authenticates your profile on Adobe Developer Console.
 
 1. Log in to AEM Assets.
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
-
 1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** dropdown list.  
-
 1. Select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
-
 1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![Create Certificate](assets/ims-config2.png)
 
-1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine. 
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
    The public key will be used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
    ![Download Certificate](assets/ims-config3.png)
 
-1.  Click **[!UICONTROL Next]**. 
+1. Click **[!UICONTROL Next]**.
 
     In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
@@ -93,9 +86,8 @@ Perform the following steps to generate the service account credentials and JWT 
 
 
    >[!NOTE]
-    >
-    >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the dropdown (organization) list located at the upper-right corner.
-    >
+   >
+   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the dropdown (organization) list located at the upper-right corner.
 
 1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
@@ -126,9 +118,8 @@ Perform the following steps to generate the service account credentials and JWT 
 1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click on the **[!UICONTROL Service Account (JWT)]** option.
 
    >[!NOTE]
-    >
-    >You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
-    >
+   >
+   >You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
 
 1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
@@ -208,12 +199,10 @@ Perform the following steps to configure the IMS account.
    ![](assets/create-new-integration5.png)
 
 >[!CAUTION]
- >
- >You must have only one IMS configuration.
- >
- >Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create a new, valid configuration.
- >
-
+>
+>You must have only one IMS configuration.
+>
+>Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create a new, valid configuration.
 
 ### Configure cloud service {#configure-the-cloud-service}
 
@@ -235,7 +224,7 @@ Perform the following steps to configure the Brand Portal cloud service:
 
 1. Click **[!UICONTROL Save & Close]**. The cloud configuration is created. 
 
-   Your AEM Assets as a Cloud Service instance is now configured with the Brand Portal tenant. 
+   Your AEM Assets as a [!DNL Cloud Service] instance is now configured with the Brand Portal tenant. 
 
 ### Test configuration {#test-configuration}
 
@@ -262,23 +251,20 @@ Perform the following steps to validate the configuration:
    * **error-queue**: for the assets where distribution has failed. 
    
    >[!NOTE]
-    >
-    >It is recommended to review the failures and  clear the **error-queue** periodically.  
-    > 
+   >
+   >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
    ![](assets/test-bpconfig3.png)
 
-1. To verify the connection between AEM Assets as a Cloud Service and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
    ![](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
    >[!NOTE]
-    >
-    >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
-    > 
-
+   >
+   >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
 
 You can now:
 
@@ -286,13 +272,10 @@ You can now:
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 * [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
-
 * [Publish presets, schemas, and facets to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publish tags to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## Distribution logs {#distribution-logs}
 
@@ -301,7 +284,6 @@ You can monitor the distribution agent logs for the asset publishing workflow.
 For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
-
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
    ![](assets/test-bpconfig5.png)
@@ -310,24 +292,24 @@ The distribution agent has generated the following logs:
 
 * INFO: This is a system-generated log that triggers on successful configuration of the distribution agent. 
 * DSTRQ1 (Request 1): Triggers on test connection.
-   
+
 On publishing the asset, the following request and response logs are generated:
 
 **Distribution agent request**:
+
 * DSTRQ2 (Request 2): The asset publishing request is triggered.
 * DSTRQ3 (Request 3): The system triggers another request to publish the AEM Assets folder (in which the asset exists) and replicates the folder in Brand Portal.
 
 **Distribution agent response**:
+
 * queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
 * queue-bpdistributionagent0 (DSTRQ3): The system replicates the AEM Assets folder (containing the asset) in Brand Portal.
 
 In the above example, an additional request and response is triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
- >
- >Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
- >
-
+>
+>Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
 
 <!--
 
@@ -357,4 +339,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->

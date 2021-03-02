@@ -34,7 +34,7 @@ Using the Style System generally takes the following form.
 
 1. The HTML developer implements the corresponding CSS code (and optionally JS code) for each of the visual variations so that they look as defined.
 
-1. The AEM developer places the provided CSS (and optional JS) in a Client Library and deploys it. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+1. The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/implementing/developing/introduction/clientlibs.md) and deploys it.
 
 1. The AEM developer or template author configures the page templates and edits the policy of each styled component, adding the defined CSS classes, giving user-friendly names to each style, and indicating which styles can be combined.
 
@@ -98,9 +98,7 @@ If you wish to use the Style System for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as Client Libraries in order to work.
-
-<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
 
 ## Setup {#setup}
 

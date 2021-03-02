@@ -4,9 +4,9 @@ description: Apply contextual and descriptive business tags using Adobe Sensei's
 contentOwner: AG
 ---
 
-# Configure Experience Manager for smart tagging of assets {#configure-aem-for-smart-tagging}
+# Configure [!DNL Experience Manager] for smart tagging of assets {#configure-aem-for-smart-tagging}
 
-Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches. Adobe provides Smart Tags that uses artificial intelligence and machine learning algorithms to train images. Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy.
+Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches. Adobe provides Smart Tags that use artificial intelligence and machine learning algorithms to train images. Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy.
 
 The Smart Tags functionality is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to Adobe Developer Console. The administrator accesses the link to integrate the Smart Tags with [!DNL Experience Manager] using Adobe Developer Console.
 
@@ -18,7 +18,7 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 
 >[!IMPORTANT]
 >
->The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the existing deployments, administrators follow these steps to configure it.
+>If your [!DNL Experience Manager Assets] deployments was created after [August 2020 release](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets), [!DNL Adobe Developer Console] is integrated by default. It helps configure the smart tags functionality faster. On the older deployments, administrators can manually configure the integration using the following instructions.
 
 ## Integrate with Adobe Developer Console {#aio-integration}
 
@@ -49,7 +49,7 @@ A public certificate allows you to authenticate your profile on Adobe Developer 
 
 1. Click **[!UICONTROL Download Public Key]**.
 
-   ![Experience Manager Smart Tags create public key](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] Smart Tags create public key](assets/aem_smarttags-config1.png)
 
 ### Create an integration {#create-aio-integration}
 
@@ -57,10 +57,10 @@ To use Smart Tags, create an integration in Adobe Developer Console to generate 
 
 1. Access [https://console.adobe.io](https://console.adobe.io/) in a browser. Select the appropriate account and verify that the associated organization role is system administrator.
 1. Create a project with any desired name. Click **[!UICONTROL Add API]**.
-1. On the **[!UICONTROL Add an API]** page, select **[!UICONTROL Experience Cloud]** and select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Next]**.
+1. On the **[!UICONTROL Add an API]** page, select **[!UICONTROL Experience Cloud]** and then select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Next]**.
 1. Select **[!UICONTROL Upload your public key]**. Provide the certificate file downloaded from [!DNL Experience Manager]. A message [!UICONTROL Public key(s) uploaded successfully] is displayed. Click **[!UICONTROL Next]**.
-1. [!UICONTROL Create a new Service Account (JWT) credential] page displays the public key for the service account just configured. Click **[!UICONTROL Next]**.
-1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**. A page displays more information about the configuration. Keep this page open to copy and add these values in Experience Manager when further configuring Smart Tags in [!DNL Experience Manager].
+1. [!UICONTROL Create a new Service Account (JWT) credential] page displays the public key for the service account. Click **[!UICONTROL Next]**.
+1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**. A page displays more information about the configuration. Keep this page open to copy and add these values in [!DNL Experience Manager] when further configuring Smart Tags in [!DNL Experience Manager].
 
    ![In the Overview tab, you can review the information provided for integration.](assets/integration_details.png)
 
@@ -87,22 +87,22 @@ After you've completed the configuration, follow these steps to validate the con
 
 ### Reconfigure if a certificate expires {#certrenew}
 
-When the certificate expires it is no longer trusted. To add a new certificate, follow these steps. You cannot renew an expired certificate.
+When the certificate expires, it is no longer trusted. To add a certificate, follow these steps. You cannot renew an expired certificate.
 
 1. Log in your [!DNL Experience Manager] deployment as an administrator. Click **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.  
 
-1. Locate and click **[!UICONTROL dam-update-service]** user. Click on **[!UICONTROL Keystore]** tab.
+1. Locate and click **[!UICONTROL dam-update-service]** user. Click **[!UICONTROL Keystore]** tab.
 1. Delete the existing **[!UICONTROL similaritysearch]** keystore with the expired certificate. Click **[!UICONTROL Save & Close]**.
 
-   ![Delete existing similaritysearch entry in Keystore to add a new security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Delete existing similarity search entry in Keystore to add a new security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a new security certificate.*
+   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a security certificate.*
 
 1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Open the available Smart Tags configuration. To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
 
 1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing service in the Project. Upload the new certificate and configure. For more information on configuration, see the instructions in [Create Adobe Developer Console integration](#create-aio-integration).
 
-## Enable smart tagging for newly uploaded assets (Optional) {#enable-smart-tagging-for-uploaded-assets}
+## Enable auto-tagging when assets are uploaded (Optional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. In [!DNL Experience Manager], go to **[!UICONTROL Tools > Workflow > Models]**.
 1. On **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Update Asset]** workflow model.
@@ -119,7 +119,7 @@ When the certificate expires it is no longer trusted. To add a new certificate, 
 
 1. In the **[!UICONTROL Arguments]** tab, select **[!UICONTROL Ignore Errors]** if you want the workflow to ignore failures when predicting tags. To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **[!UICONTROL Ignore Smart Tag Flag]**.
 
-1. Click **[!UICONTROL OK]** to close the process step, and then save the workflow. Click **[!UICONTROL Sync]**.
+1. Click **[!UICONTROL OK]**. It closes the process step. Save the workflow. Click **[!UICONTROL Sync]**.
 
 >[!MORELIKETHIS]
 >

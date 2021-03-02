@@ -9,8 +9,7 @@ description: Custom Code Quality Rules - Cloud Services
 This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
 >[!NOTE]
->
->The code samples provided here are only for illustrative purposes.
+>The code samples provided here are only for illustrative purposes. See [Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) to learn about SonarQube concepts and quality rules.
 
 ## SonarQube Rules {#sonarqube-rules}
 
@@ -549,7 +548,7 @@ public void doThis(Resource resource) {
 
 **Key**: CQRules:AMSCORE-554
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -563,7 +562,7 @@ Refer to [Apache Sling Eventing and Job Handling](https://sling.apache.org/docum
 
 **Key**: AMSCORE-553
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -674,7 +673,7 @@ Similar to the *Packages Should Not Contain Duplicate OSGi Configurations* this 
 
 **Key**: ClassicUIAuthoringMode
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -686,7 +685,7 @@ The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 
 **Key**: ComponentWithOnlyClassicUIDialog
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -704,7 +703,7 @@ The AEM Modernization Tools documentation provides documentation and tooling for
 
 **Key**: ImmutableMutableMixedPackage
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -718,7 +717,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experien
 
 **Key**: ReverseReplication
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -727,4 +726,189 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experien
 Support for Reverse Replication is not available in Cloud Service deployments, as described in [Release Notes: Removal of Replication Agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 Customers using reverse replication should contact Adobe for alternative solutions.
+
+### OakPAL - Resources Contained in Proxy-Enabled Client Libraries Should Be in a folder named resources {#oakpal-resources-proxy}
+
+**Key**: ClientlibProxyResource
+
+**Type**: Bug
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM client libraries may contain static resources like images and fonts. As described in [Using Preprocessors](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), when using proxied client libraries these static resources must  be contained in a child folder named resources in order to be effectively referenced on the publish instances.
+
+#### Non Compliant Code {#non-compliant-proxy-enabled}
+
+```
+
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + images
+        + myimage.jpg
+```
+
+#### Compliant Code {#compliant-proxy-enabled}
+
+```
+
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + resources
+        + myimage.jpg
+```
+
+### OakPAL - Usage of Cloud Service Incompatible Workflow Processes {#oakpal-usage-cloud-service}
+
+**Key**: CloudServiceIncompatibleWorkflowProcess
+
+**Type**: Bug
+
+**Severity**: Major
+
+**Since**: Version 2021.2.0
+
+With the move to Asset micro-services for asset processing on AEM Cloud Service, several workflow processes which were used in on-premise and AMS versions of AEM have become either unsupported or unnecessary. The migration tool at [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) can be used to update workflow models during AEM Cloud Service migration.
+
+### OakPAL - Usage of Static Templates is Discouraged in Favor of Editable Templates {#oakpal-static-template}
+
+**Key**: StaticTemplateUsage
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+While the use of static templates has historically been very common in AEM projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found on [Page Templates - Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - Usage of Legacy Foundation Components is Discouraged {#oakpal-usage-legacy}
+
+**Key**: LegacyFoundationComponentUsage
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+The legacy foundation components (i.e. components under `/libs/foundation`) have been deprecated for several AEM releases in favor of the WCM Core Components. Usage of the legacy foundation components as the basis for custom components – whether by overlay or inheritance – is discouraged and should be converted to the corresponding core component. This conversion can be facilitated by the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - Only Supported Runmode Names and Ordering Should Be Used {#oakpal-supported-runmodes}
+
+**Key**: SupportedRunmode
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service enforces a strict naming policy for runmode names and a strict ordering for those runmodes. The list of supported runmodes can be found on [Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) and any deviation from this will be identified as an issue.
+
+### OakPAL - Custom Search Index Definition Nodes Must Be Direct Children of /oak:index {#oakpal-custom-search}
+
+**Key**: OakIndexLocation
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) be direct child nodes of `/oak:index`. Indexes in other locations must be moved to be compatible with AEM Cloud Service. More information on search indexes can be found on [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - Custom Search Index Definition Nodes Must Have a compatVersion of 2 {#oakpal-custom-search-compatVersion}
+
+**Key**: IndexCompatVersion
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) must have the compatVersion property set to 2. Any other value is not supported by AEM Cloud Service. More information on search indexes can be found on [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - Descendent Nodes of Custom Search Index Definition Nodes Must Be Of Type nt:unstructured {#oakpal-descendent-nodes}
+
+**Key**: IndexDescendantNodeType
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+Hard to troubleshoot issues can occur when occur when a custom search index definition node has unordered child nodes. To avoid these, it is recommended that all descendent nodes of an `oak:QueryIndexDefinition` node be of type nt:unstructured.
+
+### OakPAL - Custom Search Index Definition Nodes Must Contain a Child Node Named indexRules that Has Children {#oakpal-custom-search-index}
+
+**Key**: IndexRulesNode
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+A properly defined custom search index definition node must contain a child node named indexRules which, in turn must have at least one child. More information can be found on [Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+### OakPAL - Custom Search Index Definition Nodes Must Follow Naming Conventions {#oakpal-custom-search-definitions}
+
+**Key**: IndexName
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) must be named following a specific pattern described on [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+### OakPAL - Custom Search Index Definition Nodes Must Use the Index Type lucene  {#oakpal-index-type-lucene}
+
+**Key**: IndexType
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) have a type property with the value set to **lucene**. Indexing using legacy index types must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
+
+### OakPAL - Custom Search Index Definition Nodes Must Not Contain a Property Named seed {#oakpal-property-name-seed}
+
+**Key**: IndexSeedProperty
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named seed. Indexing using this property must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
+
+### OakPAL - Custom Search Index Definition Nodes Must Not Contain a Property Named reindex {#oakpal-reindex-property}
+
+**Key**: IndexReindexProperty
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named reindex. Indexing using this property must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
+
+
+
+
+
 

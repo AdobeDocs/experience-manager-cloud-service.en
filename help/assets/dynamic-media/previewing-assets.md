@@ -1,6 +1,6 @@
 ---
 title: Previewing Assets
-description: Learn how to preview assets in Dynamic Media
+description: Learn how to preview assets in Dynamic Media.
 ---
 
 # Previewing assets{#previewing-assets}

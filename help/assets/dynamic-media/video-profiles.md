@@ -153,7 +153,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. Under the Video Size heading, ensure that **[!UICONTROL Keep aspect ratio]** is checked.
 1. Set the video frame size resolution in pixels. Use the **[!UICONTROL Auto]** value to automatically scale to match the source aspect ratio (width to height ratio). For example, Auto x 480 or 640 x Auto.
 
-1.  Do one of the following:
+1. Do one of the following:
 
     * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**. In the **[!UICONTROL Height]** field, enter a value in pixels.
 
@@ -418,6 +418,6 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 ### Removing a Video Profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a Video Profile from.
-1. On the folder, tap or click the check mark to select it and then tap or click **[Properties]**.
+1. On the folder, tap or click the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 

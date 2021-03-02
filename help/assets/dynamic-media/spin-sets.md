@@ -1,6 +1,6 @@
 ---
 title: Spin Sets
-description: Learn how to work with spin sets in Dynamic Media
+description: Learn how to work with spin sets in Dynamic Media.
 ---
 
 # Spin Sets{#spin-sets}
@@ -15,11 +15,19 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 
 >[!NOTE]
 >
->For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-digital-assets.md).
+>For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-digital-assets.md) and apply it to a new folder where your image set assets will be uploaded.
 
 ## Quick Start: Spin Sets {#quick-start-spin-sets}
 
 To get you up and running quickly with Spin Sets, follow these steps:
+
+1. Optional. [Create a batch set preset](/help/assets/dynamic-media/batch-set-presets-dm.md) and apply it to a new asset folder.
+
+   A batch set preset can help you automate the creation of your spin set. 
+
+   >[!IMPORTANT]
+   >
+   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
 1. [Upload your images for multiple views.](#uploading-assets-for-spin-sets)
 
@@ -30,10 +38,6 @@ To get you up and running quickly with Spin Sets, follow these steps:
    To create a Spin Set, select **[!UICONTROL Create > Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
 
    See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
-
-   >[!NOTE]
-   >
-   >You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
 1. Set up [Spin Set Viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md), as needed.
 
@@ -63,9 +67,9 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
 If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you can view and modify [Spin Set properties](/help/assets/manage-digital-assets.md#editing-properties).
 
-## Uploading Assets for Spin Sets {#uploading-assets-for-spin-sets}
+## Uploading assets for Spin Sets {#uploading-assets-for-spin-sets}
 
-At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30 degrees (360/12) for each shot.
+At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30 degrees (360/12) for each shot.
 
 You can upload images for the Spin Sets as you would [upload any other asset in AEM Assets](/help/assets/manage-digital-assets.md).
 

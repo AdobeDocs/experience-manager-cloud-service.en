@@ -1,12 +1,13 @@
 ---
 title: Style AEM CIF Core Components
 description: Learn how to style AEM CIF Core Components. The tutorial covers how Client-Side Libraries or clientlibs are used to deploy and manage CSS and Javascript for an Adobe Experience Manager (AEM) Commerce implementation. This tutorial will also cover how the ui.frontend module and a webpack project are integrated into the end-to-end build process.
-sub-product: commerce
-topics: front-end-development
+sub-product: Commerce
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 ---
@@ -60,7 +61,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
 ## Client Libraries and ui.frontend module {#introduction-to-client-libraries}
 
-The CSS and JavaScript responsible for rendering the theme/styles of the storefront is managed in AEM by a [Client library](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) or clientlibs for short. Client libraries provide a mechanism to organize CSS and Javascript in a project's code and then deliver onto the page.
+The CSS and JavaScript responsible for rendering the theme/styles of the storefront is managed in AEM by a [Client library](/help/implementing/developing/introduction/clientlibs.md) or clientlibs for short. Client libraries provide a mechanism to organize CSS and Javascript in a project's code and then deliver onto the page.
 
 Brand specific styles can be applied to AEM CIF Core Components by adding and overriding the CSS managed by these client libraries. Understanding how client libraries are structured and included on the page is critical.
 
@@ -242,7 +243,7 @@ Next verify the inclusion of the client libraries on the page.
     </html>
     ```
 
-    Client libraries when delivered to the page are prefixed with `/etc.clientlibs` and are served via a [proxy](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) to avoid exposing anything sensitive in `/apps` or `/libs`.
+    Client libraries when delivered to the page are prefixed with `/etc.clientlibs` and are served via a [proxy](/help/implementing/developing/introduction/clientlibs.md) to avoid exposing anything sensitive in `/apps` or `/libs`.
 
     Notice `venia/clientlibs/clientlib-site.min.css` and `venia/clientlibs/clientlib-site.min.js`. These are the compiled CSS and Javascript files derived from the `ui.frontend` module.
 
@@ -475,6 +476,6 @@ Use the [AEM Style system](https://docs.adobe.com/content/help/en/experience-man
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 * [Set up a Local AEM Development Environment](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Client-Side Libraries](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+* [Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md)
 * [Getting Started with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Developing with the Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)

@@ -14,35 +14,56 @@ This page also describes how dispatcher cache is invalidated, as well as how cac
 
 ### HTML/Text {#html-text}
 
-* by default, cached by the browser for five minutes, based on the cache-control header emitted by the apache layer. The CDN also respects this value.
-* can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools. 
+* by default, cached by the browser for five minutes, based on the `cache-control` header emitted by the apache layer. The CDN also respects this value.
+* the default HTML/Text caching setting can be disabled by defining the `DISABLE_DEFAULT_CACHING` variable in `global.vars`:
+
+```
+Define DISABLE_DEFAULT_CACHING
+
+```
+
+This can be useful, for example, when your business logic requires fine tuning of the age header (with a value based on calendar day) since by default the age header is set to 0. That said, **please exercise caution when turning off default caching.**
+
+* can be overridden for all HTML/Text content by defining the `EXPIRATION_TIME` variable in `global.vars` using the AEM as a Cloud Service SDK Dispatcher tools.
 * can be overridden on a finer grained level by the following apache mod_headers directives:
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
-</LocationMatch>
+        Header set Age 0
+   </LocationMatch>
 
-```
+   ```
 
-You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule (which is in the default configuration):
+   Exercise caution when setting global cache control headers or those that match a wide regex so they are not applied to content that you might intend to keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service will remove the cache header if it detects that it has been applied to what it detects to be uncacheable by dispatcher, as described in dispatcher documentation. In order to force AEM to always apply caching, one can add the "always" option as follows:
 
-```
-/0000
-{ /glob "*" /type "allow" }
+   ```
+   <LocationMatch "^/content/.*\.(html)$">
+        Header always set Cache-Control "max-age=200"
+        Header set Age 0
+   </LocationMatch>
 
-```
+   ```
 
-* To prevent specific content from being cached, set the Cache-Control header to "private". For example, the following would prevent html content under a directory named "myfolder" from being cached:
+   You must ensure that a file under `src/conf.dispatcher.d/cache` has the following rule (which is in the default configuration):
 
-```
-<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
+   ```
+   /0000
+   { /glob "*" /type "allow" }
 
-```
+   ```
 
-* Note that other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
+
+   ```
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+
+   ```
+
+   >[!NOTE]
+   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
@@ -54,24 +75,28 @@ You must ensure that a file under `src/conf.dispatcher.d/cache` has the followin
 * by default, not cached
 * can be set on a finer grained level by the following apache `mod_headers` directives:
 
-```
-<LocationMatch "^.*.jpeg$">
-    Header set Cache-Control "max-age=222"
-</LocationMatch>
+   ```
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
 
-```
+   ```
 
-It is necessary to ensure that a file under src/conf.dispatcher.d/cache has the following rule (which is in the default configuration):
+   See the discussion in the html/text section above for exercising caution to not cache too widely and also how to force AEM to always apply caching with the "always" option.
 
-```
-/0000
-{ /glob "*" /type "allow" }
+   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
 
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
 
-Make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
+   ```
 
-* Note that other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   Make sure that assets meant to be kept private rather than cached are not part of the LocationMatch directive filters.
+
+   >[!NOTE]
+   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### Other content file types in node store {#other-content}
 
@@ -111,7 +136,7 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## Client-Side libraries and Version Consistency {#content-consistency}
 
-Pages are composed of of HTML, Javascript, CSS, and images. Customers are encouraged to leverage the Client-Side Libraries (clientlibs) framework to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
+Pages are composed of of HTML, Javascript, CSS, and images. Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
 
 The clientlibs framework provides automatic version management, meaning that developers can check in changes to JS libraries in source control and the latest version will be made available when a customer pushes their release. Without this, developers would need to manually change HTML with references to the new version of the library, which is especially onerous if many HTML templates share the same library.
 

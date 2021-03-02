@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Learn how to work with video in Dynamic Media
+description: Learn how to work with video in Dynamic Media.
 ---
 
 # Video{#video}
@@ -129,14 +129,14 @@ For managing single video and Adaptive Video Sets, the following is supported:
 
 * Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
-    * When an adaptive video set is generated, it includes MP4 videos.
-    * **Note**: Primary/source videos are not added to an Adaptive Video Set.
+  * When an adaptive video set is generated, it includes MP4 videos.
+  * **Note**: Primary/source videos are not added to an Adaptive Video Set.
 
 * Video captioning in all HTML5 video viewers.
 * Organize, browse, and search video with full metadata support for efficient management of video assets.
 * Deliver Adaptive Video Sets to the web as well as to desktops, and mobile devices, including the iPhone, iPad, Android, Blackberry, and Windows phone.
 
-Adaptive video streaming is supported on a variety of iOS platforms. See [Scene7 Viewers Reference Guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Adaptive video streaming is supported on a variety of iOS platforms. See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find Blackberry devices that support this video format at the following: [Supported video formats on Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -144,15 +144,15 @@ You can find Windows devices that support this video format at the following: [S
 
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
-    * Single video viewers.
-    * Mixed Media viewers that combine both video and image content.
+  * Single video viewers.
+  * Mixed Media viewers that combine both video and image content.
 
 * Configure video players to meet your branding needs.
 * Integrate video to your website, mobile site, or mobile application with a simple URL or embed code.
 
 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample.
 
-See also [Viewers for AEM and Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) and [Viewers for AEM assets only](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
+See also [Viewers for AEM Assets and Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) and [Viewers for AEM Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
@@ -164,7 +164,7 @@ On the playback side of the viewer, it automatically detects the browser’s vid
 
 By combining into a single player the ability to design the playback components using HTML5 and CSS, have embedded playback, and use adaptive and progressive streaming depending on the browser’s capability, you extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
-See also [About HTML5 Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
+See also [Viewers for AEM Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -181,7 +181,7 @@ HLS is an Apple standard for adaptive video streaming that automatically adjusts
 
 Progressive video is delivered by downloading and storing the video locally on a user’s desktop system or mobile device.
 
-The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the Scene7 Video Viewer.
+The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the [Dynamic Media HTML5 Video Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
 
 <table>
  <tbody>
@@ -345,7 +345,7 @@ This table describes the data rate of typical connection speeds.
 
 ### Resolution {#resolution}
 
-**Resolution **describes a video file’s height and width in pixels. Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
+**Resolution** describes a video file’s height and width in pixels. Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
 
 Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 x 240 resolution and a 640 x 480 resolution video file:
 
@@ -678,9 +678,9 @@ To create the metadata processing profile, you are first going to copy values fr
 
 To automate the setting of default YouTube properties for your uploaded videos:
 
-1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
 1. Click **[!UICONTROL default]**. (Do not add a checkmark to the selection box to the left of "default".)
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[Edit]**.
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[!UICONTROL Edit]**.
 1. On the Metadata Schema Editor page, click the **[!UICONTROL Advanced]** tab.
 1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Category]**.
 1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
@@ -765,7 +765,7 @@ Now you associate the tags that you added earlier to video assets. This process 
 1. In the upper-right corner of the video's properties page, click **[!UICONTROL Save and Close]**.
 1. On the toolbar, click **[!UICONTROL Quick Publish]**.
 
-   See also [Using Publication Management with AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   See also [Using Publication Management with AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
    You can optionally verify the published video on your YouTube channel.
 
@@ -992,25 +992,20 @@ To view video reports:
 
 1. In the table that lists the top published videos, tap a video name to play the video and also see the video’s audience retention (drop-off) report.
 
-### Viewing video reports based on a video viewer that you created using the Scene7 HMTL5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
+### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Scene7 HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
+If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
 
-Use the Scene7 Viewers Reference and the Scene7 HTML5 Viewers SDK to create your own video viewers.
+Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Scene7 Viewers Reference Guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
-
-<!-- 
-
-SDK ONLY AVAILABLE INTERNALLY NOW
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
--->
-
-To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
+**To view Video Reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK:**
 
 1. Navigate to any published video asset.
 1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers]**.
@@ -1056,9 +1051,10 @@ To view Video Reports based on a video viewer that you created using the Scene7 
        appMeasurementBridge);
       ```
 
-   The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
+   The appMeasurementBridge object has a built-in track function. OBSOLETE However, you can provide your own to support multiple tracking systems or other functionality.
 
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+ -->
 
 ## Adding captions to video {#adding-captions-to-video}
 
@@ -1072,9 +1068,9 @@ Captioning also allows for greater accessibility by using closed captioning for 
 
 Dynamic Media has the capability of converting caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl and index the content to make the videos more easily discoverable and give customers additional details about the video content.
 
-See [Serving static (non-image) contents](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) in the *Scene7 Image Serving API Help* for more information about using the JSON function in a URL.
+See [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) for more information about using the JSON function in a URL.
 
-**To add captions or subtitles to video**
+**To add captions or subtitles to video:**
 
 1. Use a third-party application or service to create your video caption/subtitle file.
 
@@ -1127,7 +1123,7 @@ You can make your long form videos easier to watch and navigate by adding chapte
 >
 >The video player that is used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third party video players may not.
 
-If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 You create a chapter list for your video in much the same way that you create captions. That is, you create a WebVTT file. Note, however, that this file must be separate from any WebVTT caption file that you may also be using; you cannot combine captions and chapters into one WebVTT file.
 

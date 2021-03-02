@@ -82,7 +82,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. In the left rail, tap **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
 1. On the folder, tap or click the check mark to select it and then tap or click **Properties**.  
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 ### Apply a metadata profile globally {#applying-a-metadata-profile-globally}
 

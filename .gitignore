@@ -1,8 +1,9 @@
-
 .DS_Store
 .Trashes
 .Spotlight-V100
 settings.json
+.history
 Thumbs.db
 .gitignore
 experience-manager-cloud-service.en.code-workspace
+
