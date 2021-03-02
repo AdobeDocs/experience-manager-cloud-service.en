@@ -19,6 +19,7 @@ In addition, see:
 
 * Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 * The [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).
+* [Accessibility in Assets](/help/assets/accessibility.md)
 * [Configuring the Rich Text Editor for producing accessible content](/help/implementing/developing/extending/rte-accessible-content.md)
 
 The guidelines are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:

@@ -23,7 +23,7 @@ Experience Audit provides aggregate and detailed page-level test results via the
    >[!NOTE]
    >Progressive Web App (PWA) score is not included in the summary score and will only be shown in the page-level report details screen.
 * Individual page level scores are also available via drill down.
-* Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
+* Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the experience audit.
 * A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
 
 ### Aggregate Scores {#aggregate-scores}

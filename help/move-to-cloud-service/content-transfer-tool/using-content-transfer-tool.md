@@ -11,17 +11,28 @@ Follow the section below to understand the important considerations while runnin
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
-* The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store and Shared S3 Data Store. It currently does not support Azure Blob Store Data Store.
+* Java needs to be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. If you are using a *Production Environment*, it is automatically updated.
+* The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store, Shared S3 Data Store, and Azure Blob Store Data Store.
 
-* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+* If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
+
+* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+
+* The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you will have to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
+
+* The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The *Extraction* process copies the entire `/home` into the migration set and the *Ingestion* process copies all users and groups referenced in the migrated content ACLs. To automatically map the existing users and groups to their IMS IDs, please refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
-* The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process.
+* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, you will need to log a support ticket to notify Adobe of your intention to run *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. You will need to log the support ticket 1 week prior to your planned *Ingestion* date. Once, you've submitted the support ticket, the support team will provide guidance on next steps.
+  * Log a support ticket with the following details:
+      * Exact date and estimated time (with your time-zone) when you plan to start the *Ingestion* phase. 
+      * Environment type (Stage or Production) that you plan to ingest data into.
+      * Program ID.
 
-* The recommended upper limit for the repository size that the Content Transfer Tool can support at a time is 20GB.
+* The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process. Please also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
+
 
 ## Availability {#availability}
 
@@ -34,22 +45,23 @@ The Content Transfer Tool can be downloaded as a zip file from the Software Dist
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
+
 Follow this section to learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish):
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Transfer**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. Click on **Create Migration Set** to create a new migration set. The **Content Migrations Set details** displays.
+1. The console below appears when you create the first migration set. Click on **Create Migration Set** to create a new migration set. 
 
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   
    >[!NOTE]
-   >You will view the existing migration sets on this screen with their current status.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >If you have existing migration sets, the console will display the list of existing migration sets with their current status.
 
 1. Populate the fields in **Content Migrations Set details** screen, as described below.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
    
 
    1. **Name**: Enter the name of the migration set.
@@ -65,13 +77,13 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Access Token**: Enter the access token.
 
       >[!NOTE]
-      >You can retrieve the access token from the author instance by navigating to `/libs/granite/migration/token.json`. The access token is retrieved from the Cloud Service author instance.
+      >You can retrieve the access token by using the **Open access token** button. You need to ensure that you belong to the AEM administrators group in the target Cloud Service instance.
 
    1. **Parameters**: Select the following parameters to create the migration set:
 
       1. **Include Version**: Select as required.
 
-      1. **Paths to be included**: Use path browser to select paths which need to be migrated.
+      1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
 
          >[!IMPORTANT]
          >Following paths are restricted while creating a migration set:
@@ -84,43 +96,40 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. You will view your migration set in the *Overview* page.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   All the the existing migration sets on this screen are displayed on the *Overview* page with their current status and status information.
+   All the the existing migration sets on this screen are displayed on the *Overview* page with their current status and status information. You may see some of these icons described below.
 
    * A *red cloud* indicates that you cannot complete the extraction process.
    * A *green cloud* indicates that you can complete the complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set from overview page and click **Properties** to view or edit the migration set properties.
+1. Select a migration set from overview page and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the container name or the service URL. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+   
 
 ### Extraction Process in Content Transfer {#extraction-process}
 
 Follow the steps below to extract your migration set from the Content Transfer Tool:
 
-1. Select a migration set from *Overview* page and click **Extract** to start extraction.
+1. Select a migration set from *Overview* page and click **Extract** to start extraction. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. The **Migration Set extraction** dialog box displays and click on **Extract** to complete the extraction phase.
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png) 
 
    >[!NOTE]
    >You have the option to overwrite staging container during the extraction phase.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
+   
+1. The **EXTRACTION** field now displays the **RUNNING** status to indicate that the extraction is in-progress.
 
-1. The **EXTRACTION** field now displays the **RUNNING** status for the extraction process that is in-progress.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    Once the extraction is complete, the status of the migration set updates to **FINISHED** and a *solid green* cloud icon displays under the **INFO** field.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >You will have to refresh the page to view the updated status.
+   >The UI has an auto-reload feature that reloads the overview page every 30 seconds.
    >When extraction phase is started, write lock is created and released after *60 seconds*. So, if an extraction is stopped, you need to wait for a minute for lock to be released before starting extraction again.
 
 #### Top-Up Extraction {#top-up-extraction-process}
@@ -132,62 +141,46 @@ The Content Transfer Tool has a feature that supports differential content top-u
 
 Once the extraction process is complete, you can transfer delta content, by using the top-up extraction method. Follow the steps below:
 
-1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up extraction.
-
-1. Click **Extract** to start the top-up extraction.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. The **Migration Set extraction** dialog box displays.
+1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up extraction. Click **Extract** to start the top-up extraction. The **Migration Set extraction** dialog box displays.
 
    >[!IMPORTANT]
+   >
    >You should disable the **Overwrite staging container during extraction** option.
-     ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
- 
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
 ### Ingestion Process in Content Transfer {#ingestion-process}
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
 
-1. Select a migration set from *Overview* page and click **Ingest** to start extraction.
+1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. For demonstration purposes, the option **Ingest content to Author instance** is disabled. It is possible to ingest content to Author and Publish at the same time.  
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   >[!IMPORTANT]
+   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance.
 
-1. The **Migration Set ingestion** dialog box displays.
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. Once the ingestion is complete, the status in **PUBLISH INGESTION** field updates to **FINISHED**.
 
-    For demonstration purposes, the option **Ingest content to Author instance** is disabled. It is possible to ingest content to Author and Publish at the same time.
-
-    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   Click on **Ingest** to complete the ingestion phase.
-
-1. Once the ingestion is complete, the status in **AUTHOR INGESTION** field updates to **FINISHED** and a solid green cloud icon displays under the **INFO**.
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > You will have to refresh the page to view the updated status.
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
 #### Top Up Ingestion {#top-up-ingestion-process}
 
 The Content Transfer Tool has a feature that supports differential content *top-up* where it is possible to transfer only changes made since the previous content transfer activity.
 
 >[!NOTE]
->After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
+>
+>After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service.
 
 Once the ingestion process is complete, you can use delta content, by using the top-up ingestion method. Follow the steps below:
 
-1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up ingestion.
+1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. The **Migration Set Ingestion** dialog box displays. 
 
-1. Click **Ingest** to start the top-up extraction.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. The **Migration Set Ingestion** dialog box displays.
-
-   >[!NOTE]
-   >You should disable the *Wipe* option, to prevent deleting the existing content from the previous ingestion activity.
-     ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >
+   >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity.
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Viewing Logs for a Migration Set {#viewing-logs-migration-set}
 
@@ -255,12 +248,6 @@ The files created in the *OUT_DIR* specified above for consistency can then be c
 ### UI Behavior {#ui-behavior}
 
 As a user, you might see the following behavioral changes in the User Interface (UI) for Content Transfer Tool:
-
-* User creates a migration set for an author URL (Development/Stage/Production) and successfully performs extraction and ingestion.
-
-* User then creates a new migration set for the same Author URL and performs extraction and ingestion on the new migration set. The UI shows that the ingestion status of the first migration set changes to **FAILED** and no logs are available.
-
-* This does not mean that the ingestion for the first migration set failed. This behavior is seen because when a new ingestion job is started, it deletes the previous ingestion job. Hence, the changes status on the first migration set should be ignored.
 
 * The icons in the Content Transfer Tool UI may appear to be different from the screenshots shown in this guide or may not show up at all depending on the version of the source AEM instance.
 

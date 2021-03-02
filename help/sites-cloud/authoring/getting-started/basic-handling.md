@@ -87,7 +87,7 @@ The header is always present at the top of the screen. While most options in the
 
 * [Search](/help/sites-cloud/authoring/getting-started/search.md)
 
-  ![Search button](/help/sites-cloud/authoring/assets/search-button.png)
+  ![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
 
   You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
 
@@ -441,8 +441,8 @@ These options accessible via the chevron next to the **Comment** field.
 **References** shows any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) for pages shows:
 
 * [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* Language copies<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [Language copies](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Content references:
 
   * Links from other pages to the selected page

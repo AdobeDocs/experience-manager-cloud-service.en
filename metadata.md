@@ -1,13 +1,15 @@
 ---
 product: adobe experience manager
+description: this is the metadata required for AEMaaCS documentation pages
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
+type: Documentation
 solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: Getting Started
-getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: Tutorials
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 ---
 
 # Metadata for internal use
@@ -44,5 +46,3 @@ Article
 * `title`
 * `description`
 * `contentOwner` (only on core asset content under `/help/assets`)
-
-Additional information about the metadata can be found in the [internal authoring guide.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)

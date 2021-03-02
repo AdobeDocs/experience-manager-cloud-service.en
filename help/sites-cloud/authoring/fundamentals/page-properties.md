@@ -13,49 +13,43 @@ The properties are distributed across several tabs.
 
 ### Basic {#basic}
 
-* **Title**
+* **Title &amp; Tags**
 
-  * The title of the page is shown in various locations. For example, the **Websites** tab list and the **Sites** card/list views.
-  * This is a mandatory field.
+  * **Title** - The title of the page is shown in various locations. For example, the **Websites** tab list and the **Sites** card/list views.
+    * This is a mandatory field.
+  * **Tags** - Here you can add, or remove tags from the page by updating the list in the selection box.
+    * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
+    * A completely new tag can be entered by typing the name in an empty selection box.
+      * The new tag will be created when you hit enter.
+      * The new tag will then be shown with a small star on the right indicating that it is a new tag.
+    * With the drop-down functionality you can select from existing tags.
+    * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
+    * For more information about tags, see [Using Tags](/help/sites-cloud/authoring/features/tags.md).
+  * **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site.
 
-* **Tags**
+* **Branding**
 
-  * Here you can add, or remove tags from the page by updating the list in the selection box.
-  * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
-  * A completely new tag can be entered by typing the name in an empty selection box.
-    * The new tag will be created when you hit enter.
-    * The new tag will then be shown with a small star on the right indicating that it is a new tag.
-  * With the drop-down functionality you can select from existing tags.
-  * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
-  * For more information about tags, see [Using Tags](/help/sites-cloud/authoring/features/tags.md).
+  Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-* **Hide in Navigation**
-
-  * Indicates whether the page is shown or hidden in the page navigation of the resulting site.
+  * **Override** - Check to define the brand slug on this page.
+    * The value will be inherited by any child pages unless they also have their **Override** values set.
+  * **Override value** - The text of the brand slug to be appended to the page title.
+    * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
 
 * **HTML ID**
 
-  * HTML ID to apply to the component.
+  * **ID** - HTML ID to apply to the component.
 
-* **Page Title**
+* **More Titles and Description**
 
-  * A title to be used on the page. Typically used by title components. If empty the **Title** will be used.
+  * **Page Title** - A title to be used on the page. Typically used by title components. If empty the **Title** will be used.
+  * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** will be used.
+  * **Subtitle** - A subtitle for use on the page.
+  * **Description** - Your description of the page, its purpose, or any other details you want to add.
 
-* **Navigation Title**
+* **On/Off Time**
 
-  * You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** will be used.
-
-* **Subtitle**
-
-  * A subtitle for use on the page.
-
-* **Description**
-
-  * Your description of the page, its purpose, or any other details you want to add.
-
-* **On Time**
-
-  * The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
+  * **On Time** - The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
     >[!NOTE]
     >
@@ -64,11 +58,9 @@ The properties are distributed across several tabs.
     * If already [published (manually)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) this page will be kept dormant (hidden) until rendering at the specified time.
     * If not published, and configured for auto-replication, the page will be automatically published, then rendered, at the specified time.
     * If not published, and not configured for auto-replication, the page will not be automatically published, so a 404 will be seen when an attempt to access the page is made.
-  * Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
+  
+  * **Off Time** - Similar to and often used in combination with **On Time**, this defines the time at which the published page will be hidden on the publish environment.
 
-* **Off Time**
-
-  * In parallel to **On Time** this defines the time at which the published page will be hidden on the publish environment.
   * Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
 * **Vanity URL**
@@ -84,31 +76,20 @@ The properties are distributed across several tabs.
   >* Do not support regex patterns.
   >* Should not be set to an existing page.
 
-* **Redirect Vanity URL**
-
-  * Indicates whether you want the page to use the vanity URL.
+  * **Add** - Tap or click to show a field to define a vanity URL for the page.
+    * Tap or click again to add multiple.
+    * Tap or click the **Remove** icon to delete the vanity URL.
+  * **Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL.
 
 ### Advanced {#advanced}
 
-* **Language**
+* **Settings**
 
-  * The page language.
-
-* **Language Root**
-
-  * Must be checked if the page is the root of a language copy.
-
-* **Redirect**
-
-  * Indicate the page to which this page should automatically redirect.
-
-* **Design**
-
-  * Indicates whether the page is shown or hidden in the page navigation of the resulting site.
-
-* **Alias**
-
-  * Specify an alias to be used with this page.
+  * **Language** - The page language
+  * **Language Root** - Must be checked if the page is the root of a language copy
+  * **Redirect** - Indicates the page to which this page should automatically redirect
+  * **Design** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
+  * **Alias** - Specifies an alias to be used with this page
 
   >[!NOTE]
   >
@@ -122,53 +103,36 @@ The properties are distributed across several tabs.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Inherited from &lt;path&gt;**
+* **Configuration**
 
-  * Indicates whether the page is inherited. and where from.
+  * **Cloud Configuration** - The path to the configuration
 
-* **Cloud Configuration**
+* **Template Settings**
 
-  * The path to the configuration.
+  * **Allowed Templates** - [Defines the list of templates that will be available](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
 
-* **Allowed Templates**
+* **Authentication Requirement**
 
-  * [Define the list of templates that will be available](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch.
+  * **Enable** - Enable use of authentication to access the page
 
-* **Enable** (Authentication Requirement)
+    >[!NOTE]
+    >
+    >Closed user groups for the page are defined on the **[Permissions](#permissions)** tab.
 
-  * Enable (or disable) use of authentication to access the page.
+  * **Login Page** - The page to be used for login
 
-  >[!NOTE]
-  >
-  >Closed user groups for the page are defined on the **[Permissions](#permissions)** tab.
+* **Export**
 
-* **Login Page**
-
-  * The page to be used for login.
-
-* **Export Configuration**
-
-  * Specify an export configuration.
+  * **Export Configuration** - Specifies an export configuration
 
 ### Thumbnail {#thumbnail}
 
-Shows the page thumbnail image. You can:
+Configure the page thumbnail
 
-* **Generate Preview**
-
-  * Generate a preview of the page to use as thumbnail.
-
-* **Upload Image**
-
-  * Upload an image to use as thumbnail.
-
-* **Select Image**
-
-  * Select an existing Asset to use as the thumbnail.
-
-* **Revert**
-
-  * This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
+* **Generate Preview** - Generate a preview of the page to use as thumbnail
+* **Upload Image** - Upload an image to use as thumbnail
+* **Select Image** - Select an existing Asset to use as the thumbnail
+* **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
 ### Social Media {#social-media}
 
@@ -183,9 +147,7 @@ Shows the page thumbnail image. You can:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Service Configurations**
-
-  * Define properties for cloud services.
+* **Cloud Service Configurations** - Define properties for cloud services
   
   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -194,25 +156,23 @@ Shows the page thumbnail image. You can:
 
 * **ContextHub Configurations**
 
-  * Select the ContextHub Configuration and Segments Path.
+  * **ContextHub Path** - Define the [ContextHub configuration](/help/sites-cloud/authoring/personalization/contexthub.md)
+  * **Segments Path** - Define the [Segments path](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
   
-  <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
-  -->
-
 * **Targeting Configuration**
 
-  * Select a [Brand to specify a scope for Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
+  * **Brand** - Defines a [Brand to specify a scope for Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
   >[!NOTE]
-  >This option requires the user account to be in the `Target Adminstrators`group.
+  >This option requires the user account to be in the `Target Administrators`group.
 
 ### Permissions {#permissions}
 
 * **Permissions**
 
-  * Add Permissions 
-  * Edit Closed User Group 
-  * View the Effective Permissions 
+  * Add Permissions
+  * Edit Closed User Group
+  * View the Effective Permissions
   
   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
   
@@ -222,24 +182,32 @@ Shows the page thumbnail image. You can:
   
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies are are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
 
-  * Define properties for a Blueprint page within multi-site management. 
-  
-  <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+* **Current Live Copies** - Lists pages that are based on (i.e. are Live Copies of) this blueprint page
 
-  * Controls the circumstances under which modifications will be propagated to the Live Copy.
+* **Rollout Configs** - Controls the circumstances under which modifications will be propagated to the Live Copy
 
 ### Live Copy {#live-copy}
 
-* **Livecopy**
+* **Synchronize** - Synchronize Live Copy with Blueprint, keeping local modifications
+* **Reset** - Reset Live Copy to state of Blueprint, removing local modifications
+* **Suspend** - Suspend Live Copy from further rollout modifications
+* **Detach** - Detach Live Copy from Blueprint
 
-  * Define properties for a Live Copy page within multi-site management. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-  * Controls the circumstances under which modifications will be propagated from the Blueprint.
+* **Source**
 
-### Site Structure {#site-structure}
+  * Displays the path of the blueprint for this Live Copy
 
-* Provide links to pages that provide site-wide functionality, such as **Signup Page**, **Offline Page**, amongst others.
+* **Status**
+
+  * Lists current Live Copy status of the page
+
+* **Configuration**
+
+  * **Live Copy Inheritance** - If checked, Live Copy configuration is effective on all children
+  * **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page
+  * **Choose Rollout Config** - Defines the circumstances under which modifications will be propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
 
 ## Editing Page Properties {#editing-page-properties-1}
 

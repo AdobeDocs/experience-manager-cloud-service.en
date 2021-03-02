@@ -184,7 +184,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   ![Content Tree edit button](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* A page that is part of a livecopy, where components are inherited from another page will have a reduced selection of options, including the inheritance options. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* A page that is part of a [livecopy](/help/sites-cloud/administering/msm/overview.md), where components are inherited from another page.
 
 >[!NOTE]
 >
@@ -218,9 +218,9 @@ Select the appropriate reference type for more information. In certain situation
 * **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 * [Launches](/help/sites-cloud/authoring/launches/overview.md), provides access to related launches
-* Live Copies displays the paths of all live copies that are based on the selected resource. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Blueprint provides details and various actions <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Languages Copies provides details and various actions <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [Live Copies](/help/sites-cloud/administering/msm/overview.md) displays the paths of all live copies that are based on the selected resource.
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), provides details and various actions
+* [Languages Copies](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), provides details and various actions
 
 ## Events - Timeline {#events-timeline}
 
@@ -241,7 +241,7 @@ The Page Information (equalizer icon) opens a menu that also provides details ab
 ![Page Information option](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [Open Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* Rollout Page <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [Rollout Page](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Start Workflow](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Lock Page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Publish Page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)

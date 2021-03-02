@@ -16,8 +16,8 @@ Once you have successfully logged in to [!UICONTROL Cloud Manager], you are read
 Once you have successfully logged in to [!UICONTROL Cloud Manager], you will see the landing page as shown in the figure below.
 
 >[!NOTE]
-   >
-   >Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** as opposed to **Experience Manager** for AMS programs), as shown below.
+>
+>Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** (as opposed to **Experience Manager** for AMS programs), as shown below.
 
 ![](assets/first_timelogin1.png)
 

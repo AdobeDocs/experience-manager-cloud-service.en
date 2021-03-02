@@ -1,19 +1,19 @@
 ---
 title: Image Sets
-description: Learn how to work with image sets in Dynamic Media
+description: Learn how to work with image sets in Dynamic Media.
 ---
 
 # Image Sets {#image-sets}
 
 Image Sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image Sets let you present alternative views of an item and the viewer offers zooming tools for examining images closely.
 
-Image Sets are designated by a banner with the word `IMAGESET`. In addition, if the Image Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+Image Sets are designated by a banner with the word `IMAGESET`. In addition, if the Image Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner. Also, the last modification date, indicated by the **[!UICONTROL Pencil]** icon, is displayed.
 
 ![chlimage_1-133](assets/chlimage_1-339.png)
 
 Within the image set, you can also create swatches by creating an Image Set and adding thumbnails.
 
-This application is particularly useful for when you want to show an item in a different color, pattern, or finish. To create a Image Set with color swatches, you need one image for each different color, pattern, or finish you want to present to users. You also need one color, pattern, or finish swatch for each color, pattern, or finish.
+This application is useful for when you want to show an item in a different color, pattern, or finish. To create an Image Set with color swatches, you need one image for each different color, pattern, or finish you want to present to users. You also need one color, pattern, or finish swatch for each color, pattern, or finish.
 
 For example, suppose you want to present images of caps with different color bills; the bills are red, green, and blue. In this case, you need three shots of the same cap. You need one shot with a red, one with a green, and one with a blue bill. You also need a red, green, and blue color swatch. The color swatches serve as the thumbnails that users click in the Swatch Set Viewer to see the red-billed, green-billed, or blue-billed cap.
 
@@ -25,9 +25,17 @@ For example, suppose you want to present images of caps with different color bil
 
 To get you up and running quickly:
 
+1. Optional. [Create a batch set preset](/help/assets/dynamic-media/batch-set-presets-dm.md) and apply it to a new folder where your spin set images are uploaded.
+
+   A batch set preset can help you automate the creation of your image set. 
+
+   >[!IMPORTANT]
+   >
+   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+
 1. [Upload your primary source images for multiple views.](#uploading-assets-in-image-sets)
 
-   Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+   Upload the images for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest dimension. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
 1. [Create Image Sets.](#creating-image-sets)
 
@@ -35,26 +43,20 @@ To get you up and running quickly:
 
    To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets]**. Then, add images and click **[!UICONTROL Save]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-
-   >[!IMPORTANT]
-   >
-   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
-
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
 
    See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
 
 1. Add [Image Set Viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md), as needed.
 
-   Administrators can create or modify Image Set Viewer Presets. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Administrators can create or modify Image Set Viewer Presets. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down list, select **[!UICONTROL Viewers]**.
 
-   See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
+   To create or edit viewer presets, see **[!UICONTROL Tools > Assets > Viewer Presets]**.
 
 1. (Optional) [Viewing Image Sets](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) that were created using batch set presets.
 1. [Preview Image Sets.](/help/assets/dynamic-media/previewing-assets.md)
 
-   Select the Image Set and you can preview it. Click the thumbnail icons to examine your Image Set in the selected Viewer. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
+   Select the Image Set and you can preview it. To examine your Image Set in the selected Viewer, tap the thumbnail icons. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down list.
 
 1. [Publish Image Sets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
@@ -62,9 +64,9 @@ To get you up and running quickly:
 
 1. [Link URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [Embed the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
 
-   AEM Assets creates URL calls for Image Sets and activates them after you publish the image sets. You can copy these URLs when you preview assets. Alternatively, you can embed them on your web site.
+   Experience Manager Assets creates URL calls for Image Sets and activates them after you publish the image sets. You can copy these URLs when you preview assets. Alternatively, you can embed them on your website.
 
-   Select the Image Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Select the Image Set, then in the left rail drop-down list, select **[!UICONTROL Viewers]**.
 
    See [Linking an Image Set to a web page](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
 
@@ -72,9 +74,9 @@ To edit Image Sets, see [editing Image Sets.](#editing-image-sets) In addition, 
 
 If you have issues creating sets, see Images and Sets in [Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
-## Uploading Assets in Image Sets {#uploading-assets-in-image-sets}
+## Uploading assets for Image Sets {#uploading-assets-in-image-sets}
 
-Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
+Start by uploading the image assets for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
 
 Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
@@ -86,35 +88,36 @@ Before creating Image Sets, make sure that the images are the right size and for
 
 To create a multiple-view Image Set, you need images that show an item from different points of view or show different aspects of the same item. The goal is to highlight the important features of an item so viewers have a complete picture of what it looks like or does.
 
-Because users can zoom images in Image Sets, make sure that the images are at least 2000 pixels in the largest dimension. Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+Because users can zoom images in Image Sets, make sure that the images are at least 2000 pixels in the largest dimension. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
 >[!NOTE]
 >
->In addition if you are using thumbnails to indicate product swatches, you need to do the following:
+>If you use thumbnails to indicate product swatches, do the following:
 >
->You need vignettes or different shots of the same image showing it in different colors, patterns, or finishes. You also need thumbnail files that correspond to the different colors, patterns, or finishes. For example, to present thumbnails with an Image Set showing the same jacket in black, brown, and green, you need:
+>Create vignettes or different shots of the same image showing it in different colors, patterns, or finishes. You also need thumbnail files that correspond to the different colors, patterns, or finishes. For example, to present thumbnails with an Image Set showing the same jacket in black, brown, and green, you need:
 >
 >* A black, brown, and green shot of the same jacket.
 >* A black, brown, and green color thumbnail.
 
 ## Creating Image Sets {#creating-image-sets}
 
-You can create Image Sets through the user interface or via the API. This section describes how to create Image Sets in the UI.
+You can create Image Sets through the user interface or by way of the API.
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md). 
 >**Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
-When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after they have been added.
+When you add assets to your set, they are automatically added in alphanumeric order. You can manually reorder or sort assets after they have been added.
 
 >[!NOTE]
 >
->Image sets are not supported for assets with "," (comma) in the file name.
+>Image sets are not supported for assets with "," (comma) in the filename.
 
 **To create an Image Set**
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Navigation > Assets]**. Navigate to where you want to create an image set, then tap **[!UICONTROL Create > Image Set]** to open the Image Set Editor page.
+1. In Adobe Experience Manager, tap the Experience Manager logo to access the global navigation console.
+1. Tap **[!UICONTROL Navigation > Assets]**. Navigate to where you want to create an image set, then tap **[!UICONTROL Create > Image Set]** to open the Image Set Editor page.
 
    You can also create the set from inside a folder that contains your assets.
 
@@ -130,17 +133,17 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
     * Near the middle of the Image Set Editor page, tap **[!UICONTROL Tap to open Asset Selector]**.
 
-   Tap to select assets that you want to include in your Image Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   Tap to select assets that you want to include in your Image Set. Selected assets have a check mark icon over them. When you finish, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon in the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
    See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
-1. When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after you add them.
+1. When you add assets to your set, they are automatically added in alphanumeric order. You can manually reorder or sort assets after you add them.
 
-   If necessary, drag an asset's Reorder icon to the right of the asset's file name to re-order images up or down the set list.
+   If necessary, drag an asset's Reorder icon to the right of the asset's filename to reorder images up or down the set list.
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
@@ -154,13 +157,13 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    >[!NOTE]
    >
-   >When creating the image set, you can change the image set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the image set. To select a thumbnail, tap **[!UICONTROL Change thumbnail]** above the Title field on the Image Set Editor page, then select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the image set, select **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]**.
+   >When creating the image set, you can change the image set thumbnail. Or, you can let Experience Manager select the thumbnail automatically based on the assets in the image set. To select a thumbnail, tap **[!UICONTROL Change thumbnail]** above the Title field on the Image Set Editor page. Then, select any image (you can navigate to other folders to find images as well). If you selected a thumbnail, then decide you want Experience Manager to generate one from the image set, select **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]**.
 
 1. Click **[!UICONTROL Save]**. Your newly created Image Set appears in the folder you created it in.
 
 ## Viewing Image Sets {#viewing-image-sets}
 
-You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 >[!IMPORTANT]
 >
@@ -168,7 +171,7 @@ You can create image sets either in the user interface or automatically using [b
 
 However, sets created using batch set presets, do *not* appear in the user interface. You can view these sets in three different ways. (These methods are available even if you created the image sets in the user interface).
 
-* Open the properties of an individual asset. Properties indicate what sets the selected asset is referenced or a member of. Click the name of the set to see the entire set.
+* Open the properties of an asset. Properties indicate what sets the selected asset is referenced or a member of. To see the entire set, tap the set name.
 
   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
@@ -178,7 +181,7 @@ However, sets created using batch set presets, do *not* appear in the user inter
 
 * From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
-  The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **[!UICONTROL Sets]** istheonly way to search automated sets.
+  The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with". This search criteria is different from Experience Manager which is based on using "Contains". Setting the filter to **[!UICONTROL Sets]** is the only way to search automated sets.
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -188,10 +191,10 @@ However, sets created using batch set presets, do *not* appear in the user inter
 
 ## Editing Image Sets {#editing-image-sets}
 
-You can perform a variety of editing tasks on Image Sets such as the following:
+You can perform various editing tasks on Image Sets such as the following:
 
 * Add images to the Image Set.
-* Re-order images in the Image Set.
+* Reorder images in the Image Set.
 * Delete assets in the Image Set.
 * Apply viewer presets.
 * Delete the Image Set.
@@ -201,8 +204,8 @@ You can perform a variety of editing tasks on Image Sets such as the following:
 1. Do any one of the following:
 
     * Hover over an Image Set asset, then tap **[!UICONTROL Edit]** (pencil icon).
-    * Hover over an Image Set asset, tap **[!UICONTROL Select]** (checkmark icon), then tap **[!UICONTROL Edit]** on the toolbar.
-    * Tap on an Image Set asset, then tap **[!UICONTROL Edit]** (pencil icon) on the toolbar.
+    * Hover over an Image Set asset, tap **[!UICONTROL Select]** (check mark icon), then tap **[!UICONTROL Edit]** in the toolbar.
+    * Tap on an Image Set asset, then tap **[!UICONTROL Edit]** (pencil icon) in the toolbar.
 
 1. To edit the images in the Image Set, do any of the following:
 
@@ -211,7 +214,7 @@ You can perform a variety of editing tasks on Image Sets such as the following:
     * To add an asset or update an existing asset, click the **[!UICONTROL Add Asset]**. Navigate to an asset, select it, then tap **[!UICONTROL Select]** near the upper-right corner of the page.
         >[!NOTE]
         >
-        >If you delete the image that AEM uses for the thumbnail by replacing it with another image, the original asset still displays.
+        >If you delete the image that Experience Manager uses for the thumbnail by replacing it with another image, the original asset still displays.
     * To delete an asset, select it and tap or click **[!UICONTROL Delete Asset]**.
     * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
     * To add or change a thumbnail, select the thumbnail icon next to the right of the asset. Navigate to the new thumbnail or swatch asset, select it, then tap **[!UICONTROL Select]**.
@@ -219,7 +222,7 @@ You can perform a variety of editing tasks on Image Sets such as the following:
 
    >[!NOTE]
    >
-   >You can edit the images in an Image Set by navigating to the set, tap **[!UICONTROL Set Members]** in the left rail, and then tap the Pencil icon on an individual asset to open the editing window.
+   >You can edit the images in an Image Set. Navigate to the set and tap **[!UICONTROL Set Members]** in the left rail. To open the editing window, tap the Pencil icon on an asset.
 
 1. Tap **[!UICONTROL Save]** when you are done editing.
 

@@ -1,4 +1,5 @@
 ---
+solution: Experience Manager, Experience Manager Sites
 sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Authoring Content in AEM as a Cloud Service
 breadcrumb-title: Authoring Guide
@@ -42,6 +43,7 @@ user-guide-description: Understand how to author with, and administer, Experienc
     + [Components Console](authoring/features/components-console.md)
     + [Responsive Layout](authoring/features/responsive-layout.md)
     + [Using Tags](authoring/features/tags.md)
+    + [Enabling Progressive Web App Features](authoring/features/enable-pwa.md)
   + Projects {#projects}
     + [Working with Projects](authoring/projects/overview.md)
     + [Managing Projects](authoring/projects/managing.md)
@@ -50,7 +52,9 @@ user-guide-description: Understand how to author with, and administer, Experienc
   + Launches {#launches}
     + [Working with Launches](authoring/launches/overview.md)
     + [Creating Launches](authoring/launches/creating.md)
+    + [Managing Pages in Launches](authoring/launches/managing-pages.md)
     + [Editing Launches](authoring/launches/editing.md)
+    + [Previewing Launches with Timewarp](authoring/launches/preview.md)
     + [Promoting Launches](authoring/launches/promoting.md)
   + Workflows {#workflows}
     + [Working with Workflows](authoring/workflows/overview.md)
@@ -66,6 +70,29 @@ user-guide-description: Understand how to author with, and administer, Experienc
     + [Managing Audiences](authoring/personalization/audiences.md)
     + [Creating and Managing Offers](authoring/personalization/offers.md)
     + [Understanding Segmentation](authoring/personalization/segmentation.md)
+    + [Configuring Segmentation with ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+    + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
++ Administering {#administering}
+  + [Administering Workflows](administering/workflows-administering.md)
+  + Reusing Content {#reusing-content}
+    + [MSM and Translation](administering/msm-and-translation.md)
+    + Multi Site Manager {#msm}
+      + [MSM and Live Copy Overview](administering/msm/overview.md)
+      + [Configuring Live Copy Synchronization](administering/msm/live-copy-sync-config.md)
+      + [Creating and Synchronizing Live Copies](administering/msm/creating-live-copies.md)
+      + [Live Copy Overview Console](administering/msm/live-copy-overview.md)
+      + [Rollout Conflicts](administering/msm/rollout-conflicts.md)
+      + [MSM Best Practices](administering/msm/best-practices.md)
+      + [Troubleshooting and FAQ](administering/msm/troubleshooting.md)
+    + Translation {#translation}
+      + [Translating Content for Multilingual Sites](administering/translation/overview.md)
+      + [Preparing Content for Translation](administering/translation/preparation.md)
+      + [Managing Translation Projects](administering/translation/managing-projects.md)
+      + [Language Copy Wizard](administering/translation/wizard.md)
+      + [Identifying Content to Translate](administering/translation/rules.md)
+      + [Configuring the Translation Integration Framework](administering/translation/integration-framework.md)
+      + [Connecting to Microsoft Translator](administering/translation/connect-ms-translator.md)
+      + [Translation Best Practices](administering/translation/best-practices.md)
 + Integrating with AEM as a Cloud Service {#integrations}
   + [Integrating with Adobe Analytics](integrating/integrating-adobe-analytics.md)
   + [Integrating with Adobe Target](integrating/integrating-adobe-target.md)

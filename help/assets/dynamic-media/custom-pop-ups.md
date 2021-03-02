@@ -1,31 +1,31 @@
 ---
-title: Using Quickviews to create custom pop-ups
-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
+title: Using Quick views to create custom pop-ups
+description: The default Quick view is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 ---
 
-# Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
+# Using Quick views to create custom pop-up windows {#using-quickviews-to-create-custom-pop-ups}
 
-The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer you are using, this functionality lets users click on a hotspot, or a thumbnail image, or on an image map to see information or related content.
+The default Quick view is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer that you use, customers can tap a hotspot, a thumbnail image, or an image map to see information or related content.
 
-Quickviews are supported by the following viewers in Dynamic Media:
+Quick views are supported by the following viewers in Dynamic Media:
 
 * Interactive Images (clickable hotspots)
 * Interactive Video (clickable thumbnail images during video playback)
 * Carousel Banners (clickable hotspots or image maps)
 
-While the functionality of each viewer differs, the process of creating a Quickview is the same across all three supported viewers.
+While the functionality of each viewer differs, the process of creating a Quick view is the same across all three supported viewers.
 
-**To use Quickviews to create custom pop-ups**
+**To use Quick views to create custom pop-up windows**
 
-1. Create a Quickview for an uploaded asset.
+1. Create a Quick view for an uploaded asset.
 
-   You typically create a Quickview the same time you edit an asset for use with the viewer you are using.
+   You typically create a Quick view the same time you edit an asset for use with the viewer you are using.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Viewer you are using</strong></td>
-    <td><strong>Complete these steps to create the Quickview</strong></td>
+    <td><strong>To create the Quick view, complete these steps</strong></td>
     </tr>
     <tr>
     <td>Interactive Images</td>
@@ -48,7 +48,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
     <tbody>
     <tr>
     <td><strong>Viewer you are using</strong><br /> </td>
-    <td><strong>Complete these steps to integrate the viewer with your website</strong></td>
+    <td><strong>To integrate the viewer with your website, complete these steps</strong></td>
     </tr>
     <tr>
     <td>Interactive image</td>
@@ -65,9 +65,9 @@ While the functionality of each viewer differs, the process of creating a Quickv
     </tbody>
    </table>
 
-1. The viewer you are using now needs to know how to use the Quickview.
+1. The viewer you use has to know how to use the Quick view.
 
-   To do this the viewer uses a handler called `QuickViewActive`.
+   The viewer uses a handler called `QuickViewActive`.
 
    **Example**
    Suppose you were using the following sample embed code on your web page for an interactive image:
@@ -78,7 +78,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Using the sample embed code example from above, we have the following code:**
+   **Using the sample embed code example from above, you have the following code:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -93,15 +93,15 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    Learn more about `setHandlers()` method at the following:
 
-    * Interactive Image viewer: [sethandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-    * Interactive Video viewer: [sethandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+    * Interactive Image viewer: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+    * Interactive Video viewer: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. You now need to configure the `quickViewActivate` handler.
+1. Now configure the `quickViewActivate` handler.
 
-   The `quickViewActivate` handler controls the Quickviews in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview as well as a sample `loadQuickView` function call.
+   The `quickViewActivate` handler controls the Quick views in the viewer. The handler contains the variable list and function calls for use with the Quick view. The embed code provides mapping for the SKU variable set in the Quick view. It also makes a sample `loadQuickView` function call.
 
    **Variable mapping**
-   Map variables for use in your web page to the SKU value and generic variables contained in the Quickview:
+   Map variables for use in your web page to the SKU value and generic variables contained in the Quick view:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -109,7 +109,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    `var sku=inData.sku`
 
-   Map additional variables from the Quickview too, as in the following:
+   Map other variables from the Quick view too, as in the following:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -117,7 +117,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
    ```
 
    **Function call**
-   The handler also requires a function call for the Quickview to work. The function is assumed to be accessible by your host page. The embed code provides a sample function call:
+   The handler also requires a function call for the Quick view to work. The function is assumed to be accessible by your host page. The embed code provides a sample function call:
 
    `loadQuickView(sku)`
 
@@ -125,20 +125,20 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    Learn more about `quickViewActivate` method at the following:
 
-    * Interactive Image viewer &ndash; [Event callbacks](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-    * Interactive Video viewer &ndash; [Event callbacks](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-    * Interactive data support in Interactive Video viewer &ndash; [Interactive data support](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+    * Interactive Image viewer &ndash; [Event callbacks](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+    * Interactive Video viewer &ndash; [Event callbacks](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+    * Interactive data support in Interactive Video viewer &ndash; [Interactive data support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Do the following:
 
     * Uncomment the setHandlers section of the embed code.
-    * Map any additional variables contained in the Quickview.
+    * Map any additional variables contained in the Quick view.
 
-        * Update the `loadQuickView(sku,*var1*,*var2*)` call if you are adding additional variables.
+        * Update the `loadQuickView(sku,*var1*,*var2*)` call if you add more variables.
 
     * Create a simple `loadQuickView` () function on page, outside of the viewer.
 
-      For example, the following writes the value of sku to the browser console:
+      For example, the following writes the value of SKU to the browser console:
 
    ```xml
    function loadQuickView(sku){
@@ -148,10 +148,10 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
     * Upload a test HTML page to a webserver and open.
 
-      With the variables from the Quickview mapped and the function call in place, the browser console writes the variable value to the browser console using the sample function provided.
+      The variables from the Quick view are mapped. The function call is in place. And the browser console writes the variable value to the browser console. It does this using the sample function provided.
 
-1. You can now use a function to invoke a simple pop-up in the Quickview. The following example uses a `DIV` for a popup.
-1. Style the pop-up `DIV` in the following manner. Add your own additional styling as desired.
+1. You can now use a function to invoke a simple pop-up in the Quick view. The following example uses a `DIV` for a popup.
+1. Style the pop-up `DIV` in the following manner. Add extra styling as desired.
 
    ```xml
    <style type="text/css">
@@ -165,7 +165,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
 1. Place the pop-up `DIV` in the body of your HTML page.
 
-   One of the elements is set with an ID that is updated with sku value when the user invokes a Quickview. The example also includes a simple button to hide the pop-up again after it becomes visible.
+   One of the elements is set with an ID that is updated with SKU value when the user invokes a Quick view. The example also includes a simple button to hide the pop-up again after it becomes visible.
 
    ```xml
    <div id="quickview_div" >
@@ -176,7 +176,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
    </div>
    ```
 
-1. Add a function to update the sku value in the pop-up; make the pop-up visible by replacing the simple function created in step 5. with the following:
+1. To update the SKU value in the pop-up window, add a function. Make the pop-up window visible by replacing the simple function created in step 5 with the following:
 
    ```xml
    <script type="text/javascript">
@@ -187,14 +187,14 @@ While the functionality of each viewer differs, the process of creating a Quickv
    </script>
    ```
 
-1. Upload a test HTML page to your webserver and open. The viewer displays the pop-up `DIV` when a user invokes a Quickview.
-1. **How to display the custom pop-up in full screen mode**
+1. Upload a test HTML page to your webserver and open. The viewer displays the pop-up `DIV` when a user invokes a Quick view.
+1. **How to display the custom pop-up window in full screen mode**
 
    Some viewers, such as the Interactive Video viewer, support display in fullscreen mode. However, using the pop-up as described in the previous steps causes it to display behind the viewer while in full screen mode.
 
-   To have the pop-up display in both standard and full screen modes, you attach the pop-up to the viewer container. To accomplish this, you can use a second handler method, `initComplete`.
+   To have the pop-up window display in standard and full screen modes, attach the pop-up window to the viewer container. In this case, use a second handler method, `initComplete`.
 
-   The `initComplete` hander is invoked after the viewer is initialized.
+   The `initComplete` handler is invoked after the viewer is initialized.
 
    ```xml
    "initComplete":function() { code block }
@@ -202,8 +202,8 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    Learn more about `init()` method at the following:
 
-    * Interactive Image viewer &ndash; [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-    * Interactive Video viewer &ndash; [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+    * Interactive Image viewer &ndash; [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+    * Interactive Video viewer &ndash; [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. To attach the pop-up--described in the previous steps--to the viewer, use the following code:
 
@@ -217,14 +217,14 @@ While the functionality of each viewer differs, the process of creating a Quickv
    }
    ```
 
-   In the code above, we have done the following:
+   In the code above, you have done the following:
 
-    * Identified our custom pop-up.
+    * Identified your custom pop-up window.
     * Removed it from the DOM.
     * Identified the viewer container.
     * Attached the pop-up to the viewer container.
 
-1. Your entire setHandlers code should now look similar to the following (Interactive Video viewer was used):
+1. Your entire setHandlers code is similar to the following (Interactive Video viewer was used):
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -252,5 +252,5 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    `s7interactiveimageviewer.init()`
 
-   After you embed the viewer into your host page, be sure that the viewer instance is created and the handlers are loaded before the viewer is invoked using `init()`.
+   After you embed the viewer into your host page, be sure that the viewer instance is created. Also, ensure that the handlers are loaded before the viewer is invoked using `init()`.
 

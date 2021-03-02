@@ -1,11 +1,15 @@
 ---
 title: Troubleshooting Dynamic Media
-description: Troubleshooting Dynamic Media.
+description: Troubleshooting tips when using Dynamic Media.
 ---
 
 # Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-The following document describes troubleshooting for Dynamic Media.
+The following topic describes troubleshooting for Dynamic Media.
+
+## New Dynamic Media Configuration {#new-dm-config}
+
+See [Troubleshooting a new Dynamic Media Configuration.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## General (All Assets) {#general-all-assets}
 
@@ -25,14 +29,6 @@ The following asset properties can be reviewed in CRXDE Lite to confirm the succ
 ### Synchronization Logging {#synchronization-logging}
 
 Synchronization errors and issues are logged in `error.log` (AEM server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
-
-### Move, Copy, Delete {#move-copy-delete}
-
-Before performing a Move, Copy, or Delete operation, do the following:
-
-* For images and videos, confirm that a `<object_node>/jcr:content/metadata/dam:scene7ID` value exists before performing move, copy, or delete operations.
-* For image and viewer presets, confirm that an `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` value exists before performing move, copy, or delete operations.
-* If above metadata value is missing, you need to re-upload assets before move, copy, or delete operations.
 
 ### Version Control {#version-control}
 
@@ -68,16 +64,6 @@ If you are having issues with images and sets, see the following troubleshooting
      <li>Publish asset.</li>
      <li>Re-upload asset and publish it.</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>Asset selector in set editor stuck in perpetual loading</td>
-   <td><p>Known issue to be fixed in 6.4</p> </td>
-   <td><p>Close the selector and reopen it.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Select</strong> button is not active after selecting an asset as part of editing a set</td>
-   <td><p> </p> <p>Known issue to be fixed in 6.4</p> <p> </p> </td>
-   <td><p>Click on another folder in the Asset Selector first and go back to select the asset.</p> </td>
   </tr>
   <tr>
    <td>Carousel hotspot moves around after switching between slides</td>
@@ -153,7 +139,6 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td><p>To determine if video encoding is still in progress or if it has entered a failure state:</p>
     <ul>
      <li>Check the video status <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>Monitor the video from the workflow console <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -213,19 +198,16 @@ If you are having issues with viewers, see the following troubleshooting guidanc
     </ol> </td>
    <td><p>If the sample assets or viewer preset artwork have not synced or published then restart the entire copy/sync process:</p>
     <ol>
-     <li>Navigate to CRXDE Lite.
-      <ul>
-       <li>Delete <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Navigate to the CRX package manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Navigate to <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>Select the following actions in order:
       <ol>
-       <li>Search for viewer package in list (it starts with <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Click <strong>Reinstall</strong>.</li>
+       <li>Delete Sync folders.</li>
+       <li>Delect Preset folder (below <code>/conf</code>).
+       <li>Trigger DM Setup Async Job.</li>
       </ol> </li>
-     <li>Under Cloud Services, navigate to the Dynamic Media Configuration page, then open the configuration dialog box for your Dynamic Media - S7 configuration.
-      <ul>
-       <li>Make no changes, click <strong>Save</strong>. This triggers the logic again to create and sync the sample assets, viewer preset CSS, and artwork.<br />  </li>
-      </ul> </li>
+     <li>Wait for notification of successful sync in your AEM Inbox.
+     </li>
     </ol> </td>
   </tr>
  </tbody>

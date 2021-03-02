@@ -26,9 +26,9 @@ For full-text searches, add the `Fulltext` predicate to the form. Use the Proper
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
 
-   ![Press and move a predicate to customize the search filters](assets/drag_predicate.png)
+   ![Select and move a predicate to customize the search filters](assets/drag_predicate.png)
 
-   *Figure: Press and move a predicate to customize the search filters.*
+   *Figure: Select and move a predicate to customize the search filters.*
 
 1. In the Settings tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate. The header label in the Settings tab identifies the type of the selected predicate.
 
@@ -95,7 +95,7 @@ If you want to use an existing node, specify it using the selection dialog.
 1. Do one of the following:
 
     * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-    * Tap ![](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
+    * Tap ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
 
 1. Ensure that **[!UICONTROL Single Select]** is cleared to let the user select multiple options for file types at a time (for example, Images, Documents, Multimedia, and Archives). If you select **[!UICONTROL Single Select]**, the user can select only one option for file types at a time.
 

@@ -5,6 +5,12 @@ description: Adobe Experience Manager as a Cloud Service moving to AEM as a clou
 
 # Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_overview"
+>title="About Cloud Acceleration Manager"
+>abstract="Cloud Acceleration Manager is your own personal guide throughout the entire process of moving to AEM as a Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Notable Changes to AEM Sites as a Cloud Service"
+
 ## Benefits of Moving to AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
 AEM as a Cloud Service provides a scalable, secure, and agile technology foundation for Experience Manager Sites and Assets, enabling marketers and IT to focus on delivering impactful experiences at scale.
@@ -34,7 +40,7 @@ Learn more about the different phases involved in the transition journey to Clou
 |---|---|
 |[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
 |[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc.|
-|[Release Notes](/help/release-notes/home.md)|his guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
+|[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.|
 |[Core Concepts](/help/core-concepts/home.md)|This guide provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|

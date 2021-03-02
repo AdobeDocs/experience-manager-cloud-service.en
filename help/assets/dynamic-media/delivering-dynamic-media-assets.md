@@ -1,13 +1,13 @@
 ---
 title: Delivering Dynamic Media Assets
-description: Learn how to deliver dynamic media assets
+description: Learn how to deliver Dynamic Media assets.
 ---
 
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
 
-How you can deliver your dynamic media assets - both video and images - depends on how your website is implemented.
+How you can deliver your Dynamic Media assets - both video and images - depends on how your website is implemented.
 
-With Dynamic Media you have several options:
+With Dynamic Media, you have several options:
 
 * If your website is hosted on AEM, then you want to add the dynamic media assets directly to your page.
 * If your website is not on AEM, then you have the choice of either:
@@ -18,7 +18,7 @@ With Dynamic Media you have several options:
 
 >[!NOTE]
 >
->Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) for more information.
+>Smart imaging works with your existing image presets. It uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) for more information.
 
 For more information, see the following topics:
 
@@ -36,4 +36,4 @@ For more information, see the following topics:
 
 AEM now supports the delivery of all Dynamic Media content (images and video) over HTTP/2. That is, a published URL or embed code for the image or video is available to be integrated with any application that accepts a hosted asset. That published asset is then delivered by way of HTTP/2 protocol. This method of delivery improves the way browsers and servers communicate, allowing for better response and load times of all your Dynamic Media assets.
 
-See [HTTP/2 Delivery of Content Frequently Asked Questions](/help/assets/dynamic-media/http2faq.md) to learn more.
+To learn more, see [HTTP/2 Delivery of Content Frequently Asked Questions](/help/assets/dynamic-media/http2faq.md).

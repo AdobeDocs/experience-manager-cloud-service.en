@@ -14,6 +14,11 @@ For example, the seasonal product pages of your online store are updated quarter
 * Changes to the source pages that occur as a result of normal maintenance tasks. These changes are automatically duplicated in the launch pages.
 * Edits that are performed directly on the launch pages in preparation for the next quarter.
 
+You can also:
+
+* Navigate content in the launch branch; adding, or removing, pages as necessary.
+* Preview how published content will look at a specific date/atim in the future.
+
 When the next quarter arrives, you promote the launch pages so that you can publish the source pages (holding the updated content). You can promote either all pages, or only those that you have modified.
 
 Launches can also be:
@@ -25,6 +30,8 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 * [Creating Launches](/help/sites-cloud/authoring/launches/creating.md)
 * [Editing Launches](/help/sites-cloud/authoring/launches/editing.md)
+* [Managing Pages within Launches](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Using Timewarp to Preview your Content based on Launches](/help/sites-cloud/authoring/launches/preview.md)
 * [Promoting Launches](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Launches - the Order of Events {#launches-the-order-of-events}
@@ -75,22 +82,31 @@ Launches allow you to:
 >
 >Please contact your system administrator if you experience any problems.
 
-### The Launches Console {#the-launches-console}
-
-The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
-
-* The **Tools** Console: **Tools**, **Sites**, **Launches**.
-
-* Or directly with `https://<host>:<port>/libs/launches/content/launches.html`
-
 ## Launches in References (Sites Console) {#launches-in-references-sites-console}
 
 1. In the **Sites** console, navigate to the source of the launch(es).
 1. Open the **References** rail and select the source page.
-1. Select **Launches**, the existing launch(es) will be listed:
+1. Select **Launches**, the existing launch(es) will be listed, together with access to the **Launches Console**:
 
    ![References of launches in sites console](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
 
    ![Actions to take on launches in sites console](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## The Launches Console {#the-launches-console}
+
+The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
+
+* The **Tools** Console: **Tools**, **Sites**, **Launches**.
+
+* **Launches Console** at the bottom of the **Launches** section of the **References** rail when navigating source content in the Sites console.
+
+  ![Launches Console in References of launches in Sites console](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* The **Launches** button at the top right, when navigating launch content in the Sites console:
+
+  ![Launches option in Sites console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* Or directly; for example, with:
+   `https://<host>:<port>/libs/launches/content/launches.html`

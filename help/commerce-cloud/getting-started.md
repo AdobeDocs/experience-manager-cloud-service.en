@@ -1,6 +1,12 @@
 ---
 title: Getting started with AEM Commerce as a Cloud Service
-description: Getting started with AEM Commerce as a Cloud Service
+description: Learn how to deploy a commerce-enabled AEM project to a running AEM as a Cloud service environment. Use features of Adobe Cloud Manager and a CI/CD pipeline to build the Venia reference storefront to a running environment.
+topics: Commerce
+feature: Commerce Integration Framework, Cloud Manager
+version: cloud-service
+doc-type: tutorial
+kt: 4947
+thumbnail: 37843.jpg
 ---
 
 # Getting started with AEM Commerce as a Cloud Service {#start}
@@ -16,7 +22,7 @@ The onboarding for AEM Commerce as a Cloud Service is a two-step process:
 1. Get AEM Commerce as a Cloud Service enabled and the CIF add-on provisioned
 2. Connect AEM Commerce as a Cloud Service with your Magento environment
 
-The first step is done by Adobe. You will need to provide information such as the IMS organization, the GraphQL endpoint URL of your Magento environment, etc. as part of the provisioning process. For more details on pricing and provisioning, you need to reach out to your sales representative.
+The first onboarding step is done by Adobe. For more details on pricing and provisioning, you need to reach out to your sales representative.
 
 Once you have been provisioned with the CIF add-on, it will be applied to any existing Cloud Manager programs. In case, you don't have a Cloud Manager Program, you will need to create a new one. For more details, refer to [Setup your Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
@@ -51,9 +57,25 @@ To connect AEM Commerce with Magento follow these steps:
 
 >[!NOTE]
 >
->Alterntivly you can use the [Cloud Manger API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) to configure the Cloud Manager variables as well.
+>Alternatively you can use the [Cloud Manger API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) to configure the Cloud Manager variables as well.
 
 With this, you are ready to use AEM Commerce as a Cloud Service and can deploy your project via Cloud Manager.
+
+## Enable Staged Catalog Features (Optional) {#staging}
+
+>[!NOTE]
+>
+>This feature is only available with Magento Enterprise Edition or Magento Cloud.
+
+1. Login to Magento and create an integration token. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details. Make sure the integration token has *only* access to `Content -> Staging` resources. Copy the `Access Token` value.
+
+1. Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
+
+    ```bash
+    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+    ```
+
+    Please see [Connecting AEM Commerce with Magento](#magento) on how to configure the Adobe I/O CLI for Cloud Manager.
 
 ## 3rd party commerce integrations {#integrations}
 

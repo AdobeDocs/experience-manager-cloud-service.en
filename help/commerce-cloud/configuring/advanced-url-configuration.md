@@ -1,6 +1,14 @@
 ---
 title: Advanced URL Configurations
-description: Advanced URL Configurations
+description: Learn how to customize the URLs for product and category pages. This allows implementations to optimize URLs for search engines and promote discovery.
+sub-product: Commerce
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 4933
+thumbnail: 34350.jpg
 ---
 
 # Advanced URL Configurations {#url}

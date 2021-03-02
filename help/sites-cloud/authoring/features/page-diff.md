@@ -11,7 +11,7 @@ Content creation is an iterative process. Authoring with efficiency requires bei
 
 The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 
->[!CAUTION]
+>[!NOTE]
 >
 >The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
 >
@@ -22,9 +22,9 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 The side-by-side diff can compare:
 
 * [Versions](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Earlier version of a page with its current state
-* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint
 * [Launches](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Launch with its Source
-* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [Language Copies](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - A page before and after (re-)translation
 
 See the respective topics on how to start the diff within those contexts.
 
@@ -47,10 +47,6 @@ The diff detects changes at the component and HTML level. Items that have been c
 
 * Light Green - Component Added
 * Pink - Component Removed
-* Blue - Component Changed
-* Blue - Component Moved
-
-Note the Changed and Moved colors are the same.
 
 **HTML Changes**
 
@@ -86,9 +82,7 @@ You can exit the side-by-side diff at any time by clicking the Close button in t
 There are some situations in which the page diff may not detect a difference as expected.
 
 * When diffing versions and launches, the diff does not take into account dynamic components such as breadcrumbs, menus, product lists or logos (components that rely on the site structure to render their content).
-* For versions the diff does not recreate the access control policy and live copy relationships.
-* If any changes are made to an image such as modifying the alt, title, or src attributes, it will be highlighted in blue as changed. However in some cases the image has a Base64 representation of the src attribute and even if both images look the same they will be marked by the diff as different because of the differing src attributes.
-* The diff is unable to detect image rotation.
+* For versions, the diff does not recreate the access control policy and live copy relationships.
 * If a page is moved, you can no longer perform a diff with any versions made before the move.
   * If you experience problems with a diff, check the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) for the page to see whether the page has been moved.
 

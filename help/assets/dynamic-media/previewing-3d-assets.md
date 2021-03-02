@@ -1,6 +1,6 @@
 ---
 title: Previewing 3D assets
-description: Learn how to preview 3D assets
+description: Learn how to preview 3D assets in Dynamic Media.
 ---
 
 # Previewing 3D assets in AEM{#previewing-3d-assets}

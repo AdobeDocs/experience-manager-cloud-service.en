@@ -30,8 +30,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >The Production and Stage is available as a duo and is used for testing and production purposes.  User will not be able to create only Stage or only Production environment.
 
-## Adding an Environment {#adding-environments}
-
+## Adding Environment {#adding-environments}
 
 1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen. 
    ![](assets/environments-tab.png)
@@ -57,19 +56,37 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
+
+## Viewing Environment {#viewing-environment}
+
+The **Environments** card on the Overview page lists up to three environments. 
+
+1. Select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
+
+   ![](assets/environment-view-1.png)
+
+1. The **Environments** page displays the list of all the existing environments.
+
+   ![](assets/environment-view-2.png)
+
+1. Select any one of the environments from the list to view the environment details.
+
+   ![](assets/environment-view-3.png)
+
+
 ## Updating Environment {#updating-dev-environment}
 
 Updates of Stage and Production environments are automatically managed by Adobe. 
 
 Updates to Development environments are managed by users of the program. When an environment is not running the latest publicly available AEM release, the status on Environments Card on the Home Screen will show **UPDATE AVAILABLE**.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 The **Update** option is available from the **Environments** Card. 
 This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Update**, as shown in the figure below:
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Selecting this option will allow a Deployment Manager to update the pipeline associated with this environment to the latest release and then execute the pipeline. 
 
@@ -85,11 +102,12 @@ The **Delete** option is available from the dropdown menu in the **Environments*
 
 The delete option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select the Development environment, click on **...** and select **Delete**, as shown in the figure below:
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
-This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
+>
+>This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
 
 ## Managing Access {#managing-access}
 
@@ -97,7 +115,7 @@ Select **Manage Access** from the dropdown menu in the **Environments** Card. Yo
 
 Refer to [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) to learn more.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Accessing Developer Console {#accessing-developer-console}
@@ -109,7 +127,58 @@ Only a user in the Developer role will have access to **Developer Console**. The
 Refer to [Hibernating and De-hibernating Sandbox Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 This option is also available, if you click on **Details** from the **Environments** card. The **Environments** page opens and once you select an environment, click on **...** and select **Developer Console**.
+
+## Login Locally {#login-locally}
+
+Select **Local Login** from the dropdown menu in the **Environments** Card to login locally to Adobe Experience Manager. 
+
+![](assets/environ-login-locally.png)
+
+Additionally, you can login locally from the **Environments** summary page.
+
+![](assets/environ-login-locally-2.png)
+
+## Managing Custom Domain Names {#manage-cdn}
+
+Navigate to the **Environments** details page from the Environments Summary page. 
+
+The following actions can be performed on the Publish service for your environment  as described below: 
+
+1. [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. [Viewing and Updating a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## Managing IP Allow Lists {#manage-ip-allow-lists} 
+
+Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
+
+### Applying an IP Allow List {#apply-ip-allow-list}
+
+Applying an IP Allow List is the process by which all IP ranges included in the definition of the Allow-List are associated with an Author or Publish service in an environment. A user in the Business Owner or Deployment Manager role must be logged in in order to be able to apply an IP Allow List.
+
+>[!NOTE]
+>The IP Allow List must exist in Cloud Manager in order to apply it to an environment-service. To learn more about IP Allow Lists in Cloud Manager navigate to [Introduction to IP Allow Lists in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+Follow the steps below to apply an IP Allow List:
+
+   1. Navigate to the specific environment from the **Environments** details page and navigate to the **IP Allow Lists** table.
+   1. Use the input fields at the top of the IP Allow List table to select the IP Allow List and the Author or Publish service you wish to apply it to. 
+   1. Click on **Apply** and confirm your submission.
+
+### Unapplying an IP Allow List {#unapply-ip-allow-list}
+
+Unapplying an IP Allow List is the process by which all IP ranges included in the definition of the Allow  List are disassociated from an Author or Publisher service in an environment. A user in the Business Owner or Deployment Manager role must be logged in in order to be able to Unapply an IP Allow List.
+
+Follow the steps below to unapply an IP Allow List:
+
+1. Navigate to the specific **Environments** details page from Environments screen and navigate to the **IP Allow Lists** table.
+1. Identify the row where the IP Allow List rule you wish to unapply is listed.
+1. Select the **...** menu from the far right end of the row.
+1. Select the **Unapply** option and confirm your submission.
+
 

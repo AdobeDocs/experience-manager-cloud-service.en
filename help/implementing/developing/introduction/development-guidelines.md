@@ -115,7 +115,7 @@ The log levels are as follows:
 
 Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, please contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
-## CRX/DE Lite and System Console {#crxde-lite-and-system-console}
+## CRX/DE Lite and Developer Console {#crxde-lite-and-developer-console}
 
 ### Local Development {#local-development}
 
@@ -125,7 +125,7 @@ Note that on local development (using the cloud-ready quickstart), `/apps` and `
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-Customers can access CRXDE lite on the development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
+Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
 A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
@@ -205,3 +205,44 @@ Only HTTP and HTTPS ports are supported. This includes HTTP/1.1, as well as HTTP
 ### Debugging Considerations {#debugging-considerations}
 
 In order to validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, it may be useful to call out to a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which will return the calling IP address.
+
+## Sending Email {#sending-email}
+
+AEM as a Cloud Service requires outbound mail to be encrypted. The sections below describe how to request, configure, and send email.
+
+### Requesting Access {#requesting-access}
+
+By default, outbound email is disabled. To activate it, submit a support ticket with:
+
+1. The fully qualified domain name for the mail server (for example `smtp.sendgrid.net`)
+1. The port to be used. It should be port 465 if supported by the mail server, otherwise port 587. Note that port 587 can only be used if the mail server requires and enforces TLS on that port
+1. The program ID and environment ID for the environments they would like to mail out of
+1. Whether SMTP access is needed on author, publish, or both.
+
+### Sending Emails {#sending-emails}
+
+The [Day CQ Mail Service OSGI service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
+
+AEM CS requires mail to be sent out through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
+
+>[!NOTE]
+>
+>Note that Adobe does not support SMTP egressing over a unique dedicated IP address. 
+
+### Configuration {#email-configuration}
+
+E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+
+See [AEM 6.5 documentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, the following adjustments must be made to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+
+If port 465 has been requested:
+
+* set `smtp.port` to `465`
+* set `smtp.ssl` to `true`
+
+If port 587 has been requested (only allowed if the mail server does not support port 465):
+
+* set `smtp.port` to `587`
+* set `smtp.ssl` to `false`
+
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.tls` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.

@@ -1,6 +1,6 @@
 ---
 title: Applying Dynamic Media Image Presets
-description: Learn how to apply image presets in Dynamic Media
+description: Learn how to apply image presets in Dynamic Media.
 ---
 
 # Applying Dynamic Media Image Presets {#applying-image-presets}
@@ -9,17 +9,17 @@ Image Presets enable assets to dynamically deliver images at different sizes, in
 
 In addition, you can choose an image preset that is responsive (designated by the **[!UICONTROL RESS]** button after you select it).
 
-This section describes how to use image presets. [Administrators can create and configure image presets](managing-image-presets.md).
+[Administrators can create and configure image presets](managing-image-presets.md).
 
 >[!NOTE]
 >
->Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](imaging-faq.md) for more information.
+>Smart imaging works with your existing image presets. It uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](imaging-faq.md) for more information.
 
 You can apply an image preset to an image anytime you preview it.
 
 **To apply Dynamic Media Image Presets**
 
-1. Open the asset and in the left rail, tap the drop-down menu, then tap **[!UICONTROL Renditions]**.
+1. Open the asset and in the left rail, tap the drop-down list, then tap **[!UICONTROL Renditions]**.
 
    >[!NOTE]
    >
@@ -31,12 +31,12 @@ You can apply an image preset to an image anytime you preview it.
 
 1. Do any of the following:
 
-    * Select a dynamic rendition to preview the image preset.
-    * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+    * To preview the image preset, select a dynamic rendition.
+    * To display the pop-up window, tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >If the asset *and* the image preset are not yet published, the **[!UICONTROL URL]** button (or **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons, if applicable) are not available.
+   >If the asset *and* the image preset are not yet published, the **[!UICONTROL URL]** button (or URL and RESS buttons, if applicable) is not available.
    >
    >Note also that image presets are automatically published on a Dynamic Media S7 server.
 
