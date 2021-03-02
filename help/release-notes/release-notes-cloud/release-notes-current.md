@@ -63,6 +63,18 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
 * When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available. (CQ-4314101)
 
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What is New {#what-is-new-commerce}
+
+* Product Experience Management: Enrich product catalog pages individually with Experience Fragments.
+
+* Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
+
+* Released CIF Venia Reference Site - 2021.02.24 that includes the latest CIF Core Components version v1.8.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) for more details.
+
+* Released CIF Core Components v1.8.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) for more details.
+
 ## Cloud Manager {#cloud-manager}
 
 ### Release Date {#release-date-cm}
