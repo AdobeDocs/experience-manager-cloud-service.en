@@ -20,6 +20,10 @@ Through a simple configuration, a content author can now enable progressive web 
 >
 >Before using this feature is is recommended that you discuss this with your development team to define the best way to leverage it for your project.
 
+>[!NOTE]
+>
+>The features described in this document are planned to be made available with the [March 2021 release of AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+
 ## Introduction {#introduction}
 
 [Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browse a site while on-the-go even if losing an internet connection. PWAs allow seamless experiences even if the network is lost or unstable.
@@ -27,7 +31,7 @@ Through a simple configuration, a content author can now enable progressive web 
 Instead of requiring any re-coding of the site, a content author is able to configure PWA properties as an additional tab in the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) of a site.
 
 * When saved or published, this configuration triggers an event handler that writes out the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) that enable PWA features on the site.
-* The manifest and service worker are stored in [context aware configuration](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) applicable to the site. Sling mappings are also maintained to ensure that service worker is served from the root of the application to enable proxying content allowing offline capabilities within the app.
+* Sling mappings are also maintained to ensure that service worker is served from the root of the application to enable proxying content allowing offline capabilities within the app.
 
 With PWA, the user has a local copy of the site, giving an app-like experience even without an internet connection.
 
@@ -39,13 +43,19 @@ With PWA, the user has a local copy of the site, giving an app-like experience e
 
 To be able to use PWA features for your site, there are two requirements for your project environment:
 
-1. [Adjust your components](#adjust-components) to enable this feature
+1. [Use Core Components](#adjust-components) to take advantage of this feature
 1. [Adjust your dispatcher](#adjust-dispatcher) rules to expose the required files
 
 These are technical steps that the author will need to coordinate with the development team. These steps are only required once per site.
 
-### Adjust Your Components {#adjust-components}
+### Use Core Components {#adjust-components}
 
+Core Components release 2.15.0 and later fully support the PWA features of AEM sites. Since AEMaaCS always includes the latest version of the Core Components, you can leverage PWA features out-of-the-box. Your AEMaaCS project automatically fulfills this requirement.
+
+>[!NOTE]
+>
+>Adobe does not recommend using the PWA features on custom components or components not [extended from the ore Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+<!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
  To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
@@ -68,10 +78,7 @@ The developer will also need to add the following link to the `customfooterlibs.
         }
 </script>
 ```
-
->[!NOTE]
->
->Future versions of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) will include these features automatically. However if you use custom components instead of the Core Components, these adjustments will always be required.
+-->
 
 ### Adjust Your Dispatcher {#adjust-dispatcher}
 
@@ -84,9 +91,11 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
->[!NOTE]
->
->Future versions of the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#developing) will include this configuration.
+Depending on your project you may want to include different types of extensions to the rewrite rules. The `webmanifest` extension can be useful to include in the rewrite conditions when you introduced a rule that hides and redirects requests to `/content/<projectName>`.
+
+```text
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
+```
 
 ## Enabling PWA for Your Site {#enabling-pwa-for-your-site}
 
@@ -123,8 +132,8 @@ Your site is now configured and you can [install it as a local app.](#using-pwa-
 Now that you have [configured your site to support PWA,](#enabling-pwa-for-your-site) you can experience it for yourself.
 
 1. Access the site in a [supported browser.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
-1. You will see a `+` icon in the address bar of the browser, indicating that the site can be installed as a local app.
-   * Depending on the browser, it may also display a notification (such as a banner or dialog box) indicating that it's possible to install as a local app.
+1. You will see a new icon in the address bar of the browser, indicating that the site can be installed as a local app.
+   * Depending on the browser, the icon may vary, and the browser may also display a notification (such as a banner or dialog box) indicating that it's possible to install as a local app.
 1. Install the app.
 1. The app will be installed on the home screen of your device.
 1. Open the app, browse a bit, and see that pages are available offline.
@@ -185,9 +194,32 @@ These settings make parts of this site available offline and available locally o
 >
 >Your developer team likely has valuable input regarding how your offline configuration should be set up.
 
-## Limitations {#limitations}
+## Limitations and Recommendations {#limitations-recommendations}
 
 Not all PWA features are available for AEM Sites. These are a few notable limitations.
 
 * A user must browse the page at least once before it is cached offline.
 * Pages are not automatically synched or updated if the user is not using the app.
+
+Adobe also makes the following recommendations when you implement PWA.
+
+### Minimize the number of resources to pre-cache. {#minimize-precache}
+
+Adobe advises you to limit the number of pages to pre-cache.
+
+* Embed libraries to reduce the number of entries to manage when pre-caching.
+* Limit the number of image variations to pre-cache.
+
+### Enable PWA after the project scripts and stylesheets are stabilized. {#pwa-stabilized}
+
+Client libraries are delivered with the addition of a cache selector observing the following pattern `lc-<checksumHash>-lc`. Every time one of the files (and dependencies) that compose a library change, this selector changes. If you listed a client-library to be pre-cached by the service-worker and you want to refer to a new version, you manually retrieve and update the entry. As a result, we advise you to configure your site to be a PWA after the project scripts and stylesheets are stabilized.
+
+### Minimize the number of image variations. {#minimize-variations}
+
+The Image Component of the AEM Core Components determines one the front end the best rendition to fetch. This mechanism also includes a timestamp that corresponds to the last modified time of that resource. This mechanism complicates the configuration of the PWA pre-cache.
+
+When configuring the pre-cache, the user needs to list all the path variations that can be fetched. These variations are composed of parameters like quality and width. It is strongly advised to reduce the number of these variations to a maximum of three - small, medium, large. You can do that via the content-policy dialog of the [Image Component.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
+
+If not configured carefully, memory and network consumption can severely impact the performance of your PWA. Also if you intend to precache, say, 50 images, and have 3 widths per image, the user maintaining the site will have to maintain a list of up to 150 entries in the PWA pre-cache section of the page properties.
+
+Adobe also advises you to configure your site to be a PWA after the project use of images has stabilized.
