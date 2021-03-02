@@ -52,4 +52,4 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 * [Magento Websites, Stores & Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF Core Components - Multi store / site configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Using Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Reusing Content: Multi Site Manager and Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [Reusing Content: Multi Site Manager and Live Copy](/help/sites-cloud/administering/msm/overview.md)
