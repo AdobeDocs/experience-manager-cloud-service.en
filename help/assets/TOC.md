@@ -54,6 +54,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + Share and distribute assets {#brand-portal}
   + [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md)
   + [Publish assets to Brand Portal](publish-to-brand-portal.md)
+  + [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Content Fragments {#content-fragments}
   + [Working with Content Fragments](content-fragments/content-fragments.md)
   + [Managing Content Fragments](content-fragments/content-fragments-managing.md)
