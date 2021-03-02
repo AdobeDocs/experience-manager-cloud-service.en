@@ -14,27 +14,9 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Headless Content Management {#headless}
-
-* **[GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
-
-* **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
-
 * **[The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)**: Added support for viewing and editing external SPAs within AEM using.
 
 * **[Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Added ability to upload a standalone single-page application to an AEM instance, add editable sections of content, and enable authoring.
-
-* Enhanced JSON output from GraphQL API, including ability to output rich text in JSON format and locales.
-
-* Support for nesting Content Fragment models to allow creating nested Content Fragment structures, via dedicated Content Fragment Reference data types or Content Fragment references inline in multiline text fields.
-
-* Additional validation rules available in Content Fragment model data types, including "unique", "required" and "translatable".
-
-* Ability tag Content Fragment models, and to allow Content Fragment creation in a folder with policies by tags or paths.
-
-* Usability enhancements in Content Fragment editor, including publish action and display of model a fragment is based on.
-
-* Ability to preview JSON output directly in Content Fragment editor.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
