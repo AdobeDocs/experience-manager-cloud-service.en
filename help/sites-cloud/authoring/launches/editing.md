@@ -16,6 +16,12 @@ When editing the page you will see an indication in the top toolbar, together wi
 
 ![Leave and Navigate launch from Page Editor](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
+>[!NOTE]
+>
+>You are not allowed to move a page within a launch. Attempting this action will trigger a warning message:
+>
+>* Warning: This page is the source of a launch. Moving the page is not permitted.
+
 ### Editing Launch Pages Subject to a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 If your launch is based upon a [Live Copy](/help/sites-cloud/administering/msm/overview.md) then you will:

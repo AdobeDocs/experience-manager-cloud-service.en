@@ -21,27 +21,9 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Headless Content Management {#headless}
-
-* **[GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
-
-* **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
-
 * **[The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)**: Added support for viewing and editing external SPAs within AEM using.
 
 * **[Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Added ability to upload a standalone single-page application to an AEM instance, add editable sections of content, and enable authoring.
-
-* Enhanced JSON output from GraphQL API, including ability to output rich text in JSON format and locales.
-
-* Support for nesting Content Fragment models to allow creating nested Content Fragment structures, via dedicated Content Fragment Reference data types or Content Fragment references inline in multiline text fields.
-
-* Additional validation rules available in Content Fragment model data types, including "unique", "required" and "translatable".
-
-* Ability tag Content Fragment models, and to allow Content Fragment creation in a folder with policies by tags or paths.
-
-* Usability enhancements in Content Fragment editor, including publish action and display of model a fragment is based on.
-
-* Ability to preview JSON output directly in Content Fragment editor.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -69,6 +51,18 @@ Customers using the Connected Assets feature can now easily view and track asset
 * When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available. (CQ-4314101)
 * When multiple assets are selected to update the properties, sometimes either an error occurs or properties of a deselected asset get updated. (CQ-4316532)
 * When attempting to open [!UICONTROL Assets Admin Search Rail], the page remains blank and clicking on [!UICONTROL Edit] > [!UICONTROL Settings] generates an error. (CQ-4315079)
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What is New {#what-is-new-commerce}
+
+* Product Experience Management: Enrich product catalog pages individually with Experience Fragments.
+
+* Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
+
+* Released CIF Venia Reference Site - 2021.02.24 that includes the latest CIF Core Components version v1.8.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) for more details.
+
+* Released CIF Core Components v1.8.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) for more details.
 
 ## Cloud Manager {#cloud-manager}
 
