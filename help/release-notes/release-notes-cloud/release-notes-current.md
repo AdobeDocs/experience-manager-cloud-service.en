@@ -3,9 +3,16 @@ title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Serv
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 ---
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+
+>[!NOTE]
+>From here you can navigate to release notes of previous versions; for example, for those in 2020, 2021 and so on.
+
+>[!NOTE]
+>
+>See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
 
 ## Release Date {#release-date}
 
@@ -14,27 +21,9 @@ The following release (2021.4.0) will be on April 29, 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Headless Content Management {#headless}
-
-* **[GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
-
-* **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
-
 * **[The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)**: Added support for viewing and editing external SPAs within AEM using.
 
 * **[Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Added ability to upload a standalone single-page application to an AEM instance, add editable sections of content, and enable authoring.
-
-* Enhanced JSON output from GraphQL API, including ability to output rich text in JSON format and locales.
-
-* Support for nesting Content Fragment models to allow creating nested Content Fragment structures, via dedicated Content Fragment Reference data types or Content Fragment references inline in multiline text fields.
-
-* Additional validation rules available in Content Fragment model data types, including "unique", "required" and "translatable".
-
-* Ability tag Content Fragment models, and to allow Content Fragment creation in a folder with policies by tags or paths.
-
-* Usability enhancements in Content Fragment editor, including publish action and display of model a fragment is based on.
-
-* Ability to preview JSON output directly in Content Fragment editor.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -46,22 +35,34 @@ The following release (2021.4.0) will be on April 29, 2021.
 
 ## What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Assets can be sourced using [!DNL Experience Manager Assets Brand Portal]. It helps to source assets from the agency users for new marketing campaigns, photoshoots, and projects.
+*  Businesses can now source assets using [!DNL Brand Portal]. Asset sourcing feature leverages [!DNL Brand Portal] to help customers engage with agency users to source assets for new marketing campaigns, photoshoots and projects. See [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+
+* The [!DNL Brand Portal] usage report now displays only the active users. The inactive users are not displayed now. Active users are the ones whose account is assigned to a product profile in the [!DNL Admin Console]. See [[!DNL Brand Portal] reports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+
+* In [!DNL Brand Portal], a new download setting is introduced, that lets you create separate folder for each asset when downloading folders, collection, and so on. See [download settings](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
 * When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
 * When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available. (CQ-4314101)
+* When multiple assets are selected to update the properties, sometimes either an error occurs or properties of a deselected asset get updated. (CQ-4316532)
+* When attempting to open [!UICONTROL Assets Admin Search Rail], the page remains blank and clicking on [!UICONTROL Edit] > [!UICONTROL Settings] generates an error. (CQ-4315079)
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What is New {#what-is-new-commerce}
+
+* Product Experience Management: Enrich product catalog pages individually with Experience Fragments.
+
+* Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
+
+* Released CIF Venia Reference Site - 2021.02.24 that includes the latest CIF Core Components version v1.8.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) for more details.
+
+* Released CIF Core Components v1.8.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) for more details.
 
 ## Cloud Manager {#cloud-manager}
 

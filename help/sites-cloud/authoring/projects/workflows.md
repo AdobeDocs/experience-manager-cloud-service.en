@@ -28,10 +28,7 @@ Depending on which Project template you select, you have certain workflows avail
 
 >[!NOTE]
 >
->&ast; These workflows are not started from the **Workflow** tile in Projects. See Creating Language Copies for Assets.
-<!--
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
--->
+>&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-cloud/administering/translation/managing-projects.md)
 
 The steps for starting and completing workflows are the same no matter which workflow you choose. Only the steps change.
 
@@ -41,7 +38,7 @@ For more information on working with workflows in AEM, see the following:
 
 * [Participating in workflows](/help/sites-cloud/authoring/workflows/participating.md)
 * [Applying workflows to pages](/help/sites-cloud/authoring/workflows/applying.md)
-* Configuring workflows <!--* [Configuring workflows](/help/sites-administering/workflows.md)-->
+* [Configuring workflows](/help/sites-cloud/administering/workflows-administering.md)
 
 This section describes the workflows available for Projects.
 

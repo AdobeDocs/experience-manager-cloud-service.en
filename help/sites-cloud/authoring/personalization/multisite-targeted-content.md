@@ -9,10 +9,7 @@ If you need to manage targeted content, such as activities, experiences, and off
 
 >[!NOTE]
 >
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with Multi Site Manager and the Adobe Target integration with AEM.
-<!--
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
--->
+>Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-cloud/administering/msm/overview.md) and the [Adobe Target integration](/help/sites-cloud/integrating/integrating-adobe-target.md) with AEM.
 
 This document describes the following:
 
@@ -100,7 +97,7 @@ After refreshing the tab, the Canadian site changes to the new image without any
 
 ![Changing versions](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-The marketer would like to roll out these changes to the European region and rolls out the live copy by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout). <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-cloud/administering/msm/creating-live-copies.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).
 
 ![Rollout live copy](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -179,9 +176,9 @@ To create an area as a livecopy:
 
 1. In the **Rollout Configs** drop-down menu, select the appropriate configuration.
 
-   See [Installed Rollout Configurations](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) for descriptions of each option.
+   See [Installed Rollout Configurations](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations) for descriptions of each option.
 
-   See [Creating and Synchronizing Live Copies](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) for more information on live copies.
+   See [Creating and Synchronizing Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md) for more information on live copies.
 
    >[!NOTE]
    >
