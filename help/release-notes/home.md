@@ -7,7 +7,7 @@ description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2021.01.0 |
+| Version | 2021.02.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 

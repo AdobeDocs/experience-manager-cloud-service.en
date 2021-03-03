@@ -21,13 +21,12 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 >[!NOTE]
 >
->The following list of features require that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
+>The following list of features require you to use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
 >
 >* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
 >* [Cache invalidation](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink protection](/help/assets/dynamic-media/hotlink-protection.md)
 >* [HTTP/2 delivery of content](/help/assets/dynamic-media/http2faq.md)
->* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](/help/assets/dynamic-media/launch.md)
 >* URL redirect at the CDN level
 >* Akamai ChinaCDN (for optimal delivery in China)
 
@@ -143,7 +142,7 @@ See also [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 1. On the **[!UICONTROL DMSETUP]** page, review the configuration details that describe the failure. In particular, take note of any error messages or error codes. Contact Adobe Customer Care with this information.
 
-   ![Dynamic Media Setup page](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![Dynamic Media Set up page](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Changing the password to Dynamic Media {#change-dm-password}
 
