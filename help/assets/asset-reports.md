@@ -14,7 +14,7 @@ The [!DNL Assets] reporting framework uses [!DNL Sling] jobs to asynchronously p
 
 The report management interface is intuitive and includes fine-grained options and controls to access archived reports and view report run statuses (success, failed, and queued).
 
-When a report is generated, you are notified by <!-- through an email (optional) and --> an inbox notification. You can view, download, or delete a report from the report listing page, where all previously generated reports are displayed.
+When a report is generated, you are notified via <!-- through an email (optional) and --> an inbox notification. You can view, download, or delete a report from the report listing page, where all previously generated reports are displayed.
 
 ## Generate reports {#generate-reports}
 
@@ -49,7 +49,7 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
    >[!NOTE]
    >
-   >By default, the Content Fragments and link shares are included in the Asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
 
    >[!NOTE]
    >
@@ -59,9 +59,7 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
    ![Page to add report details](assets/report_configuration.png)
 
-   Choose the date range for your report.
-
-   You can choose to generate the report now or at a future date and time.
+   Choose the date range for your report. You can choose to generate the report now or at a future date and time.
 
    >[!NOTE]
    >
@@ -102,7 +100,7 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
-## Add custom columns {#add-custom-columns}
+## Add custom columns to reports {#add-custom-columns}
 
 You can add custom columns to the following reports to display more data for your custom requirements:
 
@@ -121,9 +119,9 @@ To add custom columns to these reports, follow these steps:
 
 1. From the **[!UICONTROL Create Report]** page, choose a report to create. Click **[!UICONTROL Next]**.
 
-1. Configure the report details such as title, description, thumbnail, folder path, and date range as applicable. Click **[!UICONTROL Next]**
+1. Configure the report details such as title, description, thumbnail, folder path, and date range as applicable. Click **[!UICONTROL Next]**.
 
-1. To display a custom column, specify the name of the column under **[!UICONTROL Custom Columns]**.
+1. Select the applicable information from the list of **[!UICONTROL Default Columns]**. To display a custom column, specify the name of the column under **[!UICONTROL Custom Columns]**.
 
    ![Specify name for custom column of report](assets/custom_columns-1.png)
 
@@ -147,6 +145,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
+## Troubleshooting information and tips {#tips-troubleshoot}
 
 * If the [!UICONTROL Disk Usage Report] does not generate and if you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and generate the report again.
