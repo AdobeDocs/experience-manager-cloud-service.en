@@ -119,10 +119,11 @@ To add custom columns to these reports, follow these steps:
 1. In the [!DNL Manager interface], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
-1. Configure report details such as title, description, thumbnail, folder path, and date range as applicable.
+1. From the **[!UICONTROL Create Report]** page, choose a report to create. Click **[!UICONTROL Next]**.
 
-1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
+1. Configure the report details such as title, description, thumbnail, folder path, and date range as applicable. Click **[!UICONTROL Next]**
+
+1. To display a custom column, specify the name of the column under **[!UICONTROL Custom Columns]**.
 
    ![Specify name for custom column of report](assets/custom_columns-1.png)
 
@@ -130,9 +131,9 @@ To add custom columns to these reports, follow these steps:
 
    ![Map the property path from paths in jcr:content](assets/property_picker.png)
 
-   To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
+   To add more custom columns, click **[!UICONTROL Add]** and repeat the above steps.
 
-1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
+1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that the report generation is initiated.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -148,4 +149,4 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
 
-* If the Disk Usage Report does not generate and you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and then generate the report again.
+* If the [!UICONTROL Disk Usage Report] does not generate and if you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and generate the report again.
