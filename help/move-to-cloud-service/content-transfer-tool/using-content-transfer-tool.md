@@ -170,7 +170,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. Once the ingestion is complete, the status in **PUBLISH INGESTION** field updates to **FINISHED**.
