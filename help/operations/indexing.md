@@ -31,14 +31,6 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Limitations: currently, index management on AEM as a Cloud Service is only supported for indexes of type lucene.
 
-<!-- ## Sizing Considerations {#sizing-considerations}
-
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
-
-AS NOTE: the above is internal for now.
-
--->
-
 ## How to Use {#how-to-use}
 
 Defining indexes can comprise of the 3 use cases:
@@ -56,8 +48,6 @@ You need to prepare a new index definition package that contains the actual inde
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 which then needs to go under `ui.apps/src/main/content/jcr_root`. Sub root folders are not supported as of now.
-
-<!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
 The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
