@@ -58,16 +58,23 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. The console below appears when you create the first migration set. Click on **Create Migration Set** to create a new migration set. 
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+   
    
    >[!NOTE]
    >If you have existing migration sets, the console will display the list of existing migration sets with their current status.
 
-1. Populate the fields in **Content Migrations Set details** screen, as described below.
+   Additionally, click on **Create User Mapping Config** to access the [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. Populate the fields in **Content Migration Set** screen, as described below.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >Select **Include Mapping from IMS Users and Groups**, as highlighted in the figure above. Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
    
 
    1. **Name**: Enter the name of the migration set.
@@ -112,7 +119,6 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 1. Select a migration set from overview page and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the container name or the service URL. 
 
-   
 
 ### Extraction Process in Content Transfer {#extraction-process}
 
@@ -166,6 +172,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. Once the ingestion is complete, the status in **PUBLISH INGESTION** field updates to **FINISHED**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -180,13 +187,15 @@ The Content Transfer Tool has a feature that supports differential content *top-
 
 Once the ingestion process is complete, you can use delta content, by using the top-up ingestion method. Follow the steps below:
 
-1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. The **Migration Set Ingestion** dialog box displays. 
+1. Navigate to the *Overview* page and select the migration set for which you want to perform the top-up ingestion. Click **Ingest** to start the top-up extraction. The **Migration Set ingestion** dialog box displays. 
+
+    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
    >
    >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity.
-   >
-   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   Additionally, refer to refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) to learn how to add to the Customer Care ticket.
 
 ### Viewing Logs for a Migration Set {#viewing-logs-migration-set}
 
