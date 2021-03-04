@@ -13,6 +13,8 @@ Follow the section below to understand the important considerations while runnin
 
 * Java needs to be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
 
+* It is recommended to uninstall older versions of the Content Transfer Tool when installing the version 1.3.0 because there was a major architectural change in the tool. With 1.3.0, you should also create new migration sets and re-run extraction and ingestion on the new migration sets.
+
 * The Content Transfer Tool can be used with the following types of Data Store: File Data Store, S3 Data Store, Shared S3 Data Store, and Azure Blob Store Data Store.
 
 * If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
@@ -94,7 +96,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
 
 1. Click **Save** after you populate all the fields in the **Content Migrations Set details** screen.
 
