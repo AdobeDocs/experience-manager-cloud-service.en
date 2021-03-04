@@ -50,9 +50,13 @@ The Content Transfer Tool can be downloaded as a zip file from the Software Dist
 
 Follow this section to learn how to use Content Transfer Tool to migrate the content to AEM as a Cloud Service (Author/Publish):
 
-1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Transfer**.
+1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Content Migration**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+
+1. Select the **Content Transfer** option from **Content Migration** wizard.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
 1. The console below appears when you create the first migration set. Click on **Create Migration Set** to create a new migration set. 
 
