@@ -193,7 +193,7 @@ Once the ingestion process is complete, you can use delta content, by using the 
    >
    >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity.
 
-   Additionally, refer to refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) to learn how to add to the Customer Care ticket.
+   Additionally, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) to learn how to add to the Customer Care ticket.
 
 ### Viewing Logs for a Migration Set {#viewing-logs-migration-set}
 
