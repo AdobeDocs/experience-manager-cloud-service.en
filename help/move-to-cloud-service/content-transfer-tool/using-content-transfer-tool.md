@@ -92,7 +92,8 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
       1. **Include Version**: Select as required.
 
-      1. **Include Mapping from IMS Users and Groups**: Select the option. Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+      1. **Include Mapping from IMS Users and Groups**: Select the option to include mapping from IMS Users and Groups. 
+      Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 
       1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
 
