@@ -92,7 +92,8 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
       1. **Include Version**: Select as required.
 
-      1. **Include Mapping from IMS Users and Groups**: Select the option. Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+      1. **Include Mapping from IMS Users and Groups**: Select the option to include mapping from IMS Users and Groups. 
+      Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 
       1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
 
@@ -103,7 +104,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
          >* `/home`
          >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
 
-1. Click **Save** after you populate all the fields in the **Content Migrations Set details** screen.
+1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
 1. You will view your migration set in the *Overview* page.
 
@@ -163,13 +164,14 @@ Once the extraction process is complete, you can transfer delta content, by usin
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
 
-1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. For demonstration purposes, the option **Ingest content to Author instance** is disabled. It is possible to ingest content to Author and Publish at the same time.  
+1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. It is possible to ingest content to Author and Publish at the same time.
 
    >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
+   Additionally, click on **Customer Care** to log a ticket, as shown in the figure above. Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) to learn more.
 
 1. Once the ingestion is complete, the status in **PUBLISH INGESTION** field updates to **FINISHED**.
 
@@ -190,10 +192,8 @@ Once the ingestion process is complete, you can use delta content, by using the 
     ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
-   >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity.
+   >You should disable the **Wipe existing content on Cloud instance before ingestion** option, to prevent deleting the existing content from the previous ingestion activity. Additionally, click on **Customer Care** to log a ticket, as shown in the preceding figure.
 
-   Additionally, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) to learn how to add to the Customer Care ticket.
 
 ### Viewing Logs for a Migration Set {#viewing-logs-migration-set}
 
