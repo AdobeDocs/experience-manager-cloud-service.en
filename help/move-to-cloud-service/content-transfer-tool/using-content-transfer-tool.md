@@ -104,7 +104,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
          >* `/home`
          >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
 
-1. Click **Save** after you populate all the fields in the **Content Migrations Set details** screen.
+1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
 1. You will view your migration set in the *Overview* page.
 
