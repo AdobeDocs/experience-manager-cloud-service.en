@@ -10,6 +10,12 @@ When deciding [what level of integration](/help/implementing/developing/headful-
 
 The RemotePage component fetches all the necessary assets from the application's generated `asset-manifest.json` and uses this for rendering the SPA within AEM.
 
+* The RemotePage allows you to inject the scripts and stylesheets of a SPA in the body of an AEM Page component.
+* The Virtual Frontend Components allows to mark sections as editable in AEM SPA Editor.
+* Together, a SPA hosted on a different domain can be made editable in AEM.
+
+See the article [Editing an External SPA within AEM](editing-external-spa.md) for more details on editable, external SPAs in AEM.
+
 ## Requirements {#requirements}
 
 * Enable CORS in development
