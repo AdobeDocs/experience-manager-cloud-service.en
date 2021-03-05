@@ -1,0 +1,7 @@
+"filename","title","description","feature","topic","role","level"
+"./metadata.md","","this is the metadata required for AEMaaCS documentation pages","","","",""
+"./help/connectors/TOC.md","","","","","",""
+"./help/connectors/home.md","Adobe Experience Manager as a Cloud Service Connectors","Adobe Experience Manager as a Cloud Service Connectors self-help resources and documentation links","","","",""
+"help/connectors/implement.md","Implementing an AEM Connector","Implementing an AEM Connector","","","",""
+"help/connectors/submit.md","Submitting an AEM Connector","Submitting an AEM Connector","","","",""
+"help/connectors/maintain.md","Maintaining an AEM Connector","Maintaining an AEM Connector","","","",""
