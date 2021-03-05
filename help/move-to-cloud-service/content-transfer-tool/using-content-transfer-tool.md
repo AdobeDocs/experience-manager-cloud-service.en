@@ -69,14 +69,10 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
    Additionally, click on **Create User Mapping Config** to access the [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-1. Populate the fields in **Content Migration Set** screen, as described below.
+1. Populate the fields in **Create Migration Set** screen, as described below.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >Select **Include Mapping from IMS Users and Groups**, as highlighted in the figure above. Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
    
-
    1. **Name**: Enter the name of the migration set.
       >[!NOTE]
       >No special characters are allowed for the migration set name.
@@ -95,6 +91,8 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Parameters**: Select the following parameters to create the migration set:
 
       1. **Include Version**: Select as required.
+
+      1. **Include Mapping from IMS Users and Groups**: Select the option. Refer to [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
 
       1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
 
@@ -170,7 +168,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. Once the ingestion is complete, the status in **PUBLISH INGESTION** field updates to **FINISHED**.
