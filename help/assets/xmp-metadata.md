@@ -65,23 +65,34 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 
 ## XMP writeback to renditions {#xmp-writeback-to-renditions}
 
-This XMP writeback feature in Adobe Experience Manager (AEM) Assets replicates asset metadata changes to the renditions of the asset.
-
-When you change the metadata for an asset from within AEM Assets or while uploading the asset, changes are initially stored within the asset node in CRXDE.
-
-The XMP writeback feature propagates the metadata changes to all or specific renditions of the asset.
+This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. When you change the metadata for an asset from within [!DNL Assets] or while uploading the asset, the changes are initially stored within the asset node in the repository. The XMP writeback feature propagates the metadata changes to all or specific renditions of the asset.
 
 Consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
 
 ![metadata](assets/metadata.png)
 
-In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** property in the `dc:title` parameter for the asset metadata stored in the asset hierarchy.
+In this case, [!DNL Assets] saves the changes to the **[!UICONTROL Title]** property in the `dc:title` parameter for the asset metadata stored in the asset hierarchy.
 
 ![metadata_stored](assets/metadata_stored.png)
 
-However, AEM Assets does not automatically propagate any metadata changes to the renditions of an asset.
+However, [!DNL Assets] does not automatically propagate any metadata changes to the renditions of an asset.
 
-The XMP writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. However, the changes are not stored under the metadata node in the asset hierarchy. Instead, this feature embeds the changes in the binary files for the renditions.
+The XMP writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. However, the changes are not stored under the metadata node in the asset hierarchy. Instead, this feature embeds the changes in the binary files of the renditions.
+
+The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback).
+
+### Enable XMP writeback {#enable-xmp-writeback}
+
+[!UICONTROL DAM Metadata Writeback] workflow is used to writeback the metadata of an asset. To enable writeback, follow these steps:
+
+1. As an administrator, access **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
+1. Select the [!UICONTROL Launcher] for which the **[!UICONTROL Workflow]** column displays **[!UICONTROL DAM MetaData Writeback]**. Click **[!UICONTROL Properties]** from the toolbar.
+
+   ![Select DAM metadata writeback launcher to mModify its properties and activate it](assets/launcher-properties-metadata-writeback1.png)
+
+1. Select **[!UICONTROL Activate]** on the [!UICONTROL Launcher Properties] page. Click **[!UICONTROL Save & Close]**.
+
+To apply this workflow to an asset just one-time, apply the workflow [!UICONTROL DAM Metadata Writeback] workflow from the left rail. To apply the workflow to the uploaded assets, add the workflow to a post-processing profile.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
@@ -118,7 +129,3 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 -->
-
->[!MORELIKETHIS]
->
->* [XMP specification by Adobe](https://www.adobe.com/devnet/xmp.html)
