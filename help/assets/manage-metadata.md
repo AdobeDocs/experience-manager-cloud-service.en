@@ -119,11 +119,11 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
    >When you select multiple assets, the lowest common parent form is selected for the assets. In other words, the [!UICONTROL Properties] page only displays metadata fields that are common across the [!UICONTROL Properties] pages of all the individual assets.
 
 1. Modify the metadata properties for selected assets under the various tabs.
-1. To view the metadata editor for a specific asset, deselect the remaining assets in the list. The metadata editor fields are populated with the metadata for the particular asset.
+1. To view the metadata editor for a specific asset, cancel the selection of the remaining assets in the list. The metadata editor fields are populated with the metadata for the particular asset.
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
+   >* In the [!UICONTROL Properties] page, you can remove assets from the asset list by canceling the selection. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
 
 1. To select a different metadata schema for the assets, tap/click **[!UICONTROL Settings]** from the toolbar, and select the desired schema. Save the changes.
