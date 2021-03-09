@@ -47,6 +47,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [UnApplying an IP Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)  
     + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
     + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+  + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Managing your Code {#managing-code}
   + [Maven Project Version Handling](cloud-manager/project-version-handling.md)
   + [Accessing Git](cloud-manager/accessing-git.md)
