@@ -130,17 +130,13 @@ Once Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLucen
 | /oak:index/cqPageLucene  | Yes  | Yes  | No  |
 | /oak:index/cqPageLucene-2  | Yes  | No  | Yes  |
 
-### Limitations {#limitations}
+### Current Limitations {#current-limitations}
 
 Index management is currently only supported for indexes of type `lucene`.
 
-### Removing an Index {#removing-an-index}
-
-If an index is to be removed in a later version of the application, you can define an empty index (an index with no data to index), with a new name. For example purposes, you can name it `/oak:index/acme.product-custom-3`. This replaces the index `/oak:index/acme.product-custom-2`. Once `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then also be removed.
-
 ### Adding an Index {#adding-an-index}
 
-To add an index named "/oak:index/acme.product-custom-1" to be used in a new version of the application and later, the index needs to be configured as follows:
+To add an index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index needs to be configured as follows:
 
 `acme.product-1-custom-1`
 
@@ -150,7 +146,7 @@ As above, this ensures the index is only used by the new version of the applicat
 
 ### Changing an Index {#changing-an-index}
 
-When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index "/oak:index/acme.product-custom-1" is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
+When an existing index is changed, a new index needs to be added with the changed index definition. For example, consider the existing index `/oak:index/acme.product-custom-1` is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
 
 The old version of the application uses the following configuration:
 
@@ -160,6 +156,31 @@ The new version of the application uses the following (changed) configuration:
 
 `/oak:index/acme.product-custom-2`
 
-### Index-Availability/Fault-Tolerance {#index-availability}
+>[!NOTE]
+>
+>Index definitions on AEm as a Cloud Service may not fully match the index definitions on a local development instance. The development instance does not have a Tika configuration, while AEM as a Cloud Service instances do have one. If you customize an index with a Tika configuration, please retain the Tika configuration.
+
+### Undoing a Change {#undoing-a-change}
+
+Sometimes, a change in an index definition needs to be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetAssetLucene-8-custom-3` was made by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetAssetLucene-8-custom-2`. To do that, you need to add a new index called `damAssetAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetAssetLucene-8-custom-2`.
+
+### Removing an Index {#removing-an-index}
+
+The following only applies to custom indexes. Product indexes may not be removed as they are used by AEM.
+
+If an index is to be removed in a later version of the application, you can define an empty index (an empty index that is never used, and does not contain any data), with a new name. For the purpose of this example, you can name it `/oak:index/acme.product-custom-3`. This replaces the index `/oak:index/acme.product-custom-2`. Once `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then also be removed. An example of such an empty index is:
+
+```
+{ "/oak:index/acme.product-custom-3": {
+    "jcr:primaryType": "nam:oak:QueryIndexDefinition",
+    "compatVersion": "2",
+    "includedPaths": "/dummy", "queryPaths": "/dummy",
+    "type": "lucene", "async": "async",
+    "indexRules": { "rep:root": { "properties": {
+          "dummy": { "propertyIndex": true, "name": "dummy" }
+} } } } }
+```
+
+### Index Availability and Fault Tolerance {#index-availability-and-fault-tolerance}
 
 It is recommended to create duplicate indexes for features that are extremely important (keeping in mind the naming convention for indexes mentioned above), so in the case of index corruption or any such unforeseen event there is a fallback index available to respond to queries.
