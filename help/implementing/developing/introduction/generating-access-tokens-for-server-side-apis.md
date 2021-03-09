@@ -134,4 +134,11 @@ Make the appropriate server-to-server API calls from the non-AEM application to 
 
 ## Service Credentials Revocation {#service-credentials-revocation}
 
-Please submit a request to customer support if the JWT bearer token needs to be revoked.
+If the credentials need to be revoked, you need to submit a request to customer support using these steps:
+
+1. Disable the technical account user for the Adobe Admin Console in the User Interface:
+   * In Cloud Manager, press the **...** button next to your environment. This will open the product profiles page
+   * Now, click on the **AEM Users** profile, to show a list of the users
+   * Click the **API Credentials** tab, then find the appropriate technical account user and delete it
+2. Contact customer support, and request that the service credentials for that specific environment are deleted
+3. Finally, you can generate the credentials again, as described in this documentation. Also make sure that the new technical account user that is created has the appropriate permissions.

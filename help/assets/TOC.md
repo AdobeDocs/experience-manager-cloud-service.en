@@ -60,6 +60,7 @@ solution: Experience Manager, Experience Manager Assets
 + Share and distribute assets {#brand-portal}
   + [Configure [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
   + [Publish assets to [!DNL Brand Portal]](publish-to-brand-portal.md)
+  + [Publish assets from [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Content Fragments {#content-fragments}
   + [Working with Content Fragments](content-fragments/content-fragments.md)
   + [Headless Delivery with Content Fragments and GraphQL](content-fragments/content-fragments-graphql.md)

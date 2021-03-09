@@ -14,7 +14,7 @@ The [!DNL Assets] reporting framework uses [!DNL Sling] jobs to asynchronously p
 
 The report management interface is intuitive and includes fine-grained options and controls to access archived reports and view report run statuses (success, failed, and queued).
 
-When a report is generated, you are notified by <!-- through an email (optional) and --> an inbox notification. You can view, download, or delete a report from the report listing page, where all previously generated reports are displayed.
+When a report is generated, you are notified via <!-- through an email (optional) and --> an inbox notification. You can view, download, or delete a report from the report listing page, where all previously generated reports are displayed.
 
 ## Generate reports {#generate-reports}
 
@@ -49,7 +49,7 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
    >[!NOTE]
    >
-   >By default, the Content Fragments and link shares are included in the Asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
 
    >[!NOTE]
    >
@@ -59,9 +59,7 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
    ![Page to add report details](assets/report_configuration.png)
 
-   Choose the date range for your report.
-
-   You can choose to generate the report now or at a future date and time.
+   Choose the date range for your report. You can choose to generate the report now or at a future date and time.
 
    >[!NOTE]
    >
@@ -87,13 +85,13 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 
-1. In the **[!UICONTROL Configure Columns]** page, some columns are selected to appear in the report by default. You can select more columns. Deselect a selected column to exclude it in the report.
+1. In the **[!UICONTROL Configure Columns]** page, some columns are selected to appear in the report by default. You can select more columns. Cancel the selection of a column to exclude it in the report.
 
-   ![Select or deselect report columns](assets/configure_columns.png)
+   ![Select or cancel selection of report columns](assets/configure_columns.png)
 
    To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Alternatively, add it through property path picker.
 
-   ![Select or deselect report columns](assets/custom_columns.png)
+   ![Select or cancel selection of report columns](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
 1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
@@ -102,7 +100,7 @@ When a report is generated, you are notified by <!-- through an email (optional)
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
-## Add custom columns {#add-custom-columns}
+## Add custom columns to reports {#add-custom-columns}
 
 You can add custom columns to the following reports to display more data for your custom requirements:
 
@@ -119,10 +117,11 @@ To add custom columns to these reports, follow these steps:
 1. In the [!DNL Manager interface], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
-1. Configure report details such as title, description, thumbnail, folder path, and date range as applicable.
+1. From the **[!UICONTROL Create Report]** page, choose a report to create. Click **[!UICONTROL Next]**.
 
-1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
+1. Configure the report details such as title, description, thumbnail, folder path, and date range as applicable. Click **[!UICONTROL Next]**.
+
+1. Select the applicable information from the list of **[!UICONTROL Default Columns]**. To display a custom column, specify the name of the column under **[!UICONTROL Custom Columns]**.
 
    ![Specify name for custom column of report](assets/custom_columns-1.png)
 
@@ -130,9 +129,9 @@ To add custom columns to these reports, follow these steps:
 
    ![Map the property path from paths in jcr:content](assets/property_picker.png)
 
-   To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
+   To add more custom columns, click **[!UICONTROL Add]** and repeat the above steps.
 
-1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
+1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that the report generation is initiated.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -146,6 +145,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
+## Troubleshooting information and tips {#tips-troubleshoot}
 
-* If the Disk Usage Report does not generate and you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and then generate the report again.
+* If the [!UICONTROL Disk Usage Report] does not generate and if you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and generate the report again.

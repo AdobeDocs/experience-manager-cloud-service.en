@@ -9,7 +9,7 @@ Create a launch to enable the updating of a new version of existing web pages fo
 
 * The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
 * The child pages of the source page are included in the launch by default. You can use only the source page if desired.
-* By default, Live Copy automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* By default, [Live Copy](/help/sites-cloud/administering/msm/overview.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.
 
 Optionally, you can specify the **Launch Date** (and time) to define when the launch pages are to be promoted and activated. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
 
@@ -75,7 +75,7 @@ You can create a launch from either the Sites or Launches console:
     * **Launch Title**: The name of the Launch. The name should be meaningful for authors.
     * **with existing content**: the original content will be used to create the launch.
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
-    * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a live copy. By default, this option is selected. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+    * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [Live Copy](/help/sites-cloud/administering/msm/overview.md). By default, this option is selected.-->
     * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Launch properties](/help/sites-cloud/authoring/assets/launches-properties.png)

@@ -16,9 +16,15 @@ When editing the page you will see an indication in the top toolbar, together wi
 
 ![Leave and Navigate launch from Page Editor](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
+>[!NOTE]
+>
+>You are not allowed to move a page within a launch. Attempting this action will trigger a warning message:
+>
+>* Warning: This page is the source of a launch. Moving the page is not permitted.
+
 ### Editing Launch Pages Subject to a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-If your launch is based upon a live copy then you will: <!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+If your launch is based upon a [Live Copy](/help/sites-cloud/administering/msm/overview.md) then you will:
 
 * See lock symbols (small padlocks) when you edit a component (content and/or properties).
 * See the **Live Copy** tab in **Page Properties**
@@ -30,7 +36,7 @@ You can make changes in the same way as you can edit a standard live copy; for e
 * Clicking on a closed padlock will break this synchronization and allow you to make new updates to the content in your launch. Once unlocked (open padlock) your changes will not be overwritten by any changes made at the same location within the source branch.
 * **Suspend** (and **Resume**) inheritance for a specific page.
 
-See Changing Live Copy Content for further information. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+See [Changing Live Copy Content](/help/sites-cloud/administering/msm/creating-live-copies.md) for further information.
 
 ## Comparing a Launch Page to its Source Page {#comparing-a-launch-page-to-its-source-page}
 

@@ -160,7 +160,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Enable desktop actions to use with desktop app {#desktop-actions}
 
-From within the [!DNL Assets] user interface in a browser, you can explore the asset locations or check-out and open the asset for editing in your desktop application. These options are called desktop actions and to enable it, see [enable desktop actions in AEM web interface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+From within the [!DNL Assets] user interface in a browser, you can explore the asset locations or check-out and open the asset for editing in your desktop application. These options are called desktop actions and to enable it, see [enable desktop actions in [!DNL Assets] web interface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Enable desktop actions to use as shortcut when working with desktop app](assets/enable_desktop_actions.png)
 
@@ -174,6 +174,8 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 
 * Asset folders or collections that contain a whitespace in their name may not get shared.
 * If users cannot download the shared assets, check with your AEM administrator what the [download limits](#maxdatasize) are.
+* For a user to preview a video that is shared using link sharing, the video must have a static video rendition available at `/jcr:content/renditions` location in the video's node in the repository. The preview is not dependent on the availability of a [!DNL Dynamic Media] rendition.
+* When downloading a video asset via link share, the [!DNL Dynamic Media] renditions are not included in the downloaded archive.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 

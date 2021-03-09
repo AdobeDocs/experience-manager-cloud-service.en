@@ -134,13 +134,6 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 
 >[!CAUTION]
 >
->In certain releases there is currently a known issue with the endpoint:
->
->* Depending on the release used, the entry `cq:graphql` is seen in the **Sites** console; at the top level. 
->  This must not be used.
-
->[!CAUTION]
->
 >The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
 >You can set up ACLs, appropriate to your use case, on the endpoint. 
@@ -259,20 +252,20 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
    ![Content Fragment Model for use with GraphQL](assets/cfm-graphqlapi-01.png "Content Fragment Model for use with GraphQL")
 
-1. The corresponding GraphQL schema (output from GraphiQL automatic documentationi):
+1. The corresponding GraphQL schema (output from GraphiQL automatic documentation):
    ![GraphQL Schema based on Content Fragment Model](assets/cfm-graphqlapi-02.png "GraphQL Schema based on Content Fragment Model")
 
    This shows that the generated type `ArticleModel` contains several [fields](#fields). 
    
    * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
 
-   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceeding `_` to distinguish between what has been defined by the user and what has been auto-generated.
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
 1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
-The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stablity.
+The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
 
 So for example, if you:
 
@@ -312,8 +305,8 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
-| Single Line Text | String, [String] | Used for simple strings such as author names, location names, etc |
-| Multi Line Text | String | Used for outputing text such as the body of an article |
+| Single Line Text | String, [String] | Used for simple strings such as author names, location names, etc. |
+| Multi Line Text | String | Used for outputting text such as the body of an article |
 | Number | Float, [Float] | Used to display floating point number and regular numbers |
 | Boolean | Boolean | Used to display checkboxes → simple true/false statements |
 | Date And Time | Calendar | Used to display date and time in an ISO 8086 format |
