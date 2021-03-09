@@ -73,7 +73,7 @@ A Smart Collection uses a search criteria to dynamically populate assets. You ca
 
    >[!NOTE]
    >
-   >If you select **[!UICONTROL Public]**, the smart collection becomes available to everyone with the Owner role after you create it. If you deselect the **[!UICONTROL Public]** option, the DAM user group is no longer associated with the smart collection.
+   >If you select **[!UICONTROL Public]**, the smart collection becomes available to everyone with the Owner role after you create it. If you cancel the **[!UICONTROL Public]** option, the DAM user group is no longer associated with the smart collection.
 
 1. Tap/click **[!UICONTROL Save]** to create the smart collection, and then close the message box to complete the process. The new smart collection is also added to the **[!UICONTROL Saved Searches]** list.
    The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files & Folders]** list. Then, tap/click the **[!UICONTROL Edit Smart Selection]** button.
@@ -188,11 +188,11 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
    >
    >The metadata you add for the selected collections overwrites the previous metadata for these collections, except for tags. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
 
-1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
+1. To view the metadata properties for a specific collection, cancel the selection of the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
 
    >[!NOTE]
    >
-   >* In the collection properties page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. The metadata for collections that you remove is not updated.
+   >* In the collection properties page, you can remove collections from the list of collections by canceling the selection. The collections list has all the collections selected by default. The metadata for collections that you remove is not updated.
    >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
 
 1. Save the changes.
