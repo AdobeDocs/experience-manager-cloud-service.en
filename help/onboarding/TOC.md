@@ -18,7 +18,7 @@ user-guide-description: This guide provides an summary of how to get started wit
   + [Execution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
   + [Post Go-live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Getting Access to AEM in the Cloud {#getting-access}  
-  + [AEM as a Cloud Service: Provisioning Process Overview](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
+  + [Provisioning Process Overview](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
   + [Accessing Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
   + Cloud Service Programs {#cloud-service-programs}
     + [Accessing Programs](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -81,7 +81,8 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Release Notes for 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
     + [Release Notes for 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
     + [Release Notes for 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-  + [Understanding Roles and Responsibilities](getting-access-to-aem-in-cloud/roles-responsibilities.md)
+  + Understanding Roles and Responsibilities(#roles-responsibilities)
+    + [Understanding Roles and Responsibilities](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
   + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)
