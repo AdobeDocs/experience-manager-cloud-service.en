@@ -13,10 +13,11 @@ user-guide-description: This guide provides an summary of how to get started wit
   + [Add Users and Roles](what-is-required/add-users-roles.md)
   + [Role Based Permissions](what-is-required/role-based-permissions.md)
   + [Source Code Repository](what-is-required/source-code-repository.md)
-+ Getting Access to AEM in the Cloud {#getting-access}
++ Getting Access to AEM in the Cloud {#getting-access}  
+  + [Provisioning Process Overview](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
   + [Accessing Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-  + Cloud Service Programs {#cloud-service-programs}
-    + [Accessing Programs](getting-access-to-aem-in-cloud/first-time-login.md)
+  + Accessing Cloud Manager {#cloud-service-programs}
+    + [Cloud Manager Homepage](getting-access-to-aem-in-cloud/first-time-login.md)
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
     + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
     + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
@@ -76,6 +77,8 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Release Notes for 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
     + [Release Notes for 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
     + [Release Notes for 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+  + Understanding Roles and Responsibilities {#getting-access-to-aem-in-cloud}
+    + [Understanding Roles and Responsibilities](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
   + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)
