@@ -107,7 +107,7 @@ The delete option is also available, if you click on **Details** from the **Envi
 
 >[!NOTE]
 >
->This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
+>This feature is not available for Production/Stage environment set in a Production program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
 
 ## Managing Access {#managing-access}
 
