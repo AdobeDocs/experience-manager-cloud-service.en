@@ -23,8 +23,15 @@ user-guide-description: This guide provides an summary of how to get started wit
   + Accessing Cloud Manager {#cloud-service-programs}
     + [Cloud Manager Homepage](getting-access-to-aem-in-cloud/first-time-login.md)
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
-    + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
-    + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
+    + Production Programs {#production-programs}
+      + [Introduction](getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [Creating a Production Program](getting-access-to-aem-in-cloud/creating-production-program.md)
+    + Sandbox Programs {#sandbox-programs}
+      + [Introduction](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + [Creating a Sandbox Program](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [Deleting a Sandbox Program](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [Hibernating and De-hibernating Sandbox Environments](getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
   + Using Cloud Manager {#using-cloud-manager}
     + [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
     + [Configuring your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
