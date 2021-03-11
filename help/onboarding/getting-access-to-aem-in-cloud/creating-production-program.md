@@ -7,9 +7,9 @@ description: Creating a Production Program
 
 A *Production* program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building and testing code with the objective of deploying it to Production.
 
-Follow the steps below to create a regular program: 
+Follow the steps below to create a Production program: 
 
-1. Select **Set up for Production** in the Create Program wizard to create a regular program. User can accept the default program name or edit it before selecting **Continue**.
+1. Select **Set up for Production** in the Create Program wizard to create a Production program. User can accept the default program name or edit it before selecting **Continue**.
 
    ![](assets/create-prod1.png)
 
