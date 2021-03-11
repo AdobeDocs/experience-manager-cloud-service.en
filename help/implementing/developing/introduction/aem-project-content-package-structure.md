@@ -80,6 +80,8 @@ The recommended application deployment structure is as follows:
             + Groups
             + ACLs (permissions)
 
+Some restrictions apply for code packages, for example [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
+
 ### Content Packages
 
 + The `ui.content` package contains all content and configuration. The Content Package, contains all the node definitions not in the `ui.apps` or `ui.config` packages, or in other words, anything not in `/apps` or `/oak:index`. Common elements of the `ui.content` package include, but are not limited to:
