@@ -5,7 +5,12 @@ description: Cloud Manager Homepage
 
 # Cloud Manager Homepage {#first-time-login} 
 
-Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
+To access Cloud Manager:
+
+1. Navigate to [Experience Cloud](https://experience.adobe.com/) using your Adobe ID.
+1. Select **Experience Manager**.
+1. Click on **Launch** from the Cloud Manager card.
+   Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
 
 >[!NOTE]
 >
@@ -13,9 +18,7 @@ Once you have successfully logged in to [!UICONTROL Cloud Manager], you are read
 
 ## Cloud Manager Landing Page {#landing-page}
 
-Once you have successfully logged in to [!UICONTROL Cloud Manager], you will see the landing page as shown in the figure below.
-
-The landing page will show the card for any existing program(s) that are in your Organization.
+Once you have successfully logged in to [!UICONTROL Cloud Manager], the landing page will show the card for any existing program(s) that are in your Organization.
 
 >[!NOTE]
 >
