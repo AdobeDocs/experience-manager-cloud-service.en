@@ -3,14 +3,14 @@ title: Hibernating and De-hibernating Sandbox Environments
 description: Hibernating and De-hibernating Sandbox Environments 
 ---
 
-## Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
+# Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
 
 Sandbox Program environments enter a *hibernation mode* if no activity is detected for a certain period of time.
 
 >[!NOTE]
 >Hibernation is unique to Sandbox Program environments. Regular program environments do not hibernate.
 
-### Hibernation {#hibernation-introduction}
+## Hibernation {#hibernation-introduction}
 
 Hibernation can occur either automatically or manually. It may take up to a few minutes for Sandbox Program environments to enter a *hibernation mode*. Data is preserved during hibernation.
 
@@ -23,7 +23,7 @@ Hibernation is categorized as:
 >[!CAUTION]
 >In the latest release, linking to the Developer Console directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
 
-#### Using Manual Hibernation {#using-manual-hibernation}
+### Using Manual Hibernation {#using-manual-hibernation}
 
 You can manually hibernate your Sandbox Program from the Developer Console in two different ways, using:
 
@@ -59,7 +59,7 @@ Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-e
    ![](assets/hibernate-4.png)
 
 
-### De-hibernation {#de-hibernation-introduction}
+## De-hibernation {#de-hibernation-introduction}
 
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
@@ -96,17 +96,17 @@ Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-e
  
    ![](assets/de-hibernation-img4.png)
 
-#### Permissions to De-hibernate {#permissions-de-hibernate}
+### Permissions to De-hibernate {#permissions-de-hibernate}
 
 Any user with a product profile giving them access to AEM as a Cloud Service should be able to access the **Developer Console**, allowing them to de-hibernate the environment. 
 
-#### Accessing a Hibernated Environment {#accessing-hibernated-environment}
+## Accessing a Hibernated Environment {#accessing-hibernated-environment}
 
 When making any browser requests against either the author or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as shown in the figure below:
 
 ![](assets/de-hibernation-img5.png)
 
-### Important Considerations {#important-considerations}
+## Important Considerations {#important-considerations}
 
 Few key considerations related to hibernated and de-hibernated environments are:
 
