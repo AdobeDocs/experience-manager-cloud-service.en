@@ -16,8 +16,8 @@ user-guide-description: This guide provides an summary of how to get started wit
 + Getting Access to AEM in the Cloud {#getting-access}  
   + [Provisioning Process Overview](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
   + [Accessing Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-  + Cloud Service Programs {#cloud-service-programs}
-    + [Accessing Programs](getting-access-to-aem-in-cloud/first-time-login.md)
+  + Accessing Cloud Manager {#cloud-service-programs}
+    + [Cloud Manager Homepage](getting-access-to-aem-in-cloud/first-time-login.md)
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
     + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
     + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
