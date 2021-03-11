@@ -10,7 +10,6 @@ user-guide-description: This guide provides an summary of how to get started wit
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
 + Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Access Rights Granted](what-is-required/access-rights-granted.md)
-  + [Add Users and Roles](what-is-required/add-users-roles.md)
   + [Role Based Permissions](what-is-required/role-based-permissions.md)
   + [Source Code Repository](what-is-required/source-code-repository.md)
 + Getting Access to AEM in the Cloud {#getting-access}  
