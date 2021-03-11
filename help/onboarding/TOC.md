@@ -8,19 +8,26 @@ user-guide-description: This guide provides an summary of how to get started wit
 # Onboarding {#onboarding}
 
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
-+ What is Required {#what-is-required}
++ Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Access Rights Granted](what-is-required/access-rights-granted.md)
   + [Add Users and Roles](what-is-required/add-users-roles.md)
   + [Role Based Permissions](what-is-required/role-based-permissions.md)
   + [Source Code Repository](what-is-required/source-code-repository.md)
 + Getting Access to AEM in the Cloud {#getting-access}  
-  + [Provisioning Process Overview](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
-  + [Accessing Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
+  + [Getting Access to Cloud Manager for AEM as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
   + Accessing Cloud Manager {#cloud-service-programs}
     + [Cloud Manager Homepage](getting-access-to-aem-in-cloud/first-time-login.md)
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
-    + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
-    + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
+    + Production Programs {#production-programs}
+      + [Introduction](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [Creating a Production Program](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Editing a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+    + Sandbox Programs {#sandbox-programs}
+      + [Introduction](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [Creating a Sandbox Program](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [Editing a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [Deleting a Sandbox Program](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [Hibernating and De-hibernating Sandbox Environments](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
   + Using Cloud Manager {#using-cloud-manager}
     + [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
     + [Configuring your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
@@ -64,7 +71,8 @@ user-guide-description: This guide provides an summary of how to get started wit
     + [Deleting an IP Allow List](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
     + [Checking an IP Allow List Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.2.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.3.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Release Notes for 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
     + [Release Notes for 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
     + [Release Notes for 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
     + [Release Notes for 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)

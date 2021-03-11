@@ -1,66 +1,16 @@
 ---
-title: Sandbox Programs - Cloud Service
-description: Sandbox Programs - Cloud Service
+title: Hibernating and De-hibernating Sandbox Environments 
+description: Hibernating and De-hibernating Sandbox Environments 
 ---
 
-# Sandbox Programs {#sandbox-programs}
-
-## Introduction {#introduction}
-
-A Sandbox program is one of the two types of programs available in AEM Cloud Service, the other being a Regular program. 
-
-A Sandbox is typically created to serve the purposes of training, running demos, enablement, or Proof of Concept (POC)s. They are not meant to carry live traffic. They are not subject to the [AEM as a Cloud Service Commitments](https://www.adobe.com/legal/service-commitments.html).
-
-The environments created in a Sandbox are not configured for auto-scaling. Therefore, they are not suitable for performance or load testing.
-
-Sandbox programs include Sites and Assets and are auto-populated with a Git repository, a Development environment, and a non-production pipeline.  The Git repository is populated with a sample project based on the AEM Project archetype.
-
-Refer to [Understanding Programs and Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) to learn more about the Program Types.
-
-### Attributes of Sandbox Programs {#attributes-sandbox}
-
-Sandbox Programs have the following attributes:
-
-1. **Program Creation:** The Sandbox program creation includes automatic:
-   * setup of project with sample code and content
-   * creation of development environment
-   * creation of non-production pipeline deploying to development environment (master branch deploying to development environment)
- 
-1. **Solutions:** Sandbox programs include AEM Sites and Assets.
-
-1. **AEM Updates:** AEM updates can be applied manually to environments in a Sandbox program, and are not automatically pushed.
-
-1. **Hibernation:** Environments in a Sandbox program are automatically hibernated if no activity is detected for a certain period of time. Hibernated environments can be manually de-hibernated.
-
-### Creating a Sandbox Program {#creating-sandbox-program}
-
-A program creation wizard lets you create a Sandbox Program.
-
-To learn how to create a Sandbox Program, refer to [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) for more details.
-
-### Creating Sandbox Environments {#creating-sandbox-environments}
-
-Sandbox Programs are delivered to a development environment at the time of program creation in an auto-created manner. The development environment includes an author and a publish tier by default.
-
-The Production-Stage environment set can be manually added to the Sandbox Program, when the user is ready to setup a production pipeline. 
-
-To learn how to manually create an environment, refer to [Adding Environment](/help/implementing/cloud-manager/manage-environments.md) for more details.
-
-### Deleting Sandbox Environments {#deleting-sandbox-environments}
-
-User with the requisite permissions can delete a Development or Production/Stage environment  or sets. 
-
-To delete an environment, refer to [Deleting Environment](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) for more details.
-
-
-## Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
+# Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
 
 Sandbox Program environments enter a *hibernation mode* if no activity is detected for a certain period of time.
 
 >[!NOTE]
 >Hibernation is unique to Sandbox Program environments. Regular program environments do not hibernate.
 
-### Hibernation {#hibernation-introduction}
+## Hibernation {#hibernation-introduction}
 
 Hibernation can occur either automatically or manually. It may take up to a few minutes for Sandbox Program environments to enter a *hibernation mode*. Data is preserved during hibernation.
 
@@ -73,7 +23,7 @@ Hibernation is categorized as:
 >[!CAUTION]
 >In the latest release, linking to the Developer Console directly from Cloud Manager will not give you the option to hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
 
-#### Using Manual Hibernation {#using-manual-hibernation}
+### Using Manual Hibernation {#using-manual-hibernation}
 
 You can manually hibernate your Sandbox Program from the Developer Console in two different ways, using:
 
@@ -109,7 +59,7 @@ Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-e
    ![](assets/hibernate-4.png)
 
 
-### De-hibernation {#de-hibernation-introduction}
+## De-hibernation {#de-hibernation-introduction}
 
 1. Navigate to the **Developer Console**. 
 Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) to learn how to access the **Developer Console** from the **Environments** card.
@@ -146,17 +96,17 @@ Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-e
  
    ![](assets/de-hibernation-img4.png)
 
-#### Permissions to De-hibernate {#permissions-de-hibernate}
+### Permissions to De-hibernate {#permissions-de-hibernate}
 
 Any user with a product profile giving them access to AEM as a Cloud Service should be able to access the **Developer Console**, allowing them to de-hibernate the environment. 
 
-#### Accessing a Hibernated Environment {#accessing-hibernated-environment}
+## Accessing a Hibernated Environment {#accessing-hibernated-environment}
 
 When making any browser requests against either the author or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as shown in the figure below:
 
 ![](assets/de-hibernation-img5.png)
 
-### Important Considerations {#important-considerations}
+## Important Considerations {#important-considerations}
 
 Few key considerations related to hibernated and de-hibernated environments are:
 
