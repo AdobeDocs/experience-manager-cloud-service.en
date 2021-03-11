@@ -28,7 +28,7 @@ However, if no test JAR is produced by the build, the test passes by default.
 >[!NOTE]
 >The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
-## ## Custom UI Testing {#custom-ui-testing}
+## Custom UI Testing {#custom-ui-testing}
 
 AEM provides its customers with an integrated suite of Cloud Manager quality gates to ensure smooth updates to their applications. In particular, IT test gates already allow customers to create and automate their own tests which use AEM APIs.
 
