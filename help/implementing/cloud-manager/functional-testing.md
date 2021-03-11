@@ -9,6 +9,7 @@ Functional testing is categorized into two types:
 
 * Product Functional Testing
 * Custom Functional Testing
+* Custom UI Testing
 
 ## Product Functional Testing {#product-functional-testing}
 
@@ -26,6 +27,13 @@ However, if no test JAR is produced by the build, the test passes by default.
 
 >[!NOTE]
 >The **Download Log** button allows access to a ZIP file containing the logs for the test execution detailed form. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+
+## ## Custom UI Testing {#custom-ui-testing}
+
+Custom UI tests can be written and enables customers to quickly build test automation suites to validate web and mobile apps built on AEM. Refer to [Building UI Tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests) to learn how to write Custom UI tests.
+
+   >[!NOTE]
+   >Stage and production pipelines created before February 10, 2021 need to be updated in order to use the UI tests as described on this page. See [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about pipeline configuration.
 
 
 ### Writing Functional Tests {#writing-functional-tests}
