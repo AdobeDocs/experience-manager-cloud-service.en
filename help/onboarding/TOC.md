@@ -22,7 +22,6 @@ user-guide-description: This guide provides an summary of how to get started wit
       + [Introduction](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
       + [Creating a Production Program](getting-access-to-aem-in-cloud/creating-production-program.md)
       + [Editing a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
     + Sandbox Programs {#sandbox-programs}
       + [Introduction](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
       + [Creating a Sandbox Program](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
