@@ -15,7 +15,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.3.0 is March 1
 
 ### What's New {#what-is-new}
 
-* Customers with environments with pre-existing CDN configurations for IP Allowlists, SSL certificates and custom domain names will see the following message, and will be able to self-serve via the UI. 
+* Customers with environments with pre-existing CDN configurations for IP Allowlists, SSL certificates and custom domain names will see a message about their previously existing configurations and will be able to self-serve via the UI. 
 
 * Users with requisite permission can now Edit Program, allowing them to do the following in a self-service manner. 
 
