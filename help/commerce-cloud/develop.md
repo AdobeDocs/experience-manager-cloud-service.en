@@ -135,6 +135,12 @@ CIF Core Components can be used in any project by either including the provided 
 </dependency>
 <dependency>
     <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-config</artifactId>
+    <type>zip</type>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
     <artifactId>core-cif-components-core</artifactId>
     <version>x.y.z</version>
 </dependency>
