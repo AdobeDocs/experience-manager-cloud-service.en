@@ -27,7 +27,7 @@ Once you have successfully logged in to [!UICONTROL Cloud Manager], the landing 
 
 >[!NOTE]
 >Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** (as opposed to **Experience Manager** for AMS programs). 
-   >For example, in the figure below, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
+>For example, in the figure below, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
    ![](assets/first_timelogin1.png)
 
