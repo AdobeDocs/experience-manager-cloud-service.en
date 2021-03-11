@@ -15,7 +15,7 @@ The environments created in a Sandbox are not configured for auto-scaling. There
 
 Sandbox programs include Sites and Assets and are auto-populated with a Git repository, a Development environment, and a non-production pipeline.  The Git repository is populated with a sample project based on the AEM Project archetype.
 
-Refer to [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md) to learn more about the Program Types.
+Refer to [Understanding Programs and Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) to learn more about the Program Types.
 
 ### Attributes of Sandbox Programs {#attributes-sandbox}
 
