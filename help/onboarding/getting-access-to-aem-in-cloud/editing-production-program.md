@@ -5,7 +5,7 @@ description: Editing a Production Program
 
 # Editing a Production Program {#create-production-program}
 
-Users with requisite permission can now edit a Production program, allowing them to do the following in a self-service manner:
+Users with requisite permissions can now edit a Production program, allowing them to do the following in a self-service manner:
 
 * Add Sites solution to an existing program with Assets (or vice-versa).
 * Remove Sites (or Assets) from an existing program with both Sites and Assets.
@@ -16,9 +16,11 @@ Users with requisite permission can now edit a Production program, allowing them
 
 Follow the steps below to edit a Production program:
 
-1. Navigate to the Edit Program page.
+1. Navigate to the **Edit Program** page.
 
-1. will display two tabs (General and Solutions) for both Production and Sandbox programs.
+1. The **Edit Program** page will display two tabs (General and Solutions) for both Production and Sandbox programs.
+
+   ![](assets/edit-program.png)
 
    >[!NOTE]
    >While both Sites and Assets will be displayed, one of them may be disabled based on what has been purchased and unused. Specifically, If the organization does not have unused entitlement(s) for a particular solution, that solution will be displayed but disabled.
