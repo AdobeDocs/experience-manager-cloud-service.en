@@ -26,11 +26,10 @@ Follow the steps below to access Cloud Manager:
 Once you have successfully logged in to [!UICONTROL Cloud Manager], the landing page will show the card for any existing program(s) that are in your Organization.
 
 >[!NOTE]
->
->Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** (as opposed to **Experience Manager** for AMS programs), as shown below.
+>Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** (as opposed to **Experience Manager** for AMS programs). 
+   >For example, in the figure below, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
-![](assets/first_timelogin1.png)
-
+   ![](assets/first_timelogin1.png)
 
 Based on your circumstances, you will see either of the two options:
 
@@ -47,9 +46,6 @@ If program(s) already exist in your Organization, then your landing page directs
 
    ![](assets/first_timelogin1.png)
    
-   >[!NOTE]
-   >Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** (as opposed to **Experience Manager** for AMS programs). 
-   >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
 To learn how to add a program in Cloud Manager, refer to:
 
