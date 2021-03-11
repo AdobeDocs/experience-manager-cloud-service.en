@@ -19,9 +19,13 @@ Follow the section below to understand the important considerations while runnin
 
 * If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
 
-* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM administrators group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool.
+* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool. 
+
+* If the setting **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. User will need to be re-added to the **administrators** group to retrieve the access token for CTT.   
 
 * The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you will have to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
+
+* The Content Transfer Tool does not perform any kind of content analysis before transferring content from the source instance to the target instance. For e.g. CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed an the source Author instance to move content to the target Author instance and similarly install CTT on the source Publish instance to move content to the target Publish instance.
 
 * The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The *Extraction* process copies the entire `/home` into the migration set and the *Ingestion* process copies all users and groups referenced in the migrated content ACLs. To automatically map the existing users and groups to their IMS IDs, please refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -167,7 +171,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
 1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. It is possible to ingest content to Author and Publish at the same time.
 
    >[!IMPORTANT]
-   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance.
+   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
