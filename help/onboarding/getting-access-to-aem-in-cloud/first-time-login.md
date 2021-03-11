@@ -53,7 +53,7 @@ If program(s) already exist in your Organization, then your landing page directs
 
 To learn how to add a program in Cloud Manager, refer to:
 
-   * [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-   * [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
   
