@@ -22,11 +22,13 @@ user-guide-description: This guide provides an summary of how to get started wit
     + Production Programs {#production-programs}
       + [Introduction](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
       + [Creating a Production Program](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Editing a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
       + [Creating a Program](getting-access-to-aem-in-cloud/creating-a-program.md)
     + Sandbox Programs {#sandbox-programs}
       + [Introduction](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
       + [Sandbox Programs](getting-access-to-aem-in-cloud/sandbox-programs.md)
       + [Creating a Sandbox Program](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [Editing a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
       + [Deleting a Sandbox Program](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
       + [Hibernating and De-hibernating Sandbox Environments](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
   + Using Cloud Manager {#using-cloud-manager}
