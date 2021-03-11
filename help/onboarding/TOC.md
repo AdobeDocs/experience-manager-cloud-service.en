@@ -16,7 +16,7 @@ user-guide-description: This guide provides an summary of how to get started wit
 + Getting Access to AEM in the Cloud {#getting-access}  
   + [Getting Access to Cloud Manager for AEM as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
   + Accessing Cloud Manager {#cloud-service-programs}
-    + [Cloud Manager Homepage](getting-access-to-aem-in-cloud/first-time-login.md)
+    + [Cloud Manager Landing Page](getting-access-to-aem-in-cloud/first-time-login.md)
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
     + Production Programs {#production-programs}
       + [Introduction](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
