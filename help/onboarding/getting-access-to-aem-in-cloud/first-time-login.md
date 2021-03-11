@@ -15,6 +15,8 @@ Once you have successfully logged in to [!UICONTROL Cloud Manager], you are read
 
 Once you have successfully logged in to [!UICONTROL Cloud Manager], you will see the landing page as shown in the figure below.
 
+The landing page will show the card for any existing program(s) that are in your Organization.
+
 >[!NOTE]
 >
 >Programs that are on the Cloud Service are indicated by the subtitle **Experience Manager Cloud** (as opposed to **Experience Manager** for AMS programs), as shown below.
@@ -27,6 +29,7 @@ Based on your circumstances, you will see either of the two options:
 * **No programs exist in Cloud Manager**
 
 * **Programs already exist in Cloud Manager**
+
 
 ## Adding a New Program in Cloud Service with no Existing Programs {#no-program}
 
@@ -47,6 +50,9 @@ The landing page directs you to create your first program, as shown in the figur
    >[!NOTE]
    >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
-1. To learn how to add a program from the **Programs & Products** screen to create a new program in Cloud Service refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
+1. To learn how to add a program from the **Programs & Products** screen to create a new program in Cloud Service refer to the resources below:
+
+   * [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+   * [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
   

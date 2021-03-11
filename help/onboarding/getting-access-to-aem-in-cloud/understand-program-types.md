@@ -13,7 +13,7 @@ The following diagram shows the hierarchy of entities in Cloud Manager.
 
 ## Program Types {#program-types}
 
-A user can create a **Sandbox** or a **Regular** program. 
+A user can create a **Sandbox** or a **Production** program. 
 
 * A *Production Program* is created to enable live traffic at the appropriate time in the future.
    Refer to [Introduction to Production Programs](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.

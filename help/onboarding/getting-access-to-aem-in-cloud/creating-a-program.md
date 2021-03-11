@@ -106,10 +106,4 @@ Follow the steps below to create a regular program:
 
 
     >[!NOTE]
-    >
     >A regular program does not have **Auto-setup** feature.
-
-
-    
-
-
