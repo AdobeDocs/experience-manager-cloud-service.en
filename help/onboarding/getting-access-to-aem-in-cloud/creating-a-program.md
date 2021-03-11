@@ -20,10 +20,6 @@ Depending upon the user’s objective in creating the program within the bounds 
 
   ![](assets/create-sandbox.png)
 
->[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
-
-![](assets/create-program-add.png)
 
 ## Creating a Sandbox Program {#create-sandbox-program} 
 

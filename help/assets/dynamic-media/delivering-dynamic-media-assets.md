@@ -9,7 +9,7 @@ How you can deliver your Dynamic Media assets - both video and images - depends 
 
 With Dynamic Media, you have several options:
 
-* If your website is hosted on AEM, then you want to add the dynamic media assets directly to your page.
+* If your website is hosted on AEM, then you want to add the Dynamic Media assets directly to your page.
 * If your website is not on AEM, then you have the choice of either:
 
   * Embedding your video or image on your website.
