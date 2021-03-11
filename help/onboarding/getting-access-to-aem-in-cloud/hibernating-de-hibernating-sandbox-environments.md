@@ -8,7 +8,7 @@ description: Hibernating and De-hibernating Sandbox Environments
 Sandbox Program environments enter a *hibernation mode* if no activity is detected for a certain period of time.
 
 >[!NOTE]
->Hibernation is unique to Sandbox Program environments. Regular program environments do not hibernate.
+>Hibernation is unique to Sandbox Program environments. Production program environments do not hibernate.
 
 ## Hibernation {#hibernation-introduction}
 
