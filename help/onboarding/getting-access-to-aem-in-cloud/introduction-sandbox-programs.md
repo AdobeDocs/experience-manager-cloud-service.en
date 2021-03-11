@@ -32,4 +32,4 @@ Sandbox Programs have the following attributes:
    Refer to [AEM Updates to Sandbox Environments](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) for more details.
 
 1. **Hibernation:** Environments in a Sandbox program are automatically hibernated if no activity is detected for a certain period of time. Hibernated environments can be manually de-hibernated.
-   Refer to [Hibernating and De-hibernating Sandbox Environments](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.mdd) for more details.
+   Refer to [Hibernating and De-hibernating Sandbox Environments](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) for more details.
