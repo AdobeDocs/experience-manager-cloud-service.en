@@ -13,7 +13,7 @@ In order to get around this, you need to set the SameSite cookie attribe to `Non
 
 You can do this by following the below steps:
 
-1. Install a version of the AEM SDK Quickstart locally.
+1. Install a version of the AEM SDK Quickstart locally
 1. Go to the Web Console at `http://serveraddress:serverport/system/console/configMgr`
 1. Search for and click the **Adobe Granite Token Authentication Handler**
 1. Set the **SameSite attribute for the login-token cookie** to `None`, as shown in the image below
