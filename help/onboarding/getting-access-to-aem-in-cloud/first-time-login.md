@@ -1,19 +1,27 @@
 ---
-title: First Time Login - Cloud Service
-description: First Time Login - Cloud Service
+title: Cloud Manager Homepage
+description: Cloud Manager Homepage
 ---
 
-# Accessing Programs {#first-time-login} 
+# Cloud Manager Homepage {#first-time-login} 
 
-Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
+To access Cloud Manager:
 
->[!NOTE]
->
->Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
+1. Navigate to [Experience Cloud](https://experience.adobe.com/) using your Adobe ID.
+1. Select **Experience Manager**.
+   ![](assets/landing-page1.png)
+   
+1. Click on **Launch** from the Cloud Manager card.
+   Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
+   ![](assets/landing-page2.png)
+
+   >[!NOTE]
+   >
+   >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
 ## Cloud Manager Landing Page {#landing-page}
 
-Once you have successfully logged in to [!UICONTROL Cloud Manager], you will see the landing page as shown in the figure below.
+Once you have successfully logged in to [!UICONTROL Cloud Manager], the landing page will show the card for any existing program(s) that are in your Organization.
 
 >[!NOTE]
 >
@@ -27,6 +35,7 @@ Based on your circumstances, you will see either of the two options:
 * **No programs exist in Cloud Manager**
 
 * **Programs already exist in Cloud Manager**
+
 
 ## Adding a New Program in Cloud Service with no Existing Programs {#no-program}
 
@@ -47,6 +56,9 @@ The landing page directs you to create your first program, as shown in the figur
    >[!NOTE]
    >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
-1. To learn how to add a program from the **Programs & Products** screen to create a new program in Cloud Service refer to [Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
+1. To learn how to add a program from the **Programs & Products** screen to create a new program in Cloud Service refer:
+
+   * [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+   * [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
   
