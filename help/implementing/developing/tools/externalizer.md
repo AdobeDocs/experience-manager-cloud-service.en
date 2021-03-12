@@ -21,7 +21,7 @@ To override such values, use Cloud Manager environment variables as described in
 
 The Externalizer service allows you to centrally define the domain that can be used to programmatically prefix resource paths. The Externalizer service should only be used for applications with a single domain.
 
->[NOTE]
+>[!NOTE]
 >
 >As when applying any [OSGi configurations for AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) the following steps should be performed on a local developer instance and then committed to your project code for deployment.
 
