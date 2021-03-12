@@ -7,27 +7,37 @@ description: The Externalizer is an OSGi service that allows you to programmatic
 
 In AEM, the **Externalizer** is an OSGi service that allows you to programmatically transform a resource path (e.g. `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
 
-Because an instance cannot know its externally visible URL if it is running behind a web layer, and because sometimes a link has to be created outside of the request scope, this service provides a central place to configure those external URLs and build them.
+Because an AEM as a Cloud Service instance cannot know its externally visible URL and because sometimes a link has to be created outside of the request scope, this service provides a central place to configure those external URLs and build them.
 
-This page explains how to configure the **Externalizer** service and how to use it. For more details, please refer to the [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+This article explains how to configure the Externalizer service and how to use it. For technical details of the service, please refer to the [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+
+## Default Values for AEM as a Cloud Service {#default-values}
+
+By default, the Externalizer service will have values such as `author-p12345-e6789.adobeaemcloud.com` and `publish-p12345-e6789.adobeaemcloud.com`.
+
+To override such values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_AUTHOR` and `AEM_CDN_DOMAIN_PUBLISH` variables.
 
 ## Configuring the Externalizer Service {#configuring-the-externalizer-service}
 
-The **Externalizer** service allows you to centrally define multiple domains that can be used to programmatically prefix resource paths. Each domain is identified by a unique name that is used to programmatically reference the domain.
+The Externalizer service allows you to centrally define the domain that can be used to programmatically prefix resource paths. The Externalizer service should only be used for applications with a single domain.
 
-To define a domain mapping for the **Externalizer** service:
+>[NOTE]
+>
+>As when applying any [OSGi configurations for AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) the following steps should be performed on a local developer instance and then committed to your project code for deployment.
 
-1. Navigate to the configuration manager via **Tools**, then **Web Console**, or enter:
+To define a domain mapping for the Externalizer service:
+
+1. Navigate to the Configuration Manager via:
 
    `https://<host>:<port>/system/console/configMgr`
 
 1. Click **Day CQ Link Externalizer** to open the configuration dialog box.
 
+   ![The Externalizer OSGi configuration](./assets/externalizer-osgi.png)
+
    >[!NOTE]
    >
    >The direct link to the configuration is `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
-
-   ![aem-externalizer-01](assets/aem-externalizer-01.png)
 
 1. Define a **Domains** mapping. A mapping consists of a unique name that can be used in the code to reference the domain, a space, and the domain:
 
@@ -37,7 +47,7 @@ To define a domain mapping for the **Externalizer** service:
 
     * **`scheme`** is usually http or https, but can be another protocol.
 
-        * It is recommended to use https to enforce https links
+        * It is recommended to use https to enforce https links.
         * It will be used if the client code does not override the scheme when asking for externalization of a URL.
 
     * **`server`** is the host name (either a domain name or ip address).
@@ -60,7 +70,7 @@ To define a domain mapping for the **Externalizer** service:
 
 ### Using the Externalizer service {#using-the-externalizer-service}
 
-This section shows a few examples of how the **Externalizer** service can be used:
+This section shows a few examples of how the Externalizer service can be used:
 
 1. **To get the Externalizer service in a JSP:**
 
