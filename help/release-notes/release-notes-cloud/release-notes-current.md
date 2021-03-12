@@ -21,27 +21,9 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Headless Content Management {#headless}
-
-* **[GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Ability to query Content Fragments using GraphQL syntax, and schemas based on Content Fragment models, for output in JSON format.
-
-* **[Authentication Support for GraphQL API Requests](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Ability to authenticate GraphQL API requests with access tokens for server-side APIs.
-
 * **[The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)**: Added support for viewing and editing external SPAs within AEM using.
 
 * **[Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Added ability to upload a standalone single-page application to an AEM instance, add editable sections of content, and enable authoring.
-
-* Enhanced JSON output from GraphQL API, including ability to output rich text in JSON format and locales.
-
-* Support for nesting Content Fragment models to allow creating nested Content Fragment structures, via dedicated Content Fragment Reference data types or Content Fragment references inline in multiline text fields.
-
-* Additional validation rules available in Content Fragment model data types, including "unique", "required" and "translatable".
-
-* Ability tag Content Fragment models, and to allow Content Fragment creation in a folder with policies by tags or paths.
-
-* Usability enhancements in Content Fragment editor, including publish action and display of model a fragment is based on.
-
-* Ability to preview JSON output directly in Content Fragment editor.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -70,7 +52,68 @@ Customers using the Connected Assets feature can now easily view and track asset
 * When multiple assets are selected to update the properties, sometimes either an error occurs or properties of a deselected asset get updated. (CQ-4316532)
 * When attempting to open [!UICONTROL Assets Admin Search Rail], the page remains blank and clicking on [!UICONTROL Edit] > [!UICONTROL Settings] generates an error. (CQ-4315079)
 
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### What is New {#what-is-new-commerce}
+
+* Product Experience Management: Enrich product catalog pages individually with Experience Fragments.
+
+* Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
+
+* Released CIF Venia Reference Site - 2021.02.24 that includes the latest CIF Core Components version v1.8.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) for more details.
+
+* Released CIF Core Components v1.8.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) for more details.
+
 ## Cloud Manager {#cloud-manager}
+
+This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.3.0.
+
+## Release Date {#release-date-cm-march}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.3.0 is March 11, 2021.
+
+
+### What's New {#what-is-new-march}
+
+* Customers with environments with pre-existing CDN configurations for IP Allowlists, SSL certificates and custom domain names will see a message about their previously existing configurations and will be able to self-serve via the UI. Users can now:
+   * Add Sites solution to an existing program with Assets (or vice-versa).
+   * Remove Sites (or Assets) from an existing program with both Sites and Assets.
+   * Add second, unused solution entitlement either to an existing program or as a new Program.
+
+* Users with requisite permission can now Edit Program, allowing them to do the following in a self-service manner. 
+
+* AEM Push Update" label will now be displayed for both Pipeline Execution and Activity screens.
+
+*  If an environment is hibernated but there is also an AEM update available, the “Hibernated” status will take precedence over “Update available”.
+
+* Users can now see their Cloud Manager role(s) by selecting the 'View Cloud Manager Role(s)' option after navigating to the User Profile icon (top right) of Unified Shell. 
+
+* The label "Application for Approval" has been relabeled to "Production Approval" for greater clarity.
+
+* The "Version" label has been relabeled to "Git Tag" in the Production pipeline execution screen.
+
+* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior – Cancel Immediately and Approve Immediately.
+
+* The class and method deprecation lists have been updated based on version `2021.3.4997.20210303T022849Z-210225` of the AEM Cloud Service SDK.
+
+* Cloud Manager Production pipeline will now include Custom UI testing capability.
+
+### Bug Fixes {#bug-fixes-cm-march}
+
+* Package versioning was skipped in some cases during AEM push upgrade.
+
+* Some quality issues were not properly discovered when packages were embedded in other packages.
+
+* In obscure situations, the default program name generated upon opening the Add Program dialog could be a duplicate of an existing program name. 
+
+* On occasion, if user navigates away from pipeline execution page immediately after starting a pipeline, an error message is displayed stating that the action failed, although the execution actually starts.
+
+* The build step was unnecessarily restarted when customer builds resulted in invalid packages.
+
+* On occasion, user may see a green "active" status next to an IP Allowlist even when that configuration was not deployed.
+
+* All existing production pipelines will be automatically enabled with the Experience Audit step.
+
 
 ### Release Date {#release-date-cm}
 
@@ -108,6 +151,20 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 * Some pipeline failures were incorrectly reported as pipeline errors.
 
 ## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt-march}
+
+The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
+
+### What is new in Content Transfer Tool {#what-is-new-ctt-march}
+
+* CTT now installs to `/apps` instead of `/libs` Browser bookmarks to certain pages may no longer be valid.
+* When CTT is installed, user will have to navigate an additional level to get to the Content Transfer page. See [Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) for more details.
+
+### Bug Fixes {#bug-fixes-ctt-march}
+
+* When migrating content from a specific path, CTT was pulling in unrelated resources. This has been fixed
+
 
 ### Release Date {#release-date-ctt}
 

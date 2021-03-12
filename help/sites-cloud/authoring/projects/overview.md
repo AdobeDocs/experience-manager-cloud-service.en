@@ -168,7 +168,7 @@ All projects support the following default roles to let you administer security 
 |---|---|---|---|
 |Observer|A user in this role can view project details, including the project status.|Read-only permissions on a project|`workflow-users` group|
 |Editor|A user in this role can upload and edit the contents of a project.|Read and Write access on a project, associated metadata, and related assets; privileges to upload a shot list, photo shoot, and review and approve assets; write permission on /etc/commerce; modify permission on a specific project|workflow-users group|
-|Owner|A user in this role can initiate a project. An owner can create a project, initiate work in a project, and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group (to be able to create a project) project-administrators group (to be able to move assets)|
+|Owner|A user in this role can initiate a project. An owner can create a project, initiate work in a project, and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group (to be able to create a project) project-administrators group (to be able to create a project and move assets)|
 
 >[!NOTE]
 >
