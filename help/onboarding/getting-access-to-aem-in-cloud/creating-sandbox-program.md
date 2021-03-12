@@ -5,7 +5,7 @@ description: Creating a Sandbox Program
 
 # Creating a Sandbox Program {#create-sandbox-program}
 
-Follow the steps below to create a sandbox program: 
+Follow the steps below to create a sandbox program:
  
 1. From the create program wizard, select **Set up a sandbox**. User submits program name before selecting **Create**.
 
