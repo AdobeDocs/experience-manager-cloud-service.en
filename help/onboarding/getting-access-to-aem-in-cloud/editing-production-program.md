@@ -16,7 +16,7 @@ Users with requisite permissions can now edit a Production program, allowing the
 
 Follow the steps below to edit a Production program:
 
-1. Navigate to the **Edit Program** page.
+1. 1. Navigate to the **Edit Program** page from the Cloud Manager's *Overview* page
 
 1. The **Edit Program** page will display two tabs (General and Solutions) for both Production and Sandbox programs.
 

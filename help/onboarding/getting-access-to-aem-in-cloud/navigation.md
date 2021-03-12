@@ -61,11 +61,10 @@ If you are an existing AMS (Adobe Managed Services) customer and you have access
 
 If you do not see the **Add Program** button and have questions about access to Cloud Service, please contact your Adobe representative.
 
-Refer to [Adding a New Program in Cloud Service with Existing Programs](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) for more details.
-
 ## For New Cloud Service Customers {#new-cloud-services}
 
 If you are a new Cloud Service customer, then you will see the **Add Program** button on the top right corner of an empty landing page. You will want to add a new program to your Cloud Service.
 
-Refer to [Adding a New Program in Cloud Service with no Existing Programs](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) for more details.
-
+To learn how to add a program in Cloud Manager, refer to:
+* [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
