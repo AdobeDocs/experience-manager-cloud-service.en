@@ -126,7 +126,7 @@ You can monitor the distribution agent logs for the asset publishing workflow.
 
 For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
-1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the **Test connection** section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
    ![](assets/test-bpconfig5.png)
