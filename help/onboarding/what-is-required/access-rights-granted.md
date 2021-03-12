@@ -29,8 +29,8 @@ Once Adobe has created an organization for your company, your designated adminis
    * [Managing Roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-roles)
    * [Managing Access to Author Instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-access-aem)
 
->[!NOTE]
->Please visit the section [Users and Roles](#users-roles) to learn more about users and role definitions in Cloud Manager.
+      >[!NOTE]
+      >Please visit the section [Users and Roles](#users-roles) to learn more about users and role definitions in Cloud Manager.
 
 With these rights granted, your administrator is now set up with a single sign-on (using Adobe ID) to access the [!UICONTROL Experience Cloud] services, login to your AEM cloud environments, and use [!UICONTROL Cloud Manager].
 
