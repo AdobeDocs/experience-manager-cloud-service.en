@@ -5,7 +5,11 @@ description: Learn how to connect AEM to Microsoft Translator out-of-the-box to 
 
 # Connecting to Microsoft Translator {#connecting-to-microsoft-translator}
 
-Create a configuration for the [Microsoft Translator](https://hub.microsofttranslator.com) cloud service to use your Microsoft Translation account for translating AEM page content, community content, or assets.
+Create a configuration for the [Microsoft Translator](https://hub.microsofttranslator.com) cloud service to use your Microsoft Translation account for translating AEM page content or assets.
+
+>[!NOTE]
+>
+>AEM provides a trial Microsoft Translation account that allows for a maximum of 2 000 000 free translated characters per month. To obtain an account subscription that is adequate for production systems, see [Upgrading The Microsoft Translator Trial License Configuration](#upgrading-the-microsoft-translator-trial-license-configuration).
 
 |Property|Description|
 |---|---|
