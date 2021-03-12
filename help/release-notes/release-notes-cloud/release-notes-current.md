@@ -203,13 +203,20 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 
 ### What is new in Code Refactoring Tools {#what-is-new-crt}
 
-* New version of AIO-CLI plugin released. Latest version of this plugin includes several bug fixes for the Repository Modernizer. 
-   Refer to [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
+* New version of AIO-CLI plugin released. Latest version of this plugin includes several new features and bug fixes for the Repository Modernizer and the Dispatcher Converter.    Refer to [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
 
-### Bug Fixes {#bug-fixes-crt}
+* New features and enhancements for Repository Modernizer. Refer to [GitHub Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for the latest version.
+  * Normalize OSGi configs (except RepoInit configs) to the preferred .cfg.json format.
+  * Rename OSGi config folders to the specified format.
+  * Generate the ui.apps.structure project.
+  * Create the analyze module.
+  
+* New features and enhancements for Dispatcher Converter. Refer to [GitHub Resource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+  * Creation of separate files for different inclusions instead of in lining the content.
+  * Ability to handle both folder path of vhosts and path to vhost files.
+  * Generation of farm files with large customer configurations in range of 600 and more.
 
-* Several bug fixes done on the Repository Modernizer. 
-   Refer to [GitHub Resource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
+  
 
 
 
