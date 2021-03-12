@@ -196,7 +196,7 @@ As shown below, the group **AEM-GRP_008** inherits the permissions and privilege
 
 To be able to access Cloud Manager or to AEM as a Cloud Service environments, you must be assigned to Profiles of the Cloud Manager Product.
 
-Refer to [Role Definitions](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) to learn more about roles for users which govern the availability of specific features in Cloud Manager.
+Refer to [Role Definitions](/help/onboarding/what-is-required/access-rights-granted.md##role-definitions) to learn more about roles for users which govern the availability of specific features in Cloud Manager.
 
 >[!NOTE]
 >Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
