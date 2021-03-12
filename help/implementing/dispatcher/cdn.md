@@ -5,7 +5,7 @@ description: CDN in AEM as a Cloud Service
 
 # CDN in AEM as a Cloud Service {#cdn}
 
-AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
+AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
 The AEM managed CDN will satisfy most customer's performance and security requirements. For the publish tier, customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
 
@@ -24,7 +24,7 @@ Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lis
 
 >[!CAUTION]
 >
->Only requests from the allowed IPs will be served by AEM’s managed CDN. If you point your own CDN to the AEM managed CDN then make sure the IPs of your CDN are included in the allowlist.
+>Only requests from the allowed IPs will be served by AEM’s managed CDN. If you point your own CDN to the AEM managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
 ## Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
@@ -40,10 +40,10 @@ Configuration instructions:
 
 1. Set the `X-Forwarded-Host` header with the domain name.
 1. Set Host header with the origin domain, which is the AEM CDN's ingress. The value should come from Adobe.
-1. Send the SNI header to the origin. Like the Host header, the sni header must be the origin domain.
+1. Send the SNI header to the origin. Like the Host header, the SNI header must be the origin domain.
 1. Set either the `X-Edge-Key` or the `X-AEM-Edge-Key` (if your CDN strips X-Edge-*), which is needed to route traffic correctly to the AEM servers. The value should come from Adobe. Please inform Adobe if you want direct access to Adobe CDN's ingress (to be blocked when `X-Edge-Key` is not present).
 
-Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
+Before accepting live traffic, you should validate with Adobe's customer support that the end-to-end traffic routing is functioning correctly.
 
 >[!NOTE]
 >
@@ -51,11 +51,11 @@ Prior to accepting live traffic, you should validate with Adobe customer support
 
 There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to the AEM managed CDN are likely to be efficient.
 
-Note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
+Please note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
 
 ## Geolocation Headers {#geo-headers}
 
-The AEM managed CDN will add headers to each request with:
+The AEM managed CDN adds headers to each request with:
 
 * country code: `x-aem-client-country`
 * continent code: `x-aem-client-continent`
