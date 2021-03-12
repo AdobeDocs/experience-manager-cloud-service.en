@@ -45,6 +45,10 @@ Configuration instructions:
 
 Prior to accepting live traffic, you should validate with Adobe customer support that the end-to-end traffic routing is functioning correctly.
 
+>[!NOTE]
+>
+>Customers that manage their own CDN should ensure the integrity of the headers that are sent through to AEM's CDN. For instance, it is recommended that customers clear all `X-Forwarded-*` headers and set them to known and controlled values. For example, `X-Forwarded-For` should contain the client's IP address, while `X-Forwarded-Host` should contain the site's host.
+
 There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to the AEM managed CDN are likely to be efficient.
 
 Note that this customer CDN configuration is supported for the publish tier, but not in front of the author tier.
