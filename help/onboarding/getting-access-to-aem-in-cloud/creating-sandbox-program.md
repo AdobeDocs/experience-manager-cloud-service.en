@@ -7,6 +7,13 @@ description: Creating a Sandbox Program
 
 Follow the steps below to create a sandbox program:
  
+1. Launch the Cloud Manager's landing page and click on **Add Program** from the top right corner of the screen.
+
+   ![](assets/first_timelogin1.png) 
+
+   >[!NOTE]
+   >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) for more details.
+
 1. From the create program wizard, select **Set up a sandbox**. User submits program name before selecting **Create**.
 
    ![](assets/create-sandbox.png)
