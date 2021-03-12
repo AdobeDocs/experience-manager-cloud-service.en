@@ -19,5 +19,5 @@ You can do this by following the below steps:
 1. Set the **SameSite attribute for the login-token cookie** to `None`, as shown in the image below
    ![samesite](/help/security/assets/samesite1.png)
 1. Click Save
-1. Generate the JSON format configurations for this particular setting by following the steps outlined in [Generating OSGi Configurations using the AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configuratuions-using-the-aem-sdk-quickstart)
+1. Generate the JSON format configurations for this particular setting by following the steps outlined in [Generating OSGi Configurations using the AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Apply the settings by following the steps in the [Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi documentation.
