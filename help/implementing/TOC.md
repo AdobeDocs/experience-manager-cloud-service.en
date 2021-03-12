@@ -145,6 +145,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
   + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+  + [The Linnk Externalizer](/help/implementing/developing/tools/externalizer.md)
 + Personalization {#personalization}
   + [ContextHub](developing/personalization/contexthub.md)
   + [Configuring ContextHub](developing/personalization/configuring-contexthub.md)
