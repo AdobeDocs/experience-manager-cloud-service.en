@@ -1,6 +1,6 @@
 ---
 title: Same Site Cookie Support for Adobe Experience Manager as a Cloud Service
-description: ISame Site Cookie Support for Adobe Experience Manager as a Cloud Service
+description: Same Site Cookie Support for Adobe Experience Manager as a Cloud Service
 ---
 
 # Same Site Cookie Support for Adobe Experience Manager as a Cloud Service {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
