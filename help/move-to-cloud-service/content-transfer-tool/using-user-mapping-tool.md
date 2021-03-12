@@ -15,15 +15,15 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 ### Exceptional cases {#exceptional-cases}
 
-The following specific cases will be logged and the user or group in question will not be mapped:
+The following specific cases will be logged: 
 
-1. If a user has no email address in the `profile/email` field of their *jcr* node.
+1. If a user has no email address in the `profile/email` field of their *jcr* node the user or group in question will be migrated but not mapped.
 
-1. If a given email is not found on the Adobe Identity Management System (IMS) system for the Organization ID used (or if the IMS ID cannot be retrieved for another reason).
+1. If a given email is not found on the Adobe Identity Management System (IMS) system for the Organization ID used (or if the IMS ID cannot be retrieved for another reason) the user or group in question will be migrated but not mapped. 
 
 1. If the user is currently disabled, it is treated the same as if it were not disabled. It will be mapped and migrated as normal, and will remain disabled on the cloud instance.
 
-1. If a user exists on the target AEM Cloud Service instance with the same user name (rep:principalName) as one of the users on the source AEM instance.
+1. If a user exists on the target AEM Cloud Service instance with the same user name (rep:principalName) as one of the users on the source AEM instance the user or group in question will be not be migrated.
 
 ### Additional considerations {#additional-considerations}
 
@@ -41,7 +41,7 @@ The following specific cases will be logged and the user or group in question wi
 
 ## Using the User Mapping Tool {#using-user-mapping-tool}
 
-The User Mapping Tool uses an API that allows it to lookup Adobe Identity Management System (IMS) users by email and return their IMS IDs. This API requires the user to create a Client ID for their organization, a Client Secret, and an Access or Bearer Token.  
+The User Mapping Tool uses an API that allows it to look up Adobe Identity Management System (IMS) users by email and return their IMS IDs. This API requires the user to create a Client ID for their organization, a Client Secret, and an Access or Bearer Token.  
 
 Follow the steps below to set this up:
 
