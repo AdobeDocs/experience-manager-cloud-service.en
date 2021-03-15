@@ -80,7 +80,6 @@ The recommended application deployment structure is as follows:
             + Groups
             + ACLs (permissions)
 
-Some restrictions apply for code packages, for example [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
 
 ### Content Packages
 
@@ -133,9 +132,10 @@ For example, an AEM project that includes 2 vendor AEM applications might look l
 
 Packages are to be marked with their declared package type.
 
-+ Container packages must set their `packageType` to `container`.
++ Container packages must set their `packageType` to `container`. Container packages must not directly contain OSGi bundles, OSGi configurations and are not allowed to use [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
+
 
 For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#marking-packages-for-deployment-by-adoube-cloud-manager) below.
 
