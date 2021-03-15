@@ -18,9 +18,9 @@ You can identify the status of an SSL certificate from the following color schem
 * **Red** 
    Indicates that despite multiple notifications, your SSL certificate has expired.
 
-## Pre-existing CDN Configurations for IP Allowlists {#pre-existing-cdn}
+## Pre-existing CDN Configurations for IP Allow Lists {#pre-existing-cdn}
 
-Customers with environments that includes pre-existing CDN configurations for IP Allow Lists, SSL certificates or Custom Domain Names will see the following message in the the **IP Allow List** and the **Environment** details page. 
+Customers with environments that includes pre-existing CDN configurations for IP Allow Lists, SSL certificates or Custom Domain Names will see the following message in the the **IP Allow List** and the **Environment** details page. The message displayed on the UI will disappear once the customer has fully migrated all pre-existing environment configurations via the UI and it may take 1-2 business days for the message to disappear.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
