@@ -66,7 +66,7 @@ Customers using the Connected Assets feature can now easily view and track asset
 
 ## Cloud Manager {#cloud-manager}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.3.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.3.0.
 
 ## Release Date {#release-date-cm-march}
 
