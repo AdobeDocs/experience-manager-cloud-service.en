@@ -11,7 +11,7 @@ This page lists the self-help resources about onboarding for Experience Manager 
 
 This section covers the key articles focussed on:
 
-* requirements for accessing Experience Manager as a Cloud Service
+* Getting Started with AEM as a Cloud Service
 * understanding roles for users which govern the availability of specific features
 * setting up Cloud Manager git repository
 * accessing Experience Manager as a Cloud Service

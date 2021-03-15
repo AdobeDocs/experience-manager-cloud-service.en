@@ -32,3 +32,12 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 * **Deletion Failed** 
    Deletion of Custom Domain name failed. You must retry. Refer to [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) to learn more.
 
+
+## Pre-existing CDN Configurations for IP Allowlists {#pre-existing-cdn}
+
+Customers with environments that includes pre-existing CDN configurations for IP Allowlists (SSL certificates or Custom Domain Names) will see the following message in the the **IP Allowlist** and the **Environment** details page. 
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+In order to see and manage the pre-existing configurations they must be added via the UI.
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
