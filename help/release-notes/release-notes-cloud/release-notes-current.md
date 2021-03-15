@@ -94,11 +94,11 @@ The next release is planned for April 08, 2021.
 
 * The **Version** label has been relabeled to **Git Tag** in the Production pipeline execution screen.
 
-* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior – **Cancel Immediately** and **Approve Immediately**.
+* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior: **Cancel Immediately** and **Approve Immediately**.
 
 * The class and method deprecation lists have been updated based on version `2021.3.4997.20210303T022849Z-210225` of the AEM Cloud Service SDK.
 
-* Cloud Manager Production pipeline will now include Custom UI testing capability.
+* Cloud Manager Production pipeline will now include [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capability.
 
 ### Bug Fixes {#bug-fixes-cm-march}
 
