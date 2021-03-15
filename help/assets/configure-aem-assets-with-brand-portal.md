@@ -10,7 +10,7 @@ Configuring Adobe Experience Manager Assets Brand Portal allows you to publish a
 
 ## Activate Brand Portal using Cloud Manager {#activate-brand-portal}
 
-The Cloud Manager user activates Brand Portal for an AEM Assets as a [!DNL Cloud Service] instance. The activation workflow creates the required configurations (authorization token, IMS configuration, and Brand Portal cloud service) at the backend and reflects the status of the Brand Portal tenant in Cloud Manager.
+The Cloud Manager user activates Brand Portal for an AEM Assets as a [!DNL Cloud Service] instance. The activation workflow creates the required configurations (authorization token, IMS configuration, and Brand Portal cloud service) at the backend and reflects the status of the Brand Portal tenant in Cloud Manager. Activating Brand Portal enables the AEM Assets users to publish assets to Brand Portal and distribute them to the Brand Portal users.  
 
 **Prerequisites** 
 
@@ -21,7 +21,7 @@ You require the following to activate Brand Portal on your AEM Assets as a [!DNL
 
 >[!NOTE]
 >
->An AEM Assets as a [!DNL Cloud Service] instance is entitled to connect only one Brand Portal tenant. You can create multiple environments (development, production, and stage) for your AEM Assets as a [!DNL Cloud Service] instance, wherein Brand Portal is activated only on one environment.
+>An AEM Assets as a [!DNL Cloud Service] instance is entitled to connect with only one Brand Portal tenant. You can have multiple environments (development, production, and stage) for your AEM Assets as a [!DNL Cloud Service] instance, wherein Brand Portal is activated on one environment.
 
 **Steps to activate Brand Portal**
 
@@ -43,6 +43,15 @@ You can activate Brand Portal while creating the environments for your AEM Asset
 
    ![View Status](assets/create-environment5.png)
 
+
+>[!NOTE]
+>
+>Brand Portal must be activated on the same IMS org as of the AEM Assets as a [!DNL Cloud Service] instance.
+>
+>If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Conosle](#manual-configuration)) for an IMS org (org1-existing) and your AEM Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager will reset your IMS org to `org2-new`. Although, the manually configured cloud configuration on `org1-existing` will be visible in your AEM Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
+>
+>If the existing Brand Portal cloud configuration and AEM Assets as a [!DNL Cloud Service] instance are using the same IMS org (org1), you only have to activate Brand Portal from the Cloud Manager. 
+
 **See also**:
 * [Add users and roles in AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
 
@@ -55,13 +64,15 @@ After activation of your Brand Portal tenant in Cloud Manager, you can login to 
 
 The default URL of your Brand Portal tenant is: `https://<tenant-id>.brand-portal.adobe.com/`.
 
+Wherein, the Tenant id is the IMS org.
+
 Perform the following steps if you are not sure of the Brand Portal URL:
 
 1. Log in to [Admin Console](http://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
 1. From the left rail, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
 1. Click on **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
 
-   Or copy the Brand Portal tenant URL and paste it in your browser to open the Brand Portal interface.
+   Or copy the Brand Portal tenant URL from the **[!UICONTROL Go to Brand Portal]** link and paste it in your browser to open the Brand Portal interface.
 
    ![Access Brand Portal](assets/access-bp-on-cloud.png)
 
