@@ -76,12 +76,13 @@ The next release is planned for April 08, 2021.
 
 ### What's New {#what-is-new-march}
 
-* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) will see a message about their previously existing configurations and will be able to self-serve via the UI. Users can now:
+* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) will see a message about their previously existing configurations and will be able to self-serve via the UI. 
+
+* Users with requisite permissions can now edit a Program, allowing them to do the following in a self-service manner: 
+
    * Add Sites solution to an existing program with Assets (or vice-versa).
    * Remove Sites (or Assets) from an existing program with both Sites and Assets.
-   * Add second, unused solution entitlement either to an existing program or as a new Program.
-
-* Users with requisite permission can now edit Program, allowing them to do the following in a self-service manner. 
+   * Add second, unused solution entitlement either to an existing program or as a new Program. 
 
 * **AEM Push Update** label will now be displayed for both *Pipeline Execution* and *Activity* screens.
 
