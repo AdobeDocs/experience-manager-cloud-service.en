@@ -80,8 +80,8 @@ The next release is planned for April 08, 2021.
 
 * Users with requisite permissions can now edit a Program, allowing them to do the following in a self-service manner: 
 
-   * Add Sites solution to an existing program with Assets (or vice-versa).
-   * Remove Sites (or Assets) from an existing program with both Sites and Assets.
+   * Add Sites solution to an existing program with Assets or vice-versa.
+   * Remove Sites or Assets from an existing program with both Sites and Assets.
    * Add second, unused solution entitlement either to an existing program or as a new Program. 
 
 * **AEM Push Update** label will now be displayed for both *Pipeline Execution* and *Activity* screens.
