@@ -201,6 +201,8 @@ Once the ingestion process is complete, you can use delta content, by using the 
 
 ### Viewing Logs for a Migration Set {#viewing-logs-migration-set}
 
+Upon completion of each step (extraction and ingestion) check the logs and look for errors.  Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe support.
+
 You can view logs for an existing migration set from the *Overview* page.
 Follow the steps below:
 
@@ -261,6 +263,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 Refer to [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) for more details.
 
 The files created in the *OUT_DIR* specified above for consistency can then be checked for paths missing binaries and appropriate action taken like restoring from a backup, deleting the paths, re-indexing, and so on.
+
 
 ### UI Behavior {#ui-behavior}
 
