@@ -56,6 +56,8 @@ As application changes due to the Blue-Green deployment pattern are enabled by a
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
 
+Some additional restrictions apply for these code packages, for example [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
+
 ## OSGI Configuration {#osgi-configuration}
 
 As mentioned above, OSGI configuration should be committed to source control rather than through the web console. Techniques to do so include:
