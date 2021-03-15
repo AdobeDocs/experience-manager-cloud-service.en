@@ -80,6 +80,7 @@ The recommended application deployment structure is as follows:
             + Groups
             + ACLs (permissions)
 
+
 ### Content Packages
 
 + The `ui.content` package contains all content and configuration. The Content Package, contains all the node definitions not in the `ui.apps` or `ui.config` packages, or in other words, anything not in `/apps` or `/oak:index`. Common elements of the `ui.content` package include, but are not limited to:
@@ -131,9 +132,10 @@ For example, an AEM project that includes 2 vendor AEM applications might look l
 
 Packages are to be marked with their declared package type.
 
-+ Container packages must set their `packageType` to `container`.
++ Container packages must set their `packageType` to `container`. Container packages must not directly contain OSGi bundles, OSGi configurations and are not allowed to use [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
+
 
 For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#marking-packages-for-deployment-by-adoube-cloud-manager) below.
 

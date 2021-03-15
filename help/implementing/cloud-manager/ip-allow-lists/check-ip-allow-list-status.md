@@ -35,3 +35,14 @@ Once Delete operation is completed, the IP Allow List will:
    * The status will remain Delete Failed until all failures are cleared. User must select Delete from the **...** menu at the far right of the row in the table to clear any failure. 
    * User will not be Allow to Update IP Allow List while the status is Failed.
 
+## Pre-existing CDN Configurations for IP Allow Lists {#pre-existing-cdn}
+
+Customers with environments that includes pre-existing CDN configurations for IP Allow Lists, SSL Certificates or Custom Domain Names will see the following message in the the **IP Allow List** and the **Environment** details page. The message displayed on the UI will disappear once the customer has fully migrated all pre-existing environment configurations via the UI and it may take 1-2 business days for the message to disappear.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>In order to see and manage the pre-existing configurations they must be added via the UI, as shown in the figure below.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+
