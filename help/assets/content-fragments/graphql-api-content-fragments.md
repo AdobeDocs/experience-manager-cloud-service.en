@@ -285,6 +285,16 @@ So for example, if you:
 
 The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
+### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
+
+When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
+
+>[!NOTE]
+>
+>The AEM UI prevents this happening, but if publishing is made programmatically, or with content packages, it can occur.
+
+When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
+
 ## Fields {#fields}
 
 Within the schema there are individual fields, of two basic categories:
