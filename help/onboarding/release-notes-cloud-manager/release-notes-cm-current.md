@@ -23,21 +23,21 @@ The next release is planned for April 08, 2021.
    * Remove Sites (or Assets) from an existing program with both Sites and Assets.
    * Add second, unused solution entitlement either to an existing program or as a new Program.
 
-* AEM Push Update" label will now be displayed for both Pipeline Execution and Activity screens.
+* **AEM Push Update** label will now be displayed for both Pipeline Execution and Activity screens.
 
-*  If an environment is hibernated but there is also an AEM update available, the “Hibernated” status will take precedence over “Update available”.
+*  If an environment is hibernated but there is also an AEM update available, the **Hibernated** status will take precedence over **Update available**.
 
 * Users can now see their Cloud Manager role(s) by selecting the 'View Cloud Manager Role(s)' option after navigating to the User Profile icon (top right) of Unified Shell. 
 
-* The label "Application for Approval" has been relabeled to "Production Approval" for greater clarity.
+* The label **Application for Approval** has been relabeled to **Production Approval** for greater clarity.
 
-* The "Version" label has been relabeled to "Git Tag" in the Production pipeline execution screen.
+* The **Version** label has been relabeled to **Git Tag** in the Production pipeline execution screen.
 
-* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior – Cancel Immediately and Approve Immediately.
+* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior: **Cancel Immediately** and **Approve Immediately**.
 
 * The class and method deprecation lists have been updated based on version `2021.3.4997.20210303T022849Z-210225` of the AEM Cloud Service SDK.
 
-* Cloud Manager Production pipeline will now include Custom UI testing capability.
+* Cloud Manager Production pipeline will now include [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capability.
 
 ### Bug Fixes  {#bug-fixes}
 
