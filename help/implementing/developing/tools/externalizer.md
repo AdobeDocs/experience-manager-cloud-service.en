@@ -11,9 +11,9 @@ Because an AEM as a Cloud Service instance cannot know its externally visible UR
 
 This article explains how to configure the Externalizer service and how to use it. For technical details of the service, please refer to the [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
 
-## Default Values for AEM as a Cloud Service {#default-values}
+## Default Behavior of the Externalizer and How to Override {#default-behavior}
 
-By default, the Externalizer service will have values such as `author-p12345-e6789.adobeaemcloud.com` and `publish-p12345-e6789.adobeaemcloud.com`.
+Out-of-the box, the Externalizer service has values such as `author-p12345-e6789.adobeaemcloud.com` and `publish-p12345-e6789.adobeaemcloud.com` already set so that without any intervention, your AEM as a Cloud Service installation uses your custom domain.
 
 To override such values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_AUTHOR` and `AEM_CDN_DOMAIN_PUBLISH` variables.
 
