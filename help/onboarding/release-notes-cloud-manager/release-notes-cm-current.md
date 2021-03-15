@@ -10,12 +10,16 @@ This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service
 ## Release Date {#release-date}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.3.0 is March 11, 2021.
+The next release is planned for April 08, 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### What's New {#what-is-new}
 
-* Customers with environments with pre-existing CDN configurations for IP Allowlists, SSL certificates and custom domain names will see a message about their previously existing configurations and will be able to self-serve via the UI. 
+* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) will see a message about their previously existing configurations and will be able to self-serve via the UI. Users can now:
+   * Add Sites solution to an existing program with Assets (or vice-versa).
+   * Remove Sites (or Assets) from an existing program with both Sites and Assets.
+   * Add second, unused solution entitlement either to an existing program or as a new Program.
 
 * Users with requisite permission can now Edit Program, allowing them to do the following in a self-service manner. 
 
