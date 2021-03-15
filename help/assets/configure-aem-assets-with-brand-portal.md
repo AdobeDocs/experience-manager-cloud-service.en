@@ -39,7 +39,7 @@ You can activate Brand Portal while creating the environments for your AEM Asset
 
    ![Activate Brand Portal](assets/create-environment4.png)
 
-1. It may take few mins to activate the Brand Portal tenant as the activation workflow creates the required configurations at the backend. Once the Brand Portal tenant is activated, the status changes to Activated. 
+1. It takes few mins to activate the Brand Portal tenant as the activation workflow creates the required configurations at the backend. Once the Brand Portal tenant is activated, the status changes to Activated. 
 
    ![View Status](assets/create-environment5.png)
 
@@ -48,7 +48,7 @@ You can activate Brand Portal while creating the environments for your AEM Asset
 >
 >Brand Portal must be activated on the same IMS org as of the AEM Assets as a [!DNL Cloud Service] instance.
 >
->If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Conosle](#manual-configuration)) for an IMS org (org1-existing) and your AEM Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager will reset your IMS org to `org2-new`. Although, the manually configured cloud configuration on `org1-existing` will be visible in your AEM Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
+>If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Console](#manual-configuration)) for an IMS org (org1-existing) and your AEM Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager resets the Brand Portal IMS org to `org2-new`. Although the manually configured cloud configuration on `org1-existing` will be visible in the AEM Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
 >
 >If the existing Brand Portal cloud configuration and AEM Assets as a [!DNL Cloud Service] instance are using the same IMS org (org1), you only have to activate Brand Portal from the Cloud Manager. 
 
@@ -60,7 +60,7 @@ You can activate Brand Portal while creating the environments for your AEM Asset
 
 **Log in to your Brand Portal tenant**:
 
-After activation of your Brand Portal tenant in Cloud Manager, you can login to Brand Portal from Admin Console or by directly using the tenant URL.
+After activation of your Brand Portal tenant in Cloud Manager, you can log in to Brand Portal from Admin Console or by directly using the tenant URL.
 
 The default URL of your Brand Portal tenant is: `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -135,7 +135,7 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experien
 
 You can monitor the distribution agent logs for the asset publishing workflow. 
 
-For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
+Let us now publish an asset from AEM Assets to Brand Portal and see the logs. 
 
 1. Follow the steps (from 1 to 4) as shown in the **Test connection** section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
@@ -144,7 +144,7 @@ For example, we have published an asset from AEM Assets to Brand Portal to valid
 
 The distribution agent has generated the following logs:
 
-* INFO: This is a system-generated log that triggers on successful configuration of the distribution agent. 
+* INFO: It is a system-generated log that triggers on successful configuration of the distribution agent. 
 * DSTRQ1 (Request 1): Triggers on test connection.
 
 On publishing the asset, the following request and response logs are generated:
@@ -159,7 +159,7 @@ On publishing the asset, the following request and response logs are generated:
 * queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
 * queue-bpdistributionagent0 (DSTRQ3): The system replicates the AEM Assets folder (containing the asset) in Brand Portal.
 
-In the above example, an additional request and response is triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
+In the above example, an additional request and response are triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Along with the automation workflow to activate Brand Portal on AEM Assets as a [
 
 >[!NOTE]
 >
->You must contact Adobe Support if you are facing any problem while activating your Brand Portal tenant.
+>Contact Adobe Support if you are facing any problem while activating your Brand Portal tenant.
 
 ## Manual configuration using Adobe Developer Console {#manual-configuration}
 
@@ -230,7 +230,7 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
 
 1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
-   The public key will be used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
+   The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
    ![Download Certificate](assets/ims-config3.png)
 
