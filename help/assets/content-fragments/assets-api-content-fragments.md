@@ -299,17 +299,20 @@ There are a few limitations:
 The following status codes can be seen in the relevant circumstances:
 
 * **200** (OK)
+
   Returned when:
 
   * requesting a content fragment via `GET`
   * successfully updating a content fragment via `PUT`
 
 * **201** (Created)
+
   Returned when:
 
   * successfully creating a content fragment via `POST`
 
 * **404** (Not found)
+
   Returned when:
 
   * the requested content fragment does not exist
