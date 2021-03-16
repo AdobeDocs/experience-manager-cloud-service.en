@@ -21,7 +21,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Before you use or configure this capability, ensure the following:
 
 * The users are part of the appropriate user groups on each deployment.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. For more information about how this functionality works in [!DNL Experience Manager] 6.5, see [Connected Assets in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. For more information about how this functionality works in [!DNL Experience Manager] 6.5, see [Connected Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
   | |[!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS| [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise|
   |---|---|---|---|
@@ -38,7 +38,7 @@ Authors search for images and the following types of documents in Content Finder
 
 ### Users and groups involved {#users-and-groups-involved}
 
-The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where an author creates a web page. Remote scope is used for the DAM deployment. The [!DNL Sites] author fetches these remote assets.
+The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where an author creates a web page. Remote scope is used for the DAM deployment hosting the required assets. The [!DNL Sites] author fetches these remote assets.
 
 | Role | Scope | User group | User name in walk-through | Requirement |
 |------|--------|-----------|-----|----------|
@@ -62,7 +62,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 1. Ensure that the users and roles with the appropriate scope exist on the [!DNL Sites] deployment and on the [!DNL Assets] deployment on AMS. Create a technical user on [!DNL Assets] deployment and add to the user group mentioned in [users and groups involved](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
-1. Access the local [!DNL Sites] deployment at `https://[sites_servername]:port`. Click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]**. Provide the following values:
+1. Access the local [!DNL Sites] deployment at `https://[sites_servername]:port`. Click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]** and provide the following values:
 
     1. A **[!UICONTROL Title]** of the configuration.
     1. **[!UICONTROL Remote DAM URL]** is the URL of the [!DNL Assets] location in the format `https://[assets_servername]:[port]`.
@@ -77,7 +77,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
     *Figure: A typical configuration for Connected Assets functionality.*
 
-1. The existing digital assets on [!DNL Assets] deployment are already processed and the renditions are generated. These are fetched using this functionality so there is no need to regenerate the renditions. Disable the workflow launchers to prevent regeneration of renditions. Adjust the launcher configurations on the ([!DNL Sites]) deployment to exclude the `connectedassets` folder (the assets are fetched in this folder).
+1. The existing digital assets on [!DNL Assets] deployment are already processed and the renditions are generated. These renditions are fetched using this functionality so there is no need to regenerate the renditions. Disable the workflow launchers to prevent regeneration of renditions. Adjust the launcher configurations on the ([!DNL Sites]) deployment to exclude the `connectedassets` folder (the assets are fetched in this folder).
 
     1. On [!DNL Sites] deployment, click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 
@@ -87,11 +87,11 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
     1. In the [!UICONTROL Properties] wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
 
-   |                         Before                          |                                   After                                    |
-   | ------------------------------------------------------- | -------------------------------------------------------------------------- |
+   | Before  |   After |
+   | ------ | ------------ |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/.*/)renditions/original`                 | `/content/dam(/((?!connectedassets).)*/)renditions/original`               |
-   | `/content/dam(/.*)/jcr:content/metadata`                | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata`              |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
