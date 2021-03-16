@@ -153,6 +153,10 @@ The following actions can be performed on the Publish service for your environme
 
 1. [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
+1. [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+
+1. [Checking Status of an IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+
 ## Managing IP Allow Lists {#manage-ip-allow-lists} 
 
 Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
