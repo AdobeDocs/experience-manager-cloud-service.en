@@ -226,7 +226,7 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 
 **Some local builds might fail because of an issue with the Local Build Analyzer Plugin**
 
-In certain cases a local project build can fail during the execution of the `aemanalyser-maven-plugin` with the following error message:
+In certain cases a project build can fail during the execution of the `aemanalyser-maven-plugin` with the following error message:
 
 ```
 [ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
