@@ -265,6 +265,12 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
+>[!NOTE]
+>
+>AEM does not use the concept of namespacing for Content Fragment Models. 
+>
+>If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
+
 The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
 
 So for example, if you:

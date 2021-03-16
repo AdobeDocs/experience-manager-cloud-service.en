@@ -394,3 +394,25 @@ To unpublish a content fragment model:
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
+
+## Content Fragment Model - Properties {#content-fragment-model-properties}
+
+You can edit the **Properties** of a Content Fragment Model:
+
+* **Basic**
+  * **Model Title**
+  * **Tags**
+  * **Description**
+  * **Upload Image**
+
+* **GraphQL**
+  
+  >[!CAUTION]
+  >
+  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
+  >
+  >Updating these properties can impact dependent applications.
+
+  * **API Name**
+  * **Single Query Field Name**
+  * **Multiple Query Field Name**
