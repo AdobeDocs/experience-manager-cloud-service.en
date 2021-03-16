@@ -405,6 +405,7 @@ You can edit the **Properties** of a Content Fragment Model:
   * **Description**
   * **Upload Image**
 
+<!--
 * **GraphQL**
   
   >[!CAUTION]
@@ -416,3 +417,4 @@ You can edit the **Properties** of a Content Fragment Model:
   * **API Name**
   * **Single Query Field Name**
   * **Multiple Query Field Name**
+-->
