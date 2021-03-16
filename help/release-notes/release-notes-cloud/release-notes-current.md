@@ -245,12 +245,4 @@ To work around this issue, select the latest version of the `aemanalyser-maven-p
 ```xml
 <aemanalyser.version>0.9.2</aemanalyser.version>
 ```
-  
-
-
-
-
-
-
-
 
