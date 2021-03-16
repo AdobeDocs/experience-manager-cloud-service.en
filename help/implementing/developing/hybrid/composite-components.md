@@ -114,7 +114,7 @@ In this case, the card component is already created in your AEM project containi
 
    ![Node structure of the card component](assets/composite-node-structure.png)
 
-You can then 
+You can then add it to your SPA and retrieve its content.
 
 1. Create a corresponding component in the SPA for this. Ensure that the child components are mapped to their corresponding AEM resource types within the SPA project. In this example we use the same `AEMText` and `AEMImage` components as detailed [in the previous case.](#component-does-not-exist)
 
