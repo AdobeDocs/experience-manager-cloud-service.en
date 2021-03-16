@@ -29,7 +29,7 @@ The following sections give examples of implementing each case using the card co
 
 Start by creating the components that will make up the composite component, i.e. components for the image and its text.
 
-1. Create the text component.
+1. Create the text component in your AEM project.
 1. Add the corresponding `resourceType` from the project in the component's `editConfig` node.
 
    ```text
@@ -110,9 +110,11 @@ This will display an empty placeholder for a text and an image in the editor. Wh
 
 ### The component exists in your AEM project but its required content does not. {#content-does-not-exist}
 
-1. Create the card component on AEM containing title and image nodes. The child nodes (text and image) have the corresponding resource types.
+In this case, the card component is already created in your AEM project containing title and image nodes. The child nodes (text and image) have the corresponding resource types.
 
    ![Node structure of the card component](assets/composite-node-structure.png)
+
+You can then 
 
 1. Create a corresponding component in the SPA for this. Ensure that the child components are mapped to their corresponding AEM resource types within the SPA project. In this example we use the same `AEMText` and `AEMImage` components as detailed [in the previous case.](#component-does-not-exist)
 
