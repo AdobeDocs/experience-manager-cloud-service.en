@@ -5,7 +5,7 @@ description: Learn how to create your own composite components, components made 
 
 # Composite Components in SPAs {#composite-components-in-spas}
 
-Composite components leverage the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, which can be accomplished as combination of the image and text components.
+Composite components leverage the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, made of a combination of the image and text components.
 
 When composite components are properly implemented within the AEM Single Page Application (SPA) Editor framework, the content authors can drag and drop such components as they would any other component, but still have the ability to individually edit each component making up the composite component.
 
@@ -42,7 +42,7 @@ Start by creating the components that will make up the composite component, i.e.
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-The text component should look similar to the following.
+The text component will be similar to the following.
 
 ```javascript
 import React from 'react';
@@ -71,14 +71,14 @@ export const Text = ({ cqPath, richText, text }) => {
 export const AEMText = withMappable(Text, TextEditConfig);
 ```
 
-If you create an image component in a similar way, you can then combine them into a new card component, using the image and text components as children.
+If you create an image component in a similar way, you can then combine it with the `AEMText` component into a new card component, using the image and text components as children.
 
 ```javascript
 import React from 'react';
 import { AEMText } from './AEMText';
 import { AEMImage } from './AEMImage';
 
-export const AEMCustomCard = ({ pagePath, itemPath}) => (
+export const AEMCard = ({ pagePath, itemPath}) => (
   <div>
     <AEMText
        pagePath={pagePath}
@@ -97,7 +97,7 @@ function Home() {
   return (
     <div className="Home">
       <h2>Current Adventures</h2>
-      <AEMCustomCard
+      <AEMCard
         pagePath='/content/wknd-spa/home' />
     </div>
   );
@@ -130,9 +130,9 @@ This will display an empty placeholder for a text and an image in the editor. Wh
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. Since there is no content for the `imagecard` component yet, add the card to the page. Include the existing container from AEM in the SPA.
+1. Since there is no content for the `imagecard` component, add the card to the page. Include the existing container from AEM in the SPA.
    * If there is a container already in the AEM project, we can include this in the SPA instead and add the component to the container from AEM instead.
-   * Ensure the Card component is mapped to the corresponding resource type in the SPA.
+   * Ensure the card component is mapped to the corresponding resource type in the SPA.
 
    ```javascript
    <ResponsiveGrid
