@@ -65,7 +65,10 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 
 ## XMP writeback to renditions {#xmp-writeback-to-renditions}
 
-This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. When you change the metadata for an asset from within [!DNL Assets] or while uploading the asset, the changes are initially stored within the asset node in the repository. However, [!DNL Assets] does not automatically propagate any metadata changes to the renditions of an asset. The XMP writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. The updates are stored in the metadata node in the asset hierarchy. This feature also embeds the updates in the binary files of the renditions. The feature writes back only those metadata properties that use a `jcr` namespace.
+This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. 
+When you change the metadata for an asset from within Assets or while uploading the asset, the changes are initially stored in the metadata node in the asset hierarchy. 
+
+The XMP writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. The feature writes back only those metadata properties that use `jcr` namespace, that is, a property named `dc:title` is written back but a property named `mytitle` is not.
 
 For example, consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
 
