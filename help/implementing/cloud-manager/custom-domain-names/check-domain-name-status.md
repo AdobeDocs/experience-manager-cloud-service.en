@@ -40,6 +40,6 @@ Customers with environments that includes pre-existing CDN configurations for IP
 >[!NOTE]
 >In order to see and manage the pre-existing configurations they must be added via the UI. Refer to [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
