@@ -42,8 +42,7 @@ Customers with environments that includes pre-existing CDN configurations for IP
 >[!NOTE]
 >In order to see and manage the pre-existing configurations they must be added via the UI. Refer to [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) for more details.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
 
