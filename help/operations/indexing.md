@@ -158,7 +158,7 @@ The new version of the application uses the following (changed) configuration:
 
 >[!NOTE]
 >
->Index definitions on AEm as a Cloud Service may not fully match the index definitions on a local development instance. The development instance does not have a Tika configuration, while AEM as a Cloud Service instances do have one. If you customize an index with a Tika configuration, please retain the Tika configuration.
+>Index definitions on AEM as a Cloud Service may not fully match the index definitions on a local development instance. The development instance does not have a Tika configuration, while AEM as a Cloud Service instances do have one. If you customize an index with a Tika configuration, please retain the Tika configuration.
 
 ### Undoing a Change {#undoing-a-change}
 
@@ -190,6 +190,8 @@ If an index is to be removed in a later version of the application, you can defi
         </indexRules>
     </acme.product-custom-3>
 ```
+
+If it is no longer needed to have a customization of an out-of-the-box index, then you need to copy the out-of-the-box index definition. For example, if you have already deployed `damAssetAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetAssetLucene-8` index, then you need to add an index `damAssetAssetLucene-8-custom-4` that contains the index definition of `damAssetAssetLucene-8`.
 
 ### Index Availability and Fault Tolerance {#index-availability-and-fault-tolerance}
 
