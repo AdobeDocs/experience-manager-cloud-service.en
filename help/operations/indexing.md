@@ -162,7 +162,7 @@ The new version of the application uses the following (changed) configuration:
 
 ### Undoing a Change {#undoing-a-change}
 
-Sometimes, a change in an index definition needs to be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetAssetLucene-8-custom-3` was made by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetAssetLucene-8-custom-2`. To do that, you need to add a new index called `damAssetAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetAssetLucene-8-custom-2`.
+Sometimes, a change in an index definition needs to be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetAssetLucene-8-custom-3` was created by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetAssetLucene-8-custom-2`. To do that, you need to add a new index called `damAssetAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetAssetLucene-8-custom-2`.
 
 ### Removing an Index {#removing-an-index}
 
@@ -170,15 +170,25 @@ The following only applies to custom indexes. Product indexes may not be removed
 
 If an index is to be removed in a later version of the application, you can define an empty index (an empty index that is never used, and does not contain any data), with a new name. For the purpose of this example, you can name it `/oak:index/acme.product-custom-3`. This replaces the index `/oak:index/acme.product-custom-2`. Once `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then also be removed. An example of such an empty index is:
 
-```
-{ "/oak:index/acme.product-custom-3": {
-    "jcr:primaryType": "nam:oak:QueryIndexDefinition",
-    "compatVersion": "2",
-    "includedPaths": "/dummy", "queryPaths": "/dummy",
-    "type": "lucene", "async": "async",
-    "indexRules": { "rep:root": { "properties": {
-          "dummy": { "propertyIndex": true, "name": "dummy" }
-} } } } }
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+    </acme.product-custom-3>
 ```
 
 ### Index Availability and Fault Tolerance {#index-availability-and-fault-tolerance}
