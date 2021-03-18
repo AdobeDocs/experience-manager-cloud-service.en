@@ -104,7 +104,7 @@ Also, there is no mechanism to rollback the mutable content package changes afte
 
 Any included 3rd party packages must be validated as being AEM as a Cloud Service Service compatible, otherwise its inclusion will result in a deployment failure.
 
-As mentioned above, customers with existing code bases should conform to the repository restructuring exercise described in [AEM documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html).
+As mentioned above, customers with existing code bases should conform to the repository restructuring exercise necessitated by the 6.5 repository changes described in the [AEM 6.5 documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Repoinit {#repoinit}
 
