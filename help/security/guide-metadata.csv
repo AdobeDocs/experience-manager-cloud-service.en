@@ -1,6 +1,6 @@
-"filename","title","description","feature","topic","role","level"
-"./metadata.md","","this is the metadata required for AEMaaCS documentation pages","","","",""
-"./help/security/TOC.md","","","","","",""
-"./help/security/home.md","Adobe Experience Manager as a Cloud Service Security","Adobe Experience Manager as a Cloud Service security self-help resources and documentation links","","","",""
-"./help/security/cloud-service-security-overview.md","AEM as a Cloud Service Security Overview","AEM as a Cloud Service Security Overview","","","",""
-"help/security/ims-support.md","IMS Support for Adobe Experience Manager as a Cloud Service","IMS Support for Adobe Experience Manager as a Cloud Service","","","",""
+filename,title,description,feature,topic,role,level
+./metadata.md,,this is the metadata required for AEMaaCS documentation pages,,,,
+./help/security/TOC.md,,,Configuring,,Administrator,
+./help/security/home.md,Adobe Experience Manager as a Cloud Service Security,Adobe Experience Manager as a Cloud Service security self-help resources and documentation links,,,,
+./help/security/cloud-service-security-overview.md,AEM as a Cloud Service Security Overview,AEM as a Cloud Service Security Overview,,,,
+help/security/ims-support.md,IMS Support for Adobe Experience Manager as a Cloud Service,IMS Support for Adobe Experience Manager as a Cloud Service,,,,

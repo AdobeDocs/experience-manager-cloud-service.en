@@ -1,5 +1,5 @@
-"filename","title","description","feature","topic","role","level"
-"./metadata.md","","this is the metadata required for AEMaaCS documentation pages","","","",""
-"./help/core-concepts/TOC.md","","","","","",""
-"./help/core-concepts/home.md","Core Concepts of Adobe Experience Manager as a Cloud Service","Adobe Experience Manager as a Cloud Service core concepts self-help resources and documentation links","","","",""
-"help/core-concepts/architecture.md","Introduction to the Architecture of Adobe Experience Manager as a Cloud Service","Introduction to the Architecture of Adobe Experience Manager as a Cloud Service. ","","","",""
+filename,title,description,feature,topic,role,level
+./metadata.md,,this is the metadata required for AEMaaCS documentation pages,,,,
+./help/core-concepts/TOC.md,,,Release Information,,Architect,
+./help/core-concepts/home.md,Core Concepts of Adobe Experience Manager as a Cloud Service,Adobe Experience Manager as a Cloud Service core concepts self-help resources and documentation links,,,,
+help/core-concepts/architecture.md,Introduction to the Architecture of Adobe Experience Manager as a Cloud Service,Introduction to the Architecture of Adobe Experience Manager as a Cloud Service. ,,,,
