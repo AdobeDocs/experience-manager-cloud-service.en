@@ -147,7 +147,7 @@ The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
 
 ### Known Issues {#known-issues-foundation}
 
-**Some builds might fail because of an issue with the Local Build Analyzer Plugin**
+**Some builds might fail because of an issue with the Build Analyzer Plugin**
 
 In certain cases a project build can fail during the execution of the `aemanalyser-maven-plugin` with the following error message:
 
