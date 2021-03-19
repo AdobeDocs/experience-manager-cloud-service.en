@@ -1,7 +1,7 @@
 ---
 title: Applying Dynamic Media viewer presets
 description: Learn how to apply viewer presets in Dynamic Media.
-feature: "Viewer Presets,Viewers"
+feature: Viewer Presets,Viewers
 topic: Business Practitioner
 ---
 

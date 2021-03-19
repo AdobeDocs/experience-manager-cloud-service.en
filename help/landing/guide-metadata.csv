@@ -1,4 +1,0 @@
-filename,title,description,feature,topic,role,level
-./metadata.md,,this is the metadata required for AEMaaCS documentation pages,,,,
-./help/landing/TOC.md,,,Release Information,,"Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner",
-./help/landing/home.md,Adobe Experience Manager as a Cloud Service User Guides,Adobe Experience Manager as a Cloud Service self-help resources and documentation links,,,,
