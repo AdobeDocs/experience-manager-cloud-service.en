@@ -67,7 +67,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   
     * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH` 
       * See [Sample Query - All Persons that do not have a name of "Jobs"](#sample-all-persons-not-jobs)
-      * See [Sample Query - All Adventures whose `_path` is starting with a specific prefix](#sample-wknd-all-adventures-cycling-path-filter)
+      * See [Sample Query - All Adventures where the `_path` starts with a specific prefix](#sample-wknd-all-adventures-cycling-path-filter)
   
   
     * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
@@ -656,7 +656,7 @@ query {
 
 ### Sample Query - All Adventures whose `_path` is starting with a specific prefix {#sample-wknd-all-adventures-cycling-path-filter}
 
-All `adventures` whose `_path` is starting with a specific prefix (`/content/dam/wknd/en/adventures/cycling`).
+All `adventures` where `_path` starts with a specific prefix (`/content/dam/wknd/en/adventures/cycling`).
 
 **Sample Query**
 
