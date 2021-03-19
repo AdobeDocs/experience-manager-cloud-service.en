@@ -656,7 +656,7 @@ query {
 
 ### Sample Query - All Adventures whose `_path` is starting with a specific prefix {#sample-wknd-all-adventures-cycling-path-filter}
 
-All `adventures` whose `_path` is starting with a specific prefix (`/content/dam/wknd/en/adventures/cycling`).
+All `adventures` where `_path` starts with a specific prefix (`/content/dam/wknd/en/adventures/cycling`).
 
 **Sample Query**
 
