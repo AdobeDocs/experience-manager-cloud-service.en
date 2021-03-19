@@ -39,7 +39,7 @@ When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields,
 
 In both cases, be aware that:
 
-* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
+* By default, the Client Code (if added first) is also automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
 * Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
 
@@ -68,7 +68,7 @@ To apply a Touch UI configuration to a site, go to: **Sites** → **Select any s
 
 ## Integrating Adobe Target on AEM sites by using Adobe Launch {#integrate-target-launch}
 
-AEM offers an out of the box integration with Experience Platform Launch. By adding the Adobe Target extension to Experience Platform Launch you can use the features of Adobe Target on AEM web page(s). Target libraries will only be rendered by using Launch.
+AEM offers an out of the box integration with Experience Platform Launch. By adding the Adobe Target extension to Experience Platform Launch, you can use the features of Adobe Target on AEM web pages. Target libraries will only be rendered by using Launch.
 
 >[!NOTE]
 >
@@ -111,12 +111,12 @@ A property is a container that is filled with extensions, rules, data elements.
 1. Select **Data Elements**.
 2. Select **Add Data Element**.
 3. Provide the name of data element and map it to a context hub parameter.
-4. elect **Save**.
+4. Select **Save**.
 ![Data Element](assets/data_elem1.png "Data Element")
 
 ### Creating a Page Rule {#page-rule}
 
-In **Rule** we define and order a sequence of actions, which will be executed on site, to achieve targeting.
+In **Rule** we define and order a sequence of actions, which are executed on site, to achieve targeting.
 
 1. Add a set of actions as exemplified in the screenshot.
 ![Actions](assets/rules1.png "Actions")
