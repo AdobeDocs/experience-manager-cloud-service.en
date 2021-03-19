@@ -121,7 +121,7 @@ Thread dumps on Cloud environments are collected on an ongoing basis, but cannot
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
-Note that on local development (using the cloud-ready quickstart), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+Note that on local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
