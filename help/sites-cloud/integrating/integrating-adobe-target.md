@@ -39,7 +39,7 @@ When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields,
 
 In both cases, be aware that:
 
-* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field. 
+* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
 * Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
 
