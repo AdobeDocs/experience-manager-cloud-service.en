@@ -3,6 +3,8 @@ sub-product: Operations and Maintenance on AEM as a Cloud Service
 user-guide-title: Operations and Maintenance on AEM as a Cloud Service
 breadcrumb-title: Operations Guide
 user-guide-description: Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.
+feature: Configuring
+role: Administrator
 ---
 
 # Operations {#operations}

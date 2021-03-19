@@ -1,6 +1,8 @@
 ---
 title: Reusing Content - Multi Site Manager and Live Copy
 description: Get an introduction to reusing content with AEM's powerful Live Copies and the Multi Site Manager features.
+feature: Multi Site Manager
+role: Administrator
 ---
 
 # Reusing Content: Multi Site Manager and Live Copy {#multi-site-manager-and-live-copy}

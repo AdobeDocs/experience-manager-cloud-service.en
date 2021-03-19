@@ -1,10 +1,11 @@
 ---
 title: Working with Selective Publish in Dynamic Media
-description: Information on how to work with Selective Publish in Dynamic Media.
+description: Learn how to work with Selective Publish in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+topic: Business Practitioner
 ---
 
 # Configuring selective publishing at the folder level in Dynamic Media {#selective-publish-configure-folder}
