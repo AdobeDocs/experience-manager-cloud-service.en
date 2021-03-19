@@ -2,6 +2,8 @@
 title: Publish assets, folders, and collections to Brand Portal
 description: Publish assets, folders, and collections to Brand Portal.
 contentOwner: Vishabh Gupta
+feature: Brand Portal
+role: Business Practitioner
 ---
 
 # Publish assets to Brand Portal {#publish-assets-to-brand-portal}
