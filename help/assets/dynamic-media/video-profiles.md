@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media Video Profiles
 description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
-feature: "Asset Management,Video Profiles,Renditions"
+feature: Asset Management,Video Profiles,Renditions
 topic: Business Practitioner
 ---
 

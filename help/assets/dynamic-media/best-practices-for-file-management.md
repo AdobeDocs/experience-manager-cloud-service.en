@@ -2,7 +2,7 @@
 title: Best practices for organizing your digital assets for using Dynamic Media Image Profiles or Video Profiles
 description: "Tips and best-practices for naming, organizing, and managing Dynamic Media image files and video asset files."
 contentOwner: Rick Brough
-feature: "Asset Management,Image Profiles,Video Profiles"
+feature: Asset Management,Image Profiles,Video Profiles
 topic: Business Practitioner
 ---
 

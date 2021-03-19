@@ -1,7 +1,7 @@
 ---
 title: Smart imaging
 description: "Learn how smart imaging applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement."
-feature: "Asset Management,Renditions"
+feature: Asset Management,Renditions
 topic: Business Practitioner
 ---
 

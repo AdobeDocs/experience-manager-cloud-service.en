@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media Image Profiles
 description: "Learn how to create Dynamic Media Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both. Then, apply the profile to a folder of image assets."
-feature: "Asset Management,Image Profiles,Renditions"
+feature: Asset Management,Image Profiles,Renditions
 topic: Business Practitioner
 ---
 

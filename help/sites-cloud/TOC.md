@@ -4,6 +4,7 @@ sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Authoring Content in AEM as a Cloud Service
 breadcrumb-title: Authoring Guide
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
+feature-set: Experience Manager Sites
 feature: Authoring
 role: Business Practitioner
 ---

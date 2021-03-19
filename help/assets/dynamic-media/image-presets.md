@@ -1,7 +1,7 @@
 ---
 title: Applying Dynamic Media Image Presets
 description: Learn how to apply image presets in Dynamic Media.
-feature: "Image Presets,Viewers,Renditions"
+feature: Image Presets,Viewers,Renditions
 topic: Business Practitioner
 ---
 
