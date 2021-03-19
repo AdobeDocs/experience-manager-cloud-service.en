@@ -13,7 +13,7 @@ To place these URL strings in your web pages and applications, copy them from Dy
 
 >[!NOTE]
 >
->URL strings are only available for dynamic renditions of assets. They are currently not available for static assets that reside in DAM and not the dynamic media server. The URL button does not appear for renditions that are static.
+>URL strings are only available for dynamic renditions of assets. They are currently not available for static assets that reside in DAM and not the Dynamic Media server. The URL button does not appear for renditions that are static.
 
 See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
