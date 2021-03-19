@@ -12,7 +12,7 @@ As part of the Adobe Marketing Cloud, Adobe Target lets you increase content rel
 * using the Touch UI to create a Target Configuration in AEM as a Cloud Service (IMS configuration required).
 * adding and configuring Adobe Target as an extension in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target you only need the Adobe Target Configuration and IMS.
+Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "experience targeting". For the Experience Fragments export to Target, you only need the Adobe Target Configuration and IMS.
 
 >[!NOTE]
 >
@@ -41,11 +41,11 @@ When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields,
 
 In both cases, be aware that:
 
-* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field. 
+* By default, the Client Code (if added first) is also automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
 * Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
 
-As stated previously, the first case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
+As stated previously, the first case is the most common for AEM as a Cloud Service. Either way, make sure that **both** fields contain the correct information depending on your requirements.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ To apply a Touch UI configuration to a site, go to: **Sites** → **Select any s
 
 ## Integrating Adobe Target on AEM sites by using Adobe Launch {#integrate-target-launch}
 
-AEM offers an out of the box integration with Experience Platform Launch. By adding the Adobe Target extension to Experience Platform Launch you can use the features of Adobe Target on AEM web page(s).Target libraries will only be rendered using Launch.
+AEM offers an out of the box integration with Experience Platform Launch. By adding the Adobe Target extension to Experience Platform Launch, you can use the features of Adobe Target on AEM web pages. Target libraries will only be rendered by using Launch.
 
 >[!NOTE]
 >
@@ -86,17 +86,17 @@ As a general overview, the integration steps are:
 
 ### Creating a Launch Property {#create-property}
 
-A property is a container that will be filled with extensions, rules, data elements.
+A property is a container that is filled with extensions, rules, data elements.
 
 1. Select the **New Property** button.
 2. Provide a name for your property.
-3. As the domain enter the IP/host on which you want to load the launch library.
+3. As domain, enter the IP/host on which you want to load the launch library.
 4. Select the **Save** button.
 ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### Adding the required extensions {#add-extension}
 
-**Extensions** is the container that manages the core library settings. The Adobe Target extension supports client-side implementations by using Target JavaScript SDK for the modern web, at.js. You need to add both the **Adobe Target** and **Adobe ContextHub** extensions.
+**Extensions** is the container that manages the core library settings. The Adobe Target extension supports client-side implementations by using Target JavaScript SDK for the modern web, at.js. You must add both the **Adobe Target** and **Adobe ContextHub** extensions.
 
 1. Select the Extension Catalog option, and search for Target in the filter.
 2. Select **Adobe Target** at.js and Click on the Install option.
@@ -113,12 +113,12 @@ A property is a container that will be filled with extensions, rules, data eleme
 1. Select **Data Elements**.
 2. Select **Add Data Element**.
 3. Provide the name of data element and map it to a context hub parameter.
-4. select **Save**.
+4. Select **Save**.
 ![Data Element](assets/data_elem1.png "Data Element")
 
 ### Creating a Page Rule {#page-rule}
 
-In **Rule** we define and order a sequence of actions, which will be executed on site, to achieve targeting.
+In **Rule** we define and order a sequence of actions, which are executed on site, to achieve targeting.
 
 1. Add a set of actions as exemplified in the screenshot.
 ![Actions](assets/rules1.png "Actions")
@@ -133,8 +133,8 @@ To learn how to build and publish please refer to this [page](https://docs.adobe
 
 | **Change** | **Classic UI Configuration** | **Touch UI Configuration** | **Consequences** |
 |---|---|---|---|
-| Location of the Target Configuration. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Earlier multiple configurations were present under /etc/cloudservices/testandtarget but now single configuration will be present under a tenant. |
+| Location of the Target Configuration. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Earlier multiple configurations were present under /etc/cloudservices/testandtarget but now a single configuration is present under a tenant. |
 
 >[!NOTE]
 >
->Legacy configurations are still supported for the existing customers (without the option to edit or create new ones). Legacy configurations will be part of content-packages uploaded by customer using VSTS.
+>Legacy configurations are still supported for existing customers (without the option to edit or create new ones). Legacy configurations will be part of content-packages uploaded by customers using VSTS.

@@ -198,7 +198,6 @@ These settings make parts of this site available offline and available locally o
 
 Not all PWA features are available for AEM Sites. These are a few notable limitations.
 
-* A user must browse the page at least once before it is cached offline.
 * Pages are not automatically synched or updated if the user is not using the app.
 
 Adobe also makes the following recommendations when you implement PWA.
