@@ -1,6 +1,7 @@
 ---
 title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service 
+feature: Dispatcher
 ---
 
 # Introduction {#intro}

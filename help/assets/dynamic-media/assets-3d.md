@@ -5,6 +5,8 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
+feature: 3D Assets
+topic: Business Practitioner
 ---
 
 # Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}

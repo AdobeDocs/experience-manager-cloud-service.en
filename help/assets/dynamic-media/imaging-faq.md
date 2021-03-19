@@ -1,6 +1,8 @@
 ---
 title: Smart imaging
-description: Smart imaging applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement.
+description: "Learn how smart imaging applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement."
+feature: Asset Management,Renditions
+topic: Business Practitioner
 ---
 
 # Smart Imaging {#smart-imaging}
