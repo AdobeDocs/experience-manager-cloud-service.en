@@ -65,8 +65,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
   * And operations:
   
-    * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`
+    * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH` 
       * See [Sample Query - All Persons that do not have a name of "Jobs"](#sample-all-persons-not-jobs)
+      * See [Sample Query - All Adventures whose `_path` is starting with a specific prefix](#sample-wknd-all-adventures-cycling-path-filter)
+  
   
     * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
       * See [Sample Query - Filter on an array with an item that must occur at least once](#sample-array-item-occur-at-least-once)
@@ -645,6 +647,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - All Adventures whose `_path` is starting with a specific prefix {#sample-wknd-all-adventures-cycling-path-filter}
+
+All `adventures` whose `_path` is starting with a specific prefix (`/content/dam/wknd/en/adventures/cycling`).
+
+**Sample Query**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
