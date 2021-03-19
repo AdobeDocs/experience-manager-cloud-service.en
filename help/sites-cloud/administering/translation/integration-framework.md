@@ -1,6 +1,8 @@
 ---
 title: Configuring the Translation Integration Framework
 description: Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
+feature: Language Copy
+role: Administrator
 ---
 
 # Configuring the Translation Integration Framework {#configuring-the-translation-integration-framework}

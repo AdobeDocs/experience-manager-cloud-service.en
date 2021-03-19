@@ -3,6 +3,8 @@ sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
+feature: Developing
+role: "Developer, Architect"
 ---
 
 # Implementing {#implementing}

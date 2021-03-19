@@ -1,6 +1,7 @@
 ---
 title: Dispatcher in the Cloud
 description: Dispatcher in the Cloud 
+feature: Dispatcher
 ---
 
 # Dispatcher in the Cloud {#Dispatcher-in-the-cloud}

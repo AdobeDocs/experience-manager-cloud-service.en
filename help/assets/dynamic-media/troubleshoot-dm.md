@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting Dynamic Media
 description: Troubleshooting tips when using Dynamic Media.
+topic: "Administrator,Business Practitioner"
 ---
 
 # Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}

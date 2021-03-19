@@ -1,6 +1,8 @@
 ---
 title: Integrating with Adobe Target
 description: Integrating with Adobe Target 
+feature: Administering
+role: Administrator
 ---
 
 # Integrating with Adobe Target{#integrating-with-adobe-target}

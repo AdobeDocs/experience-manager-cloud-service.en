@@ -1,6 +1,7 @@
 ---
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
+feature: Dispatcher
 ---
 
 # CDN in AEM as a Cloud Service {#cdn}

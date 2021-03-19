@@ -1,6 +1,8 @@
 ---
 title: Translating Content for Multilingual Sites
 description: Get an overview of how to translate content for multilingual sites.
+feature: Language Copy
+role: Administrator
 ---
 
 # Translating Content for Multilingual Sites {#translating-content-for-multilingual-sites}
