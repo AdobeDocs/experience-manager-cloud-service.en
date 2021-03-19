@@ -116,23 +116,18 @@ To open your fragment for editing:
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
 
-    * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
-    * Selecting the fragment, then **Edit** from the toolbar.
+   * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
+   * Selecting the fragment, then **Edit** from the toolbar.
 
-   The fragment editor will open:
+1. The fragment editor will open. Make your changes as required:
 
    ![fragment editor](assets/cfm-managing-03.png)
 
-   >[!NOTE]
-   >
-   >1. A message will be shown when the fragment is already referenced on a content page.
-   >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
-
-1. After making changes, use **Save** or **Cancel** as required.
+1. After making changes, use **Save & Close** or **Cancel** as required.
 
    >[!NOTE]
    >
-   >Both **Save** and **Cancel** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
+   >Both **Save & Close** and **Cancel** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
 
 ## Modes and Actions in the Content Fragment Editor {#modes-actions-content-fragment-editor}
 
@@ -152,11 +147,15 @@ Navigate through the various modes using the icons in the side panel:
 
 ![modes](assets/cfm-managing-04.png)
 
-### Toolbar Actions in theContent Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
+### Toolbar Actions in the Content Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
 
 Some features in the top toolbar are available from multiple modes:
 
 ![modes](assets/cfm-managing-top-toolbar.png)
+
+* A message will be shown when the fragment is already referenced on a content page.
+
+* The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
@@ -170,7 +169,13 @@ Some features in the top toolbar are available from multiple modes:
   * Modified: orange
   * Deactivated: red
 
-* **[Publish](#publishing-and-referencing-a-fragment)** the fragment.
+<!--
+* The icon **...** (three dots) opens a drop down that provides access to further actions:
+  * **[Quick publish](#publishing-and-referencing-a-fragment)**
+  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
+
+* If referenced fragments can be edited, selecting **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+-->
 
 ## Save, Cancel and Versions {#save-cancel-and-versions}
 
