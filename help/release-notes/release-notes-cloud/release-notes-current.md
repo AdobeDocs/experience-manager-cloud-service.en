@@ -156,6 +156,15 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 ## Content Transfer Tool {#content-transfer-tool}
 
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.3.4 is March 19, 2021.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* CTT was skipping content from folders with the same name but with a hyphen in the name. This has been fixed. 
+
+
 ### Release Date {#release-date-ctt-march}
 
 The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
