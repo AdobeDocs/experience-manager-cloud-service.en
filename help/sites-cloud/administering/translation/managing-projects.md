@@ -48,6 +48,10 @@ You can specify that the child pages of the selected page are also selected. In 
 
 You can also [manually create translation projects](#creating-a-translation-project-using-the-projects-console).
 
+>[!NOTE]
+>
+>To create a project, your account must be a member of the `project-administrators` group.
+
 ### Initial Translations and Updating Translations {#initial-and-updating}
 
 The References panel indicates whether the you are updating existing language copies or creating the first version of the language copies. When a language copy exists for the selected page, the Update Language Copies tab appears to provide access to project-related commands.
@@ -203,6 +207,10 @@ Use the commands and ellipsis buttons at the top and bottom of the tiles (respec
 ### Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 
 You can manually create a translation project if you prefer to use the projects console instead of the sites console.
+
+>[!NOTE]
+>
+>To create a project, your account must be a member of the `project-administrators` group.
 
 When you manually create a translation project, you must provide values for the following translation-related properties in addition to the [basic properties](/help/sites-cloud/authoring/projects/managing.md#creating-a-project):
 
