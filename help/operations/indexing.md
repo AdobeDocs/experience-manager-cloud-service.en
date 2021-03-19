@@ -7,7 +7,7 @@ description: Content Search and Indexing
 
 ## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-With AEM as a Cloud Service, Adobe is moving away from an AEM instance centric model to a service based view with n-x AEM Containers, driven by CI/CD pipelines in the Cloud Manager. Instead of configuring and maintaining Indexes on single AEM instances, the Index configuration has to be specified before a deployment. Configuration changes in production are clearly breaking CI/CD policies. The same holds true for index changes since it can impact system stability and performance if not specified tested and re-indexed before bringing them into production.
+With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric model to a service-based view with n-x AEM Containers, driven by CI/CD pipelines in the Cloud Manager. Instead of configuring and maintaining Indexes on single AEM instances, the Index configuration has to be specified before a deployment. Configuration changes in production are clearly breaking CI/CD policies. The same holds true for index changes since it can impact system stability and performance if not specified tested and reindexed before bringing them into production.
 
 Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
@@ -33,7 +33,7 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 ## How to Use {#how-to-use}
 
-Defining indexes can comprise of the 3 use cases:
+Defining indexes can comprise of theese three use cases:
 
 1. Adding a new customer index definition
 1. Updating an existing index definition. This effectively means adding a new version of an existing index definition
@@ -41,7 +41,7 @@ Defining indexes can comprise of the 3 use cases:
 
 For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service documentation](/help/implementing/deploying/overview.md).
 
-### Preparing the New Index Defition {#preparing-the-new-index-definition}
+### Preparing the New Index Definition {#preparing-the-new-index-definition}
 
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
@@ -103,7 +103,7 @@ During development, or when using on premise installations, indexes can be added
 
 With blue-green deployments, there is no downtime. However, for index management, this requires that indexes are only used by certain versions of the application. For example, when adding an index in version 2 of the application, you would not want it to be used by version 1 of the application yet. The reverse is the case when an index is removed: an index removed in version 2 is still needed in version 1. When changing an index definition, we want the old version of the index only to be used for version 1, and the new version of the index only to be used for version 2.
 
-The following table shows 5 index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
+The following table shows five index definitions: index `cqPageLucene` is used in both versions while index `damAssetLucene-custom-1` is used only in version 2.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ The following table shows 5 index definitions: index `cqPageLucene` is used in b
 | /oak:index/acme.product-custom-2  | No  | No  | Yes  |
 | /oak:index/cqPageLucene  | Yes  | Yes  | Yes  |
 
-The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes need to end with `-custom-<number>`.
+The version number is incremented each time the index is changed. In order to avoid custom index names colliding with index names of the product itself, custom indexes, as well as changes to out of the box indexes must end with `-custom-<number>`.
 
 ### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
 
@@ -136,7 +136,7 @@ Index management is currently only supported for indexes of type `lucene`.
 
 ### Adding an Index {#adding-an-index}
 
-To add an index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index needs to be configured as follows:
+To add an index named `/oak:index/acme.product-custom-1` to be used in a new version of the application and later, the index must be configured as follows:
 
 `acme.product-1-custom-1`
 
@@ -191,8 +191,8 @@ If an index is to be removed in a later version of the application, you can defi
     </acme.product-custom-3>
 ```
 
-If it is no longer needed to have a customization of an out-of-the-box index, then you need to copy the out-of-the-box index definition. For example, if you have already deployed `damAssetAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetAssetLucene-8` index, then you need to add an index `damAssetAssetLucene-8-custom-4` that contains the index definition of `damAssetAssetLucene-8`.
+If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetAssetLucene-8` index, then you must add an index `damAssetAssetLucene-8-custom-4` that contains the index definition of `damAssetAssetLucene-8`.
 
 ### Index Availability and Fault Tolerance {#index-availability-and-fault-tolerance}
 
-It is recommended to create duplicate indexes for features that are extremely important (keeping in mind the naming convention for indexes mentioned above), so in the case of index corruption or any such unforeseen event there is a fallback index available to respond to queries.
+It is recommended to create duplicate indexes for features that are important (keeping in mind the naming convention for indexes mentioned above), so in the case of index corruption or any such unforeseen event there is a fallback index available to respond to queries.
