@@ -1,44 +1,56 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.2.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.2.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.3.0
+description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.3.0
 ---
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.2.0 {#release-notes}
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.3.0 {#release-notes}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.2.0.
+This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.3.0.
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is February 11, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.3.0 is March 11, 2021.
+The next release is planned for April 08, 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### What's New {#what-is-new}
 
-* Assets customers will now be able to choose when and where to deploy their Brand Portal instance in a self-service way via Cloud Manager UI. For a regular (non sandbox) program with Assets solution, Brand Portal can now be provisioned on the Production environment. The provisioning can be done only once on Production environment.
+* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) will see a message about their previously existing configurations and will be able to self-serve via the UI. 
 
-* The AEM Project Archetype used in Project and Sandbox Creation has been updated to version 25. 
+* Users with requisite permissions can now edit a Program, allowing them to do the following in a self-service manner: 
+   * Add Sites solution to an existing program with Assets or vice-versa.
+   * Remove Sites or Assets from an existing program with both Sites and Assets.
+   * Add second, unused solution entitlement either to an existing program or as a new Program.
 
-* The list of deprecated APIs identified during code scanning has been refined to include additional classes and methods deprecated in the latest Cloud Service SDK releases.
+* **AEM Push Update** label will now be displayed for both Pipeline Execution and Activity screens.
 
-* SonarQube profile for Cloud Manager updated to remove Sonar rule squid:S2142. This will no longer conflict with Thread Interruption checks.
+*  If an environment is hibernated but there is also an AEM update available, the **Hibernated** status will take precedence over **Update available**.
 
-* Cloud Manager UI will inform the user who may not temporarily not be able to add/update domain name because the associated environment either has a running pipeline attached to it or currently in the waiting for the approval step.
+* Users can now see their Cloud Manager role(s) by selecting the 'View Cloud Manager Role(s)' option after navigating to the User Profile icon (top right) of Unified Shell. 
 
-* Properties set in customer `pom.xml` files prefixed with sonar will now be dynamically removed in order to avoid build and quality scanning failures.
+* The label **Application for Approval** has been relabeled to **Production Approval** for greater clarity.
 
-* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that's currently being deployed.
+* The **Version** label has been relabeled to **Git Tag** in the Production pipeline execution screen.
 
-* Additional Code Quality Rules have been added to cover Cloud Service Compatibility issues.
+* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior: **Cancel Immediately** and **Approve Immediately**.
+
+* The class and method deprecation lists have been updated based on version `2021.3.4997.20210303T022849Z-210225` of the AEM Cloud Service SDK.
+
+* Cloud Manager Production pipeline will now include [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capability.
 
 ### Bug Fixes  {#bug-fixes}
 
-* Matching SSL certificate against a domain name is no longer case sensitive.
+* Package versioning was skipped in some cases during AEM push upgrade.
 
-* Cloud Manager UI will now inform a user if the certificate private keys does not meet the 2048 bit limit with an appropriate error message.
+* Some quality issues were not properly discovered when packages were embedded in other packages.
 
-* Cloud Manager UI will inform the user who may not temporarily not be able to select an SSL certificate if it is in use by a Domain name that is currently being deployed.
+* In obscure situations, the default program name generated upon opening the Add Program dialog could be a duplicate of an existing program name. 
 
-* In some cases, an internal issue may cause environment deletion to be stuck. 
+* On occasion, if user navigates away from pipeline execution page immediately after starting a pipeline, an error message is displayed stating that the action failed, although the execution actually starts.
 
-* Some pipeline failures were incorrectly reported as pipeline errors. 
+* The build step was unnecessarily restarted when customer builds resulted in invalid packages.
+
+* On occasion, user may see a green "active" status next to an IP Allowlist even when that configuration was not deployed.
+
+* All existing production pipelines will be automatically enabled with the Experience Audit step.
