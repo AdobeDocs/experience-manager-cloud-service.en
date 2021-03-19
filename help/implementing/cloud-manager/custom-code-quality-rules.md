@@ -740,7 +740,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 
 **Since**: Version 2021.2.0
 
-AEM client libraries may contain static resources like images and fonts. As described in [Using Preprocessors](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), when using proxied client libraries these static resources must  be contained in a child folder named resources in order to be effectively referenced on the publish instances.
+AEM client libraries may contain static resources like images and fonts. As described in [Using Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), when using proxied client libraries these static resources must  be contained in a child folder named resources in order to be effectively referenced on the publish instances.
 
 #### Non Compliant Code {#non-compliant-proxy-enabled}
 
@@ -788,7 +788,7 @@ With the move to Asset micro-services for asset processing on AEM Cloud Service,
 
 **Since**: Version 2021.2.0
 
-While the use of static templates has historically been very common in AEM projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found on [Page Templates - Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
+While the use of static templates has historically been very common in AEM projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found on [Page Templates.](/help/implementing/developing/components/templates.md) Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### OakPAL - Usage of Legacy Foundation Components is Discouraged {#oakpal-usage-legacy}
 
