@@ -1,6 +1,8 @@
 ---
 title: Spin Sets
 description: Learn how to work with spin sets in Dynamic Media.
+feature: Spin Sets
+topic: Business Practitioner
 ---
 
 # Spin Sets{#spin-sets}
