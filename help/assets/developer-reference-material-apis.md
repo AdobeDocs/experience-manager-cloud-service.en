@@ -139,7 +139,7 @@ After all the parts of a binary file are uploaded, submit an HTTP POST request t
 | `versionComment` | String | Optional | If a new version is created, the comments associated with the version. |
 | `replace` | Boolean | Optional | If `True` and an asset with the specified name exists, [!DNL Experience Manager] deletes the asset then re-create it. |
 
->![NOTE]
+>[!NOTE]
 >
 >If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset's current version with the new binary.
 
