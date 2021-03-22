@@ -252,7 +252,7 @@ To annotate a fragment:
 
 1. Open the full-screen editor.
 
-1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
+1. The **Annotate** icon is available in the top toolbar. You can select some text if required.
 
    ![annotate](assets/cfm-variations-07.png)
 
@@ -429,7 +429,7 @@ To delete an existing variation:
 
 ### Synchronizing with Master {#synchronizing-with-master}
 
-**Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevent to the variations and, therefore, need to be propagated to them..
+**Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevant to the variations and, therefore, need to be propagated to them..
 
 When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This allows you to automatically copy changes made to Master to the required variation.
 
