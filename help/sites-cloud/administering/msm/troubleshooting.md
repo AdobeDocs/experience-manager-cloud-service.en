@@ -1,6 +1,8 @@
 ---
 title: Troubleshooting MSM Issues and FAQ
 description: Find out how to troubleshoot the most common MSM-related issues and get answers the most common MSM-related questions.
+feature: Multi Site Manager
+role: Administrator
 ---
 
 # Troubleshooting MSM Issues and FAQ {#troubleshooting-msm}
