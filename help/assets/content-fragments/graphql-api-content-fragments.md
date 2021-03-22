@@ -159,26 +159,6 @@ Additional configurations are required:
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint
   * Optional
-* OSGi Configuration:
-  * GraphQL Servlet Configuration:
-    * Handles requests to the endpoint
-    * The configuration name is `org.apache.sling.graphql.core.GraphQLServlet`. It needs to be provided as an OSGi factory configuration
-    * `sling.servlet.extensions` must be set to `[json]`
-    * `sling.servlet.methods` must be set to `[GET,POST]`
-    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
-    * Mandatory
-  * Schema Servlet Configuration:
-    * Creates the GraphQL schema
-    * The configuration name is `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`. It needs to be provided as an OSGi factory configuration
-    * `sling.servlet.extensions` must be set to `[GQLschema]`
-    * `sling.servlet.methods` must be set to `[GET]`
-    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
-    * Mandatory
-  * CSRF Configuration: 
-    * Security protection for the endpoint
-    * The configuration name is `com.adobe.granite.csrf.impl.CSRFFilter`
-    * Add `/content/cq:graphql/global/endpoint` to the existing list of excluded paths (`filter.excluded.paths`)
-    * Mandatory
 
 ### Supporting packages {#supporting-packages}
 
