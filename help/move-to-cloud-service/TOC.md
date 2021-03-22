@@ -3,6 +3,9 @@ sub-product: Move to AEM as a Cloud Service
 user-guide-title: Move to AEM as a Cloud Service
 breadcrumb-title: Move Guide
 user-guide-description: Understand the transition journey to Cloud Service.
+feature-set: Experience Manager Sites
+feature: Deploying
+role: Architect, Developer
 ---
 
 # Moving to AEM as a Cloud Service Guide {#moving}
