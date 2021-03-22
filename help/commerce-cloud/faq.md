@@ -82,6 +82,7 @@ AEM can be used as an authoring tool for any kind of store front. Currently, ser
 We recommend to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to https://magento.com/pci-compliance
 
 ## 19. If I use AEM and Magento cloud versions, is this joint solution PCI compliant?
+
 Yes, Self-Assessment Questionnaire D and Attestation of Compliance are available on-request.
 
 
