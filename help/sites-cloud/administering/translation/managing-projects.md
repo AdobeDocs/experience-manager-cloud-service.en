@@ -1,6 +1,8 @@
 ---
 title: Managing Translation Projects
 description: Learn how to create and manage both machine and human translation projects in AEM.
+feature: Language Copy
+role: Administrator
 ---
 
 # Managing Translation Projects {#managing-translation-projects}

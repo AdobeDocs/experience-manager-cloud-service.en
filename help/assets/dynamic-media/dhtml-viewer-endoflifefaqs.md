@@ -1,6 +1,7 @@
 ---
 title: DHTML Viewer End-of-Life
 description: Effective January 31, 2014, the DHTML viewer Platform is officially end-of-life.
+topic: Business Practitioner
 ---
 
 # DHTML Viewer End-of-Life {#dhtml-viewer-end-of-life}

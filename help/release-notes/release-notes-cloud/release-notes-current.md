@@ -43,10 +43,6 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 * In [!DNL Brand Portal], a new download setting is introduced, that lets you create separate folder for each asset when downloading folders, collection, and so on. See [download settings](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
-<!-- TBD: refine this list of features and enh. for Feb release.
-
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
-
 ## Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
 * When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
@@ -156,6 +152,15 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 ## Content Transfer Tool {#content-transfer-tool}
 
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.3.4 is March 19, 2021.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* CTT was skipping content from folders with the same name but with a hyphen in the name. This has been fixed. 
+
+
 ### Release Date {#release-date-ctt-march}
 
 The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
@@ -170,15 +175,15 @@ The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
 * When migrating content from a specific path, CTT was pulling in unrelated resources. This has been fixed
 
 
-### Release Date {#release-date-ctt}
+### Release Date {#release-date-ctt-feb}
 
 The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
 
-### Bug Fixes {#bug-fixes-ctt}
+### Bug Fixes {#bug-fixes-ctt-feb}
 
 * When mapping multiple users, some users’ IMS IDs were being mapped incorrectly. This has been fixed.
 
-### Release Date {#release-date-ctt-feb}
+### Release Date {#release-date-ctt-feb01}
 
 The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
@@ -190,6 +195,14 @@ The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 * Users are allowed to select certain paths under `/etc` when creating migration sets.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa-march}
+
+The Release Date for Best Practices Analyzer v2.1.8 is March 22, 2021.
+
+### What is new in Best Practices Analyzer {#what-is-new-bpa-march}
+
+* Ability to filter out ACS Commons findings from the BPA report in the UI as well as from the report exported as a CSV file. 
 
 ### Release Date {#release-date-bpa}
 

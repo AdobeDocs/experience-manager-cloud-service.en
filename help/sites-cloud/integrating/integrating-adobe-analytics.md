@@ -1,6 +1,8 @@
 ---
 title: Integrating with Adobe Analytics
 description: Integrating with Adobe Analytics 
+feature: Administering
+role: Administrator
 ---
 
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
