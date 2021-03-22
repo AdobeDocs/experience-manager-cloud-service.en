@@ -198,6 +198,17 @@ The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
 ### Release Date {#release-date-bpa}
 
+The Release Date for Best Practices Analyzer v2.1.8 is March 22, 2021.
+
+### What is new in Best Practices Analyzer {#what-is-new-bpa}
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+* Ability to filter out ACS Commons findings from the BPA report in the UI as well as from the report exported as a CSV file. 
+
+
+### Release Date {#release-date-bpa}
+
 The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 
 ### What is new in Best Practices Analyzer {#what-is-new-bpa}
