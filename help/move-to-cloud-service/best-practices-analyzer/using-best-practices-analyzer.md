@@ -85,8 +85,10 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
    
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
-   
-#### Using filters in the Best Practices Analyzer Report {#bpa-filters}
+
+
+#### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
+
 To filter out findings related to [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), follow the steps below:
 
 1. Click on the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click on the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
@@ -102,7 +104,6 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
    
    >[!NOTE]
    > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service 
-
    
 
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
