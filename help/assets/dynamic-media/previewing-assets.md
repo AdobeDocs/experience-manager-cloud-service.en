@@ -1,6 +1,8 @@
 ---
 title: Previewing Assets
 description: Learn how to preview assets in Dynamic Media.
+feature: Asset Management
+topic: Business Practitioner
 ---
 
 # Previewing assets{#previewing-assets}

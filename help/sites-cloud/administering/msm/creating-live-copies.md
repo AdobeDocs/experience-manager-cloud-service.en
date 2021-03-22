@@ -1,6 +1,8 @@
 ---
 title: Creating and Synchronizing Live Copies
 description: Learn how to create and synchronize Live Copies to reuse your content across your site.
+feature: Multi Site Manager
+role: Administrator
 ---
 
 # Creating and Synchronizing Live Copies {#creating-and-synchronizing-live-copies}

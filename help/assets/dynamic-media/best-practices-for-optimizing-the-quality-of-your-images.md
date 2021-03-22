@@ -2,6 +2,8 @@
 title: Best practices for optimizing the quality of your images
 description: Learn best practices you can use in Dynamic Media to optimize the quality of your image assets.
 contentOwner: Rick Brough
+feature: Asset Management
+topic: Business Practitioner
 ---
 
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}

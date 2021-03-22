@@ -1,6 +1,8 @@
 ---
 title: Delivering Dynamic Media Assets
 description: Learn how to deliver Dynamic Media assets.
+feature: Asset Management
+topic: Business Practitioner
 ---
 
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}

@@ -1,6 +1,8 @@
 ---
 title: Translation Best Practices
 description: Learn about best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
+feature: Language Copy
+role: Administrator
 ---
 
 # Translation Best Practices {#translation-best-practices}

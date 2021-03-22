@@ -1,6 +1,7 @@
 ---
 title: Configuring OSGi for Adobe Experience Manager as a Cloud Service
 description: OSGi Configuration With Secret Values and Environment-specific Values 
+feature: Deploying
 ---
 
 # Configuring OSGi for Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}

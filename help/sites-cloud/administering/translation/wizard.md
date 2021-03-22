@@ -1,6 +1,8 @@
 ---
 title: Language Copy Wizard
 description: Learn about using the Language Copy Wizard in AEM.
+feature: Language Copy
+role: Administrator
 ---
 
 # Language Copy Wizard {#language-copy-wizard}
