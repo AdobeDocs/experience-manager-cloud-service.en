@@ -128,24 +128,3 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       </tr>
     </tbody>
     </table>
-
-
-
-Experience Manager as a Cloud Service uses token based authentication to securely preview Dynamic Media content before it gets published. 
-
-However, by default preview content is unrestricted, so to restrict it to certain IP addresses, you must “allowlist” the client IP addresses(other than AEM author instance) allowed to preview content securely or add '127.0.0.1' if access to preview unpublished assets is allowed via AEM author instance only .
-
-To set up this action, do the following: 
-
-    Open the Dynamic Media Classic desktop application, then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
-
-    On the navigation bar near the upper right of the page, click Setup > Application Setup > Publish Setup > Image Server.
-
-    On the Image Server Publish page, in the Publish Context drop-down list, select Test Image Serving.
-
-    For the Client Address Filter, tap Add.
-
-    To enable (turn on) the address, select the check box, then enter the IP address of the AEM Author instance (not Dispatcher IP).
-
-    Click Save
-
