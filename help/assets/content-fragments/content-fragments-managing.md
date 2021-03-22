@@ -153,7 +153,7 @@ Some features in the top toolbar are available from multiple modes:
 
 ![modes](assets/cfm-managing-top-toolbar.png)
 
-* A message will be shown when the fragment is already referenced on a content page.
+* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
 
 * The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
@@ -163,19 +163,15 @@ Some features in the top toolbar are available from multiple modes:
 
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
-  * New: grey
-  * Draft: blue
-  * Published: green
-  * Modified: orange
-  * Deactivated: red
+  * **New**: grey
+  * **Draft**: blue
+  * **Published**: green
+  * **Modified**: orange
+  * **Deactivated**: red
 
-<!--
-* The icon **...** (three dots) opens a drop down that provides access to further actions:
+* The three dots (**...**) drop-down provides access to additional actions:
   * **[Quick publish](#publishing-and-referencing-a-fragment)**
   * **[Manage Publication](#publishing-and-referencing-a-fragment)**
-
-* If referenced fragments can be edited, selecting **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
--->
 
 ## Save, Cancel and Versions {#save-cancel-and-versions}
 

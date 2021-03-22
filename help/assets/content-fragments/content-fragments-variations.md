@@ -34,6 +34,9 @@ Perform a range of other actions depending on the data-type being edited; for ex
 
 When you open your content fragment for editing, the **Variations** tab will be open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields, of various data-types, that were defined in the content model. 
 
+For example:
+
+![full screen editor](assets/cfm-variations-02.png)
 You can:
 
 * make edits directly in the **Variations** tab
@@ -45,10 +48,8 @@ You can:
   * select the [Format](#formats)
   * see more editing options (for [Rich Text](#rich-text) format)
   * access a range of [actions](#actions)
- 
-For example:
 
-![full screen editor](assets/cfm-variations-02.png)
+* For **Fragment Reference** fields the **[Edit Content Fragment](#fragment-references-edit-content-fragment)** option can be available, depending on the model definition.
 
 ### Full Screen Editor {#full-screen-editor}
 
@@ -157,8 +158,11 @@ If the Content Fragment Model contains Fragment References, your fragment author
 
 #### Edit Content Fragment {#fragment-references-edit-content-fragment}
 
-The option **Edit Content Fragment** will open
-a new browser tab, with the content fragment open in the content fragment editor.
+The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+
+Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
+
+![Fragment References](assets/cfm-variations-editreference.png)
 
 #### New Content Fragment {#fragment-references-new-content-fragment}
 
@@ -235,6 +239,8 @@ Summarizing text is designed to help users reduce the length of their text to a 
     * Any sentences to be eliminated are highlighted in red, with strike-through.
     * Click on any highlighted sentence to keep it in the summarized content.
     * Click on any non-highlighted sentence to have it eliminated.
+    * The summarization statistics are shown: **Actual** and **Target**-
+    * You can **Preview** the changes.
 
    ![summarization comparison](assets/cfm-variations-06.png)
 
