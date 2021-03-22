@@ -34,7 +34,7 @@ The CIF add-on used with AEM Cloud Service enables data to flow from the commerc
 
 ## 7. What catalog size does AEM with CIF support?
 
-As product data and catalog pages get created and cached dynamically, there is no fix size limit. Catalog size is, however, only one aspect you have to consider. Cache ratio, concurrent data requests and page creation may all have an impact on the scalability and performance.
+This depends on a few additional aspects you have to consider. What is the cache ratio of your catalog data & pages? How many concurrent requests do you expect during peak hours? How scaleable are the APIs of your commerce solutions?
 
 ## 8. How does PIM play into this framework?
 
