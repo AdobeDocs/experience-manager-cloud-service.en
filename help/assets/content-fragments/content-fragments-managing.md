@@ -195,7 +195,7 @@ The editor has two options:
 
   >[!CAUTION]
   >
-  >In addition to simply saving your changes, **Save** also updates any references and ensures that the dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
+  >In addition to simply saving your changes, **Save** also updates any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
   >
   >
   >Please bear this in mind when using **Save** and then quickly re-entering the fragment editor to make and save further changes.
@@ -322,7 +322,7 @@ You can revert to a specific version of your fragment:
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
-Content Fragments must be published for use in the publish enviroment. They can be published:
+Content Fragments must be published for use in the publish environment. They can be published:
 
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
