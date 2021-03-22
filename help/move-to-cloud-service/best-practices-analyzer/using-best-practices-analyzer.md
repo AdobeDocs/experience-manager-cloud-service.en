@@ -72,7 +72,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -85,6 +85,25 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
    
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+
+#### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
+
+To filter out findings related to [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), follow the steps below:
+
+1. Click on the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click on the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   
+   >[!NOTE]
+   > The left rail icon will appear only if the BPA detects usage of ACS Commons.
+   
+1. Unselect the box to filter out all findings related to ACS Commons. You should see a **Filtered Finding Count** on the report as shown in the image below. The filter is also applied to the report when it is exported in a comma-separated-value (CSV) format.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   
+   >[!NOTE]
+   > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
    
 
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
