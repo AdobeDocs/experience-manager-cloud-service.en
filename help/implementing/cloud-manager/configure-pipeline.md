@@ -54,7 +54,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. Configure your deployment options.
 
-   ![](assets/setup-2.png)
+   ![](assets/setup-pipeline.png)
 
    You can define the trigger to start the pipeline:
 
@@ -66,8 +66,8 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    This is useful for customers who have the desire for more automated processes. The available options are:
 
    * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-   * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-   * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+   * **Cancel Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+   * **Approve immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
     
 1. The production pipeline settings includes a third tab labeled as **Experience Audit**. This option provides a table for the URL paths that should always be included in the Experience Audit. 
 

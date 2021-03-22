@@ -1,6 +1,8 @@
 ---
 title: Multi Site Manager and Translation
 description: Learn how to reuse your content across your project and manage multilingual websites in AEM.
+feature: Administering
+role: Administrator
 ---
 
 # Multi Site Manager and Translation {#msm-and-translation}
