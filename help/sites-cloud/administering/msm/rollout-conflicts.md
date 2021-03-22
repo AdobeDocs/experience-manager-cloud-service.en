@@ -1,6 +1,8 @@
 ---
 title: Rollout Conflicts
 description: Learn how to manage and resolve Multi Site Manager rollout conflicts.
+feature: Multi Site Manager
+role: Administrator
 ---
 
 # Rollout Conflicts {#msm-rollout-conflicts}

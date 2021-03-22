@@ -1,6 +1,8 @@
 ---
 title: Preparing Content for Translation
 description: Learn how to prepare content for translation.
+feature: Language Copy
+role: Administrator
 ---
 
 # Preparing Content for Translation {#preparing-content-for-translation}

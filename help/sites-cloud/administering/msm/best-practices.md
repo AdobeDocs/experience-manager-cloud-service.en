@@ -1,6 +1,8 @@
 ---
 title: MSM Best Practices
 description: Learn the best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.
+feature: Multi Site Manager
+role: Administrator
 ---
 
 # MSM Best Practices {#msm-best-practices}

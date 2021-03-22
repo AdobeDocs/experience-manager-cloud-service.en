@@ -39,10 +39,6 @@ The following release (2021.4.0) will be on April 29, 2021.
 
 * In [!DNL Brand Portal], a new download setting is introduced, that lets you create separate folder for each asset when downloading folders, collection, and so on. See [download settings](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
-<!-- TBD: refine this list of features and enh. for Feb release.
-
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
-
 ## Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
 * When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten. (CQ-4313594)
@@ -114,6 +110,15 @@ The next release is planned for April 08, 2021.
 * All existing production pipelines will be automatically enabled with the Experience Audit step.
 
 ## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.3.4 is March 19, 2021.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* CTT was skipping content from folders with the same name but with a hyphen in the name. This has been fixed. 
+
 
 ### Release Date {#release-date-ctt-march}
 
