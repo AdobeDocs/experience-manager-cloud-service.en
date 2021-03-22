@@ -103,7 +103,7 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
    
    >[!NOTE]
-   > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service 
+   > The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
    
 
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
