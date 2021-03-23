@@ -17,25 +17,23 @@ To access the API:
 
 The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
-After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
-
 >[!NOTE]
 >
->All the API calls related to uploading or updating assets or binaries in general (like renditions) is deprecated for AEM as a [!DNL Cloud Service] deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
+>All the API calls related to uploading or updating assets or binaries in general (like renditions) is deprecated for [!DNL Experience Manager] as a [!DNL Cloud Service] deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
 
 ## Content Fragments {#content-fragments}
 
-A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling Content Fragments.
+A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, among others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling Content Fragments.
 
 For further information, see [Content Fragments support in the [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 
-The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets). Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment data models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
+The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets). Also, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment data models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
 
 ### Folders {#folders}
 
-Folders are like directories in traditional file systems. They are containers for other folders or asserts. Folders have the following components:
+Folders are like directories as in the traditional file systems. Folder can contain just assets, just folders, or folders and assets. Folders have the following components:
 
 **Entities**: The entities of a folder are its child elements, which can be folders and assets.
 
@@ -59,7 +57,8 @@ Folders are like directories in traditional file systems. They are containers fo
 In [!DNL Experience Manager] an asset contains the following elements:
 
 * The properties and metadata of the asset.
-* Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or Adobe InDesign files.
+* Originally uploaded binary file of the asset. 
+* Multiple renditions as configured. These can be images of different sizes, videos of different encodings, or extracted pages from PDF or [!DNL Adobe InDesign] files.
 * Optional comments.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
@@ -88,7 +87,7 @@ The [!DNL Assets] HTTP API includes the following features:
 
 >[!NOTE]
 >
->For the ease of readability the following examples omit the full cURL notation. In fact the notation does correlate with [Resty](https://github.com/micha/resty) which is a script wrapper for `cURL`.
+>For the ease of readability the following examples omit the complete cURL notations. The notation correlates with [Resty](https://github.com/micha/resty) which is a script wrapper for cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -115,9 +114,14 @@ Retrieves a Siren representation of an existing folder and of its child entities
 
 ## Create a folder {#create-a-folder}
 
-Creates a new `sling`: `OrderedFolder` at the given path. If a `*` is provided instead of a node name, the servlet uses the parameter name as node name. Accepted as request data is either a Siren representation of the new folder or a set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`, useful for creating a folder directly from an HTML form. Additionally, properties of the folder can be specified as URL query parameters.
+Creates a `sling`: `OrderedFolder` at the given path. If `*` is provided instead of a node name, the servlet uses the parameter name as node name. The request accepts either of the following: 
 
-An API call fails with a `500` response code if the parent node of the provided path does not exist. A call returns a response code `409` if the folder already exists.
+* A Siren representation of the new folder 
+* A set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`. These are useful to create a folder directly from an HTML form. 
+
+Also, properties of the folder can be specified as URL query parameters.
+
+An API call fails with a `500` response code if the parent node of the provided path does not exist. A call returns a response code `409` if the folder exists.
 
 **Parameters**: `name` is the folder name.
 
@@ -129,7 +133,7 @@ An API call fails with a `500` response code if the parent node of the provided 
 **Response codes**: The response codes are:
 
 * 201 - CREATED - on successful creation.
-* 409 - CONFLICT - if folder already exist.
+* 409 - CONFLICT - if folder exists.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
 
@@ -156,7 +160,7 @@ Updates the Asset metadata properties. If you update any property in the `dc:` n
 
 ## Create an asset rendition {#create-an-asset-rendition}
 
-Create a new asset rendition for an asset. If request parameter name is not provided, the file name is used as rendition name.
+Create a rendition for an asset. If request parameter name is not provided, the file name is used as rendition name.
 
 **Parameters**: The parameters are `name` for name of the rendition and `file` as a file reference.
 
@@ -174,7 +178,7 @@ Create a new asset rendition for an asset. If request parameter name is not prov
 
 ## Update an asset rendition {#update-an-asset-rendition}
 
-Updates respectively replaces an asset rendition with the new binary data.
+Updates respectively replace an asset rendition with the new binary data.
 
 **Request**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
@@ -186,8 +190,6 @@ Updates respectively replaces an asset rendition with the new binary data.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
 
 ## Add a comment on an asset {#create-an-asset-comment}
-
-Creates a new asset comment.
 
 **Parameters**: The parameters are `message` for the message body of the comment and `annotationData` for the Annotation data in JSON format.
 
@@ -227,7 +229,7 @@ Moves a folder or asset at the given path to a new destination.
 
 * `X-Destination` - a new destination URI within the API solution scope to copy the resource to.
 * `X-Depth` - either `infinity` or `0`. Using `0` only copies the resource and its properties and not its children.
-* `X-Overwrite` - Use either `T` to force delete an existing resources or `F` to prevent overwriting an existing resource.
+* `X-Overwrite` - Use either `T` to forcibly delete an existing resources or `F` to prevent overwriting an existing resource.
 
 **Request**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -253,6 +255,12 @@ Deletes a resource (-tree) at the provided path.
 * 200 - OK - if folder has been deleted successfully.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
+
+## Tips, best practices, and limitations {#tips-limitations}
+
+* After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
+
+* Do not use `/adobe` as URL or JCR path. Do not register any servlets under this tree or create content in JCR.
 
 >[!MORELIKETHIS]
 >

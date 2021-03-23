@@ -1,6 +1,8 @@
 ---
 title: Identifying Content to Translate
 description: Learn how translation rules identify content that needs translating.
+feature: Language Copy
+role: Administrator
 ---
 
 # Identifying Content to Translate {#identifying-content-to-translate}
