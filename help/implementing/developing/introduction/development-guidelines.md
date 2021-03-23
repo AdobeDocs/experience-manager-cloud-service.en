@@ -155,6 +155,15 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 
 For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
+### Examining Differences Between Pods in Status Outputs {#exammining-differences-between-pods-in-status-outputs}
+
+When getting status outputs, you will notice a **Difference** option in the top left corner of the output screen. This is designed to show differences between pods. The option can be clicked if there is a second pod of the same service (like author) for it to be compared with.
+
+![Status differences](/help/implementing/developing/introduction/assets/status_diff.png)
+
+If no differences are shown between the statuses, everything is working as intended. If differences do emerge, there might be reasons of concern regarding the functioning of the pods. Please contact customer support for more details.
+
+For more information about the available statuses in the Development Consoles, see [this article](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=en#status).
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
