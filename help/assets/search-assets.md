@@ -251,6 +251,7 @@ The search capability in [!DNL Experience Manager Assets] has the following limi
 * [!DNL Experience Manager] may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you select `Return` without typing in Omnisearch bar, [!DNL Experience Manager] returns a list of only files and not folders. If you search specifically for folders without using a keyword, [!DNL Experience Manager] does not return any results.
+* You can perform full-text search on folders. Specify a search term for the search to work.
 
 Visual search or similarity search has the following limitations:
 
