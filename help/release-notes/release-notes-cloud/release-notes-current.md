@@ -192,27 +192,7 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 
 ## [!DNL Adobe Experience Manager] as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
-### Known Issues {#known-issues-foundation}
+### What is new in [!DNL Adobe Experience Manager] as a Cloud Service Foundation {#what-is-new-foundation}
 
-**Some builds might fail because of an issue with the Build Analyzer Plugin**
-
-In certain cases a project build can fail during the execution of the `aemanalyser-maven-plugin` with the following error message:
-
-```
-[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
- 
-Was expecting one of:
- 
-     
- 
-[ERROR] Analyser detected errors on feature
-```
-
-**Workaround**
-
-To work around this issue, select the latest version of the `aemanalyser-maven-plugin` in the parent `pom.xml` file:
-
-```xml
-<aemanalyser.version>0.9.2</aemanalyser.version>
-```
+* The ability to examine differences between status outputs of different pods from the Developer Console. See the [documentation](/help/implementing/developing/introduction/development-guidelines.md#exammining-differences-between-pods-in-status-outputs) for more information.
 
