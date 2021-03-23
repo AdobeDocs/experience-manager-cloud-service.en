@@ -276,4 +276,3 @@ Below is a sample snippet to map the command `Bold` to the Coral icon named `tex
 >* [Configure RTE plug-ins](configure-rich-text-editor-plug-ins.md)
 >* [Use Rich Text Editor for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configure RTE for accessible sites](rte-accessible-content.md)
->* [Tutorial sample to create composite multifield component](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)

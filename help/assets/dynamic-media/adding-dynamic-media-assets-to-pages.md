@@ -1,7 +1,9 @@
 ---
 title: Adding Dynamic Media Assets to Pages
-description: How to add Dynamic Media components to a page in Adobe Experience Manager as a Cloud Service.
+description: Learn how to add Dynamic Media components to a page in Adobe Experience Manager as a Cloud Service.
 contentOwner: Rick Brough
+feature: Asset Management
+topic: Business Practitioner
 ---
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}

@@ -3,6 +3,9 @@ sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
+feature-set: Experience Manager
+feature: Developer Tools
+role: Developer, Architect
 ---
 
 # Implementing {#implementing}
@@ -111,6 +114,7 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
     + [Model Routing](developing/hybrid/routing.md)
     + [The RemotePage Component](developing/hybrid/remote-page.md)
     + [Editing an External SPA within AEM](developing/hybrid/editing-external-spa.md)
+    + [Composite Components in SPAs](developing/hybrid/composite-components.md)
     + [Server Side Rendering](developing/hybrid/ssr.md)
     + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
     + [Launch Integration](developing/hybrid/launch-integration.md)

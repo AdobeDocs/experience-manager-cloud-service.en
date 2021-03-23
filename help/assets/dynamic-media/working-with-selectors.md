@@ -1,6 +1,7 @@
 ---
 title: Working with Selectors
 description: Learn about methods you can use to select assets for interactive images, interactive videos, and carousel banners in Dynamic Media.
+topic: Business Practitioner
 ---
 
 # Working with Selectors in Dynamic Media {#working-with-selectors}
@@ -11,15 +12,15 @@ This topic covers how to use the Product, Site, and Asset selectors, including t
 
 You access the selectors while creating carousel sets, adding hotspots and image maps, creating interactive videos and images.
 
-For example, in this Carousel Banner, you use the Product selector if you are linking a hotspot or image map to a Quickview page; use the Site selector if you are linking a hotspot or image map to a Hyperlink; use the Asset selector when you are creating a new slide.
+For example, in this Carousel Banner, you use the Product selector if you are linking a hotspot or image map to a Quick view page. Use the Site selector if you are linking a hotspot or image map to a Hyperlink; use the Asset selector when you create a slide.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-When you select (rather than manually enter) where hotspots or image maps go to, you are using the selector. The Site selector only works if you are an AEM Sites customer. The product selector also requires AEM Commerce.
+When you select (rather than manually enter) where hotspots or image maps go to, you are using the selector. The Site selector only works if you are an Adobe Experience Manager Sites customer. The product selector also requires Experience Manager Commerce.
 
 ## Selecting products in Dynamic Media {#selecting-products}
 
-Use the Product selector to choose a product when you want a hotspot or image map to provide a Quickview to a specific product in your product catalog.
+Use the Product selector to choose a product when you want a hotspot or image map to provide a Quick view to a specific product in your product catalog.
 
 1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
 
@@ -31,15 +32,15 @@ Use the Product selector to choose a product when you want a hotspot or image ma
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   You can also filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or selecting tags, or both.
+   You can filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or selecting tags, or both.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   You can change where AEM browses for product data by tapping **[!UICONTROL Browse]** and navigating to another folder.
+   You can change where Experience Manager browses for product data by tapping **[!UICONTROL Browse]** and navigating to another folder.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tap **[!UICONTROL Sort]** by to change whether AEM sorts by newest to oldest or oldest to newest.
+   Tap **[!UICONTROL Sort by]** to change whether Experience Manager sorts by newest to oldest or oldest to newest.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -51,13 +52,13 @@ Use the Product selector to choose a product when you want a hotspot or image ma
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. When in **[!UICONTROL Preview]** mode, you can tap the hotspot or image map, and see what the Quickview looks like.
+1. When in **[!UICONTROL Preview]** mode, you can tap the hotspot or image map, and see what the Quick view looks like.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## Selecting Sites in Dynamic Media {#selecting-sites}
 
-Use the site selector to choose a webpage when you want a hotspot or image map to link to a webpage that is managed within AEM sites.
+Use the site selector to choose a webpage when you want a hotspot or image map to link to a webpage that is managed within Experience Manager sites.
 
 1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
 
@@ -65,7 +66,7 @@ Use the site selector to choose a webpage when you want a hotspot or image map t
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tap the **[!UICONTROL Site Selector]** icon (folder with magnifying glass) and navigate to a page in your AEM sites that you want to link the hotspot or image map to.
+1. Tap the **[!UICONTROL Site Selector]** icon (folder with magnifying glass) and navigate to a page in your Experience Manager sites that you want to link the hotspot or image map to.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -73,24 +74,24 @@ Use the site selector to choose a webpage when you want a hotspot or image map t
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. When in **[!UICONTROL Preview]** mode if you tap the hotspot or image map, you navigate to the AEM site page you specified.
+1. When in **[!UICONTROL Preview]** mode if you tap the hotspot or image map, you navigate to the Experience Manager site page you specified.
 
 ## Selecting assets in Dynamic Media {#selecting-assets}
 
-Use this selector to choose images for use in a Carousel Banner, an Interactive Video, Image Sets, Mixed Media Sets, and Spin Sets. In interactive Video, the asset selector is available when you tap **[!UICONTROL Select Assets]** in the **[!UICONTROL Content]** tab. In Carousel Sets, the asset selector is available when you create a new slide. In Image Sets, Mixed Media Sets, and Spin Sets, the asset selector is available when you create a new Image Set, Mixed Media Set, or Spin Set, respectively.
+Use this selector to choose images for use in a Carousel Banner, an Interactive Video, Image Sets, Mixed Media Sets, and Spin Sets. In interactive Video, the asset selector is available when you tap **[!UICONTROL Select Assets]** in the **[!UICONTROL Content]** tab. In Carousel Sets, the asset selector is available when you create a slide. In Image Sets, Mixed Media Sets, and Spin Sets, the asset selector is available when you create an Image Set, Mixed Media Set, or Spin Set, respectively.
 
 See also [Asset Picker](/help/assets/search-assets.md#assetselector) for more information.
 
-1. Navigate to the Carousel Set and create a new slide. Or, navigate to the Interactive Video, go the **[!UICONTROL Content]** tab and select assets. Or, create a Mixed Media Set, Image Set, or Spin Set.
+1. Navigate to the Carousel Set and create a slide. Or, navigate to the Interactive Video, go the **[!UICONTROL Content]** tab, then select assets. Or, create a Mixed Media Set, Image Set, or Spin Set.
 1. Tap the **[!UICONTROL Asset Selector]** icon (folder with magnifying glass) and navigate to an asset.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   You can also filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or adding criteria, or both.
+   Filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or adding criteria, or both.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   You can change where AEM browses for assets by navigating to another folder in the **[!UICONTROL Path]** field.
+   You can change where Experience Manager browses for assets by navigating to another folder in the **[!UICONTROL Path]** field.
 
    Tap **[!UICONTROL Collection]** to only search for assets within collections.
 
@@ -100,7 +101,7 @@ See also [Asset Picker](/help/assets/search-assets.md#assetselector) for more in
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Tap the check mark to select the asset. The asset is displayed.
+1. To select the asset, tap the check mark. The asset is displayed.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 -->
