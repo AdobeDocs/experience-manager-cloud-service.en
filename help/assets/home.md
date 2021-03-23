@@ -5,7 +5,7 @@ description: [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] se
 
 # [!DNL Assets] as a [!DNL Cloud Service] Guide {#aem-assets-guide}
 
-Follow are the self-help resources for [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+The following self-help resources are available for [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 
 ## Key [!DNL Assets] articles {#key-articles}
 
