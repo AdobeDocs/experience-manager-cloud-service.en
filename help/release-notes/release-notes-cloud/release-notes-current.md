@@ -133,6 +133,48 @@ The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
 
 * When migrating content from a specific path, CTT was pulling in unrelated resources. This has been fixed
 
+
+### Release Date {#release-date-ctt-feb}
+
+The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
+
+### Bug Fixes {#bug-fixes-ctt-feb}
+
+* When mapping multiple users, some users’ IMS IDs were being mapped incorrectly. This has been fixed.
+
+### Release Date {#release-date-ctt-feb01}
+
+The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
+
+### What is new in Content Transfer Tool {#what-is-new-ctt}
+
+* New capability and UI added to Content Transfer Tool – User Mapping Tool. This features automatically maps existing user and groups to their Adobe Identity Management System IDs as part of the content migration activity. 
+    Refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) for more details.
+* Content Transfer Tool now migrates all groups and users referenced in the migration set including children.
+* Users are allowed to select certain paths under `/etc` when creating migration sets.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa-march}
+
+The Release Date for Best Practices Analyzer v2.1.8 is March 22, 2021.
+
+### What is new in Best Practices Analyzer {#what-is-new-bpa-march}
+
+* Ability to filter out ACS Commons findings from the BPA report in the UI as well as from the report exported as a CSV file. 
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
+
+### What is new in Best Practices Analyzer {#what-is-new-bpa}
+
+* Ability to detect the use of AEM Forms and AEM Forms implementation and indicate areas that are relevant to migrating to AEM Forms as a Cloud Service.
+* Ability to detect and report on usage and count of custom components and templates.
+* Ability to detect the type of node store and data store used.
+* Ability to detect the usage of Dynamic Media.
+* Ability to detect the Java version used.
+
 ## Code Refactoring Tools {#code-refactoring-tools}
 
 ### What is new in Code Refactoring Tools {#what-is-new-crt}
