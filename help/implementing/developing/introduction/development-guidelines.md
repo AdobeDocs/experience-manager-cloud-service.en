@@ -163,7 +163,7 @@ When getting status outputs, you will notice a **Difference** option in the top 
 
 If no differences are shown between the statuses, everything is working as intended. If differences do emerge, there might be reasons of concern regarding the functioning of the pods. Please contact customer support for more details.
 
-For more information about the available statuses in the Development Consoles, see [this article](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=en#status).
+For more information about the available statuses in the Development Console, see [this article](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=en#status).
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
