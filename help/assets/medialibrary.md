@@ -30,7 +30,7 @@ Media Library gets installed as part of Sites. No additional license or package 
 
 ## [!DNL Assets] versus Media Library {#assets-and-media-library}
 
-Experience Manager Assets provides enterprise-grade DAM functionality. Assets functionality is delivered with [!DNL Experience Manager] in one single package. However, users who have not purchased an Assets license are not entitled to use the advanced DAM features. Without Assets license, only [Media Library features]() are available.
+Experience Manager Assets provides enterprise-grade DAM functionality. Assets functionality is delivered with [!DNL Experience Manager] in one single package. However, users who have not purchased an Assets license are not entitled to use the advanced DAM features. Without Assets license, only [Media Library features](#use-media-library) are available.
 
 If you want to prevent unintended use of [!DNL Assets] features that you have not licensed, then remove all the [!DNL Assets]-specific workflows, components, taxonomies, options and the [!DNL Assets] admin from [!DNL Experience Manager]. Doing so prevents your users from accidentally using [!DNL Assets] features that you did not license.
 
