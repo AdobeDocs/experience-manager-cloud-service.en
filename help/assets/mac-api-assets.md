@@ -17,11 +17,9 @@ To access the API:
 
 The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
-After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
-
 >[!NOTE]
 >
->All the API calls related to uploading or updating assets or binaries in general (like renditions) is deprecated for AEM as a [!DNL Cloud Service] deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
+>All the API calls related to uploading or updating assets or binaries in general (like renditions) is deprecated for [!DNL Experience Manager] as a [!DNL Cloud Service] deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
 
 ## Content Fragments {#content-fragments}
 
@@ -253,6 +251,12 @@ Deletes a resource (-tree) at the provided path.
 * 200 - OK - if folder has been deleted successfully.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
+
+## Tips, best practices, and limitations {#tips-limitations}
+
+* After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
+
+* Do not use `/adobe` as URL or JCR path. Do not register any servlets under this tree or create content in JCR.
 
 >[!MORELIKETHIS]
 >
