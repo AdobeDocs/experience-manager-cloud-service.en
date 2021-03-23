@@ -260,7 +260,7 @@ Deletes a resource (-tree) at the provided path.
 
 * After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
-* Do not use `/adobe` as URL or JCR path. Do not register any servlets under this tree or create content in JCR.
+* Some properties of folder or asset are mapped to a different prefix when updated using APIs. The `jcr` prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
 >[!MORELIKETHIS]
 >
