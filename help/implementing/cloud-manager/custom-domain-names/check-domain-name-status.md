@@ -37,9 +37,9 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 
 Customers with environments that includes pre-existing CDN configurations for IP Allow Lists, SSL Certificates or Custom Domain Names will see the following message in the the **IP Allow List** and the **Environment** details page. The message displayed on the UI will disappear once the customer has fully migrated all pre-existing environment configurations via the UI and it may take 1-2 business days for the message to disappear.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
-
 >[!NOTE]
->In order to see and manage the pre-existing configurations they must be added via the UI, as shown in the figure below.
+>In order to see and manage the pre-existing configurations they must be added via the UI. Refer to [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)

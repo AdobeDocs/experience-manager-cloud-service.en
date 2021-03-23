@@ -35,15 +35,13 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 ## What is new in [!DNL Assets] {#what-is-new-assets}
 
+*  [!DNL Experience Manager Assets] as a [!DNL Cloud Service] is entitled to have a pre-configured [!DNL Brand Portal] instance. The [!DNL Cloud Manager] user can activate [!DNL Brand Portal] on [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. See [activate Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
+
 *  Businesses can now source assets using [!DNL Brand Portal]. Asset sourcing feature leverages [!DNL Brand Portal] to help customers engage with agency users to source assets for new marketing campaigns, photoshoots and projects. See [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * The [!DNL Brand Portal] usage report now displays only the active users. The inactive users are not displayed now. Active users are the ones whose account is assigned to a product profile in the [!DNL Admin Console]. See [[!DNL Brand Portal] reports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
 * In [!DNL Brand Portal], a new download setting is introduced, that lets you create separate folder for each asset when downloading folders, collection, and so on. See [download settings](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
-
-<!-- TBD: refine this list of features and enh. for Feb release.
-
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
@@ -154,6 +152,15 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 ## Content Transfer Tool {#content-transfer-tool}
 
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.3.4 is March 19, 2021.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* CTT was skipping content from folders with the same name but with a hyphen in the name. This has been fixed. 
+
+
 ### Release Date {#release-date-ctt-march}
 
 The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
@@ -168,15 +175,15 @@ The Release Date for Content Transfer Tool v1.3.0 is March 04, 2021.
 * When migrating content from a specific path, CTT was pulling in unrelated resources. This has been fixed
 
 
-### Release Date {#release-date-ctt}
+### Release Date {#release-date-ctt-feb}
 
 The Release Date for Content Transfer Tool v1.2.4 is February 10, 2021.
 
-### Bug Fixes {#bug-fixes-ctt}
+### Bug Fixes {#bug-fixes-ctt-feb}
 
 * When mapping multiple users, some users’ IMS IDs were being mapped incorrectly. This has been fixed.
 
-### Release Date {#release-date-ctt-feb}
+### Release Date {#release-date-ctt-feb01}
 
 The Release Date for Content Transfer Tool v1.2.2 is February 01, 2021.
 
@@ -218,12 +225,29 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
   * Ability to handle both folder path of vhosts and path to vhost files.
   * Generation of farm files with large customer configurations in range of 600 and more.
 
-  
+## [!DNL Adobe Experience Manager] as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
+### Known Issues {#known-issues-foundation}
 
+**Some builds might fail because of an issue with the Build Analyzer Plugin**
 
+In certain cases a project build can fail during the execution of the `aemanalyser-maven-plugin` with the following error message:
 
+```
+[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
+ 
+Was expecting one of:
+ 
+     
+ 
+[ERROR] Analyser detected errors on feature
+```
 
+**Workaround**
 
+To work around this issue, select the latest version of the `aemanalyser-maven-plugin` in the parent `pom.xml` file:
 
+```xml
+<aemanalyser.version>0.9.2</aemanalyser.version>
+```
 

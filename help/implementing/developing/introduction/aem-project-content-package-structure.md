@@ -7,7 +7,7 @@ description: Learn about how to define package structures for deployment to Adob
 
 >[!TIP]
 >
->Familiarize yourself with basic [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), and the [FileVault Content Maven Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) as this article builds upon these learnings and concepts.
+>Familiarize yourself with basic [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), and the [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) as this article builds upon these learnings and concepts.
 
 This article outlines the changes required to Adobe Experience Manager Maven projects to be AEM as a Cloud Service compatible by ensuring that they respect the split of mutable and immutable content, dependencies are established to create non-conflicting, deterministic deployments and that they are packaged in a deployable structure.
 
@@ -613,5 +613,5 @@ In the `all/pom.xml` add the `maven-clean-plugin` plug-in which will clean the t
 
 ## Additional Resources {#additional-resources}
 
-+ [Managing Packages Using Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [Managing Packages Using Maven](/help/implementing/developing/tools/maven-plugin.md)
 + [FileVault Content Package Maven Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)

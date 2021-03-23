@@ -1,6 +1,7 @@
 ---
 title: Using Quick views to create custom pop-ups
-description: The default Quick view is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
+description: "Learn about how the default Quick view is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up windows."
+topic: "Developer,Administrator,Business Practitioner"
 ---
 
 # Using Quick views to create custom pop-up windows {#using-quickviews-to-create-custom-pop-ups}
