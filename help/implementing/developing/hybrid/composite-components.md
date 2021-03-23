@@ -15,6 +15,14 @@ This article demonstrates how you can add a composite component to your single p
 
 This article will use the typical card component as its example use case. Cards are a common UI element for many digital experiences and are typically made up of an image and associated text or caption. An author wants to be able to drag-and-drop the whole card, but be able to individually edit the card's image as well as customize the associated text.
 
+## Prerequisites {#prerequisites}
+
+The following models for supporting the composite component use cases require the following prerequisites.
+
+* Your AEM development instance is running locally on port 4502 with a sample project.
+* You have a working external React app [enabled for editing in AEM.](editing-external-spa.md)
+* The React app is loaded in the AEM editor [using the RemotePage component.](remote-page.md)
+
 ## Adding Composite Components to a SPA {#adding-composite-components}
 
 There are three different models for implementing your composite component depending on your SPA implementation within AEM.
