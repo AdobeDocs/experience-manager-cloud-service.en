@@ -188,6 +188,10 @@ use $[env:ENV_VAR_NAME]
 
 Customers should only use this technique for OSGI configuration properties related to their custom code; it must not be used to override Adobe-defined OSGI configuration.
 
+>[!NOTE]
+>
+>Placeholders cannot be used in [repoinit statements](/help/implementing/deploying/overview.md#repoinit).
+
 ### Secret Configuration Values {#secret-configuration-values}
 
 OSGi configuration should assign a placeholder for the secret that is intended to be defined per environment:
