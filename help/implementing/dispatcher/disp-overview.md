@@ -97,7 +97,7 @@ This file is included from inside your `.vhost` files. It has a set of rewrite r
 
 >[!NOTE]
 >
->Currently, a single rewrite file must be used rather than files that are site specific. As a rule, the sum of the contents of the customizable files must be less than 1MB.
+>Currently, a single rewrite file must be used rather than files that are site-specific. As a rule, the sum of the contents of the customizable files must be less than 1MB.
 
 * `conf.d/variables/custom.vars`
 
