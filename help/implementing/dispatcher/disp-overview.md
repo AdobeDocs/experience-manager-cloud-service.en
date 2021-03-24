@@ -93,11 +93,11 @@ You can have one or more of these files. They contain `<VirtualHost>` entries th
 
 * `conf.d/rewrites/rewrite.rules`
 
-This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`. 
+This file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
 
 >[!NOTE]
 >
->At this time, a single rewrite file must be used rather than site specific files. That file size must be less than 1MB.
+>At this time, a single rewrite file must be used rather than files that are site specific. As a general rule, the sum of the contents of the customizable files must be less than 1MB.
 
 * `conf.d/variables/custom.vars`
 
