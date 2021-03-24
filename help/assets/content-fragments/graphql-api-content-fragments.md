@@ -162,7 +162,7 @@ Additional configurations are required:
 
 ### Supporting packages {#supporting-packages}
 
-To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package.
+To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip) package.
 
 This archive contains both [the required additional configuration](#additional-configurations-graphql-endpoint) and [the GraphQL endpoint](#enabling-graphql-endpoint). If installed on a plain AEM instance, it will expose a fully working GraphQL endpoint at `/content/cq:graphql/global/endpoint`.
 
@@ -190,7 +190,7 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
 
-The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.6.zip) package.
+The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
