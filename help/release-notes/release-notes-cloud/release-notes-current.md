@@ -189,10 +189,3 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
   * Creation of separate files for different inclusions instead of in lining the content.
   * Ability to handle both folder path of vhosts and path to vhost files.
   * Generation of farm files with large customer configurations in range of 600 and more.
-
-## [!DNL Adobe Experience Manager] as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
-
-### What is new in [!DNL Adobe Experience Manager] as a Cloud Service Foundation {#what-is-new-foundation}
-
-* The ability to examine differences between status outputs of different pods from the Developer Console. See the [documentation](/help/implementing/developing/introduction/development-guidelines.md#exammining-differences-between-pods-in-status-outputs) for more information.
-
