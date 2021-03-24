@@ -345,7 +345,7 @@ Note, that there is no default version of the variables files.
 
 This message indicates that your configuration has the deprecated version 1 layout, containing a complete
 Apache configuration and files with `ams_` prefixes. While this is still supported for backward
-compatibility you should switch to the new layout.
+compatibility, you should switch to the new layout.
 
 ## Local validation of dispatcher configuration syntax so that apache httpd can start {#local-validation}
 
@@ -376,7 +376,7 @@ Phase 2 finished
 
 The script does the following:
 
-1. It runs the validator from the previous section to ensure that only the supported directives are included. If the configuration isn't valid, the script will fail.
+1. It runs the validator from the previous section to ensure that only the supported directives are included. If the configuration isn't valid, the script fails.
 2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
 3. Checks that the subset of the dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](#file-structure), has not been modified. This is a new check, introduced with AEM SDK version v2021.1.4738 that also includes Dispatcher Tools version 2.0.36. Before this update, customers might have incorrectly assumed that any local SDK modifications of those immutable files would also be applied to the Cloud environment.
 
@@ -403,7 +403,7 @@ Starting httpd server
 
 ```
 
-This will start the dispatcher in a container with its backend pointing to an AEM instance running on your local Mac OS machine at port 4503.
+This starts the dispatcher in a container with its backend pointing to an AEM instance running on your local Mac OS machine at port 4503.
 
 ## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
 
@@ -441,7 +441,7 @@ Logs for cloud environments are exposed through the logging service available in
 
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 
-At this time, the same dispatcher configuration is applied to all AEM as a Cloud Service environments. The runtime will have an environment variable `ENVIRONMENT_TYPE` that contains the current run mode (dev, stage or prod) as well as a define. The define can be `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` or `ENVIRONMENT_PROD`. In the Apache configuration, the variable can be used directly in an expression. Alternatively, the define can be used to build logic:
+Currently, the same dispatcher configuration is applied to all AEM as a Cloud Service environments. The runtime will have an environment variable `ENVIRONMENT_TYPE` that contains the current run mode (dev, stage or prod) as well as a define. The define can be `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` or `ENVIRONMENT_PROD`. In the Apache configuration, the variable can be used directly in an expression. Alternatively, the define can be used to build logic:
 
 ```
 
@@ -542,7 +542,7 @@ linked to can be removed as well.
 
 ### Remove or comment virtual host sections that do not refer to port 80
 
-If you still have sections in your virtual host files that exclusively refer to other ports than port 80,for example:
+If you still have sections in your virtual host files that exclusively refer to other ports than port 80, for example:
 
 ```
 <VirtualHost *:443>
@@ -679,7 +679,7 @@ $include "../clientheaders/default_clientheaders.any"
 
 Enter directory `conf.dispatcher.d/filters`.
 
-Remove any file prefixed `ams_`. 
+Remove any file prefixed `ams_`.
 
 If `conf.dispatcher.d/filters` now contains a single file it should be renamed to
 `filters.any` and don't forget to adapt the `$include` statements referring to that
@@ -691,7 +691,7 @@ should be copied to the `$include` statement referring to them in the farm files
 Copy the file `conf.dispatcher/filters/default_filters.any` from the default
 AEM as a Cloud Service dispatcher configuration to that location.
 
-In each farm file, replace any filter include statements that looks as follows:
+In each farm file, replace any filter include statements that look as follows:
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
