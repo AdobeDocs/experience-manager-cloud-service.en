@@ -11,7 +11,7 @@ feature: Dispatcher
 This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For additional information about Dispatcher, see the [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
->Windows users will need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
+>Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -27,7 +27,7 @@ The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](/help/implementin
 
 Unzip the SDK, which bundles Dispatcher Tools for both macOS/Linux and Windows.
 
-**For macOS/Linux**, make the dispatcher tool artifact executable and run it. It will self extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
+**For macOS/Linux**, make the dispatcher tool artifact executable and run it. It will self-extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the dispatcher Tools).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -97,7 +97,7 @@ This file is included from inside your `.vhost` files. It has a set of rewrite r
 
 >[!NOTE]
 >
->At this time, a single rewrite file must be used rather than files that are site specific. As a general rule, the sum of the contents of the customizable files must be less than 1MB.
+>Currently, a single rewrite file must be used rather than files that are site specific. As a rule, the sum of the contents of the customizable files must be less than 1MB.
 
 * `conf.d/variables/custom.vars`
 
@@ -437,7 +437,7 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 
 When running dispatcher locally, logs are printed directly to the terminal output. Most of the time, you want these logs to be in DEBUG, which can be done by passing the Debug level as a parameter when running Docker. For example: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-Logs for cloud environments are be exposed through the logging service available in Cloud Manager.
+Logs for cloud environments are exposed through the logging service available in Cloud Manager.
 
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 
@@ -518,11 +518,11 @@ As described on the reference page above, the Apache and Dispatcher configuratio
 
 ## Guidelines for migrating dispatcher configuration from AMS to AEM as a Cloud Service
 
-The dispatcher configuration structure has differences between Managed Services and AEM as a Cloud Service. Presented below, is a a step by step guide on how to migrate from AMS Dispatcher configuration version 2 to AEM as a Cloud Service.
+The dispatcher configuration structure has differences between Managed Services and AEM as a Cloud Service. Presented below, is a  step by step guide on how to migrate from AMS Dispatcher configuration version 2 to AEM as a Cloud Service.
 
 ## How to convert an AMS to an AEM as a Cloud service dispatcher configuration
 
-The following section provides a step by step instructions on how to convert an AMS configuration. It assumes
+The following section provides a step-by-step instructions on how to convert an AMS configuration. It assumes
 that you have an archive with a structure similar to the one described in [Cloud Manager dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### Extract the archive and remove an eventual prefix
@@ -530,7 +530,7 @@ that you have an archive with a structure similar to the one described in [Cloud
 Extract the archive to a folder, and make sure the immediate subfolders start with `conf`, `conf.d`,
  `conf.dispatcher.d` and `conf.modules.d`. If they don't, move them up in the hierarchy.
 
-### Get rid of ununsed subfolders and files
+### Get rid of unused subfolders and files
 
 Remove subfolders `conf` and `conf.modules.d`, as well as files matching `conf.d/*.conf`.
 
@@ -542,7 +542,7 @@ linked to can be removed as well.
 
 ### Remove or comment virtual host sections that do not refer to port 80
 
-If you still have sections in your virtual host files that exclusively refer to other ports than port 80, e.g.
+If you still have sections in your virtual host files that exclusively refer to other ports than port 80,for example:
 
 ```
 <VirtualHost *:443>
@@ -563,7 +563,7 @@ remove `Include` statements in the virtual host files referring to them.
 If `conf.d/rewrites` now contains a single file, it should be renamed to `rewrite.rules` and don't
 forget to adapt the `Include` statements referring to that file in the virtual host files as well. 
 
-If the folder however contains multiple, virtual host specific files, their contents should be
+If the folder however contains multiple, virtual host-specific files, their contents should be
 copied to the `Include` statement referring to them in the virtual host files.
 
 ### Check variables
@@ -576,7 +576,7 @@ host files referring to them.
 If `conf.d/variables` now contains a single file, it should be renamed to `custom.vars` and don't
 forget to adapt the `Include` statements referring to that file in the virtual host files as well. 
 
-If the folder however contains multiple, virtual host specific files, their contents should be
+If the folder however contains multiple, virtual host-specific files, their contents should be
 copied to the `Include` statement referring to them in the virtual host files.
 
 ### Remove allowlists
@@ -631,7 +631,7 @@ If instead `conf.dispatcher.d/cache` now contains a single file with suffix `_ca
 it should be renamed to `rules.any` and don't forget to adapt the `$include` statements
 referring to that file in the farm files as well. 
 
-If the folder however contains multiple, farm specific files with that pattern, their contents
+If the folder however contains multiple, farm-specific files with that pattern, their contents
 should be copied to the `$include` statement referring to them in the farm files.
 
 Remove any file that has the suffix `_invalidate_allowed.any`.
@@ -656,13 +656,13 @@ If `conf.dispatcher.d/clientheaders` now contains a single file with suffix `_cl
 it should be renamed to `clientheaders.any` and don't forget to adapt the `$include` statements
 referring to that file in the farm files as well. 
 
-If the folder however contains multiple, farm specific files with that pattern, their contents
+If the folder however contains multiple, farm-specific files with that pattern, their contents
 should be copied to the `$include` statement referring to them in the farm files.
 
 Copy the file `conf.dispatcher/clientheaders/default_clientheaders.any` from the default
 AEM as a Cloud Service dispatcher configuration to that location.
 
-In each farm file, replace any clientheader include statements that looks as follows:
+In each farm file, replace any clientheader include statement that looks as follows:
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
@@ -685,7 +685,7 @@ If `conf.dispatcher.d/filters` now contains a single file it should be renamed t
 `filters.any` and don't forget to adapt the `$include` statements referring to that
 file in the farm files as well. 
 
-If the folder however contains multiple, farm specific files with that pattern, their contents
+If the folder however contains multiple, farm-specific files with that pattern, their contents
 should be copied to the `$include` statement referring to them in the farm files.
 
 Copy the file `conf.dispatcher/filters/default_filters.any` from the default
@@ -729,13 +729,13 @@ If `conf.dispatcher.d/virtualhosts` now contains a single file it should be rena
 `virtualhosts.any` and don't forget to adapt the `$include` statements referring to that
 file in the farm files as well. 
 
-If the folder however contains multiple, farm specific files with that pattern, their contents
+If the folder however contains multiple, farm-specific files with that pattern, their contents
 should be copied to the `$include` statement referring to them in the farm files.
 
 Copy the file `conf.dispatcher/virtualhosts/default_virtualhosts.any` from the default
 AEM as a Cloud Service dispatcher configuration to that location.
 
-In each farm file, replace any filter include statements that looks as follows:
+In each farm file, replace any filter include statements that look as follows:
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
