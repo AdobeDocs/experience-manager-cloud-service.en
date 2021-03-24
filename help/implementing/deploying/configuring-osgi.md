@@ -106,7 +106,7 @@ Inline configurations values are considered the standard approach, and should be
 * Values are implicitly tied to code deployments
 * They do not require any additional deployment considerations or coordination
 
-Whenever defining an OSGi configuration value, start with inline values, any only select secret or environment-specific configurations if necessary for the use case.
+Whenever defining an OSGi configuration value, start with inline values, and only select secret or environment-specific configurations if necessary for the use case.
 
 ### When to Use Non-secret Environment-specific Configuration Values {#when-to-use-non-secret-environment-specific-configuration-values}
 
