@@ -373,7 +373,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### Custom predicates to filter search results {#custompredicates}
 
-Predicates are used to create facets. Administrators can customize the search facets in the Filters panel using pre-configured predicates. These predicates can be customized using overlays. See [create custom predicates](/help/assets/searchx.md).
+Predicates are used to create facets. Administrators can customize the search facets in the Filters panel using pre-configured predicates. These predicates can be customized using overlays. See [create custom predicates](/help/assets/search-facets.md).
 
 You can search for digital assets based on one or more of the following properties. Filters that apply on some of these properties are available by default and some other filters can be custom-created to apply on the other properties.
 
