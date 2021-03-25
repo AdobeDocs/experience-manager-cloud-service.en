@@ -167,8 +167,20 @@ To configure the tool, follow these steps:
    * [!UICONTROL Dry Run]: Invoke a test run of the bulk ingestion.
    * [!UICONTROL Run]: Execute the selected configuration.
    * [!UICONTROL Stop]: Terminate an active configuration.
+   * [!UICONTROL Schedule]: Set one-time or recurring schedule to ingest assets.
    * [!UICONTROL Job Status]: View the status of the configuration when it is used in an ongoing import job or used for a completed job.
+   * [!UICONTROL Job History]: Previous instances of the job.
    * [!UICONTROL View Assets]: View the target folder if it exists.
+
+   ![Toolbar options for ingestor configurations](assets/bulk-ingest-toolbar-options.png)
+
+To schedule a one-time or a recurring bulk import, follow these steps:
+
+1. Create a bulk import configuration.
+1. Select the configuration and select **[!UICONTROL Schedule]** from the toolbar.
+1. Set a one-time ingestion or schedule an hourly, a daily, or a weekly schedule. Click **[!UICONTROL Submit]**.
+
+   ![Schedule bulk ingestor job](assets/bulk-ingest-schedule1.png)
 
 ## Upload assets using desktop clients {#upload-assets-desktop-clients}
 

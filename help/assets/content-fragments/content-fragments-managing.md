@@ -116,23 +116,18 @@ To open your fragment for editing:
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
 
-    * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
-    * Selecting the fragment, then **Edit** from the toolbar.
+   * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
+   * Selecting the fragment, then **Edit** from the toolbar.
 
-   The fragment editor will open:
+1. The fragment editor will open. Make your changes as required:
 
    ![fragment editor](assets/cfm-managing-03.png)
 
-   >[!NOTE]
-   >
-   >1. A message will be shown when the fragment is already referenced on a content page.
-   >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
-
-1. After making changes, use **Save** or **Cancel** as required.
+1. After making changes, use **Save & Close** or **Cancel** as required.
 
    >[!NOTE]
    >
-   >Both **Save** and **Cancel** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
+   >Both **Save & Close** and **Cancel** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
 
 ## Modes and Actions in the Content Fragment Editor {#modes-actions-content-fragment-editor}
 
@@ -152,11 +147,15 @@ Navigate through the various modes using the icons in the side panel:
 
 ![modes](assets/cfm-managing-04.png)
 
-### Toolbar Actions in theContent Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
+### Toolbar Actions in the Content Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
 
 Some features in the top toolbar are available from multiple modes:
 
 ![modes](assets/cfm-managing-top-toolbar.png)
+
+* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
+
+* The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
@@ -164,13 +163,15 @@ Some features in the top toolbar are available from multiple modes:
 
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
-  * New: grey
-  * Draft: blue
-  * Published: green
-  * Modified: orange
-  * Deactivated: red
+  * **New**: grey
+  * **Draft**: blue
+  * **Published**: green
+  * **Modified**: orange
+  * **Deactivated**: red
 
-* **[Publish](#publishing-and-referencing-a-fragment)** the fragment.
+* The three dots (**...**) drop-down provides access to additional actions:
+  * **[Quick publish](#publishing-and-referencing-a-fragment)**
+  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 
 ## Save, Cancel and Versions {#save-cancel-and-versions}
 
@@ -194,7 +195,7 @@ The editor has two options:
 
   >[!CAUTION]
   >
-  >In addition to simply saving your changes, **Save** also updates any references and ensures that the dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
+  >In addition to simply saving your changes, **Save** also updates any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
   >
   >
   >Please bear this in mind when using **Save** and then quickly re-entering the fragment editor to make and save further changes.
@@ -321,7 +322,7 @@ You can revert to a specific version of your fragment:
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
-Content Fragments must be published for use in the publish enviroment. They can be published:
+Content Fragments must be published for use in the publish environment. They can be published:
 
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
