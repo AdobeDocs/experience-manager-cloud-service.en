@@ -34,8 +34,6 @@ Once Adobe has created an organization for your company, your designated adminis
 
 With these rights granted, your administrator is now set up with a single sign-on (using Adobe ID) to access the [!UICONTROL Experience Cloud] services, login to your AEM cloud environments, and use [!UICONTROL Cloud Manager].
 
-## Users and Roles {#users-roles}
-
 Many features in [!UICONTROL Cloud Manager] require specific permissions to operate.
 
 [!UICONTROL Cloud Manager] currently defines four roles for users which govern the availability of specific features:
@@ -46,7 +44,6 @@ Many features in [!UICONTROL Cloud Manager] require specific permissions to oper
 * Developer
 
 >[!CAUTION]
->
 >To use [!UICONTROL Cloud Manager], you must have an Adobe ID and the Adobe Experience Manager as a Cloud Service Product Context.
 
 ### Role Definitions {#role-definitions}
