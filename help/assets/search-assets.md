@@ -11,15 +11,15 @@ mini-toc-levels: 1
 
 [!DNL Experience Manager Assets] supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
 
-| Search assets | Configuration and administration | Work with search results |
+| Search for assets | Configure and administer search functionality | Work with search results |
 |---|---|---|
 | [Basic searches](#searchbasics) | [Search index](#searchindex) | [Sort results](#sort) |
-| [Understand search UI](#searchui) | | [Check properties and metadata of an asset](#checkinfo) |
+| [Understand search UI](#searchui) | [Text extraction](#extracttextupload) | [Check properties and metadata of an asset](#checkinfo) |
 | [Search suggestions](#searchsuggestions) | [Mandatory metadata](#mandatorymetadata) | [Download](#download) |
 | [Understand search results and behavior](#searchbehavior) | [Modify search facets](#searchfacets) | [Bulk metadata updates](#metadataupdates) |
-| [Search rank and boosting](#searchrank) | [Text extraction](#extracttextupload) | [Smart collections](#collections) |
-| [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand and troubleshoot unexpected results](#unexpectedresults) |
-| [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager desktop app](#desktopapp)</li><li>[Adobe Stock images](#adobestock)</li><li>[Dynamic Media assets](#dynamicmedia)</li></ul> | | |
+| [Search rank and boosting](#searchrank) | [Custom predicates](#custompredicates) | [Smart collections](#collections) |
+| [Advanced search: filtering and scope of search](#scope) | | [Understand and troubleshoot unexpected results](#unexpectedresults) |
+| [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager desktop app](#desktop-app)</li><li>[Adobe Stock images](#adobe-stock)</li><li>[Dynamic Media assets](#search-dynamic-media-assets)</li></ul> | | |
 | [Asset selector](#assetselector) | | |
 | [Limitations](#tips) and [Tips](#limitations) | | |
 | [Illustrated examples](#samples) | | |
@@ -132,7 +132,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 *Figure: Find similar images using the option in the card view*
 -->
 
-### Adobe Stock images {#adobestock}
+### Adobe Stock images {#adobe-stock}
 
 From within the AEM user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
 
@@ -140,9 +140,9 @@ From within the AEM user interface, users can search [Adobe Stock assets](/help/
 
 You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media > Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets.
 
-### Search using specific values in metadata fields {#gqlsearch}
+### GQL search using specific values in metadata fields {#gql-search}
 
-You can for assets based on exact values of specific metadata fields, such as, title, description, and author. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (for example author, title, and so on) and the values are case-sensitive.
+You can search assets based on exact values of metadata fields, such as, title, description, and creator. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (Creator, Title, and so on) and the values are case-sensitive.
 
 | Metadata field | Facet value and usage |
 |---|---|
@@ -168,7 +168,10 @@ You can for assets based on exact values of specific metadata fields, such as, t
 | Height of image | height:lowerbound..upperbound |
 | Person | person:John |
 
-The properties path, limit, size, and orderby cannot be ORed with any other property.
+The properties `path`, `limit`, `size`, and `orderby` cannot be ORed with any other property.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 The keyword for a user-generated property is its field label in the property editor in lowercase, with spaces removed.
 
@@ -190,19 +193,19 @@ Adobe Experience Manager (AEM) connects DAM repository to various other AEM solu
 
 Using Adobe Asset Link, the creative professionals can now access content stored in AEM Assets, without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the Creative Cloud apps: Photoshop, Illustrator, and InDesign. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
 
-### Search assets in AEM desktop app {#desktopapp}
+### Search assets in Experience Manager desktop app {#desktop-app}
 
 Creative professionals use the desktop app to make the AEM Assets easily searchable and available on their local desktop (Win or Mac). Creatives can easily reveal the desired assets in Mac Finder or Windows Explorer, opened in desktop applications, and changed locally - the changes are saved back to AEM with a new version created in the repository. The application supports basic searches using one or more keywords, &#42; and ? wildcards, and AND operator. See [browse, search, and preview assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
 
-### Search assets in Brand Portal {#brandportal}
+### Search assets in Brand Portal {#brand-portal}
 
 Line-of-business users and marketers use Brand Portal to efficiently and securely share the approved digital assets with their extended internal teams, partners, and resellers. See [search assets on Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Search Adobe Stock images {#adobestock-1}
+### Search Adobe Stock images {#adobe-stock2}
 
 From within the AEM user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage Adobe Stock images in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Search Dynamic Media assets {#dynamicmedia}
+### Search Dynamic Media assets {#search-dynamic-media-assets}
 
 You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
 
@@ -248,6 +251,7 @@ The search capability in [!DNL Experience Manager Assets] has the following limi
 * [!DNL Experience Manager] may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you select `Return` without typing in Omnisearch bar, [!DNL Experience Manager] returns a list of only files and not folders. If you search specifically for folders without using a keyword, [!DNL Experience Manager] does not return any results.
+* You can perform full-text search on folders. Specify a search term for the search to work.
 
 Visual search or similarity search has the following limitations:
 
