@@ -64,9 +64,9 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 
 * Product detail component can now be used and configured on any content page
 
-* Released CIF Venia Reference Site - 2021.03.26 that includes the latest CIF Core Components version v1.9.0.
+* Released CIF Venia Reference Site - 2021.03.25 that includes the latest CIF Core Components version v1.9.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) for more details.
 
-* Released CIF Core Components v1.9.0.
+* Released CIF Core Components v1.9.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) for more details.
 
 
 ## Cloud Manager {#cloud-manager}
