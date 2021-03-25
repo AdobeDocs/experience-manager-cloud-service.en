@@ -367,7 +367,9 @@ Adobe recommends using the following "tuned" job parameters for PDF, PostScriptÂ
 | PostScriptÂ® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+To update any of these parameters, see [Editing MIME types for supported formats](#editing-mime-types-for-supported-formats).
+
+See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats).
 
 #### Updating the Granite Transient Workflow queue {#updating-the-granite-transient-workflow-queue}
 
