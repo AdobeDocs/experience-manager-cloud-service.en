@@ -28,6 +28,7 @@ The following release (2021.4.0) will be on April 29, 2021.
 -->
 
 * Content Fragment Model Extensions - now possible to define multi-line text data types as multi-field lists.
+* Content Fragment Editor UX Enhancements - nested child fragments now displayed in breadcrumb, and improved view of publish, save, and save&exit actions 
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
