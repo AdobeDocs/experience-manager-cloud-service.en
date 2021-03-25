@@ -1,5 +1,5 @@
 ---
-title: Search digital assets and images in [!DNL Adobe Experience Manager].
+title: Search digital assets and images in [!DNL Adobe Experience Manager]
 description: Learn how to find the required assets in [!DNL Adobe Experience Manager] by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
 mini-toc-levels: 1
@@ -16,13 +16,13 @@ mini-toc-levels: 1
 | [Basic searches](#searchbasics) | [Search index](#searchindex) | [Sort results](#sort) |
 | [Understand search UI](#searchui) | [Text extraction](#extracttextupload) | [Check properties and metadata of an asset](#checkinfo) |
 | [Search suggestions](#searchsuggestions) | [Mandatory metadata](#mandatorymetadata) | [Download](#download) |
-| [Understand search results and behavior](#searchbehavior) | [Modify search facets](#searchfacets) | [Bulk metadata updates](#metadataupdates) |
+| [Understand search results and behavior](#searchbehavior) | [Modify search facets](#searchfacets) | [Bulk metadata updates](#metadata-updates) |
 | [Search rank and boosting](#searchrank) | [Custom predicates](#custompredicates) | [Smart collections](#collections) |
-| [Advanced search: filtering and scope of search](#scope) | | [Understand and troubleshoot unexpected results](#unexpectedresults) |
-| [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager desktop app](#desktop-app)</li><li>[Adobe Stock images](#adobe-stock)</li><li>[Dynamic Media assets](#search-dynamic-media-assets)</li></ul> | | |
-| [Asset selector](#assetselector) | | |
-| [Limitations](#tips) and [Tips](#limitations) | | |
-| [Illustrated examples](#samples) | | |
+| [Advanced search: filtering and scope of search](#scope) | | [Understand and troubleshoot unexpected results](#unexpected-results) |
+| [Search from other solutions and apps](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager desktop app](#desktop-app)</li><li>[Adobe Stock images](#adobe-stock)</li><li>[Dynamic Media assets](#search-dynamic-media-assets)</li></ul> | | |
+| [Asset selector](#asset-selector) | | |
+| [Limitations](#limitations) and [Tips](#tips) | | |
+| [Illustrated examples](#samples)| | |
 
 Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and select `Return`. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
 
@@ -70,21 +70,21 @@ To quickly find the relevant assets, the rich interface provides filtering, sort
 
 When the results are many assets, [!DNL Experience Manager] displays the first 100 in the card view and 200 in the list view. As users scroll, more assets are loaded. This is to improve the performance. Watch a video demonstration of the [number of assets displayed](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
-At times, you may see some unexpected assets in the search results. For more info, see [unexpected results](#unexpectedresults).
+At times, you may see some unexpected assets in the search results. For more info, see [unexpected results](#unexpected-results).
 
-AEM can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrators for understand what search options are made available for your DAM repository and what restrictions your login may have.
+[!DNL Experience Manager] can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrator to understand what search options are made available for your DAM repository and what restrictions your account has.
 
 <!-- 
-### Results with and without Enhanced Smart Tags {#withsmarttags}
+### Results with and without enhanced Smart Tags {#withsmarttags}
 
-By default, AEM search combines the search terms with an AND clause. For example, consider searching for keywords woman running. Only the assets with both woman and running keywords in the metadata appear in the search results by default. The same behavior is retained when special characters (periods, underscores, or dashes) are used with the keywords. The following search queries return the same results:
+By default, [!DNL Experience Manager] search combines the search terms with an AND clause. For example, consider searching for keywords woman running. Only the assets with both woman and running keywords in the metadata appear in the search results by default. The same behavior is retained when special characters (periods, underscores, or dashes) are used with the keywords. The following search queries return the same results:
 
 * `woman running`
 * `woman.running`
 * `woman-running`
 
 However, the query `woman -running` returns assets without `running` in their metadata.
-Using smart tags adds an extra `OR` clause to find any of the search terms as the applied smart tags. An asset tagged with either `woman` or `running` using Smart Tags also appear in such a search query. So the search results are a combination of,
+Using Smart Tags adds an extra `OR` clause to find any of the search terms as the applied smart tags. An asset tagged with either `woman` or `running` using Smart Tags also appear in such a search query. So the search results are a combination of,
 
 * Assets with `woman` and `running` keywords in the metadata (default behavior).
 
@@ -105,7 +105,7 @@ You can improve the relevance of keywords for particular assets to help boost se
 1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
 1. Click **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
 
-You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -113,7 +113,7 @@ You can use this to your advantage by boosting the rank of some assets in the se
 
 ## Advanced search {#scope}
 
-AEM provides various methods like filters that apply to the searched assets, to help you locate the desired assets faster. A few commonly used methods are described below. Some [illustrated examples](#samples) are shared below.
+[!DNL Experience Manager] provides various methods like filters that apply to the searched assets, to help you locate the desired assets faster. A few commonly used methods are described below. Some [illustrated examples](#samples) are shared below.
 
 **Search for files or folders**: In the search results, see either files, folders, or both. From **[!UICONTROL Filters]** panel, you can select the appropriate option. See [search interface](#searchui).
 
@@ -121,24 +121,23 @@ AEM provides various methods like filters that apply to the searched assets, to 
 
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
 
-Limit search results to a folder by adding a folder path in Filters panel
+*Figure: Limit search results to a folder by adding a folder path in Filters panel.*
 
-<!--
 ### Find similar images {#visualsearch}
 
-To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [how to configure similarity search](#configvisualsearch).
+To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. [!DNL Experience Manager] displays the smart tagged images from the DAM repository that are similar to a user-selected image.
 
 ![Find similar images using the option in the card view](assets/search_find_similar.png)
-*Figure: Find similar images using the option in the card view*
--->
+
+*Figure: Find similar images using the option in the card view.*
 
 ### Adobe Stock images {#adobe-stock}
 
-From within the AEM user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
+From within the [!DNL Experience Manager] user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
 
 ### Dynamic Media assets {#dmassets}
 
-You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media > Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets.
+You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets.
 
 ### GQL search using specific values in metadata fields {#gql-search}
 
@@ -168,7 +167,7 @@ You can search assets based on exact values of metadata fields, such as, title, 
 | Height of image | height:lowerbound..upperbound |
 | Person | person:John |
 
-The properties `path`, `limit`, `size`, and `orderby` cannot be ORed with any other property.
+The properties `path`, `limit`, `size`, and `orderby` cannot be combined using `OR` operator with any other property.
 
 <!-- TBD: Where are the limit, size, orderby properties defined?
 -->
@@ -177,7 +176,7 @@ The keyword for a user-generated property is its field label in the property edi
 
 Here are some examples of search formats for complex queries:
 
-* To display all assets with multiple facets fields (for example: title=John Doe and creator tool = Adobe Photoshop): `title:"John Doe" creatortool : Adobe*`
+* To display all assets with multiple facets fields (for example: title=John Doe and creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * To display all assets when the facets value is not a single word but a sentence (for example: title=Scott Reynolds): `title:"Scott Reynolds"`
 * To display assets with multiple values of a single property (for example: title=Scott Reynolds or John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * To display assets with property values starting with a specific string (for example: title is Scott Reynolds): `title:Scott*`
@@ -185,63 +184,65 @@ Here are some examples of search formats for complex queries:
 * To display assets with a property value that contains a specific string (for example: title = Basel Meeting Room): `title:*Meeting*`
 * To display assets that contain a particular string and have a specific property value (for example: search for string Adobe in assets having title=John Doe): `*Adobe* title:"John Doe"`
 
-## Search assets from other AEM offerings or interfaces {#beyondomnisearch}
+## Search assets from other [!DNL Experience Manager] offerings or interfaces {#search-assets-other-surfaces}
 
-Adobe Experience Manager (AEM) connects DAM repository to various other AEM solutions to provide faster access to digital assets and streamline the creative workflows. Any asset discovery starts with browse or search. The search behavior largely remains the same across the various surfaces and solutions. Some search methods change as the target audience, the use cases, and the user interface vary across the AEM solutions. The specific methods are documented for the individual solutions at the links below. The universally applicable tips and behaviors are documented in this article.
+[!DNL Adobe Experience Manager] connects DAM repository to various other [!DNL Experience Manager] solutions to provide faster access to digital assets and streamline the creative workflows. Any asset discovery starts with browse or search. The search behavior largely remains the same across the various surfaces and solutions. Some search methods change as the target audience, the use cases, and the user interface vary across the [!DNL Experience Manager] solutions. The specific methods are documented for the individual solutions at the links below. The universally applicable tips and behaviors are documented in this article.
 
 ### Search assets from Adobe Asset Link panel {#aal}
 
-Using Adobe Asset Link, the creative professionals can now access content stored in AEM Assets, without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the Creative Cloud apps: Photoshop, Illustrator, and InDesign. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
+Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud] apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
 
-### Search assets in Experience Manager desktop app {#desktop-app}
+### Search assets in [!DNL Experience Manager] desktop app {#desktop-app}
 
-Creative professionals use the desktop app to make the AEM Assets easily searchable and available on their local desktop (Win or Mac). Creatives can easily reveal the desired assets in Mac Finder or Windows Explorer, opened in desktop applications, and changed locally - the changes are saved back to AEM with a new version created in the repository. The application supports basic searches using one or more keywords, &#42; and ? wildcards, and AND operator. See [browse, search, and preview assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
+Creative professionals use the desktop app to make the [!DNL Experience Manager Assets] easily searchable and available on their local desktop (Win or Mac). Creatives can easily reveal the desired assets in Mac Finder or Windows Explorer, opened in desktop applications, and changed locally - the changes are saved back to [!DNL Experience Manager] with a new version created in the repository. The application supports basic searches using one or more keywords, `*` and `?` wildcards, and `AND` operator. See [browse, search, and preview assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
 
-### Search assets in Brand Portal {#brand-portal}
+### Search assets in [!DNL Brand Portal] {#brand-portal}
 
 Line-of-business users and marketers use Brand Portal to efficiently and securely share the approved digital assets with their extended internal teams, partners, and resellers. See [search assets on Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Search Adobe Stock images {#adobe-stock2}
+### Search [!DNL Adobe Stock] images {#adobe-stock1}
 
-From within the AEM user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage Adobe Stock images in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+From within the [!DNL Experience Manager] user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage [!DNL Adobe Stock] images in [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Search Dynamic Media assets {#search-dynamic-media-assets}
+### Search [!DNL Dynamic Media] assets {#search-dynamic-media-assets}
 
 You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
 
-### Search assets in Content Finder when authoring web pages {#contentfinder}
+### Search assets in Content Finder when authoring web pages {#content-finder}
 
-Authors can use Content Finder to search the DAM repository for the relevant assets and use the assets in the web pages they create.
-
-<!-- Authors can also use the Connected Assets functionality to search for assets that are available on a remote AEM deployment. Authors can then use these assets in web pages on a local AEM deployment. See [use remote assets](use-assets-across-connected-assets-instances.md#use-remote-assets).
--->
+Authors can use Content Finder to search the DAM repository for the relevant assets and use the assets in the web pages they create. Authors can also use the Connected Assets functionality to search for assets that are available on a remote [!DNL Experience Manager] deployment. Authors can then use these assets in web pages on a local [!DNL Experience Manager] deployment. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
 ### Search collections {#collections}
 
-AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
+[!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
-## Asset selector {#assetselector}
+## Asset selector {#asset-picker}
 
-Asset selector lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remains intact throughout the selection.
+>[!NOTE]
+>
+>Asset selector was called [asset picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in prior versions of [!DNL Adobe Experience Manager].
 
-The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. The asset selector is based on Granite's foundation picker vocabulary. By default, the asset selector operates in Browse mode.
+Asset selector lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remain intact throughout the selection.
 
-You can pass the following request parameters in a URL to launch the asset selector in a particular context:
+The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
+
+Pass the following request parameters in a URL to launch the asset selector in a particular context:
 
 | Name | Values | Example | Purpose |
 |---|---|---|---|
-| resource suffix (B) | Folder path as the resource suffix in the URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example with the folder /content/dam/we-retail/en/activities, selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
-| mode | single, multiple | [https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single) | In multiple mode, you can select several assets simultaneously using the asset selector. |
-| mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Use it to filter assets based on MIME type(s) |
-| dialog | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
-| assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use this option to filter asset types based on the value passed. |
-| root | &lt;folder_path&gt; | [https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder. |
+| resource suffix (B) | Folder path as the resource suffix in the URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
+| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In multiple mode, you can select several assets simultaneously using the asset selector. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
+| `root` | &lt;folder_path&gt; | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder. |
+| `viewmode` | search | | To launch the asset selector in search mode, with `assettype` and `mimetype` parameters. |
+| `assettype` | Images, documents, multimedia, archives. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Use the option to filter asset types based on the value provided. |
+| `mimetype` | MIME type (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Use it to filter assets based on MIME type. |
 
 To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
-![Browse and select asset in the asset picker](assets/assetpicker.png)
+![Browse and select asset in the asset selector](assets/assetpicker.png)
 
-*Figure: Browse and select asset in the asset picker.*
+*Figure: Browse and select asset in the asset selector.*
 
 ## Limitations {#limitations}
 
@@ -255,7 +256,7 @@ The search capability in [!DNL Experience Manager Assets] has the following limi
 
 Visual search or similarity search has the following limitations:
 
-* Visual search works best with larger repositories. While there is no minimum number of images required for good results, the quality of matches with a few images may not be as good as the matches from a large repository.
+* Visual search works best with a large repository. While there is no minimum number of images required for good results, the quality of matches with a few images is not as good as the matches from a large repository.
 * You cannot change the model or train [!DNL Experience Manager] to find similar images. For example, adding or removing smart tags to a few assets does not change the model. The assets do get excluded from the visually similar search results.
 
 The search functionality can have performance limitations in the following scenarios:
@@ -287,11 +288,11 @@ Use double quotations around keywords to find assets that contain the exact phra
 **Search with asterisk wildcard**: To broaden the search, use an asterisk before or after the search word to match any number of characters. For example, searching for run without an asterisk does not return assets containing any variation of the word (including in the metadata). An asterisk substitutes for any number of characters. For example,
 
 * `run` returns assets with exactly run keyword
-* `run*` returns assets with running, run, runaway, and so on.
-* `*run` returns outrun, rerun, and so on.
+* `run*` returns assets with `running`, `run`, `runaway`, and so on.
+* `*run` returns assets with `outrun`, `rerun`, and so on.
 * `*run*` returns all possible combinations.
 
-![Illustrating use of asterisk wildcard in Asset search using an example](assets/search_with_asterisk_run.gif)
+![Illustrating use of asterisk wildcard in asset search using an example](assets/search_with_asterisk_run.gif)
 
 *Figure: Illustrating use of asterisk wildcard in Asset search using an example.*
 
@@ -324,9 +325,9 @@ Asset discovery relies on indexing of DAM contents, including the metadata. Fast
 <!--
 ### Visual or similarity search {#configvisualsearch}
 
-Visual search uses smart tags. After configuring smart tagging functionality, follow these steps.
+Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
 
-1. In AEM CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
 
     * `costPerEntry` property of type `Double` with the value `10`.
 
@@ -349,11 +350,11 @@ Visual search uses smart tags. After configuring smart tagging functionality, fo
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your AEM repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
+1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
 
-For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
+For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 -->
 
 <!--
@@ -363,14 +364,12 @@ Business users, administrators, or DAM librarians can define some metadata as ma
 
 ### Modify search facets {#searchfacets}
 
-To improve the speed of discovery, AEM Assets offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. AEM provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
 
 ### Extract text when uploading assets {#extracttextupload}
 
-You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
 -->
-
-<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -378,24 +377,22 @@ Predicates are used to create facets. Administrators can customize the search fa
 
 You can search for digital assets based on one or more of the following properties. Filters that apply on some of these properties are available by default and some other filters can be custom-created to apply on the other properties.
 
-| Search field | Search property values |
-|---|---|
-| Approved Status | Approved or Rejected. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| File Size | Small, Medium, or Large. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Orientation | Horizontal, Vertical, or Square. |
-| Publish Status | Published or Unpublished. |
-| Style | Color, or Black & White. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-
--->
+| Search field    | Search property values                                                                                                                 |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| MIME Types      | Images, Documents, Multimedia, Archives, or Other.                                                                                     |
+| Last Modified   | Hour, Day, Week, Month, or Year.                                                                                                       |
+| File Size       | Small, Medium, or Large.                                                                                                               |
+| Publish Status  | Published or Unpublished.                                                                                                              |
+| Approved Status | Approved or Rejected.                                                                                                                  |
+| Orientation     | Horizontal, Vertical, or Square.                                                                                                       |
+| Style           | Color, or Black & White.                                                                                                               |
+| Video Height    | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
+| Video Width     | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
+| Video Format    | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
+| Video Codec     | x264. Value is stored in the metadata of video renditions only.                                                                        |
+| Video Bitrate   | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
+| Audio Codec     | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only.                                           |
+| Audio Bitrate   | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
 
 ## Work with asset search results {#aftersearch}
 
@@ -430,13 +427,13 @@ To check the comments on an asset or version history of an asset, click the asse
 
 You can download the searched assets and their renditions just as you download regular assets from folders. Select one or more assets from the search results and click **[!UICONTROL Download]** from the toolbar.
 
-### Bulk update metadata properties {#metadataupdates}
+### Bulk update metadata properties {#metadata-updates}
 
 It is possible to make bulk updates to the common metadata fields of multiple assets. From the search results, select one or more assets. Click **[!UICONTROL Properties]** from the toolbar and update the metadata as required. Click **[!UICONTROL Save and Close]** when done. The previously existing metadata in the updated fields is overwritten.
 
 For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/manage-metadata.md#manage-assets-metadata) without using the search functionality. For the assets that are available across folders or match a common criteria, it is faster to bulk update the metadata via searching.
 
-### Smart collections {#collections-1}
+### Smart collections {#smart-collections}
 
 A collection is an ordered set of assets that can include assets from different locations because collections contain only references to these assets. Collections are of the following two types:
 
@@ -445,7 +442,7 @@ A collection is an ordered set of assets that can include assets from different 
 
 You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
 
-## Unexpected search results and issues {#unexpectedresults}
+## Unexpected search results and issues {#unexpected-results}
 
 <!--
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
@@ -456,7 +453,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 | Incorrect results when searching for assets with missing metadata. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. The results are based on indexed metadata property. | After the metadata is updated, re-indexing is required to reflect correct state of assets metadata. See [mandatory metadata](metadata-schemas.md#define-mandatory-metadata).|
 | Too many search results. | Broad search parameter. | Consider limiting the [scope of search](#scope). Use of smart tags may give you more search results than you expected. See [search behavior with smart tags](#withsmarttags). |
 | Unrelated or partly related search results. | Search behavior changes with smart tagging. | Understand [how search changes after smart tagging](#withsmarttags). |
-| No auto-complete suggestions for assets. | Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| [!DNL Assets] waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
+| No auto-complete suggestions for assets. | Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| [!DNL Experience Manager] waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
 | No search results. | <ul><li>Assets matching your query don't exist. </li><li> Whitespace added before the search query. </li><li> Unsupported metadata field contains the keyword that you searched for.</li><li> Search made during an asset's off-time. </li></ul> | <ul><li>Search using a different keyword. Alternatively, use smart tagging or similarity search to improve search results. </li><li>[Known limitation](#limitations).</li><li>All metadata fields are not considered for searches. See [scope](#scope).</li><li>Search later or modify on-time and off-time for the required assets.</li></ul> |
 | Search filter or a predicate is not available. | <ul><li>The search filter is either not configured.</li><li>It is not available for your login.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the privilege/permissions to use the customization.</li><li>Contact administrator and check the available customizations for the [!DNL Assets] deployment you are using.</li></ul> |
 | When searching for visually similar images, an expected image is missing. | <ul><li>Image is not available in [!DNL Experience Manager].</li><li>Image is not indexed. Typically, when it is recently uploaded.</li><li>Image is not smart tagged.</li></ul> | <ul><li>Add the image to [!DNL Assets].</li><li>Contact your administrator to re-index the repository. Also, ensure that you are using the appropriate index.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
