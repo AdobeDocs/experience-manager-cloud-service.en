@@ -114,7 +114,7 @@ A selection of data types is available for defining your model:
 
 ## Properties {#properties}
 
-Many properties are self-explanatory, for certain properites additional details are below:
+Many properties are self-explanatory, for certain properties additional details are below:
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
@@ -203,7 +203,7 @@ Content Fragments can form nested content, using either of the following data ty
 >  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
 >
 >* Fragment References in GraphQL 
->  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+>  If you create a deep query that returns multiple Content Fragments referenced by each other, it will return null at first occurrence.
 
 ### Content Reference {#content-reference}
 
@@ -303,7 +303,7 @@ A model can also be disabled so that:
 
 * The model is no longer available as a basis for creating *new* Content Fragments.
 * However:
-  * The GraphQL schema keeps being generated and is still queryrable (to avoid impacting JSON API).
+  * The GraphQL schema keeps being generated and is still queryable (to avoid impacting JSON API).
   * Any Content Fragments based of the model can still be queried and returned from the GraphQL endpoint.
 * The model cannot be referenced anymore, but existing references are kept untouched, and can still be queried and returned from the GraphQL endpoint.
 
@@ -394,3 +394,27 @@ To unpublish a content fragment model:
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
+
+## Content Fragment Model - Properties {#content-fragment-model-properties}
+
+You can edit the **Properties** of a Content Fragment Model:
+
+* **Basic**
+  * **Model Title**
+  * **Tags**
+  * **Description**
+  * **Upload Image**
+
+<!--
+* **GraphQL**
+  
+  >[!CAUTION]
+  >
+  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
+  >
+  >Updating these properties can impact dependent applications.
+
+  * **API Name**
+  * **Single Query Field Name**
+  * **Multiple Query Field Name**
+-->
