@@ -24,16 +24,8 @@ Asset upload is optimized for efficiency by enabling better scaling of ingestion
 * The default workflow **[!UICONTROL DAM Asset Update]** in previous versions of [!DNL Experience Manager] is no longer available. Instead, asset microservices provide a scalable, readily available service that covers most of the default asset processing (renditions, metadata extraction, and text extraction for indexing).
   * See [configure and use asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used.
-* Metadata writeback is not supported. See [metadata writeback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
-* Assets that are uploaded using Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the [!DNL Assets] user interface.
-* [!DNL Assets] does not automatically detect the MIME type of uploaded assets. A digital asset without an extension or with an incorrect extension is not processed as desired. For example, when uploading such assets, either nothing happens or an incorrect processing profile may apply to the asset. Users can still store the binary files without an extension in the DAM. See [MIME type detection in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
-* [!DNL Experience Manager] as a [!DNL Cloud Service] does not generate subassets for compound assets. See [subasset creation in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets).
-* [!DNL Assets] Home Page experience is not available. See [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
-* Duplicate asset detection works different as compared to [how it worked in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
-* For placement only (FPO) renditions are generated differently as compared to previous [!DNL Experience Manager] versions. See [FPO rendition for [!DNL Experience Manager] as a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
-* When a ZIP archive is uploaded, [!DNL Experience Manager] as a [!DNL Cloud Service] does not extract the assets bundled in the archive. See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip).
 
-Standard renditions generated with asset microservices are stored in a backward-compatible way in the asset repository nodes using the same naming conventions.
+The standard renditions generated with asset microservices are stored in a backward-compatible way in the asset repository nodes using the same naming conventions.
 
 ## Develop and test asset microservices {#asset-microservices}
 
@@ -43,9 +35,22 @@ Asset microservices is a cloud-native service that is automatically provisioned 
 
 To do an end-to-end validation of the code and process including asset ingestion and processing, deploy the code changes to a cloud-dev environment using [the pipeline](/help/implementing/cloud-manager/configure-pipeline.md) and test with full execution of asset microservices processing.
 
-## Removal of Classic UI {#classic-ui}
 
-The Classic UI is no longer available in [!DNL Experience Manager] as a [!DNL Cloud Service]. Only the Touch-enabled UI is available.
+## Feature parity with [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
+
+[!DNL Experience Manager] as a [!DNL Cloud Service] introduces many new features and more performant ways for existing features to work. However, when moving from [!DNL Experience Manager] 6.5 to [!DNL Experience Manager] as a [!DNL Cloud Service], you may notice that some features either work differently, are not available, or are available partially. The following is a list of such features:
+
+| Functionality or use case | Status in [!DNL Experience Manager] as a [!DNL Cloud Service] | Comments |
+|-----|-----|-----|
+| [Duplicate asset detection](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Works differently. | See [how it worked in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
+| [For Placement Only (FPO) renditions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Works differently | |
+| Metadata writeback | Not supported. | See [metadata writeback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| Processing of assets uploaded using Package Manager | Needs manual intervention. | Manually reprocess using the **[!UICONTROL Reprocess Asset]** action. |
+| MIME type detection | Not supported. | If you upload a digital asset without an extension or with an incorrect extension, it may not be processed as desired. Users can still store the binary files without an extension in the DAM. See [MIME type detection in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
+| Subasset generation for compound assets | Not supported. | Dependent use cases are not fulfilled. For example, annotation of multi-page PDF files is impacted. See [subasset creation in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Home page | Not supported. | See [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| Extract assets from ZIP archive | Not supported. | See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Classic UI | Not supported. | Only Touch-enabled UI is available. |
 
 >[!MORELIKETHIS]
 >
