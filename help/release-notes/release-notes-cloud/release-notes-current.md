@@ -40,7 +40,7 @@ The following release (2021.4.0) will be on April 29, 2021.
 * In [!DNL Brand Portal], a new download setting is introduced, that lets you create separate folder for each asset when downloading folders, collection, and so on. See [download settings](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 
-## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 AEM Forms has helped many organizations deliver great onboarding and enrollment experiences over the years. These experiences have helped organizations convert leads to sales, process captured customer data, deliver responsive experiences based on the audience profile, and much more. Now, AEM Forms is available as a cloud service.
 
