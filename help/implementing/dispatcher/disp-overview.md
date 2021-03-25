@@ -193,7 +193,7 @@ It is invoked as: `validator full [-d folder] [-w allowlist] zip-file | src fold
 
 The tool validates that the Dispatcher configuration is using the appropriate directives supported by AEM as a Cloud service by scanning all files with pattern `conf.d/enabled_vhosts/*.vhost`.
 
-On Windows, the dispatcher validator is case-sensitive. This means that it fails to validate the configuration if you do not respect the capitalization of the path where your configuration resides, for example:
+On Windows, the dispatcher validator is case-sensitive. As such, it can fail to validate the configuration if you do not respect the capitalization of the path where your configuration resides, for example:
 
 ```
 
