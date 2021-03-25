@@ -111,7 +111,7 @@ You can upload an asset with the same path (same name and same location) as that
 >
 >If Asset Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
-To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
+To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
 ### File name handling and forbidden characters {#filename-handling}
 
