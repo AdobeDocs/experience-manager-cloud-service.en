@@ -21,12 +21,7 @@ The following release (2021.4.0) will be on April 29, 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-<!--
-### Progressive Web Apps (PWAs) {#pwa}
-
-* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
--->
-
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md) can now be enabled at the project level via simple configuration.
 * Content Fragment Model Extensions - now possible to define multi-line text data types as multi-field lists.
 * Content Fragment Editor UX Enhancements - nested child fragments now displayed in breadcrumb, and improved view of publish, save, and save&exit actions 
 
