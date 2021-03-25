@@ -191,7 +191,22 @@ The validation tool is available in the SDK at `bin/validator` as a Mac OS, Linu
 
 It is invoked as: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-The tool validates that the Dispatcher configuration is using the appropriate directives supported by AEM as a Cloud service by scanning all files with pattern `conf.d/enabled_vhosts/*.vhost`. The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
+The tool validates that the Dispatcher configuration is using the appropriate directives supported by AEM as a Cloud service by scanning all files with pattern `conf.d/enabled_vhosts/*.vhost`.
+
+On Windows, the dispatcher validator is case-sensitive. This means that it fails to validate the configuration if you do not respect the capitalization of the path where your configuration resides, for example:
+
+```
+
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+Avoid this error by copying and pasting the path from Windows Explorer and then on the command prompt using a `cd` command into that path.
+
+The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
 
 ```
 
