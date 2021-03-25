@@ -27,6 +27,8 @@ The following release (2021.4.0) will be on April 29, 2021.
 * [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
 -->
 
+* Content Fragment Model Extensions - now possible to define multi-line text data types as multi-field lists.
+
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
