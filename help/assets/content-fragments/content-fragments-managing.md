@@ -14,7 +14,7 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 * [Associate Content with your Fragment](#associating-content-with-your-fragment)
 * [Configure the Metadata](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [View the Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
-* [Previewthe JSON representation](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [Preview the JSON representation](/help/assets/content-fragments/content-fragments-json-preview.md)
 
 
 >[!NOTE]
@@ -230,8 +230,8 @@ While editing your content fragment AEM automatically creates versions to ensure
 
 1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
 
-    1. If the token is found, the fragment is considered to be part of the existing editing session.
-    2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
+   1. If the token is found, the fragment is considered to be part of the existing editing session.
+   2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
 
 2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
 
@@ -278,7 +278,7 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 
 * Actions for Annotations
 
-    * **Delete**
+  * **Delete**
 
 >[!NOTE]
 >
@@ -308,13 +308,13 @@ This will open:
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
-They will be shown side-by-side, where:
+They will be shown side by side, where:
 
 * Any differences are highlighted
 
-    * Deleted text - red
-    * Inserted text - green
-    * Replaced text - blue
+  * Deleted text - red
+  * Inserted text - green
+  * Replaced text - blue
 
 * The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
 * You can **Revert** to the specific version
