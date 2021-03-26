@@ -287,7 +287,7 @@ An editing session is started when the user opens a content fragment in the edit
 Technically, all edits are done on *live* content, just as with all other AEM editing. When the editing session is started, a version of the current, unedited status is created. If a user cancels an edit, that version is restored. If the user clicks on **Save**, nothing specific is done, as all the editing was executed on *live* content, therefore all changes are persisted already. Also, clicking on **Save** will trigger some background processing (such as creating full text search information and/or handling mixed-media assets).
 
 There are some safety measures for edge cases; for example, if the user tries to leave the editor without saving or cancelling the editing session. Also, a periodic auto save is available to prevent data loss.
-Note that two users may edit the same content fragment concurrently, and therefore may overwrite each others changes. To prevent this, the content fragment needs to be locked by applying the DAM adminstration's *Checkout* action on the fragment.
+Note that two users may edit the same content fragment concurrently, and therefore may overwrite each other's changes. To prevent this, the content fragment needs to be locked by applying the DAM administration's *Checkout* action on the fragment.
 
 ## Examples {#examples}
 
