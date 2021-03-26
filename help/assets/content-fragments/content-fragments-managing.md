@@ -206,7 +206,7 @@ The editor has various options:
   >In addition to simply saving your changes, **Save** also updates any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
   >
   >
-  >Please bear this in mind when using **Save** and then quickly re-entering the fragment editor to make and save further changes.
+  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
 
 * **Close**
 
