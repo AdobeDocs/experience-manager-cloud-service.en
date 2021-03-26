@@ -123,11 +123,15 @@ To open your fragment for editing:
 
    ![fragment editor](assets/cfm-managing-03.png)
 
-1. After making changes, use **Save & Close** or **Cancel** as required.
+1. After making changes, use **Save**, **Save & close** or **Close** as required.
 
    >[!NOTE]
    >
-   >Both **Save & Close** and **Cancel** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
+   >**Save & close** is available via the **Save** dropdown.
+
+   >[!NOTE]
+   >
+   >Both **Save & Close** and **Close** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
 
 ## Modes and Actions in the Content Fragment Editor {#modes-actions-content-fragment-editor}
 
@@ -169,7 +173,10 @@ Some features in the top toolbar are available from multiple modes:
   * **Modified**: orange
   * **Deactivated**: red
 
+* **Save** provides access to the **Save & close** option.
+  
 * The three dots (**...**) drop-down provides access to additional actions:
+  * **Update page references**
   * **[Quick publish](#publishing-and-referencing-a-fragment)**
   * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 
@@ -179,11 +186,12 @@ Some features in the top toolbar are available from multiple modes:
 >
 >Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-The editor has two options:
+The editor has various options:
 
-* **Save**
+* **Save** and **Save & close**
 
-  Will save the latest changes and exit the editor.
+  **Save** will save the latest changes and remain in the editor.
+  **Save & close** will save the latest changes and exit the editor.
 
   >[!CAUTION]
   >
@@ -200,7 +208,7 @@ The editor has two options:
   >
   >Please bear this in mind when using **Save** and then quickly re-entering the fragment editor to make and save further changes.
 
-* **Cancel**
+* **Close**
 
   Will exit the editor without saving the latest changes.
 
