@@ -87,8 +87,6 @@ role: Architect, Developer
     + [Release Notes for 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
     + [Release Notes for 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
     + [Release Notes for 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-  + Understanding Roles and Responsibilities {#getting-access-to-aem-in-cloud}
-    + [Understanding Roles and Responsibilities](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
   + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)
