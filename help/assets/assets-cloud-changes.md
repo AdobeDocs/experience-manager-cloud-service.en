@@ -49,7 +49,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 | MIME type detection | Not supported. | If you upload a digital asset without an extension or with an incorrect extension, it may not be processed as desired. Users can still store the binary files without an extension in the DAM. See [MIME type detection in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Subasset generation for compound assets | Not supported. | Dependent use cases are not fulfilled. For example, annotation of multi-page PDF files is impacted. See [subasset creation in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Home page | Not supported. | See [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Extract assets from ZIP archive | Not supported. | See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Extract assets from ZIP archive | Not supported. | See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Classic UI | Not supported. | Only Touch-enabled UI is available. |
 
 >[!MORELIKETHIS]
