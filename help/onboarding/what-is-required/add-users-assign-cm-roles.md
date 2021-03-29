@@ -22,7 +22,7 @@ Follow this section to learn how to add users and further assign the users to Cl
 
 1. Select the Users tab from the top navigation, then select Add User:
 
-1. Select Add user and assign appropriate Cloud Manager Role(s) or Product Profile(s) to the user as show below. Refer to the [Insert link User Roles and Permissions} to ensure that the right users are assigned the right Role(s) in Admin Console as seen below.
+1. Select Add user and assign appropriate Cloud Manager Role(s) or Product Profile(s) to the user as show below. Refer to the User Roles and Permissions to ensure that the right users are assigned the right Role(s) in Admin Console as seen below.
 
    Now your users have been added to Adobe Experience Manager as a Cloud Service Product Context and are setup with the right Roles or Product Profiles.
 
