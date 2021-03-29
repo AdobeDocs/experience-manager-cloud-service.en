@@ -12,27 +12,38 @@ Follow this section to learn how to add users and further assign the users to Cl
 >[!NOTE]
 >You must be a System Administrator to add a user. 
 
-1. If you are a System Administrator, navigate to the [Admin Console](https://adminconsole.adobe.com). Alternatively, you can also  navigate to Cloud Manager where you will see the Manage Access button as described below 
+1. If you are a System Administrator, navigate to the [Admin Console](https://adminconsole.adobe.com). Alternatively, you can also  navigate to Cloud Manager where you will see the **Manage Access** button as described below. 
 
-1. Select Manage Access button (top right from Cloud Manager landing page seen below), to open Admin Console in a new TAB.
+1. Select **Manage Access**  button, located on the top right of the Cloud Manager landing page, to open Admin Console in a new tab.
 
-1. From Admin Console, you can add users to Cloud Manager and assign them to Role(s), referred to as Product Profiles in Admin Console.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
-1. Select Adobe Experience Manager as a Cloud Service from Products and service card as shown below:
+   From **Admin Console**, you can add users to Cloud Manager and assign them to Role(s), referred to as Product Profiles in Admin Console.  
 
-1. Select the Users tab from the top navigation, then select Add User:
+1. Select **Adobe Experience Manager as a Cloud Service** from **Products and services** card as shown below.
 
-1. Select Add user and assign appropriate Cloud Manager Role(s) or Product Profile(s) to the user as show below. Refer to the User Roles and Permissions to ensure that the right users are assigned the right Role(s) in Admin Console as seen below.
+   ![](/help/onboarding/what-is-required/assets/admin-console-1.png)
 
-   Now your users have been added to Adobe Experience Manager as a Cloud Service Product Context and are setup with the right Roles or Product Profiles.
+1. Select the **Users** tab from the action  bar and then select **Add User**.
 
-   For example, if you are in the role of a:
+   ![](/help/onboarding/what-is-required/assets/admin-console-2.png)
 
-   * ***Business Owner***, you have the permission to Add a new program or Edit a program, Add/Update an environment, Add/Edit/Delete the pipeline and Run any pipeline (deploy code to AEM environment or code-  quality).
+1.  Select the user and assign appropriate Cloud Manager Role(s) or Product Profile(s) to the user as show below.
 
-   * ***Deployment Manager***, you have the permission to Add/Update an environment, Run any pipeline (deploy code to AEM environment or code-quality). 
+    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
-   * ***Developer role***, you have the permission to Generate Personal Access Token to access Git.
+      >[!NOTE]
+      >Refer to the [User Roles and Permissions](/help/onboarding/what-is-required/user-roles-permissions.md) to ensure that the right users are assigned the right Role(s) in Admin Console.
 
->[!NOTE]
-> A user can be assigned to multiple roles- For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.
+      Now your users have been added to Adobe Experience Manager as a Cloud Service Product Context and are setup with the right Roles or Product Profiles.
+
+      For example, if you are in the role of a:
+
+      * ***Business Owner***, you have the permission to Add a new program or Edit a program, add or update an environment, add/edit/delete the pipeline and run any pipeline, and deploy code to AEM environment or code quality.
+
+      * ***Deployment Manager***, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment or code-quality. 
+
+      * ***Developer***, you have the permission to generate Personal Access Token to access Git.
+
+        >[!NOTE]
+        > A user can be assigned to multiple roles. For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.
