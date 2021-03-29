@@ -14,7 +14,7 @@ Follow the steps below to create a Production program:
    ![](assets/first_timelogin1.png) 
 
    >[!NOTE]
-   >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) for more details.
+   >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) for more details.
 
 1. Select **Set up for Production** in the Create Program wizard to create a Production program. User can accept the default program name or edit it before selecting **Continue**.
 
