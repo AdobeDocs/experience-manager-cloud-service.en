@@ -7,41 +7,59 @@ description: Getting Access to Cloud Manager for AEM as a Cloud Service
 
 Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to Cloud Manager login page which is also accessible through [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/). 
 
-Upon successful login, you will be directed to the landing page of Cloud Manager as shown below.
+>[!NOTE]
+>You must be added as a user and assigned to a Cloud Manager Role (Product Profile in Admin Console) by your System Administrator. 
+
+1. From your Welcome email select Get started, or navigate to [Cloud Manager](experience.adobe.com) and login using your Adobe ID.  
+
+1. Select **Experience Manager**.
+   ![](assets/landing-page1.png)
+   
+1. Click on **Launch** from the Cloud Manager card.
+   Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
+   ![](assets/landing-page2.png)
+
+   >[!NOTE]
+   >
+   >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
+
+## Cloud Manager Landing Page {#cloud-magaer-landing}
+
+Upon successful login, you will be directed to the landing page of Cloud Manager.
+
+You will see one of the three options described below:
+
+* **When No Programs exist in Cloud Manager**
+
+   If no programs exist in your Organization, then your landing page directs you to create your first program, as shown in the figure below.
+   ![](assets/first_timelogin0.png)
+
+* **When Programs already exist in Cloud Manager**
+
+   If program(s) already exist in your Organization, then your landing page directs you to add another program and displays all your existing programs too, as shown in the figure below.
 
    ![](assets/first_timelogin1.png)
 
-## SysAdmin Tasks {#sysadmin-tasks}
+* **When a Program exists and user is System Administrator**
 
-A user in the SysAdmin role can select **Manage Access** to directly access the Admin Console to manage roles and permissions and access to AEM instances.
+   If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
 
-### Managing Roles {#manage-roles}
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-As a user in the SysAdmin role, you have one-click access to the location in **Admin Console** from where user roles or permissions to Cloud Manager are managed.
-
-Refer to [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) to get more information on how to add users to a profile. 
+From here, a user with the right permissions, such as a Business Owner role in Cloud Manager is able to select **Add Program** to launch the wizard.
 
 >[!NOTE]
->For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
+> Refer to [Understanding User Roles and Permissions](/help/onboarding/what-is-required/user-roles-permissions.md).
+> Refer to [Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) to learn more about Program types.
+>To learn how to add a program in Cloud Manager, refer to:
+>* [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+>* [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
-1. Navigate to the landing page of the Cloud Manager and click on **Manage Access**.
+## Granting Users Access to an AEM instance {aem-instances-access}
 
-   ![](assets/sys-admin5.png)
+1. Navigate to Cloud Manager and select the **Manage Access** button from the context of the environment of interest as shown below.
 
-1. Once you click on **Manage Access**, you are navigated to **Admin Console** from where you can manage the user roles or permissions to Cloud Manager.
-
-   ![](assets/sys-admin1.png)
-
-### Managing Access to Author Instance {#manage-access-aem}
-
-As a user in the SysAdmin role, you have one-click access to the **Admin Console** from where you can navigate to the author instance directly and manage access.
-
->[!NOTE]
->For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
-
-   Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
-
-1. Navigate to **Environments** card from **Program Overview** page and click on **Manage Access**.
+1. Navigate to Cloud Manager and from the **Environments** card, click on **Manage Access**.
 
    ![](assets/sys-admin6.png)
 
@@ -51,20 +69,20 @@ As a user in the SysAdmin role, you have one-click access to the **Admin Console
 
    ![](assets/sys-admin4.png)
 
-1. Once you click on **Manage Access**, you are navigated to **Admin Console** from where you have the access to the author instance of the environment.
+
+1. Once you click on **Manage Access**, a new tab navigates you to **Admin Console** from where you have the access to the author instance of the environment. Select the **Users** tab and click on **Add User**.
+
+    ![](/help/onboarding/what-is-required/assets/admin-console-5.png)
+
+   >[!NOTE]
+   >You can also navigate directly to the [Admin Console](https://adminconsole.adobe.com).
+
+1. Select the AEM instance of interest as shown below. You can select the Adobe Experience Manager as a Cloud Service (Product Context) Card to get to the table with the list of AEM instances. Select the instance of interest as shown below.
 
    ![](assets/sys-admin-2.png)
 
-## For Existing AMS Customers {#existing-aem}
+1. Click on **Add User** to add the user(s) who you wish to give access to.
 
-If you are an existing AMS (Adobe Managed Services) customer and you have access to Cloud Service, you will see your existing program(s) and the **Add Program** button on the top right corner of the landing page. 
+   >[!NOTE]
+   >For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
 
-If you do not see the **Add Program** button and have questions about access to Cloud Service, please contact your Adobe representative.
-
-## For New Cloud Service Customers {#new-cloud-services}
-
-If you are a new Cloud Service customer, then you will see the **Add Program** button on the top right corner of an empty landing page. You will want to add a new program to your Cloud Service.
-
-To learn how to add a program in Cloud Manager, refer to:
-* [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-* [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
