@@ -1,9 +1,11 @@
 ---
 title: Managing Content Fragments
-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
+description: Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
 ---
 
-# Managing Content Fragments{#managing-content-fragments}
+# Managing Content Fragments {#managing-content-fragments}
+
+Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
 
 Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 

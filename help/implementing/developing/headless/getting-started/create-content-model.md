@@ -1,11 +1,11 @@
 ---
 title: Creating Content Fragment Models Headless Quick Start Guide
-description: Content Fragment Models define the structure of the content you will create and serve using AEM's headless capabilities.
+description: Define the structure of the content you will create and serve using AEM's headless capabilities by using Content Fragment Models.
 ---
 
 # Creating Content Fragment Models Headless Quick Start Guide {#creating-content-fragment-models}
 
-Content Fragment Models define the structure of the content you will create and serve using AEM's headless capabilities.
+Define the structure of the content you will create and serve using AEM's headless capabilities by using Content Fragment Models.
 
 ## What are Content Fragment Models? {#what-are-content-fragment-models}
 
