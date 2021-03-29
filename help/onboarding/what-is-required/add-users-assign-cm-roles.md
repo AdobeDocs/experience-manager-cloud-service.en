@@ -12,7 +12,7 @@ Follow this section to learn how to add users and further assign the users to Cl
 >[!NOTE]
 >You must be a System Administrator to add a user. 
 
-1. If you are a System Administrator, navigate to the [Admin Console](https://adminconsole.adobe.com). Alternatively, you can also  navigate to Cloud Manager {INSERT LINK] where you will see the Manage Access button as described below 
+1. If you are a System Administrator, navigate to the [Admin Console](https://adminconsole.adobe.com). Alternatively, you can also  navigate to Cloud Manager where you will see the Manage Access button as described below 
 
 1. Select Manage Access button (top right from Cloud Manager landing page seen below), to open Admin Console in a new TAB.
 
