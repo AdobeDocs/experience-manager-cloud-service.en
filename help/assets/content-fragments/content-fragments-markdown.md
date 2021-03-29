@@ -1,11 +1,11 @@
 ---
 title: Markdown
-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
+description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create headless content.
 ---
 
-# Markdown{#markdown}
+# Markdown {#markdown}
 
-When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
+When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write headless content:
 
 ![markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
