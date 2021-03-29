@@ -10,7 +10,7 @@ Once your System Administrator grants you access to Cloud Manager, you will rece
 >[!NOTE]
 >You must be added as a user and assigned to a Cloud Manager Role (Product Profile in Admin Console) by your System Administrator. 
 
-1. From your Welcome email select Get started, or navigate to [Cloud Manager](experience.adobe.com) and login using your Adobe ID.  
+1. From your Welcome email select Get started, or navigate to [Cloud Manager](https://experience.adobe.com) and login using your Adobe ID.  
 
 1. Select **Experience Manager**.
    ![](assets/landing-page1.png)
