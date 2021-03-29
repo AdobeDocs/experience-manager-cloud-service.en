@@ -1,11 +1,11 @@
 ---
 title: Content Fragment Models
-description: Content Fragment Models are used to create content fragments with structured content.
+description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM and how to create Content Fragments with structured content.
 ---
 
 # Content Fragment Models {#content-fragment-models}
 
-Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
+Content Fragment Models in AEM define the structure of content for your [content fragments,](/help/assets/content-fragments/content-fragments.md) serving as a foundation of your headless content.
 
 To use Content Fragment Models you:
 

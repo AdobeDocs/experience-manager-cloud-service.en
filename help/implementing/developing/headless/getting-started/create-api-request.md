@@ -1,11 +1,11 @@
 ---
 title: Accessing and Delivering Content Fragments Headless Quick Start Guide
-description: The Assets REST API allows managing Content Fragments and the GraphQL API allows simple headless delivery of Content Fragment content.
+description: Learn how to use AEM's Assets REST API to manage Content Fragments and the GraphQL API for headless delivery of Content Fragment content.
 ---
 
 # Accessing and Delivering Content Fragments Headless Quick Start Guide {#accessing-delivering-content-fragments}
 
-The Assets REST API allows managing Content Fragments and the GraphQL API allows simple headless delivery of Content Fragment content.
+Learn how to use AEM's Assets REST API to manage Content Fragments and the GraphQL API for headless delivery of Content Fragment content.
 
 ## What are GraphQL and Assets REST APIs? {#what-are-the-apis}
 
