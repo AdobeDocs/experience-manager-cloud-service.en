@@ -55,7 +55,7 @@ From here, a user with the right permissions, such as a Business Owner role in C
 >* [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
 >* [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
-## Granting Users Access to an AEM instance {aem-instances-access}
+## Granting Users Access to an AEM instance {#aem-instances-access}
 
 1. Navigate to Cloud Manager and select the **Manage Access** button from the context of the environment of interest as shown below.
 
