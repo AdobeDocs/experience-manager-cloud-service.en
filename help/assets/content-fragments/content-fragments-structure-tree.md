@@ -1,9 +1,11 @@
 ---
 title: Content Fragment Structure Tree
-description: In the Content Fragment Editor you can view the structure tree.
+description: Use the Structure Tree feature of the Content Fragment Editor in AEM to better understand your headless content.
 ---
 
 # Content Fragment Structure Tree {#content-fragment-structure-tree}
+
+Use the Structure Tree feature of the Content Fragment Editor in AEM to better understand your headless content.
 
 In the Content Fragment Editor you can select the Structure Tree icon:
 
