@@ -15,7 +15,7 @@ role: Architect, Developer
   + [Getting your Adobe ID](what-is-required/get-your-adobe-id.md)
   + [Adding Users and Assigning to Cloud Manager Roles](what-is-required/add-users-assign-cm-roles.md)
   + [Navigating to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-  + [Accessing an AEM Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)
+  + [Accessing an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager Programs {#getting-access}  
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
     + Production Programs {#production-programs}
