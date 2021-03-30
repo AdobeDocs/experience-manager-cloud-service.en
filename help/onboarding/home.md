@@ -5,7 +5,7 @@ description: Adobe Experience Manager as a Cloud Service onboarding self-help re
 
 # Onboarding to Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
-Congratulations on starting your journey with AEM as a Cloud Service! Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application optimized and ready for success on Cloud Service.
+Congratulations on starting your journey with AEM as a Cloud Service! Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service.
 
 ## Key Onboarding Articles {#key-articles}
 
@@ -28,18 +28,18 @@ Your System Administrator can add users and assign them to Cloud Manager roles. 
 
 **[System Administrator Tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-System Administrators manage all aspects of their users, from access to permissions. The following documentation pages include information describing basic organizational tasks:
+System Administrators manage all aspects of their users, from access to permissions. The following documentation includes information describing basic organizational tasks, such as:
 
 * Adding users
 * Assigning users to Cloud Manager roles and permissions
 
 **[Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Access Cloud Manager to get started with your Cloud journey with AEM. Now that you have been added as a user and assigned to aa Cloud Manager Role, you are ready to do various tasks such as [creating a program](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adding an environment](/help/implementing/cloud-manager/manage-environments.md), [accessing Git](/help/implementing/cloud-manager/accessing-git.md), [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
+Access Cloud Manager to get started with your Cloud journey with AEM. Now that you have been added as a user and assigned to a Cloud Manager Role, you are ready to do various tasks such as [creating a program](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adding an environment](/help/implementing/cloud-manager/manage-environments.md), [accessing Git](/help/implementing/cloud-manager/accessing-git.md), [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
 
 **[Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-Follow this section to learn how a a System Administrator can grant users access to an AEM instance or a user who created a environment can grant other users access to an AEM instance.
+Follow this section to learn how a System Administrator can grant users access to an AEM instance or a user who created a environment can grant other users access to an AEM instance.
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
