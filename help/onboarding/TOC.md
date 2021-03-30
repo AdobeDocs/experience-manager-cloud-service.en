@@ -12,10 +12,11 @@ role: Architect, Developer
 
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
 + Getting Started with AEM as a Cloud Service {#what-is-required}
-  + [Getting your Adobe ID](what-is-required/get-your-adobe-id.md)
-  + [Adding Users and Assigning to Cloud Manager Roles](what-is-required/add-users-assign-cm-roles.md)
-  + [Navigating to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-  + [Accessing an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
+  + [Get your Adobe ID](what-is-required/get-your-adobe-id.md)
+  + [User Roles and Permissions](what-is-required/user-roles-permissions.md)
+  + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
+  + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
+  + [Access an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager Programs {#getting-access}  
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
     + Production Programs {#production-programs}

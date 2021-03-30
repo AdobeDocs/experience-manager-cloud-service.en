@@ -5,21 +5,36 @@ description: Adobe Experience Manager as a Cloud Service onboarding self-help re
 
 # Onboarding to Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
-This page lists the self-help resources about onboarding for Experience Manager as a Cloud Service.
+Congratulations on starting your journey with AEM as a Cloud Service! Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application optimized and ready for success on Cloud Service.
 
 ## Key Onboarding Articles {#key-articles}
 
-This section covers the key articles focussed on:
+This section covers the key articles focussed on your journey when starting with AEM as a Cloud Service:
 
-* Getting Started with AEM as a Cloud Service
+**What to expect while Onboarding**
 
-* Understanding roles for users which govern the availability of specific features
+Once your contract has been signed the following events will take place:
 
-* Setting up Cloud Manager's git repository
+1. Your organization's System Administrator will receive a Welcome Email allowing them to do [Administrator tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) including adding users, assigning them to roles and thereby giving them appropriate access to Cloud Manager.
 
-* Accessing Experience Manager as a Cloud Service
+1. Users added by your System Administrator will in turn receive a Welcome Email notifying them that they have access to Cloud Manager. Users can now begin their journey with Cloud Manager from here. 
 
-* Foundations for data protection and privacy regulations
+1. Users can additionally be given [access to an AEM instance](/help/onboarding/what-is-required/accessing-aem-instance.md) for development purposes.
+
+**Teams, Roles, and Permissions**
+
+Your System Administrator can add users and assign them to Cloud Manager roles. This section helps you understand what *Cloud Manager Roles* are and the permissions associated with the roles before getting started.
+
+**System Administrator Tasks**
+
+System Administrators manage all aspects of their users, from access to permissions. The following documentation pages include information describing basic organizational tasks, that is [Adding Users and assigning users to Cloud Manager roles and permissions](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+
+
+**Navigate to Cloud Manager**
+
+Access Cloud Manager to get started with your Cloud journey with AEM. Now that you have been added as a user and assigned to aa Cloud Manager Role, you are ready to do various tasks such as creating a program, adding an environment, managing Git, configuring a pipeline, and deploying code.
+
+**Access an AEM Instance**
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
