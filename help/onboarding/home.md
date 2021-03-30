@@ -23,7 +23,7 @@ Once your contract has been signed the following events will take place:
 
 **Teams, Roles, and Permissions**
 
-Your System Administrator can add users and assign them to Cloud Manager roles. This section helps you understand what *Cloud Manager Roles* are and the permissions associated with the roles before getting started.
+Your System Administrator can add users and assign them to Cloud Manager roles. This section helps you understand what [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) are and the [permissions](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) associated with the roles before getting started.
 
 **System Administrator Tasks**
 
@@ -32,7 +32,7 @@ System Administrators manage all aspects of their users, from access to permissi
 
 **Navigate to Cloud Manager**
 
-Access Cloud Manager to get started with your Cloud journey with AEM. Now that you have been added as a user and assigned to aa Cloud Manager Role, you are ready to do various tasks such as creating a program, adding an environment, managing Git, configuring a pipeline, and deploying code.
+Access Cloud Manager to get started with your Cloud journey with AEM. Now that you have been added as a user and assigned to aa Cloud Manager Role, you are ready to do various tasks such as [creating a program](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adding an environment](/help/implementing/cloud-manager/manage-environments.md), [accessing Git](/help/implementing/cloud-manager/accessing-git.md), [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
 
 **Access an AEM Instance**
 
