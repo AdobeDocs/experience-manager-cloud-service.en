@@ -21,30 +21,33 @@ Follow the steps below to manage access from Cloud Manager:
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
 
-1. Once you click on **Manage Access**, a new tab navigates you to **Admin Console** from where you have the access to the author instance of the environment. Select the **Users** tab and click on **Add User**.
+1. Once you click on **Manage Access**, a new tab navigates you to **Admin Console** from where you have the access to the author instance of the environment.
+
+    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
+
+1. Select the **Users** tab and click on **Add User**.
 
     ![](/help/onboarding/what-is-required/assets/admin-console-5.png)
 
-   >[!NOTE]
-   >You can also navigate directly to the [Admin Console](https://adminconsole.adobe.com).
-
-     ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
+     
 
    Or,
 
-   You can also navigate directly to the [Admin Console](https://adminconsole.adobe.com) to add a user from the Admin Console.
+   You can also navigate directly to the [Admin Console](https://adminconsole.adobe.com) to add a user.
 
-   Select the AEM instance of interest as shown below. You can select the Adobe Experience Manager as a Cloud Service (Product Context) card to get to the table with the list of AEM instances.
+   1. Select the AEM instance of interest from the Admin Console, as shown below. You can select the Adobe Experience Manager as a Cloud Service (Product Context) card to get to the table with the list of AEM instances.
 
-   ![](/help/onboarding/what-is-required/assets/admin-console-6.png)
+      ![](/help/onboarding/what-is-required/assets/admin-console-6.png)
 
-   Select the instance of interest as shown below.
+    1. Select the instance of interest as shown below.
 
-   ![](/help/onboarding/what-is-required/assets/admin-console-7.png)
+       ![](/help/onboarding/what-is-required/assets/admin-console-7.png)
 
  
-1. Click on **Add User** to add the user(s) who you wish to give access to.
+     1. Click on **Add User** to add the user(s) who you wish to give access to.
 
-   >[!NOTE]
-   >For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
+        ![](/help/onboarding/what-is-required/assets/admin-console-8.png)
+
+        >[!NOTE]
+        >For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
 
