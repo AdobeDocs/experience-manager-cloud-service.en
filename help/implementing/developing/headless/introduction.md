@@ -1,11 +1,11 @@
 ---
 title: Headless Development for AEM Sites as a Cloud Service
-description: Using powerful features like Content Models, Content Fragments, and the GraphQL API, AEM as a Cloud Service allows you to manage your experiences centrally and serve them across channels.
+description: Learn how AEM as a Cloud Service's powerful headless capabilities like Content Models, Content Fragments, and the GraphQL API work together to enable you to manage your experiences centrally and serve them across channels.
 ---
 
 # Headless Development for AEM Sites as a Cloud Service {#headless-development}
 
-Using powerful features like Content Models, Content Fragments, and the GraphQL API, AEM as a Cloud Service allows you to manage your experiences centrally and serve them across channels.
+Learn how AEM as a Cloud Service's powerful headless capabilities like Content Models, Content Fragments, and the GraphQL API work together to enable you to manage your experiences centrally and serve them across channels.
 
 ## Overview {#overview}
 
