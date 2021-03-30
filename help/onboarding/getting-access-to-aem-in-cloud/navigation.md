@@ -23,7 +23,7 @@ Once your System Administrator grants you access to Cloud Manager, you will rece
    >
    >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
-## Cloud Manager Landing Page {#cloud-magaer-landing}
+## Cloud Manager Landing Page {#cloud-manager-landing}
 
 Upon successful login, you will be directed to the landing page of Cloud Manager.
 
