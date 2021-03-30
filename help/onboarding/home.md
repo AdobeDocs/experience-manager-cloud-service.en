@@ -27,7 +27,7 @@ Your System Administrator can add users and assign them to Cloud Manager roles. 
 
 **[System Administrator Tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-System Administrators manage all aspects of their users, from access to permissions. The following documentation pages include information describing basic organizational tasks, that is [Adding Users and assigning users to Cloud Manager roles and permissions](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+System Administrators manage all aspects of their users, from access to permissions. The following documentation pages include information describing basic organizational tasks, that is, [adding users and assigning users to Cloud Manager roles and permissions](/help/onboarding/what-is-required/add-users-assign-cm-roles.md).
 
 **[Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
