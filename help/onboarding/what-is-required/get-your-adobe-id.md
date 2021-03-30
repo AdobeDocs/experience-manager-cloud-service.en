@@ -3,7 +3,7 @@ title: Get your Adobe ID
 description: Get your Adobe ID
 ---
 
-# Getting your Adobe ID {#adobe-id}
+# Get your Adobe ID {#adobe-id}
 
 This guide will provide you with a checklist to get you and your team started with Cloud Manager expeditiously. You will need your Adobe ID, and your System Administrator's help to add users to Cloud Manager to their assigned Roles (referred to as Product Profiles in Admin Console) and associated permissions. The instructions for how the System Administrator can do this via Admin Console is described. 
 

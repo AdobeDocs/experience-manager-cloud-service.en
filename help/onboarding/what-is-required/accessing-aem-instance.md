@@ -3,7 +3,7 @@ title: Accessing an AEM Instances
 description: Follow this page to learn how to access  an AEM instance
 ---
 
-# Accessing an AEM Instance {#accessing-aem-instance}
+# Access an AEM Instance {#accessing-aem-instance}
 
 Follow the steps below to access an AEM instance from Cloud Manager:
 
