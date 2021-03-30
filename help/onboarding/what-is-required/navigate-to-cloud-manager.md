@@ -10,7 +10,8 @@ Once your System Administrator grants you access to Cloud Manager, you will rece
 >[!NOTE]
 >You must be added as a user and assigned to a Cloud Manager Role (Product Profile in Admin Console) by your System Administrator. 
 
-1. From your Welcome email select **Get Started** or navigate to [Cloud Manager](https://experience.adobe.com) and login using your Adobe ID.  
+1. From your Welcome email click on **Get started**, as shown in the figure below or navigate to [Cloud Manager](https://experience.adobe.com) and login using your Adobe ID.  
+    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
 1. Select **Experience Manager**.
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
@@ -27,7 +28,7 @@ Upon successful login, you will be directed to the landing page of Cloud Manager
 >[!NOTE]
 >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
-You will see one of the three options described below:
+You will see one of the three options, described below:
 
 * **When No Programs exist in Cloud Manager**
 
