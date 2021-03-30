@@ -3,7 +3,7 @@ title: Navigating to Cloud Manager
 description: Follow this page to learn how to navigate to Cloud Manager landing page
 ---
 
-# Navigating to Cloud Manager {#cloud-manager}
+# Navigate to Cloud Manager {#cloud-manager}
 
 Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to Cloud Manager login page which is also accessible through [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/). 
 
