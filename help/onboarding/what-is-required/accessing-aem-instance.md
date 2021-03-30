@@ -5,7 +5,7 @@ description: Follow this page to learn how to access  an AEM instance
 
 # Accessing an AEM Instance {#accessing-aem-instance}
 
-Follow the steps below to manage access from Cloud Manager:
+Follow the steps below to access an AEM instance from Cloud Manager:
 
 1. Navigate to Cloud Manager and click on the **Manage Access** button from the **Environments** card as shown below.
 
