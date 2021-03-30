@@ -5,7 +5,7 @@ description: AEM Modernization Tools
 
 # AEM Modernization Tools {#aem-moderization-tools}
 
-AEM Modernization suite of tools provide AEM Development teams with tools to convert legacy current AEM features to the current supported capabilities.
+The AEM Modernization tools provides a suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
 
 
 ## Introduction {#introduction}

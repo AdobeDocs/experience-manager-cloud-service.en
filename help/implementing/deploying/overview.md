@@ -43,7 +43,7 @@ The following video provides a high level overview on how to deploy code to AEM 
 
 Customers deploy custom code to cloud environments through Cloud Manager. It should be noted that Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an AEM as a Cloud Service application is described when running in a cloud environment. As a result, when looking at the packages in Package Manager on Cloud environments, the name will include "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content and Cloud Manager will enforce it by failing the build, outputting a message like:
+Content packages written for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content and Cloud Manager will only install the mutable content, also outputting a message like:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 

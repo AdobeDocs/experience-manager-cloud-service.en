@@ -1,6 +1,6 @@
 ---
 product: adobe experience manager
-description: this is the metadata required for AEMaaCS documentation pages
+description: Adobe Experience Manager as a Cloud Service documentation.
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
 type: Documentation
