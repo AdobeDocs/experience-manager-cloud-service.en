@@ -17,7 +17,7 @@ Once your contract has been signed the following events will take place:
 
 1. Your organization's System Administrator will receive a Welcome Email allowing them to do [Administrator tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) including adding users, assigning them to roles and thereby giving them appropriate access to Cloud Manager.
 
-1. Users added by your System Administrator will in turn receive a Welcome Email notifying them that they have access to Cloud Manager. Users can now use their [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) to login and begin their journey with Cloud Manager from here.
+1. When a System Administrator adds a user, the user will in turn receive a Welcome Email notifying them that they have access to Cloud Manager. Users can now use their [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) to login and begin their journey with Cloud Manager from here.
 
 1. Users can additionally be given [access to an AEM instance](/help/onboarding/what-is-required/accessing-aem-instance.md) for development purposes.
 
@@ -35,6 +35,8 @@ System Administrators manage all aspects of their users, from access to permissi
 Access Cloud Manager to get started with your Cloud journey with AEM. Now that you have been added as a user and assigned to aa Cloud Manager Role, you are ready to do various tasks such as [creating a program](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adding an environment](/help/implementing/cloud-manager/manage-environments.md), [accessing Git](/help/implementing/cloud-manager/accessing-git.md), [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
 
 **[Access an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+
+A System Administrator can grant users access to an AEM instance either from Cloud Manager UI or from the Admin Console.
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
