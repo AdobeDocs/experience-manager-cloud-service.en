@@ -1,11 +1,11 @@
 ---
-title: Accessing an AEM Instances 
-description: Follow this page to learn how to access  an AEM instance
+title: Grant User Access to an AEM Instance 
+description: Follow this page to learn how a System Administrator grants user access to an AEM Instance
 ---
 
-# Access an AEM Instance {#accessing-aem-instance}
+# Grant User Access to an AEM Instance {#accessing-aem-instance}
 
-Follow the steps below to access an AEM instance from Cloud Manager:
+As a System Administrator, follow the steps below to grant user an access to an AEM instance:
 
 1. Navigate to Cloud Manager and click on the **Manage Access** button from the **Environments** card as shown below.
 

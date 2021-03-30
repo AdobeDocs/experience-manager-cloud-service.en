@@ -16,7 +16,7 @@ role: Architect, Developer
   + [User Roles and Permissions](what-is-required/user-roles-permissions.md)
   + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
   + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-  + [Access an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
+  + [Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager Programs {#getting-access}  
     + [Understanding Programs and Program Types](getting-access-to-aem-in-cloud/understand-program-types.md)
     + Production Programs {#production-programs}
