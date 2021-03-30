@@ -7,6 +7,8 @@ description: Adobe Experience Manager as a Cloud Service onboarding self-help re
 
 Congratulations on starting your journey with AEM as a Cloud Service! Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service.
 
+![](/help/onboarding/getting-access-to-aem-in-cloud/assets/customer-journey.png)
+
 ## Key Onboarding Articles {#key-articles}
 
 This section covers the key articles focussed on your journey when starting with AEM as a Cloud Service:
