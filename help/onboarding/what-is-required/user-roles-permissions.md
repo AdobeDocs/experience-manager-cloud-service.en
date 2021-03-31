@@ -4,9 +4,7 @@ description: This page describes user roles and permissions. Follow this page to
 ---
 
 # User Roles and Permissions {#user-roles-permissions}
-
-Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] service, will need to have their own **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**. 
-
+ 
 ## User Roles {#user-roles}
 
 Many features in Cloud Manager require specific permissions to operate.
@@ -25,18 +23,6 @@ Cloud Manager currently defines four roles for users which govern the availabili
 >[!NOTE]
 >The Developer persona in Admin Console is unrelated to the Developer role in [!UICONTROL Cloud Manager].
 
-## Role Definitions {#role-definitions}
-
-The following table summarizes the roles:
-
-|[!UICONTROL Cloud Manager] Roles|Description|
-|--- |--- |
-|Business Owner|Responsible for defining KPIs, approving production deployments and overriding important 3-tier failures.|
-|Program Manager|Uses [!UICONTROL Cloud Manager] to perform team setup, review status and view KPIs. Can approve important 3-tier failures.|
-|Deployment Manager|Manages deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage/production deployments. Can edit CI/CD Pipelines. Can approve important 3-tier failures. Can get access to the Git repository.|
-|Developer|Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Can get access to the Git repository for code commit.|
-|Content Author|Generally does not interact with [!UICONTROL Cloud Manager]. May use [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access AEM.|
-
 ## Viewing your Roles {#view-roles}
 
 To view your role in Cloud Manager, sign in to Cloud Manager UI, select your profile icon at the top right corner and select **User Roles**, as shown in the figure below.
@@ -50,8 +36,7 @@ In addition to the above, Cloud Manager will automatically create a product prof
 
 ## Permissions associated with Role Definitions {#permissions}
 
-[!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to define the Key Performance Indicators (KPIs) and approve deployments.
-
+[!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to add and edit programs, add environments, and approve deployments.
 
 Each of the roles have specific permissions associated with each role. The following table summarizes the roles, lists the functions available, and the roles who can execute the function.
 
