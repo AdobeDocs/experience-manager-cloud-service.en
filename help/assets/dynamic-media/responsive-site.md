@@ -3,6 +3,7 @@ title: Delivering Optimized Images for a Responsive Site
 description: Learn how to use the responsive code feature to deliver optimized images from Dynamic Media.
 feature: Asset Management
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}

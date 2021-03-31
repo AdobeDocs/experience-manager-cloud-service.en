@@ -6,6 +6,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Configuring selective publishing at the folder level in Dynamic Media {#selective-publish-configure-folder}

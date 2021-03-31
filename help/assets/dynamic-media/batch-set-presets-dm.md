@@ -4,6 +4,7 @@ description: Learn how to automate image set and spin set creation using batch s
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # About Batch Set Presets {#about-bsp}
