@@ -37,7 +37,7 @@ The following table summarizes the roles:
 |Developer|Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Can get access to the Git repository for code commit.|
 |Content Author|Generally does not interact with [!UICONTROL Cloud Manager]. May use [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access AEM.|
 
-### Viewing your Roles {#view-roles}
+## Viewing your Roles {#view-roles}
 
 To view your role in Cloud Manager, sign in to Cloud Manager UI, select your profile icon at the top right corner and select **User Roles**, as shown in the figure below.
 
