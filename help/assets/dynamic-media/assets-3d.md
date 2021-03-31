@@ -7,6 +7,7 @@ topic-tags: introduction
 content-type: reference
 feature: 3D Assets
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}

@@ -1,6 +1,8 @@
 ---
 title: Associated Content
 description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Associated Content{#associated-content}

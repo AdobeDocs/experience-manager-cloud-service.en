@@ -2,6 +2,8 @@
 title: Auto-tag assets with AI-generated tags
 description: Tag assets using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] service.
 contentOwner: AG
+feature: "Smart Tags,Tagging"
+role: "Administrator,Business Practitioner"
 ---
 
 # Add smart tags to your assets to improve search experience {#smart-tag-assets-for-faster-search}

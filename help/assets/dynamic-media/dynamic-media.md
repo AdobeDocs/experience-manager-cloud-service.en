@@ -2,6 +2,7 @@
 title: Working with Dynamic Media
 description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
 topic: "Administrator,Business Practitioner"
+role: "Administrator,Business Practitioner"
 ---
 
 # Working with Dynamic Media {#working-with-dynamic-media}

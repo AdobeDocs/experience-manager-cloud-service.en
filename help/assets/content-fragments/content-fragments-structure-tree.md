@@ -1,6 +1,8 @@
 ---
 title: Content Fragment Structure Tree
 description: In the Content Fragment Editor you can view the structure tree.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Content Fragment Structure Tree {#content-fragment-structure-tree}

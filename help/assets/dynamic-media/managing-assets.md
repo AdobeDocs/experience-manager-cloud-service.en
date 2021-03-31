@@ -3,6 +3,7 @@ title: About managing Dynamic Media assets
 description: Learn how to work with Dynamic Media assets.
 feature: Asset Management
 topic: Business Practitioner
+role: "Administrator,Business Practitioner"
 ---
 
 # About managing Dynamic Media assets {#managing-assets}

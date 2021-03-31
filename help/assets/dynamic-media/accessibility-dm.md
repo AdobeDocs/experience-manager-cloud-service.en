@@ -5,6 +5,8 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 topic: Business Practitioner
+feature: Accessibility
+role: "Administrator,Business Practitioner"
 ---
 
 # Accessibility in Dynamic Media {#accessibility-in-dm}

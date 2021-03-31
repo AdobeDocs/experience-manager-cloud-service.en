@@ -2,6 +2,8 @@
 title: Developer references for [!DNL Assets]
 description: [!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].
 contentOwner: AG
+feature: "APIs,Assets HTTP API"
+role: "Developer,Architect,Administrator"
 ---
 
 # [!DNL Adobe Experience Manager Assets] APIs and developer reference material {#assets-cloud-service-apis}

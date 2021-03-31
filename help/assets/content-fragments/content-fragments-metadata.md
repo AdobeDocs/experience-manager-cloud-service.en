@@ -1,6 +1,8 @@
 ---
 title: Metadata - Fragment Properties
 description: You can view and edit the metadata (properties) for content fragments.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Metadata - Fragment Properties{#metadata-fragment-properties}
