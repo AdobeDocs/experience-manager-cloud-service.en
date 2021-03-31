@@ -1,14 +1,16 @@
 ---
 title: AEM GraphQL API for use with Content Fragments
-description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for Headless Content Delivery.
+description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 feature: Content Fragments,GraphQL API
 ---
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
-The Adobe Experience Manager as a Cloud Service (AEM) GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
+Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 
-Using the GraphQL API in AEM enables the efficient delivery of Content Fragments to JavaScript clients in Headless CMS implementations:
+AEM as a Cloud Service GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
+
+Using the GraphQL API in AEM enables the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations:
 
 * Avoiding iterative API requests as with REST,
 * Ensuring that delivery is limited to the specific requirements,
@@ -18,7 +20,7 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 >
 >GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce-cloud/architecture/magento.md).
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
 ## The GraphQL API {#graphql-api}
@@ -160,30 +162,10 @@ Additional configurations are required:
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint
   * Optional
-* OSGi Configuration:
-  * GraphQL Servlet Configuration:
-    * Handles requests to the endpoint
-    * The configuration name is `org.apache.sling.graphql.core.GraphQLServlet`. It needs to be provided as an OSGi factory configuration
-    * `sling.servlet.extensions` must be set to `[json]`
-    * `sling.servlet.methods` must be set to `[GET,POST]`
-    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
-    * Mandatory
-  * Schema Servlet Configuration:
-    * Creates the GraphQL schema
-    * The configuration name is `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`. It needs to be provided as an OSGi factory configuration
-    * `sling.servlet.extensions` must be set to `[GQLschema]`
-    * `sling.servlet.methods` must be set to `[GET]`
-    * `sling.servlet.resourceTypes` must be set to `[graphql/sites/components/endpoint]`
-    * Mandatory
-  * CSRF Configuration: 
-    * Security protection for the endpoint
-    * The configuration name is `com.adobe.granite.csrf.impl.CSRFFilter`
-    * Add `/content/cq:graphql/global/endpoint` to the existing list of excluded paths (`filter.excluded.paths`)
-    * Mandatory
 
 ### Supporting packages {#supporting-packages}
 
-To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) package.
+To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip) package.
 
 This archive contains both [the required additional configuration](#additional-configurations-graphql-endpoint) and [the GraphQL endpoint](#enabling-graphql-endpoint). If installed on a plain AEM instance, it will expose a fully working GraphQL endpoint at `/content/cq:graphql/global/endpoint`.
 
@@ -211,7 +193,7 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
 
-The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip) package.
+The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
@@ -266,6 +248,14 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
+<!--
+>[!NOTE]
+>
+>AEM does not use the concept of namespacing for Content Fragment Models. 
+>
+>If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
+-->
+
 The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
 
 So for example, if you:
@@ -285,6 +275,16 @@ So for example, if you:
 >This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
 
 The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
+
+### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
+
+When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
+
+>[!NOTE]
+>
+>The AEM UI prevents this happening, but if publishing is made programmatically, or with content packages, it can occur.
+
+When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
 
 ## Fields {#fields}
 
@@ -306,8 +306,8 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
-| Single Line Text | String, [String] | Used for simple strings such as author names, location names, etc. |
-| Multi Line Text | String | Used for outputting text such as the body of an article |
+| Single line Text | String, [String] | Used for simple strings such as author names, location names, etc. |
+| Multi line Text | String | Used for outputting text such as the body of an article |
 | Number | Float, [Float] | Used to display floating point number and regular numbers |
 | Boolean | Boolean | Used to display checkboxes → simple true/false statements |
 | Date And Time | Calendar | Used to display date and time in an ISO 8086 format |
@@ -510,13 +510,73 @@ query {
 
 For further examples, see:
 
-* details of the [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+* details of the [GraphQL for AEM extensions](#graphql-extensions)
 
 * [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
   * And the [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
 
 * [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
+## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
+
+The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
+
+* If you require a single result:
+  * use the model name; eg city
+
+* If you expect a list of results:
+  * add `List` to the model name; for example,  `cityList`
+  * See [Sample Query - All Information about All Cities](#sample-all-information-all-cities)
+
+* If you want to use a logical OR:
+  * use ` _logOp: OR`
+  * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](#sample-all-persons-jobs-smith)
+
+* Logical AND also exists, but is (often) implicit
+
+* You can query on field names that correspond to the fields within the Content Fragment Model
+  * See [Sample Query - Full Details of a Company's CEO and Employees](#sample-full-details-company-ceos-employees)
+
+* In addition to the fields from your model, there are some system-generated fields (preceded by underscore):
+
+  * For content:
+
+    * `_locale` : to reveal the language; based on Language Manager
+      * See [Sample Query for multiple Content Fragments of a given locale](#sample-wknd-multiple-fragments-given-locale)
+
+    * `_metadata` : to reveal metadata for your fragment
+      * See [Sample Query for Metadata - List the Metadata for Awards titled GB](#sample-metadata-awards-gb)
+
+    * `_model` : allow querying for a Content Fragment Model (path and title)
+      * See [Sample Query for a Content Fragment Model from a Model](#sample-wknd-content-fragment-model-from-model)
+  
+    * `_path` : the path to your Content Fragment within the repository
+      * See [Sample Query - A Single Specific City Fragment](#sample-single-specific-city-fragment)
+
+    * `_reference` : to reveal references; including inline references in the Rich Text Editor
+      * See [Sample Query for multiple Content Fragments with Prefetched References](#sample-wknd-multiple-fragments-prefetched-references)
+
+    * `_variation` : to reveal specific Variations within your Content Fragment
+      * See [Sample Query - All Cities with a Named Variation](#sample-cities-named-variation)
+
+  * And operations:
+  
+    * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH` 
+      * See [Sample Query - All Persons that do not have a name of "Jobs"](#sample-all-persons-not-jobs)
+      * See [Sample Query - All Adventures where the `_path` starts with a specific prefix](#sample-wknd-all-adventures-cycling-path-filter)
+  
+  
+    * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
+      * See [Sample Query - Filter on an array with an item that must occur at least once](#sample-array-item-occur-at-least-once)
+
+    * `_ignoreCase` : to ignore the case when querying
+      * See [Sample Query - All cities with SAN in the name, irrespective of case](#sample-all-cities-san-ignore-case)
+
+* GraphQL union types are supported:
+
+  * use `... on` 
+    * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](#sample-wknd-fragment-specific-model-content-reference)
 
 <!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}

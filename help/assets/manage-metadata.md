@@ -110,7 +110,7 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
 
 >[!NOTE]
 >
->The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+>The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadata-updates).
 
 1. Navigate to the location of the assets that you want to edit.
 1. Select the assets for which you want to edit common properties.

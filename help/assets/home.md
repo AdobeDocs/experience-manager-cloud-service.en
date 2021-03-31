@@ -7,7 +7,7 @@ role: Business Practitioner,Leader
 
 # [!DNL Assets] as a [!DNL Cloud Service] Guide {#aem-assets-guide}
 
-Follow are the self-help resources for [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+The following self-help resources are available for [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 
 ## Key [!DNL Assets] articles {#key-articles}
 

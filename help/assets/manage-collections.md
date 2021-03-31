@@ -180,7 +180,7 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
 
 >[!NOTE]
 >
->The bulk editing methods work for assets available in a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+>The bulk editing methods work for assets available in a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadata-updates).
 
 1. From the collections console, select the collections you want to edit.
 1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected collections.

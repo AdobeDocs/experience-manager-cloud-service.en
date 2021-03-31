@@ -1,68 +1,56 @@
 ---
-title: Check In and Check Out files in [!DNL Assets]
+title: Check in and Check out files in [!DNL Assets]
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
 feature: Asset Management
 role: Business Practitioner
 ---
 
-# Check-in and check-out files in Assets {#check-in-and-check-out-files-in-assets}
+# Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager (AEM) Assets lets you check out assets for editing and check them back in after you complete making the changes. After you check out an asset, only you can edit, annotate, publish, move, or delete the asset. Checking out an asset locks the asset. Other users cannot perform any of these operations on the asset untill you check the asset back in to AEM Assets. However, they can still change the metadata for the locked asset.
+[!DNL Adobe Experience Manager Assets] lets you check out assets for editing and check them back in after you complete making the changes. After you check out an asset, only you can edit, annotate, publish, move, or delete the asset. Checking out an asset locks the asset. Other users cannot perform any of these operations on the asset until you check the asset back in to [!DNL Assets]. However, they can still change the metadata for the locked asset.
 
 To be able to check out/in assets, you require Write access on them.
 
 This feature helps prevent other users from overriding the changes made by an author where multiple users collaborate on editing workflows across teams.
 
-## Checking Out Assets {#checking-out-assets}
+## Check out assets {#checking-out-assets}
 
-1. From the Assets UI, select the asset you want to check out. You can also select multiple assets to check out.
+1. From the [!DNL Assets] user interface, select the asset you want to check out. You can also select multiple assets to check out.
 
-   ![chlimage_1-468](assets/chlimage_1-468.png)
+1. From the toolbar, click **[!UICONTROL Checkout]**. The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**.
+    To verify whether other users can edit the asset you checked out, log in as a different user. The icon ![checkout lock icon](assets/do-not-localize/checkout_lock.png) displays on the thumbnail of the asset that you checked out.
 
-1. From the toolbar, click/tap the **[!UICONTROL Checkout]** icon.
-
-   ![chlimage_1-469](assets/chlimage_1-469.png)
-
-   Observe that the **[!UICONTROL Checkout]** icon toggles to the **[!UICONTROL Checkin]** icon with the lock open.
-
-   ![chlimage_1-470](assets/chlimage_1-470.png)
-
-   To verify whether other users can edit the asset you checked out, log in as a different user. A lock icon appears on the thumbnail of the asset that you checked out.
-
-   ![chlimage_1-471](assets/chlimage_1-471.png)
+   ![checkout icon in card view](assets/checkout-icon-card-view.png)
 
    Select the asset. Notice that the toolbar does not display any options that let you edit, annotate, publish, or delete the asset.
 
-   ![chlimage_1-472](assets/chlimage_1-472.png)
+   ![chlimage_1-472](assets/checkout-asset-toolbar-options.png)
 
-   You can, however, click/tap the **[!UICONTROL View Properties]** icon to edit the metadata for the locked asset.
+   To edit the metadata for the locked asset, click **[!UICONTROL View Properties]**.
 
-1. Click/tap the Edit icon to open the asset in edit mode.
+1. Click **[!UICONTROL Edit]** to open the asset in edit mode.
 
-   ![chlimage_1-473](assets/chlimage_1-473.png)
+1. Edit the asset and save the changes. For example, crop the image and save. You can also choose to annotate or publish the asset.
 
-1. Edit the asset and save the changes. For example, crop the image and save.
+1. Select the edited asset from the [!DNL Assets] interface, and click **[!UICONTROL Checkin]** from the toolbar. The modified asset is checked in to [!DNL Assets] and is available to other users for editing.
 
-   ![chlimage_1-474](assets/chlimage_1-474.png)
-
-   You can also choose to annotate or publish the asset.
-
-1. Select the edited asset from the Assets UI, and click/tap the **[!UICONTROL Checkin]** icon from the toolbar.
-
-   ![chlimage_1-475](assets/chlimage_1-475.png)
-
-   The modified asset is checked in to AEM Assets and is available to other users for editing.
-
-## Forced Check In {#forced-check-in}
+## Forced check in {#forced-check-in}
 
 Administrators can check in assets that are checked out by other users.
 
-1. Log in to AEM Assets as an administrator.
-1. From the Assets UI select one or more assets that have been checked out by other users.
+1. Log in to [!DNL Assets] as an administrator.
+1. From the [!DNL Assets] user interface select one or more assets that have been checked out by other users.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. From the toolbar, click/tap the **[!UICONTROL Release Lock]** icon. The asset is checked back in and available for edit to other users.
+1. From the toolbar, click **[!UICONTROL Release Lock]**. The asset is checked back in and available for edit to other users.
 
-   ![chlimage_1-477](assets/chlimage_1-477.png)
+## Best practices and limitations {#tips-limitations}
+
+* It is possible to delete a *folder* that contains checked-out asset files. Before deleting a folder, ensure that no digital assets are checked-out by users.
+
+>[!MORELIKETHIS]
+>
+>* [Understand check in and check out in [!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Video tutorial to understand check in and check out in [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)

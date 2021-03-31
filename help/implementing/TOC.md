@@ -114,6 +114,7 @@ role: Developer, Architect
     + [Model Routing](developing/hybrid/routing.md)
     + [The RemotePage Component](developing/hybrid/remote-page.md)
     + [Editing an External SPA within AEM](developing/hybrid/editing-external-spa.md)
+    + [Composite Components in SPAs](developing/hybrid/composite-components.md)
     + [Server Side Rendering](developing/hybrid/ssr.md)
     + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
     + [Launch Integration](developing/hybrid/launch-integration.md)

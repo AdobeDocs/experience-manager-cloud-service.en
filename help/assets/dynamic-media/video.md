@@ -542,9 +542,9 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 To create a YouTube channel:
 
 1. Go to [https://www.youtube.com](https://www.youtube.com/) and sign in using your Google account credentials.
-1. In the upper-right corner of the YouTube page, click your profile picture (it can also appear as a letter within a solid colored circle), then click **[!UICONTROL YouTube settings]** (round gear icon).
-1. On the Overview page, under the Additional Features heading, click **[!UICONTROL See all my channels or create a new channel]**.
-1. On the Channels page, click **[!UICONTROL Create a new channel]**.
+1. In the upper-right corner of the YouTube page, click your profile picture (it can also appear as a letter within a solid colored circle), then tap **[!UICONTROL YouTube settings]** (round gear icon).
+1. On the Overview page, under the Additional Features heading, tap **[!UICONTROL See all my channels or create a new channel]**.
+1. On the Channels page, tap **[!UICONTROL Create a new channel]**.
 1. On the Brand Account page, in the Brand Account Name field, enter a business name or any other channel name you choose where you want to publish your video assets, then click **[!UICONTROL Create]**.
 
    Remember the name that you enter here because you must enter it again when you setup YouTube in Experience Manager.

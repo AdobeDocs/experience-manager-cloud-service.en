@@ -1,12 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
-description: Learn about Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API.
+description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
 feature: Content Fragments,Assets HTTP API
 ---
 
-# Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}
+# Content Fragments Support in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Overview {#overview}
+
+Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
 
 >[!NOTE]
 >
