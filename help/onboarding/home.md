@@ -21,7 +21,7 @@ This section covers the key articles focussed on your journey when starting with
 
 Once your contract has been signed the following events will take place:
 
-1. Adobe will complete provisioning for your organization following which your organization's System Administrator will receive a Welcome Email allowing them to do [Administrator tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) including adding users, assigning them to roles and thereby giving them appropriate [access to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
+1. Adobe will complete provisioning for your organization following which your organization's System Administrator will receive a Welcome Email allowing them to do [System Administrator tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) including adding users, assigning them to roles and thereby giving them appropriate [access to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
 
 1. Users added by your System Administrator will in turn receive a Welcome Email notifying them that they have [access to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Users can now use their [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) to login and begin their journey with Cloud Manager from here. 
 

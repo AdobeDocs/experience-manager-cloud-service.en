@@ -17,7 +17,7 @@ Once your System Administrator grants you access to Cloud Manager, you will rece
 
    Or,
 
-   1. Navigate to Cloud Manager login page from [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)
+   1. Navigate to Cloud Manager login page from [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
    1. Select **Experience Manager**.
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
