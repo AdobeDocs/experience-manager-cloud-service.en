@@ -3,7 +3,7 @@ title: Manage digital assets collections
 description: Understand the concept of collection in Adobe Experience Manager Assets. Learn how to collections, manage, edit, and collections with other users.
 contentOwner: AG
 mini-toc-levels: 1
-feature: "Collections,Asset Management"
+feature: Collections,Asset Management
 role: Business Practitioner
 ---
 
