@@ -113,7 +113,7 @@ The delete option is also available, if you click on **Details** from the **Envi
 
 Select **Manage Access** from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
 
-Refer to [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) to learn more.
+Refer to [Managing Access to Author Instance](/help/onboarding/what-is-required/accessing-aem-instance.md) to learn more.
 
 ![](assets/environ-access.png)
 
