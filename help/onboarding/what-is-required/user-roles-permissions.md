@@ -5,7 +5,7 @@ description: This page describes user roles and permissions. Follow this page to
 
 # User Roles and Permissions {#user-roles-permissions}
 
-Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] service, will need to have their own **Adobe ID**. 
+Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] service, will need to have their own **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**. 
 
 ## User Roles {#user-roles}
 

@@ -5,6 +5,8 @@ description: Follow this page to learn how to navigate to Cloud Manager landing 
 
 # Navigate to Cloud Manager {#cloud-manager}
 
+Cloud Manager is an important part of AEM as a Cloud Service. It enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. Using the user interface, you can configure and kick off the CI/CD pipeline.
+
 Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to Cloud Manager login page which is also accessible through [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/). 
 
 >[!NOTE]
