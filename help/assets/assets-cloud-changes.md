@@ -56,6 +56,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 >
 >The following resources are available for [!DNL Experience Manager] as a [!DNL Cloud Service]:
 >
+>* [List of deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
 >* [An introduction](/help/overview/introduction.md)
 >* [What is new and different](/help/overview/what-is-new-and-different.md)
 >* [The architecture](/help/core-concepts/architecture.md)
