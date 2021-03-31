@@ -3,6 +3,8 @@ title: Manage digital assets
 description: Learn about various asset management and editing methods.
 contentOwner: AG
 mini-toc-levels: 1
+feature: "Asset Management,Publishing,Collaboration,Asset Processing"
+role: "Business Practitioner,Architect,Administrator"
 ---
 
 # Manage assets {#manage-assets}

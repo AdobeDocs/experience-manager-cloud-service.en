@@ -3,6 +3,7 @@ title: Interactive images
 description: Learn how to work with Interactive Images in Dynamic Media.
 feature: Interactive Images
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Interactive images{#interactive-images}

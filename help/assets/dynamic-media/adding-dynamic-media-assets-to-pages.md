@@ -4,6 +4,7 @@ description: Learn how to add Dynamic Media components to a page in Adobe Experi
 contentOwner: Rick Brough
 feature: Asset Management
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}

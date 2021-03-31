@@ -2,6 +2,8 @@
 title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
+feature: "Asset Management,Renditions"
+role: "Business Practitioner,Administrator"
 ---
 
 # [!DNL Assets] supported file formats {#supported-file-formats}

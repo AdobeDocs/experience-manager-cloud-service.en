@@ -1,6 +1,8 @@
 ---
 title: Content Fragment Models
 description: Content Fragment Models are used to create content fragments with structured content.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Content Fragment Models {#content-fragment-models}

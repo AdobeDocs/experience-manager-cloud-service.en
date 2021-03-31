@@ -1,6 +1,8 @@
 ---
 title: Variations - Authoring Fragment Content
 description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}

@@ -1,6 +1,8 @@
 ---
 title: Content Fragments - Delete Considerations
 description: Content Fragments - Delete Considerations
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Content Fragments - Delete Considerations{#content-fragments-delete-considerations}

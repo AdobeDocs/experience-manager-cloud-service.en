@@ -1,6 +1,8 @@
 ---
 title: Preview - JSON Representation
 description: Previewing JSON representation of your fragment.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Preview - JSON Representation {#preview-json-representation}

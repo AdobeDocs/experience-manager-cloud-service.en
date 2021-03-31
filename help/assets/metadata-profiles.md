@@ -2,6 +2,8 @@
 title: Metadata profiles
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 contentOwner: AG
+feature: Metadata
+role: "Business Practitioner,Administrator"
 ---
 
 # Metadata profiles {#metadata-profiles}

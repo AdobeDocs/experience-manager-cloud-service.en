@@ -1,6 +1,8 @@
 ---
 title: Content Fragments - Configuration Browser
 description: Learn how to enable certain Content Fragment functionality in the Configuration Browser.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}

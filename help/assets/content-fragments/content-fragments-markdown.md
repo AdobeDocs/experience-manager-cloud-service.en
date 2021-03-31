@@ -1,6 +1,8 @@
 ---
 title: Markdown
 description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Markdown{#markdown}

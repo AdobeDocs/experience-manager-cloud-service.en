@@ -2,6 +2,8 @@
 title: Share assets, folders, and collections as a link
 description: This article describes how to share assets, folders, and collections within [!DNL Experience Manager Assets] as a hyperlink.
 contentOwner: AG
+feature: "Asset Management,Collaboration,Asset Distribution"
+role: "Business Practitioner,Administrator"
 ---
 
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
