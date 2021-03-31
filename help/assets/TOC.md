@@ -4,7 +4,7 @@ user-guide-title: Assets as a Cloud Service Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
-feature-set: Experience Manager Assets, Experience Manager
+feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 ---
 
 # [!DNL Assets] Guide {#assets}
