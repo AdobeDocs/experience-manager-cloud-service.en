@@ -7,23 +7,21 @@ description: Follow this page to learn how to navigate to Cloud Manager landing 
 
 Cloud Manager is an important part of AEM as a Cloud Service. It enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. Using the user interface, you can configure and kick off the CI/CD pipeline.
 
-Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to Cloud Manager login page which is also accessible through [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/). 
+Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to [Adobe Experience Cloud](https://experience.adobe.com) Home page.
 
 >[!NOTE]
->You must be added as a user and assigned to a Cloud Manager Role (Product Profile in Admin Console) by your System Administrator. 
+>You must be added as a user and must be assigned at least to one Cloud Manager Role (Product Profile in Admin Console) by your System Administrator. 
 
-1. From your Welcome email click on **Get started**, as shown in the figure below.
+1. From your welcome email click on **Get started**, as shown in the figure below.
     ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   Or,
+   >[!NOTE]
+   >Alternatively, you can also navigate directly to Cloud Manager login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI. Refer to the section below, [Cloud Manager Landing page](#cloud-manager-landing) for more details.
 
-   1. Navigate to Cloud Manager login page from [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
-
-   1. Select **Experience Manager**.
+1. Select **Experience Manager**.
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
    
-   1. Click on **Launch** from the Cloud Manager card.
-   Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
+1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
   
 
