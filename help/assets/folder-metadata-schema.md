@@ -3,7 +3,7 @@ title: Folder Metadata Schema
 description: Learn how to create metadata schema for asset folders in [!DNL Experience Manager Assets]
 contentOwner: AG
 feature: Metadata
-role: "Business Practitioner,Administrator"
+role: Business Practitioner,Administrator
 ---
 
 # Folder Metadata Schema {#folder-metadata-schema}

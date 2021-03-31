@@ -3,8 +3,8 @@ title: Best practices to integrate with [!DNL Adobe Creative Cloud]
 description: Best practices integrate an Experience Manager deployment with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
 contentOwner: AG
 mini-toc-levels: 1
-feature: "Collaboration,Adobe Asset Link,Experience Manager Desktop App"
-role: "Architect,Business Practitioner,Administrator"
+feature: Collaboration,Adobe Asset Link,Experience Manager Desktop App
+role: Architect,Business Practitioner,Administrator
 ---
 
 # AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}

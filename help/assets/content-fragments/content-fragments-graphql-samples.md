@@ -1,7 +1,7 @@
 ---
 title: Learning to use GraphQL with AEM - Sample Content and Queries
 description: Learning to use GraphQL with AEM - Sample Content and Queries.
-feature: "Content Fragments,GraphQL API"
+feature: Content Fragments,GraphQL API
 ---
 
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}

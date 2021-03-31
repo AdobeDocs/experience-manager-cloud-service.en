@@ -4,7 +4,7 @@ description: "Tips and best-practices for naming, organizing, and managing Dynam
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 topic: Business Practitioner
-role: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 ---
 
 # Best practices for organizing your digital assets for using Image profiles or Video profiles{#best-practices-for-organizing-your-digital-assets-for-using-profiles}

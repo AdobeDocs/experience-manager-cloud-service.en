@@ -3,7 +3,7 @@ title: Import and export asset metadata in bulk
 description: This article describes how to import and export metadata in bulk.
 contentOwner: AG
 feature: Metadata
-role: "Business Practitioner,Administrator"
+role: Business Practitioner,Administrator
 ---
 
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
