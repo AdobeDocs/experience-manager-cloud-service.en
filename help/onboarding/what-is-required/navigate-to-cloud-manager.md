@@ -20,7 +20,7 @@ Once your System Administrator grants you access to Cloud Manager, you will rece
    
 1. Click on **Launch** from the Cloud Manager card.
    Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
   
 
 ## Cloud Manager Landing Page {#cloud-manager-landing}
