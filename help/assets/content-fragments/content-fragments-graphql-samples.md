@@ -1,10 +1,12 @@
 ---
 title: Learning to use GraphQL with AEM - Sample Content and Queries
-description: Learning to use GraphQL with AEM - Sample Content and Queries.
+description: Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries.
 feature: Content Fragments,GraphQL API
 ---
 
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
+
+Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries.
 
 >[!NOTE]
 >
@@ -22,65 +24,6 @@ To help with this see:
 
 * And some [sample GraphQL queries](#graphql-sample-queries), based on the sample content fragment structure (Content Fragment Models and related Content Fragments).
 
-## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
-
-The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
-
-* If you require a single result:
-  * use the model name; eg city
-
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](#sample-all-information-all-cities)
-
-* If you want to use a logical OR:
-  * use ` _logOp: OR`
-  * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](#sample-all-persons-jobs-smith)
-
-* Logical AND also exists, but is (often) implicit
-
-* You can query on field names that correspond to the fields within the Content Fragment Model
-  * See [Sample Query - Full Details of a Company's CEO and Employees](#sample-full-details-company-ceos-employees)
-
-* In addition to the fields from your model, there are some system-generated fields (preceded by underscore):
-
-  * For content:
-
-    * `_locale` : to reveal the language; based on Language Manager
-      * See [Sample Query for multiple Content Fragments of a given locale](#sample-wknd-multiple-fragments-given-locale)
-
-    * `_metadata` : to reveal metadata for your fragment
-      * See [Sample Query for Metadata - List the Metadata for Awards titled GB](#sample-metadata-awards-gb)
-
-    * `_model` : allow querying for a Content Fragment Model (path and title)
-      * See [Sample Query for a Content Fragment Model from a Model](#sample-wknd-content-fragment-model-from-model)
-  
-    * `_path` : the path to your Content Fragment within the repository
-      * See [Sample Query - A Single Specific City Fragment](#sample-single-specific-city-fragment)
-
-    * `_reference` : to reveal references; including inline references in the Rich Text Editor
-      * See [Sample Query for multiple Content Fragments with Prefetched References](#sample-wknd-multiple-fragments-prefetched-references)
-
-    * `_variation` : to reveal specific Variations within your Content Fragment
-      * See [Sample Query - All Cities with a Named Variation](#sample-cities-named-variation)
-
-  * And operations:
-  
-    * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH` 
-      * See [Sample Query - All Persons that do not have a name of "Jobs"](#sample-all-persons-not-jobs)
-      * See [Sample Query - All Adventures where the `_path` starts with a specific prefix](#sample-wknd-all-adventures-cycling-path-filter)
-  
-  
-    * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
-      * See [Sample Query - Filter on an array with an item that must occur at least once](#sample-array-item-occur-at-least-once)
-
-    * `_ignoreCase` : to ignore the case when querying
-      * See [Sample Query - All cities with SAN in the name, irrespective of case](#sample-all-cities-san-ignore-case)
-
-* GraphQL union types are supported:
-
-  * use `... on` 
-    * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Sample Queries using the Sample Content Fragment Structure {#graphql-sample-queries-sample-content-fragment-structure}
 

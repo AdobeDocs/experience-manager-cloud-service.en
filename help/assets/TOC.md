@@ -65,9 +65,9 @@ feature-set: Experience Manager Assets, Experience Manager
 + Content Fragments {#content-fragments}
   + [Working with Content Fragments](content-fragments/content-fragments.md)
   + [Headless Delivery with Content Fragments and GraphQL](content-fragments/content-fragments-graphql.md)
-  + [Managing Content Fragments](content-fragments/content-fragments-managing.md)
   + [Enable Content Fragment Functionality for your Instance](content-fragments/content-fragments-configuration-browser.md)
   + [Content Fragment Models](content-fragments/content-fragments-models.md)
+  + [Managing Content Fragments](content-fragments/content-fragments-managing.md)
   + [Variations - Authoring Fragment Content](content-fragments/content-fragments-variations.md)
   + [Content Fragment Associated Content](content-fragments/content-fragments-assoc-content.md)
   + [Metadata - Fragment Properties](content-fragments/content-fragments-metadata.md)

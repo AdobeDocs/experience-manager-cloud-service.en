@@ -35,7 +35,7 @@ Before you use or configure this capability, ensure the following:
 
 Authors search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
-* **Image formats**: The formats that the [Image component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) supports. [!DNL Dynamic Media] images are not supported.
+* **Image formats**: The formats that the [Image component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) supports.
 * **Document formats**: See the [supported document formats](file-format-support.md#document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
@@ -106,6 +106,23 @@ You can check the connectivity between configured [!DNL Sites] deployments and [
 ![Connection test of Connected Assets configured [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## Configure a connection between [!DNL Sites] and [!DNL Dynamic Media] deployments {#sites-dynamic-media-connected-assets}
+
+You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remain the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets.
+
+To configure this connection, follow these steps.
+
+1. Create Connected Assets configuration as described above. Select checkbox **[!UICONTROL Fetch original rendition for [!DNL Dynamic Media] Connected Assets]** in the dialog box.
+
+1. Configure [!DNL Dynamic Media] on local [!DNL Sites] and remote [!DNL Assets] deployments. Follow the instructions to [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+
+   * Use the same company name in all configurations.
+   * On local [!DNL Sites], in [!UICONTROL Dynamic Media sync mode], select **[!UICONTROL Disabled by default]**. The Sites deployment needs only read-only access to the [!DNL Dynamic Media] account.
+   * On local [!DNL Sites], in the **[!UICONTROL Publish Assets]** option, select **[!UICONTROL Selective Publish]**. Do not select **[!UICONTROL Sync All Content]**.
+   * On remote [!DNL Assets] deployment, in [!UICONTROL Dynamic Media sync mode], select **[!UICONTROL Enabled by default]**.
+
+1. Enable [[!DNL Dynamic Media] support in Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). This feature enables the default Image component to display [!DNL Dynamic Media] images when [!DNL Dynamic Media] images are used by authors in webpages on local [!DNL Sites] deployment.
 
 ## Use remote assets {#use-remote-assets}
 
@@ -179,7 +196,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 * Local assets are not synchronized with the original assets on the remote deployment. Any edits, deletions, or revoking of permissions on the DAM deployment are not propagated downstream.
 * Local assets are read-only copies. [!DNL Experience Manager] components do non-destructive edits to assets. No other edits are allowed.
 * Locally fetched assets are available for authoring purposes only. Asset update workflows cannot be applied and metadata cannot be edited.
-* Only images and the listed document formats are supported. [!DNL Dynamic Media] assets, Content Fragments, and Experience Fragments are not supported.
+* Only images and the listed document formats are supported. Content Fragments and Experience Fragments are not supported.
 * [!DNL Experience Manager] does not fetch the metadata schemas. It means that all the fetched metadata may not be displayed. If the schema are updated separately then all the properties are displayed.
 * All [!DNL Sites] authors have read permissions on the fetched copies, even if authors cannot access the remote DAM deployment.
 * No API support to customize the integration.

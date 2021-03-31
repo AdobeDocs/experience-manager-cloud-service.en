@@ -16,7 +16,7 @@ The article contains recommendations, reference materials, and resources for dev
 
 >[!CAUTION]
 >
->Some APIs continue to exist but are not actively supported (denoted with an &times;) and must not be used.
+>Some APIs continue to exist but are not actively supported (denoted with an &times;). To the extent possible, do not use these APIs.
 
 | Support level |         Description         |
 | ------------- | --------------------------- |
@@ -60,7 +60,7 @@ The article contains recommendations, reference materials, and resources for dev
 
 ## Asset upload {#asset-upload-technical}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] provides a new method to upload assets to the repository. Users can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
+In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
 
 1. [Submit an HTTP request](#initiate-upload). It informs [!DNL Experience Manage]r deployment of your intent to upload a new binary.
 1. [POST the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
@@ -112,8 +112,8 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 * `mimeType` (string): The mime type of the corresponding binary, as supplied in the initiate request. This value should be included in the complete request.
 * `uploadToken` (string): An upload token for the corresponding binary. This value should be included in the complete request.
 * `uploadURIs` (array): A list of strings whose values are full URIs to which the binary's content should be uploaded (see [Upload binary](#upload-binary)).
-* `minPartSize` (number): The minimum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
-* `maxPartSize` (number): The maximum length, in bytes, of data that may be provided to any one of the uploadURIs, if there is more than one URI.
+* `minPartSize` (number): The minimum length, in bytes, of data that may be provided to any one of the `uploadURIs`, if there is more than one URI.
+* `maxPartSize` (number): The maximum length, in bytes, of data that may be provided to any one of the `uploadURIs`, if there is more than one URI.
 
 ### Upload binary {#upload-binary}
 
@@ -238,4 +238,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [The Experience Cloud as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

@@ -19,26 +19,26 @@ The following are some general tips and tricks for all assets.
 
 ### Asset Synchronization Status Properties {#asset-synchronization-status-properties}
 
-The following asset properties can be reviewed in CRXDE Lite to confirm the successful synchronization of the asset from AEM to Dynamic Media:
+The following asset properties can be reviewed in CRXDE Lite to confirm the successful synchronization of the asset from Adobe Experience Manager to Dynamic Media:
 
 | **Property** |**Example** |**Description** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` |**`a|364266`** |General indicator that node is linked to Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` |**PublishComplete** or error text |Status of upload of asset to Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File`  |**myCompany/myAssetID** |Must be populated in order to generate URLs to remote asset of Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File`  |**myCompany/myAssetID** |Must be populated to generate URLs to remote asset of Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` |**success** or **failed: `<error text>`** |Synchronization status of sets (spin sets, image sets, and so on), image presets, viewer presets, image map updates for an asset, or images that were edited. |
 
 ### Synchronization Logging {#synchronization-logging}
 
-Synchronization errors and issues are logged in `error.log` (AEM server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
+Synchronization errors and issues are logged in `error.log` (Experience Manager server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
 
 ### Version Control {#version-control}
 
-When replacing an existing Dynamic Media asset (same name and location), you have the option to keep both assets or replace/create a version:
+When replacing an existing Dynamic Media asset (same name and location), you can keep both assets or replace/create a version:
 
-* Keeping both will create a new asset with a unique name for the published asset URL. For example, `image.jpg` is the original asset and `image1.jpg` is the newly uploaded asset.
+* Keeping both creates an asset with a unique name for the published asset URL. For example, `image.jpg` is the original asset and `image1.jpg` is the newly uploaded asset.
 
-* Creating a version is not supported in Dynamic Media. The new version will replace the existing asset in delivery.
+* Creating a version is not supported in Dynamic Media. The new version replaces the existing asset in delivery.
 
 ## Images and Sets {#images-and-sets}
 
@@ -57,14 +57,14 @@ If you are having issues with images and sets, see the following troubleshooting
     <ol>
      <li><p>Go to CRX/DE:</p>
       <ul>
-       <li>Check whether the preset in the JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> defined. Note that this location applies if you upgraded from AEM 6.x to 6.4 and opted out of migration. Otherise, the location is <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Check whether the preset in the JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> defined. This location applies if you upgraded from Experience Manager 6.x to 6.4 and opted out of migration. Otherwise, the location is <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Check to make sure that the asset in the JCR has <code>dam:scene7FileStatus</code><strong> </strong>under Metadata shows as <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Refresh page/navigate to another page and come back (side rail JSP needs to be recompiled)</p> <p>If that does not work:</p>
+   <td><p>Refresh page/navigate to another page and come back (side rail JSP must be recompiled)</p> <p>If that does not work:</p>
     <ul>
      <li>Publish asset.</li>
-     <li>Re-upload asset and publish it.</li>
+     <li>Reupload asset and publish it.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -119,15 +119,15 @@ If you are having issues with video, see the following troubleshooting guidance.
      <li>Assign a video profile to the folder.</li>
      <li>Edit video profile to include more than one encoding preset.</li>
      <li>Wait for video to finish processing.</li>
-     <li>Be you re-load the video, make sure that the Dynamic Media Encode Video workflow is not running.<br/> </li>
-     <li>Re-upload the video.</li>
+     <li>Before you reload the video, make sure that the Dynamic Media Encode Video workflow is not running.<br/> </li>
+     <li>Reupload the video.</li>
     </ol> </td>
   </tr>
   <tr>
    <td>Video is not encoded</td>
    <td>
     <ul>
-     <li>Check whether Dynamic Media cloud service is configured.</li>
+     <li>Check whether Dynamic Media Cloud Service is configured.</li>
      <li>Check whether a video profile is associated with the upload folder.</li>
     </ul> </td>
    <td>
@@ -173,7 +173,7 @@ If you are having issues with viewers, see the following troubleshooting guidanc
   </tr>
   <tr>
    <td>Viewer Presets are not published</td>
-   <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly, you see:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, click either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td>
    <td>
     <ol>
@@ -188,7 +188,7 @@ If you are having issues with viewers, see the following troubleshooting guidanc
     <ol>
      <li>Navigate to <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> folder within your Dynamic Media sync folder (for example, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Find the metadata node of the problematic asset (for example, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Check for the presence of <code>dam:scene7*</code> properties. If the asset was successfully synced and published you see the <code>dam:scene7FileStatus</code> set is to <strong>PublishComplete</strong>.</li>
+     <li>Check for the presence of <code>dam:scene7*</code> properties. If the asset was successfully synced and published, you see the <code>dam:scene7FileStatus</code> set is to <strong>PublishComplete</strong>.</li>
      <li>Attempt to request the artwork directly from Dynamic Media by concatenating the values of the following properties and string literals
       <ul>
        <li><code>dam:scene7Domain</code></li>
@@ -198,17 +198,17 @@ If you are having issues with viewers, see the following troubleshooting guidanc
        <li>Example: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>If the sample assets or viewer preset artwork have not synced or published then restart the entire copy/sync process:</p>
+   <td><p>If the sample assets or viewer preset artwork has not synced or published, restart the entire copy/sync process:</p>
     <ol>
      <li>Navigate to <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
      </li>
      <li>Select the following actions in order:
       <ol>
        <li>Delete Sync folders.</li>
-       <li>Delect Preset folder (below <code>/conf</code>).
+       <li>Delete Preset folder (below <code>/conf</code>).
        <li>Trigger DM Setup Async Job.</li>
       </ol> </li>
-     <li>Wait for notification of successful sync in your AEM Inbox.
+     <li>Wait for notification of successful sync in your Experience Manager Inbox.
      </li>
     </ol> </td>
   </tr>
