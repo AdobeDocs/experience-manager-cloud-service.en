@@ -16,7 +16,7 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 1. When the primary source asset is uploaded to Adobe Experience Manager as a Cloud Service, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image.
 1. After the renditions are generated, Experience Manager as a Cloud Service can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager as a Cloud Service instance).
-1. After content is ready to publish and approve, it triggers the Dynamic Media service to push content to delivery servers and cache content at the CDN.
+1. After content is ready to publish and approve, it triggers the Dynamic Media service to push content to delivery servers and cache content at the CDN (Content Delivery Network).
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -373,7 +373,9 @@ Adobe recommends using the following "tuned" job parameters for PDF, PostScriptÂ
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+To update any of these parameters, see [Editing MIME types for supported formats](#editing-mime-types-for-supported-formats).
+
+See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats).
 
 #### Updating the Granite Transient Workflow queue {#updating-the-granite-transient-workflow-queue}
 
