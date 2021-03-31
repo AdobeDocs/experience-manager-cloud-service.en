@@ -30,18 +30,20 @@ Your System Administrator can add users and assign them to Cloud Manager roles. 
 
 **[System Administrator Tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-System Administrators manage all aspects of their users, from access to permissions. The following documentation includes information describing basic organizational tasks, such as:
+System Administrators manage all aspects of their users, from access to permissions. This user is the first person to have access to start doing tasks within Admin Console and Cloud Manager. 
+The following documentation pages include information describing basic organizational tasks:
 
 * Adding users
 * Assigning users to Cloud Manager roles and permissions
 
 **[Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Access Cloud Manager to get started with your Cloud journey with AEM. Now that you have been added as a user and assigned to a Cloud Manager Role, you are ready to do various tasks such as [creating a program](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adding an environment](/help/implementing/cloud-manager/manage-environments.md), [accessing Git](/help/implementing/cloud-manager/accessing-git.md), [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
+Now that you have been added as a user and assigned to a Cloud Manager Role, you can access Cloud Manager to get started with your Cloud journey with AEM. Users are ready to do various tasks such as [creating a program](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adding an environment](/help/implementing/cloud-manager/manage-environments.md), [accessing Git](/help/implementing/cloud-manager/accessing-git.md), [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
+Cloud Manager is an important part of AEM as a Cloud Service. It enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. Using the user interface, you can configure and kick off the CI/CD pipeline.
 
 **[Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-Follow this section to learn how a System Administrator can grant users access to an AEM instance or a user who created a environment can grant other users access to an AEM instance.
+Follow this section to learn how a System Administrator or a user who created an environment can grant other users access to an AEM instance.
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
