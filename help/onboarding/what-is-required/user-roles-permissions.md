@@ -7,11 +7,9 @@ description: This page describes user roles and permissions. Follow this page to
  
 ## User Roles {#user-roles}
 
-Many features in Cloud Manager require specific permissions to operate.
-
 Many features in Cloud Manager require specific permissions to operate and limits the actions you take within the user interface based on the roles and permissions assigned. In some cases, if you do not have the permission to take an action, the interface control is present, but disabled.
 
-If there is an action you want to take, but cannot, check [permissions associated with role definitions](#permissions). Depending on your goal, you can contact the System Administrator and request the role you need.
+If there is an action you want to take, but cannot, check, the section below, [User Roles and Permissions](#permissions). Depending on your goal, you can contact the System Administrator and request the role you need.
 
 Cloud Manager currently defines four roles for users which govern the availability of specific features:
 
@@ -27,6 +25,9 @@ Cloud Manager currently defines four roles for users which govern the availabili
 
 To view your role in Cloud Manager, sign in to Cloud Manager UI, select your profile icon at the top right corner and select **User Roles**, as shown in the figure below.
 
+>[!NOTE]
+>See [Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) to learn more about logging-in to Cloud Manager.
+
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### The Integration Product Profile {#integration-product-profile}
@@ -34,7 +35,7 @@ To view your role in Cloud Manager, sign in to Cloud Manager UI, select your pro
 In addition to the above, Cloud Manager will automatically create a product profile named "Integrations - Cloud Service". This product profile is used for the integrations between Adobe Experience Manager and other Adobe products. This product profile **must** not be deleted. If you do accidentally delete this profile, it will need to be manually recreated. The Display Name for this profile **must** be `CM_CS_DEFAULT`.
 
 
-## Permissions associated with Role Definitions {#permissions}
+## User Roles and Permissions {#permissions}
 
 [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to add and edit programs, add environments, and approve deployments.
 
