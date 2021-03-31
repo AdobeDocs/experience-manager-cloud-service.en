@@ -2,6 +2,8 @@
 title: Review assets in folders and collections
 description: Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 contentOwner: AG
+feature: Collections,Collaboration
+role: Business Practitioner
 ---
 
 # Review assets in folders and collections {#review-folder-assets-and-collections}

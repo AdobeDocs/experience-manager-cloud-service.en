@@ -2,6 +2,8 @@
 title: Architecture of [!DNL Assets]
 description: Architecture of Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
+feature: Asset Management,Asset Compute Microservices
+role: Architect
 ---
 
 # Architecture of Assets as a [!DNL Cloud Service] solution {#assets-architecture}

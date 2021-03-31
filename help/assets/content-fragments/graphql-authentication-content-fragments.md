@@ -1,6 +1,7 @@
 ---
 title: Authentication for Remote AEM GraphQL Queries on Content Fragments
 description: Understand the authentication required for Remote AEM GraphQL queries in order to secure your headless content delivery.
+feature: Content Fragments,GraphQL API
 ---
 
 # Authentication for Remote AEM GraphQL Queries on Content Fragments {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
