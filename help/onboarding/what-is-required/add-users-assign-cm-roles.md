@@ -5,6 +5,12 @@ description: Follow this page to learn how to add users and assign them to Cloud
 
 # System Administrator Tasks {#add-users-assign}
 
+System Administrators manage all aspects of their users, from access to permissions. This user is the first person to have access to start doing tasks within Admin Console and Cloud Manager. 
+A System Administrator performs the following organizational tasks:
+
+* Adding Users
+* Assigning users to Cloud Manager roles and permissions
+
 ## Adding Users {#add-users}
 
 >[!NOTE]
