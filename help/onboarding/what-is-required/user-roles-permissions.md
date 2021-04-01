@@ -1,5 +1,5 @@
 ---
-title: User Roles and Permissions
+title: Cloud Manager Roles
 description: This page describes user roles and permissions. Follow this page to learn how to add users and assign them to Cloud Manager Roles.
 ---
 
