@@ -37,7 +37,7 @@ A System Administrator performs the following organizational tasks:
     ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
       >[!NOTE]
-      >Refer to [User Roles and Permissions](#user-roles) and [Permissions associated with Role Definitions](#permissions) to ensure that the right users are assigned the right Role(s) in the **Admin Console**.
+      >Refer to [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md) to learn more about roles and permissions offered in Cloud Manager.
 
       Now, you have added users to Adobe Experience Manager as a Cloud Service Product Context and are setup with the right Roles or Product Profiles.
 
