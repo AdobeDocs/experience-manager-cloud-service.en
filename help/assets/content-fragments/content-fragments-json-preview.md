@@ -1,6 +1,8 @@
 ---
 title: Preview - JSON Representation
 description: Learn how to easily preview JSON representation of your Content Fragments when implementing your AEM headless solution.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Preview - JSON Representation {#preview-json-representation}
