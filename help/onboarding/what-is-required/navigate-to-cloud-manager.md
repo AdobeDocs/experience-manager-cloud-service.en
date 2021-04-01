@@ -51,7 +51,7 @@ You will see one of the three options, described below:
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-From here, a user with the right permissions, such as a Business Owner role in Cloud Manager is able to select **Add Program** to launch the [wizard](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md).
+From here, a user with the right permissions, such as a Business Owner role in Cloud Manager is able to select **Add Program** to launch the [Add Program wizard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access).
 
 To learn how to add a program in Cloud Manager, refer to:
 
