@@ -4,6 +4,7 @@ description: Learn how to publish Dynamic Media assets.
 contentOwner: Rick Brough
 feature: Asset Management
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}

@@ -1,6 +1,8 @@
 ---
 title: Add your digital assets to [!DNL Adobe Experience Manager].
 description: Add your digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+feature: Asset Management,Upload
+role: Business Practitioner,Administrator
 ---
 
 # Add digital assets to Adobe Experience Manager {#add-assets-to-experience-manager}

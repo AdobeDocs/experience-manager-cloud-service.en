@@ -1,6 +1,8 @@
 ---
 title: Content Fragments - Configuration Browser
 description: Learn how to enable certain Content Fragment functionality in the Configuration Browser in order to leverage AEM's powerful headless delivery features.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}

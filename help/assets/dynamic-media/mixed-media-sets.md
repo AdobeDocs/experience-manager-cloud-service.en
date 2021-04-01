@@ -3,6 +3,7 @@ title: Mixed Media Sets
 description: Learn how to work with mixed media sets in Dynamic Media.
 feature: Mixed Media Sets
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Mixed Media Sets{#mixed-media-sets}

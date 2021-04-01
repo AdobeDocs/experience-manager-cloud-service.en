@@ -2,6 +2,8 @@
 title: Watermark the assets
 description: Add watermark to your digital assets.
 contentOwner: AG
+feature: Asset Management,Publishing
+role: Business Practitioner,Administrator
 ---
 
 # Watermark your assets {#watermark-assets}
