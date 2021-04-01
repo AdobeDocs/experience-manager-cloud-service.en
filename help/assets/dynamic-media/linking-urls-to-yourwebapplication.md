@@ -2,6 +2,7 @@
 title: Linking URLs to your web application
 description: Learn how to link URLs to your web application in Dynamic Media.
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Linking URLs to your web application {#linking-urls-to-your-web-application}

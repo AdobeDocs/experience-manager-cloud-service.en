@@ -1,6 +1,8 @@
 ---
 title: Metadata - Fragment Properties
 description: See how you can view and edit the metadata properties for Content Fragments in AEM to adjust your headless content.
+feature: Content Fragments
+role: Business Practitioner
 ---
 
 # Metadata - Fragment Properties {#metadata-fragment-properties}

@@ -2,6 +2,7 @@
 title: HTTP2 Delivery of Content FAQ
 description: Learn about HTTP2 content delivery.
 topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 ---
 
 # HTTP2 Delivery of Content FAQ{#http-delivery-of-content-faq}

@@ -2,6 +2,8 @@
 title: Enhanced Smart Tags
 description: Apply contextual and descriptive business tags using Adobe Sensei's AI and ML service, to improve asset discovery and content velocity.
 contentOwner: AG
+feature: Smart Tags, Tagging
+role: Administrator
 ---
 
 # Configure [!DNL Experience Manager] for smart tagging of assets {#configure-aem-for-smart-tagging}
