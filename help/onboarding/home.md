@@ -31,7 +31,7 @@ Once your contract has been signed the following events will take place:
 
 You will need your Adobe ID, and your System Administrator's help to get users added to Cloud Manager to their assigned Roles.
 
-**[User Roles and Permissions](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 Your System Administrator can add users and assign them to Cloud Manager roles. This section helps you understand what *Cloud Manager Roles* are and permissions associated with the roles before getting started.
 

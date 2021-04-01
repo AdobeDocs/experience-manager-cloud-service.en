@@ -3,7 +3,7 @@ title: User Roles and Permissions
 description: This page describes user roles and permissions. Follow this page to learn how to add users and assign them to Cloud Manager Roles.
 ---
 
-# User Roles and Permissions {#user-roles-permissions}
+# Cloud Manager Roles {#user-roles-permissions}
  
 ## User Roles {#user-roles}
 
@@ -37,13 +37,25 @@ In addition to the above, Cloud Manager will automatically create a product prof
 
 ## User Roles and Permissions {#permissions}
 
-[!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to add and edit programs, add environments, and approve deployments.
+[!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the Git repository. Alternatively, a business owner has different permissions allowing them to add and edit programs, add environments, and approve deployments.
 
-Each of the roles have specific permissions associated with each role. The following table summarizes the roles, lists the functions available, and the roles who can execute the function.
+Each of the roles have specific permissions associated with it. For example, if you are in the role of a:
+
+* ***Business Owner***, you have the permission to Add a new program or Edit a program, add or update an environment, add/edit/delete the pipeline and run any pipeline, and deploy code to AEM environment or code quality.
+
+* ***Deployment Manager***, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment or code-quality. 
+
+* ***Developer***, you have the permission to generate Personal Access Token to access Git.
+
+    >[!NOTE]
+    > A user can be assigned to multiple roles. For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.  
+
+
+The following table summarizes the roles along with their associated permissions inside Cloud Manager.
 
 |Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|
 |--- |--- |--- |--- |--- |--- |
-|Add Program|Add a New Program.|x||||
+|Add Program<br>Edit Program|Add a New Program.<br>Edit a program - Add or remove solutions or add-on's|x||||
 |Create Environment|Create Prod+Stage, Dev, Environments.|x|x|||
 |Update Environment|Update Prod+Stage, Dev, Environments.|x|x|||
 |Delete Environment|Delete Non-prod, Dev, Environments.|x|x|||
@@ -55,3 +67,4 @@ Each of the roles have specific permissions associated with each role. The follo
 |Pipeline Delete|Allows Deleting of a Pipeline.||x|||
 |Execution Cancel|Cancel Current Execution.||x|||
 |Generate Personal Access Token|Access Git.||x||x|
+
