@@ -5,6 +5,8 @@ git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
 type: Documentation
 solution: Experience Manager
+version: Cloud Service
+cloud: Experience Cloud
 ---
 
 # Metadata for internal use
