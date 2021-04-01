@@ -37,17 +37,7 @@ A System Administrator performs the following organizational tasks:
     ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
       >[!NOTE]
-      >Refer to the preceding sections, [User Roles and Permissions](#user-roles) and [Permissions associated with Role Definitions](#permissions) to ensure that the right users are assigned the right Role(s) in the **Admin Console**.
+      >Refer to [User Roles and Permissions](#user-roles) and [Permissions associated with Role Definitions](#permissions) to ensure that the right users are assigned the right Role(s) in the **Admin Console**.
 
       Now, you have added users to Adobe Experience Manager as a Cloud Service Product Context and are setup with the right Roles or Product Profiles.
 
-      For example, if you are in the role of a:
-
-      * ***Business Owner***, you have the permission to Add a new program or Edit a program, add or update an environment, add/edit/delete the pipeline and run any pipeline, and deploy code to AEM environment or code quality.
-
-      * ***Deployment Manager***, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment or code-quality. 
-
-      * ***Developer***, you have the permission to generate Personal Access Token to access Git.
-
-        >[!NOTE]
-        > A user can be assigned to multiple roles. For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.
