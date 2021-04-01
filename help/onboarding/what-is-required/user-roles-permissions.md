@@ -58,7 +58,7 @@ The following table summarizes the roles along with their associated permissions
 |Add Program<br>Edit Program|Add a New Program.<br>Edit a program - Add or remove solutions or add-on's|x||||
 |Create Environment|Create Prod+Stage, Dev, Environments.|x|x|||
 |Update Environment|Update Prod+Stage, Dev, Environments.|x|x|||
-|Delete Environment|Delete Non-prod, Dev, Environments.|x|x|||
+|Delete Dev Environment|Delete Dev Environments.|x|x|||
 |Pipeline Setup|Setup or Edit Pipeline.||x|||
 |Pipeline Execution|Start the Pipeline.|x|x|||
 |Pipeline Execution|Reject/Approve Important 3-Tier Failures.|x|x|x||
