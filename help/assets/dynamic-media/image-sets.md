@@ -3,6 +3,7 @@ title: Image Sets
 description: Learn how to work with image sets in Dynamic Media.
 feature: Image Sets
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Image Sets {#image-sets}

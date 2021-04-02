@@ -13,7 +13,7 @@ role: Architect, Developer
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
 + Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Get your Adobe ID](what-is-required/get-your-adobe-id.md)
-  + [User Roles and Permissions](what-is-required/user-roles-permissions.md)
+  + [Cloud Manager Roles](what-is-required/user-roles-permissions.md)
   + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
   + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
   + [Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)

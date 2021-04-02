@@ -2,7 +2,8 @@
 title: Use Media Library for basic digital asset management
 description: [!DNL Experience Manager Assets] and Media Library for asset management.
 contentOwner: AG
-role: Architect, Leader
+feature: Asset Management,Publishing
+role: Business Practitioner,Architect,Leader
 ---
 
 <!--

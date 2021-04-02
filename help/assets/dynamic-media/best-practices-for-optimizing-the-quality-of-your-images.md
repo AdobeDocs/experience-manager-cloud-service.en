@@ -4,6 +4,7 @@ description: Learn best practices you can use in Dynamic Media to optimize the q
 contentOwner: Rick Brough
 feature: Asset Management
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}
