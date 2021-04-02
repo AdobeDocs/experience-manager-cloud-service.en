@@ -3,6 +3,7 @@ title: Activating hotlink protection in Dynamic Media
 description: Learn how to activate hotlink protection in Dynamic Media.
 feature: Asset Management
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Activating hotlink protection in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}

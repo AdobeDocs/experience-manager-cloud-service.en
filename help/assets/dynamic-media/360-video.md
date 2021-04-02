@@ -3,6 +3,7 @@ title: 360/VR Video
 description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
 feature: 360 VR Video
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # 360/VR Video {#vr-video}

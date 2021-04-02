@@ -3,6 +3,7 @@ title: Video
 description: Learn how to work with video in Dynamic Media.
 feature: Video Profiles
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Video{#video}

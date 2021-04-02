@@ -3,6 +3,7 @@ title: Interactive Videos
 description: Learn how to work with interactive video and shoppable video in Dynamic Media.
 feature: Interactive Videos
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Interactive Videos{#interactive-videos}

@@ -3,6 +3,7 @@ title: Managing Image Presets
 description: "Learn about image presets and how to create, modify, and manage image presets."
 feature: Image Presets,Viewers,Renditions
 topic: Business Practitioner
+role: Business Practitioner
 ---
 
 # Managing Image Presets{#managing-image-presets}
