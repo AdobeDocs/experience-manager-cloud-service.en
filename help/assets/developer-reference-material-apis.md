@@ -4,7 +4,7 @@ description: [!DNL Assets] APIs and developer reference content lets you manage 
 contentOwner: AG
 ---
 
-# [!DNL Adobe Experience Manager Assets] APIs and developer reference material {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] developer use cases, APIs, and reference material {#assets-cloud-service-apis}
 
 The article contains recommendations, reference materials, and resources for developers of [!DNL Assets] as a [!DNL Cloud Service]. It includes new asset upload module, API reference, and information about the support provided in post-processing workflows.
 
