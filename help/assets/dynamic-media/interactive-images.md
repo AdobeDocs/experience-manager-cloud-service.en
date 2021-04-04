@@ -4,8 +4,8 @@ description: Learn how to work with Interactive Images in Dynamic Media.
 feature: Interactive Images
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 ---
-
 # Interactive images{#interactive-images}
 
 You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can tap these hotspots that link directly to the product or service, add it to a shopping cart, or be linked to a web page. Direct experiences such as these increase customer engagement and conversions on your web site.

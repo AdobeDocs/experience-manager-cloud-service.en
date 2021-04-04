@@ -4,8 +4,8 @@ description: Configure AEM Assets with Brand Portal.
 contentOwner: Vishabh Gupta
 feature: Brand Portal
 role: Administrator
+exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 ---
-
 # Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal {#configure-aem-assets-with-brand-portal}
 
 Configuring Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.

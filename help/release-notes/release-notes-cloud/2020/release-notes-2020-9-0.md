@@ -1,8 +1,8 @@
 ---
 title: Release Notes for 2020.9.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.9.0.
+exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 ---
-
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
@@ -117,4 +117,3 @@ Follow this section to learn about what is new and the updates for Code Refactor
 * Repository Modernizer utility can be used to restructure existing project packages into packages compatible with the project structure defined for AEM as a Cloud Service. 
 
   Refer to [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
-

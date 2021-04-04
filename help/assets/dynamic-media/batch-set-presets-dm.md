@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 ---
-
 # About Batch Set Presets {#about-bsp}
 
 Use **[!UICONTROL Batch Set Presets]** to help ease the creation and organization of multiple assets in an image set or spin set at the time you upload asset files to a folder either individually or using bulk ingestion. You can have the preset run alongside the asset import jobs you schedule in [!DNL Dynamic Media]. Each preset is a uniquely named, self-contained set of instructions that defines how to construct the image set or spin set using images that match the defined naming conventions in the preset recipe.

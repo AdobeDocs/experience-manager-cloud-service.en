@@ -1,8 +1,8 @@
 ---
 title: Manage Environments - Cloud Service
 description: Manage Environments - Cloud Service
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 ---
-
 # Managing Environments {#manage-environments} 
 
 The following section describes the types of environment a  user can create and how the user can create an environment.
@@ -184,5 +184,3 @@ Follow the steps below to unapply an IP Allow List:
 1. Identify the row where the IP Allow List rule you wish to unapply is listed.
 1. Select the **...** menu from the far right end of the row.
 1. Select the **Unapply** option and confirm your submission.
-
-

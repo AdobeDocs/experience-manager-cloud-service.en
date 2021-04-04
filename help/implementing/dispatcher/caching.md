@@ -2,8 +2,8 @@
 title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service 
 feature: Dispatcher
+exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 ---
-
 # Introduction {#intro}
 
 Traffic passes through the CDN to an apache web server layer, which supports modules including the dispatcher. In order to increase performance, the dispatcher is used primarily as a cache to limit processing on the publish nodes.

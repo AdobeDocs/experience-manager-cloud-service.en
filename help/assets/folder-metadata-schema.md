@@ -4,8 +4,8 @@ description: Learn how to create metadata schema for asset folders in [!DNL Expe
 contentOwner: AG
 feature: Metadata
 role: Business Practitioner,Administrator
+exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 ---
-
 # Folder Metadata Schema {#folder-metadata-schema}
 
 [!DNL Adobe Experience Manager Assets] lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.

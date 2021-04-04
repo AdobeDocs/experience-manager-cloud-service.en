@@ -2,8 +2,8 @@
 title: AEM Version Updates
 description: AEM Version Updates 
 feature: Deploying
+exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 ---
-
 # AEM Version Updates {#aem-version-updates}
 
 ## Introduction {#introduction}
@@ -40,4 +40,3 @@ AEM updates go through an intense and fully automated product validation pipelin
 As mentioned above, updates in most cases will incur zero downtime, including for the author, which is a cluster of nodes. Rolling updates are possible due to the *composite node store* feature in Oak. 
 
 This feature allows AEM to reference multiple repositories simultaneously. In a rolling deployment, the new Green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. Because both the Blue and the Green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
- 

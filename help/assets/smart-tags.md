@@ -4,8 +4,8 @@ description: Tag assets using artificially intelligent services that apply conte
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
-
 # Add smart tags to your assets to improve search experience {#smart-tag-assets-for-faster-search}
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved in searches.

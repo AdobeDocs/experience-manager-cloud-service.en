@@ -3,8 +3,8 @@ title: Troubleshooting Dynamic Media
 description: Troubleshooting tips when using Dynamic Media.
 topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
+exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 ---
-
 # Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
 The following topic describes troubleshooting for Dynamic Media.
@@ -214,4 +214,3 @@ If you are having issues with viewers, see the following troubleshooting guidanc
   </tr>
  </tbody>
 </table>
-

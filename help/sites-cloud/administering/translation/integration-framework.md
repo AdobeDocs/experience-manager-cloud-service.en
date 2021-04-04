@@ -3,8 +3,8 @@ title: Configuring the Translation Integration Framework
 description: Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 feature: Language Copy
 role: Administrator
+exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 ---
-
 # Configuring the Translation Integration Framework {#configuring-the-translation-integration-framework}
 
 The Translation Integration Framework integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.

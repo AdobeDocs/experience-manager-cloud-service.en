@@ -4,8 +4,8 @@ description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynami
 feature: 360 VR Video
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 ---
-
 # 360/VR Video {#vr-video}
 
 360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback, on a flat display, the user has control of the viewing angle; playback on mobile devices usually applies their built-in gyroscopic controls.

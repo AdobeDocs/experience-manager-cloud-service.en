@@ -1,8 +1,8 @@
 ---
 title: Notable changes to AEM Commerce as a Cloud Service
 description: Notable changes to AEM Commerce as a Cloud Service as compared to Adobe Experience Manager 6.5.
+exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
 ---
-
 # Notable changes to AEM Commerce as a Cloud Service {#notable-changes}
 
 Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. This document highlights the important differences for Commerce capabilities between Commerce Integration Framework (CIF) for On-premise, Adobe Managed Service and Experience Manager as a Cloud Service. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
@@ -47,4 +47,4 @@ The main differences here are:
 
 >[!TIP]
 >
->Check out the [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) project on GitHub. This project provides Maven profiles for AEM as a Cloud Service and on-premise deployments which take into account the different framework conditions.  
+>Check out the [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) project on GitHub. This project provides Maven profiles for AEM as a Cloud Service and on-premise deployments which take into account the different framework conditions.

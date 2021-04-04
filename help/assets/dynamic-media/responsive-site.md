@@ -4,8 +4,8 @@ description: Learn how to use the responsive code feature to deliver optimized i
 feature: Asset Management
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 ---
-
 # Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
 
 Use the Responsive code feature when you want to share the code for responsive serving with your web developer. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.

@@ -4,8 +4,8 @@ description: Learn how to work with interactive video and shoppable video in Dyn
 feature: Interactive Videos
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 ---
-
 # Interactive Videos{#interactive-videos}
 
 

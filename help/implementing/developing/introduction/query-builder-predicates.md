@@ -1,8 +1,8 @@
 ---
 title: Query Builder Predicate Reference
 description: Predicate reference for the Query Builder API.
+exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 ---
-
 # Query Builder Predicate Reference {#query-builder-predicate-reference}
 
 ## General {#general}

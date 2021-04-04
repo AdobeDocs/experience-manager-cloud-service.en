@@ -2,8 +2,8 @@
 title: Configure RTE to create accessible web pages and sites.
 description: Learn to configure Rich Text Editor to create accessible sites in [!DNL Adobe Experience Manager].
 contentOwner: AG
+exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 ---
-
 # Configure RTE to create accessible sites {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager] supports standard accessibility features, such as alternate text for images, and extra features that can be accessed when creating content. Content authors use these features with components that use the rich text editor (RTE). The features includes adding alt-text, structural information through headings and paragraph elements, and so on.

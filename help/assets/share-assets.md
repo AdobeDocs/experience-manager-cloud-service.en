@@ -4,8 +4,8 @@ description: This article describes how to share assets, folders, and collection
 contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: Business Practitioner,Administrator
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 ---
-
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:

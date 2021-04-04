@@ -10,8 +10,8 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 ---
-
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 
 The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial you will inspect the Venia reference project and understand how CSS and JavaScript used by AEM CIF Core components are organized. You will also create a new style using CSS to update the default style of the **Product Teaser** component.

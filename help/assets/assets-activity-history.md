@@ -4,8 +4,8 @@ description: This article describes how to display activity logs for assets on t
 contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Administrator,Business Practitioner
+exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 ---
-
 # View asset operation logs in activity stream {#activity-stream-in-timeline}
 
 This feature displays activity logs for assets on the timeline. If you perform any of the following asset-related operations in [!DNL Experience Manager Assets], the Activity stream feature updates the timeline to reflect the activity.
