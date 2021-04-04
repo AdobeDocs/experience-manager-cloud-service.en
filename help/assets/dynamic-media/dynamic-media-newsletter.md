@@ -4,8 +4,8 @@ description: The Dynamic Media Newsletter by Experience League is a monthly news
 feature: Asset Management
 topic: "Administrator,Business Practitioner"
 role: Business Practitioner
+exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 ---
-
 # ![Dynamic Media Newsletter logo](/help/assets/dynamic-media/assets/dynamic-media-newsletter-logo.png)
 
 To help you realize value right away, this newsletter is designed to help get you up to speed quickly with Dynamic Media and Dynamic Media Classic.

@@ -3,8 +3,8 @@ title: Administering Workflow Instances
 description: Learn how to Administer Workflow Instances
 feature: Administering
 role: Administrator
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 ---
-
 # Administering Workflow Instances {#administering-workflow-instances}
 
 The workflow console provides several tools for administering workflow instances to ensure that they are executing as expected.
@@ -159,4 +159,3 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 | Property Name (Web Console) |OSGi Property Name |
 |---|---|
 | Max Inbox Query Size |granite.workflow.inboxQuerySize |
-

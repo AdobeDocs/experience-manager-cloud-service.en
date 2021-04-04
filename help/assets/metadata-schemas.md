@@ -4,8 +4,8 @@ description: Metadata schema defines the layout of the properties page and the m
 contentOwner: AG
 feature: Metadata
 role: Business Practitioner,Administrator
+exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 ---
-
 # Metadata Schemas {#metadata-schemas}
 
 In Adobe Experience Manager (AEM) Assets, a metadata schema defines the layout of the properties page and the metadata properties displayed for assets that use the particular schema. Metadata properties include title, description, MIME types, tags, and so on.

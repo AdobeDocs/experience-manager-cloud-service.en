@@ -2,8 +2,8 @@
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.11.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.11.0
 feature: Release Information
+exl-id: e2acf515-d339-4d2b-9b62-09c1dab1ffac
 ---
-
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.11.0 {#release-notes}
 
 This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2020.11.0.
@@ -26,4 +26,4 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 * The loading of dependencies done prior to build execution required downloading a Maven plugin.
 * The link from the Cloud Manager footer to select a language will now navigate to the correct location.
 * Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
-* All existing production pipelines will be automatically enabled with the Experience Audit step. 
+* All existing production pipelines will be automatically enabled with the Experience Audit step.

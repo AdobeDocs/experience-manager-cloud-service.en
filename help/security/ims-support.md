@@ -1,8 +1,8 @@
 ---
 title: IMS Support for Adobe Experience Manager as a Cloud Service
 description: IMS Support for Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 ---
-
 # IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
 ## Introduction {#introduction}
@@ -233,5 +233,4 @@ To get access to AEM instances the user will need to be added to a group of the 
 
 Every author instance will have an AEM Administrators and AEM Users Profile and every publish instance will have an AEM Users Profile. You can add other profiles as needed. 
 
-To get admin level access to the AEM instance, add the user to the AEM Administrators Profile for that particular Product.  
-
+To get admin level access to the AEM instance, add the user to the AEM Administrators Profile for that particular Product.

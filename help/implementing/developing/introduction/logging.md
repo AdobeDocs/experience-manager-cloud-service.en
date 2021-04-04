@@ -1,8 +1,8 @@
 ---
 title: Logging
 description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 ---
-
 # Logging {#logging}
 
 AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, logging is a critical function in order to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.

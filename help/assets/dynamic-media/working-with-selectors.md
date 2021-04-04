@@ -3,8 +3,8 @@ title: Working with Selectors
 description: Learn about methods you can use to select assets for interactive images, interactive videos, and carousel banners in Dynamic Media.
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 ---
-
 # Working with Selectors in Dynamic Media {#working-with-selectors}
 
 When working with an Interactive Image, Interactive Video, or Carousel Banner, you select assets and you select sites and products for hotspots and image maps to link to. When working with Image Sets, Spin Sets, and Multimedia Sets, you also select assets with the Asset Selector.

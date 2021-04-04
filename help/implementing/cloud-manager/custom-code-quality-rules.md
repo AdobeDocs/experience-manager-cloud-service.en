@@ -1,8 +1,8 @@
 ---
 title: Custom Code Quality Rules - Cloud Services
 description: Custom Code Quality Rules - Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 ---
-
 # Custom Code Quality Rules {#custom-code-quality-rules} 
 
 
@@ -909,9 +909,3 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 **Since**: Version 2021.2.0
 
 AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named reindex. Indexing using this property must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
-
-
-
-
-
-

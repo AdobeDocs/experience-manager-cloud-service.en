@@ -4,8 +4,8 @@ description: Learn how to preview assets in Dynamic Media.
 feature: Asset Management
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 ---
-
 # Previewing assets{#previewing-assets}
 
 You can use Preview to see how a digital asset that you have uploaded looks when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.

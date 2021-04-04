@@ -4,8 +4,8 @@ description: Learn about asset metadata in [!DNL Experience Manager Assets] an v
 contentOwner: AG
 feature: Metadata
 role: Business Practitioner,Administrator
+exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
 ---
-
 # How to edit or add metadata {#how-to-edit-or-add-metadata}
 
 Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing fields (for example, when a metadata field is blank).

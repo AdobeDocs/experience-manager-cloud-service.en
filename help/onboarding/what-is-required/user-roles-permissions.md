@@ -1,8 +1,8 @@
 ---
 title: Cloud Manager Roles
 description: This page describes user roles and permissions. Follow this page to learn how to add users and assign them to Cloud Manager Roles.
+exl-id: d1689134-044a-4d96-97a2-cd09f735a680
 ---
-
 # Cloud Manager Roles {#user-roles-permissions}
  
 ## User Roles {#user-roles}
@@ -67,4 +67,3 @@ The following table summarizes the roles along with their associated permissions
 |Pipeline Delete|Allows Deleting of a Pipeline.||x|||
 |Execution Cancel|Cancel Current Execution.||x|||
 |Generate Personal Access Token|Access Git.||x||x|
-

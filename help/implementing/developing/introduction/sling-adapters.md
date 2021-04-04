@@ -1,8 +1,8 @@
 ---
 title: Using Sling Adapters
 description: Sling offers an Adapter pattern to conveniently translate objects that implement the Adaptable interface
+exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 ---
-
 # Using Sling Adapters {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) offers an [Adapter pattern](https://sling.apache.org/site/adapters.html) to conveniently translate objects that implement the [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interface. This interface provides a generic [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) method that will translate the object to the class type being passed as the argument.

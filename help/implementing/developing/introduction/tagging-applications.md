@@ -1,8 +1,8 @@
 ---
 title: Building Tagging into AEM Applications
 description: Programmatically work with tags or extending tags within a custom AEM application
+exl-id: a106dce1-5d51-406a-a563-4dea83987343
 ---
-
 # Building Tagging into AEM Applications {#building-tagging-into-aem-applications}
 
 For the purpose of programmatically working with tags or extending tags within a custom AEM application, this document describes use of the

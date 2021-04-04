@@ -1,8 +1,8 @@
 ---
 title: Viewing and Updating - IP Allow Lists in Cloud Manager
 description: Viewing and Updating - IP Allow Lists in Cloud Manager
+exl-id: 9f9aebcd-b6d0-497a-b262-0a24b4938b45
 ---
-
 # Viewing and Updating an IP Allow List {#view-update}
 
 You can view and update IP Allow Lists under the following scenarios:

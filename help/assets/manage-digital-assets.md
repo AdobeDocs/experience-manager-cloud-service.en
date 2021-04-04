@@ -5,8 +5,8 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: Business Practitioner,Architect,Administrator
+exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
-
 # Manage assets {#manage-assets}
 
 This article describes how to manage and edit assets in Adobe Experience Manager Assets. To manage Content Fragments, see [Content Fragments](content-fragments/content-fragments.md) assets.

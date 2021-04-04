@@ -4,8 +4,8 @@ description: Know how accessibility features in [!DNL Adobe Experience Manager] 
 contentOwner: AG
 feature: Accessibility,Asset Management
 role: Business Practitioner,Architect,Leader
+exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 ---
-
 <!--
 Possible topics to cover in this article are below.
 

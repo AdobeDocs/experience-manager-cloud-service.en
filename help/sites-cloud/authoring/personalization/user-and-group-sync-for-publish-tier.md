@@ -1,8 +1,8 @@
 ---
 title: Registration, Login, and User Profile 
 description: Learn about Registration, Login, and User Profile on the Publish Tier
+exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 ---
-
 # Registration, Login, and User Profile {#registration-login-and-userprofile}
 
 ## Introduction {#introduction}
