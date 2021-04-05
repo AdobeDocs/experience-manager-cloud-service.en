@@ -5,6 +5,11 @@ exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 ---
 # Onboarding to Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_onboarding_overview"
+>title="Onboarding Overview"
+>abstract="Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service. You will need your Adobe ID and your System Administrator's help to get users added to Cloud Manager to their assigned Roles and associated permissions."
+
 Congratulations on starting your journey with AEM as a Cloud Service! Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service.
 
 This guide will help you and your team started with Cloud Manager expeditiously. You will need your Adobe ID and your System Administrator's help to get users added to Cloud Manager to their assigned Roles (referred to as Product Profiles in Admin Console) and associated permissions. The instructions for how the System Administrator can do this via Admin Console is described. The list of Cloud Manager Roles,  referred to as Product Profiles in Admin Console and their associated permissions is detailed so you can determine what roles may be necessary for various users in your organization.
