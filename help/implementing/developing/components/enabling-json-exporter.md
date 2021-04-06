@@ -1,8 +1,8 @@
 ---
 title: Enabling JSON Export for a Component
 description: Components can be adapted to generate JSON export of their content based on a modeler framework.
+exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 ---
-
 # Enabling JSON Export for a Component {#enabling-json-export-for-a-component}
 
 Components can be adapted to generate JSON export of their content based on a modeler framework.

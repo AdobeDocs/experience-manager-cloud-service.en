@@ -1,8 +1,8 @@
 ---
 title: Asynchronous Jobs
 description: Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks.
+exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 ---
-
 # Asynchronous Operations {#asynchronous-operations}
 
 To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.

@@ -1,8 +1,10 @@
 ---
 title: Search facets.
 description: This article describes how to create, modify, and use search facets in AEM.
+feature: Search,Metadata
+role: Business Practitioner,Administrator
+exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 ---
-
 # Search facets {#search-facets}
 
 An enterprise-wide deployment of Adobe Experience Manager (AEM) Assets has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of AEM.

@@ -1,8 +1,8 @@
 ---
 title: Editing Page Properties
 description: Define the required properties for a page
+exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 ---
-
 # Editing Page Properties {#editing-page-properties}
 
 You can define the required properties for a page. These can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.

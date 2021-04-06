@@ -1,8 +1,8 @@
 ---
 title: Creating a Production Program 
-description: Creating a Production Program 
+description: Creating a Production Program
+exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 ---
-
 # Creating a Production Program {#create-production-program}
 
 A *Production* program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building and testing code with the objective of deploying it to Production.
@@ -14,7 +14,7 @@ Follow the steps below to create a Production program:
    ![](assets/first_timelogin1.png) 
 
    >[!NOTE]
-   >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) for more details.
+   >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) for more details.
 
 1. Select **Set up for Production** in the Create Program wizard to create a Production program. User can accept the default program name or edit it before selecting **Continue**.
 

@@ -1,11 +1,11 @@
 ---
 title: Creating Content Fragments Headless Quick Start Guide
-description: Content Fragments allow you to design, create, curate, and use page-independent content that can be delivered headlessly by AEM.
+description: Learn how to use AEM's Content Fragments to design, create, curate, and use page-independent content for headless delivery.
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 ---
-
 # Creating Content Fragments Headless Quick Start Guide {#creating-content-fragments}
 
-Content Fragments allow you to design, create, curate, and use page-independent content that can be delivered headlessly by AEM.
+Learn how to use AEM's Content Fragments to design, create, curate, and use page-independent content for headless delivery.
 
 ## What are Content Fragments? {#what-are-content-fragments}
 

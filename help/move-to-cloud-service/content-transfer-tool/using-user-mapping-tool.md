@@ -1,8 +1,8 @@
 ---
 title: Using User Mapping Tool
 description: Using User Mapping Tool
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 ---
-
 # Using User Mapping Tool {#user-mapping-tool}
 
 ## Overview {#overview}
@@ -95,4 +95,3 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. To run Extraction phase, refer to [Running the Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-

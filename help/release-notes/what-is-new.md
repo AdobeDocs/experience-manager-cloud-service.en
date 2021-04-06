@@ -1,8 +1,8 @@
 ---
 title: What is new?
-description: What is new in Adobe Experience Manager (AEM) as a Cloud Service. 
+description: What is new in Adobe Experience Manager (AEM) as a Cloud Service.
+exl-id: f854aaf8-e84d-4904-832f-f72433590920
 ---
-
 # What is New? {#what-is-new}
 
 <!-- For the pre-release of Adobe Experience Manager (AEM) as a Cloud Service everything is new. -->

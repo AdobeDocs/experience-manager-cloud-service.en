@@ -1,8 +1,8 @@
 ---
 title: Integrating with Adobe Target
-description: Integrating with Adobe Target 
+description: Integrating with Adobe Target
+exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 ---
-
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 
 As part of the Adobe Marketing Cloud, [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) lets you increase content relevance through targeting and measuring across all channels. Adobe Target is used by marketers to design and execute online tests, create on-the-fly audience segments (based on behavior) and automate the targeting of content and online experiences. AEM as a Cloud Service has adopted the targeting workflow that is used in Adobe Target Standard. If you use Target, you will be familiar with the targeting editing environment in AEM as a Cloud Service.

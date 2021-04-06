@@ -1,8 +1,8 @@
 ---
 title: Adding Page Annotations
 description: Many components directly related to content allow you to add an annotation
+exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 ---
-
 # Adding Page Annotations {#adding-page-annotations}
 
 Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content (as opposed, for example, to layout) allow you to add an annotation.

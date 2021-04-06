@@ -3,8 +3,9 @@ title: Image Sets
 description: Learn how to work with image sets in Dynamic Media.
 feature: Image Sets
 topic: Business Practitioner
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 ---
-
 # Image Sets {#image-sets}
 
 Image Sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image Sets let you present alternative views of an item and the viewer offers zooming tools for examining images closely.

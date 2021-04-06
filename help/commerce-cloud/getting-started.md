@@ -7,8 +7,8 @@ version: cloud-service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
+exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 ---
-
 # Getting started with AEM Commerce as a Cloud Service {#start}
 
 To get started with AEM Commerce as a Cloud Service, your Experience Manager Cloud Service needs to be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an additional module on top of [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
@@ -72,7 +72,7 @@ With this, you are ready to use AEM Commerce as a Cloud Service and can deploy y
 1. Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
 
     ```bash
-    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
     ```
 
     Please see [Connecting AEM Commerce with Magento](#magento) on how to configure the Adobe I/O CLI for Cloud Manager.

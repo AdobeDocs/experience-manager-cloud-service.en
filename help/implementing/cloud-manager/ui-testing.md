@@ -1,8 +1,8 @@
 ---
 title: UI Testing - Cloud Services
 description: UI Testing - Cloud Services
+exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 ---
-
 # UI Testing {#ui-testing}
 
 UI tests are Selenium-based tests packaged in a Docker image in order to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium). The Docker image can be created with standard tooling, but it must respect certain conventions during its execution. When running the Docker image, a Selenium server is automatically provisioned. The runtime conventions described below allow your test code to access both the Selenium server and the AEM instances under test.

@@ -1,11 +1,13 @@
 ---
 title: Variations - Authoring Fragment Content
-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
+description: Understand how variations can make your headless content in AEM even more flexible by allowing you to author content for the fragment, then create variations of that content according to purpose.
+feature: Content Fragments
+role: Business Practitioner
+exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 ---
-
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios, making headless content delivery even more flexible.
 
 From the **Variations** tab you can:
 

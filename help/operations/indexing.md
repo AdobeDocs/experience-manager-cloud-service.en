@@ -1,8 +1,8 @@
 ---
 title: Content Search and Indexing
 description: Content Search and Indexing
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 ---
-
 # Content Search and Indexing {#indexing}
 
 ## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}

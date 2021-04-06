@@ -1,8 +1,8 @@
 ---
 title: Checking Status of an SSL Certificate - Managing SSL Certificates
 description: Checking Status of an SSL Certificate - Managing SSL Certificates
+exl-id: 59d81356-2fa9-43db-bfa5-c2896c530eaa
 ---
-
 # Checking Status of an SSL Certificate {#checking-status-an-ssl-certificate}
 
 The status of your SSL certificates can be understood at a glance from the SSL certificate page.

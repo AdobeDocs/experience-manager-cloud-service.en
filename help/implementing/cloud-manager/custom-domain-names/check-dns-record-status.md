@@ -1,8 +1,8 @@
 ---
 title: Checking DNS Record Status
 description: Checking DNS Record Status
+exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 ---
-
 # Checking DNS Record Status {#check-dns-record-status}
 
 You can determine whether your domain name is properly resolving to your AEM as a Cloud Service website by clicking the Status icon for the DNS record from the table on the Environments from the Domain Settings page. 
@@ -24,4 +24,4 @@ Cloud Manager performs a DNS lookup for your domain name and displays one of the
    Resolution is in progress. This status is typically seen after you select the ‘resolve again’ icon next to the status.
 
 * **DNS Resolves Correctly**
-   Your DNS settings are properly configured. Your site is serving visitors. 
+   Your DNS settings are properly configured. Your site is serving visitors.
