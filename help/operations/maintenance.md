@@ -47,8 +47,8 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Daily</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
-    <td>See code sample 1 bel</td>
+    <td>See location 1 below</td>
+    <td>See code sample 1 below</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily (this value should not be changed)</li>
@@ -60,7 +60,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Weekly</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>See location 2 below</td>
     <td>See code sample 2 below</td>
      <td>
     <ul>
@@ -74,7 +74,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Monthly</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>See location 3 below</td>
     <td>See code sample 3 below</td>
      <td>
     <ul>
@@ -86,6 +86,14 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     </ul> </td> 
   </tr>
 </table>
+
+Locations:
+
+1. /apps/settings/granite/operations/maintenance/granite_daily
+2. /apps/settings/granite/operations/maintenance/granite_weekly
+3. /apps/settings/granite/operations/maintenance/granite_monthly
+
+Code samples:
 
 Code sample 1
 
