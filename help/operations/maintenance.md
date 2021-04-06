@@ -47,8 +47,8 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Daily</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
-    <td>See code sample 1 below</td>
+    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
+    <td>See code sample 1 bel</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily (this value should not be changed)</li>
