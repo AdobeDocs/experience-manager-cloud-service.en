@@ -1,8 +1,10 @@
 ---
 title: Notable changes in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Notable changes to [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager 6.5.
+feature: Release Information
+role: Business Practitioner,Leader,Architect,Administrator
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 ---
-
 # Notable changes to [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] brings many new features and possibilities to manage your Experience Manager projects. There are many differences between [!DNL Experience Manager Assets] on-premise or hosted as Adobe Managed Service as compared to [!DNL Experience Manager] as a [!DNL Cloud Service]. This article highlights the important differences for [!DNL Assets] capabilities.
@@ -49,13 +51,14 @@ To do an end-to-end validation of the code and process including asset ingestion
 | MIME type detection | Not supported. | If you upload a digital asset without an extension or with an incorrect extension, it may not be processed as desired. Users can still store the binary files without an extension in the DAM. See [MIME type detection in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Subasset generation for compound assets | Not supported. | Dependent use cases are not fulfilled. For example, annotation of multi-page PDF files is impacted. See [subasset creation in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Home page | Not supported. | See [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Extract assets from ZIP archive | Not supported. | See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Extract assets from ZIP archive | Not supported. | See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Classic UI | Not supported. | Only Touch-enabled UI is available. |
 
 >[!MORELIKETHIS]
 >
 >The following resources are available for [!DNL Experience Manager] as a [!DNL Cloud Service]:
 >
+>* [List of deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
 >* [An introduction](/help/overview/introduction.md)
 >* [What is new and different](/help/overview/what-is-new-and-different.md)
 >* [The architecture](/help/core-concepts/architecture.md)

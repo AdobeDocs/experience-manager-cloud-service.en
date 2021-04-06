@@ -1,8 +1,8 @@
 ---
 title: Functional Testing - Cloud Services
 description: Functional Testing - Cloud Services
+exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 ---
-
 # Functional Testing {#functional-testing}
 
 Functional testing is categorized into three types:
@@ -117,4 +117,3 @@ The system properties are as follows:
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
-

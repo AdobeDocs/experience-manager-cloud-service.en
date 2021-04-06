@@ -1,8 +1,8 @@
 ---
 title: Execution Phase
 description: Execution Phase
+exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
 ---
-
 # Execution {#execution-phase}
 
 Before you start the Execution phase, you should be on-boarded to Cloud Service. You also need to familiarize yourself with Cloud Manager since it is the sole mechanism for deploying code to AEM Cloud Service. 

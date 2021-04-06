@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Security
 description: Adobe Experience Manager as a Cloud Service security self-help resources and documentation links
+exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 ---
-
 # Security for Experience Manager as a Cloud Service {#aem-security-guide}
 
 This page lists the self-help resources regarding Experience Manager as a Cloud Service security.

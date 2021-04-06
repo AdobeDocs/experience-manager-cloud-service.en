@@ -3,8 +3,9 @@ title: Smart imaging
 description: "Learn how smart imaging applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement."
 feature: Asset Management,Renditions
 topic: Business Practitioner
+role: Business Practitioner
+exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
-
 # Smart Imaging {#smart-imaging}
 
 ## What is "Smart Imaging"? {#what-is-smart-imaging}

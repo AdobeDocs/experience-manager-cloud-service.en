@@ -1,8 +1,8 @@
 ---
 title: Implementing an AEM Connector
 description: Implementing an AEM Connector
+exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 ---
-
 Implementing an AEM Connector
 =============================
 
@@ -80,4 +80,4 @@ Since AEM as a Cloud Service is a Cloud-native solution, there are some guidelin
 Testing the AEM Connector
 -------------------------
 
-New connectors should be created (or existing connectors modified) using local environment development techniques. The Partner Team will provide ISV partners with a sandbox environment where they can deploy their AEM Connector to a vanilla application to ensure that it works. 
+New connectors should be created (or existing connectors modified) using local environment development techniques. The Partner Team will provide ISV partners with a sandbox environment where they can deploy their AEM Connector to a vanilla application to ensure that it works.

@@ -7,8 +7,9 @@ topic-tags: introduction
 content-type: reference
 feature: 3D Assets
 topic: Business Practitioner
+role: Business Practitioner
+exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 ---
-
 # Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
 
 Dynamic Media lets you upload, manage, view, and deliver 3D assets as immersive experiences. 

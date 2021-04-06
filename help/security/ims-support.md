@@ -1,8 +1,8 @@
 ---
 title: IMS Support for Adobe Experience Manager as a Cloud Service
 description: IMS Support for Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 ---
-
 # IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
 ## Introduction {#introduction}
@@ -196,7 +196,7 @@ As shown below, the group **AEM-GRP_008** inherits the permissions and privilege
 
 To be able to access Cloud Manager or to AEM as a Cloud Service environments, you must be assigned to Profiles of the Cloud Manager Product.
 
-Refer to [Role Definitions](/help/onboarding/what-is-required/access-rights-granted.md##role-definitions) to learn more about roles for users which govern the availability of specific features in Cloud Manager.
+Refer to Role Definitions to learn more about roles for users which govern the availability of specific features in Cloud Manager.
 
 >[!NOTE]
 >Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
@@ -233,5 +233,4 @@ To get access to AEM instances the user will need to be added to a group of the 
 
 Every author instance will have an AEM Administrators and AEM Users Profile and every publish instance will have an AEM Users Profile. You can add other profiles as needed. 
 
-To get admin level access to the AEM instance, add the user to the AEM Administrators Profile for that particular Product.  
-
+To get admin level access to the AEM instance, add the user to the AEM Administrators Profile for that particular Product.

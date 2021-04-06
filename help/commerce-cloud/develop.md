@@ -7,8 +7,8 @@ version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
+exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 ---
-
 # Develop AEM Commerce for AEM as a Cloud Service {#develop}
 
 Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM as a Cloud Service follows the same rules and best practices like other AEM projects on AEM as a Cloud Service as well. Please review these first:

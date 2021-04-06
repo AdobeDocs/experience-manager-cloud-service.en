@@ -3,8 +3,9 @@ title: Managing Image Presets
 description: "Learn about image presets and how to create, modify, and manage image presets."
 feature: Image Presets,Viewers,Renditions
 topic: Business Practitioner
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 ---
-
 # Managing Image Presets{#managing-image-presets}
 
 Image Presets enable Adobe Experience Manager Assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically. Each Image Preset represents a predefined collection of sizing and formatting commands for displaying images. When you create an Image Preset, you choose a size for image delivery. You also choose formatting commands so that the appearance of the image is optimized when the image is delivered for viewing.

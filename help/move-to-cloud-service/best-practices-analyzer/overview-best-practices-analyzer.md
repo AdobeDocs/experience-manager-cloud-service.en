@@ -1,8 +1,8 @@
 ---
 title: Overview to Best Practices Analyzer
 description: Overview to Best Practices Analyzer
+exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
 ---
-
 # Overview {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]

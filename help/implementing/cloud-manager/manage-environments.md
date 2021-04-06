@@ -1,8 +1,8 @@
 ---
 title: Manage Environments - Cloud Service
 description: Manage Environments - Cloud Service
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 ---
-
 # Managing Environments {#manage-environments} 
 
 The following section describes the types of environment a  user can create and how the user can create an environment.
@@ -113,7 +113,7 @@ The delete option is also available, if you click on **Details** from the **Envi
 
 Select **Manage Access** from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
 
-Refer to [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) to learn more.
+Refer to [Managing Access to Author Instance](/help/onboarding/what-is-required/accessing-aem-instance.md) to learn more.
 
 ![](assets/environ-access.png)
 
@@ -184,5 +184,3 @@ Follow the steps below to unapply an IP Allow List:
 1. Identify the row where the IP Allow List rule you wish to unapply is listed.
 1. Select the **...** menu from the far right end of the row.
 1. Select the **Unapply** option and confirm your submission.
-
-

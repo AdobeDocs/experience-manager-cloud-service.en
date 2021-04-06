@@ -2,8 +2,10 @@
 title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
 contentOwner: AG
+feature: Asset Management,Connected Assets,Asset Distribution
+role: Administrator,Business Practitioner,Architect
+exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 ---
-
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work in tandem. Another reason can be acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
@@ -111,9 +113,9 @@ You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic
 
 To configure this connection, follow these steps.
 
-1. Create Connected Assets configuration as described above. Select checkbox **[!UICONTROL Fetch original rendition for [!DNL Dynamic Media] Connected Assets]** in the dialog box.
+1. Create Connected Assets configuration as described above. When configuring the functionality, select **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** option.
 
-1. Configure [!DNL Dynamic Media] on local [!DNL Sites] and remote [!DNL Assets] deployments. Follow the instructions to [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+1. Configure [!DNL Dynamic Media] on local [!DNL Sites] and remote [!DNL Assets] deployments. Follow the instructions to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Use the same company name in all configurations.
    * On local [!DNL Sites], in [!UICONTROL Dynamic Media sync mode], select **[!UICONTROL Disabled by default]**. The Sites deployment needs only read-only access to the [!DNL Dynamic Media] account.

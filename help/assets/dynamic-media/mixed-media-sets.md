@@ -3,8 +3,9 @@ title: Mixed Media Sets
 description: Learn how to work with mixed media sets in Dynamic Media.
 feature: Mixed Media Sets
 topic: Business Practitioner
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 ---
-
 # Mixed Media Sets{#mixed-media-sets}
 
 Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and videos in one presentation.
@@ -162,4 +163,3 @@ See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-asset
 >[!NOTE]
 >
 >If the mixed media set does not fully end up in the delivery service the first time you publish it, publish the mixed media set a second time.
-

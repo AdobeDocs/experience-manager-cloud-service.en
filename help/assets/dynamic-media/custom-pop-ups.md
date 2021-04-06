@@ -2,8 +2,10 @@
 title: Using Quick views to create custom pop-ups
 description: "Learn about how the default Quick view is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up windows."
 topic: "Developer,Administrator,Business Practitioner"
+feature: Interactive Images,Interactive Videos,Carousel Banners
+role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 ---
-
 # Using Quick views to create custom pop-up windows {#using-quickviews-to-create-custom-pop-ups}
 
 The default Quick view is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer that you use, customers can tap a hotspot, a thumbnail image, or an image map to see information or related content.
@@ -254,4 +256,3 @@ While the functionality of each viewer differs, the process of creating a Quick 
    `s7interactiveimageviewer.init()`
 
    After you embed the viewer into your host page, be sure that the viewer instance is created. Also, ensure that the handlers are loaded before the viewer is invoked using `init()`.
-
