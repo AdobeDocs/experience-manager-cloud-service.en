@@ -195,9 +195,12 @@ Some features in the top toolbar are available from multiple modes:
   
 * The three dots (**...**) drop-down provides access to additional actions:
   * **Update page references**
-    * This updates any references and ensures that the Dispatcher is flushed as required. 
+    * This updates any page references. 
   * **[Quick publish](#publishing-and-referencing-a-fragment)**
   * **[Manage Publication](#publishing-and-referencing-a-fragment)**
+
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
 
 ## Save, Close and Versions {#save-close-and-versions}
 
