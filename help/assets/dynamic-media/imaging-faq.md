@@ -54,7 +54,7 @@ No. Smart Imaging is included with your existing license. This rule is true for 
 
 ## How does smart imaging work? {#how-does-smart-imaging-work}
 
-When an image is requested by a consumer, Smart Imaging checks the user characteristics. It then converts to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
+When an image is requested by a consumer, Smart Imaging checks the user characteristics and convert to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
 * Automatically convert to WebP for the following browsers:
   * Chrome
