@@ -6,21 +6,21 @@ exl-id: 74e832f9-f8ff-4901-b4c2-6a2862c51411
 ---
 # Introducing AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-Content and commerce projects are complex projects due to the nature of their requirements:
+AEM content and commerce projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom services. The integration highly depends on the use-cases and usually happens in various places and flavors:
 
 * Integration of a complex and dynamic ecosystem (example product catalogs)
 * Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
-* Building complex and personalized shopping journeys
+* Building complex and personalized shopping journeys for various heads
 * Ability to quickly adapt and innovate on the back- and front-end
 * Running a scaleable and stable E2E infrastructure that is built for peak performance (Flash sale, Black Friday, ...). This includes unified search and cache management.
 
-## CIF successfully supporting customers since 2013
-
-Experience Manager Commerce Integration Framework (CIF) is Adobe's recommended way for creating extraordinary content & commerce projects. It is an add-on that extends the Experience Manager with commerce capabilities for content creators and developers.
+This complexity opens up the door to potential point of failures, increased TCO, delays, and reduced value realization. These reasons have led to the development of the Commerce Intgration Framework (CIF) which is an add-on for the Experience Manager. CIF extends the Experience Manager with commmerce capabilities and standardizes the integration with a commerce solution. The result is a future-proof, stable and scalable solution with lower TCO. It unlocks technical and business innovation with agile tooling and seamlessly integrated features to build compelling commerce experiences.
 
 ![CIF Elements](./assets/CIF/CIF_Overview.png)
 
-With over 200 customers, CIF has established itself as the out-of-the-box integration framework that is deeply integrated with the Experience Manager to seamlessly leverage and extends its capabilities. This provides a lot of value to IT and business today and for the future. Recent customer projects describe CIF as a “Great accelerator and a huge time saver with a lot of value”.
+## CIF successfully supporting customers since 2013
+
+With over 200 customers, CIF has established itself as a successful ingredient for a successful content & commerce project. This provides value for IT and business today and in the future. Recent customer projects describe CIF as a “Great accelerator and a huge time saver with a lot of value”.
 
 ## CIF Benefits {#cif-benefits}
 
