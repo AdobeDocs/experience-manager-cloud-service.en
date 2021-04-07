@@ -6,7 +6,7 @@ exl-id: 74e832f9-f8ff-4901-b4c2-6a2862c51411
 ---
 # Introducing AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-AEM content and commerce projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom services. The integration highly depends on the use-cases and usually happens in various places and flavors:
+AEM content and commerce projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-cases and ecosystem. It usually touches various places and comes in many different flavors:
 
 * Integration of a complex and dynamic ecosystem (example product catalogs)
 * Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
@@ -14,7 +14,7 @@ AEM content and commerce projects have to deal with the complexity of integratin
 * Ability to quickly adapt and innovate on the back- and front-end
 * Running a scaleable and stable E2E infrastructure that is built for peak performance (Flash sale, Black Friday, ...). This includes unified search and cache management.
 
-This complexity opens up the door to potential point of failures, increased TCO, delays, and reduced value realization. These reasons have led to the development of the Commerce Intgration Framework (CIF) which is an add-on for the Experience Manager. CIF extends the Experience Manager with commmerce capabilities and standardizes the integration with a commerce solution. The result is a future-proof, stable and scalable solution with lower TCO. It unlocks technical and business innovation with agile tooling and seamlessly integrated features to build compelling commerce experiences.
+This complexity opens up the door to potential point of failures, increased TCO, delays, and reduced value realization. These reasons have led to the development of the Commerce Intgration Framework (CIF) which is an add-on for the Experience Manager. CIF extends the Experience Manager with commmerce capabilities and standardizes the integration with a commerce engine. The result is a future-proof, stable and scalable solution with lower TCO. It unlocks technical and business innovation with agile tooling and seamlessly integrated features to build compelling commerce experiences.
 
 ![CIF Elements](./assets/CIF/CIF_Overview.png)
 
@@ -46,12 +46,13 @@ The following decision tree will guide you based on the use-cases if CIF is reco
 
 ![CIF Elements](./assets/CIF/CIF_Decision_Matrix.png)
 
-## Proven pattern and best practices
+## Proven patterns and best practices
 
-CIF incorporates patterns and best practices that supports customers with their current situation and future requirements:
+CIF supports customers with standardized integration patterns based on best practiices. This helps customers to be successful today and is flexible to grow and adapt with the customer and his future requirements:
 
-* Eliminates typical challenges around product catalog integrations that may occure in the future. Examples:
+* Eliminates typical challenges around product catalog integrations that may occur. Examples:
   * Performance issues with increased catalog volume or complexity
-  * No support for changed requirements such as access to staged data or real-time data.
-* Patterns and accelerators for successful storefront integrations
-* Access to existing product experience management features to enrich product data and experiences
+  * No access to staged data
+  * Need for real-time product data and experiences
+* A growing digital maturity results in a need for experience management. CIF comes with product experience management capabilities that can be incorporated incrementally without additional IT effort.
+* Ready for omnichannel: CIF supports a variety of touchpoint technologies (server-side, hybrid, client-side) with patterns, accelerators and core components.
