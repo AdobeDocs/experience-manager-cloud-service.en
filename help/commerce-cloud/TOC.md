@@ -1,12 +1,12 @@
 ---
-sub-product: AEM Commerce as a Cloud Service
-user-guide-title: AEM Commerce as a Cloud Service
-breadcrumb-title: Commerce Guide
-user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
+sub-product: AEM CIF as a Cloud Service
+user-guide-title: AEM CIF as a Cloud Service
+breadcrumb-title: CIF Guide
+user-guide-description: Understand how to use and administer Experience Manager CIF as a Cloud Service.
 feature-set: Experience Manager Sites
 ---
 
-# Commerce {#commerce}
+# Content and Commerce {#content-and-commerce}
 
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
 + [Commerce Integration Framework (CIF)](cif.md)
