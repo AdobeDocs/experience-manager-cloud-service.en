@@ -48,7 +48,7 @@ The following decision tree will guide you based on the use-cases if CIF is reco
 
 ## Proven patterns and best practices
 
-CIF supports customers with standardized integration patterns based on best practiices. This helps customers to be successful today and is flexible to grow and adapt with the customer and his future requirements:
+CIF supports customers with standardized integration patterns based on best practices. This helps customers to be successful today and is flexible to grow with the customer and adapt to future requirements:
 
 * Eliminates typical challenges around product catalog integrations that may occur. Examples:
   * Performance issues with increased catalog volume or complexity
