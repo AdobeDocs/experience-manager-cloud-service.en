@@ -6,7 +6,7 @@ exl-id: 74e832f9-f8ff-4901-b4c2-6a2862c51411
 ---
 # Introducing AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-Content and commerce projects are amongst the more challenging projects due to the nature of their requirements:
+Content and commerce projects are complex projects due to the nature of their requirements:
 
 * Integration of a complex and dynamic ecosystem (example product catalogs)
 * Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
