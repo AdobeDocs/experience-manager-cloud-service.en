@@ -277,7 +277,7 @@ See [Download assets from [!DNL Experience Manager]](/help/assets/download-asset
 <!--
 >[!NOTE]
 >
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+>For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 -->
 
 1. Navigate to the location of the assets/folder you want to publish.
