@@ -33,13 +33,13 @@ Follow the steps below to edit a Production program:
    >[!NOTE]
    >At least one solution must be selected for a Program, that is, user is not allowed to deselect all solutions during Edit program workflow. 
 
-1. Click on **Save** to complete the editing program  process.
+1. Click on **Save** to complete the editing program  workflow.
 
 
 ## Considerations while Editing a Program {#considerations-editing}
 
 Few considerations should be reviewed while editing a program:
 
-* At least one solution must be selected for a Program that is, user is not allowed to deselect all solutions during Edit program workflow. 
+* At least one solution must be selected for a Program, that is, user is not allowed to deselect all solutions during Edit program workflow. 
 
 * Clicking the **Save** button, if the selected solutions have changed, solution updates to environments will take effect following the next deployment.
