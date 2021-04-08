@@ -22,11 +22,6 @@ Follow the steps below to create a Production program:
 
 1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above.
 
-   
-
-   >[!NOTE]
-   >
-   >The screen below is only displayed for the segment of customers who have purchased more than one solution. For customers who have purchased just one solution, the solution selection screen below will not be displayed.
 
    ![](assets/set-up-prod2.png)
 
