@@ -18,8 +18,8 @@ Follow the steps below to edit a Sandbox program:
 
 1. Navigate to the **Edit Program** page from the Cloud Manager's *Overview* page.
 
-1. The **Edit Program** page displays two tabs (General and Solutions) for both Production and Sandbox programs.
-    ![](assets/edit-program.png)
+1. The **Edit Program** page displays three options (**Sites**, **Commerce**, and **Assets**) for both Production and Sandbox programs.
+    ![](assets/edit-prg.png)
 
 
 ## Considerations while Editing a Program {#considerations-editing}
