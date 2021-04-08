@@ -18,15 +18,20 @@ Follow the steps below to edit a Production program:
 
 1. Navigate to the **Edit Program** page from the Cloud Manager's *Overview* page
 
-1. The **Edit Program** page will display three options (**Sites**, **Commerce**, and **Assets**) for both Production and Sandbox programs.
+1. The **Edit Program** page will display three options (**Sites** and **Assets**) for both Production and Sandbox programs. Additionally, you can select **Commerce** add-on option, that is available under **Sites**, as shown in the figure below.
 
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >At least one solution must be selected for a Program, that is, user will not be allowed to deselect all solutions during Edit program workflow. 
+
+1. Click on **Save** to complete the editing program  process.
 
 
 ## Considerations while Editing a Program {#considerations-editing}
 
 Few considerations should be reviewed while editing a program:
 
-* At least one solution must be selected for a Program that is, use will not be allowed to deselect all solutions during Edit program workflow. 
+* At least one solution must be selected for a Program that is, user will not be allowed to deselect all solutions during Edit program workflow. 
 
 * Clicking the **Save** button, if the selected solutions have changed, solution updates to environments will take effect following the next deployment.
