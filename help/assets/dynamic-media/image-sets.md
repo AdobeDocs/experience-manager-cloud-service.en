@@ -36,11 +36,11 @@ To get you up and running quickly:
    >
    >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
-1. [Upload your primary source images for multiple views.](#uploading-assets-in-image-sets)
+1. [Upload your primary source images for multiple views](#uploading-assets-in-image-sets).
 
    Upload the images for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest dimension. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
-1. [Create Image Sets.](#creating-image-sets)
+1. [Create Image Sets](#creating-image-sets).
 
    In Image Sets, users click thumbnail images in the Image Set Viewer.
 
@@ -48,7 +48,7 @@ To get you up and running quickly:
 
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
 
-   See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Add [Image Set Viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md), as needed.
 
@@ -57,11 +57,11 @@ To get you up and running quickly:
    To create or edit viewer presets, see **[!UICONTROL Tools > Assets > Viewer Presets]**.
 
 1. (Optional) [Viewing Image Sets](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) that were created using batch set presets.
-1. [Preview Image Sets.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Preview Image Sets](/help/assets/dynamic-media/previewing-assets.md).
 
    Select the Image Set and you can preview it. To examine your Image Set in the selected Viewer, tap the thumbnail icons. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down list.
 
-1. [Publish Image Sets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Publish Image Sets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Publishing an Image Set activates the URL and Embed string. In addition, you must [publish any custom viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md) that you have created. Out-of-the box viewer presets are already published.
 
@@ -73,7 +73,7 @@ To get you up and running quickly:
 
    See [Linking an Image Set to a web page](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
 
-To edit Image Sets, see [editing Image Sets.](#editing-image-sets) In addition, you can view and edit [Image Set properties](/help/assets/manage-digital-assets.md#editing-properties).
+To edit Image Sets, see [editing Image Sets](#editing-image-sets). In addition, you can view and edit [Image Set properties](/help/assets/manage-digital-assets.md#editing-properties).
 
 If you have issues creating sets, see Images and Sets in [Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
@@ -140,7 +140,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon in the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
-   See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
