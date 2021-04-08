@@ -97,7 +97,7 @@ When you are satisfied with the 360 Video, you can publish it.
 
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
-See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **To preview 360 Videos**
 
@@ -134,4 +134,4 @@ To use 360 Video, you must publish it. Publishing a 360 Video activates the URL 
 See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) for details on how to publish 360 Video.
 See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
-See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See also [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
