@@ -16,23 +16,17 @@ Follow the steps below to create a Production program:
    >[!NOTE]
    >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) for more details.
 
-1. Select **Set up for Production** in the Create Program wizard to create a Production program. User can accept the default program name or edit it before selecting **Continue**.
+1. Select **Set up for Production** in the Create Program wizard to create a Production program. User can accept the default program name or edit it before selecting **Create**.
 
    ![](assets/create-prod1.png)
 
 1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above.
 
+
+   ![](assets/set-up-prod-2.png)
    
-
-   >[!NOTE]
-   >
-   >The screen below is only displayed for the segment of customers who have purchased more than one solution. For customers who have purchased just one solution, the solution selection screen below will not be displayed.
-
-   ![](assets/set-up-prod2.png)
-
 1. Once you have selected the solutions, click **Create**.
 
-   ![](assets/set-up-prod3.png)
 
 1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager **Overview** page. 
 
@@ -43,5 +37,4 @@ Follow the steps below to create a Production program:
 
 
     >[!NOTE]
-    >
     >A Production program does not have **Auto-setup** feature.
