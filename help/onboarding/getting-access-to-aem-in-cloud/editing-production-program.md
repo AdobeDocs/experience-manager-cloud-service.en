@@ -33,7 +33,7 @@ Follow the steps below to edit a Production program:
    >[!NOTE]
    >At least one solution must be selected for a Program, that is, user is not allowed to deselect all solutions during Edit program workflow. 
 
-1. Click on **Save** to complete the editing program  workflow.
+1. Click on **Save** to complete the edit program  workflow.
 
 
 ## Considerations while Editing a Program {#considerations-editing}
