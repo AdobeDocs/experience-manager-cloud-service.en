@@ -37,5 +37,4 @@ Follow the steps below to create a Production program:
 
 
     >[!NOTE]
-    >
     >A Production program does not have **Auto-setup** feature.
