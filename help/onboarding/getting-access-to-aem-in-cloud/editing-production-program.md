@@ -16,9 +16,17 @@ Users with requisite permissions can now edit a Production program, allowing the
 
 Follow the steps below to edit a Production program:
 
-1. Navigate to the **Edit Program** page from the Cloud Manager's *Overview* page
+1. Click on **Edit program** option from the Cloud Manager's *Overview* page
 
-1. The **Edit Program** page will display three options (**Sites** and **Assets**) for both Production and Sandbox programs. Additionally, you can select **Commerce** add-on option, that is available under **Sites**, as shown in the figure below.
+   ![](assets/edit-program-overview.png)
+
+1. The **Edit Program** page displays two tabs **General** and **Solutions & Add-ons**.
+
+   Navigate to the **General** tab to edit the program description.
+
+   ![](assets/edit-program-general.png)
+
+   The **Solutions & Add-ons** tab displays two options, such as, **Sites** and **Assets** for both Production and Sandbox programs. Additionally, you can select **Commerce** add-on option, that is available under **Sites**, as shown in the figure below.
 
    ![](assets/edit-prg.png)
 
