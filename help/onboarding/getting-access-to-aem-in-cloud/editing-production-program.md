@@ -7,7 +7,7 @@ exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 
 Users with requisite permissions can now edit a Production program, allowing them to do the following in a self-service manner:
 
-* Add Sites solution to an existing program with Assets (or vice-versa).
+* Add Sites solution to an existing program with Assets (or vice versa).
 * Remove Sites (or Assets) from an existing program with both Sites and Assets.
 * Add second, unused solution entitlement either to an existing program or as a new Program.
 
@@ -26,12 +26,12 @@ Follow the steps below to edit a Production program:
 
    ![](assets/edit-program-general.png)
 
-   The **Solutions & Add-ons** tab displays two options, such as, **Sites** and **Assets** for both Production and Sandbox programs. Additionally, you can select **Commerce** add-on option, that is available under **Sites**, as shown in the figure below.
+   The **Solutions & Add-ons** tab displays two options, such as, **Sites** and **Assets** for both Production and Sandbox programs. Also, you can select **Commerce** add-on option, that is available under **Sites**, as shown in the figure below.
 
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >At least one solution must be selected for a Program, that is, user will not be allowed to deselect all solutions during Edit program workflow. 
+   >At least one solution must be selected for a Program, that is, user is not allowed to deselect all solutions during Edit program workflow. 
 
 1. Click on **Save** to complete the editing program  process.
 
