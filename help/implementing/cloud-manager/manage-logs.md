@@ -1,8 +1,8 @@
 ---
 title: Manage Logs - Cloud Service
 description: Manage Logs - Cloud Service
+exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 ---
-
 # Accessing and Managing Logs {#manage-logs} 
 
 Users can access a list of available log files for the selected environment using the Environment Card.  Users can access a list of available log files for the selected environment. 

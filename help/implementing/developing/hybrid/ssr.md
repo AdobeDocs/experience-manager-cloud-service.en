@@ -1,8 +1,8 @@
 ---
 title: SPA and Server-Side Rendering
 description: Using server side rendering (SSR) in your SPA can accelerate the initial load of the page and then pass further rendering on to the client.
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 ---
-
 # SPA and Server-Side Rendering{#spa-and-server-side-rendering}
 
 Single page applications (SPAs) can offer the user a rich, dynamic experience that reacts and behaves in familiar ways, often just like a native application. [This is achieved by relying on the client to load the content up front and then do the heavy lifting of handling user interaction](introduction.md#how-does-a-spa-work) and thus minimizing the amount of communication needed between the client and the server, making the app more reactive.

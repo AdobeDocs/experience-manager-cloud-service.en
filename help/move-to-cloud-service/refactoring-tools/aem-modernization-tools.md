@@ -1,8 +1,8 @@
 ---
 title: AEM Modernization Tools
-description: AEM Modernization Tools 
+description: AEM Modernization Tools
+exl-id: bc6efab1-cea0-4808-9bd4-495cd871bd75
 ---
-
 # AEM Modernization Tools {#aem-moderization-tools}
 
 The AEM Modernization tools provides a suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
@@ -25,4 +25,3 @@ Refer to **[Introducing AEM Modernization Tools](https://opensource.adobe.com/ae
 ## Installation and Implementing AEM Modernization Tool Suite {#installing-implementing}
 
 Refer to **[Git Resource: AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)** to learn about installation and implementation.
-

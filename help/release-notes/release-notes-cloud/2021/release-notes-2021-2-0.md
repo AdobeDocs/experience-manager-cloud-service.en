@@ -1,9 +1,8 @@
 ---
 title: Release Notes for 2021.2.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.2.0.
+exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 ---
-
-
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
@@ -159,4 +158,3 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 
 * Several bug fixes done on the Repository Modernizer. 
    Refer to [GitHub Resource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
-

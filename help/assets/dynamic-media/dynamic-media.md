@@ -3,8 +3,8 @@ title: Working with Dynamic Media
 description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
 topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
+exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 ---
-
 # Working with Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.

@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service Development Guidelines
 description: AEM as a Cloud Service Development Guidelines
+exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 ---
-
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.

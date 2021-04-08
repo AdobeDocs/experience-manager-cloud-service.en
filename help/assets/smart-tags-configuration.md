@@ -4,8 +4,8 @@ description: Apply contextual and descriptive business tags using Adobe Sensei's
 contentOwner: AG
 feature: Smart Tags, Tagging
 role: Administrator
+exl-id: ccf2deed-6708-49f7-87a8-f7f7cc2408a7
 ---
-
 # Configure [!DNL Experience Manager] for smart tagging of assets {#configure-aem-for-smart-tagging}
 
 Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved by tag-based searches. Adobe provides Smart Tags that use artificial intelligence and machine learning algorithms to train images. Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy.

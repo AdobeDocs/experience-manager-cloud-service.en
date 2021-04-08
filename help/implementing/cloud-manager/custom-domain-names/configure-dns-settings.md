@@ -1,8 +1,8 @@
 ---
 title: Configuring DNS Settings 
 description: Configuring DNS Settings
+exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 ---
-
 # Configuring DNS Settings {#configure-dns}
 
 After your custom domain name is successfully verified and deployed, you are ready to update the DNS records for your custom domain name with your DNS provider. Doing so enables your site to serve visitors. This activity is therefore typically done before Go-live.

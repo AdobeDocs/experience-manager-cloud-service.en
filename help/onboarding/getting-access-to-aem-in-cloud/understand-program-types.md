@@ -1,8 +1,8 @@
 ---
 title: Understanding Program and Program Types
 description: Understanding Program and Program Types - Cloud Services
+exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 ---
-
 # Understanding Programs and Program Types {#understanding-programs} 
 
 In Cloud Manager you have the Tenant entity at the very top which can have multiple Programs within it. Each Program can contain no more than one Production environment, and multiple non-production environments. 
@@ -38,4 +38,3 @@ A user can create a **Sandbox** or a **Production** program.
 
 * A *Sandbox Program* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a Production program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
    Refer to [Introduction to Sandbox Programs](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
-

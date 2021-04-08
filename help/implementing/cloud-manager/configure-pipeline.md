@@ -1,8 +1,8 @@
 ---
 title: Configure CI/CD Pipeline - Cloud Services
 description: Configure CI/CD Pipeline - Cloud Services
+exl-id: d2024b42-9042-46a0-879e-110b214c7285
 ---
-
 # Configuring your CI-CD Pipeline {#configure-ci-cd-pipeline} 
 
 In Cloud Manager, there are two types of Pipeline:

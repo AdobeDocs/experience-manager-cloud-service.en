@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Asset Management
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 ---
-
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
 You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**. After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by way of embedding code on the page.

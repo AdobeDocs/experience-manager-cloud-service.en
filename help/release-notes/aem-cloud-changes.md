@@ -1,8 +1,8 @@
 ---
 title: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service
 description: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 ---
-
 # Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
 AEM Cloud Service brings many new features and possibilities for managing your AEM projects. However there are a number of differences between AEM Sites on premise or in Adobe Managed Service as compared to AEM Cloud Service. This document highlights the important differences.

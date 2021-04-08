@@ -1,8 +1,8 @@
 ---
 title: Experience Fragments
 description: Extend Adobe Experience Manager as a Cloud Service Experience Fragments.
+exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 ---
-
 # Experience Fragments{#experience-fragments}
 
 ## The Basics {#the-basics}

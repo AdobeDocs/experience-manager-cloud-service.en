@@ -5,8 +5,8 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Experience Manager Desktop App
 role: Architect,Business Practitioner,Administrator
+exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 ---
-
 # AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
 Adobe Experience Manager (AEM) Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.

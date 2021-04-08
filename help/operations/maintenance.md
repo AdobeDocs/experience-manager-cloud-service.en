@@ -1,8 +1,8 @@
 ---
 title: Maintenance Tasks in AEM as a Cloud Service
-description: Maintenance Tasks in AEM as a Cloud Service 
+description: Maintenance Tasks in AEM as a Cloud Service
+exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 ---
-
 # Maintenance Tasks in AEM as a Cloud Service
 
 Maintenance Tasks are processes that run on a schedule in order to optimize the repository. With AEM as a Cloud Service, the need for customers to configure the operational properties of maintenance tasks is minimal. Customers can focus their resources on application-level concerns, leaving the infrastructure operations to Adobe.
@@ -47,7 +47,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Daily</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
+    <td>See location 1 below</td>
     <td>See code sample 1 below</td>
    <td>
     <ul>
@@ -60,7 +60,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Weekly</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>See location 2 below</td>
     <td>See code sample 2 below</td>
      <td>
     <ul>
@@ -74,7 +74,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Monthly</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>See location 3 below</td>
     <td>See code sample 3 below</td>
      <td>
     <ul>
@@ -86,6 +86,14 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     </ul> </td> 
   </tr>
 </table>
+
+Locations:
+
+1. /apps/settings/granite/operations/maintenance/granite_daily
+2. /apps/settings/granite/operations/maintenance/granite_weekly
+3. /apps/settings/granite/operations/maintenance/granite_monthly
+
+Code samples:
 
 Code sample 1
 

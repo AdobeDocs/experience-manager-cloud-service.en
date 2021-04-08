@@ -4,8 +4,8 @@ description: "Learn how to invalidate your CDN (Content Delivery Network) cached
 feature: Asset Management
 topic: Business Practitioner
 role: Administrator,Business Practitioner
+exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 ---
-
 # Invalidating the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast delivery to your customers. However, when you make updates to those assets, you want those changes to take effect immediately on your website. Purging or invalidating the CDN cache lets you quickly update assets that are delivered by Dynamic Media. You no longer have to wait for the cache to expire using a TTL (Time To Live) value (default is ten hours). Instead, you can send a request from within the Dynamic Media user interface to have the cache expire within minutes.

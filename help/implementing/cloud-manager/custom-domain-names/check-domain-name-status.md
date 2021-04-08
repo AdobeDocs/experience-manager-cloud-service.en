@@ -1,8 +1,8 @@
 ---
 title: Checking Domain Name Status
 description: Checking Domain Name Status
+exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 ---
-
 # Checking Domain Name Status {#check-status}
 
 You can determine whether your domain name has been verified successfully by clicking the Status icon for the domain name from the table on Environments from the Domain Settings page. 

@@ -4,8 +4,8 @@ description: Learn about the Dynamic Media Viewers extension for Platform Launch
 feature: Asset Reports
 topic: "Data Engineer,Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
+exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 ---
-
 # Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
