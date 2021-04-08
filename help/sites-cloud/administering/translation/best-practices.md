@@ -3,8 +3,8 @@ title: Translation Best Practices
 description: Learn about best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
 feature: Language Copy
 role: Administrator
+exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 ---
-
 # Translation Best Practices {#translation-best-practices}
 
 ## General {#general}

@@ -1,8 +1,8 @@
 ---
 title: Using Hide Conditions
 description: Hide conditions can be used to determine if a component resource is rendered or not.
+exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 ---
-
 # Using Hide Conditions {#using-hide-conditions}
 
 Hide conditions can be used to determine if a component resource is rendered or not. An example of this would be when an template author configures the Core Component [list component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) in the [template editor](/help/sites-cloud/authoring/features/templates.md) and decides to disable the options to build the list based on child pages. Disabling this option in the design dialog sets a property so that when the list component is rendered, the hide condition is evaluated and the option to show child pages is not displayed.

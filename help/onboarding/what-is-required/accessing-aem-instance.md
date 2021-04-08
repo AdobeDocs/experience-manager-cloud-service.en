@@ -1,8 +1,8 @@
 ---
 title: Grant User Access to an AEM Instance 
 description: Follow this page to learn how a System Administrator grants user access to an AEM Instance
+exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
 ---
-
 # Grant User Access to an AEM Instance {#accessing-aem-instance}
 
 As a System Administrator, follow the steps below to grant user access to an AEM instance:
@@ -50,4 +50,3 @@ As a System Administrator, follow the steps below to grant user access to an AEM
 
         >[!NOTE]
         >For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
-

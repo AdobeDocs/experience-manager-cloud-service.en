@@ -1,8 +1,8 @@
 ---
 title: Naming Conventions
 description: Nodes in the repository are subject to naming conventions of the Java Content Repository
+exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 ---
-
 # Naming Conventions{#naming-conventions}
 
 Nodes in the repository are subject to naming conventions of the Java Content Repository. However AEM imposes further conventions for the name of page nodes.

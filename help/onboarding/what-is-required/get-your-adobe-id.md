@@ -1,8 +1,8 @@
 ---
 title: Get your Adobe ID
 description: Get your Adobe ID
+exl-id: 4f8e72d7-ac99-45ff-9099-69a75ef54152
 ---
-
 # Get your Adobe ID {#adobe-id}
 
 

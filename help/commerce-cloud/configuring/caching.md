@@ -1,8 +1,8 @@
 ---
 title: Caching & Performance
 description: Learn about the different configurations available to enable GraphQL and content caching to optimize the performance of your commerce implementation.
+exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
 ---
-
 # Caching & Performance {#caching}
 
 ## Component & GraphQL response caching {#graphql}

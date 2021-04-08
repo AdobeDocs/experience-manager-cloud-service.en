@@ -4,8 +4,8 @@ description: Learn how to work with spin sets in Dynamic Media.
 feature: Spin Sets
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 ---
-
 # Spin Sets{#spin-sets}
 
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.

@@ -4,8 +4,8 @@ description: Learn how to work with Carousel Banners in Dynamic Media.
 feature: Carousel Banners
 topic: Business Practitioner
 role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 ---
-
 # Carousel Banners{#carousel-banners}
 
 Carousel banners enable marketers to drive conversion by easily creating interactive rotating promotional content and delivering it to any screen.

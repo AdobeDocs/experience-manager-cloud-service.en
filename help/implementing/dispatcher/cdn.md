@@ -2,8 +2,8 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
+exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 ---
-
 # CDN in AEM as a Cloud Service {#cdn}
 
 AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.

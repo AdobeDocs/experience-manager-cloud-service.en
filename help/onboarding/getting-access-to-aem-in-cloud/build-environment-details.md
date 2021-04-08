@@ -1,8 +1,8 @@
 ---
 title: Build Environment Details
 description: Build Environment Details - Cloud Services
+exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 ---
-
 # Understanding the Build Environment {#understanding-build-environment} 
 
 ## Build Environment Details {#build-environment-details}

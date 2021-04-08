@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 topic: Business Practitioner
 role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 ---
-
 # Best practices for organizing your digital assets for using Image profiles or Video profiles{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
 An important concept regarding the use of Dynamic Media Image Profiles or Video Profiles is that they are assigned to folders. Within a profile are settings for an image or video. These settings process the contents of a folder along with any of its subfolders. Therefore, how you name files and folders, arrange subfolders, and handle the files within these folders, impacts how those assets are processed by the profile.
@@ -37,4 +37,3 @@ The following are best practice tips for organizing your digital asset files.
 
 * Create a directory of folders that are not likely to change so that any assigned profiles do not break.
 * Suppose that an asset is already published, then you use Adobe Experience Manager to move the asset to another folder and republish from its new location. The original published asset location is still available, along with the newly republished asset. The original published asset, however, is "lost" to Experience Manager and cannot be unpublished. Therefore, as a best practice, unpublish assets first before you move them to a different folder.
-

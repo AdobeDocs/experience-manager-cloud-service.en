@@ -4,8 +4,8 @@ description: File formats and MIME types supported by [!DNL Experience Manager A
 contentOwner: AG
 feature: Asset Management,Renditions
 role: Business Practitioner,Administrator
+exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 ---
-
 # [!DNL Assets] supported file formats {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. [!DNL Adobe Experience Manager Assets] supports a wide range of file formats and each product feature has varied support for different formats.

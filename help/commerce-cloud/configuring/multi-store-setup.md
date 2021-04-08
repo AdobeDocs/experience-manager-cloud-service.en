@@ -9,8 +9,8 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 ---
-
 # Multi-Store Setup {#multi-store}
 
 The AEM CIF Core Components can be used on multiple AEM site structures and the underlying GraphQL client implementation can connect to different Magento stores / store views. This allows projects to implement complex multi-store / multi-site setups.
