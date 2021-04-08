@@ -20,13 +20,14 @@ Follow the steps below to create a Production program:
 
    ![](assets/create-prod1.png)
 
-1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above.
+1. User will select solutions that are to be included in the program in the screen that will be presented following the screen above. Once you have selected the required solution or solutions, click **Create**.
 
 
-   ![](assets/set-up-prod-2.png)
-   
-1. Once you have selected the solutions, click **Create**.
+   ![](assets/setup-prod-select.png)
 
+   Additionally, you can select the **Commerce** add-on option under **Sites**, as shown  in the figure below, and click on **Create**.
+
+   ![](assets/setup-prod-commerce.png)
 
 1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager **Overview** page. 
 
