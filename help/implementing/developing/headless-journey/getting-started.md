@@ -20,13 +20,13 @@ This document helps you understand AEM Headless in the context of your own proje
 
 Before you can define your headless project within AEM, it is important to understand some basic AEM concepts.
 
-### Author {#author}
+### Author Instance {#author}
 
 At its simplest, AEM consists of an author instance and a [publish instance](#publish) which work together to create, manage, and publish your content.
 
 Content begins on the author instance. This is where you content authors create their content. The author environment offers various tools for authors to create, organize, and refuse their content.
 
-### Publish {#publish}
+### Publish Instance {#publish}
 
 Once content is created in the author instance, it must be published to be available to other services to consume. A publish instance contains all content that has been published.
 
