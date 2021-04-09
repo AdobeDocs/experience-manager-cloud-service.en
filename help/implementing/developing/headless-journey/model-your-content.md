@@ -20,6 +20,17 @@ In this part of the [AEM Headless Developer Journey](#overview.md), you can lear
 
 ## Data Modelling {#data-modelling}
 
+*It's a big bad world out there*. 
+
+Maybe, maybe not, but it's certainly a big *complicated* world out there and data modelling is used to take a very (very) small section and define a representation.
+
+For example:
+
+* There are many Schools, but they all have various things in common:
+  * A Location
+  * A Head Teacher
+  * Many Teachers
+
 ### Concepts {#concepts}
 
 ### Basics {#basics}
@@ -32,7 +43,9 @@ In this part of the [AEM Headless Developer Journey](#overview.md), you can lear
 
 ### Why? {#why}
 
-To ensure that your application can consistently and efficiently request, and receive, the required content from AEM, this content must be structured.
+To ensure that your application can consistently and efficiently request, and receive, the required content from AEM, this content must be structured. 
+
+This means that your application knows, in advance, the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine how it can be used.
 
 ### Introduction to How? {#how}
 
@@ -49,13 +62,47 @@ The content returned can then be used by your applications.
 
 ## Creating the Structure - Content Fragment Models {#create-structure-content-fragment-models}
 
+Content Fragment Models provide various mechanisms that allow you to define the structure of your content. Within models:
+
+1. **Data Types** allow you to define the individual fields and their basic attributes; for example **Text** and **Number**
+1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
+1. The **Fragment Reference** data type allows you to realise multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your data modelling.
+
+<!-- 
+Add arrow to image
+-->
+
+For example:
 ![Content Fragments for use with GraphQL](/help/assets/content-fragments/assets/cfm-nested-01.png "Content Fragments for use with GraphQL")
 
 ### Data Types {#data-types}
 
-### References {#references}
+AEM provides the following data types for you to model your content:
 
-### Nested Fragments {#nested-fragments}
+* Single line text
+* Multi line text
+* Number
+* Boolean
+* Date and time
+* Enumeration
+* Tags
+* Content Reference
+* Fragment Reference
+* JSON Object
+
+### References and Nested Content {#references-nested-content}
+
+Two data types provide references to content outside a specific fragment:
+* **Content Reference**
+  This provides a simple reference to other content of any type.
+  For example, you can reference an image at a specified location.
+
+* **Fragment Reference**
+  This provides references to other Content Fragments. 
+  This type of reference is used to create nested content, introducing the relationships needed to model your content.
+  The data type can be configured to allow fragment authors to:
+  * Edit the referenced fragment directly.
+  * Create a new content fragment, based on the appropriate model
 
 ## Using the structure to generate content - Content Fragments {#use-content-to-generate-content}
 
