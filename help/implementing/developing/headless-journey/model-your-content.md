@@ -22,14 +22,41 @@ In this part of the [AEM Headless Developer Journey](#overview.md), you can lear
 
 *It's a big bad world out there*. 
 
-Maybe, maybe not, but it's certainly a big *complicated* world out there and data modelling is used to take a very (very) small section and define a representation.
+Maybe, maybe not, but it's certainly a big *complicated* world out there and data modelling is used to define a representation of a very (very) small sub-section and the specific information that is needed for a certain purpose.
 
 For example:
 
-* There are many Schools, but they all have various things in common:
-  * A Location
-  * A Head Teacher
-  * Many Teachers
+There are many Schools, but they all have various things in common:
+* A Location
+* A Head Teacher
+* Many Teachers
+* Many pupils
+* Many ex-teachers
+* Many ex-pupils
+* Many classrooms
+* Many (many) books
+* Many (many) pieces of equipment
+* Many extra-curriculum activities
+* and so on....
+
+Even in such a small example the list can seem endless. But if you simply want your application to perform a simple task, you need to limit the information to the essentials. 
+
+For example, advertising special events for all schools in the area:
+
+* School Name
+* School Location
+* Head Teacher
+* Type of Event
+* Date of Event
+* Teacher Organizing the Event
+
+Each of these are referred to as **Entities** - basically the "things" that we want to store information about.
+
+The information that we want to store about them are the **Attributes**, such as Name, and Qualifications for the teachers. 
+
+Then there are various relationships between the entities. For example, usually a school only has one head teacher, and many teachers (and usually the head teacher is also a teacher).
+
+The process of analyzing and defining this information, together with the relationships between them, is called Data Modelling.
 
 ### Concepts {#concepts}
 
