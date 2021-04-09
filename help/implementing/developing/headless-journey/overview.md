@@ -15,9 +15,9 @@ Headless implementation forgoes page and component management as is traditional 
 
 This guide leads you through the most important topics so that on completion you:
 
-Have a full understanding of what headless content delivery is and its benefits.
-Understand AEM's headless features and how they work together to deliver a headless experience.
-Have the ability to take the first steps implementing your first AEM headless project.
+* Have a full understanding of what headless content delivery is and its benefits.
+* Understand AEM's headless features and how they work together to deliver a headless experience.
+* Have the ability to take the first steps implementing your first AEM headless project.
 
 ## The Headless Journey {#the-journey}
 
