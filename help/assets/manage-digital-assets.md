@@ -274,8 +274,6 @@ See [Download assets from [!DNL Experience Manager]](/help/assets/download-asset
 
 ## Publish or unpublish assets {#publish-assets}
 
-After uploading, processing, or editing your assets on [!DNL Experience Manager] author, you publish the asset to the publish server. Publishing makes the asset available publicly. Unpublishing action removed the asset from the publish server but not from the authoring server.
-
 1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
 1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
