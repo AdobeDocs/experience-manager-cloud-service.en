@@ -13,8 +13,8 @@ This document helps you understand AEM Headless in the context of your own proje
 
 * Understand the basics of AEM's headless features
 * Know the prerequisites for using AEM's headless features
-* Be able to determine your integration model
-* Be able to define your project in terms of scope and the chosen integration model
+* Be able to determine your integration level
+* Be able to define your project in terms of scope and the chosen integration level
 
 ## AEM Basics {#aem-basics}
 
@@ -24,7 +24,7 @@ Before you can define your headless project within AEM, it is important to under
 
 At its simplest, AEM consists of an author instance and a [publish instance](#publish) which work together to create, manage, and publish your content.
 
-Content begins on the author instance. This is where you content authors create their content. The author environment offers various tools for authors to create, organize, and refuse their content.
+Content begins on the author instance. This is where you content authors create their content. The author environment offers various tools for authors to create, organize, and reuse their content.
 
 ### Publish Instance {#publish}
 
@@ -32,7 +32,7 @@ Once content is created in the author instance, it must be published to be avail
 
 ### Replication {#replication}
 
-Replication is the act of transferring content from the author instance to the publish instance.
+Replication is the act of transferring content from the author instance to the publish instance. This is done automatically by AEM when an author or other user with appropriate rights publishes content.
 
 ### Repository {#repository}
 
@@ -42,7 +42,7 @@ Content authors do not need to understand how their content is stored, but devel
 
 ### Packages {#packages}
 
-Because the repository contains all code for your project, it must be simple to introduce new code. Packages contain code which can be deployed to your repository. Packages can also contain other content as well.
+Because the repository contains all content for your project, including code, it must be simple to introduce new content created by your development team. Packages are self-contained, deployable units of content which can be easily installed in your repository. Packages allow for simple deployment of new code and other content as part of a development project.
 
 ### AEM Basics Summary {#aem-basics-summary}
 
@@ -54,7 +54,7 @@ At its simplest level, creating headless experiences in AEM requires the followi
 
 ## Headless Integration Levels {#integration-levels}
 
-AEM supports many levels of headless integration. Understanding which models is appropriate for your use case is important for defining your project.
+AEM supports many levels of headless integration. Understanding which level is appropriate for your use case is an important part of defining your project.
 
 ### You already have an external consume of headless content such as a singe page application (SPA). {#already-have-a-spa}
 
@@ -64,13 +64,13 @@ Let us assume that your basic requirement is at a minimum to deliver content fro
 
 This level of integration allows your content authors to create content in AEM and deliver it heedlessly to any number of external services using GraphQL or to edit them from external services using the Assets API.
 
-In this model, AEM is only used for creating and serving the content through the use of AEM Content Fragments. Rendering and interaction with the content is delegated to the consuming application, often a single-page application (SPA).
+In this model, AEM is only used for creating and serving the content through the use of AEM Content Fragments. Rendering and interaction with the content is delegated to the consuming external application, often a single-page application (SPA).
 
 #### Level 2: Embed the SPA in AEM {#level-2}
 
-This level of integration builds on the first level, but also allows the external application (SPA) to be embedded in AEM so that the content authors can view the content in the context of the external application. The application can also support limited editing of the external application within AEM.
+This level of integration builds on the first level, but also allows the external application (SPA) to be embedded in AEM so that the content authors can view the content in the context of the external application within AEM. The application can also support limited editing of the external application within AEM.
 
-This level has the advantage of allowing content authors to flexibly author some content in AEM in a headless way, while still delivering other content headlessly.
+This level has the advantage of allowing content authors to flexibly author content in AEM in a headful way, with their content presented in-context with an embedded external SPA, while still delivering the content headlessly.
 
 #### Level 3: Embed and Fully Enable SPA in AEM {#level-3}
 
@@ -80,7 +80,7 @@ This level of integration builds on level two by enabling most content in the ex
 
 If your goal is to create a new SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
 
-Using the SPA Editor, the SPA not only consumes content from AEM, but is also fully editable within AEM by your content authors.
+Using the SPA Editor, the SPA not only consumes content from AEM, but is also fully editable within AEM by your content authors giving you both the flexibility of headless delivery and in-context editing within AEM.
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
@@ -96,7 +96,7 @@ There are a number of requirements before you begin your headless AEM project.
 
 * Sandbox access for testing deploying your project
 * Local development instance for data modeling and testing
-* Existing external SPA (optional, depending on [what integration level](#integration-level) is chosen)
+* Existing external SPA (optional, depending on [what integration level](#integration-level) is required for your project)
 
 ## Defining Your Project {#defining-your-project}
 
