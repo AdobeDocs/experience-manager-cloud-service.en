@@ -70,9 +70,9 @@ The process of analyzing and defining this information, together with the relati
 
 ### Why? {#why}
 
-To ensure that your application can consistently and efficiently request, and receive, the required content from AEM, this content must be structured. 
+To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured. 
 
-This means that your application knows, in advance, the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine how it can be used.
+This means that your application knows in advance the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
 
 ### Introduction to How? {#how}
 
@@ -100,7 +100,7 @@ Add arrow to image
 -->
 
 For example:
-![Content Fragments for use with GraphQL](/help/assets/content-fragments/assets/cfm-nested-01.png "Content Fragments for use with GraphQL")
+![Content Modelling with Content Fragments](assets/headless-modelling-01.png.png "Content Modelling with Content Fragments")
 
 ### Data Types {#data-types}
 
