@@ -22,14 +22,16 @@ In this part of the [AEM Headless Developer Journey](#overview.md), you can lear
 
 *It's a big bad world out there*. 
 
-Maybe, maybe not, but it's certainly a big *complicated* world out there and data modelling is used to define a representation of a very (very) small sub-section and the specific information that is needed for a certain purpose.
+Maybe, maybe not, but it's certainly a big ***complicated*** world out there and data modelling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
 
 For example:
 
 There are many Schools, but they all have various things in common:
+
 * A Location
 * A Head Teacher
 * Many Teachers
+* Many members of non-teaching staff
 * Many pupils
 * Many ex-teachers
 * Many ex-pupils
@@ -50,17 +52,27 @@ For example, advertising special events for all schools in the area:
 * Date of Event
 * Teacher Organizing the Event
 
-Each of these are referred to as **Entities** - basically the "things" that we want to store information about.
+### Concepts {#concepts}
+
+What you want to describe are referred to as **Entities** - basically the "things" that we want to store information about.
 
 The information that we want to store about them are the **Attributes**, such as Name, and Qualifications for the teachers. 
 
-Then there are various relationships between the entities. For example, usually a school only has one head teacher, and many teachers (and usually the head teacher is also a teacher).
+Then there are various **Relationships** between the entities. For example, usually a school only has one head teacher, and many teachers (and usually the head teacher is also a teacher).
 
-The process of analyzing and defining this information, together with the relationships between them, is called Data Modelling.
-
-### Concepts {#concepts}
+The process of analyzing and defining this information, together with the relationships between them, is called **Data Modelling**.
 
 ### Basics {#basics}
+
+Often you need to start by drawing up a **Conceptual Schema** that describes the entities and their relationships.
+
+After this is stable you can translate the models into a **Logical Schema** that describes the entities, together with the attributes. At this level you should examine the definitions closely to eliminate duplication and optimize your design.
+
+>[!NOTE]
+>
+>Sometimes these two steps are merged, often depending on the complexity of your scenario.
+
+For example, do you need separate entities for `Head Teacher` and `Teacher`, or simply an additional attribute on the `Teacher` model? 
 
 ### Ensuring data integrity and eliminating data redundancy {#data-integrity-data-redundancy}
 
@@ -100,7 +112,7 @@ Add arrow to image
 -->
 
 For example:
-![Content Modelling with Content Fragments](assets/headless-modelling-01.png.png "Content Modelling with Content Fragments")
+![Content Modelling with Content Fragments](assets/headless-modelling-01.png "Content Modelling with Content Fragments")
 
 ### Data Types {#data-types}
 
