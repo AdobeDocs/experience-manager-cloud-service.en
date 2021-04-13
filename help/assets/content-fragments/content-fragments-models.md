@@ -122,14 +122,25 @@ A selection of data types is available for defining your model:
 * **Image**
   * Shows the thumbnail of image content references.
 * **Tab Placeholder**
-  * Allows the introduction of tabs when editing the Content Fragment content.
+  * Allows the introduction of tabs for use when editing the Content Fragment content.
+    This will be shown as a divider in the model editor, separating the list of content data types. Each instance represents a new tab.
+    In the fragment editor each instance will appear as a tab.
     >[!NOTE]
     >
-    >This is purely used for formatting, it is ignored by the AEM GraphQL schema.
+    >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
 
 ## Properties {#properties}
 
 Many properties are self-explanatory, for certain properties additional details are below:
+
+<!--
+Check:
+Default
+Required
+Custom Error Message
+Select Multiple Tags (Tags)
+Accept only specified ...dimension
+-->
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
