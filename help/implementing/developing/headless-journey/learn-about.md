@@ -45,7 +45,7 @@ Users expect engagement no matter what the platform or touch point, requiring ag
 
 The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
 
-A headless server for example is likely sitting in a rack in a server room somewhere and has no monitor attached. To access it you have to remotely connect into it. In this case, the monitor is the head as it takes care of rendering the output of the server. You as the consumer of the service, provide your own head (the monitor).
+A headless server for example is likely sitting in a rack in a server room somewhere and has no monitor attached. To access it you have to remotely connect into it. In this case, the monitor is the head as it takes care of rendering the output of the server. You as the consumer of the service, provide your own head (the monitor) when you connect remotely to it.
 
 When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. However, by only delivering the **content** in a standardized fashion, a headless CMS omits the final output rendering, leaving the presentation of the content to the consuming service.
 
