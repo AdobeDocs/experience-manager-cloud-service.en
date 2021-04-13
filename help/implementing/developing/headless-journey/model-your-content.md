@@ -64,9 +64,9 @@ The process of analyzing and defining this information, together with the relati
 
 ### Basics {#basics}
 
-Often you need to start by drawing up a **Conceptual Schema** that describes the entities and their relationships.
+Often you need to start by drawing up a **Conceptual Schema** that describes the entities and their relationships. Usually this is high-level (conceptual).
 
-After this is stable you can translate the models into a **Logical Schema** that describes the entities, together with the attributes. At this level you should examine the definitions closely to eliminate duplication and optimize your design.
+After this is stable you can translate the models into a **Logical Schema** that describes the entities, together with the attributes, and the relationships. At this level you should examine the definitions closely to eliminate duplication and optimize your design.
 
 >[!NOTE]
 >
@@ -76,9 +76,17 @@ For example, do you need separate entities for `Head Teacher` and `Teacher`, or 
 
 ### Ensuring data integrity and eliminating data redundancy {#data-integrity-data-redundancy}
 
+>[!NOTE]
+>To be continued....
+
 ### Performance {#performance}
 
+>[!NOTE]
+>To be continued....
+
 ## Data Modelling for AEM Headless {#data-modelling-for-aem-headless}
+
+Data Modelling is a set of established techniques, often used when developed relationship databases, so what does it mean for AEM Headless?
 
 ### Why? {#why}
 
@@ -95,21 +103,26 @@ The structure of your data model is:
 * realized by the definition of your Content Fragment Model,
 * used as a basis of the Content Fragments used for your content generation.
 
+>[!NOTE]
+>
+>The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in a later session.
+
 Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows you to perform (complex) queries on your Content Fragments, with each query being according to a specific model type. 
 
 The content returned can then be used by your applications. 
 
 ## Creating the Structure - Content Fragment Models {#create-structure-content-fragment-models}
 
-Content Fragment Models provide various mechanisms that allow you to define the structure of your content. Within models:
+Content Fragment Models provide various mechanisms that allow you to define the structure of your content. 
 
-1. **Data Types** allow you to define the individual fields and their basic attributes; for example **Text** and **Number**
+A Content Fragment Model describes an entity.
+
+Within a model:
+
+1. **Data Types** allow you to define the individual attributes.
+   For example, define the field holding a teacher's name as **Text** and their years of service as **Number**.
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
 1. The **Fragment Reference** data type allows you to realise multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your data modelling.
-
-<!-- 
-Add arrow to image
--->
 
 For example:
 ![Content Modelling with Content Fragments](assets/headless-modelling-01.png "Content Modelling with Content Fragments")
@@ -145,6 +158,9 @@ Two data types provide references to content outside a specific fragment:
 
 ## Using the structure to generate content - Content Fragments {#use-content-to-generate-content}
 
+>[!NOTE]
+>To be continued....
+
 ### Selecting the appropriate model {#select-model}
 
 ### Creating, and editing, structured content {#create-edit-structured-content}
@@ -153,9 +169,10 @@ Two data types provide references to content outside a specific fragment:
 
 ## What's Next {#whats-next}
 
-[Learn how to use GraphQL to access your Content Fragments content](fetch-your-content.md). 
+[Learn how to use GraphQL to access and retrieve your Content Fragments content](fetch-your-content.md). 
 
 ## Additional Resources {#additional-resources}
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+* [AEM GraphQL Schemas](/help/implementing/developing/headless-journey/fetch-your-content.md)
