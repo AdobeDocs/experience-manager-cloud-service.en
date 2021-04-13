@@ -52,22 +52,30 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
 
+   <!--
+   Update screenshot
+   -->
+
    ![properties](assets/cfm-models-03.png)
 
 1. **To Add a Field**
 
-    * Drag a required data type to the required location for a field:
+   * Drag a required data type to the required location for a field:
 
-      ![data type to field](assets/cfm-models-04.png)
+     <!--
+     Update screenshot
+     -->
 
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
+     ![data type to field](assets/cfm-models-04.png)
 
-      * Many properties are self-explanatory, for additional details see [Properties](#properties).
-      * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
+   * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
 
-      For example:
+     * Many properties are self-explanatory, for additional details see [Properties](#properties).
+     * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
 
-      ![field properties](assets/cfm-models-05.png)
+     For example:
+
+     ![field properties](assets/cfm-models-05.png)
 
 1. **To Remove a Field**
 
@@ -94,7 +102,7 @@ A selection of data types is available for defining your model:
 * **Boolean**
   * Add a boolean checkbox
 * **Date and time**
-  * Add a date and/or time
+  * Add a date or time
 * **Enumeration**
   * Add a set of checkbox, radio button(s), or dropdown fields
 * **Tags**
@@ -111,6 +119,13 @@ A selection of data types is available for defining your model:
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
     * The JSON will be passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
+* **Image**
+  * Shows the thumbnail of image content references.
+* **Tab Placeholder**
+  * Allows the introduction of tabs when editing the Content Fragment content.
+    >[!NOTE]
+    >
+    >This is purely used for formatting, it is ignored by the AEM GraphQL schema.
 
 ## Properties {#properties}
 
