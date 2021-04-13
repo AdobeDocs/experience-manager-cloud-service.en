@@ -2,7 +2,7 @@
 title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 ---
@@ -23,7 +23,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Before you use or configure this capability, ensure the following:
 
 * The users are part of the appropriate user groups on each deployment.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. For more information about how this functionality works in [!DNL Experience Manager] 6.5, see [Connected Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] works with [!DNL Experience Manager] 6.5. For more information about how this functionality works in [!DNL Experience Manager] 6.5, see [Connected Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
   | |[!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS| [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise|
   |---|---|---|---|
@@ -35,7 +35,7 @@ Before you use or configure this capability, ensure the following:
 
 Authors search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
-* **Image formats**: The formats that the [Image component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) supports.
+* **Image formats**: The formats that the [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supports.
 * **Document formats**: See the [supported document formats](file-format-support.md#document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
@@ -182,7 +182,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 1. Select an asset in [!DNL Assets] Console and click **[!UICONTROL Properties]** from the toolbar.
 1. Click **[!UICONTROL References]** tab. See **[!UICONTROL Local References]** for use of the asset on the [!DNL Assets] deployment. See **[!UICONTROL Remote References] for use of the asset on [!DNL Sites] deployment where the asset was fetched using Connected Assets functionality.
 
-   ![remote references in asset Properties](assets/connected-assets-remote-reference.png)
+   ![Remote references in asset Properties page](assets/connected-assets-remote-reference.png)
 
 1. The references for [!DNL Sites] pages displays total count of references for each local [!DNL Sites]. It may take some time to find all the references and display the total number of references.
 1. The list of references is interactive and DAM users can click on a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
@@ -236,4 +236,4 @@ To troubleshoot common errors, follow these steps:
 
 * If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
-![failure to retried asset remote references](assets/reference-report-failure.png)
+  ![failure to retrieve asset remote references](assets/reference-report-failure.png)
