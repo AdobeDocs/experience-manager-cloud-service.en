@@ -577,7 +577,6 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use `... on` 
     * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](#sample-wknd-fragment-specific-model-content-reference)
 
-<!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
@@ -768,7 +767,6 @@ Here are the steps required to persist a given query:
    >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
--->
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
