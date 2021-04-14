@@ -75,8 +75,10 @@ This real-world setup can be used as a blueprint and then customized to the need
 
 ### Considerations for a Multi Team Setup {#considerations}
 
-The above outlined blueprint for a multi-team setup allows scaling across a larger number of teams. With Cloud Manager’s git repository and the production pipeline, always the full production code is run through all quality gates, treating it as one deployment unit. This way the production system is kept *always on* without interruption or downtime.
-In contrast, without such a system in place, because each team can deploy separately there is a risk that an update from a single team can lead to production stability issues. In addition, it requires coordination and planned downtime to roll out updates. With an increasing number of teams, the coordination effort will become much more complex and quickly unmanageable.
-If a problem is detected in the quality gates, production is not affected, and the problem can be detected and fixed without Adobe personnel required to step in. Without Cloud Service and without always testing the whole deployment, partial deployments can cause outages requiring a request to rollback or even a full restore from a backup. The partial testing might also lead to other problems which then need to be fixed after the fact again requiring coordination and support from Adobe personnel.
+>[!NOTE]
+>For any multi team setup it is crucial to define a governance model and a set of standards all teams have to follow. The above outlined blueprint for a multi-team setup allows scaling across a larger number of teams and you can use this blueprint as a starting point.
 
-For any multi team setup it is crucial to define a governance model and a set of standards all teams have to follow. You can use the blueprint as a starting point.
+With Cloud Manager’s git repository and the production pipeline, always the full production code is run through all quality gates, treating it as one deployment unit. This way the production system is kept *always on* without interruption or downtime.
+In contrast, without such a system in place, because each team can deploy separately there is a risk that an update from a single team can lead to production stability issues. In addition, it requires coordination and planned downtime to roll out updates. With an increasing number of teams, the coordination effort will become much more complex and quickly unmanageable.
+
+If a problem is detected in the quality gates, production is not affected, and the problem can be detected and fixed without Adobe personnel required to step in. Without Cloud Service and without always testing the whole deployment, partial deployments can cause outages requiring a request to rollback or even a full restore from a backup. The partial testing might also lead to other problems which then need to be fixed after the fact again requiring coordination and support from Adobe personnel.
