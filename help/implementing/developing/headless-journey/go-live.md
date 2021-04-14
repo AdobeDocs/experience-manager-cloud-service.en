@@ -76,3 +76,5 @@ The most common deployment pattern with AEM headless applications is to have the
 
 ## Common Issues and Troubleshooting {#common-issues-and-troubleshooting}
 
+## Additional Resources {#additional-resources}
+
