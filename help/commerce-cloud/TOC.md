@@ -9,8 +9,8 @@ feature-set: Experience Manager Sites
 # AEM Content and Commerce {#content-and-commerce}
 
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-+ [Commerce Integration Framework (CIF)](cif.md)
-+ [Notable Changes of CIF add-on](changes.md)
++ [Notable Changes to AEM Content and Commerce in AEM Cloud Service](changes.md)
++ [CIF add-on](cif.md)
 + [Migration to CIF add-on](migration.md)
 + Content author
   + [Multi-Template Usage](configuring/multi-template-usage.md)
