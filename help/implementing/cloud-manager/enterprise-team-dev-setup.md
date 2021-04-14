@@ -2,7 +2,7 @@
 title: Enterprise Team Development Setup - Cloud Services
 description: Follow this page to learn more about Enterprise Team Development Setup
 ---
-# Enterprise Team Development Setup for AEM as a Cloud Service {enterprise-setup}
+# Enterprise Team Development Setup for AEM as a Cloud Service {#enterprise-setup}
 
 ## Introduction {#introduction}
 
@@ -10,7 +10,7 @@ AEM as Cloud Service, a cloud-native offering that delivers AEM as a service is 
 
 To support our customers with enterprise development setups, AEM as a Cloud Service fully integrates with Cloud Manager and its purpose-built opinionated CI/CD pipelines, which are equipped with best practices and learnings from multiple years experience with enterprise-grade development and deployments – ensuring thorough testing and highest code quality to deliver exceptional experiences.
 
-## Cloud Manager's Support in Enterprise Team Development Setup{#cloud-manager}
+## Cloud Manager's Support in Enterprise Team Development Setup {#cloud-manager}
 
 To ensure quick onboarding for customers, Cloud Manager provides everything required to get started with developing experiences right away, including a git repository to store customizations which then get built, verified, and deployed by Cloud Manager.
 Using Cloud Manager, development teams can work towards committing changes frequently without being dependent on Adobe personnel. 
