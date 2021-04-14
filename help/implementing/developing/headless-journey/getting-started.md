@@ -5,16 +5,16 @@ description: In this part of the AEM Headless Developer Journey, learn about AEM
 
 # Getting Started with AEM Headless as a Cloud Service {#getting-started}
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) learn about AEM Headless prerequisites.
+In this part of the [AEM Headless Developer Journey,](#overview.md) learn about what is required to get your own project started with AEM Headless.
 
 ## Objective {#objective}
 
 This document helps you understand AEM Headless in the context of your own project. After reading you should:
 
-* Understand the basics of AEM's headless features
-* Know the prerequisites for using AEM's headless features
-* Be able to determine your integration level
-* Be able to define your project in terms of scope and the chosen integration level
+* Understand the basics of AEM's headless features.
+* Know the prerequisites for using AEM's headless features.
+* Be able to determine your integration level.
+* Be able to define your project in terms of scope and the chosen integration level.
 
 ## AEM Basics {#aem-basics}
 
@@ -26,13 +26,21 @@ At its simplest, AEM consists of an author instance and a [publish instance](#pu
 
 Content begins on the author instance. This is where you content authors create their content. The author environment offers various tools for authors to create, organize, and reuse their content.
 
+Refer to the document [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+for more details on the author-publish setup of AEM.
+
 ### Publish Instance {#publish}
 
 Once content is created in the author instance, it must be published to be available to other services to consume. A publish instance contains all content that has been published.
 
+Refer to the document [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+for more details on the author-publish setup of AEM.
+
 ### Replication {#replication}
 
 Replication is the act of transferring content from the author instance to the publish instance. This is done automatically by AEM when an author or other user with appropriate rights publishes content.
+
+Refer to the document [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) for more details on publishing content on AEM.
 
 ### Repository {#repository}
 
@@ -40,17 +48,23 @@ All content is stored in a JCR-compliant repository. For the repository, everyth
 
 Content authors do not need to understand how their content is stored, but developers may need to access the repository directly on occasion. There are a number of ways to access information from the repository including REST and GraphQL APIs among others.
 
+See the document [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md) for more details on the JCR content repository foundation of AEM. Note that this document is very technical and covers all areas of AEM development, many of which are not necessary for headless projects.
+
 ### Packages {#packages}
 
 Because the repository contains all content for your project, including code, it must be simple to introduce new content created by your development team. Packages are self-contained, deployable units of content which can be easily installed in your repository. Packages allow for simple deployment of new code and other content as part of a development project.
 
+See the document [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md) for full details on how packages are structured in AEM projects.
+
 ### AEM Basics Summary {#aem-basics-summary}
 
-At its simplest level, creating headless experiences in AEM requires the following steps:
+At its simplest level, creating digital experiences in AEM requires the following steps:
 
 1. Your developers will create their customizations and deploy them to the repository as packages.
 1. Your content authors will create your headless content in the author instance.
 1. When this content is ready, it is replicated to the publish instance. APIs can then be called to retrieve this content.
+
+AEM Headless builds off of this technical foundation by offering powerful tools to manage headless content which is [described in the next section.](#aem-headless-basics)
 
 ## AEM Headless Basics {#aem-headless-basics}
 
@@ -58,17 +72,21 @@ The headless capabilities of AEM are based on a few key features. These will be 
 
 >[!TIP]
 >
->If you are alredy familiar with AEM, you can review the [Headless Getting Started Guides](/help/implementing/developing/headless/introduction.md) for a compact but thorough introduction to all of the important headless features in AEM.
+>If you are already familiar with AEM, you can review the [Headless Getting Started Guides](/help/implementing/developing/headless/introduction.md) for a compact but thorough introduction to all of the important headless features in AEM.
 
 ### Content Fragment Models {#content-fragment-models}
 
 Content Fragment Models define the structure of the data and content that you will create and manage in AEM. They serve as a kind of scaffolding for your content. When choosing to create content, your authors will select from the Content Fragment Models you define, which guides them in creating content.
+
+See the document [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) for full details on Content Fragment Models.
 
 ### Content Fragments {#content-fragments}
 
 Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations and over multiple channels.
 
 Content fragments contain structured content and can be delivered in JSON format.
+
+See the document [Content Fragments](/help/assets/content-fragments/content-fragments.md) for full details on Content Fragments.
 
 ### GraphQL and REST APIs {#apis}
 
@@ -80,6 +98,10 @@ To modify your content headlessly, AEM offers two robust APIs.
 ## Headless Integration Levels {#integration-levels}
 
 AEM supports many levels of headless integration. Understanding which level is appropriate for your use case is an important part of defining your project.
+
+>[!TIP]
+>
+>Refer to the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for a complete discussion of the integration levels available in AEM.
 
 ### You already have an external consume of headless content such as a singe page application (SPA). {#already-have-a-spa}
 
@@ -106,6 +128,10 @@ This level of integration builds on level two by enabling most content in the ex
 If your goal is to create a new SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
 
 Using the SPA Editor, the SPA not only consumes content from AEM, but is also fully editable within AEM by your content authors giving you both the flexibility of headless delivery and in-context editing within AEM.
+
+>[!TIP]
+>
+>See the document [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md)for a guide to fully-editable single-page applications in AEM.
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
@@ -169,6 +195,8 @@ Be clear about you content update workflow. What is the approval process that th
 
 Note that your [content hierarchy](#content-hierarchy) can be leveraged to make localization easier.
 
+See the document [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) for full details on AEM's powerful translation features.
+
 ##### Leverage the Content Hierarchy {#content-hierarchy}
 
 Folder hierarchy can address two major concerns with regards to content management:
@@ -191,6 +219,8 @@ Content Fragment names must be descriptive for content authors. AEM transparentl
 
 * Bad Name: `cta_btn_1`
 * Good Name: `Call To Action Button`
+
+See the section [Page Naming Conventions of the document Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) for further advice on effective naming. Also see the document [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) for the technical details of page naming restrictions in AEM.
 
 ##### Don't Overextend Content Nesting {#content-nesting}
 
@@ -253,6 +283,6 @@ You should continue your AEM headless journey by next reviewing the document [Pa
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Path to Your First Experience Using AEM Headless,](path-to-first-experience.md) the following are some additional resources that do a deeper dive on some concepts mentioned in this document.
 
 * [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md) - Understand AEM as a Cloud Service's structure
-* [Headless Development Getting Started Guide](/help/implementing/developing/headless/introduction.md) - A quick tour of Content Models, Content Fragments, GraphQL and how AEM delivers your content headlessly
-* [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) - Understanding the different levels of integration possible with headless in AEM
-* [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md) - A quick guide to fully-editable single-page applications in AEM
+* [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
+* [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM.
+* [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
