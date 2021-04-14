@@ -80,6 +80,10 @@ The recommended application deployment structure is as follows:
             + Groups
             + ACLs (permissions)
 
+>[!NOTE]
+>
+>The same code must be deployed to all environments. This is needed in order to ensure a level of confidence validations on the stage environment are also in production. For more information, see [Conservative Coding for Rollbacks](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks).
+
 
 ### Content Packages
 
