@@ -17,7 +17,7 @@ feature-set: Experience Manager Sites
 + Integrations {#integrations}
   + [Magento](architecture/magento.md)
   + [3rd Party Commerce Solution](architecture/third-party.md)
-+ Hybrid AEM deployment
++ AEM storefront
   + [Getting started](getting-started.md)
   + Configuration {#configuration}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
