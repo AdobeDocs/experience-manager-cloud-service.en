@@ -33,7 +33,25 @@ The second step is self-service for each AEM as a Cloud Service environment. The
 To connect the CIF add-on & the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) with you Magento environment you need to provide the Magento GraphQL endpoint URL via a Cloud Manager environment variable. The variable name is `COMMERCE_ENDPOINT`. A secure connection via HTTPS must be configured.
 A different Magento GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with Magento staging systems and AEM production environment to a Magento production system. That Magento GraphQL endpoint must be publicly available, private VPN or local connections are not supported.
 
-To connect AEM Commerce with Magento follow these steps:
+To connect AEM Commerce with Magento, there are two options.
+
+### 1) Connecting AEM Commerce with Magento via the Cloud Manager UI
+
+In order to connect the AEM Commerce Integration Framework add-on with a Magento environment, the endpoint of the environment must be configured. Optionally, an authentication header can be provided in order to use additional CIF features such as Staged Catalog. This can be done using a dialog on the Environment Details page. When viewing this page for a Commerce-enabled program, a button will be displayed if the endpoint is not currently configured:
+
+![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cmui.png)
+
+Clicking this button opens a dialog:
+
+![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+   
+After the endpoint (and, optionally, the token) is set, the endpoint will be displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
+
+![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cmui-done.png)
+
+### 2) Connecting AEM Commerce with Magento via CLI
+
+To connect AEM Commerce with Magento via CLI, follow these steps:
 
 1. Get the Adobe I/O CLI with the Cloud Manager plugin
 
@@ -54,10 +72,6 @@ To connect AEM Commerce with Magento follow these steps:
 >[!TIP]
 >
 >You can list all Cloud Manager variables using the following command to double-check: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
-
->[!NOTE]
->
->Alternatively you can use the [Cloud Manger API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) to configure the Cloud Manager variables as well.
 
 With this, you are ready to use AEM Commerce as a Cloud Service and can deploy your project via Cloud Manager.
 
