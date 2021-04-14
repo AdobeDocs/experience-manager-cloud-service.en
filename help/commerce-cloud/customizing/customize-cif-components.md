@@ -426,57 +426,6 @@ In our case we want to render a banner on top of the teaser to indicate that the
    >
    > You also may see some stack traces if the product used in the teaser does not have the `eco_friendly` attribute as part of it's attribute set.
 
-## Customizing the Product Picker
-
-The CIF Add-On also provides product and category pickers to be used in any component dialog to select products or categories.
-
-### Product Picker
-
-To use the product picker a developer has to add `/libs/commerce/gui/components/common/cifproductfield` to a component dialog. For example use the following for the `cq:dialog`:
-
-```xml
-<product
-    jcr:primaryType="nt:unstructured"
-    sling:resourceType="commerce/gui/components/common/cifproductfield"
-    fieldLabel="Product"
-    name="./product" />
-```
-
-The product field allows to navigation to the product a user want to select via the different views. A user also can use the integrated search to find a product. By default the product field will return the ID of the product, but this can be configured using the `selectionId` attribute.
-
-The product picker field supports the following optional properties:
-
-- `rootPath` - configure the root path of the virtual catalog data tree to be used (default = `/var/commerce/products`)
-- `multiple` (true, false) - allows to select one or multiple products (default = false)
-- `emptyText` - to configure the empty text value of the picker field
-- `selectionId` (id, uid, sku, slug, path, combinedSku) - allows to choose the product attribute to be returned by the picker (default = id). Using `sku` returns the sku of the selected product, while using `combinedSku` returns a string like `base#variant` with the skus of the base product and the selected variant, or a single sku if a base product is selected.
-- `filter` (folderOrProduct, folderOrProductOrVariant) - filters the content to be rendered by the picker while navigating the product tree. `folderOrProduct` - renders folders and products. `folderOrProductOrVariant` - renders folders, product and product variants. If a product or product variant is rendered it becomes also selectable in the picker. (default = `folderOrProduct`)
-
-The `cifproductfield` component requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See also [Customizing Dialog Fields
-](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/developing-components.html#customizing-dialog-fields).
-
-### Category Picker
-
-The category picker (provided by `/libs/commerce/gui/components/common/cifcategoryfield`) can be used in a component dialog as well. The following snippet can be used in a `cq:dialog` configuration:
-
-```xml
-<category
-    jcr:primaryType="nt:unstructured"
-    sling:resourceType="commerce/gui/components/common/cifcategoryfield"
-    fieldLabel="Category"
-    name="./category" />
-```
-
-The category picker field supports the following optional properties:
-
-- `rootPath` - configure the root path of the virtual catalog data tree to be used (default = `/var/commerce/products`)
-- `multiple` (true, false) - allows to select one or multiple categories (default = false)
-- `emptyText` - to configure the empty text value of the picker field
-- `selectionId`(id, uid, path, idAndUrlPath, uidANdUrlPath) - allows to choose the category attribute to be returned by the picker (default = id). The `idAndUrlPath` and `uidAndUrlPath` is a special option that will store the category `id` or `uid` and Magento's `url_path` separated by a `|` character like for example `1|men/tops`.
-
-The `cifcategoryfield` component requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See also [Customizing Dialog Fields
-](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/developing-components.html#customizing-dialog-fields).
-
 ## Add styles for Eco Friendly badge {#add-styles}
 
 At this point the logic for when to display the **Eco Friendly** badge is working, however the plain text could use some styles. Next add an icon and styles to the `ui.frontend` module to complete the implementation.
