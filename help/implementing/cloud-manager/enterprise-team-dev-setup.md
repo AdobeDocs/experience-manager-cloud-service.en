@@ -61,7 +61,7 @@ The setup in the Cloud Manager's git repository has two branches:
 * A *stable release branch*, containing the production code from all teams
 * A *development branch*, containing the development code from all teams
 
-Every push to a team’s git repository in either the development or the stable branch is triggering a [github action](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). All projects follow the same setup for the stable branch. A push on the stable branch of a project is automatically pushed to the stable branch in Cloud Manager's git repository. The production pipeline in Cloud Manager is configured to get triggered by a push to the stable branch. The production pipeline is therefore executed by each push of any team into a stable branch and the production deployment is updated if all quality gates pass.
+Every push to a team’s git repository in either the development or the stable branch is triggering a [github action](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). All projects follow the same setup for the stable branch. A push to the stable branch of a project is automatically pushed to the stable branch in Cloud Manager's git repository. The production pipeline in Cloud Manager is configured to get triggered by a push to the stable branch. The production pipeline is therefore executed by each push of any team into a stable branch and the production deployment is updated if all quality gates pass.
 
 ![](assets/team-setup2.png)
  
