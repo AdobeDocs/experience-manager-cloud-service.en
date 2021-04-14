@@ -18,7 +18,7 @@ To get started with AEM Commerce as a Cloud Service, your Experience Manager Clo
 The onboarding for AEM Commerce as a Cloud Service is a two-step process:
 
 1. Get AEM Commerce as a Cloud Service enabled and the CIF add-on provisioned
-2. Connect AEM Commerce as a Cloud Service with your Magento environment
+2. Connect AEM Commerce as a Cloud Service with your commerce solution
 
 The first onboarding step is done by Adobe. For more details on pricing and provisioning, you need to reach out to your sales representative.
 
@@ -47,7 +47,7 @@ After the endpoint (and, optionally, the token) is set, the endpoint will be dis
 
 ![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 2) Connecting AEM Commerce with Magento via Adobe I/O CLI
+### 2) Connecting AEM Commerce with a commerce endpoint via Adobe I/O CLI
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
