@@ -56,12 +56,12 @@ Each team uses a simplified git workflow with two + N branches, following the Gi
 
 Development is done in a feature branch, when the feature matures it is merged into the development branch. Completed and validated features are picked from the development branch and merged into the stable branch. All changes are done through Pull Requests (PR). Each PR is automatically validated by quality gates. Sonar is used for quality checking the code and a set of test suites is run to ensure that the new code is not introducing any regression.
 
-The setup in the Cloud Manager git repository has two branches:
+The setup in the Cloud Manager's git repository has two branches:
 
 * A *stable release branch*, containing the production code from all teams
 * A *development branch*, containing the development code from all teams
 
-Every push to a team’s git repository in either the development or the stable branch is triggering a [github action](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). All projects follow the same setup for the stable branch: A push the stable branch of a project is automatically pushed to the stable branch in Cloud Managers git repository. The production pipeline in Cloud Manager is configured to get triggered by a push to the stable branch. The production pipeline is therefore executed by each push of any team into a stable branch and the production deployment is updated if all quality gates pass.
+Every push to a team’s git repository in either the development or the stable branch is triggering a [github action](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). All projects follow the same setup for the stable branch. A push on the stable branch of a project is automatically pushed to the stable branch in Cloud Managers git repository. The production pipeline in Cloud Manager is configured to get triggered by a push to the stable branch. The production pipeline is therefore executed by each push of any team into a stable branch and the production deployment is updated if all quality gates pass.
 
 ![](assets/team-setup2.png)
  
