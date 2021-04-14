@@ -92,6 +92,10 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
 
 1. Start the AEM as a Cloud Service SDK
 
+>[!NOTE]
+>
+>Make sure you start AEM as a Cloud Service SDK in the same terminal window the environment variable was set in step 5. If you start it in a separate terminal window or by double-click the .jar file make sure the environment variable is visible.
+
 Verify the setup via OSGI console: `http://localhost:4502/system/console/osgi-installer`. The list should include the CIF add-on related bundles, content-package, and OSGI configurations as defined in the feature model file.
 
 ## Project Setup {#project}
