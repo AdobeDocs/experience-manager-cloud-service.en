@@ -102,13 +102,14 @@ A selection of data types is available for defining your model:
 * **Boolean**
   * Add a boolean checkbox
 * **Date and time**
-  * Add a date or time
+  * Add a date and/or time
 * **Enumeration**
   * Add a set of checkbox, radio button(s), or dropdown fields
 * **Tags**
   * Allows fragment authors to access and select areas of tags
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * If an image is referenced, you can opt to show a thumbnail
 * **Fragment Reference**
   * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
@@ -123,7 +124,7 @@ A selection of data types is available for defining your model:
   * Shows the thumbnail of image content references.
 * **Tab Placeholder**
   * Allows the introduction of tabs for use when editing the Content Fragment content.
-    This will be shown as a divider in the model editor, separating the list of content data types. Each instance represents a new tab.
+    This will be shown as a divider in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
     In the fragment editor each instance will appear as a tab.
     >[!NOTE]
     >
@@ -182,6 +183,8 @@ Accept only specified ...dimension
   * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
 
+* See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
+
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
 
 ## Validation {#validation}
@@ -237,12 +240,18 @@ The Content Reference allows you to render content from another source; for exam
 
 In addition to standard properties you can specify:
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
-  <!-- Check screenshot - might need update -->
-  ![Content Reference](assets/cfm-content-reference.png)
+* The **Root Path** for any referenced content
+* The content types that can be referenced
+* Limitations for file sizes
+* If an image is referenced:
+  * Show Thumbnail
+  * Image restraints of height and width
+
+<!--
+needs new screenshot
+-->
+
+![Content Reference](assets/cfm-content-reference.png)
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
