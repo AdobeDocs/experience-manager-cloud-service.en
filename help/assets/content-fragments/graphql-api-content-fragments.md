@@ -309,7 +309,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Multi line Text | String | Used for outputting text such as the body of an article |
 | Number | Float, [Float] | Used to display floating point number and regular numbers |
 | Boolean | Boolean | Used to display checkboxes → simple true/false statements |
-| Date And Time | Calendar | Used to display date and time in an ISO 8086 format |
+| Date And Time | Calendar | Used to display date and time in an ISO 8086 format. Depending on the type selected, there are three flavors available for use in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
 | Enumeration | String | Used to display an option from a list of options defined at model creation |
 | Tags | [String] | Used to display a list of Strings representing Tags used in AEM |
 | Content Reference | String | Used to display the path towards another asset in AEM |
