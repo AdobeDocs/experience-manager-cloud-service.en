@@ -27,4 +27,5 @@ feature-set: Experience Manager Sites
     + [Develop with AEM Cloud Service SDK](develop.md)
     + [Styling CIF Components](customizing/style-cif-component.md)
     + [Customizing CIF Components](customizing/customize-cif-components.md)
+    + [Use CIF catalog pickers](customizing/use-cif-pickers.md)
 + [FAQ](faq.md)
