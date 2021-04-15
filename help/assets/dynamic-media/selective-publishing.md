@@ -27,40 +27,40 @@ For example, with selective publishing you can work on assets for products that 
 
 If you decide later to change the **[!UICONTROL Selective Publish]** settings in a folder, those changes affect only new assets that you upload to that folder from that point forward. The publish state of existing assets in the folder remain as-is until you manually change them from either **[!UICONTROL Quick Publish]** or the **[!UICONTROL Manage Publication]** dialog box.
 
-The folder level **[!UICONTROL Dynamic Media Publish mode]** option always defaults to the value that is found in the **[!UICONTROL Publish Assets]** setting in your **[!UICONTROL Dynamic Media Configuration.]** The following steps in this topic, however, show you how to manually change this default value at the folder level (as described in the following steps) to override the **[!UICONTROL Dynamic Media Configuration]** value.
+The folder level **[!UICONTROL Dynamic Media Publish mode]** option always defaults to the value that is found in the **[!UICONTROL Publish Assets]** setting in your **[!UICONTROL Dynamic Media Configuration]**. The following steps in this topic, however, show you how to manually change this default value at the folder level (as described in the following steps) to override the **[!UICONTROL Dynamic Media Configuration]** value.
 
 Regardless of whether you rely on:
 
 * The **[!UICONTROL Publish Assets]** value set in **[!UICONTROL Dynamic Media Configuration]**
 * Or, the **[!UICONTROL Dynamic Media Publish mode]** value set in folder level properties
 
-You are still able to choose **[!UICONTROL Immediately]**, **[!UICONTROL Upon Activation]**, or **[!UICONTROL Selective Publish.]** For example, you can set the **[!UICONTROL Publish Assets]** value in your **[!UICONTROL Dynamic Media Configuration]** to **[!UICONTROL Upon Activation]**. And, you can set the **[!UICONTROL Dynamic Media Publish]** mode value at the folder level to **[!UICONTROL Selective Publish]**, conversely, and so on.
+You are still able to choose **[!UICONTROL Immediately]**, **[!UICONTROL Upon Activation]**, or **[!UICONTROL Selective Publish]**. For example, you can set the **[!UICONTROL Publish Assets]** value in your **[!UICONTROL Dynamic Media Configuration]** to **[!UICONTROL Upon Activation]**. And, you can set the **[!UICONTROL Dynamic Media Publish]** mode value at the folder level to **[!UICONTROL Selective Publish]**, conversely, and so on.
 
 After you configure selective publishing in a folder, you can do any of the following:
 
-* [Selectively publish assets to Dynamic Media or Experience Manager using Manage Publication.](#selective-publish-manage-publication)
-* [Selectively unpublish assets from Dynamic Media or Experience Manager using Manage Publication.](#selective-unpublish-manage-publication)
-* [Publishing assets to Dynamic Media or Experience Manager using Quick Publish.](#quick-publish-aem-dm)
-* [Selectively publish or unpublish assets by way of search results.](#selective-publish-unpublish-search-results)
+* [Selectively publish assets to Dynamic Media or Experience Manager using Manage Publication](#selective-publish-manage-publication).
+* [Selectively unpublish assets from Dynamic Media or Experience Manager using Manage Publication](#selective-unpublish-manage-publication).
+* [Publishing assets to Dynamic Media or Experience Manager using Quick Publish](#quick-publish-aem-dm).
+* [Selectively publish or unpublish assets by way of search results](#selective-publish-unpublish-search-results).
 
 **To configure selective publishing at the folder level in Dynamic Media**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console. On the left side, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files.]**
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console. On the left side, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files]**.
 1. Do one of the following:
-    * Edit the properties of an existing folder - In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, navigate to a folder whose properties you want to edit. Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
-    * Edit the properties of a new folder - In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, near the upper-right corner of the page, tap **[!UICONTROL Create > Folder.]** In the **[!UICONTROL Create Folder]** dialog box, enter a title (required) for the folder, then tap **[!UICONTROL Create.]** Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
+    * Edit the properties of an existing folder - In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, navigate to a folder whose properties you want to edit. Select the folder, then on the toolbar, tap **[!UICONTROL Properties]**.
+    * Edit the properties of a new folder - In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, near the upper-right corner of the page, tap **[!UICONTROL Create > Folder]**. In the **[!UICONTROL Create Folder]** dialog box, enter a title (required) for the folder, then tap **[!UICONTROL Create]**. Select the folder, then on the toolbar, tap **[!UICONTROL Properties]**.
 
 1. In the **[!UICONTROL Sync mode]** drop-down list, select one of the following:
 
     | Sync mode | Description |
     | --- | --- |
-    | **[!UICONTROL Inherited]** | No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode set in your **[!UICONTROL Dynamic Media Configuration.]** The detailed status for **[!UICONTROL Inherited]** shows by way of a tooltip. |
-    | **[!UICONTROL Sync everything in this folder subtree to Dynamic Media]** | For publishing to Dynamic Media to succeed, assets must be synced to Dynamic Media. Selecting this option includes all assets in this subtree for synchronizing to Dynamic Media. The folder-specific settings override the default setting in the **[!UICONTROL Dynamic Media Configuration.]** |
+    | **[!UICONTROL Inherited]** | No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode set in your **[!UICONTROL Dynamic Media Configuration]**. The detailed status for **[!UICONTROL Inherited]** shows by way of a tooltip. |
+    | **[!UICONTROL Sync everything in this folder subtree to Dynamic Media]** | For publishing to Dynamic Media to succeed, assets must be synced to Dynamic Media. Selecting this option includes all assets in this subtree for synchronizing to Dynamic Media. The folder-specific settings override the default setting in the **[!UICONTROL Dynamic Media Configuration]**. |
     | **[!UICONTROL Exclude everything in this folder subtree from Dynamic Media sync]** | Exclude all assets in this subtree from synchronizing to Dynamic Media. |
 
     ![Folder level selective publish](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. In the **[!UICONTROL Dynamic Media Publish mode]** drop-down list, select an option. The **[!UICONTROL Dynamic Media Publish mode]** option always defaults to the value that is set in the **[!UICONTROL Dynamic Media Configuration.]** You can, however, manually override this default **[!UICONTROL Dynamic Media Configuration]** value by using one of the following options.
+1. In the **[!UICONTROL Dynamic Media Publish mode]** drop-down list, select an option. The **[!UICONTROL Dynamic Media Publish mode]** option always defaults to the value that is set in the **[!UICONTROL Dynamic Media Configuration]**. You can, however, manually override this default **[!UICONTROL Dynamic Media Configuration]** value by using one of the following options.
 
     >[!IMPORTANT]
     >
@@ -118,15 +118,15 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
     | **[!UICONTROL Now]** | Select to publish the assets immediately. | 
     | **[!UICONTROL Later]** | Select to publish the assets on a particular date and time. |
  
-1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
+1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Manage Publication - Scope]** page, do one of the following:
     * If necessary, select one or more assets that you want to remove from publishing.
-    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media.]**
-1. Tap **[!UICONTROL OK.]**
+    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media]**.
+1. Tap **[!UICONTROL OK]**.
 
 ### Selectively unpublish assets from Dynamic Media or Experience Manager using Manage Publication {#selective-unpublish-manage-publication}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console. On the left side, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files.]**
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console. On the left side, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
     * Navigate to a folder whose assets you want to unpublish. Select the folder, then on the toolbar, tap **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
     * Navigate to a folder whose assets you want to unpublish. Open the folder, then select one or more assets. On the toolbar, tap **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
@@ -146,14 +146,14 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
 
     | Schedule | Description |
     | --- | --- |
-    | **[!UICONTROL Now]** | Select to unpublish the assets immediately. | 
+    | **[!UICONTROL Now]** | Select to unpublish the assets immediately. |
     | **[!UICONTROL Later]** | Select to unpublish the assets on a particular date and time. |
 
-1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
+1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Manage Publication - Scope]** page, do one of the following:
     * Select one or more assets that you want to remove from unpublishing.
-    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Unpublish]** or **[!UICONTROL Unpublish from Dynamic Media.]**
-1. Tap **[!UICONTROL OK.]**
+    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Unpublish]** or **[!UICONTROL Unpublish from Dynamic Media]**.
+1. Tap **[!UICONTROL OK]**.
 
 ## Publishing assets to Dynamic Media or Experience Manager using Quick Publish {#quick-publish-aem-dm}
 
@@ -163,9 +163,9 @@ You can use **[!UICONTROL Quick Publish]** for simple asset activation cases. **
 >
 >To use **[!UICONTROL Quick Publish]** to publish assets to Dynamic Media or Experience Manager, be sure **[!UICONTROL Selective Publish]** is enabled either in your **[!UICONTROL Dynamic Media Configuration]** or in the folder properties of the selected folder.
 
-**To publish assets to Dynamic Media or Experience Manager using Quick Publish**
+**To publish assets to Dynamic Media or Experience Manager using Quick Publish:**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console. On the left side of the page, tap the Navigation icon (just above the Tools icon), then on the right side of the page tap **[!UICONTROL Assets > Files.]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console. On the left side of the page, tap the Navigation icon (just above the Tools icon), then on the right side of the page tap **[!UICONTROL Assets > Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
     * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, tap **[!UICONTROL Quick Publish]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
     * Navigate to a folder whose assets you want to publish. Open the folder, then select one or more assets. On the toolbar, tap **[!UICONTROL Quick Publish]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
@@ -257,7 +257,7 @@ You can use **[!UICONTROL Timeline]** with **[!UICONTROL Card view]**, **[!UICON
 1. In Experience Manager, in the upper-left corner of the page, tap the Experience Manager logo to access the global navigation console. On the left side of the page, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]** (screenshot below shows the **[!UICONTROL List View]**), open a folder that contains assets you have published or unpublished.
 1. Select an asset so it appears with a checkmark. See screenshot below for example.
-1. Near the upper-left corner of the page, from the drop-down menu, select **[!UICONTROL Timeline.]** The **[!UICONTROL Status]** region in the left-panel shows the publish state of the selected asset.
+1. Near the upper-left corner of the page, from the drop-down menu, select **[!UICONTROL Timeline]**. The **[!UICONTROL Status]** region in the left-panel shows the publish state of the selected asset.
 When you use **[!UICONTROL List View]**, an extra column for **[!UICONTROL Dynamic Media]** publish state appears.
     * A folder that is configured to sync to Dynamic Media displays the **[!UICONTROL Dynamic Media]** column by default.
     * A folder that is *not* configured to sync to Dynamic Media does not display the Dynamic Media column.
