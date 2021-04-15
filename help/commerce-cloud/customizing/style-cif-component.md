@@ -20,7 +20,7 @@ The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a refe
 >
 > Use the [AEM Project archetype](https://github.com/adobe/aem-project-archetype) when starting your own commerce implementation.
 
-## What you will build
+## What You Will Build
 
 In this tutorial a new style will be implemented for the Product Teaser component that resembles a card. Lessons learned in the tutorial can be applied to other CIF Core Components.
 
@@ -30,7 +30,7 @@ In this tutorial a new style will be implemented for the Product Teaser componen
 
 A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md).
 
-## Clone the Venia project {#clone-venia-project}
+## Clone the Venia Project {#clone-venia-project}
 
 We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia) and then override the default styles.
 
@@ -59,7 +59,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
     ![Storefront Configured with Venia Theme](../assets/style-cif-component/venia-store-configured.png)
 
-## Client Libraries and ui.frontend module {#introduction-to-client-libraries}
+## Client Libraries and ui.frontend Module {#introduction-to-client-libraries}
 
 The CSS and JavaScript responsible for rendering the theme/styles of the storefront is managed in AEM by a [Client library](/help/implementing/developing/introduction/clientlibs.md) or clientlibs for short. Client libraries provide a mechanism to organize CSS and Javascript in a project's code and then deliver onto the page.
 
@@ -247,7 +247,7 @@ Next verify the inclusion of the client libraries on the page.
 
     Notice `venia/clientlibs/clientlib-site.min.css` and `venia/clientlibs/clientlib-site.min.js`. These are the compiled CSS and Javascript files derived from the `ui.frontend` module.
 
-## Client Library inclusion with Page Templates {#client-library-inclusion-pagetemplates}
+## Client Library Inclusion with Page Templates {#client-library-inclusion-pagetemplates}
 
 There are several options for how to include a client-side library. Next inspect how the generated project includes the `clientlib-site` libraries via [Page Templates](/help/implementing/developing/components/templates.md).
 
@@ -280,7 +280,7 @@ There are several options for how to include a client-side library. Next inspect
 
     The advantage of using Templates and Page policies to manage the inclusion of client libraries is that you can change the policy per template. For example, perhaps you are managing two different brands within the same AEM instance. Each brand will have its own unique style or *theme* but the base libraries and code will be the same. Another example, if you had a larger client library that you only wanted to appear on certain pages, you could make a unique page policy just for that template.
 
-## Local webpack development {#local-webpack-development}
+## Local Webpack Development {#local-webpack-development}
 
 In the previous exercise, an update was made to a Sass files in the `ui.frontend` module and then after performing a Maven build the changes are deployed to AEM. Next we will look at leveraging a webpack-dev-server to rapidly develop the front-end styles.
 
