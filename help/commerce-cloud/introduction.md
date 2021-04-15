@@ -10,7 +10,7 @@ With Adobe Experience Manager content and commerce, brands can scale and innovat
 
 ## How Content and Commerce helps customers to be successful
 
-With ever-increasing customer expectations for online commerce experiences, brands are pressured to deliver differentiated experiences and more content faster. However, implementing a content managementplatform often requires heavy time and budget investments in developing foundational elements, such as custom components and authoring tools, and accrues costs in maintenance and upgrades.Experience Manager Sites offers Content and Commerce as an add-on module for Experience Manager as a Cloud Service that provides out-of-the-box commerce core components, authoring tools, and a reference storefront to accelerate go-live, enable seamless collaboration across teams, and drive conversion.
+With ever-increasing customer expectations for online commerce experiences, brands are pressured to deliver differentiated experiences and more content faster. However, implementing a content management platform often requires heavy time and budget investments in developing foundational elements, such as custom components and authoring tools, and accrues costs in maintenance and upgrades. Experience Manager Sites offers Content and Commerce as an add-on module for Experience Manager as a Cloud Service that provides out-of-the-box commerce core components, authoring tools, and a reference storefront to accelerate go-live, enable seamless collaboration across teams, and drive conversion.
 
 Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Experience Cloud, as well as any commerce engine of choice. With Experience Manager Content and Commerce, brands can:
 
@@ -28,9 +28,9 @@ As these projects have to deal with the complexity of integrating a commerce sol
 * Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
 * Building complex and personalized shopping journeys for various heads
 * Ability to quickly adapt and innovate on the back- and front-end
-* Running a scaleable and stable E2E infrastructure that is built for peak performance (Flash sale, Black Friday, ...). This includes unified search and cache management.
+* Running a scalable and stable E2E infrastructure that is built for peak performance (Flash sale, Black Friday, ...). This includes unified search and cache management.
 
-This complexity opens up the door to potential point of failures, increased TCO, delays, and reduced value realization. These reasons have led to the development of the Commerce Intgration Framework (CIF) which is an add-on for the Experience Manager. CIF extends the Experience Manager with commmerce capabilities and standardizes the integration with a commerce engine. The result is a future-proof, stable and scalable solution with lower TCO. It unlocks technical and business innovation with agile tooling and seamlessly integrated features to build compelling commerce experiences.
+This complexity opens up the door to potential point of failures, increased TCO, delays, and reduced value realization. These reasons have led to the development of the Commerce Integration Framework (CIF) which is an add-on for the Experience Manager. CIF extends the Experience Manager with commerce capabilities and standardizes the integration with a commerce engine. The result is a future-proof, stable and scalable solution with lower TCO. It unlocks technical and business innovation with agile tooling and seamlessly integrated features to build compelling commerce experiences.
 
 ![CIF Elements](./assets/CIF/CIF_Overview.png)
 

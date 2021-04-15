@@ -55,7 +55,7 @@ To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
 
 1. Get the Adobe I/O CLI with the Cloud Manager plugin
 
-    Check the [Adobe Cloud Manager documenation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) on how to download, setup and use the [Adobe I/O CLI](https://github.com/adobe/aio-cli) with the [Cloud Manager CLI plugin](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+    Check the [Adobe Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) on how to download, setup and use the [Adobe I/O CLI](https://github.com/adobe/aio-cli) with the [Cloud Manager CLI plugin](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Authenticate the Adobe I/O CLI with the AEM as a Cloud Service program
 

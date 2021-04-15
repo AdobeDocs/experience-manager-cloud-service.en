@@ -1,25 +1,25 @@
 ---
 title: Notable changes of the Commerce Integration Framework (CIF) add-on
-description: Notable changes of the Commerce Intgration Framework (CIF) compared to old CIF versions.
+description: Notable changes of the Commerce Integration Framework (CIF) compared to old CIF versions.
 exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
 ---
 # Notable changes to the Commerce Integration Framework (CIF) add-on{#notable-changes}
 
 Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. To learn more about these capabilities, please follow the link for [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-This document highlights the important differences between the  Commerce Integration Framework (CIF) add-on and old CIF versions, mainly known as CIF Classic (Quickstart) an CIF Open-source.
+This document highlights the important differences between the  Commerce Integration Framework (CIF) add-on and old CIF versions, mainly known as CIF Classic (Quickstart) a CIF Open-source.
 
 ## Installation & Updates
 
-The AEM CIF add-on gets installed via Cloud Manager. Installation requires a CIF credit except for sandboxes where CIF can be installed without credits. Credits are received autommatically via the provisioning of the CIF add-on in your AEM contract.
+The AEM CIF add-on gets installed via Cloud Manager. Installation requires a CIF credit except for sandboxes where CIF can be installed without credits. Credits are received automatically via the provisioning of the CIF add-on in your AEM contract.
 
 The add-on gets automatically updates as part of the regular AEM as a Cloud Service updates.
 
 **Previous CIF versions**
 
 * CIF Classic: No installation needed, CIF was part of the Quickstart. CIF updates were part of regular AEM or service pack updates
-* CIF Open-source for AEM On-premises: Installation via GitHub. Updates were part of manual update / mainteance work.
-* CIF Open-source for AEM Adobe Managed Services: Installation via Customer Success Manager. Updates were part of manual update / mainteance work.
+* CIF Open-source for AEM On-premises: Installation via GitHub. Updates were part of manual update / maintenance work.
+* CIF Open-source for AEM Adobe Managed Services: Installation via Customer Success Manager. Updates were part of manual update / maintenance work.
 
 ## Endpoint configuration
 

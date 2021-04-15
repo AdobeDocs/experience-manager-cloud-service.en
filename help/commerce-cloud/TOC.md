@@ -19,7 +19,7 @@ feature-set: Experience Manager Sites
   + [3rd Party Commerce Solution](architecture/third-party.md)
 + AEM Storefront {#storefront}
   + [Getting started](getting-started.md)
-  + Administrating {#administrating}
+  + Administering {#administering}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
     + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
     + [Caching Options](configuring/caching.md)
