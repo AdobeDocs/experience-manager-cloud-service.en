@@ -28,6 +28,22 @@ Server-side APIs calls are implemented using the build-in, generic [GraphQL clie
 
 For the client-side components, which are build using [React](https://reactjs.org/), the [Apollo Client](https://www.apollographql.com/docs/react/) is used.
 
+## Enable features that require authentication (Optional) {#staging}
+
+>[!NOTE]
+>
+>This feature is only available with Magento Enterprise Edition or Magento Cloud.
+
+1. Login to Magento and create an integration token. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details. Make sure the integration token has *only* access to `Content -> Staging` resources. Copy the `Access Token` value.
+
+1. Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
+
+    ```bash
+    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
+    ```
+
+    Please see [Connecting AEM Commerce with Magento](#magento) on how to configure the Adobe I/O CLI for Cloud Manager.
+
 ## AEM CIF Core Component Architecture {#cif-core-components}
 
 ![AEM CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
