@@ -53,7 +53,7 @@ After the endpoint (and, optionally, the token) is set, the endpoint will be dis
 
 ![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 2) Via Adobe I/O CLI
+### 2) Via Adobe I/O CLI  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
