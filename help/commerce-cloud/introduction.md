@@ -8,7 +8,7 @@ exl-id: 74e832f9-f8ff-4901-b4c2-6a2862c51411
 
 With Adobe Experience Manager content and commerce, brands can scale and innovate faster to differentiate commerce experiences and capture accelerating online spend. AEM Content and Commerce combines the immersive, omnichannel, and personalized experiences in Experience Manager with any number of commerce solutions to bring differentiated experiences to all parts of the shopping journey, reducing time to value and driving higher conversion.
 
-## How Content and Commerce helps customers to be successful
+## How Content and Commerce Helps Customers Being Successful
 
 With ever-increasing customer expectations for online commerce experiences, brands are pressured to deliver differentiated experiences and more content faster. However, implementing a content management platform often requires heavy time and budget investments in developing foundational elements, such as custom components and authoring tools, and accrues costs in maintenance and upgrades. Experience Manager Sites offers Content and Commerce as an add-on module for Experience Manager as a Cloud Service that provides out-of-the-box commerce core components, authoring tools, and a reference storefront to accelerate go-live, enable seamless collaboration across teams, and drive conversion.
 
@@ -20,7 +20,7 @@ Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Exper
 * Enrich and differentiate experiences for customers
 * Streamline authoring with commerce data access
 
-## Introducing of AEM Commerce Integration Framework (CIF) {#cif-intro}
+## Introducing AEM Commerce Integration Framework (CIF) {#cif-intro}
 
 As these projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-cases and ecosystem. It usually touches various places and comes in many different flavors:
 
@@ -34,7 +34,7 @@ This complexity opens up the door to potential point of failures, increased TCO,
 
 ![CIF Elements](./assets/CIF/CIF_Overview.png)
 
-## CIF successfully supporting customers since 2013
+## CIF Successfully Supporting Customers since 2013
 
 With over 200 customers, CIF has established itself as a successful ingredient for a successful content & commerce project. This provides value for IT and business today and in the future. Recent customer projects describe CIF as a “Great accelerator and a huge time saver with a lot of value”.
 
@@ -60,13 +60,13 @@ CIF is built for continuous innovation with an always up-to-date add-on, allowin
 
 Connect your ecosystem (e.g. commerce solution) with the Experience Cloud using  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), a micro-service based server-less PaaS, and [CIF's reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
-## When should a project use CIF?
+## When Should a Project Use CIF?
 
 The following decision tree will guide you based on the use-cases if CIF is recommended for a project. A detailed evaluation helps you to determine what parts should be used.
 
 ![CIF Elements](./assets/CIF/CIF_Decision_Matrix.png)
 
-## Proven patterns and best practices
+## Proven Patterns and Best Practices
 
 CIF supports customers with standardized integration patterns based on best practices. This helps customers to be successful today and is flexible to grow with the customer and adapt to future requirements:
 

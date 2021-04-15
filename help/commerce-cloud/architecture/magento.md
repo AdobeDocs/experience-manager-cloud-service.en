@@ -4,7 +4,7 @@ description: AEM and Magento are seamlessly integrated using the Commerce Integr
 thumbnail: aem-magento-architecture.jpg
 exl-id: 1cdfda88-a728-432f-b24a-f81347572bcf
 ---
-# AEM and Magento Integration using Commerce Integration Framework {#aem-magento-framework}
+# AEM and Magento Integration Using Commerce Integration Framework {#aem-magento-framework}
 
 AEM and Magento are seamlessly integrated using the Commerce Integration Framework (CIF). CIF enables AEM to access a Magento instance and communicate with Magento via GraphQL. It also allows AEM Authors to use Product and Category Pickers and the Product Console to browse through product and category data fetched on-demand from Magento. In addition, CIF provides an out-of-the-box storefront that can accelerate commerce projects.
 
@@ -28,7 +28,7 @@ Server-side APIs calls are implemented using the build-in, generic [GraphQL clie
 
 For the client-side components, which are build using [React](https://reactjs.org/), the [Apollo Client](https://www.apollographql.com/docs/react/) is used.
 
-## Enable features that require authentication (Optional) {#staging}
+## Enable Features that Require Authentication (Optional) {#staging}
 
 >[!NOTE]
 >

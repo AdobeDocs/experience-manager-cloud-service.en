@@ -27,7 +27,7 @@ The CIF Add-On is provided as a Sling Feature archive. The zip file available on
 
 **New to AEM as a Cloud Service?** Check out [a more detailed guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-### Required software
+### Required Software
 
 The following should be installed locally:
 
@@ -46,7 +46,7 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
 >
 >Make sure you always use the latest CIF Add-On version.
 
-### Local setup
+### Local Setup
 
 For local CIF Add-on development using the AEM as a Cloud Service SDK following steps:
 

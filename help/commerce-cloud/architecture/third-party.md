@@ -18,6 +18,6 @@ The main difference between the integration architecure for AEM - Magento and AE
 
 The purpose of this integration layer is to map a non-Magento or a 3rd-party's APIs against Adobe Commerce APIs (Magento GraphQL APIs). This mapping allows the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) and CIF authoring tools to retrieve data from the non-Magento solution. With this approach, the integration layer encapsulates the integration logic and creates a separation of concern between AEM and the 3rd party solution. This allows the usage of the CIF elements in an agnostic way with various 3rd party solutions. The advantages of using CIF elements in your project have been described in the [Introduction](/help/commerce-cloud/introduction.md).
 
-## Develop an Integration {#develop-integration}
+## Developing an Integration {#develop-integration}
 
 To help you get started on building the required integration layer to integrate a non-Magento/3rd party solution with AEM, we have created a [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) to demonstrate this. This reference can be used as a starting point in your project.

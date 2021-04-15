@@ -2,7 +2,7 @@
 title: Migration to the AEM Commerce Integration Framework (CIF) add-on
 description: How to migrate to the AEM Commerce Integration Framework (CIF) add-on from an old version
 ---
-# Migration to the AEM Commerce Integration Framework (CIF) add-on {#cif-migration}
+# Migration to the AEM Commerce Integration Framework (CIF) Add-on {#cif-migration}
 
 Customers moving from an AEM on-premise or Managed Services installation to AEM as a Cloud Service need to do a few minor adjustments on the AEM project.
 

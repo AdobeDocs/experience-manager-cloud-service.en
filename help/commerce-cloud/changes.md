@@ -3,7 +3,7 @@ title: Notable changes of the Commerce Integration Framework (CIF) add-on
 description: Notable changes of the Commerce Integration Framework (CIF) compared to old CIF versions.
 exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
 ---
-# Notable changes to the Commerce Integration Framework (CIF) add-on{#notable-changes}
+# Notable Changes to the Commerce Integration Framework (CIF) Add-on{#notable-changes}
 
 Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. To learn more about these capabilities, please follow the link for [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
@@ -21,7 +21,7 @@ The add-on gets automatically updates as part of the regular AEM as a Cloud Serv
 * CIF Open-source for AEM On-premises: Installation via GitHub. Updates were part of manual update / maintenance work.
 * CIF Open-source for AEM Adobe Managed Services: Installation via Customer Success Manager. Updates were part of manual update / maintenance work.
 
-## Endpoint configuration
+## Endpoint Configuration
 
 The endpoint gets configured and updated either via Cloud Manager UI or its CLI.
 
@@ -30,7 +30,7 @@ The endpoint gets configured and updated either via Cloud Manager UI or its CLI.
 * CIF Classic: Via OSGi configuration in AEM
 * CIF Open-source: Via CIF Configuration Browser
 
-## Deployment of CIF Venia project
+## Deployment of CIF Venia Project
 
 Project available in [Cloud Manager Git Repository](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) and deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html)
 
@@ -39,7 +39,7 @@ Project available in [Cloud Manager Git Repository](https://docs.adobe.com/conte
 * CIF Classic: Via AEM package install
 * CIF Open-source: Via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 
-## Product catalog data
+## Product Catalog Data
 
 Product catalog data get requested on-demand via real-time calls to an external endpoint that support the required GraphQL APIs. These APIs support access to live or staged data at any given date. No replication needed.
 
