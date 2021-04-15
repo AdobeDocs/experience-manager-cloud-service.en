@@ -38,10 +38,9 @@ The product picker field supports the following optional properties:
 
 Additionally, standard diaglog field properties like `name`, `fieldLabel` or `fieldDescription` are supported as well.
 
-The `cifproductfield` component requires the cif.shell.picker clientlib. To add a clientlib to a dialog, you can use the extraClientlibs property. 
+The `cifproductfield` component requires the cif.shell.picker clientlib. To add a clientlib to a dialog, you can use the extraClientlibs property.
 
 A full working example of the `cifproductfield` can be found in the [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. See also [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) of the AEM Core Components documentation.
-
 
 ## Category Picker {#category-picker}
 
