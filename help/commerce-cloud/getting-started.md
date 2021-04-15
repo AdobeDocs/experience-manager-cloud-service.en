@@ -92,7 +92,7 @@ This configuration can be adjusted for the project via the CIF Cloud Service con
 The following properties can be configured:
 
 - GraphQL Client - select the configured GraphQL client for commerce backend communication. This should typically stay at default.
-- Store View - the Magento store view identifier, if empty the default store view will be used.
+- Store View - the (Magento) store view identifier. If empty, the default store view will be used.
 - GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
     >[!NOTE]
     >
@@ -100,7 +100,7 @@ The following properties can be configured:
 - Enable Catalog UID Support - enable support for UID instead of ID in the commerce backend GraphQL calls.
     >[!NOTE]
     >
-    > Support for UIDs got introduced in Magento 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
+    > Support for UIDs got introduced in Adobe Commerce (Magento) 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 - Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
 
 The configuration shown above is for reference. Projects should provide thier own configurations.
