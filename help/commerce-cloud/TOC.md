@@ -9,9 +9,9 @@ feature-set: Experience Manager Sites
 # AEM Content and Commerce {#content-and-commerce}
 
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-+ [Notable Changes to AEM Content and Commerce in AEM Cloud Service](changes.md)
-+ [CIF add-on](cif.md)
-+ [Migrating to CIF add-on](migration.md)
++ [Notable Changes to AEM Content and Commerce as a Cloud Service](changes.md)
++ [Introduction and overview](cif.md)
++ [Migration](migration.md)
 + Authoring {#authoring}
   + [Multi-Template Usage](configuring/multi-template-usage.md)
 + Integrations {#integrations}
@@ -19,7 +19,7 @@ feature-set: Experience Manager Sites
   + [3rd Party Commerce Solution](architecture/third-party.md)
 + AEM Storefront {#storefront}
   + [Getting started](getting-started.md)
-  + Configuring {#configuring}
+  + Administrating {#administrating}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
     + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
     + [Caching Options](configuring/caching.md)
