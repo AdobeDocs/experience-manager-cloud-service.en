@@ -11,21 +11,21 @@ feature-set: Experience Manager Sites
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
 + [Notable Changes to AEM Content and Commerce in AEM Cloud Service](changes.md)
 + [CIF add-on](cif.md)
-+ [Migration to CIF add-on](migration.md)
-+ Content author
++ [Migrating to CIF add-on](migration.md)
++ Authoring {#authoring}
   + [Multi-Template Usage](configuring/multi-template-usage.md)
 + Integrations {#integrations}
   + [Magento](architecture/magento.md)
   + [3rd Party Commerce Solution](architecture/third-party.md)
-+ AEM storefront
++ AEM Storefront {#storefront}
   + [Getting started](getting-started.md)
-  + Configuration {#configuration}
+  + Configuring {#configuring}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
     + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
     + [Caching Options](configuring/caching.md)
-  + Development {#development}
-    + [Develop with AEM Cloud Service SDK](develop.md)
+  + Developing {#developing}
+    + [Developing with AEM Cloud Service SDK](develop.md)
     + [Styling CIF Components](customizing/style-cif-component.md)
     + [Customizing CIF Components](customizing/customize-cif-components.md)
-    + [Use CIF catalog pickers](customizing/use-cif-pickers.md)
+    + [Using CIF catalog pickers](customizing/use-cif-pickers.md)
 + [FAQ](faq.md)
