@@ -26,15 +26,13 @@ At its simplest, AEM consists of an author instance and a [publish instance](#pu
 
 Content begins on the author instance. This is where you content authors create their content. The author environment offers various tools for authors to create, organize, and reuse their content.
 
-Refer to the document [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
-for more details on the author-publish setup of AEM.
+Refer to the document [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md) for more details on the author-publish setup of AEM.
 
 ### Publish Instance {#publish}
 
 Once content is created in the author instance, it must be published to be available to other services to consume. A publish instance contains all content that has been published.
 
-Refer to the document [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
-for more details on the author-publish setup of AEM.
+Refer to the document [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md) for more details on the author-publish setup of AEM.
 
 ### Replication {#replication}
 
@@ -48,7 +46,7 @@ All content is stored in a JCR-compliant repository. For the repository, everyth
 
 Content authors do not need to understand how their content is stored, but developers may need to access the repository directly on occasion. There are a number of ways to access information from the repository including REST and GraphQL APIs among others.
 
-See the document [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md) for more details on the JCR content repository foundation of AEM. Note that this document is very technical and covers all areas of AEM development, many of which are not necessary for headless projects.
+See the document [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md) for more details on the JCR content repository foundation of AEM. Note that this document is very technical and also covers all areas of AEM development, many of which are not necessary for headless projects.
 
 ### Packages {#packages}
 
@@ -68,7 +66,7 @@ AEM Headless builds off of this technical foundation by offering powerful tools 
 
 ## AEM Headless Basics {#aem-headless-basics}
 
-The headless capabilities of AEM are based on a few key features. These will be explained in detail in later parts of the journey. It is important now only to know what they do and what they are called.
+The headless capabilities of AEM are based on a few key features. These will be explained in detail in later parts of the journey. It is important now only to know the basics of what they do and what they are called.
 
 >[!TIP]
 >
@@ -157,7 +155,7 @@ For any successful project, it is important to clearly define not only the requi
 
 It is very important to have a clearly defined scope for the project. Scope informs acceptance criteria and allows you to establish a definition of done.
 
-The first question you need to ask yourself is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you’ve built with your own development tools not in conjunction with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM top level documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
+The first question you need to ask yourself is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you’ve built with your own development tools not in conjunction with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
 
 ### Roles and Responsibilities {#roles-responsibilities}
 
@@ -191,7 +189,7 @@ Create a plan on what content localization you will need.
 * Do you just need different languages or also language to adopt to regional specifics?
 * Do you need rich media content like images or videos to be different for different locales?
 
-Be clear about you content update workflow. What is the approval process that the system needs to support?
+Be clear about you content update workflow. What is the approval process that the system needs to support? Might [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) be leveraged to automate this process?
 
 Note that your [content hierarchy](#content-hierarchy) can be leveraged to make localization easier.
 
@@ -201,15 +199,17 @@ See the document [Multi Site Manager and Translation](/help/sites-cloud/administ
 
 Folder hierarchy can address two major concerns with regards to content management:
 
-* Localization - AEM manages localization of content by maintaining copies of content in locale-specific folders.
+* [Localization](#localization) - AEM manages localization of content by maintaining copies of content in locale-specific folders.
 * Organization - Folders are used to define a content hierarchy required to support localization needs as well as logically manage Content Fragments.
 
-AEM allows for a very flexible content structure and any hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that rely on the content path. Therefore a well-defined hierarchy that is set out clearly in advance, can be extremely helpful to your content authors.
+AEM allows for a very flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path.](#developer) Therefore a well-defined hierarchy that is clearly set out in advance, can be extremely helpful to your content authors.
 
 Folders can also be restricted to only allow certain types of content (based on Content Fragment Models). It is generally recommended to always explicitly specify which models are allowed for all folders in the hierarchy. Specifying allowed content for a given folder:
 
 * Prevents content authors from authoring content that do not belong in the folder.
 * Optimizes the content creation process by filtering the types of content allowed in the folder during creation to only show valid types of content.
+
+More information about allowing Content Fragment Models per folder can be found in the document [Content Fragment Models.](/help/assets/content-fragments/content-fragments-models.md)
 
 By creating an appropriate content structure, it becomes easier to coordinate headless content authoring across channels in order to maximize content reuse. Leveraging content across multiple channels will greatly improve content production efficiency and change management.
 
@@ -244,10 +244,10 @@ GraphQL serves as the "glue" between AEM and the consumers of headless content. 
 
 Developers should keep in mind a few basic recommendations as they plan their queries:
 
-* Queries should never rely on a fixed path (`ByPath`) to retrieve Content Fragments.
+* Queries should not rely on a fixed path (`ByPath`) to retrieve Content Fragments.
   * [Content authors have complete control on content fragment hierarchy](#content-hierarchy) and could make changes that would break such a query.
   * Queries should instead opt for content fragment model references with dynamic query parameters to filter the results to generate the desired payload.
-* For best query performance, always use persisted queries in AEM. These are discussed later in the journey.
+* For best query performance, always use [persisted queries](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) in AEM. These are discussed later in the journey.
 * GraphQL is designed to be declarative following the motto ["Ask for exactly what you need, and get exactly that."](https://graphql.org) This means that when creating GraphQL queries, always avoid `select *`-type queries that you might create in a relational database.
 
 ### Performance Requirements {#performance-requirements}
