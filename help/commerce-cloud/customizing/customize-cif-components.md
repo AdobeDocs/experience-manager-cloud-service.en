@@ -17,7 +17,7 @@ exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 
 The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial you will further extend the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to display a custom attribute from Magento. You will also learn more about the GraphQL integration between AEM and Magento and the extension hooks provided by the CIF Core Components.
 
-> [!TIP]
+>[!TIP]
 >
 > Use the [AEM Project archetype](https://github.com/adobe/aem-project-archetype) when starting your own commerce implementation.
 
@@ -37,7 +37,7 @@ You will also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/gra
 
 We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia) and then override the default styles.
 
-> [!NOTE]
+>[!NOTE]
 >
 > **Feel free to use an existing project** (based on the AEM Project Archetype with CIF included) and skip this section.
 
@@ -76,7 +76,7 @@ The Product Teaser Component will be extended throughout this tutorial. As a fir
 
    ![Drag + Drop Product Teaser](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
-   > [!NOTE]
+   >[!NOTE]
    >
    > Note, you can also configure the displayed product by configuring the component using the dialog (clicking the _wrench_ icon).
 
@@ -88,7 +88,7 @@ The Product Teaser Component will be extended throughout this tutorial. As a fir
 
 The products and product data displayed in AEM are stored in Magento. Next add a new attribute for **Eco Friendly** as part of the product attribute set by using the Magento UI.
 
-> [!TIP]
+>[!TIP]
 >
 > Already have a custom **Yes/No** attribute as part of your product attribute set? Feel free to use it and skip this section.
 
@@ -117,7 +117,7 @@ The products and product data displayed in AEM are stored in Magento. Next add a
 
    **Save** the changes to the product.
 
-   > [!TIP]
+   >[!TIP]
    >
    > More details about managing [Product Attributes can be found in the Magento user guide](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
@@ -126,7 +126,7 @@ The products and product data displayed in AEM are stored in Magento. Next add a
 
    ![Refresh Configuration Cache Type](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
-   > [!TIP]
+   >[!TIP]
    >
    > More details about [Cache Management can be found in the Magento user guide](https://docs.magento.com/user-guide/system/cache-management.html).
 
@@ -175,7 +175,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    Note that the value of **Yes** is an integer of **1**. This will be useful when we write the GraphQL query in Java.
 
-   > [!TIP]
+   >[!TIP]
    >
    > More detailed documentation about [Magento GraphQL can be found here](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
@@ -285,7 +285,7 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
 
    In the above code the`addCustomSimpleField` is used to retrieve the `eco_friendly` attribute. This illustrates how you can query for any custom attributes that are part of the Magento schema.
 
-   > [!NOTE]
+   >[!NOTE]
    >
    > The `createdAt()` method has actually been implemented as part of the [Product Interface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). Most of the commonly found schema attributes have been implemented, so only use the `addCustomSimpleField` for truly custom attributes.
 
@@ -422,7 +422,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
    ...
    ```
 
-   > [!CAUTION]
+   >[!CAUTION]
    >
    > You also may see some stack traces if the product used in the teaser does not have the `eco_friendly` attribute as part of it's attribute set.
 
@@ -463,7 +463,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
    }
    ```
 
-   > [!NOTE]
+   >[!NOTE]
    >
    > Check out [Styling CIF Core Components](./style-cif-component.md) for more details around front-end workflows.
 
