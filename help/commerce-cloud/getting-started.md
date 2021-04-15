@@ -87,7 +87,7 @@ This configuration can be adjusted for the project via the CIF Cloud Service con
 
 3. Open the configuration properties via the action bar
 
-![CIF Cloud Services Configuration](../assets/cif-cloud-service-config.png)
+![CIF Cloud Services Configuration](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
 The following properties can be configured:
 
