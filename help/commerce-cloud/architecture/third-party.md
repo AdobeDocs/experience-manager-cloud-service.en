@@ -6,18 +6,34 @@ exl-id: 42dd8922-540d-4a93-9e45-b5e83dc11e16
 ---
 # AEM and 3rd Party Commerce Integration using Commerce Integration Framework {#aem-third-party}
 
-Enterprise businesses may require additional 3rd party commerce solutions to power their storefront. The Commerce Integration Framework (CIF) can be used in such integration scenarios where in addition to Magento, a 3rd party commerce solution also needs to be integrated with AEM. CIF provides elements such as an accelerator reference storefront, AEM CIF Core Components and authoring tools that work with Magento out-of-the-box. To integrate AEM and a 3rd party commerce solution and re-use these CIF elements, some additional development is needed.
+The integration of non-Adobe Commerce solution is a common scenario for CIF. If a 3rd party solution has different APIs and schemas, an integration layer is required.
 
 ## Architecture {#architecture}
 
 The overall architecture is as follows:
 
-![AEM non-Magento/3rd Party Architecture Overview](/help/commerce-cloud/assets/AEM_nonMagento_Architecture.JPG)
+![AEM non-Magento/3rd Party Architecture Overview](../assets//AEM_nonMagento_Architecture.png)
 
-The main difference between the integration architecure for AEM - Magento and AEM - 3rd party commerce is the addition of an integration and data transformation layer as shown in the image above. The integration layer needs to be hosted on the Adobe I/O Runtime platform which is Adobe's serverless platform. You can learn more about Adobe I/O Runtime [here](https://www.adobe.io/apis/experienceplatform/runtime.html).
+The purpose of this integration layer is to map 3rd-party APIs and schemas against the supported Adobe Commerce GraphQL APIs and schemas. It can also be used to integrate multiple services and solutions.
 
-The purpose of this integration layer is to map a non-Magento or a 3rd-party's APIs against Adobe Commerce APIs (Magento GraphQL APIs). This mapping allows the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) and CIF authoring tools to retrieve data from the non-Magento solution. With this approach, the integration layer encapsulates the integration logic and creates a separation of concern between AEM and the 3rd party solution. This allows the usage of the CIF elements in an agnostic way with various 3rd party solutions. The advantages of using CIF elements in your project have been described in the [Introduction](/help/commerce-cloud/introduction.md).
+There is no need to implement the complete GraphQL APIs, just the APIs to enable the desired use-cases.
+
+## Backend use-cases
+
+CIF extends the Experience Manager with real-time product catalog access and product experience management tools. This seamless integration enables authors to access commerce data using embedded UIs whenever needed without leaving the content context.
+
+The integration of product catalog APIs are required to unlock these use-cases.
+
+## Frontend use-cases
+
+[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) retrieve and exchage data via the CIF supported Adobe Commerce APIs. To re-use components, the respective APIs need to be implemented.
+
+The recommendation for performance critical client-side components is to communicate directly with the 3rd party solution to avoid latency.
 
 ## Developing an Integration {#develop-integration}
 
-To help you get started on building the required integration layer to integrate a non-Magento/3rd party solution with AEM, we have created a [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) to demonstrate this. This reference can be used as a starting point in your project.
+We recommend to use [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) for the integration layer. It is included in the CIF add-on for 3rd parties. As it works with a microservice-like approach, it is suited well to integrate easily multiple solutions.
+
+The [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) is a great starting point to build the integration to your commerce solution. Although it supports GraphQL, it can also be integrated with any other type of API such as REST.
+
+This integration layer is not required if a 3rd party layer is available (e.g. Mulesoft) or the integration gets build on top of the 3rd party solution.
