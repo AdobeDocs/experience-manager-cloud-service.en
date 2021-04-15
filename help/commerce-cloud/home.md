@@ -9,7 +9,9 @@ This page lists the self-help resources regarding AEM Content and Commerce.
 
 ## Key Content and Commerce Articles {#key-articles}
 
-* [Introduction of Commerce Integration Framework (CIF)](introduction.md)
+* [Introduction of AEM Content and Commerce](introduction.md)
+* [Getting started with AEM Content and Commerce](/help/commerce-cloud/getting-started.md)
+* [Developing AEM Content and Commerce](/help/commerce-cloud/develop.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
