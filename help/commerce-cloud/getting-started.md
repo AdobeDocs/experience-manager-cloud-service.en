@@ -29,7 +29,7 @@ The second step is self-service for each AEM as a Cloud Service environment. The
 ## Connecting AEM with a commerce solution {#magento}
 
 To connect the CIF add-on & the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) with a commerce solution, you need to provide the  GraphQL endpoint URL via a Cloud Manager environment variable. The variable name is `COMMERCE_ENDPOINT`. A secure connection via HTTPS must be configured.
-A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided in order to use additional CIF features that require authentication. 
+A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided in order to use additional CIF features that require authentication.
 
 There are two options to configure the endpoint:
 
@@ -42,7 +42,7 @@ This can be done using a dialog on the Environment Details page. When viewing th
 Clicking this button opens a dialog:
 
 ![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
-   
+
 After the endpoint (and, optionally, the token) is set, the endpoint will be displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
 
 ![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cmui-done.png)
@@ -74,23 +74,3 @@ To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
 >You can list all Cloud Manager variables using the following command to double-check: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
 With this, you are ready to use AEM Commerce as a Cloud Service and can deploy your project via Cloud Manager.
-
-## Enable features that require authentication (Optional) {#staging}
-
->[!NOTE]
->
->This feature is only available with Magento Enterprise Edition or Magento Cloud.
-
-1. Login to Magento and create an integration token. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details. Make sure the integration token has *only* access to `Content -> Staging` resources. Copy the `Access Token` value.
-
-1. Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
-
-    ```bash
-    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
-    ```
-
-    Please see [Connecting AEM Commerce with Magento](#magento) on how to configure the Adobe I/O CLI for Cloud Manager.
-
-## 3rd party commerce integrations {#integrations}
-
-For 3rd party commerce integrations, an [API mapping layer](architecture/third-party.md) is needed to connect AEM Commerce as a Cloud Service and CIF Core Components with your commerce system. This API mapping layer is typically deployed on Adobe I/O Runtime. Contact your sales representative for available integrations and access to Adobe I/O Runtime.
