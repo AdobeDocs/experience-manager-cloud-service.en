@@ -83,7 +83,7 @@ With this, you are ready to use AEM Commerce as a Cloud Service and can deploy y
 
 ## Configuring stores and catalogs {#catalog}
 
-The CIF add-on can and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) be used on multiple AEM site structures connected to different Magento stores / store views. By default, the CIF add-on is deployed with a default config connecting to the Magento default store and catalog.
+The CIF add-on and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be used on multiple AEM site structures connected to different commerce stores (or store views, etc) .By default, the CIF add-on is deployed with a default config connecting to Adobe Commerce's default store and catalog (Magento).
 
 This configuration can be adjusted for the project via the CIF Cloud Service config following these steps:
 
@@ -98,7 +98,7 @@ This configuration can be adjusted for the project via the CIF Cloud Service con
 The following properties can be configured:
 
 - GraphQL Client - select the configured GraphQL client for commerce backend communication. This should typically stay at default.
-- Store View - the Magento store view identifier, if empty the default store view will be used.
+- Store View - the (Magento) store view identifier. If empty, the default store view will be used.
 - GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
     >[!NOTE]
     >
@@ -106,7 +106,7 @@ The following properties can be configured:
 - Enable Catalog UID Support - enable support for UID instead of ID in the commerce backend GraphQL calls.
     >[!NOTE]
     >
-    > Support for UIDs got introduced in Magento 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
+    > Support for UIDs got introduced in Adobe Commerce (Magento) 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 - Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
 
 The configuration shown above is for reference. Projects should provide thier own configurations.
