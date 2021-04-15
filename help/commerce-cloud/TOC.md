@@ -10,7 +10,7 @@ feature-set: Experience Manager Sites
 
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
 + [Notable Changes to AEM Content and Commerce as a Cloud Service](changes.md)
-+ [Introduction and overview](cif.md)
++ [Introduction and overview](introduction.md)
 + [Migration](migration.md)
 + Authoring {#authoring}
   + [Multi-Template Usage](configuring/multi-template-usage.md)
