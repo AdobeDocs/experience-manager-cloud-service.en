@@ -27,16 +27,16 @@ To use the product picker in a project component a developer must add `commerce/
     selectionId="sku"/>
 ```
 
-The product field allows to navigation to the product a user want to select via the different views. By default the product field will return the ID of the product, but this can be configured using the `selectionId` attribute.
+The product field allows to navigation to the product a user want to select via the different views. By default the product field returns the ID of the product, but it can be configured using the `selectionId` attribute.
 
 The product picker field supports the following optional properties:
 
 - selectionId (id, uid, sku, slug, path, combinedSku) - allows to choose the product attribute to be returned by the picker (default = id). Using sku returns the sku of the selected product, while using combinedSku returns a string like base#variant with the skus of the base product and the selected variant, or a single sku if a base product is selected.
-- filter (folderOrProduct, folderOrProductOrVariant) - filters the content to be rendered by the picker while navigating the product tree. folderOrProduct - renders folders and products. folderOrProductOrVariant - renders folders, product and product variants. If a product or product variant is rendered it becomes also selectable in the picker. (default = folderOrProduct)
-- multiple (true, false) - allows to select one or multiple products (default = false)
+- filter (folderOrProduct, folderOrProductOrVariant) - filters the content to be rendered by the picker while navigating the product tree. folderOrProduct - renders folders and products. folderOrProductOrVariant - renders folders, product and product variants. If a product or product variant is rendered, it becomes also selectable in the picker. (default = folderOrProduct)
+- multiple (true, false) - enable the selection of one or multiple products (default = false)
 - emptyText - to configure the empty text value of the picker field
 
-Additionally, standard diaglog field properties like `name`, `fieldLabel` or `fieldDescription` are supported as well.
+Also, standard diaglog field properties like `name`, `fieldLabel`, or `fieldDescription` are supported as well.
 
 The `cifproductfield` component requires the cif.shell.picker clientlib. To add a clientlib to a dialog, you can use the extraClientlibs property.
 
@@ -58,11 +58,11 @@ The following snippet can be used in a cq:dialog configuration:
 
 The category picker field supports the following optional properties:
 
-- selectionId(id, uid, path, idAndUrlPath, uidAndUrlPath) - allows to choose the category attribute to be returned by the picker (default = id). The idAndUrlPath & uidAndUrlPath are special options that will store the category id/uid and Magento's url_path separated by a | character like for example 1|men/tops.
-- multiple (true, false) - allows to select one or multiple categories (default = false)
+- selectionId(id, uid, path, idAndUrlPath, uidAndUrlPath) - allows to choose the category attribute to be returned by the picker (default = id). The idAndUrlPath & uidAndUrlPath are special options that store the category id/uid and url_path separated by a | character like for example 1|men/tops.
+- multiple (true, false) - enable the selection of one or multiple categories (default = false)
 
-Additionally, standard diaglog field properties like `name`, `fieldLabel` or `fieldDescription` are supported as well.
+Also, standard diaglog field properties like `name`, `fieldLabel`, or `fieldDescription` are supported as well.
 
-Same like the `cifproductfield` component the `cifcategoryfield` component also requires the cif.shell.picker clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) of the AEM Core Components documentation.
+Same as the `cifproductfield` component the `cifcategoryfield` component also requires the cif.shell.picker clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) of the AEM Core Components documentation.
 
 A full working example of the `cifcategoryfield` can be found in the [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.
