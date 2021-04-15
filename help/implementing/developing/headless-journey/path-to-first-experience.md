@@ -1,11 +1,11 @@
 ---
 title: Path to Your First Experience Using AEM Headless
-description: In this part of the AEM Headless Developer Journey, understand the steps to implementing your first headless experience in AEM including planning considerations and learn best practices to make your path as smooth as possible.
+description: In this part of the AEM Headless Developer Journey, you will understand the steps to implementing your first headless experience in AEM including planning considerations and learn best practices to make your path as smooth as possible.
 ---
 
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) understand the steps to implementing your first headless experience in AEM including planning considerations and learn best practices to make your path as smooth as possible.
+In this part of the [AEM Headless Developer Journey,](#overview.md) you will understand the steps to implementing your first headless experience in AEM including planning considerations and learn best practices to make your path as smooth as possible.
 
 ## Objective {#objective}
 
@@ -18,16 +18,17 @@ This document helps you understand the steps needed to implement your first proj
 
 ## Requirements {#requirements}
 
-Make sure that you have reviewed the previous document in the AEM Headless Developer Journey, [Getting Started with AEM Headless as a Cloud Service](getting-started) making sure you:
+Before you continue with this document, ensure that you have reviewed the previous document in the AEM Headless Developer Journey, [Getting Started with AEM Headless as a Cloud Service](getting-started) making sure you:
 
 * Fulfill the listed requirements
 * Consider your integration level
+* Have considered your own project definition including scope, roles, and performance
 
 ## Planning for Success {#planning-for-success}
 
 To start your first AEM headless project you need to ensure you have a content model that will support the personalization and updates you want to make across all your channels. You also want to make sure you have a proper development environment set up if you are building a client-side application so you can test your client against API calls to AEM as a Cloud Service.
 
-### Defining the content models and APIs {#defining-models}
+### Defining Content Models and APIs {#defining-models}
 
 You want to drive a consistent experience and manage personalized campaigns across channels, so you can look at each individual channel and surface as its own distinct content structure to deliver to. However having each channel have its own content model will be challenging to maintain.
 
@@ -47,6 +48,8 @@ Production is where content authors create and manage their actual content. Mode
 
 During the development stage, it is recommended you work with a development and staging environment. As you move to performance testing, you will want to move to the production environment.
 
+See the document [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md) for more information.
+
 ### Cooperation of Developers and Content Authors {#cooperation}
 
 Developers need an AEM development environment set up with the populated content models. The developer develops the client that will consume content from AEM headless as the content authors are still creating the content. That is why the API definitions are really important. By leveraging the AEM SDK, the developer can create a test hook so client and unit tests can be created to make sure the client is able to properly render the content.
@@ -63,24 +66,28 @@ Before you get started with headless in AEM, you need to make sure all required 
 1. Enabling GraphQL
 1. Headless SDK
 
+>[!TIP]
+>
+>Refer to the [headless getting started guide](/help/implementing/developing/headless/introduction.md#getting-started) for a quick introduction to these required configurations.
+
 ## Implementing Your First AEM Headless App
 
 How you implement your first headless app depends on the integration level you chose for your project. This section gives you an overview of what is needed to implement your first app.
 
 ### Level 1 - Content Modeled in AEM, Delivered to External Consumer {#level-one}
 
-1. Create content models
-1. Create content fragments
-1. Query content with GraphQL
+1. [Create Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+1. [Create Content Fragments](/help/assets/content-fragments/content-fragments.md)
+1. [Query content with GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 ### Level 2 - Content Modeled in AEM, Delivers to External Consumer, and Visible/Editable in AEM {#level-two}
 
 Same as [level one](#level-one) and also including:
 
-1. Creating an editable SPA
-1. Editing an external SPA in AEM
-1. Using the RemotePage component
-1. Using composite components
+1. [Creating an editable SPA](/help/implementing/developing/hybrid/introduction.md)
+1. [Editing an external SPA in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
+1. [Using the RemotePage component](/help/implementing/developing/hybrid/remote-page.md)
+1. [Using composite components](/help/implementing/developing/hybrid/composite-components.md)
 
 ## Best Practices {#best-practices}
 
@@ -106,7 +113,7 @@ A headless project is not only successful because of the technology implemented,
 
 ### Authoring Global Content {#localization}
 
-* Establish rules and governance for content translation. To reduce system load, establish translation as an asynchronous process that can be run in longer intervals. Allow for time for localization QL and bug-fixing.
+* Establish rules and governance for content translation. To reduce system load, establish translation as an asynchronous process that can be run in longer intervals. Allow for time for localization quality control and bug-fixing.
 * Leverage all capabilities provided by your translation technology system that you can integrate with AEM such as translation memory.
 * Understand if rich media content, like images and videos, needs localization.
 
@@ -141,5 +148,8 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Data Models,](model-your-content.md) the following are some additional resources that do a deeper dive on some concepts mentioned in this document.
 
-* [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md)
-* [Headless Development for AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md)
+* [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md) - A complete overview of how to implement editable SPAs in AEM
+* [Headless Development for AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
+* [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
+* [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
+* [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
