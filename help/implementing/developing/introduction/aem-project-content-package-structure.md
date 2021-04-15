@@ -82,7 +82,7 @@ The recommended application deployment structure is as follows:
 
 >[!NOTE]
 >
->The same code must be deployed to all environments. This is needed in order to ensure a level of confidence validations on the stage environment are also in production. For more information, see [Conservative Coding for Rollbacks](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks).
+>The same code must be deployed to all environments. This is needed in order to ensure a level of confidence validations on the stage environment are also in production. For more information, see the section on [Runmodes](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Content Packages
