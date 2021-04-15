@@ -5,6 +5,12 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 ---
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
+[!CONTEXTUALHELP]
+id="development_guidelines"
+title="AEM as a Cloud Service Development Guidelines"
+abstract="In this tab, you can view the recommended best practices for coding in AEM as a Cloud Service. Coding can be substatially different than AMS or On-Prem deployments."
+additional-url="https://video.tv.adobe.com/v/330555/" text="Demo of Package Structure"
+
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
 
 During the update of AEM as a Cloud Service, there will be instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
