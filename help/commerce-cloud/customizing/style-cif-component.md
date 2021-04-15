@@ -75,7 +75,7 @@ The `ui.frontend` module is also a Maven module and integrated with the larger p
 
 ## Update the Teaser Style {#ui-frontend-module}
 
-Next, make a small change to the Teaser style to see how the `ui.frontend` module and clientlibraries work. Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Next, make a small change to the Teaser style to see how the `ui.frontend` module and client libraries work. Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Navigate and expand the **ui.frontend** module and expand the folder hierarchy to: `ui.frontend/src/main/styles/commerce`:
 
@@ -129,7 +129,7 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
 
     ![Compiled Site CSS](../assets/style-cif-component/comiled-site-css.png)
 
-    The file is the comiled and minified version of all the Sass files in the project.
+    The file is the compiled and minified version of all the Sass files in the project.
 
     >[!NOTE]
     >
@@ -221,7 +221,7 @@ Next verify the inclusion of the client libraries on the page.
 
     ![View as Published](../assets/style-cif-component/view-as-published.png)
 
-    This will open the page without any of the AEM author javascript loaded, as it would appear on the published site. Notice that the url has the query parameter `?wcmmode=disabled` appendended. When developing CSS and Javascript it is a good practice to use this parameter to simplify the page with out anything from AEM author.
+    This will open the page without any of the AEM author javascript loaded, as it would appear on the published site. Notice that the url has the query parameter `?wcmmode=disabled` appended. When developing CSS and Javascript it is a good practice to use this parameter to simplify the page with out anything from AEM author.
 
 1. View the page source and you should be able to identify several client libraries are included:
 
@@ -324,7 +324,7 @@ The webpack-dev-server proxies images and some of the CSS/JavaScript from the lo
 
     >[!CAUTION]
     >
-    > If you get a Sass related error, stop the server and run the command `npm rebuild node-sass` and repeate the above steps. This can occur if have a different version of `npm` and `node` then specified in the project `aem-cif-guides-venia/pom.xml`.
+    > If you get a Sass related error, stop the server and run the command `npm rebuild node-sass` and repeat the above steps. This can occur if have a different version of `npm` and `node` then specified in the project `aem-cif-guides-venia/pom.xml`.
 
 1. Navigate to the [http://localhost:8080/](http://localhost:8080/) in a new tab with the same browser as a logged in instance of AEM. You should see the Venia home page via the webpack-dev-server:
 
