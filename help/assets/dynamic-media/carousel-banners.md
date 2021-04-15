@@ -67,11 +67,11 @@ To get you up and running quickly:
 
    To create a Carousel Set in Assets, tap **[!UICONTROL Create]**, then select **[!UICONTROL Carousel Sets]**. Add assets to slides and tap **[!UICONTROL Save]**. You can also edit the appearance and behavior of the carousel directly within the editor.
 
-1. [Add hotspots or image maps to an image banner.](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [Add hotspots or image maps to an image banner](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    Add one or more hotspots or image maps to an image banner. Then, associate each one with an action such as a link, a Quick view, or an Experience Fragment. After you add hotspots or image maps, you finish this task by publishing the carousel set. Publishing creates the embed code that you can use to copy and apply to your website landing page.
 
-   See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-banners) - Optional. If desired, you can view a representation of your carousel set and test its interactivity.
+   See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners) - Optional. If desired, you can view a representation of your carousel set and test its interactivity.
 
 1. [Publish Carousel Banners](#publishing-carousel-banners).
 
@@ -85,7 +85,7 @@ To get you up and running quickly:
 
     * [Add a carousel banner to your website in Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). If you are an Experience Manager Sites customer, you can add the carousel set directly to the page using the Interactive Media component.
 
-If you must edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](/help/assets/manage-digital-assets.md#editing-properties).
+If you must edit Carousel Sets, see [editing Carousel Sets](#editing-carousel-sets). In addition, you can view and edit [Carousel Set properties](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Identifying Hotspot and Image Map Variables {#identifying-hotspot-and-image-map-variables}
 
@@ -247,7 +247,7 @@ As you add hotspots or image maps to an image, remember to save your work. Undo 
 
 When you finish creating your carousel banner, you can optionally use Preview to see a representation of how your carousel banner appears to customers.
 
-See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-banners)
+See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
@@ -374,7 +374,7 @@ You can use Preview to see what your carousel banner looks like to customers. Us
 When you are satisfied with the carousel banner, you can publish it.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
-See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 You can preview carousel banners from the Carousel Editor (preferred method) or from the **[!UICONTROL Viewers]** list.
 
@@ -414,7 +414,7 @@ After you have uploaded banner images to create a carousel, added hotspots, or i
 
 >[!NOTE]
 >
->If you are an AEM Sites customer, you can add the carousel banner directly to your page by dragging the Interactive Media component to your page. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+>If you are an AEM Sites customer, you can add the carousel banner directly to your page by dragging the Interactive Media component to your page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 However, if you are a stand-alone Experience Manager Assets customer you can manually add the carousel banner to your website landing page.
 
