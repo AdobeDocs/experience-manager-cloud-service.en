@@ -77,7 +77,7 @@ With this, you are ready to use AEM Commerce as a Cloud Service and can deploy y
 
 ## Configuring stores and catalogs {#catalog}
 
-The CIF add-on can and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) be used on multiple AEM site structures connected to different Magento stores / store views. By default, the CIF add-on is deployed with a default config connecting to the Magento default store and catalog.
+The CIF add-on and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be used on multiple AEM site structures connected to different commerce stores (or store views, etc) .By default, the CIF add-on is deployed with a default config connecting to Adobe Commerce's default store and catalog (Magento).
 
 This configuration can be adjusted for the project via the CIF Cloud Service config following these steps:
 
