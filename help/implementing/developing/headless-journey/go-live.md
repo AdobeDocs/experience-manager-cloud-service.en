@@ -21,7 +21,7 @@ The most common deployment pattern with AEM headless applications is to have the
 
 ## Requirements and Configuration {#requirements-and-configuration}
 
-1. Install SDK in Publish Mode
+1. Install the [AEM SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 2. Install sample content and GprahQL endpoints
 3. Deploy and Configure a static Node Server.
 
