@@ -15,8 +15,8 @@ feature-set: Experience Manager Sites
 + Authoring {#authoring}
   + [Multi-Template Usage](configuring/multi-template-usage.md)
 + Integrations {#integrations}
-  + [Magento](architecture/magento.md)
-  + [3rd Party Commerce Solution](architecture/third-party.md)
+  + [Magento](integrating/magento.md)
+  + [3rd Party Commerce Solution](integrating/third-party.md)
 + AEM Storefront {#storefront}
   + [Getting started](getting-started.md)
   + Administering {#administering}
