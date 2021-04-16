@@ -11,7 +11,7 @@ The following topic describes troubleshooting for Dynamic Media.
 
 ## New Dynamic Media Configuration {#new-dm-config}
 
-See [Troubleshooting a new Dynamic Media Configuration.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+See [Troubleshooting a new Dynamic Media Configuration](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## General (All Assets) {#general-all-assets}
 
