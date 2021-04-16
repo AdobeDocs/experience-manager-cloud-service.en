@@ -117,29 +117,6 @@ A headless project is not only successful because of the technology implemented,
 * Leverage all capabilities provided by your translation technology system that you can integrate with AEM such as translation memory.
 * Understand if rich media content, like images and videos, needs localization.
 
-### Model Structure vs GraphQL Output {#structure-vs-output}
-
-* Avoid creating queries that output more than 15kb of JSON (gzip compressed). Long JSON files are resource intensive for client application to parse.
-* Avoid more than five nested levels of fragment hierarchies. Additional levels make it hard for content authors to consider the impact of their changes.
-* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do a lot of content changes.
-
-### Maximize CDN Cache-Hit Ratio {#maximize-cdn}
-
-* Do not use direct GraphQL queries, unless you are requesting live content from the surface.
-  * Instead, use persisted queries.
-  * Provide CDN TTL above 600 seconds so the CDN can cache them.
-  * AEM can calculate the impact of a model change to existing queries.
-* Split JSON files/GraphQL queries between low and high content change rate in order to reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
-* To actively invalidate content from the CDN use Soft Purge. This allows the CDN to re-download the content without causing a cache miss.
-
-### Improve Time to Download Headless Content {#improve-download-time}
-
-* Make sure HTTP clients use HTTP/2.
-* Make sure HTTP clients Accept Headers request for gzip.
-* Minimize the number of domains used to host JSON and referenced artifacts.
-* Leverage `Last-modified-since` to refresh resources.
-* Use `_reference` output in JSON file to start downloading assets without having to parse complete JSON files.
-
 ## What's Next {#what-is-next}
 
 You should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Data Models](model-your-content.md) where you learn how to model your content structure in AEM.
