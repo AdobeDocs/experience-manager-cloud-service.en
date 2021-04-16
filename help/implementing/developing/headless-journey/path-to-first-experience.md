@@ -18,7 +18,7 @@ This document helps you understand the steps needed to implement your first proj
 
 ## Requirements {#requirements}
 
-Before you continue with this document, ensure that you have reviewed the previous document in the AEM Headless Developer Journey, [Getting Started with AEM Headless as a Cloud Service](getting-started) making sure you:
+Before you continue with this document, ensure that you have reviewed the previous document in the AEM Headless Developer Journey, [Getting Started with AEM Headless as a Cloud Service](getting-started.md) making sure you:
 
 * Fulfill the listed requirements
 * Consider your integration level
