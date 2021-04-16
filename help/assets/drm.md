@@ -30,7 +30,7 @@ You can view the expiration status of an asset at the following places:
 
 You can search for expired assets, including expired subassets in the Search panel.
 
-1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
+1. In the [!DNL Assets] console, click **[!UICONTROL Search]** in the toolbar to display the [!DNL Experience Manager] search box.
 
 1. With the cursor in the Omnisearch box, select the `Enter` key to display the search results page.
 

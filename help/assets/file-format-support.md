@@ -89,7 +89,7 @@ The following sub-types of raster image file formats that are not supported in [
 
 The following 3D formats are supported.
 
-See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

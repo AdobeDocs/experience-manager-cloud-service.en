@@ -30,7 +30,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 >
 >Metadata is useful when you are searching for assets. The thumbnails are static video images that are generated during encoding. They are required by the Experience Manager system and used in the user interface to help you visually identify videos in the Cards view, Search Results view, and the Asset List view. You can see the generated thumbnails when you tap the Renditions icon (a Painter's palette) of an encoded video.
 
-When you are done creating the Video Profile, you apply it to a folder or multiple folders. See [Applying a Video Profile to folders.](#applying-a-video-profile-to-folders)
+When you are done creating the Video Profile, you apply it to a folder or multiple folders. See [Applying a Video Profile to folders](#applying-a-video-profile-to-folders).
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
