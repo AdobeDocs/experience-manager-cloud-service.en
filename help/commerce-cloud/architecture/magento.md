@@ -48,7 +48,7 @@ For the client-side components, which are build using [React](https://reactjs.or
 
 Authorization
 
-## AEM CIF Core Component Architecture {#cif-core-components#}
+## AEM CIF Core Component Architecture {#cif-core-components}
 
 ![AEM CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
 
