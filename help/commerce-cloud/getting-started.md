@@ -57,6 +57,8 @@ After the endpoint (and, optionally, the token) is set, the endpoint will be dis
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
+Please see [Getting started](../getting-started.md#adobe-cli) on how to configure the Adobe I/O CLI for Cloud Manager.
+
 To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
 
 1. Get the Adobe I/O CLI with the Cloud Manager plugin
@@ -74,6 +76,18 @@ To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
     See [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for details.
 
     The commerce GraphQL endpoint URL must point to commerce's GraphQl service and use a secure HTTPS connection. For example: `https://demo.magentosite.cloud/graphql`.
+
+4. Enable Staged catalog features that require authentication (Optional)
+
+    >[!NOTE]
+    >
+    >This feature is only available with Adobe Commerce Enterprise or Cloud Edition. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details.
+
+    Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
+
+    ```bash
+    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
+    ```
 
 >[!TIP]
 >

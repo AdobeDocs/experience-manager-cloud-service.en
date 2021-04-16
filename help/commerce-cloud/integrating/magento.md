@@ -26,22 +26,6 @@ Server-side APIs calls are implemented using the build-in, generic [GraphQL clie
 
 For the client-side components, which are build using [React](https://reactjs.org/), the [Apollo Client](https://www.apollographql.com/docs/react/) is used.
 
-## Enable features that require authentication (Optional) {#feature-authentication}
-
->[!NOTE]
->
->This feature is only available with Adobe Commerce Enterprise or Cloud Edition.
-
-1. Login to Adobe Commerce (Magento) and create an integration token. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details. Make sure the integration token has *only* access to `Content -> Staging` resources. Copy the `Access Token` value.
-
-1. Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
-
-    ```bash
-    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
-    ```
-
-    Please see [Getting started](../getting-started.md#adobe-cli) on how to configure the Adobe I/O CLI for Cloud Manager.
-
 >[!NOTE]
 >
 >The configured authorization token is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
