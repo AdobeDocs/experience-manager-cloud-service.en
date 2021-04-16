@@ -12,7 +12,7 @@ feature-set: Experience Manager Sites
 + [Notable Changes to AEM Content and Commerce as a Cloud Service](changes.md)
 + [Introduction and overview](introduction.md)
 + Integrations {#integrations}
-  + [Magento](integrating/magento.md)
+  + [Adobe Commerce](integrating/magento.md)
   + [3rd Party Commerce Solution](integrating/third-party.md)
 + AEM Storefront {#storefront}
   + [Getting started](getting-started.md)
