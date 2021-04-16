@@ -1,5 +1,5 @@
 ---
-title: Multi-Store Setup
+title: Commerce Multi-Store Setup
 description: Learn how map multiple store views from Magento to AEM. This allows projects to support multi-tenant and multi-lingual use cases.
 sub-product: Commerce
 version: cloud-service
@@ -11,7 +11,7 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 ---
-# Multi-Store Setup {#multi-store}
+# Commerce Multi-Store Setup {#multi-store}
 
 The AEM CIF Core Components can be used on multiple AEM site structures and the underlying GraphQL client implementation can connect to different Magento stores / store views. This allows projects to implement complex multi-store / multi-site setups.
 
@@ -37,7 +37,11 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
    * Select the base configuration you created
    * Create a new configuration using the steps described at point 2 above
 
-    This new configuration will be created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
+   This new configuration will be created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
+
+   >[!TIP]
+   >
+   > Commerce catalogs can be addressed by using IDs or UIDs. UIDs got introduced in Magento 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 
 4. Assign the child configuration to an AEM site
 

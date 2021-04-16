@@ -5,7 +5,7 @@ exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
 ---
 # Caching & Performance {#caching}
 
-## Component & GraphQL response caching {#graphql}
+## Component & GraphQL Response Caching {#graphql}
 
 The AEM CIF Core Components already have built-in support for caching GraphQL responses for individual components. This feature can be used to reduce the number of GraphQL backend calls by a large factor. An effective caching can be achieved especially for repeating queries like retrieving the category tree for a navigation component or fetching all the available aggregations/facets values displayed on the product search and category pages.
 
@@ -39,7 +39,7 @@ when considering the [Venia Reference store](https://github.com/adobe/aem-cif-gu
 
 Caching for other components should be defined on a project basis, usually in coordination with caching configured at the Dispatcher level. Remember that there isn't any active invalidation of these caches, so caching duration should be carefully set. There isn't any "one size fits all" values that would match all possible projects and use cases. Make sure that you define a caching strategy at the project level that best matches the requirements of your project.
 
-## Dispatcher caching {#dispatcher}
+## Dispatcher Caching {#dispatcher}
 
 Caching AEM pages or fragments in the [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) is a best practice for any AEM project. Usually, it relies on invalidation techniques that ensure that any content changed in AEM is properly updated in the Dispatcher. This is a core feature of the AEM Dispatcher caching strategy.
 
