@@ -93,7 +93,7 @@ Digital experiences will continue to define how brands interact with customers. 
 
 It is impossible to predict the future, but headless gives you the agility to react to whatever the future brings.
 
-## What's Next {what-is-next}
+## What's Next {#what-is-next}
 
 You should continue your AEM headless journey by next reviewing the document [Getting Started with AEM Headless as a Cloud Service](getting-started.md) where you will learn how to set up the necessary tools and how to begin thinking about how AEM approaches headless content delivery and its prerequisites.
 
