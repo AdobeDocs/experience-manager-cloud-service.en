@@ -31,7 +31,7 @@ The product field allows to navigation to the product a user want to select via 
 
 The product picker field supports the following optional properties:
 
-- selectionId (id, uid, sku, slug, path, combinedSku) - allows to choose the product attribute to be returned by the picker (default = id). Using sku returns the sku of the selected product, while using combinedSku returns a string like base#variant with the skus of the base product and the selected variant, or a single sku if a base product is selected.
+- selectionId (id, uid, sku, slug, combinedSlug, combinedSku) - allows to choose the product attribute to be returned by the picker (default = id). Using sku returns the sku of the selected product, while using combinedSku and returns a string like base#variant with the skus of the base product and the selected variant, or a single sku if a base product is selected.
 - filter (folderOrProduct, folderOrProductOrVariant) - filters the content to be rendered by the picker while navigating the product tree. folderOrProduct - renders folders and products. folderOrProductOrVariant - renders folders, product and product variants. If a product or product variant is rendered, it becomes also selectable in the picker. (default = folderOrProduct)
 - multiple (true, false) - enable the selection of one or multiple products (default = false)
 - emptyText - to configure the empty text value of the picker field
@@ -58,7 +58,7 @@ The following snippet can be used in a cq:dialog configuration:
 
 The category picker field supports the following optional properties:
 
-- selectionId(id, uid, path, idAndUrlPath, uidAndUrlPath) - allows to choose the category attribute to be returned by the picker (default = id). The idAndUrlPath & uidAndUrlPath are special options that store the category id/uid and url_path separated by a | character like for example 1|men/tops.
+- selectionId(id, uid, slug, idAndUrlPath, uidAndUrlPath) - allows to choose the category attribute to be returned by the picker (default = id). The idAndUrlPath & uidAndUrlPath are special options that store the category id/uid and url_path separated by a | character like for example 1|men/tops.
 - multiple (true, false) - enable the selection of one or multiple categories (default = false)
 
 Also, standard diaglog field properties like `name`, `fieldLabel`, or `fieldDescription` are supported as well.
