@@ -8,18 +8,20 @@ This guide helps identify the areas you need to update for the Experience Manage
 
 ## CIF add-on
 
-The Experience Manager Cloud Service CIF add-on is the only supported add-on.
+For Experience Manager as a Cloud Service the CIF add-on is the only supported commerce integration solution for Adobe Commerce and 3rd party commerce solutions. The CIF add-on is deployed automatically for customers on Experience Manager as a Cloud Service, no manual deployment is needed. See [Getting started with AEM Commerce as a Cloud Service](getting-started.md).
 
-CIF 6.5 add-on that is available on Software Distribution is compatible with Cloud Service - no adjustments are required.
+To support projects deploying CIF Adobe provide [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components).
 
-Classic CIF with its dependencies is not available anymore. Code relying on this CIF version needs to be adjusted to the CIF add-on and its prinicples.
+CIF add-on is available for AEM 6.5 as well via the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). It is compatible and provides the same features as the CIF add-on for Experience Manager as a Cloud Service - no adjustments are required.
 
-The previous available CIF connector cannot be installed anymore. Code relying on this connector need to be adjusted to the CIF add-on and its prinicples.
+Classic CIF with its dependencies is not available anymore. Code relying on this CIF version using `com.adobe.cq.commerce.api` Java APIs must be adjusted to the CIF add-on and its principles.
+
+The previously available CIF connector cannot be installed anymore. Code relying on this connector need to be adjusted to the CIF add-on and its principles.
 
 ## Project structure
 
 Learn the [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) and the characteristics of AEM as a Cloud Service. Adapt your project setup to the AEM as a Cloud Service layout.
-The main differences here are:
+Compared to AEM 6.5 deployments there are two main differences here are:
 
 * The GraphQL client OSGI bundle **must not** be included into the AEM project anymore, it is deployed via the CIF add-on
 * OSGI configs for GraphQL client and Graphql Data Service **must not** be included into the AEM project anymore
@@ -30,7 +32,7 @@ The main differences here are:
 
 ## Product catalog
 
-Importing product catalog data is not supported anymore. The CIF add-on requestes data on-demand via real-time calls to an external commerce solution. Go to chapter integratingto learn more about integrating a commerce solution.
+Importing product catalog data is not supported anymore. Using the CIF add-on principals product & catalog requests are on-demand via real-time calls to an external commerce solution. Go to chapter Integrating to learn more about integrating a commerce solution.
 
 >[!TIP]
 >
