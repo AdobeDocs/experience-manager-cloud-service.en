@@ -6,7 +6,7 @@ exl-id: 42dd8922-540d-4a93-9e45-b5e83dc11e16
 ---
 # AEM and 3rd Party Commerce Integration using Commerce Integration Framework {#aem-third-party}
 
-The integration of non-Adobe Commerce solution is a common scenario for CIF. If a 3rd party solution has different APIs and schemas, an integration layer is required.
+The integration of non-Adobe Commerce solution is a common scenario for CIF. 3rd party solutions with different APIs and schemas get connected via an integration layer.
 
 ## Architecture {#architecture}
 
@@ -14,7 +14,15 @@ The overall architecture is as follows:
 
 ![AEM non-Magento/3rd Party Architecture Overview](../assets//AEM_nonMagento_Architecture.png)
 
-The purpose of this integration layer is to map 3rd-party APIs and schemas against the supported Adobe Commerce GraphQL APIs and schemas. It can also be used to integrate multiple services and solutions.
+The purpose of this integration layer is to map 3rd-party APIs and schemas against the supported Adobe Commerce GraphQL APIs and schemas outside of the Experience Manager. Thanks to this encapsulation, the integration logic and systems can get updated without changing code inside the Experience Manager.
+
+## Solution requirements for an integration
+
+As the Experience Manager retrieves data on-demand, real-time APIs for product catalog are required.
+
+>[!TIP]
+>
+>If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://magento.com/products/magento-open-source).
 
 There is no need to implement the complete GraphQL APIs, just the APIs to enable the desired use-cases.
 
