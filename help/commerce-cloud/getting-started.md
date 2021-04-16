@@ -39,7 +39,7 @@ A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service en
 
 There are two options to configure the endpoint:
 
-### 1) Via Cloud Manager UI (Default)
+### 1) Via Cloud Manager UI (Default) {#cm-ui}
 
 This can be done using a dialog on the Environment Details page. When viewing this page for a Commerce-enabled program, a button will be displayed if the endpoint is not currently configured:
 
