@@ -44,7 +44,7 @@ A full working example of the `cifproductfield` can be found in the [CIF Core Co
 
 ## Category Picker {#category-picker}
 
-The category picker (provided by `/libs/`commerce/gui/components/common/cifcategoryfield`) can be used in a component dialog as well in a similar way like the product picker.
+The category picker can be used in a component dialog as well in a similar way like the product picker.
 
 The following snippet can be used in a cq:dialog configuration:
 
