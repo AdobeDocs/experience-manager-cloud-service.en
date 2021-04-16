@@ -1102,7 +1102,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
    Remember that URLs are only available to copy *after* you have first *published* the assets.
 
-   See [Publishing Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 1. Do one of the following:
 
@@ -1307,7 +1307,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 1. Tap **[!UICONTROL OK]** to return to the Properties tab.
 1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
 
-   See [Adding a video thumbnail.](#adding-a-video-thumbnail)
+   See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 -->
 
