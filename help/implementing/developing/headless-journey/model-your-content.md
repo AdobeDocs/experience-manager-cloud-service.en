@@ -1,6 +1,6 @@
 ---
 title: How to Model Your Content as AEM Data Models
-description: In this part of the AEM Headless Developer Journey, learn how to model your content for AEM Headless delivery using Data Modelling with Content Fragment Models and Content Fragments.
+description: In this part of the AEM Headless Developer Journey, learn how to model your content for AEM Headless delivery using Data Modeling with Content Fragment Models and Content Fragments.
 ---
 
 # How to Model Your Content as AEM Data Models {#model-your-content}
@@ -13,16 +13,16 @@ In this part of the [AEM Headless Developer Journey](#overview.md), you can lear
 
 * **Audience**: Beginner
 * **Objective**: Learn how to model your content structure, then realize that structure using AEM Content Fragment Models and Content Fragments:
-  * Introduce concepts and terminology related to [data modelling](#data-modelling).
-  * Learn [why data modelling is needed for Headless content delivery](#data-modelling-for-aem-headless).
+  * Introduce concepts and terminology related to [data modeling](#data-modeling).
+  * Learn [why data modeling is needed for Headless content delivery](#data-modeling-for-aem-headless).
   * Learn [how to realize this structure using AEM Content Fragment Models](#create-structure-content-fragment-models) (and generate content with [Content Fragments](#use-content-to-generate-content)).
   * Learn [how to model your content](#getting-started-examples); principles with basic samples.
 
-## Data Modelling {#data-modelling}
+## Data Modeling {#data-modeling}
 
 *It's a big bad world out there*. 
 
-Maybe, maybe not, but it's certainly a big ***complicated*** world out there and data modelling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
+Maybe, maybe not, but it's certainly a big ***complicated*** world out there and data modeling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
 
 For example:
 
@@ -60,7 +60,7 @@ The information that we want to store about them are the **Attributes**, such as
 
 Then there are various **Relationships** between the entities. For example, usually a school only has one head teacher, and many teachers (and usually the head teacher is also a teacher).
 
-The process of analyzing and defining this information, together with the relationships between them, is called **Data Modelling**.
+The process of analyzing and defining this information, together with the relationships between them, is called **Data Modeling**.
 
 ### Basics {#basics}
 
@@ -84,9 +84,9 @@ For example, do you need separate entities for `Head Teacher` and `Teacher`, or 
 >[!NOTE]
 >To be continued....
 
-## Data Modelling for AEM Headless {#data-modelling-for-aem-headless}
+## Data Modeling for AEM Headless {#data-modeling-for-aem-headless}
 
-Data Modelling is a set of established techniques, often used when developed relationship databases, so what does it mean for AEM Headless?
+Data Modeling is a set of established techniques, often used when developed relationship databases, so what does it mean for AEM Headless?
 
 ### Why? {#why}
 
@@ -122,10 +122,10 @@ Within a model:
 1. **Data Types** allow you to define the individual attributes.
    For example, define the field holding a teacher's name as **Text** and their years of service as **Number**.
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
-1. The **Fragment Reference** data type allows you to realise multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your data modelling.
+1. The **Fragment Reference** data type allows you to realise multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your data modeling.
 
 For example:
-![Content Modelling with Content Fragments](assets/headless-modelling-01.png "Content Modelling with Content Fragments")
+![Content Modeling with Content Fragments](assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 
 ### Data Types {#data-types}
 
