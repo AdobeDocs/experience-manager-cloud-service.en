@@ -11,9 +11,6 @@ feature-set: Experience Manager Sites
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
 + [Notable Changes to AEM Content and Commerce as a Cloud Service](changes.md)
 + [Introduction and overview](introduction.md)
-+ [Migration](migration.md)
-+ Authoring {#authoring}
-  + [Multi-Template Usage](configuring/multi-template-usage.md)
 + Integrations {#integrations}
   + [Magento](integrating/magento.md)
   + [3rd Party Commerce Solution](integrating/third-party.md)
@@ -21,6 +18,7 @@ feature-set: Experience Manager Sites
   + [Getting started](getting-started.md)
   + Administering {#administering}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
+    + [Multi-Template Usage](configuring/multi-template-usage.md)
     + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
     + [Caching Options](configuring/caching.md)
   + Developing {#developing}
@@ -28,4 +26,5 @@ feature-set: Experience Manager Sites
     + [Styling CIF Components](customizing/style-cif-component.md)
     + [Customizing CIF Components](customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](customizing/use-cif-pickers.md)
++ [Migration](migration.md)
 + [FAQ](faq.md)
