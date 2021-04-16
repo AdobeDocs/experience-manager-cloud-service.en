@@ -59,8 +59,6 @@ After the endpoint (optionally an authentication token for staged catalog suppor
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-Please see [Getting started](../getting-started.md#adobe-cli) on how to configure the Adobe I/O CLI for Cloud Manager.
-
 To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
 
 1. Get the Adobe I/O CLI with the Cloud Manager plugin
