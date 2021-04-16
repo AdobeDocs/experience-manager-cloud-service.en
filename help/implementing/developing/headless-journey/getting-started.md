@@ -274,7 +274,7 @@ Quite often different sections of experiences have different frequencies of cont
 * Must some types of content expire after a certain period?
 * Are there elements that are user-specific and thus can't be cached?
 
-## What's Next {what-is-next}
+## What's Next {#what-is-next}
 
 You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you will learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
 
