@@ -60,12 +60,6 @@ CIF is built for continuous innovation with an always up-to-date add-on, allowin
 
 Connect your ecosystem (e.g. commerce solution) with the Experience Cloud using  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), a micro-service based server-less PaaS, and [CIF's reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
-## When Should a Project Use CIF?
-
-The following decision tree will guide you based on the use-cases if CIF is recommended for a project. A detailed evaluation helps you to determine what parts should be used.
-
-![CIF Elements](./assets/CIF/CIF_Decision_Matrix.png)
-
 ## Proven Patterns and Best Practices
 
 CIF supports customers with standardized integration patterns based on best practices. This helps customers to be successful today and is flexible to grow with the customer and adapt to future requirements:
