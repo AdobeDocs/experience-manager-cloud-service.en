@@ -37,6 +37,8 @@ This environment variable is used in two places:
 
 A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided in order to use additional CIF features that require authentication.
 
+Optional and only for Adobe Commerce Enterprise / Cloud the CIF add-on supports the use of staged catalog data for AEM authors. This requieres to configure an authorization token. The configured authorization token is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
+
 There are two options to configure the endpoint:
 
 ### Via Cloud Manager UI (Default) {#cm-ui}
@@ -82,7 +84,6 @@ To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
     >[!NOTE]
     >
     >This feature is only available with Adobe Commerce Enterprise or Cloud Edition. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details.
-    >The configured authorization token is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
 
     Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
 
