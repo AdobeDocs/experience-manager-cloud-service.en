@@ -10,7 +10,7 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
 ---
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 
@@ -115,12 +115,15 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
     ```shell
     $ mvn clean install
     ...
-    [INFO] ------------------------------------------------------------------------
+    [INFO] ---------------------------------------------------------------------
+---
     [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
+    [INFO] ---------------------------------------------------------------------
+---
     [INFO] Total time:  29.497 s
     [INFO] Finished at: 2020-08-25T14:30:44-07:00
-    [INFO] ------------------------------------------------------------------------
+    [INFO] ---------------------------------------------------------------------
+---
     ```
 
     Inspect the terminal output. You will see that the Maven command executed several NPM scripts including `npm run build`. The `npm run build` command is defined in the `package.json` file and has the effect of compiling the webpack project and triggering the client library generation.
