@@ -42,7 +42,7 @@ You manage your image presets in Experience Manager by tapping or clicking the E
 >
 >You do *not* need to publish image presets as image presets are automatically published.
 >
->See [Publishing Image Presets.](#publishing-image-presets)
+>See [Publishing Image Presets](#publishing-image-presets).
 
 >[!NOTE]
 >

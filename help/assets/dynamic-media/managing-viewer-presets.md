@@ -52,7 +52,7 @@ See [Responsive Static Image library](https://experienceleague.adobe.com/docs/dy
 >[!NOTE]
 >
 >Publish all out-of-the-box viewers before you use them for the first them.
->See [Publishing Viewer Presets.](#publishing-viewer-presets)
+>See [Publishing Viewer Presets](#publishing-viewer-presets).
 
 ### Viewer Preset system compatibility  {#viewer-preset-system-compatibility}
 
