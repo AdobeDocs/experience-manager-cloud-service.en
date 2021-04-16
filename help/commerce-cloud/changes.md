@@ -1,7 +1,7 @@
 ---
 title: Notable changes of the Commerce Integration Framework (CIF) add-on
 description: Notable changes of the Commerce Integration Framework (CIF) compared to old CIF versions.
-exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 ---
 # Notable Changes to the Commerce Integration Framework (CIF) Add-on{#notable-changes}
 
