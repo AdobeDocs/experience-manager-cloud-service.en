@@ -26,10 +26,6 @@ Server-side APIs calls are implemented using the build-in, generic [GraphQL clie
 
 For the client-side components, which are build using [React](https://reactjs.org/), the [Apollo Client](https://www.apollographql.com/docs/react/) is used.
 
->[!NOTE]
->
->The configured authorization token is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
-
 ## AEM CIF Core Component Architecture {#cif-core-components}
 
 ![AEM CIF Core Component Architecture](../assets/cif-component-architecture.jpg)

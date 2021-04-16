@@ -39,7 +39,7 @@ A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service en
 
 There are two options to configure the endpoint:
 
-### 1) Via Cloud Manager UI (Default) {#cm-ui}
+### Via Cloud Manager UI (Default) {#cm-ui}
 
 This can be done using a dialog on the Environment Details page. When viewing this page for a Commerce-enabled program, a button will be displayed if the endpoint is not currently configured:
 
@@ -49,11 +49,11 @@ Clicking this button opens a dialog:
 
 ![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-After the endpoint (and, optionally, the token) is set, the endpoint will be displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
+After the endpoint (optionally an authentication token for staged catalog support) is set, the endpoint will be displayed on the detail page. Clicking the Edit icon will open the same dialog where the endpoint can be modified if necessary.
 
 ![Eco Friendly Badge Final Implementation](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 2) Via Adobe I/O CLI  {#adobe-cli}
+### Via Adobe I/O CLI  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -82,6 +82,7 @@ To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
     >[!NOTE]
     >
     >This feature is only available with Adobe Commerce Enterprise or Cloud Edition. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details.
+    >The configured authorization token is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
 
     Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
 
