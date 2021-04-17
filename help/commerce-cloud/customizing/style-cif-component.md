@@ -115,15 +115,12 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
     ```shell
     $ mvn clean install
     ...
-    [INFO] ---------------------------------------------------------------------
----
+    [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
-    [INFO] ---------------------------------------------------------------------
----
+    [INFO] ------------------------------------------------------------------------
     [INFO] Total time:  29.497 s
     [INFO] Finished at: 2020-08-25T14:30:44-07:00
-    [INFO] ---------------------------------------------------------------------
----
+    [INFO] ------------------------------------------------------------------------
     ```
 
     Inspect the terminal output. You will see that the Maven command executed several NPM scripts including `npm run build`. The `npm run build` command is defined in the `package.json` file and has the effect of compiling the webpack project and triggering the client library generation.
