@@ -21,9 +21,9 @@ The most common deployment pattern with AEM headless applications is to have the
 
 ## Requirements and Configuration {#requirements-and-configuration}
 
-1. Install the [AEM SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-2. Install sample content and GprahQL endpoints
-3. Deploy and Configure a static Node Server.
+1. Set up a [Local Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#install-java) using the [AEM as a Cloud service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+2. Install the [WKND sample content](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and subsequent GprahQL endpoints
+3. Deploy and Configure a [static Node Server](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/production-deployment.html?lang=en#static-server).
 
 ## Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
 
@@ -64,7 +64,7 @@ The most common deployment pattern with AEM headless applications is to have the
 * Verify AEM status pages for current service availability status
 * Access performance reports
   * Delivery Performance
-    *  Fastly – check number of calls, cache rate, error rates, payload traffic 
+    *  Fastly (CDN) – check number of calls, cache rate, error rates, payload traffic 
     * Origin servers - number of calls, error rates, CPU loads, payload traffic 
   * Author Performance
     * Check number of users, requests and load
@@ -74,7 +74,26 @@ The most common deployment pattern with AEM headless applications is to have the
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
 
-## Common Issues and Troubleshooting {#common-issues-and-troubleshooting}
+## Troubleshooting {#troubleshooting}
+
+### Debugging {#debugging}
+
+In order to make sure that your application is properly functioning before launch, it is recommended you follow these steps as an general approach to debugging:
+
+* Validate functionality and performance with the preview version of the application
+* Validate functionality and performance with the production version of the application
+* Validate with the JSON preview of the Content Fragment Editor
+* Inspect the JSON in the client application to check for the presence of client application or delivery issues
+* Inspect the JSON using GraphQL to check for the presence of issues related to cached content or AEM
+
+### Logging a Bug with Support {#logging-a-bug-with-support}
+
+In order to efficiently log a bug with Support in case you need further assistance, follow the below steps:
+
+* Take screenshots of the problem, if necessary
+* Document a way to reproduce the issue
+* Document the content the issue reproduces with
+* Log an issue throgh the AEM Support portal with the appropriate priority
 
 ## Additional Resources {#additional-resources}
 
