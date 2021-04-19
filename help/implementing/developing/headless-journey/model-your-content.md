@@ -18,6 +18,12 @@ In this part of the [AEM Headless Developer Journey](#overview.md), you can lear
   * Learn [how to realize this structure using AEM Content Fragment Models](#create-structure-content-fragment-models) (and generate content with [Content Fragments](#use-content-to-generate-content)).
   * Learn [how to model your content](#getting-started-examples); principles with basic samples.
 
+>[!NOTE]
+>
+>Data Modeling is a very large field, as it is used when developing Relational Databases. There are many books, and online sources of information, available.
+>
+>We will only consider the aspects that are of interest when modeling data for use with AEM.
+
 ## Data Modeling {#data-modeling}
 
 *It's a big bad world out there*. 
@@ -74,15 +80,28 @@ After this is stable you can translate the models into a **Logical Schema** that
 
 For example, do you need separate entities for `Head Teacher` and `Teacher`, or simply an additional attribute on the `Teacher` model? 
 
-### Ensuring data integrity and eliminating data redundancy {#data-integrity-data-redundancy}
+### Ensuring data integrity {#data-integrity}
 
->[!NOTE]
->To be continued....
+Data integrity is needed to guarantee the accuracy and consistency of your content, over its entire life-cycle. This includes ensuring that content authors can easily understand what to store where - so the following are vital:
+
+* a clear structure
+* a structure that is as concise as possible (without sacrificing accuracy)
+* validation of individual fields
+* where appropriate, restrict the content of specific fields to what is meaningful 
+
+### Eliminating data redundancy {#data-redundancy}
+
+Data redundancy occurs when the same information is stored twice within the content structure. This should be avoided as it can lead to confusion when creating the content, and errors when querying; not to mention the misuse of storage space.
 
 ### Optimization and Performance {#optimization-and-performance}
 
->[!NOTE]
->To be continued....
+By optimizing your structure you can improve the performance, both for content creation and querying.
+
+Everything is a balancing act, but creating a structure that is too complex, or has too many levels, can:
+
+* Be confusing for authors generating the content.
+
+* Severely affect performance if the query has to access multiple nested (referenced) Content Fragments to retrieve the required content.
 
 ## Data Modeling for AEM Headless {#data-modeling-for-aem-headless}
 
@@ -122,7 +141,7 @@ Within a model:
 1. **Data Types** allow you to define the individual attributes.
    For example, define the field holding a teacher's name as **Text** and their years of service as **Number**.
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
-1. The **Fragment Reference** data type allows you to realise multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your data modeling.
+1. The **Fragment Reference** data type allows you to realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your data modeling.
 
 For example:
 ![Content Modeling with Content Fragments](assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -161,11 +180,29 @@ Two data types provide references to content outside a specific fragment:
 >[!NOTE]
 >To be continued....
 
+Content Fragments are always based on a Content Fragment Model. 
 ### Selecting the appropriate model {#select-model}
+
+The first step to actually creating your content is to create a Content Fragment. This is based on a specific Content Fragment Model, that you select as the first step of the creation process.
+
+Your Content Fragment Models should have been given clear, and concise, names, so that the authors can easily find the correct model.
 
 ### Creating, and editing, structured content {#create-edit-structured-content}
 
+Once your fragment has been created, you can open it in the Content Fragment Editor. Here you can:
+
+* Edit your content in either normal, or full-screen mode.
+* Format your content as either Full Text, Plain Text or Markdown.
+* Create and manage Variations of you content.
+* Associate Content.
+* Edit the Metadata.
+* Show the Tree Structure.
+* Preview the JSON representation.
+
 ## Getting Started with some Examples {#getting-started-examples}
+
+>[!NOTE]
+>tbc.....and/or see the structures covered for the GraphQL samples.
 
 ## What's Next {#whats-next}
 
