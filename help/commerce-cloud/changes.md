@@ -7,7 +7,7 @@ exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205
 
 Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. To learn more about these capabilities, please follow the link for [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-This document highlights the important differences between the  Commerce Integration Framework (CIF) add-on and old CIF versions, mainly known as CIF Classic (Quickstart) a CIF Open-source.
+This document highlights the important differences between the Commerce Integration Framework (CIF) add-on and old CIF versions, mainly known as CIF Classic (Quickstart) and CIF Open-source.
 
 ## Installation & Updates
 
