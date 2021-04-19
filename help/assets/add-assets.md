@@ -217,6 +217,10 @@ For folders that have a processing profile assigned, the profile name appears on
 
 Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
 
+## Tips, best practices, and limitations {#tips-limitations}
+
+* Adobe recommends adding up to 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you see performance issues such as slower navigation to such folders.
+
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
