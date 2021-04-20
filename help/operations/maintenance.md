@@ -74,15 +74,14 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>JCR Node Definition</td>
     <td>See location 3 below</td>
     <td>See code sample 3 below</td>
-     <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily (this value should not be changed)</li>
-    <li><strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should begin executing.</li>
-    <li><strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should stop executing if they haven't already completed.</li>
-    <li><strong>windowScheduleWeekdays = Array of 2 values from 1-7. e.g. [5,5].</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.</li>
-    <li><strong>windowFirstLastStartDay - 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs every day as governed by windowScheduleWeekdays every month.</li>
-    </ul> </td> 
-  </tr>
+    <td>
+    <strong>windowSchedule</strong> = daily (this value should not be changed)
+    <strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should begin executing.
+    <strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should stop executing if they haven't already completed.
+    <strong>windowScheduleWeekdays = Array of 2 values from 1-7. e.g. [5,5].</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.
+    <strong>windowFirstLastStartDay - 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs every day as governed by windowScheduleWeekdays every month.
+    </td> 
+    </tr>
 </table>
 
 Locations:
