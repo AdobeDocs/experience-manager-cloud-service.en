@@ -143,4 +143,4 @@ Code sample 3
 
 | Maintenance Window Configuration | Who owns the configuration | Configuration Type | Location | Example | Parameters |
 |---|---|---|---|---|---|
-| Daily | Customer | JCR Node Definition | See location 2 below | See code sample 2 below | **windowSchedule=daily** (this value should not be changed). <br> **windowStartTime=HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing. <br> **windowEndTime= HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed. |
+| Daily | Customer | JCR Node Definition | See location 2 below | See code sample 2 below | **windowSchedule= daily** (this value should not be changed). <br> **windowStartTime= HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing. <br> **windowEndTime= HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed. |
