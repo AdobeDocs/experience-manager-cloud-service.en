@@ -1,9 +1,9 @@
 ---
-title: How to Model Your Content as AEM Data Models
+title: How to Model Your Content
 description: In this part of the AEM Headless Developer Journey, learn how to model your content for AEM Headless delivery using Data Modeling with Content Fragment Models and Content Fragments.
 ---
 
-# How to Model Your Content as AEM Data Models {#model-your-content}
+# How to Model Your Content {#model-your-content}
 
 >[!CAUTION]
 >
@@ -22,7 +22,7 @@ In this part of the [AEM Headless Developer Journey](#overview.md), you can lear
 >
 >Data Modeling is a very large field, as it is used when developing Relational Databases. There are many books, and online sources of information, available.
 >
->We will only consider the aspects that are of interest when modeling data for use with AEM.
+>We will only consider the aspects that are of interest when modeling data for use with AEM Headless.
 
 ## Data Modeling {#data-modeling}
 
@@ -62,7 +62,7 @@ For example, advertising special events for all schools in the area:
 
 What you want to describe are referred to as **Entities** - basically the "things" that we want to store information about.
 
-The information that we want to store about them are the **Attributes**, such as Name, and Qualifications for the teachers. 
+The information that we want to store about them are the **Attributes** (properties), such as Name, and Qualifications for the teachers. 
 
 Then there are various **Relationships** between the entities. For example, usually a school only has one head teacher, and many teachers (and usually the head teacher is also a teacher).
 
@@ -134,7 +134,11 @@ The content returned can then be used by your applications.
 
 Content Fragment Models provide various mechanisms that allow you to define the structure of your content. 
 
-A Content Fragment Model describes an entity.
+A Content Fragment Model describes an entity. 
+
+>[!TIP]
+>
+>The model should be named so that the content author knows which model to select when creating a Content Fragment.
 
 Within a model:
 
@@ -175,17 +179,13 @@ Two data types provide references to content outside a specific fragment:
   * Edit the referenced fragment directly.
   * Create a new content fragment, based on the appropriate model
 
-## Using the structure to generate content - Content Fragments {#use-content-to-generate-content}
+## Using the structure to generate content with Content Fragments {#use-content-to-generate-content}
 
->[!NOTE]
->To be continued....
+Content Fragments are always based on a Content Fragment Model. The model provides the structure, the fragment holds the content.
 
-Content Fragments are always based on a Content Fragment Model. 
 ### Selecting the appropriate model {#select-model}
 
 The first step to actually creating your content is to create a Content Fragment. This is based on a specific Content Fragment Model, that you select as the first step of the creation process.
-
-Your Content Fragment Models should have been given clear, and concise, names, so that the authors can easily find the correct model.
 
 ### Creating, and editing, structured content {#create-edit-structured-content}
 
@@ -202,7 +202,9 @@ Once your fragment has been created, you can open it in the Content Fragment Edi
 ## Getting Started with some Examples {#getting-started-examples}
 
 >[!NOTE]
->tbc.....and/or see the structures covered for the GraphQL samples.
+>tbc...
+>...and/or see the structures covered for the GraphQL samples...
+>...will those (ever) be delivered as an official sample package?
 
 ## What's Next {#whats-next}
 
