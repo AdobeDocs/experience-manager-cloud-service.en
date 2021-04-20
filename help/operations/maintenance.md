@@ -50,11 +50,10 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>See location 1 below</td>
     <td>See code sample 1 below</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily (this value should not be changed)</li>
-    <li><strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.</li>
-    <li><strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily (this value should not be changed)
+    <strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.
+    <strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.
+    </td> 
   </tr>
   <tr>
     <td>Weekly</td>
