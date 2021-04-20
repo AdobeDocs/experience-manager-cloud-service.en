@@ -50,9 +50,9 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>See location 1 below</td>
     <td>See code sample 1 below</td>
   <td>
-  <strong>windowSchedule</strong> = daily (this value should not be changed)
-  <strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.
-  <strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.
+  <strong>windowSchedule= daily</strong> (this value should not be changed)
+  <strong>windowStartTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.
+  <strong>windowEndTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.
   </td> 
   </tr>
   <tr>
@@ -62,10 +62,10 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>See location 2 below</td>
     <td>See code sample 2 below</td>
     <td>
-    <strong>windowSchedule</strong> = weekly (this value should not be changed)
-    <strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the weekly Maintenance Window should begin executing.
-    <strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Weekly Maintenance Window should stop executing if they haven't already completed.
-    <strong>windowScheduleWeekdays = Array of 2 values from 1-7. e.g. [5,5].</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.
+    <strong>windowSchedule= weekly</strong> (this value should not be changed)
+    <strong>windowStartTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the weekly Maintenance Window should begin executing.
+    <strong>windowEndTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Weekly Maintenance Window should stop executing if they haven't already completed.
+    <strong>windowScheduleWeekdays= Array of 2 values from 1-7 (e.g. [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.
     </td> 
   </tr>
   <tr>
@@ -75,11 +75,11 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>See location 3 below</td>
     <td>See code sample 3 below</td>
     <td>
-    <strong>windowSchedule</strong> = daily (this value should not be changed)
-    <strong>windowStartTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should begin executing.
-    <strong>windowEndTime</strong> = HH:MM using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should stop executing if they haven't already completed.
-    <strong>windowScheduleWeekdays = Array of 2 values from 1-7. e.g. [5,5].</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.
-    <strong>windowFirstLastStartDay - 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs every day as governed by windowScheduleWeekdays every month.
+    <strong>windowSchedule= daily</strong> (this value should not be changed)
+    <strong>windowStartTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should begin executing.
+    <strong>windowEndTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Monthly Maintenance Window should stop executing if they haven't already completed.
+    <strong>windowScheduleWeekdays = Array of 2 values from 1-7 (e.g. [5,5])</strong> The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively.
+    <strong>windowFirstLastStartDay= 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs every day as governed by windowScheduleWeekdays every month.
     </td> 
     </tr>
 </table>
@@ -140,9 +140,3 @@ Code sample 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
-
-| Maintenance Window Configuration | Who owns the configuration | Configuration Type | Location | Example | Parameters |
-|---|---|---|---|---|---|
-| Daily | Customer | JCR Node Definition | See location 1 below | See code sample 1 below | **windowSchedule= daily** (this value should not be changed). <br> **windowStartTime= HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing. <br> **windowEndTime= HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed. |
-| Weekly | Customer | JCR Node Definition | See location 2 below | See code sample 2 below | **windowSchedule= weekly** (this value should not be changed). <br> **windowStartTime= HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Weekly Maintenance Window should begin executing. <br> **windowEndTime= HH:MM** using as 24 hour clock. Defines when the Maintenance Tasks associated with the Weekly Maintenance Window should stop executing if they haven't already completed. <br> **windowScheduleWeekdays= Array of 2 values from 1-7** (e.g. [5,5]). The first value of the array is the start day when the job is scheduled and the second value is the end day when the job would be stopped. The exact time of the start and the end is governed by windowStartTime and windowEndTime respectively. |
-
