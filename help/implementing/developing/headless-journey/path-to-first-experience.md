@@ -119,11 +119,12 @@ A headless project is not only successful because of the technology implemented,
 
 ## What's Next {#what-is-next}
 
-You should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Data Models](model-your-content.md) where you learn how to model your content structure in AEM.
+You should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content 
+Models](model-your-content.md) where you learn how to model your content structure in AEM.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Data Models,](model-your-content.md) the following are some additional resources that do a deeper dive on some concepts mentioned in this document.
+While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Content Models,](model-your-content.md) the following are some additional resources that do a deeper dive on some concepts mentioned in this document.
 
 * [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md) - A complete overview of how to implement editable SPAs in AEM
 * [Headless Development for AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
