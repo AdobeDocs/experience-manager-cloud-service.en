@@ -11,6 +11,15 @@ description: In this part of the AEM Headless Developer Journey, learn how to de
 
 In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 
+## Objective {#objective}
+
+This document helps you understand the AEM headless publication pipeline and the performance considerations you need to be aware of before you go live with your application.
+
+* Understand AEM Content Replication and Caching Basics
+* Configure the tooling required to simulate go live for your headless application
+* Secure and Scale your application before Launch
+* Monitor Performance and Debug Issues
+
 ## Content Replication and Caching Basics {#content-replication-and-caching}
 
 A full AEM environment is made up of an Author, Publish, and Dispatcher. 
