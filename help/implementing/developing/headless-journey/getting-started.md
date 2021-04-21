@@ -40,20 +40,6 @@ Replication is the act of transferring content from the author instance to the p
 
 Refer to the document [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) for more details on publishing content on AEM.
 
-### Repository {#repository}
-
-All content is stored in a JCR-compliant repository. For the repository, everything is content. This means all content, code, and assets for your project are stored in the repository.
-
-Content authors do not need to understand how their content is stored, but developers may need to access the repository directly on occasion. There are a number of ways to access information from the repository including REST and GraphQL APIs among others.
-
-See the document [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md) for more details on the JCR content repository foundation of AEM. Note that this document is very technical and also covers all areas of AEM development, many of which are not necessary for headless projects.
-
-### Packages {#packages}
-
-Because the repository contains all content for your project, including code, it must be simple to introduce new content created by your development team. Packages are self-contained, deployable units of content which can be easily installed in your repository. Packages allow for simple deployment of new code and other content as part of a development project.
-
-See the document [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md) for full details on how packages are structured in AEM projects.
-
 ### AEM Basics Summary {#aem-basics-summary}
 
 At its simplest level, creating digital experiences in AEM requires the following steps:
