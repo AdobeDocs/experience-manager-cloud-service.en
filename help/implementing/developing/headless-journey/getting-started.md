@@ -44,7 +44,6 @@ Refer to the document [Publishing Pages](/help/sites-cloud/authoring/fundamental
 
 At its simplest level, creating digital experiences in AEM requires the following steps:
 
-1. Your developers will create their customizations and deploy them to the repository as packages.
 1. Your content authors will create your headless content in the author instance.
 1. When this content is ready, it is replicated to the publish instance. APIs can then be called to retrieve this content.
 
