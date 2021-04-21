@@ -5,11 +5,16 @@ description: This page describes introductory information about Adobe ID.
 
 ## Understand Adobe ID {#adobe-id}
 
-An Adobe ID is simply the email you will use to login and access AEM as a Cloud Service or any of your Adobe solutions. This is the email ID that your System Administrator uses while setting your team up. By using your Adobe ID you keep all your Adobe plans and products associated with a single account. An Adobe ID is essential for a secure and personalized experience with Adobe applications and services. 
+An Adobe ID is simply the email you will use to login and access AEM as a Cloud Service or any of your Adobe solutions. This is the email ID that your System Administrator uses while setting your team up. By using your Adobe ID you keep all your Adobe plans and products associated with a single account.
 
-## Categories of Adobe ID {#categories}
+>[!IMPORTANT]
+>An Adobe ID is essential for a secure and personalized experience with Adobe applications and services, and is required when you want to buy Adobe products. Refer to [Create or update your Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) to learn more.
 
-Adobe ID is categorized into three types, namely:
+## Identity Types available in Adobe Admin Console {#identity-types}
+
+Adobe’s identity management system helps admins create and manage user's access to applications and services. Refer to [Identity overview](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) to learn more.
+
+Adobe offers the following identity types or accounts to authenticate and authorize users:
 
 * **Personal ID**
 
