@@ -2,7 +2,6 @@
 title: Managing viewer presets
 description: Learn how to create and manage viewer presets in Dynamic Media.
 feature: Viewer Presets,Viewers
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 ---
