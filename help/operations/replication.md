@@ -25,15 +25,65 @@ To realize the automatic replication for this you need to enable **Auto Replicat
 
    ![OSGi On Off Trigger Configuration](/help/operations/assets/replication-on-off-trigger.png)
 
-### Tree Activation {#tree-activation}
+### Managed Publication {#managed-publication}
 
-To perform a tree activation:
+You can invoke the replication of an entire content tree by using **Managed Publication** if you select **Include Children** and leave **Include only immediate children** disabled. This triggers a workflow that you will be able to view in Workflow instances.
 
-1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **forwardPublisher**
-3. Once in the forwardPublisher Web console UI, **select Distribute**
-![Distribute](assets/distribute.png "Distribute")
-4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
+To do this, follow the below steps:
+
+1. In the AEM as a Cloud Service homepage, go to **Sites**
+1. Select the node you wish to activate
+1. Select **Managed Publication** in the top action menu that appears
+   
+   ![Managed Publication](/help/operations/assets/managed.png)
+
+1. In the following screen, choose to replicate at a later date by clicking the **Later** radio button and selecting a date
+1. Click **Next**
+1. Now, tick the box next to the content node you wish to replicate, and select **Include Children**
+1. In the following window, untick **Include only immediate children**. Otherwise, tree replication will not be invoked
+   
+   ![Immediate Children](/help/operations/assets/immediatechildren.png)
+
+1. Click **Add**
+1. Finally, set a name for the ensuing Workflow and press **Publish Later**.
+
+### Replication Workflows {#replication-workflows}
+
+Alternatively to the above mentioned method of Managed Publication, you can also trigger a tree replication by creating a Workflow Model that uses the `Treereplication` process step:
+
+1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**
+1. In the Workflow Models page, press **Create** in the upper right corner of the screen
+1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. Select the newly created model from the list, and press **Edit**
+1. In the following window, drag and drop the Process Step to the current model flow:
+   
+   ![Process Step](/help/operations/assets/processstep.png)
+
+1. Click the Process step in the flow and select **Configure** by pressing the wrench icon
+1. Click on the **Process** tab and select `Treeactivation` from the drop down list
+   
+   ![Treeactivation](/help/operations/assets/treeactivation.png)
+
+1. Set any additional parameters in the **Arguments** field. Multiple comma separated arguments can be stringed together. For example:
+   
+   `enableVersion=true,agentId=publish`  
+
+   >[!NOTE]
+   >
+   >For the list of parameters, see the **Parameters** section below.
+
+1. Press **Done** to save the Workflow model.
+
+**Parameters**
+
+* `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
+* `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
+* `agentId` (string value, default means all enabled agents are used).
+* `filters` (string value, default means all paths are activated). Available values are:
+  * `onlyActivated` - only paths which are not marked as activated will be activated.
+  * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
+  * The above can be ORed with a pipe "|". For example, `onlyActivated|onlyModified`.  
+
 
 ## Troubleshooting {#troubleshooting}
 
