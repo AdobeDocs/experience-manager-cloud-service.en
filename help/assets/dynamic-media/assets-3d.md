@@ -112,8 +112,8 @@ See also [Previewing assets using the software interface](/help/assets/dynamic-m
     | --- | --- | --- | --- |
     | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
     | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
-    | **Zoom your camera**  | Zoom your camera to move in and out of areas of the 3D scene. | Scroll wheel. | Two-finger pinch. |
-    | **Recenter your camera**  | Recenter your camera to a point on a object in the 3D scene. | Double-click. | Double-tap. |
+    | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
     | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
     | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
@@ -145,8 +145,8 @@ See also [Previewing assets using the software interface](/help/assets/dynamic-m
     | --- | --- | --- | --- |
     | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
     | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
-    | **Zoom your camera**  | Zoom your camera to move in and out of areas of the 3D scene. | Scroll wheel. | Two-finger pinch. |
-    | **Recenter your camera**  | Recenter your camera to a point on a object in the 3D scene. | Double-click. | Double-tap. |
+    | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
     | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
     | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
