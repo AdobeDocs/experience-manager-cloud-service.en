@@ -2,7 +2,6 @@
 title: Managing Image Presets
 description: "Learn about image presets and how to create, modify, and manage image presets."
 feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 ---
