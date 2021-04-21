@@ -66,7 +66,7 @@ Alternatively to the above mentioned method of Managed Publication, you can also
 
 1. Set any additional parameters in the **Arguments** field. Multiple comma separated arguments can be stringed together. For example:
    
-   ```enableVersion=true,agentId=publish```
+   `enableVersion=true,agentId=publish`  
 
    >[!NOTE]
    >
