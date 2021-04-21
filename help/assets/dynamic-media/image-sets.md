@@ -2,7 +2,6 @@
 title: Image Sets
 description: Learn how to work with image sets in Dynamic Media.
 feature: Image Sets
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 ---
