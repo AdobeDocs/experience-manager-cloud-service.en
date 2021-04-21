@@ -31,7 +31,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |1|[Learn about CMS Headless Development](learn-about.md)|Learn about Headless Technology and when to use it.|
 |2|[Getting Started with AEM Headless as a Cloud Service](getting-started.md)|Learn about AEM Headless prerequisites|
 |3|[Path to your first experience using AEM Headless](path-to-first-experience.md)|Setup your development environment and learn how to integrate a simple app with AEM Headless|
-|4|[How to model your content as AEM data models](model-your-content.md)|Learn about how to place your content into Content Fragments for reuse across channels.|
+|4|[How to model your content as AEM Content Models](model-your-content.md)|Learn about how to place your content into Content Fragments for reuse across channels.|
 |5|[How to fetch your content via AEM delivery APIs](fetch-your-content.md)|Learn how to use GraphQL to access your Content Fragments content.|
 |6|[How to create single page applications (SPAs) with AEM](create-spa.md)|Learn how you can create editable SPAs using AEM's SPA Editor framework as well as integrate external SPAs, enabling editing capabilities as required.|
 |7|[How to update your content via AEM assets APIs](update-your-content.md)|Learn how to use REST API to access and update your Content Fragments content.|
