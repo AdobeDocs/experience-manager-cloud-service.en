@@ -209,7 +209,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 * Direct binary upload is a new method to upload assets. It is supported by default by the product capabilities and clients, like [!DNL Experience Manager] user interface, [!DNL Adobe Asset Link], and [!DNL Experience Manager] desktop app. Any custom code that is customized or extended by customers technical teams must use the new upload APIs and protocols.
 
-* Adobe recommends adding up to 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you see performance issues such as slower navigation to such folders.
+* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you will experience performance issues such as slower navigation to such folders.
 
 * When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset. If [Asset Insights](/help/assets/assets-insights.md) is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
