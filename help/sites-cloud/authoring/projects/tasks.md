@@ -1,8 +1,8 @@
 ---
 title: Working with Tasks
 description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
+exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 ---
-
 # Working with Tasks {#working-with-tasks}
 
 Tasks represent items of work to be done on content. When you are assigned a task, it appears in your Workflow Inbox. Task items have a value of task in the Type column.

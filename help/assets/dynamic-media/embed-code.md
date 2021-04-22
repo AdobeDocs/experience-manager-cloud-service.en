@@ -2,18 +2,18 @@
 title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Learn how to embed Dynamic Media video or image assets on a web page.
 feature: Asset Management
-topic: Business Practitioner
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 ---
-
 # Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use the **[!UICONTROL Embed Code]** feature when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed Code]** dialog box.
 
-You embed URLs only if you are _not_ using AEM as your WCM. If you are using AEM as your WCM, [you add the assets directly on your page.](adding-dynamic-media-assets-to-pages.md)
+You embed URLs only if you are _not_ using AEM as your WCM. If you are using AEM as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
 
-See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
+See [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    Remember that the embed code is only available to copy *after* you have first *published* the assets. In addition, the viewer preset or image preset must also be published.
 
-   See [Publishing Assets.](publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 

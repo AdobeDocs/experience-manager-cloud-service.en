@@ -1,8 +1,8 @@
 ---
 title: Repository Modernizer
 description: Repository Modernizer
+exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
 ---
-
 # Repository Modernizer {#repo-modernizer}
 
 Repository Modernizer is a utility developed to restructure existing project packages by separating content and code into discrete packages to be compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.

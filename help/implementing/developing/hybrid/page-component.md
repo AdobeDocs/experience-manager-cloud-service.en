@@ -1,8 +1,8 @@
 ---
 title: SPA Page Component
 description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
+exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 ---
-
 # SPA Page Component {#spa-page-component}
 
 The page component for an SPA doesn't provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (i.e. the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.

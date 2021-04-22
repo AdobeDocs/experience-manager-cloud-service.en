@@ -3,8 +3,10 @@ title: Manage digital assets collections
 description: Understand the concept of collection in Adobe Experience Manager Assets. Learn how to collections, manage, edit, and collections with other users.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Collections,Asset Management
+role: Business Practitioner
+exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 ---
-
 # Manage collections {#manage-collections}
 
 A collection is a set of assets within Adobe Experience Manager Assets. Use collections to share assets between users. The set can be static collection or a dynamic collection that is based on search results.

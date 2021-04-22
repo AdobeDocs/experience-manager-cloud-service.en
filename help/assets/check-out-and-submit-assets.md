@@ -2,8 +2,10 @@
 title: Check in and Check out files in [!DNL Assets]
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
+feature: Asset Management
+role: Business Practitioner
+exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
 ---
-
 # Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
 [!DNL Adobe Experience Manager Assets] lets you check out assets for editing and check them back in after you complete making the changes. After you check out an asset, only you can edit, annotate, publish, move, or delete the asset. Checking out an asset locks the asset. Other users cannot perform any of these operations on the asset until you check the asset back in to [!DNL Assets]. However, they can still change the metadata for the locked asset.

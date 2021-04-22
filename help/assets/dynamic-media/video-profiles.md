@@ -2,9 +2,9 @@
 title: Dynamic Media Video Profiles
 description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
 feature: Asset Management,Video Profiles,Renditions
-topic: Business Practitioner
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 ---
-
 # Dynamic Media Video Profiles{#video-profiles}
 
 Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your primary source videos using the Adaptive Video Encoding profile, during playback the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This action is known as adaptive streaming.
@@ -29,7 +29,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 >
 >Metadata is useful when you are searching for assets. The thumbnails are static video images that are generated during encoding. They are required by the Experience Manager system and used in the user interface to help you visually identify videos in the Cards view, Search Results view, and the Asset List view. You can see the generated thumbnails when you tap the Renditions icon (a Painter's palette) of an encoded video.
 
-When you are done creating the Video Profile, you apply it to a folder or multiple folders. See [Applying a Video Profile to folders.](#applying-a-video-profile-to-folders)
+When you are done creating the Video Profile, you apply it to a folder or multiple folders. See [Applying a Video Profile to folders](#applying-a-video-profile-to-folders).
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -421,4 +421,3 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 1. Tap or click the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a Video Profile from.
 1. On the folder, tap or click the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
-

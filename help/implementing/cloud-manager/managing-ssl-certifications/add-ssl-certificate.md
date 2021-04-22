@@ -1,8 +1,8 @@
 ---
 title: Adding an SSL Certificate - Managing SSL Certificates
 description: Adding an SSL Certificate - Managing SSL Certificates
+exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 ---
-
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 >[!NOTE]

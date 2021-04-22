@@ -2,9 +2,9 @@
 title: Applying Dynamic Media viewer presets
 description: Learn how to apply viewer presets in Dynamic Media.
 feature: Viewer Presets,Viewers
-topic: Administrator,Business Practitioner
+role: Business Practitioner
+exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
 ---
-
 # Applying Dynamic Media viewer presets {#applying-viewer-presets}
 
 A Viewer Preset is a collection of settings that determine how users view rich-media assets on their computer screens and mobile devices. You can apply any viewer presets created by your administrator to an asset.

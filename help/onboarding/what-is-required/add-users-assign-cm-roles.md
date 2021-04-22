@@ -1,8 +1,8 @@
 ---
 title: System Administrator Tasks 
 description: Follow this page to learn how to add users and assign them to Cloud Manager roles as a System Administrator
+exl-id: 4c0f5783-02c1-4ea6-871a-03ea8a0847bf
 ---
-
 # System Administrator Tasks {#add-users-assign}
 
 System Administrators manage all aspects of their users, from access to permissions. This user is the first person to have access to start doing tasks within Admin Console and Cloud Manager. 
@@ -37,17 +37,6 @@ A System Administrator performs the following organizational tasks:
     ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
       >[!NOTE]
-      >Refer to the preceding sections, [User Roles and Permissions](#user-roles) and [Permissions associated with Role Definitions](#permissions) to ensure that the right users are assigned the right Role(s) in the **Admin Console**.
+      >Refer to [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md) to learn more about roles and permissions offered in Cloud Manager.
 
       Now, you have added users to Adobe Experience Manager as a Cloud Service Product Context and are setup with the right Roles or Product Profiles.
-
-      For example, if you are in the role of a:
-
-      * ***Business Owner***, you have the permission to Add a new program or Edit a program, add or update an environment, add/edit/delete the pipeline and run any pipeline, and deploy code to AEM environment or code quality.
-
-      * ***Deployment Manager***, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment or code-quality. 
-
-      * ***Developer***, you have the permission to generate Personal Access Token to access Git.
-
-        >[!NOTE]
-        > A user can be assigned to multiple roles. For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.

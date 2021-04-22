@@ -1,8 +1,8 @@
 ---
 title: Hibernating and De-hibernating Sandbox Environments 
-description: Hibernating and De-hibernating Sandbox Environments 
+description: Hibernating and De-hibernating Sandbox Environments
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 ---
-
 # Hibernating and De-hibernating Sandbox Environments {#hibernating-introduction}
 
 Sandbox Program environments enter a *hibernation mode* if no activity is detected for a certain period of time.
@@ -127,9 +127,4 @@ Refer to [Updating Environment](/help/implementing/cloud-manager/manage-environm
 
 >[!NOTE]
 >* A manual update can only be run when the targeted environment has a properly configured pipeline. 
->* A manual update to either *Production* or *Stage* environment will automatically update the other. The Production+Stage environment set must be on the same AEM release. 
-
-
-
-
-
+>* A manual update to either *Production* or *Stage* environment will automatically update the other. The Production+Stage environment set must be on the same AEM release.

@@ -1,8 +1,8 @@
 ---
 title: Query Builder API
 description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
+exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 ---
-
 # Query Builder API {#query-builder-api}
 
 The Query Builder offers an easy way of querying the content repository of AEM. The functionality is exposed through a Java API and a REST API. This document describes these APIs.
