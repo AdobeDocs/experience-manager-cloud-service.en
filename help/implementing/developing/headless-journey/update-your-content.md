@@ -23,3 +23,5 @@ In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to
 
 ## Additional Resources {#additional-resources}
 
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
