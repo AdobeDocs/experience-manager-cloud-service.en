@@ -2,8 +2,10 @@
 title: Import and export asset metadata in bulk
 description: This article describes how to import and export metadata in bulk.
 contentOwner: AG
+feature: Metadata
+role: Business Practitioner,Administrator
+exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 ---
-
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.

@@ -1,8 +1,8 @@
 ---
 title: Checking IP Allow List Status
 description: Checking IP Allow List Status
+exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
 ---
-
 # Checking IP Allow List Status {#check-allow-list-status}
 
 Follow the steps below to determine the status of updates to your IP Allow List:
@@ -45,4 +45,3 @@ Customers with environments that includes pre-existing CDN configurations for IP
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
-

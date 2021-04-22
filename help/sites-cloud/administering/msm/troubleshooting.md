@@ -3,8 +3,8 @@ title: Troubleshooting MSM Issues and FAQ
 description: Find out how to troubleshoot the most common MSM-related issues and get answers the most common MSM-related questions.
 feature: Multi Site Manager
 role: Administrator
+exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 ---
-
 # Troubleshooting MSM Issues and FAQ {#troubleshooting-msm}
 
 ## Troubleshooting First Steps {#first-steps}

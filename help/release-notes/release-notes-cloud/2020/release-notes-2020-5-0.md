@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Release Notes for 2020.5.0
 description: Experience Manager Release Notes for 2020.5.0
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 ---
-
 # Release Notes for AEM as a Cloud Service 2020.5.0 {#release-notes}
 
 This page outlines the general Release Notes for Experience Manager as a Cloud Service 2020.5.0.
@@ -42,5 +42,3 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 * The Create Environment dialog did not render correctly in Safari.
 * Certain cards on the overview page did not display entity names correctly.
 * In some cases, the Build Image would fail to download customer packages successfully.
-
-

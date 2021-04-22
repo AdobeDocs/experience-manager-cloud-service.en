@@ -1,8 +1,8 @@
 ---
 title: Tools Consoles
 description: Learn about the different tools consoles throughout AEM.
+exl-id: 9cc7c82d-62ef-4226-874a-b5d8e76604af
 ---
-
 # Tools Consoles{#tools-consoles}
 
 The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. 

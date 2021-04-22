@@ -1,8 +1,8 @@
 ---
 title: Components Reference Guide
 description: A developer reference guide to the details of components and their structure
+exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 ---
-
 # Components Reference Guide {#components-reference-guide}
 
 Components are at the core of building an experience in AEM. The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) make it simple to get started with a tool set of ready-made, robust components. The [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) takes the developer through how to use these tools and how to build custom components in order to create a new AEM site.

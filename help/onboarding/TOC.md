@@ -3,7 +3,6 @@ sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
 breadcrumb-title: Onboarding Guide
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
-feature-set: Experience Manager Sites
 feature: Deploying
 role: Architect, Developer
 ---
@@ -13,7 +12,7 @@ role: Architect, Developer
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
 + Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Get your Adobe ID](what-is-required/get-your-adobe-id.md)
-  + [User Roles and Permissions](what-is-required/user-roles-permissions.md)
+  + [Cloud Manager Roles](what-is-required/user-roles-permissions.md)
   + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
   + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
   + [Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
@@ -72,7 +71,8 @@ role: Architect, Developer
     + [Deleting an IP Allow List](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
     + [Checking an IP Allow List Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.3.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.4.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Release Notes for 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
     + [Release Notes for 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
     + [Release Notes for 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
     + [Release Notes for 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)

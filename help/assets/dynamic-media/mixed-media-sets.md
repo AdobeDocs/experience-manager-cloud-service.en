@@ -2,9 +2,9 @@
 title: Mixed Media Sets
 description: Learn how to work with mixed media sets in Dynamic Media.
 feature: Mixed Media Sets
-topic: Business Practitioner
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 ---
-
 # Mixed Media Sets{#mixed-media-sets}
 
 Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and videos in one presentation.
@@ -25,11 +25,11 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
    Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/dynamic-media/image-sets.md) and [Spin Sets](/help/assets/dynamic-media/spin-sets.md). Because users can zoom on images in the Mixed Media Set Viewer, be sure you account for zooming when you choose images. Make sure that the images are least 2000 pixels in the largest dimension.
 
-1. [Create Mixed Media Sets.](#creating-mixed-media-sets)
+1. [Create Mixed Media Sets](#creating-mixed-media-sets).
 
    To create a Mixed Media Set, from the Assets page, tap **[!UICONTROL Create > Mixed Media Set]** and then name the set, choose the assets, and choose the order the images appear.
 
-   See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Set up [Mixed Media Viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md), as needed.
 
@@ -37,13 +37,13 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
    To create or edit viewer presets, see **[!UICONTROL Tools > Assets > Viewer Presets]**.
 
-   See [Adding and editing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   See [Adding and editing viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Preview Mixed Media Sets.](#previewing-mixed-media-sets)
+1. [Preview Mixed Media Sets](#previewing-mixed-media-sets).
 
    Select the Mixed Media Set and you can preview it. To examine your Mixed Media Set in the selected Viewer, click the thumbnail icons. You can choose different Viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
-1. [Publish Mixed Media Sets.](#publishing-mixed-media-sets)
+1. [Publish Mixed Media Sets](#publishing-mixed-media-sets).
 
    Publishing a Mixed Media Set activates the URL and Embed string. In addition, you must [publish the viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -162,4 +162,3 @@ See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-asset
 >[!NOTE]
 >
 >If the mixed media set does not fully end up in the delivery service the first time you publish it, publish the mixed media set a second time.
-

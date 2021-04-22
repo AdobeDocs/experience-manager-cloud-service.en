@@ -1,8 +1,8 @@
 ---
 title: Using Content Transfer Tool
 description: Using Content Transfer Tool
+exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 ---
-
 # Using Content Transfer Tool {#using-content-transfer-tool}
 
 ## Important Considerations for Using Content Transfer Tool {#pre-reqs}
@@ -270,5 +270,3 @@ The files created in the *OUT_DIR* specified above for consistency can then be c
 As a user, you might see the following behavioral changes in the User Interface (UI) for Content Transfer Tool:
 
 * The icons in the Content Transfer Tool UI may appear to be different from the screenshots shown in this guide or may not show up at all depending on the version of the source AEM instance.
-
-

@@ -1,9 +1,9 @@
 ---
 title: Linking URLs to your web application
 description: Learn how to link URLs to your web application in Dynamic Media.
-topic: Business Practitioner
+role: Business Practitioner
+exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 ---
-
 # Linking URLs to your web application {#linking-urls-to-your-web-application}
 
 Your websites and applications access Dynamic Media services by way of URL calls. After you publish an asset, Dynamic Media activates a URL string that references the asset. You can paste these URLs into a web browser for testing.
