@@ -17,3 +17,9 @@ In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to
   * Introduce and discuss Content Fragment support in the API.
   * Illustrate details of the API.
   * Look at sample code to see how things work in practice.
+
+
+## What's Next {#whats-next} 
+
+## Additional Resources {#additional-resources}
+
