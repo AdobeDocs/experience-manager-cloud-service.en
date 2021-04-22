@@ -7,6 +7,17 @@ description: In this part of the AEM Headless Developer Journey, you will unders
 
 In this part of the [AEM Headless Developer Journey,](#overview.md) you will understand the steps to implementing your first headless experience in AEM including planning considerations and learn best practices to make your path as smooth as possible.
 
+## The Story So Far {#story-so-far}
+
+In the previous document of the AEM headless journey, [Getting Started with AEM Headless as a Cloud Service](getting-started.md) you learned the basic theory of what a headless CMS is and you should now:
+
+* Understand the basics of AEM's headless features.
+* Know the prerequisites for using AEM's headless features.
+* Be able to determine your integration level.
+* Be able to define your project in terms of scope and the chosen integration level.
+
+This article builds on those fundamentals so you understand how to prepare your own AEM headless project.
+
 ## Objective {#objective}
 
 This document helps you understand the steps needed to implement your first project. After reading it you should:
@@ -48,8 +59,6 @@ Production is where content authors create and manage their actual content. Mode
 
 During the development stage, it is recommended you work with a development and staging environment. As you move to performance testing, you will want to move to the production environment.
 
-See the document [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md) for more information.
-
 ### Cooperation of Developers and Content Authors {#cooperation}
 
 Developers need an AEM development environment set up with the populated content models. The developer develops the client that will consume content from AEM headless as the content authors are still creating the content. That is why the API definitions are really important. By leveraging the AEM SDK, the developer can create a test hook so client and unit tests can be created to make sure the client is able to properly render the content.
@@ -58,17 +67,15 @@ Content authors create content based on the content models that have been define
 
 ## Setup {#setup}
 
-Before you get started with headless in AEM, you need to make sure all required features are enabled.
+Before you get started with headless in AEM, you need to make sure all required features are enabled. This section outlines what is required. The actual steps to fulfill these steps are detailed later in the [AEM Headless Developer Journey.](#overview.md)
+
+You can also optionally refer to the [additional resources](#additional-resources) for more information on the individual topics.
 
 ### Configuration {#configuration}
 
-1. Enabling Content Fragments
-1. Enabling GraphQL
-1. Headless SDK
-
->[!TIP]
->
->Refer to the [headless getting started guide](/help/implementing/developing/headless/introduction.md#getting-started) for a quick introduction to these required configurations.
+1. Enable Content Fragments
+1. Enable GraphQL
+1. Set up the Headless SDK
 
 ## Implementing Your First AEM Headless App
 
@@ -76,18 +83,18 @@ How you implement your first headless app depends on the integration level you c
 
 ### Level 1 - Content Modeled in AEM, Delivered to External Consumer {#level-one}
 
-1. [Create Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
-1. [Create Content Fragments](/help/assets/content-fragments/content-fragments.md)
-1. [Query content with GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)
+1. Create Content Fragment Models
+1. Create Content Fragments
+1. Query content with GraphQL
 
 ### Level 2 - Content Modeled in AEM, Delivers to External Consumer, and Visible/Editable in AEM {#level-two}
 
 Same as [level one](#level-one) and also including:
 
-1. [Creating an editable SPA](/help/implementing/developing/hybrid/introduction.md)
-1. [Editing an external SPA in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
-1. [Using the RemotePage component](/help/implementing/developing/hybrid/remote-page.md)
-1. [Using composite components](/help/implementing/developing/hybrid/composite-components.md)
+1. Creating an editable SPA
+1. Editing an external SPA in AEM
+1. Using the RemotePage component
+1. Using composite components
 
 ## Best Practices {#best-practices}
 
@@ -119,15 +126,30 @@ A headless project is not only successful because of the technology implemented,
 
 ## What's Next {#what-is-next}
 
-You should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content 
-Models](model-your-content.md) where you learn how to model your content structure in AEM.
+Now that you have completed this part of the AEM Headless Developer Journey, you should:
+
+* Understand important planning considerations for designing your content
+* Understand the steps to implement headless depending on your integration level requirements.
+* Set up the necessary tools and AEM configurations.
+* Know best practices to make your headless journey smooth, keep content generation efficient, and ensure content is delivered quickly.
+
+You should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Content Models,](model-your-content.md) the following are some additional resources that do a deeper dive on some concepts mentioned in this document.
+While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Content Models,](model-your-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
-* [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md) - A complete overview of how to implement editable SPAs in AEM
 * [Headless Development for AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
+* [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md) - A complete overview of AEM's architecture
+* [Headless Getting Started Guide](/help/implementing/developing/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
+* [Create Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
+* [Create Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
+* [Query content with GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation on the GraphQL API
+* [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md) - A complete overview of how to implement editable SPAs in AEM
+* [Creating an editable SPA](/help/implementing/developing/hybrid/introduction.md) - Guide to making a SPA editable in AEM
+* [Editing an external SPA in AEM](/help/implementing/developing/hybrid/editing-external-spa.md) - Guide to making an external SPA editable in AEM
+* [Using the RemotePage component](/help/implementing/developing/hybrid/remote-page.md) - How to use the RemotePage component to serve an external SPA within AEM
+* [Using composite components](/help/implementing/developing/hybrid/composite-components.md) - Create composite components for use with a SPA
