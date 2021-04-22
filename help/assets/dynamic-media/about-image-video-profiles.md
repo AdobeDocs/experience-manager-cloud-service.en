@@ -2,9 +2,9 @@
 title: About Dynamic Media Image Profiles and Video Profiles
 description: An Image Profile or a Video Profile is a recipe for what options to apply to assets that you upload to a folder. For example, you can specify what video encoding to apply to Dynamic Media video assets that you upload. Or, what Image Profile to apply to Dynamic Media image assets to have them properly cropped.
 feature: Asset Management,Image Profiles,Video Profiles
-topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 ---
-
 # About Dynamic Media Image Profiles and Video Profiles{#about-dm-image-video-profiles}
 
 An Image Profile or Video Profile is a recipe for what options to apply to assets that you upload to a folder. For example, you can specify what video encoding to apply to Dynamic Media video assets that you upload. Or, what Image Profile to apply to Dynamic Media image assets to have them properly cropped.

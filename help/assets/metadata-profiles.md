@@ -2,8 +2,10 @@
 title: Metadata profiles
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 contentOwner: AG
+feature: Metadata
+role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 ---
-
 # Metadata profiles {#metadata-profiles}
 
 A Metadata Profile lets you apply default metadata to assets within a folder. Create a Metadata Profile and apply it to a folder. Any asset that you subsequently upload to the folder inherits the default metadata that you configured in the Metadata Profile.
@@ -54,13 +56,11 @@ A Metadata Profile lets you apply default metadata to assets within a folder. Cr
 
 ## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
 
-When you assign a metadata profile to a folder, any subfolders automatically inherit the profile from its parent folder. This means that you can assign only one metadata profile to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
+When you assign a metadata profile to a folder, any subfolders automatically inherit the profile from its parent folder. The inheritance stops when a different profile is applied to a subfolder. You can assign only one metadata profile to a folder. Hence, carefully consider the folder structure where you upload, store, use, and archive assets. 
 
-If you assigned a different metadata profile to a folder, the new profile overrides the previous profile. The previously existing folder assets remain unchanged. The new profile is applied on the assets that are added to the folder later.
+If you assigned a different metadata profile to a folder, the new profile overrides the previous profile. The previously existing folder assets remain unchanged. The new profile is applied on the assets that are added to the folder after the change. You can apply metadata profiles to specific folders or globally to all assets.
 
 Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card name.
-
-You can apply metadata profiles to specific folders or globally to all assets.
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 

@@ -1,8 +1,8 @@
 ---
 title: A Quick Guide to WCAG 2.1
 description: A Quick Guide to WCAG 2.1
+exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 ---
-
 # A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
 
 Adobe Experience Manager (AEM) as a Cloud Service has been developed to maximize compliance with the Web Content Accessibility Guidelines.

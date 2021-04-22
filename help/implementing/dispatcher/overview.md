@@ -1,8 +1,8 @@
 ---
 title: Content Delivery Flow Overview
 description: Content Delivery Flow Overview
+exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 ---
-
 # Content Delivery Flow {#content-delivery}
 
 The current page details publish service content delivery in AEM as a Cloud Service. Publish service content delivery includes:
@@ -25,4 +25,4 @@ By default, the content type HTML/text is set to expire after 300s (5 minutes) a
 
 The sections below provide greater detail about content delivery, including CDN configuration and caching. 
 
-Information about replication from the author service to the publish service is available [here](/help/operations/replication.md). 
+Information about replication from the author service to the publish service is available [here](/help/operations/replication.md).

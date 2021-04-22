@@ -1,8 +1,8 @@
 ---
 title: Content Search and Indexing
 description: Content Search and Indexing
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 ---
-
 # Content Search and Indexing {#indexing}
 
 ## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
@@ -162,7 +162,7 @@ The new version of the application uses the following (changed) configuration:
 
 ### Undoing a Change {#undoing-a-change}
 
-Sometimes, a change in an index definition needs to be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetAssetLucene-8-custom-3` was created by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetAssetLucene-8-custom-2`. To do that, you need to add a new index called `damAssetAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetAssetLucene-8-custom-2`.
+Sometimes, a change in an index definition needs to be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetLucene-8-custom-3` was created by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetLucene-8-custom-2`. To do that, you need to add a new index called `damAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetLucene-8-custom-2`.
 
 ### Removing an Index {#removing-an-index}
 
@@ -191,7 +191,7 @@ If an index is to be removed in a later version of the application, you can defi
     </acme.product-custom-3>
 ```
 
-If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetAssetLucene-8` index, then you must add an index `damAssetAssetLucene-8-custom-4` that contains the index definition of `damAssetAssetLucene-8`.
+If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
 
 ### Index Availability and Fault Tolerance {#index-availability-and-fault-tolerance}
 

@@ -1,8 +1,8 @@
 ---
 title: JSON Exporter for Content Services
 description: AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages. They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client.
+exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 ---
-
 # JSON Exporter for Content Services {#json-exporter-for-content-services}
 
 AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond the focus of web pages.

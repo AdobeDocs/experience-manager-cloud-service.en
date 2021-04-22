@@ -1,9 +1,9 @@
 ---
 title: Configuring Dynamic Media Cloud Service
 description: Learn how to configure Dynamic Media in Adobe Experience Manager as a Cloud Service.
-topic: Administrator
+role: Administrator,Business Practitioner
+exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 ---
-
 # About configuring Dynamic Media Cloud Service {#configuring-dynamic-media}
 
 If you use Adobe Experience Manager for different environments, such as development, staging, and live production, configure Dynamic Media Cloud Services for each of those environments.
@@ -67,11 +67,11 @@ To migrate any custom viewer presets and configurations that you have created fr
       * Number
       * Special character: `# $ & . - _ : { }`
 
-      The **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction. 
+      The **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
 
       If necessary, you can check the spelling of a password you have typed or retyped by tapping the password eye icon to reveal the password. Tap the icon again to hide the password.
 
-1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]** 
+1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done]**.
 
    The new password is saved when you tap **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
 
@@ -87,7 +87,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Company Root Folder Path | Your company's root folder path. |
    | Publishing Assets | You can choose from the following three options:<br>**[!UICONTROL Immediately]**: When assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.<br>**[!UICONTROL Upon Activation]**: You must explicitly publish the asset first before a URL/Embed link is provided.<br>**[!UICONTROL Selective Publish]**: Assets are auto published for secure preview only. They can also be explicitly published to Experience Manager as a Cloud Service without publishing to DMS7 for delivery in the public domain. In the future, this option intends to publish assets to Experience Manager as a Cloud Service and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in Experience Manager as a Cloud Service for previewing; those same assets are not published in DMS7 for delivery in the public domain. |
    | Secure Preview Server | Lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, Experience Manager as a Cloud Service can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager as a Cloud Service instance).<br>Unless you have a special arrangement to use your own company's server or a special server, Adobe recommends that you leave this setting as specified. |
-   | Sync all content | Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]**: The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.<br>To mark a selected folder for sync to Dynamic Media, select an asset folder, then in the toolbar, tap **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.* See also [Working with Selective Publish at the folder level in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Inherited]**: No explicit sync value on the folder. Instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tooltip.<br>**[!UICONTROL Enable for subfolders]**: Include everything in this subtree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.<br>**[!UICONTROL Disabled for subfolders]**: Exclude everything in this subtree from syncing to Dynamic Media. |
+   | Sync all content | Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]**: The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.<br>To mark a selected folder for sync to Dynamic Media, select an asset folder, then in the toolbar, tap **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.* See also [Working with Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]**: No explicit sync value on the folder. Instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tooltip.<br>**[!UICONTROL Enable for subfolders]**: Include everything in this subtree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.<br>**[!UICONTROL Disabled for subfolders]**: Exclude everything in this subtree from syncing to Dynamic Media. |
 
    >[!NOTE]
    >
@@ -160,18 +160,18 @@ If necessary, you can check the spelling of a password you have typed or retyped
 The changed password is saved when you tap **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page.
 
 1. In Experience Manager as a Cloud Service, tap the Experience Manager as a Cloud Service logo to access the global navigation console.
-1. On the left of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
-1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]**. Do not tap or select the folder icon to the left of **[!UICONTROL global]**. Then, tap **[!UICONTROL Edit.]**
-1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, directly below the **[!UICONTROL Password]** field, tap **[!UICONTROL Change Password.]**
+1. On the left of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]**. Do not tap or select the folder icon to the left of **[!UICONTROL global]**. Then, tap **[!UICONTROL Edit]**.
+1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, directly below the **[!UICONTROL Password]** field, tap **[!UICONTROL Change Password]**.
 1. In the **[!UICONTROL Change Password]** dialog box, do the following:
 
    * In the **[!UICONTROL New Password]** field, enter a new password.
 
       The **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
 
-   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done.]**
+   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then tap **[!UICONTROL Done]**.
 
-1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK.]**
+1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK]**.
 
 ## (Optional) Configuring Advanced Settings in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -219,7 +219,7 @@ The Image Server screen establishes default settings for delivering images. See 
 
 #### Configuring application general settings {#configuring-application-general-settings}
 
-To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings.]**
+To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings]**.
 
 **[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your website and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by Experience Manager as a Cloud Service support.
 **[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder different from the original or assets with a different file extension from the original.
@@ -245,7 +245,7 @@ To configure the default color properties for enabling color correction when req
    | CMYK Default Color Space | Name of the default CMYK color profile. |
    | Grayscale Default Color Space | Name of the default Gray color profile. |
    | RGB Default Color Space | Name of the default RGB color profile. |
-   | Color Conversion Rendering Intent | Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe recommends **[!UICONTROL relative]** as the default. |
+   | Color Conversion Rendering Intent | Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default. |
 
 1. Tap **[!UICONTROL Save]**.
 
@@ -288,7 +288,7 @@ See [Uploading Assets](/help/assets/add-assets.md).
 
 1. Do one of the following:
    * Repeat steps 3-4 to edit more MIME types.
-   * On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
+   * On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
 
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to Experience Manager as a Cloud Service.
 
@@ -298,7 +298,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 **To add MIME types for unsupported formats**
 
-1. From Experience Manager as a Cloud Service, tap **[!UICONTROL Tools > Operations > Web Console.]**
+1. From Experience Manager as a Cloud Service, tap **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -440,7 +440,7 @@ To update the Scene7 upload connection:
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Tap **[!UICONTROL Save.]**
+1. Tap **[!UICONTROL Save]**.
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
@@ -544,4 +544,3 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-   

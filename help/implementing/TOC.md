@@ -3,7 +3,6 @@ sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
-feature-set: Experience Manager
 feature: Developer Tools
 role: Developer, Architect
 ---
@@ -56,6 +55,7 @@ role: Developer, Architect
   + [Accessing Git](cloud-manager/accessing-git.md)
   + [Integrating Git with Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
   + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+  + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Developing for AEM as a Cloud Service {#developing}
   + [AEM Project Structure](developing/introduction/aem-project-content-package-structure.md)
   + [AEM Project Repository Structure Package](developing/introduction/repository-structure-package.md)

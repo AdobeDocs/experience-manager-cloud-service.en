@@ -1,8 +1,8 @@
 ---
 title: SPA Reference Materials
 description: An overview of the single page application API references and source code repositories
+exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 ---
-
 # SPA Reference Materials {#spa-reference-materials}
 
 ## SPA Javascript API References for NMP Modules {#api-references}

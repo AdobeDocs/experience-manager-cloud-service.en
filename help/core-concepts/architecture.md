@@ -1,8 +1,8 @@
 ---
 title: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service
-description: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service. 
+description: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service.
+exl-id: fb169e85-ac19-4962-93d9-abaed812f948
 ---
-
 # An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
 Adobe Experience Manager (AEM) as a Cloud Service has resulted in changes to the architecture.
@@ -172,4 +172,4 @@ The new architecture for AEM as a Cloud Service introduces some fundamental chan
 
 * The concept of a golden master was introduced for automating the lifecycle of the publish nodes. The golden master is a specialized publish node, never accessed by any end user, and from which all the nodes of the publish service are created. Maintenance operations such as compaction are performed on the content repository attached to the golden master. The publish nodes are recycled daily and do not require any sort of routine maintenance; in the past such maintenance required some downtime, especially for the author instance.
 
-* The architecture completely separates the application content from the application code and configuration. All code and configuration is practically immutable and baked into the baseline image used to create the various nodes of the author and publish services. As a result, there is an absolute guarantee that each node is identical, and the changes to code and configuration can only be made globally by running a Cloud Manager pipeline. 
+* The architecture completely separates the application content from the application code and configuration. All code and configuration is practically immutable and baked into the baseline image used to create the various nodes of the author and publish services. As a result, there is an absolute guarantee that each node is identical, and the changes to code and configuration can only be made globally by running a Cloud Manager pipeline.

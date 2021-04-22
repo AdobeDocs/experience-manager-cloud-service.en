@@ -1,8 +1,8 @@
 ---
 title: Right People, right roles
 description: Right People, right roles
+exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 ---
-
 # **First, get the right people in the right roles**
 
 >[!CONTEXTUALHELP]

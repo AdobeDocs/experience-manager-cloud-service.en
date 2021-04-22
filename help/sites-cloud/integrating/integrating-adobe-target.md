@@ -3,8 +3,8 @@ title: Integrating with Adobe Target
 description: Integrating with Adobe Target 
 feature: Administering
 role: Administrator
+exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 ---
-
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 
 As part of the Adobe Marketing Cloud, Adobe Target lets you increase content relevance through targeting and measuring across all channels. Integrating Adobe Target and AEM as a Cloud Service requires:

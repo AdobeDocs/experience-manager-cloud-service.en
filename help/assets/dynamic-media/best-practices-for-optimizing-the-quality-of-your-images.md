@@ -3,9 +3,9 @@ title: Best practices for optimizing the quality of your images
 description: Learn best practices you can use in Dynamic Media to optimize the quality of your image assets.
 contentOwner: Rick Brough
 feature: Asset Management
-topic: Business Practitioner
+role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 ---
-
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}
 
 Optimizing image quality can be a time consuming process as many factors contribute to rendering acceptable results. The outcome is partly subjective because individuals perceive image quality differently. Structured experimentation is key.
@@ -116,4 +116,3 @@ As you experiment, the following general suggestions are helpful to optimize you
 * Try out and test different parameters in real time, directly on a URL.
 * As a best practice, remember that you can group Dynamic Media Image Serving commands into an image preset. An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. The custom preset name in a URL path calls these presets. Such functionality helps you manage commands and quality settings for different usage patterns of images on your website and shortens the overall length of URLs.
 * Experience Manager also provides more advanced ways to tune image quality, such as applying sharpening images on ingestion. To tune and optimize rendering results, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) can help you with customized insight and best practices.
-

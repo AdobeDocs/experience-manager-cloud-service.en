@@ -1,8 +1,8 @@
 ---
 title: Sample ContextHub UI Module Types
 description: ContextHub provides several sample UI modules that you can use in your solutions
+exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 ---
-
 # Sample ContextHub UI Module Types {#sample-contexthub-ui-module-types}
 
 ContextHub provides several sample UI modules that you can use in your solutions. The following information is provided:

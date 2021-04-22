@@ -1,8 +1,8 @@
 ---
 title: Components Overview
 description: Components are modular units which realize specific functionality to present your content on your website
+exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 ---
-
 # Components Overview {#components-overview}
 
 This page provides an overview of Adobe Experience Manager (AEM) components such as those [used for page authoring](/help/sites-cloud/authoring/fundamentals/components.md).
@@ -57,4 +57,3 @@ Alternatively, you can also use CRXDE Lite to get a list of all the components a
    `//element(*, cq:Component)`
 
 1. Click **[!UICONTROL Execute]** and the components are listed.
-

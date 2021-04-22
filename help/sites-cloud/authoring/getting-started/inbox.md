@@ -1,8 +1,8 @@
 ---
 title: Your Inbox
 description: Managing your tasks with the inbox
+exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 ---
-
 # Your Inbox {#your-inbox}
 
 You can receive notifications from various areas of AEM, including workflows and projects. For example, you might receive notifications about:
