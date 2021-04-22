@@ -208,7 +208,7 @@ Once your fragment has been created, you can open it in the Content Fragment Edi
 
 ## What's Next {#whats-next}
 
-[Learn how to use GraphQL to access and retrieve your Content Fragments content](access-your-content.md). 
+[Learn how to use GraphQL queries to access and retrieve your Content Fragments content](access-your-content.md). 
 
 ## Additional Resources {#additional-resources}
 
