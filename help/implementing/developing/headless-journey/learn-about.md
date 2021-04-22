@@ -106,8 +106,17 @@ As an industry leader in digital experience management, AEM offers not only both
 
 ## What's Next {#what-is-next}
 
-You should continue your AEM headless journey by next reviewing the document [Getting Started with AEM Headless as a Cloud Service](getting-started.md) where you will learn how to set up the necessary tools and how to begin thinking about how AEM approaches headless content delivery and its prerequisites.
+Thanks for getting started on your AEM headless journey! Now that you read this document you should:
+
+* Understand the basic concepts and terminology of headless content delivery.
+* Understand why and when headless is required.
+* Know at a high-level how headless concepts are used and how they interrelate.
+
+Build on this knowledge and continue your AEM headless journey by next reviewing the document [Getting Started with AEM Headless as a Cloud Service](getting-started.md) where you will learn how to set up the necessary tools and how to begin thinking about how AEM approaches headless content delivery and its prerequisites.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Getting Started with AEM Headless as a Cloud Service,](getting-started.md) the following are some additional resources that do a deeper dive on some concepts mentioned in this document.
+While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Getting Started with AEM Headless as a Cloud Service,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+
+* [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md) - Understand AEM as a Cloud Service's structure
+* [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
