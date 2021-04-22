@@ -73,7 +73,7 @@ role: Developer, Architect
     + [Getting Started with AEM Headless as a Cloud Service](developing/headless-journey/getting-started.md)
     + [Path to your first experience using AEM Headless](developing/headless-journey/path-to-first-experience.md)
     + [How to model your content as AEM Content Models](developing/headless-journey/model-your-content.md)
-    + [How to fetch your content via AEM delivery APIs](developing/headless-journey/fetch-your-content.md)
+    + [How to fetch your content via AEM delivery APIs](developing/headless-journey/access-your-content.md)
     + [How to update your content via AEM assets APIs](developing/headless-journey/update-your-content.md)
     + [How to create single page applications with AEM](developing/headless-journey/create-spa.md)
     + [How to put it all together](developing/headless-journey/put-it-all-together.md)
