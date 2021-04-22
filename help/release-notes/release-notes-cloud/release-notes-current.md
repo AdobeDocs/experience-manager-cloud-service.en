@@ -3,6 +3,7 @@ title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Serv
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 ---
+
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
@@ -24,6 +25,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 ### What is New {#what-is-new-foundation}
 
 * Increased performance for replication of sites tree content hierarchies. [Sites Managed Publication](/help/operations/replication.md#managed-publication) supports activation of larger tree structures and with better performance for any selected nodes with **Including Children** selected. This enhanced activation can also be triggered through the workflow module, either via the author console or the workflow API. To streamline the experience, the **Tools > Deployment > Distribution > Distribute** tab has been removed.
+
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
