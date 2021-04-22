@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service SDK
 description: An overview of the AEM as a Cloud Service Software Development Kit
+exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 ---
-
 # The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 The AEM as a Cloud Service SDK is comprised of the following artifacts:

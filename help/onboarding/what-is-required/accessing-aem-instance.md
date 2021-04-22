@@ -1,8 +1,8 @@
 ---
 title: Grant User Access to an AEM Instance 
 description: Follow this page to learn how a System Administrator grants user access to an AEM Instance
+exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
 ---
-
 # Grant User Access to an AEM Instance {#accessing-aem-instance}
 
 As a System Administrator, follow the steps below to grant user access to an AEM instance:
@@ -10,13 +10,13 @@ As a System Administrator, follow the steps below to grant user access to an AEM
 1. Navigate to Cloud Manager and click on the **Manage Access** button from the **Environments** card as shown below.
 
    >[!NOTE]
-   >You must be a System Administrator or the user who created the environment in order to be able to add a user in the Admin Console. Only Business Owner or Deployment Manager roles have permissions to create an environment. Refer to [User Roles and Permissions](/help/onboarding/what-is-required/user-roles-permissions.md) to learn more about roles and associated permissions. Additionally, refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) to learn about environments.
+   >You must be a System Administrator or the user who created the environment in order to be able to add a user in the Admin Console. Only Business Owner or Deployment Manager roles have permissions to create an environment. Refer to [Cloud Manager Roles](/help/onboarding/what-is-required/user-roles-permissions.md) to learn more about roles and associated permissions. Additionally, refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) to learn about environments.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Or,
 
-   **Manage Access** is also available from the **Manage** button, if you click on **Details** from the **Environments** card.
+   From the **Environments** Page, select **Manage** --> **Manage Access**.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
@@ -50,4 +50,3 @@ As a System Administrator, follow the steps below to grant user access to an AEM
 
         >[!NOTE]
         >For some organizations which were given access to AEM as a Cloud Service before January 2020, those will be taken to the Adobe Admin Console and the Product and Environment Product Profile will have to be selected.
-

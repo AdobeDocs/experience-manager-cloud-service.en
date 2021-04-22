@@ -1,8 +1,8 @@
 ---
 title: Using the Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: The Sling Resource Merger provides services to access and merge resources
+exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 ---
-
 # Using the Sling Resource Merger in AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Purpose {#purpose}

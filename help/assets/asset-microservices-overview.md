@@ -2,8 +2,10 @@
 title: Process assets using asset microservices
 description: Process your digital assets using cloud-native and scalable asset processing microservices.
 contentOwner: AG
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
+exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 ---
-
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
 
 Adobe Experience Manager as a [!DNL Cloud Service] provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:

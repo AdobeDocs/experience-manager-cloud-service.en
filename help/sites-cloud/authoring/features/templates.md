@@ -1,8 +1,8 @@
 ---
 title: Creating Page Templates
 description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 ---
-
 # Creating Page Templates {#creating-page-templates}
 
 When creating a page you must select a template, which will be used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.

@@ -2,9 +2,9 @@
 title: Spin Sets
 description: Learn how to work with spin sets in Dynamic Media.
 feature: Spin Sets
-topic: Business Practitioner
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 ---
-
 # Spin Sets{#spin-sets}
 
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.
@@ -31,11 +31,11 @@ To get you up and running quickly with Spin Sets, follow these steps:
    >
    >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 
-1. [Upload your images for multiple views.](#uploading-assets-for-spin-sets)
+1. [Upload your images for multiple views](#uploading-assets-for-spin-sets).
 
    At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
 
-1. [Create Spin Sets.](#creating-spin-sets)
+1. [Create Spin Sets](#creating-spin-sets).
 
    To create a Spin Set, select **[!UICONTROL Create > Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
 
@@ -47,15 +47,15 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    To create or edit viewer presets, see **[!UICONTROL Tools > Assets > Viewer Presets]**.
 
-   See [Adding and editing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   See [Adding and editing viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    You can view and access sets created by way of batch set presets in three different ways. (Sets created using batch set presets, do *not* appear in the user interface.)
 
-1. [Preview Spin Sets.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Preview Spin Sets](/help/assets/dynamic-media/previewing-assets.md).
 
    Select the Spin Set and you can preview it. Rotate the Spin Set. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
-1. [Publish Spin Sets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Publish Spin Sets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Publishing a Spin Set activates the URL and Embed string. In addition, you must [publish the viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -131,7 +131,7 @@ This section describes how to create Spin Sets.
 
    If necessary, drag an asset's Reorder icon to the right of the asset's file name to reorder images up or down the set list.
 
-   ![Reordering Frame 11 in the spin set by dragging it to a new location.](assets/6_5_spinset-reorderassets.png)
+   ![Reordering Frame 11 in the spin set by dragging it to a new location](assets/6_5_spinset-reorderassets.png)
 
    Reordering Frame 11 in the spin set by dragging it to a new location.
 

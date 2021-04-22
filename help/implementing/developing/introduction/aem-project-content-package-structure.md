@@ -1,8 +1,8 @@
 ---
 title: AEM Project Structure
 description: Learn about how to define package structures for deployment to Adobe Experience Manager Cloud Service.
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 ---
-
 # AEM Project Structure
 
 >[!TIP]
@@ -79,6 +79,10 @@ The recommended application deployment structure is as follows:
             + Service Users
             + Groups
             + ACLs (permissions)
+
+>[!NOTE]
+>
+>The same code must be deployed to all environments. This is needed in order to ensure a level of confidence validations on the stage environment are also in production. For more information, see the section on [Runmodes](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Content Packages

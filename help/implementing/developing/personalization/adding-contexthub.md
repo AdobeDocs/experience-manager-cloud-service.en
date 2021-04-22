@@ -1,8 +1,8 @@
 ---
 title: Adding ContextHub to Pages and Accessing Stores
 description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries
+exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 ---
-
 # Adding ContextHub to Pages and Accessing Stores {#adding-contexthub-to-pages-and-accessing-stores}
 
 Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries.

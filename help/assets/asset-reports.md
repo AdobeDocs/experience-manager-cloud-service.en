@@ -2,8 +2,10 @@
 title: Reports about usage and sharing
 description: Reports about your assets in [!DNL Adobe Experience Manager Assets] that help you understand usage, activity, and sharing of your digital assets.
 contentOwner: AG
+feature: Asset Reports,Asset Management
+role: Administrator,Business Practitioner
+exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 ---
-
 # Asset reports {#asset-reports}
 
 Asset reporting lets you assess the utility of your [!DNL Adobe Experience Manager Assets] deployment. With [!DNL Assets], you can generate various reports for your digital assets. The reports provide useful information about your system’s usage, how users interact with assets, and which assets are <!-- downloaded and --> shared.
