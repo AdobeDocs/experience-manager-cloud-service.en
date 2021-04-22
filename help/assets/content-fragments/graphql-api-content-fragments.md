@@ -93,11 +93,12 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-<!--
 You can also perform:
 
 * [Persisted Queries, that are cached](#persisted-queries-caching)
--->
+
+>[!NOTE]
+>You can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
 
 ## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
 
@@ -107,25 +108,60 @@ The endpoint is the path used to access GraphQL for AEM. Using this path you (or
 * send your GraphQL queries, 
 * receive the responses (to your GraphQL queries).
 
-The repository path of the GraphQL for AEM endpoint is:
+There are two types of endpoints in AEM:
+
+* Global
+  * Available for all sites.
+* Tenant:
+  * Specific to a specified site/project.
+
+The repository path of the GraphQL for AEM global endpoint is:
 
 `/content/cq:graphql/global/endpoint`
 
-Your app can use the following path in the request URL:
+For which your app can use the following path in the request URL:
 
 `/content/_cq_graphql/global/endpoint.json`
 
-To enable the endpoint for GraphQL for AEM you need to:
-
->[!CAUTION]
->
->These steps are liable to change in the near future.
+To enable an endpoint for GraphQL for AEM you need to:
 
 * [Enable your GraphQL Endpoint](#enabling-graphql-endpoint)
 * [Perform additional configurations](#additional-configurations-graphql-endpoint)
 
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
+To enable a GraphQL Endpoint you first need to have an appropriate configuration. See [Content Fragments - Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+
+To enable the corresponding endpoint:
+
+<!--
+Sites or Assets?
+-->
+<!--
+is name tied to the "configuration" (config browser) - if so, why isn't it a dropdown?
+-->
+
+1. Navigate to **Tools**, **Sites**, then select **GraphQL**.
+1. Select **Create**.
+1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
+   * **Name**: name of the endpoint.
+   * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
+1. Confirm with **Create**.
+1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.
+
+   >[!CAUTION]
+   >
+   >The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
+   >
+   >You can set up ACLs, appropriate to your use case, on the endpoint. 
+
+### Publishing your GraphQL Endpoint {#publishing-graphql-endpoint}
+
+Select the new endpoint and **Publish** to make it fully available in all environments.
+
+<!-- remove this completely? -->
+
+<!--
 >[!NOTE]
 >
 >See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
@@ -144,11 +180,15 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 >[!NOTE]
 >
 >Your endpoint will not work out-of-the-box. You will have to provide [Additional Configurations for GraphQL Endpoint](#additional-configurations-graphql-endpoint) separately.
-
->[!NOTE]
->Additionally you can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
+-->
 
 ### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
+
+<!--
+Comment out the Note?
+Or the entire section?
+If only the note, do we need to document how to perform the manual configurations - or are they OOTB?
+-->
 
 >[!NOTE]
 >
@@ -163,6 +203,9 @@ Additional configurations are required:
   * To allocate a simplified URL for the endpoint
   * Optional
 
+<!-- remove this completely? -->
+
+<!--
 ### Supporting packages {#supporting-packages}
 
 To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip) package.
@@ -172,6 +215,7 @@ This archive contains both [the required additional configuration](#additional-c
 This package is meant to be a blueprint for your own GraphQL projects. See the package **README** for details on how to use the package.
 
 Should you prefer to manually create the required configuration, Adobe also provides a dedicated [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the GraphQL endpoint only, without any configuration.
+-->
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -786,13 +830,8 @@ To access the GraphQL endpoint, a CORS policy must be configured in the customer
 
 This configuration must specify a trusted website origin `alloworigin` or `alloworiginregexp` for which access must be granted.
 
-<!--
 For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
--->
 
-For example, to grant access to the GraphQL endpoint for `https://my.domain` you can use:
-
-<!--
 ```xml
 {
   "supportscredentials":true,
@@ -822,39 +861,6 @@ For example, to grant access to the GraphQL endpoint for `https://my.domain` you
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
-  ]
-}
-```
--->
-
-```xml
-{
-  "supportscredentials":true,
-  "supportedmethods":[
-    "GET",
-    "HEAD",
-    "POST"
-  ],
-  "exposedheaders":[
-    ""
-  ],
-  "alloworigin":[
-    "https://my.domain"
-  ],
-  "maxage:Integer":1800,
-  "alloworiginregexp":[
-    ""
-  ],
-  "supportedheaders":[
-    "Origin",
-    "Accept",
-    "X-Requested-With",
-    "Content-Type",
-    "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
-  ],
-  "allowedpaths":[
-    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
