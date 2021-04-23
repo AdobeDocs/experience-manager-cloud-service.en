@@ -28,6 +28,25 @@ This article builds on those fundamentals so you understand how to prepare your 
 * of
 * objectives
 
+## Local Development Environment Setup {#local-development-environment}
+
+A local development environment is composed of three main areas:
+
+1. The AEM Project - this will contain all the custom code, configuration and content the AEM developers are going to be working on
+1. The Local AEM Runtime - local versions of the AEM author and publish services that will be used to deploy code from the AEM project
+1. The Local Dispatcher Runtime - a local version of the Apache htttpd webserver that includes the Dispatcher module
+
+### Development Tools {#development-tools}
+
+In order to develop for AEM, you will need the following development tools:
+
+* Java and the Java SDK
+* Git for source control
+* Maven
+* The Node.js library
+* Docker for the Local Dispatcher Runtime
+* The IDE of your choice
+
 ## What's Next {#what-is-next}
 
 Now that you have completed this part of the AEM Headless Developer Journey, you should:
