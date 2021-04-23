@@ -14,6 +14,17 @@ index: no
 
 In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to use GraphQL queries to access the content of your Content Fragments.
 
+## The Story So Far {#story-so-far}
+
+In the previous document of the AEM headless journey, [How to Model Your Content](model-your-content.md) you learned the basics of data modeling in AEM and you should now:
+
+* Understand important planning considerations for designing your content.
+* Understand the steps to implement headless depending on your integration level requirements.
+* Set up the necessary tools and AEM configurations.
+* Know best practices to make your headless journey smooth, keep content generation efficient, and ensure content is delivered quickly.
+
+This article builds on those fundamentals so you understand how to access your existing headless content in AEM via API.
+
 * **Audience**: Beginner
 * **Objective**: Learn how to access the content of your Content Fragments using AEM GraphQL queries:
   * Introduce GraphQL.
