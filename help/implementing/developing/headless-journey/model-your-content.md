@@ -5,17 +5,28 @@ description: In this part of the AEM Headless Developer Journey, learn how to mo
 
 # How to Model Your Content {#model-your-content}
 
->[!CAUTION]
->
->WORK IN PROGRESS
-
 In this part of the [AEM Headless Developer Journey](#overview.md), you can learn how to model your content structure. Then realize that structure for Adobe Experience Manager (AEM) using Content Fragments Models and Content Fragments, for reuse across channels.
+
+## The Story So Far {#story-so-far}
+
+At the beginning [Learn About CMS Headless Development](learn-about.md) covered headless content delivery and why it should be used. Then [Getting Started with AEM Headless as a Cloud Service](getting-started.md) described AEM Headless in the context of your own project
+
+In the previous document of the AEM headless journey, [Path to Your First Experience Using AEM Headless](/help/implementing/developing/headless-journey/path-to-first-experience.md), you then learned the steps needed to implement your first project. After reading it you should:
+
+* Understand important planning considerations for designing your content
+* Understand the steps to implement headless depending on your integration level requirements.
+* Set up the necessary tools and AEM configurations.
+* Know best practices to make your headless journey smooth, keep content generation efficient, and ensure content is delivered quickly.
+  
+This article builds on those fundamentals so you understand how to prepare your own AEM headless project.
+
+## Objective {#objective} 
 
 * **Audience**: Beginner
 * **Objective**: Learn how to model your content structure, then realize that structure using AEM Content Fragment Models and Content Fragments:
   * Introduce concepts and terminology related to [data modeling](#data-modeling).
   * Learn [why data modeling is needed for Headless content delivery](#data-modeling-for-aem-headless).
-  * Learn [how to realize this structure using AEM Content Fragment Models](#create-structure-content-fragment-models) (and generate content with [Content Fragments](#use-content-to-generate-content)).
+  * Learn [how to realize this structure using AEM Content Fragment Models](#create-structure-content-fragment-models) (and author content with [Content Fragments](#use-content-to-author-content)).
   * Learn [how to model your content](#getting-started-examples); principles with basic samples.
 
 >[!NOTE]
@@ -130,7 +141,7 @@ Requests for your content are made using the AEM GraphQL API, a customized imple
 
 The content returned can then be used by your applications. 
 
-## Creating the Structure - Content Fragment Models {#create-structure-content-fragment-models}
+## Creating the Structure with Content Fragment Models {#create-structure-content-fragment-models}
 
 Content Fragment Models provide various mechanisms that allow you to define the structure of your content. 
 
@@ -179,7 +190,7 @@ Two data types provide references to content outside a specific fragment:
   * Edit the referenced fragment directly.
   * Create a new content fragment, based on the appropriate model
 
-## Using the structure to generate content with Content Fragments {#use-content-to-generate-content}
+## Using the Model to Author Content with Content Fragments {#use-content-to-author-content}
 
 Content Fragments are always based on a Content Fragment Model. The model provides the structure, the fragment holds the content.
 
@@ -201,17 +212,22 @@ Once your fragment has been created, you can open it in the Content Fragment Edi
 
 ## Getting Started with some Examples {#getting-started-examples}
 
->[!NOTE]
->tbc...
->...and/or see the structures covered for the GraphQL samples...
->...will those (ever) be delivered as an official sample package?
+<!--
+tbc...
+...and/or see the structures covered for the GraphQL samples...
+...will those (ever) be delivered as an official sample package?
+-->
+
+For a basic structure as sample see [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 
 ## What's Next {#whats-next}
 
-[Learn how to use GraphQL queries to access and retrieve your Content Fragments content](access-your-content.md). 
+Now that you have learned how to model your structure, and create content dependent on that, the next step is to [Learn how to use GraphQL queries to access and retrieve your Content Fragments content](access-your-content.md). This will introduce and discuss GraphQL, then look at some sample queries to see how things work in practice.
+
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
-* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
-* [AEM GraphQL Schemas](/help/implementing/developing/headless-journey/access-your-content.md)
+* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) - the lead-in page for Content Fragments
+  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
+  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
+* [AEM GraphQL Schemas](/help/implementing/developing/headless-journey/access-your-content.md) - how GraphQL realizes models
