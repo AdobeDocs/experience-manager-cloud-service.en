@@ -25,9 +25,9 @@ This document helps you understand the AEM headless publication pipeline and the
 
 ## Content Replication and Caching Basics {#content-replication-and-caching}
 
-A full AEM environment is made up of an Author, Publish, and Dispatcher. 
+A full AEM environment is made up of an Author, Publish, and Dispatcher.
 
-* **The Author service** is where internal users create, manage, and preview content. 
+* **The Author service** is where internal users create, manage, and preview content.
 
 * **The Publish service** is considered the “Live” environment and is typically what end users interact with. Content, after being edited and approved on the Author service, is distributed to the Publish service.
 
@@ -38,7 +38,7 @@ The most common deployment pattern with AEM headless applications is to have the
 ## Requirements and Configuration {#requirements-and-configuration}
 
 1. Set up a [Local Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#install-java) using the [AEM as a Cloud service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-2. Install the [WKND sample content](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and subsequent GprahQL endpoints
+2. Install the [WKND sample content](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and subsequent GraphQL endpoints
 3. Deploy and Configure a [static Node Server](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/production-deployment.html?lang=en#static-server).
 
 ## Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
@@ -80,13 +80,13 @@ The most common deployment pattern with AEM headless applications is to have the
 * Verify AEM status pages for current service availability status
 * Access performance reports
   * Delivery Performance
-    *  Fastly (CDN) – check number of calls, cache rate, error rates, payload traffic 
-    * Origin servers - number of calls, error rates, CPU loads, payload traffic 
+    * Fastly (CDN) – check number of calls, cache rate, error rates, payload traffic
+    * Origin servers - number of calls, error rates, CPU loads, payload traffic
   * Author Performance
     * Check number of users, requests and load
 * Access App and Space specific performance reports
   * Once the server is up, check whether the general metrics are green/orange/red, then identify specific app issues
-  * Open same reports above filtered to app/space (I.e. Photoshop desktop, paywall, etc.) 
+  * Open same reports above filtered to app/space (I.e. Photoshop desktop, paywall, etc.)
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
 
@@ -109,7 +109,6 @@ In order to efficiently log a bug with Support in case you need further assistan
 * Take screenshots of the problem, if necessary
 * Document a way to reproduce the issue
 * Document the content the issue reproduces with
-* Log an issue throgh the AEM Support portal with the appropriate priority
+* Log an issue through the AEM Support portal with the appropriate priority
 
 ## Additional Resources {#additional-resources}
-
