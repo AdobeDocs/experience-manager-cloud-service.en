@@ -48,11 +48,11 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Daily</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>See location 1 below</td>
     <td>See code sample 1 below</td>
-  <td><p><code>windowSchedule= daily</code></p> (this value should not be changed)
-  <p><code>windowStartTime= HH:MM</code> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.</p>
-  <p><code>windowEndTime= HH:MM</code> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.</p>
+  <td><p><strong>windowSchedule= daily</strong></p> (this value should not be changed)
+  <p><strong>windowStartTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.</p>
+  <p><strong>windowEndTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.</p>
   </td> 
   </tr>
   <tr>
