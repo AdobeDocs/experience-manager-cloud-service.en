@@ -111,9 +111,20 @@ The endpoint is the path used to access GraphQL for AEM. Using this path you (or
 There are two types of endpoints in AEM:
 
 * Global
-  * Available for all sites.
+  * Available for use by all sites.
+  * This endpoint can use all Content Fragment Models from all tenants.
+  * If there are any Content Fragment Models that should be shared among tenants, then these should be created under the global tenant.
 * Tenant:
   * Specific to a specified site/project.
+  * A tenant specific endpoint will use the Content Fragment Models from that specific tenant together with those from the global tenant.
+
+>[!CAUTION]
+>
+>The Content Fragment Editor can allow a Content Fragment of one tenant to reference a Content Fragment of another tenant (via polices). 
+>
+>In such a case not all content will be retrievable using a tenant specific endpoint. 
+>
+>The content author should control this scenario; for example, it may be useful to consider putting shared Content Fragment Models under the Global tenant.
 
 The repository path of the GraphQL for AEM global endpoint is:
 
@@ -134,9 +145,6 @@ To enable a GraphQL Endpoint you first need to have an appropriate configuration
 
 To enable the corresponding endpoint:
 
-<!--
-Sites or Assets?
--->
 <!--
 is name tied to the "configuration" (config browser) - if so, why isn't it a dropdown?
 -->
