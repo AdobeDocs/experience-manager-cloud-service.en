@@ -43,7 +43,7 @@ The complexity of the dependencies within the stack quickly become apparent as y
 
 ## Limits of Full-Stack Delivery {#limits}
 
-The full-stack approach inherently creates a silo where all experiences land in one system. Changes or additions at one level of the silo require changes at other layers making changes time-intensive and costly.
+The full-stack approach inherently creates a silo where all experiences land in one system. Changes or additions component of the silo require changes of other components making changes time-intensive and costly.
 
 This is particularly true of the presentation layer, which in traditional systems, is often tightly bound to the CMS. Any new channel generally means an update to the presentation layer, which affects all other channels.
 
@@ -73,7 +73,7 @@ Headless delivery is possible by exposing a set of robust and flexible applicati
 
 Headless is an example of decoupling your content from its presentation. Or in a more generic sense, decoupling the front end from the back end of your service stack. In a headless setup, the presentation layer (the head) is decoupled from the content management (the tail). The two only interact through API calls.
 
-This decoupling means that each consuming service (the front end) can build its experience based on the same content delivered over the APIs, ensuring content reuse and consistency. Consuming services can then implement their own presentation layers, allowing the content management layer (the back end) to easily scale horizontally.
+This decoupling means that each consuming service (the front end) can build its experience based on the same content delivered over the APIs, ensuring content reuse and consistency. Consuming services can then implement their own presentation layers, allowing the content management stack (the back end) to easily scale horizontally.
 
 ## Technological Underpinnings {#technology}
 
