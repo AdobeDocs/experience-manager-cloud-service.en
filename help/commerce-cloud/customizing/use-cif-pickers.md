@@ -7,8 +7,8 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
+exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 ---
-
 # AEM Content & Commerce Authoring Pickers {#cif-pickers}
 
 AEM Content & Commerce Authoring provides a set of authoring tools to help AEM authors and marketers efficiently work with commerce product data and catalogs. The Product Picker and Category Picker are part of CIF add-on and used by the CIF Core Components. Projects can use these pickers in any component dialog to select products or categories.

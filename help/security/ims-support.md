@@ -118,15 +118,15 @@ Below are the key OSGI configurations that need to be modified in order to chang
 
 ### Managing Products and User Access in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-When the Product Administrator logs in to Admin Console, they will see multiple instances of the AEM Managed Services Product Context as shown below:
+When the Product Administrator logs in to Admin Console, they will see multiple instances of the AEM as a Cloud Service Product Context, as shown below. For example, select any of the the products from the **Overview** page:
 
 ![Instances login](/help/security/assets/ims6.png)
 
-In this example, the org **AEM-MS-Onboard** has 32 instances spanning different topologies and environments like Stage or Prod.
+You will see a list of existing instances:
 
 ![Instances login2](/help/security/assets/ims7.png)
 
-Under each Product Context instance, there will be associated Product Profiles. These product profiles are used for assigning access to Users and Groups with the required privilege.
+Under each Product Context instance, there will be instances spanning Author or Publish services across Production, Stage, or Development environments. Each instance will be associated to Product Profiles or Cloud Manager roles. These product profiles are used for assigning access to Users and Groups with the required privileges.
 
 The **Administrator_xxx** profile will be used to grant Administrator privileges in the associated AEM instance while the **User_xxx** profile is used to add regular users.
 
