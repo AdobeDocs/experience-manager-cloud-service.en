@@ -35,6 +35,7 @@ The following table illustrates the maintenance tasks that are available at the 
 Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project Purge Maintenance tasks to be executed during the daily, weekly, or monthly maintenance windows. These configurations should edited directly in source control. The table below describes the configuration parameters available for each of the window. 
 
 <table>
+ <tbody>
   <tr>
     <th>Maintenance Window Configuration</th>
     <th>Who owns the configuration</th>
@@ -47,12 +48,11 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <td>Daily</td>
     <td>Customer</td>
     <td>JCR Node Definition</td>
-    <td>See location 1 below</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>See code sample 1 below</td>
-  <td>
-  <strong>windowSchedule= daily</strong> (this value should not be changed)
-  <strong>windowStartTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.
-  <strong>windowEndTime= HH:MM</strong> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.
+  <td><p><code>windowSchedule= daily</code></p> (this value should not be changed)
+  <p><code>windowStartTime= HH:MM</code> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should begin executing.</p>
+  <p><code>windowEndTime= HH:MM</code> using as 24 hour clock. Defines when the Maintenance Tasks associated with the Daily Maintenance Window should stop executing if they haven't already completed.</p>
   </td> 
   </tr>
   <tr>
@@ -82,6 +82,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
     <strong>windowFirstLastStartDay= 0/1</strong> 0 to schedule on the first week of the month or 1 to schedule on the last week of the month. The absence of a value would effectively schedule jobs every day as governed by windowScheduleWeekdays every month.
     </td> 
     </tr>
+    </tbody>
 </table>
 
 Locations:
@@ -140,3 +141,13 @@ Code sample 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+</code><?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+  xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+  jcr:primaryType="sling:Folder"
+  sling:configCollectionInherit="true"
+  sling:configPropertyInherit="true"
+  windowSchedule="daily"
+  windowStartTime="03:00"
+  windowEndTime="05:00"
+ /> </code>
