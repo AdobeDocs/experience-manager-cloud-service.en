@@ -1,7 +1,6 @@
 ---
 title: HTTP2 Delivery of Content FAQ
 description: Learn about HTTP2 content delivery.
-topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 ---
