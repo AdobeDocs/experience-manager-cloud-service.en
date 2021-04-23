@@ -143,17 +143,29 @@ To enable an endpoint for GraphQL for AEM you need to:
 
 To enable a GraphQL Endpoint you first need to have an appropriate configuration. See [Content Fragments - Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
+<!--
+use of content fragment models, or graphql persisted queries? 
+-->
+
+>[!CAUTION]
+>
+>If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
+
 To enable the corresponding endpoint:
 
 <!--
 is name tied to the "configuration" (config browser) - if so, why isn't it a dropdown?
+name is free text
 -->
 
 1. Navigate to **Tools**, **Sites**, then select **GraphQL**.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
-   * **Name**: name of the endpoint.
+   * **Name**: name of the endpoint; you can enter any text.
    * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
+   >[!NOTE]
+   >The following warning is shown in the dialiog:
+   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
 1. Confirm with **Create**.
 1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.
 
@@ -166,6 +178,14 @@ is name tied to the "configuration" (config browser) - if so, why isn't it a dro
 ### Publishing your GraphQL Endpoint {#publishing-graphql-endpoint}
 
 Select the new endpoint and **Publish** to make it fully available in all environments.
+
+>[!CAUTION]
+>
+>The endpoint is accessible to everyone. 
+>
+>On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
+>
+>You must set up ACLs appropriate to your use case on the endpoint. 
 
 <!-- remove this completely? -->
 
@@ -202,14 +222,16 @@ If only the note, do we need to document how to perform the manual configuration
 >
 >See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
 
-Additional configurations are required:
+The following additional configuration is required:
 
 * Dispatcher: 
   * To allow required URLs
   * Mandatory
+<!--
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint
   * Optional
+--> 
 
 <!-- remove this completely? -->
 
