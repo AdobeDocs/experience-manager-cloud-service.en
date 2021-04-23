@@ -2,7 +2,6 @@
 title: Delivering Dynamic Media Assets
 description: Learn how to deliver Dynamic Media assets.
 feature: Asset Management
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 ---
