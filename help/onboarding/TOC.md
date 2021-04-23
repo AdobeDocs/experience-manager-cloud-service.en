@@ -3,7 +3,6 @@ sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
 breadcrumb-title: Onboarding Guide
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
-feature-set: Experience Manager Sites
 feature: Deploying
 role: Architect, Developer
 ---
