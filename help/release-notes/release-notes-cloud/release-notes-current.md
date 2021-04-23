@@ -67,7 +67,7 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 
 * Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
 
-* AEM extension for PWA Studion incl. example integration
+* AEM extension for PWA Studio incl. example integration
 
 * New CIF navigation core component that extends WCM navigation core component
 
@@ -76,8 +76,6 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 * Commerce endpoint is now configurable via Cloud Manager UI
 
 ### Bug Fixes {#bug-fixes-commerce}
-
-* The new categoryList query used in Featured Categories component did not sort the list as requested in the query argument
 
 * The root category field was not displayed under the commerce tab in the page properties of category pages
 
