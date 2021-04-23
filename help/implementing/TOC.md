@@ -75,10 +75,10 @@ role: Developer, Architect
     + [How to model your content as AEM Content Models](developing/headless-journey/model-your-content.md)
     + [How to access your content via AEM delivery APIs](developing/headless-journey/access-your-content.md)
     + [How to update your content via AEM assets APIs](developing/headless-journey/update-your-content.md)
-    + [How to create single page applications with AEM](developing/headless-journey/create-spa.md)
     + [How to put it all together](developing/headless-journey/put-it-all-together.md)
     + [How to go live with your headless application](developing/headless-journey/go-live.md)
     + [Post Launch](developing/headless-journey/post-launch.md)
+    + [Optional - How to create single page applications with AEM](developing/headless-journey/create-spa.md)
   + [Headful and Headless in AEM](developing/headful-headless.md)
   + Full Stack AEM Development {#full-stack}
     + [Getting Started Developing AEM Sites - WKND Tutorial](developing/introduction/develop-wknd-tutorial.md)
