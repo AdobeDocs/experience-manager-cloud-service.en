@@ -65,14 +65,15 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 
 ### What is New {#what-is-new-commerce}
 
-* Support for Magento 2.4.2
+* Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
 
-* Product detail component can now be used and configured on any content page
+* AEM extension for PWA Studion incl. example integration
 
-* Released CIF Venia Reference Site - 2021.03.25 that includes the latest CIF Core Components version v1.9.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) for more details.
+* New CIF navigation core component that extends WCM navigation core component
 
-* Released CIF Core Components v1.9.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) for more details.
+* Visual indicator for staged catalog data in AEM storefront
 
+* Commerce endpoint is now configurable via Cloud Manager UI
 
 ## Cloud Manager {#cloud-manager}
 
