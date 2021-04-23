@@ -7,7 +7,7 @@ version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
-exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
+exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62,b029eaa0-84d7-497d-9d07-c8e750c1e0b8
 ---
 # Develop AEM Commerce for AEM as a Cloud Service {#develop}
 

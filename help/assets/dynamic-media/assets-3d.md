@@ -6,7 +6,6 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Serv
 topic-tags: introduction
 content-type: reference
 feature: 3D Assets
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 ---
@@ -96,7 +95,7 @@ In addition, the capabilities of the client computer-such as a workstation, note
 
 See also [Previewing assets using the software interface](/help/assets/dynamic-media/previewing-assets.md).
 
-**To view and interact with a 3D asset from the asset details page**
+**To view and interact with a 3D asset from the asset details page:**
 
 1. Make sure you have uploaded 3D assets into Experience Manager.
 
@@ -108,20 +107,14 @@ See also [Previewing assets using the software interface](/help/assets/dynamic-m
 1. To open the asset in the Details page, tap the card of the 3D asset.  
 1. On the Details page for the 3D asset, do any of the following:
 
-    * **Turn your camera** - Orbit your view around the 3D scene and objects.
-      * _Mouse_: Left click + drag.
-      * _Touch screen_: Single-finger press + drag.
-    * **Pan your camera** &ndash; Pan your view left, right, up, or down.
-      * _Mouse_: Right click + drag.
-      * _Touch screen_: Two-finger press + drag.
-    * **Zoom your camera** - Zoom your camera to move in and out of areas of the 3D scene.
-      * _Mouse_: Scroll wheel.
-      * _Touch screen_: Two-finger pinch.
-    * **Recenter your camera** - Recenter your camera to a point on an object in the 3D scene.
-      * _Mouse_: Double-click.
-      * _Touch screen_: Double-tap.
-    * **Reset** - Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
-    * **Full screen mode** - To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.
+    | View | Description | Mouse action | Touch screen action |
+    | --- | --- | --- | --- |
+    | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
+    | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
+    | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
+    | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
+    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Close]** to return to the Assets page.
 
@@ -135,7 +128,7 @@ When a web page is in **[!UICONTROL Edit]** mode, no interaction is possible wit
 
 See also [Previewing assets using the software interface](/help/assets/dynamic-media/previewing-assets.md).
 
-**To view and interact with a 3D asset inside a 3D Media component**
+**To view and interact with a 3D asset inside a 3D Media component:**
 
 1. While a web page is in **[!UICONTROL Edit]** mode, do either one of the following:
 
@@ -147,20 +140,14 @@ See also [Previewing assets using the software interface](/help/assets/dynamic-m
 
 1. While in **[!UICONTROL Preview]** mode, do any of the following:
 
-    * **Turn your camera** - Orbit your view around the 3D scene and objects.
-      * _Mouse_: Left click + drag.
-      * _Touch screen_: Single-finger press + drag.
-    * **Pan your camera** - Pan your view left, right, up, or down.
-      * _Mouse_: Right click + drag.
-      * _Touch screen_: Two-finger press + drag.
-    * **Zoom your camera** - Zoom your camera to move in and out of areas of the 3D scene.
-      * _Mouse_: Scroll wheel.
-      * _Touch screen_: Two-finger pinch.
-    * **Recenter your camera** - Recenter your camera to a point on an object in the 3D scene.
-      * _Mouse_: Double-click.
-      * _Touch screen_: Double-tap.
-    * **Reset** - Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
-    * **Full screen mode** &ndash; To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.
+    | View | Description | Mouse action | Touch screen action |
+    | --- | --- | --- | --- |
+    | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
+    | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
+    | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
+    | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
+    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
 ## About working with the 3D Media component {#working-with-three-d-media-component}
 
@@ -168,9 +155,8 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in Ex
 
 * [Adding the 3D Media component to the page template](#adding-three-d-media-component-to-page-template)
 * [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page)
-  * [Optional &ndash; Configuring the 3D Media component](#configuring-the-three-d-component)
+  * [Optional - Configuring the 3D Media component](#configuring-the-three-d-component)
 * [Assigning a 3D asset to the 3D Media component](#assigning-a-three-d-asset-to-the-component)
-
 
 ## Adding the 3D Media component to the page template {#adding-three-d-media-component-to-page-template}
 
@@ -205,7 +191,7 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 
     ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filtera.png)
 
-1. Drag the **[!UICONTROL 3D Media]** component from the **[!UICONTROL Components]** list to the location on the page where you want the 3D viewer to appear. 
+1. Drag the **[!UICONTROL 3D Media]** component from the **[!UICONTROL Components]** list to the location on the page where you want the 3D viewer to appear.
 
 You are now ready to assign a 3D asset to the component.
 
@@ -255,7 +241,7 @@ See also [Publishing Dynamic Media assets](/help/assets/dynamic-media/publishing
 
 See also [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
-**To publish static Dynamic Media 3D assets**
+**To publish static Dynamic Media 3D assets:**
 
 1. Open a 3D asset (GLB, OBJ, or STL file format) to view it in the Details page.
 1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
@@ -280,10 +266,10 @@ See also [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-
 
 Use the following two methods for publishing Dynamic Media 3D assets if you are *not* using Experience Manager as your WCM.
 
-* **[!UICONTROL URL]** &ndash; Use **[!UICONTROL URL]** if you are using a third-party web content management system and you want to link Dynamic Media 3D assets to your web pages using the Dimensional viewer.
+* **[!UICONTROL URL]** - Use **[!UICONTROL URL]** if you are using a third-party web content management system and you want to link Dynamic Media 3D assets to your web pages using the Dimensional viewer.
 
   See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Embed]** &ndash; Use **[!UICONTROL Embed]** when you want to view a Dynamic Media 3D asset embedded on a web page using the Dimensional viewer. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
+* **[!UICONTROL Embed]** - Use **[!UICONTROL Embed]** when you want to view a Dynamic Media 3D asset embedded on a web page using the Dimensional viewer. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
 
   See [Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

@@ -8,7 +8,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 ---
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work in tandem. Another reason can be acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
+In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
 
 Users can create web pages in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] is the Digital Asset Management (DAM) system that supplies the required assets for websites. [!DNL Experience Manager] now supports the above use case by integrating [!DNL Sites] and [!DNL Assets].
 
@@ -46,7 +46,7 @@ The various roles that are involved to configure and use the capability and thei
 |------|--------|-----------|-----|----------|
 | [!DNL Sites] administrator | Local | [!DNL Experience Manager] `administrators` | `admin` | Set up [!DNL Experience Manager] and configure integration with the remote [!DNL Assets] deployment. |
 | DAM user | Local | `Authors` | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | <ul><li>`Authors` (with read access on the remote DAM and author access on local [!DNL Sites]) </li> <li>`dam-users` on local [!DNL Sites]</li></ul> | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. The authors search and browse assets in remote DAM using [!UICONTROL Content Finder] and using the required images in local web pages. The credentials of `ksaner` DAM user are used. |
+| [!DNL Sites] author | Local | <ul><li>`Authors` (with read access on the remote DAM and author access on local [!DNL Sites]) </li> <li>`dam-users` on local [!DNL Sites]</li></ul> | `ksaner` | End users are [!DNL Sites] authors who use this integration to improve their content velocity. Authors can search and browse assets in remote DAM using [!UICONTROL Content Finder] and using the required images in local web pages. The credentials of `ksaner` DAM user are used. |
 | [!DNL Assets] administrator | Remote | [!DNL Experience Manager] `administrators` | `admin` on remote [!DNL Experience Manager] | Configure Cross-Origin Resource Sharing (CORS). |
 | DAM user | Remote | `Authors` | `ksaner` on remote [!DNL Experience Manager] | Author role on the remote [!DNL Experience Manager] deployment. Search and browse assets in Connected Assets using the [!UICONTROL Content Finder]. |
 | DAM distributor (technical user) | Remote | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` on remote [!DNL Experience Manager] | This user present on the remote deployment is used by [!DNL Experience Manager] local server (not the [!DNL Sites] author role) to fetch the remote assets, on behalf of [!DNL Sites] author. This role is not same as above two `ksaner` roles and belongs to a different user group. |
@@ -112,7 +112,7 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 
 ## Configure a connection between [!DNL Sites] and [!DNL Dynamic Media] deployments {#sites-dynamic-media-connected-assets}
 
-You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remain the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets.
+You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same. This allows you to leverage the [!DNL Dynamic Media] functionality via Connected Assets feature, for example smart crop and image presets.
 
 To configure this connection, follow these steps.
 
@@ -141,7 +141,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
 1. Navigate to the [!DNL Assets] interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. Alternatively, access `https://[assets_servername_ams]:[port]/assets.html/content/dam` in a browser. Upload the assets of your choice.
 1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide `ksaner` as user name, select the option provided, and click **[!UICONTROL OK]**.
-1. Open a We.Retail website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
+1. Open a `We.Retail` website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
 
    Click **[!UICONTROL Toggle Side Panel]** on upper-left corner of the page.
 
@@ -175,7 +175,7 @@ The fetched assets can be used as any other local asset, except that the associa
 
 ### Check use of an asset across webpages {#asset-usage-references}
 
-[!DNL Experience Manager] lets DAM users check all the references to an asset. It helps understand and manage the usage of an asset in remote [!DNL Sites] and in compound assets. Many authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] in different webpages. To simplify asset management and not lead to broken references, it is important for the DAM users to check use of an asset across local and remote webpages. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+[!DNL Experience Manager] lets DAM users check all the references to an asset. It helps understand and manage the usage of an asset in remote [!DNL Sites] and in compound assets. Many authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote DAM in different webpages. To simplify asset management and not lead to broken references, it is important for the DAM users to check use of an asset across local and remote webpages. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
 
 To view and manage references on the [!DNL Assets] deployment, follow these steps:
 
@@ -184,7 +184,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
    ![Remote references in asset Properties page](assets/connected-assets-remote-reference.png)
 
-1. The references for [!DNL Sites] pages displays total count of references for each local [!DNL Sites]. It may take some time to find all the references and display the total number of references.
+1. The references for [!DNL Sites] pages display total count of references for each local [!DNL Sites]. It may take some time to find all the references and display the total number of references.
 1. The list of references is interactive and DAM users can click on a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
 1. Users can move or delete the asset. When moving or deleting an asset, the total number of references of all the selected assets/folders are displayed in a warning dialog. When deleting an asset for which the references are not yet displayed, a warning dialog is displayed.
 
@@ -220,7 +220,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 * Simple edits that are non-destructive and the edit supported via the `Image` component, can be done on fetched assets. Assets are read-only.
 * The only method to re-fetch the asset is to drag it on a page. There is no API support or other methods to re-fetch an asset to update it.
 * If assets are decommissioned from the DAM, those continue to be in use on [!DNL Sites] pages.
-* The remote reference entries of an asset is fetched asynchronously. The references and the total count is not real-time and there may be some difference if a Sites author uses the asset while a DAM user is viewing the reference. DAM users can refresh the page and try again in a few minutes to get the total count.
+* The remote reference entries of an asset are fetched asynchronously. The references and the total count are not in real time and there may be some difference if a [!DNL Sites] author uses the asset while a DAM user is viewing the reference. DAM users can refresh the page and try again in a few minutes to get the total count.
 
 ## Troubleshoot issues {#troubleshoot}
 
