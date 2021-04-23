@@ -141,13 +141,3 @@ Code sample 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
-</code><?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
-  xmlns:jcr="http://www.jcp.org/jcr/1.0" 
-  jcr:primaryType="sling:Folder"
-  sling:configCollectionInherit="true"
-  sling:configPropertyInherit="true"
-  windowSchedule="daily"
-  windowStartTime="03:00"
-  windowEndTime="05:00"
- /> </code>
