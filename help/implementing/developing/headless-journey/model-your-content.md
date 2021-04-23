@@ -151,6 +151,9 @@ Content Fragment Models provide various mechanisms that allow you to define the 
 
 A Content Fragment Model describes an entity. 
 
+>[!NOTE]
+>You must enable Content Fragment functionality in the Configuration Browser so that you can create new models.
+
 >[!TIP]
 >
 >The model should be named so that the content author knows which model to select when creating a Content Fragment.
@@ -222,7 +225,7 @@ tbc...
 ...will those (ever) be delivered as an official sample package?
 -->
 
-For a basic structure as sample see [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+For a basic structure as sample, see The Sample Content Fragment Structure.
 
 ## What's Next {#whats-next}
 
@@ -232,6 +235,8 @@ Now that you have learned how to model your structure, and create content depend
 ## Additional Resources {#additional-resources}
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) - the lead-in page for Content Fragments
+  * [Content Fragments in the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - enable Content Fragment functionality in the Configuration Browser
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
   * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
 * [AEM GraphQL Schemas](/help/implementing/developing/headless-journey/access-your-content.md) - how GraphQL realizes models
+* [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
