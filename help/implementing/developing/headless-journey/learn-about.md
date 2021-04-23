@@ -100,9 +100,11 @@ It is impossible to predict the future, but headless gives you the agility to re
 
 ## AEM and Headless {#aem-and-headless}
 
-As you continue through this developer journey, you will learn how AEM supports headless delivery models. However it is important to also understand that AEM not only supports headless but also full-stack delivery.
+As you continue through this developer journey, you will learn how AEM supports headless delivery along side its full-stack delivery capabilities.
 
-As an industry leader in digital experience management, AEM offers not only both options but also combinations of these two models, allowing a hybrid approach, when necessary, for an even more flexible content management system. Adobe realizes that the ideal solution to a real challenges that experience creators face is rarely a binary choice. This is why AEM uniquely allows the seamless combination of the two models to help you best serve the consumers of your content. Wherever they are.
+As an industry leader in digital experience management, Adobe realizes that the ideal solution to a real challenges that experience creators face is rarely a binary choice. This is why AEM not only supports both models, but also uniquely allows the seamless hybrid combination of the two to help you best serve the consumers of your content. Wherever they are.
+
+This journey focuses on the headless-only model of content delivery. However once you have laid this foundation of knowledge, you can further explore how to leverage the power of both models.
 
 ## What's Next {#what-is-next}
 
