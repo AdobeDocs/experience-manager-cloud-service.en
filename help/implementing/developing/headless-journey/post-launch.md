@@ -14,6 +14,23 @@ index: no
 
 In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to maintain your headless experience.
 
+## The Story So Far {#story-so-far}
+
+In the previous document of the AEM headless journey, [How to Go Live with Your Headless Application](go-live.md) you learned how to take your headless experience live and you should now:
+
+* Understand AEM Content Replication and Caching Basics
+* Know how to configure the tooling required to simulate go live for your headless application
+* Know how to secure and Scale your application before Launch
+* Understand how to Monitor Performance and Debug Issues
+
+This article builds on those fundamentals so you understand how to maintain your project after going live.
+
+## Objective {#objective}
+
+* List
+* of
+* points
+
 ## What's Next {#what-is-next}
 
 Congratulations! You have completed the AEM Headless Developer Journey! You should now have an understanding of:

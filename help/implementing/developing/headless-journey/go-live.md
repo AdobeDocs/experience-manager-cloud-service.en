@@ -6,13 +6,21 @@ hidefromtoc: yes
 index: no
 ---
 
+# How to Go Live with Your Headless Application {#go-live}
+
 >[!CAUTION]
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-# How to Go Live with Your Headless Application {#go-live}
-
 In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
+
+## The Story So Far {#story-so-far}
+
+In the previous document of the AEM headless journey, [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) you learned how to prepare your own AEM headless project to go live and you should now:
+
+* Understand the requirements to go live.
+
+This article builds on those fundamentals so you understand how to actually take your AEM Headless project live.
 
 ## Objective {#objective}
 
@@ -110,5 +118,16 @@ In order to efficiently log a bug with Support in case you need further assistan
 * Document a way to reproduce the issue
 * Document the content the issue reproduces with
 * Log an issue through the AEM Support portal with the appropriate priority
+
+## What's Next {#what-is-next}
+
+Now that you have completed this part of the AEM Headless Developer Journey, you should:
+
+* Understand AEM Content Replication and Caching Basics.
+* Know how to configure the tooling required to simulate go live for your headless application.
+* Know how to secure and Scale your application before Launch.
+* Understand how to monitor Performance and Debug Issues.
+
+You should continue your AEM headless journey by next reviewing the document [Post Launch](post-launch.md) where you learn how to maintain your headless experience.
 
 ## Additional Resources {#additional-resources}
