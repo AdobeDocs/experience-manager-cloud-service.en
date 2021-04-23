@@ -5,6 +5,10 @@ description: In this optional continuation of the AEM Headless Developer Journey
 
 # How to Create Single Page Applications (SPAs) with AEM {#create-spa}
 
+>[!CAUTION]
+>
+>WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+
 In this optional continuation of the [AEM Headless Developer Journey,](#overview.md) you learn how AEM can combine headless delivery with traditional full-stack CMS features and how you can create editable SPAs using AEM's SPA Editor framework, as well as integrate external SPAs, enabling editing capabilities as required.
 
 ## The Story So Far {#story-so-far}

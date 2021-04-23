@@ -5,6 +5,10 @@ description: Start here for a guided journey through the powerful and flexible h
 
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 
+>[!CAUTION]
+>
+>WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+
 Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
 
 ## Introduction {#introduction}

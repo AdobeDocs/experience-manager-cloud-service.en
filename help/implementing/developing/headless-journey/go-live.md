@@ -5,7 +5,7 @@ description: In this part of the AEM Headless Developer Journey, learn how to de
 
 >[!CAUTION]
 >
-> WORK IN PROGRESS
+>WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
 # How to Go Live with Your Headless Application {#go-live}
 
