@@ -44,7 +44,8 @@ GraphQL is used in various locations in AEM:
 * Commerce
   * 
 * Content Fragments
-  * A customized API has been developed for this use-case. This is the AEM GraphQL API.
+  * A customized API has been developed for this use-case. 
+  * This is the AEM GraphQL API.
 
 ## AEM GraphQL API {#aem-graphql-api}
 
@@ -55,6 +56,8 @@ The AEM GraphQL API allows you to perform (complex) queries on your Content Frag
 >[!NOTE]
 >
 >The AEM GraphQL API implementation is based on the GraphQL Java libraries.
+
+### AEM GraphQL API and Content Fragments {#aem-graphql-content-fragments}
 
 ## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
