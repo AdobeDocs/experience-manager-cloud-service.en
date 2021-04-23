@@ -31,11 +31,11 @@ GraphQL is:
 
   See *GraphQL*.
 
-### GraphQL - Types
+### GraphQL - Types {#graphql-types}
 
-### GraphQL - Schemas
+### GraphQL - Schemas {#graphql-schemas}
 
-### GraphQL - Queries
+### GraphQL - Queries {#graphql-queries}
 
 ## AEM and GraphQL {#aem-graphql}
 
