@@ -5,6 +5,10 @@ description: In this part of the AEM Headless Developer Journey, you will unders
 
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 
+>[!CAUTION]
+>
+>WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+
 In this part of the [AEM Headless Developer Journey,](#overview.md) you will understand the steps to implementing your first headless experience in AEM including planning considerations and also learn best practices to make your path as smooth as possible.
 
 ## The Story So Far {#story-so-far}
