@@ -1,6 +1,9 @@
 ---
 title: AEM Headless Developer Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
