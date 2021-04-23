@@ -30,7 +30,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Frag
 
 GraphQL is:
 
-* "*...a query language for APIs and a runtime for fulfilling those queries with your existing data.*". 
+* "*...a query language for APIs and a runtime for fulfilling those queries with your existing data.*".
 
   See *GraphQL*.
 
@@ -45,16 +45,16 @@ GraphQL is:
 GraphQL is used in various locations in AEM:
 
 * Commerce
-  * 
+  * Placeholder
 * Content Fragments
-  * A customized API has been developed for this use-case. 
+  * A customized API has been developed for this use-case.
   * This is the AEM GraphQL API.
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL API has been developed. 
+For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL API has been developed.
 
-The AEM GraphQL API allows you to perform (complex) queries on your Content Fragments; with each query being according to a specific model type. The content returned can then be used by your applications. 
+The AEM GraphQL API allows you to perform (complex) queries on your Content Fragments; with each query being according to a specific model type. The content returned can then be used by your applications.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ The **Fragment Reference**:
 
 To help with designing and developing your Content Fragment Models, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
 
-## What's Next {#whats-next} 
+## What's Next {#whats-next}
 
 [Learn how to use the REST API to access and update the content of your Content Fragments](/help/implementing/developing/headless-journey/update-your-content.md).
 

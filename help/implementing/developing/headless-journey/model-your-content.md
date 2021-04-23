@@ -27,7 +27,7 @@ In the previous document of the AEM headless journey, [Path to Your First Experi
   
 This article builds on those fundamentals so you understand how to prepare your own AEM headless project.
 
-## Objective {#objective} 
+## Objective {#objective}
 
 * **Audience**: Beginner
 * **Objective**: Learn how to model your content structure, then realize that structure using AEM Content Fragment Models and Content Fragments:
@@ -44,7 +44,7 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 ## Data Modeling {#data-modeling}
 
-*It's a big bad world out there*. 
+*It's a big bad world out there*.
 
 Maybe, maybe not, but it's certainly a big ***complicated*** world out there and data modeling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
 
@@ -65,7 +65,7 @@ There are many Schools, but they all have various things in common:
 * Many extra-curriculum activities
 * and so on....
 
-Even in such a small example the list can seem endless. But if you simply want your application to perform a simple task, you need to limit the information to the essentials. 
+Even in such a small example the list can seem endless. But if you simply want your application to perform a simple task, you need to limit the information to the essentials.
 
 For example, advertising special events for all schools in the area:
 
@@ -80,7 +80,7 @@ For example, advertising special events for all schools in the area:
 
 What you want to describe are referred to as **Entities** - basically the "things" that we want to store information about.
 
-The information that we want to store about them are the **Attributes** (properties), such as Name, and Qualifications for the teachers. 
+The information that we want to store about them are the **Attributes** (properties), such as Name, and Qualifications for the teachers.
 
 Then there are various **Relationships** between the entities. For example, usually a school only has one head teacher, and many teachers (and usually the head teacher is also a teacher).
 
@@ -96,7 +96,7 @@ After this is stable you can translate the models into a **Logical Schema** that
 >
 >Sometimes these two steps are merged, often depending on the complexity of your scenario.
 
-For example, do you need separate entities for `Head Teacher` and `Teacher`, or simply an additional attribute on the `Teacher` model? 
+For example, do you need separate entities for `Head Teacher` and `Teacher`, or simply an additional attribute on the `Teacher` model?
 
 ### Ensuring data integrity {#data-integrity}
 
@@ -105,7 +105,7 @@ Data integrity is needed to guarantee the accuracy and consistency of your conte
 * a clear structure
 * a structure that is as concise as possible (without sacrificing accuracy)
 * validation of individual fields
-* where appropriate, restrict the content of specific fields to what is meaningful 
+* where appropriate, restrict the content of specific fields to what is meaningful
 
 ### Eliminating data redundancy {#data-redundancy}
 
@@ -127,7 +127,7 @@ Data Modeling is a set of established techniques, often used when developed rela
 
 ### Why? {#why}
 
-To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured. 
+To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured.
 
 This means that your application knows in advance the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
 
@@ -144,15 +144,15 @@ The structure of your data model is:
 >
 >The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in a later session.
 
-Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows you to perform (complex) queries on your Content Fragments, with each query being according to a specific model type. 
+Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows you to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
 
-The content returned can then be used by your applications. 
+The content returned can then be used by your applications.
 
 ## Creating the Structure with Content Fragment Models {#create-structure-content-fragment-models}
 
-Content Fragment Models provide various mechanisms that allow you to define the structure of your content. 
+Content Fragment Models provide various mechanisms that allow you to define the structure of your content.
 
-A Content Fragment Model describes an entity. 
+A Content Fragment Model describes an entity.
 
 >[!NOTE]
 >You must enable Content Fragment functionality in the Configuration Browser so that you can create new models.
@@ -189,12 +189,13 @@ AEM provides the following data types for you to model your content:
 ### References and Nested Content {#references-nested-content}
 
 Two data types provide references to content outside a specific fragment:
+
 * **Content Reference**
   This provides a simple reference to other content of any type.
   For example, you can reference an image at a specified location.
 
 * **Fragment Reference**
-  This provides references to other Content Fragments. 
+  This provides references to other Content Fragments.
   This type of reference is used to create nested content, introducing the relationships needed to model your content.
   The data type can be configured to allow fragment authors to:
   * Edit the referenced fragment directly.
@@ -233,7 +234,6 @@ For a basic structure as sample, see The Sample Content Fragment Structure.
 ## What's Next {#whats-next}
 
 Now that you have learned how to model your structure, and create content dependent on that, the next step is to [Learn how to use GraphQL queries to access and retrieve your Content Fragments content](access-your-content.md). This will introduce and discuss GraphQL, then look at some sample queries to see how things work in practice.
-
 
 ## Additional Resources {#additional-resources}
 
