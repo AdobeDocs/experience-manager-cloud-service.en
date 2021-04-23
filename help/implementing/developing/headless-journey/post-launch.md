@@ -1,6 +1,9 @@
 ---
 title: Post Launch
 description: In this part of the AEM Headless Developer Journey, learn how to maintain your headless experience.
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # Post Launch {#post-launch}

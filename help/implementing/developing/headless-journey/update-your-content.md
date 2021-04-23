@@ -1,6 +1,9 @@
 ---
 title: How to Update Your Content via AEM Assets APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use the REST API to access and update the content of your Content Fragments.
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # How to Update Your Content via AEM Assets APIs {#update-your-content}

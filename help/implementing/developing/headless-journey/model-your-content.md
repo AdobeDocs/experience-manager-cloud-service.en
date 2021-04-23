@@ -1,6 +1,9 @@
 ---
 title: How to Model Your Content
 description: In this part of the AEM Headless Developer Journey, learn how to model your content for AEM Headless delivery using Data Modeling with Content Fragment Models and Content Fragments.
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # How to Model Your Content {#model-your-content}

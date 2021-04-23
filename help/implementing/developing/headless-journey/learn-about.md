@@ -1,6 +1,9 @@
 ---
 title: Learn About CMS Headless Development
 description: In this part of the AEM Headless Developer Journey, learn about headless technology and why you would use it.
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # Learn About CMS Headless Development {#learn-about}
