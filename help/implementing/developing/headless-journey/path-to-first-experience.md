@@ -1,11 +1,11 @@
 ---
 title: Path to Your First Experience Using AEM Headless
-description: In this part of the AEM Headless Developer Journey, you will understand the steps to implementing your first headless experience in AEM including planning considerations and learn best practices to make your path as smooth as possible.
+description: In this part of the AEM Headless Developer Journey, you will understand the steps to implementing your first headless experience in AEM including planning considerations and also learn best practices to make your path as smooth as possible.
 ---
 
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) you will understand the steps to implementing your first headless experience in AEM including planning considerations and learn best practices to make your path as smooth as possible.
+In this part of the [AEM Headless Developer Journey,](#overview.md) you will understand the steps to implementing your first headless experience in AEM including planning considerations and also learn best practices to make your path as smooth as possible.
 
 ## The Story So Far {#story-so-far}
 
@@ -13,8 +13,8 @@ In the previous document of the AEM headless journey, [Getting Started with AEM 
 
 * Understand the basics of AEM's headless features.
 * Know the prerequisites for using AEM's headless features.
-* Be able to determine your integration level.
-* Be able to define your project in terms of scope and the chosen integration level.
+* Be aware of AEM's headless integration levels.
+* Be able to define your project in terms of scope.
 
 This article builds on those fundamentals so you understand how to prepare your own AEM headless project.
 
@@ -22,22 +22,23 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 This document helps you understand the steps needed to implement your first project. After reading it you should:
 
-* Understand important planning considerations for designing your content
-* Understand the steps to implement headless depending on your integration level requirements.
-* Set up the necessary tools and AEM configurations.
+* Understand important planning considerations for designing your content.
+* Understand the steps to implement headless in AEM.
+* Know what necessary tools and AEM configurations are required.
 * Know best practices to make your headless journey smooth, keep content generation efficient, and ensure content is delivered quickly.
 
 ## Requirements {#requirements}
 
 Before you continue with this document, ensure that you have reviewed the previous document in the AEM Headless Developer Journey, [Getting Started with AEM Headless as a Cloud Service](getting-started.md) making sure you:
 
-* Fulfill the listed requirements
-* Consider your integration level
-* Have considered your own project definition including scope, roles, and performance
+* Fulfill the listed requirements.
+* Have considered your own project definition including scope, roles, and performance.
 
 ## Planning for Success {#planning-for-success}
 
-To start your first AEM headless project you need to ensure you have a content model that will support the personalization and updates you want to make across all your channels. You also want to make sure you have a proper development environment set up if you are building a client-side application so you can test your client against API calls to AEM as a Cloud Service.
+To start your first AEM headless project you need to ensure you have a content model that will support the personalization and updates you want to make across all your channels.
+
+Separate from AEM, you also want to make sure you have a proper development environment set up if you are building a client-side application so you can test your client against API calls to AEM as a Cloud Service.
 
 ### Defining Content Models and APIs {#defining-models}
 
@@ -79,22 +80,11 @@ You can also optionally refer to the [additional resources](#additional-resource
 
 ## Implementing Your First AEM Headless App
 
-How you implement your first headless app depends on the integration level you chose for your project. This section gives you an overview of what is needed to implement your first app.
-
-### Level 1 - Content Modeled in AEM, Delivered to External Consumer {#level-one}
+This is an overview of what is needed to implement your first headless app using AEM to deliver your content. How to carry out these steps will be described in detail in later parts of the Headless Developer Journey.
 
 1. Create Content Fragment Models
 1. Create Content Fragments
 1. Query content with GraphQL
-
-### Level 2 - Content Modeled in AEM, Delivers to External Consumer, and Visible/Editable in AEM {#level-two}
-
-Same as [level one](#level-one) and also including:
-
-1. Creating an editable SPA
-1. Editing an external SPA in AEM
-1. Using the RemotePage component
-1. Using composite components
 
 ## Best Practices {#best-practices}
 
@@ -128,9 +118,9 @@ A headless project is not only successful because of the technology implemented,
 
 Now that you have completed this part of the AEM Headless Developer Journey, you should:
 
-* Understand important planning considerations for designing your content
-* Understand the steps to implement headless depending on your integration level requirements.
-* Set up the necessary tools and AEM configurations.
+* Understand important planning considerations for designing your content.
+* Understand the steps to implement headless in AEM.
+* Know what necessary tools and AEM configurations are required.
 * Know best practices to make your headless journey smooth, keep content generation efficient, and ensure content is delivered quickly.
 
 You should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
@@ -148,8 +138,3 @@ While it is recommended that you move on to the next part of the headless develo
 * [Create Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
 * [Create Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
 * [Query content with GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation on the GraphQL API
-* [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md) - A complete overview of how to implement editable SPAs in AEM
-* [Creating an editable SPA](/help/implementing/developing/hybrid/introduction.md) - Guide to making a SPA editable in AEM
-* [Editing an external SPA in AEM](/help/implementing/developing/hybrid/editing-external-spa.md) - Guide to making an external SPA editable in AEM
-* [Using the RemotePage component](/help/implementing/developing/hybrid/remote-page.md) - How to use the RemotePage component to serve an external SPA within AEM
-* [Using composite components](/help/implementing/developing/hybrid/composite-components.md) - Create composite components for use with a SPA

@@ -23,8 +23,8 @@ This document helps you understand AEM Headless in the context of your own proje
 
 * Understand the basics of AEM's headless features.
 * Know the prerequisites for using AEM's headless features.
-* Be able to determine your integration level.
-* Be able to define your project in terms of scope and the chosen integration level.
+* Be aware of AEM's headless integration levels.
+* Be able to define your project in terms of scope.
 
 ## AEM Basics {#aem-basics}
 
@@ -57,10 +57,6 @@ AEM Headless builds off of this technical foundation by offering powerful tools 
 
 The headless capabilities of AEM are based on a few key features. These will be explained in detail in later parts of the journey. It is important now only to know the basics of what they do and what they are called.
 
->[!TIP]
->
->If you are already familiar with AEM, you can review the [Headless Getting Started Guides](/help/implementing/developing/headless/introduction.md) for a compact but thorough introduction to all of the important headless features in AEM.
-
 ### Content Fragment Models {#content-fragment-models}
 
 Content Fragment Models define the structure of the data and content that you will create and manage in AEM. They serve as a kind of scaffolding for your content. When choosing to create content, your authors will select from the Content Fragment Models you define, which guides them in creating content.
@@ -82,25 +78,29 @@ You will learn about these APIs and how to use them in a later part of the AEM h
 
 ## Headless Integration Levels {#integration-levels}
 
-AEM supports many levels of headless integration. Understanding which level is appropriate for your use case is an important part of defining your project.
+AEM supports both the full headless and the traditional full stack or headful models of a CMS. However AEM offers not only these two exclusive choices, but the ability to support hybrid models that combine the advantages of both, offering unique flexibility for your headless project.
+
+In order to ensure your understanding of headless concepts, this AEM Headless Developer Journey focuses on the pure headless model to get you up-and-running as soon as possible with no coding in AEM.
+
+However you should be aware of the additional hybrid possibilities open to you once you understand AEM's headless features. We lay these cases out below for your awareness. At the end of the journey you will be introduced to these concepts in more detail in case such flexibility is required for your project.
 
 ### You already have an external consume of headless content such as a singe page application (SPA). {#already-have-a-spa}
 
 Let us assume that your basic requirement is at a minimum to deliver content from AEM to an existing, external service.
 
-#### Level 1: Content Fragment Integration {#level-1}
+#### Level 1: Content Fragment Integration - Traditional Headless Model {#level-1}
 
-This level of integration allows your content authors to create content in AEM and deliver it heedlessly to any number of external services using GraphQL or to edit them from external services using the Assets API.
+This level of integration is the traditional headless model and allows your content authors to create content in AEM and deliver it heedlessly to any number of external services using GraphQL or to edit them from external services using the Assets API. No coding is required in AEM.
 
 In this model, AEM is only used for creating and serving the content through the use of AEM Content Fragments. Rendering and interaction with the content is delegated to the consuming external application, often a single-page application (SPA).
 
-#### Level 2: Embed the SPA in AEM {#level-2}
+#### Level 2: Embed the SPA in AEM - Hybrid Model {#level-2}
 
 This level of integration builds on the first level, but also allows the external application (SPA) to be embedded in AEM so that the content authors can view the content in the context of the external application within AEM. The application can also support limited editing of the external application within AEM.
 
 This level has the advantage of allowing content authors to flexibly author content in AEM in a headful way, with their content presented in-context with an embedded external SPA, while still delivering the content headlessly.
 
-#### Level 3: Embed and Fully Enable SPA in AEM {#level-3}
+#### Level 3: Embed and Fully Enable SPA in AEM - Hybrid Model {#level-3}
 
 This level of integration builds on level two by enabling most content in the external SPA to be editable within AEM.
 
@@ -124,7 +124,7 @@ There are a number of requirements before you begin your headless AEM project.
 
 * Sandbox access for testing deploying your project
 * Local development instance for data modeling and testing
-* Existing external SPA (optional, depending on [what integration level](#integration-level) is required for your project)
+* Existing external SPA or other consumer of your headless AEM content
 
 ## Defining Your Project {#defining-your-project}
 
@@ -227,6 +227,8 @@ Developers should keep in mind a few basic recommendations as they plan their qu
 * For best query performance, always use persisted queries in AEM. These are discussed later in the journey.
 * GraphQL is designed to be declarative following the motto "Ask for exactly what you need, and get exactly that." This means that when creating GraphQL queries, always avoid `select *`-type queries that you might create in a relational database.
 
+For a [typical headless implementation using AEM,](#level-1) the developer requires no coding knowledge of AEM.
+
 ### Performance Requirements {#performance-requirements}
 
 For any project to be a success, performance must be considered before any content is created.
@@ -257,8 +259,8 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 
 * Understand the basics of AEM's headless features.
 * Know the prerequisites for using AEM's headless features.
-* Be able to determine your integration level.
-* Be able to define your project in terms of scope and the chosen integration level.
+* Be aware of AEM's headless integration levels.
+* Be able to define your project in terms of scope.
 
 You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you will learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
 
@@ -280,7 +282,5 @@ While it is recommended that you move on to the next part of the headless develo
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
 * [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
-* [Persisted Queries](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - Technical 
-documentation on persisited queries in AEM
-* [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md) - A guide to creating fully-editable single-page applications in AEM
+* [Persisted Queries](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - Technical documentation on persisted queries in AEM
 * [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM
