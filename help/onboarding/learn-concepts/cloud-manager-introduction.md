@@ -22,7 +22,6 @@ A user can create a **Sandbox** or a **Production** program.
 * A *Production Program* is created to enable live traffic at the appropriate time in the future.
    Refer to [Introduction to Production Programs](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.
 
-
 * A *Sandbox Program* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a Production program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
    Refer to [Introduction to Sandbox Programs](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
 
@@ -33,21 +32,21 @@ Cloud Manager Environments typically have one Production environment, one Stage 
 
 The CI/CD Pipelines in Cloud Manager are composed of services such as:
 
-* [AEM Author](#aem-author-service)
-* [AEM Publish](#aem-publish-service)
+* [AEM Author](#author-services)
+* [AEM Publish](publish-services)
 * [Dispatcher](#dispatcher-services)
 
    >[!NOTE]
    > Refer to the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) to learn more about the available environments.
 
-### AEM Author Service {#aem-author-service}
+### AEM Author Service {#author-services}
 
 Environment where site content and digital assets are created, managed and updated. Typically only internal users have access to the Author Service and is behind a login screen. The Authoring Service is designed both as an authoring and preview environment.
 
-### AEM Publish Service {#aem-publish-service}
+### AEM Publish Service {#publish-services}
 
 Environment that hosts the end-user experience, like a web site. This is the service that site visitors will view and interact with. Typically, the Publish Service is publicly available.
 
-### AEM Dispatcher Service {#aem-publish-service}
+### AEM Dispatcher Service {#dispatcher-services}
 
 The Dispatcher is an Apache HTTP Web server module that provides a security and performance layer that sits in front of the AEM Publish Service.
