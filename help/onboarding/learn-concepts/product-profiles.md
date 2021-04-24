@@ -28,7 +28,7 @@ The following Product profiles are available in AEM as a Cloud Service team:
 
 Cloud Manager has pre-configured product profiles, or more simply, role based permissions. Your system administrator will be responsible for setting up your Cloud Manager team by assigning the to these product profiles, and must familiarize themselves with these product profiles, and which team member to assign them to.
 >[!NOTE]
->Refer to [Role Based Permissions in Cloud Manager](/help/onboarding/getting-access-to-aem-in-cloud/roles-responsibilities.md) for more details.
+>Refer to [Role Based Permissions in Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) for more details.
 
 Each of the product profiles have specific permissions associated with it. For example, if you are in the role of a:
 
