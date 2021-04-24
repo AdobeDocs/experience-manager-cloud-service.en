@@ -12,15 +12,14 @@ Your AEM as a Cloud Service team members will be assigned to one or more of the 
 
 ## AEM as a Cloud Service Product Profiles  {#aem-product-profiles}
  
-The following Product profiles are available in AEM as  Cloud Service team:
+The following Product profiles are available in AEM as a Cloud Service team:
 
-* AEM Administrators: This is typically assigned to developers, in particular developers who will need to have access to, for example, the development environments. The Administrator_xxx product profile will be used to grant administrator privileges in the associated AEM instance.
+* **AEM Administrator**: An AEM Administrator product profile, is typically assigned to developers, who must have access to the development environments. The `Administrators_xxx` product profile will be used to grant administrator privileges in the associated AEM instance.
 
-* AEM Users: An AEM user is an author who creates and reviews the content (this can be of several types; for example, pages, assets, publications, etc) before it is published to your website. AEM Users are the users in your organization who use AEMaaCS as part of the agreement with Adobe. AEM Authors and Users will need to access AEM to do their tasks. The User_xxx product profile is assigned to regular users.
+* **AEM User**: An AEM User, is an author who creates and reviews the content, for example, pages, assets, and publications before it is published to your website. AEM Users are the users in your organization who use AEM as a Cloud Service as part of the agreement with Adobe. AEM Authors and Users require to access AEM to do their tasks. The `Users_xxx` product profile is assigned to AEM users.
 
->[!NOTE]
->Every user assigned to an AEM as a Cloud Service product profile has (readonly) access to Cloud Manager.
-
+   >[!NOTE]
+   >Every user assigned to an AEM as a Cloud Service product profile has (readonly) access to Cloud Manager.
 
 ## Cloud Manager Product Profiles {#cloud-manager-product-profiles}
 
@@ -44,5 +43,5 @@ Your Cloud Manager team will include at least:
 * One Deployment Manager
 * One Developer
 
->[!NOTE]
->To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles ASM User-xxx or AEM Administrators-xxx. You must have permissions to the instance. Permissions to administer the associated Cloud Manager will not suffice.
+   >[!NOTE]
+   >To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles `AEM Users-xxx` or `AEM Administrators-xxx`. You must have permissions to the instance. Permissions to administer the associated Cloud Manager will not suffice.
