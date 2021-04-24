@@ -9,7 +9,7 @@ The Adobe Admin Console is a central place to administer and manage your Adobe p
 
 Sign in to the Adobe Admin console to manage user accounts, add or remove users, create groups, and more. Sign in to [Admin Console](https://adminconsole.adobe.com) with  your [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md). When you are invited to the Admin Console as an admin, you receive an email invitation. Click on **Get Started** to start your role as a System Administrator.
 
-![image](/help/onboarding/learn-concepts/assets/sys-admin01.png)
+![image](/help/onboarding/learn-concepts/assets/admin-console01.png)
 
 
 >[!NOTE]
