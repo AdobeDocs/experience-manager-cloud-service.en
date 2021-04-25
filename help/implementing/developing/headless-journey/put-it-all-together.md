@@ -30,7 +30,9 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 ## Local Development Environment Setup {#local-development-environment}
 
-A local development environment is composed of three main areas:
+In order to prepare your AEM headless project for launch, you will need to set up a local development environment.
+
+The local development environment is composed of three main areas:
 
 1. The AEM Project - this will contain all the custom code, configuration and content the AEM developers are going to be working on
 1. The Local AEM Runtime - local versions of the AEM author and publish services that will be used to deploy code from the AEM project
@@ -46,6 +48,24 @@ In order to develop for AEM, you will need the following development tools:
 * The Node.js library
 * Docker for the Local Dispatcher Runtime
 * The IDE of your choice
+
+## The Local Development Workflow {#the-local-development-workflow}
+
+The local development project is built on Apache Maven and is using Git for source control. In order to update the project, developers can use their preferred integrated development environment, such as Eclipse, Visual Studio Code or or IntelliJ, amongst others.
+
+To test code updates or content that will be ingested by your headless application, you need to deploy the updates to a local AEM runtime, which includes local instances of the AEM author and publish services.
+
+It is important that you test the author functionality in the author instance, as it is equally important to test code updates against a publish instance.
+
+In a production system, a dispatcher and an http Apache server will always sit in front of an AEM publish instance. They provide caching and sercurity services for the AEM system, so it is imporant to test code and content updates against the dispatcher as well.
+
+Once you make sure everything has been tested and is working properly, you are ready to push your code updates to a centralized Git repository in Cloud Manager.
+
+Once the code updates are in Cloud Manager, they can be deployed to AEM as a Cloud Service using Cloud Manager's CI/CD pipeline.
+
+## The AEM SDK {#the-aem-sdk}
+
+
 
 ## What's Next {#what-is-next}
 
