@@ -12,7 +12,7 @@ index: no
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to use GraphQL queries to access the content of your Content Fragments.
+In this part of the [AEM Headless Developer Journey,](overview.md) learn how to use GraphQL queries to access the content of your Content Fragments.
 
 ## The Story So Far {#story-so-far}
 
@@ -123,6 +123,7 @@ To help with designing and developing your Content Fragment Models, you can prev
 
 ## Additional Resources {#additional-resources}
 
+* [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features including data modeling and GraphQL
 * [GraphQL.org](https://graphql.org)
   * [Schemas](https://graphql.org/learn/schema/)
   * [GraphQL Java libraries](https://graphql.org/code/#java)
