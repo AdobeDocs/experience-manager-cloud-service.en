@@ -1,8 +1,8 @@
 ---
 title: Working with Workflows
 description: Workflows in AEM allow you to automate a series of steps that are performed on a page or asset.
+exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
 ---
-
 # Working with Workflows {#working-with-workflows}
 
 AEM Workflows allows you to automate a series of steps that are performed on (one or more) pages and/or assets.

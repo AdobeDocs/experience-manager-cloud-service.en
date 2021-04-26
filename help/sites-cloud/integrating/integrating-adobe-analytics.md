@@ -1,8 +1,10 @@
 ---
 title: Integrating with Adobe Analytics
 description: Integrating with Adobe Analytics 
+feature: Administering
+role: Administrator
+exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 ---
-
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 
 Integrating Adobe Analytics and AEM as a Cloud Service allows you to track your web page activity. The integration requires:

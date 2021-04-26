@@ -1,8 +1,8 @@
 ---
 title: Search
 description: Find your content faster with comprehensive search
+exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 ---
-
 # Search {#search-feature}
 
 The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.

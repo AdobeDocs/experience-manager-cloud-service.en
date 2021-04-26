@@ -27,7 +27,7 @@ As a user, you can access **CRXDE Lite** on the development environment but not 
 >[!IMPORTANT]
 >Writing to immutable repositories such as `/libs` and `/apps` at runtime will result in errors. Additionally, as a customer, you will not have access to developer tooling for staging and production environments.
 
-Refer to [Developing with CRXDE Lite](https://docs.adobe.com/help/en/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) to learn how to develop your AEM application using CRXDE Lite.
+Refer to [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRXDE Lite.
 
 ## Managing Logs {#managing-logs}
 

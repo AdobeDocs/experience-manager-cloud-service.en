@@ -4,6 +4,8 @@ description: Learn about accessibility in Dynamic Media and Dynamic Media Viewer
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+feature: Accessibility
+role: Administrator,Business Practitioner
 ---
 
 # Accessibility in Dynamic Media {#accessibility-in-dm}

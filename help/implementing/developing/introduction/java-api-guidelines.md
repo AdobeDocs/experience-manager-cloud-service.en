@@ -1,8 +1,8 @@
 ---
 title: Java API Guidelines
 description: AEM is built on a rich open-source software stack that exposes many Java APIs for use.
+exl-id: 0be33ec9-a4c3-4400-99d3-ed8366c5b5f9
 ---
-
 # Java API Guidelines {#java-api-guidelines}
 
 Adobe Experience Manager (AEM) is built on a rich open-source software stack that exposes many Java APIs for use during development.

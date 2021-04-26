@@ -1,8 +1,9 @@
 ---
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.9.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.9.0
+feature: Release Information
+exl-id: 874ece8d-206a-4081-94c4-c82a375720c5
 ---
-
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.9.0 {#release-notes}
 
 This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2020.9.0.
