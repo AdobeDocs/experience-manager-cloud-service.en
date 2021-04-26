@@ -1,11 +1,12 @@
 ---
 title: Using Rulesets to Transform URLs
-description: You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions.
+description: Learn how to deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript™) that evaluate XML data and take certain actions if that data meets certain conditions.
+role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 ---
-
 # Using rule sets to transform URLs {#using-rulesets-to-transform-urls}
 
-You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions. Each rule consists of at least one condition and at least one action. A rule evaluates the XML data against the conditions, and if a condition is met, then it takes the appropriate action. Examples of rule sets include the following:
+You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript™) that evaluate XML data and take certain actions if that data meets certain conditions. Each rule consists of at least one condition and at least one action. A rule evaluates the XML data against the conditions, and if a condition is met, then it takes the appropriate action. Examples of rule sets include the following:
 
 * Adding a MIME type suffix. Many services and websites require image suffixes, such as adding `.jpg` to a URL.
 * Creating a folder path to the URL for SEO (Search Engine Optimization) purposes.
@@ -59,8 +60,8 @@ See also [Using 'asset' instead of 'is' image in a rule set](https://helpx.adobe
     * In the **[!UICONTROL Open]** dialog box, browse to your rule set file (XML).
     * Select the file, then click **[!UICONTROL Open]**.
     * On the right side of the **[!UICONTROL Upload]** page, select a destination folder for the rule set file.
-    * Near the bottom of the page, ensure **[!UICONTROL Publish After Uploading]** is checked.
-    * In the bottom right corner of the page, click **[!UICONTROL Submit Upload]**.
+    * Near the bottom of the page, ensure that Publish After Uploading is checked.
+    * In the bottom-right corner of the page, click **[!UICONTROL Submit Upload]**.
     * On the Global Navigation bar, click **[!UICONTROL Jobs]** to check the status of the upload job. When the **[!UICONTROL Status]** column on the **[!UICONTROL Job]** page says Upload Done, continue to the next steps.
 
 1. On the navigation bar near the top of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
@@ -71,5 +72,4 @@ See also [Using 'asset' instead of 'is' image in a rule set](https://helpx.adobe
 
    The rule set conditions are applied on the requests to the live Dynamic Media Image Servers.
 
-   If you make changes to the rule set file, the changes are immediately applied when you re-upload and re-publish the updated rule set file.
-
+   If you change the rule set file, the changes are immediately applied when you reupload and republish the updated rule set file.

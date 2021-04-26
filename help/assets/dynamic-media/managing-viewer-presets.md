@@ -1,8 +1,10 @@
 ---
 title: Managing viewer presets
-description: How to create and manage viewer presets in Dynamic Media.
+description: Learn how to create and manage viewer presets in Dynamic Media.
+feature: Viewer Presets,Viewers
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 ---
-
 # Managing Viewer Presets{#managing-viewer-presets}
 
 A Viewer Preset is a collection of settings that determine how users view rich-media assets on their computer screens and mobile devices. If you are an administrator, you can create Viewer Presets. Settings are available for an array of viewer configuration options. For example, you can change the viewer display size or zoom behavior.
@@ -49,7 +51,7 @@ See [Responsive Static Image library](https://experienceleague.adobe.com/docs/dy
 >[!NOTE]
 >
 >Publish all out-of-the-box viewers before you use them for the first them.
->See [Publishing Viewer Presets.](#publishing-viewer-presets)
+>See [Publishing Viewer Presets](#publishing-viewer-presets).
 
 ### Viewer Preset system compatibility  {#viewer-preset-system-compatibility}
 

@@ -1,8 +1,10 @@
 ---
 title: Dynamic Media Image Profiles
-description: Create Dynamic Media Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both. Then, apply the profile to a folder of image assets.
+description: "Learn how to create Dynamic Media Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both. Then, apply the profile to a folder of image assets."
+feature: Asset Management,Image Profiles,Renditions
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 ---
-
 # Dynamic Media Image Profiles {#image-profiles}
 
 When uploading images, you can automatically crop the image upon upload by applying an Image Profile to the folder.
@@ -89,7 +91,7 @@ In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
  </tbody>
 </table>
 
-Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
@@ -241,7 +243,7 @@ You can rerun smart crop to generate the additional crops again, if necessary.
         * If the image has a smart crop or a smart swatch only, on the image, drag the corner handle of the crop box. Adjust the size of the viewable area of the crop.
         * If the image has both a smart crop and a smart swatch, on the image, drag the corner handle of the crop box. Adjust the size of the viewable area of the crop. Or, tap the smart swatch below the image (color swatches are static), then drag the corner handle of the crop box. Adjust the size of the viewable area of the swatch.
 
-       ![Resizing the smart crop of an image.](assets/edit_smart_crops-resize.png)
+       ![Resizing the smart crop of an image](assets/edit_smart_crops-resize.png).
 
     * Move the smart crop box. Do any one of the following:
 

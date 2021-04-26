@@ -1,8 +1,10 @@
 ---
 title: Translating Content for Multilingual Sites
 description: Get an overview of how to translate content for multilingual sites.
+feature: Language Copy
+role: Administrator
+exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 ---
-
 # Translating Content for Multilingual Sites {#translating-content-for-multilingual-sites}
 
 Automate the translation of page content and assets to create and maintain multilingual websites. To automate translation workflows, you integrate translation service providers with AEM and create projects for translating content into multiple languages. AEM supports human and machine translation workflows.

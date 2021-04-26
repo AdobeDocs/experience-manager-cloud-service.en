@@ -1,8 +1,8 @@
 ---
 title: Working with Page Versions
 description: Create, compare, and restore versions of a page
+exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 ---
-
 # Working with Page Versions {#working-with-page-versions}
 
 Versioning creates a "snapshot" of a page at a specific point in time. With versioning, you can perform the following actions:

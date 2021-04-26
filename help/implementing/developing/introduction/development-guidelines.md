@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service Development Guidelines
 description: AEM as a Cloud Service Development Guidelines
+exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 ---
-
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
 Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
@@ -121,7 +121,7 @@ Thread dumps on Cloud environments are collected on an ongoing basis, but cannot
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
-Note that on local development (using the cloud-ready quickstart), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+Note that on local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
@@ -154,7 +154,6 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 

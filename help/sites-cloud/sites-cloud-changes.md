@@ -1,8 +1,8 @@
 ---
 title: Notable Changes to AEM Sites in AEM Cloud Service
-description: Notable Changes to AEM Sites in AEM Cloud Service 
+description: Notable Changes to AEM Sites in AEM Cloud Service
+exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 ---
-
 # Notable Changes to AEM Sites as a Cloud Service {#notable-changes}
 
 AEM Sites as a Cloud Service provides experience management capabilities as part of the cloud-native AEM as a Cloud Service platform. In addition to core benefits of AEM as a Cloud Service, such as cloud-native scalability, uptime, and always being up-to-date, AEM Sites as a Cloud Service also provides a number of Sites-specific changes and additions. 
@@ -51,4 +51,4 @@ As a result of immutable content being inaccessible at runtime, the following AE
 * i18n dictionary translation 
 * Developer Mode in AEM Sites Page Editor 
 
-These capabilities can be used via local, standalone developer instances of AEM as a Cloud Service, for updating content and code in the AEM as a Cloud Service GIT repository, but not in hosted runtime instances. 
+These capabilities can be used via local, standalone developer instances of AEM as a Cloud Service, for updating content and code in the AEM as a Cloud Service GIT repository, but not in hosted runtime instances.

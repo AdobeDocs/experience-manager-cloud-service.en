@@ -1,8 +1,8 @@
 ---
 title: What is Different and What is New - Adobe Experience Manager as a Cloud Service
-description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service. 
+description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service.
+exl-id: d1ce126e-960c-4367-b741-af709dd81010
 ---
-
 # What is New and What is Different {#what-is-new-and-what-is-different}
 
 For many years AEM has been available both:
@@ -30,7 +30,7 @@ There are intrinsic differences between these previous approaches and AEM as a C
 
 >[!NOTE]
 >
->For further details on the On-Premise and Managed Service versions, see the documentation set for [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
+>For further details on the On-Premise and Managed Service versions, see the documentation set for [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html).
 
 ## Architecture {#architecture}
 
@@ -117,7 +117,7 @@ Cloud Manager has evolved as a self-service portal where the main components of 
 Cloud Manager creates environments in datacenters across many geographic regions, providing for global coverage. CDN Points of Presence (PoPs) ensure low-latency content delivery for customers located all over the world.
 
 >[!NOTE]
->Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) to get started with Cloud Manager in AEM as a Cloud Service.
+>Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md) to get started with Cloud Manager in AEM as a Cloud Service.
 
 ## Onboarding {#onboarding}
 

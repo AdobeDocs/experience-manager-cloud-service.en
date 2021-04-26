@@ -1,8 +1,10 @@
 ---
 title: Interactive Videos
 description: Learn how to work with interactive video and shoppable video in Dynamic Media.
+feature: Interactive Videos
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 ---
-
 # Interactive Videos{#interactive-videos}
 
 
@@ -78,7 +80,7 @@ Interactive video steps:
    Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you eventually copy and apply to your website landing page. See [Adding interactivity to your video](#adding-interactivity-to-your-video).
    See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Adding an interactive video to your website or to your website in Experience Manager** - If you use Experience Manager Sites, or Experience Manager eCommerce, or both, you can add the interactive video directly to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Adding an interactive video to your website or to your website in Experience Manager** - If you use Experience Manager Sites, or Experience Manager eCommerce, or both, you can add the interactive video directly to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
    Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
    If you are using a third-party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quick view implementation that is used on your website. See [Integrating an interactive video with an existing Quick view](#integrating-an-interactive-video-with-an-existing-quickview).
    [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -491,7 +493,7 @@ After you save your interactive video, the video is immediately opened into Prev
    >
    >To publish a shoppable video with Quick views, be sure you also publish each of the video's related image assets from your commerce area, separately.
 
-   After you have added timeline segments and published the interactive video, you are ready to add it to your existing website landing page. See [Integrating an interactive video with your website.](#integrating-an-interactive-video-with-your-website)
+   After you have added timeline segments and published the interactive video, you are ready to add it to your existing website landing page. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
 
 ## Publishing interactive video assets {#publishing-interactive-video-assets}
 
@@ -501,7 +503,7 @@ See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-asset
 
 After you have uploaded a video, added timeline segments to it, and published the interactive video, you are now ready to add it to your existing website.
 
-If you are an Experience Manager Sites customer, you can add the interactive video by dragging the Interactive Media component to your page. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+If you are an Experience Manager Sites customer, you can add the interactive video by dragging the Interactive Media component to your page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 If you are a standalone Experience Manager Assets customer, you can manually add the interactive video to your website as described in this section.
 

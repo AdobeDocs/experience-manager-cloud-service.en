@@ -1,8 +1,8 @@
 ---
 title: Release Notes for 2020.7.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: [!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.7.0.
+exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 ---
-
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 The following section outlines the general Release Notes for Experience Manager as a Cloud Service 2020.7.0.
