@@ -115,6 +115,7 @@ There are two types of endpoints in AEM:
   * This endpoint can use all Content Fragment Models from all tenants.
   * If there are any Content Fragment Models that should be shared among tenants, then these should be created under the global tenant.
 * Tenant:
+  * Corresponds to a tenant configuration, as defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
   * Specific to a specified site/project.
   * A tenant specific endpoint will use the Content Fragment Models from that specific tenant together with those from the global tenant.
 
@@ -210,13 +211,8 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 >Your endpoint will not work out-of-the-box. You will have to provide [Additional Configurations for GraphQL Endpoint](#additional-configurations-graphql-endpoint) separately.
 -->
 
-### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
-
 <!--
-Comment out the Note?
-Or the entire section?
-If only the note, do we need to document how to perform the manual configurations - or are they OOTB?
--->
+### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
 
 >[!NOTE]
 >
@@ -227,13 +223,10 @@ The following additional configuration is required:
 * Dispatcher: 
   * To allow required URLs
   * Mandatory
-<!--
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint
   * Optional
 --> 
-
-<!-- remove this completely? -->
 
 <!--
 ### Supporting packages {#supporting-packages}
@@ -640,7 +633,6 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       * See [Sample Query - All Persons that do not have a name of "Jobs"](#sample-all-persons-not-jobs)
       * See [Sample Query - All Adventures where the `_path` starts with a specific prefix](#sample-wknd-all-adventures-cycling-path-filter)
   
-  
     * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
       * See [Sample Query - Filter on an array with an item that must occur at least once](#sample-array-item-occur-at-least-once)
 
@@ -658,10 +650,15 @@ After preparing a query with a POST request, it can be executed with a GET reque
 
 This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-Here are the steps required to persist a given query:
+Creating a persisted query for a specific tenant configuration requires a corresponding tenant-specific endpoint. For example, to create a persisted query specifically for the WKND tenant, a corresponding WKND-specific endpoint must be created in advance.
 
 >[!NOTE]
->Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>The **GraphQL Persistence Queries** need to be enabled, for the appropriate tenant configuration. 
+
+Here are the steps required to persist a given query:
 
 1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
