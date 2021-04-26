@@ -1,8 +1,8 @@
 ---
 title: Unified Experience for Code Refactoring Tools
 description: Unified Experience for Code Refactoring Tools
+exl-id: 856bce12-7d5e-4f8c-b252-7752bcbeebc4
 ---
-
 # Unified Experience for Code Refactoring Tools {#unified-experience}
 
 We have developed tools to automate some of the code refactoring tasks required to be compatible with AEM as a Cloud Service. To reduce the complexity associated with installation and setup of different code refactoring tools, we have developed a plugin to unify tools that operate on code and repositories. 

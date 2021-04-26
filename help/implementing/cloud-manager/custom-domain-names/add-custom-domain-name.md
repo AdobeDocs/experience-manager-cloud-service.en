@@ -1,8 +1,8 @@
 ---
 title: Adding a Custom Domain Name
 description: Adding a Custom Domain Name
+exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 ---
-
 # Adding a Custom Domain Name {#adding-cdn}
 
 A user must be a Business Owner or Deployment Manager in order to add a Custom Domain name in Cloud Manager.

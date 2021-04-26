@@ -1,17 +1,19 @@
 ---
 title: Delivering Optimized Images for a Responsive Site
 description: Learn how to use the responsive code feature to deliver optimized images from Dynamic Media.
+feature: Asset Management
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 ---
-
 # Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
 
 Use the Responsive code feature when you want to share the code for responsive serving with your web developer. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
 This feature makes sense to use if your website is on a third-party WCM. However, if your website is on AEM instead, an offsite image server renders the image and supplies it to the web page.
 
-See also [Embedding the Video Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video Viewer on a Web Page](embed-code.md).
 
-See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
+See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
 **To deliver optimized images for a responsive site**:
 

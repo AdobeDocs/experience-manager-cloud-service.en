@@ -3,8 +3,10 @@ title: Manage metadata of digital assets
 description: Learn about the types of metadata an how [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] makes it possible to automatically organize and process assets based on their metadata.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Asset Management,Metadata
+role: Business Practitioner,Architect,Administrator
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 ---
-
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
@@ -108,7 +110,7 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
 
 >[!NOTE]
 >
->The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+>The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadata-updates).
 
 1. Navigate to the location of the assets that you want to edit.
 1. Select the assets for which you want to edit common properties.

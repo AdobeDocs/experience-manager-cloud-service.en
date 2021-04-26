@@ -1,8 +1,8 @@
 ---
 title: ContextHub Diagnostics
 description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
+exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
 ---
-
 # ContextHub Diagnostics {#contexthub-diagnostics}
 
 ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework. To open the page, go to the `contexthub.diagnostics.html` page of your AEM author instance, for example:

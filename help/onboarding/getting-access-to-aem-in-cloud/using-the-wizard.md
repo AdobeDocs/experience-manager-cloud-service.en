@@ -1,8 +1,8 @@
 ---
 title: Using the Wizard
 description: Using the Wizard - Cloud Services
+exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 ---
-
 # Using the Wizard {#using-wizard-to-create-an-aem-application-project}
 
 To help get new customers started, Cloud Manger is now able to create a minimal AEM project as a starting point. This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).

@@ -2,8 +2,10 @@
 title: Create and manage digital assets in multiple languages
 description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
+feature: Asset Management,Translation
+role: Administrator,Business Practitioner
+exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 ---
-
 # Multilingual assets {#multilingual-assets}
 
 Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects. Adobe Experience Manager (AEM) Assets lets you automate translation workflows on assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.

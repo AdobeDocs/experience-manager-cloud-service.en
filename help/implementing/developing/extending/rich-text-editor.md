@@ -2,8 +2,8 @@
 title: Configure the Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Configure Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
+exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 ---
-
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. See how authors [use RTE for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) web content.
@@ -276,4 +276,3 @@ Below is a sample snippet to map the command `Bold` to the Coral icon named `tex
 >* [Configure RTE plug-ins](configure-rich-text-editor-plug-ins.md)
 >* [Use Rich Text Editor for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configure RTE for accessible sites](rte-accessible-content.md)
->* [Tutorial sample to create composite multifield component](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)

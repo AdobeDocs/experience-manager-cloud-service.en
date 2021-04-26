@@ -1,8 +1,8 @@
 ---
 title: Project Set up Details
 description: Project Set up Details - Cloud Services
+exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 ---
-
 # Setting up your Project {#project-setup-details}
 
 ## Modifying Project Setup Details {#modifying-project-setup-details}

@@ -1,8 +1,8 @@
 ---
 title: Post Go-live Phase
 description: Post Go-live Phase
+exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
 ---
-
 # Post Go-live {#post-go-live}
 
 In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.
@@ -27,7 +27,7 @@ As a user, you can access CRX/DE Lite on the development environment but not sta
 >[!IMPORTANT]
 >Writing to immutable repositories such as `/libs` and `/apps` at runtime will result in errors. Additionally, as a customer, you will not have access to developer tooling for staging and production environments.
 
-Refer to [Developing with CRX/DE Lite](https://docs.adobe.com/help/en/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) to learn how to develop your AEM application using CRX/DE Lite.
+Refer to [Developing with CRX/DE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRX/DE Lite.
 
 ## Managing Logs {#managing-logs}
 

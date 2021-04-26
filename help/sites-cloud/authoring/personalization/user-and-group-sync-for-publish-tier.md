@@ -1,13 +1,13 @@
 ---
 title: Registration, Login, and User Profile 
-description: Learn about Registration, Login, and User Profile on the Publish Tier
+description: Learn about Registration, Login, User Data and Group Synchronization for AEM as a Cloud Service
+exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 ---
-
 # Registration, Login, and User Profile {#registration-login-and-userprofile}
 
 ## Introduction {#introduction}
 
-Web applications often provide account management features for end users to register on a website, which persists their user profile information, allowing them to login in the future and enjoy a consistent experience. This article describes:
+Web applications often provide account management features for end users to register on a website, which persists their user data information, allowing them to login in the future and enjoy a consistent experience. This article describes the following concepts for AEM as a Cloud Service:
 
 * Registration
 * Login

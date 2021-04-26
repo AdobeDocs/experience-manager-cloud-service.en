@@ -1,8 +1,8 @@
 ---
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.2.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.2.0
+exl-id: 281f9523-dec2-44f1-9459-5a45d48489d9
 ---
-
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.2.0 {#release-notes}
 
 This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.2.0.
@@ -41,4 +41,4 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.2.0 is Februar
 
 * In some cases, an internal issue may cause environment deletion to be stuck. 
 
-* Some pipeline failures were incorrectly reported as pipeline errors. 
+* Some pipeline failures were incorrectly reported as pipeline errors.

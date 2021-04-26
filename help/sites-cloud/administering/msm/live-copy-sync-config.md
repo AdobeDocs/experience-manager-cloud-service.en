@@ -1,8 +1,10 @@
 ---
 title: Configuring Live Copy Synchronization
 description: Learn about the powerful Live Copy synchronization options available and how you can configure and customize them for your project's needs.
+feature: Multi Site Manager
+role: Administrator
+exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 ---
-
 # Configuring Live Copy Synchronization {#configuring-live-copy-synchronization}
 
 Adobe Experience Manager provides a number of synchronization configurations out-of-the-box. Before using Live Copies, you should consider the following to define how and when Live Copies are synchronized with their source content.
@@ -34,7 +36,11 @@ Each rollout configuration uses a rollout trigger that causes the rollout to occ
 
 ### Rollout Configurations {#rollout-configurations}
 
-The following table lists the rollout configurations that are provided out-of-the-box with AEM. The table includes the trigger and synchronization actions of each rollout configuration. If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+The following table lists the rollout configurations that are provided out-of-the-box with AEM. The table includes the trigger and synchronization actions of each rollout configuration. 
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 |Name|Description|Trigger|[Synchronization Actions](#synchronization-actions)|
 |---|---|---|---|
