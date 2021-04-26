@@ -2,8 +2,10 @@
 title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
+feature: Asset Management,Renditions
+role: Business Practitioner,Administrator
+exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 ---
-
 # [!DNL Assets] supported file formats {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. [!DNL Adobe Experience Manager Assets] supports a wide range of file formats and each product feature has varied support for different formats.
@@ -87,7 +89,7 @@ The following sub-types of raster image file formats that are not supported in [
 
 The following 3D formats are supported.
 
-See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

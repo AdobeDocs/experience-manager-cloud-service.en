@@ -1,8 +1,8 @@
 ---
 title: Accessing KPIs
 description: Accessing KPIs
+exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 ---
-
 # Are you measuring the things that matter most?
 
 >[!CONTEXTUALHELP]

@@ -1,8 +1,10 @@
 ---
 title: Managing Translation Projects
 description: Learn how to create and manage both machine and human translation projects in AEM.
+feature: Language Copy
+role: Administrator
+exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 ---
-
 # Managing Translation Projects {#managing-translation-projects}
 
 Translation projects enable you to manage the translation of AEM content. A translation project is a type of AEM [project](/help/sites-cloud/authoring/projects/overview.md) that contains resources that are to be translated into other languages. These resources are the pages and assets of the [language copies](preparation.md) that are created from the language master.

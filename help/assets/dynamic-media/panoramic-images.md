@@ -1,8 +1,10 @@
 ---
 title: Panoramic Images
 description: Learn how to work with panoramic images in Dynamic Media.
+feature: Panoramic Images
+role: Business Practitioner
+exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 ---
-
 # Panoramic images{#panoramic-images}
 
 This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.

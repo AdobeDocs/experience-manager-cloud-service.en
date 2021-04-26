@@ -1,8 +1,8 @@
 ---
 title: Planning Phase
 description: Planning Phase
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
 ---
-
 # Planning {#planning-phase}
 
 >[!CONTEXTUALHELP]
@@ -53,4 +53,3 @@ Once you have estimated the level of effort that will be required to move to Clo
 If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your Adobe Experience Manager (AEM) implementation to help your team focus on what matters the most. 
 
 Refer to [Developing KPIs](https://guided.adobe.com/welcome/aem/part6.html) to learn how to choose the right KPIs for your business objectives.
-

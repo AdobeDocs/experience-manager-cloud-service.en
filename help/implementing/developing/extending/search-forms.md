@@ -1,8 +1,8 @@
 ---
 title: Configuring Search Forms
 description: Configuring Search Forms for Adobe Experience Manager as a Cloud Service.
+exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 ---
-
 # Configuring Search Forms {#configuring-search-forms}
 
 Adobe Experience Manager as a Cloud Service comes with a powerful [Search](/help/sites-cloud/authoring/getting-started/search.md) mechanism. 

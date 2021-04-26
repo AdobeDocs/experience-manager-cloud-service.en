@@ -2,8 +2,10 @@
 title: Digital Rights Management in [!DNL Assets]
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
+feature: Asset Management,DRM
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 ---
-
 # Digital Rights Management for assets {#digital-rights-management-in-assets}
 
 Digital assets are often associated with a license that specifies the terms and duration of use. Because [!DNL Adobe Experience Manager Assets] is fully integrated with the [!DNL Experience Manager] platform, you can efficiently manage asset expiration information and asset states. You can also associate licensing information with assets.
@@ -28,7 +30,7 @@ You can view the expiration status of an asset at the following places:
 
 You can search for expired assets, including expired subassets in the Search panel.
 
-1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
+1. In the [!DNL Assets] console, click **[!UICONTROL Search]** in the toolbar to display the [!DNL Experience Manager] search box.
 
 1. With the cursor in the Omnisearch box, select the `Enter` key to display the search results page.
 

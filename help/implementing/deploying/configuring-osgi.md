@@ -1,8 +1,9 @@
 ---
 title: Configuring OSGi for Adobe Experience Manager as a Cloud Service
 description: OSGi Configuration With Secret Values and Environment-specific Values 
+feature: Deploying
+exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 ---
-
 # Configuring OSGi for Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and its configurations.
@@ -105,7 +106,7 @@ Inline configurations values are considered the standard approach, and should be
 * Values are implicitly tied to code deployments
 * They do not require any additional deployment considerations or coordination
 
-Whenever defining an OSGi configuration value, start with inline values, any only select secret or environment-specific configurations if necessary for the use case.
+Whenever defining an OSGi configuration value, start with inline values, and only select secret or environment-specific configurations if necessary for the use case.
 
 ### When to Use Non-secret Environment-specific Configuration Values {#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -186,6 +187,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 Customers should only use this technique for OSGI configuration properties related to their custom code; it must not be used to override Adobe-defined OSGI configuration.
+
+>[!NOTE]
+>
+>Placeholders cannot be used in [repoinit statements](/help/implementing/deploying/overview.md#repoinit).
 
 ### Secret Configuration Values {#secret-configuration-values}
 

@@ -1,8 +1,8 @@
 ---
 title: SEO and URL Management Best Practices for Adobe Experience Manager as a Cloud Service
 description: SEO and URL Management Best Practices for Adobe Experience Manager as a Cloud Service
+exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 ---
-
 # SEO and URL Management Best Practices for Adobe Experience Manager as a Cloud Service{#seo-and-url-management-best-practices-for-aem}
 
 Search Engine Optimization (SEO) has become a key concern for many marketers. As a result, SEO concerns need to be addressed on many Adobe Experience Manager (AEM) as a Cloud Service projects.

@@ -3,17 +3,17 @@ title: Previewing 3D assets
 description: Learn how to preview 3D assets in Dynamic Media.
 ---
 
-# Previewing 3D assets in AEM{#previewing-3d-assets}
+# Previewing 3D assets in Adobe Experience Manager{#previewing-3d-assets}
 
-Adobe Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
+Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
 
-The interactive 3D viewer is available from the asset details page in AEM. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
+The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Supported formats for 3D preview in AEM{#supported-3d-previewing-assets} 
+## Supported formats for 3D preview in Experience Manager{#supported-3d-previewing-assets} 
 
-Interactive 3D preview in AEM supports the following file formats: 
+Interactive 3D preview in Experience Manager supports the following file formats: 
 
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
@@ -24,7 +24,9 @@ Interactive 3D preview in AEM supports the following file formats:
 | DN |Adobe Dimension|model/x-adobe-dn |Support for ingestion only; preview not available.|
 | USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |Support for ingestion only; preview not available.|
 
-**Note**: If materials do not render in preview of a gLTF model, make sure they are named properly and located in a `textures` folder in the same root folder as the model, similar to the following:
+>[!NOTE]
+>
+>If materials do not render in preview of a gLTF model, make sure they are named properly and in a `textures` folder in the same root folder as the model, similar to the following:
 
     Asset (folder)
         model.gltf
@@ -33,17 +35,17 @@ Interactive 3D preview in AEM supports the following file formats:
             material_0_baseColor.jpeg
             material_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets in AEM{#performance-3d-previewing-assets}
+## Performance considerations when you preview 3D assets in Experience Manager{#performance-3d-previewing-assets}
 
 The time it takes to open a 3D asset in the asset details view page depends on several factors such things as bandwidth, image complexity, and latencies to the server.
 
 In addition, the capabilities of the client computer&mdash;such as a workstation, notebook, or mobile touch device&mdash;are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable. 
 
-**To preview 3D assets in AEM**
+**To preview 3D assets in Experience Manager:**
 
-1. Make sure you have uploaded 3D assets into AEM.
+1. Make sure you have uploaded 3D assets into Experience Manager.
     See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
-1. From AEM, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
+1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
 
     ![Navigation page](/help/assets/dynamic-media/assets/navigation-assets.png
     )
@@ -53,24 +55,19 @@ In addition, the capabilities of the client computer&mdash;such as a workstation
     ![3D card select](/help/assets/dynamic-media/assets/3d-card-select.png)
     _In Card View, tap the card of the 3D asset you want to preview._
 
-1. Tap the card of the 3D asset to open it in the asset details view page.
+1. Tap the card of the 3D asset.
 
     ![Interactive 3D preview](/help/assets/dynamic-media/assets/3d-preview.png)
     _Interactive preview of a 3D asset in the asset details view page._ 
 1. On the asset details view page for the 3D asset, do any of the following:
-    * **Turn your camera**&mdash;Orbit your view around the 3D scene and objects.
-      * _Mouse_: Left click + drag.
-      * _Touch screen_: Single-finger press + drag.
-    * **Pan your camera**&mdash;Pan your view left, right, up, or down.
-      * _Mouse_: Right click + drag.
-      * _Touch screen_: Two-finger press + drag.
-    * **Zoom your camera**&mdash;Zoom your camera to move in and out of areas of the 3D scene.
-      * _Mouse_: Scroll wheel.
-      * _Touch screen_: Two-finger pinch.
-    * **Recenter your camera**&mdash;Recenter your camera to a point on a object in the 3D scene.
-      * _Mouse_: Double-click.
-      * _Touch screen_: Double-tap.
-    * **Reset**&mdash;Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
-    * **Full screen mode**&mdash;To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.
+
+    | View | Description | Mouse action | Touch screen action |
+    | --- | --- | --- | --- |
+    | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
+    | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
+    | **Zoom your camera**  | Move in and out of areas of the 3D scene. | Scroll wheel. | Two-finger pinch. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
+    | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
+    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
 1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.

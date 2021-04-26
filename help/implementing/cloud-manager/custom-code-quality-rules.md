@@ -1,8 +1,8 @@
 ---
 title: Custom Code Quality Rules - Cloud Services
 description: Custom Code Quality Rules - Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 ---
-
 # Custom Code Quality Rules {#custom-code-quality-rules} 
 
 
@@ -606,7 +606,7 @@ It has been a long-standing best practice that the /libs content tree in the AEM
 A common problem that occurs on complex projects is where the same OSGi component is configured multiple times. This creates an ambiguity as to which configuration will be operable. This rule is "runmode-aware" in that it will only identify issues where the same component is configured multiple times in the same runmode (or combination of runmodes).
 
 >[!NOTE]
->This rule will produce issues where the same configuration, at the same path, is defined in multiple packages, including cases where the same package is duplicated in the overall list of built packages. For example, if the build produces packages named `com.myco:com.myco.ui.apps` and `com.myco:com.myco.all` where `com.myco:com.myco.all` embeds `com.myco:com.myco.ui.apps`, then all of the configurations within `com.myco:com.myco.ui.apps` will be reported as duplicates. This is generally a case of not following the [Content Package Structure Guidelines](/help/implementing/developing/aem-project-content-package-structure.md); in this specific example, the package `com.myco:com.myco.ui.apps` is missing the `<cloudManagerTarget>none</cloudManagerTarget>` property.
+>This rule will produce issues where the same configuration, at the same path, is defined in multiple packages, including cases where the same package is duplicated in the overall list of built packages. For example, if the build produces packages named `com.myco:com.myco.ui.apps` and `com.myco:com.myco.all` where `com.myco:com.myco.all` embeds `com.myco:com.myco.ui.apps`, then all of the configurations within `com.myco:com.myco.ui.apps` will be reported as duplicates. This is generally a case of not following the [Content Package Structure Guidelines](/help/implementing/developing/introduction/aem-project-content-package-structure.md); in this specific example, the package `com.myco:com.myco.ui.apps` is missing the `<cloudManagerTarget>none</cloudManagerTarget>` property.
 
 #### Non Compliant Code {#non-compliant-code-osgi}
 
@@ -740,7 +740,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 
 **Since**: Version 2021.2.0
 
-AEM client libraries may contain static resources like images and fonts. As described in [Using Preprocessors](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), when using proxied client libraries these static resources must  be contained in a child folder named resources in order to be effectively referenced on the publish instances.
+AEM client libraries may contain static resources like images and fonts. As described in [Using Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), when using proxied client libraries these static resources must  be contained in a child folder named resources in order to be effectively referenced on the publish instances.
 
 #### Non Compliant Code {#non-compliant-proxy-enabled}
 
@@ -788,7 +788,7 @@ With the move to Asset micro-services for asset processing on AEM Cloud Service,
 
 **Since**: Version 2021.2.0
 
-While the use of static templates has historically been very common in AEM projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found on [Page Templates - Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
+While the use of static templates has historically been very common in AEM projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found on [Page Templates.](/help/implementing/developing/components/templates.md) Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### OakPAL - Usage of Legacy Foundation Components is Discouraged {#oakpal-usage-legacy}
 
@@ -909,9 +909,3 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 **Since**: Version 2021.2.0
 
 AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named reindex. Indexing using this property must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
-
-
-
-
-
-

@@ -1,11 +1,13 @@
 ---
 title: Working with Content Fragments
-description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate and use page-independent content.
+description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for headless delivery.
+feature: Content Fragments
+role: Business Practitioner
+exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 ---
+# Working with Content Fragments {#working-with-content-fragments}
 
-# Working with Content Fragments{#working-with-content-fragments}
-
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md) They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery.
 
 Content fragments contain structured content:
 

@@ -1,8 +1,10 @@
 ---
 title: Rollout Conflicts
 description: Learn how to manage and resolve Multi Site Manager rollout conflicts.
+feature: Multi Site Manager
+role: Administrator
+exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 ---
-
 # Rollout Conflicts {#msm-rollout-conflicts}
 
 Conflicts can occur if new pages with the same page name are created in both the blueprint branch and a dependent Live Copy branch. Such conflicts need to be handled and resolved upon rollout.

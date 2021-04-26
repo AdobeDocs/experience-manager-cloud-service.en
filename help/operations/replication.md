@@ -1,8 +1,8 @@
 ---
 title: Replication
 description: Distribution and Troubleshooting replication.
+exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 ---
-
 # Replication {#replication}
 
 Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) capability to move the content to replicate to a pipeline service run on Adobe I/O that is outside of the AEM runtime. 
