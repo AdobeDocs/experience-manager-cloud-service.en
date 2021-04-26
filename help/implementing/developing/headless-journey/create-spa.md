@@ -4,8 +4,8 @@ description: In this optional continuation of the AEM Headless Developer Journey
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 80b43aae-0027-45c8-b079-e3931d58597f
 ---
-
 # How to Create Single Page Applications (SPAs) with AEM {#create-spa}
 
 >[!CAUTION]

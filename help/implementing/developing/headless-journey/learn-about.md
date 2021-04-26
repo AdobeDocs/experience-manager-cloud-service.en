@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn about hea
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 ---
-
 # Learn About CMS Headless Development {#learn-about}
 
 >[!CAUTION]

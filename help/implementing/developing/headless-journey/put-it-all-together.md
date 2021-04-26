@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn how to ta
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 ---
-
 # How to Put It All Together - Your App and Your Content in AEM Headless {#put-it-all-together}
 
 >[!CAUTION]

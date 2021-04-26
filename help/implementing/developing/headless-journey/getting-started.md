@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn about AEM
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
 ---
-
 # Getting Started with AEM Headless as a Cloud Service {#getting-started}
 
 >[!CAUTION]
