@@ -12,7 +12,7 @@ index: no
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
+In this part of the [AEM Headless Developer Journey,](overview.md) learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 
 ## The Story So Far {#story-so-far}
 
