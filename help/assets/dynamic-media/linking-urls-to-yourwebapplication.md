@@ -1,7 +1,6 @@
 ---
 title: Linking URLs to your web application
 description: Learn how to link URLs to your web application in Dynamic Media.
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 ---

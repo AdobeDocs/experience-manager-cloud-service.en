@@ -2,7 +2,6 @@
 title: Delivering Optimized Images for a Responsive Site
 description: Learn how to use the responsive code feature to deliver optimized images from Dynamic Media.
 feature: Asset Management
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 ---
