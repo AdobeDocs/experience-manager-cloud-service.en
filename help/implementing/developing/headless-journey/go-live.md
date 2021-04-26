@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn how to de
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 ---
-
 # How to Go Live with Your Headless Application {#go-live}
 
 >[!CAUTION]

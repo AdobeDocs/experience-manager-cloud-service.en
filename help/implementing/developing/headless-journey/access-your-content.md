@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn how to us
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 ---
-
 # How to Access Your Content via AEM Delivery APIs {#access-your-content}
 
 >[!CAUTION]

@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn how to us
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 ---
-
 # How to Update Your Content via AEM Assets APIs {#update-your-content}
 
 >[!CAUTION]

@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn how to mo
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 ---
-
 # How to Model Your Content {#model-your-content}
 
 >[!CAUTION]
