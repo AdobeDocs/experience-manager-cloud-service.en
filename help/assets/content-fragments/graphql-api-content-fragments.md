@@ -111,9 +111,21 @@ The endpoint is the path used to access GraphQL for AEM. Using this path you (or
 There are two types of endpoints in AEM:
 
 * Global
-  * Available for all sites.
+  * Available for use by all sites.
+  * This endpoint can use all Content Fragment Models from all tenants.
+  * If there are any Content Fragment Models that should be shared among tenants, then these should be created under the global tenant.
 * Tenant:
+  * Corresponds to a tenant configuration, as defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
   * Specific to a specified site/project.
+  * A tenant specific endpoint will use the Content Fragment Models from that specific tenant together with those from the global tenant.
+
+>[!CAUTION]
+>
+>The Content Fragment Editor can allow a Content Fragment of one tenant to reference a Content Fragment of another tenant (via polices). 
+>
+>In such a case not all content will be retrievable using a tenant specific endpoint. 
+>
+>The content author should control this scenario; for example, it may be useful to consider putting shared Content Fragment Models under the Global tenant.
 
 The repository path of the GraphQL for AEM global endpoint is:
 
@@ -132,20 +144,29 @@ To enable an endpoint for GraphQL for AEM you need to:
 
 To enable a GraphQL Endpoint you first need to have an appropriate configuration. See [Content Fragments - Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
+<!--
+use of content fragment models, or graphql persisted queries? 
+-->
+
+>[!CAUTION]
+>
+>If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
+
 To enable the corresponding endpoint:
 
 <!--
-Sites or Assets?
--->
-<!--
 is name tied to the "configuration" (config browser) - if so, why isn't it a dropdown?
+name is free text
 -->
 
 1. Navigate to **Tools**, **Sites**, then select **GraphQL**.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
-   * **Name**: name of the endpoint.
+   * **Name**: name of the endpoint; you can enter any text.
    * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
+   >[!NOTE]
+   >The following warning is shown in the dialiog:
+   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
 1. Confirm with **Create**.
 1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.
 
@@ -158,6 +179,14 @@ is name tied to the "configuration" (config browser) - if so, why isn't it a dro
 ### Publishing your GraphQL Endpoint {#publishing-graphql-endpoint}
 
 Select the new endpoint and **Publish** to make it fully available in all environments.
+
+>[!CAUTION]
+>
+>The endpoint is accessible to everyone. 
+>
+>On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
+>
+>You must set up ACLs appropriate to your use case on the endpoint. 
 
 <!-- remove this completely? -->
 
@@ -182,19 +211,14 @@ To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/glo
 >Your endpoint will not work out-of-the-box. You will have to provide [Additional Configurations for GraphQL Endpoint](#additional-configurations-graphql-endpoint) separately.
 -->
 
-### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
-
 <!--
-Comment out the Note?
-Or the entire section?
-If only the note, do we need to document how to perform the manual configurations - or are they OOTB?
--->
+### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
 
 >[!NOTE]
 >
 >See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
 
-Additional configurations are required:
+The following additional configuration is required:
 
 * Dispatcher: 
   * To allow required URLs
@@ -202,8 +226,7 @@ Additional configurations are required:
 * Vanity URL: 
   * To allocate a simplified URL for the endpoint
   * Optional
-
-<!-- remove this completely? -->
+--> 
 
 <!--
 ### Supporting packages {#supporting-packages}
@@ -610,7 +633,6 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       * See [Sample Query - All Persons that do not have a name of "Jobs"](#sample-all-persons-not-jobs)
       * See [Sample Query - All Adventures where the `_path` starts with a specific prefix](#sample-wknd-all-adventures-cycling-path-filter)
   
-  
     * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
       * See [Sample Query - Filter on an array with an item that must occur at least once](#sample-array-item-occur-at-least-once)
 
@@ -628,10 +650,15 @@ After preparing a query with a POST request, it can be executed with a GET reque
 
 This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-Here are the steps required to persist a given query:
+Creating a persisted query for a specific tenant configuration requires a corresponding tenant-specific endpoint. For example, to create a persisted query specifically for the WKND tenant, a corresponding WKND-specific endpoint must be created in advance.
 
 >[!NOTE]
->Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>The **GraphQL Persistence Queries** need to be enabled, for the appropriate tenant configuration. 
+
+Here are the steps required to persist a given query:
 
 1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
