@@ -4,6 +4,7 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 ---
+
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
 Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
@@ -164,9 +165,13 @@ name is free text
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
    * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
+
    >[!NOTE]
-   >The following warning is shown in the dialiog:
+   >
+   >The following warning is shown in the dialog:
+   >
    >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
+   
 1. Confirm with **Create**.
 1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.
 
