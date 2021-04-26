@@ -24,8 +24,8 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 ## Objective {#objective}
 
-* List
-* of
+* Install the AEM SDK to get a local development runtime you can use to test your content on
+* Learn about the development tooling you need
 * objectives
 
 ## Local Development Environment Setup {#local-development-environment}
@@ -40,6 +40,15 @@ The local development environment is composed of three main areas:
 1. The Local AEM Runtime - local versions of the AEM author and publish services that will be used to deploy code from the AEM project
 1. The Local Dispatcher Runtime - a local version of the Apache htttpd webserver that includes the Dispatcher module
 
+## The AEM SDK {#the-aem-sdk}
+
+The AEM SDK is composed of the following artifacts:
+
+* The Quickstart jar - an executable jar file that can be used to set up both an author and a publish instance
+* Dispatcher tools - the Dispatcher module and its dependencies for Windows and UNIX based systems
+* Java API Jar - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
+* Javadoc jar - the javadocs for the Java API jar
+
 ## Development Tools {#development-tools}
 
 In order to develop for AEM, you will need the following development tools:
@@ -48,6 +57,7 @@ In order to develop for AEM, you will need the following development tools:
 * Git
 * Apache Maven
 * The Node.js library
+* Adobe I/O CLI
 * The IDE of your choice
 
 ### Java {#java}
@@ -85,15 +95,6 @@ In a production system, a dispatcher and an http Apache server will always sit i
 Once you make sure everything has been tested and is working properly, you are ready to push your code updates to a centralized Git repository in Cloud Manager.
 
 After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using Cloud Manager's CI/CD pipeline.
-
-## The AEM SDK {#the-aem-sdk}
-
-The AEM SDK is composed of the following artifacts:
-
-* The Quickstart jar - an executable jar file that can be used to set up both an author and a publish instance
-* Dispatcher tools - the Dispatcher module and its dependencies for Windows and UNIX based systems
-* Java API Jar - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM as as Cloud Service. Formerly referred to as the Uberjar
-* Javadoc jar - the javadocs for the Java API jar
 
 ## What's Next {#what-is-next}
 
