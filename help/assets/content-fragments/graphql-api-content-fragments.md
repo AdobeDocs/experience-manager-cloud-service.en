@@ -655,13 +655,33 @@ After preparing a query with a POST request, it can be executed with a GET reque
 
 This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-Creating a persisted query for a specific tenant configuration requires a corresponding tenant-specific endpoint. For example, to create a persisted query specifically for the WKND tenant, a corresponding WKND-specific endpoint must be created in advance.
+Persisted queries must always use the endpoint related to the [appropriate (tenant) configuration](#graphql-aem-endpoint); so they can use either, or both:
+
+* The Global configuration and endpoint
+  The query has access to all Content Fragment Models.
+* Specific Tenant configuration(s) and endpoint(s)
+  Creating a persisted query for a specific tenant configuration requires a corresponding tenant-specific endpoint (to provide access to the related Content Fragment Models). 
+  For example, to create a persisted query specifically for the WKND tenant, a corresponding WKND-specific tenant configuration, and a WKND-specific endpoint must be created in advance.
 
 >[!NOTE]
 >
 >See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 >
 >The **GraphQL Persistence Queries** need to be enabled, for the appropriate tenant configuration. 
+
+For example, if there is a particular query called `my-query`, which uses a model `my-model` from the tenant configuration `my-conf`:
+
+* You can create a query using the `my-conf` specific endpoint, and then the query will be saved as following: 
+`/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* You can create the same query using `global` endpoint, but then the query will be saved as following:
+`/conf/global/settings/graphql/persistentQueries/my-query`
+
+>[!NOTE]
+>
+>These are two different queries - saved under different paths. 
+>
+>They just happen to use the same model - but via different endpoints.
+
 
 Here are the steps required to persist a given query:
 
