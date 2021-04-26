@@ -123,6 +123,7 @@ To help with designing and developing your Content Fragment Models, you can prev
 
 ## Additional Resources {#additional-resources}
 
+* [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features including data modeling and GraphQL
 * [GraphQL.org](https://graphql.org)
   * [Schemas](https://graphql.org/learn/schema/)
   * [GraphQL Java libraries](https://graphql.org/code/#java)
