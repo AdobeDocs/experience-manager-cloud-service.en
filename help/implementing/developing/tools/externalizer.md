@@ -68,56 +68,56 @@ To define a domain mapping for the Externalizer service:
 
 1. Click **Save** to save your changes.
 
-### Using the Externalizer service {#using-the-externalizer-service}
+### Using the Externalizer Service {#using-the-externalizer-service}
 
-This section shows a few examples of how the Externalizer service can be used:
+This section shows a few examples of how the Externalizer service can be used.
 
-1. **To get the Externalizer service in a JSP:**
+>[!NOTE]
+>
+>No absolute links should be created in the context of HTML. Therefore this utility should not be used in such cases.
 
-   ```java
-   Externalizer externalizer = resourceResolver.adaptTo(Externalizer.class);
-   ```
+* **To externalize a path with the 'publish' domain:**
 
-1. **To externalize a path with the 'publish' domain:**
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  Assuming the domain mapping:
 
-   Assuming the domain mapping:
+  * `publish https://www.website.com`
 
-    * `publish https://www.website.com`
+  * `myExternalizedUrl` ends up with the value:
 
-   `myExternalizedUrl` ends up with the value:
+  * `https://www.website.com/contextpath/my/page.html`
 
-    * `https://www.website.com/contextpath/my/page.html`
+* **To externalize a path with the 'author' domain:**
 
-1. **To externalize a path with the 'author' domain:**
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  Assuming the domain mapping:
 
-   Assuming the domain mapping:
+  * `author https://author.website.com`
 
-    * `author https://author.website.com`
+  * `myExternalizedUrl` ends up with the value:
 
-   `myExternalizedUrl` ends up with the value:
+  * `https://author.website.com/contextpath/my/page.html`
 
-    * `https://author.website.com/contextpath/my/page.html`
+* **To externalize a path with the 'local' domain:**
 
-1. **To externalize a path with the 'local' domain:**
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  Assuming the domain mapping:
 
-   Assuming the domain mapping:
+  * `local https://publish-3.internal`
 
-    * `local https://publish-3.internal`
+  * `myExternalizedUrl` ends up with the value:
 
-   `myExternalizedUrl` ends up with the value:
+  * `https://publish-3.internal/contextpath/my/page.html`
 
-    * `https://publish-3.internal/contextpath/my/page.html`
-
-1. You can find more examples in the [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>[!TIP]
+>
+>You can find more examples in the [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
