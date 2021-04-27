@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, learn how to ma
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 5307163a-4433-4e42-9b10-d96f5cb2d70d
 ---
-
 # Post Launch {#post-launch}
 
 >[!CAUTION]

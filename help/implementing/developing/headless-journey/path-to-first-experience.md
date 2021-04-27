@@ -4,8 +4,8 @@ description: In this part of the AEM Headless Developer Journey, you will unders
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 ---
-
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 
 >[!CAUTION]
