@@ -114,8 +114,6 @@ A selection of data types is available for defining your model:
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
     * The JSON will be passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
-* **Image**
-  * Shows the thumbnail of image content references.
 * **Tab Placeholder**
   * Allows the introduction of tabs for use when editing the Content Fragment content.
     This will be shown as a divider in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
@@ -127,15 +125,6 @@ A selection of data types is available for defining your model:
 ## Properties {#properties}
 
 Many properties are self-explanatory, for certain properties additional details are below:
-
-<!--
-Check:
-Default
-Required
-Custom Error Message
-Select Multiple Tags (Tags)
-Accept only specified ...dimension
--->
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
