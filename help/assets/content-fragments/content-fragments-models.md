@@ -54,19 +54,11 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
 
-   <!--
-   Update screenshot
-   -->
-
-   ![properties](assets/cfm-models-03.png)
+  ![properties](assets/cfm-models-03.png)
 
 1. **To Add a Field**
 
    * Drag a required data type to the required location for a field:
-
-     <!--
-     Update screenshot
-     -->
 
      ![data type to field](assets/cfm-models-04.png)
 
@@ -204,12 +196,6 @@ Various data types now include the possibility to define validation requirements
 * **Fragment Reference**
   * Test for a specific content fragment model.
 
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
-
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
@@ -248,10 +234,6 @@ In addition to standard properties you can specify:
 * If an image is referenced:
   * Show Thumbnail
   * Image restraints of height and width
-
-<!--
-needs new screenshot
--->
 
 ![Content Reference](assets/cfm-content-reference.png)
 
@@ -301,7 +283,7 @@ In addition to standard properties you can define:
   This will allow the fragment author to create a new fragment based on the appropriate model.
 
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
-  <!-- Check screenshot - might need update -->
+
   ![Fragment Reference](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -441,17 +423,3 @@ You can edit the **Properties** of a Content Fragment Model:
   * **Tags**
   * **Description**
   * **Upload Image**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
