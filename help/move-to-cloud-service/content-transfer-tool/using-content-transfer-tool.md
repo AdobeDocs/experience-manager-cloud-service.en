@@ -7,6 +7,7 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 
 ## Important Considerations for Using Content Transfer Tool {#pre-reqs}
 
+>[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="Important Considerations for using Content Transfer Tool"
 >abstract="Review important considerations to use the Content Transfer tool including Java and AEM verions, supported Datastore types, user groups considerations and more."
