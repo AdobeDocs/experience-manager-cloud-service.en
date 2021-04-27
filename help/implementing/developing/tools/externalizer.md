@@ -1,8 +1,8 @@
 ---
 title: Externalizing URLs
 description: The Externalizer is an OSGi service that allows you to programmatically transform a resource path into an external and absolute URL.
+exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 ---
-
 # Externalizing URLs {#externalizing-urls}
 
 In AEM, the **Externalizer** is an OSGi service that allows you to programmatically transform a resource path (e.g. `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
