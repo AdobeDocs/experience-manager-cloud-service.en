@@ -11,6 +11,10 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 * The Admin Console allows administrators to centrally manage all Experience Cloud users.
 * Users and Groups can be assigned to product profiles associated with AEM as a Cloud Service instances, allowing them to log in to that instance.
 
+>[!TIP]
+>
+>See our Experience League course [Configure Access to AEM for Administrators](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) for an introduction to how users authenticate using Adobe IMS to AEM as a Cloud Service and how Adobe IMS Users, User Groups, and Product Profiles are used to control access to AEM and its features and functionalities. Adobe ID required.
+
 ## Key Highlights {#key-highlights}
 
 AEM as a Cloud Service offers IMS authentication support only for Author, Admin and Dev users. It does not offer support for external end users of customer sites like site visitors.
