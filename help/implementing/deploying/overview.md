@@ -157,6 +157,12 @@ above appears to be internal, to confirm with Brian -->
 
 ### Package Manager "one offs" for Mutable Content Packages {#package-manager-oneoffs-for-mutable-content-packages}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="Package Manager - Migrating Mutable Content Packages"
+>abstract="Explore usage of package manager for use cases where a content package should be installed as “one off” which includes importing specific content from production on to staging in order to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments and more."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
+
 There are use cases where a content package should be installed as a "one off". For example importing specific content from production on to staging in order to debug a production issue. For these scenarios, Package Manager can be used in AEM as a Cloud Service environments.
 
 Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). If the content package includes content that is mixed (both mutable and immutable content), only the mutable content will be installed.

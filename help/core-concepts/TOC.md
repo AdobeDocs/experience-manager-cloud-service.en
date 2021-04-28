@@ -3,7 +3,6 @@ sub-product: Core Concepts of AEM as a Cloud Service
 user-guide-title: Core Concepts of AEM as a Cloud Service
 breadcrumb-title: Core Concepts Guide
 user-guide-description: This guide provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service.
-feature-set: Experience Manager
 feature: Release Information
 role: Architect
 ---

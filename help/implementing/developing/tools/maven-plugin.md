@@ -23,7 +23,7 @@ This document details how to use the Maven to manage these tasks. However it is 
 
 ## Packages and the AEM Project Structure {#aem-project-structure}
 
-AEM 6.5 adheres to the latest best practices for package management and project structure as implemented by the latest AEM Project Archetype for both on-premises and AMS implementations.
+AEM as a Cloud Service adheres to the latest best practices for package management and project structure as implemented by the latest AEM Project Archetype.
 
 >[!TIP]
 >

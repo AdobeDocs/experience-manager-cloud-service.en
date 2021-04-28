@@ -2,7 +2,6 @@
 title: Panoramic Images
 description: Learn how to work with panoramic images in Dynamic Media.
 feature: Panoramic Images
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 ---
