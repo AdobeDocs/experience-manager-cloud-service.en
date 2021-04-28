@@ -1,11 +1,16 @@
 ---
 title: AEM Content and Commerce
 description: AEM Content and Commerce self-help resources and documentation links
-exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85,f4b7a46b-b1f8-450d-8a93-e16639acf1ea
+exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 ---
 # AEM Content and Commerce {#commerce-guide}
 
 This page lists the self-help resources regarding AEM Content and Commerce.
+
+>[!NOTE]
+>
+>For AEM Content and Commerce with AEM 6.5 and classic CIF, see [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>
 
 ## Key Content and Commerce Articles {#key-articles}
 

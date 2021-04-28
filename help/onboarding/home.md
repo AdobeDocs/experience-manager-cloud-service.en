@@ -9,6 +9,7 @@ exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 >id="aemcloud_onboarding_overview"
 >title="Onboarding Overview"
 >abstract="Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service. You will need your Adobe ID and your System Administrator's help to get users added to Cloud Manager to their assigned Roles and associated permissions."
+>additional-url="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/SLAExhibit-AEMCloudService-2019DEC12.pdf" text="Service Level Exhibit - AEM as a Cloud Service"
 
 Congratulations on starting your journey with AEM as a Cloud Service! Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service.
 

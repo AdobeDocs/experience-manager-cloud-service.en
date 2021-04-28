@@ -2,7 +2,6 @@
 title: About managing Dynamic Media assets
 description: Learn how to work with Dynamic Media assets.
 feature: Asset Management
-topic: Business Practitioner
 role: Administrator,Business Practitioner
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 ---
