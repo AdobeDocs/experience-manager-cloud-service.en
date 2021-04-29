@@ -37,9 +37,11 @@ To perform a tree activation:
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
-You can also trigger a tree replication by choosing to **Tools - Workflow - Models** and choosing the **Publish Content Tree** out-of-the-box workflow model, as shown below:
+You can trigger a tree replication by choosing to **Tools - Workflow - Models** and choosing the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
 ![](/help/operations/assets/publishcontenttreeworkflow.png)
+
+Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
 
 Alternatively, you can also achieve this by creating a Workflow Model that uses the `Publish Content Tree` process step:
 
@@ -60,6 +62,7 @@ Alternatively, you can also achieve this by creating a Workflow Model that uses 
    
    `enableVersion=true,agentId=publish`  
 
+   
    >[!NOTE]
    >
    >For the list of parameters, see the **Parameters** section below.
