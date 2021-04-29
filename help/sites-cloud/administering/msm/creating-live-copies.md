@@ -35,7 +35,15 @@ After you create the blueprint configuration, you configure the following proper
 
 When your blueprint configuration is used, you can associate it with a rollout configuration that determines how the Live Copies of the source/blueprint are synchronized. See [Specifying the Rollout Configurations To Use](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Creating a Blueprint Configuration {#creating-a-blueprint-configuration}
+### Creating and Editing Blueprint Configurations {#creating-editing-blueprint-configurations}
+
+Blueprint configurations are considered immutable data and as such are not editable at runtime. For this reason, any configuration changes must be deployed via Git using the CI/CD pipeline.
+
+More information can be found in the article [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+
+The following steps are available to an administrator on a local development instance only for testing and development purposes. These options are not available in any AEMaaCS cloud instance.
+
+#### Creating a Blueprint Configuration Locally {#creating-a-blueprint-configuration}
 
 To create a blueprint configuration:
 
@@ -54,7 +62,7 @@ To create a blueprint configuration:
 
 1. **Create** will create the blueprint configuration based on your specification.
 
-### Editing or Deleting a Blueprint Configuration {#editing-or-deleting-a-blueprint-configuration}
+### Editing or Deleting a Blueprint Configuration Locally{#editing-or-deleting-a-blueprint-configuration}
 
 You can edit or delete an existing blueprint configuration:
 
