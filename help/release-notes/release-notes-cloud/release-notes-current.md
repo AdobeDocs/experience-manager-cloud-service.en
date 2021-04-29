@@ -24,7 +24,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### What is New {#what-is-new-foundation}
 
-* Increased performance for replication of sites tree content hierarchies. [Sites Managed Publication](/help/operations/replication.md#managed-publication) supports activation of larger tree structures and with better performance for any selected nodes with **Including Children** selected. This enhanced activation can also be triggered through the workflow module, either via the author console or the workflow API. To streamline the experience, the **Tools > Deployment > Distribution > Distribute** tab has been removed.
+* [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) - A new workflow model and step provides increased performance when publishing deep hierarchies of content.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
