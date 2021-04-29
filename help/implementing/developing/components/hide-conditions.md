@@ -65,7 +65,7 @@ If a template author chooses to disable the child pages option, a design propert
 
    ![Evaluation of hide condition](assets/hide-conditions-evaluation.png)
 
-1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
+1. The value of `disableChildren` is pulled from the design configuration and the expression `${cqDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
 
 1. The option **Child pages** is no longer rendered for the page author when using the list component.
 
