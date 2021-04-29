@@ -25,31 +25,23 @@ To realize the automatic replication for this you need to enable **Auto Replicat
 
    ![OSGi On Off Trigger Configuration](/help/operations/assets/replication-on-off-trigger.png)
 
-### Managed Publication {#managed-publication}
+### Tree Activation {#tree-activation}
 
-You can invoke the replication of an entire content tree by using **Managed Publication** if you select **Include Children** and leave **Include only immediate children** disabled. This triggers a workflow that you will be able to view in Workflow instances.
+To perform a tree activation:
 
-To do this, follow the below steps:
+1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
+2. Select the card **forwardPublisher**
+3. Once in the forwardPublisher Web console UI, **select Distribute**
+![Distribute](assets/distribute.png "Distribute")
+4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
 
-1. In the AEM as a Cloud Service homepage, go to **Sites**
-1. Select the node you wish to activate
-1. Select **Managed Publication** in the top action menu that appears
-   
-   ![Managed Publication](/help/operations/assets/managed.png)
+### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
-1. In the following screen, choose to replicate at a later date by clicking the **Later** radio button and selecting a date
-1. Click **Next**
-1. Now, tick the box next to the content node you wish to replicate, and select **Include Children**
-1. In the following window, untick **Include only immediate children**. Otherwise, tree replication will not be invoked
-   
-   ![Immediate Children](/help/operations/assets/immediatechildren.png)
+You can also trigger a tree replication by choosing to **Tools - Workflow - Models** and choosing the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
-1. Click **Add**
-1. Finally, set a name for the ensuing Workflow and press **Publish Later**.
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
-### Replication Workflows {#replication-workflows}
-
-Alternatively to the above mentioned method of Managed Publication, you can also trigger a tree replication by creating a Workflow Model that uses the `Treereplication` process step:
+Alternatively, you can also achieve this by creating a Workflow Model that uses the `Publish Content Tree` process step:
 
 1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**
 1. In the Workflow Models page, press **Create** in the upper right corner of the screen
@@ -60,9 +52,9 @@ Alternatively to the above mentioned method of Managed Publication, you can also
    ![Process Step](/help/operations/assets/processstep.png)
 
 1. Click the Process step in the flow and select **Configure** by pressing the wrench icon
-1. Click on the **Process** tab and select `Treeactivation` from the drop down list
+1. Click on the **Process** tab and select `Publish Content Tree` from the drop down list
    
-   ![Treeactivation](/help/operations/assets/treeactivation.png)
+   ![Treeactivation](/help/operations/assets/newstep.png)
 
 1. Set any additional parameters in the **Arguments** field. Multiple comma separated arguments can be stringed together. For example:
    
@@ -84,6 +76,28 @@ Alternatively to the above mentioned method of Managed Publication, you can also
   * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
   * The above can be ORed with a pipe "|". For example, `onlyActivated|onlyModified`.  
 
+**Logging**
+
+When the tree activation workflow step starts, it will log its configuration parameters on the INFO loglevel. When paths are activated, an INFO statement is also logged.
+
+A final INFO statement will then be logged after the workflow step has replicated all paths.
+
+Additionally you can increase the loglevel of the loggers below `com.day.cq.wcm.workflow.process.impl` to DEBUG/TRACE to get even more log information.
+
+In case of errors, the workflow step terminates with a `WorkflowException`, which wraps the underlying Exception.
+
+Below you will find examples of logs that are generated during a sample publish content tree workflow:
+
+```
+21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
+```
+```
+21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
+```
+
+**Resume Support**
+
+The workflow processes content in chunks, each of which represents a subset of the full content to be published. If for any reason the workflow is stopped by the system, it will restart and process the chunk that was not yet processed. A log statement will state that content has been resumed from a specific path.
 
 ## Troubleshooting {#troubleshooting}
 
