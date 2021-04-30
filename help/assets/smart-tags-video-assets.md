@@ -57,7 +57,7 @@ To search for the video assets based on the auto generated smart tags, use [Omni
 
 The search results display the video assets based on the tag you specified.
 
-Your search results are a combination of video assets with searched keywords in the metadata and the video assets that are smart tagged with the searched keywords. However, the search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. For more information, see [Understand [!DNL Experience Manager] search results with smart tags](smart-tags.md#understandsearch).
+Your search results are a combination of video assets with searched keywords in the metadata and the video assets that are smart tagged with the searched keywords. However, the search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. For more information, see [Understand [!DNL Experience Manager] search results with smart tags](smart-tags.md#understand-search).
 
 ## Moderate video smart tags {#moderate-video-smart-tags}
 
