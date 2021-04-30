@@ -24,9 +24,9 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 ## Objective {#objective}
 
+* Understand what is the local development workflow for AEM 
 * Install the AEM SDK to get a local development runtime you can use to test your content on
-* Learn about the development tooling you need
-* Test your code and content locally before you go live
+* Learn about the development tools you need to have working beside the local development runtime
 
 ## The Local Development Workflow {#the-local-development-workflow}
 
