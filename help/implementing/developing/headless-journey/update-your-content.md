@@ -4,15 +4,15 @@ description: In this part of the AEM Headless Developer Journey, learn how to us
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 ---
-
 # How to Update Your Content via AEM Assets APIs {#update-your-content}
 
 >[!CAUTION]
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to use the REST API to access and update the content of your Content Fragments.
+In this part of the [AEM Headless Developer Journey,](overview.md) learn how to use the REST API to access and update the content of your Content Fragments.
 
 ## The Story So Far {#story-so-far}
 
