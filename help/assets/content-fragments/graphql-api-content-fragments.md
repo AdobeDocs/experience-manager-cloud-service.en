@@ -424,7 +424,7 @@ See [Sample Query - All Cities with a Named Variation](/help/assets/content-frag
 
 ## GraphQL Variables {#graphql-variables}
 
-GraphQL permits variables to be placed in the query. For more information you can see the [GraphQL documentation for GraphiQL](https://graphql.org/learn/queries/#variables).
+GraphQL permits variables to be placed in the query. For more information you can see the [GraphQL documentation for Variables](https://graphql.org/learn/queries/#variables).
 
 For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL.
 
