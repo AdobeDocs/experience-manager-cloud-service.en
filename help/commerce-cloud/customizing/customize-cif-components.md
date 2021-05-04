@@ -10,7 +10,7 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91,6de17630-ddd0-4041-b1c9-6b1f5eee182e
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 ---
 # Customize AEM CIF Core Components {#customize-cif-components}
 

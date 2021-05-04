@@ -4,15 +4,15 @@ description: In this part of the AEM Headless Developer Journey, learn how to de
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 ---
-
 # How to Go Live with Your Headless Application {#go-live}
 
 >[!CAUTION]
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
+In this part of the [AEM Headless Developer Journey,](overview.md) learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 
 ## The Story So Far {#story-so-far}
 
@@ -56,6 +56,8 @@ The most common deployment pattern with AEM headless applications is to have the
 3. Configure Caching and Scalability
 
 ## Deploy to Production {#deploy-to-production}
+
+Once you have tested all your code and content locally, you are now ready to commence a production deployment with AEM.
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 

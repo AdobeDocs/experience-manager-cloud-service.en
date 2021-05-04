@@ -4,15 +4,15 @@ description: In this part of the AEM Headless Developer Journey, learn about hea
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 ---
-
 # Learn About CMS Headless Development {#learn-about}
 
 >[!CAUTION]
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) learn about headless technology and why you would use it.
+In this part of the [AEM Headless Developer Journey,](overview.md) learn about headless technology and why you would use it.
 
 ## Objective {#objective}
 

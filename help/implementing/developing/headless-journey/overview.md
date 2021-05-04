@@ -4,8 +4,8 @@ description: Start here for a guided journey through the powerful and flexible h
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
 ---
-
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 
 >[!CAUTION]

@@ -4,15 +4,15 @@ description: In this part of the AEM Headless Developer Journey, learn how to ma
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: 5307163a-4433-4e42-9b10-d96f5cb2d70d
 ---
-
 # Post Launch {#post-launch}
 
 >[!CAUTION]
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](#overview.md) learn how to maintain your headless experience.
+In this part of the [AEM Headless Developer Journey,](overview.md) learn how to maintain your headless experience.
 
 ## The Story So Far {#story-so-far}
 
