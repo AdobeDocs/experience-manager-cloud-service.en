@@ -221,6 +221,63 @@ new page?
 
 ### Endpoints {#endpoints}
 
+The repository path of the GraphQL for AEM global endpoint is:
+
+`/content/cq:graphql/global/endpoint`
+
+For which your app can use the following path in the request URL:
+
+`/content/_cq_graphql/global/endpoint.json`
+
+To enable an endpoint for GraphQL for AEM you need to:
+
+* Enable your GraphQL Endpoint
+* Publish your Endpoint
+
+### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
+
+To enable a GraphQL Endpoint you first need to have an appropriate configuration in the Configuration Browser.
+
+>[!CAUTION]
+>
+>If the use of content fragment models have not been enabled, the **Create** option will not be available.
+
+To enable the corresponding endpoint:
+
+1. Navigate to **Tools**, **Sites**, then select **GraphQL**.
+1. Select **Create**.
+1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
+   * **Name**: name of the endpoint; you can enter any text.
+   * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
+
+   >[!NOTE]
+   >
+   >The following warning is shown in the dialog:
+   >
+   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
+   
+1. Confirm with **Create**.
+1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.
+
+   >[!CAUTION]
+   >
+   >The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
+   >
+   >You can set up ACLs, appropriate to your use case, on the endpoint. 
+
+### Publishing your GraphQL Endpoint {#publishing-graphql-endpoint}
+
+Select the new endpoint and **Publish** to make it fully available in all environments.
+
+>[!CAUTION]
+>
+>The endpoint is accessible to everyone. 
+>
+>On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
+>
+>You must set up ACLs appropriate to your use case on the endpoint. 
+
+
 ### AEM GraphQL Schemas {#aem-graphql-schemas}
 
 ### AEM GraphQL Data Types {#aem-graphql-data-types}
@@ -261,6 +318,7 @@ Now that you have learned how to access and query your headless content using th
   * [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
   * [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   * [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
+* [Content Fragments - Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
   * [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md)
