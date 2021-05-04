@@ -57,6 +57,8 @@ The most common deployment pattern with AEM headless applications is to have the
 
 ## Deploy to Production {#deploy-to-production}
 
+Once you have tested all your code and content locally, you are now ready to commence a production deployment with AEM.
+
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
 * Avoid creating queries that output more than 15kb of JSON (gzip compressed). Long JSON files are resource intensive for client application to parse.
