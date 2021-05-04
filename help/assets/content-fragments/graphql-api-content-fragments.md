@@ -139,7 +139,7 @@ For which your app can use the following path in the request URL:
 To enable an endpoint for GraphQL for AEM you need to:
 
 * [Enable your GraphQL Endpoint](#enabling-graphql-endpoint)
-* [Perform additional configurations](#additional-configurations-graphql-endpoint)
+* [Publish your GraphQL Endpoint](#publishing-graphql-endpoint)
 
 ### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
 
