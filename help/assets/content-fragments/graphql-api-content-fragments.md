@@ -145,20 +145,11 @@ To enable an endpoint for GraphQL for AEM you need to:
 
 To enable a GraphQL Endpoint you first need to have an appropriate configuration. See [Content Fragments - Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
-<!--
-use of content fragment models, or graphql persisted queries? 
--->
-
 >[!CAUTION]
 >
 >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
 To enable the corresponding endpoint:
-
-<!--
-is name tied to the "configuration" (config browser) - if so, why isn't it a dropdown?
-name is free text
--->
 
 1. Navigate to **Tools**, **Sites**, then select **GraphQL**.
 1. Select **Create**.
@@ -193,63 +184,7 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 >
 >You must set up ACLs appropriate to your use case on the endpoint. 
 
-<!-- remove this completely? -->
-
-<!--
->[!NOTE]
->
->See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
-
-To enable GraphQL queries in AEM, create an endpoint at `/content/cq:graphql/global/endpoint`:
-
-* Nodes `cq:graphql` and `global` must be of type `sling:Folder`.
-* Node `endpoint` must be of type `nt:unstructured` and contain a `sling:resourceType` of `graphql/sites/components/endpoint`.
-
->[!CAUTION]
->
->The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
->
->You can set up ACLs, appropriate to your use case, on the endpoint. 
-
->[!NOTE]
->
->Your endpoint will not work out-of-the-box. You will have to provide [Additional Configurations for GraphQL Endpoint](#additional-configurations-graphql-endpoint) separately.
--->
-
-<!--
-### Additional Configurations for GraphQL Endpoint {#additional-configurations-graphql-endpoint}
-
->[!NOTE]
->
->See [Supporting Packages](#supporting-packages) for details of the packages that Adobe provides to help simplify these steps.
-
-The following additional configuration is required:
-
-* Dispatcher: 
-  * To allow required URLs
-  * Mandatory
-* Vanity URL: 
-  * To allocate a simplified URL for the endpoint
-  * Optional
---> 
-
-<!--
-### Supporting packages {#supporting-packages}
-
-To simplify the setup of a GraphQL endpoint, Adobe provides the [GraphQL Sample Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip) package.
-
-This archive contains both [the required additional configuration](#additional-configurations-graphql-endpoint) and [the GraphQL endpoint](#enabling-graphql-endpoint). If installed on a plain AEM instance, it will expose a fully working GraphQL endpoint at `/content/cq:graphql/global/endpoint`.
-
-This package is meant to be a blueprint for your own GraphQL projects. See the package **README** for details on how to use the package.
-
-Should you prefer to manually create the required configuration, Adobe also provides a dedicated [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip). This content package contains the GraphQL endpoint only, without any configuration.
--->
-
 ## GraphiQL Interface {#graphiql-interface}
-
-<!--
-AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
--->
 
 An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is available for use with AEM GraphQL. This can be [installed with AEM](#installing-graphiql-interface). 
 
@@ -266,10 +201,6 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
 
 The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
-
-<!--
-See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
--->
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
@@ -319,14 +250,6 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
-
-<!--
->[!NOTE]
->
->AEM does not use the concept of namespacing for Content Fragment Models. 
->
->If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
--->
 
 The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
 
