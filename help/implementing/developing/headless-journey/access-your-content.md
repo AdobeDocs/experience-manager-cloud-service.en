@@ -80,7 +80,7 @@ Content Fragments are used, as the content is structured according to Content Fr
   * Each field is defined according to a Data Type.
 * Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
 
-To actually access GraphQL for AEM (and the content) an endpoint is used, as it provides the access path. 
+To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
 
 The content returned, via the AEM GraphQL API, can then be used by your applications. 
 
