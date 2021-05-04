@@ -37,7 +37,11 @@ So...you've got all this content, neatly structured (in Content Fragments), and 
 
 What you need is a way to target specific content, select what you need and return it to your app for further processing.
 
-With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively access your Content Fragments using the AEM GraphQL API, to realize headless delivery of structured content for use in your applications. AEM GraphQL API is a customized implementation, based on standard GraphQL.
+With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively access your Content Fragments, using the AEM GraphQL API, to return only the content that you need. This means you can realize headless delivery of structured content for use in your applications. 
+
+>[!NOTE]
+>
+>AEM GraphQL API is a customized implementation, based on standard GraphQL.
 
 ## GraphQL - An Introduction {#graphql-introduction}
 
@@ -58,7 +62,7 @@ All this means that your app can accurately, reliably and efficiently select the
 
 ## AEM and GraphQL {#aem-graphql}
 
-GraphQL is used in various locations in AEM:
+GraphQL is used in various locations in AEM; for example:
 
 * Commerce
   * There are GraphQL integrations between AEM and various third-party commerce solutions, used with the extension hooks provided by the CIF Core Components.
@@ -106,7 +110,7 @@ Content Fragments can be used as a basis for GraphQL for AEM schemas amd queries
 
 * They enable you to design, create, curate and publish page-independent content.
 * They are based on a Content Fragment Model, which predefines the structure for the resulting fragment by means of defined data types.
-* The Fragment Reference, available when defining a model, can be used to define additional layers of structure.
+* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
  
 ### Content Fragment Models {#content-fragments-models}
 
@@ -134,13 +138,11 @@ The **Fragment Reference**:
 
 ### JSON Preview {#json-preview}
 
-To help with designing and developing your Content Fragment Models, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md) in the Content Fragment Editor.
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
-
-The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
+GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 
@@ -244,7 +246,12 @@ For which your app can use the following path in the request URL:
 
 `/content/_cq_graphql/global/endpoint.json`
 
-To enable an endpoint for GraphQL for AEM you need to:
+For a tenant endpoint the paths are comparable:
+
+`/content/cq:graphql/your-tenant/endpoint`
+`/content/_cq_graphql/your-tenant/endpoint.json`
+
+Before use, all endpoints must be enabled. To enable an endpoint, global or tenant, for GraphQL for AEM you need to:
 
 * Enable your GraphQL Endpoint
 * Publish your Endpoint
@@ -306,7 +313,39 @@ The GraphiQL user interface can be installed on AEM with a dedicated package: th
 
 ### AEM GraphQL Schemas {#aem-graphql-schemas}
 
+To access your data you first need to select the required Content Fragment Model type - represented by a GraphQL Schema. AEM GraphQL Schemas are derived from your Content Fragment Models - for use in your GraphQL queries.
+
+<!--
+Confirm is the schema city or CityModel? -->
+
+If you have a Content Fragment Model named `City` there will be a corresponding schema called `city`. You can use the following query to list the `name` of all Content Fragments based on this Model. 
+
+```xml
+query {
+  cityList {
+    items {
+      name
+    }
+  }
+}
+```
+
+You can use the following query to list the `name` and `description` of all `types` for all available schemas:
+
+```xml
+{
+  __schema {
+    types {
+      name
+      description
+    }
+  }
+}
+```
+
 ### AEM GraphQL Fields {#aem-graphql-fields}
+
+Once you've selected the schema you need, you'll want to access specific data - represented by fields in the schema. 
 
 Within the schema there are individual fields, of two basic categories:
 
@@ -451,13 +490,15 @@ The `_variations` field has been implemented to simplify querying the variations
 
 ### AEM GraphQL Variables {#aem-graphql-variables}
 
+Variables are useful in any form of programming, or querying, as they allow you to store differing values in one location. For AEM GraphQL this means that instead of having to write a separate query for each value, you can write your query for one variable, and the value of this variable can change as necessary. 
+
 GraphQL permits variables to be placed in the query. 
 
 >[!NOTE]
 >
 >For more information you can see the GraphQL documentation for Variables.
 
-For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL.
+For example, to get all Content Fragments of type `Article` that have a specific variation, you can specify the variable `variation` in GraphiQL. All instances will be retrieved in `GetArticlesByVariation`, then passed for used in `articleList`.
 
 ![GraphQL Variables](assets/graphqlapi-variables.png "GraphQL Variables")
 
@@ -948,13 +989,13 @@ This means that you need to check that the account has the permissions required 
 
 You can check this by using GraphiQL on the local instance.
 
-## AEM GraphQL API and Content Fragments {#aem-graphql-content-fragments}
-
-## AEM GraphQL Queries {#aem-graphql-queries}
-
 ## Samples of AEM GraphQL Queries {#samples-aem-graphql-queries}
 
+See Learning to use GraphQL with AEM - Sample Content and Queries for a comprehensive range of sample queries.
+
+<!--
 ## Code Samples for AEM GraphQL Queries {#code-samples-aem-graphql-queries}
+-->
 
 ## What's Next {#whats-next}
 
@@ -967,13 +1008,11 @@ Now that you have learned how to access and query your headless content using th
   * [Variables](https://graphql.org/learn/queries/#variables)
   * [GraphQL Java libraries](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) 
-* [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
-  * [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-  * [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-    * [Sample Query - A Single Specific City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-    * [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-    * [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
-  * [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
+* [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+  * [Sample Query - A Single Specific City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+  * [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+  * [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
 * [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
