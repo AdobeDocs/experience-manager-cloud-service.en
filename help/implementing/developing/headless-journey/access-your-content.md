@@ -31,14 +31,15 @@ This article builds on those fundamentals so you understand how to access your e
   * Dive into the details of the AEM GraphQL API.
   * Look at some sample queries to see how things work in practice.
 
-With Adobe Experience Manager (AEM) as a Cloud Service, you can use Content Fragments, together with the AEM GraphQL API, to realize headless delivery of structured content for use in your applications.
+## So You'd Like to Access Your Data? {#so-youd-like-to-access-your-data}
 
->[!NOTE]
->AEM GraphQL API is a customized implementation, based on standard GraphQL.
+So...you've got all this content, neatly structured (in Content Fragments), and just waiting to feed your new app. Question is - how to get it there?
+
+What you need is a way to target specific content, select what you need and return it to your app for further processing.
+
+With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively access your Content Fragments using the AEM GraphQL API, to realize headless delivery of structured content for use in your applications. AEM GraphQL API is a customized implementation, based on standard GraphQL.
 
 ## GraphQL - An Introduction {#graphql-introduction}
-
-### GraphQL {#graphql}
 
 GraphQL is an open-source specification that provides:
 
@@ -55,7 +56,7 @@ All this means that your app can accurately, reliably and efficiently select the
 >
 >See *GraphQL*.org and *GraphQL*.com.
 
-### AEM and GraphQL {#aem-graphql}
+## AEM and GraphQL {#aem-graphql}
 
 GraphQL is used in various locations in AEM:
 
@@ -67,9 +68,9 @@ GraphQL is used in various locations in AEM:
 
 >[!NOTE]
 >
->Currently, this step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
+>This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
 
-### AEM GraphQL API {#aem-graphql-api}
+## AEM GraphQL API {#aem-graphql-api}
 
 The AEM GraphQL API is a customized version of the standard GraphQL API, specially configured to allow you to perform (complex) queries on your Content Fragments.
 
@@ -79,13 +80,15 @@ Content Fragments are used, as the content is structured according to Content Fr
   * Each field is defined according to a Data Type.
 * Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
 
-The content returned can then be used by your applications.
+To actually access GraphQL for AEM (and the content) an endpoint is used, as it provides the access path. 
+
+The content returned, via the AEM GraphQL API, can then be used by your applications. 
 
 >[!NOTE]
 >
 >The AEM GraphQL API implementation is based on the GraphQL Java libraries.
 
-### Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
+## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
 Content Fragments can be used as a basis for GraphQL for AEM schemas amd queries as:
 
@@ -93,7 +96,7 @@ Content Fragments can be used as a basis for GraphQL for AEM schemas amd queries
 * They are based on a Content Fragment Model, which predefines the structure for the resulting fragment by means of defined data types.
 * The Fragment Reference, available when defining a model, can be used to define additional layers of structure.
  
-#### Content Fragment Models {#content-fragments-models}
+### Content Fragment Models {#content-fragments-models}
 
 These Content Fragment Models:
 
@@ -103,7 +106,7 @@ These Content Fragment Models:
 
 * The data type **Fragment References** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
 
-#### Fragment References {#fragment-references}
+### Fragment References {#fragment-references}
 
 The **Fragment Reference**:
 
@@ -117,12 +120,12 @@ The **Fragment Reference**:
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
-#### JSON Preview {#json-preview}
+### JSON Preview {#json-preview}
 
 To help with designing and developing your Content Fragment Models, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md) in the Content Fragment Editor.
 
 
-### Schema Generation {#schema-generation}
+## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
 GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
 
@@ -175,7 +178,7 @@ So for example, if you:
 
 The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
-#### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
+### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
 
 When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
 
@@ -185,7 +188,7 @@ When Content Fragments are nested it can happen that a parent Content Fragment M
 
 When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
 
-### AEM GraphQL Endpoints {#aem-graphql-endpoints}
+## AEM GraphQL Endpoints {#aem-graphql-endpoints}
 
 <!--
 need details/examples
@@ -202,13 +205,17 @@ AEM allows for:
 * A global endpoint - available for use by all sites.
 * Tenant endpoints - that you can configure, specific to a specified site/project.
 
-### The AEM GraphiQL Interface {#aem-graphiql-interface}
+## The AEM GraphiQL Interface {#aem-graphiql-interface}
 
-An implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
+To help you directly input, and test queries, an implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
 
-This interface allows you to directly input, and test, queries. It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
+It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
+
+<!--
+new page?
+-->
 
 ## Using the AEM GraphQL API {#using-aem-graphiql}
 
