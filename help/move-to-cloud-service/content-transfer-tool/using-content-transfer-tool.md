@@ -7,12 +7,6 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 
 ## Important Considerations for Using Content Transfer Tool {#pre-reqs}
 
->id="aemcloud_ctt_prereqs"
->title="Important Considerations for using Content Transfer Tool"
->abstract="Review important considerations to use the Content Transfer tool including Java and AEM verions, supported Datastore types, user groups considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices and Guidelines"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Download Content Transfer Tool"
-
 Follow the section below to understand the important considerations while running the Content Transfer tool:
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
