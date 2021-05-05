@@ -73,7 +73,7 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 * Released CIF Core Components v1.9.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) for more details.
 
 
-## Cloud Manager {#c-manager}
+## Cloud Manager {#cloud-manager}
 
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.4.0 and 2021.3.0.
 
