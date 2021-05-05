@@ -44,7 +44,7 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 ## Data Modeling {#data-modeling}
 
-*It's a big bad world out there*.
+*It's a big, bad world out there*.
 
 Maybe, maybe not, but it's certainly a big ***complicated*** world out there and data modeling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
 
@@ -237,10 +237,10 @@ Now that you have learned how to model your structure, and create content depend
 
 ## Additional Resources {#additional-resources}
 
-* [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features including data modeling and GraphQL
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) - the lead-in page for Content Fragments
   * [Content Fragments in the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - enable Content Fragment functionality in the Configuration Browser
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
   * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
 * [AEM GraphQL Schemas](/help/implementing/developing/headless-journey/access-your-content.md) - how GraphQL realizes models
 * [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including data modeling and GraphQL
