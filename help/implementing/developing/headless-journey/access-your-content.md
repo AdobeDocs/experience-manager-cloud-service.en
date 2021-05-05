@@ -48,7 +48,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively acce
 GraphQL is an open-source specification that provides:
 
 * a query language that enables you to select specific content from structured objects.
-* a runtime to fulfil these queries with your structured content.
+* a runtime to fulfill these queries with your structured content.
 
 GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
 
@@ -78,7 +78,7 @@ GraphQL is used in various locations in AEM; for example:
 
 The AEM GraphQL API is a customized version of the standard GraphQL API, specially configured to allow you to perform (complex) queries on your Content Fragments.
 
-Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfils a basic requirement of GraphQL.
+Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
 
 * A Content Fragment Model is built up of one, or more, fields. 
   * Each field is defined according to a Data Type.
@@ -106,7 +106,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
-Content Fragments can be used as a basis for GraphQL for AEM schemas amd queries as:
+Content Fragments can be used as a basis for GraphQL for AEM schemas and queries as:
 
 * They enable you to design, create, curate and publish page-independent content.
 * They are based on a Content Fragment Model, which predefines the structure for the resulting fragment by means of defined data types.
