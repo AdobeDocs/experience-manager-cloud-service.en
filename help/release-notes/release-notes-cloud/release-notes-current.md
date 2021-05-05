@@ -30,7 +30,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* GraphQL Endpoints - it is now possible to enable the AEM GraphQL API for individual AEM Sites configurations and to create custom GraphQL endpoints for those configurations, by using a new GraphQL Console UI. The UI also allows managing GraphQL endpoints. 
+* GraphQL Endpoints - it is now possible to enable the AEM GraphQL API for individual AEM Sites configurations and to create custom GraphQL endpoints for those configurations by using a new GraphQL Console UI. The UI also allows managing GraphQL endpoints. 
 
 * Content Models, enhanced Date&Time data type - it is now possible to configure the Date&Time date type to allow authoring only date, only time, or date and time information. 
 
