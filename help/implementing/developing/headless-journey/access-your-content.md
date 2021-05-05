@@ -156,10 +156,10 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
 1. A Content Fragment Model:
 
-   ![Content Fragment Model for use with GraphQL](assets/cfm-graphqlapi-01.png "Content Fragment Model for use with GraphQL")
+   ![Content Fragment Model for use with GraphQL](assets/graphqlapi-cfmodel.png "Content Fragment Model for use with GraphQL")
 
 1. The corresponding GraphQL schema (output from GraphiQL automatic documentation):
-   ![GraphQL Schema based on Content Fragment Model](assets/cfm-graphqlapi-02.png "GraphQL Schema based on Content Fragment Model")
+   ![GraphQL Schema based on Content Fragment Model](assets/graphqlapi-cfm-schema.png "GraphQL Schema based on Content Fragment Model")
 
    This shows that the generated type `ArticleModel` contains several [fields](#fields). 
    
