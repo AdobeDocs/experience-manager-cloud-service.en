@@ -41,7 +41,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### Bug fixes in [!DNL Sites] {#bug-fixes-sites}
 
-* Content Fragments - getLastMofieddeep now takes into account the content model's lastModified data (CQ-4319969)
+* Content Fragments - getLastModifieddeep now takes into account the content model's lastModified data (CQ-4319969)
 
 * Content Fragments - moving content fragments or folders now updates nested references inside the fragment (CQ-4320815)
 
