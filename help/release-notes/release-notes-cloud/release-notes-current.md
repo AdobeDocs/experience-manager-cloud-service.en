@@ -136,11 +136,6 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.4.0.
-
-
-## Cloud Manager {#cloud-manager}
-
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.5.0 and 2021.4.0.
 
 ### Release Date {#release-date-cm-may}
