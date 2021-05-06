@@ -48,28 +48,37 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+* [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This enhancement allows for faster downloads. 
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
+* When an asset is downloaded via linkshare option, you can now choose to download or not download the renditions. Previously, all the asset renditions were downloaded.
 
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
+* Administrators can configure [!DNL Experience Manager] to delete the source of assets after doing a bulk asset ingestions. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-Ability to select a root path. select if a minimum number of tags is required. 
+* When executing a health check to import assets in bulk, Experience Manager now provides more information reasons for failures. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+* When importing assets using bulk import tool, administrators now have the option to delete the source files after the import is successful. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* [!DNL Experience Manager] extends the Connected Assets functionality to support use of [!DNL Dynamic Media] images in the supported core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
-* Experience Manager administrators can schedule bulk asset ingestions at a specific date or time. Also, administrators can schedule recurring ingestions based on date and time. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
+* When editing a metadata schema, a new root path selector field allows administrators to quickly and easily make the selection, thereby reducing the configuration time.
+
+* Metadata of many assets can be imported in bulk using a CSV file and can be exported to a CSV file. The default date format is now `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Users can leverage a different format by updating the column header. For example, add `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` as the column header in the CSV file instead of the word `Date`.
+
+* When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset.
+
+* When browsing assets in Column view, a visual indicator displays for expired assets.
 
 ### Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
-* The copyright page does not display when attempting to download multiple rights-managed assets. (CQ-4314403)
-* When choosing to edit an INDD file, the resolution changes unexpectedly. (CQ-4317376)
-* Only the last page of the InDesign Template is there in the PDF Rendition. (CQ-4317305)
-* Tag picker takes long to open when the picker is part of a complex metadata schema. (CQ-4316426)
-* When uploading asset with same filename as an existing one, the name conflict dialog does not display to prompt the user to create a version. (CQ-4315424)
-* Folder Metadata Properties can be set and saved from the popup menu in a folder's Properties page. While the selection is saved in the repository, it is not displayed when the Folder Metadata Properties are opened again. (CQ-4314429)
-* Assets with filenames containing spaces or special characters get uploaded using the browser. (CQ-4318381)
+* When attempting to move multiple assets or folders, an error is logged in the console and the move operation is not completed. Move operation fails if the title cannot be updated. (CQ-4322080)
+
+* A metadata field can be hidden based on a rule such that when a predefined condition is met the metadata is not mandatory. However, such hidden metadata fields are displayed as required fields. (CQ-4321285)
+
+* Bulk metadata import fails because of incorrect date format. (CQ-4319014)
+
+* When a selection is made in the Properties page to update metadata, the interface is slow to respond when there are many options provided by the schema. (CQ-4318538)
+
+* While updating and saving metadata value in a single-line text field, the values in the dropdown menu get deleted, even if edits are disabled on the dropdown menu. (CQ-4317077)
+
+* You can use ellipsis as an annotation to review assets. When a small ellipse is used, the ellipse overlaps with the number of the annotation in the print version. (CQ-4316792)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
