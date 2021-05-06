@@ -28,11 +28,11 @@ The next release is planned for June 03, 2021.
 
 * Commerce add-on can now be applied to Sandbox programs during the Edit program workflow.
 
-* The Edit program experience has been refreshed. 
+* The *Edit program* experience has been refreshed. 
 
 * The Domain Names table in the Environment Details page will display up to 250 Domain names via pagination. 
 
-* The Solutions tab in Add Program and Edit Program workflows will display the solution, even if only one solution is available for the Program.
+* The **Solutions & Add-ons** tab in **Add Program** and **Edit Program** workflows will display the solution, even if only one solution is available for the Program.
 
 * The error message in the build step log when the build did not produce any deployed content packages was unclear.
 
