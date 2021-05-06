@@ -205,6 +205,20 @@ Two data types provide references to content outside a specific fragment:
   * Edit the referenced fragment directly.
   * Create a new content fragment, based on the appropriate model
 
+### Creating Content Fragment Models {#creating-content-fragment-models}
+
+Firstly Content Fragment Models are enabled for your site, this is done in the Configuration Browser:
+
+![Define configuration](assets/cfm-configuration.png)
+
+Then the Content Fragments Models can be modeled:
+
+![Content Fragment Model](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>See Working with Content Fragments.
+
 ## Using the Model to Author Content with Content Fragments {#use-content-to-author-content}
 
 Content Fragments are always based on a Content Fragment Model. The model provides the structure, the fragment holds the content.
@@ -224,6 +238,16 @@ Once your fragment has been created, you can open it in the Content Fragment Edi
 * Edit the Metadata.
 * Show the Tree Structure.
 * Preview the JSON representation.
+
+### Creating Content Fragments {#creating-content-fragments}
+
+After selecting the appropriate model, a Content Fragment is opened for editing in the Content Fragment Editor:
+
+![Content Fragment Editor](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>See Working with Content Fragments.
 
 ## Getting Started with some Examples {#getting-started-examples}
 
