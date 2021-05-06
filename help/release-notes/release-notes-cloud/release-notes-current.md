@@ -38,21 +38,11 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * Content Models, new Tab Placeholder data type - the new Tab Placeholder data type allows grouping data types into sections that will be rendered under tabs in the content fragment editor. 
 
-
 ### Bug fixes in [!DNL Sites] {#bug-fixes-sites}
-
-* Content Fragments - getLastModifieddeep now takes into account the content model's lastModified data (CQ-4319969)
 
 * Content Fragments - moving content fragments or folders now updates nested references inside the fragment (CQ-4320815)
 
 * GraphQL - persisted queries now support user-defined endpoints that are specific to AEM Sites configurations (CQ-4315928)
-
-* Accessibility - improved color contrast in AEM core components (CQ-4320721)
-
-* Accessibility - improved matching of Aria controls with element ID's (CQ-4320243)
-
-* Accessibility - improved keyboard navigation for AEM search component (CQ-4320216)
-
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
