@@ -31,6 +31,7 @@ See the article [Editing an External SPA within AEM](editing-external-spa.md) fo
 
 ## Limitations {#limitations}
 
+* The current implementation of the RemotePage component only supports remote React applications only.
 * Internal CSS defined in the application's root HTML file as well as inline CSS on the root DOM node will not be available when doing remote rendering in AEM.
 
 ## Technical Details {#technical-details}
