@@ -12,7 +12,7 @@ exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](overview.md) you can learn how to use GraphQL queries to access the content of your Content Fragments.
+In this part of the [AEM Headless Developer Journey,](overview.md) you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).
 
 ## The Story So Far {#story-so-far}
 
@@ -128,9 +128,7 @@ These Content Fragment Models:
 
 The **Fragment Reference**:
 
-* Is of particular interest in conjunction with GraphQL.
-
-* Is a specific data type that can be used when defining a Content Fragment Model.
+* Is a specific data type available when defining a Content Fragment Model.
 
 * References another fragment, dependent on a specific Content Fragment Model.
 
@@ -141,6 +139,24 @@ The **Fragment Reference**:
 ### JSON Preview {#json-preview}
 
 To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
+
+### Creating Content Fragment Models and Content Fragments {#creating-content-fragment-models-and-content-fragments}
+
+Firstly Content Fragment Models are enabled for your site, this is done in the Configuration Browser:
+
+![Define configuration](assets/cfm-configuration.png)
+
+Then the Content Fragments Models can be modeled:
+
+![Content Fragment Model](assets/cfm-model.png)
+
+After selecting the appropriate model, a Content Fragment is opened for editing in the Content Fragment Editor:
+
+![Content Fragment Editor](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>See Working with Content Fragments.
 
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
@@ -232,9 +248,98 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 
-## Using the AEM GraphQL API {#using-aem-graphiql}
+## Actually Using the AEM GraphQL API {#actually-using-aem-graphiql}
 
-For the details of using the AEM GraphQL API, together with configuring the necessary elements, you can reference:
+To actually use the AEM GraphQL API in a query, we can use the two very basic Content Fragment Model structures:
+
+* Company
+  * Name
+  * CEO (Person)
+  * Employees (Persons)
+* Person
+  * Name
+  * First Name
+
+As you can see, the CEO and Employees fields, reference the Person fragments.
+
+The fragment models will be used:
+
+* when creating the content in the Content Fragment Editor
+* to generate the GraphQL schemas that you will query
+
+The queries can be entered in the GraphiQL interface, for example at:
+
+* `http://localhost:4502/content/graphiql.html `
+
+A straightforward query is to return the name of all entries in the Company schema. Here you request a list of all company names:
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+A slightly more complex query is to select all persons that do not have a name of "Jobs". This will filter all persons for any that do not have the name Jobs. This is achieved with the EQUALS_NOT operator (there are many more):
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+You can also build up more complex queries. For example, query for all companies that have at least one employee with the name of "Smith". This query illustrates filtering for any person of name "Smith", returning information from across the nested fragments:
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
+
+For the full details of using the AEM GraphQL API, together with configuring the necessary elements, you can reference:
 
 * Learning to use GraphQL with AEM
 * The Sample Content Fragment Structure
