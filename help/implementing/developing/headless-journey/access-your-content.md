@@ -140,24 +140,6 @@ The **Fragment Reference**:
 
 To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-### Creating Content Fragment Models and Content Fragments {#creating-content-fragment-models-and-content-fragments}
-
-Firstly Content Fragment Models are enabled for your site, this is done in the Configuration Browser:
-
-![Define configuration](assets/cfm-configuration.png)
-
-Then the Content Fragments Models can be modeled:
-
-![Content Fragment Model](assets/cfm-model.png)
-
-After selecting the appropriate model, a Content Fragment is opened for editing in the Content Fragment Editor:
-
-![Content Fragment Editor](assets/cfm-editor.png)
-
->[!NOTE]
->
->See Working with Content Fragments.
-
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
 GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
