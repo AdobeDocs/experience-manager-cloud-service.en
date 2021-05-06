@@ -18,7 +18,10 @@ Before using Content Fragments you need to use the **Configuration Browser** to 
 
 >[!CAUTION]
 >
->If do you not enable **Content Fragment Models** the **Create** option will not be available for creating new models.
+>If you do not enable **Content Fragment Models**:
+>
+>* the **Create** option will not be available for creating new models.
+>* you will not be able to [select the tenant to create the related end-point](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 To enable content fragment functionality you need to:
 
