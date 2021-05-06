@@ -83,11 +83,38 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-AEM Forms has helped many organizations deliver great onboarding and enrollment experiences over the years. These experiences have helped organizations convert leads to sales, process captured customer data, deliver responsive experiences based on the audience profile, and much more. Now, AEM Forms is available as a cloud service.
+### What is new in [!DNL Forms] {#what-is-new-forms}
 
-You can use [AEM Forms as a Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) to create digital forms, connect forms to existing data sources, integrate forms with Adobe Sign to add e-signatures to forms, generate Document of Record (DoR) to archive submitted forms as PDF files. The service can also convert your existing PDF forms to digital forms. In addition to standard AEM Forms features, the service offers several cloud-native capabilities like auto-scaling, zero downtime for upgrades, and cloud-native development environment. Read [this blog post](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) to learn about capabilities and features of AEM Forms as a Cloud Service.
+* **Use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms**
 
-You can reach out to your Adobe representative for a demo or to sign up for the service.
+  Powered by advanced machine learning algorithms, Adobe Sign’s Government ID process empowers companies across the globe with the ability to secure a high-quality authentication of their recipient's identity. Now, you can use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms.
+
+  Government ID is a premium identity authentication method that instructs the recipient to [upload the image of a government-issued identity document (driver’s license, national ID, passport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), and then evaluates that document to ensure it's authentic.
+
+* **Support to use in-form signing experience for asynchronous adaptive form submissions**
+
+  You can now use the in-form signing experience for asynchronous adaptive form submissions. You can also embed an adaptive form in an [!DNL Experience Manager Sites] page and use the in-form signing experience for adaptive form submissions.
+
+* **Support to use a variable to specify an attachment while prepopulating an Adaptive Form for an Assign Task step**
+
+  While prepopulating an Adaptive Form for an Assign Task step, you can now use a document type variable to select an input attachment for the Adaptive Form.
+
+* **Support to use the literal option to set value for a JSON type variable**
+
+  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
+
+* **Use local development environment to create Document of Record (DoR)**
+
+  You can use an XDP as a Document of Record template on Cloud Service instances and AEM Forms as a Cloud Service SDK (Local development environment). Previously, the support was limited to Cloud Service instances only.
+
+### Bug fixes in [!DNL Forms] {#bug-fixes-forms}
+
+* When an Adaptive Form configured to not-generate Document of Record is submitted to an AEM Workflow configured to generate Document of Record, no error message is displayed, and the task fails to submit.
+
+### Other updates {#misc-2021-04-0-forms}
+
+* To make easier to recognize content the service now generates live thumbnail for XDP, Dynamic PDF, and Schema files.
+* Add ability to move a PDF file to a folder placed in on AEM Forms UI.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
