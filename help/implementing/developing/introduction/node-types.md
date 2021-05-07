@@ -1,8 +1,8 @@
 ---
 title: AEM Node Types
 description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of its own node types.
+exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
 ---
-
 # AEM Node Types {#aem-node-types}
 
 Because AEM is based on Sling and uses a JCR repository, node types offered by both of these standards are available for use in AEM:

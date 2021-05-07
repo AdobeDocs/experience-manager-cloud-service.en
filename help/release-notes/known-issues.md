@@ -1,8 +1,8 @@
 ---
 title: Known Issues
 description: Release notes specific to the Known Issues with Adobe Experience Manager as a Cloud Service
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 ---
-
 # Known issues {#known-issues}
 
 This article lists the known issues of Adobe Experience Manager as a Cloud Service offering. The list is revised and updated with each continuous release of Experience Manager.

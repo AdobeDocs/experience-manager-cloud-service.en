@@ -1,8 +1,8 @@
 ---
 title: Adobe Content Package Maven Plugin
 description: Use the Content Package Maven plugin to deploy AEM applications
+exl-id: d631d6df-7507-4752-862b-9094af9759a0
 ---
-
 # Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
 
 Use the Adobe Content Package Maven plugin to integrate package deployment and management tasks into your Maven projects.
@@ -23,7 +23,7 @@ This document details how to use the Maven to manage these tasks. However it is 
 
 ## Packages and the AEM Project Structure {#aem-project-structure}
 
-AEM 6.5 adheres to the latest best practices for package management and project structure as implemented by the latest AEM Project Archetype for both on-premises and AMS implementations.
+AEM as a Cloud Service adheres to the latest best practices for package management and project structure as implemented by the latest AEM Project Archetype.
 
 >[!TIP]
 >

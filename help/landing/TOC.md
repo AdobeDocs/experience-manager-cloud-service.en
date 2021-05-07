@@ -1,6 +1,8 @@
 ---
 sub-product: Adobe Experience Manager as a Cloud Service Help
 user-guide-title: Adobe Experience Manager as a Cloud Service Help
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 ---
 
 # Experience Manager as a Cloud Service Help {#landing}

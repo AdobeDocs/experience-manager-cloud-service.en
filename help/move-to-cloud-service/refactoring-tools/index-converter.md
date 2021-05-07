@@ -1,8 +1,8 @@
 ---
 title: Index Converter
 description: Index Converter
+exl-id: e6a3ec6d-cc02-4f5b-8b1d-ea481d6884ca
 ---
-
 # Index Converter {#index-converter}
 
 Index Converter is a utility developed to migrate a customer's Index Definitions in preparation for the move to AEM as a Cloud Service.
@@ -35,6 +35,3 @@ If [Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-common
 * As a standalone utility : The Index Converter can also be executed as a standalone utility.
 
    Refer to **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** to learn how to use this tool.
-
-
-

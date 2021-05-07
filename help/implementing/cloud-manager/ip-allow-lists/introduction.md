@@ -1,8 +1,8 @@
 ---
 title: Introduction - IP Allow Lists in Cloud Manager
 description: Introduction - IP Allow Lists in Cloud Manager
+exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 ---
-
 # Introduction {#introduction}
 
 AEM as a cloud service is open to the internet and security is handled through user authentication and authorization. IP Allow listing is a feature in Cloud Manager used for limiting and controlling access only to trusted users. This feature enables users with permissions to create Allow-lists of trusted IP addresses from which their sites users can access their AEM domains. 

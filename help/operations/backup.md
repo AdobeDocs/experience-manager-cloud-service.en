@@ -1,8 +1,8 @@
 ---
 title: Backup and Restore in AEM as a Cloud Service
-description: Backup and Restore in AEM as a Cloud Service 
+description: Backup and Restore in AEM as a Cloud Service
+exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 ---
-
 # Backup and Restore in AEM as a Cloud Service
 
 Should content or data corruption occur, AEM as a Cloud Service can restore a customer's full application (code and content) to specific, predetermined times in the last seven days, replacing what was on production.

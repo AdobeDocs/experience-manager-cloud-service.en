@@ -1,8 +1,8 @@
 ---
 title: Code Quality Testing - Cloud Services
 description: Code Quality Testing - Cloud Services
+exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 ---
-
 # Code Quality Testing {#code-quality-testing}
 
 >[!CONTEXTUALHELP]
@@ -19,7 +19,7 @@ Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/conf
 In Code Quality Testing, the source code is scanned to ensure that it meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
->You can download the complete list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>You can download the complete list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx).
 
 **Three-tier Gate**
 

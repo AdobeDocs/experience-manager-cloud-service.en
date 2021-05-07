@@ -1,8 +1,9 @@
 ---
 title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.4.0
 description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2020.4.0
+feature: Release Information
+exl-id: 15665fb5-9444-416b-938a-45c31fdce5cf
 ---
-
 # Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
 This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2020.4.0.
@@ -30,4 +31,3 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.4.0 is April 0
 * In some cases, the Build Image step would fail to download customer packages successfully.
 * Certain infrequently occurring conditions would prevent environments from being deleted.
 * Experience Cloud notifications were not consistently received.
-

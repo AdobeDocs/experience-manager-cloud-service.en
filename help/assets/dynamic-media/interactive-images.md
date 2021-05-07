@@ -1,8 +1,10 @@
 ---
 title: Interactive images
 description: Learn how to work with Interactive Images in Dynamic Media.
+feature: Interactive Images
+role: Business Practitioner
+exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 ---
-
 # Interactive images{#interactive-images}
 
 You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can tap these hotspots that link directly to the product or service, add it to a shopping cart, or be linked to a web page. Direct experiences such as these increase customer engagement and conversions on your web site.
@@ -43,7 +45,7 @@ See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynami
    See [Previewing interactive images](#optional-previewing-interactive-images) - Optional. If desired, you can view a representation of your shoppable banner and test its interactivity.
    See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
 
-1. **Adding an interactive image to your website or to your website in Experience Manager**. If you use Sites, or eCommerce, or both, you can add interactive images directly to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Adding an interactive image to your website or to your website in Experience Manager**. If you use Sites, or eCommerce, or both, you can add interactive images directly to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
    If you use Experience ManagerAssets and Dynamic Media standalone, copy the embed code on your website. Then, integrate it with your existing Quick view. See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
    If you use a third-party WCM (Web Content Manager), integrate the new interactive video with the existing Quick view used on your website. See [Integrating an interactive image with an existing Quick view](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -304,7 +306,7 @@ You can use Preview to see a representation of what your interactive image looks
 When you are satisfied with the interactive image, you can publish it.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
-See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **To preview interactive images**
 
@@ -321,7 +323,7 @@ See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-asset
 
 After you upload a banner image, add hotspots to it, and publish the interactive image, you are ready to add it to your website page.
 
-If you are an AEM Sites customer, you can add the interactive image by dragging the Interactive Media component onto your page. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+If you are an AEM Sites customer, you can add the interactive image by dragging the Interactive Media component onto your page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 If you are a standalone AEM Assets customer, you can manually add the interactive image to your website as described in this section.
 

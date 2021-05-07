@@ -1,7 +1,10 @@
 ---
-title: Auto-tag assets with AI-generated tags
-description: Tag assets using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] service.
+title: Auto-tag assets with [!DNL Adobe Sensei] smart service
+description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 contentOwner: AG
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
 # Add smart tags to your assets to improve search experience {#smart-tag-assets-for-faster-search}
@@ -10,21 +13,19 @@ Organizations that deal with digital assets increasingly use taxonomy-controlled
 
 Compared to natural language vocabularies, tagging based on business taxonomy helps align the assets with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
 
-In the background, the the functionality uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
+In the background, the the functionality uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-You can tag the following types of assets:
-
-* **Images**: Images in many formats are tagged using the Adobe Sensei's smart content services. You [create a training model](#train-model) and then [apply smart tags](#tag-assets) to images.
-* **Video assets**: Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Videos are auto-tagged](/help/assets/smart-tags-video-assets.md) when you upload new videos or reprocess existing ones.
-* **Text-based assets**: [!DNL Experience Manager Assets] auto-tags the supported text-based assets when uploaded. Understand more about [tagging text-based assets](#smart-tag-text-based-assets).
-
 ## Supported asset types {#smart-tags-supported-file-formats}
 
-Smart Tags are applied to the supported file types that generate renditions in JPG and PNG format. The functionality is supported for the following types of assets:
+You can tag the following types of assets:
+
+* **Images**: Images in many formats are tagged using the Adobe Sensei's smart content services. You [create a training model](#train-model) and then [apply smart tags](#tag-assets) to images. Smart Tags are applied to the supported file types that generate renditions in JPG and PNG format.
+* **Text-based assets**: [!DNL Experience Manager Assets] auto-tags the supported text-based assets when uploaded. Understand more about [tagging text-based assets](#smart-tag-text-based-assets).
+* **Video assets**: Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. [Videos are auto-tagged](/help/assets/smart-tags-video-assets.md) when you upload new videos or reprocess existing ones.
 
 |Images (MIME types) | Text-based assets (file formats) | Video assets (file formats and codecs) |
 |----|-----|------|
@@ -32,15 +33,15 @@ Smart Tags are applied to the supported file types that generate renditions in J
 | image/tiff | DOC | MKV (H264/AVC) |
 | image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
 | image/bmp | HTML | AVI (indeo4) |
-| image/gif | JSON | FLV (H264/AVC, vp6f) |
-| image/pjpeg | PDF | WMV (WMV2) |
-| image/x-portable-anymap | PPT |  |
-| image/x-portable-bitmap | PPTX |  |
-| image/x-portable-graymap | RTF |  |
-| image/x-portable-pixmap | SRT |  |
-| image/x-rgb | TXT |  |
-| image/x-xbitmap | VTT |  |
-| image/x-xpixmap | XML |  |
+| image/gif | PDF | FLV (H264/AVC, vp6f) |
+| image/pjpeg | PPT | WMV (WMV2) |
+| image/x-portable-anymap | PPTX |  |
+| image/x-portable-bitmap | RTF |  |
+| image/x-portable-graymap | SRT |  |
+| image/x-portable-pixmap | TXT |  |
+| image/x-rgb | VTT |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -49,15 +50,10 @@ Smart Tags are applied to the supported file types that generate renditions in J
 
 [!DNL Experience Manager] auto-adds the Smart Tags to the text-based assets and to videos by default. To auto-add Smart Tags to images, complete the following tasks.
 
-* [Integrate [!DNL Adobe Experience Manager] with Adobe Developer Console](#integrate-aem-with-aio).
 * [Understand tag models and guidelines](#understand-tag-models-guidelines).
 * [Train the model](#train-model).
 * [Tag your digital assets](#tag-assets).
 * [Manage the tags and searches](#manage-smart-tags-and-searches).
-
->[!TIP]
->
->Smart Tags are applicable only for [!DNL Adobe Experience Manager Assets] customers. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -66,14 +62,6 @@ Smart Tags are applied to the supported file types that generate renditions in J
 The supported text-based assets are auto-tagged by [!DNL Experience Manager Assets] when uploaded. It is enabled by default. The efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. For text-based assets, the Smart Tags are the keywords that appear in the text but the ones that best describe the asset. For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet that is used to improve asset discovery as compared to full search index.
 
 In comparison, for images and videos, the Smart Tags are derived based on some visual aspect.
-
-## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
-
->[!IMPORTANT]
->
->The new [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default. It helps configure the smart tags functionality faster. On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
-
-You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using [!DNL Adobe Developer Console]. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager]. See [configure [!DNL Experience Manager] to tag assets](smart-tags-configuration.md) for tasks to configure the Smart Tags. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## Understand tag models and guidelines {#understand-tag-models-guidelines}
 
@@ -146,7 +134,7 @@ To create and train a model for your business-specific tags, follow these steps:
 
 To check whether the Smart Tags service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools] > **[!UICONTROL Assets] > **[!UICONTROL Reports]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
@@ -156,7 +144,7 @@ To check whether the Smart Tags service is trained on your tags in the training 
 
 ## Tag assets {#tag-assets}
 
-After you have trained the Smart Tags service, you can trigger the tagging workflow to automatically apply appropriate tags on a different set of similar assets. You can apply the tagging workflow periodically or whenever required. The tagging workflow applies to both, assets and folders.
+After you have trained the Smart Tags service, you can trigger the tagging workflow to automatically apply tags on a different set of assets. You can apply the tagging workflow on-demand or schedule it to execute periodically. The tagging workflow applies to both, assets and folders.
 
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
@@ -215,7 +203,7 @@ To moderate the smart tags of your assets:
 
 1. Navigate to the [!UICONTROL Properties] page for the asset. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
 
-### Understand AEM search results with smart tags {#understandsearch}
+### Understand AEM search results with smart tags {#understand-search}
 
 By default, AEM search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an `OR` clause to find any of the search terms in the applied smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
 

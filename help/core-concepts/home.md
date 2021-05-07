@@ -1,8 +1,8 @@
 ---
 title: Core Concepts of Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service core concepts self-help resources and documentation links
+exl-id: 79c5cf70-fc72-4d4d-9dc6-b987cf82ddbd
 ---
-
 # Core Concepts of Experience Manager as a Cloud Service {#aem-core-concepts-guide}
 
 This page lists self-help resources introducing the core concepts of Experience Manager as a Cloud Service.

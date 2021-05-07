@@ -1,8 +1,8 @@
 ---
 title: UI Testing - Cloud Services
 description: UI Testing - Cloud Services
+exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 ---
-
 # UI Testing {#ui-testing}
 
 >[!CONTEXTUALHELP]

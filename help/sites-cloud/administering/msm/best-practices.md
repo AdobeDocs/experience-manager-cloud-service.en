@@ -1,8 +1,10 @@
 ---
 title: MSM Best Practices
 description: Learn the best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.
+feature: Multi Site Manager
+role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 ---
-
 # MSM Best Practices {#msm-best-practices}
 
 ## General {#general}
@@ -28,6 +30,10 @@ The additional benefits of using a blueprint configuration are that they:
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.
 
 When creating a new site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
+
+>[!NOTE]
+>
+> Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
 
 ## Components and Container Synchronization {#components-and-container-synchronization}
 

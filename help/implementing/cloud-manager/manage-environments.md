@@ -1,8 +1,8 @@
 ---
 title: Manage Environments - Cloud Service
 description: Manage Environments - Cloud Service
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 ---
-
 # Managing Environments {#manage-environments} 
 
 The following section describes the types of environment a  user can create and how the user can create an environment.
@@ -107,13 +107,13 @@ The delete option is also available, if you click on **Details** from the **Envi
 
 >[!NOTE]
 >
->This feature is not available for Production/Stage environment set in a regular program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
+>This feature is not available for Production/Stage environment set in a Production program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
 
 ## Managing Access {#managing-access}
 
 Select **Manage Access** from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
 
-Refer to [Managing Access to Author Instance](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) to learn more.
+Refer to [Managing Access to Author Instance](/help/onboarding/what-is-required/accessing-aem-instance.md) to learn more.
 
 ![](assets/environ-access.png)
 
@@ -153,6 +153,10 @@ The following actions can be performed on the Publish service for your environme
 
 1. [Deleting a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
+1. [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+
+1. [Checking Status of an IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+
 ## Managing IP Allow Lists {#manage-ip-allow-lists} 
 
 Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
@@ -180,5 +184,3 @@ Follow the steps below to unapply an IP Allow List:
 1. Identify the row where the IP Allow List rule you wish to unapply is listed.
 1. Select the **...** menu from the far right end of the row.
 1. Select the **Unapply** option and confirm your submission.
-
-

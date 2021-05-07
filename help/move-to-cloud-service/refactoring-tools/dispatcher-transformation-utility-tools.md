@@ -1,8 +1,8 @@
 ---
 title: AEM Dispatcher Converter Tool
 description: AEM Dispatcher Converter Tool
+exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
 ---
-
 # AEM Dispatcher Converter {#introduction}
 
 >[!CONTEXTUALHELP]
@@ -43,4 +43,3 @@ AEM Dispatcher Converter provides the capability of refactoring existing on-prem
 
 >[!IMPORTANT]
 >AEM Dispatcher Converter is developed using NodeJS. It is recommended to have NodeJS 10.0+ installed.
-

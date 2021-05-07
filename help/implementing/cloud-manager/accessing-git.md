@@ -3,9 +3,8 @@ title: Accessing Git
 seo-title: Accessing Git
 description: This page describes how you can access and manage Git repository.
 seo-description: Follow this page to learn how to access and manage your Git repository.
-
+exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 ---
-
 # Accessing Git {#accessing-git}
 
 You can access and manage your Git Repository using Self-Service Git Account Management from Cloud Manager UI.
@@ -39,4 +38,3 @@ The important considerations to manage your Git in Cloud Manager are:
 >[!NOTE]
 >
 >A user can check out a copy of their code, and make changes in the local code repository. When ready, the user can commit their code changes back to the remote code repository in Cloud Manager.
-

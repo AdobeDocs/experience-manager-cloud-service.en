@@ -1,11 +1,25 @@
 ---
 title: Managing Content Fragments
-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
+description: Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
+feature: Content Fragments
+role: Business Practitioner
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 ---
+# Managing Content Fragments {#managing-content-fragments}
 
-# Managing Content Fragments{#managing-content-fragments}
+Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
 
-Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
+After defining your [Content Fragment Models](#creating-a-content-model) you can use these to [create your Content Fragments](#creating-a-content-fragment).
+
+The [Content Fragment Editor](#opening-the-fragment-editor) provides various [modes](#modes-in-the-content-fragment-editor) to enable you to:
+
+* [Edit the content](#editing-the-content-of-your-fragment) and [manage Variations](#creating-and-managing-variations-within-your-fragment)
+* [Annotate your Fragment](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Associate Content with your Fragment](#associating-content-with-your-fragment)
+* [Configure the Metadata](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [View the Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Preview the JSON representation](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -13,6 +27,10 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 >
 >* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* for [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+>[!NOTE]
+>
+>Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -116,23 +134,22 @@ To open your fragment for editing:
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
 
-    * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
-    * Selecting the fragment, then **Edit** from the toolbar.
+   * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
+   * Selecting the fragment, then **Edit** from the toolbar.
 
-   The fragment editor will open:
+1. The fragment editor will open. Make your changes as required:
 
    ![fragment editor](assets/cfm-managing-03.png)
 
-   >[!NOTE]
-   >
-   >1. A message will be shown when the fragment is already referenced on a content page.
-   >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
-
-1. After making changes, use **Save** or **Cancel** as required.
+1. After making changes, use **Save**, **Save & close** or **Close** as required.
 
    >[!NOTE]
    >
-   >Both **Save** and **Cancel** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
+   >**Save & close** is available via the **Save** dropdown.
+
+   >[!NOTE]
+   >
+   >Both **Save & Close** and **Close** will exit the editor - see [Save, Close and Versions](#save-close-and-versions) for full information on how the various options operate for content fragments.
 
 ## Modes and Actions in the Content Fragment Editor {#modes-actions-content-fragment-editor}
 
@@ -152,11 +169,15 @@ Navigate through the various modes using the icons in the side panel:
 
 ![modes](assets/cfm-managing-04.png)
 
-### Toolbar Actions in theContent Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
+### Toolbar Actions in the Content Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
 
 Some features in the top toolbar are available from multiple modes:
 
 ![modes](assets/cfm-managing-top-toolbar.png)
+
+* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
+
+* The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
@@ -164,25 +185,35 @@ Some features in the top toolbar are available from multiple modes:
 
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
-  * New: grey
-  * Draft: blue
-  * Published: green
-  * Modified: orange
-  * Deactivated: red
+  * **New**: grey
+  * **Draft**: blue
+  * **Published**: green
+  * **Modified**: orange
+  * **Deactivated**: red
 
-* **[Publish](#publishing-and-referencing-a-fragment)** the fragment.
+* **Save** provides access to the **Save & close** option.
+  
+* The three dots (**...**) drop-down provides access to additional actions:
+  * **Update page references**
+    * This updates any page references. 
+  * **[Quick publish](#publishing-and-referencing-a-fragment)**
+  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 
-## Save, Cancel and Versions {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## Save, Close and Versions {#save-close-and-versions}
 
 >[!NOTE]
 >
 >Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-The editor has two options:
+The editor has various options:
 
-* **Save**
+* **Save** and **Save & close**
 
-  Will save the latest changes and exit the editor.
+  * **Save** will save the latest changes and remain in the editor.
+  * **Save & close** will save the latest changes and exit the editor.
 
   >[!CAUTION]
   >
@@ -190,25 +221,24 @@ The editor has two options:
 
   >[!NOTE]
   >
-  >It is possible to remain in the editor, making a series of changes, before selecting **Save**.
+  >It is possible to remain in the editor, making a series of changes, before saving.
 
   >[!CAUTION]
   >
-  >In addition to simply saving your changes, **Save** also updates any references and ensures that the dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
+  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
   >
-  >
-  >Please bear this in mind when using **Save** and then quickly re-entering the fragment editor to make and save further changes.
+  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
 
-* **Cancel**
+* **Close**
 
-  Will exit the editor without saving the latest changes.
+  Will exit the editor without saving the latest changes (i.e made since the last **Save**).
 
-While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you **Cancel** your changes:
+While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you cancel your changes (using **Close** without saving):
 
 1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
 
-    1. If the token is found, the fragment is considered to be part of the existing editing session.
-    2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
+   1. If the token is found, the fragment is considered to be part of the existing editing session.
+   2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
 
 2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
 
@@ -219,7 +249,7 @@ While editing your content fragment AEM automatically creates versions to ensure
    >Default value, see:
    >&nbsp;&nbsp;`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. If the user selects to **Cancel** the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
+3. If the user cancels the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
 4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
 
 ## Editing the Content of your Fragment {#editing-the-content-of-your-fragment}
@@ -255,7 +285,7 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 
 * Actions for Annotations
 
-    * **Delete**
+  * **Delete**
 
 >[!NOTE]
 >
@@ -285,13 +315,13 @@ This will open:
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
-They will be shown side-by-side, where:
+They will be shown side by side, where:
 
 * Any differences are highlighted
 
-    * Deleted text - red
-    * Inserted text - green
-    * Replaced text - blue
+  * Deleted text - red
+  * Inserted text - green
+  * Replaced text - blue
 
 * The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
 * You can **Revert** to the specific version
@@ -321,7 +351,7 @@ You can revert to a specific version of your fragment:
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
-Content Fragments must be published for use in the publish enviroment. They can be published:
+Content Fragments must be published for use in the publish environment. They can be published:
 
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
