@@ -5,6 +5,11 @@ description: Functional Testing - Cloud Services
 
 # Functional Testing {#functional-testing}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_functionaltesting"
+>title="Functional Testing"
+>abstract="Functional testing is categorized into three types:Product Functional Testing,Custom Functional Testing,Custom UI Testing"
+
 Functional testing is categorized into two types:
 
 * Product Functional Testing
