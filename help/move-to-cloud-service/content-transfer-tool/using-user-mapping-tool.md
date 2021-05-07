@@ -1,11 +1,19 @@
 ---
 title: Using User Mapping Tool
 description: Using User Mapping Tool
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 ---
-
 # Using User Mapping Tool {#user-mapping-tool}
 
 ## Overview {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="User Mapping Tool"
+>abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Important Considerations for using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Using User Mapping Tool"
+
 
 As part of the transition journey to Adobe Experience Manager (AEM) as a Cloud Service, you need to move users and groups from your existing AEM system to AEM as a Cloud Service. This is done by the Content Transfer Tool. 
 
@@ -13,17 +21,35 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 ## Important Considerations {#important-considerations} 
 
-There are a few exceptional cases to be considered. The following specific cases will be logged and the user or group in question will not be mapped:
+### Exceptional cases {#exceptional-cases}
 
-1. If a user has no email address in the `profile/email` field of their *jcr* node.
+The following specific cases will be logged: 
 
-1. If a given email is not found on the Adobe Identity Management System (IMS) system for the Organization ID used (or if the IMS ID cannot be retrieved for another reason).
+1. If a user has no email address in the `profile/email` field of their *jcr* node the user or group in question will be migrated but not mapped.
+
+1. If a given email is not found on the Adobe Identity Management System (IMS) system for the Organization ID used (or if the IMS ID cannot be retrieved for another reason) the user or group in question will be migrated but not mapped. 
 
 1. If the user is currently disabled, it is treated the same as if it were not disabled. It will be mapped and migrated as normal, and will remain disabled on the cloud instance.
 
+1. If a user exists on the target AEM Cloud Service instance with the same user name (rep:principalName) as one of the users on the source AEM instance the user or group in question will be not be migrated.
+
+### Additional considerations {#additional-considerations}
+
+* If the setting **Wipe existing content on Cloud instance before ingestion** is set, already transferred users on the Cloud Service instance will be deleted along with the entire existing repository and a new repository will be created to ingest content into. This also resets all settings including permissions on the target Cloud Service instance and is true for an admin user added to the **administrators** group. The admin user will need to be re-added to the **administrators** group to retrieve the access token for CTT.
+
+* It is recommended to remove any existing user from the target Cloud Service AEM instance before running CTT with User Mapping. This is to prevent any conflict between migrating users from the source AEM instance to the target AEM instance. Conflicts will occur during ingestion if the same user exists on the source AEM instance and the target AEM instance. 
+
+* When content top-ups are performed, if content is not transferred because it has not changed since the previous transfer, users and groups associated with that content will not be transferred either, even if the users and groups have changed in the meantime. This is because users and groups are migrated along with the content they are associated with.  
+
+* Ingestion will fail under the following scenarios:
+
+1. If the target AEM Cloud Service instance has a user with a different user name but same email address as one of the users on the source AEM instance.
+
+1. If there are two users on the source AEM instance with different user names but the same email address. AEM as a Cloud Service does not allow two users to have the same email address.
+
 ## Using the User Mapping Tool {#using-user-mapping-tool}
 
-The User Mapping Tool uses an API that allows it to lookup Adobe Identity Management System (IMS) users by email and return their IMS IDs. This API requires the user to create a Client ID for their organization, a Client Secret, and an Access or Bearer Token.  
+The User Mapping Tool uses an API that allows it to look up Adobe Identity Management System (IMS) users by email and return their IMS IDs. This API requires the user to create a Client ID for their organization, a Client Secret, and an Access or Bearer Token.  
 
 Follow the steps below to set this up:
 
@@ -77,6 +103,3 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. To run Extraction phase, refer to [Running the Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
-
-

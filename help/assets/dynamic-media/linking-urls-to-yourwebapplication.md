@@ -1,8 +1,9 @@
 ---
 title: Linking URLs to your web application
-description: How to link URLs to your web application in Dynamic Media.
+description: Learn how to link URLs to your web application in Dynamic Media.
+role: Business Practitioner
+exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 ---
-
 # Linking URLs to your web application {#linking-urls-to-your-web-application}
 
 Your websites and applications access Dynamic Media services by way of URL calls. After you publish an asset, Dynamic Media activates a URL string that references the asset. You can paste these URLs into a web browser for testing.
@@ -13,7 +14,7 @@ To place these URL strings in your web pages and applications, copy them from Dy
 
 >[!NOTE]
 >
->URL strings are only available for dynamic renditions of assets. They are currently not available for static assets that reside in DAM and not the dynamic media server. The URL button does not appear for renditions that are static.
+>URL strings are only available for dynamic renditions of assets. They are currently not available for static assets that reside in DAM and not the Dynamic Media server. The URL button does not appear for renditions that are static.
 
 See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 

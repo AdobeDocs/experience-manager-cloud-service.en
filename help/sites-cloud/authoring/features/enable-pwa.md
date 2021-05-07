@@ -1,10 +1,8 @@
 ---
 title: Enabling Progressive Web App Features
 description: AEM Sites allows the content author to enable progressive web app capabilities to any site through simple configuration instead of coding.
-hide: yes
-hidefromtoc: yes
+exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 ---
-
 # Enabling Progressive Web App Features {#enabling-pwa}
 
 Through a simple configuration, a content author can now enable progressive web app (PWA) features for experiences created in AEM Sites.
@@ -198,7 +196,6 @@ These settings make parts of this site available offline and available locally o
 
 Not all PWA features are available for AEM Sites. These are a few notable limitations.
 
-* A user must browse the page at least once before it is cached offline.
 * Pages are not automatically synched or updated if the user is not using the app.
 
 Adobe also makes the following recommendations when you implement PWA.

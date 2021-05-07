@@ -1,8 +1,10 @@
 ---
 title: Reusing Content - Multi Site Manager and Live Copy
 description: Get an introduction to reusing content with AEM's powerful Live Copies and the Multi Site Manager features.
+feature: Multi Site Manager
+role: Administrator
+exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 ---
-
 # Reusing Content: Multi Site Manager and Live Copy {#multi-site-manager-and-live-copy}
 
 The Multi Site Manager (MSM) enables you to use the same site content in multiple locations. MSM uses its Live Copy functionality to achieve this.

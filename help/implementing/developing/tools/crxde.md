@@ -1,8 +1,8 @@
 ---
 title: Using CRXDE Lite
 description: CRXDE Lite is part of the AEM quickstart and is available to you to access and modify the repository in your local development environments within the browser.
+exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 ---
-
 # Using CRXDE Lite {#using-crxde-lite}
 
 CRXDE Lite is part of the AEM quickstart and is available to you to access and modify the repository in your local development environments within the browser. With CRXDE Lite, you can edit files, folders, nodes, and properties. The entire repository is accessible to you in this easy-to-use interface.

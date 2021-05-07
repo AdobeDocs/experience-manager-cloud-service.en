@@ -1,20 +1,22 @@
 ---
 title: Delivering Dynamic Media Assets
 description: Learn how to deliver Dynamic Media assets.
+feature: Asset Management
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 ---
-
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
 
 How you can deliver your Dynamic Media assets - both video and images - depends on how your website is implemented.
 
 With Dynamic Media, you have several options:
 
-* If your website is hosted on AEM, then you want to add the dynamic media assets directly to your page.
+* If your website is hosted on AEM, then you want to add the Dynamic Media assets directly to your page.
 * If your website is not on AEM, then you have the choice of either:
 
   * Embedding your video or image on your website.
   * Link URLs to your web application. Use linking when you want to deliver a video player as a pop-up or modal window.
-  * If your site is responsive, you can [deliver optimized images.](/help/assets/dynamic-media/responsive-site.md)
+  * If your site is responsive, you can [deliver optimized images](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >

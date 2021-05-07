@@ -1,8 +1,8 @@
 ---
 title: Experience Audit Testing - Cloud Services
 description: Experience Audit Testing - Cloud Services
+exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 ---
-
 # Experience Audit Testing {#experience-audit-testing}
 
 >[!CONTEXTUALHELP]
@@ -59,4 +59,3 @@ By drilling into any of the tests, more detailed page level scoring can be seen.
 Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse. 
 
    ![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
-

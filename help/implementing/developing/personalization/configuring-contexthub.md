@@ -1,8 +1,8 @@
 ---
 title: Configuring ContextHub
 description: Learn how to configure Context Hub.
+exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 ---
-
 # Configuring ContextHub {#configuring-contexthub}
 
 ContextHub is a framework for storing, manipulating, and presenting context data. For more detail on ContextHub, please see the [ContextHub developer overview](contexthub.md).

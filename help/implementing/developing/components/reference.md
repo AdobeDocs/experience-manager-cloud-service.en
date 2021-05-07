@@ -1,8 +1,8 @@
 ---
 title: Components Reference Guide
 description: A developer reference guide to the details of components and their structure
+exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 ---
-
 # Components Reference Guide {#components-reference-guide}
 
 Components are at the core of building an experience in AEM. The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) make it simple to get started with a tool set of ready-made, robust components. The [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) takes the developer through how to use these tools and how to build custom components in order to create a new AEM site.
@@ -111,7 +111,7 @@ The definition of a component can be broken down as follows:
 
 The icon or abbreviation for the component is defined via JCR properties of the component when the component is created by the developer. These properties are evaluated in the following order and the first valid property found is used.
 
-1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) to display in the component browser
+1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://opensource.adobe.com/coral-spectrum/examples/#icon) to display in the component browser
     * Use the value of the HTML attribute of the Coral icon.
 1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
     * The abbreviation should be limited to two characters.
@@ -223,15 +223,13 @@ Design dialogs are similar to the dialogs used to edit and configure content, bu
 
 Coral UI and Granite UI define the look and feel of AEM.
 
-* [Coral UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) provides a consistent UI across all cloud solutions.
+* [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) provides a consistent UI across all cloud solutions.
 * [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) provides Coral UI markup wrapped into Sling components for building UI consoles and dialogs.
 
 Granite UI provides a large range of the basic widgets needed to create your dialog on the authoring environment. When necessary you can extend this selection and create your own widget.
 
 For additional details see the following resources:
 
-* [Coral UI Guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
 
 ### Customizing Dialog Fields {#customizing-dialog-fields}
@@ -382,7 +380,7 @@ To inject logic into your field, you should:
 * Have your field marked with a given CSS class (the hook).
 * Define in your client library a JS listener hooked on that CSS class name (this ensures that your custom logic is scoped to your field only, and does not affect other fields of the same type).
 
-To achieve this you need to know about the underlying widget library with which you want to interact. [See the Coral UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) to identify to which event you want to react.
+To achieve this you need to know about the underlying widget library with which you want to interact. [See the Coral UI documentation](https://opensource.adobe.com/coral-spectrum/documentation/) to identify to which event you want to react.
 
 The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happens before or after an action on the component. The following table defines its possible properties.
 
@@ -441,7 +439,7 @@ This event is triggered  whenever the dialog loads (or re-loads) and is ready fo
 
 ## Preview Behavior {#preview-behavior}
 
-The [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie is set when switching to Preview mode even when the page is not refreshed.
+The [WCM Mode](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) cookie is set when switching to Preview mode even when the page is not refreshed.
 
 For components with a rendering that are sensitive to the WCM Mode, they need to be defined to refresh themselves specifically, then rely on the value of the cookie.
 

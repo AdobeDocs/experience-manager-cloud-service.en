@@ -1,8 +1,8 @@
 ---
 title: IMS Support for Adobe Experience Manager as a Cloud Service
 description: IMS Support for Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 ---
-
 # IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
 ## Introduction {#introduction}
@@ -10,6 +10,10 @@ description: IMS Support for Adobe Experience Manager as a Cloud Service
 * AEM as a Cloud Service includes Admin Console support for AEM instances and Adobe Identity Management System (IMS for short) based authentication.
 * The Admin Console allows administrators to centrally manage all Experience Cloud users.
 * Users and Groups can be assigned to product profiles associated with AEM as a Cloud Service instances, allowing them to log in to that instance.
+
+>[!TIP]
+>
+>See our Experience League course [Configure Access to AEM for Administrators](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) for an introduction to how users authenticate using Adobe IMS to AEM as a Cloud Service and how Adobe IMS Users, User Groups, and Product Profiles are used to control access to AEM and its features and functionalities. Adobe ID required.
 
 ## Key Highlights {#key-highlights}
 
@@ -118,15 +122,15 @@ Below are the key OSGI configurations that need to be modified in order to chang
 
 ### Managing Products and User Access in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-When the Product Administrator logs in to Admin Console, they will see multiple instances of the AEM Managed Services Product Context as shown below:
+When the Product Administrator logs in to Admin Console, they will see multiple instances of the AEM as a Cloud Service Product Context, as shown below. For example, select any of the the products from the **Overview** page:
 
 ![Instances login](/help/security/assets/ims6.png)
 
-In this example, the org **AEM-MS-Onboard** has 32 instances spanning different topologies and environments like Stage or Prod.
+You will see a list of existing instances:
 
 ![Instances login2](/help/security/assets/ims7.png)
 
-Under each Product Context instance, there will be associated Product Profiles. These product profiles are used for assigning access to Users and Groups with the required privilege.
+Under each Product Context instance, there will be instances spanning Author or Publish services across Production, Stage, or Development environments. Each instance will be associated to Product Profiles or Cloud Manager roles. These product profiles are used for assigning access to Users and Groups with the required privileges.
 
 The **Administrator_xxx** profile will be used to grant Administrator privileges in the associated AEM instance while the **User_xxx** profile is used to add regular users.
 
@@ -196,7 +200,7 @@ As shown below, the group **AEM-GRP_008** inherits the permissions and privilege
 
 To be able to access Cloud Manager or to AEM as a Cloud Service environments, you must be assigned to Profiles of the Cloud Manager Product.
 
-Refer to [Role Definitions](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) to learn more about roles for users which govern the availability of specific features in Cloud Manager.
+Refer to Role Definitions to learn more about roles for users which govern the availability of specific features in Cloud Manager.
 
 >[!NOTE]
 >Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
@@ -233,5 +237,4 @@ To get access to AEM instances the user will need to be added to a group of the 
 
 Every author instance will have an AEM Administrators and AEM Users Profile and every publish instance will have an AEM Users Profile. You can add other profiles as needed. 
 
-To get admin level access to the AEM instance, add the user to the AEM Administrators Profile for that particular Product.  
-
+To get admin level access to the AEM instance, add the user to the AEM Administrators Profile for that particular Product.

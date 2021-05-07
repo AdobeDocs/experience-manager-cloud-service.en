@@ -1,8 +1,8 @@
 ---
 title: Customizing and Extending Content Fragments
 description: A content fragment extends a standard asset.
+exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 ---
-
 # Customizing and Extending Content Fragments{#customizing-and-extending-content-fragments}
 
 Within Adobe Experience Manager as a Cloud Service a content fragment extends a standard asset; see:
@@ -287,7 +287,7 @@ An editing session is started when the user opens a content fragment in the edit
 Technically, all edits are done on *live* content, just as with all other AEM editing. When the editing session is started, a version of the current, unedited status is created. If a user cancels an edit, that version is restored. If the user clicks on **Save**, nothing specific is done, as all the editing was executed on *live* content, therefore all changes are persisted already. Also, clicking on **Save** will trigger some background processing (such as creating full text search information and/or handling mixed-media assets).
 
 There are some safety measures for edge cases; for example, if the user tries to leave the editor without saving or cancelling the editing session. Also, a periodic auto save is available to prevent data loss.
-Note that two users may edit the same content fragment concurrently, and therefore may overwrite each others changes. To prevent this, the content fragment needs to be locked by applying the DAM adminstration's *Checkout* action on the fragment.
+Note that two users may edit the same content fragment concurrently, and therefore may overwrite each other's changes. To prevent this, the content fragment needs to be locked by applying the DAM administration's *Checkout* action on the fragment.
 
 ## Examples {#examples}
 
@@ -325,7 +325,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Example: Specifying the auto-save interval {#example-specifying-the-auto-save-interval}
 
-The [auto save interval](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
+The [auto save interval](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
 
 * Node: `<conf-root>/settings/dam/cfm/jcr:content`
 * Property Name: `autoSaveInterval`

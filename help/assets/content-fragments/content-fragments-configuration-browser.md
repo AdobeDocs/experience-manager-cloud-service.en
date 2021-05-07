@@ -1,9 +1,13 @@
 ---
 title: Content Fragments - Configuration Browser
-description: Learn how to enable certain Content Fragment functionality in the Configuration Browser.
+description: Learn how to enable certain Content Fragment functionality in the Configuration Browser in order to leverage AEM's powerful headless delivery features.
+feature: Content Fragments
+role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 ---
-
 # Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
+
+Learn how to enable certain Content Fragment functionality in the Configuration Browser in order to leverage AEM's powerful headless delivery features.
 
 ## Enable Content Fragment Functionality for your Instance {#enable-content-fragment-functionality-instance}
 
@@ -14,7 +18,10 @@ Before using Content Fragments you need to use the **Configuration Browser** to 
 
 >[!CAUTION]
 >
->If do you not enable **Content Fragment Models** the **Create** option will not be available for creating new models.
+>If you do not enable **Content Fragment Models**:
+>
+>* the **Create** option will not be available for creating new models.
+>* you will not be able to [select the tenant to create the related end-point](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 To enable content fragment functionality you need to:
 

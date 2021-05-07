@@ -1,8 +1,9 @@
 ---
 title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service 
+feature: Dispatcher
+exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 ---
-
 # Introduction {#intro}
 
 Traffic passes through the CDN to an apache web server layer, which supports modules including the dispatcher. In order to increase performance, the dispatcher is used primarily as a cache to limit processing on the publish nodes.
@@ -123,8 +124,8 @@ Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatc
 1. Invoke the replication agent, specifying the publish dispatcher flush agent
 2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 
-The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service . 
-Instead, the replication flush agent should be used. This can be done using the Replication API. The Replication API documentation is available [here](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents. The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
+The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service .
+Instead, the replication flush agent should be used. This can be done using the Replication API. The Replication API documentation is available [here](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents. The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
 The diagram presented below illustrates this.
 

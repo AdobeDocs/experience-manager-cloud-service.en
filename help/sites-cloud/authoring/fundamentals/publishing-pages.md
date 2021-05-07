@@ -1,8 +1,8 @@
 ---
 title: Publishing Pages
 description: How to publish and unpublish pages using AEM
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 ---
-
 # Publishing Pages {#publishing-pages}
 
 Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-cloud/authoring/getting-started/concepts.md) (your publish environment).

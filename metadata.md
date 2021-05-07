@@ -1,15 +1,13 @@
 ---
 product: adobe experience manager
-description: this is the metadata required for AEMaaCS documentation pages
+description: Adobe Experience Manager as a Cloud Service documentation.
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
 type: Documentation
-solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
-getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
-tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
+solution: Experience Manager
+version: Cloud Service
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
+cloud: Experience Cloud
 ---
 
 # Metadata for internal use

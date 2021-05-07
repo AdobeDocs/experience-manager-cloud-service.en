@@ -1,8 +1,8 @@
 ---
 title: AEM Technical Foundations
 description: An overview of the technical foundations of AEM including how AEM is structured and fundamental technologies like JCR, Sling, and OSGi.
+exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 ---
-
 # AEM Technical Foundations {#aem-technical-foundations}
 
 AEM is a robust platform built upon proven, scalable, and flexible technologies. This document give a detailed overview of the various parts that make up AEM and is intended as a technical appendix for a full-stack AEM developer. It is not intended as a getting-started guide. If you are new to AEM development, please consult the [Getting Started Developing AEM Sites - WKND Tutorial](develop-wknd-tutorial.md) as a first step.

@@ -2,17 +2,19 @@
 title: Share assets, folders, and collections as a link
 description: This article describes how to share assets, folders, and collections within [!DNL Experience Manager Assets] as a hyperlink.
 contentOwner: AG
+feature: Asset Management,Collaboration,Asset Distribution
+role: Business Practitioner,Administrator
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 ---
-
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
 * Share as a link.
-* Download assets and share separately.
-* Share via AEM desktop app.
-* Share via Adobe Asset Link.
-* (Upcoming functionality) Share using Brand Portal.
+* [Download assets](/help/assets/download-assets-from-aem.md) and share separately.
+* Share using [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* Share using [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+* Share using [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Share assets as a link {#sharelink}
 

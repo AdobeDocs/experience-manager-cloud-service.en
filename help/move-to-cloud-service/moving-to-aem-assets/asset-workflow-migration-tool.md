@@ -1,8 +1,8 @@
 ---
 title: Asset Workflow Migration Tool
-description: Asset Workflow Migration Tool 
+description: Asset Workflow Migration Tool
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
 ---
-
 # Asset Workflow Migration Tool {#asset-workflow-migration}
 
 Asset Workflow Migration tool is used to automatically migrate asset processing workflows from on-premise or AMS deployments of AEM to processing profiles and OSGi Configurations for use in AEM Assets as a Cloud Service.

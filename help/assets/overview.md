@@ -2,8 +2,10 @@
 title: Introduction to Assets as a [!DNL Cloud Service]
 description: What's new in Assets as a [!DNL Cloud Service].
 contentOwner: AG
+feature: Asset Management
+role: Business Practitioner,Leader,Architect
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 ---
-
 # Introducing Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->

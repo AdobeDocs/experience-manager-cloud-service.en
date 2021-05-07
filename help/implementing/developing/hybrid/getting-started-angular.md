@@ -1,8 +1,8 @@
 ---
 title: Getting Started with SPAs in AEM Using Angular
 description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
+exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 ---
-
 # Getting Started with SPAs in AEM Using Angular {#getting-started-with-spas-in-aem-using-angular}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.

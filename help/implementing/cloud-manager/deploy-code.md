@@ -1,8 +1,8 @@
 ---
 title: Deploy your Code - Cloud Services
 description: Deploy your Code - Cloud Services
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 ---
-
 # Deploying your Code {#deploy-your-code} 
 
 ## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
@@ -44,15 +44,20 @@ Once you have configured your Production Pipeline (repository, environment, and 
 
    The **Stage testing**, involves the following steps:
 
-    * Product Functional Testing: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. 
+    * **Product Functional Testing**: Cloud Manager pipeline executions will support execution of tests that run against the stage environment. 
        Refer to [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
 
-   * Custom Functional Testing: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default.  
+   * **Custom Functional Testing**: This step in the pipeline is always present and cannot be skipped. However, if no test JAR is produced by the build, the test passes by default.  
       Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
+   * **Custom UI Testing**: This step is an optional feature that enables our customers to create and automatically run UI tests for their applications. UI tests are Selenium-based tests packaged in a Docker image in order to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium).
+      Refer to [Custom UI Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) for more details.
 
-   * Experience Audit: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
+
+   * **Experience Audit**: This step in the pipeline is always present and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks. The pages that are configured will be submitted to the service and evaluated. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment. 
       Refer to [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+
+      ![](assets/stage-testing.png)
 
 
 ## Deployment Process {#deployment-process}
@@ -112,5 +117,3 @@ Production deployments generally follow the same steps as above, but in a rollin
 1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2, flush dispatcher cache.
 1. Put dispatcher2 back into the load balancer.
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
-
-
