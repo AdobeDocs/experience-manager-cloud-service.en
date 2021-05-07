@@ -5,6 +5,11 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 ---
 # Code Quality Testing {#code-quality-testing}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Code Quality Testing"
+>abstract="The Code Quality Testing evaluates the quality of your application code. It is the core objective of a Code-Quality only pipeline  and is executed immediately following the build step in all non-production and production pipelines."
+
 The Code Quality Testing evaluates the quality of your application code. It is the core objective of a Code-Quality only pipeline  and is executed immediately following the build step in all non-production and production pipelines. 
 
 Refer to [Configuring your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) to learn more about different types of pipelines.
