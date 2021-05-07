@@ -5,6 +5,10 @@ description: Custom Code Quality Rules - Cloud Services
 
 # Custom Code Quality Rules {#custom-code-quality-rules} 
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_customcodequalityrules"
+>title="Custom Code Quality Rules"
+>abstract="This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering."
 
 This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
