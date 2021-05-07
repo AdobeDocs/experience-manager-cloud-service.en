@@ -5,6 +5,11 @@ description: UI Testing - Cloud Services
 
 # UI Testing {#ui-testing}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_uitesting"
+>title="UI Testing"
+>abstract="UI tests are Selenium-based tests packaged in a Docker image in order to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium). The Docker image can be created with standard tooling, but it must respect certain conventions during its execution. When running the Docker image, a Selenium server is automatically provisioned. The runtime conventions described below allow your test code to access both the Selenium server and the AEM instances under test."
+
 UI tests are Selenium-based tests packaged in a Docker image in order to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium). The Docker image can be created with standard tooling, but it must respect certain conventions during its execution. When running the Docker image, a Selenium server is automatically provisioned. The runtime conventions described below allow your test code to access both the Selenium server and the AEM instances under test.
 
 >[!NOTE]
