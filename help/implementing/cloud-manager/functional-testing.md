@@ -5,7 +5,14 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 ---
 # Functional Testing {#functional-testing}
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_functionaltesting"
+>title="Functional Testing"
+>abstract="Functional testing is categorized into three types:Product Functional Testing,Custom Functional Testing,Custom UI Testing"
+
 Functional testing is categorized into three types:
+
 
 * Product Functional Testing
 * Custom Functional Testing
