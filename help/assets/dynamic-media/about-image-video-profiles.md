@@ -36,7 +36,7 @@ For example, suppose you created a Dynamic Media Image Profile and assigned it t
 
 You can run the reprocess workflow on an asset for which processing failed the first time. Even if you have not edited an Image Profile or Video profile, or you have already applied an Image Profile or Video Profile, you can still run the reprocess workflow on a folder of assets anytime.
 
-You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on AEM. If the batch size is large, you can experience a delay in processing. Or, if the batch size is too small, it can cause too many roundtrips to the Dynamic Media server.
+You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on Adobe Experience Manager. If the batch size is large, you can experience a delay in processing. Or, if the batch size is too small, it can cause too many roundtrips to the Dynamic Media server.
 
 See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
@@ -52,8 +52,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**To reprocess Dynamic Media assets in a folder**:
-1. In Adobe Experience Manager, from the Assets page, navigate to a folder of Dynamic Media assets that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
+**To reprocess Dynamic Media assets in a folder:**
+1. In Experience Manager, from the Assets page, navigate to an assets folder that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow.
 
     Folders that have an Image Profile or Video Profile assigned to it have the profile's name appear directly below the folder name in Card View. 
 
@@ -80,7 +80,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Adjusting the batch size of the reprocess workflow {#adjusting-load}
 
-(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you have many files in a single reprocessing job. So, the processing banner stays on Experience Manager assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several hundred, but never more than a 1000. If the average file size is large&ndash;hundreds of megabytes&ndash;Adobe recommends that you lower the batch size up to 10.
+(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you have many files in a single reprocessing job. So, the processing banner stays on Experience Manager assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several 100, but never more than a 1000. If the average file size is hundreds of megabytes, Adobe recommends that you lower the batch size up to 10.
 
 **To optionally adjust the batch size of the reprocess workflow**:
 
