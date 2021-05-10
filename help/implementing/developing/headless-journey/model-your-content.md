@@ -207,17 +207,21 @@ Two data types provide references to content outside a specific fragment:
 
 ### Creating Content Fragment Models {#creating-content-fragment-models}
 
-Firstly Content Fragment Models are enabled for your site, this is done in the Configuration Browser:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
 
 ![Define configuration](assets/cfm-configuration.png)
 
-Then the Content Fragments Models can be modeled:
+>[!NOTE]
+>
+>See Additional Resources - Content Fragments in the Configuration Browser
+
+Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models. For example:
 
 ![Content Fragment Model](assets/cfm-model.png)
 
 >[!NOTE]
 >
->See Working with Content Fragments.
+>See Additional Resources - Content Fragment Models.
 
 ## Using the Model to Author Content with Content Fragments {#use-content-to-author-content}
 
@@ -225,7 +229,9 @@ Content Fragments are always based on a Content Fragment Model. The model provid
 
 ### Selecting the appropriate model {#select-model}
 
-The first step to actually creating your content is to create a Content Fragment. This is based on a specific Content Fragment Model, that you select as the first step of the creation process.
+The first step to actually creating your content is to create a Content Fragment. This is done using Create -> Content Fragment in the required folder under Assets -> Files. The wizard will guide you through the steps.
+
+A Content Fragment is based on a specific Content Fragment Model, that you select as the first step of the creation process.
 
 ### Creating, and editing, structured content {#create-edit-structured-content}
 
@@ -247,7 +253,7 @@ After selecting the appropriate model, a Content Fragment is opened for editing 
 
 >[!NOTE]
 >
->See Working with Content Fragments.
+>See Additional Resources - Working with Content Fragments.
 
 ## Getting Started with some Examples {#getting-started-examples}
 
