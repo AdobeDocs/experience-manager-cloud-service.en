@@ -232,6 +232,14 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ## Actually Using the AEM GraphQL API {#actually-using-aem-graphiql}
 
+Before starting with queries on your content you need to:
+
+* Enable your endpoint
+  * Use Tools -> Sites -> GraphQL
+  
+* Install GraphiQL (if required)
+  * Installed as a dedicated package
+
 To actually use the AEM GraphQL API in a query, we can use the two very basic Content Fragment Model structures:
 
 * Company
@@ -339,6 +347,8 @@ Now that you have learned how to access and query your headless content using th
   * [GraphQL Java libraries](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) 
 * [Learning to use GraphQL with AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
+  * [Enabling your GraphQL Endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+  * [Installing the AEM GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   * [Sample Query - A Single Specific City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
