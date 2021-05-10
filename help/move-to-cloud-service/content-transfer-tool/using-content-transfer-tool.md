@@ -46,6 +46,7 @@ Follow the section below to understand the important considerations while runnin
 
 * The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process. Please also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
 
+* When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This is to ensure integrity of index data. Failure to configure it this way may result in failed extractions due to lack of integrity of this index data.
 
 ## Availability {#availability}
 
