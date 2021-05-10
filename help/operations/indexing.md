@@ -43,6 +43,10 @@ For both points 1 and 2 above, you need to create a new index definition as part
 
 ### Preparing the New Index Definition {#preparing-the-new-index-definition}
 
+>[!NOTE]
+>
+>If customizing an out of the box index, for example `damAssetLucene-6`, please copy the latest out of the box index definition from a *Cloud Service environment* and add your customizations on top, this ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is a required node and should be part of your customized index as well and it doesn't exist on the Cloud SDK.
+
 You need to prepare a new index definition package that contains the actual index definition, following this naming pattern:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
