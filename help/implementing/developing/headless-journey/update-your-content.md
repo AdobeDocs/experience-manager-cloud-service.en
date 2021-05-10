@@ -48,17 +48,16 @@ The Assets REST API is available on each out-of-the-box install of a recent Adob
 
 ## Assets HTTP API {#assets-http-api}
 
-The [Assets HTTP API](/help/assets/mac-api-assets.md) encompasses the:
+The Assets HTTP API encompasses the:
 
 * Assets REST API
 * including support for Content Fragments
 
-The current implementation of the Assets HTTP API is based on the **REST** architectural style.
-
-The Assets REST API allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, via **CRUD** operations (Create, Read, Update, Delete).
+The current implementation of the Assets HTTP API is based on the **REST** architectural style and enables you to access content (stored in AEM) via **CRUD** operations (Create, Read, Update, Delete).
 
 With these operation the API allows you to operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses. For example, Single Page Applications (SPA), framework-based or custom, require content provided over an API, often in JSON format.
 
+<!--
 >[!NOTE]
 >
 >It is not possible to customize JSON output from the Assets REST API. 
@@ -178,14 +177,15 @@ If an asset is requested, the response will return its metadata; such as title, 
 The binary data of an asset is exposed as a SIREN link of type `content`.
 
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
+-->
 
-### Content Fragments {#content-fragments}
+## Assets HTTP API and Content Fragments {#assets-http-api-content-fragments}
 
-A Content Fragment is a special type of asset. They can be used to access structured data, such as texts, numbers, dates, amongst others.
+Content Fragments are used for headless delivery, and a Content Fragment is a special type of asset. They are used to access structured data, such as texts, numbers, dates, amongst others.
 
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
-#### Representation {#representation}
+### Representation {#representation}
 
 Content fragments:
 
@@ -194,21 +194,53 @@ Content fragments:
 
 * Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
-#### Content Models and Content Fragments {#content-models-and-content-fragments}
+### Content Models and Content Fragments {#content-models-and-content-fragments}
 
 Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
 To create a new content fragment, the (internal repository) path of the model has to be provided.
 
-#### Associated Content {#associated-content}
+### Associated Content {#associated-content}
 
 Associated content is currently not exposed.
 
 ## Using the Assets REST API {#using-aem-assets-rest-api}
 
+### Access {#access}
+
+The Assets REST API uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`). 
+
+* This means that to access the asset at:
+  * `/content/dam/path/to/asset`
+* You need to request:
+  * `/api/assets/path/to/asset` 
+
+For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
+
+>[!NOTE]
+>Access over:
+>
+>* `/api/assets` **does not** need the use of the `.model` selector.
+>* `/content/path/to/page` **does** require the use of the `.model` selector.
+
+### Operation {#operation}
+
+The HTTP method determines the operation to be executed:
+
+* **GET** - to retrieve a JSON representation of an asset or a folder
+* **POST** - to create new assets or folders
+* **PUT** - to update the properties of an asset or folder
+* **DELETE** - to delete an asset or folder
+
+>[!NOTE]
+>
+>The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
+
+The exact format of supported requests is defined in the API Reference documentation. 
+
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
-* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* It is strongly recommended that creation is bound to an author instance (and currently there is no means to replicate a fragment to publish using this API).
 * Delivery is possible from both, as AEM serves requested content in JSON format only.
 
   * Storage and delivery from an AEM author instance should suffice for behind-the-firewall, media library applications.
@@ -221,7 +253,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html). 
+>For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html). 
 
 ### Read/Delivery {#read-delivery}
 
@@ -290,6 +322,7 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
+* [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
 * [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
