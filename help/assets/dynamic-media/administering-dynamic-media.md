@@ -7,7 +7,7 @@ exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 ---
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) helps you manage assets by delivering rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps you manage assets by delivering rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -35,4 +35,4 @@ See also the following topics:
 >
 >**If you are upgrading:**
 >
->* After you have Experience Manager up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of Experience Manager and new to Dynamic Media, you likely must reprocess your assets to make them Dynamic Media-enabled. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* After you have Adobe Experience Manager up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of Experience Manager and new to Dynamic Media, you likely must reprocess your assets to make them Dynamic Media-enabled. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
