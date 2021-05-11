@@ -43,6 +43,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively acce
 >
 >AEM GraphQL API is a customized implementation, based on the standard GraphQL API specification.
 
+<!--
 ## GraphQL - An Introduction {#graphql-introduction}
 
 GraphQL is an open-source specification that provides:
@@ -203,10 +204,6 @@ When this happens, AEM generates an *incomplete* Schema for the parent Content F
 
 ## AEM GraphQL Endpoints {#aem-graphql-endpoints}
 
-<!--
-need details/examples
--->
-
 An endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
 
 * access the GraphQL schemas,
@@ -216,7 +213,7 @@ An endpoint is the path used to access GraphQL for AEM. Using this path you (or 
 AEM allows for:
 
 * A global endpoint - available for use by all sites.
-* Tenant endpoints - that you can configure, specific to a specified site/project.
+* Endpoints for specific Sites configurations - that you can configure (in the Configuration Browser), specific to a specified site/project.
 
 ## Permissions {#permissions}
 
@@ -226,11 +223,18 @@ The permissions are those required for accessing Assets.
 
 To help you directly input, and test queries, an implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
 
+>[!NOTE]
+>
+>GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
+
 It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
+-->
 
 ## Actually Using the AEM GraphQL API {#actually-using-aem-graphiql}
+
+### Initial Setup {#initial-setup}
 
 Before starting with queries on your content you need to:
 
@@ -239,6 +243,8 @@ Before starting with queries on your content you need to:
   
 * Install GraphiQL (if required)
   * Installed as a dedicated package
+
+### Sample Structure {#sample-structure}
 
 To actually use the AEM GraphQL API in a query, we can use the two very basic Content Fragment Model structures:
 
@@ -257,9 +263,13 @@ The fragment models will be used:
 * when creating the content in the Content Fragment Editor
 * to generate the GraphQL schemas that you will query
 
+### Where to Test Your Queries {#where-to-test-your-queries}
+
 The queries can be entered in the GraphiQL interface, for example at:
 
 * `http://localhost:4502/content/graphiql.html `
+
+### Getting Started with Queries {#getting-Started-with-queries}
 
 A straightforward query is to return the name of all entries in the Company schema. Here you request a list of all company names:
 
