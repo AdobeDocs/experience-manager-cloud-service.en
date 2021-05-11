@@ -183,6 +183,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 Content Fragments are used for headless delivery, and a Content Fragment is a special type of asset. They are used to access structured data, such as texts, numbers, dates, amongst others.
 
+<!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
 ### Representation {#representation}
@@ -203,6 +204,7 @@ To create a new content fragment, the (internal repository) path of the model ha
 ### Associated Content {#associated-content}
 
 Associated content is currently not exposed.
+-->
 
 ## Using the Assets REST API {#using-aem-assets-rest-api}
 
