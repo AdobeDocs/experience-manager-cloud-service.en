@@ -10,15 +10,13 @@ Adobe is excited to announce the availability of HTTP/2 delivery of content. Whe
 
 >[!NOTE]
 >
->This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
+>This feature requires that you use the out-of-the-box Content Delivery Network that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom Content Delivery Network is not supported with this feature.
 
 ## What is HTTP/2? {#what-is-http}
 
 HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of processing power that is needed.
 
-The following website describes HTTP/2 and its benefits in a brief and simple manner:
-
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+The website article [What you must know about HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) describes HTTP/2 and its benefits in a brief and simple manner.
 
 ## What are the key benefits of moving to HTTP/2 for content delivery? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
