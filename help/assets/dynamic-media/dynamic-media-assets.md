@@ -5,11 +5,11 @@ description: Dynamic Media helps deliver rich visual merchandising and marketing
 
 # Working with Dynamic Media{#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
 Dynamic Media serves interactive viewing experiences, including zoom, 360-degree spin, and video. Dynamic Media uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
 
-Working with Dynamic Media is not available in the classic UI. See [Working with Dynamic Media,](/help/assets/dynamic-media/dynamic-media.md) which covers the touch-enabled user interface.
+Working with Dynamic Media is not available in the classic user interface. See [Working with Dynamic Media,](/help/assets/dynamic-media/dynamic-media.md) which covers the touch-enabled user interface.
 
 <!-- 
 
