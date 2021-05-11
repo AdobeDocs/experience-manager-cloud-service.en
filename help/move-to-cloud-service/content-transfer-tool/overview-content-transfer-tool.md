@@ -50,6 +50,7 @@ In the ingestion phase, to apply the delta content on top of the current content
 
 ## Guidelines and Best Practices {#best-practices}
 
+>[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."

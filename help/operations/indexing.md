@@ -51,6 +51,12 @@ which then needs to go under `ui.apps/src/main/content/jcr_root`. Sub root folde
 
 The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
+>[!NOTE]
+>
+>Any content package containing index definitions should have the following property set in in the properties file of the content package, located at `/META-INF/vault/properties.xml`:
+>
+>`noIntermediateSaves=true`
+
 ### Deploying Index Definitions {#deploying-index-definitions}
 
 >[!NOTE]

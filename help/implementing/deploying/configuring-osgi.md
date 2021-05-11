@@ -212,6 +212,10 @@ Variables names must follow the following rules:
 
 Values for the variables must not exceed 2048 characters.
 
+>[!NOTE]
+>
+>Variable names prefixed with `INTERNAL_` are reserved by Adobe. Any customer set variables that start with this prefix will be ignored.
+
 ### Default Values {#default-values}
 
 The following applies to both environment specific and secret configuration values.
@@ -245,7 +249,10 @@ For example if `$[secret:server_password]` is used, a text file named **server_p
 If an OSGI property requires different values for author versus publish:
 
 * Separate `config.author` and `config.publish` OSGi folders must be used, as described in the [Runmode Resolution section](#runmode-resolution).
-* Independent variable names should be used. It is recommended to use a prefix such as `author_<variablename>` and `publish_<variablename>` where the variable names are the same
+* There are two options of creating the independent variable names that should be used:
+  * the first option, which is recommended: in all OSGI folders (like `config.author` and `config.publish`) declared to define different values, use the same variable name. For example
+  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). The "service" parameter will bind the variable's value to the appropriate OSGI tier.
+  * the second option, which is to declare distinct variables using a prefix such as `author_<samevariablename>` and `publish_<samevariablename>`
 
 ### Configuration Examples {#configuration-examples}
 

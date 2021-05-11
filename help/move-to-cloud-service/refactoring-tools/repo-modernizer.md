@@ -15,7 +15,7 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 
 * `ui.apps` package deploys to `/apps` and contains all the code
 
-* `ui.content` package deployes to runtime-writable areas (e.g. `/content`, `/conf`, `/home`, or anything  not `/apps`) and contains all the content and configuration.
+* `ui.content` package deploys to runtime-writable areas (e.g. `/content`, `/conf`, `/home`, or anything  not `/apps`) and contains all the content and configuration.
 
 * `all` package is a container package that contains the sub-packages `ui.apps` and `ui.content`.
 
@@ -23,6 +23,8 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 >The Project structure is based on *Archetype 24* for packages and their `pom.xml/filter.xml files`. Refer to [Archetype 24](https://github.com/adobe/aem-project-archetype) for more details.
 
 ## Using the Repository Modernizer {#using-repo-modernizer}
+
+>[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
 * Via Adobe I/O CLI : It is recommended to use the Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin for the Adobe I/O CLI).
 
