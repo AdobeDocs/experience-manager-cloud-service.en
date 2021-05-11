@@ -223,7 +223,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.4.0 is April 0
 
 The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
 
-### What's New {#what-is-new-may}
+### What's New {#what-is-new-ctt-may}
 
 * This version of the Content Transfer Tool creates text renditions for assets being migrated to Cloud Service. Text renditions are required to support full text search on ingested assets.
 * The maximum number of Content Transfer Tool migration sets a user can create has been increased from 4 to 10. 
