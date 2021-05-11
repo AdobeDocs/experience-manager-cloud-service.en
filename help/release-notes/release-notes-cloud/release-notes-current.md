@@ -66,6 +66,8 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * When browsing assets in Column view, a visual indicator displays for expired assets.
 
+* A text area data type is made available in [!DNL Assets] metadata editor. You can use this option to let your users input metadata in a free-form text field.
+
 ### Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
 * When attempting to move multiple assets or folders, an error is logged in the console and the move operation is not completed. Move operation fails if the title cannot be updated. (CQ-4322080)
