@@ -31,7 +31,7 @@ Sandbox Programs have the following attributes:
 1. **AEM Updates:** AEM updates can be applied manually to environments in a Sandbox program, and are not automatically pushed.
    Refer to [AEM Updates to Sandbox Environments](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) for more details.
 
-1. **Hibernation:** Environments in a Sandbox program are automatically hibernated if no activity is detected for a certain period of time. Sandboxes are put into hibernation node after 8 hours of inactivity, after which, they can be de-hibernated. Hibernated environments can be manually de-hibernated.
+1. **Hibernation:** Environments in a Sandbox program are automatically hibernated if no activity is detected for a certain period of time. Sandboxes are put into hibernation node after 8 hours of inactivity, after which time, they can be de-hibernated. Hibernated environments can be manually de-hibernated.
    Refer to [Hibernating and De-hibernating Sandbox Environments](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) for more details.
 
-1. **Deletion**: Sandboxes are deleted after 6 months of being in continuous hibernation mode, after which, they can be recreated.
+1. **Deletion**: Sandboxes are deleted after 6 months of being in continuous hibernation mode, after which time, they can be recreated.
