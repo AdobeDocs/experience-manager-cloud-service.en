@@ -103,7 +103,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
 
 With this release, there is a new, guided user experience that helps set up smart tags training for sets of customer-specific tags and train them with assets, that should be recognized and tagged with them in the future. The experience is a more intuitive now.
-Train Enhanced Smart Tags for more an intuitive training for Smart Tags. See [how to add smart tags to assets](/help/assets/smart-tags.md) and [configure smart tagging](/help/assets/smart-tags-configuration.md).
+Train Enhanced Smart Tags for more an intuitive training for Smart Tags. See [how to add smart tags to assets](/help/assets/smart-tags.md).
 
 **Support for ingestion, preview, and delivery of 3D content**
 
