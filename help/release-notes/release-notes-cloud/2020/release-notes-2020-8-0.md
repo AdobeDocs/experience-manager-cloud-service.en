@@ -23,7 +23,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Video transcoding is now supported with asset microservices. A new section in the [!UICONTROL Processing Profiles] configuration lets you set video bit rate and dimensions. The output format is MP4 with H.264 codec. For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). For more transcoding options and for video delivery, use [!DNL Dynamic Media] add-on.
 
-* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
+* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators configure smart tags integration as before.
 
 * A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
 
