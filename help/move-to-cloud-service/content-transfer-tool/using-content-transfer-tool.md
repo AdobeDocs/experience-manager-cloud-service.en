@@ -106,7 +106,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Cloud Service Configuration**: Enter the destination AEM as a Cloud Service Author URL.
 
       >[!NOTE]
-      >You can create and maintain a maximum of four migration sets at a time during the content transfer activity.
+      >You can create and maintain a maximum of ten migration sets at a time during the content transfer activity.
       >Additionally, you have to create a migration separately for each of the specific environments - *Stage*, *Development*, or *Production*.
 
    1. **Access Token**: Enter the access token.
