@@ -32,10 +32,11 @@ There are two phases associated with content transfer:
   
 A *migration set* has the following attributes:
 
-* A maximum of four migration sets can be created and maintained at a time during the content transfer activity.
+* A maximum of ten migration sets can be created and maintained at a time during the content transfer activity. 
 * Each migration set should have a unique name. 
 * If a migration set has been inactive for more than 30 days, it will be automatically deleted.
 * Whenever you create a migration set, it is associated with a specific environment. You can only ingest into an author or a publish instance of the same environment.
+
 
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity. 
 
