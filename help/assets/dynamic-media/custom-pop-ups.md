@@ -1,11 +1,11 @@
 ---
 title: Using Quick views to create custom pop-ups
-description: "Learn about how the default Quick view is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up windows."
+description: "Learn about how the default Quick view is used in ecommerce experiences whereby a pop-up window is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-up Windows®."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 ---
-# Using Quick views to create custom pop-up windows {#using-quickviews-to-create-custom-pop-ups}
+# Using Quick views to create custom pop-up Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 The default Quick view is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer that you use, customers can tap a hotspot, a thumbnail image, or an image map to see information or related content.
 
@@ -17,7 +17,7 @@ Quick views are supported by the following viewers in Dynamic Media:
 
 While the functionality of each viewer differs, the process of creating a Quick view is the same across all three supported viewers.
 
-**To use Quick views to create custom pop-up windows**
+**To use Quick views to create custom pop-up Windows®:**
 
 1. Create a Quick view for an uploaded asset.
 
@@ -95,8 +95,8 @@ While the functionality of each viewer differs, the process of creating a Quick 
 
    Learn more about `setHandlers()` method at the following:
 
-    * Interactive Image viewer: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-    * Interactive Video viewer: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+    * Interactive Image viewer - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+    * Interactive Video viewer - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Now configure the `quickViewActivate` handler.
 
