@@ -33,15 +33,15 @@ You can tag the following types of assets:
 | image/tiff | DOC | MKV (H264/AVC) |
 | image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
 | image/bmp | HTML | AVI (indeo4) |
-| image/gif | JSON | FLV (H264/AVC, vp6f) |
-| image/pjpeg | PDF | WMV (WMV2) |
-| image/x-portable-anymap | PPT |  |
-| image/x-portable-bitmap | PPTX |  |
-| image/x-portable-graymap | RTF |  |
-| image/x-portable-pixmap | SRT |  |
-| image/x-rgb | TXT |  |
-| image/x-xbitmap | VTT |  |
-| image/x-xpixmap | XML |  |
+| image/gif | PDF | FLV (H264/AVC, vp6f) |
+| image/pjpeg | PPT | WMV (WMV2) |
+| image/x-portable-anymap | PPTX |  |
+| image/x-portable-bitmap | RTF |  |
+| image/x-portable-graymap | SRT |  |
+| image/x-portable-pixmap | TXT |  |
+| image/x-rgb | VTT |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
