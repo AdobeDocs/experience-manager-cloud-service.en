@@ -114,8 +114,12 @@ Few key considerations related to hibernated and de-hibernated environments are:
 
 * AEM upgrades can be applied to hibernated environments, which customers can manually trigger from Cloud Manager. The environment will remain hibernated and the new release will appear in the environment once de-hibernated.
 
->[!NOTE]
->Currently, Cloud Manager does not indicate whether an environment is hibernated.
+* Sandboxes are put into hibernation node after 8 hours of inactivity, after which, they can be de-hibernated.
+
+* Sandboxes are deleted after 6 months of being in continuous hibernation mode, after which, they can be recreated.
+
+   >[!NOTE]
+   >Currently, Cloud Manager does not indicate whether an environment is hibernated.
 
 ## AEM Updates to Sandbox Environments {#aem-updates-sandbox}
 
