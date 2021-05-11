@@ -222,12 +222,14 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.4.0 is April 0
 The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
 
 ### What's New {#what-is-new-may}
-* This version of the CTT creates text renditions for assets being migrated to Cloud Service. Text renditions are required to support full text search on ingested assets.
-* The maximum number of CTT migration sets a user can create has been increased from 4 to 10. 
+
+* This version of the Content Transfer Tool creates text renditions for assets being migrated to Cloud Service. Text renditions are required to support full text search on ingested assets.
+* The maximum number of Content Transfer Tool migration sets a user can create has been increased from 4 to 10. 
 
 ### Bug Fixes {#bug-fixes-ctt-may}
-* Multiple bugs fixes related to the auto-refresh feature in the CTT UI.
-* CTT with wipe=true resulted in incorrect counter index on the target. This has been fixed.
+
+* Multiple bugs fixes related to the auto-refresh feature in the Content Transfer Tool UI.
+* Content Transfer Tool with `wipe=true` resulted in incorrect counter index on the target. This has been fixed.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
