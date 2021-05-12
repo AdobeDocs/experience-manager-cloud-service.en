@@ -316,11 +316,10 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 
 You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.
 
+[How to Create Single Page Applications (SPAs) with AEM](create-spa.md) will also show how you can create editable SPAs using AEM’s SPA Editor framework, as well as integrate external SPAs, enabling editing capabilities as required.
+
 ## Additional Resources {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [HATEOAS principle](https://en.wikipedia.org/wiki/HATEOAS)
-* [SIREN format](https://github.com/kevinswiber/siren)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
