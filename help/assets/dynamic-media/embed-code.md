@@ -9,7 +9,7 @@ exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 
 Use the **[!UICONTROL Embed Code]** feature when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed Code]** dialog box.
 
-You embed URLs only if you are _not_ using AEM as your WCM. If you are using AEM as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
+You embed URLs only if you are _not_ using Adobe Experience Manager as your WCM. If you are using Experience Manager as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
 
 See [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
@@ -25,7 +25,7 @@ See [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 >
 >See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
 
-**To embed the Dynamic Media Video or Image viewer on a web page**
+**To embed the Dynamic Media Video or Image viewer on a web page:**
 
 1. Navigate to the *published* video or image asset whose embed code you want to copy.
 
