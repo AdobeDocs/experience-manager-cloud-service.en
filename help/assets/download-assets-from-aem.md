@@ -61,7 +61,7 @@ To download assets, follow these steps:
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
-The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances.
+The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances. If you do not need the download feature on author instances, disable the servlet on author.
 
 To allow downloading assets from your DAM, say when using something like Asset Share Commons or other portal-like implementation, manually enable the servlet via an OSGi configuration. Adobe recommends setting the permissible download size as low as possible without affecting the day-to-day download requirements. A high value may impact performance.
 
@@ -79,7 +79,7 @@ To allow downloading assets from your DAM, say when using something like Asset S
 
 ## Disable asset download servlet {#disable-asset-download-servlet}
 
-The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
+If you do not need the download functionality, then disable the servlet to prevent any DoS-like risks. The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] author and publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
 
 1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
