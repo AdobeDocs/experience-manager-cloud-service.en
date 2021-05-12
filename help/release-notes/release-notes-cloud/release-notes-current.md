@@ -9,7 +9,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 The following section outlines the general Release Notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
->From here you can navigate to release notes of previous versions; for example, for those in 2020, 2021 and so on.
+>From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021 and so on.
 
 >[!NOTE]
 >
@@ -216,6 +216,22 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.4.0 is April 0
 * Issues for the `CloudServiceIncompatibleWorkflowProcess` had the incorrect severity in the downloadable issue CSV file. 
 
 * The `Runmode` check was producing false positives on non-folder nodes.
+
+## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
+
+### What's New {#what-is-new-ctt-may}
+
+* This version of the Content Transfer Tool creates text renditions for assets being migrated to Cloud Service. Text renditions are required to support full text search on ingested assets.
+* The maximum number of Content Transfer Tool migration sets a user can create has been increased from 4 to 10. 
+
+### Bug Fixes {#bug-fixes-ctt-may}
+
+* Multiple bug fixes related to the auto-refresh feature in the Content Transfer Tool UI.
+* Content Transfer Tool with `wipe=true` resulted in incorrect counter index on the target. This has been fixed.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
