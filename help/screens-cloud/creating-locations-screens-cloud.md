@@ -44,7 +44,6 @@ To edit/access the properties of a location:
 
 1. Click **Properties** from the action bar.
 
-
 ## What's Next {#whats-next}
 
 Now, that you have setup locations in your Screens project, you can:
