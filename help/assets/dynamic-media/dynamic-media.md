@@ -6,7 +6,7 @@ exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 ---
 # Working with Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
 Dynamic Media serves interactive viewing experiences, including zoom, 360-degree spin, and video. Dynamic Media uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
 
@@ -31,7 +31,7 @@ Dynamic Media-only features include the following:
 * [Video](video.md)
 * [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md)
 * [Managing Assets](managing-assets.md)
-* [Using Quick views to create custom pop-up windows](custom-pop-ups.md)
+* [Using Quick views to create custom pop-up Windows®](custom-pop-ups.md)
 
 See also [Setting up Dynamic Media](administering-dynamic-media.md).
 
@@ -74,7 +74,7 @@ Dynamic Media enabled assets include `pyramid.tiffs`.
 
 ### Asset views change {#asset-views-change}
 
-With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click/tap to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled looks like this:
+With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click/tap to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled appears like the following:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
