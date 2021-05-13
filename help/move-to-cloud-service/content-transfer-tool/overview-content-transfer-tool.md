@@ -76,4 +76,4 @@ Follow the section below to understand guidelines and best practices to use the 
      * *node store size*: segment store directory size or the MongoDB database size.
   Hence, for a segment store size of 20GB, the required free disk space would be 94GB.
   
-* A migration set needs to be maintained throughout the content transfer activity to support content top-ups. Since a maximum of ten migration sets can be created and maintained at a time during the content transfer activity, it is recommended to break up the content repository accordingly to ensure that you don't run out of migration sets.  during/structure their migration set accordingly.
+* A migration set needs to be maintained throughout the content transfer activity to support content top-ups. Since a maximum of ten migration sets can be created and maintained at a time during the content transfer activity, it is recommended to break up the content repository accordingly to ensure that you do not run out of migration sets.
