@@ -163,7 +163,7 @@ Many properties are self-explanatory, for certain properties additional details 
 * **Translatable**
   Checking the "Translatable" checkbox on a field in CF model editor will
 
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
+  * Ensure the field's property name is added in translation config, context `/content/dam/<sites-configuration>`, if not already present. 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
 
 * See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.

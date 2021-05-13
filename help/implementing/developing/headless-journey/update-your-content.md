@@ -183,6 +183,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 Content Fragments are used for headless delivery, and a Content Fragment is a special type of asset. They are used to access structured data, such as texts, numbers, dates, amongst others.
 
+<!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
 ### Representation {#representation}
@@ -203,6 +204,7 @@ To create a new content fragment, the (internal repository) path of the model ha
 ### Associated Content {#associated-content}
 
 Associated content is currently not exposed.
+-->
 
 ## Using the Assets REST API {#using-aem-assets-rest-api}
 
@@ -314,11 +316,10 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 
 You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.
 
+[How to Create Single Page Applications (SPAs) with AEM](create-spa.md) will also show how you can create editable SPAs using AEM’s SPA Editor framework, as well as integrate external SPAs, enabling editing capabilities as required.
+
 ## Additional Resources {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [HATEOAS principle](https://en.wikipedia.org/wiki/HATEOAS)
-* [SIREN format](https://github.com/kevinswiber/siren)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
