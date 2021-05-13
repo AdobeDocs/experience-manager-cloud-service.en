@@ -202,7 +202,3 @@ If an index is to be removed in a later version of the application, you can defi
 ```
 
 If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
-
-### Index Availability and Fault Tolerance {#index-availability-and-fault-tolerance}
-
-It is recommended to create duplicate indexes for features that are important (keeping in mind the naming convention for indexes mentioned above), so in the case of index corruption or any such unforeseen event there is a fallback index available to respond to queries.
