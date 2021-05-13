@@ -193,7 +193,8 @@ You should continue your AEM headless journey by next reviewing the document [Po
 
 ## Additional Resources {#additional-resources}
 
-* [Getting Started with AEM Headless Production Deployment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) 
-* [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Set Up A Local AEM Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [The AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Use Cloud Manager to Deploy Your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
