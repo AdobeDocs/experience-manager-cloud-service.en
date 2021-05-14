@@ -15,6 +15,6 @@ Each of the role  definitions described in the table below highlight the roles a
 |Persona Type|Who they are|
 |--- |--- |
 |**Content Author**|Defines user experience design (style, layout, branding) as per organizational requirements. Creates project structure and channels. Add content to channels. |
-|**Administrator** |Responsible for configuring the player and typically manage the entire deployment for an AEM Screens deployment. |
+|**Network Administrator** |Responsible for configuring the player and typically manage the entire deployment for an AEM Screens deployment. |
 |**Developer** |Responsible for performing development and integration tasks to develop the user experience, custom templates, and back-end integrations for AEM. Create a custom component for AEM Screens. |
 |**Business Executive - Digital** |Responsible for business unit’s product marketing strategy and revenues, main business stakeholders for digital use cases, solutions, and service offerings for the end-users, signs off on the use case implementation and delivery. |
