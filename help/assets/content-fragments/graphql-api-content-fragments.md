@@ -113,20 +113,20 @@ There are two types of endpoints in AEM:
 
 * Global
   * Available for use by all sites.
-  * This endpoint can use all Content Fragment Models from all tenants.
-  * If there are any Content Fragment Models that should be shared among tenants, then these should be created under the global tenant.
-* Tenant:
-  * Corresponds to a tenant configuration, as defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+  * This endpoint can use all Content Fragment Models from all Sites configurations (defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+  * If there are any Content Fragment Models that should be shared among Sites configurations, then these should be created under the global Sites configurations.
+* Sites configurations:
+  * Corresponds to a Sites configuration, as defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
   * Specific to a specified site/project.
-  * A tenant specific endpoint will use the Content Fragment Models from that specific tenant together with those from the global tenant.
+  * A Sites configuration specific endpoint will use the Content Fragment Models from that specific Sites configuration together with those from the global Sites configuration.
 
 >[!CAUTION]
 >
->The Content Fragment Editor can allow a Content Fragment of one tenant to reference a Content Fragment of another tenant (via polices). 
+>The Content Fragment Editor can allow a Content Fragment of one Sites configuration to reference a Content Fragment of another Sites configuration (via polices). 
 >
->In such a case not all content will be retrievable using a tenant specific endpoint. 
+>In such a case not all content will be retrievable using a Sites configuration specific endpoint. 
 >
->The content author should control this scenario; for example, it may be useful to consider putting shared Content Fragment Models under the Global tenant.
+>The content author should control this scenario; for example, it may be useful to consider putting shared Content Fragment Models under the Global Sites configuration.
 
 The repository path of the GraphQL for AEM global endpoint is:
 
@@ -187,6 +187,10 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 ## GraphiQL Interface {#graphiql-interface}
 
 An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is available for use with AEM GraphQL. This can be [installed with AEM](#installing-graphiql-interface). 
+
+>[!NOTE]
+>
+>GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
 
 This interface allows you to directly input, and test, queries.
 
@@ -578,21 +582,21 @@ After preparing a query with a POST request, it can be executed with a GET reque
 
 This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-Persisted queries must always use the endpoint related to the [appropriate (tenant) configuration](#graphql-aem-endpoint); so they can use either, or both:
+Persisted queries must always use the endpoint related to the [appropriate Sites configuration](#graphql-aem-endpoint); so they can use either, or both:
 
 * The Global configuration and endpoint
   The query has access to all Content Fragment Models.
-* Specific Tenant configuration(s) and endpoint(s)
-  Creating a persisted query for a specific tenant configuration requires a corresponding tenant-specific endpoint (to provide access to the related Content Fragment Models). 
-  For example, to create a persisted query specifically for the WKND tenant, a corresponding WKND-specific tenant configuration, and a WKND-specific endpoint must be created in advance.
+* Specific Sites configuration(s) and endpoint(s)
+  Creating a persisted query for a specific Sites configuration requires a corresponding Sites-configuration-specific endpoint (to provide access to the related Content Fragment Models). 
+  For example, to create a persisted query specifically for the WKND Sites configuration, a corresponding WKND-specific Sites configuration, and a WKND-specific endpoint must be created in advance.
 
 >[!NOTE]
 >
 >See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 >
->The **GraphQL Persistence Queries** need to be enabled, for the appropriate tenant configuration. 
+>The **GraphQL Persistence Queries** need to be enabled, for the appropriate Sites configuration. 
 
-For example, if there is a particular query called `my-query`, which uses a model `my-model` from the tenant configuration `my-conf`:
+For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
 
 * You can create a query using the `my-conf` specific endpoint, and then the query will be saved as following: 
 `/conf/my-conf/settings/graphql/persistentQueries/my-query`
