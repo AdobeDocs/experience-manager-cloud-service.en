@@ -134,9 +134,9 @@ We want you to build on this foundational knowledge to fully understand the powe
 
 ### Choose Your Own Adventure {#choose-your-path}
 
-No matter what your learning style, Adobe wants you to succeed in getting started with your AEM Headless project.
+No matter what your learning style, Adobe wants you to succeed as you get started with your AEM Headless project.
 
-* If you prefer to **continue to learn headless concepts and AEM's headless technologies**, you should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
+* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 
 ## Additional Resources {#additional-resources}
