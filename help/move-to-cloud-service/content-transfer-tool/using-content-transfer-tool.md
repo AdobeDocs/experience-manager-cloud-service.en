@@ -48,6 +48,8 @@ Follow the section below to understand the important considerations while runnin
 
 * When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
 
+* If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. Refer to [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) for more details.
+
 ## Availability {#availability}
 
 >[!CONTEXTUALHELP]
