@@ -32,7 +32,7 @@ Follow the section below to understand the important considerations while runnin
 
 * The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you will have to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
 
-* The Content Transfer Tool does not perform any kind of content analysis before transferring content from the source instance to the target instance. For e.g. CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed an the source Author instance to move content to the target Author instance and similarly install CTT on the source Publish instance to move content to the target Publish instance.
+* The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance and similarly, install CTT on the source Publish instance to move content to the target Publish instance.
 
 * The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The *Extraction* process copies the entire `/home` into the migration set and the *Ingestion* process copies all users and groups referenced in the migrated content ACLs. To automatically map the existing users and groups to their IMS IDs, please refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -114,7 +114,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
    1. **Access Token**: Enter the access token.
 
       >[!NOTE]
-      >You can retrieve the access token by using the **Open access token** button. You need to ensure that you belong to the AEM administrators group in the target Cloud Service instance.
+      >You can retrieve the access token by using the **Open access token** button. You need to ensure that you belong to the AEM administrators' group in the target Cloud Service instance.
 
    1. **Parameters**: Select the following parameters to create the migration set:
 
@@ -138,10 +138,10 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   All the the existing migration sets on this screen are displayed on the *Overview* page with their current status and status information. You may see some of these icons described below.
+   All the existing migration sets on this screen are displayed on the *Overview* page with their current status and status information. You may see some of these icons described below.
 
    * A *red cloud* indicates that you cannot complete the extraction process.
-   * A *green cloud* indicates that you can complete the complete the extraction process.
+   * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
 1. Select a migration set from overview page and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the container name or the service URL. 
