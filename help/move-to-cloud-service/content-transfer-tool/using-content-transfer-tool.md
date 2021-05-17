@@ -16,9 +16,9 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 
 Follow the section below to understand the important considerations while running the Content Transfer tool:
 
-* The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you will need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
+* The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
 
-* Java needs to be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
+* Java must be configured on the AEM environment, so that the `java` command can be executed by the user who starts AEM.
 
 * It is recommended to uninstall older versions of the Content Transfer Tool when installing the version 1.3.0 because there was a major architectural change in the tool. With 1.3.0, you should also create new migration sets and re-run extraction and ingestion on the new migration sets.
 
@@ -26,11 +26,11 @@ Follow the section below to understand the important considerations while runnin
 
 * If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. If you are using a *Production Environment*, it is automatically updated.
 
-* To use the Content Transfer Tool, you will need to be an admin user on your source instance and belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool. 
+* To use the Content Transfer Tool, you need to be an admin user on your source instance and belong to the local AEM **administrators** group in the Cloud Service instance you are transferring content to. Unprivileged users will not be able to retrieve the access token to use the Content Transfer Tool. 
 
-* If the setting **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. User will need to be re-added to the **administrators** group to retrieve the access token for CTT.   
+* If the setting **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group. User must need to be re-added to the **administrators** group to retrieve the access token for CTT.   
 
-* The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you will have to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
+* The access token can expire periodically either after a specific time period or after the Cloud Service environment has been upgraded. If access token has expired, you will not be able to connect to the Cloud Service instance and you need to retrieve the new access token. The status icon associated with an existing migration set will change to a red cloud and will display a message when you hover over it.
 
 * The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set will be ingested into the chosen target instance. User has the ability to ingest a migration set into an Author instance or Publish instance or both. It is recommended that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance and similarly, install CTT on the source Publish instance to move content to the target Publish instance.
 
@@ -44,7 +44,7 @@ Follow the section below to understand the important considerations while runnin
       * Environment type (Stage or Production) that you plan to ingest data into.
       * Program ID.
 
-* The *Ingestion Phase* for the author will scale down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process. Please also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
+* The *Ingestion Phase* for the author scales down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process. Please also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
 
 * When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
 
