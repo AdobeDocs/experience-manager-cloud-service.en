@@ -12,11 +12,11 @@ exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless development project.
 
 ## Introduction {#introduction}
 
-Headless implementation is increasingly becoming important for delivering experiences to your audience is, wherever they are and regardless of channel.
+Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel.
 
 Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing web experiences.
 
@@ -45,3 +45,14 @@ Although you can go directly to a particular part of the journey, many concepts 
 |8|[How to go live with your headless application](go-live.md)|Learn how to deploy application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
 |9|[Post Launch](post-launch.md)|Learn how to maintain your headless experience.|
 |10|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
+
+## What's Next {#what-is-next}
+
+You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Learn about CMS Headless Development.](learn-about.md)
+
+### Choose Your Own Adventure {#choose-your-path}
+
+However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So please consider these two options.
+
+* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
+* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
