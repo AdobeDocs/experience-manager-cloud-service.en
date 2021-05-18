@@ -12,7 +12,6 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 >title="Important Considerations for using Content Transfer Tool"
 >abstract="Review important considerations to use the Content Transfer tool including Java and AEM verions, supported Datastore types, user groups considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices and Guidelines"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Download Content Transfer Tool"
 
 Follow the section below to understand the important considerations while running the Content Transfer tool:
 
@@ -153,7 +152,6 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 >id="aemcloud_ctt_extraction"
 >title="Content Extraction"
 >abstract="Extraction refers to extracting content from the source AEM instance into a temporary area called migration set. A migration set is a cloud storage area provided by Adobe to temporarily store the transferred content between the source AEM instance and the Cloud Service AEM instance."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Top Up Extraction"
 
 Follow the steps below to extract your migration set from the Content Transfer Tool:
@@ -200,8 +198,7 @@ Once the extraction process is complete, you can transfer delta content, by usin
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Content Ingestion"
->abstract="Ingestion refers to ingesting content from the *migration set* into the target Cloud Service instance. The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
+>abstract="Ingestion refers to ingesting content from the migration set into the target Cloud Service instance. The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Top Up Ingestion"
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
