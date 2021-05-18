@@ -9,13 +9,13 @@ exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 
 Use the Responsive code feature when you want to share the code for responsive serving with your web developer. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
-This feature makes sense to use if your website is on a third-party WCM. However, if your website is on AEM instead, an offsite image server renders the image and supplies it to the web page.
+This feature makes sense to use if your website is on a third-party WCM. However, if your website is on Adobe Experience Manager instead, an offsite image server renders the image and supplies it to the web page.
 
 See also [Embedding the Video Viewer on a Web Page](embed-code.md).
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-**To deliver optimized images for a responsive site**:
+**To deliver optimized images for a responsive site:**
 
 1. Navigate to the image you want supply responsive code for and in the drop-down menu, tap **[!UICONTROL Renditions]**.
 
@@ -35,8 +35,8 @@ See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplicati
 
     ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. In the **[!UICONTROL Embed Responsive Image]** dialog box, select and copy the responsive code text and paste it in your web site to access the responsive asset.
-1. Edit the default breakpoints in the embed code to match those of the responsive web site directly in the code. In addition, test the different image resolutions being served at different page breakpoints.
+1. In the **[!UICONTROL Embed Responsive Image]** dialog box, select, and copy the responsive code text and paste it in your web site to access the responsive asset.
+1. Edit the default breakpoints in the embed code to match what is found in the responsive web site, directly in the code. In addition, test the different image resolutions being served at different page breakpoints.
 
 ## Using HTTP/2 to delivery your Dynamic Media assets {#using-http-to-delivery-your-dynamic-media-assets}
 

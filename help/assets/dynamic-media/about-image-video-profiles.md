@@ -82,7 +82,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 (Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you have many files in a single reprocessing job. So, the processing banner stays on Experience Manager assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several 100, but never more than a 1000. If the average file size is hundreds of megabytes, Adobe recommends that you lower the batch size up to 10.
 
-**To optionally adjust the batch size of the reprocess workflow**:
+**To optionally adjust the batch size of the reprocess workflow:**
 
 1. In Experience Manager, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
 1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets]**.

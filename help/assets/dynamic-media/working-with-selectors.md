@@ -52,7 +52,7 @@ Use the Product selector to choose a product when you want a hotspot or image ma
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. When in **[!UICONTROL Preview]** mode, you can tap the hotspot or image map, and see what the Quick view looks like.
+1. When in **[!UICONTROL Preview]** mode, you can tap the hotspot or image map, and see how the Quick view appears.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
