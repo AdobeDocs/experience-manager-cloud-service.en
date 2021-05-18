@@ -34,19 +34,18 @@ This document helps you understand the AEM headless publication pipeline and the
 
 ## The AEM SDK {#the-aem-sdk}
 
- It contains the following artifacts:
+The AEM SDK is used to build and deploy custom code. It is the main tool you need in order to develop and test your headless application before going live. It contains the following artifacts:
 
 * The Quickstart jar - an executable jar file that can be used to set up both an author and a publish instance
 * Dispatcher tools - the Dispatcher module and its dependencies for Windows and UNIX based systems
 * Java API Jar - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM 
 * Javadoc jar - the javadocs for the Java API jar
 
-## Development Tools {#development-tools}
+## Additional Development Tools {#additional-development-tools}
 
 In addition to the AEM SDK, you will need additional tooling that facilitates developing and testing your code and content locally:
 
 * Java
-* The AEM SDK
 * Git
 * Apache Maven
 * The Node.js library
@@ -54,15 +53,15 @@ In addition to the AEM SDK, you will need additional tooling that facilitates de
 
 Because AEM is a Java application, you need to install Java and the Java SDK to support the development of AEM as a Cloud Service.
 
-The AEM SDK is used to build and deploy custom code. It is the main tool you need in order to test your headless application before going live.
-
 Git is what you will use to manage source control as well as to check in the changes to Cloud Manager and then deploy them to a production instance.
 
 AEM uses Apache Maven to build projects projects generated from the AEM Maven Project archetype. All major IDEs provide integration support for Maven.
 
-Node.js is a JavaScript runtime environment used to work with the front-end assets of an AEM project’s ui.frontend sub-project. Node.js is distributed with npm, is the de facto Node.js package manager, used to manage JavaScript dependencies.
+Node.js is a JavaScript runtime environment used to work with the front-end assets of an AEM project’s `ui.frontend` sub-project. Node.js is distributed with npm, is the de facto Node.js package manager, used to manage JavaScript dependencies.
 
 ## Components of an AEM System at a Glance {#components-of-an-aem-system-at-a-glance}
+
+Next, let's take a look at the constituent parts of an AEM environment.
 
 A full AEM environment is made up of an Author, Publish, and Dispatcher. These same components will be made available in the local development runtime in order to make it easier for you to preview your code and content before going live.
 
@@ -82,10 +81,6 @@ Make sure to take note of the distinctions between each component in the local A
 
 In a production system, a dispatcher and an http Apache server will always sit in front of an AEM publish instance. They provide caching and sercurity services for the AEM system, so it is paramount to test code and content updates against the dispatcher as well.
 
-Once you make sure everything has been tested and is working properly, you are ready to push your code updates to a centralized Git repository in Cloud Manager.
-
-After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using Cloud Manager's CI/CD pipeline.
-
 ## Previewing Your Code and Content Locally with The Local Development Environment {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
 In order to prepare your AEM headless project for launch, you need to make sure all constituent parts of your project are functioning well.
@@ -100,23 +95,16 @@ The local development environment is comprised of three main areas:
 
 Once the local development environment is set up, you can simulate content serving to the React app by deploying a static Node server locally.
 
-In order to get a more in depth look at setting up a local development environemnt and all dependencies needed for content preview see [Production Deployment with an AEM Publish Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
-
-## Deploy to Production {#deploy-to-production}
-
-Once you have tested all your code and content locally, you are ready to commence a production deployment with AEM.
-
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+In order to get a more in depth look at setting up a local development environemnt and all dependencies needed for content preview see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
-Now it's time to get your AEM headless application ready for launch, by followiing the best practices outlined below.
+Now, it's time to get your AEM headless application ready for launch, by following the best practices outlined below.
 
 ### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
 
-1. Configure [Token Based Authentication](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-1. Secure Webhooks
-1. Configure Caching and Scalability
+1. Configure [Token Based Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
+1. Configure [Caching](.help/implementing/dispatcher/caching.md). 
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
@@ -127,8 +115,8 @@ Now it's time to get your AEM headless application ready for launch, by followii
 ### Maximize CDN Cache-Hit Ratio {#maximize-cdn}
 
 * Do not use direct GraphQL queries, unless you are requesting live content from the surface.
-  * Instead, use persisted queries.
-  * Provide CDN TTL above 600 seconds so the CDN can cache them.
+  * Use persisted queries whenever possible.
+  * Provide CDN TTL above 600 seconds in order for the CDN to cache them.
   * AEM can calculate the impact of a model change to existing queries.
 * Split JSON files/GraphQL queries between low and high content change rate in order to reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
 * To actively invalidate content from the CDN use Soft Purge. This allows the CDN to re-download the content without causing a cache miss.
@@ -140,6 +128,14 @@ Now it's time to get your AEM headless application ready for launch, by followii
 * Minimize the number of domains used to host JSON and referenced artifacts.
 * Leverage `Last-modified-since` to refresh resources.
 * Use `_reference` output in JSON file to start downloading assets without having to parse complete JSON files.
+
+## Deploy to Production {#deploy-to-production}
+
+Once you make sure everything has been tested and is working properly, you are ready to push your code updates to a [centralized Git repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+
+After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+
+You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 
 ## Performance Monitoring {#performance-monitoring}
 
@@ -189,12 +185,10 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Know how to secure and Scale your application before Launch.
 * Understand how to monitor Performance and Debug Issues.
 
-You should continue your AEM headless journey by next reviewing the document [Post Launch](post-launch.md) where you learn how to maintain your headless experience.
-
 ## Additional Resources {#additional-resources}
 
-* [Set Up A Local AEM Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [The AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
+* [The AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Set Up A Local AEM Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [Use Cloud Manager to Deploy Your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
+* [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
