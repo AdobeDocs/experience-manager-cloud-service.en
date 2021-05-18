@@ -7,7 +7,7 @@ exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 ---
 # Mixed Media Sets{#mixed-media-sets}
 
-Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and videos in one presentation.
+Mixed Media Sets let you provide a blend of images, Image Sets, Spin Sets, and videos in one presentation.
 
 Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMediaSet]**. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
@@ -23,7 +23,7 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
 1. [Upload your assets](#uploading-assets).
 
-   Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/dynamic-media/image-sets.md) and [Spin Sets](/help/assets/dynamic-media/spin-sets.md). Because users can zoom on images in the Mixed Media Set Viewer, be sure you account for zooming when you choose images. Make sure that the images are least 2000 pixels in the largest dimension.
+   Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/dynamic-media/image-sets.md) and [Spin Sets](/help/assets/dynamic-media/spin-sets.md). Because users can zoom on images in the Mixed Media Set Viewer, be sure you account for zooming when you choose images. Make sure that the images are least 2000 pixels in the largest size.
 
 1. [Create Mixed Media Sets](#creating-mixed-media-sets).
 
@@ -63,7 +63,7 @@ If necessary, you can edit [Mixed Media Sets](#editing-mixed-media-sets). In add
 
 ## Uploading Assets {#uploading-assets}
 
-Start by uploading the images and videos for your Mixed Media Sets. Remember that users can zoom on images in the Mixed Media Set Viewer. As such, choose images with this zoom ability in mind. Make sure that the images are least 2000 pixels in the largest dimension.
+Start by uploading the images and videos for your Mixed Media Sets. Remember that users can zoom on images in the Mixed Media Set Viewer. As such, choose images with this zoom ability in mind. Make sure that the images are least 2000 pixels in the largest size.
 
 In addition, if you want to add spin sets or image sets to the mixed media set, create them as well.
 
@@ -73,7 +73,7 @@ You can add images, Image Sets, Spin Sets, and videos to your Mixed Media set. M
 
 When you add assets to your set, they are automatically added in alphanumeric order. You can manually reorder or sort assets after they have been added.
 
-**To create a Mixed Media Set**
+**To create a Mixed Media Set:**
 
 1. In Assets, navigate to where you want to create a mixed media set, and click **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set]**. You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
 
@@ -119,7 +119,7 @@ You can perform various editing tasks to assets in Mixed Media Sets directly in 
 * Apply viewer presets.
 * Change the default thumbnail.
 
-**To edit a Mixed Media Set**
+**To edit a Mixed Media Set:**
 
 1. Do any one of the following:
 
@@ -139,7 +139,7 @@ You can perform various editing tasks to assets in Mixed Media Sets directly in 
 
         >[!NOTE]
         >
-        >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Hover over the asset, then tap the checkmark icon to select it. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
+        >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Hover over the asset, then tap the checkmark icon so you can select it. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
         >
         >* You can edit the assets in a Mixed Media Set by navigating to the set. In the left rail, tap **[!UICONTROL Set Members]**, then tap the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
@@ -147,7 +147,7 @@ You can perform various editing tasks to assets in Mixed Media Sets directly in 
 
     >[!NOTE]
     >
-    >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Tap (do not select) the set to open it in the Experience Manager Set Preview page. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
+    >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Tap (do not select) the set so you can open it in the Experience Manager Set Preview page. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
     >
     >* To delete an entire Mixed Media Set - From any viewing mode (such as Card view or Column view), navigate to the Mixed Media Set. Hover on the set, then tap **[!UICONTROL Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
 

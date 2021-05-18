@@ -154,7 +154,7 @@ You can find Windows® devices that support this video format at the following: 
 
 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample.
 
-See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) and [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) and [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
@@ -166,7 +166,7 @@ On the playback side of the viewer, it automatically detects the browser’s vid
 
 You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser’s capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
-See also [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+See also [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 ### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -271,10 +271,10 @@ The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dy
 
 The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see the following:
+<!-- For advice about video encoding, see the following:
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### Source video files {#source-video-files}
 
@@ -358,11 +358,11 @@ Resolution and data rate are two integrally linked factors that determine video 
 
 The 640 x 480 file has four times more pixels per frame. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 x 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 x 240 resolution, but not at a 640 x 480 resolution.
 
-In general, the higher data rate you use, the better your video looks, and the higher resolution you use, the higher data rate you must maintain viewing quality (compared to lower resolutions).
+In general, the higher data rate you use, the better your video appears, and the higher resolution you use, the higher data rate you must maintain viewing quality (compared to lower resolutions).
 
 Because resolution and data rate are linked, you have two options when encoding video:
 
-* Choose a data rate and then encode at the highest resolution that looks good at the data rate you chose.
+* Choose a data rate and then encode at the highest resolution that appears good at the data rate you chose.
 * Choose a resolution and then encode at the data rate necessary to achieve high-quality video at the resolution you chose.
 
 When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
@@ -413,7 +413,7 @@ YouTube does its own encoding. As such, the original video file that was uploade
 
 When you bypass the video processing profile and publish directly to YouTube, it simply means that your video asset in Experience Manager Asset does not get a viewable thumbnail. It also means that videos that are not encoded do not work with any of the Dynamic Media asset types.
 
-Publishing video assets to YouTube servers involves completing the following tasks to ensure safe and secure server-to-server authentication with YouTube:
+Publishing video assets to YouTube servers involves completing the following tasks to ensure safe and secure server-to-server verification with YouTube:
 
 1. [Configuring Google Cloud settings](#configuring-google-cloud-settings)
 1. [Creating a YouTube channel](#creating-a-youtube-channel)
@@ -438,7 +438,7 @@ Google periodically changes their user interface. As such, the steps to publish 
 >
 >The following steps were accurate at the time of this writing. However, Google periodically updates their websites without notice. As such, these steps can be slightly different.
 
-To configure Google Cloud settings:
+**To configure Google Cloud settings:**
 
 1. Create a Google account.
    [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
@@ -496,7 +496,7 @@ To configure Google Cloud settings:
 
    For example, `https://1a2b3c.mycompany.com:4321`
 
-   **Note**: The path examples above is intended for illustration purposes only.
+   **Note**: The path examples above is intended for explanation purposes only.
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
@@ -506,7 +506,7 @@ To configure Google Cloud settings:
 
    For example, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **Note**: The path example above is intended for illustration purposes only.
+   **Note**: The path example above is intended for explanation purposes only.
 
 1. Click **[!UICONTROL Create OAuth client ID]**.
 1. On the **[!UICONTROL Add credentials to your project]** page, step 3, under the **[!UICONTROL Set up the OAuth 2.0 consent screen]** heading, select the Gmail email address that you are currently using.
@@ -536,17 +536,17 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 
 >[!CAUTION]
 >
->Be sure you have already set up one or more channels in YouTube *before* you add channels under YouTube Settings in Experience Manager (see [Setting up YouTube in Experience Manager](#setting-up-youtube-in-aem) below). If you fail to do the channel set up, you are not warned of no existing channels. However, Google authentication still occurs when you add a channel, but there is not an option to choose which channel the video is sent.
+>Be sure you have already set up one or more channels in YouTube *before* you add channels under YouTube Settings in Experience Manager (see [Setting up YouTube in Experience Manager](#setting-up-youtube-in-aem) below). If you fail to do the channel set up, you are not warned of no existing channels. However, Google verification still occurs when you add a channel, but there is not an option to choose which channel the video is sent.
 
-To create a YouTube channel:
+**To create a YouTube channel:**
 
 1. Go to [https://www.youtube.com](https://www.youtube.com/) and sign in using your Google account credentials.
 1. In the upper-right corner of the YouTube page, click your profile picture (it can also appear as a letter within a solid colored circle), then tap **[!UICONTROL YouTube settings]** (round gear icon).
 1. On the Overview page, under the Additional Features heading, tap **[!UICONTROL See all my channels or create a new channel]**.
 1. On the Channels page, tap **[!UICONTROL Create a new channel]**.
-1. On the Brand Account page, in the Brand Account Name field, enter a business name or any other channel name you choose where you want to publish your video assets, then click **[!UICONTROL Create]**.
+1. On the Brand Account page, in the Brand Account Name field, enter a company name or any other channel name you choose where you want to publish your video assets, then click **[!UICONTROL Create]**.
 
-   Remember the name that you enter here because you must enter it again when you setup YouTube in Experience Manager.
+   Remember the name that you enter here; you must enter it again when you have to setup YouTube in Experience Manager.
 
 1. (Optional) If necessary, add more channels.
 
@@ -566,7 +566,7 @@ Or, if you intend to use the default tags in Experience Manager, you can skip th
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
 1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
@@ -582,7 +582,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 #### Setting up YouTube in Experience Manager 6.4 and later {#setting-up-youtube-in-aem-and-later}
 
 1. Be sure you log in to your instance of Dynamic Media as an Administrator.
-1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]**(hammer icon) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL YouTube Publishing Configuration]**.
+1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]**(hammer icon) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**.
 1. Tap **[!UICONTROL global]** (do not select it).
 
 1. Near the upper-right corner of the global page, tap **[!UICONTROL Create]**.
@@ -606,7 +606,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
    You can optionally add a description, if desired.
 
 1. Tap **[!UICONTROL Add]**.
-1. YouTube/Google authentication is displayed. If you are not already logged into the Google Cloud account, then skip this step.
+1. YouTube/Google verification is displayed. If you are not already logged into the Google Cloud account, then skip this step.
 
     * Enter the Google username and password associated with the Google Project ID and the JSON text above.
     * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
@@ -616,7 +616,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 
    You will now setup tags for publishing.
 
-1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, tap the pencil icon to edit the list of tags that you want to use.
+1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services > YouTube page, tap the pencil icon to edit the list of tags that you want to use.
 1. To display the list of available tags in Experience Manager, tap the drop-down list icon (upside-down caret).
 1. To add them, tap one or more tags.
 
@@ -630,7 +630,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 
 1. Be sure you log in to your instance of Dynamic Media as an Administrator.
 
-1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Cloud Services]**.
+1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Under the Third-Party Services heading, under YouTube, tap **[!UICONTROL Configure now]**.
 1. In the Create Configuration dialog box, enter a title (mandatory) and name (optional) in the respective fields.
 1. Tap **[!UICONTROL Create]**.
@@ -652,7 +652,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
    You can optionally add a description, if desired.
 
 1. Tap **[!UICONTROL OK]**.
-1. YouTube/Google authentication is displayed. If you are not already logged into the Google Cloud account, then skip this step.
+1. YouTube/Google verification is displayed. If you are not already logged into the Google Cloud account, then skip this step.
 
     * Enter the Google username and password associated with the Google Project ID and the JSON text above.
     * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
@@ -662,7 +662,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 
    You will now setup tags for publishing.
 
-1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, tap the pencil icon to edit the list of tags that you want to use.
+1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services > YouTube page, tap the pencil icon to edit the list of tags that you want to use.
 1. To display the list of available tags in Experience Manager, tap the drop-down list icon (upside-down caret).
 1. To add them, tap one or more tags.
 
@@ -678,9 +678,9 @@ You can optionally automate the setting of YouTube properties on upload of your 
 
 To create the metadata processing profile, you are first going to copy values from the **[!UICONTROL Field Label]**, **[!UICONTROL Map to property]**, and **[!UICONTROL Choices]** fields, all found in Metadata Schemas for video. Then, you build your YouTube video metadata processing profile by adding those values to it.
 
-To automate the setting of default YouTube properties for your uploaded videos:
+**To automate the setting of default YouTube properties for your uploaded videos:**
 
-1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
+1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. Click **[!UICONTROL default]**. (Do not add a checkmark to the selection box to the left of "default".)
 1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[!UICONTROL Edit]**.
 1. On the Metadata Schema Editor page, click the **[!UICONTROL Advanced]** tab.
@@ -703,7 +703,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
       Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
 
 1. Near the upper-right corner of the Metadata Schema Editor page, click **[!UICONTROL Cancel]**.
-1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Profiles]**.
+1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 
 1. On the Metadata Profiles page, near the upper-right corner of the page, click **[!UICONTROL Create]**.
 1. In the Add Metadata Profile dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video` then click **[!UICONTROL Create]**.
@@ -753,7 +753,7 @@ Now you associate the tags that you added earlier to video assets. This process 
 >
 >For more detailed progress information, you can monitor the YouTube log under replication. Be aware, however, that such monitoring requires Administrator access.
 
-**To publish videos to your YouTube channel**:
+**To publish videos to your YouTube channel:**
 
 1. In Experience Manager, navigate to a video asset that you want to publish to your YouTube channel.
 1. Select the video asset (the adaptive video set).
@@ -817,7 +817,7 @@ To unpublish videos to remove them from YouTube:
 
 1. Navigate to the video assets that you want to unpublish from your YouTube channel.
 1. In an asset selection mode, select one or more published video assets.
-1. On the toolbar, click **[!UICONTROL Manage Publication]**. If necessary, tap the three dots icon (. . .) on the toolbar to see **[!UICONTROL Manage Publication]**.
+1. On the toolbar, click **[!UICONTROL Manage Publication]**. If necessary, tap the three dots icon (`. . .`) on the toolbar to see **[!UICONTROL Manage Publication]**.
 1. On the Manage Publication page, tap **[!UICONTROL Unpublish]**.
 1. In the upper-right corner of the page, tap **[!UICONTROL Next]**.
 1. In the upper-right corner of the page, tap **[!UICONTROL Unpublish]**.
@@ -828,7 +828,7 @@ When you upload a new video to a folder that has video encoding applied or, you 
 
 ### Monitoring progress {#monitoring-progress}
 
-To monitor progress (including failed encoding/YouTube publish):
+**To monitor progress, including failed encoding/YouTube publish:**
 
 1. View video encoding progress in your assets folder:
 
@@ -860,7 +860,7 @@ To monitor progress (including failed encoding/YouTube publish):
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
-1. For workflows in progress, see Workflow Instances available from **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Instances]**.
+1. For workflows in progress, see Workflow Instances available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
 
    >[!NOTE]
    >
@@ -874,7 +874,7 @@ To monitor progress (including failed encoding/YouTube publish):
 
    From the Workflow Instances area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-cloud/authoring/workflows/overview.md) for more information.
 
-1. For failed jobs, see Workflow Failures available from **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Failures]**. The **[!UICONTROL Workflow Failure]** lists all failed workflow activities.
+1. For failed jobs, see Workflow Failures available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Failures]**. The **[!UICONTROL Workflow Failure]** lists all failed workflow activities.
 
    >[!NOTE]
    >
@@ -895,7 +895,7 @@ To monitor progress (including failed encoding/YouTube publish):
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
-1. For completed workflows, see Workflow Archive available from **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Archive]**. The **[!UICONTROL Workflow Archive]** lists all completed workflow activities.
+1. For completed workflows, see Workflow Archive available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]**. The **[!UICONTROL Workflow Archive]** lists all completed workflow activities.
 
    >[!NOTE]
    >
@@ -915,11 +915,11 @@ To monitor progress (including failed encoding/YouTube publish):
 
 How you configure notification depends on whether you want notifications for YouTube publishing jobs.
 
-* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
+* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
 
 For YouTube publishing jobs, do the following:
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
 1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
 1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
@@ -981,7 +981,7 @@ For video reports to work correctly, a Report Suite ID is automatically created 
 
 To view video reports:
 
-1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Reports]**.
+1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
     * Near the upper-right corner, tap the **[!UICONTROL Refresh Video Report]** icon.
@@ -1068,7 +1068,7 @@ Captioning also allows for greater accessibility by using closed captioning for 
 >
 >The video player that you use must support the display of captions.
 
-Dynamic Media can convert caption files to JSON (JavaScript™ Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl and index the content to make the videos more easily discoverable and give customers more details about the video content.
+Dynamic Media can convert caption files to JSON (JavaScript™ Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl/index the content to make the videos more easily discoverable and give customers more details about the video content.
 
 See [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) for more information about using the JSON function in a URL.
 
@@ -1078,7 +1078,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
    Ensure that the file you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
 
-   See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/).
+   See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
    There are both free and premium tools and services that you can use to author caption/subtitle files outside Dynamic Media. For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool:
 
@@ -1088,7 +1088,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
    In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtaining a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
 
-   Now follow the onscreen instructions from the site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a .VTT filename extension.
+   Now follow the onscreen instructions from the site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
 
    >[!NOTE]
    >
@@ -1109,17 +1109,17 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      Note the `,1` at the end of the caption path. Immediately following the .VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
+      Note the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
     * For an embedded video viewer experience, tap **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Note the `,1` at the end of the caption path. Immediately following the .VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
+      Note the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
 ## Adding chapter markers to video {#adding-chapter-markers-to-video}
 
-You can make your long form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. When a user plays the video, they can click the chapter markers on the video timeline (also known as the video scrubber). They can easily navigate to their point of interest, or immediately jump to new content, demonstrations, and tutorials.
+You can make your long form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. When a user plays the video, they can click the chapter markers on the video timeline (also known as the video scrubber). They can easily navigate to their point of interest, or immediately jump to new content, training, and demonstrations.
 
 >[!NOTE]
 >
@@ -1153,11 +1153,11 @@ In the example above, `Chapter 1` is the cue identifier and is optional. The cue
 
 Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
 
-See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
+See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
 **To add chapter markers to video:**
 
-1. Save the .VTT file in UTF8 encoding to avoid problems with character rendition in the chapter title text.
+1. Save the VTT file in UTF8 encoding so you avoid problems with character rendition in the chapter title text.
 
    Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
 1. In Experience Manager, upload your WebVTT chapter file.
@@ -1177,7 +1177,7 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
        <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
        <li>In the left rail, at the bottom, click <strong>URL</strong>.</li>
        <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
-       <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>Append the copied URL of the video with the following syntax so you can associate it with the copied URL to your chapter file:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
@@ -1189,7 +1189,7 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
        <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
        <li>In the left rail, at the bottom, click <strong>Embed</strong>.</li>
        <li>In the Embed Code dialog box, select, and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
-       <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       <li>Append the embed code of the video with the following syntax so you can associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
       </tr>
      </tbody>
@@ -1290,11 +1290,11 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 **To configure the default time interval that video thumbnails are generated,**
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
 1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   if the directory panel is not visible, you may need to tap the &gt;&gt; icon to the left of the Home tab.
+   if the directory panel is not visible, you may need to tap the >> icon to the left of the Home tab.
 
 1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
