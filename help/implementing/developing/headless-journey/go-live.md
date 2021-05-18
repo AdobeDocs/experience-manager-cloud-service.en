@@ -12,7 +12,7 @@ exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 >
 >WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
-In this part of the [AEM Headless Developer Journey,](overview.md) learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
+In this part of the [AEM Headless Developer Journey](overview.md), learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 
 ## The Story So Far {#story-so-far}
 
@@ -104,7 +104,7 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 ### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
 
 1. Configure [Token Based Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
-1. Configure [Caching](.help/implementing/dispatcher/caching.md). 
+1. Configure [Caching](/help/implementing/dispatcher/caching.md). 
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
@@ -184,6 +184,18 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Know how to configure the tooling required to simulate go live for your headless application.
 * Know how to secure and Scale your application before Launch.
 * Understand how to monitor Performance and Debug Issues.
+
+## The Journey Ends - Or Does It? {#journey-ends}
+
+Congratulations! You have completed the AEM Headless Developer Journey! You should now have an understanding of:
+
+* The difference between headless and headful content delivery.
+* AEM's headless features.
+* How to organize and AEM Headless project.
+* How to create headless content in AEM.
+* How to retrieve and update headless content in AEM.
+* How to go live with an AEM Headless project.
+* What do do after the go-live.
 
 ## Additional Resources {#additional-resources}
 
