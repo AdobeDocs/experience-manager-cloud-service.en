@@ -34,8 +34,8 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
    >[!NOTE]
    > The **Create** wizard provides different types of templates while creating a channel. Refer to the section Available Templates in Create Wizard for more details.
 
-1. Enter the name of your sequence channel, such as ChannelFood and click on **Create**.
-   You will now see a ChannelFood in your Channels folder in your AEM Screens project.
+1. Enter the name of your sequence channel, such as **LoopingChannelOne** and click on **Create**.
+   You will now see a **LoopingChannelOne** in your Channels folder in your AEM Screens project.
 
 ## Managing an Existing Channel {#managing-channels}
 
@@ -55,4 +55,4 @@ Now, that you have setup an AEM Screens channel in your project, you can:
 * Be able to define your project locations in terms of scope.
 * Be able to define your devices in terms of scope.
 
-  You should continue your Screens as a Cloud Service content author journey by next reviewing the document Creating and Managing Locations.
+  You should continue your Screens as a Cloud Service content author journey by next reviewing the document [Creating and Managing Locations](/help/screens-cloud/creating-locations-screens-cloud.md).
