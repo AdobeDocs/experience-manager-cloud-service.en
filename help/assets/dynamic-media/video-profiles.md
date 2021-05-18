@@ -94,7 +94,7 @@ The maximum supported video file size for smart crop is the following criteria:
 
 * Duration of five minutes.
 * 30 frames per second (FPS).
-* 300 MB file size.
+* File size of 300 MB.
 
 Adobe Sensei is limited to 9000 frames. That is, five minutes at 30 FPS. If your video has a higher FPS, the maximum supported video duration decreases. For example, a 60 FPS video must be two and a half minutes long to be supported by Adobe Sensei and smart crop.
 
@@ -145,7 +145,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 **To create a Video Profile for adaptive streaming**,
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Tap **[!UICONTROL Create]**.
 1. Enter a name and description for the profile.
 1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
@@ -194,7 +194,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 **To create a Video Profile for progressive streaming:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Tap **[!UICONTROL Create]**.
 1. Enter a name and description for the profile.
 1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
@@ -204,7 +204,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. Do the following:
     * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**.
     * In the **[!UICONTROL Height]** field, enter a value in pixels.
-        To help you visualize the size of the video, tap the Height's information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
+        To help you visualize the size of the video, tap the Height's information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video size (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
 1. (Optional) Do one of the following:
 
     * Tap the **[!UICONTROL Advanced]** tab, and make sure that the **[!UICONTROL Use Default Values]** check box is selected (recommended).
@@ -237,9 +237,9 @@ You can now apply the profile to folders that contain videos. See [Applying a Vi
 
 You can edit an existing video encoding profile to take advantage of advanced video encoding parameters that are not found in the user interface when you create or edit a Video Profile in Experience Manager. You can custom-add one or more advanced parameters, such as minBitrate and maxBitrate, to your existing profile.
 
-**To use custom-added video encoding parameters**:
+**To use custom-added video encoding parameters:**
 
-1. Tap the Experience Manager logo, then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite]**.
+1. Tap the Experience Manager logo, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. From the CRXDE Lite page, in the Explorer panel on the left, navigate to the following:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -264,7 +264,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>The target number of frames between keyframes. Calculate this value to generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval is 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and can also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td>
+   <td>The target number of frames between keyframes. Calculate this value so you can generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval is 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and can also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td>
    <td><code>String</code></td>
    <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS (HTTP Live Streaming) is 60-90.</p> </td>
   </tr>
@@ -309,9 +309,9 @@ See also [Best Practices for Video Encoding](/help/assets/dynamic-media/video.md
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**To edit a Video Profile**:
+**To edit a Video Profile:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one Video Profile name.
 1. On the toolbar, tap **[!UICONTROL Edit]**.
 1. On the Video Encoding Profile page, edit the name and description, as desired.
@@ -325,7 +325,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 ### Copying a Video Profile {#copying-a-video-encoding-profile}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one Video Profile name.
 1. On the toolbar, tap **[!UICONTROL Copy]**.
 1. On the Video Encoding Profile page, enter a new name for the profile.
@@ -340,7 +340,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 ### Deleting a Video Profile {#deleting-a-video-encoding-profile}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one or more Video Profile names.
 1. On the toolbar, tap **[!UICONTROL Delete]**.
 1. Tap **[!UICONTROL OK]**.
@@ -369,14 +369,14 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 #### Applying a Video Profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select the Video Profile that you want to apply to a folder or multiple folders.
 1. Tap **[!UICONTROL Apply Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name while in **[!UICONTROL Card View]**.
     You can [monitor the progress of a Video Profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 #### Applying a Video Profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
 
-1. Tap or click the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a Video Profile to.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a Video Profile to.
 1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
@@ -389,7 +389,7 @@ In addition to applying a profile to a folder, you can also apply one globally s
 
 See also [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**To apply a Video Profile globally**,
+**To apply a Video Profile globally:**
 
 * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **[!UICONTROL Save All]**.
 
@@ -410,7 +410,7 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 
 ### Removing a Video Profile from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select the Video Profile that you want to remove from a folder or multiple folders.
 1. Tap **[!UICONTROL Remove Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and tap **[!UICONTROL Remove]**.
 
