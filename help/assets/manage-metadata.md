@@ -11,11 +11,6 @@ exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 
 [!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
 
->[!MORELIKETHIS]
->
->* [XMP metadata](xmp-metadata.md)
->* [How to edit or add metadata](meta-edit.md)
-
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
 -->
@@ -225,3 +220,8 @@ Creating metadata-driven workflows help you automate some processes, which impro
 * The workflow can check whether an image has a title or not. If it does not, the system notifies to add a title.
 * The workflow can check whether a copyright notice on an asset allows for distribution or not. So, the system sends the asset to one server or the other.
 * A workflow can check for assets without pre-defined, mandatory metadata or assets with *invalid* metadata.
+
+>[!MORELIKETHIS]
+>
+>* [XMP metadata](xmp-metadata.md)
+>* [How to edit or add metadata](meta-edit.md)
