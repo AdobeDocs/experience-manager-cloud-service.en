@@ -40,7 +40,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 
 ## Feature parity with [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] introduces many new features and more performant ways for existing features to work. However, when moving from [!DNL Experience Manager] 6.5 to [!DNL Experience Manager] as a [!DNL Cloud Service], you may notice that some features either work differently, are not available, or are available partially. The following is a list of such features:
+[!DNL Experience Manager] as a [!DNL Cloud Service] introduces many new features and more performant ways for existing features to work. However, when moving from [!DNL Experience Manager] 6.5 to [!DNL Experience Manager] as a [!DNL Cloud Service], you may notice that some features either work differently, are not available, or are available partially. The following is a list of such features. In addition, see the [deprecated and removed features](/help/release-notes/deprecated-removed-features.md).
 
 | Functionality or use case | Status in [!DNL Experience Manager] as a [!DNL Cloud Service] | Comments |
 |-----|-----|-----|
