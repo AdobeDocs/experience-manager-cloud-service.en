@@ -49,8 +49,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |6|[How to update your content via AEM assets APIs](update-your-content.md)|Learn how to use REST API to access and update your Content Fragments content.|
 |7|[How to put it all together - your app and your content in AEM Headless](put-it-all-together.md)|Learn how to take your AEM Project including Content Fragments, your GraphQL calls, your REST API calls, and your application, and prepare it for going live.|
 |8|[How to go live with your headless application](go-live.md)|Learn how to deploy application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
-|9|[Post Launch](post-launch.md)|Learn how to maintain your headless experience.|
-|10|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
+|9|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
 
 ## What's Next {#what-is-next}
 
