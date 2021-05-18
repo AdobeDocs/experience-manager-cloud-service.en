@@ -13,7 +13,7 @@ Smart Imaging technology applies Adobe Sensei AI capabilities and works with exi
 
 >[!IMPORTANT]
 >
->This feature requires that you use the out-of-the-box CDN (Content Delivery Network) that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
+>Smart Imaging requires that you use the out-of-the-box CDN (Content Delivery Network) that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with this feature.
 
 Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
 
@@ -36,7 +36,7 @@ On the mobile web, the challenges are compounded by two factors:
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. 
 
-### About device pixel ratio optimization
+### About device pixel ratio optimization {#dpr}
 
 Device pixel ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
@@ -47,7 +47,7 @@ Turning on Smart Imaging DPR configuration automatically adjusts the requested i
 | Permitted values in the URL of an image | Description |
 |---|---|
 | `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
-| `dpr=on, dprValue=` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue=` is any number greater than 0. Specified values of 1.5, 2, or 3 are typical.
+| `dpr=on, dprValue=` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue=` is any number greater than 0. Specified values of 1.5, 2, or 3 are typical. |
 
 >[!NOTE]
 >
@@ -56,10 +56,12 @@ Turning on Smart Imaging DPR configuration automatically adjusts the requested i
 
 | Requested Image size | DPR value | Delivered image size |
 |---|---|---|
-| 816x500 |	1 | 816x500 |
-| 816x500 |	2 | 1632x1000 |
+| 816x500 | 1 | 816x500 |
+| 816x500 | 2 | 1632x1000 |
 
-### About network bandwidth optimization
+See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+### About network bandwidth optimization {#network-bandwidth-optimization}
 
 Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR optimization is automatically turned off, even if it is already on.
 
@@ -67,8 +69,8 @@ If desired, your company can opt out of network bandwidth optimization at the in
 
 | Permitted values in the URL of an image | Description |
 |---|---|
-| `network=off` | Turns off network optimization at an individual image URL level.
-| `network=poor/good/excellent` | Override network value detected by Smart Imaging, with a custom value of poor, good, or excellent.
+| `network=off` | Turns off network optimization at an individual image URL level. |
+| `network=poor/good/excellent` | Override network value detected by Smart Imaging, with a custom value of poor, good, or excellent. |
 
 >[!NOTE]
 >
@@ -251,24 +253,26 @@ During the initial transition, the non-cached images directly hit Adobe's origin
 
 Yes. You can turn off Smart Imaging by adding the modifier `bfc=off` to the URL.
 
-## Can I request DPR and network optimization to be turned off at the company level? (#dpr-companylevel-turnoff)
+## Can I request DPR and network optimization to be turned off at the company level? {#dpr-companylevel-turnoff}
 
 Yes. To disable DPR and network optimization at your company, create a support case as described earlier in this topic.
 
-## What "tuning" is available? Are there any settings or behaviors that can be defined? (#tuning-settings)
+## What "tuning" is available? Are there any settings or behaviors that can be defined? {#tuning-settings}
 
 Currently, you can optionally enable or disable Smart Imaging. No other tuning is available.
 
-## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? (#minimum-maximum)
+## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? {#minimum-maximum}
 
 There is no such provisioning ability in the current Smart Imaging.
 
-## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? (#jpeg-webp)
+## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? {#jpeg-webp}
 
 Smart Imaging determines if the conversion is beneficial or not. It returns the new image only if the conversion results in a smaller file size with comparable quality.
 
-## How does Smart Imaging DPR optimization work with Adobe Experience Manager Sites components and Dynamic Media viewers? (#dpr-sitescomponents)
+## How does Smart Imaging DPR optimization work with Adobe Experience Manager Sites components and Dynamic Media viewers?
 
 * Experience Manager Sites Core Components are configured by default for DPR optimization. To avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Experience Manager Sites Core Components Dynamic Media images.
 * Given Dynamic Media Foundation Component is configured by default for DPR optimization, to avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Dynamic Media Foundation Component images. Even if customer deselects DPR optimization in DM Foundation Component, server-side Smart Imaging DPR does not kick in. In summary, in the DM Foundation Component, DPR optimization comes into effect based on DM Foundation Component level setting only.
 * Any viewer side DPR optimization works in tandem with server-side Smart Imaging DPR optimization, and does not result in over-sized images. In other words, wherever DPR is handled by the viewer, such as the main view only in a zoom-enabled viewer, the server-side Smart Imaging DPR values are not triggered. Likewise, wherever viewer elements, such as swatches and thumbnails, do not have DPR handling, the server-side Smart Imaging DPR value is triggered.
+
+See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
