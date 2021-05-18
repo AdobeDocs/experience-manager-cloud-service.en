@@ -130,7 +130,14 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Know what necessary tools and AEM configurations are required.
 * Know best practices to make your headless journey smooth, keep content generation efficient, and ensure content is delivered quickly.
 
-You should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
+We want you to build on this foundational knowledge to fully understand the power and flexibility of AEM Headless so you can take advantage of it for your own projects. To do this, you have options.
+
+### Choose Your Own Adventure {#choose-your-path}
+
+No matter what your learning style, Adobe wants you to succeed as you get started with your AEM Headless project.
+
+* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
+* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 
 ## Additional Resources {#additional-resources}
 
