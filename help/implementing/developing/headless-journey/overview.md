@@ -26,7 +26,13 @@ This guide leads you through the most important topics so that on completion you
 * Understand AEM's headless features and how they work together to deliver a headless experience.
 * Have the ability to take the first steps implementing your first AEM headless project.
 
-## The Headless Journey {#the-journey}
+## Audience {#audience}
+
+This journey is designed for the developer persona, laying out the requirements, steps, and approach of an AEM Headless project from a developer's perspective. The journey will define additional personas with which the developer must interact for a successful project, but the point-of-view for the journey is that of the developer.
+
+Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+
+## The Headless Developer Journey {#the-journey}
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of headless in AEM and link out to detailed technical documentation.
 
