@@ -47,11 +47,11 @@ Turning on Smart Imaging DPR configuration automatically adjusts the requested i
 | Permitted values in the URL of an image | Description |
 |---|---|
 | `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
-| `dpr=on, dprValue=` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue=` is any number greater than 0. Specified values of 1.5, 2, or 3 are typical. |
+| `dpr=on,dprValue` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue` is any number greater than 0. Specified values of 1.5, 2, or 3 are typical. |
 
 >[!NOTE]
 >
->* You can use `dpr=on, dprValue=` even if the company level DPR setting as off.
+>* You can use `dpr=on,dprValue` even if the company level DPR setting as off.
 >* Owing to DPR optimization, when the resultant image is greater than the MaxPix Dynamic Media setting, MaxPix width is always recognized by maintaining the image's aspect ratio.
 
 | Requested Image size | DPR value | Delivered image size |
@@ -67,10 +67,9 @@ Turning on Network Bandwidth automatically adjusts the image quality that is ser
 
 If desired, your company can opt out of network bandwidth optimization at the individual image level by appending `network=off` to the URL of the image.
 
-| Permitted values in the URL of an image | Description |
+| Permitted value in the URL of an image | Description |
 |---|---|
 | `network=off` | Turns off network optimization at an individual image URL level. |
-| `network=poor/good/excellent` | Override network value detected by Smart Imaging, with a custom value of poor, good, or excellent. |
 
 >[!NOTE]
 >
