@@ -12,7 +12,7 @@ AEM Assets lets you import asset metadata in bulk using a CSV file. You can do b
 
 ## Import metadata {#import-metadata}
 
-The metadata import is asynchronous and does not impede the system performance. Simultaneous update of the metadata for multiple assets can possibly be resource-intensive because of XMP writeback activity using asset microservices. Adobe recommends that you plan any bulk operations during lean server usage so that performance for other users is not impacted.
+The metadata import is asynchronous and does not impede the system performance. Simultaneous update of the metadata for multiple assets can be resource-intensive because of the metadata writeback activity using asset microservices. Adobe recommends that you plan any bulk operations during lean server usage so that performance for other users is not impacted.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ The metadata import is asynchronous and does not impede the system performance. 
    | Batch Size             | Number of assets in a batch for which metadata is to be imported. The default value is 50. Maximum value is 100. |
    | Field Separator        | Default value is `,` (a comma). You can specify any other character. |
    | Multi value Delimiter  | Separator for metadata values. Default value is `|`. |
-   | Launch Workflows       | False by default. When set to `true` and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
+   | Launch Workflows       | False by default. When set to `true` and default Launcher settings are in effect for the DAM Metadata WriteBack workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
    | Asset Path Column Name | Defines the column name for the CSV file with assets.  |
 
 1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
