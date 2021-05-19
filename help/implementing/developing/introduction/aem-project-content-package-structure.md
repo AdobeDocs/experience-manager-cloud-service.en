@@ -64,21 +64,6 @@ The recommended application deployment structure is as follows:
     + `/apps/settings`
   + ACLs (permissions)
     + Any `rep:policy` for any path under `/apps`
- 
-+ The `ui.config` package, contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
-    + Organizational folder containing run mode specific OSGi config definitions
-        + `/apps/my-app/osgiconfig`
-    + Common OSGi configuration folder containing default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
-        + `/apps/my-app/osgiconfig/config` 
-    + Run mode-specific OSGi configuration folders that contains default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
-        + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>` 
-    + Repo Init OSGi configuration scripts
-        + [Repo Init](#repo-init) is the recommended way to deploy (mutable) content that is logically part of the AEM application. The Repo Init OSGi configurations should be places in the appropriate `config.<runmode>` folder as outlined above, and be used to define:
-            + Baseline content structures
-            + Users   
-            + Service Users
-            + Groups
-            + ACLs (permissions)
 
 >[!NOTE]
 >
@@ -118,6 +103,22 @@ The recommended application deployment structure is as follows:
     + `site-b.ui.config` deploys OSGi configurations required by site B
     + `site-b.ui.content` deploys content and configuration required by site B
 
++ The `ui.config` package contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
+    + It is considered code and belongs to an OSGi bundles, thus it is marked as a container package
+    + Organizational folder containing run mode specific OSGi config definitions
+        + `/apps/my-app/osgiconfig`
+    + Common OSGi configuration folder containing default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
+        + `/apps/my-app/osgiconfig/config` 
+    + Run mode-specific OSGi configuration folders that contains default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
+        + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>` 
+    + Repo Init OSGi configuration scripts
+        + [Repo Init](#repo-init) is the recommended way to deploy (mutable) content that is logically part of the AEM application. The Repo Init OSGi configurations should be places in the appropriate `config.<runmode>` folder as outlined above, and be used to define:
+            + Baseline content structures
+            + Users   
+            + Service Users
+            + Groups
+            + ACLs (permissions)
+
 ### Extra Application Packages{#extra-application-packages}
 
 If other AEM projects, which are themselves comprised of their own code and content packages, are used by the AEM deployment, their container packages should be embedded in the project's `all` package.
@@ -134,14 +135,14 @@ For example, an AEM project that includes 2 vendor AEM applications might look l
 
 ## Package Types {#package-types}
 
-Packages are to be marked with their declared package type.
+Packages are to be marked with their declared package type. Package types help clarify the purpose and deployment of a package.
 
-+ Container packages must set their `packageType` to `container`. Container packages must not directly contain OSGi bundles, OSGi configurations and are not allowed to use [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Container packages must set their `packageType` to `container`. Container packages must not contain regular nodes. Only OSGi bundles, configurations and sub packages are allowed. Containers are allowed to use [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
 
 
-For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) and the [FileVault Maven configuration snippet](#marking-packages-for-deployment-by-adoube-cloud-manager) below.
+For more information see [Apache Jackrabbit FileVault - Package Maven Plugin documentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit Package Types](http://jackrabbit.apache.org/filevault/packagetypes.html), and the [FileVault Maven configuration snippet](#marking-packages-for-deployment-by-adoube-cloud-manager) below.
 
 >[!TIP]
 >
