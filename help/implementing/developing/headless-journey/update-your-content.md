@@ -314,7 +314,11 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Have experience with sample code and know how the API works in practice.
 -->
 
-You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+You should continue your AEM headless journey by next reviewing the document [How to Go Live with Your Headless Application](go-live.md) where you actually take your AEM Headless project live!
 
 [How to Create Single Page Applications (SPAs) with AEM](create-spa.md) will also show how you can create editable SPAs using AEM’s SPA Editor framework, as well as integrate external SPAs, enabling editing capabilities as required.
 
