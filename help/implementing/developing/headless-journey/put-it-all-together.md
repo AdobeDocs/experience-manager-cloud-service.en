@@ -8,4 +8,4 @@ exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 ---
 # AEM Headless SDK - Coming Soon {#coming-soon}
 
-This page aims to provide guidance on how to set up a local development project using the all new AEM Headless SDK. It will be updated when the first release of the SDK is publicly available.
+This page aims to provide guidance on how to set up a local development project using the all new AEM Headless SDK. Stay tuned for more content once the SDK is publicly available.
