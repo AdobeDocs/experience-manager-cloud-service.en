@@ -40,13 +40,13 @@ To do an end-to-end validation of the code and process including asset ingestion
 
 ## Feature parity with [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] introduces many new features and more performant ways for existing features to work. However, when moving from [!DNL Experience Manager] 6.5 to [!DNL Experience Manager] as a [!DNL Cloud Service], you may notice that some features either work differently, are not available, or are available partially. The following is a list of such features:
+[!DNL Experience Manager] as a [!DNL Cloud Service] introduces many new features and more performant ways for existing features to work. However, when moving from [!DNL Experience Manager] 6.5 to [!DNL Experience Manager] as a [!DNL Cloud Service], you may notice that some features either work differently, are not available, or are available partially. The following is a list of such features. In addition, see the [deprecated and removed features](/help/release-notes/deprecated-removed-features.md).
 
 | Functionality or use case | Status in [!DNL Experience Manager] as a [!DNL Cloud Service] | Comments |
 |-----|-----|-----|
 | [Duplicate asset detection](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Works differently. | See [how it worked in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [For Placement Only (FPO) renditions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Works differently | |
-| Metadata writeback | Not supported. | See [metadata writeback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| Metadata writeback | Works differently | Disabled by default. Enable the corresponding workflow launcher if needed. Writeback is handled by asset microservices. |
 | Processing of assets uploaded using Package Manager | Needs manual intervention. | Manually reprocess using the **[!UICONTROL Reprocess Asset]** action. |
 | MIME type detection | Not supported. | If you upload a digital asset without an extension or with an incorrect extension, it may not be processed as desired. Users can still store the binary files without an extension in the DAM. See [MIME type detection in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Subasset generation for compound assets | Not supported. | Dependent use cases are not fulfilled. For example, annotation of multi-page PDF files is impacted. See [subasset creation in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |

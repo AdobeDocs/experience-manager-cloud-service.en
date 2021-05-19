@@ -243,8 +243,8 @@ See also [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-
 
 **To publish static Dynamic Media 3D assets:**
 
-1. Open a 3D asset (GLB, OBJ, or STL file format) to view it in the Details page.
-1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
+1. Open a 3D asset (GLB, OBJ, or STL file format).
+1. On the Details page, on the toolbar, tap **[!UICONTROL Quick Publish]**.
 
     ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 

@@ -18,7 +18,7 @@ Interactive 3D preview in Experience Manager supports the following file formats
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
 | GLB |Binary GL Transmission|model/gltf-binary ||
-| GLTF |GL Transmission Format|model/gltf+json |See **Note** below. |
+| GLTF |GL Transmission Format|model/gltf+json |See the **Note** below. |
 | OBJ |WaveFront 3D Object File|application/x-tgif ||
 | STL |Stereolithography|application/vnd.ms-pki.stl ||
 | DN |Adobe Dimension|model/x-adobe-dn |Support for ingestion only; preview not available.|
@@ -39,20 +39,20 @@ Interactive 3D preview in Experience Manager supports the following file formats
 
 The time it takes to open a 3D asset in the asset details view page depends on several factors such things as bandwidth, image complexity, and latencies to the server.
 
-In addition, the capabilities of the client computer&mdash;such as a workstation, notebook, or mobile touch device&mdash;are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable. 
+In addition, the capabilities of the client computer &ndash; such as a workstation, notebook, or mobile touch device &ndash; are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable. 
 
 **To preview 3D assets in Experience Manager:**
 
 1. Make sure you have uploaded 3D assets into Experience Manager.
     See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
-1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
+1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 
     ![Navigation page](/help/assets/dynamic-media/assets/navigation-assets.png
     )
 
 1. Near the upper-right corner of the page, from the View drop-down list, tap **[!UICONTROL Card View]**, then navigate to a 3D asset that you want to preview.
 
-    ![3D card select](/help/assets/dynamic-media/assets/3d-card-select.png)
+    ![Selection of the 3D card](/help/assets/dynamic-media/assets/3d-card-select.png)
     _In Card View, tap the card of the 3D asset you want to preview._
 
 1. Tap the card of the 3D asset.
