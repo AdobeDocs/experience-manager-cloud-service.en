@@ -104,7 +104,7 @@ The recommended application deployment structure is as follows:
     + `site-b.ui.content` deploys content and configuration required by site B
 
 + The `ui.config` package contains all [OSGi configurations](/help/implementing/deploying/configuring-osgi.md):
-    + It is considered code and belongs to an OSGi bundles, thus it is marked as a container package
+    + Considered code and belongs to OSGi bundles but does not contain regular content nodes. Thus it is marked as a container package
     + Organizational folder containing run mode specific OSGi config definitions
         + `/apps/my-app/osgiconfig`
     + Common OSGi configuration folder containing default OSGi configurations that apply to all target AEM as a Cloud Service deployment targets
