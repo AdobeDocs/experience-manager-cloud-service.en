@@ -16,11 +16,11 @@ In this part of the [AEM Headless Developer Journey](overview.md), learn how to 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless journey, [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) you learned how to prepare your own AEM headless project to go live and you should now:
+In the previous document of the AEM headless journey, [How to Update Your Content via AEM Assets APIs](update-your-content.md) you learned how to update your existing headless content in AEM via API and you should now:
 
-* Understand the requirements to go live.
+* Understand the AEM Assets HTTP API.
 
-This article builds on those fundamentals so you understand how to actually take your AEM Headless project live.
+This article builds on those fundamentals so you understand how to prepare your own AEM headless project to go live.
 
 ## Objective {#objective}
 
@@ -145,13 +145,13 @@ In order for users to have the best possible experience when using the AEM headl
 * Verify AEM status pages for current service availability status
 * Access performance reports
   * Delivery Performance
-    * Fastly (CDN) – check number of calls, cache rate, error rates, payload traffic
+    * CDN (Fastly) performance – check number of calls, cache rate, error rates and payload traffic
     * Origin servers - number of calls, error rates, CPU loads, payload traffic
   * Author Performance
     * Check number of users, requests and load
 * Access App and Space specific performance reports
   * Once the server is up, check whether the general metrics are green/orange/red, then identify specific app issues
-  * Open same reports above filtered to app/space (I.e. Photoshop desktop, paywall, etc.)
+  * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
 
@@ -175,15 +175,6 @@ In order to efficiently log a bug with Support in case you need further assistan
 * Document a way to reproduce the issue
 * Document the content the issue reproduces with
 * Log an issue through the AEM Support portal with the appropriate priority
-
-## What's Next {#what-is-next}
-
-Now that you have completed this part of the AEM Headless Developer Journey, you should:
-
-* Understand AEM Content Replication and Caching Basics.
-* Know how to configure the tooling required to simulate go live for your headless application.
-* Know how to secure and Scale your application before Launch.
-* Understand how to monitor Performance and Debug Issues.
 
 ## The Journey Ends - Or Does It? {#journey-ends}
 
