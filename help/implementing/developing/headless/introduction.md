@@ -3,6 +3,7 @@ title: Headless Development for AEM Sites as a Cloud Service
 description: Learn how AEM as a Cloud Service's powerful headless capabilities like Content Models, Content Fragments, and the GraphQL API work together to enable you to manage your experiences centrally and serve them across channels.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 ---
+
 # Headless Development for AEM Sites as a Cloud Service {#headless-development}
 
 Learn how AEM as a Cloud Service's powerful headless capabilities like Content Models, Content Fragments, and the GraphQL API work together to enable you to manage your experiences centrally and serve them across channels.
@@ -40,28 +41,12 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
    * The AEM Assets REST API supports Content Fragment CRUD operations.
    * Direct content delivery is also possible with the [Content Fragment Core Component's JSON export.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## Headless Getting Started Guides {#getting-started}  
+## Your First Steps with AEM Headless {#first steps}
 
-The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service in five steps. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
+There are a number of resources available for your to get started with AEM's headless features. They are intended for different use cases, but all give a solid overview of AEM's headless features.
 
-1. [Creating a Configuration](getting-started/create-configuration.md)
-1. [Creating a Content Fragment Model](getting-started/create-content-model.md)
-1. [Creating an Assets Folder](getting-started/create-assets-folder.md)
-1. [Creating a Content Fragment](getting-started/create-content-fragment.md)
-1. [Accessing and Delivering Content Fragments](getting-started/create-api-request.md)
-
-## Audience {#audience}
-
-The tasks described in the [Headless Getting Started Guides](#getting-started) are necessary for a basic end-to-end demonstration of AEM's headless capabilities. Anyone with administrator access to a test AEM instance can follow these guides to understand headless delivery in AEM, though someone with developer experience is ideal.
-
-However in a production situation, the tasks will be performed by different personas a varying number of times. For example:
-
-* **Administrators** will need to set up the initial configuration and folder structure for the content normally only once or sporadically.
-* **Information architects** generally will add new models as the needs of the organization evolve.
-* **Content authors** will continually create new content as Content Fragments based on the models defined by the architects.
-
-The Headless Getting Started Guides point out who would generally perform the tasks described and how frequently.
-
-## Next Step {#next-step}
-
-Ready to learn more? Then get started by reading the first part of the Headless Getting Started Guide: [Creating a Configuration.](getting-started/create-configuration.md)
+|Resource|Description|Type|Audience|Est. Time|
+|---|---|---|---|---|
+|[Headless Developer Journey](/help/implementing/developing/headless-journey/overview.md)|For a comprehensive overview of AEM's headless features from the theory of headless through going live with your first headless project, start here.|Guide|Developers|1 hour|
+|[Headless Getting Started Guide](/help/implementing/developing/headless/getting-started/introduction.md)|For a short summary of the key AEM headless features, check out this quick start overview.|Quick Start|Developers, Administrators|20 minutes|
+|[Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)|If you prefer a hands-on approach, this tutorial dives directly into creating a simple headless project.|Tutorial|Developers|2 hours|
