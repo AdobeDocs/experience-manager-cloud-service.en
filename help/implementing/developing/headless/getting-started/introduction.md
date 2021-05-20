@@ -27,4 +27,4 @@ The Headless Getting Started Guides point out who would generally perform the ta
 
 ## Next Step {#next-step}
 
-Ready to learn more? Then get started by reading the first part of the Headless Getting Started Guide: [Creating a Configuration.](getting-started/create-configuration.md)
+Ready to learn more? Then get started by reading the first part of the Headless Getting Started Guide: [Creating a Configuration.](create-configuration.md)
