@@ -7,7 +7,11 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 
 AEM Cloud Service brings many new features and possibilities for managing your AEM projects. However there are a number of differences between AEM Sites on premise or in Adobe Managed Service as compared to AEM Cloud Service. This document highlights the important differences.
 
-[!CONTEXTUALHELP] id="aem_cloud_notable_changes" title="Notable Changes in AEM as a Cloud Service" abstract="In this tab, you can view content that will help you to understand the differences between AEM on premise, or in Adobe Managed Services, as compared to AEM as a Cloud Service." additional-url="https://video.tv.adobe.com/v/330543" text="Evolution of AEM as a Cloud Service"
+>[!CONTEXTUALHELP]
+>id="aem_cloud_notable_changes"
+>title="Notable Changes in AEM as a Cloud Service"
+>abstract="In this tab, you can view content that will help you to understand the differences between AEM on premise, or in Adobe Managed Services, as compared to AEM as a Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolution of AEM as a Cloud Service"
 
 
 >[!NOTE]
