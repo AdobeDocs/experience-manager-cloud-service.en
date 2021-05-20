@@ -132,6 +132,7 @@ role: Developer, Architect
     + [SPA Reference Documents](developing/hybrid/reference-materials.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
+    + [Headless Developer Journey](/help/journey-headless/developer/overview.md)
     + Getting Started Guides {#getting-started}
       + [Creating a Configuration](developing/headless/getting-started/create-configuration.md)
       + [Creating a Content Fragment Model](developing/headless/getting-started/create-content-model.md)
