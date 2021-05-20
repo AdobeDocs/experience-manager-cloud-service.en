@@ -10,7 +10,7 @@ exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 
 >[!CAUTION]
 >
->WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+>OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn about headless technology and why you would use it.
 
