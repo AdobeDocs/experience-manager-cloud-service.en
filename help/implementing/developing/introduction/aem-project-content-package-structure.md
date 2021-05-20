@@ -137,7 +137,7 @@ For example, an AEM project that includes 2 vendor AEM applications might look l
 
 Packages are to be marked with their declared package type. Package types help clarify the purpose and deployment of a package.
 
-+ Container packages must set their `packageType` to `container`. Container packages must not contain regular nodes. Only OSGi bundles, configurations and sub packages are allowed. Containers are allowed to use [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Container packages must set their `packageType` to `container`. Container packages must not contain regular nodes. Only OSGi bundles, configurations and sub packages are allowed. Containers in AEM as a Cloud Service are not allowed to use [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Code (immutable) packages must set their `packageType` to `application`.
 + Content (mutable) packages must set their `packageType` to `content`.
 
