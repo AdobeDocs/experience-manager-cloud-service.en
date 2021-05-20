@@ -1,16 +1,9 @@
 ---
 title: How to Access Your Content via AEM Delivery APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use GraphQL queries to access your Content Fragments content.
-hide: yes
-hidefromtoc: yes
-index: no
-exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 ---
-# How to Access Your Content via AEM Delivery APIs {#access-your-content}
 
->[!CAUTION]
->
->OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
+# How to Access Your Content via AEM Delivery APIs {#access-your-content}
 
 In this part of the [AEM Headless Developer Journey,](overview.md) you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).
 
@@ -37,7 +30,7 @@ So...you've got all this content, neatly structured (in Content Fragments), and 
 
 What you need is a way to target specific content, select what you need and return it to your app for further processing.
 
-With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively access your Content Fragments, using the AEM GraphQL API, to return only the content that you need. This means you can realize headless delivery of structured content for use in your applications. 
+With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively access your Content Fragments, using the AEM GraphQL API, to return only the content that you need. This means you can realize headless delivery of structured content for use in your applications.
 
 >[!NOTE]
 >
@@ -50,7 +43,7 @@ GraphQL is an open-source specification that provides:
 * a query language that enables you to select specific content from structured objects.
 * a runtime to fulfill these queries with your structured content.
 
-GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
+GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects.
 
 GraphQL endpoints then provide the paths that respond to the GraphQL queries.
 
@@ -84,13 +77,13 @@ The AEM GraphQL API is a customized version based on the standard GraphQL API sp
 
 Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
 
-* A Content Fragment Model is built up of one, or more, fields. 
+* A Content Fragment Model is built up of one, or more, fields.
   * Each field is defined according to a Data Type.
 * Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
 
-To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
+To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path.
 
-The content returned, via the AEM GraphQL API, can then be used by your applications. 
+The content returned, via the AEM GraphQL API, can then be used by your applications.
 
 To help you directly input, and test queries, an implementation of the standard GraphiQL interface is also available for use with AEM GraphQL (this can be installed with AEM). It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
 
@@ -119,7 +112,7 @@ Content Fragments can be used as a basis for GraphQL for AEM schemas and queries
 * They enable you to design, create, curate and publish page-independent content that can be delivered headlessly.
 * They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment using a selection of data types.
 * Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
- 
+
 ### Content Fragment Models {#content-fragments-models}
 
 These Content Fragment Models:
@@ -273,7 +266,7 @@ The fragment models will be used:
 
 The queries can be entered in the GraphiQL interface, for example at:
 
-* `http://localhost:4502/content/graphiql.html `
+* `http://localhost:4502/content/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 
@@ -355,7 +348,7 @@ For the full details of using the AEM GraphQL API, together with configuring the
 
 ## What's Next {#whats-next}
 
-Now that you have learned how to access and query your headless content using the AEM GraphQL API you can now [learn how to use the REST API to access and update the content of your Content Fragments](/help/implementing/developing/headless-journey/update-your-content.md).
+Now that you have learned how to access and query your headless content using the AEM GraphQL API you can now [learn how to use the REST API to access and update the content of your Content Fragments](update-your-content.md).
 
 ## Additional Resources {#additional-resources}
 
@@ -363,7 +356,7 @@ Now that you have learned how to access and query your headless content using th
   * [Schemas](https://graphql.org/learn/schema/)
   * [Variables](https://graphql.org/learn/queries/#variables)
   * [GraphQL Java libraries](https://graphql.org/code/#java)
-* [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) 
+* [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Learning to use GraphQL with AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
   * [Enabling your GraphQL Endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
   * [Installing the AEM GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)

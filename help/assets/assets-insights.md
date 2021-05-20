@@ -3,29 +3,29 @@ title: Asset Insights
 description: Track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions.
 contentOwner: AG
 feature: Asset Insights,Asset Reports
-role: Business Practitioner
+role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 ---
 # Asset Insights {#asset-insights}
 
-Asset Insights track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. It helps provide insights about performance and popularity of the images.
+Asset Insights functionality lets you track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. It helps provide insights about performance and popularity of the images.
 
 Assets Insights captures user activity details, such as the number of times an image is rated, clicked, and impressions (number of times an image is loaded on the website). It assigns scores to images based on these statistics. You can use the scores and performance statistics to select popular images for inclusion in catalogs, marketing campaigns, and so on. You can even formulate archival and license renewal policies based on these statistics.
 
 For Assets Insights to capture usage statistics for images from a website, you must include the embed code for the image in the website code.
 
-To let Asset Insights display usage statistics for assets, first configure the feature to fetch reporting data from Adobe Analytics. For details, see [Configure Asset Insights](#configure-asset-insights).
+To let Asset Insights display usage statistics for assets, first configure the feature to fetch reporting data from [!DNL Adobe Analytics]. For details, see [Configure Asset Insights](#configure-asset-insights). To use this feature, buy [!DNL Adobe Analytics] license separately.
 
 >[!NOTE]
 >
->Insights are only supported and provided for images.
+>Insights are supported and provided only for images.
 
 ## View statistics for an image {#viewing-statistics-for-an-image}
 
 You can view the Asset Insights scores from the metadata page.
 
-1. From the Assets user interface (UI), select the image and then tap **[!UICONTROL Properties]** from the toolbar.
-1. From the Properties page, tap **[!UICONTROL Insights]**.
+1. From the Assets user interface, select the image and then click **[!UICONTROL Properties]** from the toolbar.
+1. From the Properties page, click **[!UICONTROL Insights]**.
 1. Review the usage details for the asset in the **[!UICONTROL Insights]** tab. The **[!UICONTROL Score]** section describes the total asset usage and performance sores of an asset .
 
    Usage score describes the numbers of times asset is used in various solutions.
@@ -36,14 +36,14 @@ You can view the Asset Insights scores from the metadata page.
 
     * **[!UICONTROL Asset]**: The number of times the asset was part of a collection or compound asset.
     * **[!UICONTROL Web & Mobile]**: The number of times the asset was part of websites and apps.
-    * **[!UICONTROL Social]**: The number of times the asset was used in solutions, such as Adobe Social and Adobe Campaign.
+    * **[!UICONTROL Social]**: The number of times the asset was used in other solutions such as a [!DNL Adobe Campaign].
     * **[!UICONTROL Email]**: The number of times the asset was used in email campaigns.
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Because the Asset Insights feature typically fetches the Solutions data from Adobe Analytics in a periodic manner, the Solutions section may not displaythemost recent data. The time period for which the data is displayed depends the schedule of the fetch operation that Asset Insights runs to retrieve Analytics data.
+   >Because the Asset Insights feature typically fetches the Solutions data from [!DNL Adobe Analytics] in a periodic manner, the Solutions section may not display the most recent data. The time period for which the data is displayed depends the schedule of the fetch operation that Asset Insights runs to retrieve Analytics data.
 
 1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. Details, including clicks and impressions are displayed as trend lines of a graph.
 
@@ -53,7 +53,7 @@ You can view the Asset Insights scores from the metadata page.
    >
    >Unlike the data in the Solutions section, the Performance Statistics section displays the most recent data.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **[!UICONTROL Get Embed Code]** below the asset thumbnail. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. To obtain the embed code for the asset that you include in websites to gets performance data, click **[!UICONTROL Get Embed Code]** below the asset thumbnail. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -62,7 +62,7 @@ You can view the Asset Insights scores from the metadata page.
 You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
 1. In the Assets UI, navigate to the folder containing the assets for which you want to view insights.
-1. Tap/click the Layout icon from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. Click the Layout option from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -98,8 +98,8 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *Figure: Configure Adobe Analytics for Assets Insights in [!DNL Experience Manager]*
 
-1. Click/tap **[!UICONTROL Authenticate]**. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an Adobe Analytics report suite from where you want Asset Insights to fetch data. Click **[!UICONTROL Add]**.
-1. After [!DNL Experience Manager] sets up your report suite, tap **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Authenticate]**. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an Adobe Analytics report suite from where you want Asset Insights to fetch data. Click **[!UICONTROL Add]**.
+1. After [!DNL Experience Manager] sets up your report suite, click **[!UICONTROL Done]**.
 
 ### Page Tracker {#page-tracker}
 
