@@ -1,12 +1,12 @@
 ---
-title: How to Go Live with Your Headless Application
+title: How to Go Live with Your Headless application
 description: In this part of the AEM Headless Developer Journey, learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 hide: yes
 hidefromtoc: yes
 index: no
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 ---
-# How to Go Live with Your Headless Application {#go-live}
+# How to Go Live with Your Headless application {#go-live}
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ A full AEM environment is made up of an Author, Publish, and Dispatcher. These s
 
 * **The Author service** is where internal users create, manage, and preview content.
 
-* **The Publish service** is considered the “Live” environment and is typically what end users interact with. Content, after being edited and approved on the Author service, is distributed to the Publish service. The most common deployment pattern with AEM headless applications is to have the production version of the application connect to an AEM Publish service.
+* **The Publish service** is considered the “Live” environment and is typically what end users interact with. Content, after being edited and applicationroved on the Author service, is distributed to the Publish service. The most common deployment pattern with AEM headless applications is to have the production version of the application connect to an AEM Publish service.
 
 * **The Dispatcher** is a static web server augmented with the AEM dispatcher module. It caches web pages produced by the publish instance to improve performance.
 
@@ -93,15 +93,15 @@ The local development environment is comprised of three main areas:
 1. The Local AEM Runtime - local versions of the AEM author and publish services that will be used to deploy code from the AEM project
 1. The Local Dispatcher Runtime - a local version of the Apache htttpd webserver that includes the Dispatcher module
 
-Once the local development environment is set up, you can simulate content serving to the React app by deploying a static Node server locally.
+Once the local development environment is set up, you can simulate content serving to the React application by deploying a static Node server locally.
 
 In order to get a more in depth look at setting up a local development environemnt and all dependencies needed for content preview see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
+## Prepare your AEM Headless application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 Now, it's time to get your AEM headless application ready for launch, by following the best practices outlined below.
 
-### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
+### Secure and Scale your Headless application Before Launch {#secure-and-scale-before-launch}
 
 1. Configure [Token Based Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
 1. Configure [Caching](/help/implementing/dispatcher/caching.md). 
@@ -141,7 +141,7 @@ You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline
 
 In order for users to have the best possible experience when using the AEM headless application, it is important that you monitor key performance metrics, as detailed below:
 
-* Validate preview and production versions of the app
+* Validate preview and production versions of the application
 * Verify AEM status pages for current service availability status
 * Access performance reports
   * Delivery Performance
@@ -149,10 +149,10 @@ In order for users to have the best possible experience when using the AEM headl
     * Origin servers - number of calls, error rates, CPU loads, payload traffic
   * Author Performance
     * Check number of users, requests and load
-* Access App and Space specific performance reports
-  * Once the server is up, check whether the general metrics are green/orange/red, then identify specific app issues
-  * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
-  * Use Splunk log APIs to access service and application performance
+* Access application and Space specific performance reports
+  * Once the server is up, check whether the general metrics are green/orange/red, then identify specific application issues
+  * Open reports mentioned above, but filter them to the application or space (for example Photoshop desktop, paywall)
+  * [Use Splunk log APIs](/help/implementing/developing/introduction/logging.md#splunk-logs) to access service and application performance
   * Contact Customer Support in case there are other issues.
 
 ## Troubleshooting {#troubleshooting}
@@ -163,7 +163,7 @@ Follow these best practices as a general approach to debugging:
 
 * Validate functionality and performance with the preview version of the application
 * Validate functionality and performance with the production version of the application
-* Validate with the JSON preview of the Content Fragment Editor
+* Validate with the [JSON preview](/help/assets/content-fragments/content-fragments-json-preview.md) of the Content Fragment Editor
 * Inspect the JSON in the client application to check for the presence of client application or delivery issues
 * Inspect the JSON using GraphQL to check for the presence of issues related to cached content or AEM
 
@@ -174,7 +174,7 @@ In order to efficiently log a bug with Support in case you need further assistan
 * Take screenshots of the problem, if necessary
 * Document a way to reproduce the issue
 * Document the content the issue reproduces with
-* Log an issue through the AEM Support portal with the appropriate priority
+* Log an issue through the AEM Support portal with the applicationropriate priority
 
 ## The Journey Ends - Or Does It? {#journey-ends}
 
