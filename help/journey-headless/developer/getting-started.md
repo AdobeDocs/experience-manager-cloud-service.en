@@ -48,7 +48,7 @@ Replication is the act of transferring content from the author instance to the p
 At its simplest level, creating digital experiences in AEM requires the following steps:
 
 1. Your content authors will create your headless content in the author instance.
-1. When this content is ready, it is replicated to the publish instance. 
+1. When this content is ready, it is replicated to the publish instance.
 1. APIs can then be called to retrieve this content.
 
 AEM Headless builds off of this technical foundation by offering powerful tools to manage headless content which is [described in the next section.](#aem-headless-basics)
