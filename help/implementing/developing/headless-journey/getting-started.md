@@ -10,7 +10,7 @@ exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
 
 >[!CAUTION]
 >
->WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+>OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn about what is required to get your own project started with AEM Headless.
 

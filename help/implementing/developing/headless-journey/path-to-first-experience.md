@@ -10,7 +10,7 @@ exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 
 >[!CAUTION]
 >
->WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+>OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
 
 In this part of the [AEM Headless Developer Journey,](overview.md) you will understand the steps to implementing your first headless experience in AEM including planning considerations and also learn best practices to make your path as smooth as possible.
 
