@@ -34,7 +34,7 @@ On the mobile web, the challenges are compounded by two factors:
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. 
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
 
 ### About device pixel ratio optimization {#dpr}
 
