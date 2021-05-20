@@ -203,14 +203,14 @@ Associated content is currently not exposed.
 
 ### Access {#access}
 
-The Assets REST API uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`). 
+The Assets REST API uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`).
 
 * This means that to access the asset at:
   * `/content/dam/path/to/asset`
 * You need to request:
-  * `/api/assets/path/to/asset` 
+  * `/api/assets/path/to/asset`
 
-For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
+For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Access over:
@@ -231,7 +231,7 @@ The HTTP method determines the operation to be executed:
 >
 >The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
-The exact format of supported requests is defined in the API Reference documentation. 
+The exact format of supported requests is defined in the API Reference documentation.
 
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
@@ -248,7 +248,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html). 
+>For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -283,7 +283,7 @@ Usage is via
 
 The body has to contain a JSON representation of what is to be updated for the given content fragment.
 
-This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata. 
+This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata.
 
 ### Delete {#delete}
 
