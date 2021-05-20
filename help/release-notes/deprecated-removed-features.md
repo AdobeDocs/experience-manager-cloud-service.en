@@ -5,7 +5,8 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 ---
 # Deprecated and removed features {#deprecated-and-removed-features}
 
->[!CONTEXTUALHELP] id="aem_cloud_deprecated_features"
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
 >title="Deprecated and Removed Features in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service has a cloud-native deployment model. Certain capabilities and features have been repalced by cloud-native counterparts and this tab shows those features." 
 
