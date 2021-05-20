@@ -1,16 +1,9 @@
 ---
 title: AEM Headless Developer Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
-hide: yes
-hidefromtoc: yes
-index: no
-exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
 ---
-# AEM Headless Developer Journey {#aem-headless-developer-journey}
 
->[!CAUTION]
->
->OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
+# AEM Headless Developer Journey {#aem-headless-developer-journey}
 
 Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless development project.
 
