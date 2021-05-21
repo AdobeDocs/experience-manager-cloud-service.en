@@ -19,7 +19,6 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 You can download Experience Manager assets using the following methods:
 
 * [Experience Manager user interface](#download-in-aem)
-* Asset Link Share user interface
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
