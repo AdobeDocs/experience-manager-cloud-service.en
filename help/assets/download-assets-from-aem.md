@@ -18,14 +18,14 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 You can download Experience Manager assets using the following methods:
 
-* [Experience Manager user interface](#download-in-aem)
+* [Experience Manager user interface](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Download assets using [!DNL Experience Manager] interface {#download-in-aem}
+## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. The large files are downloaded asynchronously and users are informed of the completion via Experience Manager notifications in the Inbox. See [understanding Experience Manager inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows for faster downloads. The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Download notification](assets/download-notification.png)
 
@@ -45,7 +45,7 @@ To download assets, follow these steps:
 
    *Figure: Download dialog box options.*
 
-1. In the Download dialog box, select the download options you want.
+1. In the download dialog box, select the download options that you want.
 
    | Download option | Description |
    |---|---|
