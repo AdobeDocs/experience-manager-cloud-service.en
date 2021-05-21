@@ -1,16 +1,9 @@
 ---
 title: AEM Headless Developer Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
-hide: yes
-hidefromtoc: yes
-index: no
-exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
 ---
-# AEM Headless Developer Journey {#aem-headless-developer-journey}
 
->[!CAUTION]
->
->OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
+# AEM Headless Developer Journey {#aem-headless-developer-journey}
 
 Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless development project.
 
@@ -18,7 +11,7 @@ Start here for a guided journey through the powerful and flexible headless featu
 
 Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel.
 
-Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing web experiences.
+Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing digital experiences.
 
 This guide leads you through the most important topics so that on completion you:
 
@@ -47,7 +40,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |4|[How to model your content](model-your-content.md)|Learn how to model your content structure. Then realize that structure for Adobe Experience Manager (AEM) using Content Fragments Models and Content Fragments, for reuse across channels.|
 |5|[How to access your content via AEM delivery APIs](access-your-content.md)|Learn how to use GraphQL queries to access your Content Fragments content.|
 |6|[How to update your content via AEM assets APIs](update-your-content.md)|Learn how to use REST API to access and update your Content Fragments content.|
-|7|[How to put it all together - your app and your content in AEM Headless](put-it-all-together.md)|Learn how to take your AEM Project including Content Fragments, your GraphQL calls, your REST API calls, and your application, and prepare it for going live.|
+|7|[How to put it all together - your app and your content in AEM Headless](put-it-all-together.md)|Learn how to take your AEM Project and prepare it for going live with the AEM Headless SDK.|
 |8|[How to go live with your headless application](go-live.md)|Learn how to deploy application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
 |9|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
 

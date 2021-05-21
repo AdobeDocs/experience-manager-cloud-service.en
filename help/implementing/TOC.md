@@ -132,7 +132,9 @@ role: Developer, Architect
     + [SPA Reference Documents](developing/hybrid/reference-materials.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
+    + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
     + Getting Started Guides {#getting-started}
+      + [Introduction](developing/headless/getting-started/introduction.md)
       + [Creating a Configuration](developing/headless/getting-started/create-configuration.md)
       + [Creating a Content Fragment Model](developing/headless/getting-started/create-content-model.md)
       + [Creating an Assets Folder](developing/headless/getting-started/create-assets-folder.md)

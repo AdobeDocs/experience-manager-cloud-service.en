@@ -1,16 +1,9 @@
 ---
 title: How to Model Your Content
 description: In this part of the AEM Headless Developer Journey, learn how to model your content for AEM Headless delivery using Content Modeling with Content Fragment Models and Content Fragments.
-hide: yes
-hidefromtoc: yes
-index: no
-exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 ---
-# How to Model Your Content {#model-your-content}
 
->[!CAUTION]
->
->OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
+# How to Model Your Content {#model-your-content}
 
 In this part of the [AEM Headless Developer Journey](overview.md), you can learn how to model your content structure. Then realize that structure for Adobe Experience Manager (AEM) using Content Fragments Models and Content Fragments, for reuse across channels.
 
