@@ -30,13 +30,19 @@ The following release (2021.6.0) will be on June 24, 2021.
 
   >[!NOTE]
   >
-  >The enhancement is scheduled to release on May 24, 2021 in NA, June 25, 2021 in EMEA, and July 19, 2021 in APAC regions.
+  >The release timeline for the enhancement is:
+  >North America - May 24, 2021
+  >Europe, Middle East, Africa - June 25, 2021
+  >Asia-Pacific - July 19, 2021.
 
 * Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier).
 
   >[!NOTE]
   >
-  >The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
+  >The release timeline for the AVIF support is:
+  >North America - May 10, 2021
+  >Europe, Middle East, Africa - May 24, 2021
+  >Asia-Pacific - June 24, 2021.
 
 ### Bug fixes in [!DNL Assets] {#bug-fixes-assets}
 
