@@ -167,7 +167,7 @@ To use Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on E
 
 To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.  
   
-Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you currently use a generic domain, you can request to move over to your own custom domain. Make this transition request when you submit a technical support ticket.
+Tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you currently use a generic domain, you can request to move over to your own custom domain. Make this transition request when you submit a technical support ticket.
 
 Your first custom domain is no additional cost with a Dynamic Media license.
 
