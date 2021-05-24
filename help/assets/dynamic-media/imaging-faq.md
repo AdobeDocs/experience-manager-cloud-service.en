@@ -91,7 +91,7 @@ Enhancements in latest version of Smart Imaging:
 
 ## Are there any licensing costs associated with Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Smart Imaging is included with your existing license. This rule is true for either Dynamic Media Classic or Experience Manager Dynamic Media (On-prem, AMS, and Experience Manager as a Cloud Service).
+No. Smart Imaging is included with your existing license. This rule is true for either Dynamic Media Classic or Experience Manager - Dynamic Media (On-prem, AMS, and Experience Manager as a Cloud Service).
 
 >[!NOTE]
 >
