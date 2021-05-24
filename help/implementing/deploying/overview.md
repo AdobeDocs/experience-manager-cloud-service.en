@@ -94,7 +94,7 @@ After switchover to new version of application:
   * Folders (add, modify, remove)
   * Editable templates (add, modify, remove)
   * Context Aware configuration (anything under `/conf`) (add, modify, remove)
-  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks, which include allowed users to execute them).
+  * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
 
 It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
