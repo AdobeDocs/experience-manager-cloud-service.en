@@ -20,7 +20,7 @@ You add Dynamic Media assets directly to the page if you are using Experience Ma
 
 Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video, or Video 360 Media component to a page is the same as adding a component to any page.
 
-**Adding a Dynamic Media component to a page**
+**To add a Dynamic Media component to a page:**
 
 1. In Experience Manager, open the page where you want to add the Dynamic Media component.
 1. In the left pane, tap the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
@@ -121,7 +121,7 @@ The Dynamic Media component is smart. Depending on whether you add an image or a
 
 When you add the Dynamic Media component, and **[!UICONTROL Dynamic Media Settings]** is blank or you cannot add an asset properly, check the following:
 
-* The image has a pyramid tiff file. Images that are imported before Dynamic Media is enabled do not have a pyramid tiff file.
+* The image has a pyramid tiff file. Images that are imported before you enable Dynamic Media do not have a pyramid tiff file.
 
 #### When working with images {#when-working-with-images}
 
@@ -131,46 +131,56 @@ You can also configure the viewer preset, image preset, or image format directly
 
 You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
-![dm-settings-image-preset](assets/dm-settings-image-preset.png)
+![Dynamic Media image preset settings](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
 >By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
-* **[!UICONTROL Viewer preset]**&mdash;Select an existing viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and conversely.
+* **[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and conversely.
 
-    This option is the only one available if you are viewing image sets, spin sets, or mixed media sets. The viewer presets displayed are also smart&ndash;only relevant viewer presets appear.
+  This option is the only one available if you are viewing image sets, spin sets, or mixed media sets. The viewer presets displayed are also smart&ndash;only relevant viewer presets appear.
 
-* **[!UICONTROL Viewer modifiers]**&mdash;Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption/subtitle file with the video.
+* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption/subtitle file with the video.
 
-* **[!UICONTROL Image preset]**&mdash;Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
+* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-* **[!UICONTROL Image Modifiers]**&mdash;You can apply image effects by supplying more image commands. These commands are described in Image Presets and the Image Serving Command reference.
+* **[!UICONTROL Image Modifiers]** - You can apply image effects by supplying more image commands. These commands are described in Image Presets and the Image Serving Command reference.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-* **[!UICONTROL Breakpoints]**&mdash;If you are using this asset on a responsive site, you must add the image breakpoints. Image breakpoints must be separated by commas (,). This option works when there is no height or width defined in an image preset.
+* **[!UICONTROL Breakpoints]** - If you are using this asset on a responsive site, you must add the image breakpoints. Image breakpoints must be separated by commas (,). This option works when there is no height or width defined in an image preset.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-    You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
+  You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Title]**&mdash;Change the title of the image.
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-* **[!UICONTROL Alt Text]**&mdash;Add a title to the image for those users who have graphics turned off.
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
 
-* **[!UICONTROL URL, Open in]**&mdash;You can set an asset to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-* **[!UICONTROL Width]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Title]** - Change the title of the image.
 
-* **[!UICONTROL Height]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Alt Text]** - Add a title to the image for those users who have graphics turned off.
 
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+
+* **[!UICONTROL URL, Open in]** - You can set an asset to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
+
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+
+* **[!UICONTROL Width]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+
+* **[!UICONTROL Height]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
 #### When working with Video {#when-working-with-video}
 
@@ -184,9 +194,9 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 >
 >By default, the Dynamic Media video component is adaptive. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-* **[!UICONTROL Viewer preset]**&mdash;Select an existing video viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets.
+* **[!UICONTROL Viewer preset]** - Select an existing video viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets.
 
-* **[!UICONTROL Viewer modifiers]**&mdash;Viewer modifiers take the form of `name=value` pair with a `&` delimiter. They let you change viewers as outlined in the Adobe Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of `name=value` pair with a `&` delimiter. They let you change viewers as outlined in the Adobe Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1`
 
     With viewer modifiers you can, for example, do the following:
 
@@ -195,11 +205,11 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Title]**&mdash;Change the title of the video.
+* **[!UICONTROL Title]** - Change the title of the video.
 
-* **[!UICONTROL Width]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Width]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
-* **[!UICONTROL Height]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Height]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
 #### When working with Smart Crop {#when-working-with-smart-crop}
 
@@ -209,7 +219,7 @@ See [Using Smart Crop with Experience Manager Assets Dynamic Media](https://expe
 
 See also [Image Profiles](/help/assets/dynamic-media/image-profiles.md).
 
-![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
+![Dynamic Media smart crop settings](assets/dm-settings-smart-crop.png)
 
 You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
 
@@ -217,33 +227,45 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 >
 >By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
-* **[!UICONTROL Image Modifiers]**&mdash;You can apply image effects by supplying more image commands. These commands are described in Image Presets and the Image Serving Command reference.
+* **[!UICONTROL Image Modifiers]** - You can apply image effects by supplying more image commands. These commands are described in Image Presets and the Image Serving Command reference.
 
     This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Enable Aspect Ration match]**&mdash;To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
+* **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
-* **[!UICONTROL Title]**&mdash;Change the title of the Smart Crop image.
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-* **[!UICONTROL Alt Text]**&mdash;Add a title to the smart crop image for those users who have graphics turned off.
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+
+* **[!UICONTROL Title]** - Change the title of the Smart Crop image.
+
+* **[!UICONTROL Alt Text]** - Add a title to the smart crop image for those users who have graphics turned off.
 
     This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-* **[!UICONTROL URL, Open in]**&mdash;You can set an asset to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
+* **[!UICONTROL URL, Open in]** - You can set an asset to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
 
     This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-* **[!UICONTROL Width]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Width]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
-* **[!UICONTROL Height]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Height]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
 ### Component: Interactive Media {#interactive-media-component}
 
 Interactive Media component is for those assets that have interactivity on them such hotspots or image maps. If you have an interactive image, interactive video, or carousel banner, use the **[!UICONTROL Interactive Media]** component.
 
-The Interactive Media component is smart. Depending on whether you add an image or a video, you have various options. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based onscreen size. All viewers are HTML5 viewers.
+The Interactive Media component is smart. Depending on whether you add an image or a video, you have various options. In addition, the viewer is responsive - the size of the screen changes automatically based onscreen size. All viewers are HTML5 viewers.
 
 >[!NOTE]
 >
@@ -260,21 +282,21 @@ The Interactive Media component is smart. Depending on whether you add an image 
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Viewer preset]**&mdash;Select an existing viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. Viewer Presets must be published before they can be used. See Managing Viewer Presets.
+* **[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. Viewer Presets must be published before they can be used. See Managing Viewer Presets.
 
-* **[!UICONTROL Title]**&mdash;Change the title of the video.
+* **[!UICONTROL Title]** - Change the title of the video.
 
-* **[!UICONTROL Width]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Width]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
-* **[!UICONTROL Height]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
+* **[!UICONTROL Height]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
     You can edit the following **[!UICONTROL Add To Cart]** settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Show Product Asset]**&mdash;By default, this value is selected. The product asset shows an image of the product as defined in the Commerce module. Clear the check mark to not show the product asset.
+* **[!UICONTROL Show Product Asset]** - By default, this value is selected. The product asset shows an image of the product as defined in the Commerce module. Clear the check mark to not show the product asset.
 
-* **[!UICONTROL Show Product Price]**&mdash;By default, this value is selected. Product price shows the price of the item as defined in the Commerce module. Clear the check mark to not show the product price.
+* **[!UICONTROL Show Product Price]** - By default, this value is selected. Product price shows the price of the item as defined in the Commerce module. Clear the check mark to not show the product price.
 
-* **[!UICONTROL Show Product Form]**&mdash;By default, this value is not selected. The Product Form includes any product variants such as size and color. Clear the check mark to not show the product variants.
+* **[!UICONTROL Show Product Form]** - By default, this value is not selected. The Product Form includes any product variants such as size and color. Clear the check mark to not show the product variants.
 
 ### Component: Panoramic Media {#panoramic-media-component}
 
@@ -296,11 +318,11 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 >
 >You can, however, use the same viewer preset for all Panoramic Media components that use assets of the same type, within the page.
 
-![panoramic-media-viewer-preset](assets/panoramic-media-viewer-preset.png)
+![Panoramic media viewer preset](assets/panoramic-media-viewer-preset.png)
 
 You can edit the following setting by tapping **[!UICONTROL Configure]** in the component.
 
-* **[!UICONTROL Viewer Preset]**&mdash;Select an existing viewer from the Viewer preset drop-down list.
+* **[!UICONTROL Viewer Preset]** - Select an existing viewer from the Viewer preset drop-down list.
 
 If the viewer preset you are looking for is not visible, check to ensure that it is published. Publish viewer presets before you use them. See [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -316,7 +338,7 @@ The viewer includes native support for the delivery of 360 video assets. By defa
 
 You can edit the following setting by tapping **[!UICONTROL Configure]** in the component.
 
-* **[!UICONTROL Viewer Preset]**&mdash;Select an existing viewer from the Viewer preset drop-down list. Use Video360VR for end users who use virtual reality glasses. Includes basic video playback controls and social media features. Use Video360_social which includes basic video playback controls. Video rendering is done in stereo mode. Manual point-of-view control is off but gyroscopic control is on. There are no social media features.
+* **[!UICONTROL Viewer Preset]** - Select an existing viewer from the Viewer preset drop-down list. Use Video360VR for end users who use virtual reality glasses. Includes basic video playback controls and social media features. Use Video360_social which includes basic video playback controls. Video rendering is done in stereo mode. Manual point-of-view control is off but gyroscopic control is on. There are no social media features.
 
 If the viewer preset you are looking for is not visible, check to ensure that it is published. Publish viewer presets before you use them. See [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
