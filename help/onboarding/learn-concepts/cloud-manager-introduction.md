@@ -25,6 +25,53 @@ A user can create a **Sandbox** or a **Production** program.
 * A *Sandbox Program* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a Production program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
    Refer to [Introduction to Sandbox Programs](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
 
+## Navigating to Cloud Manager {#navigate-cloud-manager}
+
+Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to [Adobe Experience Cloud](https://experience.adobe.com) Home page.
+
+>[!NOTE]
+>You must be added as a user and must be assigned at least to one Cloud Manager Role (Product Profile in Admin Console) by your System Administrator. 
+
+1. From your welcome email click on **Get started**, as shown in the figure below.
+    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
+
+   >[!NOTE]
+   >Alternatively, you can also navigate directly to Cloud Manager login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI. Refer to the section below, [Cloud Manager Landing page](#cloud-manager-landing) for more details.
+
+1. Select **Experience Manager**.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   
+1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+  
+
+### Cloud Manager Landing Page {#cloud-manager-landing}
+
+Upon successful login, you will be directed to the landing page of Cloud Manager.
+
+>[!NOTE]
+>Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
+
+You will see one of the three options, described below:
+
+* **When No Programs exist in Cloud Manager**
+
+   If no programs exist in your Organization, then your landing page directs you to create your first program, as shown in the figure below.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+* **When Programs already exist in Cloud Manager**
+
+   If program(s) already exist in your Organization, then your landing page directs you to add another program and displays all your existing programs too, as shown in the figure below.
+
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+* **When a Program exists and user is System Administrator**
+
+   If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
+
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+From here, a user with the right permissions, such as a Business Owner role in Cloud Manager is able to select **Add Program** to launch the [Add Program wizard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access).
 
 ## Cloud Manager Environments {#cloud-manager-environments}
 
