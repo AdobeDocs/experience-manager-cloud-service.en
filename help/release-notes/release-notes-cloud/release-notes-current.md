@@ -20,6 +20,26 @@ The following section outlines the general Release Notes for the current (latest
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 is May 27, 2021.
 The following release (2021.6.0) will be on June 24, 2021.
 
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+#### What is new in Dynamic Media {#what-is-new-dm}
+
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md).
+
+  >[!NOTE]
+  >
+  >The enhancement is scheduled to release on May 24, 2021 in NA, June 25, 2021 in EMEA, and July 19, 2021 in APAC regions.
+
+* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier).
+
+  >[!NOTE]
+  >
+  >The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
+
+### Bug fixes in [!DNL Assets] {#bug-fixes-assets}
+
 ## Cloud Manager {#cloud-manager}
 
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.5.0.
