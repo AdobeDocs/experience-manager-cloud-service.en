@@ -10,7 +10,7 @@ exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 
 >[!CAUTION]
 >
->WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+>OUTDATED - This draft content has been superseded by the new [Headless Developer Journey documentation.](/help/journey-headless/developer/overview.md)
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn about headless technology and why you would use it.
 
@@ -43,15 +43,15 @@ The complexity of the dependencies within the stack quickly become apparent as y
 
 ## Limits of Full-Stack Delivery {#limits}
 
-The full-stack approach inherently creates a silo where all experiences land in one system. Changes or additions component of the silo require changes of other components making changes time-intensive and costly.
+The full-stack approach inherently creates a silo where all experiences land in one system. Changes or additions to one component of the silo require changes to other components which can make changes time-intensive and costly.
 
-This is particularly true of the presentation layer, which in traditional systems, is often tightly bound to the CMS. Any new channel generally means an update to the presentation layer, which affects all other channels.
+This is particularly true of the presentation system, which in traditional setups, is often tightly bound to the CMS. Any new channel generally means an update to the presentation system, which can affect all other channels.
 
 ![Complexity grows as channels are added to a stack](assets/presentation-complexity.png)
 
-The limitations of this natural silo are apparent as you realize how much effort and time is required to coordinate changes across all components of your stack.
+The limitations of this natural silo can become apparent as you spend more effort to coordinate changes across all components of your stack.
 
-Users expect engagement no matter what the platform or touch point, requiring agility in how you deliver your experiences.  This multichannel approach is the standard of digital experiences and a full-stack approach can at times prove inflexible.
+Users expect engagement no matter what the platform or touch point, requiring agility in how you deliver your experiences.  This multichannel approach is the standard of digital experiences and a full-stack approach can in certain circumstances prove inflexible.
 
 ## The Head in Headless {#the-head}
 
@@ -65,15 +65,15 @@ When we talk about a headless CMS, the CMS manages the content and continues to 
 
 The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
-Omitting the head greatly simplifies the CMS by removing substantial complexity. Doing this also shifts the responsibility of rendering the content to the services that actually needs the content and are often better suited to such rendering.
+Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
 ## Decoupling {#decoupling}
 
 Headless delivery is possible by exposing a set of robust and flexible application programming interfaces (APIs) that all of your experiences can tap into. The API serves as a common language between the services, binding them together at the content level through standardized content delivery, but allowing them the flexibility to implement their own solutions.
 
-Headless is an example of decoupling your content from its presentation. Or in a more generic sense, decoupling the front end from the back end of your service stack. In a headless setup, the presentation layer (the head) is decoupled from the content management (the tail). The two only interact through API calls.
+Headless is an example of decoupling your content from its presentation. Or in a more generic sense, decoupling the front end from the back end of your service stack. In a headless setup, the presentation system (the head) is decoupled from the content management (the tail). The two only interact through API calls.
 
-This decoupling means that each consuming service (the front end) can build its experience based on the same content delivered over the APIs, ensuring content reuse and consistency. Consuming services can then implement their own presentation layers, allowing the content management stack (the back end) to easily scale horizontally.
+This decoupling means that each consuming service (the front end) can build its experience based on the same content delivered over the APIs, ensuring content reuse and consistency. Consuming services can then implement their own presentation systems, allowing the content management stack (the back end) to easily scale horizontally.
 
 ## Technological Underpinnings {#technology}
 
@@ -81,7 +81,7 @@ A headless approach allows you to build a technology stack that can easily and q
 
 APIs for CMSes in the past were usually REST-based. Representational state transfer (REST) provides resources as text in a stateless fashion. This allows the resources to be read and modified with a predefined set of operations. REST allowed for great interoperability between services on the web by ensuring stateless representation of the content.
 
-And there is still a need for robust REST APIs. However REST requests can be large and verbose. If you have multiple consumers making REST calls for all of your channels this verbosity compounds and performance can be affected.
+There is still a need for robust REST APIs. However REST requests can be large and verbose. If you have multiple consumers making REST calls for all of your channels this verbosity compounds and performance can be affected.
 
 Headless content delivery often makes use of GraphQL APIs. GraphQL allows for a similar stateless transfer, but allows for more targeted queries, reducing the total number of queries required, and improving performance. It is common to see solutions use a mixture of REST and GraphQL, essentially choosing the best tool for the job at hand.
 
@@ -109,9 +109,9 @@ It is impossible to predict the future, but headless gives you the agility to re
 
 As you continue through this developer journey, you will learn how AEM supports headless delivery along side its full-stack delivery capabilities.
 
-As an industry leader in digital experience management, Adobe realizes that the ideal solution to a real challenges that experience creators face is rarely a binary choice. This is why AEM not only supports both models, but also uniquely allows the seamless hybrid combination of the two to help you best serve the consumers of your content. Wherever they are.
+As an industry leader in digital experience management, Adobe realizes that the ideal solution to real-world challenges that experience creators face is rarely a binary choice. This is why AEM not only supports both models, but also uniquely allows the seamless hybrid combination of the two, blending the advantages of headless and full stack, to help you best serve the consumers of your content, wherever they are.
 
-This journey focuses on the headless-only model of content delivery. However once you have laid this foundation of knowledge, you can further explore how to leverage the power of both models.
+This journey focuses on the headless-only model of content delivery. However once you have this foundational knowledge, you can further explore how to leverage the power of both models.
 
 ## What's Next {#what-is-next}
 

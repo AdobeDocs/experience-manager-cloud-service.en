@@ -9,7 +9,7 @@ exl-id: ed470472-62d9-4684-971b-30df3919c180
 
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.
 
-A Spin Set simulates a 360-degree viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can “free-form” zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
+A Spin Set simulates a 360&deg; viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can “free-form” zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
 
 Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
@@ -37,7 +37,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
 1. [Create Spin Sets](#creating-spin-sets).
 
-   To create a Spin Set, select **[!UICONTROL Create > Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
+   To create a Spin Set, select **[!UICONTROL Create]** > **[!UICONTROL Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
 
    See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -45,7 +45,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    Administrators can create or modify Spin Set Viewer Presets. To see your spin set with a viewer preset, select the spin set, and in the left-rail drop-down menu, select **Viewers**.
 
-   To create or edit viewer presets, see **[!UICONTROL Tools > Assets > Viewer Presets]**.
+   To create or edit viewer presets, see **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 
    See [Adding and editing viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -83,7 +83,7 @@ The following are some best practices around spin set images. In general, the mo
 * Use a lossless format; TIFF and PNG are recommended.
 * Mask all images so the item appears on a pure white or other high-contrast background. Optionally, add shadows.
 * Make sure that product details are well lighted and in focus.
-* Take spin images for fashion clothing with a mannequin or model. Often the mannequin is either masked (using a glass mannequin) or a stylized mannequin/dressform is shown in the image. You can create an on-model spin set by defining the number of angles. Mark each angle with tape on the floor to guide the model to step and look in the direction of each shot.
+* Take spin images for fashion clothing with a mannequin or model. Often the mannequin is either masked (using a glass mannequin) or a stylized mannequin/dressform is shown in the image. You can create an on-model spin set by defining the number of angles. Mark each angle with tape on the floor so you can guide the model to step and look in the direction of each shot.
 
 ## Creating Spin Sets {#creating-spin-sets}
 
@@ -99,7 +99,7 @@ This section describes how to create Spin Sets.
 >
 >The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360-degree view.
 
-**To create Spin Sets**
+**To create Spin Sets:**
 
 1. In Assets, navigate to where you want to create a spin set, click **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. You can also create the set from inside a folder that contains your assets. The Spin Set Editor displays.
 
@@ -151,7 +151,7 @@ You can create spin sets either in the user interface or automatically using [ba
 >
 >You can also view sets by way of the user interface as described in [Editing Spin Sets](#editing-spin-sets).
 
-**To view Spin Sets**
+**To view Spin Sets:**
 
 1. When opening the properties of an individual asset. Properties indicate what sets the selected asset is a member of (under **[!UICONTROL Member of Sets]**). To see the entire set, tap the name of the set.
 
@@ -177,7 +177,7 @@ You can perform various editing tasks on Spin Sets such as the following:
 * Apply viewer presets.
 * Delete the Spin Set.
 
-**To edit a Spin Set**
+**To edit a Spin Set:**
 
 1. Do any one of the following:
 

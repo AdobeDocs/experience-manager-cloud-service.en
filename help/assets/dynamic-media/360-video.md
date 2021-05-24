@@ -21,7 +21,7 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 
 ## 360 Video in action {#video-in-action}
 
-Tap [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360-degree video. During video playback, drag the pointer to a new location to change the viewing angle.
+Tap [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360-degree video. During video playback, drag the pointer to a new location to change the viewing angle.
 
 ![360 Video sample](assets/6_5_360videoiss_simplified.png)
 *Video frame from Space Station 360*
@@ -88,7 +88,7 @@ Start by uploading 360 Videos.
 
 ## Previewing 360 Video {#previewing-video}
 
-You can use Preview to see what your 360 Video looks like to customers and ensure it is behaving as expected.
+You can use Preview to see how your 360 Video appears to customers and ensure it is behaving as expected.
 
 See also [Editing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
