@@ -11,26 +11,12 @@ index: no
 
 ## The Onboarding Process {#onboarding-process}
 
-After signing the contract, the Adobe Managed Services (AMS) initiates  the customer onboarding. During the provisioning phase where AMS provisions the AMS instance following the contract, AMS-Screens-Cloud Feature Pack is installed. The Feature Pack allows Screens Services Provider to connect to the AMS instance  or Screens Content Provider. 
+After signing the contract, the Adobe Managed Services (AMS) initiates the customer onboarding. During the provisioning phase where AMS provisions the AMS instance following the contract, AMS-Screens-Cloud Feature Pack is installed. The Feature Pack allows Screens Services Provider to connect to the AMS instance  or Screens Content Provider. 
 
 ## Availability of the Feature Pack {#availability}
 
 The AMS-Screens-Cloud Feature Pack is available via Software Distribution Portal.
 Click here to download the latest feature pack.
-
-## Provisioning IMS Organization ID {#provision-ims-org}
-
-The following steps summarize the provisioning of Adobe Identity Management Services (IMS) Organization IDs for:
-
-* **New Customers**
-   Fill out the *Provisioning Request Form* from Provisioning Hub Web Portal for creating an IMS Organization for the brand new customers for the AEM as a Cloud Service solution
-
-* **Existing Customers**:
-
-   The IMS Organization may already be there, so please fill out the *Provisioning Request Form* from Provisioning Hub Web Portal to request the AEM as a Cloud Service solution added to the IMS Organization.
-
-   >[!NOTE]
-   >This process is manual and can take up to 7 days. The status will be updated in the Provisioning Portal.
 
 ## Adding Users to Adobe Admin Console {#admin-console}
 
@@ -38,7 +24,6 @@ Once you have been provisioned with an IMS Organization ID, you can now be onboa
 
    >[!NOTE]
    >The users have access to AEM Cloud Service Product profile so that they can login to AEM using the Adobe ID or Federated ID.
-
 
 ## What's Next {#whats-next}
 
