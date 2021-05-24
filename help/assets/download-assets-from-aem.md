@@ -18,15 +18,14 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 You can download Experience Manager assets using the following methods:
 
-* [Experience Manager user interface](#download-in-aem)
-* Asset Link Share user interface
+* [Experience Manager user interface](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Download assets using [!DNL Experience Manager] interface {#download-in-aem}
+## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. The large files are downloaded asynchronously and users are informed of the completion via Experience Manager notifications in the Inbox. See [understanding Experience Manager inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows for faster downloads. The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Download notification](assets/download-notification.png)
 
@@ -46,7 +45,7 @@ To download assets, follow these steps:
 
    *Figure: Download dialog box options.*
 
-1. In the Download dialog box, select the download options you want.
+1. In the download dialog box, select the download options that you want.
 
    | Download option | Description |
    |---|---|
@@ -61,7 +60,7 @@ To download assets, follow these steps:
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
-The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances.
+The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances. If you do not need the download feature on author instances, disable the servlet on author.
 
 To allow downloading assets from your DAM, say when using something like Asset Share Commons or other portal-like implementation, manually enable the servlet via an OSGi configuration. Adobe recommends setting the permissible download size as low as possible without affecting the day-to-day download requirements. A high value may impact performance.
 
@@ -79,7 +78,7 @@ To allow downloading assets from your DAM, say when using something like Asset S
 
 ## Disable asset download servlet {#disable-asset-download-servlet}
 
-The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
+If you do not need the download functionality, then disable the servlet to prevent any DoS-like risks. The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] author and publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
 
 1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 

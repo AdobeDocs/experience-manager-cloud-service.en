@@ -24,7 +24,7 @@ You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets 
 
   See [Removing special characters from URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-In the context of Dynamic Media, websites that use an XML-based system to manage asset information can upload XML files to Dynamic Media. You can designate one of these files as the pre-processing rule set file for serving Dynamic Media asset. This file restructures the standard URL protocol format to meet the business logic of systems being integrated with Dynamic Media. You specify an XML file to serve as the rule set definitions file path.
+In the context of Dynamic Media, websites that use an XML-based system to manage asset information can upload XML files to Dynamic Media. You can designate one of these files as the pre-processing rule set file for serving Dynamic Media asset. This file restructures the standard URL protocol format to meet the company logic of systems being integrated with Dynamic Media. You specify an XML file to serve as the rule set definitions file path.
 
 >[!CAUTION]
 >
@@ -64,7 +64,7 @@ See also [Using 'asset' instead of 'is' image in a rule set](https://helpx.adobe
     * In the bottom-right corner of the page, click **[!UICONTROL Submit Upload]**.
     * On the Global Navigation bar, click **[!UICONTROL Jobs]** to check the status of the upload job. When the **[!UICONTROL Status]** column on the **[!UICONTROL Job]** page says Upload Done, continue to the next steps.
 
-1. On the navigation bar near the top of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. On the navigation bar near the top of the page, click **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the **[!UICONTROL Image Server Publish]** page, under the **[!UICONTROL Catalog Management]** group, locate **[!UICONTROL Rule Set Definition File Path]**, then click **[!UICONTROL Select]**.
 1. On the **[!UICONTROL Select Rule Set Definition File (XML)]** page, browse to your rule set file, then in the lower-right corner of the page, click **[!UICONTROL Select]**.
 1. In the lower-right corner of the Setup page, click **[!UICONTROL Close]**.

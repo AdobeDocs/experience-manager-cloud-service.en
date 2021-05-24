@@ -76,7 +76,6 @@ role: Developer, Architect
     + [How to update your content via AEM assets APIs](developing/headless-journey/update-your-content.md)
     + [How to put it all together](developing/headless-journey/put-it-all-together.md)
     + [How to go live with your headless application](developing/headless-journey/go-live.md)
-    + [Post Launch](developing/headless-journey/post-launch.md)
     + [Optional - How to create single page applications with AEM](developing/headless-journey/create-spa.md)
   + [Headful and Headless in AEM](developing/headful-headless.md)
   + Full Stack AEM Development {#full-stack}
@@ -133,7 +132,9 @@ role: Developer, Architect
     + [SPA Reference Documents](developing/hybrid/reference-materials.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
+    + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
     + Getting Started Guides {#getting-started}
+      + [Introduction](developing/headless/getting-started/introduction.md)
       + [Creating a Configuration](developing/headless/getting-started/create-configuration.md)
       + [Creating a Content Fragment Model](developing/headless/getting-started/create-content-model.md)
       + [Creating an Assets Folder](developing/headless/getting-started/create-assets-folder.md)

@@ -5,6 +5,11 @@ exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
 ---
 # AEM Dispatcher Converter {#introduction}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispconverter"
+>title="AEM Dispatcher Converter"
+>abstract="Adobe Experience Manager Dispatcher Converter converts existing AEM Dispatcher configurations to AEM as a Cloud Service Dispatcher configurations."
+
 Adobe Experience Manager Dispatcher Converter converts existing AEM Dispatcher configurations to AEM as a Cloud Service Dispatcher configurations.
 
 ## Introduction to Dispatcher {#introduction-dispatcher}
