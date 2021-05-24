@@ -48,19 +48,17 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This enhancement allows for faster downloads. 
+* [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This enhancement allows for faster downloads. See [download assets](/help/assets/download-assets-from-aem.md).
 
-* When an asset is downloaded via linkshare option, you can now choose to download or not download the renditions. Previously, all the asset renditions were downloaded.
-
-* Administrators can configure [!DNL Experience Manager] to delete the source of assets after doing a bulk asset ingestions. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
+* When you download an asset via a linkshare option, you can now choose to download or not download the renditions. Previously, all the asset renditions were downloaded. See [download options](/help/assets/download-assets-from-aem.md).
 
 * When executing a health check to import assets in bulk, Experience Manager now provides more information reasons for failures. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * When importing assets using bulk import tool, administrators now have the option to delete the source files after the import is successful. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* When editing a metadata schema, a new root path selector field allows administrators to quickly and easily make the selection, thereby reducing the configuration time.
+* When editing a metadata schema, a new root path selector field allows administrators to quickly and easily make the selection. This enhancement helps reduce the metadata configuration time.
 
-* Metadata of many assets can be imported in bulk using a CSV file and can be exported to a CSV file. The default date format is now `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Users can leverage a different format by updating the column header. For example, add `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` as the column header in the CSV file instead of the word `Date`.
+* Metadata of many assets can be imported in bulk using a CSV file and can be exported to a CSV file. The default date format is now `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Users can leverage a different format by updating the column header. For example, add `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` as the column header in the CSV file instead of the word `Date`. See [import metadata](/help/assets/metadata-import-export.md).
 
 * When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset.
 
