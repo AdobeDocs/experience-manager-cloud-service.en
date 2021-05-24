@@ -9,10 +9,13 @@ Cloud Manager provides customers the self-service capability to install SSL cert
 
 ## Important Considerations {#important-considerations}
 
-
 * Cloud Manager does not provide SSL certificates or private keys. These must be obtained from third party certification authorities. Refer to [Getting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) to learn more.
 
 * AEM as a Cloud Service only supports secure `https` sites. Customers with multiple custom domains will not want to upload a certificate every time they add a domain. Hence such customers will benefit by getting one certificate with multiple domains.
+
+* AEM as a Cloud Service will only accept OV(Organization Validation) or EV(Extended Validation) certificates. DV(Domain Validation) certificates will not be accepted. In addition, any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
+
+* AEM as a Cloud Service will accept wildcard SSL certificates for a domain.
   
 Cloud Manager supports the following customer SSL certificate requirements: 
 
