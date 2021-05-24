@@ -17,11 +17,11 @@ See [interactive images in action](https://marketing.adobe.com/resources/help/en
 
 ## Watch how interactive image banners are created {#watch-how-interactive-image-banners-are-created}
 
-Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). You also learn how to preview, edit, and deliver interactive image banners.
+Watch a walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) (10 minutes and 33 seconds). You also learn how to preview, edit, and deliver interactive image banners.
 
 ## Quick Start: Interactive Images {#quick-start-interactive-images}
 
-The following step-by-step workflow description is designed to help you get up and running quickly with interactive images in AEM Assets.
+The following step-by-step workflow description is designed to help you get up and running quickly with interactive images in Adobe Experience Manager Assets.
 
 Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on a [web page example that does not yet have Interactive Images added to it](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
@@ -32,7 +32,7 @@ The tutorial helps to illustrate the steps of integrating interactive images on 
 Interactive Images steps:
 
 1. **(Optional) Identifying hotspot variables**. If you use Adobe Experience Manager Assets and Dynamic Media standalone, identify dynamic variables used in your existing Quick view implementation. Doing so ensures that you can enter hotspot data when creating the interactive image. See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
-However, if you use AEM Sites, or AEM eCommerce, or both, then this step is not necessary.
+However, if you use Experience Manager Sites, or Experience Manager eCommerce, or both, then this step is not necessary.
 
 1. **(Optional) Creating an Interactive Image viewer preset**. Customize the graphic image that is used to represent hotspots. Creating your own Interactive Image viewer preset is not required if you intend to use the out-of-the-box Interactive Image viewer preset named `Shoppable_Banner` instead.
 See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -56,9 +56,9 @@ See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynami
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your image by triggering to Quick views.
->* Your implementation of Experience Manager does *not* use an eCommerce integration framework to pull product data into Experience Manager from any eCommerce solution. Such solutions include IBM WebSphere® Commerce, Elastic Path, hybris, or Intershop.
+>* Your implementation of Experience Manager does *not* use an eCommerce integration framework to pull product data into Experience Manager from any eCommerce solution. Such solutions include IBM® WebSphere® Commerce, Elastic Path, SAP Hybris, or Intershop.
 >
->If your implementation of AEM uses eCommerce, you can skip this task and proceed to the next task.
+>If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
 Start by identifying dynamic variables used by your existing Quick view implementation so that you can enter hotspot data to create the interactive image.
 
@@ -77,7 +77,7 @@ Most Quick view implementations use the following paradigm:
 * The Quick view data is translated into the content in preparation for rendering on the web page.
 * Finally, the front-end code visually renders such content on the screen.
 
-The approach then is to visit different areas of the existing website where the Quick view feature is implemented. Then trigger the Quick view and capture the Ajax URL sent by web page for loading the Quick view data or content.
+The approach then is to visit different areas of the existing website where the Quick view feature is implemented. Then trigger the Quick view and acquire the Ajax URL sent by web page for loading the Quick view data or content.
 
 Normally there is no need for you to use any specialized debugging tools. Modern web browsers feature web inspectors that do an adequate job. The following are a few examples of web browsers that include web inspectors:
 
@@ -159,15 +159,15 @@ Given this information, the entire Quick view URL has the following pattern:
 
 Based on such analysis, you would use `categoryId` and `SKU` for hotspots.
 
-You are now ready to upload an image banner and add hotspots to it using the shoppable interactive image feature in AEM Assets.
+You are now ready to upload an image banner and add hotspots to it using the shoppable interactive image feature in Experience Manager Assets.
 
 ## (Optional) Creating an Interactive Image viewer preset {#optional-creating-an-interactive-image-viewer-preset}
 
-You can choose to use the default, out-of-the-box Interactive Image viewer preset called `Shoppable_Banner` that comes with AEM Assets. Or you can create your own custom viewer preset for use with interactive images.
+You can choose to use the default, out-of-the-box Interactive Image viewer preset called `Shoppable_Banner` that comes with Experience Manager Assets. Or you can create your own custom viewer preset for use with interactive images.
 
 When you create a custom Interactive Image viewer preset, you can determine the look of hotspots on the image banner. As part of the creation of the viewer preset, you can choose to use a hotspot graphic from a gallery of pre-defined images.
 
-After you save the viewer preset, it is automatically activated (turned on) on the Viewer Preset list page in AEM Assets. This functionality means that it is visible in the Interactive Media component and whenever you view an asset. However, to *deliver* an interactive banner with this viewer preset, *publish* your viewer preset as well. This rule is true for custom or out-of-box viewer presets.
+After you save the viewer preset, it is automatically activated (turned on) on the Viewer Preset list page in Experience Manager Assets. This functionality means that it is visible in the Interactive Media component and whenever you view an asset. However, to *deliver* an interactive banner with this viewer preset, *publish* your viewer preset as well. This rule is true for custom or out-of-box viewer presets.
 
 **To create an Interactive Image viewer preset**
 
@@ -259,7 +259,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 
     * Tap **[!UICONTROL Quick view]**.
 
-        * If you are an AEM Sites or eCommerce customer, tap or click the Product Picker icon (magnifying glass) to open the Select Product page. Tap the product you want to use, then tap **Select** in the upper-right corner of the page. You are returned to the Hotspot management page.
+        * If you are an Experience Manager Sites or eCommerce customer, tap or click the Product Picker icon (magnifying glass) to open the Select Product page. Tap the product you want to use, then tap **Select** in the upper-right corner of the page. You are returned to the Hotspot management page.
         * If you are *not* an Experience Manager Sites or eCommerce customer
 
             * See [Identifying hotspot variables](#optional-identifying-hotspot-variables); you must define these variables.
@@ -277,7 +277,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 
     * Tap **[!UICONTROL Experience Fragment]**.
 
-        * If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap the Experience Fragment you want to use. Then tap **[!UICONTROL Select]** in the upper-right corner of the page. You are returned to the Hotspot management page.
+        * If you are an Experience Manager Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap the Experience Fragment you want to use. Then tap **[!UICONTROL Select]** in the upper-right corner of the page. You are returned to the Hotspot management page.
           See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
         * Specify the width and height of the Experience Fragment as you want it to appear on the banner.
@@ -301,11 +301,11 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 
 ### (Optional) Previewing interactive images {#optional-previewing-interactive-images}
 
-You can use Preview to see a representation of what your interactive image looks like to customers. Preview also lets you test the image's hotspots to ensure they behave as expected.
+You can use Preview to see a representation of how your interactive image appears to customers. Preview also lets you test the image's hotspots to ensure they behave as expected.
 
 When you are satisfied with the interactive image, you can publish it.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
 See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **To preview interactive images**
@@ -323,9 +323,9 @@ See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-asset
 
 After you upload a banner image, add hotspots to it, and publish the interactive image, you are ready to add it to your website page.
 
-If you are an AEM Sites customer, you can add the interactive image by dragging the Interactive Media component onto your page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+If you are an Experience Manager Sites customer, you can add the interactive image by dragging the Interactive Media component onto your page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-If you are a standalone AEM Assets customer, you can manually add the interactive image to your website as described in this section.
+If you are a standalone Experience Manager Assets customer, you can manually add the interactive image to your website as described in this section.
 
 1. Copy the published interactive image's embed code.
    See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
@@ -341,7 +341,7 @@ Using the [demo website as an example](https://marketing.adobe.com/resources/hel
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Integration is as simple as removing the `IMG` tag and replacing it with the copied embed code from AEM Assets. You can see that the result [shows the shoppable interactive image on the page with three circle hotspots](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+Integration is as simple as removing the `IMG` tag and replacing it with the copied embed code from Experience Manager Assets. You can see that the result [shows the shoppable interactive image on the page with three circle hotspots](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 >
@@ -359,7 +359,7 @@ You are now ready to integrate the interactive image with an existing Quick view
 
 >[!NOTE]
 >
->This task only applies if you are a standalone AEM Assets customer.
+>This task only applies if you are a standalone Experience Manager Assets customer.
 
 The last step in this process is integrating the interactive image with an existing Quick view implementation on your website. There is no solution to the integration that works for all cases. Every Quick view implementation is unique and a specific approach is needed. As such, involving the assistance of a front-end IT person is helpful.
 
@@ -375,7 +375,7 @@ The existing Quick view implementation normally represents a chain of inter-rela
 
 These calls do not necessarily represent independent public API calls that are called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 
-When the shoppable interactive image is replacing step 1, and partially step 2, a user taps a hotspot inside the shoppable image. Such user interaction is handled by the viewer. The viewer returns an event to the web page that contains all the hotspot data previously added to AEM Assets.
+When the shoppable interactive image is replacing step 1, and partially step 2, a user taps a hotspot inside the shoppable image. Such user interaction is handled by the viewer. The viewer returns an event to the web page that contains all the hotspot data previously added to Experience Manager Assets.
 
 In such an event handler, the front-end code does the following:
 
@@ -444,7 +444,7 @@ Using the previous Quick view URL examples, you can see in the following example
  </tbody>
 </table>
 
-The last step to trigger the Quick view URL and activate the Quick view panel requires the assistance of a front-end IT person from your business. They have the knowledge to know best how to accurately trigger the Quick view implementation from the proper step, having a ready-to-use Quick view URL.
+The last step to trigger the Quick view URL and activate the Quick view panel requires the assistance of a front-end IT person from your work. They have the knowledge to know best how to accurately trigger the Quick view implementation from the proper step, having a ready-to-use Quick view URL.
 
 You can see how these steps are applied to the demo website to fully integrate a shoppable interactive image with the Quick view code. Earlier, the structure of the Quick view URL was identified as the following:
 
@@ -492,4 +492,4 @@ The [final demo website with the fully integrated interactive image](https://mar
 
 ## Using Quick views to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 
-See [Using Quick views to create custom pop-up windows](/help/assets/dynamic-media/custom-pop-ups.md).
+See [Using Quick views to create custom pop-up Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
