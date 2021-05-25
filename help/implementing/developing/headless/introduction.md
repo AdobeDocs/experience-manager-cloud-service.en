@@ -47,6 +47,6 @@ There are a number of resources available for your to get started with AEM's hea
 
 |Resource|Description|Type|Audience|Est. Time|
 |---|---|---|---|---|
-|[Headless Developer Journey](/help/implementing/developing/headless-journey/overview.md)|For a comprehensive overview of AEM's headless features from the theory of headless through going live with your first headless project, start here.|Guide|Developers|1 hour|
+|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|For a comprehensive overview of AEM's headless features from the theory of headless through going live with your first headless project, start here.|Guide|Developers|1 hour|
 |[Headless Getting Started Guide](/help/implementing/developing/headless/getting-started/introduction.md)|For a short summary of the key AEM headless features, check out this quick start overview.|Quick Start|Developers, Administrators|20 minutes|
 |[Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)|If you prefer a hands-on approach, this tutorial dives directly into creating a simple headless project.|Tutorial|Developers|2 hours|
