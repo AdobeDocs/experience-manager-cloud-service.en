@@ -17,4 +17,4 @@ Please review all the considerations listed below:
 
 ## What's Next {#whats-next}
 
-Once you have reviewed the prerequisites and have determined whether you can use the Content Transfer Tool in your migration project, please refer to [Additional best practices and considerations](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) while using the Content Transfer Tool.
+Once you have reviewed the prerequisites and have determined whether you can use the Content Transfer Tool in your migration project, refer to [Additional best practices and considerations](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) while using the Content Transfer Tool.
