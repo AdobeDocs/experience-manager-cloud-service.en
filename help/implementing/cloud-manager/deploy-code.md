@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 ---
 # Deploying your Code {#deploy-your-code} 
 
-## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
+## Deploying Code with Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
 Once you have configured your Production Pipeline (repository, environment, and testing environment), you are ready to deploy your code.
 
