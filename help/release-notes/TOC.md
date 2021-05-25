@@ -33,3 +33,4 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator
 + [Notable Changes in AEM Cloud Service](aem-cloud-changes.md)
 + [Known issues](known-issues.md)
 + [Deprecated and Removed Features](deprecated-removed-features.md)
++ [Deprecated APIs](deprecated-apis.md)
