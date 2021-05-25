@@ -12,6 +12,7 @@ This page lists the self-help resources about implementation for Experience Mana
 * [Managing your environments with Cloud Manager](cloud-manager/manage-environments.md)
 * [Deploying AEM as a Cloud Service](deploying/overview.md)
 * [Developing for AEM as a Cloud Service](developing/introduction/development-guidelines.md)
+* [Headless Developer Journey](/help/journey-headless/developer/overview.md)
 * [Dispatcher on AEM as a Cloud Service](dispatcher/overview.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
@@ -26,6 +27,8 @@ This page lists the self-help resources about implementation for Experience Mana
 |[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
+|[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using AEM's powerful features.|
+|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of AEM to prepare for your first headless project.|
 |[Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)|Understand the transition journey to Cloud Service.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
@@ -33,7 +36,7 @@ This page lists the self-help resources about implementation for Experience Mana
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService) 
+* [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
