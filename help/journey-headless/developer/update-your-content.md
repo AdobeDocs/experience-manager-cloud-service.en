@@ -1,16 +1,9 @@
 ---
 title: How to Update Your Content via AEM Assets APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use the REST API to access and update the content of your Content Fragments.
-hide: yes
-hidefromtoc: yes
-index: no
-exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 ---
-# How to Update Your Content via AEM Assets APIs {#update-your-content}
 
->[!CAUTION]
->
->WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+# How to Update Your Content via AEM Assets APIs {#update-your-content}
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn how to use the REST API to access and update the content of your Content Fragments.
 
@@ -210,14 +203,14 @@ Associated content is currently not exposed.
 
 ### Access {#access}
 
-The Assets REST API uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`). 
+The Assets REST API uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`).
 
 * This means that to access the asset at:
   * `/content/dam/path/to/asset`
 * You need to request:
-  * `/api/assets/path/to/asset` 
+  * `/api/assets/path/to/asset`
 
-For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
+For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Access over:
@@ -238,7 +231,7 @@ The HTTP method determines the operation to be executed:
 >
 >The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
-The exact format of supported requests is defined in the API Reference documentation. 
+The exact format of supported requests is defined in the API Reference documentation.
 
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
@@ -255,7 +248,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html). 
+>For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -290,7 +283,7 @@ Usage is via
 
 The body has to contain a JSON representation of what is to be updated for the given content fragment.
 
-This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata. 
+This can simply be the title or description of a content fragment, or a single element, or all element values and/or metadata.
 
 ### Delete {#delete}
 
@@ -320,8 +313,6 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 
 You should continue your AEM headless journey by next reviewing the document [How to Go Live with Your Headless Application](go-live.md) where you actually take your AEM Headless project live!
 
-[How to Create Single Page Applications (SPAs) with AEM](create-spa.md) will also show how you can create editable SPAs using AEM’s SPA Editor framework, as well as integrate external SPAs, enabling editing capabilities as required.
-
 ## Additional Resources {#additional-resources}
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
@@ -332,4 +323,3 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 * [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video - Developing for CORS with AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-

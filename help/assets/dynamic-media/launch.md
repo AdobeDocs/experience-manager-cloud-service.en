@@ -9,7 +9,9 @@ exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
 The new *Dynamic Media Viewers* extension for Platform Launch and Dynamic Media Viewers 5.13, lets customers of Adobe Analytics and Platform Launch to use events and data specific for the Viewers in their Platform Launch configuration.
 
@@ -662,7 +664,7 @@ The Experience Manager configuration consists of the following two major steps:
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. On the Adobe IMC Configuration page, near the upper-left corner, click **[!UICONTROL Create]**.
-1. On the **[!UICONTROL Adobe IMS Technical Account Configuration]** page, in the **[!UICONTROL Cloud Solution]** drop-down list, click **[!UICONTROL Experience Platform Launch]**.
+1. On the **[!UICONTROL Adobe IMS Technical Account Configuration]** page, in the **[!UICONTROL Cloud Solution]** drop-down list, click **[!UICONTROL Experience Platform Data Collection]**.
 1. Enable **[!UICONTROL Create new certificate]**, then in the text field, enter any meaningful value for your certificate. For example, *AdobeLaunchIMSCert*. Click **[!UICONTROL Create certificate]**.
 
    The following Info message is displayed:

@@ -1,16 +1,9 @@
 ---
 title: How to Go Live with Your Headless Application
 description: In this part of the AEM Headless Developer Journey, learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
-hide: yes
-hidefromtoc: yes
-index: no
-exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 ---
-# How to Go Live with Your Headless Application {#go-live}
 
->[!CAUTION]
->
->WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
+# How to Go Live with Your Headless Application {#go-live}
 
 In this part of the [AEM Headless Developer Journey](overview.md), learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 
@@ -38,7 +31,7 @@ The AEM SDK is used to build and deploy custom code. It is the main tool you nee
 
 * The Quickstart jar - an executable jar file that can be used to set up both an author and a publish instance
 * Dispatcher tools - the Dispatcher module and its dependencies for Windows and UNIX based systems
-* Java API Jar - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM 
+* Java API Jar - The Java Jar/Maven Dependency that exposes all allowed Java APIs that can be used to develop against AEM
 * Javadoc jar - the javadocs for the Java API jar
 
 ## Additional Development Tools {#additional-development-tools}
@@ -79,7 +72,7 @@ To test code or content updates that will be ingested by your headless applicati
 
 Make sure to take note of the distinctions between each component in the local AEM runtime, as it is important to test your updates where they matter the most. For example, test content updates on author or test new code on the publish instance.
 
-In a production system, a dispatcher and an http Apache server will always sit in front of an AEM publish instance. They provide caching and sercurity services for the AEM system, so it is paramount to test code and content updates against the dispatcher as well.
+In a production system, a dispatcher and an http Apache server will always sit in front of an AEM publish instance. They provide caching and security services for the AEM system, so it is paramount to test code and content updates against the dispatcher as well.
 
 ## Previewing Your Code and Content Locally with The Local Development Environment {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
@@ -95,7 +88,7 @@ The local development environment is comprised of three main areas:
 
 Once the local development environment is set up, you can simulate content serving to the React app by deploying a static Node server locally.
 
-In order to get a more in depth look at setting up a local development environemnt and all dependencies needed for content preview see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
+In order to get a more in depth look at setting up a local development environment and all dependencies needed for content preview see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
@@ -104,7 +97,7 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 ### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
 
 1. Configure [Token Based Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
-1. Configure [Caching](/help/implementing/dispatcher/caching.md). 
+1. Configure [Caching](/help/implementing/dispatcher/caching.md).
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
@@ -187,6 +180,14 @@ Congratulations! You have completed the AEM Headless Developer Journey! You shou
 * How to retrieve and update headless content in AEM.
 * How to go live with an AEM Headless project.
 * What do do after the go-live.
+
+You have either already launched your first AEM Headless project or now have all the knowledge you need to do so. Great job!
+
+### Explore Single Page Applications {#explore-spa}
+
+The headless stores in AEM doesn't need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combines the advantages of both.
+
+If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM.](create-spa.md)
 
 ## Additional Resources {#additional-resources}
 
