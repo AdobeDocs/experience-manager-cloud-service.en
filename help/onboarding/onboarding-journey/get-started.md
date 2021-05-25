@@ -1,6 +1,6 @@
 ---
 title: Getting Started 
-description: Follow this page to learn how to get started with an onboarding journey
+description: Follow this page to learn how to get started with onboarding journey
 hide: yes
 hidefromtoc: yes
 index: no
