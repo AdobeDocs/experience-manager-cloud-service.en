@@ -116,3 +116,9 @@ The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
 * Asset thumbnails not displayed in Asset tab of product properties
 
 * Breadcrumb resets preview data in product console
+
+### What is New in AEM as a Cloud Service Foundation {#what-is-new-foundation}
+
+**API Deprecation**
+
+A list of the latest deprecated APIs for AEM as a Cloud Service is available with the [Deprecated APIs](/help/release-notes/deprecated-apis.md) page.
