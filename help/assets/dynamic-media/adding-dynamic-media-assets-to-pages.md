@@ -139,38 +139,48 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 * **[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and conversely.
 
-    This option is the only one available if you are viewing image sets, spin sets, or mixed media sets. The viewer presets displayed are also smart&ndash;only relevant viewer presets appear.
+  This option is the only one available if you are viewing image sets, spin sets, or mixed media sets. The viewer presets displayed are also smart&ndash;only relevant viewer presets appear.
 
 * **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption/subtitle file with the video.
 
 * **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
 * **[!UICONTROL Image Modifiers]** - You can apply image effects by supplying more image commands. These commands are described in Image Presets and the Image Serving Command reference.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
 * **[!UICONTROL Breakpoints]** - If you are using this asset on a responsive site, you must add the image breakpoints. Image breakpoints must be separated by commas (,). This option works when there is no height or width defined in an image preset.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-    You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
+  You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
 * **[!UICONTROL Alt Text]** - Add a title to the image for those users who have graphics turned off.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
 * **[!UICONTROL URL, Open in]** - You can set an asset to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
 
-    This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+  This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
 * **[!UICONTROL Width]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 
 * **[!UICONTROL Height]** - Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
-
 
 #### When working with Video {#when-working-with-video}
 
@@ -224,6 +234,18 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
+
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 

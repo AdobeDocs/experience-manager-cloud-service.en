@@ -30,7 +30,8 @@ This page lists the self-help resources regarding AEM Content and Commerce.
 |[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to administer Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to administer Experience Manager Assets as a Cloud Service.|
-|[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
+|[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using AEM's powerful features by exploring these development and deployment topics.|
+|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of AEM to prepare for your first headless project.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
 
