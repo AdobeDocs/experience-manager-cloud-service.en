@@ -49,6 +49,8 @@ Follow the section below to understand the important considerations while runnin
 
 * If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. Refer to [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) for more details.
 
+* If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
+
 ## Availability {#availability}
 
 >[!CONTEXTUALHELP]
@@ -182,6 +184,7 @@ The Content Transfer Tool has a feature that supports differential content top-u
 
 >[!NOTE]
 >After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
+>Additionally, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
 
 Once the extraction process is complete, you can transfer delta content, by using the top-up extraction method. Follow the steps below:
 
