@@ -11,7 +11,7 @@ In this part of the [AEM Headless Developer Journey](overview.md), you can learn
 
 At the beginning [Learn About CMS Headless Development](learn-about.md) covered headless content delivery and why it should be used. Then [Getting Started with AEM Headless as a Cloud Service](getting-started.md) described AEM Headless in the context of your own project
 
-In the previous document of the AEM headless journey, [Path to Your First Experience Using AEM Headless](/help/implementing/developing/headless-journey/path-to-first-experience.md), you then learned the steps needed to implement your first project. After reading it you should:
+In the previous document of the AEM headless journey, [Path to Your First Experience Using AEM Headless](path-to-first-experience.md), you then learned the steps needed to implement your first project. After reading it you should:
 
 * Understand important planning considerations for designing your content
 * Understand the steps to implement headless depending on your integration level requirements.
@@ -268,6 +268,6 @@ Now that you have learned how to model your structure, and create content depend
   * [Content Fragments in the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - enable Content Fragment functionality in the Configuration Browser
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
   * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
-* [AEM GraphQL Schemas](/help/implementing/developing/headless-journey/access-your-content.md) - how GraphQL realizes models
+* [AEM GraphQL Schemas](access-your-content.md) - how GraphQL realizes models
 * [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL
