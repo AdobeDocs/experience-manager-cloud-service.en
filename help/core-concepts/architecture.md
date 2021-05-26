@@ -9,8 +9,7 @@ exl-id: fb169e85-ac19-4962-93d9-abaed812f948
 >id="intro_aem_cloudservice_architecture"
 >title="Introduction to AEM as a Cloud Service Architecture"
 >abstract="In this tab, you can view the new architecture of AEM as a Cloud Service and understand the changes. AEM has resulted in a dynamic architecture with a variable number of images so it is important to take the time to understand.the cloud architecture"
->additional-url="https://video.tv.adobe.com/v/330542/"
->text="Architecture Overview"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Architecture Overview"
 
 
 Adobe Experience Manager (AEM) as a Cloud Service has resulted in changes to the architecture.
