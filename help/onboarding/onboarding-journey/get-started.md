@@ -25,12 +25,12 @@ After signing the contract, Adobe Managed Services (AMS) starts the onboarding o
 
 Once your contract has been signed, Adobe will complete provisioning for your organization following which your organization’s System Administrator will receive a welcome email allowing them to do System Administrator tasks such as adding users and assigning them to roles.
 
-The Adobe Admin console is a central place to administer and manage your Adobe product licenses and users. Your system administrator will sign in to the Adobe Admin console to add or remove users and more. The Adobe Admin console console can be accessed at [adminconsole.adobe.com](https://adminconsole.adobe.com/). 
+The Adobe Admin console is a central place to administer and manage your Adobe product licenses and users. Your system administrator will sign in to the Adobe Admin console to add or remove users and more. Click [here](https://adminconsole.adobe.com/) to access the Adobe Admin console. 
 
 
 ## Steps for Logging in to Admin Console {#steps-admin-console}
 
-Follow the steps below to start your Onboarding journey and login to Admin Console:
+Follow the steps below to navigate to Admin Console and review your System Admnistrator role from the Admin Console:
 
 >[!NOTE]
 >You must be a System Administrator in order to be able to complete the following steps successfully.
