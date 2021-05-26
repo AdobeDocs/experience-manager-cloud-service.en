@@ -70,7 +70,7 @@ In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload 
 
 >[!IMPORTANT]
 >
->Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
+>Execute the above steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 The approach provides a scalable and more performant handling of asset uploads. The differences as compared to [!DNL Experience Manager] 6.5 are:
 
