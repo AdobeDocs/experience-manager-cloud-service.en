@@ -34,6 +34,7 @@ The following release (2021.6.0) will be on June 24, 2021.
 
 * The Asset Bulk Ingestor has a new enhancement to aid the ingestion of assets.This release includes the ability to add metadata during a bulk ingestion. This feature is available in the 'Pre-Release Channel'.
 
+* There is an asset counter for the number of assets in a folder. This feature is available in the 'Pre-Release Channel'.
 
 #### What is new in Dynamic Media {#what-is-new-dm}
 
