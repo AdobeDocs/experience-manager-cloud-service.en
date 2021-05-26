@@ -75,7 +75,7 @@ Alternatively, you can also achieve this by creating a Workflow Model that uses 
 
 * `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
 * `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
-* `agentId` (string value, default means all enabled agents are used).
+* `agentId` (string value, default means all enabled agents are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish
 * `filters` (string value, default means all paths are activated). Available values are:
   * `onlyActivated` - only paths which are not marked as activated will be activated.
   * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
