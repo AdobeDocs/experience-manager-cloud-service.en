@@ -25,75 +25,26 @@ A user can create a **Sandbox** or a **Production** program.
 * A *Sandbox Program* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a Production program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
    Refer to [Introduction to Sandbox Programs](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
 
-## Navigating to Cloud Manager {#navigate-cloud-manager}
-
-Once your System Administrator grants you access to Cloud Manager, you will receive an email that will take you to [Adobe Experience Cloud](https://experience.adobe.com) Home page.
-
->[!NOTE]
->You must be added as a user and must be assigned at least to one Cloud Manager Role (Product Profile in Admin Console) by your System Administrator. 
-
-1. From your welcome email click on **Get started**, as shown in the figure below.
-    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
-
-   >[!NOTE]
-   >Alternatively, you can also navigate directly to Cloud Manager login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI. Refer to the section below, [Cloud Manager Landing page](#cloud-manager-landing) for more details.
-
-1. Select **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
-   
-1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
-  
-
-### Cloud Manager Landing Page {#cloud-manager-landing}
-
-Upon successful login, you will be directed to the landing page of Cloud Manager.
-
->[!NOTE]
->Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
-
-You will see one of the three options, described below:
-
-* **When No Programs exist in Cloud Manager**
-
-   If no programs exist in your Organization, then your landing page directs you to create your first program, as shown in the figure below.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
-
-* **When Programs already exist in Cloud Manager**
-
-   If program(s) already exist in your Organization, then your landing page directs you to add another program and displays all your existing programs too, as shown in the figure below.
-
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
-
-* **When a Program exists and user is System Administrator**
-
-   If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
-
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
-From here, a user with the right permissions, such as a Business Owner role in Cloud Manager is able to select **Add Program** to launch the [Add Program wizard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access).
 
 ## Cloud Manager Environments {#cloud-manager-environments}
 
-Cloud Manager Environments typically have one Production environment, one Stage environment, and one Development environment. Different environments support roles and can be engaged using different CI/CD Pipelines. 
+Your cloud environments will be created, accessed and viewed via Cloud Manager. These can be a Production environment, Stage environment, or Development environment. Different environments support different purposes and can be engaged using different CI/CD Pipelines. Environments are composed of services such as:
 
-The CI/CD Pipelines in Cloud Manager are composed of services such as:
-
-* [AEM Author](#author-services)
-* [AEM Publish](publish-services)
-* [Dispatcher](#dispatcher-services)
+* [AEM Author Services](#author-services)
+* [AEM Publish Services](publish-services)
+* [Dispatcher Services](#dispatcher-services)
 
    >[!NOTE]
-   > Refer to the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) to learn more about the available environments.
+   > Refer to the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) to learn more about the available environments. Additionally, see [Manage Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) to learn more about types of environment a user can create and how the user can create an environment.
 
 ### AEM Author Service {#author-services}
 
-Environment where site content and digital assets are created, managed and updated. Typically only internal users have access to the Author Service and is behind a login screen. The Authoring Service is designed both as an authoring and preview environment.
+AEM Author Service is included in an environment where site content and digital assets are created, managed and updated. Typically, only internal users have access to the Author Service and is behind a login screen. The Authoring Service is designed both as an authoring and preview environment.
 
 ### AEM Publish Service {#publish-services}
 
-Environment that hosts the end-user experience, like a web site. This is the service that site visitors will view and interact with. Typically, the Publish Service is publicly available.
+AEM Publish Service is included in an environment that hosts the end-user experience, like a web site. This is the service that site visitors will view and interact with. Typically, the Publish Service is publicly available.
 
 ### AEM Dispatcher Service {#dispatcher-services}
 
-The Dispatcher is an Apache HTTP Web server module that provides a security and performance layer that sits in front of the AEM Publish Service.
+The Dispatcher is an `Apache HTTP Web server` module that provides a security and performance layer that sits in front of the AEM Publish Service.
