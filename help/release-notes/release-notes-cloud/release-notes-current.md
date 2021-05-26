@@ -23,7 +23,7 @@ The following release (2021.6.0) will be on June 24, 2021.
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
-* As Preview Service is being enabled in AEM as a Cloud Service environments, publishing to Preview will be possibe in the AEM Sites Managed Publication wizard. (Note this capability will become generally avaiable with Cloud Manager June release.)
+* As Preview Service is being enabled in AEM as a Cloud Service environments, publishing to Preview will be possible in the AEM Sites Managed Publication wizard. (Note this capability will become generally available with Cloud Manager June release.)
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
