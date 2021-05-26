@@ -30,9 +30,9 @@ The following release (2021.6.0) will be on June 24, 2021.
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 * Link Share now uses an async download services framework. Downloads now are faster and uninterupted utilizing the new async framework.  For very large downloads (>100gb) the download job will be broken into 100gb download files. 
 
-* Assets 30 - Metadata schemas can now be applied directly on the folder properties.  This feature is available in the 'Pre-Release Channel'.
+* Metadata schemas can now be applied directly on the folder properties.  This feature is available in the 'Pre-Release Channel'.
 
-* Assets 30 - Asset 30 includes the pillar for bulk ingestion.  This release includes the ability to add metadata during a bulk ingestion. This feature is available in the 'Pre-Release Channel'.
+* The Asset Bulk Ingestor has a new enhancement to aid the ingestion of assets.This release includes the ability to add metadata during a bulk ingestion. This feature is available in the 'Pre-Release Channel'.
 
 
 #### What is new in Dynamic Media {#what-is-new-dm}
