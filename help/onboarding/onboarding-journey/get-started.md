@@ -11,7 +11,7 @@ Onboarding is the process during which a designated System Administrator sets up
 
 ## Objective {#objective}
 
-This document summarizes the very first steps in your Onboarding journey. 
+As a System Administrator, this document summarizes the very first steps in your Onboarding journey. 
 
 After reading this section you should be able to:
 
