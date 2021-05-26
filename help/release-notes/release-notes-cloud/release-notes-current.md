@@ -23,6 +23,7 @@ The following release (2021.6.0) will be on June 24, 2021.
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
+Link Share now uses an async download services framework. Downloads now are faster and uninterupted utilizing the new async framework.  For very large downloads (>100gb) the download job will be broken into 100gb download files. 
 
 #### What is new in Dynamic Media {#what-is-new-dm}
 
