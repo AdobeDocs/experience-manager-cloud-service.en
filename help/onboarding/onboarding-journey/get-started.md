@@ -30,7 +30,7 @@ The Adobe Admin console is a central place to administer and manage your Adobe p
 
 ## Steps for Logging in to Admin Console {#steps-admin-console}
 
-Follow the steps below to navigate to Admin Console and review your System Admnistrator role from the Admin Console:
+Follow the steps below to navigate to Admin Console and review your System Administrator role from the Admin Console:
 
 >[!NOTE]
 >You must be a System Administrator in order to be able to complete the following steps successfully.
@@ -44,10 +44,12 @@ Follow the steps below to navigate to Admin Console and review your System Admni
 
 1. Login using your Adobe ID. Upon successful login, you will see the **Overview** page of the Adobe Admin Console, as shown below. 
 
-   >[!NOTE]
-   >If you have access to multiple organizations, please ensure that you have logged into correct Organization.
-
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
+
+   >[!NOTE]
+   >If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the Org name from the action bar and choose the required organization to which you need access to, as shown in the figure below.
+
+   ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
 1. Select **Administrators** from the **Users** card to verify that you are System Administrator via Adobe Admin Console.
 
