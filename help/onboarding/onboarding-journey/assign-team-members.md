@@ -21,7 +21,7 @@ After reading this section you should be able to:
 * Assign team members to Cloud Manager product profiles (Business Owner, Deployment Manager, and Developer).
 
 
-## Review Cloud Manager Product Profiles
+## Review Cloud Manager Product Profiles {review-product-profiles}
 
 From Admin Console you can see the list of Cloud Manager Profiles. 
 
@@ -63,7 +63,7 @@ The following steps will walk you through this:
 
 Congratulations! Now, your newly formed Cloud Manager team including the yourself assigned to the ‘Business Owner’ role has been setup. Members will receive a welcome email inviting them to login and access Cloud Manager. In the role of Business Owner, you are now just one step away from logging in to Cloud Manager and enabling the creation of your cloud resources.
 
-## Assign Users to Deployment Manager Product Profile {##assign-users-deployment-manager}
+## Assign Users to Deployment Manager Product Profile {#assign-users-deployment-manager}
 
 1. Identify the user(s) who will manage Cloud Manager Programs and add them to the Business Owner product profile. The system administrator must be the first person to access and log in to Cloud Manager. You must add yourself (system administrator) to the Business Owner product profile first. 
 
@@ -78,7 +78,7 @@ Congratulations! Now, your newly formed Cloud Manager team including the yoursel
    >[!NOTE]
    >User can be added to the Deployment Manager product profile after Cloud Manager resources are created.
 
-## Assign Users to Developer Product Profile {##assign-users-developer}
+## Assign Users to Developer Product Profile {#assign-users-developer}
 
 1. Identify the user(s) who will manage Cloud Manager Programs and add them to the Business Owner product profile. The system administrator must be the first person to access and log in to Cloud Manager. You must add yourself (system administrator) to the Business Owner product profile first. 
 
