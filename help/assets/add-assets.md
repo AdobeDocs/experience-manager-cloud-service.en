@@ -122,7 +122,7 @@ The bulk asset ingestor can handle very large number of assets efficiently. Howe
 
 To upload larger number of files, use one of the following approaches. Also, see the [use cases and methods](#upload-methods-comparison)
 
-* [Asset upload APIs](developer-reference-material-apis.md#asset-upload-technical): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
+* [Asset upload APIs](developer-reference-material-apis.md#asset-upload): Use a custom upload script or tool that leverages APIs to add additional handling of assets (for example, translate metadata or rename files), if required.
 * [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Useful for creative professionals and marketers who upload assets from their local file system. Use it to upload nested folders available locally.
 * [Bulk ingestion tool](#asset-bulk-ingestor): Use for ingestion of large amounts of assets either occasionally or initially when deploying [!DNL Experience Manager].
 
@@ -203,7 +203,7 @@ For folders that have a processing profile assigned, the profile name appears on
 
 ## Upload or ingest assets using APIs {#upload-using-apis}
 
-Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload-technical) section of the developer reference.
+Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload) section of the developer reference.
 
 ## Tips, best practices, and limitations {#tips-limitations}
 
@@ -225,4 +225,4 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 >* [[!DNL Adobe Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [About [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Technical reference for asset upload](developer-reference-material-apis.md#asset-upload-technical)
+>* [Technical reference for asset upload](developer-reference-material-apis.md#asset-upload)
