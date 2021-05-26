@@ -1,9 +1,9 @@
 ---
-title: Learn about Product Profiles
-description: Follow this page to learn Product Profiles in AEM as Cloud Service team and Cloud Manager.
+title: AEM as a Cloud Service Team and Product Profiles
+description: Follow this page to learn about AEM as a Cloud Service Team and Product Profiles.
 ---
 
-# Product Profiles {#product-profiles}
+# AEM as a Cloud Service Team and Product Profiles {#product-profiles}
 
 AEM as a Cloud Service is the fully cloud-native offering that delivers AEM as a service. It delivers AEM in a cloud native manner, with new attributes like always on, always current, always secure, and always at scale. At the same time, it retains the main value proposition that AEM provides as a customizable platform to customers and allows enterprise grade teams to integrate in their development and delivery procedure.
 
