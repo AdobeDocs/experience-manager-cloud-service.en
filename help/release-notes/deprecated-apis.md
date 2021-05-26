@@ -5,7 +5,7 @@ description: Release notes specific to deprecated and removed APIs in [!DNL Adob
 
 # Deprecated APIs {#deprecated-apis}
 
-Below is an extensive list of deprecated AEM APIs and their expected removal date. Customers are expected to remove the APIs by the target removal date from their code. Any usage of the API past the removal date will generate errors in the local SDK/Development Environment and the Cloud Manager buuild process.
+Below is an extensive list of deprecated AEM APIs and their expected removal date. Customers are expected to remove the APIs by the target removal date from their code. Any usage of the API past the removal date will generate errors in the local SDK/Development Environment and the Cloud Manager build process.
 
 
 <table>
