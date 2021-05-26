@@ -1,16 +1,8 @@
 ---
 title: Getting Started with AEM Headless as a Cloud Service
 description: In this part of the AEM Headless Developer Journey, learn about AEM Headless prerequisites.
-hide: yes
-hidefromtoc: yes
-index: no
-exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
 ---
 # Getting Started with AEM Headless as a Cloud Service {#getting-started}
-
->[!CAUTION]
->
->WORK IN PROGRESS - The creation of this document is ongoing and it should not be understood as complete or definitive nor should it be used for production purposes.
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn about what is required to get your own project started with AEM Headless.
 
@@ -56,7 +48,8 @@ Replication is the act of transferring content from the author instance to the p
 At its simplest level, creating digital experiences in AEM requires the following steps:
 
 1. Your content authors will create your headless content in the author instance.
-1. When this content is ready, it is replicated to the publish instance. APIs can then be called to retrieve this content.
+1. When this content is ready, it is replicated to the publish instance.
+1. APIs can then be called to retrieve this content.
 
 AEM Headless builds off of this technical foundation by offering powerful tools to manage headless content which is [described in the next section.](#aem-headless-basics)
 
