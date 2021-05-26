@@ -20,8 +20,7 @@ After reading this section you should be able to:
 * Learn about three different Cloud Manager product profiles such as Business Owner, Deployment Manager, and Developer.
 * Assign team members to Cloud Manager product profiles (Business Owner, Deployment Manager, and Developer).
 
-
-## Review Cloud Manager Product Profiles {review-product-profiles}
+## Review Cloud Manager Product Profiles {#review-product-profiles}
 
 From Admin Console you can see the list of Cloud Manager Profiles. 
 
