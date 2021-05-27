@@ -13,9 +13,9 @@ exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into [!DNL Experience Manager]. If you are using Dynamic Media Classic (previously called Scene7) integrated into [!DNL Experience Manager], see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use [!DNL Experience Manager] integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -35,4 +35,4 @@ See also the following topics:
 >
 >**If you are upgrading:**
 >
->* After you have Adobe Experience Manager up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of Experience Manager and new to Dynamic Media, you likely must reprocess your assets to make them Dynamic Media-enabled. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* After you have Adobe [!DNL Experience Manager] up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of [!DNL Experience Manager] and new to Dynamic Media, you likely must reprocess your assets to make them Dynamic Media-enabled. See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
