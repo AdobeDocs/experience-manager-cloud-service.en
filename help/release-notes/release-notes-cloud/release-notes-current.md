@@ -23,18 +23,33 @@ The following release (2021.6.0) will be on June 24, 2021.
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
+
 * As Preview Service is being enabled in AEM as a Cloud Service environments, publishing to Preview will be possible in the AEM Sites Managed Publication wizard. (Note this capability will become generally available with Cloud Manager June release.)
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
-* Link Share now uses an asynchronous download services framework. Downloads now are faster and uninterupted utilizing the new framework.  For very large downloads (>100gb) the download job will be broken into 100gb download files. 
 
-* Metadata schemas can now be applied directly on the folder properties.  This feature is available in the 'Pre-Release Channel'.
+* You can download the assets shared using the Link Share functionality. This download now uses an asynchronous service that offers faster and and uninterrupted downloads, even for very large downloads. See [download assets](/help/assets/download-assets-from-aem.md#link-share-download).
 
-* The Asset Bulk Ingestor has a new enhancement to aid the ingestion of assets.This release includes the ability to add metadata during a bulk ingestion. This feature is available in the 'Pre-Release Channel'.
+  ![Download inbox](/help/assets/assets/download-inbox.png)
 
-* There is an asset counter for the number of assets in a folder. This feature is available in the 'Pre-Release Channel'.
+### New features available in the prerelease channel {#what-is-new-assets-prerelease}
+
+* Metadata schemas can be applied directly to the folder properties.
+
+  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
+
+* The Asset Bulk Ingestor tool lets you add metadata during a bulk ingestion.
+
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
+
+* Uploading very large files crashes the [!DNL Experience Manager desktop app]. (CQ-4320942)
+* The toolbar options are different when the same Collection is selected from within a folder and when it is selected from a search result. (CQ-4321406)
 
 #### What is new in Dynamic Media {#what-is-new-dm}
 

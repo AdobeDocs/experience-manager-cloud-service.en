@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed.
+You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -19,6 +19,7 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 You can download Experience Manager assets using the following methods:
 
 * [Experience Manager user interface](#download-assets)
+* [Link Share]()
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -57,6 +58,16 @@ To download assets, follow these steps:
    | **[!UICONTROL Dynamic Rendition(s)]** | Select this option to generate a series of alternate renditions in real time. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](/help/assets/dynamic-media/image-presets.md) list. <br>In addition, you can select the size and unit of measurement, format, color space, resolution, and any optional image modifiers such as inverting the image. The option is only available if you have [!DNL Dynamic Media] enabled.|
 
 1. In the dialog box, click **[!UICONTROL Download]**.
+
+## Download assets shared using link sharing {#link-share-download}
+
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+
+![Download inbox](assets/download-inbox.png)
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
