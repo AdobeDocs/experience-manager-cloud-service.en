@@ -146,7 +146,7 @@ The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
 * Multiple bug fixes related to the auto-refresh feature in the Content Transfer Tool UI.
 * Content Transfer Tool with `wipe=true` resulted in incorrect counter index on the target. This has been fixed.
 
-## Commmerce add-on {#cloud-services-commerce}
+## Commerce Add-on {#cloud-services-commerce}
 
 ### What is New {#what-is-new-commerce}
 
