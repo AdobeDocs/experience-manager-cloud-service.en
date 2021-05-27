@@ -28,6 +28,7 @@ role: Business Practitioner
     + [Editing Page Content](authoring/fundamentals/editing-content.md)
     + [The Rich Text Editor](authoring/fundamentals/rich-text-editor.md)
     + [Page Properties](authoring/fundamentals/page-properties.md)
+    + [Previewing Content](authoring/fundamentals/previewing-content.md)
     + [Publishing Pages](authoring/fundamentals/publishing-pages.md)
     + [Content Fragments](authoring/fundamentals/content-fragments.md)
     + [Experience Fragments](authoring/fundamentals/experience-fragments.md)
