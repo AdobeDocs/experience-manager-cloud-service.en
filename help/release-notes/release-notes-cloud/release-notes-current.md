@@ -55,9 +55,9 @@ The following release (2021.6.0) will be on June 24, 2021.
 * Uploading very large files crashes the [!DNL Experience Manager desktop app]. (CQ-4320942)
 * The toolbar options are different when the same Collection is selected from within a folder and when it is selected from a search result. (CQ-4321406)
 
-#### What is new in Dynamic Media {#what-is-new-dm}
+#### What is new in [!DNL Dynamic Media] {#what-is-new-dm}
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md).
+* Smart Imaging Device Pixel Ratio (DPR) and network bandwidth optimization let you deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. See [smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ The following release (2021.6.0) will be on June 24, 2021.
    >
    >* Asia-Pacific July 19, 2021.
 
-* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier).
+* Introduced support for next-gen image format AVIF in [!DNL Dynamic Media] delivery (fmt URL modifier).
 
   >[!NOTE]
   >
