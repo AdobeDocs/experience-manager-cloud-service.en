@@ -1,9 +1,9 @@
 ---
-title: Onboarding Help Resources
+title: Adobe Support
 description: Follow this page to learn Onboarding Help Resources and Adobe Support.
 ---
 
-# Onboarding Help Resources {#onboard-help}
+# Adobe Support {#adobe-support}
 
 Adobe Support can be accessed via Adobe Admin Console from where you can manage your support cases and schedule an expert session.
 
