@@ -3,11 +3,11 @@ title: Previewing Content
 description: Learn how to use the AEM Preview Service to preview content before going live.
 ---
 
+# Previewing Content {#previewing-content}
+
 >[!NOTE]
 >
 >The Preview feature is part of the 2021.5.0 release and will be rolled out gradually over the next few weeks.
-
-# Previewing Content {#previewing-content}
 
 AEM offers a Sites Preview Service that is designed to let developers and content authors preview a website's final experience before it reaches the publish environment and is available publicly.
 
