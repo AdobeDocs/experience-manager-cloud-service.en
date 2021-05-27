@@ -10,11 +10,11 @@ exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You enter Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
-You add Dynamic Media assets directly to the page if you are using Experience Manager as your WCM. If you are using a third party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
+You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Be sure you publish assets before adding them to pages in Experience Manager. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Be sure you publish assets before adding them to pages in [!DNL Experience Manager]. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -22,7 +22,7 @@ Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop
 
 **To add a Dynamic Media component to a page:**
 
-1. In Experience Manager, open the page where you want to add the Dynamic Media component.
+1. In [!DNL Experience Manager], open the page where you want to add the Dynamic Media component.
 1. In the left pane, tap the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
 
     If no list of Dynamic Media components is available, you likely must enable the Dynamic Media components that you want to use. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
@@ -49,7 +49,7 @@ Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop
 
 If no Dynamic Media components are available to add to a page, it likely means that you must enable the components that you want to use.
 
-1. In Experience Manager, open the page where you want to add the Dynamic Media component.
+1. In [!DNL Experience Manager], open the page where you want to add the Dynamic Media component.
 1. To the left of the toolbar near the top of the page, tap the Page Information icon, then tap **[!UICONTROL Edit Template]** from the drop-down list.
 
     ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -100,7 +100,7 @@ The Dynamic Media components that are available include the following:
 
 >[!NOTE]
 >
->These components are not available by default and must be made available by way of the template editor before using. After they are made available in the template editor, you can add the components to your page as you would any other Experience Manager component.
+>These components are not available by default and must be made available by way of the template editor before using. After they are made available in the template editor, you can add the components to your page as you would any other [!DNL Experience Manager] component.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -161,7 +161,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
   * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
@@ -239,7 +239,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
