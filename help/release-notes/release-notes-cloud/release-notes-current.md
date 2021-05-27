@@ -26,7 +26,7 @@ The following release (2021.6.0) will be on June 24, 2021.
 
 * [Prerelease Channel](/help/release-notes/prerelease.md): Preview upcoming features for a full month before they go live in production!
 
-* API Deprecation: a list of the latest deprecated APIs for AEM as a Cloud Service is available with the [Deprecated APIs](/help/release-notes/deprecated-apis.md) page.
+* [API Deprecation](/help/release-notes/deprecated-apis.md): a list of the latest deprecated APIs for AEM as a Cloud Service is available. 
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
