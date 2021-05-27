@@ -8,9 +8,9 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Chann
 
 ## Introduction {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service delivers new features on a monthly cadence, according to the schedule on [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). In order to become familiar with the features scheduled to go live the following month, customers can subscribe to the prerelease channel, which is accessible by appropriately configuring in standard program development environments or any sandbox program environments. Customers can preview changes to the author UI console, as well as build code against any new prerelease APIs.
+[!DNL Adobe Experience Manager] as a Cloud Service delivers new features on a monthly cadence, according to the schedule on [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). In order to become familiar with the features scheduled to go live the following month, customers can subscribe to the prerelease channel, which is accessible by appropriately configuring in standard program development environments or any sandbox program environments. Customers can preview changes to the Sites console, as well as build code against any new prerelease APIs.
 
-The list of prerelease features for a given month are posted within the [monthly release notes](/help/release-notes/release-notes/release-notes-current.md).
+The list of prerelease features for a given month are posted within the [monthly release notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## How to Enable the Prerelease {#enable-prerelease}
 
@@ -21,7 +21,7 @@ The prerelease features can be experienced in different ways:
 
 ### Cloud Environments {#cloud-environments}
 
-To see new features in the Author console on cloud dev environments as well as the result of any project customizations:
+To see new features in the Sites console on cloud dev environments as well as the result of any project customizations:
 
 * Using the [Cloud Manager API's environment variables endpoint](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), set the **AEM_RELEASE_CHANNEL** environment variable to the value **prerelease**. 
 
@@ -29,21 +29,22 @@ To see new features in the Author console on cloud dev environments as well as t
 PATCH /program/{programId}/environment/{environmentId}/variables
 [
         {
-                "name" : "**AEM_RELEASE_CHANNEL**",
-                "value" : "**prerelease**",
+                "name" : "AEM_RELEASE_CHANNEL",
+                "value" : "prerelease",
                 "type" : "string"
         }
 ]
 ```
 
 The Cloud Manager CLI can also be used, as per the instructions at [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
- ```aio cloudmanager:set-environment-variables <ENVIRONMENT_ID> --variable AEM_RELEASE_CHANNEL "prerelease"```
+ ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+ 
 
-You can set back to an empty value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel.
+The variable can be deleted or set back to a different value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel
 
 ### Local SDK {#local-sdk}
 
-You can see new features in the author console in the local Quickstart SDK and code against new APIs in the prerelease by having your maven project reference the prerelease `API Jar` located in Maven Central. You can also see these prerelease features on your local computer by starting the regular Quickstart SDK in prerelease mode:
+You can see new features in the Sites console in the local Quickstart SDK and code against new APIs in the prerelease by having your maven project reference the prerelease `API Jar` located in Maven Central. You can also see these prerelease features on your local computer by starting the regular Quickstart SDK in prerelease mode:
 
 * Download the SDK from the software distribution portal and install as described in [Accessing the AEM as a Cloud Service SDK](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)
 * When launching the SDK Quickstart, include the argument `-r prerelease`.
