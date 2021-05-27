@@ -56,9 +56,10 @@ To build against the prerelease SDK:
 
 1. modify your maven project's pom.xml to reference a distinct prerelease sdk api jar, which is published to Maven central. It contains any new Java api for the prerelease features and has a dependency on the sdk api jar. It uses the same version.
 
-As an illustration, we have a snippet from the parent pom's dependency management section referencing the regular API Jar:
+   As an illustration, we have a snippet from the parent pom's dependency management section referencing the regular API Jar:
 
-```<dependencyManagement>
+   ```
+   <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>com.adobe.aem</groupId>
@@ -66,20 +67,22 @@ As an illustration, we have a snippet from the parent pom's dependency managemen
             <version>${aem.sdk.api}</version>
             <scope>provided</scope>
         </dependency>
- ```
+   ```
         
-And then the usage in a module:
+   And then the usage in a module:
 
-```<dependencies>
+   ```
+    <dependencies>
      <dependency>
          <groupId>com.adobe.aem</groupId>
          <artifactId>aem-sdk-api</artifactId>
      </dependency>
-```
+   ```
 
-In order to change to the prerelease SDK, simply change the dependency from `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` as noted below:
+   In order to change to the prerelease SDK, simply change the dependency from `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` as noted below:
 
-```<dependencyManagement>
+   ```
+   <dependencyManagement>
     <dependencies>
       <dependency>
             <groupId>com.adobe.aem</groupId>
@@ -92,9 +95,9 @@ In order to change to the prerelease SDK, simply change the dependency from `com
          <groupId>com.adobe.aem</groupId>
          <artifactId>aem-prerelease-sdk-api</artifactId>
       </dependency>
-```
+   ```
 
-As usual, individual projects can use the dependency.
+   As usual, individual projects can use the dependency.
 
 1. Deploy to your local server
 1. If satisfied that it works as expected locally, commit code to a development branch and use a Cloud Manager non-production pipeline to deploy to an environment that subscribes to the prerelease channel
