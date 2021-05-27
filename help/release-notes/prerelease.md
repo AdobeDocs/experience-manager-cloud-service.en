@@ -8,9 +8,9 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Chann
 
 ## Introduction {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service delivers new features on a monthly cadence, according to the schedule on [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). In order to become familiar with the features scheduled to go live the following month, customers can subscribe to the prerelease channel, which is accessible by appropriately configuring in standard program developement environments or any sandbox program environments. Customers can preview changes to the author UI console, as well as build code against any new prerelease APIs.
+[!DNL Adobe Experience Manager] as a Cloud Service delivers new features on a monthly cadence, according to the schedule on [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). In order to become familiar with the features scheduled to go live the following month, customers can subscribe to the prerelease channel, which is accessible by appropriately configuring in standard program development environments or any sandbox program environments. Customers can preview changes to the author UI console, as well as build code against any new prerelease APIs.
 
-The list of prerelease features for a given month will be posted within the [monthly release notes](/help/release-notes/release-notes/release-notes-current.md).
+The list of prerelease features for a given month are posted within the [monthly release notes](/help/release-notes/release-notes/release-notes-current.md).
 
 ## How to Enable the Prerelease {#enable-prerelease}
 
@@ -56,7 +56,7 @@ To build against the prerelease SDK:
 
 1. modify your maven project's pom.xml to reference a distinct prerelease sdk api jar, which is published to Maven central. It contains any new Java api for the prerelease features and has a dependency on the sdk api jar. It uses the same version.
 
-   As an illustration, we have a snippet from the parent pom's dependency management section referencing the regular API Jar:
+   As an example, here is a snippet from the parent pom's dependency management section referencing the regular API Jar:
 
    ```
    <dependencyManagement>
@@ -113,7 +113,7 @@ The [AEM CS SDK build Analyzer maven plugin v1.0 and higher](https://experiencel
 There are a few things to note when it comes to the prerelease channel:
 
 * Some features that will be rolled out in the next month release may not be included in the prerelease channel.
-* Features in the prerelease are put through rigorous quality assurance and intended to be feature complete rather than beta quality. If you notice any issues, report them, just as you might if you suspect bugs in features in a regular AEM release.  
+* Features in the prerelease are put through rigorous quality assurance and intended to be feature complete rather than beta quality. If you notice any issues, report them, just as you would do if you suspect bugs in features in a regular AEM release.  
 * To determine if an environment is configured for the prerelease channel, go to the AEM Console's **About** page and check if the AEM version number includes a *prerelease* suffix such as ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
 
 ![about](/help/release-notes/assets/about.png)
