@@ -26,7 +26,7 @@ In addition to the speed of innovation, [!DNL Adobe Experience Manager] as a Clo
 
 To prepare for a release:
 
-1. Mark your calendars: Check key dates for monthly releases and mark your calendars to prepare yourself for the key activities to get ready for the release.
+1. Mark your calendars: Check key dates for monthly releases on the [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) and mark your calendars to prepare yourself for the key activities to get ready for the release.
 1. Review the release notes: Read the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) to get familiarized with the release and prerelease features.
 1. Access and try new features: Enable the [prerelease channel](/help/release-notes/prerelease.md) in your non-production environments and start trying the features to assess in your custom environments.
 1. Train your users: Use documentation and Experience League resources to get users up to speed and well-versed with the new features.
