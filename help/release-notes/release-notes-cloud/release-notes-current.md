@@ -32,7 +32,7 @@ The following release (2021.6.0) will be on June 24, 2021.
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* As the [Preview Service](/help/sites-cloud/authoring/fundamentals/previewing-content.md) is being enabled in AEM as a Cloud Service environments, publishing to Preview will be possible in the AEM Sites Managed Publication wizard. This capability will be gradually rolled out in the next few weeks.
+* You will soon be able to verify content on a new [Preview tier](/help/sites-cloud/authoring/fundamentals/previewing-content.md) to simulate the final experience look and feel as you would on the Publish tier. This is enabled by the AEM Sites Managed Publication wizard which is now allowing you to choose a publish destination between Publish or Preview. Experiences on Preview can then be accessed via a dedicated URL. After validation on Preview, content can be published from Author to Publish as usual. Enabling the Preview Service in AEM as a Cloud Service environments will be gradually rolled out in the next few weeks.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
