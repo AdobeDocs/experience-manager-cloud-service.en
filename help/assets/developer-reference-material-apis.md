@@ -60,7 +60,7 @@ The article contains recommendations, reference materials, and resources for dev
 
 ## Asset upload {#asset-upload}
 
-In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
+In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 1. [Submit an HTTP request](#initiate-upload). It informs [!DNL Experience Manage]r deployment of your intent to upload a new binary.
 1. [POST the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
@@ -70,7 +70,7 @@ In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload 
 
 >[!IMPORTANT]
 >
->Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
+>Execute the above steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 The approach provides a scalable and more performant handling of asset uploads. The differences as compared to [!DNL Experience Manager] 6.5 are:
 
