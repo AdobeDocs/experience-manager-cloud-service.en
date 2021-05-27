@@ -5,6 +5,14 @@ exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
 ---
 # Post Go-live {#post-go-live}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="Troubleshooting AEM"
+>abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+
+
 In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.
 
 The following tools are available to troubleshoot AEM as a Cloud Service environments:
@@ -37,4 +45,10 @@ Refer to [Accessing and Managing Logs](https://docs.adobe.com/content/help/en/ex
 
 ### Additional Support {#additional-support}
 
-If you have questions about access to Cloud Service, contact your Adobe representative or Adobe AEM CQ Support Portal.
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="Help & Support"
+>abstract="Reach out to our AEM Support team to get clarifications or to address any concerns."
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Support for Experience Cloud"
+
+If you have questions about access to Cloud Service, contact your Adobe representative or [Support for Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for more details.
