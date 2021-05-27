@@ -38,12 +38,6 @@ The following release (2021.6.0) will be on June 24, 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
-
-* You can download the assets shared using the Link Share functionality. This download now uses an asynchronous service that offers faster and and uninterrupted downloads, even for very large downloads. See [download assets](/help/assets/download-assets-from-aem.md#link-share-download).
-
-  ![Download inbox](/help/assets/assets/download-inbox.png)
-
 ### New features available in the prerelease channel {#what-is-new-assets-prerelease}
 
 * Metadata schemas can be applied directly to the folder properties.
