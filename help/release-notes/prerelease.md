@@ -8,9 +8,9 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Chann
 
 ## Introduction {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service delivers new features on a monthly cadence, according to the schedule at https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service. In order to become familiar with the features scheduled to go live the following month, customers can subscribe to the prerelease channel, which is accessible by appropriately configuring in standard program developement environments or any sandbox program environments. Customers can preview changes to the author UI console, as well as build code against any new prerelease APIs.
+[!DNL Adobe Experience Manager] as a Cloud Service delivers new features on a monthly cadence, according to the schedule on [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). In order to become familiar with the features scheduled to go live the following month, customers can subscribe to the prerelease channel, which is accessible by appropriately configuring in standard program developement environments or any sandbox program environments. Customers can preview changes to the author UI console, as well as build code against any new prerelease APIs.
 
-The list of prerelease features for a given month will be posted within the release notes https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date
+The list of prerelease features for a given month will be posted within the [monthly release notes](/help/release-notes/release-notes/release-notes-current.md).
 
 ## How to Enable the Prerelease {#enable-prerelease}
 
