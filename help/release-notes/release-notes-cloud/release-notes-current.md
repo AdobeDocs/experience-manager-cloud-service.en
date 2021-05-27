@@ -20,6 +20,14 @@ The following section outlines the general Release Notes for the current (latest
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 is May 27, 2021.
 The following release (2021.6.0) will be on June 24, 2021.
 
+## AEM as a Cloud Service Foundation {#foundation}
+
+### What is New in AEM as a Cloud Service Foundation {#what-is-new-foundation}
+
+* [Prerelease Channel](/help/release-notes/prerelease.md): Preview upcoming features for a full month before they go live in production!
+
+* API Deprecation: a list of the latest deprecated APIs for AEM as a Cloud Service is available with the [Deprecated APIs](/help/release-notes/deprecated-apis.md) page.
+
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
@@ -149,9 +157,3 @@ The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
 * Asset thumbnails not displayed in Asset tab of product properties
 
 * Breadcrumb resets preview data in product console
-
-### What is New in AEM as a Cloud Service Foundation {#what-is-new-foundation}
-
-**API Deprecation**
-
-A list of the latest deprecated APIs for AEM as a Cloud Service is available with the [Deprecated APIs](/help/release-notes/deprecated-apis.md) page.
