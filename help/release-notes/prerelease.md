@@ -23,7 +23,7 @@ The prerelease features can be experienced in different ways:
 
 To see new features in the Author console on cloud dev environments as well as the result of any project customizations:
 
-* Using the Cloud Manager API's environment variables endpoint [https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), set the **AEM_RELEASE_CHANNEL** environment variable to the value **prerelease**. 
+* Using the [Cloud Manager API's environment variables endpoint](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), set the **AEM_RELEASE_CHANNEL** environment variable to the value **prerelease**. 
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
