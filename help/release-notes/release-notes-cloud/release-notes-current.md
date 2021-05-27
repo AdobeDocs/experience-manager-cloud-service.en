@@ -85,8 +85,6 @@ The following release (2021.6.0) will be on June 24, 2021.
   >
   >* Asia-Pacific June 24, 2021.
 
-### Bug fixes in [!DNL Assets] {#bug-fixes-assets}
-
 ## Cloud Manager {#cloud-manager}
 
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.5.0.
