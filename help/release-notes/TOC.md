@@ -13,6 +13,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
   + 2021 {#2021}
+    + [Release Notes for 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
     + [Release Notes for 2021.4.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
     + [Release Notes for 2021.3.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
     + [Release Notes for 2021.2.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
