@@ -23,7 +23,8 @@ You can publish content to the Preview Service by using the Managed Publicaton U
 The see the preview content, append **preview** to the publish URL of your production instance. The URL should be constructed like this:
 
 ```
-https://preview-p1234-e5678.adobeaemcloud.com/pathtopage.html
+https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 ```
 
 See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments. 
+
