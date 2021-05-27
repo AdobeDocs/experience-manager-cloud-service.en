@@ -34,3 +34,4 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator
 + [Known issues](known-issues.md)
 + [Deprecated and Removed Features](deprecated-removed-features.md)
 + [Deprecated APIs](deprecated-apis.md)
++ [Prerelease Channel](prerelease.md)
