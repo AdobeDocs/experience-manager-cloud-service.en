@@ -19,7 +19,7 @@ The prerelease features can be experienced in different ways:
 * Cloud environments (standard program dev environments or any sandbox program environment type)
 * Local SDK
 
-### Cloud environments {#cloud-environments)
+### Cloud Environments {#cloud-environments}
 
 To see new features in the Author console on cloud dev environments as well as the result of any project customizations:
 
@@ -41,7 +41,7 @@ The Cloud Manager CLI can also be used, as per the instructions at [https://gith
 
 You can set back to an empty value if you want the environment to be restored to the behavior of the regular (non-prerelease) channel.
 
-### Local SDK
+### Local SDK {#local-sdk}
 
 You can see new features in the author console in the local Quickstart SDK and code against new APIs in the prerelease by having your maven project reference the prerelease `API Jar` located in Maven Central. You can also see these prerelease features on your local computer by starting the regular Quickstart SDK in prerelease mode:
 
