@@ -30,4 +30,4 @@ The workflows have varying level of migration support. See this [list of specifi
 
 * **[!DNL Adobe I/O] CLI**: Adobe recommends using the Asset Workflow Migration tool via `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] as a [!DNL Cloud Service] code refactoring plugin for the [!DNL Adobe I/O] CLI). To learn how to install and use the plugin, see [Git resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
 
-* **Standalone utility**: The Asset Workflow Migration Tool can also be executed as a standalone utility. To learn about installing and building code from the source, see **[Git resource: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - workflow migration](https://github.com/adobe/aem-cloud-migration)**.
+* **Standalone utility**: The Asset Workflow Migration Tool can also be executed as a standalone utility. To learn about installing and building code from the source, see [Git resource: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - workflow migration](https://github.com/adobe/aem-cloud-migration).
