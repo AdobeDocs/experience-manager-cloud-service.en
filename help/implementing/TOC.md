@@ -64,7 +64,7 @@ role: Developer, Architect
   + [Logging](developing/introduction/logging.md)
   + [Configurations and the Configuration Browser](developing/introduction/configurations.md)
   + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
-  + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+  + [AEM as a Cloud Service API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
   + [Generating Access Tokens for Server Side APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
   + [Headful and Headless in AEM](developing/headful-headless.md)
   + Full Stack AEM Development {#full-stack}
@@ -81,7 +81,7 @@ role: Developer, Architect
     + Components and Templates {#components-templates}
       + [Components Overview](developing/components/overview.md)
       + [Templates](developing/components/templates.md)
-      + [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+      + [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
       + [Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
       + [JSON Exporter for Content Services](developing/components/json-exporter.md)
       + [Enabling JSON Export for a Component](developing/components/enabling-json-exporter.md)
