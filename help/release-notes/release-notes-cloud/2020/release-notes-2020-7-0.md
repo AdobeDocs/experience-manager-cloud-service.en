@@ -19,7 +19,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * A new user interface implementation replaces the implementation based on the Classic UI.
 
-* Simplified user interface dialogs, leaving framework creation for variable mapping and other configurations to [!DNL Adobe Launch]. See [Integrating Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) and [Integrating Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
+* Simplified user interface dialogs, leaving framework creation for variable mapping and other configurations to [!DNL Adobe Launch]. See [Integrating Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) and [Integrating Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
 
 * Configurations are now stored in `/conf` rather than `/etc/cloudsettings` in the Experience Manager repository.
 
@@ -49,20 +49,20 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 AEM Commerce is now available on Cloud Service.
 
-  Refer to [Getting started with AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) for more details.
+  Refer to [Getting started with AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) for more details.
 
 ## Core Components {#core-components}
 
 ### What's New {#what-is-new-core-components}
 
-Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
+Release 2.11.0 of the [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
 * Introduction of a new [PDF Viewer Component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
 
 * Accelerated Mobile Pages (AMP) support of Core Components is now available. It helps to produce faster customer experiences by making the page transition instantaneously when entering the site from a Google mobile search result, which improves user engagement and SEO.
-   Refer to [AMP Support for the Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) for more details.
+   Refer to [AMP Support for the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) for more details.
 
-* Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html).
+* Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html).
 
 * Bug fixes and code quality improvements.
 
@@ -131,7 +131,7 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * Earlier version of the CRA could not be run on Adobe Experience Manager (AEM) 6.1. Explicit support to allow users in the administrators group was added.
 
-   Refer to [Installing CRA on AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
+   Refer to [Installing CRA on AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
 
 * The expiration timestamp displayed on the summary report was incorrect.
 

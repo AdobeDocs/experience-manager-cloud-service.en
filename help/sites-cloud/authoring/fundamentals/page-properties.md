@@ -138,7 +138,7 @@ Configure the page thumbnail
 
 * **Social Media sharing**
 
-  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
   * **Enable user sharing for Facebook**
   * **Enable user sharing for Pinterest**
