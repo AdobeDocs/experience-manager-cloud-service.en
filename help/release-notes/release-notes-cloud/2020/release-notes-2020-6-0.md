@@ -17,7 +17,7 @@ Follow this section to learn about what is new and the updates for AEM Sites in 
 
 ### What's New {#whats-new-2020.6.0}
 
-Release 2.9.0 of the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
+Release 2.9.0 of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
 * Integration between [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) and the Core Components
 * Configurable HTML ID attributes for all components
@@ -54,11 +54,11 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * A user in the *Business Owner* role in Cloud Manager is now able to delete a Sandbox Program from the landing page (via quick action button on Program card) or from within the program.
 
-  Refer to [Deleting a Sandbox Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for more details.
+  Refer to [Deleting a Sandbox Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for more details.
 
 * A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager is now able to delete their Production and Stage environment set via the Cloud Manager UI. The delete option is now available from both the Environment card on the **Programs Overview** page as well as the **Environments** page. Selecting the delete option on either Production or Stage also deletes the other in the set.
 
-  Refer to [Deleting a Sandbox Program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for more details.
+  Refer to [Deleting a Sandbox Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for more details.
 
 * Coach marks on the landing page to inform and instruct the user about basic navigation.
 
@@ -70,11 +70,11 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * A user in the SysAdmin role now has one-click access to the location in Admin Console from where user roles or permissions to Cloud Manager can be managed. A **Manage Access** button is now available on the landing page next to the **Add Program** button.
   
-  Refer to [SysAdmin Tasks](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) for more details.
+  Refer to [SysAdmin Tasks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) for more details.
 
 * A user in the SysAdmin role now has one-click access to author instance directly from Cloud Manager. 
 
-  Refer to [Managing Access to Author Instance](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) for more details.
+  Refer to [Managing Access to Author Instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) for more details.
 
 * The Build log now includes the list of discovered artifacts, including skipped content packages.
 

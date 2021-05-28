@@ -32,7 +32,7 @@ You can also use [folders](#creating-a-new-folder) to help organize your content
 
 The structure of a website can be thought of as a tree that holds your content pages. The names of these content pages are used to form the URLs, whereas the titles are shown when the page content is viewed.
 
-The following shows an example from the [WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) site, where an article about skateparks ( `la-skateparks`) is accessed:
+The following shows an example from the [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) site, where an article about skateparks ( `la-skateparks`) is accessed:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
