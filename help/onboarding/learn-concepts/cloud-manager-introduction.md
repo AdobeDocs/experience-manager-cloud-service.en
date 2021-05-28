@@ -25,7 +25,6 @@ A user can create a **Sandbox** or a **Production** program.
 * A *Sandbox Program* is typically created to serve the purposes of training, running demo’s, enablement, POC’s, or documentation. It is not meant to carry live traffic and will have restrictions that a Production program will not. It will include Sites and Assets and will be delivered auto-populated with a Git branch that includes sample code, a Dev environment, and a non-production pipeline.
    Refer to [Introduction to Sandbox Programs](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
 
-
 ## Cloud Manager Environments {#cloud-manager-environments}
 
 Your cloud environments will be created, accessed and viewed via Cloud Manager. These can be a Production environment, Stage environment, or Development environment. Different environments support different purposes and can be engaged using different CI/CD Pipelines. Environments are composed of services such as:
