@@ -32,7 +32,7 @@ The endpoint gets configured and updated either via Cloud Manager UI or its CLI.
 
 ## Deployment of CIF Venia Project
 
-Project available in [Cloud Manager Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) and deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html)
+Project available in [Cloud Manager Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) and deployment done via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)
 
 **Previous CIF versions**
 

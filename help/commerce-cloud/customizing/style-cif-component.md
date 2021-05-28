@@ -75,7 +75,7 @@ The `ui.frontend` module is also a Maven module and integrated with the larger p
 
 ## Update the Teaser Style {#ui-frontend-module}
 
-Next, make a small change to the Teaser style to see how the `ui.frontend` module and client libraries work. Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Next, make a small change to the Teaser style to see how the `ui.frontend` module and client libraries work. Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Navigate and expand the **ui.frontend** module and expand the folder hierarchy to: `ui.frontend/src/main/styles/commerce`:
 

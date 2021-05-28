@@ -54,7 +54,7 @@ To integrate with Target, perform the following tasks:
 >
 >See [Prerequisites for Integrating with Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) for detailed information.
 
-When the integration is complete, you can [author targeted content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html) that sends visitor data to Adobe Target. Note that page components require specific code to enable content targeting. (See [Developing for Targeted Content](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html).
+When the integration is complete, you can [author targeted content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html) that sends visitor data to Adobe Target. Note that page components require specific code to enable content targeting. (See [Developing for Targeted Content](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html).
 
 >[!NOTE]
 >
