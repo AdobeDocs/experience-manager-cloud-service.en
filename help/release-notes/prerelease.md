@@ -12,6 +12,8 @@ description: [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Chann
 
 The list of prerelease features for a given month are posted within the [monthly release notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
+![video](/help/release-notes/assets/prerelease-overview.mp4)
+
 ## How to Enable the Prerelease {#enable-prerelease}
 
 The prerelease features can be experienced in different ways:
