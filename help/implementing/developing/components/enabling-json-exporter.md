@@ -22,7 +22,7 @@ First a Sling Model must be defined for the component.
 
 >[!NOTE]
 >
->For an example of using Sling Models see the article [Developing Sling Model Exporters in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+>For an example of using Sling Models see the article [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
 The Sling Model implementation class must be annotated with the following:
 
@@ -64,7 +64,7 @@ The Model interface needs to be properly annotated to define which methods shoul
 
 ## Example {#example}
 
-[The Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) support JSON export and can be used as a reference.
+[The Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) support JSON export and can be used as a reference.
 
 For an example, see the Sling Model implementation of the Image Core Component and its annotated interface.
 
@@ -75,4 +75,4 @@ For further details see:
 * [Content Fragments in the Assets user guide](/help/assets/content-fragments/content-fragments.md)
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)

@@ -71,7 +71,7 @@ The page model leverages the JSON Model Exporter, which is itself based on the [
 * `:itemsOrder`: Ordered list of the children. The JSON map object doesn't guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
 * `:path`: Content path of an item (present on items representing a page)
 
-See also [Getting Started with AEM Content Services.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+See also [Getting Started with AEM Content Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 ### Framework-Specific Module {#framework-specific-module}
 

@@ -96,7 +96,7 @@ After switchover to new version of application:
   * Context Aware configuration (anything under `/conf`) (add, modify, remove)
   * Scripts (packages can trigger Install hooks at various stages of the install process of package installation. See the [Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. Note that AEM CS currently uses Filevault version 3.4.0, which limits install hooks to admin users, system users,and member of the administrators group)).
 
-It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+It is possible to limit mutable content installation to author or publish by embedding packages in an install.author or install.publish folder under `/apps`. Restructuring to reflect this separation was done in AEM 6.5 and details around recommended project restructuring can be found in the [AEM 6.5 documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation via Package Manager.
