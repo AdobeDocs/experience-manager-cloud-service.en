@@ -106,6 +106,11 @@ Follow the resources below to learn how to use Cloud Manager to manage and deplo
 
 ## Best Practices for Go-Live Preparation {#go-live}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="Go-Live Preparation"
+>abstract="To ensure a smooth and successful go-live on AEM as a Cloud Service, you should plan for code and content freeze periods, testing iterations, content top-ups, performance tests, security tests and more."
+
 To ensure a smooth and successful go-live on AEM as a Cloud Service, you should consider executing the following steps:
 
 * Schedule code and content freeze period
