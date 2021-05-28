@@ -81,7 +81,7 @@ Content is replicated from Author to Publish through a pub-sub mechanism. Custom
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Setting the Log Level**
 
@@ -153,7 +153,7 @@ Also useful for debugging, the Developer console has a link to the Explain Query
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services in order to view status dump data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
@@ -220,7 +220,7 @@ By default, outbound email is disabled. To activate it, submit a support ticket 
 
 ### Sending Emails {#sending-emails}
 
-The [Day CQ Mail Service OSGI service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
+The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
 
 AEM CS requires mail to be sent out through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
 
@@ -230,9 +230,9 @@ AEM CS requires mail to be sent out through port 465. If a mail server does not 
 
 ### Configuration {#email-configuration}
 
-E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-See [AEM 6.5 documentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, the following adjustments must be made to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+See [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, the following adjustments must be made to the `com.day.cq.mailer.DefaultMailService OSGI` service:
 
 If port 465 has been requested:
 

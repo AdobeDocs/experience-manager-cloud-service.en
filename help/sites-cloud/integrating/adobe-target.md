@@ -21,12 +21,12 @@ Integrate your AEM sites with Adobe Target to personalize content in your pages:
 
 To integrate with Target, perform the following tasks:
 
-* [Perform prerequisite tasks](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html): Register with Adobe Target and configure certain aspects of the AEM author instance. Your Adobe Target account must have **approver** level permissions at a minimum. In addition, you must secure the activity settings on the publish node so that it is inaccessible to users.
+* [Perform prerequisite tasks](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html): Register with Adobe Target and configure certain aspects of the AEM author instance. Your Adobe Target account must have **approver** level permissions at a minimum. In addition, you must secure the activity settings on the publish node so that it is inaccessible to users.
 
 * Launch by Adobe is the defacto tool for instrumenting an AEM site with Target capabilities (JS libraries). Therefore, integrating AEM as a Cloud Service with Launch and Adobe Target goes hand-in-hand (see the links below).
    
-  * [Integration with Adobe Target using Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
-  * [Integrate Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+  * [Integrate Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
   * [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
   * [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
@@ -34,7 +34,7 @@ To integrate with Target, perform the following tasks:
 >
 >The IMS configuration (technical accounts) for Launch by Adobe is preconfigured in AEM as a Cloud Service. Users do not have to create this configuration.
 
-1. [Configure Activities](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Associate your Activities with the Target cloud configuration.
+1. [Configure Activities](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html): Associate your Activities with the Target cloud configuration.
 
 >[!CAUTION]
 >
@@ -52,9 +52,9 @@ To integrate with Target, perform the following tasks:
 >
 >You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
 >
->See [Prerequisites for Integrating with Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) for detailed information.
+>See [Prerequisites for Integrating with Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) for detailed information.
 
-When the integration is complete, you can [author targeted content](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html) that sends visitor data to Adobe Target. Note that page components require specific code to enable content targeting. (See [Developing for Targeted Content](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html).
+When the integration is complete, you can [author targeted content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html) that sends visitor data to Adobe Target. Note that page components require specific code to enable content targeting. (See [Developing for Targeted Content](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html).
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ When the integration is complete, you can [author targeted content](https://docs
 
 Integrating AEM as a Cloud Service with Adobe Target requires knowledge of Adobe Target, AEM Activities management, and AEM Audiences management. You should be familiar with the following information:
 
-* Adobe Target (See the [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/target-home.html)).
-* AEM Activities console (See [Managing Activities](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html).
-* AEM Audiences (See [Managing Audiences](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html).
+* Adobe Target (See the [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/target-home.html)).
+* AEM Activities console (See [Managing Activities](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html).
+* AEM Audiences (See [Managing Audiences](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html).
 
 >[!NOTE]
 >
