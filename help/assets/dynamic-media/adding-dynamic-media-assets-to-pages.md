@@ -157,16 +157,16 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
   You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
-
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
-
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
   * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
@@ -235,17 +235,17 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
-
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
-
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
   * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+
+<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 
