@@ -20,6 +20,10 @@ The following section outlines the general Release Notes for the current (latest
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 is May 27, 2021.
 The following release (2021.6.0) will be on June 24, 2021.
 
+## Release Video {#release-video}
+
+Have a look at the [May 2021 Release Overview](https://video.tv.adobe.com/v/333602) video for a summary of the features added.
+
 ## AEM as a Cloud Service Foundation {#foundation}
 
 ### What is New in AEM as a Cloud Service Foundation {#what-is-new-foundation}
