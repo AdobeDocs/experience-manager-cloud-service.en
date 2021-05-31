@@ -22,7 +22,7 @@ The following release (2021.6.0) will be on June 24, 2021.
 
 ## Release Video {#release-video}
 
-Have a look at the [May 2021 Release Overview](https://video.tv.adobe.com/v/333602) video.
+Have a look at the [May 2021 Release Overview](https://video.tv.adobe.com/v/333602) video for a summary of the features added.
 
 ## AEM as a Cloud Service Foundation {#foundation}
 
