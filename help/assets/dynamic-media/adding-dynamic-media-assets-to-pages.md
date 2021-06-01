@@ -106,7 +106,7 @@ The Dynamic Media components that are available include the following:
 
 ### Component: Dynamic Media {#dynamic-media-component}
 
-The Dynamic Media component is smart. Depending on whether you add an image or a video, you have various options. The component supports image presets, image-based viewers such as image sets, spin sets, mixed media sets, and video. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based onscreen size. All viewers are HTML5 viewers.
+The Dynamic Media component is smart. Whether you add an image or a video, you have various options. The component supports image presets, image-based viewers such as image sets, spin sets, mixed media sets, and video. In addition, the viewer is responsive&mdash;the size of the screen changes automatically based onscreen size. All viewers are HTML5 viewers.
 
 >[!NOTE]
 >
@@ -159,14 +159,14 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
-
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
-
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
   * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
   ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
@@ -235,17 +235,17 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
-* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
-
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
-
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
   * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
   ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+
+<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 
@@ -265,7 +265,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 Interactive Media component is for those assets that have interactivity on them such hotspots or image maps. If you have an interactive image, interactive video, or carousel banner, use the **[!UICONTROL Interactive Media]** component.
 
-The Interactive Media component is smart. Depending on whether you add an image or a video, you have various options. In addition, the viewer is responsive - the size of the screen changes automatically based onscreen size. All viewers are HTML5 viewers.
+The Interactive Media component is smart. Whether you add an image or a video, you have various options. In addition, the viewer is responsive - the size of the screen changes automatically based onscreen size. All viewers are HTML5 viewers.
 
 >[!NOTE]
 >
