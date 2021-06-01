@@ -13,7 +13,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For additional information about Dispatcher, see the [AEM Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
+This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For additional information about Dispatcher, see the [AEM Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
 >Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
@@ -543,7 +543,7 @@ The Dispatcher configuration structure has differences between Managed Services 
 ## How to convert an AMS to an AEM as a Cloud service Dispatcher configuration
 
 The following section provides a step-by-step instructions on how to convert an AMS configuration. It assumes
-that you have an archive with a structure similar to the one described in [Cloud Manager Dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+that you have an archive with a structure similar to the one described in [Cloud Manager Dispatcher configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### Extract the archive and remove an eventual prefix
 
