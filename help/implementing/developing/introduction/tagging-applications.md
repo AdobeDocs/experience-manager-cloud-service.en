@@ -7,7 +7,7 @@ exl-id: a106dce1-5d51-406a-a563-4dea83987343
 
 For the purpose of programmatically working with tags or extending tags within a custom AEM application, this document describes use of the
 
-* [Tagging API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
+* [Tagging API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
 
 that interacts with the
 
@@ -20,7 +20,7 @@ For related information regarding tagging:
 
 ## Overview of the Tagging API {#overview-of-the-tagging-api}
 
-The implementation of the [tagging framework](tagging-framework.md) in AEM allows management of tags and tag content using the JCR API. `TagManager` ensures that tags entered as values on the `cq:tags` string array property are not duplicated, it removes `TagID`s pointing to non-existing tags and updates `TagID`s for moved or merged tags. `TagManager` uses a JCR observation listener that reverts any incorrect changes. The main classes are in the [com.day.cq.tagging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html) package:
+The implementation of the [tagging framework](tagging-framework.md) in AEM allows management of tags and tag content using the JCR API. `TagManager` ensures that tags entered as values on the `cq:tags` string array property are not duplicated, it removes `TagID`s pointing to non-existing tags and updates `TagID`s for moved or merged tags. `TagManager` uses a JCR observation listener that reverts any incorrect changes. The main classes are in the [com.day.cq.tagging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html) package:
 
 * `JcrTagManagerFactory` - returns a JCR-based implementation of a `TagManager`. It is the reference implementation of the Tagging API.
 * `TagManager` - allows for resolving and creating tags by paths and names.
@@ -136,13 +136,13 @@ For example when the **Animals** tag is added to the **Products** page, the valu
 
 The server-side API has localized `title`-related methods:
 
-* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
   * `getLocalizedTitle(Locale locale)`
   * `getLocalizedTitlePaths()`
   * `getLocalizedTitles()`
   * `getTitle(Locale locale)`
   * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
   * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
   * `createTagByTitle(String tagTitlePath, Locale locale)`
   * `resolveByTitle(String tagTitlePath, Locale locale)`
