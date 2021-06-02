@@ -11,7 +11,7 @@ The **Support** tab in the [Admin Console](https://adminconsole.adobe.com/) lets
 
 ![image](/help/onboarding/learn-concepts/assets/support-menu.png)
 
-The interface allows you to create and manage cases, chat directly with Adobe Customer Support representatives, and schedule sessions with experts.
+The interface allows you to create and manage cases, chat directly with Adobe Customer Support representatives, and schedule sessions with experts. [System Administrators](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) and [Support Administrators](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) must sign in to access the Support cases and Expert Session options.
 
 >[!NOTE]
->[System Administrators](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) and [Support Administrators](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) must sign in to access the Support cases and Expert Session options. Refer to [Experience Cloud | Support and Expert Sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) for more details.
+> Refer to [Experience Cloud | Support and Expert Sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) for more details.
