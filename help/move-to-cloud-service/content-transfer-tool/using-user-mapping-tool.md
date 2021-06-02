@@ -20,7 +20,7 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 ### User Mapping Tool {#mapping-tool}
 
-The Content Transfer Tool (without User Mapping) will migrate any users and groups associated with the content being migrated.  The User Mapping Tool is a part of Content Transfer Tool, and its sole purpose is to modify the users and groups so that they can be recognized correctly by IMS, the single-sign-on functionality used by AEM as a Cloud Service.  Once these modifications are done, the Content Transfer Tool migrates the specified content's users and groups as usual.
+The Content Transfer Tool (without User Mapping) will migrate any users and groups associated with the content being migrated. The User Mapping Tool is a part of Content Transfer Tool, and its sole purpose is to modify the users and groups so that they can be recognized correctly by IMS, the single-sign-on functionality used by AEM as a Cloud Service. Once these modifications are done, the Content Transfer Tool migrates the specified content's users and groups as usual.
 
 ## Important Considerations {#important-considerations} 
 
