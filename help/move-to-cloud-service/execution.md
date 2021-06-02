@@ -11,11 +11,11 @@ Cloud Manager enables organizations to self-manage AEM in the Cloud. It includes
 
 Refer to the following resources below for more details:
 
-* [Onboarding to Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/home.html) to understand self-help resources about onboarding for Experience Manager as a Cloud Service.
+* [Onboarding to Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) to understand self-help resources about onboarding for Experience Manager as a Cloud Service.
 
-* [Integrating Git with Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) to learn about using a Single Git repository to deploy code.
+* [Integrating Git with Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) to learn about using a Single Git repository to deploy code.
 
-* [Adobe Experience as a Cloud Service Configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#aem-configuration) to learn about Managing Products and User Access in Admin Console.
+* [Adobe Experience as a Cloud Service Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration) to learn about Managing Products and User Access in Admin Console.
 
 
 ## Introduction {#introduction}
@@ -50,11 +50,11 @@ Certain changes are required to AEM Maven projects to be compatible with AEM as 
 
 * Everything else in the repository, `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp` , etc. are all mutable areas, meaning they can be changed at runtime.
 
-Refer to [Recommended Package Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure) for more details. 
+Refer to [Recommended Package Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure) for more details. 
 
-There are some additional development guidelines that you need to be aware of when developing on AEM as a Cloud Service. Refer to [AEM as a Cloud Service Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) to learn more.
+There are some additional development guidelines that you need to be aware of when developing on AEM as a Cloud Service. Refer to [AEM as a Cloud Service Development Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html) to learn more.
 
-From your Planning phase, you should have a list of areas that need to be refactored to be compatible with Cloud Service. You should also review [Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) for more details on how to refactor and optimize code to move to Cloud Service.  
+From your Planning phase, you should have a list of areas that need to be refactored to be compatible with Cloud Service. You should also review [Development Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html) for more details on how to refactor and optimize code to move to Cloud Service.  
 
 To help accelerate some of your code refactoring tasks, you can use the following tools: 
 
@@ -64,7 +64,7 @@ To help accelerate some of your code refactoring tasks, you can use the followin
 
 It is recommended to refactor and test the code locally before pushing it to a Cloud Service environment via Cloud Manager Git. 
 
-Review [AEM SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) documentation to learn more.
+Review [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) documentation to learn more.
 
 Some additional resources are listed below:
 
@@ -76,7 +76,7 @@ Some additional resources are listed below:
 
   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* Review [Local Development Setup](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) documentation to set up a local development environment
+* Review [Local Development Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) documentation to set up a local development environment
 
 
 To manage your on-going code development on your active AEM along with the code refactoring task as part of your transition journey, it is recommended to schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service. 
@@ -90,21 +90,26 @@ Once, the project restructuring is done, you can resume new code development bas
 
 Cloud Manager for Cloud Services pipeline executions will support execution of tests that run against the stage environment. 
 
-Refer to [Code Quality Testing](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) to learn about writing test scripts and recommended coverage of at least 50%.
+Refer to [Code Quality Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) to learn about writing test scripts and recommended coverage of at least 50%.
 
-Additionally, refer to [Understanding Custom Code Quality Rules](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) to learn more about custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
+Additionally, refer to [Understanding Custom Code Quality Rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) to learn more about custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
 Cloud Manager usage is the sole mechanism for deploying code to Cloud Service environments.
 
 Follow the resources below to learn how to use Cloud Manager to manage and deploy your code.
 
-* [Managing Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+* [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
 
-* [Configuring your CI-CD Pipeline](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+* [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
 
-* [Deploying your Code](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
+* [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
 ## Best Practices for Go-Live Preparation {#go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="Go-Live Preparation"
+>abstract="To ensure a smooth and successful go-live on AEM as a Cloud Service, you should plan for code and content freeze periods, testing iterations, content top-ups, performance tests, security tests and more."
 
 To ensure a smooth and successful go-live on AEM as a Cloud Service, you should consider executing the following steps:
 

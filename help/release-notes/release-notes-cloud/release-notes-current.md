@@ -20,6 +20,10 @@ The following section outlines the general Release Notes for the current (latest
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 is May 27, 2021.
 The following release (2021.6.0) will be on June 24, 2021.
 
+## Release Video {#release-video}
+
+Have a look at the [May 2021 Release Overview](https://video.tv.adobe.com/v/333602) video for a summary of the features added.
+
 ## AEM as a Cloud Service Foundation {#foundation}
 
 ### What is New in AEM as a Cloud Service Foundation {#what-is-new-foundation}
@@ -88,7 +92,7 @@ This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Serv
 ### Release Date {#release-date-cm-may}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.5.0 is May 06, 2021.
-The next release is planned for June 03, 2021.
+The next release is planned for June 10, 2021.
 
 ### What's New {#what-is-new-may}
 
@@ -126,7 +130,23 @@ The next release is planned for June 03, 2021.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-### Release Date {#release-date-ctt}
+### Release Date {#release-date-ctt-latest}
+
+The Release Date for Content Transfer Tool v1.4.6 is May 27, 2021.
+
+### What's New {#what-is-new-ctt-latest}
+
+* New logging statement was added to the quickstart's error log, if the user doesn't have execute permission on the Java executable.
+
+* When a user deletes a migration set from the CTT UI, where an extraction was performed, the `tmp` folder associated with that migration set will be deleted to save space.
+
+### Bug Fixes {#bug-fixes-ctt-latest}
+
+* When deleting a migration set, occasionally an unhelpful error message would appear in the CTT UI. This has been fixed.
+
+* While running User Mapping, if users had the same email address on the target and the host but different user names, the entire ingestion would fail. This has been fixed. In such a conflicting scenario, the user/group is skipped and is logged as a conflict in the log file.   
+
+### Release Date {#release-date-ctt-may}
 
 The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
 

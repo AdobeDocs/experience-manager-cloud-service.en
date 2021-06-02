@@ -60,7 +60,7 @@ In the ingestion phase, to apply the delta content on top of the current content
 
 Follow the section below to understand guidelines and best practices to use the Content Transfer Tool:
 
-* It is advisable to run [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) on the **source** repository to identify potential problems and reduce the size of the repository.
+* It is advisable to run [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) on the **source** repository to identify potential problems and reduce the size of the repository.
 
 * If the AEM Cloud Author Content Delivery Network (CDN) config is configured to have a whitelist of IPs then it should be ensured that the source environment IPs are also added to the allowlist so that the source environment and AEM Cloud environment can communicate with each other.
 

@@ -203,7 +203,7 @@ To be able to access Cloud Manager or to AEM as a Cloud Service environments, yo
 Refer to Role Definitions to learn more about roles for users which govern the availability of specific features in Cloud Manager.
 
 >[!NOTE]
->Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
 
 **Steps for Adding a User**
 
