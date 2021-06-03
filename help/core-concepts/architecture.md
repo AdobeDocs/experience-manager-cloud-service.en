@@ -93,7 +93,7 @@ Two types of programs are initially available for AEM as a Cloud Service:
 
 * AEM Cloud Assets Service
 
-Both of these allow access to a number of features and functionalities. The author tier will contain all Sites and Assets functionality for all programs, but the Assets programs will not have a publish tier by default.
+Both of these allow access to a number of features and functionalities. The author tier will contain all Sites and Assets functionality for all programs, but the Assets programs will not have a publish tier, nor a preview tier, by default.
 
 ## Runtime Architecture {#runtime-architecture}
 
@@ -115,6 +115,8 @@ There are various main components of this new architecture:
 
     * Assets integration and processing use a dedicated Assets Compute Service.
 
+  * The preview tier is comprised of a single preview node. This used for quality assurance of content before publishing to the publish tier.
+
   * The publish tier is comprised of two or more nodes within a single publish farm: they can operate independently from each other. Each node consists of an AEM publisher and a web server equipped with the AEM Dispatcher module. It scales automatically with site traffic needs.
   
     * End users, or site visitors, visit the website via the AEM Publish Service.
@@ -123,15 +125,15 @@ There are various main components of this new architecture:
   
   * The architecture only includes an authoring environment.
 
-* Both the author tier and publish tier read and persist content from/to a Content Repository Service.
+* Both the author tier, the preview tier, and the publish tier read and persist content from/to a Content Repository Service.
 
-  * The publish tier only reads content from the persistence layer.
+  * The publish tier and the preview tier only read content from the persistence layer.
 
   * The author tier reads and writes content from and to the persistence layer.
 
-  * The blobs storage is shared across the publish and the author tier; files are not *moved*.
+  * The blobs storage is shared across the publish, the preview, and the author tiers; files are not *moved*.
 
-  * When content is approved from the author tier, this is an indication that it can be activated, therefore pushed to the publish tier persistence layer. This happens via the Replication Service, a middleware pipeline. This pipeline receives the new content, with the individual publish service nodes subscribing to the content pushed to the pipeline.
+  * When content is approved from the author tier, this is an indication that it can be activated, therefore pushed to the publish tier persistence layer; or optionally to the preview tier. This happens via the Replication Service, a middleware pipeline. This pipeline receives the new content, with the individual publish service (or preview service) nodes subscribing to the content pushed to the pipeline.
 
     >[!NOTE]
     >
@@ -141,15 +143,15 @@ There are various main components of this new architecture:
   
   * Accessing the author and publish tiers always happens via a load balancer. This is always up-to-date with the active nodes in each of the tiers.
 
-  * For the publish tier, a Continuous Delivery Network (CDN) Service is also available as the first entry point.
+  * For the publish tier and the preview tier, a Continuous Delivery Network (CDN) Service is also available as the first entry point.
 
 * For demonstration instances of AEM as a Cloud Service the architecture is simplified to a single author node. Therefore it does not present all the characteristics of standard development, stage or production environment. This also means that there can be some downtime and there is not support for backup/restore operations.
 
 ## Deployment Architecture {#deployment-architecture}
 
-Cloud Manager manages all updates to the instances of the AEM as a Cloud Service. It is mandatory, being the only way to build, test, and deploy the customer application, to both the author and the publish tiers. These updates can be triggered by Adobe, when a new version of the AEM Cloud Service is ready, or by the Customer, when a new version of their application is ready.
+Cloud Manager manages all updates to the instances of the AEM as a Cloud Service. It is mandatory, being the only way to build, test, and deploy the customer application, to both the author, the preview, and the publish tiers. These updates can be triggered by Adobe, when a new version of the AEM Cloud Service is ready, or by the Customer, when a new version of their application is ready.
 
-Technically, this is implemented due to the concept of a deployment pipeline, coupled to each environment within a program. When a Cloud Manager pipeline is running, it creates a new version of the customer application, both for the author and the publish tiers. This is achieved by combining the latest customer packages with the latest baseline Adobe image. When the new images are built and tested successfully, Cloud Manager fully automates the cutover to the latest version of the image by updating all service nodes using a rolling update pattern. This results in no downtime for either the author or publish service.
+Technically, this is implemented due to the concept of a deployment pipeline, coupled to each environment within a program. When a Cloud Manager pipeline is running, it creates a new version of the customer application, both for the author, the preview, and the publish tiers. This is achieved by combining the latest customer packages with the latest baseline Adobe image. When the new images are built and tested successfully, Cloud Manager fully automates the cutover to the latest version of the image by updating all service nodes using a rolling update pattern. This results in no downtime for either the author or publish service.
 
 <!--- needs reworking -->
 
