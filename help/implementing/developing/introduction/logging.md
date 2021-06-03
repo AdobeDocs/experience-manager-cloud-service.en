@@ -543,7 +543,7 @@ AEM logs are located in the folder `crx-quickstart/logs`, where the following lo
 * AEM HTTP Request log: `request.log`
 * AEM HTTP Access log: `access.log`
 
-Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
+Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
 
 To retrieve the logs:
 

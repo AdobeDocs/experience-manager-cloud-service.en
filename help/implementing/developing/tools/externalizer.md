@@ -9,7 +9,7 @@ In AEM, the **Externalizer** is an OSGi service that allows you to programmatica
 
 Because an AEM as a Cloud Service instance cannot know its externally visible URL and because sometimes a link has to be created outside of the request scope, this service provides a central place to configure those external URLs and build them.
 
-This article explains how to configure the Externalizer service and how to use it. For technical details of the service, please refer to the [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+This article explains how to configure the Externalizer service and how to use it. For technical details of the service, please refer to the [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Default Behavior of the Externalizer and How to Override {#default-behavior}
 
@@ -120,4 +120,4 @@ This section shows a few examples of how the Externalizer service can be used.
 
 >[!TIP]
 >
->You can find more examples in the [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>You can find more examples in the [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
