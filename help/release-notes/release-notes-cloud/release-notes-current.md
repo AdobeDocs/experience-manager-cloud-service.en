@@ -94,7 +94,7 @@ The following release (2021.6.0) will be on June 24, 2021.
 * **Contextual help**: Added contextual help for adaptive forms editor, template editor, and theme editor to help authors better understand various features of editors.
 * **Error messages in Properties browser**: Added error messages for each property in the Adaptive Forms Properties browser. These messages help understand allowed values for a field.
 
-### Upcoming beta feature of !DNL Forms] {#what-is-new-assets-prerelease}
+### Upcoming beta feature of [!DNL Forms] {#what-is-new-forms-prerelease}
 
 Output as a Cloud service: Output service helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and asynchronous batch mode. Output service enables you to create applications that let you:
 
