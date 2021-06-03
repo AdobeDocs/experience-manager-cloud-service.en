@@ -7,7 +7,7 @@ description: Follow this page to learn about AEM as a Cloud Service Team and Pro
 
 ## Product Profiles {#profiles}
 
-When granting a user access to a specific Adobe solution, you do not necessarily want to give them full access. Product Profiles enable each solution to have its own set of user permissions. These are available and accessible via the Adobe Admin Console.
+When granting a user access to a specific Adobe solution, you do not necessarily want to give them full access. Product Profiles enable each solution to have its own set of user permissions. These are available and accessible via the [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
 
 Read more about [AEM as a Cloud Service product profiles](#aem-product-profiles) and [Cloud Manager product profiles](#cloud-manager-product-profiles) to understand how these work in concert while your team is setup.
 
@@ -34,13 +34,13 @@ Cloud Manager has pre-configured product profiles, or more simply, role based pe
 
 Each of the product profiles have specific permissions associated with it. For example, if you are in the role of a:
 
-* **Business Owner**, you have the permission to Add a new program or Edit a program, add or update an environment, add/edit/delete the pipeline and run any pipeline, and deploy code to AEM environment or code quality.
+* **Business Owner**, you have the permission to add a new program or edit a program, add or update an environment, add/edit/delete the pipeline and run any pipeline, and deploy code to AEM environment or code quality.
 
 * **Deployment Manager**, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment or code-quality.
 
 * **Developer**, you have the permission to generate Personal Access Token to access Git.
 
-* **Program Manager**, you have the permission to  access Git.
+* **Program Manager**, you have the permission to schedule pipelines, override 3-tier quality gates, and provide production approval.
 
 A user can be assigned to multiple product profiles. For example, assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions. 
 
@@ -51,4 +51,4 @@ Your Cloud Manager team will include at least:
 * One Developer
 
    >[!NOTE]
-   >To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles `AEM Users-xxx` or `AEM Administrators-xxx`, you must have permissions to the instance. Permissions to administer the associated Cloud Manager will not suffice.
+   >To be granted access to AEM as a Cloud Service, users must belong to one of two product profiles such as `AEM Users` or `AEM Administrators`. You must be granted permissions to the instance, permissions to administer the associated Cloud Manager will not suffice.
