@@ -21,6 +21,8 @@ Your AEM as a Cloud Service team members will be added and assigned to one or mo
 
 * **AEM User**: AEM Users are the users in your organization who use AEM as a Cloud Service as part of the agreement with Adobe. These members will need to access AEM to do their tasks. The AEM Users product profile is typically assigned to an AEM content author who creates and reviews the content (this can be of several types; for example, pages, assets, publications, and so on) before it is published to your website. The AEM Users product profile shown below is assigned to these members.
 
+   ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
+
    >[!NOTE]
    >Every user assigned to an AEM as a Cloud Service product profile has (read only) access to Cloud Manager.
 
