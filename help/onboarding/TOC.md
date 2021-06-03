@@ -10,6 +10,14 @@ role: Architect, Developer
 # Onboarding {#onboarding}
 
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
++ Learn Onboarding Concepts {#onboarding-concepts}
+  + [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
+  + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+  + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
+  + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+  + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+  + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+  + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Get your Adobe ID](what-is-required/get-your-adobe-id.md)
   + [Cloud Manager Roles](what-is-required/user-roles-permissions.md)
