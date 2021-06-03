@@ -39,7 +39,7 @@ Annotations are only visible in Annotate mode.
 
 1. Click or tap on the annotation to open the annotation dialog and view its details.
 
-   ![Annotation details](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Annotation details](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. To exit Annotate mode, and return to the mode previously used, tap/click the x button at the right of the top toolbar.
 
