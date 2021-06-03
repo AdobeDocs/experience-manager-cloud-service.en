@@ -80,6 +80,8 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * You can use ellipsis as an annotation to review assets. When a small ellipse is used, the ellipse overlaps with the number of the annotation in the print version. (CQ-4316792)
 
+* The quick publish option does not display when an asset is selected from the search results after searching for it. (CQ-4317748)
+
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}

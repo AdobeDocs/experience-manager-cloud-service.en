@@ -157,7 +157,7 @@ For other users, the IMS based login can be used once IMS is configured on the i
 
 >[!NOTE]
 >
->Any user created in IMS can be created using Adobe ID or Federated ID. If a user is setup using Adobe ID, they are authenticated using their Company's Identity Provider to login.
+>Any user created in IMS can be created using Adobe ID or Federated ID. If a user is setup using Federated ID, they are authenticated using their Company's Identity Provider to login.
 
 They will then be redirected to the IMS login screen and will need to enter their credentials:
 
@@ -203,7 +203,7 @@ To be able to access Cloud Manager or to AEM as a Cloud Service environments, yo
 Refer to Role Definitions to learn more about roles for users which govern the availability of specific features in Cloud Manager.
 
 >[!NOTE]
->Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, refer to [Role Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
 
 **Steps for Adding a User**
 

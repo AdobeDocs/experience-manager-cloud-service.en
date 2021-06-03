@@ -7,7 +7,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 
 >[!TIP]
 >
->Familiarize yourself with basic [AEM Project Archetype use](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), and the [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) as this article builds upon these learnings and concepts.
+>Familiarize yourself with basic [AEM Project Archetype use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), and the [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md) as this article builds upon these learnings and concepts.
 
 This article outlines the changes required to Adobe Experience Manager Maven projects to be AEM as a Cloud Service compatible by ensuring that they respect the split of mutable and immutable content, dependencies are established to create non-conflicting, deterministic deployments and that they are packaged in a deployable structure.
 
@@ -54,7 +54,7 @@ The recommended application deployment structure is as follows:
 + The OSGi bundle Jar file is generated, and directly embedded in the all project.
 
 + The `ui.apps` package contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to:
-  + [Component definitions and HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) scripts
+  + [Component definitions and HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) scripts
     + `/apps/my-app/components`
   + JavaScript and CSS (via [Client Libraries](/help/implementing/developing/introduction/clientlibs.md))
     + `/apps/my-app/clientlibs`

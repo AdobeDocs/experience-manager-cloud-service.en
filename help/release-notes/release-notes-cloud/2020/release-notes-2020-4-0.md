@@ -15,8 +15,8 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.4.0 is Ap
 
 Know about new features, enhancements, and bug fixes for [!DNL Experience Manager Assets] and [!DNL Dynamic Media] in the current release.
 
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) supports the asset distribution use cases for Experience Manager Assets. [!DNL Brand Portal] aids organizations to meet their marketing needs by securely distributing approved brand and product assets to external agencies, partners, internal teams, and resellers for download.
-  * [!DNL Brand Portal] configuration is completed through [!DNL Adobe I/O] console. See [configure Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) supports the asset distribution use cases for Experience Manager Assets. [!DNL Brand Portal] aids organizations to meet their marketing needs by securely distributing approved brand and product assets to external agencies, partners, internal teams, and resellers for download.
+  * [!DNL Brand Portal] configuration is completed through [!DNL Adobe I/O] console. See [configure Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
   * Asset sourcing in [!DNL Brand Portal] is not yet supported with [!DNL Experience Manager] as a Cloud Service.
 
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 works with [!DNL Experience Manager] as a Cloud Service. [!DNL Adobe Asset Link] streamlines collaboration between creatives and marketers in the content creation process by connecting [!DNL Experience Manager Assets] with [!DNL Creative Cloud] desktop apps [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] via in-app [!DNL Asset Link] panel.
@@ -42,9 +42,9 @@ Know about new features, enhancements, and bug fixes for [!DNL Experience Manage
 >[!MORELIKETHIS]
 >
 >* [About Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Configure Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Configure Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Configure Experience Manager to work with Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Create workflow in Experience Manager using assets microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Create workflow in Experience Manager using assets microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 ## What's New in Cloud Manager {#whats-new-cloud-manager}
 

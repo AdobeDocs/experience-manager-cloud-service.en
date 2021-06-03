@@ -20,6 +20,10 @@ The following section outlines the general Release Notes for the current (latest
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 is May 27, 2021.
 The following release (2021.6.0) will be on June 24, 2021.
 
+## Release Video {#release-video}
+
+Have a look at the [May 2021 Release Overview](https://video.tv.adobe.com/v/333602) video for a summary of the features added.
+
 ## AEM as a Cloud Service Foundation {#foundation}
 
 ### What is New in AEM as a Cloud Service Foundation {#what-is-new-foundation}
@@ -38,12 +42,6 @@ The following release (2021.6.0) will be on June 24, 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
-
-* You can download the assets shared using the Link Share functionality. This download now uses an asynchronous service that offers faster and and uninterrupted downloads, even for very large downloads. See [download assets](/help/assets/download-assets-from-aem.md#link-share-download).
-
-  ![Download inbox](/help/assets/assets/download-inbox.png)
-
 ### New features available in the prerelease channel {#what-is-new-assets-prerelease}
 
 * Metadata schemas can be applied directly to the folder properties.
@@ -61,9 +59,9 @@ The following release (2021.6.0) will be on June 24, 2021.
 * Uploading very large files crashes the [!DNL Experience Manager desktop app]. (CQ-4320942)
 * The toolbar options are different when the same Collection is selected from within a folder and when it is selected from a search result. (CQ-4321406)
 
-#### What is new in Dynamic Media {#what-is-new-dm}
+#### What is new in [!DNL Dynamic Media] {#what-is-new-dm}
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md).
+* Smart Imaging Device Pixel Ratio (DPR) and network bandwidth optimization let you deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. See [smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -75,7 +73,7 @@ The following release (2021.6.0) will be on June 24, 2021.
    >
    >* Asia-Pacific July 19, 2021.
 
-* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier).
+* Introduced support for next-gen image format AVIF in [!DNL Dynamic Media] delivery (fmt URL modifier).
 
   >[!NOTE]
   >
@@ -117,7 +115,7 @@ This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Serv
 ### Release Date {#release-date-cm-may}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.5.0 is May 06, 2021.
-The next release is planned for June 03, 2021.
+The next release is planned for June 10, 2021.
 
 ### What's New {#what-is-new-may}
 
@@ -155,7 +153,23 @@ The next release is planned for June 03, 2021.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-### Release Date {#release-date-ctt}
+### Release Date {#release-date-ctt-latest}
+
+The Release Date for Content Transfer Tool v1.4.6 is May 27, 2021.
+
+### What's New {#what-is-new-ctt-latest}
+
+* New logging statement was added to the quickstart's error log, if the user doesn't have execute permission on the Java executable.
+
+* When a user deletes a migration set from the CTT UI, where an extraction was performed, the `tmp` folder associated with that migration set will be deleted to save space.
+
+### Bug Fixes {#bug-fixes-ctt-latest}
+
+* When deleting a migration set, occasionally an unhelpful error message would appear in the CTT UI. This has been fixed.
+
+* While running User Mapping, if users had the same email address on the target and the host but different user names, the entire ingestion would fail. This has been fixed. In such a conflicting scenario, the user/group is skipped and is logged as a conflict in the log file.   
+
+### Release Date {#release-date-ctt-may}
 
 The Release Date for Content Transfer Tool v1.4.0 is May 11, 2021.
 
