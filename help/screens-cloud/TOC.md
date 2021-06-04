@@ -10,7 +10,6 @@ index: no
 
 # AEM Screens as a Cloud Service {#screens-cloud-service}
 
-+ [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
 + [Introduction and overview](introduction.md)
 + Onboarding to AEM Screens as a Cloud Service {#onboarding-screens}
   + [First Time Login](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
