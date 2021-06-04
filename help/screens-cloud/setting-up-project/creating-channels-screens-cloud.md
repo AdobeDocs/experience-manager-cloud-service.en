@@ -55,4 +55,4 @@ Now, that you have setup an AEM Screens channel in your project, you can:
 * Be able to define your project locations in terms of scope.
 * Be able to define your devices in terms of scope.
 
-  You should continue your Screens as a Cloud Service content author journey by next reviewing the document [Creating and Managing Locations](/help/screens-cloud/creating-locations-screens-cloud.md).
+  You should continue your Screens as a Cloud Service content author journey by next reviewing the document Creating and Managing Locations.

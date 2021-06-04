@@ -52,4 +52,4 @@ Now, that you have setup an AEM Screens project, you can:
 * Create a new channel and add content to the channels
 * Define your project locations in terms of scope
 
-  You should continue your Screens as a Cloud Service Network Administrator's journey by next reviewing the document [Creating and Managing Channels](/help/screens-cloud/creating-channels-screens-cloud.md).
+  You should continue your Screens as a Cloud Service Network Administrator's journey by next reviewing the document Creating and Managing Channels.
