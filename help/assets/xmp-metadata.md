@@ -78,9 +78,9 @@ In this case, [!DNL Assets] saves the changes to the **[!UICONTROL Title]** prop
 
 ![metadata stored in asset node in the repository](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback).
+>The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback). MSM for digital assets does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
 

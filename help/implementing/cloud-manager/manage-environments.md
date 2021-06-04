@@ -57,7 +57,7 @@ The Production and Stage is available as a duo and is used for testing and produ
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
 
-## Viewing Environment {#viewing-environment}
+## Environment Details {#viewing-environment}
 
 The **Environments** card on the Overview page lists up to three environments. 
 
@@ -106,7 +106,6 @@ The delete option is also available, if you click on **Details** from the **Envi
 
 
 >[!NOTE]
->
 >This feature is not available for Production/Stage environment set in a Production program set up for production purposes. The feature is, however, available for Production/Stage environments in a Sandbox program.
 
 ## Managing Access {#managing-access}
@@ -124,7 +123,7 @@ Select **Developer Console** from the dropdown menu in the **Environments** Card
 
 Only a user in the Developer role will have access to **Developer Console**. The exception being for Sandbox Programs, where any user with access to the Cloud Manager Sandbox Program will have access to **Developer Console**.
 
-Refer to [Hibernating and De-hibernating Sandbox Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
+Refer to [Hibernating and De-hibernating Sandbox Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) for more details.
 
 
 ![](assets/environ-devconsole.png)
