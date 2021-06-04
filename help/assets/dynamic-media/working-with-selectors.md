@@ -16,7 +16,7 @@ For example, in this Carousel Banner, you use the Product selector if you are li
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-When you select (rather than manually enter) where hotspots or image maps go to, you are using the selector. The Site selector only works if you are an Adobe Experience Manager Sites customer. The product selector also requires Experience Manager Commerce.
+When you select (rather than manually enter) where hotspots or image maps go to, you are using the selector. The Site selector only works if you are an [!DNL Adobe Experience Manager Sites] customer. The product selector also requires [!DNL Experience Manager Commerce].
 
 ## Selecting products in Dynamic Media {#selecting-products}
 
@@ -36,11 +36,11 @@ Use the Product selector to choose a product when you want a hotspot or image ma
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   You can change where Experience Manager browses for product data by tapping **[!UICONTROL Browse]** and navigating to another folder.
+   You can change where [!DNL Experience Manager] browses for product data by tapping **[!UICONTROL Browse]** and navigating to another folder.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tap **[!UICONTROL Sort by]** to change whether Experience Manager sorts by newest to oldest or oldest to newest.
+   Tap **[!UICONTROL Sort by]** to change whether [!DNL Experience Manager] sorts by newest to oldest or oldest to newest.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -58,7 +58,7 @@ Use the Product selector to choose a product when you want a hotspot or image ma
 
 ## Selecting Sites in Dynamic Media {#selecting-sites}
 
-Use the site selector to choose a webpage when you want a hotspot or image map to link to a webpage that is managed within Experience Manager sites.
+Use the site selector to choose a webpage when you want a hotspot or image map to link to a webpage that is managed within [!DNL Experience Manager] sites.
 
 1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
 
@@ -66,7 +66,7 @@ Use the site selector to choose a webpage when you want a hotspot or image map t
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tap the **[!UICONTROL Site Selector]** icon (folder with magnifying glass) and navigate to a page in your Experience Manager sites that you want to link the hotspot or image map to.
+1. Tap the **[!UICONTROL Site Selector]** icon (folder with magnifying glass) and navigate to a page in your [!DNL Experience Manager] sites that you want to link the hotspot or image map to.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -74,7 +74,7 @@ Use the site selector to choose a webpage when you want a hotspot or image map t
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. When in **[!UICONTROL Preview]** mode if you tap the hotspot or image map, you navigate to the Experience Manager site page you specified.
+1. When in **[!UICONTROL Preview]** mode if you tap the hotspot or image map, you navigate to the [!DNL Experience Manager] site page you specified.
 
 ## Selecting assets in Dynamic Media {#selecting-assets}
 
@@ -91,7 +91,7 @@ See also [Asset Picker](/help/assets/search-assets.md#asset-selector) for more i
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   You can change where Experience Manager browses for assets by navigating to another folder in the **[!UICONTROL Path]** field.
+   You can change where [!DNL Experience Manager] browses for assets by navigating to another folder in the **[!UICONTROL Path]** field.
 
    Tap **[!UICONTROL Collection]** to only search for assets within collections.
 
