@@ -36,13 +36,13 @@ For example, suppose you created a Dynamic Media Image Profile and assigned it t
 
 You can run the reprocess workflow on an asset for which processing failed the first time. Even if you have not edited an Image Profile or Video profile, or you have already applied an Image Profile or Video Profile, you can still run the reprocess workflow on a folder of assets anytime.
 
-You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on Adobe Experience Manager. If the batch size is large, you can experience a delay in processing. Or, if the batch size is too small, it can cause too many roundtrips to the Dynamic Media server.
+You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on [!DNL Adobe Experience Manager]. If the batch size is large, you can experience a delay in processing. Or, if the batch size is too small, it can cause too many roundtrips to the Dynamic Media server.
 
 See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
 >[!NOTE]
 >
->If you are performing a bulk migration of assets from Dynamic Media Classic to Experience Manager, enable the Migration replication agent on the Dynamic Media server. When the migration is complete, make sure you disable the agent.
+>If you are performing a bulk migration of assets from Dynamic Media Classic to [!DNL Experience Manager], enable the Migration replication agent on the Dynamic Media server. When the migration is complete, make sure you disable the agent.
 >
 >The Migration publish agent must be disabled on the Dynamic Media server so the Reprocess workflow works as expected.
 
@@ -53,7 +53,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **To reprocess Dynamic Media assets in a folder:**
-1. In Experience Manager, from the Assets page, navigate to an assets folder that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow.
+1. In [!DNL Experience Manager], from the Assets page, navigate to an assets folder that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow.
 
     Folders that have an Image Profile or Video Profile assigned to it have the profile's name appear directly below the folder name in Card View. 
 
@@ -76,15 +76,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Click **[!UICONTROL Start]**, then click **[!UICONTROL Confirm]**.
 
-    To monitor the workflow or check its progress, from the Experience Manager main console page, click **[!UICONTROL Tools > Workflow]**. On the Workflow Instances page, select a workflow. On the menu bar, click **[!UICONTROL Open History]**. You can also terminate, suspend, or rename a selected workflow from the same Workflow Instances page.
+    To monitor the workflow or check its progress, from the [!DNL Experience Manager] main console page, click **[!UICONTROL Tools > Workflow]**. On the Workflow Instances page, select a workflow. On the menu bar, click **[!UICONTROL Open History]**. You can also terminate, suspend, or rename a selected workflow from the same Workflow Instances page.
 
 ### Adjusting the batch size of the reprocess workflow {#adjusting-load}
 
-(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you have many files in a single reprocessing job. So, the processing banner stays on Experience Manager assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several 100, but never more than a 1000. If the average file size is hundreds of megabytes, Adobe recommends that you lower the batch size up to 10.
+(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you have many files in a single reprocessing job. So, the processing banner stays on [!DNL Experience Manager] assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several 100, but never more than a 1000. If the average file size is hundreds of megabytes, Adobe recommends that you lower the batch size up to 10.
 
 **To optionally adjust the batch size of the reprocess workflow:**
 
-1. In Experience Manager, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
+1. In [!DNL Experience Manager], tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
 1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets]**.
 
     ![Workflow Models page with Scene7: Reprocess Assets workflow selected in Card View](/help/assets/dynamic-media/assets/reprocess-assets7.png)

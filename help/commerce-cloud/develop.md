@@ -13,9 +13,9 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 
 Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM as a Cloud Service follows the same rules and best practices like other AEM projects on AEM as a Cloud Service as well. Please review these first:
 
-- [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service Development Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## Local Development with AEM as a Cloud Service SDK {#local}
 
@@ -25,13 +25,13 @@ A local development environment is recommended to work with CIF projects. The CI
 
 The CIF Add-On is provided as a Sling Feature archive. The zip file available on the Software Distribution portal includes two Sling Feature archive files, one for AEM author and one for AEM publish instances.
 
-**New to AEM as a Cloud Service?** Check out [a more detailed guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**New to AEM as a Cloud Service?** Check out [a more detailed guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### Required Software
 
 The following should be installed locally:
 
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
 - [Node.js v10+](https://nodejs.org/en/)

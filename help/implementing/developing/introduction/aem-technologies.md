@@ -30,7 +30,7 @@ The underlying content repository and business logic layers are built around Jav
 
 The Java Content Repository (JCR) standard, [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository. The specification lead is held by Adobe Research (Switzerland) AG.
 
-The [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, `javax.jcr.*` is used for the direct access and manipulation of repository content.
+The [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, `javax.jcr.*` is used for the direct access and manipulation of repository content.
 
 AEM is built upon a JCR.
 

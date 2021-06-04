@@ -15,7 +15,7 @@ Dynamic Media lets you upload, manage, view, and deliver 3D assets as immersive 
 
 * One-click publishing (using **[!UICONTROL Quick Publish]** on the toolbar) of 3D assets to generate a URL.
 * Optimized support for viewing 3D assets with the high-quality, interactive Dimensional viewer preset powered by Adobe Dimension.
-* The 3D Media WCM component lets you easily add 3D assets to your Adobe Experience Manager Sites pages.
+* The 3D Media WCM component lets you easily add 3D assets to your [!DNL Adobe Experience Manager Sites] pages.
 
 There is no additional installation required to use 3D assets in Dynamic Media.
 
@@ -40,7 +40,7 @@ See also [3D formats supported](/help/assets/file-format-support.md#support-3d-f
 
 The following step-by-step workflow description is designed to help you get up and running quickly with 3D assets in Dynamic Media. 
 
-Before you work with 3D assets in Dynamic Media, make sure that your Experience Manager administrator has already enabled and configured Dynamic Media Cloud Services.
+Before you work with 3D assets in Dynamic Media, make sure that your [!DNL Experience Manager] administrator has already enabled and configured Dynamic Media Cloud Services.
 
 See [Configuring Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
@@ -97,11 +97,11 @@ See also [Previewing assets using the software interface](/help/assets/dynamic-m
 
 **To view and interact with a 3D asset from the asset details page:**
 
-1. Make sure you have uploaded 3D assets into Experience Manager.
+1. Make sure you have uploaded 3D assets into [!DNL Experience Manager].
 
     See [Uploading your 3D assets for use in Dynamic Media](/help/assets/add-assets.md#upload-assets).
 
-1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
+1. From [!DNL Experience Manager], on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Navigate to a 3D asset that you want to view.
 1. To open the asset in the Details page, tap the card of the 3D asset.  
@@ -151,7 +151,7 @@ See also [Previewing assets using the software interface](/help/assets/dynamic-m
 
 ## About working with the 3D Media component {#working-with-three-d-media-component}
 
-Dynamic Media includes a Dynamic Media 3D Media component that you can use in Experience Manager Sites to enable interactive viewing of 3D models on your web pages.
+Dynamic Media includes a Dynamic Media 3D Media component that you can use in [!DNL Experience Manager Sites] to enable interactive viewing of 3D models on your web pages.
 
 * [Adding the 3D Media component to the page template](#adding-three-d-media-component-to-page-template)
 * [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page)
@@ -160,7 +160,7 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in Ex
 
 ## Adding the 3D Media component to the page template {#adding-three-d-media-component-to-page-template}
 
-1. Navigate to **[!UICONTROL Tools > General > Templates]**.  
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]**.  
 1. Navigate to the page template that you want to enable the 3D component in and select the template.  
 1. To open the template, tap **[!UICONTROL Edit]**.
 1. Near the upper right of the page, in the drop-down menu, select **[!UICONTROL Structure]** mode, if it is not already active.
@@ -176,11 +176,11 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in Ex
 
 ## Adding the 3D Media component to a web page {#adding-the-three-d-media-component-to-a-web-page}
 
-If you are using Experience Manager as your web content management system, you can add 3D assets to your web pages by way of the 3D Media component.
+If you are using [!DNL Experience Manager] as your web content management system, you can add 3D assets to your web pages by way of the 3D Media component.
 
 See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-1. Open Experience Manager Sites and select the web page to which you want to add the Dynamic Media 3D Media component.  
+1. Open [!DNL Experience Manager Sites] and select the web page to which you want to add the Dynamic Media 3D Media component.  
 1. To open the page into the page editor, tap the **[!UICONTROL Edit]** (pencil) icon. Make sure that **[!UICONTROL Edit]** mode is selected near the upper right of page.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -199,7 +199,7 @@ See [Assigning a 3D asset to the 3D Media component](#assigning-a-three-d-asset-
 
 ### Optional - Configuring the 3D Media component {#configuring-the-three-d-component}
 
-1. In the Experience Manager Sites page editor, select the **[!UICONTROL 3D Media Viewer]** component that you previously added to the page.  
+1. In the [!DNL Experience Manager Sites] page editor, select the **[!UICONTROL 3D Media Viewer]** component that you previously added to the page.  
 1. To open the component configuration dialog box, tap the **[!UICONTROL Configuration]** icon (wrench).
 
     ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
@@ -216,7 +216,7 @@ After you have added a 3D Media component to a web page, you can assign a 3D ass
 
 See [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page).
 
-1. In the Experience Manager Sites page editor, click the **[!UICONTROL Assets]** icon to open **[!UICONTROL Assets]** in the side panel.  
+1. In the [!DNL Experience Manager Sites] page editor, click the **[!UICONTROL Assets]** icon to open **[!UICONTROL Assets]** in the side panel.  
 1. In the drop-down list, select **[!UICONTROL 3D]** to show only 3D asset file types.
 1. In the side panel, search for or scroll to the 3D asset that you want to view on the page being edited.
 1. Drag the 3D asset from the Assets side panel and drop it onto the **[!UICONTROL 3D Media]** component that you previously added to the page.
@@ -225,7 +225,7 @@ See [Adding the 3D Media component to a web page](#adding-the-three-d-media-comp
 
 >[!NOTE]
 >
->While a web page is in the Experience Manager Sites **[!UICONTROL Edit]** mode, the 3D Media component displays the 3D asset but no interaction with the asset is possible. To make the asset interactive, you can use the **[!UICONTROL Preview]** feature to view the web page in the page editor with full access to the functionality of the 3D Media component.
+>While a web page is in the [!DNL Experience Manager Sites] **[!UICONTROL Edit]** mode, the 3D Media component displays the 3D asset but no interaction with the asset is possible. To make the asset interactive, you can use the **[!UICONTROL Preview]** feature to view the web page in the page editor with full access to the functionality of the 3D Media component.
 
 ## Publishing static Dynamic Media 3D assets {#publishing-three-d-assets}
 
@@ -235,7 +235,7 @@ See also [Obtaining a URL for a static asset](/help/assets/dynamic-media/linking
 
 In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset's name and to the left of its date and time to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
 
-If you are using Experience Manager as your WCM, use this publishing method to add the Dynamic Media 3D assets directly on your web page.
+If you are using [!DNL Experience Manager] as your WCM, use this publishing method to add the Dynamic Media 3D assets directly on your web page.
 
 See also [Publishing Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
@@ -264,7 +264,7 @@ See also [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-
 
 ### Alternate methods for publishing Dynamic Media 3D assets using the Dimensional viewer {#alternate-publish-methods}
 
-Use the following two methods for publishing Dynamic Media 3D assets if you are *not* using Experience Manager as your WCM.
+Use the following two methods for publishing Dynamic Media 3D assets if you are *not* using [!DNL Experience Manager] as your WCM.
 
 * **[!UICONTROL URL]** - Use **[!UICONTROL URL]** if you are using a third-party web content management system and you want to link Dynamic Media 3D assets to your web pages using the Dimensional viewer.
 

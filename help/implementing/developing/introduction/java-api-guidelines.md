@@ -9,7 +9,7 @@ Adobe Experience Manager (AEM) is built on a rich open-source software stack tha
 
 AEM is built on the following four primary Java API sets in descending order of preference.
 
-1. **[Adobe Experience Manager (AEM)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)** - Product abstractions such as pages, assets, workflows, etc.
+1. **[Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)** - Product abstractions such as pages, assets, workflows, etc.
 1. **[Apache Sling Web Framework](https://sling.apache.org/apidocs/sling11/)** - REST and resource-based abstractions such as resources, value maps, and HTTP requests.
 1. **[JCR (Apache Jackrabbit Oak)](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)** - Data and content abstractions such as node, properties and sessions.
 1. **[OSGi (Apache Felix)](https://felix.apache.org)** - OSGi application container abstractions such as services and (OSGi) components.
