@@ -6,14 +6,16 @@ hidefromtoc: yes
 index: no
 ---
 
-# Adding Screens Add-on to a New Program in Cloud Manager {#create-programs-screens-cloud}
+# Adding Screens as an Add-on to a New Program in Cloud Manager {#create-programs-screens-cloud}
+
+This section describes how to add Screens as an add-on to a new program in Cloud Manager.
+
+>[!NOTE]
+>Refer to [Understanding Programs and Program Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) to learn more about Cloud Manager programs.
 
 ## Objective {#objective}
 
 The following section describes how to add Screens as an add-on to a new program in Cloud Manager.
-
->[!NOTE]
->To learn more about Cloud Manager Programs and Program Types, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en).
 
 ## Steps to Add Screens as an Add-on to a New Program in Cloud Manager {#add-screens-add-on}
 
@@ -40,4 +42,7 @@ Follow the steps below to add Screens as an add-on to a new program in Cloud Man
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
+## What's Next {whats-next}
+
+Once you have learnt how to add Screens as an add-on to an existing Cloud Manager program and you see your program under Cloud Manager's Programs and Products, you are now ready to move on to the next step in Onboarding process and that is, [Creating a branch for your Project in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
 
