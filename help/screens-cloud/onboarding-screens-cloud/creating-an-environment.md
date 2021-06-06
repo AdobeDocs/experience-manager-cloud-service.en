@@ -10,7 +10,7 @@ index: no
 
 ## Objective {#objective}
 
-## Steps to create an Environment for your Screens Project in Cloud Manager {steps-branch-creation}
+## Steps to create an Environment for your Screens Project in Cloud Manager {#steps-branch-creation}
 
 1. Navigate to Cloud Manager and select the icon to get to Cloud Manager Overview page.
  
