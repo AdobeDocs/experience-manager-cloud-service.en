@@ -17,7 +17,7 @@ This section describes how to create a branch for your program in Cloud Manager.
 
 The following section describes how to create a branch for your program in Cloud Manager, using the wizard.
 
-## Steps to Create a Branch for your Screens Project in Cloud Manager {steps-branch-creation}
+## Steps to Create a Branch for your Screens Project in Cloud Manager {#steps-branch-creation}
 
 1. Navigate to Cloud Manager and select the icon to get to Cloud Manager Overview page.
  
@@ -29,6 +29,6 @@ The following section describes how to create a branch for your program in Cloud
  
 1. Once the project creation is successfully complete, you will see the call-to-action card update in Cloud Manager’s Overview page. Click on Add Environment to add 
 
-## What's Next {whats-next}
+## What's Next {#whats-next}
 
 Once you have learnt how to create a branch for your project in Cloud Manager, you are now ready to move on to the next step in Onboarding process and that is, [Creating and Setting up the Environment](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).

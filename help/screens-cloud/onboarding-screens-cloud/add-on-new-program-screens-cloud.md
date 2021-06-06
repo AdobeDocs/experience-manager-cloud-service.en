@@ -42,7 +42,7 @@ Follow the steps below to add Screens as an add-on to a new program in Cloud Man
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## What's Next {whats-next}
+## What's Next {#whats-next}
 
 Once you have learnt how to add Screens as an add-on to an existing Cloud Manager program and you see your program under Cloud Manager's Programs and Products, you are now ready to move on to the next step in Onboarding process and that is, [Creating a branch for your Project in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
 
