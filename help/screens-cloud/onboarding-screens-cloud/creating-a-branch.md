@@ -21,13 +21,21 @@ The following section describes how to create a branch for your program in Cloud
 
 1. Navigate to Cloud Manager and select the icon to get to Cloud Manager Overview page.
  
-1. Click on Create to create your branch and project.
+1. Click on **Create** to create your branch and project.
+
+   ![image](/help/screens-cloud/assets/onboarding/create-branch1.png)
  
-1. Select the Title and New Branch Name and click on Create.
+1. Select the **Title** and **New Branch Name** from **Create a Branch and Project** wizard and click on **Create**.
+
+   ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
  
-1. You will see the call-to-action card on Cloud Manager’s Overview page update the status as project creation in progress.
+1. You will see the call-to-action card on Cloud Manager’s **Overview** page update the status as project creation in progress.
+
+    ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
  
-1. Once the project creation is successfully complete, you will see the call-to-action card update in Cloud Manager’s Overview page. Click on Add Environment to add 
+1. Once the project creation is successfully complete, you will see the call-to-action card update in Cloud Manager’s **Overview** page.  
+
+   ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
 ## What's Next {#whats-next}
 
