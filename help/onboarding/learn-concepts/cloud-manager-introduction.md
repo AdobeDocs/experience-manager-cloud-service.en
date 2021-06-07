@@ -15,7 +15,7 @@ Your System Administrator will be responsible to setting up your Cloud Manager t
 
 ## Cloud Manager Programs {#cloud-manager-programs}
 
-Cloud Manager Programs represent sets of Cloud Manager environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA). For example, one Program may represent the AEM resources to support the global public Web sites, while another Program represents an internal Central DAM. Watch this video to learn more.
+Cloud Manager Programs represent sets of Cloud Manager environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA). For example, one Program may represent the AEM resources to support the global public Web sites, while another Program represents an internal Central DAM. Watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) to learn more on using Cloud Manager programs.
 
 A user can create a **Sandbox** or a **Production** program. 
 
