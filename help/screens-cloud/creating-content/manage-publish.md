@@ -42,4 +42,4 @@ Now, that you have published your channels in the project, you can:
 * Create and manage locations from Screens Content Provider
 * Create and manage players from Screens Services Provider
 
-   You should continue your Screens as a Cloud Service Network Administrator's journey by next reviewing the document [Creating and Managing Locations](/help/screens-cloud/creating-channels-screens-cloud.md), if you want to create locations in your project or  [Creating and Managing Players](/help/screens-cloud/creating-channels-screens-cloud.md), if you want to create and manage players for your project.
+   You should continue your Screens as a Cloud Service Network Administrator's journey by next reviewing the document.
