@@ -200,13 +200,11 @@ Customers upgrading from previous versions of [!DNL Experience Manager] can use 
 
 The following technical workflow models are either replaced by asset microservices or the support is not available:
 
-* `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.GateKeeperProcess`
 * `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.day.cq.dam.core.process.MetadataProcessorProcess`
-* `com.day.cq.dam.core.process.XMPWritebackProcess`
 * `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
 * `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
 * `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
