@@ -11,7 +11,7 @@ index: no
 This section describes how to run the pipeline and deploy your code for your program in Cloud Manager.
 
 >[!NOTE]
->Refer to [Configuring  your CD-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) and [Deploy your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en)to learn how you can run the pipeline for your program in Cloud Manager.
+>Refer to [Configuring  your CD-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) and [Deploy your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) to learn how you can run the pipeline for your program in Cloud Manager.
 
 ## Objective {#objective}
 
@@ -34,7 +34,7 @@ The following section describes how to configure the CI/CD pipeline and deploy y
    >[!NOTE]
    >To learn about the options in the Setup Pipeline wizard, refer to [Configuring the Pipeline Settings from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) for more details.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline2.png)
+   ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Once setup pipeline is complete, the call-to-action card updates, as shown in the figure below. Click on Deploy.
 
