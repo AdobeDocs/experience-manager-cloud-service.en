@@ -8,11 +8,22 @@ index: no
 
 # Running a Pipeline for Screens as a Cloud Service Program in Cloud Manager {#run-pipeline-screens-cloud}
 
+This section describes how to run the pipeline and deploy your code for your program in Cloud Manager.
+
+>[!NOTE]
+>Refer to [Configuring  your CD-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) and [Deploy your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en)to learn how you can run the pipeline for your program in Cloud Manager.
+
 ## Objective {#objective}
 
-
+The following section describes how to configure the CI/CD pipeline and deploy your code for your program in Cloud Manager.
 
 ## Steps to Run a Pipeline for your Screens Project in Cloud Manager {#steps-branch-creation}
+
+1. Once the environment setup is successfully complete, you will see the call-to-action card update in Cloud Manager’s **Overview** page. 
+
+   ![image](/help/screens-cloud/assets/onboarding/add-environ3.png)
+
+1. Click on **Setup Pipeline** from the **Overview** page.
 
 1. Click on Next after selecting the branch.
  
@@ -23,3 +34,7 @@ index: no
 1. Click on Build to start the build process.
 
 1. Once the build process completes, click on the author link from the Environments Card from the Cloud Manager’s Overview page to navigate to Screens Content Provider.
+
+## What's Next {#whats-next}
+
+Once you have learnt how to run the pipeline for your program in Cloud Manager, you are now ready to move on to the next step. The next step is Configuring and Setting up your Screens project.
