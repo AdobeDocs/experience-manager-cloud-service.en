@@ -25,15 +25,31 @@ The following section describes how to configure the CI/CD pipeline and deploy y
 
 1. Click on **Setup Pipeline** from the **Overview** page.
 
-1. Click on Next after selecting the branch.
+1. Click on **Next** after selecting the branch.
+
+   ![image](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
  
-1. Select your options from the Setup Pipeline wizard. Click on Save.
+1. Select your options from the **Setup Pipeline** wizard. Click on **Save**.
+
+   >[!NOTE]
+   >To learn about the options in the Setup Pipeline wizard, refer to [Configuring the Pipeline Settings from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) for more details.
+
+   ![image](/help/screens-cloud/assets/onboarding/run-pipeline2.png)
 
 1. Once setup pipeline is complete, the call-to-action card updates, as shown in the figure below. Click on Deploy.
- 
-1. Click on Build to start the build process.
 
-1. Once the build process completes, click on the author link from the Environments Card from the Cloud Manager’s Overview page to navigate to Screens Content Provider.
+   >[!NOTE]
+   >To learn about the stages in deployment in Cloud Manager, refer to [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) for more details.
+
+   ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
+
+1. Click on **Build** to start the build process.
+
+   ![image](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
+
+1. Once the build process completes, you will see an author link from the **Environments** Card from the Cloud Manager’s **Overview** page.
+
+   ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
 ## What's Next {#whats-next}
 
