@@ -18,10 +18,11 @@ This document helps you understand creating and managing channels for your AEM S
 * Understand how to create channels to Screens Content Provider.
 * Be able to manage your channels in an AEM Screens project, in terms of scope.
 
-## Creating a New Sequence Channel {#create-new-channel}
+## Steps to Create a New Sequence Channel in Screens as a Cloud Service {#create-new-channel}
 
-**Prerequisites**
-Create an AEM Screens as a Cloud Service project.
+>[!NOTE]
+>**Prerequisites**
+>Before starting this section of the Guide, please review [Creating and Managing Projects in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Follow the steps below to create a new sequence channel in Screens as a Cloud Service:
 
@@ -47,12 +48,4 @@ The following templates are available while using the **Create** channel wizard 
 
 ## What's Next {#whats-next}
 
-Now, that you have setup an AEM Screens channel in your project, you can:
-
-* Create a new location.
-* Publish your channel.
-* Navigate to Screens Services Provider.
-* Be able to define your project locations in terms of scope.
-* Be able to define your devices in terms of scope.
-
-  You should continue your Screens as a Cloud Service content author journey by next reviewing the document Creating and Managing Locations.
+Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md) before you manage your players from Screens Services Provider.
