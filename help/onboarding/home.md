@@ -23,7 +23,7 @@ The following image illustrates your onboarding journey, starting with the welco
 
 This section covers the key articles focussed on your journey when starting with AEM as a Cloud Service:
 
-**What to expect while Onboarding**
+**What to expect while onboarding**
 
 Once your contract has been signed the following events will take place:
 
