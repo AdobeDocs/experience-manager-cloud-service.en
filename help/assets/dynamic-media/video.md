@@ -490,7 +490,7 @@ Google periodically changes their user interface. As such, the steps to publish 
 
 1. Tap **[!UICONTROL What credentials do I need?]**
 1. On the **[!UICONTROL Add credentials to your project]** page, step 2, under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
-1. Under the **[!UICONTROL Authorized JavaScript™ origins]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
+1. Under the **[!UICONTROL Authorized JavaScript origins]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
 
    `https://<servername.domain>:<port_number>`
 
@@ -536,7 +536,7 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 
 >[!CAUTION]
 >
->Be sure you have already set up one or more channels in YouTube *before* you add channels under YouTube Settings in Experience Manager (see [Setting up YouTube in Experience Manager](#setting-up-youtube-in-aem) below). If you fail to do the channel set up, you are not warned of no existing channels. However, Google verification still occurs when you add a channel, but there is not an option to choose which channel the video is sent.
+>Be sure you have already set up one or more channels in YouTube *before* you add channels under YouTube Settings in Experience Manager (see [Setting up YouTube in Experience Manager](#setting-up-youtube-in-aem) below). If you fail to do the channel setup, you are not warned of no existing channels. However, Google verification still occurs when you add a channel, but there is not an option to choose which channel the video is sent.
 
 **To create a YouTube channel:**
 
@@ -546,7 +546,7 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 1. On the Channels page, tap **[!UICONTROL Create a new channel]**.
 1. On the Brand Account page, in the Brand Account Name field, enter a company name or any other channel name you choose where you want to publish your video assets, then click **[!UICONTROL Create]**.
 
-   Remember the name that you enter here; you must enter it again when you have to setup YouTube in Experience Manager.
+   Remember the name that you enter here; you must enter it again when you have to set up YouTube in Experience Manager.
 
 1. (Optional) If necessary, add more channels.
 
@@ -598,7 +598,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 
-   You will now setup YouTube channels in Experience Manager.
+   Now set up YouTube channels in Experience Manager.
 
 1. Tap **[!UICONTROL Add Channel]**.
 1. In the Channel Name field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
@@ -614,7 +614,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 
 1. Tap **[!UICONTROL Allow]**.
 
-   You will now setup tags for publishing.
+   Now set up tags for publishing.
 
 1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services > YouTube page, tap the pencil icon to edit the list of tags that you want to use.
 1. To display the list of available tags in Experience Manager, tap the drop-down list icon (upside-down caret).
@@ -644,7 +644,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
 1. Tap **[!UICONTROL OK]**.
 
-   You will now setup YouTube channels in Experience Manager.
+   Now set up YouTube channels in Experience Manager.
 
 1. To the right of **[!UICONTROL Available Channels]**, tap **+** (plus sign icon).
 1. In the YouTube Channel Settings dialog box, in the Title field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
@@ -660,7 +660,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 
 1. Tap **[!UICONTROL Allow]**.
 
-   You will now setup tags for publishing.
+   Now set up tags for publishing.
 
 1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services > YouTube page, tap the pencil icon to edit the list of tags that you want to use.
 1. To display the list of available tags in Experience Manager, tap the drop-down list icon (upside-down caret).
@@ -1068,7 +1068,7 @@ Captioning also allows for greater accessibility by using closed captioning for 
 >
 >The video player that you use must support the display of captions.
 
-Dynamic Media can convert caption files to JSON (JavaScript™ Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl/index the content to make the videos more easily discoverable and give customers more details about the video content.
+Dynamic Media can convert caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl/index the content to make the videos more easily discoverable and give customers more details about the video content.
 
 See [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) for more information about using the JSON function in a URL.
 
