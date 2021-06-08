@@ -20,6 +20,21 @@ Or, the **Environments** page:
 
   ![](assets/download-logs2.png)
 
+## Downloading Logs for Preview Service {#download-preview-service}
+
+User can download logs for the preview service 
+
+1. Navigate to **Environments** card from the Cloud Manager's **Overview** page.
+
+1. Select download logs from the ... menu.
+
+1. From the service drop-down options, select **Preview** or **Preview Dispatcher**, followed by clicking on the download icon. 
+
+   >[!NOTE]
+   >This action can also be accomplished from the Environment details page.
+
+   ![](assets/download-preview.png)
+
 
 ## Logs through API {#logs-through-api}
 
