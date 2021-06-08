@@ -71,7 +71,10 @@ The **Environments** card on the Overview page lists up to three environments.
 
 1. Select any one of the environments from the list to view the environment details.
 
+   ![](assets/environ-preview1.png)
+
    ![](assets/environment-view-3.png)
+
 
 
 ## Updating Environment {#updating-dev-environment}
@@ -139,6 +142,32 @@ Select **Local Login** from the dropdown menu in the **Environments** Card to lo
 Additionally, you can login locally from the **Environments** summary page.
 
 ![](assets/environ-login-locally-2.png)
+
+## Preview Service {#preview-service}
+
+AEM offers a Sites Preview Service that is designed to let developers and content authors preview a website’s final experience before it reaches the publish environment and is available publicly.
+
+>[!NOTE]
+>To learn more about publishing content to preview, refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
+
+Preview feature delivers an additional preview(publish) service to each AEM as a Cloud Service environment via Cloud Manager. This enables our customer businesses by delivering against their requirements of reviewing the content before it gets published to the larger internal audience or in most cases the internet for public consumption.
+
+When the user in Business Owner role creates a new environment, it includes a Preview service. This will be seen in the Environment Details page as shown below:
+
+   ![](assets/environ-preview1.png)
+
+A user with requisite permissions must do one of the following in order to 'unlock' access to preview service and provide the desired access:
+
+* Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID]` IP Allow list from the preview service. 
+
+   Or,
+
+* Use the update IP Allow list workflow to remove the default IP and add IP(s) as appropriate. Refer (insert link) to learn how to do this. 
+
+>[!NOTE]
+>The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
+
+Once access to preview service is unlocked, the lock icon will no longer be displayed.
 
 ## Managing Custom Domain Names {#manage-cdn}
 
