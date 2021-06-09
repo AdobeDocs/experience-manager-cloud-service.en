@@ -42,6 +42,17 @@ Follow the steps below to create a new project in Screens as a Cloud Service:
 
    ![](/help/screens-cloud/assets/create-content/create-project4.png)
 
+
+   Or,
+
+   1. Click on **Create Screens Project** from the action bar.
+
+      ![](/help/screens-cloud/assets/create-content/create-project7.png)
+
+   1. Enter the **Title** of your project. Click on **Save**.
+
+      ![](/help/screens-cloud/assets/create-content/create-project6.png)
+
    Now, that you have setup an AEM Screens project in place, you can start adding channels and locations to your project.
 
 ### Deleting an Existing Project {#deleting-project}
@@ -54,7 +65,7 @@ Follow the steps below to delete an existing project from Screens Content Provid
 1. Click on **Delete** from the action bar to delete the project.
 
    ![](/help/screens-cloud/assets/create-content/create-project5.png)
-   
+
 1. Click on **Delete** to confirm the deletion of the project.
 
    >[!NOTE]
