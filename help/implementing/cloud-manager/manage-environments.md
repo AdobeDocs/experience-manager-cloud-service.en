@@ -85,7 +85,6 @@ For environments that exist prior to the release of Preview Service feature, the
 
 Preview Service feature delivers an additional preview(publish) service to each AEM as a Cloud Service environment via Cloud Manager. This enables our customer businesses by delivering against their requirements of reviewing the content before it gets published to the larger internal audience or in most cases the internet for public consumption. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
 
-
 Upon creation, a user with requisite permissions will have a default IP Allow List applied to it, labeled `Preview Default [Env ID]` and must do one of the following in order to *unlock* access to Preview Service and provide the desired access:
 
 * Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID]` IP Allow list from the Preview Service. See [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
