@@ -190,6 +190,9 @@ The following actions can be performed on the Publish service for your environme
 
 1. [Checking Status of an IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+>[!NOTE]
+> In addition to Author, custom domain names are now supported in Cloud Manager for Sites Program’s (Publish and Preview services) only. Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment. Refer to [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
+
 ## Managing IP Allow Lists {#manage-ip-allow-lists} 
 
 Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
@@ -217,3 +220,7 @@ Follow the steps below to unapply an IP Allow List:
 1. Identify the row where the IP Allow List rule you wish to unapply is listed.
 1. Select the **...** menu from the far right end of the row.
 1. Select the **Unapply** option and confirm your submission.
+
+### IP Allow List Functionality on Preview {#preview-ip-allowlist}
+
+In addition to Author and Publish, preview is now available for Preview Service. Refer here to learn more.
