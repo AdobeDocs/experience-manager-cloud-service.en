@@ -32,7 +32,7 @@ The Production and Stage is available as a duo and is used for testing and produ
 
 ## Adding Environment {#adding-environments}
 
-1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen. 
+1. Click on **Add Environment** to add an environment. This button will be accessible from the **Environments** screen.
    ![](assets/environments-tab.png)
 
     The **Add Environment** option is also available on the **Environments** card when there are zero environments in the program.
@@ -56,7 +56,6 @@ The Production and Stage is available as a duo and is used for testing and produ
    >[!NOTE]
    >In case, you have not yet set up your non-production pipeline, the *Overview* screen  displays the card from where you can create your non-production pipeline.
 
-
 ## Environment Details {#viewing-environment}
 
 The **Environments** card on the Overview page lists up to three environments. 
@@ -72,27 +71,25 @@ The **Environments** card on the Overview page lists up to three environments.
 1. Select any one of the environments from the list to view the environment details.
 
    >[!NOTE]
-   >When a new environment is created, it will include a Preview Service as long as your environment is running on AEM 2021.5.5343.20210542T070738Z or higher. Preview Service will be incrementally rolled out to all programs in Cloud Manager and a user with requisite permissions will be notified by means of in-product guides. Before viewing the Preview Service, please ensure that the environment is on AEM 2021.5.5343.20210542T070738Z or higher and an update or deployment pipeline must have been successfully run in order to achieve the above.
+   >Preview Service will be deployed on a rolling basis to all Programs. Customers will be notified in-product when their Program is enabled for Preview Service. See the section [Accessing Preview Service](#access-preview-service) for more details.
    
    ![](assets/environ-preview1.png)
 
 
 ### Accessing Preview Service {#access-preview-service}
 
-Preview Service feature delivers an additional preview(publish) service to each AEM as a Cloud Service environment via Cloud Manager. This enables our customer businesses by delivering against their requirements of reviewing the content before it gets published to the larger internal audience or in most cases the internet for public consumption. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
+Preview Service feature delivers an additional preview(publish) service to each AEM as a Cloud Service environment via Cloud Manager. 
 
-Upon creation of a new environment, a user with requisite permissions will have a default IP Allow List applied to it, labeled `Preview Default [Env ID]` and must do one of the following in order to *unlock* access to Preview Service and provide the desired access:
+Preview a website's final experience before it reaches the publish environment and is available publicly. A few pointers before you you can see and use Preview Service:
 
-* Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID]` IP Allow list from the Preview Service. See [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+1. **AEM Version**: You must be on version `2021.5.5343.20210542T070738Z` of AEM or higher. Make sure an update pipeline has successfully run on your environment to accomplish this. 
 
-   Or,
+1. **Default IP Allow List lock**: Upon first creation, you must actively unapply the Preview Service in your environment from the default IP Allow List applied to it. See [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) for more details.
 
-* Use the update IP Allow list workflow to remove the default IP and add IP(s) as appropriate. See [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) to learn more. 
+1. **Publish Content to Preview**: You can publish content to the Preview Service by using the Manage Publicaton UI inside AEM. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
 
    >[!NOTE]
    >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
-
-   Once access to Preview Service is unlocked, the lock icon will no longer be displayed.
 
 ## Updating Environment {#updating-dev-environment}
 
@@ -186,7 +183,7 @@ The following actions can be performed on the Publish service for your environme
 Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
 
 >[!NOTE]
->IP Allow List feature is now supported in Cloud Manager for Author, Publish, and Preview Services (available to Sites programs).
+>IP Allow List feature is now supported in Cloud Manager for Author, Publish, and Preview Services (available in Sites programs).
 
 ### Applying an IP Allow List {#apply-ip-allow-list}
 
