@@ -27,7 +27,11 @@ This document helps you understand creating and managing channels for your AEM S
 Follow the steps below to create a new sequence channel in Screens as a Cloud Service:
 
 1. Navigate to Screens Content Provider.
-1. Navigate to your AEM Screens project, such as SanJoseCafe.
+
+1. Navigate to your AEM Screens project, such as *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. Select the **Channels** folder from your project, such as SanJoseCafe --> Channels.
 1. Click on **Create** from the action bar.
 1. Select the template, such as, **Sequence Channel** from the **Create** wizard and click on **Next**.
