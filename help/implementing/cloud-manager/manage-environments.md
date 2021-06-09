@@ -72,40 +72,32 @@ The **Environments** card on the Overview page lists up to three environments.
 1. Select any one of the environments from the list to view the environment details.
 
    >[!NOTE]
-   >With Release 2021.6.0, when the user in Business Owner role creates a new environment, it includes a Preview Service. This is seen in the Environment Details page as shown below. 
+   >When a new environment is created, it will include a Preview Service as long as your environment is running on AEM 2021.05 or higher. Preview Service will be incrementally rolled out to all programs in Cloud Manager and a user will be notified by means of in-product guides.
    
    ![](assets/environ-preview1.png)
 
 For environments that exist prior to the release of Preview Service feature, the following conditions must be true before the preview service for the environment is available and visible in the UI:
 
-1. Environment must be on AEM (Version number here) or higher.
+1. Environment must be on AEM 2021.05 or higher.
 1. An update or deployment pipeline must have been successfully run in order to achieve the above.
 
-### Preview Service {#preview-service}
+### Accessing Preview Service {#access-preview-service}
 
-AEM offers a Sites Preview Service that is designed to let developers and content authors preview a website’s final experience before it reaches the publish environment and is available publicly.
+Preview Service feature delivers an additional preview(publish) service to each AEM as a Cloud Service environment via Cloud Manager. This enables our customer businesses by delivering against their requirements of reviewing the content before it gets published to the larger internal audience or in most cases the internet for public consumption. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
 
->[!NOTE]
->To learn more about publishing content to preview, refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
 
-Preview Service feature delivers an additional preview(publish) service to each AEM as a Cloud Service environment via Cloud Manager. This enables our customer businesses by delivering against their requirements of reviewing the content before it gets published to the larger internal audience or in most cases the internet for public consumption.
+Upon creation, a user with requisite permissions will have a default IP Allow List applied to it, labeled `Preview Default [Env ID]` and must do one of the following in order to *unlock* access to Preview Service and provide the desired access:
 
-#### Accessing Preview Service {#access-preview-service}
-
-Upon creation, the Preview Service will have a default IP allow list applied to it, labeled `Preview Default [Env ID]`, as shown below.
-
-A user with requisite permissions must do one of the following in order to *unlock* access to preview service and provide the desired access:
-
-* Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID]` IP Allow list from the preview service. 
+* Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID]` IP Allow list from the Preview Service. See [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
 
    Or,
 
-* Use the update IP Allow list workflow to remove the default IP and add IP(s) as appropriate. Refer (insert link) to learn how to do this. 
+* Use the update IP Allow list workflow to remove the default IP and add IP(s) as appropriate. See [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) to learn more. 
 
->[!NOTE]
->The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
+   >[!NOTE]
+   >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
 
-Once access to preview service is unlocked, the lock icon will no longer be displayed.
+   Once access to Preview Service is unlocked, the lock icon will no longer be displayed.
 
 ## Updating Environment {#updating-dev-environment}
 
@@ -178,6 +170,9 @@ Additionally, you can login locally from the **Environments** summary page.
 
 Navigate to the **Environments** details page from the Environments Summary page. 
 
+>[!NOTE]
+>Custom Domain Names are now supported in Cloud Manager for Sites programs for both Publish and Preview Services. Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment. 
+
 The following actions can be performed on the Publish service for your environment  as described below: 
 
 1. [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -190,12 +185,13 @@ The following actions can be performed on the Publish service for your environme
 
 1. [Checking Status of an IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
->[!NOTE]
-> In addition to Author, custom domain names are now supported in Cloud Manager for Sites Program’s (Publish and Preview services) only. Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment. Refer to [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
 
 ## Managing IP Allow Lists {#manage-ip-allow-lists} 
 
 Navigate to the Environment details page from the Environments Summary page. You can perform the following actions on the Publish and/or Author service(s) for your environment here.
+
+>[!NOTE]
+>IP Allow List feature is now supported in Cloud Manager for Author, Publish, and Preview Services (available to Sites programs).
 
 ### Applying an IP Allow List {#apply-ip-allow-list}
 
@@ -220,7 +216,3 @@ Follow the steps below to unapply an IP Allow List:
 1. Identify the row where the IP Allow List rule you wish to unapply is listed.
 1. Select the **...** menu from the far right end of the row.
 1. Select the **Unapply** option and confirm your submission.
-
-### IP Allow List Functionality on Preview {#preview-ip-allowlist}
-
-In addition to Author and Publish, preview is now available for Preview Service. Refer here to learn more.
