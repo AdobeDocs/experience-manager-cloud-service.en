@@ -14,11 +14,11 @@ This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service
 ## Release Date {#release-date}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.6.0 is June 10, 2021.
-The next release is planned for July 10, 2021.
+The next release is planned for July 15, 2021.
 
 ### What's New {#what-is-new}
 
-* Preview Service will be incrementally rolled out to all programs in Cloud Manager and a user will be notified by means of in-product guides. When a new environment is created, it will include a Preview Service as long as your environment is running on AEM 2021.05 or higher. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
+* Preview Service is incrementally rolled out to all programs in Cloud Manager and a user with appropriate permissions will be notified by means of in-product guides. When a new environment is created, it will include a Preview Service as long as your environment is running on AEM 2021.05 or higher. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
 
 * Maven Dependencies downloaded during the build step will now be cached between pipeline executions. This feature will be enabled for customers over the next several weeks.
 
