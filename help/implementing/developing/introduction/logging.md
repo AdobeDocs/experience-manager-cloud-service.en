@@ -247,6 +247,8 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
+<!--
+
 **Log Format**
 
 <table>
@@ -297,6 +299,21 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 </tbody>
 </table>
+
+-->
+
+| AEM as a Cloud Service Node ID  | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2  |
+|---|---|
+| IP address of the Client  | -  |
+| User  |  myuser@adobe.com |
+| Date and time  | 30/Apr/2020:17:37:14 +0000  |
+|  HTTP method | GET  |
+| URL  |  `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
+| Protocol  | HTTP/1.1  |
+| HTTP response status  | 200  |
+| HTTP request time in milliseconds  | 1141  |
+| Referrer  | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"`  |
+| User agent  | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"`  |
 
 ### Configuring the HTTP Access Log {#configuring-the-http-access-log}
 
