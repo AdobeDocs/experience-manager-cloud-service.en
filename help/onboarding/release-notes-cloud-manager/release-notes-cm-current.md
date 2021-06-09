@@ -18,25 +18,23 @@ The next release is planned for July 15, 2021.
 
 ### What's New {#what-is-new}
 
-* Preview Service is incrementally rolled out to all programs in Cloud Manager and a user with appropriate permissions will be notified by means of in-product guides. When a new environment is created, it will include a Preview Service as long as your environment is running on AEM 2021.05 or higher. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
+* Preview Service will be deployed on a rolling basis to all Programs. Customers will be notified in-product when their Program is enabled for Preview Service. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
 
 * Maven Dependencies downloaded during the build step will now be cached between pipeline executions. This feature will be enabled for customers over the next several weeks.
 
 * The name of the program can now be edited through the edit program dialog.
 
-* The default branch name used during both project creation and  in the default push command via manage git workflows has been changed to 'main'.
+* The default branch name used during both project creation and  in the default push command via manage git workflows has been changed to `main`.
 
 * Edit program experience in the UI has been refreshed.
 
-* The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable.
+* The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable. 
 
 * The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule.
 
 * To avoid confusion, the Publish AEM and Publish Dispatcher segment rows on the Environment Details page have been consolidated.
 
-* A limit of 20 IP Allow lists per program is allowed, including any that may be applied by default to Preview Service.
-
-* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes.
+* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. Refer to [ustom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
 
 * Environment details page will now display multiple domain names for Publish and Preview services (as applicable). Refer to [Environment Details](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) to more details.
 
@@ -48,8 +46,8 @@ The next release is planned for July 15, 2021.
 
 * An incorrect error message was displayed when an invalid value was provided for the schedule step.
 
-* On occasion, user may see a green "active" status next to an IP Allow List even when that configuration was not deployed.
+* On occasion, user may see a green *active* status next to an IP Allow List even when that configuration was not deployed.
 
 * Some program editing sequences could result in the inability to create or edit the production pipeline.
 
-* Some program editing sequences could result in the overview page displaying a misleading message to re-execute program setup.
+* Some program editing sequences could result in the **Overview** page displaying a misleading message to re-execute program setup.
