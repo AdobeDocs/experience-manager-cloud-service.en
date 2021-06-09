@@ -72,14 +72,10 @@ The **Environments** card on the Overview page lists up to three environments.
 1. Select any one of the environments from the list to view the environment details.
 
    >[!NOTE]
-   >When a new environment is created, it will include a Preview Service as long as your environment is running on AEM 2021.05 or higher. Preview Service is incrementally rolled out to all programs in Cloud Manager and a user with requisite permissions will be notified by means of in-product guides.
+   >When a new environment is created, it will include a Preview Service as long as your environment is running on AEM 2021.5.5343.20210542T070738Z or higher. Preview Service will be incrementally rolled out to all programs in Cloud Manager and a user with requisite permissions will be notified by means of in-product guides. Before viewing the Preview Service, please ensure that the environment is on AEM 2021.5.5343.20210542T070738Z or higher and an update or deployment pipeline must have been successfully run in order to achieve the above.
    
    ![](assets/environ-preview1.png)
 
-For environments that exist prior to the release of Preview Service feature, the following conditions must be true before the Preview Service for the environment is available and visible in the UI:
-
-1. Environment must be on AEM 2021.05 or higher.
-1. An update or deployment pipeline must have been successfully run in order to achieve the above.
 
 ### Accessing Preview Service {#access-preview-service}
 
