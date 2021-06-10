@@ -99,7 +99,9 @@ A user with requisite permissions must do one of the following in order to *unlo
    >[!NOTE]
    >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
 
-   Once access to preview service is unlocked, the lock icon will no longer be displayed.
+   Once access to preview service is unlocked, the lock icon will no longer be displayed, as shown below.
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Updating Environment {#updating-dev-environment}
 
