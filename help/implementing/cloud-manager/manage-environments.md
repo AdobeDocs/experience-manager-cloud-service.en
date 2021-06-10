@@ -88,6 +88,9 @@ Preview a website's final experience before it reaches the publish environment a
 
 1. **Publish Content to Preview**: You can publish content to the Preview Service by using the Manage Publication UI inside AEM. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
 
+   >[!NOTE]
+   >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
+
 ## Updating Environment {#updating-dev-environment}
 
 Updates of Stage and Production environments are automatically managed by Adobe. 
