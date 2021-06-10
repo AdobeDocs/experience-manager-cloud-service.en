@@ -84,7 +84,7 @@ Preview a website's final experience before it reaches the publish environment a
 
 1. **AEM Version**: Your environment must be on AEM version `2021.5.5343.20210542T070738Z` or higher. Make sure an update pipeline has successfully run on your environment to accomplish this. 
 
-1. **Default IP Allow List lock**: Upon creation, the Preview Service will have a default IP Allow List applied to it, labeled `Preview Default [Env ID]`.
+1. **Default IP Allow List Lock**: Upon creation, the Preview Service will have a default IP Allow List applied to it, labeled `Preview Default [Env ID]`.
 
    >[!NOTE]
    >Upon first creation, you must actively unapply the default IP Allow List from the Preview Service in your environment in order to enable access.
