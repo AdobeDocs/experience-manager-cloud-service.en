@@ -86,22 +86,22 @@ Preview a website's final experience before it reaches the publish environment a
 
 1. **Default IP Allow List lock**: Upon first creation, you must actively unapply the default IP Allow List from the Preview Service in your environment in order to enable access.
 
+   A user with requisite permissions must do one of the following in order to *unlock* access to preview service and provide the desired access:
+
+      1. Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID] IP Allow List` from the Preview Service.
+
+         OR,
+
+       1. Use the update IP Allow List workflow to remove the default IP and add IP(s) as appropriate. Refer to [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)to learn more. 
+
+          >[!NOTE]
+          >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
+
+          Once access to preview service is unlocked, the lock icon will no longer be displayed, as shown below.
+
+          ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **Publish Content to Preview**: You can publish content to the Preview Service by using the Manage Publication UI inside AEM. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
-
-A user with requisite permissions must do one of the following in order to *unlock* access to preview service and provide the desired access:
-
-1. Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID] IP Allow List` from the Preview Service.
-
-   OR,
-
-1. Use the update IP Allow List workflow to remove the default IP and add IP(s) as appropriate. Refer to [Viewing and Updating an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)to learn more. 
-
-   >[!NOTE]
-   >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
-
-   Once access to preview service is unlocked, the lock icon will no longer be displayed, as shown below.
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Updating Environment {#updating-dev-environment}
 
