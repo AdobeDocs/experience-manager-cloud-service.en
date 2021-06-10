@@ -91,7 +91,7 @@ Preview a website's final experience before it reaches the publish environment a
 
    A user with requisite permissions must do one of the following in order to *unlock* access to Preview Service and provide the desired access:
 
-   * Create an appropriate IP Allow list and apply it to the Preview Service. Follow this immediately by unapplying `Preview Default [Env ID] IP Allow List` from the Preview Service.
+   * Create an appropriate IP Allow List and apply it to the Preview Service. Follow this immediately by unapplying `Preview Default [Env ID] IP Allow List` from the Preview Service. Refer to [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) for more details.
 
       *OR*,
 
