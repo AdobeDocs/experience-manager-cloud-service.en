@@ -107,6 +107,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
        refreshToken: "$[secret:SECRET_SMTP_OAUTH_REFRESH_TOKEN]"
    }
    ```
+   
 1. Fill in the `authUrl`, `tokenUrl` and `refreshURL` by constructing them as described in the previous section.
 1. Add the following Scopes to the configuration:
    * `openid`
