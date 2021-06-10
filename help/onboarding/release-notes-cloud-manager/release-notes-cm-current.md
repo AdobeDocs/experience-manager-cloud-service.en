@@ -34,7 +34,7 @@ The next release is planned for July 15, 2021.
 
 * To avoid confusion, the Publish AEM and Publish Dispatcher segment rows on the Environment Details page have been consolidated.
 
-* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. Refer to [ustom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
+* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. Refer to [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
 
 * Environment details page will now display multiple domain names for Publish and Preview services (as applicable). Refer to [Environment Details](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) to more details.
 
