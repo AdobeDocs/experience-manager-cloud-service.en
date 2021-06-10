@@ -209,6 +209,10 @@ In order to validate that traffic is indeed outgoing on the expected dedicated I
 
 AEM as a Cloud Service requires outbound mail to be encrypted. The sections below describe how to request, configure, and send email.
 
+>[!NOTE]
+>
+>The Mail Service can be configured with OAuth2 support. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
+
 ### Requesting Access {#requesting-access}
 
 By default, outbound email is disabled. To activate it, submit a support ticket with:
@@ -232,7 +236,7 @@ AEM CS requires mail to be sent out through port 465. If a mail server does not 
 
 E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-See [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, the following adjustments must be made to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, the following adjustments must be made to the `com.day.cq.mailer.DefaultMailService OSGI` service:
 
 If port 465 has been requested:
 

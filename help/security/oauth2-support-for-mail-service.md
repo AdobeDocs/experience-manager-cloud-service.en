@@ -1,13 +1,15 @@
 ---
-title: OAuth2 Support for the Mailer Service
-description: Oauth2 Support for the Mailer Service in Adobe Experience Manager as a Cloud Service
+title: OAuth2 Support for the Mail Service
+description: Oauth2 Support for the Mail Service in Adobe Experience Manager as a Cloud Service
 ---
 
-# OAuth2 Support for the Mailer Service {#oauth2-support-for-the-mailer-service}
+# OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service offers OAuth2 support for its integrated Mailer Service, in order to allow organizations to adhere to secure email requirements.
+AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service, in order to allow organizations to adhere to secure email requirements.
 
-You can configure OAuth for multiple email providers, as outlined below.
+You can configure OAuth for multiple email providers. Below are step-by-step instructions for configuring the AEM Mail Service to authenticate via OAuth2 with Microsoft Office 365 Outlook. Other vendors can be configured in a similar manner.
+
+For more information on the AEM as a Cloud Service Mail Service, see [Sending Email](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
 
 ## Microsoft Outlook {#microsoft-outlook}
 
@@ -33,7 +35,7 @@ You can configure OAuth for multiple email providers, as outlined below.
 1. Next, go to **Certificates and Secrets**, click on **New client secret** and follow the on screen steps to create a secret. Make sure to take note of this secret for later use
 1. Press **Overview** in the left hand pane and copy the values for **Application (client) ID** and **Directory (tenant) ID** for later use
 
-To recap, you will need to the following information to configure OAuth2 for the Mailer service on the AEM side:
+To recap, you will need to the following information to configure OAuth2 for the Mail service on the AEM side:
 
 * The Auth URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * The Token URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
@@ -89,33 +91,50 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
 
 ### Integration with AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
-Finally, integrate your OAuth2 settings with AEM. You can do this by creating the configurations on a local instance of AEM, then export them to JSON and add them to the `/apps` of your project:
+1. Create an OSGI property file called `com.day.cq.mailer.oauth.impl.OAuthConfigurationProviderImpl.cfg.json` under `/apps/<my-project>/osgiconfig/config` with the following syntax:
+   
+   ```
+   {
+       authUrl: "<Authorization Url>",
+       tokenUrl: "<Token Url>",
+       clientId: "<clientID>",
+       clientSecret: "$[secret:SECRET_SMTP_OAUTH_CLIENT_SECRET]",
+       scopes: [
+          "scope1",
+          "scope2"
+       ],
+       refreshUrl: "<Refresh token Url>",
+       refreshToken: "$[secret:SECRET_SMTP_OAUTH_REFRESH_TOKEN]"
+   }
+   ```
+1. Fill in the `authUrl`, `tokenUrl` and `refreshURL` by constructing them as described in the previous section.
+1. Add the following Scopes to the configuration:
+   * `openid`
+   * `offline_access`
+   * `https://outlook.office365.com/Mail.Send`
+   * `https://outlook.office365.com/Mail.Read`
+   * `https://outlook.office365.com/SMTP.Send`
+1. Create an OSGI property file `called com.day.cq.mailer.impl.DefaultMailService.cfg.json`
+under `/apps/<my-project>/osgiconfig/config`  with the following syntax:
+   
+   ```
+   {
+    "smtp.host": "<smtp hostname>"
+    "smtp.user": "<user account that logged into get the oauth tokens>",
+    "smtp.password": "value not used",
+    "smtp.port": 587,
+    "from.address": "<from address used for sending>"
+    "smtp.ssl": false,
+    "smtp.starttls": true,
+    "smtp.requiretls": true,
+    "debug.email": false,
+    "oauth.flow": true
+   }
+   ```
 
-1. Set up a [Local AEM Development Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en)
-1. Go to the Web Console of your local instance by browsing to `http://serveraddress:serverport/system/console/configMgr`
-1. Look for and click on **Day CQ Mail Service**
-1. Add the following settings:
-   * SMTP Server Host Name: `smtp.office365.com`
-   * SMTP user: your username in email format
-   * "From" address: The email address to use in the "From:" field of messages sent by the mailer
-   * SMTP Server Port: `587` depending on the requirements
-   * Check the tickboxes for **SMPT use StarTLS** and **SMTP requires StarTLS**
-   * Check **OAuth flow** and click **Save**.
-1. Look for, then click on **CQ Mailer SMTP OAuth2 Provider**
-1. Fill in the required information as follows:
-   * Fill in the Authorization Url, Token Url and Refresh Token URL by constructing them as described at [the end of this procedure](#microsoft-outlook)
-   * Client ID and Client Secret: configure these fields with the values that you retrieved as described above.
-   * Add the following Scopes to the configuration:
-     * openid
-     * offline_access
-     * `https://outlook.office365.com/Mail.Send`
-     * `https://outlook.office365.com/Mail.Read`
-     * `https://outlook.office365.com/SMTP.Send`
-   * AuthCode Redirect Url: `http://localhost`
-   * Refresh Token: paste in the refreshToken you have generated by following [this procedure](#generating-the-refresh-token)
-1. Click **Save**.
-1. Finally, export your configuration and add it to your AEM as a Cloud Service instance by following the steps outlined in [this article](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
-
+1. For outlook, the `smtp.host` configuration value is `smtp.office365.com`
+1. At runtime, pass in the `refreshToken values` and `clientSecret` secrets using the Cloud Manager variables API as described [here](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api). The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
+   
 ### Troubleshooting {#troubleshooting}
 
-If the mail service is not working properly, you will, in most cases, need to regenerate the refreshToken as described above, and deploy a new customer build with the new value.
+If the mail service is not working properly, you will, in most cases, need to regenerate the `refreshToken` as described above, passing in the new value via Cloud Manager API. It will take a few minutes for the new value to be deployed.
