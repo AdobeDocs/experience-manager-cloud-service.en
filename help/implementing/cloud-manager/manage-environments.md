@@ -82,7 +82,7 @@ Preview Service feature delivers an additional Preview (publish) Service to each
 
 Preview a website's final experience before it reaches the publish environment and is available publicly. A few pointers before you you can see and use Preview Service:
 
-1. **AEM Version**: Your environment must be on AEM version `2021.5.5343.20210542T070738Z` or higher. Make sure an update pipeline has successfully run on your environment to accomplish this. 
+1. **AEM Version**: Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or higher. Make sure an update pipeline has successfully run on your environment to accomplish this. 
 
 1. **Default IP Allow List Lock**: Upon creation, the Preview Service will have a default IP Allow List applied to it, labeled `Preview Default [Env ID]`.
 
