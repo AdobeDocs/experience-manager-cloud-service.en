@@ -5,13 +5,15 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 ---
 # Accessing and Managing Logs {#manage-logs} 
 
-Users can access a list of available log files for the selected environment using the Environment Card.  Users can access a list of available log files for the selected environment. 
+Users can access a list of available log files for the selected environment using the Environment Card. Users can access a list of available log files for the selected environment. 
 
-These files can be downloaded through the UI, either from the **Overview**  page:
+## Downloading Logs {#download-logs}
+
+These files can be downloaded through the UI, either from the **Environments** card from the **Overview** page:
 
 ![](assets/download-logs1.png)
 
-Or, the **Environments** page:
+Or, from the Environment Details page:
 
 ![](assets/download-logs.png)
 
@@ -22,13 +24,13 @@ Or, the **Environments** page:
 
 ## Downloading Logs for Preview Service {#download-preview-service}
 
-User can download logs for the preview service 
+Follow the steps below to download logs for the Preview Service 
 
 1. Navigate to **Environments** card from the Cloud Manager's **Overview** page.
 
-1. Select download logs from the ... menu.
+1. Select **Download Logs** from the **...** menu.
 
-1. From the service drop-down options, select **Preview** or **Preview Dispatcher**, followed by clicking on the download icon. 
+1. From the **Service** drop-down menu, select **Preview** or **Preview Dispatcher**, followed by clicking on the download icon. 
 
    >[!NOTE]
    >This action can also be accomplished from the Environment details page.
