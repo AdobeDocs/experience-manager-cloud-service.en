@@ -97,7 +97,7 @@ Preview a website's final experience before it reaches the publish environment a
       >[!NOTE]
       >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
 
-      Once access to preview service is unlocked, the lock icon will no longer be displayed, as shown below.
+      Once access to preview service is unlocked, the lock icon (as shown in the figure below) will no longer be displayed.
 
       ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
