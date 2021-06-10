@@ -93,7 +93,7 @@ Preview a website's final experience before it reaches the publish environment a
 
    A user with requisite permissions must do one of the following in order to *unlock* access to Preview Service and provide the desired access:
 
-   * Create an appropriate IP Allow list and apply it to the preview service. Follow this immediately by unapplying `Preview Default [Env ID] IP Allow List` from the Preview Service.
+   * Create an appropriate IP Allow list and apply it to the Preview Service. Follow this immediately by unapplying `Preview Default [Env ID] IP Allow List` from the Preview Service.
 
       *OR*,
 
