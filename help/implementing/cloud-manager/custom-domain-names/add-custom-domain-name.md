@@ -17,7 +17,7 @@ A user must be a Business Owner or Deployment Manager in order to add a Custom D
 
 * AEM as a Cloud Service does not support wildcard domains.
 
-* Each Cloud Manager Environment can host up to a maximum of 100 custom domains per environment.
+* Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment.
 
 * The same domain name cannot be used on more than one environment.
 
@@ -33,7 +33,7 @@ Follow the steps below to add a Custom Domain Name from Domain Settings page:
 
 1. Click on **Add Domain** button to open **Add Domain Name** dialog box.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Enter the custom domain name in **Domain Name**. 
 
@@ -41,6 +41,11 @@ Follow the steps below to add a Custom Domain Name from Domain Settings page:
    >You should not include `http://`, `https://`, or spaces when entering in your domain. 
 
 1. Select the **Environment** whose Publish service will be associated with the domain name.
+
+1. Select the service either as **Publish** or **Preview**.
+
+   >[!NOTE]
+   >Custom Domain Names are now supported in Cloud Manager for Sites programs for both Publish and Preview Services. Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment. To learn  more about Preview Service, refer to [Preview Service](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Select the **Domain SSL Certificate** from the drop-down and select **Continue**.
 
