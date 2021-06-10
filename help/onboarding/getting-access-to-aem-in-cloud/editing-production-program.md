@@ -24,7 +24,7 @@ Follow the steps below to edit a Production program:
 
    Navigate to the **General** tab to edit the program description.
 
-   ![](assets/edit-program-general.png)
+   ![](assets/edit-program-prod1.png)
 
    The **Solutions & Add-ons** tab displays two options, such as, **Sites** and **Assets** for both Production and Sandbox programs. Also, you can select **Commerce** add-on option, that is available under **Sites**, as shown in the figure below.
 
@@ -33,7 +33,7 @@ Follow the steps below to edit a Production program:
    >[!NOTE]
    >At least one solution must be selected for a Program, that is, user is not allowed to deselect all solutions during Edit program workflow. 
 
-1. Click on **Save** to complete the edit program  workflow.
+1. Click on **Update** to complete the edit program  workflow.
 
 
 ## Considerations while Editing a Program {#considerations-editing}
