@@ -82,14 +82,11 @@ Preview Service feature delivers an additional preview(publish) service to each 
 
 Preview a website's final experience before it reaches the publish environment and is available publicly. A few pointers before you you can see and use Preview Service:
 
-1. **AEM Version**: You must be on version `2021.5.5343.20210542T070738Z` of AEM or higher. Make sure an update pipeline has successfully run on your environment to accomplish this. 
+1. **AEM Version**: Your environment must be on AEM version `2021.5.5343.20210542T070738Z` or higher. Make sure an update pipeline has successfully run on your environment to accomplish this. 
 
-1. **Default IP Allow List lock**: Upon first creation, you must actively unapply the Preview Service in your environment from the default IP Allow List applied to it. See [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) for more details.
+1. **Default IP Allow List lock**: Upon first creation, you must actively unapply the default IP Allow List from the Preview Service in your environment in order to enable access. See [UnApplying an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) for more details.
 
-1. **Publish Content to Preview**: You can publish content to the Preview Service by using the Manage Publicaton UI inside AEM. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
-
-   >[!NOTE]
-   >The above steps must be done in advance of sharing the preview service URL with any of your teams in order to ensure the appropriate members of your team are able to access the preview URL.
+1. **Publish Content to Preview**: You can publish content to the Preview Service by using the Manage Publication UI inside AEM. Refer to [Previewing Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) for more details.
 
 ## Updating Environment {#updating-dev-environment}
 
