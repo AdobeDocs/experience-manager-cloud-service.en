@@ -67,13 +67,13 @@ For local CIF Add-on development using the AEM as a Cloud Service SDK following
     Example Mac OSX:
 
     ```bash
-    export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+    export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
     ```
 
     Example Windows:
 
     ```bash
-    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+    set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
     ```
 
     This variable is used by AEM to connect to your commerce system. Also, the CIF add-on includes a local reverse proxy make the Commerce GraphQL endpoint available locally. This is used by the CIF authoring tools (product console and pickers) and for the CIF client-side components doing direct GraphQL calls.
