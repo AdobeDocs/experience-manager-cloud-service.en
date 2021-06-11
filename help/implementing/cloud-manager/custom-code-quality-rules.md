@@ -178,32 +178,6 @@ public void orDoThis() {
 }
 ```
 
-### Product APIs annotated with @ProviderType should not be implemented or extended by customers {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
-
-**Key**: CQBP-84, CQBP-84-dependencies
-
-**Type**: Bug
-
-**Severity**: Critical
-
-**Since**: Version 2018.7.0
-
-The AEM API contains Java interfaces and classes which are only meant to be used, but not implemented, by custom code. For example, the interface *com.day.cq.wcm.api.Page* is designed to be implemented by ***AEM only***.
-
-When new methods are added to these interfaces, those additional methods do not impact existing code which uses these interfaces and, as a result, the addition of new methods to these interfaces are considered to be backwards-compatible. However, if custom code ***implements*** one of these interfaces, that custom code has introduced a backwards-compatibility risk for the customer.
-
-Interfaces (and classes) which are only intended to be implemented by AEM are annotated with *org.osgi.annotation.versioning.ProviderType* (or, in some cases, a similar legacy annotation *aQute.bnd.annotation.ProviderType*). This rule identifies the cases where such an interface is implemented (or a class is extended) by custom code.
-
-#### Non-Compliant Code {#non-compliant-code-3}
-
-```java
-import com.day.cq.wcm.api.Page;
-
-public class DontDoThis implements Page {
-// implementation here
-}
-```
-
 ### ResourceResolver objects should always be closed {#resourceresolver-objects-should-always-be-closed}
 
 **Key**: CQRules:CQBP-72
@@ -578,12 +552,85 @@ In many cases, these APIs are deprecated using the standard Java *@Deprecated* a
 
 However, there are cases where an an API is deprecated in the context of AEM but may not be deprecated in other contexts. This rule identifies this second class.
 
+
 ## OakPAL Content Rules {#oakpal-rules}
 
 Please find below the OakPAL checks executed by Cloud Manager.
 
 >[!NOTE]
 >OakPAL is a framework developed by an AEM Partner (and winner of 2019 AEM Rockstar North America) which validates content packages using a standalone Oak repository.
+
+### Product APIs annotated with @ProviderType should not be implemented or extended by customers {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+
+**Key**: CQBP-84
+
+**Type**: Bug
+
+**Severity**: Critical
+
+**Since**: Version 2018.7.0
+
+The AEM API contains Java interfaces and classes which are only meant to be used, but not implemented, by custom code. For example, the interface *com.day.cq.wcm.api.Page* is designed to be implemented by ***AEM only***.
+
+When new methods are added to these interfaces, those additional methods do not impact existing code which uses these interfaces and, as a result, the addition of new methods to these interfaces are considered to be backwards-compatible. However, if custom code ***implements*** one of these interfaces, that custom code has introduced a backwards-compatibility risk for the customer.
+
+Interfaces (and classes) which are only intended to be implemented by AEM are annotated with *org.osgi.annotation.versioning.ProviderType* (or, in some cases, a similar legacy annotation *aQute.bnd.annotation.ProviderType*). This rule identifies the cases where such an interface is implemented (or a class is extended) by custom code.
+
+#### Non-Compliant Code {#non-compliant-code-3}
+
+```java
+import com.day.cq.wcm.api.Page;
+
+public class DontDoThis implements Page {
+// implementation here
+}
+```
+
+### Custom DAM Asset Lucene Oak Indexes are properly structured  {#oakpal-damAssetLucene-sanity-check}
+
+**Key**: IndexDamAssetLucene
+
+**Type**: Bug
+
+**Severity**: Blocker
+
+**Since**: 2021.6.0
+
+In order for asset search to work correctly in AEM Assets, the `damAssetLucene` Oak index must follow a set of guidelines. This rule checks for the following patterns specifically for indexes whose name contains `damAssetLucene`:
+
+The name must follow the guidelines for customizing index definitions described here. 
+
+* Specifically the name must follow the pattern `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>`.
+
+* The index definition must have a multi-valued property named tags  which contains the value `visualSimilaritySearch`.
+
+* The index definition must have a child node named `tika` and that child node must have a child node named config.xml .
+
+#### Non Compliant Code {#non-compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+```
+
+#### Compliant Code {#compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - reindexCount: -6952249853801250000
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
 
 ### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
 
