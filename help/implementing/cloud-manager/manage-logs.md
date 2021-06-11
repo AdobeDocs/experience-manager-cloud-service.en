@@ -5,28 +5,30 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 ---
 # Accessing and Managing Logs {#manage-logs} 
 
-Users can access a list of available log files for the selected environment using the Environment Card. 
+Users can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or Environment Details page.
 
 ## Downloading Logs {#download-logs}
 
-Follow the steps below to download logs:
+Follow the steps below to download logs. 
 
-1. You can  download logs through the UI, either from the **Environments** card from the **Overview** page:
+1. Navigate to the **Environments** card from the **Overview** page.
 
-![](assets/download-logs1.png)
+1. Select **Download Logs** from the **...** menu.
 
-Or, from the Environment Details page:
+   ![](assets/download-logs1.png)
 
-![](assets/download-logs.png)
+   *Or*, 
+   
+    From the Environment Details page:
 
->[!NOTE]
->Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
+    ![](assets/download-logs.png)
 
-1.Select **Download Logs** from the **...** menu.
+   >[!NOTE]
+   >Regardless of where it is opened, the same dialog appears and allows for an individual log file to be downloaded.
 
-1. From the **Service** drop-down menu, select options such as **Preview** or **Preview Dispatcher**, followed by clicking on the download icon. This action can also be accomplished from the Environment details page.
+1. From the **Service** drop-down menu, select options such as **Preview** or **Preview Dispatcher**, followed by clicking on the download icon. 
 
-  ![](assets/download-preview.png)
+   ![](assets/download-preview.png)
 
 
 ## Logs through API {#logs-through-api}
