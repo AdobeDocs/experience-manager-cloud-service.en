@@ -23,35 +23,24 @@ Follow the steps below to create a new project in Screens as a Cloud Service:
    >[!NOTE]
    >Refer to [Using Screens Content Provider](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) to learn how to access Screens Content Provider for creating your project.
 
-1. Click on **Create** --> **Create Entity** from the top right corner of the action bar.
+1. Click on **Create Screens Project** from the top right corner of the action bar.
 
-   ![](/help/screens-cloud/assets/create-content/create-project1.png)
-
-1. Select **Screens Project** from the **Create** wizard. Click on **Next**.
-
-   ![](/help/screens-cloud/assets/create-content/create-project2.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. Enter the **Title** of your project in **Create Screens Project** dialog box, for example, *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-project3.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
    
    >[!NOTE]
    >The **Name** field is populated automatically in the **Create Screens project** dialog box based on the title you choose.
 
-1. Click on **Create**. You will see your Screens project, titled as *FirstDigitalExperience* in Screens Content Provider.
+1. Click on **Save**. You will see your Screens project, titled as *FirstDigitalExperience* in Screens Content Provider.
 
-   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
+1. You will  see your project in Screens Content Provider, with two folders titled, **Locations** and **Channels**.
 
-   Or,
-
-   1. Click on **Create Screens Project** from the action bar.
-
-      ![](/help/screens-cloud/assets/create-content/create-project7.png)
-
-   1. Enter the **Title** of your project. Click on **Save**.
-
-      ![](/help/screens-cloud/assets/create-content/create-project6.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
    Now, that you have setup an AEM Screens project in place, you can start adding channels and locations to your project.
 
