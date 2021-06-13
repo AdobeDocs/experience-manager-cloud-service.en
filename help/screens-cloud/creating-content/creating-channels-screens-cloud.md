@@ -30,25 +30,41 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
 
 1. Navigate to your AEM Screens project, such as *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+1. Select the **Channels** folder from your project, such as **FirstDigitalExperience** --> **Channels** and click on **Create** from the action bar.
 
-1. Select the **Channels** folder from your project, such as SanJoseCafe --> Channels.
-1. Click on **Create** from the action bar.
+   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+
 1. Select the template, such as, **Sequence Channel** from the **Create** wizard and click on **Next**.
 
+   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
    > The **Create** wizard provides different types of templates while creating a channel. Refer to the section Available Templates in Create Wizard for more details.
 
-1. Enter the name of your sequence channel, such as **LoopingChannelOne** and click on **Create**.
+1. Enter the name of your sequence channel, such as, **LoopingChannelOne** and click on **Create**.
+
+   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+
    You will now see a **LoopingChannelOne** in your Channels folder in your AEM Screens project.
 
 ## Managing an Existing Channel {#managing-channels}
 
 You can edit, view properties and dashboard, copy, preview, and delete a channel.
 
+Navigate to the channel from your project and select the channel, as shown in the figure below. You can now select the options such as editing the channel, viewing properties, previewing content, managing publication, or deleting the channel from the action bar.
+
+![](/help/screens-cloud/assets/create-content/channelprop1.png)
+
+
 ## Available Templates in Create Wizard {#available-templates}
 
 The following templates are available while using the **Create** channel wizard such as:
+
+|Available Templates|Description|
+|--- |--- |
+|Channels Folder|Allows to create a folder to store collection of channels.|
+|Sequence Channel|Allows to create a channel that plays the components sequentially (one by one in a slide show).|
+|Left or Right L-Bar Split Screen Channel|Allows content authors to view different types of assets in appropriately sized zones.|
+
 
 ## What's Next {#whats-next}
 
