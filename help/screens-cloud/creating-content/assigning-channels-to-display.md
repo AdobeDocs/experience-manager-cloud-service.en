@@ -64,4 +64,4 @@ Follow the steps below to assign a channel to a display:
 
 ## What's Next {#whats-next}
 
-Now, that you have assigned the channel to a display, you should continue your Screens as a Cloud Service journey by next reviewing the document **Installing and Configuring Screens Player for AEM as a Cloud Service**.
+Now, that you have assigned the channel to a display, you should continue your Screens as a Cloud Service journey by next reviewing the document [Installing and Configuring Screens Player for AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
