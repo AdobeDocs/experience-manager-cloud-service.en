@@ -1,12 +1,12 @@
 ---
-title: Setting up Screens Services Provider
-description: This page describes setting up Screens Services Provider.
+title: Navigating to Screens Services Provider
+description: This page describes how to navigate to Screens Services Provider.
 hide: yes
 hidefromtoc: yes
 index: no
 ---
 
-# Setting up Screens Services Provider {#setup-screens-services-provider}
+# Navigating to Screens Services Provider {#setup-screens-services-provider}
 
 ## Introduction {#introduction}
 
@@ -38,5 +38,5 @@ Follow the steps below to setup Screens Services Provider:
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to setup Screens Services  Provider you can navigate to, Screens Content Provider for more details.
+Once you have learnt how to setup Screens Services  Provider you can navigate to, [Using Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md) for more details.
 
