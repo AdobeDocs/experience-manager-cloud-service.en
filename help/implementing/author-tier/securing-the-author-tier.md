@@ -9,7 +9,11 @@ When creating a new environment with AEM as a Cloud Service, the resulting autho
 
 It is possible to configure the network policies further in order to secure the access to your author tier. The procedure is based on authorizing the IP ranges that should be granted network access to your author environment.
 
-In order to put these rules in place, please file a Support ticket (from the Adobe Admin Console) with the requested information:
-- program ID
-- environment ID
-- IP address ranges to authorize
+In order to put these rules in place, please file a Support ticket, from the [Adobe Admin Console](https://adminconsole.adobe.com/) with the requested information:
+
+* program ID
+* environment ID
+* IP address ranges to authorize
+
+   >[!NOTE]
+   >Refer to [Applying an IP Allow List](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=en) for more details.
