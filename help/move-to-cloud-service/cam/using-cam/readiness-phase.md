@@ -7,3 +7,8 @@ index: no
 ---
 
 # Readiness Phase in Cloud Acceleration Manager {#readiness-phase-cam}
+
+Once you have created a project in Cloud Acceleration Manager, you can now start the Readiness phase.
+
+## Using Tools in Readiness Phase {#readiness-phase}
+
