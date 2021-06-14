@@ -23,11 +23,10 @@ Cloud Acceleration Manager (CAM) provides customers and partners with a one-stop
 
 ### Navigating to Cloud Acceleration  Manager {#navigating}
 
+
 Follow the steps below to navigate to Cloud Acceleration Manager (CAM):
 
-1. Login to [Adobe Experience Cloud](https://experience.adobe.co) 
-
-You should see “Experience Manager” on the page as shown below:
+1. Login to [Adobe Experience Cloud](https://experience.adobe.com) 
 
 
 
