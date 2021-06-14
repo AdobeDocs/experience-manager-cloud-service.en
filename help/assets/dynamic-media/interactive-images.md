@@ -13,7 +13,7 @@ The following is a shoppable banner with a Quick view pop-up window. A user acti
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-See [interactive images in action](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) on the web page pictured above.
+See [interactive images in action](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) on the web page pictured above.
 
 ## Watch how interactive image banners are created {#watch-how-interactive-image-banners-are-created}
 
@@ -23,7 +23,7 @@ Watch a walkthrough on [how interactive image banners are created](https://s7d5.
 
 The following step-by-step workflow description is designed to help you get up and running quickly with interactive images in Adobe Experience Manager Assets.
 
-Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on a [web page example that does not yet have Interactive Images added to it](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+Look for the **Example** heading within some of the Quick Start tasks. It contains a brief tutorial that is based on a [web page example that does not yet have Interactive Images added to it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 
 
@@ -139,7 +139,7 @@ Consider the following examples of Quick view URLs and their resulting hotspot v
 
 **Example**
 
-You can apply the same approach used in the three examples above to the [demo web page](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+You can apply the same approach used in the three examples above to the [demo web page](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 The demo web page has several product thumbnails, each having a Quick view button labeled “See More”. With your web browser's debugging tool still activated, click each button and note the recorded Quick view URLs. After you activate all four product Quick views available on the page, you have the following list of Quick view requests made to the backend:
 
@@ -335,13 +335,13 @@ If you are a standalone Experience Manager Assets customer, you can manually add
 
 **Example**
 
-Using the [demo website as an example](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three individuals is a static `IMG` tag:
+Using the [demo website as an example](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three individuals is a static `IMG` tag:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Integration is as simple as removing the `IMG` tag and replacing it with the copied embed code from Experience Manager Assets. You can see that the result [shows the shoppable interactive image on the page with three circle hotspots](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+Integration is as simple as removing the `IMG` tag and replacing it with the copied embed code from Experience Manager Assets. You can see that the result [shows the shoppable interactive image on the page with three circle hotspots](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 >
@@ -488,7 +488,7 @@ The following is the complete source code:
  s7interactiveimageviewer.init();
 ```
 
-The [final demo website with the fully integrated interactive image](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html).
+The [final demo website with the fully integrated interactive image](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
 ## Using Quick views to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 

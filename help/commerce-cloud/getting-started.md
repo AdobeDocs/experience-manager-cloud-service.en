@@ -75,7 +75,7 @@ To connect AEM with a commerce solution via Adobe I/O CLI, follow these steps:
 
     See [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for details.
 
-    The commerce GraphQL endpoint URL must point to commerce's GraphQl service and use a secure HTTPS connection. For example: `https://demo.magentosite.cloud/graphql`.
+    The commerce GraphQL endpoint URL must point to commerce's GraphQl service and use a secure HTTPS connection. For example: `https://<yourmagentosystem>/graphql`.
 
 4. Enable Staged catalog features that require authentication (Optional)
 
