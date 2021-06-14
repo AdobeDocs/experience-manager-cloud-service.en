@@ -12,7 +12,7 @@ Once the project set up is complete, you must assign the player to a display to 
 
 ## Objective {#objective}
 
-This document helps you understand how to create and manage displays in Screens Services Provider. After reading you should be able to learn how to assign a player to a display.
+This document helps you understand how to assign a player to a display in Screens Services Provider. These are the final mandatory steps before the content starts playing in Screens as a Cloud Service player.
 
 ## Steps to Assign a Player to a Display {#create-display}
 
@@ -30,7 +30,7 @@ Follow the steps below to assign a player to a display:
 
 1. Once you have clicked on Select, you will see the assigned display under **ASSIGNED DISPLAY** panel.
 
-   Now, the display is assigned to your player and the channel will start playing the content. The player should now download and start playing content. Congratulations! 
+   Now, the display is assigned to your player and the channel will start playing the content. The player should now download and start playing content. **Congratulations!** 
 
    ![image](/help/screens-cloud/assets/player/output.gif)
 
