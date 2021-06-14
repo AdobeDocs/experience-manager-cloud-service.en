@@ -8,8 +8,12 @@ index: no
 
 # Creating and Managing Players in Screens as a Cloud Service {#creating-players-screens-cloud}
 
-Once you have published the channels from your AEM Screens Project, you must create players.
+Once you have published the channels from your AEM Screens Project, you must create players from Screens Services Provider. 
+
 A *Player* runs the player software to produce a visual output. It is able to control displaying a cropped, scaled, translated portion of common content or experience. The screen configuration is bound to a display but can be replaced in case a technical defect occurs.
+
+>[!NOTE]
+>You can also implement the steps mentioned in this Guide, after you have installed the Screens player.
 
 ## Objective {#objective}
 
@@ -20,10 +24,12 @@ This document helps you understand creating and managing players for your AEM Sc
 
 ## Creating a Player {#creating-players}
 
-Follow the steps below to create the display from Screens Services Provider:
+Follow the steps below to create the player from Screens Services Provider:
 
-1. Navigate to Screens Services Provider from your AEM Cloud Service instance.
-1. Select the **Displays** tab from the left navigation bar and click on Create from the top right corner of the screen.
+1. Navigate to Screens Services Provider.
+
+1. Select the **Displays** tab from the left navigation panel and click on Create from the top right corner of the screen.
+
 1. Select **Display**.
 1. Enter the title as **ChannelFoodDisplay** in Display Name and click on Create.
 1. The display titled as ChannelFoodDisplay will now be recorded in the display list.
