@@ -22,7 +22,11 @@ The following section describes how to use Screens Content Provider, once you ha
 >**Prerequisite**
 >Before you start reading this section, refer to [Setting up Screens Services Provider](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) to learn how to navigate to this user interface from Screens Services Provider.
 
-Once you have logged into Screens Content Provider, now you are ready to create your content in content playback.
+Once you have logged into Screens Content Provider, now you are ready to create your content in content playback. Use Screens Content Provider to create and manage:
+
+* Projects
+* Channels
+* Locations
 
 ## What's Next {#whats-next}
 
