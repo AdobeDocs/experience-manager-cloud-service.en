@@ -12,7 +12,7 @@ Once the project set up is complete, you must assign the channel to a display to
 
 ## Objective {#objective}
 
-This document helps you understand how to assign a channel to a display, once you your display  is ready and content of the channel are populated. After reading you should:
+This document helps you understand how to assign a channel to a display, once your display  is ready and content of the channel are populated. After reading you should:
 
 * Understand how to assign a channel to a display from Screens Services Provider.
 
@@ -27,7 +27,7 @@ Before you perform the steps below to assign a channel to a display, you must ha
 
 Follow the steps below to assign a channel to a display:
 
-1. Navigate to Screens Services Provider and select Displays option under Project from the left navigation bar.
+1. Navigate to Screens Services Provider and select **Displays** from the left navigation panel.
 
 1. Select the display, such as ChannelFoodDisplay from the list and click on Assign channel to assign a channel to the display.
 
