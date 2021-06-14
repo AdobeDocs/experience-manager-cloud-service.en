@@ -8,8 +8,7 @@ index: no
 
 # Configuring Players in Screens as a Cloud Service {#configuring-players-screens-cloud}
 
-Once you have created an AEM Screens Project, you must create channels.
-***Channels***, display a sequence of content (images and videos), a website, or a single-page application.
+Once you have assigned channels to your requisite display, you are now ready to view content on your player.
 
 ## Objective {#objective}
 
