@@ -41,7 +41,7 @@ Follow the steps below to create the display from Screens Services Provider:
 
 ### Deleting a Display {#deleting-display}
 
-You cam delete a display from Screens Services Provider.
+You can delete a display from Screens Services Provider.
 
 Select the display and click on **Delete** from the bottom of the panel, as shown in the figure below.
 
