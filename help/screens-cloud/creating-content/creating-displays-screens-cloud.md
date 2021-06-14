@@ -49,4 +49,4 @@ Select the display and click on **Delete** from the bottom of the panel, as show
 
 ## What's Next {#whats-next}
 
-Now, that you have learnt how to create and manage displays for your project, you should continue your Screens as a Cloud Service journey by next reviewing the document [Installing and Configuring Screens Player for AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Now, that you have learnt how to create and manage displays for your project, you should continue your Screens as a Cloud Service journey by next reviewing the document [Assigning Channel to a Display in Screens as a Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md).

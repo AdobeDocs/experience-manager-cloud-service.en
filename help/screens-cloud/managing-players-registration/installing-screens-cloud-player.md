@@ -1,6 +1,6 @@
 ---
-title: Installing Players in Screens as a Cloud Service
-description: This page describes how to install players in Screens as a Cloud Service.
+title: Installing and Configuring Players in Screens as a Cloud Service
+description: This page describes how to install and configure players in Screens as a Cloud Service.
 hide: yes
 hidefromtoc: yes
 index: no
@@ -42,4 +42,4 @@ Follow the steps below to update your player:
 
 ## What's Next {#whats-next}
 
-Now, that you have installed you players and configured the required settings, you should continue your Screens as a Cloud Service journey by next reviewing the document **Creating the Player from Screens Services Provider**.
+Now, that you have installed and configured the player to Cloud mode, you should continue your Screens as a Cloud Service journey by next reviewing the document [Registering Players in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) from Screens Services Provider.
