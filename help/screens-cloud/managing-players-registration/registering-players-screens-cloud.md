@@ -25,22 +25,38 @@ Follow the steps below to register your player:
 
 1. Login to Screens Services Provider.
 
-1. Navigate to Registration Codes under Players management and click on Create. If no valid/unexpired codes exist, click create code and enter a name for the code and choose expiry settings as per your requirements.
+1. Navigate to **Registration Codes** under **Players management** from the left navigation panel and click on **Create code**. 
 
-1. Populate the following fields in Create a registration code dialog box:
+   >[!NOTE]
+   >If no valid/unexpired codes exist, click create code and enter a name for the code and choose expiry settings as per your requirements.
 
-   1. Registration Code Name: Name for your registration code
-   1. Registration Code Expiry: Date of expiry for your registration code
-   1. Limit Usage: Toggle the button to switch off the usage limit of your registration code. By default,  the Limit Usage option is on by default. 
-   1. Usage Limit: Choose the number for your usage limit
+   ![image](/help/screens-cloud/assets/player/register-player1.png)
 
-1. Click on Create to create the registration code. You will see your registration code in the list.
+1. Populate the following fields in **Create a registration code** dialog box:
 
-1. Click on the value under the column REGISTRATION CODE  to copy the value to the clipboard.
+   ![image](/help/screens-cloud/assets/player/register-player2.png)
 
-1. Paste this value in the Enter code field in the Player Registration tab from the Admin UI of the AEM Screens player and click on Register.
+   1. **Registration Code Name**: Name for your registration code
+   1. **Registration Code Expiry**: Date of expiry for your registration code
+   1. **Limit Usage**: Toggle the button to switch off the usage limit of your registration code. By default, the Limit Usage option is off by default. 
+   1. **Usage Limit**: Choose the number for your usage limit
+
+1. Click on **Create** to create the registration code. You will see your player with the registration code in the list.
+
+   ![image](/help/screens-cloud/assets/player/register-player3.png)
+
+1. Click on the value under the column **REGISTRATION CODE**  to copy the value to the clipboard.
+
+1. Paste this value in the **Enter code** field in the **Player Registration** tab from the Admin UI of the AEM Screens player and click on **Register**.
+ 
+   ![image](/help/screens-cloud/assets/player/register-player4.png)
+
 
 1. Once you have added the code, you will see the player is now registered from the Admin UI of the player.
 
-1. You should see this player now show up under the Players tab. The name should have a code that also shows in the System Information tab of the Admin UI under Player Code.
+   ![image](/help/screens-cloud/assets/player/register-player5.png)
+
+1. You should see this player now show up in **Players** from the left navigation panel. The code that displays in Screens Services Provider matches the **System Information** panel from the Admin UI under Player Code.
+
+   ![image](/help/screens-cloud/assets/player/register-player6.png)
 
