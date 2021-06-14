@@ -21,6 +21,10 @@ This document helps you understand how to get started with Cloud Acceleration Ma
 
 Cloud Acceleration Manager (CAM) provides customers and partners with a one-stop experience for migrations in the form of a migration wizard that guides them throughout the journey by providing with an initial assessment, pointing them to the right tools, documentation and best practices to ensure a successful Go-live in AEM as a Cloud Service.
 
+### Navigating to Cloud Acceleration  Manager {#navigating}
+
+
+
 
 ## What's Next {#whats-next}
 
