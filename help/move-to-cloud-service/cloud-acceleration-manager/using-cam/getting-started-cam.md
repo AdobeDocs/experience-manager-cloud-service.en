@@ -59,4 +59,4 @@ Follow the steps below to create a new project:
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to log into Cloud Acceleration Manager and how to create a project, you are now ready to move on to reviewing the next step, [Using the Readiness Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/readiness-phase.md).
+Once you have learnt how to log into Cloud Acceleration Manager and how to create a project, you are now ready to move on to reviewing the next step, Using the Readiness Phase.
