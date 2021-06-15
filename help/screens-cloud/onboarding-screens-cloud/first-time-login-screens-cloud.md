@@ -20,11 +20,11 @@ Click here to download the latest feature pack.
 
 ## Adding Users to Adobe Admin Console {#admin-console}
 
-Once you have been provisioned with an Adobe Identity Management System (IMS) Organization ID, you can now be onboarded on [Adobe Admin Console](https://adminconsole.adobe.com/). Refer to [Adobe Admin Console users](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) to learn more about adding users to the Admin Console.
+Once you have been provisioned with an Adobe Identity Management System (IMS) Organization ID, you can now access [Adobe Admin Console](https://adminconsole.adobe.com/). Refer to [Adobe Admin Console users](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) to learn more about adding users to the Admin Console.
 
    >[!NOTE]
    >The users have access to AEM Cloud Service Product profile so that they can login to AEM using the Adobe ID or Federated ID.
 
 ## What's Next {#whats-next}
 
-Now that you have been provisioned with an IMS Organization ID and added as a user to the Adobe Admin Console, you can now add Screens add-on to new or existing program for Screens as a Cloud Service in Cloud Manager.
+Now that you have been provisioned with an IMS Organization ID and added as a user to the Adobe Admin Console, you can now add [Screens add-on to new program](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) or to [an existing program](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) for Screens as a Cloud Service in Cloud Manager.
