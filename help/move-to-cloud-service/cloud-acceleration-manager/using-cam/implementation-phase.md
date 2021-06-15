@@ -15,7 +15,14 @@ The Implementation Phase includes:
 * [AEM as a Cloud Service Deployment](#aem-as-a-cloud-service-deployment)
 * [Content Transfer](#content-transfer)
 
+
+Click on your project card to open the project landing page and navigate to the **Implementation** section, as shown in the figure below.
+
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+   >[!NOTE]
+   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) to learn more.
+
 
 ## Using Local Development Card {#local-development}
 
@@ -56,13 +63,13 @@ AEM as a Cloud Service Deployment card provides all the relevant content that wi
 
 Follow this section to explore AEM as a Cloud Service Deployment Card activity card:
 
-1. Click on the **View** button from the **AEM as a Cloud Service Deployment** card.
+1. Click on the **View** button from the **AEM as a Cloud Service Deployment** activity card.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. A content carousel with relevant information for this phase of the migration journey displays.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
 
 
 ## Using Content Transfer Card {#content-transfer}
@@ -71,17 +78,25 @@ The Content Transfer activity card provides guidance and considerations that sho
 
 Follow this section to explore the Content Transfer activity card:
 
-1. Click on the **View** button from the **Local Development** card.
+1. Click on the **View** button from the **Content Transfer** activity card.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. A content carousel with relevant information for this phase of the migration journey displays.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
 
->[!NOTE]
->Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) before using the Content Transfer Tool.
+   >[!NOTE]
+   >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) before using the Content Transfer Tool.
 
-A new Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
+### Estimating Content Transfer Tool Activity {#calculating}
+
+A new Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
+
+To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
 You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+
+## What's Next {#whats-next}
+
+Once you have learnt how to log into Cloud Acceleration Manager and how utilize the Implementation phase, you are now ready to move on to reviewing the next step, Using the GoLive Phase.
