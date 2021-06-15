@@ -28,9 +28,11 @@ Follow the steps below to assign a player to a display:
 
    ![image](/help/screens-cloud/assets/player/register-player8.png)
 
-1. Once you have clicked on Select, you will see the assigned display under **ASSIGNED DISPLAY** panel.
+## Content Playback {#content-playback}
 
-   Now, the display is assigned to your player and the channel will start playing the content. The player should now download and start playing content. **Congratulations!** 
+Once you have assigned a display to a player, as shown in the preceding section, you will see the assigned display under **ASSIGNED DISPLAY** panel.
+
+Now, the display is assigned to your player and the channel will start playing the content. The player should now download and start playing content. **Congratulations!** 
 
    ![image](/help/screens-cloud/assets/player/output.gif)
 
