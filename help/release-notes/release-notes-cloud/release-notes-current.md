@@ -131,7 +131,7 @@ The next release is planned for July 15, 2021.
 
 * The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable. 
 
-* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule.
+* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule. As part of this consolidation, the scanning of dependencies more accurately identifies issues in third party dependencies which are being deployed to the AEM runtime.
 
 * To avoid confusion, the Publish AEM and Publish Dispatcher segment rows on the Environment Details page have been consolidated.
 
