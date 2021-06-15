@@ -8,7 +8,7 @@ index: no
 
 # Installing and Configuring Players in Screens as a Cloud Service {#installing-players-screens-cloud}
 
-The section below describes how to install AEM Screens players that are registered to on-premise AEM instances. Additionally, you must do a factory reset of the existing player and then register the player new against AEM Screens as a Cloud Service.
+This section describes how to install AEM Screens players that are registered to on-premise AEM instances. Additionally, you must do a factory reset of the existing player and then register the new player against AEM Screens as a Cloud Service.
 
 ## Objective {#objective}
 
@@ -38,8 +38,8 @@ Follow the steps below to update your player:
 
    ![image](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Click on **Confirm** that prompts when switching to cloud mode will unregister the player.
+1. Click on **Confirm** that prompts when switching to cloud mode will un-register the player.
 
 ## What's Next {#whats-next}
 
-Now, that you have installed and configured the player to Cloud mode, you should continue your Screens as a Cloud Service journey by next reviewing the document [Registering Players in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) from Screens Services Provider.
+Now, that you have installed and configured the player to Cloud mode, you should continue your Screens as a Cloud Service journey by next reviewing the document, [Registering Players in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) from Screens Services Provider.
