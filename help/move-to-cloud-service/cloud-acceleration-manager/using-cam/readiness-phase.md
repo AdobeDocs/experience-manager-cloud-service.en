@@ -50,7 +50,7 @@ Follow the steps below to use Best Practices Analysis card:
    * Use the details icon to view the details of each report finding
    * Uploading a new report resets all the assessments
 
-## Using Planning and Setup {#planning-setup}
+## Using Planning and Setup Card {#planning-setup}
 
 Follow this section to explore the Planning and Setup activity card.
 
