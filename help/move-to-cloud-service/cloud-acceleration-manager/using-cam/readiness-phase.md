@@ -15,7 +15,12 @@ The Readiness Phase includes:
 * [Best Practices Analysis](#best-practices-analysis)
 * [Planning and Setup](#planning-setup) 
 
+Click on your project card to open the project landing page and navigate to the **Readiness** section, as shown in the figure below.
+
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) to learn more.
 
 ## Using Best Practices Analysis Card {#best-practices-analysis}
 

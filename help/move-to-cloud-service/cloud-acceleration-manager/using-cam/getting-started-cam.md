@@ -31,7 +31,7 @@ Follow the steps below to navigate to Cloud Acceleration Manager (CAM):
 
     ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### Creating a Project in Cloud Acceleration Manager {#create-project}
+### Creating and Managing a Project in Cloud Acceleration Manager {#create-project}
 
 The landing page of the Cloud Acceleration Manager (CAM) allows you to create and edit multiple projects.
 
