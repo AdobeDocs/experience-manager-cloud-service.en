@@ -12,10 +12,10 @@ Once you have installed and configured players for Screens as a Cloud Service, y
 
 ## Objective {#objective}
 
-This document helps you understand registering players in Screens Services Provider. After reading you should:
+This document helps you understand registering players in Screens Services Provider. After reading you should be able to:
 
-* Understand how to register players.
-* Be able to manage your channels in an AEM Screens project, in terms of scope.
+* understand how to register players
+* how to complete the registration process from Screens Services Provider
 
 ## Steps to Register a Screens Player {#register-players}
 
@@ -60,3 +60,6 @@ Follow the steps below to register your player:
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
+## What's Next {#whats-next}
+
+Now, that you have installed and configured the player to Cloud mode, you should continue your Screens as a Cloud Service journey by next reviewing the document, [Assigning Player to a Display in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) from Screens Services Provider.
