@@ -53,4 +53,4 @@ The following section describes how to configure the CI/CD pipeline and deploy y
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to run the pipeline for your program in Cloud Manager, you are now ready to move on to the next step. The next step is Configuring and Setting up your Screens project.
+Once you have learnt how to setup an environment for your program in Cloud Manager, you are now ready to move on to the next step in Onboarding process and that is, [Navigating to Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
