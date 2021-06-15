@@ -12,20 +12,20 @@ Once you have created a project in Cloud Acceleration Manager, you can now start
 
 The Readiness Phase includes:
 
-* Best Practices Analysis
-* Planning and Setup
+* [Best Practices Analysis](#best-practices-analysis)
+* [Planning and Setup](#planning-setup) 
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## Using Best Practices Analysis {#best-practices-analysis}
+## Using Best Practices Analysis Card {#best-practices-analysis}
 
-Follow the steps below to use Best Practices Analysis:
+Follow the steps below to use Best Practices Analysis card:
 
 1. Click on the **Review** button from the **Best Practices Analysis** card. 
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Follow these steps to download Best Practices Analyzer and run it on a clone of your AEM system.
+1. Follow these steps to download Best Practices Analyzer (BPA) and run it on a clone of your AEM system.
 
    1. Navigate to [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal and download the Best Practices Analyzer as a zip file.
 
@@ -40,10 +40,10 @@ Follow the steps below to use Best Practices Analysis:
 
 1. Review and explore the Best Practices Analysis dashboard in CAM.
 
-   * Clicking on each card will open its associated tab
-   * All report tabs (including filtering) can be bookmarked for sharing or future retrieval
-   * View the details of each report finding via the detail icon
-   * Uploading a new report will reset all the assessments
+   * Click on each card to open its associated tab
+   * You can bookmark all report tabs (including filtering) for sharing or future retrieval
+   * Use the details icon to view the details of each report finding
+   * Uploading a new report resets all the assessments
 
 ## Using Planning and Setup {#planning-setup}
 
@@ -60,8 +60,5 @@ Follow this section to explore the Planning and Setup activity card.
 ## What's Next {#whats-next}
 
 Once you have learnt how to log into Cloud Acceleration Manager and how to create a project, you are now ready to move on to reviewing the next step, Using the Implementation Phase.
-
-
-
 
 
