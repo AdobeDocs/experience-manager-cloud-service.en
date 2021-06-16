@@ -12,7 +12,7 @@ The first step in implementing a new project in Screens as a Cloud Service is to
 
 ## Objective {#objective}
 
-This document helps you understand how to create a new project for your AEM Screens project in Screens Content Provider. After reading you should be able to create your AEM Screens project, in terms of scope.
+This document helps you understand how to create a new AEM Screens project in Screens Content Provider. After reading you should be able to create your AEM Screens project, in terms of scope.
 
 ## Creating a New Project {#create-new-project}
 
@@ -34,13 +34,9 @@ Follow the steps below to create a new project in Screens as a Cloud Service:
    >[!NOTE]
    >The **Name** field is populated automatically in the **Create Screens project** dialog box based on the title you choose.
 
-1. Click on **Save**. You will see your Screens project, titled as *FirstDigitalExperience* in Screens Content Provider.
+1. Click on **Save**. You will see your Screens project, titled as *FirstDigitalExperience* in Screens Content Provider. You will  see your project in Screens Content Provider, with two folders titled, **Locations** and **Channels**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
-
-1. You will  see your project in Screens Content Provider, with two folders titled, **Locations** and **Channels**.
-
-   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
    Now, that you have setup an AEM Screens project in place, you can start adding channels and locations to your project.
 
