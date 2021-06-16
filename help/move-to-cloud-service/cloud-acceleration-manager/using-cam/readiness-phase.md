@@ -80,7 +80,7 @@ This card provides the report findings
 
 This card provides an
 
-#### Migration Complexity Assessment {#migration.complexity-assessment}
+#### Migration Complexity Assessment {#migration-complexity-assessment}
 
 This card provides
 
