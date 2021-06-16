@@ -15,7 +15,13 @@ The Readiness Phase includes:
 * [Best Practices Analysis](#best-practices-analysis)
 * [Planning and Setup](#planning-setup) 
 
-Click on your project card to open the project landing page and navigate to the **Readiness** section, as shown in the figure below.
+Follow the steps below to navigate to the Readiness Phase:
+
+1. Click on your project card to open the project landing page.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. Navigate to the **Readiness** section, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -43,12 +49,35 @@ Follow the steps below to use Best Practices Analysis card:
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. Review and explore the Best Practices Analysis dashboard in CAM.
+1. Once you have uploaded a new report, you will see the Best Practices Analysis report.
 
-   * Click on each card to open its associated tab
-   * You can bookmark all report tabs (including filtering) for sharing or future retrieval
-   * Use the details icon to view the details of each report finding
-   * Uploading a new report resets all the assessments
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. Review and explore the Best Practices Analysis dashboard in CAM. Refer to the section below [Reviewing Best Practices Analysis Report](#analysis-report) for more details.
+
+### Reviewing Best Practices Analysis Report {#analysis-report}
+
+Explore the following cards available in the reports page:
+
+>[!NOTE]
+>Uploading a new report resets all the assessments.
+
+1. **Report Properties**:
+   This card provides information in report properties such as report date, duration, filters, upload date, and so on.
+
+1. **Report Overview**:
+
+   This card provides the report findings
+
+1. **Best Practices Assessment**
+
+1. **Migration Complexity Assessment**
+
+   >[!NOTE]
+   > Additionally, you have the capability to:
+   >* click on each card to open its associated tab
+   >* bookmark all report tabs (including filtering) for sharing or future retrieval
+   >* use the details icon to view the details of each report finding
 
 ## Using Planning and Setup Card {#planning-setup}
 
