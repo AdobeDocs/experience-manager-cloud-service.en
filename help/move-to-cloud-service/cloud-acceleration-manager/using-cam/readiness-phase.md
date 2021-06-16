@@ -74,21 +74,21 @@ Explore the following cards available in Best Practices Analysis Report page:
 
 This card provides information about report properties such as report date, duration, filters, upload date, and Adobe Experience Manager (AEM) details.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Report Overview {#report-overview}
 
 This card provides the report findings
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
 Clicking on this report opens the **Report** tab, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
 You can filter the report based on importance, sub-type, or count.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >Refer to [Interpreting the Best Practices Analyzer Report](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) to learn about findings categories and importance levels.
