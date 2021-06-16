@@ -55,29 +55,35 @@ Follow the steps below to use Best Practices Analysis card:
 
 1. Review and explore the Best Practices Analysis dashboard in CAM. Refer to the section below [Reviewing Best Practices Analysis Report](#analysis-report) for more details.
 
+   >[!NOTE]
+   >Uploading a new report resets all the assessments.
+
 ### Reviewing Best Practices Analysis Report {#analysis-report}
 
-Explore the following cards available in the reports page:
+Explore the following cards available in Best Practices Analysis Report page:
 
 >[!NOTE]
->Uploading a new report resets all the assessments.
+> With each card, you have the capability to:
+>* click on each card to open its associated tab
+>* bookmark all report tabs (including filtering) for sharing or future retrieval
+>* use the details icon to view the details of each report finding
 
-1. **Report Properties**:
-   This card provides information in report properties such as report date, duration, filters, upload date, and so on.
+#### Report Properties {#report-properties}
 
-1. **Report Overview**:
+This card provides information in report properties such as report date, duration, filters, upload date, and so on.
 
-   This card provides the report findings
+#### Report Overview {#report-overview}
 
-1. **Best Practices Assessment**
+This card provides the report findings
 
-1. **Migration Complexity Assessment**
+#### Best Practices Assessment {#best-practices-assessment}
 
-   >[!NOTE]
-   > Additionally, you have the capability to:
-   >* click on each card to open its associated tab
-   >* bookmark all report tabs (including filtering) for sharing or future retrieval
-   >* use the details icon to view the details of each report finding
+This card provides an
+
+#### Migration Complexity Assessment {#migration.complexity-assessment}
+
+This card provides
+
 
 ## Using Planning and Setup Card {#planning-setup}
 
