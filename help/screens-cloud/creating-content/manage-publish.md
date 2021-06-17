@@ -17,9 +17,9 @@ You can publish content from AEM Screens. The Manage Publication feature allows 
 
 ## Objective {#objective}
 
-This document helps you understand creating a new project for your AEM Screens project in Screens Content Provider and publish edited content to the service provider and player. After reading you should be able to:
+This document helps you understand publishing the edited content to the Screens Services provider and player. After reading you should be able to:
 
-* understand how to publish a channel.
+* understand how to publish a channel
 * manage publication, in terms of scope
 
 ## Steps to Publish a Channel {#publish-channel}
