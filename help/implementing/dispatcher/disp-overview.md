@@ -28,9 +28,9 @@ The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and prov
 
 ## Downloading and Extracting the Tools {#extracting-the-sdk}
 
-The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new Dispatcher Tools version, can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
+The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new Dispatcher Tools version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
 
-Unzip the SDK, which bundles Dispatcher Tools for both macOS/Linux and Windows.
+Unzip the SDK, which bundles Dispatcher Tools for both macOS, Linux and Windows.
 
 **For macOS/Linux**, make the Dispatcher tool artifact executable and run it. It will self-extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the Dispatcher Tools).
 
@@ -106,7 +106,7 @@ This file is included from inside your `.vhost` files. It has a set of rewrite r
 
 * `conf.d/variables/custom.vars`
 
-This file is included from inside your `.vhost` files. You can put defines for Apache variables in this location.
+This file is included from inside your `.vhost` files. You can add defines for Apache variables in this location.
 
 * `conf.d/variables/global.vars`
 
@@ -367,7 +367,7 @@ Note, that there is no default version of the variables files.
 **Deprecated configuration layout detected, enabling compatibility mode**
 
 This message indicates that your configuration has the deprecated version 1 layout, containing a complete
-Apache configuration and files with `ams_` prefixes. While this is still supported for backward
+Apache configuration and files with `ams_` prefixes. While this is still supported for backwards
 compatibility, you should switch to the new layout.
 
 ## Local validation of Dispatcher configuration syntax so that apache httpd can start {#local-validation}
