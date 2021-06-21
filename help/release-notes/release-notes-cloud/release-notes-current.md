@@ -77,3 +77,14 @@ The next release is planned for July 15, 2021.
 * Some program editing sequences could result in the inability to create or edit the production pipeline.
 
 * Some program editing sequences could result in the **Overview** page displaying a misleading message to re-execute program setup.
+
+## CIF Add-on {#cloud-services-cif}
+
+### What is New {#what-is-new-cif}
+
+* New CIF product and category reference data types for Content Fragments (Incl. product / category picker UI support)
+* New Commerce Content Fragment Core Component
+* Full-text commerce search supported in AEM backend
+* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Improved SEO-friendly URLs for category pages
+* Support for custom HTTP headers per site/config
