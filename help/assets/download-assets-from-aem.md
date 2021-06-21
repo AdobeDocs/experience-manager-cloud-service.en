@@ -18,8 +18,9 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 You can download Experience Manager assets using the following methods:
 
+<!-- * [Link Share](#link-share-download) -->
+
 * [Experience Manager user interface](#download-assets)
-* [Link Share](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -59,6 +60,7 @@ To download assets, follow these steps:
 
 1. In the dialog box, click **[!UICONTROL Download]**.
 
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
 ## Download assets shared using link sharing {#link-share-download}
 
 Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
@@ -68,6 +70,7 @@ When users download assets from shared links, [!DNL Assets] uses an asynchronous
 The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
 ![Download inbox](assets/download-inbox.png)
+-->
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 

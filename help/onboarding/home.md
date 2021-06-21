@@ -9,7 +9,6 @@ exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 >id="aemcloud_onboarding_overview"
 >title="Onboarding Overview"
 >abstract="Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service. You will need your Adobe ID and your System Administrator's help to get users added to Cloud Manager to their assigned Roles and associated permissions."
->additional-url="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/SLAExhibit-AEMCloudService-2019DEC12.pdf" text="Service Level Exhibit - AEM as a Cloud Service"
 
 Congratulations on starting your journey with AEM as a Cloud Service! Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your application is optimized and ready for success on Cloud Service.
 
@@ -23,7 +22,7 @@ The following image illustrates your onboarding journey, starting with the welco
 
 This section covers the key articles focussed on your journey when starting with AEM as a Cloud Service:
 
-**What to expect while Onboarding**
+**What to expect while onboarding**
 
 Once your contract has been signed the following events will take place:
 
@@ -80,10 +79,10 @@ Follow this section to learn how a System Administrator or a user who created an
 
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService) 
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
-* [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

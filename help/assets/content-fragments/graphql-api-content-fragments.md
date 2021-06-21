@@ -151,7 +151,7 @@ To enable a GraphQL Endpoint you first need to have an appropriate configuration
 
 To enable the corresponding endpoint:
 
-1. Navigate to **Tools**, **Sites**, then select **GraphQL**.
+1. Navigate to **Tools**, **Assets**, then select **GraphQL**.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.

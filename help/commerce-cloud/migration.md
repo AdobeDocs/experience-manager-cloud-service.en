@@ -21,7 +21,7 @@ The previously available CIF connector cannot be installed anymore. Code relying
 
 ## Project structure
 
-Learn the [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) and the characteristics of AEM as a Cloud Service. Adapt your project setup to the AEM as a Cloud Service layout.
+Learn the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) and the characteristics of AEM as a Cloud Service. Adapt your project setup to the AEM as a Cloud Service layout.
 Compared to AEM 6.5 deployments there are two main differences here are:
 
 * The GraphQL client OSGI bundle **must not** be included into the AEM project anymore, it is deployed via the CIF add-on
