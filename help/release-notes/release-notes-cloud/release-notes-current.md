@@ -20,20 +20,16 @@ The following section outlines the general Release Notes for the current (latest
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 is June 24, 2021.
 The following release (2021.7.0) will be on July 29, 2021.
 
+## Release Video {#release-video}
+
+Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/333602) video for a summary of the features added.
+
 ## XML Documentation for AEM as a cloud Service {#xml-documentation}
- 
-### Release Date {#release-date-xml-documentation}
- 
-The Release Date for XML Documentation for AEM as a Cloud Service is June 24, 2021.
  
 ### What's New {#what-is-new-xml-documentation}
  
 * XML Documentation for AEM as a Cloud Service is now GA.
 * This will allow existing AEM Cloud Service customers to procure XML Documentation addon for importing, creating, managing and delivering technical content across multiple channels including AEM sites
-
-## Release Video {#release-video}
-
-Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/333602) video for a summary of the features added.
 
 ## Cloud Manager {#cloud-manager}
 
