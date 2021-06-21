@@ -35,7 +35,7 @@ Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/333
 
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.6.0 and 2021.5.0.
 
-## Release Date {#release-date-june-cm}
+### Release Date {#release-date-june-cm}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.6.0 is June 10, 2021.
 The next release is planned for July 15, 2021.
