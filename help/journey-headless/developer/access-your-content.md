@@ -236,7 +236,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Before starting with queries on your content you need to:
 
 * Enable your endpoint
-  * Use Tools -> Sites -> GraphQL
+  * Use Tools -> Assets -> GraphQL
   * [Enabling your GraphQL Endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
   
 * Install GraphiQL (if required)

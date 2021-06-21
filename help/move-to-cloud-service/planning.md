@@ -19,13 +19,13 @@ AEM as a Cloud Service brings many new features and possibilities for managing y
 
 However, there are a number of differences between AEM On-premise or in Adobe Managed Services as compared to AEM as a Cloud Service.
 
-Refer to [Notable Changes to AEM Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html) to understand the important differences.
+Refer to [Notable Changes to AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html) to understand the important differences.
 
 ## Deprecated Features {#deprecated-features}
 
 Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. 
 
-Refer to [Deprecated Features](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) to learn more about features and capabilities that have been marked as deprecated in Experience Manager as a Cloud Service.
+Refer to [Deprecated Features](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) to learn more about features and capabilities that have been marked as deprecated in Experience Manager as a Cloud Service.
 
 ## Understanding the Planning Phase {#introduction}
 

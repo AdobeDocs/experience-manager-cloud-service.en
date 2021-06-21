@@ -16,7 +16,7 @@ AEM Sites as a Cloud Service provides experience management capabilities as part
 >* [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
 >* [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 >* [Introducing AEM Assets as a Cloud Service](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 Changes and additions in AEM Sites as a Cloud Service are as follows:
 
@@ -38,9 +38,9 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 ## New Reference Site and Tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), a new AEM reference site, has been updated and published to reflect best practices for to build a web site with AEM, and the comprehensive set of capabilities, components, and deployment models that are available in AEM. The new reference site and [accompanying tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) covers fundamental topics like project setup, Core Components, Editable Templates, client libraries, and component development with Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), a new AEM reference site, has been updated and published to reflect best practices for to build a web site with AEM, and the comprehensive set of capabilities, components, and deployment models that are available in AEM. The new reference site and [accompanying tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) covers fundamental topics like project setup, Core Components, Editable Templates, client libraries, and component development with Adobe Experience Manager Sites.
 
-Previously, We.Retail was installed by default with AEM (except when started in production mode).  Now, a reference site will not be installed by default going forward.  Instead the [git repo](https://github.com/adobe/aem-guides-wknd/) and [accompanying tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) with the updated WKND reference site code is provided.
+Previously, We.Retail was installed by default with AEM (except when started in production mode).  Now, a reference site will not be installed by default going forward.  Instead the [git repo](https://github.com/adobe/aem-guides-wknd/) and [accompanying tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) with the updated WKND reference site code is provided.
 
 ## Capabilities not available at Runtime {#capabilities-not-available-at-runtime}
 
