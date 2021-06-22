@@ -1,8 +1,8 @@
 ---
 title: Headless Getting Started Guide
 description: With this quick start guide, learn the essentials of AEM as a Cloud Service's powerful headless capabilities like Content Models, Content Fragments, and the GraphQL API.
+exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 ---
-
 # Headless Getting Started Guide {#introduction}
 
 The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service in five steps. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
