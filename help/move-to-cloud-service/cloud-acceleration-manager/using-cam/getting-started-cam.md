@@ -48,14 +48,41 @@ Follow the steps below to create a new project:
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   Select the project and hover over the project, to edit or delete the project, as shown in the figure below.
+1. The project is now created and displays on the **Cloud Acceleration Manager** landing page.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
-
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
+   
 1. Click on the project card to enter the project. This will take you to the project landing page.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## Managing the Project {#manage-project}
+
+You can edit the project name, description, thumbnail image, or delete the project.
+
+### Editing the Project {#edit-project}
+
+Follow the steps below to edit your project:
+
+1. Select the project and hover over the project, and click on the pencil icon to edit the project, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. You can edit the project name, description, and even upload a new image or edit an existing one from **Edit project** dialog box.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. Click on **Update** to commit your changes.
+
+### Deleting the Project {#delete-project}
+
+Follow the steps below to delete your project:
+
+1. Select the project and hover over the project, and click on the bucket icon to delete the project, as shown in the figure below.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Click on **Delete** to confirm the step.
 
 ## What's Next {#whats-next}
 

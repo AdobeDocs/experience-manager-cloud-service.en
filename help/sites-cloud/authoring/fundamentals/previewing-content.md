@@ -1,8 +1,8 @@
 ---
 title: Previewing Content
 description: Learn how to use the AEM Preview Service to preview content before going live.
+exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 ---
-
 # Previewing Content {#previewing-content}
 
 >[!NOTE]
@@ -55,3 +55,4 @@ Follow these steps in order to debug the preview tier using the Developer Consol
 
 * In the [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), select either **-- All Preview --** or a production environment that includes **prev** in its name
 * Generate the relevant information for the preview instance
+See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments.
