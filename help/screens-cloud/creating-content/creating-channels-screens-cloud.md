@@ -13,10 +13,10 @@ Once you have created an AEM Screens Project, you must create channels.
 
 ## Objective {#objective}
 
-This document helps you understand creating and managing channels for your AEM Screens project in Screens Content Provider. After reading you should:
+This document helps you understand creating and managing channels for your AEM Screens project in Screens Content Provider. After reading you should be to:
 
-* Understand how to create channels to Screens Content Provider.
-* Be able to manage your channels in an AEM Screens project, in terms of scope.
+* understand how to create channels to Screens Content Provider
+* manage and edit content in your channels
 
 ## Steps to Create a New Sequence Channel in Screens as a Cloud Service {#create-new-channel}
 
@@ -38,7 +38,7 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > The **Create** wizard provides different types of templates while creating a channel. Refer to the section Available Templates in Create Wizard for more details.
+   > The **Create** wizard provides different types of templates while creating a channel. Refer to the section [Available Templates](#available-templates) in Create Wizard for more details.
 
 1. Enter the name of your sequence channel, such as, **LoopingChannelOne** and click on **Create**.
 
@@ -46,7 +46,7 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
 
    You will now see a **LoopingChannelOne** in your Channels folder in your AEM Screens project.
 
-1. Once you have created the channel, you can now add content to  your channel. Refer to [Adding Content to a Channel](#add-content) to learn how  to add assets (images/videos) to  your channel.
+   Once you have created the channel, you can now add content to  your channel. Refer to [Adding Content to a Channel](#add-content) to learn how  to add assets (images/videos) to  your channel.
 
 ## Managing a Channel {#managing-channels}
 
@@ -60,7 +60,7 @@ Navigate to the channel from your project and select the channel, as shown in th
 
 To add or edit content in a channel, follow the steps below:
 
-1. Select the channel you want to edit, as shown in the figure below. Click **Edit** from the top left corner of the action bar to open the editor.
+1. Select the channel you want to edit, as shown in the figure below. Click on **Edit** from the top left corner of the action bar to open the editor.
 
    ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -76,7 +76,7 @@ To add or edit content in a channel, follow the steps below:
 
 ## Available Templates in Create Wizard {#available-templates}
 
-The following templates are available while using the **Create** channel wizard such as:
+The following templates are available while using the **Create** channel wizard:
 
 |Available Templates|Description|
 |--- |--- |
