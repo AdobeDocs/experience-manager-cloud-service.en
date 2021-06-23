@@ -15,7 +15,7 @@ The main differences as compared to [Experience Manager] 6.5 are in the followin
 * [Asset microservices for cloud-native processing](#asset-microservices).
 * [Removal of Classic UI](#classic-ui).
 
-## Asset ingestion and processing {#asset-ingestion}
+## Asset ingestion, processing, and distribution {#asset-ingestion-distribution}
 
 Asset upload is optimized for efficiency by enabling better scaling of ingestion, faster uploads, faster processing using microservices, and bulk ingestion. Product capabilities (web user interfaces, desktop clients) are updated. Also, this may impact some existing customizations.
 
@@ -27,6 +27,8 @@ Asset upload is optimized for efficiency by enabling better scaling of ingestion
   * See [configure and use asset microservices](/help/assets/asset-microservices-configure-and-use.md)
   * To have customized workflow steps in the processing, [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) can be used.
 
+* The website components that deliver a binary file without any transformation can use direct download. The Sling GET servlet is updated to let developers do this by default. The website components that deliver a binary with some transformation (for example, resize it via a servlet) can continue to operate as is.
+
 The standard renditions generated with asset microservices are stored in a backward-compatible way in the asset repository nodes using the same naming conventions.
 
 ## Develop and test asset microservices {#asset-microservices}
@@ -36,7 +38,6 @@ Asset microservices provide a scalable and resilient processing of assets using 
 Asset microservices is a cloud-native service that is automatically provisioned and wired to [!DNL Experience Manager] in customer programs and environments managed in Cloud Manager. To extend or customize [!DNL Experience Manager], the developers can use the existing content or assets with renditions generated in a cloud environment, to test and validate their code using, displaying, downloading assets.
 
 To do an end-to-end validation of the code and process including asset ingestion and processing, deploy the code changes to a cloud-dev environment using [the pipeline](/help/implementing/cloud-manager/configure-pipeline.md) and test with full execution of asset microservices processing.
-
 
 ## Feature parity with [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
