@@ -8,7 +8,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 
 
 >[!CONTEXTUALHELP]
->id="aemcloud_nonbpa_cdn"
+>id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
 >abstract="AEM as Cloud Service is shipped with a built-in CDN. It’s main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
 
@@ -36,6 +36,11 @@ Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lis
 
 ## Customer CDN points to AEM Managed CDN {#point-to-point-CDN}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_byocdn"
+>title="Customer CDN points to AEM Managed CDN"
+>abstract="AEM as Cloud Service offers an option for customers to use its existing CDN. For the publish tier, customers can optionally point to it from their own CDN, which they will need to manage. This will be allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon."
+
 If a customer must use its existing CDN, they may manage it and point it to the AEM managed CDN, providing the following are satisfied:
 
 * Customer must have an existing CDN that would be onerous to replace.
@@ -58,6 +63,10 @@ Before accepting live traffic, you should validate with Adobe's customer support
 >[!NOTE]
 >
 >Customers that manage their own CDN should ensure the integrity of the headers that are sent through to AEM's CDN. For instance, it is recommended that customers clear all `X-Forwarded-*` headers and set them to known and controlled values. For example, `X-Forwarded-For` should contain the client's IP address, while `X-Forwarded-Host` should contain the site's host.
+
+>[!NOTE]
+>
+>Sandbox program environments do not support a customer-provided CDN.
 
 There is potentially a small performance hit due to the extra hop, although hops from the customer CDN to the AEM managed CDN are likely to be efficient.
 

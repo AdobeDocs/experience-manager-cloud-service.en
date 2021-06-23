@@ -20,8 +20,8 @@ When you initiate domain verification, Cloud Manager gives you the name and TXT 
 
 |Domain|Name|TXT Value|
 |--- |--- |---|
-|`example.com`|`_aemverification.example.com`|Displayed in Cloud Manager UI and is specific to the domain and the Cloud Manager environment|
-|`test.example.com`|`_aemverification.test.example.com`|Displayed in Cloud Manager UI and is specific to the domain and the Cloud Manager environment|
+|`example.com`|`_aemverification`|Displayed in Cloud Manager UI and is specific to the domain and the Cloud Manager environment|
+|`test.example.com`|`_aemverification`|Displayed in Cloud Manager UI and is specific to the domain and the Cloud Manager environment|
 
 When you are done you can verify the result by running: `dig _aemverification.[yourdomainname] -t txt`.
 The expected result should display the TXT value provided in Cloud Manager UI.

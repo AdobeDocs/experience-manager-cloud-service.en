@@ -85,9 +85,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | Company | The name of the Dynamic Media account. It is possible that you have multiple Dynamic Media accounts for different subbrands, divisions, or staging/production environments. |
    | Company Root Folder Path | Your company's root folder path. |
-   | Publishing Assets | You can choose from the following three options:<br>**[!UICONTROL Immediately]**: When assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.<br>**[!UICONTROL Upon Activation]**: You must explicitly publish the asset first before a URL/Embed link is provided.<br>**[!UICONTROL Selective Publish]**: Assets are auto published for secure preview only. They can also be explicitly published to Experience Manager as a Cloud Service without publishing to DMS7 for delivery in the public domain. In the future, this option intends to publish assets to Experience Manager as a Cloud Service and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in Experience Manager as a Cloud Service for previewing; those same assets are not published in DMS7 for delivery in the public domain. |
+   | Publishing Assets | You can choose from the following three options:<br>**[!UICONTROL Immediately]** - When assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.<br>**[!UICONTROL On Activation]** - You must explicitly publish the asset first before a URL/Embed link is provided.<br>**[!UICONTROL Selective Publish]** - Assets are auto published for secure preview only. They can also be explicitly published to Experience Manager as a Cloud Service without publishing to DMS7 for delivery in the public domain. In the future, this option intends to publish assets to Experience Manager as a Cloud Service and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in Experience Manager as a Cloud Service for previewing; those same assets are not published in DMS7 for delivery in the public domain. |
    | Secure Preview Server | Lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, Experience Manager as a Cloud Service can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager as a Cloud Service instance).<br>Unless you have a special arrangement to use your own company's server or a special server, Adobe recommends that you leave this setting as specified. |
-   | Sync all content | Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]**: The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.<br>To mark a selected folder for sync to Dynamic Media, select an asset folder, then in the toolbar, tap **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.* See also [Working with Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]**: No explicit sync value on the folder. Instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tooltip.<br>**[!UICONTROL Enable for subfolders]**: Include everything in this subtree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.<br>**[!UICONTROL Disabled for subfolders]**: Exclude everything in this subtree from syncing to Dynamic Media. |
+   | Sync all content | Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.<br>To mark a selected folder for sync to Dynamic Media, select an asset folder, then in the toolbar, tap **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.* See also [Working with Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]** - No explicit sync value on the folder. Instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tooltip.<br>**[!UICONTROL Enable for subfolders]** - Include everything in this subtree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.<br>**[!UICONTROL Disabled for subfolders]** - Exclude everything in this subtree from syncing to Dynamic Media. |
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >This Inbox notification informs you if the configuration was either successful or not.
    > See [Troubleshooting a new Dynamic Media configuration](#troubleshoot-dm-config) and [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) for more information. 
 
-1. To securely preview Dynamic Media content before it gets published, Experience Manager as a Cloud Service uses token based authentication by default. However, you can also "allowlist" more IPs to provide users access to securely preview content. To set up this action, do the following: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. To securely preview Dynamic Media content before it gets published, Experience Manager as a Cloud Service uses token based validation by default. However, you can also "allowlist" more IPs to provide users access to securely preview content. To set up this action, do the following: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Care.
     * On the navigation bar near the upper right corner of the page, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
@@ -131,7 +131,7 @@ When a new Dynamic Media configuration finishes its setup, you receive a status 
 
 See also [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-**To troubleshoot a new Dynamic Media configuration**
+**To troubleshoot a new Dynamic Media configuration:**
 
 1. Near the upper-right corner of the Experience Manager as a Cloud Service page, tap the bell icon, then tap **[!UICONTROL View All]**.
 1. On the Inbox page, tap the success notification to read an overview of the status and logs of the configuration.
@@ -270,7 +270,7 @@ You can define which asset types are processed by Dynamic Media and customize ad
 
 See [Uploading Assets](/help/assets/add-assets.md).
 
-**To edit the MIME types for supported formats**
+**To edit the MIME types for supported formats:**
 
 1. In Experience Manager as a Cloud Service, click the Experience Manager as a Cloud Service logo to access the global navigation console, then click **[!UICONTROL General > CRXDE Lite]**.
 1. In the left rail, navigate to the following:
@@ -296,7 +296,7 @@ See [Uploading Assets](/help/assets/add-assets.md).
 
 You can add custom MIME types for unsupported formats in Experience Manager Assets. To ensure that any new node you add in CRXDE Lite is not deleted by Experience Manager, move the MIME type before `image_`. Also, ensure that its enabled value is set to **[!UICONTROL false]**.
 
-**To add MIME types for unsupported formats**
+**To add MIME types for unsupported formats:**
 
 1. From Experience Manager as a Cloud Service, tap **[!UICONTROL Tools > Operations > Web Console]**.
 
@@ -316,7 +316,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 1. Type `DWG=image/vnd.dwg` in the empty text field that you just added.
 
-   The example `DWG=image/vnd.dwg` is for illustration purposes only. The MIME type that you add here can be any other unsupported format.
+   The `DWG=image/vnd.dwg` MIME type is for sample purposes only. The MIME type that you add here can be any other unsupported format.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -381,7 +381,7 @@ See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsu
 
 The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image ingestion and processing.
 
-**To update the Granite Transient Workflow queue**
+**To update the Granite Transient Workflow queue:**
 
 1. Navigate to [https://&lt;server&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search for **Queue: Granite Transient Workflow Queue**.
 

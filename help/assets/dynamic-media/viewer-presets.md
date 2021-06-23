@@ -13,7 +13,8 @@ If you are an administrator and must manage, create, sort, and delete viewer pre
 
 See also [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
-You may not need to publish viewer presets depending on what publish mode you are using.
+You do not need to publish viewer presets depending on what publish mode you are using.
+
 Any problems with viewer presets, see [Troubleshooting Dynamic Media](troubleshoot-dm.md#viewers).
 
 ## Applying a Dynamic Media viewer preset to an asset {#applying-a-viewer-preset-to-an-asset}
@@ -25,7 +26,7 @@ Any problems with viewer presets, see [Troubleshooting Dynamic Media](troublesho
    * The **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons appear after you select a viewer preset.
    * The system shows numerous viewer presets when you select Viewers in an asset's **[!UICONTROL Detail View]**. You can increase the number of presets seen. See [Increasing the number of viewer presets that display](managing-viewer-presets.md).
 
-1. Select a viewer from the left pane to apply it to the asset as seen in the right pane. You can also [copy the URL to share](linking-urls-to-yourwebapplication.md) with others users.
+1. Select a viewer from the left pane so you can apply it to the asset as seen in the right pane. You can also [copy the URL to share](linking-urls-to-yourwebapplication.md) with others users.
 
 ## Obtaining viewer preset URLs {#obtaining-viewer-preset-urls}
 

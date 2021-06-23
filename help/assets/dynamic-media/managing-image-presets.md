@@ -23,7 +23,7 @@ This section describes how to create, modify, and generally manage image presets
 
 Like a macro, an Image Preset is a predefined collection of sizing and formatting commands saved under a name. To understand how Image Presets work, suppose that your website requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
 
-You could create two image presets: one with 500 x 500 pixels for desktop version and 150 x 150 pixels for the mobile version. You create two Image Presets, one called `Enlarge` to display images at 500x500 pixels and one called `Thumbnail` to display images at 150 x 150 pixels. To deliver images at the `Enlarge` and `Thumbnail` size, Experience Manager looks up the definition of the Enlarge Image Preset and Thumbnail Image Preset. Then Experience Manager dynamically generates an image at the size and formatting specifications of each Image Preset.
+You could create two image presets: one with 500 x 500 pixels for desktop version and 150 x 150 pixels for the mobile version. You create two Image Presets, one called `Enlarge` to display images at 500x500 pixels and one called `Thumbnail` to display images at 150 x 150 pixels. To deliver images at the `Enlarge` and `Thumbnail` size, Experience Manager finds the definition of the Enlarge Image Preset and Thumbnail Image Preset. Then Experience Manager dynamically generates an image at the size and formatting specifications of each Image Preset.
 
 Images that are reduced in size when they are delivered dynamically can lose sharpness and detail. For this reason, each Image Preset contains formatting controls for optimizing an image when it is delivered at a particular size. These controls make sure that your images are sharp and clear when they are delivered to your web site or application.
 
@@ -31,7 +31,7 @@ Administrators can create Image Presets. To create an image preset, you can star
 
 ## Managing Image Presets {#managing-image-presets-1}
 
-You manage your image presets in Experience Manager by tapping or clicking the Experience Manager logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets > Image Presets]**.
+You manage your image presets in Experience Manager by tapping or clicking the Experience Manager logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -56,7 +56,7 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 * Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG subasset under the main Illustrator asset.
 * PDF documents consist of one or more pages. Each page is extracted as a single page PDF subasset under the main multi-page PDF document.
 
-The subassets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]**.
+The subassets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -81,7 +81,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools > Workflow > Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -89,41 +89,18 @@ Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Too
 
 Arguments to rasterize PDF or AI workflow
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Process Argument</strong></td>
-   <td><strong>Default setting</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Mime Types</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>List of document mime-types that are considered to be PDF or Illustrator documents.<br /> </td>
-  </tr>
-  <tr>
-   <td>Max Width</td>
-   <td>2048</td>
-   <td>Maximum width of the generated preview rendition, in pixels.<br /> </td>
-  </tr>
-  <tr>
-   <td>Max Height</td>
-   <td>2048</td>
-   <td>Maximum height of the generated preview rendition, in pixels.<br /> </td>
-  </tr>
-  <tr>
-   <td>Resolution</td>
-   <td>72</td>
-   <td>Resolution to rasterize the first page, in ppi (pixels per inch).</td>
-  </tr>
- </tbody>
-</table>
+|Process Argument | Default setting | Description |
+|---|---|---|
+| Mime Types | application/pdf<br>application/postscript<br>application/illustrator| List of document mime-types that are considered to be PDF or Illustrator documents. |
+| Max Width | 2048 | Maximum width of the generated preview rendition, in pixels.|
+| Max Height | 2048| Maximum height of the generated preview rendition, in pixels. |
+| Resolution | 72 | Resolution to rasterize the first page, in ppi (pixels per inch). |
 
 Using the default process arguments, the first page of a PDF/AI document is rasterized at 72 ppi and the generated preview image is sized at 2048 x 2048 pixels. For a typical deployment, you can increase the resolution to a minimum of 150 ppi or more. For example, a US letter size document at 300 ppi requires a maximum width and height of 2550 x 3300 pixels, respectively.
 
 Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java™ Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
 
 ### InDesign (INDD) file format {#indesign-indd-file-format}
 
@@ -141,30 +118,12 @@ The ExtendScript paths in the arguments of Media Extraction process component in
 
 The following scripts, are used by Dynamic Media integration:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>ExtendScript name</strong></td>
-   <td><strong>Default</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>Yes</td>
-   <td>Generates a 300 ppi <code>thumbnail.jpg</code> rendition that is optimized and turned into a PTIFF rendition by <code>Dynamic Media Process Image Assets</code> process component.<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>Yes</td>
-   <td>Generates a 300 ppi JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the <code>DAM Update Asset</code> workflow.<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>No</td>
-   <td>Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated.<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+|ExtendScript name | Default | Description |
+|---|---|---|
+| ThumbnailExport.jsx | Yes  | Generates a 300 ppi `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
+| JPEGPagesExport.jsx | Yes | Generates a 300 ppi JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the `DAM Update Asset` workflow. |
+| PDFPagesExport.jsx | No | Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated. |
 
 ### Configuring image thumbnail size {#configuring-image-thumbnail-size}
 
@@ -183,7 +142,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 **To configure image thumbnail size**
 
-1. Tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]**.
+1. Tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -200,7 +159,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 Image presets you create are available as dynamic renditions when you preview assets. Experience Manager shows various dynamic renditions when viewing an asset from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
 
-**To increase or decrease the number of image presets displayed**:
+**To increase or decrease the number of image presets displayed:**
 
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the image preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -228,11 +187,12 @@ If you intend to support the ingestion of AI, PDF, and EPS files so that you can
 See [Adobe Illustrator (AI), PostScript® (EPS), and PDF file formats](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, review the following information before you create image presets.
+
 See [InDesign (INDD) file format](#indesign-indd-file-format).
 
-**To create an image preset**:
+**To create an image preset:**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Click **[!UICONTROL Create]**. The **[!UICONTROL Edit Image Preset]** window opens.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -313,7 +273,7 @@ When you create or edit image presets, you have the options described in this se
      <strong>TIFF with alpha</strong> provides this additional option:
     </div>
     <ul>
-     <li><strong>Compression</strong> - Select a compression algorithm. Algorithm options for PDF are <strong>None</strong>, <strong>Zip</strong>, and <strong>Jpeg</strong>; for TIFF are <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, and <strong>Zip</strong>; and for TIFF with Alpha are <strong>None</strong>, <strong>LZW</strong>, and <strong>Zip</strong>.</li>
+     <li><strong>Compression</strong> - Select a compression algorithm. Algorithm options for PDF are <strong>None</strong>, <strong>Zip</strong>, and <strong>Jpeg</strong>; for TIFF they are <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, and <strong>Zip</strong>; and for TIFF with Alpha are <strong>None</strong>, <strong>LZW</strong>, and <strong>Zip</strong>.</li>
     </ul> <p>Choosing <strong>PNG</strong>, <strong>PNG with Alpha,</strong> or <strong>EPS</strong> provides no additional options.</p> </td>
   </tr>
   <tr>
@@ -345,7 +305,7 @@ When you create or edit image presets, you have the options described in this se
     <ul>
      <li>Select <strong>Perceptual</strong> to compress the total gamut from one color space into another color space when one or more colors in the original image is out of the gamut of the destination color space.</li>
      <li>Select <strong>Relative Colorimetric</strong> when a color in the current color space is out of gamut in the target color space. And, you want to map it to the closest possible color within the gamut of the target color space without affecting any other colors. </li>
-     <li>Select <strong>Saturation</strong> to reproduce the original image color saturation when converting into the target color space. </li>
+     <li>Select <strong>Saturation</strong> if you want to reproduce the original image color saturation when converting into the target color space. </li>
      <li>Select <strong>Absolute Colorimetric</strong> to match colors exactly with no adjustment for white point or black point that would alter the image's brightness.</li>
     </ul> </td>
   </tr>
@@ -361,9 +321,9 @@ When you create or edit image presets, you have the options described in this se
    <td><strong>Sharpening Type</strong></td>
    <td><p>Select <strong>None</strong>, <strong>Sharpen</strong>, or <strong>Unsharp Mask</strong>. </p>
     <ul>
-     <li>Select <strong>None</strong> to disable sharpening.</li>
+     <li>Select <strong>None</strong> if you want to disable sharpening.</li>
      <li>Select <strong>Sharpen </strong>to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li>
-     <li>Select<strong> Unsharp mask</strong> to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels) and a threshold of contrast that is ignored. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li>
+     <li>Select<strong> Unsharp mask</strong> if you want to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels) and a threshold of contrast that is ignored. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li>
     </ul> <p>In <strong>Unsharp Mask</strong>, you have the following options:</p>
     <ul>
      <li><strong>Amount</strong> - Controls the amount of contrast applied to edge pixels. The default real number value is 1.0. For high-resolution images, you can increase it to as high as 5.0. Think of Amount as a measure of filter intensity.</li>
@@ -460,7 +420,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 ### Editing Image Presets {#modifying-image-presets}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -473,5 +433,5 @@ Image presets are automatically published for you.
 
 ### Deleting Image Presets {#deleting-image-presets}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.

@@ -19,7 +19,7 @@ On your website, a carousel banner can look as follows:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Here you can navigate through the images by clicking the numbers. In addition, the slides automatically rotate based on a time interval you can customize. Images that you add in the carousel banner support both hotspots and image maps. Users can either tap or to go to a hyperlink or access a Quick view window.
+Here you can navigate through the images by clicking the numbers. In addition, the slides automatically rotate based on a time interval you can customize. Images in a carousel banner support both hotspots and image maps. Users can either tap or to go to a hyperlink or access a Quick view window.
 
 In this example, a user has tapped or clicked an image map and accessed the Quick view window for gloves:
 
@@ -27,7 +27,7 @@ In this example, a user has tapped or clicked an image map and accessed the Quic
 
 ## Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
 
-Watch a 10 minute and 33 second walkthrough on [how carousel banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). You also learn about how to preview, edit, and deliver carousel banners.
+Watch a walkthrough on [how carousel banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) (Duration: 10 minutes and 33 seconds). You also learn about how to preview, edit, and deliver carousel banners.
 
 >[!NOTE]
 >
@@ -115,12 +115,12 @@ Most Quick view implementations use the following paradigm:
 * The Quick view data is translated into the content in preparation for rendering on the web page.
 * Finally, the front-end code visually renders such content on the screen.
 
-The approach then is to visit different areas of the existing website where the Quick view feature is implemented. Then trigger the Quick view and capture the Ajax URL sent by the web page for loading the Quick view data or content.
+The approach then is to visit different areas of the existing website where the Quick view feature is implemented. Then trigger the Quick view and acquire the Ajax URL sent by the web page for loading the Quick view data or content.
 
 Normally there is no need for you to use any specialized debugging tools. Modern web browsers feature web inspectors that do an adequate job. The following are a few examples of web browsers that include web inspectors:
 
-* To see all outgoing HTTP requests in Google Chrome, press F12 (Windows) or Command-Option-I (Mac) to open the Developer tool panel. Tap the Network tab.
-* In Firefox, you can either activate the Firebug plug-in by pressing F12 (Windows) or Command-Option-I (Mac). Use its Network tab, or use the built-in Inspector tool and its Network tab.
+* To see all outgoing HTTP requests in Google Chrome, press F12 (Windows®) or Command-Option-I (Mac) to open the Developer tool panel. Tap the Network tab.
+* In Firefox, you can either activate the Firebug plug-in by pressing F12 (Windows®) or Command-Option-I (Mac). Use its Network tab, or use the built-in Inspector tool and its Network tab.
 
 When network monitoring is turned on in the browser, trigger the Quick view on the page.
 
@@ -184,7 +184,7 @@ To upload image banners, see [Uploading assets](/help/assets/manage-digital-asse
 >
 >Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
-**To create a Carousel Set**
+**To create a Carousel Set:**
 
 1. In Assets, navigate to the folder where you want to create the Carousel Set and tap **[!UICONTROL Create > Carousel Set]**.
 1. On the Carousel Banner Editor page tap **[!UICONTROL Tap to open Asset Selector]** to select the image for your first slide.
@@ -212,19 +212,19 @@ To upload image banners, see [Uploading assets](/help/assets/manage-digital-asse
    To delete a slide, tap or click the slide and tap or click **[!UICONTROL Delete Slide]** in the toolbar. To move a slide, tap the reorder icon and hold and move to the desired location.
 
 1. After you have added the images in slides, you can add a hotspot, image map, or both to your image. See [adding hotspots or image maps](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. You can change the visual design and behavior of carousel sets. Tap or click the Behavior and Appearance tabs and adjust how your carousel banner looks or how specific components behave. See [managing viewer presets](/help/assets/dynamic-media/viewer-presets.md) for more information on how to use the viewer editor.
+1. You can change the visual design and behavior of carousel sets. Tap or click the **[!UICONTROL Behavior]** and **[!UICONTROL Appearance]** tabs and adjust how your carousel banner appears or how specific components behave. See [managing viewer presets](/help/assets/dynamic-media/viewer-presets.md) for more information on how to use the viewer editor.
 
    >[!NOTE]
    >
    >For carousel banners, you can adjust the following:
-   >    * Duration that an image displays. By default, each image displays for 9 seconds.
-   >    * Animation. By default, each slide transition is a fade. You can change that to a slide transition.
-   >    * Style of the buttons. Users can rotate through the banners by tapping each dot or number. You can change where the set indicator buttons appear (and if they are numeric or a dotted style) and how large they are.
-   >    * Change the highlight style of an image map or the icon used for hotspots.
-   >    * Before you edit a viewer preset, choose the style on which you want to base the preset. If you do not choose a style, when you start to edit the viewer preset, you lose all of your changes if you change to a different preset.
    >
+   >* Duration that an image displays. By default, each image displays for 9 seconds.
+   >* Animation. By default, each slide transition is a fade. You can change that to a slide transition.
+   >* Style of the buttons. Users can rotate through the banners by tapping each dot or number. You can change where the set indicator buttons appear (and if they are numeric or a dotted style) and how large they are.
+   >* Change the highlight style of an image map or the icon used for hotspots.
+   >* Before you edit a viewer preset, choose the style on which you want to base the preset. If you do not choose a style, when you start to edit the viewer preset, you lose all of your changes if you change to a different preset.
 
-   You can also preview what the carousel banner looks like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
+   You can also preview the carousel banner's appearance. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
 
 1. Tap **[!UICONTROL Save]** when finished.
 
@@ -260,7 +260,7 @@ See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banne
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**To add Hotspots or Image Maps to an Image Banner**
+**To add Hotspots or Image Maps to an Image Banner:**
 
 1. From Assets, navigate to the carousel set you want to make interactive.
 1. Select the carousel set and tap **[!UICONTROL Edit]**. The Carousel Viewer Editor opens.
@@ -318,7 +318,7 @@ See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banne
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   You can also preview what the carousel banner looks like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
+   You can also preview the carousel banner's appearance. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
 
 1. Tap **[!UICONTROL Save]**.
 1. Publish the carousel set. Publishing creates the embed code or URL that you can use on your website page. If you are an Experience Manager Sites customer, add the carousel set directly to your web page.
@@ -342,7 +342,7 @@ You can perform various editing tasks on Carousel Sets such as the following:
 * Delete the Carousel Set.
 * Add or edit hotspots and image maps. See also [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
-**To edit a Carousel Set**
+**To edit a Carousel Set:**
 
 1. Do any one of the following:
 
@@ -368,7 +368,7 @@ You can perform various editing tasks on Carousel Sets such as the following:
 
 ## (Optional) Previewing Carousel Banners {#optional-previewing-carousel-banners}
 
-You can use Preview to see what your carousel banner looks like to customers. Using Preview also lets you test the carousel banner's hotspots and image maps to ensure they behave as expected.
+You can use Preview to see how the carousel banner appears to customers. Using Preview also lets you test the carousel banner's hotspots and image maps to ensure they behave as expected.
 
 When you are satisfied with the carousel banner, you can publish it.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
@@ -377,7 +377,7 @@ See [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dyn
 
 You can preview carousel banners from the Carousel Editor (preferred method) or from the **[!UICONTROL Viewers]** list.
 
-**To preview carousel banners**
+**To preview carousel banners:**
 
 1. In **[!UICONTROL Assets]**, navigate to an existing carousel banner that you have created and tap to open it.
 1. Tap **[!UICONTROL Edit]**.
@@ -388,7 +388,7 @@ You can preview carousel banners from the Carousel Editor (preferred method) or 
 1. Tap **[!UICONTROL Preview]**.
 1. To test their associated actions, tap the hotspots or image maps on the image.
 
-**To preview carousel banners from the Viewers list**
+**To preview carousel banners from the Viewers list:**
 
 1. In **[!UICONTROL Assets]**, navigate to an existing carousel banner that you have created and tap to open it.
 1. Near the upper-left corner of the Preview page, click the Content icon.
@@ -459,6 +459,6 @@ See [Identifying hotspot and image map variables](#identifying-hotspot-and-image
 
 The last step to trigger the Quick view URL and activate the Quick view panel most likely requires the assistance of a front-end IT person from your IT department. They have the knowledge to know best how to accurately trigger the Quick view implementation from the proper step, having a ready-to-use Quick view URL.
 
-## Using Quick views to create custom pop-up windows {#using-quickviews-to-create-custom-pop-ups}
+## Using Quick views to create custom pop-up Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-See [Using Quick views to create custom pop-up windows](/help/assets/dynamic-media/custom-pop-ups.md).
+See [Using Quick views to create custom pop-up Windows®](/help/assets/dynamic-media/custom-pop-ups.md).

@@ -58,15 +58,19 @@ The article contains recommendations, reference materials, and resources for dev
 | Copy folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 | Move folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 
-## Asset upload {#asset-upload-technical}
+## Asset upload {#asset-upload}
 
-In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are:
+In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 1. [Submit an HTTP request](#initiate-upload). It informs [!DNL Experience Manage]r deployment of your intent to upload a new binary.
 1. [POST the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
 1. [Submit an HTTP request](#complete-upload) to inform the server that the contents of the binary were successfully uploaded.
 
 ![Overview of direct binary upload protocol](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+>
+>Execute the above steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 The approach provides a scalable and more performant handling of asset uploads. The differences as compared to [!DNL Experience Manager] 6.5 are:
 
@@ -196,13 +200,11 @@ Customers upgrading from previous versions of [!DNL Experience Manager] can use 
 
 The following technical workflow models are either replaced by asset microservices or the support is not available:
 
-* `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.GateKeeperProcess`
 * `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.day.cq.dam.core.process.MetadataProcessorProcess`
-* `com.day.cq.dam.core.process.XMPWritebackProcess`
 * `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
 * `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
 * `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`

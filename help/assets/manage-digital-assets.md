@@ -109,7 +109,7 @@ To preview an asset, follow these steps.
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Assets Insights](assets-insights.md).
 
 [!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
 
@@ -243,9 +243,7 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
 1. Navigate to the location of the asset(s) you want to delete.
 
-1. Select the asset, and tap/click the **[!UICONTROL Delete]** icon from the toolbar.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Select the asset, and click **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) from the toolbar.
 
 1. In the confirmation dialog, click:
 
@@ -253,7 +251,7 @@ Also, disable the force delete button using an overlay, to disallow users from d
     * **[!UICONTROL Delete]** to confirm the action:
 
         * If the asset has no references, the asset is deleted.
-        * If the asset has references, an error-message informs you that **One or more assets are referenced.** You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
+        * If the asset has references, an error-message informs you that **[!UICONTROL One or more assets are referenced]**. You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
 
    >[!NOTE]
    >
@@ -261,14 +259,11 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
    >[!NOTE]
    >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
-   >
-   >
-   >Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. You can disallow deletion of referenced assets as it causes broken links. Disable the force delete button using an overlay.
 
 ## Download assets {#download-assets}
 
-See [Download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+See [download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publish or unpublish assets {#publish-assets}
 
