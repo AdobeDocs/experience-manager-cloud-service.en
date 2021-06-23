@@ -23,7 +23,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Video transcoding is now supported with asset microservices. A new section in the [!UICONTROL Processing Profiles] configuration lets you set video bit rate and dimensions. The output format is MP4 with H.264 codec. For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). For more transcoding options and for video delivery, use [!DNL Dynamic Media] add-on.
 
-* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration) as before.
+* On new [!DNL Experience Manager Assets] deployments, the smart tagging functionality is now configured by default. No need to manually integrate with [!DNL Adobe Developer Console]. On existing deployments, administrators configure smart tags integration as before.
 
 * A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
 
@@ -34,9 +34,9 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Use a processing profile to generate custom metadata using Compute Service. See [Custom metadata using processing profile](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* A simpler download experience for Brand Portal users that administrators can configure. See [download experience overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* A simpler download experience for Brand Portal users that administrators can configure. See [download experience overview](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* Native and high-fidelity PDF document previews are now available in Brand Portal. See [document viewer overview](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
 * You can now invalidate the CDN (Content Delivery Network) cache directly from [!DNL Dynamic Media] in AEM as a Cloud Service (as opposed to using [!DNL Dynamic Media Classic]). It ensures that the latest assets are served within minutes instead of hours. See [Invalidating the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 

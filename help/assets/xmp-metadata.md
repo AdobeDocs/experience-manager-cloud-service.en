@@ -68,9 +68,7 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 ## XMP writeback to renditions {#xmp-writeback-to-renditions}
 
 This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. 
-When you change the metadata for an asset from within Assets or while uploading the asset, the changes are initially stored in the metadata node in the asset hierarchy. 
-
-The XMP writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. The feature writes back only those metadata properties that use `jcr` namespace, that is, a property named `dc:title` is written back but a property named `mytitle` is not.
+When you change the metadata for an asset from within [!DNL Assets] or while uploading the asset, the changes are initially stored in the metadata node in the asset hierarchy. The writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. The feature writes back only those metadata properties that use `jcr` namespace, that is, a property named `dc:title` is written back but a property named `mytitle` is not.
 
 For example, consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
 
@@ -80,13 +78,19 @@ In this case, [!DNL Assets] saves the changes to the **[!UICONTROL Title]** prop
 
 ![metadata stored in asset node in the repository](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback).
+>The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback). MSM for digital assets does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
 
-[!UICONTROL DAM Metadata Writeback] workflow is used to writeback the metadata of an asset. To enable writeback, follow these steps:
+[!UICONTROL DAM Metadata Writeback] workflow is used to writeback the metadata of an asset. To enable writeback, follow any of the following three methods:
+
+* Use Launchers.
+* Manually start `DAM MetaData Writeback` workflow.
+* Configure workflow to be part of the post-processing.
+
+To use Launchers, follow these steps:
 
 1. As an administrator, access **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 1. Select the [!UICONTROL Launcher] for which the **[!UICONTROL Workflow]** column displays **[!UICONTROL DAM MetaData Writeback]**. Click **[!UICONTROL Properties]** from the toolbar.
@@ -95,16 +99,14 @@ In this case, [!DNL Assets] saves the changes to the **[!UICONTROL Title]** prop
 
 1. Select **[!UICONTROL Activate]** on the **[!UICONTROL Launcher Properties]** page. Click **[!UICONTROL Save & Close]**.
 
-To apply this workflow to an asset just once, apply the workflow [!UICONTROL DAM Metadata Writeback] workflow from the left rail. To apply the workflow to all the uploaded assets, add the workflow to a post-processing profile.
+To manually apply the workflow to an asset just once, apply [!UICONTROL DAM Metadata Writeback] workflow from the left rail.
+
+To apply the workflow to all the uploaded assets, add the workflow to a post-processing profile.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
--->
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
-
-<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.

@@ -10,7 +10,7 @@ exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 
 You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**. After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by way of embedding code on the page.
 
-You can also instantly publish assets that you upload&mdash;without any user intervention. Or, you can selectively publish those assets. See [Configuring Dynamic Media](config-dm.md). Or, you can selectively publish assets to either Dynamic Media or Adobe Experience Manager, mutually exclusive of each other, using **[!UICONTROL Selective Publish]** at the folder level. See [Working with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+You can also instantly publish assets that you upload &ndash; without any user intervention. Or, you can selectively publish those assets. See [Configuring Dynamic Media](config-dm.md). Or, you can selectively publish assets to either Dynamic Media or Adobe Experience Manager, mutually exclusive of each other, using **[!UICONTROL Selective Publish]** at the folder level. See [Working with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset's name and to the left of the date and time to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
 

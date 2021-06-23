@@ -1,5 +1,5 @@
 ---
-title: Invalidating the CDN cache by way of Dynamic Media
+title: Invalidating the CDN (Content Delivery Network) cache by way of Dynamic Media
 description: "Learn how to invalidate your CDN (Content Delivery Network) cached content to let you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire."
 feature: Asset Management
 role: Administrator,Business Practitioner
@@ -15,11 +15,11 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**To invalidate the CDN cache by way of Dynamic Media**
+**To invalidate the CDN cache by way of Dynamic Media:**
 
 *Part 1 of 2: Creating a CDN Invalidation template*
 
-1. In AEM as a Cloud Service, tap **[!UICONTROL Tools > Assets > CDN Invalidation Template]**.
+1. In Adobe Experience Manager as a Cloud Service, tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation Template]**.
 
     ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -28,7 +28,7 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
     | Scenario | Option |
     | --- | --- |
     | I have already created a CDN invalidation template in the past using Dynamic Media Classic. | The **[!UICONTROL Create Template]** text field is pre-populated with your template data. In such case, you can either edit the template, or continue to the next step. |
-    | I have to create a template. What do I enter? | In the **[!UICONTROL Create Template]** text field, enter an image URL (including image presets or modifiers) referencing `<ID>`, instead of a specific image ID as in the following example:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>If the template contains just `<ID>`, then Dynamic Media fills in `https://<publishserver_name>/is/image/<company_name>/<ID>` where `<publishserver_name>` is the name of your Publish Server that is defined in General Settings in Dynamic Media Classic. The `<company_name>` is the name of your company root associated with this AEM instance, and `<ID>` is the selected assets through the asset picker to be invalidated.<br>Any presets/modifiers post `<ID>` are copied as-is in the URL definition.<br>Only images&ndash;that is, `/is/image`&ndash;can be auto formed based on the template.<br>For `/is/content/`, adding assets such as videos or PDFs using the asset picker does not auto generate URLs. Instead, you must specify such assets either in the CDN Invalidation template, or you can manually add the URL to such assets in *Part 2 of 2: Setting CDN Invalidation options*.<br>**Examples:**<br>In this first example, the invalidation template contains `<ID>` along with the asset URL having `/is/content`. For example, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forms the URL based on this path, with `<ID>` being the assets selected through the asset picker that you want invalidated.<br>In this second example, the invalidation template contains the full URL of the asset used in your web properties with `/is/content` (not dependent on the asset picker). For example, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` where backpack is the asset ID.<br>Asset formats that are supported in Dynamic Media are eligible for invalidation. Asset file types that are *not* supported for CDN invalidation include PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft Powerpoint, Microsoft Excel, Microsoft Word, and Rich Text Format.<br>When you create the template, but sure you pay careful attention to syntax and typos; Dynamic Media does not do any template validation.<br>Specify URLs for image smart crops either in this CDN Invalidation template, or in the **[!UICONTROL Add URL]** text field in *Part 2: Setting CDN Invalidation options.*<br>**Important:** Each entry in a CDN Invalidation template must be on its own line.<br>*The following template example is for illustration purposes only.*|
+    | I have to create a template. What do I enter? | In the **[!UICONTROL Create Template]** text field, enter an image URL (including image presets or modifiers) referencing `<ID>`, instead of a specific image ID as in the following example:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>If the template contains just `<ID>`, then Dynamic Media fills in `https://<publishserver_name>/is/image/<company_name>/<ID>` where `<publishserver_name>` is the name of your Publish Server that is defined in General Settings in Dynamic Media Classic. The `<company_name>` is the name of your company root associated with this Experience Manager instance, and `<ID>` is the selected assets through the asset picker to be invalidated.<br>Any presets/modifiers following `<ID>` are copied as-is in the URL definition.<br>Only images&ndash;that is, `/is/image`&ndash;can be auto formed based on the template.<br>For `/is/content/`, adding assets such as videos or PDFs using the asset picker does not auto generate URLs. Instead, you must specify such assets either in the CDN Invalidation template, or you can manually add the URL to such assets in *Part 2 of 2: Setting CDN Invalidation options*.<br>**Examples:**<br>In this first example, the invalidation template contains `<ID>` along with the asset URL having `/is/content`. For example, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forms the URL based on this path, with `<ID>` being the assets selected through the asset picker that you want invalidated.<br>In this second example, the invalidation template contains the full URL of the asset used in your web properties with `/is/content` (not dependent on the asset picker). For example, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` where backpack is the asset ID.<br>Asset formats that are supported in Dynamic Media are eligible for invalidation. Asset file types that are *not* supported for CDN invalidation include PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word, and Rich Text Format.<br>When you create the template, but sure you pay careful attention to syntax and typos; Dynamic Media does not do any template validation.<br>Specify URLs for image smart crops either in this CDN Invalidation template, or in the **[!UICONTROL Add URL]** text field in *Part 2: Setting CDN Invalidation options.*<br>**Important:** Each entry in a CDN Invalidation template must be on its own line.<br>*The following template example is for explanation purposes only.*|
 
     ![CDN Invalidation Template - Create](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -36,7 +36,7 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
     *Part 2 of 2: Setting CDN Invalidation options*
     <br>
 
-1. In AEM as a Cloud Service, tap **[!UICONTROL Tools > Assets > CDN Invalidation]**.
+1. In Experience Manager as a Cloud Service, tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]**.
 
     ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-path.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Best practices for optimizing the quality of your images
-description: Learn best practices you can use in Dynamic Media to optimize the quality of your image assets.
+description: Learn best practices to optimize the quality of your image assets using Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset Management
 role: Business Practitioner
@@ -10,7 +10,7 @@ exl-id: 2efc4a27-01d7-427f-9701-393497314402
 
 Optimizing image quality can be a time consuming process as many factors contribute to rendering acceptable results. The outcome is partly subjective because individuals perceive image quality differently. Structured experimentation is key.
 
-AEM includes more than 100 Dynamic Media image delivery commands for tuning and optimizing images and rendering results. The following guidelines can help you streamline the process and achieve good results quickly using some essential commands and best practices.
+Adobe Experience Manager includes more than 100 Dynamic Media image delivery commands for tuning and optimizing images and rendering results. The following guidelines can help you streamline the process and achieve good results quickly using some essential commands and best practices.
 
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -34,13 +34,13 @@ As a best practice for image sizing, use `&wid=<value>&hei=<value>&resMode=sharp
 
 ## Best practices for image sharpening {#best-practices-for-image-sharpening}
 
-Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the following helpful resources:
+Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in Experience Manager by referring to the following helpful resources:
 
-* Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to AEM as well.
+* Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to Experience Manager as well.
 
-* Watch [Using Image Sharpening with AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Watch [Using Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-With AEM, you can sharpen images on ingestion, on delivery, or both. Usually, however, it is best to sharpen images using only one method or the other, but not both. Sharpening images on delivery, on a URL, typically gives you the best results.
+With Experience Manager, you can sharpen images on ingestion, on delivery, or both. Usually, however, it is best to sharpen images using only one method or the other, but not both. Sharpening images on delivery, on a URL, typically gives you the best results.
 
 There are two image sharpening methods that you can use:
 
@@ -60,11 +60,11 @@ There are two image sharpening methods that you can use:
 
     For more information about how you set these three parameters, including best practices to use with the filter, see the following resources:
 
-    AEM Help topic on Sharpening an image.
+    * Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to Experience Manager as well.
 
-    Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+    * Watch [Using Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-    * AEM also lets you control a fourth parameter: monochrome (0,1). This parameter determines if unsharp masking is applied to each color component separately using the value 0 or to the image brightness/intensity using the value 1.
+    * Experience Manager also lets you control a fourth parameter: monochrome (0,1). This parameter determines if unsharp masking is applied to each color component separately using the value 0 or to the image brightness/intensity using the value 1.
 
 As a best practice, start with the unsharp mask radius parameter. Radius settings that you can start with are the following:
 
@@ -92,7 +92,7 @@ As a best practice for JPG compression use `&qlt=85,0`.
 
 ## Best practices for JPEG sizing (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize` is a useful parameter if you want to guarantee that an image does not exceed a certain size for delivery to devices that have limited memory.
+The parameter `jpegSize` is useful if you want to guarantee that an image does not exceed a certain size for delivery to devices that have limited memory.
 
 * This parameter is set in kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). It defines the maximum allowed size for image delivery.
 * `&jpegSize=` interacts with the JPG compression parameter `&qlt=`. If the JPG response with the specified JPG compression parameter (`&qlt=`) does not exceed thejpegSize value, the image is returned with `&qlt=` as defined. Otherwise, `&qlt=` is gradually decreased until the image fits in the maximum allowed size, or until the system determines it cannot fit and returns an error.
@@ -115,4 +115,4 @@ As you experiment, the following general suggestions are helpful to optimize you
 
 * Try out and test different parameters in real time, directly on a URL.
 * As a best practice, remember that you can group Dynamic Media Image Serving commands into an image preset. An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. The custom preset name in a URL path calls these presets. Such functionality helps you manage commands and quality settings for different usage patterns of images on your website and shortens the overall length of URLs.
-* Experience Manager also provides more advanced ways to tune image quality, such as applying sharpening images on ingestion. To tune and optimize rendering results, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) can help you with customized insight and best practices.
+* Experience Manager also provides more advanced ways to tune image quality, such as applying sharpening images on ingestion. To tune and optimize rendering results, [Adobe's consulting services](https://business.adobe.com/customers/consulting-services/main.html) can help you with customized insight and best practices.

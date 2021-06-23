@@ -7,7 +7,7 @@ exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 ---
 # Previewing assets{#previewing-assets}
 
-You can use Preview to see how a digital asset that you have uploaded looks when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
+You can use Preview to see how a digital asset that you have uploaded appears when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
 
 A viewer is a collection of various settings or "presets." For example, the viewer display size, zoom behavior, color schemes, borders, and fonts, that determine how users view rich-media assets on their computer screens and mobile devices.
 
@@ -18,11 +18,11 @@ Besides using the dedicated Preview feature for video, spin sets, and image sets
 
 >[!NOTE]
 >
->When you are on a webpage (Sites) in Adobe Experience Manager, you cannot preview assets in **Edit** mode. Instead, go to **Preview** mode by clicking **Preview** in the upper right-hand corner of the page.
+>When you are on a webpage (Sites) in Adobe Experience Manager, you cannot preview assets in **[!UICONTROL Edit]** mode. Instead, go to Preview mode by clicking **[!UICONTROL Preview]** in the upper right-hand corner of the page.
 
 To enable or disable viewer presets in the user interface, see [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**To preview assets**
+**To preview assets:**
 
 1. From **[!UICONTROL Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
@@ -51,7 +51,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <ul>
       <li><p><strong>Turn your 3D camera</strong> - Orbit your view around the 3D scene and objects.</p> Mouse: Left click + Drag.</p> Touch-screen: Press + Drag.</p></li>
       <li><p><strong>Pan your camera</strong> - Pan your view left, right, up, and down.</p> Mouse: Right-click + Drag.</p> Touch-screen: Two-finger press + Drag.</p></li>
-      <li><p><strong>Zoom your camera</strong> - Zoom your camera to move in and out of areas in the 3D scene.</p> Mouse: Scroll wheel.</p> Touch-screen: Finger pinch.</p></li>
+      <li><p><strong>Zoom your camera</strong> - Zoom your camera if you want to move in and out of areas in the 3D scene.</p> Mouse: Scroll wheel.</p> Touch-screen: Finger pinch.</p></li>
       <li><p><strong>Recenter your camera</strong> - Orbit your view around the 3D scene and objects.</p> Mouse: Double-click.</p> Touch-screen: Double tap.</li></ul></td>
       </tr>
       <tr>

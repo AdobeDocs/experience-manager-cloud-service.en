@@ -1,6 +1,6 @@
 ---
-title: Share assets, folders, and collections as a link
-description: This article describes how to share assets, folders, and collections within [!DNL Experience Manager Assets] as a hyperlink.
+title: Distribute and share assets, folders, and collections
+description: Distribute your digital assets using methods like share as a link, downloading, and via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: Business Practitioner,Administrator
@@ -10,7 +10,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
-* Share as a link.
+* [Share as a link](#sharelink).
 * [Download assets](/help/assets/download-assets-from-aem.md) and share separately.
 * Share using [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Share using [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
@@ -20,10 +20,12 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 
 To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].
 
+![Link Sharing dialog](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* You need Edit ACL permission on the folder or the asset that you want to share as a link.
->* Before you share a link with users, ensure that [outbound email is enabled](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Otherwise, an error occurs.
+>* Before you share a link with users, [enable outbound emails](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Otherwise, an error occurs.
 
 1. In the [!DNL Assets] user interface, select the asset to share as a link.
 1. From the toolbar, click the **[!UICONTROL Share Link]**. An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.

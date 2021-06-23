@@ -32,10 +32,11 @@ There are two phases associated with content transfer:
   
 A *migration set* has the following attributes:
 
-* A maximum of four migration sets can be created and maintained at a time during the content transfer activity.
+* A maximum of ten migration sets can be created and maintained at a time during the content transfer activity. 
 * Each migration set should have a unique name. 
 * If a migration set has been inactive for more than 30 days, it will be automatically deleted.
 * Whenever you create a migration set, it is associated with a specific environment. You can only ingest into an author or a publish instance of the same environment.
+
 
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity. 
 
@@ -59,7 +60,7 @@ In the ingestion phase, to apply the delta content on top of the current content
 
 Follow the section below to understand guidelines and best practices to use the Content Transfer Tool:
 
-* It is advisable to run [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) on the **source** repository to identify potential problems and reduce the size of the repository.
+* It is advisable to run [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) on the **source** repository to identify potential problems and reduce the size of the repository.
 
 * If the AEM Cloud Author Content Delivery Network (CDN) config is configured to have a whitelist of IPs then it should be ensured that the source environment IPs are also added to the allowlist so that the source environment and AEM Cloud environment can communicate with each other.
 
@@ -74,3 +75,5 @@ Follow the section below to understand guidelines and best practices to use the 
      * *data store size*: the Content Transfer Tool uses 64 GB, even if the actual data store is larger.
      * *node store size*: segment store directory size or the MongoDB database size.
   Hence, for a segment store size of 20GB, the required free disk space would be 94GB.
+  
+* A migration set needs to be maintained throughout the content transfer activity to support content top-ups. Since a maximum of ten migration sets can be created and maintained at a time during the content transfer activity, it is recommended to break up the content repository accordingly to ensure that you do not run out of migration sets.

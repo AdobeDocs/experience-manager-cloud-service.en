@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed.
+You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -18,15 +18,16 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 You can download Experience Manager assets using the following methods:
 
-* [Experience Manager user interface](#download-in-aem)
-* Asset Link Share user interface
+<!-- * [Link Share](#link-share-download) -->
+
+* [Experience Manager user interface](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Download assets using [!DNL Experience Manager] interface {#download-in-aem}
+## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. The large files are downloaded asynchronously and users are informed of the completion via Experience Manager notifications in the Inbox. See [understanding Experience Manager inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+Asynchronous download service provides a framework for seamless download of large-sized assets. Smaller files are downloaded from the user interface in real-time. [!DNL Experience Manager] does not archive single asset downloads where the original file is downloaded. This functionality allows for faster downloads. The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Download notification](assets/download-notification.png)
 
@@ -46,7 +47,7 @@ To download assets, follow these steps:
 
    *Figure: Download dialog box options.*
 
-1. In the Download dialog box, select the download options you want.
+1. In the download dialog box, select the download options that you want.
 
    | Download option | Description |
    |---|---|
@@ -59,9 +60,21 @@ To download assets, follow these steps:
 
 1. In the dialog box, click **[!UICONTROL Download]**.
 
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
+## Download assets shared using link sharing {#link-share-download}
+
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+
+![Download inbox](assets/download-inbox.png)
+-->
+
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
-The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances.
+The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances. If you do not need the download feature on author instances, disable the servlet on author.
 
 To allow downloading assets from your DAM, say when using something like Asset Share Commons or other portal-like implementation, manually enable the servlet via an OSGi configuration. Adobe recommends setting the permissible download size as low as possible without affecting the day-to-day download requirements. A high value may impact performance.
 
@@ -79,7 +92,7 @@ To allow downloading assets from your DAM, say when using something like Asset S
 
 ## Disable asset download servlet {#disable-asset-download-servlet}
 
-The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
+If you do not need the download functionality, then disable the servlet to prevent any DoS-like risks. The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] author and publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
 
 1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 

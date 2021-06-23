@@ -37,7 +37,7 @@ To get you up and running quickly:
 
 1. [Upload your primary source images for multiple views](#uploading-assets-in-image-sets).
 
-   Upload the images for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest dimension. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+   Upload the images for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest size. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
 1. [Create Image Sets](#creating-image-sets).
 
@@ -78,7 +78,7 @@ If you have issues creating sets, see Images and Sets in [Troubleshooting Dynami
 
 ## Uploading assets for Image Sets {#uploading-assets-in-image-sets}
 
-Start by uploading the image assets for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
+Start by uploading the image assets for your Image Sets. Remember that users can zoom on images in the Image Set Viewer. As such, choose your images carefully. Make sure that the images are least 2000 pixels in the largest size for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000x5000 megapixel image or any other size combination up to 25 megapixels.
 
 Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
@@ -88,9 +88,9 @@ You can upload images for Image Sets as you would [upload any other asset in Ass
 
 Before creating Image Sets, make sure that the images are the right size and format.
 
-To create a multiple-view Image Set, you need images that show an item from different points of view or show different aspects of the same item. The goal is to highlight the important features of an item so viewers have a complete picture of what it looks like or does.
+To create a multiple-view Image Set, you need images that show an item from different points of view or show different aspects of the same item. The goal is to highlight the important features of an item so viewers have a complete picture of how it appears or what it does.
 
-Because users can zoom images in Image Sets, make sure that the images are at least 2000 pixels in the largest dimension. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+Because users can zoom images in Image Sets, make sure that the images are at least 2000 pixels in the largest size. Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 >
 >Image sets are not supported for assets with "," (comma) in the filename.
 
-**To create an Image Set**
+**To create an Image Set:**
 
 1. In Adobe Experience Manager, tap the Experience Manager logo to access the global navigation console.
 1. Tap **[!UICONTROL Navigation > Assets]**. Navigate to where you want to create an image set, then tap **[!UICONTROL Create > Image Set]** to open the Image Set Editor page.
@@ -201,7 +201,7 @@ You can perform various editing tasks on Image Sets such as the following:
 * Apply viewer presets.
 * Delete the Image Set.
 
-**To edit Image Sets**
+**To edit Image Sets:**
 
 1. Do any one of the following:
 

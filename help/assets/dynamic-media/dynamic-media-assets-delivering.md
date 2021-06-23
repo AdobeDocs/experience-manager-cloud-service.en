@@ -9,8 +9,8 @@ How you can deliver your Dynamic Media assets &ndash; both video and images &nda
 
 With Dynamic Media, you have several options:
 
-* If your website is hosted on AEM, then you want to add the Dynamic Media assets directly to your page.
-* If your website is not on AEM, then see [Delivering Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) in the touch-enabled user interface.
+* If your website is hosted on Adobe Experience Manager, then you want to add the Dynamic Media assets directly to your page.
+* If your website is not on Experience Manager, then see [Delivering Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) in the touch-enabled user interface.
 
 For more information, see the following topics:
 
