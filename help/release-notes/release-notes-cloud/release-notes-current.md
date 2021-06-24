@@ -106,6 +106,15 @@ The next release is planned for July 15, 2021.
 * When adding assets to Collections, if a user applies a filter on Collections search, the user cannot view the Collections in List view. (CQ-4323181)
 * When searching for files and folders, if user applies a filter and selects [!UICONTROL Files & Folders], only the files are displayed but not the folder. (CQ-4319543)
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in [!DNL Sites] {#ga-features-sites}
+
+* Publish to Preview Tier now shown as page status in Sites Admin UI
+* Publish to Preview Tier now surfacing preview URL at the end of the action and persisting the URL in page properties for later reference
+
+
+
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
