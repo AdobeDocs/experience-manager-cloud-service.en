@@ -150,9 +150,9 @@ In case you must configure a new custom domain to use Smart Imaging, the URLs mu
 
 To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
 
-<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+<!-- OLD No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
@@ -252,7 +252,7 @@ During the initial transition, the non-cached images directly hit Adobe's origin
 
 Yes. You can turn off Smart Imaging by adding the modifier `bfc=off` to the URL.
 
-Can I request DPR and network optimization to be turned off at the company level? {#dpr-companylevel-turnoff}
+## Can I request DPR and network optimization to be turned off at the company level? {#dpr-companylevel-turnoff}
 
 Yes. To disable DPR and network optimization at your company, create a support case as described earlier in this topic.
 
