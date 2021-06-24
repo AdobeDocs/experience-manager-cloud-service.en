@@ -169,7 +169,7 @@ To check whether the Smart Tags service is trained on your tags in the training 
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Tagging assets with Smart Tags {#tag-assets}
+## Tag assets with Smart Tags {#tag-assets}
 
 All types of supported assets are automatically tagged by [!DNL Experience Manager Assets] when uploaded. Tagging is enabled by default. [!DNL Experience Manager] applies the appropriate tags in near-real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
