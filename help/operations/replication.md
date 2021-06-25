@@ -75,7 +75,7 @@ Alternatively, you can also achieve this by creating a Workflow Model that uses 
 
 * `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
 * `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
-* `agentId` (string value, default means all enabled agents are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish
+* `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` will publish to the preview service
 * `filters` (string value, default means all paths are activated). Available values are:
   * `onlyActivated` - only paths which are not marked as activated will be activated.
   * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
@@ -104,6 +104,66 @@ Below you will find examples of logs that are generated during a sample publish 
 **Resume Support**
 
 The workflow processes content in chunks, each of which represents a subset of the full content to be published. If for any reason the workflow is stopped by the system, it will restart and process the chunk that was not yet processed. A log statement will state that content has been resumed from a specific path.
+
+### Replication API {#replication-api}
+
+You can publish content using the Replcation API featured in AEM as a Cloud Service.
+
+For more information, see the [API Documentation](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+
+**Basic Usage of the API**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**Replication with Specific Agents**
+
+When replicating resources as in the example above, only the agents which are active by default will be used. In AEM as a Cloud Service, this will only be the agent called "publish", which connects the author to the publish tier.
+
+To support the preview functionality, a new agent called "preview" has been added, which is not active by default. This agent is used to connect the author to the preview tier. If you want to replicate only via the preview agent, you need to explicitly select this preview agent via an `AgentFilter`.
+
+See the example below on how to do this:
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+In case you do not provide such a filter and only use the "publish" agent, the "preview" agent is not used and the replication action does not affect the preview tier.
+
+The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the above example this is not the case, as the replication is just using the "preview" agent. Therefore, you need to use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
 
 ## Troubleshooting {#troubleshooting}
 
