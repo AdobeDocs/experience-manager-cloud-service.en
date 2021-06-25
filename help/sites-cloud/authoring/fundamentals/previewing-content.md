@@ -49,7 +49,7 @@ Thr preview tier's OSGI property values are inherited from the publish tier, but
 
 For more information, see [this section](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) of the OSGi configuration documentation.
 
-## Debbugging Preview Using the Developer Console {#debugging-preview-using-the-developer-console}
+## Debugging Preview Using the Developer Console {#debugging-preview-using-the-developer-console}
 
 Follow these steps in order to debug the preview tier using the Developer Console:
 
