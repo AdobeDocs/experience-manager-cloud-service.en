@@ -1,8 +1,8 @@
 ---
 title: Previewing Content
 description: Learn how to use the AEM Preview Service to preview content before going live.
+exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 ---
-
 # Previewing Content {#previewing-content}
 
 >[!NOTE]
@@ -24,11 +24,14 @@ You can publish content to the Preview Service by using the Managed Publicaton U
 
 1. Click **Next**, and then **Publish** to confirm.
 
-The see the preview content, append **preview** to the publish URL of your production instance. The URL should be constructed like this:
+1. A dialog will display the URLs for accessing the content on the Preview environment.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   Or to see the preview content, you can also append **preview** to the publish URL of your production instance. 
 
-See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments. 
+   The URL should be constructed like this:
 
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
+
+See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments.

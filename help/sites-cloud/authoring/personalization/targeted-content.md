@@ -457,7 +457,7 @@ Use the advanced settings to determine what happens **after** a user encounters 
 |Increment Count, Release User and Allow Reentry|Select the experience the visitor sees if they reenter the activity: Same experience, Random experience, Unseen experience|
 |Increment Count, Release User and Bar Reentry|Determine what the user sees instead of the activity content: Same experience, without tracking, Default content or other activity content|
 
-See [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) for more information on success metrics.
+See [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) for more information on success metrics.
 
 ### Configuring Settings (AEM Targeting) {#configuring-settings-aem-targeting}
 
@@ -496,13 +496,13 @@ To configure goals and settings if using Adobe Target:
 
    ![Reporting source](../assets/targeted-reporting-source.png)
 
-1. In the **Goal Metric** area, under **My Primary Goal** select the success metric you want to track - Conversion, Revenue, Engagement - and enter how that metric gets measured (or what action the audience takes to indicate a goal has been reached). See definition of the goal metrics in the previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) on success metrics.
+1. In the **Goal Metric** area, under **My Primary Goal** select the success metric you want to track - Conversion, Revenue, Engagement - and enter how that metric gets measured (or what action the audience takes to indicate a goal has been reached). See definition of the goal metrics in the previous table and see [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) on success metrics.
 
    You can rename the goal by clicking the three dots in the upper right corner and selecting **Rename**.
 
    If you need to clear all the fields, click the three dots in the upper right corner and select **Clear all Fields**.
 
-   All metrics also have advanced settings you can define. Select **Advanced Settings** to access those. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
+   All metrics also have advanced settings you can define. Select **Advanced Settings** to access those. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >

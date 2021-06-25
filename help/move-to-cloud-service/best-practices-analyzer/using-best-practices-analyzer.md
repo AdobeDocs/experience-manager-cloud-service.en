@@ -15,7 +15,7 @@ exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
 
 Follow the section below to understand the important considerations for running the Best Practices Analyzer (BPA):
  
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). The version of Pattern Detector used by BPA is included in the BPA installation package.
+* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). The version of Pattern Detector used by BPA is included in the BPA installation package.
  
 * BPA may only be run by the **admin** user or a user in the **administrators** group.
  
@@ -241,8 +241,8 @@ The value of this property is the cache lifetime in seconds. An administrator ma
 
 BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. This account is available on AEM 6.2 and later. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
 
-1. Follow the instructions at [Creating a new service user](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) to create a user. Set the UserID to `repository-reader-service` and leave the Intermediate Path empty and then click the green checkmark.
+1. Follow the instructions at [Creating a new service user](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) to create a user. Set the UserID to `repository-reader-service` and leave the Intermediate Path empty and then click the green checkmark.
 
-2. Follow the instructions at [Managing Users and Groups](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), specifically the instructions for Adding Users to a Group to add the `repository-reader-service` user to the `administrators` group.
+2. Follow the instructions at [Managing Users and Groups](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), specifically the instructions for Adding Users to a Group to add the `repository-reader-service` user to the `administrators` group.
 
 3. Install the BPA package via Package Manager on your source AEM instance. (This will add the necessary configuration amendment to the ServiceUserMapper configuration for the `repository-reader-service` system service user.)

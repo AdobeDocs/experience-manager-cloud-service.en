@@ -86,6 +86,30 @@ The following release (2021.6.0) will be on June 24, 2021.
   >
   >* Asia-Pacific June 24, 2021.
 
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### What is new in [!DNL Forms] {#what-is-new-forms}
+
+* **Contextual help**: Added contextual help for adaptive forms editor, template editor, and theme editor to help authors better understand various features of editors.
+* **Error messages in Properties browser**: Added error messages for each property in the Adaptive Forms Properties browser. These messages help understand allowed values for a field.
+
+### Upcoming beta feature of [!DNL Forms] {#what-is-new-forms-prerelease}
+
+Output as a Cloud service: Output service helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and asynchronous batch mode. Output service enables you to create applications that let you:
+
+* Generate final form documents by populating template files with XML data.
+* Generate output forms in various formats, including non-interactive PDF print streams.
+* Generate print PDFs from XFA form PDFs.
+
+You can write to formscsbeta@adobe.com to sign up for the beta program.
+
+### Bugs fixed in [!DNL Forms] {#forms-bugs-fixed}
+
+* In an Assign Task step of AEM Forms Workflows, when you replace the default icon of the action buttons with a coral icon, the workflow stops working and logs an exception. The workflow performs as expected when default icons are used.
+* In the layout layer, when you change the number of columns, open the edit layer, and drag some components in a panel, square blue boxes start appearing in the content area of the adaptive forms editor and the editor becomes unresponsive.
+* Error message of a rule editor option related to providing URL of an adaptive or an external asset is too long and is not user friendly.
+
+
 ## Cloud Manager {#cloud-manager}
 
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.5.0.
@@ -130,6 +154,22 @@ The next release is planned for June 03, 2021.
 * During Sandbox program setup, once the project with sample code has been successfully created, Manage Git will appear as a link from the hero card in the Overview page. 
 
 ## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt-latest}
+
+The Release Date for Content Transfer Tool v1.4.6 is May 27, 2021.
+
+### What's New {#what-is-new-ctt-latest}
+
+* New logging statement was added to the quickstart's error log, if the user doesn't have execute permission on the Java executable.
+
+* When a user deletes a migration set from the CTT UI, where an extraction was performed, the `tmp` folder associated with that migration set will be deleted to save space.
+
+### Bug Fixes {#bug-fixes-ctt-latest}
+
+* When deleting a migration set, occasionally an unhelpful error message would appear in the CTT UI. This has been fixed.
+
+* While running User Mapping, if users had the same email address on the target and the host but different user names, the entire ingestion would fail. This has been fixed. In such a conflicting scenario, the user/group is skipped and is logged as a conflict in the log file. 
 
 ### Release Date {#release-date-ctt}
 

@@ -1,8 +1,8 @@
 ---
 title: Deprecated APIs
 description: Release notes specific to deprecated and removed APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 ---
-
 # Deprecated APIs {#deprecated-apis}
 
 Below is an extensive list of deprecated AEM APIs and their expected removal date. Customers are expected to remove the APIs by the target removal date from their code. Any usage of the API past the removal date will generate errors in the local SDK/Development Environment and the Cloud Manager build process.
@@ -40,7 +40,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.sling.settings</td>
     <td>AEM as a Cloud Service does not support run modes or file system access at runtime. </td>
     <td>10/5/20</td>
-    <td>6/1/21</td>
+    <td>End of 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
