@@ -63,27 +63,7 @@ Have a look at the [May 2021 Release Overview](https://video.tv.adobe.com/v/3336
 
 * Smart Imaging Device Pixel Ratio (DPR) and network bandwidth optimization let you deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. See [smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >The release timeline for the above Smart Imaging enhancements is:
-   >
-   >* North America May 24, 2021 in NA,
-   >
-   >* Europe, the Middle East and Africa June 25, 2021,
-   >
-   >* Asia-Pacific July 19, 2021.
-
-* Introduced support for next-gen image format AVIF in [!DNL Dynamic Media] delivery (fmt URL modifier).
-
-  >[!NOTE]
-  >
-  >The release timeline for AVIF support is:
-  >
-  >* North America May 10, 2021,
-  >
-  >* Europe, the Middle East and Africa May 24, 2021,
-  >
-  >* Asia-Pacific June 24, 2021.
+* Introduced support for the next-generation image format AVIF in [!DNL Dynamic Media] delivery (`fmt` URL modifier). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
