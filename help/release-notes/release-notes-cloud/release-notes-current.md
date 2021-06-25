@@ -24,7 +24,7 @@ The following release (2021.7.0) will be on July 29, 2021.
 
 ## Release Video {#release-video}
 
-Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/333602) video for a summary of the features added.
+Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334296) video for a summary of the features added.
 
 ## XML Documentation for AEM as a cloud Service {#xml-documentation}
  
