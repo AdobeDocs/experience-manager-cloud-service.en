@@ -151,6 +151,8 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Top Up Extraction"
 
 Follow the steps below to extract your migration set from the Content Transfer Tool:
+   >[!NOTE]
+   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. To do so you will need to configure an azcopy.config file before running extraction. Refer to [Handling large content repositories] for more details. 
 
 1. Select a migration set from *Overview* page and click **Extract** to start extraction. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
@@ -199,8 +201,13 @@ Once the extraction process is complete, you can transfer delta content, by usin
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Top Up Ingestion"
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
+   >[!NOTE]
+   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy] for more details. 
 
-1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. It is possible to ingest content to Author and Publish at the same time.
+1. Select a migration set from *Overview* page and click **Ingest** to start ingestion. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. It is possible to ingest content to Author and Publish at the same time.
+
+   >[!IMPORTANT]
+   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
 
    >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
