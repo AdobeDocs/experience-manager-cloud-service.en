@@ -5,7 +5,7 @@ breadcrumb-title: AEM Screens as a Cloud Service
 user-guide-description: Understand the AEM Screens as a Cloud Service.
 ---
 
-# Moving to AEM as a Cloud Service Guide {#moving}
+# AEM Screens as a Cloud Service {#screens-as-cloud-service}
 
 + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
 + Overview to Screens as a Cloud Service {#overview}
@@ -18,14 +18,14 @@ user-guide-description: Understand the AEM Screens as a Cloud Service.
     + [Adding Screens Program as an Add-On to an Existing Program](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)
   + [Creating a Branch](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
   + [Creating an Environment](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
-  + [Running the Pipeline](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
+  + [Running the Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
   + Configuring Screens as a Cloud Service Project {#configure-screens-cloud}
     + [Navigating to Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
     + [Navigating to Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
 + Creating Content {#create-content}
   + [Creating and Managing a Project in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
   + [Creating and Managing a Channel in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
-  + [Managing Publication](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
+  + [Managing Publication](/help/screens-cloud/creating-content/manage-publish.md)
   + [Creating and Managing a Display in Screens Services Provider](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
   + [Assigning Channel to a Display](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
   + Managing Player and Registration {#manage-player-registration}
