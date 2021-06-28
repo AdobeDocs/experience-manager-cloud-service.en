@@ -9,7 +9,7 @@ user-guide-description: Understand the AEM Screens as a Cloud Service.
 
 + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
 + Overview to Screens as a Cloud Service {#overview}
-  + [Introduction](/help/screens-cloud/introduction)
+  + [Introduction](/help/screens-cloud/introduction/introduction.md)
   + [Understanding Role Definitions](/help/screens-cloud/introduction/personas-screens-cloud.md)
 + Onboarding to Screens as a Cloud Service {#onboarding-screens-cloud}
   + [First Time Login](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
