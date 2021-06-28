@@ -23,6 +23,7 @@ role: Architect, Developer
     + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
     + [Using User Mapping Tool](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
     + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+    + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
 + Code Refactoring Tools {#refactoring-tools}
   + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
   + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
