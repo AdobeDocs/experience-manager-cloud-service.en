@@ -37,13 +37,13 @@ Follow this section to learn how to set up to use AzCopy as a pre-copy step with
 
 From the container properties page in the Azure portal, use the "Calculate size" button to determine the size of all content in the container. For example:
 
-![image](help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![image](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3 Data Store
 You can use the container's Metrics tab to determine the size of all content in the container. For example:
 
 
-![image](help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![image](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 ### 1. Install AzCopy {#install-azcopy}
 
