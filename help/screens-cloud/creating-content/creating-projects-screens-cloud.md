@@ -18,7 +18,7 @@ Follow the steps below to create a new project in Screens as a Cloud Service:
 1. Navigate to Screens Content Provider.
 
    >[!NOTE]
-   >Refer to [Using Screens Content Provider](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) to learn how to access Screens Content Provider for creating your project.
+   >Refer to [Using Screens Content Provider] to learn how to access Screens Content Provider for creating your project.
 
 1. Click on **Create Screens Project** from the top right corner of the action bar.
 
@@ -55,4 +55,4 @@ Follow the steps below to delete an existing project from Screens Content Provid
 
 ## What's Next {#whats-next}
 
-Now, that you have setup an AEM Screens project, you can create a new channel and add content to the channels. Refer to [Creating and Managing Channels](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md) to learn how to create and manage content in Channels.
+Now, that you have setup an AEM Screens project, you can create a new channel and add content to the channels. Refer to [Creating and Managing Channels] to learn how to create and manage content in Channels.
