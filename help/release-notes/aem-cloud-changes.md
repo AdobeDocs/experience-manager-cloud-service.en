@@ -107,4 +107,4 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 ## Asset Handling and Delivery {#asset-handling}
 
-Asset upload, processing, and download is optimized in Experience Manager Assets as a Cloud Service. It is now more efficient, enables more scaling and faster uploads and downloads. Also, it impacts the existing custom code and some operations. See the [changes to [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Asset upload, processing, and download is optimized in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] is now more efficient, enables more scaling, and lets you upload and download at much faster rate. Also, it impacts the existing custom code and some operations. For a list of changes and for parity with [!DNL Experience Manager] 6.5 features, see the [changes to [!DNL Assets]](/help/assets/assets-cloud-changes.md).

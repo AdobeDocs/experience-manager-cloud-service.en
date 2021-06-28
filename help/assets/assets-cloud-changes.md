@@ -54,6 +54,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 | Home page | Not supported. | See [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extract assets from ZIP archive | Not supported. | See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Assets ratings | Not supported. | The rating widget in the metadata schema editor is not supported. |
+| Content distribution filter | Not supported. | A popular use case of `ContentDispositionFilter` is to let administrators configure [!DNL Experience Manager] to serve HTML files and to open PDF files inline instead of downloading those. On the Publish instances, you can manage the disposition using Dispatcher configuration. On the Author instances, Adobe does not recommend modification to the Content Disposition header. See [Content Disposition filter in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | Classic UI | Not supported. | Only Touch-enabled user interface is available. |
 
 >[!MORELIKETHIS]
