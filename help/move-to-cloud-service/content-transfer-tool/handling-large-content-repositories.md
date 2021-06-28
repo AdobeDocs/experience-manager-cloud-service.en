@@ -32,13 +32,13 @@ Follow this section to learn how to set up to use AzCopy as a pre-copy step with
 
 ### 0. Determine total size of all content in the data store {#determine-total-size}
 
-#### Azure Blob Storage Data Store
+#### Azure Blob Storage Data Store {#azure-blob-storage}
 
 From the container properties page in the Azure portal, use the **Calculate size** button to determine the size of all content in the container. For example:
 
 ![image](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Amazon S3 Data Store
+#### Amazon S3 Data Store {#amazon-data}
 
 You can use the container's Metrics tab to determine the size of all content in the container. For example:
 
@@ -61,7 +61,7 @@ On the source AEM instance, in crx-quickstart/cloud-migration , create a new fil
 
 The contents of this config file will be different depending on whether your source AEM instance uses an Azure or Amazon S3 data store.
 
-#### Azure Blob Storage Data Store
+#### Azure Blob Storage Data Store {#azure-blob-storage-data}
 
 Your azcopy.config file should include the following properties (make sure to use the correct azCopyPath and azureSas for your instance).
 
@@ -74,7 +74,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 Data Store
+#### Amazon S3 Data Store {#amazon-data-store}
 
 Your azcopy.config file should include the following properties (make sure to use the correct values for your instance).
 
