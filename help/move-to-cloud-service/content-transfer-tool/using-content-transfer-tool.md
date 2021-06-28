@@ -31,11 +31,11 @@ Follow the section below to understand the important considerations while runnin
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
-* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, you will need to log a support ticket to notify Adobe of your intention to run *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. You will need to log the support ticket 1 week prior to your planned *Ingestion* date. Once, you've submitted the support ticket, the support team will provide guidance on next steps.
-  * Log a support ticket with the following details:
-      * Exact date and estimated time (with your time-zone) when you plan to start the *Ingestion* phase. 
-      * Environment type (Stage or Production) that you plan to ingest data into.
-      * Program ID.
+* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, you will need to log a support ticket to notify Adobe of your intention to run *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. You will need to log the support ticket 1 week prior to your planned *Ingestion* date. Once, you've submitted the support ticket, the support team will provide guidance on next steps. You can log a support ticket with the following details:
+
+   * Exact date and estimated time (with your time-zone) when you plan to start the *Ingestion* phase. 
+   * Environment type (Stage or Production) that you plan to ingest data into.
+   * Program ID.
 
 * The *Ingestion Phase* for the author scales down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process. Please also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
 
@@ -152,7 +152,7 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 
 Follow the steps below to extract your migration set from the Content Transfer Tool:
    >[!NOTE]
-   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. To do so you will need to configure an azcopy.config file before running extraction. Refer to [Handling large content repositories] for more details. 
+   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling large content repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
 
 1. Select a migration set from *Overview* page and click **Extract** to start extraction. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
