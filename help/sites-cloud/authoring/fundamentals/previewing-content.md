@@ -30,7 +30,9 @@ The see the preview content, append **preview** to the publish URL of your produ
 https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 ```
 
-See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments. 
+See [Manage your Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) for more information on how to get the URLs for your environments.
+
+Content may also be published to preview by using a [Publish Content Tree Workflow](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow) with the agentId parameter set to preview or by using the [replication API](/help/operations/replication.md#replication-api) with an AgentFilter configured for preview.
 
 ## Configuring OSGi Settings for the Preview Tier {#configuring-osgi-settings-for-the-preview-tier}
 
