@@ -150,4 +150,24 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * Improved SEO-friendly URLs for category pages
 * Support for custom HTTP headers per site/config
 
+## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt-latest}
+
+The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
+
+### What's New {#what-is-new-ctt-latest}
+
+* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
+
+* Guardrail added to CTT to prevent users from stopping an ingestion and potentially corrupting data once it has reached the critical point during the ingestion phase.
+
+* Extraction logs made more descriptive to help with troubleshooting.
+
+* Added more descriptive ingestion status messages in the UI.
+
+### Bug Fixes {#bug-fixes-ctt-latest}
+
+* While stopping an ingestion on the Author instance, the UI overwrote a previously finished ingestion on the Publish instance to `STOPPED` from `FINISHED`. This has been fixed. 
+
 
