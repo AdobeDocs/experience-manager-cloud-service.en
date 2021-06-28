@@ -1,9 +1,6 @@
 ---
 title: AEM Screens as a Cloud Service
 description: This page serves as an introduction to AEM Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Introduction to AEM Screens as a Cloud Service {#introduction-screens-cloud}
