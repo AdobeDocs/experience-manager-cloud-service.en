@@ -12,8 +12,8 @@ This page lists the self-help resources regarding AEM Screens as a Cloud Service
 
 ## Key Content and AEM Screens as a Cloud Service Articles {#key-articles}
 
-* [Introduction to AEM Screens as a Cloud Service](/help/screens-cloud/introduction/introduction.md)
-* [Onboarding to AEM Screens as a Cloud Service](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
+* Introduction to AEM Screens as a Cloud Service
+* Onboarding to AEM Screens as a Cloud Service
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
