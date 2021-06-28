@@ -5,7 +5,7 @@ description: Handling Large Content Repositories
 
 # Handling Large Content Repositories {#handling-large-content-repositories}
 
-## Overview {#overview)
+## Overview {#overview}
 
 Copying a large number of blobs with the Content Transfer Tool (CTT) may take multiple days. 
 To significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, CTT can leverage [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) as an optional pre-copy step. This pre-copy step can be used when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.  Once this pre-step is configured, in the extraction phase, AzCopy copies blobs from Amazon S3 or Azure Data Store to the migration set blob store. In the ingestion phase, AzCopy copies blobs from the migration set blob store to the destination Cloud AEM blob store. 
@@ -88,7 +88,7 @@ s3Bucket=aem-63
 s3Region=us-west-2
 s3AccessKey=--REDACTED--
 s3SecretKey=--REDACTED--
-````
+```
 
 ### 4. Extracting with AzCopy {#extracting-azcopy}
 
