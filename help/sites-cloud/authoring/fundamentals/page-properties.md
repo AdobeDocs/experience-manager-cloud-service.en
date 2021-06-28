@@ -209,6 +209,12 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
   * **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page
   * **Choose Rollout Config** - Defines the circumstances under which modifications will be propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
 
+### Preview {#preview}
+
+When a Preview environment is enabled you will see:
+
+* Preview URL - the URL used for accessing the content on the Preview environment
+
 ## Editing Page Properties {#editing-page-properties-1}
 
 * From the **Sites** console:
