@@ -31,34 +31,38 @@ Follow the section below to understand the important considerations before start
 
 Follow this section to learn how to set up to use AzCopy as a pre-copy step with Content Transfer Tool to migrate the content to AEM as a Cloud Service:
 
-### 0. Determine total size of all content in the data store
+### 0. Determine total size of all content in the data store {#determine-total-size}
 
-#### Azure Blob Storage data store
+#### Azure Blob Storage Data Store
 
 From the container properties page in the Azure portal, use the "Calculate size" button to determine the size of all content in the container. For example:
 
+![image](help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-
-#### Amazon S3 data store
+#### Amazon S3 Data Store
 You can use the container's Metrics tab to determine the size of all content in the container. For example:
 
 
-### 1. Install AzCopy
-AzCopy is a command-line tool provided by Microsoft that needs to be available on the source instance to enable this feature.
+![image](help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
 
-In short, you will most likely want to download the Linux x86-64 binary from the AzCopy docs page and un-tar it to a location such as /usr/bin. Make note of where you placed the binary, as you will need the full path to it in a later step.
+### 1. Install AzCopy {#install-azcopy}
 
-### 2. Install a Content Transfer Tool (CTT) release with AzCopy support
+[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) is a command-line tool provided by Microsoft that needs to be available on the source instance to enable this feature.
 
-AzCopy support is included in the CTT 1.5.4 release. You can download the latest release of CTT from the Software Distribution portal.
+In short, you will most likely want to download the Linux x86-64 binary from the [AzCopy docs page](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) and un-tar it to a location such as /usr/bin. Make note of where you placed the binary, as you will need the full path to it in a later step.
 
-### 3. Configure an azcopy.config file
+### 2. Install a Content Transfer Tool (CTT) release with AzCopy support {#install-ctt-azcopy-support}
+
+AzCopy support is included in the CTT 1.5.4 release. You can download the latest release of CTT from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+
+### 3. Configure an azcopy.config file {#configure-azcopy-config-file}
 
 On the source AEM instance, in crx-quickstart/cloud-migration , create a new file called azcopy.config .
 
 The contents of this config file will be different depending on whether your source AEM instance uses an Azure or Amazon S3 data store.
 
-#### Azure Blob Storage data store
+#### Azure Blob Storage Data Store
+
 Your azcopy.config file should include the following properties (make sure to use the correct azCopyPath and azureSas for your instance).
 
 >[!NOTE]
@@ -86,12 +90,13 @@ s3AccessKey=--REDACTED--
 s3SecretKey=--REDACTED--
 ````
 
-### 4. Extracting with AzCopy
+### 4. Extracting with AzCopy {#extracting-azcopy}
 
 With the above configuration file in place, the AzCopy pre-copy phase will run as part of every subsequent extraction. To prevent it from running, you can rename this file or remove it.
 
-1. Begin an extraction from the CTT UI. Refer to Running the Content Transfer Tool and the Extraction Process for more details.
+1. Begin an extraction from the CTT UI. Refer to [Running the Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool) and the [Extraction Process](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) for more details.
 1. Confirm the following line is printed in the extraction log:
+
 ```
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
@@ -104,18 +109,21 @@ The log entries from AzCopy will appear in the extraction log, and will be prefi
 >
 > For the first few minutes of an extraction, watch the extraction logs closely for any sign of an issue. As an example, here is what would be logged if the source Azure container could not be found:
 >
-> [AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
-> [AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
-> [AzCopy pre-copy] Description=The specified container does not exist.
-> [AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000
-> [AzCopy pre-copy] Time:2021-05-26T18:18:07.5931967Z, Details: 
-> [AzCopy pre-copy] Code: ContainerNotFound
+
+```
+[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
+[AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
+[AzCopy pre-copy] Description=The specified container does not exist.
+[AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000
+[AzCopy pre-copy] Time:2021-05-26T18:18:07.5931967Z, Details: 
+[AzCopy pre-copy] Code: ContainerNotFound
+```
 
 In the event of an issue with AzCopy, the extraction will fail immediately, and the extraction logs will contain detail on the failure.
 
 Any blobs which were copied prior to the error will be skipped automatically by AzCopy on subsequent runs, and will not need to be copied again.
 
-### 5. Ingesting with AzCopy
+### 5. Ingesting with AzCopy {#ingesting-azcopy}
 
 With the release of Content Transfer Tool 1.5.4, we added AzCopy support to Author ingestion. 
 
@@ -125,7 +133,7 @@ With the release of Content Transfer Tool 1.5.4, we added AzCopy support to Auth
 
 To take advantage of AzCopy during ingestion, we require that you be on a AEM as a Cloud Service version that is at least version 2021.6.5561.
 
-Begin the author ingestion from the CTT UI. Refer to the Ingestion Process for more details.
+Begin the author ingestion from the CTT UI. Refer to the [Ingestion Process](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) for more details.
 The log entries from AzCopy will appear in the ingestion log. They will look like this:
 
 ```
