@@ -202,7 +202,7 @@ Once the extraction process is complete, you can transfer delta content, by usin
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
    >[!NOTE]
-   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy] for more details. 
+   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) for more details. 
 
 1. Select a migration set from *Overview* page and click **Ingest** to start ingestion. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. It is possible to ingest content to Author and Publish at the same time.
 
