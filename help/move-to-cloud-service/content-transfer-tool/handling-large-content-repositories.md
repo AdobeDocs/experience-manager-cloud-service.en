@@ -61,7 +61,7 @@ On the source AEM instance, in crx-quickstart/cloud-migration , create a new fil
 
 The contents of this config file will be different depending on whether your source AEM instance uses an Azure or Amazon S3 data store.
 
-#### Azure Blob Storage Data Store {#azure-blob-storage}
+#### Azure Blob Storage Data Store {#azure-blob-storage-data}
 
 Your azcopy.config file should include the following properties (make sure to use the correct azCopyPath and azureSas for your instance).
 
