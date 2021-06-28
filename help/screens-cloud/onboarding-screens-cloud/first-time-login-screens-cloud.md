@@ -1,9 +1,6 @@
 ---
 title: First Time Login to Screens as a Cloud Service
 description: This page describes the first steps in getting started with Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # First Time Login to Screens as a Cloud Service {#first-time-login-screens-cloud}
