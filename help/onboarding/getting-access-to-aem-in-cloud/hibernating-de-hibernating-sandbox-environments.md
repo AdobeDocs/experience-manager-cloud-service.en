@@ -16,7 +16,7 @@ Hibernation can occur either automatically or manually. It may take up to a few 
 
 Hibernation is categorized as:
 
-* **Automatic**  Sandbox Program environments are automatically hibernated after eight hours of inactivity, meaning that neither the author nor publish services receive requests.
+* **Automatic**  Sandbox Program environments are automatically hibernated after eight hours of inactivity, meaning that neither the author nor preview or publish services receive requests.
 
 * **Manual**: As a user you may manually hibernate a Sandbox Program environment, although there is no requirement to do so since hibernation will occur automatically after a certain period (eight hours) of inactivity.
 
@@ -68,7 +68,7 @@ Refer to [Accessing Developer Console](/help/implementing/cloud-manager/manage-e
    >Linking to the **Developer Console** directly from Cloud Manager will not give you the option to de-hibernate a Sandbox Program environment. The workaround is once at the Developer Console, add the following pattern to the end of the url `#release-cm-p1234-e5678 where 1234` 1234 is your *Program ID* and 5678 is your *Environment ID*.
 
    >[!NOTE]
-   >Alternatively, you can navigate to the **Developer Console** to de-hibernate by trying to access the author or publish service of an already hibernated environment; in that case, a landing page will appear with a link to the Developer Console. See the Accessing a Hibernated Environment section below.
+   >Alternatively, you can navigate to the **Developer Console** to de-hibernate by trying to access the author, preview or publish service of an already hibernated environment; in that case, a landing page will appear with a link to the Developer Console. See the Accessing a Hibernated Environment section below.
 
    >[!IMPORTANT]
    >Access to the Developer Console is defined by the **Cloud Manager - Developer Role** in the **Admin Console**. A user with a developer role permission can de-hibernate a Sandbox Program environment.
@@ -102,7 +102,7 @@ Any user with a product profile giving them access to AEM as a Cloud Service sho
 
 ## Accessing a Hibernated Environment {#accessing-hibernated-environment}
 
-When making any browser requests against either the author or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as shown in the figure below:
+When making any browser requests against either the author, preview or publish tier of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment, as shown in the figure below:
 
 ![](assets/de-hibernation-img5.png)
 
