@@ -53,7 +53,8 @@ To do an end-to-end validation of the code and process including asset ingestion
 | Subasset generation for compound assets | Not supported. | Dependent use cases are not fulfilled. For example, annotation of multi-page PDF files is impacted. See [subasset creation in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Home page | Not supported. | See [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extract assets from ZIP archive | Not supported. | See [ZIP extraction in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
-| Classic UI | Not supported. | Only Touch-enabled UI is available. |
+| Assets ratings | Not supported. | The rating widget in the metadata schema editor is not supported. |
+| Classic UI | Not supported. | Only Touch-enabled user interface is available. |
 
 >[!MORELIKETHIS]
 >
