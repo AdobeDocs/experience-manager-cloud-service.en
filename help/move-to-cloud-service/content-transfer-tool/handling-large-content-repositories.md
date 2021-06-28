@@ -20,12 +20,12 @@ Follow the section below to understand the important considerations before start
 
 * Source AEM version needs to be 6.3 - 6.5
 * Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, refer [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
-* The entire data store will be copied during the extraction. Since, there is a cost associated with transferring data out of both Amazon S3 and Azure Blob Storage, the transfer cost will be relative to the total amount of data in the storage container (whether referenced in AEM, or not). Refer to Amazon S3 and Azure Blob Storage for more details. 
+* The entire data store will be copied during the extraction. Since, there is a cost associated with transferring data out of both Amazon S3 and Azure Blob Storage, the transfer cost will be relative to the total amount of data in the storage container (whether referenced in AEM, or not). Refer to [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details. 
 * Each migration set will copy the entire data store, so only a single migration set should be used.
-* You will need access to install AzCopy on the instance (or VM) running the source AEM instance
-* You will need either an access key & secret key pair for the source Amazon S3 bucket, or a SAS URI for the source Azure Blob Storage container (read only access is fine)
-* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer here
-* The majority of the data on the source instance will be included in the migration
+* You will need access to install [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) on the instance (or VM) running the source AEM instance.
+* You will need either an access key & secret key pair for the source Amazon S3 bucket, or a SAS URI for the source Azure Blob Storage container (read only access is fine).
+* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
+* The majority of the data on the source instance will be included in the migration.
 
 ## Setting up to Use AzCopy as a Pre-Copy Step {#setting-up-pre-copy-step}
 
