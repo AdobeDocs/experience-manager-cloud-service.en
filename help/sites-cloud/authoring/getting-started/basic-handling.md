@@ -64,7 +64,7 @@ From Navigation the consoles available are:
 |Projects|The Projects console gives you direct access to your projects. [Projects are virtual dashboards](/help/sites-cloud/authoring/projects/overview.md) that can be used to build a team. You can then give that team access to resources, workflows, and tasks, thus allowing people to work towards a common goal.|
 |Sites|The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. Through this console you can create, edit, copy, move, and delete pages, start workflows, and publish pages.|
 |Experience Fragments|An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
-|Assets|The Assets console lets you import and manage digital assets such as images, videos, documents, and audio files. These assets can then be used by any site running on the same AEM instance.<!--add some kind of assets link-->|
+|Assets|The Assets console lets you import and manage [digital assets such as images, videos, documents, and audio files](/help/assets/overview.md). These assets can then be used by any site running on the same AEM instance. You can also create and manage [Content Fragments](/help/assets/content-fragments/content-fragments.md) from the Assets console.|
 |Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md)|
 
 ## Tools Panel {#tools-panel}
@@ -309,7 +309,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * Template the page is based on
   * Modification details
   * Page language
-  * Publication details
+  * Publication, and Preview details
 
 ### Card View {#card-view}
 
@@ -354,6 +354,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
   * **Modified** - Last modified date and last modified by user
   * **Published** - Publication status
+  * **Preview** - Preview status
   * **Template** - Template on which the page is based
   * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
   * **Page analytics**

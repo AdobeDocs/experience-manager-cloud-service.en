@@ -266,17 +266,6 @@ Similar to the way you add a Property predicate or an Options predicate, you can
     </ul> </td>
   </tr>
   <tr>
-   <td>Rating</td>
-   <td>Search predicate to search assets based on their average rating </td>
-   <td>
-    <ul>
-     <li>Label</li>
-     <li>Property name</li>
-     <li>Option path</li>
-     <li>Description</li>
-    </ul> </td>
-  </tr>
-  <tr>
    <td>Expiry Status</td>
    <td>Search predicate to search for assets based on their expiration status </td>
    <td>
