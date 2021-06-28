@@ -32,7 +32,7 @@ Follow this section to learn how to set up to use AzCopy as a pre-copy step with
 
 ### 0. Determine total size of all content in the data store {#determine-total-size}
 
-#### Azure Blob Storage Data Store {azure-blob-storage}
+#### Azure Blob Storage Data Store {#azure-blob-storage}
 
 From the container properties page in the Azure portal, use the **Calculate size** button to determine the size of all content in the container. For example:
 
