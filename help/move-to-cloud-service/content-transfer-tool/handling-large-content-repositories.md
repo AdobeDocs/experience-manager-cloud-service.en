@@ -128,7 +128,6 @@ Any blobs which were copied prior to the error will be skipped automatically by 
 With the release of Content Transfer Tool 1.5.4, we added AzCopy support to Author ingestion. 
 
 >[!NOTE]
->
 > The recommendation is to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
 
 To take advantage of AzCopy during ingestion, we require that you be on a AEM as a Cloud Service version that is at least version 2021.6.5561.
