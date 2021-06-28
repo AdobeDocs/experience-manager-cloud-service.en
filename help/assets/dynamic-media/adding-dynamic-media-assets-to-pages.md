@@ -164,9 +164,9 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
   ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
@@ -243,9 +243,9 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
   ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+    See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+    Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 
