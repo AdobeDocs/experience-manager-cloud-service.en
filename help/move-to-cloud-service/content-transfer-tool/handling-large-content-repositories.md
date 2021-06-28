@@ -8,7 +8,7 @@ description: Handling Large Content Repositories
 ## Overview {#overview}
 
 Copying a large number of blobs with the Content Transfer Tool (CTT) may take multiple days. 
-To significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, CTT can leverage [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) as an optional pre-copy step. This pre-copy step can be used when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.  Once this pre-step is configured, in the extraction phase, AzCopy copies blobs from Amazon S3 or Azure Data Store to the migration set blob store. In the ingestion phase, AzCopy copies blobs from the migration set blob store to the destination Cloud AEM blob store. 
+To significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, CTT can leverage [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) as an optional pre-copy step. This pre-copy step can be used when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.  Once this pre-step is configured, in the extraction phase, AzCopy copies blobs from Amazon S3 or Azure Blob Storage to the migration set blob store. In the ingestion phase, AzCopy copies blobs from the migration set blob store to the destination AEM as a Cloud Service blob store. 
 
 >[!NOTE]
 >
@@ -20,11 +20,11 @@ Follow the section below to understand the important considerations before start
 
 * Source AEM version needs to be 6.3 - 6.5
 * Source AEM's data store is configured to use Amazon S3 or Azure Blob Storage. For more details, refer [Configuring node stores and data stores in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
-* The entire data store will be copied during the extraction. Since, there is a cost associated with transferring data out of both Amazon S3 and Azure Blob Storage, the transfer cost will be relative to the total amount of data in the storage container (whether referenced in AEM, or not). Refer to [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details. 
+* The entire data store will be copied during the extraction. Since there is a cost associated with transferring data out of both Amazon S3 and Azure Blob Storage, the transfer cost will be relative to the total amount of data in the storage container (whether referenced in AEM, or not). Refer to [Amazon S3](https://aws.amazon.com/s3/pricing/) and [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) for more details. 
 * Each migration set will copy the entire data store, so only a single migration set should be used.
 * You will need access to install [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) on the instance (or VM) running the source AEM instance.
 * You will need either an access key & secret key pair for the source Amazon S3 bucket, or a SAS URI for the source Azure Blob Storage container (read only access is fine).
-* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
+* Data Store Garbage Collection has been run within the previous 7 days on the source. For more details, refer to [Data store garbage collection](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
 * The majority of the data on the source instance will be included in the migration.
 
 ## Setting up to Use AzCopy as a Pre-Copy Step {#setting-up-pre-copy-step}
