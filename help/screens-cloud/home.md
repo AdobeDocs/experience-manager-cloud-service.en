@@ -8,7 +8,7 @@ This page lists the self-help resources regarding AEM Screens as a Cloud Service
 
 >[!NOTE]
 >For AEM Screens with AEM 6.5, see [AEM Screens User Guide](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
->
+
 
 ## Key Content and AEM Screens as a Cloud Service Articles {#key-articles}
 
