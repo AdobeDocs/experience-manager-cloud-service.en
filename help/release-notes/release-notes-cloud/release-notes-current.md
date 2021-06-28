@@ -64,7 +64,7 @@ Have a look at the [May 2021 Release Overview](https://video.tv.adobe.com/v/3336
 
 * Smart Imaging Device Pixel Ratio (DPR) and network bandwidth optimization let you deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. See [smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md).
 
-* Introduced support for the next-generation image format AVIF in [!DNL Dynamic Media] delivery (`fmt` URL modifier). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+* Introduced support for the next-generation image format AVIF in [!DNL Dynamic Media] delivery (`fmt` URL modifier). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
