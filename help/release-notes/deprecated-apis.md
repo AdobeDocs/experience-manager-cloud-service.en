@@ -1,8 +1,8 @@
 ---
 title: Deprecated APIs
 description: Release notes specific to deprecated and removed APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 ---
-
 # Deprecated APIs {#deprecated-apis}
 
 Below is an extensive list of deprecated AEM APIs and their expected removal date. Customers are expected to remove the APIs by the target removal date from their code. Any usage of the API past the removal date will generate errors in the local SDK/Development Environment and the Cloud Manager build process.
