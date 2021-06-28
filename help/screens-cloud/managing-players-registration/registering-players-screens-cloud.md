@@ -1,9 +1,6 @@
 ---
 title: Registering Players in Screens as a Cloud Service
 description: This page describes how to register players in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Registering Players in Screens as a Cloud Service {#registering-players-screens-cloud}
