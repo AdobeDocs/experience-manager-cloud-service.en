@@ -1,9 +1,6 @@
 ---
 title: Creating a Project in Screens as a Cloud Service
 description: This page describes how to create a project in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Creating and Managing a Project in Screens as a Cloud Service {#creating-project-screens-cloud}

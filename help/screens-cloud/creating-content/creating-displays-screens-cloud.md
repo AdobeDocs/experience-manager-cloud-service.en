@@ -1,9 +1,6 @@
 ---
 title: Creating and Managing Displays in Screens as a Cloud Service
 description: This page describes how to create and manage displays in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Creating and Managing Displays in Screens as a Cloud Service {#create-displays-screens-cloud}

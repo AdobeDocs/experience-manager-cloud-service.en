@@ -1,9 +1,6 @@
 ---
 title: Creating and Managing Locations in Screens as a Cloud Service
 description: This page describes how to create and manage locations in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Creating and Managing Locations in Screens as a Cloud Service {#creating-locations-screens-cloud}

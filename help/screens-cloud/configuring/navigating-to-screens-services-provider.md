@@ -1,9 +1,6 @@
 ---
 title: Navigating to Screens Services Provider
 description: This page describes how to navigate to Screens Services Provider.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Navigating to Screens Services Provider {#setup-screens-services-provider}

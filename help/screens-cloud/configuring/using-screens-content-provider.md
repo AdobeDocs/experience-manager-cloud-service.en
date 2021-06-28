@@ -1,9 +1,6 @@
 ---
 title: Using up Screens Content Provider
 description: This page describes how to use Screens Content Provider for creating content.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Using Screens Content Provider {#using-screens-content-provider}
