@@ -139,9 +139,9 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * When a field is validated before submitting data to backend service via Form Data Model (FDM), validations succeed but the Form Data Model service fail to invoke post validation.
 * When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. This is a known issue in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## AEM Screens {#aem-screens}
+## [!DNL Adobe Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
-This section outlines the Release Notes for Screens as a Cloud Service.
+This section outlines the Release Notes for AEM Screens as a Cloud Service.
 
 ### Release Date {#release-date-june-screens}
 
