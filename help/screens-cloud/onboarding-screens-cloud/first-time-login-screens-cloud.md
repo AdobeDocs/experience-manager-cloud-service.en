@@ -12,7 +12,7 @@ After signing the contract, the Adobe Managed Services (AMS) initiates the custo
 
 ## Availability of the Feature Pack {#availability}
 
-The AMS-Screens-Cloud Feature Pack is available via Software Distribution Portal.
+The AMS-Screens-Cloud Feature Pack is available via [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 Click here to download the latest feature pack.
 
 ## Adding Users to Adobe Admin Console {#admin-console}
