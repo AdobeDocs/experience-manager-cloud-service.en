@@ -21,7 +21,7 @@ user-guide-description: Understand the AEM Screens as a Cloud Service.
   + [Running the Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
 + Configuring Screens as a Cloud Service Project {#configure-screens-cloud}
   + [Navigating to Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
-  + [Navigating to Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
+  + [Using Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
 + Creating Content {#create-content}
   + [Creating and Managing a Project in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
   + [Creating and Managing a Channel in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
