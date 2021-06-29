@@ -12,8 +12,9 @@ This page lists the self-help resources regarding AEM Screens as a Cloud Service
 
 ## Key Content and AEM Screens as a Cloud Service Articles {#key-articles}
 
-* Introduction to AEM Screens as a Cloud Service
-* Onboarding to AEM Screens as a Cloud Service
+* [Introduction to AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
+* [Onboarding to AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Create a Project and Start Content Creation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
