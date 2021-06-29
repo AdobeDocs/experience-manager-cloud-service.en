@@ -175,6 +175,7 @@ role: Developer, Architect
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
   + [AEM Version Updates](deploying/aem-version-updates.md)
   + [Configuring OSGi for AEM as a Cloud Service](deploying/configuring-osgi.md)
+  + [OSGi Configuration API](deploying/osgi-configuration-api.md)
 + Author Tier {#author-tier}  
   + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
   + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
