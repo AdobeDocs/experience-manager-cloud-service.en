@@ -28,7 +28,7 @@ user-guide-description: Understand the AEM Screens as a Cloud Service.
   + [Managing Publication](/help/screens-cloud/creating-content/manage-publish.md)
   + [Creating and Managing a Display in Screens Services Provider](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
   + [Assigning Channel to a Display](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
-  + Managing Player and Registration {#manage-player-registration}
-    + [Installing Screens Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-    + [Registering the Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-    + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
++ Managing Player and Registration {#manage-player-registration}
+  + [Installing Screens Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+  + [Registering the Player](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+  + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
