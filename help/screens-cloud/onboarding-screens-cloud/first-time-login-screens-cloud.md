@@ -1,9 +1,6 @@
 ---
 title: First Time Login to Screens as a Cloud Service
 description: This page describes the first steps in getting started with Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # First Time Login to Screens as a Cloud Service {#first-time-login-screens-cloud}
@@ -15,7 +12,7 @@ After signing the contract, the Adobe Managed Services (AMS) initiates the custo
 
 ## Availability of the Feature Pack {#availability}
 
-The AMS-Screens-Cloud Feature Pack is available via Software Distribution Portal.
+The AMS-Screens-Cloud Feature Pack is available via [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 Click here to download the latest feature pack.
 
 ## Adding Users to Adobe Admin Console {#admin-console}

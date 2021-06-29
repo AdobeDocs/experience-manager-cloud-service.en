@@ -1,9 +1,6 @@
 ---
 title: Using up Screens Content Provider
 description: This page describes how to use Screens Content Provider for creating content.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Using Screens Content Provider {#using-screens-content-provider}
@@ -14,15 +11,17 @@ index: no
 
 ## Objective {#objective}
 
-The following section describes how to use Screens Content Provider, once you have setup Screens Services Provider. 
+The following section describes how to use Screens Content Provider, once you have setup [Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en). 
 
 ## Using Screens Content Provider {#screens-content-provider}
 
 >[!NOTE]
 >**Prerequisite**
->Before you start reading this section, refer to [Setting up Screens Services Provider](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) to learn how to navigate to this user interface from Screens Services Provider.
+>Before you start reading this section, refer to [Setting up Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) to learn how to navigate to this user interface from Screens Services Provider.
 
-Once you have logged into Screens Content Provider, now you are ready to create your content in content playback. Use Screens Content Provider to create and manage:
+Once you have logged into Screens Content Provider, now you are ready to create your content in content playback. 
+
+You must use Screens Content Provider to create and manage:
 
 * Projects
 * Channels
@@ -30,6 +29,6 @@ Once you have logged into Screens Content Provider, now you are ready to create 
 
 ## What's Next {#whats-next}
 
-Now, you have learnt how to navigate to Screens Content Provider, you should now continue your Screens as a Cloud Service journey by next reviewing the document, [Creating and Managing Projects in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+Now, you have learnt how to navigate to Screens Content Provider, you should now continue your Screens as a Cloud Service journey by next reviewing the document, [Creating and Managing a Project in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
 
 
