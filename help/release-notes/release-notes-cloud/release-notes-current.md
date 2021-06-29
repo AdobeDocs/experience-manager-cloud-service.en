@@ -118,19 +118,20 @@ The next release is planned for July 15, 2021.
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
-* Added ability to filter custom columns in AEM Inbox.
-* Added ability to use the theme editor and style layer of adaptive form editor to style the captcha component. 
-* Improved speed and accuracy for automatically detecting logical sections in the source PDF forms and converting those into corresponding adaptive form panels.
-* Added move action to move a PDF or XDP file from one folder to another.
+* Forms administrators can filter custom columns in AEM Inbox.
+* Forms developers can use the theme editor and style layer of adaptive form editor to style the captcha component.
+* Improved accuracy for automatically detecting logical sections in the source forms and converting those into corresponding adaptive form panels.
+* Added move action to help shift a PDF or XDP file from one folder to another.
+* Reduced load time and improved performance of adaptive forms editor and theme editor. 
 
 ### Beta feature of [!DNL Forms]  {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
-  * Generate final form documents by populating template files with XML data.
+  * Generate documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
   * Generate print PDFs from an XFA form PDF and Adobe Acrobat Form (AcroForm).
 
-* **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization. 
+* **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
 
 You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
