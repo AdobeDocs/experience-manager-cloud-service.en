@@ -36,16 +36,16 @@ To realize the automatic replication for this you need to enable **Auto Replicat
 To perform a tree activation:
 
 1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **forwardPublisher**
-3. Once in the forwardPublisher Web console UI, **select Distribute**
-![Distribute](assets/distribute.png "Distribute")
+2. Select the card **publish**
+3. Once in the publish Web console UI, **select Distribute**
+![Distribute](assets/publish-distribute.png "Distribute")
 4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/ppublish-distribute.png)
 
 Do not modify or invoke the original model. Instead, make sure to first copy the model and then modify or invoke that copy.
 
@@ -184,13 +184,13 @@ You can find more detailed information on Manage Publication on the [Publishing 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
 1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **forwardPublisher**
-![Status](assets/status.png "Status")
+2. Select the card **publish**
+![Status](assets/publish-status.png "Status")
 3. Check the queue status which should be green
 4. You can test the connection to the replication service
 5. Select the **Logs** tab which shows the history of content publications
 
-![Logs](assets/logs.png "Logs")
+![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
 In that case, the queues should be reviewed in order to identify which items caused the cancelation of the publication. By clicking on a queue showing a red status, the queue with pending items would show up, from which single or all items can be cleared if needed.
