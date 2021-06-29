@@ -11,7 +11,7 @@ description: This page describes how to use Screens Content Provider for creatin
 
 ## Objective {#objective}
 
-The following section describes how to use Screens Content Provider, once you have setup Screens Services Provider. 
+The following section describes how to use Screens Content Provider, once you have setup [Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en). 
 
 ## Using Screens Content Provider {#screens-content-provider}
 
@@ -19,7 +19,9 @@ The following section describes how to use Screens Content Provider, once you ha
 >**Prerequisite**
 >Before you start reading this section, refer to [Setting up Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) to learn how to navigate to this user interface from Screens Services Provider.
 
-Once you have logged into Screens Content Provider, now you are ready to create your content in content playback. Use Screens Content Provider to create and manage:
+Once you have logged into Screens Content Provider, now you are ready to create your content in content playback. 
+
+You must use Screens Content Provider to create and manage:
 
 * Projects
 * Channels
