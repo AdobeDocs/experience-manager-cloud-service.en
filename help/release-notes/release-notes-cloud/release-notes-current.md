@@ -139,6 +139,27 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * When a field is validated before submitting data to backend service via Form Data Model (FDM), validations succeed but the Form Data Model service fail to invoke post validation.
 * When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. This is a known issue in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
+## AEM Screens {#aem-screens}
+
+This section outlines the Release Notes for Screens as a Cloud Service.
+
+### Release Date {#release-date-june-screens}
+
+The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
+
+### What's New {#what-is-new-screens-june}
+
+>[!NOTE]
+>See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
+
+* Bulk Device Registration Management means that provisioning massive amounts of player devices is faster and more efficient.
+
+* Improved search and filter options for each of the Device, Display, and Channel inventory views.
+
+* Device heath snapshot saves time by providing critical status as a glance.
+
+* Object details page offers a summary of the most relevant information for each object in your project.
+
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
