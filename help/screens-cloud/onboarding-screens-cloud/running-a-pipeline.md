@@ -1,9 +1,6 @@
 ---
 title: Running a Pipeline
 description: This page describes running a pipeline for Screens as Cloud Service project in Cloud Manager.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Running a Pipeline for Screens as a Cloud Service Program in Cloud Manager {#run-pipeline-screens-cloud}
