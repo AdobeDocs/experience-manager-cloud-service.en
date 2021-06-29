@@ -15,7 +15,9 @@ Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distributio
 
 ### Quick Un/Publish - Planned Un/Publish {#publish-unpublish}
 
-These standard AEM functionalities for the authors do not change with AEM Cloud Service.
+This allows you to publish the selected page(s) immediately, without the additional options possible through the Manage Publication approach.
+
+For more information, see [Manage Publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### On and Off Times - Trigger Configuration {#on-and-off-times-trigger-configuration}
 
@@ -164,6 +166,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 In case you do not provide such a filter and only use the "publish" agent, the "preview" agent is not used and the replication action does not affect the preview tier.
 
 The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the above example this is not the case, as the replication is just using the "preview" agent. Therefore, you need to use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
+
+### Manage Publication {#manage-publication}
+
+Manage Publication offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
+
+Including a folder's children for the "publish later" option will invoke the Publish Content Tree workflow, described in this article.
+
+You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Troubleshooting {#troubleshooting}
 
