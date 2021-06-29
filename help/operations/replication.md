@@ -29,6 +29,10 @@ To realize the automatic replication for this you need to enable **Auto Replicat
 
 ### Tree Activation {#tree-activation}
 
+>[!NOTE]
+>
+>This approach should be considered deprecated since it does not persist statuses and is less scalable than other approaches. Adobe's recommendation is to use manage publication or workflow methods instead
+
 To perform a tree activation:
 
 1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
