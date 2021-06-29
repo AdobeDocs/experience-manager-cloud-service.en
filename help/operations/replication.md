@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 ---
 # Replication {#replication}
 
-Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) capability to move the content to replicate to a pipeline service run on Adobe I/O that is outside of the AEM runtime. 
+Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) capability to move the content to replicate to a pipeline service run on Adobe I/O that is outside of the AEM runtime.
 
 >[!NOTE]
 >
@@ -15,7 +15,9 @@ Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distributio
 
 ### Quick Un/Publish - Planned Un/Publish {#publish-unpublish}
 
-These standard AEM functionalities for the authors do not change with AEM Cloud Service.
+This allows you to publish the selected page(s) immediately, without the additional options possible through the Manage Publication approach.
+
+For more information, see [Manage Publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### On and Off Times - Trigger Configuration {#on-and-off-times-trigger-configuration}
 
@@ -27,19 +29,23 @@ To realize the automatic replication for this you need to enable **Auto Replicat
 
 ### Tree Activation {#tree-activation}
 
+>[!NOTE]
+>
+>This approach should be considered deprecated since it does not persist statuses and is less scalable than other approaches. Adobe's recommendation is to use manage publication or workflow methods instead
+
 To perform a tree activation:
 
 1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **forwardPublisher**
-3. Once in the forwardPublisher Web console UI, **select Distribute**
-![Distribute](assets/distribute.png "Distribute")
+2. Select the card **publish**
+3. Once in the publish Web console UI, **select Distribute**
+![Distribute](assets/publish-distribute.png "Distribute")
 4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 Do not modify or invoke the original model. Instead, make sure to first copy the model and then modify or invoke that copy.
 
@@ -165,18 +171,26 @@ In case you do not provide such a filter and only use the "publish" agent, the "
 
 The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the above example this is not the case, as the replication is just using the "preview" agent. Therefore, you need to use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
 
+### Manage Publication {#manage-publication}
+
+Manage Publication offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
+
+Including a folder's children for the "publish later" option will invoke the Publish Content Tree workflow, described in this article.
+
+You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+
 ## Troubleshooting {#troubleshooting}
 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
 1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **forwardPublisher**
-![Status](assets/status.png "Status")
+2. Select the card **publish**
+![Status](assets/publish-status.png "Status")
 3. Check the queue status which should be green
 4. You can test the connection to the replication service
 5. Select the **Logs** tab which shows the history of content publications
 
-![Logs](assets/logs.png "Logs")
+![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
 In that case, the queues should be reviewed in order to identify which items caused the cancelation of the publication. By clicking on a queue showing a red status, the queue with pending items would show up, from which single or all items can be cleared if needed.
