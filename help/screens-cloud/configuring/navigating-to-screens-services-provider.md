@@ -22,7 +22,7 @@ Follow the steps below to setup Screens Services Provider:
 
 1. Navigate to Screens Services Provider from [here](https://experience.adobe.com/screens).
 
-   >[!NOTE]
+   >[!CAUTION]
    >If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the Org name from the top right hand corner of the screen and choose the required organization to which you need access to.
 
 1. Select **Channels** from the left navigation bar and click on **open in content provider**. 
