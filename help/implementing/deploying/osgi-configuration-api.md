@@ -21,10 +21,8 @@ Lorem Ipsum
 
 | OSGi Configurations and Properties | Is Required  | Type  | Required Range  | Announcement Date  | Target Enforcement Date |
 |---|---|---|---|---|---|
-| **Configuration org.apache.felix.eventadmin.impl.EventAdmin**	
-  |   |   |   | 4/30/2021	
-  | 7/31/2021  |
-|   |   |   |   |   |   |
+| **Configuration org.apache.felix.eventadmin.impl.EventAdmin**	|   |   |   | 4/30/2021	| 7/31/2021  |
+|    org.apache.felix.eventadmin.ThreadPoolSize  |   | integer| 2-100  |   |   |
 |   |   |   |   |   |   |
 |   |   |   |   |   |   |
 |   |   |   |   |   |   |
