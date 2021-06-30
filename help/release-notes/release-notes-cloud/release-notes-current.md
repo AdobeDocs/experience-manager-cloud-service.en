@@ -106,7 +106,7 @@ The next release is planned for July 15, 2021.
 
   ![Filter search folders using search predicates](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5. The controls available in the preview are to zoom, to navigate to pages, to undock controls, and to view in full screen. The integrated PDF viewer supports AI, DOCX, INDD, PDF, and PSD file formats. You can comment on the asset itself but commenting and annotations within the PDF file are not supported.
 
   ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 
