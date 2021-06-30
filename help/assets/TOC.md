@@ -39,6 +39,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
   + [Watermark assets](watermark-assets.md)
+  + [Process assets using [!DNL Creative Cloud] APIs](cc-api-integration.md)
 + Configure, administer and extend [!DNL Assets] {#admin}
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
