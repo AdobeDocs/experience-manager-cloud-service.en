@@ -85,14 +85,12 @@ The next release is planned for July 15, 2021.
 
 ### New features in [!DNL Assets] {#ga-features-assets}
 
-* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of same asset. The functionality does not require any code and works from within the DAM.
+* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [Generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
+
 * [!DNL Adobe Asset Link] v3.0 for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [!DNL Adobe Asset Link] v2.0 for [!DNL Adobe XD] is released. It provides:
 
   * Support for [!DNL Assets Essentials].
   * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}
 
