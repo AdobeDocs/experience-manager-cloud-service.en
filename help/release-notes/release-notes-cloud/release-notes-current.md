@@ -92,12 +92,23 @@ The next release is planned for July 15, 2021.
   * Support for [!DNL Assets Essentials].
   * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
 
+* The [Asset Bulk Ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor) lets you add metadata during a bulk ingestion.
+
 ### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}
 
 * The view settings are enhanced to let users choose a default view and a default sorting parameter.
+
+  ![Set default view in View Settings](/help/assets/assets/view-settings-for-defaults.png)
+
 * The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
+
 * Users can search and filter the folders based on property predicates.
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+
+  ![Filter search folders using search predicates](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+
+  ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
 

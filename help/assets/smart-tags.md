@@ -91,13 +91,16 @@ Ensure that the images in the training set conform to the following guidelines:
 
 **Examples**: Some more examples for guidance are:
 
-* Create a tag model that includes,
-  * only the tags related to car models.
-  * only the tags related to colors of shirts.
-  * only the tags related to jackets for women and men.
+* Create a tag model that only includes,
+
+  * The tags related to car models.
+  * The tags related to colors of shirts.
+  * The tags related to jackets for women and men.
+
 * Do not create,
-  * a tag model that includes car models released in 2019 and 2020.
-  * multiple tag models that include the same few car models.
+
+  * A tag model that includes car models released in 2019 and 2020.
+  * Multiple tag models that include the same few car models.
 
 **Images used to train**: You can use the same images to train different tag models. However, do not associate an image with more than one tag in a tag model. It is possible to tag the same image with different tags belonging to different tag models.
 
