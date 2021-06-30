@@ -1,12 +1,21 @@
 ---
 title: OSGi Configuration API
-description: OSGi Configuration API
+description: Description of the AEM as a Cloud Service OSGi configuration surface
 feature: Deploying
 ---
 
 # OSGi Configuration API
 
-Lorem Ipsum
+The two tables below reflect the AEM as a Cloud Service OSGi configuration surface, describing customers can configure.
+
+1. A list of OSGi configurations that must not be configured by customer code
+1. A list of OSGi configurations whose properties may be configured, but must abide by validation rules of each row. These rules include whether declaration of the property is required, its type, and in some cases, its allowed range of values.
+
+If an OSGI configuration is not listed, it may be configured by customer code.
+
+These rules are validated during the Cloud Manager build process. Additional rules may be added over time and the expected enforcement date is noted in the table. Customers are expected to abide by these rules by the target enforcement date. Not abiding by the rules after the removal date will generate errors in the Cloud Manager build process. Maven project's should include the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) to flag OSGI configuration errors during local SDK development.
+
+Additional information about OSGI configuration can be found at [this location](/help/implementing/deploying/configuring-osgi.md).
 
 ## OSGi Configurations that Cannot be Configured {#osgi-configurations-that-cannot-be-configured}
 
@@ -17,7 +26,7 @@ Lorem Ipsum
 | com.day.cq.jcrclustersupport.ClusterStartLevelController |   |   |
 | org.apache.felix.http (Factory)  |   |   |
 
-## Table 2 {#table2}
+## OSGi Configurations Subject to Build Validation Rules {#osgi-configurations-subject-to-build-validation-rules}
 
 <table>
 <thead>
@@ -37,8 +46,7 @@ Lorem Ipsum
     <td></td>
     <td></td>
     <td>4/30/2021</td>
-    <td>7/31/2021	
-</td>
+    <td>7/31/2021</td>
   </tr>
   <tr>
     <td>org.apache.felix.eventadmin.ThreadPoolSize</td>
