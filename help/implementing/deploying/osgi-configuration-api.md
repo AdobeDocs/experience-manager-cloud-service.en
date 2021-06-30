@@ -8,7 +8,7 @@ feature: Deploying
 
 Lorem Ipsum
 
-## OSGI Configurations that Cannot be Configured {#osgi-configurations-that-cannot-be-configured}
+## OSGi Configurations that Cannot be Configured {#osgi-configurations-that-cannot-be-configured}
 
 | OSGi Configurations  | Announcement Date  | Target Enforcement Date  |
 |---|---|---|
@@ -16,3 +16,63 @@ Lorem Ipsum
 | com.day.cq.auth.impl.cug.CugSupportImpl |   |   |
 | com.day.cq.jcrclustersupport.ClusterStartLevelController |   |   |
 | org.apache.felix.http (Factory)  |   |   |
+
+## Table 2 {#table2}
+
+| OSGi Configurations and Properties | Is Required  | Type  | Required Range  | Announcement Date  | Target Enforcement Date |
+|---|---|---|---|---|---|
+| **Configuration org.apache.felix.eventadmin.impl.EventAdmin**	
+  |   |   |   | 4/30/2021	
+  | 7/31/2021  |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
+|   |   |   |   |   |   |
