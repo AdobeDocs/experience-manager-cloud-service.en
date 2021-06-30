@@ -27,6 +27,14 @@ To realize the automatic replication for this you need to enable **Auto Replicat
 
    ![OSGi On Off Trigger Configuration](/help/operations/assets/replication-on-off-trigger.png)
 
+### Manage Publication {#manage-publication}
+
+Manage Publication offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
+
+Including a folder's children for the "publish later" option will invoke the Publish Content Tree workflow, described in this article.
+
+You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+
 ### Tree Activation {#tree-activation}
 
 >[!NOTE]
@@ -170,14 +178,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 In case you do not provide such a filter and only use the "publish" agent, the "preview" agent is not used and the replication action does not affect the preview tier.
 
 The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the above example this is not the case, as the replication is just using the "preview" agent. Therefore, you need to use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
-
-### Manage Publication {#manage-publication}
-
-Manage Publication offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
-
-Including a folder's children for the "publish later" option will invoke the Publish Content Tree workflow, described in this article.
-
-You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Troubleshooting {#troubleshooting}
 
