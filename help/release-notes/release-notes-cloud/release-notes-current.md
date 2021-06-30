@@ -87,7 +87,7 @@ The next release is planned for July 15, 2021.
 
 * Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [Generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Adobe Asset Link] v3.0 for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [!DNL Adobe Asset Link] v2.0 for [!DNL Adobe XD] is released. It provides:
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) for [!DNL Adobe XD] is available. It provides:
 
   * Support for [!DNL Assets Essentials].
   * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
@@ -109,6 +109,14 @@ The next release is planned for July 15, 2021.
 * [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
 
   ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
+
+  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
 
