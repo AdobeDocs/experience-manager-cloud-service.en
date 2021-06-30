@@ -19,58 +19,442 @@ Lorem Ipsum
 
 ## Table 2 {#table2}
 
-| OSGi Configurations and Properties | Is Required  | Type  | Required Range  | Announcement Date  | Target Enforcement Date |
-|---|---|---|---|---|---|
-| **Configuration org.apache.felix.eventadmin.impl.EventAdmin**	|   |   |   | 4/30/2021	| 7/31/2021  |
-|    org.apache.felix.eventadmin.ThreadPoolSize  |   | integer| 2-100  |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
-|   |   |   |   |   |   |
+<table>
+<thead>
+  <tr>
+    <th>OSGi Confiturations and Properties</th>
+    <th>Is Required</th>
+    <th>Type</th>
+    <th>Required Range</th>
+    <th>Announcement Date</th>
+    <th>Target Enforcement Date</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>Configuration org.apache.felix.eventadmin.impl.EventAdmin</b></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>4/30/2021</td>
+    <td>7/31/2021	
+</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.eventadmin.ThreadPoolSize</td>
+    <td></td>
+    <td>Integer</td>
+    <td>2-100</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.eventadmin.AsyncToSyncThreadRatio</td>
+    <td></td>
+    <td>Double</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.eventadmin.Timeout</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.eventadmin.RequireTopic</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.eventadmin.IgnoreTimeout</td>
+    <td>Yes</td>
+    <td>Array of strings</td>
+    <td>must include at least all of:<br>org.apache.felix*,<br>org.apache.sling*<br>come.day*<br>com.adobe*</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.eventadmin.IgnoreTopic</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Configuration org.apache.felix.http</b></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>4/30/2021</td>
+    <td>7/31/2021</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.timeout</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.session.timeout</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.jetty.threadpool.max</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.jetty.headerBufferSize</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.jetty.requestBufferSize</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.jetty.responseBufferSize</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.jetty.maxFormSize</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.https.jetty.session.cookie.httpOnly</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.https.jetty.session.cookie.secure</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.eclipse.jetty.servlet.SessionIdPathParameterName</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.eclipse.jetty.servlet.SessionCookie</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.eclipse.jetty.servlet.SessionDomain</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.eclipse.jetty.servlet.SessionPath</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.eclipse.jetty.servlet.MaxAge</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.eclipse.jetty.servlet.SessionScavengingInterval</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gziphandler.enable</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.minGzipSize</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.compressionLevel</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.inflateBufferSize</td>
+    <td></td>
+    <td>Integer</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.syncFlush</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.excludedUserAgents</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.includedMethods</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.excludedMethods</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.includedPaths</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.excludedPaths</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.includedMimeTypes</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.jetty.gzip.excludedMimeTypes</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.session.invalidate</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.session.container.attribute</td>
+    <td></td>
+    <td>Array of strings</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.session.uniqueid</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Configuration org.apache.sling.scripting.cache</b></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>4/30/2021</td>
+    <td>7/31/2021</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.scripting.cache.size</td>
+    <td></td>
+    <td>Integer</td>
+    <td>>= 2048</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.scripting.cache.additional_extensions</td>
+    <td>Yes</td>
+    <td>Array of strings</td>
+    <td>Must include js</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Configuration com.day.cq.mailer.DefaultMailService</b></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>4/30/2021</td>
+    <td>7/31/2021</td>
+  </tr>
+  <tr>
+    <td>smtp.host</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>smtp.port</td>
+    <td></td>
+    <td>Integer</td>
+    <td>Either 465, 587, or 25</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>smtp.user</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>smtp.password</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>from.address</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>smtp.ssl</td>
+    <td></td>
+    <td>String</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>smtp.starttls</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>smtp.requiretls</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>debug.email</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>oauth.flow</td>
+    <td></td>
+    <td>Boolean</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
