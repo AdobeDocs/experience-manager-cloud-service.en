@@ -14,31 +14,37 @@ To edit assets in [!DNL Adobe Photoshop] and [!DNL Adobe Lightroom], you do not 
 
 Users can create processing profiles to automate the following creative operations on their assets:  
 
-**Auto-tone**: Utilizes artificial intelligence to analyze the contents of the image and intelligently makes light and color corrections based on the unique attributes of the image.
-**Auto-upright**: Utilizes artificial intelligence to analyze the content of the image and correct skewed perspective in images. For example, to create level horizons.
-**Lightroom presets**: Applies a user-defined look to images to achieve a consistent appearance using custom-made presets.
-**Image Cutout**: Utilizes artificial intelligence to create selection around salient objects and remove background with a single command.
-**Image Mask**: Utilizes artificial intelligence to create mask around salient objects with a single command.
-**Photoshop Actions**: Applies a series of tasks (in Photoshop) to a file or a batch of files.
-**Smart Object Replacement**: Performs personalization at scale by allowing you to swap images while retaining all effects and adjustment applied within a PSD file.
+* **Auto-tone**: Utilizes artificial intelligence to analyze the contents of the image and intelligently makes light and color corrections based on the unique attributes of the image.
+* **Auto-upright**: Utilizes artificial intelligence to analyze the content of the image and correct skewed perspective in images. For example, to create level horizons.
+* **Lightroom presets**: Applies a user-defined look to images to achieve a consistent appearance using custom-made presets.
+* **Image Cutout**: Utilizes artificial intelligence to create selection around salient objects and remove background with a single command.
+* **Image Mask**: Utilizes artificial intelligence to create mask around salient objects with a single command.
+* **Photoshop Actions**: Applies a series of tasks (in Photoshop) to a file or a batch of files.
+* **Smart Object Replacement**: Performs personalization at scale by allowing you to swap images while retaining all effects and adjustment applied within a PSD file.
 
 ## Use a processing profile to process assets {#process-assets}
 
 To use processing profiles to automatically create variations, follow these steps:
 
-1. Contact Adobe Customer Support to acquire the license.
-1. Navigate to Tools > Assets > Processing Profiles.
-1. Select Create, and specify a Name.
-1. Select the Creative tab. Specify the output folder, select [!UICONTROL Add New] to add creative configurations. Provide Rendition Name (or output name), Extension (or file type), select Quality (or output parameters), select Includes and Excludes MIME type lists (or input asset filter), and select the required creative operation. 
-1. For some operations, an additional parameter (asset) is required. Provide values for these additional parameters if requested.
+1. Contact [Adobe Customer Care](https://experienceleague.adobe.com/#support) to receive the license.
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
+
+1. Select **[!UICONTROL Create]**, and specify a **[!UICONTROL Name]**.
+
+1. Select the **[!UICONTROL Creative]** tab, specify the output folder, select **[!UICONTROL Add New]** to add a creative configurations. 
+
+1. Provide **[!UICONTROL Rendition Name]** (or output name), **[!UICONTROL Extension]** (or file type), select **[!UICONTROL Quality]** (or output parameters), select Includes and Excludes MIME type lists (or input asset filter), and select the required creative operation.
+
+1. Some operations require an additional parameter (asset). Provide values for such additional parameters if required.
 
 1. Add more creative operations as a part of the same processing profile or Save the profile.
 
-1. Apply the processing profile to a folder. Select folder Properties, Asset Processing, and select the processing profile created.
+1. Apply the processing profile to a folder. On a folder's **[!UICONTROL Properties]** page, select **[!UICONTROL Asset Processing]**, and select the processing profile to apply.
 
-Once the processing profile is applied to a DAM folder, all the assets uploaded or updated in this folder (or in sub-folders, unless overridden) execute the defined operations in addition to the standard processing. 
+After the processing profile is applied to a DAM folder, all the assets uploaded or updated in this folder execute the defined operations in addition to the standard processing. The sub-folders inherit the same profiles as applied on the parent folders. Users can override this inheritance.
 
-To process the existing assets manually, select the assets and select **[!UICONTROL Reprocess]** option, and then select the required processing profile.
+To process the existing assets, select the assets, select **[!UICONTROL Reprocess]** option, and then select the required processing profile.
 
 ## Tips and limitations {#limitations-best-practices}
 
