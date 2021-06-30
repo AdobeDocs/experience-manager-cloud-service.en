@@ -17,7 +17,7 @@ These rules are validated during the Cloud Manager build process. Additional rul
 
 Additional information about OSGI configuration can be found at [this location](/help/implementing/deploying/configuring-osgi.md).
 
-## OSGi Configurations that Cannot be Configured {#osgi-configurations-that-cannot-be-configured}
+## OSGi Configurations that Cannot be Modified {#osgi-configurations-that-cannot-be-modified}
 
 | OSGi Configurations  | Announcement Date  | Target Enforcement Date  |
 |---|---|---|
