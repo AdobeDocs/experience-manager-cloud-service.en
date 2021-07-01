@@ -133,7 +133,7 @@ The next release is planned for July 15, 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### What is new in [!DNL Forms] {#what-is-new-forms}
+### New features in [!DNL Forms] {#what-is-new-forms}
 
 * Forms administrators can filter custom columns in AEM Inbox.
 * Forms developers can use the theme editor and style layer of adaptive form editor to style the captcha component.
@@ -147,8 +147,6 @@ The next release is planned for July 15, 2021.
   * Generate documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
   * Generate print PDFs from an XFA form PDF and Adobe Acrobat Form (AcroForm).
-
-* **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
 
 You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
