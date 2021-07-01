@@ -186,5 +186,3 @@ role: Developer, Architect
   + [Validating and Debugging using Dispatcher Tools Legacy](dispatcher/validation-debug-legacy.md)
   + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
   + [Caching in AEM as a Cloud Service](dispatcher/caching.md)
-  + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
-  + [Caching in AEM as a Cloud Service](dispatcher/caching.md)
