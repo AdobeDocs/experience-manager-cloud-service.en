@@ -1,9 +1,10 @@
 ---
-title: Legacy Mode
-description: Legacy Mode 
+title: Validating and Debugging using Dispatcher Tools (Legacy)
+description: Validating and Debugging using Dispatcher Tools (Legacy)
 feature: Dispatcher
+hidefromtoc: yes
 ---
-# Legacy mode {#Dispatcher-in-the-cloud}
+# Validating and Debugging using Dispatcher Tools (Legacy)  {#Dispatcher-tools-legacy}
 
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
