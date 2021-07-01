@@ -62,9 +62,7 @@ The structure of the project's Dispatcher subfolder is as follows:
     └── virtualhosts
     │   ├── default_virtualhosts.any
     │   └── virtualhosts.any
-    │  
-    └── opt-in
-        └── USE_SOURCES_DIRECTLY
+    
 
 ```
 
