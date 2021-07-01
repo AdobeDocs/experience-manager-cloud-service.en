@@ -181,5 +181,10 @@ role: Developer, Architect
 + Content Delivery Overview {#content-delivery}
   + [Content Delivery Flow](dispatcher/overview.md)
   + [Dispatcher in the Cloud](dispatcher/disp-overview.md)
+  + [Validating and Debugging using Dispatcher Tools](dispatcher/validation-debug.md)
+  + [Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service](dispatcher/ams-aem.md)
+  + [Validating and Debugging using Dispatcher Tools Legacy](dispatcher/validation-debug-legacy.md)
+  + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
+  + [Caching in AEM as a Cloud Service](dispatcher/caching.md)
   + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
   + [Caching in AEM as a Cloud Service](dispatcher/caching.md)

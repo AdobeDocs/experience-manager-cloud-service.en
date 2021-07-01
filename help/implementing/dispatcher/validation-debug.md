@@ -1,9 +1,9 @@
 ---
-title: Flexible Mode
-description: Flexible Mode 
+title: Validating and Debugging using Dispatcher Tools
+description: Validating and Debugging using Dispatcher Tools
 feature: Dispatcher
 ---
-# Flexible Mode {#Dispatcher-in-the-cloud}
+# Validating and Debugging using Dispatcher Tools {#Dispatcher-in-the-cloud}
 
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
