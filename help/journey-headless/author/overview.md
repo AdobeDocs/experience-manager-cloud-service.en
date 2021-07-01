@@ -11,7 +11,11 @@ Start here for a guided journey through the powerful and flexible headless featu
 
 Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel.
 
-Headless implementation forgoes page (and component) management as is traditional and focuses instead on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing digital experiences.
+Headless content is not based on the traditional structure of pages, and components. Instead it is based on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. 
+
+In AEM this is realized with Content Fragments. You author the content in individual Content Fragments, that are then made available for an application to select and use as required. 
+
+This flexibility means that headless is a modern and dynamic development pattern for implementing digital experiences.
 
 This guide leads you through the most important topics so that on completion you:
 
