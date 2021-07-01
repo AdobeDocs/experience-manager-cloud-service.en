@@ -80,7 +80,7 @@ The table below shows the supported apache modules:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-**To Brian: This is here just for added visibility. Functionally, each mode's page contains the list above and info about the allowlist, how to use etc. so I'm not sure if we need to add anything else on the chapter above (on this page)**
+
 
 ## Folder Structure {#folder-structure}
 
