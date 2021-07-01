@@ -3,7 +3,7 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Assets as a Cloud Service Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
-solution: Experience Manager, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets, Experience Manager as a Cloud Service
 ---
 
 # [!DNL Assets] Guide {#assets}
@@ -39,6 +39,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
   + [Watermark assets](watermark-assets.md)
+  + [Process assets using [!DNL Creative Cloud] APIs](cc-api-integration.md)
 + Configure, administer and extend [!DNL Assets] {#admin}
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
