@@ -168,10 +168,6 @@ Part of base framework, this file gets generated on startup. You are **required*
 
 Default host globbing suitable for a standard project. If you need customization, modify `virtualhosts.any`. In your customization, you shouldn't include the default host globbing, as it matches **every** incoming request.
 
->[!NOTE]
->
->The AEM as a Cloud Service maven archetype will generate the same Dispatcher configuration file structure.
-
 ## Supported Apache Directives
 
 The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
@@ -222,6 +218,9 @@ For more details on the local validation see the following section.
 
 ## Local validation {#local-validation-flexible-mode}
 
+>[!NOTE]
+>The sections below include commands using either the Mac or Linux versions of the SDK, but the Windows SDK can also be used in a similar way.
+
 Use the `validate.sh` script as shown below:
 
 ```
@@ -252,8 +251,6 @@ The script does the following:
 3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified. This is a new check, introduced with AEM SDK version v2021.1.4738 that also includes Dispatcher Tools version 2.0.36. Before this update, customers might have incorrectly assumed that any local SDK modifications of those immutable files would also be applied to the Cloud environment.
 
 During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
-
-**To Brian: I referred to the following steps as "phases". Let me know if you want to change that.**
 
 **Phase 1**
 
