@@ -122,7 +122,7 @@ The next release is planned for July 15, 2021.
 * Forms developers can use the theme editor and style layer of adaptive form editor to style the captcha component.
 * Improved accuracy for automatically detecting logical sections in the source forms and converting those into corresponding adaptive form panels.
 * Added move action to help shift a PDF or XDP file from one folder to another.
-* Reduced load time and improved performance of adaptive forms editor and theme editor. 
+* Reduced load time and improved performance of adaptive forms editor and theme editor.
 
 ### Beta feature of [!DNL Forms]  {#what-is-new-forms-prerelease}
 
@@ -138,7 +138,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 ### Bugs fixed in [!DNL Forms] {#forms-bugs-fixed}
 
 * When a field is validated before submitting data to backend service via Form Data Model (FDM), validations succeed but the Form Data Model service fail to invoke post validation.
-* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. This is a known issue in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## CIF Add-on {#cloud-services-cif}
 
