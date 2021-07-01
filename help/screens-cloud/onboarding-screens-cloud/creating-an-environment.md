@@ -1,9 +1,6 @@
 ---
 title: Creating a Branch
 description: This page describes creating a branch in Cloud Manager for Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Creating an Environment in Cloud Manager {#create-environment-screens-cloud}

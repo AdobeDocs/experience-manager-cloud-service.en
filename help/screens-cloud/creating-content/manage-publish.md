@@ -1,9 +1,6 @@
 ---
 title: Publishing a Channel in Screens as a Cloud Service
 description: This page describes how to publish a channel in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Publishing Channels in Screens as a Cloud Service {#publish-channel-screens-cloud}
