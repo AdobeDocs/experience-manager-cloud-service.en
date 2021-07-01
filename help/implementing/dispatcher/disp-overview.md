@@ -45,7 +45,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 The dispatcher tools are used to validate and debug your project's Dispatcher configuration. Learn more about how to use those tools in the pages referenced below, based on whether your project is structured in flexible mode or legacy mode:
 
-**Legacy mode** - for details around the folder structure and local validation for Legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/implementing/dispatcher/validation-debug-legacy.md)
+**Legacy mode** - for details around the folder structure and local validation for Legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 **Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher , which is also used by Cloud Manager for new environments created after the Cloud Manager July release. Customers can activate this mode by adding the folder and file` opt-in/USE_SOURCES_DIRECTLY`. By using this mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For details around folder structure and local validation using, see the "Flexible mode" page link TBD.
 
