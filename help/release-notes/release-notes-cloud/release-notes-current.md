@@ -31,8 +31,8 @@ Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334
  
 ### New features in [!DNL Sites] {#ga-features-sites}
  
-* -
-* -
+* 
+* 
  
 ### New features available in the [!DNL Sites] prerelease channel {#beta-features-sites}
  
