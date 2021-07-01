@@ -9,16 +9,11 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="Dispatcher in the Cloud"
->abstract="This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments."
+>abstract="This page describes how to download and extract the dispatcher tools, the supported apache modules and provides a high-level overview of the legacy and flexible modes."
 
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
-**This section will need to be changed since we no longer detail the things below on this page**
-
-This section describes how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate  and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments. For additional information about Dispatcher, see the [AEM Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
-
->[!NOTE]
->Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer. The sections below include commands using the Mac or Linux versions of the SDK, but the Windows SDK can be used in a similar way.
+This page describes how to download and extract the dispatcher tools, the supported apache modules and provides a high-level overview of the legacy and flexible modes. Additionally, there are further references on validation and debugging and migrating the Dispatcher configuration from AMS to AEM as a Cloud Service
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -27,8 +22,6 @@ The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and prov
 * A vanilla file structure containing the configuration files to include in a maven project for Dispatcher.
 * Tooling for customers to validate that the Dispatcher configuration includes only AEM as a Cloud Service supported directives.        Additionally, the tooling also validates that the syntax is correct so apache can start successfully.
 * A Docker image that brings up the Dispatcher locally.
-
-**To Brian: Anything else to add/change here?**
 
 ## Downloading and Extracting the Tools {#extracting-the-sdk}
 
@@ -43,11 +36,18 @@ $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
 $ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
 Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
+
 ```
 
 **For Windows**, extract the Dispatcher Tooling zip archive.
 
-To understand how to use the Dispatcher Tools see each mode's page **Link TBD (maybe we can add this as a note for visibility**.
+## Validation and debugging using the Dispatcher Tools {#validation-debug}
+
+The dispatcher tools are used to validate and debug your project's Dispatcher configuration. Learn more about how to use those tools in the pages referenced below, based on whether your project is structured in flexible mode or legacy mode:
+
+**Legacy mode** - for details around the folder structure and local validation for Legacy mode, see the "Legacy mode" page. **link TBD**
+
+**Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher , which is also used by Cloud Manager for new environments created after the Cloud Manager July release. Customers can activate this mode by adding the folder and file` opt-in/USE_SOURCES_DIRECTLY`. By using this mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For details around folder structure and local validation using, see the "Flexible mode" page link TBD.
 
 ## Supported Apache Modules {#supported-directives}
 
@@ -80,18 +80,27 @@ The table below shows the supported apache modules:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
+Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the future. Customers can find the list of directives available for a given Dispatcher version by executing validator’s allowlist command in the SDK.
 
+The directives allowed in Apache configuration files can be listed by running the validator’s allowlist command:
+
+```
+
+$ validator allowlist
+Cloud manager validator 2.0.4
+ 
+Allowlisted directives:
+  <Directory>
+  ...
+  
+```
 
 ## Folder Structure {#folder-structure}
 
-**To Brian: We need some info here about Achetype 28, so customers that land on this page have some context on the changes.**
+The project's apache and dispatcher folder structure will differ slightly based on which mode the project is using, as described in the Debugging and Validating using the dispatcher tools section above (link). 
 
-With the CM 2021.7.0 release, there are two modes that will influence the structure and details of the validation:
+**Link to the appropriate article for more information about the folder structure.**
 
-1. **Flexible mode** - the recommended mode, and the default for AEM archetype 28, which is also used by Cloud Manager for new environments created after the CM 2021.7.0 release. Customers can activate this mode by adding the folder and file `opt-in/USE_SOURCES_DIRECTLY`. With this mode there are no limitations in the file structure under the rewrites folder, which in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For details around folder structure and local validation using, see the "Flexible mode" page **link TBD**.
-
-2. **Legacy mode** - for details around the folder structure and local validation for Legacy mode, see the "Legacy mode" page. **link TBD**
+## Migrating the Dispatcher configuration from AMS {#ams-aem}
 
 For details on how to migrate the Dispatcher configuration from AMS to AEM as a Cloud Service, see the Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service page.**link TBD**
-
-To understand how to use the Dispatcher Tools see each mode's page **Link TBD (maybe we can add this as a note for visibility**.

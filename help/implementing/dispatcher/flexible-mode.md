@@ -10,7 +10,7 @@ feature: Dispatcher
 >[!NOTE]
 >For more information about Dispatcher in the Cloud and how to download Dispatcher Tools see (**link to dispatcher overview TBD**).
 
-The following sections describe the flexible mode file structure, local validation, debugging and how to migrate from the legacy mode to the flexible mode.
+The following sections describe the flexible mode file structure, local validation, debugging.
 
 Please be aware that as of the Cloud Manager 2021.7.0 release, the AEM archetype includes the file `opt-in/USE_SOURCES_DIRECTLY`, which removes legacy mode limitations around the number and size of files, such as:
 
@@ -38,6 +38,8 @@ The structure of the project's Dispatcher subfolder is as follows:
 │   └── variables
 |       ├── custom.vars
 │       └── global.vars
+│── opt-in
+│   └── USE_SOURCES_DIRECTLY
 └── conf.dispatcher.d
     ├── available_farms
     │   └── default.farm
@@ -65,8 +67,6 @@ The structure of the project's Dispatcher subfolder is as follows:
         └── USE_SOURCES_DIRECTLY
 
 ```
-
-**To Brian: Please check the file/folder location.**
 
 Below is an explanation of notable files that can be modified:
 
@@ -113,8 +113,6 @@ This file is included from inside your `.farm` files. It has a list of host name
 * `opt-in/USE_SOURCES_DIRECTLY`
 
 This file enables a more flexible dispatcher configuration and removes previous limitations around the number and size of files. It also causes the SDK and runtime to validate and deploy the configuration in an improved way.
-
-**To Brian: This is where we mention the file.**
 
 The above files reference the immutable configuration files listed below. Changes to the immutable files will not be processed by Dispatchers in Cloud environments.
 
@@ -168,53 +166,9 @@ Part of base framework, this file gets generated on startup. You are **required*
 
 Default host globbing suitable for a standard project. If you need customization, modify `virtualhosts.any`. In your customization, you shouldn't include the default host globbing, as it matches **every** incoming request.
 
-## Supported Apache Directives
+## Supported Apache Modules {#apache-modules}
 
-The directives allowed in Apache configuration files can be listed by running the validator's allowlist command:
-
-```
-
-$ validator allowlist
-Cloud manager validator 2.0.4
- 
-Allowlisted directives:
-  <Directory>
-  ...
-  
-```
-
-The table below shows the supported apache modules:
-
-| Module Name | Reference Page |
-|---|---|
-| `core` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/core.html) |
-| `mod_access_compat` | [https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) |
-| `mod_alias` | [https://httpd.apache.org/docs/2.4/mod/mod_alias.html](https://httpd.apache.org/docs/2.4/mod/mod_alias.html) |
-| `mod_allowmethods` | [https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html](https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html) |
-| `mod_authn_core` | [https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html) |
-| `mod_authn_file` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html) |
-| `mod_authz_core` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html) |
-| `mod_authz_groupfile` | [https://httpd.apache.org/docs/2.4/mod/mod_authz_groupfile.html](https://httpd.apache.org/docs/2.4/mod/mod_authz_groupfile.html) |
-| `mod_deflate` | [https://httpd.apache.org/docs/2.4/mod/mod_deflate.html](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html) |
-| `mod_dir` | [https://httpd.apache.org/docs/2.4/mod/mod_dir.html](https://httpd.apache.org/docs/2.4/mod/mod_dir.html) |
-| `mod_env` | [https://httpd.apache.org/docs/2.4/mod/mod_env.html](https://httpd.apache.org/docs/2.4/mod/mod_env.html) |
-| `mod_filter` | [https://httpd.apache.org/docs/2.4/mod/mod_filter.html](https://httpd.apache.org/docs/2.4/mod/mod_filter.html) |
-| `mod_headers` | [https://httpd.apache.org/docs/2.4/mod/mod_headers.html](https://httpd.apache.org/docs/2.4/mod/mod_headers.html) |
-| `mod_mime` | [https://httpd.apache.org/docs/2.4/mod/mod_mime.html](https://httpd.apache.org/docs/2.4/mod/mod_mime.html) |
-| `mod_proxy` | [https://httpd.apache.org/docs/2.4/mod/mod_proxy.html](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html) |
-| `mod_proxy_http` | [https://httpd.apache.org/docs/2.4/mod/mod_proxy_http.html](https://httpd.apache.org/docs/2.4/mod/mod_proxy_http.html) |
-| `mod_remoteip` | [https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html](https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html) |
-| `mod_reqtimeout` | [https://httpd.apache.org/docs/2.4/mod/mod_reqtimeout.html](https://httpd.apache.org/docs/2.4/mod/mod_reqtimeout.html) |
-| `mod_rewrite` | [https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html) |
-| `mod_security` | [https://modsecurity.org/](https://modsecurity.org/) |
-| `mod_setenvif` | [https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html) |
-| `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
-| `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
-| `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
-
-Customers cannot add arbitrary modules, however additional modules may be considered for inclusion in the product in the future. Customers can find the list of directives available for a given Dispatcher version by executing validator's allowlist command in the SDK, as described above.
-
-For more details on the local validation see the following section.
+For a list of the supported in Apache modules see (**Link TBD**)
 
 ## Local validation {#local-validation-flexible-mode}
 
@@ -226,21 +180,38 @@ Use the `validate.sh` script as shown below:
 ```
 
 $ validate.sh src/dispatcher
+opt-in USE_SOURCES_DIRECTLY marker file detected
 Phase 1: Dispatcher validator
-2019/06/19 16:02:55 No issues found
+Cloud manager validator 2.0.32
 Phase 1 finished
 Phase 2: httpd -t validation in docker image
-Running script /docker_entrypoint.d/10-create-docroots.sh
-Running script /docker_entrypoint.d/20-wait-for-backend.sh
-Waiting until aemhost is available
-aemhost resolves to xx.xx.xx.xx
-Running script /docker_entrypoint.d/30-allowed-clients.sh
+values.csv not found in deployment folder: /Users/foo/src - using files in 'conf.d' and 'conf.dispatcher.d' subfolders directly
+processing configuration subfolder: conf.d
+processing configuration subfolder: conf.dispatcher.d
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until localhost is available
+localhost resolves to ::1
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
 # Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
 /farms {
-...
+
+... 
+
 }
 Syntax OK
 Phase 2 finished
+Phase 3: Immutability check
+reading immutable file list from /etc/httpd/immutable.files.txt
+
+...
+
+no immutable file has been changed - check is SUCCESSFUL
+Phase 3 finished
 
 ```
 
@@ -248,11 +219,11 @@ The script does the following:
 
 1. It runs the validator. If the configuration isn't valid, the script fails.
 2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
-3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified. This is a new check, introduced with AEM SDK version v2021.1.4738 that also includes Dispatcher Tools version 2.0.36. Before this update, customers might have incorrectly assumed that any local SDK modifications of those immutable files would also be applied to the Cloud environment.
+3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified.
 
 During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
 
-**Phase 1**
+### Phase 1 {#first-phase}
 
 If a directive is not allowlisted, the tool logs an error and returns a non-zero exit code. Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
 
@@ -382,9 +353,7 @@ Cloud manager validator 2.0.xx
 
 Avoid this error by copying and pasting the path from Windows Explorer and then on the command prompt using a `cd` command into that path.
 
-**To Brian: Maybe we can mention how to run the first phase separately (as we do with the other phases).**
-
-**Phase 2**
+### Phase 2 {#second-phase}
 
 This phase checks the apache syntax by starting Docker in an image. Docker must be installed locally, but note that it’s not necessary for AEM to be running.
 
@@ -395,7 +364,7 @@ This phase can also be run independently through `bin/docker_run.sh src/dispatch
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will also be executed and any errors will be included in the Cloud Manager Build Images step failure log.
 
-**Phase 3**
+### Phase 3 {#third-phase}
 
 If there is a failure in this phase, it implies that Adobe has changed one or more immutable files and you must replace the corresponding immutable files with the new version delivered in the `src` directory of the SDK. The log sample bellow illustrates this issue:
 
@@ -419,13 +388,9 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 This phase can also be run independently through `bin/docker_immutability_check.sh src/dispatcher`.
 
-**To Brian: Please check the phrase above for accuracy.**
-
 ## Debugging your Apache and Dispatcher configuration {#debugging-apache-and-dispatcher-configuration}
 
-Please note that you can run apache dispatcher locally by using `./bin/docker_run.sh out` `docker.for.mac.localhost:4503 8080`.
-
-**To Brian: Please check the phrase above for accuracy.**
+Please note that you can run apache dispatcher locally by using `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
 
 As stated previously, Docker must be installed locally and it is not necessary for AEM to be running. Windows users need to use Windows 10 Professional or other distributions that support Docker. This is a pre-requisite for running and debugging Dispatcher on a local computer.
 
@@ -544,5 +509,3 @@ As stated previously, with the CM 2021.7.0 release, the AEM archetype includes t
    * Use Cloud Manager to deploy to staging.
    * Test thoroughly.
    * Use Cloud Manager to continue the deployment to production.
-
-   **To Brian: Do we leave the section above in the Flexible mode page?**
