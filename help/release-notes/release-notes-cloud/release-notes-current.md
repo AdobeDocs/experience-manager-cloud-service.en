@@ -85,21 +85,38 @@ The next release is planned for July 15, 2021.
 
 ### New features in [!DNL Assets] {#ga-features-assets}
 
-* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of same asset. The functionality does not require any code and works from within the DAM.
-* [!DNL Adobe Asset Link] v3.0 for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [!DNL Adobe Asset Link] v2.0 for [!DNL Adobe XD] is released. It provides:
+* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [Generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
+
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) for [!DNL Adobe XD] is available. It provides:
 
   * Support for [!DNL Assets Essentials].
   * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
 
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
+* The [Asset Bulk Ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor) lets you add metadata during a bulk ingestion.
 
 ### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}
 
 * The view settings are enhanced to let users choose a default view and a default sorting parameter.
+
+  ![Set default view in View Settings](/help/assets/assets/view-settings-for-defaults.png)
+
 * The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
+
 * Users can search and filter the folders based on property predicates.
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+
+  ![Filter search folders using search predicates](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5. The controls available in the preview are to zoom, to navigate to pages, to undock controls, and to view in full screen. The integrated PDF viewer supports AI, DOCX, INDD, PDF, and PSD file formats. You can comment on the asset itself but commenting and annotations within the PDF file are not supported.
+
+  ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
+
+  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
 
@@ -140,6 +157,27 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * When a field is validated before submitting data to backend service via Form Data Model (FDM), validations succeed but the Form Data Model service fail to invoke post validation.
 * When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
+## [!DNL Adobe Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
+
+This section outlines the Release Notes for AEM Screens as a Cloud Service.
+
+### Release Date {#release-date-june-screens}
+
+The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
+
+### What's New {#what-is-new-screens-june}
+
+>[!NOTE]
+>See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
+
+* Bulk Device Registration Management means that provisioning massive amounts of player devices is faster and more efficient.
+
+* Improved search and filter options for each of the Device, Display, and Channel inventory views.
+
+* Device heath snapshot saves time by providing critical status as a glance.
+
+* Object details page offers a summary of the most relevant information for each object in your project.
+
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
@@ -150,5 +188,25 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * Commerce Core Components support Adobe Commerce Sensei Recs data collection
 * Improved SEO-friendly URLs for category pages
 * Support for custom HTTP headers per site/config
+
+## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt-latest}
+
+The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
+
+### What's New {#what-is-new-ctt-latest}
+
+* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
+
+* Guardrail added to CTT to prevent users from stopping an ingestion and potentially corrupting data once it has reached the critical point during the ingestion phase.
+
+* Extraction logs made more descriptive to help with troubleshooting.
+
+* Added more descriptive ingestion status messages in the UI.
+
+### Bug Fixes {#bug-fixes-ctt-latest}
+
+* While stopping an ingestion on the Author instance, the UI overwrote a previously finished ingestion on the Publish instance to `STOPPED` from `FINISHED`. This has been fixed. 
 
 
