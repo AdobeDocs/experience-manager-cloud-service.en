@@ -1,9 +1,6 @@
 ---
 title: Adding Screens Add-on to an Existing Program in Cloud Manager
 description: This page describes adding a Screens add-on to an existing program in Cloud Manager for Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Adding Screens Add-on to an Existing Program in Cloud Manager {#adding-screens-program}

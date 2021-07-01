@@ -114,7 +114,6 @@ You can add custom columns to the following reports to display more data for you
 -->
 
 * Upload
-* Download
 * Expiration
 * Modification
 * Publish
