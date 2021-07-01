@@ -207,4 +207,20 @@ The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
 
 * While stopping an ingestion on the Author instance, the UI overwrote a previously finished ingestion on the Publish instance to `STOPPED` from `FINISHED`. This has been fixed. 
 
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.16 is June 30, 2021.
+
+### What's New {#what-is-new-bpa-latest}
+
+* Ability to detect and report on missing child nodes in folders under `/content/dam`. 
+
+* Ability to detect and report on the version of Best Practices Analyzer used.  
+
+### Bug Fixes {#bug-fixes-bpa-latest}
+
+* Logging error related to Unsupported Repository Structure (URS) fixed.
+
 
