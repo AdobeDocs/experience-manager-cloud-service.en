@@ -87,17 +87,36 @@ The next release is planned for July 15, 2021.
 
 * Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [Generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Adobe Asset Link] v3.0 for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [!DNL Adobe Asset Link] v2.0 for [!DNL Adobe XD] is released. It provides:
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) for [!DNL Adobe XD] is available. It provides:
 
   * Support for [!DNL Assets Essentials].
   * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
 
+* The [Asset Bulk Ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor) lets you add metadata during a bulk ingestion.
+
 ### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}
 
 * The view settings are enhanced to let users choose a default view and a default sorting parameter.
+
+  ![Set default view in View Settings](/help/assets/assets/view-settings-for-defaults.png)
+
 * The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
+
 * Users can search and filter the folders based on property predicates.
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+
+  ![Filter search folders using search predicates](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5. The controls available in the preview are to zoom, to navigate to pages, to undock controls, and to view in full screen. The integrated PDF viewer supports AI, DOCX, INDD, PDF, and PSD file formats. You can comment on the asset itself but commenting and annotations within the PDF file are not supported.
+
+  ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
+
+  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
 
@@ -114,28 +133,27 @@ The next release is planned for July 15, 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### What is new in [!DNL Forms] {#what-is-new-forms}
+### New features in [!DNL Forms] {#what-is-new-forms}
 
-* Added ability to filter custom columns in AEM Inbox.
-* Added ability to use the theme editor and style layer of adaptive form editor to style the captcha component. 
-* Improved speed and accuracy for automatically detecting logical sections in the source PDF forms and converting those into corresponding adaptive form panels.
-* Added move action to move a PDF or XDP file from one folder to another.
+* Forms administrators can filter custom columns in AEM Inbox.
+* Forms developers can use the theme editor and style layer of adaptive form editor to style the captcha component.
+* Improved accuracy for automatically detecting logical sections in the source forms and converting those into corresponding adaptive form panels.
+* Added move action to help shift a PDF or XDP file from one folder to another.
+* Reduced load time and improved performance of adaptive forms editor and theme editor.
 
 ### Beta feature of [!DNL Forms]  {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
-  * Generate final form documents by populating template files with XML data.
+  * Generate documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
   * Generate print PDFs from an XFA form PDF and Adobe Acrobat Form (AcroForm).
-
-* **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization. 
 
 You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### Bugs fixed in [!DNL Forms] {#forms-bugs-fixed}
 
 * When a field is validated before submitting data to backend service via Form Data Model (FDM), validations succeed but the Form Data Model service fail to invoke post validation.
-* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. This is a known issue in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Adobe Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -188,5 +206,21 @@ The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
 ### Bug Fixes {#bug-fixes-ctt-latest}
 
 * While stopping an ingestion on the Author instance, the UI overwrote a previously finished ingestion on the Publish instance to `STOPPED` from `FINISHED`. This has been fixed. 
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.16 is June 30, 2021.
+
+### What's New {#what-is-new-bpa-latest}
+
+* Ability to detect and report on missing child nodes in folders under `/content/dam`. 
+
+* Ability to detect and report on the version of Best Practices Analyzer used.  
+
+### Bug Fixes {#bug-fixes-bpa-latest}
+
+* Logging error related to Unsupported Repository Structure (URS) fixed.
 
 
