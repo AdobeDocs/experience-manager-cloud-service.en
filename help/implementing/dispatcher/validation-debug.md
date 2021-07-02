@@ -213,7 +213,7 @@ Phase 3 finished
 The script has the following three phases:
 
 1. It runs the validator. If the configuration isn't valid, the script fails.
-2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
+2. It executes the `httpd -t` command to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
 3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified.
 
 During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
