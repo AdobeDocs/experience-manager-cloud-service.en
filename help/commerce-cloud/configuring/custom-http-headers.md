@@ -7,7 +7,9 @@ description: Configuring custom HTTP headers
 
 ## Overview
 
-To gain more control over their backend, users can configure custom HTTP headers that would be sent to the commerce engine, along with the ones already sent by CIF. Common use-cases include multi-store setups in which you can use HTTP headers to control the response of the commerce back-end.
+To gain more control over their backend, authors can configure custom HTTP headers that would be sent to the commerce engine, along with the ones already sent by CIF. Common use-cases include multi-store setups in which you can use HTTP headers to control the response of the commerce back-end.
+
+Note that developers can always configure custom HTTP headers using the GraphQL client configuration.
 
 ## Configuration
 
