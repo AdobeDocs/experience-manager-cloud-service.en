@@ -10,14 +10,11 @@ feature: Dispatcher
 >[!NOTE]
 >For more information about Dispatcher in the Cloud and how to download Dispatcher Tools see (**link to dispatcher overview TBD**).
 
-The following sections describe the flexible mode file structure, local validation, debugging.
+The following sections describe the flexible mode file structure, local validation, and debugging.
 
-Please be aware that as of the Cloud Manager 2021.7.0 release, the AEM archetype includes the file `opt-in/USE_SOURCES_DIRECTLY`, which removes legacy mode limitations around the number and size of files, such as:
+This article assumes that your project's dispatcher configuration includes the file `opt-in/USE_SOURCES_DIRECTLY`, which causes the SDK and runtime to validate and deploy the configuration in an improved way compared to the legacy mode, removing limitations around the number and size of files.
 
-* a single rewrite file that must be used rather than files that are site-specific.
-* the sum of the contents of the customizable files must be less than 1MB.
-
-Using flexible mode also causes the SDK and runtime to validate and deploy the configuration in an improved way. As such, it is **highly recommended** that you migrate from legacy mode to flexible mode as outlined in the migration section (**link TBD**).
+As such, if your dispatcher configuration does not include the aforementioned file, it is **highly recommended** that you migrate from legacy mode to this flexible mode as outlined in the migration section (**link TBD**).
 
 ## File structure {#flexible-mode-file-structure}
 
@@ -213,13 +210,13 @@ Phase 3 finished
 
 ```
 
-The script does the following:
+The script has the following three phases:
 
 1. It runs the validator. If the configuration isn't valid, the script fails.
 2. It executes the `httpd -t command` to test if syntax is correct such that apache httpd can start. If successful, the configuration should be ready for deployment.
 3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified.
 
-During a Cloud Manager deployment, the `httpd -t syntax` check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
+During a Cloud Manager deployment, the `httpd -t` syntax check will be executed as well and any errors will be included in the Cloud Manager `Build Images step failure` log.
 
 ### Phase 1 {#first-phase}
 
@@ -495,7 +492,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migrating from legacy mode to flexible mode
 
-As stated previously, with the CM 2021.7.0 release, the AEM archetype includes the file **opt-in/USE_SOURCES_DIRECTLY**, which removes previous limitations around the number and size of files. It also causes the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the following steps to ensure a safe transition:
+With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with AEM archetype 28 or higher, which includes the file **opt-in/USE_SOURCES_DIRECTLY**. This removes previous limitations of that legacy mode (**link TBD**) around the number and size of files, also causing the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the following steps to ensure a safe transition:
 
 1. **Local testing.** Using the most recent dispatcher tools SDK, add the folder and file `opt-in/USE_SOURCES_DIRECTLY`. Follow the "local validation" instructions in this article to test that the dispatcher works locally.
 2. **Cloud development testing:**
