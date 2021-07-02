@@ -13,12 +13,14 @@ hidefromtoc: yes
 
 The following sections describe the legacy mode file structure, local validation, debugging and how to migrate from the legacy mode to the flexible mode.
 
-Please be aware that as of the Cloud Manager 2021.7.0 release, the AEM archetype includes the file `opt-in/USE_SOURCES_DIRECTLY`, which removes legacy mode limitations  around the number and size of files, such as:
+This article assumes that your project's dispatcher configuration does not include the file opt-in/USE_SOURCES_DIRECTLY. As a result, it has limitations around the number and size of files, such as:
 
 * a single rewrite file that must be used rather than files that are site-specific.
 * the sum of the contents of the customizable files must be less than 1MB.
 
-Using flexible mode also causes the SDK and runtime to validate and deploy the configuration in an improved way. As such, it is **highly recommended** that you migrate from legacy mode to flexible mode as outlined in the migration section (**link TBD**).
+As of the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with AEM archetype 28 and higher, which includes the aforementioned file.
+
+It is **highly recommended** that you migrate from legacy mode to flexible mode as outlined in the migration section (**link TBD**). Using flexible mode also causes the SDK and runtime to validate and deploy the configuration in an improved way.
 
 ## File structure {#legacy-mode-file-structure}
 
@@ -490,15 +492,4 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migrating from legacy mode to flexible mode
 
-As stated previously, with the CM 2021.7.0 release, the AEM archetype includes the file **opt-in/USE_SOURCES_DIRECTLY**, which removes previous limitations around the number and size of files. It also causes the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the following steps to ensure a safe transition:
-
-1. **Local testing.** Using the most recent dispatcher tools SDK, add the folder and file `opt-in/USE_SOURCES_DIRECTLY`. Follow the "local validation" instructions in this article to test that the dispatcher works locally.
-2. **Cloud development testing:**
-   * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the non-production pipeline to a Cloud development environment.
-   * Use Cloud Manager to deploy to a Cloud development environment.
-   * Test thoroughly.
-3. **Deploy to production:**
-   * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the production pipeline to the Cloud stage and production environments.
-   * Use Cloud Manager to deploy to staging.
-   * Test thoroughly.
-   * Use Cloud Manager to continue the deployment to production
+With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with AEM archetype 28 or higher, which includes the file **opt-in/USE_SOURCES_DIRECTLY**. This removes previous limitations of the legacy mode around the number and size of files, also causing the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the methods described in the flexible mode page(**link to dispatcher overview TBD**).
