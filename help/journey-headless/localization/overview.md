@@ -35,10 +35,11 @@ Although you can go directly to a particular part of the journey, many concepts 
 |---|---|---|
 |0|AEM Headless Localization Journey|This document|
 |1|[Learn about headless content and how to localize in AEM](learn-about.md)|Learn headless concepts, how they map to AEM, and the theory of AEM localization.|
-|2|[Configure translation connector](configure-connector.md)|Learn how to connect AEM to a translation service.|
-|3|[Configure translation rules](translation-rules.md)|Learn how to define translation rules to identify content for localization.|
-|4|[Translate content](translate-content.md)|Use the translation connector and rules to translate your headless content.|
-|5|[Publish translated content](publish-content.md)|Learn how to publish your localized content.|
+|2|[Get started with AEM headless localization](getting-started.md)|Get to know how to organize your headless content and how AEM's localization tools work.|
+|3|[Configure the translation connector](configure-connector.md)|Learn how to connect AEM to a translation service.|
+|4|[Configure translation rules](translation-rules.md)|Learn how to define translation rules to identify content for localization.|
+|5|[Translate content](translate-content.md)|Use the translation connector and rules to translate your headless content.|
+|6|[Publish translated content](publish-content.md)|Learn how to publish your localized content.|
 
 ## What's Next {#what-is-next}
 
