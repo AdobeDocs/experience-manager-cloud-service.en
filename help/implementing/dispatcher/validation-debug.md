@@ -338,7 +338,7 @@ On Windows, the dispatcher validator is case-sensitive. As such, it can fail to 
 
 ```
 
-bin\validator.exe full src
+bin\validator.exe -relaxed full src
 Cloud manager validator 2.0.xx
 2021/03/15 18:15:40 Dispatcher configuration validation failed:
   conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
