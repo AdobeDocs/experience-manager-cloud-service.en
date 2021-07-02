@@ -10,7 +10,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 
 Asset microservices provides for scalable and resilient processing of assets using cloud-native applications (also called workers). Adobe manages the services for optimal handling of different asset types and processing options.
 
-Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like ImageMagick.
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. For example, thumbnail extraction of PSD and PSB formats is now possible but previously required third-party solutions like [!DNL ImageMagick].
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**. Experience Manager provides a basic default set up and let administrators add more specific asset processing configuration. Administrators create, maintain, and modify the configurations of post-processing workflows, including optional customization. Customizing the workflows lets developers extend the default offering.
 
@@ -27,7 +27,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## Understand asset processing options {#get-started}
 
-Experience Manager allows for the following levels of processing.
+[!DNL Experience Manager] allows for the following levels of processing.
 
 | Option | Description | Use cases covered |
 |---|---|---|
@@ -200,17 +200,26 @@ Ensure that the last step of each post-processing workflows is `DAM Update Asset
 
 ### Configure post-processing workflow execution {#configure-post-processing-workflow-execution}
 
-To configure the post-processing workflow models to be executed for assets uploaded or updated in the system after the asset microservices processing finishes, the Custom Workflow Runner service needs to be configured.
+After the asset microservices completes processing the uploaded assets, you can define post-processing to further process some assets. To configure post-processing using workflow models, you can do one of the following:
+
+* Configure the Custom Workflow Runner service.
+* Apply a workflow model in folder [!UICONTROL Properties].
 
 The Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is an OSGi service and provides two options for configuration:
 
-* Post-processing workflows by path (`postProcWorkflowsByPath`): Multiple workflow models can be listed, based on different repository paths. Paths and models should be separated by a colon. Simple repository paths are supported and should be mapped to a workflow model in the `/var` path. For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Post-processing workflows by path (`postProcWorkflowsByPath`): Multiple workflow models can be listed, based on different repository paths. Separate paths and models using a colon. Simple repository paths are supported. Map these to a workflow model in the `/var` path. For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Post-processing workflows by expression (`postProcWorkflowsByExpression`): Multiple workflow models can be listed, based on different regular expressions. Expressions and models should be separated by a colon. The regular expression should point to the Asset node directly, and not one of the renditions or files. For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
 >Configuration of the Custom Workflow Runner is a configuration of an OSGi service. See [deploy to Experience Manager](/help/implementing/deploying/overview.md) for information on how to deploy an OSGi configuration.
 >OSGi web console, unlike in on-premise and managed services deployments of [!DNL Experience Manager], is not directly available in the cloud service deployments.
+
+To apply a workflow model in the folder [!UICONTROL Properties], follow these steps:
+
+1. Create a workflow model.
+1. Select a folder, click **[!UICONTROL Properties]** from the toolbar, and then click **[!UICONTROL Assets Processing]** tab.
+1. Under **[!UICONTROL Auto-start Workflow]**, select the required workflow, provide a title of the workflow, and then save the changes.
 
 For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
 
