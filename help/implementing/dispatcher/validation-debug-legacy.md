@@ -9,9 +9,9 @@ hidefromtoc: yes
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->For more information about Dispatcher in the Cloud and how to download Dispatcher Tools see (**link to dispatcher overview TBD**).
+>For more information about Dispatcher in the Cloud and how to download Dispatcher Tools see the [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md) page.
 
-The following sections describe the legacy mode file structure, local validation, debugging and how to migrate from the legacy mode to the flexible mode.
+The following sections describe the legacy mode file structure, local validation, debugging and how to migrate from the legacy mode to the [flexible mode](/help/implementing/dispatcher/validation-debug.md).
 
 This article assumes that your project's dispatcher configuration does not include the file opt-in/USE_SOURCES_DIRECTLY. As a result, it has limitations around the number and size of files, such as:
 
@@ -20,7 +20,7 @@ This article assumes that your project's dispatcher configuration does not inclu
 
 As of the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with AEM archetype 28 and higher, which includes the aforementioned file.
 
-It is **highly recommended** that you migrate from legacy mode to flexible mode as outlined in the migration section (**link TBD**). Using flexible mode also causes the SDK and runtime to validate and deploy the configuration in an improved way.
+It is **highly recommended** that you migrate from legacy mode to flexible mode as outlined in the migration section [Migrating from legacy mode to flexible mode](#migrating-flexible). Using flexible mode also causes the SDK and runtime to validate and deploy the configuration in an improved way.
 
 ## File structure {#legacy-mode-file-structure}
 
@@ -165,7 +165,7 @@ Default host globbing suitable for a standard project. If you need customization
 
 ## Supported Apache Modules {#apache-modules}
 
-For a list of the supported in Apache modules see (**Link TBD**)
+See [Supported Apache Modules](/help/implementing/dispatcher/disp-overview.md#supported-directives).
 
 ## Local validation {#local-validation-legacy-mode}
 
@@ -490,6 +490,6 @@ $ docker exec d75fbd23b29 httpd-test
 
 ```
 
-## Migrating from legacy mode to flexible mode
+## Migrating from legacy mode to flexible mode {#migrating-flexible}
 
-With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with AEM archetype 28 or higher, which includes the file **opt-in/USE_SOURCES_DIRECTLY**. This removes previous limitations of the legacy mode around the number and size of files, also causing the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the methods described in the flexible mode page(**link to dispatcher overview TBD**).
+With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate maven project structures with AEM archetype 28 or higher,which includes the file **opt-in/USE_SOURCES_DIRECTLY**. This removes previous limitations of the legacy mode around the number and size of files, also causing the SDK and runtime to validate and deploy the configuration in an improved way. If your dispatcher configuration does not have this file, it is highly recommended that you migrate. Use the methods described in the [flexible mode](/help/implementing/dispatcher/validation-debug.md#migrating) page.

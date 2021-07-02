@@ -41,14 +41,14 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 **For Windows**, extract the Dispatcher Tooling zip archive.
 
-## Validation and debugging using the Dispatcher Tools {#validation-debug}
+## Validation and Debugging using the Dispatcher Tools {#validation-debug}
 
 The dispatcher tools are used to validate and debug your project's Dispatcher configuration. Learn more about how to use those tools in the pages referenced below, based on whether your project's dispatcher configuration is structured in flexible mode or legacy mode:
 
-**Legacy mode** - for details around the folder structure and local validation for dispatcher configuration legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher , which is also used by Cloud Manager for new environments created after the Cloud Manager 2021.7.0 release. Customers can activate this mode by adding the folder and file` opt-in/USE_SOURCES_DIRECTLY`. By using this more flexible mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For for details on folder structure and local validation see [Validating and Debugging using Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md).
 
-**Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher , which is also used by Cloud Manager for new environments created after the Cloud Manager 2021.7.0 release. Customers can activate this mode by adding the folder and file` opt-in/USE_SOURCES_DIRECTLY`. By using this more flexible mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For details around folder structure and local validation using, see the "Flexible mode" page link TBD.
-
+* **Legacy mode** - for details on the folder structure and local validation for dispatcher configuration legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
+  
 ## Supported Apache Modules {#supported-directives}
 
 The table below shows the supported apache modules:
@@ -97,10 +97,8 @@ Allowlisted directives:
 
 ## Folder Structure {#folder-structure}
 
-The project's apache and dispatcher folder structure will differ slightly based on which mode the project is using, as described in the Debugging and Validating using the dispatcher tools section above (link). 
-
-**Link to the appropriate article for more information about the folder structure.**
+The project's apache and dispatcher folder structure will differ slightly based on which mode the project is using, as described in the [Validation and Debugging using the Dispatcher Tools](#validation-debug) section above.
 
 ## Migrating the Dispatcher configuration from AMS {#ams-aem}
 
-For details on how to migrate the Dispatcher configuration from AMS to AEM as a Cloud Service, see the Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service page.**link TBD**
+For details on how to migrate the Dispatcher configuration from AMS to AEM as a Cloud Service, see the [Migrating the Dispatcher configuration from AMS to AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service page.
