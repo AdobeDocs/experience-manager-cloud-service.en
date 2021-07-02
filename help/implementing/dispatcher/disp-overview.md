@@ -13,7 +13,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
-This page describes how to download and extract the dispatcher tools, the supported apache modules and provides a high-level overview of the legacy and flexible modes. Additionally, there are further references on validation and debugging and migrating the Dispatcher configuration from AMS to AEM as a Cloud Service
+This page describes the dispatcher tools and how to download and extract them, the supported apache modules and provides a high-level overview of the legacy and flexible modes. Additionally, there are further references on validation and debugging and migrating the Dispatcher configuration from AMS to AEM as a Cloud Service
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -43,11 +43,11 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Validation and debugging using the Dispatcher Tools {#validation-debug}
 
-The dispatcher tools are used to validate and debug your project's Dispatcher configuration. Learn more about how to use those tools in the pages referenced below, based on whether your project is structured in flexible mode or legacy mode:
+The dispatcher tools are used to validate and debug your project's Dispatcher configuration. Learn more about how to use those tools in the pages referenced below, based on whether your project's dispatcher configuration is structured in flexible mode or legacy mode:
 
-**Legacy mode** - for details around the folder structure and local validation for Legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
+**Legacy mode** - for details around the folder structure and local validation for dispatcher configuration legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
-**Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher , which is also used by Cloud Manager for new environments created after the Cloud Manager July release. Customers can activate this mode by adding the folder and file` opt-in/USE_SOURCES_DIRECTLY`. By using this mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For details around folder structure and local validation using, see the "Flexible mode" page link TBD.
+**Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher , which is also used by Cloud Manager for new environments created after the Cloud Manager 2021.7.0 release. Customers can activate this mode by adding the folder and file` opt-in/USE_SOURCES_DIRECTLY`. By using this more flexible mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For details around folder structure and local validation using, see the "Flexible mode" page link TBD.
 
 ## Supported Apache Modules {#supported-directives}
 
