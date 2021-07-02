@@ -38,7 +38,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |2|[Configure translation connector](configure-connector.md)|Learn how to connect AEM to a translation service.|
 |3|[Configure translation rules](translation-rules.md)|Learn how to define translation rules to identify content for localization.|
 |4|[Translate content](translate-content.md)|Use the translation connector and rules to translate your headless content.|
-|5|[Publish translated content](publish-content.md)|Publish your localized content.|
+|5|[Publish translated content](publish-content.md)|Learn how to publish your localized content.|
 
 ## What's Next {#what-is-next}
 
