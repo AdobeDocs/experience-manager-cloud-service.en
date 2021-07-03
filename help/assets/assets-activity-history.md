@@ -3,7 +3,7 @@ title: Activity stream in timeline
 description: This article describes how to display activity logs for assets on the timeline.
 contentOwner: AG
 feature: Asset Reports,Asset Management
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 ---
 # View asset operation logs in activity stream {#activity-stream-in-timeline}
