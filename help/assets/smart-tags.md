@@ -3,7 +3,7 @@ title: Auto-tag assets with [!DNL Adobe Sensei] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 contentOwner: AG
 feature: Smart Tags,Tagging
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
