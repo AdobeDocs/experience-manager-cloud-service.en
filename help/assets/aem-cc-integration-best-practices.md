@@ -4,7 +4,7 @@ description: Best practices integrate an Experience Manager deployment with Adob
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
-role: Architect,Business Practitioner,Administrator
+role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 ---
 # AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
