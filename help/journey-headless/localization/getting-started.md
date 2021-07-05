@@ -31,6 +31,7 @@ There are a number of requirements before you begin localizing your headless AEM
 
 * Sandbox access for testing translating your content
 * Credentials to connect to your preferred translation service
+* Be a member of the `project-administrators` group
 
 ## Structure is Key {#content-structure}
 
