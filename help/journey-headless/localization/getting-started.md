@@ -118,7 +118,9 @@ The localization tools in AEM are quite powerful, but are simple to understand a
 
 * **Translation Connector** - The connector is the link between AEM and the translation service that you use.
 * **Translation Rules** - Rules define what content should be translated.
-* **Translation Projects** - Translation Projects gather together content that should be addressed as a single translation effort and tracks the progress of the translation, interfacing with the connector to transmit the content to be translated and receive it back from the translation service.
+* **Translation Projects** - Translation projects gather together content that should be addressed as a single translation effort and tracks the progress of the translation, interfacing with the connector to transmit the content to be translated and receive it back from the translation service.
+
+You generally only need to set up your connector once for your instance and rules per headless project. Then you use translation projects to localize your content and keep its translations up to date on a continual basis.
 
 ## What's Next {#what-is-next}
 
