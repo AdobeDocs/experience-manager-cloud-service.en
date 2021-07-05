@@ -100,7 +100,9 @@ The next release is planned for July 15, 2021.
 
   ![Set default view in View Settings](/help/assets/assets/view-settings-for-defaults.png)
 
-* The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
+* The Linkshare download functionality uses asynchronous downloads that boosts the download speed. See [Download assets shared using link sharing](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Download inbox](/help/assets/assets/download-inbox.png)
 
 * Users can search and filter the folders based on property predicates.
 
@@ -206,5 +208,21 @@ The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
 ### Bug Fixes {#bug-fixes-ctt-latest}
 
 * While stopping an ingestion on the Author instance, the UI overwrote a previously finished ingestion on the Publish instance to `STOPPED` from `FINISHED`. This has been fixed. 
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.16 is June 30, 2021.
+
+### What's New {#what-is-new-bpa-latest}
+
+* Ability to detect and report on missing child nodes in folders under `/content/dam`. 
+
+* Ability to detect and report on the version of Best Practices Analyzer used.  
+
+### Bug Fixes {#bug-fixes-bpa-latest}
+
+* Logging error related to Unsupported Repository Structure (URS) fixed.
 
 
