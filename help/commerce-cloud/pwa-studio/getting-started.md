@@ -16,7 +16,7 @@ Designing the structure you need is easy with the Content Fragment Model Editor 
 
 ## Architecture {#architecture}
 
-![PWA headless architecture](/help/commerce/cif/assets/PWA-Studio_Architecture.png)
+![PWA headless architecture](/help/commerce-cloud/assets/PWA-Studio_Architecture.png)
 
 ## Setup PWA Studio {#setup-pwa}
 
