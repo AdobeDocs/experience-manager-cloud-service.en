@@ -97,7 +97,6 @@ role: Developer, Architect
       + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
     + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
     + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
-    + [Java API Guidelines](/help/implementing/developing/introduction/java-api-guidelines.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
     + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
