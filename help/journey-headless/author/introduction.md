@@ -31,7 +31,9 @@ This means that your content can be delivered to any device, in a wide range of 
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-AEM can be used as a:
+So what is AEM?
+
+AEM has a wide range of features and can also be customized to meet your requirements. In this context it can be used as a:
 
 * Headless CMS
   * Content can be authored as Content Fragments. These are self-contained items of content that can be directly accessed by a range of applications. These means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
