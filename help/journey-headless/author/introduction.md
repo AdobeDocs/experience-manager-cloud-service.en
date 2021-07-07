@@ -10,7 +10,7 @@ In this part of the [AEM Headless Content Author Journey](overview.md), you can 
 ## Objective {#objective}
 
 * **Audience**: Beginner
-* **Objective**: Introduce the concepts and terminology for Headless Authoring.
+* **Objective**: Introduce the concepts and terminology relevant to Headless Authoring.
 
 ## Content Management System (CMS) {content-management-system}
 
@@ -22,9 +22,11 @@ A Content Management System (CMS) is just what it says it is - a computer system
 
 Headless is a term used to describe systems that effectively detach the content from the manner of displaying that content on the web. 
 
-In other words, a single content-set can now be accessed by one, or more, applications. The "traditional" relationship of having one application (the CMS itself) responsible for rendering the content has been loosened.
+Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
 
-This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and means that you do not need to worry about layout and formatting.
+Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more, (independent) applications. 
+
+This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
 
 >[!NOTE]
 >If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
@@ -33,11 +35,15 @@ This means that your content can be delivered to any device, in a wide range of 
 
 So what is AEM?
 
-AEM has a wide range of features and can also be customized to meet your requirements. In this context it can be used as a:
+First and foremost, AEM is a Content Management System with a wide range of features that can also be customized to meet your requirements. 
+
+This all means that it can be used as a:
 
 * Headless CMS
-  * Content can be authored as Content Fragments. These are self-contained items of content that can be directly accessed by a range of applications. These means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
-  And as a double-whammy, these fragments can also be used when constructing AEM web pages.
+  * For headless, your content can be authored as **Content Fragments**. 
+  These are self-contained items of content that can be directly accessed by a range of applications, as they have a predefined structure, based on **Content Fragment Models**.
+  This means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
+  (And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
 
 * "Traditional" CMS
   * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
@@ -46,11 +52,14 @@ AEM has a wide range of features and can also be customized to meet your require
 
 So data modeling is another technical term - why should it interest you as an author?
 
-For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life very complicated for the applications.
+For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
-Basically the process of defining the structure for your content involves designing a model - and this is called data modeling. 
+Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling. 
 
-For AEM a Content Architect will perform the data modeling to design a range of Content Fragment Models that you then use as a basis for your Content Fragments.
+For AEM a Content Architect will perform the data modeling to design a range of **Content Fragment Models** - that you then use as a basis for your content by using **Content Fragments**.
+
+>[!NOTE]
+>If you want to learn more about data modeling you can read more under the AEM Headless Content Architect Journey.
 
 ## What's Next {#whats-next}
 
@@ -61,3 +70,5 @@ Now that you have learned the concepts and terminology, the next step is to [Lea
 * AEM Headless Developer Journey
   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
+
+* AEM Headless Content Architect Journey
