@@ -1,6 +1,6 @@
 ---
-title: Custom HTTP headers
-description: Configuring custom HTTP headers
+title: Custom HTTP Headers
+description: Configuring custom HTTP Headers
 ---
 
 # Custom HTTP Headers {#custom-http-headers}
@@ -18,7 +18,7 @@ To gain more control over their backend, authors can configure custom HTTP heade
 
 In order to configure the custom HTTP headers, one must first define them. The custom HTTP headers must first be defined by adding them to the `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` service configuration using an OSGi config.
 
-You can configure the values of the HTTP headers in the Cloud Service Configuration page for your project.
+You can configure the values of the HTTP headers in the Cloud Service Configuration page for your project:
 
 1. Go to the Cloud Service configuration page in Tools -> Cloud Services -> CIF Configuration
 1. Open an existing configuration or create a new one
