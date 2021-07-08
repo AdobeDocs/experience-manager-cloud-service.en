@@ -52,15 +52,15 @@ If an API is provided by AEM, prefer it over Sling, JCR, and OSGi. If AEM doesnâ
 
 AEM offers customizable components and content delivery options.
 
-|API|Description|
+|Feature|Description|
 |---|---|
 |[The Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)|Standardized Web Content Management (WCM) components for AEM to speed up development time and reduce maintenance cost of your websites|
 |[JSON Exporter](/help/implementing/developing/components/json-exporter.md)|Deliver the contents of any AEM page in JSON data model format|
 |[Enabling JSON Export for a Component](/help/implementing/developing/components/enabling-json-exporter.md)|Generate JSON export of component content based on a modeler framework|
-|[Assets](/help/assets/mac-api-assets.md)|Allows for create-read-update-delete (CRUD) operations on assets, including binary, metadata, renditions, and comments. See AEM Assets HTTP API|
-|[Content Fragments HTTP](/help/assets/content-fragments/assets-api-content-fragments.md)|Access Content Fragment content directly over the HTTP API via CRUD operations|
-|[Content Fragment GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
-|[Content Fragments Assets HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)|Eexact format of supported HTTP asset requests|
+|[Assets API](/help/assets/mac-api-assets.md)|Allows for create-read-update-delete (CRUD) operations on assets, including binary, metadata, renditions, and comments. See AEM Assets HTTP API|
+|[Content Fragments HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)|Access Content Fragment content directly over the HTTP API via CRUD operations|
+|[Content Fragment GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
+|[Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)|Eexact format of supported HTTP asset requests|
 
 ## SPA-Specific APIs {#spa-apis}
 
