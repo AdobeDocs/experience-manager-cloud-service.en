@@ -3,7 +3,7 @@ title: Metadata schemas define layout of metadata properties page
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
 contentOwner: AG
 feature: Metadata
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 ---
 # Metadata schemas {#metadata-schemas}
@@ -91,8 +91,11 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your schema
 | [!UICONTROL Asset Referenced By] | Add this component to view list of assets referenced by the asset.                  |
 | [!UICONTROL Asset Referencing]   | Add to display a list of assets that reference the asset.                           |
 | [!UICONTROL Products References] | Add to show the list of products linked with the asset.                             |
-| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                        |
 | [!UICONTROL Contextual Metadata] | Add to control the display of other metadata tabs in the properties page of assets. |
+
+<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
+-->
 
 #### Edit the metadata component {#edit-the-metadata-component}
 

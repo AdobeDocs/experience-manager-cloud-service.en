@@ -1,9 +1,6 @@
 ---
 title: Assigning Channel to a Display in Screens as a Cloud Service
 description: This page describes how to assign a channel to a display in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Assigning Channel to a Display in Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
