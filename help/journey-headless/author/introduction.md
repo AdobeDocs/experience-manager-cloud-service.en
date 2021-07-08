@@ -29,6 +29,7 @@ Now, headless means that your content-set can be managed in the CMS and then acc
 This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
 
 >[!NOTE]
+>
 >If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
@@ -59,6 +60,7 @@ Basically the process of defining the structure for your content to adhere to in
 For AEM a Content Architect will perform the data modeling to design a range of **Content Fragment Models** - that you then use as a basis for your content by using **Content Fragments**.
 
 >[!NOTE]
+>
 >If you want to learn more about data modeling you can read more under the AEM Headless Content Architect Journey.
 
 ## What's Next {#whats-next}

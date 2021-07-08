@@ -84,6 +84,31 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Authoring Content Fragments {#authoring-content-fragments}
 
+### What you don't need to worry about {#what-you-do-not-need-to-worry-about}
+
+OK, this might seem a slightly strange place to start, but once you open the Content Fragment Editor and start exploring you'll see various options that do not apply for your headless journey. So this is just a quick heads-up on what you can ignore:
+
+* **Content Fragment Models**
+
+  You will see the name of the Content Fragment Model at the top of the editor. This is also a link that takes you to the model editor.
+  Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. HOWEVER, they are (usually) the responsibility of another persona, the Content Architect. 
+
+  >[!NOTE]
+  >
+  >If you want to learn more, you can read the AEM Headless Content Architect Journey.
+
+* **Associated Content**
+
+  This one is quite obvious as it's a tab in the editor.
+
+  Content Fragments have been available in AEM for quite a few versions. Originally they were made available for "traditional" use when authoring pages....and they are still used in this context. This can involve associating assets (for example images) that although not embedded in the fragment, needs to be available to the author when authoring a page.
+
+* **Preview**
+
+  This is a technical view, primarily intended for developers.
+
+OK, now we've cleared that up we can start on the interesting part.
+
 ### Organizing and Navigating {#organizing-and-navigating}
 
 ### Creating {#creating}
@@ -91,8 +116,6 @@ You can view additional information about items using the Rail Selector. This al
 ### Editing {#editing}
 
 ### Publishing {#publishing}
-
-### Headless vs "Traditional" use of Content Fragments {#headless-vs-traditional}
 
 ## What's Next {#whats-next}
 
@@ -125,3 +148,5 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
     * ...basically everything on this page is relevant, apart from actually creating a Content Fragment Model, and Associated Content.
 
   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+
+* AEM Headless Content Architect Journey
