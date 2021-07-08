@@ -309,7 +309,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * Template the page is based on
   * Modification details
   * Page language
-  * Publication details
+  * Publication, and Preview details
 
 ### Card View {#card-view}
 
@@ -354,6 +354,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
   * **Modified** - Last modified date and last modified by user
   * **Published** - Publication status
+  * **Preview** - Preview status
   * **Template** - Template on which the page is based
   * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
   * **Page analytics**
