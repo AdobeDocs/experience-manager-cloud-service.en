@@ -6,6 +6,15 @@ description: Get to know how to organize your headless content and how AEM's loc
 
 Get to know how to organize your headless content and how AEM's localization tools work.
 
+## The Story So Far {#story-so-far}
+
+In the previous document of the AEM headless localization journey, [Learn about headless content and how to localize in AEM](learn-about.md) you learned the basic theory of what a headless CMS is and you should now:
+
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and localization.
+
+This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM's localization tools to translate that content.
+
 ## Objective {#objective}
 
 This document helps you understand how to get started localizing headless content in AEM. After reading you should:
