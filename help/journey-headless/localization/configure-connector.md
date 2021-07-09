@@ -67,7 +67,7 @@ To create a new translation configuration:
 
 1. Provide the following information.
 
-   1. **Translation Method** - Select **Machine Translation** or **Human Translation** depending on your translation provider.
+   1. **Translation Method** - Select **Machine Translation** or **Human Translation** depending on your translation provider. For the purposes of this journey we will assume machine translation.
    1. **Translation Providers** - Select the connector you installed for your translation service from the list.
    1. **Content Category** - Select the most appropriate category to better target the translation (only for machine translation).
    1. **Translate Content Fragment Assets** - ???
