@@ -84,14 +84,30 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Authoring Content Fragments {#authoring-content-fragments}
 
-### What you don't need to worry about {#what-you-do-not-need-to-worry-about}
+### Organizing and Navigating {#organizing-and-navigating}
 
-OK, this might seem a slightly strange place to start, but once you open the Content Fragment Editor and start exploring you'll see various options that do not apply for your headless journey. So this is just a quick heads-up on what you can ignore:
+Unless you have very few Content Fragments you will want to organize them - so that you (and others) can find them again.
+
+You can do this by creating a series of folders within the Assets console. You then navigate through these folders to create, and edit your Content Fragments.
+
+>[!NOTE]
+>
+>You will probably be given an initial folder where you can create your folders. 
+>
+>This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. You can read more under Apply the Configuration to your Assets Folder.
+
+### Creating {#creating}
+
+### Editing {#editing}
+
+#### What you don't need to worry about {#what-you-do-not-need-to-worry-about}
+
+OK, this might seem a slightly strange section, but once you open the Content Fragment Editor and start exploring you'll see various options that do not apply for your headless journey. So this is just a quick heads-up on what you can ignore:
 
 * **Content Fragment Models**
 
   You will see the name of the Content Fragment Model at the top of the editor. This is also a link that takes you to the model editor.
-  Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. HOWEVER, they are (usually) the responsibility of another persona, the Content Architect. 
+  Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. HOWEVER, creating and editing them are (usually) the responsibility of another persona, the Content Architect. 
 
   >[!NOTE]
   >
@@ -105,15 +121,9 @@ OK, this might seem a slightly strange place to start, but once you open the Con
 
 * **Preview**
 
-  This is a technical view, primarily intended for developers.
+  This is another tab in the editor and provides a technical view, primarily intended for developers.
 
-OK, now we've cleared that up we can start on the interesting part.
-
-### Organizing and Navigating {#organizing-and-navigating}
-
-### Creating {#creating}
-
-### Editing {#editing}
+<!-- OK, now we've cleared that up we can start on the interesting part. -->
 
 ### Publishing {#publishing}
 
@@ -140,8 +150,10 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
-  
+ 
   * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
+
+    * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
   
     * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
   
