@@ -87,7 +87,7 @@ Now that you have completed this part of the headless localization journey you s
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Configure the translation connector,](configure-connector.md) where you will learn how to connect AEM to a translation service.
 
 ## Additional Resources {#additional-resources}
 
