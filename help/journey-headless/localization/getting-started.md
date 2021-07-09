@@ -30,6 +30,7 @@ There are a number of requirements before you begin localizing your headless AEM
 
 * Experience localizing content for a CMS
 * Experience using the basic features of a large-scale CMS
+* Have a working knowledge of AEM basic handling
 * Understanding of the translation service you are using
 
 >[!TIP]
@@ -160,6 +161,7 @@ Build on this knowledge and continue your AEM headless localization journey by n
 
 While it is recommended that you move on to the next part of the headless localization journey by reviewing the document [Configure the translation connector](configure-connector.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
+* [AEM Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Learn the basics of the AEM UI to be able to comfortably navigate and perform essential tasks such as finding your content.
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.
 * [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn how to create and manage both machine and human translation projects in AEM.
