@@ -67,6 +67,21 @@ In order for headless content to be delivered consistently across channels, regi
 
 The content architect works early in the project to define this structure. As previously recommended, as the localization specialist, you should work closely with the content architect to organize the content.
 
+Because the Content Models define the structure of your content, you will need to know which fields need to be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
+
+1. Navigate to **Tools** -&gt; **Assets** -&gt; **Content Fragment Models**.
+1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
+1. The models are listed. Tap or click on the model to see the details.
+![Content Fragment Models](assets/content-fragment-models.png)
+1. The **Content Fragment Model Editor** opens.
+   1. The left column contains the fields of the model. This column interests us.
+   1. The right column contains the fields that can be added to the model. This column we can ignore.
+![Content Fragment Model Editor](assets/content-fragment-model-editor.png)
+1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
+![Content Fragment Model Editor detail](assets/content-fragment-model-editor-detail.png)
+
+Take note of the field **Property Name** for all fields that must be translated. You will need this information for the next step in the journey.
+
 ### Content Fragments {#content-fragments}
 
 Content Models are used by the content authors to create the actual headless content. Content authors select which model to base their content on an then create Content Fragments. Content Fragments are instances of the models and represent actual content to be delivered headlessly.
