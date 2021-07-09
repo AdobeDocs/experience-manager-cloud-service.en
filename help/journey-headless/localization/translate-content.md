@@ -51,3 +51,40 @@ You receive a message that the project was created.
 
 ## Using a Translation Project {#using-translation-project}
 
+AEM evaluated the headless content under the path you navigated to based on the rules that you previously defined. Based on those rules, it extracted the content that requires translation into a new translation project.
+
+To view the translation project:
+
+1. Navigate to **Navigation** -&amp; **Projects**.
+1. Tap or click the project that was created in the previous section.
+
+![Translation project](assets/translation-project.png)
+
+The project is divided into multiple cards.
+
+* **Summary** - This card shows the basic header information of the project including the owner, language, and translation provider.
+* **Translation Job** - This card shows an overview of the actual translation job including the status, number of assets, etc.
+* **Team** - This card shows the users who are collaborating on this translation project. This journey will not cover this topic.
+* **Tasks** - Additional tasks associated with translating the content such as to do items or workflow items. This journey will not cover this topic.
+
+To see the detail of the headless content included in this project:
+
+1. Tap or click on the ellipsis button at the bottom of the **Translation Job** card.
+1. The **Translation Job** window lists all items in the job.
+![Translation Job detail](assets/translation-job-detail.png)
+1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
+1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments console.
+
+![Translation Job options](assets/translation-job-options.png)
+
+Typically the content for the translation job starts in the **Draft** state as indicated by the **State** column in the **Translation Job** window.
+
+To start the translation job, return to the translation project overview and tap or click the chevron button at the top of the **Translation Job** card and select **Start**.
+
+![Start translation job](assets/start-translation-job.png)
+
+AEM now communicates with your translation configuration and connector to send the content to the translation service. You can view the progress of the translation by returning to the **Translation Job** window and viewing the **State** column of the entries.
+
+![Translation Job approved](assets/translation-job-approved.png)
+
+Machine translations automatically return with a state of **Approved**. Human translation allows for more interaction, but is beyond the scope of this journey.
