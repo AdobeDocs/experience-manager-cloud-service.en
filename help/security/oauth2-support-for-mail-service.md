@@ -1,8 +1,8 @@
 ---
 title: OAuth2 Support for the Mail Service
 description: Oauth2 Support for the Mail Service in Adobe Experience Manager as a Cloud Service
+exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 ---
-
 # OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}
 
 AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service, in order to allow organizations to adhere to secure email requirements.

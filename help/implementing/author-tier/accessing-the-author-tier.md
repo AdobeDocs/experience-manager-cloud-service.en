@@ -11,8 +11,4 @@ The URL format is currently as follows:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-Eventually, this format will be replaced with a standard Adobe Experience Cloud URL format:
-
-* `https://experience.adobe.com/#/@[TenantId]/`
-
-Therefore it is not supported to configure custom domain names for the AEM author tier.
+Custom domain names for the AEM author tier is not supported.

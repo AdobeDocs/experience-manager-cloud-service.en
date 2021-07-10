@@ -64,7 +64,7 @@ role: Developer, Architect
   + [Logging](developing/introduction/logging.md)
   + [Configurations and the Configuration Browser](developing/introduction/configurations.md)
   + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
-  + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+  + [API Reference Materials](/help/implementing/developing/reference-materials.md)
   + [Generating Access Tokens for Server Side APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
   + [Headful and Headless in AEM](developing/headful-headless.md)
   + Full Stack AEM Development {#full-stack}
@@ -97,7 +97,6 @@ role: Developer, Architect
       + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
     + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
     + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
-    + [Java API Guidelines](/help/implementing/developing/introduction/java-api-guidelines.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
     + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
