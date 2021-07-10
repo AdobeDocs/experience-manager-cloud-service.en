@@ -72,17 +72,17 @@ Explore the following cards available in Best Practices Analysis Report page:
 
 #### Report Properties {#report-properties}
 
-This card provides information about report properties such as report date, duration, filters, upload date, and Adobe Experience Manager (AEM) details.
+The **Report Properties** card provides information about report properties such as report date, duration, filters, upload date, and Adobe Experience Manager (AEM) details.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Report Overview {#report-overview}
 
-This card provides the report findings
+This **Report Overview** card provides the report findings, as shown in the figure below.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Clicking on this report opens the **Report** tab, as shown in the figure below.
+Clicking on this report opens the **Report** tab.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 

@@ -15,3 +15,7 @@ The key benefits of using Cloud Acceleration Manager are:
 * Provides an assessment in an easy to consume format.
 * Guides and manages the transition journey.
 * Provides best practices, relevant help, and access to tools to minimize migration time.
+
+## What’s Next {#whats-next}
+
+Once you have learnt what is Cloud Acceleration Manager, you are now ready to use and Get Started with Cloud Acceleration Manager.
