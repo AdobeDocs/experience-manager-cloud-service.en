@@ -107,10 +107,4 @@ For project transitioning from AMS or an on-premises installation Adobe strongly
 
 ## Asset Handling and Delivery {#asset-handling}
 
-Asset upload, treatment, and download have been optimized in Assets as a Cloud Service to be more efficient enabling better scaling and faster uploads and downloads. However this may impact some existing custom code.
-
-* The default workflow **DAM Asset Update** in previous versions of AEM is no longer available.
-* Web site components that deliver a binary **without transformation** should use direct download.
-  * The Sling GET servlet has been changed to do this by default.
-* Web site components that deliver a binary **with transformation** (for example, resize via servlet) can continue to operate as they have.
-* Assets that come in via Package Manager require manual re-processing using the **Reprocess Asset** action in the Assets interface.
+Asset upload, processing, and download is optimized in [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] is now more efficient, enables more scaling, and lets you upload and download at much faster rate. Also, it impacts the existing custom code and some operations. For a list of changes and for parity with [!DNL Experience Manager] 6.5 features, see the [changes to [!DNL Assets]](/help/assets/assets-cloud-changes.md).

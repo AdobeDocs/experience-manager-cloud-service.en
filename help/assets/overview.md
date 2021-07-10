@@ -3,7 +3,7 @@ title: Introduction to Assets as a [!DNL Cloud Service]
 description: What's new in Assets as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management
-role: Business Practitioner,Leader,Architect
+role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 ---
 # Introducing Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
@@ -29,7 +29,7 @@ The following are the key benefits of Assets as a [!DNL Cloud Service]. To know 
 * **Latest software**: Always current and always updated. All users have only the latest software with all patches, features, security, and bug fixes available to them. Developers and integrator work with the latest set of APIs without issues of multi-version support.
 * **Always online**: Zero downtime (0dt), thanks to the instance deployed in a cluster with backups and redundancy. Upgrades are 0dt as well.
 * **Constant monitoring**: The monitoring of the system is automated and built-in checks and triggers help maintain the performance, availability, and overall robustness.
-* **Hassle-free deployments**: AEM in the Cloud operations are fully automated that require no manual intervention. For automated deployments, the Cloud Manager (CM) component automates the build of deployable Docker images containing your custom code.
+* **Hassle-free deployments**: AEM in the Cloud operations are completely automated that require no manual intervention. For automated deployments, the Cloud Manager (CM) component automates the build of deployable Docker images containing your custom code.
 
 ## New Assets capabilities {#whats-new-assets}
 

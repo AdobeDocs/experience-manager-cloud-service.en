@@ -1,12 +1,9 @@
 ---
 title: Creating and Managing Channels in Screens as a Cloud Service
 description: This page describes how to create and manage channels in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
-# Creating and Managing Channels in Screens as a Cloud Service {#creating-channels-screens-cloud}
+# Creating and Managing a Channel in Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Once you have created an AEM Screens Project, you must create channels.
 ***Channels***, display a sequence of content (images and videos), a website, or a single-page application.
@@ -87,4 +84,4 @@ The following templates are available while using the **Create** channel wizard:
 
 ## What's Next {#whats-next}
 
-Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md) before managing your players from Screens Services Provider.
+Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) before managing your players from Screens Services Provider.
