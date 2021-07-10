@@ -1,9 +1,6 @@
 ---
 title: Role Definitions in AEM Screens as a Cloud Service
 description: This page describes role definitions in  AEM Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Role Definitions {#role-definitions}

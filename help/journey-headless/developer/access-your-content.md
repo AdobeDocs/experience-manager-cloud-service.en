@@ -1,8 +1,8 @@
 ---
 title: How to Access Your Content via AEM Delivery APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use GraphQL queries to access your Content Fragments content.
+exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 ---
-
 # How to Access Your Content via AEM Delivery APIs {#access-your-content}
 
 In this part of the [AEM Headless Developer Journey,](overview.md) you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).

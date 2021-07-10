@@ -2,7 +2,7 @@
 title: Search facets.
 description: This article describes how to create, modify, and use search facets in AEM.
 feature: Search,Metadata
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 ---
 # Search facets {#search-facets}
@@ -262,17 +262,6 @@ Similar to the way you add a Property predicate or an Options predicate, you can
     <ul>
      <li>Label</li>
      <li>Property name</li>
-     <li>Description</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Rating</td>
-   <td>Search predicate to search assets based on their average rating </td>
-   <td>
-    <ul>
-     <li>Label</li>
-     <li>Property name</li>
-     <li>Option path</li>
      <li>Description</li>
     </ul> </td>
   </tr>

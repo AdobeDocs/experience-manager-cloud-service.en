@@ -1,9 +1,6 @@
 ---
 title: Assigning Player to a Display in Screens as a Cloud Service
 description: This page describes how to assign a player to a display in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Assigning Player to a Display in Screens as a Cloud Service {#assign-player-displays-screens-cloud}
