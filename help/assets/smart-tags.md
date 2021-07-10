@@ -3,7 +3,7 @@ title: Auto-tag assets with [!DNL Adobe Sensei] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 contentOwner: AG
 feature: Smart Tags,Tagging
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
@@ -57,7 +57,7 @@ You can tag the following types of assets:
 
 ## Understand tag models and guidelines {#understand-tag-models-guidelines}
 
-A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example by color, by design, or by usage. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
+A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example by design or by usage. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
 
 Before you create a tag model and train the service, identify a set of unique tags that best describe the objects in the images in the context of your business. Ensure that the assets in your curated set conform to [the training guidelines](#training-guidelines).
 
@@ -91,13 +91,15 @@ Ensure that the images in the training set conform to the following guidelines:
 
 **Examples**: Some more examples for guidance are:
 
-* Create a tag model that includes,
-  * only the tags related to car models.
-  * only the tags related to colors of shirts.
-  * only the tags related to jackets for women and men.
+* Create a tag model that only includes,
+
+  * The tags related to car models.
+  * The tags related to jackets for women and men.
+
 * Do not create,
-  * a tag model that includes car models released in 2019 and 2020.
-  * multiple tag models that include the same few car models.
+
+  * A tag model that includes car models released in 2019 and 2020.
+  * Multiple tag models that include the same few car models.
 
 **Images used to train**: You can use the same images to train different tag models. However, do not associate an image with more than one tag in a tag model. It is possible to tag the same image with different tags belonging to different tag models.
 
@@ -169,7 +171,7 @@ To check whether the Smart Tags service is trained on your tags in the training 
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Tagging assets with Smart Tags {#tag-assets}
+## Tag assets with Smart Tags {#tag-assets}
 
 All types of supported assets are automatically tagged by [!DNL Experience Manager Assets] when uploaded. Tagging is enabled by default. [!DNL Experience Manager] applies the appropriate tags in near-real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
