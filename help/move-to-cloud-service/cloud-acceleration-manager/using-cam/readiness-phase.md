@@ -95,12 +95,23 @@ You can filter the report based on importance, sub-type, or count.
 
 #### Best Practices Assessment {#best-practices-assessment}
 
-This card provides an
+The Best Practices Assessment option provides an assessment of your current AEM instance and provides guidance on next steps to adopt AEM best practices. You can review the following information from this tab:
+
+* AEM Instance Overview
+* Custom Components and Templates
+* Additional Findings
+* Slow Queries
+* Maintenance Tasks
 
 #### Migration Complexity Assessment {#migration-complexity-assessment}
 
-This card provides
+The Migration Complexity Assessment option provides an assessment of the complexity to migrate the existing AEM implementation to AEM as a Cloud Service. You can review the following information from this tab:
 
+* AEM Instance Overview
+* Assessment
+* Content Migration Considerations
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Using Planning and Setup Card {#planning-setup}
 
@@ -112,10 +123,8 @@ Follow this section to explore the Planning and Setup activity card.
 
 1. A content carousel with relevant information for this phase of the migration journey displays.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## What's Next {#whats-next}
 
 Once you have learnt how to log into Cloud Acceleration Manager and how to create a project, you are now ready to move on to reviewing the next step, Using the Implementation Phase.
-
-
