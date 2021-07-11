@@ -23,7 +23,7 @@ Follow the steps below to navigate to the Readiness Phase:
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) to learn more.
+   >Refer to Creating and Managing a Project in Cloud Acceleration Manager to learn more.
 
 ## Using Best Practices Analysis Card {#best-practices-analysis}
 
