@@ -19,11 +19,12 @@ With AEM as a Cloud Service, your teams can focus on innovating instead of plann
 
 ## Understanding the Transition to Cloud Service Process {#understanding-move}
 
-The transition journey to Cloud Service involves three phases:
+The transition journey to Cloud Service involves the following phases:
 
 * Readiness
 * Implementation
 * Go-Live
+* Post Go-Live
 
 For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Guide.
 
