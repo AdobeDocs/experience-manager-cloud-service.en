@@ -11,9 +11,13 @@ role: Architect, Developer
 
 + [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phases of Transition Journey {#phases}
-  + [Planning](/help/move-to-cloud-service/planning.md)
-  + [Execution](/help/move-to-cloud-service/execution.md)
-  + [Post Go-live](/help/move-to-cloud-service/post-go-live.md)
+  + [Readiness](/help/move-to-cloud-service/planning.md)
+  + [Implementation](/help/move-to-cloud-service/execution.md)
+  + [Go-Live](/help/move-to-cloud-service/post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+  + Introduction to Cloud Acceleration Manager {#introduction-cam}
+    + [Overview](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+    + [Benefits](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
 + Cloud Transition Tools {#cloud-migration}
   + Best Practices Analyzer {#best-practices-analyzer}
     + [Overview](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
