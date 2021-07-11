@@ -1,9 +1,6 @@
 ---
 title: Overview to Cloud Acceleration Manager
 description: This page provides an overview to Cloud Acceleration Manager.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Overview to Cloud Acceleration Manager {#overview-cam}

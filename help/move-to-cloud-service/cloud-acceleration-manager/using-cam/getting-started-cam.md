@@ -1,9 +1,6 @@
 ---
 title: Getting Started with Cloud Acceleration Manager
 description: This page provides an overview on how to use and get started with Cloud Acceleration Manager.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Getting Started with Cloud Acceleration Manager {#get-started-cam}
