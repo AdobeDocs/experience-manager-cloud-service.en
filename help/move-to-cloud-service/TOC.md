@@ -19,7 +19,7 @@ role: Architect, Developer
     + [Overview](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
     + [Benefits](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
   + Using Cloud Acceleration Manager {#using-cam}
-    + [Getting Started with Cloud Acceleration Manager](help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+    + [Getting Started with Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
     + [Readiness Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/readiness-phase.md)
     + [Implementation Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/implementation-phase.md)
     + [Go-Live Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/golive-phase.md)
