@@ -118,7 +118,7 @@ Follow this section to explore the Planning and Setup activity card.
 
 1. Click on the **View** button from the **Planning And Setup** card that provides all the relevant content that will help you plan and setup your AEM migration.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. A content carousel with relevant information for this phase of the migration journey displays.
 
