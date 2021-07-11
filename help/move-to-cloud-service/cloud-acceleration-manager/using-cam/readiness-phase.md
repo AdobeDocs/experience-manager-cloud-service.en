@@ -102,7 +102,9 @@ The Best Practices Assessment option provides an assessment of your current AEM 
 
 #### Migration Complexity Assessment {#migration-complexity-assessment}
 
-The Migration Complexity Assessment option provides an assessment of the complexity to migrate the existing AEM implementation to AEM as a Cloud Service. You can review the following information from this tab:
+The Migration Complexity Assessment option provides an assessment of the complexity to migrate the existing AEM implementation to AEM as a Cloud Service. 
+
+You can review the following information from this tab:
 
 * AEM Instance Overview
 * Assessment

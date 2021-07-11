@@ -3,7 +3,7 @@ title: Go-live Phase in Cloud Acceleration Manager
 description: This page provides an overview on the Go-live phase in Cloud Acceleration Manager.
 ---
 
-# Go-live Phase in Cloud Acceleration Manager {#golive-phase-cam}
+# Go Live Phase in Cloud Acceleration Manager {#golive-phase-cam}
 
 The Go Live card provides all the relevant content that highlights preparation, specific actions to be taken, and thorough consideration to ensure a smooth and successful go-live on AEM as a Cloud Service.
 
