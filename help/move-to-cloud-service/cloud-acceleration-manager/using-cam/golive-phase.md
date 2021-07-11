@@ -14,7 +14,7 @@ Click on your project card to open the project landing page and navigate to the 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) to learn more.
+   >Refer to Creating and Managing a Project in Cloud Acceleration Manager to learn more.
 
 
 ## Using the Go Live Activity Card {#go-live}
