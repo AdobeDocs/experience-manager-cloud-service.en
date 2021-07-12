@@ -1,7 +1,7 @@
 ---
 title: Working with Dynamic Media
 description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 ---
 # Working with Dynamic Media {#working-with-dynamic-media}
