@@ -23,8 +23,8 @@ The transition journey to Cloud Service involves the following phases:
 
 * Readiness
 * Implementation
-* Go-Live
-* Post Go-Live
+* Go Live
+* Post Go Live
 
 For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Guide.
 
