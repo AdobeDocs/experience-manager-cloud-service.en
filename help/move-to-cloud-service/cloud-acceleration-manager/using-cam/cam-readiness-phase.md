@@ -1,9 +1,6 @@
 ---
 title: Readiness Phase in Cloud Acceleration Manager
 description: This page provides an overview on the Readiness phase in Cloud Acceleration Manager.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Readiness Phase in Cloud Acceleration Manager {#readiness-phase-cam}
@@ -26,7 +23,7 @@ Follow the steps below to navigate to the Readiness Phase:
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) to learn more.
+   >Refer to Creating and Managing a Project in Cloud Acceleration Manager to learn more.
 
 ## Using Best Practices Analysis Card {#best-practices-analysis}
 
@@ -105,7 +102,9 @@ The Best Practices Assessment option provides an assessment of your current AEM 
 
 #### Migration Complexity Assessment {#migration-complexity-assessment}
 
-The Migration Complexity Assessment option provides an assessment of the complexity to migrate the existing AEM implementation to AEM as a Cloud Service. You can review the following information from this tab:
+The Migration Complexity Assessment option provides an assessment of the complexity to migrate the existing AEM implementation to AEM as a Cloud Service. 
+
+You can review the following information from this tab:
 
 * AEM Instance Overview
 * Assessment
@@ -119,7 +118,7 @@ Follow this section to explore the Planning and Setup activity card.
 
 1. Click on the **View** button from the **Planning And Setup** card that provides all the relevant content that will help you plan and setup your AEM migration.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. A content carousel with relevant information for this phase of the migration journey displays.
 
