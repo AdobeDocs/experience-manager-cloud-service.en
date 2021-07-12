@@ -23,7 +23,7 @@ The transition journey to Cloud Service involves the following phases:
 
 * [Readiness](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
 * [Implementation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
-* Go Live
+* [Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-go-live.html?lang=en)
 * [Post Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Guide.
