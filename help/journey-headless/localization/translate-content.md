@@ -73,7 +73,7 @@ To see the detail of the headless content included in this project:
 1. The **Translation Job** window lists all items in the job.
 ![Translation Job detail](assets/translation-job-detail.png)
 1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments console.
+1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
 
 ![Translation Job options](assets/translation-job-options.png)
 
@@ -88,3 +88,5 @@ AEM now communicates with your translation configuration and connector to send t
 ![Translation Job approved](assets/translation-job-approved.png)
 
 Machine translations automatically return with a state of **Approved**. Human translation allows for more interaction, but is beyond the scope of this journey.
+
+
