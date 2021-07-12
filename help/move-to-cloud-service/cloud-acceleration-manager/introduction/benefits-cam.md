@@ -5,13 +5,25 @@ description: This page highlights the key benefits of using Cloud Acceleration M
 
 # Benefits of using Cloud Acceleration Manager {#benefits-cam}
 
-Cloud Acceleration Manager is a free cloud-based application that provides an assessment of a customer's current Adobe Experience Manager (AEM) implementation and helps manage their journey to AEM as a Cloud Service following Adobe’s recommended migration methodology.
+With a wide range of business requirements and customizations, moving to cloud can be an involved project. Cloud Acceleration Manager (CAM) equips your teams with a guided experience with Adobe-recommended best practices and methodology to help your teams plan, implement and, Go live with confidence.
 
 The key benefits of using Cloud Acceleration Manager are:
 
-* Provides an assessment in an easy to consume format.
-* Guides and manages the transition journey.
-* Provides best practices, relevant help, and access to tools to minimize migration time.
+1. Plan better and smarter:
+
+   * Simplify the assessment of your current instance through an easy-to-read visual representation of the results.
+
+   * Assess and understand the estimated complexity of moving to AEM as a Cloud Service with a detailed custom report.
+
+1. Streamline the move with end-to-end guidance:
+
+   * Manage the migration journey with built-in intelligence that provides contextual help along the way.
+
+   * Review and identify the areas that are not supported in AEM as a Cloud Service or require refactoring to ensure compatibility.
+
+1. Optimize the efforts:
+
+   Access Adobe-recommended best practices and automation tools to help accelerate migration efforts and access to tools to minimize migration time.
 
 ## What’s Next {#whats-next}
 
