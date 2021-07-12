@@ -12,7 +12,7 @@ In this part of the [AEM Headless Content Author Journey](overview.md), you can 
 * **Audience**: Beginner
 * **Objective**: Introduce the concepts and terminology relevant to Headless Authoring.
 
-## Content Management System (CMS) {content-management-system}
+## Content Management System (CMS) {#content-management-system}
 
 What is a Content Management System?
 
