@@ -21,10 +21,10 @@ With AEM as a Cloud Service, your teams can focus on innovating instead of plann
 
 The transition journey to Cloud Service involves the following phases:
 
-* Readiness
-* Implementation
+* [Readiness](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
+* [Implementation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
 * Go Live
-* Post Go Live
+* [Post Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Guide.
 
@@ -37,7 +37,7 @@ The figure below shows a pictorial representation of the recommended transition 
 
 Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service.
 
-Refer to Getting Started with Cloud Acceleration Manager to start your migration journey.
+Refer to [Getting Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) to start your migration journey.
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
