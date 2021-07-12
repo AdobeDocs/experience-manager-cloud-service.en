@@ -5,7 +5,7 @@ description: This page highlights the key benefits of using Cloud Acceleration M
 
 # Benefits of using Cloud Acceleration Manager {#benefits-cam}
 
-With a wide range of business requirements and customizations, moving to cloud can be an involved project. Cloud Acceleration Manager (CAM) equips your teams with a guided experience with Adobe-recommended best practices and methodology to help your teams plan, implement and, Go live with confidence.
+With a wide range of business requirements and customizations, moving to cloud can be an involved project. Cloud Acceleration Manager (CAM) equips your teams with a guided experience with Adobe-recommended best practices and methodology to help your teams plan, implement and, Go Live with confidence.
 
 The key benefits of using Cloud Acceleration Manager are:
 
