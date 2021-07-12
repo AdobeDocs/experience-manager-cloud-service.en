@@ -3,7 +3,7 @@ title: Assets Insights
 description: Track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions.
 contentOwner: AG
 feature: Asset Insights,Asset Reports
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 ---
 # Assets Insights {#asset-insights}
