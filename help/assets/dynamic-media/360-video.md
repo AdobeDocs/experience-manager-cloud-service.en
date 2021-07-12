@@ -2,7 +2,7 @@
 title: 360/VR Video
 description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
 feature: 360 VR Video
-role: Business Practitioner
+role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 ---
 # 360/VR Video {#vr-video}

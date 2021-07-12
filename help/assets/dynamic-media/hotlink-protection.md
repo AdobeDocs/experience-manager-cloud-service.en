@@ -2,7 +2,7 @@
 title: Activating hotlink protection in Dynamic Media
 description: Learn how to activate hotlink protection in Dynamic Media.
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 ---
 # Activating hotlink protection in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
