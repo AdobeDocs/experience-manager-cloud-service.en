@@ -4,7 +4,7 @@ description: Learn about the types of metadata an how [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Metadata
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}

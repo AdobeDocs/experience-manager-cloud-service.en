@@ -4,7 +4,7 @@ user-guide-title: Security for AEM as a Cloud Service
 breadcrumb-title: Security Guide
 user-guide-description: Learn about important security topics regarding Experience Manager as a Cloud Service.
 feature: Configuring
-role: Administrator
+role: Admin
 ---
 
 # Security {#security}

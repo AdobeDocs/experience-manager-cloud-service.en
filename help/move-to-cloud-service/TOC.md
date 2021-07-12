@@ -11,9 +11,18 @@ role: Architect, Developer
 
 + [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phases of Transition Journey {#phases}
-  + [Planning](/help/move-to-cloud-service/planning.md)
-  + [Execution](/help/move-to-cloud-service/execution.md)
-  + [Post Go-live](/help/move-to-cloud-service/post-go-live.md)
+  + [Readiness](/help/move-to-cloud-service/migration-readiness.md)
+  + [Implementation](/help/move-to-cloud-service/migration-implementation.md)
+  + [Post Go Live](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+  + Introduction to Cloud Acceleration Manager {#introduction-cam}
+    + [Overview](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+    + [Benefits](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+  + Using Cloud Acceleration Manager {#using-cam}
+    + [Getting Started with Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+    + [Readiness Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+    + [Implementation Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+    + [Go Live Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + Cloud Transition Tools {#cloud-migration}
   + Best Practices Analyzer {#best-practices-analyzer}
     + [Overview](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)

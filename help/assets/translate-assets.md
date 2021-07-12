@@ -3,7 +3,7 @@ title: Create and manage digital assets in multiple languages
 description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 feature: Asset Management,Translation
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 ---
 # Multilingual assets {#multilingual-assets}

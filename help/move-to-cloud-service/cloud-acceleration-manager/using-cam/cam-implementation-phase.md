@@ -1,9 +1,6 @@
 ---
 title: Implementation Phase in Cloud Acceleration Manager
 description: This page provides an overview on the implementation phase in Cloud Acceleration Manager.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Implementation Phase in Cloud Acceleration Manager {#implementation-phase-cam}
@@ -21,7 +18,7 @@ Click on your project card to open the project landing page and navigate to the 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) to learn more.
+   >Refer to Creating and Managing a Project in Cloud Acceleration Manager to learn more.
 
 
 ## Using Local Development Card {#local-development}
@@ -69,7 +66,7 @@ Follow this section to explore AEM as a Cloud Service Deployment Card activity c
 
 1. A content carousel with relevant information for this phase of the migration journey displays.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Using Content Transfer Card {#content-transfer}
@@ -84,7 +81,7 @@ Follow this section to explore the Content Transfer activity card:
 
 1. A content carousel with relevant information for this phase of the migration journey displays.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) before using the Content Transfer Tool.

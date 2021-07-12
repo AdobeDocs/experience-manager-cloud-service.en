@@ -1,9 +1,9 @@
 ---
-title: Planning Phase
-description: Planning Phase
+title: Readiness Phase
+description: Readiness Phase
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
 ---
-# Planning {#planning-phase}
+# Readiness {#readiness-phase}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
