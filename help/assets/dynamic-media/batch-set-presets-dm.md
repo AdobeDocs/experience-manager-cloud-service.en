@@ -3,7 +3,7 @@ title: Batch Set Presets
 description: Learn how to automate image set and spin set creation using batch set presets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
-role: Business Practitioner
+role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 ---
 # About Batch Set Presets {#about-bsp}

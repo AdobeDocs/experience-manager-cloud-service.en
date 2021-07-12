@@ -2,7 +2,7 @@
 title: Interactive images
 description: Learn how to work with Interactive Images in Dynamic Media.
 feature: Interactive Images
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 ---
 # Interactive images{#interactive-images}

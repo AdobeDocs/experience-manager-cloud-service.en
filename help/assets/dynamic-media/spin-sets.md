@@ -2,7 +2,7 @@
 title: Spin Sets
 description: Learn how to work with spin sets in Dynamic Media.
 feature: Spin Sets
-role: Business Practitioner
+role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 ---
 # Spin Sets{#spin-sets}
