@@ -5,8 +5,6 @@ description: Learn about the concepts and mechanics of authoring content for you
 
 # Authoring Basics for Headless with AEM {#author-headless-basics}
 
-<!-- screenshots to be added later -->
-
 ## The Story so Far {#story-so-far}
 
 At the beginning of the [AEM Headless Content Author Journey](overview.md) the [Introduction](introduction.md) covered the basic concepts and terminology relevant to authoring for headless.
@@ -187,7 +185,7 @@ The publish actions are available in the editor (or from the toolbar of the **As
 
 ## What's Next {#whats-next}
 
-Now that you have learned the basics, the next step is to [Learn how about References](references.md). This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References.
+Now that you have learned the basics, the next step is to [Learn how about References](references.md). This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of authoring for headless.
 
 ## Additional Resources {#additional-resources}
 
