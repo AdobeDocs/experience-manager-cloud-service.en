@@ -13,26 +13,31 @@ exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
 
 ## Benefits of Moving to AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
-AEM as a Cloud Service provides a scalable, secure, and agile technology foundation for Experience Manager Sites and Assets, enabling marketers and IT to focus on delivering impactful experiences at scale.
+AEM as a Cloud Service provides a scalable, secure, and agile technology foundation for Experience Manager Assets, Forms, and Screens enabling marketers and IT to focus on delivering impactful experiences at scale.
 
 With AEM as a Cloud Service, your teams can focus on innovating instead of planning for product upgrades. New product features are thoroughly tested and delivered to your teams without any interruption so that they always have access to the state-of-the art application.
 
 ## Understanding the Transition to Cloud Service Process {#understanding-move}
 
-The transition journey to Cloud Service involves three phases - Planning, Execution, and Post Go-live. 
+The transition journey to Cloud Service involves the following phases:
+
+* Readiness
+* Implementation
+* Go Live
+* Post Go Live
 
 For a successful and smooth transition, you should ensure proper planning and adhere to best practices outlined in this Guide.
 
-The figure below shows a pictorial representation of the recommended transition journey to Cloud Service.
+The figure below shows a pictorial representation of the recommended transition journey to AEM as a Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/home-img1.png)
+![image](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
 
-Learn more about the different phases involved in the transition journey to Cloud Service:
 
-* **[Planning](/help/move-to-cloud-service/planning.md)**
-* **[Execution](/help/move-to-cloud-service/execution.md)**
-* **[Post Go-live](/help/move-to-cloud-service/post-go-live.md)**
+## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
+Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service.
+
+Refer to Getting Started with Cloud Acceleration Manager to start your migration journey.
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
@@ -46,6 +51,7 @@ Learn more about the different phases involved in the transition journey to Clou
 |[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer Experience Manager Assets as a Cloud Service.|
+|[Screens User Guide](/help/screens-cloud/home.md)|Understand how to use and administer Experience Manager Screens as a Cloud Service.|
 |[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using AEM's powerful features by exploring these development and deployment topics.|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of AEM to prepare for your first headless project.|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
