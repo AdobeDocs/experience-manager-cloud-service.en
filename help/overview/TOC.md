@@ -4,7 +4,7 @@ user-guide-title: Overview of AEM as a Cloud Service
 breadcrumb-title: Overview Guide
 user-guide-description: For an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc., start here.
 feature: Release Information
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 ---
 
 # Experience Manager as a Cloud Service Help {#overview}
