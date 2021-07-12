@@ -21,10 +21,13 @@ This article builds on these so you understand how to use references to author y
   * Content References
   * Asset/Media References
   * Fragment References
+  * Ad-hoc references from within a text block
 
 ## What are references {#what-are-references}
 
 References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
+
+Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and ad-hoc references).
 
 ![Content Fragments - References](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
@@ -73,6 +76,12 @@ The definition of the Content Fragment Model controls:
 
 * whether you can select to add multiple references
 * the model types of Content Fragments that you can select; the Content Fragment Model defines the fragment models allowed for the reference, so AEM only presents fragments based on those models.
+
+## Ad-hoc References {#adhoc-references}
+
+Ad-hoc references can be added as a simple link within a block of text:
+
+![Content Fragments - Ad-Hoc References](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
 ## What's Next {#whats-next}
 
