@@ -13,6 +13,7 @@ role: Architect, Developer
 + Phases of Transition Journey {#phases}
   + [Readiness](/help/move-to-cloud-service/migration-readiness.md)
   + [Implementation](/help/move-to-cloud-service/migration-implementation.md)
+  + [Go Live](/help/move-to-cloud-service/migration-go-live.md)
   + [Post Go Live](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
   + Introduction to Cloud Acceleration Manager {#introduction-cam}
