@@ -53,7 +53,7 @@ To perform a tree activation:
 
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
-![](/help/operations/assets/publish-distribute.png)
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Do not modify or invoke the original model. Instead, make sure to first copy the model and then modify or invoke that copy.
 
