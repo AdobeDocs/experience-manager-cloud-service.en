@@ -88,17 +88,65 @@ You can view additional information about items using the Rail Selector. This al
 
 Unless you have very few Content Fragments you will want to organize them - so that you (and others) can find them again.
 
-You can do this by creating a series of folders within the Assets console. You then navigate through these folders to create, and edit your Content Fragments.
+You can do this by creating a series of folders within **Files** section of the Assets console. Select the **Create** option (top right), followed by **Create Folder**:
+
+![Create Folder option](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
+
+A dialog will open where you can enter the details, then confirm with **Create**:
+
+![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
+
+You then navigate through these folders to create, and edit your Content Fragments.
+
+Just in case....xou will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. This probably won't interest you, but if necessary you can check the **Configuration** in the **Cloud Services** of the folder **Properties**:
+
+![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
 >[!NOTE]
 >
->You will probably be given an initial folder where you can create your folders. 
->
->This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. You can read more under Apply the Configuration to your Assets Folder.
+>You can read more under Apply the Configuration to your Assets Folder. 
 
 ### Creating {#creating}
 
+Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
+
+![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+After continuing with **Next** you can supply the details for your fragment:
+
+![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+Confirm with **Create** and you can then **Open** your fragment in the editor.
+
 ### Editing {#editing}
+
+When the editor first opens you'll see:
+
+* A list of icons at the left side - this gives you access to various areas of functionality. The editor opens in the **Variations** tab, this is where most of the editing happens. You might also be interested in the **Annotations** and **Metadata** tabs.
+
+* A header with information about the fragment, and access to various actions.
+
+* The main editing area - this depends on the model used to create your fragment.
+
+As examples:
+
+* A fragment that only requires short pieces of information:
+  
+  ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+
+* A fragment that allows you to write a long section of text. Here there are additional options for managing, and formaatting the text. You can even open the text in a full screen editor (using the small screen-like icon at the right)
+  
+  ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+
+Confirm your updates with either **Save** or **Save & close**.
+
+>[!NOTE]
+>
+>For more details you can read Variations - Authoring Content Fragments.
 
 #### What you don't need to worry about {#what-you-do-not-need-to-worry-about}
 
@@ -106,7 +154,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 * **Content Fragment Models**
 
-  You will see the name of the Content Fragment Model at the top of the editor. This is also a link that takes you to the model editor.
+  You will see the name of the Content Fragment Model at the top of the editor - directly under the fragment name. This is also a link that takes you to the model editor.
   Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. HOWEVER, creating and editing them are (usually) the responsibility of another persona, the Content Architect. 
 
   >[!NOTE]
@@ -123,9 +171,19 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
   This is another tab in the editor and provides a technical view, primarily intended for developers.
 
-<!-- OK, now we've cleared that up we can start on the interesting part. -->
+* **Update page references**
+
+  This action is available from the **...** (ellipses) drop down. It is not interesting for headless authors as it relates to page authoring.
 
 ### Publishing {#publishing}
+
+<!-- needs more details -->
+
+Once you have completed your fragment you can **Publish** it so that it is available to the headless applications.
+
+The publish actions are available in the editor (or from the toolbar of the **Assets** console):
+
+![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 ## What's Next {#whats-next}
 
@@ -160,5 +218,8 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
     * ...basically everything on this page is relevant, apart from actually creating a Content Fragment Model, and Associated Content.
 
   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+
+* Getting Started Guides
+  * [Creating an Assets Folder Headless Quick Start Guide](help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
 * AEM Headless Content Architect Journey
