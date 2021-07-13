@@ -20,7 +20,7 @@ A Content Management System (CMS) is just what it says it is - a computer system
 
 ## Headless CMS {#headless-cms}
 
-Headless is a term used to describe systems that effectively detach the content from the manner of displaying that content on the web. 
+Headless is a term used to describe systems that effectively detaches the content from the manner of displaying that content on the web. 
 
 Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
 
@@ -49,9 +49,9 @@ This all means that it can be used as a:
 * "Traditional" CMS
   * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
 
-## Data Modeling {#data-modeling}
+## Content Modeling {#content-modeling}
 
-So data modeling is another technical term - why should it interest you as an author?
+So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
 
 For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
