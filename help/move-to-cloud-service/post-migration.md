@@ -13,7 +13,6 @@ The following tools are available to troubleshoot AEM as a Cloud Service environ
 * **CRXDE Lite**
 * **Managing Logs**
 
-
 ## Developer Console {#developer-console}
 
 Debugging AEM as a Cloud Service developer environments are available in the Developer Console for development, stage, and production environments.
