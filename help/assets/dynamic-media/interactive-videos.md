@@ -2,7 +2,7 @@
 title: Interactive Videos
 description: Learn how to work with interactive video and shoppable video in Dynamic Media.
 feature: Interactive Videos
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 ---
 # Interactive Videos{#interactive-videos}

@@ -2,7 +2,7 @@
 title: Mixed Media Sets
 description: Learn how to work with mixed media sets in Dynamic Media.
 feature: Mixed Media Sets
-role: Business Practitioner
+role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 ---
 # Mixed Media Sets{#mixed-media-sets}
