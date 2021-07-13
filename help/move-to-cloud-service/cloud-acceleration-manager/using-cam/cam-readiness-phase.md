@@ -129,4 +129,4 @@ Follow this section to explore the Planning and Setup activity card.
 
 ## What's Next {#whats-next}
 
-Once you have learned how to log into Cloud Acceleration Manager and how to create a project, you are now ready to move on to reviewing the next step in the [Implementation Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Once you have learnt how to log into Cloud Acceleration Manager and how to create a project, you are now ready to move on to reviewing the next step in the [Implementation Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
