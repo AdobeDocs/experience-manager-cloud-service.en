@@ -14,7 +14,7 @@ This article builds on these so you understand how to model your content for you
 ## Objective {#objective}
 
 * **Audience**: Beginner
-* **Objective**: Introduce the basics of Content Modeling for Headless CMS:
+* **Objective**: Introduce the concepts of Content Modeling for Headless CMS.
 
 ## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
 
@@ -102,7 +102,7 @@ Two data types provide references to content outside a specific fragment:
 
 ## What's Next {#whats-next}
 
-Now that you have learned the basics, the next step is to [Learn how about Creating Models in AEM](model-structure.md). This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
+Now that you have learned the basics, the next step is to [Learn about Creating Content Fragment Models in AEM](model-structure.md). This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
 
 ## Additional Resources {#additional-resources}
 
