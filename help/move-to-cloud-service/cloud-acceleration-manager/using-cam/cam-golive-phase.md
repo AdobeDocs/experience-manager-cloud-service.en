@@ -7,8 +7,6 @@ description: This page provides an overview on the Go-live phase in Cloud Accele
 
 The Go Live card provides all the relevant content that highlights preparation, specific actions to be taken, and thorough consideration to ensure a smooth and successful go-live on AEM as a Cloud Service.
 
-The GoLive Phase includes [Go Live](#go-live).
-
 Click on your project card to open the project landing page and navigate to the **Go Live** section, as shown in the figure below.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
@@ -25,6 +23,6 @@ Follow this section to explore the Go Live activity card:
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
-1. A content carousel with relevant information for this phase of the migration journey displays.
+1. A content carousel displays relevant information for this phase of the migration journey.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-2.png)
