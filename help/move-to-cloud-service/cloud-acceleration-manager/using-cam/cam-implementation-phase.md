@@ -1,9 +1,6 @@
 ---
 title: Implementation Phase in Cloud Acceleration Manager
 description: This page provides an overview on the implementation phase in Cloud Acceleration Manager.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Implementation Phase in Cloud Acceleration Manager {#implementation-phase-cam}
@@ -21,7 +18,7 @@ Click on your project card to open the project landing page and navigate to the 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) to learn more.
+   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) to learn more.
 
 
 ## Using Local Development Card {#local-development}
@@ -34,14 +31,14 @@ Follow this section to explore the Local Development activity card:
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
 
-1. A content carousel with relevant information for this phase of the migration journey displays.
+1. A content carousel displays the relevant information for this phase of the migration journey.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Using Code Refactoring Card {#code-refactoring}
 
-The Code Refactoring activity card card provides all the relevant information and highlights the code refactoring areas you need to review when moving to AEM as a Cloud Service.
+The Code Refactoring activity card card provides all the relevant information and highlights the code refactoring areas you need to review and resolve when moving to AEM as a Cloud Service.
 
 Follow this section to explore the Code Refactoring activity card:
 
@@ -67,7 +64,7 @@ Follow this section to explore AEM as a Cloud Service Deployment Card activity c
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
-1. A content carousel with relevant information for this phase of the migration journey displays.
+1. A content carousel displays the relevant information for this phase of the migration journey.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
@@ -82,16 +79,19 @@ Follow this section to explore the Content Transfer activity card:
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
-1. A content carousel with relevant information for this phase of the migration journey displays.
+1. A content carousel displays the relevant information for this phase of the migration journey.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Please review the [prerequisites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) and the [best practices and guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) before using the Content Transfer Tool.
 
-### Estimating Content Transfer Tool Activity {#calculating}
+### Estimating Content Transfer Time {#calculating}
 
 A new Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
+
+   >[!NOTE]
+   >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
 
 To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
@@ -99,4 +99,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to log into Cloud Acceleration Manager and how utilize the Implementation phase, you are now ready to move on to reviewing the next step, Using the GoLive Phase.
+Once you have learnt how to log into Cloud Acceleration Manager and how utilize the Implementation phase, you are now ready to move on to reviewing the next step in the [Go Live Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).
