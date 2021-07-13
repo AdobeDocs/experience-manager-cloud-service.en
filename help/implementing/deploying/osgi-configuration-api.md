@@ -6,7 +6,7 @@ feature: Deploying
 
 # OSGi Configuration API
 
-The two tables below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.
+The two lists below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.
 
 1. A list of OSGi configurations that must not be configured by customer code
 1. A list of OSGi configurations whose properties may be configured, but must abide by validation rules of each row. These rules include whether declaration of the property is required, its type, and in some cases, its allowed range of values.
