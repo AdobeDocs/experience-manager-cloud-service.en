@@ -2,7 +2,7 @@
 title: Previewing Assets
 description: Learn how to preview assets in Dynamic Media.
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 ---
 # Previewing assets{#previewing-assets}
