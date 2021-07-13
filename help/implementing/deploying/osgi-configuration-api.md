@@ -19,14 +19,14 @@ Additional information about OSGI configuration can be found at [this location](
 
 ## OSGi Configurations that Cannot be Modified {#osgi-configurations-that-cannot-be-modified}
 
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Announcament Date: 4/30/2021, Target Enforcement Date: 7/31/2021)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`**
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**
-* **`org.apache.felix.http (Factory)`**
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`org.apache.felix.http (Factory)`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
 
 ## OSGi Configurations Subject to Build Validation Rules {#osgi-configurations-subject-to-build-validation-rules}
 
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Announcement Date: 4/30/2021, Target Enforcement Date: 7/31/2021)
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * `org.apache.felix.eventadmin.ThreadPoolSize` 
     * Type: integer
     * Required Range: 2-100
@@ -42,7 +42,7 @@ Additional information about OSGI configuration can be found at [this location](
     * Required Range: Must include at least all of `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
   * `org.apache.felix.eventadmin.IgnoreTopic`
     * Type: array of strings
-* **`org.apache.felix.http`** (Announcement Date: 4/30/2021, Target Enforcement Date: 7/31/2021)
+* **`org.apache.felix.http`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * `org.apache.felix.http.timeout`
     * Type: integer
   * `org.apache.felix.http.session.timeout`
@@ -105,7 +105,7 @@ Additional information about OSGI configuration can be found at [this location](
     * Type: array of strings
   * `org.apache.felix.http.session.uniqueid`
     * Type: boolean
-* **`org.apache.sling.scripting.cache`** (Announcement Date: 4/30/2021, Target Enforcement Date: 7/31/2021)
+* **`org.apache.sling.scripting.cache`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * `org.apache.sling.scripting.cache.size`
     * Type: integer
     * Required Range: >= 2048
@@ -113,7 +113,7 @@ Additional information about OSGI configuration can be found at [this location](
     * Required
     * Type: array of strings
     * Required Range: must include js
-* **`com.day.cq.mailer.DefaultMailService`**	(Announcement Date: 4/30/2021, Target Enforcement Date: 7/31/2021)
+* **`com.day.cq.mailer.DefaultMailService`**	(Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * `smtp.host`
     * Type: string
   * `smtp.port`
