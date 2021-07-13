@@ -1,9 +1,9 @@
 ---
-title: Execution Phase
-description: Execution Phase
+title: Implementation Phase
+description: Implementation Phase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
 ---
-# Execution {#execution-phase}
+# Implementation {#implementation-phase}
 
 Before you start the Execution phase, you should be on-boarded to Cloud Service. You also need to familiarize yourself with Cloud Manager since it is the sole mechanism for deploying code to AEM Cloud Service. 
 
@@ -104,17 +104,4 @@ Follow the resources below to learn how to use Cloud Manager to manage and deplo
 
 * [Deploying your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
-## Best Practices for Go-Live Preparation {#go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="Go-Live Preparation"
->abstract="To ensure a smooth and successful go-live on AEM as a Cloud Service, you should plan for code and content freeze periods, testing iterations, content top-ups, performance tests, security tests and more."
-
-To ensure a smooth and successful go-live on AEM as a Cloud Service, you should consider executing the following steps:
-
-* Schedule code and content freeze period
-* Perform final content top-up
-* Complete testing iterations
-* Run performance and security tests
-* Cut-Over

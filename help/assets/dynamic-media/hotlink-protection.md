@@ -1,11 +1,11 @@
 ---
-title: Activating hotlink protection in Dynamic Media
+title: Activate hotlink protection in Dynamic Media
 description: Learn how to activate hotlink protection in Dynamic Media.
 feature: Asset Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 ---
-# Activating hotlink protection in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
+# Activate hotlink protection in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
 Hot linking is when a third-party website uses HTML code to display an image from your website. They use your bandwidth every time the picture is requested because the visitor's browser is accessing it directly from your server. Hotlink *protection* is a method to prevent other websites from directly linking to pictures, CSS, or JavaScript™ on your web pages. This kind of shield helps reduce unnecessary bandwidth usage under your Dynamic Media account.
 
