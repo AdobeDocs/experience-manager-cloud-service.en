@@ -100,7 +100,9 @@ The next release is planned for July 15, 2021.
 
   ![Set default view in View Settings](/help/assets/assets/view-settings-for-defaults.png)
 
-* The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
+* The Linkshare download functionality uses asynchronous downloads that boosts the download speed. See [Download assets shared using link sharing](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Download inbox](/help/assets/assets/download-inbox.png)
 
 * Users can search and filter the folders based on property predicates.
 

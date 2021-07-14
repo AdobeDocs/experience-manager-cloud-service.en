@@ -2,7 +2,7 @@
 title: Identifying Content to Translate
 description: Learn how translation rules identify content that needs translating.
 feature: Language Copy
-role: Administrator
+role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 ---
 # Identifying Content to Translate {#identifying-content-to-translate}

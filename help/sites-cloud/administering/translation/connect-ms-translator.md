@@ -2,7 +2,7 @@
 title: Connecting to Microsoft Translator
 description: Learn how to connect AEM to Microsoft Translator out-of-the-box to automate your translation workflow.
 feature: Language Copy
-role: Administrator
+role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 ---
 # Connecting to Microsoft Translator {#connecting-to-microsoft-translator}
