@@ -33,9 +33,11 @@ Translation rules include the following information:
 * The names of the properties that contain the content to translate
   * The property can be specific to a specific resource type or to all resource types
 
+Because Content Fragment Models are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
+
 ## Creating Translation Rules {#creating-rules}
 
-Multiple rules can be created to support complex translation requirements. For example one project you may be working on requires all fields of the content to be translated, but on another only description fields must be translated while titles are left untranslated.
+Multiple rules can be created to support complex translation requirements. For example one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
 
 Translation rules are designed to handle such scenarios. However in this example we will illustrate how to create rules by focusing on a simple, single configuration.
 
@@ -44,7 +46,7 @@ There is a **Translation Configuration** console available for configuring trans
 1. Navigate to **Tools** -&gt; **General**.
 1. Tap or click **Translation Configuration**.
 
-The **Translation Configuration** UI, there are a number of options available for your translation rules. Here we will highlight the most necessary and typical steps needed for a basic headless localization configuration.
+In the **Translation Configuration** UI, there are a number of options available for your translation rules. Here we will highlight the most necessary and typical steps needed for a basic headless localization configuration.
 
 1. Tap or click **Add Context**, which allows you to add a path. This is the path of the content that will be affected by the rule.
 ![Add context](assets/add-translation-context.png)
@@ -68,7 +70,7 @@ You have now configured your translation rules.
 
 There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
 
-Such features are generally note needed to get started localizing your headless content, but you can read about them further in the [Additional Resources](#additional-resources) section if you are interested.
+Such features are generally not needed to get started localizing your headless content, but you can read about them further in the [Additional Resources](#additional-resources) section if you are interested.
 
 ## What's Next {#what-is-next}
 

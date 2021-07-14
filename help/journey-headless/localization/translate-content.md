@@ -8,7 +8,7 @@ Use the translation connector and rules to translate your headless content.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless localization journey, [Configure Translation Rules](translation-rules.md) you learned how how to use AEM's translation rules to identify your translation content. After reading this document you should:
+In the previous document of the AEM headless localization journey, [Configure Translation Rules](translation-rules.md) you learned how how to use AEM's translation rules to identify your translation content. You should now:
 
 * Understand what the translation rules do.
 * Be able to define your own translation rules.
@@ -32,7 +32,7 @@ When content is added to a translation project, a translation job is created for
 To create a translation project:
 
 1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
-1. Select the English (or language master) of your project. In this case we have selected `/content/dam/wknd/en`.
+1. Select the language root of your project. In this case we have selected `/content/dam/wknd/en`.
 1. Tap or click the rail selector and show the **References** panel.
 1. Tap or click on **Language Copies**.
 1. Check the **Language Copies** checkbox.
@@ -47,11 +47,11 @@ You receive a message that the project was created.
 
 >[!NOTE]
 >
->It is assumed that the necessary, empty folders for the translations languages have already been created as part of the [definition of your content structure.](getting-started.md#content-structure) This should be done in collaboration with the content architect.
+>It is assumed that the necessary language structure for the translations languages have already been created as part of the [definition of your content structure.](getting-started.md#content-structure) This should be done in collaboration with the content architect.
 
 ## Using a Translation Project {#using-translation-project}
 
-AEM evaluated the headless content under the path you navigated to based on the rules that you previously defined. Based on those rules, it extracted the content that requires translation into a new translation project.
+When creating the translation project, AEM evaluated the headless content under the path you selected as well as based on the rules that you previously defined. Based on those rules, it extracted the content that requires translation into a new translation project.
 
 To view the translation project:
 
@@ -88,5 +88,3 @@ AEM now communicates with your translation configuration and connector to send t
 ![Translation Job approved](assets/translation-job-approved.png)
 
 Machine translations automatically return with a state of **Approved**. Human translation allows for more interaction, but is beyond the scope of this journey.
-
-
