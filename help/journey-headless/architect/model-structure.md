@@ -46,13 +46,21 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
 ## Defining Content Fragment Models {#defining-content-fragment-models}
 
+When you first open a new model you will see - a large blank space to the left, and a long list of **Data Types** at the right:
+
 ![Empty Model](/help/assets/content-fragments/assets/cfm-models-03.png)
+
+So - what's to do?
+
+You can drag instances of the **Data Types** onto the left space - you're already defining your model!
 
 ![Defining fields](/help/assets/content-fragments/assets/cfm-models-04.png) 
 
+Once you add a data type you'll be required to define the **Properties** for that field. These depend on the type being used. For example:
+
 ![Data Properties](/help/assets/content-fragments/assets/cfm-models-05.png) 
-    
-For example:
+
+You can add as many fields as you need. For example:
 
 ![Content Fragment Model](/help/assets/content-fragments/assets/cfm-models-07.png)
 
@@ -60,11 +68,13 @@ For example:
 >
 >See Additional Resources - Content Fragment Models.
 
-## Publishing {#publishing}
+## Managing Content Fragment Models {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
+## Publishing {#publishing}
 
+<!-- needs more details -->
 
 ## What's Next {#whats-next}
 
@@ -80,6 +90,18 @@ Now that you have learned the basics, the next step is to start creating your ow
  
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 
+    * [Defining your Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+
+    * [Enabling or Disabling a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+
+    * [Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
+    * [Deleting a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+
+    * [Publishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+
+    * [Unpublishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+  
 * Getting Started Guides
   
   * [Creating Content Fragment Models Headless Quick Start Guide](help/implementing/developing/headless/getting-started/create-content-model.md)
