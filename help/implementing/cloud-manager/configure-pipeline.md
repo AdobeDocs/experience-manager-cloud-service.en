@@ -102,7 +102,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 ## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 
-In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
+In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to AEM as a Cloud Service environment.
 
 On the home screen, these pipelines are listed in a new card:
 
