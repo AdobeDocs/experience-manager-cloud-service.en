@@ -497,9 +497,9 @@ With the Cloud Manager 2021.7.0 release, new Cloud Manager programs generate mav
 2. **Cloud development testing:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the non-production pipeline to a Cloud development environment.
    * Use Cloud Manager to deploy to a Cloud development environment.
-   * Test thoroughly.
+   * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
 3. **Deploy to production:**
    * Commit the file `opt-in/USE_SOURCES_DIRECTLY` to a git branch that is deployed by the production pipeline to the Cloud stage and production environments.
    * Use Cloud Manager to deploy to staging.
-   * Test thoroughly.
+   * Test thoroughly. It is critical to validate that your apache and dispatcher configuration behaves as you expect before deploying changes to higher environments. Check all behavior related to your custom configuration! File a customer support ticket if you believe the deployed dispatcher configuration does not reflect your custom configuration.
    * Use Cloud Manager to continue the deployment to production.
