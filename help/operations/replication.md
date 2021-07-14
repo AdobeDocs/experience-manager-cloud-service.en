@@ -53,7 +53,7 @@ To perform a tree activation:
 
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
-![](/help/operations/assets/publish-distribute.png)
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Do not modify or invoke the original model. Instead, make sure to first copy the model and then modify or invoke that copy.
 
@@ -193,4 +193,4 @@ To troubleshoot replication, navigate to the Replication Queues in the AEM Autho
 ![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
-In that case, the queues should be reviewed in order to identify which items caused the cancelation of the publication. By clicking on a queue showing a red status, the queue with pending items would show up, from which single or all items can be cleared if needed.
+In that case, the main, editable queue will show a red status and should be reviewed in order to identify which item(s) caused the cancelation of the publication. By clicking that queue, its pending items will show up, from which a single item or all items can be cleared if needed.

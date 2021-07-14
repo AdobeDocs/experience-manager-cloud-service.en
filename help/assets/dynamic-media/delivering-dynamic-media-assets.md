@@ -1,11 +1,11 @@
 ---
-title: Delivering Dynamic Media Assets
+title: Deliver Dynamic Media Assets
 description: Learn how to deliver Dynamic Media assets.
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 ---
-# Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
+# Deliver Dynamic Media Assets{#delivering-dynamic-media-assets}
 
 How you can deliver your Dynamic Media assets - both video and images - depends on how your website is implemented.
 
@@ -24,15 +24,15 @@ With Dynamic Media, you have several options:
 
 For more information, see the following topics:
 
-* [Adding Dynamic Media Assets to Web Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-* [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md)
-* [Activating hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
-* [Linking URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [Delivering Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
+* [Add Dynamic Media Assets to Web Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Embed the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md)
+* [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
+* [Link URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [Deliver Optimized Images for a Responsive Site](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2faq.md)
-* [Invalidating the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Invalidating the CDN cache by way of Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-* [Using Rulesets to Transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
+* [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Invalidate the CDN cache by way of Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Use Rulesets to Transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
 

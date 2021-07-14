@@ -4,7 +4,7 @@ description: Learn about various asset management and editing methods.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}

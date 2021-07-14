@@ -2,7 +2,7 @@
 title: Video
 description: Learn how to work with video in Dynamic Media.
 feature: Video Profiles
-role: Business Practitioner
+role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 ---
 # Video{#video}

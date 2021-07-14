@@ -2,7 +2,7 @@
 title: Markdown
 description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create headless content.
 feature: Content Fragments
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 ---
 # Markdown {#markdown}
