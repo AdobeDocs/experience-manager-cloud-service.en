@@ -100,6 +100,14 @@ Two data types provide references to content outside a specific fragment:
 >
 >You can also create ad hoc references by using links within Text blocks.
 
+## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
+
+For content modeling the **Fragment Reference** data type allows you to create multiple levels of structure and relationships.
+
+With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
+
+This should be used with caution and the best practice can be defined as *nest as much as necessary but as little as possible*.
+
 ## What's Next {#whats-next}
 
 Now that you have learned the basics, the next step is to [Learn about Creating Content Fragment Models in AEM](model-structure.md). This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
