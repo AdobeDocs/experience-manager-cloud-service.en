@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Dynamic Media
 description: Troubleshooting tips when using Dynamic Media.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 ---
 # Troubleshooting Dynamic Media {#troubleshooting-dynamic-media-scene-mode}

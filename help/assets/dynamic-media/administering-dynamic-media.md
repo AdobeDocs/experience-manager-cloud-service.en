@@ -2,7 +2,7 @@
 title: Set up Dynamic Media
 description: To set up Dynamic Media, you must configure Dynamic Media and manage image and viewer presets.
 contentOwner: Rick Brough
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 ---
 # Set up Dynamic Media {#setting-up-dynamic-media}

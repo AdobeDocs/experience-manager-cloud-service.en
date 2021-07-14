@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner
+role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 ---
 # Configuring selective publishing at the folder level in Dynamic Media {#selective-publish-configure-folder}
