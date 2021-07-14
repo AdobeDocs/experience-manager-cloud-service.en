@@ -1,9 +1,9 @@
 ---
-title: Post Go-live Phase
-description: Post Go-live Phase
+title: Post Go Live Phase
+description: Post Go Live Phase
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
 ---
-# Post Go-live {#post-go-live}
+# Post Go Live {#post-go-live}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
