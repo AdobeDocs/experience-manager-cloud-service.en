@@ -16,9 +16,51 @@ This article builds on these so you understand how to create your own Content Fr
 * **Audience**: Beginner
 * **Objective**: the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
 
+<!-- which persona does this? -->
 
+<!--
+## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-### Publishing {#publishing}
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
+
+![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
+
+>[!NOTE]
+>
+>See Additional Resources - Content Fragments in the Configuration Browser
+-->
+
+## Creating Content Fragment Models {#creating-content-fragment-models}
+
+Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/assets/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+
+## Defining Content Fragment Models {#defining-content-fragment-models}
+
+![Empty Model](/help/assets/content-fragments/assets/cfm-models-03.png)
+
+![Defining fields](/help/assets/content-fragments/assets/cfm-models-04.png) 
+
+![Data Properties](/help/assets/content-fragments/assets/cfm-models-05.png) 
+    
+For example:
+
+![Content Fragment Model](/help/assets/content-fragments/assets/cfm-models-07.png)
+
+>[!NOTE]
+>
+>See Additional Resources - Content Fragment Models.
+
+## Publishing {#publishing}
 
 <!-- needs more details -->
 
