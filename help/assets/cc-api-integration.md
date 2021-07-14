@@ -3,7 +3,7 @@ title: Content Automation for Creative Cloud integration
 description: Generate variations of assets using Creative Cloud integration
 contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
-role: Business Practitioner,Administrator
+role: User,Admin
 ---
 
 # Generate variations of assets using [!DNL Adobe Creative Cloud] integration {#content-automation}
