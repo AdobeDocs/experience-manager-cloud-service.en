@@ -11,6 +11,7 @@ Learn how to connect AEM to a translation service.
 In the previous document of the AEM headless localization journey, [Get started with AEM headless localization](learn-about.md) you learned how to organize your headless content and how AEM's localization tools work and you should now:
 
 * Understand the importance of content structure to localization.
+* Understand how AEM stores headless content.
 * Be familiar with AEM's localization tools.
 
 This article builds on those fundamentals so you can take the first configuration step and set up a translation service, which you will use later in the journey to translate your content.
@@ -28,7 +29,7 @@ AEM's Translation Integration Framework integrates with third-party translation 
 
 1. Connect to your translation service provider.
 1. Create a Translation Integration Framework configuration.
-1. Associate the cloud configurations with your pages.
+1. Associate the configuration with your content.
 
 ## Connecting to a Translation Service Provider {#connect-translation-provider}
 
@@ -36,9 +37,19 @@ The first step is to choose which translation service you wish to use. There are
 
 Most providers will offer a translator package to be installed. For the purposes of this journey, we will use the Microsoft Translator which AEM provides with a trial license out-of-the-box. See the [Additional Resources](#additional-resources) section for more information about this provider.
 
+If you choose another provider you will need to install the connector package as per the instructions provided by the translation service.
+
+>[!NOTE]
+>
+>Using the out-of-the-box Microsoft Translator in AEM does not require additional setup and works as-is without additional connector configuration.
+>
+>If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections, but are advised to read them so that you are familiar for when you need to connect your preferred connector.
+>
+>The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, you will need to follow the next steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
+
 ## Creating a Translation Integration Configuration {#create-config}
 
-Create a translation integration framework configuration to specify how to translate your content. The configuration includes the following information:
+First you need to create a translation integration framework configuration to specify how to translate your content. The configuration includes the following information:
 
 * Which translation service provider to use
 * Whether human or machine translation is to be performed
@@ -80,6 +91,25 @@ To create a new translation configuration:
 
 You have now configured the connector to your translation service.
 
+## Associate the Configuration with Your Content {#associate}
+
+AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting this up is beyond the scope of this journey, but means that you need to specify which connectors and configuration should be used to translate your content.
+
+To do this, navigate to the language root of your content. For our example purposes this is
+
+```text
+/content/dam/<your-project>/en
+```
+
+1. Go to the global navigation and go to **Navigation** -&gt; **Assets** -&gt; **Files**.
+1. In the assets console, select the language root to configure and click or tap **Properties**.
+1. Tap or click the **Cloud Services** tab.
+1. Under **Cloud Service Configurations** in the **Add Configuration** dropdown, select your connector. It should appear in the dropdown when you have installed its package as [described previously.](#connect-translation-provider)
+1. Under **Cloud Service Configurations** in the **Add Configuration** dropdown, also select your configuration.
+1. Tap or click **Save &amp; Close**.
+
+![Select cloud service configurations](assets/select-cloud-service-configurations.png)
+
 ## What's Next {#what-is-next}
 
 Now that you have completed this part of the headless localization journey you should:
@@ -87,7 +117,7 @@ Now that you have completed this part of the headless localization journey you s
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Configure the translation connector,](configure-connector.md) where you will learn how to connect AEM to a translation service.
+Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
 
 ## Additional Resources {#additional-resources}
 
