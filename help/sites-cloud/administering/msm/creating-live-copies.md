@@ -2,7 +2,7 @@
 title: Creating and Synchronizing Live Copies
 description: Learn how to create and synchronize Live Copies to reuse your content across your site.
 feature: Multi Site Manager
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 ---
 # Creating and Synchronizing Live Copies {#creating-and-synchronizing-live-copies}
