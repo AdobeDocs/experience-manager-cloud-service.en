@@ -30,6 +30,7 @@ Cloud Manager supports the following customer SSL certificate requirements:
 * An SSL certificate may be used by multiple Environments, that is, add once and use multiple times.
 * Each Cloud Manager Environment can use multiple certificates.
 * A Private Key may issue multiple SSL certificates.
+* The maximum number of SSL certificates supported is now 20 per program.
 * Each certificate will typically contain multiple Domains.
 * The Platform TLS service routes requests to the customer's CDN Service based on the SSL certificate used to terminate and the CDN Service that hosts that domain.
 
