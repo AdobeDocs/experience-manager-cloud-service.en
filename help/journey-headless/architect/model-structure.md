@@ -9,7 +9,7 @@ description: Learn about the concepts and mechanics of modeling content for your
 
 At the beginning of the [AEM Headless Content Author Journey](overview.md) the [Content Modeling Basics for Headless with AEM](basics.md) covered the basic concepts and terminology relevant to authoring for headless.
 
-This article builds on these so you understand how to create your own Content Fragment Modelsfor your AEM headless project.
+This article builds on these so you understand how to create your own Content Fragment Models for your AEM headless project.
 
 ## Objective {#objective}
 
@@ -17,6 +17,7 @@ This article builds on these so you understand how to create your own Content Fr
 * **Objective**: the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
 
 <!-- which persona does this? -->
+<!-- and who allows the configuration on the folders? -->
 
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
@@ -72,9 +73,20 @@ You can add as many fields as you need. For example:
 
 <!-- needs more details -->
 
+Managing your Content Fragment Models involves:
+
+* Enabling (or disabling) them - this makes them available for authors when creating Content Fragments.
+* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments, in particular fragments that are already published.
+
 ## Publishing {#publishing}
 
 <!-- needs more details -->
+
+Content fragment models need to be published when/before any dependent content fragments are published.
+
+>[!NOTE]
+>
+>If an author tries to publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
 ## What's Next {#whats-next}
 
