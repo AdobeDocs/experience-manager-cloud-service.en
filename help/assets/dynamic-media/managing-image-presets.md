@@ -81,7 +81,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Select on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+Select Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
