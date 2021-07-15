@@ -7,6 +7,12 @@ description: This section describes handling of large content repositories
 
 ## Overview {#overview}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_precopy"
+>title="Handling Large Content Repositories"
+>abstract="To significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, CTT can leverage AzCopy as an optional pre-copy step. Once this pre-step is configured, in the extraction phase, AzCopy copies blobs from Amazon S3 or Azure Blob Storage to the migration set blob store. In the ingestion phase, AzCopy copies blobs from the migration set blob store to the destination AEM as a Cloud Service blob store."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Getting started with AzCopy as a Pre-Copy step"
+
 Copying a large number of blobs with the Content Transfer Tool (CTT) may take multiple days. 
 To significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service, CTT can leverage [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) as an optional pre-copy step. This pre-copy step can be used when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.  Once this pre-step is configured, in the extraction phase, AzCopy copies blobs from Amazon S3 or Azure Blob Storage to the migration set blob store. In the ingestion phase, AzCopy copies blobs from the migration set blob store to the destination AEM as a Cloud Service blob store. 
 
@@ -74,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 Data Store {#amazon-data-store}
+#### Amazon S3 Data Store {#amazon-sdata-store}
 
 Your azcopy.config file should include the following properties (make sure to use the correct values for your instance).
 
@@ -128,7 +134,7 @@ Any blobs which were copied prior to the error will be skipped automatically by 
 With the release of Content Transfer Tool 1.5.4, we added AzCopy support to Author ingestion. 
 
 >[!NOTE]
-> The recommendation is to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
+>The recommendation is to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later.
 
 To take advantage of AzCopy during ingestion, we require that you be on a AEM as a Cloud Service version that is at least version 2021.6.5561.
 

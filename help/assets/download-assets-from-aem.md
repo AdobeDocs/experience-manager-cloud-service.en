@@ -3,7 +3,7 @@ title: Download assets
 description: Download assets from [!DNL Adobe Experience Manager Assets] and enable or disable the download functionality.
 contentOwner: AG
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
@@ -60,8 +60,11 @@ To download assets, follow these steps:
 
 1. In the dialog box, click **[!UICONTROL Download]**.
 
-<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
 ## Download assets shared using link sharing {#link-share-download}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
@@ -70,7 +73,6 @@ When users download assets from shared links, [!DNL Assets] uses an asynchronous
 The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
 ![Download inbox](assets/download-inbox.png)
--->
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 

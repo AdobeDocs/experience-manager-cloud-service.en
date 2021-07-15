@@ -1,11 +1,11 @@
 ---
-title: Managing Image Presets
-description: "Learn about image presets and how to create, modify, and manage image presets."
+title: Manage Image Presets
+description: Learn about image presets and how to create, modify, and manage image presets.
 feature: Image Presets,Viewers,Renditions
-role: Business Practitioner
+role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 ---
-# Managing Image Presets{#managing-image-presets}
+# Manage Image Presets{#managing-image-presets}
 
 Image Presets enable Adobe Experience Manager Assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically. Each Image Preset represents a predefined collection of sizing and formatting commands for displaying images. When you create an Image Preset, you choose a size for image delivery. You also choose formatting commands so that the appearance of the image is optimized when the image is delivered for viewing.
 
@@ -13,13 +13,13 @@ Administrators can create presets for exporting assets. Users can choose a prese
 
 You can also create image presets that are responsive. If you apply a responsive image preset to your assets, they change depending on the device or screen size they are viewed on. You can configure image presets to use CMYK in the color space in addition to RGB or Gray.
 
-This section describes how to create, modify, and generally manage image presets. You can apply an image preset to an image anytime you preview it. See [Applying Image Presets](/help/assets/dynamic-media/image-presets.md).
+This section describes how to create, modify, and generally manage image presets. You can apply an image preset to an image anytime you preview it. See [Apply Image Presets](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
 >Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) for more information.
 
-## Understanding Image Presets {#understanding-image-presets}
+## Learn about Image Presets {#understanding-image-presets}
 
 Like a macro, an Image Preset is a predefined collection of sizing and formatting commands saved under a name. To understand how Image Presets work, suppose that your website requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
 
@@ -29,9 +29,9 @@ Images that are reduced in size when they are delivered dynamically can lose sha
 
 Administrators can create Image Presets. To create an image preset, you can start from scratch or you can start from an existing one and save it under a new name.
 
-## Managing Image Presets {#managing-image-presets-1}
+## Manage Image Presets {#managing-image-presets-1}
 
-You manage your image presets in Experience Manager by tapping or clicking the Experience Manager logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+You manage your image presets in Experience Manager by selecting the Experience Manager logo to access the global navigation console and then selecting the Tools icon and navigating to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -41,11 +41,11 @@ You manage your image presets in Experience Manager by tapping or clicking the E
 >
 >You do *not* need to publish image presets as image presets are automatically published.
 >
->See [Publishing Image Presets](#publishing-image-presets).
+>See [Publish Image Presets](#publishing-image-presets).
 
 >[!NOTE]
 >
->The system shows various renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of image presets that display. See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>The system shows various renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of image presets that display. See [Increase the number of image presets that are displayed](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Adobe Illustrator (AI), PostScript® (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -56,11 +56,11 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 * Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG subasset under the main Illustrator asset.
 * PDF documents consist of one or more pages. Each page is extracted as a single page PDF subasset under the main multi-page PDF document.
 
-The subassets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+The subassets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-You can view the subassets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+You can view the subassets or the pages when you open the asset, select the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
 
 To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
 
@@ -81,7 +81,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+Select Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -108,7 +108,7 @@ If you intend to support the ingestion of INDD files so that you can generate dy
 
 For InDesign files, sub assets are extracted only if the Adobe InDesign Server is integrated with Experience Manager. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within Experience Manager before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-<!-- See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
 The Media Extraction process component in the `DAM Update Asset` workflow runs several pre-configured Extend Scripts to process InDesign files.
 
@@ -121,17 +121,17 @@ The following scripts, are used by Dynamic Media integration:
 
 |ExtendScript name | Default | Description |
 |---|---|---|
-| ThumbnailExport.jsx | Yes  | Generates a 300 ppi `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
-| JPEGPagesExport.jsx | Yes | Generates a 300 ppi JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the `DAM Update Asset` workflow. |
+| ThumbnailExport.jsx | Yes  | Generates a 300 PPI `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
+| JPEGPagesExport.jsx | Yes | Generates a 300 PPI JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the `DAM Update Asset` workflow. |
 | PDFPagesExport.jsx | No | Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated. |
 
-### Configuring image thumbnail size {#configuring-image-thumbnail-size}
+### Configure image thumbnail size {#configuring-image-thumbnail-size}
 
 You can configure the size of thumbnails by configuring those settings in the **[!UICONTROL DAM Update Asset]** workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. One (**[!UICONTROL Dynamic Media Process Image Assets]**) is used for dynamic image assets. The other (**[!UICONTROL Process Thumbnails]**) is used for static thumbnail generation or when all other processes fail to generate thumbnails. Regardless, *both* must have the same settings.
 
 With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails are generated by the image server, and this configuration is independent of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
-Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:center]**, for example *80:80:false*. The width and height determine the size in pixels of the thumbnail. The center value is either false or true. If set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it is centered within the thumbnail.
+Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:center]**, for example `80:80:false`. The width and height determine the size in pixels of the thumbnail. The center value is either false or true. If set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it is centered within the thumbnail.
 
 >[!NOTE]
 >
@@ -140,26 +140,26 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 >* Thumbnail sizes for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
-**To configure image thumbnail size**
+**To configure image thumbnail size:**
 
-1. Tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
-1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Dynamic Media Process Image Assets]** step and select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Process Thumbnails]** step, then select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. Tap **[!UICONTROL Save]** to save the changes to the workflow.
+1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 
-### Increasing or decreasing the number of image presets that display {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Increase or decrease the number of image presets that are displayed {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Image presets you create are available as dynamic renditions when you preview assets. Experience Manager shows various dynamic renditions when viewing an asset from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
 
-**To increase or decrease the number of image presets displayed:**
+**To increase or decrease the number of image presets that are displayed:**
 
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the image preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -172,11 +172,11 @@ Image presets you create are available as dynamic renditions when you preview as
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tap **[!UICONTROL Save All]**.
+1. Select **[!UICONTROL Save All]**.
 
-### Creating an Image Preset {#creating-image-presets}
+### Create image presets {#creating-image-presets}
 
-Creating an image preset lets you apply those settings to any images when previewing or publishing.
+Create image presets so you can apply settings consistently across images when you preview or publish.
 
 >[!NOTE]
 >
@@ -190,10 +190,10 @@ If you intend to support the ingestion of INDD files so that you can generate dy
 
 See [InDesign (INDD) file format](#indesign-indd-file-format).
 
-**To create an image preset:**
+**To create image presets:**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Click **[!UICONTROL Create]**. The **[!UICONTROL Edit Image Preset]** window opens.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. Select **[!UICONTROL Create]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -201,15 +201,15 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
    >
    >To make this image preset responsive, erase the values in the **[!UICONTROL width]** and **[!UICONTROL height]** fields and leave them blank.
 
-1. Enter values into the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs as appropriate, including a name. The options are outlined in [Image Preset Options](#image-preset-options). Presets appear in the left pane and can be used on-the-fly with other assets.
+1. In the **[!UICONTROL Edit Image Preset]** window, enter values into the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs as appropriate, including a name. The options are outlined in [Image Preset Options](#image-preset-options). Presets appear in the left pane and can be used on-the-fly with other assets.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Click **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
 ### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
-To create a responsive image preset, perform the steps in [Creating Image Presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
+To create a responsive image preset, perform the steps in [Create image presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
 
 Leaving them blank tells Experience Manager that this image preset is responsive. You can adjust the other values as appropriate.
 
@@ -221,7 +221,7 @@ Leaving them blank tells Experience Manager that this image preset is responsive
 >
 >Image presets and image assets are automatically published.
 
-### Image Preset options {#image-preset-options}
+### Image preset options {#image-preset-options}
 
 When you create or edit image presets, you have the options described in this section. In addition, Adobe recommends these “best practice” option choices to start:
 
@@ -233,55 +233,12 @@ When you create or edit image presets, you have the options described in this se
 
 #### Basic tab options {#basic-tab-options}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Field</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Name</strong></td>
-   <td>Enter a descriptive name without any blank spaces. To help users identify this Image Preset, include the image-size specification in the name.</td>
-  </tr>
-  <tr>
-   <td><strong>Width and Height</strong></td>
-   <td>Enter in pixels the size at which the image is delivered. Width and height must be larger than 0 pixels. If either value is 0, then no preset is created. If both values are blank, a responsive image preset is created.</td>
-  </tr>
-  <tr>
-   <td><strong>Format</strong></td>
-   <td><p>Choose a format from the menu.</p> <p>Choosing <strong>JPEG</strong> offers the following other options:</p>
-    <ul>
-     <li><strong>Quality</strong> - Controls the JPEG compression level. This setting affects both file size and image quality. The JPEG quality scale is 1-100. Scale is visible when you drag the slider.</li>
-     <li><strong>Enable JPG Chrominance Downsampling</strong> - Because the eye is less sensitive to high-frequency color information than high-frequency luminance, JPEG images divide image information into luminance and color components. When a JPEG image is compressed, the luminance component is left at full resolution, while the color components are downsampled by averaging together groups of pixels. Downsampling reduces the data volume by one half or one third with almost no impact on perceived quality. Downsampling is not applicable to grayscale images. This technique reduces the amount of compression useful for images with high contrast (for example, images with overlaid text).</li>
-    </ul>
-    <div>
-      Choosing
-     <strong>GIF</strong> or
-     <strong>GIF with alpha</strong> provides these additional
-     <strong>GIF Color Quantization</strong> options:
-    </div>
-    <ul>
-     <li><strong>Type </strong>- Select <strong>Adaptive</strong> (the default), <strong>Web</strong>, or <strong>Macintosh</strong>. If you select <strong>GIF with Alpha</strong>, the Macintosh option is not available.</li>
-     <li><strong>Dither</strong> - Select <strong>Diffuse</strong> or <strong>Off</strong>.</li>
-     <li><strong>Number of Colors </strong>- Enter a number from 2 through 256.</li>
-     <li><strong>Color List</strong> - Enter a comma-separated list. For example, for white, gray, and black, enter 000000,888888,ffffff.</li>
-    </ul>
-    <div>
-      Choosing
-     <strong>PDF</strong>,
-     <strong>TIFF</strong>, or
-     <strong>TIFF with alpha</strong> provides this additional option:
-    </div>
-    <ul>
-     <li><strong>Compression</strong> - Select a compression algorithm. Algorithm options for PDF are <strong>None</strong>, <strong>Zip</strong>, and <strong>Jpeg</strong>; for TIFF they are <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, and <strong>Zip</strong>; and for TIFF with Alpha are <strong>None</strong>, <strong>LZW</strong>, and <strong>Zip</strong>.</li>
-    </ul> <p>Choosing <strong>PNG</strong>, <strong>PNG with Alpha,</strong> or <strong>EPS</strong> provides no additional options.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Sharpening</strong></td>
-   <td>Select the <strong>Enable Simple Sharpening</strong> option to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </td>
-  </tr>
- </tbody>
-</table>
+| Field | Description |
+| --- | --- |
+| **Name** | Enter a descriptive name without any blank spaces. To help users identify this Image Preset, include the image-size specification in the name. |
+| **Width and Height** | Enter in pixels the size at which the image is delivered. Width and height must be larger than 0 pixels. If either value is 0, then no preset is created. If both values are blank, a responsive image preset is created. |
+| **Format** | Choose a format from the menu.<br>Choosing **JPEG** offers the following other options:<br>&bull; **Quality** - The JPEG quality scale is 1-100. Scale is visible when you drag the slider.<br>&bull; **Enable JPG Chrominance Downsampling** - Because the eye is less sensitive to high-frequency color information than high-frequency luminance, JPEG images divide image information into luminance and color components. When a JPEG image is compressed, the luminance component is left at full resolution, while the color components are downsampled by averaging together groups of pixels. Downsampling reduces the data volume by one half or one third with almost no impact on perceived quality. Downsampling is not applicable to grayscale images. This technique reduces the amount of compression useful for images with high contrast (for example, images with overlaid text).<br><br>Choosing **GIF** or **GIF with alpha** provides these additional **GIF Color Quantization** options:<br>&bull; **Type** - Select **Adaptive** (default), **Web**, or **Macintosh**. If you select **GIF with Alpha**, the Macintosh option is not available.<br>&bull; **Dither** - Select **Diffuse** or **Off**.<br>&bull; **Number of Colors** - Enter a number 2 - 256.<br>&bull; **Color List** - Enter a comma-separated list. For example, for white, gray, and black, enter `000000,888888,ffffff`.<br><br>Choosing **PDF**, **TIFF**, or **TIFF with alpha** provides this additional option:<br>&bull; **Compression** - Select a compression algorithm. Algorithm options for PDF are **None**, **Zip**, and **Jpeg**; for TIFF they are **None**, **LZW**, **Jpeg**, and **Zip**; and for TIFF with Alpha are **None**, **LZW**, and **Zip**.<br><br>Choosing **PNG**, **PNG with Alpha**, or **EPS** provides no additional options. |
+| **Sharpening** | Select **Enable Simple Sharpening** to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. |
 
 #### Advanced tab options {#advanced-tab-options}
 
@@ -368,7 +325,7 @@ When you create or edit image presets, you have the options described in this se
  </tbody>
 </table>
 
-### Defining Image Preset options with Image Modifiers {#defining-image-preset-options-with-image-modifiers}
+### Define image preset options with image modifiers {#defining-image-preset-options-with-image-modifiers}
 
 In addition to the options available in the Basic and Advanced tabs, you can define image modifiers to give you more options when defining image presets. Image Rendering relies on the Dynamic Media Image Rendering API and is defined in detail in the [HTTP Protocol Reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
@@ -418,20 +375,21 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Editing Image Presets {#modifying-image-presets}
+### Edit image presets {#modifying-image-presets}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. Select a preset and then click **[!UICONTROL Edit]**. The **[!UICONTROL Edit Image Preset]** window opens.
-1. Make changes and click **[!UICONTROL Save]** to save your changes or **[!UICONTROL Cancel]** to cancel your changes.
+1. Select a preset and then select **[!UICONTROL Edit]**. The **[!UICONTROL Edit Image Preset]** window opens.
+1. Make changes and select **[!UICONTROL Save]** to save your changes or **[!UICONTROL Cancel]** to cancel your changes.
 
-### Publishing Image Presets {#publishing-image-presets}
+### Publish image presets {#publishing-image-presets}
 
 Image presets are automatically published for you.
 
-### Deleting Image Presets {#deleting-image-presets}
+### Delete image presets {#deleting-image-presets}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console and select the Tools icon.
+1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. Select a preset, and then select **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Select **[!UICONTROL Delete]** to remove or select **[!UICONTROL Cancel]** to return to Image Presets.
