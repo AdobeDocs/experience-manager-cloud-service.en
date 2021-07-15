@@ -88,3 +88,53 @@ AEM now communicates with your translation configuration and connector to send t
 ![Translation Job approved](assets/translation-job-approved.png)
 
 Machine translations automatically return with a state of **Approved**. Human translation allows for more interaction, but is beyond the scope of this journey.
+
+## Reviewing Translated Content {#reviewing}
+
+[As previously seen,](#using-translation-project) machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However it is of course still possible to review the translated content.
+
+Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. The icon **Reveal in Content Fragment** is shown in the tool bar.
+
+![Reveal in content fragment](assets/reveal-in-content-fragment.png)
+
+Tap or click that icon to open the translated content fragment in its editor console to see the details of the translated content.
+
+![A translated content fragment](assets/translated-content-fragment.png)
+
+You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
+
+The project's job is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In our example here
+
+```text
+/content/dam/wknd/es
+```
+
+If you navigate to this folder via **Navigation** -&gt; **Files** -&gt; **Assets**, you will see the translated content.
+
+![Translated content folder structure](assets/translated-file-content.png)
+
+AEM's translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
+
+It is important to understand that this content is not published. It remains on the authoring instance of AEM until you decide it is ready to be publish. We will see how to do this in the next step of the localization journey.
+
+## Human Translation {#human-translation}
+
+If your translation service provides human translation, the review process offers more options. For example, translations arrive back in the project with the status **Draft** and must be reviewed and approved or rejected manually.
+
+Human translation is beyond the scope of this localization journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
+
+## What's Next {#what-is-next}
+
+Now that you have completed this part of the headless localization journey you should:
+
+* Understand what a translation project is.
+* Be able to create new translation projects.
+* Use translation projects to translate your headless content.
+
+Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Publish translated content](publish-content.md) where you will learn how to publish your translated content and how to update those translations as your language root content changes.
+
+## Additional Resources {#additional-resources}
+
+While it is recommended that you move on to the next part of the headless localization journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+
+* [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
