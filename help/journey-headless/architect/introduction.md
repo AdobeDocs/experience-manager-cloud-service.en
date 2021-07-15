@@ -51,7 +51,7 @@ This all means that it can be used as a:
 
 ## Content Modeling {#content-modeling}
 
-Content Modeling (also known as data modeling) is your speciality, so what needs to be considered when modeling for headless?
+Content Modeling (also known as data modeling) is your specialty, so what needs to be considered when modeling for headless?
 
 For the headless applications to be able to access your content, and do something with it, the content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
