@@ -48,9 +48,9 @@ Follow this section to explore the Code Refactoring activity card:
 
 1. The page displays the list of code refactoring activities organized by the severity level. You can learn more by clicking on the two highlighted icons. 
 
-   The page displays the code refactoring considerations in three different tabs. 
+   The page displays the code refactoring considerations in three different tabs: 
 
-   * Overview: 
+   * Overview
    * Dispatcher
    * Testing
 
