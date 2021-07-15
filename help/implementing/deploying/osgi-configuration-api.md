@@ -113,7 +113,7 @@ Additional information about OSGI configuration can be found at [this location](
     * Required
     * Type: array of strings
     * Required Range: must include js
-* **`com.day.cq.mailer.DefaultMailService`**	(Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`com.day.cq.mailer.DefaultMailService`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * `smtp.host`
     * Type: string
   * `smtp.port`
