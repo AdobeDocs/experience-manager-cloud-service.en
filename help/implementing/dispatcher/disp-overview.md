@@ -49,8 +49,6 @@ The dispatcher tools are used to validate and debug your project's Dispatcher co
 
 * **Legacy mode** - for details on the folder structure and local validation for dispatcher configuration legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
-## Learn how to Migrate from Legacy Dispatcher Configurations to the more Flexible Mode {#learn-how-migrate-from-legacy-dispatcher-configurations-to-the-more-flexible-mode}
-
 For more information on how to migrate from the legacy configuration model to the more flexible one, provided with AEM archetype 28 onwards, see [this documentation](/help/implementing/dispatcher/validation-debug.md#migrating).
   
 ## Supported Apache Modules {#supported-directives}

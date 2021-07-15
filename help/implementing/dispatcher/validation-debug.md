@@ -8,7 +8,7 @@ feature: Dispatcher
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->For more information about Dispatcher in the Cloud and how to download Dispatcher Tools see the [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md) page.
+>For more information about Dispatcher in the Cloud and how to download Dispatcher Tools see the [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md) page. If your dispatcher configuration is in legacy mode, refer to the [legacy mode documentation](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 The following sections describe the flexible mode file structure, local validation, debugging and migrating from legacy mode to the flexible mode.
 
