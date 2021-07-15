@@ -174,11 +174,15 @@ role: Developer, Architect
   + [Deploying to AEM as a Cloud Service](deploying/overview.md)
   + [AEM Version Updates](deploying/aem-version-updates.md)
   + [Configuring OSGi for AEM as a Cloud Service](deploying/configuring-osgi.md)
+  + [OSGi Configuration API](deploying/osgi-configuration-api.md)
 + Author Tier {#author-tier}  
   + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
   + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
 + Content Delivery Overview {#content-delivery}
   + [Content Delivery Flow](dispatcher/overview.md)
   + [Dispatcher in the Cloud](dispatcher/disp-overview.md)
+  + [Validating and Debugging using Dispatcher Tools](dispatcher/validation-debug.md)
+  + [Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service](dispatcher/ams-aem.md)
+  + [Validating and Debugging using Dispatcher Tools Legacy](dispatcher/validation-debug-legacy.md)
   + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
   + [Caching in AEM as a Cloud Service](dispatcher/caching.md)

@@ -193,4 +193,4 @@ To troubleshoot replication, navigate to the Replication Queues in the AEM Autho
 ![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
-In that case, the queues should be reviewed in order to identify which items caused the cancelation of the publication. By clicking on a queue showing a red status, the queue with pending items would show up, from which single or all items can be cleared if needed.
+In that case, the main, editable queue will show a red status and should be reviewed in order to identify which item(s) caused the cancelation of the publication. By clicking that queue, its pending items will show up, from which a single item or all items can be cleared if needed.
