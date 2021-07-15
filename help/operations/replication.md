@@ -27,6 +27,14 @@ To realize the automatic replication for this you need to enable **Auto Replicat
 
    ![OSGi On Off Trigger Configuration](/help/operations/assets/replication-on-off-trigger.png)
 
+### Manage Publication {#manage-publication}
+
+Manage Publication offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
+
+Including a folder's children for the "publish later" option will invoke the Publish Content Tree workflow, described in this article.
+
+You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+
 ### Tree Activation {#tree-activation}
 
 >[!NOTE]
@@ -45,7 +53,7 @@ To perform a tree activation:
 
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
-![](/help/operations/assets/publish-distribute.png)
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Do not modify or invoke the original model. Instead, make sure to first copy the model and then modify or invoke that copy.
 
@@ -171,14 +179,6 @@ In case you do not provide such a filter and only use the "publish" agent, the "
 
 The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the above example this is not the case, as the replication is just using the "preview" agent. Therefore, you need to use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
 
-### Manage Publication {#manage-publication}
-
-Manage Publication offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
-
-Including a folder's children for the "publish later" option will invoke the Publish Content Tree workflow, described in this article.
-
-You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
 ## Troubleshooting {#troubleshooting}
 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
@@ -193,4 +193,4 @@ To troubleshoot replication, navigate to the Replication Queues in the AEM Autho
 ![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
-In that case, the queues should be reviewed in order to identify which items caused the cancelation of the publication. By clicking on a queue showing a red status, the queue with pending items would show up, from which single or all items can be cleared if needed.
+In that case, the main, editable queue will show a red status and should be reviewed in order to identify which item(s) caused the cancelation of the publication. By clicking that queue, its pending items will show up, from which a single item or all items can be cleared if needed.

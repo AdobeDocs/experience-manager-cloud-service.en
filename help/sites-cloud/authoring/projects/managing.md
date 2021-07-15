@@ -19,8 +19,11 @@ Out of the box, AEM provides these templates to choose from when you create a pr
 
 * Simple Project
 * Media Project
-* Product Photo Shoot Project
 * Translation Project
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-cloud/authoring/projects/overview.md) and [workflows](/help/sites-cloud/authoring/projects/workflows.md).  To create a new project:
 

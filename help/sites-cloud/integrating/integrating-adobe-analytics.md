@@ -2,7 +2,7 @@
 title: Integrating with Adobe Analytics
 description: Integrating with Adobe Analytics 
 feature: Administering
-role: Administrator
+role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 ---
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
