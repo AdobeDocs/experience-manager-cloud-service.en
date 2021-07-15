@@ -32,7 +32,8 @@ Follow the steps below to convert the format of your SSL files to PEM:
 
 * A user must be in the Business Owner or Deployment Manager role in order to install an SSL certificate in Cloud Manager.
 
-* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint.
+* At any given time, Cloud Manager will allow a maximum of 10 SSL certificates that can be associated with one or more environments across your Program, even if a certificate is expired. Cloud Manager UI will, however, allow up 50 SSL certificates to be installed in the program with this constraint. Typically a certificate can cover multiple domains (up to 100 SANs) so consider grouping multiple domains in the same certificate in order to stay within this limit.
+
 
 ## Adding a Certificate {#adding-a-cert}
 

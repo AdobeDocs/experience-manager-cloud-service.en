@@ -3,7 +3,7 @@ title: Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal
 description: Configure AEM Assets with Brand Portal.
 contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
-role: Administrator
+role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 ---
 # Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal {#configure-aem-assets-with-brand-portal}
@@ -55,7 +55,7 @@ You can activate Brand Portal while creating the environments for your AEM Asset
 >If the existing Brand Portal cloud configuration and AEM Assets as a [!DNL Cloud Service] instance are using the same IMS org (org1), you only have to activate Brand Portal from the Cloud Manager. 
 
 **See also**:
-* [Add users and roles in AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [Add users and roles in AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
 * [Manage environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
 
