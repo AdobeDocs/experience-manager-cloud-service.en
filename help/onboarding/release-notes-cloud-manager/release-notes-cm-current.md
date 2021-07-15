@@ -26,9 +26,9 @@ The next release is planned for August 12, 2021.
 
 * The maximum SSL certificates supported has increased to 20 per program.
 
-* The maximum number of domains that can be configure has increased to 500 per environment.
+* The maximum number of domains that can be configured has increased to 500 per environment.
 
-* The **Manage Git** buttons has been retitled **Access Git Info** and the dialog has been visually refreshed.
+* The **Manage Git** buttons has been retitled to **Access Git Info** and the dialog has been visually refreshed.
 
 * The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28.
 
@@ -43,8 +43,6 @@ The next release is planned for August 12, 2021.
 * In some circumstances there could be a discrepancy in the release version shown in the pipeline card on the overview page.
 
 * Add program wizard incorrectly stated that name cannot be changed after creation. 
-
-* In some situations, Preview was not an available option when binding an IP Allow List to an environment.
 
 ### Known Issues {#known-issues}
 
