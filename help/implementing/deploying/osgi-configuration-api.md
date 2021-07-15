@@ -9,11 +9,11 @@ feature: Deploying
 The two lists below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.
 
 1. A list of OSGi configurations that must not be configured by customer code
-1. A list of OSGi configurations whose properties may be configured, but must abide by validation rules of each row. These rules include whether declaration of the property is required, its type, and in some cases, its allowed range of values.
+1. A list of OSGi configurations whose properties may be configured, but must abide by the indicated validation rules. These rules include whether declaration of the property is required, its type, and in some cases, its allowed range of values.
 
 If an OSGI configuration is not listed, it may be configured by customer code.
 
-These rules are validated during the Cloud Manager build process. Additional rules may be added over time and the expected enforcement date is noted in the table. Customers are expected to abide by these rules by the target enforcement date. Not abiding by the rules after the removal date will generate errors in the Cloud Manager build process. Maven project's should include the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) to flag OSGI configuration errors during local SDK development.
+These rules are validated during the Cloud Manager build process. Additional rules may be added over time and the expected enforcement date is noted in the table. Customers are expected to abide by these rules by the target enforcement date. Not abiding by the rules after the removal date will generate errors in the Cloud Manager build process. Maven projects should include the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) to flag OSGI configuration errors during local SDK development.
 
 Additional information about OSGI configuration can be found at [this location](/help/implementing/deploying/configuring-osgi.md).
 
