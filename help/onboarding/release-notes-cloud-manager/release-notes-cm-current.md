@@ -40,7 +40,7 @@ The next release is planned for August 12, 2021.
 
 * The error message shown when the maximum number of SSL certificates was reached was not helpful.
 
-* In some circumstances there could be a discrepancy in the release version shown in the pipeline card on the overview page.
+* In some circumstances, there could be a discrepancy in the release version shown in the pipeline card on the **Overview** page.
 
 * Add program wizard incorrectly stated that name cannot be changed after creation. 
 
