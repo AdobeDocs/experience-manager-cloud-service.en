@@ -41,9 +41,9 @@ In addition to the above, Cloud Manager will automatically create a product prof
 
 Each of the roles have specific permissions associated with it. For example, if you are in the role of a:
 
-* ***Business Owner***, you have the permission to Add a new program or Edit a program, add or update an environment, add/edit/delete the pipeline and run any pipeline, and deploy code to AEM environment or code quality.
+* ***Business Owner***, you have the permission to Add a new program or Edit a program, add or update an environment,  and run any pipeline.
 
-* ***Deployment Manager***, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment or code-quality. 
+* ***Deployment Manager***, you have the permission to add or update an environment, and run any pipeline. 
 
 * ***Developer***, you have the permission to generate Personal Access Token to access Git.
 

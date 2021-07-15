@@ -2,7 +2,7 @@
 title: Search facets.
 description: This article describes how to create, modify, and use search facets in AEM.
 feature: Search,Metadata
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 ---
 # Search facets {#search-facets}

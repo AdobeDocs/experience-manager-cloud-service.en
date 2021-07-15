@@ -18,7 +18,6 @@ Depending on which Project template you select, you have certain workflows avail
 |   |**Simple Project**|**Media Project**|**Translation Project**|
 |---|:-:|:-:|:-:|
 |Request Copy |  |x |    |
-|Product Photo Shoot |  |x |  |
 |Project Approval |x |  |    |
 |Request Launch |x |  |    |
 |Request Landing Page |x |  |    |
