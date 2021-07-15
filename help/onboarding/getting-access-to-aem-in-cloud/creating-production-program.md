@@ -13,7 +13,7 @@ Watch the two part tutorial videos below to learn how to create a Program in Clo
 
 >[!VIDEO](https://video.tv.adobe.com/v/334954)
 
-Or, 
+Additionally, 
 
 Follow the steps below to create a Production program:
 
