@@ -74,7 +74,7 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
 Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
 
-   ![bp_landing_page](assets/bp_landing_page.png)
+   ![bp_landingpage](assets/bp_landingpage.png)
 
 
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
