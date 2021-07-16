@@ -38,7 +38,7 @@ To generate FPO renditions of new assets, apply the **[!UICONTROL Processing Pro
 
 To generate renditions, select the assets and follow these steps.
 
-![fpo-existing-asset-reprocess](assets/fpo-existing-asset.gif)
+![fpo-existing-asset-reprocess](assets/fpo-existing-asset-reprocess.gif)
 
 
 ## View FPO renditions {#view-fpo-renditions}
