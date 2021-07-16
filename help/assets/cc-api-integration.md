@@ -55,4 +55,4 @@ To process the existing assets, select the assets, select **[!UICONTROL Reproces
 >
 >* [Configure and use asset microservices via processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 >* [Integrate [!DNL Experience Manager] with [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
->* [Asset ingestion and processing with asset microservices: An overview](/help/assets/asset-microservices-overview.html).
+>* [Asset ingestion and processing with asset microservices: An overview](/help/assets/asset-microservices-overview.md).
