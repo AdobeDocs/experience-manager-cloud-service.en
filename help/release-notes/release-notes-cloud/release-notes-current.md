@@ -43,3 +43,29 @@ Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334
  
 * 
 * 
+
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### What is new in [!DNL Forms] {#what-is-new-forms}
+
+* You can now use Automated Forms Conversion service to convert PDF Forms in French, German, and Spanish language to adaptive forms. 
+* Added a separate panel to template editor to display errors related to adaptive form components. It helps consolidate all adaptive form errors at one location and reduce resolution time.
+
+### New features available in [!DNL Forms] prerelease channel {#beta-features-assets}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+  * Generate documents by populating template files with XML data.
+  * Generate output forms in various formats, including non-interactive PDF print streams.
+  * Generate print PDFs from an XFA form PDF and Adobe Acrobat Form.
+
+* **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
+
+* **Acroform-based Document of Record**: You can also use Adobe Acrobat Form PDF (Acroform PDF) as a template for Document of Record besides XFA-based form template.
+
+* **Form Data Model**: You can now connect Form Data Model to Microsoft Azure Storage. It allows you to store and retrieve adaptive form data to Microsoft Azure Storage as a BLOB.  
+
+
+### Bugs fixed in [!DNL Forms] {#forms-bugs-fixed}
+
+* When a field is validated before submitting data to backend service via Form Data Model (FDM), validations succeed but the Form Data Model service fail to invoke post validation.
+* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. This is a known issue in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
