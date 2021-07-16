@@ -7,7 +7,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 
 A *Production* program is intended for a user who is familiar with AEM and Cloud Manager and is ready to start writing, building and testing code with the objective of deploying it to Production.
 
-Watch the two part tutorial videos below to learn how to create a Program in Cloud Manager:
+Watch the two part tutorial videos to learn how to create a Program in Cloud Manager:
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
