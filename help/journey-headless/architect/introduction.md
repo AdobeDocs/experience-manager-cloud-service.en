@@ -20,11 +20,11 @@ A Content Management System (CMS) is just what it says it is - a computer system
 
 ## Headless CMS {#headless-cms}
 
-Headless is a term used to describe systems that effectively detaches the content from the manner of displaying that content on the web. 
+Headless is a term used to describe systems that effectively detach the content from the manner of displaying that content on the web. 
 
 Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
 
-Now, headless means that the content-set can be managed in the CMS and then accessed by one, or more, (independent) applications. 
+Now headless means that the content-set can be managed in the CMS and then accessed by one, or more, (independent) applications. 
 
 This means that the content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that authors do not need to worry about layout and formatting.
 
@@ -55,7 +55,7 @@ Content Modeling (also known as data modeling) is your specialty, so what needs 
 
 For the headless applications to be able to access your content, and do something with it, the content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
-For AEM you, as a Content Architect, will perform the data modeling to design a range of **Content Fragment Models**. These define the structure used when your content authors create the **Content Fragments** that hold the content.
+For AEM you, as a Content Architect, will perform the content modeling to design a range of **Content Fragment Models**. These define the structure used when your content authors create the **Content Fragments** that hold the content.
 
 ### Accessing the Content {#access-content}
 
@@ -63,7 +63,7 @@ This is more of a development detail - but it might interest you, just to comple
 
 Once you've created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content. 
 
-Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. This selection process is based on *your* Content Fragment Models. 
+Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. Using the API a developer can formulate queries that select specific content.This selection process is based on *your* Content Fragment Models. 
 
 This means your project can realize headless delivery of structured content for use in your applications.
 

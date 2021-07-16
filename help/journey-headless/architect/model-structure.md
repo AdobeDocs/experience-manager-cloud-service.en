@@ -51,7 +51,7 @@ When you first open a new model you will see - a large blank space to the left, 
 
 ![Empty Model](/help/assets/content-fragments/assets/cfm-models-03.png)
 
-So - what's to do?
+So - what's to be done?
 
 You can drag instances of the **Data Types** onto the left space - you're already defining your model!
 
