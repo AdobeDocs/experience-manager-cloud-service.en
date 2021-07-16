@@ -49,6 +49,10 @@ To perform a tree activation:
 ![Distribute](assets/publish-distribute.png "Distribute")
 4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
 
+For best performance, follow these guidelines when using this feature:
+* The total size of the content package generated for replication must be below 5MB.
+* It is recommended to replicate fewer than 100 paths at a time, with a 500 path hard limit. 
+
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
