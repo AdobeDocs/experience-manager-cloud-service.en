@@ -37,9 +37,9 @@ The structure of your content model is:
 
 >[!NOTE]
 >
->The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in a later session.
+>The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
 
-Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows you to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
+Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows applications to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
 
 The content returned can then be used by your applications.
 
@@ -106,7 +106,7 @@ For content modeling the **Fragment Reference** data type allows you to create m
 
 With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
 
-This should be used with caution and the best practice can be defined as *nest as much as necessary but as little as possible*.
+This should be used with caution and the best practice can be defined as *nest as much as necessary, but as little as possible*.
 
 ## What's Next {#whats-next}
 
