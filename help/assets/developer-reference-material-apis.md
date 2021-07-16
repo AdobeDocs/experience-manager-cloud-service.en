@@ -184,19 +184,7 @@ For post-processing workflow configuration, use the standard workflows with exte
 
 ## Support of workflow steps in post-processing workflow {#post-processing-workflows-steps}
 
-Customers upgrading from previous versions of [!DNL Experience Manager] can use asset microservices to process assets. The cloud-native asset microservices are much simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported.
-
-[!DNL Experience Manager] as a [!DNL Cloud Service] support the following workflow steps:
-
-* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
-* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
-* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
-* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
-* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
-* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+If you upgrade from a previous version of [!DNL Experience Manager], you can use asset microservices to process assets. The cloud-native asset microservices are simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported. For more information about supported classes, see the [Java API reference](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
 
 The following technical workflow models are either replaced by asset microservices or the support is not available:
 
