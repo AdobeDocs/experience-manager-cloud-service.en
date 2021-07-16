@@ -79,7 +79,8 @@ role: Architect, Developer
     + [Deleting an IP Allow List](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
     + [Checking an IP Allow List Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.6.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.7.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Release Notes for 2021.6.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
     + [Release Notes for 2021.5.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
     + [Release Notes for 2021.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
     + [Release Notes for 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
