@@ -69,7 +69,7 @@ To create a standard processing profile, follow these steps:
 
 1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Click **[!UICONTROL Create]**.
 1. Provide a name that helps you uniquely identify the profile when applying to a folder.
-1. To generate FPO renditions, on the **[!UICONTROL Standard]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
+1. To generate FPO renditions, on the **[!UICONTROL Image]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
 1. To generate other renditions, click **[!UICONTROL Add New]** and provide the following information:
 
    * File name of each rendition.
