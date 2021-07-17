@@ -36,7 +36,7 @@ To use processing profiles to automatically create variations, follow these step
 
 1. Select the **[!UICONTROL Creative]** tab, specify the output folder, select **[!UICONTROL Add New]** to add a creative configuration.
 
-1. Provide **[!UICONTROL Rendition Name]** (or output name), **[!UICONTROL Extension]** (or file type), select **[!UICONTROL Quality]** (or output parameters), select **[!UICONTROL Includes]** and **[!UICONTROL Excludes]** MIME type lists (or input asset filter), and select the required creative operation.
+1. Provide **[!UICONTROL Rendition Name]** (or output name), **[!UICONTROL Extension]** (or file type), select **[!UICONTROL Quality]** (or output parameters), select **[!UICONTROL Includes]** and **[!UICONTROL Excludes]** MIME type lists (or input asset filter), and select the required creative operation.<br/>
 ![creative tab in processing profile](assets/creative-processing-profile.png)
 
 1. Some operations require extra parameters (asset). Provide values for these extra parameters, if necessary.
