@@ -117,15 +117,15 @@ Explore valuable knowledge-building resources such as how-to videos and solution
   * Resources and information that let you properly manage your high-value assets to confidently deliver experiences that keep your visitors coming back.
   * Learn about an upcoming webinar on protecting your digital assets.
   * Next stops on the information-filled Adobe Insider Tour.
-  * Exciting capabilities available when you have Dynamic Media within Experience Manager Assets (AEM Assets).
+  * Exciting capabilities available when you have Dynamic Media within Experience Manager Assets (Experience Manager Assets).
   * Adding 360-degree videos and custom video thumbnails to your website.
-  * Meet Andrew Hathaway, Principal Solutions Consultant for Dynamic Media within AEM Assets.
+  * Meet Andrew Hathaway, Principal Solutions Consultant for Dynamic Media within Experience Manager Assets.
 
 * **[June 2019, Issue 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
     In this issue:
 
-  * Enjoy videos that highlight the awesomeness of upgrading to Dynamic Media within AEM Assets.
+  * Enjoy videos that highlight the awesomeness of upgrading to Dynamic Media within Experience Manager Assets.
   * Watch key how-to videos in Experience League.
   * Learn more about the upcoming Adobe Insider Tour.
   * Read about how you can protect your digital assets from being pirated.
