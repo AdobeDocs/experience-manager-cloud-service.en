@@ -63,7 +63,7 @@ The article contains recommendations, reference materials, and resources for dev
 In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
 
 1. [Submit an HTTP request](#initiate-upload). It informs [!DNL Experience Manage]r deployment of your intent to upload a new binary.
-1. [POST the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
+1. [PUT the contents of the binary](#upload-binary) to one or more URIs provided by the initiation request.
 1. [Submit an HTTP request](#complete-upload) to inform the server that the contents of the binary were successfully uploaded.
 
 ![Overview of direct binary upload protocol](assets/add-assets-technical.png)
@@ -109,7 +109,7 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 }
 ```
 
-* `completeURI` (string): Call this URI when the binary finishes uploading. The URI can be an absolute or relative URI, and clients should be able to handle either. That is, the value can be `"https://author.acme.com/content/dam.completeUpload.json"` or `"/content/dam.completeUpload.json"` See [complete upload](#complete-upload).
+* `completeURI` (string): Call this URI when the binary finishes uploading. The URI can be an absolute or relative URI, and clients should be able to handle either. That is, the value can be `"https://[aem_server]:[port]/content/dam.completeUpload.json"` or `"/content/dam.completeUpload.json"` See [complete upload](#complete-upload).
 * `folderPath` (string): Full path to the folder in which the binary is uploaded.
 * `(files)` (array): A list of elements whose length and order match the length and order of the list of binary information provided in the initiate request.
 * `fileName` (string): The name of the corresponding binary, as supplied in the initiate request. This value should be included in the complete request.
@@ -121,7 +121,7 @@ A single request can be used to initiate uploads for multiple binaries, as long 
 
 ### Upload binary {#upload-binary}
 
-The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client splits the binary into parts and make POST request of each part to each URI, in order. Use all URIs. Ensure that the size of each part is within the minimum and maximum sizes as specified in the initiate response. CDN edge nodes help accelerate the requested upload of binaries.
+The output of initiating an upload includes one or more upload URI values. If more than one URI is provided, the client splits the binary into parts and make PUT requests of each part to each URI, in order. Use all URIs. Ensure that the size of each part is within the minimum and maximum sizes as specified in the initiate response. CDN edge nodes help accelerate the requested upload of binaries.
 
 A potential method to accomplish this is to calculate the part size based on the number of upload URIs provided by the API. For example, assume the total size of the binary is 20,000 bytes and the number of upload URIs is 2. Then follow these steps:
 
@@ -151,9 +151,7 @@ After all the parts of a binary file are uploaded, submit an HTTP POST request t
 
 Like the initiate process, the complete request data may contain information for more than one file.
 
-The process of uploading a binary is not done until the complete URL is invoked for the file. An asset is processed after the upload process is complete. Processing does not start even if the asset's binary file is uploaded completely but upload process is not completed.
-
-If successful, the server responds with a `200` status code.
+The process of uploading a binary is not done until the complete URL is invoked for the file. An asset is processed after the upload process is complete. Processing does not start even if the asset's binary file is uploaded completely but upload process is not completed. If upload is successful, the server responds with a `200` status code.
 
 ### Open-source upload library {#open-source-upload-library}
 
