@@ -7,6 +7,8 @@ description: Learn about defining Metadata and Tagging for Content Fragments
 
 ## The Story so Far {#story-so-far}
 
+At the beginning of the [AEM Headless Content Author Journey](overview.md) the [Introduction](introduction.md) covered the basic concepts and terminology relevant to authoring for headless.
+
 In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
 
 This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
