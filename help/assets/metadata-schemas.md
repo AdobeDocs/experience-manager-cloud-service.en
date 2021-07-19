@@ -93,7 +93,7 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your schema
 | [!UICONTROL Products References] | Add to show the list of products linked with the asset.                             |
 | [!UICONTROL Contextual Metadata] | Add to control the display of other metadata tabs in the properties page of assets. |
 
-<!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
+<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 
@@ -149,7 +149,7 @@ Click `+` to add a tab on a schema form. By default, the new tab has the name `U
 
 ## Delete metadata schema forms {#deleting-metadata-schema-forms}
 
-Experience Manager lets you delete custom schema forms only. It does not let you delete the default schema forms/templates. However, you can delete any custom changes in these forms.
+AEM lets you delete custom schema forms only. It does not let you delete the default schema forms/templates. However, you can delete any custom changes in these forms.
 
 To delete a form, select a form and click the delete icon.
 
@@ -229,16 +229,16 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
 >[!NOTE]
 >
->A metadata field can be defined as mandatory based on the value of another field. In the Cards view, Experience Manager does not display the warning message about missing metadata for such mandatory metadata fields.
+>A metadata field can be defined as mandatory based on the value of another field. In the Cards view, AEM does not display the warning message about missing metadata for such mandatory metadata fields.
 
-1. Click the Experience Manager logo and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
+1. Click the AEM logo and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Save the default metadata form as a custom form. For example, save it as `my_default`.
 1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
 1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page. Select the form and then click or tap **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
 1. Navigate to the folder and upload some assets with missing metadata for the mandatory field you added to the custom form. A message for the missing metadata for the mandatory field is displayed on the Card view of the asset.
-1. (Optional) Access `https://[server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which Experience Manager checks for the validity of metadata on the assets.
+1. (Optional) Access `https://[server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which AEM checks for the validity of metadata on the assets.
 
-   This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. Using this property, Experience Manager can filter results in a search.
+   This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. Using this property, AEM can filter results in a search.
 
    >[!NOTE]
    >
