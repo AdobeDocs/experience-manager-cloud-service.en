@@ -62,7 +62,7 @@ The **Environments** card on the Overview page lists up to three environments.
 
 1. Select the **Show All** button to navigate to the **Environment** summary page to view a table with a complete list of environments.
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![](assets/environment-view-1.png)
 
 1. The **Environments** page displays the list of all the existing environments.
 
