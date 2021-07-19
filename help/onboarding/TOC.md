@@ -10,6 +10,14 @@ role: Architect, Developer
 # Onboarding {#onboarding}
 
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
++ Learn Onboarding Concepts {#onboarding-concepts}
+  + [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
+  + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+  + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
+  + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+  + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+  + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+  + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Get your Adobe ID](what-is-required/get-your-adobe-id.md)
   + [Cloud Manager Roles](what-is-required/user-roles-permissions.md)
@@ -71,7 +79,9 @@ role: Architect, Developer
     + [Deleting an IP Allow List](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
     + [Checking an IP Allow List Status](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.5.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.7.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Release Notes for 2021.6.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+    + [Release Notes for 2021.5.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
     + [Release Notes for 2021.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
     + [Release Notes for 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
     + [Release Notes for 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
