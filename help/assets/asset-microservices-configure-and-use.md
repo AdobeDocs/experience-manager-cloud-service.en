@@ -69,7 +69,7 @@ To create a standard processing profile, follow these steps:
 
 1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Click **[!UICONTROL Create]**.
 1. Provide a name that helps you uniquely identify the profile when applying to a folder.
-1. To generate FPO renditions, on the **[!UICONTROL Standard]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
+1. To generate FPO renditions, on the **[!UICONTROL Image]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
 1. To generate other renditions, click **[!UICONTROL Add New]** and provide the following information:
 
    * File name of each rendition.
@@ -154,8 +154,10 @@ Create and apply the additional, custom processing profiles to specific folders 
 Apply processing profiles to folders using one of the following methods:
 
 * Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. It opens a content browser that allow you to navigate to specific folders, select them and confirm the application of the profile.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. To save the changes, click **[!UICONTROL Save & Close]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click the **[!UICONTROL Asset Processing]** tab, and in the [!UICONTROL Processing Profile] list, select the appropriate processing profile for that folder. To save the changes, click **[!UICONTROL Save & Close]**.
   ![Apply processing profile to a folder from the Asset Properties tab](assets/folder-properties-processing-profile.png)
+
+* Users can select folders or specific assets in Assets user interface to apply a processing profile, then select ![assets reprocess icon](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocess Assets]** option from the options available on the top.
 
 >[!TIP]
 >
