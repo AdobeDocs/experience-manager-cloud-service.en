@@ -215,6 +215,16 @@ The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
 
 * Object details page offers a summary of the most relevant information for each object in your project.
 
+## Cloud Acceleration Manager {#cam}
+
+### Release Date {#release-date-july-cam}
+
+The Release Date for Cloud Acceleration Manager is July 15, 2021.
+
+## What is New {#what-is-new-cam}
+
+Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
