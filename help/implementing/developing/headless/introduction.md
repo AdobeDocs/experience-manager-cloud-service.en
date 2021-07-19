@@ -39,7 +39,7 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
 1. Content API for delivery
    * The AEM GraphQL API supports Content Fragment delivery.
    * The AEM Assets REST API supports Content Fragment CRUD operations.
-   * Direct content delivery is also possible with the [Content Fragment Core Component's JSON export.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+   * Direct content delivery is also possible with the [Content Fragment Core Component's JSON export.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## Your First Steps with AEM Headless {#first-steps}
 

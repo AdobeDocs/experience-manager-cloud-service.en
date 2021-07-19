@@ -2,7 +2,7 @@
 title: [!DNL Assets] as a [!DNL Cloud Service] Guide
 description: [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] self-help resources and documentation links
 feature: Asset Management
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 ---
 # [!DNL Assets] as a [!DNL Cloud Service] Guide {#aem-assets-guide}
@@ -27,8 +27,8 @@ The following self-help resources are available for [!DNL Experience Manager Ass
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding [!DNL Experience Manager] as a [!DNL Cloud Service].|
 |[Onboarding](/help/onboarding/home.md)|Get started with [!DNL Experience Manager] as a [!DNL Cloud Service] &mdash; get access and protect important data.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, [!DNL Experience Manager Sites] as a [!DNL Cloud Service].|
-|[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using AEM's powerful features by exploring these development and deployment topics.|
-|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of AEM to prepare for your first headless project.|
+|[Implementing User Guide](/help/implementing/home.md)|Understand how to build and customize experiences using Experience Manager's powerful features by exploring these development and deployment topics.|
+|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Explore this guided journey through the powerful and flexible headless features of Experience Manager to prepare for your first headless project.|
 |[Moving to [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md)|Understand the transition journey to [!DNL Experience Manager] as a [!DNL Cloud Service].|
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into [!DNL Experience Manager] as a [!DNL Cloud Service].|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of [!DNL Experience Manager] as a [!DNL Cloud Service], such as indexing and maintenance tasks.|

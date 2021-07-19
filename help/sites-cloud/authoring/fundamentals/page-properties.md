@@ -138,7 +138,7 @@ Configure the page thumbnail
 
 * **Social Media sharing**
 
-  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+  Defines the sharing options available on the page. Exposes the options available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
   * **Enable user sharing for Facebook**
   * **Enable user sharing for Pinterest**
@@ -208,6 +208,12 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
   * **Live Copy Inheritance** - If checked, Live Copy configuration is effective on all children
   * **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page
   * **Choose Rollout Config** - Defines the circumstances under which modifications will be propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
+
+### Preview {#preview}
+
+When a Preview environment is enabled you will see:
+
+* Preview URL - the URL used for accessing the content on the Preview environment
 
 ## Editing Page Properties {#editing-page-properties-1}
 

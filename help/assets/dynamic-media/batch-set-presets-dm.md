@@ -3,7 +3,7 @@ title: Batch Set Presets
 description: Learn how to automate image set and spin set creation using batch set presets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
-role: Business Practitioner
+role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 ---
 # About Batch Set Presets {#about-bsp}
@@ -12,18 +12,18 @@ Use **[!UICONTROL Batch Set Presets]** to create and organize multiple assets in
 
 >[!IMPORTANT]
 >
->If you used batch set presets in [!DNL Dynamic Media Classic], and you are migrating from [!DNL Dynamic Media Classic] to Adobe Experience Manager as a Cloud Service, manually re-create your batch set presets definitions within [!DNL Adobe Experience Manager as a Cloud Service].
+>Are you using batch set presets in [!DNL Dynamic Media Classic], and migrating from [!DNL Dynamic Media Classic] to Adobe Experience Manager as a Cloud Service? If so, you must manually re-create your batch set presets definitions within [!DNL Adobe Experience Manager as a Cloud Service].
 
 **Best Practice** - When working with batch set presets Adobe recommends the following workflow:
 
-1. Create a batch set preset. See [Creating a batch set preset for an image set or a spin set](#creating-bsp).
-1. Create an asset folder or use an existing asset folder and ensure it is synced to [!DNL Dynamic Media]. See [Creating folders](/help/assets/manage-digital-assets.md#creating-folders).
+1. Create a batch set preset. See [Create a batch set preset for an image set or a spin set](#creating-bsp).
+1. Create an asset folder or use an existing asset folder and ensure it is synced to [!DNL Dynamic Media]. See [Create folders](/help/assets/manage-digital-assets.md#creating-folders).
 1. Apply the batch set preset to the asset folder. See [About applying batch set presets to folders](#apply-bsp).
-1. Upload images to the asset folder. See [Uploading assets for Image Sets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Uploading assets for Spin Sets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets), or [Add digital assets to Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
+1. Upload images to the asset folder. See [Upload assets for Image Sets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Upload assets for Spin Sets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets), or [Add digital assets to Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Image set or spin set gets auto generated in the desired folder.
-1. Publish your image set or spin set. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). 
+1. Publish your image set or spin set. See [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). 
 
-## Creating a batch set preset for an image set or a spin set {#creating-bsp}
+## Create a batch set preset for an image set or a spin set {#creating-bsp}
 
 To create Batch Set Presets, it is desirable that you have some familiarity and understanding of regular expressions.
 
@@ -60,15 +60,15 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
 **To create a batch set preset for an image set or a spin set:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Select the Experience Manager logo and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
-1. On the **[!UICONTROL Batch Set Presets]** page, near the upper-right corner, tap **[!UICONTROL Create]**.
+1. On the **[!UICONTROL Batch Set Presets]** page, near the upper-right corner, select **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Batch Set Preset]** dialog box, in the **[!UICONTROL Preset Name]** text field, enter a descriptive name. The preset name is not editable if you later decide to change it.
 
 1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Be sure you choose the correct preset type; it is not editable later.
-1. Tap **[!UICONTROL Create]**.
+1. Select **[!UICONTROL Create]**.
 1. On the right of the **[!UICONTROL Edit Batch Set Preset]** page, set the editable options you want under the **[!UICONTROL Preset Details]** and **[!UICONTROL Set Naming Convention]** headings.
    To learn more about the editable options that are available to you, see [Preset Details, Set Naming Convention, and Rule Results - RegX options](#features-options-bsp).
 
@@ -76,20 +76,20 @@ When you finish creating a batch set preset, you apply it to one or more folders
 
 1. Create one or more regular expression groups. 
 
-   * On the left of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, tap **[!UICONTROL Add Group]**.
+   * On the left of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, select **[!UICONTROL Add Group]**.
    * The **[!UICONTROL Match]** field is required. **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name by using a bracket grouping. **[!UICONTROL Sequence Ordering]** is optional.
    * Using the drop-down lists and text boxes in the group's form, specify an expression group that you want to use to define the naming criteria for image set or spin set asset members.
-      * As you select and specify expressions for a group, notice that the actual regular expression syntax is reflected near the lower right of the page, under the **[!UICONTROL Rule Results - RegX]** heading. To see the regular expression string updated in the lower right, tap anywhere outside the form area. These regular expression strings represent the pattern that you want to match in a search of [!DNL Dynamic Media] assets to create your image set or spin set.
-      * To remove a group you have added, tap **[!UICONTROL X]**.
+      * As you select and specify expressions for a group, notice that the actual regular expression syntax is reflected near the lower right of the page, under the **[!UICONTROL Rule Results - RegX]** heading. To see the regular expression string updated in the lower right, select anywhere outside the form area. These regular expression strings represent the pattern that you want to match in a search of [!DNL Dynamic Media] assets to create your image set or spin set.
+      * If you have added a group and want to remove it, select **[!UICONTROL X]**.
    * When you add two or more groups, in the **[!UICONTROL And]** drop-down list, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL Or]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL Or]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
 
 1. Do one of the following:
 
-   * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, tap **[!UICONTROL Add Group]**. Create another regular expression group as you did in the previous step.
+   * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, select **[!UICONTROL Add Group]**. Create another regular expression group as you did in the previous step.
    * Review the regular expression syntax in the **[!UICONTROL Rule Results - RegX]** area. If you must change the syntax, make your edits in the respective group on the left of the page.
    * If you have finished creating expression groups, continue to the next step.
 
-1. In the upper-right corner of the page, tap **[!UICONTROL Save]**.
+1. In the upper-right corner of the page, select **[!UICONTROL Save]**.
 
 You are now ready to apply the batch set preset to an asset folder. Then, you upload assets to that folder. This workflow results in the auto generation of your image set or spin set. See [About applying batch set presets to asset folders](#apply-bsp).
 
@@ -97,14 +97,14 @@ You are now ready to apply the batch set preset to an asset folder. Then, you up
 
 These options are available on the **[!UICONTROL Edit Batch Set Preset]** page when you create or edit a batch set preset.
 
-See [Creating a batch set preset for an image set or a spin set](#creating-bsp) or [Editing a batch set preset](#edit-bsp).
+See [Create a batch set preset for an image set or a spin set](#creating-bsp) or [Edit a batch set preset](#edit-bsp).
 
    | **[!UICONTROL Preset Details]**  | Description |
    | --- | --- |
-   | Preset Name | Read-only. The name you specified when you first created the batch set. If you must rename the preset, you can copy the existing batch set preset and specify a new name. See [Copying an existing batch set preset](#copy-bsp). |
+   | Preset Name | Read-only. The name you specified when you first created the batch set. If you must rename the preset, you can copy the existing batch set preset and specify a new name. See [Copy an existing batch set preset](#copy-bsp). |
    | Type | Read-only. The type was specified when you first created the batch set. Copying an existing batch set preset does not let you change its [!UICONTROL Type]; you must create a preset instead. |
    | Include Derived Assets | Optional. To have [!DNL Dynamic Media]’s IPS (Image Production System) include generated or “derived” images with your Spin Set or Image Set, select **[!UICONTROL Yes]** (default). A derived asset is an image that was not directly uploaded by a user. Instead, the asset was produced by IPS when a master asset was uploaded. For example, an image asset that IPS generated from a page in a PDF, at the time the PDF was uploaded in [!DNL Dynamic Media], is considered a derived asset. |
-   | Destination Folder | Optional. If you define large numbers of image sets or spin sets, Adobe recommends you keep these sets separate from the folders that contain the assets themselves. As such, consider creating an Image Sets or Spin Sets folder and redirect the application to place batch set generated sets here.<br>In such case, specify which folder within the Experience Manager Assets folder structure (`/content/dam`) has the batch set preset active. Be sure that the folder is enabled for [!DNL Dynamic Media] synchronization to allow it as a destination folder. See [Configuring selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>More than one folder can have a given batch set preset assigned to it, if you apply the preset by way of the folder’s **[!UICONTROL Properties]**. See [Applying batch set presets from an asset folder's Properties page](#apply-bsp-to-folders-via-properties).<br>If you do not specify a folder, the batch set preset generated image set or spin set is created in the same folder as the asset folder you uploaded to. |
+   | Destination Folder | Optional. If you define large numbers of image sets or spin sets, Adobe recommends you keep these sets separate from the folders that contain the assets themselves. As such, consider creating an Image Sets or Spin Sets folder and redirect the application to place batch set generated sets here.<br>In such case, specify which folder within the Experience Manager Assets folder structure (`/content/dam`) has the batch set preset active. Be sure that the folder is enabled for [!DNL Dynamic Media] synchronization to allow it as a destination folder. See [Configure selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>More than one folder can have a given batch set preset assigned to it, if you apply the preset by way of the folder’s **[!UICONTROL Properties]**. See [Apply batch set presets from an asset folder's Properties page](#apply-bsp-to-folders-via-properties).<br>If you do not specify a folder, the batch set preset generated image set or spin set is created in the same folder as the asset folder you uploaded to. |
    | **[!UICONTROL Set Naming Convention]** |  |
    | Prefix<br>or<br>Suffix | Optional. Enter either a prefix, suffix, or both in the respective fields.<br>The prefix and suffix fields let you create many batch set presets using an alternate, custom file naming convention for a particular set of content. This method is especially useful in cases where there is an exception to a company's defined default naming scheme.<br>The prefix or suffix is added to the **[!UICONTROL Base Name]** you define in the **[!UICONTROL Asset Naming Convention]** area. By adding a prefix or suffix, you ensure that your image set or spin set gets created exclusively and independently from other assets. It can also serve to further help others identify file types. For example, to determine a color mode used, you could add as a prefix or suffix `rgb` or `cmyk`.<br>While specifying a set naming convention is not required to use batch set preset functionality, best practice recommends that you use the set naming convention. This practice lets you define as many elements of your naming convention that you want grouped in a set to help streamline batch set creation. |
    | **[!UICONTROL Rule Results - RegX]** |  |
@@ -134,37 +134,37 @@ Reprocess assets in a folder if you experience either of the following two scena
 
 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->
 
-### Applying batch set presets to asset folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
+### Apply batch set presets to asset folders from the Batch Set Preset page {#apply-bsp-to-folders-via-bsp-page}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of each batch set preset that you want to apply to folders.
-1. In the toolbar, tap **[!UICONTROL Apply Batch Preset to Folders]**.
+1. In the toolbar, select **[!UICONTROL Apply Batch Preset to Folders]**.
 1. On the **[!UICONTROL Select Folders]** page, select the check box of each folder that you want the batch set presets applied to.
-1. In the upper-right corner of the **[!UICONTROL Select Folders]** page, tap **[!UICONTROL Apply]**.
+1. In the upper-right corner of the **[!UICONTROL Select Folders]** page, select **[!UICONTROL Apply]**.
 
-### Applying batch set presets from an asset folder's Properties page {#apply-bsp-to-folders-via-properties}
+### Apply batch set presets from an asset folder's Properties page {#apply-bsp-to-folders-via-properties}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
-1. Navigate to a folder to which you want to apply one or more batch set presets.
+1. Select the Experience Manager logo and go to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Navigate to a folder in which you want to apply one or more batch set presets.
 1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box of a folder.
-1. In the toolbar, tap **[!UICONTROL Properties]**.
-1. On the folder's Properties page, tap the **[!UICONTROL Dynamic Media Processing]** tab.
+1. In the toolbar, select **[!UICONTROL Properties]**.
+1. On the folder's Properties page, select the **[!UICONTROL Dynamic Media Processing]** tab.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
 1. Under **[!UICONTROL Batch Set Presets]**, from the **[!UICONTROL Preset Name]** drop-down list box, select the name of a batch set preset you want to apply. The screenshot above shows two selected batch set presets that are applied to the asset folder.
 
-   If no batch set preset names exist in the **[!UICONTROL Preset Name]** drop-down list box, it means you have not yet created any batch set presets. See [Creating a batch set preset for an image set or a spin set](#creating-bsp).
+   If no batch set preset names exist in the **[!UICONTROL Preset Name]** drop-down list box, it means you have not yet created any batch set presets. See [Create a batch set preset for an image set or a spin set](#creating-bsp).
 
-   To remove an applied batch set preset, tap **[!UICONTROL X]** to the right of the preset type.
+   To remove an applied batch set preset, select **[!UICONTROL X]** to the right of the preset type.
 
-1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**.
+1. In the upper-right corner of the page, select **[!UICONTROL Save & Close]**.
 
-## Editing a batch set preset {#edit-bsp}
+## Edit a batch set preset {#edit-bsp}
 
 You can edit an existing batch set preset that you have created. You can change any of the expression groups you created for the asset naming convention or sequence order. If needed, you can also update the destination folder and set naming conventions.
 
-You cannot, however, change the preset's name or preset type (Image Set or Spin Set). If it becomes necessary to change a preset's name, copy the existing preset and specify a new name. See [Copying a batch set preset](#copy-bsp).
+You cannot, however, change the preset's name or preset type (Image Set or Spin Set). If it becomes necessary to change a preset's name, copy the existing preset and specify a new name. See [Copy a batch set preset](#copy-bsp).
 
 If you edit a batch set preset that was previously applied to a folder, the newly edited batch set preset gets applied only to new assets uploaded to that folder.
 
@@ -172,86 +172,86 @@ If you want the newly edited preset to be reapplied to the existing assets in th
 
 **To edit a batch set preset:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Select the Experience Manager logo and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, check the batch set preset that you want to change.
-1. In the toolbar, tap **[!UICONTROL Edit Batch Set Preset]**.
+1. In the toolbar, select **[!UICONTROL Edit Batch Set Preset]**.
 1. Edit the preset as necessary.
-1. In the upper-right corner of the **[!UICONTROL Batch Set Preset]** page, tap **[!UICONTROL Save]**.
+1. In the upper-right corner of the **[!UICONTROL Batch Set Preset]** page, select **[!UICONTROL Save]**.
 
-## Copying an existing batch set preset {#copy-bsp}
+## Copy an existing batch set preset {#copy-bsp}
 
 You can copy an existing batch set preset to avoid having to manually re-create a complex preset, or if you simply want to rename a preset. You cannot, however, change the preset type used (Image Set or Spin Set).
 
 If you copy an existing preset that is reference by asset folders, those folders are not affected.
 
-**To copy an existing batch set preset:**
+**Copy an existing batch set preset:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Select the Experience Manager logo and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of the batch set preset that you want to copy.
-1. In the toolbar, tap **[!UICONTROL Copy]**.
+1. In the toolbar, select **[!UICONTROL Copy]**.
 1. In the **[!UICONTROL Copy Batch Set Preset]** dialog box, in the **[!UICONTROL Title]** text box, type a new name for the preset.
 
    ![bsp-copy2.png](/help/assets/assets-dm/bsp-copy2.png)
 
-1. Tap **[!UICONTROL Copy]**.
+1. Select **[!UICONTROL Copy]**.
 
 ## About removing batch set presets from folders {#remove-bsp-from-folder}
 
 When you remove batch set presets from folders, any new assets that you upload to these folders do not have the batch set preset applied to them. Existing assets in the folder that were already added to the image set or spint set&ndash;based on batch set preset that was applied to the folder&ndash;continue to show as-is.
 
-If you want to *delete* presets from folders instead, see [Deleting batch set presets](#delete-bsp).
+If you want to *delete* presets from folders instead, see [Delete batch set presets](#delete-bsp).
 
 There are two methods you can use to remove batch set presets from folders.
 
-* [Removing batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page) - This method offers you the most flexibility. You can remove a single preset or multiple presets from a single folder or multiple folders.
-* [Removing batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties) - This method lets you remove one or more batch set presets from a single folder only.
+* [Remove batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page) - This method offers you the most flexibility. You can remove a single preset or multiple presets from a single folder or multiple folders.
+* [Remove batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties) - This method lets you remove one or more batch set presets from a single folder only.
 
-### Removing batch set presets from folders by way of the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
+### Remove batch set presets from folders by way of the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Select the Experience Manager logo and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to remove from one or more folders.
-1. In the toolbar, tap **[!UICONTROL Remove Batch Preset from Folders]**.
+1. In the toolbar, select **[!UICONTROL Remove Batch Preset from Folders]**.
 
 1. On the **[!UICONTROL Select Folders]** page, select one or more folders in which you want the batch set presets removed.
-1. In the upper-right corner of the **[!UICONTROL Select Folders]** page, tap **[!UICONTROL Remove]**.
+1. In the upper-right corner of the **[!UICONTROL Select Folders]** page, select **[!UICONTROL Remove]**.
 
    ![bsp-remove-from-folders3.png](/help/assets/assets-dm/bsp-remove-from-folders3.png)
 
-1. In the **[!UICONTROL Remove profile]** dialog box, tap **[!UICONTROL Remove]**.
+1. In the **[!UICONTROL Remove profile]** dialog box, select **[!UICONTROL Remove]**.
 
-### Removing batch set presets from a folder's Properties page {#remove-bsp-from-folders-via-properties}
+### Remove batch set presets from a folder's Properties page {#remove-bsp-from-folders-via-properties}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigate to a folder to which you want to remove one or more batch set presets.
 1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box of a folder.
-1. In the toolbar, tap **[!UICONTROL Properties]**.
-1. On the folder's Properties page, tap **[!UICONTROL Dynamic Media Processing]**.
+1. In the toolbar, select **[!UICONTROL Properties]**.
+1. On the folder's Properties page, select **[!UICONTROL Dynamic Media Processing]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
-1. Under **[!UICONTROL Batch Set Presets]**, tap **[!UICONTROL X]** to the right of the preset type.
+1. Under **[!UICONTROL Batch Set Presets]**, select **[!UICONTROL X]** to the right of the preset type.
 
-1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**.
+1. In the upper-right corner of the page, select **[!UICONTROL Save & Close]**.
 
-## Deleting batch set presets {#delete-bsp}
+## Delete batch set presets {#delete-bsp}
 
 You can delete batch set presets to remove them permanently from [!DNL Dynamic Media]. That is, they no longer show on the [!UICONTROL Batch Set Preset] page nor are they shown in the **[!UICONTROL Batch Set Presets]** drop-down list of the **[!UICONTROL Dynamic Media Processing]** tab on the folder's **[!UICONTROL Properties]** page. As such, the preset is not applied to existing assets on a folder reprocess or when new assets are uploaded in the folder.
 
 If you delete a preset that was previously applied to one or more folders, any image sets or spin sets that were created from assets in those folders continue to show as-is.
 
-If you want to *remove* presets from folders instead, see [Removing batch set presets from folders](#remove-bsp-from-folder).
+If you want to *remove* presets from folders instead, see [Remove batch set presets from folders](#remove-bsp-from-folder).
 
 **To delete batch set presets:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to delete.
-1. In the toolbar, tap **[!UICONTROL Delete Batch Set Presets]**.
+1. In the toolbar, select **[!UICONTROL Delete Batch Set Presets]**.
 
    ![bsp-delete2.png](/help/assets/assets-dm/bsp-delete2.png)
 
-1. In the **[!UICONTROL Delete Batch Set Presets]** dialog box, tap **[!UICONTROL Delete]**.
+1. In the **[!UICONTROL Delete Batch Set Presets]** dialog box, select **[!UICONTROL Delete]**.
 
-   If the preset you are deleting was referenced by an asset folder, tap **[!UICONTROL Force Delete]** instead.
+   If the preset you are deleting was referenced by an asset folder, select **[!UICONTROL Force Delete]** instead.
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 
@@ -259,5 +259,5 @@ If you want to *remove* presets from folders instead, see [Removing batch set pr
 >
 >* [Image Sets](/help/assets/dynamic-media/image-sets.md)
 >* [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
->* [Configuring selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - See "Sync Mode" in the topic to learn more about syncing a single folder to [!DNL Dynamic Media].
->* [Creating a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - See "Dynamic Media sync mode" in the topic to learn more about syncing all folders to [!DNL Dynamic Media].
+>* [Configure selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - See "Sync Mode" in the topic if you want to learn more about syncing a single folder to [!DNL Dynamic Media].
+>* [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - See "Dynamic Media sync mode" in the topic if you want to learn more about syncing all folders to [!DNL Dynamic Media].
