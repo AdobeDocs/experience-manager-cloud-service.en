@@ -3,7 +3,7 @@ title: Check in and Check out files in [!DNL Assets]
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
 ---
 # Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}

@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
   * Selective Publish - It is now possible for a marketing team to access [!DNL Dynamic Media] smart crop images and dynamic renditions that are synchronized to [!DNL Dynamic Media] so they can create promotional materials, all without the need to publish those assets to [!DNL Dynamic Media] for global delivery. [!DNL Experience Manager] and [!DNL Dynamic Media] publishing is decoupled and can occur separately to achieve this. See [selective publish](/help/assets/dynamic-media/selective-publishing.md).
   * Administrators can now reset [!DNL Dynamic Media] Cloud Service password that is received on provisioning. The reset can be done in [!DNL Experience Manager] user interface, without the need to use the [!DNL Dynamic Media Classic] desktop app.
 
-* To know about the following enhancements, see [what is new in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
+* To know about the following enhancements, see [what is new in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
   
   * Enhanced PDF preview with Adobe Document Cloud View SDK integration.
   * Single-click download functionality.

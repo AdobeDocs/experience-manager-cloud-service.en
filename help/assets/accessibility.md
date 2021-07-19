@@ -3,7 +3,7 @@ title: Accessibility in [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] help users with disabilities.
 contentOwner: AG
 feature: Accessibility,Asset Management
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 ---
 <!--
@@ -80,7 +80,7 @@ The following actions in [!DNL Assets] work with the listed keyboard shortcuts. 
 | Column view in [!DNL Assets] user interface|Up and Down arrow keys|Navigate to files and folders within the same hierarchy.|
 | Column view in [!DNL Assets] user interface|Left and Right arrow keys|Navigate to files and folders above or below the current folder.|
 | Browsing folders in [!DNL Assets]|`/`|Invoke search by opening Omnisearch box.|
-| [!DNL Assets] Console|`|Toggle side rails|
+| [!DNL Assets] Console||Toggle side rails|
 | [!DNL Assets] Console|`Alt + 1`|Open the content tree.|
 | [!DNL Assets] Console|`Alt + 2`|Open [!UICONTROL Navigation] left rail.|
 | [!DNL Assets] Console|`Alt + 3`|Display [!UICONTROL Timeline] of a selected asset.|

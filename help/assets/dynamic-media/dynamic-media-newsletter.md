@@ -2,7 +2,7 @@
 title: Dynamic Media Newsletter
 description: The Dynamic Media Newsletter by Experience League is a monthly newsletter. It is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can realize value right away. Valuable knowledge-building resources are available in this one-stop shop newsletter. For example, there are how-to videos and solution overviews. Read about some of the key features and capabilities like image presets, viewer presets, video profiles, and more. 
 feature: Asset Management
-role: Business Practitioner
+role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 ---
 # ![Dynamic Media Newsletter logo](/help/assets/dynamic-media/assets/dynamic-media-newsletter-logo.png)
@@ -117,15 +117,15 @@ Explore valuable knowledge-building resources such as how-to videos and solution
   * Resources and information that let you properly manage your high-value assets to confidently deliver experiences that keep your visitors coming back.
   * Learn about an upcoming webinar on protecting your digital assets.
   * Next stops on the information-filled Adobe Insider Tour.
-  * Exciting capabilities available when you have Dynamic Media within Experience Manager Assets (AEM Assets).
+  * Exciting capabilities available when you have Dynamic Media within Experience Manager Assets (Experience Manager Assets).
   * Adding 360-degree videos and custom video thumbnails to your website.
-  * Meet Andrew Hathaway, Principal Solutions Consultant for Dynamic Media within AEM Assets.
+  * Meet Andrew Hathaway, Principal Solutions Consultant for Dynamic Media within Experience Manager Assets.
 
 * **[June 2019, Issue 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
     In this issue:
 
-  * Enjoy videos that highlight the awesomeness of upgrading to Dynamic Media within AEM Assets.
+  * Enjoy videos that highlight the awesomeness of upgrading to Dynamic Media within Experience Manager Assets.
   * Watch key how-to videos in Experience League.
   * Learn more about the upcoming Adobe Insider Tour.
   * Read about how you can protect your digital assets from being pirated.

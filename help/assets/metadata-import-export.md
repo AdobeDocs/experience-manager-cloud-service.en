@@ -3,12 +3,12 @@ title: Import and export asset metadata in bulk
 description: This article describes how to import and export metadata in bulk.
 contentOwner: AG
 feature: Metadata
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 ---
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
 
-AEM Assets lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
+Adobe Experience Manager Assets lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
 
 ## Import metadata {#import-metadata}
 
@@ -41,7 +41,7 @@ To add date and timestamp when importing metadata, use `YYYY-MM-DDThh:mm:ss.fff-
 
 ## Export Metadata {#export-metadata}
 
-You can export metadata for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, AEM traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
+You can export metadata for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, Experience Manager traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
 
 A few use cases for exporting metadata in bulk are:
 

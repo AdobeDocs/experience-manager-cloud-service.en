@@ -1,11 +1,11 @@
 ---
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
 sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Authoring Content in AEM as a Cloud Service
 breadcrumb-title: Authoring Guide
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 feature: Authoring
-role: Business Practitioner
+role: User
 ---
 
 # Sites {#sites}
@@ -28,6 +28,7 @@ role: Business Practitioner
     + [Editing Page Content](authoring/fundamentals/editing-content.md)
     + [The Rich Text Editor](authoring/fundamentals/rich-text-editor.md)
     + [Page Properties](authoring/fundamentals/page-properties.md)
+    + [Previewing Content](authoring/fundamentals/previewing-content.md)
     + [Publishing Pages](authoring/fundamentals/publishing-pages.md)
     + [Content Fragments](authoring/fundamentals/content-fragments.md)
     + [Experience Fragments](authoring/fundamentals/experience-fragments.md)

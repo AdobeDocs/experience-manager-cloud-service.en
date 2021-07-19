@@ -1,8 +1,8 @@
 ---
 title: How to Update Your Content via AEM Assets APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use the REST API to access and update the content of your Content Fragments.
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 ---
-
 # How to Update Your Content via AEM Assets APIs {#update-your-content}
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn how to use the REST API to access and update the content of your Content Fragments.
@@ -320,6 +320,6 @@ You should continue your AEM headless journey by next reviewing the document [Ho
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
-* [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video - Developing for CORS with AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

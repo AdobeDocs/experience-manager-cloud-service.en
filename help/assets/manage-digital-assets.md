@@ -4,7 +4,7 @@ description: Learn about various asset management and editing methods.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
@@ -109,7 +109,7 @@ To preview an asset, follow these steps.
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Assets Insights](assets-insights.md).
 
 [!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
 
@@ -455,6 +455,14 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 ### View saved annotations {#viewing-saved-annotations}
 
+You can view only one annotation at a time.
+
+>[!NOTE]
+>
+>If you are selecting multiple annotations, the latest annotation will be visible on the user interface.
+>
+>Multi-select is supported only for printing the annotated asset as PDF.
+
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
@@ -476,6 +484,10 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
 You can also choose to print only the annotations or review status.
+
+>[!NOTE]
+>
+>You can select multiple annotations while printing the annotated asset as PDF.
 
 To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 

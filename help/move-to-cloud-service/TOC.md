@@ -11,9 +11,19 @@ role: Architect, Developer
 
 + [Moving to AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phases of Transition Journey {#phases}
-  + [Planning](/help/move-to-cloud-service/planning.md)
-  + [Execution](/help/move-to-cloud-service/execution.md)
-  + [Post Go-live](/help/move-to-cloud-service/post-go-live.md)
+  + [Readiness](/help/move-to-cloud-service/migration-readiness.md)
+  + [Implementation](/help/move-to-cloud-service/migration-implementation.md)
+  + [Go Live](/help/move-to-cloud-service/migration-go-live.md)
+  + [Post Go Live](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+  + Introduction to Cloud Acceleration Manager {#introduction-cam}
+    + [Overview](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+    + [Benefits](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+  + Using Cloud Acceleration Manager {#using-cam}
+    + [Getting Started with Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+    + [Readiness Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+    + [Implementation Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+    + [Go Live Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + Cloud Transition Tools {#cloud-migration}
   + Best Practices Analyzer {#best-practices-analyzer}
     + [Overview](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
@@ -21,6 +31,7 @@ role: Architect, Developer
   + Content Transfer Tool {#content-transfer-tool}
     + [Overview](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
     + [Prerequisites for Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
+    + [Handling Large Content Repositories](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
     + [Using User Mapping Tool](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
     + [Using Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Code Refactoring Tools {#refactoring-tools}
