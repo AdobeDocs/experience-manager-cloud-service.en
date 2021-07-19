@@ -157,7 +157,7 @@ For other users, the IMS based login can be used once IMS is configured on the i
 
 >[!NOTE]
 >
->Any user created in IMS can be created using Adobe ID or Federated ID. If a user is setup using Adobe ID, they are authenticated using their Company's Identity Provider to login.
+>Any user created in IMS can be created using Adobe ID or Federated ID. If a user is setup using Federated ID, they are authenticated using their Company's Identity Provider to login.
 
 They will then be redirected to the IMS login screen and will need to enter their credentials:
 

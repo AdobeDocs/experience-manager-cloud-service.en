@@ -7,12 +7,6 @@ exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 
 ## Important Considerations for Using Content Transfer Tool {#pre-reqs}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="Important Considerations for using Content Transfer Tool"
->abstract="Review important considerations to use the Content Transfer tool including Java and AEM verions, supported Datastore types, user groups considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices and Guidelines"
-
 Follow the section below to understand the important considerations while running the Content Transfer tool:
 
 * The minimum system requirement for Content Transfer Tool is AEM 6.3 + and JAVA 8. If you are on a lower AEM version, you need to upgrade your content repository to AEM 6.5 to use the Content Transfer Tool.
@@ -37,11 +31,11 @@ Follow the section below to understand the important considerations while runnin
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
-* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, you will need to log a support ticket to notify Adobe of your intention to run *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. You will need to log the support ticket 1 week prior to your planned *Ingestion* date. Once, you've submitted the support ticket, the support team will provide guidance on next steps.
-  * Log a support ticket with the following details:
-      * Exact date and estimated time (with your time-zone) when you plan to start the *Ingestion* phase. 
-      * Environment type (Stage or Production) that you plan to ingest data into.
-      * Program ID.
+* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, you will need to log a support ticket to notify Adobe of your intention to run *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. You will need to log the support ticket 1 week prior to your planned *Ingestion* date. Once, you've submitted the support ticket, the support team will provide guidance on next steps. You can log a support ticket with the following details:
+
+   * Exact date and estimated time (with your time-zone) when you plan to start the *Ingestion* phase. 
+   * Environment type (Stage or Production) that you plan to ingest data into.
+   * Program ID.
 
 * The *Ingestion Phase* for the author scales down the whole author deployment. This means that the author AEM will be unavailable during the whole ingestion process. Please also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
 
@@ -157,6 +151,8 @@ Follow this section to learn how to use Content Transfer Tool to migrate the con
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Top Up Extraction"
 
 Follow the steps below to extract your migration set from the Content Transfer Tool:
+   >[!NOTE]
+   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. To do so you will need to configure an `azcopy.config` file before running extraction. Refer to [Handling large content repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details. 
 
 1. Select a migration set from *Overview* page and click **Extract** to start extraction. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
@@ -205,8 +201,13 @@ Once the extraction process is complete, you can transfer delta content, by usin
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Top Up Ingestion"
 
 Follow the steps below to ingest your migration set from the Content Transfer Tool:
+   >[!NOTE]
+   >If Amazon S3 or Azure Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the ingestion phase. Refer to [Ingesting with AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) for more details. 
 
-1. Select a migration set from *Overview* page and click **Ingest** to start extraction. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. It is possible to ingest content to Author and Publish at the same time.
+1. Select a migration set from *Overview* page and click **Ingest** to start ingestion. The **Migration Set ingestion** dialog box displays. Click on **Ingest** to start the ingestion phase. It is possible to ingest content to Author and Publish at the same time.
+
+   >[!IMPORTANT]
+   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
 
    >[!IMPORTANT]
    >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.

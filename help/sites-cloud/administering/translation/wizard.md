@@ -2,7 +2,7 @@
 title: Language Copy Wizard
 description: Learn about using the Language Copy Wizard in AEM.
 feature: Language Copy
-role: Administrator
+role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 ---
 # Language Copy Wizard {#language-copy-wizard}

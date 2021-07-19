@@ -102,13 +102,13 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 ## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 
-In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
+In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to AEM as a Cloud Service environment.
 
 On the home screen, these pipelines are listed in a new card:
 
 1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
 
-   ![](assets/configure-pipeline6.png)
+   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
 1. Clicking on the **Add** button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
 
@@ -116,13 +116,15 @@ On the home screen, these pipelines are listed in a new card:
 
    ![](assets/non-prod-pipe1.png)
 
-1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
+1. Click **Save** and the pipeline is shown on the card on the home screen with five actions, as shown below:
 
-   ![](assets/configure-pipeline8.png)
-
+   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   
    * **Edit** - allows editing of the pipeline settings
+   * **Details** - provides details of the pipeline execution
    * **Build** - navigates to the execution page, from which the pipeline can be executed
-   * **Manage Git** - allows the user to get the information necessary to access Cloud Manager Git repository
+   * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository
+   * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
 
 ## The Next Steps {#the-next-steps}
 

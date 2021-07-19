@@ -1,8 +1,8 @@
 ---
 title: Adobe ID
 description: This page describes introductory information about Adobe ID.
+exl-id: 55f66f24-d523-4f8f-9cb6-337bd31fc315
 ---
-
 # Adobe ID {#adobe-id}
 
 An Adobe ID is simply the email you will use to login and access AEM as a Cloud Service or any of your Adobe solutions. This is the email ID that your System Administrator uses while setting your team up. By using your Adobe ID you keep all your Adobe plans and products associated with a single account. 
@@ -21,7 +21,3 @@ There are three types of Adobe ID's:
 
    >[!NOTE]
    >If your Enterprise ID or Federated ID has not yet been setup, your system administrator may decide to onboard your team using Personal ID's. Once the Enterprise or Federated ID is set up, members can be transitioned to using this ID.
-
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: How to Update Your Content via AEM Assets APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use the REST API to access and update the content of your Content Fragments.
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 ---
-
 # How to Update Your Content via AEM Assets APIs {#update-your-content}
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn how to use the REST API to access and update the content of your Content Fragments.
@@ -248,7 +248,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -318,7 +318,7 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Content Fragments](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
 * [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
