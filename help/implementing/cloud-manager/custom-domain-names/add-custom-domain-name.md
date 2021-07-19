@@ -17,7 +17,7 @@ A user must be a Business Owner or Deployment Manager in order to add a Custom D
 
 * AEM as a Cloud Service does not support wildcard domains.
 
-* Each Cloud Manager Environment can host up to a maximum of 250 custom domains per environment.
+* Each Cloud Manager Environment can host up to a maximum of 500 custom domains per environment.
 
 * The same domain name cannot be used on more than one environment.
 
