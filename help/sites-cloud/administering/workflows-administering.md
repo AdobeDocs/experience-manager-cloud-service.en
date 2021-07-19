@@ -2,7 +2,7 @@
 title: Administering Workflow Instances
 description: Learn how to Administer Workflow Instances
 feature: Administering
-role: Administrator
+role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 ---
 # Administering Workflow Instances {#administering-workflow-instances}
