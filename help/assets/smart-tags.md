@@ -13,7 +13,7 @@ Organizations that deal with digital assets increasingly use taxonomy-controlled
 
 Compared to natural language vocabularies, tagging based on business taxonomy helps align the assets with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
 
-In the background, the the functionality uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default.
+In the background, the the functionality uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -173,11 +173,11 @@ To check whether the Smart Tags service is trained on your tags in the training 
 
 ## Tag assets with Smart Tags {#tag-assets}
 
-All types of supported assets are automatically tagged by [!DNL Experience Manager Assets] when uploaded. Tagging is enabled and works, by default. [!DNL Experience Manager] applies the appropriate tags in near-real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+All types of supported assets are automatically tagged by [!DNL Experience Manager Assets] when uploaded. Tagging is enabled by default. [!DNL Experience Manager] applies the appropriate tags in near-real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-* For images and videos, the Smart Tags are based on some visual aspect.
+For images and videos, the Smart Tags are derived based on some visual aspect.
 
-* For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. For text-based assets, the Smart Tags are the keywords that appear in the text but the ones that best describe the asset. For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet that is used to improve asset discovery as compared to full search index.
+For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. For text-based assets, the Smart Tags are the keywords that appear in the text but the ones that best describe the asset. For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet that is used to improve asset discovery as compared to full search index.
 
 ## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
