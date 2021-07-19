@@ -108,7 +108,7 @@ On the home screen, these pipelines are listed in a new card:
 
 1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](assets/configure-pipeline6.png)
 
 1. Clicking on the **Add** button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
 
@@ -116,15 +116,13 @@ On the home screen, these pipelines are listed in a new card:
 
    ![](assets/non-prod-pipe1.png)
 
-1. Click **Save** and the pipeline is shown on the card on the home screen with five actions, as shown below:
+1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
-   
+   ![](assets/configure-pipeline8.png)
+
    * **Edit** - allows editing of the pipeline settings
-   * **Details** - provides details of the pipeline execution
    * **Build** - navigates to the execution page, from which the pipeline can be executed
-   * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository
-   * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
+   * **Manage Git** - allows the user to get the information necessary to access Cloud Manager Git repository
 
 ## The Next Steps {#the-next-steps}
 
