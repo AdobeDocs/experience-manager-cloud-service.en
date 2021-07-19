@@ -20,11 +20,3 @@ role: Developer, Architect
   + [How to put it all together](developer/put-it-all-together.md)
   + [How to go live with your headless application](developer/go-live.md)
   + [Optional - How to create single page applications with AEM](developer/create-spa.md)
-+ AEM Headless Localization Journey {#localization}
-  + [Understand Headless Localization in AEM](localization/overview.md)
-  + [Get started with AEM headless localization](localization/getting-started.md)
-  + [Learn about headless content and how to localize in AEM](localization/learn-about.md)
-  + [Configure translation connector](localization/configure-connector.md)
-  + [Configure translation rules](localization/translation-rules.md)
-  + [Translate content](localization/translate-content.md)
-  + [Publish translated content](localization/publish-content.md)
