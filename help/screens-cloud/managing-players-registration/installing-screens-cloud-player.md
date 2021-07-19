@@ -1,9 +1,6 @@
 ---
 title: Installing and Configuring Players in Screens as a Cloud Service
 description: This page describes how to install and configure players in Screens as a Cloud Service.
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # Installing and Configuring Players in Screens as a Cloud Service {#installing-players-screens-cloud}

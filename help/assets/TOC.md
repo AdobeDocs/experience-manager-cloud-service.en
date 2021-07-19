@@ -3,7 +3,7 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Assets as a Cloud Service Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
-solution: Experience Manager, Experience Manager Assets
+solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
 ---
 
 # [!DNL Assets] Guide {#assets}
@@ -25,7 +25,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Smart tags for images](smart-tags.md)
   + [Smart tag your video assets](smart-tags-video-assets.md)
   + [How to organize assets](organize-assets.md)
-  + [Use [!DNL Adobe Stock] assets in AEM](aem-assets-adobe-stock.md)
+  + [Use [!DNL Adobe Stock] assets](aem-assets-adobe-stock.md)
   + [Manage collections](manage-collections.md)
   + [Metadata overview](manage-metadata.md)
   + [Integrate with [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -39,6 +39,7 @@ solution: Experience Manager, Experience Manager Assets
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
   + [Digital rights management for assets](drm.md)
   + [Watermark assets](watermark-assets.md)
+  + [Process assets using [!DNL Creative Cloud] APIs](cc-api-integration.md)
 + Configure, administer and extend [!DNL Assets] {#admin}
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
@@ -47,9 +48,9 @@ solution: Experience Manager, Experience Manager Assets
   + [Search facets](search-facets.md)
   + [Assets HTTP API](mac-api-assets.md)
   + [Content Fragments support in Assets HTTP API](content-fragments/assets-api-content-fragments.md)
-  + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
-  + [Authentication for Remote AEM GraphQL Queries on Content Fragments](content-fragments/graphql-authentication-content-fragments.md)
-  + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+  + [GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+  + [Authentication for Remote GraphQL Queries on Content Fragments](content-fragments/graphql-authentication-content-fragments.md)
+  + [GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
   + [Asset reports](asset-reports.md)
   + [Cascading metadata](cascading-metadata.md)

@@ -27,6 +27,142 @@ The following release (2021.7.0) will be on August26 , 2021.
 
 Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334296) video for a summary of the features added.
 
+## XML Documentation for AEM as a cloud Service {#xml-documentation}
+ 
+### What's New {#what-is-new-xml-documentation}
+ 
+* XML Documentation for AEM as a Cloud Service is now GA.
+* This will allow existing AEM Cloud Service customers to procure XML Documentation addon for importing, creating, managing and delivering technical content across multiple channels including AEM sites
+
+## Cloud Manager {#cloud-manager}
+
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.7.0 and 2021.6.0.
+
+### Release Date {#release-cm-july}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.7.0 is July 15, 2021.
+The next release is planned for August 12, 2021.
+
+### What's New {#what-is-new-cm-july}
+
+* Customers are now able to use Azul 8 and 11 JDKs for their Cloud Manager build processes and can either select to use one of these JDKs for toolchains-compatible Maven plugins *or* the entire Maven process execution.
+
+* The outbound egress IP will now be logged in the build step log file. 
+
+* Stage and Production environments running old versions of AEM will now report a status of **Update Available**. 
+
+* The maximum SSL certificates supported has increased to 20 per program.
+
+* The maximum number of domains that can be configured has increased to 500 per environment.
+
+* The **Manage Git** buttons has been retitled to **Access Git Info** and the dialog has been visually refreshed.
+
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28.
+
+### Bug Fixes {#bug-fixes-cm-july}
+
+* In some situations, Preview was not an available option when binding an IP Allow List to an environment.
+
+* Manually navigating to the execution details page for a non-existing execution did not show an error, just an endless loading screen.
+
+* The error message shown when the maximum number of SSL certificates was reached was not helpful.
+
+* In some circumstances, there could be a discrepancy in the release version shown in the pipeline card on the **Overview** page.
+
+* Add program wizard incorrectly stated that name cannot be changed after creation. 
+
+### Known Issues {#known-issues-cm-july}
+
+Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
+
+### Release Date {#release-date-june-cm}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.6.0 is June 10, 2021.
+The next release is planned for July 15, 2021.
+
+### What's New {#what-is-new-junecm}
+
+* Preview Service will be deployed on a rolling basis to all Programs. Customers will be notified in-product when their Program is enabled for Preview Service. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
+
+* Maven Dependencies downloaded during the build step will now be cached between pipeline executions. This feature will be enabled for customers over the next several weeks.
+
+* The name of the program can now be edited through the edit program dialog.
+
+* The default branch name used during both project creation and  in the default push command via manage git workflows has been changed to `main`.
+
+* Edit program experience in the UI has been refreshed.
+
+* The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable. 
+
+* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule. As part of this consolidation, the scanning of dependencies more accurately identifies issues in third party dependencies which are being deployed to the AEM runtime.
+
+* To avoid confusion, the Publish AEM and Publish Dispatcher segment rows on the Environment Details page have been consolidated.
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+
+* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. Refer to [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
+
+* Environment details page will now display multiple domain names for Publish and Preview services (as applicable). Refer to [Environment Details](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) to more details.
+
+### Bug Fixes {#bug-fixes-junecm}
+
+* JCR node definitions containing a newline after the root element name were not correctly parsed.
+
+* List repositories API would not filter deleted repositories.
+
+* An incorrect error message was displayed when an invalid value was provided for the schedule step.
+
+* On occasion, user may see a green *active* status next to an IP Allow List even when that configuration was not deployed.
+
+* Some program editing sequences could result in the inability to create or edit the production pipeline.
+
+* Some program editing sequences could result in the **Overview** page displaying a misleading message to re-execute program setup.
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### New features in [!DNL Assets] {#ga-features-assets}
+
+* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [Generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
+
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) for [!DNL Adobe XD] is available. It provides:
+
+  * Support for [!DNL Assets Essentials].
+  * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
+
+* The [Asset Bulk Ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor) lets you add metadata during a bulk ingestion.
+
+### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}
+
+* The view settings are enhanced to let users choose a default view and a default sorting parameter.
+
+  ![Set default view in View Settings](/help/assets/assets/view-settings-for-defaults.png)
+
+* The Linkshare download functionality uses asynchronous downloads that boosts the download speed. See [Download assets shared using link sharing](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Download inbox](/help/assets/assets/download-inbox.png)
+
+* Users can search and filter the folders based on property predicates.
+
+  ![Filter search folders using search predicates](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5. The controls available in the preview are to zoom, to navigate to pages, to undock controls, and to view in full screen. The integrated PDF viewer supports AI, DOCX, INDD, PDF, and PSD file formats. You can comment on the asset itself but commenting and annotations within the PDF file are not supported.
+
+  ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
+
+  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
+
+### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
+
+* When you add an owner to a sub-folder, [!DNL Assets] also adds the same user as an owner of the parent folder. (CQ-4323737)
+* When adding assets to Collections, if a user applies a filter on Collections search, the user cannot view the Collections in List view. (CQ-4323181)
+* When searching for files and folders, if user applies a filter and selects [!UICONTROL Files & Folders], only the files are displayed but not the folder. (CQ-4319543)
+
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
  
 ### New features in [!DNL Sites] {#ga-features-sites}
@@ -63,3 +199,74 @@ Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334
 * **Acroform-based Document of Record**: You can also use Adobe Acrobat Form PDF (Acroform PDF) as a template for Document of Record besides XFA-based form template.
 
 * **Microsoft Azure data store connector**: You can now connect Form Data Model to Microsoft Azure Storage. It allows you to store and retrieve adaptive form data to Microsoft Azure Storage as a BLOB.  
+
+## [!DNL Adobe Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
+
+This section outlines the Release Notes for AEM Screens as a Cloud Service.
+
+### Release Date {#release-date-june-screens}
+
+The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
+
+### What's New {#what-is-new-screens-june}
+
+>[!NOTE]
+>See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
+
+* Bulk Device Registration Management means that provisioning massive amounts of player devices is faster and more efficient.
+
+* Improved search and filter options for each of the Device, Display, and Channel inventory views.
+
+* Device heath snapshot saves time by providing critical status as a glance.
+
+* Object details page offers a summary of the most relevant information for each object in your project.
+
+## Cloud Acceleration Manager {#cam}
+
+### Release Date {#release-date-july-cam}
+
+The Release Date for Cloud Acceleration Manager is July 15, 2021.
+
+## What is New {#what-is-new-cam}
+
+Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+
+## CIF Add-on {#cloud-services-cif}
+
+### What is New {#what-is-new-cif}
+
+## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt-latest}
+
+The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
+
+### What's New {#what-is-new-ctt-latest}
+
+* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
+
+* Guardrail added to CTT to prevent users from stopping an ingestion and potentially corrupting data once it has reached the critical point during the ingestion phase.
+
+* Extraction logs made more descriptive to help with troubleshooting.
+
+* Added more descriptive ingestion status messages in the UI.
+
+### Bug Fixes {#bug-fixes-ctt-latest}
+
+* While stopping an ingestion on the Author instance, the UI overwrote a previously finished ingestion on the Publish instance to `STOPPED` from `FINISHED`. This has been fixed. 
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.16 is June 30, 2021.
+
+### What's New {#what-is-new-bpa-latest}
+
+* Ability to detect and report on missing child nodes in folders under `/content/dam`. 
+
+* Ability to detect and report on the version of Best Practices Analyzer used.  
+
+### Bug Fixes {#bug-fixes-bpa-latest}
+
+* Logging error related to Unsupported Repository Structure (URS) fixed.

@@ -3,7 +3,7 @@ title: Publish assets, folders, and collections to Brand Portal
 description: Publish assets, folders, and collections to Brand Portal.
 contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
-role: Business Practitioner
+role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 ---
 # Publish assets to Brand Portal {#publish-assets-to-brand-portal}
@@ -74,7 +74,7 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
 Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
 
-   ![bp_landing_page](assets/bp_landing_page.png)
+   ![bp_landingpage](assets/bp_landingpage.png)
 
 
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
