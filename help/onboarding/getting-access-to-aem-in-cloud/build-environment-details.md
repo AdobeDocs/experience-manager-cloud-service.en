@@ -11,7 +11,7 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
-* The Java versions installed are Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2, and Azul Zulu 11.0.11.
+* The Java versions installed are Oracle JDK 8u202 and 11.0.2.
 * There are some additional system packages installed which are necessary:
 
     * bzip2
@@ -32,13 +32,13 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 >[!NOTE]
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
 
-### Using a Specific Java Version {#using-java-support}
+### Using Java 11 Support {#using-java-support}
 
-By default, projects are built by the Cloud Manager build process using the Oracle 8 JDK. Customers wishing to use an alternate JDK have two options: Maven Toolchains and selecting an alternate JDK version for the entire Maven execution process.
+Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. 
 
-#### Maven Toolchains {#maven-toolchains}
+Customers who want to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
-The [Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/) allows projects to select a specific JDK (or *toolchain*) to be used in the context of toolchains-aware Maven plugins. This is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is:
+To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
 
 ```
 <plugin>
@@ -57,37 +57,17 @@ The [Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-
             <jdk>
                 <version>11</version>
                 <vendor>oracle</vendor>
-            </jdk>
+           </jdk>
         </toolchains>
     </configuration>
 </plugin>
 ```
 
-This will cause all toolchains-aware Maven plugins to use the Oracle JDK, version 11.
-
-When using this method, Maven itself still runs using the default JDK (Oracle 8). Therefore checking or enforcing the Java version through plugins like the Apache Maven Enforcer Plugin does not work and such plugins must not be used.
-
-The currently available vendor/version combinations are:
-
-* oracle 1.8
-* oracle 1.11
-* oracle 11
-* sun 1.8
-* sun 1.11
-* sun 11
-* azul 1.8
-* azul 1.11
-* azul 8
-
-#### Alternate Maven Execution JDK Version {#alternate-maven-jdk-version}
-
-It is also possible to select Azul 8 or Azul 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plugins unless the toolchains configuration is also  set in which case the toolchains configuration is still applied for toolchains-aware Maven plugins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) will work.
-
-To do this, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. This file can have either the content 11 or 8. Any other value is ignored. If 11 is specified, Azul 11 is used. If 8 is specified, Azul 8 is used.
+>[!NOTE]
+>Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
 
 >[!NOTE]
->In a future release of Cloud Manager, currently estimated to be in October 2021, the default JDK will be changed and the default will be Azul 11. Projects which are not compatible with Java 11 should create this file with the content 8  as soon as possible to ensure they are not impacted by this switch.
-
+>The Cloud Manager project build is still using Java 8 to invoke Maven, therefore checking or enforcing the Java version configured in the toolchain plugin through plugins like the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plugins must not be used.
 
 ## Environment Variables {#environment-variables}
 
