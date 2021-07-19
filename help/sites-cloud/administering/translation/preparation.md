@@ -2,7 +2,7 @@
 title: Preparing Content for Translation
 description: Learn how to prepare content for translation.
 feature: Language Copy
-role: Administrator
+role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 ---
 # Preparing Content for Translation {#preparing-content-for-translation}

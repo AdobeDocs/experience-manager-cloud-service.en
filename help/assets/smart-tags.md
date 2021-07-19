@@ -3,7 +3,7 @@ title: Auto-tag assets with [!DNL Adobe Sensei] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 contentOwner: AG
 feature: Smart Tags,Tagging
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
@@ -13,7 +13,7 @@ Organizations that deal with digital assets increasingly use taxonomy-controlled
 
 Compared to natural language vocabularies, tagging based on business taxonomy helps align the assets with a company's business and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.
 
-In the background, the the functionality uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] deployments are integrated with [!DNL Adobe Developer Console] by default.
+In the background, the the functionality uses the artificially intelligent framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -57,7 +57,7 @@ You can tag the following types of assets:
 
 ## Understand tag models and guidelines {#understand-tag-models-guidelines}
 
-A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example by color, by design, or by usage. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
+A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example by design or by usage. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
 
 Before you create a tag model and train the service, identify a set of unique tags that best describe the objects in the images in the context of your business. Ensure that the assets in your curated set conform to [the training guidelines](#training-guidelines).
 
@@ -91,13 +91,15 @@ Ensure that the images in the training set conform to the following guidelines:
 
 **Examples**: Some more examples for guidance are:
 
-* Create a tag model that includes,
-  * only the tags related to car models.
-  * only the tags related to colors of shirts.
-  * only the tags related to jackets for women and men.
+* Create a tag model that only includes,
+
+  * The tags related to car models.
+  * The tags related to jackets for women and men.
+
 * Do not create,
-  * a tag model that includes car models released in 2019 and 2020.
-  * multiple tag models that include the same few car models.
+
+  * A tag model that includes car models released in 2019 and 2020.
+  * Multiple tag models that include the same few car models.
 
 **Images used to train**: You can use the same images to train different tag models. However, do not associate an image with more than one tag in a tag model. It is possible to tag the same image with different tags belonging to different tag models.
 
@@ -171,11 +173,11 @@ To check whether the Smart Tags service is trained on your tags in the training 
 
 ## Tag assets with Smart Tags {#tag-assets}
 
-All types of supported assets are automatically tagged by [!DNL Experience Manager Assets] when uploaded. Tagging is enabled by default. [!DNL Experience Manager] applies the appropriate tags in near-real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+All types of supported assets are automatically tagged by [!DNL Experience Manager Assets] when uploaded. Tagging is enabled and works, by default. [!DNL Experience Manager] applies the appropriate tags in near-real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-For images and videos, the Smart Tags are derived based on some visual aspect.
+* For images and videos, the Smart Tags are based on some visual aspect.
 
-For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. For text-based assets, the Smart Tags are the keywords that appear in the text but the ones that best describe the asset. For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet that is used to improve asset discovery as compared to full search index.
+* For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. For text-based assets, the Smart Tags are the keywords that appear in the text but the ones that best describe the asset. For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet that is used to improve asset discovery as compared to full search index.
 
 ## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
