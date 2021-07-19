@@ -1,8 +1,8 @@
 ---
 title: Adobe Support
 description: Follow this page to learn Onboarding Help Resources and Adobe Support.
+exl-id: 2d5076b6-abeb-428e-9071-98f861893cd0
 ---
-
 # Adobe Support {#adobe-support}
 
 Adobe Support can be accessed via Adobe Admin Console from where you can manage your support cases and schedule an expert session.

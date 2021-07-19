@@ -18,12 +18,15 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + Administering {#administering}
     + [Multi-Store Setup](configuring/multi-store-setup.md)
     + [Multi-Template Usage](configuring/multi-template-usage.md)
+    + [Enrich product data with associated content](configuring/enrich-product-associated-content.md)
     + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
     + [Caching Options](configuring/caching.md)
+    + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
   + Developing {#developing}
     + [Developing with AEM Cloud Service SDK](develop.md)
     + [Styling CIF Components](customizing/style-cif-component.md)
     + [Customizing CIF Components](customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
 + [Migration](migration.md)
 + [FAQ](faq.md)
