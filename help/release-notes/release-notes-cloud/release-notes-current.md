@@ -62,10 +62,4 @@ Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334
 
 * **Acroform-based Document of Record**: You can also use Adobe Acrobat Form PDF (Acroform PDF) as a template for Document of Record besides XFA-based form template.
 
-* **Form Data Model**: You can now connect Form Data Model to Microsoft Azure Storage. It allows you to store and retrieve adaptive form data to Microsoft Azure Storage as a BLOB.  
-
-
-### Bugs fixed in [!DNL Forms] {#forms-bugs-fixed}
-
-* When a field is validated before submitting data to backend service via Form Data Model (FDM), validations succeed but the Form Data Model service fail to invoke post validation.
-* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. This is a known issue in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* **Microsoft Azure data store connector**: You can now connect Form Data Model to Microsoft Azure Storage. It allows you to store and retrieve adaptive form data to Microsoft Azure Storage as a BLOB.  
