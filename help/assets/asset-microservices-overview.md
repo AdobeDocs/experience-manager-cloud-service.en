@@ -37,7 +37,7 @@ The key steps of the ingestion and processing using asset microservices are:
 * Clients, such as web browsers or Adobe Asset Link, send an upload request to [!DNL Experience Manager] and start uploading the binary directly to the binary cloud storage.
 * When the direct binary upload completes, the client notifies [!DNL Experience Manager].
 * [!DNL Experience Manager] sends a processing request to asset microservices. The request contents depends on the processing profiles configuration in [!DNL Experience Manager] that specify, which renditions to generate.
-* Assets microservices back-end receives the request, dispatches it to one or more microservices based on the request. Each microservice accesses the original binary directly from the binary cloud store.
+* Asset microservices back-end receives the request, dispatches it to one or more microservices based on the request. Each microservice accesses the original binary directly from the binary cloud store.
 * Results of the processing, such as renditions, are stored in the binary cloud storage.
 * Experience Manager is notified that the processing is complete along with direct pointers to the generated binaries (renditions). The generated renditions are available in [!DNL Experience Manager] for the uploaded asset.
 
