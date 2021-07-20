@@ -187,7 +187,7 @@ The next release is planned for July 15, 2021.
 * You can now use Automated Forms Conversion service to convert PDF Forms in French, German, and Spanish language to adaptive forms. 
 * Added a separate panel to template editor to display errors related to adaptive form components. It helps consolidate all adaptive form errors at one location and reduce resolution time.
 
-### New features available in [!DNL Forms] prerelease channel {#beta-features-assets}
+### New features available in [!DNL Forms] prerelease channel {#beta-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
