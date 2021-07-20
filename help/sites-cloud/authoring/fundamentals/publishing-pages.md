@@ -119,7 +119,7 @@ To publish or unpublish a page using Manage Publication:
 
    >[!NOTE]
    >
-   >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-adminstering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
+   >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
 
    ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -211,7 +211,7 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
 
    >[!NOTE]
    >
-   >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-adminstering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
+   >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
 
    ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
