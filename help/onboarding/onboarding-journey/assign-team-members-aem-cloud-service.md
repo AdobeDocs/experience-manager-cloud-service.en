@@ -10,7 +10,7 @@ index: no
 
 ## Objective {#objective}
 
-This document helps you understand the steps that your system administrator must take to assign your team members to AEM as a Cloud Service product profiles and why it is crucial to enable your AEM Authors to embark on their journey with AEM. 
+This document helps you understand the steps that your System Administrator must take to assign your team members to AEM as a Cloud Service product profiles and why it is crucial to enable your AEM Authors to embark on their journey with AEM. 
 
 After reading this section you should:
 
