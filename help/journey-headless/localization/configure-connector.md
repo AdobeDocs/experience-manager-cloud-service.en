@@ -43,9 +43,9 @@ If you choose another provider you will need to install the connector package as
 >
 >Using the out-of-the-box Microsoft Translator in AEM does not require additional setup and works as-is without additional connector configuration.
 >
->If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections, but are advised to read them so that you are familiar for when you need to connect your preferred connector.
+>If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar for when you need to connect your preferred connector.
 >
->The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, you will need to follow the next steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
+>The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, you will need to follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
 
 ## Creating a Translation Integration Configuration {#create-config}
 
@@ -81,7 +81,7 @@ To create a new translation configuration:
    1. **Translation Method** - Select **Machine Translation** or **Human Translation** depending on your translation provider. For the purposes of this journey we will assume machine translation.
    1. **Translation Providers** - Select the connector you installed for your translation service from the list.
    1. **Content Category** - Select the most appropriate category to better target the translation (only for machine translation).
-   1. **Translate Content Fragment Assets** - ???
+   1. **Translate Content Fragment Assets** - Check this to translate assets associated with Content Fragments.
    1. **Translate Assets** - Check this to translate the assets.
    1. **Translate Metadata** - Check this to translate asset metadata.
    1. **Translate Tags** - Check this to translate tags that are associated with the asset.
@@ -93,7 +93,7 @@ You have now configured the connector to your translation service.
 
 ## Associate the Configuration with Your Content {#associate}
 
-AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting this up is beyond the scope of this journey, but means that you need to specify which connectors and configuration should be used to translate your content.
+AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you need to specify which connectors and configuration should be used to translate your content by associating ths configuration you just made with your content.
 
 To do this, navigate to the language root of your content. For our example purposes this is
 
