@@ -19,17 +19,23 @@ This guide leads you through the most important headless localizations topics so
 * Understand AEM's localization features and how they related to headless content.
 * Have the ability to start localizing your own headless content.
 
+The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can localize it. If you are not familiar with any of these topics, this is your ideal place to start.
+
+If you are already familiar with AEM, headless, and localization, you may already have the foundational knowledge of this journey. Consider referring to our [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) instead.
+
 ## Audience {#audience}
 
 This journey is designed for the localization persona, laying out the requirements, steps, and approach to localization headless content in AEM. The journey may define additional personas with which the localization expert must interact, but the point-of-view for the journey is that of the localization expert.
 
 Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
+This journey assumes the reader has experience localizing content on a large CMS system, but assumes no knowledge of headless technology or AEM.
+
 ## The Headless Localization Journey {#the-journey}
 
-You will explore many topics in this journey. The following articles give you foundational knowledge of headless in AEM and link out to detailed technical documentation.
+You will explore many topics in this journey. The following articles give you foundational knowledge of localizing headless content in AEM and link out to detailed technical documentation.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, we recommend that you start at the beginning and progress sequentially.
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless localization in AEM, we recommend that you start at the beginning and progress sequentially.
 
 |#|Article|Description|
 |---|---|---|
@@ -43,4 +49,4 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Learn about headless content and how to localize it in AEM](learn-about.md)
+You are now ready to get started on your Adobe headless localization journey. We encourage you to continue on to the next part of the journey and read the article [Learn about headless content and how to localize it in AEM](learn-about.md)

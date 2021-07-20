@@ -53,11 +53,11 @@ AEM's content, be it headless or traditional web pages, is driven by its structu
 >
 >Plan for translation and localization at the very beginning of the headless project. Work closely with the project manager and content architects early.
 >
->An “Internationalization Project Manager” may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
+>An Internationalization Project Manager may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
 
 Create a plan on what content localization you will need.
 
-* Do you just need different languages or also language to adopt to regional specifics?
+* Do you just need different languages or also need to adapt to regional specifics?
 * Do you need rich media content like images or videos to be different for different locales?
 
 ## How AEM Stores Headless Content {#headless-content-in-aem}
@@ -109,7 +109,7 @@ The language in which your content is authored is called the language root. In o
 /content/dam/<your-project>/en
 ```
 
-All project content that may need to be localized should the be placed under the master language.
+All project content that may need to be localized should the be placed under the language root.
 
 ```text
 /content/dam/<your-project>/en/<your-project-content>
@@ -139,6 +139,8 @@ The final structure may look something like the following.
         |- another-project
         |- ...
 ```
+
+You should take note of the specific path of your content as it will be needed later to configure your translation.
 
 ## AEM Localization Tools {#localization-tools}
 
