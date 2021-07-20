@@ -28,7 +28,7 @@ The following are the available predicate types for Inbox:
 
 ## Range Predicate {#range-predicate}
 
-You can filter Inbox items based on a column of Number type using the Range Predicate. You can also choose to include decimal values for numbers.
+You can filter Inbox items to search for a number range within an Inbox column using the Range Predicate. You can also choose to include decimal values for numbers.
 
 To configure a Range Predicate:
 
@@ -39,4 +39,22 @@ To configure a Range Predicate:
 1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label with an option to define the maximum and minimum values. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
+
+## Text Predicate {#text-predicate}
+
+Filter Inbox items to search for a text string within an Inbox column using the Text Predicate.
+
+To configure Text Predicate:
+
+1. Open the [form for configuration](#creating-opening-customized-configuration).
+1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Text Predicate]** to the form.
+1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
+1. Specify the text that displays in the Search text box as a placeholder text in the **[!UICONTROL Search Text Box Placeholder]** field.
+1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
+
+The configuration changes reflect when you open the Filters page. [!DNL Experience Manager] applies the search text specified in step 4 on the column name specified in step 3 and returns the Inbox items.
+
+## Date Range Predicate {#text-predicate}
+
+You can filter Inbox items to search for a date range within an Inbox column using the Date Range Predicate.
 
