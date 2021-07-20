@@ -54,7 +54,7 @@ To configure Text Predicate:
 
 The configuration changes reflect when you open the Filters page. [!DNL Experience Manager] applies the search text specified in step 4 on the column name specified in step 3 and returns the Inbox items.
 
-## Date Range Predicate {#text-predicate}
+## Date Range Predicate {#date-range-predicate}
 
 You can filter Inbox items to search for a date range within an Inbox column using the Date Range Predicate.
 
