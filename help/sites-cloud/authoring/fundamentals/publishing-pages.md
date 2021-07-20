@@ -40,11 +40,6 @@ Depending on your location, you can publish:
 >* This workflow may have been customized by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 
-<!--
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
--->
-
 >[!NOTE]
 >
 > For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
@@ -59,10 +54,10 @@ If you are editing a page, it can be published directly from the editor.
 
 1. Depending on whether the page has references that need publishing:
 
-    * The page will be published directly if there are no references to be published.
-    * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
-        * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
-        * Use **Cancel** to abort the action.
+   * The page will be published directly if there are no references to be published.
+   * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
+     * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+     * Use **Cancel** to abort the action.
 
    ![Publishing references with the page](/help/sites-cloud/authoring/assets/publishing-references.png)
 
@@ -117,16 +112,18 @@ To publish or unpublish a page using Manage Publication:
 
 1. The **Manage Publication** wizard starts. The first step, **Options**, allows you to:
 
-    * Choose to publish or unpublish the selected pages.
-    * Choose to take that action now or at a later date.
+   * Choose to publish or unpublish the selected pages.
+   * Choose to take that action now or at a later date.
 
    Publishing later starts a workflow to publish the selected page or pages at the specified time. Conversely, unpublishing later starts a workflow to unpublish the selected page or pages at a specific time.
 
-   If you want to cancel a publish/unpublish later, go to the Workflow Console to terminate the corresponding workflow. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-adminstering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
 
    ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-   Click **Next** to continue.
+1. Click **Next** to continue.
 
 1. In the next step of the Manage Publication wizard, **Scope**, you can define the scope of the publication/un-publication such as including to include child pages and/or including references.
 
@@ -140,23 +137,23 @@ To publish or unpublish a page using Manage Publication:
 
    Back in the wizard, you can select an item in the list to configure its further options such as:
 
-    * Include its children.
-    * Remove it from the selection.
-    * Manage its published references.
+   * Include its children.
+   * Remove it from the selection.
+   * Manage its published references.
 
    ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   Clicking **Include Children** opens a dialogue allowing you to:
+   Clicking **Include Children** opens a dialog box allowing you to:
 
-    * Include only immediate children.
-    * Include only modified pages.
-    * Include only already published pages.
+   * Include only immediate children.
+   * Include only modified pages.
+   * Include only already published pages.
 
    Click **Add** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
 
    ![Manage Publication including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
-   Returning to the wizard you see the pages added based on your choice of options in the Include Children dialogue.
+   Returning to the wizard you see the pages added based on your choice of options in the Include Children dialog.
 
    You can view and modify the references to be published or unpublished for a page by selecting it and then clicking the **Published References** button.
 
@@ -179,21 +176,14 @@ To publish or unpublish a page using Manage Publication:
    >[!NOTE]
    >
    >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as Managing Access to Workflows and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   <!--
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   -->
 
    The resources are grouped by the workflows triggered and each given options to:
 
-    * Define the title of the workflow.
-    * Keep the workflow package, provided that the workflow has multi-resource support. 
-    
-    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-    -->
-    
-    * Define a title of the workflow package if the option to keep the workflow package was chosen.
+   * Define the title of the workflow.
+   * Keep the workflow package, provided that the workflow has multi-resource support. 
+   * Define a title of the workflow package if the option to keep the workflow package was chosen.
 
-   Click **Publish** or **Publish Later** to complete the publication.
+1. Click **Publish** or **Publish Later** to complete the publication.
 
 ## Unpublishing Pages {#unpublishing-pages}
 
@@ -219,7 +209,11 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
 
    Just as publishing later starts a workflow to publish this version of the page at the specified time, deactivating later starts a workflow to unpublish the selected page or pages at a specific time.
 
-   If you want to cancel a publish/unpublish later, go to the Workflow Console to terminate the corresponding workflow. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-adminstering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
+
+   ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. To complete the un-publication, continue through the wizard as you would to [publish the page](#manage-publication).
 
@@ -235,10 +229,10 @@ You can use the [Manage Publication](#manage-publication) option on the sites co
 
    ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. In the **Include Children** dialogue, un-check the options:
+1. In the **Include Children** dialog, un-check the options:
 
-    * Include only immediate children
-    * Include only already published pages
+   * Include only immediate children
+   * Include only already published pages
 
    These options are selected by default, so you must remember to unselect them. Click **Add** to confirm and add the content to the publication/un-publication.
 
