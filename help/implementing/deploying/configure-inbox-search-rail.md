@@ -58,3 +58,29 @@ The configuration changes reflect when you open the Filters page. [!DNL Experien
 
 You can filter Inbox items to search for a date range within an Inbox column using the Date Range Predicate.
 
+To configure Date Range Predicate:
+
+1. Open the [form for configuration](#creating-opening-customized-configuration).
+1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Date Range Predicate]** to the form.
+1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
+1. Specify the label for the date range filter in the **[!UICONTROL Filter Label]** field.
+1. Specify the start date and end date labels for the filter.
+1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
+
+The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the date range filter along with the start date and end date labels specified in step 5. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
+
+## Custom Column Options Predicate {#custom-column-options-predicate}
+
+You can filter Inbox items to search for a custom option within an Inbox column using the Custom Column Options Predicate.
+
+To configure Custom Column Options Predicate:
+
+1. Open the [form for configuration](#creating-opening-customized-configuration).
+1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Custom Column Options Predicate]** to the form.
+1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
+1. Specify the label for the custom column options filter in the **[!UICONTROL Filter Label]** field.
+1. Specify the start date and end date labels for the filter.
+1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
+
+The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the date range filter along with the start date and end date labels specified in step 5. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
+
