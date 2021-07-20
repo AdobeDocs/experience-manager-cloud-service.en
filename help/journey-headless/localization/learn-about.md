@@ -50,6 +50,13 @@ In addition to offering robust tools to create, manage, and deliver traditional 
 
 The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the localization specialist, the same set of localization tools can be applied to both types of content, giving you a unified approach for translating your content.
 
+Further in the journey you will learn the details about how AEM localizes content, but at a high level, the concept is simple:
+
+1. Define a connection to a translation service by configuring the translation integration framework.
+1. Define which content should be translated using translation rules.
+1. Create a translation project to extract the content, send it to the translation service, and receive the results.
+1. Review and publish the translated content.
+
 ## What's Next {#what-is-next}
 
 Thanks for getting started on your AEM headless localization journey! Now that you read this document you should:

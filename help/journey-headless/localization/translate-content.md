@@ -115,7 +115,7 @@ If you navigate to this folder via **Navigation** -&gt; **Files** -&gt; **Assets
 
 AEM's translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
 
-It is important to understand that this content is not published. It remains on the authoring instance of AEM until you decide it is ready to be publish. We will see how to do this in the next step of the localization journey.
+It is important to understand that this content is not published. It remains on the authoring instance of AEM until you decide it is ready to be publish. We will learn about this author-publish structure and see how to publish our translated content in the next step of the localization journey.
 
 ## Human Translation {#human-translation}
 
