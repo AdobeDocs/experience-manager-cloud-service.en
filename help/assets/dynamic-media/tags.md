@@ -1,41 +1,41 @@
 ---
-title: Integrate Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch
-description: Learn about the Dynamic Media Viewers extension for Platform Launch and Dynamic Media Viewers 5.13. It lets customers of Adobe Analytics and Platform Launch to use events and data specific for the Viewers in their Platform Launch configuration.
+title: Integrate Dynamic Media Viewers with Adobe Analytics and Experience Platform Tags
+description: Learn about the Dynamic Media Viewers extension for Experience Platform Tags and Dynamic Media Viewers 5.13. It lets customers of Adobe Analytics and Platform Tags to use events and data specific for the Dynamic Media Viewers in their Experience Platform Tags configuration.
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 ---
-# Integrate Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrate Dynamic Media Viewers with Adobe Analytics and Experience Platform Tags {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
-## What is Dynamic Media Viewers integration with Adobe Analytics and Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+## What is Dynamic Media Viewers integration with Adobe Analytics and Experience Platform Tags? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
 <!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
 
 name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
-The new *Dynamic Media Viewers* extension for Platform Launch and Dynamic Media Viewers 5.13, lets customers of Adobe Analytics and Platform Launch to use events and data specific for the Viewers in their Platform Launch configuration.
+*Dynamic Media Viewers* extension for Experience Platform Tags and Dynamic Media Viewers 5.13, lets Adobe Analytics and Experience Platform Tags customers use events and data specific for Dynamic Media Viewers in their Experience Platform Tags configuration.
 
-This integration means that you can track usage of Dynamic Media Viewers on your website with Adobe Analytics. At the same time, you can use the events and data exposed by the viewers with any other Platform Launch extension that comes from Adobe or a third party.
+This integration means that you can track usage of Dynamic Media Viewers on your website with Adobe Analytics. At the same time, you can use the events and data exposed by the viewers with any other Experience Platform Tags extension that comes from Adobe or a third party.
 
-To learn more about extensions, see [Adobe extensions](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) in the Experience Platform Launch User Guide.
+To learn more about Adobe extensions or third-party extensions, see [Adobe extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) in the Experience Platform Tags User Guide.
 
 **This topic is intended for the following:** Site administrators, Developers on the Adobe Experience Manager program, and people in Operations.
 
 ### Limitations of the integration {#limitations-of-the-integration}
 
-* Experience Platform Launch integration for Dynamic Media viewers does not work in the Experience Manager author node. You cannot see any tracking from a WCM page until it is published.
-* Experience Platform Launch integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on Asset Details page.
-* Experience Platform Launch integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
+* Experience Platform Tags integration for Dynamic Media viewers does not work in the Experience Manager author node. You cannot see any tracking from a WCM page until it is published.
+* Experience Platform Tags integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on Asset Details page.
+* Experience Platform Tags integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
 * Support for video tracking is limited to core playback tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
 * Storage Duration configuration for Data Elements is not supported for Data Elements using the *Dynamic Media Viewers* extension. Storage Duration must be set to **[!UICONTROL None]**.
 
 ### Use cases for the integration {#use-cases-for-the-integration}
 
-The primary use case for the integration with Experience Platform Launch is customers who use both Experience Manager Assets and Experience Manager Sites. In such scenarios, you can set up a standard integration between your Experience Manager author node and Experience Platform Launch, then associate your Sites instance with the Experience Platform Launch property. After that, any Dynamic Media WCM component added to a Sites page will track data and events from viewers.
+The primary use case for the integration with Experience Platform Tags is customers who use both Experience Manager Assets and Experience Manager Sites. In such scenarios, you can set up a standard integration between your Experience Manager author node and Experience Platform Tags, then associate your Sites instance with the Experience Platform Tags property. After that, any Dynamic Media WCM component added to a Sites page will track data and events from viewers.
 
 See [Track Dynamic Media viewers in Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
-A secondary use case that the integration supports are those customers who use Experience Manager Assets only, or Dynamic Media Classic. In such cases, you obtain the embed code for your viewer and add it to the website page. Then, get the Experience Platform Launch library production URL from Experience Platform Launch and manually add it to the web page code.
+A secondary use case that the integration supports are those customers who use Experience Manager Assets only, or Dynamic Media Classic. In such cases, you obtain the embed code for your viewer and add it to the website page. Then, get the Experience Platform Tags library production URL from Experience Platform Tags and manually add it to the web page code.
 
 See [Track Dynamic Media viewers using embed code](#tracking-dynamic-media-viewers-using-embed-code).
 
@@ -47,31 +47,31 @@ The integration takes advantage of two separate and independent types of Dynamic
 
 Adobe Analytics lets you track actions that are performed by the end user when they interact with Dynamic Media Viewers on your website. Adobe Analytics also lets you track viewer-specific data. For example, you can track and record view load events along with the asset name, any zoom actions that occurred, and video play actions.
 
-In Experience Platform Launch, the concepts of *Data Elements* and *Rules* work together to enable Adobe Analytics tracking.
+In Experience Platform Tags, the concepts of *Data Elements* and *Rules* work together to enable Adobe Analytics tracking.
 
-#### About Data Elements in Experience Platform Launch {#about-data-elements-in-adobe-launch}
+#### About Data Elements in Experience Platform Tags {#about-data-elements-in-adobe-launch}
 
-A Data Element in Experience Platform Launch is a named property whose value is either statically defined, or dynamically calculated based on the state of a web page or Dynamic Media Viewers data.
+A Data Element in Experience Platform Tags is a named property whose value is either statically defined, or dynamically calculated based on the state of a web page or Dynamic Media Viewers data.
 
-Options that are available for a Data Element definition depend on the list of Extensions that are installed in the Experience Platform Launch Property. The "Core" extension is preinstalled and is available out of the box in any configuration. This "Core" extension allows to define a Data Element which value comes from cookie, JavaScript code, query string, and many other sources.
+Options that are available for a Data Element definition depend on the list of Extensions that are installed in the Experience Platform Tags Property. The "Core" extension is preinstalled and is available out of the box in any configuration. This "Core" extension allows to define a Data Element which value comes from cookie, JavaScript code, query string, and many other sources.
 
 For Adobe Analytics tracking several other extensions must be installed, as described in [Installation and setup of extensions](#installing-and-setup-of-extensions). Dynamic Media Viewers extension adds an ability to define a Data Element which value is an argument of the Dynamic Viewer event. For example, it is possible to reference the viewer type, or asset name reported by the viewer on load, the zoom level reported when end-user zooms and much more.
 
 Dynamic Media Viewer extension automatically keeps the values of its Data Elements up to date.
 
-After you have defined it, a Data Element can be used in other places of Experience Platform Launch UI, using Data Element picker widget. In particular, Data Elements defined for the purposes of Dynamic Media Viewers tracking are referenced by Set Variables Action of Adobe Analytics extension in Rule (see below).
+After you have defined it, a Data Element can be used in other places of Experience Platform Tags UI, using Data Element picker widget. In particular, Data Elements defined for the purposes of Dynamic Media Viewers tracking are referenced by Set Variables Action of Adobe Analytics extension in Rule (see below).
 
-See [Data elements](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#ui) in the Experience Platform Launch User Guide.
+See [Data elements](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) in the Experience Platform Tags User Guide.
 
-#### About Rules in Experience Platform Launch {#about-rules-in-adobe-launch}
+#### About Rules in Experience Platform Tags {#about-rules-in-adobe-launch}
 
-A Rule in Experience Platform Launch is an agnostic configuration that defines three areas that make up a rule: *Events*, *Conditions*, and *Actions*:
+A Rule in Experience Platform Tags is an agnostic configuration that defines three areas that make up a rule: *Events*, *Conditions*, and *Actions*:
 
-* *Events* (if) tell Experience Platform Launch when to trigger a Rule.
-* *Conditions* (if) tell Experience Platform Launch what other restrictions to allow or disallow when triggering a Rule.
-* *Actions* (then) tell Experience Platform Launch what to do when a Rule is triggered.
+* *Events* (if) tell Experience Platform Tags when to trigger a Rule.
+* *Conditions* (if) tell Experience Platform Tags what other restrictions to allow or disallow when triggering a Rule.
+* *Actions* (then) tell Experience Platform Tags what to do when a Rule is triggered.
 
-Options that are available in the Events, Conditions, and Actions section depend on the extensions that are installed in Experience Platform Launch Property. The *Core* extension is preinstalled and is available out-of-the-box in any configuration. The extension provides several options for Events such as basic browser-level actions that include focus change, key presses, and form submissions. It also includes options for Conditions, such as cookie value, browser type, and more. For Actions, only the Custom Code option is available.
+Options that are available in the Events, Conditions, and Actions section depend on the extensions that are installed in Experience Platform Tags Property. The *Core* extension is preinstalled and is available out-of-the-box in any configuration. The extension provides several options for Events such as basic browser-level actions that include focus change, key presses, and form submissions. It also includes options for Conditions, such as cookie value, browser type, and more. For Actions, only the Custom Code option is available.
 
 For Adobe Analytics tracking, several other extensions must be installed, as described in [Installation and setup of extensions](#installing-and-setup-of-extensions). Specifically:
 
@@ -87,11 +87,11 @@ In the Actions section, it is required that you have a *Set Variables* action. T
 
 The *Set Variables* action must be followed by a *Send Beacon* action. The *Send Beacon* action actually sends data to the analytics tracking server. Both actions, *Set Variables* and *Send Beacon*, come from the Adobe Analytics extension.
 
-See [Rules](https://experienceleague.adobe.com/docs/launch/using/ui/rules.html#ui) in the Experience Platform Launch User Guide.
+See [Rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) in the Experience Platform Tags User Guide.
 
 #### Sample configuration {#sample-configuration}
 
-The following sample configuration within Experience Platform Launch demonstrates how to track an asset name on viewer load.
+The following sample configuration within Experience Platform Tags demonstrates how to track an asset name on viewer load.
 
 1. From the **[!UICONTROL Data Elements]** tab, define a data element `AssetName` that references `asset` parameter of the `LOAD` event from the Dynamic Media Viewers extension.
 
@@ -125,11 +125,11 @@ Currently, the support for video tracking is limited to "core playback" tracking
 
 ## Use the Dynamic Media Viewers extension {#using-the-dynamic-media-viewers-extension}
 
-As mentioned in [Use cases for the integration](#use-cases-for-the-integration), it is possible to track Dynamic Media viewers with the new Experience Platform Launch integration in Experience Manager Sites and by using embed code.
+As mentioned in [Use cases for the integration](#use-cases-for-the-integration), it is possible to track Dynamic Media viewers with the new Experience Platform Tags integration in Experience Manager Sites and by using embed code.
 
 ### Track Dynamic Media viewers in Experience Manager Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
-To track Dynamic Media viewers in Experience Manager Sites, all steps listed under the [Configure all the integration pieces](#configuring-all-the-integration-pieces) section must be performed. Specifically, you must create the IMS configuration and the Experience Platform Launch Cloud Configuration.
+To track Dynamic Media viewers in Experience Manager Sites, all steps listed under the [Configure all the integration pieces](#configuring-all-the-integration-pieces) section must be performed. Specifically, you must create the IMS configuration and the Experience Platform Tags Cloud Configuration.
 
 Following proper configuration, any Dynamic Media viewer that you add to a Sites page, using a WCM component supported by Dynamic Media, automatically tracks data to Adobe Analytics, or Adobe Analytics for Video, or both.
 
@@ -137,36 +137,36 @@ See [Add Dynamic Media Assets to Pages using Adobe Sites](/help/assets/dynamic-m
 
 ### Track Dynamic Media viewers using embed code {#tracking-dynamic-media-viewers-using-embed-code}
 
-Customers who do not use Experience Manager Sites, or embed Dynamic Media viewers into web pages outside of Experience Manager Sites, or both, can still use the Experience Platform Launch integration.
+Customers who do not use Experience Manager Sites, or embed Dynamic Media viewers into web pages outside of Experience Manager Sites, or both, can still use the Experience Platform Tags integration.
 
-Complete the configuration steps from the [Configure Adobe Analytics](#configuring-adobe-analytics-for-the-integration) and [Configure Experience Platform Launch](#configuring-adobe-launch-for-the-integration) sections. However, Experience Manager-related configuration steps are not needed.
+Complete the configuration steps from the [Configure Adobe Analytics](#configuring-adobe-analytics-for-the-integration) and [Configure Experience Platform Tags](#configuring-adobe-launch-for-the-integration) sections. However, Experience Manager-related configuration steps are not needed.
 
-Following proper configuration, you can add Experience Platform Launch support to a web page with a Dynamic Media viewer.
+Following proper configuration, you can add Experience Platform Tags support to a web page with a Dynamic Media viewer.
 
-See [Add the Experience Platform Launch Embed Code](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) to learn more about how to use Experience Platform Launch library embed code.
+See [Add the Experience Platform Tags Embed Code](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) to learn more about how to use Experience Platform Tags library embed code.
 
-To learn more about how to use the embed code feature of Experience Manager Dynamic Media, see [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+To learn more about how to use the embed code feature of Experience Manager Dynamic Media, see [Embedding the Video or Image Viewer on a web page](/help/assets/dynamic-media/embed-code.md).
 
 **Track Dynamic Media viewers using embed code:**
 
 1. Have a web page ready for embedding a Dynamic Media viewer.
-1. Obtain the embed code for Experience Platform Launch library by first logging in to Experience Platform Launch (see [Configure Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
+1. Obtain the embed code for Experience Platform Tags library by first logging in to Experience Platform Tags (see [Configure Experience Platform Tags](#configuring-adobe-launch-for-the-integration)).
 1. Select **[!UICONTROL Property]**, then select the **[!UICONTROL Environments]** tab.
 1. Pick up the Environment level that is relevant to the environment of the web page. Then, in the **[!UICONTROL Install]** column, select the box icon.
-1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Experience Platform Launch library embed code, along with the surrounding `<script/>` tags.
+1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Experience Platform Tags library embed code, along with the surrounding `<script/>` tags.
 
 ## Reference guide for the Dynamic Media Viewers extension {#reference-guide-for-the-dynamic-media-viewers-extension}
 
 ### About the Dynamic Media Viewers configuration {#about-the-dynamic-media-viewers-configuration}
 
-The Dynamic Media Viewer extension automatically integrates with the Experience Platform Launch library if the following conditions below are true:
+The Dynamic Media Viewer extension automatically integrates with the Experience Platform Tags library if the following conditions below are true:
 
-* Experience Platform Launch library global object ( `_satellite`) is present on the page.
+* Experience Platform Tags library global object ( `_satellite`) is present on the page.
 * The Dynamic Media Viewers extension function `_dmviewers_v001()` is defined on `_satellite`.
 
 * `config2=` viewer parameter is not specified, which means that viewer does not use legacy Analytics integration.
 
-Also, there is an option to explicitly disable Experience Platform Launch integration in the viewer by specifying `launch=0` parameter in the viewer's configuration. The default value of this parameter is `1`.
+Also, there is an option to explicitly disable Experience Platform Tags integration in the viewer by specifying `launch=0` parameter in the viewer's configuration. The default value of this parameter is `1`.
 
 ### Configure the Dynamic Media Viewers extension {#configuring-the-dynamic-media-viewers-extension}
 
@@ -197,7 +197,7 @@ Similarly, the values of Data Elements get automatically updated when the viewer
 
 Any Dynamic Media viewer has a unique identifier on the web page. The Data Element tracks the value itself, and the viewer that has populated the value. For example, suppose that there are several viewers on the same page, and an **[!UICONTROL AssetName]** Data Element that points to the **[!UICONTROL LOAD]** event and its "asset" argument. The **[!UICONTROL AssetName]** Data Element maintains a collection of asset names that are associated with each viewer loaded on the page.
 
-The exact value returned by the Data Element depends on the context. If the Data Element is requested in a Rule which was triggered by a Dynamic Media viewer event, then the Data Element value is returned for the viewer that initiated the Rule. And, the Data Element is requested in a Rule that was triggered by an Event from some other Platform Launch extension. At that point, the value of the Data Element comes from the viewer that was last to update this Data Element.
+The exact value returned by the Data Element depends on the context. If the Data Element is requested in a Rule which was triggered by a Dynamic Media viewer event, then the Data Element value is returned for the viewer that initiated the Rule. And, the Data Element is requested in a Rule that was triggered by an Event from some other Experience Platform Tags extension. At that point, the value of the Data Element comes from the viewer that was last to update this Data Element.
 
 **Consider the following sample setup:**
 
@@ -211,7 +211,7 @@ The exact value returned by the Data Element depends on the context. If the Data
 
 * **[!UICONTROL TrackKey]** Rule with the following:
 
-  * Uses the key press event from the Core Experience Platform Launch extension as a trigger.
+  * Uses the key press event from the Core Experience Platform Tags extension as a trigger.
   * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
 
 Now, assume the end user loads the web page with the two viewers. In *viewer1*, they zoom in to 50% scale; then, in *viewer2*, they zoom in to 25% scale. In *viewer1*, they pan image around, and finally press a key on the keyboard.
@@ -221,11 +221,11 @@ The end user's activity results in the following two tracking calls being made t
 * The first call occurs because **[!UICONTROL TrackPan]** Rule is triggered when the user pans in *viewer1*. That call sends 50% as a value of **[!UICONTROL ZoomScale]** Data Element because the Data Element knows that the Rule is triggered by *viewer1* and fetch the corresponding scale value;
 * The second call occurs because **[!UICONTROL TrackKey]** Rule is triggered when the user pressed a key on the keyboard. That call sends 25% as a value of **[!UICONTROL ZoomScale]** Data Element because the Rule was not triggered by the viewer. As such, the Data Element returns the most up-to-date value.
 
-The sample set up above also affects the life span of the Data Element value. The value of the Data Element managed by the Dynamic Media Viewer is stored in Experience Platform Launch library code even after the viewer itself is disposed on the web page. This functionality means that if there is a Rule that is triggered by a non-Dynamic Media Viewer extension and references such Data Element, the Data Element returns the last known value. Even if the viewer is no longer present on the web page.
+The sample set up above also affects the life span of the Data Element value. The value of the Data Element managed by the Dynamic Media Viewer is stored in Experience Platform Tags library code even after the viewer itself is disposed on the web page. This functionality means that if there is a Rule that is triggered by a non-Dynamic Media Viewer extension and references such Data Element, the Data Element returns the last known value. Even if the viewer is no longer present on the web page.
 
-In any case, values of Data Elements driven by Dynamic Media Viewers are not stored on the local storage or on the server; instead, they are kept only on the client-side Experience Platform Launch library. Values of such Data Element disappear when the web page reloads.
+In any case, values of Data Elements driven by Dynamic Media Viewers are not stored on the local storage or on the server; instead, they are kept only on the client-side Experience Platform Tags library. Values of such Data Element disappear when the web page reloads.
 
-Generally, the Data Element editor supports [storage duration selection](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element). However, Data Elements that use the Dynamic Media Viewers extension only supports the storage duration option of **[!UICONTROL None]**. Setting any other value is possible in the user interface, but the Data Element behavior is not defined in this case. The extension manages the value of the Data Element on its own: the Data Element that maintains the value of the viewer event argument during the entire viewer life cycle.
+Generally, the Data Element editor supports [storage duration selection](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element). However, Data Elements that use the Dynamic Media Viewers extension only supports the storage duration option of **[!UICONTROL None]**. Setting any other value is possible in the user interface, but the Data Element behavior is not defined in this case. The extension manages the value of the Data Element on its own: the Data Element that maintains the value of the viewer event argument during the entire viewer life cycle.
 
 ### About Rules in the Dynamic Media Viewers extension {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -397,19 +397,19 @@ The following table lists Dynamic Media Viewer events and their supported argume
 
 Adobe recommends that you thoroughly review all documentation before this section so you understand the complete integration.
 
-This section explains the configuration steps that are necessary to integrate Dynamic Media viewers with Adobe Analytics and Adobe Analytics for Audio and Video. While use of the Dynamic Media Viewers extension for other purposes in Experience Platform Launch is possible, such scenarios not covered in this documentation.
+This section explains the configuration steps that are necessary to integrate Dynamic Media viewers with Adobe Analytics and Adobe Analytics for Audio and Video. While use of the Dynamic Media Viewers extension for other purposes in Experience Platform Tags is possible, such scenarios not covered in this documentation.
 
 You are going to use the following Adobe products to configure your integration:
 
 * Adobe Analytics - used to configure tracking variables and reports.
-* Experience Platform Launch - used to define a Property, one or more Rules, and one or more Data Elements to enable viewer tracking.
+* Experience Platform Tags - used to define a Property, one or more Rules, and one or more Data Elements to enable viewer tracking.
 
 Also, if this integration solution is used with Experience Manager Sites, the following configuration must be done:
 
-* Adobe I/O Console - integration is created for Experience Platform Launch.
-* Experience Manager author node - IMS configuration and Experience Platform Launch cloud configuration.
+* Adobe I/O Console - integration is created for Experience Platform Tags.
+* Experience Manager author node - IMS configuration and Experience Platform Tags cloud configuration.
 
-As part of the configuration, be sure you have access to a company in Adobe Experience Cloud that has Adobe Analytics and Experience Platform Launch already enabled.
+As part of the configuration, be sure you have access to a company in Adobe Experience Cloud that has Adobe Analytics and Experience Platform Tags already enabled.
 
 ## Configure Adobe Analytics for the integration {#configuring-adobe-analytics-for-the-integration}
 
@@ -423,7 +423,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
 
 **To configure Adobe Analytics for the integration:**
 
-1. Start by accessing Adobe Analytics from the Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). On the menu bar, select the Solutions icon (a three by three table of dots) near the upper-right corner of the page, then selecting **[!UICONTROL Analytics]**.
+1. Start by accessing Adobe Analytics from the Experience Cloud [home page](https://experience.adobe.com/#/home). On the menu bar, select the Solutions icon (a three by three table of dots) near the upper-right corner of the page, then selecting **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -470,7 +470,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
 
 1. Generally, setting up a Report in Adobe Analytics is driven by specific project needs. As such, detailed report setup is beyond the scope for this integration.
 
-   It is, however, enough to know that the Custom Traffic reports become automatically available in Adobe Analytics after you set up Custom Traffic variables in **[Set up Adobe Analytics variables](#setting-up-adobe-analytics-variables)**.
+   It is, however, enough to know that the Custom Traffic reports become automatically available in Adobe Analytics after you set up Custom Traffic variables in **[Setup Adobe Analytics variables](#setting-up-adobe-analytics-variables)**.
 
    For example, the report for **[!UICONTROL Viewer asset (prop 30)]** variable is available from the Reports menu under **[!UICONTROL Custom Traffic]** > **[!UICONTROL Custom Traffic 21-30]** > **[!UICONTROL Viewer asset (prop 30)]**.
 
@@ -478,32 +478,32 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
 
    ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
-## Configure Experience Platform Launch for the integration {#configuring-adobe-launch-for-the-integration}
+## Configure Experience Platform Tags for the integration {#configuring-adobe-launch-for-the-integration}
 
-After you configure Experience Platform Launch, the following will be set up for the integration:
+After you configure Experience Platform Tags, the following will be set up for the integration:
 
 * The creation of a new Property to keep all your configurations together.
 * The installation and setup of extensions. The client-side code of all extensions installed in the Property is compiled together into a library. This library is used by the web page later.
 * Configuration of Data Elements and Rules. This configuration defines what data to acquire from the Dynamic Media viewers, when to trigger the tracking logic, and where to send the viewer's data in Adobe Analytics.
 * Publishing of the library.
 
-**To configure Experience Platform Launch for the integration:**
+**To configure Experience Platform Tags for the integration:**
 
-1. Start by accessing Experience Platform Launch from the Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). On the menu bar, select the Solutions icon (three by three table of dots) near the upper-right corner of the page, then select **[!UICONTROL Launch]**.
+1. Start by accessing Experience Platform Tags from the Experience Cloud [home page](https://experience.adobe.com/#/home). On the menu bar, select the Solutions icon (three by three table of dots) near the upper-right corner of the page, then select **[!UICONTROL Tags]**.
 
-   You can also [open Experience Platform Launch directly](https://launch.adobe.com/).
+   You can also [open Experience Platform Tags directly](https://launch.adobe.com/).
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### Create a property in Experience Platform Launch {#creating-a-property-in-adobe-launch}
+### Create a property in Experience Platform Tags {#creating-a-property-in-adobe-launch}
 
-A property in Experience Platform Launch is a named configuration that keeps all your settings together. A library of the configuration settings is generated and published to different environment levels (development, staging, and production).
+A property in Experience Platform Tags is a named configuration that keeps all your settings together. A library of the configuration settings is generated and published to different environment levels (development, staging, and production).
 
-See also [Create a Launch Property](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
+See also [Create a Tags property](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
 
-**To create a property in Experience Platform Launch:**
+**To create a property in Experience Platform Tags:**
 
-1. In Experience Platform Launch, select **[!UICONTROL New Property]**.
+1. In Experience Platform Tags, select **[!UICONTROL New Property]**.
 1. In the **[!UICONTROL Create Property]** dialog box, in the **[!UICONTROL Name]** field, type a descriptive name, such as the title of your website. For example, `DynamicMediaViewersProp.`
 1. In the **[!UICONTROL Domains]** field, enter your website's domain.
 1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use&mdash;in this case, *Dynamic Media Viewers*&mdash;is not yet released.
@@ -516,7 +516,7 @@ See also [Create a Launch Property](https://experienceleague.adobe.com/docs/laun
 
 ### Install and setup of extensions {#installing-and-setup-of-extensions}
 
-All available extensions in Experience Platform Launch are listed under the **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**.
+All available extensions in Experience Platform Tags are listed under the **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**.
 
 To install an extension, select **[!UICONTROL Install]**. If needed, perform a one-time extension configuration, then select **[!UICONTROL Save]**.
 
@@ -526,7 +526,7 @@ Where required, the following extensions must be installed and configured:
 
 No additional configuration is needed, accept for any proposed values. When you are done, be sure you select **[!UICONTROL Save]**.
 
-See [Experience Cloud ID Service Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref).
+See [Experience Cloud Identity Service extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
 
 * (Required) *Adobe Analytics* extension
 
@@ -546,7 +546,7 @@ On the **[!UICONTROL Install Extension]** page, expand **[!UICONTROL General]**,
 
 Select **[!UICONTROL Save]**.
 
-See [Adobe Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
+See [Adobe Analytics Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
 
 * (Optional. Required only if video tracking is needed) *Adobe Media Analytics for Audio and Video* extension
 
@@ -554,15 +554,15 @@ Fill in the tracking server field. The tracking server for *Adobe Media Analytic
 
 All other fields are optional.
 
-See [Adobe Media Analytics for Audio and Video Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref).
+See [Adobe Media Analytics for Audio and Video extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html).
 
 * (Required) *Dynamic Media Viewers* extension
 
 Select **[!UICONTROL enable Adobe Analytics for Video]** to enable (turn on) Video Heartbeat tracking.
 
-As of this writing, the *Dynamic Media Viewers* extension is only available if the Experience Platform Launch Property is created for development.
+As of this writing, the *Dynamic Media Viewers* extension is only available if the Experience Platform Tags Property is created for development.
 
-See [Create a property in Experience Platform Launch](#creating-a-property-in-adobe-launch).
+See [Create a property in Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
 After the extensions are installed and setup, at minimum, the following five extensions (four if you are not tracking video) will be listed in the Extensions &gt; Installed area.
 
@@ -570,21 +570,21 @@ After the extensions are installed and setup, at minimum, the following five ext
 
 ### Set up Data Elements and Rules {#setting-up-data-elements-and-rules}
 
-In Experience Platform Launch, create Data Elements and Rules that are necessary for tracking Dynamic Media viewers.
+In Experience Platform Tags, create Data Elements and Rules that are necessary for tracking Dynamic Media viewers.
 
-See [How data and event tracking works in the integration](#how-data-and-event-tracking-works-in-the-integration) for an overview of tracking with Experience Platform Launch.
+See [How data and event tracking works in the integration](#how-data-and-event-tracking-works-in-the-integration) for an overview of tracking with Experience Platform Tags.
 
-See [Sample configuration](#sample-configuration) for a sample configuration in Experience Platform Launch that demonstrates how to track an asset name on viewer load.
+See [Sample configuration](#sample-configuration) for a sample configuration in Experience Platform Tags that demonstrates how to track an asset name on viewer load.
 
 See [Configure the Dynamic Media Viewers extension](#configuring-the-dynamic-media-viewers-extension) for in-depth information about the extension's capabilities.
 
 ### Publish a library {#publishing-a-library}
 
-To change in the Experience Platform Launch configuration (including Property, Extensions, Rules, and Data Elements set up), you must *publish* such changes. Publishing in Experience Platform Launch is performed from the Publishing tab under the Property configuration.
+To change in the Experience Platform Tags configuration (including Property, Extensions, Rules, and Data Elements set up), you must *publish* such changes. Publishing in Experience Platform Tags is performed from the Publishing tab under the Property configuration.
 
-Platform Launch can potentially have multiple Development environments, one Staging environment, and one Production environment. By default the Platform Launch Cloud Configuration in Experience Manager points the Experience Manager author node to the Stage environment of Platform Launch. The Experience Manager Publish node points to the Production environment of Platform Launch. This arrangement means that with the default Experience Manager settings, it is necessary to publish the Platform Launch library to the Staging environment. Doing so lets you use it in Experience Manager author. You can then publish it into the Production environment so that it can be used in Experience Manager publish.
+Experience Platform Tags can potentially have multiple Development environments, one Staging environment, and one Production environment. By default the Experience Platform Tags Cloud Configuration in Experience Manager points the Experience Manager author node to the Stage environment of Platform Tags. The Experience Manager Publish node points to the Production environment of Experience Platform Tags. This arrangement means that with the default Experience Manager settings, it is necessary to publish the Experience Platform Tags library to the Staging environment. Doing so lets you use it in Experience Manager author. You can then publish it into the Production environment so that it can be used in Experience Manager publish.
 
-See [Environments](https://experienceleague.adobe.com/docs/launch/using/publish/environments/environments.html#environment-types) for more information about Experience Platform Launch environments.
+See [Environments](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) for more information about Experience Platform Tags environments.
 
 Publishing a library involves the following two steps:
 
@@ -593,7 +593,7 @@ Publishing a library involves the following two steps:
 
 #### Add and build a new library {#adding-and-building-a-new-library}
 
-1. The first time you open the Publishing tab in Experience Platform Launch, the library list is empty.
+1. The first time you open the Publishing tab in Experience Platform Tags, the library list is empty.
 
    In the left column, select **[!UICONTROL Add New Library]**.
 
@@ -615,7 +615,7 @@ Publishing a library involves the following two steps:
 
    >[!NOTE]
    >
-   >The next time you change your Experience Platform Launch configuration, go to the **[!UICONTROL Publishing]** tab under the **[!UICONTROL Property]** configuration, then select your previously created library.
+   >The next time you change your Experience Platform Tags configuration, go to the **[!UICONTROL Publishing]** tab under the **[!UICONTROL Property]** configuration, then select your previously created library.
    >
    >
    >From the library publishing screen, select **[!UICONTROL Add All Changed Resources]**, then select **[!UICONTROL Save & Build for Development]**.
@@ -642,7 +642,7 @@ Publishing a library involves the following two steps:
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   See [Publishing](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish) for more information about the publishing process in Experience Platform Launch.
+   See [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) for more information about the publishing process in Experience Platform Tags.
 
 ## Configure Adobe Experience Manager for the integration {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -657,7 +657,7 @@ Prerequisites:
 The Experience Manager configuration consists of the following two major steps:
 
 * Configuration of Experience Manager IMS.
-* Configuration of Experience Platform Launch Cloud.
+* Configuration of Experience Platform Tags Cloud.
 
 ### Configure Experience Manager IMS {#configuring-aem-ims}
 
@@ -692,7 +692,7 @@ The Experience Manager configuration consists of the following two major steps:
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. On the second **[!UICONTROL Create a new integration]** page, enable (turn on) the **[!UICONTROL Experience Platform Launch API]** radio button. In the lower-right corner of the page, select **[!UICONTROL Continue]**.
+1. On the second **[!UICONTROL Create a new integration]** page, enable (turn on) the **[!UICONTROL Experience Platform Tags API]** radio button. In the lower-right corner of the page, select **[!UICONTROL Continue]**.
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -704,9 +704,9 @@ The Experience Manager configuration consists of the following two major steps:
 
     * In the **[!UICONTROL Public key certificates]** area, upload your public key file (`*.crt`) that you downloaded previously in these steps.
 
-    * Under the **[!UICONTROL Select a role for Experience Platform Launch API]** heading, select **[!UICONTROL Admin]**.
+    * Under the **[!UICONTROL Select a role for Experience Platform Tags API]** heading, select **[!UICONTROL Admin]**.
 
-    * Under the **[!UICONTROL Select one or more product profiles for Experience Platform Launch API]** heading, select the product profile named **[!UICONTROL Launch - <your_company_name>]**.
+    * Under the **[!UICONTROL Select one or more product profiles for Experience Platform Tags API]** heading, select the product profile named **[!UICONTROL Tags - <your_company_name>]**.
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
@@ -726,7 +726,7 @@ The Experience Manager configuration consists of the following two major steps:
 
 1. Return to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page that you left open previously. In the upper-right corner of the page, select **[!UICONTROL Next]** to open the **[!UICONTROL Account]** page in the **[!UICONTROL Adobe IMS Technical Account Configuration]** window.
 
-   (If you closed the page earlier, return to Experience Manager author, then go to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Select **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Experience Platform Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.
+   (If you closed the page earlier, return to Experience Manager author, then go to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Select **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Experience Platform Tags]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS Technical Account Configuration - Certificate page_
@@ -776,39 +776,39 @@ The Experience Manager configuration consists of the following two major steps:
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## Configure Experience Platform Launch Cloud for the integration {#configuring-adobe-launch-cloud-for-the-integration}
+## Configure Experience Platform Tags Cloud for the integration {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. In Experience Manager author, near the upper-left corner, select the Tools icon (hammer), then go to **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Launch Configurations]**.
+1. In Experience Manager author, near the upper-left corner, select the Tools icon (hammer), then go to **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Tags Configurations]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-1. On the **[!UICONTROL Experience Platform Launch Configurations]** page, in the left panel, select an Experience Manager Site for which you want to apply your Experience Platform Launch Configuration.
+1. On the **[!UICONTROL Experience Platform Tags Configurations]** page, in the left panel, select an Experience Manager Site for which you want to apply your Experience Platform Tags Configuration.
 
-   For explanation purposes only, the **[!UICONTROL We.Retail]** Site is selected in the screenshot below.
+   For sample purposes only, the **`We.Retail`** Site is selected in the screenshot below.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
 1. Near the upper-left corner of the page, select **[!UICONTROL Create]**.
-1. On the **[!UICONTROL General]** page (1/3 pages) of the **[!UICONTROL Create Experience Platform Launch Configuration]** window, fill in the following fields:
+1. On the **[!UICONTROL General]** page (1/3 pages) of the **[!UICONTROL Create Experience Platform Tags Configuration]** window, fill in the following fields:
 
-    * **[!UICONTROL Title]** - Enter a descriptive configuration title. For example, `We.Retail Launch cloud configuration`.
+    * **[!UICONTROL Title]** - Enter a descriptive configuration title. For example, `We.Retail Tags cloud configuration`.
 
     * **[!UICONTROL Associated Adobe IMS Configuration]** - Select the IMS configuration that you created earlier in [Configure Experience Manager IMS](#configuring-aem-ims).
 
     * **[!UICONTROL Company]** - From the **[!UICONTROL Company]** drop-down list, select your Experience Cloud company. The list populates automatically.
 
-    * **[!UICONTROL Property]** - From the Property drop-down list, select your Experience Platform Launch property that you created previously. The list populates automatically.
+    * **[!UICONTROL Property]** - From the Property drop-down list, select your Experience Platform Tags property that you created previously. The list populates automatically.
 
    After completing all the fields, your **[!UICONTROL General]** page will look similar to the following:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. Near the upper-left corner, select **[!UICONTROL Next]**.
-1. On the **[!UICONTROL Staging]** page (2/3 pages) of the **[!UICONTROL Create Experience Platform Launch Configuration]** window, fill in the following field:
+1. On the **[!UICONTROL Staging]** page (2/3 pages) of the **[!UICONTROL Create Experience Platform Tags Configuration]** window, fill in the following field:
 
-   In the **[!UICONTROL Library URI]** field, check the location of the staging version of your Experience Platform Launch library. Experience Manager populates this field automatically.
+   In the **[!UICONTROL Library URI]** (Uniform Resource Identifier) field, check the location of the staging version of your Experience Platform Tags library. Experience Manager populates this field automatically.
 
-   For explanation purposes only, this step uses Experience Platform Launch libraries that are deployed to Adobe CDN.
+   For explanation purposes only, this step uses Experience Platform Tags libraries that are deployed to Adobe CDN.
 
    >[!NOTE]
    >
@@ -822,19 +822,19 @@ The Experience Manager configuration consists of the following two major steps:
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
 1. Near the upper-right corner, select **[!UICONTROL Next]**.
-1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Experience Platform Launch Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
+1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Experience Platform Tags Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
 1. Near the upper-right corner, select **[!UICONTROL Create]**.
 
-   Your new Experience Platform Launch Cloud Configuration is now created and listed next to your web site.
+   Your new Experience Platform Tags Cloud Configuration is now created and listed next to your web site.
 
-1. Select your new Experience Platform Launch Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, select **[!UICONTROL Publish]**.
+1. Select your new Experience Platform Tags Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, select **[!UICONTROL Publish]**.
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
-Currently, Experience Manager author does not support the integration of Dynamic Media Viewers with Experience Platform Launch.
+Currently, Experience Manager author does not support the integration of Dynamic Media Viewers with Experience Platform Tags.
 
-It is, however, supported in the Experience Manager publish node. Using the default settings of Experience Platform Launch Cloud Configuration, Experience Manager publish uses the production environment of Experience Platform Launch. As such, it is necessary to push Experience Platform Launch library updates from Development up to the Production environment each time during the test.
+It is, however, supported in the Experience Manager publish node. Using the default settings of Experience Platform Tags Cloud Configuration, Experience Manager publish uses the production environment of Experience Platform Tags. As such, it is necessary to push Experience Platform Tags library updates from Development up to the Production environment each time during the test.
 
-It is possible to work around this limitation. Specify the Development or Staging URL of Experience Platform Launch library in the Experience Platform Launch Cloud configuration for Experience Manager publish above. Doing so makes the Experience Manager publish node use the Development or Staging version of Experience Platform Launch library.
+It is possible to work around this limitation. Specify the Development or Staging URL of Experience Platform Tags library in the Experience Platform Tags Cloud configuration for Experience Manager publish above. Doing so makes the Experience Manager publish node use the Development or Staging version of Experience Platform Tags library.
 
-See [Integrate Experience Platform Launch and Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations) for more information about setting up Experience Platform Launch Cloud Configuration.
+See [Integrate Experience Platform Tags and Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations) for more information about setting up Experience Platform Tags Cloud Configuration.
