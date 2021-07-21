@@ -11,29 +11,23 @@ Onboarding is the process during which a designated System Administrator sets up
 
 ## Objective {#objective}
 
-As a System Administrator, this document summarizes the very first steps in your Onboarding journey. 
+As a System Administrator, this document summarizes the very first steps in your onboarding journey. 
 
 After reading this section you should be able to:
 
-* Understand what is Admin Console
 * How to access and login to Admin Console
 * Review your privileges as a System Administrator via Admin Console
 
-## Understanding Admin Console {#login-admin-console}
-
-After signing the contract, Adobe Managed Services (AMS) starts the onboarding of the customer. 
-
-Once your contract has been signed, Adobe will complete provisioning for your organization following which your organization’s System Administrator will receive a welcome email allowing them to do System Administrator tasks such as adding users and assigning them to roles.
-
-The Adobe Admin console is a central place to administer and manage your Adobe product licenses and users. Your system administrator will sign in to the Adobe Admin console to add or remove users and more. Click [here](https://adminconsole.adobe.com/) to access the Adobe Admin console. 
+>[!NOTE]
+>Before you start the onboarding process, please ensure to learn about Adobe Admin Console. The Adobe Admin console is a central place to administer and manage your Adobe product licenses and users. Your system administrator will sign in to the Adobe Admin console to add or remove users and more. See [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) to learn more.
 
 
-## Steps for Logging in to Admin Console {#steps-admin-console}
+## Logging in to Admin Console {#steps-admin-console}
 
 Follow the steps below to navigate to Admin Console and review your System Administrator role from the Admin Console:
 
 >[!NOTE]
->You must be a System Administrator in order to be able to complete the following steps successfully.
+>You must be a System Administrator in order to to complete the following steps successfully.
 
 1. Click on **Get Started** from your welcome email, as shown in the figure below, to navigate to Admin Console or navigate directly to Admin Console from [here](https://adminconsole.adobe.com).
 
