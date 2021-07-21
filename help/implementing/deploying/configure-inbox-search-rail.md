@@ -90,7 +90,7 @@ The configuration changes reflect when you open the Filters page. The filter lab
 
 ## Viewing Predicates {#view-predicates}
 
-You can view these predicates using the Filters page. To view the predicates, select **[!UICONTROL Filter]** on the Inbox page. The predicates display in the left pane. You can specify the search criteria to filter Inbox items. 
+You can view the predicates using the Filters page. To view the predicates, select **[!UICONTROL Filter]** on the Inbox page. The predicates display in the left pane. You can then specify the search criteria to filter Inbox items. 
 
 ![Filters page](./assets/apply-filters.png)
 
