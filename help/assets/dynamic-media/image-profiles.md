@@ -157,9 +157,15 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 #### Apply Dynamic Media Image Profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**. Then navigate to the parent folder of the folder to which you want to apply an image profile.
-1. On the folder, select the check mark to select it and then select **[!UICONTROL Properties]**.
-1. Select the **[!UICONTROL Image Profiles]** tab. From the **[!UICONTROL Profile Name]** drop-down list, select the profile, then select **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**.
+1. Navigate to a *folder* (not an asset) to which you want to apply an image profile.
+1. Depending on the view you are in, do one of the following:
+   * In Card View, hover the pointer on the folder, then select the check mark to select it.
+   * In Column View or List View, select the check box to the left of the folder name.
+1. On the toolbar select **[!UICONTROL Properties]**.
+1. Select the **[!UICONTROL Dynamic Media Processing]** tab.
+1. Under **[!UICONTROL Image Profile]**, from the **[!UICONTROL Profile Name]** drop-down list, select the profile to apply.
+1. Near the upper-right corner of the page, select **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
