@@ -102,7 +102,7 @@ To publish a page with Quick Publish:
 
 #### Manage Publication {#manage-publication}
 
-**Manage Publication** offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
+**Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
 
 To publish or unpublish a page using Manage Publication:
 
@@ -113,13 +113,14 @@ To publish or unpublish a page using Manage Publication:
 1. The **Manage Publication** wizard starts. The first step, **Options**, allows you to:
 
    * Choose to publish or unpublish the selected pages.
+
    * Choose to take that action now or at a later date.
 
-   Publishing later starts a workflow to publish the selected page or pages at the specified time. Conversely, unpublishing later starts a workflow to unpublish the selected page or pages at a specific time.
+     Publishing later starts a workflow to publish the selected page or pages at the specified time. Conversely, unpublishing later starts a workflow to unpublish the selected page or pages at a specific time.
 
-   >[!NOTE]
-   >
-   >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
+     >[!NOTE]
+     >
+     >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
 
    ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -129,31 +130,21 @@ To publish or unpublish a page using Manage Publication:
 
    ![Manage Publication Scope](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
+   **Add Content**
+
    You can use the **Add Content** button to add additional pages to the list of pages to be published in case you neglected to select one before starting the Manage Publication wizard.
 
-   Clicking the Add Content button starts the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) to allow content selection.
+   Selecting the **Add Content** button starts the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) to allow content selection.
 
    Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
-   Back in the wizard, you can select an item in the list to configure its further options such as:
+   **Remove Selection**
 
-   * Include its children.
-   * Remove it from the selection.
-   * Manage its published references.
+   Back in the wizard, you can select an item in the list to remove it from the selection.
 
    ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   Clicking **Include Children** opens a dialog box allowing you to:
-
-   * Include only immediate children.
-   * Include only modified pages.
-   * Include only already published pages.
-
-   Click **Add** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
-
-   ![Manage Publication including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
-
-   Returning to the wizard you see the pages added based on your choice of options in the Include Children dialog.
+   **Published References**
 
    You can view and modify the references to be published or unpublished for a page by selecting it and then clicking the **Published References** button.
 
@@ -167,11 +158,29 @@ To publish or unpublish a page using Manage Publication:
 
    ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
+   **Include Children**
+   
+   >[!NOTE]
+   >
+   >See [Publishing and Unpublishing a Tree](#publishing-and-unpublishing-a-tree)
+   
+   Clicking **Include Children** opens a dialog box allowing you to:
+
+   * Include only immediate children.
+   * Include only modified pages.
+   * Include only already published pages.
+
+   Activate the required options and confirm with **OK** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
+
+   ![Manage Publication including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+
 1. Click **Publish** to complete.
 
    Back in the sites console a notification message will confirm the publication.
 
 1. If the published pages are associated with workflows, they may be shown in a final **Workflows** step of the publication wizard.
+
+   ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
 
    >[!NOTE]
    >
@@ -213,9 +222,9 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
    >
    >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
 
-   ![Unpublishing - Scope](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
-
 1. To complete the un-publication, continue through the wizard as you would to [publish the page](#manage-publication).
+
+   ![Unpublishing - Scope](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## Publishing and Unpublishing a Tree {#publishing-and-unpublishing-a-tree}
 
@@ -229,16 +238,13 @@ You can use the [Manage Publication](#manage-publication) option on the sites co
 
    ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. In the **Include Children** dialog, un-check the options:
+1. In the **Include Children** dialog select **Include Children**, then activate the required options.
 
-   * Include only immediate children
-   * Include only already published pages
-
-   These options are selected by default, so you must remember to unselect them. Click **Add** to confirm and add the content to the publication/un-publication.
+   These options are selected by default, so you must remember to unselect them. Confirm the selection with **OK** to confirm and add the content to the publication/un-publication.
 
    ![Including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
-1. The **Manage Publication** wizard lists the content of the tree for review. You can further customize the selection by adding additional pages or removing those selected.
+1. In the **Manage Publication** wizard you can further customize the selection by adding additional pages or removing those selected.
 
    Remember that you can also review the references to be published via the **Published References** option.
 
