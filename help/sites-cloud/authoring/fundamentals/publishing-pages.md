@@ -205,7 +205,7 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
 1. Select the page or pages in the sites console and click on the **Manage Publication** button.
 1. The **Manage Publication** wizard starts. In the first step, **Options**, select to **Unpublish** instead of the default option of **Publish**.
 
-   ![Unpublishing](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![Unpublishing - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    Just as publishing later starts a workflow to publish this version of the page at the specified time, deactivating later starts a workflow to unpublish the selected page or pages at a specific time.
 
@@ -213,7 +213,7 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
    >
    >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
 
-   ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
+   ![Unpublishing - Scope](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 1. To complete the un-publication, continue through the wizard as you would to [publish the page](#manage-publication).
 
@@ -236,11 +236,9 @@ You can use the [Manage Publication](#manage-publication) option on the sites co
 
    These options are selected by default, so you must remember to unselect them. Click **Add** to confirm and add the content to the publication/un-publication.
 
-   ![Including children when un-publishing](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![Including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
 1. The **Manage Publication** wizard lists the content of the tree for review. You can further customize the selection by adding additional pages or removing those selected.
-
-   ![Manage Publication options](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
 
    Remember that you can also review the references to be published via the **Published References** option.
 
