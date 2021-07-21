@@ -13,13 +13,14 @@ Congratulations on starting your journey with AEM as a Cloud Service! We are exc
 
 This guide leads you through the most important topics so that on completion the reader will:
 
-* Have a full understanding of what to expect during the AEMaaCS onboarding journey.
+* Have a full understanding of what to expect during the AEM as a Cloud Service onboarding journey.
 * Have enabled your team to get up and running and take the first steps towards learning how to author and develop content for your AEM as a Cloud Service application.
 
 This means:
-   * Your team is set up and has access to cloud resources,
-   * AEM Authors will have access to AEM as a Cloud Service,
-   * AEM Developers and Deployment Managers will have access to AEM as a Cloud Service.
+
+* Your team is set up and has access to cloud resources,
+* AEM Authors will have access to AEM as a Cloud Service,
+* AEM Developers and Deployment Managers will have access to AEM as a Cloud Service.
 
 
 ## Audience {#audience}
@@ -27,7 +28,6 @@ This means:
 Onboarding is the process during which a designated System Administrator sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
 
 The onboarding journey is illustrated below and each step in the journey is described in detail in the following sections.
-
 
 ## Exploring Onboarding Journey {#exploring-onboarding-journey}
 
