@@ -1,6 +1,6 @@
 ---
-title: Configuring Search Forms
-description: Learn how to configure Search Forms.
+title: How to configure search filters for Inbox?
+description: Learn how to configure search filters for Inbox items.
 ---
 # Configure search filters for Inbox {#configure-search-filters-inbox}
 
@@ -88,7 +88,7 @@ To configure a Custom Column Options Predicate:
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the Custom Column Option Predicate. [!DNL Experience Manager] applies the search criteria defined in step 6 on the column name specified in step 3 and returns the Inbox items.
 
-## Viewing Predicates {#view-predicates}
+## View Predicates {#view-predicates}
 
 You can view the predicates using the Filters page. To view the predicates, select **[!UICONTROL Filter]** on the Inbox page. The predicates display in the left pane. You can then specify the search criteria to filter Inbox items. 
 
