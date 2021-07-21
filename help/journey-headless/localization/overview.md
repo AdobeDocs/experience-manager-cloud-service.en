@@ -50,3 +50,11 @@ Although you can go directly to a particular part of the journey, many concepts 
 ## What's Next {#what-is-next}
 
 You are now ready to get started on your Adobe headless localization journey. We encourage you to continue on to the next part of the journey and read the article [Learn about headless content and how to localize it in AEM](learn-about.md)
+
+## Additional Resources {#additional-resources}
+
+Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+
+As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
+
+* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
