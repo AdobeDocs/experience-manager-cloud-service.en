@@ -18,7 +18,7 @@ The following are the available predicate types for Inbox:
 
 * Options Property Predicate
 
-## Creating or opening a customized configuration {#creating-opening-customized-configuration}
+## Create or open a customized configuration {#creating-opening-customized-configuration}
 
 1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
 
@@ -26,7 +26,7 @@ The following are the available predicate types for Inbox:
 1. Incorporate the predicate configuration changes using **[!UICONTROL Edit Search Form]**.
 1. Select **[!UICONTROL Done]** to save the configuration.
 
-## Range Predicate {#range-predicate}
+## Configure Range Predicate {#range-predicate}
 
 You can filter Inbox items to search for a number range within an Inbox column using the Range Predicate. You can also choose to include decimal values for numbers.
 
@@ -40,7 +40,7 @@ To configure a Range Predicate:
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label with an option to define the maximum and minimum values. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
 
-## Text Predicate {#text-predicate}
+## Configure Text Predicate {#text-predicate}
 
 Filter Inbox items to search for a text string within an Inbox column using the Text Predicate.
 
@@ -54,7 +54,7 @@ To configure a Text Predicate:
 
 The configuration changes reflect when you open the Filters page. [!DNL Experience Manager] applies the search text specified in step 4 on the column name specified in step 3 and returns the Inbox items.
 
-## Date Range Predicate {#date-range-predicate}
+## Configure Date Range Predicate {#date-range-predicate}
 
 You can filter Inbox items to search for a date range within an Inbox column using the Date Range Predicate.
 
@@ -69,7 +69,7 @@ To configure a Date Range Predicate:
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the date range filter along with the start date and end date labels specified in step 5. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
 
-## Custom Column Options Predicate {#custom-column-options-predicate}
+## Configure Custom Column Options Predicate {#custom-column-options-predicate}
 
 You can filter Inbox items to search for a custom option within an Inbox column using the Custom Column Options Predicate.
 
