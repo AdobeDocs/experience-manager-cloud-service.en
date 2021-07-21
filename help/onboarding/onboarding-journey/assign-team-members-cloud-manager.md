@@ -1,12 +1,12 @@
 ---
-title: Assigning Team Members to Cloud  Manager Product Profiles 
-description: Follow this page to learn how to assign team members to Cloud  Manager Product profiles.
+title: Assigning Team Members to Cloud Manager Product Profiles 
+description: Follow this page to learn how to assign team members to Cloud Manager Product profiles
 hide: yes
 hidefromtoc: yes
 index: no
 ---
 
-# Assigning Team Members to Cloud  Manager Product Profiles {#assign-team-members}
+# Assigning Team Members to Cloud Manager Product Profiles {#assign-team-members}
 
 Once you have learnt how to login to Admin Console and viewed your privileges as a System  Administrator, you are now ready to assign team members to Cloud Manager Product profiles.
 
