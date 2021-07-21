@@ -79,8 +79,12 @@ To configure Custom Column Options Predicate:
 1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Custom Column Options Predicate]** to the form.
 1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
 1. Specify the label for the custom column options filter in the **[!UICONTROL Filter Label]** field.
-1. Specify the start date and end date labels for the filter.
+1. Select the **[!UICONTROL Single Select]** checkbox to enable the selection of just one option while applying filter on an Inbox column.
+1. In the **[!UICONTROL Add Options]** section:
+   1. Select **[!UICONTROL Manual]** to define the filter search options manually. Tap **[!UICONTROL Add Filter Options]** to define the first option. Specify the label for the column option and the option value text to search for. For example, if you want to search for **Female** as a value in an Inbox column, you can specify **F** as label for the column option and add **Female** as the option value text. Similarly, you can add more filter options.
+   1. Select **[!UICONTROL JSON Path]** to define options using a JSON file path.
+   1. Select **[!UICONTROL CRX Options Path]** to define options using the CRX repository paths. Tap **[!UICONTROL Add Option Paths]** to add multiple paths.
 1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
 
-The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the date range filter along with the start date and end date labels specified in step 5. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
+The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the Custom Column Option Predicate. [!DNL Experience Manager] applies the search criteria defined in step 6 on the column name specified in step 3 and returns the Inbox items.
 
