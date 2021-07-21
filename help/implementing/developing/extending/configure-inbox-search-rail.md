@@ -44,7 +44,7 @@ The configuration changes reflect when you open the Filters page. The filter lab
 
 Filter Inbox items to search for a text string within an Inbox column using the Text Predicate.
 
-To configure Text Predicate:
+To configure a Text Predicate:
 
 1. Open the [form for configuration](#creating-opening-customized-configuration).
 1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Text Predicate]** to the form.
@@ -58,7 +58,7 @@ The configuration changes reflect when you open the Filters page. [!DNL Experien
 
 You can filter Inbox items to search for a date range within an Inbox column using the Date Range Predicate.
 
-To configure Date Range Predicate:
+To configure a Date Range Predicate:
 
 1. Open the [form for configuration](#creating-opening-customized-configuration).
 1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Date Range Predicate]** to the form.
@@ -73,7 +73,7 @@ The configuration changes reflect when you open the Filters page. The filter lab
 
 You can filter Inbox items to search for a custom option within an Inbox column using the Custom Column Options Predicate.
 
-To configure Custom Column Options Predicate:
+To configure a Custom Column Options Predicate:
 
 1. Open the [form for configuration](#creating-opening-customized-configuration).
 1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Custom Column Options Predicate]** to the form.
@@ -93,4 +93,7 @@ The configuration changes reflect when you open the Filters page. The filter lab
 You can view the predicates using the Filters page. To view the predicates, select **[!UICONTROL Filter]** on the Inbox page. The predicates display in the left pane. You can then specify the search criteria to filter Inbox items. 
 
 ![Filters page](./assets/apply-filters.png)
+
+For more information on managing predicate configurations, see [Configuring Search Forms](search-forms.md).
+
 
