@@ -106,7 +106,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Interactive Images](dynamic-media/interactive-images.md)
   + [Interactive Videos](dynamic-media/interactive-videos.md)
   + [360 VR Video](dynamic-media/360-video.md)
-  + [Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch](dynamic-media/launch.md)
+  + [Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Experience Platform Tags](dynamic-media/tags.md)
   + [Using Quickviews to create custom pop-ups](dynamic-media/custom-pop-ups.md)
   + [Delivering optimized images for a responsive site](dynamic-media/responsive-site.md)
   + [Previewing Dynamic Media assets](dynamic-media/previewing-assets.md)
