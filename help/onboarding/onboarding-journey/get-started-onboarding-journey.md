@@ -5,7 +5,7 @@ hide: yes
 hidefromtoc: yes
 index: no
 ---
-# Getting Started with Onboarding Process {#getting-started}
+# Get Started with Onboarding Process {#getting-started}
 
 Onboarding is the process during which a designated System Administrator sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
 
