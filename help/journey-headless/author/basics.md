@@ -86,6 +86,8 @@ You can view additional information about items using the Rail Selector. This al
 
 Unless you have very few Content Fragments you will want to organize them - so that you (and others) can find them again.
 
+#### Creating a Folder {#creating-folder}
+
 You can do this by creating a series of folders within **Files** section of the Assets console. Select the **Create** option (top right), followed by **Create Folder**:
 
 ![Create Folder option](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
@@ -94,17 +96,31 @@ A dialog will open where you can enter the details, then confirm with **Create**
 
 ![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
+#### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
+
+Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for your authors you can limit the list of models available for a specific folder.
+
+After creating your folder you can open the folder **Properties**. Here there are various tabs with information, and configuration details, about the folder. In particular for Content Fragments, you can use the **Policies** tab to define specific paths and/or tags for this folder. This limits the Content Fragment Models available for use in the folder as it means that Content Fragment Models must meet these requirements before they can be used to generate fragments in this folder.
+
+![Create Folder Properties - Policies](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
+
+>[!NOTE]
+>
+>You can read further details under Content Fragment Models - Allowing Content Fragment Models on your Assets Folder.
+
 You then navigate through these folders to create, and edit your Content Fragments.
 
-Just in case....xou will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. This probably won't interest you, but if necessary you can check the **Configuration** in the **Cloud Services** of the folder **Properties**:
+#### Just in case - Folder Cloud Services Configuration {#cloud-services-folder}
 
-![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
+Just in case....you will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. This probably won't interest you, but if necessary you can check the **Configuration** in the **Cloud Services** of the folder **Properties**:
+
+![Create Folder Properties - Configuration](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
 >[!NOTE]
 >
 >You can read more under Apply the Configuration to your Assets Folder. 
 
-### Creating {#creating}
+### Creating a Content Fragment {#creating-fragment}
 
 Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
@@ -120,7 +136,7 @@ After continuing with **Next** you can supply the details for your fragment:
 
 Confirm with **Create** and you can then **Open** your fragment in the editor.
 
-### Editing {#editing}
+### Editing a Fragment {#editing-fragment}
 
 When the editor first opens you'll see:
 
@@ -228,6 +244,8 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
     * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
   
     * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
+
+    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Getting Started Guides
   * [Creating an Assets Folder Headless Quick Start Guide](help/implementing/developing/headless/getting-started/create-assets-folder.md)
