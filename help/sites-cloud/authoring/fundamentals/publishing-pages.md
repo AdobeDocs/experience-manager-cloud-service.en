@@ -112,9 +112,13 @@ To publish or unpublish a page using Manage Publication:
 
 1. The **Manage Publication** wizard starts. The first step, **Options**, allows you to:
 
-   * Choose to publish or unpublish the selected pages.
+   * **Action**
 
-   * Choose to take that action now or at a later date.
+     Choose to publish or unpublish the selected pages.
+
+   * **Scheduling**
+
+     Choose to take that action now or at a later date.
 
      Publishing later starts a workflow to publish the selected page or pages at the specified time. Conversely, unpublishing later starts a workflow to unpublish the selected page or pages at a specific time.
 
@@ -166,9 +170,10 @@ To publish or unpublish a page using Manage Publication:
    
    Clicking **Include Children** opens a dialog box allowing you to:
 
-   * Include only immediate children.
-   * Include only modified pages.
-   * Include only already published pages.
+   * **Include children**
+   * **Include only immediate children**
+   * **Include only modified pages**
+   * **Include only already published pages**
 
    Activate the required options and confirm with **OK** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
 
@@ -238,9 +243,14 @@ You can use the [Manage Publication](#manage-publication) option on the sites co
 
    ![Manage Publication selecting pages](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. In the **Include Children** dialog select **Include Children**, then activate the required options.
+1. In the **Include Children** dialog:
 
-   These options are selected by default, so you must remember to unselect them. Confirm the selection with **OK** to confirm and add the content to the publication/un-publication.
+   * select **Include Children**
+   * unselect **Include only immediate children**
+   * unselect **Include only already published pages**
+   * configure **Include only modified pages** as required
+
+   These options are selected by default, so you must remember to configure them. Confirm the selection with **OK** to add the content to the publication/un-publication.
 
    ![Including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
