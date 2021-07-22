@@ -252,7 +252,7 @@ You can use the [Manage Publication](#manage-publication) option on the sites co
 
    These options are selected by default, so you must remember to configure them. Confirm the selection with **OK** to add the content to the publication/un-publication.
 
-   ![Including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+   ![Including children for tree publication](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
 1. In the **Manage Publication** wizard you can further customize the selection by adding additional pages or removing those selected.
 
