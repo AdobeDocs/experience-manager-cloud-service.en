@@ -150,12 +150,11 @@ Congratulations! Now, your newly formed Cloud Manager team including the yoursel
 
 ## What’s Next {#whats-next}
 
-As a System Administrator assigned to the *Business Owner* role, you must access and login to Cloud Manager.
->[!NOTE]
->Refer to [Navigating to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) to learn how to login and access Cloud Manager.
+1. As a System Administrator assigned to the *Business Owner* role you must access and login to Cloud Manager. Refer to [Navigating to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) to learn how to login and access Cloud Manager.
 
-A Cloud Manager user in the Business Owner role can login and setup your cloud resources including your Programs and Environments. This will ensure that your team of experts can begin accessing AEM as a Cloud Service as soon as possible.
-After your Business Owner has setup your cloud resources, Developers and Deployment Managers who have been successfully added to the Cloud Manager product profiles can access Cloud Manager and familiarize themselves on how they can continue on their learning path.
+1. Next, a Cloud Manager user in the *Business Owner* role can login and setup your cloud resources including your cloud Program and Environments. This will ensure that your team of experts can begin accessing AEM as a Cloud Service as soon as possible.
+
+1. After your *Business Owner* has setup your cloud resources, *Developers* and *Deployment Managers* who have been successfully added to the Cloud Manager product profiles can access Cloud Manager and familiarize themselves on how they can continue on their learning path.
 
 ## Additional Resources {#additional-resources}
 
