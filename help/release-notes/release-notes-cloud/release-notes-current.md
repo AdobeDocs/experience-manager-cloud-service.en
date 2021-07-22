@@ -235,6 +235,13 @@ Cloud Acceleration Manager is a cloud-based application designed to guide your I
 
 ### What is New {#what-is-new-cif}
 
+* CIF Core Components v2
+  * Simplified and improved configurations for PDP/PLP URL and SEO
+  * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
+  * New sitemap component for content and commerce pages
+
+* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
+
 ## Content Transfer Tool {#content-transfer-tool}
 
 ### Release Date {#release-date-ctt-latest}
