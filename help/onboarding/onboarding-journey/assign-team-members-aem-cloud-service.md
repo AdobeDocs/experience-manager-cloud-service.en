@@ -6,7 +6,7 @@ hidefromtoc: yes
 index: no
 ---
 
-# Assigning to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
+# Assigning Team Members to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
 
 ## Objective {#objective}
 
