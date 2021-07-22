@@ -86,7 +86,7 @@ The following steps will walk you through this:
    >[!NOTE]
    >Refer to [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) to ensure that the right users are assigned the right role(s) in Admin Console as seen below.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!NOTE]
    >Assign the user to at least one product profile so that the user can access Cloud Manager. Remember to assign yourself (System Administrator) to Business Owner.
@@ -116,7 +116,7 @@ Congratulations! Now, your newly formed Cloud Manager team including the yoursel
    >[!NOTE]
    >Refer to [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) to ensure that the right users are assigned the right role(s) in Admin Console as seen below.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
    >[!IMPORTANT]
    >User can be added to the Deployment Manager product profile after Cloud Manager resources are created.
@@ -142,7 +142,7 @@ Congratulations! Now, your newly formed Cloud Manager team including the yoursel
    >[!NOTE]
    >Refer to [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) to ensure that the right users are assigned the right role(s) in Admin Console as seen below.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
 
    >[!IMPORTANT]
