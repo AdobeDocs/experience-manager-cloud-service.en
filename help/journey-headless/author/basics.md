@@ -140,6 +140,12 @@ As examples:
   
   ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
+>[!NOTE]
+>
+>Project specific documentation might be required to help authors with details of how to successfully complete some fields. 
+>
+>See Content Fragments Models - Data Types and Properties for generic details.
+
 Confirm your updates with either **Save** or **Save & close**.
 
 >[!NOTE]
@@ -216,6 +222,12 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
     * ...basically everything on this page is relevant, apart from actually creating a Content Fragment Model, and Associated Content.
 
   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+
+  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+
+    * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  
+    * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Getting Started Guides
   * [Creating an Assets Folder Headless Quick Start Guide](help/implementing/developing/headless/getting-started/create-assets-folder.md)
