@@ -37,10 +37,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Manage video assets](manage-video-assets.md)
   + [Download assets](download-assets-from-aem.md)
   + [Check-in and check-out assets to edit](check-out-and-submit-assets.md)
-  + [Digital rights management for assets](drm.md)
+  + [Digital Rights Management for assets](drm.md)
   + [Watermark assets](watermark-assets.md)
   + [Process assets using [!DNL Creative Cloud] APIs](cc-api-integration.md)
-+ Configure, administer and extend [!DNL Assets] {#admin}
++ Configure, administer, and extend [!DNL Assets] {#admin}
   + [Developer docs and APIs references](developer-reference-material-apis.md)
   + [Folder metadata schema](folder-metadata-schema.md)
   + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -106,8 +106,8 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Interactive Images](dynamic-media/interactive-images.md)
   + [Interactive Videos](dynamic-media/interactive-videos.md)
   + [360 VR Video](dynamic-media/360-video.md)
-  + [Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch](dynamic-media/launch.md)
-  + [Using Quickviews to create custom pop-ups](dynamic-media/custom-pop-ups.md)
+  + [Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Experience Platform Tags](dynamic-media/tags.md)
+  + [Using Quickview to create custom pop-ups](dynamic-media/custom-pop-ups.md)
   + [Delivering optimized images for a responsive site](dynamic-media/responsive-site.md)
   + [Previewing Dynamic Media assets](dynamic-media/previewing-assets.md)
   + [Adding Dynamic Media assets to pages](dynamic-media/adding-dynamic-media-assets-to-pages.md)
