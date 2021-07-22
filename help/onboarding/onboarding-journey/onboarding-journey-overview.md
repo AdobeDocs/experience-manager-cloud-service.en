@@ -11,7 +11,7 @@ Congratulations on starting your journey with AEM as a Cloud Service! We are exc
 
 ## Introduction {#introduction}
 
-This guide leads you through the most important topics so that on completion the reader will:
+This guide leads you through the most important topics so that on completion you will:
 
 * Have a full understanding of what to expect during the AEM as a Cloud Service onboarding journey.
 * Have enabled your team to get up and running and take the first steps towards learning how to author and develop content for your AEM as a Cloud Service application.
@@ -25,18 +25,13 @@ This means:
 
 ## Audience {#audience}
 
-Onboarding is the process during which a designated System Administrator sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
+Onboarding is the process during which a designated [System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
 
 The onboarding journey is illustrated below and each step in the journey is described in detail in the following sections.
 
 ## Exploring Onboarding Journey {#exploring-onboarding-journey}
 
-
 You will explore many topics in this journey. The following articles give you foundational knowledge of the onboarding steps for AEM as a Cloud Service. Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to onboarding, we recommend that you start at the beginning and progress sequentially.
-
-You will explore many topics in this journey. The following articles give you foundational knowledge required in onboarding process and link out to detailed technical documentation.
-
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to onboarding, we recommend that you start by reviewing the articles mentioned in Learn onboarding Concepts section of the Guide.
 
 |#|Article|Description|
 |---|---|---|
