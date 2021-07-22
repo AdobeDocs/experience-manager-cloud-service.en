@@ -7,16 +7,16 @@ index: no
 ---
 # Setup Cloud Resources via Cloud Manager {#setup-cloud-resources}
 
-The System Administrator assigned to the ‘Business Owner’ role should access and login to Cloud Manager. Following this, a team member assigned to the ‘Business Owner’ product profile must login to Cloud Manager and create your cloud program and environments so that your team of experts can get started. 
+The System Administrator assigned to the *Business Owner* role should access and login to Cloud Manager. Following this, a team member assigned to the *Business Owner* product profile must login to Cloud Manager and create your cloud program and environments so that your team of experts can get started. 
 
 ## Objective {#objective}
 
 This document helps you understand how your cloud resources are created and who can do it. 
 
-After reading this section you should:
+After reading this section you should understand:
 
-* Understand that a system administrator assigned to the ‘Business Owner’ role must be the first to access and login to Cloud Manager
-* Understand how your cloud program and environments are created.
+* A System Administrator assigned to the *Business Owner* role must be the first to access and login to Cloud Manager.
+* How your cloud program and environments are created.
 
 ## Introduction {#introduction}
 
@@ -26,36 +26,47 @@ Follow the sections below to learn how to create your [cloud service programs](#
 
 ### Pre-requisites {#prerequisites}
 
-* The system administrator assigned to the ‘Business Owner’ role should access and login to Cloud Manager.
+* The System Administrator assigned to the *Business Owner* role should access and login to Cloud Manager.
 
-* Understand how to navigate and login to Cloud Manager
+* Understand how to [navigate and login to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en).
 
-* Be familiar with Cloud Manager product profiles
+* Be familiar with [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 
 * Understand the considerations for creating your program. Watch this video to learn more.
 
-* Understand the concepts of Cloud Manager programs and environments
+* Understand the concepts of Cloud Manager [programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) and [environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)
 
 ## Navigating to Cloud Manager {#navigate-cloud-manager}
 
-1. The ‘Business Owner’ user will receive a welcome email from where they can get started, or if they cannot find it, go directly to experience.adobe.com and login using your Adobe ID. 
+1. The *Business Owner* user will receive a welcome email from where they can get started, or if they cannot find it, go directly to [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) and login using your Adobe ID. 
 
-1. From the Experience Cloud home page, Select Experience Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. From the Adobe Experience Cloud home page, Select **Experience Manager**.
 
-1. This will take you to the AEM home page. From here, select Cloud Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. This will take you to the AEM home page. From here, launch **Cloud Manager** .
 
-1. This will take you to the Cloud Manager landing page as shown below:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. Cloud Manager landing page displays, as shown in the figure below.
 
-1. Now verify that you have been assigned Business Owner Product Profile. To do so, select your profile at the top right as shown below:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. Verify that you have been assigned Business Owner Product Profile. To do so, select your profile from the top right, as shown below.
 
-1. Now select User Roles and ensure you are assigned to Business Owner.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. Select **User Roles** and ensure you are assigned to Business Owner.
 
-   Great job! You have successfully logged in to Cloud Manager as Business Owner!
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. This confirms your user role as a Business Owner.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
+
+   Great job! You have successfully logged in to Cloud Manager as a Business Owner!
 
 ## Creating Cloud Service Program {#create-cloud-service-program}
 
