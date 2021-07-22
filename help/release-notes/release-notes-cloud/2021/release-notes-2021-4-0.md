@@ -60,6 +60,8 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * When editing a metadata schema, a new root path selector field allows administrators to quickly and easily make the selection, thereby reducing the configuration time.
 
+* When editing a metadata schema, a data type is added that provides a free-form text area in the metadata editor. Users can use this text area to enter free-form text as metadata of an asset. See [metadata schema editor](/help/assets/metadata-schemas.md).
+
 * Metadata of many assets can be imported in bulk using a CSV file and can be exported to a CSV file. The default date format is now `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Users can leverage a different format by updating the column header. For example, add `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` as the column header in the CSV file instead of the word `Date`.
 
 * When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset.
