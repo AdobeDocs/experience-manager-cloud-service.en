@@ -77,6 +77,16 @@ The definition of the Content Fragment Model controls:
 * whether you can select to add multiple references
 * the model types of Content Fragments that you can select; the Content Fragment Model defines the fragment models allowed for the reference, so AEM only presents fragments based on those models.
 
+### How to navigate nested fragments {#navigate-nested-fragment}
+
+Using the **Structure Tree** tab of the Content Fragment Editor you can navigate through the fragments referenced by your fragment, and then through any references they may contain. Selecting a reference opens that fragment for editing.
+
+>[!NOTE]
+>
+>Using the breadcrumbs in the main panel you can navigate back to your starting point.
+
+![Content Fragment Structure Tree](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+
 ## Ad Hoc References {#adhoc-references}
 
 Ad hoc references can be added as a simple link within a block of text:
@@ -90,3 +100,5 @@ Now that you have learned about references and structure in Content Fragments, t
 ## Additional Resources {#additional-resources}
 
 * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+
+* [Structure Tree - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-structure-tree.md)
