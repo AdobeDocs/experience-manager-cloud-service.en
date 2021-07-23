@@ -40,7 +40,7 @@ To learn more on this topic, go here
 
 ## What’s Next {#whats-next}
 
-Developer and Deployment Managers are now ready to get familiar with how to develop code in AEMaaCS. Learn more or find more learning paths under the Additional Resources section below. 
+Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. 
 
 ## Additional Resources {#additional-resources}
 
