@@ -1,11 +1,11 @@
 ---
-title: Getting Started with Onboarding Journey
+title: Getting Started with Onboarding Process
 description: Follow this page to learn how to get started with onboarding journey
 hide: yes
 hidefromtoc: yes
 index: no
 ---
-# Getting Started with Onboarding Journey {#getting-started}
+# Get Started with Onboarding Process {#getting-started}
 
 Onboarding is the process during which a designated System Administrator sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
 
@@ -15,7 +15,7 @@ As a System Administrator, this document summarizes the very first steps in your
 
 After reading this section you should be able to:
 
-* How to access and login to Admin Console
+* Access and login to Admin Console
 * Review your privileges as a System Administrator via Admin Console
 
 >[!NOTE]
@@ -61,5 +61,5 @@ Follow the steps below to navigate to Admin Console and review your System Admin
 
 ## What's Next {#whats-next}
 
-Now, that you have logged into Admin Console and checked your profile as a System Administrator, you should continue your Onboarding journey by next reviewing the document Assigning Team Members to Cloud Manager Product Profiles.
+Now, that you have logged into Admin Console and checked your profile as a System Administrator, you should continue your onboarding journey by next reviewing the document Assigning Team Members to Cloud Manager Product Profiles.
 
