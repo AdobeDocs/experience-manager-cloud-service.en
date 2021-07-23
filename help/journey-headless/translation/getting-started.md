@@ -1,35 +1,35 @@
 ---
-title: Get started with AEM headless localization
-description: Get to know how to organize your headless content and how AEM's localization tools work.
+title: Get started with AEM headless translation
+description: Get to know how to organize your headless content and how AEM's translation tools work.
 ---
-# Get Started with AEM Headless Localization {#getting-started}
+# Get Started with AEM Headless Translation {#getting-started}
 
-Get to know how to organize your headless content and how AEM's localization tools work.
+Get to know how to organize your headless content and how AEM's translation tools work.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless localization journey, [Learn about headless content and how to localize in AEM](learn-about.md) you learned the basic theory of what a headless CMS is and you should now:
+In the previous document of the AEM headless translation journey, [Learn about headless content and how to translate in AEM](learn-about.md) you learned the basic theory of what a headless CMS is and you should now:
 
 * Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and localization.
+* Be familiar with how AEM supports headless and translation.
 
-This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM's localization tools to translate that content.
+This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM's translation tools to translate that content.
 
 ## Objective {#objective}
 
-This document helps you understand how to get started localizing headless content in AEM. After reading you should:
+This document helps you understand how to get started translating headless content in AEM. After reading you should:
 
-* Understand the importance of content structure to localization.
+* Understand the importance of content structure to translation.
 * Understand how AEM stores headless content.
-* Be familiar with AEM's localization tools.
+* Be familiar with AEM's translation tools.
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin localizing your headless AEM content.
+There are a number of requirements before you begin translating your headless AEM content.
 
 ### Knowledge {#knowledge}
 
-* Experience localizing content for a CMS
+* Experience translating content in a CMS
 * Experience using the basic features of a large-scale CMS
 * Have a working knowledge of AEM basic handling
 * Understanding of the translation service you are using
@@ -47,28 +47,23 @@ There are a number of requirements before you begin localizing your headless AEM
 
 ## Structure is Key {#content-structure}
 
-AEM's content, be it headless or traditional web pages, is driven by its structure. AEM imposes few requirements on the content structure, but careful consideration of your content hierarchy as part of the project planning can make localization much simpler.
+AEM's content, be it headless or traditional web pages, is driven by its structure. AEM imposes few requirements on the content structure, but careful consideration of your content hierarchy as part of the project planning can make translation much simpler.
 
 >[!TIP]
 >
->Plan for translation and localization at the very beginning of the headless project. Work closely with the project manager and content architects early.
+>Plan for translation at the very beginning of the headless project. Work closely with the project manager and content architects early.
 >
 >An Internationalization Project Manager may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
 
-Create a plan on what content localization you will need.
-
-* Do you just need different languages or also need to adapt to regional specifics?
-* Do you need rich media content like images or videos to be different for different locales?
-
 ## How AEM Stores Headless Content {#headless-content-in-aem}
 
-For the localization specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be very helpful as you later use AEM's localization tools. Most importantly you need to understand your own content and how it is structured in order to effectively localize it.
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be very helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
 
 ### Content Models {#content-models}
 
 In order for headless content to be delivered consistently across channels, regions, and languages, content must be highly structured. AEM uses Content Models to enforce this structure. Think of Content Models as a kind of template or pattern for creating headless content. Because every project has its own needs, every project defines its own Content Fragment Models. AEM has no fixed requirements or structure for such models.
 
-The content architect works early in the project to define this structure. Like previously recommended, as the localization specialist, you should work closely with the content architect to understand and organize the content.
+The content architect works early in the project to define this structure. Like previously recommended, as the translation specialist, you should work closely with the content architect to understand and organize the content.
 
 Because the Content Models define the structure of your content, you will need to know which fields of your models need to be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
@@ -85,11 +80,15 @@ Because the Content Models define the structure of your content, you will need t
 
 Take note of the field **Property Name** for all fields that must be translated. You will need this information for the next step in the journey.
 
+>[!NOTE]
+>
+>Generally the content architect will provide the translation specialist with the **Property Name**s of all of the fields needed for translation. The prior steps are provided for the understanding of the translation specialist.
+
 ### Content Fragments {#content-fragments}
 
 Content Models are used by the content authors to create the actual headless content. Content authors select which model to base their content on an then create Content Fragments. Content Fragments are instances of the models and represent actual content to be delivered headlessly.
 
-If the Content Models are the patterns for the content, the Content Fragments is the actual content based on those patterns.
+If the Content Models are the patterns for the content, the Content Fragments is the actual content based on those patterns. The Content Fragments represent the content that needs to be translated.
 
 Content Fragments are managed as assets in AEM as part of digital asset management (DAM). This is important since they will all be located under the path `/content/dam`.
 
@@ -115,7 +114,7 @@ All project content that may need to be localized should the be placed under the
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-Localizations should be created as sibling folders alongside the language root. For example, German would have the following path.
+Translations should be created as sibling folders alongside the language root. For example, German would have the following path.
 
 ```text
 /content/dam/<your-project>/de
@@ -142,29 +141,29 @@ The final structure may look something like the following.
 
 You should take note of the specific path of your content as it will be needed later to configure your translation.
 
-## AEM Localization Tools {#localization-tools}
+## AEM Translation Tools {#translation-tools}
 
-Now that you understand what Content Fragments are and the importance of content structure, we can look at how to localize this content. The localization tools in AEM are quite powerful, but are simple to understand at a high level.
+Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
 
 * **Translation Connector** - The connector is the link between AEM and the translation service that you use.
 * **Translation Rules** - Rules define what content under particular paths should be translated.
 * **Translation Projects** - Translation projects gather together content that should be addressed as a single translation effort and tracks the progress of the translation, interfacing with the connector to transmit the content to be translated and receive it back from the translation service.
 
-You generally only need to set up your connector once for your instance and rules per headless project. Then you use translation projects to localize your content and keep its translations up to date on a continual basis.
+You generally only need to set up your connector once for your instance and rules per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
 
 ## What's Next {#what-is-next}
 
-Now that you have completed this part of the headless localization journey you should:
+Now that you have completed this part of the headless translation journey you should:
 
-* Understand the importance of content structure to localization.
+* Understand the importance of content structure to translation.
 * Understand how AEM stores headless content.
-* Be familiar with AEM's localization tools.
+* Be familiar with AEM's translation tools.
 
-Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless localization journey by reviewing the document [Configure the translation connector](configure-connector.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Configure the translation connector](configure-connector.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [AEM Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Learn the basics of the AEM UI to be able to comfortably navigate and perform essential tasks such as finding your content.
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.

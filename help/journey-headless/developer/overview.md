@@ -61,4 +61,4 @@ Documentation journeys show you how AEM solves a business problem by providing a
 
 As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
 
-* [AEM Headless Localization Journey](/help/journey-headless/localization/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can localize it.
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.

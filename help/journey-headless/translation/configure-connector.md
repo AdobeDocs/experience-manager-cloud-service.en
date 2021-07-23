@@ -1,18 +1,18 @@
 ---
-title: Configure translation connector
+title: Configure the Translation Connector
 description: Learn how to connect AEM to a translation service.
 ---
-# Configure translation connector {#configure-connector}
+# Configure the Translation Connector {#configure-connector}
 
 Learn how to connect AEM to a translation service.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless localization journey, [Get started with AEM headless localization](learn-about.md) you learned how to organize your headless content and how AEM's localization tools work and you should now:
+In the previous document of the AEM headless translation journey, [Get started with AEM headless translation](learn-about.md) you learned how to organize your headless content and how AEM's translation tools work and you should now:
 
-* Understand the importance of content structure to localization.
+* Understand the importance of content structure to translation.
 * Understand how AEM stores headless content.
-* Be familiar with AEM's localization tools.
+* Be familiar with AEM's translation tools.
 
 This article builds on those fundamentals so you can take the first configuration step and set up a translation service, which you will use later in the journey to translate your content.
 
@@ -25,11 +25,13 @@ This document helps you understand how to set up an AEM connector to your chosen
 
 ## The Translation Integration Framework {#tif}
 
-AEM's Translation Integration Framework integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.
+AEM's Translation Integration Framework (TIF) integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.
 
 1. Connect to your translation service provider.
 1. Create a Translation Integration Framework configuration.
 1. Associate the configuration with your content.
+
+The following sections describe these steps in more detail.
 
 ## Connecting to a Translation Service Provider {#connect-translation-provider}
 
@@ -43,13 +45,13 @@ If you choose another provider you will need to install the connector package as
 >
 >Using the out-of-the-box Microsoft Translator in AEM does not require additional setup and works as-is without additional connector configuration.
 >
->If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar for when you need to connect your preferred connector.
+>If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar with the steps for when you need to configure your preferred connector.
 >
 >The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, you will need to follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
 
 ## Creating a Translation Integration Configuration {#create-config}
 
-First you need to create a translation integration framework configuration to specify how to translate your content. The configuration includes the following information:
+After you install the connector package for your preferred translation service, you need to create a Translation Integration Framework configuration for that service. The configuration includes the following information:
 
 * Which translation service provider to use
 * Whether human or machine translation is to be performed
@@ -93,7 +95,7 @@ You have now configured the connector to your translation service.
 
 ## Associate the Configuration with Your Content {#associate}
 
-AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you need to specify which connectors and configuration should be used to translate your content by associating ths configuration you just made with your content.
+AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you need to specify which connectors and configuration should be used to translate your content by associating ths configuration with your content.
 
 To do this, navigate to the language root of your content. For our example purposes this is
 
@@ -112,16 +114,16 @@ To do this, navigate to the language root of your content. For our example purpo
 
 ## What's Next {#what-is-next}
 
-Now that you have completed this part of the headless localization journey you should:
+Now that you have completed this part of the headless translation journey you should:
 
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless localization journey by reviewing the document [Configure translation rules](translation-rules.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Configure translation rules](translation-rules.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
-* [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
+* [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Review a list of selected translation connectors and learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM provides a trial Microsoft Translation account for testing purposes.
