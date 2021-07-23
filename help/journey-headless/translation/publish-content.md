@@ -40,7 +40,13 @@ Once content is created on the author instance, it must be transferred to the pu
 
 ## Publishing Your Translated Content {#publishing}
 
-Once you are happy with the state of your translated content, you can publish it so headless services can consume it. The easiest way to do this is to navigate to the project assets folder.
+Once you are happy with the state of your translated content, it must be published so headless services can consume it. This task is usually not the responsibility of the translation specialist, but is documented her to illustrate the complete workflow.
+
+>[!NOTE]
+>
+>Generally when the translation is complete, the translations specialist will inform the content owners that the translations are ready for publication, who will then publish them.
+
+The simplest way to publish the translations is to navigate to the project assets folder.
 
 ```text
 /content/dam/<your-project>/
@@ -73,6 +79,10 @@ Translation is rarely a one-off exercise. Typically your content authors continu
 
 Specific project requirements will define how often you will need to update your translations and what decision process will be followed before performing an update. Once you have decided to update your translations, the process in AEM is very simple. As the initial translation was based on a translation project, so too are any updates.
 
+However as before, the process differs slightly if you chose to automatically create your translation project or manually create your translation project.
+
+### Updating an Automatically Created Translation Project {#updating-automatic-project}
+
 1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
 1. Select the language root of your project. In this case we have selected `/content/dam/wknd/en`.
 1. Tap or click the rail selector and show the **References** panel.
@@ -99,6 +109,36 @@ You will notice that the statistics listed on the new card (number of assets and
 
 From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
 
+### Updating a Manually Created Translation Project {#updating-manual-project}
+
+To update a translation you can add a new job to your existing project that is responsible for translating the updated content.
+
+1. Navigate to **Navigation** -&gt; **Projects**.
+1. Tap or click the project that you need to update.
+1. Tap or click the **Add** button at the top of the window.
+1. In the **Add Tile** window, tap or click **Translation Job** and then **Submit**.
+
+   ![Add tile](assets/add-translation-job-tile.png)
+
+1. On the card of the new translation job, tap or click the chevron button at the top of the card, and select **Update Target** to define the target language of the new job.
+
+   ![Update target](assets/update-target.png)
+
+1. In the **Select Target Language** dialog, use the drop-down to select the language and tap or click **Done**.
+
+   ![Select target language](assets/select-target-language.png)
+
+1. Once your new translation job's target language is set, tap or click on the ellipsis button at the bottom of the job card to view the details of the job.
+1. The job is empty when first created. Add content to the job by tapping or clicking the **Add** button and using the path browser [as you did before when originally creating the translation project.](translate-content.md##manually-creating)
+
+>[!TIP]
+>
+>The path browser's powerful filters can again be useful to find just the content that has been updated.
+>
+>You can learn more about the path browser in the [additional resources section.](#additional-resources)
+
+From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
+
 ## End of the Journey? {#end-of-journey}
 
 Congratulations! You have completed the headless translation journey! You should now:
@@ -115,3 +155,4 @@ You are now ready to translate your own headless content in AEM. However AEM is 
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
 * [Authoring concepts](/help/sites-cloud/authoring/getting-started/concepts.md) - Learn about the author and publish model of AEM in more detail. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
 * [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Learn about the additional features available when publishing content. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [Authoring Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.

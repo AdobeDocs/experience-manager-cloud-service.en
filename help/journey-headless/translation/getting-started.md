@@ -63,7 +63,11 @@ For the translation specialist, it is not important to understand in-depth how A
 
 In order for headless content to be delivered consistently across channels, regions, and languages, content must be highly structured. AEM uses Content Models to enforce this structure. Think of Content Models as a kind of template or pattern for creating headless content. Because every project has its own needs, every project defines its own Content Fragment Models. AEM has no fixed requirements or structure for such models.
 
-The content architect works early in the project to define this structure. Like previously recommended, as the translation specialist, you should work closely with the content architect to understand and organize the content.
+The content architect works early in the project to define this structure. As the translation specialist, you should work closely with the content architect to understand and organize the content.
+
+>[!NOTE]
+>
+>It is the responsibility of the content architect to define the Content Models. The translation specialist should only be familiar with their structure as outlined in the following steps.
 
 Because the Content Models define the structure of your content, you will need to know which fields of your models need to be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
@@ -78,11 +82,11 @@ Because the Content Models define the structure of your content, you will need t
 1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
 ![Content Fragment Model Editor detail](assets/content-fragment-model-editor-detail.png)
 
-Take note of the field **Property Name** for all fields that must be translated. You will need this information for the next step in the journey.
+Take note of the field **Property Name** for all fields that must be translated. You will need this information later in the journey. These **Property Name**s are required to inform AEM which fields of your content need to be translated.
 
->[!NOTE]
+>[!TIP]
 >
->Generally the content architect will provide the translation specialist with the **Property Name**s of all of the fields needed for translation. The prior steps are provided for the understanding of the translation specialist.
+>Generally the content architect will provide the translation specialist with the **Property Name**s of all of the fields needed for translation. These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
 
 ### Content Fragments {#content-fragments}
 

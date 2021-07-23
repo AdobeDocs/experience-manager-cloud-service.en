@@ -37,6 +37,10 @@ Translation rules include the following information:
 
 Because Content Fragment Models, which define the structure of your Content Fragments, are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
 
+>[!TIP]
+>
+>Generally the content architect will provide the translation specialist with the **Property Name**s of all of the fields needed for translation. These names are needed to configure translation rules. As the translation specialist, you [can find these **Property Name**s yourself](getting-started.md#content-modlels) as previously described in this journey.
+
 ## Creating Translation Rules {#creating-rules}
 
 Multiple rules can be created to support complex translation requirements. For example one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
