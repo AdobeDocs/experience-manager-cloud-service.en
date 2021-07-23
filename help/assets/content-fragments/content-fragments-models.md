@@ -160,15 +160,17 @@ Many properties are self-explanatory, for certain properties additional details 
   >
   >Variations can have the same *unique* value as variations of the same fragment, but not the same value as used in any variation of other fragments.
 
+* See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
+
+* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
+
+<!--
 * **Translatable**
   Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
-
-* See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
-
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
+-->
 
 ## Validation {#validation}
 
