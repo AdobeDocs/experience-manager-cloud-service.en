@@ -1,5 +1,5 @@
 ---
-title: Translate content
+title: Translate Content
 description: Use the translation connector and rules to translate your headless content.
 ---
 # Translate Content {#translate-content}
@@ -8,7 +8,7 @@ Use the translation connector and rules to translate your headless content.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless localization journey, [Configure Translation Rules](translation-rules.md) you learned how how to use AEM's translation rules to identify your translation content. You should now:
+In the previous document of the AEM headless translation journey, [Configure Translation Rules](translation-rules.md) you learned how how to use AEM's translation rules to identify your translation content. You should now:
 
 * Understand what the translation rules do.
 * Be able to define your own translation rules.
@@ -51,11 +51,11 @@ You receive a message that the project was created.
 
 ## Using a Translation Project {#using-translation-project}
 
-When creating the translation project, AEM evaluated the headless content under the path you selected as well as based on the rules that you previously defined. Based on those rules, it extracted the content that requires translation into a new translation project.
+When creating the translation project, AEM evaluates the headless content under the path you selected  based on the translation rules that you previously defined. Based on that evaluation, it extracts the content that requires translation into a new translation project.
 
 To view the translation project:
 
-1. Navigate to **Navigation** -&amp; **Projects**.
+1. Navigate to **Navigation** -&gt; **Projects**.
 1. Tap or click the project that was created in the previous section.
 
 ![Translation project](assets/translation-project.png)
@@ -103,7 +103,7 @@ Tap or click that icon to open the translated content fragment in its editor con
 
 You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
 
-The project's job is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In our example here
+The project's job is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example the folder is
 
 ```text
 /content/dam/wknd/es
@@ -115,7 +115,7 @@ If you navigate to this folder via **Navigation** -&gt; **Files** -&gt; **Assets
 
 AEM's translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
 
-It is important to understand that this content is not published. It remains on the authoring instance of AEM until you decide it is ready to be publish. We will learn about this author-publish structure and see how to publish our translated content in the next step of the localization journey.
+It is important to understand that this content is not published and therefore not available to your headless services. We will learn about this author-publish structure and see how to publish our translated content in the next step of the translation journey.
 
 ## Human Translation {#human-translation}
 
@@ -125,16 +125,16 @@ Human translation is beyond the scope of this localization journey. Please see t
 
 ## What's Next {#what-is-next}
 
-Now that you have completed this part of the headless localization journey you should:
+Now that you have completed this part of the headless translation journey you should:
 
 * Understand what a translation project is.
 * Be able to create new translation projects.
 * Use translation projects to translate your headless content.
 
-Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Publish translated content](publish-content.md) where you will learn how to publish your translated content and how to update those translations as your language root content changes.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Publish translated content](publish-content.md) where you will learn how to publish your translated content and how to update those translations as your language root content changes.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless localization journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.

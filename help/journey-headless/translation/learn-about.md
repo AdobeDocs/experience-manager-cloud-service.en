@@ -1,17 +1,17 @@
 ---
-title: Learn about headless content and how to localize in AEM
-description: Learn headless concepts, how they map to AEM, and the theory of AEM localization.
+title: Learn about headless content and how to translate it in AEM
+description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
 ---
-# Learn about headless content and how to localize in AEM {#learn-about}
+# Learn about headless content and how to translate it in AEM {#learn-about}
 
-Learn headless concepts, how they map to AEM, and the theory of AEM localization.
+Learn headless concepts, how they map to AEM, and the theory of AEM translation.
 
 ## Objective {#objective}
 
-This document helps you understand headless content delivery, how AEM supports headless, and how such content can be localized. After reading you should:
+This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. After reading you should:
 
 * Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and localization.
+* Be familiar with how AEM supports headless and translation.
 
 ## Full-Stack Content Delivery {#full-stack}
 
@@ -30,7 +30,7 @@ So if new channel needs to be added or support for new types of experiences is r
 
 ![Adding a new channel to the stack](/help/journey-headless/developer/assets/adding-channel.png)
 
-The complexity of the dependencies within the stack quickly become apparent as other items in the stack  need to be adjusted to accommodate the changes.
+However the complexity of the dependencies within the stack quickly become apparent as other items in the stack need to be adjusted to accommodate the changes.
 
 ## The Head in Headless {#the-head}
 
@@ -44,30 +44,30 @@ The consuming services, be they AR experiences, a webshop, mobile experiences, p
 
 Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
-## Localizing Headless Content in AEM {#localizing-in-aem}
+## Translating Headless Content in AEM {#translating-in-aem}
 
 In addition to offering robust tools to create, manage, and deliver traditional webpages in the full-stack fashion, AEM also offers the ability to author self-contained selections of content and serve them headlessly.
 
-The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the localization specialist, the same set of localization tools can be applied to both types of content, giving you a unified approach for translating your content.
+The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-Further in the journey you will learn the details about how AEM localizes content, but at a high level, the concept is simple:
+Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
 
 1. Define a connection to a translation service by configuring the translation integration framework.
 1. Define which content should be translated using translation rules.
-1. Create a translation project to extract the content, send it to the translation service, and receive the results.
+1. Create a translation project to harvest the content, send it to the translation service, and receive the results.
 1. Review and publish the translated content.
 
 ## What's Next {#what-is-next}
 
-Thanks for getting started on your AEM headless localization journey! Now that you read this document you should:
+Thanks for getting started on your AEM headless translation journey! Now that you read this document you should:
 
 * Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and localization.
+* Be familiar with how AEM supports headless and translation.
 
-Build on this knowledge and continue your AEM headless localization journey by next reviewing the document [Get started with AEM headless localization](getting-started.md) where you will have an overview of how AEM manages headless content and get to know its localization tools.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Get started with AEM headless translation](getting-started.md) where you will have an overview of how AEM manages headless content and get to know its translation tools.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless localization journey by reviewing the document [Get started with AEM headless localization,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Get started with AEM headless translation,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [MSM and Translation](/help/sites-cloud/administering/msm-and-translation.md) - The details of AEM's Multi-Site Manager and how it works with its translation tools
