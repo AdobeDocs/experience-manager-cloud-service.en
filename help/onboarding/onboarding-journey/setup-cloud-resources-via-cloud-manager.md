@@ -72,7 +72,7 @@ Follow the sections below to learn how to create your [cloud service programs](#
 
 Follow the steps below to create your cloud service program from Cloud Manager:
 
-1. Navigate to Cloud Manager landing page as shown below.
+1. Navigate to Cloud Manager landing page, as shown below.
 
    >[!NOTE]
    >You must be a team member assigned to Cloud Manager Business Owner product profile to successfully complete this step.
@@ -130,12 +130,13 @@ Follow the steps below to create your cloud environments from Cloud Manager:
 
 ## What’s Next {#whats-next}
 
-Your team members must be granted permissions to the instance, since permissions to administer Cloud Manager will not suffice. Now that your cloud resources have been created and are ready to be accessed by your team, the System Administrator must assign your team members to AEM as a Cloud Service product profiles from Admin Console.
+Your team members must be granted permissions to the instance, since permissions to administer Cloud Manager will not suffice. Now that your cloud resources have been created and are ready to be accessed by your team, the System Administrator must assign your team members to AEM as a Cloud Service product profiles from Adobe Admin Console.
+
+>[!NOTE]
+>To be granted access to AEM as a Cloud Service users must belong to one of two product profiles `AEM Users` or `AEM Administrators`. See [Managing Products and User Access in Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console) to learn more.
 
 You should continue your onboarding journey by next reviewing the document Assigning Team Members to AEM as a Cloud Service Product Profiles.
 
->[!NOTE]
->To be granted access to AEM as a Cloud Service users must belong to one of two product profiles 'AEM Users' or 'AEM Administrators'. Learn more.
 
 ## Additional Resources {#additional-resources}
 
