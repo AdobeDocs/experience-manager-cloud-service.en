@@ -14,13 +14,24 @@ This will guide describes how to create video renditions used in Screens players
 
 ## Steps to Create Screens Video Renditions in Screens as a Cloud Service {#steps-creating-screens-video-renditions}
 
-1. Navigate to channels in Screens Cloud UI.
-1. Click on the  Adobe Experience Manager on the top left corner, to navigate to Screens Content Provider, that is, AEM as a Cloud Service.
-1. Click on the Tools section in the main navigation now, and click on "Assets" and then click on "Processing Profiles"
+1. Navigate to your channel in Screens Content Provider.
 
-1. Click on "Create" to create new processing profile
-1. Provide a name such as, "ScreensProcessingProfile"
-1. Navigate to Video tab to add a video encoding and click on "Add New"
+   >[!NOTE]
+   >Refer to [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) for  more details.
+
+1. Click on the Tools section from the left navigation bar and click on **Assets** and then click on **Processing Profiles**.
+
+    ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. Click on **Create** to create new processing profile.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. Enter the **Name**, such as **ScreensProcessingProfile**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. Navigate to **Video** tab to add a video encoding and click on **Add New**.
 
 
    >[!IMPORTANT]
