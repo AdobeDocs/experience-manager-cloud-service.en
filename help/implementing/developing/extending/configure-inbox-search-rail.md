@@ -90,7 +90,7 @@ The configuration changes reflect when you open the Filters page. The filter lab
 
 The following video illustrates the steps to filter a column based on the `true` and `false` option values.
 
-![!VIDEO](assets/filter-custom-columns.mp4)
+>[!VIDEO](assets/filter-custom-columns.mp4)
 
 ## View search filters based on predicates {#view-search-filters-for-predicates}
 
