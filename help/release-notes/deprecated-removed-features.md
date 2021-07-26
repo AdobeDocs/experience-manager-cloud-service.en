@@ -1,9 +1,9 @@
 ---
-title: Deprecated and removed features
+title: Deprecated and Removed Features
 description: Release notes specific to deprecated and removed features in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 ---
-# Deprecated and removed features {#deprecated-and-removed-features}
+# Deprecated and Removed Features {#deprecated-and-removed-features}
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
@@ -20,7 +20,7 @@ To communicate the impending removal/replacement of [!DNL Experience Manager] ca
 
 This process gives customers at least one release cycle to adapt their implementation to a new version or successor of a deprecated capability, before actual removal.
 
-## Deprecated features {#deprecated-features}
+## Deprecated Features {#deprecated-features}
 
 This section lists features and capabilities that have been marked as deprecated in [!DNL Experience Manager] as a [!DNL Cloud Service]. Typically, features to be removed in a future release are set to deprecated first, with an alternative provided.
 
@@ -33,7 +33,7 @@ Customers are advised to review if they use the feature/capability in their curr
 | [!DNL Assets]       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` workflow are not supported, including calling command-line tools like [!DNL ImageMagick]. | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets]       | FFmpeg transcoding of videos. | For FFmpeg thumbnail generation, use [Asset microservices](/help/assets/asset-microservices-overview.md). For FFmpeg transcoding, use [Dynamic Media](/help/assets/manage-video-assets.md). |
 
-## Removed features {#removed-features}
+## Removed Features {#removed-features}
 
 This section lists features and capabilities that have been removed from [!DNL Experience Manager] with [!DNL Experience Manager] as a [!DNL Cloud Service].
 
