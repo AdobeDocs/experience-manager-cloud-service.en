@@ -29,40 +29,38 @@ To configure the `UrlProvider` service according to the SEO requierments and nee
 
 This configures the URLs of the product pages and supports the following options:
 
-  * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (default)
-  * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
-  * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
-  * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
-  * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}` 
+ * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (default)
+ * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
+ * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
+ * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
+ * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}` 
 
 where, in the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
 
-  * `{{page}}` will be replaced by `/content/venia/us/en/products/product-page`
-  * `{{sku}}` will be replaced by the product's sku, e.g. `VP09`
-  * `{{url_key}}` will be replaced by the product's `url_key` property, e.g. `lenora-crochet-shorts`
-  * `{{url_path}}` will be replaced by the product's `url_path`, e.g. `venia-bottoms/venia-pants/lenora-crochet-shorts`
-  * `{{variant_sku}}` will be replaced by the currently selected variant, e.g. `VP09-KH-S`
+ * `{{page}}` will be replaced by `/content/venia/us/en/products/product-page`
+ * `{{sku}}` will be replaced by the product's sku, e.g. `VP09`
+ * `{{url_key}}` will be replaced by the product's `url_key` property, e.g. `lenora-crochet-shorts`
+ * `{{url_path}}` will be replaced by the product's `url_path`, e.g. `venia-bottoms/venia-pants/lenora-crochet-shorts`
+ * `{{variant_sku}}` will be replaced by the currently selected variant, e.g. `VP09-KH-S`
 
 With the above example data, a product variant URL formatted using the default URL format will look like `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
-
-
 
 ### Category page url format {#product-list}
 
 This configures the URLs of the category or product list pages and supports the following options:
 
-  * `{{page}}.html/{{url_path}}.html` (default)
-  * `{{page}}.html/{{url_key}}.html`
+ * `{{page}}.html/{{url_path}}.html` (default)
+ * `{{page}}.html/{{url_key}}.html`
 
 where, in the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
 
-  * `{{page}}` will be replaced by `/content/venia/us/en/products/category-page`
-  * `{{url_key}}` will be replaced by the category's `url_key` property
-  * `{{url_path}}` will be replaced by the category's `url_path`
+ * `{{page}}` will be replaced by `/content/venia/us/en/products/category-page`
+ * `{{url_key}}` will be replaced by the category's `url_key` property
+ * `{{url_path}}` will be replaced by the category's `url_path`
 
 With the above example data, a category page URL formatted using the default URL format will look like `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
-> [!NOTE]
+>[!NOTE]
 > 
 > The `url_path` is a concatenation of the `url_keys` of a product or category's ancestors and the product or category's `url_key` separated by `/` slash.
 
@@ -70,8 +68,8 @@ With the above example data, a category page URL formatted using the default URL
 
 To provide a custom URL format a project can implement the [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) and regsiter the implementation as OSGI service, using it either the as category page or product page url format. The `UrlFormat#PROP_USE_AS` service property indicates with of the configured, pre-defined formats to replace:
 
-  * `useAs=productPageUrlFormat`, will replace the configured product page url format
-  * `useAs=categoryPageUrlFormat`, will replace the configured category page url format
+ * `useAs=productPageUrlFormat`, will replace the configured product page url format
+ * `useAs=categoryPageUrlFormat`, will replace the configured category page url format
 
 If there are multiple implementations of the `UrlFormat` registered as OSGI services, the one with the higher service ranking replaces the one(s) with the lower service ranking.
 
@@ -95,6 +93,6 @@ The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) proje
 
 ## Additional Resources
 
-* [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM Resource Mapping](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
-* [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+ * [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
+ * [AEM Resource Mapping](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+ * [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
