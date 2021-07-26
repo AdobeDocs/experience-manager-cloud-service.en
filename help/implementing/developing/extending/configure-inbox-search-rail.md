@@ -88,11 +88,15 @@ To configure a Custom Column Options Predicate:
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the Custom Column Option Predicate. [!DNL Experience Manager] applies the search criteria defined in step 6 on the column name specified in step 3 and returns the Inbox items.
 
+The following video illustrates the steps to filter a column based on the `true` and `false` option values.
+
+![!VIDEO](assets/filter-custom-columns.mp4)
+
 ## View search filters based on predicates {#view-search-filters-for-predicates}
 
 You can view search filters based on predicates. Select **[!UICONTROL Filter]** on the Inbox page. The filters display in the left pane. You can then specify the search criteria to filter Inbox items. 
 
-![Filters page](./assets/apply-filters.png)
+![Filters page](assets/apply-filters.png)
 
 For more information on managing predicate configurations, see [Configuring Search Forms](search-forms.md).
 
