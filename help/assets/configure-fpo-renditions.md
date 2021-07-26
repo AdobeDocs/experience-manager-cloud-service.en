@@ -12,7 +12,7 @@ When placing large-sized assets from Experience Manager into Adobe InDesign docu
 
 Assets provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio. If an FPO rendition is not available for an asset, Adobe InDesign uses the original asset instead. This fallback mechanism ensures that the creative workflow proceeds without any breaks.
 
-Experience Manager as a Cloud Service offers cloud-native asset-processing capabilities to generate the FPO renditions. Use assets microservices for rendition generation. You can configure rendition generation of newly uploaded assets and of the assets that exist in Experience Manager.
+Experience Manager as a Cloud Service offers cloud-native asset-processing capabilities to generate the FPO renditions. Use asset microservices for rendition generation. You can configure rendition generation of newly uploaded assets and of the assets that exist in Experience Manager.
 
 Following are the steps to generate FPO renditions:
 1. [Create a processing profile](#create-processing-profile).
