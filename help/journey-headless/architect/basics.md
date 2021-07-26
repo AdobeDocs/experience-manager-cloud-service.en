@@ -18,7 +18,7 @@ This article builds on these so you understand how to model your content for you
 
 ## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
 
-Data Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
+Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
 
 ### Why? {#why}
 
