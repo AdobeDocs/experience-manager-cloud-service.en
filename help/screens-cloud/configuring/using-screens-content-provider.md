@@ -43,11 +43,11 @@ Follow the steps below to login to Screens Content Provider:
 
    Once you have logged into Screens Content Provider, now you are ready to create your content in content playback. 
 
-  You must use Screens Content Provider to create and manage:
+   You must use Screens Content Provider to create and manage:
 
-  * Projects
-  * Channels
-  * Locations
+   * Projects
+   * Channels
+   * Locations
 
 ## What's Next {#whats-next}
 
