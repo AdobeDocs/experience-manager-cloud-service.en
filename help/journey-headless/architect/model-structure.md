@@ -65,6 +65,8 @@ You can add as many fields as you need. For example:
 
 ![Content Fragment Model](/help/assets/content-fragments/assets/cfm-models-07.png)
 
+### Your Content Authors {#your-content-authors}
+
 Your content authors do not see the actual Data Types and Properties that you've used to create your models. This means that you might have to provide help and information on how they complete specific fields. For basic information you can use the Field Label and Default Value, but more complex cases project specific documentation might need to be considered.
 
 >[!NOTE]
