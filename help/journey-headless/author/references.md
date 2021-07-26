@@ -56,9 +56,14 @@ Seems pretty straightforward, but of course a Company has both a CEO and Employe
 
 And a Person can have an Award (or maybe two).
 
+* My Company - Company
+  * CEO - Person
+  * Employee(s) - Person
+    * Personal Award(s) - Award
+
 And that's just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-Representing these interrelationship can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
+Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
 
 As an author you're not responsible for defining these relationships (that's done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
 

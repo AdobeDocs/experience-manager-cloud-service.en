@@ -82,6 +82,10 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Authoring Content Fragments {#authoring-content-fragments}
 
+So, that was a very quick introduction to the AEM User Interface (UI), but hopefully you've had a chance to try it out. Now we get down to your real interest - Content Fragments for Headless.
+
+We'll have to go through things from start to finish, but your instance might already have folders and/or fragments created, and these might be in different locations. The principles are the same.
+
 ### Organizing and Navigating {#organizing-and-navigating}
 
 Unless you have very few Content Fragments you will want to organize them - so that you (and others) can find them again.
@@ -97,6 +101,8 @@ A dialog will open where you can enter the details, then confirm with **Create**
 ![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
 #### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
+
+This section is slightly more advanced. You don't really need it if you're just starting out and trying things, but it is *very* useful when you have a lot of fragments. So it's good to know about - even if you don't use it quite yet.
 
 Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for your authors you can limit the list of models available for a specific folder.
 
@@ -138,6 +144,8 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 ### Editing a Fragment {#editing-fragment}
 
+You can open a fragment immediately after creating it, or by selecting it from the Assets console.
+
 When the editor first opens you'll see:
 
 * A list of icons at the left side - this gives you access to various areas of functionality. The editor opens in the **Variations** tab, this is where most of the editing happens. You might also be interested in the **Annotations** and **Metadata** tabs.
@@ -148,11 +156,11 @@ When the editor first opens you'll see:
 
 As examples:
 
-* A fragment that only requires short pieces of information:
+* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key, you'll learn about these later in your journey.
   
   ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* A fragment that allows you to write a long section of text. Here there are additional options for managing, and formaatting the text. You can even open the text in a full screen editor (using the small screen-like icon at the right)
+* A fragment that allows you to write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
   
   ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
