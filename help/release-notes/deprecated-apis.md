@@ -58,7 +58,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.json</td>
     <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
@@ -70,13 +70,13 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead.</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead.</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.systemready</td>
