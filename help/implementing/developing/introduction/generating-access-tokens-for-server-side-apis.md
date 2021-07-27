@@ -15,7 +15,7 @@ The server-to-server flow is described below, along with a simplified flow for d
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-A user with an IMS org administrator role can generate an AEM as a Cloud Service credential, which can subsequently be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service.
+A user with an IMS org administrator role, and who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate an AEM as a Cloud Service credential. That credential can subsequently be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service.
 
 The server-to-server flow involves the following steps:
 
@@ -55,7 +55,7 @@ The output will be similar to the following:
 
 >[!IMPORTANT]
 >
->An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager) must first access the Developer Console and click the **Get Service Credentials** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role.
+>An IMS org administrator (typically the same user who provisioned the environment via Cloud Manager), who should also be member of the AEM Users or AEM Administrators Product Profile on AEM Author, must first access the Developer Console and click the **Get Service Credentials** button in order for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role.
 
 ### Install the AEM Service Credentials on a Non AEM Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 

@@ -21,7 +21,7 @@ After reading this section you should understand:
 
 ## Introduction {#introduction}
 
-To be granted access to AEM as a Cloud Service users must belong to one of two product profiles, such as, *AEM Users* or *AEM Administrators*. Your team members must be granted permissions to the AEM instance, since permissions to administer Cloud Manager will not suffice. Learn more.
+To be granted access to AEM as a Cloud Service users must belong to one of two product profiles, such as, `AEM Users` or `AEM Administrators`. Your team members must be granted permissions to the AEM instance, since permissions to administer Cloud Manager will not suffice. Learn more.
 
 >[!NOTE]
 >Every user assigned to AEM User product profile by the system administrator will have (read-only) access to Cloud Manager.
@@ -39,24 +39,22 @@ Before you start reading this section, you should consider following these pre-r
    >For the purpose of onboarding, we recommend that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
 
 
-1. Log in to Admin Console
-(Same as before)
+1. Log in to [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en). Refer to Logging in to Admin Console for more details.
 
-1. Review AEM as a Cloud Service Product Profiles
-From Admin Console you can see the list of Cloud Manager Profiles. To do this:
+1. Review [AEM as a Cloud Service Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles). 
 
-1. Once you're logged in to Adobe Admin Console, select Adobe Experience Manager as a Cloud service from the Products and Services card:
+Follow the steps below to see the list of Cloud Manager Profiles from Adobe Admin Console:
 
-1. Navigate and select the instance (Author instance of Development environment) as shown in the picture below.
+   1. Once you're logged in to Adobe Admin Console, select Adobe Experience Manager as a Cloud service from the Products and Services card:
 
+   1. Navigate and select the instance (Author instance of Development environment) as shown in the picture below.
 
-
-   Now you will be able to see the list of AEM as a Cloud Service product profiles that will be need to assigned to a user based on their role. To learn more about these go to AEM as a Cloud Service Product Profiles.
+      Now you will be able to see the list of AEM as a Cloud Service product profiles that will be need to assigned to a user based on their role. To learn more about these go to AEM as a Cloud Service Product Profiles.
 
 
 ## Add team members to AEM User or AEM Administrator Product Profile {#add-team-members}
 
-To be granted access to AEM as a Cloud Service instance users must belong to one of two product profiles 'AEM Users' or 'AEM Administrators'. 
+To be granted access to AEM as a Cloud Service instance users must belong to one of two product profiles `AEM Users` or `AEM Administrators`. 
 
 >[!NOTE]
 >You must be granted permissions to the instance, permissions to administer the Cloud Manager will not suffice. Learn more. 
@@ -81,5 +79,5 @@ The users that you assigned to AEM as a Cloud Service product profiles are now r
 
 ## Additional Resources {#additional-resources}
 
-Configuring access to AEM (Video walk through)
-Quick Start Guide to Authoring Pages
+* [Configuring access to AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
+* [Quick Start Guide to Authoring Pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
