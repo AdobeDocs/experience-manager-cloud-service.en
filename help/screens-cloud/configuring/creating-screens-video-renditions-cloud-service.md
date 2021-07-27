@@ -1,9 +1,9 @@
 ---
-title: Creating Screens Video Renditions in Screens as a Cloud Service
-description: This page describes how to create Screens Video Renditions in Screens as a Cloud Service.
+title: Creating Video Renditions in Screens as a Cloud Service
+description: This page describes how to create video renditions in Screens as a Cloud Service.
 ---
 
-# Creating Screens Video Renditions in Screens as a Cloud Service {#creating-screens-video-renditions}
+# Creating Video Renditions in Screens as a Cloud Service {#creating-screens-video-renditions}
 
 ## Introduction {#introduction}
 
@@ -12,7 +12,9 @@ This will guide describes how to create video renditions used in Screens players
 >[!IMPORTANT]
 >The steps  highlighted in this section must be configured if you are planning to use videos in Screens channels.
 
-## Steps to Create Screens Video Renditions in Screens as a Cloud Service {#steps-creating-screens-video-renditions}
+## Steps to Create Video Renditions in Screens as a Cloud Service {#steps-creating-screens-video-renditions}
+
+Follow the steps below to create video renditions in Screens as a cloud Service from Screens Content Provider:
 
 1. Navigate to your channel in Screens Content Provider.
 
