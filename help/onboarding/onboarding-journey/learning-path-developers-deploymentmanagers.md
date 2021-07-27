@@ -44,19 +44,19 @@ Developer and Deployment Managers are now ready to get familiar with how to deve
 
 ## Additional Resources {#additional-resources}
 
-* Accessing Git and Git account management from Cloud Manager
+* [Accessing Git and Git account management from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* Local Development Environment for AEM as a Cloud Service
+* [Local Development Environment for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* Getting started with AEM Sites (tutorial)
+* [Getting started with AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* Getting Started with the AEM SPA Editor and React | Adobe Experience Manager
+* [Getting Started with the AEM SPA Editor and React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-* Getting Started with the AEM SPA Editor and Angular
+* [Getting Started with the AEM SPA Editor and Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 
-* Getting started with AEM Headless - GraphQL
+* [Getting Started with AEM Headless - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
 
-* Getting started with AEM SPA Editor for Developers
+* [Getting Started with AEM SPA Editor for Developers](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
 
 ### Experience League Courses {#experience-league-courses}
 
