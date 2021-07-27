@@ -33,20 +33,29 @@ This will guide describes how to create video renditions used in Screens players
 
 1. Navigate to **Video** tab to add a video encoding and click on **Add New**.
 
+   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+
+1. Enter the **Encoding Name** such as , **screens-fullhd** and the **Bitrate** as **2500**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Please ensure to use the Encoding name that starts with "screens-", only these video renditions will be considered to play the video experience in Screens As a Cloud Service. Enter the bit rate that suits your videos (2500kbps for 720px video and 5000 kbps for 1080px)
+   >Please ensure to use the Encoding name that starts with "screens-", only these video renditions will be considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500kbps for 720px video and 5000 kbps for 1080px).
 
    >[!NOTE]
-   >Multiple video renditions can be added with varying width/height/bitrate to suit your needs, but please remember that all the screens- renditions will be downloaded by the Screens devices, even though the device play only video rendition.
+   >Multiple video renditions can be added with varying width/height/bitrate to work your videos. Please remember that all the screens- renditions will be downloaded by the Screens devices, even though the device plays only video rendition.
 
-1. Click on Save
+1. Click on **Save**.
 
-1. Select the Processing profile and click on "Apply profile to Folder(s)"
+1. Select the Processing profile and click on **Apply profile to Folder(s)**.
 
-1. Select the folder(s) where Screens videos are kept and click on Apply
+   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. You can create multiple Processing profiles and apply them to the corresponding folders, so that the videos in those folders gets the specific video renditions
+1. Select the folder(s) where Screens videos are kept and click on **Apply**.
 
-1. When you upload any videos to the folder where Processing profile is applied, videos will be processed and configured renditions will be created, which will be used by the Screens devices to play the videos.
+   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+
+   >[!NOTE]
+   >* You can create multiple Processing profiles and apply them to the corresponding folders, so that the videos in those folders get the specific video renditions.
+   >* When you upload any videos to the folder where Processing profile is applied, videos are processed and configured renditions are created, which are further used by the Screens devices to play the videos.
 
