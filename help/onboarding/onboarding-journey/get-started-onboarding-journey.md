@@ -7,7 +7,7 @@ index: no
 ---
 # Get Started with Onboarding Process {#getting-started}
 
-Onboarding is the process during which a designated System Administrator sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
+Onboarding is the process during which a designated [System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which, each member is able to login and access their AEM as a Cloud Service resources.
 
 ## Objective {#objective}
 
@@ -15,8 +15,8 @@ As a System Administrator, this document summarizes the very first steps in your
 
 After reading this section you should be able to:
 
-* Access and login to Admin Console
-* Review your privileges as a System Administrator via Admin Console
+* Access and login to Admin Console.
+* Review your privileges as a System Administrator via Admin Console.
 
 >[!NOTE]
 >Before you start the onboarding process, please ensure to learn about Adobe Admin Console. The Adobe Admin console is a central place to administer and manage your Adobe product licenses and users. Your system administrator will sign in to the Adobe Admin console to add or remove users and more. See [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) to learn more.
@@ -36,12 +36,12 @@ Follow the steps below to navigate to Admin Console and review your System Admin
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. Login using your Adobe ID. Upon successful login, you will see the **Overview** page of the Adobe Admin Console, as shown below. 
+1. Login using your [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Upon successful login, you will see the **Overview** page of the Adobe Admin Console, as shown below. 
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the Org name from the action bar and choose the required organization to which you need access to, as shown in the figure below.
+   >If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the organization name from the top right corner and choose the required organization to which you need access to, as shown in the figure below.
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
