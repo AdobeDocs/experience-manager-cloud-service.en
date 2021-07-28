@@ -74,3 +74,5 @@ Now that you have learned the concepts and terminology, the next step is to [Lea
   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
 
 * AEM Headless Content Architect Journey
+
+* AEM Headless Content Translation Journey
