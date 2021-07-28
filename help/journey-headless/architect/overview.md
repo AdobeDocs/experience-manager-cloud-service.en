@@ -20,9 +20,9 @@ This guide leads you through the most important topics so that on completion you
 
 ## Audience {#audience}
 
-This journey is designed for the Content Architect persona. As a Content Architect you will be defining the structure of the content.
+This journey is designed for the Content Architect persona. As a Content Architect you will be defining the structure of the content. These definitions will then be used by the Content Authors, when they create the actual content.
 
-The journey lays out the requirements, steps, and approach of an AEM Headless project from their perspective. The journey will define additional personas with which the content architect must interact for a successful project, but the point-of-view for the journey is that of the content architect.
+The journey lays out the requirements, steps, and approach of an AEM Headless project from the perspective of a Content Architect. The journey will define additional personas with which the content architect must interact for a successful project, but the point-of-view for the journey is that of the content architect.
 
 Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
