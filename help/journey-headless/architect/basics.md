@@ -63,10 +63,12 @@ Within a model:
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
 1. The **Fragment Reference** data type allows you to realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
 
+<!--
 For example:
 ![Content Modeling with Content Fragments](assets/headless-modeling-01.png "Content Modeling with Content Fragments")
+-->
 
-### Data Types {#data-types}
+## Data Types {#data-types}
 
 AEM provides the following data types for you to model your content:
 
@@ -81,7 +83,7 @@ AEM provides the following data types for you to model your content:
 * Fragment Reference
 * JSON Object
 
-### References and Nested Content {#references-nested-content}
+## References and Nested Content {#references-nested-content}
 
 Two data types provide references to content outside a specific fragment:
 
@@ -106,7 +108,31 @@ For content modeling the **Fragment Reference** data type allows you to create m
 
 With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
 
-This should be used with caution and the best practice can be defined as *nest as much as necessary, but as little as possible*.
+>[!NOTE]
+>
+>This should be used with caution and the best practice can be defined as *nest as much as necessary, but as little as possible*.
+
+Fragment References do just that - they allow you to reference another fragment. 
+
+For example, you might have the following Content Fragment Models defined:
+
+* City
+* Company
+* Person
+* Awards
+
+Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+
+And a Person can have an Award (or maybe two).
+
+* My Company - Company
+  * CEO - Person
+  * Employee(s) - Person
+    * Personal Award(s) - Award
+
+And that's just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+
+Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
 
 ## What's Next {#whats-next}
 
