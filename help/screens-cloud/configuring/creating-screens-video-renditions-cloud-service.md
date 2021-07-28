@@ -49,7 +49,7 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
 
 1. Click on **Save**.
 
-1. Select the Processing profile and click on **Apply profile to Folder(s)**.
+1. Select the Processing profile and click on **Apply Profile to Folder(s)**.
 
    ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
