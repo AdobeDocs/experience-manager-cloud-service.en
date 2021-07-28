@@ -245,8 +245,6 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   
     * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
   
-    * ...basically everything on this page is relevant, apart from actually creating a Content Fragment Model, and Associated Content.
-
   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
 
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
@@ -261,3 +259,5 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   * [Creating an Assets Folder Headless Quick Start Guide](help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
 * AEM Headless Content Architect Journey
+
+* AEM Headless Translation Journey
