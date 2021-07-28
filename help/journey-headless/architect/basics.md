@@ -64,6 +64,7 @@ Within a model:
 1. The **Fragment Reference** data type allows you to realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
 
 For example:
+
 ![Content Modeling with Content Fragments](assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 
 ## Data Types {#data-types}
@@ -80,6 +81,10 @@ AEM provides the following data types for you to model your content:
 * Content Reference
 * Fragment Reference
 * JSON Object
+
+>[!NOTE]
+>
+>Further details are available under Content Fragment Models - Data Types.
 
 ## References and Nested Content {#references-nested-content}
 
@@ -137,6 +142,10 @@ Representing these interrelationships can be achieved with Fragment References, 
 Now that you have learned the basics, the next step is to [Learn about Creating Content Fragment Models in AEM](model-structure.md). This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
 
 ## Additional Resources {#additional-resources}
+
+  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+
+    * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
 
