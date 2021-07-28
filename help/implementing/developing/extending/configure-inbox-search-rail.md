@@ -18,13 +18,25 @@ The following are the available predicate types for Inbox:
 
 * Options Property Predicate
 
+>[!NOTE]
+>
+>Ensure that you are a member of the `workflow-administrators` group to configure search filters for Inbox.
+
 ## Create or open a customized configuration {#creating-opening-customized-configuration}
 
 1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
 
 1. Select the **[!UICONTROL Inbox Search Rail]** configuration and tap **[!UICONTROL Edit]**.
-1. Incorporate the predicate configuration changes using **[!UICONTROL Edit Search Form]**.
+1. Incorporate the predicate configuration changes using **[!UICONTROL Edit Search Forms]**.
 1. Select **[!UICONTROL Done]** to save the configuration.
+
+## Delete a customized configuration {#delete-customized-configuration}
+
+To delete a customized configuration:
+
+1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
+
+1. Select the **[!UICONTROL Inbox Search Rail]** configuration and tap **[!UICONTROL Delete]**.
 
 ## Configure Range Predicate {#range-predicate}
 
@@ -38,7 +50,7 @@ To configure a Range Predicate:
 1. Specify the label for the filter in the **[!UICONTROL Filter Label]** field. Select the **[!UICONTROL Enable Decimal Values]** checkbox to accept decimal values for numbers while defining the range.
 1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
 
-The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label with an option to define the maximum and minimum values. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
+The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label with an option to define the maximum and minimum values. When you press the Enter key, [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
 
 ## Configure Text Predicate {#text-predicate}
 
@@ -52,7 +64,7 @@ To configure a Text Predicate:
 1. Specify the text that displays in the Search text box as a placeholder text in the **[!UICONTROL Search Text Box Placeholder]** field.
 1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
 
-The configuration changes reflect when you open the Filters page. [!DNL Experience Manager] applies the search text specified in step 4 on the column name specified in step 3 and returns the Inbox items.
+The configuration changes reflect when you open the Filters page. When you press the Enter key, [!DNL Experience Manager] applies the search text specified in step 4 on the column name specified in step 3 and returns the Inbox items.
 
 ## Configure Date Range Predicate {#date-range-predicate}
 
@@ -82,7 +94,24 @@ To configure a Custom Column Options Predicate:
 1. Select the **[!UICONTROL Single Select]** checkbox to enable the selection of just one option while applying filter on an Inbox column.
 1. In the **[!UICONTROL Add Options]** section:
    1. Select **[!UICONTROL Manual]** to define the filter search options manually. Tap **[!UICONTROL Add Filter Options]** to define the first option. Specify the label for the column option and the option value text to search for. For example, if you want to search for **Female** as a value in an Inbox column, you can specify **F** as label for the column option and add **Female** as the option value text. Similarly, you can add more filter options.
-   1. Select **[!UICONTROL JSON Path]** to define options using a JSON file path.
+   1. Select **[!UICONTROL JSON Path]** to define options using a JSON file path. The following is a sample JSON file to define filter options:
+
+      ```JSON
+          {
+         "options":[
+            {
+            "text":"Female",
+            "value":"F"
+            },
+            {
+            "text":"Male",
+            "value":"M"
+            }
+          ]
+        }
+
+      ```
+
    1. Select **[!UICONTROL CRX Options Path]** to define options using the CRX repository paths. Tap **[!UICONTROL Add Option Paths]** to add multiple paths.
 1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
 
