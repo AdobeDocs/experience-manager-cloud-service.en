@@ -104,6 +104,25 @@ Now that you have learned about references and structure in Content Fragments, t
 
 ## Additional Resources {#additional-resources}
 
-* [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+ 
+  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
 
-* [Structure Tree - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-structure-tree.md)
+    * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+  
+    * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+  
+  * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+
+  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+
+    * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  
+    * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
+
+* Getting Started Guides
+  * [Creating an Assets Folder Headless Quick Start Guide](help/implementing/developing/headless/getting-started/create-assets-folder.md)
+
+* AEM Headless Content Architect Journey
+
+* AEM Headless Translation Journey
