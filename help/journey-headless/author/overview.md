@@ -25,7 +25,9 @@ This guide leads you through the most important topics so that on completion you
 
 ## Audience {#audience}
 
-This journey is designed for the content author persona, laying out the requirements, steps, and approach for authoring content for an AEM Headless project. The journey will define additional personas with which the author must interact for a successful project, but the point-of-view for the journey is that of the content author.
+This journey is designed for the Content Author persona. As a Content Author you will be creating the actual content in Content Fragments. 
+
+The journey lays out the requirements, steps, and approach for authoring content for an AEM Headless project. The journey will define additional personas with which the author must interact for a successful project, but the point-of-view for the journey is that of the content author.
 
 Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 

@@ -57,7 +57,7 @@ For the headless applications to be able to access your content, and do somethin
 
 Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling. 
 
-For AEM a Content Architect will perform the data modeling to design a range of **Content Fragment Models** - that you then use as a basis for your content by using **Content Fragments**.
+For AEM the Content Architect role (often a different person) will perform the data modeling to design a range of **Content Fragment Models** - that you then use as a basis for your content by using **Content Fragments**.
 
 >[!NOTE]
 >
