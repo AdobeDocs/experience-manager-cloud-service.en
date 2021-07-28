@@ -37,7 +37,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |0|AEM Headless Content Architect Journey|This document|
 |1|[Modeling for Headless with AEM - An Introduction](introduction.md)|Learn about Headless Technology and what it means for modeling.|
 |2|[Learn modeling Basics](basics.md)|Learn the basics of modeling with AEM|
-|3|[How to build model structures](model-structures.md)|Learn how to model structures with multiple layers for headless|
+|3|[How to build model structures](model-structure.md)|Learn how to model structures with multiple layers for headless|
 
 ## What's Next {#what-is-next}
 
