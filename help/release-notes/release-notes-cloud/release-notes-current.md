@@ -27,6 +27,14 @@ The following release (2021.7.0) will be on August26 , 2021.
 
 Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334296) video for a summary of the features added.
 
+## Adobe Experience Manager as a Cloud Service Foundation {#foundation}
+
+### What's New {#what-is-new-foundatuion}
+
+* More flexible dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your dispatcher configuration in order to take advantage of it.
+* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30th. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
+* Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
+
 ## XML Documentation for AEM as a cloud Service {#xml-documentation}
  
 ### What's New {#what-is-new-xml-documentation}
