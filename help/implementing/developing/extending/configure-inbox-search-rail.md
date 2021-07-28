@@ -112,7 +112,22 @@ To configure a Custom Column Options Predicate:
 
       ```
 
-   1. Select **[!UICONTROL CRX Options Path]** to define options using the CRX repository paths. Tap **[!UICONTROL Add Option Paths]** to add multiple paths.
+   1. Select **[!UICONTROL CRX Options Path]** to define options using the CRX repository paths. Tap **[!UICONTROL Add Option Paths]** to add multiple paths. The following is a sample to define `Male` and `Female` filter options:
+
+      ```JSON          
+         <gender jcr:primaryType="sling:OrderedFolder">
+                        <male
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Male"
+                            value="M"/>
+                        <female
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Female"
+                            value="F"/>
+                    </gender>
+
+      ```
+
 1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the Custom Column Option Predicate. [!DNL Experience Manager] applies the search criteria defined in step 6 on the column name specified in step 3 and returns the Inbox items.
