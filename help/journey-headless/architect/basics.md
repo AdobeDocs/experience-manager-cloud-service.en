@@ -63,10 +63,8 @@ Within a model:
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
 1. The **Fragment Reference** data type allows you to realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
 
-<!--
 For example:
 ![Content Modeling with Content Fragments](assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
 
 ## Data Types {#data-types}
 
