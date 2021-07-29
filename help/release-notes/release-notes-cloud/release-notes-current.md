@@ -128,34 +128,29 @@ The next release is planned for July 15, 2021.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in [!DNL Assets] {#ga-features-assets}
+### New features in [!DNL Assets] {#assets-features}
 
-* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [Generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
+* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
 
-* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) for [!DNL Adobe XD] is available. It provides:
+* [!DNL Experience Manager Assets] embeds the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5. The controls available in the preview are to zoom, to navigate to pages, to undock controls, and to view in full screen. The integrated PDF viewer supports AI, DOCX, INDD, PDF, and PSD file formats. You can comment on the asset itself but commenting and annotations within the PDF file are not supported.
 
-  * Support for [!DNL Assets Essentials].
-  * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
+  ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* The [Asset Bulk Ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor) lets you add metadata during a bulk ingestion.
+* The Linkshare download functionality uses asynchronous downloads that boost the download speed. See [Download assets shared using link sharing](/help/assets/download-assets-from-aem.md#link-share-download).
 
-### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}
+   ![Download inbox](/help/assets/assets/download-inbox.png)
 
 * The view settings are enhanced to let users choose a default view and a default sorting parameter.
 
-  ![Set default view in View Settings](/help/assets/assets/view-settings-for-defaults.png)
-
-* The Linkshare download functionality uses asynchronous downloads that boosts the download speed. See [Download assets shared using link sharing](/help/assets/download-assets-from-aem.md#link-share-download).
-
-   ![Download inbox](/help/assets/assets/download-inbox.png)
+  ![Set default view in [!UICONTROL View Settings]](/help/assets/assets/view-settings-for-defaults.png)
 
 * Users can search and filter the folders based on property predicates.
 
   ![Filter search folders using search predicates](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer to preview the supported document formats. It is powered by [!DNL Adobe Document Cloud]. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5. The controls available in the preview are to zoom, to navigate to pages, to undock controls, and to view in full screen. The integrated PDF viewer supports AI, DOCX, INDD, PDF, and PSD file formats. You can comment on the asset itself but commenting and annotations within the PDF file are not supported.
+### New features available in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-  ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
+<!-- TBD: Not sure about GA of these enh. Shall check with the team.
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
 
@@ -164,12 +159,13 @@ The next release is planned for July 15, 2021.
 * You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
 
   ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
+-->
 
-### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
+* When you share digital assets as a link, users can copy the URL to clipboard. The enhancement lets you share assets in a faster and more convenient way.
 
-* When you add an owner to a sub-folder, [!DNL Assets] also adds the same user as an owner of the parent folder. (CQ-4323737)
-* When adding assets to Collections, if a user applies a filter on Collections search, the user cannot view the Collections in List view. (CQ-4323181)
-* When searching for files and folders, if user applies a filter and selects [!UICONTROL Files & Folders], only the files are displayed but not the folder. (CQ-4319543)
+### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
+
+The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
  
