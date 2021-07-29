@@ -111,7 +111,7 @@ The next release is planned for July 15, 2021.
 * Publish to Preview Tier now shown as page status in Sites Admin UI
 * Publish to Preview Tier now surfacing preview URL at the end of the action and persisting the URL in page properties for later reference
 
-## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
