@@ -1,7 +1,6 @@
 ---
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
 ---
@@ -12,7 +11,7 @@ The following section outlines the general Release Notes for the current (latest
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021 and so on.
+>From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021, and so on.
 
 >[!NOTE]
 >
@@ -20,8 +19,8 @@ The following section outlines the general Release Notes for the current (latest
 
 ## Release Date {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 is July 29, 2021.
-The following release (2021.7.0) will be on August26 , 2021.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current release (2021.7.0) is July 29, 2021.
+The following release (2021.8.0) is on August 26, 2021.
 
 ## Release Video {#release-video}
 
@@ -29,18 +28,17 @@ Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#foundation}
 
-### What's New {#what-is-new-foundatuion}
+### What's New {#what-is-new-foundation}
 
 * More flexible dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your dispatcher configuration in order to take advantage of it.
-* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30th. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
+* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
-## XML Documentation for AEM as a cloud Service {#xml-documentation}
+## XML Documentation for Experience Manager as a Cloud Service {#xml-documentation}
  
-### What's New {#what-is-new-xml-documentation}
+### What is New {#what-is-new-xml-documentation}
  
-* XML Documentation for AEM as a Cloud Service is now GA.
-* This will allow existing AEM Cloud Service customers to procure XML Documentation addon for importing, creating, managing and delivering technical content across multiple channels including AEM sites
+XML Documentation for Experience Manager as a Cloud Service is generally available. It allows Experience Manager as a Cloud Service customers to procure XML Documentation addon to import, create, manage, and deliver technical content across multiple channels including Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -193,10 +191,10 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### New features available in [!DNL Forms] prerelease channel {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
-  * Generate print PDFs from an XFA form PDF and Adobe Acrobat Form.
+  * Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.
 
 * **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
 
