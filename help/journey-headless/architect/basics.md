@@ -143,9 +143,9 @@ Now that you have learned the basics, the next step is to [Learn about Creating 
 
 ## Additional Resources {#additional-resources}
 
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 
-    * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
 
