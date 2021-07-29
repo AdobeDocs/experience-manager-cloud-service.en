@@ -24,9 +24,9 @@ The following release (2021.8.0) is on August 26, 2021.
 
 ## Release Video {#release-video}
 
-Have a look at the [June 2021 Release Overview](https://video.tv.adobe.com/v/334296) video for a summary of the features added.
+Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335580) video for a summary of the features added.
 
-## Adobe Experience Manager as a Cloud Service Foundation {#foundation}
+## Experience Manager Foundation as a Cloud Service {#foundation}
 
 ### What's New {#what-is-new-foundation}
 
@@ -165,24 +165,7 @@ The next release is planned for July 15, 2021.
 
 The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
- 
-### New features in [!DNL Sites] {#ga-features-sites}
- 
-* 
-* 
- 
-### New features available in the [!DNL Sites] prerelease channel {#beta-features-sites}
- 
-* 
-* 
- 
-#### Bugs fixed in [!DNL Sites] {#bugs-fixed-sites}
- 
-* 
-* 
-
-## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
@@ -202,7 +185,7 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 * **Microsoft Azure data store connector**: You can now connect Form Data Model to Microsoft Azure Storage. It allows you to store and retrieve adaptive form data to Microsoft Azure Storage as a BLOB.  
 
-## [!DNL Adobe Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 This section outlines the Release Notes for AEM Screens as a Cloud Service.
 
@@ -228,10 +211,14 @@ The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
 ### Release Date {#release-date-july-cam}
 
 The Release Date for Cloud Acceleration Manager is July 15, 2021.
-
-## What is New {#what-is-new-cam}
+ 
+### What is New {#what-is-new-cam}
 
 Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+
+>[!NOTE]
+>
+> Check this [Cloud Acceleration Manager demo video](https://video.tv.adobe.com/v/335547).
 
 ## CIF Add-on {#cloud-services-cif}
 
