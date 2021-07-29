@@ -122,6 +122,30 @@ Customers switching to use the Azul JDKs should be aware that not all existing a
 
 The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
 
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
+
+### Bug Fixes {#bug-fixes-screens}
+
+* Content Provider settings are now validated during create or update.
+
+* All displays views have folders column.
+
+* You can expand Screens Content Structure.
+
+* `bulk-offline-update-service` was missing all permissions for some environments.
+
+* Update Help link to match the new screens cloud documentation.
+
+* Un-assign playlists and disallow removing playlist(s) with player(s) assigned.
+
+* Player now re-download Assets when "ALL" Cache is cleared.
+
+* Repeat Scheduling now works, if the *End Time* is set for following day.
+
+* `Back&Forward` now work in Screens cloud UI.
+
+* Tags with same name but different namespaces could not be created.
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
