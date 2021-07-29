@@ -124,23 +124,6 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
-### What's New {#whats-new-screens}
-
-**Naming AEM Screens Player Device**
-
-The AEM Screens players now include the capability of sending a device name to Adobe Experience Manager (AEM) as a Cloud Service.
-By default, when bulk registration is used to register a device, a system generated username is entered in the title field. As an alternative, a customer may use an asset tag or other friendly name so it is visible in AEM and easier to assign appropriate content.
-
-Refer to the following documentation to learn how to configure the name in each supported Operating System:
-
-* [Android](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/installing-client/implementing-android-player.html?lang=en#name-android)
-
-* [Windows](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/installing-client/implementing-windows-player.html?lang=en#name-windows)
-
-* [Tizen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/installing-client/tizen-player.html?lang=en#name-tizen)
-
-* [Chrome OS](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/installing-client/implementing-chrome-os-player.html?lang=en#name-chrome)
-
 ### Bug Fixes {#bug-fixes-screens}
 
 * Content Provider settings are now validated during create or update.
@@ -151,17 +134,17 @@ Refer to the following documentation to learn how to configure the name in each 
 
 * `bulk-offline-update-service` was missing all permissions for some environments.
 
-* Update Help link to match the new screens cloud documentation.
+* Updated Help link to match the new screens cloud documentation.
 
-* Un-assign playlists and disallow removing playlist(s) with player(s) assigned.
+* Un-assign playlists and disallow removing playlist(s) with player(s) assigned, now works.
 
-* Player now re-download Assets when "ALL" Cache is cleared.
+* Player now re-downloads Assets when "ALL" Cache is cleared.
 
 * Repeat Scheduling now works, if the *End Time* is set for following day.
 
-* `Back&Forward` now work in Screens cloud UI.
+* `Back&Forward` now works in Screens as  a Cloud Service UI.
 
-* Tags with same name but different namespaces could not be created.
+* Tags with same name but different namespaces could not be created earlier.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
