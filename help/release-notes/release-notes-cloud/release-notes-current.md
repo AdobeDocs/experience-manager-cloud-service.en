@@ -42,7 +42,7 @@ XML Documentation for Experience Manager as a Cloud Service is generally availab
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.7.0 and 2021.6.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.7.0.
 
 ### Release Date {#release-cm-july}
 
