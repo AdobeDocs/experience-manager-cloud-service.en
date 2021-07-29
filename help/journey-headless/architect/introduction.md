@@ -7,47 +7,46 @@ description: An introduction to the powerful, and flexible, headless features of
 
 In this part of the [AEM Headless Content Architect Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand content modeling for headless content delivery with Adobe Experience Manager (AEM) as a Cloud Service.
 
+This document helps you understand headless content delivery, how AEM supports headless, and how content is modeled for headless. After reading you should:
+
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and content modeling.
+
 ## Objective {#objective}
 
 * **Audience**: Beginner
 * **Objective**: Introduce the concepts and terminology relevant to Headless Content Modeling.
 
-## Content Management System (CMS) {#content-management-system}
+## Full-Stack Content Delivery {#full-stack}
 
-What is a Content Management System?
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
-A Content Management System (CMS) is just what it says it is - a computer system used to manage content. That's a bit general, so to be more precise, it is (typically) used for managing content that you want to make available on your website(s).
+![The classic full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-## Headless CMS {#headless-cms}
+In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
-Headless is a term used to describe systems that effectively detach the content from the manner of displaying that content on the web. 
+* There is one system to maintain.
+* Content is managed centrally.
+* All services of the system are integrated.
+* Content authoring is seamless.
 
-Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
+So if new channel needs to be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
-Now headless means that the content-set can be managed in the CMS and then accessed by one, or more, (independent) applications. 
+![Adding a new channel to the stack](/help/journey-headless/developer/assets/adding-channel.png)
 
-This means that the content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that authors do not need to worry about layout and formatting.
+However the complexity of the dependencies within the stack quickly become apparent as other items in the stack need to be adjusted to accommodate the changes.
 
->[!NOTE]
->
->If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
+## The Head in Headless {#the-head}
 
-## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
+The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
 
-So what is AEM?
+When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. However, by only delivering the **content** in a standardized fashion, a headless CMS omits the final output rendering, leaving the **presentation** of the content to the consuming service.
 
-First and foremost, AEM is a Content Management System with a wide range of features that can also be customized to meet your requirements. 
+![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-This all means that it can be used as a:
+The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
-* Headless CMS
-  * For headless, content can be authored as **Content Fragments**. 
-  These are self-contained items of content that can be directly accessed by a range of applications, as they have a predefined structure, based on **Content Fragment Models**.
-  This means the content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
-  (And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
-
-* "Traditional" CMS
-  * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
+Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
 ## Content Modeling {#content-modeling}
 
