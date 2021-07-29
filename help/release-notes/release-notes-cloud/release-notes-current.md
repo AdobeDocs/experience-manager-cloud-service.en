@@ -134,17 +134,17 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 * `bulk-offline-update-service` was missing all permissions for some environments.
 
-* Update Help link to match the new screens cloud documentation.
+* Updated Help link to match the new screens cloud documentation.
 
-* Un-assign playlists and disallow removing playlist(s) with player(s) assigned.
+* Un-assign playlists and disallow removing playlist(s) with player(s) assigned, now works.
 
-* Player now re-download Assets when "ALL" Cache is cleared.
+* Player now re-downloads Assets when "ALL" Cache is cleared.
 
 * Repeat Scheduling now works, if the *End Time* is set for following day.
 
-* `Back&Forward` now work in Screens cloud UI.
+* `Back&Forward` now works in Screens as  a Cloud Service UI.
 
-* Tags with same name but different namespaces could not be created.
+* Tags with same name but different namespaces could not be created earlier.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
