@@ -142,26 +142,6 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 * **Microsoft Azure data store connector**: You can now connect Form Data Model to Microsoft Azure Storage. It allows you to store and retrieve adaptive form data to Microsoft Azure Storage as a BLOB.  
 
-## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
-
-This section outlines the Release Notes for AEM Screens as a Cloud Service.
-
-### Release Date {#release-date-june-screens}
-
-The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
-
-### What's New {#what-is-new-screens-june}
-
->[!NOTE]
->See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
-
-* Bulk Device Registration Management means that provisioning massive amounts of player devices is faster and more efficient.
-
-* Improved search and filter options for each of the Device, Display, and Channel inventory views.
-
-* Device heath snapshot saves time by providing critical status as a glance.
-
-* Object details page offers a summary of the most relevant information for each object in your project.
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -187,39 +167,3 @@ Cloud Acceleration Manager is a cloud-based application designed to guide your I
   * New sitemap component for content and commerce pages
 
 * Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
-
-## Content Transfer Tool {#content-transfer-tool}
-
-### Release Date {#release-date-ctt-latest}
-
-The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
-
-### What's New {#what-is-new-ctt-latest}
-
-* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
-
-* Guardrail added to CTT to prevent users from stopping an ingestion and potentially corrupting data once it has reached the critical point during the ingestion phase.
-
-* Extraction logs made more descriptive to help with troubleshooting.
-
-* Added more descriptive ingestion status messages in the UI.
-
-### Bug Fixes {#bug-fixes-ctt-latest}
-
-* While stopping an ingestion on the Author instance, the UI overwrote a previously finished ingestion on the Publish instance to `STOPPED` from `FINISHED`. This has been fixed. 
-
-## Best Practices Analyzer {#best-practices-analyzer}
-
-### Release Date {#release-date-bpa}
-
-The Release Date for Best Practices Analyzer v2.1.16 is June 30, 2021.
-
-### What's New {#what-is-new-bpa-latest}
-
-* Ability to detect and report on missing child nodes in folders under `/content/dam`. 
-
-* Ability to detect and report on the version of Best Practices Analyzer used.  
-
-### Bug Fixes {#bug-fixes-bpa-latest}
-
-* Logging error related to Unsupported Repository Structure (URS) fixed.
