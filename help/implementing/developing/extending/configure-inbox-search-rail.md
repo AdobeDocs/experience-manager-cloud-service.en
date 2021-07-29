@@ -52,6 +52,10 @@ To configure a Range Predicate:
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label with an option to define the maximum and minimum values. When you press the Enter key, [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
 
+>[!NOTE]
+>
+>The article lists the latest user interface options. The option names will be updated on the user interface in the upcoming release.
+
 ## Configure Text Predicate {#text-predicate}
 
 Filter Inbox items to search for a text string within an Inbox column using the Text Predicate.
