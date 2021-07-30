@@ -66,7 +66,7 @@ With the above example data, a category page URL formatted using the default URL
 
 ## Custom Url Formats {#custom-url-format}
 
-To provide a custom URL format a project can implement the [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) and regsiter the implementation as OSGI service, using it either  as category page or product page url format. The `UrlFormat#PROP_USE_AS` service property indicates, which of the configured pre-defined formats to replace:
+To provide a custom URL format a project can implement the [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) and regsiter the implementation as OSGI service, using it either as category page or product page url format. The `UrlFormat#PROP_USE_AS` service property indicates, which of the configured pre-defined formats to replace:
 
 * `useAs=productPageUrlFormat`, will replace the configured product page url format
 * `useAs=categoryPageUrlFormat`, will replace the configured category page url format
