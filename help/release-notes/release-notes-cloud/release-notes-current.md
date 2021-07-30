@@ -126,22 +126,21 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
-* You can now use Automated Forms Conversion service to convert PDF Forms in French, German, and Spanish language to adaptive forms. 
+* You can now use Automated Forms Conversion service to [convert PDF Forms in French, German, and Spanish language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to adaptive forms.
 * Added a separate panel to template editor to display errors related to adaptive form components. It helps consolidate all adaptive form errors at one location and reduce resolution time.
 
 ### New features available in [!DNL Forms] prerelease channel {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
   * Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.
 
 * **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
 
-* **Acroform-based Document of Record**: You can also use Adobe Acrobat Form PDF (Acroform PDF) as a template for Document of Record besides XFA-based form template.
+* **Acroform-based Document of Record**: You can also [use Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
 
-* **Microsoft Azure data store connector**: You can now connect Form Data Model to Microsoft Azure Storage. It allows you to store and retrieve adaptive form data to Microsoft Azure Storage as a BLOB.  
-
+* **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). It allows you to retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB.  
 
 ## Cloud Acceleration Manager {#cam}
 
