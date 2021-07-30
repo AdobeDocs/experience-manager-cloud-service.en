@@ -106,6 +106,30 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 * Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
 
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
+
+### Bug Fixes {#bug-fixes-screens}
+
+* Content Provider settings are now validated during create or update.
+
+* All displays views have folders column.
+
+* You can expand Screens Content Structure.
+
+* `bulk-offline-update-service` was missing all permissions for some environments.
+
+* Updated Help link to match the new screens cloud documentation.
+
+* Un-assign playlists and disallow removing playlist(s) with player(s) assigned, now works.
+
+* Player now re-downloads Assets when "ALL" Cache is cleared.
+
+* Repeat Scheduling now works, if the *End Time* is set for following day.
+
+* `Back&Forward` now works in Screens as  a Cloud Service UI.
+
+* Tags with same name but different namespaces could not be created earlier.
+
 ## XML Documentation for Experience Manager as a Cloud Service {#xml-documentation}
  
 ### What is New {#what-is-new-xml-documentation}
@@ -166,27 +190,3 @@ Cloud Acceleration Manager is a cloud-based application designed to guide your I
 >[!NOTE]
 >
 > Check this [Cloud Acceleration Manager demo video](https://video.tv.adobe.com/v/335547).
-
-## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
-
-### Bug Fixes {#bug-fixes-screens}
-
-* Content Provider settings are now validated during create or update.
-
-* All displays views have folders column.
-
-* You can expand Screens Content Structure.
-
-* `bulk-offline-update-service` was missing all permissions for some environments.
-
-* Updated Help link to match the new screens cloud documentation.
-
-* Un-assign playlists and disallow removing playlist(s) with player(s) assigned, now works.
-
-* Player now re-downloads Assets when "ALL" Cache is cleared.
-
-* Repeat Scheduling now works, if the *End Time* is set for following day.
-
-* `Back&Forward` now works in Screens as  a Cloud Service UI.
-
-* Tags with same name but different namespaces could not be created earlier.
