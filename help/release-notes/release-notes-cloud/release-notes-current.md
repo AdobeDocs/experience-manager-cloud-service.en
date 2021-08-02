@@ -26,7 +26,7 @@ The following release (2021.8.0) is on August 26, 2021.
 
 Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335580) video for a summary of the features added.
 
-## Experience Manager Foundation as a Cloud Service {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### What's New {#what-is-new-foundation}
 
