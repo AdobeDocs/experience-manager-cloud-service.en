@@ -18,8 +18,8 @@ role: Developer, Architect
       + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
       + [Release Notes for 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [Release Notes for 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-      + [Release Notes for 2021.2.0](help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-      + [Release Notes for 2021.1.0](help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + [Release Notes for 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+      + [Release Notes for 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
     + 2020 {#2020}
       + [Release Notes for 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [Release Notes for 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
