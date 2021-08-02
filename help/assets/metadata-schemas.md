@@ -41,7 +41,7 @@ To view a list of forms or templates, in [!DNL Experience Manager] interface nav
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | Schema form for Content Fragments. |
 | [!UICONTROL forms] | | This schema form relates to [!DNL Adobe Experience Manager Forms]. |
- | [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
+| [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
 
 >[!NOTE]
 >
