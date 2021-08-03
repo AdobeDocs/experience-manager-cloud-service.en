@@ -61,8 +61,8 @@ You can view the Assets Insights scores from the metadata page.
 
 You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
-1. In the Assets UI, navigate to the folder containing the assets for which you want to view insights.
-1. Click the Layout option from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. In the Assets user interface, navigate to the folder containing the assets for which you want to view insights.
+1. Click the **[!UICONTROL Layout]** option from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -115,7 +115,7 @@ After you configure your Adobe Analytics account, the Page Tracker code is gener
 <!--
 Add page tracker code, CQDOC-18045, 30/07/2021
 -->
-The following code snippet displays the Page Tracker code included in a sample web page:
+The following sample code snippet displays the Page Tracker code included in a sample web page:
 
 ```xml
  <head>
