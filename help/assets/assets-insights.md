@@ -61,8 +61,8 @@ You can view the Assets Insights scores from the metadata page.
 
 You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
-1. In the Assets UI, navigate to the folder containing the assets for which you want to view insights.
-1. Click the Layout option from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. In the Assets user interface, navigate to the folder containing the assets for which you want to view insights.
+1. Click the **[!UICONTROL Layout]** option from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -89,7 +89,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Click the **[!UICONTROL Insights Configuration]** card.
 1. In the wizard, select a data center and provide your credentials including the name of your organization, user name, and Shared Secret.
@@ -111,6 +111,29 @@ After you configure your Adobe Analytics account, the Page Tracker code is gener
 
 1. From the **[!UICONTROL Navigation]** page, click the **[!UICONTROL Insights Page Tracker]** card.
 1. Click **[!UICONTROL Download]** to download the page tracker code.
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+The following sample code snippet displays the Page Tracker code included in a sample web page:
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
