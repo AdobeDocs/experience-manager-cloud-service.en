@@ -24,7 +24,7 @@ Follow the steps below to edit a Sandbox program:
 
    Navigate to the **General** tab to edit the program description.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    The **Solutions & Add-ons** tab displays two options, such as, **Sites** and **Assets** for both Production and Sandbox programs. Also, you can select **Commerce** add-on option, that is available under **Sites**, as shown in the figure below.
 

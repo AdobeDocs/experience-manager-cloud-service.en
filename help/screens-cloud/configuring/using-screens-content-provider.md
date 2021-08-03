@@ -24,10 +24,10 @@ Follow the steps below to login to Screens Content Provider:
 1. Navigate to [Adobe Experience Cloud](https://experience.adobe.com) Home page.
 
 1. Select **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Select the program for Screens as a Cloud Service and click on the icon, as shown below to open the Cloud Manager's **Overview** page for that specific program.
 
