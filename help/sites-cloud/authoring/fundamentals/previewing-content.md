@@ -7,8 +7,7 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 
 >[!NOTE]
 >
->The Preview feature will be automatically enabled by a customer-initiated pipeline execution if the environment is running AEM version 2021.05.5368.20210529T101701Z or higher.
-
+>To enable the preview feature on environments created before August 3rd, 2021, make sure the environment is at AEM version 2021.05.5368.20210529T101701Z or higher and then execute a customer-initiated pipeline.
 
 AEM offers a Sites Preview Service that is designed to let developers and content authors preview a website's final experience before it reaches the publish environment and is available publicly.
 
