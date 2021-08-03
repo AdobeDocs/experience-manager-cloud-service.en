@@ -11,6 +11,42 @@ role: Developer, Architect
 
 + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
+  + Release Notes for Cloud Manager {#release-notes-cloud-manager}
+    + [Current Release Notes (2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + 2021 {#2021}
+      + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+      + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+      + [Release Notes for 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+      + [Release Notes for 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+      + [Release Notes for 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+      + [Release Notes for 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+    + 2020 {#2020}
+      + [Release Notes for 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+      + [Release Notes for 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+      + [Release Notes for 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [Release Notes for 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+      + [Release Notes for 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+      + [Release Notes for 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+      + [Release Notes for 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+      + [Release Notes for 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+      + [Release Notes for 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+      + [Release Notes for 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+      + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+  + [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
+  + Production Programs {#production-programs}
+    + [Introduction](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+    + [Creating a Production Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
+    + [Editing a Production Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
+  + Sandbox Programs {#sandbox-programs}
+    + [Introduction](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+    + [Creating a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+    + [Editing a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+    + [Deleting a Sandbox Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+    + [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+  + Creating an AEM Application Project {#create-application-project}
+    + [Using the Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+    + [Setting up your Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+    + [Understanding the Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
   + [Managing Environments](cloud-manager/manage-environments.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
@@ -166,7 +202,9 @@ role: Developer, Architect
   + [Extending Experience Fragments](developing/extending/experience-fragments.md)
   + [Customizing and Extending Content Fragments](developing/extending/content-fragments-customizing.md)
   + [Content Fragments Configuring Components for Rendering](developing/extending/content-fragments-configuring-components-rendering.md)
-  + [Configuring Search Forms](developing/extending/search-forms.md)
+  + Manage Search Forms {#manage-search-forms}
+    + [Configuring Search Forms](developing/extending/search-forms.md)
+    + [Configure search filters for Inbox](developing/extending/configure-inbox-search-rail.md)
   + [Configure Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md)
   + [Configure the RTE plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
   + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
