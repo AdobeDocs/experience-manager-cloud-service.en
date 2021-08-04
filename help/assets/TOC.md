@@ -52,6 +52,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Authentication for Remote GraphQL Queries on Content Fragments](content-fragments/graphql-authentication-content-fragments.md)
   + [GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   + [Connected Assets](use-assets-across-connected-assets-instances.md)
+  + [Generate FPO renditions for Adobe InDesign](configure-fpo-renditions.md)
   + [Asset reports](asset-reports.md)
   + [Cascading metadata](cascading-metadata.md)
   + [XMP metadata](xmp-metadata.md)

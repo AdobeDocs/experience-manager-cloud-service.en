@@ -21,7 +21,7 @@ Following are the steps to generate FPO renditions:
 
 ## Create a Processing Profile {#create-processing-profile}
 
-To generate FPO renditions, you create a **[!UICONTROL Processing Profile]**. The profiles use cloud-native asset microservices for processing. For instructions, see [create processing profiles for asset microservices](asset-microservices-configure-and-use.md).
+To generate FPO renditions, create a **[!UICONTROL Processing Profile]**. The profiles use cloud-native asset microservices for processing. For instructions, see [create processing profiles for asset microservices](asset-microservices-configure-and-use.md).
 
 Select **[!UICONTROL Create FPO Rendition]** to generate FPO rendition. Optionally, click **[!UICONTROL Add New]** to add another rendition settings to the same profile.
 
