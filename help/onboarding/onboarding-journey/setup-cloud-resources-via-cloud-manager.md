@@ -48,7 +48,7 @@ Follow the steps below to navigate to Cloud Manager:
 1. You will navigate to Cloud Manager's **Programs & Products** page.
 
    >[!IMPORTANT]
-   >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+   >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future and to help you navigate directly to Cloud Manager's landing page.
 
 Additionally, you can navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page. Follow the steps below:
 
@@ -85,7 +85,6 @@ Additionally, you can navigate to Cloud Manager's **Programs and Products** page
          If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
 
          ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## Verifying your User Roles {#verify-user-roles}
