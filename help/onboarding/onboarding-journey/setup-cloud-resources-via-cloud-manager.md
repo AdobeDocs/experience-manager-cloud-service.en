@@ -38,9 +38,21 @@ Follow the sections below to learn how to create your [cloud service programs](#
 
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
-1. The *Business Owner* user will receive a welcome email from where they can get started, or if they cannot find it, go directly to [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) and login using your Adobe ID. 
+The *Business Owner* user will receive a welcome email from where they can get started, or if they cannot find it, go directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+Follow the steps below to navigate to Cloud Manager:
+
+1. From your welcome email click on **Get started**, as shown in the figure below.
+    ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. You will navigate to Cloud Manager's **Programs & Products** page.
+
+   >[!IMPORTANT]
+   >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future and to help you navigate directly to Cloud Manager's landing page.
+
+Additionally, you can navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page. Follow the steps below:
+
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
 1. From the Adobe Experience Cloud home page, Select **Experience Manager**.
 
@@ -50,11 +62,36 @@ Follow the sections below to learn how to create your [cloud service programs](#
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. Cloud Manager landing page displays, as shown in the figure below.
+1. Upon successful login, you will be directed to the landing page of Cloud Manager.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
-1. Verify that you have been assigned Business Owner Product Profile. To do so, select your profile from the top right, as shown below.
+   You will see one of the three options, described below:
+
+      * **When No Programs exist in Cloud Manager**
+
+         If no programs exist in your Organization, then your landing page directs you to create your first program, as shown in the figure below.
+         ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+      * **When Programs already exist in Cloud Manager**
+
+         If program(s) already exist in your Organization, then your landing page directs you to add another program and displays all your existing programs too, as shown in the figure below.
+
+         ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+      * **When a Program exists and user is System Administrator**
+
+         If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
+
+         ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+## Verifying your User Roles {#verify-user-roles}
+
+Once you have successfully logged into Cloud Manager, follow the steps below to verify that you have been assigned Business Owner Product Profile:
+
+1. Select your profile from the top right, as shown below.
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
