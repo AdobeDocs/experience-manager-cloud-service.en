@@ -19,6 +19,8 @@ Once your System Administrator grants you access to Cloud Manager, you will rece
    >[!IMPORTANT]
    >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future and to help you navigate directly to Cloud Manager's landing page.
 
+1. You will be directed to Cloud Manager's landing page.
+
 Additionally, you can also navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page. Follow the steps below:
 
 1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
