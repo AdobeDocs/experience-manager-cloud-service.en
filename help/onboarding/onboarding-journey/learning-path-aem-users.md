@@ -41,7 +41,8 @@ The following steps need to be followed in order to access Author:
 
 ## What’s Next {#whats-next}
 
-You are now ready to start initiate your learning path for authoring and publishing pages. You should follow the path, by next reviewing the document Learning Path for AEM Users.
+You are now ready for authoring and publishing AEM pages. Learn more or find more learning paths under the Additional Resources section below. 
+
 
 ## Additional Resources {#additional-resources}
 
