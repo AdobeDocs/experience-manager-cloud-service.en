@@ -56,7 +56,7 @@ In order to have their UI tests built and executed, customers need to "opt-in" b
 
 *File name*: `testing.properties` 
 
-*Contents*: `one line: ui-tests.version=1` 
+*Contents*: `ui-tests.version=1` 
 
 If this is not in the built `tar.gz` file, the UI tests build and executions will be skipped
 
