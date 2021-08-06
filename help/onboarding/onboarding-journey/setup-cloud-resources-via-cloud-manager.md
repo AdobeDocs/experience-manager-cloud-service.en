@@ -50,6 +50,8 @@ Follow the steps below to navigate to Cloud Manager:
    >[!IMPORTANT]
    >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future and to help you navigate directly to Cloud Manager's landing page.
 
+1. You will be directed to Cloud Manager's landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) section for more details. 
+
 Additionally, you can navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page. Follow the steps below:
 
 1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
@@ -62,29 +64,32 @@ Additionally, you can navigate to Cloud Manager's **Programs and Products** page
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. Upon successful login, you will be directed to the landing page of Cloud Manager.
+1. Upon successful login, you will be directed to the landing page of Cloud Manager. See [Viewing Cloud Manager's Programs](#viewing-programs) section for more details.
 
    >[!NOTE]
    >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
-   You will see one of the three options, described below:
+### Viewing Programs in Cloud Manager's Landing page {#viewing-programs}
 
-      * **When No Programs exist in Cloud Manager**
+Upon successful login, you will be directed to the landing page of Cloud Manager. You will see one of the three options, described below:
 
-         If no programs exist in your Organization, then your landing page directs you to create your first program, as shown in the figure below.
-         ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+#### When No Programs exist in Cloud Manager {#no-programs}
 
-      * **When Programs already exist in Cloud Manager**
+If no programs exist in your Organization, then your landing page directs you to create your first program, as shown in the figure below.
 
-         If program(s) already exist in your Organization, then your landing page directs you to add another program and displays all your existing programs too, as shown in the figure below.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-         ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### When Programs already exist in Cloud Manager {#programs-exist}
 
-      * **When a Program exists and user is System Administrator**
+If program(s) already exist in your Organization, then your landing page directs you to add another program and displays all your existing programs too, as shown in the figure below.
 
-         If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-         ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### When a Program exists and user is System Administrator {#programs-exist-sysadmin}
+
+If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## Verifying your User Roles {#verify-user-roles}
