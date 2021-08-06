@@ -60,6 +60,18 @@ In order to have their UI tests built and executed, customers need to "opt-in" b
 
 If this is not in the built `tar.gz` file, the UI tests build and executions will be skipped
 
+To add `testing.properties` file in the built artifact, add an `include` statement in `assembly-ui-test-docker-context.xml` file (in the UI tests submodule):
+
+        ```
+        [...]
+        <includes>
+            <include>Dockerfile</include>
+            <include>wait-for-grid.sh</include>
+            <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+        </includes>
+        [...]
+        ```
+
 >[!NOTE]
 >Production pipelines created before February 10, 2021 will need to be updated in order to use the UI tests as described in this section. This essentially means the User must edit Production pipeline and click **Save** from the UI even if no changes were made. 
 >Refer to [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) to learn more about pipeline configuration. 
