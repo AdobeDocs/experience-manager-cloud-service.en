@@ -27,9 +27,18 @@ If you are already familiar with AEM, headless, and translation, you may already
 
 This journey is designed for the translation specialist persona, often referred to as the Translation Project Manager or TPM. This journey lays out the requirements, steps, and approach to translate headless content in AEM. The journey may define additional personas with which the translation specialist must interact, but the point-of-view for the journey is that of the translation specialist.
 
-Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+his journey assumes the reader has experience translating content on a large CMS system, but assumes no knowledge of headless technology or AEM.
 
-This journey assumes the reader has experience translating content on a large CMS system, but assumes no knowledge of headless technology or AEM.
+The following are the personas that interact in this journey.
+
+|Persona|Description|Role in Journey|
+|---|---|---|
+|Translation Specialist|Defines what content should be translated and manages those workflows|Audience of this journey|
+|Content Author|Creates and manage content that is delivered headlessly|Content Authors create content that the translation specialist must translate.|
+|Administrator|Manages the base setup and configuration of AEM|The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector.|
+|Content Modeller|Analyzes the requirements for the data that needs to be delivered headlessly and defines the structure for this data|Translation specialists work with the content modellers to define the organization of the content so it can be easily translated.|
+
+Information in this journey can of course be useful to all personas, but some information will be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
 
 ## The Headless Translation Journey {#the-journey}
 

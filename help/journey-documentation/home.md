@@ -61,7 +61,7 @@ Documentation Journeys are intended as a complement to existing AEM technical do
 |Tutorial|A tutorial is an in-depth dive into a topic showing a developer or admin how to achieve a technical goal (generally programming or system configuration) in a step-by-step fashion, providing specific examples and example code, usually leveraging a limited set of features.|AEM developers or administrators|AEM experience|Background and theory|Video|&gt;1 hour|
 |Getting Started Guide|A getting started guide is a lightning-fast walkthrough of a specific new AEM feature. It is a quick overview of an individual feature, leading the user through the important (but not all) steps to configuring and using a simple use case.|AEM Admins|AEM experience|Background, theory, detailed options|Text|&lt;1 hour|
 
-## How Can I Get Started? {#get-started}
+## What Journeys Are There? {#journeys}
 
 There are a number of Documentation Journeys already available to you. Since each journey is designed as a narrative, please start with the introduction and read all the way through in order to get a full understanding of the topic in the context of AEM.
 
