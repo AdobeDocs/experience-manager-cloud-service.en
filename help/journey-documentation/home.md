@@ -9,15 +9,21 @@ Documentation Journeys provide a narrative structure within AEM documentation by
 
 ## What is a Documentation Journey? {#what-is}
 
-A Documentation Journey ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic knowledge.
+A Documentation Journey ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
 This contrasts with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring to the existing technical documentation for in-depth details, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be leveraged by using best practices to address common business needs and workflows. For this reason Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+
+### Best Practices Orientation {#best-practices}
+
+Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+
+If you want to know how Adobe recommends how to solve a business case with AEM, Documentation Journeys are where to start.
 
 ## How is a Documentation Journey Structured? {#structure}
 
 A Documentation Journey serves as a best practices based introduction to how AEM solves common business problems. For this reason, each journey is designed with readers new to AEM in mind, laying out the business problem, describing any necessary theory, and then giving a step-by-step overview of how AEM solves the problem. Because of the comprehensive nature of a journey, it can be useful to those new to AEM as well as experienced users.
 
-A typical Documentation Journey will have the following parts.
+A typical Documentation Journey has the following parts.
 
 * Overview of the goals of the journey and the intended audience
 * Description of business problem
@@ -44,7 +50,7 @@ However there are many different types of AEM users with different needs and exp
 
 Each journey begins with a clear statement of the intended audience for the journey. Because no one works in a vacuum, when the reader requires the assistance of input of a system user or persona, this is clearly explained within the journey.
 
-## How do Documentation Journeys Fit into Other AEM Documentation? {#compare}
+## How do Documentation Journeys Fit into AEM Documentation? {#compare}
 
 Documentation Journeys are intended as a complement to existing AEM technical documentation and tutorials. For example, a journey may introduce you to a concept, and then the technical docs will explain the detailed configuration options you may need and a tutorial will guide you through specific setups.
 
