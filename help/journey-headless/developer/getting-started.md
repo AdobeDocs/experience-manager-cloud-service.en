@@ -34,7 +34,7 @@ Before you can define your headless project within AEM, it is important to under
 
 At its simplest, AEM consists of an author instance and a [publish instance](#publish) which work together to create, manage, and publish your content.
 
-Content begins on the author instance. This is where you content authors create their content. The author environment offers various tools for authors to create, organize, and reuse their content.
+Content begins on the author instance. This is where content authors create their content. The author environment offers various tools for authors to create, organize, and reuse their content.
 
 ### Publish Instance {#publish}
 
@@ -160,27 +160,27 @@ Content authors create and manage the content that is delivered headlessly by AE
 
 Content authors should keep in mind the following best practices.
 
-#### Plan for Localization {#localization}
+#### Plan for Translation {#translation}
 
-Plan for translation and localization at the very beginning of the project. Consider "Internationalization Project Manager" as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
+Plan for translation at the very beginning of the project. Consider "Translation Specialist" as a separate persona whose responsibility it is to define what content should be translated and what should not be, and what translated content may be modified by regional or local content producers.
 
-Create a plan on what content localization you will need.
+Create a plan on what content translation you will need.
 
 * Do you just need different languages or also language to adopt to regional specifics?
 * Do you need rich media content like images or videos to be different for different locales?
 
 Be clear about you content update workflow. What is the approval process that the system needs to support? Might AEM workflows be leveraged to automate this process?
 
-Note that your [content hierarchy](#content-hierarchy) can be leveraged to make localization easier.
+Note that your [content hierarchy](#content-hierarchy) can be leveraged to make translation easier.
 
-See the [additional resources](#additional-resources) section for additional documentation on AEM workflows and localization tools including links to the AEM Headless Localization Journey.
+See the [additional resources](#additional-resources) section for additional documentation on AEM workflows and translation tools including links to the AEM Headless Translation Journey.
 
 ##### Leverage the Content Hierarchy {#content-hierarchy}
 
 Folder hierarchy can address two major concerns with regards to content management:
 
-* [Localization](#localization) - AEM manages localization of content by maintaining copies of content in locale-specific folders.
-* Organization - Folders are used to define a content hierarchy required to support localization needs as well as logically manage Content Fragments.
+* [Translation](#translation) - AEM manages translation of content by maintaining copies of content in locale-specific folders.
+* Organization - Folders are used to define a content hierarchy required to support translation needs as well as logically manage Content Fragments.
 
 AEM allows for a very flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path.](#developer) Therefore a well-defined hierarchy that is clearly set out in advance, can be extremely helpful to your content authors.
 

@@ -23,7 +23,15 @@ This guide leads you through the most important topics so that on completion you
 
 This journey is designed for the developer persona, laying out the requirements, steps, and approach of an AEM Headless project from a developer's perspective. The journey will define additional personas with which the developer must interact for a successful project, but the point-of-view for the journey is that of the developer.
 
-Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+|Persona|Description|Role in Journey|
+|---|---|---|
+|Developer|Has experience developing headless applications which consume content from different sources|Target audience of this journey|
+|Content Author|Creates and manages content that is delivered headlessly|Content Authors create content that the developer delivers headlessly.|
+|Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
+|Content Modeller|Analyzes the requirements for the data that needs to be delivered headlessly and defines the structure for this data|Developers work with the content modellers to understand the structure of the data and requirements for delivering it headlessly.|
+|Translation Specialist|Defines what content should be translated and manages those workflows|The Translation specialist works with the content modeller to define initial organization of content and may need to work with the developer for any translation-specific requirements.|
+
+Information in this journey can of course be useful to all personas, but some information will be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
 
 ## The Headless Developer Journey {#the-journey}
 
