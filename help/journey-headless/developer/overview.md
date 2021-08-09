@@ -23,6 +23,8 @@ This guide leads you through the most important topics so that on completion you
 
 This journey is designed for the developer persona, laying out the requirements, steps, and approach of an AEM Headless project from a developer's perspective. The journey will define additional personas with which the developer must interact for a successful project, but the point-of-view for the journey is that of the developer.
 
+The following are the personas that interact in this journey.
+
 |Persona|Description|Role in Journey|
 |---|---|---|
 |Developer|Has experience developing headless applications which consume content from different sources|Target audience of this journey|
