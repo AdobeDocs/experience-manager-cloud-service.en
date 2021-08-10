@@ -13,6 +13,18 @@ A Documentation Journey ties together many different and perhaps complicated top
 
 This contrasts with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring to the existing technical documentation for in-depth details, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be leveraged by using best practices to address common business needs and workflows. For this reason Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
 
+### Learning By Narrative {#narrative}
+
+AEM has a rich and powerful feature set that can be overwhelming to new (and sometimes experienced) users. By starting each journey with a clear business objective rather than technical requirements, a journey tells a narrative leading the reader through the AEM concepts and features that work together to achieve the business goal.
+
+By telling a story, the reader better understands how different parts of AEM work together to solve the problem at hand and perspective is maintained. The reader always can see the business objective forest for the feature trees.
+
+### Focus on Concepts not Features {#concepts}
+
+To maintain focus on the narrative, Documentation Journeys emphasize concepts in AEM instead of dwelling on technical features. Recognizing that it is more important that the reader be familiar with how AEM solves a particular problem rather than worrying about which checkboxes to click, the journey keeps the reader moving froward through the narrative, illustrating how to link together multiple important concepts so achieve the overall goal.
+
+Journeys ensures that the reader knows how AEM can solve a problem instead of worrying about each option to click. If the reader wants to take a deeper dive an learn more technical detail or what additional options can do, every part of the journey links to related, exhaustive technical documentation.
+
 ### Best Practices Orientation {#best-practices}
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
