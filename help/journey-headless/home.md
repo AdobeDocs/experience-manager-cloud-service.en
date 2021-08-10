@@ -42,9 +42,9 @@ Information in these journey can of course be useful to all personas, but some i
 
 The following Documentation Journeys are available for headless topics.
 
-|Title|Description|
-|---|---|
-|[Headless Developer Journey](/help/journey-headless/developer/overview.md)||
-|[Headless Translation Journey](/help/journey-headless/translation/overview.md)||
+|Title|Description|Primary Audience|
+|---|---|---|
+|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Learn about headless technologies, what they bring to the user experience, how AEM supports headless models, and how to implement your own headless development project from A to Z.|Developers|
+|[Headless Translation Journey](/help/journey-headless/translation/overview.md)|Learn about headless technologies, why they might be used in your project, and how to create and update translation projects in AEM from A to Z.|Translation Specialists|
 
 Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
