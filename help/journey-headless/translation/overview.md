@@ -23,6 +23,14 @@ The goal is to give you a broad understanding of headless technology, how AEM se
 
 If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. Consider referring to our technical documentation linked under the [additional resources section below.](#additional-resources)
 
+## AEM Documentation Journeys {#documentation-journeys}
+
+[A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+
+Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+
+If you want to know how Adobe recommends how to solve headless business cases with AEM, AEM Headless Journeys are where to start.
+
 ## Audience {#audience}
 
 This journey is designed for the translation specialist persona, often referred to as the Translation Project Manager or TPM. This journey lays out the requirements, steps, and approach to translate headless content in AEM. The journey may define additional personas with which the translation specialist must interact, but the point-of-view for the journey is that of the translation specialist.
