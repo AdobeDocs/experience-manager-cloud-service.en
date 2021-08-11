@@ -45,6 +45,8 @@ Once you are happy with the state of your translated content, it must be publish
 >[!NOTE]
 >
 >Generally when the translation is complete, the translations specialist will inform the content owners that the translations are ready for publication, who will then publish them.
+>
+>The following steps are provided for completeness.
 
 The simplest way to publish the translations is to navigate to the project assets folder.
 
