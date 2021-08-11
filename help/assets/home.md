@@ -41,7 +41,7 @@ The following self-help resources are available for [!DNL Experience Manager Ass
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR Readiness](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
