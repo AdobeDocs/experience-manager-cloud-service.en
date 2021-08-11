@@ -1,50 +1,47 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.7.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.7.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.8.0
+description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.8.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 ---
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.7.0.
+This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
 >To see the current Release Notes for Adobe Experience Manager as a Cloud Service, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.7.0 is July 15, 2021.
-The next release is planned for August 12, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 12, 2021.
+The next release is planned for September 09, 2021.
 
 ### What's New {#what-is-new}
 
-* Customers are now able to use Azul 8 and 11 JDKs for their Cloud Manager build processes and can either select to use one of these JDKs for toolchains-compatible Maven plugins *or* the entire Maven process execution.
+* Cloud Service customers can now view Service Level Agreement (SLA) reports in Cloud Manager. This will be made available progressively over the next few months.
 
-* The outbound egress IP will now be logged in the build step log file. 
+* The type and severity of the IndexType and `IndexDamAssetLucene` quality rules has been changed. These are now both Bugs of Blocker *serverity*.
 
-* Stage and Production environments running old versions of AEM will now report a status of **Update Available**. 
+* New Oak index quality rules have been introduced to cover asynchronous and tika configurations.
 
-* The maximum SSL certificates supported has increased to 20 per program.
+* Increase max SSL certs per program to 50.
 
-* The maximum number of domains that can be configured has increased to 500 per environment.
+* Self-service capability to allow users to create and manage multiple repositories via Cloud Manager UI.
 
-* The **Manage Git** buttons has been retitled to **Access Git Info** and the dialog has been visually refreshed.
+* SonarQube was unnecessarily reading Git history data. On large code bases, this could lead to an unnecessary build performance penalty.
 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28.
+* There is now an API available to invalidate the Maven dependency cache per pipeline.
+
+* The flow and task related to assets testing should happen in the region of the pipeline execution. 
+
+* As a Deployment Manager, you can add/  or edit a non-Production Pipeline from the pipeline card.
 
 ### Bug Fixes {#bug-fixes}
 
-* In some situations, Preview was not an available option when binding an IP Allow List to an environment.
+* Update Available status should not be displayed when the latest release is less than the current release.
 
-* Manually navigating to the execution details page for a non-existing execution did not show an error, just an endless loading screen.
+* Initial onboarding was failing for new organizations with very long names.
 
-* The error message shown when the maximum number of SSL certificates was reached was not helpful.
+* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
 
-* In some circumstances, there could be a discrepancy in the release version shown in the pipeline card on the **Overview** page.
-
-* Add program wizard incorrectly stated that name cannot be changed after creation. 
-
-### Known Issues {#known-issues}
-
-Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
 
