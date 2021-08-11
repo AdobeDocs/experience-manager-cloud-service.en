@@ -118,11 +118,15 @@ All project content that may need to be localized should the be placed under the
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-Translations should be created as sibling folders alongside the language root. For example, German would have the following path.
+Translations should be created as sibling folders alongside the language root with their folder name representing the ISO-2 language code of the language. For example, German would have the following path.
 
 ```text
 /content/dam/<your-project>/de
 ```
+
+>[!NOTE]
+>
+>The content architect generally is responsible for creating these language folders. If they are not created, AEM will not be able to later create translation jobs.
 
 The final structure may look something like the following.
 
@@ -144,6 +148,12 @@ The final structure may look something like the following.
 ```
 
 You should take note of the specific path of your content as it will be needed later to configure your translation.
+
+>[!NOTE]
+>
+>It is generally the responsibility of the content architect to define the content structure, but can collaborate with the translation specialist.
+>
+>It is detailed here for completeness.
 
 ## AEM Translation Tools {#translation-tools}
 

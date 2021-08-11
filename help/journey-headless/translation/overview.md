@@ -44,7 +44,7 @@ The following are the personas that interact in this journey.
 |Translation Specialist|Defines what content should be translated and manages those workflows|Audience of this journey|
 |Content Author|Creates and manage content that is delivered headlessly|Content Authors create content that the translation specialist must translate.|
 |Administrator|Manages the base setup and configuration of AEM|The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector.|
-|Content Modeller|Analyzes the requirements for the data that needs to be delivered headlessly and defines the structure for this data|Translation specialists work with the content modellers to define the organization of the content so it can be easily translated.|
+|Content Architect|Analyzes the requirements for the data that needs to be delivered headlessly and defines the structure for this data|Translation specialists work with the content architect to define the organization of the content so it can be easily translated.|
 
 Information in this journey can of course be useful to all personas, but some information will be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
 
