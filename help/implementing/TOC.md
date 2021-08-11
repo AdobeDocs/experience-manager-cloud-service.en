@@ -59,6 +59,7 @@ role: Developer, Architect
     + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)  
     + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
   + [Accessing and Managing Logs](cloud-manager/manage-logs.md)
+  + [SLA Reporting](cloud-manager/sla-reporting.md)
   + [Understanding Notifications](cloud-manager/notifications.md)
   + Managing SSL Certificates {#manage-ssl-certificates}
     + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
