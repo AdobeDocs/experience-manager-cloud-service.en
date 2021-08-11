@@ -37,7 +37,7 @@ WCAG 2.1 provides [guidelines (with related success criteria) covering the acces
 
 Using Adobe Experience Manager, content authors and/or website owners can create web content that meets the WCAG 2.1 Level A and Level AA success criteria:
  
-* Specific aspects of WCAG 2.1 are highlighted in our [quick guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Specific aspects of WCAG 2.1 are highlighted in our [quick guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
  
 * [Creating Accessible Content](/help/sites-cloud/authoring/fundamentals/accessible-content.md) details how they relate to AEM. 
  
