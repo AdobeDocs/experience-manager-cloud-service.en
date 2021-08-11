@@ -13,12 +13,21 @@ Customers are able to see the performance of their production AEM environment re
 
 Follow the example below, that is a graph showing the monthly SLA attainment for 2021.
 
+![](assets/sla-reporting-1.png)
+
+
 Rolling over a data point shows the specific values for that month.
+
+![](assets/sla-reporting-b.png)
 
 >[!NOTE]
 >These reports will be made available to customers on a progressive basis. If you do not see the Reports option in the main navigation, contact your Adobe representative to understand when your reports will be made available.
 
-The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. Each incident has a time range, a cause, and a set of comments:
+The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. 
+
+Each of the incidents has a time range, a cause, and a set of comments, as shown in the figure below.
+
+![](assets/sla-reporting-c.png)
 
 
 ## SLA Metrics {#sla-metrics}
