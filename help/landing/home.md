@@ -26,7 +26,6 @@ This page lists the self-help user guides for Experience Manager as a Cloud Serv
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.|
 |[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
-|[Compliance User Guide](/help/compliance/home.md)|Learn about Compliance in AEM as a Cloud Service.|
 
 ## Other Experience Manager Resources {#other-resources}
 
