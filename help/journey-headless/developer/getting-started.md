@@ -143,7 +143,7 @@ The roles for any individual project will vary, but important ones to consider i
 
 * [Administrator](#administrator)
 * [Content Author](#content-author)
-* [Content Modeler](#content-modeler)
+* [Content Architect](#content-architect)
 * [Developer](#developer)
 
 #### Administrator {#administrator}
@@ -206,9 +206,9 @@ See the [additional resources](#additional-resources) section for additional doc
 
 As a general rule-of-thumb, Content Fragment references should not be nested beyond five levels.
 
-#### Content Modeler {#content-modeler}
+#### Content Architect {#content-architect}
 
-Content modelers analyze the requirements for the data that needs to be delivered headlessly and defines the structure for this data. These structures are called [Content Fragment Models](#content-fragment-models) in AEM. Content Fragment Models are used as the basis for the Content Fragments that the content authors create.
+Content architects analyze the requirements for the data that needs to be delivered headlessly and defines the structure for this data. These structures are called [Content Fragment Models](#content-fragment-models) in AEM. Content Fragment Models are used as the basis for the Content Fragments that the content authors create.
 
 A useful approach when defining Content Fragment Models, is to create models that map to the UX components of the application(s) that will consume the content.
 
@@ -249,7 +249,7 @@ To understand traffic and traffic patterns start with gathering what you know fr
 
 #### Update Frequency {#update-frequency}
 
-Quite often different sections of experiences have different frequencies of content updates. Understanding this is important to be able to fine tune CDN and cache configurations. This is also important input for the [Content Modelers](#content-modeler) as they design models to represent your content. Consider:
+Quite often different sections of experiences have different frequencies of content updates. Understanding this is important to be able to fine tune CDN and cache configurations. This is also important input for the [Content Architects](#content-architects) as they design models to represent your content. Consider:
 
 * Must some types of content expire after a certain period?
 * Are there elements that are user-specific and thus can't be cached?

@@ -62,6 +62,8 @@ You receive a message that the project was created.
 >[!NOTE]
 >
 >It is assumed that the necessary language structure for the translations languages have already been created as part of the [definition of your content structure.](getting-started.md#content-structure) This should be done in collaboration with the content architect.
+>
+>If the language folders are not created ahead of time, you will not be able to create language copies as described in the previous steps.
 
 ### Manually Creating a Translation Project by Selecting Your Content {#manually-creating}
 

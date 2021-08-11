@@ -30,11 +30,11 @@ The following are the personas that interact in the Headless Journeys.
 
 |Persona|Description|Role in Journey|
 |---|---|---|
-|Developer|Has experience developing headless applications which consume content from different sources|The developer works with authors, admins, and modellers to understand the data and build a headless application that consumes that data.|
+|Developer|Has experience developing headless applications which consume content from different sources|The developer works with authors, admins, and architects to understand the data and build a headless application that consumes that data.|
 |Content Author|Creates and manages content that is delivered headlessly|Content Authors create content that the developer delivers headlessly.|
 |Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
-|Content Modeller|Analyzes the requirements for the data that needs to be delivered headlessly and defines the structure for this data|Developers work with the content modellers to understand the structure of the data and requirements for delivering it headlessly.|
-|Translation Specialist|Defines what content should be translated and manages those workflows|The Translation specialist works with the content modeller to define initial organization of content and may need to work with the developer for any translation-specific requirements.|
+|Content Architect|Analyzes the requirements for the data that needs to be delivered headlessly and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it headlessly.|
+|Translation Specialist|Defines what content should be translated and manages those workflows|The Translation specialist works with the content architect to define initial organization of content and may need to work with the developer for any translation-specific requirements.|
 
 Information in these journey can of course be useful to all personas, but some information will be superfluous to certain roles.
 
