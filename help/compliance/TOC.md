@@ -9,6 +9,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 
 # Experience Manager as a Cloud Service Help {#compliance}
 
++ [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
 + Data Privacy and Protection Readiness {#data-privacy}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
   + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)
