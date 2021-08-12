@@ -23,9 +23,9 @@ You can view the expiration status of an asset at the following places:
 
 To view referencing web pages and compound assets for an asset, follow these steps: 
 
-1. Navigate to the asset, select the asset, and click the [!DNL Experience Manager] logo.
-1. Select **[!UICONTROL References]** from the menu.
-1. For expired assets, the References rail displays the expiry status **[!UICONTROL Asset is Expired]** at the top. If the asset has expired subassets, the References rail displays the status **[!UICONTROL Asset has Expired Sub-Assets]**.
+1. Navigate to the asset, select the asset, and click ![left rail content references icon](assets/do-not-localize/content-rail-icon.png). The left rail opens.
+1. Select **[!UICONTROL References]** from the left rail.
+1. For expired assets, the [!UICONTROL References] displays the expiry status as **[!UICONTROL Asset is Expired]**. If the asset has expired subassets, the [!UICONTROL References] rail displays the status **[!UICONTROL Asset has Expired Sub-Assets]**.
 
 ### Search expired assets {#search-expired-assets}
 
@@ -37,29 +37,45 @@ To search for an expired asset, including expired subassets, follow these steps:
 
 1. Select **[!UICONTROL Expired]**. The search results display the expired assets.
 
-When you choose the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. The compound assets that reference expired subassets are not displayed immediately after the subassets expire. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
+When you choose the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. The compound assets that reference expired subassets are not displayed immediately after the subassets expire. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler executes.
 
 It is possible to modify the expiration date of a published asset to a date earlier than the current scheduler cycle. However, the schedule still detects such an asset as an expired asset when it executes the next time and [!DNL Experience Manager] reflects the status in its report. The expiration date of an asset is displayed differently for users in different time zones.
 
-In addition, if a glitch or error prevents the scheduler from detecting expired assets in the current cycle, the scheduler re-examines these assets in the next cycle and detects their expired status.
+In addition, if an error prevents the scheduler from detecting expired assets in the current cycle, the scheduler re-examines these assets in the next cycle and detects their expired status.
 
-To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager]. The time-based scheduler schedules a job to check at a specific time whether an asset has expired subassets. After the job completes, assets that have expired subassets and referenced assets are displayed as expired in search results.
+
+1. Access the [!DNL Cloud Manager] Git repository associated with your environment. 
+1. Commit a file named `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` in the repository with the following contents.
+
+   ```json
+   {
+      "send_email":"false", "asset_expired_limit":"100", "prior_notification_seconds":"86400", "cq.dam.expiry.notification.url.protocol":"http", "cq.dam.expiry.notification.scheduler.istimebased":"true", "cq.dam.expiry.notification.scheduler.period.rule":"10", "cq.dam.expiry.notification.scheduler.timebased.rule":"0 0 0 * * ?"
+   }
+   ```
+
+1. Follow the instructions of [how to do OSGi configuration in [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
+
+You can configure the scheduler using the following properties:
+
+* A `true` value of the property `cq.dam.expiry.notification.scheduler.istimebased` initiates the scheduler. * The value of the property `cq.dam.expiry.notification.scheduler.timebased.rule` is the regular expression to define the time. The example above initiates the scheduler job at 00 hours.
+* If `send_email` is set to `true`, the asset creator (the person who uploads a particular asset to [!DNL Assets]) receives an email when the asset expires.
+* The maximum number of assets expired in one iteration of the scheduler is the value of the property `asset_expired_limit`.
+* To run the job periodically, set the value of the property `cq.dam.expiry.notification.scheduler.istimebased` as `false` and set the value of the property `cq.dam.expiry.notification.scheduler.period.rule` with time in seconds.
+
+<!-- TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
-1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. After the job completes, assets that have expired subassets and referenced assets are displayed as expired in search results.
+1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 
 
-1. To run the job periodically, clear the **[!UICONTROL Time-based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 0000 hrs.
+1.  For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 0000 hrs.
 
-<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
-
-   >[!NOTE]
-   >
-   >Only the asset creator (the person who uploads a particular asset to Experience Manager Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall Experience Manager level.
--->
+1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
 1. In the **[!UICONTROL Prior notification in seconds]** field, specify the time in seconds before the asset expiry when you want to receive a notification. If you are an administrator or the asset creator, you receive a message before the expiration of the asset. After the asset expiry, you receive another notification that confirms the expiration. In addition, the expired asset is deactivated.
 
 1. Select **[!UICONTROL Save]**.
+-->
 
 ## Asset states {#asset-states}
 
