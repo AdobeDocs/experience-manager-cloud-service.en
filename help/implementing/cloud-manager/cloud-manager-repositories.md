@@ -67,12 +67,14 @@ For example, let's say there are three repositories, each containing a single br
    
 </project>
 ```
+
 You would then add submodules for the other two repositories:
 
 ```
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
+
 This results in a `.gitmodules` file that looks like this:
 
 ```
