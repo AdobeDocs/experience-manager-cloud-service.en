@@ -3,7 +3,7 @@ title: Compliance
 description: Compliance
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 ---
-# Compliance {#aem-compliance}
+# Compliance in AEM as a Cloud Service {#aem-compliance}
 
 This page lists self-help resources providing information on compliance in Experience Manager as a Cloud Service.
 
