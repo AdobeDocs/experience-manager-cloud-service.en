@@ -99,7 +99,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
    ![](assets/configure-pipeline5.png)
    
-### Editing a Pipeline {#editing-pipeline}
+### Editing a Production Pipeline {#editing-prod-pipeline}
 
 You can edit the pipeline configurations from the **Program Overview** page. 
 
@@ -154,6 +154,22 @@ On the home screen, these pipelines are listed in a new card:
    * **Build** - navigates to the execution page, from which the pipeline can be executed
    * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository
    * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
+
+### Editing a Non-Production Pipeline {#editing-nonprod-pipeline}
+
+You can edit the pipeline configurations from the **Program Overview** page. 
+
+Follow the steps below to edit the configured non-production pipeline:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Select the **Non-Production** tab and click on **Edit** after selecting the desired pipelines.
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. Select the desired repository and click on **Save**.
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## The Next Steps {#the-next-steps}
 
