@@ -90,7 +90,8 @@ role: Developer, Architect
   + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Managing your Code {#managing-code}
   + [Maven Project Version Handling](cloud-manager/project-version-handling.md)
-  + [Accessing Git](cloud-manager/accessing-git.md)
+  + [Repositories in Cloud Manager](cloud-manager/cloud-manager-repositories.md)
+  + [Accessing Repositories](cloud-manager/accessing-repos.md)
   + [Integrating Git with Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
   + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
   + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
