@@ -185,7 +185,7 @@ The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
 
 ### Bug Fixes {#bug-fixes-ctt}
 
-* In some cases not all users were migrated to the target instance. 
+* In some cases not all users were migrated to the target instance. To get this fix CTT v1.5.6 is required along with aem-ethos-tools 1.2.354 or later version on the target AEM as a Cloud Service instance.
 
 * The **Stop Ingestion** button was being disabled during ingestion to the Publish instance. This is not necessary because there is no mongo restore step during Publish ingestion. 
 
