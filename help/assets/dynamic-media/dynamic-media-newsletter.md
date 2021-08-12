@@ -47,7 +47,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Learn more about Adobe's free Dynamic Media Classic audits.
   * Meet John Monroe, Senior Program Manager for Customer Success Services.
 
-* **[February 2020, Issue 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
+* **[February 2020, Issue 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
     In this issue:
 
