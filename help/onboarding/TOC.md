@@ -24,13 +24,6 @@ role: Architect, Developer
   + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
   + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
   + [Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ Data Privacy and Protection Readiness {#data-privacy}
-  + [AEM Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/aem-readiness.md)
-  + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/foundation-readiness.md)
-  + [AEM Sites Readiness for Data Protection and Data Privacy Regulations](data-privacy-and-protection-readiness/sites-readiness.md)
-+ Accessibility {#accessibility}
-  + [AEM as a Cloud Service and the Web Accessibility Guidelines](accessibility/web-accessibility.md)
-  + [A Quick Guide to WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Migration Methodology {#migration-methodology}
   + [Migration to Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
