@@ -19,6 +19,7 @@ The next release is planned for September 09, 2021.
 ### What's New {#what-is-new}
 
 * Cloud Service customers can now view Service Level Agreement (SLA) reports in Cloud Manager. This will be made available progressively over the next few months.
+   See [SLA Reporting](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) to learn more.
 
 * The type and severity of the IndexType and `IndexDamAssetLucene` quality rules has been changed. These are now both Bugs of Blocker *serverity*.
 
