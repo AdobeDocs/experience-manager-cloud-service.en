@@ -9,11 +9,11 @@ This page lists self-help resources providing information on compliance in Exper
 
 ## Key Overview Articles {#key-articles}
 
-* [Readiness for Data Protection and Data Privacy Regulations](aem-readiness.md)
-* [Foundation Readiness for Data Protection and Data Privacy Regulations](foundation-readiness.md)
-* [Sites Readiness for Data Protection and Data Privacy Regulations](sites-readiness.md)
-* [Web Accessibility Guidelines](web-accessibility.md)
-* [A Quick Guide to WCAG 2.1](quick-guide-wcag.md)
+* [Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Foundation Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Sites Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
+* [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}
 
