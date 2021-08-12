@@ -177,6 +177,21 @@ The next release is planned for August 12, 2021.
 
 Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
 
+## Content Transfer Tool {#content-transfer-tool}
+
+### Release Date {#release-date-ctt-latest}
+
+The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
+
+### Bug Fixes {#bug-fixes-ctt}
+
+* In some cases not all users were migrated to the target instance. 
+
+* The **Stop Ingestion** button was being disabled during ingestion to the Publish instance. This is not necessary because there is no mongo restore step during Publish ingestion. 
+
+* CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
+
+
 ## Cloud Acceleration Manager {#cam}
 
 ### Release Date {#release-date-july-cam}
