@@ -7,7 +7,7 @@ exl-id: Cloud Manager Repositories
 
 Repositories that are created and available in Cloud Manager can be viewed and managed via the Repositories page. 
 
-## Viewing and Managing Repositories {#view-manage-repos}
+## Adding and and Managing Repositories {#add-manage-repos}
 
 Follow the steps below to view and manage repositories in Cloud Manager:
 

@@ -99,6 +99,35 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
    ![](assets/configure-pipeline5.png)
    
+### Editing a Pipeline {#editing-pipeline}
+
+You can edit the pipeline configurations from the **Program Overview** page. 
+
+Follow the steps below to edit the configured pipeline:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **Edit** from the **Pipelines** card.
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. The **Source Code** tab allows you to update the repository. Click on **Access Repo Info** to update the repository.
+
+   >[!NOTE]
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) to learn how to add and manage repositories in Cloud Manager.
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. The **Environments** tab allows you to update the stage and production options.
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. The **Experience Audit** option allows you to update or add new pages.
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. Click on **Save** once you are done editing the pipeline.
 
 ## Non-Production & Code Quality Only Pipelines {#non-production-pipelines}
 

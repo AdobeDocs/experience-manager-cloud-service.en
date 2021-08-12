@@ -13,7 +13,7 @@ You can access and manage your Git Repository using Self-Service Git Account Man
 
 Use the **Access Repo Info** button available from the Cloud Manager UI, most prominently on the pipeline card.
 
-1. Navigate to your **Program Overview** page and to **Pipelines** card.
+1. Navigate to **Pipelines** card from your **Program Overview** page.
 
 1. You will view the **Access Repo Info** option to access and manage your Git Repository.
 
