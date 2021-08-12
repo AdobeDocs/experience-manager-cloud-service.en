@@ -30,7 +30,8 @@ Follow the steps below to view and manage repositories in Cloud Manager:
    ![](assets/repos/create-repo3.png)
 
    >[!NOTE]
-   >Repositories created in Cloud Manager will also be available for you to select from during the add and edit pipeline steps.
+   >Repositories created in Cloud Manager will also be available for you to select from during the add and edit pipeline steps, as shown in the figure below.
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
 
 1. You can select the repository and click on the menu options from the far right of the table to **Copy Repository URL**, **View & Update** or **Delete** your repository, as shown in the  figure below.
 
