@@ -20,3 +20,8 @@ role: Developer, Architect
   + [How to put it all together](developer/put-it-all-together.md)
   + [How to go live with your headless application](developer/go-live.md)
   + [Optional - How to create single page applications with AEM](developer/create-spa.md)
++ AEM Headless Content Architect Journey {#content-architect}
+  + [AEM Headless Content Architect Journey Overview](architect/overview.md)
+  + [Content Modeling for Headless with AEM - An Introduction](architect/introduction.md)
+  + [Learn the Content Modeling Basics for Headless with AEM](architect/basics.md)
+  + [Learn about Creating Content Fragment Models in AEM](architect/model-structure.md)
