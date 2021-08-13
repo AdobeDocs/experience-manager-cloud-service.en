@@ -45,7 +45,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Watch the on-demand Skill Builder webinars for Dynamic Media Classic.
   * View the Dynamic Media sessions from Online Adobe Summit 2020.
   * Learn more about Adobe's free Dynamic Media Classic audits.
-  * Meet John Monroe, Senior Program Manager for Customer Success Services.
+  * Meet `John Monroe`, Senior Program Manager for Customer Success Services.
 
 * **[February 2020, Issue 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -66,7 +66,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * A free audit to help you get more value from Dynamic Media Classic.
   * A record-setting holiday shopping season for Adobe's rich media customers.
   * Your guide for selecting a DAM (Digital Asset Manager) that meets your needs for today and prepares you for what's new in rich media tomorrow.
-  * Meet Mark Dean, Digital Media Specialist.
+  * Meet `Mark Dean`, Digital Media Specialist.
 
 * **[November 2019, Issue 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -97,7 +97,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Find out how the Dynamic Media team can help you prepare for a day with higher than normal visitor traffic.
   * A second chance to catch two recent Skill Builder webinars.
   * Watch the on-demand webinar on protecting your digital assets from piracy.
-  * Meet Bridget Roman, Senior Product Marketing Manager for Experience Manager Assets.
+  * Meet `Bridget Roman`, Senior Product Marketing Manager for Experience Manager Assets.
   * Get up to speed on Dynamic Media and Dynamic Media Classic in Experience League.
 
 * **[August 2019, Issue 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
