@@ -169,7 +169,7 @@ Follow the steps below to edit the configured non-production pipeline:
 
 1. Select the desired repository and other required updates and click on **Save**.
 
-   ![](assets/configure-pipeline/non-prod-edit2.png)
+   ![](assets/configure-pipeline/edit-nonprodenv.png)
 
 ## The Next Steps {#the-next-steps}
 
