@@ -46,3 +46,14 @@ Although you can go directly to a particular part of the journey, many concepts 
 ## What's Next {#what-is-next}
 
 You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Content Modeling for Headless with AEM - An Introduction](introduction.md).
+
+## Additional Resources {#additional-resources}
+
+Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+
+As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
+
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
+* [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
+* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+* [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
