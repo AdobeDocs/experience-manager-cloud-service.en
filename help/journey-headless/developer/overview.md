@@ -29,7 +29,7 @@ If you want to know how Adobe recommends how to solve headless business cases wi
 
 ## Audience {#audience}
 
-This journey is designed for the developer persona, laying out the requirements, steps, and approach of an AEM Headless project from a developer's perspective. The journey will define additional personas with which the developer must interact for a successful project, but the point-of-view for the journey is that of the developer.
+This journey is designed for the developer persona, laying out the requirements, steps, and approach of an AEM Headless project from a developer's perspective. The journey defines additional personas with which the developer must interact for a successful project, but the point-of-view for the journey is that of the developer.
 
 The following are the personas that interact in this journey.
 
@@ -38,10 +38,10 @@ The following are the personas that interact in this journey.
 |Developer|Has experience developing headless applications which consume content from different sources|Target audience of this journey|
 |Content Author|Creates and manages content that is delivered headlessly|Content Authors create content that the developer delivers headlessly.|
 |Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
-|Content Architect|Analyzes the requirements for the data that needs to be delivered headlessly and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it headlessly.|
+|Content Architect|Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it headlessly.|
 |Translation Specialist|Defines what content should be translated and manages those workflows|The Translation specialist works with the content architect to define initial organization of content and may need to work with the developer for any translation-specific requirements.|
 
-Information in this journey can of course be useful to all personas, but some information will be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
+Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
 
 ## The Headless Developer Journey {#the-journey}
 
@@ -57,7 +57,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |3|[Path to your first experience using AEM Headless](path-to-first-experience.md)|Setup your development environment and learn how to integrate a simple app with AEM Headless|
 |4|[How to model your content](model-your-content.md)|Learn how to model your content structure. Then realize that structure for Adobe Experience Manager (AEM) using Content Fragments Models and Content Fragments, for reuse across channels.|
 |5|[How to access your content via AEM delivery APIs](access-your-content.md)|Learn how to use GraphQL queries to access your Content Fragments content.|
-|6|[How to update your content via AEM assets APIs](update-your-content.md)|Learn how to use REST API to access and update your Content Fragments content.|
+|6|[How to update your content via AEM Assets APIs](update-your-content.md)|Learn how to use REST API to access and update your Content Fragments content.|
 |7|[How to put it all together - your app and your content in AEM Headless](put-it-all-together.md)|Learn how to take your AEM Project and prepare it for going live with the AEM Headless SDK.|
 |8|[How to go live with your headless application](go-live.md)|Learn how to deploy application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
 |9|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|

@@ -8,7 +8,7 @@ Use the translation connector and rules to translate your headless content.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless translation journey, [Configure Translation Rules](translation-rules.md) you learned how how to use AEM's translation rules to identify your translation content. You should now:
+In the previous document of the AEM headless translation journey, [Configure Translation Rules](translation-rules.md) you learned how to use AEM's translation rules to identify your translation content. You should now:
 
 * Understand what the translation rules do.
 * Be able to define your own translation rules.
@@ -25,7 +25,7 @@ This document helps you understand how to use AEM's translation projects along w
 
 ## Creating a Translation Project {#creating-translation-project}
 
-Translation projects enable you to manage the translation of headless AEM content. A translation project gathers together the content to be translated into other languages in one location for a central view of the translation effort.
+Translation projects enable you to manage the translation of headless AEM content. A translation project gathers the content to be translated into other languages in one location for a central view of the translation effort.
 
 When content is added to a translation project, a translation job is created for it. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
@@ -61,13 +61,13 @@ You receive a message that the project was created.
 
 >[!NOTE]
 >
->It is assumed that the necessary language structure for the translations languages have already been created as part of the [definition of your content structure.](getting-started.md#content-structure) This should be done in collaboration with the content architect.
+>It is assumed that the necessary language structure for the translations languages has already been created as part of the [definition of your content structure.](getting-started.md#content-structure) This should be done in collaboration with the content architect.
 >
 >If the language folders are not created ahead of time, you will not be able to create language copies as described in the previous steps.
 
 ### Manually Creating a Translation Project by Selecting Your Content {#manually-creating}
 
-For translation project managers, it is often necessary to manually select specific content to include in a translation project. To create such a manual translation project, you need to start by creating an empty project and then select the content to add to it.
+For translation project managers, it is often necessary to manually select specific content to include in a translation project. To create such a manual translation project, you must start by creating an empty project and then select the content to add to it.
 
 1. Navigate to **Navigation** -&gt; **Projects**.
 1. Tap or click **Create** -&gt; **Folder** to create a folder for your projects.
@@ -111,8 +111,8 @@ The project is divided into multiple cards.
 
 * **Summary** - This card shows the basic header information of the project including the owner, language, and translation provider.
 * **Translation Job** - This card or these cards show(s) provide an overview of the actual translation job including the status, number of assets, etc. Generally there is one job per language with the ISO-2 language code appended to the job name.
-* **Team** - This card shows the users who are collaborating on this translation project. This journey will not cover this topic.
-* **Tasks** - Additional tasks associated with translating the content such as to do items or workflow items. This journey will not cover this topic.
+* **Team** - This card shows the users who are collaborating on this translation project. This journey does not cover this topic.
+* **Tasks** - Additional tasks associated with translating the content such as to do items or workflow items. This journey does not cover this topic.
 
 How you use a translation project depends on how it was created: either automatically by AEM or manually.
 
@@ -212,7 +212,7 @@ The project's purpose is to collect all the resources related to a translation i
 /content/dam/wknd/es
 ```
 
-If you navigate to this folder via **Navigation** -&gt; **Files** -&gt; **Assets**, you will see the translated content.
+If you navigate to this folder via **Navigation** -&gt; **Files** -&gt; **Assets**, you see the translated content.
 
 ![Translated content folder structure](assets/translated-file-content.png)
 
