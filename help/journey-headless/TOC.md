@@ -1,14 +1,15 @@
 ---
-sub-product: AEM Headless Developer Journey
-user-guide-title: AEM Headless Developer Journey
-breadcrumb-title: AEM Headless Developer Journey
+sub-product: AEM Headless Journeys
+user-guide-title: AEM Headless Journeys
+breadcrumb-title: AEM Headless Journeys
 user-guide-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your project.
 feature: Developer Tools
 role: Developer, Architect
 ---
 
-# AEM Headless Journey {#headless-journey}
+# AEM Headless Journeys {#headless-journey}
 
++ [AEM Headless Journeys](/help/journey-headless/home.md)
 + AEM Headless Developer Journey {#developer}
   + [Understand Headless in AEM](developer/overview.md)
   + [Learn about CMS Headless Development](developer/learn-about.md)
