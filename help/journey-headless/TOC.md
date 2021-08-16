@@ -26,6 +26,11 @@ role: Developer, Architect
   + [Authoring Basics for Headless with AEM](author/basics.md)
   + [Learn about using references in Content Fragments](author/references.md)
   + [Learn about defining Metadata and Tagging for Content Fragments](author/metadata-tagging.md)
++ AEM Headless Content Architect Journey {#content-architect}
+  + [AEM Headless Content Architect Journey Overview](architect/overview.md)
+  + [Content Modeling for Headless with AEM - An Introduction](architect/introduction.md)
+  + [Learn the Content Modeling Basics for Headless with AEM](architect/basics.md)
+  + [Learn about Creating Content Fragment Models in AEM](architect/model-structure.md)
 + AEM Headless Translation Journey {#translation}
   + [Understand Headless Localization in AEM](translation/overview.md)
   + [Get started with AEM headless localization](translation/getting-started.md)
