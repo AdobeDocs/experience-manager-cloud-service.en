@@ -69,9 +69,6 @@ The **Environments** card on the Overview page lists up to three environments.
    ![](assets/environment-view-2.png)
 
 1. Select any one of the environments from the list to view the environment details.
-
-   >[!NOTE]
-   >Preview Service will be deployed on a rolling basis to all Programs. Customers will be notified in-product when their Program is enabled for Preview Service. See the section [Accessing Preview Service](#access-preview-service) for more details.
    
    ![](assets/environ-preview1.png)
 
