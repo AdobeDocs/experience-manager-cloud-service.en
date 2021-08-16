@@ -7,6 +7,9 @@ exl-id: Cloud Manager Repositories
 
 Repositories that are created and available in Cloud Manager can be viewed and managed via the Repositories page. 
 
+>[!NOTE]
+>There is a limit of 300 repositories across all programs in any given company or [Adobe's Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)).
+
 ## Adding and and Managing Repositories {#add-manage-repos}
 
 Follow the steps below to view and manage repositories in Cloud Manager:
@@ -26,6 +29,9 @@ Follow the steps below to view and manage repositories in Cloud Manager:
    ![](assets/repos/repo-1.png)
 
 1. Select **Save**. Your newly created repo will be displayed in the table, as shown below.
+
+   >[!NOTE]
+   >There is a single *primary* repository or a branch for any given pipeline. With [Git Submodule Support](#git-submodule-support), however many secondary branches can be included at build time.
 
    ![](assets/repos/create-repo3.png)
 
