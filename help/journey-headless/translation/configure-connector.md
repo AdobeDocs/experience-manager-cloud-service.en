@@ -35,15 +35,15 @@ The following sections describe these steps in more detail.
 
 ## Connecting to a Translation Service Provider {#connect-translation-provider}
 
-The first step is to choose which translation service you wish to use. There are many choices for human and machine translation services available to AEM. Most providers will offer a translator package to be installed. See the [Additional Resources](#additional-resources) section for a selection of options available.
+The first step is to choose which translation service you wish to use. There are many choices for human and machine translation services available to AEM. Most providers offer a translator package to be installed. See the [Additional Resources](#additional-resources) section for a selection of options available.
 
 >[!NOTE]
 >
 >The translation specialist is generally responsible for choosing which translation service to use, but the administrator typically is responsible for installing the required translation connector package.
 
-For the purposes of this journey, we will use the Microsoft Translator which AEM provides with a trial license out-of-the-box. See the [Additional Resources](#additional-resources) section for more information about this provider.
+For the purposes of this journey, we use the Microsoft Translator which AEM provides with a trial license out-of-the-box. See the [Additional Resources](#additional-resources) section for more information about this provider.
 
-If you choose another provider your administrator will need to install the connector package as per the instructions provided by the translation service.
+If you choose another provider your administrator must install the connector package as per the instructions provided by the translation service.
 
 >[!NOTE]
 >
@@ -51,11 +51,11 @@ If you choose another provider your administrator will need to install the conne
 >
 >If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar with the steps for when you need to configure your preferred connector.
 >
->The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator will need to follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
+>The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
 
 ## Creating a Translation Integration Configuration {#create-config}
 
-After the connector package for your preferred translation service is installed, you need to create a Translation Integration Framework configuration for that service. The configuration includes the following information:
+After the connector package for your preferred translation service is installed, you must create a Translation Integration Framework configuration for that service. The configuration includes the following information:
 
 * Which translation service provider to use
 * Whether human or machine translation is to be performed
@@ -84,7 +84,7 @@ To create a new translation configuration:
 
 1. Provide the following information.
 
-   1. **Translation Method** - Select **Machine Translation** or **Human Translation** depending on your translation provider. For the purposes of this journey we will assume machine translation.
+   1. **Translation Method** - Select **Machine Translation** or **Human Translation** depending on your translation provider. For the purposes of this journey we assume machine translation.
    1. **Translation Providers** - Select the connector you installed for your translation service from the list.
    1. **Content Category** - Select the most appropriate category to better target the translation (only for machine translation).
    1. **Translate Content Fragment Assets** - Check this to translate assets associated with Content Fragments.
@@ -99,7 +99,7 @@ You have now configured the connector to your translation service.
 
 ## Associate the Configuration with Your Content {#associate}
 
-AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you need to specify which connectors and configuration should be used to translate your content by associating ths configuration with your content.
+AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you must specify which connectors and configuration should be used to translate your content by associating ths configuration with your content.
 
 To do this, navigate to the language root of your content. For our example purposes this is
 
