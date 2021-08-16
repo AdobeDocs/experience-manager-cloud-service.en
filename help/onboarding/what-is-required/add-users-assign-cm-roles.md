@@ -20,7 +20,7 @@ A System Administrator performs the following organizational tasks:
 
 1. Click on **Manage Access**  button, located on the top right of the Cloud Manager landing page, to open Admin Console in a new tab.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
    From the **Admin Console**, you can add users to Cloud Manager and assign them to Role(s), referred to as Product Profiles in Admin Console.  
 

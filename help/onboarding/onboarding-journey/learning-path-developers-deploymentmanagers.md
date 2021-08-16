@@ -11,10 +11,10 @@ index: no
 
 This document helps your Developers and Deployment Managers get access to Cloud Manager and become familiar with how they can prepare for learning path. 
 
-After reading you should:
+After reading this document, you should:
 
-* As a Developer, you should be able to understand how to access and manage Cloud Manager Git
-* As a Deployment Manager, you should be able to understand how to set up pipelines and deploy your code in Cloud Manager 
+* As a Developer, be able to understand how to access and manage Cloud Manager Git
+* As a Deployment Manager, be able to understand how to set up pipelines and deploy your code in Cloud Manager 
 
 ## Introduction {#introduction}
 
@@ -32,11 +32,13 @@ You understand how to navigate and log in to Cloud Manager
 
 ## Manage Git {#manage-git}
 
-To learn more on this topic, go here. 
+You can access and manage your Git Repository using Self-Service Git Account Management from Cloud Manager UI.
+To learn more on this topic, see [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en). 
 
 ## Setup pipeline {#setup-pipeline}
 
-To learn more on this topic, go here
+You can configure your Production or Non-Production Pipeline from Cloud Manager UI.
+To learn more on this topic, see [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## What’s Next {#whats-next}
 
