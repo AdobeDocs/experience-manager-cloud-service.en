@@ -218,7 +218,7 @@ Values for the variables must not exceed 2048 characters.
 
 >[!NOTE]
 >
->Variable names prefixed with `INTERNAL_` are reserved by Adobe. Any customer set variables that start with this prefix will be ignored.
+>Variable names prefixed with `INTERNAL_` are reserved by Adobe. Any customer set variables that start with this prefix will be ignored. Customers must not reference these variables either.
 
 ### Default Values {#default-values}
 

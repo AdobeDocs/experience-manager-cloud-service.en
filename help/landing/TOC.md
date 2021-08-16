@@ -21,3 +21,4 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + [Implementing Applications for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
 + [Implementing Connectors for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/connectors/home.html)
 + [Operations and Maintenance on AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/home.html)
++ [Compliance in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/compliance/home.html)
