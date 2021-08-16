@@ -34,7 +34,7 @@ Please note that all links to other guides need to be absolute references with l
   + [Configure translation rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
   + [Translate content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
   + [Publish translated content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
-  + AEM Headless Content Author Journey {#content-author}
++ AEM Headless Content Author Journey {#content-author}
   + [AEM Headless Content Author Journey - Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
   + [Authoring for Headless with AEM - An Introduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
   + [Authoring Basics for Headless with AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
