@@ -15,14 +15,23 @@ Once your System Administrator grants you access to Cloud Manager, you will rece
 1. From your welcome email click on **Get started**, as shown in the figure below.
     ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   >[!NOTE]
-   >Alternatively, you can also navigate directly to Cloud Manager login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI. Refer to the section below, [Cloud Manager Landing page](#cloud-manager-landing) for more details.
+   
+   >[!IMPORTANT]
+   >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future and to help you navigate directly to Cloud Manager's landing page.
+
+1. You will be directed to Cloud Manager's landing page.
+
+Additionally, you can also navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page. Follow the steps below:
+
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
 1. Select **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
    
 1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+
+1. Upon successful login, you will be directed to the landing page of Cloud Manager.
   
 
 ## Cloud Manager Landing Page {#cloud-manager-landing}
@@ -37,24 +46,23 @@ You will see one of the three options, described below:
 * **When No Programs exist in Cloud Manager**
 
    If no programs exist in your Organization, then your landing page directs you to create your first program, as shown in the figure below.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
 * **When Programs already exist in Cloud Manager**
 
    If program(s) already exist in your Organization, then your landing page directs you to add another program and displays all your existing programs too, as shown in the figure below.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
 * **When a Program exists and user is System Administrator**
 
    If program(s) already exist in your Organization, and you are a System Administrator, then your landing page displays **Manage Access** button along with **Add Program** option, as shown in the figure below.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 From here, a user with the right permissions, such as a Business Owner role in Cloud Manager is able to select **Add Program** to launch the [Add Program wizard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access).
 
-To learn how to add a program in Cloud Manager, refer to:
+To learn how to add a program in Cloud Manager, refer to creating:
 
-* [Creating a Production Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-
-* [Creating a Sandbox Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* [Production Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [Sandbox Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
