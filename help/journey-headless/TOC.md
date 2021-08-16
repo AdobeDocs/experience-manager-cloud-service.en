@@ -1,14 +1,15 @@
 ---
-sub-product: AEM Headless Developer Journey
-user-guide-title: AEM Headless Developer Journey
-breadcrumb-title: AEM Headless Developer Journey
+sub-product: AEM Headless Journeys
+user-guide-title: AEM Headless Journeys
+breadcrumb-title: AEM Headless Journeys
 user-guide-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your project.
 feature: Developer Tools
 role: Developer, Architect
 ---
 
-# AEM Headless Journey {#headless-journey}
+# AEM Headless Journeys {#headless-journey}
 
++ [AEM Headless Journeys](/help/journey-headless/home.md)
 + AEM Headless Developer Journey {#developer}
   + [Understand Headless in AEM](developer/overview.md)
   + [Learn about CMS Headless Development](developer/learn-about.md)
@@ -32,9 +33,9 @@ role: Developer, Architect
   + [Learn the Content Modeling Basics for Headless with AEM](architect/basics.md)
   + [Learn about Creating Content Fragment Models in AEM](architect/model-structure.md)
 + AEM Headless Translation Journey {#translation}
-  + [Understand Headless Localization in AEM](translation/overview.md)
-  + [Get started with AEM headless localization](translation/getting-started.md)
-  + [Learn about headless content and how to localize in AEM](translation/learn-about.md)
+  + [Understand headless translation in AEM](translation/overview.md)
+  + [Get started with AEM headless translation](translation/getting-started.md)
+  + [Learn about headless content and how to translate in AEM](translation/learn-about.md)
   + [Configure translation connector](translation/configure-connector.md)
   + [Configure translation rules](translation/translation-rules.md)
   + [Translate content](translation/translate-content.md)
