@@ -1,7 +1,10 @@
 ---
 title: AEM Headless Content Architect Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
+hide: yes
+hidefromtoc: yes
 ---
+
 # AEM Headless Content Architect Journey {#aem-headless-content-architect-journey}
 
 Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless project.
