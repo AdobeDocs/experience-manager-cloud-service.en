@@ -283,6 +283,16 @@ In addition to standard properties you can define:
 >
 >There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
 
+## Content Fragment Model - Properties {#content-fragment-model-properties}
+
+You can edit the **Properties** of a Content Fragment Model:
+
+* **Basic**
+  * **Model Title**
+  * **Tags**
+  * **Description**
+  * **Upload Image**
+
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 
 For full control over the use of your Content Fragment Models they have a status that you can set.
@@ -405,12 +415,26 @@ To unpublish a content fragment model:
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
 
-## Content Fragment Model - Properties {#content-fragment-model-properties}
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-You can edit the **Properties** of a Content Fragment Model:
+This feature provides governance for Content Fragment Models that have been published. 
 
-* **Basic**
-  * **Model Title**
-  * **Tags**
-  * **Description**
-  * **Upload Image**
+The challenge:
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+The solution:
+
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
