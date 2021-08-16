@@ -31,4 +31,3 @@ role: Architect, Developer
   + [Assessing KPIs](best-practices/assessing-kpis.md)
   + [Aligning KPIs](best-practices/aligning-kpis.md)
   + [Choose the Right Team](best-practices/choose-right-team.md)
-+ [Overview of the Tools consoles](tools-consoles.md)
