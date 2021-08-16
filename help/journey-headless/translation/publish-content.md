@@ -40,11 +40,11 @@ Once content is created on the author instance, it must be transferred to the pu
 
 ## Publishing Your Translated Content {#publishing}
 
-Once you are happy with the state of your translated content, it must be published so headless services can consume it. This task is usually not the responsibility of the translation specialist, but is documented her to illustrate the complete workflow.
+Once you are happy with the state of your translated content, it must be published so headless services can consume it. This task is usually not the responsibility of the translation specialist, but is documented here to illustrate the complete workflow.
 
 >[!NOTE]
 >
->Generally when the translation is complete, the translations specialist will inform the content owners that the translations are ready for publication, who will then publish them.
+>Generally when the translation is complete, the translations specialist informs the content owners that the translations are ready for publication. The content owners then publish them.
 >
 >The following steps are provided for completeness.
 
@@ -57,7 +57,7 @@ The simplest way to publish the translations is to navigate to the project asset
 Under this path you have sub-folders for each translation language and can choose which to publish.
 
 1. Go to **Navigation** -&gt; **Assets** -&gt; **Files** and open the project folder.
-1. Here you will see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
+1. Here you see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
 ![Select language folder](assets/select-language-folder.png)
 1. Tap or click **Manage Publication**.
 1. In the **Manage Publication** window, make sure that **Publish** is automatically selected under **Action** and that **Now** is selected under **Scheduling**. Tap or click **Next**.
@@ -71,15 +71,15 @@ Your translated headless content is now published! It can now be accessed and co
 
 >[!TIP]
 >
->You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple localization at one time.
+>You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple translations at one time.
 
-There are additional options when publishing your content such as scheduling a publication time which are beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of the document for more information.
+There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of the document for more information.
 
 ## Updating Your Translated Content {#updating-translations}
 
-Translation is rarely a one-off exercise. Typically your content authors continue to add to and modify your content in the language root after initial translation is complete. This means that you will need to also update your translated content.
+Translation is rarely a one-off exercise. Typically your content authors continue to add to and modify your content in the language root after initial translation is complete. This means that you need to also update your translated content.
 
-Specific project requirements will define how often you will need to update your translations and what decision process will be followed before performing an update. Once you have decided to update your translations, the process in AEM is very simple. As the initial translation was based on a translation project, so too are any updates.
+Specific project requirements define how often you need to update your translations and what decision process is followed before performing an update. Once you have decided to update your translations, the process in AEM is very simple. As the initial translation was based on a translation project, so too are any updates.
 
 However as before, the process differs slightly if you chose to automatically create your translation project or manually create your translation project.
 
@@ -103,11 +103,11 @@ The content is added to the existing translation project. To view the translatio
 1. Tap or click the project that you just updated.
 1. Tap or click the language or one of the languages that you updated.
 
-You will see that a new job card was added to the project. In this example, another Spanish translation was added.
+You see that a new job card was added to the project. In this example, another Spanish translation was added.
 
 ![Additional translation job added](assets/additional-translation-job.png)
 
-You will notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
 
 From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
 

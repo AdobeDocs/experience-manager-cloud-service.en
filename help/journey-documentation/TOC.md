@@ -22,7 +22,7 @@ Please note that all links to other guides need to be absolute references with l
   + [Path to your first experience using AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/path-to-first-experience.html)
   + [How to model your content as AEM Content Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/model-your-content.html)
   + [How to access your content via AEM delivery APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/access-your-content.html)
-  + [How to update your content via AEM assets APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/update-your-content.html)
+  + [How to update your content via AEM Assets APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/update-your-content.html)
   + [How to put it all together](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/put-it-all-together.html)
   + [How to go live with your headless application](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/go-live.html)
   + [Optional - How to create single page applications with AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/create-spa.html)

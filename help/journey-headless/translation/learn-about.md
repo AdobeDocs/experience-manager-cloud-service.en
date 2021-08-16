@@ -26,11 +26,11 @@ In a full-stack CMS, all of the functionality for manipulating content is in the
 * All services of the system are integrated.
 * Content authoring is seamless.
 
-So if new channel needs to be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
+So if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
 ![Adding a new channel to the stack](/help/journey-headless/developer/assets/adding-channel.png)
 
-However the complexity of the dependencies within the stack quickly become apparent as other items in the stack need to be adjusted to accommodate the changes.
+However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
 
 ## The Head in Headless {#the-head}
 
@@ -40,7 +40,7 @@ When we talk about a headless CMS, the CMS manages the content and continues to 
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
 Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
