@@ -48,7 +48,7 @@ The variable can be deleted or set back to a different value if you want the env
 
 You can see new features in the Sites console in the local Quickstart SDK and code against new APIs in the prerelease by having your maven project reference the prerelease `API Jar` located in Maven Central. You can also see these prerelease features on your local computer by starting the regular Quickstart SDK in prerelease mode:
 
-* Download the SDK from the software distribution portal and install as described in [Accessing the AEM as a Cloud Service SDK](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)
+* Download the SDK from the software distribution portal and install as described in [Accessing the AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 * When launching the SDK Quickstart, include the argument `-r prerelease`.
 * The value is *sticky* so it can only be selected on the first startup. Reinstall the SDK to change the command line option.
 
