@@ -80,7 +80,8 @@ There are a number of Documentation Journeys already available to you. Since eac
 |Journey|Description|
 |---|---|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|Start here to see how AEM supports headless development models and how to get your project started from planning, to implementation, to go-live.|
-|Headless Authoring Journey|Start here to see how to author and manage headless content in AEM.|
+|[Headless Authoring Journey](/help/journey-headless/author/overview.md)|Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.|
+|[Headless Architect Journey](/help/journey-headless/architect/overview.md)|Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.|
 |[Headless Translation Journey](/help/journey-headless/translation/overview.md)|Start here to see how to set up and manage your headless translation projects in AEM.|
 |AEM Onboarding Journey|Coming Soon!|
 |AEM Commerce Journey|Coming Soon!|
