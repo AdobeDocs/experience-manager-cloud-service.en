@@ -20,6 +20,12 @@ role: Developer, Architect
   + [How to put it all together](developer/put-it-all-together.md)
   + [How to go live with your headless application](developer/go-live.md)
   + [Optional - How to create single page applications with AEM](developer/create-spa.md)
++ AEM Headless Content Author Journey {#content-author}
+  + [AEM Headless Content Author Journey - Overview](author/overview.md)
+  + [Authoring for Headless with AEM - An Introduction](author/introduction.md)
+  + [Authoring Basics for Headless with AEM](author/basics.md)
+  + [Learn about using references in Content Fragments](author/references.md)
+  + [Learn about defining Metadata and Tagging for Content Fragments](author/metadata-tagging.md)
 + AEM Headless Content Architect Journey {#content-architect}
   + [AEM Headless Content Architect Journey Overview](architect/overview.md)
   + [Content Modeling for Headless with AEM - An Introduction](architect/introduction.md)
