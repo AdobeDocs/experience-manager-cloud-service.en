@@ -1,6 +1,7 @@
 ---
 title: Learn about Creating Content Fragment Models in AEM
 description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
+index: no
 hide: yes
 hidefromtoc: yes
 ---
