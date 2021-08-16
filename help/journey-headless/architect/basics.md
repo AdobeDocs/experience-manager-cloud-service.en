@@ -1,6 +1,7 @@
 ---
 title: Learn Content Modeling Basics
 description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+index: no
 hide: yes
 hidefromtoc: yes
 ---
