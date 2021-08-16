@@ -1,6 +1,7 @@
 ---
 title: AEM Headless Content Author Journey
 description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.
+index: no
 hide: yes
 hidefromtoc: yes
 ---
