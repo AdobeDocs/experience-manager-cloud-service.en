@@ -34,3 +34,15 @@ Please note that all links to other guides need to be absolute references with l
   + [Configure translation rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
   + [Translate content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
   + [Publish translated content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
+  + AEM Headless Content Author Journey {#content-author}
+  + [AEM Headless Content Author Journey - Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
+  + [Authoring for Headless with AEM - An Introduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
+  + [Authoring Basics for Headless with AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
+  + [Learn about using references in Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
+  + [Learn about defining Metadata and Tagging for Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
++ AEM Headless Content Architect Journey {#content-architect}
+  + [AEM Headless Content Architect Journey Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
+  + [Content Modeling for Headless with AEM - An Introduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
+  + [Learn the Content Modeling Basics for Headless with AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
+  + [Learn about Creating Content Fragment Models in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
+
