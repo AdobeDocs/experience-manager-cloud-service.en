@@ -27,9 +27,9 @@ Please note that all links to other guides need to be absolute references with l
   + [How to go live with your headless application](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/go-live.html)
   + [Optional - How to create single page applications with AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/create-spa.html)
 + AEM Headless Translation Journey {#translation}
-  + [Understand Headless Localization in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/overview.html)
-  + [Get started with AEM headless localization](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/getting-started.html)
-  + [Learn about headless content and how to localize in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/learn-about.html)
+  + [Understand headless translation in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/overview.html)
+  + [Get started with AEM headless translation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/getting-started.html)
+  + [Learn about headless content and how to translate in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/learn-about.html)
   + [Configure translation connector](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/configure-connector.html)
   + [Configure translation rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
   + [Translate content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
