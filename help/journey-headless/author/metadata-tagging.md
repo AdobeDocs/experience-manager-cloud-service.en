@@ -1,6 +1,8 @@
 ---
 title: Learn about defining Metadata and Tagging for Content Fragments
 description: Learn about defining Metadata and Tagging for Content Fragments
+hide: yes
+hidefromtoc: yes
 ---
 
 # Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
