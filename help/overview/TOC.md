@@ -13,3 +13,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + [Introduction to AEM as a Cloud Service](introduction.md)
 + [What is New and What is Different](what-is-new-and-different.md)
 + [Terminology - New for the Cloud](terminology.md)
++ [SEO and URL Management](best-practices/seo-and-url-management.md)
++ [Assessing KPIs](best-practices/assessing-kpis.md)
++ [Aligning KPIs](best-practices/aligning-kpis.md)
++ [Choose the Right Team](best-practices/choose-right-team.md)
