@@ -116,12 +116,11 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### What is New {#what-is-new-cif}
 
-* CIF Core Components v2
-  * Simplified and improved configurations for PDP/PLP URL and SEO
-  * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
-  * New sitemap component for content and commerce pages
+* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
 
-* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
+  ![New Category Picker](/help/assets/CIF/category-picker.png)
+
+* Better A11Y support for CIF Core Components
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
