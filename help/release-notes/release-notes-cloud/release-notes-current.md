@@ -34,6 +34,23 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 * The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+ 
+### New features in [!DNL Sites] {#ga-features-sites}
+ 
+* 
+* 
+ 
+### New features available in the [!DNL Sites] prerelease channel {#beta-features-sites}
+ 
+* 
+* 
+ 
+# Bugs fixed in [!DNL Sites] {#bugs-fixed-sites}
+ 
+* 
+* 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
