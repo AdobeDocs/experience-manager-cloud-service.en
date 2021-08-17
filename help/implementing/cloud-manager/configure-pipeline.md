@@ -139,7 +139,7 @@ On the home screen, these pipelines are listed in a new card:
 
    ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
-1. Clicking on the **Add** button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
+1. Click on the **Add** button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
 
    Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
 
@@ -167,9 +167,9 @@ Follow the steps below to edit the configured non-production pipeline:
 
    ![](assets/configure-pipeline/non-prod-edit-1.png)
 
-1. Select the desired repository and click on **Save**.
+1. Select the desired repository and other required updates and click on **Save**.
 
-   ![](assets/configure-pipeline/non-prod-edit2.png)
+   ![](assets/configure-pipeline/edit-nonprodenv.png)
 
 ## The Next Steps {#the-next-steps}
 
