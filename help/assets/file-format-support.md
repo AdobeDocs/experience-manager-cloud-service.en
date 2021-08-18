@@ -221,7 +221,7 @@ The document formats supported for asset management features are as follows.
 
 ## Tips and limitations {#limitations-and-tips}
 
-* Currently, the file size limit for metadata extraction is approximately 10 GB. When uploading very large assets, sometimes metadata extraction operation fails.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes metadata extraction operation fails.
 
 >[!MORELIKETHIS]
 >
