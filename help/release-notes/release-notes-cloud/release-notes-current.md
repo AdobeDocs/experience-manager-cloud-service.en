@@ -34,6 +34,23 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 * The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+ 
+### New features in [!DNL Sites] {#ga-features-sites}
+ 
+* 
+* 
+ 
+### New features available in the [!DNL Sites] prerelease channel {#beta-features-sites}
+ 
+* 
+* 
+ 
+# Bugs fixed in [!DNL Sites] {#bugs-fixed-sites}
+ 
+* 
+* 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
@@ -97,12 +114,11 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### What is New {#what-is-new-cif}
 
-* CIF Core Components v2
-  * Simplified and improved configurations for PDP/PLP URL and SEO
-  * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
-  * New sitemap component for content and commerce pages
+* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
 
-* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
+  ![New Category Picker](/help/assets/CIF/category-picker.png)
+
+* Better A11Y support for CIF Core Components
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -136,7 +152,39 @@ XML Documentation for Experience Manager as a Cloud Service is generally availab
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.7.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.8.0 and 2021.7.0.
+
+## Release Date {#release-date-cm-aug}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 12, 2021.
+The next release is planned for September 09, 2021.
+
+### What's New {#what-is-new-aug}
+
+* Cloud Service customers can now view Service Level Agreement (SLA) reports in Cloud Manager. This will be made available progressively over the next few months.
+   See [SLA Reporting](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) to learn more.
+
+* The type and severity of the IndexType and `IndexDamAssetLucene` quality rules has been changed. These are now both Bugs of Blocker *serverity*.
+
+* New Oak index quality rules have been introduced to cover asynchronous and tika configurations.
+
+* Increase max SSL certs per program to 50.
+
+* Self-service capability to allow users to create and manage multiple repositories via Cloud Manager UI.
+
+* SonarQube was unnecessarily reading Git history data. On large code bases, this could lead to an unnecessary build performance penalty.
+
+* There is now an API available to invalidate the Maven dependency cache per pipeline.
+ 
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 29. 
+
+### Bug Fixes {#bug-fixes-aug}
+
+* Update Available status should not be displayed when the latest release is less than the current release.
+
+* Initial onboarding was failing for new organizations with very long names.
+
+* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
 
 ### Release Date {#release-cm-july}
 
