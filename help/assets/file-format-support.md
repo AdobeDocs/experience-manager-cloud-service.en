@@ -207,12 +207,8 @@ The document formats supported for asset management features are as follows.
 | AVI                    | A/V Interleave     | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | WebM                   | WebM               | Google VP8 |- |
 | OGV, OGG               | Ogg                | Theora, VP3, Dirac  | - |
-| MXF                    | MXF                | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | -|
-| MTS                    | AVCHD              | H264/AVC | - |
 | MKV                    | Matroska           | H264/AVC  | - |
-| R3D, RM                | Red Raw Video      | MJPEG 2000 | -  |
 | RAM, RM                | RealVideo          | Unsupported | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC                   | Native Flac        | Free lossless audio codec |  - |
 | MJ2                    | Motion JPEG 2000   | Motion JPEG 2000 codec | - |
 
 ## Audio formats {#audio-formats}
