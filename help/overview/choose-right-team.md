@@ -68,7 +68,7 @@ Now that you know what roles are required, look at the chart below to see when e
 
 <br>
 
-![](assets/team_involvement2.png)
+![](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >
