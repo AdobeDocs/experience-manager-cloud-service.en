@@ -38,18 +38,12 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
  
 ### New features in [!DNL Sites] {#ga-features-sites}
  
-* 
-* 
  
 ### New features available in the [!DNL Sites] prerelease channel {#beta-features-sites}
  
-* 
-* 
  
 # Bugs fixed in [!DNL Sites] {#bugs-fixed-sites}
  
-* 
-* 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
