@@ -7,7 +7,7 @@ index: no
 ---
 # Get Started with Onboarding Process {#getting-started}
 
-Onboarding is the process during which a designated [System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which, each member is able to login and access their AEM as a Cloud Service resources.
+Onboarding is the process during which a designated [System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assigning users to roles based on their job responsibilities. As a result, each member is able to login and access their AEM as a Cloud Service resources.
 
 ## Objective {#objective}
 
@@ -27,7 +27,7 @@ After reading this section you should be able to:
 Follow the steps below to navigate to Admin Console and review your System Administrator role from the Admin Console:
 
 >[!NOTE]
->You must be a System Administrator in order to to complete the following steps successfully.
+>You must be a System Administrator in order to complete the following steps successfully.
 
 1. Click on **Get Started** from your welcome email, as shown in the figure below, to navigate to Admin Console or navigate directly to Admin Console from [here](https://adminconsole.adobe.com).
 
@@ -49,11 +49,11 @@ Follow the steps below to navigate to Admin Console and review your System Admin
 
     ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. Once you click on **Administrators** from the **Users** card, in the preceding step, you can search by entering your Adobe ID email, username, first or last name.
+1. Once you click on **Administrators** from the **Users** card, you can search by entering your Adobe ID email, username, first or last name.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. The search must return successfully find your email record with **System** under the column labeled **ADMIN ROLE**, as shown below. This confirms that you are System Administrator.
+1. The search must successfully find your email record. Additionally, the **ADMIN ROLE** must show **System**, as shown below. This confirms you are a System Administrator. This confirms your role as a System Administrator.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
    
