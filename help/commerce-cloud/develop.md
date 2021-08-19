@@ -31,7 +31,7 @@ The CIF Add-On is provided as a Sling Feature archive. The zip file available on
 
 The following should be installed locally:
 
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
 - [Node.js v10+](https://nodejs.org/en/)
