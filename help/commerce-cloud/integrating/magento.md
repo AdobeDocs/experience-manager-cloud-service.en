@@ -10,6 +10,10 @@ The Experience Manager and Adobe Commerce (Magento) are seamlessly integrated us
 
 >[!NOTE]
 >
+> Minimum supported GraphQL API version is 2.3.5. Certain features are only supported in newer versions or just in the Adobe Commerce edition.
+
+>[!NOTE]
+>
 >GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* This scenario, where CIF communicates with commerce via GraphQL.
