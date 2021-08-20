@@ -19,6 +19,9 @@ This guide leads you through the most important topics so that on completion you
 * Understand AEM's headless features and how they work together to deliver a headless experience.
 * Have the ability to take the first steps implementing your first AEM headless project.
 
+> !TIP
+> If you prefer to __learn by doing__, visit the [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) organized by API and framework.
+
 ## AEM Documentation Journeys {#documentation-journeys}
 
 [A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
@@ -83,3 +86,4 @@ As such journeys are designed to stand on their own. However a number of them ca
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
+* [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
