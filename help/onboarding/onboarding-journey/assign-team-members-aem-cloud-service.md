@@ -21,7 +21,7 @@ After reading this section you should understand:
 
 ## Introduction {#introduction}
 
-To be granted access to AEM as a Cloud Service users must belong to one of two product profiles, such as, `AEM Users` or `AEM Administrators`. Your team members must be granted permissions to the AEM instance, since permissions to administer Cloud Manager will not suffice. Learn more.
+To be granted access to AEM as a Cloud Service users must belong to one of two product profiles:  `AEM Users` or `AEM Administrators`. Your team members must be granted permissions to the AEM instance, since permissions to administer Cloud Manager will not suffice. Learn more.
 
 >[!NOTE]
 >Every user assigned to AEM User product profile by the system administrator will have (read-only) access to Cloud Manager.
