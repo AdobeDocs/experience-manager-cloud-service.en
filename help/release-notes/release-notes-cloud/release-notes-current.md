@@ -34,6 +34,17 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 * The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+ 
+### New features in [!DNL Sites] {#ga-features-sites}
+ 
+ 
+### New features available in the [!DNL Sites] prerelease channel {#beta-features-sites}
+ 
+ 
+### Bugs fixed in [!DNL Sites] {#bugs-fixed-sites}
+ 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
@@ -79,32 +90,29 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
-* You can now use Automated Forms Conversion service to [convert PDF Forms in French, German, and Spanish language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to adaptive forms.
-* Added a separate panel to template editor to display errors related to adaptive form components. It helps consolidate all adaptive form errors at one location and reduce resolution time.
+* Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms.
 
-### New features available in [!DNL Forms] prerelease channel {#beta-features-forms}
+* **Acroform-based Document of Record**: AEM Forms as a Cloud Service supports using [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
-  * Generate documents by populating template files with XML data.
-  * Generate output forms in various formats, including non-interactive PDF print streams.
-  * Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.
+* **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). It allows you to retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB. 
 
-* **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
+### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **Acroform-based Document of Record**: You can also [use Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
+* **Use Adobe Sign roles in an Adaptive Form**: Adobe Sign for business and enterprise service levels have the option to expand the roles for Agreement recipients, beyond just the Signer, to better match their workflow requirements. You can now enable each recipient of agreement to configure their role in an Adaptive Form, with Signer being the default role.
 
-* **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). It allows you to retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB.  
+* **Analytics for Adaptive Forms**: You can now capture and track end user behavior via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+
+* **Easily connect AEM Forms with Microsoft Dynamics and Salesforce.com**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce.com, making it faster and easier for developers to configure Microsoft Dynamics and Salesforce.com as data sources for an adaptive form.
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
 
-* CIF Core Components v2
-  * Simplified and improved configurations for PDP/PLP URL and SEO
-  * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
-  * New sitemap component for content and commerce pages
+* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
 
-* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
+  ![New Category Picker](/help/assets/CIF/category-picker.png)
+
+* Better A11Y support for CIF Core Components
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
