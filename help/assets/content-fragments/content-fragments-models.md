@@ -415,6 +415,7 @@ To unpublish a content fragment model:
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
 
+<!--
 ## Locked Content Fragment Models {#locked-content-fragment-models}
 
 This feature provides governance for Content Fragment Models that have been published. 
@@ -438,3 +439,4 @@ The solution:
 * To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
 * In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->
