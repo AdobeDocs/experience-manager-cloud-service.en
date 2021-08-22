@@ -9,7 +9,7 @@ index: no
 
 ## Objective {#objective}
 
-This document helps your Developers and Deployment Managers get access to Cloud Manager and become familiar with how they can prepare for learning path. 
+This document helps your Developers and Deployment Managers get access to Cloud Manager and become familiar with how they can prepare for their learning path. 
 
 After reading this document, you should:
 
@@ -26,23 +26,25 @@ If you are reading this section, then you are likely assigned to a Developer or 
 
 ## Pre-requisites {#prerequisites}
 
-Your system administrator has assigned Developers and Deployment Managers to their respective product profiles. Developers must additionally be assigned to AEM Users or AEM Administrators product profile.  
-Cloud resources have been setup.
-You understand how to navigate and log in to Cloud Manager 
+Before you start, ensure:
+ 
+* Your system administrator has assigned Developers and Deployment Managers to their respective product profiles. Developers must additionally be assigned to AEM Users or AEM Administrators product profile.
+* Cloud resources have been setup.
+* You understand how to navigate and log in to Cloud Manager
 
-## Manage Git {#manage-git}
+## Manage GitHub {#manage-git}
 
 You can access and manage your Git Repository using Self-Service Git Account Management from Cloud Manager UI.
 To learn more on this topic, see [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en). 
 
-## Setup pipeline {#setup-pipeline}
+## Setup Pipeline {#setup-pipeline}
 
 You can configure your Production or Non-Production Pipeline from Cloud Manager UI.
 To learn more on this topic, see [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## What’s Next {#whats-next}
 
-Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. 
+Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. To learn about the learning journey for Content Authors, see Learning Path for AEM Authors.
 
 ## Additional Resources {#additional-resources}
 
