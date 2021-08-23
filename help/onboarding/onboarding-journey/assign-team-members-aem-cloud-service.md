@@ -1,12 +1,12 @@
 ---
-title: Assigning Team Members to AEM as a Cloud Service Product Profiles 
+title: Assign Team Members to AEM as a Cloud Service Product Profiles 
 description: Follow this page to learn how to assign team members to AEM as a Cloud Service Product Profiles
 hide: yes
 hidefromtoc: yes
 index: no
 ---
 
-# Assigning Team Members to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
+# Assign Team Members to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
 
 ## Objective {#objective}
 
