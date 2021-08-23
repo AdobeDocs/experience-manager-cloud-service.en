@@ -31,6 +31,17 @@ The onboarding journey is illustrated below and each step in the journey is desc
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
 
+This journey is designed for a System Administrator persona, laying out the requirements, steps, and approach. The journey defines additional personas with which the System Administrator must interact for a successful project, but the point-of-view for the journey is that of an administrator.
+
+The following are the personas that interact in this journey.
+
+|Persona|Description|Role in Journey|
+|---|---|---|
+|System Administrator|Provides initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.|Manages all aspects of their users, from access to permissions. |
+|AEM Author|Creates and reviews the content (this can be of several types; for example, pages, assets, publications) before it is published to your website.|Once granted permissions, can start their own deployment manager's journey.|
+|Developer|Has experience developing AEM applications which consume content from different sources|Once granted permissions, can start their own developer journey|
+|Deployment Manager|Adds or update an environment, run any pipeline, and deploy code to AEM environment or code-quality.|Once granted permissions, can start their own deployment manager's journey.|
+
 ## Exploring the Onboarding Journey {#exploring-onboarding-journey}
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of the onboarding steps for AEM as a Cloud Service. Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to onboarding, we recommend that you start at the beginning and progress sequentially.
