@@ -89,7 +89,7 @@ In terms of server configuration, you can take the following steps to ensure tha
 
 ## AEM Configurations {#aem-configurations}
 
-This section describes the implementation steps needed configure AEM to follow these SEO recommendations.
+This section describes the implementation steps needed to configure AEM to follow these SEO recommendations.
 
 ### Using Sling selectors {#using-sling-selectors}
 
@@ -356,16 +356,34 @@ The caveat with placing the `robots.txt` file at the site root is that dispatche
 
 Crawlers use XML sitemaps to better understand the structure of websites. While there is no guarantee that providing a sitemap will lead to improved SEO rankings, it is an agreed-upon best practice. You can manually maintain an XML file on the web server to use as the sitemap, but it is recommended to generate the sitemap programmatically, which ensures that as authors create new content, the sitemap will automatically reflect their changes.
 
-To programmatically generate a sitemap, register a Sling Servlet listening for a `sitemap.xml` call. The servlet can then use the resource provided via the servlet API to look at the current page and its children, outputting XML. The XML will then be cached at the dispatcher. This location should be referenced in the sitemap property of the `robots.txt` file. Additionally, a custom flush rule will need to be implemented to make sure to flush this file whenever a new page is activated.
+AEM uses the [Apache Sling Sitemap module](https://github.com/apache/sling-org-apache-sling-sitemap) to generate XML sitemaps, which providdes a wide range of options for developers and editors to keep a sites XML sitemap up to date. 
+
+The Apache Sling Sitemap module distinguishes between a top level sitemap and a nested sitemap, both being generated for any resource that has the `sling:sitemapRoot` property set to `true`. In general sitemaps are rendered using selectors at the path of the tree's top level sitemap, which is the resource that has no other sitemap root ancestor. This top level sitemap root also exposes the sitemap index, which normally is what a site owner would configure in the Search Engine's configuration portal or add to the site's `robots.txt`. 
+
+For example, consider a site that defines a top level sitemap root at `my-page` and a nested sitemap root at `my-page/news`, to generate a dedicated sitemap for pages in the news subtree. The resulting, relevant urls would be
+
+* https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html
 
 >[!NOTE]
 >
->You can register a Sling Servlet to listen for the selector `sitemap` with the extension `xml`. This will cause the servlet to process the request any time a URL is requested that ends in:
->&nbsp;&nbsp;&nbsp;&nbsp;`/<path-to>/page.sitemap.xml`
->
->You can then get the requested resource from the request and generate a sitemap from that point in the content tree by using the JCR APIs.
->
->The benefit to an approach like this is when you have multiple sites being served from the same instance. A request to `/content/siteA.sitemap.xml` would generate a sitemap for `siteA` while a request for `/content/siteB.sitemap.xml` would generate a sitemap for `siteB` without the need for writing additional code.
+> The selectors `sitemap` and `sitemap-index` may interfere with custom implementations. If you do not want to use the product feature, configure your own servlet serving these selectors with a `service.ranking` higher then 0. 
+
+In the default configuration the Page Properties Dialog provides an option, to mark a Page as a sitemap root and so, as described above, generate a sitemap of it and its descendants. This behaviour is implemented by implementations of the `SitemapGenerator` interface and may be extended by adding alternative implementations. However, as the frequency on which to regenerate the XML sitemaps highly depends on the content authoring workflows and workloads, the product does not ship any `SitemapScheduler` configuration. This makes the feature effectively opt-in. 
+
+In order to enable the background job that generates the XML sitemaps a `SitemapScheduler` must be configured. To do so, create a OSGI configuration for the PID `org.apache.sling.sitemap.impl.SitemapScheduler`. The scheduler expression `0 0 0 * * ?` can be used as a starting point to regenerate all XML sitemaps once a day at midnight. 
+
+![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png) 
+
+The sitemap generation job can run on both, author and publish tier instances. In most cases it is recommended to run the generation on publish tier instances, as only there proper canonical URLs can be generated (due to the Sling Resource Mapping rules commonly being present only on publish tier instances). However, it is possible to plug-in a custom implementation of the externalisation mechanism used to generate the canonical URLs by implementing the `SitemapLinkExternalizer` interface. If a custom implementation is able to generate the canonical URLs of a Sitemap on the author tier instances, the `SitemapScheduler` can be confrigured for the author run mode and the XML sitemap generation workload could be distributed across the instances of the author service cluster. In this scenario, particular caution must be spent on hanling content that has not yet be published, has been modified or is only visible to restricited group of users. 
+
+Additionally to the Apache Sling Sitemap extension points [SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html) and  [SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html) described above, and also the [SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html), the AEM specific implementation defines a couple of extension points too:
+
+- A [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) can be implemented to remove pages from XML sitemaps generated by the AEM Sites specific Page Tree Sitemap Generator
+- A [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) or [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) can be implemeneted to filter out products or categories from XML sitemaps generated by the [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) specific sitemap generators. 
+
+Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 
@@ -395,3 +413,4 @@ For more information, please see the following additional resources:
 * [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
+* [https://github.com/apache/sling-org-apache-sling-sitemap](https://github.com/apache/sling-org-apache-sling-sitemap)
