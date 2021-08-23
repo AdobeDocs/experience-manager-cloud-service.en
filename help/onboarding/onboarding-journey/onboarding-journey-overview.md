@@ -58,4 +58,4 @@ You will explore many topics in this journey. The following articles give you fo
 
 ## What's Next {#what-is-next}
 
-You are now ready to get started on your Onboarding Journey. We encourage you to continue on to the next part of the journey and read the article Getting Starting with Onboarding Process.
+You are now ready to get started on your Onboarding Journey. We encourage you to continue on to the next part of the journey and read the article [Get Starting with Onboarding Process](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md).
