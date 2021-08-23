@@ -19,7 +19,7 @@ This guide leads you through the most important topics so that on completion you
 * Understand AEM's headless features and how they work together to deliver a headless experience.
 * Have the ability to take the first steps implementing your first AEM headless project.
 
-> !TIP
+>[!TIP]
 > If you prefer to __learn by doing__, visit the [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) organized by API and framework.
 
 ## AEM Documentation Journeys {#documentation-journeys}
