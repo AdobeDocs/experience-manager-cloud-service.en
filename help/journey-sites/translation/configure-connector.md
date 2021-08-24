@@ -11,10 +11,10 @@ Learn how to connect AEM to a translation service.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless translation journey, [Get started with AEM headless translation](learn-about.md) you learned how to organize your headless content and how AEM's translation tools work and you should now:
+In the previous document of the AEM Sites translation journey, [Get started with AEM Sites translation](learn-about.md) you learned how to organize your content and how AEM's translation tools work and you should now:
 
 * Understand the importance of content structure to translation.
-* Understand how AEM stores headless content.
+* Understand how AEM stores content.
 * Be familiar with AEM's translation tools.
 
 This article builds on those fundamentals so you can take the first configuration step and set up a translation service, which you will use later in the journey to translate your content.
@@ -81,7 +81,7 @@ To create a new translation configuration:
 
 1. Tap or click **Create** and the **Edit Configuration** window appears where you can configure the configuration properties.
 
-1. Remember that Content Fragments are stored as assets in AEM. Tap or click the **Assets** tab.
+1. Because your content is manages as sites, tap or click the **Sites** tab.
 
 ![Translation configuration properties](assets/translation-configuration.png)
 
@@ -107,7 +107,7 @@ AEM is a flexible and powerful tool and supports multiple, simultaneous translat
 To do this, navigate to the language root of your content. For our example purposes this is
 
 ```text
-/content/dam/<your-project>/en
+/content/<your-project>/en
 ```
 
 1. Go to the global navigation and go to **Navigation** -&gt; **Assets** -&gt; **Files**.
@@ -121,16 +121,16 @@ To do this, navigate to the language root of your content. For our example purpo
 
 ## What's Next {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+Now that you have completed this part of the AEM Sites translation journey you should:
 
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
+Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Configure translation rules](translation-rules.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the translation journey by reviewing the document [Configure translation rules](translation-rules.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Review a list of selected translation connectors and learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM provides a trial Microsoft Translation account for testing purposes.
