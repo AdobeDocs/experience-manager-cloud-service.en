@@ -2,7 +2,6 @@
 title: Assigning Team Members to Cloud Manager Product Profiles 
 description: Follow this page to learn how to assign team members to Cloud Manager Product profiles
 hide: yes
-hidefromtoc: yes
 index: no
 ---
 
@@ -26,7 +25,7 @@ The following prerequisites should be considered before starting this section. Y
 
 * Be a System Administrator and understand [Cloud Manager Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 * Understand [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) basics. 
-* Have details about your team members. A System Administrator must have the names and email addresses and the roles and responsibilities for the team members who will need access to AEM as a Cloud Service. 
+* Have details about your team members. A System Administrator must have the names, email addresses, and the roles and responsibilities for the team members who will need access to AEM as a Cloud Service. 
 
    >[!NOTE]
    >For the purpose of onboarding, we recommend that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
@@ -49,7 +48,7 @@ Follow the steps below to view list of Cloud Manager Profiles:
    >Refer to Logging in to Admin Console to learn how to use Admin Console.
 
 
-1. Navigate to the **Cloud Manager** instance from the table with the list of all instances. 
+1. Navigate to the **Cloud Manager** instance from the list of all instances. 
 
     ![](/help/onboarding/onboarding-journey/assets/assign-team2.png)
 
@@ -93,11 +92,11 @@ The following steps will walk you through this:
 
 1. Click **Save**. A welcome email is sent to the user you added. The invited user can access Cloud Manager by clicking the link in the welcome email and signing in using their Adobe ID.
 
-   Congratulations! Now, your newly formed Cloud Manager team including the yourself assigned to the ‘Business Owner’ role has been setup. Members will receive a welcome email inviting them to login and access Cloud Manager. In the role of Business Owner, you are now just one step away from logging in to Cloud Manager and enabling the creation of your cloud resources.
+   Congratulations! Your newly formed Cloud Manager team (including yourself assigned to the ‘Business Owner’ role) has been setup. Members will receive a welcome email inviting them to login and access Cloud Manager. In the role of Business Owner, you are now just one step away from logging in to Cloud Manager and enabling the creation of your cloud resources.
 
 ## Assign Users to Deployment Manager Product Profile {#assign-users-deployment-manager}
 
-1. Identify the user(s) who will manage Cloud Manager Programs and add them to the Deployment Manager product profile. The System Administrator must be the first person to access and log in to Cloud Manager. You must add yourself (System Administrator) to the Business Owner product profile first. 
+1. Identify the user(s) who will manage Cloud Manager Programs and add them to the Deployment Manager product profile. The System Administrator must be the first person to access and log in to Cloud Manager. You must add yourself (System Administrator) to the Business Owner product profile first (as described in the previous section).
 
 1. In [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Overview** page, select **Adobe Experience Manager as a Cloud Service** product from **Products and services** card as shown below.
 
@@ -135,6 +134,9 @@ The following steps will walk you through this:
 
 1. In **Add users to your team** dialog box, type the email ID of the user you want to add. For the ID Type, select Adobe ID, if the Federated ID for your team members has not yet been set up.
 
+   >[!NOTE]
+   >To learn more about identity types on Adobe Admin Console, refer to [Identity overview](https://helpx.adobe.com/enterprise/using/identity.html).
+
    ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
 
 1. In the Product selection, select **Adobe Experience Manager as a Cloud Service** and assign **Developer** product profile to the user as shown below. 
@@ -150,7 +152,7 @@ The following steps will walk you through this:
 
 ## What’s Next {#whats-next}
 
-Now that you learnt about three different Cloud Manager product profiles such as Business Owner, Deployment Manager, and Developer and assigned team members to Cloud Manager product profiles such as Business Owner, Deployment Manager, and Developer, you should continue your onboarding journey by next reviewing the document Setup Cloud Resources via Cloud Manager, where you will learn:
+You have learned about three different Cloud Manager product profiles such as Business Owner, Deployment Manager, and Developer. Next you assigned team members to Cloud Manager product profiles such as Business Owner, Deployment Manager, and Developer. You are now ready to continue your onboarding journey by next reviewing the document [Setup Cloud Resources via Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md), where you will learn:
 
 1. As a System Administrator assigned to the *Business Owner* role, you must access and login to Cloud Manager. 
 
