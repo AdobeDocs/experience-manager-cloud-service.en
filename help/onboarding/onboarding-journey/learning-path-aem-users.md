@@ -28,11 +28,24 @@ Your System Administrator must have completed all of the necessary steps and suc
 
 ## Log in to Author {#login-author}
 
-The following steps need to be followed in order to access Author:
+Follow the steps below to access Author:
 
-1. Follow these steps to Navigate to Cloud Manager. Alternatively, you can go directly to Cloud Manager and login.
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
+
+1. From the Adobe Experience Cloud home page, Select **Experience Manager**.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. This will take you to the AEM home page. From here, launch **Cloud Manager** .
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future reference and to help you navigate directly to Cloud Manager's landing page.
 
 1. From the **Overview** page in Cloud Manager, click on the author link from the **Environments** card.
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. This will open a new tab where you can login to author environment using your Adobe ID.
 
