@@ -73,7 +73,7 @@ Here are some general tips on how to construct your URLs for SEO:
 
     * Sometimes sites will be served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine will track these as two separate pages.
 
-    * Google currently prefers `https` pages to `http` ones. For this reason it often makes everyone’s life easier to serve the whole site over `https`.
+    * Google currently prefers `https` pages to `http` ones. For this reason, it often makes everyone’s life easier to serve the whole site over `https`.
 
 ### Server configuration {#server-configuration}
 
@@ -178,7 +178,7 @@ If an author wants a page to be accessible from a second location for promotiona
 
 #### Localized page names {#localized-page-names}
 
-You may want to to display localized page names to users of translated content. For example:
+You may want to display localized page names to users of translated content. For example:
 
 * Rather than having a Spanish-speaking user navigate to:
   `www.mydomain.com/es/home.html`
@@ -368,22 +368,22 @@ For example, consider a site that defines a top level sitemap root at `my-page` 
 
 >[!NOTE]
 >
-> The selectors `sitemap` and `sitemap-index` may interfere with custom implementations. If you do not want to use the product feature, configure your own servlet serving these selectors with a `service.ranking` higher then 0. 
+> The selectors `sitemap` and `sitemap-index` may interfere with custom implementations. If you do not want to use the product feature, configure your own servlet serving these selectors with a `service.ranking` higher than 0. 
 
-In the default configuration, the Page Properties Dialog provides an option to mark a Page as a sitemap root and so, as described above, generate a sitemap of itself and its descendants. This behaviour is implemented by implementations of the `SitemapGenerator` interface and may be extended by adding alternative implementations. However, as the frequency on which to regenerate the XML sitemaps highly depends on the content authoring workflows and workloads, the product does not ship any `SitemapScheduler` configuration. This makes the feature effectively opt-in. 
+In the default configuration, the Page Properties Dialog provides an option to mark a Page as a sitemap root and so, as described above, generate a sitemap of itself and its descendants. This behavior is implemented by implementations of the `SitemapGenerator` interface and may be extended by adding alternative implementations. However, as the frequency on which to regenerate the XML sitemaps highly depends on the content authoring workflows and workloads, the product does not ship any `SitemapScheduler` configuration. This makes the feature effectively opt-in. 
 
-In order to enable the background job that generates the XML sitemaps a `SitemapScheduler` must be configured. To do so, create a OSGI configuration for the PID `org.apache.sling.sitemap.impl.SitemapScheduler`. The scheduler expression `0 0 0 * * ?` can be used as a starting point to regenerate all XML sitemaps once a day at midnight. 
+In order to enable the background job that generates the XML sitemaps a `SitemapScheduler` must be configured. To do so, create an OSGI configuration for the PID `org.apache.sling.sitemap.impl.SitemapScheduler`. The scheduler expression `0 0 0 * * ?` can be used as a starting point to regenerate all XML sitemaps once a day at midnight. 
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png) 
 
-The sitemap generation job can run on both, author and publish tier instances. In most cases, it is recommended to run the generation on publish tier instances, as only there proper canonical URLs can be generated (due to the Sling Resource Mapping rules commonly being present only on publish tier instances). However, it is possible to plug-in a custom implementation of the externalization mechanism used to generate the canonical URLs by implementing the `SitemapLinkExternalizer` interface. If a custom implementation is able to generate the canonical URLs of a Sitemap on the author tier instances, the `SitemapScheduler` can be confrigured for the author run mode and the XML sitemap generation workload could be distributed across the instances of the author service cluster. In this scenario, particular caution must be spent on hanling content that has not yet be published, has been modified or is only visible to restricited group of users. 
+The sitemap generation job can run on both, author and publish tier instances. In most cases, it is recommended to run the generation on publish tier instances, as only there proper canonical URLs can be generated (due to the Sling Resource Mapping rules commonly being present only on publish tier instances). However, it is possible to plug-in a custom implementation of the externalization mechanism used to generate the canonical URLs by implementing the `SitemapLinkExternalizer` interface. If a custom implementation is able to generate the canonical URLs of a Sitemap on the author tier instances, the `SitemapScheduler` can be configured for the author run mode and the XML sitemap generation workload could be distributed across the instances of the author service cluster. In this scenario, particular caution must be spent on handling content that has not yet been published, has been modified or is only visible to restricted group of users. 
 
 Additionally to the Apache Sling Sitemap extension points [SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html) and  [SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html) described above, and also the [SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html), the AEM specific implementation defines a couple of extension points too:
 
 * A [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) can be implemented to remove pages from XML sitemaps generated by the AEM Sites specific Page Tree Sitemap Generator
-* A [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) or [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) can be implemeneted to filter out products or categories from XML sitemaps generated by the [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) specific sitemap generators. 
+* A [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) or [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) can be implemented to filter out products or categories from XML sitemaps generated by the [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) specific sitemap generators. 
 
-Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
+Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 
