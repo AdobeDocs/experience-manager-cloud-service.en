@@ -11,17 +11,17 @@ Learn how to publish your translated content and update the translations as the 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless translation journey, [Translate Content,](configure-connector.md) you learned how to use AEM Translation Projects to translate your headless content. You should now:
+In the previous document of the AEM Sites translation journey, [Translate Content,](configure-connector.md) you learned how to use AEM Translation Projects to translate your content. You should now:
 
 * Understand what a translation project is.
 * Be able to create new translation projects.
-* Use translation projects to translate your headless content.
+* Use translation projects to translate your content.
 
 Now that your initial translation is complete, this article takes you through the next step of publishing that content and what to do to update your translations as the underlying content in the language root  changes.
 
 ## Objective {#objective}
 
-This document helps you understand how to publish headless content in AEM and how to create a continual workflow to keep your translations up-to-date. After reading this document, you should:
+This document helps you understand how to publish content in AEM and how to create a continual workflow to keep your translations up-to-date. After reading this document, you should:
 
 * Understand the author-publish model of AEM.
 * Know how to publish your translated content.
@@ -43,7 +43,7 @@ Once content is created on the author instance, it must be transferred to the pu
 
 ## Publishing Your Translated Content {#publishing}
 
-Once you are happy with the state of your translated content, it must be published so headless services can consume it. This task is usually not the responsibility of the translation specialist, but is documented here to illustrate the complete workflow.
+Once you are happy with the state of your translated content, it must be published so it can be and accessed and consumed. This task is usually not the responsibility of the translation specialist, but is documented here to illustrate the complete workflow.
 
 >[!NOTE]
 >
@@ -51,15 +51,15 @@ Once you are happy with the state of your translated content, it must be publish
 >
 >The following steps are provided for completeness.
 
-The simplest way to publish the translations is to navigate to the project assets folder.
+The simplest way to publish the translations is to navigate to the project folder.
 
 ```text
-/content/dam/<your-project>/
+/content/<your-project>/
 ```
 
 Under this path you have sub-folders for each translation language and can choose which to publish.
 
-1. Go to **Navigation** -&gt; **Assets** -&gt; **Files** and open the project folder.
+1. Go to **Navigation** -&gt; **Sites** -&gt; **Files** and open the project folder.
 1. Here you see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
 ![Select language folder](assets/select-language-folder.png)
 1. Tap or click **Manage Publication**.
@@ -70,7 +70,7 @@ Under this path you have sub-folders for each translation language and can choos
 1. AEM confirms the publish action with a pop-up message at the bottom of the screen.
 ![Resources published banner](assets/resources-published-message.png)
 
-Your translated headless content is now published! It can now be accessed and consumed by your headless services.
+Your translated content is now published! It can now be accessed and consumed.
 
 >[!TIP]
 >
@@ -88,8 +88,8 @@ However as before, the process differs slightly if you chose to automatically cr
 
 ### Updating an Automatically Created Translation Project {#updating-automatic-project}
 
-1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
-1. Select the language root of your project. In this case we have selected `/content/dam/wknd/en`.
+1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that content in AEM is stored under `/content`.
+1. Select the language root of your project. In this case we have selected `/content/wknd/en`.
 1. Tap or click the rail selector and show the **References** panel.
 1. Tap or click on **Language Copies**.
 1. Check the **Language Copies** checkbox.
@@ -110,7 +110,7 @@ You see that a new job card was added to the project. In this example, another S
 
 ![Additional translation job added](assets/additional-translation-job.png)
 
-You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+You may notice that the statistics listed on the new card (number of pages) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
 
 From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
 
@@ -146,14 +146,13 @@ From this point, you [start and manage your translation job just as you did the 
 
 ## End of the Journey? {#end-of-journey}
 
-Congratulations! You have completed the headless translation journey! You should now:
+Congratulations! You have completed the AEM Sites translation journey! You should now:
 
-* Have an overview of what headless content delivery is.
-* Have a basic Understanding AEM's headless features.
-* Understand AEM's translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* Have a basic understanding AEM's content management features.
+* Understand AEM's translation features and how they related to your sites content.
+* Have the ability to start translating your own content.
 
-You are now ready to translate your own headless content in AEM. However AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
+You are now ready to translate your own content in AEM. However AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 
 ## Additional Resources {#additional-resources}
 
