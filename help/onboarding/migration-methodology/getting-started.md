@@ -73,7 +73,7 @@ See self-help resources about implementation for Experience Manager as a Cloud S
       * [Backup and Restore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
 >[!TIP]
-> See tutorial on how to [Deploy WKND to Experience Manager Cloud  Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)  
+> See tutorial on how to [Deploy WKND to Experience Manager Cloud  Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)  
 
 ### Help and Resources
 

@@ -1,12 +1,11 @@
 ---
-title: Assigning Team Members to AEM as a Cloud Service Product Profiles 
+title: Assign Team Members to AEM as a Cloud Service Product Profiles 
 description: Follow this page to learn how to assign team members to AEM as a Cloud Service Product Profiles
 hide: yes
-hidefromtoc: yes
 index: no
 ---
 
-# Assigning Team Members to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
+# Assign Team Members to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
 
 ## Objective {#objective}
 
@@ -95,7 +94,7 @@ The steps below must be followed by a System Administrator who is also in the Bu
 
 ## What’s Next {#whats-next}
 
-The users that you assigned to AEM as a Cloud Service product profiles are now ready to learn how to access Author and get familiar with authoring pages in AEM as a Cloud Service. You should follow the path, by next reviewing the document Learning Path for AEM Users or Learning Path for Developers and Deployment Managers.
+The users that you assigned to AEM as a Cloud Service product profiles are now ready to learn how to access Author and get familiar with authoring pages in AEM as a Cloud Service. You should follow the path, by next reviewing the document Learning Path for [AEM Users](/help/onboarding/onboarding-journey/learning-path-aem-users.md) or for [Developers and Deployment Managers](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md).
 
 ## Additional Resources {#additional-resources}
 
