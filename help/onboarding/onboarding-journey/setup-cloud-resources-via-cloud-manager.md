@@ -35,7 +35,7 @@ Follow the sections below to learn how to create your [cloud service programs](#
 
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
-The Business Owner user will receive a welcome email with a link to get started, or if they cannot find it, go directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
+The Business Owner user will receive a welcome email with a link to get started, or if they cannot find it, access [Cloud Manager](https://my.cloudmanager.adobe.com/) directly by logging in using your Adobe ID.
 
 Follow the steps below to navigate to Cloud Manager:
 
