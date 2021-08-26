@@ -41,13 +41,13 @@ Follow the steps below to update your player:
 
 The player reports various playback metrics with each `ping` that defaults to 30 seconds. Based on the metrics, you can detect various edge cases such as stuck experience, blank screen, and scheduling issues. This lets you understand and troubleshoot issues on the device, and thus expedites an investigation and corrective measures.
 
-Basic Playback monitoring in an AEM Screens player allow you to:
+Basic Playback monitoring in an AEM Screens player allows you to:
 
-* Remotely monitor if a player is properly playing content
+* Remotely monitor, if a player is properly playing content.
 
-* Improve reactivity to blank screens or broken experiences in the field
+* Improve reactivity to blank screens or broken experiences in the field.
 
-* Decrease risk of showing a broken experience to the end user
+* Decreases the risk of showing a broken experience to the end user.
 
 ### Understanding Properties {#understand-properties}
 
@@ -72,11 +72,11 @@ The following properties are included in each `ping`:
 
 Few limitations to basic playback monitoring are listed below:
 
-* Since the player is reporting its own playback state to the server, it needs an active connection.
+* The player reports its own playback state to the server, so it requires an active connection.
 
 * The `isContentRendering` property that checks the GPU is currently resource intensive to be enabled by default and requires explicit opt-in from the player preferences. It is recommended not to use it in conjunction with videos.
 
-* Supported for sequence channels.
+* This feature is supported for sequence channels.
 
 ## What's Next {#whats-next}
 
