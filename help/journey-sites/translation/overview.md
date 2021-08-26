@@ -11,7 +11,9 @@ Start here for a guided journey through translating your AEM Sites content using
 
 ## Introduction {#introduction}
 
-INSERT GENERAL TRANSLATION INFORMATION HERE
+AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audience.
+
+AEM offers equally powerful tools to translate your content allowing you to deliver it as quickly as possible to your audiences in other regions or locales. This documentation journey introduces you to the authoring tools so you understand how content is created and managed in AEM and then dives into what you need to know to manage your own translation project.
 
 If you are already familiar with AEM Sites and your translation requirements, you may already have the foundational knowledge of this journey. Consider referring to our technical documentation linked under the [additional resources section below.](#additional-resources)
 
