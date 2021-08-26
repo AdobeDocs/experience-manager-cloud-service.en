@@ -68,6 +68,15 @@ The following properties are included in each `ping`:
 >|---|---|
 >|isContentRendering {boolean}|true if the GPU can confirm it is playing actual content (based on pixel analysis)|
 
+### Limitations {#limitations}
+
+Few limitations to basic playback monitoring are listed below:
+
+* Since the player is reporting its own playback state to the server, it needs an active connection.
+
+* The `isContentRendering` property that checks the GPU is currently resource intensive to be enabled by default and requires explicit opt-in from the player preferences. It is recommended not to use it in conjunction with videos.
+
+* Supported for sequence channels.
 
 ## What's Next {#whats-next}
 
