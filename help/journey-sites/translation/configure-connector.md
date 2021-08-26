@@ -72,6 +72,7 @@ To create a new translation configuration:
 
    ![Translation configuration location](assets/translation-configuration-location.png)
 
+1. Click or tap **Create** in the toolbar to create the new configuration.
 1. Provide the following information in the fields and then click or tap **Create**.
    1. Select **Configuration Type** in the drop-down. Select **Translation Integration** from the list.
    1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console as well as in page property drop-down lists.
@@ -90,10 +91,9 @@ To create a new translation configuration:
    1. **Translation Method** - Select **Machine Translation** or **Human Translation** depending on your translation provider. For the purposes of this journey we assume machine translation.
    1. **Translation Providers** - Select the connector you installed for your translation service from the list.
    1. **Content Category** - Select the most appropriate category to better target the translation (only for machine translation).
-   1. **Translate Content Fragment Assets** - Check this to translate assets associated with Content Fragments.
-   1. **Translate Assets** - Check this to translate the assets.
-   1. **Translate Metadata** - Check this to translate asset metadata.
-   1. **Translate Tags** - Check this to translate tags that are associated with the asset.
+   1. **Translate Page Assets** - Select **Using Sites Translation Workflow** to translate the assets associated with the sites pages.
+   1. **Translate Component Strings** - Check this to translate component information.
+   1. **Translate Tags** - Check this to translate tags that are associated with the page.
    1. **Auto-Execute Translation** - Check this property if you want translations to be automatically sent to your translation service.
 
 1. Tap or click **Save &amp; Close**.
