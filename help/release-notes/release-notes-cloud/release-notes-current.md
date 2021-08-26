@@ -24,26 +24,7 @@ The following release (2021.9.0) is on September 30, 2021.
 
 ## Release Video {#release-video}
 
-Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335580) video for a summary of the features added.
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### What's New {#what-is-new-foundation}
-
-* More flexible dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your dispatcher configuration in order to take advantage of it.
-* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
-* Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
-
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
- 
-### New features in [!DNL Sites] {#ga-features-sites}
- 
- 
-### New features available in the [!DNL Sites] prerelease channel {#beta-features-sites}
- 
- 
-### Bugs fixed in [!DNL Sites] {#bugs-fixed-sites}
- 
+Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/336277) video for a summary of the features added.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -138,12 +119,6 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 * Tags with same name but different namespaces could not be created earlier.
 
-## XML Documentation for Experience Manager as a Cloud Service {#xml-documentation}
- 
-### What is New {#what-is-new-xml-documentation}
- 
-XML Documentation for Experience Manager as a Cloud Service is generally available. It allows Experience Manager as a Cloud Service customers to procure XML Documentation addon to import, create, manage, and deliver technical content across multiple channels including Experience Manager Sites.
-
 ## Cloud Manager {#cloud-manager}
 
 This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.8.0 and 2021.7.0.
@@ -180,43 +155,6 @@ The next release is planned for September 09, 2021.
 
 * Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
 
-### Release Date {#release-cm-july}
-
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.7.0 is July 15, 2021.
-The next release is planned for August 12, 2021.
-
-### What's New {#what-is-new-cm-july}
-
-* Customers are now able to use Azul 8 and 11 JDKs for their Cloud Manager build processes and can either select to use one of these JDKs for toolchains-compatible Maven plugins *or* the entire Maven process execution.
-
-* The outbound egress IP will now be logged in the build step log file. 
-
-* Stage and Production environments running old versions of AEM will now report a status of **Update Available**. 
-
-* The maximum SSL certificates supported has increased to 20 per program.
-
-* The maximum number of domains that can be configured has increased to 500 per environment.
-
-* The **Manage Git** buttons has been retitled to **Access Git Info** and the dialog has been visually refreshed.
-
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28.
-
-### Bug Fixes {#bug-fixes-cm-july}
-
-* In some situations, Preview was not an available option when binding an IP Allow List to an environment.
-
-* Manually navigating to the execution details page for a non-existing execution did not show an error, just an endless loading screen.
-
-* The error message shown when the maximum number of SSL certificates was reached was not helpful.
-
-* In some circumstances, there could be a discrepancy in the release version shown in the pipeline card on the **Overview** page.
-
-* Add program wizard incorrectly stated that name cannot be changed after creation. 
-
-### Known Issues {#known-issues-cm-july}
-
-Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
-
 ## Content Transfer Tool {#content-transfer-tool}
 
 ### Release Date {#release-date-ctt-latest}
@@ -231,17 +169,3 @@ The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
 
 * CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
 
-
-## Cloud Acceleration Manager {#cam}
-
-### Release Date {#release-date-july-cam}
-
-The Release Date for Cloud Acceleration Manager is July 15, 2021.
- 
-### What is New {#what-is-new-cam}
-
-Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
-
->[!NOTE]
->
-> Check this [Cloud Acceleration Manager demo video](https://video.tv.adobe.com/v/335547).
