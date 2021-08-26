@@ -2,7 +2,6 @@
 title: Learning Path for Developers and Deployment Managers
 description: Follow this page to learn the next steps after getting access, if you are a Developer or a Deployment Manager
 hide: yes
-hidefromtoc: yes
 index: no
 ---
 # Learning Path for Developers and Deployment Managers {#learn-path-developers-deployment}
@@ -44,7 +43,7 @@ To learn more on this topic, see [Configuring your CI-CD Pipeline](https://exper
 
 ## What’s Next {#whats-next}
 
-Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. To learn about the learning journey for Content Authors, see Learning Path for AEM Authors.
+Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. To learn about the learning journey for Content Authors, see [Learning Path for AEM Authors](/help/onboarding/onboarding-journey/learning-path-aem-users.md).
 
 ## Additional Resources {#additional-resources}
 
@@ -62,9 +61,14 @@ Developer and Deployment Managers are now ready to get familiar with how to deve
 
 * [Getting Started with AEM SPA Editor for Developers](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
 
-### Experience League Courses {#experience-league-courses}
+## Experience League Courses {#exp-league-courses}
 
-* Traditional sites
-* SPA Editor 
-* Headless
-* Commerce
+Follow the experience league courses to learn more. Please ensure you are signed up to access the courses:
+
+* [Traditional Sites](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)

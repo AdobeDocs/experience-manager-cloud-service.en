@@ -2,7 +2,6 @@
 title: Getting Started with Onboarding Process
 description: Follow this page to learn how to get started with onboarding journey
 hide: yes
-hidefromtoc: yes
 index: no
 ---
 # Get Started with Onboarding Process {#getting-started}
@@ -61,5 +60,5 @@ Follow the steps below to navigate to Admin Console and review your System Admin
 
 ## What's Next {#whats-next}
 
-Now, that you have logged into Admin Console and checked your profile as a System Administrator, you should continue your onboarding journey by next reviewing the document Assigning Team Members to Cloud Manager Product Profiles.
+Now, that you have logged into Admin Console and checked your profile as a System Administrator, you should continue your onboarding journey by next reviewing the document [Assign Team Members to Cloud Manager Product Profiles](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md).
 

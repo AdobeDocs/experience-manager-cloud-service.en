@@ -27,6 +27,10 @@ Documentation Journeys are designed around best practices principles, informed b
 
 If you want to know how Adobe recommends how to solve headless business cases with AEM, AEM Headless Journeys are where to start.
 
+>[!TIP]
+>
+> If you prefer to **learn by doing** and are technicall inclined, visit the AEM Headless tutorials, which are organized by API and framework and are available in the [Additional Resources section](#additional-resources) at the end of this document.
+
 ## Audience {#audience}
 
 This journey is designed for the developer persona, laying out the requirements, steps, and approach of an AEM Headless project from a developer's perspective. The journey defines additional personas with which the developer must interact for a successful project, but the point-of-view for the journey is that of the developer.
@@ -79,6 +83,7 @@ Documentation journeys show you how AEM solves a business problem by providing a
 
 As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
 
+* [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technicall inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
