@@ -172,7 +172,7 @@ You should take note of the specific path of your content as it will be required
 
 >[!NOTE]
 >
->It is generally the responsibility of the content architect to define the content structure, but can collaborate with the translation specialist.
+>It is generally the responsibility of the content architect to define the content structure, often in collaboration with the translation specialist.
 >
 >It is detailed here for completeness.
 
