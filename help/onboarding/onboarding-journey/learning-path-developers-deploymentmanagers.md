@@ -61,9 +61,14 @@ Developer and Deployment Managers are now ready to get familiar with how to deve
 
 * [Getting Started with AEM SPA Editor for Developers](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
 
-### Experience League Courses {#experience-league-courses}
+## Experience League Courses {#exp-league-courses}
 
-* Traditional sites
-* SPA Editor 
-* Headless
-* Commerce
+Follow the experience league courses to learn more. Please ensure you are signed up to access the courses:
+
+* [Traditional Sites](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
