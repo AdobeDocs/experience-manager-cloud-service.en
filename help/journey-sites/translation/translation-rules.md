@@ -38,7 +38,7 @@ Translation rules include the following information:
 * The names of the properties that contain the content to translate
   * The property can be specific to a specific resource type or to all resource types
 
-AEM automatically creates translation rules, but because each project's requirements are different, it is vital that you review and adapt the rules as required to your project.
+AEM automatically creates translation rules for sites pages, but because each project's requirements are different, it is vital that you review and adapt the rules as required to your project.
 
 ## Creating Translation Rules {#creating-rules}
 
@@ -46,30 +46,36 @@ Multiple rules can be created to support complex translation requirements. For e
 
 Translation rules are designed to handle such scenarios. However in this example we illustrate how to create rules by focusing on a simple, single configuration.
 
-There is a **Translation Configuration** console available for configuring translation rules. To access it:
+There is a **Translation Configuration** console available for configuring translation rules.
+
+To access it:
 
 1. Navigate to **Tools** -&gt; **General**.
 1. Tap or click **Translation Configuration**.
 
-In the **Translation Configuration** UI, there are a number of options available for your translation rules. Here we highlight the most necessary and typical steps required for a basic localization configuration.
+AEM automatically creates translation rules for all content. To view these rules:
 
-1. Tap or click **Add Context**, which allows you to add a path. This is the path of the content that is be affected by the rule.
-![Add context](assets/add-translation-context.png)
-1. Use the path browser to select the required path and tap or click the **Confirm** button to save. Content is generally located under `/content/<your-project>`.
-![Select the path](assets/select-context.png)
-1. AEM saves the configuration.
-1. You must select the context you just created and then tap or click **Edit**. This opens the **Translation Rules Editor** to configure the properties.
-![Translation rules editor](assets/translation-rules-editor.png)
-1. By default all configurations are inherited from the parent path, in this case `/content`. Uncheck the option **Inherit from `/content`** in order to add additional fields to the configuration.
-1. Once unchecked, under the **General** section of the list, add the property names that you want to explicitly include in translation.
+1. Select the `/content` context and then the **Edit** option from the toolbar.
+1. The Translation Rules Editor opens with the rules that AEM automatically created for the `/content` path.
+
+   ![Translation rules editor](assets/translation-rules-editor.png)
+
+1. Page properties that will be translated are located under the **General** section of the list. You can add or update an existing property names that you want to explicitly include in translation.
    1. Enter the property name in the **New Property** field.
    1. The options **Translate** and **Inherit** are checked automatically.
    1. Tap or click **Add**.
    1. Repeat these steps for all of the fields that you must translate.
    1. Tap or click **Save**.
-![Add property](assets/add-property.png)
 
 You have now configured your translation rules.
+
+>[!NOTE]
+>
+>AEM automatically creates translation rules. For a simple translation setup or to test a translation workflow, it is not necessary to create new rules or even modify the existing, automatically created rules. The details of these steps are presented to explain how the rules work and to give context to how AEM processes translations.
+
+>[!TIP]
+>
+>It is also possible to create rules just for your particular path or project by tapping or clicking the **Add Context** button in the Translation Configuration console. This is beyond the scope of this journey.
 
 ## Advanced Usage {#advanced-usage}
 
