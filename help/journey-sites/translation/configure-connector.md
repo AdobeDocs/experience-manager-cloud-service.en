@@ -62,7 +62,7 @@ After the connector package for your preferred translation service is installed,
 
 * Which translation service provider to use
 * Whether human or machine translation is to be performed
-* Whether to translate other content that is associated with the Content Fragment such as tags
+* Whether to translate other content that is associated with the pages such as tags
 
 To create a new translation configuration:
 

@@ -28,7 +28,7 @@ This document helps you understand how to use AEM's translation projects along w
 
 ## Creating a Translation Project {#creating-translation-project}
 
-Translation projects enable you to manage the translation of AEM content. A translation project gathers the content to be translated into other languages in one location for a central view of the translation effort.
+Translation projects enable you to manage the translation of AEM content. A translation project gathers the content to be translated in one location for a central view of the translation effort.
 
 When content is added to a translation project, a translation job is created for it. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
@@ -48,8 +48,8 @@ Both approaches are explored in the following sections.
 
 For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
 
-1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that all content in AEM is stored under `/content`.
-1. Select the language root of your project. In this case we have selected `/content/wknd/en`.
+1. Navigate to **Navigation** -&gt; **Sites** and tap or click your project.
+1. Select the language root of your project. For example `/content/<your-project>/en`.
 1. Tap or click the rail selector and show the **References** panel.
 1. Tap or click on **Language Copies**.
 1. Check the **Language Copies** checkbox.
@@ -127,11 +127,13 @@ To see the detail of the content included in this project:
 
 1. Tap or click on the ellipsis button at the bottom of the **Translation Job** card.
 1. The **Translation Job** window lists all items in the job.
-![Translation Job detail](assets/translation-job-detail.png)
-1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
 
-![Translation Job options](assets/translation-job-options.png)
+   ![Translation Job detail](assets/translation-job-detail.png)
+
+1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
+1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the sites console.
+
+   ![Translation Job options](assets/translation-job-options.png)
 
 Typically the content for the translation job starts in the **Draft** state as indicated by the **State** column in the **Translation Job** window.
 
@@ -169,9 +171,9 @@ To add content to a translation job:
 
    ![Content added to translation job](assets/content-added.png)
 
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
+1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the sites console.
 
-![Translation Job options](assets/translation-job-options.png)
+   ![Translation Job options](assets/translation-job-options.png)
 
 1. Repeat these steps to include all required content in the job.
 
@@ -199,23 +201,23 @@ Machine translations automatically return with a state of **Approved**. Human tr
 
 [As previously seen,](#using-translation-project) machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However it is of course still possible to review the translated content.
 
-Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. The icon **Reveal in Content Fragment** is shown in the tool bar.
+Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. The icon **Preview in Sites** is shown in the tool bar.
 
-![Reveal in content fragment](assets/reveal-in-content-fragment.png)
+![Reveal in sites](assets/reveal-in-sites.png)
 
-Tap or click that icon to open the translated content fragment in its editor console to see the details of the translated content.
+Tap or click that icon to open the translated content in its console to see the details of the translated content.
 
-![A translated content fragment](assets/translated-content-fragment.png)
+![A translated page](assets/translated-page.png)
 
-You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
+You can further modify the translated content necessary, providing you have the proper permission, but editing content is beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
 
-The project's purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example the folder is
+The project's purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the sites folder of the translation language. In this example the folder is
 
 ```text
-/content/wknd/es
+/content/<your-project>/es
 ```
 
-If you navigate to this folder via **Navigation** -&gt; **Files** -&gt; **Assets**, you see the translated content.
+If you navigate to this folder via **Navigation** -&gt; **Sites**, you see the translated content.
 
 ![Translated content folder structure](assets/translated-file-content.png)
 
