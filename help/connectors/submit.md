@@ -15,7 +15,7 @@ In previous AEM solutions, Package Manager was used to install connectors on var
 There are various options of how the packages can be included in a project:
 
 1. Partner's public repository - a partner would host the content package in a publicly accessible maven repository
-1. Partner’s password protected repository - a partner would host the content package in a password protected maven repository. See [password protected maven repositories at](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) for instructions.
+1. Partner’s password protected repository - a partner would host the content package in a password protected maven repository. See [password protected maven repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) for instructions.
 1. Bundled artifact - in this case, the connector package is included locally in the customer's maven project.
 
 Regardless of where they're hosted, packages need to be referenced as dependencies in the pom.xml, as provided by the vendor.

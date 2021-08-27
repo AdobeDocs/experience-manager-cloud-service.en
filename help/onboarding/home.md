@@ -32,7 +32,7 @@ Once your contract has been signed the following events will take place:
 
 1. A System Administrator can [Grant Users Access to an AEM instance](/help/onboarding/what-is-required/accessing-aem-instance.md) for development purposes.
 
-**[Get your Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+**[Get your Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
 
 You will need your Adobe ID and your System Administrator's help to get users added to Cloud Manager to their assigned Roles.
 
@@ -50,7 +50,7 @@ The following documentation pages include information describing basic organizat
 
 **[Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Now that you have been added as a user and assigned to a Cloud Manager Role, you can access Cloud Manager to get started with your Cloud journey with AEM. Users are ready to do various tasks such as [creating a program](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adding an environment](/help/implementing/cloud-manager/manage-environments.md), [accessing Git](/help/implementing/cloud-manager/accessing-git.md), [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
+Now that you have been added as a user and assigned to a Cloud Manager Role, you can access Cloud Manager to get started with your Cloud journey with AEM. Users are ready to do various tasks such as creating a program, adding an environment, accessing Git, [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager is an important part of AEM as a Cloud Service. It enables organizations to self-manage [!DNL Experience Manager] in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. Using the user interface, you can configure and kick off the CI/CD pipeline.
 
 **[Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)**
@@ -82,7 +82,7 @@ Follow this section to learn how a System Administrator or a user who created an
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR Readiness](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

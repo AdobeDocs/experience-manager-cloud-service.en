@@ -26,6 +26,7 @@ This page lists the self-help user guides for Experience Manager as a Cloud Serv
 |[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate Connectors into Experience Manager as a Cloud Service.|
 |[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.|
 |[Commerce User Guide](/help/commerce-cloud/home.md)|Learn about Commerce Integration Framework on AEM as a Cloud Service.|
+|[Compliance User Guide](/help/compliance/home.md)|Learn about Compliance in AEM as a Cloud Service.|
 
 ## Other Experience Manager Resources {#other-resources}
 
@@ -34,7 +35,7 @@ This page lists the self-help user guides for Experience Manager as a Cloud Serv
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR Readiness](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
