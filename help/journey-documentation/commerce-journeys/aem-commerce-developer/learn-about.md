@@ -30,7 +30,7 @@ Build on this knowledge and continue your journey by next reviewing the document
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the by reviewing the document [Getting Started with AEM Storefront](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey:
+While it is recommended that you move on to the next part of the by reviewing the document [Getting Started with AEM Storefront](getting-started.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey:
 
 * [Content and Commerce](/help/commerce-cloud/introduction.md)
 
