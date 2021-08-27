@@ -58,7 +58,7 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* AEM Archetype project for Forms as a Cloud Service now includes [4 new themes and form data models for Microsoft Dynamics and Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
+* AEM Archetype project for Forms as a Cloud Service now includes [Canvas 3.0 theme and form data models for Microsoft Dynamics and Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Acroform-based Document of Record**: AEM Forms as a Cloud Service supports using [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
 
@@ -66,7 +66,9 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 
 ### Beta feature of [!DNL Forms]  {#aug-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector:** Unified Storage Connector allows you to connect your data sources to an AEM Workflow or an Adaptive Form without persisting any data on AEM Forms Cloud Service storage. It allows you to safely process PII (Personally Identifiable information) and store information directly to Azure data store.
+* **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can
+  * Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository. 
+  * Store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository. 
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
