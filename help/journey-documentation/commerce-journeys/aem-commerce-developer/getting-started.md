@@ -11,7 +11,7 @@ Get to know about AEM Storefront.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Content and Commerce developer journey, [Learn about AEM Content and Commerce](learn-about.md) you learned the basic theory of what a headless CMS is and you should now:
+In the previous document of the AEM Content and Commerce developer journey, [Learn about AEM Content and Commerce](learn-about.md), you learned the basic theory of what a headless CMS is and you should now:
 
 * Understand the basic concepts of AEM Content and Commerce.
 
