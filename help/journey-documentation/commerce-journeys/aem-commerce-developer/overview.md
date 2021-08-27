@@ -37,7 +37,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |---|---|---|
 |0|AEM Content and Commerce Developer Journey|This document|
 |1|[Learn about AEM Content and Commerce](learn-about.md)|Learn concepts and basics about AEM Content and Commerce.|
-|2|[Getting Started with AEM Storefront](getting-started)|Get to know about AEM Storefront.|
+|2|[Getting Started with AEM Storefront](getting-started.md)|Get to know about AEM Storefront.|
 |3|[Path to your first storefront](first-storefront.md)|Learn how to get your first storefront.|
 |4|[Integration of product catalog](catalog-integration.md)|Get to know how to integrate a product catalog.|
 |5|[Extending the storefront](extending-storefront.md)|Learn how to extend and configure the storefront.|
