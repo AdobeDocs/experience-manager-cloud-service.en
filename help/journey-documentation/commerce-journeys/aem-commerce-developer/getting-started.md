@@ -33,7 +33,7 @@ Now that you have completed this part of journey you should:
 * Understand how to connect AEM with a commerce solution.
 * Know more about AEM storefront.
 
-Build on this knowledge and continue your journey by next reviewing the document [Path to your first storefront](first-storefront.md) where you will learn how to have your first storefront.
+Build on this knowledge and continue your journey by next reviewing the document [Path to your first storefront](first-storefront.md), where you will learn how to have your first storefront.
 
 ## Additional Resources {#additional-resources}
 
