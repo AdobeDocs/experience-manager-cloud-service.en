@@ -182,7 +182,7 @@ For post-processing workflow configuration, use the standard workflows with exte
 
 ## Support of workflow steps in post-processing workflow {#post-processing-workflows-steps}
 
-If you upgrade from a previous version of [!DNL Experience Manager], you can use asset microservices to process assets. The cloud-native asset microservices are simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported. For more information about supported classes, see the [Java API reference](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+If you upgrade from a previous version of [!DNL Experience Manager], you can use asset microservices to process assets. The cloud-native asset microservices are simpler to configure and use. A few workflow steps used in the [!UICONTROL DAM Update Asset] workflow in the previous version are not supported. For more information about supported classes, see the [Java API reference or Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
 
 The following technical workflow models are either replaced by asset microservices or the support is not available:
 
