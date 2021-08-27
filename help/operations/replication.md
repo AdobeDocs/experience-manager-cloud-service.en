@@ -39,7 +39,7 @@ You can find more detailed information on Manage Publication on the [Publishing 
 
 >[!NOTE]
 >
->This approach should be considered deprecated since it does not persist statuses and is less scalable than other approaches. Adobe's recommendation is to use manage publication or workflow methods instead
+>This approach should be considered deprecated and will be removed on or after September 30th, 2021 since it does not persist statuses and is less scalable than other approaches. Adobe's recommendation is to use manage publication or workflow methods instead
 
 To perform a tree activation:
 
