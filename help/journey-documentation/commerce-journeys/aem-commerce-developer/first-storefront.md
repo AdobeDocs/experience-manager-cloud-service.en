@@ -9,6 +9,15 @@ hidefromtoc: yes
 
 Learn how to get your first storefront.
 
+## The Story So Far {#story-so-far}
+
+In the previous document of the AEM Content and Commerce developer journey, [Getting Started with AEM Storefront](getting-started.md), you learned about the AEM Storefront and you should:
+
+* Understand how to connect AEM with a commerce solution.
+* Know more about AEM storefront.
+
+This article builds on those fundamentals.
+
 ## Objective {#objective}
 
 This document shows you how to get your first storefront. After reading you should:
