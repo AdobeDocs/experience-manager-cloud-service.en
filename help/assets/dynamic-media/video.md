@@ -1,5 +1,5 @@
 ---
-title: Video
+title: Video in Dynamic Media
 description: Learn how to work with video in Dynamic Media.
 feature: Video Profiles
 role: User
@@ -33,8 +33,10 @@ The following step-by-step workflow description is designed to help you get up a
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
         * Learn more about [Organize digital assets](/help/assets/organize-assets.md).
 
-    * Upload your primary source videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes.
+        * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
 
@@ -279,6 +281,9 @@ The following are best-practice tips for encoding source video files.
 ### Source video files {#source-video-files}
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
+
+* Dynamic Media supports mainly short-form videos with a maximum length of 30 minutes.
+* You can upload primary source video files that are up to 15 GB each.
 
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
 
