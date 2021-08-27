@@ -83,7 +83,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * **Easily connect AEM Forms with Microsoft Dynamics and Salesforce.com**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce.com, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce.com as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html).
 
-## [!DNL Screens] as a [!DNL Cloud Service] {#screens} 
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
 
 ### What is New {#what-is-new-screens}
 
