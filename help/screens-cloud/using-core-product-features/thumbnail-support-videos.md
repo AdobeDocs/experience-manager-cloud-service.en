@@ -23,6 +23,10 @@ Thumbnail Support allows you to:
 
 ## Using Thumbnails in Videos {#using-thumbnails}
 
+>[!IMPORTANT]
+>**Prerequisites**
+>Before you learn how to use thumbnails for videos, please ensure to learn how to create video renditions for channels in Screens as a Cloud Service project. See [here](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) for more details.
+
 Follow the steps below to use thumbnail in videos:
 
 1. Navigate to an existing Screens channel or create a new channel.
@@ -62,6 +66,6 @@ Thumbnail in videos supports the following use cases:
 
 * A video component with only the thumbnail set will play the thumbnail.
 
-* A video component with both the video and thumbnail set will play the video.
+* A video component with both the video (if the video has correct rendition) and thumbnail set will play the video.
 
 * A video component with the video set will play the thumbnail, in case of a playback error, or will just skip to the next item in case the thumbnail is not configured.
