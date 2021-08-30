@@ -3,6 +3,7 @@ title: Getting Started with Onboarding Process
 description: Follow this page to learn how to get started with onboarding journey
 hide: yes
 index: no
+role: Admin, User, Developer 
 ---
 # Get Started with Onboarding Process {#getting-started}
 
