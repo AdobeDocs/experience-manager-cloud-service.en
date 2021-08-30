@@ -3,8 +3,7 @@ title: Generate For Placement Only renditions for Adobe InDesign
 description: Generate FPO renditions of new and existing assets using Experience Manager Assets workflow and ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
-feature: Renditions
-exl-id: 
+feature: Renditions 
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 
