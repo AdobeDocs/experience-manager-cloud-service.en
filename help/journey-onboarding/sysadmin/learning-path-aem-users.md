@@ -2,6 +2,7 @@
 title: Learning Path for AEM Users
 description: Follow this page to learn the next steps after getting access, if you are an AEM User
 index: no
+feature: Onboarding
 role: Admin, User, Developer 
 ---
 # Learning Path for AEM Users {#learn-path-aem-users}
