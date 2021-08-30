@@ -24,5 +24,3 @@ role: Architect, Developer
   + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
   + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
   + [Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ Migration Methodology {#migration-methodology}
-  + [Migration to Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)

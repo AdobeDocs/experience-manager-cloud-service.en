@@ -92,7 +92,7 @@ Cloud Manager for Cloud Services pipeline executions will support execution of t
 
 Refer to [Code Quality Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) to learn about writing test scripts and recommended coverage of at least 50%.
 
-Additionally, refer to [Understanding Custom Code Quality Rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) to learn more about custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
+Additionally, refer to [Understanding Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) to learn more about custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
 Cloud Manager usage is the sole mechanism for deploying code to Cloud Service environments.
 
