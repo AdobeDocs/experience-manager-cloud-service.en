@@ -51,7 +51,7 @@ Follow the steps below to see the list of Cloud Manager Profiles from Adobe Admi
 1. Log in to [Adobe Admin Console](https://adminconsole.adobe.com/
 ). From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
+   ![](/help/journey-onboarding/assets/assign-team1.png)   
 
 1. Navigate and select the instance (Author instance of Development environment) as shown in the picture below.
 
