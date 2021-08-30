@@ -1,7 +1,6 @@
 ---
 title: Learning Path for AEM Users
 description: Follow this page to learn the next steps after getting access, if you are an AEM User
-hide: yes
 index: no
 role: Admin, User, Developer 
 ---
