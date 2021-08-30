@@ -1,7 +1,6 @@
 ---
 title: Assigning Team Members to Cloud Manager Product Profiles 
 description: Follow this page to learn how to assign team members to Cloud Manager Product profiles
-hide: yes
 index: no
 role: Admin, User, Developer 
 ---
