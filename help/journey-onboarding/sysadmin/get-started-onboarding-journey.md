@@ -41,11 +41,11 @@ Follow the steps below to navigate to Admin Console and review your System Admin
    >[!NOTE]
    >If you have access to multiple organizations, please ensure that you have logged into correct Organization. To change your organization, click on the organization name from the top right corner and choose the required organization to which you need access to, as shown in the figure below.
 
-   ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
+   ![](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
 1. Select **Administrators** from the **Users** card to verify that you are System Administrator via Adobe Admin Console.
 
-    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
+    ![](/help/journey-onboarding/assets/get-started2.png)
 
 1. Once you click on **Administrators** from the **Users** card, you can search by entering your Adobe ID email, username, first or last name.
 
