@@ -5,6 +5,7 @@ index: no
 hide: yes
 hidefromtoc: yes
 ---
+
 # Translate Content {#translate-content}
 
 Use the translation connector and rules to translate your content.

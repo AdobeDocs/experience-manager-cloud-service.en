@@ -2,6 +2,7 @@
 title: AEM Sites Journeys
 description: Start here for an overview of the guided journeys available to understand AEM's powerful sites features.
 ---
+
 # AEM Headless Journeys {#aem-headless-journeys}
 
 Start here for an overview of the guided journeys available to understand AEM's powerful sites features.
