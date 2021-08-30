@@ -5,6 +5,7 @@ index: no
 hide: yes
 hidefromtoc: yes
 ---
+
 # Configure the Translation Connector {#configure-connector}
 
 Learn how to connect AEM to a translation service.
