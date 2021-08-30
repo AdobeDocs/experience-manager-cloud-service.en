@@ -49,14 +49,16 @@ Both approaches are explored in the following sections.
 For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
 
 1. Navigate to **Navigation** -&gt; **Sites** and tap or click your project.
-1. Select the language root of your project. For example `/content/<your-project>/en`.
+1. Locate the language root of your project. For example, if you language root is English, `/content/<your-project>/en`.
+   * Note that the other language folders are empty placeholders. These are normally created by the content architect.
+1. Locate the language root of your project.
 1. Tap or click the rail selector and show the **References** panel.
 1. Tap or click on **Language Copies**.
 1. Check the **Language Copies** checkbox.
 1. Expand the section **Update Language Copies** at the bottom of the references panel.
 1. In the **Project** dropdown, select **Create Translation Project(s)**.
 1. Provide an appropriate title for your translation project.
-1. Tap or click **Start**.
+1. Tap or click **Update**.
 
 ![Create a translation project](assets/create-translation-project.png)
 
@@ -106,7 +108,7 @@ Translation projects are designed to collect all of the content and tasks relate
 To view the translation project:
 
 1. Navigate to **Navigation** -&gt; **Projects**.
-1. Tap or click the project that was created in the previous section.
+1. Tap or click the project that was created in the previous section (either [Automatically Creating a Translation Project Based on Content Path](#automatically-creating) or [Manually Creating a Translation Project by Selecting Your Content](#manually-creating) depending on your situation).
 
 ![Translation project](assets/translation-project.png)
 
@@ -114,10 +116,20 @@ The project is divided into multiple cards.
 
 * **Summary** - This card shows the basic header information of the project including the owner, language, and translation provider.
 * **Translation Job** - This card or these cards show(s) provide an overview of the actual translation job including the status, number of assets, etc. Generally there is one job per language with the ISO-2 language code appended to the job name.
+  * Note that when [automatically creating translation jobs,](#automatically-creating) AEM creates the jobs asynchronously and they may not appear immediately within the project.
 * **Team** - This card shows the users who are collaborating on this translation project. This journey does not cover this topic.
 * **Tasks** - Additional tasks associated with translating the content such as to do items or workflow items. This journey does not cover this topic.
 
-How you use a translation project depends on how it was created: either automatically by AEM or manually.
+To better understand the translation flow in AEM, one change to the project settings is useful. This step is not required for production translations, but aids in understanding the process.
+
+1. On the **Summary** card, tap or click the ellipsis button at the bottom of the card.
+1. On the **Advanced** tab, uncheck the option **Delete Launch After Promotion**.
+
+   ![Delete launch after promotion option](assets/delete-launch-option.png)
+
+1. Tap or click **Save &amp; Close**.
+
+Now you are ready to use your translation project. How you use a translation project depends on how it was created: either automatically by AEM or manually.
 
 ### Using an Automatically Created Translation Project {#using-automatic-project}
 
@@ -147,9 +159,17 @@ AEM now communicates with your translation configuration and connector to send t
 
 Machine translations automatically return with a state of **Approved**. Human translation allows for more interaction, but is beyond the scope of this journey.
 
+>[!TIP]
+>
+>Processing a translation job can take some time, and you may see your translation items move from the state of **Draft** to **Translation in Progress** to **Ready for Review** before they arrive at the **Approved** state. This is to be expected.
+
+>[!NOTE]
+>
+>If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
+
 ### Using a Manually Created Translation Project {#using-manual-project}
 
-When manually creating a translation project, AEM creates the necessary jobs, but does not automatically select any content to include. This allows the translation project manager the flexibility to pick-and-chose what content to translate.
+When manually creating a translation project, AEM creates the necessary jobs, but does not automatically select any content to include in those jobs. This allows the translation project manager the flexibility to pick-and-chose what content to translate.
 
 To add content to a translation job:
 
@@ -197,6 +217,14 @@ AEM now communicates with your translation configuration and connector to send t
 
 Machine translations automatically return with a state of **Approved**. Human translation allows for more interaction, but is beyond the scope of this journey.
 
+>[!TIP]
+>
+>Processing a translation job can take some time, and you may see your translation items move from the state of **Draft** to **Translation in Progress** to **Ready for Review** before they arrive at the **Approved** state. This is to be expected.
+
+>[!NOTE]
+>
+>If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
+
 ## Reviewing Translated Content {#reviewing}
 
 [As previously seen,](#using-translation-project) machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However it is of course still possible to review the translated content.
@@ -219,7 +247,7 @@ The project's purpose is to collect all the resources related to a translation i
 
 If you navigate to this folder via **Navigation** -&gt; **Sites**, you see the translated content.
 
-![Translated content folder structure](assets/translated-file-content.png)
+![Translated content folder structure](assets/translated-sites-content.png)
 
 AEM's translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
 
