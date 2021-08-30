@@ -97,7 +97,7 @@ This section describes how to create Spin Sets.
 
 >[!NOTE]
 >
->The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360-degree view.
+>The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360° view.
 
 **To create Spin Sets:**
 
