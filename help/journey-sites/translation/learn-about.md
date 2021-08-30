@@ -5,6 +5,7 @@ index: no
 hide: yes
 hidefromtoc: yes
 ---
+
 # Learn about sites content and how to translate it in AEM {#learn-about}
 
 Learn AEM Sites concepts and the theory of AEM translation.
@@ -27,6 +28,7 @@ The pages that make up your experience are easy to manage in the sites console, 
 >This documentation journey covers only the basics of AEM's sites features so you as the translation specialist understand the content you need to translate.
 >
 >For more information on AEM Sites and details of all of its powerful features, see the [additional information section](#additional-information) at the end of this article for more AEM Sites resources.
+
 ## Translating Sites Content in AEM {#translating-in-aem}
 
 AEM not only makes it simple to create and manage content, but also makes it easy to translate that content for your audiences no matter where they are.

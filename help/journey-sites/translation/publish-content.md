@@ -5,6 +5,7 @@ index: no
 hide: yes
 hidefromtoc: yes
 ---
+
 # Publish Translated Content {#publish-content}
 
 Learn how to publish your translated content and update the translations as the content updates.

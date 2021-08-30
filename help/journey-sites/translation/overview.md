@@ -5,6 +5,7 @@ index: no
 hide: yes
 hidefromtoc: yes
 ---
+
 # AEM Sites Translation Journey {#aem-sites-translation-journey}
 
 Start here for a guided journey through translating your AEM Sites content using AEM's powerful translation tools.
