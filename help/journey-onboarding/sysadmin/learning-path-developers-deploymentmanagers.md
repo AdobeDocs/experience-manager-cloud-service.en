@@ -44,7 +44,7 @@ To learn more on this topic, see [Configuring your CI-CD Pipeline](https://exper
 
 ## What’s Next {#whats-next}
 
-Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. To learn about the learning journey for Content Authors, see [Learning Path for AEM Authors](/help/onboarding/onboarding-journey/learning-path-aem-users.md).
+Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. To learn about the learning journey for Content Authors, see [Learning Path for AEM Authors](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
 
 ## Additional Resources {#additional-resources}
 
