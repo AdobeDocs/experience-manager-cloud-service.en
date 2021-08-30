@@ -58,7 +58,7 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* AEM Archetype project for Forms as a Cloud Service now includes [4 new themes and form data models for Microsoft Dynamics and Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
+* AEM Archetype project for Forms as a Cloud Service now includes [Canvas 3.0 theme and form data models for Microsoft Dynamics and Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Acroform-based Document of Record**: AEM Forms as a Cloud Service supports using [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
 
@@ -66,7 +66,9 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 
 ### Beta feature of [!DNL Forms]  {#aug-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector:** Unified Storage Connector allows you to connect your data sources to an AEM Workflow or an Adaptive Form without persisting any data on AEM Forms Cloud Service storage. It allows you to safely process PII (Personally Identifiable information) and store information directly to Azure data store.
+* **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can
+  * Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository. 
+  * Store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository. 
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate documents by populating template files with XML data.
@@ -82,6 +84,25 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 * **Analytics for Adaptive Forms**: You can now capture and track end user behavior via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
 
 * **Easily connect AEM Forms with Microsoft Dynamics and Salesforce.com**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce.com, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce.com as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html).
+
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
+
+### What is New {#what-is-new-screens}
+
+* As a Content Author, you can now define define a thumbnail for videos so you can use that image as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team.
+   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
+
+* Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
+   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) for more details.
+
+### Bug Fixes {#bug-fixes-screens}
+
+* Player could not show content from Embedded page and this issue is now fixed.
+
+* After a successful login, navigating to the default page (channels) ended up in a Internal Server Error page.
+
+* Associated tag entries were not removed when removing playlist(s).
+
 
 ## CIF Add-on {#cloud-services-cif}
 
