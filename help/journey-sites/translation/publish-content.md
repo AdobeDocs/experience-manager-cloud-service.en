@@ -96,7 +96,7 @@ However as before, the process differs slightly if you chose to automatically cr
 1. Expand the section **Update Language Copies** at the bottom of the references panel.
 1. In the **Project** dropdown, select **Add to an existing Translation Project**.
 1. In the **Existing Translation Project** dropdown, select the project created for the initial translation.
-1. Tap or click **Start**.
+1. Tap or click **Update**.
 
 ![Add items to existing translation project](assets/add-to-existing-project.png)
 
@@ -110,7 +110,7 @@ You see that a new job card was added to the project. In this example, another S
 
 ![Additional translation job added](assets/additional-translation-job.png)
 
-You may notice that the statistics listed on the new card (number of pages) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+You may notice that the statistics listed on the new card is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
 
 From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
 
