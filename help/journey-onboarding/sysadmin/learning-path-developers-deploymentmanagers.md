@@ -1,7 +1,6 @@
 ---
 title: Learning Path for Developers and Deployment Managers
 description: Follow this page to learn the next steps after getting access, if you are a Developer or a Deployment Manager
-hide: yes
 index: no
 role: Admin, User, Developer 
 ---
