@@ -7,7 +7,7 @@ feature: Deploying
 role: Admin, User, Developer
 ---
 
-# Onboarding {#onboarding}
+# Start your Onboarding Experience {#onboarding-experience}
 
 + [Onboarding to AEM as a Cloud Service](/help/onboarding/home.md)
 + Learn Onboarding Concepts {#onboarding-concepts}
@@ -18,6 +18,7 @@ role: Admin, User, Developer
   + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
   + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
   + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)  
++ [Onboarding Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)
 + Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Get your Adobe ID](what-is-required/get-your-adobe-id.md)
   + [Cloud Manager Roles](what-is-required/user-roles-permissions.md)
