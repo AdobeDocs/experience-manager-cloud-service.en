@@ -29,10 +29,12 @@ Follow the steps below to navigate to Admin Console and review your System Admin
 >[!NOTE]
 >You must be a System Administrator in order to complete the following steps successfully.
 
-1. Click on **Get Started** from your welcome email, to navigate to Admin Console or navigate directly to Admin Console from [here](https://adminconsole.adobe.com).
+1. Click on **Get Started** from your welcome email, as shown in the figure below, to navigate to Admin Console or navigate directly to Admin Console from [here](https://adminconsole.adobe.com).
 
    >[!NOTE]
    >As a System Administrator, you will receive multiple emails. Look for the welcome email that provides you the information about the Organization name to which you have been granted access to and click on **Get Started**. If you cannot find the email, navigate directly to [Admin Console](https://adminconsole.adobe.com/).
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Login using your [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Upon successful login, you will see the **Overview** page of the Adobe Admin Console, as shown below. 
 
