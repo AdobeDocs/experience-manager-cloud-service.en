@@ -7,7 +7,7 @@ feature: Onboarding
 role: Admin, User, Developer 
 ---
 
-# Onboarding Journey {#onboarding-journey}
+# Onboarding Journey {#journey-onboarding}
 
 + [Onboarding Journey](/help/journey-onboarding/home.md)
 + Exploring the Onboarding Journey {#onboarding}
