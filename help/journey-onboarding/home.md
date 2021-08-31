@@ -1,6 +1,7 @@
 ---
 title: Onboarding Journey
 description: Start here for an overview of the guided onboarding journey available to understand the Onboarding Experience.
+
 ---
 # Onboarding Journey {#onboarding-journey}
 
