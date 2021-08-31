@@ -1,15 +1,15 @@
 ---
 title: Learning Path for Developers and Deployment Managers
 description: Follow this page to learn the next steps after getting access, if you are a Developer or a Deployment Manager
-hide: yes
-hidefromtoc: yes
 index: no
+feature: Onboarding
+role: Admin, User, Developer 
 ---
 # Learning Path for Developers and Deployment Managers {#learn-path-developers-deployment}
 
 ## Objective {#objective}
 
-This document helps your Developers and Deployment Managers get access to Cloud Manager and become familiar with how they can prepare for learning path. 
+This document helps your Developers and Deployment Managers get access to Cloud Manager and become familiar with how they can prepare for their learning path. 
 
 After reading this document, you should:
 
@@ -26,23 +26,25 @@ If you are reading this section, then you are likely assigned to a Developer or 
 
 ## Pre-requisites {#prerequisites}
 
-Your system administrator has assigned Developers and Deployment Managers to their respective product profiles. Developers must additionally be assigned to AEM Users or AEM Administrators product profile.  
-Cloud resources have been setup.
-You understand how to navigate and log in to Cloud Manager 
+Before you start, ensure:
+ 
+* Your system administrator has assigned Developers and Deployment Managers to their respective product profiles. Developers must additionally be assigned to AEM Users or AEM Administrators product profile.
+* Cloud resources have been setup.
+* You understand how to navigate and log in to Cloud Manager
 
-## Manage Git {#manage-git}
+## Manage GitHub {#manage-git}
 
 You can access and manage your Git Repository using Self-Service Git Account Management from Cloud Manager UI.
 To learn more on this topic, see [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en). 
 
-## Setup pipeline {#setup-pipeline}
+## Setup Pipeline {#setup-pipeline}
 
 You can configure your Production or Non-Production Pipeline from Cloud Manager UI.
 To learn more on this topic, see [Configuring your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## What’s Next {#whats-next}
 
-Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. 
+Developer and Deployment Managers are now ready to get familiar with how to develop code in AEM as a Cloud Service. Learn more or find more learning paths under the Additional Resources section below. To learn about the learning journey for Content Authors, see [Learning Path for AEM Authors](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
 
 ## Additional Resources {#additional-resources}
 
@@ -60,9 +62,14 @@ Developer and Deployment Managers are now ready to get familiar with how to deve
 
 * [Getting Started with AEM SPA Editor for Developers](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
 
-### Experience League Courses {#experience-league-courses}
+## Experience League Courses {#exp-league-courses}
 
-* Traditional sites
-* SPA Editor 
-* Headless
-* Commerce
+Follow the experience league courses to learn more. Please ensure you are signed up to access the courses:
+
+* [Traditional Sites](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)
+
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens#courses)

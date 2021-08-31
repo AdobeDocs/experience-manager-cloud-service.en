@@ -3,7 +3,7 @@ title: Onboarding for Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service onboarding self-help resources and documentation links
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 ---
-# Onboarding to [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
+# Start Onboarding to [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
