@@ -11,11 +11,11 @@ role: Admin, User, Developer
 
 This document helps your AEM as a Cloud Service Content Authors to get access to Adobe Experience Manager (AEM). 
 
-After reading you should  understand:
+After reading you should  understand how to:
 
-* How to access Cloud Manager.
-* How to access AEM as a Cloud Service instance.
-* Author content for AEM as a Cloud Service.
+* Access Cloud Manager
+* Access AEM as a Cloud Service instance
+* Author content for AEM as a Cloud Service
 
 ## Introduction  {#introduction}
 
