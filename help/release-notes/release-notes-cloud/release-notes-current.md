@@ -89,7 +89,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-screens}
 
-* As a Content Author, you can now define define a thumbnail for videos so you can use that image as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team.
+* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each "ping" (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, etc.). This feature allows the team to remotely monitor if a player is properly playing content, Improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
    See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
 
 * Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
