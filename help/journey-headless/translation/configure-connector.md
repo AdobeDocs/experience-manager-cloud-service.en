@@ -1,9 +1,9 @@
 ---
 title: Configure the Translation Connector
 description: Learn how to connect AEM to a translation service.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
 ---
 # Configure the Translation Connector {#configure-connector}
 
