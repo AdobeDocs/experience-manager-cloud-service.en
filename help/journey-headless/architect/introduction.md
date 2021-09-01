@@ -1,9 +1,9 @@
 ---
 title: AEM Headless Content Architect Journey
 description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
 ---
 
 # Content Modeling for Headless with AEM - An Introduction {#architect-headless-introduction}
