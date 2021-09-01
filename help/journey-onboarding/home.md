@@ -35,4 +35,4 @@ The following are the personas that interact in this journey.
 
 ## Exploring the Onboarding Journey {#exploring-onboarding-journey}
 
-Explore the first step to Onboarding Journey from [here]((/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)) and get started!
+Explore the first step to Onboarding Journey from [here](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md) and get started!
