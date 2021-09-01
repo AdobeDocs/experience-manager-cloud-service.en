@@ -7,22 +7,6 @@ role: Admin, User, Developer
 ---
 # Onboarding Journey {#onboarding-jourrney}
 
-Congratulations on starting your journey with AEM as a Cloud Service! We are excited you are here and cannot wait to get you started with your onboarding journey. Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your teams are setup and have access to AEM as a Cloud Service.
-
-## Introduction {#introduction}
-
-This guide leads you through the most important topics so that on completion you will have:
-
-* Full understanding of what to expect during the AEM as a Cloud Service onboarding journey.
-* Enabled your team to get up and running and take the first steps towards learning how to author and develop content for your AEM as a Cloud Service application.
-
-This means:
-
-* Your team is set up and has access to cloud resources,
-* AEM Authors will have access to AEM as a Cloud Service,
-* AEM Developers and Deployment Managers will have access to AEM as a Cloud Service.
-
-
 ## Onboarding Experience {#audience}
 
 Onboarding is the process during which a designated [System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
