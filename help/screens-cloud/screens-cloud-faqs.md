@@ -19,6 +19,7 @@ Using `longCacheKey="none"` in your `clientlib` folder removes the long cache ke
 Offline caches are generated using **bulk-offline-update-screens-service** service user. Certain paths, not accessible by `bulk-offline-update-screens-service`, lead to missing content in offline manifests. 
 
 In your code, that is, `ui.config or ui.apps`, create an OSGi configuration in configuration folder, with the following content, and title the file name as `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
+
 ```
 scripts=[
         "
