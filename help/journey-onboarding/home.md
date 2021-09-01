@@ -5,7 +5,7 @@ description: Start here for an overview of the guided onboarding journey availab
 ---
 # Onboarding Journey {#onboarding-journey}
 
-Congratulations on starting your journey with AEM as a Cloud Service! We are excited you are here and cannot wait to get you started with your onboarding journey. Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your teams are setup and have access to AEM as a Cloud Service..
+Congratulations on starting your journey with AEM as a Cloud Service! We are excited you are here and cannot wait to get you started with your onboarding journey. Whether you are deploying a new application or migrating an existing one, this guide serves as your starting point to ensure your teams are setup and have access to AEM as a Cloud Service.
 
 ## Introduction {#introduction}
 
@@ -29,10 +29,10 @@ The following are the personas that interact in this journey.
 |Persona|Description|Role in Journey|
 |---|---|---|
 |System Administrator|Provides initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.|Manages all aspects of their users, from access to permissions. |
-|AEM Author|Creates and reviews the content (this can be of several types; for example, pages, assets, publications) before it is published to your website.|Once granted permissions, can start their own deployment manager's journey.|
-|Developer|Has experience developing AEM applications which consume content from different sources|Once granted permissions, can start their own developer journey|
-|Deployment Manager|Adds or update an environment, run any pipeline, and deploy code to AEM environment or code-quality.|Once granted permissions, can start their own deployment manager's journey.|
+|AEM Author|Creates and reviews the content (this can be of several types; for example, pages, assets, publications) before it is published to your website.|Once granted permissions, can start their own journey.|
+|Developer|Develops AEM applications which consume content from different sources|Once granted permissions, can start their own developer journey|
+|Deployment Manager|Adds or updates an environment, runs pipeline, and deploys code to AEM environment or code-quality.|Once granted permissions, can start their own deployment manager's journey.|
 
 ## Exploring the Onboarding Journey {#exploring-onboarding-journey}
 
-Explore the [Onboarding Journey](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md) to learn more.
+Explore the first step to Onboarding Journey from [here](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md) and get started!
