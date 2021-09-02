@@ -25,9 +25,6 @@ Cloud Manager currently defines four roles for users which govern the availabili
 
 To view your roles in Cloud Manager, sign in to Cloud Manager UI, select your profile icon at the top right corner and select **User Roles**, as shown in the figure below.
 
->[!NOTE]
->See [Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) to learn more about logging-in to Cloud Manager.
-
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### The Integration Product Profile {#integration-product-profile}
