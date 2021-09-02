@@ -1,8 +1,7 @@
 ---
 title: Thumbnail Support for Videos in Screens as a Cloud Service
 description: This page describes how to add Thumbnail Support for Videos in Screens as a Cloud Service.
-hide: yes
-index: no
+index: yes
 ---
 
 # Thumbnail Support for Videos {#thumbnail-support-videos}
@@ -23,6 +22,10 @@ Thumbnail Support allows you to:
 * Set a fallback mechanism, in case there are playback issues on the device.
 
 ## Using Thumbnails in Videos {#using-thumbnails}
+
+>[!IMPORTANT]
+>**Prerequisites**
+>Before you learn how to use thumbnails for videos, please ensure to learn how to create video renditions for channels in Screens as a Cloud Service project. See [here](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) for more details.
 
 Follow the steps below to use thumbnail in videos:
 
@@ -57,14 +60,12 @@ Follow the steps below to use thumbnail in videos:
 
 ## Supported Use Cases while using Thumbnail in Videos {#understand-use-case}
 
-Please refer to the following use cases while using thumbnail in videos.
+Thumbnail in videos supports the following use cases:
 
-A video component with:
+* A video component with nothing set up will be skipped.
 
-* *nothing set* up will be skipped
+* A video component with only the thumbnail set will play the thumbnail.
 
-* *only the thumbnail set* will play the thumbnail
+* A video component with both the video (if the video has correct rendition) and thumbnail set will play the video.
 
-* *both video and thumbnail set* will play the video
-
-* *the video set* will play the thumbnail if there is a playback error, or just skip to the next item in case the thumbnail is not configured
+* A video component with the video set will play the thumbnail, in case of a playback error, or will just skip to the next item in case the thumbnail is not configured.

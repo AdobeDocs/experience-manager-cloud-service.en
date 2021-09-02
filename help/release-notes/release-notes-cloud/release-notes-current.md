@@ -85,6 +85,25 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * **Easily connect AEM Forms with Microsoft Dynamics and Salesforce.com**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce.com, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce.com as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html).
 
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens} 
+
+### What is New {#what-is-new-screens}
+
+* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, etc.). This feature allows the team to remotely monitor if a player is properly playing content, improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
+   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
+
+* Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
+   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) for more details.
+
+### Bug Fixes {#bug-fixes-screens}
+
+* Player could not show content from Embedded page and this issue is now fixed.
+
+* After a successful login, navigating to the default page (channels) ended up in a Internal Server Error page.
+
+* Associated tag entries were not removed when removing playlist(s).
+
+
 ## CIF Add-on {#cloud-services-cif}
 
 ### What is New {#what-is-new-cif}
