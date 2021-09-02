@@ -1,9 +1,9 @@
 ---
 title: Learn about AEM Sites content and how to translate it in AEM
 description: Learn AEM Sites concepts and the theory of AEM translation.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
 ---
 
 # Learn about sites content and how to translate it in AEM {#learn-about}
