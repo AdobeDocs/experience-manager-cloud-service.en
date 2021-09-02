@@ -138,7 +138,7 @@ role: Developer, Architect
     + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
-    + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+    + [Headless Documentation Journeys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
     + Getting Started Guides {#getting-started}
       + [Introduction](developing/headless/getting-started/introduction.md)
       + [Creating a Configuration](developing/headless/getting-started/create-configuration.md)
