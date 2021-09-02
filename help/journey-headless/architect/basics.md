@@ -1,9 +1,9 @@
 ---
 title: Learn Content Modeling Basics
 description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
 ---
 
 # Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
