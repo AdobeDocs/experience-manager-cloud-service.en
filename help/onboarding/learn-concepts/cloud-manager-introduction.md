@@ -13,7 +13,7 @@ To ensure customers can start quickly with AEM as a Cloud Service, Cloud Manager
 
 Your System Administrator will be responsible to setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. Refer to [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) to learn how Cloud Manager supports in Enterprise Team Development Setup.
 
-## Navigating to Cloud Manager {#navigate-cloud-manager}
+## Navigating to Cloud Manager's Overview Page {#navigate-cloud-manager}
 
 Follow the steps below to navigate to Cloud Manager:
 
