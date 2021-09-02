@@ -25,7 +25,6 @@ Additional information about OSGI configuration can be found at [this location](
 * **`org.apache.felix.http (Factory)`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Announcement Date: 8/25/2021, Enforcement Date: 11/26/2021)
 
-
 ## OSGi Configurations Subject to Build Validation Rules {#osgi-configurations-subject-to-build-validation-rules}
 
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
