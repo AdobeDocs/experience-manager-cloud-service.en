@@ -1,9 +1,9 @@
 ---
 title: Translate Content
 description: Use the translation connector and rules to translate your headless content.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
 ---
 # Translate Content {#translate-content}
 

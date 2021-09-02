@@ -1,8 +1,7 @@
 ---
 title: Setup Cloud Resources via Cloud Manager
 description: Follow this page to learn how to setup Cloud Resources via Cloud Manager
-hide: yes
-index: no
+role: Admin, User, Developer 
 ---
 # Setup Cloud Resources via Cloud Manager {#setup-cloud-resources}
 
@@ -40,7 +39,7 @@ The Business Owner user will receive a welcome email with a link to get started,
 Follow the steps below to navigate to Cloud Manager:
 
 1. From your welcome email click on **Get started**, as shown in the figure below.
-    ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+    ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. You will navigate to Cloud Manager's **Programs & Products** page.
 
@@ -55,11 +54,11 @@ Additionally, you can navigate to Cloud Manager's **Programs and Products** page
 
 1. From the Adobe Experience Cloud home page, Select **Experience Manager**.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+   ![](/help/journey-onboarding/assets/setup-resources2.png)
 
 1. This will take you to the AEM home page. From here, launch **Cloud Manager** .
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+   ![](/help/journey-onboarding/assets/setup-resources3.png)
 
 1. Upon successful login, you will be directed to the landing page of Cloud Manager. See [Viewing Cloud Manager's Programs](#viewing-programs) section for more details.
 
@@ -95,15 +94,15 @@ Once you have successfully logged into Cloud Manager, follow the steps below to 
 
 1. Select your profile from the top right, as shown below.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
+   ![](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. Select **User Roles** and ensure you are assigned to Business Owner.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+   ![](/help/journey-onboarding/assets/setup-resources6.png)
 
 1. This confirms your user role as a Business Owner.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
+   ![](/help/journey-onboarding/assets/setup-resources7.png)
 
    Great job! You have successfully logged in to Cloud Manager as a Business Owner!
 
@@ -118,7 +117,7 @@ Follow the steps below to create your cloud service program from Cloud Manager:
 
    From here, click on **Add Program** to launch the Add Program wizard. 
 
-    ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+    ![](/help/journey-onboarding/assets/setup-resources4.png)
    
    >[!NOTE]
    >Watch the [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) to learn how to create your AEM as a Cloud program and learn about important considerations before creating your program.
@@ -131,7 +130,7 @@ Follow the steps below to create your cloud service program from Cloud Manager:
 
 1. Upon successful creation of your cloud program you can navigate to your program to see the **Overview** page of your program, as shown below.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources8.png)
+   ![](/help/journey-onboarding/assets/setup-resources8.png)
 
    >[!NOTE]
    >If you have not already done so, now is a good time to add your Developer members to your Cloud Manager team. Refer to Add Users to Developer product profile and follow the steps outlined.
@@ -149,7 +148,7 @@ Follow the steps below to create your cloud environments from Cloud Manager:
 
 1. Navigate to the Cloud Manager's **Overview** page and select **Add** from the environment card.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources9.png)
+   ![](/help/journey-onboarding/assets/setup-resources9.png)
 
    >[!IMPORTANT]
    >A Cloud Manager user in the Business Owner or Deployment Manager role must be logged in to successfully complete this step.
@@ -174,7 +173,7 @@ Your team members must be granted permissions to the instance, since permissions
 >[!NOTE]
 >To be granted access to AEM as a Cloud Service users must belong to one of two product profiles `AEM Users` or `AEM Administrators`. See [Managing Products and User Access in Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console) to learn more.
 
-You should continue your onboarding journey by next reviewing the document Assigning Team Members to AEM as a Cloud Service Product Profiles.
+You should continue your onboarding journey by next reviewing the document [Assigning Team Members to AEM as a Cloud Service Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
 
 
 ## Additional Resources {#additional-resources}
