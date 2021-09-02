@@ -39,7 +39,7 @@ Translation rules include the following information:
 * The names of the properties that contain the content to translate
   * The property can be specific to a specific resource type or to all resource types
 
-AEM automatically creates translation rules for sites pages, but because each project's requirements are different, it is vital that you review and adapt the rules as required to your project.
+AEM automatically creates translation rules for sites pages, but because each project's requirements are different, it is important that you know how to review and adapt the rules as required to your project.
 
 ## Creating Translation Rules {#creating-rules}
 
