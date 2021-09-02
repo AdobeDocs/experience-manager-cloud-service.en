@@ -24,6 +24,16 @@ Follow the steps below to navigate to Cloud Manager:
 
 1. Select the program from Cloud Manager’s **Programs and Products** page to launch the **Overview** page.
 
+Additionally, you can also navigate to Cloud Manager’s Programs and Products page from Adobe Experience Cloud home page. Follow the steps below:
+
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) and login using your Adobe ID.
+
+1. Select **Experience Manager**.
+
+1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to Cloud Manager, you are ready to use the User Interface (UI).
+
+Upon successful login, you will be directed to the landing page of Cloud Manager.
+
 ## Cloud Manager Programs {#cloud-manager-programs}
 
 Cloud Manager Programs represent sets of Cloud Manager environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA). For example, one Program may represent the AEM resources to support the global public Web sites, while another Program represents an internal Central DAM. Watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) to learn more on using Cloud Manager programs.
