@@ -22,5 +22,4 @@ role: Admin, User, Developer
 + Getting Started with AEM as a Cloud Service {#what-is-required}
   + [Cloud Manager Roles](what-is-required/user-roles-permissions.md)
   + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
-  + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
   + [Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)
