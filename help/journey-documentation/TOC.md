@@ -24,6 +24,14 @@ Please note that all links to other guides need to be absolute references with l
   + [Assign Team Members to AEM as a Cloud Service Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
   + [Learning Path for Developers and Deployment Managers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
   + [Learning Path for AEM Users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
++ Sites Translation Journey {#sites-translation}
+  + [Understand sites translation in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+  + [Get started with AEM sites translation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
+  + [Learn about sites content and how to translate in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
+  + [Configure translation connector](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
+  + [Configure translation rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
+  + [Translate content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
+  + [Publish translated content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
 + Headless Journeys {#headless}
   + [Headless Journeys Home](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
    + Headless Developer Journey {#developer}
