@@ -118,7 +118,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Learn about an upcoming webinar on protecting your digital assets.
   * Next stops on the information-filled Adobe Insider Tour.
   * Exciting capabilities available when you have Dynamic Media within Experience Manager Assets (Experience Manager Assets).
-  * Adding 360-degree videos and custom video thumbnails to your website.
+  * Adding 360° videos and custom video thumbnails to your website.
   * Meet `Andrew Hathaway`, Principal Solutions Consultant for Dynamic Media within Experience Manager Assets.
 
 * **[June 2019, Issue 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
