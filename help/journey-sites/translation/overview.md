@@ -12,11 +12,11 @@ Start here for a guided journey through translating your AEM Sites content using
 
 ## Introduction {#introduction}
 
-AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audience.
+AEM Sites is a powerful tool set for creating and managing digital experiences. Content authors can easily create digital experiences using the sites editor and organize the content using the sites console, all while being able to see the content live as it will be delivered by AEM to your audiences across channels.
 
 AEM offers equally powerful tools to translate your content allowing you to deliver it as quickly as possible to your audiences in other regions or locales. This documentation journey introduces you to the authoring tools so you understand how content is created and managed in AEM and then dives into what you need to know to manage your own translation project.
 
-If you are already familiar with AEM Sites and your translation requirements, you may already have the foundational knowledge of this journey. Consider referring to our technical documentation linked under the [additional resources section below.](#additional-resources)
+If you are already familiar with AEM Sites and your translation requirements, you may already have the foundational knowledge of this journey. If so, consider referring to our technical documentation linked under the [additional resources section below.](#additional-resources)
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
@@ -65,9 +65,7 @@ You are now ready to get started on your Adobe sites translation journey. We enc
 
 ## Additional Resources {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
-
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
+Check out these additional resources for more information on how AEM's powerful features work together.
 
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.

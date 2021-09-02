@@ -51,7 +51,7 @@ For content owners who are also responsible for translation, it is often easier 
 
 1. Navigate to **Navigation** -&gt; **Sites** and tap or click your project.
 1. Locate the language root of your project. For example, if you language root is English, `/content/<your-project>/en`.
-   * Note that the other language folders are empty placeholders. These are normally created by the content architect.
+   * Note that before the first translation that the other language folders are empty placeholders. These are normally created by the content architect.
 1. Locate the language root of your project.
 1. Tap or click the rail selector and show the **References** panel.
 1. Tap or click on **Language Copies**.
@@ -167,6 +167,8 @@ Machine translations automatically return with a state of **Approved**. Human tr
 >[!NOTE]
 >
 >If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
+>
+>Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, please refer to the [additional resources](#additional-resources) section at the end of this article.
 
 ### Using a Manually Created Translation Project {#using-manual-project}
 
@@ -225,6 +227,8 @@ Machine translations automatically return with a state of **Approved**. Human tr
 >[!NOTE]
 >
 >If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
+>
+>Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, please refer to the [additional resources](#additional-resources) section at the end of this article.
 
 ## Reviewing Translated Content {#reviewing}
 
