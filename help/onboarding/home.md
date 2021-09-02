@@ -32,7 +32,7 @@ Once your contract has been signed the following events will take place:
 
 1. A System Administrator can [Grant Users Access to an AEM instance](/help/onboarding/what-is-required/accessing-aem-instance.md) for development purposes.
 
-**[Get your Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
+**Get your Adobe ID**
 
 You will need your Adobe ID and your System Administrator's help to get users added to Cloud Manager to their assigned Roles.
 
