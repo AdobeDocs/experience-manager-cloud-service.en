@@ -14,13 +14,11 @@ role: Admin, User, Developer
   + [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
   + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
   + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
-  + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
   + [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
   + [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
   + [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)  
 + [Onboarding Journey Guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target="_blank"}
 + Getting Started with AEM as a Cloud Service {#what-is-required}
-  + [Get your Adobe ID](what-is-required/get-your-adobe-id.md)
   + [Cloud Manager Roles](what-is-required/user-roles-permissions.md)
   + [System Administrator Tasks](what-is-required/add-users-assign-cm-roles.md)
   + [Navigate to Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
