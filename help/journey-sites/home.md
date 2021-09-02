@@ -9,7 +9,7 @@ Start here for an overview of the guided journeys available to understand AEM's 
 
 ## Introduction {#introduction}
 
-INFORMATION ON HOW GREAT SITES ARE GOES HERE
+[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) is a unified suite of powerful tools allowing you to easily create, manage, and publish digital experiences across channels. From setting up your initial content structure, to easily creating reusable content, to deploying to multiple markets and languages, as well as creating custom applications that offer personalized experiences, AEM Sites is comprehensive, central solution for creating terrific experiences for your audiences wherever they are.
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
@@ -21,19 +21,11 @@ If you want to know how Adobe recommends how to solve business cases with AEM Si
 
 ## Audiences {#audiences}
 
-Sites Journeys are designed for multiple personas, laying out the requirements, steps, and approach to implementing headless solutions from different perspectives. A journey is defined for a specific persona, but also defines additional personas with which the reader interacts.
+Sites Journeys are designed for varying personas, laying out the requirements, steps, and approach to implementing sites solutions from different perspectives.
 
-The following are the personas that interact in the Sites Journeys.
+An individual journey is defined for a specific persona or audience, but also defines additional personas with which the reader interacts.
 
-|Persona|Description|Role in Journey|
-|---|---|---|
-|Developer|Has experience developing WCM applications which deliver web experiences|The developer works with authors, admins, and architects to understand the data and build application that deliver that data.|
-|Content Author|Creates and manages content with AEM Sites that is delivered by AEM|Content Authors create content that the developer delivers with customer applications.|
-|Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
-|Content Architect|Analyzes the requirements for the content that must be managed in AEM and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it.|
-|Translation Specialist|Defines what content should be translated and manages those workflows|The Translation specialist works with the content architect to define initial organization of content and may work with the developer for any translation-specific requirements.|
-
-Information in these journeys can of course be useful to all personas, but some information may be superfluous to certain roles.
+Information in the journeys can of course be useful to multiple personas, but a journey is targeted to a specific persona and some information may be superfluous to certain roles.
 
 ## Sites Journeys {#sites-journeys}
 
