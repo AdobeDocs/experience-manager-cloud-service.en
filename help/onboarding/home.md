@@ -28,7 +28,7 @@ Once your contract has been signed the following events will take place:
 
 1. Adobe will complete provisioning for your organization following which your organization's System Administrator will receive a welcome email allowing them to do [System Administrator Tasks](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) including adding users, assigning them to roles, and thereby granting them appropriate access to Cloud Manager.
 
-1. Users added by your System Administrator will in turn receive a welcome email thereby allowing them to successfully [Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Users can now use their Adobe ID to login and begin their journey with Cloud Manager from here. 
+1. Users added by your System Administrator will in turn receive a welcome email thereby allowing them to successfully navigate to Cloud Manager. Users can now use their Adobe ID to login and begin their journey with Cloud Manager from here. 
 
 1. A System Administrator can [Grant Users Access to an AEM instance](/help/onboarding/what-is-required/accessing-aem-instance.md) for development purposes.
 
@@ -48,7 +48,7 @@ The following documentation pages include information describing basic organizat
 * Adding users
 * Assigning users to Cloud Manager roles and permissions
 
-**[Navigate to Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
+* **Navigate to Cloud Manager**
 
 Now that you have been added as a user and assigned to a Cloud Manager Role, you can access Cloud Manager to get started with your Cloud journey with AEM. Users are ready to do various tasks such as creating a program, adding an environment, accessing Git, [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager is an important part of AEM as a Cloud Service. It enables organizations to self-manage [!DNL Experience Manager] in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. Using the user interface, you can configure and kick off the CI/CD pipeline.
