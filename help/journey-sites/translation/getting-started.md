@@ -1,9 +1,9 @@
 ---
 title: Get started with AEM Sites translation
 description: Get to know how to organize your AEM Sites content and how AEM's translation tools work.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
 ---
 
 # Get Started with AEM Sites Translation {#getting-started}
