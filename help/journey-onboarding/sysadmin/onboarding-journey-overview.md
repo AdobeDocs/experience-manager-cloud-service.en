@@ -1,7 +1,6 @@
 ---
 title: Onboarding Journey
 description: Follow this page to learn how to get started with onboarding journey
-index: no
 feature: Onboarding
 role: Admin, User, Developer 
 ---
