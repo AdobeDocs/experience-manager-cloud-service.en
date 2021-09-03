@@ -30,7 +30,7 @@ Once your contract has been signed the following events will take place:
 
 1. Users added by your System Administrator will in turn receive a welcome email thereby allowing them to successfully navigate to Cloud Manager. Users can now use their Adobe ID to login and begin their journey with Cloud Manager from here. 
 
-1. A System Administrator can [Grant Users Access to an AEM instance](/help/onboarding/what-is-required/accessing-aem-instance.md) for development purposes.
+1. A System Administrator can grant users access to an AEM instance for development purposes.
 
 **Get your Adobe ID**
 
@@ -53,7 +53,7 @@ The following documentation pages include information describing basic organizat
 Now that you have been added as a user and assigned to a Cloud Manager Role, you can access Cloud Manager to get started with your Cloud journey with AEM. Users are ready to do various tasks such as creating a program, adding an environment, accessing Git, [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager is an important part of AEM as a Cloud Service. It enables organizations to self-manage [!DNL Experience Manager] in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. Using the user interface, you can configure and kick off the CI/CD pipeline.
 
-**[Grant User Access to an AEM Instance](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+* **Grant User Access to an AEM Instance**
 
 Follow this section to learn how a System Administrator or a user who created an environment can grant other users access to an AEM instance.
 

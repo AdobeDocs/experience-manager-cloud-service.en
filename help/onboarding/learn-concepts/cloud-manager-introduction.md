@@ -32,7 +32,7 @@ Additionally, you can also navigate to Cloud Manager’s Programs and Products p
 
 1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to Cloud Manager, you are ready to use the User Interface (UI).
 
-Upon successful login, you will be directed to the landing page of Cloud Manager.
+   Upon successful login, you will be directed to the landing page of Cloud Manager.
 
 ## Cloud Manager Programs {#cloud-manager-programs}
 
