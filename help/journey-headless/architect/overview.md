@@ -4,8 +4,8 @@ description: Start here for a guided journey through the powerful and flexible h
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 ---
-
 # AEM Headless Content Architect Journey {#aem-headless-content-architect-journey}
 
 Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless project.
