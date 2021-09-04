@@ -4,6 +4,7 @@ description: Learn how to define translation rules to identify content for trans
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 ---
 # Configure Translation Rules {#configure-translation-rules}
 

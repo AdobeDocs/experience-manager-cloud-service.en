@@ -4,8 +4,8 @@ description: Start here for a guided journey through translating your AEM Sites 
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 ---
-
 # AEM Sites Translation Journey {#aem-sites-translation-journey}
 
 Start here for a guided journey through translating your AEM Sites content using AEM's powerful translation tools.
