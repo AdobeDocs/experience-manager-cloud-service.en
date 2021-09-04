@@ -1,8 +1,8 @@
 ---
 title: Adding Screens Add-on to an Existing Program in Cloud Manager
 description: This page describes adding a Screens add-on to an existing program in Cloud Manager for Screens as a Cloud Service.
+exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 ---
-
 # Adding Screens Add-on to an Existing Program in Cloud Manager {#adding-screens-program}
 
 This section describes how to add Screens as an add-on to an existing program in Cloud Manager.
