@@ -1,8 +1,8 @@
 ---
 title: AEM Sites Journeys
 description: Start here for an overview of the guided journeys available to understand AEM's powerful sites features.
+exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 ---
-
 # AEM Headless Journeys {#aem-headless-journeys}
 
 Start here for an overview of the guided journeys available to understand AEM's powerful sites features.

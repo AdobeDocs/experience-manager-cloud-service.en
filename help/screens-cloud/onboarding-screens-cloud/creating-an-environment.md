@@ -1,8 +1,8 @@
 ---
 title: Creating a Branch
 description: This page describes creating a branch in Cloud Manager for Screens as a Cloud Service.
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 ---
-
 # Creating an Environment in Cloud Manager {#create-environment-screens-cloud}
 
 This section describes how to create an environment for your program in Cloud Manager.
@@ -35,4 +35,3 @@ Once the project creation is successfully complete, you will see the call-to-act
 ## What's Next {#whats-next}
 
 Once you have learnt how to setup an environment for your program in Cloud Manager, you are now ready to move on to the next step in Onboarding process and that is, [Running the Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
- 

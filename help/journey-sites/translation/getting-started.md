@@ -4,8 +4,8 @@ description: Get to know how to organize your AEM Sites content and how AEM's tr
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 ---
-
 # Get Started with AEM Sites Translation {#getting-started}
 
 Get to know how to organize your AEM Sites content and how AEM's translation tools work.
