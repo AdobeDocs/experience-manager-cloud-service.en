@@ -2,7 +2,8 @@
 title: Getting Started with Onboarding Process
 description: Follow this page to learn how to get started with onboarding journey
 feature: Onboarding
-role: Admin, User, Developer 
+role: Admin, User, Developer
+exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
 ---
 # Get Started with Onboarding Process {#getting-started}
 
@@ -61,4 +62,3 @@ Follow the steps below to navigate to Admin Console and review your System Admin
 ## What's Next {#whats-next}
 
 Now, that you have logged into Admin Console and checked your profile as a System Administrator, you should continue your onboarding journey by next reviewing the document [Assign Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
-

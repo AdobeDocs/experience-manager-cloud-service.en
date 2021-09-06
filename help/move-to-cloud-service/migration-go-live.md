@@ -1,8 +1,8 @@
 ---
 title: Go Live Migration Phase
 description: Go Live Migration Phase
+exl-id: cf19d29f-3249-49d4-af02-bf68e247a8e9
 ---
-
 # Go Live {#golive-migration}
 
 >[!CONTEXTUALHELP]
