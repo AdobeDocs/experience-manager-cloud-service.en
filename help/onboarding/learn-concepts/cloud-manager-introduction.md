@@ -37,7 +37,7 @@ Additionally, you can also navigate to Cloud Manager’s Programs and Products p
 ## Role Based Permissions in Cloud Manager {#role-based-permissions}
 
 |Permissions|Description|Business Owner|Deployment Manager|Program Manager|Developer|
-|--- |--- |--- |--- |--- |--- |
+|---|---|---|---|---|---|
 |Add Program<br>Edit Program|Add a New Program.<br>Edit a program - Add or remove solutions or add-on's.|x||||	
 |Create Environment|Create Prod+Stage, Dev, Environments.|x|x||| 
 
