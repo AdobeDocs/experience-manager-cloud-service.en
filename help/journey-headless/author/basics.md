@@ -4,8 +4,8 @@ description: Learn about the concepts and mechanics of authoring content for you
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 ---
-
 # Authoring Basics for Headless with AEM {#author-headless-basics}
 
 ## The Story so Far {#story-so-far}

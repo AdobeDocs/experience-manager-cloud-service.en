@@ -2,7 +2,8 @@
 title: Onboarding Journey
 description: Follow this page to learn how to get started with onboarding journey
 feature: Onboarding
-role: Admin, User, Developer 
+role: Admin, User, Developer
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
 ---
 # Onboarding Journey {#onboarding-jourrney}
 

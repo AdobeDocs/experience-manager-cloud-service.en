@@ -4,6 +4,7 @@ description: Get to know how to organize your headless content and how AEM's tra
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 ---
 # Get Started with AEM Headless Translation {#getting-started}
 
