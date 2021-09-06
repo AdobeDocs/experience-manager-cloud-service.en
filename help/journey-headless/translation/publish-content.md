@@ -4,6 +4,7 @@ description: Learn how to publish your translated content and update the transla
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 ---
 # Publish Translated Content {#publish-content}
 

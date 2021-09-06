@@ -2,7 +2,8 @@
 title: Learning Path for AEM Users
 description: Follow this page to learn the next steps after getting access, if you are an AEM User
 feature: Onboarding
-role: Admin, User, Developer 
+role: Admin, User, Developer
+exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 ---
 # Learning Path for AEM Users {#learn-path-aem-users}
 
