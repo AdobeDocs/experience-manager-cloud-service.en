@@ -1,8 +1,8 @@
 ---
 title: Creating Video Renditions in Screens as a Cloud Service
 description: This page describes how to create video renditions in Screens as a Cloud Service.
+exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 ---
-
 # Creating Video Renditions in Screens as a Cloud Service {#creating-screens-video-renditions}
 
 ## Introduction {#introduction}
@@ -60,4 +60,3 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
    >[!NOTE]
    >* You can create multiple Processing profiles and apply them to the corresponding folders, so that the videos in those folders get the specific video renditions.
    >* When you upload any videos to the folder where Processing profile is applied, videos are processed and configured renditions are created, which are further used by the Screens devices to play the videos.
-
