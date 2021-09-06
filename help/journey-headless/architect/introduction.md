@@ -4,8 +4,8 @@ description: An introduction to the powerful, and flexible, headless features of
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 ---
-
 # Content Modeling for Headless with AEM - An Introduction {#architect-headless-introduction}
 
 In this part of the [AEM Headless Content Architect Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand content modeling for headless content delivery with Adobe Experience Manager (AEM) as a Cloud Service.

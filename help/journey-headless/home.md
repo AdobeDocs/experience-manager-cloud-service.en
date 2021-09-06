@@ -1,6 +1,7 @@
 ---
 title: AEM Headless Journeys
 description: Start here for an overview of the guided journeys available to understand AEM's powerful headless features.
+exl-id: 6645d061-e3bc-4ca2-976a-9c603f2363bc
 ---
 # AEM Headless Journeys {#aem-headless-journeys}
 

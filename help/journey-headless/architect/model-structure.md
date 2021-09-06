@@ -4,8 +4,8 @@ description: Learn about the concepts and mechanics of modeling content for your
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 ---
-
 # Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
 
 ## The Story so Far {#story-so-far}

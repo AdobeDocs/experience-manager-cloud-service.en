@@ -4,8 +4,8 @@ description: Learn about using references in Content Fragments, for content, oth
 index: yes
 hide: no
 hidefromtoc: no
+exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 ---
-
 # Learn about using references in Content Fragments {#author-headless-references}
 
 ## The Story so Far {#story-so-far}
