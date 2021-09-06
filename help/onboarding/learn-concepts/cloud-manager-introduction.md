@@ -38,8 +38,6 @@ Additionally, you can also navigate to Cloud Manager’s Programs and Products p
 
 |Permissions|Description|Business Owner|Deployment Manager|Program Manager|Developer|
 |---|---|---|---|---|---|
-|Add Program or Edit Program|Add a New Program or Edit a program - Add or remove solutions or add-on's.|x||||	
-|Create Environment|Create Prod+Stage, Dev, Environments.|x|x||| 
 
 >[!NOTE]
 >A user can be assigned to multiple roles. For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.
