@@ -2,8 +2,8 @@
 title: OSGi Configuration API
 description: Description of the AEM as a Cloud Service OSGi configuration surface
 feature: Deploying
+exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 ---
-
 # OSGi Configuration API
 
 The two lists below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.

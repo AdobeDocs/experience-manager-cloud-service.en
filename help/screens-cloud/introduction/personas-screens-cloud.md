@@ -1,8 +1,8 @@
 ---
 title: Role Definitions in AEM Screens as a Cloud Service
 description: This page describes role definitions in  AEM Screens as a Cloud Service.
+exl-id: f57a1aaf-8139-4141-90c5-c70ec7a9630c
 ---
-
 # Role Definitions {#role-definitions}
 
 Various personas are involved in a typical AEM Screens project. The following details help you decide the personas you need for your project.
