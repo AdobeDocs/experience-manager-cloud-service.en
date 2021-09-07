@@ -18,7 +18,7 @@ The following image illustrates your onboarding journey, starting with the welco
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-See [Onboarding Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) to get started with the onboarding journey.
+See [Onboarding Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) to get started with the onboarding experience.
 
 >[!NOTE]
 >Before you dive deep into the onboarding journey, it is recommended to review Learn Onboarding Concepts section that covers the following topics:
