@@ -18,44 +18,17 @@ The following image illustrates your onboarding journey, starting with the welco
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-## Key Onboarding Articles {#key-articles}
+See [Onboarding Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) to get started with the onboarding journey.
 
-This section covers the key articles focussed on your journey when starting with AEM as a Cloud Service:
-
-**What to expect while onboarding**
-
-Once your contract has been signed the following events will take place:
-
-1. Adobe will complete provisioning for your organization following which your organization's System Administrator will receive a welcome email allowing them to do System Administrator tasks including adding users, assigning them to roles, and thereby granting them appropriate access to Cloud Manager.
-
-1. Users added by your System Administrator will in turn receive a welcome email thereby allowing them to successfully navigate to Cloud Manager. Users can now use their Adobe ID to login and begin their journey with Cloud Manager from here. 
-
-1. A System Administrator can grant users access to an AEM instance for development purposes.
-
-**Get your Adobe ID**
-
-You will need your Adobe ID and your System Administrator's help to get users added to Cloud Manager to their assigned Roles.
-
-**Cloud Manager Roles**
-
-Your System Administrator can add users and assign them to Cloud Manager roles. This section helps you understand what *Cloud Manager Roles* are and permissions associated with the roles before getting started.
-
-**System Administrator Tasks**
-
-System Administrators manage all aspects of their users, from access to permissions. This user is the first person to have access to start doing tasks within Admin Console and Cloud Manager. 
-The following documentation pages include information describing basic organizational tasks:
-
-* Adding users
-* Assigning users to Cloud Manager roles and permissions
-
-**Navigate to Cloud Manager**
-
-Now that you have been added as a user and assigned to a Cloud Manager Role, you can access Cloud Manager to get started with your Cloud journey with AEM. Users are ready to do various tasks such as creating a program, adding an environment, accessing Git, [configuring a pipeline](/help/implementing/cloud-manager/configure-pipeline.md), and [deploying code](/help/implementing/cloud-manager/deploy-code.md).
-Cloud Manager is an important part of AEM as a Cloud Service. It enables organizations to self-manage [!DNL Experience Manager] in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security. Using the user interface, you can configure and kick off the CI/CD pipeline.
-
-**Grant User Access to an AEM Instance**
-
-Follow this section to learn how a System Administrator or a user who created an environment can grant other users access to an AEM instance.
+>[!NOTE]
+>Before you dive deep into the onboarding journey, it is recommended to review Learn Onboarding Concepts section that covers the following topics:
+>* [System Administrator](/help/onboarding/learn-concepts/system-administrator.md)
+>* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+>* [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
+>* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+>* [Introduction to Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+>* [AEM as a Cloud Service Team & Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+>* [Adobe Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 
 ## [!DNL Experience Manager as a Cloud Service] Guides {#aem-guides}
 
