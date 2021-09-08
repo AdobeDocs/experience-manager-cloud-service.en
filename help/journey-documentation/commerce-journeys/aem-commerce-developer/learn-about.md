@@ -43,7 +43,7 @@ As these projects have to deal with the complexity of integrating a commerce sol
 
 This complexity opens up the door to potential point of failures, increased TCO, delays, and reduced value realization. These reasons have led to the development of the Commerce Integration Framework (CIF) which is an add-on for the Experience Manager. CIF extends the Experience Manager with commerce capabilities and standardizes the integration with a commerce engine. The result is a future-proof, stable and scalable solution with lower TCO. It unlocks technical and business innovation with agile tooling and seamlessly integrated features to build compelling commerce experiences.
 
-![CIF Elements](./assets/CIF/CIF_Overview.png)
+![CIF Elements](/help/commerce-cloud/assets/CIF/CIF_Overview.png)
 
 ## What's Next {#what-is-next}
 
