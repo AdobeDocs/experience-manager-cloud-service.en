@@ -164,3 +164,19 @@ The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
 
 * CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
 
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa-latest}
+
+The Release Date for Best Practices Analyzer v2.1.18 is September 02, 2021.
+
+### What's New {#what-is-new}
+
+* Ability to detect and report on total node count.
+
+* Ability to detect and report on the node store type and size.
+
+### Bug Fixes {#bug-fixes-bpa}
+
+* BPA was falsely detecting presence of Commerce Integration Framework.
+
