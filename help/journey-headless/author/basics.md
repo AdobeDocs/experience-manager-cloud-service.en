@@ -1,11 +1,11 @@
 ---
 title: Learn Authoring Basics
 description: Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
+exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 ---
-
 # Authoring Basics for Headless with AEM {#author-headless-basics}
 
 ## The Story so Far {#story-so-far}
@@ -67,7 +67,7 @@ Within the console you can select folders to navigate to your Content Fragment, 
 
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
-The Quick Actions are available for a single resource:
+The Quick Actions are available for a single resource, see **Basel** in the example below:
 
 ![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -95,7 +95,7 @@ Unless you have very few Content Fragments you will want to organize them - so t
 
 #### Creating a Folder {#creating-folder}
 
-You can do this by creating a series of folders within **Files** section of the Assets console. Select the **Create** option (top right), followed by **Create Folder**:
+You can do this by creating a series of folders within **Files** section of the Assets console. Select the **Create** option (top right), followed by **Folder**:
 
 ![Create Folder option](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -107,7 +107,7 @@ A dialog will open where you can enter the details, then confirm with **Create**
 
 This section is slightly more advanced. You don't really need it if you're just starting out and trying things, but it is *very* useful when you have a lot of fragments. So it's good to know about - even if you don't use it quite yet.
 
-Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for your authors you can limit the list of models available for a specific folder.
+Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 
 After creating your folder you can open the folder **Properties**. Here there are various tabs with information, and configuration details, about the folder. In particular for Content Fragments, you can use the **Policies** tab to define specific paths and/or tags for this folder. This limits the Content Fragment Models available for use in the folder as it means that Content Fragment Models must meet these requirements before they can be used to generate fragments in this folder.
 
@@ -141,7 +141,7 @@ This time a wizard opens. The first step is to select the Content Fragment Model
 
 ![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-After continuing with **Next** you can supply the details for your fragment:
+After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
 
 ![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 

@@ -2,6 +2,7 @@
 title: Validating and Debugging using Dispatcher Tools
 description: Validating and Debugging using Dispatcher Tools
 feature: Dispatcher
+exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 ---
 # Validating and Debugging using Dispatcher Tools {#Dispatcher-in-the-cloud}
 
@@ -416,7 +417,7 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 
 ```
 
-When running Dispatcher locally, logs are printed directly to the terminal output. Most of the time, you want these logs to be in DEBUG, which can be done by passing the Debug level as a parameter when running Docker. For example: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+When running Dispatcher locally, logs are printed directly to the terminal output. Most of the time, you want these logs to be in DEBUG, which can be done by passing the Debug level as a parameter when running Docker. For example: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Logs for cloud environments are exposed through the logging service available in Cloud Manager.
 
@@ -455,7 +456,7 @@ When testing your configuration locally, you can simulate different environment 
 
 ```
 
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
+$ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 
 ```
 
