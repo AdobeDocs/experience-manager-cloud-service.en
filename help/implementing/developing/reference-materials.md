@@ -1,6 +1,7 @@
 ---
 title: API Reference Materials
 description: AEM has extensive and powerful APIs that you can leverage for your digital experience project.
+exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 ---
 # API Reference Materials {#api-reference-materials}
 

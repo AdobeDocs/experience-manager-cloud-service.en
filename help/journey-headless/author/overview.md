@@ -1,11 +1,11 @@
 ---
 title: AEM Headless Content Author Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to author content for your project.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
+exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 ---
-
 # AEM Headless Content Author Journey {#aem-headless-author-journey}
 
 Start here for a guided journey through the powerful and flexible headless features of AEM, and how to author content for your headless project.
@@ -25,6 +25,14 @@ This guide leads you through the most important topics so that on completion you
 * Have a basic understanding of what headless content delivery is and its benefits.
 * Understand AEM's headless features and how they work together to deliver a headless experience.
 * Have the ability to author content for your AEM headless project.
+
+## AEM Documentation Journeys {#documentation-journeys}
+
+[A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+
+Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+
+If you want to know how Adobe recommends how to solve headless business cases with AEM, [AEM Headless Journeys](/help/journey-headless/home.md) are where to start.
 
 ## Audience {#audience}
 
