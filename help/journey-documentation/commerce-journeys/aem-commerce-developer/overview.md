@@ -19,6 +19,13 @@ This guide leads you through the most important AEM Content and Commerce develop
 * Understand and have the ability to extend and configure your storefront.
 * Have the ability to build product experiences.
 
+## AEM Documentation Journeys {#documentation-journeys}
+
+[A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+
+Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+
+If you want to know how Adobe recommends how to solve sites business cases with AEM, AEM Sites Journeys are where to start.
 
 ## Audience {#audience}
 
