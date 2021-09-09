@@ -108,5 +108,29 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
+  <tr>
+    <td>oorg.slf4j.impl</td>
+    <td>Log implementation classes are not compatible with AEM as a Cloud Service.</td>
+    <td>7/4/21</td>
+    <td>8/26/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
+    <td>This API is deprecated as Apache Abdera is a retired project since 2017.</td>
+    <td>7/29/21</td>
+    <td>09/29/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
+    <td>This API is deprecated as Apache Abdera is a retired project since 2017.</td>
+    <td>4/8/19</td>
+    <td>09/29/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.startupfilter</td>
+    <td>Legacy AEM 6.x API.</td>
+    <td>4/8/19</td>
+    <td>09/29/21</td>
+  </tr>
 </tbody>
 </table>
