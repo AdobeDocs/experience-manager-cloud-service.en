@@ -124,7 +124,7 @@ Content fragments can be integrated with:
 
 * **Translations**
 
-  Content Fragments are fully integrated with the [AEM translation workflow](/help/sites-cloud/administering/translate/overview.md). On an architectural level, this means:
+  Content Fragments are fully integrated with the [AEM translation workflow](/help/sites-cloud/administering/translation/overview.md). On an architectural level, this means:
 
   * The individual translations of a content fragment are actually separate fragments; for example:
 
