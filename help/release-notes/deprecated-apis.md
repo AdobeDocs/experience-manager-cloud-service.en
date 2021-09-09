@@ -34,7 +34,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>com.day.cq.jcrclustersupport</td>
     <td>Use Sling's Discovery API as an alternative</td>
     <td>2015</td>
-    <td>7/30/21</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -52,7 +52,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
     <td></td>
     <td>3/5/21</td>
-    <td>6/6/21</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -64,7 +64,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
     <td>Custom persistence managers are not supported in AEM as a Cloud Service.</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -82,7 +82,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>org.apache.felix.systemready</td>
     <td>It is recommended you use the Apache Felix HealthCheck API instead</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
