@@ -116,12 +116,34 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.8.0 and 2021.7.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.9.0 and 2021.8.0.
+
+## Release Date {#release-date-cm-sept}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
+The next release is planned for October 07, 2021.
+
+### What's New {#what-is-new-cm-sept}
+
+* The program cards on Cloud Manager landing page and the associated experience has been refreshed.
+
+* The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
+
+* The Activity page menu options will now include an option to **Download Log** for completed Code Generator executions. Selecting this will download the log of the build step.
+
+* Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
+
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
+
+### Bug Fixes {#bug-fixes-sept}
+
+* User will now see a more comprehensible message when trying to add a new IP Allow List in a program that has reached the maximum allowed number of IP Allow Lists that can be configured.
+
+* Wrong URL was copied when selecting the copy URL menu option from Repositories screen. 
 
 ## Release Date {#release-date-cm-aug}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 12, 2021.
-The next release is planned for September 09, 2021.
 
 ### What's New {#what-is-new-aug}
 
