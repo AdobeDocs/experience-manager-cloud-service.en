@@ -125,6 +125,8 @@ The next release is planned for October 07, 2021.
 
 ### What's New {#what-is-new-cm-sept}
 
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
+
 * The program cards on Cloud Manager landing page and the associated experience has been refreshed.
 
 * The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
@@ -133,7 +135,6 @@ The next release is planned for October 07, 2021.
 
 * Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
 
 ### Bug Fixes {#bug-fixes-sept}
 
