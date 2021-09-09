@@ -7,16 +7,6 @@ exl-id: fa88a919-af6a-4266-b38c-647706decba4
 ---
 # Onboarding Journey {#onboarding-jourrney}
 
-## Onboarding Experience {#audience}
-
-Onboarding is the process during which a designated [System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) sets up AEM as a Cloud Service for your organization. This includes the initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities following which each member is able to login and access their AEM as a Cloud Service resources.
-
-The onboarding journey is illustrated below and each step in the journey is described in detail in the following sections.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-This journey is designed for a System Administrator persona, laying out the requirements, steps, and approach. The journey defines additional personas with which the System Administrator must interact for a successful project, but the point-of-view for the journey is that of an administrator.
-
 ## Exploring the Onboarding Journey {#exploring-onboarding-journey}
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of the onboarding steps for AEM as a Cloud Service. Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to onboarding, we recommend that you start at the beginning and progress sequentially.
