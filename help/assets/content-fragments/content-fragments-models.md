@@ -415,9 +415,13 @@ To unpublish a content fragment model:
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
 
->[!NOTE]
->
->If you try to unpublish a model that is currently used by fragments, then an error warning will inform you of this, and suggest that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further.
+If you try to unpublish a model that is currently used by one or more fragments, then an error warning will inform you of this: 
+
+![Content Fragment Model error message when unpublishing a model that is in use](assets/cfm-model-unpublish-error.png)
+
+The message will suggest that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further:
+
+![Content Fragment Model in References](assets/cfm-model-references.png)
 
 ## Locked (Published) Content Fragment Models {#locked-published-content-fragment-models}
 
@@ -447,7 +451,15 @@ The solution:
 
 * To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
+  ![Card of locked Content Fragment Model](assets/cfm-model-locked.png)
+
 * In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+
+  <!-- check scenarios for these 2 screenshots -->
+
+  ![Message when viewing a locked Content Fragment Model](assets/cfm-model-editor-lock-message.png)
+
+  ![View only - locked Content Fragment Model](assets/cfm-model-editor-locked-view-only.png)
 
 * The READ-ONLY mode is managed by means of a **Lock** function. 
 
@@ -455,4 +467,5 @@ The solution:
   
   If a user selects to **Unlock** a model:
   * A warning will be shown and the user must confirm the **Unlock** action.
+      ![Message when unlocking Content Fragment Model](assets/cfm-model-unlock-message.png)
   * Re-publishing the model will immediately put it back into READ-ONLY mode.
