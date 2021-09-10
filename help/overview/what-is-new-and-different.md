@@ -106,7 +106,7 @@ Specifically, the number of and the type of AEM programs that can be created fro
   
 Cloud Manager has evolved as a self-service portal where the main components of AEM as a Cloud Service can be created and configured:
 
-* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
+* Creating and managing new programs. Refer to [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) for more details.
 
 * Creating and managing the AEM environments within these programs. Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
@@ -116,8 +116,6 @@ Cloud Manager has evolved as a self-service portal where the main components of 
 
 Cloud Manager creates environments in datacenters across many geographic regions, providing for global coverage. CDN Points of Presence (PoPs) ensure low-latency content delivery for customers located all over the world.
 
->[!NOTE]
->Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md) to get started with Cloud Manager in AEM as a Cloud Service.
 
 ## Onboarding {#onboarding}
 
