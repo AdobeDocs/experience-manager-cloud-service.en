@@ -69,9 +69,6 @@ The **Environments** card on the Overview page lists up to three environments.
    ![](assets/environment-view-2.png)
 
 1. Select any one of the environments from the list to view the environment details.
-
-   >[!NOTE]
-   >Preview Service will be deployed on a rolling basis to all Programs. Customers will be notified in-product when their Program is enabled for Preview Service. See the section [Accessing Preview Service](#access-preview-service) for more details.
    
    ![](assets/environ-preview1.png)
 
@@ -143,8 +140,6 @@ The delete option is also available, if you click on **Details** from the **Envi
 ## Managing Access {#managing-access}
 
 Select **Manage Access** from the dropdown menu in the **Environments** Card. You can navigate to the author instance directly and manage access for your environment.
-
-Refer to [Managing Access to Author Instance](/help/onboarding/what-is-required/accessing-aem-instance.md) to learn more.
 
 ![](assets/environ-access.png)
 
