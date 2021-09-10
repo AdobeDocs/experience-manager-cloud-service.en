@@ -11,9 +11,7 @@ This section describes the dispatcher configurations for Screens as a Cloud Serv
 
 Allow the following filters and cache rules in dispatchers for the publish instances in Screens as a Cloud Service.
 
-### Filters {#filters}
-
-### AEM Screens Filters
+### AEM Screens Filters {#filters}
  
 ```
 ## # Content Configurations
