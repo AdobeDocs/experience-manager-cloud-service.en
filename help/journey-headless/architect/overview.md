@@ -1,11 +1,11 @@
 ---
 title: AEM Headless Content Architect Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
+exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 ---
-
 # AEM Headless Content Architect Journey {#aem-headless-content-architect-journey}
 
 Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless project.
@@ -21,6 +21,14 @@ This guide leads you through the most important topics so that on completion you
 * Understand what headless content delivery is and its benefits.
 * Understand how to model your content for AEM's headless features.
 * Have the ability to take the first steps modeling your content for your first AEM headless project.
+
+## AEM Documentation Journeys {#documentation-journeys}
+
+[A Documentation Journey](/help/journey-documentation/home.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+
+Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+
+If you want to know how Adobe recommends how to solve headless business cases with AEM, [AEM Headless Journeys](/help/journey-headless/home.md) are where to start.
 
 ## Audience {#audience}
 

@@ -1,7 +1,6 @@
 ---
 title: Cloud Manager Repositories
 description: Cloud Manager Repositories
-exl-id: Cloud Manager Repositories
 ---
 # Cloud Manager Repositories {#cloud-manager-repos} 
 
