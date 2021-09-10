@@ -1,8 +1,8 @@
 ---
 title: Using up Screens Content Provider
 description: This page describes how to use Screens Content Provider for creating content.
+exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 ---
-
 # Using Screens Content Provider {#using-screens-content-provider}
 
 ## Introduction {#introduction}
@@ -52,5 +52,3 @@ Follow the steps below to login to Screens Content Provider:
 ## What's Next {#whats-next}
 
 Now, you have learnt how to navigate to Screens Content Provider, you should now continue your Screens as a Cloud Service journey by next reviewing the document, [Creating and Managing a Project in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
-
-

@@ -1,10 +1,9 @@
 ---
 title: Thumbnail Support for Videos in Screens as a Cloud Service
 description: This page describes how to add Thumbnail Support for Videos in Screens as a Cloud Service.
-hide: yes
-index: no
+index: yes
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 ---
-
 # Thumbnail Support for Videos {#thumbnail-support-videos}
 
 ## Introduction {#introduction}
@@ -24,6 +23,10 @@ Thumbnail Support allows you to:
 
 ## Using Thumbnails in Videos {#using-thumbnails}
 
+>[!IMPORTANT]
+>**Prerequisites**
+>Before you learn how to use thumbnails for videos, please ensure to learn how to create video renditions for channels in Screens as a Cloud Service project. See [here](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) for more details.
+
 Follow the steps below to use thumbnail in videos:
 
 1. Navigate to an existing Screens channel or create a new channel.
@@ -39,24 +42,30 @@ Follow the steps below to use thumbnail in videos:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Edit the video component properties.
+1. Select the video and click on the the *wrench* icon to open the video properties.
 
-1. Drag an image from the asset picker to the Thumbnail drop zone.
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Preview the channel.
+1. The **Video** dialog box opens where you will view the **Thumbnail** drop zone.
 
-1. If a video is set on the component, the video will play. If not, and the thumbnail is set, then the thumbnail will play. Otherwise the component is considered not configured and will be skipped
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. Drag and drop an image from the asset picker to the **Thumbnail** drop zone and click on **Done**.
+   
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Click on **Preview**.
+
+1. If a video is set on the component, the video will play. If not, and the thumbnail is set, then the thumbnail will play. Otherwise the component is considered not configured and will be skipped.
 
 ## Supported Use Cases while using Thumbnail in Videos {#understand-use-case}
 
-Please refer to the following use cases while using thumbnail in videos.
+Thumbnail in videos supports the following use cases:
 
-A video component with:
+* A video component with nothing set up will be skipped.
 
-* *nothing set* up will be skipped
+* A video component with only the thumbnail set will play the thumbnail.
 
-* *only the thumbnail set* will play the thumbnail
+* A video component with both the video (if the video has correct rendition) and thumbnail set will play the video.
 
-* *both video and thumbnail set* will play the video
-
-* *the video set* will play the thumbnail if there is a playback error, or just skip to the next item in case the thumbnail is not configured
+* A video component with the video set will play the thumbnail, in case of a playback error, or will just skip to the next item in case the thumbnail is not configured.
