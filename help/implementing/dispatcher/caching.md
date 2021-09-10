@@ -56,7 +56,7 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    ```
 
-* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **secure** from being cached:
+* To prevent specific content from being cached **at the CDN**, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **secure** from being cached at the CDN:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -69,6 +69,9 @@ This can be useful, for example, when your business logic requires fine tuning o
 
    >[!NOTE]
    >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+
+   >[!NOTE]
+   >Please note that dispatcher might still cache content according to its own [caching rules](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). To make the content truly private you should ensure that it is not cached by dispatcher.
 
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
