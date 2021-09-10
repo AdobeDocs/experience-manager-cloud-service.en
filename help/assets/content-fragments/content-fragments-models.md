@@ -415,8 +415,11 @@ To unpublish a content fragment model:
 1. Select your model, followed by **Unpublish** from the toolbar.
    The published status will be indicated in the console. 
 
-<!--
-## Locked Content Fragment Models {#locked-content-fragment-models}
+>[!NOTE]
+>
+>If you try to unpublish a model that is currently used by fragments, then an error warning will inform you of this, and suggest that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further.
+
+## Locked (Published) Content Fragment Models {#locked-published-content-fragment-models}
 
 This feature provides governance for Content Fragment Models that have been published. 
 
@@ -432,11 +435,21 @@ The challenge:
 
 * Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-The solution:
+The requirements:
 
-* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). 
+
+* Also, to avoid unintended changes. 
+
+Either of these might break queries if the modified models are re-published. 
+
+The solution:
 
 * To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
 * In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
--->
+
+* The READ-ONLY mode is managed by means of a **Lock** function. 
+
+  * Users can **Unlock** a model to enable edits - but care must be taken.
+  * If a user selects to **Unlock** a model, a warning will be shown and the user must confirm the **Unlock** action.
