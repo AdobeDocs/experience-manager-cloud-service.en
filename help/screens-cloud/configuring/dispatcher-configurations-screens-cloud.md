@@ -73,4 +73,4 @@ Allow the following filters and cache rules in dispatchers for the publish insta
        /glob "/screens/channels.json"
        /type "deny"
        }
-    ```
+   ```
