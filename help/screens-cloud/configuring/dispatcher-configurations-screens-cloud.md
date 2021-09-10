@@ -13,7 +13,7 @@ Allow the following filters and cache rules in dispatchers for the publish insta
 
 ### Filters {#filters}
 
-## AEM Screens Filters
+### AEM Screens Filters
  
 ```
 ## # Content Configurations
@@ -26,12 +26,12 @@ Allow the following filters and cache rules in dispatchers for the publish insta
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## Cache Rules {#cache-rules}
+### Cache Rules {#cache-rules}
 
 * Add `/statfileslevel "10"` to `/cache` section in `publish_farm.any`/.
 
    >[!NOTE]
-   >This supports caching up to 10 levels from the cache docroot and invalidates when content is published rather than invalidating everything. You can change this level based on how deep your content structure is.
+   >This cache rule supports caching up to 10 levels from the cache docroot and invalidates when content is published rather than invalidating everything. You can change this level based on how deep your content structure is setup.
 
 * Add the following to `/invalidate` section in `publish_farm.any`.
 
@@ -50,7 +50,7 @@ Allow the following filters and cache rules in dispatchers for the publish insta
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
 
    ## Allow Dispatcher Cache for Screens offline manifests
 
