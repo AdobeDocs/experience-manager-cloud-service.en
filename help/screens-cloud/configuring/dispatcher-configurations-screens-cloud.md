@@ -3,11 +3,11 @@ title: Dispatcher Configurations in Screens as a Cloud Service
 description: This page describes Dispatcher Configurations in Screens as a Cloud Service.
 ---
 
-# Dispatcher Configurations in Screens as a Cloud Service{#dispatcher-configurations-screens-cloud}
+# Dispatcher Configurations in Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
 This section describes the dispatcher configurations for Screens as a Cloud Service.
 
-## Dispatcher Configurations for Screens as a Cloud Service deployment {#deployment}
+## Adding Filters and Cache Rules in Dispatcher for Screens as a Cloud Service deployment {#deployment}
 
 Allow the following filters and cache rules in dispatchers for the publish instances in Screens as a Cloud Service.
 
