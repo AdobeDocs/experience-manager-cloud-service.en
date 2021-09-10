@@ -1,6 +1,7 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Adobe Experience Manager Screens as a Cloud Service self-help resources and documentation links
+exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 ---
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 

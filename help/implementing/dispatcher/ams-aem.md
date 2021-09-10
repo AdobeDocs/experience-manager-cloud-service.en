@@ -1,7 +1,8 @@
 ---
 title: Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service
-description: Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service 
+description: Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service
 feature: Dispatcher
+exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
 ---
 # Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service {#Dispatcher-in-the-cloud}
 
