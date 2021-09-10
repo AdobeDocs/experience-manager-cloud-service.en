@@ -7,7 +7,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2021.06.0 |
+| Version | 2021.08.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
@@ -64,7 +64,7 @@ To prepare for a release:
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR Readiness](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

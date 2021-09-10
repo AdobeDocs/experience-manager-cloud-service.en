@@ -1,8 +1,8 @@
 ---
 title: Handling Large Content Repositories
 description: This section describes handling of large content repositories
+exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
 ---
-
 # Handling Large Content Repositories {#handling-large-content-repositories}
 
 ## Overview {#overview}

@@ -16,7 +16,7 @@ Possible topics to cover in this article are below.
 * Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, etc.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
 * Any exceptions that users should be aware of. It may help to call out (it may be done in ACR) what tasks are NOT supported.
-* CTAs – what's next and more info from AEM team:
+* CTAs – what's next and more info from the team:
   * Link to ACRs on a.com.
   * Generic a11y info by Adobe to begin with.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
@@ -54,7 +54,7 @@ Users with disabilities frequently rely on hardware and software to access web c
 
 In [!DNL Experience Manager], the accessibility features address two key requirements of [!DNL Experience Manager] users and their customers.
 
-* For content designers and creators, there are features to create and publish accessible content that is used in turn by their customers and website visitors. The content can be used by individuals with disabilities with the help of assistive technologies. For details, see [web accessibility guidelines](/help/onboarding/accessibility/web-accessibility.md).
+* For content designers and creators, there are features to create and publish accessible content that is used in turn by their customers and website visitors. The content can be used by individuals with disabilities with the help of assistive technologies. For details, see [web accessibility guidelines](/help/compliance/accessibility/quick-guide-wcag.md).
 * [!DNL Experience Manager] also lets its users and administrators with disabilities access user interface and controls to create and manage content. The individual with disabilities can use assistive technologies to navigate, use, and manage the [!DNL Assets] capability.
 
 The core features in [!DNL Assets] are more accessible than before and are regularly updated to improve compliance with global standards. The CRUD operations in [!DNL Assets] have some degree of accessibility built into those. DAM workflows like adding, managing, searching, and distributing assets are accessible with the help of keyboard shortcuts, screen reader text, color contrast, and so on.
@@ -220,5 +220,5 @@ To provide feedback, ask questions, and request product enhancements, related to
 >[!MORELIKETHIS]
 >
 >* [Release notes of enhancements done in each release](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* [[!DNL Adobe Experience Manager] accessibility guidance](/help/onboarding/accessibility/web-accessibility.md).
+>* [[!DNL Adobe Experience Manager] accessibility guidance](/help/compliance/accessibility/web-accessibility.md).
 >* [Conformance reports (ACR) and VPAT listing for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).
