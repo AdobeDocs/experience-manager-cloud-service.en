@@ -4,8 +4,8 @@ description: Generate variations of assets using Creative Cloud integration
 contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 ---
-
 # Generate variations of assets using [!DNL Adobe Creative Cloud] integration {#content-automation}
 
 Content automation add-on integrates [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] and [!DNL Adobe Creative Cloud] APIs to creatively process your assets at scale. [!DNL Experience Manager] uses cloud-based [asset microservices](/help/assets/asset-microservices-overview.md) to use the [!DNL Adobe Creative Cloud] features and automate the asset creation and media handling.
