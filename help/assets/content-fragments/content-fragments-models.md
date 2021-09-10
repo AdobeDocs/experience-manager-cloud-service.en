@@ -451,5 +451,8 @@ The solution:
 
 * The READ-ONLY mode is managed by means of a **Lock** function. 
 
-  * Users can **Unlock** a model to enable edits - but care must be taken.
-  * If a user selects to **Unlock** a model, a warning will be shown and the user must confirm the **Unlock** action.
+  Users can **Unlock** a model to enable edits - but care must be taken. They can also **Lock** the model afterwards.
+  
+  If a user selects to **Unlock** a model:
+  * A warning will be shown and the user must confirm the **Unlock** action.
+  * Re-publishing the model will immediately put it back into READ-ONLY mode.
