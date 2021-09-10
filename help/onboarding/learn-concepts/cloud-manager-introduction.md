@@ -13,6 +13,47 @@ To ensure customers can start quickly with AEM as a Cloud Service, Cloud Manager
 
 Your System Administrator will be responsible to setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. Refer to [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) to learn how Cloud Manager supports in Enterprise Team Development Setup.
 
+## Navigating to Cloud Manager's Overview Page {#navigate-cloud-manager}
+
+Follow the steps below to navigate to Cloud Manager:
+
+1. Navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). 
+
+   >[!NOTE]
+   >Please bookmark this page for future reference and to help you navigate directly to Cloud Manager's landing page.
+
+1. Select the program from Cloud Manager’s **Programs and Products** page to launch the **Overview** page.
+
+Additionally, you can also navigate to Cloud Manager’s Programs and Products page from Adobe Experience Cloud home page. Follow the steps below:
+
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) and login using your Adobe ID.
+
+1. Select **Experience Manager**.
+
+1. Click on **Launch** from the Cloud Manager card. Once you have successfully logged in to Cloud Manager, you are ready to use the User Interface (UI).
+
+   Upon successful login, you will be directed to the landing page of Cloud Manager.
+
+## Role Based Permissions in Cloud Manager {#role-based-permissions}
+
+|Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|
+|--- |--- |--- |--- |--- |--- |
+|Add Program<br>Edit Program|Add a New Program.<br>Edit a program - Add or remove solutions or add-on's|x||||
+|Create Environment|Create Prod+Stage, Dev, Environments.|x|x|||
+|Update Environment|Update Prod+Stage, Dev, Environments.|x|x|||
+|Delete Dev Environment|Delete Dev Environments.|x|x|||
+|Pipeline Setup|Setup or Edit Pipeline.||x|||
+|Pipeline Execution|Start the Pipeline.|x|x|||
+|Pipeline Execution|Reject/Approve Important 3-Tier Failures.|x|x|x||
+|Pipeline Execution|Provide GoLive Approval.|x|x|x||
+|Pipeline Execution|Schedule Production Deployment.|x|x|x||
+|Pipeline Delete|Allows Deleting of a Pipeline.||x|||
+|Execution Cancel|Cancel Current Execution.||x|||
+|Generate Personal Access Token|Access Git.||x||x|
+
+>[!NOTE]
+>A user can be assigned to multiple roles. For example assigning both Business Owner and Deployment Manager roles to a user gives them the combination or sum of these permissions.
+
 ## Cloud Manager Programs {#cloud-manager-programs}
 
 Cloud Manager Programs represent sets of Cloud Manager environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA). For example, one Program may represent the AEM resources to support the global public Web sites, while another Program represents an internal Central DAM. Watch this [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) to learn more on using Cloud Manager programs.

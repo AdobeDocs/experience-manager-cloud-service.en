@@ -12,8 +12,9 @@ role: Developer, Architect
 + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 + Using Cloud Manager {#using-cloud-manager}
   + Release Notes for Cloud Manager {#release-notes-cloud-manager}
-    + [Current Release Notes (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+    + [Current Release Notes (2021.9.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
     + 2021 {#2021}
+      + [Release Notes for 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
       + [Release Notes for 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
       + [Release Notes for 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
       + [Release Notes for 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
@@ -138,7 +139,7 @@ role: Developer, Architect
     + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
   + Headless Experience Management {#headless}
     + [Headless and AEM](developing/headless/introduction.md)
-    + [Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+    + [Headless Documentation Journeys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
     + Getting Started Guides {#getting-started}
       + [Introduction](developing/headless/getting-started/introduction.md)
       + [Creating a Configuration](developing/headless/getting-started/create-configuration.md)
