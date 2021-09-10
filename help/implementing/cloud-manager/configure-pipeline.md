@@ -114,7 +114,7 @@ Follow the steps below to edit the configured pipeline:
 1. The **Source Code** tab allows you to update the repository. Click on **Access Repo Info** to update the repository.
 
    >[!NOTE]
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) to learn how to add and manage repositories in Cloud Manager.
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 
