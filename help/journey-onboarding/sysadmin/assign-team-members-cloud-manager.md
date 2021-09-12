@@ -1,11 +1,10 @@
 ---
-title: Assigning Team Members to Cloud Manager Product Profiles 
+title: Assigning Team Members to Cloud Manager Product Profiles
 description: Follow this page to learn how to assign team members to Cloud Manager Product profiles
-hide: yes
-index: no
-role: Admin, User, Developer 
+feature: Onboarding
+role: Admin, User, Developer
+exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 ---
-
 # Assign Team Members to Cloud Manager Product Profiles {#assign-team-members}
 
 Once you have learnt how to login to [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) and viewed your privileges as a [System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en), you are now ready to assign team members to Cloud Manager Product profiles.
@@ -167,4 +166,4 @@ Follow the additional resources to learn about:
 
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)
 * [Cloud Manager Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)
-* [Admin Console Identity Overview](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) 
+* [Admin Console Identity Overview](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)

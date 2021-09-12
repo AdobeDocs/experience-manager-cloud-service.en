@@ -1,46 +1,36 @@
 ---
-title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.8.0
-description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.8.0
+title: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.9.0
+description: Release Notes for Cloud Manager in AEM as a Cloud Service Release 2021.9.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 ---
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.9.0 {#release-notes}
 
-This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.8.0.
+This page outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.9.0.
 
 >[!NOTE]
 >To see the current Release Notes for Adobe Experience Manager as a Cloud Service, click [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Release Date {#release-date}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 12, 2021.
-The next release is planned for September 09, 2021.
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
+The next release is planned for October 07, 2021.
 
 ### What's New {#what-is-new}
 
-* Cloud Service customers can now view Service Level Agreement (SLA) reports in Cloud Manager. This will be made available progressively over the next few months.
-   See [SLA Reporting](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) to learn more.
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
 
-* The type and severity of the IndexType and `IndexDamAssetLucene` quality rules has been changed. These are now both Bugs of Blocker *serverity*.
+* The program cards on Cloud Manager landing page and the associated experience has been refreshed.
 
-* New Oak index quality rules have been introduced to cover asynchronous and tika configurations.
+* The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
 
-* Increase max SSL certs per program to 50.
+* The Activity page menu options will now include an option to **Download Log** for completed Code Generator executions. Selecting this will download the log of the build step.
 
-* Self-service capability to allow users to create and manage multiple repositories via Cloud Manager UI.
-
-* SonarQube was unnecessarily reading Git history data. On large code bases, this could lead to an unnecessary build performance penalty.
-
-* There is now an API available to invalidate the Maven dependency cache per pipeline.
- 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 29. 
+* Clicking directly on the Program card will now navigate to Cloud Manager's **Overview** page. See [Creating a Production Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) for more details.
 
 ### Bug Fixes {#bug-fixes}
 
-* Update Available status should not be displayed when the latest release is less than the current release.
+* User will now see a more comprehensible message when trying to add a new IP Allow List in a program that has reached the maximum allowed number of IP Allow Lists that can be configured.
 
-* Initial onboarding was failing for new organizations with very long names.
-
-* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
-
+* Wrong URL was copied when selecting the copy URL menu option from Repositories screen. 
 

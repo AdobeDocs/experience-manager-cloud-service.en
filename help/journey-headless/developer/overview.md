@@ -9,11 +9,9 @@ Start here for a guided journey through the powerful and flexible headless featu
 
 ## Introduction {#introduction}
 
-Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel.
-
 Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing digital experiences.
 
-This guide leads you through the most important topics so that on completion you:
+This guide leads you through the most headless implementation topics in AEM so that on completion you:
 
 * Have a full understanding of what headless content delivery is and its benefits.
 * Understand AEM's headless features and how they work together to deliver a headless experience.
@@ -25,11 +23,11 @@ This guide leads you through the most important topics so that on completion you
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
-If you want to know how Adobe recommends how to solve headless business cases with AEM, AEM Headless Journeys are where to start.
+If you want to know how Adobe recommends how to solve headless business cases with AEM, [AEM Headless Journeys](/help/journey-headless/home.md) are where to start.
 
 >[!TIP]
 >
-> If you prefer to **learn by doing** and are technicall inclined, visit the AEM Headless tutorials, which are organized by API and framework and are available in the [Additional Resources section](#additional-resources) at the end of this document.
+> If you prefer to **learn by doing** and are technically inclined, visit the AEM Headless tutorials, which are organized by API and framework and are available in the [Additional Resources section](#additional-resources) at the end of this document.
 
 ## Audience {#audience}
 
@@ -37,13 +35,12 @@ This journey is designed for the developer persona, laying out the requirements,
 
 The following are the personas that interact in this journey.
 
-|Persona|Description|Role in Journey|
+|Persona|Description|Role in This Journey|
 |---|---|---|
-|Developer|Has experience developing headless applications which consume content from different sources|Target audience of this journey|
+|Developer (target audience)|Has experience developing headless applications which consume content from different sources|Target audience of this journey|
 |Content Author|Creates and manages content that is delivered headlessly|Content Authors create content that the developer delivers headlessly.|
 |Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
 |Content Architect|Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it headlessly.|
-|Translation Specialist|Defines what content should be translated and manages those workflows|The Translation specialist works with the content architect to define initial organization of content and may need to work with the developer for any translation-specific requirements.|
 
 Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
 
