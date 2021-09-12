@@ -116,8 +116,6 @@ Cloud Manager has evolved as a self-service portal where the main components of 
 
 Cloud Manager creates environments in datacenters across many geographic regions, providing for global coverage. CDN Points of Presence (PoPs) ensure low-latency content delivery for customers located all over the world.
 
->[!NOTE]
->Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md) to get started with Cloud Manager in AEM as a Cloud Service.
 
 ## Onboarding {#onboarding}
 
