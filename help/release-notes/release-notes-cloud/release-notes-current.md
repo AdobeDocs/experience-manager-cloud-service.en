@@ -93,7 +93,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
    See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
 
 * Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
-   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) for more details.
+   See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) for more details.
 
 ### Bug Fixes {#bug-fixes-screens}
 
