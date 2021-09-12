@@ -1,9 +1,9 @@
 ---
 title: Learning Path for AEM Users
 description: Follow this page to learn the next steps after getting access, if you are an AEM User
-hide: yes
-index: no
-role: Admin, User, Developer 
+feature: Onboarding
+role: Admin, User, Developer
+exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 ---
 # Learning Path for AEM Users {#learn-path-aem-users}
 
@@ -11,11 +11,11 @@ role: Admin, User, Developer
 
 This document helps your AEM as a Cloud Service Content Authors to get access to Adobe Experience Manager (AEM). 
 
-After reading you should  understand:
+After reading you should  understand how to:
 
-* How to access Cloud Manager.
-* How to access AEM as a Cloud Service instance.
-* Author content for AEM as a Cloud Service.
+* Access Cloud Manager
+* Access AEM as a Cloud Service instance
+* Author content for AEM as a Cloud Service
 
 ## Introduction  {#introduction}
 
@@ -31,18 +31,12 @@ Your System Administrator must have completed all of the necessary steps and suc
 
 Follow the steps below to access Author:
 
-1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
+1. Navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). 
 
-1. From the Adobe Experience Cloud home page, Select **Experience Manager**.
+   >[!NOTE]
+   >Please bookmark [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) link for future reference and to help you navigate directly to Cloud Manager's landing page.
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
-
-1. This will take you to the AEM home page. From here, launch **Cloud Manager** .
-
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
-
-   >[!IMPORTANT]
-   >Alternatively, you can also navigate directly to Cloud Manager's login page from [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Please bookmark this page for future reference and to help you navigate directly to Cloud Manager's landing page.
+1. Select the program from Cloud Manager’s **Programs and Products** page to launch the **Overview** page.
 
 1. From the **Overview** page in Cloud Manager, click on the author link from the **Environments** card.
 

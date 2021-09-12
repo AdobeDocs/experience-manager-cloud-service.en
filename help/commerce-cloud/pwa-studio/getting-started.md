@@ -4,8 +4,8 @@ description: Learn how to deploy an AEM headless Content and Commerce project wi
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
+exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 ---
-
 # Getting started with AEM Extension for PWA Studio {#getting-started-pwa}
 
 Out of the box, PWA Studio integrates seamlessly with Adobe Commerce via GraphQL providing unlimited options for creating innovative and engaging storefronts and other digital experiences.

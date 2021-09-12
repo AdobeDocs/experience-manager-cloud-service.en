@@ -1,8 +1,8 @@
 ---
 title: AEM Screens as a Cloud Service
 description: This page serves as an introduction to AEM Screens as a Cloud Service.
+exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 ---
-
 # Introduction to AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
 With AEM Screens as a Cloud Service, you can create engaging and dynamic digital signage experiences intended to be consumed in public spaces. It is the next evolution of the AEM Screens product and represents a major leap forward in usability and scalability. 
@@ -23,4 +23,3 @@ Screens as a Cloud Service has two main components, namely:
 As an AEM Screens as a Cloud Service user, you can add and manage content in channels, register and manage displays and players from the interfaces designed specifically for Screens as a Cloud Service, namely, **Screens Services Provider** and **Screens Content Provider**.
 
 ![image](/help/screens-cloud/assets/architecture-screenscloud.png)
-

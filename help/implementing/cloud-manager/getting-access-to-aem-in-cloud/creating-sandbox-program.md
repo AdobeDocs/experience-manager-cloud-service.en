@@ -11,9 +11,6 @@ Follow the steps below to create a sandbox program:
 
    ![](assets/first_timelogin1.png) 
 
-   >[!NOTE]
-   >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) for more details.
-
 1. From the create program wizard, select **Set up a sandbox**. User submits program name before selecting **Create**.
 
    ![](assets/create-sandbox.png)
@@ -28,7 +25,7 @@ Follow the steps below to create a sandbox program:
    
    >[!NOTE]
    >
-   >To learn more about accessing and managing your Git Repository using Self-Service Git Account Management from Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/accessing-repos.md).
+   >To learn more about accessing and managing your Git Repository using Self-Service Git Account Management from Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 
 1. Once the development environment is created, the user can **Access AEM** link, as shown in the figure below:
