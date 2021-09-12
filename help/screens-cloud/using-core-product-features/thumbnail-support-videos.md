@@ -2,8 +2,8 @@
 title: Thumbnail Support for Videos in Screens as a Cloud Service
 description: This page describes how to add Thumbnail Support for Videos in Screens as a Cloud Service.
 index: yes
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 ---
-
 # Thumbnail Support for Videos {#thumbnail-support-videos}
 
 ## Introduction {#introduction}

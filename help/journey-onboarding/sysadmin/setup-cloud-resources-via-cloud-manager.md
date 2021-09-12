@@ -1,9 +1,8 @@
 ---
 title: Setup Cloud Resources via Cloud Manager
 description: Follow this page to learn how to setup Cloud Resources via Cloud Manager
-hide: yes
-index: no
-role: Admin, User, Developer 
+role: Admin, User, Developer
+exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 ---
 # Setup Cloud Resources via Cloud Manager {#setup-cloud-resources}
 

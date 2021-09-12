@@ -58,7 +58,7 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* AEM Archetype project for Forms as a Cloud Service now includes [Canvas 3.0 theme and form data models for Microsoft Dynamics and Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
+* AEM Archetype project for Forms as a Cloud Service now includes [form data models for Microsoft Dynamics and Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Acroform-based Document of Record**: AEM Forms as a Cloud Service supports using [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
 
@@ -89,8 +89,8 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-screens}
 
-* As a Content Author, you can now define define a thumbnail for videos so you can use that image as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team.
-   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring) for more details.
+* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, etc.). This feature allows the team to remotely monitor if a player is properly playing content, improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
+   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
 
 * Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
    See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) for more details.
@@ -116,12 +116,35 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ## Cloud Manager {#cloud-manager}
 
-This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.8.0 and 2021.7.0.
+This section outlines the Release Notes for Cloud Manager in AEM as a Cloud Service 2021.9.0 and 2021.8.0.
+
+## Release Date {#release-date-cm-sept}
+
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.9.0 is September 09, 2021.
+The next release is planned for October 07, 2021.
+
+### What's New {#what-is-new-cm-sept}
+
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
+
+* The program cards on Cloud Manager landing page and the associated experience has been refreshed.
+
+* The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
+
+* The Activity page menu options will now include an option to **Download Log** for completed Code Generator executions. Selecting this will download the log of the build step.
+
+* Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
+
+
+### Bug Fixes {#bug-fixes-sept}
+
+* User will now see a more comprehensible message when trying to add a new IP Allow List in a program that has reached the maximum allowed number of IP Allow Lists that can be configured.
+
+* Wrong URL was copied when selecting the copy URL menu option from Repositories screen. 
 
 ## Release Date {#release-date-cm-aug}
 
 The Release Date for Cloud Manager in AEM as a Cloud Service 2021.8.0 is August 12, 2021.
-The next release is planned for September 09, 2021.
 
 ### What's New {#what-is-new-aug}
 
@@ -163,4 +186,20 @@ The Release Date for Content Transfer Tool v1.5.6 is August 11, 2021.
 * The **Stop Ingestion** button was being disabled during ingestion to the Publish instance. This is not necessary because there is no mongo restore step during Publish ingestion. 
 
 * CTT did not clean up the `/tmp` directory after a successful extraction. This sometimes led to disk space issues. 
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Release Date {#release-date-bpa-latest}
+
+The Release Date for Best Practices Analyzer v2.1.18 is September 02, 2021.
+
+### What's New {#what-is-new}
+
+* Ability to detect and report on total node count.
+
+* Ability to detect and report on the node store type and size.
+
+### Bug Fixes {#bug-fixes-bpa}
+
+* BPA was falsely detecting presence of Commerce Integration Framework.
 

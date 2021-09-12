@@ -3,11 +3,11 @@ sub-product: Onboarding Journey
 user-guide-title: Onboarding Journey
 breadcrumb-title: Onboarding Journey
 user-guide-description: Start here for a guided journey designed for a System Administrator persona, laying out the requirements, steps, and approach. The journey defines additional personas with which the System Administrator must interact for a successful project, but the point-of-view for the journey is that of an administrator.
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer 
 ---
 
-# Onboarding Journey {#onboarding-journey}
+# Onboarding Journey {#journey-onboarding}
 
 + [Onboarding Journey](/help/journey-onboarding/home.md)
 + Exploring the Onboarding Journey {#onboarding}

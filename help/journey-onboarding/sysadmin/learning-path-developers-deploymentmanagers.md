@@ -1,9 +1,9 @@
 ---
 title: Learning Path for Developers and Deployment Managers
 description: Follow this page to learn the next steps after getting access, if you are a Developer or a Deployment Manager
-hide: yes
-index: no
-role: Admin, User, Developer 
+feature: Onboarding
+role: Admin, User, Developer
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 ---
 # Learning Path for Developers and Deployment Managers {#learn-path-developers-deployment}
 
