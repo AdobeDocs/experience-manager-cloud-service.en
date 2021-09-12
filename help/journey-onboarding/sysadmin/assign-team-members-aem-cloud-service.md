@@ -1,11 +1,10 @@
 ---
-title: Assign Team Members to AEM as a Cloud Service Product Profiles 
+title: Assign Team Members to AEM as a Cloud Service Product Profiles
 description: Follow this page to learn how to assign team members to AEM as a Cloud Service Product Profiles
-hide: yes
-index: no
-role: Admin, User, Developer 
+feature: Onboarding
+role: Admin, User, Developer
+exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 ---
-
 # Assign Team Members to AEM as a Cloud Service Product Profiles {#assign-team-members-cloud-service}
 
 ## Objective {#objective}

@@ -1,9 +1,10 @@
 ---
 title: Configure Translation Rules
 description: Learn how to define translation rules to identify content for translation.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
+exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 ---
 # Configure Translation Rules {#configure-translation-rules}
 

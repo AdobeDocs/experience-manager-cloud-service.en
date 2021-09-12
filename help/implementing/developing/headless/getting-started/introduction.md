@@ -5,13 +5,19 @@ exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 ---
 # Headless Getting Started Guide {#introduction}
 
-The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service in five steps. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
+The Headless Getting Started Guides lay out a simple path for for creating, managing, and delivering experiences using AEM as a Cloud Service in five steps for users who are already familiar with AEM and headless technology. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
 
 1. [Creating a Configuration](create-configuration.md)
 1. [Creating a Content Fragment Model](create-content-model.md)
 1. [Creating an Assets Folder](create-assets-folder.md)
 1. [Creating a Content Fragment](create-content-fragment.md)
 1. [Accessing and Delivering Content Fragments](create-api-request.md)
+
+>[!TIP]
+>
+>This getting started guide assumes knowledge of both AEM and headless technologies.
+>
+>If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
 
 ## Audience {#audience}
 

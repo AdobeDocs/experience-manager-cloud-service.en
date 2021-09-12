@@ -1,8 +1,8 @@
 ---
 title: Navigating to Screens Services Provider
 description: This page describes how to navigate to Screens Services Provider.
+exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 ---
-
 # Navigating to Screens Services Provider {#setup-screens-services-provider}
 
 ## Introduction {#introduction}
@@ -36,4 +36,3 @@ Follow the steps below to setup Screens Services Provider:
 ## What's Next {#whats-next}
 
 Once you have learnt how to setup Screens Services  Provider you can navigate to, [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) for more details.
-
