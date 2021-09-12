@@ -1,8 +1,8 @@
 ---
 title: Implementation Phase in Cloud Acceleration Manager
 description: This page provides an overview on the implementation phase in Cloud Acceleration Manager.
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
 ---
-
 # Implementation Phase in Cloud Acceleration Manager {#implementation-phase-cam}
 
 The Implementation Phase includes:
@@ -54,10 +54,9 @@ Follow this section to explore the Code Refactoring activity card:
    * Dispatcher
    * Testing
 
-   The **Overview** tab displays a list of code refactoring activities.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
-
+  >[!NOTE]
+  >Please review the content in these tabs to understand some additional areas that are not covered by the Best Practices Analyzer.
+   
    The **Dispatcher** tab provides information on how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments.
    
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
@@ -66,11 +65,7 @@ Follow this section to explore the Code Refactoring activity card:
    
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
-
-   >[!NOTE]
-   >Additionally, please review the content in the tabs on the page to understand some additional areas that are not covered by the Best Practices Analyzer.
-
-
+   
 ## Using AEM as a Cloud Service Deployment Card {#aem-as-a-cloud-service-deployment}
 
 AEM as a Cloud Service Deployment card provides all the relevant content that will help you deploy your code to AEM as a Cloud Service.
