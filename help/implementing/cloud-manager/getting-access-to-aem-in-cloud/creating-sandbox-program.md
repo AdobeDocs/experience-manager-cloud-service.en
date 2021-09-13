@@ -25,7 +25,7 @@ Follow the steps below to create a sandbox program:
    
    >[!NOTE]
    >
-   >To learn more about accessing and managing your Git Repository using Self-Service Git Account Management from Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/accessing-repos.md).
+   >To learn more about accessing and managing your Git Repository using Self-Service Git Account Management from Cloud Manager UI, refer to [Accessing Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 
 1. Once the development environment is created, the user can **Access AEM** link, as shown in the figure below:

@@ -20,23 +20,22 @@ Follow the steps below to view and manage repositories in Cloud Manager:
    >[!NOTE]
    >A user in Deployment Manager or Business Owner role must be logged in to be able to add a repository.
 
-   ![](assets/repos/create-repo2.png)
-
+   ![](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
   
 1. Enter the name and description as requested and click on **Save**.
 
-   ![](assets/repos/repo-1.png)
+   ![](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
 1. Select **Save**. Your newly created repo will be displayed in the table, as shown below.
 
    >[!NOTE]
    >Repositories created in Cloud Manager will also be available for you to select from during the add or edit pipeline steps. Refer to [Configure your CI-CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) to learn more. There is a single *primary* repository or a branch for any given pipeline. With [Git Submodule Support](#git-submodule-support), however many secondary branches can be included at build time.
 
-   ![](assets/repos/create-repo3.png)
+   ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
 1. You can select the repository and click on the menu options from the far right of the table to **Copy Repository URL**, **View & Update** or **Delete** your repository, as shown in the  figure below.
 
-   ![](assets/repos/create-repo3.png)
+   ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
 
 ## Git Submodule Support {#git-submodule-support}

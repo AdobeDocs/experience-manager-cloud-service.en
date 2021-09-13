@@ -50,6 +50,13 @@ role: Developer, Architect
     + [Setting up your Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
     + [Understanding the Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
   + [Managing Environments](cloud-manager/manage-environments.md)
+  + Managing your Code {#managing-code}
+    + [Maven Project Version Handling](cloud-manager/managing-code/project-version-handling.md)
+    + [Repositories in Cloud Manager](cloud-manager/managing-code/cloud-manager-repositories.md)
+    + [Accessing Repositories](cloud-manager/managing-code/accessing-repos.md)
+    + [Integrating Git with Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
+    + [Working with Multiple Source Git Repositories](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+    + [Enterprise Team Development Setup for AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
   + [Configuring your CI/CD Pipeline](cloud-manager/configure-pipeline.md)
   + [Deploying your Code](cloud-manager/deploy-code.md)
   + Understanding your Test Results {#test-results}
@@ -89,13 +96,6 @@ role: Developer, Architect
     + [Deleting an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
     + [Checking an IP Allow List Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
   + [Cloud Manager FAQs](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
-+ Managing your Code {#managing-code}
-  + [Maven Project Version Handling](cloud-manager/project-version-handling.md)
-  + [Repositories in Cloud Manager](cloud-manager/cloud-manager-repositories.md)
-  + [Accessing Repositories](cloud-manager/accessing-repos.md)
-  + [Integrating Git with Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-  + [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-  + [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Developing for AEM as a Cloud Service {#developing}
   + [AEM Project Structure](developing/introduction/aem-project-content-package-structure.md)
   + [AEM Project Repository Structure Package](developing/introduction/repository-structure-package.md)
