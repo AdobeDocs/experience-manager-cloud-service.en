@@ -427,7 +427,7 @@ The message will suggest that you check the [References](/help/sites-cloud/autho
 
 This feature provides governance for Content Fragment Models that have been published. 
 
-The challenge:
+### The Challenge {#the-challenge}
 
 * Content Fragment Models determine the schema for GraphQL queries in AEM. 
 
@@ -439,7 +439,7 @@ The challenge:
 
 * Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-The requirements:
+### The Requirements {#the-requirements}
 
 * To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). 
 
@@ -447,25 +447,39 @@ The requirements:
 
 Either of these might break queries if the modified models are re-published. 
 
-The solution:
+### The Solution {#the-solution}
 
-* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+To address these issues, Content Fragment Models are *locked* into a READ-ONLY mode on author - as soon as they have been published. This is imdicated by **Locked**: 
 
   ![Card of locked Content Fragment Model](assets/cfm-model-locked.png)
 
-* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+When the model is **Locked** (in READ-ONLY mode), you can see the contents and structure of models but you cannot edit them. 
 
-  <!-- check scenarios for these 2 screenshots -->
+You can manage **Locked** models from either the console, or the model editor:
 
-  ![Message when viewing a locked Content Fragment Model](assets/cfm-model-editor-lock-message.png)
+* Console
 
-  ![View only - locked Content Fragment Model](assets/cfm-model-editor-locked-view-only.png)
+  From the console, you can manage the READ-ONLY mode with the **Unlock** and **Lock** actions in the toolbar: 
 
-* The READ-ONLY mode is managed by means of a **Lock** function. 
+  ![Toolbar of locked Content Fragment Model](assets/cfm-model-locked.png)
 
-  Users can **Unlock** a model to enable edits - but care must be taken. They can also **Lock** the model afterwards.
+  * You can **Unlock** a model to enable edits.
   
-  If a user selects to **Unlock** a model:
-  * A warning will be shown and the user must confirm the **Unlock** action.
-      ![Message when unlocking Content Fragment Model](assets/cfm-model-unlock-message.png)
-  * Re-publishing the model will immediately put it back into READ-ONLY mode.
+    If you select **Unlock** a warning will be shown, and you must confirm the **Unlock** action:
+    ![Message when unlocking Content Fragment Model](assets/cfm-model-unlock-message.png)
+  * You can also **Lock** the model afterwards.
+  * Re-publishing the model will immediately put it back into **Locked** (READ-ONLY) mode.
+
+* Model Editor
+
+  * When you open a model that is locked you will be warned, and presented with three actions: **Cancel**, **View Read Only**, **Edit**:
+
+    ![Message when viewing a locked Content Fragment Model](assets/cfm-model-editor-lock-message.png)
+
+  * If you select **View Read Only** you can see the content and structure of the model:
+
+    ![View Read Only - locked Content Fragment Model](assets/cfm-model-editor-locked-view-only.png)
+
+  * If you select **Edit** you will see a final warning, but you can edit and save your updates:
+
+    ![Edit - locked Content Fragment Model](assets/cfm-model-editor-locked-edit.png)
