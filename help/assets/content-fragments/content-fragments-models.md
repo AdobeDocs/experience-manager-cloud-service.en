@@ -441,7 +441,7 @@ This feature provides governance for Content Fragment Models that have been publ
 
 ### The Requirements {#the-requirements}
 
-* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). 
+* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published). 
 
 * Also, to avoid unintended changes. 
 
@@ -467,6 +467,9 @@ You can manage **Locked** models from either the console, or the model editor:
   
     If you select **Unlock** a warning will be shown, and you must confirm the **Unlock** action:
     ![Message when unlocking Content Fragment Model](assets/cfm-model-unlock-message.png)
+
+    You can then open the model for editing.
+    
   * You can also **Lock** the model afterwards.
   * Re-publishing the model will immediately put it back into **Locked** (READ-ONLY) mode.
 
@@ -485,4 +488,3 @@ You can manage **Locked** models from either the console, or the model editor:
     ![Edit - locked Content Fragment Model](assets/cfm-model-editor-locked-edit.png)
 
   * **Cancel** will return you to the console.
-  
