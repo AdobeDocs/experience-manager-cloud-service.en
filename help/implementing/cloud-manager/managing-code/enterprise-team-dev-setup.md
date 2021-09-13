@@ -43,7 +43,7 @@ The teams contributing to this project follow the process described hereafter.
 
 Each team is using its own development workflow and has a separate git repository. An additional shared git repository is used for onboarding of projects. This git repository contains the root structure of Cloud Manager’s git repository including the shared dispatcher configuration. Onboarding a new project requires listing in the reactor Maven project file at the root of the shared git repository. For dispatcher configuration a new configuration file is created inside the dispatcher project. This file is then included by the main dispatcher configuration. Each team is responsible for its own dispatcher configuration file. Changes to the shared git repository are rare and are usually only required when a new project is onboarded. The main work is done by each project team within their own git repository.
  
-![](assets/team-setup1.png)
+![](/help/implementing/cloud-manager/assets/team-setup1.png)
 
 The git repository for each team has been setup using the AEM Maven archetype and thus follows the best practices for setting up AEM projects. The only exception is handling of the dispatcher configuration which is done in the shared git repository as outlined above.
 Each team uses a simplified git workflow with two + N branches, following the Git flow model:
@@ -64,13 +64,13 @@ The setup in the Cloud Manager's git repository has two branches:
 
 Every push to a team’s git repository in either the development or the stable branch is triggering a [github action](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). All projects follow the same setup for the stable branch. A push to the stable branch of a project is automatically pushed to the stable branch in Cloud Manager's git repository. The production pipeline in Cloud Manager is configured to get triggered by a push to the stable branch. The production pipeline is therefore executed by each push of any team into a stable branch and the production deployment is updated if all quality gates pass.
 
-![](assets/team-setup2.png)
+![](/help/implementing/cloud-manager/assets/team-setup2.png)
  
 Pushes to the development branch are handled differently. While a push to a developer branch in a team’s git repository is triggering a github action as well and the code is automatically pushed into the development branch in Cloud Manager’s git repository, the non-production pipeline is not automatically triggered by the code push. It is triggered by a call to Cloud Manager’s api.
 Running the production pipeline includes checking the code of all teams via the provided quality gates. Once the code is deployed to stage, the tests and audits are executed to ensure everything is working as expected. Once all gates are passed, the changes are rolled out to production without any interruption or downtime.
 For local development, the [SDK for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) is used. The SDK allows a local author, publish, and dispatcher to be setup. This enables offline development and quick turnaround times. Sometimes only author is used for development, but quickly setting up dispatcher and publish allows to test everything locally before pushing into the git repository. Members of each team usually checkout the code from the shared git for as well as their own project code. There is no need to checkout other projects as the projects are independent.
 
-![](assets/team-setup3.png)
+![](/help/implementing/cloud-manager/assets/team-setup3.png)
  
 This real-world setup can be used as a blueprint and then customized to the needs of an enterprise. The flexible branching and merging concept of git allows for variations of the above workflows, customized to every team’s needs. AEM as a Cloud Service supports all these variations without sacrificing the core value of the opinionated Cloud Manager pipeline.
 
