@@ -449,7 +449,7 @@ Either of these might break queries if the modified models are re-published.
 
 ### The Solution {#the-solution}
 
-To address these issues, Content Fragment Models are *locked* into a READ-ONLY mode on author - as soon as they have been published. This is imdicated by **Locked**: 
+To address these issues, Content Fragment Models are *locked* into a READ-ONLY mode on author - as soon as they have been published. This is indicated by **Locked**: 
 
   ![Card of locked Content Fragment Model](assets/cfm-model-locked.png)
 
@@ -483,3 +483,6 @@ You can manage **Locked** models from either the console, or the model editor:
   * If you select **Edit** you will see a final warning, but you can edit and save your updates:
 
     ![Edit - locked Content Fragment Model](assets/cfm-model-editor-locked-edit.png)
+
+  * **Cancel** will return you to the console.
+  
