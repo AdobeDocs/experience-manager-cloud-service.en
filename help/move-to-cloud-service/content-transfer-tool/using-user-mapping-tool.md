@@ -44,11 +44,10 @@ The following specific cases will be logged:
 
 * When content top-ups are performed, if content is not transferred because it has not changed since the previous transfer, users and groups associated with that content will not be transferred either, even if the users and groups have changed in the meantime. This is because users and groups are migrated along with the content they are associated with.  
 
-* Ingestion will fail under the following scenarios:
+* If the target AEM Cloud Service instance has a user with a different user name but same email address as one of the users on the source AEM instance, and User Mapping is enabled, an error message will be written in the logs, and the source AEM user will not be transferred, as only one user with a given email address is allowed on the target system.
 
-1. If the target AEM Cloud Service instance has a user with a different user name but same email address as one of the users on the source AEM instance.
+* If two users on the source AEM instance have the same email address, and User Mapping is enabled, an error message will be written in the logs and one of the source AEM users will not be transferred, as only one user with a given email address is allowed on the target system.
 
-1. If there are two users on the source AEM instance with different user names but the same email address. AEM as a Cloud Service does not allow two users to have the same email address.
 
 ## Using the User Mapping Tool {#using-user-mapping-tool}
 
