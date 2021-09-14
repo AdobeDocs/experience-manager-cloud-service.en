@@ -483,8 +483,12 @@ You can manage **Locked** models from either the console, or the model editor:
 
     ![View Read Only - locked Content Fragment Model](assets/cfm-model-editor-locked-view-only.png)
 
-  * If you select **Edit** you will see a final warning, but you can edit and save your updates:
-
+  * If you select **Edit** you can edit and save your updates: 
+  
     ![Edit - locked Content Fragment Model](assets/cfm-model-editor-locked-edit.png)
+
+    >[!NOTE]
+    >
+    >There may still a warning at the top, but that is when the model is already in use by existing Content Fragments. 
 
   * **Cancel** will return you to the console.
