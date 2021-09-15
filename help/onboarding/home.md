@@ -29,9 +29,8 @@ The onboarding journey illustrated below is designed for a System Administrator 
 |User Guide|Description|
 |---|---|
 |[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
-|[Overview](/help/overview/home.md)|This guide provides an overview of [!DNL Experience Manager as a Cloud Service], including an introduction, terminology, and so on.|
+|[Overview](/help/overview/home.md)|This guide provides an overview of [!DNL Experience Manager as a Cloud Service], including an introduction, terminology, architecture, and so on.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of [!DNL Experience Manager as a Cloud Service], including what is new, deprecated and removed features, and known issues.|
-|[Core Concepts](/help/core-concepts/home.md)|This guide provides an introduction to the core concepts of [!DNL Experience Manager as a Cloud Service], including the architecture of the new service.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding [!DNL Experience Manager as a Cloud Service].|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, [!DNL Experience Manager Sites] as a Cloud Service.|
 |[Assets User Guide](/help/assets/home.md)|Understand how to use and administer [!DNL Experience Manager Assets as a Cloud Service].|
