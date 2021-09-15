@@ -5,7 +5,7 @@ exl-id: fb169e85-ac19-4962-93d9-abaed812f948
 ---
 # An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
-<!-->
+<!--
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
 >title="Introduction to AEM as a Cloud Service Architecture"
