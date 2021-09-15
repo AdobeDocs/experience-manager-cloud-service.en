@@ -165,7 +165,7 @@ role: Developer, Architect
       + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
       + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)    
   + Hybrid and SPA AEM Development {#hybrid}
-    + [Hybrid and SPA with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+    + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
     + [SPA Introduction and Walkthrough](developing/hybrid/introduction.md)
     + [SPA WKND Tutorial](developing/hybrid/wknd-tutorial.md)
