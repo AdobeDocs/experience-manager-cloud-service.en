@@ -67,7 +67,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 >* [List of deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
 >* [An introduction](/help/overview/introduction.md)
 >* [What is new and different](/help/overview/what-is-new-and-different.md)
->* [The architecture](/help/core-concepts/architecture.md)
+>* [The architecture](/help/overview/architecture.md)
 >* [Notable changes](/help/release-notes/aem-cloud-changes.md)
 >* [Notable changes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Video tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
