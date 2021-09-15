@@ -36,7 +36,7 @@ There are intrinsic differences between these previous approaches and AEM as a C
 
 >[!NOTE]
 >
->For further details see [Architecture](/help/core-concepts/architecture.md).
+>For further details see [Architecture](/help/overview/architecture.md).
 
 AEM as a Cloud Service now has:
 
@@ -258,7 +258,7 @@ For details, see [overview and introduction to Assets as a Cloud Service](/help/
 For further information see:
 
 * [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
-* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
+* The [Architecture](/help/overview/architecture.md) of Adobe Experience Manager as a Cloud Service
 * [Notable changes to AEM as a Cloud Service (Release Notes)](/help/release-notes/aem-cloud-changes.md)
 * [Notable changes to AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Notable changes to AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
