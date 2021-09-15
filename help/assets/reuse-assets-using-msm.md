@@ -19,7 +19,7 @@ Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enable
 
 ### How it works and the benefits {#how-it-works-and-the-benefits}
 
-To understand the usage scenarios for reusing same content (text and assets) across multiple web-locations, see [possible MSM scenarios](/help/sites-administering/msm.md). [!DNL Experience Manager] maintains a link between the original asset and its linked copies, called as live copies (LCs). The maintained linking allows centralized changes to be pushed to many live copies. This allows for faster updates while doing away with the limitations of managing duplicate copies. The propagation of changes is error-free and centralized. The functionality allows room for updates that are limited to selected live copies. Users can detach the linking, that is break inheritance, and make local edits that are not overwritten when next time the primary copy is updated and changes are rolled out. The detaching can be done for a few select metadata fields or for an entire asset. It allows for flexibility to locally update assets that are originally inherited from a primary copy.
+To understand the usage scenarios for reusing same content (text and assets) across multiple web-locations, see [possible MSM scenarios](/help/sites-cloud/administering/msm/overview.md). [!DNL Experience Manager] maintains a link between the original asset and its linked copies, called as live copies (LCs). The maintained linking allows centralized changes to be pushed to many live copies. This allows for faster updates while doing away with the limitations of managing duplicate copies. The propagation of changes is error-free and centralized. The functionality allows room for updates that are limited to selected live copies. Users can detach the linking, that is break inheritance, and make local edits that are not overwritten when next time the primary copy is updated and changes are rolled out. The detaching can be done for a few select metadata fields or for an entire asset. It allows for flexibility to locally update assets that are originally inherited from a primary copy.
 
 MSM maintains a live relationship between the source asset and its live copies so that:
 
@@ -272,7 +272,7 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
    *Figure: Easily update many assets in live copy folders from the [!UICONTROL Live Copy Overview] console.*
 
-<!-- TBD: Can MSM be extended using Java APIs in CS? There are no articles to indicate so in Sites.
+<!-- TBD: Can MSM be extended using Java APIs in CS?
 
 ## Extend MSM for [!DNL Assets] {#extend-api}
 
