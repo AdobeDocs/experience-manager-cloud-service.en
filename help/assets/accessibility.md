@@ -24,7 +24,7 @@ Possible topics to cover in this article are below.
 
 # Accessibility features in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] allows content creators and publishers to serve amazing experiences on the web. Adobe strives to include the creators with disabilities by improving the accessibility of [!DNL Experience Manager]. The software is continuously enhanced to meet the needs of all types of users and adhere to the worldwide standards that include individuals with visual, auditory, mobility, or other impairments.
+[!DNL Adobe Experience Manager] lets content creators and publishers serve amazing experiences on the web. Adobe strives to include the creators with disabilities by improving the accessibility of [!DNL Experience Manager]. The software is continuously enhanced to meet the needs of all types of users and adhere to the worldwide standards that include individuals with visual, auditory, mobility, or other impairments.
 
 [!DNL Experience Manager] publishes conformance information that describes the standards it adheres to, outlines the accessibility features in the product, and describes the level of compliance. The accessibility conformance reports help [!DNL Experience Manager] users understand the level of adherence to various standards. The enhancements done in [!DNL Assets] let all users use the interfaces easily via keyboard, screen reader, magnifiers, and other assistive technology.
 
