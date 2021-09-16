@@ -9,7 +9,7 @@ Adobe Experience Manager as a Cloud Service  uses the [Sling Content Distributio
 
 >[!NOTE]
 >
->Read [Distribution](/help/core-concepts/architecture.md#content-distribution) for more information.
+>Read [Distribution](/help/overview/architecture.md#content-distribution) for more information.
 
 ## Methods of Publishing Content {#methods-of-publishing-content}
 

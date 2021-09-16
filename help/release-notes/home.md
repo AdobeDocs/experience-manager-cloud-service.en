@@ -26,7 +26,7 @@ In addition to the speed of innovation, [!DNL Adobe Experience Manager] as a Clo
 
 To prepare for a release:
 
-1. Mark your calendars: Check key dates for monthly releases on the [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) and mark your calendars to prepare yourself for the key activities to get ready for the release.
+1. Mark your calendars: Check key dates for monthly releases on the [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) and mark your calendars to prepare yourself for the key activities to get ready for the release.
 1. Review the release notes: Read the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) to get familiarized with the release and prerelease features.
 1. Access and try new features: Enable the [prerelease channel](/help/release-notes/prerelease.md) in your non-production environments and start trying the features to assess in your custom environments.
 1. Train your users: Use documentation and Experience League resources to get users up to speed and well-versed with the new features.
@@ -45,7 +45,6 @@ To prepare for a release:
 |---|---|
 |[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of the Experience Manager as a Cloud Service documentation, start here.|
 |[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc.|
-|[Core Concepts](/help/core-concepts/home.md)|This guide provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Onboarding](/help/onboarding/home.md)|This guide provides a summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.|

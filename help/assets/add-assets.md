@@ -118,7 +118,7 @@ The bulk asset ingestor can handle very large number of assets efficiently. Howe
 
 * Curate assets: Remove assets that are not needed in the DAM. Consider removing unused, obsolete, or duplicate assets. This reduces the data transferred and assets ingested leading to faster ingestions.
 * Organize assets: Consider organizing the content in some logical order, say by file size, file format, use case, or priority. In general, large complex files require more processing. You can also consider ingesting large files separately using the file size filtering option (described below).
-* Stagger ingestions: Consider breaking up your ingestion into multiple bulk ingestion projects. This allows you to see content sooner and update your ingestion as necessary. For example, you can ingest processing-intensive assets during non-peak hours or gradually in multiple chunks. However, you can ingest smaller and simpler assets that do not require much processing in one go.
+* Stagger ingestions: Consider breaking up your ingestion into multiple bulk ingestion projects. This lets you see content sooner and update your ingestion as necessary. For example, you can ingest processing-intensive assets during non-peak hours or gradually in multiple chunks. However, you can ingest smaller and simpler assets that do not require much processing in one go.
 
 To upload larger number of files, use one of the following approaches. Also, see the [use cases and methods](#upload-methods-comparison)
 

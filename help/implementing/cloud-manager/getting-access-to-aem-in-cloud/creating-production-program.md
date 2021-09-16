@@ -21,8 +21,6 @@ Follow the steps below to create a Production program:
 
    ![](assets/first_timelogin1.png) 
 
-   >[!NOTE]
-   >To learn how to access Cloud Manager, refer to [Cloud Manager Landing Page](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) for more details.
 
 1. Select **Set up for Production** in the Create Program wizard to create a Production program. User can accept the default program name or edit it before selecting **Create**.
 
@@ -37,9 +35,9 @@ Follow the steps below to create a Production program:
 
    ![](assets/setup-prod-commerce.png)
 
-1.  Once you see your program card on the landing page, hover over it to select the Cloud Manager icon to navigate to the Cloud Manager **Overview** page. 
+1.  Once you see your program card on the landing page, select the **...** to see menu options available to you. Select **Cloud Manager**, as shown in the figure below, to navigate to the Cloud Manager's **Overview** page.  
 
-    ![](assets/set-up-prod4.png)
+    ![](assets/navigate-cm.png)
 
 1. The main call-to-action card will guide the user to create an environment, create a non-production pipeline, and finally a production pipeline.
    ![](assets/set-up-prod5.png)

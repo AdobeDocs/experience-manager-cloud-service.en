@@ -7,7 +7,7 @@ exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 ---
 # 360/VR Video {#vr-video}
 
-360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback, on a flat display, the user has control of the viewing angle; playback on mobile devices usually applies their built-in gyroscopic controls.
+360° videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback, on a flat display, the user has control of the viewing angle; playback on mobile devices usually applies their built-in gyroscopic controls.
 
 Dynamic Media includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.
 
@@ -21,7 +21,7 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 
 ## 360 Video in action {#video-in-action}
 
-Select [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360-degree video. During video playback, drag the pointer to a new location to change the viewing angle.
+Select [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360° video. During video playback, drag the pointer to a new location to change the viewing angle.
 
 ![360 Video sample](assets/6_5_360videoiss_simplified.png)
 *Video frame from Space Station 360*
@@ -119,7 +119,7 @@ See [Adding Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dyn
 
     * From the Viewers list, select **[!UICONTROL Video360VR]**.
 
-        Virtual Reality (VR) video is immersive video content that is accessed by using virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360-degree video cameras.
+        Virtual Reality (VR) video is immersive video content that is accessed by using virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360° video cameras.
 
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *A 360 VR video screenshot.*

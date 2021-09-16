@@ -49,11 +49,14 @@ The properties are distributed across several tabs.
 
 * **On/Off Time**
 
-  * **On Time** - The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
+  >[!NOTE]
+  >
+  > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
 
-    >[!NOTE]
-    >
-    > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
+  >[!NOTE]
+  >If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action will be triggered immediately.
+
+  * **On Time** - The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
     * If already [published (manually)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) this page will be kept dormant (hidden) until rendering at the specified time.
     * If not published, and configured for auto-replication, the page will be automatically published, then rendered, at the specified time.

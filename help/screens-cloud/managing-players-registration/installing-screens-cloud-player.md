@@ -1,8 +1,8 @@
 ---
 title: Installing and Configuring Players in Screens as a Cloud Service
 description: This page describes how to install and configure players in Screens as a Cloud Service.
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 ---
-
 # Installing and Configuring Players in Screens as a Cloud Service {#installing-players-screens-cloud}
 
 This section describes how to install AEM Screens players that are registered to on-premise AEM instances. Additionally, you must do a factory reset of the existing player and then register the new player against AEM Screens as a Cloud Service.
@@ -39,9 +39,9 @@ Follow the steps below to update your player:
 
 ## Basic Playback Monitoring {#playback-monitoring}
 
-The player reports various playback metrics with each `ping` that defaults to 30 seconds. Based on the metrics, you can detect various edge cases such as stuck experience, blank screen, and scheduling issues. This lets you understand and troubleshoot issues on the device, and thus expedites an investigation and corrective measures.
+The player reports various playback metrics with each `ping` that defaults to 30 seconds. Based on these metrics, we can detect various edge cases such as stuck experience, blank screen, and scheduling issues. This lets us understand and troubleshoot issues on the device, and thus expedites an investigation and corrective measures with you.
 
-Basic Playback monitoring in an AEM Screens player allows you to:
+Basic Playback monitoring in an AEM Screens player allows us to:
 
 * Remotely monitor, if a player is properly playing content.
 
@@ -74,9 +74,11 @@ Few limitations to basic playback monitoring are listed below:
 
 * The player reports its own playback state to the server, so it requires an active connection.
 
-* The `isContentRendering` property that checks the GPU is currently resource intensive to be enabled by default and requires explicit opt-in from the player preferences. It is recommended not to use it in conjunction with videos.
+* The `isContentRendering` property that checks the GPU is currently too resource intensive to be enabled by default and requires explicit opt-in from the player preferences. It is recommended not to use it in conjunction with videos in production.
 
-* This feature is supported for sequence channels.
+* This feature is only supported for sequence channels and does not yet cover the interactive channels (SPA) use case.
+
+* The metrics are not yet fully exposed to our customers, we are working hard on enabling dashboard-like reporting and alerting mechanism in the near future.
 
 ## What's Next {#whats-next}
 

@@ -183,7 +183,7 @@ The feature is compatible with Java code or libraries that result in outbound tr
 
 Below is a code sample:
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -194,6 +194,26 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
   try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
     return new JSONObject(new JSONTokener(responseReader));
   }
+}
+```
+
+Some libraries require explicit configuration to use standard Java system properties for proxy configurations.
+
+An example using Apache HttpClient, that requires explicit calls to
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or use
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
 }
 ```
 
