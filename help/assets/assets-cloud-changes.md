@@ -33,7 +33,7 @@ The standard renditions generated with asset microservices are stored in a backw
 
 ## Develop and test asset microservices {#asset-microservices}
 
-Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. Asset microservices help to avoid the need for third-party rendering tools and methods (like [!DNL ImageMagick]) and simplify configurations, while providing out-of-the-box functionality for common file types. You can now process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions like [!DNL ImageMagick]. You cannot use the complex configurations of [!DNL ImageMagick] for the [!UICONTROL Processing Profiles] configuration. Use [!DNL Dynamic Media] for advanced FFmpeg transcoding of videos and use processing profiles for [basic transcoding of MP4 videos](/help/assets/manage-video-assets.md#transcode-video).
+Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. Asset microservices help to avoid the need for third-party rendering tools and methods (like [!DNL ImageMagick]) and simplify configurations, while providing out-of-the-box functionality for common file types. You can now process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. For example, thumbnail extraction of PSD and PSB formats is now possible that previously required third-party solutions such as [!DNL ImageMagick]. You cannot use the complex configurations of [!DNL ImageMagick] for the [!UICONTROL Processing Profiles] configuration. Use [!DNL Dynamic Media] for advanced FFmpeg transcoding of videos and use processing profiles for [basic transcoding of MP4 videos](/help/assets/manage-video-assets.md#transcode-video).
 
 Asset microservices is a cloud-native service that is automatically provisioned and wired to [!DNL Experience Manager] in customer programs and environments managed in Cloud Manager. To extend or customize [!DNL Experience Manager], the developers can use the existing content or assets with renditions generated in a cloud environment, to test and validate their code using, displaying, downloading assets.
 
@@ -46,7 +46,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 | Functionality or use case | Status in [!DNL Experience Manager] as a [!DNL Cloud Service] | Comments |
 |-----|-----|-----|
 | [Duplicate asset detection](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Works differently. | See [how it worked in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
-| [For Placement Only (FPO) renditions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Works differently | |
+| [For Placement Only (FPO) renditions](/help/assets/configure-fpo-renditions.md) | Works differently | Processing Profiles use asset microservices to generate FPO renditions. In Experience Manager 6.5, a third-party solution such as [!DNL ImageMagick] was available to generate the renditions. |
 | Metadata writeback | Works differently | Disabled by default. Enable the corresponding workflow launcher if needed. Writeback is handled by asset microservices. |
 | Processing of assets uploaded using Package Manager | Needs manual intervention. | Manually reprocess using the **[!UICONTROL Reprocess Asset]** action. |
 | MIME type detection | Not supported. | If you upload a digital asset without an extension or with an incorrect extension, it may not be processed as desired. Users can still store the binary files without an extension in the DAM. See [MIME type detection in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
@@ -58,6 +58,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 | [Download report](/help/assets/asset-reports.md) | Not supported. | For now, the download report that informs of asset use is not available. See [download report in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Product photoshoot template | Not supported. | See [product photoshoot template in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Smart Translation | Not supported.| [Smart translation](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) is not supported in [!DNL Experience Manager] as a [!DNL Cloud Service]. |
+| WebDAV | Not supported. | For alternatives, see [[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md) or [Developer reference material](/help/assets/developer-reference-material-apis.md). |
 | Classic UI | Not supported. | Only Touch-enabled user interface is available. |
 
 >[!MORELIKETHIS]
@@ -67,7 +68,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 >* [List of deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
 >* [An introduction](/help/overview/introduction.md)
 >* [What is new and different](/help/overview/what-is-new-and-different.md)
->* [The architecture](/help/core-concepts/architecture.md)
+>* [The architecture](/help/overview/architecture.md)
 >* [Notable changes](/help/release-notes/aem-cloud-changes.md)
 >* [Notable changes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Video tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)

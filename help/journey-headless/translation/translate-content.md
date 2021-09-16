@@ -1,9 +1,10 @@
 ---
 title: Translate Content
 description: Use the translation connector and rules to translate your headless content.
-index: no
-hide: yes
-hidefromtoc: yes
+index: yes
+hide: no
+hidefromtoc: no
+exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 ---
 # Translate Content {#translate-content}
 
