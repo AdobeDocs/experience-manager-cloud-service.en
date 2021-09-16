@@ -23,7 +23,6 @@ The following self-help resources are available for [!DNL Experience Manager Ass
 |[[!DNL Experience Manager] as a [!DNL Cloud Service] Home](/help/landing/home.md)|Complete documentation of [!DNL Experience Manager] as a [!DNL Cloud Service].|
 |[Overview](/help/overview/home.md)|Introductory overview, and glossary, of [!DNL Experience Manager] as a [!DNL Cloud Service].|
 |[Release Notes](/help/release-notes/home.md)|Release notes, what is new, deprecated and removed features, and the known issues.|
-|[Core Concepts](/help/core-concepts/home.md)|This guide provides an introduction to the core concepts of [!DNL Experience Manager] as a [!DNL Cloud Service], including the architecture of the new service.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding [!DNL Experience Manager] as a [!DNL Cloud Service].|
 |[Onboarding](/help/onboarding/home.md)|Get started with [!DNL Experience Manager] as a [!DNL Cloud Service] &mdash; get access and protect important data.|
 |[Sites User Guide](/help/sites-cloud/home.md)|Understand how to author with, and administer, [!DNL Experience Manager Sites] as a [!DNL Cloud Service].|

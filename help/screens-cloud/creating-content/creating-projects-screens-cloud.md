@@ -1,8 +1,8 @@
 ---
 title: Creating a Project in Screens as a Cloud Service
 description: This page describes how to create a project in Screens as a Cloud Service.
+exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
 ---
-
 # Creating and Managing a Project in Screens as a Cloud Service {#creating-project-screens-cloud}
 
 The first step in implementing a new project in Screens as a Cloud Service is to create a new project.
