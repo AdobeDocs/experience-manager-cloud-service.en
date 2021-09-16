@@ -88,6 +88,7 @@ role: User
       + [MSM Best Practices](administering/msm/best-practices.md)
       + [Troubleshooting and FAQ](administering/msm/troubleshooting.md)
     + Translation {#translation}
+      + [Translation Documentation Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
       + [Translating Content for Multilingual Sites](administering/translation/overview.md)
       + [Preparing Content for Translation](administering/translation/preparation.md)
       + [Managing Translation Projects](administering/translation/managing-projects.md)
