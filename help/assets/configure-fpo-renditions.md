@@ -15,7 +15,9 @@ Assets provides renditions that are used for placement only (FPO). These FPO ren
 Experience Manager as a Cloud Service offers cloud-native asset-processing capabilities to generate the FPO renditions. Use asset microservices for rendition generation. You can configure rendition generation of newly uploaded assets and of the assets that exist in Experience Manager.
 
 Following are the steps to generate FPO renditions:
+
 1. [Create a processing profile](#create-processing-profile).
+
 1. Configure Experience Manager to use this profile to [process new assets](#generate-renditions-of-new-assets). 
 1. Use the profiles to [process existing assets](#generate-renditions-of-existing-assets).
 
