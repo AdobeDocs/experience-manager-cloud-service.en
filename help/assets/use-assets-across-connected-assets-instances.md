@@ -142,13 +142,18 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 Use the above setup to try the authoring experience to understand how the functionality works. Use documents or images of your choice on the remote DAM deployment.
 
 1. Navigate to the [!DNL Assets] interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. Alternatively, access `https://[assets_servername_ams]:[port]/assets.html/content/dam` in a browser. Upload the assets of your choice.
+<<<<<<< Updated upstream
 1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide `ksaner` as user name, select the option provided, and click **[!UICONTROL OK]**.
 1. Open a website page at **[!UICONTROL Navigation]** > **[!UICONTROL Sites]**. Edit the page. Alternatively, access `https://[aem_server]:[port]/editor.html/content/<site page>` in a browser to edit a page.
+=======
+1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide the desired user name, and click **[!UICONTROL OK]**.
+1. Open a website page from **[!UICONTROL Navigation]** > **[Sites]**. Edit the page. Alternatively, access `https://[aem_server]:[port]/editor.html/content/<page name>` in a browser to edit a page.
+>>>>>>> Stashed changes
 
    Click **[!UICONTROL Toggle Side Panel]** on upper-left corner of the page.
 
 1. Open the [!UICONTROL Assets] tab and click **[!UICONTROL Log in to Connected Assets]**.
-1. Provide the credentials -- `ksaner` as user name and `password` as password. This user has authoring permissions on both the [!DNL Experience Manager] deployments.
+1. Provide the appropriate credentials. This user has authoring permissions on both the [!DNL Experience Manager] deployments.
 1. Search for the asset that you added to DAM. The remote assets are displayed in the left panel. Filter for images or documents and further filter for types of supported documents. Drag the images on an `Image` component and documents on a `Download` component.
 
    The fetched assets are read-only on the local [!DNL Sites] deployment. You can still use the options provided by your [!DNL Sites] components to edit the fetched asset. The editing by components is non-destructive.
