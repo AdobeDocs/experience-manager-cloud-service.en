@@ -58,8 +58,8 @@ To do an end-to-end validation of the code and process including asset ingestion
 | [Download report](/help/assets/asset-reports.md) | Not supported. | For now, the download report that informs of asset use is not available. See [download report in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Product photoshoot template | Not supported. | See [product photoshoot template in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Smart Translation | Not supported.| [Smart translation](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) is not supported in [!DNL Experience Manager] as a [!DNL Cloud Service]. |
+| WebDAV | Not supported. | For alternatives, see [[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md) or [Developer reference material](/help/assets/developer-reference-material-apis.md). |
 | Classic UI | Not supported. | Only Touch-enabled user interface is available. |
-| WebDAV | Not supported. | Please refer to [Creative Cloud Integration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/aem-cc-integration-best-practices.html?lang=en) or [Developer Reference Material](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/developer-reference-material-apis.html?lang=en) for alternatives. |
 
 >[!MORELIKETHIS]
 >
