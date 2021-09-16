@@ -85,7 +85,6 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
   + [Accessibility in Dynamic Media](dynamic-media/accessibility-dm.md)
   + [Managing Dynamic Media assets](dynamic-media/managing-assets.md)
   + [Best practices for optimizing the quality of your images](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-  + [Best practices for file management](dynamic-media/best-practices-for-file-management.md)
   + [Image Profiles](dynamic-media/image-profiles.md)
   + [Video Profiles](dynamic-media/video-profiles.md)
   + [Manage Dynamic Media Image Presets](dynamic-media/managing-image-presets.md)
