@@ -525,8 +525,6 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
-
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
 ## Asset versioning {#asset-versioning}
