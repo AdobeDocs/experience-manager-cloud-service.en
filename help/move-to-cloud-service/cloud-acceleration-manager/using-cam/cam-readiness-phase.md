@@ -1,8 +1,8 @@
 ---
 title: Readiness Phase in Cloud Acceleration Manager
 description: This page provides an overview on the Readiness phase in Cloud Acceleration Manager.
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
 ---
-
 # Readiness Phase in Cloud Acceleration Manager {#readiness-phase-cam}
 
 Once you have created a project in Cloud Acceleration Manager, you can now start the assessment of your current AEM implementation in the Readiness phase.

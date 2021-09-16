@@ -19,9 +19,9 @@ To see an interactive, shoppable video in action, select [Live Demos](https://la
 
 * During playback, as products are used in the video, the identical product appears on the right as a thumbnail image.
 
-* To pause the video and open the product's Quickview, select the thumbnail. For example, select the KitchenAid thumbnail image in the video to experience a 360-degree spin view of the mixer, or zoom in to see mixer details.
+* To pause the video and open the product's Quickview, select the thumbnail. For example, select the KitchenAid thumbnail image in the video to experience a 360° spin view of the mixer, or zoom in to see mixer details.
 
-See also [Use Interactive Video with Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+See also [Use Interactive Video with Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 

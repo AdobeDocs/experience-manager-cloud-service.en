@@ -1,8 +1,8 @@
 ---
 title: Running a Pipeline
 description: This page describes running a pipeline for Screens as Cloud Service project in Cloud Manager.
+exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 ---
-
 # Running a Pipeline for Screens as a Cloud Service Program in Cloud Manager {#run-pipeline-screens-cloud}
 
 This section describes how to run the pipeline and deploy your code for your program in Cloud Manager.
