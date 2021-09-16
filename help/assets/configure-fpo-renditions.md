@@ -5,6 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions 
 ---
+
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 
 When placing large-sized assets from Experience Manager into Adobe InDesign documents, a creative professional must wait for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using InDesign. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in InDesign documents to begin with. When the final output is required, say for print and publishing workflows, the original, full-resolution assets replace the temporary rendition in background. This asynchronous update in the background speeds up the design process to enhance productivity and doesn't hinder the creative process.
